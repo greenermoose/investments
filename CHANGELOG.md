@@ -1,3 +1,7 @@
+### 0.1.4
+
+- refactoring, part 2
+
 ### 0.1.3
 
 - refactoring, take 1

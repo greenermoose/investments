@@ -1,3 +1,4 @@
+// components/AcquisitionModal.jsx
 import React, { useState } from 'react';
 
 const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerChanges }) => {

@@ -1,3 +1,4 @@
+// components/FileUploader.jsx
 import React, { useState, useRef } from 'react';
 import { parseDateFromFilename } from '../utils/dateUtils';
 

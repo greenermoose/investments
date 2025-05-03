@@ -1,3 +1,4 @@
+// components/LotManagement.jsx
 import React, { useState, useEffect } from 'react';
 import { getSecurityLots, getLotTrackingMethod, setLotTrackingMethod } from '../utils/portfolioAnalyzer';
 import { formatCurrency, formatPercent } from '../utils/formatters';

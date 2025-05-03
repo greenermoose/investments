@@ -44,7 +44,7 @@
 8. **index.js**
    - Central barrel file for clean imports
 
-## Key Improvements Made
+## Key Improvements Made - Phase 1
 
 ### 1. Eliminated Duplication
 - Removed duplicate functions across files
@@ -71,18 +71,86 @@
 - Generic formatValue helper
 - Standardized calculations
 
+## Phase 2: Component Architecture Refactoring (COMPLETED)
+
+### Custom Hooks Created
+
+1. **usePortfolioData.js**
+   - State management for portfolio data
+   - Loading, error, and stats handling
+   - Portfolio operations management
+
+2. **useAcquisitionModal.js**
+   - Acquisition modal state management
+   - Security metadata handling
+   - Lot processing logic
+
+3. **usePortfolioNavigation.js**
+   - Tab navigation state
+   - Upload modal control
+   - Navigation methods
+
+4. **useFileUpload.js**
+   - File upload processing
+   - CSV parsing integration
+   - Snapshot and change detection
+
+### Context API Implementation
+
+- **PortfolioContext**: Central state management
+- Three contexts: Portfolio, Acquisition, Navigation
+- Provider component wrapping the app
+- Custom hooks for context access
+
+### Component Extraction
+
+1. **PortfolioHeader** - Header with account info and upload button
+2. **PortfolioFooter** - Footer with date and disclaimer
+3. **PortfolioTabs** - Navigation tabs component
+4. **UploadModal** - File upload modal dialog
+
+### Simplified PortfolioManager
+- Orchestrates component rendering
+- Uses context for state management
+- Minimal state logic
+- Clean component structure
+
 ## Updated Component Structure
 
 Components now use clean imports:
 ```javascript
+import { usePortfolio, useAcquisition, useNavigation } from '../context/PortfolioContext';
 import { formatCurrency, formatPercent } from '../utils/formatters';
 import { formatDate } from '../utils/dateUtils';
 import { calculatePortfolioStats } from '../utils/calculationUtils';
 ```
 
-## Next Steps
+## Next Steps (Phase 3 - Pending)
 
-1. Extract custom hooks from PortfolioManager
-2. Create context providers for state management
-3. Further componentize UI elements
-4. Add comprehensive tests for utilities
+1. **Add Comprehensive Tests**
+   - Unit tests for all utility functions (Started with formatters.test.js)
+   - Hook tests using react-testing-library (Started with usePortfolioData.test.js)
+   - Component tests for UI behavior
+   - Integration tests for context providers
+
+2. **Error Boundaries**
+   - Implement error boundaries for better error handling
+   - Create fallback UI components
+   - Add error logging
+
+3. **Performance Optimization**
+   - Implement React.memo where needed
+   - Add useMemo for expensive calculations
+   - Consider useCallback for event handlers
+   - Analyze bundle size and optimize
+
+4. **Type Safety**
+   - Add PropTypes or TypeScript definitions
+   - Define interfaces for all data structures
+   - Type context and hook return values
+
+5. **Documentation**
+   - Add JSDoc comments to all hooks
+   - Create README for component usage
+   - Document context API usage patterns
+   - Add architecture diagrams

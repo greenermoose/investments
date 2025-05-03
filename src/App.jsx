@@ -1,10 +1,13 @@
-import React from 'react'
-import PortfolioManager from './components/PortfolioManager'
+import React from 'react';
+import PortfolioManager from './components/PortfolioManager';
+import { PortfolioProvider } from './context/PortfolioContext';
 
 function App() {
   return (
-    <PortfolioManager />
-  )
+    <PortfolioProvider>
+      <PortfolioManager />
+    </PortfolioProvider>
+  );
 }
 
-export default App
+export default App;

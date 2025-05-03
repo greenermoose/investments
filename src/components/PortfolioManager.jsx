@@ -39,6 +39,9 @@ const PortfolioManager = () => {
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
   const [pendingAcquisitions, setPendingAcquisitions] = useState([]);
   const [possibleTickerChanges, setPossibleTickerChanges] = useState([]);
+  
+  // State for upload modal
+  const [showUploadModal, setShowUploadModal] = useState(false);
 
   // Handle file upload
   const handleFileLoaded = async (fileContent, fileName, dateFromFileName) => {
@@ -102,6 +105,14 @@ const PortfolioManager = () => {
       
       setIsDataLoaded(true);
       setIsLoading(false);
+      
+      // Close the upload modal
+      setShowUploadModal(false);
+      
+      // Switch to History tab if this is an additional upload
+      if (latestSnapshot) {
+        setActiveTab('history');
+      }
     } catch (err) {
       console.error('Error processing file:', err);
       setError('Failed to load portfolio data. Please check the file format.');
@@ -219,12 +230,24 @@ const PortfolioManager = () => {
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Header */}
       <header className="bg-indigo-600 text-white p-4 shadow-lg">
-        <div className="container mx-auto">
-          <h1 className="text-2xl font-bold">Investment Portfolio Manager</h1>
-          {portfolioDate && currentAccount && (
-            <p className="text-sm">
-              {currentAccount} - Portfolio snapshot from: {formatDate(portfolioDate)}
-            </p>
+        <div className="container mx-auto flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold">Investment Portfolio Manager</h1>
+            {portfolioDate && currentAccount && (
+              <p className="text-sm">
+                {currentAccount} - Portfolio snapshot from: {formatDate(portfolioDate)}
+              </p>
+            )}
+          </div>
+          
+          {/* Upload button in header */}
+          {isDataLoaded && (
+            <button
+              onClick={() => setShowUploadModal(true)}
+              className="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-50 transition-colors"
+            >
+              Upload New Portfolio
+            </button>
           )}
         </div>
       </header>
@@ -369,6 +392,29 @@ const PortfolioManager = () => {
           <p className="text-xs mt-1">Disclaimer: This tool is for informational purposes only and does not constitute investment advice.</p>
         </div>
       </footer>
+      
+      {/* Upload Modal */}
+      {showUploadModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-2xl w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-semibold">Upload Additional Portfolio</h2>
+              <button
+                onClick={() => setShowUploadModal(false)}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Upload another portfolio CSV file to compare with your existing data.
+            </p>
+            <FileUploader onFileLoaded={handleFileLoaded} />
+          </div>
+        </div>
+      )}
       
       {/* Acquisition Modal */}
       <AcquisitionModal

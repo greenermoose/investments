@@ -1,3 +1,7 @@
+### 0.1.2
+
+- improve UI
+
 ### 0.1.1
 
 - first try for portfolio data from multiple dates

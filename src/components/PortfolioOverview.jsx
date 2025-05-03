@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { formatCurrency, formatPercent } from '../utils/formatters';
+import { getAccountSnapshots } from '../utils/portfolioStorage';
 
 const PortfolioOverview = ({ portfolioData, portfolioStats }) => {
+  const [hasMultipleSnapshots, setHasMultipleSnapshots] = useState(false);
+  const [snapshotCount, setSnapshotCount] = useState(0);
+  
   // Colors for charts
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d', '#ffc658', '#8dd1e1'];
+  
+  useEffect(() => {
+    checkForSnapshots();
+  }, []);
+  
+  const checkForSnapshots = async () => {
+    try {
+      const allSnapshots = await getAccountSnapshots('all'); // You might need to modify this
+      const count = allSnapshots.length;
+      setSnapshotCount(count);
+      setHasMultipleSnapshots(count > 1);
+    } catch (error) {
+      console.error('Error checking snapshots:', error);
+    }
+  };
   
   // Get top holdings for the overview
   const getTopHoldings = () => {
@@ -18,7 +37,14 @@ const PortfolioOverview = ({ portfolioData, portfolioStats }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Portfolio Summary Card */}
       <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Portfolio Summary</h2>
+        <div className="flex justify-between items-start mb-4">
+          <h2 className="text-xl font-semibold">Portfolio Summary</h2>
+          {hasMultipleSnapshots && (
+            <div className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+              {snapshotCount} snapshots available
+            </div>
+          )}
+        </div>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <p className="text-gray-500">Total Value</p>

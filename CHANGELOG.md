@@ -1,3 +1,7 @@
+### 0.1.5
+
+- show most recent portfolio statement
+
 ### 0.1.4
 
 - refactoring, part 2

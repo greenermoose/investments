@@ -2,10 +2,11 @@
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/calculationUtils';
 import { formatDate } from '../utils/dateUtils';
+import { getAllAccounts, getLatestSnapshot } from '../utils/portfolioStorage';
 
 export const usePortfolioData = () => {
   const [portfolioData, setPortfolioData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Changed to true initially
   const [error, setError] = useState(null);
   const [portfolioStats, setPortfolioStats] = useState({
     totalValue: 0,
@@ -16,6 +17,47 @@ export const usePortfolioData = () => {
   const [portfolioDate, setPortfolioDate] = useState(null);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [currentAccount, setCurrentAccount] = useState('');
+
+  // Load the latest portfolio snapshot on initialization
+  useEffect(() => {
+    const loadLatestPortfolio = async () => {
+      try {
+        // Get all accounts
+        const accounts = await getAllAccounts();
+        
+        if (accounts.length > 0) {
+          let latestSnapshot = null;
+          let latestAccountName = null;
+          
+          // Find the most recent snapshot across all accounts
+          for (const accountName of accounts) {
+            const snapshot = await getLatestSnapshot(accountName);
+            if (snapshot && (!latestSnapshot || snapshot.date > latestSnapshot.date)) {
+              latestSnapshot = snapshot;
+              latestAccountName = accountName;
+            }
+          }
+          
+          // Load the latest snapshot if found
+          if (latestSnapshot && latestAccountName) {
+            loadPortfolio(
+              latestSnapshot.data,
+              latestAccountName,
+              latestSnapshot.date,
+              latestSnapshot.accountTotal
+            );
+          }
+        }
+      } catch (err) {
+        console.error('Error loading latest portfolio:', err);
+        setError('Failed to load portfolio data');
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadLatestPortfolio();
+  }, []); // Empty dependency array - run once on mount
 
   // Update portfolio stats when data changes
   useEffect(() => {

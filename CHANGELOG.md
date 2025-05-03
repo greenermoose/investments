@@ -1,3 +1,7 @@
+### 0.0.3
+
+- fixed relative path component imports
+
 ### 0.0.2
 
 - refactored

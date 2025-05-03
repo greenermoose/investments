@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import FileUploader from './components/FileUploader';
-import PortfolioOverview from './components/PortfolioOverview';
-import PortfolioPositions from './components/PortfolioPositions';
-import PortfolioPerformance from './components/PortfolioPerformance';
-import PortfolioAnalysis from './components/PortfolioAnalysis';
-import PortfolioDemo from './components/PortfolioDemo';
-import { parseIRAPortfolioCSV } from './utils/csvParser';
+import FileUploader from './FileUploader';
+import PortfolioOverview from './PortfolioOverview';
+import PortfolioPositions from './PortfolioPositions';
+import PortfolioPerformance from './PortfolioPerformance';
+import PortfolioAnalysis from './PortfolioAnalysis';
+import PortfolioDemo from './PortfolioDemo';
+import { parseIRAPortfolioCSV } from '../utils/csvParser';
 
 const PortfolioManager = () => {
   // State variables

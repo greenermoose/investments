@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { parseDateFromFilename } from '../utils/csvParser';
+import { parseDateFromFilename } from '../utils/dateUtils';
 
 const FileUploader = ({ onFileLoaded }) => {
   const [isDragging, setIsDragging] = useState(false);

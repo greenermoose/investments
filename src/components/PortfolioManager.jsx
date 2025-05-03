@@ -11,13 +11,15 @@ import AcquisitionModal from './AcquisitionModal';
 import { parseIRAPortfolioCSV } from '../utils/csvParser';
 import { 
   savePortfolioSnapshot, 
-  getAccountNameFromFilename, 
   getLatestSnapshot,
   saveSecurityMetadata,
   getSecurityMetadata,
   saveLot
 } from '../utils/portfolioStorage';
+import { getAccountNameFromFilename } from '../utils/securityUtils';
 import { analyzePortfolioChanges, processAcquiredLots } from '../utils/portfolioAnalyzer';
+import { formatDate } from '../utils/dateUtils';
+import { calculatePortfolioStats, calculateAssetAllocation } from '../utils/calculationUtils';
 
 const PortfolioManager = () => {
   // State variables
@@ -42,6 +44,13 @@ const PortfolioManager = () => {
   
   // State for upload modal
   const [showUploadModal, setShowUploadModal] = useState(false);
+
+  // Update portfolio stats when data changes
+  useEffect(() => {
+    if (portfolioData.length > 0) {
+      setPortfolioStats(calculatePortfolioStats(portfolioData));
+    }
+  }, [portfolioData]);
 
   // Handle file upload
   const handleFileLoaded = async (fileContent, fileName, dateFromFileName) => {
@@ -90,18 +99,6 @@ const PortfolioManager = () => {
       // Set the portfolio data and date
       setPortfolioData(parsedData.portfolioData);
       setPortfolioDate(parsedData.portfolioDate || dateFromFileName);
-      
-      // Calculate portfolio statistics
-      if (parsedData.accountTotal) {
-        setPortfolioStats({
-          totalValue: parsedData.accountTotal.totalValue,
-          totalGain: parsedData.accountTotal.totalGain,
-          gainPercent: parsedData.accountTotal.gainPercent,
-          assetAllocation: calculateAssetAllocation(parsedData.portfolioData, parsedData.accountTotal.totalValue)
-        });
-      } else {
-        calculatePortfolioStats(parsedData.portfolioData);
-      }
       
       setIsDataLoaded(true);
       setIsLoading(false);
@@ -155,74 +152,6 @@ const PortfolioManager = () => {
     } catch (err) {
       console.error('Error saving acquisition data:', err);
     }
-  };
-  
-  // Calculate asset allocation from portfolio data
-  const calculateAssetAllocation = (data, totalValue) => {
-    const securityGroups = {};
-    
-    data.forEach(position => {
-      const secType = position['Security Type'] || 'Unknown';
-      if (!securityGroups[secType]) {
-        securityGroups[secType] = {
-          type: secType,
-          value: 0,
-          count: 0
-        };
-      }
-      
-      if (typeof position['Mkt Val (Market Value)'] === 'number') {
-        securityGroups[secType].value += position['Mkt Val (Market Value)'];
-      }
-      securityGroups[secType].count += 1;
-    });
-    
-    return Object.values(securityGroups);
-  };
-  
-  // Calculate portfolio statistics
-  const calculatePortfolioStats = (data) => {
-    let totalValue = 0;
-    let totalGain = 0;
-    let totalCost = 0;
-    
-    data.forEach(position => {
-      if (typeof position['Mkt Val (Market Value)'] === 'number') {
-        totalValue += position['Mkt Val (Market Value)'];
-      }
-      
-      if (typeof position['Gain $ (Gain/Loss $)'] === 'number') {
-        totalGain += position['Gain $ (Gain/Loss $)'];
-      }
-      
-      if (typeof position['Cost Basis'] === 'number') {
-        totalCost += position['Cost Basis'];
-      }
-    });
-    
-    let gainPercent = 0;
-    if (totalCost > 0) {
-      gainPercent = (totalGain / totalCost) * 100;
-    }
-    
-    setPortfolioStats({
-      totalValue,
-      totalGain,
-      gainPercent,
-      assetAllocation: calculateAssetAllocation(data, totalValue)
-    });
-  };
-
-  // Format date
-  const formatDate = (date) => {
-    if (!date) return '';
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
   };
 
   // Main render function
@@ -278,66 +207,18 @@ const PortfolioManager = () => {
             {/* Navigation Tabs */}
             <div className="mb-6 border-b border-gray-200">
               <ul className="flex flex-wrap -mb-px">
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'overview' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('overview')}
-                  >
-                    Overview
-                  </button>
-                </li>
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'positions' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('positions')}
-                  >
-                    Positions
-                  </button>
-                </li>
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'performance' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('performance')}
-                  >
-                    Performance
-                  </button>
-                </li>
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'analysis' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('analysis')}
-                  >
-                    Analysis
-                  </button>
-                </li>
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'history' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('history')}
-                  >
-                    History
-                  </button>
-                </li>
-                <li className="mr-2">
-                  <button 
-                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'lots' 
-                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
-                      : 'hover:text-gray-600 hover:border-gray-300'}`}
-                    onClick={() => setActiveTab('lots')}
-                  >
-                    Lots
-                  </button>
-                </li>
+                {['overview', 'positions', 'performance', 'analysis', 'history', 'lots'].map(tab => (
+                  <li className="mr-2" key={tab}>
+                    <button 
+                      className={`inline-block p-4 rounded-t-lg ${activeTab === tab
+                        ? 'border-b-2 border-indigo-600 text-indigo-600' 
+                        : 'hover:text-gray-600 hover:border-gray-300'}`}
+                      onClick={() => setActiveTab(tab)}
+                    >
+                      {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                    </button>
+                  </li>
+                ))}
               </ul>
             </div>
             

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getSecurityLots, getLotTrackingMethod, setLotTrackingMethod } from '../utils/portfolioAnalyzer';
 import { formatCurrency, formatPercent } from '../utils/formatters';
+import { formatDate } from '../utils/dateUtils';
+import { calculateWeightedAverageCost, calculateUnrealizedGainLoss } from '../utils/calculationUtils';
 
 const LotManagement = ({ portfolioData }) => {
   const [selectedSecurity, setSelectedSecurity] = useState(null);
@@ -35,33 +37,8 @@ const LotManagement = ({ portfolioData }) => {
     setShowSettingsModal(false);
   };
   
-  const formatDate = (date) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    });
-  };
-  
-  const calculateWeightedAverageCost = () => {
-    if (!lots.length) return 0;
-    
-    const totalCost = lots.reduce((sum, lot) => sum + lot.costBasis, 0);
-    const totalQuantity = lots.reduce((sum, lot) => sum + lot.quantity, 0);
-    
-    return totalQuantity > 0 ? totalCost / totalQuantity : 0;
-  };
-  
-  const calculateUnrealizedGainLoss = () => {
-    if (!lots.length || !selectedSecurity) return 0;
-    
-    const currentPrice = selectedSecurity.Price;
-    return lots.reduce((sum, lot) => {
-      const currentValue = lot.remainingQuantity * currentPrice;
-      const originalCost = (lot.costBasis / lot.quantity) * lot.remainingQuantity;
-      return sum + (currentValue - originalCost);
-    }, 0);
-  };
+  const avgCost = calculateWeightedAverageCost(lots);
+  const unrealizedGain = calculateUnrealizedGainLoss(lots, selectedSecurity?.Price);
   
   return (
     <div className="space-y-6">
@@ -113,14 +90,14 @@ const LotManagement = ({ portfolioData }) => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Avg Cost/Share</p>
-                  <p className="text-lg font-medium">{formatCurrency(calculateWeightedAverageCost())}</p>
+                  <p className="text-lg font-medium">{formatCurrency(avgCost)}</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Unrealized Gain/Loss</p>
                   <p className={`text-lg font-medium ${
-                    calculateUnrealizedGainLoss() >= 0 ? 'text-green-600' : 'text-red-600'
+                    unrealizedGain >= 0 ? 'text-green-600' : 'text-red-600'
                   }`}>
-                    {formatCurrency(calculateUnrealizedGainLoss())}
+                    {formatCurrency(unrealizedGain)}
                   </p>
                 </div>
               </div>

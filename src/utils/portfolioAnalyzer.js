@@ -1,5 +1,7 @@
+// utils/portfolioAnalyzer.js
 // Portfolio Analysis Module for detecting changes between portfolios
 import { getLatestSnapshot, getSecurityMetadata } from './portfolioStorage';
+import { normalizeSymbol } from './securityUtils';
 
 export const PortfolioChangeTypes = {
   SOLD: 'SOLD',
@@ -15,6 +17,16 @@ export const getSecurityLots = async (securityId) => {
   const [accountName, symbol] = securityId.split('_');
   const metadata = await getSecurityMetadata(symbol, accountName);
   return metadata?.lots || [];
+};
+
+// Get lot tracking method
+export const getLotTrackingMethod = () => {
+  return localStorage.getItem('lotTrackingMethod') || 'FIFO';
+};
+
+// Set lot tracking method
+export const setLotTrackingMethod = (method) => {
+  localStorage.setItem('lotTrackingMethod', method);
 };
 
 // Analyze portfolio changes
@@ -33,18 +45,18 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
   const previousSecurities = new Map();
   
   currentPortfolio.forEach(pos => {
-    currentSecurities.set(pos.Symbol, pos);
+    currentSecurities.set(normalizeSymbol(pos.Symbol), pos);
   });
   
   previousPortfolio.forEach(pos => {
-    previousSecurities.set(pos.Symbol, pos);
+    previousSecurities.set(normalizeSymbol(pos.Symbol), pos);
   });
   
   // Check for sold positions
   previousSecurities.forEach((prevPos, symbol) => {
     if (!currentSecurities.has(symbol)) {
       changes.sold.push({
-        symbol: symbol,
+        symbol: prevPos.Symbol,
         quantity: prevPos['Qty (Quantity)'],
         marketValue: prevPos['Mkt Val (Market Value)'],
         changeType: PortfolioChangeTypes.SOLD
@@ -56,7 +68,7 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
   currentSecurities.forEach((currPos, symbol) => {
     if (!previousSecurities.has(symbol)) {
       changes.acquired.push({
-        symbol: symbol,
+        symbol: currPos.Symbol,
         quantity: currPos['Qty (Quantity)'],
         marketValue: currPos['Mkt Val (Market Value)'],
         changeType: PortfolioChangeTypes.ACQUIRED
@@ -71,9 +83,9 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
       const currentQty = currPos['Qty (Quantity)'];
       const previousQty = prevPos['Qty (Quantity)'];
       
-      if (currentQty !== previousQty) {
+      if (Math.abs(currentQty - previousQty) > 0.01) { // Handle floating point comparison
         const change = {
-          symbol: symbol,
+          symbol: currPos.Symbol,
           previousQuantity: previousQty,
           currentQuantity: currentQty,
           quantityDelta: currentQty - previousQty,
@@ -109,16 +121,6 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
   });
   
   return changes;
-};
-
-// Get lot tracking method
-export const getLotTrackingMethod = () => {
-  return localStorage.getItem('lotTrackingMethod') || 'FIFO';
-};
-
-// Set lot tracking method
-export const setLotTrackingMethod = (method) => {
-  localStorage.setItem('lotTrackingMethod', method);
 };
 
 // Process lots for acquired securities
@@ -189,4 +191,71 @@ export const processSaleLots = async (symbol, accountName, quantitySold, saleDat
   }
   
   return soldLots;
+};
+
+// Compares two portfolio snapshots to detect quantity changes
+export const comparePortfolioSnapshots = (current, previous) => {
+  const changes = {
+    added: [],
+    removed: [],
+    quantityChanges: [],
+    noChanges: []
+  };
+  
+  if (!previous || !Array.isArray(previous)) {
+    return { added: current || [], removed: [], quantityChanges: [], noChanges: [] };
+  }
+  
+  const currentSymbols = new Map();
+  const previousSymbols = new Map();
+  
+  // Build lookup maps
+  current.forEach(position => {
+    if (position.Symbol) {
+      currentSymbols.set(normalizeSymbol(position.Symbol), position);
+    }
+  });
+  
+  previous.forEach(position => {
+    if (position.Symbol) {
+      previousSymbols.set(normalizeSymbol(position.Symbol), position);
+    }
+  });
+  
+  // Find added positions
+  currentSymbols.forEach((position, symbol) => {
+    if (!previousSymbols.has(symbol)) {
+      changes.added.push(position);
+    }
+  });
+  
+  // Find removed positions
+  previousSymbols.forEach((position, symbol) => {
+    if (!currentSymbols.has(symbol)) {
+      changes.removed.push(position);
+    }
+  });
+  
+  // Find quantity changes
+  currentSymbols.forEach((currentPos, symbol) => {
+    if (previousSymbols.has(symbol)) {
+      const previousPos = previousSymbols.get(symbol);
+      const currentQty = currentPos['Qty (Quantity)'] || 0;
+      const previousQty = previousPos['Qty (Quantity)'] || 0;
+      
+      if (Math.abs(currentQty - previousQty) > 0.0001) { // Allow for floating point errors
+        changes.quantityChanges.push({
+          symbol: currentPos.Symbol,
+          previousQuantity: previousQty,
+          currentQuantity: currentQty,
+          quantityDelta: currentQty - previousQty,
+          position: currentPos
+        });
+      } else {
+        changes.noChanges.push(currentPos);
+      }
+    }
+  });
+  
+  return changes;
 };

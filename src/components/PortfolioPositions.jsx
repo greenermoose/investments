@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { formatCurrency, formatPercent } from '../utils/formatters';
+import { formatCurrency, formatPercent, formatValue } from '../utils/formatters';
+import { generateAndDownloadCSV } from '../utils/fileUtils';
 
 const PortfolioPositions = ({ portfolioData }) => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
@@ -60,35 +61,11 @@ const PortfolioPositions = ({ portfolioData }) => {
       'Gain/Loss %'
     ];
     
-    const csvData = portfolioData.map(position => [
-      position['Symbol'],
-      position['Description'],
-      position['Qty (Quantity)'],
-      position['Price'],
-      position['Mkt Val (Market Value)'],
-      position['Cost Basis'],
-      position['Gain $ (Gain/Loss $)'],
-      position['Gain % (Gain/Loss %)']
-    ]);
-    
-    const csv = [
-      headers.join(','),
-      ...csvData.map(row => row.map(cell => 
-        typeof cell === 'string' && cell.includes(',') 
-          ? `"${cell}"`
-          : cell
-      ).join(','))
-    ].join('\n');
-    
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.setAttribute('href', url);
-    link.setAttribute('download', `portfolio_export_${new Date().toISOString().slice(0, 10)}.csv`);
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    generateAndDownloadCSV(
+      portfolioData,
+      headers,
+      `portfolio_export_${new Date().toISOString().slice(0, 10)}.csv`
+    );
   };
 
   return (
@@ -177,25 +154,25 @@ const PortfolioPositions = ({ portfolioData }) => {
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">{position.Symbol}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{position.Description}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {typeof position['Qty (Quantity)'] === 'number' ? position['Qty (Quantity)'].toFixed(4) : position['Qty (Quantity)']}
+                  {formatValue(position['Qty (Quantity)'], 'number')}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {typeof position.Price === 'number' ? formatCurrency(position.Price) : position.Price}
+                  {formatValue(position.Price, 'currency')}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {typeof position['Mkt Val (Market Value)'] === 'number' ? formatCurrency(position['Mkt Val (Market Value)']) : position['Mkt Val (Market Value)']}
+                  {formatValue(position['Mkt Val (Market Value)'], 'currency')}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {typeof position['Cost Basis'] === 'number' ? formatCurrency(position['Cost Basis']) : position['Cost Basis']}
+                  {formatValue(position['Cost Basis'], 'currency')}
                 </td>
                 <td className={`px-6 py-4 whitespace-nowrap text-sm ${typeof position['Gain $ (Gain/Loss $)'] === 'number' && position['Gain $ (Gain/Loss $)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                  {typeof position['Gain $ (Gain/Loss $)'] === 'number' ? formatCurrency(position['Gain $ (Gain/Loss $)']) : position['Gain $ (Gain/Loss $)']}
+                  {formatValue(position['Gain $ (Gain/Loss $)'], 'currency')}
                 </td>
                 <td className={`px-6 py-4 whitespace-nowrap text-sm ${typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                  {typeof position['Gain % (Gain/Loss %)'] === 'number' ? formatPercent(position['Gain % (Gain/Loss %)']) : position['Gain % (Gain/Loss %)']}
+                  {formatValue(position['Gain % (Gain/Loss %)'], 'percent')}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {typeof position['% of Acct (% of Account)'] === 'number' ? formatPercent(position['% of Acct (% of Account)']) : position['% of Acct (% of Account)']}
+                  {formatValue(position['% of Acct (% of Account)'], 'percent')}
                 </td>
               </tr>
             ))}

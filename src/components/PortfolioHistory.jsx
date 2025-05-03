@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { getAllAccounts, getAccountSnapshots } from '../utils/portfolioStorage';
 import { formatCurrency, formatPercent } from '../utils/formatters';
+import { formatDate } from '../utils/dateUtils';
 
 const PortfolioHistory = () => {
   const [accounts, setAccounts] = useState([]);
@@ -51,16 +51,6 @@ const PortfolioHistory = () => {
     if (isComparing && selectedSnapshots.length < 2) {
       setSelectedSnapshots([...selectedSnapshots, snapshot]);
     }
-  };
-  
-  const formatDate = (date) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
   };
   
   const calculateDifference = (snapshot1, snapshot2) => {

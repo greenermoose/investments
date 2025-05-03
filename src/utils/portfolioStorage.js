@@ -1,5 +1,5 @@
 // Portfolio Storage Module using IndexedDB
-import { parseDateFromFilename } from './csvParser';
+import { parseDateFromFilename } from './dateUtils';
 
 const DB_NAME = 'PortfolioManagerDB';
 const DB_VERSION = 1;

@@ -116,3 +116,5 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats }) => {
     </div>
   );
 };
+
+export default PortfolioPerformance;

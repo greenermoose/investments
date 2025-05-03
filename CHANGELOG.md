@@ -1,3 +1,7 @@
+### 0.0.4
+
+- fixing syntax errors
+
 ### 0.0.3
 
 - fixed relative path component imports

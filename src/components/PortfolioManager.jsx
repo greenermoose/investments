@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FileUploader from './FileUploader';
 import PortfolioOverview from './PortfolioOverview';
 import PortfolioPositions from './PortfolioPositions';
 import PortfolioPerformance from './PortfolioPerformance';
 import PortfolioAnalysis from './PortfolioAnalysis';
+import PortfolioHistory from './PortfolioHistory';
+import LotManagement from './LotManagement';
 import PortfolioDemo from './PortfolioDemo';
+import AcquisitionModal from './AcquisitionModal';
 import { parseIRAPortfolioCSV } from '../utils/csvParser';
+import { 
+  savePortfolioSnapshot, 
+  getAccountNameFromFilename, 
+  getLatestSnapshot,
+  saveSecurityMetadata,
+  getSecurityMetadata,
+  saveLot
+} from '../utils/portfolioStorage';
+import { analyzePortfolioChanges, processAcquiredLots } from '../utils/portfolioAnalyzer';
 
 const PortfolioManager = () => {
   // State variables
@@ -21,21 +33,62 @@ const PortfolioManager = () => {
   });
   const [portfolioDate, setPortfolioDate] = useState(null);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
+  const [currentAccount, setCurrentAccount] = useState('');
+  
+  // New state for acquisition handling
+  const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
+  const [pendingAcquisitions, setPendingAcquisitions] = useState([]);
+  const [possibleTickerChanges, setPossibleTickerChanges] = useState([]);
 
   // Handle file upload
-  const handleFileLoaded = (fileContent, fileName, dateFromFileName) => {
+  const handleFileLoaded = async (fileContent, fileName, dateFromFileName) => {
     try {
       setIsLoading(true);
       setError(null);
       
-      // Use the parseIRAPortfolioCSV function from utils
+      // Parse the CSV data
       const parsedData = parseIRAPortfolioCSV(fileContent);
+      const accountName = getAccountNameFromFilename(fileName);
+      setCurrentAccount(accountName);
+      
+      // Get the latest snapshot for comparison
+      const latestSnapshot = await getLatestSnapshot(accountName);
+      
+      // Analyze changes if there's a previous snapshot
+      let changes = null;
+      if (latestSnapshot) {
+        changes = await analyzePortfolioChanges(parsedData.portfolioData, latestSnapshot.data);
+      }
+      
+      // Save the current snapshot
+      await savePortfolioSnapshot(
+        parsedData.portfolioData, 
+        accountName, 
+        parsedData.portfolioDate || dateFromFileName, 
+        parsedData.accountTotal
+      );
+      
+      // Handle new acquisitions
+      if (changes && changes.acquired.length > 0) {
+        // Add description to acquired securities
+        const enrichedAcquisitions = changes.acquired.map(acq => {
+          const security = parsedData.portfolioData.find(p => p.Symbol === acq.symbol);
+          return {
+            ...acq,
+            description: security?.Description || ''
+          };
+        });
+        
+        setPendingAcquisitions(enrichedAcquisitions);
+        setPossibleTickerChanges(changes.possibleTickerChanges || []);
+        setShowAcquisitionModal(true);
+      }
       
       // Set the portfolio data and date
       setPortfolioData(parsedData.portfolioData);
       setPortfolioDate(parsedData.portfolioDate || dateFromFileName);
       
-      // Use account total if available, otherwise calculate from individual positions
+      // Calculate portfolio statistics
       if (parsedData.accountTotal) {
         setPortfolioStats({
           totalValue: parsedData.accountTotal.totalValue,
@@ -44,7 +97,6 @@ const PortfolioManager = () => {
           assetAllocation: calculateAssetAllocation(parsedData.portfolioData, parsedData.accountTotal.totalValue)
         });
       } else {
-        // Calculate portfolio statistics if no account total was found
         calculatePortfolioStats(parsedData.portfolioData);
       }
       
@@ -57,13 +109,48 @@ const PortfolioManager = () => {
     }
   };
   
+  // Handle acquisition date submission
+  const handleAcquisitionSubmit = async (change, acquisitionDate, isTickerChange, oldSymbol) => {
+    try {
+      if (isTickerChange) {
+        // Handle ticker symbol change
+        // Copy existing security metadata to new symbol
+        const oldMetadata = await getSecurityMetadata(oldSymbol, currentAccount);
+        if (oldMetadata) {
+          await saveSecurityMetadata(change.symbol, currentAccount, {
+            acquisitionDate: oldMetadata.acquisitionDate,
+            lots: oldMetadata.lots,
+            description: change.description
+          });
+        }
+      } else {
+        // Save new acquisition metadata
+        await saveSecurityMetadata(change.symbol, currentAccount, {
+          acquisitionDate: acquisitionDate,
+          description: change.description
+        });
+        
+        // Create a new lot for the acquisition
+        const newLot = await processAcquiredLots(
+          change.symbol,
+          currentAccount,
+          change.quantity,
+          acquisitionDate,
+          0 // Cost basis will need to be updated later
+        );
+        
+        await saveLot(newLot);
+      }
+    } catch (err) {
+      console.error('Error saving acquisition data:', err);
+    }
+  };
+  
   // Calculate asset allocation from portfolio data
   const calculateAssetAllocation = (data, totalValue) => {
-    // Group by security type for asset allocation
     const securityGroups = {};
     
     data.forEach(position => {
-      // Group by security type for asset allocation
       const secType = position['Security Type'] || 'Unknown';
       if (!securityGroups[secType]) {
         securityGroups[secType] = {
@@ -79,7 +166,6 @@ const PortfolioManager = () => {
       securityGroups[secType].count += 1;
     });
     
-    // Convert security groups to array for chart
     return Object.values(securityGroups);
   };
   
@@ -90,23 +176,19 @@ const PortfolioManager = () => {
     let totalCost = 0;
     
     data.forEach(position => {
-      // Calculate total market value
       if (typeof position['Mkt Val (Market Value)'] === 'number') {
         totalValue += position['Mkt Val (Market Value)'];
       }
       
-      // Calculate total gain/loss
       if (typeof position['Gain $ (Gain/Loss $)'] === 'number') {
         totalGain += position['Gain $ (Gain/Loss $)'];
       }
       
-      // Calculate total cost basis
       if (typeof position['Cost Basis'] === 'number') {
         totalCost += position['Cost Basis'];
       }
     });
     
-    // Calculate gain percentage if there's a valid cost basis
     let gainPercent = 0;
     if (totalCost > 0) {
       gainPercent = (totalGain / totalCost) * 100;
@@ -139,8 +221,10 @@ const PortfolioManager = () => {
       <header className="bg-indigo-600 text-white p-4 shadow-lg">
         <div className="container mx-auto">
           <h1 className="text-2xl font-bold">Investment Portfolio Manager</h1>
-          {portfolioDate && (
-            <p className="text-sm">Portfolio snapshot from: {formatDate(portfolioDate)}</p>
+          {portfolioDate && currentAccount && (
+            <p className="text-sm">
+              {currentAccount} - Portfolio snapshot from: {formatDate(portfolioDate)}
+            </p>
           )}
         </div>
       </header>
@@ -211,6 +295,26 @@ const PortfolioManager = () => {
                     Analysis
                   </button>
                 </li>
+                <li className="mr-2">
+                  <button 
+                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'history' 
+                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
+                      : 'hover:text-gray-600 hover:border-gray-300'}`}
+                    onClick={() => setActiveTab('history')}
+                  >
+                    History
+                  </button>
+                </li>
+                <li className="mr-2">
+                  <button 
+                    className={`inline-block p-4 rounded-t-lg ${activeTab === 'lots' 
+                      ? 'border-b-2 border-indigo-600 text-indigo-600' 
+                      : 'hover:text-gray-600 hover:border-gray-300'}`}
+                    onClick={() => setActiveTab('lots')}
+                  >
+                    Lots
+                  </button>
+                </li>
               </ul>
             </div>
             
@@ -243,6 +347,16 @@ const PortfolioManager = () => {
                   portfolioStats={portfolioStats}
                 />
               )}
+              
+              {activeTab === 'history' && (
+                <PortfolioHistory />
+              )}
+              
+              {activeTab === 'lots' && (
+                <LotManagement 
+                  portfolioData={portfolioData}
+                />
+              )}
             </div>
           </>
         )}
@@ -255,6 +369,15 @@ const PortfolioManager = () => {
           <p className="text-xs mt-1">Disclaimer: This tool is for informational purposes only and does not constitute investment advice.</p>
         </div>
       </footer>
+      
+      {/* Acquisition Modal */}
+      <AcquisitionModal
+        isOpen={showAcquisitionModal}
+        onClose={() => setShowAcquisitionModal(false)}
+        onSubmit={handleAcquisitionSubmit}
+        changes={pendingAcquisitions}
+        possibleTickerChanges={possibleTickerChanges}
+      />
     </div>
   );
 };

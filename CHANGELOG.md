@@ -1,3 +1,9 @@
+### 0.1.1
+
+- first try for portfolio data from multiple dates
+
+## 0.1 Multiple dates
+
 ### 0.0.5
 
 - fixing account total parsing
@@ -18,6 +24,6 @@
 
 - initial commit
 
-## 0.0
+## 0.0 Single date
 
 # 0

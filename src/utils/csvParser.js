@@ -149,3 +149,85 @@ export const formatPercent = (value) => {
   if (typeof value !== 'number') return value;
   return value.toFixed(2) + '%';
 };
+
+/**
+ * Normalizes security symbols for comparison
+ * @param {string} symbol - The symbol to normalize
+ * @returns {string} The normalized symbol
+ */
+export const normalizeSymbol = (symbol) => {
+  if (!symbol) return '';
+  return symbol.replace(/\s+/g, '').toUpperCase();
+};
+
+/**
+ * Compares two portfolio snapshots to detect quantity changes
+ * @param {Array} current - Current portfolio data
+ * @param {Array} previous - Previous portfolio data
+ * @returns {Object} Comparison results with changes
+ */
+export const comparePortfolioSnapshots = (current, previous) => {
+  const changes = {
+    added: [],
+    removed: [],
+    quantityChanges: [],
+    noChanges: []
+  };
+  
+  if (!previous || !Array.isArray(previous)) {
+    return { added: current || [], removed: [], quantityChanges: [], noChanges: [] };
+  }
+  
+  const currentSymbols = new Map();
+  const previousSymbols = new Map();
+  
+  // Build lookup maps
+  current.forEach(position => {
+    if (position.Symbol) {
+      currentSymbols.set(normalizeSymbol(position.Symbol), position);
+    }
+  });
+  
+  previous.forEach(position => {
+    if (position.Symbol) {
+      previousSymbols.set(normalizeSymbol(position.Symbol), position);
+    }
+  });
+  
+  // Find added positions
+  currentSymbols.forEach((position, symbol) => {
+    if (!previousSymbols.has(symbol)) {
+      changes.added.push(position);
+    }
+  });
+  
+  // Find removed positions
+  previousSymbols.forEach((position, symbol) => {
+    if (!currentSymbols.has(symbol)) {
+      changes.removed.push(position);
+    }
+  });
+  
+  // Find quantity changes
+  currentSymbols.forEach((currentPos, symbol) => {
+    if (previousSymbols.has(symbol)) {
+      const previousPos = previousSymbols.get(symbol);
+      const currentQty = currentPos['Qty (Quantity)'] || 0;
+      const previousQty = previousPos['Qty (Quantity)'] || 0;
+      
+      if (Math.abs(currentQty - previousQty) > 0.0001) { // Allow for floating point errors
+        changes.quantityChanges.push({
+          symbol: currentPos.Symbol,
+          previousQuantity: previousQty,
+          currentQuantity: currentQty,
+          quantityDelta: currentQty - previousQty,
+          position: currentPos
+        });
+      } else {
+        changes.noChanges.push(currentPos);
+      }
+    }
+  });
+  
+  return changes;
+};

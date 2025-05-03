@@ -13,6 +13,7 @@ export const parseIRAPortfolioCSV = (fileContent) => {
     // Extract account info and date from the first row
     const accountInfo = lines[0];
     let portfolioDate = null;
+    let accountTotal = null;
     
     // Extract date from account info (format: "as of 06:40 PM ET, 2025/04/27")
     const dateMatch = accountInfo.match(/as of (\d+:\d+ [AP]M) ET, (\d{4})\/(\d{2})\/(\d{2})/);
@@ -91,10 +92,24 @@ export const parseIRAPortfolioCSV = (fileContent) => {
           mappedRow[columnHeaders[j]] = value;
         }
       }
-      portfolioData.push(mappedRow);
+      
+      // Check if this row is the Account Total row
+      if (mappedRow['Symbol'] === 'Account Total' || 
+          mappedRow['Description']?.includes('Account Total') || 
+          mappedRow['Symbol'] === '' && mappedRow['Description']?.includes('Total')) {
+        // Store account total information separately instead of adding to portfolio data
+        accountTotal = {
+          totalValue: mappedRow['Mkt Val (Market Value)'] || 0,
+          totalGain: mappedRow['Gain $ (Gain/Loss $)'] || 0,
+          gainPercent: mappedRow['Gain % (Gain/Loss %)'] || 0
+        };
+      } else {
+        // Add regular security to portfolio data
+        portfolioData.push(mappedRow);
+      }
     }
     
-    return { portfolioData, portfolioDate };
+    return { portfolioData, portfolioDate, accountTotal };
   } catch (error) {
     console.error('Error parsing CSV:', error);
     throw new Error('Failed to parse the portfolio CSV data');

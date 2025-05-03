@@ -1,3 +1,7 @@
+### 0.0.5
+
+- fixing account total parsing
+
 ### 0.0.4
 
 - fixing syntax errors

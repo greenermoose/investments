@@ -35,8 +35,18 @@ const PortfolioManager = () => {
       setPortfolioData(parsedData.portfolioData);
       setPortfolioDate(parsedData.portfolioDate || dateFromFileName);
       
-      // Calculate portfolio statistics
-      calculatePortfolioStats(parsedData.portfolioData);
+      // Use account total if available, otherwise calculate from individual positions
+      if (parsedData.accountTotal) {
+        setPortfolioStats({
+          totalValue: parsedData.accountTotal.totalValue,
+          totalGain: parsedData.accountTotal.totalGain,
+          gainPercent: parsedData.accountTotal.gainPercent,
+          assetAllocation: calculateAssetAllocation(parsedData.portfolioData, parsedData.accountTotal.totalValue)
+        });
+      } else {
+        // Calculate portfolio statistics if no account total was found
+        calculatePortfolioStats(parsedData.portfolioData);
+      }
       
       setIsDataLoaded(true);
       setIsLoading(false);
@@ -47,31 +57,12 @@ const PortfolioManager = () => {
     }
   };
   
-  // Calculate portfolio statistics
-  const calculatePortfolioStats = (data) => {
-    let totalValue = 0;
-    let totalGain = 0;
-    let totalCost = 0;
-    
+  // Calculate asset allocation from portfolio data
+  const calculateAssetAllocation = (data, totalValue) => {
     // Group by security type for asset allocation
     const securityGroups = {};
     
     data.forEach(position => {
-      // Calculate total market value
-      if (typeof position['Mkt Val (Market Value)'] === 'number') {
-        totalValue += position['Mkt Val (Market Value)'];
-      }
-      
-      // Calculate total gain/loss
-      if (typeof position['Gain $ (Gain/Loss $)'] === 'number') {
-        totalGain += position['Gain $ (Gain/Loss $)'];
-      }
-      
-      // Calculate total cost basis
-      if (typeof position['Cost Basis'] === 'number') {
-        totalCost += position['Cost Basis'];
-      }
-      
       // Group by security type for asset allocation
       const secType = position['Security Type'] || 'Unknown';
       if (!securityGroups[secType]) {
@@ -89,7 +80,31 @@ const PortfolioManager = () => {
     });
     
     // Convert security groups to array for chart
-    const assetAllocation = Object.values(securityGroups);
+    return Object.values(securityGroups);
+  };
+  
+  // Calculate portfolio statistics
+  const calculatePortfolioStats = (data) => {
+    let totalValue = 0;
+    let totalGain = 0;
+    let totalCost = 0;
+    
+    data.forEach(position => {
+      // Calculate total market value
+      if (typeof position['Mkt Val (Market Value)'] === 'number') {
+        totalValue += position['Mkt Val (Market Value)'];
+      }
+      
+      // Calculate total gain/loss
+      if (typeof position['Gain $ (Gain/Loss $)'] === 'number') {
+        totalGain += position['Gain $ (Gain/Loss $)'];
+      }
+      
+      // Calculate total cost basis
+      if (typeof position['Cost Basis'] === 'number') {
+        totalCost += position['Cost Basis'];
+      }
+    });
     
     // Calculate gain percentage if there's a valid cost basis
     let gainPercent = 0;
@@ -101,7 +116,7 @@ const PortfolioManager = () => {
       totalValue,
       totalGain,
       gainPercent,
-      assetAllocation
+      assetAllocation: calculateAssetAllocation(data, totalValue)
     });
   };
 

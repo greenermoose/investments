@@ -2,6 +2,27 @@
 import React from 'react';
 
 const PortfolioTabs = ({ tabs, activeTab, onTabChange }) => {
+  const getTabDisplayName = (tab) => {
+    switch (tab) {
+      case 'overview':
+        return 'Overview';
+      case 'positions':
+        return 'Positions';
+      case 'performance':
+        return 'Performance';
+      case 'analysis':
+        return 'Analysis';
+      case 'history':
+        return 'History';
+      case 'lots':
+        return 'Lots';
+      case 'account-management':
+        return 'Account Management';
+      default:
+        return tab.charAt(0).toUpperCase() + tab.slice(1);
+    }
+  };
+
   return (
     <div className="mb-6 border-b border-gray-200">
       <ul className="flex flex-wrap -mb-px">
@@ -13,7 +34,7 @@ const PortfolioTabs = ({ tabs, activeTab, onTabChange }) => {
                 : 'hover:text-gray-600 hover:border-gray-300'}`}
               onClick={() => onTabChange(tab)}
             >
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              {getTabDisplayName(tab)}
             </button>
           </li>
         ))}

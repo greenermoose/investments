@@ -7,6 +7,7 @@ import PortfolioPerformance from './PortfolioPerformance';
 import PortfolioAnalysis from './PortfolioAnalysis';
 import PortfolioHistory from './PortfolioHistory';
 import LotManagement from './LotManagement';
+import AccountManagement from './AccountManagement';
 import PortfolioDemo from './PortfolioDemo';
 import AcquisitionModal from './AcquisitionModal';
 import UploadModal from './UploadModal';
@@ -17,7 +18,8 @@ import FileDebugger from './FileDebugger'; // Import debug component
 import { 
   usePortfolio, 
   useAcquisition, 
-  useNavigation 
+  useNavigation,
+  useAccount 
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
 
@@ -26,6 +28,7 @@ const PortfolioManager = () => {
   const portfolio = usePortfolio();
   const acquisition = useAcquisition();
   const navigation = useNavigation();
+  const account = useAccount();
 
   // File upload hook
   const fileUpload = useFileUpload(
@@ -51,7 +54,8 @@ const PortfolioManager = () => {
     portfolioStats,
     portfolioDate,
     isDataLoaded,
-    currentAccount
+    currentAccount,
+    refreshData
   } = portfolio;
 
   const {
@@ -71,6 +75,13 @@ const PortfolioManager = () => {
     closeUploadModal
   } = navigation;
 
+  const { selectedAccount, setSelectedAccount } = account;
+
+  const handleAccountChange = (accountName) => {
+    setSelectedAccount(accountName);
+    refreshData();
+  };
+
   const renderTabContent = () => {
     switch (activeTab) {
       case 'overview':
@@ -81,7 +92,7 @@ const PortfolioManager = () => {
         return <PortfolioPerformance 
           portfolioData={portfolioData} 
           portfolioStats={portfolioStats} 
-          currentAccount={currentAccount} 
+          currentAccount={currentAccount || selectedAccount} 
         />;
       case 'analysis':
         return <PortfolioAnalysis portfolioData={portfolioData} portfolioStats={portfolioStats} />;
@@ -89,13 +100,20 @@ const PortfolioManager = () => {
         return <PortfolioHistory />;
       case 'lots':
         return <LotManagement portfolioData={portfolioData} />;
+      case 'account-management':
+        return <AccountManagement onDataChange={() => {
+          refreshData();
+          if (activeTab !== 'account-management') {
+            changeTab('overview');
+          }
+        }} />;
       default:
         return null;
     }
   };
 
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol) => {
-    handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, currentAccount);
+    handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, currentAccount || selectedAccount);
   };
 
   if (!isDataLoaded && !isLoading && !error) {
@@ -106,6 +124,7 @@ const PortfolioManager = () => {
           currentAccount=""
           onUploadClick={openUploadModal}
           showUploadButton={false}
+          onAccountChange={handleAccountChange}
         />
         
         <main className="flex-grow container mx-auto p-4">
@@ -131,9 +150,10 @@ const PortfolioManager = () => {
     <div className="flex flex-col min-h-screen bg-gray-100">
       <PortfolioHeader 
         portfolioDate={portfolioDate}
-        currentAccount={currentAccount}
+        currentAccount={currentAccount || selectedAccount}
         onUploadClick={openUploadModal}
         showUploadButton={isDataLoaded}
+        onAccountChange={handleAccountChange}
       />
       
       <main className="flex-grow container mx-auto p-4">

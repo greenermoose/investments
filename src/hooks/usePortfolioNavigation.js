@@ -17,7 +17,7 @@ export const usePortfolioNavigation = () => {
     setShowUploadModal(false);
   };
 
-  const tabs = ['overview', 'positions', 'performance', 'analysis', 'history', 'lots'];
+  const tabs = ['overview', 'positions', 'performance', 'analysis', 'history', 'lots', 'account-management'];
 
   return {
     activeTab,

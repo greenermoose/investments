@@ -1,3 +1,7 @@
+### 0.2.4
+
+- delete snapshots
+
 ### 0.2.3
 
 - fix file uploads, attempt 2

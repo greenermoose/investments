@@ -82,7 +82,194 @@ export const getPortfolioSnapshot = async (accountName, date) => {
   });
 };
 
-// Get all snapshots for an account
+// Delete a specific portfolio snapshot and associated data
+export const deletePortfolioSnapshot = async (portfolioId) => {
+  const db = await initializeDB();
+  
+  return new Promise(async (resolve, reject) => {
+    try {
+      // First, get the portfolio to find associated securities
+      const portfolio = await getPortfolioById(portfolioId);
+      if (!portfolio) {
+        reject(new Error('Portfolio snapshot not found'));
+        return;
+      }
+      
+      const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readwrite');
+      const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+      const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+      const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+      
+      // Delete the portfolio snapshot
+      portfolioStore.delete(portfolioId);
+      
+      // Clean up securities and lots data for this snapshot
+      portfolio.data.forEach(position => {
+        const securityId = `${portfolio.account}_${position.Symbol}`;
+        
+        // Delete security metadata if it's the last snapshot using it
+        const deleteSecurityRequest = securityStore.delete(securityId);
+        
+        // Delete associated lots
+        const lotIndex = lotStore.index('securityId');
+        lotIndex.openCursor(IDBKeyRange.only(securityId)).onsuccess = (event) => {
+          const cursor = event.target.result;
+          if (cursor) {
+            cursor.delete();
+            cursor.continue();
+          }
+        };
+      });
+      
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error);
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+// Delete an entire account and all its data
+export const deleteAccount = async (accountName) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readwrite');
+    
+    const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+    const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+    
+    // Delete all portfolios for the account
+    const portfolioIndex = portfolioStore.index('account');
+    portfolioIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        cursor.delete();
+        cursor.continue();
+      }
+    };
+    
+    // Delete all securities for the account
+    const securityIndex = securityStore.index('account');
+    securityIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        cursor.delete();
+        cursor.continue();
+      }
+    };
+    
+    // Delete all lots for the account
+    const lotIndex = lotStore.index('account');
+    lotIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        cursor.delete();
+        cursor.continue();
+      }
+    };
+    
+    transaction.oncomplete = () => resolve();
+    transaction.onerror = () => reject(transaction.error);
+  });
+};
+
+// Export all data from IndexedDB
+export const exportAllData = async () => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const data = {
+      portfolios: [],
+      securities: [],
+      lots: [],
+      exportDate: new Date().toISOString()
+    };
+    
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readonly');
+    
+    // Export portfolios
+    const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    portfolioStore.openCursor().onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        data.portfolios.push(cursor.value);
+        cursor.continue();
+      }
+    };
+    
+    // Export securities
+    const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+    securityStore.openCursor().onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        data.securities.push(cursor.value);
+        cursor.continue();
+      }
+    };
+    
+    // Export lots
+    const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+    lotStore.openCursor().onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        data.lots.push(cursor.value);
+        cursor.continue();
+      }
+    };
+    
+    transaction.oncomplete = () => resolve(data);
+    transaction.onerror = () => reject(transaction.error);
+  });
+};
+
+// Import all data into IndexedDB
+export const importAllData = async (data) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readwrite');
+    
+    const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+    const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+    
+    // Import portfolios
+    data.portfolios.forEach(portfolio => {
+      portfolioStore.put(portfolio);
+    });
+    
+    // Import securities
+    data.securities.forEach(security => {
+      securityStore.put(security);
+    });
+    
+    // Import lots
+    data.lots.forEach(lot => {
+      lotStore.put(lot);
+    });
+    
+    transaction.oncomplete = () => resolve();
+    transaction.onerror = () => reject(transaction.error);
+  });
+};
+
+// Get portfolio by ID
+export const getPortfolioById = async (portfolioId) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readonly');
+    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    const request = store.get(portfolioId);
+    
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+// Get all snapshots for an account (updated to handle empty accounts)
 export const getAccountSnapshots = async (accountName) => {
   const db = await initializeDB();
   
@@ -92,22 +279,33 @@ export const getAccountSnapshots = async (accountName) => {
     const index = store.index('account');
     const request = index.getAll(accountName);
     
-    request.onsuccess = () => resolve(request.result);
+    request.onsuccess = () => resolve(request.result || []);
     request.onerror = () => reject(request.error);
   });
 };
 
-// Get all account names
+// Get all accounts (including empty ones)
 export const getAllAccounts = async () => {
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
-    const request = store.openCursor();
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES], 'readonly');
+    const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+    
     const accounts = new Set();
     
-    request.onsuccess = (event) => {
+    // Get accounts from portfolios
+    portfolioStore.openCursor().onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        accounts.add(cursor.value.account);
+        cursor.continue();
+      }
+    };
+    
+    // Get accounts from securities (for empty accounts)
+    securityStore.openCursor().onsuccess = (event) => {
       const cursor = event.target.result;
       if (cursor) {
         accounts.add(cursor.value.account);
@@ -116,7 +314,8 @@ export const getAllAccounts = async () => {
         resolve(Array.from(accounts));
       }
     };
-    request.onerror = () => reject(request.error);
+    
+    transaction.onerror = () => reject(transaction.error);
   });
 };
 

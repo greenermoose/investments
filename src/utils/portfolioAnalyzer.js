@@ -45,11 +45,17 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
   const previousSecurities = new Map();
   
   currentPortfolio.forEach(pos => {
-    currentSecurities.set(normalizeSymbol(pos.Symbol), pos);
+    const symbol = pos.Symbol;
+    if (symbol && typeof symbol === 'string') {
+      currentSecurities.set(normalizeSymbol(symbol), pos);
+    }
   });
   
   previousPortfolio.forEach(pos => {
-    previousSecurities.set(normalizeSymbol(pos.Symbol), pos);
+    const symbol = pos.Symbol;
+    if (symbol && typeof symbol === 'string') {
+      previousSecurities.set(normalizeSymbol(symbol), pos);
+    }
   });
   
   // Check for sold positions
@@ -57,8 +63,8 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
     if (!currentSecurities.has(symbol)) {
       changes.sold.push({
         symbol: prevPos.Symbol,
-        quantity: prevPos['Qty (Quantity)'],
-        marketValue: prevPos['Mkt Val (Market Value)'],
+        quantity: prevPos['Qty (Quantity)'] || prevPos['Quantity'],
+        marketValue: prevPos['Mkt Val (Market Value)'] || prevPos['Market Value'],
         changeType: PortfolioChangeTypes.SOLD
       });
     }
@@ -69,8 +75,8 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
     if (!previousSecurities.has(symbol)) {
       changes.acquired.push({
         symbol: currPos.Symbol,
-        quantity: currPos['Qty (Quantity)'],
-        marketValue: currPos['Mkt Val (Market Value)'],
+        quantity: currPos['Qty (Quantity)'] || currPos['Quantity'],
+        marketValue: currPos['Mkt Val (Market Value)'] || currPos['Market Value'],
         changeType: PortfolioChangeTypes.ACQUIRED
       });
     }
@@ -80,8 +86,8 @@ export const analyzePortfolioChanges = async (currentPortfolio, previousPortfoli
   currentSecurities.forEach((currPos, symbol) => {
     if (previousSecurities.has(symbol)) {
       const prevPos = previousSecurities.get(symbol);
-      const currentQty = currPos['Qty (Quantity)'];
-      const previousQty = prevPos['Qty (Quantity)'];
+      const currentQty = currPos['Qty (Quantity)'] || currPos['Quantity'] || 0;
+      const previousQty = prevPos['Qty (Quantity)'] || prevPos['Quantity'] || 0;
       
       if (Math.abs(currentQty - previousQty) > 0.01) { // Handle floating point comparison
         const change = {
@@ -240,8 +246,8 @@ export const comparePortfolioSnapshots = (current, previous) => {
   currentSymbols.forEach((currentPos, symbol) => {
     if (previousSymbols.has(symbol)) {
       const previousPos = previousSymbols.get(symbol);
-      const currentQty = currentPos['Qty (Quantity)'] || 0;
-      const previousQty = previousPos['Qty (Quantity)'] || 0;
+      const currentQty = currentPos['Qty (Quantity)'] || currentPos['Quantity'] || 0;
+      const previousQty = previousPos['Qty (Quantity)'] || previousPos['Quantity'] || 0;
       
       if (Math.abs(currentQty - previousQty) > 0.0001) { // Allow for floating point errors
         changes.quantityChanges.push({

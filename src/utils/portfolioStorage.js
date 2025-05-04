@@ -1,3 +1,4 @@
+// utils/portfolioStorage.js
 // Portfolio Storage Module using IndexedDB
 import { parseDateFromFilename } from './dateUtils';
 
@@ -50,7 +51,8 @@ export const savePortfolioSnapshot = async (portfolioData, accountName, date, ac
     const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
     const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
     
-    const portfolioId = `${accountName}_${date.getTime()}`;
+    // Create a unique portfolio ID with random component to prevent collisions
+    const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
     const portfolio = {
       id: portfolioId,
       account: accountName,

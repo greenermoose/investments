@@ -31,8 +31,27 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
         console.warn('Could not extract date from file or filename. Using current date.');
       }
       
+      // Debug logging
+      console.log('===== FILE UPLOAD DEBUG =====');
+      console.log('DEBUG: Filename:', fileName);
+      console.log('DEBUG: Account name:', accountName);
+      console.log('DEBUG: Date from filename:', dateFromFileName);
+      console.log('DEBUG: Date from CSV:', parsedData.portfolioDate);
+      console.log('DEBUG: Final portfolio date:', portfolioDate);
+      console.log('DEBUG: Parsed data rows:', parsedData.portfolioData.length);
+      console.log('=============================');
+      
       // Get the latest snapshot for comparison
       const latestSnapshot = await getLatestSnapshot(accountName);
+      
+      if (latestSnapshot) {
+        console.log('DEBUG: Latest snapshot found:', {
+          id: latestSnapshot.id,
+          date: latestSnapshot.date.toLocaleString()
+        });
+      } else {
+        console.log('DEBUG: No previous snapshot found for this account');
+      }
       
       // Analyze changes if there's a previous snapshot
       let changes = null;
@@ -41,12 +60,14 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
       
       // Save the current snapshot
-      await savePortfolioSnapshot(
+      const portfolioId = await savePortfolioSnapshot(
         parsedData.portfolioData, 
         accountName, 
         portfolioDate, 
         parsedData.accountTotal
       );
+      
+      console.log('DEBUG: Portfolio saved with ID:', portfolioId);
       
       // Handle new acquisitions
       if (changes && changes.acquired.length > 0) {

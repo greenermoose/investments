@@ -37,6 +37,68 @@ const parseFieldValue = (value) => {
 };
 
 /**
+ * Creates a header mapping to handle different header variations
+ * @param {Array} columnHeaders - The raw column headers from the file
+ * @returns {Object} A mapping of standard names to column indices
+ */
+const createHeaderMapping = (columnHeaders) => {
+  const headerMap = {};
+  
+  columnHeaders.forEach((header, index) => {
+    // Normalize and map headers to standard names
+    const normalizedHeader = header.replace(/\s+/g, ' ').trim();
+    
+    // Map different variations to standardized names
+    switch(normalizedHeader) {
+      case 'Quantity':
+      case 'Qty (Quantity)':
+        headerMap['Qty (Quantity)'] = index;
+        break;
+      case 'Market Value':
+      case 'Mkt Val (Market Value)':
+        headerMap['Mkt Val (Market Value)'] = index;
+        break;
+      case 'Gain/Loss $':
+      case 'Gain $ (Gain/Loss $)':
+        headerMap['Gain $ (Gain/Loss $)'] = index;
+        break;
+      case 'Gain/Loss %':
+      case 'Gain % (Gain/Loss %)':
+        headerMap['Gain % (Gain/Loss %)'] = index;
+        break;
+      case '% Of Account':
+      case '% of Acct (% of Account)':
+        headerMap['% of Acct (% of Account)'] = index;
+        break;
+      case 'Day Change $':
+      case 'Day Chng $ (Day Change $)':
+        headerMap['Day Chng $ (Day Change $)'] = index;
+        break;
+      case 'Day Change %':
+      case 'Day Chng % (Day Change %)':
+        headerMap['Day Chng % (Day Change %)'] = index;
+        break;
+      case 'Price Change $':
+      case 'Price Chng $ (Price Change $)':
+        headerMap['Price Chng $ (Price Change $)'] = index;
+        break;
+      case 'Price Change %':
+      case 'Price Chng % (Price Change %)':
+        headerMap['Price Chng % (Price Change %)'] = index;
+        break;
+      case 'Reinvest Dividends?':
+      case 'Reinvest?':
+        headerMap['Reinvest?'] = index;
+        break;
+      default:
+        headerMap[normalizedHeader] = index;
+    }
+  });
+  
+  return headerMap;
+};
+
+/**
  * Parses the IRA CSV data from the exported format
  * @param {string} fileContent - The raw CSV file content
  * @returns {Object} The parsed portfolio data and date
@@ -93,6 +155,9 @@ export const parseIRAPortfolioCSV = (fileContent) => {
       throw new Error('Could not find the column headers row');
     }
     
+    // Create header mapping
+    const headerMap = createHeaderMapping(columnHeaders);
+    
     // Parse the data rows
     const portfolioData = [];
     let accountTotal = null;
@@ -110,11 +175,13 @@ export const parseIRAPortfolioCSV = (fileContent) => {
         
         const row = parsed.data[0];
         
-        // Create mapped object
+        // Create mapped object using header mapping
         const mappedRow = {};
-        columnHeaders.forEach((header, idx) => {
+        
+        // Use standardized header names
+        Object.entries(headerMap).forEach(([standardHeader, idx]) => {
           if (idx < row.length && row[idx]) {
-            mappedRow[header] = parseFieldValue(row[idx]);
+            mappedRow[standardHeader] = parseFieldValue(row[idx]);
           }
         });
         

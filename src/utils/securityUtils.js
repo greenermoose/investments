@@ -5,7 +5,7 @@
  * @returns {string} The normalized symbol
  */
 export const normalizeSymbol = (symbol) => {
-  if (!symbol) return '';
+  if (!symbol || typeof symbol !== 'string') return '';
   return symbol.replace(/\s+/g, '').toUpperCase();
 };
 
@@ -37,10 +37,17 @@ export const isAccountTotalRow = (row) => {
  * @returns {string} The extracted account name
  */
 export const getAccountNameFromFilename = (filename) => {
-  // Pattern: AccountType_AccountName-Positions-Date.csv
+  // Pattern for files with hyphens: AccountType_AccountName-Positions-Date.csv
   const match = filename.match(/^([^-]+)-Positions/);
   if (match) {
     return match[1].replace(/_/g, ' ');
   }
+  
+  // Fallback pattern
+  const fallbackMatch = filename.match(/^([^_]+_[^_]+)_?Positions/);
+  if (fallbackMatch) {
+    return fallbackMatch[1].replace(/_/g, ' ');
+  }
+  
   return 'Unknown Account';
 };

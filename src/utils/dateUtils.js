@@ -1,13 +1,14 @@
 // utils/dateUtils.js
 /**
- * Parses a filename with embedded date (format: nameYYYYMMDDHHMMSS.csv)
+ * Parses a filename with embedded date (format: nameYYYY-MM-DD-HHMMSS.csv)
  * @param {string} filename - The filename to parse
  * @returns {Date|null} The extracted date or null if not found
  */
 export const parseDateFromFilename = (filename) => {
   if (!filename) return null;
   
-  const dateMatch = filename.match(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/);
+  // Match format with hyphens: YYYY-MM-DD-HHMMSS
+  const dateMatch = filename.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})(\d{2})/);
   if (dateMatch) {
     const [_, year, month, day, hours, minutes, seconds] = dateMatch;
     const date = new Date(year, month-1, day, hours, minutes, seconds);

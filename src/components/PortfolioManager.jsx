@@ -77,7 +77,11 @@ const PortfolioManager = () => {
       case 'positions':
         return <PortfolioPositions portfolioData={portfolioData} portfolioStats={portfolioStats} />;
       case 'performance':
-        return <PortfolioPerformance portfolioData={portfolioData} portfolioStats={portfolioStats} />;
+        return <PortfolioPerformance 
+          portfolioData={portfolioData} 
+          portfolioStats={portfolioStats} 
+          currentAccount={currentAccount} 
+        />;
       case 'analysis':
         return <PortfolioAnalysis portfolioData={portfolioData} portfolioStats={portfolioStats} />;
       case 'history':

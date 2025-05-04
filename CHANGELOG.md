@@ -1,3 +1,9 @@
+### 0.2.1
+
+- Claude project, first improvement
+
+## 0.2
+
 ### 0.1.5
 
 - show most recent portfolio statement

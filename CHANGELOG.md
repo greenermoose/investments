@@ -1,3 +1,7 @@
+### 0.2.2
+
+- fix file uploads, attempt 1
+
 ### 0.2.1
 
 - Claude project, first improvement

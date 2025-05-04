@@ -15,7 +15,21 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       
       // Parse the CSV data
       const parsedData = parseIRAPortfolioCSV(fileContent);
+      
+      if (!parsedData.portfolioData || parsedData.portfolioData.length === 0) {
+        throw new Error('No portfolio data found in the file. Please check the file format.');
+      }
+      
       const accountName = getAccountNameFromFilename(fileName);
+      
+      // Determine the portfolio date
+      let portfolioDate = parsedData.portfolioDate || dateFromFileName;
+      
+      // If still no date, create one from current time as fallback
+      if (!portfolioDate) {
+        portfolioDate = new Date();
+        console.warn('Could not extract date from file or filename. Using current date.');
+      }
       
       // Get the latest snapshot for comparison
       const latestSnapshot = await getLatestSnapshot(accountName);
@@ -30,7 +44,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       await savePortfolioSnapshot(
         parsedData.portfolioData, 
         accountName, 
-        parsedData.portfolioDate || dateFromFileName, 
+        portfolioDate, 
         parsedData.accountTotal
       );
       
@@ -52,7 +66,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       onLoad.loadPortfolio(
         parsedData.portfolioData,
         accountName,
-        parsedData.portfolioDate || dateFromFileName,
+        portfolioDate,
         parsedData.accountTotal
       );
       
@@ -65,7 +79,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
     } catch (err) {
       console.error('Error processing file:', err);
-      onLoad.setError('Failed to load portfolio data. Please check the file format.');
+      onLoad.setError(err.message || 'Failed to load portfolio data. Please check the file format.');
       onLoad.setLoadingState(false);
     }
   };

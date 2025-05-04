@@ -13,6 +13,7 @@ import UploadModal from './UploadModal';
 import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import PortfolioTabs from './PortfolioTabs';
+import FileDebugger from './FileDebugger'; // Import debug component
 import { 
   usePortfolio, 
   useAcquisition, 
@@ -112,6 +113,11 @@ const PortfolioManager = () => {
             <h2 className="text-xl font-semibold mb-4">Upload Your Portfolio Data</h2>
             <p className="mb-4">Upload a CSV file containing your portfolio data to get started.</p>
             <FileUploader onFileLoaded={fileUpload.handleFileLoaded} />
+            
+            {/* Show debug component in development mode */}
+            {process.env.NODE_ENV === 'development' && (
+              <FileDebugger />
+            )}
           </div>
           <PortfolioDemo />
         </main>

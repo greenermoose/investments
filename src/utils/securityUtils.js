@@ -26,8 +26,9 @@ export const symbolsMatch = (symbol1, symbol2) => {
  */
 export const isAccountTotalRow = (row) => {
   return row['Symbol'] === 'Account Total' || 
-         row['Description']?.includes('Account Total') || 
-         (row['Symbol'] === '' && row['Description']?.includes('Total'));
+         row['Description'] === 'Account Total' || 
+         (row['Symbol'] === '' && row['Description']?.includes('Total')) ||
+         row['Description'] === '--' && row['Symbol'] === '';
 };
 
 /**
@@ -36,10 +37,10 @@ export const isAccountTotalRow = (row) => {
  * @returns {string} The extracted account name
  */
 export const getAccountNameFromFilename = (filename) => {
-  // Pattern: AccountType_AccountName_Positions_Date.csv
-  const match = filename.match(/^([^_]+_[^_]+)_Positions/);
+  // Pattern: AccountType_AccountName-Positions-Date.csv
+  const match = filename.match(/^([^-]+)-Positions/);
   if (match) {
-    return match[1];
+    return match[1].replace(/_/g, ' ');
   }
   return 'Unknown Account';
 };

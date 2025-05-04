@@ -1,68 +1,39 @@
 // utils/csvParser.js
 import Papa from 'papaparse';
 import { extractDateFromAccountInfo } from './dateUtils';
-import { isAccountTotalRow } from './securityUtils';
 
 /**
- * Field mappings for the CSV parser
- */
-const FIELD_TYPES = {
-  NUMERIC: ['Qty (Quantity)', 'Price', 'Mkt Val (Market Value)', 'Cost Basis'],
-  PERCENTAGE: [
-    'Gain % (Gain/Loss %)', 
-    'Price Chng % (Price Change %)',
-    'Day Chng % (Day Change %)',
-    '% of Acct (% of Account)'
-  ],
-  CURRENCY: [
-    'Price Chng $ (Price Change $)', 
-    'Day Chng $ (Day Change $)',
-    'Gain $ (Gain/Loss $)'
-  ]
-};
-
-/**
- * Parses a value based on its field type
+ * Parses a value to appropriate format
  * @param {string} value - The value to parse
- * @param {string} fieldName - The field name
  * @returns {number|string} The parsed value
  */
-const parseFieldValue = (value, fieldName) => {
-  value = value.replace(/"/g, '').trim();
-  
-  if (value === 'N/A' || value === '--') {
+const parseFieldValue = (value) => {
+  if (!value || value === 'N/A' || value === '--' || value === '') {
     return value;
   }
   
-  if (FIELD_TYPES.NUMERIC.includes(fieldName)) {
-    return parseFloat(value.replace(/[$,]/g, ''));
+  // Remove quotes and trim
+  value = value.replace(/^["']|["']$/g, '').trim();
+  
+  // Parse currency
+  if (value.startsWith('$')) {
+    const numValue = parseFloat(value.replace(/[\$,\+]/g, ''));
+    return isNaN(numValue) ? value : numValue;
   }
   
-  if (FIELD_TYPES.PERCENTAGE.includes(fieldName)) {
-    return parseFloat(value.replace(/[%]/g, ''));
+  // Parse percentage
+  if (value.includes('%')) {
+    const numValue = parseFloat(value.replace(/[%\+]/g, ''));
+    return isNaN(numValue) ? value : numValue;
   }
   
-  if (FIELD_TYPES.CURRENCY.includes(fieldName)) {
-    return parseFloat(value.replace(/[$,]/g, ''));
+  // Parse numeric values
+  const possibleNumber = parseFloat(value.replace(/[,\+]/g, ''));
+  if (!isNaN(possibleNumber)) {
+    return possibleNumber;
   }
   
   return value;
-};
-
-/**
- * Maps a row to column headers
- * @param {Array} row - The row data
- * @param {Array} headers - Column headers
- * @returns {Object} The mapped row data
- */
-const mapRowToHeaders = (row, headers) => {
-  const mappedRow = {};
-  
-  for (let j = 0; j < headers.length; j++) {
-    mappedRow[headers[j]] = parseFieldValue(row[j], headers[j]);
-  }
-  
-  return mappedRow;
 };
 
 /**
@@ -72,46 +43,108 @@ const mapRowToHeaders = (row, headers) => {
  */
 export const parseIRAPortfolioCSV = (fileContent) => {
   try {
+    // Check if file content is empty
+    if (!fileContent || fileContent.trim().length === 0) {
+      throw new Error('File is empty');
+    }
+    
     const lines = fileContent.split('\n');
     
-    // Extract date from the first row
-    const portfolioDate = extractDateFromAccountInfo(lines[0]);
+    // Check if we have enough lines
+    if (lines.length < 3) {
+      throw new Error('File does not contain enough data');
+    }
     
-    // Extract column headers from the third row
-    const columnHeaders = lines[2].split(',').map(header => 
-      header.replace(/"/g, '').trim()
-    );
+    // Extract date from the first row (checking for both format variations)
+    let portfolioDate = extractDateFromAccountInfo(lines[0]);
+    
+    // If first line doesn't have date info, it might be in a different format
+    if (!portfolioDate) {
+      // Try to parse from filename format in the first line
+      const dateMatch = lines[0].match(/as of (.*?)[,"]/);
+      if (dateMatch) {
+        portfolioDate = new Date(dateMatch[1]);
+      }
+    }
+    
+    // Find the header row - it contains "Symbol" and has many commas
+    let headerRowIndex = -1;
+    let columnHeaders = [];
+    
+    for (let i = 0; i < Math.min(10, lines.length); i++) {
+      const possibleHeaderLine = lines[i];
+      if (possibleHeaderLine.includes('"Symbol"') || possibleHeaderLine.includes('Symbol')) {
+        headerRowIndex = i;
+        
+        // Parse the header line with Papa Parse
+        const parsed = Papa.parse(possibleHeaderLine, {
+          delimiter: ",",
+          quoteChar: '"'
+        });
+        
+        if (parsed.data && parsed.data[0]) {
+          columnHeaders = parsed.data[0].map(header => header.trim());
+        }
+        break;
+      }
+    }
+    
+    if (headerRowIndex === -1) {
+      throw new Error('Could not find the column headers row');
+    }
     
     // Parse the data rows
     const portfolioData = [];
     let accountTotal = null;
     
-    for (let i = 3; i < lines.length; i++) {
-      if (lines[i].trim() === '') continue;
+    for (let i = headerRowIndex + 1; i < lines.length; i++) {
+      if (!lines[i].trim()) continue;
       
-      const row = Papa.parse(lines[i], {
-        delimiter: ",",
-        quoteChar: '"'
-      }).data[0];
-      
-      if (row.length < columnHeaders.length) continue;
-      
-      const mappedRow = mapRowToHeaders(row, columnHeaders);
-      
-      if (isAccountTotalRow(mappedRow)) {
-        accountTotal = {
-          totalValue: mappedRow['Mkt Val (Market Value)'] || 0,
-          totalGain: mappedRow['Gain $ (Gain/Loss $)'] || 0,
-          gainPercent: mappedRow['Gain % (Gain/Loss %)'] || 0
-        };
-      } else {
-        portfolioData.push(mappedRow);
+      try {
+        const parsed = Papa.parse(lines[i], {
+          delimiter: ",",
+          quoteChar: '"'
+        });
+        
+        if (!parsed.data || !parsed.data[0]) continue;
+        
+        const row = parsed.data[0];
+        
+        // Create mapped object
+        const mappedRow = {};
+        columnHeaders.forEach((header, idx) => {
+          if (idx < row.length && row[idx]) {
+            mappedRow[header] = parseFieldValue(row[idx]);
+          }
+        });
+        
+        // Check if this is the account total row
+        if ((mappedRow.Symbol === 'Account Total' || mappedRow.Description === 'Account Total') &&
+            mappedRow['Mkt Val (Market Value)']) {
+          accountTotal = {
+            totalValue: mappedRow['Mkt Val (Market Value)'] || 0,
+            totalGain: mappedRow['Gain $ (Gain/Loss $)'] || 0,
+            gainPercent: mappedRow['Gain % (Gain/Loss %)'] || 0
+          };
+        } else if (mappedRow.Symbol && 
+                   mappedRow.Symbol !== 'Cash & Cash Investments' && 
+                   mappedRow.Symbol !== 'Account Total' &&
+                   mappedRow.Symbol !== 'Cash and Money Market') {
+          portfolioData.push(mappedRow);
+        }
+      } catch (rowError) {
+        console.warn(`Error parsing row ${i}:`, rowError.message);
+        continue;
       }
+    }
+    
+    if (portfolioData.length === 0) {
+      throw new Error('No valid portfolio data found in the file');
     }
     
     return { portfolioData, portfolioDate, accountTotal };
   } catch (error) {
     console.error('Error parsing CSV:', error);
-    throw new Error('Failed to parse the portfolio CSV data');
+    throw new Error(`Failed to parse the portfolio CSV data: ${error.message}`);
   }
 };

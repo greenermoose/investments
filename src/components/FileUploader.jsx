@@ -46,6 +46,13 @@ const FileUploader = ({ onFileLoaded }) => {
       return;
     }
     
+    // Check file size (optional)
+    const maxSize = 10 * 1024 * 1024; // 10MB
+    if (file.size > maxSize) {
+      setError('File size too large. Please upload a file smaller than 10MB');
+      return;
+    }
+    
     setFileName(file.name);
     
     // Extract date from filename if present
@@ -56,6 +63,13 @@ const FileUploader = ({ onFileLoaded }) => {
     reader.onload = (event) => {
       try {
         const fileContent = event.target.result;
+        
+        // Check if file is empty
+        if (!fileContent || fileContent.trim().length === 0) {
+          setError('The file appears to be empty. Please check the file and try again.');
+          return;
+        }
+        
         onFileLoaded(fileContent, file.name, portfolioDate);
       } catch (err) {
         console.error('Error processing file:', err);
@@ -63,7 +77,7 @@ const FileUploader = ({ onFileLoaded }) => {
       }
     };
     reader.onerror = () => {
-      setError('Error reading file');
+      setError(`Error reading file: ${reader.error}`);
     };
     reader.readAsText(file);
   };

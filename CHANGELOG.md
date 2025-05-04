@@ -1,3 +1,7 @@
+### 0.2.5
+
+- update FILES list
+
 ### 0.2.4
 
 - delete snapshots

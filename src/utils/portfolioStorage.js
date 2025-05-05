@@ -1,14 +1,18 @@
-// utils/portfolioStorage.js revision: 1
-// Portfolio Storage Module using IndexedDB
+// utils/portfolioStorage.js revision: 2
+// Portfolio Storage Module using IndexedDB with Transaction Support
+
 import { parseDateFromFilename } from './dateUtils';
 
 const DB_NAME = 'PortfolioManagerDB';
-const DB_VERSION = 1;
+const DB_VERSION = 2;  // Increment version for schema changes
 const STORE_NAME_PORTFOLIOS = 'portfolios';
 const STORE_NAME_SECURITIES = 'securities';
 const STORE_NAME_LOTS = 'lots';
+const STORE_NAME_TRANSACTIONS = 'transactions';
+const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
+const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
 
-// Initialize IndexedDB
+// Initialize IndexedDB with updated schema
 export const initializeDB = () => {
   return new Promise((resolve, reject) => {
     const request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -39,17 +43,202 @@ export const initializeDB = () => {
         lotStore.createIndex('securityId', 'securityId', { unique: false });
         lotStore.createIndex('account', 'account', { unique: false });
       }
+      
+      // Transactions store (new)
+      if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTIONS)) {
+        const transactionStore = db.createObjectStore(STORE_NAME_TRANSACTIONS, { keyPath: 'id' });
+        transactionStore.createIndex('account', 'account', { unique: false });
+        transactionStore.createIndex('symbol', 'symbol', { unique: false });
+        transactionStore.createIndex('date', 'date', { unique: false });
+        transactionStore.createIndex('action', 'action', { unique: false });
+      }
+      
+      // Manual adjustments store (new)
+      if (!db.objectStoreNames.contains(STORE_NAME_MANUAL_ADJUSTMENTS)) {
+        const adjustmentStore = db.createObjectStore(STORE_NAME_MANUAL_ADJUSTMENTS, { keyPath: 'id' });
+        adjustmentStore.createIndex('symbol', 'symbol', { unique: false });
+        adjustmentStore.createIndex('account', 'account', { unique: false });
+        adjustmentStore.createIndex('date', 'date', { unique: false });
+      }
+      
+      // Transaction metadata store (new)
+      if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTION_METADATA)) {
+        const metadataStore = db.createObjectStore(STORE_NAME_TRANSACTION_METADATA, { keyPath: 'id' });
+        metadataStore.createIndex('symbol', 'symbol', { unique: false });
+        metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
+      }
     };
   });
 };
 
-// Save portfolio snapshot
-export const savePortfolioSnapshot = async (portfolioData, accountName, date, accountTotal) => {
+// Transaction operations
+export const saveTransaction = async (transaction) => {
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    
+    const request = store.put(transaction);
+    request.onsuccess = () => resolve(transaction.id);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const getTransactionsBySymbol = async (symbol, account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readonly');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    const index = store.index('symbol');
+    
+    const request = index.getAll(symbol);
+    request.onsuccess = () => {
+      const transactions = request.result.filter(t => t.account === account);
+      resolve(transactions);
+    };
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const getTransactionsInDateRange = async (startDate, endDate, account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readonly');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    const index = store.index('date');
+    
+    const range = IDBKeyRange.bound(startDate, endDate);
+    const request = index.getAll(range);
+    
+    request.onsuccess = () => {
+      const transactions = request.result.filter(t => t.account === account);
+      resolve(transactions);
+    };
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const saveManualAdjustment = async (adjustment) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_MANUAL_ADJUSTMENTS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS);
+    
+    const adjustmentWithId = {
+      ...adjustment,
+      id: adjustment.id || `manual_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      createdAt: new Date(),
+      type: adjustment.type || 'MANUAL'
+    };
+    
+    const request = store.put(adjustmentWithId);
+    request.onsuccess = () => resolve(adjustmentWithId.id);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const getAdjustmentsForSecurity = async (symbol, account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_MANUAL_ADJUSTMENTS], 'readonly');
+    const store = transactionStore.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS);
+    const index = store.index('symbol');
+    
+    const request = index.getAll(symbol);
+    request.onsuccess = () => {
+      const adjustments = request.result.filter(a => a.account === account);
+      resolve(adjustments);
+    };
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const bulkMergeTransactions = async (transactions, account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    
+    let processed = 0;
+    const errors = [];
+    
+    transactions.forEach(transaction => {
+      const transactionWithAccount = {
+        ...transaction,
+        account,
+        importedAt: new Date()
+      };
+      
+      const request = store.put(transactionWithAccount);
+      request.onsuccess = () => {
+        processed++;
+        if (processed === transactions.length) {
+          resolve({ processed, errors });
+        }
+      };
+      request.onerror = () => {
+        errors.push({ transaction: transaction.id, error: request.error });
+        processed++;
+        if (processed === transactions.length) {
+          resolve({ processed, errors });
+        }
+      };
+    });
+  });
+};
+
+// Symbol mapping operations
+export const saveSymbolMapping = async (oldSymbol, newSymbol, effectiveDate, action, metadata = {}) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTION_METADATA], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTION_METADATA);
+    
+    const mappingId = `${oldSymbol}_${newSymbol}_${effectiveDate.getTime()}`;
+    const mapping = {
+      id: mappingId,
+      oldSymbol,
+      newSymbol,
+      effectiveDate,
+      action,
+      metadata,
+      createdAt: new Date()
+    };
+    
+    const request = store.put(mapping);
+    request.onsuccess = () => resolve(mappingId);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const getSymbolMappings = async (symbol) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTION_METADATA], 'readonly');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTION_METADATA);
+    const index = store.index('symbol');
+    
+    const request = index.getAll(symbol);
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+// Enhanced portfolio snapshot with transaction metadata
+export const savePortfolioSnapshot = async (portfolioData, accountName, date, accountTotal, transactionMetadata = null) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_PORTFOLIOS);
     
     // Create a unique portfolio ID with random component to prevent collisions
     const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -59,6 +248,7 @@ export const savePortfolioSnapshot = async (portfolioData, accountName, date, ac
       date: date,
       data: portfolioData,
       accountTotal: accountTotal,
+      transactionMetadata: transactionMetadata,
       createdAt: new Date()
     };
     
@@ -455,4 +645,54 @@ export const getAccountNameFromFilename = (filename) => {
     return match[1];
   }
   return 'Unknown Account';
+};
+
+// Additional utility functions for transaction support
+export const getTransactionsByAccount = async (account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readonly');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    const index = store.index('account');
+    
+    const request = index.getAll(account);
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const deleteTransaction = async (transactionId) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    
+    const request = store.delete(transactionId);
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error);
+  });
+};
+
+export const deleteAllAccountTransactions = async (account) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readwrite');
+    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
+    const index = store.index('account');
+    
+    const request = index.openCursor(IDBKeyRange.only(account));
+    request.onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        cursor.delete();
+        cursor.continue();
+      } else {
+        resolve();
+      }
+    };
+    request.onerror = () => reject(request.error);
+  });
 };

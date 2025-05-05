@@ -1,3 +1,9 @@
+### 0.3.1
+
+- handle transaction history files
+
+## 0.3 - process transaction history
+
 ### 0.2.6
 
 - add revision numbers to files

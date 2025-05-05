@@ -1,17 +1,29 @@
-// components/PortfolioPerformance.jsx revision: 1
+// components/PortfolioPerformance.jsx revision: 2
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { formatCurrency, formatPercent } from '../utils/formatters';
 import { formatDate } from '../utils/dateUtils';
-import { getAccountSnapshots } from '../utils/portfolioStorage';
+import { 
+  getAccountSnapshots,
+  getTransactionsByAccount,
+  getSecurityMetadata 
+} from '../utils/portfolioStorage';
 import { calculateDateRangeReturns, generateTimeSeriesData } from '../utils/performanceCalculations';
+import { getEarliestAcquisitionDate } from '../utils/transactionParser';
+import { applyTransactionsToPortfolio } from '../utils/transactionEngine';
 
 const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount }) => {
   const [timeSeriesData, setTimeSeriesData] = useState([]);
   const [returnsPeriods, setReturnsPeriods] = useState([]);
   const [sectorAllocationHistory, setSectorAllocationHistory] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedTimeRange, setSelectedTimeRange] = useState('all'); // all, 1y, 6m, 3m, 1m
+  const [selectedTimeRange, setSelectedTimeRange] = useState('all');
+  const [acquisitionDateCoverage, setAcquisitionDateCoverage] = useState({
+    transactionDerived: 0,
+    manual: 0,
+    missing: 0
+  });
+  const [transactionMismatches, setTransactionMismatches] = useState(0);
   
   useEffect(() => {
     const loadHistoricalData = async () => {
@@ -22,8 +34,9 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
       
       try {
         const snapshots = await getAccountSnapshots(currentAccount);
+        const transactions = await getTransactionsByAccount(currentAccount);
+        
         if (!snapshots || snapshots.length < 2) {
-          // Not enough data for time series analysis
           setIsLoading(false);
           return;
         }
@@ -43,6 +56,9 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
         const sectorHistory = generateSectorAllocationHistory(sortedSnapshots);
         setSectorAllocationHistory(sectorHistory);
         
+        // Analyze acquisition date coverage
+        await analyzeAcquisitionDateCoverage(sortedSnapshots[sortedSnapshots.length - 1], transactions);
+        
         setIsLoading(false);
       } catch (error) {
         console.error('Error loading historical data:', error);
@@ -52,6 +68,167 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
     
     loadHistoricalData();
   }, [currentAccount]);
+  
+  const analyzeAcquisitionDateCoverage = async (latestSnapshot, transactions) => {
+    const stats = {
+      transactionDerived: 0,
+      manual: 0,
+      missing: 0
+    };
+    
+    let mismatches = 0;
+    
+    // For each position in the latest snapshot
+    for (const position of latestSnapshot.data) {
+      const symbol = position.Symbol;
+      
+      // Get transaction-derived acquisition date
+      const symbolTransactions = transactions.filter(t => t.symbol === symbol);
+      const transactionDate = getEarliestAcquisitionDate(symbol, symbolTransactions);
+      
+      // Get manually entered acquisition date from metadata
+      const metadata = await getSecurityMetadata(symbol, currentAccount);
+      const manualDate = metadata?.acquisitionDate;
+      
+      if (transactionDate && manualDate) {
+        // Both exist - check for mismatch
+        if (Math.abs(transactionDate - manualDate) > 24 * 60 * 60 * 1000) { // More than 1 day difference
+          mismatches++;
+        }
+        stats.transactionDerived++;
+      } else if (transactionDate) {
+        stats.transactionDerived++;
+      } else if (manualDate) {
+        stats.manual++;
+      } else {
+        stats.missing++;
+      }
+    }
+    
+    setAcquisitionDateCoverage(stats);
+    setTransactionMismatches(mismatches);
+  };
+  
+  const renderCoverageSummary = () => {
+    const total = acquisitionDateCoverage.transactionDerived + 
+                  acquisitionDateCoverage.manual + 
+                  acquisitionDateCoverage.missing;
+    
+    if (total === 0) return null;
+    
+    return (
+      <div className="bg-white p-6 rounded-lg shadow mb-6">
+        <h2 className="text-xl font-semibold mb-4">Acquisition Date Coverage</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="bg-green-50 p-4 rounded-md">
+            <h3 className="text-sm text-green-700 font-medium">Transaction-Derived</h3>
+            <p className="text-2xl font-bold text-green-900">
+              {acquisitionDateCoverage.transactionDerived}
+            </p>
+            <p className="text-sm text-green-600">
+              {total > 0 && formatPercent((acquisitionDateCoverage.transactionDerived / total) * 100)}
+            </p>
+          </div>
+          
+          <div className="bg-blue-50 p-4 rounded-md">
+            <h3 className="text-sm text-blue-700 font-medium">Manual Entry</h3>
+            <p className="text-2xl font-bold text-blue-900">
+              {acquisitionDateCoverage.manual}
+            </p>
+            <p className="text-sm text-blue-600">
+              {total > 0 && formatPercent((acquisitionDateCoverage.manual / total) * 100)}
+            </p>
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-md">
+            <h3 className="text-sm text-red-700 font-medium">Missing</h3>
+            <p className="text-2xl font-bold text-red-900">
+              {acquisitionDateCoverage.missing}
+            </p>
+            <p className="text-sm text-red-600">
+              {total > 0 && formatPercent((acquisitionDateCoverage.missing / total) * 100)}
+            </p>
+          </div>
+          
+          <div className="bg-yellow-50 p-4 rounded-md">
+            <h3 className="text-sm text-yellow-700 font-medium">Mismatches</h3>
+            <p className="text-2xl font-bold text-yellow-900">
+              {transactionMismatches}
+            </p>
+            <p className="text-sm text-yellow-600">
+              {transactionMismatches > 0 && "Requires review"}
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const renderPositionAnalysis = () => {
+    const positionsWithAcquisitionData = portfolioData.map(position => {
+      const metadata = {
+        symbol: position.Symbol,
+        description: position.Description,
+        currentValue: position['Mkt Val (Market Value)'],
+        acquisition: position.isTransactionDerived ? 'Transaction' : position.earliestAcquisitionDate ? 'Manual' : 'Missing',
+        hasDiscrepancies: position.hasDiscrepancies || false,
+        acquisitionDate: position.earliestAcquisitionDate || position.acquisitionDate || null
+      };
+      return metadata;
+    });
+    
+    return (
+      <div className="bg-white p-6 rounded-lg shadow mb-6">
+        <h2 className="text-xl font-semibold mb-4">Current Positions - Acquisition Data Status</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Symbol</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Market Value</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Acquisition Date</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data Source</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {positionsWithAcquisitionData
+                .sort((a, b) => b.currentValue - a.currentValue)
+                .slice(0, 10)
+                .map((position, index) => (
+                  <tr key={index}>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">
+                      {position.symbol}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      {formatCurrency(position.currentValue)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      {position.acquisitionDate ? formatDate(position.acquisitionDate) : '-'}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                        position.acquisition === 'Transaction' ? 'bg-green-100 text-green-800' :
+                        position.acquisition === 'Manual' ? 'bg-blue-100 text-blue-800' :
+                        'bg-red-100 text-red-800'
+                      }`}>
+                        {position.acquisition}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      {position.hasDiscrepancies && (
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                          Discrepancy
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  };
   
   const generateSectorAllocationHistory = (snapshots) => {
     const sectorHistory = snapshots.map(snapshot => {
@@ -202,9 +379,9 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
   
   return (
     <div className="grid grid-cols-1 gap-6">
-      {/* Current Day Performance */}
-      {renderCurrentDayPerformance()}
-      
+      {renderCoverageSummary()}
+      {renderPositionAnalysis()}
+
       {/* Historical Performance Section */}
       {timeSeriesData.length > 1 && (
         <>
@@ -429,6 +606,18 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
             </table>
           </div>
         </div>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-4">Transaction Data</h2>
+        <p className="text-gray-600 mb-4">
+          View and manage your transaction history to improve acquisition date coverage.
+        </p>
+        <button
+          onClick={() => window.location.hash = '#transactions'}
+          className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+        >
+          View Transaction Timeline
+        </button>
       </div>
     </div>
   );

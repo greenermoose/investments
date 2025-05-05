@@ -1,4 +1,4 @@
-// components/AccountManagement.jsx
+// components/AccountManagement.jsx revision: 1
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 

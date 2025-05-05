@@ -1,3 +1,7 @@
+### 0.2.6
+
+- add revision numbers to files
+
 ### 0.2.5
 
 - update FILES list

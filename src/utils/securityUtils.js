@@ -1,4 +1,4 @@
-// utils/securityUtils.js
+// utils/securityUtils.js revision: 1
 /**
  * Normalizes security symbols for comparison
  * @param {string} symbol - The symbol to normalize

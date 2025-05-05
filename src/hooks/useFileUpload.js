@@ -1,4 +1,4 @@
-// hooks/useFileUpload.js
+// hooks/useFileUpload.js revision: 1
 import { parseIRAPortfolioCSV } from '../utils/csvParser';
 import { getAccountNameFromFilename } from '../utils/securityUtils';
 import { 

@@ -1,4 +1,4 @@
-// components/FileDebugger.jsx
+// components/FileDebugger.jsx revision: 1
 import React, { useState } from 'react';
 import { parseIRAPortfolioCSV } from '../utils/csvParser';
 import { parseDateFromFilename } from '../utils/dateUtils';

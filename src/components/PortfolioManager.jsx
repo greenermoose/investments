@@ -1,4 +1,4 @@
-// components/PortfolioManager.jsx
+// components/PortfolioManager.jsx revision: 1
 import React from 'react';
 import FileUploader from './FileUploader';
 import PortfolioOverview from './PortfolioOverview';

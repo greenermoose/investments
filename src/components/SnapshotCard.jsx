@@ -1,4 +1,4 @@
-// components/SnapshotCard.jsx
+// components/SnapshotCard.jsx revision: 1
 import React from 'react';
 import { formatDate } from '../utils/dateUtils';
 import { formatCurrency, formatPercent } from '../utils/formatters';

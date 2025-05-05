@@ -1,4 +1,4 @@
-// components/PortfolioHeader.jsx
+// components/PortfolioHeader.jsx revision: 1
 import React from 'react';
 import { formatDate } from '../utils/dateUtils';
 import AccountSelector from './AccountSelector';

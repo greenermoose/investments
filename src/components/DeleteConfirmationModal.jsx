@@ -1,4 +1,4 @@
-// components/DeleteConfirmationModal.jsx
+// components/DeleteConfirmationModal.jsx revision: 1
 import React from 'react';
 
 const DeleteConfirmationModal = ({

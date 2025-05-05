@@ -1,4 +1,4 @@
-// utils/portfolioStorage.js
+// utils/portfolioStorage.js revision: 1
 // Portfolio Storage Module using IndexedDB
 import { parseDateFromFilename } from './dateUtils';
 

@@ -1,3 +1,4 @@
+// components/PortfolioOverview.jsx revision: 1
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { formatCurrency, formatPercent } from '../utils/formatters';

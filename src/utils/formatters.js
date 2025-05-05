@@ -1,4 +1,4 @@
-// utils/formatters.js
+// utils/formatters.js revision: 1
 /**
  * Formats a numeric value as currency
  * @param {number} value - The value to format

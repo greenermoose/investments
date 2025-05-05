@@ -1,4 +1,4 @@
-// components/AccountSelector.jsx
+// components/AccountSelector.jsx revision: 1
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 

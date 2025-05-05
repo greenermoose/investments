@@ -1,4 +1,4 @@
-// components/BackupManager.jsx
+// components/BackupManager.jsx revision: 1
 import React, { useState } from 'react';
 import { exportAllData, importAllData } from '../utils/portfolioStorage';
 

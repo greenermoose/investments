@@ -1,3 +1,4 @@
+// components/PortfolioPositions.jsx revision: 1
 import React, { useState } from 'react';
 import { formatCurrency, formatPercent, formatValue } from '../utils/formatters';
 import { generateAndDownloadCSV } from '../utils/fileUtils';

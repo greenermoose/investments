@@ -1,4 +1,4 @@
-// components/PortfolioPerformance.jsx
+// components/PortfolioPerformance.jsx revision: 1
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { formatCurrency, formatPercent } from '../utils/formatters';

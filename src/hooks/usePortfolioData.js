@@ -1,4 +1,4 @@
-// hooks/usePortfolioData.js
+// hooks/usePortfolioData.js revision: 1
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/calculationUtils';
 import { formatDate } from '../utils/dateUtils';

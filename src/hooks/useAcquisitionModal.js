@@ -1,4 +1,4 @@
-// hooks/useAcquisitionModal.js
+// hooks/useAcquisitionModal.js revision: 1
 import { useState } from 'react';
 import { 
   saveSecurityMetadata,

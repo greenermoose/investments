@@ -1,4 +1,4 @@
-// components/PortfolioTabs.jsx
+// components/PortfolioTabs.jsx revision: 1
 import React from 'react';
 
 const PortfolioTabs = ({ tabs, activeTab, onTabChange }) => {

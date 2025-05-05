@@ -652,13 +652,76 @@ export const getTransactionsByAccount = async (account) => {
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readonly');
-    const store = transactionStore.objectStore(STORE_NAME_TRANSACTIONS);
-    const index = store.index('account');
+    // Create transaction to access the transactions store
+    const transactionStore = db.transaction(['transactions'], 'readonly');
+    const store = transactionStore.objectStore('transactions');
     
-    const request = index.getAll(account);
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
+    console.log(`getTransactionsByAccount: Looking for transactions with account=${account}`);
+    
+    // Try getting all transactions first to debug
+    const allRequest = store.getAll();
+    allRequest.onsuccess = () => {
+      const allTransactions = allRequest.result;
+      console.log(`getTransactionsByAccount: Found ${allTransactions.length} total transactions in store`);
+      
+      // Log sample transaction if available
+      if (allTransactions.length > 0) {
+        console.log('getTransactionsByAccount: Sample transaction structure:', allTransactions[0]);
+      }
+      
+      // Try checking if account property exists
+      const uniqueAccounts = new Set();
+      allTransactions.forEach(tx => {
+        if (tx.account) uniqueAccounts.add(tx.account);
+      });
+      console.log('getTransactionsByAccount: Unique accounts found in transactions:', Array.from(uniqueAccounts));
+      
+      // Check if there's a direct account match
+      let accountTransactions = allTransactions.filter(tx => tx.account === account);
+      console.log(`getTransactionsByAccount: Found ${accountTransactions.length} transactions with exact account match`);
+      
+      // If no exact match, try case-insensitive match
+      if (accountTransactions.length === 0) {
+        accountTransactions = allTransactions.filter(tx => {
+          return tx.account && tx.account.toLowerCase() === account.toLowerCase();
+        });
+        console.log(`getTransactionsByAccount: Found ${accountTransactions.length} transactions with case-insensitive match`);
+      }
+      
+      // If still no match, check if account field might be in a nested structure
+      if (accountTransactions.length === 0) {
+        // Try common nested paths
+        const possiblePaths = ['metadata.account', 'accountInfo.name', 'transaction.account'];
+        
+        for (const path of possiblePaths) {
+          const parts = path.split('.');
+          accountTransactions = allTransactions.filter(tx => {
+            let value = tx;
+            for (const part of parts) {
+              if (value && typeof value === 'object') {
+                value = value[part];
+              } else {
+                value = undefined;
+                break;
+              }
+            }
+            return value === account;
+          });
+          
+          if (accountTransactions.length > 0) {
+            console.log(`getTransactionsByAccount: Found ${accountTransactions.length} transactions with nested path ${path}`);
+            break;
+          }
+        }
+      }
+      
+      resolve(accountTransactions);
+    };
+    
+    allRequest.onerror = () => {
+      console.error('getTransactionsByAccount: Error retrieving transactions:', allRequest.error);
+      reject(allRequest.error);
+    };
   });
 };
 

@@ -1,4 +1,4 @@
-// components/TransactionTimeline.jsx revision: 1
+// components/TransactionTimeline.jsx revision: 2
 import React, { useState, useEffect } from 'react';
 import { formatDate } from '../utils/dateUtils';
 import { formatCurrency } from '../utils/formatters';
@@ -14,27 +14,101 @@ const TransactionTimeline = ({
   const [groupedTransactions, setGroupedTransactions] = useState({});
   const [selectedDate, setSelectedDate] = useState(null);
   const [expandedGroups, setExpandedGroups] = useState(new Set());
+  const [debug, setDebug] = useState({
+    transactionCount: 0,
+    transactionDates: [],
+    dateKeys: [],
+    sampleTransaction: null
+  });
 
   useEffect(() => {
+    console.log('TransactionTimeline: Component mounted');
+    console.log('TransactionTimeline: Received transactions array:', transactions);
+    console.log('TransactionTimeline: Transaction count:', transactions?.length || 0);
+    
+    if (transactions && transactions.length > 0) {
+      console.log('TransactionTimeline: First transaction:', transactions[0]);
+      console.log('TransactionTimeline: Last transaction:', transactions[transactions.length - 1]);
+    }
+
     // Group transactions by date
-    const grouped = transactions.reduce((acc, transaction) => {
-      if (!transaction.date) return acc;
+    const grouped = groupTransactionsByDate(transactions);
+    setGroupedTransactions(grouped);
+    
+    // Capture debug info
+    const dateKeys = Object.keys(grouped);
+    setDebug({
+      transactionCount: transactions?.length || 0,
+      transactionDates: transactions?.map(t => t.date)?.slice(0, 5) || [],
+      dateKeys: dateKeys,
+      sampleTransaction: transactions?.length > 0 ? transactions[0] : null
+    });
+    
+    // Auto-expand the most recent date group if available
+    if (dateKeys.length > 0) {
+      const newExpandedGroups = new Set(expandedGroups);
+      newExpandedGroups.add(dateKeys[0]);
+      setExpandedGroups(newExpandedGroups);
+    }
+  }, [transactions]);
+
+  // Group transactions by date
+  const groupTransactionsByDate = (transactionsArray) => {
+    console.log('TransactionTimeline: Grouping transactions by date');
+    if (!transactionsArray || !Array.isArray(transactionsArray)) {
+      console.warn('TransactionTimeline: Transactions is not an array', transactionsArray);
+      return {};
+    }
+    
+    // Debug transaction dates
+    transactionsArray.slice(0, 3).forEach((t, i) => {
+      console.log(`TransactionTimeline: Transaction ${i} date:`, t.date, 
+                  'instanceof Date:', t.date instanceof Date,
+                  'typeof:', typeof t.date);
+    });
+    
+    const grouped = transactionsArray.reduce((acc, transaction) => {
+      if (!transaction.date) {
+        console.warn('TransactionTimeline: Transaction missing date:', transaction);
+        return acc;
+      }
       
-      const dateKey = transaction.date.toDateString();
+      // Handle date objects or ISO strings
+      let dateObject;
+      if (transaction.date instanceof Date) {
+        dateObject = transaction.date;
+      } else if (typeof transaction.date === 'string') {
+        dateObject = new Date(transaction.date);
+      } else if (typeof transaction.date === 'number') {
+        dateObject = new Date(transaction.date);
+      } else {
+        console.warn('TransactionTimeline: Unrecognized date format:', transaction.date);
+        return acc;
+      }
+      
+      if (isNaN(dateObject.getTime())) {
+        console.warn('TransactionTimeline: Invalid date:', transaction.date);
+        return acc;
+      }
+      
+      const dateKey = dateObject.toDateString();
       if (!acc[dateKey]) {
         acc[dateKey] = [];
       }
-      acc[dateKey].push(transaction);
+      acc[dateKey].push({...transaction, date: dateObject});
       return acc;
     }, {});
     
-    // Sort transactions within each group
+    // Sort transactions within each group by time
     Object.keys(grouped).forEach(dateKey => {
-      grouped[dateKey].sort((a, b) => a.date - b.date);
+      grouped[dateKey].sort((a, b) => b.date - a.date);
     });
     
-    setGroupedTransactions(grouped);
-  }, [transactions]);
+    // Log some grouped data stats
+    console.log('TransactionTimeline: Grouped into', Object.keys(grouped).length, 'date groups');
+    
+    return grouped;
+  };
 
   const getTransactionColor = (transaction) => {
     if (transaction.isInterpolated) return 'blue';
@@ -171,6 +245,52 @@ const TransactionTimeline = ({
     setExpandedGroups(newExpanded);
   };
 
+  const renderDebugInfo = () => {
+    return (
+      <div className="mb-6 p-4 bg-gray-100 border border-gray-300 rounded-lg text-sm">
+        <h3 className="font-bold mb-2">Debug Information</h3>
+        <div className="space-y-2">
+          <p>Transaction Count: <span className="font-mono">{debug.transactionCount}</span></p>
+          <p>Date Groups: <span className="font-mono">{debug.dateKeys.length}</span></p>
+          
+          {debug.transactionCount > 0 && (
+            <>
+              <p className="font-bold mt-3">Sample Transaction:</p>
+              <pre className="bg-gray-200 p-2 rounded overflow-auto max-h-40">
+                {JSON.stringify(debug.sampleTransaction, null, 2)}
+              </pre>
+              
+              <p className="font-bold mt-3">First 5 Transaction Dates:</p>
+              <ul className="list-disc pl-5">
+                {debug.transactionDates.map((date, i) => (
+                  <li key={i} className="font-mono">
+                    {date instanceof Date 
+                      ? date.toISOString() 
+                      : typeof date === 'string' 
+                        ? date 
+                        : JSON.stringify(date)}
+                  </li>
+                ))}
+              </ul>
+              
+              <p className="font-bold mt-3">Date Groups:</p>
+              <ul className="list-disc pl-5">
+                {debug.dateKeys.slice(0, 5).map((dateKey, i) => (
+                  <li key={i} className="font-mono">
+                    {dateKey} ({groupedTransactions[dateKey]?.length || 0} transactions)
+                  </li>
+                ))}
+                {debug.dateKeys.length > 5 && (
+                  <li>...and {debug.dateKeys.length - 5} more date groups</li>
+                )}
+              </ul>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   const renderTimeline = () => {
     const sortedDates = Object.keys(groupedTransactions).sort((a, b) => 
       new Date(b) - new Date(a)
@@ -244,7 +364,7 @@ const TransactionTimeline = ({
                       {isExpanded && (
                         <div className="mt-2">
                           {dateTransactions.map((transaction, txIndex) => (
-                            <div key={transaction.id} className="relative">
+                            <div key={transaction.id || `tx-${txIndex}`} className="relative">
                               {txIndex !== dateTransactions.length - 1 && (
                                 <span className="absolute top-6 left-3 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
                               )}
@@ -292,9 +412,16 @@ const TransactionTimeline = ({
   return (
     <div className="bg-white rounded-lg shadow">
       <div className="px-4 py-5 sm:p-6">
-        <h3 className="text-lg leading-6 font-medium text-gray-900">
-          Transaction Timeline
+        <h3 className="text-lg leading-6 font-medium text-gray-900 flex items-center justify-between">
+          <span>Transaction Timeline</span>
+          <span className="text-sm text-gray-500 font-normal">
+            {debug.transactionCount} transactions
+          </span>
         </h3>
+        
+        {/* Debug Information */}
+        {renderDebugInfo()}
+        
         <div className="mt-5">
           {renderTimeline()}
         </div>

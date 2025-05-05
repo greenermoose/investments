@@ -1,4 +1,4 @@
-// components/PortfolioPerformance.jsx revision: 2
+// components/PortfolioPerformance.jsx revision: 3
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { formatCurrency, formatPercent } from '../utils/formatters';
@@ -11,7 +11,6 @@ import {
 import { calculateDateRangeReturns, generateTimeSeriesData } from '../utils/performanceCalculations';
 import { getEarliestAcquisitionDate } from '../utils/transactionParser';
 import { applyTransactionsToPortfolio } from '../utils/transactionEngine';
-
 
 const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, onViewTransactions }) => {
   const [timeSeriesData, setTimeSeriesData] = useState([]);
@@ -118,7 +117,7 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, o
           View and manage your transaction history to improve acquisition date coverage.
         </p>
         <button
-          onClick={() => onViewTransactions ? onViewTransactions() : null}
+          onClick={onViewTransactions}
           className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700"
         >
           View Transaction Timeline
@@ -181,6 +180,7 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, o
       </div>
     );
   };
+  
   const renderPositionAnalysis = () => {
     const positionsWithAcquisitionData = portfolioData.map(position => {
       const metadata = {
@@ -625,18 +625,9 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, o
           </div>
         </div>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Transaction Data</h2>
-        <p className="text-gray-600 mb-4">
-          View and manage your transaction history to improve acquisition date coverage.
-        </p>
-        <button
-          onClick={() => window.location.hash = '#transactions'}
-          className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-        >
-          View Transaction Timeline
-        </button>
-      </div>
+      
+      {/* FIXED: Only render the transaction button once, and use the prop callback */}
+      {renderTransactionSection()}
     </div>
   );
 };

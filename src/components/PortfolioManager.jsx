@@ -1,4 +1,4 @@
-// components/PortfolioManager.jsx revision: 2
+// components/PortfolioManager.jsx revision: 5
 import React, { useState } from 'react';
 import PortfolioOverview from './PortfolioOverview';
 import PortfolioPositions from './PortfolioPositions';
@@ -17,6 +17,8 @@ import PortfolioTabs from './PortfolioTabs';
 import FileUploadDashboard from './FileUploadDashboard';
 import DualFileUploader from './DualFileUploader';
 import TransactionTimeline from './TransactionTimeline';
+import TransactionTimelineContainer from './TransactionTimelineContainer';
+import TransactionStorageDebugger from './TransactionStorageDebugger';
 import { 
   usePortfolio, 
   useAcquisition, 
@@ -116,6 +118,11 @@ const PortfolioManager = () => {
     handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, currentAccount || selectedAccount);
   };
 
+  // Handle navigation to transactions tab
+  const handleViewTransactions = () => {
+    changeTab('transactions');
+  };
+
   // Determine file upload stats
   const getUploadStats = () => {
     return fileUpload.fileStats ? {
@@ -137,7 +144,7 @@ const PortfolioManager = () => {
           portfolioData={portfolioData} 
           portfolioStats={portfolioStats} 
           currentAccount={currentAccount || selectedAccount} 
-          onViewTransactions={() => changeTab('transactions')}
+          onViewTransactions={handleViewTransactions}
         />;
       case 'analysis':
         return <PortfolioAnalysis portfolioData={portfolioData} portfolioStats={portfolioStats} />;
@@ -146,12 +153,12 @@ const PortfolioManager = () => {
       case 'lots':
         return <LotManagement portfolioData={portfolioData} />;
       case 'transactions':
-        return <TransactionTimeline 
-          transactions={acquisition.transactionData ? Object.values(acquisition.transactionData).flatMap(d => d.transactions || []) : []}
-          selectedSymbol={null}
-          onTransactionEdit={() => {}}
-          onInterpolatedTransactionAccept={() => {}}
-        />;
+        return (
+          <div className="space-y-6">
+          <TransactionStorageDebugger />
+          <TransactionTimelineContainer currentAccount={currentAccount || selectedAccount} />
+          </div>
+        );
       case 'account-management':
         return <AccountManagement onDataChange={() => {
           refreshData();

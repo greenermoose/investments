@@ -1,3 +1,7 @@
+### 0.3.3
+
+- working through bugs
+
 ### 0.3.2
 
 - UI for uploading transaction files

@@ -1,3 +1,7 @@
+### 0.3.2
+
+- UI for uploading transaction files
+
 ### 0.3.1
 
 - handle transaction history files

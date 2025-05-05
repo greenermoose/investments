@@ -1,8 +1,8 @@
-// components/UploadModal.jsx revision: 2
+// src/components/TransactionUploadModal.jsx
 import React, { useState, useRef } from 'react';
-import { FileText, HelpCircle, AlertTriangle, CheckCircle } from 'lucide-react';
+import { Database, HelpCircle, AlertTriangle, CheckCircle } from 'lucide-react';
 
-const PortfolioUploader = ({ onFileLoaded }) => {
+const TransactionUploader = ({ onFileLoaded }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [fileName, setFileName] = useState('');
   const [error, setError] = useState(null);
@@ -40,16 +40,16 @@ const PortfolioUploader = ({ onFileLoaded }) => {
     setError(null);
     setSuccess(null);
     
-    // Check if file is CSV
-    if (!file.name.toLowerCase().endsWith('.csv')) {
-      setError('Please upload a CSV portfolio file');
+    // Check if file is JSON
+    if (!file.name.toLowerCase().endsWith('.json')) {
+      setError('Please upload a JSON transaction file');
       return;
     }
     
     // Check file size (optional)
-    const maxSize = 10 * 1024 * 1024; // 10MB
+    const maxSize = 50 * 1024 * 1024; // 50MB
     if (file.size > maxSize) {
-      setError('File size too large. Please upload a file smaller than 10MB');
+      setError('File size too large. Please upload a file smaller than 50MB');
       return;
     }
     
@@ -61,29 +61,21 @@ const PortfolioUploader = ({ onFileLoaded }) => {
       try {
         const fileContent = event.target.result;
         
-        // Basic validation of CSV format
-        if (!fileContent || fileContent.trim().length === 0) {
-          throw new Error('The file appears to be empty');
-        }
+        // Basic validation of JSON format
+        const jsonData = JSON.parse(fileContent);
         
-        // Check for CSV structure (at least one comma)
-        if (!fileContent.includes(',')) {
-          throw new Error('File does not appear to be in CSV format');
-        }
-        
-        // Check for basic portfolio structure
-        const hasSymbolHeader = fileContent.includes('Symbol') || fileContent.includes('symbol');
-        if (!hasSymbolHeader) {
-          throw new Error('File does not appear to be a portfolio CSV (missing Symbol column)');
+        // Check for required structure
+        if (!jsonData.BrokerageTransactions || !Array.isArray(jsonData.BrokerageTransactions)) {
+          throw new Error('Invalid transaction file format: missing BrokerageTransactions array');
         }
         
         // Process the file through the parent handler
         onFileLoaded(fileContent, file.name);
         
-        setSuccess('Portfolio file processed successfully!');
+        setSuccess('Transaction file processed successfully!');
         setIsProcessing(false);
       } catch (err) {
-        console.error('Error processing portfolio file:', err);
+        console.error('Error processing transaction file:', err);
         setError(`Error processing file: ${err.message}`);
         setIsProcessing(false);
       }
@@ -100,7 +92,7 @@ const PortfolioUploader = ({ onFileLoaded }) => {
   return (
     <div 
       className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer ${
-        isDragging ? 'border-blue-600 bg-blue-50' : 'border-blue-300 hover:border-blue-500'
+        isDragging ? 'border-green-600 bg-green-50' : 'border-green-300 hover:border-green-500'
       }`}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
@@ -111,18 +103,18 @@ const PortfolioUploader = ({ onFileLoaded }) => {
         type="file" 
         ref={fileInputRef} 
         className="hidden" 
-        accept=".csv" 
+        accept=".json" 
         onChange={handleFileInputChange} 
       />
       <div className="flex flex-col items-center justify-center">
-        <FileText 
-          className="w-12 h-12 text-blue-500 mb-3" 
+        <Database 
+          className="w-12 h-12 text-green-500 mb-3" 
         />
         <p className="mb-2 text-sm text-gray-700">
           <span className="font-semibold">Click to upload</span> or drag and drop
         </p>
-        <p className="text-xs text-gray-500">CSV portfolio files only</p>
-        {fileName && <p className="mt-2 text-sm text-blue-600">{fileName}</p>}
+        <p className="text-xs text-gray-500">JSON transaction files only</p>
+        {fileName && <p className="mt-2 text-sm text-green-600">{fileName}</p>}
       </div>
 
       {error && (
@@ -134,7 +126,7 @@ const PortfolioUploader = ({ onFileLoaded }) => {
       
       {isProcessing && (
         <div className="mt-4 flex items-center justify-center">
-          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
+          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-green-600"></div>
           <span className="ml-2 text-gray-600">Processing file...</span>
         </div>
       )}
@@ -149,14 +141,14 @@ const PortfolioUploader = ({ onFileLoaded }) => {
   );
 };
 
-const UploadModal = ({ isOpen, onClose, onFileLoaded }) => {
+const TransactionUploadModal = ({ isOpen, onClose, onFileLoaded }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-lg max-w-2xl w-full p-6">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold">Upload Portfolio Snapshot</h2>
+          <h2 className="text-xl font-semibold">Upload Transaction History</h2>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600"
@@ -168,59 +160,43 @@ const UploadModal = ({ isOpen, onClose, onFileLoaded }) => {
           </button>
         </div>
         
-        <div className="bg-blue-50 p-4 rounded-lg mb-6">
-          <h3 className="font-medium text-blue-800 mb-2 flex items-center">
-            <FileText className="w-4 h-4 mr-2" />
-            Expected Format
+        <div className="bg-green-50 p-4 rounded-lg mb-6">
+          <h3 className="font-medium text-green-800 mb-2 flex items-center">
+            <Database className="w-4 h-4 mr-2" />
+            Accepted Format
           </h3>
-          <ul className="text-sm text-blue-700 list-disc list-inside">
-            <li>CSV file format only</li>
-            <li>Must include column headers (Symbol, Quantity, etc.)</li>
-            <li>Date information in header row is recommended</li>
-            <li>Supports most brokerage exports (TD Ameritrade, Schwab, etc.)</li>
+          <ul className="text-sm text-green-700 list-disc list-inside">
+            <li>JSON file format only</li>
+            <li>Must contain BrokerageTransactions array</li>
+            <li>Fields: Date, Symbol, Action, Quantity, Price, Amount</li>
+            <li>Supports Schwab/TD Ameritrade exports</li>
           </ul>
         </div>
         
-        <div className="mb-6">
-          <h3 className="font-medium text-gray-800 mb-2">Example Format</h3>
-          <div className="bg-gray-50 p-3 rounded text-sm font-mono overflow-x-auto text-gray-700">
-            <p>"Positions for account Roth IRA ...123 as of 06:40 PM ET, 04/27/2024"</p>
-            <p>""</p>
-            <p>"Symbol","Description","Quantity","Price","Market Value"</p>
-            <p>"AAPL","APPLE INC","4.1569","$209.28","$869.96"</p>
-            <p>"MSFT","MICROSOFT CORP","2.5000","$417.88","$1,044.70"</p>
-          </div>
-        </div>
-        
-        <PortfolioUploader onFileLoaded={onFileLoaded} />
+        <TransactionUploader onFileLoaded={onFileLoaded} />
         
         <div className="mt-6 text-sm text-gray-600">
           <details>
             <summary className="cursor-pointer font-medium flex items-center">
               <HelpCircle className="w-4 h-4 mr-2" />
-              Need help exporting your portfolio data?
+              Need help finding your transaction file?
             </summary>
             <div className="mt-2 pl-4">
               <h4 className="font-medium mb-2">For TD Ameritrade:</h4>
               <ol className="list-decimal list-inside">
                 <li>Log in to your account</li>
-                <li>Navigate to Positions or Holdings</li>
-                <li>Look for "Export" or "Download" button</li>
-                <li>Select CSV format</li>
+                <li>Go to My Account &gt; History & Statements</li>
+                <li>Select "Transaction History"</li>
+                <li>Export as JSON format</li>
               </ol>
               
               <h4 className="font-medium mt-4 mb-2">For Schwab:</h4>
               <ol className="list-decimal list-inside">
                 <li>Log in to your account</li>
-                <li>Go to Portfolio &gt; Positions</li>
-                <li>Click on "Export" (often shown as a download icon)</li>
-                <li>Choose CSV format</li>
+                <li>Go to Accounts &gt; History</li>
+                <li>Select "Download" or "Export"</li>
+                <li>Choose JSON format in the export options</li>
               </ol>
-              
-              <h4 className="font-medium mt-4 mb-2">Filename Format:</h4>
-              <p className="text-sm">For automatic date detection, name your files with the format:</p>
-              <p className="mt-1 font-mono bg-gray-100 p-1 rounded">accountNameYYYYMMDDHHMMSS.csv</p>
-              <p className="mt-1 text-sm">Example: <span className="font-mono">IRA20240427180000.csv</span></p>
             </div>
           </details>
         </div>
@@ -238,4 +214,4 @@ const UploadModal = ({ isOpen, onClose, onFileLoaded }) => {
   );
 };
 
-export default UploadModal;
+export default TransactionUploadModal;

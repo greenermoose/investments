@@ -12,7 +12,8 @@ import { calculateDateRangeReturns, generateTimeSeriesData } from '../utils/perf
 import { getEarliestAcquisitionDate } from '../utils/transactionParser';
 import { applyTransactionsToPortfolio } from '../utils/transactionEngine';
 
-const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount }) => {
+
+const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, onViewTransactions }) => {
   const [timeSeriesData, setTimeSeriesData] = useState([]);
   const [returnsPeriods, setReturnsPeriods] = useState([]);
   const [sectorAllocationHistory, setSectorAllocationHistory] = useState([]);
@@ -109,6 +110,23 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount })
     setTransactionMismatches(mismatches);
   };
   
+  const renderTransactionSection = () => {
+    return (
+      <div className="bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-4">Transaction Data</h2>
+        <p className="text-gray-600 mb-4">
+          View and manage your transaction history to improve acquisition date coverage.
+        </p>
+        <button
+          onClick={() => onViewTransactions ? onViewTransactions() : null}
+          className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+        >
+          View Transaction Timeline
+        </button>
+      </div>
+    );
+  };  
+
   const renderCoverageSummary = () => {
     const total = acquisitionDateCoverage.transactionDerived + 
                   acquisitionDateCoverage.manual + 

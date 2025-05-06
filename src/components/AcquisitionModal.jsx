@@ -102,19 +102,46 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
   
   const handleSubmit = () => {
     const txInfo = getTransactionInfo();
+    let acquisitionDateValue = null;
     
     if (isTickerChange && matchingTickerChange) {
+      // Handle ticker symbol change
       onSubmit(currentChange, null, true, matchingTickerChange.oldSymbol);
     } else if (txInfo?.hasAcquisitionDate) {
       // Use transaction-derived date
-      onSubmit(currentChange, txInfo.acquisitionDate, false);
+      acquisitionDateValue = txInfo.acquisitionDate;
+      
+      // Create a new lot with this acquisition data
+      const lotData = {
+        symbol: currentChange.symbol,
+        quantity: currentChange.quantity,
+        acquisitionDate: acquisitionDateValue,
+        isTransactionDerived: true,
+        // If we have a cost basis, use it; otherwise estimate from current price
+        costBasis: currentChange.costBasis || (currentChange.quantity * (currentChange.price || 0))
+      };
+      
+      onSubmit(currentChange, acquisitionDateValue, false, null, lotData);
     } else {
       // Use manual date input
-      onSubmit(currentChange, acquisitionDate, false);
+      acquisitionDateValue = acquisitionDate;
+      
+      // Create a new lot with this acquisition data
+      const lotData = {
+        symbol: currentChange.symbol,
+        quantity: currentChange.quantity,
+        acquisitionDate: acquisitionDateValue,
+        isTransactionDerived: false,
+        // If we have a cost basis, use it; otherwise estimate from current price
+        costBasis: currentChange.costBasis || (currentChange.quantity * (currentChange.price || 0))
+      };
+      
+      onSubmit(currentChange, acquisitionDateValue, false, null, lotData);
     }
+    
     handleNext();
   };
-  
+    
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);

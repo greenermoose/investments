@@ -2,15 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import { 
   getSecurityLots, 
-  // We'll implement these functions ourselves
-  // getLotTrackingMethod, 
-  // setLotTrackingMethod 
+  saveSecurityMetadata,
+  saveLot
 } from '../utils/portfolioStorage';
 import { 
   calculateWeightedAverageCost, 
   calculateUnrealizedGainLoss 
 } from '../utils/portfolioCalculations';
 import { formatCurrency, formatDate } from '../utils/dataUtils';
+import { processTransactionsIntoLots } from '../utils/transactionProcessor';
 
 // Define constants for lot tracking methods
 const LOT_TRACKING_METHODS = {
@@ -93,6 +93,80 @@ const StatusIndicator = ({ type, tooltipText }) => {
 };
 
 /**
+ * Method settings modal component
+ */
+const TrackingMethodModal = ({ isOpen, onClose, currentMethod, onMethodChange }) => {
+  if (!isOpen) return null;
+  
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+      <div className="bg-white rounded-lg max-w-md w-full p-6">
+        <h2 className="text-xl font-semibold mb-4">Lot Tracking Method</h2>
+        <p className="text-gray-600 mb-4">
+          Select how you want to track tax lots for cost basis calculations.
+        </p>
+        
+        <div className="space-y-3 mb-6">
+          <label className="flex items-center">
+            <input
+              type="radio"
+              checked={currentMethod === LOT_TRACKING_METHODS.FIFO}
+              onChange={() => onMethodChange(LOT_TRACKING_METHODS.FIFO)}
+              className="mr-3"
+            />
+            <div>
+              <p className="font-medium">FIFO (First In, First Out)</p>
+              <p className="text-sm text-gray-600">Sell the oldest shares first</p>
+            </div>
+          </label>
+          
+          <label className="flex items-center">
+            <input
+              type="radio"
+              checked={currentMethod === LOT_TRACKING_METHODS.LIFO}
+              onChange={() => onMethodChange(LOT_TRACKING_METHODS.LIFO)}
+              className="mr-3"
+            />
+            <div>
+              <p className="font-medium">LIFO (Last In, First Out)</p>
+              <p className="text-sm text-gray-600">Sell the newest shares first</p>
+            </div>
+          </label>
+          
+          <label className="flex items-center">
+            <input
+              type="radio"
+              checked={currentMethod === LOT_TRACKING_METHODS.SPECIFIC}
+              onChange={() => onMethodChange(LOT_TRACKING_METHODS.SPECIFIC)}
+              className="mr-3"
+            />
+            <div>
+              <p className="font-medium">Specific Identification</p>
+              <p className="text-sm text-gray-600">Choose specific lots to sell</p>
+            </div>
+          </label>
+        </div>
+        
+        <div className="flex justify-end space-x-2">
+          <button
+            onClick={onClose}
+            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={onClose}
+            className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/**
  * Acquisition Modal component
  */
 const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerChanges, transactionData }) => {
@@ -141,16 +215,43 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
   
   const handleSubmit = () => {
     const txInfo = getTransactionInfo();
+    let acquisitionDateValue = null;
     
     if (isTickerChange && matchingTickerChange) {
+      // Handle ticker symbol change
       onSubmit(currentChange, null, true, matchingTickerChange.oldSymbol);
     } else if (txInfo?.hasAcquisitionDate) {
       // Use transaction-derived date
-      onSubmit(currentChange, txInfo.acquisitionDate, false);
+      acquisitionDateValue = txInfo.acquisitionDate;
+      
+      // Create a new lot with this acquisition data
+      const lotData = {
+        symbol: currentChange.symbol,
+        quantity: currentChange.quantity,
+        acquisitionDate: acquisitionDateValue,
+        isTransactionDerived: true,
+        // If we have a cost basis, use it; otherwise estimate from current price
+        costBasis: currentChange.costBasis || (currentChange.quantity * (currentChange.price || 0))
+      };
+      
+      onSubmit(currentChange, acquisitionDateValue, false, null, lotData);
     } else {
       // Use manual date input
-      onSubmit(currentChange, acquisitionDate, false);
+      acquisitionDateValue = acquisitionDate;
+      
+      // Create a new lot with this acquisition data
+      const lotData = {
+        symbol: currentChange.symbol,
+        quantity: currentChange.quantity,
+        acquisitionDate: acquisitionDateValue,
+        isTransactionDerived: false,
+        // If we have a cost basis, use it; otherwise estimate from current price
+        costBasis: currentChange.costBasis || (currentChange.quantity * (currentChange.price || 0))
+      };
+      
+      onSubmit(currentChange, acquisitionDateValue, false, null, lotData);
     }
+    
     handleNext();
   };
   
@@ -298,80 +399,6 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
 };
 
 /**
- * Method settings modal component
- */
-const TrackingMethodModal = ({ isOpen, onClose, currentMethod, onMethodChange }) => {
-  if (!isOpen) return null;
-  
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-md w-full p-6">
-        <h2 className="text-xl font-semibold mb-4">Lot Tracking Method</h2>
-        <p className="text-gray-600 mb-4">
-          Select how you want to track tax lots for cost basis calculations.
-        </p>
-        
-        <div className="space-y-3 mb-6">
-          <label className="flex items-center">
-            <input
-              type="radio"
-              checked={currentMethod === LOT_TRACKING_METHODS.FIFO}
-              onChange={() => onMethodChange(LOT_TRACKING_METHODS.FIFO)}
-              className="mr-3"
-            />
-            <div>
-              <p className="font-medium">FIFO (First In, First Out)</p>
-              <p className="text-sm text-gray-600">Sell the oldest shares first</p>
-            </div>
-          </label>
-          
-          <label className="flex items-center">
-            <input
-              type="radio"
-              checked={currentMethod === LOT_TRACKING_METHODS.LIFO}
-              onChange={() => onMethodChange(LOT_TRACKING_METHODS.LIFO)}
-              className="mr-3"
-            />
-            <div>
-              <p className="font-medium">LIFO (Last In, First Out)</p>
-              <p className="text-sm text-gray-600">Sell the newest shares first</p>
-            </div>
-          </label>
-          
-          <label className="flex items-center">
-            <input
-              type="radio"
-              checked={currentMethod === LOT_TRACKING_METHODS.SPECIFIC}
-              onChange={() => onMethodChange(LOT_TRACKING_METHODS.SPECIFIC)}
-              className="mr-3"
-            />
-            <div>
-              <p className="font-medium">Specific Identification</p>
-              <p className="text-sm text-gray-600">Choose specific lots to sell</p>
-            </div>
-          </label>
-        </div>
-        
-        <div className="flex justify-end space-x-2">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
-          >
-            Cancel
-          </button>
-          <button
-            onClick={onClose}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
-          >
-            Save
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/**
  * Main lot management component
  */
 const LotManager = ({ 
@@ -379,13 +406,17 @@ const LotManager = ({
   onAcquisitionSubmit, 
   pendingAcquisitions = [], 
   possibleTickerChanges = [], 
-  transactionData = {} 
+  transactionData = {},
+  currentAccount
 }) => {
   const [selectedSecurity, setSelectedSecurity] = useState(null);
   const [lots, setLots] = useState([]);
   const [trackingMethod, setTrackingMethod] = useState(LOT_TRACKING_METHODS.FIFO);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [processResults, setProcessResults] = useState(null);
+  const [error, setError] = useState(null);
   
   useEffect(() => {
     // Get tracking method from localStorage
@@ -408,11 +439,16 @@ const LotManager = ({
   
   const loadLots = async () => {
     try {
-      const securityId = `${selectedSecurity.account}_${selectedSecurity.Symbol}`;
+      if (!currentAccount || !selectedSecurity) return;
+      
+      const securityId = `${currentAccount}_${selectedSecurity.Symbol}`;
+      console.log(`Loading lots for security: ${securityId}`);
+      
       const securityLots = await getSecurityLots(securityId);
       setLots(securityLots || []);
     } catch (error) {
       console.error('Error loading lots:', error);
+      setError('Failed to load tax lots: ' + error.message);
     }
   };
   
@@ -422,9 +458,41 @@ const LotManager = ({
     setShowSettingsModal(false);
   };
   
-  const handleAcquisitionSubmit = (change, acquisitionDate, isTickerChange, oldSymbol) => {
+  const handleAcquisitionSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
     if (onAcquisitionSubmit) {
-      onAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol);
+      onAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, lotData);
+    }
+  };
+  
+  // Process transactions into lots
+  const handleProcessTransactions = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      
+      if (!currentAccount) {
+        setError('No account selected. Please select an account first.');
+        setIsLoading(false);
+        return;
+      }
+      
+      console.log(`Processing transactions for account: ${currentAccount}`);
+      
+      // Process transactions into lots for the current account
+      const results = await processTransactionsIntoLots(currentAccount);
+      
+      setProcessResults(results);
+      
+      // Reload lots if a security is selected
+      if (selectedSecurity) {
+        await loadLots();
+      }
+      
+      setIsLoading(false);
+    } catch (err) {
+      console.error('Error processing transactions:', err);
+      setError('Failed to process transactions: ' + err.message);
+      setIsLoading(false);
     }
   };
   
@@ -436,13 +504,49 @@ const LotManager = ({
       <div className="bg-white p-6 rounded-lg shadow">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold">Lot Management</h1>
-          <button
-            onClick={() => setShowSettingsModal(true)}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
-          >
-            Tracking Method Settings
-          </button>
+          <div className="flex space-x-2">
+            <button
+              onClick={() => setShowSettingsModal(true)}
+              className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
+            >
+              Tracking Method Settings
+            </button>
+            
+            {/* Add button to process transactions */}
+            <button
+              onClick={handleProcessTransactions}
+              disabled={isLoading}
+              className={`px-4 py-2 rounded-md text-sm font-medium ${
+                isLoading 
+                  ? 'bg-gray-400 text-white cursor-not-allowed' 
+                  : 'bg-green-600 text-white hover:bg-green-700'
+              }`}
+            >
+              {isLoading ? 'Processing...' : 'Process Transactions'}
+            </button>
+          </div>
         </div>
+        
+        {/* Display error message if there is one */}
+        {error && (
+          <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded">
+            {error}
+          </div>
+        )}
+        
+        {/* Display processing results */}
+        {processResults && (
+          <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded">
+            <p>Transaction processing complete!</p>
+            <ul className="mt-2 list-disc pl-5 text-sm">
+              <li>Processed {processResults.processedSymbols} securities</li>
+              <li>Created {processResults.createdLots} tax lots</li>
+              {processResults.errors.length > 0 && (
+                <li className="text-red-600">Encountered {processResults.errors.length} errors</li>
+              )}
+            </ul>
+          </div>
+        )}
         
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -510,7 +614,7 @@ const LotManager = ({
                   {lots.length === 0 ? (
                     <tr>
                       <td colSpan="7" className="px-6 py-4 text-center text-gray-500">
-                        No lot information available
+                        No lot information available. Try using "Process Transactions" to create lots from transaction data.
                       </td>
                     </tr>
                   ) : (

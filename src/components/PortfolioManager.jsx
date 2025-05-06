@@ -17,7 +17,7 @@ import TransactionViewer from './TransactionViewer';
 import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import PortfolioTabs from './PortfolioTabs';
-import StorageManager from './StorageManager'; // Import our new component
+import StorageManager from './StorageManager';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -97,10 +97,17 @@ const PortfolioManager = () => {
   };
 
   // Handle acquisition modal submission
-  const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol) => {
-    handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, currentAccount || selectedAccount);
+  const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
+    handleAcquisitionSubmit(
+      change, 
+      acquisitionDate, 
+      isTickerChange, 
+      oldSymbol, 
+      currentAccount || selectedAccount,
+      lotData
+    );
   };
-
+  
   // Determine file upload stats
   const getUploadStats = () => {
     return fileUpload.fileStats ? {
@@ -133,12 +140,13 @@ const PortfolioManager = () => {
                  pendingAcquisitions={pendingAcquisitions}
                  possibleTickerChanges={possibleTickerChanges}
                  transactionData={transactionData}
+                 currentAccount={currentAccount || selectedAccount} // Pass current account
                />;
       case 'storage-manager':
         return <StorageManager onDataChange={refreshData} />;
       default:
         return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
-    }
+      }
   };
 
   // Initial view when no data is loaded

@@ -1,4 +1,5 @@
-// hooks/useAcquisitionModal.js revision: 1
+// hooks/useAcquisitionModal.js revision: 2
+
 import { useState } from 'react';
 import { 
   saveSecurityMetadata,
@@ -11,8 +12,9 @@ export const useAcquisitionModal = () => {
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
   const [pendingAcquisitions, setPendingAcquisitions] = useState([]);
   const [possibleTickerChanges, setPossibleTickerChanges] = useState([]);
+  const [transactionData, setTransactionData] = useState({});
 
-  const handleAcquisitionSubmit = async (change, acquisitionDate, isTickerChange, oldSymbol, currentAccount) => {
+  const handleAcquisitionSubmit = async (change, acquisitionDate, isTickerChange, oldSymbol, currentAccount, lotData) => {
     try {
       if (isTickerChange) {
         // Handle ticker symbol change
@@ -33,22 +35,34 @@ export const useAcquisitionModal = () => {
         });
         
         // Create a new lot for the acquisition
-        const newLot = await processAcquiredLots(
-          change.symbol,
-          currentAccount,
-          change.quantity,
-          acquisitionDate,
-          0 // Cost basis will need to be updated later
-        );
+        const securityId = `${currentAccount}_${change.symbol}`;
         
+        const newLot = {
+          id: `${securityId}_${Date.now()}`,
+          securityId: securityId,
+          account: currentAccount,
+          symbol: change.symbol,
+          quantity: change.quantity,
+          originalQuantity: change.quantity,
+          remainingQuantity: change.quantity,
+          acquisitionDate: acquisitionDate,
+          costBasis: lotData?.costBasis || 0,
+          pricePerShare: lotData?.costBasis ? lotData.costBasis / change.quantity : 0,
+          status: 'OPEN',
+          isTransactionDerived: lotData?.isTransactionDerived || false,
+          createdAt: new Date()
+        };
+        
+        // Actually save the lot to the database
         await saveLot(newLot);
+        console.log(`Created new lot for ${change.symbol}:`, newLot);
       }
     } catch (err) {
       console.error('Error saving acquisition data:', err);
     }
   };
 
-  const openAcquisitionModal = (acquisitions, tickerChanges) => {
+  const openAcquisitionModal = (acquisitions, tickerChanges, txData) => {
     // Add description to acquired securities
     const enrichedAcquisitions = acquisitions.map(acq => ({
       ...acq,
@@ -57,6 +71,7 @@ export const useAcquisitionModal = () => {
     
     setPendingAcquisitions(enrichedAcquisitions);
     setPossibleTickerChanges(tickerChanges || []);
+    setTransactionData(txData || {});
     setShowAcquisitionModal(true);
   };
 
@@ -64,12 +79,14 @@ export const useAcquisitionModal = () => {
     setShowAcquisitionModal(false);
     setPendingAcquisitions([]);
     setPossibleTickerChanges([]);
+    setTransactionData({});
   };
 
   return {
     showAcquisitionModal,
     pendingAcquisitions,
     possibleTickerChanges,
+    transactionData,
     openAcquisitionModal,
     closeAcquisitionModal,
     handleAcquisitionSubmit

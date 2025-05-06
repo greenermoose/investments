@@ -1,3 +1,7 @@
+### 0.3.15
+
+- create tax lots
+
 ### 0.3.14
 
 - fix data purging

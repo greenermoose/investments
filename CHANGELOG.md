@@ -1,3 +1,7 @@
+### 0.3.18
+
+- refactor portfolio analytics
+
 ### 0.3.17
 
 - refactor portfolioCalculations.js

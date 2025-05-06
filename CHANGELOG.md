@@ -1,3 +1,7 @@
+### 0.3.21
+
+- getTransactionsByAccount in lotTracker
+
 ### 0.3.20
 
 - refactor transaction engine and transaction processor

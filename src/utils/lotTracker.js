@@ -5,7 +5,8 @@ import { TransactionCategories } from './transactionEngine';
 import { 
   getSecurityMetadata,
   saveLot,
-  saveSecurityMetadata
+  saveSecurityMetadata,
+  getTransactionsByAccount
 } from './portfolioStorage';
 
 /**

@@ -8,7 +8,7 @@ import {
 import { 
   calculateWeightedAverageCost, 
   calculateUnrealizedGainLoss 
-} from '../utils/portfolioCalculations';
+} from '../utils/lotManagement';
 import { formatCurrency, formatDate } from '../utils/dataUtils';
 import { processTransactionsIntoLots } from '../utils/transactionProcessor';
 

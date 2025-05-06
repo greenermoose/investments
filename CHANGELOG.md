@@ -1,3 +1,7 @@
+### 0.3.17
+
+- refactor portfolioCalculations.js
+
 ### 0.3.16
 
 - Top holdings on portfolio summary

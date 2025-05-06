@@ -7,7 +7,10 @@ import {
   getTransactionsByAccount,
   getSecurityMetadata 
 } from '../utils/portfolioStorage';
-import { calculateDateRangeReturns, generateTimeSeriesData } from '../utils/portlolioCalculations';
+import { 
+  calculateDateRangeReturns, 
+  generateTimeSeriesData 
+} from '../utils/portfolioAnalytics';
 import { getEarliestAcquisitionDate, applyTransactionsToPortfolio } from '../utils/transactionEngine';
 
 const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, onViewTransactions }) => {

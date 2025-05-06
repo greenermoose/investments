@@ -2,7 +2,7 @@
 // Combines PortfolioOverview.jsx and PortfolioPositions.jsx
 
 import React, { useState } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
+import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
 

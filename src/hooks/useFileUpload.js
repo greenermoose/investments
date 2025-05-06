@@ -9,12 +9,13 @@ import {
   getTransactionsByAccount
 } from '../utils/portfolioStorage';
 import { analyzePortfolioChanges } from '../utils/positionTracker';
-import { 
-  applyTransactionsToPortfolio,
+import {
   parseTransactionJSON,
-  removeDuplicateTransactions,
-  getEarliestAcquisitionDate
+  removeDuplicateTransactions
 } from '../utils/transactionEngine';
+import {
+  applyTransactionsToPortfolio
+} from '../utils/portfolioTracker';
 import { detectSymbolChange } from '../utils/symbolMapping';
 
 /**

@@ -11,7 +11,7 @@ import {
   calculateDateRangeReturns, 
   generateTimeSeriesData 
 } from '../utils/portfolioPerformanceMetrics';
-import { getEarliestAcquisitionDate, applyTransactionsToPortfolio } from '../utils/transactionEngine';
+import { getEarliestAcquisitionDate  } from '../utils/portfolioTracker';
 
 const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, onViewTransactions }) => {
   const [timeSeriesData, setTimeSeriesData] = useState([]);

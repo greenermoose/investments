@@ -1,10 +1,11 @@
 // utils/lotTracker.js
 // Focuses on tax lot tracking, calculations, and management
 
-import { TransactionCategories } from './transactionEngine';
+import { TransactionCategories, removeDuplicateTransactions } from './transactionEngine';
 import { 
   getSecurityMetadata,
   saveLot,
+  getLotById,
   saveSecurityMetadata,
   getTransactionsByAccount
 } from './portfolioStorage';
@@ -64,8 +65,10 @@ export const calculateLotCostBasis = (lot) => {
  * @returns {Object} New lot object
  */
 export const createLot = (securityId, account, symbol, quantity, acquisitionDate, costBasis, isTransactionDerived = false) => {
+  // Generate ID that will be the same for a lot with the same data
+  const id = `${securityId}_${account}_${symbol}_${quantity}_${acquisitionDate}_${costBasis}_${isTransactionDerived}`;
   return {
-    id: `${securityId}_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`,
+    id,
     securityId,
     account,
     symbol,
@@ -309,7 +312,7 @@ export const processTransactionsIntoLots = async (accountName) => {
     
     for (const symbol in transactionsBySymbol) {
       try {
-        const symbolTransactions = transactionsBySymbol[symbol];
+        var symbolTransactions = transactionsBySymbol[symbol];
         console.log(`Processing ${symbolTransactions.length} transactions for ${symbol}`);
         
         // Sort transactions by date
@@ -318,6 +321,13 @@ export const processTransactionsIntoLots = async (accountName) => {
           return a.date - b.date;
         });
         
+        // Filter out duplicate transactions
+        symbolTransactions = removeDuplicateTransactions(symbolTransactions);
+
+        // For debugging, list all transactions for this symbol to the console
+        console.log(`Transactions for ${symbol}:`);
+        symbolTransactions.forEach(t => console.log(t));
+
         // Process acquisitions first to create lots
         const acquisitions = symbolTransactions.filter(t => 
           t.category === TransactionCategories.ACQUISITION && t.quantity > 0
@@ -362,7 +372,14 @@ export const processTransactionsIntoLots = async (accountName) => {
             costBasis,
             true // isTransactionDerived
           );
-          
+
+          // Check if lot already exists in database
+          const existingLot = await getLotById(lot.id);
+          if (existingLot) {
+            console.log(`Lot already exists in database for ${symbol}: ${lot.quantity} shares at ${lot.pricePerShare} on ${lot.acquisitionDate}`);
+            continue;
+          }
+
           // Save lot to database
           await saveLot(lot);
           createdLots.push(lot);

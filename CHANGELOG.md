@@ -1,3 +1,7 @@
+### 0.3.22
+
+- transaction processing ignores duplicates
+
 ### 0.3.21
 
 - getTransactionsByAccount in lotTracker

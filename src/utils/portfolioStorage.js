@@ -566,6 +566,20 @@ export const saveLot = async (lotData) => {
   });
 };
 
+// Get lot by ID
+export const getLotById = async (lotId) => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_LOTS], 'readonly');
+    const store = transaction.objectStore(STORE_NAME_LOTS);
+    const request = store.get(lotId);
+    
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+};
+
 // Get all lots for a security
 export const getSecurityLots = async (securityId) => {
   const db = await initializeDB();

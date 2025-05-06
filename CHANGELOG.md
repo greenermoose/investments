@@ -1,3 +1,7 @@
+### 0.3.20
+
+- refactor transaction engine and transaction processor
+
 ### 0.3.19
 
 - finish refactor portfolio analytics

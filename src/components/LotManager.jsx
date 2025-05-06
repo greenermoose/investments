@@ -1,14 +1,14 @@
-// src/components/LotManager.jsx
+// components/LotManager.jsx
 import React, { useState, useEffect } from 'react';
 import { 
   getSecurityLots
 } from '../utils/portfolioStorage';
 import { 
   calculateWeightedAverageCost, 
-  calculateUnrealizedGainLoss 
-} from '../utils/lotManagement';
+  calculateUnrealizedGainLoss,
+  processTransactionsIntoLots
+} from '../utils/lotTracker';
 import { formatCurrency, formatDate } from '../utils/dataUtils';
-import { processTransactionsIntoLots } from '../utils/transactionProcessor';
 
 // Define constants for lot tracking methods
 const LOT_TRACKING_METHODS = {

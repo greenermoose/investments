@@ -1,5 +1,4 @@
 // utils/dataUtils.js
-// Consolidates formatters.js, dateUtils.js, and securityUtils.js
 
 /**
  * Formats a numeric value as currency

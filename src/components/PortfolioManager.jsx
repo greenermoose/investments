@@ -9,6 +9,7 @@ import {
 import { useFileUpload } from '../hooks/useFileUpload';
 
 // Import our consolidated components
+import AccountManagement from './AccountManagement';
 import PortfolioDisplay from './PortfolioDisplay';
 import FileUploader from './FileUploader';
 import LotManager from './LotManager';
@@ -67,7 +68,7 @@ const PortfolioManager = () => {
   } = acquisition;
 
   // Create a simplified tab structure focusing on core functionality
-  const coreTabs = ['portfolio', 'transactions', 'lots'];
+  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots'];
   
   const { selectedAccount, setSelectedAccount } = account;
   const { activeTab, changeTab } = navigation;
@@ -111,6 +112,11 @@ const PortfolioManager = () => {
   // Render tab content based on active tab
   const renderTabContent = () => {
     switch (activeTab) {
+      case 'account-management':
+        return <AccountManagement 
+                 currentAccount={currentAccount || selectedAccount} 
+                 onAccountChange={handleAccountChange}
+               />;
       case 'portfolio':
         return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
       case 'transactions':

@@ -1,3 +1,7 @@
+### 0.3.8
+
+- accounts management tab
+
 ### 0.3.7
 
 - remove annoying current account stats under AccountSelector

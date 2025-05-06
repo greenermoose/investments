@@ -10,7 +10,7 @@ import {
 import { 
   calculateDateRangeReturns, 
   generateTimeSeriesData 
-} from '../utils/portfolioAnalytics';
+} from '../utils/portfolioPerformanceMetrics';
 import { getEarliestAcquisitionDate, applyTransactionsToPortfolio } from '../utils/transactionEngine';
 
 const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, onViewTransactions }) => {

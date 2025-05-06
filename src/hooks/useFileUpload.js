@@ -8,7 +8,7 @@ import {
   bulkMergeTransactions,
   getTransactionsByAccount
 } from '../utils/portfolioStorage';
-import { analyzePortfolioChanges } from '../utils/portfolioAnalyzer';
+import { analyzePortfolioChanges } from '../utils/positionTracker';
 import { 
   applyTransactionsToPortfolio,
   parseTransactionJSON,

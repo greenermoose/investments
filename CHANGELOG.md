@@ -1,3 +1,7 @@
+### 0.3.19
+
+- finish refactor portfolio analytics
+
 ### 0.3.18
 
 - refactor portfolio analytics

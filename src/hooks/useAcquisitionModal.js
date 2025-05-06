@@ -6,7 +6,6 @@ import {
   getSecurityMetadata,
   saveLot
 } from '../utils/portfolioStorage';
-import { processAcquiredLots } from '../utils/portfolioAnalyzer';
 
 export const useAcquisitionModal = () => {
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);

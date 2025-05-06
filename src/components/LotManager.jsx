@@ -1,9 +1,7 @@
 // src/components/LotManager.jsx
 import React, { useState, useEffect } from 'react';
 import { 
-  getSecurityLots, 
-  saveSecurityMetadata,
-  saveLot
+  getSecurityLots
 } from '../utils/portfolioStorage';
 import { 
   calculateWeightedAverageCost, 

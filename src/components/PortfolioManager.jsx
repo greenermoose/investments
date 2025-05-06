@@ -185,7 +185,7 @@ const PortfolioManager = () => {
         onAccountChange={handleAccountChange}
         uploadStats={getUploadStats()}
       />
-      
+
       <main className="flex-grow container mx-auto p-4">
         {isLoading ? (
           <div className="flex justify-center items-center h-64">

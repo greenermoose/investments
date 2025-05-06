@@ -1,4 +1,4 @@
-// components/AccountSelector.jsx revision: 1
+// components/AccountSelector.jsx revision: 2
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 
@@ -99,21 +99,6 @@ const AccountSelector = ({ currentAccount, onAccountChange }) => {
         ))}
       </select>
       
-      {currentAccount && accountStats[currentAccount] && (
-        <div className="absolute left-0 top-full mt-1 z-10 w-full bg-white rounded-md shadow-lg border border-gray-200 p-2">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-medium text-gray-700">
-              {accountStats[currentAccount].snapshotCount} snapshot{accountStats[currentAccount].snapshotCount !== 1 ? 's' : ''}
-            </span>
-            {accountStats[currentAccount].latestDate && (
-              <span className="text-sm text-gray-500">
-                Latest: {formatDate(accountStats[currentAccount].latestDate)}
-              </span>
-            )}
-          </div>
-          {getAccountStatusBadge(currentAccount)}
-        </div>
-      )}
     </div>
   );
 };

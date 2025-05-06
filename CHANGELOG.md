@@ -1,3 +1,7 @@
+### 0.3.7
+
+- remove annoying current account stats under AccountSelector
+
 ### 0.3.6
 
 - even more refactoring

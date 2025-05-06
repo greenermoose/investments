@@ -27,7 +27,7 @@ const PortfolioHeader = ({
               <div className="flex items-center mt-1">
                 <FileText className="h-4 w-4 mr-1" />
                 <p className="text-sm">
-                  Portfolio snapshot from: {formatDate(portfolioDate)}
+                  Portfolio snapshot: {formatDate(portfolioDate)}
                 </p>
               </div>
             )}
@@ -47,22 +47,24 @@ const PortfolioHeader = ({
             
             {/* Upload Options - Only show when upload functionality is available */}
             {showUploadButton && (
+
               <div className="relative">
+
                 {/* Use the new UploadOptions component */}
                 <UploadOptions 
                   onUploadCSV={onUploadCSV || onUploadClick}
                   onUploadJSON={onUploadJSON}
                 />
-                
+
                 {/* Upload stats indicator */}
                 {uploadStats && (
-                  <div className="absolute -top-1 -right-1">
+                  <div>
                     <div className="flex justify-center items-center bg-green-500 text-white text-xs rounded-full h-5 w-5">
                       {uploadStats.csv + uploadStats.json || 0}
                     </div>
                   </div>
                 )}
-                
+
                 {/* Informational Tip */}
                 {showTip && (
                   <div className="absolute right-0 top-full mt-2 w-64 bg-white text-gray-800 rounded-md shadow-lg border p-3 z-20 text-sm">
@@ -97,7 +99,7 @@ const PortfolioHeader = ({
                 <Info className="h-4 w-4" />
               </button>
             )}
-            
+
             {/* Legacy upload button - kept for backward compatibility */}
             {showUploadButton && !onUploadCSV && !onUploadJSON && (
               <button

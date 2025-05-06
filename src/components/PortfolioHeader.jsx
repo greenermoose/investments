@@ -1,6 +1,6 @@
 // components/PortfolioHeader.jsx revision: 2
 import React, { useState } from 'react';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
 import UploadOptions from './UploadOptions';
 import { FileText, Upload, Database, Info } from 'lucide-react';

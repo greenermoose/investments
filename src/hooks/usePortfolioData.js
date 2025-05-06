@@ -1,7 +1,6 @@
-// hooks/usePortfolioData.js revision: 1
+// hooks/usePortfolioData.js revision: 2
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/calculationUtils';
-import { formatDate } from '../utils/dateUtils';
 import { getAllAccounts, getLatestSnapshot } from '../utils/portfolioStorage';
 
 export const usePortfolioData = (selectedAccount) => {

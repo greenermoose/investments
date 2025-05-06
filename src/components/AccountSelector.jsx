@@ -5,7 +5,7 @@ import {
   getAccountSnapshots,
   getLatestSnapshot 
 } from '../utils/portfolioStorage';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 
 const AccountSelector = ({ currentAccount, onAccountChange }) => {
   const [accounts, setAccounts] = useState([]);

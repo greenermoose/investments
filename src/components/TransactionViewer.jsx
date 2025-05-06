@@ -25,6 +25,7 @@ const TransactionViewer = ({
   // Load transactions for the current account
   useEffect(() => {
     async function loadTransactions() {
+      console.log('TransactionViewer: Loading transactions for account:', currentAccount);
       if (!currentAccount) {
         setIsLoading(false);
         return;

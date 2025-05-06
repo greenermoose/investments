@@ -1,7 +1,7 @@
 // utils/portfolioStorage.js revision: 2
 // Portfolio Storage Module using IndexedDB with Transaction Support
 
-import { parseDateFromFilename } from './dateUtils';
+import { parseDateFromFilename } from './fileProcessing';
 
 const DB_NAME = 'PortfolioManagerDB';
 const DB_VERSION = 2;  // Increment version for schema changes

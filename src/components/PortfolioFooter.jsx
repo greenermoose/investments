@@ -1,6 +1,6 @@
 // components/PortfolioFooter.jsx revision: 1
 import React from 'react';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 
 const PortfolioFooter = ({ portfolioDate }) => {
   return (

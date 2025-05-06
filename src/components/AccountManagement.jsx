@@ -7,7 +7,7 @@ import {
   deleteAccount,
   getLatestSnapshot
 } from '../utils/portfolioStorage';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 import SnapshotCard from './SnapshotCard';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import BackupManager from './BackupManager';

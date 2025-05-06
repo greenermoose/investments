@@ -1,24 +1,5 @@
-// components/PortfolioManager.jsx revision: 5
-import React, { useState } from 'react';
-import PortfolioOverview from './PortfolioOverview';
-import PortfolioPositions from './PortfolioPositions';
-import PortfolioPerformance from './PortfolioPerformance';
-import PortfolioAnalysis from './PortfolioAnalysis';
-import PortfolioHistory from './PortfolioHistory';
-import LotManagement from './LotManagement';
-import AccountManagement from './AccountManagement';
-import PortfolioDemo from './PortfolioDemo';
-import AcquisitionModal from './AcquisitionModal';
-import UploadModal from './UploadModal';
-import TransactionUploadModal from './TransactionUploadModal';
-import PortfolioHeader from './PortfolioHeader';
-import PortfolioFooter from './PortfolioFooter';
-import PortfolioTabs from './PortfolioTabs';
-import FileUploadDashboard from './FileUploadDashboard';
-import DualFileUploader from './DualFileUploader';
-import TransactionTimeline from './TransactionTimeline';
-import TransactionTimelineContainer from './TransactionTimelineContainer';
-import TransactionStorageDebugger from './TransactionStorageDebugger';
+// src/components/PortfolioManager.jsx
+import React, { useState, useEffect } from 'react';
 import { 
   usePortfolio, 
   useAcquisition, 
@@ -27,16 +8,26 @@ import {
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
 
+// Import our consolidated components
+import PortfolioDisplay from './PortfolioDisplay';
+import FileUploader from './FileUploader';
+import LotManager from './LotManager';
+import TransactionViewer from './TransactionViewer';
+import PortfolioHeader from './PortfolioHeader';
+import PortfolioFooter from './PortfolioFooter';
+import PortfolioTabs from './PortfolioTabs';
+
+/**
+ * Main application component that orchestrates the portfolio management experience
+ */
 const PortfolioManager = () => {
   // Access contexts
   const portfolio = usePortfolio();
   const acquisition = useAcquisition();
   const navigation = useNavigation();
   const account = useAccount();
-
-  // State for modals and additional tabs
-  const [showTransactionModal, setShowTransactionModal] = useState(false);
-  const [showTransactionTimeline, setShowTransactionTimeline] = useState(false);
+  const [showUploadModal, setShowUploadModal] = useState(false);
+  const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
 
   // File upload hook
   const fileUpload = useFileUpload(
@@ -46,7 +37,7 @@ const PortfolioManager = () => {
       resetError: portfolio.resetError,
       loadPortfolio: portfolio.loadPortfolio,
       setError: portfolio.setError,
-      onModalClose: navigation.closeUploadModal,
+      onModalClose: () => setShowUploadModal(false),
       onNavigate: navigation.changeTab
     },
     {
@@ -75,23 +66,11 @@ const PortfolioManager = () => {
     transactionData
   } = acquisition;
 
-  // Add 'transactions' tab to the navigation
-  const {
-    activeTab,
-    showUploadModal,
-    tabs,
-    changeTab,
-    openUploadModal,
-    closeUploadModal
-  } = navigation;
+  // Create a simplified tab structure focusing on core functionality
+  const coreTabs = ['portfolio', 'transactions', 'lots'];
   
-  // Create an extended tabs array that includes transactions tab
-  const extendedTabs = [...tabs];
-  if (!extendedTabs.includes('transactions')) {
-    extendedTabs.push('transactions');
-  }
-
   const { selectedAccount, setSelectedAccount } = account;
+  const { activeTab, changeTab } = navigation;
 
   // Handle account change
   const handleAccountChange = (accountName) => {
@@ -99,28 +78,25 @@ const PortfolioManager = () => {
     refreshData();
   };
 
-  // Handle file type specific uploads
+  // Handle file upload modals
   const handleCsvUpload = () => {
-    openUploadModal();
+    setUploadModalType('csv');
+    setShowUploadModal(true);
   };
 
   const handleJsonUpload = () => {
-    setShowTransactionModal(true);
+    setUploadModalType('json');
+    setShowUploadModal(true);
   };
 
-  // Handle transaction modal close
-  const closeTransactionModal = () => {
-    setShowTransactionModal(false);
+  const closeUploadModal = () => {
+    setShowUploadModal(false);
+    setUploadModalType(null);
   };
 
   // Handle acquisition modal submission
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol) => {
     handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, currentAccount || selectedAccount);
-  };
-
-  // Handle navigation to transactions tab
-  const handleViewTransactions = () => {
-    changeTab('transactions');
   };
 
   // Determine file upload stats
@@ -135,39 +111,23 @@ const PortfolioManager = () => {
   // Render tab content based on active tab
   const renderTabContent = () => {
     switch (activeTab) {
-      case 'overview':
-        return <PortfolioOverview portfolioData={portfolioData} portfolioStats={portfolioStats} />;
-      case 'positions':
-        return <PortfolioPositions portfolioData={portfolioData} portfolioStats={portfolioStats} />;
-      case 'performance':
-        return <PortfolioPerformance 
-          portfolioData={portfolioData} 
-          portfolioStats={portfolioStats} 
-          currentAccount={currentAccount || selectedAccount} 
-          onViewTransactions={handleViewTransactions}
-        />;
-      case 'analysis':
-        return <PortfolioAnalysis portfolioData={portfolioData} portfolioStats={portfolioStats} />;
-      case 'history':
-        return <PortfolioHistory />;
-      case 'lots':
-        return <LotManagement portfolioData={portfolioData} />;
+      case 'portfolio':
+        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
       case 'transactions':
-        return (
-          <div className="space-y-6">
-          <TransactionStorageDebugger />
-          <TransactionTimelineContainer currentAccount={currentAccount || selectedAccount} />
-          </div>
-        );
-      case 'account-management':
-        return <AccountManagement onDataChange={() => {
-          refreshData();
-          if (activeTab !== 'account-management') {
-            changeTab('overview');
-          }
-        }} />;
+        return <TransactionViewer 
+                 currentAccount={currentAccount || selectedAccount} 
+                 transactions={transactionData?.transactions || []} 
+               />;
+      case 'lots':
+        return <LotManager 
+                 portfolioData={portfolioData} 
+                 onAcquisitionSubmit={handleAcquisitionModalSubmit}
+                 pendingAcquisitions={pendingAcquisitions}
+                 possibleTickerChanges={possibleTickerChanges}
+                 transactionData={transactionData}
+               />;
       default:
-        return null;
+        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
     }
   };
 
@@ -186,19 +146,30 @@ const PortfolioManager = () => {
         
         <main className="flex-grow container mx-auto p-4">
           <div className="mb-6">
-            <h2 className="text-xl font-semibold mb-4">Upload Your Investment Data</h2>
-            <p className="mb-4">Upload your portfolio data or transaction history to get started with the Investment Portfolio Manager.</p>
-            
-            {/* Use the FileUploadDashboard for a comprehensive upload experience */}
-            <FileUploadDashboard 
-              onFileLoaded={fileUpload.handleFileLoaded}
-              fileStats={fileUpload.fileStats}
-            />
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-4">Welcome to Investment Portfolio Manager</h2>
+              <p className="mb-4">Upload your portfolio data or transaction history to get started.</p>
+              
+              {/* Simple dual file uploader for initial state */}
+              <FileUploader 
+                onCsvFileLoaded={fileUpload.handleFileLoaded}
+                onJsonFileLoaded={fileUpload.handleFileLoaded}
+              />
+            </div>
           </div>
-          <PortfolioDemo />
         </main>
         
         <PortfolioFooter portfolioDate={null} />
+        
+        {/* Upload modals */}
+        {showUploadModal && (
+          <FileUploader
+            modalType={uploadModalType}
+            onClose={closeUploadModal}
+            onCsvFileLoaded={fileUpload.handleFileLoaded}
+            onJsonFileLoaded={fileUpload.handleFileLoaded}
+          />
+        )}
       </div>
     );
   }
@@ -237,21 +208,41 @@ const PortfolioManager = () => {
           </div>
         ) : isDataLoaded ? (
           <>
-            {/* Show FileUploadDashboard for additional uploads */}
-            <FileUploadDashboard 
-              onFileLoaded={fileUpload.handleFileLoaded}
-              fileStats={fileUpload.fileStats}
-              portfolioCount={portfolioData.length}
-              transactionCount={Object.keys(transactionData || {}).length}
-            />
-          
+            {/* Quick upload section */}
+            <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+              <div className="flex justify-between items-center">
+                <h2 className="text-lg font-medium">Upload Files</h2>
+                <div className="flex space-x-2">
+                  <button 
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center"
+                    onClick={handleCsvUpload}
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Portfolio CSV
+                  </button>
+                  <button 
+                    className="bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center"
+                    onClick={handleJsonUpload}
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Transaction JSON
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Simplified tabs */}
             <PortfolioTabs 
-              tabs={extendedTabs.filter(tab => tab !== 'transactions' || activeTab === 'transactions')}
+              tabs={coreTabs}
               activeTab={activeTab}
               onTabChange={changeTab}
             />
             
-            <div className="tab-content">
+            <div className="tab-content mt-6">
               {renderTabContent()}
             </div>
           </>
@@ -260,29 +251,17 @@ const PortfolioManager = () => {
       
       <PortfolioFooter portfolioDate={portfolioDate} />
       
-      {/* Portfolio Upload Modal */}
-      <UploadModal
-        isOpen={showUploadModal}
-        onClose={closeUploadModal}
-        onFileLoaded={fileUpload.handleFileLoaded}
-      />
+      {/* Upload modal */}
+      {showUploadModal && (
+        <FileUploader
+          modalType={uploadModalType}
+          onClose={closeUploadModal}
+          onCsvFileLoaded={fileUpload.handleFileLoaded}
+          onJsonFileLoaded={fileUpload.handleFileLoaded}
+        />
+      )}
       
-      {/* Transaction Upload Modal */}
-      <TransactionUploadModal
-        isOpen={showTransactionModal}
-        onClose={closeTransactionModal}
-        onFileLoaded={fileUpload.handleFileLoaded}
-      />
-      
-      {/* Acquisition Modal */}
-      <AcquisitionModal
-        isOpen={showAcquisitionModal}
-        onClose={closeAcquisitionModal}
-        onSubmit={handleAcquisitionModalSubmit}
-        changes={pendingAcquisitions}
-        possibleTickerChanges={possibleTickerChanges}
-        transactionData={transactionData}
-      />
+      {/* Acquisition modal is now handled within LotManager */}
     </div>
   );
 };

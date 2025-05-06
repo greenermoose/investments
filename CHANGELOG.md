@@ -1,3 +1,7 @@
+### 0.3.4
+
+- refactoring code
+
 ### 0.3.3
 
 - working through bugs

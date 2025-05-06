@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import DualFileUploader from './DualFileUploader';
 import { FileText, Database, CheckCircle, AlertTriangle, XCircle, Info, ChevronDown, ChevronUp } from 'lucide-react';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 
 const FileUploadDashboard = ({ 
   onFileLoaded, 

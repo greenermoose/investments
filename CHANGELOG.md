@@ -1,3 +1,7 @@
+### 0.3.11
+
+- more cleanup
+
 ### 0.3.10
 
 - remove dateUtils

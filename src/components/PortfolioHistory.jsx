@@ -1,8 +1,7 @@
 // components/PortfolioHistory.jsx revision: 1
 import React, { useState, useEffect } from 'react';
 import { getAllAccounts, getAccountSnapshots } from '../utils/portfolioStorage';
-import { formatCurrency, formatPercent } from '../utils/formatters';
-import { formatDate } from '../utils/dateUtils';
+import { formatCurrency, formatPercent,formatDate } from '../utils/dataUtils';
 
 const PortfolioHistory = () => {
   const [accounts, setAccounts] = useState([]);

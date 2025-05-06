@@ -1,7 +1,7 @@
 // components/PortfolioAnalysis.jsx revision: 1
 import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-import { formatCurrency, formatPercent } from '../utils/formatters';
+import { formatCurrency, formatPercent } from '../utils/dataUtils';
 
 const PortfolioAnalysis = ({ portfolioData, portfolioStats }) => {
   return (

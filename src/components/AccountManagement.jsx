@@ -4,8 +4,7 @@ import {
   getAllAccounts, 
   getAccountSnapshots, 
   deletePortfolioSnapshot,
-  deleteAccount,
-  getLatestSnapshot
+  deleteAccount
 } from '../utils/portfolioStorage';
 import { formatDate } from '../utils/dataUtils';
 import SnapshotCard from './SnapshotCard';

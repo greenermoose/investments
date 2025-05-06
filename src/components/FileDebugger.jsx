@@ -1,7 +1,6 @@
 // components/FileDebugger.jsx revision: 1
 import React, { useState } from 'react';
-import { parseIRAPortfolioCSV } from '../utils/csvParser';
-import { parseDateFromFilename } from '../utils/dateUtils';
+import { parsePortfolioCSV, parseDateFromFilename } from '../utils/fileProcessing';
 
 const FileDebugger = () => {
   const [fileInfo, setFileInfo] = useState(null);
@@ -29,7 +28,7 @@ const FileDebugger = () => {
 
       // Try parsing
       try {
-        const results = parseIRAPortfolioCSV(content);
+        const results = parsePortfolioCSV(content);
         setParseResults(results);
         setError(null);
       } catch (err) {

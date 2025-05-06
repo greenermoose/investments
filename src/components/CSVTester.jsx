@@ -1,7 +1,7 @@
 // components/CSVTester.jsx revision: 1
 import React, { useState } from 'react';
 import Papa from 'papaparse';
-import { extractDateFromAccountInfo } from '../utils/dateUtils';
+import { extractDateFromAccountInfo } from '../utils/fileProcessing';
 
 const CSVTester = () => {
   const [parsedData, setParsedData] = useState(null);

@@ -1,8 +1,7 @@
 // components/PortfolioPerformance.jsx revision: 3
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import { formatCurrency, formatPercent } from '../utils/formatters';
-import { formatDate } from '../utils/dateUtils';
+import { formatCurrency, formatPercent,formatDate } from '../utils/dataUtils';
 import { 
   getAccountSnapshots,
   getTransactionsByAccount,

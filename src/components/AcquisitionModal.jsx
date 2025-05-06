@@ -1,6 +1,6 @@
 // components/AcquisitionModal.jsx revision: 2
 import React, { useState } from 'react';
-import { formatDate } from '../utils/dateUtils';
+import { formatDate } from '../utils/dataUtils';
 
 const StatusIndicator = ({ type, tooltipText }) => {
   const configs = {

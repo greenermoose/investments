@@ -1,7 +1,6 @@
 // components/TransactionTimeline.jsx revision: 2
 import React, { useState, useEffect } from 'react';
-import { formatDate } from '../utils/dateUtils';
-import { formatCurrency } from '../utils/formatters';
+import { formatDate, formatCurrency } from '../utils/dataUtils';
 import { TransactionCategories } from '../utils/transactionParser';
 
 const TransactionTimeline = ({ 

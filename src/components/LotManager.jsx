@@ -10,7 +10,7 @@ import {
   calculateWeightedAverageCost, 
   calculateUnrealizedGainLoss 
 } from '../utils/portfolioCalculations';
-import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
+import { formatCurrency, formatDate } from '../utils/dataUtils';
 
 // Define constants for lot tracking methods
 const LOT_TRACKING_METHODS = {

@@ -1,3 +1,7 @@
+### 0.3.12
+
+- remove unnecessary utils
+
 ### 0.3.11
 
 - more cleanup

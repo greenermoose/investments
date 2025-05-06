@@ -1,5 +1,4 @@
-// utils/fileProcessing.js
-// Combines csvParser.js and fileUtils.js for a unified file processing utility
+// utils/fileProcessing.js revision: 1
 
 import Papa from 'papaparse';
 
@@ -433,23 +432,4 @@ export const readFileAsText = (file) => {
     reader.onerror = (e) => reject(new Error('Error reading file'));
     reader.readAsText(file);
   });
-};
-
-/**
- * Parse transaction JSON file
- * @param {string} content - JSON file content
- * @returns {object} Parsed transaction data
- */
-export const parseTransactionJSON = (content) => {
-  try {
-    const data = JSON.parse(content);
-    
-    if (!data.BrokerageTransactions || !Array.isArray(data.BrokerageTransactions)) {
-      throw new Error('Invalid transaction file format: missing BrokerageTransactions array');
-    }
-    
-    return data;
-  } catch (error) {
-    throw new Error(`Failed to parse transaction data: ${error.message}`);
-  }
 };

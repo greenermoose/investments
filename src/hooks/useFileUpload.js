@@ -10,11 +10,11 @@ import {
 } from '../utils/portfolioStorage';
 import { analyzePortfolioChanges } from '../utils/portfolioAnalyzer';
 import { 
+  applyTransactionsToPortfolio,
   parseTransactionJSON,
   removeDuplicateTransactions,
   getEarliestAcquisitionDate
-} from '../utils/transactionParser';
-import { applyTransactionsToPortfolio } from '../utils/transactionEngine';
+} from '../utils/transactionEngine';
 import { detectSymbolChange } from '../utils/symbolMapping';
 
 /**

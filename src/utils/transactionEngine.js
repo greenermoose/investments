@@ -590,3 +590,66 @@ export const enrichPortfolioWithTransactionData = (portfolioData, reconciliation
     return position;
   });
 };
+
+/**
+ * Parses transaction JSON data
+ * @param {string|Object} jsonContent - JSON content to parse
+ * @returns {Object} Parsed transaction data
+ */
+export const parseTransactionJSON = (jsonContent) => {
+  try {
+    // Parse JSON if it's a string
+    const data = typeof jsonContent === 'string' ? JSON.parse(jsonContent) : jsonContent;
+    
+    if (!data.BrokerageTransactions || !Array.isArray(data.BrokerageTransactions)) {
+      throw new Error('Invalid transaction file format: missing BrokerageTransactions array');
+    }
+    
+    // Parse each transaction
+    const transactions = data.BrokerageTransactions.map((transaction, index) => {
+      try {
+        const date = normalizeTransactionDate(transaction.Date);
+        const symbol = transaction.Symbol || '';
+        const action = transaction.Action;
+        const quantity = parseFloat(transaction.Quantity) || 0;
+        const price = parseTransactionAmount(transaction.Price);
+        const fees = parseTransactionAmount(transaction['Fees & Comm']);
+        const amount = parseTransactionAmount(transaction.Amount);
+        const description = transaction.Description || '';
+        
+        // Categorize the transaction
+        const category = categorizeTransaction(action);
+        
+        // Create unique ID for transaction
+        const id = `${date?.getTime() || 'no-date'}_${symbol}_${action}_${quantity}_${Math.random().toString(36).substr(2, 9)}`;
+        
+        return {
+          id,
+          date,
+          symbol,
+          action,
+          category,
+          quantity,
+          price,
+          fees,
+          amount,
+          description,
+          originalData: transaction
+        };
+      } catch (error) {
+        console.error(`Error parsing transaction at index ${index}:`, error);
+        return null;
+      }
+    }).filter(Boolean);
+    
+    return {
+      fromDate: data.FromDate,
+      toDate: data.ToDate,
+      totalAmount: parseTransactionAmount(data.TotalTransactionsAmount),
+      transactions
+    };
+  } catch (error) {
+    console.error('Error parsing transaction JSON:', error);
+    throw new Error(`Failed to parse transaction data: ${error.message}`);
+  }
+};

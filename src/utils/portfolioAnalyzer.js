@@ -1,7 +1,7 @@
 // utils/portfolioAnalyzer.js revision: 1
 // Portfolio Analysis Module for detecting changes between portfolios
 import { getLatestSnapshot, getSecurityMetadata } from './portfolioStorage';
-import { normalizeSymbol } from './securityUtils';
+import { normalizeSymbol } from './dataUtils';
 
 export const PortfolioChangeTypes = {
   SOLD: 'SOLD',

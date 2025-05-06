@@ -1,8 +1,9 @@
 144070980        0 drwxr-xr-x   10 fredhorch        staff                 320 May  3 18:08 src
-144072149       16 -rw-r--r--    1 fredhorch        staff                6148 May  6 09:28 src/.DS_Store
+144072149       16 -rw-r--r--    1 fredhorch        staff                6148 May  6 09:55 src/.DS_Store
 144138247        0 drwxr-xr-x    3 fredhorch        staff                  96 May  3 18:17 src/context
 144138733        8 -rw-r--r--    1 fredhorch        staff                2166 May  5 10:37 src/context/PortfolioContext.jsx
-144071445        0 drwxr-xr-x   10 fredhorch        staff                 320 May  6 09:19 src/utils
+144071445        0 drwxr-xr-x   11 fredhorch        staff                 352 May  6 09:59 src/utils
+144785989       16 -rw-r--r--    1 fredhorch        staff                5664 May  6 09:59 src/utils/transactionProcessor.js
 144514552       64 -rw-r--r--    1 fredhorch        staff               30967 May  6 09:48 src/utils/portfolioStorage.js
 144612599       40 -rw-r--r--    1 fredhorch        staff               20135 May  5 19:43 src/utils/portfolioCalculations.js
 144612286       24 -rw-r--r--    1 fredhorch        staff                9019 May  5 19:39 src/utils/dataUtils.js
@@ -15,7 +16,7 @@
 144071216        0 drwxr-xr-x   27 fredhorch        staff                 864 May  6 09:30 src/components
 144181546        8 -rw-r--r--    1 fredhorch        staff                2552 May  5 23:47 src/components/FileDebugger.jsx
 144777431       40 -rw-r--r--    1 fredhorch        staff               17356 May  6 09:16 src/components/TransactionTimeline.jsx
-144111360       24 -rw-r--r--    1 fredhorch        staff                9715 May  5 23:44 src/components/AcquisitionModal.jsx
+144111360       24 -rw-r--r--    1 fredhorch        staff               10819 May  6 10:04 src/components/AcquisitionModal.jsx
 144280986        8 -rw-r--r--    1 fredhorch        staff                2584 May  5 10:35 src/components/DeleteConfirmationModal.jsx
 144280540        8 -rw-r--r--    1 fredhorch        staff                3194 May  5 23:47 src/components/AccountSelector.jsx
 144555902       24 -rw-r--r--    1 fredhorch        staff               11698 May  5 23:44 src/components/FileUploadDashboard.jsx
@@ -30,8 +31,8 @@
 144282921       24 -rw-r--r--    1 fredhorch        staff               10842 May  5 23:48 src/components/AccountManagement.jsx
 144097134       24 -rw-r--r--    1 fredhorch        staff                8722 May  5 23:49 src/components/PortfolioAnalysis.jsx
 144281089        8 -rw-r--r--    1 fredhorch        staff                2941 May  5 22:38 src/components/SnapshotCard.jsx
-144071232       24 -rw-r--r--    1 fredhorch        staff               10571 May  6 09:34 src/components/PortfolioManager.jsx
-144629996       48 -rw-r--r--    1 fredhorch        staff               22068 May  5 23:49 src/components/LotManager.jsx
+144071232       24 -rw-r--r--    1 fredhorch        staff               10703 May  6 10:08 src/components/PortfolioManager.jsx
+144629996       56 -rw-r--r--    1 fredhorch        staff               26009 May  6 10:13 src/components/LotManager.jsx
 144612947       32 -rw-r--r--    1 fredhorch        staff               15824 May  5 19:46 src/components/PortfolioDisplay.jsx
 144139121        8 -rw-r--r--    1 fredhorch        staff                 646 May  5 23:35 src/components/PortfolioFooter.jsx
 144632514        8 -rw-r--r--    1 fredhorch        staff                3395 May  5 22:15 src/components/UploadOptions.jsx
@@ -40,7 +41,7 @@
 144139033       16 -rw-r--r--    1 fredhorch        staff                5256 May  6 09:34 src/components/PortfolioHeader.jsx
 144138155        0 drwxr-xr-x    8 fredhorch        staff                 256 May  6 09:16 src/hooks
 144139955        8 -rw-r--r--    1 fredhorch        staff                3216 May  5 10:38 src/hooks/usePortfolioData.test.js
-144138514        8 -rw-r--r--    1 fredhorch        staff                2449 May  5 10:38 src/hooks/useAcquisitionModal.js
+144138514        8 -rw-r--r--    1 fredhorch        staff                3205 May  6 10:05 src/hooks/useAcquisitionModal.js
 144138315        8 -rw-r--r--    1 fredhorch        staff                 261 May  5 10:37 src/hooks/index.js
 144138585        8 -rw-r--r--    1 fredhorch        staff                 752 May  6 09:33 src/hooks/usePortfolioNavigation.js
 144138431       16 -rw-r--r--    1 fredhorch        staff                4110 May  6 09:06 src/hooks/usePortfolioData.js

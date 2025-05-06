@@ -2,7 +2,7 @@
 // Combines PortfolioOverview.jsx and PortfolioPositions.jsx
 
 import React, { useState } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
 import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
 
@@ -95,6 +95,22 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
       .slice(0, 5);
   };
 
+  // Custom tooltip for bar chart
+  const CustomBarTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      const data = payload[0].payload;
+      return (
+        <div className="bg-white p-3 border border-gray-200 shadow-md rounded">
+          <p className="font-medium text-gray-900">{data.name}</p>
+          <p className="text-sm text-gray-700">{data.description}</p>
+          <p className="text-sm text-gray-900 font-semibold">{formatCurrency(data.value)}</p>
+          <p className="text-xs text-gray-600">{formatPercent(data.percent)} of portfolio</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   const renderOverviewContent = () => {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -127,30 +143,40 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
           </div>
         </div>
         
-        {/* Asset Allocation Chart */}
+        {/* Asset Allocation Bar Chart */}
         <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Asset Allocation</h2>
-          <div className="h-64">
+          <h2 className="text-xl font-semibold mb-4">Asset Allocation by Security</h2>
+          <div className="h-72 mt-2">
             <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie
-                  data={portfolioStats.assetAllocation}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
-                  outerRadius={80}
-                  fill="#8884d8"
-                  dataKey="value"
-                  nameKey="type"
+              <BarChart
+                data={portfolioStats.assetAllocation.slice(0, 10)} // Show top 10 holdings
+                layout="vertical"
+                margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" tickFormatter={(value) => formatCurrency(value)} />
+                <YAxis 
+                  type="category" 
+                  dataKey="name"
+                  width={60}
+                  tick={{ fontSize: 12 }}
+                />
+                <Tooltip content={<CustomBarTooltip />} />
+                <Bar 
+                  dataKey="value" 
+                  name="Market Value"
                 >
-                  {portfolioStats.assetAllocation.map((entry, index) => (
+                  {portfolioStats.assetAllocation.slice(0, 10).map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
-                </Pie>
-                <Tooltip formatter={(value) => formatCurrency(value)} />
-              </PieChart>
+                </Bar>
+              </BarChart>
             </ResponsiveContainer>
+          </div>
+          <div className="mt-2 text-xs text-gray-500 text-right">
+            {portfolioStats.assetAllocation.length > 10 ? 
+              `* Showing top 10 of ${portfolioStats.assetAllocation.length} securities` 
+              : null}
           </div>
         </div>
         

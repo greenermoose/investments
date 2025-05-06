@@ -1,3 +1,7 @@
+### 0.3.9
+
+- get account name from transaction files
+
 ### 0.3.8
 
 - accounts management tab

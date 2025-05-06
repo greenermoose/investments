@@ -357,7 +357,13 @@ export const getAccountNameFromFilename = (filename) => {
   if (match) {
     return match[1].replace(/_/g, ' ');
   }
-  
+
+  // Pattern for files with underscores: AccountType_Account_Name_AccountNumber_Transactions_Date.csv
+  const matchTransactions = filename.match(/^(.+)_[^_]+_Transactions/);
+  if (matchTransactions) {
+    return matchTransactions[1].replace(/_/g, ' ');
+  }
+
   // Fallback pattern
   const fallbackMatch = filename.match(/^([^_]+_[^_]+)_?Positions/);
   if (fallbackMatch) {

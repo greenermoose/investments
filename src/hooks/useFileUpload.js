@@ -1,7 +1,7 @@
 // hooks/useFileUpload.js revision: 3
 import { useState } from 'react';
 import { parsePortfolioCSV } from '../utils/fileProcessing';
-import { getAccountNameFromFilename } from '../utils/securityUtils';
+import { getAccountNameFromFilename } from '../utils/fileProcessing';
 import { 
   savePortfolioSnapshot, 
   getLatestSnapshot,
@@ -239,6 +239,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
    */
   const handleTransactionFile = async (fileContent, fileName) => {
     try {
+      console.log(`Starting to parse transaction file: ${fileName}`);
+
       // Parse JSON transaction file
       const parsedData = parseTransactionJSON(fileContent);
       
@@ -249,6 +251,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       
       // Extract account name
       const accountName = getAccountNameFromFilename(fileName);
+
+      console.log(`Transaction file account name: ${accountName}`);
       
       // Remove duplicates
       const uniqueTransactions = removeDuplicateTransactions(parsedData.transactions);

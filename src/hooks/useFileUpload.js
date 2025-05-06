@@ -1,6 +1,6 @@
 // hooks/useFileUpload.js revision: 3
 import { useState } from 'react';
-import { parseIRAPortfolioCSV } from '../utils/csvParser';
+import { parsePortfolioCSV } from '../utils/fileProcessing';
 import { getAccountNameFromFilename } from '../utils/securityUtils';
 import { 
   savePortfolioSnapshot, 
@@ -317,7 +317,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   const handlePortfolioFile = async (fileContent, fileName, dateFromFileName) => {
     try {
       // Parse the CSV data
-      const parsedData = parseIRAPortfolioCSV(fileContent);
+      const parsedData = parsePortfolioCSV(fileContent);
       
       if (!parsedData.portfolioData || parsedData.portfolioData.length === 0) {
         throw new Error('No portfolio data found in the file. Please check the file format.');

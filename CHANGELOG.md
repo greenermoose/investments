@@ -1,3 +1,7 @@
+### 0.3.6
+
+- even more refactoring
+
 ### 0.3.5
 
 - more refactoring

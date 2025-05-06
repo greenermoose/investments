@@ -581,49 +581,158 @@ export const getSecurityLots = async (securityId) => {
   });
 };
 
-// Purge data for an account
+/**
+ * Purges all data for an account
+ * @param {string} accountName - The account to purge
+ * @returns {Promise<void>}
+ */
 export const purgeAccountData = async (accountName) => {
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readwrite');
-    
-    const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
-    const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
-    const lotStore = transaction.objectStore(STORE_NAME_LOTS);
-    
-    // Delete portfolios
-    const portfolioIndex = portfolioStore.index('account');
-    portfolioIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
-      const cursor = event.target.result;
-      if (cursor) {
-        cursor.delete();
-        cursor.continue();
+    try {
+      // Create a transaction for all stores we need to clean up
+      const transaction = db.transaction([
+        STORE_NAME_PORTFOLIOS, 
+        STORE_NAME_SECURITIES, 
+        STORE_NAME_LOTS,
+        STORE_NAME_TRANSACTIONS,          // Added transactions store
+        STORE_NAME_MANUAL_ADJUSTMENTS     // Added manual adjustments store
+      ], 'readwrite');
+      
+      // Get references to all stores
+      const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+      const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
+      const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+      const transactionStore = transaction.objectStore(STORE_NAME_TRANSACTIONS);
+      const adjustmentStore = transaction.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS);
+      
+      // Delete portfolios
+      const portfolioIndex = portfolioStore.index('account');
+      portfolioIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          portfolioStore.delete(cursor.value.id);
+          cursor.continue();
+        }
+      };
+      
+      // Delete securities
+      const securityIndex = securityStore.index('account');
+      securityIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          securityStore.delete(cursor.value.id);
+          cursor.continue();
+        }
+      };
+      
+      // Delete lots
+      const lotIndex = lotStore.index('account');
+      lotIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          lotStore.delete(cursor.value.id);
+          cursor.continue();
+        }
+      };
+      
+      // Delete transactions - proper transaction cleanup
+      const transactionIndex = transactionStore.index('account');
+      
+      // First handle transactions with matching account
+      transactionIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          console.log(`Deleting transaction: ${cursor.value.id} for account ${accountName}`);
+          transactionStore.delete(cursor.value.id);
+          cursor.continue();
+        }
+      };
+      
+      // Handle special case for "Unknown" account purge - also cleans up transactions with no account
+      if (accountName === 'Unknown') {
+        // Get all transactions to find ones with no account
+        transactionStore.openCursor().onsuccess = (event) => {
+          const cursor = event.target.result;
+          if (cursor) {
+            const transaction = cursor.value;
+            // Delete if no account or account is explicitly "Unknown"
+            if (!transaction.account || transaction.account === 'Unknown') {
+              console.log(`Deleting unassigned transaction: ${transaction.id}`);
+              transactionStore.delete(transaction.id);
+            }
+            cursor.continue();
+          }
+        };
       }
-    };
-    
-    // Delete securities
-    const securityIndex = securityStore.index('account');
-    securityIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
-      const cursor = event.target.result;
-      if (cursor) {
-        cursor.delete();
-        cursor.continue();
-      }
-    };
-    
-    // Delete lots
-    const lotIndex = lotStore.index('account');
-    lotIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
-      const cursor = event.target.result;
-      if (cursor) {
-        cursor.delete();
-        cursor.continue();
-      }
-    };
-    
-    transaction.oncomplete = () => resolve();
-    transaction.onerror = () => reject(transaction.error);
+      
+      // Delete manual adjustments
+      const adjustmentIndex = adjustmentStore.index('account');
+      adjustmentIndex.openCursor(IDBKeyRange.only(accountName)).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          adjustmentStore.delete(cursor.value.id);
+          cursor.continue();
+        }
+      };
+      
+      transaction.oncomplete = () => {
+        console.log(`Successfully purged all data for account: ${accountName}`);
+        resolve();
+      };
+      
+      transaction.onerror = (error) => {
+        console.error(`Error purging data for account ${accountName}:`, error);
+        reject(transaction.error);
+      };
+    } catch (error) {
+      console.error(`Error setting up purge for account ${accountName}:`, error);
+      reject(error);
+    }
+  });
+};
+
+/**
+ * Completely purges all data from the application
+ * @returns {Promise<void>}
+ */
+export const purgeAllData = async () => {
+  const db = await initializeDB();
+  
+  return new Promise((resolve, reject) => {
+    try {
+      // Create a transaction for all stores
+      const transaction = db.transaction([
+        STORE_NAME_PORTFOLIOS, 
+        STORE_NAME_SECURITIES, 
+        STORE_NAME_LOTS,
+        STORE_NAME_TRANSACTIONS,
+        STORE_NAME_MANUAL_ADJUSTMENTS,
+        STORE_NAME_TRANSACTION_METADATA
+      ], 'readwrite');
+      
+      // Clear all stores
+      transaction.objectStore(STORE_NAME_PORTFOLIOS).clear();
+      transaction.objectStore(STORE_NAME_SECURITIES).clear();
+      transaction.objectStore(STORE_NAME_LOTS).clear();
+      transaction.objectStore(STORE_NAME_TRANSACTIONS).clear();
+      transaction.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS).clear();
+      transaction.objectStore(STORE_NAME_TRANSACTION_METADATA).clear();
+      
+      transaction.oncomplete = () => {
+        console.log('Successfully purged all application data');
+        resolve();
+      };
+      
+      transaction.onerror = (error) => {
+        console.error('Error purging all data:', error);
+        reject(transaction.error);
+      };
+    } catch (error) {
+      console.error('Error setting up purge for all data:', error);
+      reject(error);
+    }
   });
 };
 

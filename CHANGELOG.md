@@ -1,3 +1,7 @@
+### 0.3.14
+
+- fix data purging
+
 ### 0.3.13
 
 - StorageManager

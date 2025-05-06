@@ -5,6 +5,7 @@ import {
   exportAllData, 
   importAllData, 
   purgeAccountData,
+  purgeAllData,
   getAccountSnapshots,
   getTransactionsByAccount,
   initializeDB
@@ -266,10 +267,8 @@ const StorageManager = ({ onDataChange }) => {
         try {
           setIsLoading(true);
           
-          // Purge each account one by one
-          for (const account of accounts) {
-            await purgeAccountData(account);
-          }
+          // Use the purgeAllData function instead of purging each account
+          await purgeAllData();
           
           setSuccess('All data purged successfully');
           await loadStorageData(); // Reload data
@@ -412,7 +411,7 @@ const StorageManager = ({ onDataChange }) => {
       <div className="mb-6">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-lg font-medium">Account Data Management</h3>
-          {accounts.length > 0 && (
+          {(accounts.length > 0 || allTransactions.length > 0) && (
             <button
               onClick={handlePurgeAll}
               className="px-4 py-2 bg-red-600 text-white text-sm rounded hover:bg-red-700 transition-colors"

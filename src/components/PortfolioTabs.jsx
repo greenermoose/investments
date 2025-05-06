@@ -1,4 +1,4 @@
-// components/PortfolioTabs.jsx revision: 1
+// components/PortfolioTabs.jsx revision: 2
 import React from 'react';
 
 const PortfolioTabs = ({ tabs, activeTab, onTabChange }) => {
@@ -18,6 +18,8 @@ const PortfolioTabs = ({ tabs, activeTab, onTabChange }) => {
         return 'Lots';
       case 'account-management':
         return 'Account Management';
+      case 'storage-manager':
+        return 'Storage Manager';
       default:
         return tab.charAt(0).toUpperCase() + tab.slice(1);
     }

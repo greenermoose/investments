@@ -1,4 +1,4 @@
-// hooks/usePortfolioNavigation.js revision: 1
+// hooks/usePortfolioNavigation.js revision: 2
 import { useState } from 'react';
 
 export const usePortfolioNavigation = () => {
@@ -17,7 +17,8 @@ export const usePortfolioNavigation = () => {
     setShowUploadModal(false);
   };
 
-  const tabs = ['overview', 'positions', 'performance', 'analysis', 'history', 'lots', 'account-management'];
+  // Add storage-manager to the available tabs
+  const tabs = ['overview', 'positions', 'performance', 'analysis', 'history', 'lots', 'account-management', 'storage-manager'];
 
   return {
     activeTab,

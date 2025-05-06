@@ -1,3 +1,7 @@
+### 0.3.13
+
+- StorageManager
+
 ### 0.3.12
 
 - remove unnecessary utils

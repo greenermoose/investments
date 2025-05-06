@@ -1,9 +1,9 @@
-// components/PortfolioHeader.jsx revision: 2
+// components/PortfolioHeader.jsx revision: 3
 import React, { useState } from 'react';
 import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
 import UploadOptions from './UploadOptions';
-import { FileText, Upload, Database, Info } from 'lucide-react';
+import { FileText, Upload, Database, Info, HardDrive } from 'lucide-react';
 
 const PortfolioHeader = ({ 
   portfolioDate, 
@@ -13,9 +13,16 @@ const PortfolioHeader = ({
   onUploadJSON, 
   showUploadButton,
   onAccountChange,
-  uploadStats
+  uploadStats,
+  onNavigate
 }) => {
   const [showTip, setShowTip] = useState(false);
+
+  const handleStorageManagerClick = () => {
+    if (onNavigate) {
+      onNavigate('storage-manager');
+    }
+  };
 
   return (
     <header className="bg-indigo-600 text-white p-4 shadow-lg">
@@ -47,9 +54,7 @@ const PortfolioHeader = ({
             
             {/* Upload Options - Only show when upload functionality is available */}
             {showUploadButton && (
-
               <div className="relative">
-
                 {/* Use the new UploadOptions component */}
                 <UploadOptions 
                   onUploadCSV={onUploadCSV || onUploadClick}
@@ -85,6 +90,17 @@ const PortfolioHeader = ({
                   </div>
                 )}
               </div>
+            )}
+            
+            {/* Storage Manager Button */}
+            {showUploadButton && onNavigate && (
+              <button 
+                className="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-50 transition-colors flex items-center"
+                onClick={handleStorageManagerClick}
+              >
+                <HardDrive className="h-4 w-4 mr-2" />
+                Manage Storage
+              </button>
             )}
             
             {/* Info icon */}

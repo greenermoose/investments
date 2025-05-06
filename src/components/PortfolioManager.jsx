@@ -17,6 +17,7 @@ import TransactionViewer from './TransactionViewer';
 import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import PortfolioTabs from './PortfolioTabs';
+import StorageManager from './StorageManager'; // Import our new component
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -67,8 +68,8 @@ const PortfolioManager = () => {
     transactionData
   } = acquisition;
 
-  // Create a simplified tab structure focusing on core functionality
-  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots'];
+  // Create a tab structure including our new Storage Manager tab
+  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager'];
   
   const { selectedAccount, setSelectedAccount } = account;
   const { activeTab, changeTab } = navigation;
@@ -116,6 +117,7 @@ const PortfolioManager = () => {
         return <AccountManagement 
                  currentAccount={currentAccount || selectedAccount} 
                  onAccountChange={handleAccountChange}
+                 onDataChange={refreshData}
                />;
       case 'portfolio':
         return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
@@ -132,6 +134,8 @@ const PortfolioManager = () => {
                  possibleTickerChanges={possibleTickerChanges}
                  transactionData={transactionData}
                />;
+      case 'storage-manager':
+        return <StorageManager onDataChange={refreshData} />;
       default:
         return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
     }
@@ -148,6 +152,7 @@ const PortfolioManager = () => {
           onUploadJSON={handleJsonUpload}
           showUploadButton={false}
           onAccountChange={handleAccountChange}
+          onNavigate={changeTab}
         />
         
         <main className="flex-grow container mx-auto p-4">
@@ -161,6 +166,17 @@ const PortfolioManager = () => {
                 onCsvFileLoaded={fileUpload.handleFileLoaded}
                 onJsonFileLoaded={fileUpload.handleFileLoaded}
               />
+              
+              {/* Link to Storage Manager */}
+              <div className="mt-6 text-center">
+                <p className="text-gray-600 mb-2">Already have data in the app?</p>
+                <button
+                  onClick={() => changeTab('storage-manager')}
+                  className="text-indigo-600 hover:text-indigo-800 font-medium"
+                >
+                  Manage Your Stored Data →
+                </button>
+              </div>
             </div>
           </div>
         </main>
@@ -190,6 +206,7 @@ const PortfolioManager = () => {
         showUploadButton={isDataLoaded}
         onAccountChange={handleAccountChange}
         uploadStats={getUploadStats()}
+        onNavigate={changeTab}
       />
 
       <main className="flex-grow container mx-auto p-4">

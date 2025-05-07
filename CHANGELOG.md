@@ -1,3 +1,7 @@
+### 0.3.25
+
+- updates to LotManager
+
 ### 0.3.24
 
 - new style sheet to reduce size of components

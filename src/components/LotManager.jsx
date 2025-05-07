@@ -1,4 +1,4 @@
-// components/LotManager.jsx
+// components/LotManager.jsx - Fixed loading issue
 import React, { useState, useEffect } from 'react';
 import { 
   getSecurityLots
@@ -9,6 +9,8 @@ import {
   processTransactionsIntoLots
 } from '../utils/lotTracker';
 import { formatCurrency, formatDate } from '../utils/dataUtils';
+import '../styles/portfolio.css';
+import DeleteConfirmationModal from './DeleteConfirmationModal';
 
 // Define constants for lot tracking methods
 const LOT_TRACKING_METHODS = {
@@ -79,11 +81,11 @@ const StatusIndicator = ({ type, tooltipText }) => {
   const config = configs[type] || configs.MANUAL_REQUIRED;
 
   return (
-    <div className="relative group inline-flex items-center">
+    <div className="status-indicator group">
       <div className={`text-${config.color}-600`}>
         {config.icon}
       </div>
-      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 text-xs text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+      <div className="status-tooltip">
         {tooltipText || config.tooltip}
       </div>
     </div>
@@ -99,7 +101,7 @@ const TrackingMethodModal = ({ isOpen, onClose, currentMethod, onMethodChange })
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-lg max-w-md w-full p-6">
-        <h2 className="text-xl font-semibold mb-4">Lot Tracking Method</h2>
+        <h2 className="card-title">Lot Tracking Method</h2>
         <p className="text-gray-600 mb-4">
           Select how you want to track tax lots for cost basis calculations.
         </p>
@@ -146,16 +148,10 @@ const TrackingMethodModal = ({ isOpen, onClose, currentMethod, onMethodChange })
         </div>
         
         <div className="flex justify-end space-x-2">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
-          >
+          <button onClick={onClose} className="btn btn-secondary">
             Cancel
           </button>
-          <button
-            onClick={onClose}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
-          >
+          <button onClick={onClose} className="btn btn-primary">
             Save
           </button>
         </div>
@@ -182,9 +178,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
   // Get transaction-derived information for current security
   const getTransactionInfo = () => {
     if (!transactionData || !currentChange) return null;
-    
-    const symbolData = transactionData[currentChange.symbol];
-    return symbolData;
+    return transactionData[currentChange.symbol];
   };
   
   const getStatusIndicator = () => {
@@ -269,13 +263,13 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
         <h4 className="text-sm font-medium text-gray-900 mb-2">Transaction History Information</h4>
         <div className="space-y-2">
           {txInfo.hasAcquisitionDate && (
-            <div className="flex items-center">
+            <div className="flex-center">
               <span className="text-sm text-gray-700">Acquisition Date: </span>
               <span className="ml-2 text-sm font-medium text-gray-900">
                 {formatDate(txInfo.acquisitionDate)}
               </span>
               {txInfo.isInterpolated && (
-                <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="badge badge-blue ml-2">
                   Interpolated
                 </span>
               )}
@@ -292,7 +286,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
             </div>
           )}
           {txInfo.confidence && (
-            <div className="flex items-center">
+            <div className="flex-center">
               <span className="text-sm text-gray-700">Confidence: </span>
               <span className={`ml-2 text-sm font-medium ${
                 txInfo.confidence === 'HIGH' ? 'text-green-600' :
@@ -311,8 +305,8 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-lg max-w-md w-full p-6">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center">
+        <div className="flex-between mb-4">
+          <div className="flex-center">
             <h2 className="text-xl font-semibold mr-3">
               New Security Acquisition ({currentIndex + 1} of {changes.length})
             </h2>
@@ -328,7 +322,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
         </div>
         
         {matchingTickerChange && (
-          <div className="mb-4 p-3 bg-yellow-50 border border-yellow-200 rounded">
+          <div className="alert alert-warning mb-4">
             <p className="text-sm text-yellow-800">
               We detected that you might have converted {matchingTickerChange.oldSymbol} to {currentChange?.symbol}.
               Was this a ticker symbol change?
@@ -348,28 +342,28 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
         {renderTransactionInfo()}
         
         {!isTickerChange && !getTransactionInfo()?.hasAcquisitionDate && (
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+          <div className="form-group">
+            <label className="form-label">
               When did you acquire this security?
             </label>
             <input
               type="date"
               value={acquisitionDate}
               onChange={(e) => setAcquisitionDate(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="form-select"
               required
             />
           </div>
         )}
         
-        <div className="flex justify-between">
+        <div className="flex-between">
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            className={`px-4 py-2 border border-gray-300 rounded-md text-sm font-medium ${
+            className={`btn ${
               currentIndex === 0 
-                ? 'text-gray-300 cursor-not-allowed' 
-                : 'text-gray-700 hover:bg-gray-50'
+                ? 'bg-gray-200 text-gray-300 cursor-not-allowed' 
+                : 'btn-secondary'
             }`}
           >
             Previous
@@ -378,13 +372,13 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
           <div className="space-x-2">
             <button
               onClick={onClose}
-              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+              className="btn btn-secondary"
             >
               Skip All
             </button>
             <button
               onClick={handleSubmit}
-              className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
+              className="btn btn-primary"
               disabled={!isTickerChange && !getTransactionInfo()?.hasAcquisitionDate && !acquisitionDate}
             >
               {currentIndex < changes.length - 1 ? 'Next' : 'Finish'}
@@ -400,21 +394,28 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
  * Main lot management component
  */
 const LotManager = ({ 
-  portfolioData, 
+  portfolioData = [], 
   onAcquisitionSubmit, 
   pendingAcquisitions = [], 
   possibleTickerChanges = [], 
   transactionData = {},
-  currentAccount
+  currentAccount = ''
 }) => {
   const [selectedSecurity, setSelectedSecurity] = useState(null);
   const [lots, setLots] = useState([]);
   const [trackingMethod, setTrackingMethod] = useState(LOT_TRACKING_METHODS.FIFO);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Changed from true to false
   const [processResults, setProcessResults] = useState(null);
   const [error, setError] = useState(null);
+  const [deleteModal, setDeleteModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    type: 'danger',
+    onConfirm: null
+  });
   
   useEffect(() => {
     // Get tracking method from localStorage
@@ -436,17 +437,22 @@ const LotManager = ({
   }, [pendingAcquisitions]);
   
   const loadLots = async () => {
+    if (!currentAccount || !selectedSecurity) return;
+    
     try {
-      if (!currentAccount || !selectedSecurity) return;
+      setIsLoading(true);
       
       const securityId = `${currentAccount}_${selectedSecurity.Symbol}`;
       console.log(`Loading lots for security: ${securityId}`);
       
       const securityLots = await getSecurityLots(securityId);
       setLots(securityLots || []);
-    } catch (error) {
-      console.error('Error loading lots:', error);
-      setError('Failed to load tax lots: ' + error.message);
+      setError(null);
+    } catch (err) {
+      console.error('Error loading lots:', err);
+      setError('Failed to load tax lots: ' + err.message);
+    } finally {
+      setIsLoading(false);
     }
   };
   
@@ -497,28 +503,79 @@ const LotManager = ({
   const avgCost = calculateWeightedAverageCost(lots);
   const unrealizedGain = calculateUnrealizedGainLoss(lots, selectedSecurity?.Price);
   
+  // Check for missing account - display a friendly error message
+  if (!currentAccount) {
+    return (
+      <div className="card">
+        <div className="alert alert-warning">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-yellow-800">No account selected</h3>
+              <div className="mt-2 text-sm text-yellow-700">
+                <p>Please select an account first to view and manage tax lots.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // If loading and no portfolio data yet, show a clear loading state
+  if (isLoading && (!portfolioData || portfolioData.length === 0)) {
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p className="loading-text">Loading portfolio data...</p>
+      </div>
+    );
+  }
+
+  // Show a message if there's no portfolio data
+  if (!portfolioData || portfolioData.length === 0) {
+    return (
+      <div className="card">
+        <div className="alert alert-info">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-blue-800">No portfolio data available</h3>
+              <div className="mt-2 text-sm text-blue-700">
+                <p>Please upload portfolio data first to use the lot management features.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
-      <div className="bg-white p-6 rounded-lg shadow">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-semibold">Lot Management</h1>
-          <div className="flex space-x-2">
+      <div className="card">
+        <div className="flex-between mb-6">
+          <h1 className="card-title">Lot Management</h1>
+          <div className="action-button-group">
             <button
               onClick={() => setShowSettingsModal(true)}
-              className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-700"
+              className="btn btn-primary"
             >
               Tracking Method Settings
             </button>
             
-            {/* Add button to process transactions */}
             <button
               onClick={handleProcessTransactions}
               disabled={isLoading}
-              className={`px-4 py-2 rounded-md text-sm font-medium ${
-                isLoading 
-                  ? 'bg-gray-400 text-white cursor-not-allowed' 
-                  : 'bg-green-600 text-white hover:bg-green-700'
-              }`}
+              className={`btn ${isLoading ? 'bg-gray-400 text-white cursor-not-allowed' : 'bg-green-600 text-white hover:bg-green-700'}`}
             >
               {isLoading ? 'Processing...' : 'Process Transactions'}
             </button>
@@ -527,14 +584,14 @@ const LotManager = ({
         
         {/* Display error message if there is one */}
         {error && (
-          <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded">
+          <div className="alert alert-error">
             {error}
           </div>
         )}
         
         {/* Display processing results */}
         {processResults && (
-          <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded">
+          <div className="alert alert-success">
             <p>Transaction processing complete!</p>
             <ul className="mt-2 list-disc pl-5 text-sm">
               <li>Processed {processResults.processedSymbols} securities</li>
@@ -546,8 +603,8 @@ const LotManager = ({
           </div>
         )}
         
-        <div className="mb-6">
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+        <div className="form-group">
+          <label className="form-label">
             Select Security
           </label>
           <select
@@ -557,12 +614,12 @@ const LotManager = ({
               const security = portfolioData.find(p => p.Symbol === symbol);
               setSelectedSecurity(security);
             }}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"
+            className="form-select"
           >
             <option value="">Choose a security...</option>
             {portfolioData.map(position => (
               <option key={position.Symbol} value={position.Symbol}>
-                {position.Symbol} - {position.Description}
+                {position.Symbol} - {position.Description || position.Symbol}
               </option>
             ))}
           </select>
@@ -570,24 +627,24 @@ const LotManager = ({
         
         {selectedSecurity && (
           <div>
-            <div className="bg-gray-50 p-4 rounded-lg mb-6">
-              <h2 className="text-lg font-semibold mb-2">{selectedSecurity.Symbol}</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div>
-                  <p className="text-sm text-gray-600">Total Shares</p>
-                  <p className="text-lg font-medium">{selectedSecurity['Qty (Quantity)']}</p>
+            <div className="security-panel">
+              <h2 className="security-header">{selectedSecurity.Symbol}</h2>
+              <div className="security-stats">
+                <div className="stat-item">
+                  <p className="stat-label">Total Shares</p>
+                  <p className="stat-value">{selectedSecurity['Qty (Quantity)']}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-gray-600">Current Price</p>
-                  <p className="text-lg font-medium">{formatCurrency(selectedSecurity.Price)}</p>
+                <div className="stat-item">
+                  <p className="stat-label">Current Price</p>
+                  <p className="stat-value">{formatCurrency(selectedSecurity.Price)}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-gray-600">Avg Cost/Share</p>
-                  <p className="text-lg font-medium">{formatCurrency(avgCost)}</p>
+                <div className="stat-item">
+                  <p className="stat-label">Avg Cost/Share</p>
+                  <p className="stat-value">{formatCurrency(avgCost)}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-gray-600">Unrealized Gain/Loss</p>
-                  <p className={`text-lg font-medium ${unrealizedGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                <div className="stat-item">
+                  <p className="stat-label">Unrealized Gain/Loss</p>
+                  <p className={`stat-value ${unrealizedGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                     {formatCurrency(unrealizedGain)}
                   </p>
                 </div>
@@ -595,54 +652,63 @@ const LotManager = ({
             </div>
             
             <h3 className="text-lg font-semibold mb-4">Tax Lots</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+            <div className="table-container">
+              <table className="data-table">
+                <thead className="table-header">
                   <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Acquisition Date</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Shares</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Remaining</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cost Basis</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cost/Share</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Source</th>
+                    <th className="table-header-cell">Acquisition Date</th>
+                    <th className="table-header-cell">Shares</th>
+                    <th className="table-header-cell">Remaining</th>
+                    <th className="table-header-cell">Cost Basis</th>
+                    <th className="table-header-cell">Cost/Share</th>
+                    <th className="table-header-cell">Status</th>
+                    <th className="table-header-cell">Source</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {lots.length === 0 ? (
+                <tbody className="table-body">
+                  {isLoading ? (
                     <tr>
-                      <td colSpan="7" className="px-6 py-4 text-center text-gray-500">
+                      <td colSpan="7" className="table-cell text-center py-4">
+                        <div className="flex justify-center items-center">
+                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-indigo-600 mr-2"></div>
+                          <span>Loading lot data...</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ) : lots.length === 0 ? (
+                    <tr>
+                      <td colSpan="7" className="table-cell text-center">
                         No lot information available. Try using "Process Transactions" to create lots from transaction data.
                       </td>
                     </tr>
                   ) : (
                     lots.map((lot, index) => (
-                      <tr key={lot.id || index} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      <tr key={lot.id || index} className="table-row">
+                        <td className="table-cell">
                           {formatDate(lot.acquisitionDate)}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="table-cell-numeric">
                           {lot.quantity}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="table-cell-numeric">
                           {lot.remainingQuantity}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="table-cell-numeric">
                           {formatCurrency(lot.costBasis)}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="table-cell-numeric">
                           {formatCurrency(lot.costBasis / lot.quantity)}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                            lot.status === 'OPEN' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+                        <td className="table-cell">
+                          <span className={`lot-status ${
+                            lot.status === 'OPEN' ? 'lot-status-open' : 'lot-status-closed'
                           }`}>
                             {lot.status}
                           </span>
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                            lot.isTransactionDerived ? 'bg-blue-100 text-blue-800' : 'bg-yellow-100 text-yellow-800'
+                        <td className="table-cell">
+                          <span className={`lot-source ${
+                            lot.isTransactionDerived ? 'lot-source-transaction' : 'lot-source-manual'
                           }`}>
                             {lot.isTransactionDerived ? 'Transaction' : 'Manual Entry'}
                           </span>
@@ -673,6 +739,16 @@ const LotManager = ({
         changes={pendingAcquisitions}
         possibleTickerChanges={possibleTickerChanges}
         transactionData={transactionData}
+      />
+      
+      {/* Confirmation Modal */}
+      <DeleteConfirmationModal
+        isOpen={deleteModal.isOpen}
+        onClose={() => setDeleteModal({ ...deleteModal, isOpen: false })}
+        onConfirm={deleteModal.onConfirm}
+        title={deleteModal.title}
+        message={deleteModal.message}
+        type={deleteModal.type}
       />
     </div>
   );

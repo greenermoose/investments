@@ -1,5 +1,5 @@
 // components/PortfolioDisplay.jsx
-// Combines PortfolioOverview.jsx and PortfolioPositions.jsx
+// Modified to add a separate Top Holdings tab
 
 import React, { useState } from 'react';
 import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
@@ -7,7 +7,7 @@ import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
-  const [activeView, setActiveView] = useState('overview'); // 'overview' or 'positions'
+  const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
 
@@ -51,8 +51,15 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
     if (!filterText) return getSortedData();
     
     return getSortedData().filter(position => {
-      return position['Symbol'].toLowerCase().includes(filterText.toLowerCase()) ||
-             (position['Description'] && position['Description'].toLowerCase().includes(filterText.toLowerCase()));
+      // Check if Symbol is a string before calling toLowerCase()
+      const symbolMatch = typeof position['Symbol'] === 'string' && 
+        position['Symbol'].toLowerCase().includes(filterText.toLowerCase());
+      
+      // Check if Description is a string before calling toLowerCase()
+      const descriptionMatch = typeof position['Description'] === 'string' && 
+        position['Description'].toLowerCase().includes(filterText.toLowerCase());
+      
+      return symbolMatch || descriptionMatch;
     });
   };
   
@@ -179,46 +186,41 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
               : null}
           </div>
         </div>
-        
-        {/* Top Holdings */}
-        <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-semibold">Top Holdings</h2>
-            <button 
-              onClick={() => setActiveView('positions')}
-              className="text-indigo-600 hover:text-indigo-800 text-sm font-medium"
-            >
-              View All Positions →
-            </button>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Symbol</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Market Value</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">% of Portfolio</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Return</th>
+      </div>
+    );
+  };
+  
+  const renderTopHoldingsContent = () => {
+    return (
+      <div className="bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-4">Top Holdings</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Symbol</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Market Value</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">% of Portfolio</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Return</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {getTopHoldings().map((position, index) => (
+                <tr key={index} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">{position.Symbol}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{position.Description}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{formatCurrency(position['Mkt Val (Market Value)'])}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {formatPercent((position['Mkt Val (Market Value)'] / portfolioStats.totalValue) * 100)}
+                  </td>
+                  <td className={`px-6 py-4 whitespace-nowrap text-sm font-medium ${typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                    {typeof position['Gain % (Gain/Loss %)'] === 'number' ? formatPercent(position['Gain % (Gain/Loss %)']) : position['Gain % (Gain/Loss %)']}
+                  </td>
                 </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {getTopHoldings().map((position, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">{position.Symbol}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{position.Description}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{formatCurrency(position['Mkt Val (Market Value)'])}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {formatPercent((position['Mkt Val (Market Value)'] / portfolioStats.totalValue) * 100)}
-                    </td>
-                    <td className={`px-6 py-4 whitespace-nowrap text-sm font-medium ${typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                      {typeof position['Gain % (Gain/Loss %)'] === 'number' ? formatPercent(position['Gain % (Gain/Loss %)']) : position['Gain % (Gain/Loss %)']}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     );
@@ -230,12 +232,6 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <h2 className="text-xl font-semibold mr-4">All Positions</h2>
-            <button 
-              onClick={() => setActiveView('overview')}
-              className="text-indigo-600 hover:text-indigo-800 text-sm font-medium"
-            >
-              ← Back to Overview
-            </button>
           </div>
           <div className="flex space-x-2">
             <input
@@ -341,7 +337,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
 
   return (
     <div>
-      {/* Tab Selector */}
+      {/* Tab Selector - Updated to include Top Holdings tab */}
       <div className="flex mb-4 border-b border-gray-200">
         <button
           className={`py-2 px-4 font-medium text-sm mr-4 ${
@@ -352,6 +348,16 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
           onClick={() => setActiveView('overview')}
         >
           Overview
+        </button>
+        <button
+          className={`py-2 px-4 font-medium text-sm mr-4 ${
+            activeView === 'topHoldings' 
+            ? 'text-indigo-600 border-b-2 border-indigo-600' 
+            : 'text-gray-500 hover:text-gray-700'
+          }`}
+          onClick={() => setActiveView('topHoldings')}
+        >
+          Top Holdings
         </button>
         <button
           className={`py-2 px-4 font-medium text-sm ${
@@ -366,7 +372,9 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
       </div>
 
       {/* Content */}
-      {activeView === 'overview' ? renderOverviewContent() : renderPositionsContent()}
+      {activeView === 'overview' && renderOverviewContent()}
+      {activeView === 'topHoldings' && renderTopHoldingsContent()}
+      {activeView === 'positions' && renderPositionsContent()}
     </div>
   );
 };

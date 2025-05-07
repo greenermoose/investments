@@ -1,3 +1,7 @@
+### 0.3.23
+
+- Top Holdings a separate tab
+
 ### 0.3.22
 
 - transaction processing ignores duplicates

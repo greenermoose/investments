@@ -1,3 +1,7 @@
+### 0.3.24
+
+- new style sheet to reduce size of components
+
 ### 0.3.23
 
 - Top Holdings a separate tab

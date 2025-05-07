@@ -1,10 +1,12 @@
 // components/PortfolioDisplay.jsx
-// Modified to add a separate Top Holdings tab
+// Modified to add a separate Top Holdings tab and use custom CSS classes
+// This consolidates lengthy inline Tailwind classes into meaningful semantic classes
 
 import React, { useState } from 'react';
 import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
+import '../styles/portfolio.css';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
@@ -120,40 +122,40 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
 
   const renderOverviewContent = () => {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="two-column-grid">
         {/* Portfolio Summary Card */}
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Portfolio Summary</h2>
-          <div className="grid grid-cols-2 gap-4">
+        <div className="card">
+          <h2 className="card-title">Portfolio Summary</h2>
+          <div className="stats-grid">
             <div>
-              <p className="text-gray-500">Total Value</p>
-              <p className="text-2xl font-bold text-indigo-600">
+              <p className="stat-label">Total Value</p>
+              <p className="stat-value text-indigo-600">
                 {formatCurrency(portfolioStats.totalValue)}
               </p>
             </div>
             <div>
-              <p className="text-gray-500">Total Gain/Loss</p>
-              <p className={`text-2xl font-bold ${portfolioStats.totalGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+              <p className="stat-label">Total Gain/Loss</p>
+              <p className={portfolioStats.totalGain >= 0 ? "stat-value-positive" : "stat-value-negative"}>
                 {formatCurrency(portfolioStats.totalGain)}
               </p>
             </div>
             <div>
-              <p className="text-gray-500">Return</p>
-              <p className={`text-2xl font-bold ${portfolioStats.gainPercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+              <p className="stat-label">Return</p>
+              <p className={portfolioStats.gainPercent >= 0 ? "stat-value-positive" : "stat-value-negative"}>
                 {formatPercent(portfolioStats.gainPercent)}
               </p>
             </div>
             <div>
-              <p className="text-gray-500">Total Positions</p>
-              <p className="text-2xl font-bold">{portfolioData.length}</p>
+              <p className="stat-label">Total Positions</p>
+              <p className="stat-value">{portfolioData.length}</p>
             </div>
           </div>
         </div>
         
         {/* Asset Allocation Bar Chart */}
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Asset Allocation by Security</h2>
-          <div className="h-72 mt-2">
+        <div className="card">
+          <h2 className="card-title">Asset Allocation by Security</h2>
+          <div className="chart-container">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={portfolioStats.assetAllocation.slice(0, 10)} // Show top 10 holdings
@@ -180,7 +182,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className="mt-2 text-xs text-gray-500 text-right">
+          <div className="chart-footnote">
             {portfolioStats.assetAllocation.length > 10 ? 
               `* Showing top 10 of ${portfolioStats.assetAllocation.length} securities` 
               : null}
@@ -192,29 +194,29 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
   
   const renderTopHoldingsContent = () => {
     return (
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Top Holdings</h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
+      <div className="card">
+        <h2 className="card-title">Top Holdings</h2>
+        <div className="table-container">
+          <table className="data-table">
+            <thead className="table-header">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Symbol</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Market Value</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">% of Portfolio</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Return</th>
+                <th className="table-header-cell">Symbol</th>
+                <th className="table-header-cell">Description</th>
+                <th className="table-header-cell">Market Value</th>
+                <th className="table-header-cell">% of Portfolio</th>
+                <th className="table-header-cell">Return</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="table-body">
               {getTopHoldings().map((position, index) => (
-                <tr key={index} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">{position.Symbol}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{position.Description}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{formatCurrency(position['Mkt Val (Market Value)'])}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <tr key={index} className="table-row">
+                  <td className="table-cell-symbol">{position.Symbol}</td>
+                  <td className="table-cell">{position.Description}</td>
+                  <td className="table-cell-numeric">{formatCurrency(position['Mkt Val (Market Value)'])}</td>
+                  <td className="table-cell-numeric">
                     {formatPercent((position['Mkt Val (Market Value)'] / portfolioStats.totalValue) * 100)}
                   </td>
-                  <td className={`px-6 py-4 whitespace-nowrap text-sm font-medium ${typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                  <td className={typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
                     {typeof position['Gain % (Gain/Loss %)'] === 'number' ? formatPercent(position['Gain % (Gain/Loss %)']) : position['Gain % (Gain/Loss %)']}
                   </td>
                 </tr>
@@ -228,102 +230,102 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
 
   const renderPositionsContent = () => {
     return (
-      <div className="bg-white p-6 rounded-lg shadow">
+      <div className="card">
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
-            <h2 className="text-xl font-semibold mr-4">All Positions</h2>
+            <h2 className="card-title mr-4">All Positions</h2>
           </div>
           <div className="flex space-x-2">
             <input
               type="text"
               placeholder="Filter by symbol or name..."
-              className="px-3 py-2 border border-gray-300 rounded-md"
+              className="text-input"
               value={filterText}
               onChange={(e) => setFilterText(e.target.value)}
             />
             <button
-              className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
+              className="btn btn-primary"
               onClick={exportPortfolioCSV}
             >
               Export CSV
             </button>
           </div>
         </div>
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
+        <div className="table-container">
+          <table className="data-table">
+            <thead className="table-header">
               <tr>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Symbol')}
                 >
                   Symbol {sortConfig.key === 'Symbol' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Description')}
                 >
                   Description {sortConfig.key === 'Description' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Qty (Quantity)')}
                 >
                   Quantity {sortConfig.key === 'Qty (Quantity)' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Price')}
                 >
                   Price {sortConfig.key === 'Price' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Mkt Val (Market Value)')}
                 >
                   Market Value {sortConfig.key === 'Mkt Val (Market Value)' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Cost Basis')}
                 >
                   Cost Basis {sortConfig.key === 'Cost Basis' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Gain $ (Gain/Loss $)')}
                 >
                   Gain/Loss $ {sortConfig.key === 'Gain $ (Gain/Loss $)' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
                 <th 
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                  className="table-header-cell-sortable"
                   onClick={() => requestSort('Gain % (Gain/Loss %)')}
                 >
                   Gain/Loss % {sortConfig.key === 'Gain % (Gain/Loss %)' && (sortConfig.direction === 'ascending' ? '↑' : '↓')}
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="table-body">
               {getFilteredData().map((position, index) => (
-                <tr key={index} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">{position.Symbol}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{position.Description}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <tr key={index} className="table-row">
+                  <td className="table-cell-symbol">{position.Symbol}</td>
+                  <td className="table-cell">{position.Description}</td>
+                  <td className="table-cell-numeric">
                     {formatValue(position['Qty (Quantity)'], 'number')}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <td className="table-cell-numeric">
                     {formatValue(position.Price, 'currency')}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <td className="table-cell-numeric">
                     {formatValue(position['Mkt Val (Market Value)'], 'currency')}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <td className="table-cell-numeric">
                     {formatValue(position['Cost Basis'], 'currency')}
                   </td>
-                  <td className={`px-6 py-4 whitespace-nowrap text-sm ${typeof position['Gain $ (Gain/Loss $)'] === 'number' && position['Gain $ (Gain/Loss $)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                  <td className={typeof position['Gain $ (Gain/Loss $)'] === 'number' && position['Gain $ (Gain/Loss $)'] >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
                     {formatValue(position['Gain $ (Gain/Loss $)'], 'currency')}
                   </td>
-                  <td className={`px-6 py-4 whitespace-nowrap text-sm ${typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                  <td className={typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
                     {formatValue(position['Gain % (Gain/Loss %)'], 'percent')}
                   </td>
                 </tr>
@@ -338,33 +340,21 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
   return (
     <div>
       {/* Tab Selector - Updated to include Top Holdings tab */}
-      <div className="flex mb-4 border-b border-gray-200">
+      <div className="tab-container">
         <button
-          className={`py-2 px-4 font-medium text-sm mr-4 ${
-            activeView === 'overview' 
-            ? 'text-indigo-600 border-b-2 border-indigo-600' 
-            : 'text-gray-500 hover:text-gray-700'
-          }`}
+          className={activeView === 'overview' ? 'tab-active' : 'tab'}
           onClick={() => setActiveView('overview')}
         >
           Overview
         </button>
         <button
-          className={`py-2 px-4 font-medium text-sm mr-4 ${
-            activeView === 'topHoldings' 
-            ? 'text-indigo-600 border-b-2 border-indigo-600' 
-            : 'text-gray-500 hover:text-gray-700'
-          }`}
+          className={activeView === 'topHoldings' ? 'tab-active' : 'tab'}
           onClick={() => setActiveView('topHoldings')}
         >
           Top Holdings
         </button>
         <button
-          className={`py-2 px-4 font-medium text-sm ${
-            activeView === 'positions' 
-            ? 'text-indigo-600 border-b-2 border-indigo-600' 
-            : 'text-gray-500 hover:text-gray-700'
-          }`}
+          className={activeView === 'positions' ? 'tab-active' : 'tab'}
           onClick={() => setActiveView('positions')}
         >
           All Positions

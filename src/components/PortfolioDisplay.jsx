@@ -1,6 +1,4 @@
 // components/PortfolioDisplay.jsx
-// Modified to add a separate Top Holdings tab and use custom CSS classes
-// This consolidates lengthy inline Tailwind classes into meaningful semantic classes
 
 import React, { useState } from 'react';
 import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
@@ -8,7 +6,7 @@ import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
 import '../styles/portfolio.css';
 
-const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
+const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
@@ -120,6 +118,13 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
     return null;
   };
 
+  // Handle symbol click
+  const handleSymbolClick = (symbol) => {
+    if (onSymbolClick) {
+      onSymbolClick(symbol);
+    }
+  };
+
   const renderOverviewContent = () => {
     return (
       <div className="two-column-grid">
@@ -169,11 +174,17 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
                   dataKey="name"
                   width={60}
                   tick={{ fontSize: 12 }}
+                  tickFormatter={(symbol) => {
+                    // Make clickable by adding a special class
+                    return symbol;
+                  }}
                 />
                 <Tooltip content={<CustomBarTooltip />} />
                 <Bar 
                   dataKey="value" 
                   name="Market Value"
+                  onClick={(data) => handleSymbolClick(data.name)}
+                  cursor="pointer"
                 >
                   {portfolioStats.assetAllocation.slice(0, 10).map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -210,7 +221,14 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
             <tbody className="table-body">
               {getTopHoldings().map((position, index) => (
                 <tr key={index} className="table-row">
-                  <td className="table-cell-symbol">{position.Symbol}</td>
+                  <td className="table-cell-symbol">
+                    <button 
+                      className="text-indigo-600 hover:text-indigo-800 hover:underline focus:outline-none"
+                      onClick={() => handleSymbolClick(position.Symbol)}
+                    >
+                      {position.Symbol}
+                    </button>
+                  </td>
                   <td className="table-cell">{position.Description}</td>
                   <td className="table-cell-numeric">{formatCurrency(position['Mkt Val (Market Value)'])}</td>
                   <td className="table-cell-numeric">
@@ -308,7 +326,14 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats }) => {
             <tbody className="table-body">
               {getFilteredData().map((position, index) => (
                 <tr key={index} className="table-row">
-                  <td className="table-cell-symbol">{position.Symbol}</td>
+                  <td className="table-cell-symbol">
+                    <button 
+                      className="text-indigo-600 hover:text-indigo-800 hover:underline focus:outline-none"
+                      onClick={() => handleSymbolClick(position.Symbol)}
+                    >
+                      {position.Symbol}
+                    </button>
+                  </td>
                   <td className="table-cell">{position.Description}</td>
                   <td className="table-cell-numeric">
                     {formatValue(position['Qty (Quantity)'], 'number')}

@@ -1,3 +1,7 @@
+### 0.3.28
+
+- SecurityDetail
+
 ### 0.3.27
 
 - refactored PortfolioPerformance

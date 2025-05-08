@@ -18,6 +18,7 @@ import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import PortfolioTabs from './PortfolioTabs';
 import StorageManager from './StorageManager';
+import SecurityDetail from './SecurityDetail';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -30,6 +31,7 @@ const PortfolioManager = () => {
   const account = useAccount();
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
+  const [selectedSymbol, setSelectedSymbol] = useState(null);
 
   // File upload hook
   const fileUpload = useFileUpload(
@@ -117,8 +119,32 @@ const PortfolioManager = () => {
     } : { csv: 0, json: 0, total: 0 };
   };
 
+  // Handle symbol click to show security details
+  const handleSymbolClick = (symbol) => {
+    setSelectedSymbol(symbol);
+    // Set a custom tab for security details
+    changeTab('security-detail');
+  };
+
+  // Handle returning from security detail view
+  const handleBackFromSecurityDetail = () => {
+    setSelectedSymbol(null);
+    changeTab('portfolio');
+  };
+
   // Render tab content based on active tab
   const renderTabContent = () => {
+    // Special case for security detail
+    if (activeTab === 'security-detail' && selectedSymbol) {
+      return (
+        <SecurityDetail 
+          symbol={selectedSymbol}
+          account={currentAccount || selectedAccount}
+          onBack={handleBackFromSecurityDetail}
+        />
+      );
+    }
+
     switch (activeTab) {
       case 'account-management':
         return <AccountManagement 
@@ -127,7 +153,7 @@ const PortfolioManager = () => {
                  onDataChange={refreshData}
                />;
       case 'portfolio':
-        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
+        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} onSymbolClick={handleSymbolClick} />;
       case 'transactions':
         return <TransactionViewer 
                  currentAccount={currentAccount || selectedAccount} 

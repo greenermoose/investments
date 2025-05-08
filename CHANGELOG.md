@@ -1,3 +1,7 @@
+### 0.3.27
+
+- refactored PortfolioPerformance
+
 ### 0.3.26
 
 - refactored LotManager

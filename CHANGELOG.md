@@ -1,3 +1,7 @@
+### 0.3.26
+
+- refactored LotManager
+
 ### 0.3.25
 
 - updates to LotManager

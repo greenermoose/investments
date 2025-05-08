@@ -1,61 +1,19 @@
-// components/AcquisitionModal.jsx revision: 2
+// src/components/AcquisitionModal.jsx - Refactored
 import React, { useState } from 'react';
 import { formatDate } from '../utils/dataUtils';
+import LotStatusIndicator from './LotStatusIndicator';
 
-const StatusIndicator = ({ type, tooltipText }) => {
-  const configs = {
-    TRANSACTION_VERIFIED: {
-      color: 'green',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      tooltip: 'Verified from transaction history'
-    },
-    INTERPOLATED: {
-      color: 'blue',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      tooltip: 'Interpolated from transaction patterns'
-    },
-    MANUAL_REQUIRED: {
-      color: 'red',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      tooltip: 'Manual entry required'
-    },
-    TICKER_CHANGE: {
-      color: 'orange',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-        </svg>
-      ),
-      tooltip: 'Ticker symbol change detected'
-    }
-  };
-
-  const config = configs[type] || configs.MANUAL_REQUIRED;
-
-  return (
-    <div className="relative group inline-flex items-center">
-      <div className={`text-${config.color}-600`}>
-        {config.icon}
-      </div>
-      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 text-xs text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-        {tooltipText || config.tooltip}
-      </div>
-    </div>
-  );
-};
-
+/**
+ * Modal for handling new security acquisitions
+ * Helps users provide acquisition dates for new securities or handle ticker symbol changes
+ * 
+ * @param {boolean} isOpen - Whether the modal is open
+ * @param {function} onClose - Function to call when the modal is closed
+ * @param {function} onSubmit - Function to call when an acquisition is submitted
+ * @param {Array} changes - Array of changes to process
+ * @param {Array} possibleTickerChanges - Array of possible ticker symbol changes
+ * @param {Object} transactionData - Transaction data for context
+ */
 const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerChanges, transactionData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [acquisitionDate, setAcquisitionDate] = useState('');
@@ -71,9 +29,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
   // Get transaction-derived information for current security
   const getTransactionInfo = () => {
     if (!transactionData || !currentChange) return null;
-    
-    const symbolData = transactionData[currentChange.symbol];
-    return symbolData;
+    return transactionData[currentChange.symbol];
   };
   
   const getStatusIndicator = () => {
@@ -164,7 +120,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
                 {formatDate(txInfo.acquisitionDate)}
               </span>
               {txInfo.isInterpolated && (
-                <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
                   Interpolated
                 </span>
               )}
@@ -205,7 +161,7 @@ const AcquisitionModal = ({ isOpen, onClose, onSubmit, changes, possibleTickerCh
             <h2 className="text-xl font-semibold mr-3">
               New Security Acquisition ({currentIndex + 1} of {changes.length})
             </h2>
-            <StatusIndicator type={getStatusIndicator()} />
+            <LotStatusIndicator type={getStatusIndicator()} />
           </div>
         </div>
         

@@ -1,3 +1,7 @@
+### 0.3.39
+
+- FileManager semantic CSS
+
 ### 0.3.38
 
 - database debugger

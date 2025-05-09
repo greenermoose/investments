@@ -1,3 +1,7 @@
+### 0.3.36
+
+- refactor portfolioStorage
+
 ### 0.3.35
 
 - refactored StorageManager

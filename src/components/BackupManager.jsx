@@ -1,6 +1,6 @@
 // components/BackupManager.jsx revision: 1
 import React, { useState } from 'react';
-import { exportAllData, importAllData } from '../utils/portfolioStorage';
+import { exportAllData, importAllData } from '../utils/databaseUtils';
 
 const BackupManager = ({ onImportComplete }) => {
   const [isExporting, setIsExporting] = useState(false);

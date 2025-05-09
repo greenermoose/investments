@@ -2,14 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 
+  purgeAccountData,
+  getAccountSnapshots,
+} from '../utils/portfolioStorage';
+import {
+  initializeDB,
   exportAllData, 
   importAllData, 
-  purgeAccountData,
-  purgeAllData,
-  getAccountSnapshots,
-  getTransactionsByAccount,
-  initializeDB
-} from '../utils/portfolioStorage';
+  purgeAllData
+} from '../utils/databaseUtils';
 import FileManager from './FileManager';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import { formatDate } from '../utils/dataUtils';

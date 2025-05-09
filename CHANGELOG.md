@@ -1,3 +1,7 @@
+### 0.3.29
+
+- remove Upload Files card
+
 ### 0.3.28
 
 - SecurityDetail

@@ -265,33 +265,6 @@ const PortfolioManager = () => {
           </div>
         ) : isDataLoaded ? (
           <>
-            {/* Quick upload section */}
-            <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-              <div className="flex justify-between items-center">
-                <h2 className="text-lg font-medium">Upload Files</h2>
-                <div className="flex space-x-2">
-                  <button 
-                    className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center"
-                    onClick={handleCsvUpload}
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                    </svg>
-                    Portfolio CSV
-                  </button>
-                  <button 
-                    className="bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center"
-                    onClick={handleJsonUpload}
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                    </svg>
-                    Transaction JSON
-                  </button>
-                </div>
-              </div>
-            </div>
-            
             {/* Simplified tabs */}
             <PortfolioTabs 
               tabs={coreTabs}

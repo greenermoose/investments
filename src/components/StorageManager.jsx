@@ -14,6 +14,7 @@ import {
 import FileManager from './FileManager';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import { formatDate } from '../utils/dataUtils';
+import DatabaseDebugger from './DatabaseDebugger';
 
 const StorageManager = ({ onDataChange }) => {
   const [accounts, setAccounts] = useState([]);
@@ -540,6 +541,11 @@ const StorageManager = ({ onDataChange }) => {
         </div>
       )}
       
+      <div className="mt-8">
+        <h3 className="text-lg font-semibold mb-4">Database Diagnostics</h3>
+        <DatabaseDebugger />
+      </div>
+
       <div className="info-box warning">
         <h3 className="info-title">About Local Storage</h3>
         <p className="info-text">

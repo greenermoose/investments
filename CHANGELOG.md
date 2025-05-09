@@ -1,3 +1,7 @@
+### 0.3.38
+
+- database debugger
+
 ### 0.3.37
 
 - export symbols from databaseUtils

@@ -1,3 +1,7 @@
+### 0.3.32
+
+- semantic CSS in Security Detail and Transaction Viewer
+
 ### 0.3.31
 
 - more fixes to Security Detail

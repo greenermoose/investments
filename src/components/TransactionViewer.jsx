@@ -135,34 +135,32 @@ const TransactionViewer = ({
   const getCategoryBadgeClass = (category) => {
     switch (category) {
       case TransactionCategories.ACQUISITION:
-        return 'bg-green-100 text-green-800';
+        return 'badge badge-green';
       case TransactionCategories.DISPOSITION:
-        return 'bg-red-100 text-red-800';
+        return 'badge badge-red';
       case TransactionCategories.CORPORATE_ACTION:
-        return 'bg-purple-100 text-purple-800';
+        return 'badge badge-blue';
       default:
-        return 'bg-blue-100 text-blue-800';
+        return 'badge badge-gray';
     }
   };
 
   if (isLoading) {
     return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-indigo-600"></div>
-        <p className="ml-3 text-xl text-gray-700">Loading transaction data...</p>
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p className="loading-text">Loading transaction data...</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-        <div className="flex">
-          <div className="py-1">
-            <svg className="fill-current h-6 w-6 text-red-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
-            </svg>
-          </div>
+      <div className="alert alert-error">
+        <div className="flex-start">
+          <svg className="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+            <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
+          </svg>
           <div>
             <p className="font-bold">Error Loading Transactions</p>
             <p>{error}</p>
@@ -176,8 +174,8 @@ const TransactionViewer = ({
 
   if (sortedTransactions.length === 0) {
     return (
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Transaction History</h2>
+      <div className="card">
+        <h2 className="card-title">Transaction History</h2>
         <div className="bg-gray-50 rounded-lg p-8 text-center">
           <p className="text-gray-500">No transactions found for this account</p>
           {filter.symbol || filter.category || filter.dateRange.from || filter.dateRange.to ? (
@@ -197,17 +195,17 @@ const TransactionViewer = ({
   const uniqueSymbols = [...new Set(transactions.map(t => t.symbol))].filter(Boolean);
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow">
-      <h2 className="text-xl font-semibold mb-4">Transaction History</h2>
+    <div className="card">
+      <h2 className="card-title">Transaction History</h2>
       
       {/* Filters */}
       <div className="flex flex-wrap gap-3 mb-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Symbol</label>
+          <label className="form-label">Symbol</label>
           <select
             value={filter.symbol}
             onChange={(e) => handleFilterChange('symbol', e.target.value)}
-            className="block w-32 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            className="form-select"
           >
             <option value="">All symbols</option>
             {uniqueSymbols.map(symbol => (
@@ -217,11 +215,11 @@ const TransactionViewer = ({
         </div>
         
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
+          <label className="form-label">Category</label>
           <select
             value={filter.category}
             onChange={(e) => handleFilterChange('category', e.target.value)}
-            className="block w-40 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            className="form-select"
           >
             <option value="">All categories</option>
             <option value={TransactionCategories.ACQUISITION}>Acquisitions</option>
@@ -232,22 +230,22 @@ const TransactionViewer = ({
         </div>
         
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">From Date</label>
+          <label className="form-label">From Date</label>
           <input
             type="date"
             value={filter.dateRange.from}
             onChange={(e) => handleFilterChange('dateRange', { ...filter.dateRange, from: e.target.value })}
-            className="block w-40 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            className="form-select"
           />
         </div>
         
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">To Date</label>
+          <label className="form-label">To Date</label>
           <input
             type="date"
             value={filter.dateRange.to}
             onChange={(e) => handleFilterChange('dateRange', { ...filter.dateRange, to: e.target.value })}
-            className="block w-40 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            className="form-select"
           />
         </div>
         
@@ -264,74 +262,72 @@ const TransactionViewer = ({
       </div>
       
       {/* Transaction Table */}
-      <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+      <div className="table-container">
+        <table className="data-table">
+          <thead className="table-header">
             <tr>
               <th 
                 scope="col" 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="table-header-cell-sortable"
                 onClick={() => requestSort('date')}
               >
                 Date {sortConfig.key === 'date' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
               <th 
                 scope="col" 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="table-header-cell-sortable"
                 onClick={() => requestSort('symbol')}
               >
                 Symbol {sortConfig.key === 'symbol' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="table-header-cell">
                 Action
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="table-header-cell">
                 Quantity
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="table-header-cell">
                 Price
               </th>
               <th 
                 scope="col" 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="table-header-cell-sortable"
                 onClick={() => requestSort('amount')}
               >
                 Amount {sortConfig.key === 'amount' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
               {onTransactionEdit && (
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className="table-header-cell">
                   Actions
                 </th>
               )}
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="table-body">
             {sortedTransactions.map((transaction) => (
-              <tr key={transaction.id} className="hover:bg-gray-50">
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              <tr key={transaction.id} className="table-row">
+                <td className="table-cell">
                   {transaction.date ? formatDate(transaction.date) : 'N/A'}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600">
+                <td className="table-cell-symbol">
                   {transaction.symbol}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getCategoryBadgeClass(transaction.category)}`}>
+                <td className="table-cell">
+                  <span className={getCategoryBadgeClass(transaction.category)}>
                     {transaction.action}
                   </span>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td className="table-cell-numeric">
                   {transaction.quantity}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td className="table-cell-numeric">
                   {formatCurrency(transaction.price)}
                 </td>
-                <td className={`px-6 py-4 whitespace-nowrap text-sm ${
-                  transaction.amount >= 0 ? 'text-green-600' : 'text-red-600'
-                }`}>
+                <td className={transaction.amount >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
                   {formatCurrency(transaction.amount)}
                 </td>
                 {onTransactionEdit && (
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <td className="table-cell">
                     <button
                       onClick={() => onTransactionEdit(transaction)}
                       className="text-indigo-600 hover:text-indigo-900"

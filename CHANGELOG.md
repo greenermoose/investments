@@ -1,3 +1,7 @@
+### 0.3.34
+
+- StorageManager
+
 ### 0.3.33
 
 - fileStorage (incomplete)

@@ -1,4 +1,4 @@
-// src/components/StorageManager.jsx
+// src/components/StorageManager.jsx (Completed)
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 
@@ -10,13 +10,11 @@ import {
   getTransactionsByAccount,
   initializeDB
 } from '../utils/portfolioStorage';
-import { formatDate } from '../utils/dataUtils';
+import FileManager from './FileManager';
+import BackupManager from './BackupManager';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
+import { formatDate } from '../utils/dataUtils';
 
-/**
- * Component for managing local data storage
- * Allows viewing, purging, and backing up data stored in IndexedDB
- */
 const StorageManager = ({ onDataChange }) => {
   const [accounts, setAccounts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +29,7 @@ const StorageManager = ({ onDataChange }) => {
     type: 'danger',
     onConfirm: null
   });
+  const [activeSection, setActiveSection] = useState('files'); // 'files', 'accounts', 'backup'
 
   // Load accounts and storage statistics
   useEffect(() => {
@@ -224,7 +223,7 @@ const StorageManager = ({ onDataChange }) => {
     
     reader.readAsText(file);
   };
-  
+
   // Purge data for a specific account
   const handlePurgeAccount = async (account) => {
     // Show confirmation dialog
@@ -303,111 +302,56 @@ const StorageManager = ({ onDataChange }) => {
       setIsLoading(false);
     }
   };
-  
-  if (isLoading && accounts.length === 0 && allTransactions.length === 0) {
+
+  // Render tab navigation
+  const renderTabNavigation = () => {
     return (
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Storage Manager</h2>
-        <div className="flex justify-center items-center p-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
-          <p className="ml-3">Loading data...</p>
-        </div>
+      <div className="mb-6 border-b border-gray-200">
+        <ul className="flex flex-wrap -mb-px">
+          <li className="mr-2">
+            <button
+              className={`inline-block p-4 rounded-t-lg ${
+                activeSection === 'files'
+                  ? 'border-b-2 border-indigo-600 text-indigo-600'
+                  : 'hover:text-gray-600 hover:border-gray-300'
+              }`}
+              onClick={() => setActiveSection('files')}
+            >
+              File Manager
+            </button>
+          </li>
+          <li className="mr-2">
+            <button
+              className={`inline-block p-4 rounded-t-lg ${
+                activeSection === 'accounts'
+                  ? 'border-b-2 border-indigo-600 text-indigo-600'
+                  : 'hover:text-gray-600 hover:border-gray-300'
+              }`}
+              onClick={() => setActiveSection('accounts')}
+            >
+              Account Data
+            </button>
+          </li>
+          <li className="mr-2">
+            <button
+              className={`inline-block p-4 rounded-t-lg ${
+                activeSection === 'backup'
+                  ? 'border-b-2 border-indigo-600 text-indigo-600'
+                  : 'hover:text-gray-600 hover:border-gray-300'
+              }`}
+              onClick={() => setActiveSection('backup')}
+            >
+              Backup & Restore
+            </button>
+          </li>
+        </ul>
       </div>
     );
-  }
+  };
 
-  return (
-    <div className="bg-white p-6 rounded-lg shadow">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Storage Manager</h2>
-        <button
-          onClick={handleRefresh}
-          disabled={isLoading}
-          className="px-3 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 text-sm"
-        >
-          Refresh
-        </button>
-      </div>
-      
-      {/* Alerts */}
-      {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded">
-          {error}
-        </div>
-      )}
-      
-      {success && (
-        <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded">
-          {success}
-        </div>
-      )}
-      
-      {/* Storage Statistics */}
-      <div className="mb-6">
-        <h3 className="text-lg font-medium mb-3">Storage Statistics</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-indigo-50 p-4 rounded-lg">
-            <h4 className="text-sm text-indigo-700 font-medium">Accounts</h4>
-            <p className="text-2xl font-bold text-indigo-900">{storageStats.accounts || 0}</p>
-          </div>
-          <div className="bg-blue-50 p-4 rounded-lg">
-            <h4 className="text-sm text-blue-700 font-medium">Snapshots</h4>
-            <p className="text-2xl font-bold text-blue-900">{storageStats.totalSnapshots || 0}</p>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h4 className="text-sm text-green-700 font-medium">Transactions</h4>
-            <p className="text-2xl font-bold text-green-900">{storageStats.totalTransactions || 0}</p>
-            {allTransactions.length > 0 && (
-              <p className="text-xs text-green-700 mt-1">
-                ({allTransactions.filter(t => !t.account || t.account === 'Unknown').length} unassigned)
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
-      
-      {/* Import/Export Section */}
-      <div className="mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
-        <h3 className="text-lg font-medium mb-3">Backup & Restore</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="text-sm font-medium text-gray-700 mb-2">Export All Data</h4>
-            <p className="text-sm text-gray-500 mb-2">
-              Download all portfolio data, snapshots, and transactions as a single JSON file.
-            </p>
-            <button
-              onClick={handleExportAll}
-              disabled={isLoading}
-              className={`px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-            >
-              Export All Data
-            </button>
-          </div>
-          
-          <div>
-            <h4 className="text-sm font-medium text-gray-700 mb-2">Import Data</h4>
-            <p className="text-sm text-gray-500 mb-2">
-              Restore your portfolio data from a previously exported backup file.
-            </p>
-            <label
-              htmlFor="import-file"
-              className={`inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors cursor-pointer ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-            >
-              Import Data
-              <input
-                id="import-file"
-                type="file"
-                accept=".json"
-                onChange={handleImport}
-                disabled={isLoading}
-                className="hidden"
-              />
-            </label>
-          </div>
-        </div>
-      </div>
-      
-      {/* Account Management */}
+  // Render accounts section
+  const renderAccountsSection = () => {
+    return (
       <div className="mb-6">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-lg font-medium">Account Data Management</h3>
@@ -486,9 +430,147 @@ const StorageManager = ({ onDataChange }) => {
           </div>
         )}
       </div>
+    );
+  };
+
+  // Render backup section
+  const renderBackupSection = () => {
+    return (
+      <div className="bg-white p-6 rounded-lg shadow mb-6">
+        <h3 className="text-lg font-medium mb-4">Backup & Restore</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+            <h4 className="text-md font-medium mb-2">Export All Data</h4>
+            <p className="text-sm text-gray-600 mb-4">
+              Download all your portfolio data, snapshots, and transactions as a single JSON file for backup purposes.
+            </p>
+            <button
+              onClick={handleExportAll}
+              disabled={isLoading}
+              className={`inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
+                isLoading 
+                  ? 'bg-indigo-400 cursor-not-allowed' 
+                  : 'bg-indigo-600 hover:bg-indigo-700'
+              }`}
+            >
+              {isLoading ? 'Exporting...' : 'Export All Data'}
+            </button>
+          </div>
+          
+          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+            <h4 className="text-md font-medium mb-2">Import Data</h4>
+            <p className="text-sm text-gray-600 mb-4">
+              Restore your portfolio data from a previously exported backup file.
+            </p>
+            <div className="relative">
+              <input
+                type="file"
+                accept=".json"
+                onChange={handleImport}
+                className="hidden"
+                id="import-file"
+                disabled={isLoading}
+              />
+              <label
+                htmlFor="import-file"
+                className={`inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 ${
+                  isLoading 
+                    ? 'bg-gray-100 cursor-not-allowed' 
+                    : 'bg-white hover:bg-gray-50 cursor-pointer'
+                }`}
+              >
+                {isLoading ? 'Importing...' : 'Choose File to Import'}
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 className="text-sm font-medium text-blue-800 mb-2">About Backups</h4>
+          <p className="text-sm text-blue-700">
+            Regular backups are essential to prevent data loss. Exporting your data periodically ensures you can restore your portfolio history if needed.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  if (isLoading && accounts.length === 0 && allTransactions.length === 0) {
+    return (
+      <div className="bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-4">Storage Manager</h2>
+        <div className="flex justify-center items-center p-8">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+          <p className="ml-3">Loading data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow">
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-semibold">Storage Manager</h2>
+        <button
+          onClick={handleRefresh}
+          disabled={isLoading}
+          className="px-3 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 text-sm"
+        >
+          Refresh
+        </button>
+      </div>
+      
+      {/* Alerts */}
+      {error && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded">
+          {error}
+        </div>
+      )}
+      
+      {success && (
+        <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded">
+          {success}
+        </div>
+      )}
+      
+      {/* Storage Statistics */}
+      <div className="mb-6">
+        <h3 className="text-lg font-medium mb-3">Storage Statistics</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-indigo-50 p-4 rounded-lg">
+            <h4 className="text-sm text-indigo-700 font-medium">Accounts</h4>
+            <p className="text-2xl font-bold text-indigo-900">{storageStats.accounts || 0}</p>
+          </div>
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h4 className="text-sm text-blue-700 font-medium">Snapshots</h4>
+            <p className="text-2xl font-bold text-blue-900">{storageStats.totalSnapshots || 0}</p>
+          </div>
+          <div className="bg-green-50 p-4 rounded-lg">
+            <h4 className="text-sm text-green-700 font-medium">Transactions</h4>
+            <p className="text-2xl font-bold text-green-900">{storageStats.totalTransactions || 0}</p>
+            {allTransactions.length > 0 && (
+              <p className="text-xs text-green-700 mt-1">
+                ({allTransactions.filter(t => !t.account || t.account === 'Unknown').length} unassigned)
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+      
+      {/* Tab Navigation */}
+      {renderTabNavigation()}
+      
+      {/* Tab Content */}
+      {activeSection === 'files' && (
+        <FileManager onDataChanged={loadStorageData} onProcessFile={() => {}} />
+      )}
+      
+      {activeSection === 'accounts' && renderAccountsSection()}
+      
+      {activeSection === 'backup' && renderBackupSection()}
       
       {/* Transaction Debug Info (for troubleshooting) */}
-      {allTransactions.length > 0 && (
+      {activeSection === 'accounts' && allTransactions.length > 0 && (
         <div className="mb-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
           <h3 className="text-sm font-medium text-gray-700 mb-2">Transaction Debug Information</h3>
           <p className="text-sm text-gray-600 mb-2">

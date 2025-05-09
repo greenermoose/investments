@@ -1,0 +1,257 @@
+/* fileManager.css - Styles specific to the FileManager component */
+
+/* File Manager Header */
+.file-manager-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .file-manager-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+  }
+  
+  .file-manager-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Filter Controls */
+  .filter-group {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* File Type Display */
+  .file-type-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .file-icon-csv {
+    color: #4299e1; /* blue-500 */
+  }
+  
+  .file-icon-json {
+    color: #48bb78; /* green-500 */
+  }
+  
+  .file-icon-default {
+    color: #a0aec0; /* gray-500 */
+  }
+  
+  .file-type-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Status Badges */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status-badge-pending {
+    background-color: #fef3c7; /* yellow-100 */
+    color: #92400e; /* yellow-800 */
+  }
+  
+  .status-badge-success {
+    background-color: #def7ec; /* green-100 */
+    color: #046c4e; /* green-800 */
+  }
+  
+  .status-badge-error {
+    background-color: #fee2e2; /* red-100 */
+    color: #991b1b; /* red-800 */
+  }
+  
+  .status-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.25rem;
+  }
+  
+  /* Action Buttons */
+  .action-button-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #edf2f7;
+  }
+  
+  .action-button-view {
+    color: #4f46e5; /* indigo-600 */
+  }
+  
+  .action-button-process {
+    color: #047857; /* green-700 */
+  }
+  
+  .action-button-delete {
+    color: #e53e3e; /* red-600 */
+  }
+  
+  .action-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  /* Statistics Cards */
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .stats-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  
+  .stat-card {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-card-primary {
+    background-color: #ebf8ff; /* blue-50 */
+    border: 1px solid #bee3f8; /* blue-200 */
+  }
+  
+  .stat-card-success {
+    background-color: #f0fff4; /* green-50 */
+    border: 1px solid #c6f6d5; /* green-200 */
+  }
+  
+  .stat-card-info {
+    background-color: #f3f0ff; /* purple-50 */
+    border: 1px solid #e9d8fd; /* purple-200 */
+  }
+  
+  .stat-card-warning {
+    background-color: #fffbeb; /* yellow-50 */
+    border: 1px solid #fef3c7; /* yellow-200 */
+  }
+  
+  /* File Details */
+  .file-details {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .file-details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .file-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-left: 0.75rem;
+  }
+  
+  .file-meta {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-preview-container {
+    padding: 1.5rem;
+  }
+  
+  .file-preview-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .file-preview {
+    background-color: #f7fafc;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .file-manager-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .file-manager-title {
+      margin-bottom: 1rem;
+    }
+    
+    .file-manager-filters {
+      flex-direction: column;
+    }
+    
+    .filter-group {
+      width: 100%;
+    }
+    
+    .stats-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .stats-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+    .action-button-group {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }

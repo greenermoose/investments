@@ -12,6 +12,8 @@ import DeleteConfirmationModal from './DeleteConfirmationModal';
 import DuplicateFileModal from './DuplicateFileModal';
 import MissingFilesAlert from './MissingFilesAlert';
 import { FileText, Database, Trash2, Eye, RefreshCw, Clock, CheckCircle, XCircle } from 'lucide-react';
+import '../styles/base.css';
+import '../styles/fileManager.css';
 
 const FileManager = ({ onProcessFile, onDataChanged }) => {
   const [files, setFiles] = useState([]);

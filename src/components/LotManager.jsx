@@ -8,6 +8,7 @@ import {
   calculateUnrealizedGainLoss
 } from '../utils/lotUtils';
 import { formatCurrency, formatDate } from '../utils/dataUtils';
+import '../styles/base.css';
 import '../styles/portfolio.css';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import LotStatusIndicator from './LotStatusIndicator';

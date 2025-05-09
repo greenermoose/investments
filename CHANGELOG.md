@@ -1,3 +1,7 @@
+### 0.3.33
+
+- fileStorage (incomplete)
+
 ### 0.3.32
 
 - semantic CSS in Security Detail and Transaction Viewer

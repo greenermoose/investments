@@ -120,6 +120,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
 
   // Handle symbol click
   const handleSymbolClick = (symbol) => {
+    console.log("Symbol clicked in PortfolioDisplay:", symbol);
     if (onSymbolClick) {
       onSymbolClick(symbol);
     }
@@ -174,10 +175,6 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
                   dataKey="name"
                   width={60}
                   tick={{ fontSize: 12 }}
-                  tickFormatter={(symbol) => {
-                    // Make clickable by adding a special class
-                    return symbol;
-                  }}
                 />
                 <Tooltip content={<CustomBarTooltip />} />
                 <Bar 
@@ -187,7 +184,10 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
                   cursor="pointer"
                 >
                   {portfolioStats.assetAllocation.slice(0, 10).map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    <Cell 
+                      key={`cell-${index}`} 
+                      fill={COLORS[index % COLORS.length]} 
+                    />
                   ))}
                 </Bar>
               </BarChart>

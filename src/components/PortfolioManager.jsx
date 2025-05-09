@@ -71,7 +71,7 @@ const PortfolioManager = () => {
   } = acquisition;
 
   // Create a tab structure including our new Storage Manager tab
-  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager'];
+  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager', 'security-detail'];
   
   const { selectedAccount, setSelectedAccount } = account;
   const { activeTab, changeTab } = navigation;
@@ -121,6 +121,7 @@ const PortfolioManager = () => {
 
   // Handle symbol click to show security details
   const handleSymbolClick = (symbol) => {
+    console.log("Symbol clicked:", symbol);
     setSelectedSymbol(symbol);
     // Set a custom tab for security details
     changeTab('security-detail');
@@ -153,7 +154,12 @@ const PortfolioManager = () => {
                  onDataChange={refreshData}
                />;
       case 'portfolio':
-        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} onSymbolClick={handleSymbolClick} />;
+        return <PortfolioDisplay 
+                 portfolioData={portfolioData} 
+                 portfolioStats={portfolioStats} 
+                 currentAccount={currentAccount || selectedAccount}
+                 onSymbolClick={handleSymbolClick}
+               />;
       case 'transactions':
         return <TransactionViewer 
                  currentAccount={currentAccount || selectedAccount} 
@@ -171,7 +177,12 @@ const PortfolioManager = () => {
       case 'storage-manager':
         return <StorageManager onDataChange={refreshData} />;
       default:
-        return <PortfolioDisplay portfolioData={portfolioData} portfolioStats={portfolioStats} />;
+        return <PortfolioDisplay 
+                 portfolioData={portfolioData} 
+                 portfolioStats={portfolioStats}
+                 currentAccount={currentAccount || selectedAccount}
+                 onSymbolClick={handleSymbolClick}
+               />;
       }
   };
 
@@ -265,12 +276,14 @@ const PortfolioManager = () => {
           </div>
         ) : isDataLoaded ? (
           <>
-            {/* Simplified tabs */}
-            <PortfolioTabs 
-              tabs={coreTabs}
-              activeTab={activeTab}
-              onTabChange={changeTab}
-            />
+            {/* Only show tabs for non-detail views */}
+            {activeTab !== 'security-detail' && (
+              <PortfolioTabs 
+                tabs={coreTabs.filter(tab => tab !== 'security-detail')}
+                activeTab={activeTab}
+                onTabChange={changeTab}
+              />
+            )}
             
             <div className="tab-content mt-6">
               {renderTabContent()}

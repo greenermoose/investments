@@ -187,6 +187,9 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
                 Quantity
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Remaining
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Cost Basis
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -206,7 +209,7 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
           <tbody className="bg-white divide-y divide-gray-200">
             {lots.length === 0 ? (
               <tr>
-                <td colSpan="7" className="px-6 py-4 text-center text-sm text-gray-500">
+                <td colSpan="8" className="px-6 py-4 text-center text-sm text-gray-500">
                   No lots found for this security
                 </td>
               </tr>
@@ -225,6 +228,9 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {lot.quantity.toFixed(4)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {lot.remainingQuantity?.toFixed(4) || lot.quantity.toFixed(4)}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {formatCurrency(lot.costBasis)}

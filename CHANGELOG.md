@@ -1,3 +1,7 @@
+### 0.3.30
+
+- getting Security Detail to work
+
 ### 0.3.29
 
 - remove Upload Files card

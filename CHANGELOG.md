@@ -1,3 +1,7 @@
+### 0.3.31
+
+- more fixes to Security Detail
+
 ### 0.3.30
 
 - getting Security Detail to work

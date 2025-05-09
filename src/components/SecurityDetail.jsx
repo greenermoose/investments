@@ -12,6 +12,7 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
   const [lots, setLots] = useState([]);
   const [error, setError] = useState(null);
   const [timeframe, setTimeframe] = useState('1y');
+  const [activeTab, setActiveTab] = useState('details'); // 'details', 'price', 'shares', 'lots'
 
   useEffect(() => {
     const loadSecurityData = async () => {
@@ -26,7 +27,13 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
         // Load lots
         const securityId = `${account}_${symbol}`;
         const lotData = await getSecurityLots(securityId);
-        setLots(lotData || []);
+        
+        // Sort by acquisition date, newest first
+        const sortedLots = lotData ? [...lotData].sort((a, b) => 
+          new Date(b.acquisitionDate) - new Date(a.acquisitionDate)
+        ) : [];
+        
+        setLots(sortedLots);
 
         setIsLoading(false);
       } catch (err) {
@@ -100,7 +107,7 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
     const filteredData = getFilteredData();
     
     return (
-      <div className="h-64">
+      <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={filteredData}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -140,7 +147,7 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
     const filteredData = getFilteredData();
     
     return (
-      <div className="h-64">
+      <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={filteredData}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -286,14 +293,20 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
 
   // Get latest data for summary
   const latestData = historyData.length > 0 ? historyData[historyData.length - 1] : null;
-  const totalShares = lots.reduce((sum, lot) => sum + (lot.remainingQuantity || 0), 0);
+  
+  // Fix the total shares calculation to match All Positions
+  // We should use the latest quantity from history data if available
+  const totalShares = latestData?.shares || 
+                      lots.reduce((sum, lot) => sum + (lot.remainingQuantity || 0), 0);
+                      
   const totalCostBasis = lots.reduce((sum, lot) => sum + (lot.costBasis || 0), 0);
   const averageCost = totalShares > 0 ? totalCostBasis / totalShares : 0;
   const currentValue = latestData ? latestData.price * totalShares : 0;
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-between items-center">
+      {/* Header with Back button and Tabs on same line */}
+      <div className="flex justify-between items-center bg-white px-6 py-4 rounded-lg shadow">
         <button
           onClick={onBack}
           className="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
@@ -301,44 +314,54 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
           ← Back to Portfolio
         </button>
         
-        {/* Timeframe selector */}
+        {/* Tab Navigation */}
         <div className="flex space-x-2">
           <button
-            onClick={() => setTimeframe('1m')}
-            className={`px-3 py-1 text-sm rounded-md ${timeframe === '1m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+            onClick={() => setActiveTab('details')}
+            className={`px-4 py-2 text-sm font-medium rounded-md ${
+              activeTab === 'details' 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }`}
           >
-            1M
+            Security Details
           </button>
           <button
-            onClick={() => setTimeframe('3m')}
-            className={`px-3 py-1 text-sm rounded-md ${timeframe === '3m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+            onClick={() => setActiveTab('price')}
+            className={`px-4 py-2 text-sm font-medium rounded-md ${
+              activeTab === 'price' 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }`}
           >
-            3M
+            Price History
           </button>
           <button
-            onClick={() => setTimeframe('6m')}
-            className={`px-3 py-1 text-sm rounded-md ${timeframe === '6m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+            onClick={() => setActiveTab('shares')}
+            className={`px-4 py-2 text-sm font-medium rounded-md ${
+              activeTab === 'shares' 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }`}
           >
-            6M
+            Share History
           </button>
           <button
-            onClick={() => setTimeframe('1y')}
-            className={`px-3 py-1 text-sm rounded-md ${timeframe === '1y' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+            onClick={() => setActiveTab('lots')}
+            className={`px-4 py-2 text-sm font-medium rounded-md ${
+              activeTab === 'lots' 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }`}
           >
-            1Y
-          </button>
-          <button
-            onClick={() => setTimeframe('all')}
-            className={`px-3 py-1 text-sm rounded-md ${timeframe === 'all' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
-          >
-            ALL
+            Tax Lots
           </button>
         </div>
       </div>
 
-      {/* Security Summary Card */}
+      {/* Security Symbol & Header - Always visible */}
       <div className="bg-white p-6 rounded-lg shadow">
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-center mb-4">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">{symbol}</h1>
             <p className="text-gray-600">
@@ -360,51 +383,121 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
             )}
           </div>
         </div>
-
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-gray-50 p-4 rounded-md">
-            <p className="text-sm text-gray-500">Total Shares</p>
-            <p className="text-xl font-semibold">{totalShares.toFixed(4)}</p>
-          </div>
-          <div className="bg-gray-50 p-4 rounded-md">
-            <p className="text-sm text-gray-500">Market Value</p>
-            <p className="text-xl font-semibold">{formatCurrency(currentValue)}</p>
-          </div>
-          <div className="bg-gray-50 p-4 rounded-md">
-            <p className="text-sm text-gray-500">Cost Basis</p>
-            <p className="text-xl font-semibold">{formatCurrency(totalCostBasis)}</p>
-          </div>
-          <div className="bg-gray-50 p-4 rounded-md">
-            <p className="text-sm text-gray-500">Avg. Cost Per Share</p>
-            <p className="text-xl font-semibold">{formatCurrency(averageCost)}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Price Chart */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Price History</h2>
-        {historyData.length > 0 ? renderPriceChart() : (
-          <div className="text-center py-8 text-gray-500">
-            No price history available for this security
+        
+        {/* Timeframe selector - only visible for price & shares tabs */}
+        {(activeTab === 'price' || activeTab === 'shares') && (
+          <div className="flex justify-end mb-4">
+            <div className="flex space-x-2">
+              <button
+                onClick={() => setTimeframe('1m')}
+                className={`px-3 py-1 text-sm rounded-md ${timeframe === '1m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              >
+                1M
+              </button>
+              <button
+                onClick={() => setTimeframe('3m')}
+                className={`px-3 py-1 text-sm rounded-md ${timeframe === '3m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              >
+                3M
+              </button>
+              <button
+                onClick={() => setTimeframe('6m')}
+                className={`px-3 py-1 text-sm rounded-md ${timeframe === '6m' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              >
+                6M
+              </button>
+              <button
+                onClick={() => setTimeframe('1y')}
+                className={`px-3 py-1 text-sm rounded-md ${timeframe === '1y' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              >
+                1Y
+              </button>
+              <button
+                onClick={() => setTimeframe('all')}
+                className={`px-3 py-1 text-sm rounded-md ${timeframe === 'all' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              >
+                ALL
+              </button>
+            </div>
           </div>
         )}
-      </div>
 
-      {/* Shares Chart */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Share Quantity History</h2>
-        {historyData.length > 0 ? renderSharesChart() : (
-          <div className="text-center py-8 text-gray-500">
-            No share history available for this security
+        {/* Tab Content */}
+        {activeTab === 'details' && (
+          <div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-sm text-gray-500">Total Shares</p>
+                <p className="text-xl font-semibold">{totalShares.toFixed(4)}</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-sm text-gray-500">Market Value</p>
+                <p className="text-xl font-semibold">{formatCurrency(currentValue)}</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-sm text-gray-500">Cost Basis</p>
+                <p className="text-xl font-semibold">{formatCurrency(totalCostBasis)}</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-sm text-gray-500">Avg. Cost Per Share</p>
+                <p className="text-xl font-semibold">{formatCurrency(averageCost)}</p>
+              </div>
+            </div>
+            
+            {/* Additional security details can go here */}
+            <div className="mt-6">
+              <h3 className="font-medium text-gray-700 mb-2">Performance Summary</h3>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div>
+                    <p className="text-sm text-gray-500">Total Return</p>
+                    <p className={`text-lg font-medium ${(currentValue - totalCostBasis) >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                      {formatCurrency(currentValue - totalCostBasis)} ({formatPercent(totalCostBasis > 0 ? ((currentValue - totalCostBasis) / totalCostBasis) * 100 : 0)})
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500">First Acquired</p>
+                    <p className="text-lg font-medium">
+                      {lots.length > 0 ? formatDate(new Date(lots[lots.length - 1].acquisitionDate)) : 'Unknown'}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500">Last Transaction</p>
+                    <p className="text-lg font-medium">
+                      {historyData.length > 0 ? formatDate(new Date(historyData[historyData.length - 1].date)) : 'Unknown'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
-      </div>
 
-      {/* Lots Table */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Tax Lots</h2>
-        {renderLotsTable()}
+        {activeTab === 'price' && (
+          <div>
+            {historyData.length > 0 ? renderPriceChart() : (
+              <div className="text-center py-8 text-gray-500">
+                No price history available for this security
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'shares' && (
+          <div>
+            {historyData.length > 0 ? renderSharesChart() : (
+              <div className="text-center py-8 text-gray-500">
+                No share history available for this security
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'lots' && (
+          <div>
+            {renderLotsTable()}
+          </div>
+        )}
       </div>
     </div>
   );

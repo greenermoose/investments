@@ -1,4 +1,4 @@
-// src/components/StorageManager.jsx (Completed)
+// src/components/StorageManager.jsx
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 
@@ -11,7 +11,6 @@ import {
   initializeDB
 } from '../utils/portfolioStorage';
 import FileManager from './FileManager';
-import BackupManager from './BackupManager';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import { formatDate } from '../utils/dataUtils';
 
@@ -29,14 +28,12 @@ const StorageManager = ({ onDataChange }) => {
     type: 'danger',
     onConfirm: null
   });
-  const [activeSection, setActiveSection] = useState('files'); // 'files', 'accounts', 'backup'
+  const [activeSection, setActiveSection] = useState('files');
 
-  // Load accounts and storage statistics
   useEffect(() => {
     loadStorageData();
   }, []);
 
-  // Get all transactions directly from the database store
   const getAllTransactionsFromDB = async () => {
     try {
       const db = await initializeDB();
@@ -46,13 +43,8 @@ const StorageManager = ({ onDataChange }) => {
         const store = transaction.objectStore('transactions');
         const request = store.getAll();
         
-        request.onsuccess = () => {
-          resolve(request.result || []);
-        };
-        
-        request.onerror = () => {
-          reject(request.error);
-        };
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = () => reject(request.error);
       });
     } catch (err) {
       console.error('Error getting all transactions:', err);
@@ -60,21 +52,17 @@ const StorageManager = ({ onDataChange }) => {
     }
   };
 
-  // Load all account data and storage statistics
   const loadStorageData = async () => {
     try {
       setIsLoading(true);
       setError(null);
       
-      // Get all accounts
       const accountList = await getAllAccounts();
       setAccounts(accountList);
       
-      // Get all transactions directly to have a complete picture
       const transactions = await getAllTransactionsFromDB();
       setAllTransactions(transactions);
       
-      // Group transactions by account
       const transactionsByAccount = {};
       transactions.forEach(tx => {
         const account = tx.account || 'Unknown';
@@ -84,25 +72,18 @@ const StorageManager = ({ onDataChange }) => {
         transactionsByAccount[account].push(tx);
       });
       
-      // Calculate storage statistics for each account
       const stats = {};
       let totalSnapshots = 0;
       let totalTransactions = transactions.length;
       
       for (const account of accountList) {
-        // Get snapshots for the account
         const snapshots = await getAccountSnapshots(account);
-        
-        // Get transactions for the account from our grouped transactions
-        // This avoids issues with the getTransactionsByAccount function
         const accountTransactions = transactionsByAccount[account] || [];
         
-        // Add this account to the transaction groups if it exists but has no transactions
         if (!transactionsByAccount[account] && accountTransactions.length === 0) {
           transactionsByAccount[account] = [];
         }
         
-        // Store statistics
         stats[account] = {
           snapshots: snapshots.length,
           transactions: accountTransactions.length,
@@ -115,28 +96,20 @@ const StorageManager = ({ onDataChange }) => {
         totalSnapshots += snapshots.length;
       }
       
-      // Check for transactions with unknown accounts
       if (transactionsByAccount['Unknown'] && transactionsByAccount['Unknown'].length > 0) {
-        // If we have accounts but some transactions don't have an account, try to match them
         if (accountList.length > 0) {
-          console.warn('Found transactions without account assignment:', 
-            transactionsByAccount['Unknown'].length);
-          
-          // Add an "Unknown" account to the statistics
           stats['Unknown'] = {
             snapshots: 0,
             transactions: transactionsByAccount['Unknown'].length,
             latestSnapshot: null
           };
           
-          // Add Unknown to the account list if it has transactions
           if (!accountList.includes('Unknown') && transactionsByAccount['Unknown'].length > 0) {
             accountList.push('Unknown');
           }
         }
       }
       
-      // Set overall statistics
       setStorageStats({
         accounts: accountList.length,
         totalSnapshots,
@@ -152,7 +125,6 @@ const StorageManager = ({ onDataChange }) => {
     }
   };
   
-  // Handle exporting all data
   const handleExportAll = async () => {
     try {
       setIsLoading(true);
@@ -161,7 +133,6 @@ const StorageManager = ({ onDataChange }) => {
       
       const data = await exportAllData();
       
-      // Create and download the file
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
@@ -181,7 +152,6 @@ const StorageManager = ({ onDataChange }) => {
     }
   };
   
-  // Handle importing data
   const handleImport = (event) => {
     const file = event.target.files[0];
     if (!file) return;
@@ -195,16 +165,14 @@ const StorageManager = ({ onDataChange }) => {
         
         const data = JSON.parse(e.target.result);
         
-        // Validate data structure
         if (!data.portfolios || !data.securities || !data.lots) {
           throw new Error('Invalid backup file format');
         }
         
         await importAllData(data);
         setSuccess('Data imported successfully');
-        await loadStorageData(); // Reload data after import
+        await loadStorageData();
         
-        // Notify parent component that data has changed
         if (onDataChange) {
           onDataChange();
         }
@@ -224,9 +192,7 @@ const StorageManager = ({ onDataChange }) => {
     reader.readAsText(file);
   };
 
-  // Purge data for a specific account
   const handlePurgeAccount = async (account) => {
-    // Show confirmation dialog
     setDeleteModal({
       isOpen: true,
       title: 'Purge Account Data',
@@ -237,10 +203,9 @@ const StorageManager = ({ onDataChange }) => {
           setIsLoading(true);
           await purgeAccountData(account);
           setSuccess(`Data for account "${account}" purged successfully`);
-          await loadStorageData(); // Reload data
+          await loadStorageData();
           setDeleteModal({ isOpen: false });
           
-          // Notify parent component that data has changed
           if (onDataChange) {
             onDataChange();
           }
@@ -254,9 +219,7 @@ const StorageManager = ({ onDataChange }) => {
     });
   };
   
-  // Purge all data
   const handlePurgeAll = () => {
-    // Show confirmation dialog
     setDeleteModal({
       isOpen: true,
       title: 'Purge All Data',
@@ -266,14 +229,12 @@ const StorageManager = ({ onDataChange }) => {
         try {
           setIsLoading(true);
           
-          // Use the purgeAllData function instead of purging each account
           await purgeAllData();
           
           setSuccess('All data purged successfully');
-          await loadStorageData(); // Reload data
+          await loadStorageData();
           setDeleteModal({ isOpen: false });
           
-          // Notify parent component that data has changed
           if (onDataChange) {
             onDataChange();
           }
@@ -287,7 +248,6 @@ const StorageManager = ({ onDataChange }) => {
     });
   };
   
-  // Refresh data manually
   const handleRefresh = async () => {
     try {
       setIsLoading(true);
@@ -303,42 +263,29 @@ const StorageManager = ({ onDataChange }) => {
     }
   };
 
-  // Render tab navigation
   const renderTabNavigation = () => {
     return (
-      <div className="mb-6 border-b border-gray-200">
-        <ul className="flex flex-wrap -mb-px">
-          <li className="mr-2">
+      <div className="tab-nav">
+        <ul className="tab-list">
+          <li>
             <button
-              className={`inline-block p-4 rounded-t-lg ${
-                activeSection === 'files'
-                  ? 'border-b-2 border-indigo-600 text-indigo-600'
-                  : 'hover:text-gray-600 hover:border-gray-300'
-              }`}
+              className={`tab-btn ${activeSection === 'files' ? 'tab-active' : ''}`}
               onClick={() => setActiveSection('files')}
             >
               File Manager
             </button>
           </li>
-          <li className="mr-2">
+          <li>
             <button
-              className={`inline-block p-4 rounded-t-lg ${
-                activeSection === 'accounts'
-                  ? 'border-b-2 border-indigo-600 text-indigo-600'
-                  : 'hover:text-gray-600 hover:border-gray-300'
-              }`}
+              className={`tab-btn ${activeSection === 'accounts' ? 'tab-active' : ''}`}
               onClick={() => setActiveSection('accounts')}
             >
               Account Data
             </button>
           </li>
-          <li className="mr-2">
+          <li>
             <button
-              className={`inline-block p-4 rounded-t-lg ${
-                activeSection === 'backup'
-                  ? 'border-b-2 border-indigo-600 text-indigo-600'
-                  : 'hover:text-gray-600 hover:border-gray-300'
-              }`}
+              className={`tab-btn ${activeSection === 'backup' ? 'tab-active' : ''}`}
               onClick={() => setActiveSection('backup')}
             >
               Backup & Restore
@@ -349,16 +296,15 @@ const StorageManager = ({ onDataChange }) => {
     );
   };
 
-  // Render accounts section
   const renderAccountsSection = () => {
     return (
-      <div className="mb-6">
-        <div className="flex justify-between items-center mb-3">
-          <h3 className="text-lg font-medium">Account Data Management</h3>
+      <div className="account-section">
+        <div className="section-header">
+          <h3 className="section-title">Account Data Management</h3>
           {(accounts.length > 0 || allTransactions.length > 0) && (
             <button
               onClick={handlePurgeAll}
-              className="px-4 py-2 bg-red-600 text-white text-sm rounded hover:bg-red-700 transition-colors"
+              className="btn-danger"
             >
               Purge All Data
             </button>
@@ -366,36 +312,36 @@ const StorageManager = ({ onDataChange }) => {
         </div>
         
         {accounts.length === 0 && allTransactions.length === 0 ? (
-          <div className="bg-gray-50 p-8 text-center rounded-lg">
-            <p className="text-gray-500">No accounts or transactions found in the database</p>
+          <div className="empty-state">
+            <p>No accounts or transactions found in the database</p>
           </div>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white border border-gray-200 rounded-lg">
-              <thead className="bg-gray-50">
+          <div className="table-container">
+            <table className="data-table">
+              <thead>
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Account</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Snapshots</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Transactions</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Latest Update</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                  <th>Account</th>
+                  <th>Snapshots</th>
+                  <th>Transactions</th>
+                  <th>Latest Update</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody>
                 {accounts.map(account => {
                   const stats = storageStats.accountStats?.[account] || {};
                   return (
-                    <tr key={account} className="hover:bg-gray-50">
-                      <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{account}</td>
-                      <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">{stats.snapshots || 0}</td>
-                      <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">{stats.transactions || 0}</td>
-                      <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">
+                    <tr key={account} className="table-row">
+                      <td className="cell-text">{account}</td>
+                      <td className="cell-number">{stats.snapshots || 0}</td>
+                      <td className="cell-number">{stats.transactions || 0}</td>
+                      <td className="cell-date">
                         {stats.latestSnapshot ? formatDate(stats.latestSnapshot.date) : 'N/A'}
                       </td>
-                      <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <td className="cell-action">
                         <button
                           onClick={() => handlePurgeAccount(account)}
-                          className="text-red-600 hover:text-red-900 transition-colors"
+                          className="btn-text-danger"
                         >
                           Purge
                         </button>
@@ -404,21 +350,18 @@ const StorageManager = ({ onDataChange }) => {
                   );
                 })}
                 
-                {/* Show transactions without account if they exist */}
                 {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && !accounts.includes('Unknown') && (
-                  <tr className="hover:bg-gray-50 bg-yellow-50">
-                    <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-yellow-800">Unassigned Transactions</td>
-                    <td className="px-4 py-4 whitespace-nowrap text-sm text-yellow-800">0</td>
-                    <td className="px-4 py-4 whitespace-nowrap text-sm text-yellow-800">
+                  <tr className="table-row-warning">
+                    <td className="cell-text">Unassigned Transactions</td>
+                    <td className="cell-number">0</td>
+                    <td className="cell-number">
                       {allTransactions.filter(t => !t.account || t.account === 'Unknown').length}
                     </td>
-                    <td className="px-4 py-4 whitespace-nowrap text-sm text-yellow-800">
-                      N/A
-                    </td>
-                    <td className="px-4 py-4 whitespace-nowrap text-sm text-yellow-800">
+                    <td className="cell-date">N/A</td>
+                    <td className="cell-action">
                       <button
                         onClick={() => handlePurgeAccount('Unknown')}
-                        className="text-red-600 hover:text-red-900 transition-colors"
+                        className="btn-text-danger"
                       >
                         Purge
                       </button>
@@ -433,51 +376,42 @@ const StorageManager = ({ onDataChange }) => {
     );
   };
 
-  // Render backup section
   const renderBackupSection = () => {
     return (
-      <div className="bg-white p-6 rounded-lg shadow mb-6">
-        <h3 className="text-lg font-medium mb-4">Backup & Restore</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-            <h4 className="text-md font-medium mb-2">Export All Data</h4>
-            <p className="text-sm text-gray-600 mb-4">
+      <div className="backup-section">
+        <h3 className="section-title">Backup & Restore</h3>
+        <div className="backup-grid">
+          <div className="card">
+            <h4 className="card-title">Export All Data</h4>
+            <p className="card-text">
               Download all your portfolio data, snapshots, and transactions as a single JSON file for backup purposes.
             </p>
             <button
               onClick={handleExportAll}
               disabled={isLoading}
-              className={`inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
-                isLoading 
-                  ? 'bg-indigo-400 cursor-not-allowed' 
-                  : 'bg-indigo-600 hover:bg-indigo-700'
-              }`}
+              className={`btn-primary ${isLoading ? 'btn-disabled' : ''}`}
             >
               {isLoading ? 'Exporting...' : 'Export All Data'}
             </button>
           </div>
           
-          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-            <h4 className="text-md font-medium mb-2">Import Data</h4>
-            <p className="text-sm text-gray-600 mb-4">
+          <div className="card">
+            <h4 className="card-title">Import Data</h4>
+            <p className="card-text">
               Restore your portfolio data from a previously exported backup file.
             </p>
-            <div className="relative">
+            <div className="file-input-container">
               <input
                 type="file"
                 accept=".json"
                 onChange={handleImport}
-                className="hidden"
+                className="file-input"
                 id="import-file"
                 disabled={isLoading}
               />
               <label
                 htmlFor="import-file"
-                className={`inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 ${
-                  isLoading 
-                    ? 'bg-gray-100 cursor-not-allowed' 
-                    : 'bg-white hover:bg-gray-50 cursor-pointer'
-                }`}
+                className={`file-label ${isLoading ? 'btn-disabled' : ''}`}
               >
                 {isLoading ? 'Importing...' : 'Choose File to Import'}
               </label>
@@ -485,9 +419,9 @@ const StorageManager = ({ onDataChange }) => {
           </div>
         </div>
 
-        <div className="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-200">
-          <h4 className="text-sm font-medium text-blue-800 mb-2">About Backups</h4>
-          <p className="text-sm text-blue-700">
+        <div className="info-box">
+          <h4 className="info-title">About Backups</h4>
+          <p className="info-text">
             Regular backups are essential to prevent data loss. Exporting your data periodically ensures you can restore your portfolio history if needed.
           </p>
         </div>
@@ -497,59 +431,57 @@ const StorageManager = ({ onDataChange }) => {
 
   if (isLoading && accounts.length === 0 && allTransactions.length === 0) {
     return (
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Storage Manager</h2>
-        <div className="flex justify-center items-center p-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
-          <p className="ml-3">Loading data...</p>
+      <div className="card">
+        <h2 className="card-title">Storage Manager</h2>
+        <div className="loading-container">
+          <div className="loading-spinner"></div>
+          <p className="loading-text">Loading data...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Storage Manager</h2>
+    <div className="card">
+      <div className="header">
+        <h2 className="title">Storage Manager</h2>
         <button
           onClick={handleRefresh}
           disabled={isLoading}
-          className="px-3 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 text-sm"
+          className="btn-secondary"
         >
           Refresh
         </button>
       </div>
       
-      {/* Alerts */}
       {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded">
+        <div className="alert alert-error">
           {error}
         </div>
       )}
       
       {success && (
-        <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded">
+        <div className="alert alert-success">
           {success}
         </div>
       )}
       
-      {/* Storage Statistics */}
-      <div className="mb-6">
-        <h3 className="text-lg font-medium mb-3">Storage Statistics</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-indigo-50 p-4 rounded-lg">
-            <h4 className="text-sm text-indigo-700 font-medium">Accounts</h4>
-            <p className="text-2xl font-bold text-indigo-900">{storageStats.accounts || 0}</p>
+      <div className="stats-container">
+        <h3 className="section-title">Storage Statistics</h3>
+        <div className="stats-grid">
+          <div className="stat-card stat-primary">
+            <h4 className="stat-label">Accounts</h4>
+            <p className="stat-value">{storageStats.accounts || 0}</p>
           </div>
-          <div className="bg-blue-50 p-4 rounded-lg">
-            <h4 className="text-sm text-blue-700 font-medium">Snapshots</h4>
-            <p className="text-2xl font-bold text-blue-900">{storageStats.totalSnapshots || 0}</p>
+          <div className="stat-card stat-secondary">
+            <h4 className="stat-label">Snapshots</h4>
+            <p className="stat-value">{storageStats.totalSnapshots || 0}</p>
           </div>
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h4 className="text-sm text-green-700 font-medium">Transactions</h4>
-            <p className="text-2xl font-bold text-green-900">{storageStats.totalTransactions || 0}</p>
+          <div className="stat-card stat-tertiary">
+            <h4 className="stat-label">Transactions</h4>
+            <p className="stat-value">{storageStats.totalTransactions || 0}</p>
             {allTransactions.length > 0 && (
-              <p className="text-xs text-green-700 mt-1">
+              <p className="stat-detail">
                 ({allTransactions.filter(t => !t.account || t.account === 'Unknown').length} unassigned)
               </p>
             )}
@@ -557,10 +489,8 @@ const StorageManager = ({ onDataChange }) => {
         </div>
       </div>
       
-      {/* Tab Navigation */}
       {renderTabNavigation()}
       
-      {/* Tab Content */}
       {activeSection === 'files' && (
         <FileManager onDataChanged={loadStorageData} onProcessFile={() => {}} />
       )}
@@ -569,22 +499,21 @@ const StorageManager = ({ onDataChange }) => {
       
       {activeSection === 'backup' && renderBackupSection()}
       
-      {/* Transaction Debug Info (for troubleshooting) */}
       {activeSection === 'accounts' && allTransactions.length > 0 && (
-        <div className="mb-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <h3 className="text-sm font-medium text-gray-700 mb-2">Transaction Debug Information</h3>
-          <p className="text-sm text-gray-600 mb-2">
+        <div className="debug-section">
+          <h3 className="debug-title">Transaction Debug Information</h3>
+          <p className="debug-text">
             Total transactions found: {allTransactions.length}
           </p>
           {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && (
-            <div className="bg-yellow-50 p-3 rounded border border-yellow-200 text-yellow-800 text-sm mb-2">
+            <div className="warning-box">
               <p>Warning: {allTransactions.filter(t => !t.account || t.account === 'Unknown').length} transactions have no account assignment.</p>
             </div>
           )}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="debug-grid">
             <div>
-              <h4 className="text-xs font-medium text-gray-700 mb-1">Account Distribution</h4>
-              <ul className="text-xs text-gray-600 space-y-1">
+              <h4 className="debug-subtitle">Account Distribution</h4>
+              <ul className="debug-list">
                 {Object.entries(allTransactions.reduce((acc, tx) => {
                   const account = tx.account || 'Unknown';
                   acc[account] = (acc[account] || 0) + 1;
@@ -596,8 +525,8 @@ const StorageManager = ({ onDataChange }) => {
             </div>
             {allTransactions.length > 0 && (
               <div>
-                <h4 className="text-xs font-medium text-gray-700 mb-1">Sample Transaction</h4>
-                <div className="bg-gray-100 p-2 rounded text-xs font-mono overflow-hidden text-ellipsis">
+                <h4 className="debug-subtitle">Sample Transaction</h4>
+                <div className="debug-code">
                   ID: {allTransactions[0].id || 'N/A'}<br />
                   Account: {allTransactions[0].account || 'Not set'}<br />
                   Symbol: {allTransactions[0].symbol || 'N/A'}<br />
@@ -610,21 +539,19 @@ const StorageManager = ({ onDataChange }) => {
         </div>
       )}
       
-      {/* Storage Cleanup Instructions */}
-      <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
-        <h3 className="text-sm font-medium text-yellow-800 mb-2">About Local Storage</h3>
-        <p className="text-sm text-yellow-700 mb-2">
+      <div className="info-box warning">
+        <h3 className="info-title">About Local Storage</h3>
+        <p className="info-text">
           This application stores all data locally in your browser's IndexedDB storage. No data is sent to any server.
         </p>
-        <p className="text-sm text-yellow-700 mb-2">
+        <p className="info-text">
           Using the "Purge" options will permanently delete data from your browser's storage. Make sure to export your data before purging if you want to keep a backup.
         </p>
-        <p className="text-sm text-yellow-700">
+        <p className="info-text">
           You can also clear the application's data through your browser's settings or developer tools if needed.
         </p>
       </div>
       
-      {/* Confirmation Modal */}
       <DeleteConfirmationModal
         isOpen={deleteModal.isOpen}
         onClose={() => setDeleteModal({ ...deleteModal, isOpen: false })}

@@ -1,3 +1,7 @@
+### 0.3.35
+
+- refactored StorageManager
+
 ### 0.3.34
 
 - StorageManager

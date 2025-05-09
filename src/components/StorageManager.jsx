@@ -15,6 +15,8 @@ import FileManager from './FileManager';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import { formatDate } from '../utils/dataUtils';
 import DatabaseDebugger from './DatabaseDebugger';
+import '../styles/base.css';
+import '../styles/portfolio.css';
 
 const StorageManager = ({ onDataChange }) => {
   const [accounts, setAccounts] = useState([]);

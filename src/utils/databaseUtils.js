@@ -4,12 +4,12 @@
 const DB_NAME = 'PortfolioManagerDB';
 const DB_VERSION = 4;  // Increment version for schema changes
 
-const STORE_NAME_PORTFOLIOS = 'portfolios';
-const STORE_NAME_SECURITIES = 'securities';
-const STORE_NAME_LOTS = 'lots';
-const STORE_NAME_TRANSACTIONS = 'transactions';
-const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
-const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
+export const STORE_NAME_PORTFOLIOS = 'portfolios';
+export const STORE_NAME_SECURITIES = 'securities';
+export const STORE_NAME_LOTS = 'lots';
+export const STORE_NAME_TRANSACTIONS = 'transactions';
+export const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
+export const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
 
 // Initialize IndexedDB with updated schema
 export const initializeDB = () => {

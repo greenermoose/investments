@@ -1,3 +1,7 @@
+### 0.3.37
+
+- export symbols from databaseUtils
+
 ### 0.3.36
 
 - refactor portfolioStorage

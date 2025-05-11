@@ -1,3 +1,7 @@
+### 0.3.43
+
+- StorageManager using semantic CSS
+
 ### 0.3.42
 
 - add FILES to help Claude find files

@@ -1,4 +1,4 @@
-// src/components/StorageManager.jsx
+// src/utils/StorageManager.jsx
 import React, { useState, useEffect } from 'react';
 import { 
   getAllAccounts, 
@@ -269,33 +269,25 @@ const StorageManager = ({ onDataChange }) => {
 
   const renderTabNavigation = () => {
     return (
-      <div className="tab-nav">
-        <ul className="tab-list">
-          <li>
-            <button
-              className={`tab-btn ${activeSection === 'files' ? 'tab-active' : ''}`}
-              onClick={() => setActiveSection('files')}
-            >
-              File Manager
-            </button>
-          </li>
-          <li>
-            <button
-              className={`tab-btn ${activeSection === 'accounts' ? 'tab-active' : ''}`}
-              onClick={() => setActiveSection('accounts')}
-            >
-              Account Data
-            </button>
-          </li>
-          <li>
-            <button
-              className={`tab-btn ${activeSection === 'backup' ? 'tab-active' : ''}`}
-              onClick={() => setActiveSection('backup')}
-            >
-              Backup & Restore
-            </button>
-          </li>
-        </ul>
+      <div className="tab-container">
+        <button
+          className={activeSection === 'files' ? 'tab-active' : 'tab'}
+          onClick={() => setActiveSection('files')}
+        >
+          File Manager
+        </button>
+        <button
+          className={activeSection === 'accounts' ? 'tab-active' : 'tab'}
+          onClick={() => setActiveSection('accounts')}
+        >
+          Account Data
+        </button>
+        <button
+          className={activeSection === 'backup' ? 'tab-active' : 'tab'}
+          onClick={() => setActiveSection('backup')}
+        >
+          Backup & Restore
+        </button>
       </div>
     );
   };
@@ -308,7 +300,7 @@ const StorageManager = ({ onDataChange }) => {
           {(accounts.length > 0 || allTransactions.length > 0) && (
             <button
               onClick={handlePurgeAll}
-              className="btn-danger"
+              className="btn btn-danger"
             >
               Purge All Data
             </button>
@@ -322,27 +314,27 @@ const StorageManager = ({ onDataChange }) => {
         ) : (
           <div className="table-container">
             <table className="data-table">
-              <thead>
+              <thead className="table-header">
                 <tr>
-                  <th>Account</th>
-                  <th>Snapshots</th>
-                  <th>Transactions</th>
-                  <th>Latest Update</th>
-                  <th>Actions</th>
+                  <th className="table-header-cell">Account</th>
+                  <th className="table-header-cell">Snapshots</th>
+                  <th className="table-header-cell">Transactions</th>
+                  <th className="table-header-cell">Latest Update</th>
+                  <th className="table-header-cell">Actions</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="table-body">
                 {accounts.map(account => {
                   const stats = storageStats.accountStats?.[account] || {};
                   return (
                     <tr key={account} className="table-row">
-                      <td className="cell-text">{account}</td>
-                      <td className="cell-number">{stats.snapshots || 0}</td>
-                      <td className="cell-number">{stats.transactions || 0}</td>
-                      <td className="cell-date">
+                      <td className="table-cell">{account}</td>
+                      <td className="table-cell-numeric">{stats.snapshots || 0}</td>
+                      <td className="table-cell-numeric">{stats.transactions || 0}</td>
+                      <td className="table-cell">
                         {stats.latestSnapshot ? formatDate(stats.latestSnapshot.date) : 'N/A'}
                       </td>
-                      <td className="cell-action">
+                      <td className="table-cell">
                         <button
                           onClick={() => handlePurgeAccount(account)}
                           className="btn-text-danger"
@@ -356,13 +348,13 @@ const StorageManager = ({ onDataChange }) => {
                 
                 {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && !accounts.includes('Unknown') && (
                   <tr className="table-row-warning">
-                    <td className="cell-text">Unassigned Transactions</td>
-                    <td className="cell-number">0</td>
-                    <td className="cell-number">
+                    <td className="table-cell">Unassigned Transactions</td>
+                    <td className="table-cell-numeric">0</td>
+                    <td className="table-cell-numeric">
                       {allTransactions.filter(t => !t.account || t.account === 'Unknown').length}
                     </td>
-                    <td className="cell-date">N/A</td>
-                    <td className="cell-action">
+                    <td className="table-cell">N/A</td>
+                    <td className="table-cell">
                       <button
                         onClick={() => handlePurgeAccount('Unknown')}
                         className="btn-text-danger"
@@ -393,7 +385,7 @@ const StorageManager = ({ onDataChange }) => {
             <button
               onClick={handleExportAll}
               disabled={isLoading}
-              className={`btn-primary ${isLoading ? 'btn-disabled' : ''}`}
+              className={`btn btn-primary ${isLoading ? 'btn-disabled' : ''}`}
             >
               {isLoading ? 'Exporting...' : 'Export All Data'}
             </button>
@@ -447,12 +439,12 @@ const StorageManager = ({ onDataChange }) => {
 
   return (
     <div className="card">
-      <div className="header">
-        <h2 className="title">Storage Manager</h2>
+      <div className="flex-between mb-4">
+        <h2 className="card-title">Storage Manager</h2>
         <button
           onClick={handleRefresh}
           disabled={isLoading}
-          className="btn-secondary"
+          className="btn btn-secondary"
         >
           Refresh
         </button>
@@ -473,19 +465,19 @@ const StorageManager = ({ onDataChange }) => {
       <div className="stats-container">
         <h3 className="section-title">Storage Statistics</h3>
         <div className="stats-grid">
-          <div className="stat-card stat-primary">
-            <h4 className="stat-label">Accounts</h4>
+          <div className="stat-card stat-card-primary">
+            <p className="stat-label">Accounts</p>
             <p className="stat-value">{storageStats.accounts || 0}</p>
           </div>
-          <div className="stat-card stat-secondary">
-            <h4 className="stat-label">Snapshots</h4>
+          <div className="stat-card stat-card-success">
+            <p className="stat-label">Snapshots</p>
             <p className="stat-value">{storageStats.totalSnapshots || 0}</p>
           </div>
-          <div className="stat-card stat-tertiary">
-            <h4 className="stat-label">Transactions</h4>
+          <div className="stat-card stat-card-info">
+            <p className="stat-label">Transactions</p>
             <p className="stat-value">{storageStats.totalTransactions || 0}</p>
             {allTransactions.length > 0 && (
-              <p className="stat-detail">
+              <p className="text-sm text-gray-500">
                 ({allTransactions.filter(t => !t.account || t.account === 'Unknown').length} unassigned)
               </p>
             )}
@@ -504,20 +496,20 @@ const StorageManager = ({ onDataChange }) => {
       {activeSection === 'backup' && renderBackupSection()}
       
       {activeSection === 'accounts' && allTransactions.length > 0 && (
-        <div className="debug-section">
-          <h3 className="debug-title">Transaction Debug Information</h3>
-          <p className="debug-text">
+        <div className="mt-6">
+          <h3 className="text-lg font-medium mb-2">Transaction Debug Information</h3>
+          <p className="text-sm text-gray-600">
             Total transactions found: {allTransactions.length}
           </p>
           {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && (
-            <div className="warning-box">
+            <div className="alert alert-warning">
               <p>Warning: {allTransactions.filter(t => !t.account || t.account === 'Unknown').length} transactions have no account assignment.</p>
             </div>
           )}
-          <div className="debug-grid">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div>
-              <h4 className="debug-subtitle">Account Distribution</h4>
-              <ul className="debug-list">
+              <h4 className="text-md font-medium mb-2">Account Distribution</h4>
+              <ul className="list-disc pl-5">
                 {Object.entries(allTransactions.reduce((acc, tx) => {
                   const account = tx.account || 'Unknown';
                   acc[account] = (acc[account] || 0) + 1;
@@ -529,8 +521,8 @@ const StorageManager = ({ onDataChange }) => {
             </div>
             {allTransactions.length > 0 && (
               <div>
-                <h4 className="debug-subtitle">Sample Transaction</h4>
-                <div className="debug-code">
+                <h4 className="text-md font-medium mb-2">Sample Transaction</h4>
+                <div className="bg-gray-50 p-4 rounded overflow-auto max-h-40 text-sm font-mono">
                   ID: {allTransactions[0].id || 'N/A'}<br />
                   Account: {allTransactions[0].account || 'Not set'}<br />
                   Symbol: {allTransactions[0].symbol || 'N/A'}<br />
@@ -548,15 +540,15 @@ const StorageManager = ({ onDataChange }) => {
         <DatabaseDebugger />
       </div>
 
-      <div className="info-box warning">
-        <h3 className="info-title">About Local Storage</h3>
-        <p className="info-text">
+      <div className="alert alert-info mt-6">
+        <h3 className="font-medium mb-2">About Local Storage</h3>
+        <p className="mb-2">
           This application stores all data locally in your browser's IndexedDB storage. No data is sent to any server.
         </p>
-        <p className="info-text">
+        <p className="mb-2">
           Using the "Purge" options will permanently delete data from your browser's storage. Make sure to export your data before purging if you want to keep a backup.
         </p>
-        <p className="info-text">
+        <p>
           You can also clear the application's data through your browser's settings or developer tools if needed.
         </p>
       </div>

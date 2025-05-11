@@ -1,3 +1,7 @@
+### 0.3.45
+
+- try again to fix date parsing from filename
+
 ### 0.3.44
 
 - fix date parsing

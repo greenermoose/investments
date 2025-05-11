@@ -322,7 +322,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
    * @param {string} fileName - Name of uploaded file
    * @param {Date} dateFromFileName - Date extracted from filename (optional)
    */
-  const handlePortfolioFile = async (fileContent, fileName, dateFromFileName) => {
+  const handlePortfolioFile = async (fileContent, fileName, dateFromFileName = null) => {
     try {
       // Parse the CSV data
       const parsedData = parsePortfolioCSV(fileContent);
@@ -331,36 +331,12 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
         throw new Error('No portfolio data found in the file. Please check the file format.');
       }
       
-      // Determine the portfolio date
-      let portfolioDate = parsedData.portfolioDate || dateFromFileName;
-      
-      // If still no date, create one from current time as fallback
-      if (!portfolioDate) {
-        // Try one more attempt to parse date from filename
-        const actualFileName = fileName.replace(/^.*[\\\/]/, ''); // Extract just the filename without path
-        console.log(`Attempting to parse date from actual filename: ${actualFileName}`);
-        
-        // Try various filename patterns
-        if (actualFileName.includes('-')) {
-          // Try parsing hyphenated format
-          const dateMatch = actualFileName.match(/(\d{4})-(\d{2})-(\d{2})-(\d{6})/);
-          if (dateMatch) {
-            const [_, year, month, day, timeStr] = dateMatch;
-            const hours = timeStr.substring(0, 2);
-            const minutes = timeStr.substring(2, 4);
-            const seconds = timeStr.substring(4, 6);
-            
-            portfolioDate = new Date(year, month-1, day, hours, minutes, seconds);
-            console.log(`Parsed date from hyphenated filename: ${portfolioDate}`);
-          }
-        }
-        
-        // If still no date, use current
-        if (!portfolioDate) {
-          portfolioDate = new Date();
-          console.warn('Could not extract date from file or filename. Using current date.');
-        }
+      if (!dateFromFileName) {
+        dateFromFileName = parseDateFromFilename(fileName);
       }
+
+      // Determine the portfolio date
+      let portfolioDate = dateFromFileName;
       
       // Extract account name
       const accountName = getAccountNameFromFilename(fileName);

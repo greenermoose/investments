@@ -311,6 +311,9 @@ export const validateFile = (file, expectedType) => {
  */
 export const parseDateFromFilename = (filename) => {
   if (!filename) return null;
+
+  // Debug to console
+  console.log(`Attempting to parse date from filename: ${filename}`);
   
   // First attempt: Match format with hyphens: YYYY-MM-DD-HHMMSS
   const dateWithHyphensMatch = filename.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})(\d{2})/);

@@ -465,6 +465,10 @@ export const migrateFromOldStorage = async () => {
     const missingFiles = [];
     
     portfolios.forEach(portfolio => {
+
+      // Debug portfolio info
+      console.log(`Portfolio: ${JSON.stringify(portfolio)}`);
+
       // Generate expected filename for this portfolio
       const accountName = portfolio.account;
       const portfolioDate = new Date(portfolio.date);

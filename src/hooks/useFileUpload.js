@@ -1,7 +1,10 @@
 // hooks/useFileUpload.js revision: 3
 import { useState } from 'react';
-import { parsePortfolioCSV } from '../utils/fileProcessing';
-import { getAccountNameFromFilename } from '../utils/fileProcessing';
+import {
+  parsePortfolioCSV,
+  getAccountNameFromFilename,
+  parseDateFromFilename
+} from '../utils/fileProcessing';
 import { 
   savePortfolioSnapshot, 
   getLatestSnapshot,
@@ -333,8 +336,30 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       
       // If still no date, create one from current time as fallback
       if (!portfolioDate) {
-        portfolioDate = new Date();
-        console.warn('Could not extract date from file or filename. Using current date.');
+        // Try one more attempt to parse date from filename
+        const actualFileName = fileName.replace(/^.*[\\\/]/, ''); // Extract just the filename without path
+        console.log(`Attempting to parse date from actual filename: ${actualFileName}`);
+        
+        // Try various filename patterns
+        if (actualFileName.includes('-')) {
+          // Try parsing hyphenated format
+          const dateMatch = actualFileName.match(/(\d{4})-(\d{2})-(\d{2})-(\d{6})/);
+          if (dateMatch) {
+            const [_, year, month, day, timeStr] = dateMatch;
+            const hours = timeStr.substring(0, 2);
+            const minutes = timeStr.substring(2, 4);
+            const seconds = timeStr.substring(4, 6);
+            
+            portfolioDate = new Date(year, month-1, day, hours, minutes, seconds);
+            console.log(`Parsed date from hyphenated filename: ${portfolioDate}`);
+          }
+        }
+        
+        // If still no date, use current
+        if (!portfolioDate) {
+          portfolioDate = new Date();
+          console.warn('Could not extract date from file or filename. Using current date.');
+        }
       }
       
       // Extract account name
@@ -429,8 +454,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       console.error('Error processing portfolio file:', error);
       recordUploadError(fileName, error.message);
       throw error;
-    }
-  };
+    }     
+};
   
   // Helper function to enrich portfolio data with transaction information
   const enrichPortfolioWithTransactionData = async (portfolioData, reconciliationResults) => {

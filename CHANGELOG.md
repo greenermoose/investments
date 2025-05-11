@@ -1,3 +1,7 @@
+### 0.3.44
+
+- fix date parsing
+
 ### 0.3.43
 
 - StorageManager using semantic CSS

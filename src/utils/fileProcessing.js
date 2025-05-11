@@ -312,36 +312,67 @@ export const validateFile = (file, expectedType) => {
 export const parseDateFromFilename = (filename) => {
   if (!filename) return null;
   
-  // Match format with hyphens: YYYY-MM-DD-HHMMSS
-  const dateMatch = filename.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})(\d{2})/);
-  if (dateMatch) {
-    const [_, year, month, day, hours, minutes, seconds] = dateMatch;
+  // First attempt: Match format with hyphens: YYYY-MM-DD-HHMMSS
+  const dateWithHyphensMatch = filename.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})(\d{2})/);
+  if (dateWithHyphensMatch) {
+    const [_, year, month, day, hours, minutes, seconds] = dateWithHyphensMatch;
     const date = new Date(year, month-1, day, hours, minutes, seconds);
     
     // Validate the date
-    if (isNaN(date.getTime())) {
-      console.warn(`Invalid date parsed from filename: ${filename}`);
-      return null;
+    if (!isNaN(date.getTime())) {
+      console.log(`Successfully parsed date with hyphens from filename: ${filename}, date: ${date}`);
+      return date;
     }
-    
-    return date;
   }
   
-  // Try to match format: accountNameYYYYMMDDHHMMSS.csv
-  const altDateMatch = filename.match(/.*?(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})\.csv$/i);
-  if (altDateMatch) {
-    const [_, year, month, day, hours, minutes, seconds] = altDateMatch;
+  // Second attempt: Try to match format with different pattern: Positions-YYYY-MM-DD-HHMMSS
+  const positionsDateMatch = filename.match(/Positions-(\d{4})-(\d{2})-(\d{2})-(\d{6})/);
+  if (positionsDateMatch) {
+    const [_, year, month, day, timeStr] = positionsDateMatch;
+    const hours = timeStr.substring(0, 2);
+    const minutes = timeStr.substring(2, 4);
+    const seconds = timeStr.substring(4, 6);
+    
     const date = new Date(year, month-1, day, hours, minutes, seconds);
     
     // Validate the date
-    if (isNaN(date.getTime())) {
-      console.warn(`Invalid date parsed from filename: ${filename}`);
-      return null;
+    if (!isNaN(date.getTime())) {
+      console.log(`Successfully parsed date from Positions pattern: ${filename}, date: ${date}`);
+      return date;
     }
-    
-    return date;
   }
   
+  // Third attempt: Try to match format: accountNameYYYYMMDDHHMMSS.csv
+  const dateNoSeparatorsMatch = filename.match(/.*?(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})\.csv$/i);
+  if (dateNoSeparatorsMatch) {
+    const [_, year, month, day, hours, minutes, seconds] = dateNoSeparatorsMatch;
+    const date = new Date(year, month-1, day, hours, minutes, seconds);
+    
+    // Validate the date
+    if (!isNaN(date.getTime())) {
+      console.log(`Successfully parsed date without separators from filename: ${filename}, date: ${date}`);
+      return date;
+    }
+  }
+  
+  // Fourth attempt (for your specific case): Match IRA-Positions-YYYY-MM-DD-HHMMSS
+  const iraPositionsMatch = filename.match(/IRA-Positions-(\d{4})-(\d{2})-(\d{2})-(\d{6})/);
+  if (iraPositionsMatch) {
+    const [_, year, month, day, timeStr] = iraPositionsMatch;
+    const hours = timeStr.substring(0, 2);
+    const minutes = timeStr.substring(2, 4);
+    const seconds = timeStr.substring(4, 6);
+    
+    const date = new Date(year, month-1, day, hours, minutes, seconds);
+    
+    // Validate the date
+    if (!isNaN(date.getTime())) {
+      console.log(`Successfully parsed date from IRA-Positions pattern: ${filename}, date: ${date}`);
+      return date;
+    }
+  }
+  
+  console.warn(`Could not parse any date from filename: ${filename}`);
   return null;
 };
 
@@ -372,7 +403,19 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern: AccountType_AccountName_Positions_Date.csv
   const altMatch = filename.match(/^([^_]+_[^_]+)_Positions/);
   if (altMatch) {
-    return altMatch[1];
+    return altMatch[1].replace(/_/g, ' ');
+  }
+  
+  // If all else fails, try to extract a reasonable account name
+  const parts = filename.split(/[-_\.]/);
+  if (parts.length > 1) {
+    // Filter out common non-account segments
+    const accountParts = parts.filter(part => 
+      !part.match(/^(Positions|Transactions|CSV|20\d{2})/)
+    );
+    if (accountParts.length > 0) {
+      return accountParts.join(' ');
+    }
   }
   
   return 'Unknown Account';

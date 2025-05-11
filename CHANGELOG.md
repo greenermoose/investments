@@ -1,3 +1,7 @@
+### 0.3.42
+
+- add FILES to help Claude find files
+
 ### 0.3.41
 
 - trying to sort out CSS files

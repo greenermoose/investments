@@ -462,28 +462,7 @@ const StorageManager = ({ onDataChange }) => {
         </div>
       )}
       
-      <div className="stats-container">
-        <h3 className="section-title">Storage Statistics</h3>
-        <div className="stats-grid">
-          <div className="stat-card stat-card-primary">
-            <p className="stat-label">Accounts</p>
-            <p className="stat-value">{storageStats.accounts || 0}</p>
-          </div>
-          <div className="stat-card stat-card-success">
-            <p className="stat-label">Snapshots</p>
-            <p className="stat-value">{storageStats.totalSnapshots || 0}</p>
-          </div>
-          <div className="stat-card stat-card-info">
-            <p className="stat-label">Transactions</p>
-            <p className="stat-value">{storageStats.totalTransactions || 0}</p>
-            {allTransactions.length > 0 && (
-              <p className="text-sm text-gray-500">
-                ({allTransactions.filter(t => !t.account || t.account === 'Unknown').length} unassigned)
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
+      <div>Accounts: {storageStats.accounts || 0}, Snapshots: {storageStats.totalSnapshots || 0}, Transactions: {storageStats.totalTransactions || 0}</div>
       
       {renderTabNavigation()}
       

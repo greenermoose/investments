@@ -1,3 +1,7 @@
+### 0.3.46
+
+- Storage Manager more compact display
+
 ### 0.3.45
 
 - try again to fix date parsing from filename

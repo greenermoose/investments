@@ -134,6 +134,10 @@ export const findFileByName = async (filename) => {
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
   const db = await initializeFileStorage();
 
+  // Add a direct reference to the portfolio for this uploaded file
+  const formattedDate = fileDate ? fileDate.toISOString().slice(0, 10).replace(/-/g, '') : '';
+  const portfolioReference = `${accountName}_${formattedDate}`;
+
   // Calculate file hash to detect duplicates
   const fileHash = await calculateFileHash(content);
 
@@ -172,6 +176,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     const fileRecord = {
       id: fileId,
+      portfolioReference,
       filename,
       account: accountName,
       fileType,
@@ -481,6 +486,7 @@ export const migrateFromOldStorage = async () => {
       
       // Check if we have a file matching this pattern
       const matchingFile = files.find(file => 
+        file.portfolioReference === `${accountName}_${formattedDate}` ||
         file.filename.includes(expectedPattern) && file.fileType === 'csv'
       );
       

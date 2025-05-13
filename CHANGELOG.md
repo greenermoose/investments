@@ -1,3 +1,7 @@
+### 0.3.49
+
+- fix filename references
+
 ### 0.3.48
 
 - save uploaded files in DB

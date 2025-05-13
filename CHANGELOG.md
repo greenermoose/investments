@@ -1,3 +1,7 @@
+### 0.3.48
+
+- save uploaded files in DB
+
 ### 0.3.47
 
 - Backup & Restore under Storage Manager

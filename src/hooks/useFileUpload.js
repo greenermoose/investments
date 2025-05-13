@@ -20,6 +20,7 @@ import {
   applyTransactionsToPortfolio
 } from '../utils/portfolioTracker';
 import { detectSymbolChange } from '../utils/symbolMapping';
+import { saveUploadedFile } from '../utils/fileStorage';
 
 /**
  * File type definitions with validation rules
@@ -41,6 +42,10 @@ const FILE_TYPES = {
   }
 };
 
+/**
+ * Enhanced useFileUpload hook that properly saves original files
+ * Key fix: Add calls to saveUploadedFile when processing files
+ */
 export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   const [fileStats, setFileStats] = useState({
     recentUploads: [],
@@ -237,7 +242,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   };
   
   /**
-   * Handles transaction JSON file upload
+   * Handles transaction JSON file upload - FIXED VERSION
    * @param {string} fileContent - File content as string
    * @param {string} fileName - Name of uploaded file
    */
@@ -257,6 +262,19 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       const accountName = getAccountNameFromFilename(fileName);
 
       console.log(`Transaction file account name: ${accountName}`);
+      
+      // Get date information - if available from filename
+      const fileDate = parseDateFromFilename(fileName);
+      
+      // ----- FIX: Save the original file to storage -----
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        accountName,
+        'json',
+        fileDate
+      );
+      // -------------------------------------------------
       
       // Remove duplicates
       const uniqueTransactions = removeDuplicateTransactions(parsedData.transactions);
@@ -317,7 +335,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   };
   
   /**
-   * Handles portfolio CSV file upload
+   * Handles portfolio CSV file upload - FIXED VERSION
    * @param {string} fileContent - File content as string
    * @param {string} fileName - Name of uploaded file
    * @param {Date} dateFromFileName - Date extracted from filename (optional)
@@ -336,7 +354,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
 
       // Determine the portfolio date
-      let portfolioDate = dateFromFileName;
+      let portfolioDate = dateFromFileName || parsedData.portfolioDate || new Date();
       
       // Extract account name
       const accountName = getAccountNameFromFilename(fileName);
@@ -350,6 +368,16 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       console.log('DEBUG: Final portfolio date:', portfolioDate);
       console.log('DEBUG: Parsed data rows:', parsedData.portfolioData.length);
       console.log('=============================');
+      
+      // ----- FIX: Save the original file to storage -----
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        accountName,
+        'csv',
+        portfolioDate
+      );
+      // -------------------------------------------------
       
       // Get the latest snapshot for comparison
       const latestSnapshot = await getLatestSnapshot(accountName);
@@ -431,7 +459,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       recordUploadError(fileName, error.message);
       throw error;
     }     
-};
+  };
   
   // Helper function to enrich portfolio data with transaction information
   const enrichPortfolioWithTransactionData = async (portfolioData, reconciliationResults) => {

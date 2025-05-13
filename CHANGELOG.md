@@ -1,3 +1,7 @@
+### 0.3.47
+
+- Backup & Restore under Storage Manager
+
 ### 0.3.46
 
 - Storage Manager more compact display

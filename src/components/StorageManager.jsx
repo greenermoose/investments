@@ -1,20 +1,21 @@
 // src/utils/StorageManager.jsx
 import React, { useState, useEffect } from 'react';
-import { 
-  getAllAccounts, 
-  purgeAccountData,
-  getAccountSnapshots,
-} from '../utils/portfolioStorage';
+import BackupManager from './BackupManager';
+import DatabaseDebugger from './DatabaseDebugger';
+import DeleteConfirmationModal from './DeleteConfirmationModal';
+import FileManager from './FileManager';
+import { formatDate } from '../utils/dataUtils';
 import {
   initializeDB,
   exportAllData, 
   importAllData, 
   purgeAllData
 } from '../utils/databaseUtils';
-import FileManager from './FileManager';
-import DeleteConfirmationModal from './DeleteConfirmationModal';
-import { formatDate } from '../utils/dataUtils';
-import DatabaseDebugger from './DatabaseDebugger';
+import { 
+  getAllAccounts, 
+  purgeAccountData,
+  getAccountSnapshots,
+} from '../utils/portfolioStorage';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 
@@ -372,59 +373,6 @@ const StorageManager = ({ onDataChange }) => {
     );
   };
 
-  const renderBackupSection = () => {
-    return (
-      <div className="backup-section">
-        <h3 className="section-title">Backup & Restore</h3>
-        <div className="backup-grid">
-          <div className="card">
-            <h4 className="card-title">Export All Data</h4>
-            <p className="card-text">
-              Download all your portfolio data, snapshots, and transactions as a single JSON file for backup purposes.
-            </p>
-            <button
-              onClick={handleExportAll}
-              disabled={isLoading}
-              className={`btn btn-primary ${isLoading ? 'btn-disabled' : ''}`}
-            >
-              {isLoading ? 'Exporting...' : 'Export All Data'}
-            </button>
-          </div>
-          
-          <div className="card">
-            <h4 className="card-title">Import Data</h4>
-            <p className="card-text">
-              Restore your portfolio data from a previously exported backup file.
-            </p>
-            <div className="file-input-container">
-              <input
-                type="file"
-                accept=".json"
-                onChange={handleImport}
-                className="file-input"
-                id="import-file"
-                disabled={isLoading}
-              />
-              <label
-                htmlFor="import-file"
-                className={`file-label ${isLoading ? 'btn-disabled' : ''}`}
-              >
-                {isLoading ? 'Importing...' : 'Choose File to Import'}
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div className="info-box">
-          <h4 className="info-title">About Backups</h4>
-          <p className="info-text">
-            Regular backups are essential to prevent data loss. Exporting your data periodically ensures you can restore your portfolio history if needed.
-          </p>
-        </div>
-      </div>
-    );
-  };
-
   if (isLoading && accounts.length === 0 && allTransactions.length === 0) {
     return (
       <div className="card">
@@ -472,7 +420,7 @@ const StorageManager = ({ onDataChange }) => {
       
       {activeSection === 'accounts' && renderAccountsSection()}
       
-      {activeSection === 'backup' && renderBackupSection()}
+      {activeSection === 'backup' && ( <BackupManager /> ) }
       
       {activeSection === 'accounts' && allTransactions.length > 0 && (
         <div className="mt-6">

@@ -292,11 +292,6 @@ const AccountManagement = ({ onDataChange }) => {
         )}
       </div>
       
-      <BackupManager onImportComplete={() => {
-        loadAccounts();
-        onDataChange?.();
-      }} />
-      
       <DeleteConfirmationModal
         isOpen={deleteModal.isOpen}
         onClose={() => setDeleteModal({ isOpen: false })}

@@ -174,27 +174,83 @@ export const getSymbolMappings = async (symbol) => {
 
 // Enhanced portfolio snapshot with transaction metadata
 export const savePortfolioSnapshot = async (portfolioData, accountName, date, accountTotal, transactionMetadata = null) => {
+  if (!portfolioData || !Array.isArray(portfolioData)) {
+    throw new Error('Invalid portfolio data: must be an array');
+  }
+
+  if (!accountName) {
+    throw new Error('Account name is required');
+  }
+
+  if (!(date instanceof Date) || isNaN(date.getTime())) {
+    throw new Error('Invalid date provided');
+  }
+
+  console.log('Saving portfolio snapshot:', {
+    accountName,
+    date: date.toISOString(),
+    positions: portfolioData.length,
+    totalValue: accountTotal?.totalValue
+  });
+
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transactionStore = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
-    const store = transactionStore.objectStore(STORE_NAME_PORTFOLIOS);
-    
-    // Create a unique portfolio ID with random component to prevent collisions
-    const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
-    const portfolio = {
-      id: portfolioId,
-      account: accountName,
-      date: date,
-      data: portfolioData,
-      accountTotal: accountTotal,
-      transactionMetadata: transactionMetadata,
-      createdAt: new Date()
-    };
-    
-    const request = store.put(portfolio);
-    request.onsuccess = () => resolve(portfolioId);
-    request.onerror = () => reject(request.error);
+    try {
+      const transactionStore = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
+      const store = transactionStore.objectStore(STORE_NAME_PORTFOLIOS);
+      
+      // Create a unique portfolio ID with random component to prevent collisions
+      const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
+      
+      // Validate and normalize portfolio data
+      const normalizedData = portfolioData.map(position => ({
+        ...position,
+        Symbol: position.Symbol?.trim(),
+        'Qty (Quantity)': parseFloat(position['Qty (Quantity)']) || 0,
+        'Mkt Val (Market Value)': parseFloat(position['Mkt Val (Market Value)']) || 0
+      }));
+
+      const portfolio = {
+        id: portfolioId,
+        account: accountName,
+        date: date,
+        data: normalizedData,
+        accountTotal: accountTotal || {
+          totalValue: normalizedData.reduce((sum, pos) => sum + (pos['Mkt Val (Market Value)'] || 0), 0),
+          totalGain: normalizedData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0)
+        },
+        transactionMetadata: transactionMetadata,
+        createdAt: new Date()
+      };
+      
+      const request = store.put(portfolio);
+      
+      request.onsuccess = () => {
+        console.log('Successfully saved portfolio snapshot:', {
+          id: portfolioId,
+          account: accountName,
+          date: date.toISOString()
+        });
+        resolve(portfolioId);
+      };
+      
+      request.onerror = (event) => {
+        console.error('Error saving portfolio snapshot:', event.target.error);
+        reject(new Error(`Failed to save portfolio: ${event.target.error.message}`));
+      };
+
+      transactionStore.oncomplete = () => {
+        console.log('Portfolio transaction completed successfully');
+      };
+
+      transactionStore.onerror = (event) => {
+        console.error('Portfolio transaction failed:', event.target.error);
+      };
+    } catch (error) {
+      console.error('Error in savePortfolioSnapshot:', error);
+      reject(error);
+    }
   });
 };
 

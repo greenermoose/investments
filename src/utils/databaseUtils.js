@@ -14,10 +14,22 @@ export const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
 // Initialize IndexedDB with updated schema
 export const initializeDB = () => {
   return new Promise((resolve, reject) => {
+    // First check if IndexedDB is available
+    if (!window.indexedDB) {
+      console.error('Your browser does not support IndexedDB');
+      reject(new Error('IndexedDB not supported'));
+      return;
+    }
+
     console.log(`Initializing database ${DB_NAME} with version ${DB_VERSION}`);
     
     // Check current version first
     const checkRequest = indexedDB.open(DB_NAME);
+    
+    checkRequest.onerror = (event) => {
+      console.error('Error opening database:', event.target.error);
+      reject(new Error(`Failed to open database: ${event.target.error.message}`));
+    };
     
     checkRequest.onsuccess = () => {
       const db = checkRequest.result;
@@ -32,67 +44,85 @@ export const initializeDB = () => {
         console.warn(`Database version (${currentVersion}) is higher than expected (${DB_VERSION}). Adapting...`);
         // Just use the existing version
         const adaptRequest = indexedDB.open(DB_NAME);
-        adaptRequest.onerror = () => reject(adaptRequest.error);
+        adaptRequest.onerror = (event) => {
+          console.error('Error adapting to existing database:', event.target.error);
+          reject(event.target.error);
+        };
         adaptRequest.onsuccess = () => resolve(adaptRequest.result);
       } else {
         // Open with expected version
         const request = indexedDB.open(DB_NAME, DB_VERSION);
-        request.onerror = () => reject(request.error);
+        
+        request.onerror = (event) => {
+          console.error('Error upgrading database:', event.target.error);
+          reject(event.target.error);
+        };
+        
         request.onsuccess = () => resolve(request.result);
         
         request.onupgradeneeded = (event) => {
           const db = event.target.result;
           console.log(`Upgrading database from version ${event.oldVersion} to ${DB_VERSION}`);
           
-          // Portfolios store
-          if (!db.objectStoreNames.contains(STORE_NAME_PORTFOLIOS)) {
-            const portfolioStore = db.createObjectStore(STORE_NAME_PORTFOLIOS, { keyPath: 'id' });
-            portfolioStore.createIndex('account', 'account', { unique: false });
-            portfolioStore.createIndex('date', 'date', { unique: false });
-          }
-          
-          // Securities metadata store
-          if (!db.objectStoreNames.contains(STORE_NAME_SECURITIES)) {
-            const securityStore = db.createObjectStore(STORE_NAME_SECURITIES, { keyPath: 'id' });
-            securityStore.createIndex('symbol', 'symbol', { unique: false });
-            securityStore.createIndex('account', 'account', { unique: false });
-          }
-          
-          // Lots store for tracking lots per security
-          if (!db.objectStoreNames.contains(STORE_NAME_LOTS)) {
-            const lotStore = db.createObjectStore(STORE_NAME_LOTS, { keyPath: 'id' });
-            lotStore.createIndex('securityId', 'securityId', { unique: false });
-            lotStore.createIndex('account', 'account', { unique: false });
-          }
-          
-          // Transactions store
-          if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTIONS)) {
-            const transactionStore = db.createObjectStore(STORE_NAME_TRANSACTIONS, { keyPath: 'id' });
-            transactionStore.createIndex('account', 'account', { unique: false });
-            transactionStore.createIndex('symbol', 'symbol', { unique: false });
-            transactionStore.createIndex('date', 'date', { unique: false });
-            transactionStore.createIndex('action', 'action', { unique: false });
-          }
-          
-          // Manual adjustments store
-          if (!db.objectStoreNames.contains(STORE_NAME_MANUAL_ADJUSTMENTS)) {
-            const adjustmentStore = db.createObjectStore(STORE_NAME_MANUAL_ADJUSTMENTS, { keyPath: 'id' });
-            adjustmentStore.createIndex('symbol', 'symbol', { unique: false });
-            adjustmentStore.createIndex('account', 'account', { unique: false });
-            adjustmentStore.createIndex('date', 'date', { unique: false });
-          }
-          
-          // Transaction metadata store
-          if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTION_METADATA)) {
-            const metadataStore = db.createObjectStore(STORE_NAME_TRANSACTION_METADATA, { keyPath: 'id' });
-            metadataStore.createIndex('symbol', 'symbol', { unique: false });
-            metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
+          try {
+            // Portfolios store
+            if (!db.objectStoreNames.contains(STORE_NAME_PORTFOLIOS)) {
+              const portfolioStore = db.createObjectStore(STORE_NAME_PORTFOLIOS, { keyPath: 'id' });
+              portfolioStore.createIndex('account', 'account', { unique: false });
+              portfolioStore.createIndex('date', 'date', { unique: false });
+              console.log('Created portfolios store');
+            }
+            
+            // Securities metadata store
+            if (!db.objectStoreNames.contains(STORE_NAME_SECURITIES)) {
+              const securityStore = db.createObjectStore(STORE_NAME_SECURITIES, { keyPath: 'id' });
+              securityStore.createIndex('symbol', 'symbol', { unique: false });
+              securityStore.createIndex('account', 'account', { unique: false });
+              console.log('Created securities store');
+            }
+            
+            // Lots store for tracking lots per security
+            if (!db.objectStoreNames.contains(STORE_NAME_LOTS)) {
+              const lotStore = db.createObjectStore(STORE_NAME_LOTS, { keyPath: 'id' });
+              lotStore.createIndex('securityId', 'securityId', { unique: false });
+              lotStore.createIndex('account', 'account', { unique: false });
+              console.log('Created lots store');
+            }
+            
+            // Transactions store
+            if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTIONS)) {
+              const transactionStore = db.createObjectStore(STORE_NAME_TRANSACTIONS, { keyPath: 'id' });
+              transactionStore.createIndex('account', 'account', { unique: false });
+              transactionStore.createIndex('symbol', 'symbol', { unique: false });
+              transactionStore.createIndex('date', 'date', { unique: false });
+              transactionStore.createIndex('action', 'action', { unique: false });
+              console.log('Created transactions store');
+            }
+            
+            // Manual adjustments store
+            if (!db.objectStoreNames.contains(STORE_NAME_MANUAL_ADJUSTMENTS)) {
+              const adjustmentStore = db.createObjectStore(STORE_NAME_MANUAL_ADJUSTMENTS, { keyPath: 'id' });
+              adjustmentStore.createIndex('symbol', 'symbol', { unique: false });
+              adjustmentStore.createIndex('account', 'account', { unique: false });
+              adjustmentStore.createIndex('date', 'date', { unique: false });
+              console.log('Created manual adjustments store');
+            }
+            
+            // Transaction metadata store
+            if (!db.objectStoreNames.contains(STORE_NAME_TRANSACTION_METADATA)) {
+              const metadataStore = db.createObjectStore(STORE_NAME_TRANSACTION_METADATA, { keyPath: 'id' });
+              metadataStore.createIndex('symbol', 'symbol', { unique: false });
+              metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
+              console.log('Created transaction metadata store');
+            }
+          } catch (error) {
+            console.error('Error during database upgrade:', error);
+            event.target.transaction.abort();
+            reject(error);
           }
         };
       }
     };
-    
-    checkRequest.onerror = () => reject(checkRequest.error);
   });
 };
 

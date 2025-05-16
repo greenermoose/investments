@@ -1,3 +1,7 @@
+### 0.3.50
+
+- cursor added error handling
+
 ### 0.3.49
 
 - fix filename references

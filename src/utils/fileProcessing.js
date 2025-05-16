@@ -385,43 +385,44 @@ export const parseDateFromFilename = (filename) => {
  * @returns {string} The extracted account name
  */
 export const getAccountNameFromFilename = (filename) => {
-  // Pattern for files with hyphens: AccountType_AccountName-Positions-Date.csv
-  const match = filename.match(/^([^-]+)-Positions/);
-  if (match) {
-    return match[1].replace(/_/g, ' ');
+  console.log('Attempting to extract account name from filename:', filename);
+  
+  // Remove file extension first
+  const nameWithoutExt = filename.replace(/\.[^.]+$/, '');
+  
+  // Pattern 1: Files with hyphens: AccountType-AccountName-Positions-Date.csv
+  const hyphenMatch = nameWithoutExt.match(/^([^-]+(?:-[^-]+)*)-(?:Positions|Transactions)/);
+  if (hyphenMatch) {
+    const accountName = hyphenMatch[1].replace(/-/g, ' ');
+    console.log('Matched hyphen pattern:', accountName);
+    return accountName;
   }
 
-  // Pattern for files with underscores: AccountType_Account_Name_AccountNumber_Transactions_Date.csv
-  const matchTransactions = filename.match(/^(.+)_[^_]+_Transactions/);
-  if (matchTransactions) {
-    return matchTransactions[1].replace(/_/g, ' ');
+  // Pattern 2: Files with underscores: AccountType_AccountName_Positions_Date.csv
+  const underscoreMatch = nameWithoutExt.match(/^([^_]+(?:_[^_]+)*?)_(?:Positions|Transactions)/);
+  if (underscoreMatch) {
+    const accountName = underscoreMatch[1].replace(/_/g, ' ');
+    console.log('Matched underscore pattern:', accountName);
+    return accountName;
   }
 
-  // Fallback pattern
-  const fallbackMatch = filename.match(/^([^_]+_[^_]+)_?Positions/);
-  if (fallbackMatch) {
-    return fallbackMatch[1].replace(/_/g, ' ');
+  // Pattern 3: Files with date embedded: AccountName20240327123456.csv
+  const dateMatch = nameWithoutExt.match(/^(.+?)(?:\d{14}|\d{8})/);
+  if (dateMatch) {
+    const accountName = dateMatch[1]
+      .replace(/[-_]/g, ' ')
+      .trim();
+    console.log('Matched date pattern:', accountName);
+    return accountName;
   }
+
+  // Pattern 4: Try to extract from first line of file content
+  // This will be handled separately in the file processing logic
   
-  // Pattern: AccountType_AccountName_Positions_Date.csv
-  const altMatch = filename.match(/^([^_]+_[^_]+)_Positions/);
-  if (altMatch) {
-    return altMatch[1].replace(/_/g, ' ');
-  }
-  
-  // If all else fails, try to extract a reasonable account name
-  const parts = filename.split(/[-_\.]/);
-  if (parts.length > 1) {
-    // Filter out common non-account segments
-    const accountParts = parts.filter(part => 
-      !part.match(/^(Positions|Transactions|CSV|20\d{2})/)
-    );
-    if (accountParts.length > 0) {
-      return accountParts.join(' ');
-    }
-  }
-  
-  return 'Unknown Account';
+  // If no patterns match, use a default with timestamp
+  const defaultName = `Account ${new Date().toISOString().split('T')[0]}`;
+  console.warn('No account name pattern matched. Using default:', defaultName);
+  return defaultName;
 };
 
 /**

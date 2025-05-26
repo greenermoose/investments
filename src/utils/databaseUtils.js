@@ -10,6 +10,7 @@ export const STORE_NAME_LOTS = 'lots';
 export const STORE_NAME_TRANSACTIONS = 'transactions';
 export const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
 export const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
+export const STORE_NAME_FILES = 'uploaded_files';
 
 // Initialize IndexedDB with updated schema
 export const initializeDB = () => {
@@ -115,6 +116,17 @@ export const initializeDB = () => {
               metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
               console.log('Created transaction metadata store');
             }
+            
+            // File store for uploaded files
+            if (!db.objectStoreNames.contains(STORE_NAME_FILES)) {
+              const fileStore = db.createObjectStore(STORE_NAME_FILES, { keyPath: 'id' });
+              fileStore.createIndex('filename', 'filename', { unique: false });
+              fileStore.createIndex('fileType', 'fileType', { unique: false });
+              fileStore.createIndex('uploadDate', 'uploadDate', { unique: false });
+              fileStore.createIndex('account', 'account', { unique: false });
+              fileStore.createIndex('fileHash', 'fileHash', { unique: false });
+              console.log('Created files store');
+            }
           } catch (error) {
             console.error('Error during database upgrade:', error);
             event.target.transaction.abort();
@@ -142,7 +154,8 @@ export const purgeAllData = async () => {
         STORE_NAME_LOTS,
         STORE_NAME_TRANSACTIONS,
         STORE_NAME_MANUAL_ADJUSTMENTS,
-        STORE_NAME_TRANSACTION_METADATA
+        STORE_NAME_TRANSACTION_METADATA,
+        STORE_NAME_FILES
       ], 'readwrite');
       
       // Clear all stores
@@ -152,6 +165,7 @@ export const purgeAllData = async () => {
       transaction.objectStore(STORE_NAME_TRANSACTIONS).clear();
       transaction.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS).clear();
       transaction.objectStore(STORE_NAME_TRANSACTION_METADATA).clear();
+      transaction.objectStore(STORE_NAME_FILES).clear();
       
       transaction.oncomplete = () => {
         console.log('Successfully purged all application data');
@@ -178,10 +192,11 @@ export const exportAllData = async () => {
       portfolios: [],
       securities: [],
       lots: [],
+      files: [],
       exportDate: new Date().toISOString()
     };
     
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readonly');
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS, STORE_NAME_FILES], 'readonly');
     
     // Export portfolios
     const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
@@ -213,6 +228,16 @@ export const exportAllData = async () => {
       }
     };
     
+    // Export files
+    const fileStore = transaction.objectStore(STORE_NAME_FILES);
+    fileStore.openCursor().onsuccess = (event) => {
+      const cursor = event.target.result;
+      if (cursor) {
+        data.files.push(cursor.value);
+        cursor.continue();
+      }
+    };
+    
     transaction.oncomplete = () => resolve(data);
     transaction.onerror = () => reject(transaction.error);
   });
@@ -223,11 +248,12 @@ export const importAllData = async (data) => {
   const db = await initializeDB();
   
   return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS], 'readwrite');
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS, STORE_NAME_SECURITIES, STORE_NAME_LOTS, STORE_NAME_FILES], 'readwrite');
     
     const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
     const securityStore = transaction.objectStore(STORE_NAME_SECURITIES);
     const lotStore = transaction.objectStore(STORE_NAME_LOTS);
+    const fileStore = transaction.objectStore(STORE_NAME_FILES);
     
     // Import portfolios
     data.portfolios.forEach(portfolio => {
@@ -243,6 +269,13 @@ export const importAllData = async (data) => {
     data.lots.forEach(lot => {
       lotStore.put(lot);
     });
+    
+    // Import files (if available)
+    if (data.files && Array.isArray(data.files)) {
+      data.files.forEach(file => {
+        fileStore.put(file);
+      });
+    }
     
     transaction.oncomplete = () => resolve();
     transaction.onerror = () => reject(transaction.error);

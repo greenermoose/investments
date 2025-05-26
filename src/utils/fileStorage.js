@@ -1,7 +1,7 @@
 // utils/fileStorage.js revision: 2
 // Handles file storage in IndexedDB for portfolio snapshots and transaction files
 
-import { DB_NAME, DB_VERSION } from './databaseUtils';
+import { DB_NAME, DB_VERSION, STORE_NAME_FILES, initializeDB } from './databaseUtils';
 
 /**
  * File Types 
@@ -12,62 +12,12 @@ export const FileTypes = {
 };
 
 /**
- * Storage schema version
- */
-const STORE_NAME_FILES = 'uploaded_files';
-
-/**
  * Initialize the file storage database
  * @returns {Promise<IDBDatabase>} Initialized database
  */
 export const initializeFileStorage = () => {
-  return new Promise((resolve, reject) => {
-    console.log(`Initializing file storage with DB version ${DB_VERSION}`);
-    
-    // Check current version first
-    const checkRequest = indexedDB.open(DB_NAME);
-    
-    checkRequest.onsuccess = () => {
-      const db = checkRequest.result;
-      const currentVersion = db.version;
-      console.log(`Current database version is ${currentVersion}, target version is ${DB_VERSION}`);
-      
-      // Close the connection
-      db.close();
-      
-      // Open with correct version
-      if (currentVersion > DB_VERSION) {
-        console.warn(`Database version (${currentVersion}) is higher than expected (${DB_VERSION}). Adapting...`);
-        // Just use the existing version
-        const adaptRequest = indexedDB.open(DB_NAME);
-        adaptRequest.onerror = () => reject(adaptRequest.error);
-        adaptRequest.onsuccess = () => resolve(adaptRequest.result);
-      } else {
-        // Normal initialization with the desired version
-        const request = indexedDB.open(DB_NAME, DB_VERSION);
-        
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => resolve(request.result);
-        
-        request.onupgradeneeded = (event) => {
-          const db = event.target.result;
-          console.log(`Upgrading file storage from version ${event.oldVersion} to ${DB_VERSION}`);
-          
-          // Create file store if it doesn't exist
-          if (!db.objectStoreNames.contains(STORE_NAME_FILES)) {
-            const fileStore = db.createObjectStore(STORE_NAME_FILES, { keyPath: 'id' });
-            fileStore.createIndex('filename', 'filename', { unique: false });
-            fileStore.createIndex('fileType', 'fileType', { unique: false });
-            fileStore.createIndex('uploadDate', 'uploadDate', { unique: false });
-            fileStore.createIndex('account', 'account', { unique: false });
-            fileStore.createIndex('fileHash', 'fileHash', { unique: false });
-          }
-        };
-      }
-    };
-    
-    checkRequest.onerror = () => reject(checkRequest.error);
-  });
+  // Use the centralized initializeDB function to ensure consistent database initialization
+  return initializeDB();
 };
 
 /**
@@ -557,4 +507,35 @@ export const cleanupOldFiles = async (maxAgeInDays = 365) => {
   }
 
   return { deleted };
+};
+
+/**
+ * Completely purges all files from storage
+ * @returns {Promise<void>}
+ */
+export const purgeAllFiles = async () => {
+  const db = await initializeFileStorage();
+  
+  return new Promise((resolve, reject) => {
+    try {
+      // Create a transaction for file store
+      const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
+      
+      // Clear store
+      transaction.objectStore(STORE_NAME_FILES).clear();
+      
+      transaction.oncomplete = () => {
+        console.log('Successfully purged all files');
+        resolve();
+      };
+      
+      transaction.onerror = (error) => {
+        console.error('Error purging files:', error);
+        reject(transaction.error);
+      };
+    } catch (error) {
+      console.error('Error setting up purge for files:', error);
+      reject(error);
+    }
+  });
 };

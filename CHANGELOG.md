@@ -1,3 +1,8 @@
+### 0.3.51
+
+- cursor fixing uploaded_files object store error
+- added ARCHITECTURE.md file
+
 ### 0.3.50
 
 - cursor added error handling

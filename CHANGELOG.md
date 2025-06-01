@@ -1,3 +1,7 @@
+### 0.4.10
+
+- updated SecurityTracker.js
+
 ### 0.4.9
 
 - updated lotTracker.js

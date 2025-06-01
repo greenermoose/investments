@@ -1,8 +1,6 @@
 // components/LotManager.jsx
 import React, { useState, useEffect } from 'react';
-import { 
-  getSecurityLots
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { 
   calculateWeightedAverageCost, 
   calculateUnrealizedGainLoss
@@ -71,7 +69,7 @@ const LotManager = ({
       const securityId = `${currentAccount}_${selectedSecurity.Symbol}`;
       console.log(`Loading lots for security: ${securityId}`);
       
-      const securityLots = await getSecurityLots(securityId);
+      const securityLots = await portfolioService.getSecurityLots(securityId);
       setLots(securityLots || []);
       setError(null);
     } catch (err) {

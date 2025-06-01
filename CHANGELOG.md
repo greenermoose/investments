@@ -1,3 +1,7 @@
+### 0.4.8
+
+- updated LotManager.jsx, AccountManagement.jsx, and Portfolio Performance.jsx
+
 ### 0.4.7
 
 - updated StorageManager.jsx

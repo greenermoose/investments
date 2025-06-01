@@ -1,10 +1,6 @@
 // components/AccountSelector.jsx revision: 2
 import React, { useState, useEffect } from 'react';
-import { 
-  getAllAccounts, 
-  getAccountSnapshots,
-  getLatestSnapshot 
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 const AccountSelector = ({ currentAccount, onAccountChange }) => {
   const [accounts, setAccounts] = useState([]);
@@ -19,14 +15,14 @@ const AccountSelector = ({ currentAccount, onAccountChange }) => {
   const loadAccounts = async () => {
     try {
       setIsLoading(true);
-      const allAccounts = await getAllAccounts();
+      const allAccounts = await portfolioService.getAllAccounts();
       setAccounts(allAccounts);
       
       // Get stats for each account
       const stats = {};
       for (const account of allAccounts) {
-        const snapshots = await getAccountSnapshots(account);
-        const latestSnapshot = await getLatestSnapshot(account);
+        const snapshots = await portfolioService.getAccountSnapshots(account);
+        const latestSnapshot = await portfolioService.getLatestSnapshot(account);
         
         stats[account] = {
           snapshotCount: snapshots.length,

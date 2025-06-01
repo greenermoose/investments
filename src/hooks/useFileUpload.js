@@ -5,12 +5,7 @@ import {
   getAccountNameFromFilename,
   parseDateFromFilename
 } from '../utils/fileProcessing';
-import { 
-  savePortfolioSnapshot, 
-  getLatestSnapshot,
-  bulkMergeTransactions,
-  getTransactionsByAccount
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { analyzePortfolioChanges } from '../utils/positionTracker';
 import {
   parseTransactionJSON,
@@ -248,89 +243,42 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
    */
   const handleTransactionFile = async (fileContent, fileName) => {
     try {
-      console.log(`Starting to parse transaction file: ${fileName}`);
-
-      // Parse JSON transaction file
-      const parsedData = parseTransactionJSON(fileContent);
-      
-      // Basic validation of expected structure
-      if (!parsedData.transactions || !Array.isArray(parsedData.transactions)) {
-        throw new Error('Invalid transaction file format: missing transactions array');
+      // Parse transaction data
+      const transactionData = parseTransactionJSON(fileContent);
+      if (!transactionData || !transactionData.BrokerageTransactions) {
+        throw new Error('Invalid transaction file format');
       }
-      
-      // Extract account name
+
+      // Get account name from filename
       const accountName = getAccountNameFromFilename(fileName);
+      if (!accountName) {
+        throw new Error('Could not determine account name from filename');
+      }
 
-      console.log(`Transaction file account name: ${accountName}`);
-      
-      // Get date information - if available from filename
-      const fileDate = parseDateFromFilename(fileName);
-      
-      // ----- FIX: Save the original file to storage -----
-      await saveUploadedFile(
-        { name: fileName },
-        fileContent,
-        accountName,
-        'json',
-        fileDate
-      );
-      // -------------------------------------------------
-      
+      // Get existing transactions for comparison
+      const existingTransactions = await portfolioService.getTransactionsByAccount(accountName);
+
       // Remove duplicates
-      const uniqueTransactions = removeDuplicateTransactions(parsedData.transactions);
-      
-      // Merge transactions into database
-      const mergeResult = await bulkMergeTransactions(uniqueTransactions, accountName);
-      
-      console.log(`Processed ${mergeResult.processed} transactions, ${mergeResult.errors.length} errors`);
-      
-      // Get all transactions for the account
-      const allTransactions = await getTransactionsByAccount(accountName);
-      
-      // Get latest portfolio snapshot
-      const latestSnapshot = await getLatestSnapshot(accountName);
-      
-      if (latestSnapshot) {
-        // Apply transactions to portfolio to detect discrepancies
-        const reconciliation = applyTransactionsToPortfolio(allTransactions, latestSnapshot.data);
-        
-        console.log('Transaction reconciliation:', reconciliation);
-        
-        // Check for new securities without acquisition dates
-        const securitiesWithoutDates = reconciliation.results.filter(r => !r.hasAcquisitionDate);
-        
-        if (securitiesWithoutDates.length > 0) {
-          // Existing code to handle acquisitionModal...
-          const changes = {
-            acquired: securitiesWithoutDates.map(s => ({
-              symbol: s.symbol,
-              quantity: s.actual.quantity,
-              description: latestSnapshot.data.find(p => p.Symbol === s.symbol)?.Description || ''
-            })),
-            possibleTickerChanges: detectSymbolChange(allTransactions)
-          };
-          
-          onAcquisitionsFound.openAcquisitionModal(changes.acquired, changes.possibleTickerChanges);
-        }
-        
-        // If portfolio data is currently loaded, refresh it with acquisition dates
-        if (portfolioData.length > 0) {
-          const updatedPortfolioData = await enrichPortfolioWithTransactionData(latestSnapshot.data, reconciliation.results);
-          onLoad.loadPortfolio(updatedPortfolioData, accountName, latestSnapshot.date, latestSnapshot.accountTotal);
-        }
-      }
-      
-      // Navigate to performance tab to show transaction data
-      if (onLoad.onNavigate) {
-        onLoad.onNavigate('performance');
-      }
-      
+      const uniqueTransactions = removeDuplicateTransactions(
+        transactionData.BrokerageTransactions,
+        existingTransactions
+      );
+
+      // Save transactions
+      await portfolioService.bulkMergeTransactions(uniqueTransactions, accountName);
+
+      // Save the original file
+      await saveUploadedFile(fileContent, fileName, 'transaction');
+
+      // Record success
       recordUploadSuccess(fileName);
+
+      // Notify parent component
       onLoad.setLoadingState(false);
-    } catch (error) {
-      console.error('Error processing transaction file:', error);
-      recordUploadError(fileName, error.message);
-      throw new Error(`Failed to process transaction file: ${error.message}`);
+      onLoad.onSuccess('Transaction file processed successfully');
+    } catch (err) {
+      console.error('Error processing transaction file:', err);
+      throw err;
     }
   };
   
@@ -342,144 +290,53 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
    */
   const handlePortfolioFile = async (fileContent, fileName, dateFromFileName = null) => {
     try {
-      // Parse the CSV data
-      const parsedData = parsePortfolioCSV(fileContent);
-      
-      if (!parsedData.portfolioData || parsedData.portfolioData.length === 0) {
-        throw new Error('No portfolio data found in the file. Please check the file format.');
-      }
-      
-      if (!dateFromFileName) {
-        dateFromFileName = parseDateFromFilename(fileName);
+      // Parse portfolio data
+      const portfolioData = parsePortfolioCSV(fileContent);
+      if (!portfolioData || !portfolioData.length) {
+        throw new Error('Invalid portfolio file format');
       }
 
-      // Determine the portfolio date
-      let portfolioDate = dateFromFileName || parsedData.portfolioDate || new Date();
-      
-      // Extract account name
+      // Get account name from filename
       const accountName = getAccountNameFromFilename(fileName);
-      
-      // Debug logging
-      console.log('===== FILE UPLOAD DEBUG =====');
-      console.log('DEBUG: Filename:', fileName);
-      console.log('DEBUG: Account name:', accountName);
-      console.log('DEBUG: Date from filename:', dateFromFileName);
-      console.log('DEBUG: Date from CSV:', parsedData.portfolioDate);
-      console.log('DEBUG: Final portfolio date:', portfolioDate);
-      console.log('DEBUG: Parsed data rows:', parsedData.portfolioData.length);
-      console.log('=============================');
-      
-      // ----- FIX: Save the original file to storage -----
-      await saveUploadedFile(
-        { name: fileName },
-        fileContent,
+      if (!accountName) {
+        throw new Error('Could not determine account name from filename');
+      }
+
+      // Get snapshot date
+      const snapshotDate = dateFromFileName || parseDateFromFilename(fileName) || new Date();
+
+      // Get latest snapshot for comparison
+      const latestSnapshot = await portfolioService.getLatestSnapshot(accountName);
+
+      // Analyze changes
+      const changes = analyzePortfolioChanges(portfolioData, latestSnapshot?.data || []);
+
+      // Save portfolio snapshot
+      const portfolioId = await portfolioService.savePortfolioSnapshot(
+        portfolioData,
         accountName,
-        'csv',
-        portfolioDate
+        snapshotDate,
+        changes.accountTotal
       );
-      // -------------------------------------------------
-      
-      // Get the latest snapshot for comparison
-      const latestSnapshot = await getLatestSnapshot(accountName);
-      
-      if (latestSnapshot) {
-        console.log('DEBUG: Latest snapshot found:', {
-          id: latestSnapshot.id,
-          date: latestSnapshot.date.toLocaleString()
-        });
-      } else {
-        console.log('DEBUG: No previous snapshot found for this account');
-      }
-      
-      // Check if we have transaction data for this account
-      const accountTransactions = await getTransactionsByAccount(accountName);
-      
-      // If we have transactions, enrich portfolio data with acquisition dates
-      let enrichedPortfolioData = parsedData.portfolioData;
-      if (accountTransactions.length > 0) {
-        const reconciliation = applyTransactionsToPortfolio(accountTransactions, parsedData.portfolioData);
-        enrichedPortfolioData = await enrichPortfolioWithTransactionData(parsedData.portfolioData, reconciliation.results);
-        
-        // Log acquisition date coverage
-        const withAcquisitionDates = reconciliation.summary.withAcquisitionDates;
-        const totalPositions = reconciliation.summary.totalPositions;
-        console.log(`Acquisition date coverage: ${withAcquisitionDates}/${totalPositions} positions`);
-      }
-      
-      // Analyze changes if there's a previous snapshot
-      let changes = null;
-      if (latestSnapshot) {
-        changes = await analyzePortfolioChanges(enrichedPortfolioData, latestSnapshot.data);
-      }
-      
-      // Save the current snapshot
-      const portfolioId = await savePortfolioSnapshot(
-        enrichedPortfolioData, 
-        accountName, 
-        portfolioDate, 
-        parsedData.accountTotal
-      );
-      
-      console.log('DEBUG: Portfolio saved with ID:', portfolioId);
-      
-      // Handle new acquisitions
-      if (changes && changes.acquired.length > 0) {
-        // Add description to acquired securities
-        const enrichedAcquisitions = changes.acquired.map(acq => {
-          const security = enrichedPortfolioData.find(p => p.Symbol === acq.symbol);
-          return {
-            ...acq,
-            description: security?.Description || ''
-          };
-        });
-        
-        onAcquisitionsFound.openAcquisitionModal(enrichedAcquisitions, changes.possibleTickerChanges);
-      }
-      
-      // Load the portfolio data
-      onLoad.loadPortfolio(
-        enrichedPortfolioData,
-        accountName,
-        portfolioDate,
-        parsedData.accountTotal
-      );
-      
-      // Close the upload modal
-      onLoad.onModalClose?.();
-      
-      // Update file stats
+
+      // Save the original file
+      await saveUploadedFile(fileContent, fileName, 'portfolio');
+
+      // Record success
       recordUploadSuccess(fileName);
-      
-      // Switch to History tab if this is an additional upload
-      if (latestSnapshot && onLoad.onNavigate) {
-        onLoad.onNavigate('history');
+
+      // Notify parent component
+      onLoad.setLoadingState(false);
+      onLoad.onSuccess('Portfolio file processed successfully');
+
+      // Check for acquisition dates
+      if (changes.acquisitionsFound && onAcquisitionsFound) {
+        onAcquisitionsFound(changes.acquisitions);
       }
-    } catch (error) {
-      console.error('Error processing portfolio file:', error);
-      recordUploadError(fileName, error.message);
-      throw error;
-    }     
-  };
-  
-  // Helper function to enrich portfolio data with transaction information
-  const enrichPortfolioWithTransactionData = async (portfolioData, reconciliationResults) => {
-    return portfolioData.map(position => {
-      const symbol = position.Symbol;
-      const reconciliation = reconciliationResults.find(r => r.symbol === symbol);
-      
-      if (reconciliation && reconciliation.earliestAcquisitionDate) {
-        return {
-          ...position,
-          isTransactionDerived: true,
-          earliestAcquisitionDate: reconciliation.earliestAcquisitionDate,
-          hasDiscrepancies: reconciliation.reconciliation.hasDiscrepancies,
-          discrepancyInfo: reconciliation.reconciliation.hasDiscrepancies ? 
-            reconciliation.reconciliation.discrepancies : undefined
-        };
-      }
-      
-      return position;
-    });
+    } catch (err) {
+      console.error('Error processing portfolio file:', err);
+      throw err;
+    }
   };
 
   return {

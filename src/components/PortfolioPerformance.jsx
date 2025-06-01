@@ -1,10 +1,6 @@
 // components/PortfolioPerformance.jsx
 import React, { useState, useEffect } from 'react';
-import { 
-  getAccountSnapshots,
-  getTransactionsByAccount,
-  getSecurityMetadata 
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { 
   calculateDateRangeReturns, 
   generateTimeSeriesData 
@@ -40,8 +36,8 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, o
       }
       
       try {
-        const snapshots = await getAccountSnapshots(currentAccount);
-        const transactions = await getTransactionsByAccount(currentAccount);
+        const snapshots = await portfolioService.getAccountSnapshots(currentAccount);
+        const transactions = await portfolioService.getTransactionsByAccount(currentAccount);
         
         if (!snapshots || snapshots.length < 2) {
           setIsLoading(false);
@@ -98,7 +94,7 @@ const PortfolioPerformance = ({ portfolioData, portfolioStats, currentAccount, o
       const transactionDate = getEarliestAcquisitionDate(symbol, symbolTransactions);
       
       // Get manually entered acquisition date from metadata
-      const metadata = await getSecurityMetadata(symbol, currentAccount);
+      const metadata = await portfolioService.getSecurityMetadata(symbol, currentAccount);
       const manualDate = metadata?.acquisitionDate;
       
       if (transactionDate && manualDate) {

@@ -1,11 +1,6 @@
 // components/AccountManagement.jsx revision: 1
 import React, { useState, useEffect } from 'react';
-import { 
-  getAllAccounts, 
-  getAccountSnapshots, 
-  deletePortfolioSnapshot,
-  deleteAccount
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { formatDate } from '../utils/dataUtils';
 import SnapshotCard from './SnapshotCard';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
@@ -41,7 +36,7 @@ const AccountManagement = ({ onDataChange }) => {
   const loadAccounts = async () => {
     try {
       setIsLoading(true);
-      const accountList = await getAllAccounts();
+      const accountList = await portfolioService.getAllAccounts();
       setAccounts(accountList);
       if (accountList.length > 0 && !selectedAccount) {
         setSelectedAccount(accountList[0]);
@@ -58,7 +53,7 @@ const AccountManagement = ({ onDataChange }) => {
   const loadSnapshots = async () => {
     try {
       setIsLoading(true);
-      const accountSnapshots = await getAccountSnapshots(selectedAccount);
+      const accountSnapshots = await portfolioService.getAccountSnapshots(selectedAccount);
       const sortedSnapshots = accountSnapshots.sort((a, b) => new Date(b.date) - new Date(a.date));
       setSnapshots(sortedSnapshots);
       setSelectedSnapshots(new Set());
@@ -100,7 +95,7 @@ const AccountManagement = ({ onDataChange }) => {
       message: `Are you sure you want to delete the snapshot from ${formatDate(snapshot.date)}? This action cannot be undone.`,
       onConfirm: async () => {
         try {
-          await deletePortfolioSnapshot(snapshotId);
+          await portfolioService.deletePortfolioSnapshot(snapshotId);
           
           // Check if this was the last snapshot
           const remainingSnapshots = snapshots.filter(s => s.id !== snapshotId);
@@ -112,7 +107,7 @@ const AccountManagement = ({ onDataChange }) => {
               title: 'Account Will Be Removed',
               message: `This was the last snapshot for ${selectedAccount}. The account will be removed from the system.`,
               onConfirm: async () => {
-                await deleteAccount(selectedAccount);
+                await portfolioService.deleteAccount(selectedAccount);
                 await loadAccounts();
                 setDeleteModal({ isOpen: false });
                 onDataChange?.();
@@ -143,7 +138,7 @@ const AccountManagement = ({ onDataChange }) => {
       onConfirm: async () => {
         try {
           const deletePromises = Array.from(selectedSnapshots).map(snapshotId => 
-            deletePortfolioSnapshot(snapshotId)
+            portfolioService.deletePortfolioSnapshot(snapshotId)
           );
           await Promise.all(deletePromises);
           
@@ -155,7 +150,7 @@ const AccountManagement = ({ onDataChange }) => {
               title: 'Account Will Be Removed',
               message: `You've deleted all snapshots for ${selectedAccount}. The account will be removed from the system.`,
               onConfirm: async () => {
-                await deleteAccount(selectedAccount);
+                await portfolioService.deleteAccount(selectedAccount);
                 await loadAccounts();
                 setDeleteModal({ isOpen: false });
                 onDataChange?.();

@@ -54,18 +54,18 @@ A React-based investment portfolio management application that enables users to 
 
 ## Module Organization
 
-### /utils (Data Layer) - ~8,000 lines total
-- **portfolioStorage.js** (2,500 lines): Core IndexedDB operations
-- **transactionEngine.js** (500 lines): Transaction parsing/categorization
-- **fileProcessing.js** (600 lines): CSV/JSON parsing logic
-- **fileStorage.js** (700 lines): File storage and deduplication
-- **portfolioTracker.js** (600 lines): Portfolio/transaction reconciliation
-- **lotTracker.js** (800 lines): Tax lot calculations
-- **databaseUtils.js** (400 lines): IndexedDB initialization
-- **dataUtils.js** (500 lines): Data formatting utilities
-- **portfolioPerformanceMetrics.js** (500 lines): Return calculations
+### /utils (Data Layer)
+- **portfolioStorage.js** : Core IndexedDB operations
+- **transactionEngine.js** : Transaction parsing/categorization
+- **fileProcessing.js** : CSV/JSON parsing logic
+- **fileStorage.js** : File storage and deduplication
+- **portfolioTracker.js** : Portfolio/transaction reconciliation
+- **lotTracker.js** : Tax lot calculations
+- **databaseUtils.js** : IndexedDB initialization
+- **dataUtils.js** : Data formatting utilities
+- **portfolioPerformanceMetrics.js** : Return calculations
 
-### /components (UI Layer) - ~12,000 lines total
+### /components (UI Layer)
 - **PortfolioManager.jsx**: Main app component
 - **FileUploader.jsx**: Consolidated file upload (needs completion)
 - **LotManager.jsx**: Tax lot management interface
@@ -75,7 +75,7 @@ A React-based investment portfolio management application that enables users to 
 - **SecurityDetail.jsx**: Individual security analysis
 - **/performance**: Performance chart components
 
-### /hooks (Business Logic) - ~1,000 lines
+### /hooks (Business Logic)
 - **usePortfolioData**: Portfolio data fetching/caching
 - **useFileUpload**: File upload handling
 - **useAcquisitionModal**: New security acquisition flow

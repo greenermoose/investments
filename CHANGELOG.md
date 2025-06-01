@@ -1,3 +1,7 @@
+### 0.4.5
+
+- updated SecurityDetail.jsx
+
 ### 0.4.4
 
 - updated TransactionViewer.jsx

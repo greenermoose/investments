@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart } from 'recharts';
 import { formatCurrency, formatDate, formatPercent } from '../utils/dataUtils';
-import { getSecurityLots } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { calculateAnnualizedReturn } from '../utils/portfolioPerformanceMetrics';
 import { getSecurityHistoryData } from '../utils/securityTracker';
 
@@ -26,7 +26,7 @@ const SecurityDetail = ({ symbol, account, onBack }) => {
 
         // Load lots
         const securityId = `${account}_${symbol}`;
-        const lotData = await getSecurityLots(securityId);
+        const lotData = await portfolioService.getSecurityLots(securityId);
         
         // Sort by acquisition date, newest first
         const sortedLots = lotData ? [...lotData].sort((a, b) => 

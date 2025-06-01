@@ -1,3 +1,7 @@
+### 0.4.12
+
+- deleted portfolioStorage.js
+
 ### 0.4.11
 
 - updated useAcquisitionModal.js

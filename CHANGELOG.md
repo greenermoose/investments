@@ -1,3 +1,7 @@
+### 0.4.7
+
+- updated StorageManager.jsx
+
 ### 0.4.6
 
 - updated TransactionStorageDebugger.jsx

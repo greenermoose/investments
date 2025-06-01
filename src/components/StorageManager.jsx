@@ -11,11 +11,7 @@ import {
   importAllData, 
   purgeAllData
 } from '../utils/databaseUtils';
-import { 
-  getAllAccounts, 
-  purgeAccountData,
-  getAccountSnapshots,
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 
@@ -62,7 +58,7 @@ const StorageManager = ({ onDataChange }) => {
       setIsLoading(true);
       setError(null);
       
-      const accountList = await getAllAccounts();
+      const accountList = await portfolioService.getAllAccounts();
       setAccounts(accountList);
       
       const transactions = await getAllTransactionsFromDB();
@@ -82,7 +78,7 @@ const StorageManager = ({ onDataChange }) => {
       let totalTransactions = transactions.length;
       
       for (const account of accountList) {
-        const snapshots = await getAccountSnapshots(account);
+        const snapshots = await portfolioService.getAccountSnapshots(account);
         const accountTransactions = transactionsByAccount[account] || [];
         
         if (!transactionsByAccount[account] && accountTransactions.length === 0) {
@@ -206,7 +202,7 @@ const StorageManager = ({ onDataChange }) => {
       onConfirm: async () => {
         try {
           setIsLoading(true);
-          await purgeAccountData(account);
+          await portfolioService.purgeAccountData(account);
           setSuccess(`Data for account "${account}" purged successfully`);
           await loadStorageData();
           setDeleteModal({ isOpen: false });

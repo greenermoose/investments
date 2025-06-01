@@ -1,3 +1,7 @@
+### 0.4.4
+
+- updated TransactionViewer.jsx
+
 ### 0.4.3
 
 - updated usePortfolioData.js

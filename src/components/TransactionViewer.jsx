@@ -1,7 +1,7 @@
 // src/components/TransactionViewer.jsx
 import React, { useState, useEffect } from 'react';
 import { formatDate, formatCurrency } from '../utils/dataUtils';
-import { getTransactionsByAccount } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { TransactionCategories } from '../utils/transactionEngine';
 
 /**
@@ -36,7 +36,7 @@ const TransactionViewer = ({
         setError(null);
         
         // Fetch transactions from storage
-        const accountTransactions = await getTransactionsByAccount(currentAccount);
+        const accountTransactions = await portfolioService.getTransactionsByAccount(currentAccount);
         
         if (accountTransactions && accountTransactions.length > 0) {
           setTransactions(accountTransactions);

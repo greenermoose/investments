@@ -2,13 +2,7 @@
 // Focuses on tax lot tracking, calculations, and management
 
 import { TransactionCategories, removeDuplicateTransactions } from './transactionEngine';
-import { 
-  getSecurityMetadata,
-  saveLot,
-  getLotById,
-  saveSecurityMetadata,
-  getTransactionsByAccount
-} from './portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 /**
  * Lot Tracking Methods - How to select which lots to sell first
@@ -279,8 +273,8 @@ export const groupLotsByAcquisitionYear = (lots) => {
 };
 
 /**
- * Process transactions for an account and create corresponding tax lots
- * @param {string} accountName - Account to process
+ * Process transactions into lots for an account
+ * @param {string} accountName - Account name
  * @returns {Promise<Object>} Processing results
  */
 export const processTransactionsIntoLots = async (accountName) => {
@@ -288,138 +282,29 @@ export const processTransactionsIntoLots = async (accountName) => {
     console.log(`Processing transactions into lots for account: ${accountName}`);
     
     // Get all transactions for the account
-    const transactions = await getTransactionsByAccount(accountName);
-    console.log(`Found ${transactions.length} transactions to process`);
+    const transactions = await portfolioService.getTransactionsByAccount(accountName);
     
-    // Group transactions by symbol
-    const transactionsBySymbol = {};
-    transactions.forEach(transaction => {
-      if (!transaction.symbol) return;
-      
-      if (!transactionsBySymbol[transaction.symbol]) {
-        transactionsBySymbol[transaction.symbol] = [];
-      }
-      transactionsBySymbol[transaction.symbol].push(transaction);
-    });
+    // Get security metadata for all symbols
+    const symbols = [...new Set(transactions.map(tx => tx.symbol))];
+    const metadataPromises = symbols.map(symbol => 
+      portfolioService.getSecurityMetadata(symbol, accountName)
+    );
+    const metadataResults = await Promise.all(metadataPromises);
+    const securityMetadata = Object.fromEntries(
+      symbols.map((symbol, i) => [symbol, metadataResults[i]])
+    );
     
-    // Process each symbol's transactions
-    const results = {
-      processedSymbols: 0,
-      createdLots: 0,
-      symbols: [],
-      errors: []
+    // Process acquisitions first
+    const acquisitionResults = await processAcquisitions(accountName, transactions, securityMetadata);
+    
+    // Then process dispositions
+    const dispositionResults = await processDispositions(accountName);
+    
+    return {
+      processedSymbols: symbols.length,
+      createdLots: acquisitionResults.createdLots,
+      errors: [...acquisitionResults.errors, ...dispositionResults.errors]
     };
-    
-    for (const symbol in transactionsBySymbol) {
-      try {
-        var symbolTransactions = transactionsBySymbol[symbol];
-        console.log(`Processing ${symbolTransactions.length} transactions for ${symbol}`);
-        
-        // Sort transactions by date
-        symbolTransactions.sort((a, b) => {
-          if (!a.date || !b.date) return 0;
-          return a.date - b.date;
-        });
-        
-        // Filter out duplicate transactions
-        symbolTransactions = removeDuplicateTransactions(symbolTransactions);
-
-        // For debugging, list all transactions for this symbol to the console
-        console.log(`Transactions for ${symbol}:`);
-        symbolTransactions.forEach(t => console.log(t));
-
-        // Process acquisitions first to create lots
-        const acquisitions = symbolTransactions.filter(t => 
-          t.category === TransactionCategories.ACQUISITION && t.quantity > 0
-        );
-        
-        if (acquisitions.length === 0) {
-          console.log(`No acquisition transactions found for ${symbol}`);
-          continue;
-        }
-        
-        // Get security metadata
-        let metadata = await getSecurityMetadata(symbol, accountName);
-        const securityId = `${accountName}_${symbol}`;
-        
-        // Create metadata if it doesn't exist
-        if (!metadata) {
-          metadata = {
-            id: securityId,
-            symbol: symbol,
-            account: accountName,
-            acquisitionDate: acquisitions[0].date,
-            lots: [],
-            updatedAt: new Date()
-          };
-          
-          await saveSecurityMetadata(symbol, accountName, metadata);
-        }
-        
-        // Create lots for each acquisition
-        const createdLots = [];
-        for (const transaction of acquisitions) {
-          // Calculate cost basis from transaction
-          const costBasis = Math.abs(transaction.amount);
-          
-          // Create a new lot
-          const lot = createLot(
-            securityId,
-            accountName,
-            symbol,
-            transaction.quantity,
-            transaction.date,
-            costBasis,
-            true // isTransactionDerived
-          );
-
-          // Check if lot already exists in database
-          const existingLot = await getLotById(lot.id);
-          if (existingLot) {
-            console.log(`Lot already exists in database for ${symbol}: ${lot.quantity} shares at ${lot.pricePerShare} on ${lot.acquisitionDate}`);
-            continue;
-          }
-
-          // Save lot to database
-          await saveLot(lot);
-          createdLots.push(lot);
-          
-          console.log(`Created lot for ${symbol}: ${lot.quantity} shares at ${lot.pricePerShare} on ${lot.acquisitionDate}`);
-        }
-        
-        // Update security metadata with earliest acquisition date
-        if (createdLots.length > 0) {
-          const earliestLot = createdLots.reduce((earliest, lot) => {
-            return !earliest || lot.acquisitionDate < earliest.acquisitionDate ? lot : earliest;
-          }, null);
-          
-          await saveSecurityMetadata(symbol, accountName, {
-            ...metadata,
-            acquisitionDate: earliestLot.acquisitionDate,
-            updatedAt: new Date()
-          });
-        }
-        
-        // Add symbol results
-        results.processedSymbols++;
-        results.createdLots += createdLots.length;
-        results.symbols.push({
-          symbol,
-          transactionsProcessed: symbolTransactions.length,
-          lotsCreated: createdLots.length
-        });
-        
-      } catch (error) {
-        console.error(`Error processing ${symbol}:`, error);
-        results.errors.push({
-          symbol,
-          error: error.message
-        });
-      }
-    }
-    
-    return results;
-    
   } catch (error) {
     console.error('Error processing transactions into lots:', error);
     throw error;
@@ -427,102 +312,129 @@ export const processTransactionsIntoLots = async (accountName) => {
 };
 
 /**
- * Process disposition transactions (sales)
- * This is a more complex function that would apply sales to existing lots
- * based on the chosen lot selection method (FIFO, LIFO, etc.)
+ * Process acquisition transactions into lots
+ * @param {string} accountName - Account name
+ * @param {Array} transactions - Array of transactions
+ * @param {Object} securityMetadata - Security metadata by symbol
+ * @returns {Promise<Object>} Processing results
+ */
+const processAcquisitions = async (accountName, transactions, securityMetadata) => {
+  const createdLots = [];
+  const errors = [];
+  
+  // Filter for acquisition transactions
+  const acquisitions = transactions.filter(tx => 
+    tx.category === TransactionCategories.ACQUISITION
+  );
+  
+  // Group by symbol
+  const acquisitionsBySymbol = acquisitions.reduce((acc, tx) => {
+    if (!acc[tx.symbol]) {
+      acc[tx.symbol] = [];
+    }
+    acc[tx.symbol].push(tx);
+    return acc;
+  }, {});
+  
+  // Process each symbol's acquisitions
+  for (const [symbol, symbolAcquisitions] of Object.entries(acquisitionsBySymbol)) {
+    try {
+      const securityId = `${accountName}_${symbol}`;
+      const metadata = securityMetadata[symbol];
+      
+      // Sort acquisitions by date
+      symbolAcquisitions.sort((a, b) => new Date(a.date) - new Date(b.date));
+      
+      // Create lots for each acquisition
+      for (const acquisition of symbolAcquisitions) {
+        const lot = createLot(
+          securityId,
+          accountName,
+          symbol,
+          acquisition.quantity,
+          new Date(acquisition.date),
+          acquisition.quantity * acquisition.price,
+          true // isTransactionDerived
+        );
+        
+        // Save the lot
+        await portfolioService.saveLot(lot);
+        createdLots.push(lot);
+      }
+      
+      // Update security metadata if needed
+      if (!metadata?.acquisitionDate) {
+        const earliestDate = new Date(symbolAcquisitions[0].date);
+        await portfolioService.saveSecurityMetadata(symbol, accountName, {
+          acquisitionDate: earliestDate,
+          description: symbolAcquisitions[0].description || symbol
+        });
+      }
+    } catch (error) {
+      console.error(`Error processing acquisitions for ${symbol}:`, error);
+      errors.push({
+        symbol,
+        error: error.message
+      });
+    }
+  }
+  
+  return { createdLots, errors };
+};
+
+/**
+ * Process disposition transactions
+ * @param {string} accountName - Account name
+ * @param {string} trackingMethod - Lot tracking method
+ * @returns {Promise<Object>} Processing results
  */
 export const processDispositions = async (accountName, trackingMethod = LotTrackingMethods.FIFO) => {
+  const errors = [];
+  
   try {
     // Get all transactions for the account
-    const transactions = await getTransactionsByAccount(accountName);
+    const transactions = await portfolioService.getTransactionsByAccount(accountName);
     
-    // Group transactions by symbol
-    const transactionsBySymbol = {};
-    transactions.forEach(transaction => {
-      if (!transaction.symbol) return;
-      
-      if (!transactionsBySymbol[transaction.symbol]) {
-        transactionsBySymbol[transaction.symbol] = [];
-      }
-      transactionsBySymbol[transaction.symbol].push(transaction);
-    });
+    // Filter for disposition transactions
+    const dispositions = transactions.filter(tx => 
+      tx.category === TransactionCategories.DISPOSITION
+    );
     
-    const results = {
-      processedSymbols: 0,
-      processedSales: 0,
-      updatedLots: 0,
-      symbols: [],
-      errors: []
-    };
-    
-    // Process each symbol's transactions
-    for (const symbol in transactionsBySymbol) {
+    // Process each disposition
+    for (const disposition of dispositions) {
       try {
-        const symbolTransactions = transactionsBySymbol[symbol];
+        const securityId = `${accountName}_${disposition.symbol}`;
         
-        // Filter and sort sell transactions
-        const sellTransactions = symbolTransactions
-          .filter(t => t.category === TransactionCategories.DISPOSITION)
-          .sort((a, b) => a.date - b.date);
+        // Get existing lots for this security
+        const lots = await portfolioService.getSecurityLots(securityId);
         
-        if (sellTransactions.length === 0) continue;
+        // Apply the sale to lots
+        const saleResult = applySaleToLots(
+          lots,
+          disposition.quantity,
+          trackingMethod,
+          new Date(disposition.date),
+          disposition.price
+        );
         
-        const securityId = `${accountName}_${symbol}`;
-        
-        // Get all lots for this security
-        const lots = await getSecurityLots(securityId);
-        
-        if (!lots || lots.length === 0) {
-          console.warn(`No lots found for ${symbol} but sale transactions exist`);
-          continue;
+        // Update affected lots
+        for (const lot of saleResult.affectedLots) {
+          await portfolioService.saveLot(lot);
         }
-        
-        // Process each sale transaction
-        let updatedLotsCount = 0;
-        let processedSales = 0;
-        
-        for (const saleTransaction of sellTransactions) {
-          // Apply the sale to lots using specified tracking method
-          const saleResult = applySaleToLots(
-            lots,
-            saleTransaction.quantity,
-            trackingMethod,
-            saleTransaction.date,
-            saleTransaction.price
-          );
-          
-          // Save updated lots
-          for (const updatedLot of saleResult.affectedLots) {
-            await saveLot(updatedLot);
-            updatedLotsCount++;
-          }
-          
-          processedSales++;
-        }
-        
-        results.processedSymbols++;
-        results.processedSales += processedSales;
-        results.updatedLots += updatedLotsCount;
-        
-        results.symbols.push({
-          symbol,
-          salesProcessed: processedSales,
-          lotsUpdated: updatedLotsCount
-        });
-        
       } catch (error) {
-        console.error(`Error processing sales for ${symbol}:`, error);
-        results.errors.push({
-          symbol,
+        console.error(`Error processing disposition for ${disposition.symbol}:`, error);
+        errors.push({
+          symbol: disposition.symbol,
           error: error.message
         });
       }
     }
-    
-    return results;
-    
   } catch (error) {
     console.error('Error processing dispositions:', error);
-    throw error;
+    errors.push({
+      error: error.message
+    });
   }
+  
+  return { errors };
 };

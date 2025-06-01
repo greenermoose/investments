@@ -1,3 +1,7 @@
+### 0.4.6
+
+- updated TransactionStorageDebugger.jsx
+
 ### 0.4.5
 
 - updated SecurityDetail.jsx

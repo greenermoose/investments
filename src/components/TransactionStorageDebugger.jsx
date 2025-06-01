@@ -1,6 +1,6 @@
 // components/TransactionStorageDebugger.jsx
 import React, { useState, useEffect } from 'react';
-import { initializeDB } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 const TransactionStorageDebugger = () => {
   const [dbInfo, setDbInfo] = useState({
@@ -16,81 +16,44 @@ const TransactionStorageDebugger = () => {
     async function inspectDatabase() {
       try {
         console.log('TransactionStorageDebugger: Initializing DB connection');
-        const db = await initializeDB();
-        console.log('TransactionStorageDebugger: DB connection established');
         
-        // Get all object store names
+        // Get all accounts to check database connectivity
+        const accounts = await portfolioService.getAllAccounts();
+        console.log('TransactionStorageDebugger: Found accounts:', accounts);
+        
+        // Get all transactions to inspect store structure
+        const transactions = [];
+        const accountNames = new Set();
+        
+        for (const account of accounts) {
+          const accountTransactions = await portfolioService.getTransactionsByAccount(account);
+          accountTransactions.forEach(tx => {
+            if (tx.account) {
+              accountNames.add(tx.account);
+            }
+            transactions.push(tx);
+          });
+        }
+        
+        console.log('TransactionStorageDebugger: Raw transactions count:', transactions.length);
+        
+        // Get store names from the transaction repository
+        const db = await portfolioService.transactionRepo.getDB();
         const storeNames = Array.from(db.objectStoreNames);
         console.log('TransactionStorageDebugger: Found stores:', storeNames);
         
-        // Check if transactions store exists
-        if (!storeNames.includes('transactions')) {
-          setDbInfo({
-            stores: storeNames,
-            transactions: [],
-            accountNames: [],
-            error: 'No transactions store found in database',
-            isLoading: false
-          });
-          return;
-        }
+        // Get indexes from the transaction store
+        const transactionStore = db.transaction(['transactions'], 'readonly').objectStore('transactions');
+        const indexes = Array.from(transactionStore.indexNames);
         
-        // Extract account names and transactions
-        const accountNames = new Set();
-        const transactions = [];
-        
-        // Read all transactions
-        const transaction = db.transaction(['transactions'], 'readonly');
-        const store = transaction.objectStore('transactions');
-        
-        // Create promise to get all transactions
-        const getTransactionsPromise = new Promise((resolve, reject) => {
-          const request = store.getAll();
-          request.onsuccess = () => resolve(request.result);
-          request.onerror = () => reject(request.error);
-        });
-        
-        // Get raw transactions
-        const rawTransactions = await getTransactionsPromise;
-        console.log('TransactionStorageDebugger: Raw transactions count:', rawTransactions.length);
-        
-        // Process transactions to extract unique account names
-        rawTransactions.forEach(tx => {
-          if (tx.account) {
-            accountNames.add(tx.account);
-          }
-          transactions.push(tx);
-        });
-        
-        // Get indexes available on the transaction store
-        const indexes = Array.from(store.indexNames);
-        
-        // Examine store structure (get first transaction as sample)
+        // Get store structure from first transaction
         const storeStructure = transactions.length > 0 ? transactions[0] : null;
-        
-        // Check for accounts index 
-        let accountsFromIndex = [];
-        if (indexes.includes('account')) {
-          try {
-            const accountIndex = store.index('account');
-            // Just get all keys from account index
-            const getKeysPromise = new Promise((resolve, reject) => {
-              const request = accountIndex.getAllKeys();
-              request.onsuccess = () => resolve(request.result);
-              request.onerror = () => reject(request.error);
-            });
-            accountsFromIndex = await getKeysPromise;
-          } catch (e) {
-            console.error('TransactionStorageDebugger: Error accessing account index', e);
-          }
-        }
         
         // Update state with all collected information
         setDbInfo({
           stores: storeNames,
           transactions,
           accountNames: Array.from(accountNames),
-          accountsFromIndex,
           indexes,
           transactionStoreStructure: storeStructure,
           isLoading: false
@@ -156,7 +119,7 @@ const TransactionStorageDebugger = () => {
       
       <div className="mb-6">
         <h3 className="text-lg font-medium mb-2">Account Information</h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <div className="bg-gray-50 p-4 rounded-md">
             <p className="text-sm text-gray-700 font-medium">Accounts from Transaction Data</p>
             {dbInfo.accountNames.length > 0 ? (
@@ -167,19 +130,6 @@ const TransactionStorageDebugger = () => {
               </ul>
             ) : (
               <p className="text-red-600">No accounts found in transaction data</p>
-            )}
-          </div>
-          
-          <div className="bg-gray-50 p-4 rounded-md">
-            <p className="text-sm text-gray-700 font-medium">Accounts from Index</p>
-            {dbInfo.accountsFromIndex?.length > 0 ? (
-              <ul className="mt-2 list-disc pl-5">
-                {dbInfo.accountsFromIndex.map((account, i) => (
-                  <li key={i} className="font-mono">{account}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-red-600">No accounts found in index</p>
             )}
           </div>
         </div>
@@ -201,14 +151,6 @@ const TransactionStorageDebugger = () => {
                   {account} Transactions
                 </p>
                 <p className="text-2xl font-medium">{accountTransactions.length}</p>
-                {accountTransactions.length > 0 && (
-                  <div className="mt-2 space-y-2">
-                    <p className="text-sm text-gray-700">Sample Transaction:</p>
-                    <pre className="bg-gray-200 p-2 rounded overflow-auto max-h-40 text-xs">
-                      {JSON.stringify(accountTransactions[0], null, 2)}
-                    </pre>
-                  </div>
-                )}
               </div>
             );
           })}

@@ -1,3 +1,7 @@
+### 0.4.11
+
+- updated useAcquisitionModal.js
+
 ### 0.4.10
 
 - updated SecurityTracker.js

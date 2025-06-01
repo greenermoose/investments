@@ -1,3 +1,7 @@
+### 0.4.3
+
+- updated usePortfolioData.js
+
 ### 0.4.2
 
 - trying to refactor with cursor

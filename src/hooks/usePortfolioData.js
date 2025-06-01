@@ -1,7 +1,7 @@
-// hooks/usePortfolioData.js revision: 2
+// hooks/usePortfolioData.js revision: 3
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
-import { getAllAccounts, getLatestSnapshot } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 export const usePortfolioData = (selectedAccount) => {
   const [portfolioData, setPortfolioData] = useState([]);
@@ -29,7 +29,7 @@ export const usePortfolioData = (selectedAccount) => {
   const loadInitialPortfolio = async () => {
     try {
       setIsLoading(true);
-      const accounts = await getAllAccounts();
+      const accounts = await portfolioService.getAllAccounts();
       
       if (accounts.length > 0) {
         let latestSnapshot = null;
@@ -37,7 +37,7 @@ export const usePortfolioData = (selectedAccount) => {
         
         // Find the most recent snapshot across all accounts
         for (const accountName of accounts) {
-          const snapshot = await getLatestSnapshot(accountName);
+          const snapshot = await portfolioService.getLatestSnapshot(accountName);
           if (snapshot && (!latestSnapshot || snapshot.date > latestSnapshot.date)) {
             latestSnapshot = snapshot;
             latestAccountName = accountName;
@@ -72,7 +72,7 @@ export const usePortfolioData = (selectedAccount) => {
   const loadAccountPortfolio = async (accountName) => {
     try {
       setIsLoading(true);
-      const snapshot = await getLatestSnapshot(accountName);
+      const snapshot = await portfolioService.getLatestSnapshot(accountName);
       
       if (snapshot) {
         loadPortfolio(

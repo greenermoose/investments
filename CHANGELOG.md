@@ -1,3 +1,9 @@
+### 0.4.0
+
+- refactor portfolioStorage.js
+
+## 0.4 - Claude Opus 4
+
 ### 0.3.51
 
 - cursor fixing uploaded_files object store error

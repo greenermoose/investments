@@ -1,3 +1,7 @@
+### 0.4.2
+
+- trying to refactor with cursor
+
 ### 0.4.1
 
 - continuining with refactor of portfolioStorage.js

@@ -1,7 +1,7 @@
-// components/PortfolioHistory.jsx revision: 1
+// components/PortfolioHistory.jsx revision: 2
 import React, { useState, useEffect } from 'react';
-import { getAllAccounts, getAccountSnapshots } from '../utils/portfolioStorage';
-import { formatCurrency, formatPercent,formatDate } from '../utils/dataUtils';
+import { portfolioService } from '../services/PortfolioService';
+import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 
 const PortfolioHistory = () => {
   const [accounts, setAccounts] = useState([]);
@@ -23,7 +23,7 @@ const PortfolioHistory = () => {
   
   const loadAccounts = async () => {
     try {
-      const accountList = await getAllAccounts();
+      const accountList = await portfolioService.getAllAccounts();
       setAccounts(accountList);
       if (accountList.length > 0) {
         setSelectedAccount(accountList[0]);
@@ -37,7 +37,7 @@ const PortfolioHistory = () => {
   
   const loadSnapshots = async () => {
     try {
-      const accountSnapshots = await getAccountSnapshots(selectedAccount);
+      const accountSnapshots = await portfolioService.getAccountSnapshots(selectedAccount);
       const sortedSnapshots = accountSnapshots.sort((a, b) => new Date(b.date) - new Date(a.date));
       setSnapshots(sortedSnapshots);
       setSelectedSnapshots([]);

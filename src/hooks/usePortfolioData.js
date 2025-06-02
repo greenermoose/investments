@@ -114,9 +114,20 @@ export const usePortfolioData = (selectedAccount) => {
   
   const loadPortfolio = (data, accountName, date, accountTotal) => {
     // Ensure data is always an array
-    setPortfolioData(Array.isArray(data) ? data : []);
+    const portfolioData = Array.isArray(data) ? data : [];
+    
+    // Calculate portfolio stats using the account total if available
+    const stats = accountTotal ? {
+      totalValue: accountTotal.totalValue || 0,
+      totalGain: accountTotal.totalGain || 0,
+      gainPercent: accountTotal.gainPercent || 0,
+      assetAllocation: calculatePortfolioStats(portfolioData).assetAllocation
+    } : calculatePortfolioStats(portfolioData);
+    
+    setPortfolioData(portfolioData);
     setCurrentAccount(accountName || '');
     setPortfolioDate(date || null);
+    setPortfolioStats(stats);
     setIsDataLoaded(true);
     setIsLoading(false);
   };

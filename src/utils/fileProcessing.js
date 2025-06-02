@@ -268,10 +268,13 @@ export const parsePortfolioCSV = (fileContent) => {
         
         // Use standardized header names
         Object.entries(headerMap).forEach(([standardHeader, idx]) => {
-          if (idx < row.length && row[idx]) {
+          if (idx < row.length) {
             mappedRow[standardHeader] = parseFieldValue(row[idx]);
           }
         });
+        
+        // Skip rows without a symbol
+        if (!mappedRow.Symbol) continue;
         
         // Check if this is the account total row
         if ((mappedRow.Symbol === 'Account Total' || mappedRow.Description === 'Account Total') &&
@@ -284,7 +287,25 @@ export const parsePortfolioCSV = (fileContent) => {
         } else if (mappedRow.Symbol && 
                   mappedRow.Symbol !== 'Cash & Cash Investments' && 
                   mappedRow.Symbol !== 'Account Total' &&
-                  mappedRow.Symbol !== 'Cash and Money Market') {
+                  mappedRow.Symbol !== 'Cash and Money Market' &&
+                  mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
+          // Ensure all required fields are present
+          if (!mappedRow['Qty (Quantity)']) {
+            mappedRow['Qty (Quantity)'] = 0;
+          }
+          if (!mappedRow['Price']) {
+            mappedRow['Price'] = 0;
+          }
+          if (!mappedRow['Cost Basis']) {
+            mappedRow['Cost Basis'] = 0;
+          }
+          if (!mappedRow['Gain $ (Gain/Loss $)']) {
+            mappedRow['Gain $ (Gain/Loss $)'] = 0;
+          }
+          if (!mappedRow['Gain % (Gain/Loss %)']) {
+            mappedRow['Gain % (Gain/Loss %)'] = 0;
+          }
+          
           portfolioData.push(mappedRow);
         }
       } catch (rowError) {
@@ -296,6 +317,21 @@ export const parsePortfolioCSV = (fileContent) => {
     if (portfolioData.length === 0) {
       throw new Error('No valid portfolio data found in the file');
     }
+    
+    // If no account total was found, calculate it from the positions
+    if (!accountTotal) {
+      accountTotal = {
+        totalValue: portfolioData.reduce((sum, pos) => sum + (pos['Mkt Val (Market Value)'] || 0), 0),
+        totalGain: portfolioData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0),
+        gainPercent: portfolioData.reduce((sum, pos) => sum + (pos['Gain % (Gain/Loss %)'] || 0), 0) / portfolioData.length
+      };
+    }
+    
+    console.log('Processed portfolio data:', {
+      positions: portfolioData.length,
+      accountTotal,
+      samplePosition: portfolioData[0]
+    });
     
     return { portfolioData, portfolioDate, accountTotal };
   } catch (error) {

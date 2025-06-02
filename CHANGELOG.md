@@ -1,3 +1,7 @@
+### 0.4.27
+
+- fix snapshot upload
+
 ### 0.4.26
 
 - fix endless spinner on file upload

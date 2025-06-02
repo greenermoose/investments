@@ -1,3 +1,7 @@
+### 0.4.39
+
+- improve switching between snapshots
+
 ### 0.4.38
 
 - switch between snapshots

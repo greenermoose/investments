@@ -25,7 +25,8 @@ const PortfolioHeader = ({
   uploadStats,
   onNavigate,
   activeTab,
-  onSnapshotSelect
+  onSnapshotSelect,
+  refreshKey
 }) => {
   const [showUploadDropdown, setShowUploadDropdown] = useState(false);
   const dropdownRef = useRef(null);
@@ -111,6 +112,7 @@ const PortfolioHeader = ({
                 currentAccount={currentAccount}
                 selectedDate={portfolioDate}
                 onSnapshotSelect={onSnapshotSelect}
+                refreshKey={refreshKey}
               />
             </div>
           )}

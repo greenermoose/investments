@@ -3,7 +3,7 @@ import { formatDate } from '../utils/dataUtils';
 import { portfolioService } from '../services/PortfolioService';
 import { Clock, ChevronDown } from 'lucide-react';
 
-const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect }) => {
+const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refreshKey }) => {
   const [snapshots, setSnapshots] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -32,7 +32,7 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect }) =>
     };
 
     loadSnapshots();
-  }, [currentAccount]);
+  }, [currentAccount, refreshKey]);
 
   if (!currentAccount) {
     return null;

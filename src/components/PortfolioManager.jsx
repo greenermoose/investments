@@ -36,6 +36,7 @@ const PortfolioManager = () => {
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);
+  const [snapshotRefreshKey, setSnapshotRefreshKey] = useState(0);
   const [confirmationDialog, setConfirmationDialog] = useState({
     isOpen: false,
     newAccountName: '',
@@ -155,6 +156,7 @@ const PortfolioManager = () => {
   const handleFileUploadSuccess = (fileType) => {
     closeUploadModal();
     refreshData();
+    setSnapshotRefreshKey(prev => prev + 1); // Increment refresh key
   };
 
   // Handle file upload error
@@ -294,6 +296,7 @@ const PortfolioManager = () => {
         onNavigate={changeTab}
         onSnapshotSelect={handleSnapshotSelect}
         activeTab={activeTab}
+        refreshKey={snapshotRefreshKey}
       />
       
       <main className="flex-grow container mx-auto p-4">

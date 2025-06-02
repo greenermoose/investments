@@ -23,6 +23,7 @@ import SecurityDetail from './SecurityDetail';
 import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
+import PortfolioHistory from './PortfolioHistory';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -263,8 +264,10 @@ const PortfolioManager = () => {
                  pendingAcquisitions={pendingAcquisitions}
                  possibleTickerChanges={possibleTickerChanges}
                  transactionData={transactionData}
-                 currentAccount={currentAccount || selectedAccount} // Pass current account
+                 currentAccount={currentAccount || selectedAccount}
                />;
+      case 'history':
+        return <PortfolioHistory />;
       case 'storage-manager':
         return <StorageManager onDataChange={refreshData} />;
       default:
@@ -274,7 +277,7 @@ const PortfolioManager = () => {
                  currentAccount={currentAccount || selectedAccount}
                  onSymbolClick={handleSymbolClick}
                />;
-      }
+    }
   };
 
   // Initial view when no data is loaded

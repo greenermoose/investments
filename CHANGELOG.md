@@ -1,3 +1,7 @@
+### 0.4.41
+
+- portfolio snapshot timeline
+
 ### 0.4.40
 
 - snapshot dropdown fixes

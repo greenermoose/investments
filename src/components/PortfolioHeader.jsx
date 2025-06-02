@@ -52,7 +52,8 @@ const PortfolioHeader = ({
 
   const secondaryNavigationItems = [
     { id: 'transactions', label: 'Transactions', icon: List },
-    { id: 'lots', label: 'Lots', icon: Layers }
+    { id: 'lots', label: 'Lots', icon: Layers },
+    { id: 'history', label: 'History', icon: FileText }
   ];
 
   return (

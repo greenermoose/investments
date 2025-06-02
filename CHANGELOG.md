@@ -1,3 +1,7 @@
+### 0.4.13
+
+- tighter header navigation
+
 ### 0.4.12
 
 - deleted portfolioStorage.js

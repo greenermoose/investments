@@ -1,9 +1,18 @@
-// components/PortfolioHeader.jsx revision: 3
-import React, { useState } from 'react';
+// components/PortfolioHeader.jsx revision: 4
+import React from 'react';
 import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
-import UploadOptions from './UploadOptions';
-import { FileText, Upload, Database, Info, HardDrive } from 'lucide-react';
+import { 
+  FileText, 
+  Upload, 
+  Database, 
+  HardDrive,
+  PieChart,
+  List,
+  Settings,
+  BarChart2,
+  Layers
+} from 'lucide-react';
 
 const PortfolioHeader = ({ 
   portfolioDate, 
@@ -14,37 +23,27 @@ const PortfolioHeader = ({
   showUploadButton,
   onAccountChange,
   uploadStats,
-  onNavigate
+  onNavigate,
+  activeTab
 }) => {
-  const [showTip, setShowTip] = useState(false);
-
-  const handleStorageManagerClick = () => {
-    if (onNavigate) {
-      onNavigate('storage-manager');
-    }
-  };
+  const navigationItems = [
+    { id: 'portfolio', label: 'Portfolio', icon: PieChart },
+    { id: 'transactions', label: 'Transactions', icon: List },
+    { id: 'lots', label: 'Lots', icon: Layers },
+    { id: 'performance', label: 'Performance', icon: BarChart2 },
+    { id: 'account-management', label: 'Settings', icon: Settings }
+  ];
 
   return (
-    <header className="bg-indigo-600 text-white p-4 shadow-lg">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-3 lg:space-y-0">
-          <div>
-            <h1 className="text-2xl font-bold">Investment Portfolio Manager</h1>
-            {portfolioDate && currentAccount && (
-              <div className="flex items-center mt-1">
-                <FileText className="h-4 w-4 mr-1" />
-                <p className="text-sm">
-                  Portfolio snapshot: {formatDate(portfolioDate)}
-                </p>
-              </div>
-            )}
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-4">
-            {/* Account Selector */}
+    <header className="bg-indigo-600 text-white shadow-lg">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Left section: Account selector and current state */}
+          <div className="flex items-center space-x-6">
+            <h1 className="text-xl font-bold">Investment Portfolio</h1>
+            
             {currentAccount && onAccountChange && (
               <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium">Account:</span>
                 <AccountSelector
                   currentAccount={currentAccount}
                   onAccountChange={onAccountChange}
@@ -52,78 +51,73 @@ const PortfolioHeader = ({
               </div>
             )}
             
-            {/* Upload Options - Only show when upload functionality is available */}
-            {showUploadButton && (
-              <div className="relative">
-                {/* Use the new UploadOptions component */}
-                <UploadOptions 
-                  onUploadCSV={onUploadCSV || onUploadClick}
-                  onUploadJSON={onUploadJSON}
-                />
-
-                {/* Upload stats indicator */}
-                {uploadStats && (
-                  <div>
-                    <div className="flex justify-center items-center bg-green-500 text-white text-xs rounded-full h-5 w-5">
-                      {uploadStats.csv + uploadStats.json || 0}
-                    </div>
-                  </div>
-                )}
-
-                {/* Informational Tip */}
-                {showTip && (
-                  <div className="absolute right-0 top-full mt-2 w-64 bg-white text-gray-800 rounded-md shadow-lg border p-3 z-20 text-sm">
-                    <p className="font-medium mb-1">Two ways to upload:</p>
-                    <ul className="space-y-1 mb-2">
-                      <li className="flex items-center">
-                        <FileText className="h-3 w-3 text-blue-600 mr-1" />
-                        <span>CSV for <b>portfolio snapshots</b></span>
-                      </li>
-                      <li className="flex items-center">
-                        <Database className="h-3 w-3 text-green-600 mr-1" />
-                        <span>JSON for <b>transaction history</b></span>
-                      </li>
-                    </ul>
-                    <p className="text-xs text-gray-600 italic">
-                      Upload both to improve cost basis tracking!
-                    </p>
-                  </div>
-                )}
+            {portfolioDate && currentAccount && (
+              <div className="flex items-center text-sm text-indigo-100">
+                <FileText className="h-4 w-4 mr-1" />
+                <span>Snapshot: {formatDate(portfolioDate)}</span>
               </div>
             )}
-            
-            {/* Storage Manager Button */}
-            {showUploadButton && onNavigate && (
-              <button 
-                className="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-50 transition-colors flex items-center"
-                onClick={handleStorageManagerClick}
-              >
-                <HardDrive className="h-4 w-4 mr-2" />
-                Manage Storage
-              </button>
-            )}
-            
-            {/* Info icon */}
+          </div>
+
+          {/* Center section: Main navigation */}
+          <nav className="flex items-center space-x-1">
+            {navigationItems.map(item => {
+              const Icon = item.icon;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => onNavigate(item.id)}
+                  className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors
+                    ${activeTab === item.id 
+                      ? 'bg-indigo-700 text-white' 
+                      : 'text-indigo-100 hover:bg-indigo-500 hover:text-white'}`}
+                >
+                  <Icon className="h-4 w-4 mr-1" />
+                  {item.label}
+                </button>
+              );
+            })}
+          </nav>
+
+          {/* Right section: Actions */}
+          <div className="flex items-center space-x-2">
             {showUploadButton && (
-              <button 
-                className="bg-indigo-700 rounded-full p-1 hover:bg-indigo-800 transition-colors"
-                onMouseEnter={() => setShowTip(true)}
-                onMouseLeave={() => setShowTip(false)}
-                onClick={() => setShowTip(!showTip)}
-                aria-label="Upload information"
-              >
-                <Info className="h-4 w-4" />
-              </button>
+              <div className="relative group">
+                <button 
+                  className="flex items-center px-3 py-2 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
+                  onClick={onUploadClick}
+                >
+                  <Upload className="h-4 w-4 mr-1" />
+                  Upload
+                </button>
+                
+                {/* Upload dropdown */}
+                <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
+                  <button
+                    onClick={onUploadCSV}
+                    className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <FileText className="h-4 w-4 mr-2 text-blue-600" />
+                    Upload Portfolio (CSV)
+                  </button>
+                  <button
+                    onClick={onUploadJSON}
+                    className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <Database className="h-4 w-4 mr-2 text-green-600" />
+                    Upload Transactions (JSON)
+                  </button>
+                </div>
+              </div>
             )}
 
-            {/* Legacy upload button - kept for backward compatibility */}
-            {showUploadButton && !onUploadCSV && !onUploadJSON && (
-              <button
-                onClick={onUploadClick}
-                className="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-50 transition-colors flex items-center"
+            {showUploadButton && onNavigate && (
+              <button 
+                onClick={() => onNavigate('storage-manager')}
+                className="flex items-center px-3 py-2 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
               >
-                <Upload className="h-4 w-4 mr-2" />
-                Upload Portfolio
+                <HardDrive className="h-4 w-4 mr-1" />
+                Storage
               </button>
             )}
           </div>

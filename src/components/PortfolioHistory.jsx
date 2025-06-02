@@ -3,60 +3,86 @@ import React, { useState, useEffect } from 'react';
 import { portfolioService } from '../services/PortfolioService';
 import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 import SnapshotTimeline from './performance/SnapshotTimeline';
-import { useAccount } from '../context/PortfolioContext';
+import { useAccount, usePortfolio } from '../context/PortfolioContext';
 
 const PortfolioHistory = () => {
   const { selectedAccount } = useAccount();
+  const { currentAccount } = usePortfolio();
   const [snapshots, setSnapshots] = useState([]);
   const [selectedSnapshots, setSelectedSnapshots] = useState([]);
   const [isComparing, setIsComparing] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   useEffect(() => {
-    if (selectedAccount) {
-      loadSnapshots();
+    const account = currentAccount || selectedAccount;
+    if (account) {
+      loadSnapshots(account);
     }
-  }, [selectedAccount]);
+  }, [currentAccount, selectedAccount]);
   
-  const loadSnapshots = async () => {
+  const loadSnapshots = async (account) => {
     try {
-      const accountSnapshots = await portfolioService.getAccountSnapshots(selectedAccount);
+      setLoading(true);
+      setError(null);
+      const accountSnapshots = await portfolioService.getAccountSnapshots(account);
       const sortedSnapshots = accountSnapshots.sort((a, b) => new Date(b.date) - new Date(a.date));
       setSnapshots(sortedSnapshots);
       setSelectedSnapshots([]);
       setIsComparing(false);
-      setLoading(false);
     } catch (error) {
       console.error('Error loading snapshots:', error);
+      setError('Failed to load snapshots');
+    } finally {
       setLoading(false);
     }
   };
   
-  const handleSnapshotSelect = (snapshot) => {
-    if (isComparing) {
-      if (selectedSnapshots.length < 2) {
-        setSelectedSnapshots([...selectedSnapshots, snapshot]);
-      }
-    } else {
-      // Load the selected snapshot
-      portfolioService.getPortfolioById(snapshot.id).then(snapshotData => {
+  const handleSnapshotSelect = async (snapshot) => {
+    try {
+      if (isComparing) {
+        if (selectedSnapshots.length < 2) {
+          const fullSnapshot = await portfolioService.getPortfolioById(snapshot.id);
+          if (fullSnapshot) {
+            setSelectedSnapshots([...selectedSnapshots, fullSnapshot]);
+          }
+        }
+      } else {
+        const snapshotData = await portfolioService.getPortfolioById(snapshot.id);
         if (snapshotData) {
-          // Trigger the snapshot selection in the parent component
           window.dispatchEvent(new CustomEvent('snapshotSelected', { 
             detail: { snapshot: snapshotData }
           }));
         }
-      });
+      }
+    } catch (error) {
+      console.error('Error handling snapshot selection:', error);
+      setError('Failed to load snapshot data');
     }
   };
   
-  const handleSnapshotCompare = (snapshot) => {
-    if (selectedSnapshots.length < 2) {
-      setSelectedSnapshots([...selectedSnapshots, snapshot]);
+  const handleSnapshotCompare = async (snapshot) => {
+    try {
+      if (selectedSnapshots.length < 2) {
+        const fullSnapshot = await portfolioService.getPortfolioById(snapshot.id);
+        if (fullSnapshot) {
+          const newSnapshots = [...selectedSnapshots, fullSnapshot];
+          // Sort snapshots by date (oldest first)
+          newSnapshots.sort((a, b) => new Date(a.date) - new Date(b.date));
+          setSelectedSnapshots(newSnapshots);
+        }
+      }
+    } catch (error) {
+      console.error('Error handling snapshot comparison:', error);
+      setError('Failed to load snapshot data');
     }
   };
   
   const calculateDifference = (snapshot1, snapshot2) => {
+    if (!snapshot1?.accountTotal || !snapshot2?.accountTotal) {
+      return { valueDiff: 0, percentDiff: 0 };
+    }
+    
     const valueDiff = snapshot1.accountTotal.totalValue - snapshot2.accountTotal.totalValue;
     const percentDiff = (valueDiff / snapshot2.accountTotal.totalValue) * 100;
     return { valueDiff, percentDiff };
@@ -65,51 +91,74 @@ const PortfolioHistory = () => {
   const getPositionChanges = () => {
     if (selectedSnapshots.length !== 2) return [];
     
-    const [newer, older] = selectedSnapshots;
+    // Sort snapshots by date (oldest first) before destructuring
+    const sortedSnapshots = [...selectedSnapshots].sort((a, b) => new Date(a.date) - new Date(b.date));
+    const [older, newer] = sortedSnapshots;
+    
+    if (!newer?.data || !older?.data) return [];
+    
     const changes = [];
     
+    // Helper function to round numbers
+    const roundNumber = (num) => {
+      // Round to 4 decimal places for quantities
+      return Math.round(num * 10000) / 10000;
+    };
+    
     // Compare positions
-    newer.positions.forEach(newPos => {
-      const oldPos = older.positions.find(p => p.symbol === newPos.symbol);
+    newer.data.forEach(newPos => {
+      const oldPos = older.data.find(p => p.Symbol === newPos.Symbol);
       if (oldPos) {
         // Position exists in both snapshots
-        const quantityDiff = newPos.quantity - oldPos.quantity;
-        const valueDiff = newPos.marketValue - oldPos.marketValue;
+        const newQuantity = roundNumber(parseFloat(newPos.Quantity || newPos['Qty (Quantity)'] || 0));
+        const oldQuantity = roundNumber(parseFloat(oldPos.Quantity || oldPos['Qty (Quantity)'] || 0));
+        const newValue = roundNumber(parseFloat(newPos['Mkt Val (Market Value)'] || 0));
+        const oldValue = roundNumber(parseFloat(oldPos['Mkt Val (Market Value)'] || 0));
+        
+        const quantityDiff = roundNumber(newQuantity - oldQuantity);
+        const valueDiff = roundNumber(newValue - oldValue);
+        
         if (quantityDiff !== 0 || valueDiff !== 0) {
           changes.push({
-            symbol: newPos.symbol,
+            symbol: newPos.Symbol,
             quantityDiff,
             valueDiff,
-            oldQuantity: oldPos.quantity,
-            newQuantity: newPos.quantity,
-            oldValue: oldPos.marketValue,
-            newValue: newPos.marketValue
+            oldQuantity,
+            newQuantity,
+            oldValue,
+            newValue
           });
         }
       } else {
         // New position
+        const newQuantity = roundNumber(parseFloat(newPos.Quantity || newPos['Qty (Quantity)'] || 0));
+        const newValue = roundNumber(parseFloat(newPos['Mkt Val (Market Value)'] || 0));
+        
         changes.push({
-          symbol: newPos.symbol,
-          quantityDiff: newPos.quantity,
-          valueDiff: newPos.marketValue,
+          symbol: newPos.Symbol,
+          quantityDiff: newQuantity,
+          valueDiff: newValue,
           oldQuantity: 0,
-          newQuantity: newPos.quantity,
+          newQuantity,
           oldValue: 0,
-          newValue: newPos.marketValue
+          newValue
         });
       }
     });
     
     // Check for removed positions
-    older.positions.forEach(oldPos => {
-      if (!newer.positions.find(p => p.symbol === oldPos.symbol)) {
+    older.data.forEach(oldPos => {
+      if (!newer.data.find(p => p.Symbol === oldPos.Symbol)) {
+        const oldQuantity = roundNumber(parseFloat(oldPos.Quantity || oldPos['Qty (Quantity)'] || 0));
+        const oldValue = roundNumber(parseFloat(oldPos['Mkt Val (Market Value)'] || 0));
+        
         changes.push({
-          symbol: oldPos.symbol,
-          quantityDiff: -oldPos.quantity,
-          valueDiff: -oldPos.marketValue,
-          oldQuantity: oldPos.quantity,
+          symbol: oldPos.Symbol,
+          quantityDiff: roundNumber(-oldQuantity),
+          valueDiff: roundNumber(-oldValue),
+          oldQuantity,
           newQuantity: 0,
-          oldValue: oldPos.marketValue,
+          oldValue,
           newValue: 0
         });
       }
@@ -121,7 +170,12 @@ const PortfolioHistory = () => {
   const renderComparisonView = () => {
     if (selectedSnapshots.length !== 2) return null;
     
-    const [newer, older] = selectedSnapshots;
+    // Sort snapshots by date (oldest first) before destructuring
+    const sortedSnapshots = [...selectedSnapshots].sort((a, b) => new Date(a.date) - new Date(b.date));
+    const [older, newer] = sortedSnapshots;
+    
+    if (!newer?.accountTotal || !older?.accountTotal) return null;
+    
     const diff = calculateDifference(newer, older);
     const changes = getPositionChanges();
     
@@ -161,25 +215,36 @@ const PortfolioHistory = () => {
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Symbol</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity Change</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Value Change</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      {new Date(older.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      {new Date(newer.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Change</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {changes.map(change => (
+                  {[...changes].sort((a, b) => a.symbol.localeCompare(b.symbol)).map(change => (
                     <tr key={change.symbol}>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                         {change.symbol}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        <span className={change.quantityDiff >= 0 ? 'text-green-600' : 'text-red-600'}>
-                          {change.quantityDiff > 0 ? '+' : ''}{change.quantityDiff}
-                        </span>
+                        <div>Qty: {change.oldQuantity}</div>
+                        <div>Value: {formatCurrency(change.oldValue)}</div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        <span className={change.valueDiff >= 0 ? 'text-green-600' : 'text-red-600'}>
-                          {change.valueDiff > 0 ? '+' : ''}{formatCurrency(change.valueDiff)}
-                        </span>
+                        <div>Qty: {change.newQuantity}</div>
+                        <div>Value: {formatCurrency(change.newValue)}</div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <div className={change.quantityDiff >= 0 ? 'text-green-600' : 'text-red-600'}>
+                          Qty: {change.quantityDiff > 0 ? '+' : ''}{change.quantityDiff}
+                        </div>
+                        <div className={change.valueDiff >= 0 ? 'text-green-600' : 'text-red-600'}>
+                          Value: {change.valueDiff > 0 ? '+' : ''}{formatCurrency(change.valueDiff)}
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -196,6 +261,14 @@ const PortfolioHistory = () => {
     return (
       <div className="flex justify-center items-center h-64">
         <p className="text-xl">Loading portfolio history...</p>
+      </div>
+    );
+  }
+  
+  if (error) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <p className="text-xl text-red-600">{error}</p>
       </div>
     );
   }

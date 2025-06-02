@@ -97,6 +97,18 @@ const PortfolioManager = () => {
     setUploadModalType(null);
   };
 
+  // Handle file upload success
+  const handleFileUploadSuccess = (fileType) => {
+    closeUploadModal();
+    refreshData();
+  };
+
+  // Handle file upload error
+  const handleFileUploadError = (error) => {
+    console.error('File upload error:', error);
+    // Error is already set in the fileUpload hook
+  };
+
   // Handle acquisition modal submission
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
     handleAcquisitionSubmit(
@@ -274,11 +286,10 @@ const PortfolioManager = () => {
       {/* File Upload Modal */}
       {showUploadModal && (
         <FileUploader
-          type={uploadModalType}
+          modalType={uploadModalType}
           onClose={closeUploadModal}
-          onUpload={fileUpload.handleFileUpload}
-          onUploadSuccess={fileUpload.handleUploadSuccess}
-          onUploadError={fileUpload.handleUploadError}
+          onCsvFileLoaded={fileUpload.handleFileLoaded}
+          onJsonFileLoaded={fileUpload.handleFileLoaded}
         />
       )}
     </div>

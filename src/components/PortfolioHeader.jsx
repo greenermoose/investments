@@ -1,5 +1,5 @@
 // components/PortfolioHeader.jsx revision: 5
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
 import { 
@@ -25,6 +25,23 @@ const PortfolioHeader = ({
   onNavigate,
   activeTab
 }) => {
+  const [showUploadDropdown, setShowUploadDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowUploadDropdown(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const primaryNavigationItems = [
     { id: 'account-management', label: 'Account Management', icon: Settings },
     { id: 'portfolio', label: 'Portfolio', icon: PieChart }
@@ -112,32 +129,40 @@ const PortfolioHeader = ({
           {/* Right: Actions */}
           <div className="flex items-center space-x-2">
             {showUploadButton && (
-              <div className="relative group">
+              <div className="relative" ref={dropdownRef}>
                 <button 
                   className="flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
-                  onClick={onUploadClick}
+                  onClick={() => setShowUploadDropdown(!showUploadDropdown)}
                 >
                   <Upload className="h-4 w-4 mr-1" />
                   Upload
                 </button>
                 
                 {/* Upload dropdown */}
-                <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
-                  <button
-                    onClick={onUploadCSV}
-                    className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    <FileText className="h-4 w-4 mr-2 text-blue-600" />
-                    Upload Portfolio (CSV)
-                  </button>
-                  <button
-                    onClick={onUploadJSON}
-                    className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    <Database className="h-4 w-4 mr-2 text-green-600" />
-                    Upload Transactions (JSON)
-                  </button>
-                </div>
+                {showUploadDropdown && (
+                  <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                    <button
+                      onClick={() => {
+                        onUploadCSV();
+                        setShowUploadDropdown(false);
+                      }}
+                      className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      <FileText className="h-4 w-4 mr-2 text-blue-600" />
+                      Upload Portfolio (CSV)
+                    </button>
+                    <button
+                      onClick={() => {
+                        onUploadJSON();
+                        setShowUploadDropdown(false);
+                      }}
+                      className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      <Database className="h-4 w-4 mr-2 text-green-600" />
+                      Upload Transactions (JSON)
+                    </button>
+                  </div>
+                )}
               </div>
             )}
 

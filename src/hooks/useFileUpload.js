@@ -38,6 +38,20 @@ const FILE_TYPES = {
 };
 
 /**
+ * Read file content as text
+ * @param {File} file - File to read
+ * @returns {Promise<string>} File content
+ */
+const readFileAsText = (file) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => resolve(e.target.result);
+    reader.onerror = (e) => reject(new Error('Failed to read file'));
+    reader.readAsText(file);
+  });
+};
+
+/**
  * Enhanced useFileUpload hook that properly saves original files
  * Key fix: Add calls to saveUploadedFile when processing files
  */
@@ -50,48 +64,52 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   });
 
   /**
-   * Validates file based on type and content
-   * @param {File} file - The file object to validate
+   * Validate file based on type and content
+   * @param {File} file - File to validate
    * @param {string} expectedType - Expected file type ('CSV' or 'JSON')
-   * @returns {Object} Validation result with success/error information
+   * @returns {Object} Validation result
    */
-  const validateFile = (file, expectedType = null) => {
-    // Detect file type if not specified
-    let fileType = expectedType;
-    if (!fileType) {
-      fileType = file.name.toLowerCase().endsWith('.csv') ? 'CSV' : 
-                file.name.toLowerCase().endsWith('.json') ? 'JSON' : null;
-    }
-    
-    if (!fileType) {
+  const validateFile = (file, expectedType) => {
+    // Check if file exists
+    if (!file) {
       return {
         success: false,
-        error: 'Unsupported file format. Please upload a CSV or JSON file.'
+        error: 'No file provided'
+      };
+    }
+
+    // Determine file type based on extension
+    const isCSV = file.name.toLowerCase().endsWith('.csv');
+    const isJSON = file.name.toLowerCase().endsWith('.json');
+    
+    // Validate file type matches expected type
+    if (expectedType === 'CSV' && !isCSV) {
+      return {
+        success: false,
+        error: 'Please upload a CSV file'
       };
     }
     
-    const validationRules = FILE_TYPES[fileType];
-    
-    // Check file extension
-    if (!file.name.toLowerCase().endsWith(validationRules.extension)) {
+    if (expectedType === 'JSON' && !isJSON) {
       return {
         success: false,
-        error: `Please upload a ${validationRules.description.toLowerCase()} with ${validationRules.extension} extension.`
+        error: 'Please upload a JSON file'
       };
     }
     
-    // Check file size
-    if (file.size > validationRules.maxSize) {
-      const maxSizeMB = validationRules.maxSize / (1024 * 1024);
+    // Basic file size validation
+    const maxSize = expectedType === 'CSV' ? 10 * 1024 * 1024 : 50 * 1024 * 1024; // 10MB for CSV, 50MB for JSON
+    if (file.size > maxSize) {
+      const sizeInMB = Math.round(maxSize / (1024 * 1024));
       return {
         success: false,
-        error: `File size too large. Maximum allowed size is ${maxSizeMB}MB.`
+        error: `File size too large. Please upload a file smaller than ${sizeInMB}MB`
       };
     }
     
     return {
       success: true,
-      fileType
+      fileType: isCSV ? 'CSV' : 'JSON'
     };
   };
 
@@ -147,20 +165,6 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       onLoad.setError(err.message || 'Failed to process file. Please check the file format.');
       onLoad.setLoadingState(false);
     }
-  };
-  
-  /**
-   * Reads a file as text
-   * @param {File} file - File to read
-   * @returns {Promise<string>} File content as text
-   */
-  const readFileAsText = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = (e) => resolve(e.target.result);
-      reader.onerror = (e) => reject(new Error('Error reading file'));
-      reader.readAsText(file);
-    });
   };
   
   /**
@@ -245,7 +249,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     try {
       // Parse transaction data
       const transactionData = parseTransactionJSON(fileContent);
-      if (!transactionData || !transactionData.BrokerageTransactions) {
+      if (!transactionData || !transactionData.transactions) {
         throw new Error('Invalid transaction file format');
       }
 
@@ -260,7 +264,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
 
       // Remove duplicates
       const uniqueTransactions = removeDuplicateTransactions(
-        transactionData.BrokerageTransactions,
+        transactionData.transactions,
         existingTransactions
       );
 
@@ -268,14 +272,24 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       await portfolioService.bulkMergeTransactions(uniqueTransactions, accountName);
 
       // Save the original file
-      await saveUploadedFile(fileContent, fileName, 'transaction');
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        accountName,
+        'json',
+        new Date(transactionData.fromDate)
+      );
 
       // Record success
       recordUploadSuccess(fileName);
 
       // Notify parent component
       onLoad.setLoadingState(false);
-      onLoad.onSuccess('Transaction file processed successfully');
+      if (onLoad.onSuccess) {
+        onLoad.onSuccess('Transaction file processed successfully');
+      } else if (onLoad.onModalClose) {
+        onLoad.onModalClose();
+      }
     } catch (err) {
       console.error('Error processing transaction file:', err);
       throw err;

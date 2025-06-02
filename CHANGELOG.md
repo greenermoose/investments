@@ -1,3 +1,7 @@
+### 0.4.23
+
+- fix file uploads
+
 ### 0.4.22
 
 - yet more fixes to useFileUpload and now PortfolioDisplay, too

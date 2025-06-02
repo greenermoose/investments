@@ -21,7 +21,9 @@ export const TransactionActions = {
   'Reinvest Dividend': TransactionCategories.NEUTRAL,
   'Qual Div Reinvest': TransactionCategories.NEUTRAL,
   'Long Term Cap Gain Reinvest': TransactionCategories.NEUTRAL,
+  'Short Term Cap Gain Reinvest': TransactionCategories.NEUTRAL,
   'Assigned': TransactionCategories.ACQUISITION,
+  'Buy to Close': TransactionCategories.ACQUISITION,
   
   // Dispositions (Decrease Holdings)
   'Sell': TransactionCategories.DISPOSITION,
@@ -36,10 +38,15 @@ export const TransactionActions = {
   'Bank Interest': TransactionCategories.NEUTRAL,
   'ADR Mgmt Fee': TransactionCategories.NEUTRAL,
   'Cash In Lieu': TransactionCategories.NEUTRAL,
+  'Pr Yr Div Reinvest': TransactionCategories.NEUTRAL,
   
   // Corporate Actions
   'Stock Split': TransactionCategories.CORPORATE_ACTION,
-  'Reverse Split': TransactionCategories.CORPORATE_ACTION
+  'Reverse Split': TransactionCategories.CORPORATE_ACTION,
+  'Stock Merger': TransactionCategories.CORPORATE_ACTION,
+  'Spin-off': TransactionCategories.CORPORATE_ACTION,
+  'Reorganized Issue': TransactionCategories.CORPORATE_ACTION,
+  'Unissued Rights Redemption': TransactionCategories.CORPORATE_ACTION
 };
 
 /**

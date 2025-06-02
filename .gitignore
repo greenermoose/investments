@@ -37,3 +37,6 @@ dist-ssr
 
 # CSV data files
 *.csv
+
+# Examples for AI
+/examples

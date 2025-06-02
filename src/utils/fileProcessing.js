@@ -443,7 +443,7 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern 1: Files with hyphens: AccountType-AccountName-Positions-Date.csv
   const hyphenMatch = nameWithoutExt.match(/^([^-]+(?:-[^-]+)*)-(?:Positions|Transactions)/);
   if (hyphenMatch) {
-    const accountName = hyphenMatch[1].replace(/-/g, ' ');
+    const accountName = hyphenMatch[1].replace(/-/g, ' ').trim();
     console.log('Matched hyphen pattern:', accountName);
     return accountName;
   }
@@ -451,7 +451,7 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern 2: Files with underscores: AccountType_AccountName_Positions_Date.csv
   const underscoreMatch = nameWithoutExt.match(/^([^_]+(?:_[^_]+)*?)_(?:Positions|Transactions)/);
   if (underscoreMatch) {
-    const accountName = underscoreMatch[1].replace(/_/g, ' ');
+    const accountName = underscoreMatch[1].replace(/_/g, ' ').trim();
     console.log('Matched underscore pattern:', accountName);
     return accountName;
   }

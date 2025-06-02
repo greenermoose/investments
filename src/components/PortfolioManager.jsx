@@ -7,6 +7,7 @@ import {
   useAccount 
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
+import { X } from 'lucide-react';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -18,6 +19,7 @@ import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import StorageManager from './StorageManager';
 import SecurityDetail from './SecurityDetail';
+import AcquisitionModal from './AcquisitionModal';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -280,39 +282,61 @@ const PortfolioManager = () => {
         showUploadButton={true}
         onAccountChange={handleAccountChange}
         onNavigate={changeTab}
-        activeTab={activeTab}
       />
       
-      <main className="flex-grow container mx-auto px-4 py-6">
-        {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-            {error}
-          </div>
-        )}
-        
-        {isLoading ? (
-          <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
-          </div>
-        ) : (
-          renderTabContent()
-        )}
+      <main className="flex-grow container mx-auto p-4">
+        {renderTabContent()}
       </main>
-
+      
       <PortfolioFooter />
       
-      {/* File Upload Modal */}
+      {/* Upload Modal */}
       {showUploadModal && (
-        <FileUploader
-          modalType={uploadModalType}
-          onClose={closeUploadModal}
-          onCsvFileLoaded={fileUpload.handleFileLoaded}
-          onJsonFileLoaded={fileUpload.handleFileLoaded}
-          onAccountConfirmation={(rawAccountName, resolve) => {
-            // For now, just resolve with the raw account name
-            // In the future, this could show a confirmation dialog
-            resolve(rawAccountName);
-          }}
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-2xl w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-semibold">
+                {uploadModalType === 'csv' ? 'Upload Portfolio' : 'Upload Transactions'}
+              </h2>
+              <button
+                onClick={closeUploadModal}
+                className="text-gray-400 hover:text-gray-600"
+                aria-label="Close modal"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <FileUploader 
+              portfolioData={portfolioData}
+              onLoad={{
+                setLoadingState: portfolio.setLoadingState,
+                resetError: portfolio.resetError,
+                loadPortfolio: portfolio.loadPortfolio,
+                setError: portfolio.setError,
+                onModalClose: closeUploadModal,
+                onNavigate: navigation.changeTab
+              }}
+              onAcquisitionsFound={acquisition.openAcquisitionModal}
+              onAccountConfirmation={(rawAccountName, resolve) => {
+                // For now, just resolve with the raw account name
+                // In the future, this could show a confirmation dialog
+                resolve(rawAccountName);
+              }}
+              onCsvFileLoaded={fileUpload.handleFileLoaded}
+              onJsonFileLoaded={fileUpload.handleFileLoaded}
+            />
+          </div>
+        </div>
+      )}
+      
+      {/* Acquisition Modal */}
+      {showAcquisitionModal && (
+        <AcquisitionModal
+          acquisitions={pendingAcquisitions}
+          possibleTickerChanges={possibleTickerChanges}
+          onClose={closeAcquisitionModal}
+          onSubmit={handleAcquisitionModalSubmit}
+          currentAccount={currentAccount || selectedAccount}
         />
       )}
     </div>

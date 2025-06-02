@@ -1,3 +1,7 @@
+### 0.4.17
+
+- fixing fileProcessing
+
 ### 0.4.16
 
 - updated PortfolioHeader

@@ -50,58 +50,61 @@ export const parseFieldValue = (value) => {
  * @returns {Object} A mapping of standard names to column indices
  */
 export const createHeaderMapping = (columnHeaders) => {
+  console.log('Raw column headers:', columnHeaders);
+  
   const headerMap = {};
   
   columnHeaders.forEach((header, index) => {
     // Normalize and map headers to standard names
-    const normalizedHeader = header.replace(/\s+/g, ' ').trim();
+    const normalizedHeader = header.replace(/\s+/g, ' ').trim().toLowerCase();
+    console.log(`Processing header "${header}" -> normalized: "${normalizedHeader}"`);
     
     // Map different variations to standardized names
-    switch(normalizedHeader) {
-      case 'Quantity':
-      case 'Qty (Quantity)':
-        headerMap['Qty (Quantity)'] = index;
-        break;
-      case 'Market Value':
-      case 'Mkt Val (Market Value)':
-        headerMap['Mkt Val (Market Value)'] = index;
-        break;
-      case 'Gain/Loss $':
-      case 'Gain $ (Gain/Loss $)':
-        headerMap['Gain $ (Gain/Loss $)'] = index;
-        break;
-      case 'Gain/Loss %':
-      case 'Gain % (Gain/Loss %)':
-        headerMap['Gain % (Gain/Loss %)'] = index;
-        break;
-      case '% Of Account':
-      case '% of Acct (% of Account)':
-        headerMap['% of Acct (% of Account)'] = index;
-        break;
-      case 'Day Change $':
-      case 'Day Chng $ (Day Change $)':
-        headerMap['Day Chng $ (Day Change $)'] = index;
-        break;
-      case 'Day Change %':
-      case 'Day Chng % (Day Change %)':
-        headerMap['Day Chng % (Day Change %)'] = index;
-        break;
-      case 'Price Change $':
-      case 'Price Chng $ (Price Change $)':
-        headerMap['Price Chng $ (Price Change $)'] = index;
-        break;
-      case 'Price Change %':
-      case 'Price Chng % (Price Change %)':
-        headerMap['Price Chng % (Price Change %)'] = index;
-        break;
-      case 'Reinvest Dividends?':
-      case 'Reinvest?':
-        headerMap['Reinvest?'] = index;
-        break;
-      default:
-        headerMap[normalizedHeader] = index;
+    if (normalizedHeader.includes('symbol')) {
+      console.log(`Found Symbol header at index ${index}`);
+      headerMap['Symbol'] = index;
+    } else if (normalizedHeader.includes('quantity') || normalizedHeader.includes('qty')) {
+      headerMap['Qty (Quantity)'] = index;
+    } else if (normalizedHeader.includes('market value') || normalizedHeader.includes('mkt val')) {
+      headerMap['Mkt Val (Market Value)'] = index;
+    } else if (normalizedHeader.includes('gain/loss') || normalizedHeader.includes('gain $')) {
+      headerMap['Gain $ (Gain/Loss $)'] = index;
+    } else if (normalizedHeader.includes('gain %') || normalizedHeader.includes('gain/loss %')) {
+      headerMap['Gain % (Gain/Loss %)'] = index;
+    } else if (normalizedHeader.includes('% of account') || normalizedHeader.includes('% of acct')) {
+      headerMap['% of Acct (% of Account)'] = index;
+    } else if (normalizedHeader.includes('day change') || normalizedHeader.includes('day chng')) {
+      headerMap['Day Chng $ (Day Change $)'] = index;
+    } else if (normalizedHeader.includes('day chng %') || normalizedHeader.includes('day change %')) {
+      headerMap['Day Chng % (Day Change %)'] = index;
+    } else if (normalizedHeader.includes('price change') || normalizedHeader.includes('price chng')) {
+      headerMap['Price Chng $ (Price Change $)'] = index;
+    } else if (normalizedHeader.includes('price chng %') || normalizedHeader.includes('price change %')) {
+      headerMap['Price Chng % (Price Change %)'] = index;
+    } else if (normalizedHeader.includes('reinvest')) {
+      headerMap['Reinvest?'] = index;
+    } else if (normalizedHeader.includes('description')) {
+      headerMap['Description'] = index;
+    } else if (normalizedHeader.includes('price')) {
+      headerMap['Price'] = index;
+    } else if (normalizedHeader.includes('cost basis')) {
+      headerMap['Cost Basis'] = index;
+    } else {
+      headerMap[header] = index;
     }
   });
+  
+  console.log('Final header mapping:', headerMap);
+  
+  // Validate required headers
+  const requiredHeaders = ['Symbol', 'Qty (Quantity)', 'Mkt Val (Market Value)'];
+  const missingHeaders = requiredHeaders.filter(header => headerMap[header] === undefined);
+  
+  if (missingHeaders.length > 0) {
+    console.error('Missing headers:', missingHeaders);
+    console.error('Available headers:', Object.keys(headerMap));
+    throw new Error(`Missing required headers: ${missingHeaders.join(', ')}`);
+  }
   
   return headerMap;
 };
@@ -114,25 +117,65 @@ export const createHeaderMapping = (columnHeaders) => {
 export const extractDateFromAccountInfo = (accountInfo) => {
   if (!accountInfo) return null;
   
-  const dateMatch = accountInfo.match(/as of (\d+:\d+ [AP]M) ET, (\d{4})\/(\d{2})\/(\d{2})/);
-  if (dateMatch) {
-    const [_, timeStr, year, month, day] = dateMatch;
-    // Parse time (convert from 12-hour to 24-hour format)
-    const [hourMin, ampm] = timeStr.split(' ');
-    let [hours, minutes] = hourMin.split(':').map(Number);
-    if (ampm === 'PM' && hours < 12) hours += 12;
-    if (ampm === 'AM' && hours === 12) hours = 0;
-    
-    const date = new Date(year, month - 1, day, hours, minutes);
-    
-    // Validate the date
-    if (isNaN(date.getTime())) {
-      console.warn(`Invalid date parsed from account info: ${accountInfo}`);
-      return null;
+  // Try multiple date formats
+  const dateFormats = [
+    // Format: "as of 06:40 PM ET, 2025/04/27"
+    /as of (\d+:\d+ [AP]M) ET, (\d{4})\/(\d{2})\/(\d{2})/,
+    // Format: "as of 06:40 PM ET, 04/27/2025"
+    /as of (\d+:\d+ [AP]M) ET, (\d{2})\/(\d{2})\/(\d{4})/,
+    // Format: "as of 2025-04-27 18:40:00"
+    /as of (\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/,
+    // Format: "as of 04/27/2025"
+    /as of (\d{2})\/(\d{2})\/(\d{4})/,
+    // Format: "as of 2025/04/27"
+    /as of (\d{4})\/(\d{2})\/(\d{2})/
+  ];
+  
+  for (const format of dateFormats) {
+    const match = accountInfo.match(format);
+    if (match) {
+      try {
+        let date;
+        if (format === dateFormats[0]) {
+          // Format: "as of 06:40 PM ET, 2025/04/27"
+          const [_, timeStr, year, month, day] = match;
+          const [hourMin, ampm] = timeStr.split(' ');
+          let [hours, minutes] = hourMin.split(':').map(Number);
+          if (ampm === 'PM' && hours < 12) hours += 12;
+          if (ampm === 'AM' && hours === 12) hours = 0;
+          date = new Date(year, month - 1, day, hours, minutes);
+        } else if (format === dateFormats[1]) {
+          // Format: "as of 06:40 PM ET, 04/27/2025"
+          const [_, timeStr, month, day, year] = match;
+          const [hourMin, ampm] = timeStr.split(' ');
+          let [hours, minutes] = hourMin.split(':').map(Number);
+          if (ampm === 'PM' && hours < 12) hours += 12;
+          if (ampm === 'AM' && hours === 12) hours = 0;
+          date = new Date(year, month - 1, day, hours, minutes);
+        } else if (format === dateFormats[2]) {
+          // Format: "as of 2025-04-27 18:40:00"
+          const [_, year, month, day, hours, minutes] = match;
+          date = new Date(year, month - 1, day, hours, minutes);
+        } else if (format === dateFormats[3]) {
+          // Format: "as of 04/27/2025"
+          const [_, month, day, year] = match;
+          date = new Date(year, month - 1, day);
+        } else if (format === dateFormats[4]) {
+          // Format: "as of 2025/04/27"
+          const [_, year, month, day] = match;
+          date = new Date(year, month - 1, day);
+        }
+        
+        if (date && !isNaN(date.getTime())) {
+          return date;
+        }
+      } catch (error) {
+        console.warn(`Error parsing date from format ${format}:`, error);
+        continue;
+      }
     }
-    
-    return date;
   }
+  
   return null;
 };
 
@@ -149,6 +192,7 @@ export const parsePortfolioCSV = (fileContent) => {
     }
     
     const lines = fileContent.split('\n');
+    console.log('First few lines of file:', lines.slice(0, 5));
     
     // Check if we have enough lines
     if (lines.length < 3) {
@@ -157,6 +201,7 @@ export const parsePortfolioCSV = (fileContent) => {
     
     // Extract date from the first row
     let portfolioDate = extractDateFromAccountInfo(lines[0]);
+    console.log('Extracted portfolio date:', portfolioDate);
     
     // If first line doesn't have date info, it might be in a different format
     if (!portfolioDate) {
@@ -164,6 +209,7 @@ export const parsePortfolioCSV = (fileContent) => {
       const dateMatch = lines[0].match(/as of (.*?)[,"]/);
       if (dateMatch) {
         portfolioDate = new Date(dateMatch[1]);
+        console.log('Parsed date from filename format:', portfolioDate);
       }
     }
     
@@ -173,8 +219,11 @@ export const parsePortfolioCSV = (fileContent) => {
     
     for (let i = 0; i < Math.min(10, lines.length); i++) {
       const possibleHeaderLine = lines[i];
+      console.log(`Checking line ${i} for headers:`, possibleHeaderLine);
+      
       if (possibleHeaderLine.includes('"Symbol"') || possibleHeaderLine.includes('Symbol')) {
         headerRowIndex = i;
+        console.log(`Found header row at index ${i}`);
         
         // Parse the header line with Papa Parse
         const parsed = Papa.parse(possibleHeaderLine, {
@@ -184,6 +233,7 @@ export const parsePortfolioCSV = (fileContent) => {
         
         if (parsed.data && parsed.data[0]) {
           columnHeaders = parsed.data[0].map(header => header.trim());
+          console.log('Parsed column headers:', columnHeaders);
         }
         break;
       }

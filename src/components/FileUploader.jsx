@@ -5,6 +5,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Upload, FileText, Database, HelpCircle, AlertTriangle, CheckCircle, X } from 'lucide-react';
 import { validateFile, FileTypes } from '../utils/fileProcessing';
+import { useFileUpload } from '../hooks/useFileUpload';
 
 /**
  * Modal component for file upload
@@ -445,44 +446,34 @@ const UploadOptions = ({ onUploadCSV, onUploadJSON }) => {
 /**
  * Main FileUploader component that provides all file upload functionality
  */
-const FileUploader = ({ 
-  onFileLoaded, 
-  onCsvFileLoaded,
-  onJsonFileLoaded,
-  modalType = null,  // 'csv', 'json', or null
-  onClose = null 
-}) => {
-  // Determine which upload handlers to use
-  const handleCsvFile = onCsvFileLoaded || onFileLoaded;
-  const handleJsonFile = onJsonFileLoaded || onFileLoaded;
-  
-  // Handle different modal types or show the dual uploader
-  if (modalType === 'csv') {
-    return (
-      <UploadModal 
-        isOpen={true} 
-        onClose={onClose}
-        title="Upload Portfolio Snapshot"
-      >
-        <PortfolioUploader onFileLoaded={handleCsvFile} />
-      </UploadModal>
-    );
-  }
-  
-  if (modalType === 'json') {
-    return (
-      <UploadModal 
-        isOpen={true} 
-        onClose={onClose}
-        title="Upload Transaction History"
-      >
-        <TransactionUploader onFileLoaded={handleJsonFile} />
-      </UploadModal>
-    );
-  }
-  
-  // Default to dual uploader
-  return <DualFileUploader onCsvFileLoaded={handleCsvFile} onJsonFileLoaded={handleJsonFile} />;
+const FileUploader = ({ onFileUploaded, onAcquisitionsFound }) => {
+  const { handleFileUpload, confirmationDialog } = useFileUpload(null, {
+    setLoadingState: () => {},
+    onSuccess: onFileUploaded,
+    onModalClose: () => {}
+  }, onAcquisitionsFound);
+
+  return (
+    <div>
+      <div className="mb-4">
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Upload Portfolio or Transaction File
+        </label>
+        <input
+          type="file"
+          accept=".csv,.json"
+          onChange={handleFileUpload}
+          className="block w-full text-sm text-gray-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-md file:border-0
+            file:text-sm file:font-semibold
+            file:bg-blue-50 file:text-blue-700
+            hover:file:bg-blue-100"
+        />
+      </div>
+      {confirmationDialog}
+    </div>
+  );
 };
 
 // Export the main component and utility components for individual use

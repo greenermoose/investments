@@ -1,3 +1,7 @@
+### 0.4.24
+
+- fix ambiguity in account names
+
 ### 0.4.23
 
 - fix file uploads

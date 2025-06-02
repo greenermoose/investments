@@ -430,6 +430,25 @@ export const parseDateFromFilename = (filename) => {
 };
 
 /**
+ * Normalizes an account name by removing special characters and standardizing format
+ * @param {string} accountName - The account name to normalize
+ * @returns {string} The normalized account name
+ */
+export const normalizeAccountName = (accountName) => {
+  if (!accountName) return '';
+  
+  return accountName
+    // Replace underscores and hyphens with spaces
+    .replace(/[_-]/g, ' ')
+    // Remove account numbers and other identifiers
+    .replace(/\s*\.{3}\d+\s*/g, ' ')
+    .replace(/\s*\d{3,}\s*/g, ' ')
+    // Remove extra whitespace
+    .replace(/\s+/g, ' ')
+    .trim();
+};
+
+/**
  * Extracts account name from filename
  * @param {string} filename - The filename to parse
  * @returns {string} The extracted account name
@@ -443,7 +462,7 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern 1: Files with hyphens: AccountType-AccountName-Positions-Date.csv
   const hyphenMatch = nameWithoutExt.match(/^([^-]+(?:-[^-]+)*)-(?:Positions|Transactions)/);
   if (hyphenMatch) {
-    const accountName = hyphenMatch[1].replace(/-/g, ' ').trim();
+    const accountName = normalizeAccountName(hyphenMatch[1]);
     console.log('Matched hyphen pattern:', accountName);
     return accountName;
   }
@@ -451,7 +470,7 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern 2: Files with underscores: AccountType_AccountName_Positions_Date.csv
   const underscoreMatch = nameWithoutExt.match(/^([^_]+(?:_[^_]+)*?)_(?:Positions|Transactions)/);
   if (underscoreMatch) {
-    const accountName = underscoreMatch[1].replace(/_/g, ' ').trim();
+    const accountName = normalizeAccountName(underscoreMatch[1]);
     console.log('Matched underscore pattern:', accountName);
     return accountName;
   }
@@ -459,9 +478,7 @@ export const getAccountNameFromFilename = (filename) => {
   // Pattern 3: Files with date embedded: AccountName20240327123456.csv
   const dateMatch = nameWithoutExt.match(/^(.+?)(?:\d{14}|\d{8})/);
   if (dateMatch) {
-    const accountName = dateMatch[1]
-      .replace(/[-_]/g, ' ')
-      .trim();
+    const accountName = normalizeAccountName(dateMatch[1]);
     console.log('Matched date pattern:', accountName);
     return accountName;
   }
@@ -528,5 +545,22 @@ export const readFileAsText = (file) => {
     reader.onload = (e) => resolve(e.target.result);
     reader.onerror = (e) => reject(new Error('Error reading file'));
     reader.readAsText(file);
+  });
+};
+
+/**
+ * Finds similar account names from a list of existing accounts
+ * @param {string} newAccountName - The new account name to check
+ * @param {Array<string>} existingAccounts - List of existing account names
+ * @returns {Array<string>} Array of similar account names
+ */
+export const findSimilarAccountNames = (newAccountName, existingAccounts) => {
+  if (!newAccountName || !existingAccounts || !existingAccounts.length) return [];
+  
+  const normalizedNewName = normalizeAccountName(newAccountName);
+  
+  return existingAccounts.filter(existingName => {
+    const normalizedExisting = normalizeAccountName(existingName);
+    return normalizedExisting === normalizedNewName;
   });
 };

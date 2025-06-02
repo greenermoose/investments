@@ -1,3 +1,7 @@
+### 0.4.19
+
+- fixing PortfolioRepository.js
+
 ### 0.4.18
 
 - fixing useFileUpload.js

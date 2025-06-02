@@ -44,7 +44,7 @@ export class PortfolioRepository extends BaseRepository {
     // Validate and normalize portfolio data
     const normalizedData = portfolioData.map(position => ({
       ...position,
-      Symbol: position.Symbol?.trim(),
+      Symbol: typeof position.Symbol === 'string' ? position.Symbol.trim() : String(position.Symbol || ''),
       'Qty (Quantity)': parseFloat(position['Qty (Quantity)']) || 0,
       'Mkt Val (Market Value)': parseFloat(position['Mkt Val (Market Value)']) || 0
     }));

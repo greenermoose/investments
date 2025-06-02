@@ -1,12 +1,15 @@
-// components/AccountSelector.jsx revision: 2
+// components/AccountSelector.jsx revision: 3
 import React, { useState, useEffect } from 'react';
 import { portfolioService } from '../services/PortfolioService';
+import { formatDate } from '../utils/dataUtils';
+import { ChevronDown, Plus, AlertCircle, CheckCircle } from 'lucide-react';
 
 const AccountSelector = ({ currentAccount, onAccountChange }) => {
   const [accounts, setAccounts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [accountStats, setAccountStats] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
   
   useEffect(() => {
     loadAccounts();
@@ -40,9 +43,16 @@ const AccountSelector = ({ currentAccount, onAccountChange }) => {
     }
   };
   
-  const handleAccountChange = (e) => {
-    const selectedAccount = e.target.value;
-    onAccountChange(selectedAccount);
+  const handleAccountChange = (account) => {
+    onAccountChange(account);
+    setIsOpen(false);
+  };
+
+  const handleCreateAccount = () => {
+    const newAccountName = prompt('Enter a name for the new account:');
+    if (newAccountName && newAccountName.trim()) {
+      handleAccountChange(newAccountName.trim());
+    }
   };
   
   const getAccountStatusBadge = (account) => {
@@ -51,17 +61,16 @@ const AccountSelector = ({ currentAccount, onAccountChange }) => {
     
     if (stats.isEmpty) {
       return (
-        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 ml-2">
-          <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
+        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+          <AlertCircle className="w-3 h-3 mr-1" />
           Empty
         </span>
       );
     }
     
     return (
-      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 ml-2">
+      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+        <CheckCircle className="w-3 h-3 mr-1" />
         {stats.snapshotCount} snapshot{stats.snapshotCount !== 1 ? 's' : ''}
       </span>
     );
@@ -80,20 +89,50 @@ const AccountSelector = ({ currentAccount, onAccountChange }) => {
   }
   
   return (
-    <div className="relative inline-block text-left">
-      <select
-        value={currentAccount || ''}
-        onChange={handleAccountChange}
-        className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md bg-white"
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-between w-64 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
       >
-        <option value="">Select Account...</option>
-        {accounts.map(account => (
-          <option key={account} value={account}>
-            {account}
-          </option>
-        ))}
-      </select>
+        <span className="flex items-center">
+          {currentAccount ? (
+            <>
+              <span className="mr-2">{currentAccount}</span>
+              {getAccountStatusBadge(currentAccount)}
+            </>
+          ) : (
+            'Select Account...'
+          )}
+        </span>
+        <ChevronDown className="w-4 h-4 text-gray-500" />
+      </button>
       
+      {isOpen && (
+        <div className="absolute z-10 w-64 mt-1 bg-white rounded-md shadow-lg">
+          <div className="py-1">
+            {accounts.map(account => (
+              <button
+                key={account}
+                onClick={() => handleAccountChange(account)}
+                className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                <span>{account}</span>
+                {getAccountStatusBadge(account)}
+              </button>
+            ))}
+            
+            <div className="border-t border-gray-100">
+              <button
+                onClick={handleCreateAccount}
+                className="flex items-center w-full px-4 py-2 text-sm text-indigo-600 hover:bg-gray-100"
+              >
+                <Plus className="w-4 h-4 mr-2" />
+                Create New Account
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

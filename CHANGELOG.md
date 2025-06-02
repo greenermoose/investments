@@ -1,3 +1,7 @@
+### 0.4.15
+
+- working on Account Management UI
+
 ### 0.4.14
 
 - removed PortfolioTabs.jsx

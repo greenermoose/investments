@@ -31,7 +31,7 @@ const PortfolioHeader = ({
     { id: 'transactions', label: 'Transactions', icon: List },
     { id: 'lots', label: 'Lots', icon: Layers },
     { id: 'performance', label: 'Performance', icon: BarChart2 },
-    { id: 'account-management', label: 'Settings', icon: Settings }
+    { id: 'account-management', label: 'Account Management', icon: Settings }
   ];
 
   return (

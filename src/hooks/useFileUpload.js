@@ -291,8 +291,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   const handlePortfolioFile = async (fileContent, fileName, dateFromFileName = null) => {
     try {
       // Parse portfolio data
-      const portfolioData = parsePortfolioCSV(fileContent);
-      if (!portfolioData || !portfolioData.length) {
+      const { portfolioData, portfolioDate, accountTotal } = parsePortfolioCSV(fileContent);
+      if (!portfolioData || !Array.isArray(portfolioData) || portfolioData.length === 0) {
         throw new Error('Invalid portfolio file format');
       }
 
@@ -303,7 +303,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
 
       // Get snapshot date
-      const snapshotDate = dateFromFileName || parseDateFromFilename(fileName) || new Date();
+      const snapshotDate = dateFromFileName || portfolioDate || parseDateFromFilename(fileName) || new Date();
 
       // Get latest snapshot for comparison
       const latestSnapshot = await portfolioService.getLatestSnapshot(accountName);
@@ -316,7 +316,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
         portfolioData,
         accountName,
         snapshotDate,
-        changes.accountTotal
+        accountTotal
       );
 
       // Save the original file

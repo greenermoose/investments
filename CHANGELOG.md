@@ -1,3 +1,7 @@
+### 0.4.18
+
+- fixing useFileUpload.js
+
 ### 0.4.17
 
 - fixing fileProcessing

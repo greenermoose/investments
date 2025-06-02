@@ -685,10 +685,86 @@ export const readFileAsText = (file) => {
 export const findSimilarAccountNames = (newAccountName, existingAccounts) => {
   if (!newAccountName || !existingAccounts || !existingAccounts.length) return [];
   
-  const normalizedNewName = normalizeAccountName(newAccountName);
+  // Extract core account name and number
+  const extractCoreInfo = (name) => {
+    // First, normalize the name
+    const cleaned = name
+      .replace(/\.{3}/g, '') // Remove ...
+      .replace(/XXX/g, '')   // Remove XXX
+      .replace(/[_-]/g, ' ') // Replace _ and - with spaces
+      .replace(/\s+/g, ' ')  // Normalize spaces
+      .trim();
+    
+    // Try different patterns to extract account number
+    let accountNumber = null;
+    
+    // Pattern 1: Look for numbers at the end of the string
+    const endNumberMatch = cleaned.match(/(\d+)(?:\s*$)/);
+    if (endNumberMatch) {
+      accountNumber = endNumberMatch[1];
+    }
+    
+    // Pattern 2: Look for numbers after common account type words
+    if (!accountNumber) {
+      const typeNumberMatch = cleaned.match(/(?:IRA|401k|403b|HSA)\s*(\d+)/i);
+      if (typeNumberMatch) {
+        accountNumber = typeNumberMatch[1];
+      }
+    }
+    
+    // Pattern 3: Look for any 3+ digit number
+    if (!accountNumber) {
+      const anyNumberMatch = cleaned.match(/(\d{3,})/);
+      if (anyNumberMatch) {
+        accountNumber = anyNumberMatch[1];
+      }
+    }
+    
+    // Get base name without number
+    const baseName = cleaned
+      .replace(/\d+/g, '') // Remove all numbers
+      .replace(/\s+/g, ' ') // Normalize spaces again
+      .trim();
+    
+    return { baseName, accountNumber };
+  };
   
-  return existingAccounts.filter(existingName => {
-    const normalizedExisting = normalizeAccountName(existingName);
-    return normalizedExisting === normalizedNewName;
+  const newInfo = extractCoreInfo(newAccountName);
+  console.log('New account info:', newInfo);
+  
+  // First try exact match
+  const exactMatch = existingAccounts.find(name => 
+    normalizeAccountName(name) === normalizeAccountName(newAccountName)
+  );
+  if (exactMatch) {
+    console.log('Found exact match:', exactMatch);
+    return [exactMatch];
+  }
+  
+  // If no exact match, try matching with account numbers
+  const matches = existingAccounts.filter(existingName => {
+    const existingInfo = extractCoreInfo(existingName);
+    console.log('Comparing with:', existingInfo);
+    
+    // Must have matching base names
+    if (existingInfo.baseName !== newInfo.baseName) {
+      return false;
+    }
+    
+    // If both have account numbers, they must match
+    if (existingInfo.accountNumber && newInfo.accountNumber) {
+      return existingInfo.accountNumber === newInfo.accountNumber;
+    }
+    
+    // If only one has an account number, it's not a match
+    if (existingInfo.accountNumber || newInfo.accountNumber) {
+      return false;
+    }
+    
+    // If neither has an account number, it's a match
+    return true;
   });
+  
+  console.log('Found matches:', matches);
+  return matches;
 };

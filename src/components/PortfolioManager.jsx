@@ -21,6 +21,7 @@ import StorageManager from './StorageManager';
 import SecurityDetail from './SecurityDetail';
 import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
+import WelcomeScreen from './WelcomeScreen';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -252,69 +253,11 @@ const PortfolioManager = () => {
   // Initial view when no data is loaded
   if (!isDataLoaded && !isLoading && !error) {
     return (
-      <div className="flex flex-col min-h-screen bg-gray-100">
-        <PortfolioHeader 
-          portfolioDate={null}
-          currentAccount=""
-          onUploadCSV={handleCsvUpload}
-          onUploadJSON={handleJsonUpload}
-          showUploadButton={false}
-          onAccountChange={handleAccountChange}
-          onNavigate={changeTab}
-        />
-        
-        <main className="flex-grow container mx-auto p-4">
-          <div className="mb-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-4">Welcome to Investment Portfolio Manager</h2>
-              <p className="mb-4">Upload your portfolio data or transaction history to get started.</p>
-              
-              {/* Simple dual file uploader for initial state */}
-              <FileUploader 
-                portfolioData={portfolioData}
-                onLoad={{
-                  setLoadingState: portfolio.setLoadingState,
-                  resetError: portfolio.resetError,
-                  loadPortfolio: portfolio.loadPortfolio,
-                  setError: portfolio.setError,
-                  onModalClose: () => setShowUploadModal(false),
-                  onNavigate: navigation.changeTab
-                }}
-                onAcquisitionsFound={acquisition.openAcquisitionModal}
-                onAccountConfirmation={(rawAccountName, resolve) => {
-                  // For now, just resolve with the raw account name
-                  // In the future, this could show a confirmation dialog
-                  resolve(rawAccountName);
-                }}
-              />
-              
-              {/* Link to Storage Manager */}
-              <div className="mt-6 text-center">
-                <p className="text-gray-600 mb-2">Already have data in the app?</p>
-                <button
-                  onClick={() => changeTab('storage-manager')}
-                  className="text-indigo-600 hover:text-indigo-800 font-medium"
-                >
-                  Manage Your Stored Data →
-                </button>
-              </div>
-            </div>
-          </div>
-        </main>
-        
-        <PortfolioFooter portfolioDate={null} />
-        
-        {/* Upload modals */}
-        {showUploadModal && (
-          <FileUploader
-            modalType={uploadModalType}
-            onClose={closeUploadModal}
-            onCsvFileLoaded={fileUpload.handleFileLoaded}
-            onJsonFileLoaded={fileUpload.handleFileLoaded}
-            onAccountConfirmation={handleAccountConfirmation}
-          />
-        )}
-      </div>
+      <WelcomeScreen
+        onFileLoaded={fileUpload.handleFileLoaded}
+        onNavigate={changeTab}
+        onAccountChange={handleAccountChange}
+      />
     );
   }
 

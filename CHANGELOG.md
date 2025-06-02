@@ -1,3 +1,7 @@
+### 0.4.32
+
+- new welcome screen
+
 ### 0.4.31
 
 - more file upload fixes

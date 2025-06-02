@@ -1,3 +1,7 @@
+### 0.4.38
+
+- switch between snapshots
+
 ### 0.4.37
 
 - snapshot comparison roadmap

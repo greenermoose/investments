@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { formatDate } from '../utils/dataUtils';
 import { portfolioService } from '../services/PortfolioService';
-import { Clock } from 'lucide-react';
+import { Clock, ChevronDown } from 'lucide-react';
 
 const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect }) => {
   const [snapshots, setSnapshots] = useState([]);
@@ -66,25 +66,29 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect }) =>
   return (
     <div className="flex items-center space-x-2">
       <Clock className="h-4 w-4 text-indigo-100" />
-      <select
-        value={selectedDate ? new Date(selectedDate).getTime() : ''}
-        onChange={(e) => {
-          const snapshot = snapshots.find(s => new Date(s.date).getTime() === parseInt(e.target.value));
-          if (snapshot) {
-            onSnapshotSelect(snapshot);
-          }
-        }}
-        className="bg-indigo-700 text-indigo-100 text-sm rounded-md px-2 py-1 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-      >
-        {snapshots.map((snapshot) => (
-          <option 
-            key={new Date(snapshot.date).getTime()} 
-            value={new Date(snapshot.date).getTime()}
-          >
-            {formatDate(snapshot.date)}
-          </option>
-        ))}
-      </select>
+      <div className="relative">
+        <select
+          value={selectedDate ? new Date(selectedDate).getTime() : ''}
+          onChange={(e) => {
+            const snapshot = snapshots.find(s => new Date(s.date).getTime() === parseInt(e.target.value));
+            if (snapshot) {
+              onSnapshotSelect(snapshot);
+            }
+          }}
+          className="appearance-none bg-indigo-700 text-indigo-100 text-sm rounded-md pl-3 pr-8 py-1.5 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent cursor-pointer hover:bg-indigo-600 transition-colors"
+        >
+          {snapshots.map((snapshot) => (
+            <option 
+              key={new Date(snapshot.date).getTime()} 
+              value={new Date(snapshot.date).getTime()}
+              className="bg-indigo-700 text-indigo-100"
+            >
+              {formatDate(snapshot.date)}
+            </option>
+          ))}
+        </select>
+        <ChevronDown className="h-4 w-4 text-indigo-100 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none" />
+      </div>
     </div>
   );
 };

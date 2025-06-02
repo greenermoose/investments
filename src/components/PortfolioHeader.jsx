@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
+import SnapshotSelector from './SnapshotSelector';
 import { 
   FileText, 
   Upload, 
@@ -23,7 +24,8 @@ const PortfolioHeader = ({
   onAccountChange,
   uploadStats,
   onNavigate,
-  activeTab
+  activeTab,
+  onSnapshotSelect
 }) => {
   const [showUploadDropdown, setShowUploadDropdown] = useState(false);
   const dropdownRef = useRef(null);
@@ -98,11 +100,18 @@ const PortfolioHeader = ({
       {/* Bottom row: Secondary navigation and utilities */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-12">
-          {/* Left: Snapshot date */}
+          {/* Left: Snapshot date and selector */}
           {portfolioDate && currentAccount && (
-            <div className="flex items-center text-sm text-indigo-100">
-              <FileText className="h-4 w-4 mr-1" />
-              <span>Portfolio Snapshot: {formatDate(portfolioDate)}</span>
+            <div className="flex items-center space-x-4 text-sm text-indigo-100">
+              <div className="flex items-center">
+                <FileText className="h-4 w-4 mr-1" />
+                <span>Portfolio Snapshot: {formatDate(portfolioDate)}</span>
+              </div>
+              <SnapshotSelector
+                currentAccount={currentAccount}
+                selectedDate={portfolioDate}
+                onSnapshotSelect={onSnapshotSelect}
+              />
             </div>
           )}
 

@@ -8,6 +8,7 @@ import {
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
 import { X, FileText, Database } from 'lucide-react';
+import { portfolioService } from '../services/PortfolioService';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -197,6 +198,26 @@ const PortfolioManager = () => {
     changeTab('portfolio');
   };
 
+  // Handle snapshot selection
+  const handleSnapshotSelect = async (snapshot) => {
+    try {
+      const snapshotData = await portfolioService.getPortfolioById(snapshot.id);
+      if (snapshotData) {
+        portfolio.loadPortfolio(
+          snapshotData.data,
+          currentAccount || selectedAccount,
+          snapshotData.date,
+          snapshotData.accountTotal
+        );
+      } else {
+        console.error('Snapshot data not found:', snapshot.id);
+      }
+    } catch (error) {
+      console.error('Error loading snapshot:', error);
+      // Error will be handled by the portfolio context
+    }
+  };
+
   // Render tab content based on active tab
   const renderTabContent = () => {
     // Special case for security detail
@@ -271,6 +292,8 @@ const PortfolioManager = () => {
         showUploadButton={true}
         onAccountChange={handleAccountChange}
         onNavigate={changeTab}
+        onSnapshotSelect={handleSnapshotSelect}
+        activeTab={activeTab}
       />
       
       <main className="flex-grow container mx-auto p-4">

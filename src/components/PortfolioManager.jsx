@@ -7,7 +7,7 @@ import {
   useAccount 
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
-import { X } from 'lucide-react';
+import { X, FileText, Database } from 'lucide-react';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -339,7 +339,7 @@ const PortfolioManager = () => {
       {/* Upload Modal */}
       {showUploadModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg max-w-2xl w-full p-6">
+          <div className="bg-white rounded-lg max-w-md w-full p-6">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">
                 {uploadModalType === 'csv' ? 'Upload Portfolio Snapshot' : 'Upload Transaction History'}
@@ -352,21 +352,73 @@ const PortfolioManager = () => {
               </button>
             </div>
             
-            <FileUploader 
-              portfolioData={portfolioData}
-              onLoad={{
-                setLoadingState: portfolio.setLoadingState,
-                resetError: portfolio.resetError,
-                loadPortfolio: portfolio.loadPortfolio,
-                setError: portfolio.setError,
-                onModalClose: closeUploadModal,
-                onNavigate: navigation.changeTab
-              }}
-              onAcquisitionsFound={acquisition.openAcquisitionModal}
-              onAccountConfirmation={handleAccountConfirmation}
-              onCsvFileLoaded={fileUpload.handleFileLoaded}
-              onJsonFileLoaded={fileUpload.handleFileLoaded}
-            />
+            {uploadModalType === 'csv' ? (
+              <div className="space-y-4">
+                <div className="text-sm text-gray-600 mb-4">
+                  <p>Upload your current portfolio holdings from a CSV file.</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>Accepts CSV files only</li>
+                    <li>Contains current position data</li>
+                    <li>Includes symbols, quantities, values</li>
+                  </ul>
+                </div>
+                <div className="border-2 border-dashed border-blue-300 rounded-lg p-6 text-center">
+                  <FileText className="w-12 h-12 text-blue-500 mx-auto mb-3" />
+                  <input
+                    type="file"
+                    accept=".csv"
+                    className="hidden"
+                    id="csv-file-input"
+                    onChange={(e) => {
+                      const file = e.target.files[0];
+                      if (file) {
+                        fileUpload.handleFileLoaded(file, null, null, 'CSV');
+                        closeUploadModal();
+                      }
+                    }}
+                  />
+                  <button
+                    onClick={() => document.getElementById('csv-file-input').click()}
+                    className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    Select CSV File
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <div className="text-sm text-gray-600 mb-4">
+                  <p>Upload your transaction history from a JSON file.</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>Accepts JSON files only</li>
+                    <li>Contains transaction history</li>
+                    <li>Includes buy/sell transactions</li>
+                  </ul>
+                </div>
+                <div className="border-2 border-dashed border-green-300 rounded-lg p-6 text-center">
+                  <Database className="w-12 h-12 text-green-500 mx-auto mb-3" />
+                  <input
+                    type="file"
+                    accept=".json"
+                    className="hidden"
+                    id="json-file-input"
+                    onChange={(e) => {
+                      const file = e.target.files[0];
+                      if (file) {
+                        fileUpload.handleFileLoaded(file, null, null, 'JSON');
+                        closeUploadModal();
+                      }
+                    }}
+                  />
+                  <button
+                    onClick={() => document.getElementById('json-file-input').click()}
+                    className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+                  >
+                    Select JSON File
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

@@ -1,3 +1,7 @@
+### 0.4.31
+
+- more file upload fixes
+
 ### 0.4.30
 
 - show portfolio

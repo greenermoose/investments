@@ -17,15 +17,33 @@ export const calculatePortfolioStats = (portfolioData) => {
     };
   }
 
+  console.log('Calculating portfolio stats for positions:', {
+    count: portfolioData.length,
+    firstPosition: portfolioData[0],
+    marketValueType: typeof portfolioData[0]?.['Mkt Val (Market Value)'],
+    marketValue: portfolioData[0]?.['Mkt Val (Market Value)']
+  });
+
   let totalValue = 0;
   let totalGain = 0;
   let totalCost = 0;
   
   // First pass: calculate totals
-  portfolioData.forEach(position => {
+  portfolioData.forEach((position, index) => {
     const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
     const gain = typeof position['Gain $ (Gain/Loss $)'] === 'number' ? position['Gain $ (Gain/Loss $)'] : 0;
     const cost = typeof position['Cost Basis'] === 'number' ? position['Cost Basis'] : 0;
+    
+    if (index === 0) {
+      console.log('First position calculation:', {
+        marketValue,
+        gain,
+        cost,
+        rawMarketValue: position['Mkt Val (Market Value)'],
+        rawGain: position['Gain $ (Gain/Loss $)'],
+        rawCost: position['Cost Basis']
+      });
+    }
     
     totalValue += marketValue;
     totalGain += gain;

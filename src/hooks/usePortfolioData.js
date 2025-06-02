@@ -149,6 +149,13 @@ export const usePortfolioData = (selectedAccount) => {
     // Ensure data is always an array
     const portfolioData = Array.isArray(data) ? data : [];
     
+    console.log('Raw portfolio data:', {
+      dataLength: portfolioData.length,
+      firstPosition: portfolioData[0],
+      accountTotal,
+      date
+    });
+    
     // Calculate portfolio stats using the account total if available
     const stats = accountTotal ? {
       totalValue: accountTotal.totalValue || 0,
@@ -161,7 +168,9 @@ export const usePortfolioData = (selectedAccount) => {
       accountName,
       date,
       positions: portfolioData.length,
-      stats
+      stats,
+      firstPositionMarketValue: portfolioData[0]?.['Mkt Val (Market Value)'],
+      firstPositionSymbol: portfolioData[0]?.Symbol
     });
     
     setPortfolioData(portfolioData);

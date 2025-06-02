@@ -371,6 +371,16 @@ export const parsePortfolioCSV = (fileContent) => {
           totalValue += mappedRow['Mkt Val (Market Value)'] || 0;
           totalGain += mappedRow['Gain $ (Gain/Loss $)'] || 0;
           
+          if (portfolioData.length === 0) {
+            console.log('First position parsed:', {
+              symbol: mappedRow.Symbol,
+              marketValue: mappedRow['Mkt Val (Market Value)'],
+              marketValueType: typeof mappedRow['Mkt Val (Market Value)'],
+              rawRow: row,
+              mappedRow
+            });
+          }
+          
           portfolioData.push(mappedRow);
         }
       } catch (rowError) {

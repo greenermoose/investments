@@ -1,3 +1,7 @@
+### 0.4.33
+
+- show portfolio
+
 ### 0.4.32
 
 - new welcome screen

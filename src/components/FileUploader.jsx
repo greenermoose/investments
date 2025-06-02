@@ -6,6 +6,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Upload, FileText, Database, HelpCircle, AlertTriangle, CheckCircle, X } from 'lucide-react';
 import { validateFile, FileTypes } from '../utils/fileProcessing';
 import { useFileUpload } from '../hooks/useFileUpload';
+import AccountConfirmationDialog from './AccountConfirmationDialog';
 
 /**
  * Modal component for file upload
@@ -471,7 +472,13 @@ const FileUploader = ({ onFileUploaded, onAcquisitionsFound }) => {
             hover:file:bg-blue-100"
         />
       </div>
-      {confirmationDialog}
+      <AccountConfirmationDialog
+        isOpen={confirmationDialog.isOpen}
+        newAccountName={confirmationDialog.newAccountName}
+        similarAccounts={confirmationDialog.similarAccounts}
+        onConfirm={confirmationDialog.onConfirm}
+        onCancel={confirmationDialog.onCancel}
+      />
     </div>
   );
 };

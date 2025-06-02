@@ -19,6 +19,7 @@ import {
 import { detectSymbolChange } from '../utils/symbolMapping';
 import { saveUploadedFile } from '../utils/fileStorage';
 import AccountConfirmationDialog from '../components/AccountConfirmationDialog';
+import ConfirmationDialogWrapper from '../components/ConfirmationDialogWrapper';
 
 /**
  * File type definitions with validation rules
@@ -414,15 +415,13 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     handleFileLoaded,
     validateFile,
     fileStats,
-    confirmationDialog: (
-      <AccountConfirmationDialog
-        isOpen={confirmationDialog.isOpen}
-        newAccountName={confirmationDialog.newAccountName}
-        similarAccounts={confirmationDialog.similarAccounts}
-        onConfirm={confirmationDialog.onConfirm}
-        onCancel={confirmationDialog.onCancel}
-      />
-    )
+    confirmationDialog: {
+      isOpen: confirmationDialog.isOpen,
+      newAccountName: confirmationDialog.newAccountName,
+      similarAccounts: confirmationDialog.similarAccounts,
+      onConfirm: confirmationDialog.onConfirm,
+      onCancel: confirmationDialog.onCancel
+    }
   };
 };
 

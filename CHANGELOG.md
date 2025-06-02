@@ -1,3 +1,7 @@
+### 0.4.25
+
+- fix syntax error in app
+
 ### 0.4.24
 
 - fix ambiguity in account names

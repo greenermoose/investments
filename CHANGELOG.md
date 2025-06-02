@@ -1,3 +1,7 @@
+### 0.4.21
+
+- more fixing of useFileUpload.js
+
 ### 0.4.20
 
 - fixing useFileUpload.js

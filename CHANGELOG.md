@@ -1,3 +1,7 @@
+### 0.4.22
+
+- yet more fixes to useFileUpload and now PortfolioDisplay, too
+
 ### 0.4.21
 
 - more fixing of useFileUpload.js

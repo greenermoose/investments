@@ -333,7 +333,6 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
 
       // Notify parent component
       onLoad.setLoadingState(false);
-      onLoad.loadPortfolio(); // Refresh the portfolio data
       onLoad.onModalClose?.(); // Close the modal if it exists
 
       // Check for acquisition dates

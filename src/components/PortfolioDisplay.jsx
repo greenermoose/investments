@@ -128,6 +128,14 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
   };
 
   const renderOverviewContent = () => {
+    if (!portfolioStats || !portfolioData) {
+      return (
+        <div className="card">
+          <h2 className="card-title">Loading Portfolio Data...</h2>
+        </div>
+      );
+    }
+
     return (
       <div className="two-column-grid">
         {/* Portfolio Summary Card */}
@@ -165,7 +173,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
           <div className="chart-container">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
-                data={portfolioStats.assetAllocation.slice(0, 10)} // Show top 10 holdings
+                data={portfolioStats.assetAllocation?.slice(0, 10) || []} // Show top 10 holdings
                 layout="vertical"
                 margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
               >
@@ -184,7 +192,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
                   onClick={(data) => handleSymbolClick(data.name)}
                   cursor="pointer"
                 >
-                  {portfolioStats.assetAllocation.slice(0, 10).map((entry, index) => (
+                  {(portfolioStats.assetAllocation || []).slice(0, 10).map((entry, index) => (
                     <Cell 
                       key={`cell-${index}`} 
                       fill={COLORS[index % COLORS.length]} 
@@ -195,7 +203,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
             </ResponsiveContainer>
           </div>
           <div className="chart-footnote">
-            {portfolioStats.assetAllocation.length > 10 ? 
+            {portfolioStats.assetAllocation?.length > 10 ? 
               `* Showing top 10 of ${portfolioStats.assetAllocation.length} securities` 
               : null}
           </div>

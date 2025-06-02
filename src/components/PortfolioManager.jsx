@@ -219,8 +219,21 @@ const PortfolioManager = () => {
               
               {/* Simple dual file uploader for initial state */}
               <FileUploader 
-                onCsvFileLoaded={fileUpload.handleFileLoaded}
-                onJsonFileLoaded={fileUpload.handleFileLoaded}
+                portfolioData={portfolioData}
+                onLoad={{
+                  setLoadingState: portfolio.setLoadingState,
+                  resetError: portfolio.resetError,
+                  loadPortfolio: portfolio.loadPortfolio,
+                  setError: portfolio.setError,
+                  onModalClose: () => setShowUploadModal(false),
+                  onNavigate: navigation.changeTab
+                }}
+                onAcquisitionsFound={acquisition.openAcquisitionModal}
+                onAccountConfirmation={(rawAccountName, resolve) => {
+                  // For now, just resolve with the raw account name
+                  // In the future, this could show a confirmation dialog
+                  resolve(rawAccountName);
+                }}
               />
               
               {/* Link to Storage Manager */}
@@ -246,6 +259,11 @@ const PortfolioManager = () => {
             onClose={closeUploadModal}
             onCsvFileLoaded={fileUpload.handleFileLoaded}
             onJsonFileLoaded={fileUpload.handleFileLoaded}
+            onAccountConfirmation={(rawAccountName, resolve) => {
+              // For now, just resolve with the raw account name
+              // In the future, this could show a confirmation dialog
+              resolve(rawAccountName);
+            }}
           />
         )}
       </div>
@@ -290,6 +308,11 @@ const PortfolioManager = () => {
           onClose={closeUploadModal}
           onCsvFileLoaded={fileUpload.handleFileLoaded}
           onJsonFileLoaded={fileUpload.handleFileLoaded}
+          onAccountConfirmation={(rawAccountName, resolve) => {
+            // For now, just resolve with the raw account name
+            // In the future, this could show a confirmation dialog
+            resolve(rawAccountName);
+          }}
         />
       )}
     </div>

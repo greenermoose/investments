@@ -443,6 +443,8 @@ export const normalizeAccountName = (accountName) => {
     // Remove account numbers and other identifiers
     .replace(/\s*\.{3}\d+\s*/g, ' ')
     .replace(/\s*\d{3,}\s*/g, ' ')
+    // Remove special characters but keep spaces
+    .replace(/[^a-zA-Z0-9\s]/g, '')
     // Remove extra whitespace
     .replace(/\s+/g, ' ')
     .trim();
@@ -455,6 +457,11 @@ export const normalizeAccountName = (accountName) => {
  */
 export const getAccountNameFromFilename = (filename) => {
   console.log('Attempting to extract account name from filename:', filename);
+  
+  if (!filename) {
+    console.warn('No filename provided');
+    return `Account ${new Date().toISOString().split('T')[0]}`;
+  }
   
   // Remove file extension first
   const nameWithoutExt = filename.replace(/\.[^.]+$/, '');
@@ -483,9 +490,14 @@ export const getAccountNameFromFilename = (filename) => {
     return accountName;
   }
 
-  // Pattern 4: Try to extract from first line of file content
-  // This will be handled separately in the file processing logic
-  
+  // Pattern 4: Simple filename without special formatting
+  const simpleMatch = nameWithoutExt.match(/^([^_\-]+)/);
+  if (simpleMatch) {
+    const accountName = normalizeAccountName(simpleMatch[1]);
+    console.log('Matched simple pattern:', accountName);
+    return accountName;
+  }
+
   // If no patterns match, use a default with timestamp
   const defaultName = `Account ${new Date().toISOString().split('T')[0]}`;
   console.warn('No account name pattern matched. Using default:', defaultName);

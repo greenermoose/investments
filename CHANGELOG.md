@@ -1,3 +1,7 @@
+### 0.4.26
+
+- fix endless spinner on file upload
+
 ### 0.4.25
 
 - fix syntax error in app

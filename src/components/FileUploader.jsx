@@ -7,6 +7,8 @@ import { Upload, FileText, Database, HelpCircle, AlertTriangle, CheckCircle, X }
 import { validateFile, FileTypes } from '../utils/fileProcessing';
 import { useFileUpload } from '../hooks/useFileUpload';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
+import { portfolioService } from '../services/PortfolioService';
+import { findSimilarAccountNames } from '../utils/fileProcessing';
 
 /**
  * Modal component for file upload
@@ -447,13 +449,151 @@ const UploadOptions = ({ onUploadCSV, onUploadJSON }) => {
 /**
  * Main FileUploader component that provides all file upload functionality
  */
-const FileUploader = ({ onFileUploaded, onAcquisitionsFound }) => {
-  const { handleFileUpload, confirmationDialog } = useFileUpload(null, {
-    setLoadingState: () => {},
-    onSuccess: onFileUploaded,
-    onModalClose: () => {}
-  }, onAcquisitionsFound);
+const FileUploader = ({ 
+  portfolioData, 
+  onLoad, 
+  onAcquisitionsFound, 
+  onCsvFileLoaded, 
+  onJsonFileLoaded,
+  onAccountConfirmation 
+}) => {
+  const [confirmationDialog, setConfirmationDialog] = useState({
+    isOpen: false,
+    newAccountName: '',
+    similarAccounts: [],
+    resolve: null
+  });
 
+  const handleAccountConfirmation = (rawAccountName) => {
+    return new Promise((resolve) => {
+      // Find similar accounts
+      const similarAccounts = findSimilarAccountNames(rawAccountName, portfolioData?.accounts || []);
+      
+      if (similarAccounts.length > 0) {
+        // Show confirmation dialog
+        setConfirmationDialog({
+          isOpen: true,
+          newAccountName: rawAccountName,
+          similarAccounts,
+          resolve
+        });
+      } else {
+        // No similar accounts found, use the new account name
+        resolve(rawAccountName);
+      }
+    });
+  };
+
+  const handleConfirmAccount = (accountName) => {
+    if (confirmationDialog.resolve) {
+      confirmationDialog.resolve(accountName);
+    }
+    setConfirmationDialog({
+      isOpen: false,
+      newAccountName: '',
+      similarAccounts: [],
+      resolve: null
+    });
+  };
+
+  const handleCancelAccount = () => {
+    if (confirmationDialog.resolve) {
+      confirmationDialog.resolve(confirmationDialog.newAccountName);
+    }
+    setConfirmationDialog({
+      isOpen: false,
+      newAccountName: '',
+      similarAccounts: [],
+      resolve: null
+    });
+  };
+
+  const { handleFileLoaded, validateFile, fileStats } = useFileUpload(
+    portfolioData,
+    onLoad,
+    onAcquisitionsFound,
+    onAccountConfirmation
+  );
+
+  // If we're in the initial state (no onLoad provided), use the simpler file upload handlers
+  if (!onLoad) {
+    return (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="border-2 border-dashed rounded-lg p-8 hover:border-blue-500 transition-colors border-blue-300">
+            <div className="text-center">
+              <FileText className="w-12 h-12 text-blue-500 mb-3 mx-auto" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Upload Portfolio Snapshot</h3>
+              <p className="text-sm text-gray-600 mb-4">Upload your current portfolio holdings from a CSV file</p>
+              <ul className="text-sm text-gray-500 mb-4 text-left">
+                <li>• Accepts CSV files only</li>
+                <li>• Contains current position data</li>
+                <li>• Includes symbols, quantities, values</li>
+              </ul>
+              
+              <button
+                onClick={() => document.getElementById('csv-file-input').click()}
+                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Upload CSV
+              </button>
+              <input 
+                id="csv-file-input"
+                type="file"
+                className="hidden"
+                accept=".csv"
+                onChange={(e) => {
+                  if (e.target.files[0]) {
+                    handleFileLoaded(e.target.files[0], null, null, 'CSV');
+                  }
+                }}
+              />
+            </div>
+          </div>
+          
+          <div className="border-2 border-dashed rounded-lg p-8 hover:border-green-500 transition-colors border-green-300">
+            <div className="text-center">
+              <Database className="w-12 h-12 text-green-500 mb-3 mx-auto" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Upload Transaction History</h3>
+              <p className="text-sm text-gray-600 mb-4">Upload your transaction history from a JSON file</p>
+              <ul className="text-sm text-gray-500 mb-4 text-left">
+                <li>• Accepts JSON files only</li>
+                <li>• Contains transaction history</li>
+                <li>• Includes buy/sell transactions</li>
+              </ul>
+              
+              <button
+                onClick={() => document.getElementById('json-file-input').click()}
+                className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+              >
+                Upload JSON
+              </button>
+              <input 
+                id="json-file-input"
+                type="file"
+                className="hidden"
+                accept=".json"
+                onChange={(e) => {
+                  if (e.target.files[0]) {
+                    handleFileLoaded(e.target.files[0], null, null, 'JSON');
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+        <AccountConfirmationDialog
+          isOpen={confirmationDialog.isOpen}
+          newAccountName={confirmationDialog.newAccountName}
+          similarAccounts={confirmationDialog.similarAccounts}
+          onConfirm={handleConfirmAccount}
+          onCancel={handleCancelAccount}
+        />
+      </>
+    );
+  }
+
+  // Main state with full functionality
   return (
     <div>
       <div className="mb-4">
@@ -463,7 +603,13 @@ const FileUploader = ({ onFileUploaded, onAcquisitionsFound }) => {
         <input
           type="file"
           accept=".csv,.json"
-          onChange={handleFileUpload}
+          onChange={(e) => {
+            const file = e.target.files[0];
+            if (file) {
+              const fileType = file.name.toLowerCase().endsWith('.json') ? 'JSON' : 'CSV';
+              handleFileLoaded(file, null, null, fileType);
+            }
+          }}
           className="block w-full text-sm text-gray-500
             file:mr-4 file:py-2 file:px-4
             file:rounded-md file:border-0
@@ -476,9 +622,21 @@ const FileUploader = ({ onFileUploaded, onAcquisitionsFound }) => {
         isOpen={confirmationDialog.isOpen}
         newAccountName={confirmationDialog.newAccountName}
         similarAccounts={confirmationDialog.similarAccounts}
-        onConfirm={confirmationDialog.onConfirm}
-        onCancel={confirmationDialog.onCancel}
+        onConfirm={handleConfirmAccount}
+        onCancel={handleCancelAccount}
       />
+      {fileStats.recentUploads.length > 0 && (
+        <div className="file-stats">
+          <h3>Recent Uploads</h3>
+          <ul>
+            {fileStats.recentUploads.map((upload, index) => (
+              <li key={index}>
+                {upload.fileName} ({upload.type})
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

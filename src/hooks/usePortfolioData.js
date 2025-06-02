@@ -98,7 +98,7 @@ export const usePortfolioData = (selectedAccount) => {
 
   // Update portfolio stats when data changes
   useEffect(() => {
-    if (portfolioData.length > 0) {
+    if (portfolioData && Array.isArray(portfolioData) && portfolioData.length > 0) {
       setPortfolioStats(calculatePortfolioStats(portfolioData));
     } else {
       setPortfolioStats({
@@ -113,9 +113,10 @@ export const usePortfolioData = (selectedAccount) => {
   const resetError = () => setError(null);
   
   const loadPortfolio = (data, accountName, date, accountTotal) => {
-    setPortfolioData(data);
-    setCurrentAccount(accountName);
-    setPortfolioDate(date);
+    // Ensure data is always an array
+    setPortfolioData(Array.isArray(data) ? data : []);
+    setCurrentAccount(accountName || '');
+    setPortfolioDate(date || null);
     setIsDataLoaded(true);
     setIsLoading(false);
   };

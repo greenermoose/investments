@@ -18,8 +18,6 @@ import {
 } from '../utils/portfolioTracker';
 import { detectSymbolChange } from '../utils/symbolMapping';
 import { saveUploadedFile } from '../utils/fileStorage';
-import AccountConfirmationDialog from '../components/AccountConfirmationDialog';
-import ConfirmationDialogWrapper from '../components/ConfirmationDialogWrapper';
 
 /**
  * File type definitions with validation rules
@@ -59,7 +57,7 @@ const readFileAsText = (file) => {
  * Enhanced useFileUpload hook that properly saves original files
  * Key fix: Add calls to saveUploadedFile when processing files
  */
-export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
+export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAccountConfirmation) => {
   const [fileStats, setFileStats] = useState({
     recentUploads: [],
     lastUploadType: null,
@@ -67,13 +65,25 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     uploadErrors: []
   });
 
-  const [confirmationDialog, setConfirmationDialog] = useState({
-    isOpen: false,
-    newAccountName: '',
-    similarAccounts: [],
-    onConfirm: null,
-    onCancel: null
-  });
+  // Create default onLoad handlers if not provided
+  const defaultOnLoad = {
+    setLoadingState: () => {},
+    resetError: () => {},
+    loadPortfolio: async () => {},
+    setError: () => {},
+    onModalClose: () => {}
+  };
+
+  // Use provided onLoad or default handlers
+  const loadHandlers = onLoad || defaultOnLoad;
+
+  // Create default account confirmation handler if not provided
+  const defaultAccountConfirmation = (rawAccountName, resolve) => {
+    resolve(rawAccountName);
+  };
+
+  // Use provided account confirmation or default handler
+  const accountConfirmationHandler = onAccountConfirmation || defaultAccountConfirmation;
 
   /**
    * Validate file based on type and content
@@ -137,8 +147,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     let fileValidation = { success: true };
     
     try {
-      onLoad.setLoadingState(true);
-      onLoad.resetError();
+      loadHandlers.setLoadingState(true);
+      loadHandlers.resetError();
       
       // Handle case where a File object is passed instead of content
       if (fileContentOrFile instanceof File) {
@@ -174,8 +184,15 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     } catch (err) {
       console.error('Error processing file:', err);
       recordUploadError(fileName, err.message);
-      onLoad.setError(err.message || 'Failed to process file. Please check the file format.');
-      onLoad.setLoadingState(false);
+      loadHandlers.setError(err.message || 'Failed to process file. Please check the file format.');
+      loadHandlers.setLoadingState(false);
+      
+      // Close modal if provided
+      if (loadHandlers.onModalClose) {
+        loadHandlers.onModalClose();
+      }
+      
+      throw err; // Re-throw to allow caller to handle
     }
   };
   
@@ -252,40 +269,6 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
     });
   };
   
-  const handleAccountConfirmation = async (newAccountName, onSuccess) => {
-    try {
-      // Get all existing accounts
-      const existingAccounts = await portfolioService.getAllAccounts();
-      
-      // Find similar accounts
-      const similarAccounts = findSimilarAccountNames(newAccountName, existingAccounts);
-      
-      if (similarAccounts.length > 0) {
-        // Show confirmation dialog
-        setConfirmationDialog({
-          isOpen: true,
-          newAccountName,
-          similarAccounts,
-          onConfirm: (selectedAccount) => {
-            setConfirmationDialog({ isOpen: false });
-            onSuccess(selectedAccount);
-          },
-          onCancel: () => {
-            setConfirmationDialog({ isOpen: false });
-            onSuccess(newAccountName);
-          }
-        });
-      } else {
-        // No similar accounts found, proceed with new account
-        onSuccess(newAccountName);
-      }
-    } catch (err) {
-      console.error('Error checking account similarity:', err);
-      // If there's an error, proceed with the new account name
-      onSuccess(newAccountName);
-    }
-  };
-
   /**
    * Handles transaction JSON file upload - FIXED VERSION
    * @param {string} fileContent - File content as string
@@ -306,41 +289,45 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
 
       // Handle account name confirmation
-      await handleAccountConfirmation(rawAccountName, async (confirmedAccountName) => {
-        // Get existing transactions for comparison
-        const existingTransactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
-
-        // Remove duplicates
-        const uniqueTransactions = removeDuplicateTransactions(
-          transactionData.transactions,
-          existingTransactions
-        );
-
-        // Save transactions
-        await portfolioService.bulkMergeTransactions(uniqueTransactions, confirmedAccountName);
-
-        // Save the original file
-        await saveUploadedFile(
-          { name: fileName },
-          fileContent,
-          confirmedAccountName,
-          'json',
-          new Date(transactionData.fromDate)
-        );
-
-        // Record success
-        recordUploadSuccess(fileName);
-
-        // Notify parent component
-        onLoad.setLoadingState(false);
-        if (onLoad.onSuccess) {
-          onLoad.onSuccess('Transaction file processed successfully');
-        } else if (onLoad.onModalClose) {
-          onLoad.onModalClose();
-        }
+      const confirmedAccountName = await new Promise((resolve) => {
+        accountConfirmationHandler(rawAccountName, resolve);
       });
+
+      // Get existing transactions for comparison
+      const existingTransactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
+
+      // Remove duplicates
+      const uniqueTransactions = removeDuplicateTransactions(
+        transactionData.transactions,
+        existingTransactions
+      );
+
+      // Save transactions
+      await portfolioService.bulkMergeTransactions(uniqueTransactions, confirmedAccountName);
+
+      // Save the original file
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        confirmedAccountName,
+        'json',
+        new Date(transactionData.fromDate)
+      );
+
+      // Record success
+      recordUploadSuccess(fileName);
+
+      // Refresh portfolio data and reset loading state
+      await loadHandlers.loadPortfolio();
+      loadHandlers.setLoadingState(false);
+      
+      // Close modal if provided
+      if (loadHandlers.onModalClose) {
+        loadHandlers.onModalClose();
+      }
     } catch (err) {
       console.error('Error processing transaction file:', err);
+      loadHandlers.setLoadingState(false);
       throw err;
     }
   };
@@ -366,47 +353,55 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
 
       // Handle account name confirmation
-      await handleAccountConfirmation(rawAccountName, async (confirmedAccountName) => {
-        // Get snapshot date
-        const snapshotDate = dateFromFileName || portfolioDate || parseDateFromFilename(fileName) || new Date();
-
-        // Get latest snapshot for comparison
-        const latestSnapshot = await portfolioService.getLatestSnapshot(confirmedAccountName);
-
-        // Analyze changes
-        const changes = analyzePortfolioChanges(portfolioData, latestSnapshot?.data || []);
-
-        // Save portfolio snapshot
-        const portfolioId = await portfolioService.savePortfolioSnapshot(
-          portfolioData,
-          confirmedAccountName,
-          snapshotDate,
-          accountTotal
-        );
-
-        // Save the original file
-        await saveUploadedFile(
-          { name: fileName },
-          fileContent,
-          confirmedAccountName,
-          'portfolio',
-          snapshotDate
-        );
-
-        // Record success
-        recordUploadSuccess(fileName);
-
-        // Notify parent component
-        onLoad.setLoadingState(false);
-        onLoad.onModalClose?.(); // Close the modal if it exists
-
-        // Check for acquisition dates
-        if (changes.acquisitionsFound && onAcquisitionsFound) {
-          onAcquisitionsFound(changes.acquisitions);
-        }
+      const confirmedAccountName = await new Promise((resolve) => {
+        accountConfirmationHandler(rawAccountName, resolve);
       });
+
+      // Get snapshot date
+      const snapshotDate = dateFromFileName || portfolioDate || parseDateFromFilename(fileName) || new Date();
+
+      // Get latest snapshot for comparison
+      const latestSnapshot = await portfolioService.getLatestSnapshot(confirmedAccountName);
+
+      // Analyze changes
+      const changes = analyzePortfolioChanges(portfolioData, latestSnapshot?.data || []);
+
+      // Save portfolio snapshot
+      const portfolioId = await portfolioService.savePortfolioSnapshot(
+        portfolioData,
+        confirmedAccountName,
+        snapshotDate,
+        accountTotal
+      );
+
+      // Save the original file
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        confirmedAccountName,
+        'portfolio',
+        snapshotDate
+      );
+
+      // Record success
+      recordUploadSuccess(fileName);
+
+      // Refresh portfolio data and reset loading state
+      await loadHandlers.loadPortfolio();
+      loadHandlers.setLoadingState(false);
+      
+      // Close modal if provided
+      if (loadHandlers.onModalClose) {
+        loadHandlers.onModalClose();
+      }
+
+      // Check for acquisition dates
+      if (changes.acquisitionsFound && onAcquisitionsFound) {
+        onAcquisitionsFound(changes.acquisitions);
+      }
     } catch (err) {
       console.error('Error processing portfolio file:', err);
+      loadHandlers.setLoadingState(false);
       throw err;
     }
   };
@@ -414,14 +409,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
   return {
     handleFileLoaded,
     validateFile,
-    fileStats,
-    confirmationDialog: {
-      isOpen: confirmationDialog.isOpen,
-      newAccountName: confirmationDialog.newAccountName,
-      similarAccounts: confirmationDialog.similarAccounts,
-      onConfirm: confirmationDialog.onConfirm,
-      onCancel: confirmationDialog.onCancel
-    }
+    fileStats
   };
 };
 

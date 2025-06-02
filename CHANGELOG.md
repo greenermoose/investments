@@ -1,3 +1,7 @@
+### 0.4.37
+
+- snapshot comparison roadmap
+
 ### 0.4.36
 
 - fix transactions upload

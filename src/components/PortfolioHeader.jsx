@@ -1,4 +1,4 @@
-// components/PortfolioHeader.jsx revision: 4
+// components/PortfolioHeader.jsx revision: 5
 import React from 'react';
 import { formatDate } from '../utils/dataUtils';
 import AccountSelector from './AccountSelector';
@@ -10,7 +10,6 @@ import {
   PieChart,
   List,
   Settings,
-  BarChart2,
   Layers
 } from 'lucide-react';
 
@@ -26,48 +25,79 @@ const PortfolioHeader = ({
   onNavigate,
   activeTab
 }) => {
-  const navigationItems = [
-    { id: 'portfolio', label: 'Portfolio', icon: PieChart },
+  const primaryNavigationItems = [
+    { id: 'account-management', label: 'Account Management', icon: Settings },
+    { id: 'portfolio', label: 'Portfolio', icon: PieChart }
+  ];
+
+  const secondaryNavigationItems = [
     { id: 'transactions', label: 'Transactions', icon: List },
-    { id: 'lots', label: 'Lots', icon: Layers },
-    { id: 'performance', label: 'Performance', icon: BarChart2 },
-    { id: 'account-management', label: 'Account Management', icon: Settings }
+    { id: 'lots', label: 'Lots', icon: Layers }
   ];
 
   return (
     <header className="bg-indigo-600 text-white shadow-lg">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Left section: Account selector and current state */}
-          <div className="flex items-center space-x-6">
-            <h1 className="text-xl font-bold">Investment Portfolio</h1>
-            
-            {currentAccount && onAccountChange && (
-              <div className="flex items-center space-x-2">
-                <AccountSelector
-                  currentAccount={currentAccount}
-                  onAccountChange={onAccountChange}
-                />
-              </div>
-            )}
-            
-            {portfolioDate && currentAccount && (
-              <div className="flex items-center text-sm text-indigo-100">
-                <FileText className="h-4 w-4 mr-1" />
-                <span>Snapshot: {formatDate(portfolioDate)}</span>
-              </div>
-            )}
-          </div>
+      {/* Top row: Account info and primary navigation */}
+      <div className="border-b border-indigo-500">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Left: Account selector and snapshot info */}
+            <div className="flex items-center space-x-6">
+              <h1 className="text-xl font-bold">Investment Portfolio</h1>
+              
+              {currentAccount && onAccountChange && (
+                <div className="flex items-center space-x-2">
+                  <AccountSelector
+                    currentAccount={currentAccount}
+                    onAccountChange={onAccountChange}
+                  />
+                </div>
+              )}
+            </div>
 
-          {/* Center section: Main navigation */}
+            {/* Right: Primary navigation */}
+            <nav className="flex items-center space-x-1">
+              {primaryNavigationItems.map(item => {
+                const Icon = item.icon;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => onNavigate(item.id)}
+                    className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors
+                      ${activeTab === item.id 
+                        ? 'bg-indigo-700 text-white' 
+                        : 'text-indigo-100 hover:bg-indigo-500 hover:text-white'}`}
+                  >
+                    <Icon className="h-4 w-4 mr-2" />
+                    {item.label}
+                  </button>
+                );
+              })}
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom row: Secondary navigation and utilities */}
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-12">
+          {/* Left: Snapshot date */}
+          {portfolioDate && currentAccount && (
+            <div className="flex items-center text-sm text-indigo-100">
+              <FileText className="h-4 w-4 mr-1" />
+              <span>Portfolio Snapshot: {formatDate(portfolioDate)}</span>
+            </div>
+          )}
+
+          {/* Center: Secondary navigation */}
           <nav className="flex items-center space-x-1">
-            {navigationItems.map(item => {
+            {secondaryNavigationItems.map(item => {
               const Icon = item.icon;
               return (
                 <button
                   key={item.id}
                   onClick={() => onNavigate(item.id)}
-                  className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors
+                  className={`flex items-center px-3 py-1.5 rounded-md text-sm font-medium transition-colors
                     ${activeTab === item.id 
                       ? 'bg-indigo-700 text-white' 
                       : 'text-indigo-100 hover:bg-indigo-500 hover:text-white'}`}
@@ -79,12 +109,12 @@ const PortfolioHeader = ({
             })}
           </nav>
 
-          {/* Right section: Actions */}
+          {/* Right: Actions */}
           <div className="flex items-center space-x-2">
             {showUploadButton && (
               <div className="relative group">
                 <button 
-                  className="flex items-center px-3 py-2 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
+                  className="flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
                   onClick={onUploadClick}
                 >
                   <Upload className="h-4 w-4 mr-1" />
@@ -114,7 +144,7 @@ const PortfolioHeader = ({
             {showUploadButton && onNavigate && (
               <button 
                 onClick={() => onNavigate('storage-manager')}
-                className="flex items-center px-3 py-2 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
+                className="flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
               >
                 <HardDrive className="h-4 w-4 mr-1" />
                 Storage

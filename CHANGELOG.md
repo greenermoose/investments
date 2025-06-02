@@ -1,3 +1,7 @@
+### 0.4.16
+
+- updated PortfolioHeader
+
 ### 0.4.15
 
 - working on Account Management UI

@@ -50,7 +50,11 @@ const PortfolioManager = () => {
     {
       setLoadingState: portfolio.setLoadingState,
       resetError: portfolio.resetError,
-      loadPortfolio: portfolio.loadPortfolio,
+      loadPortfolio: async (data, accountName, date, accountTotal) => {
+        await portfolio.loadPortfolio(data, accountName, date, accountTotal);
+        // Increment refresh key after successful portfolio load
+        setSnapshotRefreshKey(prev => prev + 1);
+      },
       setError: portfolio.setError,
       onModalClose: () => setShowUploadModal(false),
       onNavigate: navigation.changeTab

@@ -1,3 +1,7 @@
+### 0.4.40
+
+- snapshot dropdown fixes
+
 ### 0.4.39
 
 - improve switching between snapshots

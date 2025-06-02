@@ -1,3 +1,7 @@
+### 0.4.45
+
+- show different aspects of portfolio in history
+
 ### 0.4.44
 
 - add symbol history

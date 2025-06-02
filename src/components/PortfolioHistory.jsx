@@ -5,6 +5,7 @@ import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 import SnapshotTimeline from './performance/SnapshotTimeline';
 import { useAccount, usePortfolio } from '../context/PortfolioContext';
 import SecurityDetail from './SecurityDetail';
+import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
 
 const PortfolioHistory = () => {
   const { selectedAccount } = useAccount();
@@ -15,6 +16,7 @@ const PortfolioHistory = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedSymbol, setSelectedSymbol] = useState(null);
+  const [activeMetric, setActiveMetric] = useState('totalValue'); // 'totalValue', 'positions', 'gainLoss', 'return'
   
   useEffect(() => {
     const account = currentAccount || selectedAccount;
@@ -271,6 +273,19 @@ const PortfolioHistory = () => {
     );
   };
   
+  const getMetricData = () => {
+    return snapshots.map(snapshot => {
+      const stats = calculatePortfolioStats(snapshot.data);
+      return {
+        date: new Date(snapshot.date),
+        totalValue: stats.totalValue,
+        positions: snapshot.data.length,
+        gainLoss: stats.totalGain,
+        return: stats.gainPercent
+      };
+    });
+  };
+  
   if (loading) {
     return (
       <div className="flex justify-center items-center h-64">
@@ -320,13 +335,45 @@ const PortfolioHistory = () => {
         
         {/* Show timeline when not comparing or when selecting snapshots */}
         {(!isComparing || selectedSnapshots.length < 2) && (
-          <SnapshotTimeline
-            snapshots={snapshots}
-            onSnapshotSelect={handleSnapshotSelect}
-            onSnapshotCompare={handleSnapshotCompare}
-            selectedSnapshots={selectedSnapshots}
-            isComparing={isComparing}
-          />
+          <>
+            <div className="mb-4">
+              <div className="tab-container">
+                <button
+                  className={activeMetric === 'totalValue' ? 'tab-active' : 'tab'}
+                  onClick={() => setActiveMetric('totalValue')}
+                >
+                  Total Value
+                </button>
+                <button
+                  className={activeMetric === 'positions' ? 'tab-active' : 'tab'}
+                  onClick={() => setActiveMetric('positions')}
+                >
+                  Number of Positions
+                </button>
+                <button
+                  className={activeMetric === 'gainLoss' ? 'tab-active' : 'tab'}
+                  onClick={() => setActiveMetric('gainLoss')}
+                >
+                  Gain/Loss
+                </button>
+                <button
+                  className={activeMetric === 'return' ? 'tab-active' : 'tab'}
+                  onClick={() => setActiveMetric('return')}
+                >
+                  Return
+                </button>
+              </div>
+            </div>
+            <SnapshotTimeline
+              snapshots={snapshots}
+              onSnapshotSelect={handleSnapshotSelect}
+              onSnapshotCompare={handleSnapshotCompare}
+              selectedSnapshots={selectedSnapshots}
+              isComparing={isComparing}
+              metricData={getMetricData()}
+              activeMetric={activeMetric}
+            />
+          </>
         )}
         
         {/* Comparison View */}

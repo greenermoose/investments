@@ -45,103 +45,77 @@ const FileDropZone = ({
   icon = <FileText className="w-12 h-12 text-blue-500 mb-3" />,
   title = 'Upload File',
   description = 'Upload your file',
-  acceptedExtension = '.csv'
+  acceptedExtension = '.csv',
+  disabled = false,
+  disabledMessage = ''
 }) => {
-  const [isDragging, setIsDragging] = useState(false);
   const [fileName, setFileName] = useState('');
-  const [error, setError] = useState(null);
+  const [error, setError] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
-  const [success, setSuccess] = useState(null);
+  const [success, setSuccess] = useState('');
   const fileInputRef = useRef(null);
 
-  // Handle drag events
-  const handleDragOver = (e) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
+  const handleFileInputChange = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
 
-  const handleDragLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-    setIsDragging(false);
-    
-    const files = e.dataTransfer.files;
-    if (files.length > 0) {
-      validateAndProcessFile(files[0]);
-    }
-  };
-
-  const handleFileInputChange = (e) => {
-    if (e.target.files.length > 0) {
-      validateAndProcessFile(e.target.files[0]);
-    }
-  };
-
-  const validateAndProcessFile = async (file) => {
-    // Reset states
-    setError(null);
-    setSuccess(null);
-    
-    // Validate file
-    const validation = validateFile(file, fileType);
-    if (!validation.success) {
-      setError(validation.error);
-      return;
-    }
-    
     setFileName(file.name);
+    setError('');
+    setSuccess('');
     setIsProcessing(true);
-    
+
     try {
-      // Pass the file to the parent component
       await onFileSelected(file);
-      setSuccess('File processed successfully!');
+      setSuccess('File uploaded successfully');
     } catch (err) {
-      console.error('Error processing file:', err);
-      setError(err.message || 'Error processing file');
+      setError(err.message);
     } finally {
       setIsProcessing(false);
     }
   };
 
-  // Generate dynamic color classes based on the color prop
-  const getBorderClasses = () => {
-    const colorMap = {
-      blue: {
-        normal: 'border-blue-300 hover:border-blue-500',
-        dragging: 'border-blue-600 bg-blue-50'
-      },
-      green: {
-        normal: 'border-green-300 hover:border-green-500',
-        dragging: 'border-green-600 bg-green-50'
-      },
-      indigo: {
-        normal: 'border-indigo-300 hover:border-indigo-500',
-        dragging: 'border-indigo-600 bg-indigo-50'
-      }
-    };
+  const handleDrop = async (event) => {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    if (!file) return;
 
-    const colors = colorMap[color] || colorMap.blue;
-    return isDragging ? colors.dragging : colors.normal;
+    setFileName(file.name);
+    setError('');
+    setSuccess('');
+    setIsProcessing(true);
+
+    try {
+      await onFileSelected(file);
+      setSuccess('File uploaded successfully');
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
+  const handleDragOver = (event) => {
+    event.preventDefault();
   };
 
   return (
-    <div 
-      className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer ${getBorderClasses()}`}
-      onDragOver={handleDragOver}
-      onDragLeave={handleDragLeave}
-      onDrop={handleDrop}
-      onClick={() => fileInputRef.current?.click()}
+    <div
+      className={`border-2 border-dashed rounded-lg p-8 transition-colors ${
+        disabled 
+          ? 'border-gray-300 bg-gray-50 cursor-not-allowed' 
+          : `border-${color}-300 hover:border-${color}-500 cursor-pointer`
+      }`}
+      onDrop={disabled ? undefined : handleDrop}
+      onDragOver={disabled ? undefined : handleDragOver}
+      onClick={disabled ? undefined : () => fileInputRef.current?.click()}
     >
       <input 
         type="file" 
         ref={fileInputRef} 
         className="hidden" 
         accept={acceptedExtension} 
-        onChange={handleFileInputChange} 
+        onChange={handleFileInputChange}
+        disabled={disabled}
       />
       <div className="flex flex-col items-center justify-center">
         {icon}
@@ -150,6 +124,9 @@ const FileDropZone = ({
         </p>
         <p className="text-xs text-gray-500">{acceptedExtension.replace('.', '').toUpperCase()} files only</p>
         {fileName && <p className="mt-2 text-sm text-blue-600">{fileName}</p>}
+        {disabled && disabledMessage && (
+          <p className="mt-2 text-sm text-gray-500">{disabledMessage}</p>
+        )}
       </div>
 
       {error && (
@@ -237,19 +214,19 @@ const PortfolioUploader = ({ onFileLoaded }) => {
 /**
  * Transaction JSON Uploader section with help text
  */
-const TransactionUploader = ({ onFileLoaded }) => {
+const TransactionUploader = ({ onFileLoaded, disabled = false, disabledMessage = '' }) => {
   return (
     <div>
       <div className="bg-green-50 p-4 rounded-lg mb-6">
         <h3 className="font-medium text-green-800 mb-2 flex items-center">
           <Database className="w-4 h-4 mr-2" />
-          Accepted Format
+          Expected Format
         </h3>
         <ul className="text-sm text-green-700 list-disc list-inside">
           <li>JSON file format only</li>
-          <li>Must contain BrokerageTransactions array</li>
-          <li>Fields: Date, Symbol, Action, Quantity, Price, Amount</li>
-          <li>Supports Schwab/TD Ameritrade exports</li>
+          <li>Must include transaction history</li>
+          <li>Should contain buy/sell transactions</li>
+          <li>Supports most brokerage exports</li>
         </ul>
       </div>
       
@@ -261,6 +238,8 @@ const TransactionUploader = ({ onFileLoaded }) => {
         title="Upload Transaction History"
         description="Upload your transaction history from a JSON file"
         acceptedExtension=".json"
+        disabled={disabled}
+        disabledMessage={disabledMessage}
       />
       
       <div className="mt-4 text-sm text-gray-600">
@@ -464,11 +443,25 @@ const FileUploader = ({
     resolve: null
   });
 
-  const handleAccountConfirmation = (rawAccountName) => {
+  const [canUploadTransactions, setCanUploadTransactions] = useState(false);
+  const [isCheckingUploadState, setIsCheckingUploadState] = useState(true);
+
+  useEffect(() => {
+    const checkUploadState = async () => {
+      try {
+        const canUpload = await fileUpload.canUploadTransactions();
+        setCanUploadTransactions(canUpload);
+      } catch (err) {
+        console.error('Error checking upload state:', err);
+      } finally {
+        setIsCheckingUploadState(false);
+      }
+    };
+    checkUploadState();
+  }, []);
+
+  const handleAccountConfirmation = (rawAccountName, resolve, similarAccounts = []) => {
     return new Promise((resolve) => {
-      // Find similar accounts
-      const similarAccounts = findSimilarAccountNames(rawAccountName, portfolioData?.accounts || []);
-      
       if (similarAccounts.length > 0) {
         // Show confirmation dialog
         setConfirmationDialog({
@@ -512,7 +505,7 @@ const FileUploader = ({
     portfolioData,
     onLoad,
     onAcquisitionsFound,
-    onAccountConfirmation
+    handleAccountConfirmation
   );
 
   // If we're in the initial state (no onLoad provided), use the simpler file upload handlers
@@ -537,14 +530,15 @@ const FileUploader = ({
               >
                 Upload CSV
               </button>
-              <input 
+              <input
                 id="csv-file-input"
                 type="file"
-                className="hidden"
                 accept=".csv"
+                className="hidden"
                 onChange={(e) => {
-                  if (e.target.files[0]) {
-                    handleFileLoaded(e.target.files[0], null, null, 'CSV');
+                  const file = e.target.files[0];
+                  if (file) {
+                    handleFileLoaded(file, null, null, 'CSV');
                   }
                 }}
               />
@@ -565,23 +559,32 @@ const FileUploader = ({
               <button
                 onClick={() => document.getElementById('json-file-input').click()}
                 className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
+                disabled={!canUploadTransactions}
               >
                 Upload JSON
               </button>
-              <input 
+              <input
                 id="json-file-input"
                 type="file"
-                className="hidden"
                 accept=".json"
+                className="hidden"
                 onChange={(e) => {
-                  if (e.target.files[0]) {
-                    handleFileLoaded(e.target.files[0], null, null, 'JSON');
+                  const file = e.target.files[0];
+                  if (file) {
+                    handleFileLoaded(file, null, null, 'JSON');
                   }
                 }}
+                disabled={!canUploadTransactions}
               />
+              {!canUploadTransactions && (
+                <p className="mt-2 text-sm text-gray-500">
+                  Please upload a portfolio snapshot first
+                </p>
+              )}
             </div>
           </div>
         </div>
+        
         <AccountConfirmationDialog
           isOpen={confirmationDialog.isOpen}
           newAccountName={confirmationDialog.newAccountName}
@@ -596,28 +599,23 @@ const FileUploader = ({
   // Main state with full functionality
   return (
     <div>
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Upload Portfolio or Transaction File
-        </label>
-        <input
-          type="file"
-          accept=".csv,.json"
-          onChange={(e) => {
-            const file = e.target.files[0];
-            if (file) {
-              const fileType = file.name.toLowerCase().endsWith('.json') ? 'JSON' : 'CSV';
-              handleFileLoaded(file, null, null, fileType);
-            }
-          }}
-          className="block w-full text-sm text-gray-500
-            file:mr-4 file:py-2 file:px-4
-            file:rounded-md file:border-0
-            file:text-sm file:font-semibold
-            file:bg-blue-50 file:text-blue-700
-            hover:file:bg-blue-100"
-        />
-      </div>
+      {isCheckingUploadState ? (
+        <div className="flex items-center justify-center p-8">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+          <span className="ml-2 text-gray-600">Checking upload state...</span>
+        </div>
+      ) : (
+        <div className="space-y-8">
+          <PortfolioUploader onFileLoaded={(file) => handleFileLoaded(file, null, null, 'CSV')} />
+          
+          <TransactionUploader 
+            onFileLoaded={(file) => handleFileLoaded(file, null, null, 'JSON')}
+            disabled={!canUploadTransactions}
+            disabledMessage="Please upload a portfolio snapshot first"
+          />
+        </div>
+      )}
+      
       <AccountConfirmationDialog
         isOpen={confirmationDialog.isOpen}
         newAccountName={confirmationDialog.newAccountName}
@@ -625,16 +623,41 @@ const FileUploader = ({
         onConfirm={handleConfirmAccount}
         onCancel={handleCancelAccount}
       />
+      
       {fileStats.recentUploads.length > 0 && (
-        <div className="file-stats">
-          <h3>Recent Uploads</h3>
-          <ul>
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">Recent Uploads</h3>
+          <div className="space-y-2">
             {fileStats.recentUploads.map((upload, index) => (
-              <li key={index}>
-                {upload.fileName} ({upload.type})
-              </li>
+              <div 
+                key={index}
+                className={`p-3 rounded-lg ${
+                  upload.status === 'success' 
+                    ? 'bg-green-50 border border-green-200' 
+                    : upload.status === 'error'
+                    ? 'bg-red-50 border border-red-200'
+                    : 'bg-gray-50 border border-gray-200'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    {upload.status === 'success' ? (
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    ) : upload.status === 'error' ? (
+                      <AlertTriangle className="w-5 h-5 text-red-500 mr-2" />
+                    ) : (
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600 mr-2"></div>
+                    )}
+                    <span className="text-sm font-medium">{upload.fileName}</span>
+                  </div>
+                  <span className="text-xs text-gray-500">{upload.type.toUpperCase()}</span>
+                </div>
+                {upload.error && (
+                  <p className="mt-1 text-sm text-red-600">{upload.error}</p>
+                )}
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </div>

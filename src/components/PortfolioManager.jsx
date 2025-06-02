@@ -20,6 +20,7 @@ import PortfolioFooter from './PortfolioFooter';
 import StorageManager from './StorageManager';
 import SecurityDetail from './SecurityDetail';
 import AcquisitionModal from './AcquisitionModal';
+import AccountConfirmationDialog from './AccountConfirmationDialog';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -33,6 +34,12 @@ const PortfolioManager = () => {
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);
+  const [confirmationDialog, setConfirmationDialog] = useState({
+    isOpen: false,
+    newAccountName: '',
+    similarAccounts: [],
+    resolve: null
+  });
 
   // File upload hook
   const fileUpload = useFileUpload(
@@ -97,6 +104,49 @@ const PortfolioManager = () => {
   const closeUploadModal = () => {
     setShowUploadModal(false);
     setUploadModalType(null);
+  };
+
+  // Handle account confirmation
+  const handleAccountConfirmation = (rawAccountName, resolve) => {
+    // Find similar accounts
+    const similarAccounts = findSimilarAccountNames(rawAccountName, portfolioData?.accounts || []);
+    
+    if (similarAccounts.length > 0) {
+      // Show confirmation dialog
+      setConfirmationDialog({
+        isOpen: true,
+        newAccountName: rawAccountName,
+        similarAccounts,
+        resolve
+      });
+    } else {
+      // No similar accounts found, use the new account name
+      resolve(rawAccountName);
+    }
+  };
+
+  const handleConfirmAccount = (accountName) => {
+    if (confirmationDialog.resolve) {
+      confirmationDialog.resolve(accountName);
+    }
+    setConfirmationDialog({
+      isOpen: false,
+      newAccountName: '',
+      similarAccounts: [],
+      resolve: null
+    });
+  };
+
+  const handleCancelAccount = () => {
+    if (confirmationDialog.resolve) {
+      confirmationDialog.resolve(confirmationDialog.newAccountName);
+    }
+    setConfirmationDialog({
+      isOpen: false,
+      newAccountName: '',
+      similarAccounts: [],
+      resolve: null
+    });
   };
 
   // Handle file upload success
@@ -261,11 +311,7 @@ const PortfolioManager = () => {
             onClose={closeUploadModal}
             onCsvFileLoaded={fileUpload.handleFileLoaded}
             onJsonFileLoaded={fileUpload.handleFileLoaded}
-            onAccountConfirmation={(rawAccountName, resolve) => {
-              // For now, just resolve with the raw account name
-              // In the future, this could show a confirmation dialog
-              resolve(rawAccountName);
-            }}
+            onAccountConfirmation={handleAccountConfirmation}
           />
         )}
       </div>
@@ -296,16 +342,16 @@ const PortfolioManager = () => {
           <div className="bg-white rounded-lg max-w-2xl w-full p-6">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">
-                {uploadModalType === 'csv' ? 'Upload Portfolio' : 'Upload Transactions'}
+                {uploadModalType === 'csv' ? 'Upload Portfolio Snapshot' : 'Upload Transaction History'}
               </h2>
               <button
                 onClick={closeUploadModal}
                 className="text-gray-400 hover:text-gray-600"
-                aria-label="Close modal"
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
+            
             <FileUploader 
               portfolioData={portfolioData}
               onLoad={{
@@ -317,17 +363,22 @@ const PortfolioManager = () => {
                 onNavigate: navigation.changeTab
               }}
               onAcquisitionsFound={acquisition.openAcquisitionModal}
-              onAccountConfirmation={(rawAccountName, resolve) => {
-                // For now, just resolve with the raw account name
-                // In the future, this could show a confirmation dialog
-                resolve(rawAccountName);
-              }}
+              onAccountConfirmation={handleAccountConfirmation}
               onCsvFileLoaded={fileUpload.handleFileLoaded}
               onJsonFileLoaded={fileUpload.handleFileLoaded}
             />
           </div>
         </div>
       )}
+      
+      {/* Account Confirmation Dialog */}
+      <AccountConfirmationDialog
+        isOpen={confirmationDialog.isOpen}
+        newAccountName={confirmationDialog.newAccountName}
+        similarAccounts={confirmationDialog.similarAccounts}
+        onConfirm={handleConfirmAccount}
+        onCancel={handleCancelAccount}
+      />
       
       {/* Acquisition Modal */}
       {showAcquisitionModal && (

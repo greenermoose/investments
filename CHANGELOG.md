@@ -1,3 +1,7 @@
+### 0.4.29
+
+- fix account name issues
+
 ### 0.4.28
 
 - Upload modal

@@ -86,12 +86,37 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
   const accountConfirmationHandler = onAccountConfirmation || defaultAccountConfirmation;
 
   /**
+   * Check if we can upload transactions
+   * @returns {Promise<boolean>} Whether transactions can be uploaded
+   */
+  const canUploadTransactions = async () => {
+    try {
+      const accounts = await portfolioService.getAllAccounts();
+      if (accounts.length === 0) {
+        return false;
+      }
+
+      // Check if any account has a portfolio snapshot
+      for (const account of accounts) {
+        const snapshot = await portfolioService.getLatestSnapshot(account);
+        if (snapshot) {
+          return true;
+        }
+      }
+      return false;
+    } catch (err) {
+      console.error('Error checking if transactions can be uploaded:', err);
+      return false;
+    }
+  };
+
+  /**
    * Validate file based on type and content
    * @param {File} file - File to validate
    * @param {string} expectedType - Expected file type ('CSV' or 'JSON')
    * @returns {Object} Validation result
    */
-  const validateFile = (file, expectedType) => {
+  const validateFile = async (file, expectedType) => {
     // Check if file exists
     if (!file) {
       return {
@@ -117,6 +142,17 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         success: false,
         error: 'Please upload a JSON file'
       };
+    }
+
+    // Check if we can upload transactions
+    if (isJSON) {
+      const canUpload = await canUploadTransactions();
+      if (!canUpload) {
+        return {
+          success: false,
+          error: 'Please upload a portfolio snapshot (CSV) first before uploading transactions'
+        };
+      }
     }
     
     // Basic file size validation
@@ -155,7 +191,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         const file = fileContentOrFile;
         
         // Validate file
-        fileValidation = validateFile(file, expectedType);
+        fileValidation = await validateFile(file, expectedType);
         if (!fileValidation.success) {
           throw new Error(fileValidation.error);
         }
@@ -288,9 +324,21 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         throw new Error('Could not determine account name from filename');
       }
 
+      // Get all existing accounts
+      const existingAccounts = await portfolioService.getAllAccounts();
+      
+      // Find similar accounts
+      const similarAccounts = findSimilarAccountNames(rawAccountName, existingAccounts);
+      
       // Handle account name confirmation
       const confirmedAccountName = await new Promise((resolve) => {
-        accountConfirmationHandler(rawAccountName, resolve);
+        if (similarAccounts.length > 0) {
+          // Show confirmation dialog with similar accounts
+          accountConfirmationHandler(rawAccountName, resolve, similarAccounts);
+        } else {
+          // No similar accounts found, show error
+          throw new Error('No matching account found. Please upload a portfolio snapshot first.');
+        }
       });
 
       // Get existing transactions for comparison
@@ -341,20 +389,32 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
   const handlePortfolioFile = async (fileContent, fileName, dateFromFileName = null) => {
     try {
       // Parse portfolio data
-      const { portfolioData, portfolioDate, accountTotal } = parsePortfolioCSV(fileContent);
+      const { portfolioData, portfolioDate, accountTotal, csvAccountName } = parsePortfolioCSV(fileContent);
       if (!portfolioData || !Array.isArray(portfolioData) || portfolioData.length === 0) {
         throw new Error('Invalid portfolio file format');
       }
 
-      // Get account name from filename
-      const rawAccountName = getAccountNameFromFilename(fileName);
+      // Get account name from CSV content first, then fall back to filename
+      const rawAccountName = csvAccountName || getAccountNameFromFilename(fileName);
       if (!rawAccountName) {
-        throw new Error('Could not determine account name from filename');
+        throw new Error('Could not determine account name from file');
       }
+
+      // Get all existing accounts
+      const existingAccounts = await portfolioService.getAllAccounts();
+      
+      // Find similar accounts
+      const similarAccounts = findSimilarAccountNames(rawAccountName, existingAccounts);
 
       // Handle account name confirmation
       const confirmedAccountName = await new Promise((resolve) => {
-        accountConfirmationHandler(rawAccountName, resolve);
+        if (similarAccounts.length > 0) {
+          // Show confirmation dialog with similar accounts
+          accountConfirmationHandler(rawAccountName, resolve, similarAccounts);
+        } else {
+          // No similar accounts found, use the new account name
+          resolve(rawAccountName);
+        }
       });
 
       // Get snapshot date
@@ -409,7 +469,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
   return {
     handleFileLoaded,
     validateFile,
-    fileStats
+    fileStats,
+    canUploadTransactions
   };
 };
 

@@ -180,6 +180,45 @@ export const extractDateFromAccountInfo = (accountInfo) => {
 };
 
 /**
+ * Extracts account name from CSV content
+ * @param {string} fileContent - The CSV file content
+ * @returns {string|null} The extracted account name or null if not found
+ */
+export const extractAccountNameFromCSV = (fileContent) => {
+  if (!fileContent) return null;
+  
+  const lines = fileContent.split('\n');
+  if (lines.length === 0) return null;
+  
+  // Look for account name in the first line
+  const firstLine = lines[0];
+  
+  // Try different patterns for account name extraction
+  const patterns = [
+    // Pattern 1: "Positions for account Roth Contributory IRA ...348 as of"
+    /Positions for account (.*?) as of/,
+    // Pattern 2: "Positions for Roth Contributory IRA ...348 as of"
+    /Positions for (.*?) as of/,
+    // Pattern 3: "Account: Roth Contributory IRA ...348"
+    /Account:?\s*(.*?)(?:\s*$|\s*as of)/,
+    // Pattern 4: "Roth Contributory IRA ...348 Positions"
+    /^(.*?)(?:\s+Positions|\s+as of)/
+  ];
+  
+  for (const pattern of patterns) {
+    const match = firstLine.match(pattern);
+    if (match && match[1]) {
+      const accountName = normalizeAccountName(match[1]);
+      console.log('Extracted account name from CSV:', accountName);
+      return accountName;
+    }
+  }
+  
+  console.warn('Could not extract account name from CSV content');
+  return null;
+};
+
+/**
  * Parses the IRA CSV data from the exported format
  * @param {string} fileContent - The raw CSV file content
  * @returns {Object} The parsed portfolio data and date
@@ -202,6 +241,10 @@ export const parsePortfolioCSV = (fileContent) => {
     // Extract date from the first row
     let portfolioDate = extractDateFromAccountInfo(lines[0]);
     console.log('Extracted portfolio date:', portfolioDate);
+    
+    // Extract account name from CSV content
+    const csvAccountName = extractAccountNameFromCSV(fileContent);
+    console.log('Extracted account name from CSV:', csvAccountName);
     
     // If first line doesn't have date info, it might be in a different format
     if (!portfolioDate) {
@@ -466,7 +509,7 @@ export const parseDateFromFilename = (filename) => {
 };
 
 /**
- * Normalizes an account name by removing special characters and standardizing format
+ * Normalizes an account name by standardizing format while preserving account numbers
  * @param {string} accountName - The account name to normalize
  * @returns {string} The normalized account name
  */
@@ -476,14 +519,18 @@ export const normalizeAccountName = (accountName) => {
   return accountName
     // Replace underscores and hyphens with spaces
     .replace(/[_-]/g, ' ')
-    // Remove account numbers and other identifiers
-    .replace(/\s*\.{3}\d+\s*/g, ' ')
-    .replace(/\s*\d{3,}\s*/g, ' ')
-    // Remove special characters but keep spaces
-    .replace(/[^a-zA-Z0-9\s]/g, '')
+    // Standardize account number format (convert ...348 or XXX348 to 348)
+    .replace(/\.{3}(\d+)/g, '$1')
+    .replace(/XXX(\d+)/g, '$1')
+    // Remove special characters but keep spaces, numbers, and common account-related characters
+    .replace(/[^a-zA-Z0-9\s&]/g, '')
     // Remove extra whitespace
     .replace(/\s+/g, ' ')
-    .trim();
+    // Ensure consistent spacing around numbers
+    .replace(/(\d+)/g, ' $1 ')
+    .trim()
+    // Remove extra spaces again after number formatting
+    .replace(/\s+/g, ' ');
 };
 
 /**

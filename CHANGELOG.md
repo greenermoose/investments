@@ -1,3 +1,7 @@
+### 0.4.46
+
+- show changes in asset allocation between snapshots
+
 ### 0.4.45
 
 - show different aspects of portfolio in history

@@ -44,9 +44,10 @@ export const formatValue = (value, type = 'number') => {
 /**
  * Formats a date for display
  * @param {Date} date - The date to format
+ * @param {Object} options - Formatting options (optional)
  * @returns {string} The formatted date string
  */
-export const formatDate = (date) => {
+export const formatDate = (date, options = {}) => {
   if (!date) return '';
 
   try {
@@ -54,8 +55,7 @@ export const formatDate = (date) => {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
+      ...options
     });
   } catch (error) {
     console.error('Error formatting date:', error);

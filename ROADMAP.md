@@ -17,8 +17,8 @@ This roadmap outlines the steps to implement the ability to upload, select, and 
 
 ## Phase 3: Historical Analysis
 - [x] Create basic performance charts showing portfolio value over time.
-- [ ] Create an interactive `SnapshotTimeline` component to visualize all snapshots for an account over time.
-- [ ] Allow users to click on points in the timeline to view or compare snapshots.
+- [x] Create an interactive `SnapshotTimeline` component to visualize all snapshots for an account over time.
+- [x] Allow users to click on points in the timeline to view or compare snapshots.
 - [ ] Show historical trends in total value, gain/loss, and asset allocation.
 
 ## Phase 4: UI/UX Enhancements

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { portfolioService } from '../services/PortfolioService';
 import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 import SnapshotTimeline from './performance/SnapshotTimeline';
+import AssetAllocationTimeline from './performance/AssetAllocationTimeline';
 import { useAccount, usePortfolio } from '../context/PortfolioContext';
 import SecurityDetail from './SecurityDetail';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
@@ -16,7 +17,7 @@ const PortfolioHistory = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedSymbol, setSelectedSymbol] = useState(null);
-  const [activeMetric, setActiveMetric] = useState('totalValue'); // 'totalValue', 'positions', 'gainLoss', 'return'
+  const [activeMetric, setActiveMetric] = useState('totalValue'); // 'totalValue', 'positions', 'assetAllocation'
   
   useEffect(() => {
     const account = currentAccount || selectedAccount;
@@ -286,99 +287,107 @@ const PortfolioHistory = () => {
     });
   };
   
-  if (loading) {
+  const renderTimeline = () => {
+    if (activeMetric === 'assetAllocation') {
+      return <AssetAllocationTimeline snapshots={snapshots} />;
+    }
+    
     return (
-      <div className="flex justify-center items-center h-64">
-        <p className="text-xl">Loading portfolio history...</p>
-      </div>
+      <SnapshotTimeline
+        snapshots={snapshots}
+        onSnapshotSelect={handleSnapshotSelect}
+        onSnapshotCompare={handleSnapshotCompare}
+        selectedSnapshots={selectedSnapshots}
+        isComparing={isComparing}
+        activeMetric={activeMetric}
+      />
     );
-  }
+  };
   
-  if (error) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <p className="text-xl text-red-600">{error}</p>
-      </div>
-    );
-  }
-
-  // Show security detail if a symbol is selected
   if (selectedSymbol) {
     return (
       <SecurityDetail
         symbol={selectedSymbol}
-        account={currentAccount || selectedAccount}
         onBack={handleBackFromSecurityDetail}
+        snapshots={snapshots}
       />
     );
   }
-  
+
   return (
     <div className="space-y-6">
-      <div className="bg-white p-6 rounded-lg shadow">
-        <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-semibold">Portfolio History</h1>
+      <div className="flex justify-between items-center">
+        <h2 className="text-2xl font-semibold text-gray-900">Portfolio History</h2>
+        <div className="flex space-x-2">
           <button
-            onClick={() => {
-              setIsComparing(!isComparing);
-              setSelectedSnapshots([]);
-            }}
+            onClick={() => setIsComparing(!isComparing)}
             className={`px-4 py-2 rounded-md text-sm font-medium ${
-              isComparing 
-                ? 'bg-red-100 text-red-700 hover:bg-red-200' 
-                : 'bg-indigo-600 text-white hover:bg-indigo-700'
+              isComparing
+                ? 'bg-red-100 text-red-700 hover:bg-red-200'
+                : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
             }`}
           >
             {isComparing ? 'Cancel Comparison' : 'Compare Snapshots'}
           </button>
         </div>
-        
-        {/* Show timeline when not comparing or when selecting snapshots */}
-        {(!isComparing || selectedSnapshots.length < 2) && (
-          <>
-            <div className="mb-4">
-              <div className="tab-container">
+      </div>
+
+      {error && (
+        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+          {error}
+        </div>
+      )}
+
+      {loading ? (
+        <div className="text-center py-12">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading snapshots...</p>
+        </div>
+      ) : (
+        <>
+          <div className="bg-white rounded-lg shadow">
+            <div className="border-b border-gray-200">
+              <nav className="flex -mb-px">
                 <button
-                  className={activeMetric === 'totalValue' ? 'tab-active' : 'tab'}
                   onClick={() => setActiveMetric('totalValue')}
+                  className={`px-4 py-2 text-sm font-medium ${
+                    activeMetric === 'totalValue'
+                      ? 'border-b-2 border-blue-500 text-blue-600'
+                      : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
                 >
                   Total Value
                 </button>
                 <button
-                  className={activeMetric === 'positions' ? 'tab-active' : 'tab'}
                   onClick={() => setActiveMetric('positions')}
+                  className={`px-4 py-2 text-sm font-medium ${
+                    activeMetric === 'positions'
+                      ? 'border-b-2 border-blue-500 text-blue-600'
+                      : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
                 >
                   Number of Positions
                 </button>
                 <button
-                  className={activeMetric === 'gainLoss' ? 'tab-active' : 'tab'}
-                  onClick={() => setActiveMetric('gainLoss')}
+                  onClick={() => setActiveMetric('assetAllocation')}
+                  className={`px-4 py-2 text-sm font-medium ${
+                    activeMetric === 'assetAllocation'
+                      ? 'border-b-2 border-blue-500 text-blue-600'
+                      : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
                 >
-                  Gain/Loss
+                  Asset Allocation
                 </button>
-                <button
-                  className={activeMetric === 'return' ? 'tab-active' : 'tab'}
-                  onClick={() => setActiveMetric('return')}
-                >
-                  Return
-                </button>
-              </div>
+              </nav>
             </div>
-            <SnapshotTimeline
-              snapshots={snapshots}
-              onSnapshotSelect={handleSnapshotSelect}
-              onSnapshotCompare={handleSnapshotCompare}
-              selectedSnapshots={selectedSnapshots}
-              isComparing={isComparing}
-              metricData={getMetricData()}
-              activeMetric={activeMetric}
-            />
-          </>
-        )}
-        
-        {/* Comparison View */}
-        {isComparing && selectedSnapshots.length === 2 && renderComparisonView()}
-      </div>
+            <div className="p-4">
+              {renderTimeline()}
+            </div>
+          </div>
+
+          {isComparing && selectedSnapshots.length === 2 && renderComparisonView()}
+        </>
+      )}
     </div>
   );
 };

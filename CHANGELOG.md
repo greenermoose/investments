@@ -1,3 +1,7 @@
+### 0.4.36
+
+- fix transactions upload
+
 ### 0.4.35
 
 - show portfolio yet again

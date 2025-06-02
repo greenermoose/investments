@@ -336,10 +336,23 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
           // Show confirmation dialog with similar accounts
           accountConfirmationHandler(rawAccountName, resolve, similarAccounts);
         } else {
-          // No similar accounts found, show error
-          throw new Error('No matching account found. Please upload a portfolio snapshot first.');
+          // Try to match without account number
+          const baseName = rawAccountName.replace(/\s+\d+$/, '').trim();
+          const matchingAccount = existingAccounts.find(acc => 
+            acc.toLowerCase() === baseName.toLowerCase() || 
+            acc.toLowerCase().includes(baseName.toLowerCase())
+          );
+          
+          if (matchingAccount) {
+            resolve(matchingAccount);
+          } else {
+            // No matching account found
+            throw new Error('No matching account found. Please upload a portfolio snapshot first.');
+          }
         }
       });
+
+      console.log('Using account for transactions:', confirmedAccountName);
 
       // Get existing transactions for comparison
       const existingTransactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
@@ -365,8 +378,16 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
       // Record success
       recordUploadSuccess(fileName);
 
-      // Refresh portfolio data and reset loading state
-      await loadHandlers.loadPortfolio();
+      // Get the latest snapshot to refresh the portfolio
+      const latestSnapshot = await portfolioService.getLatestSnapshot(confirmedAccountName);
+      if (latestSnapshot) {
+        await loadHandlers.loadPortfolio(
+          latestSnapshot.data,
+          confirmedAccountName,
+          latestSnapshot.date,
+          latestSnapshot.accountTotal
+        );
+      }
       loadHandlers.setLoadingState(false);
       
       // Close modal if provided

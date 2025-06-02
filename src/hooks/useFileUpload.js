@@ -320,7 +320,13 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       );
 
       // Save the original file
-      await saveUploadedFile(fileContent, fileName, 'portfolio');
+      await saveUploadedFile(
+        { name: fileName },
+        fileContent,
+        accountName,
+        'portfolio',
+        snapshotDate
+      );
 
       // Record success
       recordUploadSuccess(fileName);

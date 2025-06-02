@@ -1,3 +1,7 @@
+### 0.4.43
+
+- improve UI for compare portfolio snapshots
+
 ### 0.4.42
 
 - compare portfolio snapshots

@@ -66,15 +66,6 @@ const SnapshotTimeline = ({
 
   return (
     <div className="bg-white p-6 rounded-lg shadow">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Portfolio Timeline</h2>
-        {isComparing && (
-          <div className="text-sm text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
-            Comparison Mode
-          </div>
-        )}
-      </div>
-      
       <div className="h-96">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart

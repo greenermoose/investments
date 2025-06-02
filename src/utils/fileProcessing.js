@@ -65,19 +65,19 @@ export const createHeaderMapping = (columnHeaders) => {
       headerMap['Symbol'] = index;
     } else if (normalizedHeader.includes('quantity') || normalizedHeader.includes('qty')) {
       headerMap['Qty (Quantity)'] = index;
-    } else if (normalizedHeader.includes('market value') || normalizedHeader.includes('mkt val')) {
+    } else if (normalizedHeader.includes('market value') || normalizedHeader.includes('mkt val') || normalizedHeader.includes('market val')) {
       headerMap['Mkt Val (Market Value)'] = index;
-    } else if (normalizedHeader.includes('gain/loss') || normalizedHeader.includes('gain $')) {
+    } else if (normalizedHeader.includes('gain/loss') || normalizedHeader.includes('gain $') || normalizedHeader.includes('gain/loss $')) {
       headerMap['Gain $ (Gain/Loss $)'] = index;
-    } else if (normalizedHeader.includes('gain %') || normalizedHeader.includes('gain/loss %')) {
+    } else if (normalizedHeader.includes('gain %') || normalizedHeader.includes('gain/loss %') || normalizedHeader.includes('gain/loss %')) {
       headerMap['Gain % (Gain/Loss %)'] = index;
-    } else if (normalizedHeader.includes('% of account') || normalizedHeader.includes('% of acct')) {
+    } else if (normalizedHeader.includes('% of account') || normalizedHeader.includes('% of acct') || normalizedHeader.includes('% of portfolio')) {
       headerMap['% of Acct (% of Account)'] = index;
-    } else if (normalizedHeader.includes('day change') || normalizedHeader.includes('day chng')) {
+    } else if (normalizedHeader.includes('day change') || normalizedHeader.includes('day chng') || normalizedHeader.includes('day change $')) {
       headerMap['Day Chng $ (Day Change $)'] = index;
     } else if (normalizedHeader.includes('day chng %') || normalizedHeader.includes('day change %')) {
       headerMap['Day Chng % (Day Change %)'] = index;
-    } else if (normalizedHeader.includes('price change') || normalizedHeader.includes('price chng')) {
+    } else if (normalizedHeader.includes('price change') || normalizedHeader.includes('price chng') || normalizedHeader.includes('price change $')) {
       headerMap['Price Chng $ (Price Change $)'] = index;
     } else if (normalizedHeader.includes('price chng %') || normalizedHeader.includes('price change %')) {
       headerMap['Price Chng % (Price Change %)'] = index;
@@ -202,7 +202,11 @@ export const extractAccountNameFromCSV = (fileContent) => {
     // Pattern 3: "Account: Roth Contributory IRA ...348"
     /Account:?\s*(.*?)(?:\s*$|\s*as of)/,
     // Pattern 4: "Roth Contributory IRA ...348 Positions"
-    /^(.*?)(?:\s+Positions|\s+as of)/
+    /^(.*?)(?:\s+Positions|\s+as of)/,
+    // Pattern 5: "Roth Contributory IRA XXX348"
+    /^(.*?)(?:\s+XXX\d+|\s+\.{3}\d+)/,
+    // Pattern 6: "Roth Contributory IRA 348"
+    /^(.*?)(?:\s+\d+)(?:\s+Positions|\s+as of)?/
   ];
   
   for (const pattern of patterns) {
@@ -212,6 +216,14 @@ export const extractAccountNameFromCSV = (fileContent) => {
       console.log('Extracted account name from CSV:', accountName);
       return accountName;
     }
+  }
+  
+  // If no pattern matches, try to extract from the filename
+  const filenameMatch = firstLine.match(/^([^,]+)/);
+  if (filenameMatch && filenameMatch[1]) {
+    const accountName = normalizeAccountName(filenameMatch[1]);
+    console.log('Extracted account name from filename:', accountName);
+    return accountName;
   }
   
   console.warn('Could not extract account name from CSV content');
@@ -271,7 +283,8 @@ export const parsePortfolioCSV = (fileContent) => {
         // Parse the header line with Papa Parse
         const parsed = Papa.parse(possibleHeaderLine, {
           delimiter: ",",
-          quoteChar: '"'
+          quoteChar: '"',
+          skipEmptyLines: true
         });
         
         if (parsed.data && parsed.data[0]) {
@@ -292,6 +305,8 @@ export const parsePortfolioCSV = (fileContent) => {
     // Parse the data rows
     const portfolioData = [];
     let accountTotal = null;
+    let totalValue = 0;
+    let totalGain = 0;
     
     for (let i = headerRowIndex + 1; i < lines.length; i++) {
       if (!lines[i].trim()) continue;
@@ -299,7 +314,8 @@ export const parsePortfolioCSV = (fileContent) => {
       try {
         const parsed = Papa.parse(lines[i], {
           delimiter: ",",
-          quoteChar: '"'
+          quoteChar: '"',
+          skipEmptyLines: true
         });
         
         if (!parsed.data || !parsed.data[0]) continue;
@@ -320,7 +336,8 @@ export const parsePortfolioCSV = (fileContent) => {
         if (!mappedRow.Symbol) continue;
         
         // Check if this is the account total row
-        if ((mappedRow.Symbol === 'Account Total' || mappedRow.Description === 'Account Total') &&
+        if ((mappedRow.Symbol === 'Account Total' || mappedRow.Description === 'Account Total' || 
+             mappedRow.Symbol === 'Total' || mappedRow.Description === 'Total') &&
             mappedRow['Mkt Val (Market Value)']) {
           accountTotal = {
             totalValue: mappedRow['Mkt Val (Market Value)'] || 0,
@@ -331,23 +348,28 @@ export const parsePortfolioCSV = (fileContent) => {
                   mappedRow.Symbol !== 'Cash & Cash Investments' && 
                   mappedRow.Symbol !== 'Account Total' &&
                   mappedRow.Symbol !== 'Cash and Money Market' &&
+                  mappedRow.Symbol !== 'Total' &&
                   mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
-          // Ensure all required fields are present
-          if (!mappedRow['Qty (Quantity)']) {
+          // Ensure all required fields are present and valid
+          if (!mappedRow['Qty (Quantity)'] || isNaN(mappedRow['Qty (Quantity)'])) {
             mappedRow['Qty (Quantity)'] = 0;
           }
-          if (!mappedRow['Price']) {
+          if (!mappedRow['Price'] || isNaN(mappedRow['Price'])) {
             mappedRow['Price'] = 0;
           }
-          if (!mappedRow['Cost Basis']) {
+          if (!mappedRow['Cost Basis'] || isNaN(mappedRow['Cost Basis'])) {
             mappedRow['Cost Basis'] = 0;
           }
-          if (!mappedRow['Gain $ (Gain/Loss $)']) {
+          if (!mappedRow['Gain $ (Gain/Loss $)'] || isNaN(mappedRow['Gain $ (Gain/Loss $)'])) {
             mappedRow['Gain $ (Gain/Loss $)'] = 0;
           }
-          if (!mappedRow['Gain % (Gain/Loss %)']) {
+          if (!mappedRow['Gain % (Gain/Loss %)'] || isNaN(mappedRow['Gain % (Gain/Loss %)'])) {
             mappedRow['Gain % (Gain/Loss %)'] = 0;
           }
+          
+          // Add to totals
+          totalValue += mappedRow['Mkt Val (Market Value)'] || 0;
+          totalGain += mappedRow['Gain $ (Gain/Loss $)'] || 0;
           
           portfolioData.push(mappedRow);
         }
@@ -364,9 +386,9 @@ export const parsePortfolioCSV = (fileContent) => {
     // If no account total was found, calculate it from the positions
     if (!accountTotal) {
       accountTotal = {
-        totalValue: portfolioData.reduce((sum, pos) => sum + (pos['Mkt Val (Market Value)'] || 0), 0),
-        totalGain: portfolioData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0),
-        gainPercent: portfolioData.reduce((sum, pos) => sum + (pos['Gain % (Gain/Loss %)'] || 0), 0) / portfolioData.length
+        totalValue,
+        totalGain,
+        gainPercent: totalValue > 0 ? (totalGain / totalValue) * 100 : 0
       };
     }
     
@@ -523,14 +545,25 @@ export const normalizeAccountName = (accountName) => {
     .replace(/\.{3}(\d+)/g, '$1')
     .replace(/XXX(\d+)/g, '$1')
     // Remove special characters but keep spaces, numbers, and common account-related characters
-    .replace(/[^a-zA-Z0-9\s&]/g, '')
+    .replace(/[^a-zA-Z0-9\s&()\-\.]/g, '')
     // Remove extra whitespace
     .replace(/\s+/g, ' ')
     // Ensure consistent spacing around numbers
     .replace(/(\d+)/g, ' $1 ')
     .trim()
     // Remove extra spaces again after number formatting
-    .replace(/\s+/g, ' ');
+    .replace(/\s+/g, ' ')
+    // Ensure consistent casing
+    .split(' ')
+    .map(word => {
+      // Keep common acronyms uppercase
+      if (['IRA', 'Roth', '401k', '403b', 'HSA'].includes(word.toUpperCase())) {
+        return word.toUpperCase();
+      }
+      // Capitalize first letter of each word
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+    .join(' ');
 };
 
 /**

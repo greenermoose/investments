@@ -1,3 +1,7 @@
+### 0.4.30
+
+- show portfolio
+
 ### 0.4.29
 
 - fix account name issues

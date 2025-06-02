@@ -400,11 +400,15 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         throw new Error('Could not determine account name from file');
       }
 
+      console.log('Raw account name:', rawAccountName);
+
       // Get all existing accounts
       const existingAccounts = await portfolioService.getAllAccounts();
+      console.log('Existing accounts:', existingAccounts);
       
       // Find similar accounts
       const similarAccounts = findSimilarAccountNames(rawAccountName, existingAccounts);
+      console.log('Similar accounts:', similarAccounts);
 
       // Handle account name confirmation
       const confirmedAccountName = await new Promise((resolve) => {
@@ -416,6 +420,8 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
           resolve(rawAccountName);
         }
       });
+
+      console.log('Confirmed account name:', confirmedAccountName);
 
       // Get snapshot date
       const snapshotDate = dateFromFileName || portfolioDate || parseDateFromFilename(fileName) || new Date();
@@ -433,6 +439,14 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         snapshotDate,
         accountTotal
       );
+
+      console.log('Saved portfolio snapshot:', {
+        portfolioId,
+        accountName: confirmedAccountName,
+        date: snapshotDate,
+        positions: portfolioData.length,
+        totalValue: accountTotal?.totalValue
+      });
 
       // Save the original file
       await saveUploadedFile(

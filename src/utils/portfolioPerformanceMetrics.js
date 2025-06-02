@@ -8,6 +8,7 @@
  */
 export const calculatePortfolioStats = (portfolioData) => {
   if (!portfolioData || !Array.isArray(portfolioData) || portfolioData.length === 0) {
+    console.log('No portfolio data to calculate stats');
     return {
       totalValue: 0,
       totalGain: 0,
@@ -22,17 +23,13 @@ export const calculatePortfolioStats = (portfolioData) => {
   
   // First pass: calculate totals
   portfolioData.forEach(position => {
-    if (typeof position['Mkt Val (Market Value)'] === 'number') {
-      totalValue += position['Mkt Val (Market Value)'];
-    }
+    const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
+    const gain = typeof position['Gain $ (Gain/Loss $)'] === 'number' ? position['Gain $ (Gain/Loss $)'] : 0;
+    const cost = typeof position['Cost Basis'] === 'number' ? position['Cost Basis'] : 0;
     
-    if (typeof position['Gain $ (Gain/Loss $)'] === 'number') {
-      totalGain += position['Gain $ (Gain/Loss $)'];
-    }
-    
-    if (typeof position['Cost Basis'] === 'number') {
-      totalCost += position['Cost Basis'];
-    }
+    totalValue += marketValue;
+    totalGain += gain;
+    totalCost += cost;
   });
   
   // Calculate gain percentage
@@ -43,25 +40,32 @@ export const calculatePortfolioStats = (portfolioData) => {
   
   // Calculate asset allocation
   const assetAllocation = portfolioData
-    .filter(position => 
-      typeof position['Mkt Val (Market Value)'] === 'number' && 
-      position['Mkt Val (Market Value)'] > 0 &&
-      position.Symbol
-    )
-    .map(position => ({
-      name: position.Symbol,
-      description: position.Description || position.Symbol,
-      value: position['Mkt Val (Market Value)'],
-      percent: (position['Mkt Val (Market Value)'] / totalValue) * 100
-    }))
+    .filter(position => {
+      const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
+      const symbol = position.Symbol;
+      return marketValue > 0 && symbol;
+    })
+    .map(position => {
+      const marketValue = position['Mkt Val (Market Value)'] || 0;
+      return {
+        name: position.Symbol,
+        description: position.Description || position.Symbol,
+        value: marketValue,
+        percent: totalValue > 0 ? (marketValue / totalValue) * 100 : 0
+      };
+    })
     .sort((a, b) => b.value - a.value);
   
-  return {
+  const stats = {
     totalValue,
     totalGain,
     gainPercent,
     assetAllocation
   };
+  
+  console.log('Calculated portfolio stats:', stats);
+  
+  return stats;
 };
   
 /**

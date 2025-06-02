@@ -29,6 +29,7 @@ export const usePortfolioData = (selectedAccount) => {
   const loadInitialPortfolio = async () => {
     try {
       setIsLoading(true);
+      setError(null);
       const accounts = await portfolioService.getAllAccounts();
       
       if (accounts.length > 0) {
@@ -37,10 +38,15 @@ export const usePortfolioData = (selectedAccount) => {
         
         // Find the most recent snapshot across all accounts
         for (const accountName of accounts) {
-          const snapshot = await portfolioService.getLatestSnapshot(accountName);
-          if (snapshot && (!latestSnapshot || snapshot.date > latestSnapshot.date)) {
-            latestSnapshot = snapshot;
-            latestAccountName = accountName;
+          try {
+            const snapshot = await portfolioService.getLatestSnapshot(accountName);
+            if (snapshot && (!latestSnapshot || snapshot.date > latestSnapshot.date)) {
+              latestSnapshot = snapshot;
+              latestAccountName = accountName;
+            }
+          } catch (err) {
+            console.warn(`Error loading snapshot for account ${accountName}:`, err);
+            continue;
           }
         }
         
@@ -54,11 +60,29 @@ export const usePortfolioData = (selectedAccount) => {
           );
         } else {
           // No data to load
+          setPortfolioData([]);
+          setCurrentAccount('');
+          setPortfolioDate(null);
+          setPortfolioStats({
+            totalValue: 0,
+            totalGain: 0,
+            gainPercent: 0,
+            assetAllocation: []
+          });
           setIsDataLoaded(false);
           setIsLoading(false);
         }
       } else {
         // No accounts found
+        setPortfolioData([]);
+        setCurrentAccount('');
+        setPortfolioDate(null);
+        setPortfolioStats({
+          totalValue: 0,
+          totalGain: 0,
+          gainPercent: 0,
+          assetAllocation: []
+        });
         setIsDataLoaded(false);
         setIsLoading(false);
       }
@@ -72,6 +96,7 @@ export const usePortfolioData = (selectedAccount) => {
   const loadAccountPortfolio = async (accountName) => {
     try {
       setIsLoading(true);
+      setError(null);
       const snapshot = await portfolioService.getLatestSnapshot(accountName);
       
       if (snapshot) {
@@ -86,6 +111,12 @@ export const usePortfolioData = (selectedAccount) => {
         setPortfolioData([]);
         setCurrentAccount(accountName);
         setPortfolioDate(null);
+        setPortfolioStats({
+          totalValue: 0,
+          totalGain: 0,
+          gainPercent: 0,
+          assetAllocation: []
+        });
         setIsDataLoaded(true);
         setIsLoading(false);
       }
@@ -99,7 +130,9 @@ export const usePortfolioData = (selectedAccount) => {
   // Update portfolio stats when data changes
   useEffect(() => {
     if (portfolioData && Array.isArray(portfolioData) && portfolioData.length > 0) {
-      setPortfolioStats(calculatePortfolioStats(portfolioData));
+      const stats = calculatePortfolioStats(portfolioData);
+      console.log('Calculated portfolio stats:', stats);
+      setPortfolioStats(stats);
     } else {
       setPortfolioStats({
         totalValue: 0,
@@ -123,6 +156,13 @@ export const usePortfolioData = (selectedAccount) => {
       gainPercent: accountTotal.gainPercent || 0,
       assetAllocation: calculatePortfolioStats(portfolioData).assetAllocation
     } : calculatePortfolioStats(portfolioData);
+    
+    console.log('Loading portfolio:', {
+      accountName,
+      date,
+      positions: portfolioData.length,
+      stats
+    });
     
     setPortfolioData(portfolioData);
     setCurrentAccount(accountName || '');

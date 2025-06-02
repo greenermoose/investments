@@ -94,11 +94,26 @@ export class PortfolioRepository extends BaseRepository {
    */
   async getLatestByAccount(accountName) {
     const snapshots = await this.getByAccount(accountName);
-    if (!snapshots || snapshots.length === 0) return null;
+    if (!snapshots || snapshots.length === 0) {
+      console.log('No snapshots found for account:', accountName);
+      return null;
+    }
     
-    return snapshots.reduce((latest, current) => {
-      return !latest || current.date > latest.date ? current : latest;
+    const latest = snapshots.reduce((latest, current) => {
+      const currentDate = new Date(current.date);
+      const latestDate = latest ? new Date(latest.date) : null;
+      return !latestDate || currentDate > latestDate ? current : latest;
     }, null);
+    
+    console.log('Found latest snapshot:', {
+      accountName,
+      date: latest.date,
+      positions: latest.data.length,
+      firstPosition: latest.data[0],
+      accountTotal: latest.accountTotal
+    });
+    
+    return latest;
   }
 
   /**

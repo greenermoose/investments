@@ -99,7 +99,15 @@ export const usePortfolioData = (selectedAccount) => {
       setError(null);
       const snapshot = await portfolioService.getLatestSnapshot(accountName);
       
-      if (snapshot) {
+      if (snapshot && snapshot.data) {
+        console.log('Loading account portfolio:', {
+          accountName,
+          snapshotDate: snapshot.date,
+          positions: snapshot.data.length,
+          firstPosition: snapshot.data[0],
+          accountTotal: snapshot.accountTotal
+        });
+        
         loadPortfolio(
           snapshot.data,
           accountName,
@@ -107,6 +115,7 @@ export const usePortfolioData = (selectedAccount) => {
           snapshot.accountTotal
         );
       } else {
+        console.warn('No snapshot data found for account:', accountName);
         // Account exists but has no snapshots
         setPortfolioData([]);
         setCurrentAccount(accountName);
@@ -173,11 +182,26 @@ export const usePortfolioData = (selectedAccount) => {
       firstPositionSymbol: portfolioData[0]?.Symbol
     });
     
-    setPortfolioData(portfolioData);
-    setCurrentAccount(accountName || '');
-    setPortfolioDate(date || null);
-    setPortfolioStats(stats);
-    setIsDataLoaded(true);
+    // Ensure we have valid data before setting state
+    if (portfolioData.length > 0) {
+      setPortfolioData(portfolioData);
+      setCurrentAccount(accountName || '');
+      setPortfolioDate(date || null);
+      setPortfolioStats(stats);
+      setIsDataLoaded(true);
+    } else {
+      console.warn('No valid portfolio data to load');
+      setPortfolioData([]);
+      setCurrentAccount('');
+      setPortfolioDate(null);
+      setPortfolioStats({
+        totalValue: 0,
+        totalGain: 0,
+        gainPercent: 0,
+        assetAllocation: []
+      });
+      setIsDataLoaded(false);
+    }
     setIsLoading(false);
   };
 

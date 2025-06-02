@@ -1,3 +1,7 @@
+### 0.4.44
+
+- add symbol history
+
 ### 0.4.43
 
 - improve UI for compare portfolio snapshots

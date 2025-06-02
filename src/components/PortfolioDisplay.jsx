@@ -9,7 +9,7 @@ import '../styles/portfolio.css';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
+  const [sortConfig, setSortConfig] = useState({ key: 'Symbol', direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
 
   // Chart colors

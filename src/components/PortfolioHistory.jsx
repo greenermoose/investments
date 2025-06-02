@@ -4,6 +4,7 @@ import { portfolioService } from '../services/PortfolioService';
 import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 import SnapshotTimeline from './performance/SnapshotTimeline';
 import { useAccount, usePortfolio } from '../context/PortfolioContext';
+import SecurityDetail from './SecurityDetail';
 
 const PortfolioHistory = () => {
   const { selectedAccount } = useAccount();
@@ -13,6 +14,7 @@ const PortfolioHistory = () => {
   const [isComparing, setIsComparing] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedSymbol, setSelectedSymbol] = useState(null);
   
   useEffect(() => {
     const account = currentAccount || selectedAccount;
@@ -167,6 +169,14 @@ const PortfolioHistory = () => {
     return changes;
   };
   
+  const handleSymbolClick = (symbol) => {
+    setSelectedSymbol(symbol);
+  };
+
+  const handleBackFromSecurityDetail = () => {
+    setSelectedSymbol(null);
+  };
+
   const renderComparisonView = () => {
     if (selectedSnapshots.length !== 2) return null;
     
@@ -226,7 +236,14 @@ const PortfolioHistory = () => {
                 <tbody className="bg-white divide-y divide-gray-200">
                   {changes.map((change, index) => (
                     <tr key={change.symbol} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">{change.symbol}</td>
+                      <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                        <button
+                          onClick={() => handleSymbolClick(change.symbol)}
+                          className="text-indigo-600 hover:text-indigo-900 hover:underline focus:outline-none"
+                        >
+                          {change.symbol}
+                        </button>
+                      </td>
                       <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
                         <div>Qty: {change.oldQuantity}</div>
                         <div>Value: {formatCurrency(change.oldValue)}</div>
@@ -267,6 +284,17 @@ const PortfolioHistory = () => {
       <div className="flex justify-center items-center h-64">
         <p className="text-xl text-red-600">{error}</p>
       </div>
+    );
+  }
+
+  // Show security detail if a symbol is selected
+  if (selectedSymbol) {
+    return (
+      <SecurityDetail
+        symbol={selectedSymbol}
+        account={currentAccount || selectedAccount}
+        onBack={handleBackFromSecurityDetail}
+      />
     );
   }
   

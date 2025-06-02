@@ -1,3 +1,7 @@
+### 0.4.14
+
+- removed PortfolioTabs.jsx
+
 ### 0.4.13
 
 - tighter header navigation

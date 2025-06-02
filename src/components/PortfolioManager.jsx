@@ -16,7 +16,6 @@ import LotManager from './LotManager';
 import TransactionViewer from './TransactionViewer';
 import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
-import PortfolioTabs from './PortfolioTabs';
 import StorageManager from './StorageManager';
 import SecurityDetail from './SecurityDetail';
 
@@ -248,63 +247,40 @@ const PortfolioManager = () => {
         currentAccount={currentAccount || selectedAccount}
         onUploadCSV={handleCsvUpload}
         onUploadJSON={handleJsonUpload}
-        showUploadButton={isDataLoaded}
+        showUploadButton={true}
         onAccountChange={handleAccountChange}
-        uploadStats={getUploadStats()}
         onNavigate={changeTab}
+        activeTab={activeTab}
       />
-
-      <main className="flex-grow container mx-auto p-4">
+      
+      <main className="flex-grow container mx-auto px-4 py-6">
+        {error && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            {error}
+          </div>
+        )}
+        
         {isLoading ? (
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-indigo-600"></div>
-            <p className="ml-3 text-xl text-gray-700">Loading portfolio data...</p>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
           </div>
-        ) : error ? (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-            <div className="flex items-start">
-              <div className="py-1">
-                <svg className="fill-current h-6 w-6 text-red-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
-                </svg>
-              </div>
-              <div>
-                <p className="font-bold">Error</p>
-                <p>{error}</p>
-              </div>
-            </div>
-          </div>
-        ) : isDataLoaded ? (
-          <>
-            {/* Only show tabs for non-detail views */}
-            {activeTab !== 'security-detail' && (
-              <PortfolioTabs 
-                tabs={coreTabs.filter(tab => tab !== 'security-detail')}
-                activeTab={activeTab}
-                onTabChange={changeTab}
-              />
-            )}
-            
-            <div className="tab-content mt-6">
-              {renderTabContent()}
-            </div>
-          </>
-        ) : null}
+        ) : (
+          renderTabContent()
+        )}
       </main>
+
+      <PortfolioFooter />
       
-      <PortfolioFooter portfolioDate={portfolioDate} />
-      
-      {/* Upload modal */}
+      {/* File Upload Modal */}
       {showUploadModal && (
         <FileUploader
-          modalType={uploadModalType}
+          type={uploadModalType}
           onClose={closeUploadModal}
-          onCsvFileLoaded={fileUpload.handleFileLoaded}
-          onJsonFileLoaded={fileUpload.handleFileLoaded}
+          onUpload={fileUpload.handleFileUpload}
+          onUploadSuccess={fileUpload.handleUploadSuccess}
+          onUploadError={fileUpload.handleUploadError}
         />
       )}
-      
-      {/* Acquisition modal is now handled within LotManager */}
     </div>
   );
 };

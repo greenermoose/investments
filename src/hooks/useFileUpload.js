@@ -461,7 +461,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
       recordUploadSuccess(fileName);
 
       // Refresh portfolio data and reset loading state
-      await loadHandlers.loadPortfolio();
+      await loadHandlers.loadPortfolio(portfolioData, confirmedAccountName, snapshotDate, accountTotal);
       loadHandlers.setLoadingState(false);
       
       // Close modal if provided

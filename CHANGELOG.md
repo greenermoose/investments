@@ -1,3 +1,7 @@
+### 0.4.35
+
+- show portfolio yet again
+
 ### 0.4.34
 
 - show portfolio again

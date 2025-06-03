@@ -1,3 +1,7 @@
+### 0.4.59
+
+- StorageManager debugger
+
 ### 0.4.58
 
 - fix UI issues after purge

@@ -326,26 +326,6 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
         </table>
       </div>
 
-      {/* Statistics */}
-      <div className="stats-container">
-        <div className="stat-card stat-card-primary">
-          <p className="stat-label">Total Files</p>
-          <p className="stat-value">{files.length}</p>
-        </div>
-        <div className="stat-card stat-card-success">
-          <p className="stat-label">CSV Files</p>
-          <p className="stat-value">{files.filter(f => f.fileType === 'csv').length}</p>
-        </div>
-        <div className="stat-card stat-card-info">
-          <p className="stat-label">JSON Files</p>
-          <p className="stat-value">{files.filter(f => f.fileType === 'json').length}</p>
-        </div>
-        <div className="stat-card stat-card-warning">
-          <p className="stat-label">Accounts</p>
-          <p className="stat-value">{[...new Set(files.map(f => f.account))].length}</p>
-        </div>
-      </div>
-      
       {/* File Details Modal */}
       {selectedFile && (
         <div className="modal">

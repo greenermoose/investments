@@ -33,7 +33,7 @@ const StorageManager = ({ onDataChange }) => {
 
   useEffect(() => {
     loadStorageData();
-  }, []);
+  }, [onDataChange]);
 
   const getAllTransactionsFromDB = async () => {
     try {
@@ -238,6 +238,7 @@ const StorageManager = ({ onDataChange }) => {
           
           if (onDataChange) {
             onDataChange();
+            window.location.reload();
           }
         } catch (err) {
           console.error('Error purging all data:', err);

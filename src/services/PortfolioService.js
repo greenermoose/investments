@@ -138,6 +138,19 @@ class PortfolioService {
   async purgeAccountData(accountName) {
     console.log(`Purging all data for account: ${accountName}`);
     await this.accountRepo.deleteAccount(accountName);
+    
+    // Clear any cached data
+    this._clearCache();
+  }
+
+  /**
+   * Clear any cached data
+   * @private
+   */
+  _clearCache() {
+    this._accounts = null;
+    this._snapshots = {};
+    this._transactions = {};
   }
 
   // ===== Security Operations =====

@@ -7,7 +7,8 @@ import {
   STORE_NAME_SECURITIES, 
   STORE_NAME_LOTS,
   STORE_NAME_TRANSACTIONS,
-  STORE_NAME_MANUAL_ADJUSTMENTS 
+  STORE_NAME_MANUAL_ADJUSTMENTS,
+  STORE_NAME_FILES
 } from '../utils/databaseUtils';
 
 export class AccountRepository extends BaseRepository {
@@ -28,11 +29,12 @@ export class AccountRepository extends BaseRepository {
       const transaction = db.transaction([
         STORE_NAME_PORTFOLIOS, 
         STORE_NAME_SECURITIES,
-        STORE_NAME_TRANSACTIONS
+        STORE_NAME_TRANSACTIONS,
+        STORE_NAME_FILES
       ], 'readonly');
       
       let completedStores = 0;
-      const totalStores = 3;
+      const totalStores = 4;
       
       // Get accounts from portfolios
       const portfolioStore = transaction.objectStore(STORE_NAME_PORTFOLIOS);
@@ -71,6 +73,23 @@ export class AccountRepository extends BaseRepository {
       // Get accounts from transactions
       const transactionStore = transaction.objectStore(STORE_NAME_TRANSACTIONS);
       transactionStore.openCursor().onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          if (cursor.value.account) {
+            accounts.add(cursor.value.account);
+          }
+          cursor.continue();
+        } else {
+          completedStores++;
+          if (completedStores === totalStores) {
+            resolve(Array.from(accounts).sort());
+          }
+        }
+      };
+
+      // Get accounts from uploaded files
+      const fileStore = transaction.objectStore(STORE_NAME_FILES);
+      fileStore.openCursor().onsuccess = (event) => {
         const cursor = event.target.result;
         if (cursor) {
           if (cursor.value.account) {

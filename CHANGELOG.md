@@ -1,3 +1,7 @@
+### 0.4.58
+
+- fix UI issues after purge
+
 ### 0.4.57
 
 - storage manager display improvement

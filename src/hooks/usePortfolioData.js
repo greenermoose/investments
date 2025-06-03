@@ -90,6 +90,7 @@ export const usePortfolioData = (selectedAccount) => {
     } catch (err) {
       console.error('Error loading initial portfolio:', err);
       setError('Failed to load portfolio data');
+      setIsDataLoaded(false);
       setIsLoading(false);
     }
   };

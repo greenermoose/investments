@@ -124,13 +124,22 @@ export const purgeAllData = async () => {
       ], 'readwrite');
       
       // Clear all stores
-      transaction.objectStore(STORE_NAME_PORTFOLIOS).clear();
-      transaction.objectStore(STORE_NAME_SECURITIES).clear();
-      transaction.objectStore(STORE_NAME_LOTS).clear();
-      transaction.objectStore(STORE_NAME_TRANSACTIONS).clear();
-      transaction.objectStore(STORE_NAME_MANUAL_ADJUSTMENTS).clear();
-      transaction.objectStore(STORE_NAME_TRANSACTION_METADATA).clear();
-      transaction.objectStore(STORE_NAME_FILES).clear();
+      const stores = [
+        STORE_NAME_PORTFOLIOS,
+        STORE_NAME_SECURITIES,
+        STORE_NAME_LOTS,
+        STORE_NAME_TRANSACTIONS,
+        STORE_NAME_MANUAL_ADJUSTMENTS,
+        STORE_NAME_TRANSACTION_METADATA,
+        STORE_NAME_FILES
+      ];
+      
+      // Clear each store
+      stores.forEach(storeName => {
+        if (db.objectStoreNames.contains(storeName)) {
+          transaction.objectStore(storeName).clear();
+        }
+      });
       
       transaction.oncomplete = () => {
         console.log('Successfully purged all application data');

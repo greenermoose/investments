@@ -25,12 +25,12 @@ const DEBUG_CONFIG = {
       }
     },
     transactions: {
-      enabled: true,
+      enabled: false,
       categories: {
-        loading: true,
-        processing: true,
-        validation: true,
-        storage: true
+        loading: false,
+        processing: false,
+        validation: false,
+        storage: false
       }
     },
     ui: {

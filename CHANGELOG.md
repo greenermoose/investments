@@ -1,3 +1,7 @@
+### 0.4.56
+
+- Handle slight variations in snapshots
+
 ### 0.4.55
 
 - Calculate return on Portfolio Summary

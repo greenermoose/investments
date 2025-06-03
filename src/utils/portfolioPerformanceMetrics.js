@@ -9,8 +9,14 @@ import { debugLog } from './debugConfig';
  * @returns {Object} Portfolio statistics
  */
 export function calculatePortfolioStats(portfolioData) {
+  console.log('Starting portfolio stats calculation with data:', {
+    count: portfolioData.length,
+    firstPosition: portfolioData[0],
+    lastPosition: portfolioData[portfolioData.length - 1]
+  });
+
   if (!portfolioData || portfolioData.length === 0) {
-    debugLog('portfolio', 'processing', 'Empty portfolio data');
+    console.log('Empty portfolio data');
     return {
       totalValue: 0,
       totalGain: 0,
@@ -20,88 +26,161 @@ export function calculatePortfolioStats(portfolioData) {
     };
   }
 
-  debugLog('portfolio', 'processing', 'Processing portfolio positions:', {
-    count: portfolioData.length,
-    firstPosition: portfolioData[0],
-    marketValueTypes: portfolioData.map(p => ({
-      symbol: p.Symbol,
-      marketValue: p['Market Value'],
-      mktVal: p['Mkt Val (Market Value)'],
-      parsedValue: parseFloat(p['Market Value'] || p['Mkt Val (Market Value)']) || 0
-    }))
-  });
-
   let totalValue = 0;
   let totalGain = 0;
   let totalCost = 0;
 
   // Process each position
-  portfolioData.forEach(position => {
+  portfolioData.forEach((position, index) => {
     // Try both possible market value column names
     const marketValue = parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) || 0;
-    const costBasis = parseFloat(position['Cost Basis']) || 0;
-    let gainLossDollar = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
-    let gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
+    
+    // Get quantity
+    const quantity = parseFloat(position['Quantity'] || position['Qty (Quantity)']) || 0;
+    
+    // Try all possible cost basis field names and calculate total cost basis
+    const costPerShare = parseFloat(
+      position['Cost Basis'] || 
+      position['Cost/Share'] || 
+      0
+    );
+    const costBasis = isNaN(costPerShare) ? 0 : costPerShare * quantity;
+    
+    // Try all possible gain/loss field names
+    let gainLossDollar = parseFloat(
+      position['Gain $ (Gain/Loss $)'] || 
+      position['Gain/Loss $'] || 
+      position['Gain $'] || 
+      0
+    );
+    let gainLossPercent = parseFloat(
+      position['Gain % (Gain/Loss %)'] || 
+      position['Gain/Loss %'] || 
+      position['Gain %'] || 
+      0
+    );
+
+    // Log raw values for first few positions
+    if (index < 3) {
+      console.log(`Position ${index + 1} (${position.Symbol}) raw values:`, {
+        marketValue,
+        quantity,
+        costPerShare,
+        costBasis,
+        gainLossDollar,
+        gainLossPercent,
+        rawMarketValue: position['Market Value'] || position['Mkt Val (Market Value)'],
+        rawQuantity: position['Quantity'] || position['Qty (Quantity)'],
+        rawCostPerShare: position['Cost Basis'] || position['Cost/Share'],
+        rawGainDollar: position['Gain $ (Gain/Loss $)'] || position['Gain/Loss $'] || position['Gain $'],
+        rawGainPercent: position['Gain % (Gain/Loss %)'] || position['Gain/Loss %'] || position['Gain %']
+      });
+    }
 
     // Calculate missing gain/loss values
     if (gainLossDollar === 0 && gainLossPercent !== 0 && costBasis !== 0) {
       // Calculate dollar value from percentage
       gainLossDollar = (gainLossPercent / 100) * costBasis;
-      debugLog('portfolio', 'calculations', `Calculated dollar value from percentage for ${position.Symbol}:`, {
-        percentage: gainLossPercent,
-        costBasis: costBasis,
-        calculatedDollar: gainLossDollar
-      });
+      if (index < 3) {
+        console.log(`Calculated dollar value from percentage for ${position.Symbol}:`, {
+          percentage: gainLossPercent,
+          costBasis: costBasis,
+          calculatedDollar: gainLossDollar
+        });
+      }
     } else if (gainLossPercent === 0 && gainLossDollar !== 0 && costBasis !== 0) {
       // Calculate percentage from dollar value
       gainLossPercent = (gainLossDollar / costBasis) * 100;
-      debugLog('portfolio', 'calculations', `Calculated percentage from dollar value for ${position.Symbol}:`, {
-        dollar: gainLossDollar,
-        costBasis: costBasis,
-        calculatedPercentage: gainLossPercent
+      if (index < 3) {
+        console.log(`Calculated percentage from dollar value for ${position.Symbol}:`, {
+          dollar: gainLossDollar,
+          costBasis: costBasis,
+          calculatedPercentage: gainLossPercent
+        });
+      }
+    }
+
+    // Verify calculations
+    const calculatedGainDollar = marketValue - costBasis;
+    const calculatedGainPercent = costBasis !== 0 ? (calculatedGainDollar / costBasis) * 100 : 0;
+
+    if (index < 3) {
+      console.log(`Position ${index + 1} (${position.Symbol}) calculations:`, {
+        marketValue,
+        quantity,
+        costPerShare,
+        costBasis,
+        gainLossDollar,
+        gainLossPercent,
+        calculatedGainDollar,
+        calculatedGainPercent,
+        difference: {
+          dollar: Math.abs(gainLossDollar - calculatedGainDollar),
+          percent: Math.abs(gainLossPercent - calculatedGainPercent)
+        }
       });
     }
 
-    // Log position details
-    debugLog('portfolio', 'positions', `Processing position ${position.Symbol}:`, {
-      marketValue,
-      gainLossDollar,
-      gainLossPercent,
-      costBasis,
-      calculatedGainPercent: costBasis !== 0 ? (gainLossDollar / costBasis) * 100 : 0
-    });
-
-    totalValue += marketValue;
-    totalGain += gainLossDollar;
-    totalCost += costBasis;
+    // Only add to totals if we have valid numbers
+    if (!isNaN(marketValue)) {
+      totalValue += marketValue;
+    }
+    if (!isNaN(gainLossDollar)) {
+      totalGain += gainLossDollar;
+    }
+    if (!isNaN(costBasis)) {
+      totalCost += costBasis;
+    }
   });
 
   // Calculate gain percentage
   const gainPercentage = totalCost !== 0 ? (totalGain / totalCost) * 100 : 0;
 
-  // Log total calculations
-  debugLog('portfolio', 'totals', 'Portfolio totals:', {
+  // Calculate verification totals
+  const calculatedTotalGain = totalValue - totalCost;
+  const calculatedGainPercentage = totalCost !== 0 ? (calculatedTotalGain / totalCost) * 100 : 0;
+
+  console.log('Portfolio totals:', {
     totalValue,
     totalGain,
     totalCost,
-    calculatedGainPercentage: gainPercentage,
-    gainLossSum: portfolioData.reduce((sum, p) => sum + (parseFloat(p['Gain $ (Gain/Loss $)']) || 0), 0),
-    gainPercentSum: portfolioData.reduce((sum, p) => sum + (parseFloat(p['Gain % (Gain/Loss %)']) || 0), 0)
+    gainPercentage,
+    calculatedTotalGain,
+    calculatedGainPercentage,
+    difference: {
+      gain: Math.abs(totalGain - calculatedTotalGain),
+      percent: Math.abs(gainPercentage - calculatedGainPercentage)
+    },
+    gainLossSum: portfolioData.reduce((sum, p) => {
+      const gain = parseFloat(
+        p['Gain $ (Gain/Loss $)'] || 
+        p['Gain/Loss $'] || 
+        p['Gain $'] || 
+        0
+      );
+      return isNaN(gain) ? sum : sum + gain;
+    }, 0),
+    gainPercentSum: portfolioData.reduce((sum, p) => {
+      const gain = parseFloat(
+        p['Gain % (Gain/Loss %)'] || 
+        p['Gain/Loss %'] || 
+        p['Gain %'] || 
+        0
+      );
+      return isNaN(gain) ? sum : sum + gain;
+    }, 0)
   });
-
-  // Calculate asset allocation
-  const assetAllocation = portfolioData.map(position => ({
-    symbol: position.Symbol,
-    value: parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) || 0,
-    allocation: totalValue !== 0 ? (parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) / totalValue) * 100 : 0
-  }));
 
   return {
     totalValue,
     totalGain,
     gainPercentage,
     totalCost,
-    assetAllocation
+    assetAllocation: portfolioData.map(position => ({
+      symbol: position.Symbol,
+      value: parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) || 0,
+      allocation: totalValue !== 0 ? (parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) / totalValue) * 100 : 0
+    }))
   };
 }
   

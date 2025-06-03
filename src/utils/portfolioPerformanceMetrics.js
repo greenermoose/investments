@@ -92,7 +92,8 @@ export function calculatePortfolioStats(portfolioData) {
   // Calculate asset allocation
   const assetAllocation = portfolioData.map(position => ({
     symbol: position.Symbol,
-    allocation: totalValue !== 0 ? (parseFloat(position['Market Value']) / totalValue) * 100 : 0
+    value: parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) || 0,
+    allocation: totalValue !== 0 ? (parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) / totalValue) * 100 : 0
   }));
 
   return {

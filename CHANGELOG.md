@@ -1,3 +1,7 @@
+### 0.4.51
+
+- asset allocation chart
+
 ### 0.4.50
 
 - add debug flags

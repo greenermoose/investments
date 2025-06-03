@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
 import { generateAndDownloadCSV } from '../utils/fileProcessing';
+import AssetAllocationChart from './performance/AssetAllocationChart';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 
@@ -26,25 +27,21 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
 
   // Get sorted data
   const getSortedData = () => {
-    if (!sortConfig.key) return portfolioData;
+    if (!portfolioData) return [];
     
-    return [...portfolioData].sort((a, b) => {
-      // Handle non-numeric or missing values
-      if (a[sortConfig.key] === 'N/A' || a[sortConfig.key] === '--' || a[sortConfig.key] === undefined) return 1;
-      if (b[sortConfig.key] === 'N/A' || b[sortConfig.key] === '--' || b[sortConfig.key] === undefined) return -1;
-      
-      // For numeric comparisons
-      if (typeof a[sortConfig.key] === 'number' && typeof b[sortConfig.key] === 'number') {
-        return sortConfig.direction === 'ascending' 
-          ? a[sortConfig.key] - b[sortConfig.key]
-          : b[sortConfig.key] - a[sortConfig.key];
-      }
-      
-      // For string comparisons
-      return sortConfig.direction === 'ascending'
-        ? a[sortConfig.key].localeCompare(b[sortConfig.key])
-        : b[sortConfig.key].localeCompare(a[sortConfig.key]);
-    });
+    let sortableData = [...portfolioData];
+    if (sortConfig.key) {
+      sortableData.sort((a, b) => {
+        if (a[sortConfig.key] < b[sortConfig.key]) {
+          return sortConfig.direction === 'ascending' ? -1 : 1;
+        }
+        if (a[sortConfig.key] > b[sortConfig.key]) {
+          return sortConfig.direction === 'ascending' ? 1 : -1;
+        }
+        return 0;
+      });
+    }
+    return sortableData;
   };
   
   // Get filtered data
@@ -167,47 +164,11 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
           </div>
         </div>
         
-        {/* Asset Allocation Bar Chart */}
-        <div className="card">
-          <h2 className="card-title">Asset Allocation by Security</h2>
-          <div className="chart-container">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={portfolioStats.assetAllocation?.slice(0, 10) || []} // Show top 10 holdings
-                layout="vertical"
-                margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" tickFormatter={(value) => formatCurrency(value)} />
-                <YAxis 
-                  type="category" 
-                  dataKey="name"
-                  width={60}
-                  tick={{ fontSize: 12 }}
-                />
-                <Tooltip content={<CustomBarTooltip />} />
-                <Bar 
-                  dataKey="value" 
-                  name="Market Value"
-                  onClick={(data) => handleSymbolClick(data.name)}
-                  cursor="pointer"
-                >
-                  {(portfolioStats.assetAllocation || []).slice(0, 10).map((entry, index) => (
-                    <Cell 
-                      key={`cell-${index}`} 
-                      fill={COLORS[index % COLORS.length]} 
-                    />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-          <div className="chart-footnote">
-            {portfolioStats.assetAllocation?.length > 10 ? 
-              `* Showing top 10 of ${portfolioStats.assetAllocation.length} securities` 
-              : null}
-          </div>
-        </div>
+        {/* Asset Allocation Chart */}
+        <AssetAllocationChart 
+          data={portfolioStats.assetAllocation} 
+          onSymbolClick={onSymbolClick}
+        />
       </div>
     );
   };

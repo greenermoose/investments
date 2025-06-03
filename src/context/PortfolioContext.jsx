@@ -11,7 +11,7 @@ const NavigationContext = createContext();
 const AccountContext = createContext();
 
 // Provider component
-export const PortfolioProvider = ({ children }) => {
+function PortfolioProvider({ children }) {
   const portfolioData = usePortfolioData();
   const acquisitionModal = useAcquisitionModal();
   const navigation = usePortfolioNavigation();
@@ -35,37 +35,46 @@ export const PortfolioProvider = ({ children }) => {
       </AcquisitionContext.Provider>
     </PortfolioContext.Provider>
   );
-};
+}
 
 // Custom hooks to use the contexts
-export const usePortfolio = () => {
+function usePortfolio() {
   const context = useContext(PortfolioContext);
   if (!context) {
     throw new Error('usePortfolio must be used within a PortfolioProvider');
   }
   return context;
-};
+}
 
-export const useAcquisition = () => {
+function useAcquisition() {
   const context = useContext(AcquisitionContext);
   if (!context) {
     throw new Error('useAcquisition must be used within a PortfolioProvider');
   }
   return context;
-};
+}
 
-export const useNavigation = () => {
+function useNavigation() {
   const context = useContext(NavigationContext);
   if (!context) {
     throw new Error('useNavigation must be used within a PortfolioProvider');
   }
   return context;
-};
+}
 
-export const useAccount = () => {
+function useAccount() {
   const context = useContext(AccountContext);
   if (!context) {
     throw new Error('useAccount must be used within a PortfolioProvider');
   }
   return context;
+}
+
+// Export everything at once
+export {
+  PortfolioProvider,
+  usePortfolio,
+  useAcquisition,
+  useNavigation,
+  useAccount
 };

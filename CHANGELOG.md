@@ -1,3 +1,7 @@
+### 0.4.55
+
+- Calculate return on Portfolio Summary
+
 ### 0.4.54
 
 - set cost basis for tax lots when uploading snapshots

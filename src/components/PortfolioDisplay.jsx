@@ -153,8 +153,8 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
             </div>
             <div>
               <p className="stat-label">Return</p>
-              <p className={portfolioStats.gainPercent >= 0 ? "stat-value-positive" : "stat-value-negative"}>
-                {formatPercent(portfolioStats.gainPercent)}
+              <p className={portfolioStats.gainPercentage >= 0 ? "stat-value-positive" : "stat-value-negative"}>
+                {formatPercent(portfolioStats.gainPercentage)}
               </p>
             </div>
             <div>

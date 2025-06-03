@@ -67,9 +67,11 @@ export const createHeaderMapping = (columnHeaders) => {
       headerMap['Qty (Quantity)'] = index;
     } else if (normalizedHeader.includes('market value') || normalizedHeader.includes('mkt val') || normalizedHeader.includes('market val')) {
       headerMap['Mkt Val (Market Value)'] = index;
-    } else if (normalizedHeader.includes('gain/loss') || normalizedHeader.includes('gain $') || normalizedHeader.includes('gain/loss $')) {
+    } else if (normalizedHeader.includes('gain/loss $') || normalizedHeader.includes('gain $')) {
+      console.log(`Found Gain/Loss $ header at index ${index}`);
       headerMap['Gain $ (Gain/Loss $)'] = index;
-    } else if (normalizedHeader.includes('gain %') || normalizedHeader.includes('gain/loss %') || normalizedHeader.includes('gain/loss %')) {
+    } else if (normalizedHeader.includes('gain/loss %') || normalizedHeader.includes('gain %')) {
+      console.log(`Found Gain/Loss % header at index ${index}`);
       headerMap['Gain % (Gain/Loss %)'] = index;
     } else if (normalizedHeader.includes('% of account') || normalizedHeader.includes('% of acct') || normalizedHeader.includes('% of portfolio')) {
       headerMap['% of Acct (% of Account)'] = index;
@@ -104,6 +106,14 @@ export const createHeaderMapping = (columnHeaders) => {
     console.error('Missing headers:', missingHeaders);
     console.error('Available headers:', Object.keys(headerMap));
     throw new Error(`Missing required headers: ${missingHeaders.join(', ')}`);
+  }
+  
+  // Validate gain/loss headers
+  if (headerMap['Gain $ (Gain/Loss $)'] === undefined) {
+    console.warn('Gain/Loss $ header not found in CSV');
+  }
+  if (headerMap['Gain % (Gain/Loss %)'] === undefined) {
+    console.warn('Gain/Loss % header not found in CSV');
   }
   
   return headerMap;
@@ -360,12 +370,43 @@ export const parsePortfolioCSV = (fileContent) => {
           if (!mappedRow['Cost Basis'] || isNaN(mappedRow['Cost Basis'])) {
             mappedRow['Cost Basis'] = 0;
           }
-          if (!mappedRow['Gain $ (Gain/Loss $)'] || isNaN(mappedRow['Gain $ (Gain/Loss $)'])) {
+
+          // Validate gain/loss dollar value
+          const gainLossDollar = parseFloat(mappedRow['Gain $ (Gain/Loss $)']);
+          if (isNaN(gainLossDollar)) {
+            console.warn(`Invalid gain/loss dollar value for ${mappedRow.Symbol}:`, mappedRow['Gain $ (Gain/Loss $)']);
             mappedRow['Gain $ (Gain/Loss $)'] = 0;
+          } else {
+            mappedRow['Gain $ (Gain/Loss $)'] = gainLossDollar;
           }
-          if (!mappedRow['Gain % (Gain/Loss %)'] || isNaN(mappedRow['Gain % (Gain/Loss %)'])) {
+
+          // Validate gain/loss percentage value
+          const gainLossPercent = parseFloat(mappedRow['Gain % (Gain/Loss %)']);
+          if (isNaN(gainLossPercent) || gainLossPercent < -100 || gainLossPercent > 100) {
+            console.warn(`Invalid gain/loss percentage value for ${mappedRow.Symbol}:`, mappedRow['Gain % (Gain/Loss %)']);
             mappedRow['Gain % (Gain/Loss %)'] = 0;
+          } else {
+            mappedRow['Gain % (Gain/Loss %)'] = gainLossPercent;
           }
+
+          // Calculate expected gain/loss percentage for validation
+          const calculatedGainLossPercent = mappedRow['Cost Basis'] > 0 ? 
+            (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0;
+
+          // Log validation results
+          console.log(`Validating position ${mappedRow.Symbol}:`, {
+            symbol: mappedRow.Symbol,
+            rawGainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
+            rawGainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
+            costBasis: mappedRow['Cost Basis'],
+            marketValue: mappedRow['Mkt Val (Market Value)'],
+            calculatedGainLossPercent,
+            validation: {
+              dollarValueValid: !isNaN(gainLossDollar),
+              percentValueValid: !isNaN(gainLossPercent) && gainLossPercent >= -100 && gainLossPercent <= 100,
+              calculatedPercentMatches: Math.abs(calculatedGainLossPercent - gainLossPercent) < 0.01
+            }
+          });
           
           // Add to totals
           totalValue += mappedRow['Mkt Val (Market Value)'] || 0;

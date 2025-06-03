@@ -1,3 +1,7 @@
+### 0.4.53
+
+- asset allocation debug flags in debugConfig.js
+
 ### 0.4.52
 
 - asset allocation stacked bar charts in portfolio history

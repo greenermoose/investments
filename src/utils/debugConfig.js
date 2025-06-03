@@ -40,6 +40,15 @@ const DEBUG_CONFIG = {
         interactions: false,
         state: false
       }
+    },
+    assetAllocation: {
+      enabled: false,
+      categories: {
+        calculations: false,
+        rendering: false,
+        dataProcessing: false,
+        updates: false
+      }
     }
   }
 };

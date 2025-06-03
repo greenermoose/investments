@@ -1,14 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { formatCurrency } from '../../utils/dataUtils';
-
-// Enable debug logging
-const DEBUG = true;
-const log = (...args) => {
-  if (DEBUG) {
-    console.log('[AssetAllocationChart]', ...args);
-  }
-};
+import { debugLog } from '../../utils/debugConfig';
 
 // Chart colors - carefully chosen to be visually distinct
 const COLORS = [
@@ -25,11 +18,11 @@ const COLORS = [
 ];
 
 const CustomBarTooltip = ({ active, payload, label }) => {
-  log('Tooltip render:', { active, payload, label });
+  debugLog('assetAllocation', 'rendering', 'Tooltip render:', { active, payload, label });
   
   if (active && payload && payload.length) {
     const data = payload[0].payload;
-    log('Tooltip data:', data);
+    debugLog('assetAllocation', 'rendering', 'Tooltip data:', data);
     
     return (
       <div className="bg-white p-3 border border-gray-200 shadow-md rounded">
@@ -48,14 +41,14 @@ const CustomBarTooltip = ({ active, payload, label }) => {
 
 const AssetAllocationChart = ({ data, onSymbolClick }) => {
   useEffect(() => {
-    log('Component mounted');
-    return () => log('Component unmounted');
+    debugLog('assetAllocation', 'rendering', 'Component mounted');
+    return () => debugLog('assetAllocation', 'rendering', 'Component unmounted');
   }, []);
 
   // Transform and validate the data
   const processedData = useMemo(() => {
     if (!data || !Array.isArray(data)) {
-      log('Invalid data format:', data);
+      debugLog('assetAllocation', 'dataProcessing', 'Invalid data format:', data);
       return [];
     }
 
@@ -68,7 +61,7 @@ const AssetAllocationChart = ({ data, onSymbolClick }) => {
       return sum + value;
     }, 0);
 
-    log('Total value:', totalValue);
+    debugLog('assetAllocation', 'calculations', 'Total value:', totalValue);
 
     // Transform data to the required format
     const transformedData = data
@@ -87,11 +80,11 @@ const AssetAllocationChart = ({ data, onSymbolClick }) => {
       .filter(item => item.value > 0) // Remove zero or negative values
       .sort((a, b) => b.value - a.value); // Sort by value descending
 
-    log('Transformed data:', transformedData);
+    debugLog('assetAllocation', 'dataProcessing', 'Transformed data:', transformedData);
     return transformedData;
   }, [data]);
 
-  log('AssetAllocationChart render:', { 
+  debugLog('assetAllocation', 'rendering', 'AssetAllocationChart render:', { 
     dataLength: processedData.length,
     hasData: processedData.length > 0,
     firstItem: processedData[0],
@@ -99,7 +92,7 @@ const AssetAllocationChart = ({ data, onSymbolClick }) => {
   });
 
   if (!processedData.length) {
-    log('No valid data available for chart');
+    debugLog('assetAllocation', 'rendering', 'No valid data available for chart');
     return (
       <div className="bg-gray-50 rounded-lg p-8 text-center">
         <p className="text-gray-500">No asset allocation data available</p>
@@ -109,14 +102,14 @@ const AssetAllocationChart = ({ data, onSymbolClick }) => {
 
   // Show top 10 holdings by default
   const displayData = processedData.slice(0, 10);
-  log('Display data:', {
+  debugLog('assetAllocation', 'rendering', 'Display data:', {
     totalItems: processedData.length,
     displayItems: displayData.length,
     displayData
   });
 
   const handleBarClick = (data) => {
-    log('Bar clicked:', data);
+    debugLog('assetAllocation', 'interactions', 'Bar clicked:', data);
     if (onSymbolClick) {
       onSymbolClick(data.name);
     }
@@ -152,7 +145,7 @@ const AssetAllocationChart = ({ data, onSymbolClick }) => {
               cursor={onSymbolClick ? "pointer" : "default"}
             >
               {displayData.map((entry, index) => {
-                log('Rendering bar:', { entry, index });
+                debugLog('assetAllocation', 'rendering', 'Rendering bar:', { entry, index });
                 return (
                   <Cell 
                     key={`cell-${index}`} 

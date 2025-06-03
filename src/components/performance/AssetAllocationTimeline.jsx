@@ -21,7 +21,8 @@ const AssetAllocationTimeline = ({ snapshots }) => {
   snapshots.forEach(snapshot => {
     const stats = calculatePortfolioStats(snapshot.data);
     stats.assetAllocation.forEach(asset => {
-      allSecurities.add(asset.name);
+      // Use symbol if name is not available
+      allSecurities.add(asset.name || asset.symbol);
     });
   });
 
@@ -75,7 +76,8 @@ const AssetAllocationTimeline = ({ snapshots }) => {
 
       // Add each top security's market value
       topSecurities.forEach(asset => {
-        data[asset.name] = asset.value;
+        const key = asset.name || asset.symbol;
+        data[key] = asset.value;
       });
 
       return data;

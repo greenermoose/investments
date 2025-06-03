@@ -1,3 +1,7 @@
+### 0.4.52
+
+- asset allocation stacked bar charts in portfolio history
+
 ### 0.4.51
 
 - asset allocation chart

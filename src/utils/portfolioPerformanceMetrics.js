@@ -6,96 +6,101 @@
  * @param {Array} portfolioData - Portfolio positions
  * @returns {Object} Portfolio statistics
  */
-export const calculatePortfolioStats = (portfolioData) => {
-  if (!portfolioData || !Array.isArray(portfolioData) || portfolioData.length === 0) {
-    console.log('No portfolio data to calculate stats');
+export function calculatePortfolioStats(portfolioData) {
+  if (!portfolioData || portfolioData.length === 0) {
+    console.warn('calculatePortfolioStats: Empty portfolio data');
     return {
       totalValue: 0,
       totalGain: 0,
-      gainPercent: 0,
+      gainPercentage: 0,
+      totalCost: 0,
       assetAllocation: []
     };
   }
 
-  console.log('Calculating portfolio stats for positions:', {
+  console.log('Processing portfolio positions:', {
     count: portfolioData.length,
     firstPosition: portfolioData[0],
-    marketValueType: typeof portfolioData[0]?.['Mkt Val (Market Value)'],
-    marketValue: portfolioData[0]?.['Mkt Val (Market Value)']
+    marketValueTypes: portfolioData.map(p => ({
+      symbol: p.Symbol,
+      marketValue: p['Market Value'],
+      mktVal: p['Mkt Val (Market Value)'],
+      parsedValue: parseFloat(p['Market Value'] || p['Mkt Val (Market Value)']) || 0
+    }))
   });
 
   let totalValue = 0;
   let totalGain = 0;
   let totalCost = 0;
-  
-  // First pass: calculate totals
-  portfolioData.forEach((position, index) => {
-    const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
-    const gainLossDollar = typeof position['Gain $ (Gain/Loss $)'] === 'number' ? position['Gain $ (Gain/Loss $)'] : 0;
-    const gainLossPercent = typeof position['Gain % (Gain/Loss %)'] === 'number' ? position['Gain % (Gain/Loss %)'] : 0;
-    const cost = typeof position['Cost Basis'] === 'number' ? position['Cost Basis'] : 0;
-    
-    console.log(`Position ${index} (${position.Symbol}) gain/loss calculation:`, {
-      symbol: position.Symbol,
+
+  // Process each position
+  portfolioData.forEach(position => {
+    // Try both possible market value column names
+    const marketValue = parseFloat(position['Market Value'] || position['Mkt Val (Market Value)']) || 0;
+    const costBasis = parseFloat(position['Cost Basis']) || 0;
+    let gainLossDollar = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
+    let gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
+
+    // Calculate missing gain/loss values
+    if (gainLossDollar === 0 && gainLossPercent !== 0 && costBasis !== 0) {
+      // Calculate dollar value from percentage
+      gainLossDollar = (gainLossPercent / 100) * costBasis;
+      console.log(`Calculated dollar value from percentage for ${position.Symbol}:`, {
+        percentage: gainLossPercent,
+        costBasis: costBasis,
+        calculatedDollar: gainLossDollar
+      });
+    } else if (gainLossPercent === 0 && gainLossDollar !== 0 && costBasis !== 0) {
+      // Calculate percentage from dollar value
+      gainLossPercent = (gainLossDollar / costBasis) * 100;
+      console.log(`Calculated percentage from dollar value for ${position.Symbol}:`, {
+        dollar: gainLossDollar,
+        costBasis: costBasis,
+        calculatedPercentage: gainLossPercent
+      });
+    }
+
+    // Log position details
+    console.log(`Processing position ${position.Symbol}:`, {
       marketValue,
       gainLossDollar,
       gainLossPercent,
-      cost,
-      rawGainLossDollar: position['Gain $ (Gain/Loss $)'],
-      rawGainLossPercent: position['Gain % (Gain/Loss %)'],
-      rawCost: position['Cost Basis'],
-      calculatedGainLossPercent: cost > 0 ? (gainLossDollar / cost) * 100 : 0
+      costBasis,
+      calculatedGainPercent: costBasis !== 0 ? (gainLossDollar / costBasis) * 100 : 0
     });
-    
+
     totalValue += marketValue;
     totalGain += gainLossDollar;
-    totalCost += cost;
+    totalCost += costBasis;
   });
-  
+
   // Calculate gain percentage
-  let gainPercent = 0;
-  if (totalCost > 0) {
-    gainPercent = (totalGain / totalCost) * 100;
-  }
-  
-  console.log('Portfolio totals calculation:', {
+  const gainPercentage = totalCost !== 0 ? (totalGain / totalCost) * 100 : 0;
+
+  // Log total calculations
+  console.log('Portfolio totals:', {
     totalValue,
     totalGain,
     totalCost,
-    calculatedGainPercent: gainPercent,
-    gainLossDollarColumn: portfolioData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0),
-    gainLossPercentColumn: portfolioData.reduce((sum, pos) => sum + (pos['Gain % (Gain/Loss %)'] || 0), 0)
+    calculatedGainPercentage: gainPercentage,
+    gainLossSum: portfolioData.reduce((sum, p) => sum + (parseFloat(p['Gain $ (Gain/Loss $)']) || 0), 0),
+    gainPercentSum: portfolioData.reduce((sum, p) => sum + (parseFloat(p['Gain % (Gain/Loss %)']) || 0), 0)
   });
-  
+
   // Calculate asset allocation
-  const assetAllocation = portfolioData
-    .filter(position => {
-      const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
-      const symbol = position.Symbol;
-      return marketValue > 0 && symbol;
-    })
-    .map(position => {
-      const marketValue = position['Mkt Val (Market Value)'] || 0;
-      return {
-        name: position.Symbol,
-        description: position.Description || position.Symbol,
-        value: marketValue,
-        percent: totalValue > 0 ? (marketValue / totalValue) * 100 : 0
-      };
-    })
-    .sort((a, b) => b.value - a.value);
-  
-  const stats = {
+  const assetAllocation = portfolioData.map(position => ({
+    symbol: position.Symbol,
+    allocation: totalValue !== 0 ? (parseFloat(position['Market Value']) / totalValue) * 100 : 0
+  }));
+
+  return {
     totalValue,
     totalGain,
-    gainPercent,
+    gainPercentage,
+    totalCost,
     assetAllocation
   };
-  
-  console.log('Calculated portfolio stats:', stats);
-  
-  return stats;
-};
+}
   
 /**
  * Generate asset allocation data for charts, grouped by symbol

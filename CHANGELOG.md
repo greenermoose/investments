@@ -1,3 +1,7 @@
+### 0.4.49
+
+- gain / loss bug fix, pass 2
+
 ### 0.4.48
 
 - gain / loss bug fix, pass 1

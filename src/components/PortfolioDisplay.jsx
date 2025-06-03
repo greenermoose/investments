@@ -356,11 +356,34 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
                   <td className="table-cell-numeric">
                     {formatValue(position['Cost Basis'], 'currency')}
                   </td>
-                  <td className={typeof position['Gain $ (Gain/Loss $)'] === 'number' && position['Gain $ (Gain/Loss $)'] >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
-                    {formatValue(position['Gain $ (Gain/Loss $)'], 'currency')}
+                  <td className="table-cell-numeric">
+                    {(() => {
+                      const gainLossDollar = position['Gain $ (Gain/Loss $)'];
+                      const gainLossPercent = position['Gain % (Gain/Loss %)'];
+                      const costBasis = position['Cost Basis'];
+                      const calculatedPercent = costBasis > 0 ? (gainLossDollar / costBasis) * 100 : 0;
+                      
+                      console.log(`Displaying gain/loss for ${position.Symbol}:`, {
+                        symbol: position.Symbol,
+                        gainLossDollar,
+                        gainLossPercent,
+                        costBasis,
+                        calculatedPercent,
+                        difference: Math.abs(gainLossPercent - calculatedPercent)
+                      });
+                      
+                      return formatValue(gainLossDollar, 'currency');
+                    })()}
                   </td>
-                  <td className={typeof position['Gain % (Gain/Loss %)'] === 'number' && position['Gain % (Gain/Loss %)'] >= 0 ? 'table-cell-positive' : 'table-cell-negative'}>
-                    {formatValue(position['Gain % (Gain/Loss %)'], 'percent')}
+                  <td className="table-cell-numeric">
+                    {(() => {
+                      const gainLossDollar = position['Gain $ (Gain/Loss $)'];
+                      const gainLossPercent = position['Gain % (Gain/Loss %)'];
+                      const costBasis = position['Cost Basis'];
+                      const calculatedPercent = costBasis > 0 ? (gainLossDollar / costBasis) * 100 : 0;
+                      
+                      return formatValue(gainLossPercent, 'percent');
+                    })()}
                   </td>
                 </tr>
               ))}

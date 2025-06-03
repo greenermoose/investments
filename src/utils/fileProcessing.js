@@ -376,10 +376,26 @@ export const parsePortfolioCSV = (fileContent) => {
               symbol: mappedRow.Symbol,
               marketValue: mappedRow['Mkt Val (Market Value)'],
               marketValueType: typeof mappedRow['Mkt Val (Market Value)'],
+              gainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
+              gainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
+              costBasis: mappedRow['Cost Basis'],
+              calculatedGainLossPercent: mappedRow['Cost Basis'] > 0 ? 
+                (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0,
               rawRow: row,
               mappedRow
             });
           }
+          
+          // Log gain/loss calculations for each position
+          console.log(`Parsing position ${portfolioData.length + 1} (${mappedRow.Symbol}):`, {
+            symbol: mappedRow.Symbol,
+            gainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
+            gainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
+            costBasis: mappedRow['Cost Basis'],
+            marketValue: mappedRow['Mkt Val (Market Value)'],
+            calculatedGainLossPercent: mappedRow['Cost Basis'] > 0 ? 
+              (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0
+          });
           
           portfolioData.push(mappedRow);
         }

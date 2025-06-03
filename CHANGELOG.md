@@ -1,3 +1,7 @@
+### 0.4.47
+
+- fix gain / loss total bug report
+
 ### 0.4.46
 
 - show changes in asset allocation between snapshots

@@ -31,22 +31,24 @@ export const calculatePortfolioStats = (portfolioData) => {
   // First pass: calculate totals
   portfolioData.forEach((position, index) => {
     const marketValue = typeof position['Mkt Val (Market Value)'] === 'number' ? position['Mkt Val (Market Value)'] : 0;
-    const gain = typeof position['Gain $ (Gain/Loss $)'] === 'number' ? position['Gain $ (Gain/Loss $)'] : 0;
+    const gainLossDollar = typeof position['Gain $ (Gain/Loss $)'] === 'number' ? position['Gain $ (Gain/Loss $)'] : 0;
+    const gainLossPercent = typeof position['Gain % (Gain/Loss %)'] === 'number' ? position['Gain % (Gain/Loss %)'] : 0;
     const cost = typeof position['Cost Basis'] === 'number' ? position['Cost Basis'] : 0;
     
-    if (index === 0) {
-      console.log('First position calculation:', {
-        marketValue,
-        gain,
-        cost,
-        rawMarketValue: position['Mkt Val (Market Value)'],
-        rawGain: position['Gain $ (Gain/Loss $)'],
-        rawCost: position['Cost Basis']
-      });
-    }
+    console.log(`Position ${index} (${position.Symbol}) gain/loss calculation:`, {
+      symbol: position.Symbol,
+      marketValue,
+      gainLossDollar,
+      gainLossPercent,
+      cost,
+      rawGainLossDollar: position['Gain $ (Gain/Loss $)'],
+      rawGainLossPercent: position['Gain % (Gain/Loss %)'],
+      rawCost: position['Cost Basis'],
+      calculatedGainLossPercent: cost > 0 ? (gainLossDollar / cost) * 100 : 0
+    });
     
     totalValue += marketValue;
-    totalGain += gain;
+    totalGain += gainLossDollar;
     totalCost += cost;
   });
   
@@ -55,6 +57,15 @@ export const calculatePortfolioStats = (portfolioData) => {
   if (totalCost > 0) {
     gainPercent = (totalGain / totalCost) * 100;
   }
+  
+  console.log('Portfolio totals calculation:', {
+    totalValue,
+    totalGain,
+    totalCost,
+    calculatedGainPercent: gainPercent,
+    gainLossDollarColumn: portfolioData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0),
+    gainLossPercentColumn: portfolioData.reduce((sum, pos) => sum + (pos['Gain % (Gain/Loss %)'] || 0), 0)
+  });
   
   // Calculate asset allocation
   const assetAllocation = portfolioData

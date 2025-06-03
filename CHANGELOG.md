@@ -1,3 +1,7 @@
+### 0.4.54
+
+- set cost basis for tax lots when uploading snapshots
+
 ### 0.4.53
 
 - asset allocation debug flags in debugConfig.js

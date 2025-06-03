@@ -3,7 +3,7 @@
 // Global debug settings
 const DEBUG_CONFIG = {
   // Global debug flag - master switch for all debugging
-  enabled: false,
+  enabled: true,
   
   // Component-specific debug flags
   components: {
@@ -25,12 +25,12 @@ const DEBUG_CONFIG = {
       }
     },
     transactions: {
-      enabled: false,
+      enabled: true,
       categories: {
-        loading: false,
-        processing: false,
-        validation: false,
-        storage: false
+        loading: true,
+        processing: true,
+        validation: true,
+        storage: true
       }
     },
     ui: {

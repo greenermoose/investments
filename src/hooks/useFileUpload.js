@@ -18,6 +18,7 @@ import {
 } from '../utils/portfolioTracker';
 import { detectSymbolChange } from '../utils/symbolMapping';
 import { saveUploadedFile } from '../utils/fileStorage';
+import { createLotsFromSnapshot } from '../utils/lotTracker';
 
 /**
  * File type definitions with validation rules
@@ -453,6 +454,10 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
       // Analyze changes
       const changes = analyzePortfolioChanges(portfolioData, latestSnapshot?.data || []);
 
+      // Check if we have any transaction data for this account
+      const transactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
+      const hasTransactionData = transactions && transactions.length > 0;
+
       // Save portfolio snapshot
       const portfolioId = await portfolioService.savePortfolioSnapshot(
         portfolioData,
@@ -468,6 +473,16 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAcco
         positions: portfolioData.length,
         totalValue: accountTotal?.totalValue
       });
+
+      // If no transaction data exists, create lots from the snapshot
+      if (!hasTransactionData) {
+        console.log('No transaction data found, creating lots from snapshot');
+        const { createdLots, errors } = await createLotsFromSnapshot(portfolioData, confirmedAccountName, snapshotDate);
+        console.log('Created lots from snapshot:', {
+          count: createdLots.length,
+          errors: errors.length
+        });
+      }
 
       // Save the original file
       await saveUploadedFile(

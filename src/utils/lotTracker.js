@@ -3,6 +3,7 @@
 
 import { TransactionCategories, removeDuplicateTransactions } from './transactionEngine';
 import { portfolioService } from '../services/PortfolioService';
+import { debugLog } from './debugConfig';
 
 /**
  * Lot Tracking Methods - How to select which lots to sell first
@@ -279,7 +280,7 @@ export const groupLotsByAcquisitionYear = (lots) => {
  */
 export const processTransactionsIntoLots = async (accountName) => {
   try {
-    console.log(`Processing transactions into lots for account: ${accountName}`);
+    debugLog('transactions', 'processing', `Processing transactions into lots for account: ${accountName}`);
     
     // Get all transactions for the account
     const transactions = await portfolioService.getTransactionsByAccount(accountName);
@@ -306,7 +307,7 @@ export const processTransactionsIntoLots = async (accountName) => {
       errors: [...acquisitionResults.errors, ...dispositionResults.errors]
     };
   } catch (error) {
-    console.error('Error processing transactions into lots:', error);
+    debugLog('transactions', 'errors', 'Error processing transactions into lots:', error);
     throw error;
   }
 };
@@ -360,6 +361,12 @@ const processAcquisitions = async (accountName, transactions, securityMetadata) 
         // Save the lot
         await portfolioService.saveLot(lot);
         createdLots.push(lot);
+        
+        debugLog('transactions', 'lots', `Created lot for ${symbol}:`, {
+          quantity: acquisition.quantity,
+          date: acquisition.date,
+          costBasis: acquisition.quantity * acquisition.price
+        });
       }
       
       // Update security metadata if needed
@@ -369,9 +376,14 @@ const processAcquisitions = async (accountName, transactions, securityMetadata) 
           acquisitionDate: earliestDate,
           description: symbolAcquisitions[0].description || symbol
         });
+        
+        debugLog('transactions', 'metadata', `Updated security metadata for ${symbol}:`, {
+          acquisitionDate: earliestDate,
+          description: symbolAcquisitions[0].description || symbol
+        });
       }
     } catch (error) {
-      console.error(`Error processing acquisitions for ${symbol}:`, error);
+      debugLog('transactions', 'errors', `Error processing acquisitions for ${symbol}:`, error);
       errors.push({
         symbol,
         error: error.message

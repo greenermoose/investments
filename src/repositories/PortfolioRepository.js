@@ -3,6 +3,7 @@
 
 import { BaseRepository } from './BaseRepository';
 import { STORE_NAME_PORTFOLIOS } from '../utils/databaseUtils';
+import { debugLog } from '../utils/debugConfig';
 
 export class PortfolioRepository extends BaseRepository {
   constructor() {
@@ -31,7 +32,7 @@ export class PortfolioRepository extends BaseRepository {
       throw new Error('Invalid date provided');
     }
 
-    console.log('Saving portfolio snapshot:', {
+    debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
       accountName,
       date: date.toISOString(),
       positions: portfolioData.length,
@@ -63,7 +64,7 @@ export class PortfolioRepository extends BaseRepository {
     };
     
     await this.save(portfolio);
-    console.log('Successfully saved portfolio snapshot:', portfolioId);
+    debugLog('portfolio', 'storage', 'Successfully saved portfolio snapshot:', portfolioId);
     return portfolioId;
   }
 
@@ -95,25 +96,13 @@ export class PortfolioRepository extends BaseRepository {
   async getLatestByAccount(accountName) {
     const snapshots = await this.getByAccount(accountName);
     if (!snapshots || snapshots.length === 0) {
-      console.log('No snapshots found for account:', accountName);
+      debugLog('portfolio', 'storage', 'No snapshots found for account:', accountName);
       return null;
     }
     
-    const latest = snapshots.reduce((latest, current) => {
-      const currentDate = new Date(current.date);
-      const latestDate = latest ? new Date(latest.date) : null;
-      return !latestDate || currentDate > latestDate ? current : latest;
-    }, null);
-    
-    console.log('Found latest snapshot:', {
-      accountName,
-      date: latest.date,
-      positions: latest.data.length,
-      firstPosition: latest.data[0],
-      accountTotal: latest.accountTotal
-    });
-    
-    return latest;
+    const latestSnapshot = snapshots[snapshots.length - 1];
+    debugLog('portfolio', 'storage', 'Found latest snapshot:', latestSnapshot);
+    return latestSnapshot;
   }
 
   /**

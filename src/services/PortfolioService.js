@@ -10,6 +10,7 @@ import { AccountRepository } from '../repositories/AccountRepository';
 import { ManualAdjustmentRepository } from '../repositories/ManualAdjustmentRepository';
 import { FileRepository } from '../repositories/FileRepository';
 import { TransactionMetadataRepository } from '../repositories/TransactionMetadataRepository';
+import { debugLog } from '../utils/debugConfig';
 
 class PortfolioService {
   constructor() {
@@ -191,10 +192,10 @@ class PortfolioService {
    */
   async getTransactionsByAccount(account) {
     try {
-      console.log(`PortfolioService: Getting transactions for account: ${account}`);
+      debugLog('transactions', 'storage', `Getting transactions for account: ${account}`);
       return await this.transactionRepo.getByAccount(account);
     } catch (error) {
-      console.error('PortfolioService: Error getting transactions:', error);
+      debugLog('transactions', 'storage', 'Error getting transactions:', error);
       throw error;
     }
   }
@@ -228,10 +229,10 @@ class PortfolioService {
    */
   async bulkMergeTransactions(transactions, account) {
     try {
-      console.log(`PortfolioService: Bulk merging ${transactions.length} transactions for account: ${account}`);
+      debugLog('transactions', 'processing', `Bulk merging ${transactions.length} transactions for account: ${account}`);
       return await this.transactionRepo.bulkMerge(transactions, account);
     } catch (error) {
-      console.error('PortfolioService: Error bulk merging transactions:', error);
+      debugLog('transactions', 'processing', 'Error bulk merging transactions:', error);
       throw error;
     }
   }

@@ -1,6 +1,8 @@
 // utils/portfolioPerformanceMetrics.js
 // Handles performance metrics, return calculations, and visualization data
 
+import { debugLog } from './debugConfig';
+
 /**
  * Calculate portfolio statistics for display and analysis
  * @param {Array} portfolioData - Portfolio positions
@@ -8,7 +10,7 @@
  */
 export function calculatePortfolioStats(portfolioData) {
   if (!portfolioData || portfolioData.length === 0) {
-    console.warn('calculatePortfolioStats: Empty portfolio data');
+    debugLog('portfolio', 'processing', 'Empty portfolio data');
     return {
       totalValue: 0,
       totalGain: 0,
@@ -18,7 +20,7 @@ export function calculatePortfolioStats(portfolioData) {
     };
   }
 
-  console.log('Processing portfolio positions:', {
+  debugLog('portfolio', 'processing', 'Processing portfolio positions:', {
     count: portfolioData.length,
     firstPosition: portfolioData[0],
     marketValueTypes: portfolioData.map(p => ({
@@ -45,7 +47,7 @@ export function calculatePortfolioStats(portfolioData) {
     if (gainLossDollar === 0 && gainLossPercent !== 0 && costBasis !== 0) {
       // Calculate dollar value from percentage
       gainLossDollar = (gainLossPercent / 100) * costBasis;
-      console.log(`Calculated dollar value from percentage for ${position.Symbol}:`, {
+      debugLog('portfolio', 'calculations', `Calculated dollar value from percentage for ${position.Symbol}:`, {
         percentage: gainLossPercent,
         costBasis: costBasis,
         calculatedDollar: gainLossDollar
@@ -53,7 +55,7 @@ export function calculatePortfolioStats(portfolioData) {
     } else if (gainLossPercent === 0 && gainLossDollar !== 0 && costBasis !== 0) {
       // Calculate percentage from dollar value
       gainLossPercent = (gainLossDollar / costBasis) * 100;
-      console.log(`Calculated percentage from dollar value for ${position.Symbol}:`, {
+      debugLog('portfolio', 'calculations', `Calculated percentage from dollar value for ${position.Symbol}:`, {
         dollar: gainLossDollar,
         costBasis: costBasis,
         calculatedPercentage: gainLossPercent
@@ -61,7 +63,7 @@ export function calculatePortfolioStats(portfolioData) {
     }
 
     // Log position details
-    console.log(`Processing position ${position.Symbol}:`, {
+    debugLog('portfolio', 'positions', `Processing position ${position.Symbol}:`, {
       marketValue,
       gainLossDollar,
       gainLossPercent,
@@ -78,7 +80,7 @@ export function calculatePortfolioStats(portfolioData) {
   const gainPercentage = totalCost !== 0 ? (totalGain / totalCost) * 100 : 0;
 
   // Log total calculations
-  console.log('Portfolio totals:', {
+  debugLog('portfolio', 'totals', 'Portfolio totals:', {
     totalValue,
     totalGain,
     totalCost,

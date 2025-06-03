@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { formatDate, formatCurrency } from '../utils/dataUtils';
 import { TransactionCategories } from '../utils/transactionParser';
+import { debugLog } from '../utils/debugConfig';
 
 const TransactionTimeline = ({ 
   transactions = [], 
@@ -21,13 +22,13 @@ const TransactionTimeline = ({
   });
 
   useEffect(() => {
-    console.log('TransactionTimeline: Component mounted');
-    console.log('TransactionTimeline: Received transactions array:', transactions);
-    console.log('TransactionTimeline: Transaction count:', transactions?.length || 0);
+    debugLog('transactions', 'timeline', 'Component mounted');
+    debugLog('transactions', 'timeline', 'Received transactions array:', transactions);
+    debugLog('transactions', 'timeline', 'Transaction count:', transactions?.length || 0);
     
     if (transactions && transactions.length > 0) {
-      console.log('TransactionTimeline: First transaction:', transactions[0]);
-      console.log('TransactionTimeline: Last transaction:', transactions[transactions.length - 1]);
+      debugLog('transactions', 'timeline', 'First transaction:', transactions[0]);
+      debugLog('transactions', 'timeline', 'Last transaction:', transactions[transactions.length - 1]);
     }
 
     // Group transactions by date
@@ -53,22 +54,24 @@ const TransactionTimeline = ({
 
   // Group transactions by date
   const groupTransactionsByDate = (transactionsArray) => {
-    console.log('TransactionTimeline: Grouping transactions by date');
+    debugLog('transactions', 'timeline', 'Grouping transactions by date');
     if (!transactionsArray || !Array.isArray(transactionsArray)) {
-      console.warn('TransactionTimeline: Transactions is not an array', transactionsArray);
+      debugLog('transactions', 'timeline', 'Transactions is not an array', transactionsArray);
       return {};
     }
     
     // Debug transaction dates
     transactionsArray.slice(0, 3).forEach((t, i) => {
-      console.log(`TransactionTimeline: Transaction ${i} date:`, t.date, 
-                  'instanceof Date:', t.date instanceof Date,
-                  'typeof:', typeof t.date);
+      debugLog('transactions', 'timeline', `Transaction ${i} date:`, {
+        date: t.date,
+        isDate: t.date instanceof Date,
+        type: typeof t.date
+      });
     });
     
     const grouped = transactionsArray.reduce((acc, transaction) => {
       if (!transaction.date) {
-        console.warn('TransactionTimeline: Transaction missing date:', transaction);
+        debugLog('transactions', 'timeline', 'Transaction missing date:', transaction);
         return acc;
       }
       
@@ -81,12 +84,12 @@ const TransactionTimeline = ({
       } else if (typeof transaction.date === 'number') {
         dateObject = new Date(transaction.date);
       } else {
-        console.warn('TransactionTimeline: Unrecognized date format:', transaction.date);
+        debugLog('transactions', 'timeline', 'Unrecognized date format:', transaction.date);
         return acc;
       }
       
       if (isNaN(dateObject.getTime())) {
-        console.warn('TransactionTimeline: Invalid date:', transaction.date);
+        debugLog('transactions', 'timeline', 'Invalid date:', transaction.date);
         return acc;
       }
       
@@ -104,7 +107,9 @@ const TransactionTimeline = ({
     });
     
     // Log some grouped data stats
-    console.log('TransactionTimeline: Grouped into', Object.keys(grouped).length, 'date groups');
+    debugLog('transactions', 'timeline', 'Grouped into date groups', {
+      groupCount: Object.keys(grouped).length
+    });
     
     return grouped;
   };

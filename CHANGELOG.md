@@ -1,3 +1,7 @@
+### 0.4.50
+
+- add debug flags
+
 ### 0.4.49
 
 - gain / loss bug fix, pass 2

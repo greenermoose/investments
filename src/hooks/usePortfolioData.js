@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
 import { portfolioService } from '../services/PortfolioService';
+import { debugLog } from '../utils/debugConfig';
 
 export const usePortfolioData = (selectedAccount) => {
   const [portfolioData, setPortfolioData] = useState([]);
@@ -94,6 +95,11 @@ export const usePortfolioData = (selectedAccount) => {
   };
 
   const loadAccountPortfolio = async (accountName) => {
+    debugLog('portfolio', 'loading', 'Loading account portfolio:', {
+      accountName,
+      timestamp: new Date().toISOString()
+    });
+    
     try {
       setIsLoading(true);
       setError(null);
@@ -140,7 +146,7 @@ export const usePortfolioData = (selectedAccount) => {
   useEffect(() => {
     if (portfolioData && Array.isArray(portfolioData) && portfolioData.length > 0) {
       const stats = calculatePortfolioStats(portfolioData);
-      console.log('Calculated portfolio stats:', stats);
+      debugLog('portfolio', 'calculations', 'Calculated portfolio stats:', stats);
       setPortfolioStats(stats);
     } else {
       setPortfolioStats({
@@ -158,7 +164,7 @@ export const usePortfolioData = (selectedAccount) => {
     // Ensure data is always an array
     const portfolioData = Array.isArray(data) ? data : [];
     
-    console.log('Raw portfolio data:', {
+    debugLog('portfolio', 'loading', 'Raw portfolio data:', {
       dataLength: portfolioData.length,
       firstPosition: portfolioData[0],
       accountTotal,
@@ -173,7 +179,7 @@ export const usePortfolioData = (selectedAccount) => {
       assetAllocation: calculatePortfolioStats(portfolioData).assetAllocation
     } : calculatePortfolioStats(portfolioData);
     
-    console.log('Loading portfolio:', {
+    debugLog('portfolio', 'loading', 'Loading portfolio:', {
       accountName,
       date,
       positions: portfolioData.length,
@@ -190,7 +196,7 @@ export const usePortfolioData = (selectedAccount) => {
       setPortfolioStats(stats);
       setIsDataLoaded(true);
     } else {
-      console.warn('No valid portfolio data to load');
+      debugLog('portfolio', 'loading', 'No valid portfolio data to load');
       setPortfolioData([]);
       setCurrentAccount('');
       setPortfolioDate(null);

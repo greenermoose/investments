@@ -1,6 +1,7 @@
 // utils/fileProcessing.js revision: 1
 
 import Papa from 'papaparse';
+import { debugLog } from './debugConfig';
 
 /**
  * File Type Constants
@@ -253,7 +254,7 @@ export const parsePortfolioCSV = (fileContent) => {
     }
     
     const lines = fileContent.split('\n');
-    console.log('First few lines of file:', lines.slice(0, 5));
+    debugLog('files', 'parsing', 'First few lines of file:', lines.slice(0, 5));
     
     // Check if we have enough lines
     if (lines.length < 3) {
@@ -262,11 +263,11 @@ export const parsePortfolioCSV = (fileContent) => {
     
     // Extract date from the first row
     let portfolioDate = extractDateFromAccountInfo(lines[0]);
-    console.log('Extracted portfolio date:', portfolioDate);
+    debugLog('files', 'parsing', 'Extracted portfolio date:', portfolioDate);
     
     // Extract account name from CSV content
     const csvAccountName = extractAccountNameFromCSV(fileContent);
-    console.log('Extracted account name from CSV:', csvAccountName);
+    debugLog('files', 'parsing', 'Extracted account name from CSV:', csvAccountName);
     
     // If first line doesn't have date info, it might be in a different format
     if (!portfolioDate) {
@@ -274,7 +275,7 @@ export const parsePortfolioCSV = (fileContent) => {
       const dateMatch = lines[0].match(/as of (.*?)[,"]/);
       if (dateMatch) {
         portfolioDate = new Date(dateMatch[1]);
-        console.log('Parsed date from filename format:', portfolioDate);
+        debugLog('files', 'parsing', 'Parsed date from filename format:', portfolioDate);
       }
     }
     
@@ -284,11 +285,11 @@ export const parsePortfolioCSV = (fileContent) => {
     
     for (let i = 0; i < Math.min(10, lines.length); i++) {
       const possibleHeaderLine = lines[i];
-      console.log(`Checking line ${i} for headers:`, possibleHeaderLine);
+      debugLog('files', 'parsing', `Checking line ${i} for headers:`, possibleHeaderLine);
       
       if (possibleHeaderLine.includes('"Symbol"') || possibleHeaderLine.includes('Symbol')) {
         headerRowIndex = i;
-        console.log(`Found header row at index ${i}`);
+        debugLog('files', 'parsing', `Found header row at index ${i}`);
         
         // Parse the header line with Papa Parse
         const parsed = Papa.parse(possibleHeaderLine, {
@@ -299,7 +300,7 @@ export const parsePortfolioCSV = (fileContent) => {
         
         if (parsed.data && parsed.data[0]) {
           columnHeaders = parsed.data[0].map(header => header.trim());
-          console.log('Parsed column headers:', columnHeaders);
+          debugLog('files', 'parsing', 'Parsed column headers:', columnHeaders);
         }
         break;
       }
@@ -354,12 +355,14 @@ export const parsePortfolioCSV = (fileContent) => {
             totalGain: mappedRow['Gain $ (Gain/Loss $)'] || 0,
             gainPercent: mappedRow['Gain % (Gain/Loss %)'] || 0
           };
-        } else if (mappedRow.Symbol && 
-                  mappedRow.Symbol !== 'Cash & Cash Investments' && 
-                  mappedRow.Symbol !== 'Account Total' &&
-                  mappedRow.Symbol !== 'Cash and Money Market' &&
-                  mappedRow.Symbol !== 'Total' &&
-                  mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
+        }
+        
+        // Only include valid positions
+        if (mappedRow.Symbol !== 'Cash & Cash Investments' && 
+            mappedRow.Symbol !== 'Account Total' &&
+            mappedRow.Symbol !== 'Cash and Money Market' &&
+            mappedRow.Symbol !== 'Total' &&
+            mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
           // Ensure all required fields are present and valid
           if (!mappedRow['Qty (Quantity)'] || isNaN(mappedRow['Qty (Quantity)'])) {
             mappedRow['Qty (Quantity)'] = 0;
@@ -374,7 +377,7 @@ export const parsePortfolioCSV = (fileContent) => {
           // Validate gain/loss dollar value
           const gainLossDollar = parseFloat(mappedRow['Gain $ (Gain/Loss $)']);
           if (isNaN(gainLossDollar)) {
-            console.warn(`Invalid gain/loss dollar value for ${mappedRow.Symbol}:`, mappedRow['Gain $ (Gain/Loss $)']);
+            debugLog('files', 'validation', `Invalid gain/loss dollar value for ${mappedRow.Symbol}:`, mappedRow['Gain $ (Gain/Loss $)']);
             mappedRow['Gain $ (Gain/Loss $)'] = 0;
           } else {
             mappedRow['Gain $ (Gain/Loss $)'] = gainLossDollar;
@@ -383,7 +386,7 @@ export const parsePortfolioCSV = (fileContent) => {
           // Validate gain/loss percentage value
           const gainLossPercent = parseFloat(mappedRow['Gain % (Gain/Loss %)']);
           if (isNaN(gainLossPercent) || gainLossPercent < -100 || gainLossPercent > 100) {
-            console.warn(`Invalid gain/loss percentage value for ${mappedRow.Symbol}:`, mappedRow['Gain % (Gain/Loss %)']);
+            debugLog('files', 'validation', `Invalid gain/loss percentage value for ${mappedRow.Symbol}:`, mappedRow['Gain % (Gain/Loss %)']);
             mappedRow['Gain % (Gain/Loss %)'] = 0;
           } else {
             mappedRow['Gain % (Gain/Loss %)'] = gainLossPercent;
@@ -394,7 +397,7 @@ export const parsePortfolioCSV = (fileContent) => {
             (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0;
 
           // Log validation results
-          console.log(`Validating position ${mappedRow.Symbol}:`, {
+          debugLog('files', 'validation', `Validating position ${mappedRow.Symbol}:`, {
             symbol: mappedRow.Symbol,
             rawGainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
             rawGainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
@@ -413,7 +416,7 @@ export const parsePortfolioCSV = (fileContent) => {
           totalGain += mappedRow['Gain $ (Gain/Loss $)'] || 0;
           
           if (portfolioData.length === 0) {
-            console.log('First position parsed:', {
+            debugLog('files', 'parsing', 'First position parsed:', {
               symbol: mappedRow.Symbol,
               marketValue: mappedRow['Mkt Val (Market Value)'],
               marketValueType: typeof mappedRow['Mkt Val (Market Value)'],
@@ -428,7 +431,7 @@ export const parsePortfolioCSV = (fileContent) => {
           }
           
           // Log gain/loss calculations for each position
-          console.log(`Parsing position ${portfolioData.length + 1} (${mappedRow.Symbol}):`, {
+          debugLog('files', 'calculations', `Parsing position ${portfolioData.length + 1} (${mappedRow.Symbol}):`, {
             symbol: mappedRow.Symbol,
             gainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
             gainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
@@ -441,7 +444,7 @@ export const parsePortfolioCSV = (fileContent) => {
           portfolioData.push(mappedRow);
         }
       } catch (rowError) {
-        console.warn(`Error parsing row ${i}:`, rowError.message);
+        debugLog('files', 'errors', `Error parsing row ${i}:`, rowError.message);
         continue;
       }
     }
@@ -459,7 +462,7 @@ export const parsePortfolioCSV = (fileContent) => {
       };
     }
     
-    console.log('Processed portfolio data:', {
+    debugLog('files', 'summary', 'Processed portfolio data:', {
       positions: portfolioData.length,
       accountTotal,
       samplePosition: portfolioData[0]
@@ -467,7 +470,7 @@ export const parsePortfolioCSV = (fileContent) => {
     
     return { portfolioData, portfolioDate, accountTotal };
   } catch (error) {
-    console.error('Error parsing CSV:', error);
+    debugLog('files', 'errors', 'Error parsing CSV:', error);
     throw new Error(`Failed to parse the portfolio CSV data: ${error.message}`);
   }
 };

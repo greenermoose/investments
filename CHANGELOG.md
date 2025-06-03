@@ -1,3 +1,7 @@
+### 0.4.57
+
+- storage manager display improvement
+
 ### 0.4.56
 
 - Handle slight variations in snapshots

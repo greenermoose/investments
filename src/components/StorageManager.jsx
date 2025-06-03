@@ -285,6 +285,12 @@ const StorageManager = ({ onDataChange }) => {
         >
           Backup & Restore
         </button>
+        <button
+          className={activeSection === 'debug' ? 'tab-active' : 'tab'}
+          onClick={() => setActiveSection('debug')}
+        >
+          Debug
+        </button>
       </div>
     );
   };
@@ -369,6 +375,60 @@ const StorageManager = ({ onDataChange }) => {
     );
   };
 
+  const renderDebugSection = () => {
+    return (
+      <div className="debug-section">
+        <div className="section-header">
+          <h3 className="section-title">Database Diagnostics</h3>
+        </div>
+        
+        <div className="debug-content">
+          <DatabaseDebugger />
+        </div>
+
+        {activeSection === 'accounts' && allTransactions.length > 0 && (
+          <div className="mt-6">
+            <h3 className="text-lg font-medium mb-2">Transaction Debug Information</h3>
+            <p className="text-sm text-gray-600">
+              Total transactions found: {allTransactions.length}
+            </p>
+            {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && (
+              <div className="alert alert-warning">
+                <p>Warning: {allTransactions.filter(t => !t.account || t.account === 'Unknown').length} transactions have no account assignment.</p>
+              </div>
+            )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div>
+                <h4 className="text-md font-medium mb-2">Account Distribution</h4>
+                <ul className="list-disc pl-5">
+                  {Object.entries(allTransactions.reduce((acc, tx) => {
+                    const account = tx.account || 'Unknown';
+                    acc[account] = (acc[account] || 0) + 1;
+                    return acc;
+                  }, {})).map(([account, count]) => (
+                    <li key={account}>{account}: {count} transactions</li>
+                  ))}
+                </ul>
+              </div>
+              {allTransactions.length > 0 && (
+                <div>
+                  <h4 className="text-md font-medium mb-2">Sample Transaction</h4>
+                  <div className="bg-gray-50 p-4 rounded overflow-auto max-h-40 text-sm font-mono">
+                    ID: {allTransactions[0].id || 'N/A'}<br />
+                    Account: {allTransactions[0].account || 'Not set'}<br />
+                    Symbol: {allTransactions[0].symbol || 'N/A'}<br />
+                    Action: {allTransactions[0].action || 'N/A'}<br />
+                    Date: {allTransactions[0].date ? formatDate(allTransactions[0].date) : 'N/A'}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   if (isLoading && accounts.length === 0 && allTransactions.length === 0) {
     return (
       <div className="card">
@@ -406,8 +466,6 @@ const StorageManager = ({ onDataChange }) => {
         </div>
       )}
       
-      <div>Accounts: {storageStats.accounts || 0}, Snapshots: {storageStats.totalSnapshots || 0}, Transactions: {storageStats.totalTransactions || 0}</div>
-      
       {renderTabNavigation()}
       
       {activeSection === 'files' && (
@@ -418,50 +476,7 @@ const StorageManager = ({ onDataChange }) => {
       
       {activeSection === 'backup' && ( <BackupManager /> ) }
       
-      {activeSection === 'accounts' && allTransactions.length > 0 && (
-        <div className="mt-6">
-          <h3 className="text-lg font-medium mb-2">Transaction Debug Information</h3>
-          <p className="text-sm text-gray-600">
-            Total transactions found: {allTransactions.length}
-          </p>
-          {allTransactions.filter(t => !t.account || t.account === 'Unknown').length > 0 && (
-            <div className="alert alert-warning">
-              <p>Warning: {allTransactions.filter(t => !t.account || t.account === 'Unknown').length} transactions have no account assignment.</p>
-            </div>
-          )}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div>
-              <h4 className="text-md font-medium mb-2">Account Distribution</h4>
-              <ul className="list-disc pl-5">
-                {Object.entries(allTransactions.reduce((acc, tx) => {
-                  const account = tx.account || 'Unknown';
-                  acc[account] = (acc[account] || 0) + 1;
-                  return acc;
-                }, {})).map(([account, count]) => (
-                  <li key={account}>{account}: {count} transactions</li>
-                ))}
-              </ul>
-            </div>
-            {allTransactions.length > 0 && (
-              <div>
-                <h4 className="text-md font-medium mb-2">Sample Transaction</h4>
-                <div className="bg-gray-50 p-4 rounded overflow-auto max-h-40 text-sm font-mono">
-                  ID: {allTransactions[0].id || 'N/A'}<br />
-                  Account: {allTransactions[0].account || 'Not set'}<br />
-                  Symbol: {allTransactions[0].symbol || 'N/A'}<br />
-                  Action: {allTransactions[0].action || 'N/A'}<br />
-                  Date: {allTransactions[0].date ? formatDate(allTransactions[0].date) : 'N/A'}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-      
-      <div className="mt-8">
-        <h3 className="text-lg font-semibold mb-4">Database Diagnostics</h3>
-        <DatabaseDebugger />
-      </div>
+      {activeSection === 'debug' && renderDebugSection()}
 
       <div className="alert alert-info mt-6">
         <h3 className="font-medium mb-2">About Local Storage</h3>

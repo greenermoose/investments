@@ -20,11 +20,9 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
   const [files, setFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [sortConfig, setSortConfig] = useState({ key: 'uploadDate', direction: 'desc' });
-  const [filterType, setFilterType] = useState('all');
-  const [filterAccount, setFilterAccount] = useState('');
-  const [uniqueAccounts, setUniqueAccounts] = useState([]);
+  const [sortConfig, setSortConfig] = useState({ key: 'account', direction: 'asc' });
   const [selectedFile, setSelectedFile] = useState(null);
+  const [showFileInfo, setShowFileInfo] = useState(true);
   
   // Modals
   const [deleteModal, setDeleteModal] = useState({ isOpen: false, fileId: null });
@@ -50,10 +48,6 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
       setIsLoading(true);
       const allFiles = await getAllFiles();
       setFiles(allFiles);
-      
-      // Extract unique accounts for filtering
-      const accounts = [...new Set(allFiles.map(file => file.account))];
-      setUniqueAccounts(accounts);
       
       setIsLoading(false);
     } catch (err) {
@@ -174,48 +168,34 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
     );
   };
   
-  // Get sorted and filtered files
-  const getSortedFilteredFiles = () => {
-    return [...files]
-      .filter(file => {
-        // Filter by type
-        if (filterType !== 'all' && file.fileType !== filterType) {
-          return false;
-        }
+  // Get sorted files
+  const getSortedFiles = () => {
+    return [...files].sort((a, b) => {
+      // Handle null values
+      if (!a[sortConfig.key]) return 1;
+      if (!b[sortConfig.key]) return -1;
+      
+      // Sort dates
+      if (sortConfig.key === 'fileDate') {
+        const dateA = new Date(a[sortConfig.key]);
+        const dateB = new Date(b[sortConfig.key]);
         
-        // Filter by account
-        if (filterAccount && file.account !== filterAccount) {
-          return false;
-        }
-        
-        return true;
-      })
-      .sort((a, b) => {
-        // Handle null values
-        if (!a[sortConfig.key]) return 1;
-        if (!b[sortConfig.key]) return -1;
-        
-        // Sort dates
-        if (sortConfig.key === 'uploadDate' || sortConfig.key === 'fileDate' || sortConfig.key === 'lastAccessed') {
-          const dateA = new Date(a[sortConfig.key]);
-          const dateB = new Date(b[sortConfig.key]);
-          
-          return sortConfig.direction === 'asc' 
-            ? dateA - dateB 
-            : dateB - dateA;
-        }
-        
-        // Sort strings
-        const aValue = a[sortConfig.key].toString().toLowerCase();
-        const bValue = b[sortConfig.key].toString().toLowerCase();
-        
-        return sortConfig.direction === 'asc'
-          ? aValue.localeCompare(bValue)
-          : bValue.localeCompare(aValue);
-      });
+        return sortConfig.direction === 'asc' 
+          ? dateA - dateB 
+          : dateB - dateA;
+      }
+      
+      // Sort strings
+      const aValue = a[sortConfig.key].toString().toLowerCase();
+      const bValue = b[sortConfig.key].toString().toLowerCase();
+      
+      return sortConfig.direction === 'asc'
+        ? aValue.localeCompare(bValue)
+        : bValue.localeCompare(aValue);
+    });
   };
 
-  const sortedFilteredFiles = getSortedFilteredFiles();
+  const sortedFiles = getSortedFiles();
 
   return (
     <div className="file-manager-container">
@@ -235,40 +215,6 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
         <MissingFilesAlert missingFiles={missingFiles} onClearAlert={() => setMissingFiles([])} />
       )}
       
-      {/* Filters */}
-      <div className="file-manager-filters">
-        <div className="filter-group">
-          <label className="filter-label">
-            File Type
-          </label>
-          <select
-            value={filterType}
-            onChange={(e) => setFilterType(e.target.value)}
-            className="filter-select"
-          >
-            <option value="all">All Types</option>
-            <option value="csv">Portfolio CSV</option>
-            <option value="json">Transaction JSON</option>
-          </select>
-        </div>
-        
-        <div className="filter-group">
-          <label className="filter-label">
-            Account
-          </label>
-          <select
-            value={filterAccount}
-            onChange={(e) => setFilterAccount(e.target.value)}
-            className="filter-select"
-          >
-            <option value="">All Accounts</option>
-            {uniqueAccounts.map(account => (
-              <option key={account} value={account}>{account}</option>
-            ))}
-          </select>
-        </div>
-      </div>
-      
       {/* Error message */}
       {error && (
         <div className="alert alert-error">
@@ -281,15 +227,6 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
         <table className="data-table">
           <thead className="table-header">
             <tr>
-              <th className="table-header-cell">
-                Type
-              </th>
-              <th 
-                className="table-header-cell-sortable"
-                onClick={() => requestSort('filename')}
-              >
-                Filename {sortConfig.key === 'filename' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
-              </th>
               <th 
                 className="table-header-cell-sortable"
                 onClick={() => requestSort('account')}
@@ -298,18 +235,15 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
               </th>
               <th 
                 className="table-header-cell-sortable"
-                onClick={() => requestSort('fileDate')}
+                onClick={() => requestSort('fileType')}
               >
-                File Date {sortConfig.key === 'fileDate' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
+                Type {sortConfig.key === 'fileType' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
               <th 
                 className="table-header-cell-sortable"
-                onClick={() => requestSort('uploadDate')}
+                onClick={() => requestSort('fileDate')}
               >
-                Upload Date {sortConfig.key === 'uploadDate' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
-              </th>
-              <th className="table-header-cell">
-                Size
+                Date {sortConfig.key === 'fileDate' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
               </th>
               <th className="table-header-cell">
                 Status
@@ -322,22 +256,25 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
           <tbody className="table-body">
             {isLoading ? (
               <tr>
-                <td colSpan="8" className="table-cell-loading">
+                <td colSpan="5" className="table-cell-loading">
                   <div className="loading-indicator">
                     <div className="loading-spinner"></div>
                     <span>Loading files...</span>
                   </div>
                 </td>
               </tr>
-            ) : sortedFilteredFiles.length === 0 ? (
+            ) : sortedFiles.length === 0 ? (
               <tr>
-                <td colSpan="8" className="table-cell-empty">
+                <td colSpan="5" className="table-cell-empty">
                   No files found. Upload some files to get started.
                 </td>
               </tr>
             ) : (
-              sortedFilteredFiles.map(file => (
+              sortedFiles.map(file => (
                 <tr key={file.id} className="table-row">
+                  <td className="table-cell">
+                    {file.account}
+                  </td>
                   <td className="table-cell">
                     <div className="file-type-container">
                       {getFileTypeIcon(file.fileType)}
@@ -347,19 +284,7 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
                     </div>
                   </td>
                   <td className="table-cell">
-                    {file.filename}
-                  </td>
-                  <td className="table-cell">
-                    {file.account}
-                  </td>
-                  <td className="table-cell">
                     {file.fileDate ? formatDate(file.fileDate) : 'N/A'}
-                  </td>
-                  <td className="table-cell">
-                    {formatDate(file.uploadDate)}
-                  </td>
-                  <td className="table-cell">
-                    {formatFileSize(file.fileSize)}
                   </td>
                   <td className="table-cell">
                     {getProcessedStatusBadge(file)}
@@ -372,6 +297,7 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
                         title="View file details"
                       >
                         <Eye className="action-icon" />
+                        <span className="action-label">View</span>
                       </button>
                       {!file.processed && (
                         <button
@@ -380,6 +306,7 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
                           title="Process file"
                         >
                           <RefreshCw className="action-icon" />
+                          <span className="action-label">Process</span>
                         </button>
                       )}
                       <button
@@ -388,6 +315,7 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
                         title="Delete file"
                       >
                         <Trash2 className="action-icon" />
+                        <span className="action-label">Delete</span>
                       </button>
                     </div>
                   </td>
@@ -414,16 +342,40 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
         </div>
         <div className="stat-card stat-card-warning">
           <p className="stat-label">Accounts</p>
-          <p className="stat-value">{uniqueAccounts.length}</p>
+          <p className="stat-value">{[...new Set(files.map(f => f.account))].length}</p>
         </div>
       </div>
       
       {/* File Details Modal */}
       {selectedFile && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content modal-content-large">
             <div className="modal-header">
-              <h2 className="modal-title">File Details</h2>
+              <div className="modal-title-container">
+                <div className="modal-title-row">
+                  <button
+                    onClick={() => setShowFileInfo(!showFileInfo)}
+                    className="button button-secondary button-with-icon"
+                    title={showFileInfo ? "Hide file information" : "Show file information"}
+                  >
+                    <svg className="button-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    {showFileInfo ? "Hide Info" : "Show Info"}
+                  </button>
+                  <h2 className="modal-title">File Details</h2>
+                </div>
+                <div className="file-info">
+                  <div className="file-info-item">
+                    <span className="file-info-label">Filename:</span>
+                    <span className="file-info-value">{selectedFile.filename}</span>
+                  </div>
+                  <div className="file-info-item">
+                    <span className="file-info-label">Size:</span>
+                    <span className="file-info-value">{formatFileSize(selectedFile.fileSize)}</span>
+                  </div>
+                </div>
+              </div>
               <button
                 onClick={() => setSelectedFile(null)}
                 className="modal-close"
@@ -435,27 +387,71 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
             </div>
             
             <div className="file-details">
-              <div className="file-details-header">
-                {getFileTypeIcon(selectedFile.fileType)}
-                <span className="file-name">{selectedFile.filename}</span>
-              </div>
-              <p className="file-meta">Account: {selectedFile.account}</p>
-              <p className="file-meta">
-                Uploaded: {formatDate(selectedFile.uploadDate)}
-              </p>
-              {selectedFile.fileDate && (
-                <p className="file-meta">
-                  File Date: {formatDate(selectedFile.fileDate)}
-                </p>
-              )}
-              <p className="file-meta">Size: {formatFileSize(selectedFile.fileSize)}</p>
-            </div>
-            
-            <div className="file-preview-container">
-              <h3 className="file-preview-title">File Preview</h3>
-              <div className="file-preview">
-                {selectedFile.content.slice(0, 1000)}
-                {selectedFile.content.length > 1000 && '...'}
+              <div className={`file-details-grid ${!showFileInfo ? 'file-details-grid-no-sidebar' : ''}`}>
+                {showFileInfo && (
+                  <div className="file-details-sidebar">
+                    <div className="file-details-section">
+                      <h3 className="file-details-section-title">File Information</h3>
+                      <div className="file-details-content">
+                        <div className="file-details-item">
+                          <span className="file-details-label">Account:</span>
+                          <span className="file-details-value">{selectedFile.account}</span>
+                        </div>
+                        <div className="file-details-item">
+                          <span className="file-details-label">Type:</span>
+                          <span className="file-details-value">
+                            <div className="file-type-container">
+                              {getFileTypeIcon(selectedFile.fileType)}
+                              <span className="file-type-label">
+                                {selectedFile.fileType.toUpperCase()}
+                              </span>
+                            </div>
+                          </span>
+                        </div>
+                        <div className="file-details-item">
+                          <span className="file-details-label">Uploaded:</span>
+                          <span className="file-details-value">{formatDate(selectedFile.uploadDate)}</span>
+                        </div>
+                        {selectedFile.fileDate && (
+                          <div className="file-details-item">
+                            <span className="file-details-label">File Date:</span>
+                            <span className="file-details-value">{formatDate(selectedFile.fileDate)}</span>
+                          </div>
+                        )}
+                        <div className="file-details-item">
+                          <span className="file-details-label">Status:</span>
+                          <span className="file-details-value">
+                            {getProcessedStatusBadge(selectedFile)}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
+                <div className="file-preview-container">
+                  <div className="file-preview-grid">
+                    <div className="file-preview-section">
+                      <h3 className="file-preview-title">Raw Data</h3>
+                      <div className="file-preview-content-wrapper">
+                        <pre className="file-preview-content">
+                          {selectedFile.content}
+                        </pre>
+                      </div>
+                    </div>
+                    
+                    <div className="file-preview-section">
+                      <h3 className="file-preview-title">Processed Data</h3>
+                      <div className="file-preview-content-wrapper">
+                        <pre className="file-preview-content">
+                          {selectedFile.processed ? 
+                            JSON.stringify(selectedFile.processingResult, null, 2) :
+                            'File has not been processed yet'}
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -501,7 +497,6 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
           }
         }}
         onKeepBoth={() => {
-          // If we have an onResolve callback, call it with 'keepBoth'
           if (duplicateModal.onResolve) {
             duplicateModal.onResolve('keepBoth');
           }

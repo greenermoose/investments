@@ -1,3 +1,7 @@
+### 0.4.67
+
+- more fixes to debugging
+
 ### 0.4.66
 
 - fixing debugging

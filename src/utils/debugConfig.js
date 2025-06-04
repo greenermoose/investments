@@ -16,14 +16,14 @@ const DEBUG_CATEGORIES = {
 // Global debug settings
 const DEBUG_CONFIG = {
   // Global debug flag - master switch for all debugging
-  enabled: true,
+  enabled: false,
   
   // Component-specific debug flags
   components: Object.keys(DEBUG_CATEGORIES).reduce((acc, component) => {
     acc[component] = {
-      enabled: true,
+      enabled: false,
       categories: DEBUG_CATEGORIES[component].reduce((catAcc, category) => {
-        catAcc[category] = true;
+        catAcc[category] = false;
         return catAcc;
       }, {})
     };
@@ -92,13 +92,12 @@ export const setComponentDebugEnabled = (component, enabled) => {
 
 // Helper function to enable/disable all components
 export const setAllComponentsEnabled = (enabled) => {
+  DEBUG_CONFIG.enabled = enabled;  // Set the global enabled flag
   Object.keys(DEBUG_CONFIG.components).forEach(component => {
     DEBUG_CONFIG.components[component].enabled = enabled;
-    if (enabled) {
-      Object.keys(DEBUG_CONFIG.components[component].categories).forEach(category => {
-        DEBUG_CONFIG.components[component].categories[category] = true;
-      });
-    }
+    Object.keys(DEBUG_CONFIG.components[component].categories).forEach(category => {
+      DEBUG_CONFIG.components[component].categories[category] = enabled;
+    });
   });
 };
 

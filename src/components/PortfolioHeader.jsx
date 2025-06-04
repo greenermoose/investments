@@ -11,8 +11,10 @@ import {
   PieChart,
   List,
   Settings,
-  Layers
+  Layers,
+  Bug
 } from 'lucide-react';
+import { getDebugConfig, setAllDebugEnabled } from '../utils/debugConfig';
 
 const PortfolioHeader = ({ 
   portfolioDate, 
@@ -26,9 +28,16 @@ const PortfolioHeader = ({
   onNavigate,
   activeTab,
   onSnapshotSelect,
-  refreshKey
+  refreshKey,
+  onCsvUpload,
+  onJsonUpload,
+  selectedAccount,
+  availableTabs = ['account-management'], // Default value
+  onTabChange,
+  onDebugSettingsClick
 }) => {
   const [showUploadDropdown, setShowUploadDropdown] = useState(false);
+  const [isDebugEnabled, setIsDebugEnabled] = useState(getDebugConfig().enabled);
   const dropdownRef = useRef(null);
 
   // Close dropdown when clicking outside
@@ -56,138 +65,54 @@ const PortfolioHeader = ({
     { id: 'history', label: 'History', icon: FileText }
   ];
 
+  const renderTab = (tabId, label) => {
+    // Defensive check for availableTabs
+    if (!Array.isArray(availableTabs) || !availableTabs.includes(tabId)) return null;
+    
+    return (
+      <button
+        key={tabId}
+        onClick={() => onTabChange?.(tabId)}
+        className={`px-4 py-2 rounded-lg transition-colors ${
+          activeTab === tabId
+            ? 'bg-blue-500 text-white'
+            : 'text-gray-600 hover:bg-gray-100'
+        }`}
+      >
+        {label}
+      </button>
+    );
+  };
+
   return (
-    <header className="bg-indigo-600 text-white shadow-lg">
-      {/* Top row: Account info and primary navigation */}
-      <div className="border-b border-indigo-500">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Left: Account selector and snapshot info */}
-            <div className="flex items-center space-x-6">
-              <h1 className="text-xl font-bold">Investment Portfolio</h1>
-              
-              {currentAccount && onAccountChange && (
-                <div className="flex items-center space-x-2">
-                  <AccountSelector
-                    currentAccount={currentAccount}
-                    onAccountChange={onAccountChange}
-                  />
-                </div>
-              )}
-            </div>
-
-            {/* Right: Primary navigation */}
-            <nav className="flex items-center space-x-1">
-              {primaryNavigationItems.map(item => {
-                const Icon = item.icon;
-                return (
-                  <button
-                    key={item.id}
-                    onClick={() => onNavigate(item.id)}
-                    className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors
-                      ${activeTab === item.id 
-                        ? 'bg-indigo-700 text-white' 
-                        : 'text-indigo-100 hover:bg-indigo-500 hover:text-white'}`}
-                  >
-                    <Icon className="h-4 w-4 mr-2" />
-                    {item.label}
-                  </button>
-                );
-              })}
-            </nav>
-          </div>
+    <header className="bg-white shadow-sm">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between mb-4">
+          <h1 className="text-2xl font-bold text-gray-800">Portfolio Manager</h1>
+          <button
+            onClick={onDebugSettingsClick}
+            className="flex items-center px-3 py-2 rounded-lg transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          >
+            <Bug className="w-4 h-4 mr-2" />
+            Debug Settings
+          </button>
         </div>
-      </div>
 
-      {/* Bottom row: Secondary navigation and utilities */}
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-12">
-          {/* Left: Snapshot date and selector */}
-          {portfolioDate && currentAccount && (
-            <div className="flex items-center space-x-4 text-sm text-indigo-100">
-              <div className="flex items-center">
-                <FileText className="h-4 w-4 mr-1" />
-                <span>Portfolio Snapshot: {formatDate(portfolioDate)}</span>
-              </div>
-              <SnapshotSelector
-                currentAccount={currentAccount}
-                selectedDate={portfolioDate}
-                onSnapshotSelect={onSnapshotSelect}
-                refreshKey={refreshKey}
-              />
-            </div>
-          )}
-
-          {/* Center: Secondary navigation */}
-          <nav className="flex items-center space-x-1">
-            {secondaryNavigationItems.map(item => {
-              const Icon = item.icon;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => onNavigate(item.id)}
-                  className={`flex items-center px-3 py-1.5 rounded-md text-sm font-medium transition-colors
-                    ${activeTab === item.id 
-                      ? 'bg-indigo-700 text-white' 
-                      : 'text-indigo-100 hover:bg-indigo-500 hover:text-white'}`}
-                >
-                  <Icon className="h-4 w-4 mr-1" />
-                  {item.label}
-                </button>
-              );
-            })}
+        <div className="flex items-center justify-between">
+          <nav className="flex space-x-2">
+            {renderTab('account-management', 'Account Management')}
+            {renderTab('portfolio', 'Portfolio')}
+            {renderTab('transactions', 'Transactions')}
+            {renderTab('lots', 'Lots')}
+            {renderTab('history', 'History')}
+            {renderTab('storage-manager', 'Storage')}
           </nav>
 
-          {/* Right: Actions */}
-          <div className="flex items-center space-x-2">
-            {showUploadButton && (
-              <div className="relative" ref={dropdownRef}>
-                <button 
-                  className="flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
-                  onClick={() => setShowUploadDropdown(!showUploadDropdown)}
-                >
-                  <Upload className="h-4 w-4 mr-1" />
-                  Upload
-                </button>
-                
-                {/* Upload dropdown */}
-                {showUploadDropdown && (
-                  <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-                    <button
-                      onClick={() => {
-                        onUploadCSV();
-                        setShowUploadDropdown(false);
-                      }}
-                      className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      <FileText className="h-4 w-4 mr-2 text-blue-600" />
-                      Upload Portfolio (CSV)
-                    </button>
-                    <button
-                      onClick={() => {
-                        onUploadJSON();
-                        setShowUploadDropdown(false);
-                      }}
-                      className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      <Database className="h-4 w-4 mr-2 text-green-600" />
-                      Upload Transactions (JSON)
-                    </button>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {showUploadButton && onNavigate && (
-              <button 
-                onClick={() => onNavigate('storage-manager')}
-                className="flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-500 hover:bg-indigo-400 transition-colors"
-              >
-                <HardDrive className="h-4 w-4 mr-1" />
-                Storage
-              </button>
-            )}
-          </div>
+          {selectedAccount && (
+            <div className="text-sm text-gray-600">
+              Selected Account: {selectedAccount}
+            </div>
+          )}
         </div>
       </div>
     </header>

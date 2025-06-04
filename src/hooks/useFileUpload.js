@@ -72,19 +72,20 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
   const pipeline = new PipelineOrchestrator();
 
   const handleFileUpload = async (file) => {
-    debugLog('useFileUpload', 'start', 'Starting file upload', { filename: file.name });
+    debugLog('fileUpload', 'start', 'Starting file upload', { filename: file.name });
     setIsUploading(true);
     setUploadError(null);
 
     try {
-      debugLog('useFileUpload', 'process', 'Processing file through pipeline');
+      debugLog('fileUpload', 'process', 'Processing file through pipeline');
       const result = await pipeline.processFile(file);
       
       if (!result.success) {
+        debugLog('fileUpload', 'error', 'File processing failed', { error: result.error });
         throw new Error(result.error);
       }
 
-      debugLog('useFileUpload', 'success', 'File processed successfully', {
+      debugLog('fileUpload', 'success', 'File processed successfully', {
         hasData: !!result.data,
         accountName: result.accountName,
         date: result.date,
@@ -93,7 +94,7 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
 
       // Load the portfolio data
       if (result.data && result.accountName) {
-        debugLog('useFileUpload', 'load', 'Loading portfolio data', {
+        debugLog('fileUpload', 'load', 'Loading portfolio data', {
           accountName: result.accountName,
           date: result.date,
           dataLength: result.data.length
@@ -106,13 +107,13 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
             result.date || new Date(),
             result.accountTotal
           );
-          debugLog('useFileUpload', 'load', 'Portfolio data loaded');
+          debugLog('fileUpload', 'load', 'Portfolio data loaded successfully');
         } else {
-          debugLog('useFileUpload', 'error', 'loadPortfolio callback is not a function');
+          debugLog('fileUpload', 'error', 'loadPortfolio callback is not a function');
           throw new Error('loadPortfolio is not a function');
         }
       } else {
-        debugLog('useFileUpload', 'warn', 'Missing data for portfolio load', {
+        debugLog('fileUpload', 'warn', 'Missing data for portfolio load', {
           hasData: !!result.data,
           hasAccountName: !!result.accountName
         });
@@ -127,13 +128,13 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
 
       // Navigate to portfolio view if onNavigate is provided
       if (callbacks.onNavigate) {
-        debugLog('useFileUpload', 'navigate', 'Navigating to portfolio view');
+        debugLog('fileUpload', 'navigate', 'Navigating to portfolio view');
         callbacks.onNavigate('portfolio');
       }
 
       return result;
     } catch (error) {
-      debugLog('useFileUpload', 'error', 'File upload failed', {
+      debugLog('fileUpload', 'error', 'File upload failed', {
         error: error.message,
         stack: error.stack
       });
@@ -153,7 +154,7 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
       };
     } finally {
       setIsUploading(false);
-      debugLog('useFileUpload', 'end', 'File upload process completed');
+      debugLog('fileUpload', 'end', 'File upload process completed');
     }
   };
 

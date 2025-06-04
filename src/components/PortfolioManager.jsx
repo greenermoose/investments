@@ -9,7 +9,7 @@ import {
 import { useFileUpload } from '../hooks/useFileUpload';
 import { X, FileText, Database } from 'lucide-react';
 import portfolioService from '../services/PortfolioService';
-import { debugLog } from '../utils/debugConfig';
+import { debugLog, getDebugConfig, setAllDebugEnabled } from '../utils/debugConfig';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -25,6 +25,9 @@ import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
 import PortfolioHistory from './PortfolioHistory';
+import DebugControlPanel from './DebugControlPanel';
+import DebugSettings from './DebugSettings';
+import DebugSettingsModal from './DebugSettingsModal';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -39,12 +42,16 @@ const PortfolioManager = () => {
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);
   const [snapshotRefreshKey, setSnapshotRefreshKey] = useState(0);
+  const [showDebugSettings, setShowDebugSettings] = useState(false);
   const [confirmationDialog, setConfirmationDialog] = useState({
     isOpen: false,
     newAccountName: '',
     similarAccounts: [],
     resolve: null
   });
+
+  // Add debug state
+  const [isDebugEnabled, setIsDebugEnabled] = useState(getDebugConfig().enabled);
 
   // Debug log state changes
   useEffect(() => {
@@ -103,9 +110,14 @@ const PortfolioManager = () => {
     transactionData
   } = acquisition;
 
-  // Create a tab structure including our new Storage Manager tab
-  const coreTabs = ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager', 'security-detail'];
-  
+  // Create a tab structure that changes based on data state
+  const getAvailableTabs = () => {
+    if (!isDataLoaded) {
+      return []; // No tabs when no data
+    }
+    return ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager', 'security-detail'];
+  };
+
   const { selectedAccount, setSelectedAccount } = account;
   const { activeTab, changeTab } = navigation;
 
@@ -306,26 +318,16 @@ const PortfolioManager = () => {
     }
 
     // If no data is loaded, show welcome screen
-    return <WelcomeScreen onNavigate={navigation.changeTab} onAccountChange={handleAccountChange} />;
-  };
-
-  // Initial view when no data is loaded
-  if (!isDataLoaded && !isLoading && !error) {
-    debugLog('render', 'Rendering welcome screen', {
-      isDataLoaded,
-      isLoading,
-      hasError: !!error
-    });
     return (
       <WelcomeScreen
-        onFileLoaded={fileUpload.handleFileLoaded}
         onNavigate={changeTab}
         onAccountChange={handleAccountChange}
+        onTabChange={changeTab}
       />
     );
-  }
+  };
 
-  debugLog('render', 'Rendering main portfolio view', {
+  debugLog('render', 'Rendering main view', {
     isDataLoaded,
     isLoading,
     hasError: !!error,
@@ -333,55 +335,54 @@ const PortfolioManager = () => {
   });
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
-      <PortfolioHeader 
-        portfolioDate={portfolioDate}
-        currentAccount={currentAccount || selectedAccount}
-        onUploadCSV={handleCsvUpload}
-        onUploadJSON={handleJsonUpload}
-        showUploadButton={true}
+    <div className="min-h-screen bg-gray-50">
+      <PortfolioHeader
         onAccountChange={handleAccountChange}
-        onNavigate={changeTab}
-        onSnapshotSelect={handleSnapshotSelect}
+        selectedAccount={selectedAccount}
+        availableTabs={getAvailableTabs()}
         activeTab={activeTab}
-        refreshKey={snapshotRefreshKey}
+        onTabChange={changeTab}
+        onDebugSettingsClick={() => setShowDebugSettings(true)}
       />
-      
-      <main className="flex-grow container mx-auto p-4">
+
+      <main className="container mx-auto px-4 py-8">
         {renderTabContent()}
       </main>
-      
+
       <PortfolioFooter />
-      
-      {/* Upload Modal */}
+      <DebugControlPanel />
+      <DebugSettingsModal 
+        isOpen={showDebugSettings}
+        onClose={() => setShowDebugSettings(false)}
+      />
+
+      {/* Modals */}
       {showUploadModal && (
         <FileUploader
           type={uploadModalType}
-          onClose={() => setShowUploadModal(false)}
-          onUpload={fileUpload.handleFileUpload}
-          onAccountChange={handleAccountChange}
-          currentAccount={currentAccount || selectedAccount}
+          onClose={closeUploadModal}
+          onSuccess={handleFileUploadSuccess}
+          onError={handleFileUploadError}
+          onAccountConfirmation={handleAccountConfirmation}
         />
       )}
 
-      {/* Account Confirmation Dialog */}
+      {showAcquisitionModal && (
+        <AcquisitionModal
+          pendingAcquisitions={pendingAcquisitions}
+          possibleTickerChanges={possibleTickerChanges}
+          onClose={closeAcquisitionModal}
+          onSubmit={handleAcquisitionModalSubmit}
+          transactionData={transactionData}
+        />
+      )}
+
       {confirmationDialog.isOpen && (
         <AccountConfirmationDialog
           newAccountName={confirmationDialog.newAccountName}
           similarAccounts={confirmationDialog.similarAccounts}
-          onConfirm={confirmationDialog.resolve}
-          onCancel={() => setConfirmationDialog({ ...confirmationDialog, isOpen: false })}
-        />
-      )}
-
-      {/* Acquisition Modal */}
-      {showAcquisitionModal && (
-        <AcquisitionModal
-          acquisitions={pendingAcquisitions}
-          possibleTickerChanges={possibleTickerChanges}
-          onClose={closeAcquisitionModal}
-          onSubmit={handleAcquisitionModalSubmit}
-          currentAccount={currentAccount || selectedAccount}
+          onConfirm={handleConfirmAccount}
+          onCancel={handleCancelAccount}
         />
       )}
     </div>

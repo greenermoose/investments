@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FileText } from 'lucide-react';
-import PortfolioHeader from './PortfolioHeader';
 import PortfolioFooter from './PortfolioFooter';
 import { useFileUpload } from '../hooks/useFileUpload';
 import { usePortfolio } from '../context/PortfolioContext';
 
 const WelcomeScreen = ({ 
   onNavigate,
-  onAccountChange
+  onAccountChange,
+  onTabChange
 }) => {
   const portfolio = usePortfolio();
   const { handleFileUpload, isUploading, uploadError } = useFileUpload(
@@ -24,18 +24,15 @@ const WelcomeScreen = ({
     }
   );
 
+  const handleFileSelect = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      handleFileUpload(file);
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      <PortfolioHeader 
-        portfolioDate={null}
-        currentAccount=""
-        onUploadCSV={() => {}}
-        onUploadJSON={() => {}}
-        showUploadButton={false}
-        onAccountChange={onAccountChange}
-        onNavigate={onNavigate}
-      />
-      
       <main className="flex-grow container mx-auto p-4">
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome to Portfolio Manager</h1>
@@ -51,21 +48,17 @@ const WelcomeScreen = ({
               <input
                 type="file"
                 accept=".csv"
-                onChange={(e) => {
-                  const file = e.target.files[0];
-                  if (file) {
-                    handleFileUpload(file);
-                  }
-                }}
+                onChange={handleFileSelect}
                 className="hidden"
                 id="file-upload"
               />
-              <label
-                htmlFor="file-upload"
+              <button
+                onClick={() => document.getElementById('file-upload').click()}
                 className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer"
+                disabled={isUploading}
               >
-                {isUploading ? 'Uploading...' : 'Choose File'}
-              </label>
+                {isUploading ? 'Uploading...' : 'Upload Portfolio'}
+              </button>
               {uploadError && (
                 <p className="mt-2 text-sm text-red-600">{uploadError}</p>
               )}

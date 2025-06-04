@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export const usePortfolioNavigation = () => {
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState('portfolio');
   const [showUploadModal, setShowUploadModal] = useState(false);
 
   const changeTab = (tab) => {
@@ -17,8 +17,17 @@ export const usePortfolioNavigation = () => {
     setShowUploadModal(false);
   };
 
-  // Add storage-manager to the available tabs
-  const tabs = ['overview', 'positions', 'performance', 'analysis', 'history', 'lots', 'account-management', 'storage-manager'];
+  // Add all available tabs including debug-settings
+  const tabs = [
+    'portfolio',
+    'account-management',
+    'transactions',
+    'lots',
+    'history',
+    'storage-manager',
+    'security-detail',
+    'debug-settings'
+  ];
 
   return {
     activeTab,

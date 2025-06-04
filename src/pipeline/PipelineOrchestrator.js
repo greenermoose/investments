@@ -55,6 +55,14 @@ export class PipelineOrchestrator {
         metadata.date
       );
 
+      debugLog('pipeline', 'storage', 'File save result', {
+        fileRecord,
+        hasId: !!fileRecord?.id,
+        id: fileRecord?.id,
+        isDuplicate: fileRecord?.isDuplicate,
+        duplicateType: fileRecord?.duplicateType
+      });
+
       if (fileRecord.isDuplicate) {
         debugLog('pipeline', 'warn', 'Duplicate file detected', {
           duplicateType: fileRecord.duplicateType,
@@ -63,10 +71,19 @@ export class PipelineOrchestrator {
         return {
           success: false,
           error: `File is a duplicate: ${fileRecord.duplicateType}`,
-          existingFile: fileRecord.existingFile
+          existingFile: fileRecord.existingFile,
+          fileId: fileRecord.id
         };
       }
-      debugLog('pipeline', 'storage', 'File saved successfully', { fileId: fileRecord.id });
+
+      // Ensure we have a valid file ID
+      const fileId = fileRecord.id || fileRecord.fileId;
+      if (!fileId) {
+        debugLog('pipeline', 'error', 'Missing file ID in fileRecord', { fileRecord });
+        throw new Error('Missing file ID in fileRecord');
+      }
+
+      debugLog('pipeline', 'storage', 'File saved successfully', { fileId });
 
       // Stage 4: Parse file content
       debugLog('pipeline', 'parse', 'Parsing file content');
@@ -85,12 +102,17 @@ export class PipelineOrchestrator {
       // Stage 5: Process and save to portfolio database
       let processingResult;
       if (uploadResult.fileType === 'CSV') {
-        debugLog('pipeline', 'process', 'Processing portfolio snapshot');
+        debugLog('pipeline', 'process', 'Processing portfolio snapshot', {
+          fileId,
+          accountName: metadata.accountName,
+          snapshotDate: metadata.date
+        });
+        
         processingResult = await this.processor.processPortfolioSnapshot({
           parsedData,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
-          fileId: fileRecord.id
+          fileId
         });
         debugLog('pipeline', 'process', 'Portfolio snapshot processed', {
           success: processingResult.success,
@@ -103,7 +125,7 @@ export class PipelineOrchestrator {
         processingResult = await this.processor.processTransactions({
           parsedData,
           accountName: metadata.accountName,
-          fileId: fileRecord.id
+          fileId: fileId
         });
         debugLog('pipeline', 'process', 'Transactions processed', {
           success: processingResult.success,
@@ -118,7 +140,7 @@ export class PipelineOrchestrator {
 
       // Update file record with processing status
       debugLog('pipeline', 'storage', 'Updating file processing status');
-      await markFileAsProcessed(fileRecord.id, {
+      await markFileAsProcessed(fileId, {
         success: processingResult.success,
         error: processingResult.error,
         result: processingResult

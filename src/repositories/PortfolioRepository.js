@@ -19,11 +19,18 @@ export class PortfolioRepository extends BaseRepository {
     debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
       accountName: portfolio.accountName,
       date: portfolio.date,
-      positionsCount: portfolio.data?.length
+      positionsCount: portfolio.data?.length,
+      metadata: portfolio.metadata
     });
 
     // Create a unique portfolio ID to prevent collisions
-    const portfolioId = `${portfolio.accountName}-${portfolio.date}`;
+    const portfolioId = `${portfolio.accountName}-${portfolio.date.toISOString()}`;
+    debugLog('portfolio', 'storage', 'Generated portfolio ID:', {
+      portfolioId,
+      accountName: portfolio.accountName,
+      date: portfolio.date.toISOString(),
+      idLength: portfolioId.length
+    });
 
     // Validate and normalize portfolio data
     const normalizedData = portfolio.data.map(position => {
@@ -65,22 +72,52 @@ export class PortfolioRepository extends BaseRepository {
       },
       metadata: {
         source: portfolio.metadata?.source || 'manual',
-        fileId: portfolio.metadata?.fileId
+        fileId: portfolio.metadata?.fileId || null,
+        changes: portfolio.metadata?.changes || null
       },
       createdAt: new Date().toISOString()
     };
 
-    debugLog('portfolio', 'storage', 'Saving portfolio data:', {
+    debugLog('portfolio', 'storage', 'Prepared portfolio data:', {
       id: portfolioId,
       totalValue,
-      totalGain
+      totalGain,
+      metadata: portfolioData.metadata,
+      hasFileId: !!portfolioData.metadata.fileId,
+      fileId: portfolioData.metadata.fileId
     });
 
     const db = await initializeDB();
     const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
     const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
-    await store.put(portfolioData);
-    return portfolioData;
+   
+    return new Promise((resolve, reject) => {
+      debugLog('portfolio', 'storage', 'Attempting to save portfolio:', {
+        id: portfolioId,
+        storeName: STORE_NAME_PORTFOLIOS
+      });
+
+      const request = store.put(portfolioData);
+      
+      request.onsuccess = () => {
+        debugLog('portfolio', 'storage', 'Portfolio saved successfully', {
+          id: portfolioId,
+          requestResult: request.result,
+          hasResult: !!request.result,
+          resultType: typeof request.result
+        });
+        resolve(portfolioId);
+      };
+      
+      request.onerror = (error) => {
+        debugLog('portfolio', 'error', 'Failed to save portfolio', {
+          error: error.target.error,
+          errorName: error.target.error?.name,
+          errorMessage: error.target.error?.message
+        });
+        reject(new Error('Failed to save portfolio snapshot'));
+      };
+    });
   }
 
   /**
@@ -90,7 +127,7 @@ export class PortfolioRepository extends BaseRepository {
    * @returns {Promise<Object|null>} Portfolio snapshot
    */
   async getByAccountAndDate(accountName, date) {
-    const id = `${accountName}_${date.getTime()}`;
+    const id = `${accountName}-${date.toISOString()}`;
     return this.getById(id);
   }
 

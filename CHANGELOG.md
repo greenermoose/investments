@@ -1,3 +1,7 @@
+### 0.4.69
+
+- file upload bug
+
 ### 0.4.68
 
 - can see storage from welcome screen

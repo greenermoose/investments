@@ -59,6 +59,9 @@ export class BaseRepository {
    * @returns {Promise<Object|null>}
    */
   async getById(id) {
+    if (!id || typeof id !== 'string') {
+      throw new Error('Invalid ID: must be a non-empty string');
+    }
     return this.executeTransaction('readonly', (store) => store.get(id));
   }
 

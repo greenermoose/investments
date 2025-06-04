@@ -23,9 +23,11 @@ export class PortfolioProcessor {
   async processPortfolioSnapshot({ parsedData, accountName, snapshotDate, fileId }) {
     debugLog('portfolio', 'start', 'Starting portfolio snapshot processing', {
       accountName,
-      snapshotDate,
+      snapshotDate: snapshotDate instanceof Date ? snapshotDate.toISOString() : snapshotDate,
       fileId,
-      dataLength: parsedData.data?.length
+      dataLength: parsedData.data?.length,
+      fileIdType: typeof fileId,
+      hasFileId: !!fileId
     });
 
     if (!parsedData.success) {
@@ -38,7 +40,27 @@ export class PortfolioProcessor {
       };
     }
 
+    if (!fileId || typeof fileId !== 'string') {
+      debugLog('portfolio', 'error', 'Invalid file ID', { 
+        fileId,
+        fileIdType: typeof fileId,
+        hasFileId: !!fileId
+      });
+      return {
+        success: false,
+        error: 'Invalid file ID'
+      };
+    }
+
     try {
+      // Ensure snapshotDate is a proper Date object
+      const date = snapshotDate instanceof Date ? snapshotDate : new Date(snapshotDate);
+      debugLog('portfolio', 'date', 'Processed snapshot date', {
+        original: snapshotDate,
+        processed: date.toISOString(),
+        isDate: date instanceof Date
+      });
+
       // Get existing accounts to check for similar names
       debugLog('portfolio', 'accounts', 'Checking existing accounts');
       const existingAccounts = await portfolioService.getAllAccounts();
@@ -64,7 +86,8 @@ export class PortfolioProcessor {
       const latestSnapshot = await portfolioService.getLatestSnapshot(finalAccountName);
       debugLog('portfolio', 'snapshot', 'Latest snapshot retrieved', {
         hasSnapshot: !!latestSnapshot,
-        snapshotDate: latestSnapshot?.date
+        snapshotDate: latestSnapshot?.date,
+        snapshotId: latestSnapshot?.id
       });
       
       // Analyze changes if we have a previous snapshot
@@ -80,15 +103,39 @@ export class PortfolioProcessor {
       }
 
       // Save the portfolio snapshot
-      debugLog('portfolio', 'save', 'Saving portfolio snapshot');
+      debugLog('portfolio', 'save', 'Saving portfolio snapshot', {
+        fileId,
+        fileIdType: typeof fileId,
+        hasFileId: !!fileId,
+        accountName: finalAccountName,
+        date: date.toISOString(),
+        changesCount: changes ? Object.keys(changes).length : 0
+      });
+      
+      if (!fileId) {
+        debugLog('portfolio', 'error', 'Missing file ID before saving snapshot', {
+          fileId,
+          fileIdType: typeof fileId,
+          hasFileId: !!fileId
+        });
+        throw new Error('Invalid ID: must be a non-empty string');
+      }
+      
       const snapshotId = await portfolioService.savePortfolioSnapshot(
         parsedData.data,
         finalAccountName,
-        snapshotDate,
+        date,
         accountTotals,
         { changes, fileId }
       );
-      debugLog('portfolio', 'save', 'Portfolio snapshot saved', { snapshotId });
+      
+      debugLog('portfolio', 'save', 'Portfolio snapshot saved', { 
+        snapshotId,
+        snapshotIdType: typeof snapshotId,
+        hasSnapshotId: !!snapshotId,
+        fileId,
+        accountName: finalAccountName
+      });
 
       // Fetch the full snapshot
       debugLog('portfolio', 'fetch', 'Fetching saved snapshot');
@@ -110,7 +157,7 @@ export class PortfolioProcessor {
         await portfolioService.createLotsFromSnapshot(
           snapshot.data,
           finalAccountName,
-          snapshotDate
+          date
         );
         debugLog('portfolio', 'lots', 'Lots created successfully');
       } else {

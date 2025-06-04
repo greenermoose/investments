@@ -152,13 +152,22 @@ export const generatePortfolioReference = (accountName, date) => {
  * @returns {Promise<string>} ID of saved file
  */
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
+  console.log('saveUploadedFile: Starting file save', {
+    filename: file.name || file.filename,
+    accountName,
+    fileType,
+    fileDate
+  });
+
   const db = await initializeFileStorage();
 
   // Generate portfolio reference
   const portfolioReference = generatePortfolioReference(accountName, fileDate || new Date());
+  console.log('saveUploadedFile: Generated portfolio reference', { portfolioReference });
 
   // Calculate file hash to detect duplicates
   const fileHash = await calculateFileHash(content);
+  console.log('saveUploadedFile: Calculated file hash', { fileHash });
 
   // Get filename from File object or passed data
   const filename = file.name || file.filename;
@@ -166,7 +175,10 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for exact duplicate (same hash)
   const existingFileByHash = await findFileByHash(fileHash);
   if (existingFileByHash) {
-    console.log(`File with identical content already exists: ${existingFileByHash.filename}`);
+    console.log('saveUploadedFile: Found duplicate by hash', {
+      existingId: existingFileByHash.id,
+      filename: existingFileByHash.filename
+    });
     return {
       id: existingFileByHash.id,
       isDuplicate: true,
@@ -178,9 +190,12 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for filename conflict
   const existingFileByName = await findFileByName(filename);
   if (existingFileByName) {
-    console.log(`File with same name already exists: ${filename}`);
+    console.log('saveUploadedFile: Found duplicate by name', {
+      existingId: existingFileByName.id,
+      filename: existingFileByName.filename
+    });
     return {
-      id: null,
+      id: existingFileByName.id,
       isDuplicate: true,
       duplicateType: 'filename',
       existingFile: existingFileByName
@@ -195,7 +210,10 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
     const store = transaction.objectStore(STORE_NAME_FILES);
 
+    // Generate a unique file ID
     const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    console.log('saveUploadedFile: Generated file ID', { fileId });
+    
     const fileRecord = {
       id: fileId,
       portfolioReference,
@@ -212,15 +230,34 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       lastAccessed: new Date()
     };
 
-    const request = store.add(fileRecord);
-
-    request.onsuccess = () => resolve({
-      id: fileId,
-      isDuplicate: false,
-      fileRecord
+    console.log('saveUploadedFile: Attempting to save file record', {
+      fileId,
+      filename: fileRecord.filename,
+      fileType: fileRecord.fileType
     });
 
-    request.onerror = () => reject(request.error);
+    const request = store.add(fileRecord);
+
+    request.onsuccess = () => {
+      console.log('saveUploadedFile: File saved successfully', {
+        fileId,
+        requestResult: request.result
+      });
+      resolve({
+        id: fileId,
+        isDuplicate: false,
+        fileRecord: { ...fileRecord, id: fileId }
+      });
+    };
+
+    request.onerror = () => {
+      console.error('saveUploadedFile: Error saving file', {
+        error: request.error,
+        fileId,
+        filename: fileRecord.filename
+      });
+      reject(new Error(`Failed to save file: ${request.error.message}`));
+    };
   });
 };
 

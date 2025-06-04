@@ -29,13 +29,13 @@ export const initializeDB = () => {
     // Open database with target version
     const request = indexedDB.open(DB_NAME, DB_VERSION);
     
-    request.onerror = (event) => {
-      debugLog('database', 'initialization', 'Error opening database:', event.target.error);
-      reject(new Error(`Failed to open database: ${event.target.error.message}`));
+    request.onerror = () => {
+      console.error('Error opening database:', request.error);
+      reject(request.error);
     };
     
-    request.onsuccess = (event) => {
-      const db = event.target.result;
+    request.onsuccess = () => {
+      const db = request.result;
       debugLog('database', 'initialization', `Database opened successfully with version ${db.version}`);
       resolve(db);
     };
@@ -94,6 +94,18 @@ export const initializeDB = () => {
           metadataStore.createIndex('symbol', 'symbol', { unique: false });
           metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
           debugLog('database', 'initialization', 'Created transaction metadata store');
+        }
+
+        // Create file store if it doesn't exist
+        if (!db.objectStoreNames.contains(STORE_NAME_FILES)) {
+          const fileStore = db.createObjectStore(STORE_NAME_FILES, { keyPath: 'id' });
+          
+          // Create indexes
+          fileStore.createIndex('filename', 'filename', { unique: false });
+          fileStore.createIndex('fileType', 'fileType', { unique: false });
+          fileStore.createIndex('uploadDate', 'uploadDate', { unique: false });
+          fileStore.createIndex('account', 'account', { unique: false });
+          fileStore.createIndex('fileHash', 'fileHash', { unique: false });
         }
       } catch (error) {
         debugLog('database', 'initialization', 'Error during database upgrade:', error);

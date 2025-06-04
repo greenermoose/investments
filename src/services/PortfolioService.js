@@ -37,19 +37,24 @@ class PortfolioService {
    */
   async savePortfolioSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
     try {
+      // Ensure date is a proper Date object
+      const snapshotDate = date instanceof Date ? date : new Date(date);
+      
       console.log('PortfolioService: Saving portfolio snapshot', {
         accountName,
-        date: date.toISOString(),
+        date: snapshotDate.toISOString(),
         positions: portfolioData.length
       });
 
-      return await this.portfolioRepo.saveSnapshot(
-        portfolioData,
+      const portfolio = {
         accountName,
-        date,
+        date: snapshotDate,
+        data: portfolioData,
         accountTotal,
-        transactionMetadata
-      );
+        metadata: transactionMetadata
+      };
+
+      return await this.portfolioRepo.saveSnapshot(portfolio);
     } catch (error) {
       console.error('PortfolioService: Error saving portfolio snapshot:', error);
       throw error;

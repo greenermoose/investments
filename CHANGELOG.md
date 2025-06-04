@@ -1,3 +1,7 @@
+### 0.4.63
+
+- snapshot parser bug update 1
+
 ### 0.4.62
 
 - snapshot parser bug

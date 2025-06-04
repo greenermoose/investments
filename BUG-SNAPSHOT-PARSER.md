@@ -38,4 +38,105 @@ From this structure, other values (such as total cost basis, gain/loss $ or %, e
 
 ## Additional Notes
 - Other derived values (total cost basis, gain/loss, etc.) should be calculated elsewhere, not in the parser output.
-- The parser should be robust to variations in CSV format and header naming. 
+- The parser should be robust to variations in CSV format and header naming.
+
+# Portfolio Snapshot Parser Bug Report
+
+## Issue Description
+When processing portfolio snapshots, the data array in the resulting snapshot object is empty, despite the CSV file containing valid security data.
+
+## Current Behavior
+The processed data structure shows:
+```json
+{
+  "success": true,
+  "result": {
+    "success": true,
+    "snapshot": {
+      "id": "Roth Contributory IRA_1637410798000_3hmigr4xv",
+      "account": "Roth Contributory IRA",
+      "date": "2021-11-20T12:19:58.000Z",
+      "data": [], // Empty array despite valid CSV data
+      "accountTotal": {
+        "totalValue": 0,
+        "totalGain": 0
+      },
+      "transactionMetadata": {
+        "changes": null,
+        "fileId": "file_1749002559731_mikzsg7ja"
+      },
+      "createdAt": "2025-06-04T02:02:39.739Z"
+    },
+    "accountName": "Roth Contributory IRA",
+    "changes": null
+  }
+}
+```
+
+## Root Cause Analysis
+The issue stems from a mismatch between the field names in the parsed data and what the repository expects:
+
+1. The `parsePortfolioCSV` function in `src/utils/fileProcessing.js` outputs data with lowercase field names:
+```javascript
+{
+  symbol,
+  description,
+  quantity,
+  price,
+  costBasis,
+  type
+}
+```
+
+2. However, the `PortfolioRepository` expects data with specific capitalized field names:
+```javascript
+{
+  Symbol,
+  Description,
+  'Qty (Quantity)',
+  Price,
+  'Cost Basis',
+  'Security Type',
+  'Mkt Val (Market Value)'
+}
+```
+
+3. This mismatch causes the repository to filter out the data as invalid, resulting in an empty array.
+
+## Solution
+Update the `parsePortfolioCSV` function to output data with the correct field names that match the repository's expectations:
+
+```javascript
+data.push({
+  Symbol: symbol,
+  Description: description,
+  'Qty (Quantity)': quantity,
+  Price: price,
+  'Cost Basis': costBasis,
+  'Security Type': type || 'Unknown',
+  'Mkt Val (Market Value)': quantity * price
+});
+```
+
+Key changes:
+1. Changed field names to match repository format
+2. Added `Mkt Val (Market Value)` calculation
+3. Maintained consistent field naming across the application
+
+## Implementation Status
+- [x] Identified root cause
+- [x] Proposed solution
+- [ ] Implemented fix
+- [ ] Tested with sample data
+- [ ] Verified fix resolves the issue
+
+## Testing Plan
+1. Upload a portfolio snapshot CSV file
+2. Verify the parsed data contains the correct field names
+3. Confirm the snapshot object contains the securities data
+4. Validate that account totals are calculated correctly
+
+## Additional Notes
+- The fix maintains backward compatibility with existing code
+- No changes required to the repository layer
+- Improves data consistency across the application 

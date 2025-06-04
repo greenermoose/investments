@@ -242,224 +242,94 @@ export const extractAccountNameFromCSV = (fileContent) => {
 };
 
 /**
- * Parses the IRA CSV data from the exported format
+ * Robustly parses a portfolio snapshot CSV into a list of securities with canonical fields.
+ * Handles header variations, missing/extra columns, and both per-share and total cost basis.
+ *
  * @param {string} fileContent - The raw CSV file content
- * @returns {Object} The parsed portfolio data and date
+ * @returns {Object} { success, data, errors }
  */
 export const parsePortfolioCSV = (fileContent) => {
+  const errors = [];
   try {
-    // Check if file content is empty
     if (!fileContent || fileContent.trim().length === 0) {
       throw new Error('File is empty');
     }
-    
-    const lines = fileContent.split('\n');
-    debugLog('files', 'parsing', 'First few lines of file:', lines.slice(0, 5));
-    
-    // Check if we have enough lines
-    if (lines.length < 3) {
-      throw new Error('File does not contain enough data');
-    }
-    
-    // Extract date from the first row
-    let portfolioDate = extractDateFromAccountInfo(lines[0]);
-    debugLog('files', 'parsing', 'Extracted portfolio date:', portfolioDate);
-    
-    // Extract account name from CSV content
-    const csvAccountName = extractAccountNameFromCSV(fileContent);
-    debugLog('files', 'parsing', 'Extracted account name from CSV:', csvAccountName);
-    
-    // If first line doesn't have date info, it might be in a different format
-    if (!portfolioDate) {
-      // Try to parse from filename format in the first line
-      const dateMatch = lines[0].match(/as of (.*?)[,"]/);
-      if (dateMatch) {
-        portfolioDate = new Date(dateMatch[1]);
-        debugLog('files', 'parsing', 'Parsed date from filename format:', portfolioDate);
-      }
-    }
-    
-    // Find the header row - it contains "Symbol" and has many commas
+    // Split into lines and find the header row
+    const lines = fileContent.split(/\r?\n/).filter(l => l.trim().length > 0);
     let headerRowIndex = -1;
-    let columnHeaders = [];
-    
-    for (let i = 0; i < Math.min(10, lines.length); i++) {
-      const possibleHeaderLine = lines[i];
-      debugLog('files', 'parsing', `Checking line ${i} for headers:`, possibleHeaderLine);
-      
-      if (possibleHeaderLine.includes('"Symbol"') || possibleHeaderLine.includes('Symbol')) {
+    let headers = [];
+    for (let i = 0; i < Math.min(lines.length, 10); i++) {
+      const line = lines[i];
+      if (/symbol/i.test(line) && /desc/i.test(line)) {
         headerRowIndex = i;
-        debugLog('files', 'parsing', `Found header row at index ${i}`);
-        
-        // Parse the header line with Papa Parse
-        const parsed = Papa.parse(possibleHeaderLine, {
-          delimiter: ",",
-          quoteChar: '"',
-          skipEmptyLines: true
-        });
-        
-        if (parsed.data && parsed.data[0]) {
-          columnHeaders = parsed.data[0].map(header => header.trim());
-          debugLog('files', 'parsing', 'Parsed column headers:', columnHeaders);
-        }
+        headers = Papa.parse(line, { delimiter: ',', skipEmptyLines: true }).data[0].map(h => h.trim());
         break;
       }
     }
-    
     if (headerRowIndex === -1) {
-      throw new Error('Could not find the column headers row');
+      throw new Error('Could not find header row with Symbol and Description');
     }
-    
-    // Create header mapping
-    const headerMap = createHeaderMapping(columnHeaders);
-    
-    // Parse the data rows
-    const portfolioData = [];
-    let accountTotal = null;
-    let totalValue = 0;
-    let totalGain = 0;
-    
-    // Parse all rows at once using Papa Parse
-    const parsedRows = Papa.parse(fileContent, {
-      delimiter: ",",
-      quoteChar: '"',
-      skipEmptyLines: true,
-      header: false
+    // Map headers to canonical fields
+    const headerMap = {};
+    headers.forEach((h, idx) => {
+      const norm = h.toLowerCase();
+      if (/symbol/.test(norm)) headerMap.symbol = idx;
+      else if (/desc/.test(norm)) headerMap.description = idx;
+      else if (/qty|quantity/.test(norm)) headerMap.quantity = idx;
+      else if (/price(?!.*change)/.test(norm)) headerMap.price = idx;
+      else if (/cost.*share|cost\/share/.test(norm)) headerMap.costPerShare = idx;
+      else if (/cost basis/.test(norm)) headerMap.costBasis = idx;
+      else if (/market value|mkt val/.test(norm)) headerMap.marketValue = idx;
+      else if (/security type|type/.test(norm)) headerMap.type = idx;
     });
-    
-    // Skip rows before header and the header row itself
-    const dataRows = parsedRows.data.slice(headerRowIndex + 1);
-    
-    for (const row of dataRows) {
-      try {
-        // Skip empty rows
-        if (!row || row.length === 0) continue;
-        
-        // Create mapped object using header mapping
-        const mappedRow = {};
-        
-        // Use standardized header names
-        Object.entries(headerMap).forEach(([standardHeader, idx]) => {
-          if (idx < row.length) {
-            mappedRow[standardHeader] = parseFieldValue(row[idx]);
-          }
+    // Parse data rows
+    const data = [];
+    for (let i = headerRowIndex + 1; i < lines.length; i++) {
+      const row = Papa.parse(lines[i], { delimiter: ',', skipEmptyLines: false }).data[0];
+      if (!row || row.length < 2) continue;
+      // Skip summary/cash rows
+      const symbol = (row[headerMap.symbol] || '').toString().trim();
+      if (!symbol || /account total|cash/i.test(symbol)) continue;
+      // Parse fields
+      const description = (row[headerMap.description] || '').toString().trim();
+      const quantity = parseFloat((row[headerMap.quantity] || '').replace(/,/g, '')) || 0;
+      let price = row[headerMap.price];
+      price = typeof price === 'string' ? parseFloat(price.replace(/[^\d.\-]/g, '')) : Number(price) || 0;
+      // Cost basis per share
+      let costBasis = 0;
+      if (headerMap.costPerShare !== undefined && row[headerMap.costPerShare]) {
+        costBasis = parseFloat((row[headerMap.costPerShare] || '').replace(/[^\d.\-]/g, '')) || 0;
+      } else if (headerMap.costBasis !== undefined && row[headerMap.costBasis]) {
+        // If cost basis is total, divide by quantity
+        let totalCost = parseFloat((row[headerMap.costBasis] || '').replace(/[^\d.\-]/g, '')) || 0;
+        costBasis = quantity > 0 ? totalCost / quantity : 0;
+      }
+      // Type
+      let type = row[headerMap.type] || '';
+      type = typeof type === 'string' ? type.trim() : 'Unknown';
+      // Only include valid securities
+      if (symbol && quantity !== 0 && price !== 0) {
+        data.push({
+          Symbol: symbol,
+          Description: description,
+          'Qty (Quantity)': quantity,
+          Price: price,
+          'Cost Basis': costBasis,
+          'Security Type': type || 'Unknown',
+          'Mkt Val (Market Value)': quantity * price
         });
-        
-        // Skip rows without a symbol
-        if (!mappedRow.Symbol) continue;
-        
-        // Check if this is the account total row
-        if ((mappedRow.Symbol === 'Account Total' || mappedRow.Description === 'Account Total' || 
-             mappedRow.Symbol === 'Total' || mappedRow.Description === 'Total') &&
-            mappedRow['Mkt Val (Market Value)']) {
-          accountTotal = {
-            totalValue: mappedRow['Mkt Val (Market Value)'] || 0,
-            totalGain: mappedRow['Gain $ (Gain/Loss $)'] || 0,
-            gainPercent: mappedRow['Gain % (Gain/Loss %)'] || 0
-          };
-        }
-        
-        // Only include valid positions
-        if (mappedRow.Symbol !== 'Cash & Cash Investments' && 
-            mappedRow.Symbol !== 'Account Total' &&
-            mappedRow.Symbol !== 'Cash and Money Market' &&
-            mappedRow.Symbol !== 'Total' &&
-            mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
-          
-          // Get quantity and market value
-          const quantity = parseFloat(mappedRow['Qty (Quantity)']) || 0;
-          const marketValue = parseFloat(mappedRow['Mkt Val (Market Value)']) || 0;
-          
-          // Calculate price per share
-          const pricePerShare = quantity > 0 ? marketValue / quantity : 0;
-          
-          // Handle cost basis - determine if it's per share or total
-          let costBasisPerShare = 0;
-          let totalCostBasis = 0;
-          
-          if (mappedRow['Cost Basis']) {
-            const rawCostBasis = parseFloat(mappedRow['Cost Basis']);
-            if (!isNaN(rawCostBasis)) {
-              // If cost basis is close to market value, assume it's total cost basis
-              if (Math.abs(rawCostBasis - marketValue) < 0.01) {
-                totalCostBasis = rawCostBasis;
-                costBasisPerShare = quantity > 0 ? totalCostBasis / quantity : 0;
-              } else {
-                // Otherwise assume it's per share
-                costBasisPerShare = rawCostBasis;
-                totalCostBasis = costBasisPerShare * quantity;
-              }
-            }
-          }
-          
-          // Create standardized position object
-          const position = {
-            symbol: mappedRow.Symbol,
-            description: mappedRow.Description || mappedRow.Symbol,
-            quantity: quantity,
-            price: pricePerShare,
-            marketValue: marketValue,
-            costBasis: costBasisPerShare,
-            totalCostBasis: totalCostBasis,
-            gainLoss: {
-              dollar: mappedRow['Gain $ (Gain/Loss $)'] || 0,
-              percent: mappedRow['Gain % (Gain/Loss %)'] || 0
-            },
-            type: mappedRow['Security Type'] || 'Unknown'
-          };
-          
-          // Add to totals
-          totalValue += marketValue;
-          totalGain += position.gainLoss.dollar;
-          
-          if (portfolioData.length === 0) {
-            debugLog('files', 'parsing', 'First position parsed:', position);
-          }
-          
-          portfolioData.push(position);
-        }
-      } catch (rowError) {
-        debugLog('files', 'errors', `Error parsing row:`, rowError.message);
-        continue;
+      } else {
+        // Log or collect errors for rows that don't parse
+        errors.push({ line: i + 1, symbol, description, reason: 'Missing or invalid key fields' });
       }
     }
-    
-    if (portfolioData.length === 0) {
-      throw new Error('No valid portfolio data found in the file');
+    if (data.length === 0) {
+      throw new Error('No valid securities found in file');
     }
-    
-    // If no account total was found, calculate it from the positions
-    if (!accountTotal) {
-      accountTotal = {
-        totalValue,
-        totalGain,
-        gainPercent: totalValue > 0 ? (totalGain / totalValue) * 100 : 0
-      };
-    }
-    
-    debugLog('files', 'summary', 'Processed portfolio data:', {
-      positions: portfolioData.length,
-      accountTotal,
-      samplePosition: portfolioData[0]
-    });
-    
-    return { 
-      success: true,
-      data: portfolioData,
-      date: portfolioDate,
-      accountTotal,
-      metadata: {
-        accountName: csvAccountName,
-        date: portfolioDate,
-        positionCount: portfolioData.length
-      }
-    };
-  } catch (error) {
-    debugLog('files', 'errors', 'Error parsing CSV:', error);
-    return {
-      success: false,
-      error: `Failed to parse the portfolio CSV data: ${error.message}`
-    };
+    return { success: true, data, errors };
+  } catch (e) {
+    errors.push({ error: e.message });
+    return { success: false, data: [], errors };
   }
 };
 

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart } from 'recharts';
 import { formatCurrency, formatDate, formatPercent } from '../utils/dataUtils';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { calculateAnnualizedReturn } from '../utils/portfolioPerformanceMetrics';
 import { getSecurityHistoryData } from '../utils/securityTracker';
 

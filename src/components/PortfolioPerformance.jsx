@@ -1,6 +1,6 @@
 // components/PortfolioPerformance.jsx
 import React, { useState, useEffect } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { 
   calculateDateRangeReturns, 
   generateTimeSeriesData 

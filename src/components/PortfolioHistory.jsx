@@ -1,6 +1,6 @@
 // components/PortfolioHistory.jsx revision: 2
 import React, { useState, useEffect } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { formatCurrency, formatPercent, formatDate } from '../utils/dataUtils';
 import SnapshotTimeline from './performance/SnapshotTimeline';
 import AssetAllocationTimeline from './performance/AssetAllocationTimeline';

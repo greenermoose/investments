@@ -8,7 +8,7 @@ import {
 } from '../context/PortfolioContext';
 import { useFileUpload } from '../hooks/useFileUpload';
 import { X, FileText, Database } from 'lucide-react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -24,6 +24,11 @@ import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
 import PortfolioHistory from './PortfolioHistory';
+
+// Debug logging for PortfolioManager
+const debugLog = (action, message, data = {}) => {
+  console.log(`[PortfolioManager] ${action}:`, message, data);
+};
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -45,6 +50,17 @@ const PortfolioManager = () => {
     resolve: null
   });
 
+  // Debug log state changes
+  useEffect(() => {
+    debugLog('state', 'Portfolio state changed', {
+      isDataLoaded: portfolio.isDataLoaded,
+      isLoading: portfolio.isLoading,
+      hasError: !!portfolio.error,
+      currentAccount: portfolio.currentAccount,
+      activeTab: navigation.activeTab
+    });
+  }, [portfolio.isDataLoaded, portfolio.isLoading, portfolio.error, portfolio.currentAccount, navigation.activeTab]);
+
   // File upload hook
   const fileUpload = useFileUpload(
     portfolio.portfolioData,
@@ -52,6 +68,11 @@ const PortfolioManager = () => {
       setLoadingState: portfolio.setLoadingState,
       resetError: portfolio.resetError,
       loadPortfolio: async (data, accountName, date, accountTotal) => {
+        debugLog('upload', 'Loading portfolio from file upload', {
+          accountName,
+          date,
+          dataLength: data?.length
+        });
         await portfolio.loadPortfolio(data, accountName, date, accountTotal);
         // Increment refresh key after successful portfolio load
         setSnapshotRefreshKey(prev => prev + 1);
@@ -93,18 +114,21 @@ const PortfolioManager = () => {
   const { activeTab, changeTab } = navigation;
 
   // Handle account change
-  const handleAccountChange = (accountName) => {
-    setSelectedAccount(accountName);
-    refreshData();
+  const handleAccountChange = async (newAccount) => {
+    debugLog('account', 'Account change requested', { newAccount });
+    setSelectedAccount(newAccount);
+    await refreshData();
   };
 
   // Handle file upload modals
   const handleCsvUpload = () => {
+    debugLog('upload', 'CSV upload requested');
     setUploadModalType('csv');
     setShowUploadModal(true);
   };
 
   const handleJsonUpload = () => {
+    debugLog('upload', 'JSON upload requested');
     setUploadModalType('json');
     setShowUploadModal(true);
   };
@@ -172,6 +196,12 @@ const PortfolioManager = () => {
 
   // Handle acquisition modal submission
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
+    debugLog('acquisition', 'Acquisition modal submitted', {
+      change,
+      acquisitionDate,
+      isTickerChange,
+      oldSymbol
+    });
     handleAcquisitionSubmit(
       change, 
       acquisitionDate, 
@@ -193,7 +223,7 @@ const PortfolioManager = () => {
 
   // Handle symbol click to show security details
   const handleSymbolClick = (symbol) => {
-    console.log("Symbol clicked:", symbol);
+    debugLog('symbol', 'Symbol clicked', { symbol });
     setSelectedSymbol(symbol);
     // Set a custom tab for security details
     changeTab('security-detail');
@@ -201,12 +231,14 @@ const PortfolioManager = () => {
 
   // Handle returning from security detail view
   const handleBackFromSecurityDetail = () => {
+    debugLog('navigation', 'Returning from security detail');
     setSelectedSymbol(null);
     changeTab('portfolio');
   };
 
   // Handle snapshot selection
   const handleSnapshotSelect = async (snapshot) => {
+    debugLog('snapshot', 'Snapshot selected', { snapshotId: snapshot.id });
     try {
       const snapshotData = await portfolioService.getPortfolioById(snapshot.id);
       if (snapshotData) {
@@ -227,6 +259,8 @@ const PortfolioManager = () => {
 
   // Render tab content based on active tab
   const renderTabContent = () => {
+    debugLog('render', 'Rendering tab content', { activeTab });
+    
     // Special case for security detail
     if (activeTab === 'security-detail' && selectedSymbol) {
       return (
@@ -238,50 +272,61 @@ const PortfolioManager = () => {
       );
     }
 
-    switch (activeTab) {
-      case 'account-management':
-        return <AccountManagement 
-                 currentAccount={currentAccount || selectedAccount} 
-                 onAccountChange={handleAccountChange}
-                 onDataChange={refreshData}
-               />;
-      case 'portfolio':
-        return <PortfolioDisplay 
-                 portfolioData={portfolioData} 
-                 portfolioStats={portfolioStats} 
-                 currentAccount={currentAccount || selectedAccount}
-                 onSymbolClick={handleSymbolClick}
-               />;
-      case 'transactions':
-        return <TransactionViewer 
-                 currentAccount={currentAccount || selectedAccount} 
-                 transactions={transactionData?.transactions || []} 
-               />;
-      case 'lots':
-        return <LotManager 
-                 portfolioData={portfolioData} 
-                 onAcquisitionSubmit={handleAcquisitionModalSubmit}
-                 pendingAcquisitions={pendingAcquisitions}
-                 possibleTickerChanges={possibleTickerChanges}
-                 transactionData={transactionData}
-                 currentAccount={currentAccount || selectedAccount}
-               />;
-      case 'history':
-        return <PortfolioHistory />;
-      case 'storage-manager':
-        return <StorageManager onDataChange={refreshData} />;
-      default:
-        return <PortfolioDisplay 
-                 portfolioData={portfolioData} 
-                 portfolioStats={portfolioStats}
-                 currentAccount={currentAccount || selectedAccount}
-                 onSymbolClick={handleSymbolClick}
-               />;
+    // If we have data loaded, show the appropriate view
+    if (isDataLoaded) {
+      switch (activeTab) {
+        case 'account-management':
+          return <AccountManagement 
+                   currentAccount={currentAccount || selectedAccount} 
+                   onAccountChange={handleAccountChange}
+                   onDataChange={refreshData}
+                 />;
+        case 'portfolio':
+          return <PortfolioDisplay 
+                   portfolioData={portfolioData} 
+                   portfolioStats={portfolioStats} 
+                   currentAccount={currentAccount || selectedAccount}
+                   onSymbolClick={handleSymbolClick}
+                 />;
+        case 'transactions':
+          return <TransactionViewer 
+                   currentAccount={currentAccount || selectedAccount} 
+                   transactions={transactionData?.transactions || []} 
+                 />;
+        case 'lots':
+          return <LotManager 
+                   portfolioData={portfolioData} 
+                   onAcquisitionSubmit={handleAcquisitionModalSubmit}
+                   pendingAcquisitions={pendingAcquisitions}
+                   possibleTickerChanges={possibleTickerChanges}
+                   transactionData={transactionData}
+                   currentAccount={currentAccount || selectedAccount}
+                 />;
+        case 'history':
+          return <PortfolioHistory />;
+        case 'storage-manager':
+          return <StorageManager onDataChange={refreshData} />;
+        default:
+          return <PortfolioDisplay 
+                   portfolioData={portfolioData} 
+                   portfolioStats={portfolioStats}
+                   currentAccount={currentAccount || selectedAccount}
+                   onSymbolClick={handleSymbolClick}
+                 />;
+      }
     }
+
+    // If no data is loaded, show welcome screen
+    return <WelcomeScreen onNavigate={navigation.changeTab} onAccountChange={handleAccountChange} />;
   };
 
   // Initial view when no data is loaded
   if (!isDataLoaded && !isLoading && !error) {
+    debugLog('render', 'Rendering welcome screen', {
+      isDataLoaded,
+      isLoading,
+      hasError: !!error
+    });
     return (
       <WelcomeScreen
         onFileLoaded={fileUpload.handleFileLoaded}
@@ -290,6 +335,13 @@ const PortfolioManager = () => {
       />
     );
   }
+
+  debugLog('render', 'Rendering main portfolio view', {
+    isDataLoaded,
+    isLoading,
+    hasError: !!error,
+    activeTab
+  });
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -314,100 +366,25 @@ const PortfolioManager = () => {
       
       {/* Upload Modal */}
       {showUploadModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg max-w-md w-full p-6">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-semibold">
-                {uploadModalType === 'csv' ? 'Upload Portfolio Snapshot' : 'Upload Transaction History'}
-              </h2>
-              <button
-                onClick={closeUploadModal}
-                className="text-gray-400 hover:text-gray-600"
-              >
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-            
-            {uploadModalType === 'csv' ? (
-              <div className="space-y-4">
-                <div className="text-sm text-gray-600 mb-4">
-                  <p>Upload your current portfolio holdings from a CSV file.</p>
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>Accepts CSV files only</li>
-                    <li>Contains current position data</li>
-                    <li>Includes symbols, quantities, values</li>
-                  </ul>
-                </div>
-                <div className="border-2 border-dashed border-blue-300 rounded-lg p-6 text-center">
-                  <FileText className="w-12 h-12 text-blue-500 mx-auto mb-3" />
-                  <input
-                    type="file"
-                    accept=".csv"
-                    className="hidden"
-                    id="csv-file-input"
-                    onChange={(e) => {
-                      const file = e.target.files[0];
-                      if (file) {
-                        fileUpload.handleFileLoaded(file, null, null, 'CSV');
-                        closeUploadModal();
-                      }
-                    }}
-                  />
-                  <button
-                    onClick={() => document.getElementById('csv-file-input').click()}
-                    className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
-                  >
-                    Select CSV File
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                <div className="text-sm text-gray-600 mb-4">
-                  <p>Upload your transaction history from a JSON file.</p>
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>Accepts JSON files only</li>
-                    <li>Contains transaction history</li>
-                    <li>Includes buy/sell transactions</li>
-                  </ul>
-                </div>
-                <div className="border-2 border-dashed border-green-300 rounded-lg p-6 text-center">
-                  <Database className="w-12 h-12 text-green-500 mx-auto mb-3" />
-                  <input
-                    type="file"
-                    accept=".json"
-                    className="hidden"
-                    id="json-file-input"
-                    onChange={(e) => {
-                      const file = e.target.files[0];
-                      if (file) {
-                        fileUpload.handleFileLoaded(file, null, null, 'JSON');
-                        closeUploadModal();
-                      }
-                    }}
-                  />
-                  <button
-                    onClick={() => document.getElementById('json-file-input').click()}
-                    className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors"
-                  >
-                    Select JSON File
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
+        <FileUploader
+          type={uploadModalType}
+          onClose={() => setShowUploadModal(false)}
+          onUpload={fileUpload.handleFileUpload}
+          onAccountChange={handleAccountChange}
+          currentAccount={currentAccount || selectedAccount}
+        />
       )}
-      
+
       {/* Account Confirmation Dialog */}
-      <AccountConfirmationDialog
-        isOpen={confirmationDialog.isOpen}
-        newAccountName={confirmationDialog.newAccountName}
-        similarAccounts={confirmationDialog.similarAccounts}
-        onConfirm={handleConfirmAccount}
-        onCancel={handleCancelAccount}
-      />
-      
+      {confirmationDialog.isOpen && (
+        <AccountConfirmationDialog
+          newAccountName={confirmationDialog.newAccountName}
+          similarAccounts={confirmationDialog.similarAccounts}
+          onConfirm={confirmationDialog.resolve}
+          onCancel={() => setConfirmationDialog({ ...confirmationDialog, isOpen: false })}
+        />
+      )}
+
       {/* Acquisition Modal */}
       {showAcquisitionModal && (
         <AcquisitionModal

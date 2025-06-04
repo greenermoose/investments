@@ -3,6 +3,7 @@
 
 import { BaseRepository } from './BaseRepository';
 import { STORE_NAME_LOTS } from '../utils/databaseUtils';
+import { debugLog } from '../utils/debugConfig';
 
 export class LotRepository extends BaseRepository {
   constructor() {
@@ -168,5 +169,72 @@ export class LotRepository extends BaseRepository {
       remainingQuantity: lots.reduce((sum, lot) => sum + lot.remainingQuantity, 0),
       totalCostBasis: lots.reduce((sum, lot) => sum + lot.costBasis, 0)
     };
+  }
+
+  /**
+   * Create lots from portfolio snapshot
+   * @param {Array} portfolioData - Portfolio positions
+   * @param {string} accountName - Account name
+   * @param {Date} snapshotDate - Date of the snapshot
+   * @returns {Promise<Object>} Result with created lots and errors
+   */
+  async createLotsFromSnapshot(portfolioData, accountName, snapshotDate) {
+    const createdLots = [];
+    const errors = [];
+
+    for (const position of portfolioData) {
+      try {
+        const symbol = position.Symbol;
+        const quantity = parseFloat(position['Qty (Quantity)']) || 0;
+        const costBasis = parseFloat(position['Cost Basis']) || 0;
+        
+        if (quantity <= 0) continue;
+
+        const securityId = `${accountName}_${symbol}`;
+        
+        // Create a lot with the snapshot date as acquisition date
+        const lot = {
+          id: `${securityId}_${snapshotDate.getTime()}_${Math.random().toString(36).substr(2, 9)}`,
+          securityId,
+          account: accountName,
+          symbol,
+          quantity,
+          originalQuantity: quantity,
+          remainingQuantity: quantity,
+          acquisitionDate: snapshotDate,
+          costBasis,
+          pricePerShare: quantity > 0 ? costBasis / quantity : 0,
+          status: 'OPEN',
+          isTransactionDerived: false,
+          adjustments: [],
+          saleTransactions: [],
+          createdAt: new Date()
+        };
+
+        // Save the lot
+        await this.save(lot);
+        createdLots.push(lot);
+
+        // Update security metadata
+        await this.securityRepo.saveMetadata(symbol, accountName, {
+          acquisitionDate: snapshotDate,
+          description: position.Description || symbol
+        });
+
+        debugLog('portfolio', 'lots', `Created lot from snapshot for ${symbol}:`, {
+          quantity,
+          date: snapshotDate,
+          costBasis
+        });
+      } catch (error) {
+        debugLog('portfolio', 'errors', `Error creating lot from snapshot for ${position.Symbol}:`, error);
+        errors.push({
+          symbol: position.Symbol,
+          error: error.message
+        });
+      }
+    }
+
+    return { createdLots, errors };
   }
 }

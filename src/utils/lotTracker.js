@@ -2,7 +2,7 @@
 // Focuses on tax lot tracking, calculations, and management
 
 import { TransactionCategories, removeDuplicateTransactions } from './transactionEngine';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { debugLog } from './debugConfig';
 
 /**

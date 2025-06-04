@@ -1,7 +1,7 @@
 // src/components/TransactionViewer.jsx
 import React, { useState, useEffect } from 'react';
 import { formatDate, formatCurrency } from '../utils/dataUtils';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { TransactionCategories } from '../utils/transactionEngine';
 
 /**

@@ -1,8 +1,13 @@
 // hooks/usePortfolioData.js revision: 3
 import { useState, useEffect } from 'react';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { debugLog } from '../utils/debugConfig';
+
+// Enhanced debug logging for portfolio data
+const portfolioDebugLog = (action, message, data = {}) => {
+  console.log(`[usePortfolioData] ${action}:`, message, data);
+};
 
 export const usePortfolioData = (selectedAccount) => {
   const [portfolioData, setPortfolioData] = useState([]);
@@ -20,6 +25,7 @@ export const usePortfolioData = (selectedAccount) => {
 
   // Effect to load portfolio when selectedAccount changes
   useEffect(() => {
+    portfolioDebugLog('effect', 'Selected account changed', { selectedAccount });
     if (selectedAccount) {
       loadAccountPortfolio(selectedAccount);
     } else {
@@ -28,10 +34,13 @@ export const usePortfolioData = (selectedAccount) => {
   }, [selectedAccount]);
 
   const loadInitialPortfolio = async () => {
+    portfolioDebugLog('load', 'Loading initial portfolio');
     try {
       setIsLoading(true);
       setError(null);
       const accounts = await portfolioService.getAllAccounts();
+      
+      portfolioDebugLog('load', 'Retrieved accounts', { accountCount: accounts.length });
       
       if (accounts.length > 0) {
         let latestSnapshot = null;
@@ -51,6 +60,12 @@ export const usePortfolioData = (selectedAccount) => {
           }
         }
         
+        portfolioDebugLog('load', 'Found latest snapshot', {
+          hasSnapshot: !!latestSnapshot,
+          accountName: latestAccountName,
+          date: latestSnapshot?.date
+        });
+        
         // Load the latest snapshot if found
         if (latestSnapshot && latestAccountName) {
           loadPortfolio(
@@ -61,6 +76,7 @@ export const usePortfolioData = (selectedAccount) => {
           );
         } else {
           // No data to load
+          portfolioDebugLog('load', 'No snapshot data found, resetting state');
           setPortfolioData([]);
           setCurrentAccount('');
           setPortfolioDate(null);
@@ -75,6 +91,7 @@ export const usePortfolioData = (selectedAccount) => {
         }
       } else {
         // No accounts found
+        portfolioDebugLog('load', 'No accounts found, resetting state');
         setPortfolioData([]);
         setCurrentAccount('');
         setPortfolioDate(null);
@@ -88,6 +105,10 @@ export const usePortfolioData = (selectedAccount) => {
         setIsLoading(false);
       }
     } catch (err) {
+      portfolioDebugLog('error', 'Failed to load initial portfolio', {
+        error: err.message,
+        stack: err.stack
+      });
       console.error('Error loading initial portfolio:', err);
       setError('Failed to load portfolio data');
       setIsDataLoaded(false);
@@ -96,25 +117,20 @@ export const usePortfolioData = (selectedAccount) => {
   };
 
   const loadAccountPortfolio = async (accountName) => {
-    debugLog('portfolio', 'loading', 'Loading account portfolio:', {
-      accountName,
-      timestamp: new Date().toISOString()
-    });
+    portfolioDebugLog('load', 'Loading account portfolio', { accountName });
     
     try {
       setIsLoading(true);
       setError(null);
       const snapshot = await portfolioService.getLatestSnapshot(accountName);
       
+      portfolioDebugLog('load', 'Retrieved snapshot', {
+        hasSnapshot: !!snapshot,
+        hasData: !!snapshot?.data,
+        date: snapshot?.date
+      });
+      
       if (snapshot && snapshot.data) {
-        console.log('Loading account portfolio:', {
-          accountName,
-          snapshotDate: snapshot.date,
-          positions: snapshot.data.length,
-          firstPosition: snapshot.data[0],
-          accountTotal: snapshot.accountTotal
-        });
-        
         loadPortfolio(
           snapshot.data,
           accountName,
@@ -122,7 +138,7 @@ export const usePortfolioData = (selectedAccount) => {
           snapshot.accountTotal
         );
       } else {
-        console.warn('No snapshot data found for account:', accountName);
+        portfolioDebugLog('warn', 'No snapshot data found for account', { accountName });
         // Account exists but has no snapshots
         setPortfolioData([]);
         setCurrentAccount(accountName);
@@ -137,6 +153,11 @@ export const usePortfolioData = (selectedAccount) => {
         setIsLoading(false);
       }
     } catch (err) {
+      portfolioDebugLog('error', 'Failed to load account portfolio', {
+        accountName,
+        error: err.message,
+        stack: err.stack
+      });
       console.error('Error loading account portfolio:', err);
       setError(`Failed to load data for ${accountName}`);
       setIsLoading(false);
@@ -146,10 +167,13 @@ export const usePortfolioData = (selectedAccount) => {
   // Update portfolio stats when data changes
   useEffect(() => {
     if (portfolioData && Array.isArray(portfolioData) && portfolioData.length > 0) {
+      portfolioDebugLog('stats', 'Calculating portfolio stats', {
+        dataLength: portfolioData.length
+      });
       const stats = calculatePortfolioStats(portfolioData);
-      debugLog('portfolio', 'calculations', 'Calculated portfolio stats:', stats);
       setPortfolioStats(stats);
     } else {
+      portfolioDebugLog('stats', 'Resetting portfolio stats - no data');
       setPortfolioStats({
         totalValue: 0,
         totalGain: 0,
@@ -162,15 +186,15 @@ export const usePortfolioData = (selectedAccount) => {
   const resetError = () => setError(null);
   
   const loadPortfolio = (data, accountName, date, accountTotal) => {
+    portfolioDebugLog('load', 'Loading portfolio data', {
+      accountName,
+      date,
+      dataLength: data?.length,
+      hasAccountTotal: !!accountTotal
+    });
+
     // Ensure data is always an array
     const portfolioData = Array.isArray(data) ? data : [];
-    
-    debugLog('portfolio', 'loading', 'Raw portfolio data:', {
-      dataLength: portfolioData.length,
-      firstPosition: portfolioData[0],
-      accountTotal,
-      date
-    });
     
     // Calculate portfolio stats using the account total if available
     const stats = accountTotal ? {
@@ -180,43 +204,28 @@ export const usePortfolioData = (selectedAccount) => {
       assetAllocation: calculatePortfolioStats(portfolioData).assetAllocation
     } : calculatePortfolioStats(portfolioData);
     
-    debugLog('portfolio', 'loading', 'Loading portfolio:', {
+    // Set state regardless of data length - this ensures the UI updates
+    portfolioDebugLog('load', 'Setting portfolio state', {
+      dataLength: portfolioData.length,
       accountName,
-      date,
-      positions: portfolioData.length,
-      stats,
-      firstPositionMarketValue: portfolioData[0]?.['Mkt Val (Market Value)'],
-      firstPositionSymbol: portfolioData[0]?.Symbol
+      date
     });
     
-    // Ensure we have valid data before setting state
-    if (portfolioData.length > 0) {
-      setPortfolioData(portfolioData);
-      setCurrentAccount(accountName || '');
-      setPortfolioDate(date || null);
-      setPortfolioStats(stats);
-      setIsDataLoaded(true);
-    } else {
-      debugLog('portfolio', 'loading', 'No valid portfolio data to load');
-      setPortfolioData([]);
-      setCurrentAccount('');
-      setPortfolioDate(null);
-      setPortfolioStats({
-        totalValue: 0,
-        totalGain: 0,
-        gainPercent: 0,
-        assetAllocation: []
-      });
-      setIsDataLoaded(false);
-    }
+    setPortfolioData(portfolioData);
+    setCurrentAccount(accountName || '');
+    setPortfolioDate(date || null);
+    setPortfolioStats(stats);
+    setIsDataLoaded(true);
     setIsLoading(false);
   };
 
   const setLoadingState = (loading) => {
+    portfolioDebugLog('state', 'Setting loading state', { loading });
     setIsLoading(loading);
   };
 
   const refreshData = async () => {
+    portfolioDebugLog('refresh', 'Refreshing portfolio data', { currentAccount });
     if (currentAccount) {
       await loadAccountPortfolio(currentAccount);
     } else {

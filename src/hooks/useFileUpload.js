@@ -7,7 +7,7 @@ import {
   normalizeAccountName,
   findSimilarAccountNames
 } from '../utils/fileProcessing';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { analyzePortfolioChanges } from '../utils/positionTracker';
 import {
   parseTransactionJSON,
@@ -19,6 +19,14 @@ import {
 import { detectSymbolChange } from '../utils/symbolMapping';
 import { saveUploadedFile } from '../utils/fileStorage';
 import { createLotsFromSnapshot } from '../utils/lotTracker';
+import { usePortfolio } from './usePortfolio';
+import { useDialog } from './useDialog';
+import { PipelineOrchestrator } from '../pipeline/PipelineOrchestrator';
+
+// Debug logging function
+const debugLog = (component, action, message, data = {}) => {
+  console.log(`[${component}] ${action}:`, message, data);
+};
 
 /**
  * File type definitions with validation rules
@@ -56,472 +64,104 @@ const readFileAsText = (file) => {
 
 /**
  * Enhanced useFileUpload hook that properly saves original files
- * Key fix: Add calls to saveUploadedFile when processing files
  */
-export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound, onAccountConfirmation) => {
-  const [fileStats, setFileStats] = useState({
-    recentUploads: [],
-    lastUploadType: null,
-    uploadCounts: { csv: 0, json: 0 },
-    uploadErrors: []
-  });
+export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallbacks = {}) {
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState(null);
+  const { showDialog } = useDialog();
+  const pipeline = new PipelineOrchestrator();
 
-  // Create default onLoad handlers if not provided
-  const defaultOnLoad = {
-    setLoadingState: () => {},
-    resetError: () => {},
-    loadPortfolio: async () => {},
-    setError: () => {},
-    onModalClose: () => {}
-  };
+  const handleFileUpload = async (file) => {
+    debugLog('useFileUpload', 'start', 'Starting file upload', { filename: file.name });
+    setIsUploading(true);
+    setUploadError(null);
 
-  // Use provided onLoad or default handlers
-  const loadHandlers = onLoad || defaultOnLoad;
-
-  // Create default account confirmation handler if not provided
-  const defaultAccountConfirmation = (rawAccountName, resolve) => {
-    resolve(rawAccountName);
-  };
-
-  // Use provided account confirmation or default handler
-  const accountConfirmationHandler = onAccountConfirmation || defaultAccountConfirmation;
-
-  /**
-   * Check if we can upload transactions
-   * @returns {Promise<boolean>} Whether transactions can be uploaded
-   */
-  const canUploadTransactions = async () => {
     try {
-      const accounts = await portfolioService.getAllAccounts();
-      if (accounts.length === 0) {
-        return false;
+      debugLog('useFileUpload', 'process', 'Processing file through pipeline');
+      const result = await pipeline.processFile(file);
+      
+      if (!result.success) {
+        throw new Error(result.error);
       }
 
-      // Check if any account has a portfolio snapshot
-      for (const account of accounts) {
-        const snapshot = await portfolioService.getLatestSnapshot(account);
-        if (snapshot) {
-          return true;
-        }
-      }
-      return false;
-    } catch (err) {
-      console.error('Error checking if transactions can be uploaded:', err);
-      return false;
-    }
-  };
-
-  /**
-   * Validate file based on type and content
-   * @param {File} file - File to validate
-   * @param {string} expectedType - Expected file type ('CSV' or 'JSON')
-   * @returns {Object} Validation result
-   */
-  const validateFile = async (file, expectedType) => {
-    // Check if file exists
-    if (!file) {
-      return {
-        success: false,
-        error: 'No file provided'
-      };
-    }
-
-    // Determine file type based on extension
-    const isCSV = file.name.toLowerCase().endsWith('.csv');
-    const isJSON = file.name.toLowerCase().endsWith('.json');
-    
-    // Validate file type matches expected type
-    if (expectedType === 'CSV' && !isCSV) {
-      return {
-        success: false,
-        error: 'Please upload a CSV file'
-      };
-    }
-    
-    if (expectedType === 'JSON' && !isJSON) {
-      return {
-        success: false,
-        error: 'Please upload a JSON file'
-      };
-    }
-
-    // Check if we can upload transactions
-    if (isJSON) {
-      const canUpload = await canUploadTransactions();
-      if (!canUpload) {
-        return {
-          success: false,
-          error: 'Please upload a portfolio snapshot (CSV) first before uploading transactions'
-        };
-      }
-    }
-    
-    // Basic file size validation
-    const maxSize = expectedType === 'CSV' ? 10 * 1024 * 1024 : 50 * 1024 * 1024; // 10MB for CSV, 50MB for JSON
-    if (file.size > maxSize) {
-      const sizeInMB = Math.round(maxSize / (1024 * 1024));
-      return {
-        success: false,
-        error: `File size too large. Please upload a file smaller than ${sizeInMB}MB`
-      };
-    }
-    
-    return {
-      success: true,
-      fileType: isCSV ? 'CSV' : 'JSON'
-    };
-  };
-
-  /**
-   * Main handler for file uploads - handles both CSV and JSON files
-   * @param {string|File} fileContentOrFile - Either file content as string or a File object
-   * @param {string} fileName - Name of the file being uploaded
-   * @param {Date} dateFromFileName - Date extracted from filename (optional)
-   * @param {string} expectedType - Expected file type ('CSV' or 'JSON')
-   */
-  const handleFileLoaded = async (fileContentOrFile, fileName, dateFromFileName, expectedType = null) => {
-    let fileContent;
-    let fileValidation = { success: true };
-    
-    try {
-      loadHandlers.setLoadingState(true);
-      loadHandlers.resetError();
-      
-      // Handle case where a File object is passed instead of content
-      if (fileContentOrFile instanceof File) {
-        const file = fileContentOrFile;
-        
-        // Validate file
-        fileValidation = await validateFile(file, expectedType);
-        if (!fileValidation.success) {
-          throw new Error(fileValidation.error);
-        }
-        
-        // Read file content
-        fileContent = await readFileAsText(file);
-        fileName = file.name;
-      } else {
-        fileContent = fileContentOrFile;
-      }
-      
-      // Determine file type if not yet determined
-      const fileType = fileValidation.fileType || 
-                     (fileName.toLowerCase().endsWith('.json') ? 'JSON' : 'CSV');
-      
-      // Record upload attempt
-      updateFileStats(fileName, fileType.toLowerCase());
-      
-      // Process file based on type
-      if (fileType === 'JSON') {
-        await handleTransactionFile(fileContent, fileName);
-      } else { // CSV is default
-        await handlePortfolioFile(fileContent, fileName, dateFromFileName);
-      }
-      
-    } catch (err) {
-      console.error('Error processing file:', err);
-      recordUploadError(fileName, err.message);
-      loadHandlers.setError(err.message || 'Failed to process file. Please check the file format.');
-      loadHandlers.setLoadingState(false);
-      
-      // Close modal if provided
-      if (loadHandlers.onModalClose) {
-        loadHandlers.onModalClose();
-      }
-      
-      throw err; // Re-throw to allow caller to handle
-    }
-  };
-  
-  /**
-   * Updates file upload statistics
-   * @param {string} fileName - Name of uploaded file
-   * @param {string} fileType - Type of file ('csv' or 'json')
-   */
-  const updateFileStats = (fileName, fileType) => {
-    setFileStats(prev => {
-      const newUploadCounts = {
-        ...prev.uploadCounts,
-        [fileType]: (prev.uploadCounts[fileType] || 0) + 1
-      };
-      
-      const newRecentUploads = [
-        {
-          fileName,
-          type: fileType,
-          date: new Date(),
-          status: 'processing'
-        },
-        ...prev.recentUploads
-      ].slice(0, 10); // Keep only 10 most recent
-      
-      return {
-        ...prev,
-        recentUploads: newRecentUploads,
-        lastUploadType: fileType,
-        uploadCounts: newUploadCounts
-      };
-    });
-  };
-  
-  /**
-   * Records upload error
-   * @param {string} fileName - Name of file with error
-   * @param {string} errorMessage - Error message
-   */
-  const recordUploadError = (fileName, errorMessage) => {
-    setFileStats(prev => {
-      const updatedUploads = prev.recentUploads.map(upload => {
-        if (upload.fileName === fileName && upload.status === 'processing') {
-          return { ...upload, status: 'error', error: errorMessage };
-        }
-        return upload;
+      debugLog('useFileUpload', 'success', 'File processed successfully', {
+        hasData: !!result.data,
+        accountName: result.accountName,
+        date: result.date,
+        dataLength: result.data?.length
       });
-      
-      return {
-        ...prev,
-        recentUploads: updatedUploads,
-        uploadErrors: [...prev.uploadErrors, { fileName, error: errorMessage, date: new Date() }]
-      };
-    });
-  };
-  
-  /**
-   * Updates upload status to success
-   * @param {string} fileName - Name of uploaded file
-   */
-  const recordUploadSuccess = (fileName) => {
-    setFileStats(prev => {
-      const updatedUploads = prev.recentUploads.map(upload => {
-        if (upload.fileName === fileName && upload.status === 'processing') {
-          return { ...upload, status: 'success' };
-        }
-        return upload;
-      });
-      
-      return {
-        ...prev,
-        recentUploads: updatedUploads
-      };
-    });
-  };
-  
-  /**
-   * Handles transaction JSON file upload - FIXED VERSION
-   * @param {string} fileContent - File content as string
-   * @param {string} fileName - Name of uploaded file
-   */
-  const handleTransactionFile = async (fileContent, fileName) => {
-    try {
-      // Parse transaction data
-      const transactionData = parseTransactionJSON(fileContent);
-      if (!transactionData || !transactionData.transactions) {
-        throw new Error('Invalid transaction file format');
-      }
 
-      // Get account name from filename
-      const rawAccountName = getAccountNameFromFilename(fileName);
-      if (!rawAccountName) {
-        throw new Error('Could not determine account name from filename');
-      }
+      // Load the portfolio data
+      if (result.data && result.accountName) {
+        debugLog('useFileUpload', 'load', 'Loading portfolio data', {
+          accountName: result.accountName,
+          date: result.date,
+          dataLength: result.data.length
+        });
 
-      // Get all existing accounts
-      const existingAccounts = await portfolioService.getAllAccounts();
-      
-      // Find similar accounts
-      const similarAccounts = findSimilarAccountNames(rawAccountName, existingAccounts);
-      
-      // Handle account name confirmation
-      const confirmedAccountName = await new Promise((resolve) => {
-        if (similarAccounts.length > 0) {
-          // Show confirmation dialog with similar accounts
-          accountConfirmationHandler(rawAccountName, resolve, similarAccounts);
-        } else {
-          // Try to match without account number
-          const baseName = rawAccountName.replace(/\s+\d+$/, '').trim();
-          const matchingAccount = existingAccounts.find(acc => 
-            acc.toLowerCase() === baseName.toLowerCase() || 
-            acc.toLowerCase().includes(baseName.toLowerCase())
+        if (typeof callbacks.loadPortfolio === 'function') {
+          await callbacks.loadPortfolio(
+            result.data,
+            result.accountName,
+            result.date || new Date(),
+            result.accountTotal
           );
-          
-          if (matchingAccount) {
-            resolve(matchingAccount);
-          } else {
-            // No matching account found
-            throw new Error('No matching account found. Please upload a portfolio snapshot first.');
-          }
-        }
-      });
-
-      console.log('Using account for transactions:', confirmedAccountName);
-
-      // Get existing transactions for comparison
-      const existingTransactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
-
-      // Remove duplicates
-      const uniqueTransactions = removeDuplicateTransactions(
-        transactionData.transactions,
-        existingTransactions
-      );
-
-      // Save transactions
-      await portfolioService.bulkMergeTransactions(uniqueTransactions, confirmedAccountName);
-
-      // Save the original file
-      await saveUploadedFile(
-        { name: fileName },
-        fileContent,
-        confirmedAccountName,
-        'json',
-        new Date(transactionData.fromDate)
-      );
-
-      // Record success
-      recordUploadSuccess(fileName);
-
-      // Get the latest snapshot to refresh the portfolio
-      const latestSnapshot = await portfolioService.getLatestSnapshot(confirmedAccountName);
-      if (latestSnapshot) {
-        await loadHandlers.loadPortfolio(
-          latestSnapshot.data,
-          confirmedAccountName,
-          latestSnapshot.date,
-          latestSnapshot.accountTotal
-        );
-      }
-      loadHandlers.setLoadingState(false);
-      
-      // Close modal if provided
-      if (loadHandlers.onModalClose) {
-        loadHandlers.onModalClose();
-      }
-    } catch (err) {
-      console.error('Error processing transaction file:', err);
-      loadHandlers.setLoadingState(false);
-      throw err;
-    }
-  };
-  
-  /**
-   * Handles portfolio CSV file upload - FIXED VERSION
-   * @param {string} fileContent - File content as string
-   * @param {string} fileName - Name of uploaded file
-   * @param {Date} dateFromFileName - Date extracted from filename (optional)
-   */
-  const handlePortfolioFile = async (fileContent, fileName, dateFromFileName = null) => {
-    try {
-      // Parse portfolio data
-      const { portfolioData, portfolioDate, accountTotal, csvAccountName } = parsePortfolioCSV(fileContent);
-      if (!portfolioData || !Array.isArray(portfolioData) || portfolioData.length === 0) {
-        throw new Error('Invalid portfolio file format');
-      }
-
-      // Get account name from CSV content first, then fall back to filename
-      const rawAccountName = csvAccountName || getAccountNameFromFilename(fileName);
-      if (!rawAccountName) {
-        throw new Error('Could not determine account name from file');
-      }
-
-      console.log('Raw account name:', rawAccountName);
-
-      // Get all existing accounts
-      const existingAccounts = await portfolioService.getAllAccounts();
-      console.log('Existing accounts:', existingAccounts);
-      
-      // Find similar accounts
-      const similarAccounts = findSimilarAccountNames(rawAccountName, existingAccounts);
-      console.log('Similar accounts:', similarAccounts);
-
-      // Handle account name confirmation
-      const confirmedAccountName = await new Promise((resolve) => {
-        if (similarAccounts.length > 0) {
-          // Show confirmation dialog with similar accounts
-          accountConfirmationHandler(rawAccountName, resolve, similarAccounts);
+          debugLog('useFileUpload', 'load', 'Portfolio data loaded');
         } else {
-          // No similar accounts found, use the new account name
-          resolve(rawAccountName);
+          debugLog('useFileUpload', 'error', 'loadPortfolio callback is not a function');
+          throw new Error('loadPortfolio is not a function');
         }
-      });
-
-      console.log('Confirmed account name:', confirmedAccountName);
-
-      // Get snapshot date
-      const snapshotDate = dateFromFileName || portfolioDate || parseDateFromFilename(fileName) || new Date();
-
-      // Get latest snapshot for comparison
-      const latestSnapshot = await portfolioService.getLatestSnapshot(confirmedAccountName);
-
-      // Analyze changes
-      const changes = analyzePortfolioChanges(portfolioData, latestSnapshot?.data || []);
-
-      // Check if we have any transaction data for this account
-      const transactions = await portfolioService.getTransactionsByAccount(confirmedAccountName);
-      const hasTransactionData = transactions && transactions.length > 0;
-
-      // Save portfolio snapshot
-      const portfolioId = await portfolioService.savePortfolioSnapshot(
-        portfolioData,
-        confirmedAccountName,
-        snapshotDate,
-        accountTotal
-      );
-
-      console.log('Saved portfolio snapshot:', {
-        portfolioId,
-        accountName: confirmedAccountName,
-        date: snapshotDate,
-        positions: portfolioData.length,
-        totalValue: accountTotal?.totalValue
-      });
-
-      // If no transaction data exists, create lots from the snapshot
-      if (!hasTransactionData) {
-        console.log('No transaction data found, creating lots from snapshot');
-        const { createdLots, errors } = await createLotsFromSnapshot(portfolioData, confirmedAccountName, snapshotDate);
-        console.log('Created lots from snapshot:', {
-          count: createdLots.length,
-          errors: errors.length
+      } else {
+        debugLog('useFileUpload', 'warn', 'Missing data for portfolio load', {
+          hasData: !!result.data,
+          hasAccountName: !!result.accountName
         });
       }
 
-      // Save the original file
-      await saveUploadedFile(
-        { name: fileName },
-        fileContent,
-        confirmedAccountName,
-        'portfolio',
-        snapshotDate
-      );
+      // Show success message
+      showDialog({
+        title: 'Upload Successful',
+        message: 'File has been processed and saved successfully.',
+        type: 'success'
+      });
 
-      // Record success
-      recordUploadSuccess(fileName);
+      // Navigate to portfolio view if onNavigate is provided
+      if (callbacks.onNavigate) {
+        debugLog('useFileUpload', 'navigate', 'Navigating to portfolio view');
+        callbacks.onNavigate('portfolio');
+      }
 
-      // Refresh portfolio data and reset loading state
-      await loadHandlers.loadPortfolio(portfolioData, confirmedAccountName, snapshotDate, accountTotal);
-      loadHandlers.setLoadingState(false);
+      return result;
+    } catch (error) {
+      debugLog('useFileUpload', 'error', 'File upload failed', {
+        error: error.message,
+        stack: error.stack
+      });
       
-      // Close modal if provided
-      if (loadHandlers.onModalClose) {
-        loadHandlers.onModalClose();
-      }
+      console.error('File upload error:', error);
+      setUploadError(error.message);
+      
+      showDialog({
+        title: 'Upload Failed',
+        message: error.message,
+        type: 'error'
+      });
 
-      // Check for acquisition dates
-      if (changes.acquisitionsFound && onAcquisitionsFound) {
-        onAcquisitionsFound(changes.acquisitions);
-      }
-    } catch (err) {
-      console.error('Error processing portfolio file:', err);
-      loadHandlers.setLoadingState(false);
-      throw err;
+      return {
+        success: false,
+        error: error.message
+      };
+    } finally {
+      setIsUploading(false);
+      debugLog('useFileUpload', 'end', 'File upload process completed');
     }
   };
 
   return {
-    handleFileLoaded,
-    validateFile,
-    fileStats,
-    canUploadTransactions
+    handleFileUpload,
+    isUploading,
+    uploadError
   };
-};
+}
 
 export default useFileUpload;

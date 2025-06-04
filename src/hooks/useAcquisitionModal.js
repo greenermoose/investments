@@ -1,7 +1,7 @@
 // hooks/useAcquisitionModal.js revision: 2
 
 import { useState } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 
 export const useAcquisitionModal = () => {
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);

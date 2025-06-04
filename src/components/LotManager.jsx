@@ -1,6 +1,6 @@
 // components/LotManager.jsx
 import React, { useState, useEffect } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { 
   calculateWeightedAverageCost, 
   calculateUnrealizedGainLoss

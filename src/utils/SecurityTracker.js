@@ -1,7 +1,7 @@
 // utils/securityTracker.js
 // Utility functions for tracking and retrieving security history
 
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { TransactionCategories } from './transactionEngine';
 import { formatDate } from './dataUtils';
 

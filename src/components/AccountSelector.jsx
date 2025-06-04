@@ -1,6 +1,6 @@
 // components/AccountSelector.jsx revision: 3
 import React, { useState, useEffect } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { formatDate } from '../utils/dataUtils';
 import { ChevronDown, Plus, AlertCircle, CheckCircle } from 'lucide-react';
 

@@ -7,7 +7,7 @@ import { Upload, FileText, Database, HelpCircle, AlertTriangle, CheckCircle, X }
 import { validateFile, FileTypes } from '../utils/fileProcessing';
 import { useFileUpload } from '../hooks/useFileUpload';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { findSimilarAccountNames } from '../utils/fileProcessing';
 
 /**

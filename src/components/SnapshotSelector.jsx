@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { formatDate } from '../utils/dataUtils';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { Clock, ChevronDown } from 'lucide-react';
 
 const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refreshKey }) => {

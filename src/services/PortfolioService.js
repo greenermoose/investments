@@ -426,10 +426,37 @@ class PortfolioService {
       };
     }
   }
+
+  /**
+   * Check if account has any transactions
+   * @param {string} account - Account name
+   * @returns {Promise<boolean>} True if account has transactions
+   */
+  async hasTransactions(account) {
+    try {
+      const transactions = await this.getTransactionsByAccount(account);
+      return transactions && transactions.length > 0;
+    } catch (error) {
+      console.error('Error checking transactions:', error);
+      return false;
+    }
+  }
+
+  /**
+   * Create lots from portfolio snapshot
+   * @param {Array} portfolioData - Portfolio positions
+   * @param {string} accountName - Account name
+   * @param {Date} snapshotDate - Date of the snapshot
+   * @returns {Promise<Object>} Result with created lots and errors
+   */
+  async createLotsFromSnapshot(portfolioData, accountName, snapshotDate) {
+    try {
+      return await this.lotRepo.createLotsFromSnapshot(portfolioData, accountName, snapshotDate);
+    } catch (error) {
+      console.error('Error creating lots from snapshot:', error);
+      throw error;
+    }
+  }
 }
 
-// Export singleton instance
-export const portfolioService = new PortfolioService();
-
-// Also export the class for testing
-export { PortfolioService };
+export default new PortfolioService();

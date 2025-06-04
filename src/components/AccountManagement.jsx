@@ -1,6 +1,6 @@
 // components/AccountManagement.jsx revision: 2
 import React, { useState, useEffect } from 'react';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import { formatDate } from '../utils/dataUtils';
 import { Trash2, Upload, AlertCircle, CheckCircle, ChevronDown } from 'lucide-react';
 import DeleteConfirmationModal from './DeleteConfirmationModal';

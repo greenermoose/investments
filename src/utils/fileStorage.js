@@ -73,6 +73,62 @@ export const findFileByName = async (filename) => {
 };
 
 /**
+ * Process raw file data into normalized format
+ * @param {string} content - Raw file content
+ * @param {string} fileType - Type of file (csv/json)
+ * @returns {Object} Processed data
+ */
+export const processFileData = (content, fileType) => {
+  try {
+    if (fileType === 'csv') {
+      // Parse CSV content
+      const lines = content.split('\n');
+      const headers = lines[0].split(',').map(h => h.trim());
+      
+      // Normalize headers to standard format
+      const normalizedHeaders = headers.map(header => {
+        const lowerHeader = header.toLowerCase();
+        if (lowerHeader.includes('symbol')) return 'Symbol';
+        if (lowerHeader.includes('quantity') || lowerHeader.includes('qty')) return 'Qty (Quantity)';
+        if (lowerHeader.includes('market value') || lowerHeader.includes('mkt val')) return 'Mkt Val (Market Value)';
+        if (lowerHeader.includes('cost basis')) return 'Cost Basis';
+        if (lowerHeader.includes('gain/loss')) return 'Gain $ (Gain/Loss $)';
+        return header;
+      });
+
+      // Process data rows
+      const processedData = lines.slice(1)
+        .filter(line => line.trim())
+        .map(line => {
+          const values = line.split(',').map(v => v.trim());
+          const row = {};
+          normalizedHeaders.forEach((header, index) => {
+            row[header] = values[index] || '';
+          });
+          return row;
+        });
+
+      return {
+        success: true,
+        data: processedData,
+        headers: normalizedHeaders
+      };
+    }
+    
+    return {
+      success: false,
+      error: 'Unsupported file type'
+    };
+  } catch (error) {
+    console.error('Error processing file:', error);
+    return {
+      success: false,
+      error: error.message
+    };
+  }
+};
+
+/**
  * Save an uploaded file to the database
  * @param {File|Object} file - File object or file data
  * @param {string} content - File content as string
@@ -118,6 +174,9 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     };
   }
 
+  // Process the file data
+  const processingResult = processFileData(content, fileType);
+  
   // No duplicate, proceed with saving
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
@@ -135,8 +194,8 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       fileDate,
       uploadDate: new Date(),
       fileSize: content.length,
-      processed: false,
-      processingResult: null,
+      processed: processingResult.success,
+      processingResult: processingResult,
       lastAccessed: new Date()
     };
 

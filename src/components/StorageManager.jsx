@@ -12,7 +12,7 @@ import {
   importAllData, 
   purgeAllData
 } from '../utils/databaseUtils';
-import { portfolioService } from '../services/PortfolioService';
+import portfolioService from '../services/PortfolioService';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 
@@ -31,6 +31,8 @@ const StorageManager = ({ onDataChange }) => {
     onConfirm: null
   });
   const [activeSection, setActiveSection] = useState('files');
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [fileContent, setFileContent] = useState(null);
 
   useEffect(() => {
     loadStorageData();
@@ -266,6 +268,111 @@ const StorageManager = ({ onDataChange }) => {
     }
   };
 
+  const loadFileContent = async (fileId) => {
+    try {
+      const db = await initializeDB();
+      const transaction = db.transaction(['files'], 'readonly');
+      const store = transaction.objectStore('files');
+      const file = await new Promise((resolve, reject) => {
+        const request = store.get(fileId);
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+
+      if (file) {
+        setSelectedFile(file);
+        setFileContent(file.content);
+      }
+    } catch (err) {
+      console.error('Error loading file content:', err);
+      setError('Failed to load file content: ' + err.message);
+    }
+  };
+
+  const renderFileContent = () => {
+    if (!selectedFile || !fileContent) return null;
+
+    return (
+      <div className="mt-4 p-4 bg-white rounded-lg shadow">
+        <h3 className="text-lg font-semibold mb-2">File Details</h3>
+        <div className="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <p className="text-sm text-gray-600">Filename</p>
+            <p className="font-medium">{selectedFile.filename}</p>
+          </div>
+          <div>
+            <p className="text-sm text-gray-600">Upload Date</p>
+            <p className="font-medium">{formatDate(selectedFile.uploadDate)}</p>
+          </div>
+          <div>
+            <p className="text-sm text-gray-600">File Type</p>
+            <p className="font-medium">{selectedFile.fileType}</p>
+          </div>
+          <div>
+            <p className="text-sm text-gray-600">Processing Status</p>
+            <p className="font-medium">
+              {selectedFile.processed ? (
+                <span className="text-green-600">Processed Successfully</span>
+              ) : (
+                <span className="text-red-600">Processing Failed</span>
+              )}
+            </p>
+          </div>
+        </div>
+
+        {selectedFile.processed && selectedFile.processingResult && (
+          <div className="mt-4">
+            <h4 className="text-md font-semibold mb-2">Processed Data</h4>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    {selectedFile.processingResult.headers.map((header, index) => (
+                      <th
+                        key={index}
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {selectedFile.processingResult.data.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                      {selectedFile.processingResult.headers.map((header, colIndex) => (
+                        <td
+                          key={colIndex}
+                          className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
+                        >
+                          {row[header]}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {!selectedFile.processed && selectedFile.processingResult && (
+          <div className="mt-4 p-4 bg-red-50 rounded-lg">
+            <h4 className="text-md font-semibold text-red-800 mb-2">Processing Error</h4>
+            <p className="text-sm text-red-600">{selectedFile.processingResult.error}</p>
+          </div>
+        )}
+
+        <div className="mt-4">
+          <h4 className="text-md font-semibold mb-2">Raw Content</h4>
+          <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto text-sm">
+            {fileContent}
+          </pre>
+        </div>
+      </div>
+    );
+  };
+
   const renderTabNavigation = () => {
     return (
       <div className="tab-container">
@@ -452,6 +559,8 @@ const StorageManager = ({ onDataChange }) => {
         message={deleteModal.message}
         type={deleteModal.type}
       />
+
+      {renderFileContent()}
     </div>
   );
 };

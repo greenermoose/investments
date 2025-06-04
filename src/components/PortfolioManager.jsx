@@ -9,6 +9,7 @@ import {
 import { useFileUpload } from '../hooks/useFileUpload';
 import { X, FileText, Database } from 'lucide-react';
 import portfolioService from '../services/PortfolioService';
+import { debugLog } from '../utils/debugConfig';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -24,11 +25,6 @@ import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
 import PortfolioHistory from './PortfolioHistory';
-
-// Debug logging for PortfolioManager
-const debugLog = (action, message, data = {}) => {
-  console.log(`[PortfolioManager] ${action}:`, message, data);
-};
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -52,7 +48,7 @@ const PortfolioManager = () => {
 
   // Debug log state changes
   useEffect(() => {
-    debugLog('state', 'Portfolio state changed', {
+    debugLog('ui', 'state', 'Portfolio state changed', {
       isDataLoaded: portfolio.isDataLoaded,
       isLoading: portfolio.isLoading,
       hasError: !!portfolio.error,
@@ -68,7 +64,7 @@ const PortfolioManager = () => {
       setLoadingState: portfolio.setLoadingState,
       resetError: portfolio.resetError,
       loadPortfolio: async (data, accountName, date, accountTotal) => {
-        debugLog('upload', 'Loading portfolio from file upload', {
+        debugLog('ui', 'load', 'Loading portfolio from file upload', {
           accountName,
           date,
           dataLength: data?.length
@@ -115,20 +111,20 @@ const PortfolioManager = () => {
 
   // Handle account change
   const handleAccountChange = async (newAccount) => {
-    debugLog('account', 'Account change requested', { newAccount });
+    debugLog('ui', 'account', 'Account change requested', { newAccount });
     setSelectedAccount(newAccount);
     await refreshData();
   };
 
   // Handle file upload modals
   const handleCsvUpload = () => {
-    debugLog('upload', 'CSV upload requested');
+    debugLog('ui', 'upload', 'CSV upload requested');
     setUploadModalType('csv');
     setShowUploadModal(true);
   };
 
   const handleJsonUpload = () => {
-    debugLog('upload', 'JSON upload requested');
+    debugLog('ui', 'upload', 'JSON upload requested');
     setUploadModalType('json');
     setShowUploadModal(true);
   };
@@ -196,20 +192,13 @@ const PortfolioManager = () => {
 
   // Handle acquisition modal submission
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
-    debugLog('acquisition', 'Acquisition modal submitted', {
+    debugLog('ui', 'acquisition', 'Acquisition modal submitted', {
       change,
       acquisitionDate,
       isTickerChange,
       oldSymbol
     });
-    handleAcquisitionSubmit(
-      change, 
-      acquisitionDate, 
-      isTickerChange, 
-      oldSymbol, 
-      currentAccount || selectedAccount,
-      lotData
-    );
+    handleAcquisitionSubmit(change, acquisitionDate, isTickerChange, oldSymbol, lotData);
   };
   
   // Determine file upload stats

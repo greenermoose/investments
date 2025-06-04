@@ -16,10 +16,10 @@ const DEBUG_CONFIG = {
       }
     },
     portfolio: {
-      enabled: false,
+      enabled: true,
       categories: {
         loading: false,
-        storage: false,
+        storage: true,
         calculations: false,
         updates: false
       }
@@ -38,7 +38,10 @@ const DEBUG_CONFIG = {
       categories: {
         rendering: false,
         interactions: false,
-        state: false
+        state: false,
+        effects: false,
+        load: false,
+        stats: false
       }
     },
     assetAllocation: {
@@ -48,6 +51,14 @@ const DEBUG_CONFIG = {
         rendering: false,
         dataProcessing: false,
         updates: false
+      }
+    },
+    pipeline: {
+      enabled: true,
+      categories: {
+        parsing: true,
+        processing: true,
+        storage: true
       }
     }
   }

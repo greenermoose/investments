@@ -1,10 +1,16 @@
 import portfolioService from '../../services/PortfolioService';
 import { calculateAccountTotals, analyzeChanges } from '../../utils/portfolioAnalysis';
+import { PortfolioRepository } from '../../repositories/PortfolioRepository';
+import { debugLog } from '../../utils/debugConfig';
 
 /**
  * Processes parsed portfolio data and saves it to the database
  */
 export class PortfolioProcessor {
+  constructor() {
+    this.repository = new PortfolioRepository();
+  }
+
   /**
    * Process and save portfolio snapshot
    * @param {Object} params - Processing parameters
@@ -15,11 +21,23 @@ export class PortfolioProcessor {
    * @returns {Promise<Object>} Processing result
    */
   async processPortfolioSnapshot({ parsedData, accountName, snapshotDate, fileId }) {
-    try {
-      if (!parsedData.success) {
-        throw new Error(`Failed to parse portfolio data: ${parsedData.error}`);
-      }
+    const { parsedDataLength, firstPosition } = parsedData;
 
+    debugLog('portfolio', 'processing', 'Processing portfolio snapshot:', {
+      accountName,
+      snapshotDate,
+      parsedDataLength,
+      firstPosition
+    });
+
+    if (!parsedData.success) {
+      return {
+        success: false,
+        error: 'Failed to parse portfolio data'
+      };
+    }
+
+    try {
       // Get existing accounts to check for similar names
       const existingAccounts = await portfolioService.getAllAccounts();
       const similarAccount = existingAccounts.find(acc => 
@@ -31,6 +49,8 @@ export class PortfolioProcessor {
 
       // Calculate account totals
       const accountTotals = calculateAccountTotals(parsedData.data);
+
+      debugLog('portfolio', 'processing', 'Calculated account totals:', accountTotals);
 
       // Get latest snapshot for comparison
       const latestSnapshot = await portfolioService.getLatestSnapshot(finalAccountName);
@@ -65,6 +85,12 @@ export class PortfolioProcessor {
         );
       }
 
+      debugLog('portfolio', 'processing', 'Saved portfolio snapshot:', {
+        success: true,
+        portfolioId: snapshot.id,
+        positionsCount: snapshot.data.length
+      });
+
       return {
         success: true,
         snapshot,
@@ -72,7 +98,7 @@ export class PortfolioProcessor {
         changes
       };
     } catch (error) {
-      console.error('Error processing portfolio snapshot:', error);
+      debugLog('portfolio', 'processing', 'Error processing portfolio snapshot:', error);
       return {
         success: false,
         error: error.message

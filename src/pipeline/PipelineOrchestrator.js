@@ -2,6 +2,7 @@ import { FileUploader } from './upload/FileUploader';
 import { saveUploadedFile, markFileAsProcessed } from '../utils/fileStorage';
 import { ParserFactory } from './parser/FileParser';
 import { PortfolioProcessor } from './portfolio/PortfolioProcessor';
+import { debugLog } from '../utils/debugConfig';
 
 /**
  * Orchestrates the file processing pipeline
@@ -52,6 +53,11 @@ export class PipelineOrchestrator {
 
       // Stage 4: Parse file content
       const parsedData = parser.parse(uploadResult.content);
+      debugLog('pipeline', 'parsing', 'Parsed data:', {
+        success: parsedData.success,
+        dataLength: parsedData.data?.length,
+        firstPosition: parsedData.data?.[0]
+      });
       
       // Stage 5: Process and save to portfolio database
       let processingResult;
@@ -61,6 +67,12 @@ export class PipelineOrchestrator {
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
           fileId: fileRecord.id
+        });
+        debugLog('pipeline', 'processing', 'Processing result:', {
+          success: processingResult.success,
+          hasSnapshot: !!processingResult.snapshot,
+          snapshotDataLength: processingResult.snapshot?.data?.length,
+          firstSnapshotPosition: processingResult.snapshot?.data?.[0]
         });
       } else {
         processingResult = await this.processor.processTransactions({
@@ -77,13 +89,23 @@ export class PipelineOrchestrator {
         result: processingResult
       });
 
+      // For CSV files, use the parsed data directly if snapshot is not available
+      const portfolioData = uploadResult.fileType === 'CSV' 
+        ? (processingResult.snapshot?.data || parsedData.data)
+        : [];
+
+      debugLog('pipeline', 'storage', 'Final portfolio data:', {
+        dataLength: portfolioData.length,
+        firstPosition: portfolioData[0]
+      });
+
       return {
         success: true,
         fileRecord,
         processingResult,
-        data: processingResult.snapshot?.data || [],
+        data: portfolioData,
         accountName: processingResult.accountName,
-        date: processingResult.snapshot?.date,
+        date: processingResult.snapshot?.date || metadata.date,
         accountTotal: processingResult.snapshot?.accountTotal
       };
     } catch (error) {

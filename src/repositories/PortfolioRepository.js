@@ -2,7 +2,7 @@
 // Repository for portfolio snapshots
 
 import { BaseRepository } from './BaseRepository';
-import { STORE_NAME_PORTFOLIOS } from '../utils/databaseUtils';
+import { STORE_NAME_PORTFOLIOS, initializeDB } from '../utils/databaseUtils';
 import { debugLog } from '../utils/debugConfig';
 
 export class PortfolioRepository extends BaseRepository {
@@ -12,70 +12,75 @@ export class PortfolioRepository extends BaseRepository {
 
   /**
    * Save a portfolio snapshot
-   * @param {Array} portfolioData - Portfolio positions
-   * @param {string} accountName - Account name
-   * @param {Date} date - Snapshot date
-   * @param {Object} accountTotal - Account totals
-   * @param {Object} transactionMetadata - Optional transaction metadata
-   * @returns {Promise<string>} Portfolio ID
+   * @param {Object} portfolio - Portfolio data to save
+   * @returns {Promise<Object>} Saved portfolio data
    */
-  async saveSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
-    if (!portfolioData || !Array.isArray(portfolioData)) {
-      throw new Error('Invalid portfolio data: must be an array');
-    }
-
-    if (!accountName) {
-      throw new Error('Account name is required');
-    }
-
-    if (!(date instanceof Date) || isNaN(date.getTime())) {
-      throw new Error('Invalid date provided');
-    }
-
+  async saveSnapshot(portfolio) {
     debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
-      accountName,
-      date: date.toISOString(),
-      positions: portfolioData.length,
-      totalValue: accountTotal?.totalValue
+      accountName: portfolio.accountName,
+      date: portfolio.date,
+      positionsCount: portfolio.data?.length
     });
 
-    // Create a unique portfolio ID with random component to prevent collisions
-    const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
-    
-    // Validate and normalize portfolio data
-    const normalizedData = portfolioData.map(position => {
-      // Skip invalid positions
-      if (!position.symbol) return null;
-      
-      return {
-        Symbol: position.symbol,
-        Description: position.description || position.symbol,
-        'Qty (Quantity)': parseFloat(position.quantity) || 0,
-        'Mkt Val (Market Value)': parseFloat(position.marketValue) || 0,
-        'Price': parseFloat(position.price) || 0,
-        'Cost Basis': parseFloat(position.costBasis) || 0,
-        'Gain $ (Gain/Loss $)': parseFloat(position.gainLoss?.dollar) || 0,
-        'Gain % (Gain/Loss %)': parseFloat(position.gainLoss?.percent) || 0,
-        'Security Type': position.type || 'Unknown'
-      };
-    }).filter(Boolean); // Remove null entries
+    // Create a unique portfolio ID to prevent collisions
+    const portfolioId = `${portfolio.accountName}-${portfolio.date}`;
 
-    const portfolio = {
+    // Validate and normalize portfolio data
+    const normalizedData = portfolio.data.map(position => {
+      // Skip positions with missing required fields
+      if (!position.Symbol || !position['Current Value']) {
+        debugLog('portfolio', 'storage', 'Skipping invalid position:', position);
+        return null;
+      }
+
+      return {
+        symbol: position.Symbol,
+        description: position.Description || '',
+        quantity: parseFloat(position.Quantity) || 0,
+        price: parseFloat(position['Current Price']) || 0,
+        value: parseFloat(position['Current Value']) || 0,
+        costBasis: parseFloat(position['Cost Basis']) || 0,
+        gainLoss: parseFloat(position['Gain/Loss']) || 0,
+        gainLossPercent: parseFloat(position['Gain/Loss %']) || 0
+      };
+    }).filter(Boolean);
+
+    debugLog('portfolio', 'storage', 'Normalized data:', {
+      count: normalizedData.length,
+      firstPosition: normalizedData[0]
+    });
+
+    // Calculate totals
+    const totalValue = normalizedData.reduce((sum, pos) => sum + pos.value, 0);
+    const totalGain = normalizedData.reduce((sum, pos) => sum + pos.gainLoss, 0);
+
+    const portfolioData = {
       id: portfolioId,
-      account: accountName,
-      date: date,
+      accountName: portfolio.accountName,
+      date: portfolio.date,
       data: normalizedData,
-      accountTotal: accountTotal || {
-        totalValue: normalizedData.reduce((sum, pos) => sum + (pos['Mkt Val (Market Value)'] || 0), 0),
-        totalGain: normalizedData.reduce((sum, pos) => sum + (pos['Gain $ (Gain/Loss $)'] || 0), 0)
+      accountTotal: {
+        value: totalValue,
+        gainLoss: totalGain
       },
-      transactionMetadata: transactionMetadata,
-      createdAt: new Date()
+      metadata: {
+        source: portfolio.metadata?.source || 'manual',
+        fileId: portfolio.metadata?.fileId
+      },
+      createdAt: new Date().toISOString()
     };
-    
-    await this.save(portfolio);
-    debugLog('portfolio', 'storage', 'Successfully saved portfolio snapshot:', portfolioId);
-    return portfolioId;
+
+    debugLog('portfolio', 'storage', 'Saving portfolio data:', {
+      id: portfolioId,
+      totalValue,
+      totalGain
+    });
+
+    const db = await initializeDB();
+    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+    await store.put(portfolioData);
+    return portfolioData;
   }
 
   /**

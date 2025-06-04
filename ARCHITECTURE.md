@@ -158,3 +158,133 @@ useAccount() // selectedAccount, setSelectedAccount
 3. Maintain backwards compatibility
 4. Update architecture doc after changes
 5. Use feature flags for major changes
+
+## Debugging System
+
+The application uses a centralized debugging system through `src/utils/debugConfig.js`. This system provides granular control over which components and categories of debug messages are displayed.
+
+### Configuration
+
+Debug settings are controlled through a configuration object with the following structure:
+
+```javascript
+const DEBUG_CONFIG = {
+  enabled: true,  // Master switch for all debugging
+  components: {
+    componentName: {
+      enabled: true,  // Enable/disable all debugging for this component
+      categories: {
+        categoryName: true  // Enable/disable specific categories
+      }
+    }
+  }
+}
+```
+
+### Available Components and Categories
+
+- **database**
+  - initialization
+  - operations
+  - errors
+
+- **portfolio**
+  - loading
+  - storage
+  - calculations
+  - updates
+
+- **transactions**
+  - loading
+  - processing
+  - validation
+  - storage
+
+- **ui**
+  - rendering
+  - interactions
+  - state
+  - effects
+  - load
+  - stats
+
+- **assetAllocation**
+  - calculations
+  - rendering
+  - dataProcessing
+  - updates
+
+- **pipeline**
+  - parsing
+  - processing
+  - storage
+
+### Usage
+
+To use the debugging system in your code:
+
+1. Import the debug logging function:
+```javascript
+import { debugLog } from '../utils/debugConfig';
+```
+
+2. Call the function with component and category:
+```javascript
+debugLog('componentName', 'categoryName', 'Message', { data: 'object' });
+```
+
+Example:
+```javascript
+debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
+  accountName: 'My Account',
+  positionsCount: 10
+});
+```
+
+### Helper Functions
+
+The debugging system provides several helper functions:
+
+- `isDebugEnabled(component, category)`: Check if debugging is enabled for a component/category
+- `setDebugEnabled(component, category, enabled)`: Enable/disable debugging for a component/category
+- `setAllDebugEnabled(enabled)`: Enable/disable all debugging
+- `getDebugConfig()`: Get the current debug configuration
+
+### Best Practices
+
+1. Always use the centralized `debugLog` function instead of `console.log`
+2. Use appropriate component and category names
+3. Include relevant data objects for debugging context
+4. Keep debug messages concise and meaningful
+5. Use the configuration to control debug output in different environments
+
+### Example Configuration
+
+To enable only portfolio and pipeline debugging:
+
+```javascript
+const DEBUG_CONFIG = {
+  enabled: true,
+  components: {
+    portfolio: {
+      enabled: true,
+      categories: {
+        storage: true,
+        loading: false,
+        calculations: false,
+        updates: false
+      }
+    },
+    pipeline: {
+      enabled: true,
+      categories: {
+        parsing: true,
+        processing: true,
+        storage: true
+      }
+    }
+  }
+}
+```
+
+This configuration will only show debug messages from the portfolio storage and pipeline components, while suppressing all other debug output.

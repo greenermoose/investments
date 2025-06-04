@@ -1,5 +1,5 @@
 import { FileUploader } from './upload/FileUploader';
-import { FileStorage } from './storage/FileStorage';
+import { saveUploadedFile, markFileAsProcessed } from '../utils/fileStorage';
 import { ParserFactory } from './parser/FileParser';
 import { PortfolioProcessor } from './portfolio/PortfolioProcessor';
 
@@ -9,7 +9,6 @@ import { PortfolioProcessor } from './portfolio/PortfolioProcessor';
 export class PipelineOrchestrator {
   constructor() {
     this.uploader = new FileUploader();
-    this.storage = new FileStorage();
     this.processor = new PortfolioProcessor();
   }
 
@@ -30,23 +29,33 @@ export class PipelineOrchestrator {
         throw new Error(`Upload failed: ${uploadResult.error}`);
       }
 
-      // Stage 2: Store raw file
-      const fileRecord = await this.storage.saveFile({
-        filename: file.name,
-        content: uploadResult.content,
-        type: uploadResult.fileType
-      });
-
-      // Stage 3: Parse file
-      const parser = ParserFactory.createParser(fileRecord.type);
-      const parsedData = parser.parse(fileRecord.content);
-      
-      // Extract metadata from filename
+      // Stage 2: Parse file to extract metadata
+      const parser = ParserFactory.createParser(uploadResult.fileType);
       const metadata = parser.extractMetadata(file.name);
 
-      // Stage 4: Process and save to portfolio database
+      // Stage 3: Store raw file
+      const fileRecord = await saveUploadedFile(
+        file,
+        uploadResult.content,
+        metadata.accountName,
+        uploadResult.fileType,
+        metadata.date
+      );
+
+      if (fileRecord.isDuplicate) {
+        return {
+          success: false,
+          error: `File is a duplicate: ${fileRecord.duplicateType}`,
+          existingFile: fileRecord.existingFile
+        };
+      }
+
+      // Stage 4: Parse file content
+      const parsedData = parser.parse(uploadResult.content);
+      
+      // Stage 5: Process and save to portfolio database
       let processingResult;
-      if (fileRecord.type === 'CSV') {
+      if (uploadResult.fileType === 'CSV') {
         processingResult = await this.processor.processPortfolioSnapshot({
           parsedData,
           accountName: metadata.accountName,
@@ -62,7 +71,7 @@ export class PipelineOrchestrator {
       }
 
       // Update file record with processing status
-      await this.storage.markFileAsProcessed(fileRecord.id, {
+      await markFileAsProcessed(fileRecord.id, {
         success: processingResult.success,
         error: processingResult.error,
         result: processingResult

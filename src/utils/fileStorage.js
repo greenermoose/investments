@@ -129,6 +129,20 @@ export const processFileData = (content, fileType) => {
 };
 
 /**
+ * Generate a consistent portfolio reference
+ * @param {string} accountName - Account name
+ * @param {Date} date - Portfolio date
+ * @returns {string} Portfolio reference
+ */
+export const generatePortfolioReference = (accountName, date) => {
+  if (!accountName || !date) {
+    throw new Error('Account name and date are required for portfolio reference');
+  }
+  const formattedDate = date.toISOString().slice(0, 10).replace(/-/g, '');
+  return `${accountName}_${formattedDate}`;
+};
+
+/**
  * Save an uploaded file to the database
  * @param {File|Object} file - File object or file data
  * @param {string} content - File content as string
@@ -140,9 +154,8 @@ export const processFileData = (content, fileType) => {
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
   const db = await initializeFileStorage();
 
-  // Add a direct reference to the portfolio for this uploaded file
-  const formattedDate = fileDate ? fileDate.toISOString().slice(0, 10).replace(/-/g, '') : '';
-  const portfolioReference = `${accountName}_${formattedDate}`;
+  // Generate portfolio reference
+  const portfolioReference = generatePortfolioReference(accountName, fileDate || new Date());
 
   // Calculate file hash to detect duplicates
   const fileHash = await calculateFileHash(content);
@@ -186,7 +199,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     const fileRecord = {
       id: fileId,
       portfolioReference,
-      filename,
+      filename: filename || `${portfolioReference}.${fileType.toLowerCase()}`,
       account: accountName,
       fileType,
       fileHash,
@@ -479,32 +492,24 @@ export const migrateFromOldStorage = async () => {
     const missingFiles = [];
     
     portfolios.forEach(portfolio => {
-
       // Debug portfolio info
       console.log(`Portfolio: ${JSON.stringify(portfolio)}`);
 
-      // Generate expected filename for this portfolio
-      const accountName = portfolio.account;
-      const portfolioDate = new Date(portfolio.date);
-      
-      // Format date as YYYYMMDD
-      const formattedDate = portfolioDate.toISOString().slice(0, 10).replace(/-/g, '');
-      
-      // Expected filename pattern
-      const expectedPattern = `${accountName}_${formattedDate}`;
+      // Generate expected portfolio reference
+      const expectedReference = generatePortfolioReference(portfolio.account, new Date(portfolio.date));
       
       // Check if we have a file matching this pattern
       const matchingFile = files.find(file => 
-        file.portfolioReference === `${accountName}_${formattedDate}` ||
-        file.filename.includes(expectedPattern) && file.fileType === 'csv'
+        file.portfolioReference === expectedReference ||
+        (file.filename && file.filename.includes(expectedReference))
       );
       
       if (!matchingFile) {
         missingFiles.push({
-          accountName,
-          portfolioDate,
+          accountName: portfolio.account,
+          portfolioDate: new Date(portfolio.date),
           portfolioId: portfolio.id,
-          expectedPattern
+          expectedReference
         });
       }
     });

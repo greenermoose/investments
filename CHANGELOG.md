@@ -1,3 +1,7 @@
+### 0.4.61
+
+- missing file bug
+
 ### 0.4.60
 
 - process portfolio snapshot during upload

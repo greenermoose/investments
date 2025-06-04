@@ -56,7 +56,8 @@ const PortfolioHeader = ({
 
   const primaryNavigationItems = [
     { id: 'account-management', label: 'Account Management', icon: Settings },
-    { id: 'portfolio', label: 'Portfolio', icon: PieChart }
+    { id: 'portfolio', label: 'Portfolio', icon: PieChart },
+    { id: 'storage-manager', label: 'Storage', icon: HardDrive }
   ];
 
   const secondaryNavigationItems = [
@@ -66,6 +67,23 @@ const PortfolioHeader = ({
   ];
 
   const renderTab = (tabId, label) => {
+    // Special case for storage-manager - always show it
+    if (tabId === 'storage-manager') {
+      return (
+        <button
+          key={tabId}
+          onClick={() => onTabChange?.(tabId)}
+          className={`px-4 py-2 rounded-lg transition-colors ${
+            activeTab === tabId
+              ? 'bg-blue-500 text-white'
+              : 'text-gray-600 hover:bg-gray-100'
+          }`}
+        >
+          {label}
+        </button>
+      );
+    }
+    
     // Defensive check for availableTabs
     if (!Array.isArray(availableTabs) || !availableTabs.includes(tabId)) return null;
     

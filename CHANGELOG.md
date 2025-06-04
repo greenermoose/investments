@@ -1,3 +1,7 @@
+### 0.4.68
+
+- can see storage from welcome screen
+
 ### 0.4.67
 
 - more fixes to debugging

@@ -273,6 +273,11 @@ const PortfolioManager = () => {
       );
     }
 
+    // Special case for storage manager - always show it
+    if (activeTab === 'storage-manager') {
+      return <StorageManager onDataChange={refreshData} />;
+    }
+
     // If we have data loaded, show the appropriate view
     if (isDataLoaded) {
       switch (activeTab) {
@@ -305,8 +310,6 @@ const PortfolioManager = () => {
                  />;
         case 'history':
           return <PortfolioHistory />;
-        case 'storage-manager':
-          return <StorageManager onDataChange={refreshData} />;
         default:
           return <PortfolioDisplay 
                    portfolioData={portfolioData} 

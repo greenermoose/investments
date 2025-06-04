@@ -43,12 +43,22 @@ export class PortfolioRepository extends BaseRepository {
     const portfolioId = `${accountName}_${date.getTime()}_${Math.random().toString(36).substr(2, 9)}`;
     
     // Validate and normalize portfolio data
-    const normalizedData = portfolioData.map(position => ({
-      ...position,
-      Symbol: typeof position.Symbol === 'string' ? position.Symbol.trim() : String(position.Symbol || ''),
-      'Qty (Quantity)': parseFloat(position['Qty (Quantity)']) || 0,
-      'Mkt Val (Market Value)': parseFloat(position['Mkt Val (Market Value)']) || 0
-    }));
+    const normalizedData = portfolioData.map(position => {
+      // Skip invalid positions
+      if (!position.symbol) return null;
+      
+      return {
+        Symbol: position.symbol,
+        Description: position.description || position.symbol,
+        'Qty (Quantity)': parseFloat(position.quantity) || 0,
+        'Mkt Val (Market Value)': parseFloat(position.marketValue) || 0,
+        'Price': parseFloat(position.price) || 0,
+        'Cost Basis': parseFloat(position.costBasis) || 0,
+        'Gain $ (Gain/Loss $)': parseFloat(position.gainLoss?.dollar) || 0,
+        'Gain % (Gain/Loss %)': parseFloat(position.gainLoss?.percent) || 0,
+        'Security Type': position.type || 'Unknown'
+      };
+    }).filter(Boolean); // Remove null entries
 
     const portfolio = {
       id: portfolioId,

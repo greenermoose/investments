@@ -1,3 +1,7 @@
+### 0.4.62
+
+- snapshot parser bug
+
 ### 0.4.61
 
 - missing file bug

@@ -319,19 +319,21 @@ export const parsePortfolioCSV = (fileContent) => {
     let totalValue = 0;
     let totalGain = 0;
     
-    for (let i = headerRowIndex + 1; i < lines.length; i++) {
-      if (!lines[i].trim()) continue;
-      
+    // Parse all rows at once using Papa Parse
+    const parsedRows = Papa.parse(fileContent, {
+      delimiter: ",",
+      quoteChar: '"',
+      skipEmptyLines: true,
+      header: false
+    });
+    
+    // Skip rows before header and the header row itself
+    const dataRows = parsedRows.data.slice(headerRowIndex + 1);
+    
+    for (const row of dataRows) {
       try {
-        const parsed = Papa.parse(lines[i], {
-          delimiter: ",",
-          quoteChar: '"',
-          skipEmptyLines: true
-        });
-        
-        if (!parsed.data || !parsed.data[0]) continue;
-        
-        const row = parsed.data[0];
+        // Skip empty rows
+        if (!row || row.length === 0) continue;
         
         // Create mapped object using header mapping
         const mappedRow = {};
@@ -363,88 +365,61 @@ export const parsePortfolioCSV = (fileContent) => {
             mappedRow.Symbol !== 'Cash and Money Market' &&
             mappedRow.Symbol !== 'Total' &&
             mappedRow['Mkt Val (Market Value)']) {  // Only include rows with market value
-          // Ensure all required fields are present and valid
-          if (!mappedRow['Qty (Quantity)'] || isNaN(mappedRow['Qty (Quantity)'])) {
-            mappedRow['Qty (Quantity)'] = 0;
-          }
-          if (!mappedRow['Price'] || isNaN(mappedRow['Price'])) {
-            mappedRow['Price'] = 0;
-          }
-          if (!mappedRow['Cost Basis'] || isNaN(mappedRow['Cost Basis'])) {
-            mappedRow['Cost Basis'] = 0;
-          }
-
-          // Validate gain/loss dollar value
-          const gainLossDollar = parseFloat(mappedRow['Gain $ (Gain/Loss $)']);
-          if (isNaN(gainLossDollar)) {
-            debugLog('files', 'validation', `Invalid gain/loss dollar value for ${mappedRow.Symbol}:`, mappedRow['Gain $ (Gain/Loss $)']);
-            mappedRow['Gain $ (Gain/Loss $)'] = 0;
-          } else {
-            mappedRow['Gain $ (Gain/Loss $)'] = gainLossDollar;
-          }
-
-          // Validate gain/loss percentage value
-          const gainLossPercent = parseFloat(mappedRow['Gain % (Gain/Loss %)']);
-          if (isNaN(gainLossPercent) || gainLossPercent < -100 || gainLossPercent > 100) {
-            debugLog('files', 'validation', `Invalid gain/loss percentage value for ${mappedRow.Symbol}:`, mappedRow['Gain % (Gain/Loss %)']);
-            mappedRow['Gain % (Gain/Loss %)'] = 0;
-          } else {
-            mappedRow['Gain % (Gain/Loss %)'] = gainLossPercent;
-          }
-
-          // Calculate expected gain/loss percentage for validation
-          const calculatedGainLossPercent = mappedRow['Cost Basis'] > 0 ? 
-            (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0;
-
-          // Log validation results
-          debugLog('files', 'validation', `Validating position ${mappedRow.Symbol}:`, {
-            symbol: mappedRow.Symbol,
-            rawGainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
-            rawGainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
-            costBasis: mappedRow['Cost Basis'],
-            marketValue: mappedRow['Mkt Val (Market Value)'],
-            calculatedGainLossPercent,
-            validation: {
-              dollarValueValid: !isNaN(gainLossDollar),
-              percentValueValid: !isNaN(gainLossPercent) && gainLossPercent >= -100 && gainLossPercent <= 100,
-              calculatedPercentMatches: Math.abs(calculatedGainLossPercent - gainLossPercent) < 0.01
+          
+          // Get quantity and market value
+          const quantity = parseFloat(mappedRow['Qty (Quantity)']) || 0;
+          const marketValue = parseFloat(mappedRow['Mkt Val (Market Value)']) || 0;
+          
+          // Calculate price per share
+          const pricePerShare = quantity > 0 ? marketValue / quantity : 0;
+          
+          // Handle cost basis - determine if it's per share or total
+          let costBasisPerShare = 0;
+          let totalCostBasis = 0;
+          
+          if (mappedRow['Cost Basis']) {
+            const rawCostBasis = parseFloat(mappedRow['Cost Basis']);
+            if (!isNaN(rawCostBasis)) {
+              // If cost basis is close to market value, assume it's total cost basis
+              if (Math.abs(rawCostBasis - marketValue) < 0.01) {
+                totalCostBasis = rawCostBasis;
+                costBasisPerShare = quantity > 0 ? totalCostBasis / quantity : 0;
+              } else {
+                // Otherwise assume it's per share
+                costBasisPerShare = rawCostBasis;
+                totalCostBasis = costBasisPerShare * quantity;
+              }
             }
-          });
+          }
+          
+          // Create standardized position object
+          const position = {
+            symbol: mappedRow.Symbol,
+            description: mappedRow.Description || mappedRow.Symbol,
+            quantity: quantity,
+            price: pricePerShare,
+            marketValue: marketValue,
+            costBasis: costBasisPerShare,
+            totalCostBasis: totalCostBasis,
+            gainLoss: {
+              dollar: mappedRow['Gain $ (Gain/Loss $)'] || 0,
+              percent: mappedRow['Gain % (Gain/Loss %)'] || 0
+            },
+            type: mappedRow['Security Type'] || 'Unknown'
+          };
           
           // Add to totals
-          totalValue += mappedRow['Mkt Val (Market Value)'] || 0;
-          totalGain += mappedRow['Gain $ (Gain/Loss $)'] || 0;
+          totalValue += marketValue;
+          totalGain += position.gainLoss.dollar;
           
           if (portfolioData.length === 0) {
-            debugLog('files', 'parsing', 'First position parsed:', {
-              symbol: mappedRow.Symbol,
-              marketValue: mappedRow['Mkt Val (Market Value)'],
-              marketValueType: typeof mappedRow['Mkt Val (Market Value)'],
-              gainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
-              gainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
-              costBasis: mappedRow['Cost Basis'],
-              calculatedGainLossPercent: mappedRow['Cost Basis'] > 0 ? 
-                (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0,
-              rawRow: row,
-              mappedRow
-            });
+            debugLog('files', 'parsing', 'First position parsed:', position);
           }
           
-          // Log gain/loss calculations for each position
-          debugLog('files', 'calculations', `Parsing position ${portfolioData.length + 1} (${mappedRow.Symbol}):`, {
-            symbol: mappedRow.Symbol,
-            gainLossDollar: mappedRow['Gain $ (Gain/Loss $)'],
-            gainLossPercent: mappedRow['Gain % (Gain/Loss %)'],
-            costBasis: mappedRow['Cost Basis'],
-            marketValue: mappedRow['Mkt Val (Market Value)'],
-            calculatedGainLossPercent: mappedRow['Cost Basis'] > 0 ? 
-              (mappedRow['Gain $ (Gain/Loss $)'] / mappedRow['Cost Basis']) * 100 : 0
-          });
-          
-          portfolioData.push(mappedRow);
+          portfolioData.push(position);
         }
       } catch (rowError) {
-        debugLog('files', 'errors', `Error parsing row ${i}:`, rowError.message);
+        debugLog('files', 'errors', `Error parsing row:`, rowError.message);
         continue;
       }
     }
@@ -468,10 +443,23 @@ export const parsePortfolioCSV = (fileContent) => {
       samplePosition: portfolioData[0]
     });
     
-    return { portfolioData, portfolioDate, accountTotal };
+    return { 
+      success: true,
+      data: portfolioData,
+      date: portfolioDate,
+      accountTotal,
+      metadata: {
+        accountName: csvAccountName,
+        date: portfolioDate,
+        positionCount: portfolioData.length
+      }
+    };
   } catch (error) {
     debugLog('files', 'errors', 'Error parsing CSV:', error);
-    throw new Error(`Failed to parse the portfolio CSV data: ${error.message}`);
+    return {
+      success: false,
+      error: `Failed to parse the portfolio CSV data: ${error.message}`
+    };
   }
 };
 

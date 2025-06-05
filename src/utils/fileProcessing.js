@@ -30,30 +30,60 @@ export const FileClassifications = {
  * @returns {Object} File classification result
  */
 export const identifyAndClassifyFile = (content, filename, fileType) => {
-  debugLog('pipeline', 'classification', 'Identifying and classifying file', {
+  debugLog('file', 'processing', 'Starting file processing', {
     filename,
     fileType,
-    contentLength: content.length
+    contentLength: content.length,
+    firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
 
   try {
     // First determine if it's a portfolio snapshot or transactions file
     const classification = classifyFile(content, fileType);
     
-    debugLog('pipeline', 'classification', 'File classified', { classification });
+    debugLog('file', 'processing', 'File classified', { 
+      filename,
+      classification,
+      fileType,
+      contentLength: content.length
+    });
 
     // Process the file based on its classification
     let result;
     switch (classification) {
       case FileClassifications.PORTFOLIO_SNAPSHOT:
+        debugLog('file', 'processing', 'Processing as portfolio snapshot', {
+          filename,
+          contentLength: content.length,
+          firstFewLines: content.split('\n').slice(0, 3).join('\n')
+        });
         result = parsePortfolioCSV(content);
         break;
       case FileClassifications.TRANSACTIONS:
+        debugLog('file', 'processing', 'Processing as transactions file', {
+          filename,
+          contentLength: content.length,
+          firstFewLines: content.split('\n').slice(0, 3).join('\n')
+        });
         result = parseTransactionJSON(content);
         break;
       default:
+        debugLog('file', 'error', 'Unsupported file classification', {
+          filename,
+          classification,
+          fileType,
+          contentLength: content.length
+        });
         throw new Error('Unsupported file classification');
     }
+
+    debugLog('file', 'processing', 'File processing complete', {
+      filename,
+      classification,
+      success: result.success,
+      error: result.error,
+      contentLength: content.length
+    });
 
     return {
       success: true,
@@ -61,9 +91,12 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
       ...result
     };
   } catch (error) {
-    debugLog('pipeline', 'error', 'Error identifying and classifying file', {
+    debugLog('file', 'error', 'Error processing file', {
+      filename,
       error: error.message,
-      stack: error.stack
+      stack: error.stack,
+      contentLength: content.length,
+      firstFewLines: content.split('\n').slice(0, 3).join('\n')
     });
     return {
       success: false,
@@ -79,15 +112,22 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
  * @returns {string} File classification
  */
 const classifyFile = (content, fileType) => {
-  debugLog('pipeline', 'classification', 'Classifying file', {
+  debugLog('file', 'classification', 'Starting file classification', {
     fileType,
-    contentLength: content.length
+    contentLength: content.length,
+    firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
 
   try {
     if (fileType === FileTypes.CSV) {
       // Check if it's a portfolio snapshot by looking for common headers
       const lines = content.split('\n').filter(line => line.trim());
+      debugLog('file', 'classification', 'Analyzing CSV content', {
+        fileType,
+        totalLines: lines.length,
+        firstFewLines: lines.slice(0, 3)
+      });
+
       const headerPatterns = [
         /symbol/i,
         /description/i,
@@ -98,9 +138,16 @@ const classifyFile = (content, fileType) => {
         /gain\/loss|gain loss/i
       ];
 
-      for (const line of lines) {
-        const matches = headerPatterns.filter(pattern => pattern.test(line.toLowerCase()));
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].toLowerCase();
+        const matches = headerPatterns.filter(pattern => pattern.test(line));
         if (matches.length >= 3) {
+          debugLog('file', 'classification', 'Found portfolio snapshot headers', {
+            fileType,
+            lineNumber: i + 1,
+            line: lines[i],
+            matches: matches.map(m => m.toString())
+          });
           return FileClassifications.PORTFOLIO_SNAPSHOT;
         }
       }
@@ -117,22 +164,36 @@ const classifyFile = (content, fileType) => {
               (sampleItem.type || sampleItem.Type || sampleItem.transactionType);
             
             if (hasTransactionFields) {
+              debugLog('file', 'classification', 'Found transaction data structure', {
+                fileType,
+                sampleFields: Object.keys(sampleItem),
+                firstItem: sampleItem
+              });
               return FileClassifications.TRANSACTIONS;
             }
           }
         }
       } catch (error) {
-        debugLog('pipeline', 'error', 'Error parsing JSON for classification', {
-          error: error.message
+        debugLog('file', 'error', 'Error parsing JSON for classification', {
+          fileType,
+          error: error.message,
+          contentLength: content.length
         });
       }
     }
 
+    debugLog('file', 'classification', 'File classification complete - unknown type', {
+      fileType,
+      contentLength: content.length,
+      firstFewLines: content.split('\n').slice(0, 3).join('\n')
+    });
     return FileClassifications.UNKNOWN;
   } catch (error) {
-    debugLog('pipeline', 'error', 'Error classifying file', {
+    debugLog('file', 'error', 'Error classifying file', {
+      fileType,
       error: error.message,
-      stack: error.stack
+      stack: error.stack,
+      contentLength: content.length
     });
     return FileClassifications.UNKNOWN;
   }

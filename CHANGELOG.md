@@ -1,3 +1,7 @@
+### 0.4.76
+
+- updated debugging and documentation
+
 ### 0.4.75
 
 - refactoring fileProcessing

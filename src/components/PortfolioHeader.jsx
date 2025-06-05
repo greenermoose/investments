@@ -11,10 +11,9 @@ import {
   PieChart,
   List,
   Settings,
-  Layers,
-  Bug
+  Layers
 } from 'lucide-react';
-import { getDebugConfig, setAllDebugEnabled } from '../utils/debugConfig';
+import { getDebugConfig } from '../utils/debugConfig';
 
 const PortfolioHeader = ({ 
   portfolioDate, 
@@ -33,11 +32,9 @@ const PortfolioHeader = ({
   onJsonUpload,
   selectedAccount,
   availableTabs = ['account-management'], // Default value
-  onTabChange,
-  onDebugSettingsClick
+  onTabChange
 }) => {
   const [showUploadDropdown, setShowUploadDropdown] = useState(false);
-  const [isDebugEnabled, setIsDebugEnabled] = useState(getDebugConfig().enabled);
   const dropdownRef = useRef(null);
 
   // Close dropdown when clicking outside
@@ -107,13 +104,6 @@ const PortfolioHeader = ({
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-bold text-gray-800">Portfolio Manager</h1>
-          <button
-            onClick={onDebugSettingsClick}
-            className="flex items-center px-3 py-2 rounded-lg transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
-          >
-            <Bug className="w-4 h-4 mr-2" />
-            Debug Settings
-          </button>
         </div>
 
         <div className="flex items-center justify-between">

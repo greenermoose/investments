@@ -9,7 +9,7 @@ import {
 import { useFileUpload } from '../hooks/useFileUpload';
 import { X, FileText, Database } from 'lucide-react';
 import portfolioService from '../services/PortfolioService';
-import { debugLog, getDebugConfig, setAllDebugEnabled } from '../utils/debugConfig';
+import { debugLog, getDebugConfig } from '../utils/debugConfig';
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -26,8 +26,6 @@ import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
 import PortfolioHistory from './PortfolioHistory';
 import DebugControlPanel from './DebugControlPanel';
-import DebugSettings from './DebugSettings';
-import DebugSettingsModal from './DebugSettingsModal';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -42,52 +40,12 @@ const PortfolioManager = () => {
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);
   const [snapshotRefreshKey, setSnapshotRefreshKey] = useState(0);
-  const [showDebugSettings, setShowDebugSettings] = useState(false);
   const [confirmationDialog, setConfirmationDialog] = useState({
     isOpen: false,
     newAccountName: '',
     similarAccounts: [],
     resolve: null
   });
-
-  // Add debug state
-  const [isDebugEnabled, setIsDebugEnabled] = useState(getDebugConfig().enabled);
-
-  // Debug log state changes
-  useEffect(() => {
-    debugLog('ui', 'state', 'Portfolio state changed', {
-      isDataLoaded: portfolio.isDataLoaded,
-      isLoading: portfolio.isLoading,
-      hasError: !!portfolio.error,
-      currentAccount: portfolio.currentAccount,
-      activeTab: navigation.activeTab
-    });
-  }, [portfolio.isDataLoaded, portfolio.isLoading, portfolio.error, portfolio.currentAccount, navigation.activeTab]);
-
-  // File upload hook
-  const fileUpload = useFileUpload(
-    portfolio.portfolioData,
-    {
-      setLoadingState: portfolio.setLoadingState,
-      resetError: portfolio.resetError,
-      loadPortfolio: async (data, accountName, date, accountTotal) => {
-        debugLog('ui', 'load', 'Loading portfolio from file upload', {
-          accountName,
-          date,
-          dataLength: data?.length
-        });
-        await portfolio.loadPortfolio(data, accountName, date, accountTotal);
-        // Increment refresh key after successful portfolio load
-        setSnapshotRefreshKey(prev => prev + 1);
-      },
-      setError: portfolio.setError,
-      onModalClose: () => setShowUploadModal(false),
-      onNavigate: navigation.changeTab
-    },
-    {
-      openAcquisitionModal: acquisition.openAcquisitionModal
-    }
-  );
 
   // Destructure for easier access
   const {
@@ -345,7 +303,6 @@ const PortfolioManager = () => {
         availableTabs={getAvailableTabs()}
         activeTab={activeTab}
         onTabChange={changeTab}
-        onDebugSettingsClick={() => setShowDebugSettings(true)}
       />
 
       <main className="container mx-auto px-4 py-8">
@@ -354,10 +311,6 @@ const PortfolioManager = () => {
 
       <PortfolioFooter />
       <DebugControlPanel />
-      <DebugSettingsModal 
-        isOpen={showDebugSettings}
-        onClose={() => setShowDebugSettings(false)}
-      />
 
       {/* Modals */}
       {showUploadModal && (

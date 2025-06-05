@@ -91,18 +91,23 @@ export const findFileByName = async (filename) => {
  * @returns {Promise<Object>} Save result with file ID and duplicate info
  */
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
-  debugLog('pipeline', 'storage', 'Starting file save', {
+  debugLog('file', 'storage', 'Starting file save', {
     filename: file.name || file.filename,
     accountName,
     fileType,
-    fileDate: fileDate instanceof Date ? fileDate.toISOString() : fileDate
+    fileDate: fileDate?.toISOString(),
+    contentLength: content.length,
+    firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
 
   const db = await initializeFileStorage();
 
   // Calculate file hash to detect duplicates
   const fileHash = await calculateFileHash(content);
-  debugLog('pipeline', 'storage', 'Calculated file hash', { fileHash });
+  debugLog('file', 'storage', 'Calculated file hash', { 
+    fileHash,
+    contentLength: content.length 
+  });
 
   // Get filename from File object or passed data
   const filename = file.name || file.filename;
@@ -110,9 +115,10 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for exact duplicate (same hash)
   const existingFileByHash = await findFileByHash(fileHash);
   if (existingFileByHash) {
-    debugLog('pipeline', 'storage', 'Found duplicate by hash', {
+    debugLog('file', 'storage', 'Found duplicate by hash', {
       existingId: existingFileByHash.id,
-      filename: existingFileByHash.filename
+      filename: existingFileByHash.filename,
+      fileHash
     });
     return {
       id: existingFileByHash.id,
@@ -125,7 +131,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for filename conflict
   const existingFileByName = await findFileByName(filename);
   if (existingFileByName) {
-    debugLog('pipeline', 'storage', 'Found duplicate by name', {
+    debugLog('file', 'storage', 'Found duplicate by name', {
       existingId: existingFileByName.id,
       filename: existingFileByName.filename
     });
@@ -144,16 +150,18 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
 
     // Generate a unique file ID
     const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    debugLog('pipeline', 'storage', 'Generated file ID', { fileId });
+    debugLog('file', 'storage', 'Generated file ID', { 
+      fileId,
+      filename,
+      fileType 
+    });
     
     const fileRecord = {
       id: fileId,
       filename,
-      account: accountName,
       fileType,
       fileHash,
       content, // Store the raw file content
-      fileDate,
       uploadDate: new Date(),
       fileSize: content.length,
       processed: false,
@@ -161,16 +169,24 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       lastAccessed: new Date()
     };
 
-    debugLog('pipeline', 'storage', 'Attempting to save file record', {
+    debugLog('file', 'storage', 'Saving file record', {
       fileId,
       filename: fileRecord.filename,
-      fileType: fileRecord.fileType
+      fileType: fileRecord.fileType,
+      contentLength: content.length,
+      fileHash
     });
 
     const request = store.add(fileRecord);
 
     request.onsuccess = () => {
-      debugLog('pipeline', 'storage', 'File saved successfully', { fileId });
+      debugLog('file', 'storage', 'File saved successfully', { 
+        fileId,
+        filename: fileRecord.filename,
+        fileType: fileRecord.fileType,
+        contentLength: content.length,
+        fileHash
+      });
       resolve({
         id: fileId,
         isDuplicate: false
@@ -178,9 +194,11 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     };
 
     request.onerror = () => {
-      debugLog('pipeline', 'error', 'Failed to save file', {
+      debugLog('file', 'error', 'Failed to save file', {
         error: request.error,
-        filename: fileRecord.filename
+        filename: fileRecord.filename,
+        fileId,
+        fileType
       });
       reject(request.error);
     };

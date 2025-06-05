@@ -9,23 +9,21 @@ import { debugLog } from './debugConfig';
  * @returns {Object} Parsed portfolio data
  */
 export const parsePortfolioCSV = (content) => {
-  debugLog('pipeline', 'parsing', 'Parsing portfolio CSV', {
+  debugLog('file', 'parsing', 'Starting CSV parsing', {
     contentLength: content.length,
-    firstLine: content.split('\n')[0]
+    firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
 
   try {
-    // Split content into lines and remove empty lines
+    // Split content into lines and filter out empty lines
     const lines = content.split('\n').filter(line => line.trim());
-    
-    debugLog('pipeline', 'parsing', 'Split content into lines', {
+    debugLog('file', 'parsing', 'Split content into lines', {
       totalLines: lines.length,
-      firstLine: lines[0],
-      secondLine: lines[1]
+      firstFewLines: lines.slice(0, 3)
     });
 
-    // Find the header line by looking for common header patterns
-    let headerLineIndex = -1;
+    // Find the header row
+    let headerRow = -1;
     const headerPatterns = [
       /symbol/i,
       /description/i,
@@ -39,134 +37,137 @@ export const parsePortfolioCSV = (content) => {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].toLowerCase();
       const matches = headerPatterns.filter(pattern => pattern.test(line));
-      if (matches.length >= 3) { // Require at least 3 matching headers
-        headerLineIndex = i;
+      if (matches.length >= 3) {
+        headerRow = i;
+        debugLog('file', 'parsing', 'Found header row', {
+          lineNumber: i + 1,
+          line: lines[i],
+          matches: matches.map(m => m.toString()),
+          totalLines: lines.length
+        });
         break;
       }
     }
 
-    if (headerLineIndex === -1) {
-      throw new Error('Could not find header line in CSV file');
+    if (headerRow === -1) {
+      debugLog('file', 'error', 'No header row found', {
+        totalLines: lines.length,
+        firstFewLines: lines.slice(0, 3),
+        contentLength: content.length
+      });
+      return {
+        success: false,
+        error: 'No header row found'
+      };
     }
 
-    debugLog('pipeline', 'parsing', 'Found header line', {
-      headerLineIndex,
-      headerLine: lines[headerLineIndex]
-    });
+    // Process each line after the header
+    const positions = [];
+    let skippedLines = 0;
+    let errorLines = 0;
 
-    // Extract and normalize headers
-    const headers = lines[headerLineIndex].split(',').map(h => {
-      const trimmed = h.trim().replace(/^"|"$/g, '');
-      // Normalize common header variations
-      const lowerHeader = trimmed.toLowerCase();
-      if (lowerHeader.includes('symbol')) return 'Symbol';
-      if (lowerHeader.includes('description')) return 'Description';
-      if (lowerHeader.includes('quantity') || lowerHeader.includes('qty')) return 'Qty (Quantity)';
-      if (lowerHeader.includes('price')) return 'Price';
-      if (lowerHeader.includes('market value') || lowerHeader.includes('mkt val')) return 'Mkt Val (Market Value)';
-      if (lowerHeader.includes('cost basis')) return 'Cost Basis';
-      if (lowerHeader.includes('gain/loss') || lowerHeader.includes('gain loss')) {
-        return lowerHeader.includes('%') ? 'Gain % (Gain/Loss %)' : 'Gain $ (Gain/Loss $)';
-      }
-      return trimmed;
-    });
+    for (let i = headerRow + 1; i < lines.length; i++) {
+      const line = lines[i];
+      debugLog('file', 'parsing', 'Processing line', {
+        lineNumber: i + 1,
+        line,
+        totalLines: lines.length,
+        positionsFound: positions.length,
+        skippedLines,
+        errorLines
+      });
 
-    debugLog('pipeline', 'parsing', 'Normalized headers', { headers });
-
-    // Process data rows starting after the header line
-    const positions = lines.slice(headerLineIndex + 1)
-      .filter(line => {
-        const trimmed = line.trim();
-        const isValid = trimmed && 
-               !trimmed.includes('Account Total') && 
-               !trimmed.includes('Cash & Cash Investments');
-        
-        debugLog('pipeline', 'parsing', 'Filtering line', {
-          line: trimmed,
-          isValid,
-          isAccountTotal: trimmed.includes('Account Total'),
-          isCash: trimmed.includes('Cash & Cash Investments')
+      try {
+        // Parse the line as JSON
+        const data = JSON.parse(line);
+        debugLog('file', 'parsing', 'Parsed line as JSON', {
+          lineNumber: i + 1,
+          data,
+          totalLines: lines.length
         });
-        
-        return isValid;
-      })
-      .map(line => {
-        debugLog('pipeline', 'parsing', 'Processing line', { line });
-        
-        try {
-          // Handle both CSV and JSON-like formats
-          let values;
-          if (line.includes('":"')) {
-            // JSON-like format
-            const [key, value] = line.split('":"').map(part => part.replace(/^"|"$/g, ''));
-            const symbolMatch = key.match(/'([^']+)'/);
-            if (!symbolMatch) {
-              debugLog('pipeline', 'parsing', 'No symbol found in key', { key });
-              return null;
-            }
-            values = [symbolMatch[1], value];
-          } else {
-            // CSV format
-            values = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''));
-          }
-          
-          debugLog('pipeline', 'parsing', 'Parsed values', { values });
-          
-          // Create position object with normalized field names
-          const position = {
-            Symbol: values[0] || '',
-            Description: values[1] || '',
-            'Qty (Quantity)': parseFloat(values[2]) || 0,
-            Price: parseFloat(values[3]) || 0,
-            'Mkt Val (Market Value)': parseFloat(values[4]) || 0,
-            'Cost Basis': parseFloat(values[5]) || 0,
-            'Gain $ (Gain/Loss $)': parseFloat(values[6]) || 0,
-            'Gain % (Gain/Loss %)': parseFloat(values[7]) || 0
-          };
-          
-          // Validate position
-          if (!position.Symbol || position.Symbol === '--') {
-            debugLog('pipeline', 'parsing', 'Invalid position - missing symbol', { position });
-            return null;
-          }
-          
-          debugLog('pipeline', 'parsing', 'Created position object', { position });
-          return position;
-        } catch (error) {
-          debugLog('pipeline', 'parsing', 'Error processing line', {
-            line,
-            error: error.message
+
+        // Extract symbol from the data
+        const symbol = data.symbol || data.Symbol || data.securitySymbol;
+        if (!symbol) {
+          debugLog('file', 'parsing', 'Skipping line - no symbol found', {
+            lineNumber: i + 1,
+            data,
+            totalLines: lines.length
           });
-          return null;
+          skippedLines++;
+          continue;
         }
-      })
-      .filter(Boolean); // Remove null entries
 
-    debugLog('pipeline', 'parsing', 'Processed positions', {
-      positionCount: positions.length,
-      samplePosition: positions[0],
-      allPositions: positions
+        // Extract date from the data
+        const date = data.date || data.Date || data.asOfDate;
+        if (!date) {
+          debugLog('file', 'parsing', 'Skipping line - no date found', {
+            lineNumber: i + 1,
+            symbol,
+            data,
+            totalLines: lines.length
+          });
+          skippedLines++;
+          continue;
+        }
+
+        // Create position object with default values
+        const position = {
+          symbol,
+          date,
+          quantity: 0,
+          price: 0,
+          marketValue: 0,
+          costBasis: 0,
+          gainLoss: 0
+        };
+
+        debugLog('file', 'parsing', 'Created position object', {
+          lineNumber: i + 1,
+          position,
+          totalLines: lines.length,
+          positionsFound: positions.length + 1
+        });
+
+        positions.push(position);
+      } catch (error) {
+        debugLog('file', 'error', 'Error processing line', {
+          lineNumber: i + 1,
+          line,
+          error: error.message,
+          totalLines: lines.length,
+          errorLines: errorLines + 1
+        });
+        errorLines++;
+        continue;
+      }
+    }
+
+    debugLog('file', 'parsing', 'CSV parsing complete', {
+      totalPositions: positions.length,
+      totalLines: lines.length,
+      skippedLines,
+      errorLines,
+      firstPosition: positions[0],
+      contentLength: content.length
     });
-
-    // Calculate totals
-    const totals = positions.reduce((acc, position) => {
-      acc.totalValue += parseFloat(position['Mkt Val (Market Value)']) || 0;
-      acc.totalGain += parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
-      return acc;
-    }, { totalValue: 0, totalGain: 0 });
-
-    debugLog('pipeline', 'parsing', 'Calculated totals', totals);
 
     return {
       success: true,
       positions,
-      headers: ['Symbol', 'Description', 'Qty (Quantity)', 'Price', 'Mkt Val (Market Value)', 'Cost Basis', 'Gain $ (Gain/Loss $)', 'Gain % (Gain/Loss %)'],
-      totals
+      stats: {
+        totalLines: lines.length,
+        positionsFound: positions.length,
+        skippedLines,
+        errorLines
+      }
     };
   } catch (error) {
-    debugLog('pipeline', 'error', 'Error parsing portfolio CSV', {
+    debugLog('file', 'error', 'Error parsing CSV', {
       error: error.message,
-      stack: error.stack
+      stack: error.stack,
+      contentLength: content.length,
+      firstFewLines: content.split('\n').slice(0, 3).join('\n')
     });
     return {
       success: false,

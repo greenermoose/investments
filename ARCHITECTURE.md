@@ -179,55 +179,114 @@ Debug settings are controlled through a configuration object with the following 
 const DEBUG_CONFIG = {
   enabled: true,  // Master switch for all debugging
   components: {
-    componentName: {
-      enabled: true,  // Enable/disable all debugging for this component
+    file: {  // Main component for file operations
+      enabled: true,
       categories: {
-        categoryName: true  // Enable/disable specific categories
+        storage: true,    // File storage operations
+        processing: true, // File processing and classification
+        parsing: true,    // Content parsing operations
+        error: true      // Error handling
+      }
+    },
+    portfolio: {
+      enabled: true,
+      categories: {
+        loading: true,
+        storage: true,
+        calculations: true,
+        updates: true
+      }
+    },
+    transactions: {
+      enabled: true,
+      categories: {
+        loading: true,
+        processing: true,
+        validation: true,
+        storage: true
       }
     }
   }
 }
 ```
 
+### File Processing Stages
+
+The file processing pipeline follows these stages, each with its own debugging messages:
+
+1. **File Storage Stage**
+   ```
+   [file:storage] Starting file save
+   [file:storage] Calculated file hash
+   [file:storage] Generated file ID
+   [file:storage] Saving file record
+   [file:storage] File saved successfully
+   ```
+
+2. **File Processing Stage**
+   ```
+   [file:processing] Starting file processing
+   [file:classification] Starting file classification
+   [file:classification] Analyzing CSV content
+   [file:classification] Found portfolio snapshot headers
+   [file:processing] File classified
+   [file:processing] Processing as portfolio snapshot
+   [file:processing] File processing complete
+   ```
+
+3. **Content Parsing Stage**
+   ```
+   [file:parsing] Starting CSV parsing
+   [file:parsing] Split content into lines
+   [file:parsing] Found header row
+   [file:parsing] Processing line
+   [file:parsing] Parsed line as JSON
+   [file:parsing] Created position object
+   [file:parsing] CSV parsing complete
+   ```
+
+### Debug Message Structure
+
+Each debug message follows this structure:
+```javascript
+debugLog(component, category, message, {
+  // Context data
+  filename: string,
+  fileType: string,
+  contentLength: number,
+  lineNumber?: number,
+  totalLines?: number,
+  // Stage-specific data
+  fileHash?: string,
+  classification?: string,
+  positionsFound?: number,
+  skippedLines?: number,
+  errorLines?: number,
+  // Error data (if applicable)
+  error?: string,
+  stack?: string
+});
+```
+
 ### Available Components and Categories
 
-- **database**
-  - initialization
-  - operations
-  - errors
+- **file**
+  - storage: File storage operations
+  - processing: File processing and classification
+  - parsing: Content parsing operations
+  - error: Error handling
 
 - **portfolio**
-  - loading
-  - storage
-  - calculations
-  - updates
+  - loading: Portfolio data loading
+  - storage: Portfolio data storage
+  - calculations: Performance calculations
+  - updates: Portfolio updates
 
 - **transactions**
-  - loading
-  - processing
-  - validation
-  - storage
-
-- **ui**
-  - rendering
-  - interactions
-  - state
-  - effects
-  - load
-  - stats
-
-- **assetAllocation**
-  - calculations
-  - rendering
-  - dataProcessing
-  - updates
-
-- **pipeline**
-  - parsing
-  - processing
-  - storage
-  - classification
-  - validation
+  - loading: Transaction data loading
+  - processing: Transaction processing
+  - validation: Transaction validation
+  - storage: Transaction storage
 
 ### Usage
 
@@ -240,61 +299,79 @@ import { debugLog } from '../utils/debugConfig';
 
 2. Call the function with component and category:
 ```javascript
-debugLog('componentName', 'categoryName', 'Message', { data: 'object' });
-```
-
-Example:
-```javascript
-debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
-  accountName: 'My Account',
-  positionsCount: 10
+debugLog('file', 'storage', 'Starting file save', {
+  filename: 'portfolio.csv',
+  fileType: 'csv',
+  contentLength: 1024
 });
 ```
-
-### Helper Functions
-
-The debugging system provides several helper functions:
-
-- `isDebugEnabled(component, category)`: Check if debugging is enabled for a component/category
-- `setDebugEnabled(component, category, enabled)`: Enable/disable debugging for a component/category
-- `setAllDebugEnabled(enabled)`: Enable/disable all debugging
-- `getDebugConfig()`: Get the current debug configuration
 
 ### Best Practices
 
 1. Always use the centralized `debugLog` function instead of `console.log`
 2. Use appropriate component and category names
-3. Include relevant data objects for debugging context
+3. Include relevant context data in the debug object
 4. Keep debug messages concise and meaningful
 5. Use the configuration to control debug output in different environments
+6. Include error information when logging errors
+7. Track progress metrics (lines processed, positions found, etc.)
+8. Maintain consistent message format across stages
 
 ### Example Configuration
 
-To enable only portfolio and pipeline debugging:
+To enable only file processing debugging:
 
 ```javascript
 const DEBUG_CONFIG = {
   enabled: true,
   components: {
-    portfolio: {
+    file: {
       enabled: true,
       categories: {
         storage: true,
-        loading: false,
-        calculations: false,
-        updates: false
-      }
-    },
-    pipeline: {
-      enabled: true,
-      categories: {
-        parsing: true,
         processing: true,
-        storage: true
+        parsing: true,
+        error: true
       }
     }
   }
 }
 ```
 
-This configuration will only show debug messages from the portfolio storage and pipeline components, while suppressing all other debug output.
+This configuration will show all file processing debug messages while suppressing other debug output.
+
+### Error Handling
+
+The debugging system includes special handling for errors:
+
+1. Always include error context:
+```javascript
+debugLog('file', 'error', 'Error processing file', {
+  filename: 'portfolio.csv',
+  error: error.message,
+  stack: error.stack,
+  contentLength: content.length
+});
+```
+
+2. Track error statistics:
+```javascript
+debugLog('file', 'parsing', 'CSV parsing complete', {
+  totalPositions: positions.length,
+  totalLines: lines.length,
+  skippedLines: skippedLines,
+  errorLines: errorLines
+});
+```
+
+3. Include recovery information:
+```javascript
+debugLog('file', 'processing', 'File processing complete', {
+  filename: 'portfolio.csv',
+  classification: 'portfolio_snapshot',
+  success: result.success,
+  error: result.error
+});
+```
+
+This debugging system helps track the flow of data through the application and diagnose issues quickly.

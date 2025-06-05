@@ -43,7 +43,8 @@ class PortfolioService {
       console.log('PortfolioService: Saving portfolio snapshot', {
         accountName,
         date: timestamp,
-        positions: portfolioData.length
+        positions: portfolioData.length,
+        hasFileHash: !!transactionMetadata?.fileHash
       });
 
       const portfolio = {
@@ -51,7 +52,11 @@ class PortfolioService {
         date: timestamp,
         data: portfolioData,
         accountTotal,
-        metadata: transactionMetadata
+        transactionMetadata: {
+          ...transactionMetadata,
+          fileId: transactionMetadata?.fileId,
+          fileHash: transactionMetadata?.fileHash
+        }
       };
 
       return await this.portfolioRepo.saveSnapshot(portfolio);

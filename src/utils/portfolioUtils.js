@@ -162,16 +162,37 @@ export const migrateFromOldStorage = async () => {
         const expectedReference = generatePortfolioReference(portfolio.account, portfolioDate);
         
         // Check if we have a file matching this pattern
-        const matchingFile = files.find(file => 
-          file.fileHash === portfolio.fileHash ||
-          (file.filename && file.filename.includes(expectedReference))
-        );
+        const matchingFile = files.find(file => {
+          // Case-insensitive hash comparison
+          const fileHashMatch = file.fileHash && portfolio.fileHash && 
+            file.fileHash.toLowerCase() === portfolio.fileHash.toLowerCase();
+          
+          // Filename pattern match
+          const filenameMatch = file.filename && file.filename.includes(expectedReference);
+          
+          debugLog('database', 'migration', 'Checking file match', {
+            portfolioId: portfolio.id,
+            expectedReference,
+            fileHash: portfolio.fileHash,
+            fileHashMatch,
+            filenameMatch,
+            fileHash: file.fileHash,
+            filename: file.filename
+          });
+          
+          return fileHashMatch || filenameMatch;
+        });
         
         if (!matchingFile) {
           debugLog('database', 'migration', 'No matching file found for portfolio', {
             portfolioId: portfolio.id,
             expectedReference,
-            fileHash: portfolio.fileHash
+            fileHash: portfolio.fileHash,
+            availableFiles: files.map(f => ({
+              id: f.id,
+              filename: f.filename,
+              fileHash: f.fileHash
+            }))
           });
           missingFiles.push({
             accountName: portfolio.account,

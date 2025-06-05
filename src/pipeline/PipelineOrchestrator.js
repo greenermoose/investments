@@ -157,10 +157,12 @@ export class PipelineOrchestrator {
         headers: parsedData.headers,
         data: parsedData.data,
         metadata: {
+          ...metadata,
           date: parsedData.metadata.date,
           time: parsedData.metadata.time,
           accountName: metadata.accountName,
-          fileHash: storageResult.fileHash
+          fileHash: storageResult.fileHash,
+          fileId: storageResult.id
         }
       });
 

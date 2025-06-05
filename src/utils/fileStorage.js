@@ -199,7 +199,9 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       resolve({
         id: fileId,
         isDuplicate: false,
-        fileHash
+        fileHash,
+        filename: fileRecord.filename,
+        fileType: fileRecord.fileType
       });
     };
 
@@ -262,6 +264,10 @@ export const markFileAsProcessed = async (fileId, result) => {
         file.processed = true;
         file.processingResult = result;
         file.processedDate = new Date();
+        // Preserve the file hash in the metadata
+        if (result.metadata) {
+          result.metadata.fileHash = file.fileHash;
+        }
 
         const updateRequest = store.put(file);
         updateRequest.onsuccess = () => resolve();

@@ -1,3 +1,7 @@
+### 0.4.88
+
+- original file bug report
+
 ### 0.4.87
 
 - using file hash to remember original source files

@@ -133,7 +133,8 @@ export class PortfolioRepository extends BaseRepository {
         totalValue: totals.totalValue,
         totalGain: totals.totalGain,
         metadata: portfolio.transactionMetadata,
-        hasFileId: !!portfolio.transactionMetadata?.fileId
+        hasFileId: !!portfolio.transactionMetadata?.fileId,
+        hasFileHash: !!portfolio.transactionMetadata?.fileHash
       });
 
       // Save to database

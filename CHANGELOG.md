@@ -1,3 +1,7 @@
+### 0.4.102
+
+- fix original files bug, pass 1
+
 ### 0.4.101
 
 - mising original files bug report

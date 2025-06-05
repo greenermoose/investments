@@ -163,24 +163,31 @@ export const migrateFromOldStorage = async () => {
         
         // Check if we have a file matching this pattern
         const matchingFile = files.find(file => {
-          // Case-insensitive hash comparison
-          const fileHashMatch = file.fileHash && portfolio.fileHash && 
-            file.fileHash.toLowerCase() === portfolio.fileHash.toLowerCase();
+          // First check if the portfolio has a sourceFile reference
+          const portfolioFileHash = portfolio.sourceFile?.fileHash || portfolio.fileHash;
           
-          // Filename pattern match
-          const filenameMatch = file.filename && file.filename.includes(expectedReference);
+          // Case-insensitive hash comparison
+          const fileHashMatch = file.fileHash && portfolioFileHash && 
+            file.fileHash.toLowerCase() === portfolioFileHash.toLowerCase();
+          
+          // Filename pattern match - only if we don't have a hash match
+          const filenameMatch = !fileHashMatch && file.filename && 
+            file.filename.includes(expectedReference);
           
           debugLog('database', 'migration', 'Checking file match', {
             portfolioId: portfolio.id,
             expectedReference,
-            fileHash: portfolio.fileHash,
+            portfolioFileHash,
+            fileHash: file.fileHash,
             fileHashMatch,
             filenameMatch,
-            fileHash: file.fileHash,
-            filename: file.filename
+            filename: file.filename,
+            hasSourceFile: !!portfolio.sourceFile
           });
           
-          return fileHashMatch || filenameMatch;
+          // Only consider it a match if we have a hash match
+          // or if we don't have a hash but have a filename match
+          return fileHashMatch || (!portfolioFileHash && filenameMatch);
         });
         
         if (!matchingFile) {

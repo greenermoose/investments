@@ -367,8 +367,12 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
           </div>
         )}
         {sourceFile && (
-          <div className="portfolio-source">
-            Source: {sourceFile.fileId} (Hash: {sourceFile.fileHash})
+          <div className="source-file-info">
+            <h3>Source File Information</h3>
+            <p>File ID: {sourceFile.fileId}</p>
+            <p>File Hash: {sourceFile.fileHash}</p>
+            {sourceFile.fileName && <p>File Name: {sourceFile.fileName}</p>}
+            {sourceFile.uploadDate && <p>Upload Date: {new Date(sourceFile.uploadDate).toLocaleString()}</p>}
           </div>
         )}
       </div>

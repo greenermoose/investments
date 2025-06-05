@@ -60,7 +60,9 @@ class PortfolioService {
         accountTotal,
         sourceFile: transactionMetadata?.fileId ? {
           fileId: transactionMetadata.fileId,
-          fileHash: transactionMetadata.fileHash
+          fileHash: transactionMetadata.fileHash,
+          fileName: transactionMetadata.fileName || null,
+          uploadDate: transactionMetadata.uploadDate || new Date().toISOString()
         } : null,
         transactionMetadata: {
           ...transactionMetadata,

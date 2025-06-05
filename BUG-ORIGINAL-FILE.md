@@ -16,28 +16,35 @@ When uploading and processing portfolio snapshots, the system is incorrectly fla
 4. When viewing the portfolio later, the system correctly shows the original source file
 
 ## Root Cause Analysis
-The issue is more nuanced than initially thought. After code review, we found that:
+After extensive investigation and multiple fix attempts, we've identified several layers of complexity in this issue:
 
-1. File Hash Handling:
-   - The file hash is correctly generated during initial file upload
-   - The `PortfolioProcessor` has proper validation for both file hash and file ID
-   - The `PipelineOrchestrator` correctly passes both `fileId` and `fileHash` through the pipeline
-   - Extensive debug logging exists throughout the process to track the file hash
+1. Data Structure Inconsistency:
+   - The file reference is stored in multiple places:
+     a. `transactionMetadata.fileId` and `transactionMetadata.fileHash`
+     b. A dedicated `sourceFile` object with `fileId`, `fileHash`, `fileName`, and `uploadDate`
+   - This dual storage approach creates potential for inconsistency
 
-2. The Actual Problem:
-   - The file hash is properly validated and passed through the pipeline
-   - The issue occurs in the final storage layer where data structure transformation happens
-   - In `PortfolioRepository.saveSnapshot`, the file hash is stored in `transactionMetadata` but:
-     a. It's not stored in a way that's easily queryable by the UI layer
-     b. The metadata structure makes it easy for the file reference to become "hidden"
-     c. There's no clear separation between file reference data and other transaction metadata
+2. Data Flow Issues:
+   - The file reference passes through multiple layers:
+     a. File upload layer (`FileUploader`)
+     b. Service layer (`PortfolioService`)
+     c. Repository layer (`PortfolioRepository`)
+     d. UI layer (`PortfolioManager`, `PortfolioDisplay`)
+   - Each layer may transform or normalize the data differently
+
+3. State Management Complexity:
+   - The file reference is managed in multiple state containers:
+     a. Portfolio context
+     b. Individual component state
+     c. Repository storage
+   - Synchronization between these states may be incomplete
 
 ## Attempted Fixes
 
 ### First Attempt (0.4.87)
-1. Added a dedicated `sourceFile` field to the portfolio data structure in `PortfolioRepository.saveSnapshot`
-2. Updated `PortfolioService.savePortfolioSnapshot` to properly handle source file data
-3. Added stronger validation in `PortfolioProcessor.processPortfolioSnapshot`
+1. Added a dedicated `sourceFile` field to the portfolio data structure
+2. Updated `PortfolioService.savePortfolioSnapshot` to handle source file data
+3. Added validation in `PortfolioProcessor.processPortfolioSnapshot`
 
 The changes included:
 - Creating a dedicated `sourceFile` object containing `fileId` and `fileHash`
@@ -45,20 +52,42 @@ The changes included:
 - Improving logging to track file reference data through the pipeline
 
 ### Second Attempt (0.4.89)
-1. Updated UI components to properly handle and display source file information:
-   - Modified `PortfolioManager.jsx` to pass source file information when loading snapshots
+1. Updated UI components to handle and display source file information:
+   - Modified `PortfolioManager.jsx` to pass source file information
    - Updated `usePortfolioData.js` to store and expose source file information
-   - Enhanced `PortfolioDisplay.jsx` to show source file information in the UI
+   - Enhanced `PortfolioDisplay.jsx` to show source file information
 
 The changes included:
 - Adding source file state management in the portfolio context
 - Ensuring source file information is passed through the component hierarchy
 - Displaying source file information in the portfolio header
 
-However, this fix did not resolve the issue. The problem persists, suggesting that:
-1. The data transformation between layers may be losing the file reference
+### Third Attempt (Current)
+1. Standardized the `sourceFile` structure across all layers:
+   ```typescript
+   interface SourceFile {
+     fileId: string;      // Required
+     fileHash: string;    // Required
+     fileName: string | null;    // Optional
+     uploadDate: string;  // Optional, defaults to current timestamp
+   }
+   ```
+
+2. Added data validation and normalization:
+   - Created `normalizeSourceFile` utility function
+   - Added validation in repository and service layers
+   - Improved error handling and logging
+
+3. Enhanced data flow tracking:
+   - Added comprehensive debug logging
+   - Implemented data structure validation
+   - Added state synchronization checks
+
+However, the issue persists, suggesting that:
+1. The data transformation between layers may still be losing the file reference
 2. The file reference might be getting overwritten during data updates
 3. There might be a race condition in how the data is loaded and displayed
+4. The dual storage approach (transactionMetadata and sourceFile) may be causing conflicts
 
 ## Next Steps
 

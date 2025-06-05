@@ -220,6 +220,29 @@ const PortfolioManager = () => {
     }
   };
 
+  const handleSnapshotLoad = async (snapshotData) => {
+    debugLog('portfolio', 'ui', 'Loading snapshot data', {
+      snapshotId: snapshotData.id,
+      hasSourceFile: !!snapshotData.sourceFile,
+      sourceFile: snapshotData.sourceFile
+    });
+
+    const sourceFileInfo = snapshotData.sourceFile ? {
+      fileId: snapshotData.sourceFile.fileId,
+      fileHash: snapshotData.sourceFile.fileHash,
+      fileName: snapshotData.sourceFile.fileName || null,
+      uploadDate: snapshotData.sourceFile.uploadDate || new Date().toISOString()
+    } : null;
+
+    loadPortfolio(
+      snapshotData.data,
+      snapshotData.account,
+      snapshotData.date,
+      snapshotData.accountTotal,
+      sourceFileInfo
+    );
+  };
+
   // Render tab content based on active tab
   const renderTabContent = () => {
     debugLog('render', 'Rendering tab content', { activeTab });

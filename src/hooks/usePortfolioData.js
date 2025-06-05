@@ -184,30 +184,23 @@ export const usePortfolioData = (selectedAccount) => {
   const resetError = () => setError(null);
   
   const loadPortfolio = (data, accountName, date, accountTotal, sourceFileInfo) => {
-    debugLog('ui', 'load', 'Loading portfolio data', {
+    debugLog('portfolio', 'data', 'Loading portfolio data', {
       accountName,
       date,
       dataLength: data?.length,
-      hasAccountTotal: !!accountTotal,
-      hasSourceFile: !!sourceFileInfo
+      hasSourceFile: !!sourceFileInfo,
+      sourceFileInfo
     });
 
-    // Ensure data is always an array
-    const portfolioData = Array.isArray(data) ? data : [];
-    
-    // Calculate portfolio stats using the account total if available
-    const stats = accountTotal ? {
-      totalValue: accountTotal.value,
-      totalGain: accountTotal.gainLoss,
-      gainPercent: accountTotal.gainLossPercent,
-      assetAllocation: []
-    } : calculatePortfolioStats(portfolioData);
-    
-    setPortfolioData(portfolioData);
-    setCurrentAccount(accountName);
+    setPortfolioData(data);
     setPortfolioDate(date);
-    setPortfolioStats(stats);
-    setSourceFile(sourceFileInfo);
+    setCurrentAccount(accountName);
+    setSourceFile(sourceFileInfo ? {
+      fileId: sourceFileInfo.fileId,
+      fileHash: sourceFileInfo.fileHash,
+      fileName: sourceFileInfo.fileName || null,
+      uploadDate: sourceFileInfo.uploadDate || new Date().toISOString()
+    } : null);
     setIsDataLoaded(true);
     setIsLoading(false);
   };

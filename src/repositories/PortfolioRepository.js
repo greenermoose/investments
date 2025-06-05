@@ -126,9 +126,15 @@ export class PortfolioRepository extends BaseRepository {
         accountTotal: totals,
         sourceFile: portfolio.transactionMetadata?.fileId ? {
           fileId: portfolio.transactionMetadata.fileId,
-          fileHash: portfolio.transactionMetadata.fileHash
+          fileHash: portfolio.transactionMetadata.fileHash,
+          fileName: portfolio.transactionMetadata.fileName || null,
+          uploadDate: portfolio.transactionMetadata.uploadDate || new Date().toISOString()
         } : null,
-        transactionMetadata: portfolio.transactionMetadata || {},
+        transactionMetadata: {
+          ...portfolio.transactionMetadata,
+          fileId: portfolio.transactionMetadata?.fileId,
+          fileHash: portfolio.transactionMetadata?.fileHash
+        },
         createdAt: new Date()
       };
 

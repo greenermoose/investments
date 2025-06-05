@@ -291,3 +291,26 @@ export const formatFileSize = (bytes) => {
 
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 };
+
+/**
+ * Validates and normalizes sourceFile structure
+ * @param {Object} sourceFile - Source file data
+ * @returns {Object|null} Normalized source file data or null if invalid
+ */
+export const normalizeSourceFile = (sourceFile) => {
+  if (!sourceFile) return null;
+  
+  // Validate required fields
+  if (!sourceFile.fileId || !sourceFile.fileHash) {
+    console.warn('Invalid sourceFile structure:', sourceFile);
+    return null;
+  }
+
+  // Return normalized structure
+  return {
+    fileId: sourceFile.fileId,
+    fileHash: sourceFile.fileHash,
+    fileName: sourceFile.fileName || null,
+    uploadDate: sourceFile.uploadDate || new Date().toISOString()
+  };
+};

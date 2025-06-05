@@ -87,7 +87,7 @@ export const parsePortfolioCSV = (content) => {
           }
 
           // Add time to the date
-          const [time, period] = snapshotTime.split(' ');
+          const [time, period] = snapshotTime.split(' ').slice(0, 2);  // Take only first two parts
           let [hours, minutes] = time.split(':').map(Number);
           
           if (period === 'PM' && hours < 12) hours += 12;

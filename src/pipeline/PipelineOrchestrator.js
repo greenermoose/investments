@@ -148,7 +148,7 @@ export class PipelineOrchestrator {
         success: processingResult?.success,
         error: processingResult?.error,
         headers: parsedData.headers,
-        data: parsedData.positions,
+        data: parsedData.data,
         metadata: {
           date: parsedData.snapshotDate,
           time: parsedData.snapshotTime,

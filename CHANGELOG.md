@@ -1,3 +1,7 @@
+### 0.4.82
+
+- fixing snapshot parsing, pass 5
+
 ### 0.4.81
 
 - parse date formats

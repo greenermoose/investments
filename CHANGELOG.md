@@ -1,3 +1,7 @@
+### 0.4.99
+
+- processing error bug report
+
 ### 0.4.98
 
 - fix processing errors, pass 2

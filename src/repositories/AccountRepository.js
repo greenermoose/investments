@@ -2,6 +2,7 @@
 // Repository for account-level operations
 
 import { BaseRepository } from './BaseRepository';
+import { debugLog } from '../utils/debugConfig';
 import { 
   STORE_NAME_PORTFOLIOS, 
   STORE_NAME_SECURITIES, 
@@ -259,6 +260,53 @@ export class AccountRepository extends BaseRepository {
   async accountExists(accountName) {
     const accounts = await this.getAllAccountNames();
     return accounts.includes(accountName);
+  }
+
+  /**
+   * Create a new account
+   * @param {string} accountName - Account name to create
+   * @returns {Promise<void>}
+   */
+  async createAccount(accountName) {
+    if (await this.accountExists(accountName)) {
+      debugLog('account', 'create', 'Account already exists', { accountName });
+      return;
+    }
+
+    debugLog('account', 'create', 'Creating new account', { accountName });
+    // Create an empty portfolio snapshot to establish the account
+    const db = await this.getDB();
+    
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
+      const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+      
+      const emptyPortfolio = {
+        id: `${accountName}_${Date.now()}`,
+        account: accountName,
+        date: Date.now(),
+        data: [],
+        accountTotal: {
+          totalValue: 0,
+          totalGain: 0
+        }
+      };
+      
+      const request = store.add(emptyPortfolio);
+      
+      request.onsuccess = () => {
+        debugLog('account', 'create', 'Account created successfully', { accountName });
+        resolve();
+      };
+      
+      request.onerror = () => {
+        debugLog('account', 'error', 'Failed to create account', { 
+          accountName,
+          error: request.error
+        });
+        reject(request.error);
+      };
+    });
   }
 
   /**

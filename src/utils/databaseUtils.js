@@ -4,7 +4,7 @@
 import { debugLog } from './debugConfig';
 
 export const DB_NAME = 'PortfolioManagerDB';
-export const DB_VERSION = 4;  // Increment version for schema changes
+export const DB_VERSION = 5;  // Increment version for schema changes
 
 export const STORE_NAME_PORTFOLIOS = 'portfolios';
 export const STORE_NAME_SECURITIES = 'securities';
@@ -104,6 +104,7 @@ export const initializeDB = () => {
           fileStore.createIndex('filename', 'filename', { unique: false });
           fileStore.createIndex('fileType', 'fileType', { unique: false });
           fileStore.createIndex('uploadDate', 'uploadDate', { unique: false });
+          fileStore.createIndex('fileDate', 'fileDate', { unique: false });
           fileStore.createIndex('account', 'account', { unique: false });
           fileStore.createIndex('fileHash', 'fileHash', { unique: false });
         }

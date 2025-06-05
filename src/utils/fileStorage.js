@@ -168,6 +168,8 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       fileHash,
       content, // Store the raw file content
       uploadDate: new Date(),
+      fileDate: fileDate,
+      account: accountName,
       fileSize: content.length,
       processed: false,
       processingResult: null,
@@ -179,7 +181,9 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       filename: fileRecord.filename,
       fileType: fileRecord.fileType,
       contentLength: content.length,
-      fileHash
+      fileHash,
+      account: accountName,
+      fileDate: fileDate?.toISOString()
     });
 
     const request = store.add(fileRecord);

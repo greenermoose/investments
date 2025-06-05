@@ -46,13 +46,23 @@ export class PipelineOrchestrator {
         fileType
       });
 
-      // Stage 3: Save file to storage first
+      // Stage 3: Identify file type and metadata first
+      const metadata = await this.identifyFile(file, content);
+      debugLog('pipeline', 'identify', 'File identified', {
+        filename: file.name,
+        fileType: metadata.fileType,
+        accountName: metadata.accountName,
+        date: metadata.date,
+        hasMetadata: !!metadata
+      });
+
+      // Stage 4: Save file to storage with metadata
       const storageResult = await saveUploadedFile(
         file,
         content,
-        null, // accountName will be determined later
+        metadata.accountName,
         fileType,
-        null  // date will be determined later
+        metadata.date
       );
 
       if (!storageResult.id) {
@@ -62,17 +72,9 @@ export class PipelineOrchestrator {
       debugLog('pipeline', 'storage', 'File saved to storage', {
         filename: file.name,
         fileId: storageResult.id,
-        isDuplicate: storageResult.isDuplicate
-      });
-
-      // Stage 4: Identify file type and metadata
-      const metadata = await this.identifyFile(file, content);
-      debugLog('pipeline', 'identify', 'File identified', {
-        filename: file.name,
-        fileType: metadata.fileType,
+        isDuplicate: storageResult.isDuplicate,
         accountName: metadata.accountName,
-        date: metadata.date,
-        hasMetadata: !!metadata
+        date: metadata.date?.toISOString()
       });
 
       // Stage 5: Parse file content

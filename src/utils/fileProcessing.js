@@ -11,6 +11,7 @@ This should proceed in three stages:
 */
 
 import { debugLog } from './debugConfig';
+import { getAccountNameFromFilename, parseDateFromFilename } from './fileMetadata';
 
 /**
  * File Type Constants
@@ -94,17 +95,25 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
     // First determine if it's a portfolio snapshot or transactions file
     const classification = classifyFile(content, fileType);
     
-    debugLog('file', 'processing', 'File classified', { 
+    // Extract account name and date from filename
+    const accountName = getAccountNameFromFilename(filename);
+    const date = parseDateFromFilename(filename);
+    
+    debugLog('file', 'processing', 'File classified and metadata extracted', { 
       filename,
       classification,
       fileType,
+      accountName,
+      date: date?.toISOString(),
       contentLength: content.length
     });
 
     return {
       success: true,
       classification,
-      fileType: classification === FileClassifications.PORTFOLIO_SNAPSHOT ? FileTypes.CSV : FileTypes.JSON
+      fileType: classification === FileClassifications.PORTFOLIO_SNAPSHOT ? FileTypes.CSV : FileTypes.JSON,
+      accountName,
+      date
     };
   } catch (error) {
     debugLog('file', 'error', 'File identification failed', {

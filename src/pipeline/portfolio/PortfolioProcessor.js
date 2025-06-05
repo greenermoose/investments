@@ -68,13 +68,21 @@ export class PortfolioProcessor {
         acc.toLowerCase() === accountName.toLowerCase()
       );
 
-      // Use existing account name if found
+      // Use existing account name if found, otherwise create new account
       const finalAccountName = similarAccount || accountName;
       debugLog('portfolio', 'accounts', 'Account name resolved', {
         original: accountName,
         final: finalAccountName,
         isExisting: !!similarAccount
       });
+
+      // If this is a new account, ensure it's created
+      if (!similarAccount) {
+        debugLog('portfolio', 'accounts', 'Creating new account', {
+          accountName: finalAccountName
+        });
+        await portfolioService.accountRepo.createAccount(finalAccountName);
+      }
 
       // Calculate account totals
       debugLog('portfolio', 'totals', 'Calculating account totals');

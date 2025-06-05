@@ -40,7 +40,7 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refr
 
   if (isLoading) {
     return (
-      <div className="flex items-center text-indigo-100 text-sm">
+      <div className="flex items-center text-gray-600 text-sm">
         <Clock className="h-4 w-4 mr-1 animate-spin" />
         Loading snapshots...
       </div>
@@ -49,7 +49,7 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refr
 
   if (error) {
     return (
-      <div className="text-red-300 text-sm">
+      <div className="text-red-600 text-sm">
         {error}
       </div>
     );
@@ -57,7 +57,7 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refr
 
   if (snapshots.length === 0) {
     return (
-      <div className="text-indigo-100 text-sm">
+      <div className="text-gray-600 text-sm">
         No snapshots available
       </div>
     );
@@ -65,7 +65,7 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refr
 
   return (
     <div className="flex items-center space-x-2">
-      <Clock className="h-4 w-4 text-indigo-100" />
+      <Clock className="h-4 w-4 text-gray-600" />
       <div className="relative">
         <select
           value={selectedDate ? new Date(selectedDate).getTime() : ''}
@@ -75,19 +75,19 @@ const SnapshotSelector = ({ currentAccount, selectedDate, onSnapshotSelect, refr
               onSnapshotSelect(snapshot);
             }
           }}
-          className="appearance-none bg-indigo-700 text-indigo-100 text-sm rounded-md pl-3 pr-8 py-1.5 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent cursor-pointer hover:bg-indigo-600 transition-colors"
+          className="appearance-none bg-white text-gray-700 text-sm rounded-md pl-3 pr-8 py-1.5 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent cursor-pointer hover:bg-gray-50 transition-colors"
         >
           {snapshots.map((snapshot) => (
             <option 
               key={new Date(snapshot.date).getTime()} 
               value={new Date(snapshot.date).getTime()}
-              className="bg-indigo-700 text-indigo-100"
+              className="bg-white text-gray-700"
             >
               {formatDate(snapshot.date)}
             </option>
           ))}
         </select>
-        <ChevronDown className="h-4 w-4 text-indigo-100 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none" />
+        <ChevronDown className="h-4 w-4 text-gray-500 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none" />
       </div>
     </div>
   );

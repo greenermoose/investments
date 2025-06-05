@@ -246,13 +246,15 @@ const PortfolioManager = () => {
     try {
       const snapshotData = await portfolioService.getPortfolioById(snapshot.id);
       if (snapshotData) {
-        portfolio.loadPortfolio(
+        await loadPortfolio(
           snapshotData.data,
           currentAccount || selectedAccount,
           snapshotData.date,
           snapshotData.accountTotal,
           snapshotData.sourceFile
         );
+        // Increment refresh key to trigger SnapshotSelector update
+        setSnapshotRefreshKey(prev => prev + 1);
       } else {
         console.error('Snapshot data not found:', snapshot.id);
       }
@@ -379,6 +381,7 @@ const PortfolioManager = () => {
         portfolioDate={portfolioDate}
         onCsvUpload={handleCsvUpload}
         onJsonUpload={handleJsonUpload}
+        currentAccount={currentAccount}
       />
 
       <main className="container mx-auto px-4 py-8">

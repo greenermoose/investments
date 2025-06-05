@@ -1,3 +1,7 @@
+### 0.4.103
+
+- add snapshot selector
+
 ### 0.4.102
 
 - fix original files bug, pass 1

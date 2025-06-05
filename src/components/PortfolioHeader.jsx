@@ -129,8 +129,10 @@ const PortfolioHeader = ({
             )}
             {onSnapshotSelect && (
               <SnapshotSelector
+                currentAccount={currentAccount}
                 onSnapshotSelect={onSnapshotSelect}
                 refreshKey={refreshKey}
+                selectedDate={portfolioDate}
               />
             )}
             <div className="flex space-x-2">

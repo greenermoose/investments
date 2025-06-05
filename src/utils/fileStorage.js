@@ -1,8 +1,9 @@
-// utils/fileStorage.js revision: 2
+// utils/fileStorage.js revision: 3
 // Handles file storage in IndexedDB for portfolio snapshots and transaction files
 
 import { DB_NAME, DB_VERSION, STORE_NAME_FILES, initializeDB } from './databaseUtils';
 import { debugLog } from './debugConfig';
+import { openDB } from 'idb';
 
 /**
  * File Types 
@@ -13,181 +14,268 @@ export const FileTypes = {
 };
 
 /**
- * Initialize the file storage database
- * @returns {Promise<IDBDatabase>} Initialized database
+ * Initialize file storage database
+ * @returns {Promise<IDBDatabase>} Database instance
  */
-export const initializeFileStorage = () => {
-  // Use the centralized initializeDB function to ensure consistent database initialization
-  return initializeDB();
+export const initializeFileStorage = async () => {
+  return initializeDB(DB_NAME, DB_VERSION, [
+    {
+      name: STORE_NAME_FILES,
+      keyPath: 'id',
+      indexes: [
+        { name: 'filename', keyPath: 'filename', unique: true },
+        { name: 'fileHash', keyPath: 'fileHash', unique: true },
+        { name: 'uploadDate', keyPath: 'uploadDate' },
+        { name: 'processed', keyPath: 'processed' }
+      ]
+    }
+  ]);
 };
 
 /**
- * Calculate a simple hash for file content
+ * Calculate hash of file content
  * @param {string} content - File content
- * @returns {string} Hash of content
+ * @returns {Promise<string>} File hash
  */
 export const calculateFileHash = async (content) => {
   const encoder = new TextEncoder();
   const data = encoder.encode(content);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
-  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-  return hashHex;
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 };
 
 /**
- * Check if a file with identical content already exists
- * @param {string} fileHash - Hash of file content
- * @returns {Promise<Object|null>} Existing file or null
+ * Find file by hash
+ * @param {string} hash - File hash
+ * @returns {Promise<Object|null>} File record if found
  */
-export const findFileByHash = async (fileHash) => {
+export const findFileByHash = async (hash) => {
   const db = await initializeFileStorage();
-
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
     const store = transaction.objectStore(STORE_NAME_FILES);
     const index = store.index('fileHash');
-    const request = index.get(fileHash);
+    const request = index.get(hash);
 
-    request.onsuccess = () => resolve(request.result || null);
+    request.onsuccess = () => resolve(request.result);
     request.onerror = () => reject(request.error);
   });
 };
 
 /**
- * Check if a file with the same filename exists
- * @param {string} filename - Name of file to check
- * @returns {Promise<Object|null>} Existing file or null
+ * Find file by name
+ * @param {string} filename - Filename
+ * @returns {Promise<Object|null>} File record if found
  */
 export const findFileByName = async (filename) => {
   const db = await initializeFileStorage();
-
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
     const store = transaction.objectStore(STORE_NAME_FILES);
     const index = store.index('filename');
     const request = index.get(filename);
 
-    request.onsuccess = () => resolve(request.result || null);
+    request.onsuccess = () => resolve(request.result);
     request.onerror = () => reject(request.error);
   });
 };
 
 /**
- * Process raw file data into normalized format
- * @param {string} content - Raw file content
- * @param {string} fileType - Type of file (csv/json)
- * @returns {Object} Processed data
+ * Save an uploaded file to the database
+ * @param {File|Object} file - File object or file data
+ * @param {string} content - File content as string
+ * @param {string} accountName - Account associated with file
+ * @param {string} fileType - Type of file (csv, json)
+ * @param {Date} fileDate - Date extracted from file (if any)
+ * @returns {Promise<Object>} Save result with file ID and duplicate info
  */
-export const processFileData = (content, fileType) => {
-  debugLog('pipeline', 'parsing', 'Processing file data', {
+export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
+  debugLog('pipeline', 'storage', 'Starting file save', {
+    filename: file.name || file.filename,
+    accountName,
     fileType,
-    contentLength: content.length,
-    firstLine: content.split('\n')[0]
+    fileDate: fileDate instanceof Date ? fileDate.toISOString() : fileDate
   });
 
-  try {
-    if (fileType === 'csv') {
-      // Split content into lines and remove empty lines
-      const lines = content.split('\n').filter(line => line.trim());
-      
-      debugLog('pipeline', 'parsing', 'Split content into lines', {
-        totalLines: lines.length,
-        firstLine: lines[0],
-        secondLine: lines[1]
-      });
+  const db = await initializeFileStorage();
 
-      // Skip the first line (metadata) and get headers from second line
-      const headers = lines[1].split(',').map(h => {
-        const trimmed = h.trim();
-        return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
-      });
-      
-      debugLog('pipeline', 'parsing', 'Parsed CSV headers', { 
-        headers,
-        headerCount: headers.length
-      });
-      
-      // Process data rows starting from line 3 (index 2)
-      const processedData = lines.slice(2)
-        .filter(line => {
-          const trimmed = line.trim();
-          return trimmed && 
-                 !trimmed.includes('Account Total') && 
-                 !trimmed.includes('Cash & Cash Investments');
-        })
-        .map(line => {
-          // Split by comma but preserve quoted values
-          const values = line.split(',').map(v => {
-            const trimmed = v.trim();
-            return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
-          });
-          
-          const row = {};
-          
-          headers.forEach((header, index) => {
-            let value = values[index] || '';
-            
-            // Clean up numeric values
-            if (header === 'Quantity' || header === 'Price' || header === 'Market Value' || 
-                header === 'Cost Basis' || header === 'Gain/Loss $' || header === 'Gain/Loss %' ||
-                header === 'Price Change $' || header === 'Price Change %' || 
-                header === 'Day Change $' || header === 'Day Change %') {
-              // Remove currency symbols, percentage signs, and convert to number
-              value = value.replace(/[$,%]/g, '');
-              value = parseFloat(value) || 0;
-            }
-            
-            row[header] = value;
-          });
-          
-          return row;
-        })
-        .filter(row => {
-          // Filter out rows without symbols or with invalid data
-          const hasSymbol = row.Symbol && row.Symbol !== '--';
-          const hasValidData = row['Market Value'] > 0 || row.Quantity > 0;
-          return hasSymbol && hasValidData;
-        });
+  // Calculate file hash to detect duplicates
+  const fileHash = await calculateFileHash(content);
+  debugLog('pipeline', 'storage', 'Calculated file hash', { fileHash });
 
-      debugLog('pipeline', 'parsing', 'Processed CSV data', {
-        rowCount: processedData.length,
-        sampleRow: processedData[0],
-        headers: Object.keys(processedData[0] || {})
-      });
+  // Get filename from File object or passed data
+  const filename = file.name || file.filename;
 
-      // Calculate totals
-      const totals = processedData.reduce((acc, row) => {
-        acc.totalValue += parseFloat(row['Market Value']) || 0;
-        acc.totalGain += parseFloat(row['Gain/Loss $']) || 0;
-        return acc;
-      }, { totalValue: 0, totalGain: 0 });
-
-      debugLog('pipeline', 'parsing', 'Calculated totals', totals);
-
-      return {
-        success: true,
-        data: processedData,
-        headers: headers,
-        totals: totals
-      };
-    }
-    
-    debugLog('pipeline', 'error', 'Unsupported file type', { fileType });
-    return {
-      success: false,
-      error: 'Unsupported file type'
-    };
-  } catch (error) {
-    debugLog('pipeline', 'error', 'Error processing file', {
-      error: error.message,
-      stack: error.stack
+  // Check for exact duplicate (same hash)
+  const existingFileByHash = await findFileByHash(fileHash);
+  if (existingFileByHash) {
+    debugLog('pipeline', 'storage', 'Found duplicate by hash', {
+      existingId: existingFileByHash.id,
+      filename: existingFileByHash.filename
     });
     return {
-      success: false,
-      error: error.message
+      id: existingFileByHash.id,
+      isDuplicate: true,
+      duplicateType: 'content',
+      existingFile: existingFileByHash
     };
   }
+
+  // Check for filename conflict
+  const existingFileByName = await findFileByName(filename);
+  if (existingFileByName) {
+    debugLog('pipeline', 'storage', 'Found duplicate by name', {
+      existingId: existingFileByName.id,
+      filename: existingFileByName.filename
+    });
+    return {
+      id: existingFileByName.id,
+      isDuplicate: true,
+      duplicateType: 'filename',
+      existingFile: existingFileByName
+    };
+  }
+
+  // No duplicate, proceed with saving
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME_FILES);
+
+    // Generate a unique file ID
+    const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    debugLog('pipeline', 'storage', 'Generated file ID', { fileId });
+    
+    const fileRecord = {
+      id: fileId,
+      filename,
+      account: accountName,
+      fileType,
+      fileHash,
+      content, // Store the raw file content
+      fileDate,
+      uploadDate: new Date(),
+      fileSize: content.length,
+      processed: false,
+      processingResult: null,
+      lastAccessed: new Date()
+    };
+
+    debugLog('pipeline', 'storage', 'Attempting to save file record', {
+      fileId,
+      filename: fileRecord.filename,
+      fileType: fileRecord.fileType
+    });
+
+    const request = store.add(fileRecord);
+
+    request.onsuccess = () => {
+      debugLog('pipeline', 'storage', 'File saved successfully', { fileId });
+      resolve({
+        id: fileId,
+        isDuplicate: false
+      });
+    };
+
+    request.onerror = () => {
+      debugLog('pipeline', 'error', 'Failed to save file', {
+        error: request.error,
+        filename: fileRecord.filename
+      });
+      reject(request.error);
+    };
+  });
+};
+
+/**
+ * Get file by ID
+ * @param {string} fileId - File ID
+ * @returns {Promise<Object>} File record
+ */
+export const getFileById = async (fileId) => {
+  const db = await initializeFileStorage();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME_FILES);
+    const request = store.get(fileId);
+
+    request.onsuccess = () => {
+      const file = request.result;
+      if (file) {
+        // Update last accessed time
+        file.lastAccessed = new Date();
+        store.put(file);
+      }
+      resolve(file);
+    };
+
+    request.onerror = () => reject(request.error);
+  });
+};
+
+/**
+ * Mark file as processed
+ * @param {string} fileId - File ID
+ * @param {Object} result - Processing result
+ * @returns {Promise<void>}
+ */
+export const markFileAsProcessed = async (fileId, result) => {
+  const db = await initializeFileStorage();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME_FILES);
+    const request = store.get(fileId);
+
+    request.onsuccess = () => {
+      const file = request.result;
+      if (file) {
+        file.processed = true;
+        file.processingResult = result;
+        file.processedDate = new Date();
+
+        const updateRequest = store.put(file);
+        updateRequest.onsuccess = () => resolve();
+        updateRequest.onerror = () => reject(updateRequest.error);
+      } else {
+        reject(new Error(`File not found: ${fileId}`));
+      }
+    };
+
+    request.onerror = () => reject(request.error);
+  });
+};
+
+/**
+ * Delete file
+ * @param {string} fileId - File ID
+ * @returns {Promise<void>}
+ */
+export const deleteFile = async (fileId) => {
+  const db = await initializeFileStorage();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME_FILES);
+    const request = store.delete(fileId);
+
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error);
+  });
+};
+
+/**
+ * Get all files
+ * @returns {Promise<Array>} Array of file records
+ */
+export const getAllFiles = async () => {
+  const db = await initializeFileStorage();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
+    const store = transaction.objectStore(STORE_NAME_FILES);
+    const request = store.getAll();
+
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
 };
 
 /**
@@ -235,325 +323,6 @@ export const generatePortfolioReference = (accountName, date) => {
   });
   
   return reference;
-};
-
-/**
- * Save an uploaded file to the database
- * @param {File|Object} file - File object or file data
- * @param {string} content - File content as string
- * @param {string} accountName - Account associated with file
- * @param {string} fileType - Type of file (csv, json)
- * @param {Date} fileDate - Date extracted from file (if any)
- * @returns {Promise<string>} ID of saved file
- */
-export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
-  debugLog('pipeline', 'storage', 'Starting file save', {
-    filename: file.name || file.filename,
-    accountName,
-    fileType,
-    fileDate: fileDate instanceof Date ? fileDate.toISOString() : fileDate
-  });
-
-  const db = await initializeFileStorage();
-
-  // Generate portfolio reference
-  const portfolioReference = generatePortfolioReference(accountName, fileDate || new Date());
-  debugLog('pipeline', 'storage', 'Generated portfolio reference', { portfolioReference });
-
-  // Calculate file hash to detect duplicates
-  const fileHash = await calculateFileHash(content);
-  debugLog('pipeline', 'storage', 'Calculated file hash', { fileHash });
-
-  // Get filename from File object or passed data
-  const filename = file.name || file.filename;
-
-  // Check for exact duplicate (same hash)
-  const existingFileByHash = await findFileByHash(fileHash);
-  if (existingFileByHash) {
-    debugLog('pipeline', 'storage', 'Found duplicate by hash', {
-      existingId: existingFileByHash.id,
-      filename: existingFileByHash.filename
-    });
-    return {
-      id: existingFileByHash.id,
-      isDuplicate: true,
-      duplicateType: 'content',
-      existingFile: existingFileByHash
-    };
-  }
-
-  // Check for filename conflict
-  const existingFileByName = await findFileByName(filename);
-  if (existingFileByName) {
-    debugLog('pipeline', 'storage', 'Found duplicate by name', {
-      existingId: existingFileByName.id,
-      filename: existingFileByName.filename
-    });
-    return {
-      id: existingFileByName.id,
-      isDuplicate: true,
-      duplicateType: 'filename',
-      existingFile: existingFileByName
-    };
-  }
-
-  // Process the file data
-  const processingResult = processFileData(content, fileType);
-  
-  // No duplicate, proceed with saving
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-
-    // Generate a unique file ID
-    const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    debugLog('pipeline', 'storage', 'Generated file ID', { fileId });
-    
-    const fileRecord = {
-      id: fileId,
-      portfolioReference,
-      filename: filename || `${portfolioReference}.${fileType.toLowerCase()}`,
-      account: accountName,
-      fileType,
-      fileHash,
-      content, // Store the raw file content
-      fileDate,
-      uploadDate: new Date(),
-      fileSize: content.length,
-      processed: processingResult.success,
-      processingResult: processingResult,
-      lastAccessed: new Date()
-    };
-
-    debugLog('pipeline', 'storage', 'Attempting to save file record', {
-      fileId,
-      filename: fileRecord.filename,
-      fileType: fileRecord.fileType
-    });
-
-    const request = store.add(fileRecord);
-
-    request.onsuccess = () => {
-      debugLog('pipeline', 'storage', 'File saved successfully', {
-        fileId,
-        requestResult: request.result
-      });
-      resolve({
-        id: fileId,
-        isDuplicate: false,
-        fileRecord: { ...fileRecord, id: fileId }
-      });
-    };
-
-    request.onerror = () => {
-      debugLog('pipeline', 'error', 'Error saving file', {
-        error: request.error,
-        fileId,
-        filename: fileRecord.filename
-      });
-      reject(new Error(`Failed to save file: ${request.error.message}`));
-    };
-  });
-};
-
-/**
- * Get file by ID
- * @param {string} fileId - File ID
- * @returns {Promise<Object|null>} File record or null
- */
-export const getFileById = async (fileId) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.get(fileId);
-
-    request.onsuccess = () => {
-      if (request.result) {
-        // Update last accessed date
-        updateFileAccess(fileId).catch(console.error);
-      }
-      resolve(request.result || null);
-    };
-
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Update last accessed date
- * @param {string} fileId - File ID
- * @returns {Promise<void>}
- */
-export const updateFileAccess = async (fileId) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.get(fileId);
-
-    request.onsuccess = () => {
-      const file = request.result;
-      if (file) {
-        file.lastAccessed = new Date();
-        store.put(file);
-      }
-      resolve();
-    };
-
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Mark a file as processed
- * @param {string} fileId - File ID
- * @param {Object} result - Processing result
- * @returns {Promise<void>}
- */
-export const markFileAsProcessed = async (fileId, result) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.get(fileId);
-
-    request.onsuccess = () => {
-      const file = request.result;
-      if (file) {
-        file.processed = true;
-        file.processingResult = result;
-        file.processedDate = new Date();
-
-        const updateRequest = store.put(file);
-        updateRequest.onsuccess = () => resolve();
-        updateRequest.onerror = () => reject(updateRequest.error);
-      } else {
-        reject(new Error(`File not found: ${fileId}`));
-      }
-    };
-
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Delete a file
- * @param {string} fileId - File ID
- * @returns {Promise<void>}
- */
-export const deleteFile = async (fileId) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.delete(fileId);
-
-    request.onsuccess = () => resolve();
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Replace an existing file
- * @param {string} existingFileId - ID of file to replace
- * @param {string} content - New file content
- * @param {Date} fileDate - New file date (if any)
- * @returns {Promise<string>} ID of updated file
- */
-export const replaceFile = async (existingFileId, content, fileDate = null) => {
-  const db = await initializeFileStorage();
-
-  // Calculate file hash to detect duplicates
-  const fileHash = await calculateFileHash(content);
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.get(existingFileId);
-
-    request.onsuccess = () => {
-      const file = request.result;
-      if (!file) {
-        reject(new Error(`File not found: ${existingFileId}`));
-        return;
-      }
-
-      // Update the file
-      file.content = content;
-      file.fileHash = fileHash;
-      file.fileDate = fileDate || file.fileDate;
-      file.lastUpdated = new Date();
-      file.fileSize = content.length;
-      file.processed = false; // Reset processed status
-      file.processingResult = null;
-
-      const updateRequest = store.put(file);
-      updateRequest.onsuccess = () => resolve(existingFileId);
-      updateRequest.onerror = () => reject(updateRequest.error);
-    };
-
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Get all files
- * @returns {Promise<Array>} Array of file records
- */
-export const getAllFiles = async () => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const request = store.getAll();
-
-    request.onsuccess = () => resolve(request.result || []);
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Get files by account
- * @param {string} account - Account name
- * @returns {Promise<Array>} Array of file records
- */
-export const getFilesByAccount = async (account) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const index = store.index('account');
-    const request = index.getAll(account);
-
-    request.onsuccess = () => resolve(request.result || []);
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * Get files by type
- * @param {string} fileType - File type (csv, json)
- * @returns {Promise<Array>} Array of file records
- */
-export const getFilesByType = async (fileType) => {
-  const db = await initializeFileStorage();
-
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_FILES);
-    const index = store.index('fileType');
-    const request = index.getAll(fileType);
-
-    request.onsuccess = () => resolve(request.result || []);
-    request.onerror = () => reject(request.error);
-  });
 };
 
 /**
@@ -796,4 +565,66 @@ export const purgeAllFiles = async () => {
       reject(error);
     }
   });
+};
+
+/**
+ * Replace an existing file with new content
+ * @param {string} fileId - ID of the file to replace
+ * @param {string} content - New file content
+ * @param {string} filename - New filename
+ * @param {string} fileType - Type of file (csv/json)
+ * @returns {Promise<Object>} Result of the replacement operation
+ */
+export const replaceFile = async (fileId, content, filename, fileType) => {
+  debugLog('storage', 'file', 'Replacing file', {
+    fileId,
+    filename,
+    fileType,
+    contentLength: content.length
+  });
+
+  try {
+    const db = await openDB(DB_NAME, DB_VERSION);
+    
+    // Check if file exists
+    const existingFile = await db.get(STORE_NAME_FILES, fileId);
+    if (!existingFile) {
+      throw new Error(`File with ID ${fileId} not found`);
+    }
+
+    // Update file record
+    const updatedFile = {
+      ...existingFile,
+      content,
+      filename,
+      fileType,
+      lastModified: new Date().toISOString(),
+      processed: false // Reset processed flag since content has changed
+    };
+
+    await db.put(STORE_NAME_FILES, updatedFile, fileId);
+    
+    debugLog('storage', 'file', 'File replaced successfully', {
+      fileId,
+      filename,
+      fileType
+    });
+
+    return {
+      success: true,
+      fileId,
+      filename,
+      fileType
+    };
+  } catch (error) {
+    debugLog('storage', 'error', 'Error replacing file', {
+      error: error.message,
+      stack: error.stack,
+      fileId
+    });
+    return {
+      success: false,
+      error: error.message
+    };
+  }
 };

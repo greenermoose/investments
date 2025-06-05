@@ -1,3 +1,7 @@
+### 0.4.72
+
+- refactoring fileStorage and fileProcessing
+
 ### 0.4.71
 
 - fixing snapshot parsing, pass 1

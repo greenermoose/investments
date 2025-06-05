@@ -47,7 +47,7 @@ class PortfolioService {
       });
 
       const portfolio = {
-        accountName,
+        account: accountName,
         date: timestamp,
         data: portfolioData,
         accountTotal,

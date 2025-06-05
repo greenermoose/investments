@@ -62,9 +62,11 @@ const StorageManager = ({ onDataChange }) => {
       setError(null);
       
       const accountList = await portfolioService.getAllAccounts();
+      console.log('Account list:', accountList);
       setAccounts(accountList);
       
       const transactions = await getAllTransactionsFromDB();
+      console.log('All transactions:', transactions);
       setAllTransactions(transactions);
       
       const transactionsByAccount = {};
@@ -75,6 +77,7 @@ const StorageManager = ({ onDataChange }) => {
         }
         transactionsByAccount[account].push(tx);
       });
+      console.log('Transactions by account:', transactionsByAccount);
       
       const stats = {};
       let totalSnapshots = 0;
@@ -82,7 +85,10 @@ const StorageManager = ({ onDataChange }) => {
       
       for (const account of accountList) {
         const snapshots = await portfolioService.getAccountSnapshots(account);
+        console.log(`Snapshots for ${account}:`, snapshots);
         const accountTransactions = transactionsByAccount[account] || [];
+        const latestSnapshot = await portfolioService.getLatestSnapshot(account);
+        console.log(`Latest snapshot for ${account}:`, latestSnapshot);
         
         if (!transactionsByAccount[account] && accountTransactions.length === 0) {
           transactionsByAccount[account] = [];
@@ -91,11 +97,9 @@ const StorageManager = ({ onDataChange }) => {
         stats[account] = {
           snapshots: snapshots.length,
           transactions: accountTransactions.length,
-          latestSnapshot: snapshots.length > 0 ? 
-            snapshots.reduce((latest, current) => {
-              return !latest || current.date > latest.date ? current : latest;
-            }, null) : null
+          latestSnapshot: latestSnapshot
         };
+        console.log(`Stats for ${account}:`, stats[account]);
         
         totalSnapshots += snapshots.length;
       }

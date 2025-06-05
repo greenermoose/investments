@@ -22,7 +22,7 @@ export class PortfolioProcessor {
    * @returns {Promise<Object>} Processing result
    */
   async processPortfolioSnapshot({ parsedData, accountName, snapshotDate, fileId, fileHash }) {
-    debugLog('portfolio', 'start', 'Starting portfolio snapshot processing', {
+    console.log('PortfolioProcessor.processPortfolioSnapshot called with:', {
       accountName,
       snapshotDate: snapshotDate instanceof Date ? snapshotDate.toISOString() : snapshotDate,
       fileId,
@@ -33,9 +33,7 @@ export class PortfolioProcessor {
     });
 
     if (!parsedData.success) {
-      debugLog('portfolio', 'error', 'Invalid parsed data', {
-        error: parsedData.error
-      });
+      console.error('Invalid parsed data:', parsedData.error);
       return {
         success: false,
         error: 'Failed to parse portfolio data'
@@ -44,7 +42,7 @@ export class PortfolioProcessor {
 
     // Validate file reference data
     if (fileId && !fileHash) {
-      debugLog('portfolio', 'error', 'File hash is required when file ID is present', {
+      console.error('File hash is required when file ID is present:', {
         fileId,
         hasFileHash: !!fileHash
       });
@@ -55,7 +53,7 @@ export class PortfolioProcessor {
     }
 
     if (!fileId || typeof fileId !== 'string') {
-      debugLog('portfolio', 'error', 'Invalid file ID', { 
+      console.error('Invalid file ID:', { 
         fileId,
         fileIdType: typeof fileId,
         hasFileId: !!fileId
@@ -67,7 +65,7 @@ export class PortfolioProcessor {
     }
 
     if (!fileHash || typeof fileHash !== 'string') {
-      debugLog('portfolio', 'error', 'Invalid file hash', { 
+      console.error('Invalid file hash:', { 
         fileHash,
         fileHashType: typeof fileHash,
         hasFileHash: !!fileHash
@@ -137,7 +135,7 @@ export class PortfolioProcessor {
       }
 
       // Save the portfolio snapshot
-      debugLog('portfolio', 'save', 'Saving portfolio snapshot', {
+      console.log('Saving portfolio snapshot with:', {
         fileId,
         fileIdType: typeof fileId,
         hasFileId: !!fileId,
@@ -148,7 +146,7 @@ export class PortfolioProcessor {
       });
       
       if (!fileId) {
-        debugLog('portfolio', 'error', 'Missing file ID before saving snapshot', {
+        console.error('Missing file ID before saving snapshot:', {
           fileId,
           fileIdType: typeof fileId,
           hasFileId: !!fileId
@@ -161,10 +159,14 @@ export class PortfolioProcessor {
         finalAccountName,
         timestamp,
         accountTotals,
-        { changes, fileId, fileHash }
+        {
+          fileId,
+          fileHash,
+          changes
+        }
       );
       
-      debugLog('portfolio', 'save', 'Portfolio snapshot saved', { 
+      console.log('Portfolio snapshot saved:', { 
         snapshotId,
         snapshotIdType: typeof snapshotId,
         hasSnapshotId: !!snapshotId,
@@ -173,15 +175,17 @@ export class PortfolioProcessor {
       });
 
       // Fetch the full snapshot
-      debugLog('portfolio', 'fetch', 'Fetching saved snapshot');
+      console.log('Fetching saved snapshot');
       const snapshot = await portfolioService.getPortfolioById(snapshotId);
       if (!snapshot) {
-        debugLog('portfolio', 'error', 'Failed to retrieve saved snapshot', { snapshotId });
+        console.error('Failed to retrieve saved snapshot:', { snapshotId });
         throw new Error('Failed to retrieve saved portfolio snapshot');
       }
-      debugLog('portfolio', 'fetch', 'Snapshot retrieved successfully', {
+      console.log('Snapshot retrieved successfully:', {
         id: snapshot.id,
-        positionsCount: snapshot.data.length
+        positionsCount: snapshot.data.length,
+        hasSourceFile: !!snapshot.sourceFile,
+        sourceFileKeys: snapshot.sourceFile ? Object.keys(snapshot.sourceFile) : []
       });
 
       // If no transaction data exists, create lots from snapshot

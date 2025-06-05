@@ -11,7 +11,7 @@ import { ManualAdjustmentRepository } from '../repositories/ManualAdjustmentRepo
 import { FileRepository } from '../repositories/FileRepository';
 import { TransactionMetadataRepository } from '../repositories/TransactionMetadataRepository';
 import { debugLog } from '../utils/debugConfig';
-import { createFileReference, migrateFileReference } from '../types/FileReference';
+import { createFileReference, migrateFileReference, isValidFileReference } from '../types/FileReference';
 
 class PortfolioService {
   constructor() {
@@ -37,74 +37,73 @@ class PortfolioService {
    * @returns {Promise<string>} Portfolio ID
    */
   async savePortfolioSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
-    try {
-      // Ensure date is a proper timestamp
-      const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
-      
-      // Create file reference from either direct file data or metadata
-      let fileReference = null;
-      if (transactionMetadata) {
-        if (transactionMetadata.fileId && transactionMetadata.fileHash) {
-          // Direct file reference data
-          fileReference = {
-            fileId: transactionMetadata.fileId,
-            fileHash: transactionMetadata.fileHash,
-            fileName: transactionMetadata.fileName,
-            uploadDate: transactionMetadata.uploadDate
-          };
-        } else {
-          // Legacy metadata format
-          fileReference = migrateFileReference(transactionMetadata);
-        }
-      }
-      
-      debugLog('portfolio', 'save', 'Creating portfolio snapshot', {
-        accountName,
-        date: timestamp,
-        positions: portfolioData.length,
-        hasFileReference: !!fileReference,
-        fileReferenceDetails: fileReference ? {
-          fileId: fileReference.fileId,
-          fileHash: fileReference.fileHash,
-          fileName: fileReference.fileName
-        } : null,
-        transactionMetadataKeys: transactionMetadata ? Object.keys(transactionMetadata) : []
+    console.log('PortfolioService.savePortfolioSnapshot called with:', {
+      accountName,
+      date,
+      positionsCount: portfolioData?.length,
+      hasTransactionMetadata: !!transactionMetadata,
+      metadataKeys: transactionMetadata ? Object.keys(transactionMetadata) : [],
+      fileId: transactionMetadata?.fileId,
+      fileHash: transactionMetadata?.fileHash
+    });
+
+    // Ensure date is a proper timestamp
+    const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
+    
+    // Create file reference from transaction metadata
+    let fileReference = null;
+    if (transactionMetadata?.fileId && transactionMetadata?.fileHash) {
+      console.log('Creating file reference from metadata:', {
+        fileId: transactionMetadata.fileId,
+        fileHash: transactionMetadata.fileHash
       });
-
-      const portfolio = {
-        account: accountName,
-        date: timestamp,
-        data: portfolioData,
-        accountTotal,
-        sourceFile: fileReference,
-        // Create a new transactionMetadata object without file reference fields
-        transactionMetadata: Object.fromEntries(
-          Object.entries(transactionMetadata || {})
-            .filter(([key]) => !['fileId', 'fileHash', 'fileName', 'uploadDate'].includes(key))
-        )
-      };
-
-      debugLog('portfolio', 'save', 'Portfolio object created', {
-        hasSourceFile: !!portfolio.sourceFile,
-        sourceFileDetails: portfolio.sourceFile ? {
-          fileId: portfolio.sourceFile.fileId,
-          fileHash: portfolio.sourceFile.fileHash,
-          fileName: portfolio.sourceFile.fileName
-        } : null
-      });
-
-      const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
       
-      debugLog('portfolio', 'save', 'Portfolio saved successfully', {
-        portfolioId,
-        hasSourceFile: !!portfolio.sourceFile
+      fileReference = createFileReference({
+        fileId: transactionMetadata.fileId,
+        fileHash: transactionMetadata.fileHash
       });
-
-      return portfolioId;
-    } catch (error) {
-      console.error('PortfolioService: Error saving portfolio snapshot:', error);
-      throw error;
+      
+      console.log('Created file reference:', {
+        fileReference,
+        isValid: isValidFileReference(fileReference)
+      });
+    } else {
+      console.log('No file reference data in metadata:', {
+        hasFileId: !!transactionMetadata?.fileId,
+        hasFileHash: !!transactionMetadata?.fileHash
+      });
     }
+
+    // Create new transaction metadata without file reference fields
+    const newTransactionMetadata = transactionMetadata ? {
+      ...transactionMetadata,
+      fileId: undefined,
+      fileHash: undefined
+    } : null;
+
+    console.log('Creating portfolio object with:', {
+      hasFileReference: !!fileReference,
+      hasTransactionMetadata: !!newTransactionMetadata,
+      metadataKeys: newTransactionMetadata ? Object.keys(newTransactionMetadata) : []
+    });
+
+    const portfolio = {
+      account: accountName,
+      date: timestamp,
+      data: portfolioData,
+      accountTotal,
+      transactionMetadata: newTransactionMetadata,
+      sourceFile: fileReference
+    };
+
+    console.log('Saving portfolio with sourceFile:', {
+      hasSourceFile: !!portfolio.sourceFile,
+      sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : []
+    });
+
+    const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
+    console.log('Portfolio saved with ID:', portfolioId);
+    return portfolioId;
   }
 
   /**

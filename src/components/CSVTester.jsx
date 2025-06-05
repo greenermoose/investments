@@ -19,7 +19,7 @@ const CSVTester = () => {
       try {
         // Show first few lines
         const lines = content.split('\n');
-        console.log('First 5 lines:', lines.slice(0, 5));
+        // console.log('First 5 lines:', lines.slice(0, 5));
         
         // Find header line
         let headerLine = '';
@@ -27,12 +27,12 @@ const CSVTester = () => {
         
         for (let i = 0; i < Math.min(5, lines.length); i++) {
           const line = lines[i];
-          console.log(`Line ${i}:`, line);
+          // console.log(`Line ${i}:`, line);
           
           if (line.includes('"Symbol"') || line.includes('Symbol')) {
             headerLine = line;
             headerLineIndex = i;
-            console.log('Found header at line', i);
+            // console.log('Found header at line', i);
             break;
           }
         }
@@ -68,7 +68,7 @@ const CSVTester = () => {
         
         // Extract date
         const date = extractDateFromAccountInfo(lines[0]);
-        console.log('Extracted date:', date);
+        // console.log('Extracted date:', date);
         
         setError(null);
       } catch (err) {

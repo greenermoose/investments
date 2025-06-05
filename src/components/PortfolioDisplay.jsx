@@ -359,12 +359,28 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
   };
 
   const renderFileReference = () => {
+    console.log('PortfolioDisplay.renderFileReference called with:', {
+      sourceFile,
+      hasSourceFile: !!sourceFile,
+      sourceFileKeys: sourceFile ? Object.keys(sourceFile) : [],
+      isValid: sourceFile ? isValidFileReference(sourceFile) : false
+    });
+
     if (!sourceFile) {
+      console.log('No source file provided to PortfolioDisplay');
       return null;
     }
 
     if (!isValidFileReference(sourceFile)) {
-      console.warn('Invalid file reference in portfolio:', sourceFile);
+      console.warn('Invalid file reference in portfolio:', {
+        sourceFile,
+        sourceFileKeys: Object.keys(sourceFile),
+        validationErrors: sourceFile ? Object.entries(sourceFile).map(([key, value]) => ({
+          key,
+          value,
+          type: typeof value
+        })) : []
+      });
       return null;
     }
 

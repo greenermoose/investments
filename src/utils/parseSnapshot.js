@@ -9,8 +9,8 @@ import { debugLog } from './debugConfig';
  * @returns {Object} Parsed portfolio data
  */
 export const parsePortfolioCSV = (content) => {
-  console.log('Starting CSV parsing with content length:', content.length);
-  console.log('First few lines:', content.split('\n').slice(0, 3).join('\n'));
+  // console.log('Starting CSV parsing with content length:', content.length);
+  // console.log('First few lines:', content.split('\n').slice(0, 3).join('\n'));
 
   debugLog('parseSnapshot', 'start', 'Starting CSV parsing', {
     contentLength: content.length,
@@ -20,8 +20,8 @@ export const parsePortfolioCSV = (content) => {
   try {
     // Split content into lines and filter out empty lines
     const lines = content.split('\n').filter(line => line.trim());
-    console.log('Total lines after filtering:', lines.length);
-    console.log('First few lines:', lines.slice(0, 3));
+    // console.log('Total lines after filtering:', lines.length);
+    // console.log('First few lines:', lines.slice(0, 3));
 
     debugLog('parseSnapshot', 'lines', 'Split content into lines', {
       totalLines: lines.length,
@@ -34,7 +34,7 @@ export const parsePortfolioCSV = (content) => {
     let snapshotTime = null;
 
     if (headerLine) {
-      console.log('Parsing header line:', headerLine);
+      // console.log('Parsing header line:', headerLine);
       
       // Extract date and time from header line - try multiple formats
       const dateTimeFormats = [
@@ -128,7 +128,7 @@ export const parsePortfolioCSV = (content) => {
       /gain\/loss|gain loss|unrealized/i
     ];
 
-    console.log('Searching for header row...');
+    // console.log('Searching for header row...');
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const values = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''));
@@ -136,11 +136,11 @@ export const parsePortfolioCSV = (content) => {
         values.some(value => pattern.test(value))
       );
       
-      console.log(`Line ${i} matches:`, matches.length, 'patterns');
+      // console.log(`Line ${i} matches:`, matches.length, 'patterns');
       if (matches.length >= 2) {
         headerRowIndex = i;
-        console.log('Found header row at index:', i);
-        console.log('Header line:', line);
+        // console.log('Found header row at index:', i);
+        // console.log('Header line:', line);
         break;
       }
     }
@@ -156,7 +156,7 @@ export const parsePortfolioCSV = (content) => {
 
     // Get headers from the header row
     const headers = lines[headerRowIndex].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
-    console.log('Raw headers:', headers);
+    // console.log('Raw headers:', headers);
     
     // Normalize headers to standard format
     const normalizedHeaders = headers.map(header => {
@@ -177,7 +177,7 @@ export const parsePortfolioCSV = (content) => {
     console.log('Normalized headers:', normalizedHeaders);
 
     // Process data rows starting after the header row
-    console.log('Processing data rows starting from index:', headerRowIndex + 1);
+    // console.log('Processing data rows starting from index:', headerRowIndex + 1);
     const positions = lines.slice(headerRowIndex + 1)
       .filter(line => {
         const trimmed = line.trim();
@@ -193,7 +193,7 @@ export const parsePortfolioCSV = (content) => {
         return isValid;
       })
       .map((line, index) => {
-        console.log(`Processing data row ${index}:`, line);
+        // console.log(`Processing data row ${index}:`, line);
         // Split by comma but respect quoted fields
         const values = [];
         let currentValue = '';
@@ -237,19 +237,19 @@ export const parsePortfolioCSV = (content) => {
 
         // Only include positions with a valid symbol
         if (position.Symbol && position.Symbol.trim()) {
-          console.log(`Parsed position ${index}:`, position);
+          // console.log(`Parsed position ${index}:`, position);
           return position;
         }
         return null;
       })
       .filter(Boolean); // Remove null positions
 
-    console.log('Total positions parsed:', positions.length);
+    // console.log('Total positions parsed:', positions.length);
     if (positions.length > 0) {
-      console.log('First position:', positions[0]);
-      console.log('Last position:', positions[positions.length - 1]);
+      // console.log('First position:', positions[0]);
+      // console.log('Last position:', positions[positions.length - 1]);
     } else {
-      console.warn('No valid positions found in the data');
+      // console.warn('No valid positions found in the data');
     }
 
     debugLog('parseSnapshot', 'complete', 'CSV parsing complete', {

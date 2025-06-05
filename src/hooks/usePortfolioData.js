@@ -185,19 +185,28 @@ export const usePortfolioData = (selectedAccount) => {
   const resetError = () => setError(null);
   
   const loadPortfolio = useCallback(async (data, accountName, date, accountTotal, sourceFileInfo) => {
-    debugLog('portfolio', 'data', 'Loading portfolio data', {
+    console.log('usePortfolioData.loadPortfolio called with:', {
       accountName,
       date,
       dataLength: data?.length,
-      hasSourceFile: !!sourceFileInfo,
-      sourceFileInfo
+      hasSourceFileInfo: !!sourceFileInfo,
+      sourceFileInfo,
+      sourceFileInfoKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : []
     });
 
     try {
       setIsLoading(true);
       setError(null);
       
-      const portfolio = await portfolioService.getPortfolio(data);
+      // Instead of calling getPortfolio, we'll use the data directly
+      // since it's already been processed by the pipeline
+      const portfolio = {
+        data,
+        date,
+        accountName,
+        accountTotal,
+        sourceFile: sourceFileInfo
+      };
       
       if (!portfolio) {
         throw new Error('Portfolio not found');
@@ -205,26 +214,44 @@ export const usePortfolioData = (selectedAccount) => {
 
       // Validate file reference
       if (portfolio.sourceFile && !isValidFileReference(portfolio.sourceFile)) {
-        console.warn('Invalid file reference in portfolio:', portfolio.sourceFile);
+        console.warn('Invalid file reference in portfolio:', {
+          sourceFile: portfolio.sourceFile,
+          sourceFileKeys: Object.keys(portfolio.sourceFile),
+          validationErrors: Object.entries(portfolio.sourceFile).map(([key, value]) => ({
+            key,
+            value,
+            type: typeof value
+          }))
+        });
         portfolio.sourceFile = null;
       }
 
-      setPortfolioData(data);
-      setPortfolioDate(date);
-      setCurrentAccount(accountName);
-      setSourceFile(sourceFileInfo ? {
+      const newSourceFile = sourceFileInfo ? {
         fileId: sourceFileInfo.fileId,
         fileHash: sourceFileInfo.fileHash,
         fileName: sourceFileInfo.fileName || null,
         uploadDate: sourceFileInfo.uploadDate || new Date().toISOString()
-      } : null);
+      } : null;
+
+      console.log('Setting source file in state:', {
+        newSourceFile,
+        hasNewSourceFile: !!newSourceFile,
+        newSourceFileKeys: newSourceFile ? Object.keys(newSourceFile) : [],
+        isValid: newSourceFile ? isValidFileReference(newSourceFile) : false
+      });
+
+      setPortfolioData(data);
+      setPortfolioDate(date);
+      setCurrentAccount(accountName);
+      setSourceFile(newSourceFile);
       setIsDataLoaded(true);
       setIsLoading(false);
     } catch (err) {
+      console.error('Error in loadPortfolio:', err);
       setError(err.message);
       setIsLoading(false);
     }
-  }, [portfolioService]);
+  }, []);
 
   const setLoadingState = (loading) => {
     debugLog('ui', 'state', 'Setting loading state', { loading });

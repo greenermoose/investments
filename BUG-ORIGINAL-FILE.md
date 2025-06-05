@@ -42,29 +42,34 @@ A new `FileReference` type has been implemented to standardize file reference ha
 ### Findings (as of 2025-06-05)
 - The file upload and parsing pipeline is working correctly. Files are uploaded, parsed, and processed, and the correct account name and date are extracted.
 - Debug logs confirm that the upload pipeline returns the expected data, including `accountName`, `date`, and parsed positions.
-- However, the UI still reports that the original file reference is missing for new portfolio snapshots.
-- This suggests the problem is not in the upload or parsing pipeline, but in how the file reference is saved to or retrieved from the portfolio snapshot.
+- **NEW FINDING (2025-06-05)**: Detailed console logging reveals that the file reference is being correctly handled in the backend:
+  - File reference data (`fileId` and `fileHash`) is properly passed through the pipeline
+  - `FileReference` object is successfully created and validated
+  - File reference is correctly saved in the `sourceFile` field of the portfolio snapshot
+  - File reference is present when retrieving the snapshot
+- This strongly suggests the issue is not in the backend data handling, but rather in how the UI components display the file reference information.
 
 ### Most Likely Causes
-1. The file reference is not being saved in the correct field (`sourceFile`) in the portfolio snapshot.
+1. ~~The file reference is not being saved in the correct field (`sourceFile`) in the portfolio snapshot.~~ (RULED OUT)
 2. The UI (`PortfolioDisplay` or `usePortfolioData`) is not reading the file reference from the correct field.
 3. There is a mismatch between the saved data and what the UI expects (e.g., old snapshots, migration issue, or a typo in field names).
 
 ### Action Plan
-1. **Portfolio Snapshot Save Logic**: Check `PortfolioService.savePortfolioSnapshot` and `PortfolioRepository.saveSnapshot` to ensure the `sourceFile` field is being set with a valid `FileReference` object when saving a new snapshot.
+1. ~~**Portfolio Snapshot Save Logic**: Check `PortfolioService.savePortfolioSnapshot` and `PortfolioRepository.saveSnapshot` to ensure the `sourceFile` field is being set with a valid `FileReference` object when saving a new snapshot.~~ (COMPLETED - Working correctly)
 2. **Portfolio Snapshot Retrieval**: Check `PortfolioRepository.getById` and `usePortfolioData` to ensure the `sourceFile` field is being read and passed to the UI.
 3. **UI Display**: Check `PortfolioDisplay` to ensure it is looking for `snapshot.sourceFile` and not an old field or a field in `transactionMetadata`.
-4. **Add Debug Logging**: Add debug logs in the repository layer to print the `sourceFile` field when saving and retrieving snapshots, to confirm the data flow.
+4. ~~**Add Debug Logging**: Add debug logs in the repository layer to print the `sourceFile` field when saving and retrieving snapshots, to confirm the data flow.~~ (COMPLETED - Confirmed working)
 
 ### Hypothesis
 - The pipeline and upload are working.
-- The snapshot is being saved, but the `sourceFile` field is either missing, not set, or not read/displayed in the UI.
+- The snapshot is being saved correctly with the `sourceFile` field.
+- The issue is likely in how the UI components access and display the file reference information.
 
 ---
 
 **Next steps:**
-- Review and update the save/retrieve/display logic for the `sourceFile` field as outlined above.
-- Add debug logging to confirm the presence and correctness of the file reference throughout the stack.
+- Review and update the UI components that handle file reference display
+- Add debug logging to the UI components to track how they access the file reference data
 - Test again and update this report with findings.
 
 ## Status
@@ -76,4 +81,5 @@ A new `FileReference` type has been implemented to standardize file reference ha
 ## Notes
 - The new implementation ensures consistent handling of file references across all layers
 - Migration utilities are provided to handle existing data
-- Validation is performed at all levels to maintain data integrity 
+- Validation is performed at all levels to maintain data integrity
+- Backend file reference handling has been verified through detailed logging 

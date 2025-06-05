@@ -16,100 +16,71 @@ When uploading and processing portfolio snapshots, the system is incorrectly fla
 4. When viewing the portfolio later, the system correctly shows the original source file
 
 ## Root Cause Analysis
-The issue is in how the file hash is being handled in the portfolio data structure. The file hash is:
-1. Generated correctly during initial file upload
-2. Stored in the file record
-3. Passed through the processing pipeline in `transactionMetadata`
-4. But not being properly validated or preserved in the final portfolio snapshot
+The issue is more nuanced than initially thought. After code review, we found that:
 
-The specific problems are:
-1. No validation to ensure file hash is present before saving
-2. File hash is stored in `transactionMetadata` but not in a dedicated field
-3. The metadata object is being handled too loosely, allowing the hash to be lost
+1. File Hash Handling:
+   - The file hash is correctly generated during initial file upload
+   - The `PortfolioProcessor` has proper validation for both file hash and file ID
+   - The `PipelineOrchestrator` correctly passes both `fileId` and `fileHash` through the pipeline
+   - Extensive debug logging exists throughout the process to track the file hash
 
-## Proposed Solution
-1. Add a dedicated `sourceFile` field to the portfolio data structure
-2. Add validation to ensure file hash is present
-3. Ensure file hash is preserved during all data transformations
-4. Add logging to track file hash through the pipeline
+2. The Actual Problem:
+   - The file hash is properly validated and passed through the pipeline
+   - The issue occurs in the final storage layer where data structure transformation happens
+   - In `PortfolioRepository.saveSnapshot`, the file hash is stored in `transactionMetadata` but:
+     a. It's not stored in a way that's easily queryable by the UI layer
+     b. The metadata structure makes it easy for the file reference to become "hidden"
+     c. There's no clear separation between file reference data and other transaction metadata
 
-## Implementation Details
-1. Modify `PortfolioRepository.saveSnapshot` to:
-   ```javascript
-   // Add validation
-   if (!portfolio.transactionMetadata?.fileHash) {
-     throw new Error('File hash is required for portfolio snapshot');
-   }
+## Attempted Fix
+The first attempt to fix this issue involved:
 
-   // Add dedicated source file field
-   const portfolioData = {
-     id: portfolioId,
-     account: portfolio.account,
-     date: portfolio.date,
-     data: normalizedData,
-     accountTotal: totals,
-     sourceFile: {
-       fileId: portfolio.transactionMetadata.fileId,
-       fileHash: portfolio.transactionMetadata.fileHash
-     },
-     transactionMetadata: portfolio.transactionMetadata,
-     createdAt: new Date()
-   };
-   ```
+1. Adding a dedicated `sourceFile` field to the portfolio data structure in `PortfolioRepository.saveSnapshot`
+2. Updating `PortfolioService.savePortfolioSnapshot` to properly handle source file data
+3. Adding stronger validation in `PortfolioProcessor.processPortfolioSnapshot`
 
-2. Update `PortfolioService.savePortfolioSnapshot` to:
-   ```javascript
-   // Add validation
-   if (!transactionMetadata?.fileHash) {
-     throw new Error('File hash is required for portfolio snapshot');
-   }
+The changes included:
+- Creating a dedicated `sourceFile` object containing `fileId` and `fileHash`
+- Adding validation to ensure file hash is present when file ID is provided
+- Improving logging to track file reference data through the pipeline
 
-   const portfolio = {
-     account: accountName,
-     date: timestamp,
-     data: portfolioData,
-     accountTotal,
-     sourceFile: {
-       fileId: transactionMetadata.fileId,
-       fileHash: transactionMetadata.fileHash
-     },
-     transactionMetadata
-   };
-   ```
+However, this fix did not resolve the issue. The problem persists, suggesting that:
+1. The UI layer may not be properly accessing the new `sourceFile` field
+2. There might be a data transformation issue in the UI layer
+3. The file reference might be getting lost during data retrieval
 
-3. Update `PipelineOrchestrator.processFile` to:
-   ```javascript
-   // Add validation
-   if (!storageResult.fileHash) {
-     throw new Error('File hash is required for processing');
-   }
+## Next Steps
+1. Investigate the UI layer to understand how it's accessing portfolio data:
+   - Review the portfolio data retrieval flow
+   - Check how the UI determines if a file reference exists
+   - Verify the data structure expected by the UI
 
-   // Ensure file hash is passed through
-   processingResult = await this.processor.processPortfolioSnapshot({
-     parsedData,
-     accountName: metadata.accountName,
-     snapshotDate: metadata.date,
-     fileId: storageResult.id,
-     fileHash: storageResult.fileHash
-   });
-   ```
+2. Add data migration for existing portfolios:
+   - Create a migration script to move file references from `transactionMetadata` to `sourceFile`
+   - Add validation to ensure all portfolios have proper file references
+   - Update any UI code that relies on the old data structure
 
-## Testing Plan
-1. Upload a new portfolio snapshot
-2. Verify file hash is generated and stored
-3. Verify file hash is preserved in portfolio snapshot
-4. Verify file hash can be retrieved when viewing portfolio
-5. Test with multiple file types and sizes
-6. Test with duplicate files
+3. Implement additional safeguards:
+   - Add file reference validation in the UI layer
+   - Create a file reference integrity check utility
+   - Add monitoring for missing file references
+
+4. Improve error handling and user feedback:
+   - Add clear error messages when file references are missing
+   - Implement automatic file reference recovery where possible
+   - Add user notifications for file reference issues
 
 ## Success Criteria
 1. All portfolio snapshots maintain their original file reference
 2. File hash is consistently present in portfolio metadata
 3. Original files can be retrieved for all portfolios
 4. No regression in existing functionality
+5. Clear error messages when file references are missing
+6. Successful migration of existing portfolio data
 
 ## Notes
 - This bug affects the core functionality of tracking portfolio data sources
 - Fix should be implemented with careful consideration of existing data
 - May require data migration for existing portfolios
-- The fix adds a dedicated `sourceFile` field to make the file reference more explicit and less likely to be lost during data transformations 
+- The fix adds a dedicated `sourceFile` field to make the file reference more explicit and less likely to be lost during data transformations
+- The system already has migration utilities (`migrateFromOldStorage`) that can help with file hash matching during the transition 

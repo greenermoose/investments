@@ -124,6 +124,10 @@ export class PortfolioRepository extends BaseRepository {
         date: portfolio.date,
         data: normalizedData,
         accountTotal: totals,
+        sourceFile: portfolio.transactionMetadata?.fileId ? {
+          fileId: portfolio.transactionMetadata.fileId,
+          fileHash: portfolio.transactionMetadata.fileHash
+        } : null,
         transactionMetadata: portfolio.transactionMetadata || {},
         createdAt: new Date()
       };
@@ -134,7 +138,8 @@ export class PortfolioRepository extends BaseRepository {
         totalGain: totals.totalGain,
         metadata: portfolio.transactionMetadata,
         hasFileId: !!portfolio.transactionMetadata?.fileId,
-        hasFileHash: !!portfolio.transactionMetadata?.fileHash
+        hasFileHash: !!portfolio.transactionMetadata?.fileHash,
+        hasSourceFile: !!portfolioData.sourceFile
       });
 
       // Save to database

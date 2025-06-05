@@ -40,10 +40,16 @@ class PortfolioService {
       // Ensure date is a proper timestamp
       const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
       
+      // Validate file reference data
+      if (transactionMetadata?.fileId && !transactionMetadata?.fileHash) {
+        throw new Error('File hash is required when file ID is present');
+      }
+      
       console.log('PortfolioService: Saving portfolio snapshot', {
         accountName,
         date: timestamp,
         positions: portfolioData.length,
+        hasFileId: !!transactionMetadata?.fileId,
         hasFileHash: !!transactionMetadata?.fileHash
       });
 
@@ -52,6 +58,10 @@ class PortfolioService {
         date: timestamp,
         data: portfolioData,
         accountTotal,
+        sourceFile: transactionMetadata?.fileId ? {
+          fileId: transactionMetadata.fileId,
+          fileHash: transactionMetadata.fileHash
+        } : null,
         transactionMetadata: {
           ...transactionMetadata,
           fileId: transactionMetadata?.fileId,

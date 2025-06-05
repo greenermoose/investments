@@ -42,6 +42,18 @@ export class PortfolioProcessor {
       };
     }
 
+    // Validate file reference data
+    if (fileId && !fileHash) {
+      debugLog('portfolio', 'error', 'File hash is required when file ID is present', {
+        fileId,
+        hasFileHash: !!fileHash
+      });
+      return {
+        success: false,
+        error: 'File hash is required when file ID is present'
+      };
+    }
+
     if (!fileId || typeof fileId !== 'string') {
       debugLog('portfolio', 'error', 'Invalid file ID', { 
         fileId,

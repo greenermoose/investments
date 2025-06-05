@@ -2,8 +2,6 @@
 // Handles file type identification and classification
 
 import { debugLog } from './debugConfig';
-import { parsePortfolioCSV } from './parseSnapshot';
-import { parseTransactionJSON } from './parseTransactions';
 
 /**
  * File Type Constants
@@ -18,8 +16,37 @@ export const FileTypes = {
  */
 export const FileClassifications = {
   PORTFOLIO_SNAPSHOT: 'portfolio_snapshot',
-  TRANSACTIONS: 'transactions',
-  UNKNOWN: 'unknown'
+  TRANSACTIONS: 'transactions'
+};
+
+/**
+ * Classify a file based on its content and metadata
+ * @param {string} content - Raw file content
+ * @param {string} fileType - Type of file (csv/json)
+ * @returns {string} File classification
+ */
+const classifyFile = (content, fileType) => {
+  debugLog('file', 'classification', 'Classifying file', {
+    fileType,
+    contentLength: content.length
+  });
+
+  // Check file extension first
+  if (fileType === FileTypes.CSV) {
+    return FileClassifications.PORTFOLIO_SNAPSHOT;
+  } else if (fileType === FileTypes.JSON) {
+    return FileClassifications.TRANSACTIONS;
+  }
+
+  // If file type is not clear from extension, check content
+  const firstLine = content.split('\n')[0].toLowerCase();
+  if (firstLine.includes('symbol') || firstLine.includes('quantity') || firstLine.includes('market value')) {
+    return FileClassifications.PORTFOLIO_SNAPSHOT;
+  } else if (firstLine.includes('brokerage') || firstLine.includes('transactions')) {
+    return FileClassifications.TRANSACTIONS;
+  }
+
+  throw new Error('Unable to classify file type');
 };
 
 /**
@@ -49,217 +76,21 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
       contentLength: content.length
     });
 
-    // Process the file based on its classification
-    let result;
-    switch (classification) {
-      case FileClassifications.PORTFOLIO_SNAPSHOT:
-        debugLog('file', 'processing', 'Processing as portfolio snapshot', {
-          filename,
-          contentLength: content.length,
-          firstFewLines: content.split('\n').slice(0, 3).join('\n')
-        });
-        result = parsePortfolioCSV(content);
-        break;
-      case FileClassifications.TRANSACTIONS:
-        debugLog('file', 'processing', 'Processing as transactions file', {
-          filename,
-          contentLength: content.length,
-          firstFewLines: content.split('\n').slice(0, 3).join('\n')
-        });
-        result = parseTransactionJSON(content);
-        break;
-      default:
-        debugLog('file', 'error', 'Unsupported file classification', {
-          filename,
-          classification,
-          fileType,
-          contentLength: content.length
-        });
-        throw new Error('Unsupported file classification');
-    }
-
-    debugLog('file', 'processing', 'File processing complete', {
-      filename,
-      classification,
-      success: result.success,
-      error: result.error,
-      contentLength: content.length
-    });
-
     return {
       success: true,
       classification,
-      ...result
+      fileType: classification === FileClassifications.PORTFOLIO_SNAPSHOT ? FileTypes.CSV : FileTypes.JSON
     };
   } catch (error) {
-    debugLog('file', 'error', 'Error processing file', {
+    debugLog('file', 'error', 'File identification failed', {
       filename,
       error: error.message,
-      stack: error.stack,
-      contentLength: content.length,
-      firstFewLines: content.split('\n').slice(0, 3).join('\n')
+      stack: error.stack
     });
     return {
       success: false,
       error: error.message
     };
-  }
-};
-
-/**
- * Classify a file based on its content and type
- * @param {string} content - Raw file content
- * @param {string} fileType - Type of file (csv/json)
- * @returns {string} File classification
- */
-const classifyFile = (content, fileType) => {
-  debugLog('file', 'classification', 'Starting file classification', {
-    fileType,
-    contentLength: content.length,
-    firstFewLines: content.split('\n').slice(0, 3).join('\n')
-  });
-
-  try {
-    if (fileType === FileTypes.CSV) {
-      // Check if it's a portfolio snapshot by looking for common headers or position patterns
-      const lines = content.split('\n').filter(line => line.trim());
-      debugLog('file', 'classification', 'Analyzing CSV content', {
-        fileType,
-        totalLines: lines.length,
-        firstFewLines: lines.slice(0, 3)
-      });
-
-      // First check for position account header
-      const firstLine = lines[0];
-      if (firstLine && (
-        firstLine.includes('Positions for account') ||
-        firstLine.includes('Account Positions') ||
-        firstLine.includes('Portfolio Positions')
-      )) {
-        debugLog('file', 'classification', 'Found position account header', {
-          fileType,
-          firstLine
-        });
-        return FileClassifications.PORTFOLIO_SNAPSHOT;
-      }
-
-      // Then check for JSON-like patterns
-      if (firstLine && firstLine.trim().startsWith('{')) {
-        try {
-          const jsonData = JSON.parse(firstLine);
-          const key = Object.keys(jsonData)[0];
-          if (key && (
-            key.includes('Positions for account') ||
-            key.includes('Account Positions') ||
-            key.includes('Portfolio Positions')
-          )) {
-            debugLog('file', 'classification', 'Found JSON-like portfolio snapshot', {
-              fileType,
-              firstLine,
-              key
-            });
-            return FileClassifications.PORTFOLIO_SNAPSHOT;
-          }
-        } catch (e) {
-          // Not JSON, continue with CSV header check
-        }
-      }
-
-      // Finally check for CSV headers with more flexible patterns
-      const headerPatterns = [
-        /symbol|ticker/i,
-        /description|security/i,
-        /quantity|qty|shares/i,
-        /price|share price/i,
-        /market value|mkt val|total value/i,
-        /cost basis|basis/i,
-        /gain\/loss|gain loss|unrealized/i,
-        /position/i,
-        /account/i
-      ];
-
-      // Process each line, handling quoted fields
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-        // Split by comma but respect quoted fields
-        const values = [];
-        let currentValue = '';
-        let inQuotes = false;
-        
-        for (let j = 0; j < line.length; j++) {
-          const char = line[j];
-          if (char === '"') {
-            inQuotes = !inQuotes;
-          } else if (char === ',' && !inQuotes) {
-            values.push(currentValue.trim().replace(/^"|"$/g, ''));
-            currentValue = '';
-          } else {
-            currentValue += char;
-          }
-        }
-        values.push(currentValue.trim().replace(/^"|"$/g, ''));
-
-        // Check if this line contains enough header patterns
-        const matches = headerPatterns.filter(pattern => 
-          values.some(value => pattern.test(value))
-        );
-        
-        // Reduced threshold to 2 matches since some files might have fewer columns
-        if (matches.length >= 2) {
-          debugLog('file', 'classification', 'Found portfolio snapshot headers', {
-            fileType,
-            lineNumber: i + 1,
-            line: lines[i],
-            matches: matches.map(m => m.toString())
-          });
-          return FileClassifications.PORTFOLIO_SNAPSHOT;
-        }
-      }
-    } else if (fileType === FileTypes.JSON) {
-      try {
-        const data = JSON.parse(content);
-        if (Array.isArray(data)) {
-          // Check if it's a transactions file by looking for common transaction fields
-          const sampleItem = data[0];
-          if (sampleItem) {
-            const hasTransactionFields = 
-              (sampleItem.date || sampleItem.Date || sampleItem.transactionDate) &&
-              (sampleItem.symbol || sampleItem.Symbol || sampleItem.securitySymbol) &&
-              (sampleItem.type || sampleItem.Type || sampleItem.transactionType);
-            
-            if (hasTransactionFields) {
-              debugLog('file', 'classification', 'Found transaction data structure', {
-                fileType,
-                sampleFields: Object.keys(sampleItem),
-                firstItem: sampleItem
-              });
-              return FileClassifications.TRANSACTIONS;
-            }
-          }
-        }
-      } catch (error) {
-        debugLog('file', 'error', 'Error parsing JSON for classification', {
-          fileType,
-          error: error.message,
-          contentLength: content.length
-        });
-      }
-    }
-
-    debugLog('file', 'classification', 'File classification complete - unknown type', {
-      fileType,
-      contentLength: content.length,
-      firstFewLines: content.split('\n').slice(0, 3).join('\n')
-    });
-    return FileClassifications.UNKNOWN;
-  } catch (error) {
-    debugLog('file', 'error', 'Error classifying file', {
-      fileType,
-      error: error.message,
-      stack: error.stack,
-      contentLength: content.length
-    });
-    return FileClassifications.UNKNOWN;
   }
 };
 

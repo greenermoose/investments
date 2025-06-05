@@ -8,7 +8,7 @@ import { debugLog } from '../../utils/debugConfig';
  */
 export class PortfolioProcessor {
   constructor() {
-    this.repository = new PortfolioRepository();
+    this.portfolioRepo = new PortfolioRepository();
   }
 
   /**

@@ -1,3 +1,7 @@
+### 0.4.79
+
+- fixing snapshot parsing, pass 4
+
 ### 0.4.78
 
 - manually add console logging

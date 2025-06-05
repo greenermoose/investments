@@ -99,15 +99,13 @@ export class PipelineOrchestrator {
         filename: file.name,
         success: parsedData.success,
         dataLength: parsedData.data?.length,
-        firstPosition: parsedData.data?.[0],
-        rawData: JSON.stringify(parsedData.data?.[0])
+        firstPosition: parsedData.data?.[0]
       });
       
       if (!parsedData.success) {
         debugLog('pipeline', 'error', 'Parsing failed', { 
           filename: file.name,
-          error: parsedData.error,
-          rawData: JSON.stringify(parsedData)
+          error: parsedData.error
         });
         throw new Error(`Failed to parse file: ${parsedData.error}`);
       }
@@ -120,8 +118,7 @@ export class PipelineOrchestrator {
           fileId: storageResult.id,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
-          dataLength: parsedData.data?.length,
-          firstPosition: parsedData.data?.[0]
+          dataLength: parsedData.data?.length
         });
         
         processingResult = await this.processor.processPortfolioSnapshot({
@@ -135,9 +132,7 @@ export class PipelineOrchestrator {
           filename: file.name,
           success: processingResult.success,
           hasSnapshot: !!processingResult.snapshot,
-          snapshotDataLength: processingResult.snapshot?.data?.length,
-          firstSnapshotPosition: processingResult.snapshot?.data?.[0],
-          rawResult: JSON.stringify(processingResult)
+          snapshotDataLength: processingResult.snapshot?.data?.length
         });
       }
 

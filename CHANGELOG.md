@@ -1,3 +1,7 @@
+### 0.4.92
+
+- fix the original file bug, pass 4
+
 ### 0.4.91
 
 - fix the original file bug, pass 3

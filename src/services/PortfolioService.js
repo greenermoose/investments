@@ -11,6 +11,7 @@ import { ManualAdjustmentRepository } from '../repositories/ManualAdjustmentRepo
 import { FileRepository } from '../repositories/FileRepository';
 import { TransactionMetadataRepository } from '../repositories/TransactionMetadataRepository';
 import { debugLog } from '../utils/debugConfig';
+import { createFileReference, migrateFileReference } from '../types/FileReference';
 
 class PortfolioService {
   constructor() {
@@ -40,17 +41,14 @@ class PortfolioService {
       // Ensure date is a proper timestamp
       const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
       
-      // Validate file reference data
-      if (transactionMetadata?.fileId && !transactionMetadata?.fileHash) {
-        throw new Error('File hash is required when file ID is present');
-      }
+      // Create file reference if metadata contains file info
+      const fileReference = transactionMetadata ? migrateFileReference(transactionMetadata) : null;
       
       console.log('PortfolioService: Saving portfolio snapshot', {
         accountName,
         date: timestamp,
         positions: portfolioData.length,
-        hasFileId: !!transactionMetadata?.fileId,
-        hasFileHash: !!transactionMetadata?.fileHash
+        hasFileReference: !!fileReference
       });
 
       const portfolio = {
@@ -58,17 +56,12 @@ class PortfolioService {
         date: timestamp,
         data: portfolioData,
         accountTotal,
-        sourceFile: transactionMetadata?.fileId ? {
-          fileId: transactionMetadata.fileId,
-          fileHash: transactionMetadata.fileHash,
-          fileName: transactionMetadata.fileName || null,
-          uploadDate: transactionMetadata.uploadDate || new Date().toISOString()
-        } : null,
-        transactionMetadata: {
-          ...transactionMetadata,
-          fileId: transactionMetadata?.fileId,
-          fileHash: transactionMetadata?.fileHash
-        }
+        sourceFile: fileReference,
+        // Create a new transactionMetadata object without file reference fields
+        transactionMetadata: Object.fromEntries(
+          Object.entries(transactionMetadata || {})
+            .filter(([key]) => !['fileId', 'fileHash', 'fileName', 'uploadDate'].includes(key))
+        )
       };
 
       return await this.portfolioRepo.saveSnapshot(portfolio);

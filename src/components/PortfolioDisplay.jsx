@@ -9,6 +9,7 @@ import '../styles/base.css';
 import '../styles/portfolio.css';
 import { usePortfolio } from '../hooks/usePortfolio';
 import { debugLog } from '../utils/debugConfig';
+import { isValidFileReference } from '../types/FileReference';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, sourceFile, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
@@ -357,6 +358,27 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
     );
   };
 
+  const renderFileReference = () => {
+    if (!sourceFile) {
+      return null;
+    }
+
+    if (!isValidFileReference(sourceFile)) {
+      console.warn('Invalid file reference in portfolio:', sourceFile);
+      return null;
+    }
+
+    return (
+      <div className="file-reference">
+        <h4>Source File</h4>
+        <p>File: {sourceFile.fileName || 'Unknown'}</p>
+        <p>Uploaded: {new Date(sourceFile.uploadDate).toLocaleString()}</p>
+        <p>ID: {sourceFile.fileId}</p>
+        <p>Hash: {sourceFile.fileHash}</p>
+      </div>
+    );
+  };
+
   return (
     <div className="portfolio-display">
       <div className="portfolio-header">
@@ -366,15 +388,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
             As of {new Date(portfolioDate).toLocaleDateString()}
           </div>
         )}
-        {sourceFile && (
-          <div className="source-file-info">
-            <h3>Source File Information</h3>
-            <p>File ID: {sourceFile.fileId}</p>
-            <p>File Hash: {sourceFile.fileHash}</p>
-            {sourceFile.fileName && <p>File Name: {sourceFile.fileName}</p>}
-            {sourceFile.uploadDate && <p>Upload Date: {new Date(sourceFile.uploadDate).toLocaleString()}</p>}
-          </div>
-        )}
+        {renderFileReference()}
       </div>
       {/* Tab Selector - Updated to include Top Holdings tab */}
       <div className="tab-container">

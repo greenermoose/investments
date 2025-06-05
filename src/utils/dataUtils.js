@@ -302,15 +302,27 @@ export const normalizeSourceFile = (sourceFile) => {
   
   // Validate required fields
   if (!sourceFile.fileId || !sourceFile.fileHash) {
-    console.warn('Invalid sourceFile structure:', sourceFile);
+    console.warn('Invalid sourceFile structure: missing required fields', {
+      hasFileId: !!sourceFile.fileId,
+      hasFileHash: !!sourceFile.fileHash,
+      providedFields: Object.keys(sourceFile)
+    });
     return null;
   }
 
-  // Return normalized structure
-  return {
-    fileId: sourceFile.fileId,
-    fileHash: sourceFile.fileHash,
-    fileName: sourceFile.fileName || null,
-    uploadDate: sourceFile.uploadDate || new Date().toISOString()
+  // Define the exact structure we expect
+  const normalized = {
+    fileId: String(sourceFile.fileId),
+    fileHash: String(sourceFile.fileHash),
+    fileName: sourceFile.fileName ? String(sourceFile.fileName) : null,
+    uploadDate: sourceFile.uploadDate ? String(sourceFile.uploadDate) : new Date().toISOString()
   };
+
+  // Check for unexpected fields
+  const unexpectedFields = Object.keys(sourceFile).filter(key => !(key in normalized));
+  if (unexpectedFields.length > 0) {
+    console.warn('Unexpected fields in sourceFile:', unexpectedFields);
+  }
+
+  return normalized;
 };

@@ -4,6 +4,7 @@
 import { BaseRepository } from './BaseRepository';
 import { STORE_NAME_PORTFOLIOS, initializeDB } from '../utils/databaseUtils';
 import { debugLog } from '../utils/debugConfig';
+import { createFileReference, migrateFileReference, isValidFileReference } from '../types/FileReference';
 
 export class PortfolioRepository extends BaseRepository {
   constructor() {
@@ -21,7 +22,7 @@ export class PortfolioRepository extends BaseRepository {
       accountName: portfolio.account,
       date: portfolio.date,
       dataLength: portfolio.data?.length,
-      hasFileId: !!portfolio.transactionMetadata?.fileId
+      hasFileReference: !!portfolio.sourceFile
     });
 
     try {
@@ -124,28 +125,27 @@ export class PortfolioRepository extends BaseRepository {
         date: portfolio.date,
         data: normalizedData,
         accountTotal: totals,
-        sourceFile: portfolio.transactionMetadata?.fileId ? {
-          fileId: portfolio.transactionMetadata.fileId,
-          fileHash: portfolio.transactionMetadata.fileHash,
-          fileName: portfolio.transactionMetadata.fileName || null,
-          uploadDate: portfolio.transactionMetadata.uploadDate || new Date().toISOString()
-        } : null,
-        transactionMetadata: {
-          ...portfolio.transactionMetadata,
-          fileId: portfolio.transactionMetadata?.fileId,
-          fileHash: portfolio.transactionMetadata?.fileHash
-        },
+        sourceFile: portfolio.sourceFile || (portfolio.transactionMetadata ? migrateFileReference(portfolio.transactionMetadata) : null),
+        // Create a new transactionMetadata object without file reference fields
+        transactionMetadata: Object.fromEntries(
+          Object.entries(portfolio.transactionMetadata || {})
+            .filter(([key]) => !['fileId', 'fileHash', 'fileName', 'uploadDate'].includes(key))
+        ),
         createdAt: new Date()
       };
+
+      // Validate file reference if present
+      if (portfolioData.sourceFile && !isValidFileReference(portfolioData.sourceFile)) {
+        console.warn('Invalid file reference in portfolio data:', portfolioData.sourceFile);
+        portfolioData.sourceFile = null;
+      }
 
       debugLog('portfolioRepository', 'save', 'Preparing to save portfolio', {
         portfolioId,
         totalValue: totals.totalValue,
         totalGain: totals.totalGain,
-        metadata: portfolio.transactionMetadata,
-        hasFileId: !!portfolio.transactionMetadata?.fileId,
-        hasFileHash: !!portfolio.transactionMetadata?.fileHash,
-        hasSourceFile: !!portfolioData.sourceFile
+        hasFileReference: !!portfolioData.sourceFile,
+        fileReferenceValid: isValidFileReference(portfolioData.sourceFile)
       });
 
       // Save to database
@@ -155,7 +155,8 @@ export class PortfolioRepository extends BaseRepository {
         portfolioId,
         positionCount: normalizedData.length,
         totalValue: totals.totalValue,
-        totalGain: totals.totalGain
+        totalGain: totals.totalGain,
+        hasFileReference: !!portfolioData.sourceFile
       });
 
       return portfolioId;

@@ -23,6 +23,7 @@ export class PipelineOrchestrator {
    * @returns {Promise<Object>} Processing result
    */
   async processFile(file) {
+    console.log('PipelineOrchestrator: processFile starting...')
     debugLog('pipeline', 'start', 'Starting pipeline processing', { 
       filename: file.name,
       fileSize: file.size,
@@ -38,7 +39,33 @@ export class PipelineOrchestrator {
         firstFewLines: content.split('\n').slice(0, 3).join('\n')
       });
 
-      // Stage 2: Identify file type and metadata
+      // Stage 2: Determine file type from extension
+      const fileType = file.name.toLowerCase().endsWith('.csv') ? 'CSV' : 'JSON';
+      debugLog('pipeline', 'type', 'Determined file type', {
+        filename: file.name,
+        fileType
+      });
+
+      // Stage 3: Save file to storage first
+      const storageResult = await saveUploadedFile(
+        file,
+        content,
+        null, // accountName will be determined later
+        fileType,
+        null  // date will be determined later
+      );
+
+      if (!storageResult.id) {
+        throw new Error('Failed to save file to storage');
+      }
+
+      debugLog('pipeline', 'storage', 'File saved to storage', {
+        filename: file.name,
+        fileId: storageResult.id,
+        isDuplicate: storageResult.isDuplicate
+      });
+
+      // Stage 4: Identify file type and metadata
       const metadata = await this.identifyFile(file, content);
       debugLog('pipeline', 'identify', 'File identified', {
         filename: file.name,
@@ -48,42 +75,24 @@ export class PipelineOrchestrator {
         hasMetadata: !!metadata
       });
 
-      // Stage 3: Upload file to storage
-      const uploadResult = await this.uploadFile(file, metadata);
-      debugLog('pipeline', 'upload', 'File uploaded', {
-        filename: file.name,
-        fileId: uploadResult.fileId,
-        hasFileId: !!uploadResult.fileId,
-        fileType: uploadResult.fileType
-      });
-
-      const fileId = uploadResult.fileId;
-      if (!fileId) {
-        debugLog('pipeline', 'error', 'Missing file ID after upload', {
-          filename: file.name,
-          uploadResult
-        });
-        throw new Error('Failed to get file ID from upload');
-      }
-
-      // Stage 4: Parse file content
+      // Stage 5: Parse file content
       debugLog('pipeline', 'parse', 'Starting file parsing', {
         filename: file.name,
-        fileType: uploadResult.fileType,
+        fileType: metadata.fileType,
         contentLength: content.length
       });
 
       let parsedData;
-      if (uploadResult.fileType === 'CSV') {
+      if (metadata.fileType === 'CSV') {
         parsedData = parsePortfolioCSV(content);
-      } else if (uploadResult.fileType === 'JSON') {
+      } else if (metadata.fileType === 'JSON') {
         parsedData = parseTransactionJSON(content);
       } else {
         debugLog('pipeline', 'error', 'Unsupported file type', {
           filename: file.name,
-          fileType: uploadResult.fileType
+          fileType: metadata.fileType
         });
-        throw new Error(`Unsupported file type: ${uploadResult.fileType}`);
+        throw new Error(`Unsupported file type: ${metadata.fileType}`);
       }
 
       debugLog('pipeline', 'parse', 'File parsed', {
@@ -103,12 +112,12 @@ export class PipelineOrchestrator {
         throw new Error(`Failed to parse file: ${parsedData.error}`);
       }
       
-      // Stage 5: Process and save to portfolio database
+      // Stage 6: Process and save to portfolio database
       let processingResult;
-      if (uploadResult.fileType === 'CSV') {
+      if (metadata.fileType === 'CSV') {
         debugLog('pipeline', 'process', 'Processing portfolio snapshot', {
           filename: file.name,
-          fileId,
+          fileId: storageResult.id,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
           dataLength: parsedData.data?.length,
@@ -119,7 +128,7 @@ export class PipelineOrchestrator {
           parsedData,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
-          fileId
+          fileId: storageResult.id
         });
 
         debugLog('pipeline', 'process', 'Portfolio snapshot processed', {
@@ -132,14 +141,14 @@ export class PipelineOrchestrator {
         });
       }
 
-      // Stage 6: Update file processing status
+      // Stage 7: Update file processing status
       debugLog('pipeline', 'status', 'Updating file processing status', {
         filename: file.name,
-        fileId,
+        fileId: storageResult.id,
         success: processingResult?.success
       });
 
-      await markFileAsProcessed(fileId, {
+      await markFileAsProcessed(storageResult.id, {
         processed: true,
         success: processingResult?.success,
         error: processingResult?.error
@@ -147,7 +156,7 @@ export class PipelineOrchestrator {
 
       debugLog('pipeline', 'complete', 'Pipeline processing completed', {
         filename: file.name,
-        fileId,
+        fileId: storageResult.id,
         success: processingResult?.success,
         hasData: !!processingResult?.snapshot?.data?.length
       });

@@ -46,6 +46,7 @@ const FILE_TYPES = {
  * @returns {Promise<string>} File content
  */
 const readFileAsText = (file) => {
+  console.log('useFileUpload: readFileAsText starting...')
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = (e) => resolve(e.target.result);
@@ -58,12 +59,14 @@ const readFileAsText = (file) => {
  * Enhanced useFileUpload hook that properly saves original files
  */
 export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallbacks = {}) {
+  console.log('useFileUpload: useFileUpload starting...')
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);
   const { showDialog } = useDialog();
   const pipeline = new PipelineOrchestrator();
 
   const handleFileUpload = async (file) => {
+    console.log('useFileUpload: handleFileUpload starting...')
     debugLog('fileUpload', 'start', 'Starting file upload', { filename: file.name });
     setIsUploading(true);
     setUploadError(null);

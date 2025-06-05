@@ -30,6 +30,7 @@ export const FileClassifications = {
  * @returns {Object} File classification result
  */
 export const identifyAndClassifyFile = (content, filename, fileType) => {
+  console.log('fileProcessing: identifyAndClassifyFile starting...')
   debugLog('file', 'processing', 'Starting file processing', {
     filename,
     fileType,
@@ -130,7 +131,11 @@ const classifyFile = (content, fileType) => {
 
       // First check for position account header
       const firstLine = lines[0];
-      if (firstLine && firstLine.includes('Positions for account')) {
+      if (firstLine && (
+        firstLine.includes('Positions for account') ||
+        firstLine.includes('Account Positions') ||
+        firstLine.includes('Portfolio Positions')
+      )) {
         debugLog('file', 'classification', 'Found position account header', {
           fileType,
           firstLine
@@ -143,7 +148,11 @@ const classifyFile = (content, fileType) => {
         try {
           const jsonData = JSON.parse(firstLine);
           const key = Object.keys(jsonData)[0];
-          if (key && key.includes('Positions for account')) {
+          if (key && (
+            key.includes('Positions for account') ||
+            key.includes('Account Positions') ||
+            key.includes('Portfolio Positions')
+          )) {
             debugLog('file', 'classification', 'Found JSON-like portfolio snapshot', {
               fileType,
               firstLine,
@@ -156,15 +165,17 @@ const classifyFile = (content, fileType) => {
         }
       }
 
-      // Finally check for CSV headers
+      // Finally check for CSV headers with more flexible patterns
       const headerPatterns = [
-        /symbol/i,
-        /description/i,
-        /quantity|qty/i,
-        /price/i,
-        /market value|mkt val/i,
-        /cost basis/i,
-        /gain\/loss|gain loss/i
+        /symbol|ticker/i,
+        /description|security/i,
+        /quantity|qty|shares/i,
+        /price|share price/i,
+        /market value|mkt val|total value/i,
+        /cost basis|basis/i,
+        /gain\/loss|gain loss|unrealized/i,
+        /position/i,
+        /account/i
       ];
 
       // Process each line, handling quoted fields
@@ -193,7 +204,8 @@ const classifyFile = (content, fileType) => {
           values.some(value => pattern.test(value))
         );
         
-        if (matches.length >= 3) {
+        // Reduced threshold to 2 matches since some files might have fewer columns
+        if (matches.length >= 2) {
           debugLog('file', 'classification', 'Found portfolio snapshot headers', {
             fileType,
             lineNumber: i + 1,

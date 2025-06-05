@@ -18,6 +18,7 @@ export const FileTypes = {
  * @returns {Promise<IDBDatabase>} Database instance
  */
 export const initializeFileStorage = async () => {
+  console.log('fileStorage: initializeFileStorage starting...')
   return initializeDB(DB_NAME, DB_VERSION, [
     {
       name: STORE_NAME_FILES,
@@ -38,6 +39,7 @@ export const initializeFileStorage = async () => {
  * @returns {Promise<string>} File hash
  */
 export const calculateFileHash = async (content) => {
+  console.log('fileStorage: calculateFileHash starting...')
   const encoder = new TextEncoder();
   const data = encoder.encode(content);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
@@ -51,6 +53,7 @@ export const calculateFileHash = async (content) => {
  * @returns {Promise<Object|null>} File record if found
  */
 export const findFileByHash = async (hash) => {
+  console.log('fileStorage: findFileByHash starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
@@ -69,6 +72,7 @@ export const findFileByHash = async (hash) => {
  * @returns {Promise<Object|null>} File record if found
  */
 export const findFileByName = async (filename) => {
+  console.log('fileStorage: findFileByName starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
@@ -99,6 +103,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     contentLength: content.length,
     firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
+  console.log('fileStorage: saveUploadedFile starting...')
 
   const db = await initializeFileStorage();
 
@@ -211,6 +216,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
  * @returns {Promise<Object>} File record
  */
 export const getFileById = async (fileId) => {
+  console.log('fileStorage: getFileById starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
@@ -238,6 +244,7 @@ export const getFileById = async (fileId) => {
  * @returns {Promise<void>}
  */
 export const markFileAsProcessed = async (fileId, result) => {
+  console.log('fileStorage: markFileAsProcessed starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
@@ -269,6 +276,7 @@ export const markFileAsProcessed = async (fileId, result) => {
  * @returns {Promise<void>}
  */
 export const deleteFile = async (fileId) => {
+  console.log('fileStorage: deleteFile starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readwrite');
@@ -285,6 +293,7 @@ export const deleteFile = async (fileId) => {
  * @returns {Promise<Array>} Array of file records
  */
 export const getAllFiles = async () => {
+  console.log('fileStorage: getAllFiles starting...')
   const db = await initializeFileStorage();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction([STORE_NAME_FILES], 'readonly');
@@ -302,6 +311,7 @@ export const getAllFiles = async () => {
  * @returns {Promise<Object>} Cleanup results
  */
 export const cleanupOldFiles = async (maxAgeInDays = 365) => {
+  console.log('fileStorage: cleanupOldFiles starting...')
   const db = await initializeFileStorage();
 
   const allFiles = await getAllFiles();
@@ -336,6 +346,7 @@ export const cleanupOldFiles = async (maxAgeInDays = 365) => {
  * @returns {Promise<void>}
  */
 export const purgeAllFiles = async () => {
+  console.log('fileStorage: purgeAllFiles starting...')
   const db = await initializeFileStorage();
   
   return new Promise((resolve, reject) => {
@@ -371,6 +382,7 @@ export const purgeAllFiles = async () => {
  * @returns {Promise<Object>} Result of the replacement operation
  */
 export const replaceFile = async (fileId, content, filename, fileType) => {
+  console.log('fileStorage: replaceFile starting...')
   debugLog('storage', 'file', 'Replacing file', {
     fileId,
     filename,

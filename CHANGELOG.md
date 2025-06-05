@@ -1,3 +1,7 @@
+### 0.4.104
+
+- Portfolio file details tab
+
 ### 0.4.103
 
 - add snapshot selector

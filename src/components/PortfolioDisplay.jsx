@@ -12,7 +12,7 @@ import { debugLog } from '../utils/debugConfig';
 import { isValidFileReference } from '../types/FileReference';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, sourceFile, currentAccount, onSymbolClick }) => {
-  const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
+  const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', 'positions', or 'fileDetails'
   const [sortConfig, setSortConfig] = useState({ key: 'Symbol', direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
 
@@ -358,80 +358,125 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
     );
   };
 
-  const renderFileReference = () => {
-    console.log('PortfolioDisplay.renderFileReference called with:', {
-      sourceFile,
-      hasSourceFile: !!sourceFile,
-      sourceFileKeys: sourceFile ? Object.keys(sourceFile) : [],
-      isValid: sourceFile ? isValidFileReference(sourceFile) : false
-    });
-
+  const renderFileDetailsContent = () => {
     if (!sourceFile) {
-      console.log('No source file provided to PortfolioDisplay');
-      return null;
-    }
-
-    if (!isValidFileReference(sourceFile)) {
-      console.warn('Invalid file reference in portfolio:', {
-        sourceFile,
-        sourceFileKeys: Object.keys(sourceFile),
-        validationErrors: sourceFile ? Object.entries(sourceFile).map(([key, value]) => ({
-          key,
-          value,
-          type: typeof value
-        })) : []
-      });
-      return null;
+      return (
+        <div className="card">
+          <h2 className="card-title">No File Details Available</h2>
+          <p className="text-gray-600">Upload a portfolio file to see details.</p>
+        </div>
+      );
     }
 
     return (
-      <div className="file-reference">
-        <h4>Source File</h4>
-        <p>File: {sourceFile.fileName || 'Unknown'}</p>
-        <p>Uploaded: {new Date(sourceFile.uploadDate).toLocaleString()}</p>
-        <p>ID: {sourceFile.fileId}</p>
-        <p>Hash: {sourceFile.fileHash}</p>
+      <div className="card">
+        <h2 className="card-title">File Details</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Source Information</h3>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm text-gray-600">File Name</p>
+                  <p className="font-medium">{sourceFile.name}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">File Type</p>
+                  <p className="font-medium">{sourceFile.type}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">Last Modified</p>
+                  <p className="font-medium">{new Date(sourceFile.lastModified).toLocaleString()}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">File Size</p>
+                  <p className="font-medium">{(sourceFile.size / 1024).toFixed(2)} KB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Portfolio Information</h3>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm text-gray-600">Portfolio Date</p>
+                  <p className="font-medium">{portfolioDate ? new Date(portfolioDate).toLocaleDateString() : 'N/A'}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">Account</p>
+                  <p className="font-medium">{currentAccount || 'N/A'}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">Total Positions</p>
+                  <p className="font-medium">{portfolioData ? portfolioData.length : 0}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">Total Value</p>
+                  <p className="font-medium">{portfolioStats ? formatCurrency(portfolioStats.totalValue) : 'N/A'}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   };
 
   return (
-    <div className="portfolio-display">
-      <div className="portfolio-header">
-        <h2>Portfolio Overview</h2>
-        {portfolioDate && (
-          <div className="portfolio-date">
-            As of {new Date(portfolioDate).toLocaleDateString()}
-          </div>
-        )}
-        {renderFileReference()}
-      </div>
-      {/* Tab Selector - Updated to include Top Holdings tab */}
-      <div className="tab-container">
+    <div className="space-y-6">
+      {/* Tab Navigation */}
+      <div className="flex space-x-4 border-b border-gray-200">
         <button
-          className={activeView === 'overview' ? 'tab-active' : 'tab'}
+          className={`px-4 py-2 font-medium text-sm ${
+            activeView === 'overview'
+              ? 'text-indigo-600 border-b-2 border-indigo-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveView('overview')}
         >
           Overview
         </button>
         <button
-          className={activeView === 'topHoldings' ? 'tab-active' : 'tab'}
+          className={`px-4 py-2 font-medium text-sm ${
+            activeView === 'topHoldings'
+              ? 'text-indigo-600 border-b-2 border-indigo-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveView('topHoldings')}
         >
           Top Holdings
         </button>
         <button
-          className={activeView === 'positions' ? 'tab-active' : 'tab'}
+          className={`px-4 py-2 font-medium text-sm ${
+            activeView === 'positions'
+              ? 'text-indigo-600 border-b-2 border-indigo-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveView('positions')}
         >
           All Positions
         </button>
+        <button
+          className={`px-4 py-2 font-medium text-sm ${
+            activeView === 'fileDetails'
+              ? 'text-indigo-600 border-b-2 border-indigo-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
+          onClick={() => setActiveView('fileDetails')}
+        >
+          File Details
+        </button>
       </div>
 
-      {/* Content */}
-      {activeView === 'overview' && renderOverviewContent()}
-      {activeView === 'topHoldings' && renderTopHoldingsContent()}
-      {activeView === 'positions' && renderPositionsContent()}
+      {/* Content Area */}
+      <div className="mt-6">
+        {activeView === 'overview' && renderOverviewContent()}
+        {activeView === 'topHoldings' && renderTopHoldingsContent()}
+        {activeView === 'positions' && renderPositionsContent()}
+        {activeView === 'fileDetails' && renderFileDetailsContent()}
+      </div>
     </div>
   );
 };

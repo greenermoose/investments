@@ -1,6 +1,7 @@
 import portfolioService from '../../services/PortfolioService';
 import { calculateAccountTotals, analyzeChanges } from '../../utils/portfolioAnalysis';
 import { PortfolioRepository } from '../../repositories/PortfolioRepository';
+import { FileRepository } from '../../repositories/FileRepository';
 import { debugLog } from '../../utils/debugConfig';
 
 /**
@@ -9,6 +10,7 @@ import { debugLog } from '../../utils/debugConfig';
 export class PortfolioProcessor {
   constructor() {
     this.portfolioRepo = new PortfolioRepository();
+    this.fileRepo = new FileRepository();
   }
 
   /**
@@ -212,6 +214,15 @@ export class PortfolioProcessor {
         portfolioId: snapshot.id,
         positionsCount: snapshot.data.length,
         hasChanges: !!changes
+      });
+
+      // Mark file as processed
+      await this.fileRepo.markAsProcessed(fileId, {
+        success: true,
+        portfolioId: snapshot.id,
+        accountName: finalAccountName,
+        date: timestamp,
+        changes
       });
 
       return {

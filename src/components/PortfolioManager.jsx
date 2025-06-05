@@ -35,7 +35,15 @@ const PortfolioManager = () => {
   const acquisition = useAcquisition();
   const navigation = useNavigation();
   const account = useAccount();
-  const fileUpload = useFileUpload();
+  const fileUpload = useFileUpload(portfolio.portfolioData, {
+    loadPortfolio: async (data, accountName, date, accountTotal) => {
+      await portfolio.loadPortfolio(data, accountName, date, accountTotal);
+    },
+    onNavigate: navigation.changeTab,
+    setLoadingState: portfolio.setLoadingState,
+    resetError: portfolio.resetError,
+    setError: portfolio.setError
+  });
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);

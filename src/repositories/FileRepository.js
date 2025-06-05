@@ -218,4 +218,27 @@ export class FileRepository extends BaseRepository {
     
     return this.save(updatedFile);
   }
+
+  /**
+   * Mark file as processed
+   * @param {string} fileId - File ID
+   * @param {Object} processingResult - Processing result
+   * @returns {Promise<void>}
+   */
+  async markAsProcessed(fileId, processingResult) {
+    const file = await this.getById(fileId);
+    if (!file) {
+      throw new Error(`File not found: ${fileId}`);
+    }
+    
+    const updatedFile = {
+      ...file,
+      processed: true,
+      processedDate: new Date(),
+      processingResult,
+      updatedAt: new Date()
+    };
+    
+    return this.save(updatedFile);
+  }
 }

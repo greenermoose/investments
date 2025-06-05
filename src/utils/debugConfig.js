@@ -18,14 +18,14 @@ const DEBUG_CATEGORIES = {
 // Global debug settings
 const DEBUG_CONFIG = {
   // Global debug flag - master switch for all debugging
-  enabled: true,
+  enabled: false,
   
   // Component-specific debug flags
   components: Object.keys(DEBUG_CATEGORIES).reduce((acc, component) => {
     acc[component] = {
-      enabled: true,
+      enabled: false,
       categories: DEBUG_CATEGORIES[component].reduce((catAcc, category) => {
-        catAcc[category] = true;
+        catAcc[category] = false;
         return catAcc;
       }, {})
     };

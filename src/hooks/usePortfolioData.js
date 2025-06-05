@@ -226,11 +226,11 @@ export const usePortfolioData = (selectedAccount) => {
         portfolio.sourceFile = null;
       }
 
-      const newSourceFile = sourceFileInfo ? {
-        fileId: sourceFileInfo.fileId,
-        fileHash: sourceFileInfo.fileHash,
-        fileName: sourceFileInfo.fileName || null,
-        uploadDate: sourceFileInfo.uploadDate || new Date().toISOString()
+      const newSourceFile = portfolio.sourceFile ? {
+        fileId: portfolio.sourceFile.fileId,
+        fileHash: portfolio.sourceFile.fileHash,
+        fileName: portfolio.sourceFile.fileName || null,
+        uploadDate: portfolio.sourceFile.uploadDate || new Date().toISOString()
       } : null;
 
       console.log('Setting source file in state:', {
@@ -248,7 +248,7 @@ export const usePortfolioData = (selectedAccount) => {
       setIsLoading(false);
     } catch (err) {
       console.error('Error in loadPortfolio:', err);
-      setError(err.message);
+      setError('Failed to load portfolio data');
       setIsLoading(false);
     }
   }, []);

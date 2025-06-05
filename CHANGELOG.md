@@ -1,3 +1,7 @@
+### 0.4.87
+
+- using file hash to remember original source files
+
 ### 0.4.86
 
 - creating accounts, pass 2

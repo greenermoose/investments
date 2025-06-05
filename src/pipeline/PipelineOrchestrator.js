@@ -74,7 +74,8 @@ export class PipelineOrchestrator {
         fileId: storageResult.id,
         isDuplicate: storageResult.isDuplicate,
         accountName: metadata.accountName,
-        date: metadata.date?.toISOString()
+        date: metadata.date?.toISOString(),
+        fileHash: storageResult.fileHash
       });
 
       // Stage 5: Parse file content
@@ -120,21 +121,24 @@ export class PipelineOrchestrator {
           fileId: storageResult.id,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
-          dataLength: parsedData.data?.length
+          dataLength: parsedData.data?.length,
+          fileHash: storageResult.fileHash
         });
         
         processingResult = await this.processor.processPortfolioSnapshot({
           parsedData,
           accountName: metadata.accountName,
           snapshotDate: metadata.date,
-          fileId: storageResult.id
+          fileId: storageResult.id,
+          fileHash: storageResult.fileHash
         });
 
         debugLog('pipeline', 'process', 'Portfolio snapshot processed', {
           filename: file.name,
           success: processingResult.success,
           hasSnapshot: !!processingResult.snapshot,
-          snapshotDataLength: processingResult.snapshot?.data?.length
+          snapshotDataLength: processingResult.snapshot?.data?.length,
+          fileHash: storageResult.fileHash
         });
       }
 
@@ -142,7 +146,8 @@ export class PipelineOrchestrator {
       debugLog('pipeline', 'status', 'Updating file processing status', {
         filename: file.name,
         fileId: storageResult.id,
-        success: processingResult?.success
+        success: processingResult?.success,
+        fileHash: storageResult.fileHash
       });
 
       await markFileAsProcessed(storageResult.id, {
@@ -154,7 +159,8 @@ export class PipelineOrchestrator {
         metadata: {
           date: parsedData.metadata.date,
           time: parsedData.metadata.time,
-          accountName: metadata.accountName
+          accountName: metadata.accountName,
+          fileHash: storageResult.fileHash
         }
       });
 

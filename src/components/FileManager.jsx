@@ -37,10 +37,10 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
   // Migration state
   const [migrationStatus, setMigrationStatus] = useState(null);
   const [missingFiles, setMissingFiles] = useState([]);
+  const [isCheckingMigration, setIsCheckingMigration] = useState(false);
 
   useEffect(() => {
     loadFiles();
-    checkMigration();
   }, []);
 
   const loadFiles = async () => {
@@ -48,6 +48,9 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
       setIsLoading(true);
       const allFiles = await getAllFiles();
       setFiles(allFiles);
+      
+      // Only check migration after files are loaded
+      await checkMigration();
       
       setIsLoading(false);
     } catch (err) {
@@ -58,7 +61,10 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
   };
 
   const checkMigration = async () => {
+    if (isCheckingMigration) return;
+    
     try {
+      setIsCheckingMigration(true);
       const migrationResult = await migrateFromOldStorage();
       setMigrationStatus(migrationResult);
       
@@ -67,6 +73,8 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
       }
     } catch (err) {
       console.error('Error checking migration:', err);
+    } finally {
+      setIsCheckingMigration(false);
     }
   };
 
@@ -101,9 +109,11 @@ const FileManager = ({ onProcessFile, onDataChanged }) => {
     }
   };
   
-  const handleProcessFile = (file) => {
+  const handleProcessFile = async (file) => {
     if (onProcessFile) {
-      onProcessFile(file);
+      await onProcessFile(file);
+      // Re-run migration check after processing completes
+      await checkMigration();
     }
   };
   

@@ -18,13 +18,15 @@ export class PortfolioProcessor {
    * @param {string} params.accountName - Account name
    * @param {Date} params.snapshotDate - Snapshot date
    * @param {string} params.fileId - ID of the source file
+   * @param {string} params.fileHash - Hash of the source file
    * @returns {Promise<Object>} Processing result
    */
-  async processPortfolioSnapshot({ parsedData, accountName, snapshotDate, fileId }) {
+  async processPortfolioSnapshot({ parsedData, accountName, snapshotDate, fileId, fileHash }) {
     debugLog('portfolio', 'start', 'Starting portfolio snapshot processing', {
       accountName,
       snapshotDate: snapshotDate instanceof Date ? snapshotDate.toISOString() : snapshotDate,
       fileId,
+      fileHash,
       dataLength: parsedData.data?.length,
       fileIdType: typeof fileId,
       hasFileId: !!fileId
@@ -49,6 +51,18 @@ export class PortfolioProcessor {
       return {
         success: false,
         error: 'Invalid file ID'
+      };
+    }
+
+    if (!fileHash || typeof fileHash !== 'string') {
+      debugLog('portfolio', 'error', 'Invalid file hash', { 
+        fileHash,
+        fileHashType: typeof fileHash,
+        hasFileHash: !!fileHash
+      });
+      return {
+        success: false,
+        error: 'Invalid file hash'
       };
     }
 
@@ -117,7 +131,8 @@ export class PortfolioProcessor {
         hasFileId: !!fileId,
         accountName: finalAccountName,
         date: timestamp,
-        changesCount: changes ? Object.keys(changes).length : 0
+        changesCount: changes ? Object.keys(changes).length : 0,
+        fileHash: fileHash
       });
       
       if (!fileId) {
@@ -134,7 +149,7 @@ export class PortfolioProcessor {
         finalAccountName,
         timestamp,
         accountTotals,
-        { changes, fileId }
+        { changes, fileId, fileHash }
       );
       
       debugLog('portfolio', 'save', 'Portfolio snapshot saved', { 

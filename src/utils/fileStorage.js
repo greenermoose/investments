@@ -198,7 +198,8 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       });
       resolve({
         id: fileId,
-        isDuplicate: false
+        isDuplicate: false,
+        fileHash
       });
     };
 

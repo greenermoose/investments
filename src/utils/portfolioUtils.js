@@ -163,20 +163,22 @@ export const migrateFromOldStorage = async () => {
         
         // Check if we have a file matching this pattern
         const matchingFile = files.find(file => 
-          file.portfolioReference === expectedReference ||
+          file.fileHash === portfolio.fileHash ||
           (file.filename && file.filename.includes(expectedReference))
         );
         
         if (!matchingFile) {
           debugLog('database', 'migration', 'No matching file found for portfolio', {
             portfolioId: portfolio.id,
-            expectedReference
+            expectedReference,
+            fileHash: portfolio.fileHash
           });
           missingFiles.push({
             accountName: portfolio.account,
             portfolioDate: portfolioDate,
             portfolioId: portfolio.id,
-            expectedReference
+            expectedReference,
+            fileHash: portfolio.fileHash
           });
         }
       } catch (error) {

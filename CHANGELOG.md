@@ -1,3 +1,7 @@
+### 0.4.96
+
+- add history tab
+
 ### 0.4.95
 
 - remove debug float

@@ -35,6 +35,7 @@ const PortfolioManager = () => {
   const acquisition = useAcquisition();
   const navigation = useNavigation();
   const account = useAccount();
+  const fileUpload = useFileUpload();
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [uploadModalType, setUploadModalType] = useState(null); // 'csv' or 'json'
   const [selectedSymbol, setSelectedSymbol] = useState(null);
@@ -75,7 +76,7 @@ const PortfolioManager = () => {
     if (!isDataLoaded) {
       return []; // No tabs when no data
     }
-    return ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager', 'security-detail'];
+    return ['account-management', 'portfolio', 'transactions', 'lots', 'history', 'storage-manager', 'security-detail'];
   };
 
   const { selectedAccount, setSelectedAccount } = account;
@@ -91,14 +92,48 @@ const PortfolioManager = () => {
   // Handle file upload modals
   const handleCsvUpload = () => {
     debugLog('ui', 'upload', 'CSV upload requested');
-    setUploadModalType('csv');
-    setShowUploadModal(true);
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.csv';
+    input.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        try {
+          setLoadingState(true);
+          await fileUpload.handleFileUpload(file);
+          await refreshData();
+          setSnapshotRefreshKey(prev => prev + 1);
+        } catch (error) {
+          console.error('Error uploading CSV:', error);
+        } finally {
+          setLoadingState(false);
+        }
+      }
+    };
+    input.click();
   };
 
   const handleJsonUpload = () => {
     debugLog('ui', 'upload', 'JSON upload requested');
-    setUploadModalType('json');
-    setShowUploadModal(true);
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        try {
+          setLoadingState(true);
+          await fileUpload.handleFileUpload(file);
+          await refreshData();
+          setSnapshotRefreshKey(prev => prev + 1);
+        } catch (error) {
+          console.error('Error uploading JSON:', error);
+        } finally {
+          setLoadingState(false);
+        }
+      }
+    };
+    input.click();
   };
 
   const closeUploadModal = () => {
@@ -331,6 +366,11 @@ const PortfolioManager = () => {
         availableTabs={getAvailableTabs()}
         activeTab={activeTab}
         onTabChange={changeTab}
+        onSnapshotSelect={handleSnapshotSelect}
+        refreshKey={snapshotRefreshKey}
+        portfolioDate={portfolioDate}
+        onCsvUpload={handleCsvUpload}
+        onJsonUpload={handleJsonUpload}
       />
 
       <main className="container mx-auto px-4 py-8">

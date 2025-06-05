@@ -11,7 +11,8 @@ import {
   PieChart,
   List,
   Settings,
-  Layers
+  Layers,
+  History
 } from 'lucide-react';
 import { getDebugConfig } from '../utils/debugConfig';
 
@@ -54,29 +55,30 @@ const PortfolioHeader = ({
   const primaryNavigationItems = [
     { id: 'account-management', label: 'Account Management', icon: Settings },
     { id: 'portfolio', label: 'Portfolio', icon: PieChart },
+    { id: 'history', label: 'History', icon: History },
     { id: 'storage-manager', label: 'Storage', icon: HardDrive }
   ];
 
   const secondaryNavigationItems = [
     { id: 'transactions', label: 'Transactions', icon: List },
-    { id: 'lots', label: 'Lots', icon: Layers },
-    { id: 'history', label: 'History', icon: FileText }
+    { id: 'lots', label: 'Lots', icon: Layers }
   ];
 
-  const renderTab = (tabId, label) => {
+  const renderTab = (tabId, label, Icon) => {
     // Special case for storage-manager - always show it
     if (tabId === 'storage-manager') {
       return (
         <button
           key={tabId}
           onClick={() => onTabChange?.(tabId)}
-          className={`px-4 py-2 rounded-lg transition-colors ${
+          className={`px-4 py-2 rounded-lg transition-colors flex items-center space-x-2 ${
             activeTab === tabId
               ? 'bg-blue-500 text-white'
               : 'text-gray-600 hover:bg-gray-100'
           }`}
         >
-          {label}
+          <Icon className="h-5 w-5" />
+          <span>{label}</span>
         </button>
       );
     }
@@ -88,13 +90,14 @@ const PortfolioHeader = ({
       <button
         key={tabId}
         onClick={() => onTabChange?.(tabId)}
-        className={`px-4 py-2 rounded-lg transition-colors ${
+        className={`px-4 py-2 rounded-lg transition-colors flex items-center space-x-2 ${
           activeTab === tabId
             ? 'bg-blue-500 text-white'
             : 'text-gray-600 hover:bg-gray-100'
         }`}
       >
-        {label}
+        <Icon className="h-5 w-5" />
+        <span>{label}</span>
       </button>
     );
   };
@@ -104,23 +107,49 @@ const PortfolioHeader = ({
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-bold text-gray-800">Portfolio Manager</h1>
+          {portfolioDate && (
+            <div className="text-sm text-gray-600">
+              As of {formatDate(portfolioDate)}
+            </div>
+          )}
         </div>
 
         <div className="flex items-center justify-between">
           <nav className="flex space-x-2">
-            {renderTab('account-management', 'Account Management')}
-            {renderTab('portfolio', 'Portfolio')}
-            {renderTab('transactions', 'Transactions')}
-            {renderTab('lots', 'Lots')}
-            {renderTab('history', 'History')}
-            {renderTab('storage-manager', 'Storage')}
+            {primaryNavigationItems.map(item => renderTab(item.id, item.label, item.icon))}
+            <div className="border-l border-gray-200 mx-2"></div>
+            {secondaryNavigationItems.map(item => renderTab(item.id, item.label, item.icon))}
           </nav>
 
-          {selectedAccount && (
-            <div className="text-sm text-gray-600">
-              Selected Account: {selectedAccount}
+          <div className="flex items-center space-x-4">
+            {selectedAccount && (
+              <div className="text-sm text-gray-600">
+                Selected Account: {selectedAccount}
+              </div>
+            )}
+            {onSnapshotSelect && (
+              <SnapshotSelector
+                onSnapshotSelect={onSnapshotSelect}
+                refreshKey={refreshKey}
+              />
+            )}
+            <div className="flex space-x-2">
+              <button
+                onClick={onCsvUpload}
+                className="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex items-center space-x-2"
+              >
+                <Upload className="h-5 w-5" />
+                <span>CSV</span>
+              </button>
+              <button
+                onClick={onJsonUpload}
+                className="px-4 py-2 rounded-lg bg-green-500 text-white hover:bg-green-600 transition-colors flex items-center space-x-2"
+              >
+                <Upload className="h-5 w-5" />
+                <span>JSON</span>
+              </button>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </header>

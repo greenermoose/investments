@@ -43,7 +43,7 @@ export const formatValue = (value, type = 'number') => {
 
 /**
  * Formats a date for display
- * @param {Date} date - The date to format
+ * @param {Date|number} date - The date to format (Date object or timestamp)
  * @param {Object} options - Formatting options (optional)
  * @returns {string} The formatted date string
  */
@@ -51,7 +51,8 @@ export const formatDate = (date, options = {}) => {
   if (!date) return '';
 
   try {
-    return date.toLocaleDateString('en-US', {
+    const dateObj = typeof date === 'number' ? new Date(date) : date;
+    return dateObj.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
@@ -65,12 +66,19 @@ export const formatDate = (date, options = {}) => {
 
 /**
  * Creates a safe date object from various inputs
- * @param {string|Date|null} input - The input to convert to date
+ * @param {string|Date|number|null} input - The input to convert to date
  * @returns {Date} A valid date object
  */
 export const createSafeDate = (input) => {
   if (input instanceof Date && !isNaN(input.getTime())) {
     return input;
+  }
+
+  if (typeof input === 'number') {
+    const date = new Date(input);
+    if (!isNaN(date.getTime())) {
+      return date;
+    }
   }
 
   if (typeof input === 'string') {

@@ -1,3 +1,7 @@
+### 0.4.84
+
+- handling dates as timestamps
+
 ### 0.4.83
 
 - parsedData structure

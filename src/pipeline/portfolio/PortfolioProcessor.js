@@ -53,12 +53,12 @@ export class PortfolioProcessor {
     }
 
     try {
-      // Ensure snapshotDate is a proper Date object
-      const date = snapshotDate instanceof Date ? snapshotDate : new Date(snapshotDate);
+      // Ensure snapshotDate is a proper timestamp
+      const timestamp = typeof snapshotDate === 'number' ? snapshotDate : new Date(snapshotDate).getTime();
       debugLog('portfolio', 'date', 'Processed snapshot date', {
         original: snapshotDate,
-        processed: date.toISOString(),
-        isDate: date instanceof Date
+        processed: timestamp,
+        isTimestamp: typeof timestamp === 'number'
       });
 
       // Get existing accounts to check for similar names
@@ -108,7 +108,7 @@ export class PortfolioProcessor {
         fileIdType: typeof fileId,
         hasFileId: !!fileId,
         accountName: finalAccountName,
-        date: date.toISOString(),
+        date: timestamp,
         changesCount: changes ? Object.keys(changes).length : 0
       });
       
@@ -124,7 +124,7 @@ export class PortfolioProcessor {
       const snapshotId = await portfolioService.savePortfolioSnapshot(
         parsedData.data,
         finalAccountName,
-        date,
+        timestamp,
         accountTotals,
         { changes, fileId }
       );
@@ -157,7 +157,7 @@ export class PortfolioProcessor {
         await portfolioService.createLotsFromSnapshot(
           snapshot.data,
           finalAccountName,
-          date
+          timestamp
         );
         debugLog('portfolio', 'lots', 'Lots created successfully');
       } else {

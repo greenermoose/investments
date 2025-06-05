@@ -26,7 +26,7 @@ export class PortfolioRepository extends BaseRepository {
 
     try {
       // Generate portfolio ID if not provided
-      const portfolioId = portfolio.id || `${portfolio.account}_${new Date(portfolio.date).getTime()}_${Math.random().toString(36).substr(2, 9)}`;
+      const portfolioId = portfolio.id || `${portfolio.account}_${portfolio.date}_${Math.random().toString(36).substr(2, 9)}`;
       debugLog('portfolioRepository', 'id', 'Generated portfolio ID', {
         portfolioId,
         idLength: portfolioId.length,

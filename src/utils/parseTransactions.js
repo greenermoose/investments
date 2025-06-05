@@ -31,7 +31,7 @@ export const parseTransactionJSON = (content) => {
       try {
         // Normalize transaction fields
         const normalizedTransaction = {
-          date: new Date(transaction.date || transaction.Date || transaction.transactionDate),
+          date: new Date(transaction.date || transaction.Date || transaction.transactionDate).getTime(),
           symbol: transaction.symbol || transaction.Symbol || transaction.securitySymbol,
           type: normalizeTransactionType(transaction.type || transaction.Type || transaction.transactionType),
           quantity: parseFloat(transaction.quantity || transaction.Quantity || transaction.shares) || 0,
@@ -42,7 +42,7 @@ export const parseTransactionJSON = (content) => {
         };
 
         // Validate required fields
-        if (!normalizedTransaction.date || isNaN(normalizedTransaction.date.getTime())) {
+        if (!normalizedTransaction.date || isNaN(normalizedTransaction.date)) {
           throw new Error('Invalid transaction date');
         }
         if (!normalizedTransaction.symbol) {

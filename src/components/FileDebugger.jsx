@@ -21,9 +21,9 @@ const FileDebugger = () => {
         name: file.name,
         size: file.size,
         type: file.type,
-        lastModified: new Date(file.lastModified),
+        lastModified: file.lastModified,
         firstFewLines: content.split('\n').slice(0, 10).join('\n'),
-        extractedDate: parseDateFromFilename(file.name)
+        extractedDate: parseDateFromFilename(file.name)?.getTime()
       };
       setFileInfo(fileData);
 

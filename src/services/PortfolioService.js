@@ -37,18 +37,18 @@ class PortfolioService {
    */
   async savePortfolioSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
     try {
-      // Ensure date is a proper Date object
-      const snapshotDate = date instanceof Date ? date : new Date(date);
+      // Ensure date is a proper timestamp
+      const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
       
       console.log('PortfolioService: Saving portfolio snapshot', {
         accountName,
-        date: snapshotDate.toISOString(),
+        date: timestamp,
         positions: portfolioData.length
       });
 
       const portfolio = {
         accountName,
-        date: snapshotDate,
+        date: timestamp,
         data: portfolioData,
         accountTotal,
         metadata: transactionMetadata

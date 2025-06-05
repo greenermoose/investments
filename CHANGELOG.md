@@ -1,3 +1,7 @@
+### 0.4.70
+
+- snapshot bug report
+
 ### 0.4.69
 
 - file upload bug

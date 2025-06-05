@@ -1,3 +1,7 @@
+### 0.4.97
+
+- fix processing errors, pass 1
+
 ### 0.4.96
 
 - add history tab

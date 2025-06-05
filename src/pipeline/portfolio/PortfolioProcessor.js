@@ -29,7 +29,9 @@ export class PortfolioProcessor {
       fileHash,
       dataLength: parsedData.data?.length,
       fileIdType: typeof fileId,
-      hasFileId: !!fileId
+      hasFileId: !!fileId,
+      fileHashType: typeof fileHash,
+      hasFileHash: !!fileHash
     });
 
     if (!parsedData.success) {
@@ -44,7 +46,9 @@ export class PortfolioProcessor {
     if (fileId && !fileHash) {
       console.error('File hash is required when file ID is present:', {
         fileId,
-        hasFileHash: !!fileHash
+        hasFileHash: !!fileHash,
+        fileIdType: typeof fileId,
+        fileHashType: typeof fileHash
       });
       return {
         success: false,

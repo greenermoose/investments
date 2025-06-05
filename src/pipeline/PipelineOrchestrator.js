@@ -69,6 +69,10 @@ export class PipelineOrchestrator {
         throw new Error('Failed to save file to storage');
       }
 
+      if (!storageResult.fileHash) {
+        throw new Error('Failed to calculate file hash');
+      }
+
       debugLog('pipeline', 'storage', 'File saved to storage', {
         filename: file.name,
         fileId: storageResult.id,

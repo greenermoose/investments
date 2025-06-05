@@ -62,43 +62,30 @@ export const parsePortfolioCSV = (content) => {
 
       if (dateTimeMatch) {
         try {
-          switch (formatIndex) {
-            case 0: // MM/DD/YYYY
-              snapshotTime = dateTimeMatch[1];
-              const [month, day, year] = dateTimeMatch[2].split('/');
-              snapshotDate = new Date(year, month - 1, day);
-              break;
-            case 1: // YYYY/MM/DD
-              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
-              const [year1, month1, day1] = dateTimeMatch[3].split('/');
-              snapshotDate = new Date(year1, month1 - 1, day1);
-              break;
-            case 2: // YYYY-MM-DD
-              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
-              const [year2, month2, day2] = dateTimeMatch[3].split('-');
-              snapshotDate = new Date(year2, month2 - 1, day2);
-              break;
-            case 3: // DD-MMM-YYYY
-              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
-              const [day3, month3, year3] = dateTimeMatch[3].split('-');
-              const monthIndex = new Date(`${month3} 1, 2000`).getMonth();
-              snapshotDate = new Date(year3, monthIndex, day3);
-              break;
+          // Parse time
+          const timeStr = dateTimeMatch[1];
+          snapshotTime = timeStr;
+
+          // Parse date based on format
+          let dateStr;
+          if (formatIndex === 0) {
+            // MM/DD/YYYY format
+            const [month, day, year] = dateTimeMatch[2].split('/');
+            dateStr = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+          } else if (formatIndex === 1) {
+            // YYYY/MM/DD format
+            dateStr = dateTimeMatch[3].replace(/\//g, '-');
+          } else if (formatIndex === 2) {
+            // YYYY-MM-DD format
+            dateStr = dateTimeMatch[3];
+          } else if (formatIndex === 3) {
+            // DD-MMM-YYYY format
+            const [day, month, year] = dateTimeMatch[3].split('-');
+            const monthNum = new Date(`${month} 1, 2000`).getMonth() + 1;
+            dateStr = `${year}-${monthNum.toString().padStart(2, '0')}-${day.padStart(2, '0')}`;
           }
 
-          // Add time to the date
-          const [time, period] = snapshotTime.split(' ').slice(0, 2);  // Take only first two parts
-          let [hours, minutes] = time.split(':').map(Number);
-          
-          if (period === 'PM' && hours < 12) hours += 12;
-          if (period === 'AM' && hours === 12) hours = 0;
-          
-          snapshotDate.setHours(hours, minutes);
-          
-          console.log('Successfully parsed date and time:', {
-            date: snapshotDate.toISOString(),
-            time: snapshotTime
-          });
+          snapshotDate = new Date(dateStr);
         } catch (error) {
           console.error('Error parsing date/time:', error);
           debugLog('parseSnapshot', 'error', 'Error parsing date/time', {
@@ -106,7 +93,6 @@ export const parsePortfolioCSV = (content) => {
             headerLine,
             dateTimeMatch
           });
-          // Don't throw here, continue with null values
         }
       } else {
         console.warn('Could not parse date/time from header:', headerLine);
@@ -124,7 +110,7 @@ export const parsePortfolioCSV = (content) => {
       /quantity|qty|shares/i,
       /price|share price/i,
       /market value|mkt val|total value/i,
-      /cost basis|basis/i,
+      /cost basis|basis|cost\/share/i,
       /gain\/loss|gain loss|unrealized/i
     ];
 
@@ -166,7 +152,7 @@ export const parsePortfolioCSV = (content) => {
       if (lowerHeader.includes('quantity') || lowerHeader.includes('qty')) return 'Qty (Quantity)';
       if (lowerHeader.includes('price')) return 'Price';
       if (lowerHeader.includes('market value') || lowerHeader.includes('mkt val')) return 'Mkt Val (Market Value)';
-      if (lowerHeader.includes('cost basis')) return 'Cost Basis';
+      if (lowerHeader.includes('cost basis') || lowerHeader.includes('cost/share')) return 'Cost Basis';
       if (lowerHeader.includes('gain/loss') || lowerHeader.includes('gain loss')) {
         if (lowerHeader.includes('%')) return 'Gain % (Gain/Loss %)';
         return 'Gain $ (Gain/Loss $)';

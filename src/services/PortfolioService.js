@@ -55,12 +55,16 @@ class PortfolioService {
     if (transactionMetadata?.fileId && transactionMetadata?.fileHash) {
       console.log('Creating file reference from metadata:', {
         fileId: transactionMetadata.fileId,
-        fileHash: transactionMetadata.fileHash
+        fileHash: transactionMetadata.fileHash,
+        fileName: transactionMetadata.fileName,
+        uploadDate: transactionMetadata.uploadDate
       });
       
       fileReference = createFileReference({
         fileId: transactionMetadata.fileId,
-        fileHash: transactionMetadata.fileHash
+        fileHash: transactionMetadata.fileHash,
+        fileName: transactionMetadata.fileName,
+        uploadDate: transactionMetadata.uploadDate
       });
       
       console.log('Created file reference:', {
@@ -70,7 +74,8 @@ class PortfolioService {
     } else {
       console.log('No file reference data in metadata:', {
         hasFileId: !!transactionMetadata?.fileId,
-        hasFileHash: !!transactionMetadata?.fileHash
+        hasFileHash: !!transactionMetadata?.fileHash,
+        metadata: transactionMetadata
       });
     }
 
@@ -78,7 +83,9 @@ class PortfolioService {
     const newTransactionMetadata = transactionMetadata ? {
       ...transactionMetadata,
       fileId: undefined,
-      fileHash: undefined
+      fileHash: undefined,
+      fileName: undefined,
+      uploadDate: undefined
     } : null;
 
     console.log('Creating portfolio object with:', {

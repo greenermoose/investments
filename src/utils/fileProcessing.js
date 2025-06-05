@@ -120,7 +120,7 @@ const classifyFile = (content, fileType) => {
 
   try {
     if (fileType === FileTypes.CSV) {
-      // Check if it's a portfolio snapshot by looking for common headers
+      // Check if it's a portfolio snapshot by looking for common headers or position patterns
       const lines = content.split('\n').filter(line => line.trim());
       debugLog('file', 'classification', 'Analyzing CSV content', {
         fileType,
@@ -128,6 +128,35 @@ const classifyFile = (content, fileType) => {
         firstFewLines: lines.slice(0, 3)
       });
 
+      // First check for position account header
+      const firstLine = lines[0];
+      if (firstLine && firstLine.includes('Positions for account')) {
+        debugLog('file', 'classification', 'Found position account header', {
+          fileType,
+          firstLine
+        });
+        return FileClassifications.PORTFOLIO_SNAPSHOT;
+      }
+
+      // Then check for JSON-like patterns
+      if (firstLine && firstLine.trim().startsWith('{')) {
+        try {
+          const jsonData = JSON.parse(firstLine);
+          const key = Object.keys(jsonData)[0];
+          if (key && key.includes('Positions for account')) {
+            debugLog('file', 'classification', 'Found JSON-like portfolio snapshot', {
+              fileType,
+              firstLine,
+              key
+            });
+            return FileClassifications.PORTFOLIO_SNAPSHOT;
+          }
+        } catch (e) {
+          // Not JSON, continue with CSV header check
+        }
+      }
+
+      // Finally check for CSV headers
       const headerPatterns = [
         /symbol/i,
         /description/i,
@@ -138,9 +167,32 @@ const classifyFile = (content, fileType) => {
         /gain\/loss|gain loss/i
       ];
 
+      // Process each line, handling quoted fields
       for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].toLowerCase();
-        const matches = headerPatterns.filter(pattern => pattern.test(line));
+        const line = lines[i];
+        // Split by comma but respect quoted fields
+        const values = [];
+        let currentValue = '';
+        let inQuotes = false;
+        
+        for (let j = 0; j < line.length; j++) {
+          const char = line[j];
+          if (char === '"') {
+            inQuotes = !inQuotes;
+          } else if (char === ',' && !inQuotes) {
+            values.push(currentValue.trim().replace(/^"|"$/g, ''));
+            currentValue = '';
+          } else {
+            currentValue += char;
+          }
+        }
+        values.push(currentValue.trim().replace(/^"|"$/g, ''));
+
+        // Check if this line contains enough header patterns
+        const matches = headerPatterns.filter(pattern => 
+          values.some(value => pattern.test(value))
+        );
+        
         if (matches.length >= 3) {
           debugLog('file', 'classification', 'Found portfolio snapshot headers', {
             fileType,

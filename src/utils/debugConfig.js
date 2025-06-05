@@ -10,20 +10,22 @@ const DEBUG_CATEGORIES = {
   pipeline: ['parsing', 'processing', 'storage'],
   fileUpload: ['start', 'process', 'success', 'error', 'end'],
   navigation: ['account', 'upload', 'acquisition', 'symbol', 'snapshot'],
-  timeline: ['loading', 'processing', 'rendering']
+  timeline: ['loading', 'processing', 'rendering'],
+  parseSnapshot: ['start', 'lines', 'filter', 'parse', 'create', 'complete', 'error'],
+  fileUtils: ['read', 'error']
 };
 
 // Global debug settings
 const DEBUG_CONFIG = {
   // Global debug flag - master switch for all debugging
-  enabled: false,
+  enabled: true,
   
   // Component-specific debug flags
   components: Object.keys(DEBUG_CATEGORIES).reduce((acc, component) => {
     acc[component] = {
-      enabled: false,
+      enabled: true,
       categories: DEBUG_CATEGORIES[component].reduce((catAcc, category) => {
-        catAcc[category] = false;
+        catAcc[category] = true;
         return catAcc;
       }, {})
     };

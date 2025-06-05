@@ -16,94 +16,143 @@ export class PortfolioRepository extends BaseRepository {
    * @returns {Promise<Object>} Saved portfolio data
    */
   async saveSnapshot(portfolio) {
-    debugLog('portfolio', 'storage', 'Saving portfolio snapshot:', {
-      accountName: portfolio.accountName,
+    debugLog('portfolioRepository', 'start', 'Starting portfolio snapshot save', {
+      portfolioId: portfolio.id,
+      accountName: portfolio.account,
       date: portfolio.date,
-      positionsCount: portfolio.data?.length,
-      metadata: portfolio.metadata
+      dataLength: portfolio.data?.length,
+      hasFileId: !!portfolio.transactionMetadata?.fileId
     });
 
-    // Create a unique portfolio ID to prevent collisions
-    const portfolioId = `${portfolio.accountName}-${portfolio.date.toISOString()}`;
-    debugLog('portfolio', 'storage', 'Generated portfolio ID:', {
-      portfolioId,
-      accountName: portfolio.accountName,
-      date: portfolio.date.toISOString(),
-      idLength: portfolioId.length
-    });
-
-    // Validate and normalize portfolio data
-    const normalizedData = portfolio.data.map(position => {
-      // Skip positions with missing required fields
-      if (!position.Symbol) {
-        debugLog('portfolio', 'storage', 'Skipping invalid position:', position);
-        return null;
-      }
-
-      // Normalize numeric values
-      const quantity = parseFloat(position['Qty (Quantity)']) || 0;
-      const price = parseFloat(position.Price) || 0;
-      const marketValue = parseFloat(position['Mkt Val (Market Value)']) || 0;
-      const costBasis = parseFloat(position['Cost Basis']) || 0;
-      const gainLoss = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
-      const gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
-
-      return {
-        Symbol: position.Symbol,
-        Description: position.Description || '',
-        'Qty (Quantity)': quantity,
-        Price: price,
-        'Mkt Val (Market Value)': marketValue,
-        'Cost Basis': costBasis,
-        'Gain $ (Gain/Loss $)': gainLoss,
-        'Gain % (Gain/Loss %)': gainLossPercent
-      };
-    }).filter(Boolean);
-
-    debugLog('portfolio', 'storage', 'Normalized data:', {
-      count: normalizedData.length,
-      firstPosition: normalizedData[0]
-    });
-
-    // Calculate totals
-    const totalValue = normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0);
-    const totalGain = normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0);
-
-    // Prepare portfolio object
-    const portfolioData = {
-      id: portfolioId,
-      accountName: portfolio.accountName,
-      date: portfolio.date,
-      data: normalizedData,
-      accountTotal: {
-        totalValue,
-        totalGain
-      },
-      metadata: portfolio.metadata || {},
-      createdAt: new Date().toISOString()
-    };
-
-    debugLog('portfolio', 'storage', 'Prepared portfolio data:', {
-      id: portfolioData.id,
-      totalValue,
-      totalGain,
-      metadata: portfolioData.metadata,
-      hasFileId: !!portfolioData.metadata?.fileId
-    });
-
-    // Save to database
     try {
-      const result = await this.save(portfolioData);
-      debugLog('portfolio', 'storage', 'Portfolio saved successfully:', {
-        id: result,
-        hasId: !!result,
-        resultType: typeof result
+      // Generate portfolio ID if not provided
+      const portfolioId = portfolio.id || `${portfolio.account}_${new Date(portfolio.date).getTime()}_${Math.random().toString(36).substr(2, 9)}`;
+      debugLog('portfolioRepository', 'id', 'Generated portfolio ID', {
+        portfolioId,
+        idLength: portfolioId.length,
+        accountName: portfolio.account
       });
-      return result;
+
+      // Validate and normalize portfolio data
+      const normalizedData = portfolio.data.map(position => {
+        debugLog('portfolioRepository', 'normalize', 'Processing position', {
+          originalPosition: position,
+          hasSymbol: !!position.Symbol,
+          symbol: position.Symbol,
+          rawData: JSON.stringify(position)
+        });
+
+        // Skip positions with missing required fields
+        if (!position.Symbol) {
+          debugLog('portfolioRepository', 'skip', 'Skipping invalid position', {
+            position,
+            reason: 'Missing Symbol field',
+            rawData: JSON.stringify(position)
+          });
+          return null;
+        }
+
+        // Normalize numeric values with defaults
+        const quantity = parseFloat(position['Qty (Quantity)']) || 0;
+        const price = parseFloat(position.Price) || 0;
+        const marketValue = parseFloat(position['Mkt Val (Market Value)']) || 0;
+        const costBasis = parseFloat(position['Cost Basis']) || 0;
+        const gainLoss = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
+        const gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
+
+        debugLog('portfolioRepository', 'normalize', 'Parsed numeric values', {
+          symbol: position.Symbol,
+          quantity,
+          price,
+          marketValue,
+          costBasis,
+          gainLoss,
+          gainLossPercent,
+          rawValues: {
+            quantity: position['Qty (Quantity)'],
+            price: position.Price,
+            marketValue: position['Mkt Val (Market Value)'],
+            costBasis: position['Cost Basis'],
+            gainLoss: position['Gain $ (Gain/Loss $)'],
+            gainLossPercent: position['Gain % (Gain/Loss %)']
+          }
+        });
+
+        // Create normalized position object
+        const normalizedPosition = {
+          Symbol: position.Symbol,
+          Description: position.Description || position.Symbol,
+          'Qty (Quantity)': quantity,
+          Price: price,
+          'Mkt Val (Market Value)': marketValue,
+          'Cost Basis': costBasis,
+          'Gain $ (Gain/Loss $)': gainLoss,
+          'Gain % (Gain/Loss %)': gainLossPercent
+        };
+
+        debugLog('portfolioRepository', 'normalize', 'Created normalized position', {
+          original: position,
+          normalized: normalizedPosition,
+          rawData: JSON.stringify(position)
+        });
+
+        return normalizedPosition;
+      }).filter(Boolean);
+
+      debugLog('portfolioRepository', 'normalize', 'Data normalization complete', {
+        originalCount: portfolio.data.length,
+        normalizedCount: normalizedData.length,
+        skippedCount: portfolio.data.length - normalizedData.length
+      });
+
+      // Calculate portfolio totals
+      const totals = {
+        totalValue: normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0),
+        totalGain: normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0)
+      };
+
+      debugLog('portfolioRepository', 'totals', 'Calculated portfolio totals', {
+        totalValue: totals.totalValue,
+        totalGain: totals.totalGain,
+        positionCount: normalizedData.length
+      });
+
+      // Prepare portfolio data for saving
+      const portfolioData = {
+        id: portfolioId,
+        account: portfolio.account,
+        date: portfolio.date,
+        data: normalizedData,
+        accountTotal: totals,
+        transactionMetadata: portfolio.transactionMetadata || {},
+        createdAt: new Date()
+      };
+
+      debugLog('portfolioRepository', 'save', 'Preparing to save portfolio', {
+        portfolioId,
+        totalValue: totals.totalValue,
+        totalGain: totals.totalGain,
+        metadata: portfolio.transactionMetadata,
+        hasFileId: !!portfolio.transactionMetadata?.fileId
+      });
+
+      // Save to database
+      await this.save(portfolioData);
+      
+      debugLog('portfolioRepository', 'complete', 'Portfolio saved successfully', {
+        portfolioId,
+        positionCount: normalizedData.length,
+        totalValue: totals.totalValue,
+        totalGain: totals.totalGain
+      });
+
+      return portfolioId;
     } catch (error) {
-      debugLog('portfolio', 'error', 'Failed to save portfolio:', {
+      debugLog('portfolioRepository', 'error', 'Error saving portfolio', {
         error: error.message,
-        stack: error.stack
+        stack: error.stack,
+        portfolioId: portfolio.id,
+        accountName: portfolio.account
       });
       throw error;
     }

@@ -1,3 +1,7 @@
+### 0.4.77
+
+- fixing snapshot parsing, pass 3
+
 ### 0.4.76
 
 - updated debugging and documentation

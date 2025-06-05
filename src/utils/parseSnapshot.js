@@ -34,19 +34,80 @@ export const parsePortfolioCSV = (content) => {
     let snapshotTime = null;
 
     if (headerLine) {
-      // Extract date and time from header line
-      const dateTimeMatch = headerLine.match(/as of (\d{1,2}:\d{2} (?:AM|PM) ET), (\d{1,2}\/\d{1,2}\/\d{4})/);
+      console.log('Parsing header line:', headerLine);
+      
+      // Extract date and time from header line - try multiple formats
+      const dateTimeFormats = [
+        // Format: "as of 07:19 AM ET, 11/20/2021"
+        /as of (\d{1,2}:\d{2} (?:AM|PM) ET), (\d{1,2}\/\d{1,2}\/\d{4})/i,
+        // Format: "as of 07:19 AM ET, 2021/11/20"
+        /as of (\d{1,2}:\d{2}) (AM|PM) ET, (\d{4}\/\d{1,2}\/\d{1,2})/i,
+        // Format: "as of 07:19 AM ET, 2021-11-20"
+        /as of (\d{1,2}:\d{2}) (AM|PM) ET, (\d{4}-\d{1,2}-\d{1,2})/i,
+        // Format: "as of 07:19 AM ET, 20-Nov-2021"
+        /as of (\d{1,2}:\d{2}) (AM|PM) ET, (\d{1,2}-[A-Za-z]{3}-\d{4})/i
+      ];
+
+      let dateTimeMatch = null;
+      let formatIndex = -1;
+
+      for (let i = 0; i < dateTimeFormats.length; i++) {
+        const match = headerLine.match(dateTimeFormats[i]);
+        if (match) {
+          dateTimeMatch = match;
+          formatIndex = i;
+          break;
+        }
+      }
+
       if (dateTimeMatch) {
-        snapshotTime = dateTimeMatch[1];
-        const dateStr = dateTimeMatch[2];
-        snapshotDate = new Date(dateStr);
-        
-        // Add time to the date
-        const [time, period] = snapshotTime.split(' ');
-        let [hours, minutes] = time.split(':').map(Number);
-        if (period === 'PM' && hours < 12) hours += 12;
-        if (period === 'AM' && hours === 12) hours = 0;
-        snapshotDate.setHours(hours, minutes);
+        try {
+          switch (formatIndex) {
+            case 0: // MM/DD/YYYY
+              snapshotTime = dateTimeMatch[1];
+              const [month, day, year] = dateTimeMatch[2].split('/');
+              snapshotDate = new Date(year, month - 1, day);
+              break;
+            case 1: // YYYY/MM/DD
+              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
+              const [year1, month1, day1] = dateTimeMatch[3].split('/');
+              snapshotDate = new Date(year1, month1 - 1, day1);
+              break;
+            case 2: // YYYY-MM-DD
+              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
+              const [year2, month2, day2] = dateTimeMatch[3].split('-');
+              snapshotDate = new Date(year2, month2 - 1, day2);
+              break;
+            case 3: // DD-MMM-YYYY
+              snapshotTime = `${dateTimeMatch[1]} ${dateTimeMatch[2]} ET`;
+              const [day3, month3, year3] = dateTimeMatch[3].split('-');
+              const monthIndex = new Date(`${month3} 1, 2000`).getMonth();
+              snapshotDate = new Date(year3, monthIndex, day3);
+              break;
+          }
+
+          // Add time to the date
+          const [time, period] = snapshotTime.split(' ');
+          let [hours, minutes] = time.split(':').map(Number);
+          
+          if (period === 'PM' && hours < 12) hours += 12;
+          if (period === 'AM' && hours === 12) hours = 0;
+          
+          snapshotDate.setHours(hours, minutes);
+          
+          console.log('Successfully parsed date and time:', {
+            date: snapshotDate.toISOString(),
+            time: snapshotTime
+          });
+        } catch (error) {
+          console.error('Error parsing date/time:', error);
+          debugLog('parseSnapshot', 'error', 'Error parsing date/time', {
+            error: error.message,
+            headerLine,
+            dateTimeMatch
+          });
+          // Don't throw here, continue with null values
+        }
       } else {
         console.warn('Could not parse date/time from header:', headerLine);
         debugLog('parseSnapshot', 'warning', 'Could not parse date/time from header', {
@@ -120,9 +181,12 @@ export const parsePortfolioCSV = (content) => {
     const positions = lines.slice(headerRowIndex + 1)
       .filter(line => {
         const trimmed = line.trim();
+        // Only filter out account totals and empty lines
         const isValid = trimmed && 
                !trimmed.includes('Account Total') && 
-               !trimmed.includes('Cash & Cash Investments');
+               !trimmed.includes('Cash & Cash Investments') &&
+               !trimmed.includes('Total') &&
+               !trimmed.includes('Grand Total');
         if (!isValid) {
           console.log('Filtered out line:', trimmed);
         }
@@ -148,17 +212,45 @@ export const parsePortfolioCSV = (content) => {
         }
         values.push(currentValue.trim().replace(/^"|"$/g, ''));
 
+        // Ensure we have enough values for all headers
+        while (values.length < normalizedHeaders.length) {
+          values.push('');
+        }
+
         const position = {};
         normalizedHeaders.forEach((header, index) => {
-          position[header] = values[index] || '';
+          // Convert numeric values
+          const value = values[index] || '';
+          if (header === 'Symbol' || header === 'Description' || header === 'Security Type') {
+            position[header] = value;
+          } else {
+            // Remove any currency symbols, commas, and parentheses
+            const cleanValue = value.replace(/[$,()]/g, '');
+            // Handle negative values in parentheses
+            const isNegative = cleanValue.startsWith('(') && cleanValue.endsWith(')');
+            const numericValue = isNegative ? 
+              -parseFloat(cleanValue.slice(1, -1)) : 
+              parseFloat(cleanValue);
+            position[header] = isNaN(numericValue) ? '' : numericValue;
+          }
         });
-        console.log(`Parsed position ${index}:`, position);
-        return position;
-      });
+
+        // Only include positions with a valid symbol
+        if (position.Symbol && position.Symbol.trim()) {
+          console.log(`Parsed position ${index}:`, position);
+          return position;
+        }
+        return null;
+      })
+      .filter(Boolean); // Remove null positions
 
     console.log('Total positions parsed:', positions.length);
-    console.log('First position:', positions[0]);
-    console.log('Last position:', positions[positions.length - 1]);
+    if (positions.length > 0) {
+      console.log('First position:', positions[0]);
+      console.log('Last position:', positions[positions.length - 1]);
+    } else {
+      console.warn('No valid positions found in the data');
+    }
 
     debugLog('parseSnapshot', 'complete', 'CSV parsing complete', {
       totalPositions: positions.length,
@@ -169,15 +261,27 @@ export const parsePortfolioCSV = (content) => {
       snapshotTime
     });
 
+    // Calculate totals only if we have valid positions
+    const totals = positions.length > 0 ? {
+      totalValue: positions.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0),
+      totalGain: positions.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0)
+    } : {
+      totalValue: 0,
+      totalGain: 0
+    };
+
+    // Return success even if date parsing failed, as long as we have positions
     return {
-      success: true,
-      positions,
+      success: positions.length > 0,
+      data: positions,
       headers: normalizedHeaders,
-      snapshotDate,
+      snapshotDate: snapshotDate?.toISOString(),
       snapshotTime,
-      totals: {
-        totalValue: positions.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0),
-        totalGain: positions.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0)
+      totals,
+      metadata: {
+        date: snapshotDate?.toISOString(),
+        time: snapshotTime,
+        accountName: headerLine?.match(/Positions for account ([^,]+)/)?.[1]?.trim()
       }
     };
   } catch (error) {

@@ -1,3 +1,7 @@
+### 0.4.81
+
+- parse date formats
+
 ### 0.4.80
 
 - fileProcessing checks for JSON first, then CSV

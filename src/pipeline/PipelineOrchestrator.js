@@ -146,7 +146,14 @@ export class PipelineOrchestrator {
       await markFileAsProcessed(storageResult.id, {
         processed: true,
         success: processingResult?.success,
-        error: processingResult?.error
+        error: processingResult?.error,
+        headers: parsedData.headers,
+        data: parsedData.positions,
+        metadata: {
+          date: parsedData.snapshotDate,
+          time: parsedData.snapshotTime,
+          accountName: metadata.accountName
+        }
       });
 
       debugLog('pipeline', 'complete', 'Pipeline processing completed', {

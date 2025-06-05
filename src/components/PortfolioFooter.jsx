@@ -10,7 +10,7 @@ const PortfolioFooter = () => {
             Investment Portfolio Manager
           </div>
           <div>
-            Version 1.0.0
+            Version 0.4.105
           </div>
         </div>
       </div>

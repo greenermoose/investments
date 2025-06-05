@@ -53,7 +53,7 @@ const PortfolioHeader = ({
   }, []);
 
   const primaryNavigationItems = [
-    { id: 'account-management', label: 'Account Management', icon: Settings },
+    { id: 'account-management', label: 'Account', icon: Settings },
     { id: 'portfolio', label: 'Portfolio', icon: PieChart },
     { id: 'history', label: 'History', icon: History },
     { id: 'storage-manager', label: 'Storage', icon: HardDrive }
@@ -109,14 +109,32 @@ const PortfolioHeader = ({
           <h1 className="text-2xl font-bold text-gray-800">Portfolio Manager</h1>
           {portfolioDate && (
             <div className="text-sm text-gray-600">
-              As of {formatDate(portfolioDate)}
+              {currentAccount && `${currentAccount} `}as of {formatDate(portfolioDate)}
             </div>
           )}
         </div>
 
         <div className="flex items-center justify-between">
           <nav className="flex space-x-2">
-            {primaryNavigationItems.map(item => renderTab(item.id, item.label, item.icon))}
+            {primaryNavigationItems.map((item, index) => {
+              const element = renderTab(item.id, item.label, item.icon);
+              if (index === 1) { // After Portfolio button
+                return (
+                  <React.Fragment key={item.id}>
+                    {element}
+                    {onSnapshotSelect && (
+                      <SnapshotSelector
+                        currentAccount={currentAccount}
+                        onSnapshotSelect={onSnapshotSelect}
+                        refreshKey={refreshKey}
+                        selectedDate={portfolioDate}
+                      />
+                    )}
+                  </React.Fragment>
+                );
+              }
+              return element;
+            })}
             <div className="border-l border-gray-200 mx-2"></div>
             {secondaryNavigationItems.map(item => renderTab(item.id, item.label, item.icon))}
           </nav>
@@ -126,14 +144,6 @@ const PortfolioHeader = ({
               <div className="text-sm text-gray-600">
                 Selected Account: {selectedAccount}
               </div>
-            )}
-            {onSnapshotSelect && (
-              <SnapshotSelector
-                currentAccount={currentAccount}
-                onSnapshotSelect={onSnapshotSelect}
-                refreshKey={refreshKey}
-                selectedDate={portfolioDate}
-              />
             )}
             <div className="flex space-x-2">
               <button

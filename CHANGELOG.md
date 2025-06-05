@@ -1,3 +1,7 @@
+### 0.4.105
+
+- Account UI
+
 ### 0.4.104
 
 - Portfolio file details tab

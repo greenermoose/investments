@@ -2,6 +2,7 @@
 // Handles file storage in IndexedDB for portfolio snapshots and transaction files
 
 import { DB_NAME, DB_VERSION, STORE_NAME_FILES, initializeDB } from './databaseUtils';
+import { debugLog } from './debugConfig';
 
 /**
  * File Types 
@@ -79,48 +80,109 @@ export const findFileByName = async (filename) => {
  * @returns {Object} Processed data
  */
 export const processFileData = (content, fileType) => {
+  debugLog('pipeline', 'parsing', 'Processing file data', {
+    fileType,
+    contentLength: content.length,
+    firstLine: content.split('\n')[0]
+  });
+
   try {
     if (fileType === 'csv') {
-      // Parse CSV content
-      const lines = content.split('\n');
-      const headers = lines[0].split(',').map(h => h.trim());
+      // Split content into lines and remove empty lines
+      const lines = content.split('\n').filter(line => line.trim());
       
-      // Normalize headers to standard format
-      const normalizedHeaders = headers.map(header => {
-        const lowerHeader = header.toLowerCase();
-        if (lowerHeader.includes('symbol')) return 'Symbol';
-        if (lowerHeader.includes('quantity') || lowerHeader.includes('qty')) return 'Qty (Quantity)';
-        if (lowerHeader.includes('market value') || lowerHeader.includes('mkt val')) return 'Mkt Val (Market Value)';
-        if (lowerHeader.includes('cost basis')) return 'Cost Basis';
-        if (lowerHeader.includes('gain/loss')) return 'Gain $ (Gain/Loss $)';
-        return header;
+      debugLog('pipeline', 'parsing', 'Split content into lines', {
+        totalLines: lines.length,
+        firstLine: lines[0],
+        secondLine: lines[1]
       });
 
-      // Process data rows
-      const processedData = lines.slice(1)
-        .filter(line => line.trim())
+      // Skip the first line (metadata) and get headers from second line
+      const headers = lines[1].split(',').map(h => {
+        const trimmed = h.trim();
+        return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
+      });
+      
+      debugLog('pipeline', 'parsing', 'Parsed CSV headers', { 
+        headers,
+        headerCount: headers.length
+      });
+      
+      // Process data rows starting from line 3 (index 2)
+      const processedData = lines.slice(2)
+        .filter(line => {
+          const trimmed = line.trim();
+          return trimmed && 
+                 !trimmed.includes('Account Total') && 
+                 !trimmed.includes('Cash & Cash Investments');
+        })
         .map(line => {
-          const values = line.split(',').map(v => v.trim());
-          const row = {};
-          normalizedHeaders.forEach((header, index) => {
-            row[header] = values[index] || '';
+          // Split by comma but preserve quoted values
+          const values = line.split(',').map(v => {
+            const trimmed = v.trim();
+            return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
           });
+          
+          const row = {};
+          
+          headers.forEach((header, index) => {
+            let value = values[index] || '';
+            
+            // Clean up numeric values
+            if (header === 'Quantity' || header === 'Price' || header === 'Market Value' || 
+                header === 'Cost Basis' || header === 'Gain/Loss $' || header === 'Gain/Loss %' ||
+                header === 'Price Change $' || header === 'Price Change %' || 
+                header === 'Day Change $' || header === 'Day Change %') {
+              // Remove currency symbols, percentage signs, and convert to number
+              value = value.replace(/[$,%]/g, '');
+              value = parseFloat(value) || 0;
+            }
+            
+            row[header] = value;
+          });
+          
           return row;
+        })
+        .filter(row => {
+          // Filter out rows without symbols or with invalid data
+          const hasSymbol = row.Symbol && row.Symbol !== '--';
+          const hasValidData = row['Market Value'] > 0 || row.Quantity > 0;
+          return hasSymbol && hasValidData;
         });
+
+      debugLog('pipeline', 'parsing', 'Processed CSV data', {
+        rowCount: processedData.length,
+        sampleRow: processedData[0],
+        headers: Object.keys(processedData[0] || {})
+      });
+
+      // Calculate totals
+      const totals = processedData.reduce((acc, row) => {
+        acc.totalValue += parseFloat(row['Market Value']) || 0;
+        acc.totalGain += parseFloat(row['Gain/Loss $']) || 0;
+        return acc;
+      }, { totalValue: 0, totalGain: 0 });
+
+      debugLog('pipeline', 'parsing', 'Calculated totals', totals);
 
       return {
         success: true,
         data: processedData,
-        headers: normalizedHeaders
+        headers: headers,
+        totals: totals
       };
     }
     
+    debugLog('pipeline', 'error', 'Unsupported file type', { fileType });
     return {
       success: false,
       error: 'Unsupported file type'
     };
   } catch (error) {
-    console.error('Error processing file:', error);
+    debugLog('pipeline', 'error', 'Error processing file', {
+      error: error.message,
+      stack: error.stack
+    });
     return {
       success: false,
       error: error.message
@@ -135,11 +197,44 @@ export const processFileData = (content, fileType) => {
  * @returns {string} Portfolio reference
  */
 export const generatePortfolioReference = (accountName, date) => {
-  if (!accountName || !date) {
-    throw new Error('Account name and date are required for portfolio reference');
+  debugLog('portfolio', 'reference', 'Generating portfolio reference', {
+    accountName,
+    date: date instanceof Date ? date.toISOString() : date,
+    dateType: date instanceof Date ? 'Date' : typeof date
+  });
+
+  if (!accountName) {
+    debugLog('portfolio', 'error', 'Missing account name for portfolio reference');
+    throw new Error('Account name is required for portfolio reference');
   }
-  const formattedDate = date.toISOString().slice(0, 10).replace(/-/g, '');
-  return `${accountName}_${formattedDate}`;
+  
+  if (!date) {
+    debugLog('portfolio', 'error', 'Missing date for portfolio reference');
+    throw new Error('Date is required for portfolio reference');
+  }
+  
+  // Convert string date to Date object if needed
+  const portfolioDate = date instanceof Date ? date : new Date(date);
+  
+  if (isNaN(portfolioDate.getTime())) {
+    debugLog('portfolio', 'error', 'Invalid date format for portfolio reference', {
+      originalDate: date,
+      convertedDate: portfolioDate,
+      dateType: typeof date
+    });
+    throw new Error('Invalid date format for portfolio reference');
+  }
+  
+  const formattedDate = portfolioDate.toISOString().slice(0, 10).replace(/-/g, '');
+  const reference = `${accountName}_${formattedDate}`;
+  
+  debugLog('portfolio', 'reference', 'Generated portfolio reference', {
+    reference,
+    accountName,
+    formattedDate
+  });
+  
+  return reference;
 };
 
 /**
@@ -152,22 +247,22 @@ export const generatePortfolioReference = (accountName, date) => {
  * @returns {Promise<string>} ID of saved file
  */
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
-  console.log('saveUploadedFile: Starting file save', {
+  debugLog('pipeline', 'storage', 'Starting file save', {
     filename: file.name || file.filename,
     accountName,
     fileType,
-    fileDate
+    fileDate: fileDate instanceof Date ? fileDate.toISOString() : fileDate
   });
 
   const db = await initializeFileStorage();
 
   // Generate portfolio reference
   const portfolioReference = generatePortfolioReference(accountName, fileDate || new Date());
-  console.log('saveUploadedFile: Generated portfolio reference', { portfolioReference });
+  debugLog('pipeline', 'storage', 'Generated portfolio reference', { portfolioReference });
 
   // Calculate file hash to detect duplicates
   const fileHash = await calculateFileHash(content);
-  console.log('saveUploadedFile: Calculated file hash', { fileHash });
+  debugLog('pipeline', 'storage', 'Calculated file hash', { fileHash });
 
   // Get filename from File object or passed data
   const filename = file.name || file.filename;
@@ -175,7 +270,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for exact duplicate (same hash)
   const existingFileByHash = await findFileByHash(fileHash);
   if (existingFileByHash) {
-    console.log('saveUploadedFile: Found duplicate by hash', {
+    debugLog('pipeline', 'storage', 'Found duplicate by hash', {
       existingId: existingFileByHash.id,
       filename: existingFileByHash.filename
     });
@@ -190,7 +285,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
   // Check for filename conflict
   const existingFileByName = await findFileByName(filename);
   if (existingFileByName) {
-    console.log('saveUploadedFile: Found duplicate by name', {
+    debugLog('pipeline', 'storage', 'Found duplicate by name', {
       existingId: existingFileByName.id,
       filename: existingFileByName.filename
     });
@@ -212,7 +307,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
 
     // Generate a unique file ID
     const fileId = `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    console.log('saveUploadedFile: Generated file ID', { fileId });
+    debugLog('pipeline', 'storage', 'Generated file ID', { fileId });
     
     const fileRecord = {
       id: fileId,
@@ -230,7 +325,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
       lastAccessed: new Date()
     };
 
-    console.log('saveUploadedFile: Attempting to save file record', {
+    debugLog('pipeline', 'storage', 'Attempting to save file record', {
       fileId,
       filename: fileRecord.filename,
       fileType: fileRecord.fileType
@@ -239,7 +334,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     const request = store.add(fileRecord);
 
     request.onsuccess = () => {
-      console.log('saveUploadedFile: File saved successfully', {
+      debugLog('pipeline', 'storage', 'File saved successfully', {
         fileId,
         requestResult: request.result
       });
@@ -251,7 +346,7 @@ export const saveUploadedFile = async (file, content, accountName, fileType, fil
     };
 
     request.onerror = () => {
-      console.error('saveUploadedFile: Error saving file', {
+      debugLog('pipeline', 'error', 'Error saving file', {
         error: request.error,
         fileId,
         filename: fileRecord.filename
@@ -467,6 +562,8 @@ export const getFilesByType = async (fileType) => {
  * @returns {Promise<Object>} Migration results
  */
 export const migrateFromOldStorage = async () => {
+  debugLog('database', 'migration', 'Starting storage migration');
+  
   try {
     // Check if we have the old structure and new structure
     let db;
@@ -479,9 +576,15 @@ export const migrateFromOldStorage = async () => {
         openRequest.onerror = () => reject(openRequest.error);
       });
       
-      console.log(`Current database version: ${db.version}, expected: ${DB_VERSION}`);
+      debugLog('database', 'migration', 'Database opened for migration', {
+        version: db.version,
+        expectedVersion: DB_VERSION
+      });
     } catch (err) {
-      console.error('Error opening database for migration check:', err);
+      debugLog('database', 'error', 'Error opening database for migration', {
+        error: err.message,
+        stack: err.stack
+      });
       return { 
         migrated: false, 
         reason: `Error opening database: ${err.message}`,
@@ -492,10 +595,11 @@ export const migrateFromOldStorage = async () => {
     
     // Get a list of all object stores
     const storeNames = Array.from(db.objectStoreNames);
-    console.log('Available stores:', storeNames);
+    debugLog('database', 'migration', 'Available stores', { storeNames });
     
     // If we don't have the portfolios store, nothing to migrate
     if (!storeNames.includes('portfolios')) {
+      debugLog('database', 'migration', 'No portfolios store found, nothing to migrate');
       db.close();
       return { 
         migrated: false, 
@@ -523,42 +627,92 @@ export const migrateFromOldStorage = async () => {
       request.onerror = () => reject(request.error);
     });
     
-    console.log(`Found ${portfolios.length} portfolios and ${files.length} files for migration`);
+    debugLog('database', 'migration', 'Retrieved data for migration', {
+      portfolioCount: portfolios.length,
+      fileCount: files.length
+    });
     
     // Check for portfolios that don't have corresponding files
     const missingFiles = [];
+    const migrationErrors = [];
     
-    portfolios.forEach(portfolio => {
-      // Debug portfolio info
-      console.log(`Portfolio: ${JSON.stringify(portfolio)}`);
+    for (const portfolio of portfolios) {
+      try {
+        debugLog('database', 'migration', 'Processing portfolio', {
+          id: portfolio.id,
+          account: portfolio.account,
+          date: portfolio.date
+        });
 
-      // Generate expected portfolio reference
-      const expectedReference = generatePortfolioReference(portfolio.account, new Date(portfolio.date));
-      
-      // Check if we have a file matching this pattern
-      const matchingFile = files.find(file => 
-        file.portfolioReference === expectedReference ||
-        (file.filename && file.filename.includes(expectedReference))
-      );
-      
-      if (!matchingFile) {
-        missingFiles.push({
-          accountName: portfolio.account,
-          portfolioDate: new Date(portfolio.date),
+        // Convert date string to Date object
+        const portfolioDate = portfolio.date instanceof Date ? 
+          portfolio.date : 
+          new Date(portfolio.date);
+        
+        if (isNaN(portfolioDate.getTime())) {
+          debugLog('database', 'error', 'Invalid date format in portfolio', {
+            portfolioId: portfolio.id,
+            date: portfolio.date,
+            dateType: typeof portfolio.date
+          });
+          migrationErrors.push({
+            portfolioId: portfolio.id,
+            error: 'Invalid date format',
+            date: portfolio.date
+          });
+          continue;
+        }
+
+        // Generate expected portfolio reference
+        const expectedReference = generatePortfolioReference(portfolio.account, portfolioDate);
+        
+        // Check if we have a file matching this pattern
+        const matchingFile = files.find(file => 
+          file.portfolioReference === expectedReference ||
+          (file.filename && file.filename.includes(expectedReference))
+        );
+        
+        if (!matchingFile) {
+          debugLog('database', 'migration', 'No matching file found for portfolio', {
+            portfolioId: portfolio.id,
+            expectedReference
+          });
+          missingFiles.push({
+            accountName: portfolio.account,
+            portfolioDate: portfolioDate,
+            portfolioId: portfolio.id,
+            expectedReference
+          });
+        }
+      } catch (error) {
+        debugLog('database', 'error', 'Error processing portfolio during migration', {
           portfolioId: portfolio.id,
-          expectedReference
+          error: error.message,
+          stack: error.stack
+        });
+        migrationErrors.push({
+          portfolioId: portfolio.id,
+          error: error.message
         });
       }
-    });
+    }
     
     // Close the DB connection
     db.close();
+    
+    debugLog('database', 'migration', 'Migration completed', {
+      portfolioCount: portfolios.length,
+      fileCount: files.length,
+      missingFilesCount: missingFiles.length,
+      errorCount: migrationErrors.length
+    });
     
     return {
       migrated: true,
       portfolioCount: portfolios.length,
       fileCount: files.length,
       missingFiles,
+      migrationErrors,
       databaseInfo: {
         version: db.version,
         expectedVersion: DB_VERSION,
@@ -566,7 +720,10 @@ export const migrateFromOldStorage = async () => {
       }
     };
   } catch (error) {
-    console.error('Error during storage migration:', error);
+    debugLog('database', 'error', 'Error during storage migration', {
+      error: error.message,
+      stack: error.stack
+    });
     return {
       migrated: false,
       error: error.message,

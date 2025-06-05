@@ -1,3 +1,7 @@
+### 0.4.71
+
+- fixing snapshot parsing, pass 1
+
 ### 0.4.70
 
 - snapshot bug report

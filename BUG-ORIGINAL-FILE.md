@@ -37,6 +37,36 @@ A new `FileReference` type has been implemented to standardize file reference ha
 - [ ] Test migration of existing file references
 - [ ] Validate error handling for invalid file references
 
+## Latest Investigation and Next Steps
+
+### Findings (as of 2025-06-05)
+- The file upload and parsing pipeline is working correctly. Files are uploaded, parsed, and processed, and the correct account name and date are extracted.
+- Debug logs confirm that the upload pipeline returns the expected data, including `accountName`, `date`, and parsed positions.
+- However, the UI still reports that the original file reference is missing for new portfolio snapshots.
+- This suggests the problem is not in the upload or parsing pipeline, but in how the file reference is saved to or retrieved from the portfolio snapshot.
+
+### Most Likely Causes
+1. The file reference is not being saved in the correct field (`sourceFile`) in the portfolio snapshot.
+2. The UI (`PortfolioDisplay` or `usePortfolioData`) is not reading the file reference from the correct field.
+3. There is a mismatch between the saved data and what the UI expects (e.g., old snapshots, migration issue, or a typo in field names).
+
+### Action Plan
+1. **Portfolio Snapshot Save Logic**: Check `PortfolioService.savePortfolioSnapshot` and `PortfolioRepository.saveSnapshot` to ensure the `sourceFile` field is being set with a valid `FileReference` object when saving a new snapshot.
+2. **Portfolio Snapshot Retrieval**: Check `PortfolioRepository.getById` and `usePortfolioData` to ensure the `sourceFile` field is being read and passed to the UI.
+3. **UI Display**: Check `PortfolioDisplay` to ensure it is looking for `snapshot.sourceFile` and not an old field or a field in `transactionMetadata`.
+4. **Add Debug Logging**: Add debug logs in the repository layer to print the `sourceFile` field when saving and retrieving snapshots, to confirm the data flow.
+
+### Hypothesis
+- The pipeline and upload are working.
+- The snapshot is being saved, but the `sourceFile` field is either missing, not set, or not read/displayed in the UI.
+
+---
+
+**Next steps:**
+- Review and update the save/retrieve/display logic for the `sourceFile` field as outlined above.
+- Add debug logging to confirm the presence and correctness of the file reference throughout the stack.
+- Test again and update this report with findings.
+
 ## Status
 - [x] Root cause identified
 - [x] Solution implemented

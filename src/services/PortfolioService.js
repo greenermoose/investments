@@ -41,14 +41,34 @@ class PortfolioService {
       // Ensure date is a proper timestamp
       const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
       
-      // Create file reference if metadata contains file info
-      const fileReference = transactionMetadata ? migrateFileReference(transactionMetadata) : null;
+      // Create file reference from either direct file data or metadata
+      let fileReference = null;
+      if (transactionMetadata) {
+        if (transactionMetadata.fileId && transactionMetadata.fileHash) {
+          // Direct file reference data
+          fileReference = {
+            fileId: transactionMetadata.fileId,
+            fileHash: transactionMetadata.fileHash,
+            fileName: transactionMetadata.fileName,
+            uploadDate: transactionMetadata.uploadDate
+          };
+        } else {
+          // Legacy metadata format
+          fileReference = migrateFileReference(transactionMetadata);
+        }
+      }
       
-      console.log('PortfolioService: Saving portfolio snapshot', {
+      debugLog('portfolio', 'save', 'Creating portfolio snapshot', {
         accountName,
         date: timestamp,
         positions: portfolioData.length,
-        hasFileReference: !!fileReference
+        hasFileReference: !!fileReference,
+        fileReferenceDetails: fileReference ? {
+          fileId: fileReference.fileId,
+          fileHash: fileReference.fileHash,
+          fileName: fileReference.fileName
+        } : null,
+        transactionMetadataKeys: transactionMetadata ? Object.keys(transactionMetadata) : []
       });
 
       const portfolio = {
@@ -64,7 +84,23 @@ class PortfolioService {
         )
       };
 
-      return await this.portfolioRepo.saveSnapshot(portfolio);
+      debugLog('portfolio', 'save', 'Portfolio object created', {
+        hasSourceFile: !!portfolio.sourceFile,
+        sourceFileDetails: portfolio.sourceFile ? {
+          fileId: portfolio.sourceFile.fileId,
+          fileHash: portfolio.sourceFile.fileHash,
+          fileName: portfolio.sourceFile.fileName
+        } : null
+      });
+
+      const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
+      
+      debugLog('portfolio', 'save', 'Portfolio saved successfully', {
+        portfolioId,
+        hasSourceFile: !!portfolio.sourceFile
+      });
+
+      return portfolioId;
     } catch (error) {
       console.error('PortfolioService: Error saving portfolio snapshot:', error);
       throw error;

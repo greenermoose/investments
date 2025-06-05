@@ -22,141 +22,37 @@ export class PortfolioRepository extends BaseRepository {
       accountName: portfolio.account,
       date: portfolio.date,
       dataLength: portfolio.data?.length,
-      hasFileReference: !!portfolio.sourceFile
+      hasFileReference: !!portfolio.sourceFile,
+      fileReferenceDetails: portfolio.sourceFile ? {
+        fileId: portfolio.sourceFile.fileId,
+        fileHash: portfolio.sourceFile.fileHash,
+        fileName: portfolio.sourceFile.fileName
+      } : null
     });
 
     try {
       // Generate portfolio ID if not provided
       const portfolioId = portfolio.id || `${portfolio.account}_${portfolio.date}_${Math.random().toString(36).substr(2, 9)}`;
-      debugLog('portfolioRepository', 'id', 'Generated portfolio ID', {
-        portfolioId,
-        idLength: portfolioId.length,
-        accountName: portfolio.account
-      });
-
-      // Validate and normalize portfolio data
-      const normalizedData = portfolio.data.map(position => {
-        debugLog('portfolioRepository', 'normalize', 'Processing position', {
-          originalPosition: position,
-          hasSymbol: !!position.Symbol,
-          symbol: position.Symbol,
-          rawData: JSON.stringify(position)
-        });
-
-        // Skip positions with missing required fields
-        if (!position.Symbol) {
-          debugLog('portfolioRepository', 'skip', 'Skipping invalid position', {
-            position,
-            reason: 'Missing Symbol field',
-            rawData: JSON.stringify(position)
-          });
-          return null;
-        }
-
-        // Normalize numeric values with defaults
-        const quantity = parseFloat(position['Qty (Quantity)']) || 0;
-        const price = parseFloat(position.Price) || 0;
-        const marketValue = parseFloat(position['Mkt Val (Market Value)']) || 0;
-        const costBasis = parseFloat(position['Cost Basis']) || 0;
-        const gainLoss = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
-        const gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
-
-        debugLog('portfolioRepository', 'normalize', 'Parsed numeric values', {
-          symbol: position.Symbol,
-          quantity,
-          price,
-          marketValue,
-          costBasis,
-          gainLoss,
-          gainLossPercent,
-          rawValues: {
-            quantity: position['Qty (Quantity)'],
-            price: position.Price,
-            marketValue: position['Mkt Val (Market Value)'],
-            costBasis: position['Cost Basis'],
-            gainLoss: position['Gain $ (Gain/Loss $)'],
-            gainLossPercent: position['Gain % (Gain/Loss %)']
-          }
-        });
-
-        // Create normalized position object
-        const normalizedPosition = {
-          Symbol: position.Symbol,
-          Description: position.Description || position.Symbol,
-          'Qty (Quantity)': quantity,
-          Price: price,
-          'Mkt Val (Market Value)': marketValue,
-          'Cost Basis': costBasis,
-          'Gain $ (Gain/Loss $)': gainLoss,
-          'Gain % (Gain/Loss %)': gainLossPercent
-        };
-
-        debugLog('portfolioRepository', 'normalize', 'Created normalized position', {
-          original: position,
-          normalized: normalizedPosition,
-          rawData: JSON.stringify(position)
-        });
-
-        return normalizedPosition;
-      }).filter(Boolean);
-
-      debugLog('portfolioRepository', 'normalize', 'Data normalization complete', {
-        originalCount: portfolio.data.length,
-        normalizedCount: normalizedData.length,
-        skippedCount: portfolio.data.length - normalizedData.length
-      });
-
-      // Calculate portfolio totals
-      const totals = {
-        totalValue: normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0),
-        totalGain: normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0)
-      };
-
-      debugLog('portfolioRepository', 'totals', 'Calculated portfolio totals', {
-        totalValue: totals.totalValue,
-        totalGain: totals.totalGain,
-        positionCount: normalizedData.length
-      });
-
-      // Prepare portfolio data for saving
-      const portfolioData = {
-        id: portfolioId,
-        account: portfolio.account,
-        date: portfolio.date,
-        data: normalizedData,
-        accountTotal: totals,
-        sourceFile: portfolio.sourceFile || (portfolio.transactionMetadata ? migrateFileReference(portfolio.transactionMetadata) : null),
-        // Create a new transactionMetadata object without file reference fields
-        transactionMetadata: Object.fromEntries(
-          Object.entries(portfolio.transactionMetadata || {})
-            .filter(([key]) => !['fileId', 'fileHash', 'fileName', 'uploadDate'].includes(key))
-        ),
-        createdAt: new Date()
-      };
-
+      
+      // Assign the ID to the portfolio object
+      portfolio.id = portfolioId;
+      
       // Validate file reference if present
-      if (portfolioData.sourceFile && !isValidFileReference(portfolioData.sourceFile)) {
-        console.warn('Invalid file reference in portfolio data:', portfolioData.sourceFile);
-        portfolioData.sourceFile = null;
+      if (portfolio.sourceFile && !isValidFileReference(portfolio.sourceFile)) {
+        debugLog('portfolioRepository', 'warn', 'Invalid file reference in portfolio data', {
+          fileReference: portfolio.sourceFile
+        });
+        portfolio.sourceFile = null;
       }
 
-      debugLog('portfolioRepository', 'save', 'Preparing to save portfolio', {
-        portfolioId,
-        totalValue: totals.totalValue,
-        totalGain: totals.totalGain,
-        hasFileReference: !!portfolioData.sourceFile,
-        fileReferenceValid: isValidFileReference(portfolioData.sourceFile)
-      });
-
       // Save to database
-      await this.save(portfolioData);
+      await this.save(portfolio);
       
       debugLog('portfolioRepository', 'complete', 'Portfolio saved successfully', {
         portfolioId,
-        positionCount: normalizedData.length,
-        totalValue: totals.totalValue,
-        totalGain: totals.totalGain,
-        hasFileReference: !!portfolioData.sourceFile
+        positionCount: portfolio.data.length,
+        hasFileReference: !!portfolio.sourceFile,
+        fileReferenceValid: isValidFileReference(portfolio.sourceFile)
       });
 
       return portfolioId;
@@ -265,5 +161,24 @@ export class PortfolioRepository extends BaseRepository {
       const date = new Date(p.date);
       return date >= startDate && date <= endDate;
     });
+  }
+
+  async getById(id) {
+    debugLog('portfolioRepository', 'get', 'Getting portfolio by ID', { id });
+    
+    const portfolio = await super.getById(id);
+    
+    debugLog('portfolioRepository', 'get', 'Retrieved portfolio', {
+      id,
+      hasPortfolio: !!portfolio,
+      hasFileReference: portfolio?.sourceFile ? true : false,
+      fileReferenceDetails: portfolio?.sourceFile ? {
+        fileId: portfolio.sourceFile.fileId,
+        fileHash: portfolio.sourceFile.fileHash,
+        fileName: portfolio.sourceFile.fileName
+      } : null
+    });
+    
+    return portfolio;
   }
 }

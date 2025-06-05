@@ -175,6 +175,12 @@ export class PipelineOrchestrator {
 
       return {
         success: true,
+        data: parsedData.data,
+        accountName: metadata.accountName,
+        date: metadata.date,
+        accountTotal: parsedData.accountTotal,
+        fileId: storageResult.id,
+        fileHash: storageResult.fileHash,
         result: processingResult
       };
     } catch (error) {

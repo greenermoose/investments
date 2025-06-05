@@ -1,5 +1,14 @@
 // utils/fileProcessing.js revision: 3
 // Handles file type identification and classification
+/*
+
+This should proceed in three stages:
+
+1. Is the file valid JSON? If so, it could be a transactions file.
+2. Does the file have CSV any where in it? It might have some leading text that is not CSV. But at some point it might have a header row followed by data.
+3. Only if you really can't find any valid CSV in the file, then you can give up.
+
+*/
 
 import { debugLog } from './debugConfig';
 
@@ -31,22 +40,38 @@ const classifyFile = (content, fileType) => {
     contentLength: content.length
   });
 
-  // Check file extension first
-  if (fileType === FileTypes.CSV) {
-    return FileClassifications.PORTFOLIO_SNAPSHOT;
-  } else if (fileType === FileTypes.JSON) {
+  // Stage 1: Check if it's valid JSON
+  try {
+    const jsonData = JSON.parse(content);
+    // If we can parse it as JSON, it's likely a transactions file
     return FileClassifications.TRANSACTIONS;
+  } catch (e) {
+    // Not valid JSON, continue to stage 2
   }
 
-  // If file type is not clear from extension, check content
-  const firstLine = content.split('\n')[0].toLowerCase();
-  if (firstLine.includes('symbol') || firstLine.includes('quantity') || firstLine.includes('market value')) {
-    return FileClassifications.PORTFOLIO_SNAPSHOT;
-  } else if (firstLine.includes('brokerage') || firstLine.includes('transactions')) {
-    return FileClassifications.TRANSACTIONS;
+  // Stage 2: Look for CSV content
+  const lines = content.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line === '') continue;
+
+    // Check if this line looks like a CSV header
+    const hasCommas = line.includes(',');
+    const hasCommonHeaders = line.toLowerCase().includes('symbol') || 
+                            line.toLowerCase().includes('quantity') || 
+                            line.toLowerCase().includes('market value') ||
+                            line.toLowerCase().includes('price');
+
+    if (hasCommas && hasCommonHeaders) {
+      // Found what looks like a CSV header, check if next line has data
+      if (i + 1 < lines.length && lines[i + 1].includes(',')) {
+        return FileClassifications.PORTFOLIO_SNAPSHOT;
+      }
+    }
   }
 
-  throw new Error('Unable to classify file type');
+  // Stage 3: If we get here, we couldn't identify the file type
+  throw new Error('Unable to classify file type - no valid JSON or CSV content found');
 };
 
 /**

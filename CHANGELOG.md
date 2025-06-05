@@ -1,3 +1,7 @@
+### 0.4.80
+
+- fileProcessing checks for JSON first, then CSV
+
 ### 0.4.79
 
 - fixing snapshot parsing, pass 4

@@ -1,3 +1,7 @@
+### 0.4.106
+
+- File details bug report
+
 ### 0.4.105
 
 - Account UI

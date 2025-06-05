@@ -508,72 +508,140 @@ export const parsePortfolioCSV = (content) => {
     // Split content into lines and remove empty lines
     const lines = content.split('\n').filter(line => line.trim());
     
-    if (lines.length < 3) {
-      throw new Error('CSV file must have at least 3 lines (metadata, headers, and data)');
+    debugLog('pipeline', 'parsing', 'Split content into lines', {
+      totalLines: lines.length,
+      firstLine: lines[0],
+      secondLine: lines[1]
+    });
+
+    // Find the header line by looking for common header patterns
+    let headerLineIndex = -1;
+    const headerPatterns = [
+      /symbol/i,
+      /description/i,
+      /quantity|qty/i,
+      /price/i,
+      /market value|mkt val/i,
+      /cost basis/i,
+      /gain\/loss|gain loss/i
+    ];
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].toLowerCase();
+      const matches = headerPatterns.filter(pattern => pattern.test(line));
+      if (matches.length >= 3) { // Require at least 3 matching headers
+        headerLineIndex = i;
+        break;
+      }
     }
 
-    // Get headers from second line
-    const headers = lines[1].split(',').map(h => {
-      const trimmed = h.trim();
-      return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
+    if (headerLineIndex === -1) {
+      throw new Error('Could not find header line in CSV file');
+    }
+
+    debugLog('pipeline', 'parsing', 'Found header line', {
+      headerLineIndex,
+      headerLine: lines[headerLineIndex]
     });
 
-    debugLog('pipeline', 'parsing', 'Parsed CSV headers', { 
-      headers,
-      headerCount: headers.length
+    // Extract and normalize headers
+    const headers = lines[headerLineIndex].split(',').map(h => {
+      const trimmed = h.trim().replace(/^"|"$/g, '');
+      // Normalize common header variations
+      const lowerHeader = trimmed.toLowerCase();
+      if (lowerHeader.includes('symbol')) return 'Symbol';
+      if (lowerHeader.includes('description')) return 'Description';
+      if (lowerHeader.includes('quantity') || lowerHeader.includes('qty')) return 'Qty (Quantity)';
+      if (lowerHeader.includes('price')) return 'Price';
+      if (lowerHeader.includes('market value') || lowerHeader.includes('mkt val')) return 'Mkt Val (Market Value)';
+      if (lowerHeader.includes('cost basis')) return 'Cost Basis';
+      if (lowerHeader.includes('gain/loss') || lowerHeader.includes('gain loss')) {
+        return lowerHeader.includes('%') ? 'Gain % (Gain/Loss %)' : 'Gain $ (Gain/Loss $)';
+      }
+      return trimmed;
     });
 
-    // Process data rows starting from line 3 (index 2)
-    const positions = lines.slice(2)
+    debugLog('pipeline', 'parsing', 'Normalized headers', { headers });
+
+    // Process data rows starting after the header line
+    const positions = lines.slice(headerLineIndex + 1)
       .filter(line => {
         const trimmed = line.trim();
-        return trimmed && 
+        const isValid = trimmed && 
                !trimmed.includes('Account Total') && 
                !trimmed.includes('Cash & Cash Investments');
+        
+        debugLog('pipeline', 'parsing', 'Filtering line', {
+          line: trimmed,
+          isValid,
+          isAccountTotal: trimmed.includes('Account Total'),
+          isCash: trimmed.includes('Cash & Cash Investments')
+        });
+        
+        return isValid;
       })
       .map(line => {
-        // Split by comma but preserve quoted values
-        const values = line.split(',').map(v => {
-          const trimmed = v.trim();
-          return trimmed.replace(/^"|"$/g, ''); // Remove surrounding quotes
-        });
+        debugLog('pipeline', 'parsing', 'Processing line', { line });
         
-        const position = {};
-        
-        headers.forEach((header, index) => {
-          let value = values[index] || '';
-          
-          // Clean up numeric values
-          if (header === 'Quantity' || header === 'Price' || header === 'Market Value' || 
-              header === 'Cost Basis' || header === 'Gain/Loss $' || header === 'Gain/Loss %' ||
-              header === 'Price Change $' || header === 'Price Change %' || 
-              header === 'Day Change $' || header === 'Day Change %') {
-            // Remove currency symbols, percentage signs, and convert to number
-            value = value.replace(/[$,%]/g, '');
-            value = parseFloat(value) || 0;
+        try {
+          // Handle both CSV and JSON-like formats
+          let values;
+          if (line.includes('":"')) {
+            // JSON-like format
+            const [key, value] = line.split('":"').map(part => part.replace(/^"|"$/g, ''));
+            const symbolMatch = key.match(/'([^']+)'/);
+            if (!symbolMatch) {
+              debugLog('pipeline', 'parsing', 'No symbol found in key', { key });
+              return null;
+            }
+            values = [symbolMatch[1], value];
+          } else {
+            // CSV format
+            values = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''));
           }
           
-          position[header] = value;
-        });
-        
-        return position;
+          debugLog('pipeline', 'parsing', 'Parsed values', { values });
+          
+          // Create position object with normalized field names
+          const position = {
+            Symbol: values[0] || '',
+            Description: values[1] || '',
+            'Qty (Quantity)': parseFloat(values[2]) || 0,
+            Price: parseFloat(values[3]) || 0,
+            'Mkt Val (Market Value)': parseFloat(values[4]) || 0,
+            'Cost Basis': parseFloat(values[5]) || 0,
+            'Gain $ (Gain/Loss $)': parseFloat(values[6]) || 0,
+            'Gain % (Gain/Loss %)': parseFloat(values[7]) || 0
+          };
+          
+          // Validate position
+          if (!position.Symbol || position.Symbol === '--') {
+            debugLog('pipeline', 'parsing', 'Invalid position - missing symbol', { position });
+            return null;
+          }
+          
+          debugLog('pipeline', 'parsing', 'Created position object', { position });
+          return position;
+        } catch (error) {
+          debugLog('pipeline', 'parsing', 'Error processing line', {
+            line,
+            error: error.message
+          });
+          return null;
+        }
       })
-      .filter(position => {
-        // Filter out positions without symbols or with invalid data
-        const hasSymbol = position.Symbol && position.Symbol !== '--';
-        const hasValidData = position['Market Value'] > 0 || position.Quantity > 0;
-        return hasSymbol && hasValidData;
-      });
+      .filter(Boolean); // Remove null entries
 
     debugLog('pipeline', 'parsing', 'Processed positions', {
       positionCount: positions.length,
-      samplePosition: positions[0]
+      samplePosition: positions[0],
+      allPositions: positions
     });
 
     // Calculate totals
     const totals = positions.reduce((acc, position) => {
-      acc.totalValue += parseFloat(position['Market Value']) || 0;
-      acc.totalGain += parseFloat(position['Gain/Loss $']) || 0;
+      acc.totalValue += parseFloat(position['Mkt Val (Market Value)']) || 0;
+      acc.totalGain += parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
       return acc;
     }, { totalValue: 0, totalGain: 0 });
 
@@ -582,7 +650,7 @@ export const parsePortfolioCSV = (content) => {
     return {
       success: true,
       positions,
-      headers,
+      headers: ['Symbol', 'Description', 'Qty (Quantity)', 'Price', 'Mkt Val (Market Value)', 'Cost Basis', 'Gain $ (Gain/Loss $)', 'Gain % (Gain/Loss %)'],
       totals
     };
   } catch (error) {

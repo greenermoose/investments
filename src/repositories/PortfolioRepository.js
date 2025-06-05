@@ -35,20 +35,28 @@ export class PortfolioRepository extends BaseRepository {
     // Validate and normalize portfolio data
     const normalizedData = portfolio.data.map(position => {
       // Skip positions with missing required fields
-      if (!position.Symbol || !position['Current Value']) {
+      if (!position.Symbol) {
         debugLog('portfolio', 'storage', 'Skipping invalid position:', position);
         return null;
       }
 
+      // Normalize numeric values
+      const quantity = parseFloat(position['Qty (Quantity)']) || 0;
+      const price = parseFloat(position.Price) || 0;
+      const marketValue = parseFloat(position['Mkt Val (Market Value)']) || 0;
+      const costBasis = parseFloat(position['Cost Basis']) || 0;
+      const gainLoss = parseFloat(position['Gain $ (Gain/Loss $)']) || 0;
+      const gainLossPercent = parseFloat(position['Gain % (Gain/Loss %)']) || 0;
+
       return {
-        symbol: position.Symbol,
-        description: position.Description || '',
-        quantity: parseFloat(position.Quantity) || 0,
-        price: parseFloat(position['Current Price']) || 0,
-        value: parseFloat(position['Current Value']) || 0,
-        costBasis: parseFloat(position['Cost Basis']) || 0,
-        gainLoss: parseFloat(position['Gain/Loss']) || 0,
-        gainLossPercent: parseFloat(position['Gain/Loss %']) || 0
+        Symbol: position.Symbol,
+        Description: position.Description || '',
+        'Qty (Quantity)': quantity,
+        Price: price,
+        'Mkt Val (Market Value)': marketValue,
+        'Cost Basis': costBasis,
+        'Gain $ (Gain/Loss $)': gainLoss,
+        'Gain % (Gain/Loss %)': gainLossPercent
       };
     }).filter(Boolean);
 
@@ -58,66 +66,47 @@ export class PortfolioRepository extends BaseRepository {
     });
 
     // Calculate totals
-    const totalValue = normalizedData.reduce((sum, pos) => sum + pos.value, 0);
-    const totalGain = normalizedData.reduce((sum, pos) => sum + pos.gainLoss, 0);
+    const totalValue = normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Mkt Val (Market Value)']) || 0), 0);
+    const totalGain = normalizedData.reduce((sum, pos) => sum + (parseFloat(pos['Gain $ (Gain/Loss $)']) || 0), 0);
 
+    // Prepare portfolio object
     const portfolioData = {
       id: portfolioId,
       accountName: portfolio.accountName,
       date: portfolio.date,
       data: normalizedData,
       accountTotal: {
-        value: totalValue,
-        gainLoss: totalGain
+        totalValue,
+        totalGain
       },
-      metadata: {
-        source: portfolio.metadata?.source || 'manual',
-        fileId: portfolio.metadata?.fileId || null,
-        changes: portfolio.metadata?.changes || null
-      },
+      metadata: portfolio.metadata || {},
       createdAt: new Date().toISOString()
     };
 
     debugLog('portfolio', 'storage', 'Prepared portfolio data:', {
-      id: portfolioId,
+      id: portfolioData.id,
       totalValue,
       totalGain,
       metadata: portfolioData.metadata,
-      hasFileId: !!portfolioData.metadata.fileId,
-      fileId: portfolioData.metadata.fileId
+      hasFileId: !!portfolioData.metadata?.fileId
     });
 
-    const db = await initializeDB();
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
-   
-    return new Promise((resolve, reject) => {
-      debugLog('portfolio', 'storage', 'Attempting to save portfolio:', {
-        id: portfolioId,
-        storeName: STORE_NAME_PORTFOLIOS
+    // Save to database
+    try {
+      const result = await this.save(portfolioData);
+      debugLog('portfolio', 'storage', 'Portfolio saved successfully:', {
+        id: result,
+        hasId: !!result,
+        resultType: typeof result
       });
-
-      const request = store.put(portfolioData);
-      
-      request.onsuccess = () => {
-        debugLog('portfolio', 'storage', 'Portfolio saved successfully', {
-          id: portfolioId,
-          requestResult: request.result,
-          hasResult: !!request.result,
-          resultType: typeof request.result
-        });
-        resolve(portfolioId);
-      };
-      
-      request.onerror = (error) => {
-        debugLog('portfolio', 'error', 'Failed to save portfolio', {
-          error: error.target.error,
-          errorName: error.target.error?.name,
-          errorMessage: error.target.error?.message
-        });
-        reject(new Error('Failed to save portfolio snapshot'));
-      };
-    });
+      return result;
+    } catch (error) {
+      debugLog('portfolio', 'error', 'Failed to save portfolio:', {
+        error: error.message,
+        stack: error.stack
+      });
+      throw error;
+    }
   }
 
   /**

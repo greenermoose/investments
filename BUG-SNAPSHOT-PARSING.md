@@ -1,79 +1,117 @@
 # Portfolio Snapshot Parsing Bug Report
 
 ## Issue Description
-When uploading a portfolio snapshot file, the system fails during the storage migration process with the error: "Account name and date are required for portfolio reference". This occurs in the `generatePortfolioReference` function during the migration of existing portfolio data to the new storage format.
+When uploading a portfolio snapshot file, the system fails to parse the position data correctly. The file is successfully uploaded and saved, but all positions are being skipped during the parsing process. The console log shows that each position is being marked as "invalid" and skipped, resulting in an empty portfolio with no positions.
 
 ## Root Cause
-The error occurs in the `migrateFromOldStorage` function in `fileStorage.js` when attempting to generate a portfolio reference for existing portfolios. The issue stems from two main problems:
+The root cause appears to be a mismatch between the data format in the CSV file and the parsing logic. The console log shows that the data is being received in a format like:
 
-1. The portfolio data structure being migrated has inconsistent date formats:
-   - The portfolio object contains a date string in ISO format: `"2021-11-20T12:19:58.000Z"`
-   - The `generatePortfolioReference` function expects a Date object
-   - The conversion from string to Date object is failing silently
+```
+{"Positions for account Roth Contributory IRA XXXX-6348 as of 07:19 AM ET: 'ABBV', 11/20/2021": '"ABBVIE INC"'}
+```
 
-2. The error handling in the migration process is not properly handling the case where the date conversion fails, leading to the validation error in `generatePortfolioReference`.
+However, the current parsing logic is trying to handle this as a CSV line with key-value pairs, which is incorrect. The data is actually being parsed as a JSON object at some point before reaching the position parsing code, which is why the regex pattern matching is failing.
+
+The specific issues are:
+
+1. The data is being double-parsed:
+   - First as JSON (creating an object with a single key-value pair)
+   - Then as CSV (trying to split on commas and quotes)
+
+2. The position data format is not what the parser expects:
+   - Expected: CSV format with separate columns for Symbol, Description, etc.
+   - Actual: JSON-like format with a single key containing the position info
 
 ## Error Flow
 1. File upload process starts successfully
-2. File is parsed and saved correctly
-3. Portfolio data is saved to the database
-4. During storage migration check:
-   - System finds existing portfolio: `{"id":"Roth Contributory IRA-2021-11-20T12:19:58.000Z",...}`
-   - Attempts to generate reference using `generatePortfolioReference(portfolio.account, new Date(portfolio.date))`
-   - Date conversion fails silently
-   - `generatePortfolioReference` throws error due to invalid date
+2. File is saved correctly with proper metadata
+3. During position parsing:
+   - Each line is treated as a JSON object
+   - The parser attempts to split this object as if it were CSV
+   - The regex pattern fails to match the transformed data
+   - All positions are marked as invalid and skipped
+4. The portfolio is saved with zero positions
 
 ## Proposed Solution
-1. Add proper date validation and conversion in the migration process:
-```javascript
-const expectedReference = generatePortfolioReference(
-  portfolio.account,
-  portfolio.date instanceof Date ? portfolio.date : new Date(portfolio.date)
-);
-```
+1. Modify the file processing pipeline to handle the data format correctly:
 
-2. Add error handling for date conversion:
 ```javascript
-try {
-  const portfolioDate = portfolio.date instanceof Date ? 
-    portfolio.date : 
-    new Date(portfolio.date);
+// In fileProcessing.js
+export const parsePortfolioCSV = (content) => {
+  try {
+    const lines = content.split('\n').filter(line => line.trim());
     
-  if (isNaN(portfolioDate.getTime())) {
-    console.error('Invalid date format in portfolio:', portfolio.date);
-    continue; // Skip this portfolio
-  }
-  
-  const expectedReference = generatePortfolioReference(portfolio.account, portfolioDate);
-  // ... rest of migration logic
-} catch (error) {
-  console.error('Error processing portfolio during migration:', error);
-  continue; // Skip this portfolio
-}
-```
+    // Process data rows starting from line 3 (index 2)
+    const positions = lines.slice(2)
+      .filter(line => {
+        const trimmed = line.trim();
+        return trimmed && 
+               !trimmed.includes('Account Total') && 
+               !trimmed.includes('Cash & Cash Investments');
+      })
+      .map(line => {
+        // Parse the line as a JSON object
+        const positionData = JSON.parse(line);
+        const key = Object.keys(positionData)[0];
+        const value = positionData[key];
+        
+        // Extract symbol from the key using regex
+        const symbolMatch = key.match(/'([^']+)'/);
+        if (!symbolMatch) return null;
+        
+        const symbol = symbolMatch[1];
+        
+        // Create position object
+        return {
+          Symbol: symbol,
+          Description: value.replace(/^"|"$/g, ''),
+          'Qty (Quantity)': 0,
+          Price: 0,
+          'Mkt Val (Market Value)': 0,
+          'Cost Basis': 0,
+          'Gain $ (Gain/Loss $)': 0,
+          'Gain % (Gain/Loss %)': 0
+        };
+      })
+      .filter(Boolean);
 
-3. Add validation in `generatePortfolioReference`:
-```javascript
-export const generatePortfolioReference = (accountName, date) => {
-  if (!accountName) {
-    throw new Error('Account name is required for portfolio reference');
+    return {
+      success: true,
+      positions,
+      headers: ['Symbol', 'Description', 'Qty (Quantity)', 'Price', 'Mkt Val (Market Value)', 'Cost Basis', 'Gain $ (Gain/Loss $)', 'Gain % (Gain/Loss %)'],
+      totals: {
+        totalValue: 0,
+        totalGain: 0
+      }
+    };
+  } catch (error) {
+    return {
+      success: false,
+      error: error.message
+    };
   }
-  
-  if (!date) {
-    throw new Error('Date is required for portfolio reference');
-  }
-  
-  if (!(date instanceof Date) || isNaN(date.getTime())) {
-    throw new Error('Invalid date format for portfolio reference');
-  }
-  
-  const formattedDate = date.toISOString().slice(0, 10).replace(/-/g, '');
-  return `${accountName}_${formattedDate}`;
 };
 ```
 
+2. Add validation to ensure the data format is correct before parsing:
+   - Check if the line is valid JSON
+   - Verify the expected key format
+   - Validate the symbol and description values
+
+3. Add more detailed error logging to help diagnose parsing issues:
+   - Log the raw line content
+   - Log the parsed JSON object
+   - Log any validation failures
+
 ## Impact
-This bug affects the storage migration process but does not impact the core functionality of uploading and processing new portfolio snapshots. However, it prevents proper migration of existing portfolio data to the new storage format.
+This bug affects the core functionality of uploading and processing portfolio snapshots. Users cannot see their portfolio positions after uploading a snapshot file, which is a critical feature of the application.
 
 ## Priority
-Medium - The bug affects data migration but not core functionality. Should be fixed before next major release to ensure proper data migration for existing users. 
+High - This is a core functionality issue that prevents users from viewing their portfolio data. Should be fixed immediately to restore basic application functionality.
+
+## Testing Plan
+1. Test with the current problematic file to verify the fix
+2. Test with various position formats to ensure robustness
+3. Test with edge cases (special characters in symbols, long descriptions, etc.)
+4. Verify that position totals are calculated correctly
+5. Confirm that the UI displays the parsed positions correctly 

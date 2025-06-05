@@ -1,6 +1,7 @@
 // components/FileDebugger.jsx revision: 1
 import React, { useState } from 'react';
-import { parsePortfolioCSV, parseDateFromFilename } from '../utils/fileProcessing';
+import { parsePortfolioCSV } from '../utils/parseSnapshot';
+import { parseDateFromFilename } from '../utils/fileMetadata';
 
 const FileDebugger = () => {
   const [fileInfo, setFileInfo] = useState(null);

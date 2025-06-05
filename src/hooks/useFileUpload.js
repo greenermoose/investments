@@ -1,32 +1,24 @@
 // hooks/useFileUpload.js revision: 3
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import { parsePortfolioCSV } from '../utils/parseSnapshot';
+import { parseTransactionJSON } from '../utils/parseTransactions';
 import {
-  parsePortfolioCSV,
   getAccountNameFromFilename,
   parseDateFromFilename,
   normalizeAccountName,
   findSimilarAccountNames
-} from '../utils/fileProcessing';
+} from '../utils/fileMetadata';
 import portfolioService from '../services/PortfolioService';
 import { analyzePortfolioChanges } from '../utils/positionTracker';
-import {
-  parseTransactionJSON,
-  removeDuplicateTransactions
-} from '../utils/transactionEngine';
-import {
-  applyTransactionsToPortfolio
-} from '../utils/portfolioTracker';
+import { removeDuplicateTransactions } from '../utils/transactionEngine';
+import { applyTransactionsToPortfolio } from '../utils/portfolioTracker';
 import { detectSymbolChange } from '../utils/symbolMapping';
 import { saveUploadedFile } from '../utils/fileStorage';
 import { createLotsFromSnapshot } from '../utils/lotTracker';
 import { usePortfolio } from './usePortfolio';
 import { useDialog } from './useDialog';
 import { PipelineOrchestrator } from '../pipeline/PipelineOrchestrator';
-
-// Debug logging function
-const debugLog = (component, action, message, data = {}) => {
-  console.log(`[${component}] ${action}:`, message, data);
-};
+import { debugLog } from '../utils/debugConfig';
 
 /**
  * File type definitions with validation rules

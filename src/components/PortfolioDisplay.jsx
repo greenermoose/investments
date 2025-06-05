@@ -3,10 +3,12 @@
 import React, { useState } from 'react';
 import { Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { formatCurrency, formatPercent, formatValue } from '../utils/dataUtils';
-import { generateAndDownloadCSV } from '../utils/fileProcessing';
+import { generateAndDownloadCSV, generatePortfolioCSV } from '../utils/csvUtils';
 import AssetAllocationChart from './performance/AssetAllocationChart';
 import '../styles/base.css';
 import '../styles/portfolio.css';
+import { usePortfolio } from '../hooks/usePortfolio';
+import { debugLog } from '../utils/debugConfig';
 
 const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'

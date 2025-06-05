@@ -46,18 +46,24 @@ A React-based investment portfolio management application that enables users to 
 
 ### Data Flow
 1. User uploads CSV/JSON files
-2. Files parsed and validated
-3. Data stored in IndexedDB
-4. Components fetch data via storage utilities
-5. Context providers manage shared state
-6. UI renders current state
+2. Files stored in IndexedDB via fileStorage
+3. fileProcessing identifies and classifies file type
+4. Based on classification:
+   - Portfolio snapshots parsed by parseSnapshot
+   - Transaction files parsed by parseTransactions
+5. Normalized data stored in IndexedDB
+6. Components fetch data via storage utilities
+7. Context providers manage shared state
+8. UI renders current state
 
 ## Module Organization
 
 ### /utils (Data Layer)
 - **portfolioStorage.js** : Core IndexedDB operations
 - **transactionEngine.js** : Transaction parsing/categorization
-- **fileProcessing.js** : CSV/JSON parsing logic
+- **fileProcessing.js** : File type identification and classification
+- **parseSnapshot.js** : Portfolio snapshot CSV parsing
+- **parseTransactions.js** : Transaction JSON parsing
 - **fileStorage.js** : File storage and deduplication
 - **portfolioTracker.js** : Portfolio/transaction reconciliation
 - **lotTracker.js** : Tax lot calculations
@@ -109,10 +115,12 @@ A React-based investment portfolio management application that enables users to 
 - Improve transaction filtering
 
 ### Phase 2: File Processing (Week 3)
-- Consolidate file upload components
-- Separate parsing from storage logic
+- ~~Consolidate file upload components~~
+- ~~Separate parsing from storage logic~~
 - Add progress indicators
 - Improve error messages
+- Add validation for file formats
+- Implement retry logic for failed parses
 
 ### Phase 3: Component Architecture (Week 4)
 - Reduce component file sizes
@@ -218,6 +226,8 @@ const DEBUG_CONFIG = {
   - parsing
   - processing
   - storage
+  - classification
+  - validation
 
 ### Usage
 

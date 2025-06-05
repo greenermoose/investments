@@ -1,4 +1,4 @@
-import { parseDateFromFilename, getAccountNameFromFilename } from '../../utils/fileProcessing';
+import { parseDateFromFilename, getAccountNameFromFilename } from '../../utils/fileMetadata';
 
 /**
  * Base class for file parsers

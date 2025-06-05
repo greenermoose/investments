@@ -4,9 +4,9 @@ import {
   getAllFiles, 
   deleteFile, 
   getFileById, 
-  migrateFromOldStorage,
   replaceFile 
 } from '../utils/fileStorage';
+import { migrateFromOldStorage } from '../utils/portfolioUtils';
 import { formatDate, formatFileSize } from '../utils/dataUtils';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 import DuplicateFileModal from './DuplicateFileModal';

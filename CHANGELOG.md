@@ -1,3 +1,7 @@
+### 0.4.73
+
+- more refactoring fileStorage
+
 ### 0.4.72
 
 - refactoring fileStorage and fileProcessing

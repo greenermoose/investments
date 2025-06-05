@@ -32,43 +32,80 @@ The issue is more nuanced than initially thought. After code review, we found th
      b. The metadata structure makes it easy for the file reference to become "hidden"
      c. There's no clear separation between file reference data and other transaction metadata
 
-## Attempted Fix
-The first attempt to fix this issue involved:
+## Attempted Fixes
 
-1. Adding a dedicated `sourceFile` field to the portfolio data structure in `PortfolioRepository.saveSnapshot`
-2. Updating `PortfolioService.savePortfolioSnapshot` to properly handle source file data
-3. Adding stronger validation in `PortfolioProcessor.processPortfolioSnapshot`
+### First Attempt (0.4.87)
+1. Added a dedicated `sourceFile` field to the portfolio data structure in `PortfolioRepository.saveSnapshot`
+2. Updated `PortfolioService.savePortfolioSnapshot` to properly handle source file data
+3. Added stronger validation in `PortfolioProcessor.processPortfolioSnapshot`
 
 The changes included:
 - Creating a dedicated `sourceFile` object containing `fileId` and `fileHash`
 - Adding validation to ensure file hash is present when file ID is provided
 - Improving logging to track file reference data through the pipeline
 
+### Second Attempt (0.4.89)
+1. Updated UI components to properly handle and display source file information:
+   - Modified `PortfolioManager.jsx` to pass source file information when loading snapshots
+   - Updated `usePortfolioData.js` to store and expose source file information
+   - Enhanced `PortfolioDisplay.jsx` to show source file information in the UI
+
+The changes included:
+- Adding source file state management in the portfolio context
+- Ensuring source file information is passed through the component hierarchy
+- Displaying source file information in the portfolio header
+
 However, this fix did not resolve the issue. The problem persists, suggesting that:
-1. The UI layer may not be properly accessing the new `sourceFile` field
-2. There might be a data transformation issue in the UI layer
-3. The file reference might be getting lost during data retrieval
+1. The data transformation between layers may be losing the file reference
+2. The file reference might be getting overwritten during data updates
+3. There might be a race condition in how the data is loaded and displayed
 
 ## Next Steps
-1. Investigate the UI layer to understand how it's accessing portfolio data:
-   - Review the portfolio data retrieval flow
-   - Check how the UI determines if a file reference exists
-   - Verify the data structure expected by the UI
 
-2. Add data migration for existing portfolios:
-   - Create a migration script to move file references from `transactionMetadata` to `sourceFile`
-   - Add validation to ensure all portfolios have proper file references
-   - Update any UI code that relies on the old data structure
+### 1. Investigate Data Flow
+1. Add comprehensive logging throughout the data flow:
+   - Log file reference data at each transformation step
+   - Track when and where the file reference is lost
+   - Monitor data structure changes during updates
 
-3. Implement additional safeguards:
-   - Add file reference validation in the UI layer
-   - Create a file reference integrity check utility
-   - Add monitoring for missing file references
+2. Review data transformation layers:
+   - Check `PortfolioService` data transformation methods
+   - Verify `PortfolioRepository` data normalization
+   - Examine UI layer data processing
 
-4. Improve error handling and user feedback:
-   - Add clear error messages when file references are missing
-   - Implement automatic file reference recovery where possible
-   - Add user notifications for file reference issues
+### 2. Implement Data Integrity Checks
+1. Add validation at key points:
+   - When saving portfolio snapshots
+   - During data retrieval
+   - Before displaying in UI
+   - After data updates
+
+2. Create a file reference integrity check:
+   - Verify file reference consistency
+   - Validate file hash matches stored file
+   - Check for missing or corrupted references
+
+### 3. Improve Data Structure
+1. Consider alternative data structures:
+   - Separate file reference store
+   - Direct file reference mapping
+   - Immutable file reference objects
+
+2. Add data versioning:
+   - Track changes to file references
+   - Maintain reference history
+   - Enable reference recovery
+
+### 4. Enhance Error Handling
+1. Implement better error detection:
+   - Add specific error types for file reference issues
+   - Create validation error handlers
+   - Improve error reporting
+
+2. Add recovery mechanisms:
+   - Automatic file reference recovery
+   - Manual reference repair tools
+   - Reference validation utilities
 
 ## Success Criteria
 1. All portfolio snapshots maintain their original file reference

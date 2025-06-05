@@ -10,7 +10,7 @@ import '../styles/portfolio.css';
 import { usePortfolio } from '../hooks/usePortfolio';
 import { debugLog } from '../utils/debugConfig';
 
-const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSymbolClick }) => {
+const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, sourceFile, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', or 'positions'
   const [sortConfig, setSortConfig] = useState({ key: 'Symbol', direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
@@ -358,7 +358,20 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, currentAccount, onSym
   };
 
   return (
-    <div>
+    <div className="portfolio-display">
+      <div className="portfolio-header">
+        <h2>Portfolio Overview</h2>
+        {portfolioDate && (
+          <div className="portfolio-date">
+            As of {new Date(portfolioDate).toLocaleDateString()}
+          </div>
+        )}
+        {sourceFile && (
+          <div className="portfolio-source">
+            Source: {sourceFile.fileId} (Hash: {sourceFile.fileHash})
+          </div>
+        )}
+      </div>
       {/* Tab Selector - Updated to include Top Holdings tab */}
       <div className="tab-container">
         <button

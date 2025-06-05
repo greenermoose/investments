@@ -17,6 +17,7 @@ export const usePortfolioData = (selectedAccount) => {
   const [portfolioDate, setPortfolioDate] = useState(null);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [currentAccount, setCurrentAccount] = useState('');
+  const [sourceFile, setSourceFile] = useState(null);
 
   // Effect to load portfolio when selectedAccount changes
   useEffect(() => {
@@ -67,7 +68,8 @@ export const usePortfolioData = (selectedAccount) => {
             latestSnapshot.data,
             latestAccountName,
             latestSnapshot.date,
-            latestSnapshot.accountTotal
+            latestSnapshot.accountTotal,
+            latestSnapshot.sourceFileInfo
           );
         } else {
           // No data to load
@@ -130,7 +132,8 @@ export const usePortfolioData = (selectedAccount) => {
           snapshot.data,
           accountName,
           snapshot.date,
-          snapshot.accountTotal
+          snapshot.accountTotal,
+          snapshot.sourceFileInfo
         );
       } else {
         debugLog('ui', 'warn', 'No snapshot data found for account', { accountName });
@@ -180,12 +183,13 @@ export const usePortfolioData = (selectedAccount) => {
 
   const resetError = () => setError(null);
   
-  const loadPortfolio = (data, accountName, date, accountTotal) => {
+  const loadPortfolio = (data, accountName, date, accountTotal, sourceFileInfo) => {
     debugLog('ui', 'load', 'Loading portfolio data', {
       accountName,
       date,
       dataLength: data?.length,
-      hasAccountTotal: !!accountTotal
+      hasAccountTotal: !!accountTotal,
+      hasSourceFile: !!sourceFileInfo
     });
 
     // Ensure data is always an array
@@ -203,6 +207,7 @@ export const usePortfolioData = (selectedAccount) => {
     setCurrentAccount(accountName);
     setPortfolioDate(date);
     setPortfolioStats(stats);
+    setSourceFile(sourceFileInfo);
     setIsDataLoaded(true);
     setIsLoading(false);
   };
@@ -229,6 +234,7 @@ export const usePortfolioData = (selectedAccount) => {
     portfolioDate,
     isDataLoaded,
     currentAccount,
+    sourceFile,
     setError,
     resetError,
     loadPortfolio,

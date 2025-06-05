@@ -56,6 +56,9 @@ const PortfolioManager = () => {
     portfolioDate,
     isDataLoaded,
     currentAccount,
+    sourceFile,
+    loadPortfolio,
+    setLoadingState,
     refreshData
   } = portfolio;
 
@@ -205,7 +208,8 @@ const PortfolioManager = () => {
           snapshotData.data,
           currentAccount || selectedAccount,
           snapshotData.date,
-          snapshotData.accountTotal
+          snapshotData.accountTotal,
+          snapshotData.sourceFile
         );
       } else {
         console.error('Snapshot data not found:', snapshot.id);
@@ -249,6 +253,8 @@ const PortfolioManager = () => {
           return <PortfolioDisplay 
                    portfolioData={portfolioData} 
                    portfolioStats={portfolioStats} 
+                   portfolioDate={portfolioDate}
+                   sourceFile={sourceFile}
                    currentAccount={currentAccount || selectedAccount}
                    onSymbolClick={handleSymbolClick}
                  />;

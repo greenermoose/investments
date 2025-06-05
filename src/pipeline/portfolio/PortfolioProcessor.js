@@ -132,6 +132,31 @@ export class PortfolioProcessor {
       let changes = null;
       if (latestSnapshot) {
         debugLog('portfolio', 'changes', 'Analyzing portfolio changes');
+        
+        // Validate data structure before analysis
+        if (!Array.isArray(parsedData.data)) {
+          debugLog('portfolio', 'error', 'Invalid portfolio data structure', {
+            dataType: typeof parsedData.data,
+            hasData: !!parsedData.data
+          });
+          throw new Error('Invalid portfolio data structure: data must be an array');
+        }
+        
+        // Ensure each position has required fields
+        const validPositions = parsedData.data.every(pos => 
+          pos && typeof pos === 'object' && 
+          pos.Symbol && 
+          typeof pos['Qty (Quantity)'] !== 'undefined'
+        );
+        
+        if (!validPositions) {
+          debugLog('portfolio', 'error', 'Invalid position data in portfolio', {
+            dataLength: parsedData.data.length,
+            samplePosition: parsedData.data[0]
+          });
+          throw new Error('Invalid position data: each position must have Symbol and Quantity');
+        }
+        
         changes = analyzeChanges(latestSnapshot, parsedData.data);
         debugLog('portfolio', 'changes', 'Changes analyzed', {
           added: changes.added?.length,

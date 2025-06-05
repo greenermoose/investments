@@ -32,7 +32,7 @@ export const analyzeChanges = (previousSnapshot, currentPositions) => {
 
   // Create maps for easier comparison
   const previousPositions = new Map(
-    previousSnapshot.positions.map(pos => [pos.Symbol, pos])
+    previousSnapshot.data.map(pos => [pos.Symbol, pos])
   );
   const currentPositionsMap = new Map(
     currentPositions.map(pos => [pos.Symbol, pos])
@@ -71,7 +71,7 @@ export const analyzeChanges = (previousSnapshot, currentPositions) => {
   });
 
   // Find removed positions
-  previousSnapshot.positions.forEach(previousPos => {
+  previousSnapshot.data.forEach(previousPos => {
     const symbol = previousPos.Symbol;
     if (!currentPositionsMap.has(symbol)) {
       changes.removed.push(previousPos);

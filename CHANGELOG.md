@@ -1,3 +1,7 @@
+### 0.4.100
+
+- fix processing bug, pass 1
+
 ### 0.4.99
 
 - processing error bug report

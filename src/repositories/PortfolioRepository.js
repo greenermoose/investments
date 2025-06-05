@@ -99,8 +99,16 @@ export class PortfolioRepository extends BaseRepository {
       return null;
     }
     
-    const latestSnapshot = snapshots[snapshots.length - 1];
-    debugLog('portfolio', 'storage', 'Found latest snapshot:', latestSnapshot);
+    // Sort snapshots by date in ascending order
+    const sortedSnapshots = snapshots.sort((a, b) => a.date - b.date);
+    const latestSnapshot = sortedSnapshots[sortedSnapshots.length - 1];
+    
+    debugLog('portfolio', 'storage', 'Found latest snapshot:', {
+      snapshotId: latestSnapshot.id,
+      date: new Date(latestSnapshot.date).toISOString(),
+      positionCount: latestSnapshot.data?.length
+    });
+    
     return latestSnapshot;
   }
 

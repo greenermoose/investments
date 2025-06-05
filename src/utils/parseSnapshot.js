@@ -275,11 +275,9 @@ export const parsePortfolioCSV = (content) => {
       success: positions.length > 0,
       data: positions,
       headers: normalizedHeaders,
-      snapshotDate: snapshotDate?.toISOString(),
-      snapshotTime,
       totals,
       metadata: {
-        date: snapshotDate?.toISOString(),
+        date: snapshotDate,  // Store as Date object instead of ISO string
         time: snapshotTime,
         accountName: headerLine?.match(/Positions for account ([^,]+)/)?.[1]?.trim()
       }

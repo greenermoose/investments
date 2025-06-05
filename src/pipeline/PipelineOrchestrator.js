@@ -150,8 +150,8 @@ export class PipelineOrchestrator {
         headers: parsedData.headers,
         data: parsedData.data,
         metadata: {
-          date: parsedData.snapshotDate,
-          time: parsedData.snapshotTime,
+          date: parsedData.metadata.date,
+          time: parsedData.metadata.time,
           accountName: metadata.accountName
         }
       });

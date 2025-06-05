@@ -1,3 +1,7 @@
+### 0.4.83
+
+- parsedData structure
+
 ### 0.4.82
 
 - fixing snapshot parsing, pass 5

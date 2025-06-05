@@ -25,7 +25,6 @@ import AcquisitionModal from './AcquisitionModal';
 import AccountConfirmationDialog from './AccountConfirmationDialog';
 import WelcomeScreen from './WelcomeScreen';
 import PortfolioHistory from './PortfolioHistory';
-import DebugControlPanel from './DebugControlPanel';
 
 /**
  * Main application component that orchestrates the portfolio management experience
@@ -339,7 +338,6 @@ const PortfolioManager = () => {
       </main>
 
       <PortfolioFooter />
-      <DebugControlPanel />
 
       {/* Modals */}
       {showUploadModal && (

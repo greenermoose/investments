@@ -1,3 +1,7 @@
+### 0.4.107
+
+- Fix file details bug
+
 ### 0.4.106
 
 - File details bug report

@@ -5,7 +5,7 @@ import portfolioService from '../services/PortfolioService';
 import { debugLog } from '../utils/debugConfig';
 import { isValidFileReference } from '../types/FileReference';
 
-const DEBUG = false;
+const DEBUG = true;
 
 const initialPortfolioStats = {
   totalValue: 0,
@@ -37,11 +37,16 @@ export const usePortfolioData = (selectedAccount) => {
       setIsLoading(true);
       
       // Set source file in state
-      DEBUG && console.log('Setting source file in state:', {
+      DEBUG && console.log('usePortfolioData - Setting source file in state:', {
         newSourceFile: sourceFileInfo,
         hasNewSourceFile: !!sourceFileInfo,
         newSourceFileKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : [],
-        isValid: isValidFileReference(sourceFileInfo)
+        isValid: isValidFileReference(sourceFileInfo),
+        fieldTypes: sourceFileInfo ? Object.entries(sourceFileInfo).map(([key, value]) => ({
+          key,
+          value,
+          type: typeof value
+        })) : []
       });
       
       setSourceFile(sourceFileInfo);
@@ -61,6 +66,17 @@ export const usePortfolioData = (selectedAccount) => {
       }
 
       // Validate file reference
+      DEBUG && console.log('usePortfolioData - Validating file reference:', {
+        sourceFile: portfolio.sourceFile,
+        sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : [],
+        validationResult: isValidFileReference(portfolio.sourceFile),
+        fieldTypes: portfolio.sourceFile ? Object.entries(portfolio.sourceFile).map(([key, value]) => ({
+          key,
+          value,
+          type: typeof value
+        })) : []
+      });
+
       if (portfolio.sourceFile && !isValidFileReference(portfolio.sourceFile)) {
         console.warn('Invalid file reference in portfolio:', {
           sourceFile: portfolio.sourceFile,
@@ -81,10 +97,15 @@ export const usePortfolioData = (selectedAccount) => {
         uploadDate: portfolio.sourceFile.uploadDate || new Date().toISOString()
       } : null;
 
-      DEBUG && console.log('Setting source file in state:', {
+      DEBUG && console.log('usePortfolioData - Setting final source file:', {
         newSourceFile,
         hasNewSourceFile: !!newSourceFile,
         newSourceFileKeys: newSourceFile ? Object.keys(newSourceFile) : [],
+        fieldTypes: newSourceFile ? Object.entries(newSourceFile).map(([key, value]) => ({
+          key,
+          value,
+          type: typeof value
+        })) : []
       });
 
       setSourceFile(newSourceFile);

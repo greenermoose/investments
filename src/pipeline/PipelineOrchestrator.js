@@ -8,7 +8,7 @@ import { identifyAndClassifyFile } from '../utils/fileProcessing';
 import { parsePortfolioCSV } from '../utils/parseSnapshot';
 import { parseTransactionJSON } from '../utils/parseTransactions';
 
-const DEBUG = true;
+const DEBUG = false;
 
 /**
  * Orchestrates the file processing pipeline

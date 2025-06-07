@@ -13,6 +13,8 @@ import { TransactionMetadataRepository } from '../repositories/TransactionMetada
 import { debugLog } from '../utils/debugConfig';
 import { createFileReference, migrateFileReference, isValidFileReference } from '../types/FileReference';
 
+const DEBUG = true;
+
 class PortfolioService {
   constructor() {
     this.portfolioRepo = new PortfolioRepository();
@@ -53,7 +55,7 @@ class PortfolioService {
     // Create file reference from transaction metadata
     let fileReference = null;
     if (transactionMetadata?.fileId && transactionMetadata?.fileHash) {
-      console.log('Creating file reference from metadata:', {
+      DEBUG && console.log('Creating file reference from metadata:', {
         fileId: transactionMetadata.fileId,
         fileHash: transactionMetadata.fileHash,
         fileName: transactionMetadata.fileName,
@@ -67,12 +69,12 @@ class PortfolioService {
         uploadDate: transactionMetadata.uploadDate
       });
       
-      console.log('Created file reference:', {
+      DEBUG && console.log('Created file reference:', {
         fileReference,
         isValid: isValidFileReference(fileReference)
       });
     } else {
-      console.log('No file reference data in metadata:', {
+      DEBUG && console.log('No file reference data in metadata:', {
         hasFileId: !!transactionMetadata?.fileId,
         hasFileHash: !!transactionMetadata?.fileHash,
         metadata: transactionMetadata
@@ -513,6 +515,58 @@ class PortfolioService {
       console.error('Error creating lots from snapshot:', error);
       throw error;
     }
+  }
+
+  async savePortfolioSnapshot(snapshot) {
+    DEBUG && console.log('PortfolioService.savePortfolioSnapshot - Full snapshot data:', snapshot);
+    
+    // Create file reference from metadata
+    const fileReference = this.createFileReferenceFromMetadata(snapshot);
+    DEBUG && console.log('PortfolioService - Created file reference:', fileReference);
+
+    // Create portfolio object
+    const portfolio = {
+      accountName: snapshot.accountName,
+      date: snapshot.date,
+      data: snapshot.data,
+      sourceFile: fileReference,
+      metadata: snapshot.metadata || {}
+    };
+    DEBUG && console.log('PortfolioService - Created portfolio object:', {
+      hasSourceFile: !!portfolio.sourceFile,
+      sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : [],
+      accountName: portfolio.accountName,
+      date: portfolio.date
+    });
+
+    // Save portfolio
+    const portfolioId = await this.portfolioRepo.savePortfolio(portfolio);
+    DEBUG && console.log('PortfolioService - Saved portfolio with ID:', portfolioId);
+    
+    return portfolioId;
+  }
+
+  createFileReferenceFromMetadata(metadata) {
+    DEBUG && console.log('PortfolioService - Creating file reference from metadata:', {
+      fileId: metadata.fileId,
+      fileHash: metadata.fileHash,
+      fileName: metadata.fileName,
+      uploadDate: metadata.uploadDate
+    });
+    
+    const fileReference = {
+      id: metadata.fileId,
+      hash: metadata.fileHash,
+      name: metadata.fileName,
+      uploadDate: metadata.uploadDate || new Date()
+    };
+    
+    DEBUG && console.log('PortfolioService - Created file reference:', {
+      fileReference,
+      isValid: this.isValidFileReference(fileReference)
+    });
+    
+    return fileReference;
   }
 }
 

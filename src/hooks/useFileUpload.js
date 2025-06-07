@@ -20,6 +20,8 @@ import { useDialog } from './useDialog';
 import { PipelineOrchestrator } from '../pipeline/PipelineOrchestrator';
 import { debugLog } from '../utils/debugConfig';
 
+const DEBUG = true;
+
 /**
  * File type definitions with validation rules
  */
@@ -66,7 +68,12 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
   const pipeline = new PipelineOrchestrator();
 
   const handleFileUpload = async (file) => {
-    // console.log('useFileUpload: handleFileUpload starting...')
+    DEBUG && console.log('useFileUpload - Starting file upload:', {
+      fileName: file.name,
+      fileSize: file.size,
+      fileType: file.type
+    });
+    
     debugLog('fileUpload', 'start', 'Starting file upload', { filename: file.name });
     setIsUploading(true);
     setUploadError(null);
@@ -89,10 +96,13 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
 
       // Load the portfolio data
       if (result.data && result.accountName) {
-        debugLog('fileUpload', 'load', 'Loading portfolio data', {
+        console.log('useFileUpload - Full upload result:', {
+          result,
+          hasSourceFile: !!result.sourceFile,
+          sourceFileKeys: result.sourceFile ? Object.keys(result.sourceFile) : [],
+          dataLength: result.data.length,
           accountName: result.accountName,
-          date: result.date,
-          dataLength: result.data.length
+          date: result.date
         });
 
         if (typeof callbacks.loadPortfolio === 'function') {
@@ -100,15 +110,16 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
             result.data,
             result.accountName,
             result.date || new Date(),
-            result.accountTotal
+            result.accountTotal,
+            result.sourceFile  // Make sure we're passing the sourceFile
           );
-          debugLog('fileUpload', 'load', 'Portfolio data loaded successfully');
+          console.log('useFileUpload - Portfolio data loaded successfully');
         } else {
-          debugLog('fileUpload', 'error', 'loadPortfolio callback is not a function');
+          console.error('useFileUpload - loadPortfolio callback is not a function');
           throw new Error('loadPortfolio is not a function');
         }
       } else {
-        debugLog('fileUpload', 'warn', 'Missing data for portfolio load', {
+        console.warn('useFileUpload - Missing data for portfolio load', {
           hasData: !!result.data,
           hasAccountName: !!result.accountName
         });

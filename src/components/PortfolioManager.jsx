@@ -11,6 +11,8 @@ import { X, FileText, Database } from 'lucide-react';
 import portfolioService from '../services/PortfolioService';
 import { debugLog, getDebugConfig } from '../utils/debugConfig';
 
+const DEBUG = true;
+
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
 import PortfolioDisplay from './PortfolioDisplay';
@@ -79,6 +81,15 @@ const PortfolioManager = () => {
     transactionData
   } = acquisition;
 
+  // Add effect to track portfolio state changes
+  useEffect(() => {
+    console.log('PortfolioManager - Portfolio context state:', {
+      sourceFile: portfolio.sourceFile,
+      isDataLoaded: portfolio.isDataLoaded,
+      portfolioDate: portfolio.portfolioDate
+    });
+  }, [portfolio.sourceFile, portfolio.isDataLoaded, portfolio.portfolioDate]);
+
   // Create a tab structure that changes based on data state
   const getAvailableTabs = () => {
     if (!isDataLoaded) {
@@ -99,7 +110,7 @@ const PortfolioManager = () => {
 
   // Handle file upload modals
   const handleCsvUpload = () => {
-    debugLog('ui', 'upload', 'CSV upload requested');
+    console.log('PortfolioManager - CSV upload initiated');
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = '.csv';
@@ -122,7 +133,7 @@ const PortfolioManager = () => {
   };
 
   const handleJsonUpload = () => {
-    debugLog('ui', 'upload', 'JSON upload requested');
+    console.log('PortfolioManager - JSON upload initiated');
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = '.json';

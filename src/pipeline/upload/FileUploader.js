@@ -1,7 +1,7 @@
 import { FILE_TYPES } from './constants';
 import { debugLog } from '../../utils/debugConfig';
 
-const DEBUG = true;
+const DEBUG = false;
 
 /**
  * Handles the initial file upload stage

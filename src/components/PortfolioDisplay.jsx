@@ -11,6 +11,8 @@ import { usePortfolio } from '../hooks/usePortfolio';
 import { debugLog } from '../utils/debugConfig';
 import { isValidFileReference } from '../types/FileReference';
 
+const DEBUG = true;
+
 const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, sourceFile, currentAccount, onSymbolClick }) => {
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', 'positions', or 'fileDetails'
   const [sortConfig, setSortConfig] = useState({ key: 'Symbol', direction: 'ascending' });
@@ -359,6 +361,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
   };
 
   const renderFileDetailsContent = () => {
+    DEBUG && console.log('PortfolioDisplay - sourceFile state:', sourceFile);
     if (!sourceFile) {
       return (
         <div className="card">

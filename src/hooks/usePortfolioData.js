@@ -191,12 +191,21 @@ export const usePortfolioData = (selectedAccount) => {
       dataLength: data?.length,
       hasSourceFileInfo: !!sourceFileInfo,
       sourceFileInfo,
-      sourceFileInfoKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : []
+      accountTotal
     });
 
     try {
-      setIsLoading(true);
-      setError(null);
+      setLoadingState(true);
+      
+      // Set source file in state
+      console.log('Setting source file in state:', {
+        newSourceFile: sourceFileInfo,
+        hasNewSourceFile: !!sourceFileInfo,
+        newSourceFileKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : [],
+        isValid: isValidFileReference(sourceFileInfo)
+      });
+      
+      setSourceFile(sourceFileInfo);
       
       // Instead of calling getPortfolio, we'll use the data directly
       // since it's already been processed by the pipeline
@@ -243,7 +252,6 @@ export const usePortfolioData = (selectedAccount) => {
       setPortfolioData(data);
       setPortfolioDate(date);
       setCurrentAccount(accountName);
-      setSourceFile(newSourceFile);
       setIsDataLoaded(true);
       setIsLoading(false);
     } catch (err) {

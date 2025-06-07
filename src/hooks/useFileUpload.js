@@ -74,20 +74,20 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
       fileType: file.type
     });
     
-    debugLog('fileUpload', 'start', 'Starting file upload', { filename: file.name });
+    DEBUG && debugLog('fileUpload', 'start', 'Starting file upload', { filename: file.name });
     setIsUploading(true);
     setUploadError(null);
 
     try {
-      debugLog('fileUpload', 'process', 'Processing file through pipeline');
+      DEBUG && debugLog('fileUpload', 'process', 'Processing file through pipeline');
       const result = await pipeline.processFile(file);
       
       if (!result.success) {
-        debugLog('fileUpload', 'error', 'File processing failed', { error: result.error });
+        DEBUG && debugLog('fileUpload', 'error', 'File processing failed', { error: result.error });
         throw new Error(result.error);
       }
 
-      debugLog('fileUpload', 'success', 'File processed successfully', {
+      DEBUG && debugLog('fileUpload', 'success', 'File processed successfully', {
         hasData: !!result.data,
         accountName: result.accountName,
         date: result.date,
@@ -96,7 +96,7 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
 
       // Load the portfolio data
       if (result.data && result.accountName) {
-        console.log('useFileUpload - Full upload result:', {
+        DEBUG && console.log('useFileUpload - Full upload result:', {
           result,
           hasSourceFile: !!result.sourceFile,
           sourceFileKeys: result.sourceFile ? Object.keys(result.sourceFile) : [],
@@ -113,9 +113,9 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
             result.accountTotal,
             result.sourceFile  // Make sure we're passing the sourceFile
           );
-          console.log('useFileUpload - Portfolio data loaded successfully');
+          DEBUG && console.log('useFileUpload - Portfolio data loaded successfully');
         } else {
-          console.error('useFileUpload - loadPortfolio callback is not a function');
+          DEBUG && console.error('useFileUpload - loadPortfolio callback is not a function');
           throw new Error('loadPortfolio is not a function');
         }
       } else {
@@ -138,9 +138,18 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
         callbacks.onNavigate('portfolio');
       }
 
+      const handleUploadComplete = async (uploadResult) => {
+        DEBUG && console.log('useFileUpload - Upload complete with metadata:', {
+          fileName: uploadResult.fileName,
+          fileId: uploadResult.fileId,
+          fileHash: uploadResult.fileHash,
+          uploadDate: uploadResult.uploadDate
+        });
+      };
+
       return result;
     } catch (error) {
-      debugLog('fileUpload', 'error', 'File upload failed', {
+      DEBUG && debugLog('fileUpload', 'error', 'File upload failed', {
         error: error.message,
         stack: error.stack
       });
@@ -160,7 +169,7 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
       };
     } finally {
       setIsUploading(false);
-      debugLog('fileUpload', 'end', 'File upload process completed');
+      DEBUG && debugLog('fileUpload', 'end', 'File upload process completed');
     }
   };
 

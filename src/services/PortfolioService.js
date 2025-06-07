@@ -39,7 +39,7 @@ class PortfolioService {
    * @returns {Promise<string>} Portfolio ID
    */
   async savePortfolioSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
-    console.log('PortfolioService.savePortfolioSnapshot called with:', {
+    DEBUG && console.log('PortfolioService.savePortfolioSnapshot called with:', {
       accountName,
       date,
       positionsCount: portfolioData?.length,
@@ -90,7 +90,7 @@ class PortfolioService {
       uploadDate: undefined
     } : null;
 
-    console.log('Creating portfolio object with:', {
+    DEBUG && console.log('Creating portfolio object with:', {
       hasFileReference: !!fileReference,
       hasTransactionMetadata: !!newTransactionMetadata,
       metadataKeys: newTransactionMetadata ? Object.keys(newTransactionMetadata) : []
@@ -105,13 +105,13 @@ class PortfolioService {
       sourceFile: fileReference
     };
 
-    console.log('Saving portfolio with sourceFile:', {
+    DEBUG && console.log('Saving portfolio with sourceFile:', {
       hasSourceFile: !!portfolio.sourceFile,
       sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : []
     });
 
     const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
-    console.log('Portfolio saved with ID:', portfolioId);
+    DEBUG && console.log('Portfolio saved with ID:', portfolioId);
     return portfolioId;
   }
 
@@ -564,11 +564,12 @@ class PortfolioService {
   }
 
   createFileReferenceFromMetadata(metadata) {
-    DEBUG && console.log('PortfolioService - Creating file reference from metadata:', {
-      fileId: metadata.fileId,
-      fileHash: metadata.fileHash,
-      fileName: metadata.fileName,
-      uploadDate: metadata.uploadDate
+    console.log('PortfolioService - Creating file reference with raw metadata:', metadata);
+    console.log('PortfolioService - Metadata validation:', {
+      hasFileId: !!metadata.fileId,
+      hasFileHash: !!metadata.fileHash,
+      hasFileName: !!metadata.fileName,
+      hasUploadDate: !!metadata.uploadDate
     });
     
     const fileReference = {
@@ -578,9 +579,9 @@ class PortfolioService {
       uploadDate: metadata.uploadDate || new Date()
     };
     
-    DEBUG && console.log('PortfolioService - Created file reference:', {
+    console.log('PortfolioService - File reference creation result:', {
       fileReference,
-      isValid: isValidFileReference(fileReference)
+      isValid: !!(fileReference.id && fileReference.hash && fileReference.name)
     });
     
     return fileReference;

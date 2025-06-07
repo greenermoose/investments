@@ -5,6 +5,8 @@ import { DB_NAME, DB_VERSION, STORE_NAME_FILES, initializeDB } from './databaseU
 import { debugLog } from './debugConfig';
 import { openDB } from 'idb';
 
+const DEBUG = true;
+
 /**
  * File Types 
  */
@@ -95,15 +97,16 @@ export const findFileByName = async (filename) => {
  * @returns {Promise<Object>} Save result with file ID and duplicate info
  */
 export const saveUploadedFile = async (file, content, accountName, fileType, fileDate = null) => {
-  debugLog('file', 'storage', 'Starting file save', {
-    filename: file.name || file.filename,
-    accountName,
+  console.log('fileStorage: saveUploadedFile starting...');
+  
+  console.log('fileStorage - File reference creation:', {
+    fileName: file.name,
+    fileSize: file.size,
     fileType,
-    fileDate: fileDate?.toISOString(),
-    contentLength: content.length,
-    firstFewLines: content.split('\n').slice(0, 3).join('\n')
+    hasContent: !!content,
+    accountName,
+    fileDate
   });
-  console.log('fileStorage: saveUploadedFile starting...')
 
   const db = await initializeFileStorage();
 

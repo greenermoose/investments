@@ -4,6 +4,8 @@ import { PortfolioRepository } from '../../repositories/PortfolioRepository';
 import { FileRepository } from '../../repositories/FileRepository';
 import { debugLog } from '../../utils/debugConfig';
 
+const DEBUG = true;
+
 /**
  * Processes parsed portfolio data and saves it to the database
  */
@@ -34,6 +36,15 @@ export class PortfolioProcessor {
       hasFileId: !!fileId,
       fileHashType: typeof fileHash,
       hasFileHash: !!fileHash
+    });
+
+    console.log('PortfolioProcessor - File reference processing:', {
+      fileId,
+      fileHash,
+      hasFileId: !!fileId,
+      hasFileHash: !!fileHash,
+      fileIdType: typeof fileId,
+      fileHashType: typeof fileHash
     });
 
     if (!parsedData.success) {

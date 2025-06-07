@@ -377,7 +377,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
   };
 
   const renderFileDetailsContent = () => {
-    DEBUG && console.log('PortfolioDisplay - Rendering file details content:', {
+    console.log('PortfolioDisplay - Rendering file details content:', {
       hasSourceFile: !!sourceFile,
       sourceFileDetails: sourceFile ? {
         name: sourceFile.name,
@@ -385,11 +385,24 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
         size: sourceFile.size,
         lastModified: sourceFile.lastModified
       } : null,
+      activeView: 'fileDetails'
+    });
+
+    console.log('PortfolioDisplay - File details state:', {
+      hasSourceFile: !!sourceFile,
+      sourceFileDetails: sourceFile ? {
+        name: sourceFile.name,
+        type: sourceFile.type,
+        size: sourceFile.size,
+        lastModified: sourceFile.lastModified
+      } : null,
+      sourceFileType: typeof sourceFile,
+      sourceFileKeys: sourceFile ? Object.keys(sourceFile) : [],
       activeView
     });
 
     if (!sourceFile) {
-      DEBUG && console.log('PortfolioDisplay - No source file available, showing empty state');
+      console.log('PortfolioDisplay - No source file available, showing empty state');
       return (
         <div className="card">
           <h2 className="card-title">No File Details Available</h2>
@@ -398,7 +411,7 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
       );
     }
 
-    DEBUG && console.log('PortfolioDisplay - Rendering file details with source file:', {
+    console.log('PortfolioDisplay - Rendering file details with source file:', {
       fileName: sourceFile.name,
       fileType: sourceFile.type,
       fileSize: sourceFile.size,

@@ -52,6 +52,17 @@ class PortfolioService {
       });
 
       const fileId = file ? `file_${Date.now()}_${nanoid(12)}` : null;
+      
+      DEBUG && console.log('PortfolioService - Attempting to calculate file hash:', {
+        file: file ? {
+          name: file.name,
+          size: file.size,
+          type: file.type,
+          hasContent: !!file.content
+        } : null,
+        hasCalculateFileHash: typeof this.calculateFileHash === 'function'
+      });
+      
       const fileHash = file ? await this.calculateFileHash(file) : null;
       
       DEBUG && console.log('PortfolioService - Creating file reference:', {

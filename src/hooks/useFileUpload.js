@@ -84,6 +84,23 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
       DEBUG && debugLog('fileUpload', 'process', 'Processing file through pipeline');
       const result = await pipelineInstance.processFile(file);
       
+      console.log('useFileUpload - File upload result details:', {
+        result,
+        hasSourceFile: result?.hasSourceFile,
+        sourceFileKeys: result?.sourceFileKeys,
+        dataLength: result?.dataLength,
+        accountName: result?.accountName,
+        fileDetails: result?.fileDetails
+      });
+
+      console.log('useFileUpload - Full upload result:', {
+        result,
+        hasSourceFile: result?.hasSourceFile,
+        sourceFileKeys: result?.sourceFileKeys || [],
+        dataLength: result?.dataLength,
+        accountName: result?.accountName
+      });
+
       if (!result.success) {
         DEBUG && debugLog('fileUpload', 'error', 'File processing failed', { error: result.error });
         throw new Error(result.error);

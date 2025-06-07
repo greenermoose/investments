@@ -8,7 +8,6 @@ import AssetAllocationChart from './performance/AssetAllocationChart';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 import { usePortfolio } from '../context/PortfolioContext';
-import { debugLog } from '../utils/debugConfig';
 import { isValidFileReference } from '../types/FileReference';
 
 const DEBUG = true;
@@ -17,6 +16,23 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
   const [activeView, setActiveView] = useState('overview'); // 'overview', 'topHoldings', 'positions', or 'fileDetails'
   const [sortConfig, setSortConfig] = useState({ key: 'Symbol', direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
+
+  // Debug logging for component props and state
+  React.useEffect(() => {
+    DEBUG && console.log('PortfolioDisplay - Props updated:', {
+      hasPortfolioData: !!portfolioData,
+      hasPortfolioStats: !!portfolioStats,
+      portfolioDate,
+      hasSourceFile: !!sourceFile,
+      sourceFileDetails: sourceFile ? {
+        name: sourceFile.name,
+        type: sourceFile.type,
+        size: sourceFile.size,
+        lastModified: sourceFile.lastModified
+      } : null,
+      currentAccount
+    });
+  }, [portfolioData, portfolioStats, portfolioDate, sourceFile, currentAccount]);
 
   // Chart colors
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d', '#ffc658', '#8dd1e1'];
@@ -361,8 +377,19 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
   };
 
   const renderFileDetailsContent = () => {
-    DEBUG && console.log('PortfolioDisplay - sourceFile state:', sourceFile);
+    DEBUG && console.log('PortfolioDisplay - Rendering file details content:', {
+      hasSourceFile: !!sourceFile,
+      sourceFileDetails: sourceFile ? {
+        name: sourceFile.name,
+        type: sourceFile.type,
+        size: sourceFile.size,
+        lastModified: sourceFile.lastModified
+      } : null,
+      activeView
+    });
+
     if (!sourceFile) {
+      DEBUG && console.log('PortfolioDisplay - No source file available, showing empty state');
       return (
         <div className="card">
           <h2 className="card-title">No File Details Available</h2>
@@ -370,6 +397,13 @@ const PortfolioDisplay = ({ portfolioData, portfolioStats, portfolioDate, source
         </div>
       );
     }
+
+    DEBUG && console.log('PortfolioDisplay - Rendering file details with source file:', {
+      fileName: sourceFile.name,
+      fileType: sourceFile.type,
+      fileSize: sourceFile.size,
+      lastModified: sourceFile.lastModified
+    });
 
     return (
       <div className="card">

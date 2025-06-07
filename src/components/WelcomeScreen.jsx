@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { FileText } from 'lucide-react';
 import PortfolioFooter from './PortfolioFooter';
 import { useFileUpload } from '../hooks/useFileUpload';
@@ -11,28 +11,36 @@ const WelcomeScreen = ({
 }) => {
   const portfolio = usePortfolio();
   
+  const loadPortfolioCallback = useCallback(async (data, accountName, date, accountTotal) => {
+    await portfolio.loadPortfolio(data, accountName, date, accountTotal);
+  }, [portfolio.loadPortfolio]);
+
   const callbacks = useMemo(() => ({
     setLoadingState: portfolio.setLoadingState,
     resetError: portfolio.resetError,
-    loadPortfolio: async (data, accountName, date, accountTotal) => {
-      await portfolio.loadPortfolio(data, accountName, date, accountTotal);
-    },
+    loadPortfolio: loadPortfolioCallback,
     setError: portfolio.setError,
     onModalClose: () => {},
     onNavigate
-  }), [portfolio, onNavigate]);
+  }), [
+    portfolio.setLoadingState,
+    portfolio.resetError,
+    loadPortfolioCallback,
+    portfolio.setError,
+    onNavigate
+  ]);
 
   const { handleFileUpload, isUploading, uploadError } = useFileUpload(
     portfolio.portfolioData,
     callbacks
   );
 
-  const handleFileSelect = (e) => {
+  const handleFileSelect = useCallback((e) => {
     const file = e.target.files[0];
     if (file) {
       handleFileUpload(file);
     }
-  };
+  }, [handleFileUpload]);
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -75,4 +83,4 @@ const WelcomeScreen = ({
   );
 };
 
-export default WelcomeScreen; 
+export default React.memo(WelcomeScreen); 

@@ -1,3 +1,7 @@
+### 0.4.116
+
+- more memoization
+
 ### 0.4.115
 
 - tring to memoize things to reduce number of times being called

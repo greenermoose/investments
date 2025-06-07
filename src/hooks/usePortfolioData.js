@@ -24,6 +24,82 @@ export const usePortfolioData = (selectedAccount) => {
   const [currentAccount, setCurrentAccount] = useState('');
   const [sourceFile, setSourceFile] = useState(null);
 
+  const setLoadingState = useCallback((loading) => {
+    setIsLoading(loading);
+  }, []);
+
+  const resetError = useCallback(() => {
+    setError(null);
+  }, []);
+
+  const loadPortfolio = useCallback(async (data, accountName, date, accountTotal, sourceFileInfo) => {
+    try {
+      setIsLoading(true);
+      
+      // Set source file in state
+      DEBUG && console.log('Setting source file in state:', {
+        newSourceFile: sourceFileInfo,
+        hasNewSourceFile: !!sourceFileInfo,
+        newSourceFileKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : [],
+        isValid: isValidFileReference(sourceFileInfo)
+      });
+      
+      setSourceFile(sourceFileInfo);
+      
+      // Instead of calling getPortfolio, we'll use the data directly
+      // since it's already been processed by the pipeline
+      const portfolio = {
+        data,
+        date,
+        accountName,
+        accountTotal,
+        sourceFile: sourceFileInfo
+      };
+      
+      if (!portfolio) {
+        throw new Error('Portfolio not found');
+      }
+
+      // Validate file reference
+      if (portfolio.sourceFile && !isValidFileReference(portfolio.sourceFile)) {
+        console.warn('Invalid file reference in portfolio:', {
+          sourceFile: portfolio.sourceFile,
+          sourceFileKeys: Object.keys(portfolio.sourceFile),
+          validationErrors: Object.entries(portfolio.sourceFile).map(([key, value]) => ({
+            key,
+            value,
+            type: typeof value
+          }))
+        });
+        portfolio.sourceFile = null;
+      }
+
+      const newSourceFile = portfolio.sourceFile ? {
+        fileId: portfolio.sourceFile.fileId,
+        fileHash: portfolio.sourceFile.fileHash,
+        fileName: portfolio.sourceFile.fileName || null,
+        uploadDate: portfolio.sourceFile.uploadDate || new Date().toISOString()
+      } : null;
+
+      DEBUG && console.log('Setting source file in state:', {
+        newSourceFile,
+        hasNewSourceFile: !!newSourceFile,
+        newSourceFileKeys: newSourceFile ? Object.keys(newSourceFile) : [],
+      });
+
+      setSourceFile(newSourceFile);
+      setPortfolioData(portfolio.data);
+      setCurrentAccount(accountName);
+      setPortfolioDate(date);
+      setIsDataLoaded(true);
+    } catch (err) {
+      console.error('Error loading portfolio:', err);
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
   // Memoize the context value to prevent unnecessary re-renders
   const contextValue = useMemo(() => ({
     portfolioData,
@@ -34,75 +110,9 @@ export const usePortfolioData = (selectedAccount) => {
     isDataLoaded,
     currentAccount,
     sourceFile,
-    setLoadingState: (loading) => setIsLoading(loading),
-    resetError: () => setError(null),
-    loadPortfolio: async (data, accountName, date, accountTotal, sourceFileInfo) => {
-      try {
-        setIsLoading(true);
-        
-        // Set source file in state
-        DEBUG && console.log('Setting source file in state:', {
-          newSourceFile: sourceFileInfo,
-          hasNewSourceFile: !!sourceFileInfo,
-          newSourceFileKeys: sourceFileInfo ? Object.keys(sourceFileInfo) : [],
-          isValid: isValidFileReference(sourceFileInfo)
-        });
-        
-        setSourceFile(sourceFileInfo);
-        
-        // Instead of calling getPortfolio, we'll use the data directly
-        // since it's already been processed by the pipeline
-        const portfolio = {
-          data,
-          date,
-          accountName,
-          accountTotal,
-          sourceFile: sourceFileInfo
-        };
-        
-        if (!portfolio) {
-          throw new Error('Portfolio not found');
-        }
-
-        // Validate file reference
-        if (portfolio.sourceFile && !isValidFileReference(portfolio.sourceFile)) {
-          console.warn('Invalid file reference in portfolio:', {
-            sourceFile: portfolio.sourceFile,
-            sourceFileKeys: Object.keys(portfolio.sourceFile),
-            validationErrors: Object.entries(portfolio.sourceFile).map(([key, value]) => ({
-              key,
-              value,
-              type: typeof value
-            }))
-          });
-          portfolio.sourceFile = null;
-        }
-
-        const newSourceFile = portfolio.sourceFile ? {
-          fileId: portfolio.sourceFile.fileId,
-          fileHash: portfolio.sourceFile.fileHash,
-          fileName: portfolio.sourceFile.fileName || null,
-          uploadDate: portfolio.sourceFile.uploadDate || new Date().toISOString()
-        } : null;
-
-        DEBUG && console.log('Setting source file in state:', {
-          newSourceFile,
-          hasNewSourceFile: !!newSourceFile,
-          newSourceFileKeys: newSourceFile ? Object.keys(newSourceFile) : [],
-        });
-
-        setSourceFile(newSourceFile);
-        setPortfolioData(portfolio.data);
-        setCurrentAccount(accountName);
-        setPortfolioDate(date);
-        setIsDataLoaded(true);
-      } catch (err) {
-        console.error('Error loading portfolio:', err);
-        setError(err.message);
-      } finally {
-        setIsLoading(false);
-      }
-    }
+    setLoadingState,
+    resetError,
+    loadPortfolio
   }), [
     portfolioData,
     isLoading,
@@ -111,7 +121,10 @@ export const usePortfolioData = (selectedAccount) => {
     portfolioDate,
     isDataLoaded,
     currentAccount,
-    sourceFile
+    sourceFile,
+    setLoadingState,
+    resetError,
+    loadPortfolio
   ]);
 
   // Effect to load portfolio when selectedAccount changes
@@ -124,7 +137,7 @@ export const usePortfolioData = (selectedAccount) => {
     }
   }, [selectedAccount]);
 
-  const loadInitialPortfolio = async () => {
+  const loadInitialPortfolio = useCallback(async () => {
     DEBUG && debugLog('ui', 'load', 'Loading initial portfolio');
     try {
       setIsLoading(true);
@@ -196,9 +209,9 @@ export const usePortfolioData = (selectedAccount) => {
       setIsDataLoaded(false);
       setIsLoading(false);
     }
-  };
+  }, [loadPortfolio]);
 
-  const loadAccountPortfolio = async (accountName) => {
+  const loadAccountPortfolio = useCallback(async (accountName) => {
     DEBUG && debugLog('ui', 'load', 'Loading account portfolio', { accountName });
     
     try {
@@ -240,7 +253,7 @@ export const usePortfolioData = (selectedAccount) => {
       setError(`Failed to load data for ${accountName}`);
       setIsLoading(false);
     }
-  };
+  }, [loadPortfolio]);
 
   // Update portfolio stats when data changes
   useEffect(() => {
@@ -255,15 +268,6 @@ export const usePortfolioData = (selectedAccount) => {
       setPortfolioStats(initialPortfolioStats);
     }
   }, [portfolioData]);
-
-  const refreshData = async () => {
-    DEBUG && debugLog('ui', 'refresh', 'Refreshing portfolio data', { currentAccount });
-    if (currentAccount) {
-      await loadAccountPortfolio(currentAccount);
-    } else {
-      await loadInitialPortfolio();
-    }
-  };
 
   return contextValue;
 };

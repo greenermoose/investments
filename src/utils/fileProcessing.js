@@ -13,6 +13,8 @@ This should proceed in three stages:
 import { debugLog } from './debugConfig';
 import { getAccountNameFromFilename, parseDateFromFilename } from './fileMetadata';
 
+const DEBUG = false;
+
 /**
  * File Type Constants
  */
@@ -36,7 +38,7 @@ export const FileClassifications = {
  * @returns {string} File classification
  */
 const classifyFile = (content, fileType) => {
-  debugLog('file', 'classification', 'Classifying file', {
+  DEBUG && debugLog('file', 'classification', 'Classifying file', {
     fileType,
     contentLength: content.length
   });
@@ -83,8 +85,8 @@ const classifyFile = (content, fileType) => {
  * @returns {Object} File classification result
  */
 export const identifyAndClassifyFile = (content, filename, fileType) => {
-  console.log('fileProcessing: identifyAndClassifyFile starting...')
-  debugLog('file', 'processing', 'Starting file processing', {
+  DEBUG && console.log('fileProcessing: identifyAndClassifyFile starting...')
+  DEBUG && debugLog('file', 'processing', 'Starting file processing', {
     filename,
     fileType,
     contentLength: content.length,
@@ -99,7 +101,7 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
     const accountName = getAccountNameFromFilename(filename);
     const date = parseDateFromFilename(filename);
     
-    debugLog('file', 'processing', 'File classified and metadata extracted', { 
+    DEBUG && debugLog('file', 'processing', 'File classified and metadata extracted', { 
       filename,
       classification,
       fileType,
@@ -116,7 +118,7 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
       date
     };
   } catch (error) {
-    debugLog('file', 'error', 'File identification failed', {
+    DEBUG && debugLog('file', 'error', 'File identification failed', {
       filename,
       error: error.message,
       stack: error.stack
@@ -134,7 +136,7 @@ export const identifyAndClassifyFile = (content, filename, fileType) => {
  * @returns {Object} Validation result with success status and optional error message
  */
 export const validateFile = (file) => {
-  debugLog('pipeline', 'validation', 'Validating file', {
+  DEBUG && debugLog('pipeline', 'validation', 'Validating file', {
     name: file.name,
     type: file.type,
     size: file.size
@@ -184,7 +186,7 @@ export const validateFile = (file) => {
       throw new Error('Filename contains invalid characters');
     }
 
-    debugLog('pipeline', 'validation', 'File validation successful', {
+    DEBUG && debugLog('pipeline', 'validation', 'File validation successful', {
       name: file.name,
       type: file.type,
       size: file.size
@@ -195,7 +197,7 @@ export const validateFile = (file) => {
       fileType: isJSON ? FileTypes.JSON : FileTypes.CSV
     };
   } catch (error) {
-    debugLog('pipeline', 'error', 'File validation failed', {
+    DEBUG && debugLog('pipeline', 'error', 'File validation failed', {
       error: error.message,
       stack: error.stack
     });

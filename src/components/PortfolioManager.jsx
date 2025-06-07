@@ -11,7 +11,7 @@ import { X, FileText, Database } from 'lucide-react';
 import portfolioService from '../services/PortfolioService';
 import { debugLog, getDebugConfig } from '../utils/debugConfig';
 
-const DEBUG = true;
+const DEBUG = false;
 
 // Import our consolidated components
 import AccountManagement from './AccountManagement';
@@ -83,7 +83,7 @@ const PortfolioManager = () => {
 
   // Add effect to track portfolio state changes
   useEffect(() => {
-    console.log('PortfolioManager - Portfolio context state:', {
+    DEBUG && console.log('PortfolioManager.jsx - Portfolio context state:', {
       sourceFile: portfolio.sourceFile,
       isDataLoaded: portfolio.isDataLoaded,
       portfolioDate: portfolio.portfolioDate
@@ -103,14 +103,14 @@ const PortfolioManager = () => {
 
   // Handle account change
   const handleAccountChange = async (newAccount) => {
-    debugLog('ui', 'account', 'Account change requested', { newAccount });
+    DEBUG && debugLog('ui', 'account', 'Account change requested', { newAccount });
     setSelectedAccount(newAccount);
     await refreshData();
   };
 
   // Handle file upload modals
   const handleCsvUpload = () => {
-    console.log('PortfolioManager - CSV upload initiated');
+    DEBUG && console.log('PortfolioManager.jsx - CSV upload initiated');
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = '.csv';
@@ -133,7 +133,7 @@ const PortfolioManager = () => {
   };
 
   const handleJsonUpload = () => {
-    console.log('PortfolioManager - JSON upload initiated');
+    DEBUG && console.log('PortfolioManager - JSON upload initiated');
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = '.json';
@@ -218,7 +218,7 @@ const PortfolioManager = () => {
 
   // Handle acquisition modal submission
   const handleAcquisitionModalSubmit = (change, acquisitionDate, isTickerChange, oldSymbol, lotData) => {
-    debugLog('ui', 'acquisition', 'Acquisition modal submitted', {
+    DEBUG && debugLog('ui', 'acquisition', 'Acquisition modal submitted', {
       change,
       acquisitionDate,
       isTickerChange,
@@ -238,7 +238,7 @@ const PortfolioManager = () => {
 
   // Handle symbol click to show security details
   const handleSymbolClick = (symbol) => {
-    debugLog('symbol', 'Symbol clicked', { symbol });
+    DEBUG && debugLog('symbol', 'Symbol clicked', { symbol });
     setSelectedSymbol(symbol);
     // Set a custom tab for security details
     changeTab('security-detail');
@@ -246,14 +246,14 @@ const PortfolioManager = () => {
 
   // Handle returning from security detail view
   const handleBackFromSecurityDetail = () => {
-    debugLog('navigation', 'Returning from security detail');
+    DEBUG && debugLog('navigation', 'Returning from security detail');
     setSelectedSymbol(null);
     changeTab('portfolio');
   };
 
   // Handle snapshot selection
   const handleSnapshotSelect = async (snapshot) => {
-    debugLog('snapshot', 'Snapshot selected', { snapshotId: snapshot.id });
+    DEBUG && debugLog('snapshot', 'Snapshot selected', { snapshotId: snapshot.id });
     try {
       const snapshotData = await portfolioService.getPortfolioById(snapshot.id);
       if (snapshotData) {
@@ -276,7 +276,7 @@ const PortfolioManager = () => {
   };
 
   const handleSnapshotLoad = async (snapshotData) => {
-    debugLog('portfolio', 'ui', 'Loading snapshot data', {
+    DEBUG && debugLog('portfolio', 'ui', 'Loading snapshot data', {
       snapshotId: snapshotData.id,
       hasSourceFile: !!snapshotData.sourceFile,
       sourceFile: snapshotData.sourceFile
@@ -300,7 +300,7 @@ const PortfolioManager = () => {
 
   // Render tab content based on active tab
   const renderTabContent = () => {
-    debugLog('render', 'Rendering tab content', { activeTab });
+    DEBUG && debugLog('render', 'Rendering tab content', { activeTab });
     
     // Special case for security detail
     if (activeTab === 'security-detail' && selectedSymbol) {
@@ -372,7 +372,7 @@ const PortfolioManager = () => {
     );
   };
 
-  debugLog('render', 'Rendering main view', {
+  DEBUG && debugLog('render', 'Rendering main view', {
     isDataLoaded,
     isLoading,
     hasError: !!error,

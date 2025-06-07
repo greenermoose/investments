@@ -3,6 +3,8 @@
 
 import { debugLog } from './debugConfig';
 
+const DEBUG = false;
+
 /**
  * Parse portfolio data from CSV content
  * @param {string} content - Raw CSV content
@@ -12,7 +14,7 @@ export const parsePortfolioCSV = (content) => {
   // console.log('Starting CSV parsing with content length:', content.length);
   // console.log('First few lines:', content.split('\n').slice(0, 3).join('\n'));
 
-  debugLog('parseSnapshot', 'start', 'Starting CSV parsing', {
+  DEBUG && debugLog('parseSnapshot', 'start', 'Starting CSV parsing', {
     contentLength: content.length,
     firstFewLines: content.split('\n').slice(0, 3).join('\n')
   });
@@ -23,7 +25,7 @@ export const parsePortfolioCSV = (content) => {
     // console.log('Total lines after filtering:', lines.length);
     // console.log('First few lines:', lines.slice(0, 3));
 
-    debugLog('parseSnapshot', 'lines', 'Split content into lines', {
+    DEBUG && debugLog('parseSnapshot', 'lines', 'Split content into lines', {
       totalLines: lines.length,
       firstFewLines: lines.slice(0, 3)
     });
@@ -88,7 +90,7 @@ export const parsePortfolioCSV = (content) => {
           snapshotDate = new Date(dateStr);
         } catch (error) {
           console.error('Error parsing date/time:', error);
-          debugLog('parseSnapshot', 'error', 'Error parsing date/time', {
+          DEBUG && debugLog('parseSnapshot', 'error', 'Error parsing date/time', {
             error: error.message,
             headerLine,
             dateTimeMatch
@@ -96,7 +98,7 @@ export const parsePortfolioCSV = (content) => {
         }
       } else {
         console.warn('Could not parse date/time from header:', headerLine);
-        debugLog('parseSnapshot', 'warning', 'Could not parse date/time from header', {
+        DEBUG && debugLog('parseSnapshot', 'warning', 'Could not parse date/time from header', {
           headerLine
         });
       }
@@ -135,7 +137,7 @@ export const parsePortfolioCSV = (content) => {
       console.warn('No clear header row found, using first line as header');
     }
 
-    debugLog('parseSnapshot', 'headers', 'Found header row', {
+    DEBUG && debugLog('parseSnapshot', 'headers', 'Found header row', {
       headerRowIndex,
       headerLine: lines[headerRowIndex]
     });
@@ -160,7 +162,7 @@ export const parsePortfolioCSV = (content) => {
       if (lowerHeader.includes('type')) return 'Security Type';
       return header;
     });
-    console.log('Normalized headers:', normalizedHeaders);
+    DEBUG && console.log('Normalized headers:', normalizedHeaders);
 
     // Process data rows starting after the header row
     // console.log('Processing data rows starting from index:', headerRowIndex + 1);
@@ -174,7 +176,7 @@ export const parsePortfolioCSV = (content) => {
                !trimmed.includes('Total') &&
                !trimmed.includes('Grand Total');
         if (!isValid) {
-          console.log('Filtered out line:', trimmed);
+          DEBUG && console.log('Filtered out line:', trimmed);
         }
         return isValid;
       })
@@ -238,7 +240,7 @@ export const parsePortfolioCSV = (content) => {
       // console.warn('No valid positions found in the data');
     }
 
-    debugLog('parseSnapshot', 'complete', 'CSV parsing complete', {
+    DEBUG && debugLog('parseSnapshot', 'complete', 'CSV parsing complete', {
       totalPositions: positions.length,
       totalLines: lines.length,
       firstPosition: positions[0],
@@ -274,7 +276,7 @@ export const parsePortfolioCSV = (content) => {
     console.error('Content length:', content.length);
     console.error('First few lines:', content.split('\n').slice(0, 3).join('\n'));
 
-    debugLog('parseSnapshot', 'error', 'Error parsing CSV', {
+    DEBUG && debugLog('parseSnapshot', 'error', 'Error parsing CSV', {
       error: error.message,
       stack: error.stack,
       contentLength: content.length,

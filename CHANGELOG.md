@@ -1,3 +1,7 @@
+### 0.4.117
+
+- fix file details bug, pass 5
+
 ### 0.4.116
 
 - more memoization

@@ -31,87 +31,96 @@ class PortfolioService {
 
   /**
    * Save portfolio snapshot
-   * @param {Array} portfolioData - Portfolio positions
-   * @param {string} accountName - Account name
-   * @param {Date} date - Snapshot date
-   * @param {Object} accountTotal - Account totals
-   * @param {Object} transactionMetadata - Optional transaction metadata
+   * @param {Array|Object} portfolioData - Portfolio positions or full snapshot object
+   * @param {string} [accountName] - Account name (required if portfolioData is array)
+   * @param {Date|number} [date] - Snapshot date (required if portfolioData is array)
+   * @param {Object} [accountTotal] - Account totals (required if portfolioData is array)
+   * @param {Object} [transactionMetadata] - Optional transaction metadata
    * @returns {Promise<string>} Portfolio ID
    */
   async savePortfolioSnapshot(portfolioData, accountName, date, accountTotal, transactionMetadata = null) {
     DEBUG && console.log('PortfolioService.savePortfolioSnapshot called with:', {
+      isArray: Array.isArray(portfolioData),
       accountName,
       date,
-      positionsCount: portfolioData?.length,
+      positionsCount: Array.isArray(portfolioData) ? portfolioData.length : portfolioData.data?.length,
       hasTransactionMetadata: !!transactionMetadata,
-      metadataKeys: transactionMetadata ? Object.keys(transactionMetadata) : [],
-      fileId: transactionMetadata?.fileId,
-      fileHash: transactionMetadata?.fileHash
+      metadataKeys: transactionMetadata ? Object.keys(transactionMetadata) : []
     });
+
+    // Handle both array and object input
+    const snapshot = Array.isArray(portfolioData) ? {
+      data: portfolioData,
+      accountName,
+      date,
+      accountTotal,
+      ...transactionMetadata
+    } : portfolioData;
 
     // Ensure date is a proper timestamp
-    const timestamp = typeof date === 'number' ? date : new Date(date).getTime();
+    const timestamp = typeof snapshot.date === 'number' ? snapshot.date : new Date(snapshot.date).getTime();
     
-    // Create file reference from transaction metadata
-    let fileReference = null;
-    if (transactionMetadata?.fileId && transactionMetadata?.fileHash) {
-      DEBUG && console.log('Creating file reference from metadata:', {
-        fileId: transactionMetadata.fileId,
-        fileHash: transactionMetadata.fileHash,
-        fileName: transactionMetadata.fileName,
-        uploadDate: transactionMetadata.uploadDate
-      });
-      
-      fileReference = createFileReference({
-        fileId: transactionMetadata.fileId,
-        fileHash: transactionMetadata.fileHash,
-        fileName: transactionMetadata.fileName,
-        uploadDate: transactionMetadata.uploadDate
-      });
-      
-      DEBUG && console.log('Created file reference:', {
-        fileReference,
-        isValid: isValidFileReference(fileReference)
-      });
-    } else {
-      DEBUG && console.log('No file reference data in metadata:', {
-        hasFileId: !!transactionMetadata?.fileId,
-        hasFileHash: !!transactionMetadata?.fileHash,
-        metadata: transactionMetadata
-      });
-    }
-
-    // Create new transaction metadata without file reference fields
-    const newTransactionMetadata = transactionMetadata ? {
-      ...transactionMetadata,
-      fileId: undefined,
-      fileHash: undefined,
-      fileName: undefined,
-      uploadDate: undefined
-    } : null;
-
-    DEBUG && console.log('Creating portfolio object with:', {
-      hasFileReference: !!fileReference,
-      hasTransactionMetadata: !!newTransactionMetadata,
-      metadataKeys: newTransactionMetadata ? Object.keys(newTransactionMetadata) : []
-    });
-
-    const portfolio = {
-      account: accountName,
-      date: timestamp,
-      data: portfolioData,
-      accountTotal,
-      transactionMetadata: newTransactionMetadata,
-      sourceFile: fileReference
+    // Extract file metadata
+    const fileMetadata = {
+      fileId: snapshot.fileId || transactionMetadata?.fileId,
+      fileHash: snapshot.fileHash || transactionMetadata?.fileHash,
+      fileName: snapshot.fileName || transactionMetadata?.fileName,
+      uploadDate: snapshot.uploadDate || transactionMetadata?.uploadDate || new Date().toISOString()
     };
 
-    DEBUG && console.log('Saving portfolio with sourceFile:', {
-      hasSourceFile: !!portfolio.sourceFile,
-      sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : []
+    DEBUG && console.log('PortfolioService - Extracted file metadata:', fileMetadata);
+    
+    // Create file reference if we have required fields
+    const fileReference = fileMetadata.fileId && fileMetadata.fileHash ? 
+      createFileReference(fileMetadata) : null;
+
+    DEBUG && console.log('PortfolioService - Created file reference:', {
+      fileReference,
+      isValid: fileReference ? isValidFileReference(fileReference) : false
     });
 
+    // Create portfolio object
+    const portfolio = {
+      account: snapshot.accountName,
+      date: timestamp,
+      data: snapshot.data,
+      accountTotal: snapshot.accountTotal,
+      sourceFile: fileReference,
+      metadata: {
+        ...snapshot.metadata,
+        fileId: fileMetadata.fileId,
+        fileHash: fileMetadata.fileHash
+      }
+    };
+
+    DEBUG && console.log('PortfolioService - Created portfolio object:', {
+      hasSourceFile: !!portfolio.sourceFile,
+      sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : [],
+      accountName: portfolio.account,
+      date: portfolio.date,
+      hasData: !!portfolio.data,
+      dataType: typeof portfolio.data,
+      isArray: Array.isArray(portfolio.data),
+      dataLength: Array.isArray(portfolio.data) ? portfolio.data.length : 0
+    });
+
+    // Validate data structure
+    if (!portfolio.data || !Array.isArray(portfolio.data)) {
+      console.error('Invalid portfolio data structure:', {
+        data: portfolio.data,
+        dataType: typeof portfolio.data,
+        isArray: Array.isArray(portfolio.data)
+      });
+      return {
+        success: false,
+        error: 'Invalid portfolio data structure: data must be an array'
+      };
+    }
+
+    // Save portfolio
     const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
-    DEBUG && console.log('Portfolio saved with ID:', portfolioId);
+    DEBUG && console.log('PortfolioService - Saved portfolio with ID:', portfolioId);
+    
     return portfolioId;
   }
 
@@ -515,76 +524,6 @@ class PortfolioService {
       console.error('Error creating lots from snapshot:', error);
       throw error;
     }
-  }
-
-  async savePortfolioSnapshot(snapshot) {
-    DEBUG && console.log('PortfolioService.savePortfolioSnapshot - Full snapshot data:', snapshot);
-    
-    // Create file reference from metadata
-    const fileReference = this.createFileReferenceFromMetadata(snapshot);
-    DEBUG && console.log('PortfolioService - Created file reference:', fileReference);
-
-    // Create portfolio object
-    const portfolio = {
-      account: snapshot.accountName,
-      date: snapshot.date,
-      data: snapshot,  // The snapshot itself is the data array
-      sourceFile: fileReference,
-      metadata: snapshot.metadata || {}
-    };
-    DEBUG && console.log('PortfolioService - Created portfolio object:', {
-      hasSourceFile: !!portfolio.sourceFile,
-      sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : [],
-      accountName: portfolio.account,
-      date: portfolio.date,
-      hasData: !!portfolio.data,
-      dataType: typeof portfolio.data,
-      isArray: Array.isArray(portfolio.data),
-      dataLength: Array.isArray(portfolio.data) ? portfolio.data.length : 0
-    });
-
-    // Validate data structure
-    if (!portfolio.data || !Array.isArray(portfolio.data)) {
-      console.error('Invalid portfolio data structure:', {
-        data: portfolio.data,
-        dataType: typeof portfolio.data,
-        isArray: Array.isArray(portfolio.data)
-      });
-      return {
-        success: false,
-        error: 'Invalid portfolio data structure: data must be an array'
-      };
-    }
-
-    // Save portfolio
-    const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
-    DEBUG && console.log('PortfolioService - Saved portfolio with ID:', portfolioId);
-    
-    return portfolioId;
-  }
-
-  createFileReferenceFromMetadata(metadata) {
-    console.log('PortfolioService - Creating file reference with raw metadata:', metadata);
-    console.log('PortfolioService - Metadata validation:', {
-      hasFileId: !!metadata.fileId,
-      hasFileHash: !!metadata.fileHash,
-      hasFileName: !!metadata.fileName,
-      hasUploadDate: !!metadata.uploadDate
-    });
-    
-    const fileReference = {
-      fileId: metadata.fileId,
-      fileHash: metadata.fileHash,
-      fileName: metadata.fileName,
-      uploadDate: metadata.uploadDate || new Date()
-    };
-    
-    console.log('PortfolioService - File reference creation result:', {
-      fileReference,
-      isValid: !!(fileReference.fileId && fileReference.fileHash && fileReference.fileName)
-    });
-    
-    return fileReference;
   }
 }
 

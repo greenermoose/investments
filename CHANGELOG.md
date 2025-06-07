@@ -1,3 +1,11 @@
+### 0.4.119
+
+- fileName migration plan
+
+### 0.4.118
+
+- fix file details bug, pass 6
+
 ### 0.4.117
 
 - fix file details bug, pass 5

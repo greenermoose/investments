@@ -1,6 +1,8 @@
 import { FILE_TYPES } from './constants';
 import { debugLog } from '../../utils/debugConfig';
 
+const DEBUG = true;
+
 /**
  * Handles the initial file upload stage
  */
@@ -15,18 +17,18 @@ export class FileUploader {
    * @returns {Promise<string>} File content
    */
   async readFileAsText(file) {
-    debugLog('fileUploader', 'read', 'Reading file content', { filename: file.name });
+    DEBUG && debugLog('fileUploader', 'read', 'Reading file content', { filename: file.name });
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onload = (event) => {
-        debugLog('fileUploader', 'read', 'File content read successfully', {
+        DEBUG && debugLog('fileUploader', 'read', 'File content read successfully', {
           filename: file.name,
           contentLength: event.target.result.length
         });
         resolve(event.target.result);
       };
       reader.onerror = (error) => {
-        debugLog('fileUploader', 'error', 'Failed to read file', {
+        DEBUG && debugLog('fileUploader', 'error', 'Failed to read file', {
           filename: file.name,
           error: error.message
         });
@@ -43,13 +45,13 @@ export class FileUploader {
    * @returns {Object} Validation result
    */
   async validateFile(file, expectedType) {
-    debugLog('fileUploader', 'validate', 'Validating file', {
+    DEBUG && debugLog('fileUploader', 'validate', 'Validating file', {
       filename: file.name,
       expectedType
     });
 
     if (!file) {
-      debugLog('fileUploader', 'error', 'No file provided');
+      DEBUG && debugLog('fileUploader', 'error', 'No file provided');
       return {
         success: false,
         error: 'No file provided'
@@ -60,7 +62,7 @@ export class FileUploader {
     const isJSON = file.name.toLowerCase().endsWith('.json');
     
     if (expectedType === 'CSV' && !isCSV) {
-      debugLog('fileUploader', 'error', 'Invalid file type', {
+      DEBUG && debugLog('fileUploader', 'error', 'Invalid file type', {
         expected: 'CSV',
         actual: file.name.split('.').pop()
       });
@@ -71,7 +73,7 @@ export class FileUploader {
     }
     
     if (expectedType === 'JSON' && !isJSON) {
-      debugLog('fileUploader', 'error', 'Invalid file type', {
+      DEBUG && debugLog('fileUploader', 'error', 'Invalid file type', {
         expected: 'JSON',
         actual: file.name.split('.').pop()
       });
@@ -84,7 +86,7 @@ export class FileUploader {
     const maxSize = this.fileTypes[expectedType].maxSize;
     if (file.size > maxSize) {
       const sizeInMB = Math.round(maxSize / (1024 * 1024));
-      debugLog('fileUploader', 'error', 'File too large', {
+      DEBUG && debugLog('fileUploader', 'error', 'File too large', {
         size: file.size,
         maxSize,
         sizeInMB
@@ -95,7 +97,7 @@ export class FileUploader {
       };
     }
     
-    debugLog('fileUploader', 'validate', 'File validation successful', {
+    DEBUG && debugLog('fileUploader', 'validate', 'File validation successful', {
       filename: file.name,
       type: isCSV ? 'CSV' : 'JSON',
       size: file.size
@@ -114,7 +116,7 @@ export class FileUploader {
    * @returns {Promise<Object>} Upload result
    */
   async processUpload(file, expectedType) {
-    debugLog('fileUploader', 'upload', 'Starting file upload process', {
+    DEBUG && debugLog('fileUploader', 'upload', 'Starting file upload process', {
       filename: file.name,
       expectedType
     });
@@ -123,17 +125,17 @@ export class FileUploader {
       // Validate file
       const validation = await this.validateFile(file, expectedType);
       if (!validation.success) {
-        debugLog('fileUploader', 'error', 'File validation failed', {
+        DEBUG && debugLog('fileUploader', 'error', 'File validation failed', {
           error: validation.error
         });
         throw new Error(validation.error);
       }
 
       // Read file content
-      debugLog('fileUploader', 'read', 'Reading file content');
+      DEBUG && debugLog('fileUploader', 'read', 'Reading file content');
       const content = await this.readFileAsText(file);
 
-      debugLog('fileUploader', 'upload', 'File upload completed successfully', {
+      DEBUG && debugLog('fileUploader', 'upload', 'File upload completed successfully', {
         filename: file.name,
         fileType: validation.fileType,
         contentLength: content.length
@@ -146,7 +148,7 @@ export class FileUploader {
         content
       };
     } catch (error) {
-      debugLog('fileUploader', 'error', 'File upload failed', {
+      DEBUG && debugLog('fileUploader', 'error', 'File upload failed', {
         error: error.message,
         stack: error.stack
       });

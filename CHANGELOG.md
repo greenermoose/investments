@@ -1,3 +1,7 @@
+### 0.4.108
+
+- start fixing debug system
+
 ### 0.4.107
 
 - Fix file details bug

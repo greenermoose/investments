@@ -8,6 +8,8 @@ import { identifyAndClassifyFile } from '../utils/fileProcessing';
 import { parsePortfolioCSV } from '../utils/parseSnapshot';
 import { parseTransactionJSON } from '../utils/parseTransactions';
 
+const DEBUG = true;
+
 /**
  * Orchestrates the file processing pipeline
  */
@@ -23,8 +25,8 @@ export class PipelineOrchestrator {
    * @returns {Promise<Object>} Processing result
    */
   async processFile(file) {
-    console.log('PipelineOrchestrator: processFile starting...')
-    debugLog('pipeline', 'start', 'Starting pipeline processing', { 
+    DEBUG && console.log('PipelineOrchestrator.js: processFile starting...')
+    DEBUG && debugLog('pipeline', 'start', 'Starting pipeline processing', { 
       filename: file.name,
       fileSize: file.size,
       fileType: file.type
@@ -33,7 +35,7 @@ export class PipelineOrchestrator {
     try {
       // Stage 1: Read file content
       const content = await readFileAsText(file);
-      debugLog('pipeline', 'read', 'File content read', {
+      DEBUG && debugLog('pipeline', 'read', 'File content read', {
         filename: file.name,
         contentLength: content.length,
         firstFewLines: content.split('\n').slice(0, 3).join('\n')
@@ -41,14 +43,14 @@ export class PipelineOrchestrator {
 
       // Stage 2: Determine file type from extension
       const fileType = file.name.toLowerCase().endsWith('.csv') ? 'CSV' : 'JSON';
-      debugLog('pipeline', 'type', 'Determined file type', {
+      DEBUG && debugLog('pipeline', 'type', 'Determined file type', {
         filename: file.name,
         fileType
       });
 
       // Stage 3: Identify file type and metadata first
       const metadata = await this.identifyFile(file, content);
-      debugLog('pipeline', 'identify', 'File identified', {
+      DEBUG && debugLog('pipeline', 'identify', 'File identified', {
         filename: file.name,
         fileType: metadata.fileType,
         accountName: metadata.accountName,
@@ -73,7 +75,7 @@ export class PipelineOrchestrator {
         throw new Error('Failed to calculate file hash');
       }
 
-      debugLog('pipeline', 'storage', 'File saved to storage', {
+      DEBUG && debugLog('pipeline', 'storage', 'File saved to storage', {
         filename: file.name,
         fileId: storageResult.id,
         isDuplicate: storageResult.isDuplicate,
@@ -83,7 +85,7 @@ export class PipelineOrchestrator {
       });
 
       // Stage 5: Parse file content
-      debugLog('pipeline', 'parse', 'Starting file parsing', {
+      DEBUG && debugLog('pipeline', 'parse', 'Starting file parsing', {
         filename: file.name,
         fileType: metadata.fileType,
         contentLength: content.length
@@ -95,14 +97,14 @@ export class PipelineOrchestrator {
       } else if (metadata.fileType === 'JSON') {
         parsedData = parseTransactionJSON(content);
       } else {
-        debugLog('pipeline', 'error', 'Unsupported file type', {
+        DEBUG && debugLog('pipeline', 'error', 'Unsupported file type', {
           filename: file.name,
           fileType: metadata.fileType
         });
         throw new Error(`Unsupported file type: ${metadata.fileType}`);
       }
 
-      debugLog('pipeline', 'parse', 'File parsed', {
+      DEBUG && debugLog('pipeline', 'parse', 'File parsed', {
         filename: file.name,
         success: parsedData.success,
         dataLength: parsedData.data?.length,
@@ -110,7 +112,7 @@ export class PipelineOrchestrator {
       });
       
       if (!parsedData.success) {
-        debugLog('pipeline', 'error', 'Parsing failed', { 
+        DEBUG && debugLog('pipeline', 'error', 'Parsing failed', { 
           filename: file.name,
           error: parsedData.error
         });
@@ -120,7 +122,7 @@ export class PipelineOrchestrator {
       // Stage 6: Process and save to portfolio database
       let processingResult;
       if (metadata.fileType === 'CSV') {
-        debugLog('pipeline', 'process', 'Processing portfolio snapshot', {
+        DEBUG && debugLog('pipeline', 'process', 'Processing portfolio snapshot', {
           filename: file.name,
           fileId: storageResult.id,
           accountName: metadata.accountName,
@@ -137,7 +139,7 @@ export class PipelineOrchestrator {
           fileHash: storageResult.fileHash
         });
 
-        debugLog('pipeline', 'process', 'Portfolio snapshot processed', {
+        DEBUG && debugLog('pipeline', 'process', 'Portfolio snapshot processed', {
           filename: file.name,
           success: processingResult.success,
           hasSnapshot: !!processingResult.snapshot,
@@ -147,7 +149,7 @@ export class PipelineOrchestrator {
       }
 
       // Stage 7: Update file processing status
-      debugLog('pipeline', 'status', 'Updating file processing status', {
+      DEBUG && debugLog('pipeline', 'status', 'Updating file processing status', {
         filename: file.name,
         fileId: storageResult.id,
         success: processingResult?.success,
@@ -170,7 +172,7 @@ export class PipelineOrchestrator {
         }
       });
 
-      debugLog('pipeline', 'complete', 'Pipeline processing completed', {
+      DEBUG && debugLog('pipeline', 'complete', 'Pipeline processing completed', {
         filename: file.name,
         fileId: storageResult.id,
         success: processingResult?.success,
@@ -188,7 +190,7 @@ export class PipelineOrchestrator {
         result: processingResult
       };
     } catch (error) {
-      debugLog('pipeline', 'error', 'Pipeline processing failed', {
+      DEBUG && debugLog('pipeline', 'error', 'Pipeline processing failed', {
         error: error.message,
         stack: error.stack,
         filename: file.name
@@ -206,9 +208,9 @@ export class PipelineOrchestrator {
    * @returns {Promise<Object>} Processing status
    */
   async getProcessingStatus(fileId) {
-    debugLog('pipeline', 'status', 'Getting processing status', { fileId });
+    DEBUG && debugLog('pipeline', 'status', 'Getting processing status', { fileId });
     const fileRecord = await this.storage.getFile(fileId);
-    debugLog('pipeline', 'status', 'Processing status retrieved', {
+    DEBUG && debugLog('pipeline', 'status', 'Processing status retrieved', {
       processed: fileRecord.processed,
       hasError: !!fileRecord.error
     });
@@ -226,7 +228,7 @@ export class PipelineOrchestrator {
    * @returns {Promise<Object>} File metadata
    */
   async identifyFile(file, content) {
-    debugLog('pipeline', 'identify', 'Identifying file', {
+    DEBUG && debugLog('pipeline', 'identify', 'Identifying file', {
       filename: file.name,
       contentLength: content.length
     });
@@ -235,7 +237,7 @@ export class PipelineOrchestrator {
       const result = await identifyAndClassifyFile(content, file.name, file.type);
       
       if (!result.success) {
-        debugLog('pipeline', 'error', 'File identification failed', {
+        DEBUG && debugLog('pipeline', 'error', 'File identification failed', {
           filename: file.name,
           error: result.error
         });
@@ -248,7 +250,7 @@ export class PipelineOrchestrator {
         date: result.date
       };
     } catch (error) {
-      debugLog('pipeline', 'error', 'Error identifying file', {
+      DEBUG && debugLog('pipeline', 'error', 'Error identifying file', {
         filename: file.name,
         error: error.message,
         stack: error.stack

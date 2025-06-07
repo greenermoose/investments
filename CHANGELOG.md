@@ -1,3 +1,7 @@
+### 0.4.114
+
+- fix file details bug, pass 4
+
 ### 0.4.113
 
 - more fixes to debug system

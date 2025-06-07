@@ -573,15 +573,15 @@ class PortfolioService {
     });
     
     const fileReference = {
-      id: metadata.fileId,
-      hash: metadata.fileHash,
-      name: metadata.fileName,
+      fileId: metadata.fileId,
+      fileHash: metadata.fileHash,
+      fileName: metadata.fileName,
       uploadDate: metadata.uploadDate || new Date()
     };
     
     console.log('PortfolioService - File reference creation result:', {
       fileReference,
-      isValid: !!(fileReference.id && fileReference.hash && fileReference.name)
+      isValid: !!(fileReference.fileId && fileReference.fileHash && fileReference.fileName)
     });
     
     return fileReference;

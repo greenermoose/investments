@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { FileText } from 'lucide-react';
 import PortfolioFooter from './PortfolioFooter';
 import { useFileUpload } from '../hooks/useFileUpload';
@@ -10,18 +10,21 @@ const WelcomeScreen = ({
   onTabChange
 }) => {
   const portfolio = usePortfolio();
+  
+  const callbacks = useMemo(() => ({
+    setLoadingState: portfolio.setLoadingState,
+    resetError: portfolio.resetError,
+    loadPortfolio: async (data, accountName, date, accountTotal) => {
+      await portfolio.loadPortfolio(data, accountName, date, accountTotal);
+    },
+    setError: portfolio.setError,
+    onModalClose: () => {},
+    onNavigate
+  }), [portfolio, onNavigate]);
+
   const { handleFileUpload, isUploading, uploadError } = useFileUpload(
     portfolio.portfolioData,
-    {
-      setLoadingState: portfolio.setLoadingState,
-      resetError: portfolio.resetError,
-      loadPortfolio: async (data, accountName, date, accountTotal) => {
-        await portfolio.loadPortfolio(data, accountName, date, accountTotal);
-      },
-      setError: portfolio.setError,
-      onModalClose: () => {},
-      onNavigate
-    }
+    callbacks
   );
 
   const handleFileSelect = (e) => {

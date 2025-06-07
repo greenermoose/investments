@@ -1,5 +1,5 @@
 // hooks/useFileUpload.js revision: 3
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { parsePortfolioCSV } from '../utils/parseSnapshot';
 import { parseTransactionJSON } from '../utils/parseTransactions';
 import {
@@ -21,6 +21,9 @@ import { PipelineOrchestrator } from '../pipeline/PipelineOrchestrator';
 import { debugLog } from '../utils/debugConfig';
 
 const DEBUG = true;
+
+// Create a singleton instance of PipelineOrchestrator
+const pipelineInstance = new PipelineOrchestrator();
 
 /**
  * File type definitions with validation rules
@@ -65,9 +68,8 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);
   const { showDialog } = useDialog();
-  const pipeline = new PipelineOrchestrator();
 
-  const handleFileUpload = async (file) => {
+  const handleFileUpload = useCallback(async (file) => {
     DEBUG && console.log('useFileUpload - handleFileUpload:', {
       fileName: file.name,
       fileSize: file.size,
@@ -80,7 +82,7 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
 
     try {
       DEBUG && debugLog('fileUpload', 'process', 'Processing file through pipeline');
-      const result = await pipeline.processFile(file);
+      const result = await pipelineInstance.processFile(file);
       
       if (!result.success) {
         DEBUG && debugLog('fileUpload', 'error', 'File processing failed', { error: result.error });
@@ -171,13 +173,15 @@ export function useFileUpload(portfolioData, callbacks = {}, acquisitionCallback
       setIsUploading(false);
       DEBUG && debugLog('fileUpload', 'end', 'File upload process completed');
     }
-  };
+  }, [callbacks, showDialog]);
 
-  return {
+  const returnValue = useMemo(() => ({
     handleFileUpload,
     isUploading,
     uploadError
-  };
+  }), [handleFileUpload, isUploading, uploadError]);
+
+  return returnValue;
 }
 
 export default useFileUpload;

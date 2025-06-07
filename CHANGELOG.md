@@ -1,3 +1,7 @@
+### 0.4.115
+
+- tring to memoize things to reduce number of times being called
+
 ### 0.4.114
 
 - fix file details bug, pass 4

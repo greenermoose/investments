@@ -7,7 +7,7 @@ import { generateAndDownloadCSV, generatePortfolioCSV } from '../utils/csvUtils'
 import AssetAllocationChart from './performance/AssetAllocationChart';
 import '../styles/base.css';
 import '../styles/portfolio.css';
-import { usePortfolio } from '../hooks/usePortfolio';
+import { usePortfolio } from '../context/PortfolioContext';
 import { debugLog } from '../utils/debugConfig';
 import { isValidFileReference } from '../types/FileReference';
 

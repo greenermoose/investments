@@ -526,21 +526,38 @@ class PortfolioService {
 
     // Create portfolio object
     const portfolio = {
-      accountName: snapshot.accountName,
+      account: snapshot.accountName,
       date: snapshot.date,
-      data: snapshot.data,
+      data: snapshot,  // The snapshot itself is the data array
       sourceFile: fileReference,
       metadata: snapshot.metadata || {}
     };
     DEBUG && console.log('PortfolioService - Created portfolio object:', {
       hasSourceFile: !!portfolio.sourceFile,
       sourceFileKeys: portfolio.sourceFile ? Object.keys(portfolio.sourceFile) : [],
-      accountName: portfolio.accountName,
-      date: portfolio.date
+      accountName: portfolio.account,
+      date: portfolio.date,
+      hasData: !!portfolio.data,
+      dataType: typeof portfolio.data,
+      isArray: Array.isArray(portfolio.data),
+      dataLength: Array.isArray(portfolio.data) ? portfolio.data.length : 0
     });
 
+    // Validate data structure
+    if (!portfolio.data || !Array.isArray(portfolio.data)) {
+      console.error('Invalid portfolio data structure:', {
+        data: portfolio.data,
+        dataType: typeof portfolio.data,
+        isArray: Array.isArray(portfolio.data)
+      });
+      return {
+        success: false,
+        error: 'Invalid portfolio data structure: data must be an array'
+      };
+    }
+
     // Save portfolio
-    const portfolioId = await this.portfolioRepo.savePortfolio(portfolio);
+    const portfolioId = await this.portfolioRepo.saveSnapshot(portfolio);
     DEBUG && console.log('PortfolioService - Saved portfolio with ID:', portfolioId);
     
     return portfolioId;
@@ -563,7 +580,7 @@ class PortfolioService {
     
     DEBUG && console.log('PortfolioService - Created file reference:', {
       fileReference,
-      isValid: this.isValidFileReference(fileReference)
+      isValid: isValidFileReference(fileReference)
     });
     
     return fileReference;

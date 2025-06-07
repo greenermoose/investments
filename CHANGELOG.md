@@ -1,3 +1,7 @@
+### 0.4.111
+
+- fix file details bug, pass 2
+
 ### 0.4.110
 
 - fix another bug

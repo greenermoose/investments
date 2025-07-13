@@ -1,4 +1,8 @@
 
+### 0.4.123
+
+- fix calculateFileHash
+
 ### 0.4.122
 
 - more debugging

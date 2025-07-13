@@ -13,6 +13,7 @@ import { TransactionMetadataRepository } from '../repositories/TransactionMetada
 import { debugLog } from '../utils/debugConfig';
 import { createFileReference, migrateFileReference, isValidFileReference } from '../types/FileReference';
 import { nanoid } from 'nanoid';
+import { calculateFileHash } from '../utils/fileStorage';
 
 const DEBUG = true;
 
@@ -60,10 +61,9 @@ class PortfolioService {
           type: file.type,
           hasContent: !!file.content
         } : null,
-        hasCalculateFileHash: typeof this.calculateFileHash === 'function'
       });
       
-      const fileHash = file ? await this.calculateFileHash(file) : null;
+      const fileHash = file ? await calculateFileHash(file) : null;
       
       DEBUG && console.log('PortfolioService - Creating file reference:', {
         fileId,

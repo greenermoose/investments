@@ -1,8 +1,12 @@
+### 0.4.2
+
+- continue with refactor of portfolioStorage.js
+- removed unused functions
+
 ### 0.4.1
 
 - continuining with refactor of portfolioStorage.js
 - using Sonnet 4
-
 
 ### 0.4.0
 

@@ -2,7 +2,7 @@
 
 A React-based web application for analyzing and managing investment portfolios with time-series comparison capabilities.
 
-![Investment Portfolio Dashboard](https://via.placeholder.com/800x400?text=Investment+Portfolio+Dashboard)
+# Investment Portfolio Dashboard
 
 ## Features
 

@@ -3,9 +3,9 @@
 
 import { 
     getAccountSnapshots, 
-    getTransactionsByAccount, 
-    getSecurityMetadata 
+    getTransactionsByAccount
   } from './portfolioStorage';
+  import { portfolioService } from '../services/PortfolioService';
   import { TransactionCategories } from './transactionEngine';
   import { formatDate } from './dataUtils';
   
@@ -51,7 +51,7 @@ import {
       const transactionData = [];
       
       // Get security metadata to find the earliest info
-      const metadata = await getSecurityMetadata(symbol, account);
+      const metadata = await portfolioService.getSecurityMetadata(symbol, account);
       
       // If we have a first acquisition date but no transactions yet, create a starting point
       if (metadata?.acquisitionDate && symbolTransactions.length > 0) {

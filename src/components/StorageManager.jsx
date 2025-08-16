@@ -13,9 +13,9 @@ import {
 } from '../utils/databaseUtils';
 import { 
   getAllAccounts, 
-  purgeAccountData,
   getAccountSnapshots,
 } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import '../styles/base.css';
 import '../styles/portfolio.css';
 
@@ -206,7 +206,7 @@ const StorageManager = ({ onDataChange }) => {
       onConfirm: async () => {
         try {
           setIsLoading(true);
-          await purgeAccountData(account);
+          await portfolioService.purgeAccountData(account);
           setSuccess(`Data for account "${account}" purged successfully`);
           await loadStorageData();
           setDeleteModal({ isOpen: false });

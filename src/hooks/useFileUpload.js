@@ -6,11 +6,10 @@ import {
   parseDateFromFilename
 } from '../utils/fileProcessing';
 import { 
-  savePortfolioSnapshot, 
   getLatestSnapshot,
-  bulkMergeTransactions,
   getTransactionsByAccount
 } from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 import { analyzePortfolioChanges } from '../utils/positionTracker';
 import {
   parseTransactionJSON,
@@ -280,7 +279,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       const uniqueTransactions = removeDuplicateTransactions(parsedData.transactions);
       
       // Merge transactions into database
-      const mergeResult = await bulkMergeTransactions(uniqueTransactions, accountName);
+      const mergeResult = await portfolioService.bulkMergeTransactions(uniqueTransactions, accountName);
       
       console.log(`Processed ${mergeResult.processed} transactions, ${mergeResult.errors.length} errors`);
       
@@ -413,7 +412,7 @@ export const useFileUpload = (portfolioData, onLoad, onAcquisitionsFound) => {
       }
       
       // Save the current snapshot
-      const portfolioId = await savePortfolioSnapshot(
+      const portfolioId = await portfolioService.savePortfolioSnapshot(
         enrichedPortfolioData, 
         accountName, 
         portfolioDate, 

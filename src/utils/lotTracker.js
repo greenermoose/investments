@@ -3,12 +3,9 @@
 
 import { TransactionCategories, removeDuplicateTransactions } from './transactionEngine';
 import { 
-  getSecurityMetadata,
-  saveLot,
-  getLotById,
-  saveSecurityMetadata,
   getTransactionsByAccount
 } from './portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 /**
  * Lot Tracking Methods - How to select which lots to sell first
@@ -339,7 +336,7 @@ export const processTransactionsIntoLots = async (accountName) => {
         }
         
         // Get security metadata
-        let metadata = await getSecurityMetadata(symbol, accountName);
+        let metadata = await portfolioService.getSecurityMetadata(symbol, accountName);
         const securityId = `${accountName}_${symbol}`;
         
         // Create metadata if it doesn't exist
@@ -353,7 +350,7 @@ export const processTransactionsIntoLots = async (accountName) => {
             updatedAt: new Date()
           };
           
-          await saveSecurityMetadata(symbol, accountName, metadata);
+          await portfolioService.saveSecurityMetadata(symbol, accountName, metadata);
         }
         
         // Create lots for each acquisition
@@ -374,14 +371,14 @@ export const processTransactionsIntoLots = async (accountName) => {
           );
 
           // Check if lot already exists in database
-          const existingLot = await getLotById(lot.id);
+          const existingLot = await portfolioService.getLotById(lot.id);
           if (existingLot) {
             console.log(`Lot already exists in database for ${symbol}: ${lot.quantity} shares at ${lot.pricePerShare} on ${lot.acquisitionDate}`);
             continue;
           }
 
           // Save lot to database
-          await saveLot(lot);
+          await portfolioService.saveLot(lot);
           createdLots.push(lot);
           
           console.log(`Created lot for ${symbol}: ${lot.quantity} shares at ${lot.pricePerShare} on ${lot.acquisitionDate}`);
@@ -393,7 +390,7 @@ export const processTransactionsIntoLots = async (accountName) => {
             return !earliest || lot.acquisitionDate < earliest.acquisitionDate ? lot : earliest;
           }, null);
           
-          await saveSecurityMetadata(symbol, accountName, {
+          await portfolioService.saveSecurityMetadata(symbol, accountName, {
             ...metadata,
             acquisitionDate: earliestLot.acquisitionDate,
             updatedAt: new Date()
@@ -470,7 +467,7 @@ export const processDispositions = async (accountName, trackingMethod = LotTrack
         const securityId = `${accountName}_${symbol}`;
         
         // Get all lots for this security
-        const lots = await getSecurityLots(securityId);
+        const lots = await portfolioService.getSecurityLots(securityId);
         
         if (!lots || lots.length === 0) {
           console.warn(`No lots found for ${symbol} but sale transactions exist`);
@@ -493,7 +490,7 @@ export const processDispositions = async (accountName, trackingMethod = LotTrack
           
           // Save updated lots
           for (const updatedLot of saleResult.affectedLots) {
-            await saveLot(updatedLot);
+            await portfolioService.saveLot(updatedLot);
             updatedLotsCount++;
           }
           

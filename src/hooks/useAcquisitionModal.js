@@ -1,11 +1,7 @@
 // hooks/useAcquisitionModal.js revision: 2
 
 import { useState } from 'react';
-import { 
-  saveSecurityMetadata,
-  getSecurityMetadata,
-  saveLot
-} from '../utils/portfolioStorage';
+import { portfolioService } from '../services/PortfolioService';
 
 export const useAcquisitionModal = () => {
   const [showAcquisitionModal, setShowAcquisitionModal] = useState(false);
@@ -18,9 +14,9 @@ export const useAcquisitionModal = () => {
       if (isTickerChange) {
         // Handle ticker symbol change
         // Copy existing security metadata to new symbol
-        const oldMetadata = await getSecurityMetadata(oldSymbol, currentAccount);
+        const oldMetadata = await portfolioService.getSecurityMetadata(oldSymbol, currentAccount);
         if (oldMetadata) {
-          await saveSecurityMetadata(change.symbol, currentAccount, {
+          await portfolioService.saveSecurityMetadata(change.symbol, currentAccount, {
             acquisitionDate: oldMetadata.acquisitionDate,
             lots: oldMetadata.lots,
             description: change.description
@@ -28,7 +24,7 @@ export const useAcquisitionModal = () => {
         }
       } else {
         // Save new acquisition metadata
-        await saveSecurityMetadata(change.symbol, currentAccount, {
+        await portfolioService.saveSecurityMetadata(change.symbol, currentAccount, {
           acquisitionDate: acquisitionDate,
           description: change.description
         });
@@ -53,7 +49,7 @@ export const useAcquisitionModal = () => {
         };
         
         // Actually save the lot to the database
-        await saveLot(newLot);
+        await portfolioService.saveLot(newLot);
         console.log(`Created new lot for ${change.symbol}:`, newLot);
       }
     } catch (err) {

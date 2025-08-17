@@ -268,9 +268,45 @@ const PortfolioManager = () => {
                   <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
                 </svg>
               </div>
-              <div>
+              <div className="flex-1">
                 <p className="font-bold">Error</p>
-                <p>{error}</p>
+                <p className="mb-3">{error}</p>
+                
+                {/* Show repair options for database index errors */}
+                {error.includes('index was not found') || error.includes('Database indexes are corrupted') ? (
+                  <div className="mt-3 space-y-2">
+                    <button
+                      onClick={portfolio.repairDatabase}
+                      className="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 mr-2"
+                    >
+                      🔧 Repair Database
+                    </button>
+                    <button
+                      onClick={() => changeTab('storage-manager')}
+                      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                    >
+                      🛠️ Open Database Debugger
+                    </button>
+                    <p className="text-sm text-red-600 mt-2">
+                      This error indicates database corruption. Try the repair button first, or use the Database Debugger for advanced troubleshooting.
+                    </p>
+                  </div>
+                ) : (
+                  <div className="mt-3">
+                    <button
+                      onClick={portfolio.resetError}
+                      className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 mr-2"
+                    >
+                      Dismiss
+                    </button>
+                    <button
+                      onClick={() => changeTab('storage-manager')}
+                      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                    >
+                      🛠️ Open Database Debugger
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>

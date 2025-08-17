@@ -5,22 +5,47 @@ import {
   initializeDB,
   STORE_NAME_PORTFOLIOS,
   STORE_NAME_SECURITIES,
-  STORE_NAME_LOTS
+  STORE_NAME_LOTS,
+  repairDatabaseManually
 } from './databaseUtils';
 
 // Get all snapshots for an account (updated to handle empty accounts)
 export const getAccountSnapshots = async (accountName) => {
-  const db = await initializeDB();
-  
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readonly');
-    const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
-    const index = store.index('account');
-    const request = index.getAll(accountName);
+  try {
+    const db = await initializeDB();
     
-    request.onsuccess = () => resolve(request.result || []);
-    request.onerror = () => reject(request.error);
-  });
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction([STORE_NAME_PORTFOLIOS], 'readonly');
+      const store = transaction.objectStore(STORE_NAME_PORTFOLIOS);
+      
+      // Check if the 'account' index exists
+      if (!store.indexNames.contains('account')) {
+        console.warn('Account index missing from portfolios store, attempting repair...');
+        // Try to repair the database
+        repairDatabaseManually().then(repairResult => {
+          if (repairResult.success) {
+            console.log('Database repaired, retrying operation...');
+            // Retry the operation after repair
+            getAccountSnapshots(accountName).then(resolve).catch(reject);
+          } else {
+            reject(new Error(`Database index 'account' not found and repair failed: ${repairResult.message}`));
+          }
+        }).catch(repairError => {
+          reject(new Error(`Database index 'account' not found and repair failed: ${repairError.message}`));
+        });
+        return;
+      }
+      
+      const index = store.index('account');
+      const request = index.getAll(accountName);
+      
+      request.onsuccess = () => resolve(request.result || []);
+      request.onerror = () => reject(request.error);
+    });
+  } catch (error) {
+    console.error('Error in getAccountSnapshots:', error);
+    throw error;
+  }
 };
 
 // Get all accounts (including empty ones)

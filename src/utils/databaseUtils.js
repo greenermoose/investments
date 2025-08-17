@@ -12,6 +12,155 @@ export const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
 export const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
 export const STORE_NAME_FILES = 'uploaded_files';
 
+// Database repair function to fix missing indexes
+const repairDatabase = async (db) => {
+  console.log('Checking database integrity and repairing if needed...');
+  
+  try {
+    // Check portfolios store
+    if (db.objectStoreNames.contains(STORE_NAME_PORTFOLIOS)) {
+      const portfolioStore = db.transaction([STORE_NAME_PORTFOLIOS], 'readwrite').objectStore(STORE_NAME_PORTFOLIOS);
+      
+      // Check if 'account' index exists, if not recreate it
+      if (!portfolioStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on portfolios store');
+        portfolioStore.createIndex('account', 'account', { unique: false });
+      }
+      
+      // Check if 'date' index exists, if not recreate it
+      if (!portfolioStore.indexNames.contains('date')) {
+        console.log('Recreating missing "date" index on portfolios store');
+        portfolioStore.createIndex('date', 'date', { unique: false });
+      }
+    }
+    
+    // Check securities store
+    if (db.objectStoreNames.contains(STORE_NAME_SECURITIES)) {
+      const securityStore = db.transaction([STORE_NAME_SECURITIES], 'readwrite').objectStore(STORE_NAME_SECURITIES);
+      
+      if (!securityStore.indexNames.contains('symbol')) {
+        console.log('Recreating missing "symbol" index on securities store');
+        securityStore.createIndex('symbol', 'symbol', { unique: false });
+      }
+      
+      if (!securityStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on securities store');
+        securityStore.createIndex('account', 'account', { unique: false });
+      }
+    }
+    
+    // Check lots store
+    if (db.objectStoreNames.contains(STORE_NAME_LOTS)) {
+      const lotStore = db.transaction([STORE_NAME_LOTS], 'readwrite').objectStore(STORE_NAME_LOTS);
+      
+      if (!lotStore.indexNames.contains('securityId')) {
+        console.log('Recreating missing "securityId" index on lots store');
+        lotStore.createIndex('securityId', 'securityId', { unique: false });
+      }
+      
+      if (!lotStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on lots store');
+        lotStore.createIndex('account', 'account', { unique: false });
+      }
+    }
+    
+    // Check transactions store
+    if (db.objectStoreNames.contains(STORE_NAME_TRANSACTIONS)) {
+      const transactionStore = db.transaction([STORE_NAME_TRANSACTIONS], 'readwrite').objectStore(STORE_NAME_TRANSACTIONS);
+      
+      if (!transactionStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on transactions store');
+        transactionStore.createIndex('account', 'account', { unique: false });
+      }
+      
+      if (!transactionStore.indexNames.contains('symbol')) {
+        console.log('Recreating missing "symbol" index on transactions store');
+        transactionStore.createIndex('symbol', 'symbol', { unique: false });
+      }
+      
+      if (!transactionStore.indexNames.contains('date')) {
+        console.log('Recreating missing "date" index on transactions store');
+        transactionStore.createIndex('date', 'date', { unique: false });
+      }
+      
+      if (!transactionStore.indexNames.contains('action')) {
+        console.log('Recreating missing "action" index on transactions store');
+        transactionStore.createIndex('action', 'action', { unique: false });
+      }
+    }
+    
+    // Check manual adjustments store
+    if (db.objectStoreNames.contains(STORE_NAME_MANUAL_ADJUSTMENTS)) {
+      const adjustmentStore = db.transaction([STORE_NAME_MANUAL_ADJUSTMENTS], 'readwrite').objectStore(STORE_NAME_MANUAL_ADJUSTMENTS);
+      
+      if (!adjustmentStore.indexNames.contains('symbol')) {
+        console.log('Recreating missing "symbol" index on manual adjustments store');
+        adjustmentStore.createIndex('symbol', 'symbol', { unique: false });
+      }
+      
+      if (!adjustmentStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on manual adjustments store');
+        adjustmentStore.createIndex('account', 'account', { unique: false });
+      }
+      
+      if (!adjustmentStore.indexNames.contains('date')) {
+        console.log('Recreating missing "date" index on manual adjustments store');
+        adjustmentStore.createIndex('date', 'date', { unique: false });
+      }
+    }
+    
+    // Check transaction metadata store
+    if (db.objectStoreNames.contains(STORE_NAME_TRANSACTION_METADATA)) {
+      const metadataStore = db.transaction([STORE_NAME_TRANSACTION_METADATA], 'readwrite').objectStore(STORE_NAME_TRANSACTION_METADATA);
+      
+      if (!metadataStore.indexNames.contains('symbol')) {
+        console.log('Recreating missing "symbol" index on transaction metadata store');
+        metadataStore.createIndex('symbol', 'symbol', { unique: false });
+      }
+      
+      if (!metadataStore.indexNames.contains('effectiveDate')) {
+        console.log('Recreating missing "effectiveDate" index on transaction metadata store');
+        metadataStore.createIndex('effectiveDate', 'effectiveDate', { unique: false });
+      }
+    }
+    
+    // Check files store
+    if (db.objectStoreNames.contains(STORE_NAME_FILES)) {
+      const fileStore = db.transaction([STORE_NAME_FILES], 'readwrite').objectStore(STORE_NAME_FILES);
+      
+      if (!fileStore.indexNames.contains('filename')) {
+        console.log('Recreating missing "filename" index on files store');
+        fileStore.createIndex('filename', 'filename', { unique: false });
+      }
+      
+      if (!fileStore.indexNames.contains('fileType')) {
+        console.log('Recreating missing "fileType" index on files store');
+        fileStore.createIndex('fileType', 'fileType', { unique: false });
+      }
+      
+      if (!fileStore.indexNames.contains('uploadDate')) {
+        console.log('Recreating missing "uploadDate" index on files store');
+        fileStore.createIndex('uploadDate', 'uploadDate', { unique: false });
+      }
+      
+      if (!fileStore.indexNames.contains('account')) {
+        console.log('Recreating missing "account" index on files store');
+        fileStore.createIndex('account', 'account', { unique: false });
+      }
+      
+      if (!fileStore.indexNames.contains('fileHash')) {
+        console.log('Recreating missing "fileHash" index on files store');
+        fileStore.createIndex('fileHash', 'fileHash', { unique: false });
+      }
+    }
+    
+    console.log('Database repair completed successfully');
+  } catch (error) {
+    console.error('Error during database repair:', error);
+    throw error;
+  }
+};
+
 // Initialize IndexedDB with updated schema
 export const initializeDB = () => {
   return new Promise((resolve, reject) => {
@@ -49,7 +198,16 @@ export const initializeDB = () => {
           console.error('Error adapting to existing database:', event.target.error);
           reject(event.target.error);
         };
-        adaptRequest.onsuccess = () => resolve(adaptRequest.result);
+        adaptRequest.onsuccess = async () => {
+          try {
+            // Repair the database to ensure all indexes exist
+            await repairDatabase(adaptRequest.result);
+            resolve(adaptRequest.result);
+          } catch (error) {
+            console.error('Failed to repair database:', error);
+            reject(error);
+          }
+        };
       } else {
         // Open with expected version
         const request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -59,7 +217,16 @@ export const initializeDB = () => {
           reject(event.target.error);
         };
         
-        request.onsuccess = () => resolve(request.result);
+        request.onsuccess = async () => {
+          try {
+            // Repair the database to ensure all indexes exist
+            await repairDatabase(request.result);
+            resolve(request.result);
+          } catch (error) {
+            console.error('Failed to repair database:', error);
+            reject(error);
+          }
+        };
         
         request.onupgradeneeded = (event) => {
           const db = event.target.result;
@@ -280,4 +447,133 @@ export const importAllData = async (data) => {
     transaction.oncomplete = () => resolve();
     transaction.onerror = () => reject(transaction.error);
   });
+};
+
+// Completely reset the database by deleting and recreating it
+export const resetDatabase = async () => {
+  try {
+    console.log('Resetting database completely...');
+    
+    // Close any existing connections
+    const existingConnections = indexedDB.open(DB_NAME);
+    if (existingConnections.result) {
+      existingConnections.result.close();
+    }
+    
+    // Delete the existing database
+    const deleteRequest = indexedDB.deleteDatabase(DB_NAME);
+    
+    return new Promise((resolve, reject) => {
+      deleteRequest.onerror = () => {
+        console.error('Error deleting database:', deleteRequest.error);
+        reject(new Error(`Failed to delete database: ${deleteRequest.error.message}`));
+      };
+      
+      deleteRequest.onsuccess = async () => {
+        console.log('Database deleted successfully, recreating...');
+        try {
+          // Recreate the database
+          const db = await initializeDB();
+          console.log('Database recreated successfully');
+          resolve({ success: true, message: 'Database reset successfully' });
+        } catch (error) {
+          console.error('Error recreating database:', error);
+          reject(new Error(`Failed to recreate database: ${error.message}`));
+        }
+      };
+    });
+  } catch (error) {
+    console.error('Error during database reset:', error);
+    throw error;
+  }
+};
+
+// Public function to manually repair database
+export const repairDatabaseManually = async () => {
+  try {
+    const db = await initializeDB();
+    await repairDatabase(db);
+    return { success: true, message: 'Database repaired successfully' };
+  } catch (error) {
+    console.error('Manual database repair failed:', error);
+    return { success: false, message: `Database repair failed: ${error.message}` };
+  }
+};
+
+// Check database health and return status
+export const checkDatabaseHealth = async () => {
+  try {
+    const db = await initializeDB();
+    const health = {
+      status: 'healthy',
+      issues: [],
+      stores: {}
+    };
+    
+    // Check each store and its indexes
+    const storeNames = [
+      STORE_NAME_PORTFOLIOS,
+      STORE_NAME_SECURITIES,
+      STORE_NAME_LOTS,
+      STORE_NAME_TRANSACTIONS,
+      STORE_NAME_MANUAL_ADJUSTMENTS,
+      STORE_NAME_TRANSACTION_METADATA,
+      STORE_NAME_FILES
+    ];
+    
+    for (const storeName of storeNames) {
+      if (db.objectStoreNames.contains(storeName)) {
+        const store = db.transaction([storeName], 'readonly').objectStore(storeName);
+        const indexes = Array.from(store.indexNames);
+        
+        health.stores[storeName] = {
+          exists: true,
+          indexes: indexes
+        };
+        
+        // Check for expected indexes based on store type
+        const expectedIndexes = getExpectedIndexes(storeName);
+        const missingIndexes = expectedIndexes.filter(idx => !indexes.includes(idx));
+        
+        if (missingIndexes.length > 0) {
+          health.status = 'needs_repair';
+          health.issues.push(`Store ${storeName} missing indexes: ${missingIndexes.join(', ')}`);
+        }
+      } else {
+        health.stores[storeName] = { exists: false, indexes: [] };
+        health.status = 'needs_repair';
+        health.issues.push(`Store ${storeName} does not exist`);
+      }
+    }
+    
+    return health;
+  } catch (error) {
+    return {
+      status: 'error',
+      issues: [`Database health check failed: ${error.message}`],
+      stores: {}
+    };
+  }
+};
+
+// Helper function to get expected indexes for each store
+const getExpectedIndexes = (storeName) => {
+  switch (storeName) {
+    case STORE_NAME_PORTFOLIOS:
+      return ['account', 'date'];
+    case STORE_NAME_SECURITIES:
+      return ['symbol', 'account'];
+    case STORE_NAME_LOTS:
+      return ['securityId', 'account'];
+    case STORE_NAME_TRANSACTIONS:
+      return ['account', 'symbol', 'date', 'action'];
+    case STORE_NAME_MANUAL_ADJUSTMENTS:
+      return ['symbol', 'account', 'date'];
+    case STORE_NAME_TRANSACTION_METADATA:
+      return ['symbol', 'effectiveDate'];
+    case STORE_NAME_FILES:
+      return ['filename', 'fileType', 'uploadDate', 'account', 'fileHash'];
+    default:
+      return [];
+  }
 };

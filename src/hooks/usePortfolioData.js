@@ -1,7 +1,8 @@
 // hooks/usePortfolioData.js revision: 2
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics';
 import { getAllAccounts, getLatestSnapshot } from '../utils/portfolioStorage';
+import { repairDatabaseManually } from '../utils/databaseUtils';
 
 export const usePortfolioData = (selectedAccount) => {
   const [portfolioData, setPortfolioData] = useState([]);
@@ -64,7 +65,31 @@ export const usePortfolioData = (selectedAccount) => {
       }
     } catch (err) {
       console.error('Error loading initial portfolio:', err);
-      setError('Failed to load portfolio data');
+      
+      // Check if this is a database index error
+      if (err.message && err.message.includes('index was not found')) {
+        setError('Database indexes are corrupted. Attempting automatic repair...');
+        
+        try {
+          // Attempt automatic database repair
+          const repairResult = await repairDatabaseManually();
+          if (repairResult.success) {
+            setError('Database repaired successfully. Retrying...');
+            // Retry loading the portfolio
+            setTimeout(() => {
+              loadInitialPortfolio();
+            }, 1000);
+            return;
+          } else {
+            setError(`Database repair failed: ${repairResult.message}. Please use the Database Debugger to fix this issue.`);
+          }
+        } catch (repairError) {
+          setError(`Database repair failed: ${repairError.message}. Please use the Database Debugger to fix this issue.`);
+        }
+      } else {
+        setError('Failed to load portfolio data');
+      }
+      
       setIsLoading(false);
     }
   };
@@ -132,6 +157,25 @@ export const usePortfolioData = (selectedAccount) => {
     }
   };
 
+  // Manual database repair function
+  const repairDatabase = async () => {
+    try {
+      setError('Repairing database...');
+      const result = await repairDatabaseManually();
+      if (result.success) {
+        setError('Database repaired successfully. Retrying portfolio load...');
+        // Retry loading the portfolio
+        setTimeout(() => {
+          loadInitialPortfolio();
+        }, 1000);
+      } else {
+        setError(`Database repair failed: ${result.message}`);
+      }
+    } catch (err) {
+      setError(`Database repair failed: ${err.message}`);
+    }
+  };
+
   return {
     portfolioData,
     isLoading,
@@ -144,6 +188,7 @@ export const usePortfolioData = (selectedAccount) => {
     resetError,
     loadPortfolio,
     setLoadingState,
-    refreshData
+    refreshData,
+    repairDatabase // Add the repair function to the return object
   };
 };

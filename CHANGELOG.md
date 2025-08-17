@@ -1,3 +1,7 @@
+### 0.4.3
+
+- deal with database problems
+
 ### 0.4.2
 
 - continue with refactor of portfolioStorage.js

@@ -1,3 +1,7 @@
+### 0.5.2
+
+- fonts
+
 ### 0.5.1
 
 - adding frontend design skill

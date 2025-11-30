@@ -1,0 +1,742 @@
+---
+description: Frontend design and UI/UX improvement guidelines for Vue.js + Vuetify investment portfolio application
+---
+
+# Frontend Design & UI/UX Guidelines
+
+## Architecture Context
+
+This application uses:
+- **Vue.js 3** with Options API (no-build environment, ES modules)
+- **Vuetify 3** Material Design framework
+- **No build step** - direct ES module imports with `.js` extensions
+- Component structure in `http/js/components/`
+- Theme configuration in `http/js/app.js`
+- Custom styles in `http/css/app.css`
+
+## Vue.js + Vuetify Patterns
+
+### Component Structure
+- Use `defineComponent` from Vue for all components
+- Export default using `defineComponent({ ... })`
+- Use `template` property as string literal (backtick strings for multi-line)
+- Follow Options API patterns: `props`, `data()`, `computed`, `methods`, `watch`, lifecycle hooks
+- Always include `.js` extension in imports: `import Component from './Component.js'`
+
+### Vuetify Component Usage
+- Use kebab-case for Vuetify components: `v-card`, `v-btn`, `v-container`, `v-dialog`
+- Leverage Vuetify layout components: `v-app`, `v-main`, `v-container`, `v-row`, `v-col`
+- Use Vuetify utility classes over custom CSS when possible: `d-flex`, `flex-column`, `justify-center`, `align-center`
+- Apply spacing utilities: `mt-4`, `mb-2`, `pa-4`, `ma-2` (margin/padding)
+- Use text utilities: `text-h5`, `text-caption`, `text--secondary`
+
+### Theme Colors
+Reference the theme configuration in `http/js/app.js`:
+- **Primary**: `#1976D2` (blue) - main actions, headers
+- **Secondary**: `#424242` (gray) - secondary elements
+- **Accent**: `#82B1FF` (light blue) - highlights
+- **Error**: `#FF5252` (red) - errors, warnings
+- **Info**: `#2196F3` (blue) - informational messages
+- **Success**: `#4CAF50` (green) - success states, positive values
+- **Warning**: `#FB8C00` (orange) - warnings
+
+Apply colors via props: `color="primary"` or `color="success"` for positive financial metrics
+
+## Visual Design & Beauty
+
+### Aesthetic-Usability Effect
+Users perceive aesthetically pleasing designs as more usable. Balance visual appeal with functionality to enhance user satisfaction and engagement. Beautiful interfaces build trust and improve the overall user experience.
+
+### Typography Hierarchy
+- **Hero/Page Titles**: Use `text-h1` (96px) or `text-h2` (60px) for main page titles
+- **Section Titles**: Use `text-h4` (32px) or `text-h5` (24px) for section headings
+- **Card Titles**: Use `text-h6` (20px) or `text-subtitle-1` (16px, medium weight)
+- **Body Text**: Use `text-body-1` (16px) for primary content, `text-body-2` (14px) for secondary
+- **Captions**: Use `text-caption` (12px) for metadata, timestamps, helper text
+- **Maintain 1.5-2x size ratio** between heading levels for clear hierarchy
+- **Limit to 2-3 font weights**: 400 (regular), 500 (medium), 700 (bold)
+- Use `text--secondary` for less important information
+
+### Whitespace & Spacing
+- **Follow 8px grid system** (Vuetify default):
+  - `pa-1` = 4px padding
+  - `pa-2` = 8px padding
+  - `pa-4` = 16px padding (standard card padding)
+  - `pa-6` = 24px padding (generous spacing)
+  - `pa-8` = 32px padding (section spacing)
+- **Use generous whitespace**: `mb-6` (24px) between major sections, `pa-6` inside cards
+- **Group related elements** with less spacing (`mb-2`), separate sections with more (`mb-6`)
+- **Container max-width**: 1200px (as defined in `portfolio-container` class)
+- Apply responsive padding: `pa-3 pa-md-6` (less on mobile, more on desktop)
+
+### Visual Rhythm
+- **Consistent spacing creates visual rhythm** and guides the eye through content
+- Use `v-divider` with `class="my-4"` or `class="my-6"` to separate sections
+- Align elements to grid: use `v-row`/`v-col` or flex utilities (`d-flex`, `justify-center`)
+- Maintain consistent spacing patterns across similar components
+
+### Color Psychology for Financial Data
+- **Green (`success`) for gains**: Represents positive growth, money, success
+- **Red (`error`) for losses**: Draws attention, indicates caution, negative change
+- **Blue (`primary`) for neutral/actions**: Conveys trust, stability, professionalism
+- **Always use color + icon/text indicator** - Never rely solely on color (accessibility requirement)
+- Example: `<v-chip color="success"><v-icon left>mdi-trending-up</v-icon>+5.2%</v-chip>`
+
+### Elevation & Depth
+- **Standard cards**: Use `elevation="2"` for normal content cards
+- **Modals/Dialogs**: Use `elevation="4"` or higher for overlays
+- **Subtle borders**: Use `outlined` prop for cards when elevation isn't needed
+- **Create depth hierarchy**: Higher elevation = more important content
+- Use `flat` prop for minimal elevation when needed
+
+## Visual Design Principles
+
+### Typography
+- Use Roboto font family (already configured in Vuetify)
+- Use Vuetify text classes for hierarchy: `text-h1` through `text-h6`, `text-subtitle-1`, `text-body-2`, `text-caption`
+- Maintain consistent font weights: 400 (regular), 500 (medium), 700 (bold)
+- Use `text--secondary` for less important information
+
+### Spacing & Layout
+- Follow 8px grid system (Vuetify default)
+- Use Vuetify spacing utilities: `mt-1` (4px) through `mt-12` (48px)
+- Container max-width: 1200px (as defined in `portfolio-container` class)
+- Use `v-container` for content padding and max-width constraints
+- Apply responsive padding: `pa-4` on mobile, `pa-6` on desktop
+
+### Elevation & Shadows
+- Use Vuetify elevation props: `elevation="2"` for cards, `elevation="4"` for modals
+- Apply `outlined` prop for subtle borders instead of shadows when appropriate
+- Use `flat` prop for minimal elevation when needed
+
+### Color Usage for Financial Data
+- **Positive values** (gains, profits): Use `color="success"` or `success` class
+- **Negative values** (losses): Use `color="error"` or `error` class
+- **Neutral values**: Use default text color or `text--secondary`
+- Format currency: Use `{{ '$' + (value ? value.toFixed(2) : '0.00') }}` (never use `${{` which causes syntax errors)
+
+## Accessibility
+
+### WCAG 2.2 Level AA Requirements
+
+#### Color Contrast
+- **Normal text**: Minimum 4.5:1 contrast ratio (Vuetify theme colors meet this)
+- **Large text** (18pt+ or 14pt+ bold): Minimum 3:1 contrast ratio
+- Test contrast using WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
+- Never rely solely on color to convey information (use icons, text, or patterns)
+
+#### Focus Indicators
+- Vuetify provides 2px minimum outline with 3:1 contrast ratio by default
+- Ensure all interactive elements have visible focus states
+- Custom focus styles must meet 2px minimum and 3:1 contrast requirements
+
+#### Touch Targets
+- **Minimum size**: 44x44px for all interactive elements on mobile
+- Use `size="large"` on mobile buttons: `<v-btn size="large">`
+- Increase spacing between touch targets: `mb-3` (12px) minimum between buttons
+
+#### Error Identification
+- **Required fields**: Mark with `*` and `required` prop: `<v-text-field required label="Amount *">`
+- **Error messages**: Use `v-messages` with `:messages` array for field-level errors
+- **Success indicators**: Use `type="success"` on `v-alert` or `v-snackbar`
+- **Form validation**: Show errors immediately or on blur, not on every keystroke
+
+#### Keyboard Navigation
+- All interactive elements must be keyboard accessible (Vuetify handles this by default)
+- **Tab order**: Logical sequence through form fields and interactive elements
+- **Skip links**: Add skip-to-content links for long pages: `<a href="#main-content" class="skip-link">Skip to main content</a>`
+- **Modal focus trap**: Vuetify dialogs handle focus trapping automatically
+- **ESC key**: Close modals with `@keydown.esc` handler
+
+### ARIA Patterns
+
+#### Dynamic Data Updates
+```javascript
+<div aria-live="polite" aria-atomic="true">
+  <p>Portfolio Value: {{ formatCurrency(portfolioStats.totalValue) }}</p>
+</div>
+```
+- Use `aria-live="polite"` for non-critical updates (portfolio values)
+- Use `aria-live="assertive"` for critical alerts
+- Use `aria-atomic="true"` to announce entire region when any part changes
+
+#### Icon Buttons
+```javascript
+<v-btn icon aria-label="Close dialog" @click="onClose">
+  <v-icon>mdi-close</v-icon>
+</v-btn>
+```
+- **Always include `aria-label`** for icon-only buttons
+- Describe the action, not the icon: "Close dialog" not "X icon"
+
+#### Status Updates
+```javascript
+<v-alert type="info" role="status">
+  File uploaded successfully
+</v-alert>
+
+<v-alert type="error" role="alert" prominent>
+  Error uploading file. Please try again.
+</v-alert>
+```
+- Use `role="status"` for non-critical updates (success messages, info)
+- Use `role="alert"` for critical errors that need immediate attention
+
+#### Form Fields with Validation
+```javascript
+<v-text-field
+  v-model="amount"
+  label="Amount"
+  :rules="[rules.required, rules.positive]"
+  aria-describedby="amount-error"
+>
+</v-text-field>
+<v-messages id="amount-error" :messages="validationErrors.amount"></v-messages>
+```
+- Link validation messages with `aria-describedby` pointing to message element ID
+
+### Screen Reader Considerations
+
+#### Currency and Financial Data
+```javascript
+<div aria-label="Total portfolio value: $12,345.67">
+  {{ formatCurrency(portfolioStats.totalValue) }}
+</div>
+```
+- Use `aria-label` with full descriptive text for complex financial displays
+- Format numbers for screen readers: "twelve thousand three hundred forty-five dollars and sixty-seven cents"
+
+#### Data Tables
+```javascript
+<v-data-table
+  :headers="headers"
+  :items="items"
+  aria-label="Portfolio positions table"
+>
+  <template v-slot:top>
+    <caption class="sr-only">Portfolio positions with current values and gains</caption>
+  </template>
+</v-data-table>
+```
+- Add `aria-label` or `<caption>` to describe table purpose
+- Use `aria-sort="ascending"` or `aria-sort="descending"` on sortable column headers
+
+#### Charts and Visualizations
+- Provide text alternatives: data tables, summaries, or descriptions
+- Include `aria-label` describing the chart: `aria-label="Portfolio allocation pie chart"`
+- Ensure all data is accessible via alternative format (table)
+
+## User Experience Guidelines
+
+### Navigation Patterns
+- Use `v-tabs` for main navigation between sections (account-management, portfolio, transactions, lots, storage-manager)
+- Implement breadcrumbs or clear page titles to show current location
+- Use `v-app-bar` for persistent header navigation
+- Provide clear back/close buttons in modals and detail views
+- Add skip links for keyboard users on long pages
+
+### Feedback Mechanisms
+- **Loading states**: Use `v-skeleton-loader` for better perceived performance (preferred over spinners)
+- **Alternative loading**: Use `v-progress-circular` with `indeterminate` prop when skeleton not available
+- **Success feedback**: Use `v-snackbar` with `type="success"` for file uploads, saves
+- **Error feedback**: Use `v-alert` with `type="error"` and `prominent` prop for important errors
+- **Info messages**: Use `v-alert` with `type="info"` for informational content
+- Show upload progress indicators when processing files
+- Use `aria-busy="true"` on loading containers: `<div aria-busy="true">`
+
+### Error Handling
+
+#### Financial App Specific Patterns
+- **Currency validation**: Use `v-text-field` with `type="number"` and `:rules` for range validation
+  ```javascript
+  :rules="[
+    v => !!v || 'Amount is required',
+    v => v > 0 || 'Amount must be positive',
+    v => v <= 1000000 || 'Amount exceeds maximum'
+  ]"
+  ```
+- **File upload**: Show file size, format validation before upload
+- **Data sync errors**: Detect offline state, show retry button with clear message
+- **Transaction validation**: Validate before submission, show field-level errors
+
+#### Error Message Patterns
+```javascript
+<v-alert type="error" prominent dismissible>
+  <div class="font-weight-bold mb-2">Upload Failed</div>
+  <div>Unable to process file. Please check the format and try again.</div>
+  <v-btn color="primary" @click="retryUpload" class="mt-3">Retry Upload</v-btn>
+</v-alert>
+```
+- Use `v-alert` with `type="error"`, `prominent`, and `dismissible`
+- Include recovery action: "Please try uploading again" with retry button
+- Field-level errors: Use `v-messages` with `:messages` array
+- Success feedback: Use `v-snackbar` with `type="success"` for non-blocking feedback
+- Display user-friendly error messages, not technical stack traces
+- Log technical errors to console but show actionable messages to users
+
+### Data Display
+- Use `v-data-table` for tabular financial data with sorting and filtering
+- Format numbers consistently: 2 decimal places for currency, appropriate precision for percentages
+- Use `v-chip` for status indicators, tags, or small metadata
+- Group related information in `v-card` components with clear `v-card-title` and `v-card-text`
+
+## Financial Data Visualization
+
+### Number Formatting (Best Practice)
+```javascript
+// Use Intl.NumberFormat for currency formatting
+formatCurrency(value) {
+  if (!value && value !== 0) return '$0.00';
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }).format(value);
+}
+
+// In template
+{{ formatCurrency(portfolioStats.totalValue) }}
+```
+- **Always use `Intl.NumberFormat`** for currency (more reliable than manual formatting)
+- Create helper method: `formatCurrency(value)` returns formatted string
+- Always show 2 decimal places for currency, appropriate precision for percentages
+- Never use `${{` in templates (causes syntax errors) - use `{{ '$' + value }}` or helper method
+
+### Color + Icon Pattern (Accessibility)
+```javascript
+<!-- Don't rely solely on color -->
+<v-chip :color="gain >= 0 ? 'success' : 'error'">
+  <v-icon left>{{ gain >= 0 ? 'mdi-trending-up' : 'mdi-trending-down' }}</v-icon>
+  {{ gain >= 0 ? '+' : '' }}{{ gain.toFixed(2) }}%
+</v-chip>
+```
+- **Don't rely solely on color**: Add `mdi-trending-up` icon for gains, `mdi-trending-down` for losses
+- Use `v-chip` with color and icon for gain/loss indicators
+- Include text indicator (+ or - sign) in addition to color and icon
+
+### Data Tables (Enhanced)
+```javascript
+<v-data-table
+  :headers="headers"
+  :items="items"
+  :sort-by="[{ key: 'value', order: 'desc' }]"
+  :items-per-page="25"
+  :items-per-page-options="[10, 25, 50, 100]"
+  aria-label="Portfolio positions"
+>
+  <template v-slot:top>
+    <v-toolbar flat>
+      <v-toolbar-title>Portfolio Positions</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-menu>
+        <template v-slot:activator="{ props }">
+          <v-btn v-bind="props" icon>
+            <v-icon>mdi-view-column</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item v-for="header in headers" :key="header.key">
+            <v-checkbox
+              v-model="header.visible"
+              :label="header.title"
+            ></v-checkbox>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+  </template>
+</v-data-table>
+```
+- Use `v-data-table` with sortable columns: `:sort-by="[{ key: 'value', order: 'desc' }]"`
+- Add pagination: `:items-per-page="25"` with `items-per-page-options`
+- Column visibility: Use `v-menu` with checkboxes for column toggles on mobile
+- Add `aria-sort="ascending"` or `aria-sort="descending"` to sortable column headers
+- Use `aria-label` on data cells with complex formatting
+- Add `caption` or `aria-label` to table describing its purpose
+
+### Loading States
+```javascript
+<!-- Preferred: Skeleton loader -->
+<v-skeleton-loader
+  v-if="loading"
+  type="table"
+  class="mb-4"
+></v-skeleton-loader>
+
+<!-- Alternative: Spinner -->
+<v-progress-circular
+  v-if="loading"
+  indeterminate
+  color="primary"
+  aria-label="Loading portfolio data"
+></v-progress-circular>
+```
+- **Show skeleton rows** or `v-skeleton-loader` instead of spinner (better perceived performance)
+- Use `aria-busy="true"` on loading containers
+- Use `aria-label` to describe what's loading
+
+### Empty States
+```javascript
+<v-empty-state
+  v-if="!items || items.length === 0"
+  title="No positions found"
+  text="Upload a file to get started with your portfolio tracking."
+>
+  <template v-slot:image>
+    <v-icon size="64" color="grey-lighten-1">mdi-chart-line</v-icon>
+  </template>
+  <template v-slot:actions>
+    <v-btn color="primary" @click="openUploadDialog">
+      Upload File
+    </v-btn>
+  </template>
+</v-empty-state>
+```
+- Use `v-empty-state` component with icon, message, and action button
+- Provide helpful guidance: "No positions found. Upload a file to get started."
+- Include clear call-to-action button
+
+### Charts & Graphs (Future)
+- When adding charts, use consistent color scheme matching theme
+- Provide accessible alternatives (data tables) for screen readers
+- Include clear axis labels and legends
+- Use appropriate chart types: line for trends, bar for comparisons, pie for allocations
+- Add `aria-label` describing the chart content
+
+### Portfolio Metrics Display
+- Use `v-card` with `v-card-title` for metric sections
+- Display key metrics prominently: Total Value, Total Gain, Gain %
+- Use `v-chip` or badges for status indicators
+- Group related metrics together visually
+- Use `aria-live="polite"` for dynamic metric updates
+
+## Responsive Design
+
+### Vuetify 3 Breakpoints (Specific)
+- **xs**: <600px (mobile portrait)
+- **sm**: 600-960px (mobile landscape, tablet portrait)
+- **md**: 960-1264px (tablet landscape, small desktop)
+- **lg**: 1264-1904px (desktop)
+- **xl**: >1904px (large desktop)
+
+### Mobile-First Approach
+- Design for mobile screens first, then enhance for larger screens
+- **Hide on mobile, show on desktop**: `d-none d-md-block`
+- **Stack on mobile, row on desktop**: `flex-column flex-md-row`
+- **Smaller text on mobile**: `text-h6 text-md-h4` (h6 on mobile, h4 on desktop)
+- **Less padding on mobile**: `pa-3 pa-md-6`
+- Test layouts at all breakpoints
+
+### Layout Patterns
+- Use `v-container` with `fluid` prop for full-width layouts when needed
+- Stack elements vertically on mobile: `flex-column`
+- Use `v-row` and `v-col` for grid layouts when needed (though flex utilities are often simpler)
+- Ensure touch targets are at least 44x44px for mobile interaction
+
+### Touch-Friendly Design
+- **Button size**: Use `size="large"` on mobile (48px height): `<v-btn size="large">`
+- **Spacing**: Increase padding between touch targets: `mb-3` (12px) minimum
+- **Swipe gestures**: Consider `v-touch` for swipeable cards on mobile
+- Test all interactions on actual touch devices
+
+### Responsive Typography
+- Use responsive text classes: `text-h6 text-md-h4` (smaller on mobile, larger on desktop)
+- Adjust spacing for mobile: `pa-2 pa-md-4` (less padding on mobile)
+- Ensure text remains readable at all sizes (minimum 14px for body text)
+
+### Responsive Data Tables
+- **Mobile**: Card-based layout using `v-card` with `v-list-item` for each row
+- **Tablet+**: Standard `v-data-table`
+- **Alternative**: Horizontal scroll with sticky first column
+- Use `v-menu` for column visibility controls on mobile
+
+## Component Design
+
+### Reusability
+- Create reusable components in `http/js/components/`
+- Extract common patterns (e.g., data tables, form inputs, cards) into shared components
+- Use props for customization rather than duplicating component code
+- Compose complex components from simpler ones
+
+### Component Composition
+- Break down large components into smaller, focused components
+- Use slots for flexible content areas when appropriate
+- Pass data down via props, emit events up for user interactions
+- Use provide/inject for shared state (as done with stores in PortfolioManager)
+
+### Prop Patterns
+- Define props with types: `props: { value: String, items: Array, onAction: Function }`
+- Use descriptive prop names that indicate purpose
+- Provide default values when appropriate: `props: { showButton: { type: Boolean, default: true } }`
+- Document prop usage in component comments
+- Validate props exist before using in templates: `v-if="portfolioStats"` before accessing `portfolioStats.totalValue`
+
+## Form Design
+
+### Input Validation
+- Use Vuetify form validation: `:rules` prop on `v-text-field`, `v-select`, etc.
+- Show validation errors immediately or on blur (not on every keystroke)
+- Use `v-messages` or helper text for validation feedback
+- Provide clear, actionable error messages
+- Link validation messages with `aria-describedby`
+
+### Form Layout
+- Use `v-form` wrapper for form validation
+- Group related fields visually with spacing or `v-card` sections
+- Use `v-card-actions` for form buttons (Submit, Cancel, Reset)
+- Align action buttons to the right with `v-spacer`
+- Mark required fields with `*` and `required` prop
+
+### File Input Design
+- Use `v-file-input` with clear labels and accept attributes
+- Show file name and size after selection
+- Provide drag-and-drop visual feedback when possible
+- Display upload progress and success/error states clearly
+- Validate file format and size before upload
+
+### Input States
+- Use `disabled` prop for inputs that shouldn't be edited
+- Use `readonly` for display-only values
+- Show `loading` state on submit buttons during processing
+- Provide clear feedback for required vs optional fields
+- Use `aria-describedby` to link inputs with validation messages
+
+## Performance
+
+### No-Build Optimizations
+- **Lazy loading**: Use dynamic imports for heavy components:
+  ```javascript
+  async mounted() {
+    const HeavyComponent = await import('./HeavyComponent.js');
+    this.HeavyComponent = HeavyComponent.default;
+  }
+  ```
+- **Debouncing**: Debounce search/filter inputs (300ms delay):
+  ```javascript
+  methods: {
+    debounceSearch: debounce(function(query) {
+      this.search(query);
+    }, 300)
+  }
+  ```
+- **Computed memoization**: Use computed properties for expensive calculations
+- **Avoid deep watchers**: Use specific paths: `watch: { 'portfolioData.length' }` not `watch: { portfolioData }`
+- Use `v-show` for frequently toggled elements (keeps in DOM)
+- Use `v-if` for conditionally rendered elements that may not be needed
+
+### Loading Strategy
+- **Progressive loading**: Load critical data first, then details
+- **Skeleton screens**: Use `v-skeleton-loader` for better perceived performance
+- **Optimistic updates**: Update UI immediately, rollback on error
+- **Error boundaries**: Wrap components in try-catch, show fallback UI:
+  ```javascript
+  try {
+    await this.loadData();
+  } catch (error) {
+    console.error(error);
+    this.showError('Failed to load data. Please refresh the page.');
+  }
+  ```
+
+## Common Patterns
+
+### Dialog/Modal Pattern with Focus Management
+```javascript
+<v-dialog
+  :value="isOpen"
+  @input="onClose"
+  @keydown.esc="onClose"
+  max-width="600"
+  :aria-labelledby="dialogTitleId"
+>
+  <v-card>
+    <v-card-title :id="dialogTitleId">Edit Position</v-card-title>
+    <v-card-text>
+      <!-- Content -->
+    </v-card-text>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn text @click="onClose">Cancel</v-btn>
+      <v-btn color="primary" @click="onSubmit">Save</v-btn>
+    </v-card-actions>
+  </v-card>
+</v-dialog>
+```
+- Include `@keydown.esc` handler for keyboard closing
+- Vuetify handles focus trap automatically
+- Use `aria-labelledby` linking to title for screen readers
+
+### Button with Icon
+```javascript
+<v-btn color="primary" @click="handleClick" aria-label="Upload file">
+  <v-icon left>mdi-file-upload</v-icon>
+  Upload File
+</v-btn>
+
+<!-- Icon-only button -->
+<v-btn icon aria-label="Close dialog" @click="onClose">
+  <v-icon>mdi-close</v-icon>
+</v-btn>
+```
+- Always include `aria-label` for icon-only buttons
+- Use `left` prop for icon before text
+
+### Alert with Actions
+```javascript
+<v-alert type="error" prominent dismissible role="alert">
+  <div class="font-weight-bold mb-2">Error Title</div>
+  <div>{{ errorMessage }}</div>
+  <v-btn color="primary" @click="handleAction" class="mt-3">Retry</v-btn>
+</v-alert>
+```
+- Use `role="alert"` for critical errors
+- Include actionable recovery buttons
+- Use `prominent` for important alerts
+
+### Data Table with Accessibility
+```javascript
+<v-data-table
+  :headers="headers"
+  :items="items"
+  :items-per-page="25"
+  aria-label="Portfolio positions table"
+>
+  <template v-slot:top>
+    <caption class="sr-only">Portfolio positions with current values and gains</caption>
+  </template>
+  <template v-slot:header.value="{ header }">
+    <th :aria-sort="sortOrder === 'asc' ? 'ascending' : 'descending'">
+      {{ header.title }}
+    </th>
+  </template>
+</v-data-table>
+```
+- Include `aria-label` or `<caption>` describing table purpose
+- Add `aria-sort` to sortable column headers
+- Use `aria-label` on complex data cells
+
+### Form with Validation
+```javascript
+<v-form ref="form" v-model="valid">
+  <v-text-field
+    v-model="amount"
+    label="Amount"
+    required
+    :rules="[rules.required, rules.positive]"
+    aria-describedby="amount-error"
+  ></v-text-field>
+  <v-messages id="amount-error" :messages="validationErrors.amount"></v-messages>
+  
+  <v-btn
+    color="primary"
+    @click="submit"
+    :loading="submitting"
+    :disabled="!valid"
+  >
+    Submit
+  </v-btn>
+</v-form>
+```
+- Use `:rules` prop for validation
+- Link validation messages with `aria-describedby`
+- Show loading state on submit button
+- Disable submit when form is invalid
+
+### Loading States with Accessibility
+```javascript
+<!-- Skeleton loader (preferred) -->
+<div aria-busy="true" aria-live="polite">
+  <v-skeleton-loader
+    v-if="loading"
+    type="table"
+  ></v-skeleton-loader>
+  <v-data-table v-else :items="items"></v-data-table>
+</div>
+
+<!-- Spinner (alternative) -->
+<v-progress-circular
+  v-if="loading"
+  indeterminate
+  color="primary"
+  aria-label="Loading portfolio data"
+></v-progress-circular>
+```
+- Use `aria-busy="true"` on loading containers
+- Use `aria-live="polite"` for dynamic content updates
+- Include descriptive `aria-label` on loading indicators
+
+## What NOT to Do
+
+### Common Mistakes to Avoid
+
+- ❌ **Don't use `${{` in templates** - Causes syntax errors. Use `{{ '$' + value }}` or helper method instead
+- ❌ **Don't rely solely on color for information** - Accessibility issue. Always add icons, text, or patterns
+- ❌ **Don't use custom CSS when Vuetify utilities exist** - Use `pa-4` instead of custom padding classes
+- ❌ **Don't create components without proper prop validation** - Always define props with types and defaults
+- ❌ **Don't use inline styles** - Use Vuetify props/classes: `color="primary"` not `style="color: blue"`
+- ❌ **Don't skip loading states** - Users need feedback. Always show loading indicators or skeleton screens
+- ❌ **Don't use technical error messages** - Show user-friendly text: "Unable to upload file" not "Error 500"
+- ❌ **Don't create inconsistent spacing** - Follow 8px grid system consistently
+- ❌ **Don't use too many font sizes** - Limit to 2-3 heading levels for visual hierarchy
+- ❌ **Don't ignore mobile experience** - Test on small screens, use responsive classes
+- ❌ **Don't forget ARIA labels on icon buttons** - Always include `aria-label` for icon-only buttons
+- ❌ **Don't use deep watchers on large datasets** - Use specific paths: `watch: { 'data.length' }` not `watch: { data }`
+- ❌ **Don't show spinners when skeleton loaders are better** - Skeleton screens improve perceived performance
+- ❌ **Don't forget to format currency properly** - Use `Intl.NumberFormat`, not manual string concatenation
+- ❌ **Don't create tables without accessibility** - Always add `aria-label` or `<caption>`
+
+## Best Practices
+
+### Code Organization
+- Keep templates readable - extract complex expressions to computed properties or methods
+- Use computed properties for derived data (e.g., formatted currency, filtered lists)
+- Extract formatting logic to methods: `formatCurrency(value)`, `formatDate(date)`
+- Keep component files focused - split large components into smaller ones
+
+### Consistency
+- Follow existing component patterns from `http/js/components/`
+- Use consistent naming: PascalCase for components, camelCase for props/methods
+- Maintain consistent spacing and layout patterns across similar components
+- Use the same color scheme and typography throughout
+
+### Error Prevention
+- Always check for null/undefined before accessing nested properties: `obj && obj.property`
+- Use ternary operators for safe property access: `value ? value.toFixed(2) : '0.00'`
+- Never use `${{` in templates (causes syntax errors) - use `{{ '$' + value }}` instead
+- Validate props exist before using in templates: `v-if="portfolioStats"` before accessing `portfolioStats.totalValue`
+
+## Testing Considerations
+
+### Visual Testing
+- Test on multiple screen sizes (mobile, tablet, desktop)
+- Verify color contrast meets WCAG AA standards (4.5:1 for normal text, 3:1 for large text)
+- Check that interactive elements are clearly identifiable
+- Ensure loading states don't cause layout shifts
+- Test with actual touch devices for mobile interactions
+
+### Interaction Testing
+- Verify all buttons and links are clickable/tappable
+- Test form validation and error messages
+- Check that modals can be closed via multiple methods (button, ESC key, outside click)
+- Verify keyboard navigation works for all interactive elements
+- Test with screen readers (NVDA, JAWS, VoiceOver)
+
+### Accessibility Testing
+- Use browser DevTools accessibility panel
+- Test keyboard navigation (Tab, Enter, Space, Esc)
+- Verify ARIA labels and roles are correct
+- Check color contrast ratios
+- Test with screen readers
+
+## References
+
+### Authoritative Sources
+- **WCAG 2.2 Quick Reference**: https://www.w3.org/WAI/WCAG22/quickref/
+- **Vuetify 3 Documentation**: https://v3.vuetifyjs.com/
+- **Vuetify 3 Accessibility**: https://v3.vuetifyjs.com/en/features/accessibility/
+- **Material Design 3**: https://m3.material.io/
+- **Vue.js Documentation**: https://vuejs.org/
+- **Vue.js Style Guide**: https://vuejs.org/style-guide/
+- **WebAIM Contrast Checker**: https://webaim.org/resources/contrastchecker/
+- **Aesthetic-Usability Effect**: https://en.wikipedia.org/wiki/Aesthetic%E2%80%93usability_effect

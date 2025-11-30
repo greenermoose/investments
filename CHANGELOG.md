@@ -1,3 +1,7 @@
+### 0.5.1
+
+- adding frontend design skill
+
 ### 0.5.0
 
 - rewritten as a no-build Vue/Vuetify app

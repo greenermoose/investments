@@ -35,5 +35,5 @@ dist-ssr
 /build
 /dist
 
-# CSV data files
-*.csv
+# Example data files
+examples/*

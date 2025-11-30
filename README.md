@@ -1,6 +1,6 @@
 # Investment Portfolio Manager
 
-A React-based web application for analyzing and managing investment portfolios with time-series comparison capabilities.
+A Vue.js-based web application for analyzing and managing investment portfolios with time-series comparison capabilities. This is a no-build application that runs directly in the browser using ES modules.
 
 # Investment Portfolio Dashboard
 
@@ -31,18 +31,18 @@ A React-based web application for analyzing and managing investment portfolios w
 
 ## Technologies Used
 
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/) (for fast development and builds)
-- [Tailwind CSS](https://tailwindcss.com/) (for styling)
-- [Recharts](https://recharts.org/) (for data visualization)
+- [Vue 3](https://vuejs.org/) (Options API with ES modules)
+- [Vuetify](https://vuetifyjs.com/) (Material Design component framework)
+- [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) (native browser module support, no build step required)
 - [PapaParse](https://www.papaparse.com/) (for CSV parsing)
+- [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) (browser-based data storage)
 
 ## Setup and Installation
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- A modern web browser with ES module support (Chrome, Firefox, Safari, Edge - all recent versions)
+- A web server to serve the files (required for ES modules to work properly)
 
 ### Installation
 
@@ -52,21 +52,54 @@ A React-based web application for analyzing and managing investment portfolios w
    cd investment-portfolio-manager
    ```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn
-   ```
+2. **No build step required!** This application uses native ES modules and runs directly in the browser.
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+3. Serve the `http` folder using any web server. Here are a few options:
 
-4. Open your browser and navigate to `http://localhost:3000`
+   **Option A: Python 3 (recommended for quick testing)**
+   ```bash
+   cd http
+   python3 -m http.server 8000
+   ```
+   Then open your browser to `http://localhost:8000`
+
+   **Option B: Node.js http-server**
+   ```bash
+   npx http-server http -p 8000
+   ```
+   Then open your browser to `http://localhost:8000`
+
+   **Option C: PHP**
+   ```bash
+   cd http
+   php -S localhost:8000
+   ```
+   Then open your browser to `http://localhost:8000`
+
+   **Option D: Any web server**
+   - Point your web server's document root to the `http` folder
+   - Ensure the server supports ES modules (most modern servers do)
+   - Access the application via your server's URL
+
+### Project Structure
+
+The application is organized in the `http` folder:
+
+```
+http/
+├── index.html          # Main HTML entry point
+├── css/                # Stylesheets (Vuetify and app styles)
+├── js/
+│   ├── app.js          # Vue application entry point
+│   ├── vue.esm-browser.js    # Vue 3 ES module
+│   ├── vuetify.esm.js        # Vuetify ES module
+│   ├── components/     # Vue components
+│   ├── composables/    # Reactive stores (state management)
+│   ├── repositories/   # Data access layer (IndexedDB)
+│   ├── services/       # Business logic services
+│   └── utils/          # Utility functions
+└── fonts/              # Web fonts
+```
 
 ## Usage
 
@@ -154,21 +187,43 @@ Example: `IRA20250427180000.csv`
 
 ## Data Persistence
 
-The application uses browser-based storage to maintain:
+The application uses browser-based storage (IndexedDB) to maintain:
 - Portfolio snapshots across sessions
 - Security metadata (acquisition dates, descriptions)
 - Tax lot information
 - Lot tracking preferences
+- Transaction history
+- Uploaded file metadata
 
-## Build for Production
+All data is stored locally in your browser - no server or cloud storage required.
 
-```bash
-npm run build
-# or
-yarn build
-```
+## Development
 
-The built files will be in the `dist` directory, ready to be deployed to any static hosting service.
+Since this is a no-build application:
+
+- **No build step**: Edit files directly in the `http` folder
+- **ES Modules**: All imports use native ES module syntax with `.js` extensions
+- **Hot Reload**: Use your web server's capabilities or manually refresh the browser
+- **Browser DevTools**: Use browser developer tools for debugging
+
+### Architecture Notes
+
+- **Components**: Vue 3 Options API components in `js/components/`
+- **State Management**: Reactive stores using Vue's `reactive()` in `js/composables/`
+- **Data Layer**: Repository pattern for IndexedDB access in `js/repositories/`
+- **Business Logic**: Service layer in `js/services/`
+- **Utilities**: Helper functions in `js/utils/`
+
+## Deployment
+
+To deploy this application:
+
+1. Copy the entire `http` folder to your web server
+2. Ensure your web server supports ES modules (most modern servers do)
+3. Point your server's document root to the `http` folder
+4. Access the application via your server's URL
+
+No build or compilation step is required - the application runs directly from the source files.
 
 ## Contributing
 
@@ -192,7 +247,7 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 ## Acknowledgements
 
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Recharts](https://recharts.org/)
+- [Vue.js](https://vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/)
 - [PapaParse](https://www.papaparse.com/)
+- [Material Design Icons](https://materialdesignicons.com/)

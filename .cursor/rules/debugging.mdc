@@ -1,0 +1,154 @@
+---
+description: Debugging patterns and common error fixes for Vue.js and Vuetify applications
+globs: ["**/*.js", "**/*.html"]
+alwaysApply: true
+---
+
+# Debugging Rules
+
+## Common Vue Template Syntax Errors
+
+### Template Literal vs Vue Interpolation Conflict
+
+**Error**: `Uncaught SyntaxError: Unexpected token '.'`
+
+**Cause**: Using `${{` in a template string. The `$` is interpreted as the start of a JavaScript template literal expression `${`, but then `{{` follows, causing a syntax error.
+
+**Fix**:
+- ❌ **Wrong**: `${{ value }}`
+- ✅ **Correct**: `{{ '$' + value }}` or `{{ '$' + (expression) }}`
+- ✅ **Alternative**: Use computed property: `{{ formattedValue }}` where `formattedValue` is a computed property that returns `'$' + value`
+
+**Example Fix**:
+```javascript
+// Before (ERROR):
+<p>Total Value: ${{ portfolioStats.totalValue ? portfolioStats.totalValue.toFixed(2) : '0.00' }}</p>
+
+// After (CORRECT):
+<p>Total Value: {{ '$' + (portfolioStats.totalValue ? portfolioStats.totalValue.toFixed(2) : '0.00') }}</p>
+
+// Or better, use a method:
+<p>Total Value: {{ formatCurrency(portfolioStats.totalValue) }}</p>
+```
+
+### Missing Property Access Checks
+
+**Error**: `Cannot read property 'X' of undefined`
+
+**Fix**: Always check for null/undefined before accessing nested properties
+- Use: `obj && obj.property` or `obj ? obj.property : defaultValue`
+- Avoid: `obj.property` when `obj` might be undefined
+
+### Incorrect Interpolation Syntax
+
+**Error**: Template not rendering values
+
+**Common Mistakes**:
+- Using `${}` instead of `{{ }}` - `${}` is for JavaScript template literals, `{{ }}` is for Vue
+- Forgetting to close interpolation: `{{ value` should be `{{ value }}`
+- Using JavaScript expressions incorrectly in templates
+
+## Browser Console Debugging
+
+### Reading Error Messages
+
+1. **SyntaxError**: Check for typos, missing brackets, incorrect template syntax
+2. **TypeError**: Usually means accessing property on undefined/null
+3. **ReferenceError**: Variable or function not defined
+4. **404 errors**: Missing files, check import paths and file locations
+
+### Debugging Steps
+
+1. **Check the console** - Read the full error message and stack trace
+2. **Check the line number** - Go to the exact file and line mentioned
+3. **Check the column** - Sometimes the error is at a specific character position
+4. **Check surrounding code** - Syntax errors often affect multiple lines
+5. **Verify imports** - Ensure all imports are correct and files exist
+6. **Check template syntax** - Ensure Vue template syntax is correct
+
+## Common Vue Errors
+
+### Component Not Found
+
+**Error**: `Unknown custom element: <ComponentName>`
+
+**Fixes**:
+- Ensure component is imported: `import ComponentName from './ComponentName.js'`
+- Ensure component is registered: `components: { ComponentName }`
+- Check component name matches (case-sensitive)
+
+### Props Not Working
+
+**Error**: Props undefined or not reactive
+
+**Fixes**:
+- Ensure props are defined in `props` object
+- Check prop binding syntax: `:propName="value"` for dynamic, `propName="value"` for static
+- Verify parent component is passing the prop
+
+### Template Not Rendering
+
+**Fixes**:
+- Check that `template` property is a string (use backticks for multi-line)
+- Verify Vue interpolation syntax: `{{ }}` not `${}`
+- Check for JavaScript errors preventing Vue from mounting
+- Verify `v-if` conditions are evaluating correctly
+
+## Vuetify-Specific Errors
+
+### Component Not Rendering
+
+**Fixes**:
+- Ensure Vuetify is properly imported and configured in main app
+- Check component name is correct (kebab-case, `v-` prefix)
+- Verify Vuetify CSS is loaded
+- Check browser console for Vuetify-specific errors
+
+### Styling Issues
+
+**Fixes**:
+- Ensure Vuetify CSS is loaded before app CSS
+- Check for conflicting CSS rules
+- Verify Vuetify theme is configured
+- Use Vuetify utility classes instead of custom CSS when possible
+
+## File Not Found Errors
+
+### 404 Errors
+
+**Common Issues**:
+- Missing favicon: Add `<link rel="icon" href="path/to/favicon.ico">` or create a favicon
+- Incorrect import paths: Check relative paths, ensure `.js` extension is included
+- Missing files: Verify all referenced files exist
+
+**Favicon Fix**:
+```html
+<!-- Add to <head> section -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<!-- Or use a data URI for a simple placeholder -->
+<link rel="icon" href="data:,">
+```
+
+## Debugging Checklist
+
+When encountering errors:
+
+1. ✅ Check browser console for error messages
+2. ✅ Verify file paths and imports are correct
+3. ✅ Check template syntax (no `${{`, proper `{{ }}` usage)
+4. ✅ Verify component registration and props
+5. ✅ Check for null/undefined before property access
+6. ✅ Verify Vuetify components are properly imported
+7. ✅ Check that all required files exist (no 404s)
+8. ✅ Verify ES module syntax is correct
+9. ✅ Check for missing closing tags or brackets
+10. ✅ Use browser DevTools to inspect elements and component state
+
+## Prevention Strategies
+
+- Always check for null/undefined before accessing nested properties
+- Use computed properties for complex template expressions
+- Extract formatting logic to methods
+- Test components in isolation when possible
+- Use consistent naming conventions
+- Keep templates readable - extract complex logic to methods/computed

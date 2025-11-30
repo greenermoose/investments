@@ -1,0 +1,120 @@
+---
+description: Vuetify component library rules and patterns for Vue.js applications
+globs: ["**/*.js", "**/components/**"]
+alwaysApply: true
+---
+
+# Vuetify Rules
+
+## Component Naming
+
+- Use kebab-case for Vuetify components: `v-card`, `v-btn`, `v-container`
+- All Vuetify components start with `v-` prefix
+- Component names are lowercase with hyphens
+
+## Common Vuetify Components
+
+- **Layout**: `v-app`, `v-main`, `v-container`, `v-row`, `v-col`
+- **Cards**: `v-card`, `v-card-title`, `v-card-text`, `v-card-actions`
+- **Buttons**: `v-btn` with props like `color`, `size`, `icon`, `text`, `outlined`
+- **Navigation**: `v-tabs`, `v-tab`, `v-app-bar`, `v-toolbar-title`
+- **Forms**: `v-text-field`, `v-select`, `v-file-input`, `v-checkbox`
+- **Feedback**: `v-alert`, `v-dialog`, `v-snackbar`, `v-progress-circular`
+- **Data Display**: `v-table`, `v-data-table`, `v-list`, `v-list-item`
+
+## Vuetify Directives
+
+- Use Vuetify utility classes: `d-flex`, `flex-column`, `justify-center`, `align-center`
+- Spacing classes: `mt-4`, `mb-2`, `pa-4`, `ma-2` (margin/padding)
+- Text classes: `text-h5`, `text-caption`, `text--secondary`
+- Color classes: `color="primary"`, `color="success"`, `color="error"`
+
+## Component Props
+
+- **v-btn**: `color`, `size`, `icon`, `text`, `outlined`, `disabled`, `loading`
+- **v-card**: `elevation`, `outlined`, `flat`
+- **v-dialog**: `:value="boolean"`, `@input="handler"`, `max-width`
+- **v-file-input**: `:label`, `:accept`, `@change`
+- **v-alert**: `type` (error, warning, info, success), `prominent`, `dismissible`
+- **v-progress-circular**: `indeterminate`, `color`
+
+## Event Handling
+
+- Use `@click` for button clicks
+- Use `@input` for dialog close events: `@input="onClose"`
+- Use `@change` for file inputs and form changes
+- Bind dialog visibility: `:value="isOpen"` with `@input="isOpen = $event"`
+
+## Theming
+
+- Vuetify theme is configured in the main app file
+- Use theme colors: `primary`, `secondary`, `accent`, `error`, `info`, `success`, `warning`
+- Apply colors via props: `color="primary"` or classes
+
+## Common Patterns
+
+### Dialog/Modal Pattern
+```javascript
+<v-dialog
+  :value="isOpen"
+  @input="onClose"
+  max-width="600"
+>
+  <v-card>
+    <v-card-title>Title</v-card-title>
+    <v-card-text>Content</v-card-text>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn text @click="onClose">Cancel</v-btn>
+    </v-card-actions>
+  </v-card>
+</v-dialog>
+```
+
+### Button with Icon
+```javascript
+<v-btn color="primary" @click="handleClick">
+  <v-icon left>mdi-icon-name</v-icon>
+  Button Text
+</v-btn>
+```
+
+### Alert with Actions
+```javascript
+<v-alert type="error" prominent>
+  <div class="font-weight-bold mb-2">Error Title</div>
+  <div>{{ errorMessage }}</div>
+  <v-btn color="primary" @click="handleAction">Action</v-btn>
+</v-alert>
+```
+
+### Tabs
+```javascript
+<v-tabs :value="activeTab" @change="handleTabChange">
+  <v-tab v-for="tab in tabs" :key="tab" :value="tab">
+    {{ tabName }}
+  </v-tab>
+</v-tabs>
+```
+
+## Icons
+
+- Use Material Design Icons with `mdi-` prefix
+- Icon component: `<v-icon>mdi-icon-name</v-icon>`
+- Icon in button: `<v-icon left>mdi-icon-name</v-icon>`
+- Common icons: `mdi-arrow-left`, `mdi-file-document`, `mdi-database`, `mdi-close`
+
+## Layout Structure
+
+- Wrap app in `<v-app>` at root level
+- Use `<v-main>` for main content area
+- Use `<v-container>` for content padding and max-width
+- Use `<v-row>` and `<v-col>` for grid layouts (if needed)
+
+## Best Practices
+
+- Always close Vuetify components properly
+- Use Vuetify spacing utilities instead of custom CSS when possible
+- Leverage Vuetify's built-in responsive design classes
+- Use semantic Vuetify components over custom HTML when available
+- Follow Vuetify's accessibility guidelines

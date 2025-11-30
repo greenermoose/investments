@@ -1,0 +1,92 @@
+---
+description: Vue.js development rules for no-build environment using Options API and ES modules
+globs: ["**/*.js", "**/components/**"]
+alwaysApply: true
+---
+
+# Vue.js No-Build Environment Rules
+
+## Template String Syntax
+
+- **CRITICAL**: Never use `${{` in template strings. The `$` before `{{` is interpreted as a template literal expression start, causing syntax errors.
+- **Correct**: Use `{{ '$' + value }}` or `{{ '$' + (expression) }}` for currency formatting
+- **Incorrect**: `${{ value }}` - This causes "Unexpected token '.'" errors
+- Always separate currency symbols from Vue interpolation brackets
+
+## Vue Options API Patterns
+
+- Use `defineComponent` from Vue for component definition
+- Components should export default using `defineComponent({ ... })`
+- Use `template` property as a string literal (backtick strings)
+- Define props using object syntax: `props: { propName: Type }`
+- Use `data()` function that returns an object
+- Use `methods` object for component methods
+- Use `computed` object for computed properties
+- Use `watch` object for watchers
+- Use `mounted()`, `created()`, etc. for lifecycle hooks
+
+## Template Interpolation
+
+- Use `{{ }}` for Vue template interpolation (NOT `${}` which is for JavaScript template literals)
+- Vue interpolation works inside template strings: `template: \`<div>{{ value }}</div>\``
+- For complex expressions, use computed properties or methods
+- Avoid deeply nested expressions in templates - extract to methods/computed
+
+## ES Module Imports
+
+- Use ES6 import syntax: `import { defineComponent } from './vue.esm-browser.js'`
+- Import components: `import ComponentName from './ComponentName.js'`
+- Import utilities: `import { functionName } from '../utils/utilFile.js'`
+- Always include `.js` extension in imports for no-build environments
+
+## Component Structure
+
+```javascript
+import { defineComponent } from '../vue.esm-browser.js';
+
+export default defineComponent({
+  name: 'ComponentName',
+  components: {
+    // Child components
+  },
+  props: {
+    // Props definition
+  },
+  data() {
+    return {
+      // Reactive data
+    };
+  },
+  computed: {
+    // Computed properties
+  },
+  methods: {
+    // Methods
+  },
+  template: `
+    <!-- Template content -->
+  `
+});
+```
+
+## Browser Compatibility
+
+- Avoid optional chaining `?.` if browser support is required - use ternary operators instead
+- Use `obj && obj.property` instead of `obj?.property`
+- Use `arr && arr.length > 0` instead of `arr?.length`
+- Prefer explicit null/undefined checks for no-build environments
+
+## Common Patterns
+
+- **Conditional rendering**: `v-if`, `v-else-if`, `v-else`, `v-show`
+- **Lists**: `v-for="item in items" :key="item.id"`
+- **Events**: `@click="methodName"` or `@click="methodName($event)"`
+- **Props binding**: `:propName="value"` for dynamic, `propName="value"` for static strings
+- **Two-way binding**: Use `v-model` for form inputs
+
+## Error Prevention
+
+- Always check for null/undefined before accessing nested properties
+- Use ternary operators for safe property access: `obj ? obj.prop : defaultValue`
+- Extract complex template logic to computed properties or methods
+- Validate props exist before using them in templates

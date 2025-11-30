@@ -1,3 +1,7 @@
+### 0.5.0
+
+- rewritten as a no-build Vue/Vuetify app
+
 ### 0.4.3
 
 - deal with database problems

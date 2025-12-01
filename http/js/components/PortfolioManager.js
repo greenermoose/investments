@@ -151,37 +151,70 @@ export default defineComponent({
         
         <v-container v-else-if="!portfolio.isDataLoaded" class="mt-4">
           <v-card>
-            <v-card-title>Welcome to Investment Portfolio Manager</v-card-title>
+            <v-card-title>
+              <v-icon left color="primary" large>mdi-chart-line</v-icon>
+              Welcome to Investment Portfolio Manager
+            </v-card-title>
             <v-card-text>
-              <p class="mb-4">Upload your portfolio data or transaction history to get started.</p>
-              <div class="text-center">
-                <v-btn
-                  color="primary"
-                  large
-                  @click="handleCsvUpload"
-                  class="mr-2"
-                >
-                  <v-icon left>mdi-file-document</v-icon>
-                  Upload CSV
-                </v-btn>
-                <v-btn
-                  color="success"
-                  large
-                  @click="handleJsonUpload"
-                >
-                  <v-icon left>mdi-database</v-icon>
-                  Upload JSON
-                </v-btn>
+              <div v-if="!portfolio.hasStoredData">
+                <p class="mb-4 text-h6">Get Started</p>
+                <p class="mb-4">This is your first time using the app. Upload your portfolio data or transaction history to begin tracking your investments.</p>
+                <div class="text-center">
+                  <v-btn
+                    color="primary"
+                    large
+                    @click="handleCsvUpload"
+                    class="mr-2"
+                  >
+                    <v-icon left>mdi-file-document</v-icon>
+                    Upload CSV
+                  </v-btn>
+                  <v-btn
+                    color="success"
+                    large
+                    @click="handleJsonUpload"
+                  >
+                    <v-icon left>mdi-database</v-icon>
+                    Upload JSON
+                  </v-btn>
+                </div>
+                <v-alert type="info" class="mt-4" outlined>
+                  <div class="font-weight-bold mb-1">What can you upload?</div>
+                  <div>• CSV files: Portfolio position snapshots from your broker</div>
+                  <div>• JSON files: Previously exported portfolio data</div>
+                </v-alert>
               </div>
-              <div class="text-center mt-6">
-                <p class="text--secondary mb-2">Already have data in the app?</p>
-                <v-btn
-                  text
-                  color="primary"
-                  @click="navigation.changeTab('storage-manager')"
-                >
-                  Manage Your Stored Data →
-                </v-btn>
+              <div v-else>
+                <p class="mb-4 text-h6">No Portfolio Loaded</p>
+                <p class="mb-4">You have stored data, but no portfolio is currently loaded. Upload a new portfolio snapshot or manage your existing data.</p>
+                <div class="text-center">
+                  <v-btn
+                    color="primary"
+                    large
+                    @click="handleCsvUpload"
+                    class="mr-2"
+                  >
+                    <v-icon left>mdi-file-document</v-icon>
+                    Upload CSV
+                  </v-btn>
+                  <v-btn
+                    color="success"
+                    large
+                    @click="handleJsonUpload"
+                    class="mr-2"
+                  >
+                    <v-icon left>mdi-database</v-icon>
+                    Upload JSON
+                  </v-btn>
+                  <v-btn
+                    color="secondary"
+                    large
+                    @click="navigation.changeTab('storage-manager')"
+                  >
+                    <v-icon left>mdi-database-search</v-icon>
+                    Manage Your Stored Data
+                  </v-btn>
+                </div>
               </div>
             </v-card-text>
           </v-card>

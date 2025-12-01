@@ -556,6 +556,55 @@ export const checkDatabaseHealth = async () => {
   }
 };
 
+// Check if IndexedDB has any stored data
+export const hasStoredData = async () => {
+  try {
+    const db = await initializeDB();
+    
+    // List of all stores to check
+    const storeNames = [
+      STORE_NAME_PORTFOLIOS,
+      STORE_NAME_SECURITIES,
+      STORE_NAME_LOTS,
+      STORE_NAME_TRANSACTIONS,
+      STORE_NAME_MANUAL_ADJUSTMENTS,
+      STORE_NAME_TRANSACTION_METADATA,
+      STORE_NAME_FILES
+    ];
+    
+    // Check each store for any records
+    for (const storeName of storeNames) {
+      if (db.objectStoreNames.contains(storeName)) {
+        const hasData = await new Promise((resolve, reject) => {
+          const transaction = db.transaction([storeName], 'readonly');
+          const store = transaction.objectStore(storeName);
+          const request = store.count();
+          
+          request.onsuccess = () => {
+            resolve(request.result > 0);
+          };
+          
+          request.onerror = () => {
+            reject(request.error);
+          };
+        });
+        
+        // If any store has data, return true
+        if (hasData) {
+          return true;
+        }
+      }
+    }
+    
+    // No data found in any store
+    return false;
+  } catch (error) {
+    console.error('Error checking for stored data:', error);
+    // Return false on error to be safe (assume no data)
+    return false;
+  }
+};
+
 // Helper function to get expected indexes for each store
 const getExpectedIndexes = (storeName) => {
   switch (storeName) {

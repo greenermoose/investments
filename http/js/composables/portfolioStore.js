@@ -2,7 +2,7 @@
 import { reactive } from '../vue.esm-browser.js';
 import { calculatePortfolioStats } from '../utils/portfolioPerformanceMetrics.js';
 import { getAllAccounts, getLatestSnapshot } from '../utils/portfolioStorage.js';
-import { repairDatabaseManually } from '../utils/databaseUtils.js';
+import { repairDatabaseManually, hasStoredData } from '../utils/databaseUtils.js';
 
 // Create reactive store
 const portfolioStore = reactive({
@@ -17,6 +17,7 @@ const portfolioStore = reactive({
   },
   portfolioDate: null,
   isDataLoaded: false,
+  hasStoredData: false,
   currentAccount: '',
   selectedAccount: '',
   
@@ -24,6 +25,10 @@ const portfolioStore = reactive({
   async loadInitialPortfolio() {
     try {
       this.isLoading = true;
+      
+      // Check if any data exists in IndexedDB
+      this.hasStoredData = await hasStoredData();
+      
       const accounts = await getAllAccounts();
       
       if (accounts.length > 0) {

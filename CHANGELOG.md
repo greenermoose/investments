@@ -1,3 +1,7 @@
+### 0.5.3
+
+- better initial screen
+
 ### 0.5.2
 
 - fonts

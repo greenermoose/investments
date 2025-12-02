@@ -13,6 +13,10 @@ import LotManager from './LotManager.js';
 import AccountManagement from './AccountManagement.js';
 import StorageManager from './StorageManager.js';
 import SecurityDetail from './SecurityDetail.js';
+import { readFileAsText, parsePortfolioCSV, getAccountNameFromFilename, parseDateFromFilename, validateFile, FileTypes } from '../utils/fileProcessing.js';
+import { parseTransactionJSON } from '../utils/transactionEngine.js';
+import { portfolioService } from '../services/PortfolioService.js';
+import { saveUploadedFile } from '../utils/fileStorage.js';
 
 export default defineComponent({
   name: 'PortfolioManager',
@@ -33,7 +37,10 @@ export default defineComponent({
       showUploadModal: false,
       uploadModalType: null,
       selectedSymbol: null,
-      coreTabs: ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager']
+      coreTabs: ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager'],
+      isProcessingFile: false,
+      uploadError: null,
+      uploadSuccess: null
     };
   },
   provide() {
@@ -64,14 +71,194 @@ export default defineComponent({
     handleCsvUpload() {
       this.uploadModalType = 'csv';
       this.showUploadModal = true;
+      this.uploadError = null;
+      this.uploadSuccess = null;
     },
     handleJsonUpload() {
       this.uploadModalType = 'json';
       this.showUploadModal = true;
+      this.uploadError = null;
+      this.uploadSuccess = null;
     },
     closeUploadModal() {
       this.showUploadModal = false;
       this.uploadModalType = null;
+      this.uploadError = null;
+      this.uploadSuccess = null;
+    },
+    async processCsvFile(file) {
+      if (!file) {
+        this.uploadError = 'No file selected';
+        return;
+      }
+
+      this.isProcessingFile = true;
+      this.uploadError = null;
+      this.uploadSuccess = null;
+
+      try {
+        // Validate file
+        const validation = validateFile(file, FileTypes.CSV);
+        if (!validation.success) {
+          throw new Error(validation.error);
+        }
+
+        // Read file content
+        const fileContent = await readFileAsText(file);
+        
+        // Parse CSV
+        const { portfolioData, portfolioDate, accountTotal } = parsePortfolioCSV(fileContent);
+        
+        // Extract account name from filename or use default
+        let accountName = getAccountNameFromFilename(file.name);
+        
+        // If account name extraction failed, try to extract from first line of CSV
+        if (!accountName || accountName.startsWith('Account ')) {
+          const firstLine = fileContent.split('\n')[0];
+          // Try to extract account name from first line (e.g., "Positions for account Roth Contributory IRA")
+          const accountMatch = firstLine.match(/account\s+([^,]+?)(?:\s+as of|\s+\.\.\.|$)/i);
+          if (accountMatch) {
+            accountName = accountMatch[1].trim();
+          }
+        }
+
+        // Use date from filename if not found in file content
+        let finalDate = portfolioDate;
+        if (!finalDate) {
+          finalDate = parseDateFromFilename(file.name) || new Date();
+        }
+
+        // Save file to storage
+        const fileResult = await saveUploadedFile(file, fileContent, accountName, FileTypes.CSV, finalDate);
+        console.log('File saved:', fileResult);
+
+        // Save portfolio snapshot
+        const portfolioId = await portfolioService.savePortfolioSnapshot(
+          portfolioData,
+          accountName,
+          finalDate,
+          accountTotal
+        );
+
+        console.log('Portfolio saved with ID:', portfolioId);
+
+        // Save file metadata
+        if (fileResult && !fileResult.isDuplicate) {
+          await portfolioService.saveFile({
+            id: fileResult.id || fileResult.fileRecord?.id,
+            filename: file.name,
+            account: accountName,
+            fileType: FileTypes.CSV,
+            fileDate: finalDate,
+            uploadDate: new Date(),
+            processed: true,
+            processingResult: { portfolioId }
+          });
+        }
+
+        // Refresh portfolio data
+        await portfolioStore.refreshData();
+
+        // Load the newly uploaded portfolio
+        await portfolioStore.loadAccountPortfolio(accountName);
+
+        this.uploadSuccess = `Successfully uploaded ${file.name}. Found ${portfolioData.length} positions.`;
+        this.closeUploadModal();
+
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          this.uploadSuccess = null;
+        }, 5000);
+
+      } catch (error) {
+        console.error('Error processing CSV file:', error);
+        this.uploadError = error.message || 'Failed to process CSV file';
+        this.uploadSuccess = null;
+      } finally {
+        this.isProcessingFile = false;
+      }
+    },
+    async processJsonFile(file) {
+      if (!file) {
+        this.uploadError = 'No file selected';
+        return;
+      }
+
+      this.isProcessingFile = true;
+      this.uploadError = null;
+      this.uploadSuccess = null;
+
+      try {
+        // Validate file
+        const validation = validateFile(file, FileTypes.JSON);
+        if (!validation.success) {
+          throw new Error(validation.error);
+        }
+
+        // Read file content
+        const fileContent = await readFileAsText(file);
+        
+        // Parse JSON
+        const transactionData = parseTransactionJSON(fileContent);
+        
+        // Extract account name from filename or use default
+        let accountName = getAccountNameFromFilename(file.name);
+        
+        // If account name extraction failed, use a default
+        if (!accountName || accountName.startsWith('Account ')) {
+          accountName = 'Default Account';
+        }
+
+        // Save file to storage
+        const fileDate = transactionData.fromDate ? new Date(transactionData.fromDate) : new Date();
+        const fileResult = await saveUploadedFile(file, fileContent, accountName, FileTypes.JSON, fileDate);
+        console.log('File saved:', fileResult);
+
+        // Save transactions
+        const result = await portfolioService.bulkMergeTransactions(
+          transactionData.transactions,
+          accountName
+        );
+
+        console.log('Transactions saved:', result);
+
+        // Save file metadata
+        if (fileResult && !fileResult.isDuplicate) {
+          await portfolioService.saveFile({
+            id: fileResult.id || fileResult.fileRecord?.id,
+            filename: file.name,
+            account: accountName,
+            fileType: FileTypes.JSON,
+            fileDate: fileDate,
+            uploadDate: new Date(),
+            processed: true,
+            processingResult: { transactionCount: transactionData.transactions.length }
+          });
+        }
+
+        // Refresh data
+        await portfolioStore.refreshData();
+
+        // Update acquisition store with transaction data
+        if (acquisitionStore && acquisitionStore.loadTransactionData) {
+          await acquisitionStore.loadTransactionData(accountName);
+        }
+
+        this.uploadSuccess = `Successfully uploaded ${file.name}. Processed ${transactionData.transactions.length} transactions.`;
+        this.closeUploadModal();
+
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          this.uploadSuccess = null;
+        }, 5000);
+
+      } catch (error) {
+        console.error('Error processing JSON file:', error);
+        this.uploadError = error.message || 'Failed to process JSON file';
+        this.uploadSuccess = null;
+      } finally {
+        this.isProcessingFile = false;
+      }
     },
     handleSymbolClick(symbol) {
       console.log("Symbol clicked:", symbol);
@@ -280,9 +467,62 @@ export default defineComponent({
             v-if="showUploadModal"
             :modalType="uploadModalType"
             :onClose="closeUploadModal"
-            :onCsvFileLoaded="handleCsvUpload"
-            :onJsonFileLoaded="handleJsonUpload"
+            :onCsvFileLoaded="processCsvFile"
+            :onJsonFileLoaded="processJsonFile"
           />
+          
+          <!-- Upload Error Alert -->
+          <v-snackbar
+            v-model="uploadError"
+            color="error"
+            :timeout="6000"
+            top
+          >
+            {{ uploadError }}
+            <template v-slot:action="{ attrs }">
+              <v-btn
+                text
+                v-bind="attrs"
+                @click="uploadError = null"
+              >
+                Close
+              </v-btn>
+            </template>
+          </v-snackbar>
+          
+          <!-- Upload Success Alert -->
+          <v-snackbar
+            v-model="uploadSuccess"
+            color="success"
+            :timeout="5000"
+            top
+          >
+            {{ uploadSuccess }}
+            <template v-slot:action="{ attrs }">
+              <v-btn
+                text
+                v-bind="attrs"
+                @click="uploadSuccess = null"
+              >
+                Close
+              </v-btn>
+            </template>
+          </v-snackbar>
+          
+          <!-- Processing Overlay -->
+          <v-overlay
+            :value="isProcessingFile"
+            z-index="9999"
+          >
+            <div class="text-center">
+              <v-progress-circular
+                indeterminate
+                color="primary"
+                size="64"
+              ></v-progress-circular>
+              <p class="mt-4 white--text">Processing file...</p>
+            </div>
+          </v-overlay>
         </v-container>
       </v-main>
       

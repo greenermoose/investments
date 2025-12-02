@@ -1,0 +1,160 @@
+[34mRunning all manual tests...[0m
+
+Found 5 test file(s):
+
+  - test-database-operations.js
+  - test-file-processing.js
+  - test-portfolio-display.js
+  - test-upload-csv.js
+  - test-upload-json.js
+
+[36mRunning test-database-operations.js...[0m
+Running database operation tests...
+
+Note: Full database testing requires browser environment.
+
+For IndexedDB testing, use browser DevTools or acceptance tests.
+
+  Database utils import test (requires browser environment)
+  For full testing, run acceptance tests in browser
+✓ Database Utils Import
+  Expected database stores: portfolios, securities, lots, files, transactions, accounts
+  For full testing, verify stores exist in browser DevTools
+✓ Database Structure
+✓ Data Validation
+✓ Date Handling
+✓ Account Name Validation
+✓ File Metadata Structure
+✓ Transaction Structure
+✓ Data Persistence Logic
+
+=== Test Results ===
+Total: 8
+Passed: 8
+Failed: 0
+
+
+
+[36mRunning test-file-processing.js...[0m
+Running file processing tests...
+
+✓ CSV Parsing
+Attempting to parse date from filename: Roth_Contributory_IRA-Positions-2021-11-20-071958.CSV
+Successfully parsed date with hyphens from filename: Roth_Contributory_IRA-Positions-2021-11-20-071958.CSV, date: Sat Nov 20 2021 07:19:58 GMT-0500 (Eastern Standard Time)
+Attempting to parse date from filename: IRA20250427180000.csv
+Successfully parsed date without separators from filename: IRA20250427180000.csv, date: Sun Apr 27 2025 18:00:00 GMT-0400 (Eastern Daylight Time)
+Attempting to parse date from filename: portfolio.csv
+  Date parsing for portfolio.csv: not found (OK)
+✓ Date Parsing from Filename
+Attempting to extract account name from filename: Roth_Contributory_IRA-Positions-2021-11-20-071958.CSV
+Matched hyphen pattern: Roth_Contributory_IRA
+Attempting to extract account name from filename: IRA20250427180000.csv
+Matched date pattern: IRA
+Attempting to extract account name from filename: MyAccount-Positions-2024-01-01.csv
+Matched hyphen pattern: MyAccount
+✓ Account Name Extraction
+✓ JSON Parsing
+✓ Invalid CSV Handling
+✓ Invalid JSON Handling
+  Real CSV file parsed successfully: 37 positions
+✓ Real CSV File
+
+=== Test Results ===
+Total: 7
+Passed: 7
+Failed: 0
+
+
+
+[36mRunning test-portfolio-display.js...[0m
+Running portfolio display tests...
+
+✓ Portfolio Data Structure
+✓ Portfolio Calculations
+✓ Account Total
+✓ Position Filtering
+✓ Data Types
+  Calculated total: $1921.21
+  Account total: $10240.34
+✓ Portfolio Stats
+✓ Gain/Loss Calculations
+
+=== Test Results ===
+Total: 7
+Passed: 7
+Failed: 0
+
+
+
+[36mRunning test-upload-csv.js...[0m
+Note: FileReader API not available (Node.js environment)
+Skipping browser-only tests that require FileReader/File/Blob APIs
+For full upload testing, use browser acceptance tests: tests/acceptance/upload-tests.md
+
+Skipped browser-only tests:
+  - File Validation (requires File/Blob)
+  - File Reading (requires FileReader)
+  - CSV Parsing (requires FileReader)
+  - Invalid File Type (requires File/Blob)
+  - Empty File (requires File)
+  - Large File (requires File)
+  - Account Name Extraction (requires File/Blob)
+
+Running CSV upload tests...
+
+  Real CSV file: 37 positions found
+✓ Real CSV File
+
+=== Test Results ===
+Total: 1
+Passed: 1
+Failed: 0
+
+
+
+[36mRunning test-upload-json.js...[0m
+Note: FileReader API not available (Node.js environment)
+Skipping browser-only tests that require FileReader/File/Blob APIs
+For full upload testing, use browser acceptance tests: tests/acceptance/upload-tests.md
+
+Skipped browser-only tests:
+  - File Validation (requires File/Blob)
+  - File Reading (requires FileReader)
+  - JSON Parsing (requires FileReader)
+  - Invalid JSON Handling (requires FileReader)
+  - Missing Transactions Array (requires FileReader)
+  - Empty File (requires File)
+  - Large File (requires File)
+  - Transaction Data Structure (requires FileReader)
+  - Duplicate Removal (requires FileReader)
+
+Running JSON upload tests...
+
+No tests available for this environment.
+All JSON upload tests require browser APIs (FileReader/File/Blob).
+For full testing, use browser acceptance tests: tests/acceptance/upload-tests.md
+
+
+============================================================
+[36mTest Results Summary[0m
+============================================================
+
+[32m✓[0m test-database-operations.js
+[32m✓[0m test-file-processing.js
+[32m✓[0m test-portfolio-display.js
+[32m✓[0m test-upload-csv.js
+[32m✓[0m test-upload-json.js
+
+------------------------------------------------------------
+Total: 5
+[32mPassed: 5[0m
+[32mFailed: 0[0m
+------------------------------------------------------------
+
+[33mNote:[0m Manual test scripts validate code logic only.
+For full browser-based testing, run the acceptance tests:
+  - tests/acceptance/upload-tests.md
+  - tests/acceptance/portfolio-tests.md
+  - tests/acceptance/navigation-tests.md
+  - tests/acceptance/data-persistence-tests.md
+

@@ -1,3 +1,7 @@
+### 0.5.4
+
+- tests
+
 ### 0.5.3
 
 - better initial screen

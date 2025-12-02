@@ -15,20 +15,26 @@ export default defineComponent({
     };
   },
   methods: {
-    handleFileSelect(event, fileType) {
-      const files = event.target.files;
-      if (files && files.length > 0) {
-        const file = files[0];
-        if (file) {
-          if (fileType === 'csv' && this.onCsvFileLoaded) {
-            this.onCsvFileLoaded(file, file.name, null, 'CSV');
-          } else if (fileType === 'json' && this.onJsonFileLoaded) {
-            this.onJsonFileLoaded(file, file.name, null, 'JSON');
-          }
-        }
+    handleFileSelect(fileOrArray, fileType) {
+      // Vuetify's v-file-input can emit either a File or an array of Files
+      let file = null;
+      if (Array.isArray(fileOrArray)) {
+        file = fileOrArray.length > 0 ? fileOrArray[0] : null;
+      } else if (fileOrArray instanceof File) {
+        file = fileOrArray;
       }
-      if (this.onClose) {
-        this.onClose();
+      
+      // Only process if we have a valid file
+      if (file) {
+        if (fileType === 'csv' && this.onCsvFileLoaded) {
+          this.onCsvFileLoaded(file);
+        } else if (fileType === 'json' && this.onJsonFileLoaded) {
+          this.onJsonFileLoaded(file);
+        }
+        // Close modal after file selection
+        if (this.onClose) {
+          this.onClose();
+        }
       }
     }
   },
@@ -46,7 +52,8 @@ export default defineComponent({
           <v-file-input
             :label="modalType === 'csv' ? 'Select CSV file' : 'Select JSON file'"
             :accept="modalType === 'csv' ? '.csv' : '.json'"
-            @change="(event) => handleFileSelect(event, modalType)"
+            @change="(file) => handleFileSelect(file, modalType)"
+            clearable
           ></v-file-input>
         </v-card-text>
         <v-card-actions>

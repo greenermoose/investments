@@ -2,7 +2,7 @@
 // Database initialization module for Portfolio Manager
 
 export const DB_NAME = 'PortfolioManagerDB';
-export const DB_VERSION = 4;  // Increment version for schema changes
+export const DB_VERSION = 5;  // Increment version for schema changes (added strategies store)
 
 export const STORE_NAME_PORTFOLIOS = 'portfolios';
 export const STORE_NAME_SECURITIES = 'securities';
@@ -11,6 +11,7 @@ export const STORE_NAME_TRANSACTIONS = 'transactions';
 export const STORE_NAME_MANUAL_ADJUSTMENTS = 'manual_adjustments';
 export const STORE_NAME_TRANSACTION_METADATA = 'transaction_metadata';
 export const STORE_NAME_FILES = 'uploaded_files';
+export const STORE_NAME_STRATEGIES = 'strategies';
 
 // Database repair function to fix missing indexes
 const repairDatabase = async (db) => {
@@ -293,6 +294,15 @@ export const initializeDB = () => {
               fileStore.createIndex('account', 'account', { unique: false });
               fileStore.createIndex('fileHash', 'fileHash', { unique: false });
               console.log('Created files store');
+            }
+            
+            // Strategies store for investment strategies
+            if (!db.objectStoreNames.contains(STORE_NAME_STRATEGIES)) {
+              const strategyStore = db.createObjectStore(STORE_NAME_STRATEGIES, { keyPath: 'id' });
+              strategyStore.createIndex('securitySymbol', 'securitySymbol', { unique: false });
+              strategyStore.createIndex('account', 'account', { unique: false });
+              strategyStore.createIndex('status', 'status', { unique: false });
+              console.log('Created strategies store');
             }
           } catch (error) {
             console.error('Error during database upgrade:', error);

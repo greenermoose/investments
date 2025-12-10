@@ -21,41 +21,59 @@ export default defineComponent({
   },
   methods: {
     handleClickOutside(event) {
-      if (!this.$el.contains(event.target)) {
+      if (this.$el && !this.$el.contains(event.target)) {
         this.isOpen = false;
       }
     },
     handleCSVClick() {
-      if (this.onUploadCSV) {
-        this.onUploadCSV();
+      try {
+        if (this.onUploadCSV) {
+          this.onUploadCSV();
+        } else {
+          console.warn('UploadOptions: onUploadCSV handler is not defined');
+        }
+      } catch (error) {
+        console.error('UploadOptions: Error in handleCSVClick:', error);
+      } finally {
+        // Always close menu, even if handler fails
+        this.isOpen = false;
       }
-      this.isOpen = false;
     },
     handleJSONClick() {
-      if (this.onUploadJSON) {
-        this.onUploadJSON();
+      try {
+        if (this.onUploadJSON) {
+          this.onUploadJSON();
+        } else {
+          console.warn('UploadOptions: onUploadJSON handler is not defined');
+        }
+      } catch (error) {
+        console.error('UploadOptions: Error in handleJSONClick:', error);
+      } finally {
+        // Always close menu, even if handler fails
+        this.isOpen = false;
       }
-      this.isOpen = false;
     }
   },
   template: `
     <div class="relative">
-      <v-btn
-        color="primary"
-        @click="isOpen = !isOpen"
-        :aria-expanded="isOpen"
-      >
-        <v-icon left small>mdi-upload</v-icon>
-        Upload Files
-        <v-icon right small :class="{ 'rotate-180': isOpen }">mdi-chevron-down</v-icon>
-      </v-btn>
-      
       <v-menu
         v-model="isOpen"
         :close-on-content-click="false"
         offset-y
-        right
+        location="bottom end"
       >
+        <template v-slot:activator="{ props }">
+          <v-btn
+            color="primary"
+            v-bind="props"
+            :aria-expanded="isOpen"
+          >
+            <v-icon left small>mdi-upload</v-icon>
+            Upload Files
+            <v-icon right small :class="{ 'rotate-180': isOpen }">mdi-chevron-down</v-icon>
+          </v-btn>
+        </template>
+        
         <v-card min-width="300">
           <v-list>
             <v-list-item @click="handleCSVClick">

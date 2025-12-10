@@ -6,18 +6,29 @@ This directory contains the testing framework for the Investment Portfolio Manag
 
 The testing framework consists of:
 
-1. **Manual Test Scripts** - Node.js scripts that test code logic and utilities
-2. **Acceptance Tests** - Manual checklists for browser-based testing
-3. **Test Helpers** - Utility functions and mock data for testing
+1. **Unit Tests** - Vitest-based unit tests for utilities, services, repositories, and composables
+2. **Manual Test Scripts** - Node.js scripts that test code logic and utilities
+3. **Acceptance Tests** - Manual checklists for browser-based testing
+4. **Test Helpers** - Utility functions, mock data, and mocks for testing
 
 ## Directory Structure
 
 ```
 tests/
+├── unit/                  # Unit tests (Vitest)
+│   ├── utils/            # Utility function tests
+│   ├── services/          # Service layer tests
+│   ├── repositories/      # Repository tests
+│   └── composables/       # Composable/store tests
 ├── helpers/
-│   ├── testUtils.js      # Test assertion utilities
-│   ├── mockData.js       # Sample data for testing
-│   └── dbHelpers.js     # Database testing helpers
+│   ├── testUtils.js       # Test assertion utilities
+│   ├── mockData.js        # Sample data for testing
+│   ├── dbHelpers.js        # Database testing helpers
+│   └── mocks/             # Mock implementations
+│       ├── indexedDB.js   # IndexedDB mocks
+│       ├── api.js          # API mocks
+│       ├── browser.js      # Browser API mocks
+│       └── index.js        # Mock exports
 ├── manual/
 │   ├── test-file-processing.js
 │   ├── test-upload-csv.js
@@ -29,13 +40,38 @@ tests/
 │   ├── portfolio-tests.md
 │   ├── navigation-tests.md
 │   └── data-persistence-tests.md
-├── run-all.js            # Test runner script
-└── README.md             # This file
+├── setup.js               # Vitest setup file
+├── run-all.js             # Manual test runner script
+└── README.md              # This file
 ```
 
 ## Running Tests
 
+### Run All Unit Tests
+
+```bash
+npm test
+```
+
+Or with watch mode:
+
+```bash
+npm run test:watch
+```
+
+Generate coverage report:
+
+```bash
+npm run test:coverage
+```
+
 ### Run All Manual Tests
+
+```bash
+npm run test:manual
+```
+
+Or directly:
 
 ```bash
 node tests/run-all.js
@@ -73,6 +109,39 @@ Acceptance tests are manual checklists that should be followed in a browser:
 5. Document any issues found
 
 ## Test Types
+
+### Unit Tests
+
+Unit tests use Vitest and test individual functions, classes, and modules in isolation:
+
+- **Utilities**: File processing, data formatting, calculations
+- **Services**: Business logic with mocked dependencies
+- **Repositories**: Data access with IndexedDB mocks
+- **Composables**: Reactive state management
+
+**Features:**
+- Fast execution
+- Isolated testing with mocks
+- Coverage reporting
+- Watch mode for development
+
+**Use Cases:**
+- Testing pure functions
+- Validating business logic
+- Regression testing
+- Continuous integration
+
+**Example:**
+```javascript
+import { describe, it, expect } from 'vitest';
+import { formatCurrency } from '@utils/dataUtils.js';
+
+describe('formatCurrency', () => {
+  it('should format positive numbers', () => {
+    expect(formatCurrency(100.50)).toBe('$100.50');
+  });
+});
+```
 
 ### Manual Test Scripts
 
@@ -134,7 +203,60 @@ Provides database testing utilities (browser-only):
 - `hasDatabaseData()` - Check if database has data
 - `getAllAccounts()` - Get all accounts from database
 
+### mocks/
+
+Provides mock implementations for testing:
+
+**indexedDB.js:**
+- `setupIndexedDBMock()` - Setup IndexedDB mocks
+- `clearMockDatabase()` - Clear mock database
+- `addTestData(storeName, data)` - Add test data to store
+- `getTestData(storeName)` - Get test data from store
+
+**api.js:**
+- `setupAPIMocks()` - Setup API mocks
+- `mockMarketData` - Mock market data responses
+- `createMockMarketDataResponse()` - Create mock API response
+
+**browser.js:**
+- `setupBrowserMocks()` - Setup browser API mocks
+- `clearBrowserMocks()` - Clear browser mocks
+
 ## Writing New Tests
+
+### Adding a Unit Test
+
+1. Create a test file in the appropriate directory:
+   - `tests/unit/utils/` for utility tests
+   - `tests/unit/services/` for service tests
+   - `tests/unit/repositories/` for repository tests
+   - `tests/unit/composables/` for composable tests
+
+2. Use Vitest's `describe` and `it` blocks:
+   ```javascript
+   import { describe, it, expect, beforeEach, vi } from 'vitest';
+   import { functionToTest } from '@utils/module.js';
+
+   describe('module', () => {
+     it('should do something', () => {
+       expect(functionToTest()).toBe(expected);
+     });
+   });
+   ```
+
+3. Use mocks for dependencies:
+   ```javascript
+   vi.mock('@repositories/SomeRepository.js', () => ({
+     SomeRepository: vi.fn().mockImplementation(() => ({
+       method: vi.fn()
+     }))
+   }));
+   ```
+
+4. Run tests:
+   ```bash
+   npm test
+   ```
 
 ### Adding a Manual Test Script
 
@@ -177,6 +299,16 @@ Provides database testing utilities (browser-only):
 
 ### Current Coverage
 
+**Unit Tests:**
+- ✅ File processing utilities (CSV parsing, date extraction, account name)
+- ✅ Data utilities (formatting, normalization, symbol matching)
+- ✅ Lot utilities (tracking methods, calculations, validation)
+- ✅ Portfolio performance metrics (statistics, asset allocation)
+- ✅ Transaction engine (parsing, categorization)
+- ✅ Services (PortfolioService, DataSourceManager)
+- ✅ Repositories (BaseRepository, PortfolioRepository)
+- ✅ Composables (portfolioStore, acquisitionStore)
+
 **Manual Tests:**
 - ✅ File processing (CSV parsing, JSON parsing)
 - ✅ File validation
@@ -193,38 +325,59 @@ Provides database testing utilities (browser-only):
 
 ### Areas Needing More Tests
 
-- Component interaction testing (requires browser automation)
+- Component testing (Vue component unit tests)
 - Integration testing (full upload → display flow)
 - Performance testing (large files, many positions)
 - Error recovery testing
-- Edge case testing
+- Additional edge cases in utilities
 
 ## Continuous Integration
 
-To integrate tests into CI/CD:
+The project includes test scripts in `package.json`:
 
-1. Add test script to `package.json`:
-   ```json
-   {
-     "scripts": {
-       "test": "node tests/run-all.js"
-     }
-   }
-   ```
+```json
+{
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:manual": "node tests/run-all.js"
+  }
+}
+```
 
-2. Run tests in CI pipeline:
+### CI/CD Integration
+
+1. **Unit Tests**: Run automatically in CI
    ```bash
    npm test
    ```
 
-3. For acceptance tests, consider using browser automation tools:
+2. **Coverage**: Generate and upload coverage reports
+   ```bash
+   npm run test:coverage
+   ```
+
+3. **Manual Tests**: Run for additional validation
+   ```bash
+   npm run test:manual
+   ```
+
+4. **Acceptance Tests**: Use browser automation tools:
    - Playwright
    - Puppeteer
    - Selenium
 
 ## Troubleshooting
 
-### Tests Fail with Import Errors
+### Unit Tests Fail with Import Errors
+
+- Ensure Vitest is installed: `npm install`
+- Check that path aliases in `vitest.config.js` are correct
+- Verify imports use `.js` extensions
+- Check that mocks are properly set up in `tests/setup.js`
+
+### Manual Tests Fail with Import Errors
 
 - Ensure you're using Node.js with ES module support (Node 14+)
 - Check that file paths are correct

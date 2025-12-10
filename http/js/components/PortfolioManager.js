@@ -7,12 +7,19 @@ import PortfolioHeader from './PortfolioHeader.js';
 import PortfolioFooter from './PortfolioFooter.js';
 import PortfolioTabs from './PortfolioTabs.js';
 import FileUploader from './FileUploader.js';
-import PortfolioDisplay from './PortfolioDisplay.js';
+import Dashboard from './Dashboard.js';
+import PortfolioOverview from './portfolio/PortfolioOverview.js';
+import PortfolioSnapshotViewer from './portfolio/PortfolioSnapshotViewer.js';
+import SecurityTimeline from './portfolio/SecurityTimeline.js';
+import StrategyManager from './strategies/StrategyManager.js';
+import ForecastDashboard from './forecasting/ForecastDashboard.js';
+import PortfolioDisplay from './PortfolioDisplay.js'; // Legacy, keeping for backward compatibility
 import TransactionViewer from './TransactionViewer.js';
 import LotManager from './LotManager.js';
 import AccountManagement from './AccountManagement.js';
 import StorageManager from './StorageManager.js';
 import SecurityDetail from './SecurityDetail.js';
+import strategyStore from '../composables/strategyStore.js';
 import { readFileAsText, parsePortfolioCSV, getAccountNameFromFilename, parseDateFromFilename, validateFile, FileTypes } from '../utils/fileProcessing.js';
 import { parseTransactionJSON } from '../utils/transactionEngine.js';
 import { portfolioService } from '../services/PortfolioService.js';
@@ -25,7 +32,13 @@ export default defineComponent({
     PortfolioFooter,
     PortfolioTabs,
     FileUploader,
-    PortfolioDisplay,
+    Dashboard,
+    PortfolioOverview,
+    PortfolioSnapshotViewer,
+    SecurityTimeline,
+    StrategyManager,
+    ForecastDashboard,
+    PortfolioDisplay, // Legacy
     TransactionViewer,
     LotManager,
     AccountManagement,
@@ -37,7 +50,9 @@ export default defineComponent({
       showUploadModal: false,
       uploadModalType: null,
       selectedSymbol: null,
-      coreTabs: ['account-management', 'portfolio', 'transactions', 'lots', 'storage-manager'],
+      mainTabs: ['dashboard', 'portfolio', 'strategies', 'forecasting'],
+      portfolioSubTabs: ['overview', 'snapshots', 'timeline'],
+      selectedSnapshotDate: null,
       isProcessingFile: false,
       uploadError: null,
       uploadSuccess: null
@@ -47,12 +62,28 @@ export default defineComponent({
     return {
       portfolioStore,
       acquisitionStore,
-      navigationStore
+      navigationStore,
+      strategyStore
     };
   },
   async mounted() {
     // Load initial portfolio data
-    await portfolioStore.loadInitialPortfolio();
+    try {
+      await portfolioStore.loadInitialPortfolio();
+    } catch (error) {
+      console.error('PortfolioManager: Error loading initial portfolio:', error);
+      // Error will be displayed by portfolioStore.error
+    }
+  },
+  errorCaptured(err, instance, info) {
+    // Catch errors from child components
+    console.error('PortfolioManager: Error captured from child component:', err, info);
+    // Set error state if possible
+    if (this.uploadError === null) {
+      this.uploadError = `An error occurred: ${err.message || 'Unknown error'}`;
+    }
+    // Return false to prevent error from propagating further
+    return false;
   },
   watch: {
     'portfolioStore.selectedAccount'(newAccount) {
@@ -69,18 +100,21 @@ export default defineComponent({
       portfolioStore.refreshData();
     },
     handleCsvUpload() {
+      // Ensure both state variables are set together
       this.uploadModalType = 'csv';
       this.showUploadModal = true;
       this.uploadError = null;
       this.uploadSuccess = null;
     },
     handleJsonUpload() {
+      // Ensure both state variables are set together
       this.uploadModalType = 'json';
       this.showUploadModal = true;
       this.uploadError = null;
       this.uploadSuccess = null;
     },
     closeUploadModal() {
+      // Reset both state variables together to keep them in sync
       this.showUploadModal = false;
       this.uploadModalType = null;
       this.uploadError = null;
@@ -163,6 +197,7 @@ export default defineComponent({
         await portfolioStore.loadAccountPortfolio(accountName);
 
         this.uploadSuccess = `Successfully uploaded ${file.name}. Found ${portfolioData.length} positions.`;
+        // Close modal only on success
         this.closeUploadModal();
 
         // Clear success message after 5 seconds
@@ -172,8 +207,10 @@ export default defineComponent({
 
       } catch (error) {
         console.error('Error processing CSV file:', error);
+        // Set error before closing modal - but actually, keep modal open on error
         this.uploadError = error.message || 'Failed to process CSV file';
         this.uploadSuccess = null;
+        // Don't close modal on error - let user see the error and try again
       } finally {
         this.isProcessingFile = false;
       }
@@ -245,6 +282,7 @@ export default defineComponent({
         }
 
         this.uploadSuccess = `Successfully uploaded ${file.name}. Processed ${transactionData.transactions.length} transactions.`;
+        // Close modal only on success
         this.closeUploadModal();
 
         // Clear success message after 5 seconds
@@ -254,8 +292,10 @@ export default defineComponent({
 
       } catch (error) {
         console.error('Error processing JSON file:', error);
+        // Set error - keep modal open on error so user can see the error and try again
         this.uploadError = error.message || 'Failed to process JSON file';
         this.uploadSuccess = null;
+        // Don't close modal on error - let user see the error and try again
       } finally {
         this.isProcessingFile = false;
       }
@@ -263,7 +303,10 @@ export default defineComponent({
     handleSymbolClick(symbol) {
       console.log("Symbol clicked:", symbol);
       this.selectedSymbol = symbol;
-      navigationStore.changeTab('security-detail');
+      // Navigate to timeline view for the selected symbol
+      navigationStore.changeTab('portfolio');
+      navigationStore.changeSubTab('portfolio', 'timeline');
+      this.selectedSnapshotDate = portfolioStore.portfolioDate;
     },
     handleBackFromSecurityDetail() {
       this.selectedSymbol = null;
@@ -408,32 +451,81 @@ export default defineComponent({
         </v-container>
         
         <v-container v-else>
+          <!-- Main Navigation Tabs -->
           <PortfolioTabs
             v-if="navigation.activeTab !== 'security-detail'"
-            :tabs="coreTabs"
+            :tabs="mainTabs"
             :activeTab="navigation.activeTab"
             :onTabChange="navigation.changeTab"
+            :subTabs="navigation.activeTab === 'portfolio' ? portfolioSubTabs : []"
+            :activeSubTab="navigation.currentSubTab[navigation.activeTab] || ''"
+            :onSubTabChange="(tab) => navigation.changeSubTab(navigation.activeTab, tab)"
           />
           
           <div class="tab-content">
+            <!-- Security Detail (special case, not in main tabs) -->
             <SecurityDetail
               v-if="navigation.activeTab === 'security-detail' && selectedSymbol"
               :symbol="selectedSymbol"
               :account="portfolio.currentAccount || portfolio.selectedAccount"
               :onBack="handleBackFromSecurityDetail"
             />
+            
+            <!-- Dashboard -->
+            <Dashboard
+              v-else-if="navigation.activeTab === 'dashboard'"
+              :portfolioStore="portfolio"
+              :onNavigate="navigation.changeTab"
+              :onUploadCSV="handleCsvUpload"
+              :onUploadJSON="handleJsonUpload"
+            />
+            
+            <!-- Portfolio Module -->
+            <template v-else-if="navigation.activeTab === 'portfolio'">
+              <PortfolioOverview
+                v-if="navigation.currentSubTab.portfolio === 'overview'"
+                :portfolioData="portfolio.portfolioData"
+                :portfolioStats="portfolio.portfolioStats"
+                :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
+                :onSymbolClick="handleSymbolClick"
+                :onUploadCSV="handleCsvUpload"
+              />
+              <PortfolioSnapshotViewer
+                v-else-if="navigation.currentSubTab.portfolio === 'snapshots'"
+                :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
+              />
+              <SecurityTimeline
+                v-else-if="navigation.currentSubTab.portfolio === 'timeline' && selectedSymbol"
+                :symbol="selectedSymbol"
+                :account="portfolio.currentAccount || portfolio.selectedAccount"
+                :snapshotDate="selectedSnapshotDate"
+              />
+              <div v-else class="text-center pa-8">
+                <v-icon size="64" color="grey-lighten-1" class="mb-4">mdi-chart-line</v-icon>
+                <h3 class="text-h6 mb-2">Select a Security</h3>
+                <p class="text-body-2 text--secondary">Click on a security symbol to view its timeline</p>
+              </div>
+            </template>
+            
+            <!-- Strategies Module -->
+            <StrategyManager
+              v-else-if="navigation.activeTab === 'strategies'"
+              :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
+            />
+            
+            <!-- Forecasting Module -->
+            <template v-else-if="navigation.activeTab === 'forecasting'">
+              <ForecastDashboard
+                :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
+              />
+            </template>
+            
+            <!-- Legacy tabs (for backward compatibility) -->
             <AccountManagement
               v-else-if="navigation.activeTab === 'account-management'"
               :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
               :onAccountChange="handleAccountChange"
               :onDataChange="portfolio.refreshData"
-            />
-            <PortfolioDisplay
-              v-else-if="navigation.activeTab === 'portfolio'"
-              :portfolioData="portfolio.portfolioData"
-              :portfolioStats="portfolio.portfolioStats"
-              :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
-              :onSymbolClick="handleSymbolClick"
             />
             <TransactionViewer
               v-else-if="navigation.activeTab === 'transactions'"
@@ -453,12 +545,14 @@ export default defineComponent({
               v-else-if="navigation.activeTab === 'storage-manager'"
               :onDataChange="portfolio.refreshData"
             />
-            <PortfolioDisplay
+            
+            <!-- Default fallback -->
+            <Dashboard
               v-else
-              :portfolioData="portfolio.portfolioData"
-              :portfolioStats="portfolio.portfolioStats"
-              :currentAccount="portfolio.currentAccount || portfolio.selectedAccount"
-              :onSymbolClick="handleSymbolClick"
+              :portfolioStore="portfolio"
+              :onNavigate="navigation.changeTab"
+              :onUploadCSV="handleCsvUpload"
+              :onUploadJSON="handleJsonUpload"
             />
           </div>
           

@@ -63,7 +63,7 @@ export default defineComponent({
             <!-- Upload Options -->
             <div v-if="showUploadButton" class="relative mr-md-2 mb-2 mb-md-0">
               <UploadOptions 
-                :onUploadCSV="onUploadCSV || onUploadClick"
+                :onUploadCSV="onUploadCSV"
                 :onUploadJSON="onUploadJSON"
               />
               

@@ -32,11 +32,43 @@ export class BaseRepository {
       try {
         const result = callback(store, transaction);
         
-        if (result instanceof IDBRequest) {
-          result.onsuccess = () => resolve(result.result);
-          result.onerror = () => reject(result.error);
+        // Check if result is an IDBRequest (real or mock)
+        // Mock requests have onsuccess/onerror properties but may not pass instanceof check
+        if (result && typeof result === 'object' && ('onsuccess' in result || 'onerror' in result)) {
+          // Handle IDBRequest-like objects (both real and mock)
+          const originalOnSuccess = result.onsuccess;
+          const originalOnError = result.onerror;
+          
+          result.onsuccess = (event) => {
+            if (originalOnSuccess) {
+              try {
+                originalOnSuccess(event);
+              } catch (e) {
+                // Ignore errors from original handler
+              }
+            }
+            // Resolve with the result
+            resolve(result.result);
+          };
+          
+          result.onerror = (event) => {
+            if (originalOnError) {
+              try {
+                originalOnError(event);
+              } catch (e) {
+                // Ignore errors from original handler
+              }
+            }
+            reject(result.error || new Error('IDBRequest failed'));
+          };
         } else {
-          transaction.oncomplete = () => resolve(result);
+          // Handle non-request results (like promises or direct values)
+          // For non-request results, wait for transaction to complete
+          const originalOnComplete = transaction.oncomplete;
+          transaction.oncomplete = () => {
+            if (originalOnComplete) originalOnComplete();
+            resolve(result);
+          };
           transaction.onerror = () => reject(transaction.error);
         }
       } catch (error) {
@@ -68,12 +100,14 @@ export class BaseRepository {
    * @returns {Promise<string>} - Record ID
    */
   async save(data) {
+    const savedId = data.id;
     return this.executeTransaction('readwrite', (store) => {
       const request = store.put(data);
-      return new Promise((resolve, reject) => {
-        request.onsuccess = () => resolve(data.id || request.result);
-        request.onerror = () => reject(request.error);
-      });
+      return request;
+    }).then(result => {
+      // result is the key from the put operation (request.result)
+      // Return the result key, or fall back to data.id if result is undefined
+      return result || savedId;
     });
   }
 

@@ -1,5 +1,4 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { reactive } from 'vue';
 
 // Mock Vue reactive
 vi.mock('@/vue.esm-browser.js', () => ({

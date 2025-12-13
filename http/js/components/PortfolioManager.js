@@ -99,22 +99,31 @@ export default defineComponent({
       portfolioStore.setSelectedAccount(accountName);
       portfolioStore.refreshData();
     },
-    handleCsvUpload() {
-      // Ensure both state variables are set together
+    handleCsvUpload(file) {
+      console.log('[PortfolioManager] handleCsvUpload called with file:', file);
+      console.log('[PortfolioManager] File is instance of File:', file instanceof File);
+      // If a file is provided directly, process it immediately
+      if (file instanceof File) {
+        console.log('[PortfolioManager] Processing file directly:', file.name);
+        this.processCsvFile(file);
+        return;
+      }
+      // Otherwise, open the modal for file selection
+      console.log('[PortfolioManager] Opening upload modal, type: csv');
       this.uploadModalType = 'csv';
       this.showUploadModal = true;
+      console.log('[PortfolioManager] Modal state - showUploadModal:', this.showUploadModal);
+      console.log('[PortfolioManager] Modal state - uploadModalType:', this.uploadModalType);
       this.uploadError = null;
       this.uploadSuccess = null;
     },
     handleJsonUpload() {
-      // Ensure both state variables are set together
       this.uploadModalType = 'json';
       this.showUploadModal = true;
       this.uploadError = null;
       this.uploadSuccess = null;
     },
     closeUploadModal() {
-      // Reset both state variables together to keep them in sync
       this.showUploadModal = false;
       this.uploadModalType = null;
       this.uploadError = null;
@@ -301,9 +310,7 @@ export default defineComponent({
       }
     },
     handleSymbolClick(symbol) {
-      console.log("Symbol clicked:", symbol);
       this.selectedSymbol = symbol;
-      // Navigate to timeline view for the selected symbol
       navigationStore.changeTab('portfolio');
       navigationStore.changeSubTab('portfolio', 'timeline');
       this.selectedSnapshotDate = portfolioStore.portfolioDate;
@@ -555,17 +562,19 @@ export default defineComponent({
               :onUploadJSON="handleJsonUpload"
             />
           </div>
-          
-          <!-- Upload Modal -->
-          <FileUploader
-            v-if="showUploadModal"
-            :modalType="uploadModalType"
-            :onClose="closeUploadModal"
-            :onCsvFileLoaded="processCsvFile"
-            :onJsonFileLoaded="processJsonFile"
-          />
-          
-          <!-- Upload Error Alert -->
+        </v-container>
+        
+        <!-- Upload Modal - Must be outside conditional containers to always be available -->
+        <FileUploader
+          v-if="showUploadModal"
+          :modalType="uploadModalType"
+          :onClose="closeUploadModal"
+          :onCsvFileLoaded="processCsvFile"
+          :onJsonFileLoaded="processJsonFile"
+          ref="fileUploader"
+        />
+        
+        <!-- Upload Error Alert -->
           <v-snackbar
             v-model="uploadError"
             color="error"
@@ -617,7 +626,6 @@ export default defineComponent({
               <p class="mt-4 white--text">Processing file...</p>
             </div>
           </v-overlay>
-        </v-container>
       </v-main>
       
       <PortfolioFooter :portfolioDate="portfolio.portfolioDate" />

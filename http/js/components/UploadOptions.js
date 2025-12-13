@@ -26,30 +26,44 @@ export default defineComponent({
       }
     },
     handleCSVClick() {
+      console.log('[UploadOptions] handleCSVClick called');
+      console.log('[UploadOptions] onUploadCSV prop:', typeof this.onUploadCSV, this.onUploadCSV);
+      console.log('[UploadOptions] isOpen before:', this.isOpen);
       try {
         if (this.onUploadCSV) {
+          console.log('[UploadOptions] Calling onUploadCSV handler');
           this.onUploadCSV();
+          console.log('[UploadOptions] onUploadCSV handler completed');
         } else {
           console.warn('UploadOptions: onUploadCSV handler is not defined');
         }
       } catch (error) {
         console.error('UploadOptions: Error in handleCSVClick:', error);
+        console.error('UploadOptions: Error stack:', error.stack);
       } finally {
         // Always close menu, even if handler fails
+        console.log('[UploadOptions] Closing menu, isOpen set to false');
         this.isOpen = false;
       }
     },
     handleJSONClick() {
+      console.log('[UploadOptions] handleJSONClick called');
+      console.log('[UploadOptions] onUploadJSON prop:', typeof this.onUploadJSON, this.onUploadJSON);
+      console.log('[UploadOptions] isOpen before:', this.isOpen);
       try {
         if (this.onUploadJSON) {
+          console.log('[UploadOptions] Calling onUploadJSON handler');
           this.onUploadJSON();
+          console.log('[UploadOptions] onUploadJSON handler completed');
         } else {
           console.warn('UploadOptions: onUploadJSON handler is not defined');
         }
       } catch (error) {
         console.error('UploadOptions: Error in handleJSONClick:', error);
+        console.error('UploadOptions: Error stack:', error.stack);
       } finally {
         // Always close menu, even if handler fails
+        console.log('[UploadOptions] Closing menu, isOpen set to false');
         this.isOpen = false;
       }
     }

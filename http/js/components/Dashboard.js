@@ -18,21 +18,53 @@ export default defineComponent({
       timeSeriesData: []
     };
   },
-  async mounted() {
-    await this.loadSnapshotData();
+  computed: {
+    currentAccount() {
+      return this.portfolioStore?.currentAccount;
+    },
+    portfolioStats() {
+      return this.portfolioStore?.portfolioStats || {
+        totalValue: 0,
+        totalGain: 0,
+        gainPercent: 0
+      };
+    },
+    hasData() {
+      return this.portfolioStore?.isDataLoaded && this.portfolioStore?.portfolioData?.length > 0;
+    },
+    recentPerformance() {
+      if (this.timeSeriesData.length < 2) return null;
+      
+      const latest = this.timeSeriesData[this.timeSeriesData.length - 1];
+      const previous = this.timeSeriesData[this.timeSeriesData.length - 2];
+      
+      if (!latest || !previous) return null;
+      
+      const change = latest.value - previous.value;
+      const changePercent = previous.value > 0 ? (change / previous.value) * 100 : 0;
+      
+      return {
+        change,
+        changePercent,
+        isPositive: change >= 0
+      };
+    }
   },
   watch: {
-    'portfolioStore.currentAccount'() {
+    currentAccount() {
       this.loadSnapshotData();
     }
   },
+  async mounted() {
+    await this.loadSnapshotData();
+  },
   methods: {
     async loadSnapshotData() {
-      if (!this.portfolioStore?.currentAccount) return;
+      if (!this.currentAccount) return;
       
       this.isLoadingSnapshots = true;
       try {
-        this.snapshots = await portfolioService.getAccountSnapshots(this.portfolioStore.currentAccount);
+        this.snapshots = await portfolioService.getAccountSnapshots(this.currentAccount);
         this.snapshots.sort((a, b) => new Date(a.date) - new Date(b.date));
         this.timeSeriesData = this.generateTimeSeriesData(this.snapshots);
       } catch (error) {
@@ -90,35 +122,28 @@ export default defineComponent({
       if (this.onNavigate) {
         this.onNavigate('forecasting');
       }
-    }
-  },
-  computed: {
-    portfolioStats() {
-      return this.portfolioStore?.portfolioStats || {
-        totalValue: 0,
-        totalGain: 0,
-        gainPercent: 0
-      };
     },
-    hasData() {
-      return this.portfolioStore?.isDataLoaded && this.portfolioStore?.portfolioData?.length > 0;
+    handleCsvUpload() {
+      console.log('[Dashboard] handleCsvUpload called');
+      console.log('[Dashboard] onUploadCSV prop type:', typeof this.onUploadCSV);
+      console.log('[Dashboard] onUploadCSV prop value:', this.onUploadCSV);
+      if (this.onUploadCSV) {
+        console.log('[Dashboard] Calling onUploadCSV handler');
+        try {
+          this.onUploadCSV();
+          console.log('[Dashboard] onUploadCSV handler completed');
+        } catch (error) {
+          console.error('[Dashboard] Error calling onUploadCSV handler:', error);
+          console.error('[Dashboard] Error stack:', error.stack);
+        }
+      } else {
+        console.warn('[Dashboard] onUploadCSV handler is not defined');
+      }
     },
-    recentPerformance() {
-      if (this.timeSeriesData.length < 2) return null;
-      
-      const latest = this.timeSeriesData[this.timeSeriesData.length - 1];
-      const previous = this.timeSeriesData[this.timeSeriesData.length - 2];
-      
-      if (!latest || !previous) return null;
-      
-      const change = latest.value - previous.value;
-      const changePercent = previous.value > 0 ? (change / previous.value) * 100 : 0;
-      
-      return {
-        change,
-        changePercent,
-        isPositive: change >= 0
-      };
+    handleJsonUpload() {
+      if (this.onUploadJSON) {
+        this.onUploadJSON();
+      }
     }
   },
   template: `
@@ -139,7 +164,7 @@ export default defineComponent({
             <v-btn
               color="primary"
               large
-              @click="onUploadCSV"
+              @click="handleCsvUpload"
               class="mr-2"
             >
               <v-icon left>mdi-file-document</v-icon>
@@ -148,7 +173,7 @@ export default defineComponent({
             <v-btn
               color="success"
               large
-              @click="onUploadJSON"
+              @click="handleJsonUpload"
             >
               <v-icon left>mdi-database</v-icon>
               Upload JSON
@@ -298,7 +323,7 @@ export default defineComponent({
                       <v-btn
                         color="primary"
                         block
-                        @click="onUploadCSV"
+                        @click="handleCsvUpload"
                         class="mb-2"
                       >
                         <v-icon left>mdi-file-document</v-icon>
@@ -309,7 +334,7 @@ export default defineComponent({
                       <v-btn
                         color="success"
                         block
-                        @click="onUploadJSON"
+                        @click="handleJsonUpload"
                         class="mb-2"
                       >
                         <v-icon left>mdi-database</v-icon>

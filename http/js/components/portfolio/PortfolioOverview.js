@@ -44,6 +44,68 @@ export default defineComponent({
       if (this.onSymbolClick) {
         this.onSymbolClick(symbol);
       }
+    },
+    handleCsvUpload() {
+      console.log('[PortfolioOverview] handleCsvUpload called');
+      console.log('[PortfolioOverview] Searching for file input element');
+      // Trigger the hidden file input directly
+      const fileInput = this.$el.querySelector('input[type="file"][accept=".csv"]');
+      console.log('[PortfolioOverview] File input found:', !!fileInput);
+      if (fileInput) {
+        console.log('[PortfolioOverview] Attempting to click file input');
+        try {
+          fileInput.click();
+          console.log('[PortfolioOverview] File input clicked successfully');
+        } catch (error) {
+          console.error('[PortfolioOverview] Error clicking file input:', error);
+          console.error('[PortfolioOverview] Error stack:', error.stack);
+        }
+      } else {
+        console.log('[PortfolioOverview] File input not found, using fallback');
+        // Fallback to the prop handler if file input is not found
+        console.log('[PortfolioOverview] Fallback: onUploadCSV prop exists:', !!this.onUploadCSV);
+        if (this.onUploadCSV) {
+          try {
+            console.log('[PortfolioOverview] Calling onUploadCSV handler (fallback)');
+            this.onUploadCSV();
+            console.log('[PortfolioOverview] onUploadCSV handler completed (fallback)');
+          } catch (error) {
+            console.error('[PortfolioOverview] Error calling onUploadCSV:', error);
+            console.error('[PortfolioOverview] Error stack:', error.stack);
+          }
+        } else {
+          console.warn('[PortfolioOverview] onUploadCSV handler is not defined');
+        }
+      }
+    },
+    handleFileChange(event) {
+      console.log('[PortfolioOverview] handleFileChange called');
+      console.log('[PortfolioOverview] Event target:', event.target);
+      const file = event.target.files && event.target.files[0];
+      console.log('[PortfolioOverview] File selected:', file ? file.name : 'no file');
+      if (file) {
+        console.log('[PortfolioOverview] File details - name:', file.name, 'size:', file.size, 'type:', file.type);
+        // Pass the file directly to the upload handler
+        if (this.onUploadCSV) {
+          console.log('[PortfolioOverview] Calling onUploadCSV handler with file');
+          try {
+            this.onUploadCSV(file);
+            console.log('[PortfolioOverview] onUploadCSV handler completed');
+          } catch (error) {
+            console.error('[PortfolioOverview] Error in file change handler:', error);
+            console.error('[PortfolioOverview] Error stack:', error.stack);
+          }
+        } else {
+          console.warn('[PortfolioOverview] onUploadCSV handler is not defined in file change handler');
+        }
+      } else {
+        console.warn('[PortfolioOverview] No file selected in file change event');
+      }
+      // Reset the input so the same file can be selected again
+      if (event.target) {
+        event.target.value = '';
+        console.log('[PortfolioOverview] File input reset');
+      }
     }
   },
   computed: {
@@ -82,14 +144,22 @@ export default defineComponent({
           <v-icon size="64" color="grey-lighten-1" class="mb-4">mdi-chart-line</v-icon>
           <h3 class="text-h6 mb-2">No Portfolio Data</h3>
           <p class="text-body-2 text--secondary mb-4">Upload a portfolio snapshot to get started</p>
-          <v-btn
-            color="primary"
-            large
-            @click="onUploadCSV"
-          >
-            <v-icon left>mdi-file-document</v-icon>
-            Upload CSV
-          </v-btn>
+          <div>
+            <input
+              type="file"
+              accept=".csv"
+              @change="handleFileChange"
+              style="display: none;"
+            />
+            <v-btn
+              color="primary"
+              large
+              @click="handleCsvUpload"
+            >
+              <v-icon left>mdi-file-document</v-icon>
+              Upload CSV
+            </v-btn>
+          </div>
         </div>
 
         <!-- Portfolio Content -->

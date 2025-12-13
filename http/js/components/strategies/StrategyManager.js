@@ -23,16 +23,55 @@ export default defineComponent({
       editingStrategy: null
     };
   },
-  async mounted() {
-    if (this.currentAccount) {
-      await strategyStore.loadStrategies(this.currentAccount);
+  computed: {
+    accountKey() {
+      return this.currentAccount || '';
+    },
+    filteredStrategies() {
+      let filtered = strategyStore.strategies || [];
+      
+      // Filter by account
+      if (this.currentAccount) {
+        filtered = filtered.filter(s => s.account === this.currentAccount);
+      }
+      
+      // Filter by status
+      if (this.statusFilter !== 'all') {
+        filtered = filtered.filter(s => s.status === this.statusFilter);
+      }
+      
+      // Filter by search
+      if (this.search) {
+        const searchLower = this.search.toLowerCase();
+        filtered = filtered.filter(s => {
+          const symbol = (s.securitySymbol || '').toLowerCase();
+          const rationale = (s.rationale || '').toLowerCase();
+          const profitPlan = (s.profitPlan || '').toLowerCase();
+          return symbol.includes(searchLower) || 
+                 rationale.includes(searchLower) || 
+                 profitPlan.includes(searchLower);
+        });
+      }
+      
+      return filtered;
+    },
+    hasStrategies() {
+      return this.filteredStrategies.length > 0;
+    },
+    isLoading() {
+      return strategyStore.isLoading;
     }
   },
   watch: {
-    currentAccount(newAccount) {
+    accountKey(newAccount) {
       if (newAccount) {
         strategyStore.loadStrategies(newAccount);
       }
+    }
+  },
+  async mounted() {
+    if (this.currentAccount) {
+      await strategyStore.loadStrategies(this.currentAccount);
     }
   },
   methods: {
@@ -85,42 +124,6 @@ export default defineComponent({
         'paused': 'mdi-pause-circle'
       };
       return icons[status] || 'mdi-circle';
-    }
-  },
-  computed: {
-    filteredStrategies() {
-      let filtered = strategyStore.strategies || [];
-      
-      // Filter by account
-      if (this.currentAccount) {
-        filtered = filtered.filter(s => s.account === this.currentAccount);
-      }
-      
-      // Filter by status
-      if (this.statusFilter !== 'all') {
-        filtered = filtered.filter(s => s.status === this.statusFilter);
-      }
-      
-      // Filter by search
-      if (this.search) {
-        const searchLower = this.search.toLowerCase();
-        filtered = filtered.filter(s => {
-          const symbol = (s.securitySymbol || '').toLowerCase();
-          const rationale = (s.rationale || '').toLowerCase();
-          const profitPlan = (s.profitPlan || '').toLowerCase();
-          return symbol.includes(searchLower) || 
-                 rationale.includes(searchLower) || 
-                 profitPlan.includes(searchLower);
-        });
-      }
-      
-      return filtered;
-    },
-    hasStrategies() {
-      return this.filteredStrategies.length > 0;
-    },
-    isLoading() {
-      return strategyStore.isLoading;
     }
   },
   template: `

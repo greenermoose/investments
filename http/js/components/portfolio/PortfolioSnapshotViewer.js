@@ -155,14 +155,6 @@ export default defineComponent({
       return snapshot ? formatDate(snapshot.date) : '';
     }
   },
-  watch: {
-    selectedSnapshot1() {
-      this.compareSnapshots();
-    },
-    selectedSnapshot2() {
-      this.compareSnapshots();
-    }
-  },
   template: `
     <div>
       <v-container class="pa-4 pa-md-6">
@@ -189,6 +181,7 @@ export default defineComponent({
                   :loading="isLoading"
                   outlined
                   dense
+                  @change="compareSnapshots"
                 >
                   <template v-slot:item="{ item }">
                     {{ formatDateValue(item.date) }}
@@ -209,6 +202,7 @@ export default defineComponent({
                   outlined
                   dense
                   clearable
+                  @change="compareSnapshots"
                 >
                   <template v-slot:item="{ item }">
                     {{ formatDateValue(item.date) }}

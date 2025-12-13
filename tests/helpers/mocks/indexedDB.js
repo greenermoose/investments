@@ -36,6 +36,7 @@ class MockIDBObjectStore {
 
   createIndex(name, keyPath, options = {}) {
     const index = new MockIDBIndex(name, keyPath, options);
+    index.setStore(this);
     this.indexes.set(name, index);
     return index;
   }
@@ -45,27 +46,27 @@ class MockIDBObjectStore {
     this.data.set(key, JSON.parse(JSON.stringify(value)));
     const request = new MockIDBRequest();
     request.result = key;
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
   get(key) {
     const request = new MockIDBRequest();
     request.result = this.data.get(key) || undefined;
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
   getAll() {
     const request = new MockIDBRequest();
     request.result = Array.from(this.data.values());
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
@@ -73,9 +74,9 @@ class MockIDBObjectStore {
     const request = new MockIDBRequest();
     this.data.delete(key);
     request.result = undefined;
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
@@ -83,9 +84,9 @@ class MockIDBObjectStore {
     const request = new MockIDBRequest();
     this.data.clear();
     request.result = undefined;
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
@@ -99,24 +100,57 @@ class MockIDBIndex {
     this.name = name;
     this.keyPath = keyPath;
     this.unique = options.unique || false;
+    this._store = null; // Will be set when index is created
+  }
+
+  setStore(store) {
+    this._store = store;
   }
 
   getAll(value) {
     const request = new MockIDBRequest();
     // This is a simplified implementation - in real IndexedDB, this would query by index
-    request.result = [];
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    // For now, return all data that matches the index value
+    const store = this._store || null;
+    if (store) {
+      const matchingData = Array.from(store.data.values()).filter(item => {
+        const keyPath = this.keyPath;
+        if (Array.isArray(keyPath)) {
+          // Handle compound key paths
+          return false; // Simplified
+        } else {
+          return item[keyPath] === value;
+        }
+      });
+      request.result = matchingData;
+    } else {
+      request.result = [];
+    }
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 
   get(value) {
     const request = new MockIDBRequest();
-    request.result = undefined;
-    setTimeout(() => {
-      request.onsuccess?.({ target: request });
-    }, 0);
+    const store = this._store || null;
+    if (store) {
+      const matchingData = Array.from(store.data.values()).find(item => {
+        const keyPath = this.keyPath;
+        if (Array.isArray(keyPath)) {
+          return false; // Simplified
+        } else {
+          return item[keyPath] === value;
+        }
+      });
+      request.result = matchingData || undefined;
+    } else {
+      request.result = undefined;
+    }
+    request.readyState = 'done';
+    // Fire onsuccess in next microtask, or immediately if handler is already set
+    Promise.resolve().then(() => request._fireSuccess());
     return request;
   }
 }
@@ -129,10 +163,26 @@ class MockIDBTransaction {
     this.oncomplete = null;
     this.onerror = null;
     this.error = null;
+    this._pendingRequests = [];
   }
 
   objectStore(name) {
     return this.db.objectStores.get(name);
+  }
+
+  _trackRequest(request) {
+    this._pendingRequests.push(request);
+    // When request completes, check if all are done and fire oncomplete
+    const originalOnSuccess = request.onsuccess;
+    request.onsuccess = (event) => {
+      if (originalOnSuccess) originalOnSuccess(event);
+      // Check if all requests are done
+      if (this._pendingRequests.every(req => req.readyState === 'done')) {
+        Promise.resolve().then(() => {
+          this.oncomplete?.();
+        });
+      }
+    };
   }
 }
 
@@ -142,6 +192,33 @@ class MockIDBRequest {
     this.error = null;
     this.onsuccess = null;
     this.onerror = null;
+    this.readyState = 'pending';
+    this._fired = false;
+  }
+
+  // Make it work with instanceof checks by setting up the prototype
+  get [Symbol.toStringTag]() {
+    return 'IDBRequest';
+  }
+
+  // Fire onsuccess if result is ready and handler is set
+  _fireSuccess() {
+    if (!this._fired && this.onsuccess && this.readyState === 'done') {
+      this._fired = true;
+      this.onsuccess({ target: this });
+    }
+  }
+
+  // Set onsuccess with auto-fire if ready
+  set onsuccess(handler) {
+    this._onsuccess = handler;
+    if (this.readyState === 'done' && !this._fired) {
+      Promise.resolve().then(() => this._fireSuccess());
+    }
+  }
+
+  get onsuccess() {
+    return this._onsuccess;
   }
 }
 
@@ -150,6 +227,14 @@ class MockIDBOpenDBRequest extends MockIDBRequest {
     super();
     this.onupgradeneeded = null;
     this.onblocked = null;
+    this._upgradeFired = false;
+  }
+
+  _fireUpgrade() {
+    if (!this._upgradeFired && this.onupgradeneeded && this.readyState === 'done') {
+      this._upgradeFired = true;
+      this.onupgradeneeded({ target: this, oldVersion: 0, newVersion: 5 });
+    }
   }
 }
 
@@ -194,18 +279,20 @@ export function setupIndexedDBMock() {
     open: (name, version) => {
       const request = new MockIDBOpenDBRequest();
       request.result = mockDB;
-      setTimeout(() => {
-        request.onupgradeneeded?.({ target: request, oldVersion: 0, newVersion: version });
-        request.onsuccess?.({ target: request });
-      }, 0);
+      request.readyState = 'done';
+      // Fire events in next microtask
+      Promise.resolve().then(() => {
+        request._fireUpgrade();
+        request._fireSuccess();
+      });
       return request;
     },
     deleteDatabase: (name) => {
       const request = new MockIDBOpenDBRequest();
       mockDB = new MockIDBDatabase(name, 1);
-      setTimeout(() => {
-        request.onsuccess?.({ target: request });
-      }, 0);
+      request.readyState = 'done';
+      // Fire onsuccess in next microtask
+      Promise.resolve().then(() => request._fireSuccess());
       return request;
     }
   };

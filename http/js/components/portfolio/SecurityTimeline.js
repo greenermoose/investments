@@ -18,24 +18,49 @@ export default defineComponent({
       selectedDate: null
     };
   },
-  async mounted() {
-    if (this.symbol && this.account) {
-      await this.loadTimelineData();
+  computed: {
+    timelineKey() {
+      // Computed property that changes when symbol or account changes
+      return `${this.symbol || ''}-${this.account || ''}`;
+    },
+    pastData() {
+      if (!this.selectedDate) return [];
+      return this.timelineData.filter(item => item.date < this.selectedDate);
+    },
+    presentData() {
+      if (!this.selectedDate) return [];
+      return this.timelineData.filter(item => {
+        const itemTime = item.date.getTime();
+        const selectedTime = this.selectedDate.getTime();
+        return Math.abs(itemTime - selectedTime) < 24 * 60 * 60 * 1000; // Within 24 hours
+      });
+    },
+    futureData() {
+      if (!this.selectedDate) return [];
+      return this.timelineData.filter(item => item.date > this.selectedDate);
+    },
+    hasData() {
+      return this.timelineData && this.timelineData.length > 0;
     }
   },
   watch: {
-    symbol() {
+    timelineKey() {
       if (this.symbol && this.account) {
         this.loadTimelineData();
       }
     },
-    account() {
-      if (this.symbol && this.account) {
-        this.loadTimelineData();
+    snapshotDate(newDate) {
+      if (newDate) {
+        this.selectedDate = newDate;
       }
-    },
-    snapshotDate() {
+    }
+  },
+  async mounted() {
+    if (this.snapshotDate) {
       this.selectedDate = this.snapshotDate;
+    }
+    if (this.symbol && this.account) {
+      await this.loadTimelineData();
     }
   },
   methods: {
@@ -118,27 +143,6 @@ export default defineComponent({
       const current = this.timelineData[index];
       const previous = this.timelineData[index - 1];
       return current.price - previous.price;
-    }
-  },
-  computed: {
-    pastData() {
-      if (!this.selectedDate) return [];
-      return this.timelineData.filter(item => item.date < this.selectedDate);
-    },
-    presentData() {
-      if (!this.selectedDate) return [];
-      return this.timelineData.filter(item => {
-        const itemTime = item.date.getTime();
-        const selectedTime = this.selectedDate.getTime();
-        return Math.abs(itemTime - selectedTime) < 24 * 60 * 60 * 1000; // Within 24 hours
-      });
-    },
-    futureData() {
-      if (!this.selectedDate) return [];
-      return this.timelineData.filter(item => item.date > this.selectedDate);
-    },
-    hasData() {
-      return this.timelineData && this.timelineData.length > 0;
     }
   },
   template: `

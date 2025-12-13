@@ -19,13 +19,24 @@ export default defineComponent({
       selectedChart: 'value' // 'value', 'allocation'
     };
   },
-  async mounted() {
-    await this.loadChartData();
+  computed: {
+    accountKey() {
+      return this.currentAccount || '';
+    },
+    hasTimeSeriesData() {
+      return this.timeSeriesData && this.timeSeriesData.length > 0;
+    },
+    hasAllocationData() {
+      return this.portfolioStats?.assetAllocation && this.portfolioStats.assetAllocation.length > 0;
+    }
   },
   watch: {
-    currentAccount() {
+    accountKey() {
       this.loadChartData();
     }
+  },
+  async mounted() {
+    await this.loadChartData();
   },
   methods: {
     async loadChartData() {

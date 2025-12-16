@@ -1,3 +1,7 @@
+### 0.5.7
+
+- fix buttons
+
 ### 0.5.6
 
 - file upload dialogs appear

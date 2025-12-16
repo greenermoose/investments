@@ -11,7 +11,8 @@ export default defineComponent({
   },
   data() {
     return {
-      dialogOpen: false
+      dialogOpen: false,
+      selectedFile: null
     };
   },
   mounted() {
@@ -41,7 +42,7 @@ export default defineComponent({
         return;
       }
 
-      // Vuetify's v-file-input can emit either a File or an array of Files
+      // Vuetify's v-file-input can emit either a File, an array of Files, or a FileList
       let file = null;
       if (Array.isArray(fileOrArray)) {
         console.log('[FileUploader] Processing array of files, length:', fileOrArray.length);
@@ -51,8 +52,26 @@ export default defineComponent({
       } else if (fileOrArray instanceof File) {
         console.log('[FileUploader] Processing single File object');
         file = fileOrArray;
+      } else if (fileOrArray && typeof fileOrArray.length === 'number' && fileOrArray.item) {
+        // Handle FileList objects (array-like but not arrays)
+        console.log('[FileUploader] Processing FileList, length:', fileOrArray.length);
+        file = fileOrArray.length > 0 ? fileOrArray[0] : null;
+        if (!file && fileOrArray.length > 0) {
+          // Try using item() method
+          file = fileOrArray.item(0);
+        }
+      } else if (fileOrArray && typeof fileOrArray.length === 'number') {
+        // Handle array-like objects (might be FileList or similar)
+        console.log('[FileUploader] Processing array-like object, length:', fileOrArray.length);
+        file = fileOrArray.length > 0 && fileOrArray[0] instanceof File ? fileOrArray[0] : null;
       } else {
         console.warn('[FileUploader] fileOrArray is neither File nor Array:', fileOrArray);
+        // Last resort: check if it has a 'file' property or similar
+        if (fileOrArray && fileOrArray.file && fileOrArray.file instanceof File) {
+          file = fileOrArray.file;
+        } else if (fileOrArray && fileOrArray[0] && fileOrArray[0] instanceof File) {
+          file = fileOrArray[0];
+        }
       }
       
       if (!file) {
@@ -98,6 +117,19 @@ export default defineComponent({
         console.error('[FileUploader] Error stack:', error.stack);
       }
     },
+    handleFileInput(fileOrArray) {
+      // Update selectedFile when v-model changes
+      this.selectedFile = fileOrArray;
+      // Try calling handleFileChange in case @input fires but @change doesn't
+      if (fileOrArray) {
+        this.handleFileChange(fileOrArray);
+      }
+    },
+    handleUploadClick() {
+      if (this.selectedFile) {
+        this.handleFileChange(this.selectedFile);
+      }
+    },
   },
   template: `
     <v-dialog
@@ -114,15 +146,24 @@ export default defineComponent({
         <v-card-text ref="cardText">
           <v-file-input
             ref="fileInput"
+            v-model="selectedFile"
             :label="modalType === 'csv' ? 'Select CSV file' : 'Select JSON file'"
             :accept="modalType === 'csv' ? '.csv' : '.json'"
             @change="handleFileChange"
+            @input="handleFileInput"
             clearable
           ></v-file-input>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn text @click="dialogOpen = false">Cancel</v-btn>
+          <v-btn 
+            color="primary" 
+            :disabled="!selectedFile" 
+            @click="handleUploadClick"
+          >
+            Upload
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

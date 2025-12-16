@@ -322,6 +322,9 @@ export default defineComponent({
     getUploadStats() {
       // TODO: Implement file upload stats
       return { csv: 0, json: 0, total: 0 };
+    },
+    handleStorageManagerClick() {
+      navigationStore.changeTab('storage-manager');
     }
   },
   computed: {
@@ -387,7 +390,11 @@ export default defineComponent({
         </v-container>
         
         <v-container v-else-if="!portfolio.isDataLoaded" class="mt-4">
-          <v-card>
+          <StorageManager
+            v-if="navigation.activeTab === 'storage-manager'"
+            :onDataChange="portfolio.refreshData"
+          />
+          <v-card v-else>
             <v-card-title>
               <v-icon left color="primary" large>mdi-chart-line</v-icon>
               Welcome to Investment Portfolio Manager
@@ -446,7 +453,7 @@ export default defineComponent({
                   <v-btn
                     color="secondary"
                     large
-                    @click="navigation.changeTab('storage-manager')"
+                    @click="handleStorageManagerClick"
                   >
                     <v-icon left>mdi-database-search</v-icon>
                     Manage Your Stored Data

@@ -241,6 +241,10 @@ No build or compilation step is required - the application runs directly from th
 - Mobile application development
 - Cloud sync capabilities
 
+## Documentation
+
+The docs folder is for specifications, plans, architectural diagrams, and other documentation. This is not for user docs. These are for developers. The docs folder is not served by the web server and is not part of the app. It exists as a reference for developers, especially AI agents. Note that the docs are not always up to date with the latest changes in the app. Developers should always refer to the code for the latest information.
+
 ## License
 
 This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE) file for details.

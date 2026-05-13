@@ -1,3 +1,7 @@
+### 0.5.8
+
+- removed tests and added docs
+
 ### 0.5.7
 
 - fix buttons

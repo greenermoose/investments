@@ -228,3 +228,34 @@ All previous strategies involve holding through drawdowns, which carries the ris
 **References:**
 *   O'Neil, W. *How to Make Money in Stocks*. O'Neil's CAN SLIM strategy is foundational for momentum trading. He strictly mandates an absolute maximum stop loss of 7% to 8% to prevent catastrophic drawdowns, arguing that capital preservation is the single most important rule of investing.
 *   Minervini, M. *Trade Like a Stock Market Wizard*. Discusses the brutal mathematics of drawdowns, proving that cutting losses early with strict stops is a mathematical necessity because a 50% loss requires a 100% gain just to break even.
+
+---
+
+## Strategy 8: The Catalyst "Free Roll" (House Money)
+
+**Concept:**
+This strategy involves making short-to-medium term catalyst-driven trades with a strict rule: upon achieving a specific modest gain, the vast majority of the position is sold to recoup 100% of the initial invested capital, leaving the remaining shares to run indefinitely as "house money." If the catalyst fails to materialize within a set timeframe, the entire position is liquidated.
+
+**Motivation:**
+The goal is to build up a stable of "winners" (long-term holds with a net-zero cost basis) while cutting "losers" where the predictive thesis was incorrect. It allows for capturing long-term upside without permanently tying up the initial capital, which is continuously recycled into new opportunities.
+
+**Simulator Agent Implementation Details:**
+
+1.  **Entry (Catalyst Identification):**
+    *   **Trigger:** The agent identifies an upcoming catalyst expected to generate an 11.11% or greater gain within the next 6 months.
+    *   **Execution:** Sell SGOV to raise cash and buy shares of the target stock.
+
+2.  **Exit (The "Free Roll" GTC Order):**
+    *   **Execution:** Immediately upon buying the shares, the agent places a GTC (Good 'Til Canceled) limit sell order for **90%** of the acquired shares at a price **11.11%** above the purchase price.
+    *   *The Math:* Selling 90% of the position at an 11.11% gain recovers exactly 100% of the initial capital ($0.90 \times 1.1111 \approx 1.00$).
+
+3.  **Time-Bound Liquidation (The 6-Month Rule):**
+    *   **Trigger:** 6 months have passed since the initial purchase.
+    *   **Condition:** The GTC limit order has *not* triggered (the catalyst failed or underperformed).
+    *   **Action:** The agent cancels the GTC order and executes a market sell for the entire position, accepting the loss or subpar gain, and sweeps the cash back to SGOV.
+
+4.  **Long-Term Hold (The "House Money"):**
+    *   If the GTC order triggers within the 6-month window, the agent has fully recouped its initial capital. The remaining 10% of shares are kept in the portfolio indefinitely with no predefined exit strategy, letting the "winners run."
+
+**References:**
+*   Tharp, V. *Trade Your Way to Financial Freedom*. Discusses position sizing and the psychological and mathematical benefits of trading with "house money" after initial risk has been entirely removed from a trade.

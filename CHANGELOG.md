@@ -1,3 +1,7 @@
+### 0.5.10
+
+- added "The Catalyst 'Free Roll'" trading strategy
+
 ### 0.5.9
 
 - developed docs

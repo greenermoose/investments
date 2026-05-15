@@ -1,3 +1,7 @@
+### 0.5.11
+
+- added valuation methodologies
+
 ### 0.5.10
 
 - added "The Catalyst 'Free Roll'" trading strategy

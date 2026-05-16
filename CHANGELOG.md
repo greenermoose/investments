@@ -1,3 +1,7 @@
+### 0.5.12
+
+- Answered questions in implementation plan
+
 ### 0.5.11
 
 - added valuation methodologies

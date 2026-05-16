@@ -1,3 +1,7 @@
+### 0.5.14
+
+- upgraded Vue and Vuetify to the latest versions
+
 ### 0.5.13
 
 - added a discussion

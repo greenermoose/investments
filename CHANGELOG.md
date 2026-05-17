@@ -1,3 +1,7 @@
+### 0.5.15
+
+- added examples folder to test .gitignore
+
 ### 0.5.14
 
 - upgraded Vue and Vuetify to the latest versions

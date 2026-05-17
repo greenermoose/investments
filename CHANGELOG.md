@@ -1,3 +1,7 @@
+### 0.6.1
+
+- export file data upload and display
+
 ### 0.6.0
 
 - start over with new architecture

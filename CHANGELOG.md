@@ -1,3 +1,7 @@
+### 0.6.4
+
+- Added Equities and Companies screens
+
 ### 0.6.3
 
 - parse position export

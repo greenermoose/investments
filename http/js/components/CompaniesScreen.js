@@ -36,6 +36,8 @@ export default {
               :search="search"
               class="bg-transparent"
               :sort-by="[{ key: 'name', order: 'asc' }]"
+              fixed-header
+              height="calc(100vh - 350px)"
             >
               <template v-slot:item.name="{ item }">
                 <span class="font-weight-bold">{{ item.name }}</span>

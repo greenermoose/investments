@@ -242,6 +242,13 @@ export default {
       const { date, positions } = BrokerageParser.parsePositions(text);
       let fileDate = date || new Date().toISOString().split('T')[0]; // fallback
       
+      const symbolToCompany = {};
+      for (const pos of positions) {
+        if (pos.assetType === 'Equity') {
+          symbolToCompany[pos.symbol] = pos.description;
+        }
+      }
+      
       for (const pos of positions) {
         let companyId = null;
         if (pos.assetType === 'Equity') {
@@ -250,6 +257,16 @@ export default {
             id: companyId,
             name: pos.description
           });
+        } else if (pos.assetType === 'Option') {
+          const baseSymbol = pos.symbol.split(' ')[0];
+          if (symbolToCompany[baseSymbol]) {
+            companyId = symbolToCompany[baseSymbol];
+          } else {
+            const baseEquity = await DatabaseService.getEquity(baseSymbol);
+            if (baseEquity && baseEquity.companyId) {
+              companyId = baseEquity.companyId;
+            }
+          }
         }
         
         const existing = await DatabaseService.getEquity(pos.symbol);

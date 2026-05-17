@@ -36,6 +36,8 @@ export default {
               :search="search"
               class="bg-transparent"
               :sort-by="[{ key: 'symbol', order: 'asc' }]"
+              fixed-header
+              height="calc(100vh - 350px)"
             >
               <template v-slot:item.symbol="{ item }">
                 <span class="font-weight-bold text-primary">{{ item.symbol }}</span>

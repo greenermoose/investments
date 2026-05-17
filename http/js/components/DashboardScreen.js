@@ -1,4 +1,5 @@
 import { DatabaseService } from '../services/DatabaseService.js';
+import { BrokerageParser } from '../services/BrokerageParser.js';
 
 export default {
   name: 'DashboardScreen',
@@ -56,22 +57,29 @@ export default {
               <v-card class="glass-panel pa-6">
                 <div class="d-flex align-center justify-space-between mb-4">
                   <div class="text-h5 font-weight-bold">Data Ingestion</div>
-                  <v-btn color="primary" prepend-icon="mdi-upload" :loading="isUploading" @click="$refs.fileInput.click()">
-                    Upload Broker Export
-                  </v-btn>
+                  <div class="d-flex align-center">
+                    <v-btn-toggle v-model="fileFilter" mandatory variant="outlined" color="primary" class="mr-4" density="compact">
+                      <v-btn value="all">All</v-btn>
+                      <v-btn value="positions">Positions</v-btn>
+                      <v-btn value="transactions">Transactions</v-btn>
+                    </v-btn-toggle>
+                    <v-btn color="primary" prepend-icon="mdi-upload" :loading="isUploading" @click="$refs.fileInput.click()">
+                      Upload Broker Export
+                    </v-btn>
+                  </div>
                   <input 
                     type="file" 
                     ref="fileInput" 
                     class="d-none" 
-                    accept=".csv,.txt,.xlsx,.json" 
+                    accept=".csv,.txt,.xlsx,.json,.xml" 
                     multiple
                     @change="handleFilesSelected"
                   />
                 </div>
                 
-                <div v-if="uploadedFiles.length === 0" class="text-center pa-6 text-medium-emphasis">
+                <div v-if="filteredFiles.length === 0" class="text-center pa-6 text-medium-emphasis">
                   <v-icon size="48" class="mb-2 opacity-50">mdi-file-upload-outline</v-icon>
-                  <div>No data files uploaded yet.</div>
+                  <div>No data files found for the selected filter.</div>
                 </div>
                 
                 <v-table v-else class="bg-transparent mt-4">
@@ -81,11 +89,12 @@ export default {
                       <th class="text-left font-weight-bold">Size</th>
                       <th class="text-left font-weight-bold">Uploaded At</th>
                       <th class="text-left font-weight-bold">Hash (SHA-256)</th>
+                      <th class="text-center font-weight-bold">Type</th>
                       <th class="text-center font-weight-bold">Status</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="file in uploadedFiles" :key="file.hash" class="hover-row">
+                    <tr v-for="file in filteredFiles" :key="file.hash" class="hover-row">
                       <td class="py-3">
                         <div class="d-flex align-center">
                           <v-icon color="primary" class="mr-3" size="small">mdi-file-document-outline</v-icon>
@@ -96,6 +105,11 @@ export default {
                       <td>{{ new Date(file.uploadedAt).toLocaleString() }}</td>
                       <td class="text-caption text-mono text-medium-emphasis">
                         {{ file.hash.substring(0, 8) }}...{{ file.hash.substring(file.hash.length - 8) }}
+                      </td>
+                      <td class="text-center">
+                        <v-chip size="small" :color="file.exportType === 'positions' ? 'blue' : (file.exportType === 'transactions' ? 'purple' : 'grey')" variant="tonal">
+                          {{ file.exportType || 'unknown' }}
+                        </v-chip>
                       </td>
                       <td class="text-center">
                         <v-chip size="small" color="success" variant="flat">Indexed</v-chip>
@@ -128,6 +142,7 @@ export default {
   data() {
     return {
       uploadedFiles: [],
+      fileFilter: 'all',
       isUploading: false,
       snackbar: {
         show: false,
@@ -135,6 +150,12 @@ export default {
         color: 'success'
       }
     };
+  },
+  computed: {
+    filteredFiles() {
+      if (this.fileFilter === 'all') return this.uploadedFiles;
+      return this.uploadedFiles.filter(f => f.exportType === this.fileFilter);
+    }
   },
   async mounted() {
     await this.loadFiles();
@@ -175,11 +196,16 @@ export default {
             continue; // Skip duplicates
           }
           
+          const decoder = new TextDecoder();
+          const text = decoder.decode(arrayBuffer);
+          const exportType = BrokerageParser.classifyFile(text, file.name);
+          
           const fileRecord = {
             hash: hash,
             name: file.name,
             size: file.size,
             type: file.type,
+            exportType: exportType,
             content: arrayBuffer, // Storing raw ArrayBuffer
             uploadedAt: new Date().toISOString()
           };

@@ -1,3 +1,7 @@
+### 0.6.2
+
+- categorize uploaded files by type
+
 ### 0.6.1
 
 - export file data upload and display

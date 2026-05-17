@@ -1,65 +1,31 @@
-// Main Vue application entry point
 import { createApp } from './vue.esm-browser.js';
 import { createVuetify } from './vuetify.esm.js';
-import PortfolioManager from './components/PortfolioManager.js';
+import AppRoot from './components/AppRoot.js';
 
-// Create Vuetify instance
+// Setup Vuetify with Dark Theme by Default
 const vuetify = createVuetify({
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     themes: {
-      light: {
+      dark: {
+        dark: true,
         colors: {
-          primary: '#1976D2',
-          secondary: '#424242',
-          accent: '#82B1FF',
-          error: '#FF5252',
-          info: '#2196F3',
-          success: '#4CAF50',
-          warning: '#FB8C00',
-        },
-      },
-    },
-  },
-});
-
-// Global error handler for unhandled errors
-window.addEventListener('error', (event) => {
-  console.error('Global error:', event.error);
-  // Prevent default error handling that might break the app
-  event.preventDefault();
-});
-
-window.addEventListener('unhandledrejection', (event) => {
-  console.error('Unhandled promise rejection:', event.reason);
-  // Prevent default error handling
-  event.preventDefault();
+          background: '#0b0e14',
+          surface: '#151a23',
+          primary: '#00d4ff',
+          secondary: '#6366f1',
+          error: '#f43f5e',
+          info: '#3b82f6',
+          success: '#10b981',
+          warning: '#f59e0b',
+        }
+      }
+    }
+  }
 });
 
 // Create and mount the Vue app
-const app = createApp({
-  components: {
-    PortfolioManager,
-  },
-  errorCaptured(err, instance, info) {
-    // Log component errors
-    console.error('Component error captured:', err, info);
-    // Return false to prevent the error from propagating
-    return false;
-  },
-  template: `
-    <v-app>
-      <PortfolioManager />
-    </v-app>
-  `,
-});
-
-// Configure global error handler for Vue
-app.config.errorHandler = (err, instance, info) => {
-  console.error('Vue error handler:', err, info);
-  // You could also show a user-friendly error message here
-};
+const app = createApp(AppRoot);
 
 app.use(vuetify);
 app.mount('#app');
-

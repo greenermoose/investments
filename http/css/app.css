@@ -1,27 +1,79 @@
-/* Custom application styles */
+/* Premium Dark Mode Aesthetic for Desktop Landscape */
+:root {
+  --bg-color-main: #0b0e14;
+  --bg-color-surface: #151a23;
+  --accent-color: #00d4ff;
+  --accent-color-glow: rgba(0, 212, 255, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --glass-bg: rgba(21, 26, 35, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg-color-main);
+  background-image: radial-gradient(circle at 15% 50%, rgba(0, 212, 255, 0.03), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.04), transparent 25%);
+  color: var(--text-primary);
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
-/* Portfolio specific styles */
-.portfolio-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Utility classes */
-.text-center {
-  text-align: center;
+/* Custom Vuetify Overrides for Premium Feel */
+.v-application {
+  background: transparent !important;
 }
 
-.mt-4 {
-  margin-top: 16px;
+.v-btn {
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
 }
 
-.mb-4 {
-  margin-bottom: 16px;
+.v-btn--variant-elevated {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
+.v-btn--variant-elevated:hover {
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.23) !important;
+  transform: translateY(-1px);
+}
+
+.v-text-field .v-field {
+  border-radius: 8px !important;
+}
+
+/* Animated Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Page transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

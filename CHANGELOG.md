@@ -1,3 +1,7 @@
+### 0.6.0
+
+- start over with new architecture
+
 ### 0.5.15
 
 - added examples folder to test .gitignore

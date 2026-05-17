@@ -1,3 +1,5 @@
+import { CSVParser } from './CSVParser.js';
+
 export const BrokerageParser = {
   /**
    * Classifies a brokerage export file based on its text content.
@@ -38,5 +40,45 @@ export const BrokerageParser = {
     }
 
     return 'unknown';
+  },
+
+  /**
+   * Parses a positions CSV file to extract equities and date.
+   * @param {string} text - The raw CSV text content
+   * @returns {Object} { date, positions: [...] }
+   */
+  parsePositions(text) {
+    let date = null;
+    
+    // Try to extract date from the first few lines
+    const lines = text.split('\n');
+    for (let i = 0; i < Math.min(5, lines.length); i++) {
+      const match = lines[i].match(/(\d{4}\/\d{2}\/\d{2})/);
+      if (match) {
+        date = match[1];
+        break;
+      }
+    }
+
+    // Find the header row index
+    let headerRowIndex = 0;
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].includes('"Symbol"') && lines[i].includes('"Description"')) {
+        headerRowIndex = i;
+        break;
+      }
+    }
+
+    const rawPositions = CSVParser.parse(text, headerRowIndex);
+    
+    const positions = rawPositions.map(row => {
+      return {
+        symbol: row['Symbol'] || '',
+        description: row['Description'] || '',
+        assetType: row['Asset Type'] || ''
+      };
+    }).filter(p => p.symbol && p.symbol !== 'Positions Total' && p.symbol !== 'Cash & Cash Investments');
+
+    return { date, positions };
   }
 };

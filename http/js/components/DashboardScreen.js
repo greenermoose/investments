@@ -212,6 +212,10 @@ export default {
           
           await DatabaseService.saveFile(fileRecord);
           addedCount++;
+
+          if (exportType === 'positions') {
+            await this.processPositionsFile(text, file.name);
+          }
         }
         
         await this.loadFiles(); // Refresh list
@@ -232,6 +236,38 @@ export default {
         if (this.$refs.fileInput) {
           this.$refs.fileInput.value = '';
         }
+      }
+    },
+    async processPositionsFile(text, fileName) {
+      const { date, positions } = BrokerageParser.parsePositions(text);
+      let fileDate = date || new Date().toISOString().split('T')[0]; // fallback
+      
+      for (const pos of positions) {
+        let companyId = null;
+        if (pos.assetType === 'Equity') {
+          companyId = pos.description;
+          await DatabaseService.saveCompany({
+            id: companyId,
+            name: pos.description
+          });
+        }
+        
+        const existing = await DatabaseService.getEquity(pos.symbol);
+        let firstSeenDate = fileDate;
+        let lastSeenDate = fileDate;
+        
+        if (existing) {
+          firstSeenDate = (fileDate < existing.firstSeenDate) ? fileDate : existing.firstSeenDate;
+          lastSeenDate = (fileDate > existing.lastSeenDate) ? fileDate : existing.lastSeenDate;
+        }
+        
+        await DatabaseService.saveEquity({
+          symbol: pos.symbol,
+          companyId: companyId,
+          assetType: pos.assetType,
+          firstSeenDate,
+          lastSeenDate
+        });
       }
     },
     showSnackbar(text, color) {

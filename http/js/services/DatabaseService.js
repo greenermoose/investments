@@ -1,7 +1,9 @@
 const DB_NAME = 'InvestmentsDB';
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 const STORE_NAME = 'user_data';
 const FILES_STORE = 'uploaded_files';
+const EQUITIES_STORE = 'equities';
+const COMPANIES_STORE = 'companies';
 
 export const DatabaseService = {
   /**
@@ -33,6 +35,17 @@ export const DatabaseService = {
         if (!db.objectStoreNames.contains(FILES_STORE)) {
           const filesStore = db.createObjectStore(FILES_STORE, { keyPath: 'hash' });
           filesStore.createIndex('name', 'name', { unique: false });
+        }
+
+        // Create an object store for equities
+        if (!db.objectStoreNames.contains(EQUITIES_STORE)) {
+          const equitiesStore = db.createObjectStore(EQUITIES_STORE, { keyPath: 'symbol' });
+          equitiesStore.createIndex('companyId', 'companyId', { unique: false });
+        }
+
+        // Create an object store for companies
+        if (!db.objectStoreNames.contains(COMPANIES_STORE)) {
+          db.createObjectStore(COMPANIES_STORE, { keyPath: 'id' });
         }
       };
     });
@@ -177,6 +190,112 @@ export const DatabaseService = {
       });
     } catch (error) {
       console.error("Failed to get all files:", error);
+      return [];
+    }
+  },
+
+  // --- Equities ---
+
+  async saveEquity(equityObj) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([EQUITIES_STORE], 'readwrite');
+        const store = transaction.objectStore(EQUITIES_STORE);
+        const request = store.put(equityObj);
+
+        request.onsuccess = () => resolve();
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to save equity:", error);
+      throw error;
+    }
+  },
+
+  async getEquity(symbol) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([EQUITIES_STORE], 'readonly');
+        const store = transaction.objectStore(EQUITIES_STORE);
+        const request = store.get(symbol);
+
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get equity:", error);
+      return null;
+    }
+  },
+
+  async getAllEquities() {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([EQUITIES_STORE], 'readonly');
+        const store = transaction.objectStore(EQUITIES_STORE);
+        const request = store.getAll();
+
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get all equities:", error);
+      return [];
+    }
+  },
+
+  // --- Companies ---
+
+  async saveCompany(companyObj) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([COMPANIES_STORE], 'readwrite');
+        const store = transaction.objectStore(COMPANIES_STORE);
+        const request = store.put(companyObj);
+
+        request.onsuccess = () => resolve();
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to save company:", error);
+      throw error;
+    }
+  },
+
+  async getCompany(id) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([COMPANIES_STORE], 'readonly');
+        const store = transaction.objectStore(COMPANIES_STORE);
+        const request = store.get(id);
+
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get company:", error);
+      return null;
+    }
+  },
+
+  async getAllCompanies() {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([COMPANIES_STORE], 'readonly');
+        const store = transaction.objectStore(COMPANIES_STORE);
+        const request = store.getAll();
+
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get all companies:", error);
       return [];
     }
   }

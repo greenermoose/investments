@@ -1,3 +1,7 @@
+### 0.6.3
+
+- parse position export
+
 ### 0.6.2
 
 - categorize uploaded files by type

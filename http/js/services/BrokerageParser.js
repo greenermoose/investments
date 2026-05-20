@@ -74,13 +74,27 @@ export const BrokerageParser = {
     const positions = rawPositions.map(row => {
       // Handle the fact that different brokers might have different header names for quantity
       const rawQty = row['Quantity'] || row['Qty'] || row['Qty (Quantity)'] || '0';
+      const rawPrice = row['Price'] || '0';
+      const rawMktVal = row['Mkt Val (Market Value)'] || row['Mkt Val'] || '0';
+      
+      const symbol = row['Symbol'] || '';
+      let quantity = parseFloat(rawQty.replace(/,/g, '')) || 0;
+      let price = parseFloat(rawPrice.replace(/[^0-9.]/g, '')) || 0;
+      
+      if (symbol === 'Cash & Cash Investments' || symbol.toLowerCase() === 'cash' || symbol === 'CASH') {
+        const mktVal = parseFloat(rawMktVal.replace(/[^0-9.-]/g, '')) || 0;
+        quantity = mktVal;
+        price = 1.0;
+      }
+      
       return {
-        symbol: row['Symbol'] || '',
+        symbol: symbol,
         description: row['Description'] || '',
         assetType: row['Asset Type'] || '',
-        quantity: parseFloat(rawQty.replace(/,/g, '')) || 0
+        quantity: quantity,
+        price: price
       };
-    }).filter(p => p.symbol && p.symbol !== 'Positions Total' && p.symbol !== 'Cash & Cash Investments');
+    }).filter(p => p.symbol && p.symbol !== 'Positions Total');
 
     return { date, positions };
   },

@@ -298,5 +298,42 @@ export const DatabaseService = {
       console.error("Failed to get all companies:", error);
       return [];
     }
+  },
+
+  async getPortfolioSummary() {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([STORE_NAME], 'readonly');
+        const store = transaction.objectStore(STORE_NAME);
+        const request = store.get('portfolio_summary');
+
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get portfolio summary:", error);
+      return null;
+    }
+  },
+
+  async savePortfolioSummary(summaryObj) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([STORE_NAME], 'readwrite');
+        const store = transaction.objectStore(STORE_NAME);
+        const request = store.put({
+          id: 'portfolio_summary',
+          ...summaryObj
+        });
+
+        request.onsuccess = () => resolve();
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to save portfolio summary:", error);
+      throw error;
+    }
   }
 };

@@ -15,7 +15,7 @@ export default {
       
       <v-fade-transition appear>
         <div class="w-100" style="max-width: 1000px;">
-          <div class="text-center mb-10">
+          <div class="text-center mb-8">
             <h1 class="text-h3 font-weight-bold mb-2">
               Welcome back, <span class="gradient-text">{{ userName }}</span>.
             </h1>
@@ -23,29 +23,112 @@ export default {
               Market simulator and allocation engine are standing by.
             </p>
           </div>
+
+          <!-- Dynamic Portfolio Metrics Panel -->
+          <v-fade-transition>
+            <v-row v-if="portfolioSummary" class="mb-6">
+              <!-- Net Liquidation Value -->
+              <v-col cols="12" md="6">
+                <v-card class="glass-panel pa-6 h-100 hover-lift d-flex flex-column justify-space-between relative">
+                  <div>
+                    <div class="d-flex align-center justify-space-between mb-4">
+                      <span class="text-subtitle-2 text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Net Liquidation Value</span>
+                      <v-icon color="primary" size="24">mdi-wallet-outline</v-icon>
+                    </div>
+                    <div class="text-h3 font-weight-bold tracking-tight mb-2">
+                      {{ formatCurrency(portfolioSummary.netLiquidationValue) }}
+                    </div>
+                    <div class="d-flex align-center">
+                      <v-chip
+                        :color="getGainColor(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis)"
+                        size="small"
+                        variant="flat"
+                        class="font-weight-bold mr-2"
+                      >
+                        {{ formatGainLoss(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis, portfolioSummary.portfolioCostBasis) }}
+                      </v-chip>
+                      <span class="text-caption text-medium-emphasis">since inception</span>
+                    </div>
+                  </div>
+                  
+                  <v-divider class="my-4 border-opacity-25"></v-divider>
+                  
+                  <div class="d-flex justify-space-between text-body-2">
+                    <div>
+                      <span class="text-medium-emphasis">Stock Value:</span>
+                      <strong class="ml-1 text-primary">{{ formatCurrency(portfolioSummary.portfolioMarketValue) }}</strong>
+                    </div>
+                    <div>
+                      <span class="text-medium-emphasis">Cash Baseline:</span>
+                      <strong class="ml-1 text-success">{{ formatCurrency(portfolioSummary.cashBalance) }}</strong>
+                    </div>
+                  </div>
+                </v-card>
+              </v-col>
+
+              <!-- Option Liabilities & Risk Drag -->
+              <v-col cols="12" md="6">
+                <v-card class="glass-panel pa-6 h-100 hover-lift d-flex flex-column justify-space-between">
+                  <div>
+                    <div class="d-flex align-center justify-space-between mb-4">
+                      <span class="text-subtitle-2 text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Options Liability & Drag</span>
+                      <v-icon color="warning" size="24">mdi-shield-alert-outline</v-icon>
+                    </div>
+                    
+                    <div class="text-h4 font-weight-bold text-error mb-2">
+                      -{{ formatCurrency(portfolioSummary.optionDrag) }}
+                    </div>
+                    <p class="text-caption text-medium-emphasis">
+                      Total option premium liabilities currently reducing your Net Liquidation Value.
+                    </p>
+                  </div>
+                  
+                  <v-divider class="my-4 border-opacity-25"></v-divider>
+                  
+                  <v-row class="text-body-2 no-gutters">
+                    <v-col cols="6" class="pr-2 border-right border-opacity-25">
+                      <div class="text-caption text-medium-emphasis">Capped Upside (Calls)</div>
+                      <div class="font-weight-bold text-warning mt-1">
+                        {{ formatCurrency(portfolioSummary.totalCappedUpside) }}
+                      </div>
+                    </v-col>
+                    <v-col cols="6" class="pl-3">
+                      <div class="text-caption text-medium-emphasis">Obligated Cash (Puts)</div>
+                      <div class="font-weight-bold text-info mt-1">
+                        {{ formatCurrency(portfolioSummary.totalObligatedCash) }}
+                      </div>
+                      <div v-if="portfolioSummary.totalObligationRisk > 0" class="text-caption text-error font-weight-medium mt-1">
+                        Risk: {{ formatCurrency(portfolioSummary.totalObligationRisk) }} ITM
+                      </div>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-fade-transition>
           
-          <v-row>
+          <v-row class="mb-4">
             <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-6 text-center h-100 d-flex flex-column justify-center align-center hover-lift">
-                <v-icon size="48" color="info" class="mb-4">mdi-chart-line</v-icon>
-                <div class="text-h5 font-weight-bold">Portfolio</div>
-                <div class="text-caption text-medium-emphasis mt-2">Active Positions & Allocations</div>
+              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
+                <v-icon size="36" color="info" class="mb-2">mdi-chart-line</v-icon>
+                <div class="text-subtitle-1 font-weight-bold">Portfolio</div>
+                <div class="text-caption text-medium-emphasis">Active Positions & Allocations</div>
               </v-card>
             </v-col>
             
             <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-6 text-center h-100 d-flex flex-column justify-center align-center hover-lift">
-                <v-icon size="48" color="warning" class="mb-4">mdi-lightbulb-on</v-icon>
-                <div class="text-h5 font-weight-bold">Screaming Buys</div>
-                <div class="text-caption text-medium-emphasis mt-2">27-Bucket Opportunity Matrix</div>
+              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
+                <v-icon size="36" color="warning" class="mb-2">mdi-lightbulb-on</v-icon>
+                <div class="text-subtitle-1 font-weight-bold">Screaming Buys</div>
+                <div class="text-caption text-medium-emphasis">27-Bucket Opportunity Matrix</div>
               </v-card>
             </v-col>
             
             <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-6 text-center h-100 d-flex flex-column justify-center align-center hover-lift">
-                <v-icon size="48" color="success" class="mb-4">mdi-clock-fast</v-icon>
-                <div class="text-h5 font-weight-bold">Simulator</div>
-                <div class="text-caption text-medium-emphasis mt-2">Black-Scholes & Entropy Testing</div>
+              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
+                <v-icon size="36" color="success" class="mb-2">mdi-clock-fast</v-icon>
+                <div class="text-subtitle-1 font-weight-bold">Simulator</div>
+                <div class="text-caption text-medium-emphasis">Black-Scholes & Entropy Testing</div>
               </v-card>
             </v-col>
           </v-row>
@@ -145,6 +228,7 @@ export default {
       uploadedFiles: [],
       fileFilter: 'all',
       isUploading: false,
+      portfolioSummary: null,
       snackbar: {
         show: false,
         text: '',
@@ -160,6 +244,7 @@ export default {
   },
   async mounted() {
     await this.loadFiles();
+    await this.loadPortfolioSummary();
   },
   methods: {
     async loadFiles() {
@@ -169,6 +254,44 @@ export default {
         this.uploadedFiles = files.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt));
       } catch (error) {
         console.error("Error loading files:", error);
+      }
+    },
+    async loadPortfolioSummary() {
+      try {
+        this.portfolioSummary = await DatabaseService.getPortfolioSummary();
+      } catch (error) {
+        console.error("Error loading portfolio summary:", error);
+      }
+    },
+    formatCurrency(val) {
+      if (val === undefined || val === null || isNaN(val)) return '$0.00';
+      const isNeg = val < 0;
+      const absVal = Math.abs(val);
+      const formatted = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+      }).format(absVal);
+      return isNeg ? `-${formatted}` : formatted;
+    },
+    getGainColor(val) {
+      if (!val || Math.abs(val) < 0.001) return 'grey';
+      return val > 0 ? 'success' : 'error';
+    },
+    formatGainLoss(gain, cost) {
+      if (gain === undefined || gain === null || isNaN(gain)) return '$0.00 (0.00%)';
+      const pct = (cost && cost > 0) ? (gain / cost) * 100 : 0;
+      const formattedPct = Math.abs(pct).toFixed(2) + '%';
+      const formattedGain = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+      }).format(Math.abs(gain));
+      
+      if (gain > 0.001) {
+        return `+$${formattedGain} (+${formattedPct})`;
+      } else if (gain < -0.001) {
+        return `-$${formattedGain} (-${formattedPct})`;
+      } else {
+        return `$0.00 (0.00%)`;
       }
     },
     async calculateHash(arrayBuffer) {
@@ -219,6 +342,7 @@ export default {
         
         // Process all files to update portfolio
         await PortfolioProcessor.processAllFiles(this.uploadedFiles);
+        await this.loadPortfolioSummary();
         
         if (addedCount > 0 && duplicateCount === 0) {
           this.showSnackbar(`Successfully uploaded and processed ${addedCount} file(s).`, 'success');

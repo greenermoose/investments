@@ -1,5 +1,6 @@
 import { DatabaseService } from './DatabaseService.js';
 import { BrokerageParser } from './BrokerageParser.js';
+import { PortfolioValuation } from './PortfolioValuation.js';
 
 export const PortfolioProcessor = {
   /**
@@ -108,138 +109,66 @@ export const PortfolioProcessor = {
     // Process position snapshots
     let positionSnapshots = account.positionFiles.map(pf => pf.data);
     positionSnapshots.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const latestSnapshot = positionSnapshots[positionSnapshots.length - 1] || null;
     
-    // Dictionary to hold running state of equities
-    const equityState = {}; // { symbol: { quantity: 0, firstSeen: null, lastSeen: null, history: [] } }
+    // Run the valuation engine
+    const valuation = PortfolioValuation.calculateValuation(allTx, latestSnapshot);
 
-    const ensureEquity = (symbol) => {
-      if (!equityState[symbol]) {
-        equityState[symbol] = {
-          quantity: 0,
-          firstSeen: null,
-          lastSeen: null,
-          history: [] // { start, end, quantity }
-        };
-      }
-      return equityState[symbol];
-    };
+    // Save each holding to the Database
+    for (const state of valuation.holdings) {
+      if (!state.symbol) continue;
 
-    // We will find the minimum date across all files to bound inferred dates
-    let minDate = new Date();
-    if (allTx.length > 0) minDate = new Date(allTx[0].date.split(' as of ')[0]);
-    if (positionSnapshots.length > 0) {
-      const posDate = new Date(positionSnapshots[0].date);
-      if (posDate < minDate) minDate = posDate;
-    }
-    
-    // 1. Process transactions
-    for (const tx of allTx) {
-      if (!tx.symbol) continue;
-      const state = ensureEquity(tx.symbol);
-      const date = tx.date.split(' as of ')[0];
-      
-      if (!state.firstSeen) {
-        // First time seeing this symbol
-        if (tx.action.includes('Sell')) {
-          // Inferred ownership prior to this tx
-          state.firstSeen = minDate.toISOString().split('T')[0];
-        } else {
-          state.firstSeen = new Date(date).toISOString().split('T')[0];
-        }
-      }
-      
-      state.lastSeen = new Date(date).toISOString().split('T')[0];
-      
-      // Update quantity
-      const action = tx.action.toLowerCase();
-      if (action.includes('buy') || action.includes('reinvest') || action.includes('assigned')) {
-        state.quantity += tx.quantity;
-      } else if (action.includes('sell')) {
-        state.quantity -= tx.quantity;
-      } else if (action.includes('split')) {
-        // Heuristic: If it's a stock split, the 'quantity' might be the additional shares or the new total.
-        // Assuming additional shares for now based on common CSV formats.
-        state.quantity += tx.quantity;
-      }
-      
-      // Keep track of history points if quantity hits 0
-      if (state.quantity <= 0.001 && state.quantity >= -0.001) {
-         state.quantity = 0;
-         state.history.push({
-             start: state.firstSeen,
-             end: state.lastSeen,
-             quantity: 0
-         });
-         state.firstSeen = null; // Reset for next buy
-      }
-    }
-    
-    // 2. Reconcile with latest Position snapshot
-    // If we have a position snapshot after the last transaction, we trust the snapshot quantity.
-    if (positionSnapshots.length > 0) {
-      const latestSnapshot = positionSnapshots[positionSnapshots.length - 1];
-      const snapshotDate = new Date(latestSnapshot.date).toISOString().split('T')[0];
-      
-      for (const pos of latestSnapshot.positions) {
-         const state = ensureEquity(pos.symbol);
-         if (!state.firstSeen) {
-             state.firstSeen = minDate.toISOString().split('T')[0];
-         }
-         state.lastSeen = snapshotDate;
-         // In a real robust system, we'd log the discrepancy. Here we trust the position file as absolute truth for this date.
-         state.quantity = pos.quantity || state.quantity; // Assuming we add quantity to position parser later, otherwise we use tx quantity
-         state.description = pos.description;
-         state.assetType = pos.assetType;
-      }
-    }
-
-    // 3. Save to Database
-    for (const [symbol, state] of Object.entries(equityState)) {
-      if (!symbol) continue;
-      
-      // Save current open interval if quantity > 0
-      if (state.quantity > 0 && state.firstSeen) {
-          state.history.push({
-              start: state.firstSeen,
-              end: null, // still owned
-              quantity: state.quantity
-          });
-      }
-      
-      // Consolidate histories and update
-      const existing = await DatabaseService.getEquity(symbol);
+      const existing = await DatabaseService.getEquity(state.symbol);
       let companyId = existing ? existing.companyId : null;
-      let assetType = existing ? existing.assetType : state.assetType;
-      let description = state.description;
+      let description = state.description || (existing ? existing.description : '');
 
-      if (!companyId && state.assetType === 'Equity' && state.description) {
-         companyId = state.description;
+      if (!companyId && state.assetType === 'Equity' && description) {
+         companyId = description;
          await DatabaseService.saveCompany({ id: companyId, name: companyId });
       } else if (!companyId && state.assetType === 'Option') {
-         const baseSymbol = symbol.split(' ')[0];
+         const baseSymbol = state.symbol.split(' ')[0];
          const baseEquity = await DatabaseService.getEquity(baseSymbol);
          if (baseEquity && baseEquity.companyId) {
             companyId = baseEquity.companyId;
          }
       }
 
-      const mergedHistory = existing && existing.history ? [...existing.history] : [];
-      // Simplistic append for now
-      mergedHistory.push(...state.history);
-
-      const firstSeenAllTime = mergedHistory.reduce((min, h) => !min || h.start < min ? h.start : min, null);
-      const lastSeenAllTime = mergedHistory.reduce((max, h) => !max || (h.end && h.end > max) ? h.end : max, null);
-
       await DatabaseService.saveEquity({
-        symbol: symbol,
+        symbol: state.symbol,
         companyId: companyId,
-        assetType: assetType || 'Equity',
+        assetType: state.assetType || 'Equity',
         description: description,
-        firstSeenDate: firstSeenAllTime || state.firstSeen,
-        lastSeenDate: state.quantity > 0 ? null : (lastSeenAllTime || state.lastSeen),
         quantity: state.quantity,
-        history: mergedHistory
+        averageCost: state.averageCost,
+        totalCostBasis: state.totalCostBasis,
+        marketValue: state.marketValue,
+        currentPrice: state.currentPrice,
+        unrealizedGainLoss: state.unrealizedGainLoss,
+        isShortOption: state.isShortOption || false,
+        strike: state.strike || null,
+        expiry: state.expiry || null,
+        optionType: state.optionType || null,
+        underlyingSymbol: state.underlyingSymbol || null,
+        underlyingPrice: state.underlyingPrice || null,
+        cappedUpside: state.cappedUpside || 0,
+        obligatedCollateral: state.obligatedCollateral || 0,
+        obligationRisk: state.obligationRisk || 0,
+        updatedAt: new Date().toISOString()
       });
     }
+
+    // Save portfolio summary to database
+    const summary = {
+      netLiquidationValue: valuation.netLiquidationValue,
+      cashBalance: valuation.cashBalance,
+      portfolioMarketValue: valuation.portfolioMarketValue,
+      portfolioCostBasis: valuation.portfolioCostBasis,
+      optionDrag: valuation.optionDrag,
+      totalCappedUpside: valuation.totalCappedUpside,
+      totalObligatedCash: valuation.totalObligatedCash,
+      totalObligationRisk: valuation.totalObligationRisk,
+      updatedAt: new Date().toISOString()
+    };
+    await DatabaseService.savePortfolioSummary(summary);
   }
 };

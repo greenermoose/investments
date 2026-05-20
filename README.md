@@ -1,33 +1,30 @@
 # Investment Portfolio Manager
 
-A Vue.js-based web application for analyzing and managing investment portfolios with time-series comparison capabilities. This is a no-build application that runs directly in the browser using ES modules.
+A Vue.js-based web application for managing and analyzing investment portfolios. This is a no-build application that runs entirely in the user's browser, utilizing IndexedDB for local data storage and ES modules to run directly from source files without compilation.
 
-# Investment Portfolio Dashboard
+---
 
-## Features
+## High-Level Goals
 
-- **Portfolio Overview**: Get a quick glance at your total portfolio value, gains/losses, and asset allocation
-- **Position Management**: View, sort, and filter all your investment positions
-- **Performance Analysis**: Track your top performers and analyze your investment returns
-- **Portfolio Insights**: Get recommendations and visualizations to help optimize your investments
-- **Time-Series Portfolio Tracking**: 
-  - Upload multiple portfolio snapshots from different dates
-  - Compare portfolios over time
-  - Track position changes and performance trends
-  - Visual portfolio evolution tracking
-- **Lot Management**:
-  - Track individual tax lots
-  - Support for FIFO, LIFO, and Specific Identification
-  - Weighted-average cost basis calculations
-- **Acquisition Management**:
-  - Automatically detect new securities
-  - Handle ticker symbol changes
-  - Track acquisition dates and cost basis
-- **Portfolio History**:
-  - Compare any two snapshots side-by-side
-  - Track position changes (additions, removals, quantity changes)
-  - Analyze portfolio value changes over time
-- **CSV Import/Export**: Import your portfolio data from a CSV file and export it for external use
+The primary objective of this application is to serve as a decision-support tool and trading simulator to help achieve a targeted **20% annualized return** on investments over a **20-year horizon** inside a tax-advantaged account (e.g., a Roth IRA).
+
+To achieve this, the application aims to:
+1. **Track and Analyze Holdings**: Ingest brokerage statements to maintain a local, time-series history of assets, cost basis, and account allocations.
+2. **Apply Rigorous Valuation Models**: Calculate intrinsic business values directly from primary sources (SEC filings) using low-guesswork metrics (historical P/S reversion, Reverse DCF) to identify high-conviction "screaming buys."
+3. **Optimize Options & Yield Strategies**: Track, test, and model premium-generating option strategies (Covered Calls, Cash-Secured Puts, rolling for net credits) to generate income on stagnant assets.
+4. **Enforce Capital Velocity**: Implement alert triggers, time-stops, and rotation guidelines to ensure capital flows to the highest-conviction, highest-return opportunities.
+
+---
+
+## Current Capabilities
+
+* **Local Secure Storage**: Keeps all financial transaction and statement data local to the user's browser using IndexedDB.
+* **Brokerage Statement Ingestion**: Supports uploading and parsing position and transaction files (CSV, JSON, XML) exported from brokerage accounts (e.g., Roth IRA accounts).
+* **Chronological Holdings Rebuilding**: Automatically processes and reconciles historical transaction records to reconstruct current holdings, asset types, and transaction histories.
+* **Developer Watchlist & Companies database**: Correlates traded symbols and options with parent companies in a local database index.
+
+> [!NOTE]
+> For details on planned features, active development items, and implementation status, please see the [ROADMAP.md](ROADMAP.md) file.
 
 ## Technologies Used
 
@@ -35,6 +32,7 @@ A Vue.js-based web application for analyzing and managing investment portfolios 
 - [Vuetify](https://vuetifyjs.com/) (Material Design component framework)
 - [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) (native browser module support, no build step required)
 - [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) (browser-based data storage)
+
 
 ## Setup and Installation
 

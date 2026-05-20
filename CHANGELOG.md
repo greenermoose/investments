@@ -1,3 +1,7 @@
+### 0.6.6
+
+- Added ROADMAP
+
 ### 0.6.5
 
 - Added portfolio processor

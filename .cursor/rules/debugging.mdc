@@ -15,9 +15,9 @@ alwaysApply: true
 **Cause**: Using `${{` in a template string. The `$` is interpreted as the start of a JavaScript template literal expression `${`, but then `{{` follows, causing a syntax error.
 
 **Fix**:
-- ❌ **Wrong**: `${{ value }}`
-- ✅ **Correct**: `{{ '$' + value }}` or `{{ '$' + (expression) }}`
-- ✅ **Alternative**: Use computed property: `{{ formattedValue }}` where `formattedValue` is a computed property that returns `'$' + value`
+- [Wrong]: `${{ value }}`
+- [Correct]: `{{ '$' + value }}` or `{{ '$' + (expression) }}`
+- [Alternative]: Use computed property: `{{ formattedValue }}` where `formattedValue` is a computed property that returns `'$' + value`
 
 **Example Fix**:
 ```javascript
@@ -133,16 +133,16 @@ alwaysApply: true
 
 When encountering errors:
 
-1. ✅ Check browser console for error messages
-2. ✅ Verify file paths and imports are correct
-3. ✅ Check template syntax (no `${{`, proper `{{ }}` usage)
-4. ✅ Verify component registration and props
-5. ✅ Check for null/undefined before property access
-6. ✅ Verify Vuetify components are properly imported
-7. ✅ Check that all required files exist (no 404s)
-8. ✅ Verify ES module syntax is correct
-9. ✅ Check for missing closing tags or brackets
-10. ✅ Use browser DevTools to inspect elements and component state
+1. Check browser console for error messages
+2. Verify file paths and imports are correct
+3. Check template syntax (no `${{`, proper `{{ }}` usage)
+4. Verify component registration and props
+5. Check for null/undefined before property access
+6. Verify Vuetify components are properly imported
+7. Check that all required files exist (no 404s)
+8. Verify ES module syntax is correct
+9. Check for missing closing tags or brackets
+10. Use browser DevTools to inspect elements and component state
 
 ## Prevention Strategies
 

@@ -1,0 +1,13 @@
+---
+description: Prohibits use of emojis in any repository file
+globs: ["*"]
+alwaysApply: true
+---
+
+# No Emojis Rule
+
+## Policy
+
+- **CRITICAL**: Never include emojis (pictographs, smileys, symbols, or other colored icons/glyphs) in any file in this repository.
+- This applies to all file types including source code (.js, .html, .css), configuration, markdown documents (README.md, ROADMAP.md, CHANGELOG.md, etc.), and rules themselves.
+- All headings, lists, summaries, and descriptions must use text and standard ASCII symbols only.

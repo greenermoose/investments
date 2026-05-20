@@ -670,21 +670,21 @@ formatCurrency(value) {
 
 ### Common Mistakes to Avoid
 
-- ❌ **Don't use `${{` in templates** - Causes syntax errors. Use `{{ '$' + value }}` or helper method instead
-- ❌ **Don't rely solely on color for information** - Accessibility issue. Always add icons, text, or patterns
-- ❌ **Don't use custom CSS when Vuetify utilities exist** - Use `pa-4` instead of custom padding classes
-- ❌ **Don't create components without proper prop validation** - Always define props with types and defaults
-- ❌ **Don't use inline styles** - Use Vuetify props/classes: `color="primary"` not `style="color: blue"`
-- ❌ **Don't skip loading states** - Users need feedback. Always show loading indicators or skeleton screens
-- ❌ **Don't use technical error messages** - Show user-friendly text: "Unable to upload file" not "Error 500"
-- ❌ **Don't create inconsistent spacing** - Follow 8px grid system consistently
-- ❌ **Don't use too many font sizes** - Limit to 2-3 heading levels for visual hierarchy
-- ❌ **Don't ignore mobile experience** - Test on small screens, use responsive classes
-- ❌ **Don't forget ARIA labels on icon buttons** - Always include `aria-label` for icon-only buttons
-- ❌ **Don't use deep watchers on large datasets** - Use specific paths: `watch: { 'data.length' }` not `watch: { data }`
-- ❌ **Don't show spinners when skeleton loaders are better** - Skeleton screens improve perceived performance
-- ❌ **Don't forget to format currency properly** - Use `Intl.NumberFormat`, not manual string concatenation
-- ❌ **Don't create tables without accessibility** - Always add `aria-label` or `<caption>`
+- [Avoid] **Don't use `${{` in templates** - Causes syntax errors. Use `{{ '$' + value }}` or helper method instead
+- [Avoid] **Don't rely solely on color for information** - Accessibility issue. Always add icons, text, or patterns
+- [Avoid] **Don't use custom CSS when Vuetify utilities exist** - Use `pa-4` instead of custom padding classes
+- [Avoid] **Don't create components without proper prop validation** - Always define props with types and defaults
+- [Avoid] **Don't use inline styles** - Use Vuetify props/classes: `color="primary"` not `style="color: blue"`
+- [Avoid] **Don't skip loading states** - Users need feedback. Always show loading indicators or skeleton screens
+- [Avoid] **Don't use technical error messages** - Show user-friendly text: "Unable to upload file" not "Error 500"
+- [Avoid] **Don't create inconsistent spacing** - Follow 8px grid system consistently
+- [Avoid] **Don't use too many font sizes** - Limit to 2-3 heading levels for visual hierarchy
+- [Avoid] **Don't ignore mobile experience** - Test on small screens, use responsive classes
+- [Avoid] **Don't forget ARIA labels on icon buttons** - Always include `aria-label` for icon-only buttons
+- [Avoid] **Don't use deep watchers on large datasets** - Use specific paths: `watch: { 'data.length' }` not `watch: { data }`
+- [Avoid] **Don't show spinners when skeleton loaders are better** - Skeleton screens improve perceived performance
+- [Avoid] **Don't forget to format currency properly** - Use `Intl.NumberFormat`, not manual string concatenation
+- [Avoid] **Don't create tables without accessibility** - Always add `aria-label` or `<caption>`
 
 ## Best Practices
 

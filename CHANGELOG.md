@@ -1,3 +1,7 @@
+### 0.6.5
+
+- Added portfolio processor
+
 ### 0.6.4
 
 - Added Equities and Companies screens

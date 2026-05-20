@@ -1,5 +1,6 @@
 import { DatabaseService } from '../services/DatabaseService.js';
 import { BrokerageParser } from '../services/BrokerageParser.js';
+import { PortfolioProcessor } from '../services/PortfolioProcessor.js';
 
 export default {
   name: 'DashboardScreen',
@@ -212,16 +213,15 @@ export default {
           
           await DatabaseService.saveFile(fileRecord);
           addedCount++;
-
-          if (exportType === 'positions') {
-            await this.processPositionsFile(text, file.name);
-          }
         }
         
         await this.loadFiles(); // Refresh list
         
+        // Process all files to update portfolio
+        await PortfolioProcessor.processAllFiles(this.uploadedFiles);
+        
         if (addedCount > 0 && duplicateCount === 0) {
-          this.showSnackbar(`Successfully uploaded ${addedCount} file(s).`, 'success');
+          this.showSnackbar(`Successfully uploaded and processed ${addedCount} file(s).`, 'success');
         } else if (addedCount > 0 && duplicateCount > 0) {
           this.showSnackbar(`Uploaded ${addedCount} file(s). Skipped ${duplicateCount} duplicate(s).`, 'warning');
         } else if (addedCount === 0 && duplicateCount > 0) {
@@ -236,55 +236,6 @@ export default {
         if (this.$refs.fileInput) {
           this.$refs.fileInput.value = '';
         }
-      }
-    },
-    async processPositionsFile(text, fileName) {
-      const { date, positions } = BrokerageParser.parsePositions(text);
-      let fileDate = date || new Date().toISOString().split('T')[0]; // fallback
-      
-      const symbolToCompany = {};
-      for (const pos of positions) {
-        if (pos.assetType === 'Equity') {
-          symbolToCompany[pos.symbol] = pos.description;
-        }
-      }
-      
-      for (const pos of positions) {
-        let companyId = null;
-        if (pos.assetType === 'Equity') {
-          companyId = pos.description;
-          await DatabaseService.saveCompany({
-            id: companyId,
-            name: pos.description
-          });
-        } else if (pos.assetType === 'Option') {
-          const baseSymbol = pos.symbol.split(' ')[0];
-          if (symbolToCompany[baseSymbol]) {
-            companyId = symbolToCompany[baseSymbol];
-          } else {
-            const baseEquity = await DatabaseService.getEquity(baseSymbol);
-            if (baseEquity && baseEquity.companyId) {
-              companyId = baseEquity.companyId;
-            }
-          }
-        }
-        
-        const existing = await DatabaseService.getEquity(pos.symbol);
-        let firstSeenDate = fileDate;
-        let lastSeenDate = fileDate;
-        
-        if (existing) {
-          firstSeenDate = (fileDate < existing.firstSeenDate) ? fileDate : existing.firstSeenDate;
-          lastSeenDate = (fileDate > existing.lastSeenDate) ? fileDate : existing.lastSeenDate;
-        }
-        
-        await DatabaseService.saveEquity({
-          symbol: pos.symbol,
-          companyId: companyId,
-          assetType: pos.assetType,
-          firstSeenDate,
-          lastSeenDate
-        });
       }
     },
     showSnackbar(text, color) {

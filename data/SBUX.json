@@ -1,0 +1,70 @@
+{
+  "symbol": "SBUX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0000829224",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-29",
+      "period_start": "2026-03-29",
+      "period_end": "2026-03-29",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000829224",
+      "data": {
+        "shares_outstanding": 1139300000,
+        "revenue": 19446600000,
+        "balance_sheet": {
+          "total_assets": 30557500000,
+          "total_liabilities": 39015200000,
+          "total_shareholders_equity": -8465100000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-28",
+      "period_start": "2025-12-28",
+      "period_end": "2025-12-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000829224",
+      "data": {
+        "shares_outstanding": 1137100000,
+        "revenue": 9915100000,
+        "balance_sheet": {
+          "total_assets": 32228300000,
+          "total_liabilities": 40609600000,
+          "total_shareholders_equity": -8388700000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-09-28",
+      "period_start": "2025-09-28",
+      "period_end": "2025-09-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000829224",
+      "data": {
+        "shares_outstanding": 1136700000,
+        "revenue": 37184400000,
+        "balance_sheet": {
+          "total_assets": 32019700000,
+          "total_liabilities": 40108900000,
+          "total_shareholders_equity": -8096600000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-29",
+      "period_start": "2025-06-29",
+      "period_end": "2025-06-29",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000829224",
+      "data": {
+        "shares_outstanding": 1136400000,
+        "revenue": 27615400000,
+        "balance_sheet": {
+          "total_assets": 33649200000,
+          "total_liabilities": 41327800000,
+          "total_shareholders_equity": -7686000000
+        }
+      }
+    }
+  ]
+}

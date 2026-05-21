@@ -1,0 +1,70 @@
+{
+  "symbol": "AVGO",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001730168",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-01",
+      "period_start": "2026-02-01",
+      "period_end": "2026-02-01",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001730168",
+      "data": {
+        "shares_outstanding": 4741273799,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 169903000000,
+          "total_liabilities": 90031000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-11-02",
+      "period_start": "2025-11-02",
+      "period_end": "2025-11-02",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001730168",
+      "data": {
+        "shares_outstanding": 4722365022,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 171092000000,
+          "total_liabilities": 89800000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-03",
+      "period_start": "2025-08-03",
+      "period_end": "2025-08-03",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001730168",
+      "data": {
+        "shares_outstanding": 4703470979,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 165621000000,
+          "total_liabilities": 92344000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-05-04",
+      "period_start": "2025-05-04",
+      "period_end": "2025-05-04",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001730168",
+      "data": {
+        "shares_outstanding": 4701948717,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 164630000000,
+          "total_liabilities": 95044000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    }
+  ]
+}

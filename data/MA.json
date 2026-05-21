@@ -1,0 +1,70 @@
+{
+  "symbol": "MA",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001141391",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-31",
+      "period_start": "2026-03-31",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001141391",
+      "data": {
+        "shares_outstanding": 122530193,
+        "revenue": 8398000000,
+        "balance_sheet": {
+          "total_assets": 52449000000,
+          "total_liabilities": 45727000000,
+          "total_shareholders_equity": 6719000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-31",
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001141391",
+      "data": {
+        "shares_outstanding": 122530193,
+        "revenue": 32791000000,
+        "balance_sheet": {
+          "total_assets": 54157000000,
+          "total_liabilities": 46411000000,
+          "total_shareholders_equity": 7737000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-09-30",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001141391",
+      "data": {
+        "shares_outstanding": 122530193,
+        "revenue": 23985000000,
+        "balance_sheet": {
+          "total_assets": 53289000000,
+          "total_liabilities": 45370000000,
+          "total_shareholders_equity": 7904000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-30",
+      "period_start": "2025-06-30",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001141391",
+      "data": {
+        "shares_outstanding": 122530193,
+        "revenue": 15383000000,
+        "balance_sheet": {
+          "total_assets": 51431000000,
+          "total_liabilities": 43557000000,
+          "total_shareholders_equity": 7853000000
+        }
+      }
+    }
+  ]
+}

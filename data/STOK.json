@@ -1,0 +1,70 @@
+{
+  "symbol": "STOK",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001623526",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-31",
+      "period_start": "2026-03-31",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001623526",
+      "data": {
+        "shares_outstanding": 59150790,
+        "revenue": 6229000,
+        "balance_sheet": {
+          "total_assets": 443277000,
+          "total_liabilities": 48400000,
+          "total_shareholders_equity": 394877000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-31",
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001623526",
+      "data": {
+        "shares_outstanding": 57117150,
+        "revenue": 184420000,
+        "balance_sheet": {
+          "total_assets": 418434000,
+          "total_liabilities": 65977000,
+          "total_shareholders_equity": 352457000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-09-30",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001623526",
+      "data": {
+        "shares_outstanding": 54797418,
+        "revenue": 183018000,
+        "balance_sheet": {
+          "total_assets": 360264000,
+          "total_liabilities": 52159000,
+          "total_shareholders_equity": 308105000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-30",
+      "period_start": "2025-06-30",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001623526",
+      "data": {
+        "shares_outstanding": 54596924,
+        "revenue": 172386000,
+        "balance_sheet": {
+          "total_assets": 384508000,
+          "total_liabilities": 49565000,
+          "total_shareholders_equity": 334943000
+        }
+      }
+    }
+  ]
+}

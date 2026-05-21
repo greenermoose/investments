@@ -1,0 +1,70 @@
+{
+  "symbol": "ENVX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001828318",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-05",
+      "period_start": "2026-04-05",
+      "period_end": "2026-04-05",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828318",
+      "data": {
+        "shares_outstanding": 217224442,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 833893000,
+          "total_liabilities": 591163000,
+          "total_shareholders_equity": 240672000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-28",
+      "period_start": "2025-12-28",
+      "period_end": "2025-12-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828318",
+      "data": {
+        "shares_outstanding": 215816004,
+        "revenue": 31821000,
+        "balance_sheet": {
+          "total_assets": 878975000,
+          "total_liabilities": 604964000,
+          "total_shareholders_equity": 271214000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-28",
+      "period_start": "2025-09-28",
+      "period_end": "2025-09-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828318",
+      "data": {
+        "shares_outstanding": 196600013,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 913709000,
+          "total_liabilities": 616606000,
+          "total_shareholders_equity": 294256000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-29",
+      "period_start": "2025-06-29",
+      "period_end": "2025-06-29",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828318",
+      "data": {
+        "shares_outstanding": 192003858,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 469112000,
+          "total_liabilities": 262460000,
+          "total_shareholders_equity": 203749000
+        }
+      }
+    }
+  ]
+}

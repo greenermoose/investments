@@ -1,0 +1,70 @@
+{
+  "symbol": "NFLX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-31",
+      "period_start": "2026-03-31",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "data": {
+        "shares_outstanding": 4212794271,
+        "revenue": 12249757000,
+        "balance_sheet": {
+          "total_assets": 61015914000,
+          "total_liabilities": 29889515000,
+          "total_shareholders_equity": 31126399000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-31",
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "data": {
+        "shares_outstanding": 4222162150,
+        "revenue": 45183036000,
+        "balance_sheet": {
+          "total_assets": 55596993000,
+          "total_liabilities": 28981505000,
+          "total_shareholders_equity": 26615488000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-09-30",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "data": {
+        "shares_outstanding": 423732334,
+        "revenue": 33132274000,
+        "balance_sheet": {
+          "total_assets": 54934835000,
+          "total_liabilities": 28980800000,
+          "total_shareholders_equity": 25954035000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-30",
+      "period_start": "2025-06-30",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "data": {
+        "shares_outstanding": 424926346,
+        "revenue": 21621967000,
+        "balance_sheet": {
+          "total_assets": 53099664000,
+          "total_liabilities": 28147765000,
+          "total_shareholders_equity": 24951899000
+        }
+      }
+    }
+  ]
+}

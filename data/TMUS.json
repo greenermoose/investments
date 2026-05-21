@@ -1,0 +1,70 @@
+{
+  "symbol": "TMUS",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001283699",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-31",
+      "period_start": "2026-03-31",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001283699",
+      "data": {
+        "shares_outstanding": 1101862739,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 214667000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 55879000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-31",
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001283699",
+      "data": {
+        "shares_outstanding": 1118506626,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 219237000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 59203000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-09-30",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001283699",
+      "data": {
+        "shares_outstanding": 1125419038,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 217180000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 60477000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-30",
+      "period_start": "2025-06-30",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001283699",
+      "data": {
+        "shares_outstanding": 1135445108,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 212643000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 61107000000
+        }
+      }
+    }
+  ]
+}

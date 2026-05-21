@@ -1,0 +1,70 @@
+{
+  "symbol": "NVDA",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001045810",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-26",
+      "period_start": "2026-04-26",
+      "period_end": "2026-04-26",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001045810",
+      "data": {
+        "shares_outstanding": 24300000000,
+        "revenue": 81615000000,
+        "balance_sheet": {
+          "total_assets": 259474000000,
+          "total_liabilities": 64000000000,
+          "total_shareholders_equity": 195474000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-25",
+      "period_start": "2026-01-25",
+      "period_end": "2026-01-25",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001045810",
+      "data": {
+        "shares_outstanding": 24300000000,
+        "revenue": 215938000000,
+        "balance_sheet": {
+          "total_assets": 206803000000,
+          "total_liabilities": 49510000000,
+          "total_shareholders_equity": 157293000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-26",
+      "period_start": "2025-10-26",
+      "period_end": "2025-10-26",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001045810",
+      "data": {
+        "shares_outstanding": 24300000000,
+        "revenue": 147811000000,
+        "balance_sheet": {
+          "total_assets": 161148000000,
+          "total_liabilities": 42251000000,
+          "total_shareholders_equity": 118897000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-07-27",
+      "period_start": "2025-07-27",
+      "period_end": "2025-07-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001045810",
+      "data": {
+        "shares_outstanding": 24400000000,
+        "revenue": 90805000000,
+        "balance_sheet": {
+          "total_assets": 140740000000,
+          "total_liabilities": 40609000000,
+          "total_shareholders_equity": 100131000000
+        }
+      }
+    }
+  ]
+}

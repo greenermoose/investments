@@ -1,3 +1,7 @@
+### 0.6.21
+
+- data for all companies
+
 ### 0.6.20
 
 - data for ABNB

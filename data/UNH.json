@@ -1,0 +1,70 @@
+{
+  "symbol": "UNH",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0000731766",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-31",
+      "period_start": "2026-03-31",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000731766",
+      "data": {
+        "shares_outstanding": 907675839,
+        "revenue": 111721000000,
+        "balance_sheet": {
+          "total_assets": 312644000000,
+          "total_liabilities": 207325000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-31",
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000731766",
+      "data": {
+        "shares_outstanding": 905838620,
+        "revenue": 447567000000,
+        "balance_sheet": {
+          "total_assets": 309581000000,
+          "total_liabilities": 207883000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-09-30",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000731766",
+      "data": {
+        "shares_outstanding": 905673625,
+        "revenue": 334352000000,
+        "balance_sheet": {
+          "total_assets": 315269000000,
+          "total_liabilities": 209456000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-30",
+      "period_start": "2025-06-30",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000731766",
+      "data": {
+        "shares_outstanding": 907140441,
+        "revenue": 221191000000,
+        "balance_sheet": {
+          "total_assets": 308573000000,
+          "total_liabilities": 203789000000,
+          "total_shareholders_equity": 0
+        }
+      }
+    }
+  ]
+}

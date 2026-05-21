@@ -1,0 +1,70 @@
+{
+  "symbol": "AMD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-28",
+      "period_start": "2026-03-28",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
+      "data": {
+        "shares_outstanding": 1630410843,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 79642000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 64462000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-27",
+      "period_start": "2025-12-27",
+      "period_end": "2025-12-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
+      "data": {
+        "shares_outstanding": 1628041540,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 76926000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 62999000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-27",
+      "period_start": "2025-09-27",
+      "period_end": "2025-09-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
+      "data": {
+        "shares_outstanding": 1622843689,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 76891000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 60790000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-06-28",
+      "period_start": "2025-06-28",
+      "period_end": "2025-06-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
+      "data": {
+        "shares_outstanding": 1621404195,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 74820000000,
+          "total_liabilities": 0,
+          "total_shareholders_equity": 59665000000
+        }
+      }
+    }
+  ]
+}

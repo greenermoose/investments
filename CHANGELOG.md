@@ -1,3 +1,7 @@
+### 0.6.20
+
+- data for ABNB
+
 ### 0.6.19
 
 - add instructions for AI Agents to data/README-DATA.md

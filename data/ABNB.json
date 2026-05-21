@@ -12,7 +12,9 @@
         "shares_outstanding": 593504923,
         "revenue": 2678000000,
         "balance_sheet": {
-          "total_assets": 26828000000
+          "total_assets": 26828000000,
+          "total_liabilities": 19192000000,
+          "total_shareholders_equity": 7636000000
         }
       }
     },
@@ -23,7 +25,13 @@
       "period_end": "2025-12-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
-        "revenue": 2780000000
+        "shares_outstanding": 613000000,
+        "revenue": 2780000000,
+        "balance_sheet": {
+          "total_assets": 22208000000,
+          "total_liabilities": 14009000000,
+          "total_shareholders_equity": 8199000000
+        }
       }
     },
     {
@@ -33,7 +41,13 @@
       "period_end": "2025-09-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
-        "revenue": 4095000000
+        "shares_outstanding": 611000000,
+        "revenue": 4095000000,
+        "balance_sheet": {
+          "total_assets": 23064000000,
+          "total_liabilities": 14454000000,
+          "total_shareholders_equity": 8610000000
+        }
       }
     },
     {
@@ -43,7 +57,13 @@
       "period_end": "2025-06-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
-        "revenue": 3096000000
+        "shares_outstanding": 615000000,
+        "revenue": 3096000000,
+        "balance_sheet": {
+          "total_assets": 26992000000,
+          "total_liabilities": 19210000000,
+          "total_shareholders_equity": 7782000000
+        }
       }
     }
   ]

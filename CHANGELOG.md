@@ -1,3 +1,7 @@
+### 0.6.15
+
+- fixed bug showing historical equity quantities
+
 ### 0.6.14
 
 - fixed bug in transaction processing

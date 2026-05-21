@@ -45,7 +45,8 @@ export default {
               :headers="headers"
               :items="filteredEquities"
               class="bg-transparent"
-              :sort-by="[{ key: 'symbol', order: 'asc' }]"
+              :sort-by="[{ key: 'symbol', order: 'asc' }, { key: 'firstBoughtDate', order: 'asc' }]"
+              :custom-key-sort="customSort"
               fixed-header
               height="calc(100vh - 290px)"
             >
@@ -184,7 +185,24 @@ export default {
       equities: [],
       cutoffDate: '',
       page: 1,
-      itemsPerPage: 10
+      itemsPerPage: 10,
+      customSort: {
+        firstBoughtDate: (a, b) => {
+          if (a === b) return 0;
+          if (a === 'Pre-inception') return -1;
+          if (b === 'Pre-inception') return 1;
+          if (!a) return -1;
+          if (!b) return 1;
+          const cleanA = String(a).split(' as of ')[0].trim();
+          const cleanB = String(b).split(' as of ')[0].trim();
+          const dateA = new Date(cleanA).getTime();
+          const dateB = new Date(cleanB).getTime();
+          if (isNaN(dateA) && isNaN(dateB)) return 0;
+          if (isNaN(dateA)) return -1;
+          if (isNaN(dateB)) return 1;
+          return dateA - dateB;
+        }
+      }
     };
   },
   watch: {

@@ -411,9 +411,9 @@ export const PortfolioValuation = {
             symbol,
             description,
             assetType: 'Equity',
-            quantity: 0,
+            quantity: lot.qty,
             averageCost: lot.buyPrice,
-            totalCostBasis: 0,
+            totalCostBasis: lot.qty * lot.buyPrice,
             marketValue: 0,
             currentPrice: lot.sellPrice,
             unrealizedGainLoss: 0,
@@ -562,7 +562,7 @@ export const PortfolioValuation = {
     for (const state of allHoldings) {
       if (state.symbol !== 'SGOV') {
         portfolioMarketValue += state.marketValue;
-        if (state.quantity > 0) {
+        if (state.quantity > 0 && !state.isClosed) {
           portfolioCostBasis += state.totalCostBasis;
         }
       }

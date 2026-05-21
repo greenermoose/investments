@@ -1,3 +1,7 @@
+### 0.6.19
+
+- add instructions for AI Agents to data/README-DATA.md
+
 ### 0.6.18
 
 - data for AAPL and ABNB

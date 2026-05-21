@@ -196,6 +196,23 @@ export const DatabaseService = {
 
   // --- Equities ---
 
+  async clearEquities() {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([EQUITIES_STORE], 'readwrite');
+        const store = transaction.objectStore(EQUITIES_STORE);
+        const request = store.clear();
+
+        request.onsuccess = () => resolve();
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to clear equities:", error);
+      throw error;
+    }
+  },
+
   async saveEquity(equityObj) {
     try {
       const db = await this.initDB();

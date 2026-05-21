@@ -132,7 +132,7 @@ export const BrokerageParser = {
           action: t.Action || '',
           symbol: t.Symbol || '',
           description: t.Description || '',
-          quantity: t.Quantity ? parseFloat(t.Quantity) : 0,
+          quantity: t.Quantity ? parseFloat(t.Quantity.toString().replace(/,/g, '')) : 0,
           price: t.Price || '',
           amount: t.Amount || ''
         }))
@@ -173,7 +173,7 @@ export const BrokerageParser = {
           action: actionNode ? actionNode.textContent : '',
           symbol: symbolNode ? symbolNode.textContent : '',
           description: descNode ? descNode.textContent : '',
-          quantity: qtyNode && qtyNode.textContent ? parseFloat(qtyNode.textContent) : 0,
+          quantity: qtyNode && qtyNode.textContent ? parseFloat(qtyNode.textContent.replace(/,/g, '')) : 0,
           price: priceNode ? priceNode.textContent : '',
           amount: amountNode ? amountNode.textContent : ''
         });

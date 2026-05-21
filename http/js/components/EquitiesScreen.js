@@ -10,6 +10,7 @@ export default {
             <div class="d-flex align-center justify-space-between mb-6">
               <h2 class="text-h5 font-weight-bold mr-4">
                 <span class="gradient-text">Equities</span> & Options
+                <span v-if="cutoffDate" class="text-subtitle-1 text-medium-emphasis ml-2">as of {{ cutoffDate }}</span>
               </h2>
               
               <v-text-field
@@ -98,6 +99,20 @@ export default {
                 </span>
               </template>
 
+              <template v-slot:item.firstBoughtDate="{ item }">
+                <span>{{ formatDate(item.firstBoughtDate) }}</span>
+              </template>
+
+              <template v-slot:item.lastSoldDate="{ item }">
+                <span>{{ formatDate(item.lastSoldDate) }}</span>
+              </template>
+
+              <template v-slot:item.realizedGain="{ item }">
+                <span :class="getGainClass(item.realizedGain)">
+                  {{ formatCurrency(item.realizedGain) }}
+                </span>
+              </template>
+
               <template v-slot:item.riskInfo="{ item }">
                 <div v-if="item.isShortOption" class="d-flex flex-column align-center py-1">
                   <v-chip v-if="item.cappedUpside > 0" color="warning" size="x-small" variant="flat" class="mb-1 font-weight-bold">
@@ -167,16 +182,7 @@ export default {
       search: '',
       activeOnly: true,
       equities: [],
-      headers: [
-        { title: 'Symbol & Description', align: 'start', key: 'symbol' },
-        { title: 'Type', key: 'assetType' },
-        { title: 'Qty', key: 'quantity', align: 'end' },
-        { title: 'Avg Cost / Prem', key: 'averageCost', align: 'end' },
-        { title: 'Price', key: 'currentPrice', align: 'end' },
-        { title: 'Market Value', key: 'marketValue', align: 'end' },
-        { title: 'Unrealized G/L', key: 'unrealizedGainLoss', align: 'end' },
-        { title: 'Status / Risk', key: 'riskInfo', align: 'center' }
-      ],
+      cutoffDate: '',
       page: 1,
       itemsPerPage: 10
     };
@@ -190,6 +196,28 @@ export default {
     }
   },
   computed: {
+    headers() {
+      const baseHeaders = [
+        { title: 'Symbol & Description', align: 'start', key: 'symbol' },
+        { title: 'Type', key: 'assetType' },
+        { title: 'Qty', key: 'quantity', align: 'end' },
+        { title: 'Avg Cost / Prem', key: 'averageCost', align: 'end' },
+        { title: 'Price', key: 'currentPrice', align: 'end' },
+        { title: 'Market Value', key: 'marketValue', align: 'end' },
+        { title: 'Unrealized G/L', key: 'unrealizedGainLoss', align: 'end' }
+      ];
+
+      if (!this.activeOnly) {
+        baseHeaders.push(
+          { title: 'Bought', key: 'firstBoughtDate', align: 'start' },
+          { title: 'Sold', key: 'lastSoldDate', align: 'start' },
+          { title: 'Realized G/L', key: 'realizedGain', align: 'end' }
+        );
+      }
+
+      baseHeaders.push({ title: 'Status / Risk', key: 'riskInfo', align: 'center' });
+      return baseHeaders;
+    },
     filteredEquities() {
       let list = this.equities;
       if (this.activeOnly) {
@@ -210,6 +238,7 @@ export default {
   },
   async mounted() {
     await this.loadEquities();
+    await this.loadCutoffDate();
   },
   methods: {
     async loadEquities() {
@@ -218,6 +247,34 @@ export default {
       } catch (error) {
         console.error("Error loading equities:", error);
       }
+    },
+    async loadCutoffDate() {
+      try {
+        const summary = await DatabaseService.getPortfolioSummary();
+        if (summary && summary.cutoffDate) {
+          this.cutoffDate = this.formatCutoffDate(summary.cutoffDate);
+        }
+      } catch (error) {
+        console.error("Error loading portfolio summary:", error);
+      }
+    },
+    formatCutoffDate(dateStr) {
+      if (!dateStr) return '';
+      const parts = dateStr.split('-');
+      if (parts.length === 3) {
+        const year = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const day = parseInt(parts[2], 10);
+        const date = new Date(year, month, day);
+        if (!isNaN(date.getTime())) {
+          return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+        }
+      }
+      return dateStr;
     },
     getTypeColor(type) {
       if (!type) return 'grey';
@@ -263,6 +320,12 @@ export default {
       } else {
         return `$0.00 (0.00%)`;
       }
+    },
+    formatDate(dateStr) {
+      if (!dateStr) return '-';
+      if (dateStr === 'Pre-inception') return 'Pre-inception';
+      const clean = dateStr.split(' as of ')[0].trim();
+      return clean;
     }
   }
 };

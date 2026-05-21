@@ -1,0 +1,260 @@
+Full Reconciled FIFO Report (using 2026-05-21 positions and 3-way deduplication)
+
+Symbol: 868CVR010
+  Seeded Initial Qty: 300.0000 at $0.0000
+  Reconciled Final Qty: 300.0000 (Expected: 300.0000)
+  Position Cost/Share: $0.0000
+  Reconciled FIFO Cost: $0.0000 (diff: $0.0000)
+
+Symbol: AAPL
+  Seeded Initial Qty: 4.0979 at $52.0700
+  Reconciled Final Qty: 4.1785 (Expected: 4.1785)
+  Position Cost/Share: $52.0700
+  Reconciled FIFO Cost: $54.9881 (diff: $2.9181)
+
+Symbol: ABNB
+  Seeded Initial Qty: 1.0000 at $130.7100
+  Reconciled Final Qty: 3.0000 (Expected: 3.0000)
+  Position Cost/Share: $130.7100
+  Reconciled FIFO Cost: $124.2033 (diff: $6.5067)
+
+Symbol: ADBE
+  Seeded Initial Qty: 1.0000 at $441.9600
+  Reconciled Final Qty: 4.0000 (Expected: 4.0000)
+  Position Cost/Share: $441.9600
+  Reconciled FIFO Cost: $415.9500 (diff: $26.0100)
+
+Symbol: AMD
+  Seeded Initial Qty: 1.0000 at $121.5600
+  Reconciled Final Qty: 12.0000 (Expected: 12.0000)
+  Position Cost/Share: $121.5600
+  Reconciled FIFO Cost: $120.1900 (diff: $1.3700)
+
+Symbol: AVGO
+  Seeded Initial Qty: 0.0000 at $158.0100
+  Reconciled Final Qty: 4.0507 (Expected: 4.0507)
+  Position Cost/Share: $158.0100
+  Reconciled FIFO Cost: $158.0073 (diff: $0.0027)
+
+Symbol: BAM
+  Seeded Initial Qty: 0.0000 at $29.9300
+  Reconciled Final Qty: 165.0000 (Expected: 165.0000)
+  Position Cost/Share: $29.9300
+  Reconciled FIFO Cost: $29.9300 (diff: $0.0000)
+
+Symbol: BEAM
+  Seeded Initial Qty: 300.0000 at $80.9100
+  Reconciled Final Qty: 200.0000 (Expected: 200.0000)
+  Position Cost/Share: $80.9100
+  Reconciled FIFO Cost: $80.9100 (diff: $0.0000)
+
+Symbol: BETA
+  Seeded Initial Qty: 100.0000 at $17.3600
+  Reconciled Final Qty: 1900.0000 (Expected: 1900.0000)
+  Position Cost/Share: $17.3600
+  Reconciled FIFO Cost: $17.5633 (diff: $0.2033)
+
+Symbol: BRK/B
+  Seeded Initial Qty: 1.0000 at $275.0000
+  Reconciled Final Qty: 1.0000 (Expected: 1.0000)
+  Position Cost/Share: $275.0000
+  Reconciled FIFO Cost: $275.0000 (diff: $0.0000)
+
+Symbol: CRM
+  Seeded Initial Qty: 1.0000 at $202.4200
+  Reconciled Final Qty: 57.2708 (Expected: 57.2708)
+  Position Cost/Share: $202.4200
+  Reconciled FIFO Cost: $201.3291 (diff: $1.0909)
+
+Symbol: CRSP
+  Seeded Initial Qty: 340.0000 at $88.0400
+  Reconciled Final Qty: 140.0000 (Expected: 140.0000)
+  Position Cost/Share: $88.0400
+  Reconciled FIFO Cost: $88.0400 (diff: $0.0000)
+
+Symbol: CSIQ
+  Seeded Initial Qty: 0.0000 at $9.8400
+  Reconciled Final Qty: 41.0000 (Expected: 41.0000)
+  Position Cost/Share: $9.8400
+  Reconciled FIFO Cost: $9.8351 (diff: $0.0049)
+
+Symbol: DIS
+  Seeded Initial Qty: 1.0000 at $98.0200
+  Reconciled Final Qty: 7.1678 (Expected: 7.1678)
+  Position Cost/Share: $98.0200
+  Reconciled FIFO Cost: $90.3108 (diff: $7.7092)
+
+Symbol: EDIT
+  Seeded Initial Qty: 884.0000 at $34.2100
+  Reconciled Final Qty: 84.0000 (Expected: 84.0000)
+  Position Cost/Share: $34.2100
+  Reconciled FIFO Cost: $34.2100 (diff: $0.0000)
+
+Symbol: ENPH
+  Seeded Initial Qty: 0.0000 at $59.7900
+  Reconciled Final Qty: 276.0000 (Expected: 276.0000)
+  Position Cost/Share: $59.7900
+  Reconciled FIFO Cost: $63.7818 (diff: $3.9918)
+
+Symbol: ENVX
+  Seeded Initial Qty: 1.0000 at $8.2200
+  Reconciled Final Qty: 6.0000 (Expected: 6.0000)
+  Position Cost/Share: $8.2200
+  Reconciled FIFO Cost: $7.9200 (diff: $0.3000)
+
+Symbol: EOSE
+  Seeded Initial Qty: 0.0000 at $1.2600
+  Reconciled Final Qty: 221.0000 (Expected: 221.0000)
+  Position Cost/Share: $1.2600
+  Reconciled FIFO Cost: $15.5020 (diff: $14.2420)
+
+Symbol: GNRC
+  Seeded Initial Qty: 0.0000 at $90.0000
+  Reconciled Final Qty: 18.0000 (Expected: 18.0000)
+  Position Cost/Share: $90.0000
+  Reconciled FIFO Cost: $90.0000 (diff: $0.0000)
+
+Symbol: GOOGL
+  Seeded Initial Qty: 1.0000 at $53.1200
+  Reconciled Final Qty: 20.1614 (Expected: 20.1614)
+  Position Cost/Share: $53.1200
+  Reconciled FIFO Cost: $4.2676 (diff: $48.8524)
+
+Symbol: GWH
+  Seeded Initial Qty: 0.0000 at $5.8200
+  Reconciled Final Qty: 1430.0000 (Expected: 90.0000)
+  Position Cost/Share: $5.8200
+  Reconciled FIFO Cost: $2.4593 (diff: $3.3607)
+
+Symbol: JNJ
+  Seeded Initial Qty: 1.0000 at $153.9500
+  Reconciled Final Qty: 9.8136 (Expected: 9.8136)
+  Position Cost/Share: $153.9500
+  Reconciled FIFO Cost: $154.8404 (diff: $0.8904)
+
+Symbol: JPM
+  Seeded Initial Qty: 1.0082 at $130.8600
+  Reconciled Final Qty: 2.1948 (Expected: 2.1948)
+  Position Cost/Share: $130.8600
+  Reconciled FIFO Cost: $124.4501 (diff: $6.4099)
+
+Symbol: KO
+  Seeded Initial Qty: 1.0000 at $55.8400
+  Reconciled Final Qty: 9.7356 (Expected: 9.7356)
+  Position Cost/Share: $55.8400
+  Reconciled FIFO Cost: $55.2375 (diff: $0.6025)
+
+Symbol: MA
+  Seeded Initial Qty: 1.0015 at $323.1300
+  Reconciled Final Qty: 1.0253 (Expected: 1.0253)
+  Position Cost/Share: $323.1300
+  Reconciled FIFO Cost: $326.1823 (diff: $3.0523)
+
+Symbol: META
+  Seeded Initial Qty: 1.0000 at $166.8800
+  Reconciled Final Qty: 2.0155 (Expected: 2.0155)
+  Position Cost/Share: $166.8800
+  Reconciled FIFO Cost: $170.3151 (diff: $3.4351)
+
+Symbol: MSFT
+  Seeded Initial Qty: 1.0105 at $214.8200
+  Reconciled Final Qty: 1.0446 (Expected: 1.0446)
+  Position Cost/Share: $214.8200
+  Reconciled FIFO Cost: $219.7258 (diff: $4.9058)
+
+Symbol: NFLX
+  Seeded Initial Qty: 1.0000 at $27.4900
+  Reconciled Final Qty: 20.0000 (Expected: 20.0000)
+  Position Cost/Share: $27.4900
+  Reconciled FIFO Cost: $12.7135 (diff: $14.7765)
+
+Symbol: NRGV
+  Seeded Initial Qty: 0.0000 at $0.8000
+  Reconciled Final Qty: 33.0000 (Expected: 28.0000)
+  Position Cost/Share: $0.8000
+  Reconciled FIFO Cost: $31.0788 (diff: $30.2788)
+
+Symbol: NTLA
+  Seeded Initial Qty: 133.0000 at $103.5700
+  Reconciled Final Qty: 133.0000 (Expected: 133.0000)
+  Position Cost/Share: $103.5700
+  Reconciled FIFO Cost: $103.5700 (diff: $0.0000)
+
+Symbol: NVDA
+  Seeded Initial Qty: 1.0000 at $19.2200
+  Reconciled Final Qty: 20.0349 (Expected: 20.0349)
+  Position Cost/Share: $19.2200
+  Reconciled FIFO Cost: $9.8039 (diff: $9.4161)
+
+Symbol: SBUX
+  Seeded Initial Qty: 1.0000 at $74.1800
+  Reconciled Final Qty: 62.9461 (Expected: 62.9461)
+  Position Cost/Share: $74.1800
+  Reconciled FIFO Cost: $73.6122 (diff: $0.5678)
+
+Symbol: SEDG
+  Seeded Initial Qty: 115.0000 at $109.5100
+  Reconciled Final Qty: 170.0000 (Expected: 170.0000)
+  Position Cost/Share: $109.5100
+  Reconciled FIFO Cost: $109.5088 (diff: $0.0012)
+
+Symbol: SLDP
+  Seeded Initial Qty: 601.0000 at $4.7000
+  Reconciled Final Qty: 100.0000 (Expected: 100.0000)
+  Position Cost/Share: $4.7000
+  Reconciled FIFO Cost: $4.7000 (diff: $0.0000)
+
+Symbol: STOK
+  Seeded Initial Qty: 100.0000 at $21.7100
+  Reconciled Final Qty: 100.0000 (Expected: 100.0000)
+  Position Cost/Share: $21.7100
+  Reconciled FIFO Cost: $21.7100 (diff: $0.0000)
+
+Symbol: TDOC
+  Seeded Initial Qty: 109.0000 at $66.6500
+  Reconciled Final Qty: 100.0000 (Expected: 100.0000)
+  Position Cost/Share: $66.6500
+  Reconciled FIFO Cost: $66.6500 (diff: $0.0000)
+
+Symbol: TMUS
+  Seeded Initial Qty: 0.0000 at $217.2000
+  Reconciled Final Qty: 1.0100 (Expected: 1.0100)
+  Position Cost/Share: $217.2000
+  Reconciled FIFO Cost: $217.1980 (diff: $0.0020)
+
+Symbol: TSLA
+  Seeded Initial Qty: 1.0000 at $197.7600
+  Reconciled Final Qty: 20.0000 (Expected: 20.0000)
+  Position Cost/Share: $197.7600
+  Reconciled FIFO Cost: $162.9445 (diff: $34.8155)
+
+Symbol: UNH
+  Seeded Initial Qty: 1.0029 at $329.1200
+  Reconciled Final Qty: 10.3646 (Expected: 10.3646)
+  Position Cost/Share: $329.1200
+  Reconciled FIFO Cost: $317.7947 (diff: $11.3253)
+
+Symbol: WMT
+  Seeded Initial Qty: 1.0667 at $46.0600
+  Reconciled Final Qty: 3.1676 (Expected: 3.1676)
+  Position Cost/Share: $46.0600
+  Reconciled FIFO Cost: $18.7752 (diff: $27.2848)
+
+Symbol: XYZ
+  Seeded Initial Qty: 106.0000 at $140.5500
+  Reconciled Final Qty: 6.0000 (Expected: 6.0000)
+  Position Cost/Share: $140.5500
+  Reconciled FIFO Cost: $140.5500 (diff: $0.0000)
+
+Symbol: ZM
+  Seeded Initial Qty: 103.0000 at $226.6800
+  Reconciled Final Qty: 105.0000 (Expected: 105.0000)
+  Position Cost/Share: $226.6800
+  Reconciled FIFO Cost: $223.9586 (diff: $2.7214)
+
+Symbol: SGOV
+  Seeded Initial Qty: 0.0000 at $100.5700
+  Reconciled Final Qty: 404.0000 (Expected: 351.0000)
+  Position Cost/Share: $100.5700
+  Reconciled FIFO Cost: $100.5655 (diff: $0.0045)
+

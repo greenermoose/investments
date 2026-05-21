@@ -1,3 +1,7 @@
+### 0.6.13
+
+- working on transaction processing
+
 ### 0.6.12
 
 - fixed display buy in unrealized G/L

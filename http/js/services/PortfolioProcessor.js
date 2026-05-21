@@ -9,19 +9,61 @@ export const PortfolioProcessor = {
    * ownership history and quantities.
    */
   async processAllFiles(filesArray) {
+    // Clear old computed equities to prevent stale entries
+    await DatabaseService.clearEquities();
+
     // 1. Separate positions and transactions
     const positionFiles = [];
     const transactionFiles = [];
     
+    // Helper to parse dates
+    const parseDateString = (dateStr) => {
+      if (!dateStr) return null;
+      const cleaned = dateStr.split(' as of ')[0].trim();
+      const d = new Date(cleaned);
+      return isNaN(d.getTime()) ? null : d;
+    };
+
+    let maxDateObj = null;
+    let cutoffDate = null;
+
     for (const file of filesArray) {
       const decoder = new TextDecoder();
       const text = decoder.decode(file.content);
       
       if (file.exportType === 'positions') {
-        positionFiles.push({ file, text, data: BrokerageParser.parsePositions(text) });
+        const parsed = BrokerageParser.parsePositions(text);
+        positionFiles.push({ file, text, data: parsed });
+        
+        const d = parseDateString(parsed.date);
+        if (d && (!maxDateObj || d > maxDateObj)) {
+          maxDateObj = d;
+        }
       } else if (file.exportType === 'transactions') {
-        transactionFiles.push({ file, text, data: BrokerageParser.parseTransactions(text) });
+        const parsed = BrokerageParser.parseTransactions(text);
+        transactionFiles.push({ file, text, data: parsed });
+        
+        const d = parseDateString(parsed.endDate);
+        if (d && (!maxDateObj || d > maxDateObj)) {
+          maxDateObj = d;
+        }
+        
+        if (parsed.transactions && parsed.transactions.length > 0) {
+          for (const tx of parsed.transactions) {
+            const td = parseDateString(tx.date);
+            if (td && (!maxDateObj || td > maxDateObj)) {
+              maxDateObj = td;
+            }
+          }
+        }
       }
+    }
+
+    if (maxDateObj) {
+      const year = maxDateObj.getFullYear();
+      const month = String(maxDateObj.getMonth() + 1).padStart(2, '0');
+      const day = String(maxDateObj.getDate()).padStart(2, '0');
+      cutoffDate = `${year}-${month}-${day}`;
     }
     
     // Group files by heuristic account
@@ -29,7 +71,7 @@ export const PortfolioProcessor = {
     
     // For each account, rebuild equity ownership
     for (const account of accounts) {
-      await this._rebuildAccountEquities(account);
+      await this._rebuildAccountEquities(account, cutoffDate);
     }
   },
 
@@ -96,15 +138,56 @@ export const PortfolioProcessor = {
     return accounts;
   },
 
-  async _rebuildAccountEquities(account) {
-    // Collect all transactions, sort by date chronologically
-    let allTx = [];
-    for (const tf of account.transactionFiles) {
-      allTx.push(...tf.data.transactions);
+  _deduplicateTransactions(transactionFiles) {
+    const makeKey = (tx) => {
+      const normPrice = parseFloat(tx.price.toString().replace(/[^0-9.-]/g, '')) || 0;
+      const normAmount = parseFloat(tx.amount.toString().replace(/[^0-9.-]/g, '')) || 0;
+      const dateClean = tx.date.split(' as of ')[0].trim();
+      return `${dateClean}|${tx.action.toLowerCase().trim()}|${tx.symbol.trim()}|${tx.quantity}|${normPrice.toFixed(4)}|${normAmount.toFixed(4)}`;
+    };
+
+    const fileTxMaps = transactionFiles.map(tf => {
+      const map = new Map();
+      for (const tx of tf.data.transactions) {
+        const key = makeKey(tx);
+        map.set(key, (map.get(key) || 0) + 1);
+      }
+      return map;
+    });
+
+    const globalTxCounts = new Map();
+    for (const map of fileTxMaps) {
+      for (const [key, count] of map.entries()) {
+        const currentMax = globalTxCounts.get(key) || 0;
+        if (count > currentMax) {
+          globalTxCounts.set(key, count);
+        }
+      }
     }
-    
-    // Sort oldest to newest
-    allTx.sort((a, b) => new Date(a.date.split(' as of ')[0]) - new Date(b.date.split(' as of ')[0]));
+
+    const keyToObj = new Map();
+    for (const tf of transactionFiles) {
+      for (const tx of tf.data.transactions) {
+        const key = makeKey(tx);
+        if (!keyToObj.has(key)) {
+          keyToObj.set(key, tx);
+        }
+      }
+    }
+
+    const deduplicated = [];
+    for (const [key, count] of globalTxCounts.entries()) {
+      const txObj = keyToObj.get(key);
+      for (let i = 0; i < count; i++) {
+        deduplicated.push(txObj);
+      }
+    }
+    return deduplicated;
+  },
+
+  async _rebuildAccountEquities(account, cutoffDate) {
+    // Collect all transactions, deduplicate
+    const allTx = this._deduplicateTransactions(account.transactionFiles);
     
     // Process position snapshots
     let positionSnapshots = account.positionFiles.map(pf => pf.data);
@@ -153,6 +236,9 @@ export const PortfolioProcessor = {
         cappedUpside: state.cappedUpside || 0,
         obligatedCollateral: state.obligatedCollateral || 0,
         obligationRisk: state.obligationRisk || 0,
+        realizedGain: state.realizedGain || 0,
+        firstBoughtDate: state.firstBoughtDate || null,
+        lastSoldDate: state.lastSoldDate || null,
         updatedAt: new Date().toISOString()
       });
     }
@@ -167,6 +253,7 @@ export const PortfolioProcessor = {
       totalCappedUpside: valuation.totalCappedUpside,
       totalObligatedCash: valuation.totalObligatedCash,
       totalObligationRisk: valuation.totalObligationRisk,
+      cutoffDate: cutoffDate,
       updatedAt: new Date().toISOString()
     };
     await DatabaseService.savePortfolioSummary(summary);

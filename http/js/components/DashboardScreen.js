@@ -21,6 +21,7 @@ export default {
             </h1>
             <p class="text-subtitle-1 text-medium-emphasis">
               Market simulator and allocation engine are standing by.
+              <span v-if="cutoffDate" class="text-caption text-medium-emphasis d-block mt-1">Data as of {{ cutoffDate }}</span>
             </p>
           </div>
 
@@ -240,6 +241,10 @@ export default {
     filteredFiles() {
       if (this.fileFilter === 'all') return this.uploadedFiles;
       return this.uploadedFiles.filter(f => f.exportType === this.fileFilter);
+    },
+    cutoffDate() {
+      if (!this.portfolioSummary || !this.portfolioSummary.cutoffDate) return '';
+      return this.formatCutoffDate(this.portfolioSummary.cutoffDate);
     }
   },
   async mounted() {
@@ -247,6 +252,24 @@ export default {
     await this.loadPortfolioSummary();
   },
   methods: {
+    formatCutoffDate(dateStr) {
+      if (!dateStr) return '';
+      const parts = dateStr.split('-');
+      if (parts.length === 3) {
+        const year = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const day = parseInt(parts[2], 10);
+        const date = new Date(year, month, day);
+        if (!isNaN(date.getTime())) {
+          return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+        }
+      }
+      return dateStr;
+    },
     async loadFiles() {
       try {
         const files = await DatabaseService.getAllFiles();

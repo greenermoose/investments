@@ -29,7 +29,7 @@ To achieve this, the application aims to:
 ## Technologies Used
 
 - [Vue 3](https://vuejs.org/) (Options API with ES modules)
-- [Vuetify](https://vuetifyjs.com/) (Material Design component framework)
+- [Vuetify 4](https://vuetifyjs.com/) (Material Design component framework)
 - [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) (native browser module support, no build step required)
 - [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) (browser-based data storage)
 

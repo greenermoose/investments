@@ -1,3 +1,7 @@
+### 0.6.11
+
+- fixed data table pagination bugs
+
 ### 0.6.10
 
 - fixed average cost bug

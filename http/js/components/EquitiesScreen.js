@@ -39,13 +39,14 @@ export default {
             </div>
             
             <v-data-table
+              v-model:page="page"
+              v-model:items-per-page="itemsPerPage"
               :headers="headers"
               :items="filteredEquities"
-              :search="search"
               class="bg-transparent"
               :sort-by="[{ key: 'symbol', order: 'asc' }]"
               fixed-header
-              height="calc(100vh - 250px)"
+              height="calc(100vh - 290px)"
             >
               <template v-slot:header.marketValue="{ column }">
                 <div class="d-flex flex-column align-end">
@@ -110,7 +111,50 @@ export default {
                   </v-chip>
                   <span v-if="!(item.cappedUpside > 0 || item.obligationRisk > 0 || item.obligatedCollateral > 0)" class="text-caption text-success font-weight-medium">OTM (Safe)</span>
                 </div>
-                <span v-else class="text-caption text-medium-emphasis">-</span>
+                 <span v-else class="text-caption text-medium-emphasis">-</span>
+              </template>
+
+              <template v-slot:bottom="{ pageCount }">
+                <div class="d-flex align-center justify-end pt-4 text-body-2 text-medium-emphasis border-top-thin">
+                  <div class="d-flex align-center mr-6">
+                    <span class="mr-2">Items per page:</span>
+                    <v-select
+                      v-model="itemsPerPage"
+                      :items="[5, 10, 25, 50, { title: 'All', value: -1 }]"
+                      variant="outlined"
+                      density="compact"
+                      hide-details
+                      class="custom-pagination-select"
+                      style="max-width: 85px;"
+                    ></v-select>
+                  </div>
+                  
+                  <div class="d-flex align-center">
+                    <v-btn
+                      icon="mdi-chevron-left"
+                      variant="text"
+                      density="comfortable"
+                      :disabled="page === 1 || filteredEquities.length === 0"
+                      @click="page--"
+                      color="primary"
+                      class="hover-lift"
+                    ></v-btn>
+                    
+                    <span class="mx-3 font-weight-medium text-white">
+                      {{ filteredEquities.length === 0 ? 0 : (page - 1) * (itemsPerPage === -1 ? filteredEquities.length : itemsPerPage) + 1 }}-{{ itemsPerPage === -1 ? filteredEquities.length : Math.min(page * itemsPerPage, filteredEquities.length) }} of {{ filteredEquities.length }}
+                    </span>
+                    
+                    <v-btn
+                      icon="mdi-chevron-right"
+                      variant="text"
+                      density="comfortable"
+                      :disabled="page >= pageCount || filteredEquities.length === 0"
+                      @click="page++"
+                      color="primary"
+                      class="hover-lift"
+                    ></v-btn>
+                  </div>
+                </div>
               </template>
             </v-data-table>
           </v-card>
@@ -132,14 +176,31 @@ export default {
         { title: 'Market Value', key: 'marketValue', align: 'end' },
         { title: 'Unrealized G/L', key: 'unrealizedGainLoss', align: 'end' },
         { title: 'Status / Risk', key: 'riskInfo', align: 'center' }
-      ]
+      ],
+      page: 1,
+      itemsPerPage: 10
     };
+  },
+  watch: {
+    search() {
+      this.page = 1;
+    },
+    activeOnly() {
+      this.page = 1;
+    }
   },
   computed: {
     filteredEquities() {
       let list = this.equities;
       if (this.activeOnly) {
         list = list.filter(e => Math.abs(e.quantity) > 0.0001);
+      }
+      if (this.search) {
+        const q = this.search.toLowerCase();
+        list = list.filter(e => 
+          (e.symbol && e.symbol.toLowerCase().includes(q)) ||
+          (e.description && e.description.toLowerCase().includes(q))
+        );
       }
       return list;
     },

@@ -77,3 +77,45 @@ body {
 .fade-leave-to {
   opacity: 0;
 }
+
+/* Custom Pagination styles */
+.border-top-thin {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.custom-pagination-select {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.custom-pagination-select .v-field {
+  border-radius: 6px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s !important;
+}
+
+.custom-pagination-select .v-field:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.custom-pagination-select .v-field--focused {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px var(--accent-color-glow) !important;
+}
+
+.custom-pagination-select .v-select__selection-text {
+  font-size: 0.875rem !important;
+  color: var(--text-primary) !important;
+}
+
+.custom-pagination-select .v-field__input {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  min-height: 32px !important;
+}
+
+.custom-pagination-select .v-field__append-inner {
+  padding-top: 0 !important;
+  align-items: center !important;
+}
+

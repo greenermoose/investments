@@ -1,3 +1,7 @@
+### 0.6.17
+
+- SEC filing data
+
 ### 0.6.16
 
 - simplified company display

@@ -1,0 +1,21 @@
+{
+  "symbol": "AAPL",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_ending": "2026-03-28",
+      "filing_url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019326000066/aapl-20260328.htm",
+      "data": {
+        "shares_outstanding": 14687356000,
+        "revenue": 111200000000,
+        "balance_sheet": {
+          "total_assets": 371082000000,
+          "total_liabilities": 264591000000,
+          "total_shareholders_equity": 106491000000
+        }
+      }
+    }
+  ]
+}

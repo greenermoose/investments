@@ -1,3 +1,7 @@
+### 0.6.8
+
+- updated ROADMAP
+
 ### 0.6.7
 
 - showing portfolio value

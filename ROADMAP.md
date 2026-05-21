@@ -1,5 +1,12 @@
 # Investment App Roadmap
 
+> [!IMPORTANT]
+> **Developer & Agent Notice (Prevent Roadmap Drift)**: 
+> You **MUST** update this roadmap file immediately after writing or modifying code.
+> - When features are implemented, move them from the **Next Features & Development Phases** section to the **Coded Features** subsection under **Current Status**.
+> - Ensure all paths, components, and services listed reflect their actual state in the codebase.
+> - Ensure `CHANGELOG.md` and this document remain synchronized.
+
 This document outlines the coding, functionality, and architectural roadmap to achieve the app's core investment goal.
 
 ---
@@ -42,9 +49,14 @@ Following the `v0.6.0` refactor, the application has transitioned to a lightweig
 * **IndexedDB Database Layer (`DatabaseService.js`)**: Version 3 schema initialized with stores for `user_data` (profiles), `uploaded_files`, `equities`, and `companies`.
 * **Brokerage Ingestion Engine (`BrokerageParser.js`, `CSVParser.js`)**: Classifies and parses CSV, JSON, and XML brokerage export statements.
 * **Portfolio Processor (`PortfolioProcessor.js`)**: Heuristically groups files by account, reconciles transactions chronologically, rebuilds equity holdings, tracks acquisition dates, and updates database records.
-* **UI Components**:
+* **Portfolio Valuation Service (`PortfolioValuation.js`)**: Computes running average cost basis, option premium liabilities, realized gains, and net asset values from chronological transaction histories.
+* **UI Components & Features**:
   * `WelcomeScreen.js`: User registration and initial state setup.
   - `DashboardScreen.js`: File upload manager, showing file types (Positions/Transactions) and processing state.
+  - **Dynamic Portfolio Metrics Panel (`DashboardScreen.js`)**: Added live, calculated portfolio stats:
+    * **Net Liquidation Value**: Calculated from cash, stock value, and option liabilities.
+    * **Options Drag**: Total premium liabilities reducing portfolio liquidity.
+    * **Obligations & Capped Upside**: Tracks covered call strike cap values, short put cash collateral requirements, and underwater in-the-money obligation risks.
   - `EquitiesScreen.js`: Table view of the equities database universe, showing first/last owned dates.
   - `CompaniesScreen.js`: Association table matching equities/options to parent company profiles.
 
@@ -57,9 +69,9 @@ The following phases outline the functionality to be moved from specifications a
 ### Active & Near-Term Focus
 
 #### [MODIFY] [DashboardScreen.js](file:///c:/Users/fyhor/Documents/GitHub/investments/http/js/components/DashboardScreen.js)
-* **Status Panels Integration**: Replace static mockup cards with active calculated components:
-  * **Portfolio Overview**: Total current value, current allocation percentages, and gains/losses derived from database holdings.
-  * **Screaming Buys Alert**: Indicator linking to the watchlisted opportunities.
+* **Remaining UI Panel Integrations**: Integrate the remaining mockup cards with active calculated components/actions:
+  * **Portfolio Allocation Visuals**: Link the Portfolio card to interactive asset allocation charts (e.g. cash vs. equities, stock allocation percentages).
+  * **Screaming Buys Alert**: Indicator linking to watchlisted opportunities.
   * **Simulator**: Interface hook to launch Monte Carlo model runs.
 
 #### [NEW] Lot Management Service (`LotManager.js`)

@@ -1,3 +1,7 @@
+### 0.6.18
+
+- data for AAPL and ABNB
+
 ### 0.6.17
 
 - SEC filing data

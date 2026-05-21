@@ -1,0 +1,50 @@
+{
+  "symbol": "ABNB",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
+      "data": {
+        "shares_outstanding": 593504923,
+        "revenue": 2678000000,
+        "balance_sheet": {
+          "total_assets": 26828000000
+        }
+      }
+    },
+    {
+      "type": "8-K",
+      "filing_date": "2026-02-12",
+      "period_start": "2025-10-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
+      "data": {
+        "revenue": 2780000000
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-07-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
+      "data": {
+        "revenue": 4095000000
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-06",
+      "period_start": "2025-04-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
+      "data": {
+        "revenue": 3096000000
+      }
+    }
+  ]
+}

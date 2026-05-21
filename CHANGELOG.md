@@ -1,3 +1,7 @@
+### 0.6.16
+
+- simplified company display
+
 ### 0.6.15
 
 - fixed bug showing historical equity quantities

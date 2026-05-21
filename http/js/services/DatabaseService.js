@@ -1,5 +1,5 @@
 const DB_NAME = 'InvestmentsDB';
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 const STORE_NAME = 'user_data';
 const FILES_STORE = 'uploaded_files';
 const EQUITIES_STORE = 'equities';
@@ -38,10 +38,12 @@ export const DatabaseService = {
         }
 
         // Create an object store for equities
-        if (!db.objectStoreNames.contains(EQUITIES_STORE)) {
-          const equitiesStore = db.createObjectStore(EQUITIES_STORE, { keyPath: 'symbol' });
-          equitiesStore.createIndex('companyId', 'companyId', { unique: false });
+        if (db.objectStoreNames.contains(EQUITIES_STORE)) {
+          db.deleteObjectStore(EQUITIES_STORE);
         }
+        const equitiesStore = db.createObjectStore(EQUITIES_STORE, { keyPath: 'id' });
+        equitiesStore.createIndex('companyId', 'companyId', { unique: false });
+        equitiesStore.createIndex('symbol', 'symbol', { unique: false });
 
         // Create an object store for companies
         if (!db.objectStoreNames.contains(COMPANIES_STORE)) {
@@ -236,7 +238,8 @@ export const DatabaseService = {
       return new Promise((resolve, reject) => {
         const transaction = db.transaction([EQUITIES_STORE], 'readonly');
         const store = transaction.objectStore(EQUITIES_STORE);
-        const request = store.get(symbol);
+        const index = store.index('symbol');
+        const request = index.get(symbol);
 
         request.onsuccess = () => resolve(request.result || null);
         request.onerror = (e) => reject(e.target.error);

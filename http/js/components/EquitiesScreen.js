@@ -219,10 +219,35 @@ export default {
       return baseHeaders;
     },
     filteredEquities() {
-      let list = this.equities;
+      let list = [];
       if (this.activeOnly) {
-        list = list.filter(e => Math.abs(e.quantity) > 0.0001);
+        const grouped = new Map();
+        for (const e of this.equities) {
+          if (e.isClosed) continue;
+          if (Math.abs(e.quantity) < 0.0001) continue;
+
+          if (!grouped.has(e.symbol)) {
+            grouped.set(e.symbol, { ...e });
+          } else {
+            const existing = grouped.get(e.symbol);
+            existing.quantity += e.quantity;
+            existing.totalCostBasis += e.totalCostBasis;
+            existing.marketValue += e.marketValue;
+            existing.unrealizedGainLoss += e.unrealizedGainLoss;
+            if (Math.abs(existing.quantity) > 0.0001) {
+              existing.averageCost = Math.abs(existing.totalCostBasis / existing.quantity);
+              // For options with a 100 multiplier
+              if (existing.assetType === 'Option') {
+                existing.averageCost = Math.abs(existing.totalCostBasis / (existing.quantity * 100));
+              }
+            }
+          }
+        }
+        list = Array.from(grouped.values());
+      } else {
+        list = this.equities;
       }
+
       if (this.search) {
         const q = this.search.toLowerCase();
         list = list.filter(e => 

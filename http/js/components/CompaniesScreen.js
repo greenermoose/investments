@@ -122,9 +122,9 @@ export default {
     companyData() {
       // Map equities to their companies
       let list = this.companies.map(company => {
-        const symbols = this.equities
+        const symbols = [...new Set(this.equities
           .filter(e => e.companyId === company.id)
-          .map(e => e.symbol);
+          .map(e => e.symbol))];
         return {
           ...company,
           symbols

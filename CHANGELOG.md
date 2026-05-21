@@ -1,3 +1,7 @@
+### 0.6.14
+
+- fixed bug in transaction processing
+
 ### 0.6.13
 
 - working on transaction processing

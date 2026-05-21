@@ -186,20 +186,6 @@ export const PortfolioValuation = {
         description = symTx[0].description || '';
       }
 
-      const state = {
-        symbol,
-        description,
-        assetType: isOption ? 'Option' : 'Equity',
-        quantity: 0,
-        averageCost: 0,
-        totalCostBasis: 0,
-        marketValue: 0,
-        unrealizedGainLoss: 0,
-        realizedGain: 0,
-        firstBoughtDate: null,
-        lastSoldDate: null
-      };
-
       if (!isOption) {
         // --- Stock / ETF FIFO Simulation ---
         // 1. Trace split ratio and net transaction quantity
@@ -258,16 +244,16 @@ export const PortfolioValuation = {
         }
 
         // Initialize FIFO lots
-        let fifoLots = [];
+        const openLots = [];
+        const closedLots = [];
         if (initialQty > 0 && pos) {
           const preInceptionPrice = pos.costPerShare * totalSplitRatio;
-          fifoLots.push({
+          openLots.push({
             qty: initialQty,
             price: preInceptionPrice,
             amount: initialQty * preInceptionPrice,
             date: 'Pre-inception'
           });
-          state.firstBoughtDate = 'Pre-inception';
         }
 
         // Process transactions
@@ -288,47 +274,59 @@ export const PortfolioValuation = {
               cost = price * qty;
             }
 
-            fifoLots.push({
+            openLots.push({
               qty,
               price,
               amount: cost,
               date: tradeDateStr
             });
-
-            if (!state.firstBoughtDate) {
-              state.firstBoughtDate = tradeDateStr;
-            }
           } else if (action.includes('sell')) {
             let revenue = Math.abs(amount);
+            const sellPrice = price || (qty > 0 ? revenue / qty : 0);
             let rem = qty;
-            let costBasisOfSold = 0;
 
-            while (rem > 0 && fifoLots.length > 0) {
-              const lot = fifoLots[0];
+            while (rem > 0 && openLots.length > 0) {
+              const lot = openLots[0];
               if (lot.qty <= rem) {
-                costBasisOfSold += lot.amount;
-                rem -= lot.qty;
-                fifoLots.shift();
+                const qtyConsumed = lot.qty;
+                const costBasisConsumed = lot.amount;
+                const revenueAllocated = (revenue / qty) * qtyConsumed;
+                closedLots.push({
+                  qty: qtyConsumed,
+                  buyPrice: lot.price,
+                  buyDate: lot.date,
+                  sellPrice: sellPrice,
+                  sellDate: tradeDateStr,
+                  realizedGain: revenueAllocated - costBasisConsumed
+                });
+                rem -= qtyConsumed;
+                openLots.shift();
               } else {
-                const lotCostSold = lot.amount * (rem / lot.qty);
-                costBasisOfSold += lotCostSold;
-                lot.amount -= lotCostSold;
-                lot.qty -= rem;
+                const qtyConsumed = rem;
+                const costBasisConsumed = lot.amount * (qtyConsumed / lot.qty);
+                const revenueAllocated = (revenue / qty) * qtyConsumed;
+                closedLots.push({
+                  qty: qtyConsumed,
+                  buyPrice: lot.price,
+                  buyDate: lot.date,
+                  sellPrice: sellPrice,
+                  sellDate: tradeDateStr,
+                  realizedGain: revenueAllocated - costBasisConsumed
+                });
+                lot.amount -= costBasisConsumed;
+                lot.qty -= qtyConsumed;
                 rem = 0;
               }
             }
-
-            state.realizedGain += (revenue - costBasisOfSold);
-            state.lastSoldDate = tradeDateStr;
           } else if (action.includes('split')) {
             let ratio = 1;
             if (!action.includes('reverse')) {
-              const sumQty = fifoLots.reduce((s, l) => s + l.qty, 0);
+              const sumQty = openLots.reduce((s, l) => s + l.qty, 0);
               if (sumQty > 0) {
                 ratio = (sumQty + qty) / sumQty;
               }
             } else {
-              const sumQty = fifoLots.reduce((s, l) => s + l.qty, 0);
+              const sumQty = openLots.reduce((s, l) => s + l.qty, 0);
               if (sumQty > 0) {
                 if (qty > 0) {
                   ratio = qty / sumQty;
@@ -338,7 +336,7 @@ export const PortfolioValuation = {
               }
             }
 
-            for (const lot of fifoLots) {
+            for (const lot of openLots) {
               lot.qty *= ratio;
               lot.price = lot.qty > 0 ? lot.amount / lot.qty : 0;
             }
@@ -349,28 +347,100 @@ export const PortfolioValuation = {
           }
         }
 
-        state.quantity = fifoLots.reduce((s, l) => s + l.qty, 0);
-        state.totalCostBasis = fifoLots.reduce((s, l) => s + l.amount, 0);
-        state.averageCost = state.quantity > 0 ? state.totalCostBasis / state.quantity : 0;
-
         // Reconcile with latest positions statement quantity if available
         if (latestPositions) {
           if (pos) {
-            state.quantity = pos.quantity;
-            if (state.quantity > 0 && state.averageCost === 0) {
-              state.averageCost = pos.costPerShare;
-              state.totalCostBasis = state.quantity * state.averageCost;
+            const sumOpenQty = openLots.reduce((s, l) => s + l.qty, 0);
+            if (Math.abs(sumOpenQty - pos.quantity) > 0.0001) {
+              if (openLots.length === 0 && pos.quantity > 0) {
+                openLots.push({
+                  qty: pos.quantity,
+                  price: pos.costPerShare || 0,
+                  amount: pos.quantity * (pos.costPerShare || 0),
+                  date: 'Pre-inception'
+                });
+              } else if (sumOpenQty > 0) {
+                const ratio = pos.quantity / sumOpenQty;
+                for (const lot of openLots) {
+                  lot.qty *= ratio;
+                  lot.amount *= ratio;
+                }
+              }
             }
           } else {
-            // If not in latest positions, it is a historical holding
-            state.quantity = 0;
-            state.totalCostBasis = 0;
-            state.averageCost = 0;
+            // Not in latest positions statement. Any remaining open lots are actually closed.
+            const sellDate = getCleanDateStr(latestPositions.endDate || latestPositions.date) || 'Unknown';
+            const sellPrice = stockPrices[symbol] || 0;
+            for (const lot of openLots) {
+              closedLots.push({
+                qty: lot.qty,
+                buyPrice: lot.price,
+                buyDate: lot.date,
+                sellPrice: sellPrice,
+                sellDate: sellDate,
+                realizedGain: (sellPrice - lot.price) * lot.qty
+              });
+            }
+            openLots.length = 0; // Clear open lots
           }
+        }
+
+        const currentPrice = stockPrices[symbol] || 0;
+        let lotIdx = 0;
+        for (const lot of openLots) {
+          holdings[`${symbol}|lot_open_${lotIdx++}`] = {
+            id: `${symbol}|lot_open_${lotIdx - 1}`,
+            symbol,
+            description,
+            assetType: 'Equity',
+            quantity: lot.qty,
+            averageCost: lot.price,
+            totalCostBasis: lot.qty * lot.price,
+            marketValue: lot.qty * currentPrice,
+            currentPrice: currentPrice,
+            unrealizedGainLoss: (lot.qty * currentPrice) - (lot.qty * lot.price),
+            realizedGain: 0,
+            firstBoughtDate: lot.date,
+            lastSoldDate: null,
+            isClosed: false
+          };
+        }
+        for (const lot of closedLots) {
+          holdings[`${symbol}|lot_closed_${lotIdx++}`] = {
+            id: `${symbol}|lot_closed_${lotIdx - 1}`,
+            symbol,
+            description,
+            assetType: 'Equity',
+            quantity: 0,
+            averageCost: lot.buyPrice,
+            totalCostBasis: 0,
+            marketValue: 0,
+            currentPrice: lot.sellPrice,
+            unrealizedGainLoss: 0,
+            realizedGain: lot.realizedGain,
+            firstBoughtDate: lot.buyDate,
+            lastSoldDate: lot.sellDate,
+            isClosed: true
+          };
         }
 
       } else {
         // --- Option FIFO Simulation ---
+        const state = {
+          id: symbol,
+          symbol,
+          description,
+          assetType: 'Option',
+          quantity: 0,
+          averageCost: 0,
+          totalCostBasis: 0,
+          marketValue: 0,
+          unrealizedGainLoss: 0,
+          realizedGain: 0,
+          firstBoughtDate: null,
+          lastSoldDate: null
+        };
+
         for (const tx of symTx) {
           const qty = Math.abs(parseFloat(tx.quantity)) || 0;
           if (qty <= 0) continue;
@@ -429,13 +499,54 @@ export const PortfolioValuation = {
             state.averageCost = 0;
           }
         }
-      }
 
-      holdings[symbol] = state;
+        const price = stockPrices[symbol] || 0;
+        state.currentPrice = price;
+
+        if (Math.abs(state.quantity) >= 0.0001) {
+          state.marketValue = state.quantity * price * 100;
+          state.totalCostBasis = state.quantity * state.averageCost * 100;
+          
+          if (state.quantity < 0) {
+            state.isShortOption = true;
+            state.strike = opt.strike;
+            state.expiry = opt.expiry;
+            state.optionType = opt.type;
+            state.underlyingSymbol = opt.underlying;
+
+            const underlyingPrice = stockPrices[opt.underlying] || 0;
+            state.underlyingPrice = underlyingPrice;
+
+            if (opt.type === 'Call') {
+              if (underlyingPrice > opt.strike) {
+                state.cappedUpside = (underlyingPrice - opt.strike) * 100 * Math.abs(state.quantity);
+              } else {
+                state.cappedUpside = 0;
+              }
+            } else if (opt.type === 'Put') {
+              state.obligatedCollateral = opt.strike * 100 * Math.abs(state.quantity);
+
+              if (underlyingPrice > 0 && underlyingPrice < opt.strike) {
+                state.obligationRisk = (opt.strike - underlyingPrice) * 100 * Math.abs(state.quantity);
+              } else {
+                state.obligationRisk = 0;
+              }
+            }
+            state.unrealizedGainLoss = Math.abs(state.totalCostBasis) - Math.abs(state.marketValue);
+          } else {
+            state.unrealizedGainLoss = state.marketValue - state.totalCostBasis;
+          }
+        } else {
+          state.marketValue = 0;
+          state.unrealizedGainLoss = 0;
+        }
+
+        holdings[symbol] = state;
+      }
     }
 
     // 4. Calculate current values, option drag, and exposures
-    const allHoldings = [];
+    const allHoldings = Object.values(holdings);
     let portfolioMarketValue = 0;
     let portfolioCostBasis = 0;
     let optionDrag = 0;
@@ -448,81 +559,29 @@ export const PortfolioValuation = {
     const posCashVal = stockPrices['CASH'] || 0;
     cashBalance += posCashVal;
 
-    for (const [symbol, state] of Object.entries(holdings)) {
-      const opt = this.parseOptionSymbol(symbol);
-      const isOption = opt.isOption;
-      
-      const price = stockPrices[symbol] || 0;
-      state.currentPrice = price;
-
-      if (Math.abs(state.quantity) < 0.0001) {
-        state.marketValue = 0;
-        state.unrealizedGainLoss = 0;
-        allHoldings.push(state);
-        continue;
-      }
-
-      // Calculate Market Value & Cost Basis
-      if (isOption) {
-        state.marketValue = state.quantity * price * 100;
-        state.totalCostBasis = state.quantity * state.averageCost * 100;
-        
-        if (state.quantity < 0) {
-          optionDrag += Math.abs(state.marketValue);
-          state.unrealizedGainLoss = Math.abs(state.totalCostBasis) - Math.abs(state.marketValue);
-        } else {
-          state.unrealizedGainLoss = state.marketValue - state.totalCostBasis;
-        }
-      } else {
-        state.marketValue = state.quantity * price;
-        state.totalCostBasis = state.quantity * state.averageCost;
-        state.unrealizedGainLoss = state.marketValue - state.totalCostBasis;
-      }
-
-      // Add to running portfolio value (if not SGOV, which is treated as Cash Baseline)
-      if (symbol !== 'SGOV') {
+    for (const state of allHoldings) {
+      if (state.symbol !== 'SGOV') {
         portfolioMarketValue += state.marketValue;
         if (state.quantity > 0) {
           portfolioCostBasis += state.totalCostBasis;
         }
       }
 
-      // Option Specific Risk/Exposure Calculations
-      if (isOption && state.quantity < 0) {
-        state.isShortOption = true;
-        state.strike = opt.strike;
-        state.expiry = opt.expiry;
-        state.optionType = opt.type;
-        state.underlyingSymbol = opt.underlying;
-
-        const underlyingPrice = stockPrices[opt.underlying] || 0;
-        state.underlyingPrice = underlyingPrice;
-
-        if (opt.type === 'Call') {
-          if (underlyingPrice > opt.strike) {
-            state.cappedUpside = (underlyingPrice - opt.strike) * 100 * Math.abs(state.quantity);
-            totalCappedUpside += state.cappedUpside;
-          } else {
-            state.cappedUpside = 0;
-          }
-        } else if (opt.type === 'Put') {
-          state.obligatedCollateral = opt.strike * 100 * Math.abs(state.quantity);
-          totalObligatedCash += state.obligatedCollateral;
-
-          if (underlyingPrice > 0 && underlyingPrice < opt.strike) {
-            state.obligationRisk = (opt.strike - underlyingPrice) * 100 * Math.abs(state.quantity);
-            totalObligationRisk += state.obligationRisk;
-          } else {
-            state.obligationRisk = 0;
-          }
+      if (state.isShortOption && state.quantity < 0) {
+        optionDrag += Math.abs(state.marketValue);
+        if (state.optionType === 'Call') {
+          totalCappedUpside += state.cappedUpside || 0;
+        } else if (state.optionType === 'Put') {
+          totalObligatedCash += state.obligatedCollateral || 0;
+          totalObligationRisk += state.obligationRisk || 0;
         }
       }
-
-      allHoldings.push(state);
     }
 
-    const sgovHolding = allHoldings.find(h => h.symbol === 'SGOV');
-    const cashBaseline = cashBalance + (sgovHolding ? sgovHolding.marketValue : 0);
+    const sgovMarketValue = allHoldings
+      .filter(h => h.symbol === 'SGOV')
+      .reduce((sum, h) => sum + h.marketValue, 0);
+    const cashBaseline = cashBalance + sgovMarketValue;
     const netLiquidationValue = cashBaseline + portfolioMarketValue;
 
     return {

@@ -42,3 +42,16 @@ Acquiring high-quality historical options data is notoriously difficult and usua
 Because our simulator relies on generating *hypothetical* future market paths (Monte Carlo simulations) rather than purely replaying history, we do not need terabytes of historical options tick data. Instead:
 1. We pull standard historical Implied Volatility (IV) averages for our 25 stocks.
 2. During the Monte Carlo simulation, the simulator will act as the "Options Exchange." It will mathematically approximate option premiums dynamically using the **Black-Scholes model**. This prices the agent's puts and calls perfectly relative to the simulated stock price, time to expiration, and historical volatility.
+
+## Brokerage File Processing Principles
+
+When uploading exported files from brokerages (such as positions and transactions), the application aggregates them to build a comprehensive view of the portfolio's equity holdings and valuations. It is important to adhere to the following principles to avoid subtle calculation regressions:
+
+1. **Reconciliation Hierarchy:** 
+   The application uses transaction files to build the history (e.g. for calculating the Cost Basis, Realized Gains, and First Bought Dates) and positions files as the absolute truth for current holdings. If a transaction log suggests a different current quantity than the latest positions export, the engine will reconcile by scaling or adjusting the computed lots to match the absolute quantity reported in the positions export.
+   
+2. **Multiple Lots per Symbol (FIFO):**
+   The application processes transaction history to generate separate lots for tax and accounting purposes (e.g. tracking short-term vs long-term capital gains, option spreads). Consequently, a single ticker symbol (like `SGOV` or `AAPL`) can result in **multiple** position objects (lots) in the internal memory state, keyed uniquely (e.g., `SGOV|lot_open_0`, `SGOV|lot_open_1`).
+
+3. **Aggregation Over `find`:**
+   Because a symbol can be split into multiple lots, **never use `.find()` to look up the full position or market value for a given symbol**. Doing so will only extract the value of the very first lot, leading to massive discrepancies in portfolio valuation (especially for highly-traded assets or cash equivalents like SGOV). Always use `.filter()` and `.reduce()` to aggregate `marketValue`, `quantity`, or `totalCostBasis` across all lots matching the underlying symbol.

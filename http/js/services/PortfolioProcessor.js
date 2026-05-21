@@ -217,6 +217,7 @@ export const PortfolioProcessor = {
       }
 
       await DatabaseService.saveEquity({
+        id: state.id,
         symbol: state.symbol,
         companyId: companyId,
         assetType: state.assetType || 'Equity',
@@ -239,6 +240,7 @@ export const PortfolioProcessor = {
         realizedGain: state.realizedGain || 0,
         firstBoughtDate: state.firstBoughtDate || null,
         lastSoldDate: state.lastSoldDate || null,
+        isClosed: state.isClosed || false,
         updatedAt: new Date().toISOString()
       });
     }

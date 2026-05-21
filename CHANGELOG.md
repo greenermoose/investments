@@ -1,3 +1,7 @@
+### 0.6.10
+
+- fixed average cost bug
+
 ### 0.6.9
 
 - UI tweaks to Equities display

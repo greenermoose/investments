@@ -76,10 +76,12 @@ export const BrokerageParser = {
       const rawQty = row['Quantity'] || row['Qty'] || row['Qty (Quantity)'] || '0';
       const rawPrice = row['Price'] || '0';
       const rawMktVal = row['Mkt Val (Market Value)'] || row['Mkt Val'] || '0';
+      const rawCostShare = row['Cost/Share'] || row['Cost Basis'] || row['Cost'] || row['Avg Cost'] || row['Avg Price'] || '0';
       
       const symbol = row['Symbol'] || '';
       let quantity = parseFloat(rawQty.replace(/,/g, '')) || 0;
       let price = parseFloat(rawPrice.replace(/[^0-9.]/g, '')) || 0;
+      let costPerShare = parseFloat(rawCostShare.replace(/[^0-9.]/g, '')) || 0;
       
       if (symbol === 'Cash & Cash Investments' || symbol.toLowerCase() === 'cash' || symbol === 'CASH') {
         const mktVal = parseFloat(rawMktVal.replace(/[^0-9.-]/g, '')) || 0;
@@ -92,7 +94,8 @@ export const BrokerageParser = {
         description: row['Description'] || '',
         assetType: row['Asset Type'] || '',
         quantity: quantity,
-        price: price
+        price: price,
+        costPerShare: costPerShare
       };
     }).filter(p => p.symbol && p.symbol !== 'Positions Total');
 

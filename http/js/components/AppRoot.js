@@ -65,6 +65,13 @@ export default {
       // Simulate slight initialization delay for UI smoothness
       await new Promise(r => setTimeout(r, 400));
       this.userProfile = await DatabaseService.getUser();
+      if (this.userProfile) {
+        const files = await DatabaseService.getAllFiles();
+        if (files.length > 0) {
+          const { PortfolioProcessor } = await import('../services/PortfolioProcessor.js');
+          await PortfolioProcessor.processAllFiles(files);
+        }
+      }
     } catch (error) {
       console.error("Error loading user profile:", error);
     } finally {

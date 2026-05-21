@@ -1,3 +1,7 @@
+### 0.6.9
+
+- UI tweaks to Equities display
+
 ### 0.6.8
 
 - updated ROADMAP

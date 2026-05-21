@@ -1,3 +1,7 @@
+### 0.6.12
+
+- fixed display buy in unrealized G/L
+
 ### 0.6.11
 
 - fixed data table pagination bugs

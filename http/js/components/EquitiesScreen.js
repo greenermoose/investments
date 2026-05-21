@@ -257,9 +257,9 @@ export default {
       }).format(Math.abs(gain));
       
       if (gain > 0.001) {
-        return `+$${formattedGain} (+${formattedPct})`;
+        return `+${formattedGain} (+${formattedPct})`;
       } else if (gain < -0.001) {
-        return `-$${formattedGain} (-${formattedPct})`;
+        return `-${formattedGain} (-${formattedPct})`;
       } else {
         return `$0.00 (0.00%)`;
       }

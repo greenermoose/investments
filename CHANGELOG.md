@@ -1,3 +1,7 @@
+### 0.6.24
+
+- SEC data file rebuilt 
+
 ### 0.6.23
 
 - reloaded SEC data

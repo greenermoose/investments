@@ -9,75 +9,79 @@
   },
   "ADBE": {
     "shares_outstanding": 410500000,
-    "ttm_revenue": 23769000000
+    "ttm_revenue": 23973000000
   },
   "AMD": {
     "shares_outstanding": 1630410843,
-    "ttm_revenue": 0
+    "ttm_revenue": 34622000000
   },
   "AVGO": {
     "shares_outstanding": 4741273799,
-    "ttm_revenue": 0
+    "ttm_revenue": 65183000000
   },
   "BAM": {
-    "shares_outstanding": null,
-    "ttm_revenue": 4817000000
+    "shares_outstanding": 391700000,
+    "ttm_revenue": 4761000000
   },
   "BEAM": {
     "shares_outstanding": 101856245,
-    "ttm_revenue": 0
+    "ttm_revenue": 57372000
   },
   "BETA": {
-    "shares_outstanding": 37578571,
-    "ttm_revenue": 35616000
+    "shares_outstanding": 229644583,
+    "ttm_revenue": 34616000
   },
   "BRK-B": {
     "shares_outstanding": 941481,
-    "ttm_revenue": 371444000000
+    "ttm_revenue": 370887000000
   },
   "CRM": {
     "shares_outstanding": 937000000,
-    "ttm_revenue": 0
+    "ttm_revenue": 41525000000
   },
   "CRSP": {
     "shares_outstanding": 95985312,
-    "ttm_revenue": 0
+    "ttm_revenue": 4104000
+  },
+  "CSIQ": {
+    "shares_outstanding": 67810136,
+    "ttm_revenue": 5595107000
   },
   "DIS": {
     "shares_outstanding": 1771519851,
-    "ttm_revenue": 94425000000
+    "ttm_revenue": 97942000000
   },
   "EDIT": {
     "shares_outstanding": 97871999,
-    "ttm_revenue": 0
+    "ttm_revenue": 18610000
   },
   "ENPH": {
     "shares_outstanding": 131098819,
-    "ttm_revenue": 0
+    "ttm_revenue": 1412564000
   },
   "ENVX": {
     "shares_outstanding": 217224442,
-    "ttm_revenue": 31821000
+    "ttm_revenue": 28156000
   },
   "EOSE": {
     "shares_outstanding": 339434259,
-    "ttm_revenue": 114203000
+    "ttm_revenue": 113168000
   },
   "GNRC": {
     "shares_outstanding": 58675827,
-    "ttm_revenue": 0
+    "ttm_revenue": 4177008000
   },
   "GOOGL": {
     "shares_outstanding": 12116000000,
-    "ttm_revenue": 402836000000
+    "ttm_revenue": 398903000000
   },
   "GWH": {
     "shares_outstanding": 27173757,
-    "ttm_revenue": 1583000
+    "ttm_revenue": 3299000
   },
   "JNJ": {
     "shares_outstanding": 2409898936,
-    "ttm_revenue": 0
+    "ttm_revenue": 93691000000
   },
   "JPM": {
     "shares_outstanding": 2679511418,
@@ -85,74 +89,78 @@
   },
   "KO": {
     "shares_outstanding": 4300723069,
-    "ttm_revenue": 47941000000
+    "ttm_revenue": 48591000000
   },
   "MA": {
     "shares_outstanding": 122530193,
-    "ttm_revenue": 32791000000
+    "ttm_revenue": 32383000000
+  },
+  "META": {
+    "shares_outstanding": 2534000000,
+    "ttm_revenue": 197384000000
   },
   "MSFT": {
     "shares_outstanding": 7425629076,
-    "ttm_revenue": 0
+    "ttm_revenue": 281724000000
   },
   "NFLX": {
     "shares_outstanding": 4212794271,
-    "ttm_revenue": 45183036000
+    "ttm_revenue": 45382031000
   },
   "NRGV": {
     "shares_outstanding": 172975047,
-    "ttm_revenue": 203671000
+    "ttm_revenue": 72244000
   },
   "NTLA": {
     "shares_outstanding": 118133546,
-    "ttm_revenue": 67671000
+    "ttm_revenue": 59702000
   },
   "NVDA": {
     "shares_outstanding": 24300000000,
-    "ttm_revenue": 215938000000
+    "ttm_revenue": 229426000000
   },
   "SBUX": {
     "shares_outstanding": 1139300000,
-    "ttm_revenue": 37184400000
+    "ttm_revenue": 37530500000
   },
   "SEDG": {
     "shares_outstanding": 60366291,
-    "ttm_revenue": 1184444000
+    "ttm_revenue": 1159587000
   },
   "SLDP": {
     "shares_outstanding": 220578327,
-    "ttm_revenue": 21747000
+    "ttm_revenue": 21189000
   },
   "STOK": {
     "shares_outstanding": 59150790,
-    "ttm_revenue": 184420000
+    "ttm_revenue": 189247000
   },
   "TDOC": {
     "shares_outstanding": 178396434,
-    "ttm_revenue": 0
+    "ttm_revenue": 2501553000
   },
   "TMUS": {
     "shares_outstanding": 1101862739,
-    "ttm_revenue": 0
+    "ttm_revenue": 87082000000
   },
   "TSLA": {
     "shares_outstanding": 3752431984,
-    "ttm_revenue": 94827000000
+    "ttm_revenue": 92313000000
   },
   "UNH": {
     "shares_outstanding": 907675839,
-    "ttm_revenue": 447567000000
+    "ttm_revenue": 446073000000
   },
   "WMT": {
     "shares_outstanding": 7970166964,
     "ttm_revenue": 713163000000
   },
   "XYZ": {
-    "shares_outstanding": null,
-    "ttm_revenue": 24193683000
+    "shares_outstanding": 597586000,
+    "ttm_revenue": 23998052000
   },
   "ZM": {
-    "shares_outstanding": null,
+    "shares_outstanding": 300503787,
     "ttm_revenue": 4868769000
   }
 }

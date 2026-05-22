@@ -135,6 +135,21 @@ function main() {
             const data = JSON.parse(content);
             if (data.symbol && data.filings) {
                 const metrics = processCompany(data.symbol, data.filings);
+                
+                // Sanity check
+                if (metrics.shares_outstanding && metrics.shares_outstanding < 10000) {
+                    console.warn(`Warning: ${data.symbol} has suspiciously low shares outstanding: ${metrics.shares_outstanding}`);
+                }
+                if (metrics.ttm_revenue !== null && metrics.ttm_revenue < 100000) {
+                    console.warn(`Warning: ${data.symbol} has suspiciously low TTM revenue: ${metrics.ttm_revenue}`);
+                }
+                if (metrics.shares_outstanding && metrics.shares_outstanding > 1e12) {
+                    console.warn(`Warning: ${data.symbol} has suspiciously high shares outstanding: ${metrics.shares_outstanding}`);
+                }
+                if (metrics.ttm_revenue !== null && metrics.ttm_revenue > 1e13) {
+                    console.warn(`Warning: ${data.symbol} has suspiciously high TTM revenue: ${metrics.ttm_revenue}`);
+                }
+
                 if (metrics.shares_outstanding || metrics.ttm_revenue) {
                     result[data.symbol] = metrics;
                 }

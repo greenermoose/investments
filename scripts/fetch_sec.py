@@ -28,6 +28,7 @@ out_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
 os.makedirs(out_dir, exist_ok=True)
 
 def extract_metric(facts, taxonomy, possible_tags, period_type='Q'):
+    best_entries = []
     for tag in possible_tags:
         if taxonomy in facts and tag in facts[taxonomy]:
             units = facts[taxonomy][tag].get('units', {})
@@ -38,12 +39,16 @@ def extract_metric(facts, taxonomy, possible_tags, period_type='Q'):
             
             # Sort by end date descending
             entries.sort(key=lambda x: x['end'], reverse=True)
-            return entries
-    return []
+            if not best_entries or (entries and entries[0]['end'] > best_entries[0]['end']):
+                best_entries = entries
+    return best_entries
 
 for sym in symbols:
-    lookup_sym = 'BRK-B' if sym == 'BRK-B' else sym
-    lookup_sym = lookup_sym.replace('-', '') if '-' in lookup_sym else lookup_sym
+    lookup_sym = sym
+    if lookup_sym not in ticker_to_cik and '-' in lookup_sym:
+        alt_sym = lookup_sym.replace('-', '')
+        if alt_sym in ticker_to_cik:
+            lookup_sym = alt_sym
     
     if lookup_sym not in ticker_to_cik:
         print(f"CIK not found for {sym}")
@@ -63,10 +68,10 @@ for sym in symbols:
             # Shares
             shares = extract_metric(facts, 'dei', ['EntityCommonStockSharesOutstanding'])
             if not shares:
-                shares = extract_metric(facts, 'us-gaap', ['CommonStockSharesOutstanding'])
+                shares = extract_metric(facts, 'us-gaap', ['CommonStockSharesOutstanding', 'WeightedAverageNumberOfSharesOutstandingBasic', 'WeightedAverageNumberOfDilutedSharesOutstanding'])
                 
             # Revenue
-            revenue = extract_metric(facts, 'us-gaap', ['Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'RevenuesNetOfYearc'])
+            revenue = extract_metric(facts, 'us-gaap', ['Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'RevenueFromContractWithCustomerIncludingAssessedTax', 'RevenuesNetOfYearc'])
             
             # Assets
             assets = extract_metric(facts, 'us-gaap', ['Assets'])
@@ -80,25 +85,29 @@ for sym in symbols:
             # Grab latest 4 filings based on assets date
             valid_dates = []
             for a in assets:
-                if 'form' in a and a['form'] in ['10-Q', '10-K'] and a['end'] not in [d['end'] for d in valid_dates]:
-                    valid_dates.append({'end': a['end'], 'form': a['form'], 'fy': a.get('fy'), 'fp': a.get('fp')})
+                if 'form' in a and a['form'] in ['10-Q', '10-K', '20-F', '40-F'] and a['end'] not in [d['end'] for d in valid_dates]:
+                    valid_dates.append({'end': a['end'], 'form': a['form'], 'fy': a.get('fy'), 'fp': a.get('fp'), 'filed': a.get('filed', a['end'])})
                 if len(valid_dates) >= 4:
                     break
                     
             filings = []
             for d in valid_dates:
                 end_date = d['end']
+                filed_date = d.get('filed', end_date)
                 
                 s_val = next((x['val'] for x in shares if x['end'] <= end_date), 0) if shares else 0
-                r_val = next((x['val'] for x in revenue if x['end'] == end_date), 0) if revenue else 0
+                r_entry = next((x for x in revenue if x['end'] == end_date), None) if revenue else None
+                r_val = r_entry['val'] if r_entry else 0
+                period_start = r_entry.get('start', end_date) if r_entry else end_date
+
                 a_val = next((x['val'] for x in assets if x['end'] == end_date), 0) if assets else 0
                 l_val = next((x['val'] for x in liabilities if x['end'] == end_date), 0) if liabilities else 0
                 e_val = next((x['val'] for x in equity if x['end'] == end_date), 0) if equity else 0
                 
                 filings.append({
                     "type": d['form'],
-                    "filing_date": end_date, # Approximation
-                    "period_start": end_date, # Approximation
+                    "filing_date": filed_date,
+                    "period_start": period_start,
                     "period_end": end_date,
                     "filing_url": f"https://www.sec.gov/edgar/browse/?CIK={cik}",
                     "data": {

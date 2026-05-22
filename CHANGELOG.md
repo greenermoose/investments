@@ -1,3 +1,11 @@
+### 0.6.23
+
+- reloaded SEC data
+
+### 0.6.22
+
+- load SEC data into app
+
 ### 0.6.21
 
 - data for all companies

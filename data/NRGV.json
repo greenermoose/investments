@@ -4,8 +4,8 @@
   "filings": [
     {
       "type": "10-Q",
-      "filing_date": "2026-03-31",
-      "period_start": "2026-03-31",
+      "filing_date": "2026-05-19",
+      "period_start": "2026-01-01",
       "period_end": "2026-03-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828536",
       "data": {
@@ -14,14 +14,14 @@
         "balance_sheet": {
           "total_assets": 298037000,
           "total_liabilities": 244261000,
-          "total_shareholders_equity": 0
+          "total_shareholders_equity": 30458000
         }
       }
     },
     {
       "type": "10-K",
-      "filing_date": "2025-12-31",
-      "period_start": "2025-12-31",
+      "filing_date": "2026-03-18",
+      "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828536",
       "data": {
@@ -30,14 +30,14 @@
         "balance_sheet": {
           "total_assets": 312876000,
           "total_liabilities": 224260000,
-          "total_shareholders_equity": 0
+          "total_shareholders_equity": 67460000
         }
       }
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-09-30",
-      "period_start": "2025-09-30",
+      "filing_date": "2025-11-10",
+      "period_start": "2025-01-01",
       "period_end": "2025-09-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828536",
       "data": {
@@ -46,14 +46,14 @@
         "balance_sheet": {
           "total_assets": 281883000,
           "total_liabilities": 201334000,
-          "total_shareholders_equity": 0
+          "total_shareholders_equity": 80549000
         }
       }
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-06-30",
-      "period_start": "2025-06-30",
+      "filing_date": "2025-08-08",
+      "period_start": "2025-01-01",
       "period_end": "2025-06-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001828536",
       "data": {
@@ -62,7 +62,7 @@
         "balance_sheet": {
           "total_assets": 248828000,
           "total_liabilities": 158529000,
-          "total_shareholders_equity": 0
+          "total_shareholders_equity": 90299000
         }
       }
     }

@@ -4,8 +4,8 @@
   "filings": [
     {
       "type": "10-K",
-      "filing_date": "2026-01-31",
-      "period_start": "2026-01-31",
+      "filing_date": "2026-03-13",
+      "period_start": "2025-02-01",
       "period_end": "2026-01-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000104169",
       "data": {
@@ -20,8 +20,8 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-10-31",
-      "period_start": "2025-10-31",
+      "filing_date": "2025-12-03",
+      "period_start": "2025-02-01",
       "period_end": "2025-10-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000104169",
       "data": {
@@ -36,8 +36,8 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-07-31",
-      "period_start": "2025-07-31",
+      "filing_date": "2025-08-29",
+      "period_start": "2025-02-01",
       "period_end": "2025-07-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000104169",
       "data": {
@@ -52,8 +52,8 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-04-30",
-      "period_start": "2025-04-30",
+      "filing_date": "2025-06-06",
+      "period_start": "2025-02-01",
       "period_end": "2025-04-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000104169",
       "data": {

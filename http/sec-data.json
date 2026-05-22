@@ -1,0 +1,158 @@
+{
+  "AAPL": {
+    "shares_outstanding": 14687356000,
+    "ttm_revenue": 451462000000
+  },
+  "ABNB": {
+    "shares_outstanding": 593504923,
+    "ttm_revenue": 12649000000
+  },
+  "ADBE": {
+    "shares_outstanding": 410500000,
+    "ttm_revenue": 23769000000
+  },
+  "AMD": {
+    "shares_outstanding": 1630410843,
+    "ttm_revenue": 0
+  },
+  "AVGO": {
+    "shares_outstanding": 4741273799,
+    "ttm_revenue": 0
+  },
+  "BAM": {
+    "shares_outstanding": null,
+    "ttm_revenue": 4817000000
+  },
+  "BEAM": {
+    "shares_outstanding": 101856245,
+    "ttm_revenue": 0
+  },
+  "BETA": {
+    "shares_outstanding": 37578571,
+    "ttm_revenue": 35616000
+  },
+  "BRK-B": {
+    "shares_outstanding": 941481,
+    "ttm_revenue": 371444000000
+  },
+  "CRM": {
+    "shares_outstanding": 937000000,
+    "ttm_revenue": 0
+  },
+  "CRSP": {
+    "shares_outstanding": 95985312,
+    "ttm_revenue": 0
+  },
+  "DIS": {
+    "shares_outstanding": 1771519851,
+    "ttm_revenue": 94425000000
+  },
+  "EDIT": {
+    "shares_outstanding": 97871999,
+    "ttm_revenue": 0
+  },
+  "ENPH": {
+    "shares_outstanding": 131098819,
+    "ttm_revenue": 0
+  },
+  "ENVX": {
+    "shares_outstanding": 217224442,
+    "ttm_revenue": 31821000
+  },
+  "EOSE": {
+    "shares_outstanding": 339434259,
+    "ttm_revenue": 114203000
+  },
+  "GNRC": {
+    "shares_outstanding": 58675827,
+    "ttm_revenue": 0
+  },
+  "GOOGL": {
+    "shares_outstanding": 12116000000,
+    "ttm_revenue": 402836000000
+  },
+  "GWH": {
+    "shares_outstanding": 27173757,
+    "ttm_revenue": 1583000
+  },
+  "JNJ": {
+    "shares_outstanding": 2409898936,
+    "ttm_revenue": 0
+  },
+  "JPM": {
+    "shares_outstanding": 2679511418,
+    "ttm_revenue": 182447000000
+  },
+  "KO": {
+    "shares_outstanding": 4300723069,
+    "ttm_revenue": 47941000000
+  },
+  "MA": {
+    "shares_outstanding": 122530193,
+    "ttm_revenue": 32791000000
+  },
+  "MSFT": {
+    "shares_outstanding": 7425629076,
+    "ttm_revenue": 0
+  },
+  "NFLX": {
+    "shares_outstanding": 4212794271,
+    "ttm_revenue": 45183036000
+  },
+  "NRGV": {
+    "shares_outstanding": 172975047,
+    "ttm_revenue": 203671000
+  },
+  "NTLA": {
+    "shares_outstanding": 118133546,
+    "ttm_revenue": 67671000
+  },
+  "NVDA": {
+    "shares_outstanding": 24300000000,
+    "ttm_revenue": 215938000000
+  },
+  "SBUX": {
+    "shares_outstanding": 1139300000,
+    "ttm_revenue": 37184400000
+  },
+  "SEDG": {
+    "shares_outstanding": 60366291,
+    "ttm_revenue": 1184444000
+  },
+  "SLDP": {
+    "shares_outstanding": 220578327,
+    "ttm_revenue": 21747000
+  },
+  "STOK": {
+    "shares_outstanding": 59150790,
+    "ttm_revenue": 184420000
+  },
+  "TDOC": {
+    "shares_outstanding": 178396434,
+    "ttm_revenue": 0
+  },
+  "TMUS": {
+    "shares_outstanding": 1101862739,
+    "ttm_revenue": 0
+  },
+  "TSLA": {
+    "shares_outstanding": 3752431984,
+    "ttm_revenue": 94827000000
+  },
+  "UNH": {
+    "shares_outstanding": 907675839,
+    "ttm_revenue": 447567000000
+  },
+  "WMT": {
+    "shares_outstanding": 7970166964,
+    "ttm_revenue": 713163000000
+  },
+  "XYZ": {
+    "shares_outstanding": null,
+    "ttm_revenue": 24193683000
+  },
+  "ZM": {
+    "shares_outstanding": null,
+    "ttm_revenue": 4868769000
+  }
+}

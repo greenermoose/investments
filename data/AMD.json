@@ -4,13 +4,13 @@
   "filings": [
     {
       "type": "10-Q",
-      "filing_date": "2026-03-28",
-      "period_start": "2026-03-28",
+      "filing_date": "2026-05-06",
+      "period_start": "2025-12-28",
       "period_end": "2026-03-28",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
       "data": {
         "shares_outstanding": 1630410843,
-        "revenue": 0,
+        "revenue": 10253000000,
         "balance_sheet": {
           "total_assets": 79642000000,
           "total_liabilities": 0,
@@ -20,13 +20,13 @@
     },
     {
       "type": "10-K",
-      "filing_date": "2025-12-27",
-      "period_start": "2025-12-27",
+      "filing_date": "2026-02-04",
+      "period_start": "2024-12-29",
       "period_end": "2025-12-27",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
       "data": {
         "shares_outstanding": 1628041540,
-        "revenue": 0,
+        "revenue": 34639000000,
         "balance_sheet": {
           "total_assets": 76926000000,
           "total_liabilities": 0,
@@ -36,13 +36,13 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-09-27",
-      "period_start": "2025-09-27",
+      "filing_date": "2025-11-05",
+      "period_start": "2024-12-29",
       "period_end": "2025-09-27",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
       "data": {
         "shares_outstanding": 1622843689,
-        "revenue": 0,
+        "revenue": 24369000000,
         "balance_sheet": {
           "total_assets": 76891000000,
           "total_liabilities": 0,
@@ -52,13 +52,13 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-06-28",
-      "period_start": "2025-06-28",
+      "filing_date": "2025-08-06",
+      "period_start": "2024-12-29",
       "period_end": "2025-06-28",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000002488",
       "data": {
         "shares_outstanding": 1621404195,
-        "revenue": 0,
+        "revenue": 15123000000,
         "balance_sheet": {
           "total_assets": 74820000000,
           "total_liabilities": 0,

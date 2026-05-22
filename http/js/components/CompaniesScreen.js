@@ -1,4 +1,5 @@
 import { DatabaseService } from '../services/DatabaseService.js';
+import { SecDataLoader } from '../services/SecDataLoader.js';
 
 export default {
   name: 'CompaniesScreen',
@@ -61,6 +62,25 @@ export default {
                 <span class="font-weight-medium">{{ item.name }}</span>
               </template>
 
+              <template v-slot:item.latestPrice="{ item }">
+                <span v-if="item.latestPrice > 0" class="font-weight-medium">\${{ item.latestPrice.toFixed(2) }}</span>
+                <span v-else class="text-medium-emphasis">-</span>
+              </template>
+
+              <template v-slot:item.marketCap="{ item }">
+                <span v-if="item.marketCap > 0" class="font-weight-medium text-success">
+                  {{ formatLargeNumber(item.marketCap) }}
+                </span>
+                <span v-else class="text-medium-emphasis">-</span>
+              </template>
+
+              <template v-slot:item.psRatio="{ item }">
+                <span v-if="item.psRatio !== null" class="font-weight-medium text-info">
+                  {{ item.psRatio.toFixed(2) }}
+                </span>
+                <span v-else class="text-medium-emphasis">-</span>
+              </template>
+
               <template v-slot:bottom="{ pageCount }">
                 <div class="d-flex align-center justify-end pt-4 text-body-2 text-medium-emphasis border-top-thin">
                   <div class="d-flex align-center mr-6">
@@ -115,9 +135,13 @@ export default {
       activeOnly: true,
       companies: [],
       equities: [],
+      secDataMap: new Map(),
       headers: [
         { title: 'Symbol', align: 'start', key: 'symbol' },
         { title: 'Company Name', key: 'name' },
+        { title: 'Latest Price', align: 'end', key: 'latestPrice' },
+        { title: 'Market Cap', align: 'end', key: 'marketCap' },
+        { title: 'P/S Ratio', align: 'end', key: 'psRatio' }
       ],
       page: 1,
       itemsPerPage: 10
@@ -153,12 +177,28 @@ export default {
         const baseEquity = companyEquities.find(e => e.assetType === 'Equity') 
                            || companyEquities.reduce((prev, curr) => (prev.symbol.length < curr.symbol.length ? prev : curr), companyEquities[0]);
         const symbol = baseEquity ? baseEquity.symbol : '';
+        const latestPrice = baseEquity && baseEquity.currentPrice ? baseEquity.currentPrice : 0;
+
+        let marketCap = 0;
+        let psRatio = null;
+        if (symbol) {
+          const sec = this.secDataMap.get(symbol);
+          if (sec && sec.shares_outstanding && latestPrice > 0) {
+            marketCap = sec.shares_outstanding * latestPrice;
+          }
+          if (marketCap > 0 && sec && sec.ttm_revenue) {
+            psRatio = marketCap / sec.ttm_revenue;
+          }
+        }
 
         return {
           ...company,
           symbol,
           symbols,
-          isActive
+          isActive,
+          latestPrice,
+          marketCap,
+          psRatio
         };
       });
 
@@ -181,14 +221,27 @@ export default {
     await this.loadData();
   },
   methods: {
+    formatLargeNumber(num) {
+      if (num >= 1e12) return '$' + (num / 1e12).toFixed(2) + 'T';
+      if (num >= 1e9) return '$' + (num / 1e9).toFixed(2) + 'B';
+      if (num >= 1e6) return '$' + (num / 1e6).toFixed(2) + 'M';
+      return '$' + num.toLocaleString();
+    },
     async loadData() {
       try {
-        const [comps, eqs] = await Promise.all([
+        const [comps, eqs, secData] = await Promise.all([
           DatabaseService.getAllCompanies(),
-          DatabaseService.getAllEquities()
+          DatabaseService.getAllEquities(),
+          SecDataLoader.loadData()
         ]);
         this.companies = comps;
         this.equities = eqs;
+        
+        const map = new Map();
+        if (secData) {
+          secData.forEach(d => map.set(d.symbol, d));
+        }
+        this.secDataMap = map;
       } catch (error) {
         console.error("Error loading company data:", error);
       }

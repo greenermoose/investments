@@ -1,5 +1,70 @@
 {
   "symbol": "CSIQ",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001375877",
-  "filings": []
+  "filings": [
+    {
+      "type": "20-F",
+      "filing_date": "2026-04-10",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001375877",
+      "data": {
+        "shares_outstanding": 67810136,
+        "revenue": 5595107000,
+        "balance_sheet": {
+          "total_assets": 15171729000,
+          "total_liabilities": 10902101000,
+          "total_shareholders_equity": 2807971000
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2025-04-30",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001375877",
+      "data": {
+        "shares_outstanding": 66954634,
+        "revenue": 5993409000,
+        "balance_sheet": {
+          "total_assets": 13511550000,
+          "total_liabilities": 9361747000,
+          "total_shareholders_equity": 2815500000
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2024-04-26",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001375877",
+      "data": {
+        "shares_outstanding": 66158741,
+        "revenue": 7613626000,
+        "balance_sheet": {
+          "total_assets": 11895760000,
+          "total_liabilities": 8190516000,
+          "total_shareholders_equity": 2559243000
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2023-04-18",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001375877",
+      "data": {
+        "shares_outstanding": 64506055,
+        "revenue": 7468610000,
+        "balance_sheet": {
+          "total_assets": 9037128000,
+          "total_liabilities": 6730434000,
+          "total_shareholders_equity": 1941639000
+        }
+      }
+    }
+  ]
 }

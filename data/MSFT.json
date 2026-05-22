@@ -4,13 +4,13 @@
   "filings": [
     {
       "type": "10-Q",
-      "filing_date": "2026-03-31",
-      "period_start": "2026-03-31",
+      "filing_date": "2026-04-29",
+      "period_start": "2025-07-01",
       "period_end": "2026-03-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000789019",
       "data": {
         "shares_outstanding": 7425629076,
-        "revenue": 0,
+        "revenue": 241832000000,
         "balance_sheet": {
           "total_assets": 694228000000,
           "total_liabilities": 279861000000,
@@ -20,13 +20,13 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-12-31",
-      "period_start": "2025-12-31",
+      "filing_date": "2026-01-28",
+      "period_start": "2025-07-01",
       "period_end": "2025-12-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000789019",
       "data": {
         "shares_outstanding": 7432377655,
-        "revenue": 0,
+        "revenue": 158946000000,
         "balance_sheet": {
           "total_assets": 665302000000,
           "total_liabilities": 274427000000,
@@ -36,13 +36,13 @@
     },
     {
       "type": "10-Q",
-      "filing_date": "2025-09-30",
-      "period_start": "2025-09-30",
+      "filing_date": "2025-10-29",
+      "period_start": "2025-07-01",
       "period_end": "2025-09-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000789019",
       "data": {
         "shares_outstanding": 7433166379,
-        "revenue": 0,
+        "revenue": 77673000000,
         "balance_sheet": {
           "total_assets": 636351000000,
           "total_liabilities": 273275000000,
@@ -52,13 +52,13 @@
     },
     {
       "type": "10-K",
-      "filing_date": "2025-06-30",
-      "period_start": "2025-06-30",
+      "filing_date": "2025-07-30",
+      "period_start": "2024-07-01",
       "period_end": "2025-06-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0000789019",
       "data": {
         "shares_outstanding": 7432543865,
-        "revenue": 0,
+        "revenue": 281724000000,
         "balance_sheet": {
           "total_assets": 619003000000,
           "total_liabilities": 275524000000,

@@ -1,3 +1,7 @@
+### 0.6.25
+
+- fixed shares outstanding for BRK-B
+
 ### 0.6.24
 
 - SEC data file rebuilt 

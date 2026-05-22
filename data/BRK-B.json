@@ -9,7 +9,7 @@
       "period_end": "2026-03-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001067983",
       "data": {
-        "shares_outstanding": 941481,
+        "shares_outstanding": 1398814374,
         "revenue": 93675000000,
         "balance_sheet": {
           "total_assets": 1252271000000,
@@ -25,7 +25,7 @@
       "period_end": "2025-12-31",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001067983",
       "data": {
-        "shares_outstanding": 941481,
+        "shares_outstanding": 1390116959,
         "revenue": 371444000000,
         "balance_sheet": {
           "total_assets": 1222176000000,
@@ -41,7 +41,7 @@
       "period_end": "2025-09-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001067983",
       "data": {
-        "shares_outstanding": 941481,
+        "shares_outstanding": 1373343149,
         "revenue": 277212000000,
         "balance_sheet": {
           "total_assets": 1225963000000,
@@ -57,7 +57,7 @@
       "period_end": "2025-06-30",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001067983",
       "data": {
-        "shares_outstanding": 941481,
+        "shares_outstanding": 1379064832,
         "revenue": 182240000000,
         "balance_sheet": {
           "total_assets": 1163968000000,

@@ -86,7 +86,7 @@ for sym in symbols:
             valid_dates = []
             for a in assets:
                 if 'form' in a and a['form'] in ['10-Q', '10-K', '20-F', '40-F'] and a['end'] not in [d['end'] for d in valid_dates]:
-                    valid_dates.append({'end': a['end'], 'form': a['form'], 'fy': a.get('fy'), 'fp': a.get('fp'), 'filed': a.get('filed', a['end'])})
+                    valid_dates.append({'end': a['end'], 'form': a['form'], 'fy': a.get('fy'), 'fp': a.get('fp'), 'filed': a.get('filed', a['end']), 'accn': a.get('accn')})
                 if len(valid_dates) >= 4:
                     break
                     
@@ -96,11 +96,28 @@ for sym in symbols:
                 filed_date = d.get('filed', end_date)
                 
                 s_val = next((x['val'] for x in shares if x['end'] <= end_date), 0) if shares else 0
+                
+                # Fallback to fetching directly from the filing if shares are unexpectedly low or missing
+                if s_val < 10000000 and 'accn' in d:
+                    try:
+                        accn = d['accn']
+                        txt_url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn.replace('-', '')}/{accn}.txt"
+                        req2 = urllib.request.Request(txt_url, headers=headers)
+                        with urllib.request.urlopen(req2) as resp:
+                            txt = resp.read().decode('utf-8')
+                            import re
+                            matches = re.findall(r'<dei:EntityCommonStockSharesOutstanding[^>]*>(\d+)</dei:EntityCommonStockSharesOutstanding>', txt)
+                            if matches:
+                                s_val = sum(int(m) for m in matches)
+                    except Exception as e:
+                        pass
+
                 r_entry = next((x for x in revenue if x['end'] == end_date), None) if revenue else None
                 r_val = r_entry['val'] if r_entry else 0
                 period_start = r_entry.get('start', end_date) if r_entry else end_date
 
-                a_val = next((x['val'] for x in assets if x['end'] == end_date), 0) if assets else 0
+                a_val_node = next((x for x in assets if x['end'] == end_date), None) if assets else None
+                a_val = a_val_node['val'] if a_val_node else 0
                 l_val = next((x['val'] for x in liabilities if x['end'] == end_date), 0) if liabilities else 0
                 e_val = next((x['val'] for x in equity if x['end'] == end_date), 0) if equity else 0
                 

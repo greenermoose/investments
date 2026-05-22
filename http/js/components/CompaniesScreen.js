@@ -182,7 +182,7 @@ export default {
         let marketCap = 0;
         let psRatio = null;
         if (symbol) {
-          const sec = this.secDataMap.get(symbol);
+          const sec = this.secDataMap.get(symbol) || this.secDataMap.get(symbol.replace('/', '-'));
           if (sec && sec.shares_outstanding && latestPrice > 0) {
             marketCap = sec.shares_outstanding * latestPrice;
           }

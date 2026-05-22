@@ -1,3 +1,7 @@
+### 0.6.26
+
+- market cap in billions
+
 ### 0.6.25
 
 - fixed shares outstanding for BRK-B

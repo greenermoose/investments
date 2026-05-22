@@ -1,3 +1,7 @@
+### 0.6.27
+
+- new ROADMAP
+
 ### 0.6.26
 
 - market cap in billions

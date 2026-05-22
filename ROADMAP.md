@@ -64,51 +64,36 @@ Following the `v0.6.0` refactor, the application has transitioned to a lightweig
 
 ## Next Features & Development Phases
 
-The following phases outline the functionality to be moved from specifications and coded next.
+The following phases outline the functionality needed to build the ultimate decision support tool for achieving the overarching goal.
 
 ### Active & Near-Term Focus
 
-#### [MODIFY] [DashboardScreen.js](file:///c:/Users/fyhor/Documents/GitHub/investments/http/js/components/DashboardScreen.js)
-* **Remaining UI Panel Integrations**: Integrate the remaining mockup cards with active calculated components/actions:
-  * **Portfolio Allocation Visuals**: Link the Portfolio card to interactive asset allocation charts (e.g. cash vs. equities, stock allocation percentages).
-  * **Screaming Buys Alert**: Indicator linking to watchlisted opportunities.
-  * **Simulator**: Interface hook to launch Monte Carlo model runs.
+#### [NEW] Watchlist & SEC Data Ingestion Engine
+* **Watchlist Manager**: UI to add/remove tickers (owned or prospective) and set target entry prices.
+* **SEC EDGAR API Ingestion**: Script/service to fetch 10-K and 10-Q filings for watchlisted symbols to obtain exact historical revenue and fully diluted shares outstanding.
+* **Historical Price Normalization**: Acquire historical share prices, adjusted for splits and dividends, as a prerequisite for calculating historical metrics.
 
 #### [NEW] Lot Management Service (`LotManager.js`)
-* **FIFO, LIFO, and Specific Identification**: Implement tax-lot tracking models to determine exact cost-basis configurations and calculate weighted-average base values.
+* **Execution Scoring Mechanism**: Implement tracking to calculate the exact annualized ROI for every specific tax lot bought and sold. This serves as the primary feedback loop to spot patterns and evaluate real-world trading performance.
 
 ---
 
 ### Future Roadmap Phases
 
-### Phase 1: Portfolio View & History Rebuilder
-* **Visual Portfolio Allocation**: Interactive charts (pie/bar) displaying asset allocation, cash vs. equities, and account divisions.
-* **Time-Series Historical Tracker**:
-  * Support uploading multiple historical position snapshots.
-  * Side-by-side snapshot comparison (detecting additions, removals, and changes in position sizes).
-  * Historical portfolio net-worth curve.
+### Phase 1: Valuation Engine & Signal Generator
+* **Core Valuation Models**:
+  * **P/S Historical Reversion**: Match current P/S against 3/5/10-year historical ranges using fully diluted shares.
+  * **Reverse DCF**: Calculate the growth rate implied by current market prices.
+* **Sell Signal Generator**: Identify which **owned companies** are currently trading ABOVE their intrinsic values, flagging them as sell candidates.
+* **Buy Signal Generator**: Identify which **watchlisted companies** are trading significantly below their intrinsic values ("Screaming Buys").
 
-### Phase 2: Watchlist & 27-Bucket Opportunity Matrix
-* **Watchlist Manager**: UI to add/remove tickers, set target entry prices, and document investment theses.
-* **27-Bucket Allocation UI**:
-  * Track Bucket 1 (SGOV / cash baseline).
-  * Calculate and rank expected annualized ROI of Buckets 2–26 (combining underlying yield and option premiums).
-  * Highlight Bucket 27 (Screaming Buy) and suggest rotation paths.
+### Phase 2: The 27-Bucket Conviction Matrix
+* **Conviction UI**: Build the conceptual framework and display to quickly visualize the highest conviction trade ideas.
+* Track Bucket 1 (SGOV / cash baseline).
+* Calculate and rank expected annualized ROI of active buckets (combining yield and option premiums).
+* Highlight Bucket 27 (Screaming Buy) and suggest rotation paths.
 
-### Phase 3: SEC Ingestion & Valuation Engine
-* **SEC EDGAR API Ingestion**: Script/service to fetch 10-K and 10-Q filings for watchlisted symbols.
-* **Valuation Models**:
-  * **P/S Historical Reversion**: Match current P/S against 3/5/10-year historical ranges using fully diluted shares outstanding.
-  * **Reverse DCF**: Calculate growth rate implied by the current market price and compare it to historical growth rates.
-  * **EV/FCF & ROIC**: Auto-generate valuation metrics that are resistant to accounting adjustments.
-  * **Signal Generator**: Highlight stocks trading below historical P/S ranges or with FCF yields above targeted thresholds.
-
-### Phase 4: Strategy Simulator
-* **Monte Carlo Simulator Engine**: Run path simulations for selected equities.
+### Phase 3: Trading Strategy Modeling
+* **Monte Carlo Simulator Engine**: Run future path simulations for selected equities.
 * **Options Pricing Simulator**: Build a Black-Scholes model calculator that prices simulated option chains dynamically.
-* **Strategy Testers**: Backtest options strategies (Covered Calls, CSPs, Collars, Dividend Capture "Double Dip", and horizontal/diagonal rolls) to compare their returns against simple buy-and-hold under varying market regimes.
-
-### Phase 5: Automation & Convenience
-* **Automated Price Alerts**: Desktop or browser notifications when watchlisted equities enter the "buy zone".
-* **90-Day time-stop trigger**: Warning system highlighting assets that have been stagnant for 90 days and should be liquidated.
-* **Backup & Restore Manager**: UI to export the IndexedDB state as a local JSON file and restore it on other devices.
+* **Strategy Testers**: Backtest and model various options strategies (Covered Calls, CSPs, Collars, Rolling) to determine which trading strategies perform best under different market conditions.

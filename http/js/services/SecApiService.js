@@ -104,6 +104,13 @@ export const SecApiService = {
       addDataPoints(dei.EntityCommonStockSharesOutstanding, 'shares');
     }
 
+    // Fallbacks for shares if not in DEI or missing periods (e.g., Zoom Video Communications)
+    if (usGaap) {
+      addDataPoints(usGaap.CommonStockSharesOutstanding, 'shares');
+      addDataPoints(usGaap.WeightedAverageNumberOfSharesOutstandingBasic, 'shares');
+      addDataPoints(usGaap.WeightedAverageNumberOfDilutedSharesOutstanding, 'shares');
+    }
+
     // Convert map to sorted array (newest first)
     const dataArray = Array.from(periodsMap.values());
     dataArray.sort((a, b) => new Date(b.date) - new Date(a.date));

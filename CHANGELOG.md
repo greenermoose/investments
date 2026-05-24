@@ -1,3 +1,7 @@
+### 0.7.5
+
+- automatically look up SEC data
+
 ### 0.7.4
 
 - proxy server for SEC data lookup

@@ -1,6 +1,7 @@
 import { DatabaseService } from './DatabaseService.js';
 import { BrokerageParser } from './BrokerageParser.js';
 import { PortfolioValuation } from './PortfolioValuation.js';
+import { SecApiService } from './SecApiService.js';
 
 export const PortfolioProcessor = {
   /**
@@ -8,11 +9,13 @@ export const PortfolioProcessor = {
    * existing files to identify the account, and updates the database with 
    * ownership history and quantities.
    */
-  async processAllFiles(filesArray) {
+  async processAllFiles(filesArray, onProgress) {
+    if (onProgress) onProgress("Starting file processing...");
     // Clear old computed equities to prevent stale entries
     await DatabaseService.clearEquities();
 
     // 1. Separate positions and transactions
+    if (onProgress) onProgress("Parsing positions and transactions...");
     const positionFiles = [];
     const transactionFiles = [];
     
@@ -70,8 +73,47 @@ export const PortfolioProcessor = {
     const accounts = this._groupFilesByAccount(positionFiles, transactionFiles);
     
     // For each account, rebuild equity ownership
-    for (const account of accounts) {
-      await this._rebuildAccountEquities(account, cutoffDate);
+    for (let i = 0; i < accounts.length; i++) {
+      if (onProgress) onProgress(`Rebuilding equity ownership for account ${i + 1} of ${accounts.length}...`);
+      await this._rebuildAccountEquities(accounts[i], cutoffDate);
+    }
+
+    // Process background SEC data fetching for dirty companies
+    await this._fetchSecDataForDirtyCompanies(onProgress);
+  },
+
+  async _fetchSecDataForDirtyCompanies(onProgress) {
+    try {
+      const companies = await DatabaseService.getAllCompanies();
+      const dirtyCompanies = companies.filter(c => c.isSecDataClean === false);
+      
+      if (dirtyCompanies.length > 0 && onProgress) {
+         onProgress(`Found ${dirtyCompanies.length} companies needing SEC data...`);
+      }
+      
+      for (let i = 0; i < dirtyCompanies.length; i++) {
+        const comp = dirtyCompanies[i];
+        if (!comp.symbol) {
+            comp.isSecDataClean = true;
+            await DatabaseService.saveCompany(comp);
+            continue;
+        }
+        
+        if (onProgress) {
+           onProgress(`Fetching SEC data for ${comp.name} (${comp.symbol})... [${i + 1}/${dirtyCompanies.length}]`);
+        }
+        
+        try {
+          await SecApiService.getFundamentals(comp.symbol);
+        } catch (err) {
+          console.warn(`Could not fetch SEC data for ${comp.symbol} (${comp.name}):`, err);
+        } finally {
+          comp.isSecDataClean = true;
+          await DatabaseService.saveCompany(comp);
+        }
+      }
+    } catch (e) {
+      console.error("Error in background SEC data fetching:", e);
     }
   },
 
@@ -207,12 +249,27 @@ export const PortfolioProcessor = {
 
       if (!companyId && state.assetType === 'Equity' && description) {
          companyId = description;
-         await DatabaseService.saveCompany({ id: companyId, name: companyId });
       } else if (!companyId && state.assetType === 'Option') {
          const baseSymbol = state.symbol.split(' ')[0];
          const baseEquity = await DatabaseService.getEquity(baseSymbol);
          if (baseEquity && baseEquity.companyId) {
             companyId = baseEquity.companyId;
+         }
+      }
+
+      if (companyId) {
+         const existingComp = await DatabaseService.getCompany(companyId);
+         if (existingComp) {
+            existingComp.isSecDataClean = false;
+            if (state.assetType === 'Equity') existingComp.symbol = state.symbol;
+            await DatabaseService.saveCompany(existingComp);
+         } else {
+            await DatabaseService.saveCompany({ 
+              id: companyId, 
+              name: companyId, 
+              symbol: state.assetType === 'Equity' ? state.symbol : null,
+              isSecDataClean: false 
+            });
          }
       }
 

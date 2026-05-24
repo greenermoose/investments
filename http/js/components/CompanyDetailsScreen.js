@@ -1,5 +1,6 @@
-import { ref } from '../vue.esm-browser.js';
+import { ref, onMounted } from '../vue.esm-browser.js';
 import { SecApiService } from '../services/SecApiService.js';
+import { DatabaseService } from '../services/DatabaseService.js';
 
 export default {
   name: 'CompanyDetailsScreen',
@@ -16,24 +17,18 @@ export default {
             <v-card-text>
               <v-row align="center">
                 <v-col cols="12" md="6" lg="4">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="ticker"
-                    label="Enter Ticker Symbol (e.g., AAPL, SHOP)"
+                    :items="companies"
+                    item-title="name"
+                    item-value="symbol"
+                    label="Select a Company"
                     variant="outlined"
                     density="comfortable"
                     hide-details
-                    @keyup.enter="fetchData"
+                    @update:modelValue="fetchData"
                   >
-                    <template v-slot:append-inner>
-                      <v-btn
-                        color="primary"
-                        variant="text"
-                        icon="search"
-                        @click="fetchData"
-                        :loading="loading"
-                      ></v-btn>
-                    </template>
-                  </v-text-field>
+                  </v-autocomplete>
                 </v-col>
               </v-row>
 
@@ -83,10 +78,23 @@ export default {
   `,
   setup() {
     const ticker = ref('');
+    const companies = ref([]);
     const searched = ref('');
     const loading = ref(false);
     const error = ref(null);
     const fundamentals = ref([]);
+
+    onMounted(async () => {
+      try {
+        const allComps = await DatabaseService.getAllCompanies();
+        companies.value = allComps.filter(c => c.symbol).map(c => ({
+          name: `${c.name} (${c.symbol})`,
+          symbol: c.symbol
+        }));
+      } catch (err) {
+        console.error("Failed to load companies", err);
+      }
+    });
 
     const headers = [
       { title: 'Date', key: 'date', sortable: true },
@@ -135,6 +143,7 @@ export default {
 
     return {
       ticker,
+      companies,
       searched,
       loading,
       error,

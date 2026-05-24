@@ -31,6 +31,15 @@ export default {
         </div>
       </div>
 
+      <!-- Upload Processing Overlay -->
+      <v-overlay :model-value="isUploading" class="align-center justify-center" persistent>
+        <v-card class="pa-8 text-center" color="surface" min-width="300" rounded="xl" elevation="10">
+          <v-progress-circular indeterminate color="primary" size="64" width="6" class="mb-6"></v-progress-circular>
+          <div class="text-h6 font-weight-bold mb-2">Processing Data</div>
+          <div class="text-body-2 text-medium-emphasis">{{ processingStatus || 'Initializing...' }}</div>
+        </v-card>
+      </v-overlay>
+
       <!-- Tab Content Area -->
       <v-window v-model="activeTab" class="w-100 flex-grow-1" style="overflow-y: auto;">
         
@@ -267,6 +276,7 @@ export default {
       uploadedFiles: [],
       fileFilter: 'all',
       isUploading: false,
+      processingStatus: '',
       portfolioSummary: null,
       snackbar: {
         show: false,
@@ -402,7 +412,10 @@ export default {
         await this.loadFiles(); // Refresh list
         
         // Process all files to update portfolio
-        await PortfolioProcessor.processAllFiles(this.uploadedFiles);
+        await PortfolioProcessor.processAllFiles(this.uploadedFiles, (msg) => {
+           this.processingStatus = msg;
+        });
+        this.processingStatus = "Processing complete. Reloading summary...";
         await this.loadPortfolioSummary();
         
         if (addedCount > 0 && duplicateCount === 0) {

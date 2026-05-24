@@ -109,39 +109,66 @@ export default {
           </v-fade-transition>
           
           <v-row class="mb-4">
+            <!-- Conviction Matrix Launchpad -->
             <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
-                <v-icon size="36" color="info" class="mb-2">mdi-chart-line</v-icon>
-                <div class="text-subtitle-1 font-weight-bold">Portfolio</div>
-                <div class="text-caption text-medium-emphasis">Active Positions & Allocations</div>
+              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift bg-primary-darken-2" ripple @click="$emit('open-matrix')">
+                <v-icon size="48" color="white" class="mb-2">mdi-view-grid</v-icon>
+                <div class="text-h6 font-weight-bold text-white">27-Bucket Matrix</div>
+                <div class="text-caption text-white opacity-70">Launch Conviction & Strategy Grid</div>
               </v-card>
             </v-col>
             
-            <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
-                <v-icon size="36" color="warning" class="mb-2">mdi-lightbulb-on</v-icon>
-                <div class="text-subtitle-1 font-weight-bold">Screaming Buys</div>
-                <div class="text-caption text-medium-emphasis">27-Bucket Opportunity Matrix</div>
-              </v-card>
-            </v-col>
-            
-            <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift" ripple>
-                <v-icon size="36" color="success" class="mb-2">mdi-clock-fast</v-icon>
-                <div class="text-subtitle-1 font-weight-bold">Simulator</div>
-                <div class="text-caption text-medium-emphasis">Black-Scholes & Entropy Testing</div>
+            <!-- Actionable Alerts Panel -->
+            <v-col cols="12" md="8">
+              <v-card class="glass-panel pa-4 h-100 d-flex flex-column">
+                <div class="text-subtitle-1 font-weight-bold mb-3 d-flex align-center">
+                  <v-icon color="warning" class="mr-2">mdi-alert-circle-outline</v-icon>
+                  Actionable Alerts
+                </div>
+                <v-list bg-color="transparent" density="compact" class="py-0">
+                  <!-- Buy Signal -->
+                  <v-list-item class="px-0">
+                    <template v-slot:prepend>
+                      <v-icon color="success">mdi-arrow-up-circle</v-icon>
+                    </template>
+                    <v-list-item-title class="font-weight-medium">Bucket 27 Buy Signal: AAPL</v-list-item-title>
+                    <v-list-item-subtitle class="text-caption text-success">Target ROI +25% (P/S Reversion)</v-list-item-subtitle>
+                  </v-list-item>
+                  
+                  <!-- Time-Stop Warning -->
+                  <v-list-item class="px-0">
+                    <template v-slot:prepend>
+                      <v-icon color="warning">mdi-timer-sand</v-icon>
+                    </template>
+                    <v-list-item-title class="font-weight-medium">Time-Stop Warning: MSFT (Lot A)</v-list-item-title>
+                    <v-list-item-subtitle class="text-caption text-warning">85 days elapsed. Target not met (4.2% / 10%).</v-list-item-subtitle>
+                  </v-list-item>
+                  
+                  <!-- Sell Signal -->
+                  <v-list-item class="px-0">
+                    <template v-slot:prepend>
+                      <v-icon color="error">mdi-arrow-down-circle</v-icon>
+                    </template>
+                    <v-list-item-title class="font-weight-medium">Valuation Sell Signal: TSLA</v-list-item-title>
+                    <v-list-item-subtitle class="text-caption text-error">Trading 15% above Intrinsic Value.</v-list-item-subtitle>
+                  </v-list-item>
+                </v-list>
               </v-card>
             </v-col>
           </v-row>
 
           <v-divider class="my-8 border-opacity-25"></v-divider>
 
-          <!-- Data Ingestion Section -->
-          <v-row>
-            <v-col cols="12">
-              <v-card class="glass-panel pa-6">
-                <div class="d-flex align-center justify-space-between mb-4">
-                  <div class="text-h5 font-weight-bold">Data Ingestion</div>
+          <v-expansion-panels variant="accordion" class="mb-4">
+            <v-expansion-panel class="glass-panel">
+              <v-expansion-panel-title>
+                <div class="d-flex align-center">
+                  <v-icon class="mr-2">mdi-database-import</v-icon>
+                  <span class="font-weight-bold">Data Ingestion Settings</span>
+                </div>
+              </v-expansion-panel-title>
+              <v-expansion-panel-text>
+                <div class="d-flex align-center justify-space-between mb-4 mt-2">
                   <div class="d-flex align-center">
                     <v-btn-toggle v-model="fileFilter" mandatory variant="outlined" color="primary" class="mr-4" density="compact">
                       <v-btn value="all">All</v-btn>
@@ -173,8 +200,7 @@ export default {
                       <th class="text-left font-weight-bold">Filename</th>
                       <th class="text-left font-weight-bold">Size</th>
                       <th class="text-left font-weight-bold">Uploaded At</th>
-                      <th class="text-left font-weight-bold">Hash (SHA-256)</th>
-                      <th class="text-center font-weight-bold">Type</th>
+                      <th class="text-left font-weight-bold">Type</th>
                       <th class="text-center font-weight-bold">Status</th>
                     </tr>
                   </thead>
@@ -188,10 +214,7 @@ export default {
                       </td>
                       <td>{{ formatBytes(file.size) }}</td>
                       <td>{{ new Date(file.uploadedAt).toLocaleString() }}</td>
-                      <td class="text-caption text-mono text-medium-emphasis">
-                        {{ file.hash.substring(0, 8) }}...{{ file.hash.substring(file.hash.length - 8) }}
-                      </td>
-                      <td class="text-center">
+                      <td class="text-left">
                         <v-chip size="small" :color="file.exportType === 'positions' ? 'blue' : (file.exportType === 'transactions' ? 'purple' : 'grey')" variant="tonal">
                           {{ file.exportType || 'unknown' }}
                         </v-chip>
@@ -202,9 +225,9 @@ export default {
                     </tr>
                   </tbody>
                 </v-table>
-              </v-card>
-            </v-col>
-          </v-row>
+              </v-expansion-panel-text>
+            </v-expansion-panel>
+          </v-expansion-panels>
           
           <div class="mt-8 text-center">
             <v-btn variant="text" color="medium-emphasis" @click="resetData">

@@ -1,3 +1,11 @@
+### 0.7.1
+
+- second half of commit
+
+### 0.7.0
+
+- new dashboard with capital velocity and valuation engine
+
 ### 0.6.27
 
 - new ROADMAP

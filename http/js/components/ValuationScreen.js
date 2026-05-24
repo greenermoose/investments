@@ -2,7 +2,7 @@ import { DatabaseService } from '../services/DatabaseService.js';
 import { SecDataLoader } from '../services/SecDataLoader.js';
 
 export default {
-  name: 'CompaniesScreen',
+  name: 'ValuationScreen',
   template: `
     <v-container class="fill-height d-flex flex-column align-center py-6" style="overflow-y: auto;">
       <v-fade-transition appear>

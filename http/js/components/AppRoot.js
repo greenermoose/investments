@@ -1,27 +1,29 @@
 import { DatabaseService } from '../services/DatabaseService.js';
 import WelcomeScreen from './WelcomeScreen.js';
 import DashboardScreen from './DashboardScreen.js';
-import EquitiesScreen from './EquitiesScreen.js';
-import CompaniesScreen from './CompaniesScreen.js';
+import ConvictionMatrixScreen from './ConvictionMatrixScreen.js';
+import LotsVelocityScreen from './LotsVelocityScreen.js';
+import ValuationScreen from './ValuationScreen.js';
 
 export default {
   name: 'AppRoot',
   components: {
     WelcomeScreen,
     DashboardScreen,
-    EquitiesScreen,
-    CompaniesScreen
+    ConvictionMatrixScreen,
+    LotsVelocityScreen,
+    ValuationScreen
   },
   template: `
     <v-app>
-      <!-- Navigation App Bar (Only shown if user is logged in) -->
-      <v-app-bar v-if="userProfile" color="surface" elevation="1">
+      <!-- Navigation App Bar (Only shown if user is logged in and not in full-screen matrix mode) -->
+      <v-app-bar v-if="userProfile && !showMatrixView" color="surface" elevation="1">
         <v-app-bar-title>Investments</v-app-bar-title>
         <v-spacer></v-spacer>
         <v-tabs v-model="activeTab" color="primary">
           <v-tab value="dashboard">Dashboard</v-tab>
-          <v-tab value="equities">Equities</v-tab>
-          <v-tab value="companies">Companies</v-tab>
+          <v-tab value="lots">Capital Velocity</v-tab>
+          <v-tab value="valuation">Valuation Engine</v-tab>
         </v-tabs>
       </v-app-bar>
 
@@ -38,16 +40,26 @@ export default {
             @user-registered="handleUserRegistration"
           />
           <div v-else class="h-100">
-            <DashboardScreen 
-              v-if="activeTab === 'dashboard'"
-              :userName="userProfile.name" 
+            <!-- Full Page Matrix View -->
+            <ConvictionMatrixScreen
+              v-if="showMatrixView"
+              @close="showMatrixView = false"
             />
-            <EquitiesScreen 
-              v-else-if="activeTab === 'equities'"
-            />
-            <CompaniesScreen 
-              v-else-if="activeTab === 'companies'"
-            />
+            
+            <!-- Standard Tab Views -->
+            <div v-else class="h-100">
+              <DashboardScreen 
+                v-if="activeTab === 'dashboard'"
+                :userName="userProfile.name" 
+                @open-matrix="showMatrixView = true"
+              />
+              <LotsVelocityScreen 
+                v-else-if="activeTab === 'lots'"
+              />
+              <ValuationScreen 
+                v-else-if="activeTab === 'valuation'"
+              />
+            </div>
           </div>
         </transition>
       </v-main>
@@ -57,7 +69,8 @@ export default {
     return {
       loading: true,
       userProfile: null,
-      activeTab: 'dashboard'
+      activeTab: 'dashboard',
+      showMatrixView: false
     };
   },
   async mounted() {

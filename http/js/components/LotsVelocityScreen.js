@@ -1,7 +1,7 @@
 import { DatabaseService } from '../services/DatabaseService.js';
 
 export default {
-  name: 'EquitiesScreen',
+  name: 'LotsVelocityScreen',
   template: `
     <v-container fluid class="fill-height d-flex flex-column align-center py-6" style="overflow-y: auto;">
       <v-fade-transition appear>

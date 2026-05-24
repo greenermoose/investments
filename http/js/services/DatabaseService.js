@@ -4,6 +4,7 @@ const STORE_NAME = 'user_data';
 const FILES_STORE = 'uploaded_files';
 const EQUITIES_STORE = 'equities';
 const COMPANIES_STORE = 'companies';
+const COMPANY_FUNDAMENTALS_STORE = 'company_fundamentals';
 
 export const DatabaseService = {
   /**
@@ -48,6 +49,11 @@ export const DatabaseService = {
         // Create an object store for companies
         if (!db.objectStoreNames.contains(COMPANIES_STORE)) {
           db.createObjectStore(COMPANIES_STORE, { keyPath: 'id' });
+        }
+
+        // Create an object store for company fundamentals
+        if (!db.objectStoreNames.contains(COMPANY_FUNDAMENTALS_STORE)) {
+          db.createObjectStore(COMPANY_FUNDAMENTALS_STORE, { keyPath: 'symbol' });
         }
       };
     });
@@ -354,6 +360,47 @@ export const DatabaseService = {
     } catch (error) {
       console.error("Failed to save portfolio summary:", error);
       throw error;
+    }
+  },
+
+  // --- Company Fundamentals (SEC Data) ---
+
+  async saveCompanyFundamentals(symbol, data) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([COMPANY_FUNDAMENTALS_STORE], 'readwrite');
+        const store = transaction.objectStore(COMPANY_FUNDAMENTALS_STORE);
+        const record = {
+          symbol: symbol,
+          data: data,
+          lastUpdated: new Date().toISOString()
+        };
+        const request = store.put(record);
+
+        request.onsuccess = () => resolve();
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to save company fundamentals:", error);
+      throw error;
+    }
+  },
+
+  async getCompanyFundamentals(symbol) {
+    try {
+      const db = await this.initDB();
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([COMPANY_FUNDAMENTALS_STORE], 'readonly');
+        const store = transaction.objectStore(COMPANY_FUNDAMENTALS_STORE);
+        const request = store.get(symbol);
+
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = (e) => reject(e.target.error);
+      });
+    } catch (error) {
+      console.error("Failed to get company fundamentals:", error);
+      return null;
     }
   }
 };

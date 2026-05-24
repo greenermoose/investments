@@ -1,3 +1,7 @@
+### 0.7.4
+
+- proxy server for SEC data lookup
+
 ### 0.7.3
 
 - show days held and annualized ROI in capital velocity table

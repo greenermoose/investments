@@ -4,6 +4,7 @@ import DashboardScreen from './DashboardScreen.js';
 import ConvictionMatrixScreen from './ConvictionMatrixScreen.js';
 import LotsVelocityScreen from './LotsVelocityScreen.js';
 import ValuationScreen from './ValuationScreen.js';
+import CompanyDetailsScreen from './CompanyDetailsScreen.js';
 
 export default {
   name: 'AppRoot',
@@ -12,7 +13,8 @@ export default {
     DashboardScreen,
     ConvictionMatrixScreen,
     LotsVelocityScreen,
-    ValuationScreen
+    ValuationScreen,
+    CompanyDetailsScreen
   },
   template: `
     <v-app>
@@ -24,6 +26,7 @@ export default {
           <v-tab value="dashboard">Dashboard</v-tab>
           <v-tab value="lots">Capital Velocity</v-tab>
           <v-tab value="valuation">Valuation Engine</v-tab>
+          <v-tab value="company">Company Details</v-tab>
         </v-tabs>
       </v-app-bar>
 
@@ -58,6 +61,9 @@ export default {
               />
               <ValuationScreen 
                 v-else-if="activeTab === 'valuation'"
+              />
+              <CompanyDetailsScreen 
+                v-else-if="activeTab === 'company'"
               />
             </div>
           </div>

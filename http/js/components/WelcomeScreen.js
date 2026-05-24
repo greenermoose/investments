@@ -3,7 +3,7 @@ export default {
   template: `
     <v-container class="fill-height d-flex align-center justify-center">
       <v-card class="glass-panel pa-10 text-center" max-width="600" width="100%" elevation="0">
-        <v-icon size="80" color="primary" class="mb-6">mdi-rocket-launch</v-icon>
+        <v-icon size="80" color="primary" class="mb-6">rocket_launch</v-icon>
         
         <h1 class="text-h3 font-weight-bold mb-4 gradient-text">
           Welcome to Apex
@@ -36,7 +36,7 @@ export default {
             elevation="4"
           >
             Initialize Workspace
-            <v-icon right class="ml-2">mdi-arrow-right</v-icon>
+            <v-icon right class="ml-2">arrow_right</v-icon>
           </v-btn>
         </v-form>
       </v-card>

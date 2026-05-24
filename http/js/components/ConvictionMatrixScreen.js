@@ -5,7 +5,7 @@ export default {
       <v-row class="mb-4">
         <v-col cols="12" class="d-flex justify-space-between align-center">
           <h2 class="text-h4 font-weight-bold">27-Bucket Conviction Matrix</h2>
-          <v-btn icon="mdi-close" variant="text" @click="$emit('close')"></v-btn>
+          <v-btn icon="close" variant="text" @click="$emit('close')"></v-btn>
         </v-col>
       </v-row>
       

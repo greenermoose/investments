@@ -14,7 +14,7 @@ export default {
               </h2>
               <v-text-field
                 v-model="search"
-                append-inner-icon="mdi-magnify"
+                append-inner-icon="search"
                 label="Search"
                 single-line
                 hide-details
@@ -98,7 +98,7 @@ export default {
                   
                   <div class="d-flex align-center">
                     <v-btn
-                      icon="mdi-chevron-left"
+                      icon="chevron_left"
                       variant="text"
                       density="comfortable"
                       :disabled="page === 1 || companyData.length === 0"
@@ -112,7 +112,7 @@ export default {
                     </span>
                     
                     <v-btn
-                      icon="mdi-chevron-right"
+                      icon="chevron_right"
                       variant="text"
                       density="comfortable"
                       :disabled="page >= pageCount || companyData.length === 0"

@@ -2,41 +2,16 @@ import { createApp, h } from './vue.esm-browser.js';
 import { createVuetify, components } from './vuetify.esm.js';
 import AppRoot from './components/AppRoot.js';
 
-// Icon mapping from MDI names to Google Material Icons
-const iconMap = {
-  'wallet-outline': 'account_balance_wallet',
-  'shield-alert-outline': 'security',
-  'clock-fast': 'schedule',
-  'file-upload-outline': 'file_upload',
-  'file-document-outline': 'description',
-  'magnify': 'search',
-  'menu-down': 'arrow_drop_down',
-  'chart-line': 'show_chart',
-  'lightbulb-on': 'lightbulb',
-  'rocket-launch': 'rocket_launch',
-  'arrow-right': 'arrow_right',
-  'chevron-left': 'chevron_left',
-  'chevron-right': 'chevron_right'
-};
-
 // Setup Vuetify with Dark Theme by Default
 const vuetify = createVuetify({
   icons: {
-    defaultSet: 'custom-md',
+    defaultSet: 'md',
     sets: {
-      'custom-md': {
-        component: (props) => {
-          let iconName = props.icon;
-          if (typeof iconName === 'string') {
-            const cleanName = iconName.startsWith('mdi-') ? iconName.substring(4) : iconName;
-            iconName = iconMap[cleanName] || cleanName.replace(/-/g, '_');
-          }
-          return h(components.VLigatureIcon, {
-            ...props,
-            icon: iconName,
-            class: 'material-icons'
-          });
-        }
+      'md': {
+        component: (props) => h(components.VLigatureIcon, {
+          ...props,
+          class: 'material-icons'
+        })
       }
     }
   },

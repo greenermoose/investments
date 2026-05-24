@@ -11,231 +11,245 @@ export default {
     }
   },
   template: `
-    <v-container class="fill-height d-flex flex-column align-center py-10" style="overflow-y: auto;">
+    <v-container class="fill-height d-flex flex-column pt-4 pb-2" style="max-height: 100vh; overflow: hidden; max-width: 1200px;">
       
-      <v-fade-transition appear>
-        <div class="w-100" style="max-width: 1000px;">
-          <div class="text-center mb-8">
-            <h1 class="text-h3 font-weight-bold mb-2">
-              Welcome back, <span class="gradient-text">{{ userName }}</span>.
-            </h1>
-            <p class="text-subtitle-1 text-medium-emphasis">
-              Market simulator and allocation engine are standing by.
-              <span v-if="cutoffDate" class="text-caption text-medium-emphasis d-block mt-1">Data as of {{ cutoffDate }}</span>
-            </p>
-          </div>
+      <!-- Dashboard Navigation Tabs -->
+      <v-tabs v-model="activeTab" color="primary" class="mb-4 w-100 flex-grow-0">
+        <v-tab value="overview" prepend-icon="dashboard">Overview</v-tab>
+        <v-tab value="data" prepend-icon="backup">Data Management</v-tab>
+        <v-tab value="settings" prepend-icon="settings">Settings</v-tab>
+      </v-tabs>
 
-          <!-- Dynamic Portfolio Metrics Panel -->
-          <v-fade-transition>
-            <v-row v-if="portfolioSummary" class="mb-6">
-              <!-- Net Liquidation Value -->
-              <v-col cols="12" md="6">
-                <v-card class="glass-panel pa-6 h-100 hover-lift d-flex flex-column justify-space-between relative">
-                  <div>
-                    <div class="d-flex align-center justify-space-between mb-4">
-                      <span class="text-subtitle-2 text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Net Liquidation Value</span>
-                      <v-icon color="primary" size="24">mdi-wallet-outline</v-icon>
-                    </div>
-                    <div class="text-h3 font-weight-bold tracking-tight mb-2">
-                      {{ formatCurrency(portfolioSummary.netLiquidationValue) }}
-                    </div>
-                    <div class="d-flex align-center">
-                      <v-chip
-                        :color="getGainColor(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis)"
-                        size="small"
-                        variant="flat"
-                        class="font-weight-bold mr-2"
-                      >
-                        {{ formatGainLoss(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis, portfolioSummary.portfolioCostBasis) }}
-                      </v-chip>
-                      <span class="text-caption text-medium-emphasis">since inception</span>
-                    </div>
-                  </div>
-                  
-                  <v-divider class="my-4 border-opacity-25"></v-divider>
-                  
-                  <div class="d-flex justify-space-between text-body-2">
-                    <div>
-                      <span class="text-medium-emphasis">Stock Value:</span>
-                      <strong class="ml-1 text-primary">{{ formatCurrency(portfolioSummary.portfolioMarketValue) }}</strong>
-                    </div>
-                    <div>
-                      <span class="text-medium-emphasis">Cash Baseline:</span>
-                      <strong class="ml-1 text-success">{{ formatCurrency(portfolioSummary.cashBalance) }}</strong>
-                    </div>
-                  </div>
-                </v-card>
-              </v-col>
+      <!-- Welcome Message (Compact) -->
+      <div class="d-flex justify-space-between align-center w-100 mb-2 flex-grow-0">
+        <h2 class="text-h5 font-weight-bold">
+          Welcome back, <span class="gradient-text">{{ userName }}</span>.
+        </h2>
+        <div class="text-right">
+          <span class="text-caption text-medium-emphasis">Market simulator & allocation engine ready.</span>
+          <span v-if="cutoffDate" class="text-caption text-medium-emphasis d-block">Data as of {{ cutoffDate }}</span>
+        </div>
+      </div>
 
-              <!-- Option Liabilities & Risk Drag -->
-              <v-col cols="12" md="6">
-                <v-card class="glass-panel pa-6 h-100 hover-lift d-flex flex-column justify-space-between">
-                  <div>
-                    <div class="d-flex align-center justify-space-between mb-4">
-                      <span class="text-subtitle-2 text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Options Liability & Drag</span>
-                      <v-icon color="warning" size="24">mdi-shield-alert-outline</v-icon>
+      <!-- Tab Content Area -->
+      <v-window v-model="activeTab" class="w-100 flex-grow-1" style="overflow-y: auto;">
+        
+        <!-- OVERVIEW TAB -->
+        <v-window-item value="overview">
+          <v-fade-transition appear>
+            <div>
+              <!-- Portfolio Metrics Grid -->
+              <v-row v-if="portfolioSummary" class="mb-2">
+                <!-- Net Liquidation Value -->
+                <v-col cols="12" md="6">
+                  <v-card class="glass-panel pa-4 h-100 hover-lift d-flex flex-column justify-space-between relative">
+                    <div>
+                      <div class="d-flex align-center justify-space-between mb-2">
+                        <span class="text-caption text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Net Liquidation Value</span>
+                        <v-icon color="primary" size="20">account_balance_wallet</v-icon>
+                      </div>
+                      <div class="text-h4 font-weight-bold tracking-tight mb-2">
+                        {{ formatCurrency(portfolioSummary.netLiquidationValue) }}
+                      </div>
+                      <div class="d-flex align-center">
+                        <v-chip
+                          :color="getGainColor(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis)"
+                          size="x-small"
+                          variant="flat"
+                          class="font-weight-bold mr-2"
+                        >
+                          {{ formatGainLoss(portfolioSummary.netLiquidationValue - portfolioSummary.portfolioCostBasis, portfolioSummary.portfolioCostBasis) }}
+                        </v-chip>
+                        <span class="text-caption text-medium-emphasis">since inception</span>
+                      </div>
                     </div>
                     
-                    <div class="text-h4 font-weight-bold text-error mb-2">
-                      -{{ formatCurrency(portfolioSummary.optionDrag) }}
+                    <v-divider class="my-2 border-opacity-25"></v-divider>
+                    
+                    <div class="d-flex justify-space-between text-caption">
+                      <div>
+                        <span class="text-medium-emphasis">Stock Value:</span>
+                        <strong class="ml-1 text-primary">{{ formatCurrency(portfolioSummary.portfolioMarketValue) }}</strong>
+                      </div>
+                      <div>
+                        <span class="text-medium-emphasis">Cash Baseline:</span>
+                        <strong class="ml-1 text-success">{{ formatCurrency(portfolioSummary.cashBalance) }}</strong>
+                      </div>
                     </div>
-                    <p class="text-caption text-medium-emphasis">
-                      Total option premium liabilities currently reducing your Net Liquidation Value.
-                    </p>
-                  </div>
-                  
-                  <v-divider class="my-4 border-opacity-25"></v-divider>
-                  
-                  <v-row class="text-body-2 no-gutters">
-                    <v-col cols="6" class="pr-2 border-right border-opacity-25">
-                      <div class="text-caption text-medium-emphasis">Capped Upside (Calls)</div>
-                      <div class="font-weight-bold text-warning mt-1">
-                        {{ formatCurrency(portfolioSummary.totalCappedUpside) }}
-                      </div>
-                    </v-col>
-                    <v-col cols="6" class="pl-3">
-                      <div class="text-caption text-medium-emphasis">Obligated Cash (Puts)</div>
-                      <div class="font-weight-bold text-info mt-1">
-                        {{ formatCurrency(portfolioSummary.totalObligatedCash) }}
-                      </div>
-                      <div v-if="portfolioSummary.totalObligationRisk > 0" class="text-caption text-error font-weight-medium mt-1">
-                        Risk: {{ formatCurrency(portfolioSummary.totalObligationRisk) }} ITM
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-fade-transition>
-          
-          <v-row class="mb-4">
-            <!-- Conviction Matrix Launchpad -->
-            <v-col cols="12" md="4">
-              <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift bg-primary-darken-2" ripple @click="$emit('open-matrix')">
-                <v-icon size="48" color="white" class="mb-2">mdi-view-grid</v-icon>
-                <div class="text-h6 font-weight-bold text-white">27-Bucket Matrix</div>
-                <div class="text-caption text-white opacity-70">Launch Conviction & Strategy Grid</div>
-              </v-card>
-            </v-col>
-            
-            <!-- Actionable Alerts Panel -->
-            <v-col cols="12" md="8">
-              <v-card class="glass-panel pa-4 h-100 d-flex flex-column">
-                <div class="text-subtitle-1 font-weight-bold mb-3 d-flex align-center">
-                  <v-icon color="warning" class="mr-2">mdi-alert-circle-outline</v-icon>
-                  Actionable Alerts
-                </div>
-                <v-list bg-color="transparent" density="compact" class="py-0">
-                  <!-- Buy Signal -->
-                  <v-list-item class="px-0">
-                    <template v-slot:prepend>
-                      <v-icon color="success">mdi-arrow-up-circle</v-icon>
-                    </template>
-                    <v-list-item-title class="font-weight-medium">Bucket 27 Buy Signal: AAPL</v-list-item-title>
-                    <v-list-item-subtitle class="text-caption text-success">Target ROI +25% (P/S Reversion)</v-list-item-subtitle>
-                  </v-list-item>
-                  
-                  <!-- Time-Stop Warning -->
-                  <v-list-item class="px-0">
-                    <template v-slot:prepend>
-                      <v-icon color="warning">mdi-timer-sand</v-icon>
-                    </template>
-                    <v-list-item-title class="font-weight-medium">Time-Stop Warning: MSFT (Lot A)</v-list-item-title>
-                    <v-list-item-subtitle class="text-caption text-warning">85 days elapsed. Target not met (4.2% / 10%).</v-list-item-subtitle>
-                  </v-list-item>
-                  
-                  <!-- Sell Signal -->
-                  <v-list-item class="px-0">
-                    <template v-slot:prepend>
-                      <v-icon color="error">mdi-arrow-down-circle</v-icon>
-                    </template>
-                    <v-list-item-title class="font-weight-medium">Valuation Sell Signal: TSLA</v-list-item-title>
-                    <v-list-item-subtitle class="text-caption text-error">Trading 15% above Intrinsic Value.</v-list-item-subtitle>
-                  </v-list-item>
-                </v-list>
-              </v-card>
-            </v-col>
-          </v-row>
+                  </v-card>
+                </v-col>
 
-          <v-divider class="my-8 border-opacity-25"></v-divider>
-
-          <v-expansion-panels variant="accordion" class="mb-4">
-            <v-expansion-panel class="glass-panel">
-              <v-expansion-panel-title>
-                <div class="d-flex align-center">
-                  <v-icon class="mr-2">mdi-database-import</v-icon>
-                  <span class="font-weight-bold">Data Ingestion Settings</span>
-                </div>
-              </v-expansion-panel-title>
-              <v-expansion-panel-text>
-                <div class="d-flex align-center justify-space-between mb-4 mt-2">
-                  <div class="d-flex align-center">
-                    <v-btn-toggle v-model="fileFilter" mandatory variant="outlined" color="primary" class="mr-4" density="compact">
-                      <v-btn value="all">All</v-btn>
-                      <v-btn value="positions">Positions</v-btn>
-                      <v-btn value="transactions">Transactions</v-btn>
-                    </v-btn-toggle>
-                    <v-btn color="primary" prepend-icon="mdi-upload" :loading="isUploading" @click="$refs.fileInput.click()">
-                      Upload Broker Export
-                    </v-btn>
-                  </div>
-                  <input 
-                    type="file" 
-                    ref="fileInput" 
-                    class="d-none" 
-                    accept=".csv,.txt,.xlsx,.json,.xml" 
-                    multiple
-                    @change="handleFilesSelected"
-                  />
-                </div>
-                
-                <div v-if="filteredFiles.length === 0" class="text-center pa-6 text-medium-emphasis">
-                  <v-icon size="48" class="mb-2 opacity-50">mdi-file-upload-outline</v-icon>
-                  <div>No data files found for the selected filter.</div>
-                </div>
-                
-                <v-table v-else class="bg-transparent mt-4">
-                  <thead>
-                    <tr>
-                      <th class="text-left font-weight-bold">Filename</th>
-                      <th class="text-left font-weight-bold">Size</th>
-                      <th class="text-left font-weight-bold">Uploaded At</th>
-                      <th class="text-left font-weight-bold">Type</th>
-                      <th class="text-center font-weight-bold">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="file in filteredFiles" :key="file.hash" class="hover-row">
-                      <td class="py-3">
-                        <div class="d-flex align-center">
-                          <v-icon color="primary" class="mr-3" size="small">mdi-file-document-outline</v-icon>
-                          {{ file.name }}
+                <!-- Option Liabilities & Risk Drag -->
+                <v-col cols="12" md="6">
+                  <v-card class="glass-panel pa-4 h-100 hover-lift d-flex flex-column justify-space-between">
+                    <div>
+                      <div class="d-flex align-center justify-space-between mb-2">
+                        <span class="text-caption text-uppercase tracking-wider text-medium-emphasis font-weight-bold">Options Liability & Drag</span>
+                        <v-icon color="warning" size="20">security</v-icon>
+                      </div>
+                      
+                      <div class="text-h4 font-weight-bold text-error mb-2">
+                        -{{ formatCurrency(portfolioSummary.optionDrag) }}
+                      </div>
+                      <p class="text-caption text-medium-emphasis" style="line-height: 1.2;">
+                        Total option premium liabilities currently reducing your Net Liquidation Value.
+                      </p>
+                    </div>
+                    
+                    <v-divider class="my-2 border-opacity-25"></v-divider>
+                    
+                    <v-row class="text-caption no-gutters">
+                      <v-col cols="6" class="pr-2 border-right border-opacity-25">
+                        <div class="text-medium-emphasis">Capped Upside (Calls)</div>
+                        <div class="font-weight-bold text-warning mt-1">
+                          {{ formatCurrency(portfolioSummary.totalCappedUpside) }}
                         </div>
-                      </td>
-                      <td>{{ formatBytes(file.size) }}</td>
-                      <td>{{ new Date(file.uploadedAt).toLocaleString() }}</td>
-                      <td class="text-left">
-                        <v-chip size="small" :color="file.exportType === 'positions' ? 'blue' : (file.exportType === 'transactions' ? 'purple' : 'grey')" variant="tonal">
-                          {{ file.exportType || 'unknown' }}
-                        </v-chip>
-                      </td>
-                      <td class="text-center">
-                        <v-chip size="small" color="success" variant="flat">Indexed</v-chip>
-                      </td>
-                    </tr>
-                  </tbody>
-                </v-table>
-              </v-expansion-panel-text>
-            </v-expansion-panel>
-          </v-expansion-panels>
-          
-          <div class="mt-8 text-center">
-            <v-btn variant="text" color="medium-emphasis" @click="resetData">
-              <v-icon left class="mr-2">mdi-refresh</v-icon> Reset Workspace (Dev)
+                      </v-col>
+                      <v-col cols="6" class="pl-2">
+                        <div class="text-medium-emphasis">Obligated Cash (Puts)</div>
+                        <div class="font-weight-bold text-info mt-1">
+                          {{ formatCurrency(portfolioSummary.totalObligatedCash) }}
+                        </div>
+                        <div v-if="portfolioSummary.totalObligationRisk > 0" class="text-error font-weight-medium mt-1">
+                          Risk: {{ formatCurrency(portfolioSummary.totalObligationRisk) }} ITM
+                        </div>
+                      </v-col>
+                    </v-row>
+                  </v-card>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <!-- Conviction Matrix Launchpad -->
+                <v-col cols="12" md="4">
+                  <v-card class="glass-panel pa-4 text-center h-100 d-flex flex-column justify-center align-center hover-lift bg-primary-darken-2" ripple @click="$emit('open-matrix')">
+                    <v-icon size="40" color="white" class="mb-2">grid_view</v-icon>
+                    <div class="text-h6 font-weight-bold text-white">27-Bucket Matrix</div>
+                    <div class="text-caption text-white opacity-70">Launch Conviction & Strategy Grid</div>
+                  </v-card>
+                </v-col>
+                
+                <!-- Actionable Alerts Panel -->
+                <v-col cols="12" md="8">
+                  <v-card class="glass-panel pa-4 h-100 d-flex flex-column">
+                    <div class="text-subtitle-2 font-weight-bold mb-2 d-flex align-center">
+                      <v-icon color="warning" size="18" class="mr-2">error_outline</v-icon>
+                      Actionable Alerts
+                    </div>
+                    <v-list bg-color="transparent" density="compact" class="py-0">
+                      <!-- Buy Signal -->
+                      <v-list-item class="px-0 min-height-0 mb-1">
+                        <template v-slot:prepend>
+                          <v-icon color="success" size="18" class="mr-3">arrow_circle_up</v-icon>
+                        </template>
+                        <v-list-item-title class="font-weight-medium text-body-2">Bucket 27 Buy Signal: AAPL</v-list-item-title>
+                        <v-list-item-subtitle class="text-caption text-success">Target ROI +25% (P/S Reversion)</v-list-item-subtitle>
+                      </v-list-item>
+                      
+                      <!-- Time-Stop Warning -->
+                      <v-list-item class="px-0 min-height-0 mb-1">
+                        <template v-slot:prepend>
+                          <v-icon color="warning" size="18" class="mr-3">hourglass_empty</v-icon>
+                        </template>
+                        <v-list-item-title class="font-weight-medium text-body-2">Time-Stop Warning: MSFT (Lot A)</v-list-item-title>
+                        <v-list-item-subtitle class="text-caption text-warning">85 days elapsed. Target not met (4.2% / 10%).</v-list-item-subtitle>
+                      </v-list-item>
+                      
+                      <!-- Sell Signal -->
+                      <v-list-item class="px-0 min-height-0">
+                        <template v-slot:prepend>
+                          <v-icon color="error" size="18" class="mr-3">arrow_circle_down</v-icon>
+                        </template>
+                        <v-list-item-title class="font-weight-medium text-body-2">Valuation Sell Signal: TSLA</v-list-item-title>
+                        <v-list-item-subtitle class="text-caption text-error">Trading 15% above Intrinsic Value.</v-list-item-subtitle>
+                      </v-list-item>
+                    </v-list>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </div>
+          </v-fade-transition>
+        </v-window-item>
+
+        <!-- DATA MANAGEMENT TAB -->
+        <v-window-item value="data">
+          <v-card class="glass-panel h-100 d-flex flex-column pa-4">
+            <div class="d-flex align-center justify-space-between mb-4 mt-2 flex-grow-0">
+              <div class="d-flex align-center">
+                <v-btn-toggle v-model="fileFilter" mandatory variant="outlined" color="primary" class="mr-4" density="compact">
+                  <v-btn value="all">All</v-btn>
+                  <v-btn value="positions">Positions</v-btn>
+                  <v-btn value="transactions">Transactions</v-btn>
+                </v-btn-toggle>
+                <v-btn color="primary" prepend-icon="upload" density="comfortable" :loading="isUploading" @click="$refs.fileInput.click()">
+                  Upload Broker Export
+                </v-btn>
+              </div>
+              <input 
+                type="file" 
+                ref="fileInput" 
+                class="d-none" 
+                accept=".csv,.txt,.xlsx,.json,.xml" 
+                multiple
+                @change="handleFilesSelected"
+              />
+            </div>
+            
+            <div v-if="filteredFiles.length === 0" class="text-center pa-10 flex-grow-1 d-flex flex-column justify-center text-medium-emphasis">
+              <v-icon size="48" class="mb-4 opacity-50 mx-auto">file_upload</v-icon>
+              <div>No data files found for the selected filter.</div>
+            </div>
+            
+            <div v-else class="flex-grow-1" style="overflow-y: auto;">
+              <v-table class="bg-transparent" density="compact">
+                <thead class="bg-surface">
+                  <tr>
+                    <th class="text-left font-weight-bold">Filename</th>
+                    <th class="text-left font-weight-bold">Size</th>
+                    <th class="text-left font-weight-bold">Uploaded At</th>
+                    <th class="text-left font-weight-bold">Type</th>
+                    <th class="text-center font-weight-bold">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="file in filteredFiles" :key="file.hash" class="hover-row">
+                    <td class="py-2">
+                      <div class="d-flex align-center">
+                        <v-icon color="primary" class="mr-3" size="small">description</v-icon>
+                        {{ file.name }}
+                      </div>
+                    </td>
+                    <td>{{ formatBytes(file.size) }}</td>
+                    <td>{{ new Date(file.uploadedAt).toLocaleString() }}</td>
+                    <td class="text-left">
+                      <v-chip size="x-small" :color="file.exportType === 'positions' ? 'blue' : (file.exportType === 'transactions' ? 'purple' : 'grey')" variant="tonal">
+                        {{ file.exportType || 'unknown' }}
+                      </v-chip>
+                    </td>
+                    <td class="text-center">
+                      <v-chip size="x-small" color="success" variant="flat">Indexed</v-chip>
+                    </td>
+                  </tr>
+                </tbody>
+              </v-table>
+            </div>
+          </v-card>
+        </v-window-item>
+
+        <!-- SETTINGS TAB -->
+        <v-window-item value="settings">
+          <v-card class="glass-panel pa-6 text-center">
+            <v-icon size="48" color="medium-emphasis" class="mb-4">settings</v-icon>
+            <h3 class="text-h6 mb-2">Application Settings</h3>
+            <p class="text-body-2 text-medium-emphasis mb-6">Manage your local workspace data.</p>
+            
+            <v-btn color="error" variant="outlined" @click="resetData">
+              <v-icon left class="mr-2">delete_forever</v-icon> Factory Reset Workspace
             </v-btn>
-          </div>
-        </div>
-      </v-fade-transition>
+            <p class="text-caption text-error mt-2">This will clear all indexed portfolio data from your local browser storage.</p>
+          </v-card>
+        </v-window-item>
+      </v-window>
 
       <!-- Notifications -->
       <v-snackbar v-model="snackbar.show" :color="snackbar.color" :timeout="3000">
@@ -249,6 +263,7 @@ export default {
   `,
   data() {
     return {
+      activeTab: 'overview',
       uploadedFiles: [],
       fileFilter: 'all',
       isUploading: false,

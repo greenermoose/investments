@@ -1,3 +1,7 @@
+### 0.7.2
+
+- added tabs, fixed icons
+
 ### 0.7.1
 
 - second half of commit

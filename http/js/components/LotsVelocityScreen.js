@@ -50,15 +50,6 @@ export default {
               fixed-header
               height="calc(100vh - 290px)"
             >
-              <template v-slot:header.marketValue="{ column }">
-                <div class="d-flex flex-column align-end">
-                  <span>{{ column.title }}</span>
-                  <span class="text-caption text-primary font-weight-bold">
-                    {{ formatCurrency(totalMarketValue) }}
-                  </span>
-                </div>
-              </template>
-
               <template v-slot:item.symbol="{ item }">
                 <div>
                   <span class="font-weight-bold text-primary">{{ item.symbol }}</span>
@@ -66,12 +57,6 @@ export default {
                     {{ item.description || '-' }}
                   </div>
                 </div>
-              </template>
-              
-              <template v-slot:item.assetType="{ item }">
-                <v-chip size="small" :color="getTypeColor(item.assetType)" variant="tonal" class="font-weight-bold">
-                  {{ item.assetType || 'Equity' }}
-                </v-chip>
               </template>
               
               <template v-slot:item.quantity="{ item }">
@@ -86,12 +71,6 @@ export default {
 
               <template v-slot:item.currentPrice="{ item }">
                 {{ formatCurrency(item.currentPrice) }}
-              </template>
-
-              <template v-slot:item.marketValue="{ item }">
-                <span :class="item.marketValue < 0 ? 'text-error font-weight-medium' : ''">
-                  {{ formatCurrency(item.marketValue) }}
-                </span>
               </template>
 
               <template v-slot:item.unrealizedGainLoss="{ item }">
@@ -114,20 +93,14 @@ export default {
                 </span>
               </template>
 
-              <template v-slot:item.riskInfo="{ item }">
-                <div v-if="item.isShortOption" class="d-flex flex-column align-center py-1">
-                  <v-chip v-if="item.cappedUpside > 0" color="warning" size="x-small" variant="flat" class="mb-1 font-weight-bold">
-                    Capped Call: -{{ formatCurrency(item.cappedUpside) }}
-                  </v-chip>
-                  <v-chip v-if="item.obligationRisk > 0" color="error" size="x-small" variant="flat" class="mb-1 font-weight-bold">
-                    Put Risk: -{{ formatCurrency(item.obligationRisk) }}
-                  </v-chip>
-                  <v-chip v-if="item.obligatedCollateral > 0" color="info" size="x-small" variant="outlined" class="font-weight-bold">
-                    Collateral: {{ formatCurrency(item.obligatedCollateral) }}
-                  </v-chip>
-                  <span v-if="!(item.cappedUpside > 0 || item.obligationRisk > 0 || item.obligatedCollateral > 0)" class="text-caption text-success font-weight-medium">OTM (Safe)</span>
-                </div>
-                 <span v-else class="text-caption text-medium-emphasis">-</span>
+              <template v-slot:item.daysHeld="{ item }">
+                <span>{{ calculateDaysHeld(item) !== null ? calculateDaysHeld(item) : '-' }}</span>
+              </template>
+
+              <template v-slot:item.annualizedRoi="{ item }">
+                <span :class="getGainClass(calculateAnnualizedRoi(item))">
+                  {{ formatRoi(calculateAnnualizedRoi(item)) }}
+                </span>
               </template>
 
               <template v-slot:bottom="{ pageCount }">
@@ -217,11 +190,9 @@ export default {
     headers() {
       const baseHeaders = [
         { title: 'Symbol & Description', align: 'start', key: 'symbol' },
-        { title: 'Type', key: 'assetType' },
         { title: 'Qty', key: 'quantity', align: 'end' },
         { title: 'Avg Cost / Prem', key: 'averageCost', align: 'end' },
         { title: 'Price', key: 'currentPrice', align: 'end' },
-        { title: 'Market Value', key: 'marketValue', align: 'end' },
         { title: 'Unrealized G/L', key: 'unrealizedGainLoss', align: 'end' }
       ];
 
@@ -233,7 +204,11 @@ export default {
         );
       }
 
-      baseHeaders.push({ title: 'Status / Risk', key: 'riskInfo', align: 'center' });
+      baseHeaders.push(
+        { title: 'Days Held', key: 'daysHeld', align: 'end' },
+        { title: 'Annualized ROI', key: 'annualizedRoi', align: 'end' }
+      );
+
       return baseHeaders;
     },
     filteredEquities() {
@@ -369,6 +344,54 @@ export default {
       if (dateStr === 'Pre-inception') return 'Pre-inception';
       const clean = dateStr.split(' as of ')[0].trim();
       return clean;
+    },
+    calculateDaysHeld(item) {
+      if (!item.firstBoughtDate || item.firstBoughtDate === 'Pre-inception') return null;
+      const cleanBought = item.firstBoughtDate.split(' as of ')[0].trim();
+      const bought = new Date(cleanBought);
+      if (isNaN(bought.getTime())) return null;
+      
+      let end = new Date();
+      if (!this.activeOnly && item.lastSoldDate) {
+        const cleanSold = item.lastSoldDate.split(' as of ')[0].trim();
+        end = new Date(cleanSold);
+      } else if (this.cutoffDate) {
+        const cleanCutoff = this.cutoffDate.split(' as of ')[0].trim();
+        const cutoff = new Date(cleanCutoff);
+        if (!isNaN(cutoff.getTime())) {
+          end = cutoff;
+        }
+      }
+      
+      if (isNaN(end.getTime())) return null;
+      
+      const diffTime = end - bought;
+      const diffDays = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+      return diffDays;
+    },
+    calculateAnnualizedRoi(item) {
+      const days = this.calculateDaysHeld(item);
+      if (!days || days <= 0) return null;
+      
+      let gain = 0;
+      if (this.activeOnly) {
+        gain = item.unrealizedGainLoss || 0;
+      } else {
+        gain = item.realizedGain || 0;
+      }
+      
+      const cost = Math.abs(item.totalCostBasis || 0);
+      if (!cost || cost === 0) return null;
+      
+      const roi = gain / cost;
+      const annualized = roi * (365 / days);
+      return annualized;
+    },
+    formatRoi(val) {
+      if (val === null || val === undefined || isNaN(val)) return '-';
+      const pct = val * 100;
+      const formatted = Math.abs(pct).toFixed(2) + '%';
+      return pct > 0 ? `+${formatted}` : (pct < 0 ? `-${formatted}` : '0.00%');
     }
   }
 };

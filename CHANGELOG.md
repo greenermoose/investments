@@ -1,3 +1,7 @@
+### 0.7.3
+
+- show days held and annualized ROI in capital velocity table
+
 ### 0.7.2
 
 - added tabs, fixed icons

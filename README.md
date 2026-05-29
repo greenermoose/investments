@@ -53,12 +53,12 @@ To achieve this, the application aims to:
 
 3. Serve the `http` folder using any web server. Here are a few options:
 
-   **Option A: Python 3 (recommended for quick testing)**
+   **Option A: Custom Python Server (Recommended)**
+   This repository includes a `server.py` script that serves the application and proxies SEC API requests (required for fetching company facts).
    ```bash
-   cd http
-   python3 -m http.server 8000
+   python server.py
    ```
-   Then open your browser to `http://localhost:8000`
+   Then open your browser to `http://localhost:8080`
 
    **Option B: Node.js http-server**
    ```bash

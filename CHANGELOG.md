@@ -1,3 +1,7 @@
+### 0.7.6
+
+- instructions for running app
+
 ### 0.7.5
 
 - automatically look up SEC data

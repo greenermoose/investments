@@ -1,7 +1,7 @@
 export class Database {
     constructor() {
         this.dbName = 'PortfolioManagerDB';
-        this.dbVersion = 1;
+        this.dbVersion = 2;
         this.db = null;
     }
 
@@ -26,6 +26,15 @@ export class Database {
                 // Create object store for SEC data
                 if (!db.objectStoreNames.contains('sec_data')) {
                     db.createObjectStore('sec_data', { keyPath: 'symbol' });
+                }
+                if (!db.objectStoreNames.contains('market_quotes')) {
+                    db.createObjectStore('market_quotes', { keyPath: 'symbol' });
+                }
+                if (!db.objectStoreNames.contains('historical_prices')) {
+                    db.createObjectStore('historical_prices', { keyPath: 'symbol' });
+                }
+                if (!db.objectStoreNames.contains('options_chains')) {
+                    db.createObjectStore('options_chains', { keyPath: 'symbol' });
                 }
             };
         });

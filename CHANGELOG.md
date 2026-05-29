@@ -1,3 +1,11 @@
+### 0.7.8
+
+- trying to get Yahoo Finance proxy working
+
+### 0.7.7
+
+- implemented Yahoo Finance proxy for market data and options chains
+
 ### 0.7.6
 
 - instructions for running app

@@ -46,6 +46,8 @@ To achieve a consistent 20% return, the app is designed around five tactical pil
 Following the `v0.6.0` refactor, the application has transitioned to a lightweight, zero-dependency browser-based architecture.
 
 ### Coded Features
+* **SEC EDGAR API Ingestion**: Offline script (`fetch_sec.py`, `build_sec_data.js`) to fetch 10-K and 10-Q filings for watchlisted symbols to obtain exact historical revenue and fully diluted shares outstanding.
+* **Market Data Proxy**: Proxy routes in `server.py` and `MarketDataLoader.js` to fetch Yahoo Finance historical prices, option chains, and risk-free rates, cached in IndexedDB.
 * **IndexedDB Database Layer (`DatabaseService.js`)**: Version 3 schema initialized with stores for `user_data` (profiles), `uploaded_files`, `equities`, and `companies`.
 * **Brokerage Ingestion Engine (`BrokerageParser.js`, `CSVParser.js`)**: Classifies and parses CSV, JSON, and XML brokerage export statements.
 * **Portfolio Processor (`PortfolioProcessor.js`)**: Heuristically groups files by account, reconciles transactions chronologically, rebuilds equity holdings, tracks acquisition dates, and updates database records.
@@ -68,10 +70,8 @@ The following phases outline the functionality needed to build the ultimate deci
 
 ### Active & Near-Term Focus
 
-#### [NEW] Watchlist & SEC Data Ingestion Engine
+#### [NEW] Watchlist Manager
 * **Watchlist Manager**: UI to add/remove tickers (owned or prospective) and set target entry prices.
-* **SEC EDGAR API Ingestion**: Script/service to fetch 10-K and 10-Q filings for watchlisted symbols to obtain exact historical revenue and fully diluted shares outstanding.
-* **Historical Price Normalization**: Acquire historical share prices, adjusted for splits and dividends, as a prerequisite for calculating historical metrics.
 
 #### [NEW] Lot Management Service (`LotManager.js`)
 * **Execution Scoring Mechanism**: Implement tracking to calculate the exact annualized ROI for every specific tax lot bought and sold. This serves as the primary feedback loop to spot patterns and evaluate real-world trading performance.

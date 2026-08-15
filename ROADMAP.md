@@ -1,92 +1,124 @@
-# Investment App Roadmap
+# Development Roadmap
 
-This document outlines the system architecture and functionality to achieve the app's core investment goal of achieving a 20% annual return on investment or better on a portfolio of public companies with shares trading on exchanges in the United States.
-
-> **Developer & Agent Notice to Prevent Roadmap Drift**
-> Before and after writing code, consult this roadmap and ensure it accurately reflects the codebase.
-> - When features are implemented, move them from the **Next Features & Development Phases** section to the **Coded Features** subsection under **Current Status**.
-> - Ensure all paths, components, and services listed reflect their actual state in the codebase.
-> - Ensure `CHANGELOG.md` and this document remain synchronized.
-
-## Overarching Goal
-
-Provide specific buy-sell-hold advice to achieve an annualized **20% Return on Investment (ROI)** over a **20-year horizon** inside a tax-advantaged **Roth IRA** (e.g., compounding starting capital of $200,000 to over $7,600,000 with zero tax drag) that invests in individual stocks of public companies traded on exchanges in the United States.
-
-## Core Strategy & Philosophy
-
-To achieve a 20% return or better, the app is designed around five tactical pillars described in the design documents:
-
-1. **Rigorous Intrinsic Valuation (Low-Guesswork Metrics)**
-   * Do not trust third-party data aggregators without examining the original filings. Analyze raw **SEC EDGAR filings (10-K, 10-Q)** directly to obtain exact Trailing Twelve Months (TTM) revenue and fully diluted share counts (factoring in stock-based compensation).
-   * Focus on metrics that are difficult to manipulate: **Price-to-Sales (P/S) historical reversion**, **Reverse Discounted Cash Flow (Reverse DCF)** growth expectations, **FCF Yield**, and **ROIC**.
-2. **Capital Velocity & Time-Stops**
-   * Focus on compounding gains (e.g., target a **10% return in 90 days** on positions, which equates to ~46% annualized).
-   * Evaluate positions using a **90-day event horizon** to eliminate "equity drag" and recycle capital aggressively.
-3. **Yield Enhancement (Options Wheel & Rolling)**
-   * Consider selling Out-of-the-Money (OTM) **Covered Calls** to automate disciplined exits and collect premiums.
-   * Consider selling **Cash-Secured Puts** (CSPs) on watchlisted "screaming buys" to monetize the wait, acquiring shares at a discount.
-   * Consider rolling options defensively (horizontal or diagonal) exclusively for a **net credit**.
-4. **The 27-Bucket Conviction Matrix**
-   * **Bucket 1**: Cash equivalent (e.g., SGOV generating risk-free yield).
-   * **Buckets 2–26**: Active holdings (up to 25 positions), each mapped with expected ROI and conviction scores.
-   * **Bucket 27**: The current market "Screaming Buy".
-   * **Rotation Rule**: Automatically recommend liquidating the lowest-performing active buckets when Bucket 27 offers superior risk-adjusted ROI.
-5. **Monte Carlo Strategy Simulator**
-   * Model hypothetical future price paths and evaluate strategy outcomes using **Black-Scholes** options pricing, rather than relying on standard historical backtesting.
-
-## Current Status
-
-Following the `v0.6.0` refactor, the application has transitioned to a lightweight, zero-dependency browser-based architecture.
-
-### Coded Features
-* **SEC EDGAR API Ingestion**: Offline script (`fetch_sec.py`, `build_sec_data.js`) to fetch 10-K and 10-Q filings for watchlisted symbols to obtain exact historical revenue and fully diluted shares outstanding.
-* **Market Data Proxy**: Proxy routes in `server.py` and `MarketDataLoader.js` to fetch Yahoo Finance historical prices, option chains, and risk-free rates, cached in IndexedDB.
-* **IndexedDB Database Layer (`DatabaseService.js`)**: Version 3 schema initialized with stores for `user_data` (profiles), `uploaded_files`, `equities`, and `companies`.
-* **Brokerage Ingestion Engine (`BrokerageParser.js`, `CSVParser.js`)**: Classifies and parses CSV, JSON, and XML brokerage export statements.
-* **Portfolio Processor (`PortfolioProcessor.js`)**: Heuristically groups files by account, reconciles transactions chronologically, rebuilds equity holdings, tracks acquisition dates, and updates database records.
-* **Portfolio Valuation Service (`PortfolioValuation.js`)**: Computes running average cost basis, option premium liabilities, realized gains, and net asset values from chronological transaction histories.
-* **UI Components & Features**:
-  * `WelcomeScreen.js`: User registration and initial state setup.
-  - `DashboardScreen.js`: File upload manager, showing file types (Positions/Transactions) and processing state.
-  - **Dynamic Portfolio Metrics Panel (`DashboardScreen.js`)**: Added live, calculated portfolio stats:
-    * **Net Liquidation Value**: Calculated from cash, stock value, and option liabilities.
-    * **Options Drag**: Total premium liabilities reducing portfolio liquidity.
-    * **Obligations & Capped Upside**: Tracks covered call strike cap values, short put cash collateral requirements, and underwater in-the-money obligation risks.
-  - `EquitiesScreen.js`: Table view of the equities database universe, showing first/last owned dates.
-  - `CompaniesScreen.js`: Association table matching equities/options to parent company profiles.
+This roadmap outlines the phased development plan for the **Agentic Investment Advisor & Context Provider** system. The objective is to build a reliable context engine, persistent thesis memory store, US equity universe pipeline, and options modeling framework for our AI agent team.
 
 ---
 
-## Next Features & Development Phases
+## 🗺️ High-Level Phases
 
-The following phases outline the functionality needed to build the ultimate decision support tool for achieving the overarching goal.
-
-### Active & Near-Term Focus
-
-#### [NEW] Watchlist Manager
-* **Watchlist Manager**: UI to add/remove tickers (owned or prospective) and set target entry prices.
-
-#### [NEW] Lot Management Service (`LotManager.js`)
-* **Execution Scoring Mechanism**: Implement tracking to calculate the exact annualized ROI for every specific tax lot bought and sold. This serves as the primary feedback loop to spot patterns and evaluate real-world trading performance.
+```mermaid
+gantt
+    title Agentic Investment Advisor Roadmap
+    dateFormat  YYYY-MM-DD
+    section Phase 1: Ingestion & State
+    Screenshot & CSV Parser             :active, p1_1, 2026-08-15, 7d
+    Portfolio State Normalizer          :p1_2, after p1_1, 5d
+    section Phase 2: Thesis Memory
+    Markdown Dossier Engine             :p2_1, after p1_1, 7d
+    Catalyst & Invalidation Logic       :p2_2, after p2_1, 5d
+    section Phase 3: Universe & Data
+    US Equity Universe List Sync        :p3_1, 2026-08-20, 10d
+    Free Public APIs Integration        :p3_2, after p3_1, 8d
+    Local SQLite / Parquet Store        :p3_3, after p3_2, 6d
+    section Phase 4: Options & Pricing
+    Black-Scholes & Volatility Model    :p4_1, after p2_2, 8d
+    Weekend Limit Order Calculator      :p4_2, after p4_1, 6d
+    section Phase 5: Agent Framework
+    Sub-Agent Team Prompts              :p5_1, after p4_2, 7d
+    Interactive Q&A Deliberation Flow   :p5_2, after p5_1, 5d
+    section Phase 6: Empirical Research
+    Quantitative Literature Synthesis   :p6_1, after p5_2, 10d
+    Limit Fill & Target Price Tracker   :p6_2, after p6_1, 5d
+```
 
 ---
 
-### Future Roadmap Phases
+## 📌 Phase 1: Portfolio Ingestion & State Normalization
 
-### Phase 1: Valuation Engine & Signal Generator
-* **Core Valuation Models**:
-  * **P/S Historical Reversion**: Match current P/S against 3/5/10-year historical ranges using fully diluted shares.
-  * **Reverse DCF**: Calculate the growth rate implied by current market prices.
-* **Sell Signal Generator**: Identify which **owned companies** are currently trading ABOVE their intrinsic values, flagging them as sell candidates.
-* **Buy Signal Generator**: Identify which **watchlisted companies** are trading significantly below their intrinsic values ("Screaming Buys").
+**Goal:** Establish dependable parsing of weekly portfolio snapshots (multimodal images or CSV exports) into clean, structured textual context for the agent team.
 
-### Phase 2: The 27-Bucket Conviction Matrix
-* **Conviction UI**: Build the conceptual framework and display to quickly visualize the highest conviction trade ideas.
-* Track Bucket 1 (SGOV / cash baseline).
-* Calculate and rank expected annualized ROI of active buckets (combining yield and option premiums).
-* Highlight Bucket 27 (Screaming Buy) and suggest rotation paths.
+- [x] **1.1 Private Ingestion Directory:** Configure `examples/` and `.gitignore` to protect sensitive financial screenshots.
+- [ ] **1.2 Multimodal Screenshot Extractor:** Develop prompt/script workflows for parsing brokerage screenshots (symbols, share counts, cash balance, SGOV shares, open options contracts, expiration dates, and strikes).
+- [ ] **1.3 CSV Portfolio Ingestor:** Build fallback parsing for tabular exports from standard US brokerages (Charles Schwab, Fidelity, Interactive Brokers, Robinhood).
+- [ ] **1.4 Portfolio State Schema:** Normalize parsed data into a standard portfolio context object:
+  - Total liquid capital (Cash + `SGOV` market value).
+  - Equity holdings with covered call eligibility flag ($\ge 100$ shares).
+  - Active options positions (CSPs, CCs, DTE, strike).
 
-### Phase 3: Trading Strategy Modeling
-* **Monte Carlo Simulator Engine**: Run future path simulations for selected equities.
-* **Options Pricing Simulator**: Build a Black-Scholes model calculator that prices simulated option chains dynamically.
-* **Strategy Testers**: Backtest and model various options strategies (Covered Calls, CSPs, Collars, Rolling) to determine which trading strategies perform best under different market conditions.
+---
+
+## 📌 Phase 2: Investment Thesis Memory Engine
+
+**Goal:** Prevent agent amnesia and enable long-term thesis tracking across weekly runs using structured markdown dossiers.
+
+- [x] **2.1 Dossier Schema Design:** Define standard markdown schema in `data/theses/EXAMPLE_THESIS.md` with:
+  - Entry date, cost basis, target exit price.
+  - Anticipated catalyst timeline (earnings, product launches, regulatory decisions, macro pivots).
+  - Expected annualized ROI and investment horizon.
+  - Explicit thesis invalidation criteria.
+- [ ] **2.2 Memory Agent Integration:** Implement the `Thesis & Memory Agent` prompt to:
+  - Ingest all active dossiers in `data/theses/`.
+  - Compare incoming news/earnings against catalyst expectations.
+  - Automatically flag broken theses with actionable sell/exit recommendations.
+- [ ] **2.3 Dossier Update Automation:** Enable agents to draft and update dossiers after approved trade executions.
+
+---
+
+## 📌 Phase 3: US Equity Universe & Market Data Engine
+
+**Goal:** Provide AI agents with complete visibility over all US exchange-listed public equities without relying on restrictive, token-expensive live queries.
+
+- [ ] **3.1 Complete US Ticker Directory:** Generate and maintain a comprehensive list of all active stocks on NYSE, NASDAQ, and AMEX (~4,000–6,000 tickers).
+- [ ] **3.2 Free Trustworthy API Connectors:** Build lightweight, deterministic Python scripts in `scripts/` leveraging public data sources:
+  - `yfinance` / Yahoo Finance (historical daily/weekly OHLCV, market cap, PE, beta).
+  - SEC EDGAR API (10-K, 10-Q filing dates, income statements, balance sheets).
+  - Federal Reserve Economic Data (FRED) for interest rate & macro context.
+- [ ] **3.3 Local SQLite / Parquet Cache:** Store weekly price summaries, moving averages (50-day, 200-day), 52-week ranges, and basic valuation multiples locally in `data/universe.db`.
+- [ ] **3.4 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the $\le 25$ position limit.
+
+---
+
+## 📌 Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
+
+**Goal:** Model option pricing over the weekend when markets are closed, generating precise Monday market-open limit orders for cash-secured puts, covered calls, and rolls.
+
+- [ ] **4.1 Black-Scholes & Volatility Engine:** Implement a deterministic option pricing module in `scripts/option_pricer.py`:
+  - Estimate Implied Volatility (IV) from historical volatility and sector averages.
+  - Calculate theoretical option fair values, Greeks (Delta, Theta, Vega), and probability of profit (POP).
+- [ ] **4.2 Cash-Secured Put (CSP) Strategy Module:**
+  - Screen for high-conviction stocks trading near support.
+  - Select optimal strikes (typically 0.15–0.30 delta, 30–45 DTE).
+  - Compute Monday open limit prices that offer high risk-adjusted annualized return on collateral.
+- [ ] **4.3 Covered Call (CC) Strategy Module:**
+  - Identify holdings with $\ge 100$ shares.
+  - Select OTM strike prices above the cost basis aligned with the thesis price target.
+  - Compute Monday limit order prices to collect premium or exit profitably.
+- [ ] **4.4 Option Rolling Calculator:**
+  - Detect threatened CSPs (ITM) or expiring CCs.
+  - Compute net credit / debit limit orders to roll out in time and down/up in strike.
+
+---
+
+## 📌 Phase 5: Sub-Agent Prompting Framework & Q&A Protocol
+
+**Goal:** Standardize system prompts and coordination protocols for the specialized agent team.
+
+- [x] **5.1 Multi-Agent Architecture Guide:** Codify agent roles, inputs, and outputs in `docs/architecture.md`.
+- [x] **5.2 Master Deliberation Prompt:** Create ready-to-use prompt templates in `docs/weekly-workflow-and-prompting.md` for weekly runs.
+- [x] **5.3 Executive Report & Trading Plan Template:** Standardize the final weekly output format:
+  - Executive Action Summary (Monday limit order table).
+  - Position-by-position thesis review & catalyst check.
+  - New trade proposals with target ROI, timeframe, and invalidation rules.
+- [ ] **5.4 Interactive Q&A Protocol:** Provide structured prompt flows for challenging agent assumptions, probing risk factors, and stress-testing limit orders.
+
+---
+
+## 📌 Phase 6: Empirical Research Synthesis & Execution Calibration
+
+**Goal:** Build institutional skill by synthesizing published quantitative options/equity research and maintaining a lightweight order fill tracker.
+
+- [ ] **6.1 Quantitative Literature Synthesis:** Conduct deep research dives into institutional and academic options research (e.g., CBOE PutWrite/BuyWrite benchmarks, AQR factor studies, Tastytrade multi-decade options studies) to codify proven parameters (optimal DTE, delta, roll thresholds, VIX regime adjustments).
+- [ ] **6.2 Monday Limit Fill & Target Tracker:** Create a lightweight markdown log (`data/execution_tracker.md`) to record:
+  - Modeled limit price vs. actual Monday open fill price.
+  - Target price hit/miss rate across investment horizons.
+  - Feed empirical fill rates back into the Derivatives Specialist agent to calibrate pricing aggression.

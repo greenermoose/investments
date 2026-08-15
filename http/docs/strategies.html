@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Strategy & Constraints - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="strategies.html" class="docs-nav-link active">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Navigation</div>
+      <a href="../index.html" class="docs-nav-link">Portfolio Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Investment Strategy & Constraints</h1>
+      <p class="docs-lead">Core portfolio principles, risk parameters, and boundary rules enforced during every weekly run.</p>
+    </div>
+
+    <h2>Non-Negotiable Portfolio Constraints</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Constraint</th>
+          <th>Specification</th>
+          <th>Rationale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Asset Universe</strong></td>
+          <td>US exchange-listed common stocks only (NYSE, NASDAQ, AMEX).</td>
+          <td>Ensures institutional liquidity, high reporting transparency (SEC EDGAR), and deep options chains.</td>
+        </tr>
+        <tr>
+          <td><strong>Cash Proxy</strong></td>
+          <td>Unallocated cash held in <code>SGOV</code> (0-3 Month US Treasury ETF).</td>
+          <td>Generates steady risk-free yield on collateral while maintaining near-cash liquidity for option assignments.</td>
+        </tr>
+        <tr>
+          <td><strong>Permitted Derivatives</strong></td>
+          <td>Cash-Secured Puts (CSPs) and Covered Calls (CCs) only.</td>
+          <td>Strictly eliminates ruin risk. No margin borrowing, naked options, or debit spreads.</td>
+        </tr>
+        <tr>
+          <td><strong>Position Concentration</strong></td>
+          <td>Maximum of 25 simultaneous active equity positions.</td>
+          <td>Balances meaningful conviction with idiosyncratic company risk mitigation.</td>
+        </tr>
+        <tr>
+          <td><strong>Execution Mode</strong></td>
+          <td>Weekly cadence, limit orders only for Monday market open (9:30 AM ET).</td>
+          <td>Eliminates emotional intraday trading and ensures structured execution.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Core Investment Philosophy</h2>
+    <p>The system operates at the intersection of high-quality value investing and disciplined derivatives income generation:</p>
+    
+    <ul>
+      <li><strong>Acquire High-Quality Moats at a Discount:</strong> Sell Cash-Secured Puts on wonderful companies at strike prices matching conservative Margin of Safety valuations.</li>
+      <li><strong>Monetize Volatility:</strong> Harvest option premium over the 30-45 DTE window where time decay (Theta) accelerates most rapidly.</li>
+      <li><strong>Systematic Covered Call Exits:</strong> When a stock approaches its fair value target, write Covered Calls on 100-share blocks to collect premium while scaling out systematically.</li>
+      <li><strong>Active Invalidation Discipline:</strong> Hold positions with high conviction, but exit decisively when fundamental thesis criteria are violated.</li>
+    </ul>
+
+    <div class="callout warning">
+      <div class="callout-title">Derivatives Safety Rule</div>
+      <p>Every Cash-Secured Put MUST have 100% cash or SGOV backing the full assignment liability (Strike x 100 x Contracts). Margin borrowing is strictly prohibited.</p>
+    </div>
+  </main>
+</body>
+</html>

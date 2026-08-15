@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valuation Methodologies - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link active">Valuation Framework</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Navigation</div>
+      <a href="../index.html" class="docs-nav-link">Portfolio Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Valuation Framework & Fundamental Analysis</h1>
+      <p class="docs-lead">Systematic screening criteria, multi-stage discounted cash flow models, and Owner Earnings valuation.</p>
+    </div>
+
+    <h2>Fundamental Screening Filters</h2>
+    <p>To qualify as an investable candidate, a company must demonstrate exceptional capital allocation efficiency and durable competitive moats:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Screen Threshold</th>
+          <th>Strategic Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ROIC (3-5 Yr Avg)</strong></td>
+          <td>&gt; 15.0%</td>
+          <td>Ensures superior capital efficiency and economic moat.</td>
+        </tr>
+        <tr>
+          <td><strong>Free Cash Flow Conversion</strong></td>
+          <td>FCF / Net Income &gt; 80%</td>
+          <td>Guarantees accounting profits translate to hard cash flows.</td>
+        </tr>
+        <tr>
+          <td><strong>Leverage Ratio</strong></td>
+          <td>Net Debt / EBITDA &lt; 2.5x</td>
+          <td>Protects against interest rate shocks and credit stress.</td>
+        </tr>
+        <tr>
+          <td><strong>Revenue Growth</strong></td>
+          <td>&gt; 7.0% Organic CAGR</td>
+          <td>Confirms alignment with secular growth tailwinds.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Valuation Models</h2>
+
+    <h3>1. Multi-Stage Discounted Free Cash Flow (DCF)</h3>
+    <p>Projects discrete unlevered free cash flows over a 5-year forecast period, discounted back at the Weighted Average Cost of Capital (WACC), plus a perpetual terminal growth value (2.5%-3.0%).</p>
+
+    <h3>2. Owner Earnings Yield</h3>
+    <pre><code>Owner Earnings = Net Income + D&A - Maintenance CapEx</code></pre>
+    <p>Measures the cash yield a 100% owner could extract annually without impairing the business's competitive position. We require an Owner Earnings Yield exceeding the 3-Month Treasury yield plus a minimum 300 bps equity risk premium.</p>
+
+    <h2>Margin of Safety & Price Targets</h2>
+    <div class="callout">
+      <div class="callout-title">The 20% Margin of Safety Buffer</div>
+      <p>Target buy entry prices are set at a 15% to 25% discount to calculated intrinsic fair value. Cash-Secured Put strikes are anchored at or below this Margin of Safety threshold.</p>
+    </div>
+  </main>
+</body>
+</html>

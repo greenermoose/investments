@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Documentation - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link active">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Navigation</div>
+      <a href="../index.html" class="docs-nav-link">Portfolio Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Documentation Hub</h1>
+      <p class="docs-lead">Comprehensive architecture, strategy guides, options modeling principles, and deliberation workflows for the Agentic Investment Advisor system.</p>
+    </div>
+
+    <h2>System Guides</h2>
+    <div class="card-grid">
+      <a href="architecture.html" class="docs-card">
+        <h4>System Architecture</h4>
+        <p>Explore the 5-agent team, multi-agent pipeline, data boundary isolation, and deterministic context construction.</p>
+      </a>
+      <a href="workflow.html" class="docs-card">
+        <h4>Weekly Workflow</h4>
+        <p>Step-by-step cadence for weekend portfolio snapshots, deliberation protocols, and Monday limit order execution.</p>
+      </a>
+      <a href="strategies.html" class="docs-card">
+        <h4>Investment Strategy & Constraints</h4>
+        <p>Core portfolio principles: US equities, SGOV cash proxy, Cash-Secured Puts, Covered Calls, and position caps.</p>
+      </a>
+      <a href="options.html" class="docs-card">
+        <h4>Options Pricing & Modeling</h4>
+        <p>Mathematical foundations for Black-Scholes modeling, optimal Delta (0.15-0.30), DTE (30-45), and roll execution.</p>
+      </a>
+      <a href="valuation.html" class="docs-card">
+        <h4>Valuation Framework</h4>
+        <p>Fundamental screening, multi-stage DCF models, Owner Earnings yield, and Margin of Safety thresholds.</p>
+      </a>
+    </div>
+
+    <h2>Audience Segmentation Architecture</h2>
+    <p>This repository organizes code and data cleanly by primary consumer to ensure zero ambiguity and maximum operational efficiency:</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Target Audience</th>
+          <th>Directory</th>
+          <th>Format & Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AI Agents</strong></td>
+          <td><code>context/</code></td>
+          <td>High-density Markdown prompts, persistent thesis memory dossiers, and strategy rules.</td>
+        </tr>
+        <tr>
+          <td><strong>Humans (Public Web)</strong></td>
+          <td><code>http/</code> & <code>http/docs/</code></td>
+          <td>Responsive HTML/JS companion dashboard, documentation, universe cards, and options tools.</td>
+        </tr>
+        <tr>
+          <td><strong>CLI & Deterministic Automation</strong></td>
+          <td><code>scripts/</code></td>
+          <td>Python utilities for Black-Scholes options pricing, SEC EDGAR scraping, and universe caching.</td>
+        </tr>
+        <tr>
+          <td><strong>Humans (Private Data)</strong></td>
+          <td><code>private/</code></td>
+          <td>Confidential brokerage snapshots and simple plain text/Markdown trading plans (git-ignored).</td>
+        </tr>
+        <tr>
+          <td><strong>Developer Sandbox</strong></td>
+          <td><code>scratch/</code></td>
+          <td>Local sandbox for temporary exploratory scripts and test calculations (git-ignored).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout important">
+      <div class="callout-title">Privacy & Local Execution</div>
+      <p>All sensitive account snapshots and weekly trading plans are stored locally under <code>private/</code>, which is excluded from source control. Public company intelligence and research are tracked in <code>context/theses/</code> and displayed under <code>http/</code>.</p>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Architecture - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link active">System Architecture</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Navigation</div>
+      <a href="../index.html" class="docs-nav-link">Portfolio Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>System Architecture</h1>
+      <p class="docs-lead">Specialized sub-agent pipeline, data boundary isolation, and deterministic context construction.</p>
+    </div>
+
+    <h2>Why Agent Teams Outperform Monolithic Chatbots</h2>
+    <p>Standard LLM chatbots struggle with personalized portfolio management due to session amnesia, guardrail hedging, narrow market scope, and lack of derivatives modeling. This system resolves these limitations by orchestrating specialized sub-agents backed by deterministic local memory stores.</p>
+
+    <h2>Sub-Agent Roles & Pipeline</h2>
+    
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>1. Portfolio Ingestion Agent</h4>
+        <p><strong>Input:</strong> Brokerage screenshot or CSV export in <code>private/snapshots/</code>.</p>
+        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, SGOV shares, and tags covered call eligibility (>= 100 shares).</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>2. Thesis & Memory Agent</h4>
+        <p><strong>Input:</strong> Parsed holdings + persistent markdown dossiers in <code>context/theses/*.md</code>.</p>
+        <p><strong>Responsibility:</strong> Tracks conviction levels, reviews earnings catalysts, detects broken theses, and flags positions for exit.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>3. Universe Screener & Analyst</h4>
+        <p><strong>Input:</strong> US exchange-listed public equities database + fundamental filters.</p>
+        <p><strong>Responsibility:</strong> Surfaces high-conviction opportunities (ROIC > 15%, positive FCF) while strictly enforcing the 25-position limit.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>4. Derivatives Specialist</h4>
+        <p><strong>Input:</strong> Candidate tickers, stock lots, cash collateral, volatility data.</p>
+        <p><strong>Responsibility:</strong> Models Black-Scholes pricing over the weekend to compute limit orders for Cash-Secured Puts, Covered Calls, and net-credit rolls.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>5. Lead Portfolio Manager</h4>
+        <p><strong>Input:</strong> Sub-agent reports and policy constraints.</p>
+        <p><strong>Responsibility:</strong> Synthesizes executive decisions into a concise Weekly Trading Plan (<code>private/plans/</code>) and updates public company intelligence.</p>
+      </div>
+    </div>
+
+    <h2>Data Isolation & Privacy Model</h2>
+    <p>The system enforces strict data privacy through isolated directory tiers:</p>
+    <ul>
+      <li><strong>Private User Tier (<code>private/</code>):</strong> All user snapshots, exact account values, and personalized execution plans are stored locally and git-ignored.</li>
+      <li><strong>Public Intelligence Tier (<code>context/theses/</code> & <code>http/</code>):</strong> Fundamental company research, catalyst timelines, and valuation models contain zero private user data and are committed to version control.</li>
+      <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python scripts execute mathematical models and API connectors locally.</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-title">Deterministic Context Construction</div>
+      <p>Agents are fed targeted, structured Markdown context files rather than hundreds of pages of raw data, maximizing token efficiency while maintaining perfect reasoning accuracy.</p>
+    </div>
+  </main>
+</body>
+</html>

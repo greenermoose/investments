@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PortfolioContext",
+  "description": "Normalized portfolio state representation passed between ingestion, thesis, and derivatives sub-agents.",
+  "type": "object",
+  "properties": {
+    "as_of_date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date of the snapshot (YYYY-MM-DD)."
+    },
+    "total_net_liquidation_value": {
+      "type": "number",
+      "description": "Total account net liquidating value in USD."
+    },
+    "cash_balance": {
+      "type": "number",
+      "description": "Unallocated settled cash in USD."
+    },
+    "sgov_shares": {
+      "type": "number",
+      "description": "Number of SGOV ETF shares held as cash proxy."
+    },
+    "sgov_market_value": {
+      "type": "number",
+      "description": "Total market value of SGOV holdings in USD."
+    },
+    "holdings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Holding"
+      }
+    },
+    "options_positions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/OptionPosition"
+      }
+    }
+  },
+  "required": [
+    "as_of_date",
+    "total_net_liquidation_value",
+    "cash_balance",
+    "holdings"
+  ],
+  "definitions": {
+    "Holding": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "shares": {
+          "type": "number"
+        },
+        "cost_basis_per_share": {
+          "type": "number"
+        },
+        "current_price": {
+          "type": "number"
+        },
+        "market_value": {
+          "type": "number"
+        },
+        "covered_call_eligible_blocks": {
+          "type": "integer",
+          "description": "Floor of shares / 100 representing 100-share blocks available for CC write."
+        },
+        "has_active_thesis": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "symbol",
+        "shares",
+        "cost_basis_per_share"
+      ]
+    },
+    "OptionPosition": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["PUT", "CALL"]
+        },
+        "strategy": {
+          "type": "string",
+          "enum": ["CSP", "CC"]
+        },
+        "strike": {
+          "type": "number"
+        },
+        "expiration_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "contracts": {
+          "type": "integer"
+        },
+        "premium_received": {
+          "type": "number"
+        },
+        "collateral_required": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "symbol",
+        "type",
+        "strategy",
+        "strike",
+        "expiration_date",
+        "contracts"
+      ]
+    }
+  }
+}

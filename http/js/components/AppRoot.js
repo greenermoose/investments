@@ -28,6 +28,7 @@ export default {
           <v-tab value="valuation">Valuation Engine</v-tab>
           <v-tab value="company">Company Details</v-tab>
         </v-tabs>
+        <v-btn href="docs/index.html" variant="text" color="primary" class="ml-2" prepend-icon="article">Documentation</v-btn>
       </v-app-bar>
 
       <v-main>

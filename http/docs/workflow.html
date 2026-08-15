@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Workflow & Execution - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
+      <a href="workflow.html" class="docs-nav-link active">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Navigation</div>
+      <a href="../index.html" class="docs-nav-link">Portfolio Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Weekly Workflow & Execution Protocol</h1>
+      <p class="docs-lead">The operational cadence connecting weekend portfolio ingestion, agent deliberation, executive reporting, and Monday market-open order placement.</p>
+    </div>
+
+    <h2>Weekly Cadence & Timeline</h2>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>1. Weekend Snapshot</h4>
+        <p><strong>Timing:</strong> Saturday / Sunday</p>
+        <p>User places a fresh brokerage screenshot or CSV export into <code>private/snapshots/</code>.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>2. Multi-Agent Deliberation</h4>
+        <p><strong>Timing:</strong> Sunday Evening</p>
+        <p>Ingestion parses holdings &rarr; Memory reviews theses &rarr; Screener evaluates new ideas &rarr; Derivatives specialist models limits.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>3. Executive Plan Generation</h4>
+        <p><strong>Timing:</strong> Sunday Night</p>
+        <p>Lead Portfolio Manager writes the weekly trading plan to <code>private/plans/YYYY-MM-DD-plan.md</code>.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>4. Monday Execution</h4>
+        <p><strong>Timing:</strong> Monday 9:30 AM ET</p>
+        <p>User reviews the plan, conducts Q&A if desired, and enters the specified limit orders into their brokerage.</p>
+      </div>
+    </div>
+
+    <h2>Weekly Trading Plan Structure</h2>
+    <p>Every generated plan in <code>private/plans/</code> follows a strict, actionable Markdown format:</p>
+
+    <pre><code># Weekly Trading Plan: 2026-08-17
+
+## Executive Action Summary (Monday Open Limit Orders)
+| Action | Symbol | Strategy | Strike / Limit | Expiration | Collateral / Value |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| SELL TO OPEN | AAPL | CSP | $210.00 Put @ $2.45 Limit | 2026-09-18 | $21,000.00 SGOV |
+| SELL TO OPEN | MSFT | CC | $460.00 Call @ $4.10 Limit | 2026-09-18 | 100 Shares |
+
+## Active Position Thesis & Catalyst Review
+- Detailed review of all holdings vs. earnings catalyst calendar.
+
+## New Trade Rationales & Invalidation Rules
+- Explicit investment thesis, valuation model, and sell rules for new proposals.</code></pre>
+
+    <div class="callout important">
+      <div class="callout-title">Plain Text & Markdown Simplicity</div>
+      <p>Trading plans in <code>private/plans/</code> are strictly plain text or standard Markdown. They do not require any web build or server to read, keeping confidential personal execution records clean, durable, and portable.</p>
+    </div>
+  </main>
+</body>
+</html>

@@ -4,7 +4,7 @@ An intelligent, multi-agent investment advisory system engineered to overcome th
 
 ## Disclaimer: Use at Your Own Risk
 
-This repository is strictly for educational, informational, and research purposes. It does not constitute financial, investment, legal, or tax advice. Investing in equities and options involves substantial risk of capital loss. Read the full [DISCLAIMER.md](file:///c:/Users/fyhor/Documents/GitHub/investments/DISCLAIMER.md) before using this system.
+This repository is strictly for educational, informational, and research purposes. It does not constitute financial, investment, legal, or tax advice. Investing in equities and options involves substantial risk of capital loss. Read the full [DISCLAIMER.md](DISCLAIMER.md) before using this system.
 
 ## The Problem & Vision
 
@@ -111,12 +111,12 @@ investments/
 ## Getting Started
 
 1. **Explore the Documentation & Examples:**
-   - Read the [Portfolio Constraints](file:///c:/Users/fyhor/Documents/GitHub/investments/docs/portfolio-constraints.md) to understand non-negotiable boundaries.
-   - Review [Investment Thesis & Memory](file:///c:/Users/fyhor/Documents/GitHub/investments/docs/investment-thesis-and-memory.md) to see how position memory is preserved.
-   - Inspect [examples/](file:///c:/Users/fyhor/Documents/GitHub/investments/examples/README.md) to see synthetic inputs and output formats.
+   - Read the [Portfolio Constraints](docs/portfolio-constraints.md) to understand non-negotiable boundaries.
+   - Review [Investment Thesis & Memory](docs/investment-thesis-and-memory.md) to see how position memory is preserved.
+   - Inspect [examples/](examples/README.md) to see synthetic inputs and output formats.
 
 2. **Set Up Your Private Portfolio Snapshot:**
    - Drop your weekend portfolio screenshot (or CSV export) into the `private/snapshots/` directory.
 
 3. **Prompt the Agent Team:**
-   - Copy the master prompt template from [weekly-workflow-and-prompting.md](file:///c:/Users/fyhor/Documents/GitHub/investments/docs/weekly-workflow-and-prompting.md) into your AI session to generate your Monday Trading Plan in `private/plans/`.
+   - Copy the master prompt template from [weekly-workflow-and-prompting.md](docs/weekly-workflow-and-prompting.md) into your AI session to generate your Monday Trading Plan in `private/plans/`.

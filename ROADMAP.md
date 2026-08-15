@@ -33,7 +33,7 @@ gantt
 
 **Goal:** Establish dependable parsing of weekly portfolio snapshots (multimodal images or CSV exports) into clean, structured textual context for the agent team.
 
-- [x] **1.1 Private Ingestion Directory:** Configure `examples/` and `.gitignore` to protect sensitive financial screenshots.
+- [x] **1.1 Private Ingestion & Privacy Architecture:** Configure `private/` (gitignored for real user snapshots/plans) and `examples/` (public synthetic onboarding templates).
 - [ ] **1.2 Multimodal Screenshot Extractor:** Develop prompt/script workflows for parsing brokerage screenshots (symbols, share counts, cash balance, SGOV shares, open options contracts, expiration dates, and strikes).
 - [ ] **1.3 CSV Portfolio Ingestor:** Build fallback parsing for tabular exports from standard US brokerages (Charles Schwab, Fidelity, Interactive Brokers, Robinhood).
 - [ ] **1.4 Portfolio State Schema:** Normalize parsed data into a standard portfolio context object:

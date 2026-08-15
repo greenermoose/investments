@@ -1,0 +1,12 @@
+"Positions for account Sample Individual Brokerage ...999 as of 11:30 AM ET, 2026/08/15"
+
+"Symbol","Description","% of Acct (% of Account)","Price","Qty (Quantity)","Mkt Val (Market Value)","Cost/Share","Gain % (Gain/Loss %)","52 Wk Low (52 Week Low)","52 Wk High (52 Week High)","Price Chng % (Price Change %)","Ratings","Reinvest?","Reinvest Capital Gains?","Asset Type"
+"AAPL","APPLE INC","18.50%","225.50","100","$22,550.00","$185.00","21.89%","$164.08","$237.23","0.45%","A","Yes","N/A","Equity"
+"MSFT","MICROSOFT CORP","16.20%","445.00","45","$20,025.00","$380.00","17.11%","$309.45","$468.35","-0.30%","A","Yes","N/A","Equity"
+"NVDA","NVIDIA CORP","15.80%","128.00","150","$19,200.00","$95.00","34.74%","$45.50","$140.76","1.20%","A","Yes","N/A","Equity"
+"GOOGL","ALPHABET INC CLASS A","10.10%","165.00","75","$12,375.00","$140.00","17.86%","$120.21","$191.75","-0.80%","B","Yes","N/A","Equity"
+"SGOV","ISHARES 0-3 MONTH TREASURY BOND ETF","30.00%","100.50","365","$36,682.50","$100.48","0.02%","$100.10","$100.75","0.01%","--","No","N/A","ETFs & Closed End Funds"
+"AAPL 09/18/2026 240.00 C","CALL APPLE INC $240 EXP 09/18/26","-","4.50","-1","-$450.00","$6.20","27.42%","$2.10","$9.50","-12.50%","-","N/A","N/A","Option"
+"NVDA 09/18/2026 115.00 P","PUT NVIDIA CORP $115 EXP 09/18/26","-","2.80","-1","-$280.00","$4.50","37.78%","$1.50","$7.20","-18.20%","-","N/A","N/A","Option"
+"Cash & Cash Investments","--","9.40%","--","--","$11,500.00","--","--","--","--","--","--","--","--","Cash and Money Market"
+"Positions Total","","100.00%","--","--","$121,602.50","--","19.45%","--","--","--","--","--","--","--"

@@ -8,9 +8,9 @@ This document provides the end-to-end operational runbook for managing the portf
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                             WEEKEND (Sat / Sun)                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│  1. Ingestion: Drop portfolio screenshot / CSV into examples/               │
+│  1. Ingestion: Drop portfolio screenshot / CSV into private/snapshots/     │
 │  2. Deliberation: Run Master Agent Prompt in AI workspace session           │
-│  3. Review: Inspect Executive Report & Monday Limit Order Table             │
+│  3. Review: Inspect Executive Report saved in private/plans/                │
 │  4. Interrogation: Challenge assumptions via Interactive Q&A Session        │
 └──────────────────────────────────────┬──────────────────────────────────────┘
                                        │
@@ -40,11 +40,11 @@ Our objective is to evaluate my current portfolio holdings, review active invest
 5. Execution: Weekend analysis generating Monday market-open Limit Orders (trades occur weekly or less).
 
 ### Instructions for Agent Team:
-Step 1 [Ingestion]: Inspect the latest screenshot or CSV in `examples/`. Extract all equity positions, share counts, cash balance, SGOV shares, and open options contracts. Identify which positions own >= 100 shares for Covered Call eligibility.
+Step 1 [Ingestion]: Inspect the latest screenshot or CSV in `private/snapshots/` (or `examples/` if running sample mode). Extract all equity positions, share counts, cash balance, SGOV shares, and open options contracts. Identify which positions own >= 100 shares for Covered Call eligibility.
 Step 2 [Thesis & Memory Review]: Read active dossiers in `data/theses/*.md`. Verify if any catalysts occurred or if invalidation triggers fired. Recommend HOLD, SELL, or ROLL based on thesis health.
 Step 3 [Universe Screening]: Query `data/universe.db` (or evaluate candidate public equities) for high-conviction ideas, respecting the 25-position ceiling and available liquid capital.
 Step 4 [Derivatives & Limit Pricing]: Calculate theoretical option pricing (Black-Scholes / volatility modeling) over the weekend to compute Monday Limit Prices for any Cash-Secured Puts, Covered Calls, or Option Rolls.
-Step 5 [Executive Report]: Synthesize all findings into the standard Weekly Trading Plan and Executive Report format below.
+Step 5 [Executive Report]: Synthesize all findings into the standard Weekly Trading Plan and Executive Report format below, saving the plan to `private/plans/YYYY-MM-DD-plan.md` and updating any public company dossiers in `data/theses/`.
 
 Please begin by parsing the portfolio and presenting the Executive Report.
 ```

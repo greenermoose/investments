@@ -15,8 +15,8 @@ To resolve these limitations, this system decouples portfolio advisory into a pi
 ```mermaid
 graph TD
     subgraph Inputs ["Inputs (Weekend / Weekly)"]
-        UI_IMG["Screenshot in examples/"]
-        UI_CSV["CSV Export in examples/"]
+        UI_IMG["Screenshot in private/snapshots/"]
+        UI_CSV["CSV Export in private/snapshots/"]
     end
 
     subgraph AgentTeam ["Specialized Agent Team"]
@@ -34,7 +34,8 @@ graph TD
     end
 
     subgraph Outputs ["Outputs & Execution"]
-        OUT_PLAN["Weekly Trading Plan & Executive Report"]
+        OUT_PLAN["Private Plan in private/plans/\nWeekly Trading Plan & Executive Report"]
+        OUT_THESIS["Public Theses in data/theses/\nUpdated Company Dossiers"]
         OUT_QA["Interactive User Q&A / Challenge Session"]
         OUT_EXEC["Monday Market Open Limit Orders"]
     end
@@ -55,6 +56,7 @@ graph TD
     AG_THESIS -->|Thesis Updates & Invalidation Signals| AG_LEAD
     
     AG_LEAD --> OUT_PLAN
+    AG_LEAD --> OUT_THESIS
     OUT_PLAN <--> OUT_QA
     OUT_QA --> OUT_EXEC
 ```
@@ -63,7 +65,7 @@ graph TD
 
 ### 1. Portfolio Ingestion Agent
 - **Purpose:** Parse raw portfolio artifacts into structured portfolio context.
-- **Input:** Weekend screenshot (image) or brokerage CSV export placed in `examples/`.
+- **Input:** Weekend screenshot (image) or brokerage CSV export placed in `private/snapshots/`.
 - **Key Tasks:**
   - Extract equity positions with exact share counts.
   - Identify options contracts (puts/calls, strike, expiration date, count).
@@ -101,18 +103,23 @@ graph TD
 - **Output:** Monday Limit Order Sheet (Strikes, Expirations, Limit Prices, Capital Required/Freed).
 
 ### 5. Lead Portfolio Manager
-- **Purpose:** Synthesize sub-agent outputs, enforce all safety constraints, generate the final weekly executive report, and engage with the user.
+- **Purpose:** Synthesize sub-agent outputs, enforce all safety constraints, generate the personalized weekly plan, update shared company dossiers, and engage with the user.
 - **Input:** Reports from all four sub-agents.
 - **Key Tasks:**
-  - Compile the **Weekly Trading Plan & Executive Report**.
+  - Compile the **Weekly Trading Plan & Executive Report** into `private/plans/`.
+  - Update public company research and theses in `data/theses/`.
   - Validate 100% compliance with portfolio constraints (US equities, SGOV cash proxy, CSP/CC only, $\le 25$ holdings, weekly cadence).
   - Facilitate the **Interactive User Q&A / Challenge Session**, answering user inquiries and stress-testing assumptions.
-- **Output:** Final actionable weekly executive report and execution-ready limit order table.
+- **Output:** Personalized execution plan in `private/plans/` and generalized company intelligence in `data/theses/`.
 
 ## Data Privacy & Ingestion Design
 
-1. **Local-First & Git-Ignored:**
-   - Brokerage screenshots, account balances, and raw CSVs are saved in `examples/`, which is permanently listed in `.gitignore`.
+1. **Local-First & Git-Ignored (`private/`):**
+   - Brokerage screenshots, account balances, and raw CSVs are saved in `private/snapshots/`, which is permanently listed in `.gitignore`.
+   - Personalized weekly trading plans containing dollar amounts, lot sizes, and specific limit orders are written to `private/plans/`.
    - No private financial credentials or account identifiers are ever checked into source control.
-2. **Deterministic Context Construction:**
+2. **Collective Public Knowledge Layer (`data/theses/` & `examples/`):**
+   - Fundamental company theses, catalyst calendars, and valuation models in `data/theses/` are tracked in git and become smarter with every run.
+   - Clean synthetic templates in `examples/` allow new users to understand and test the system immediately without risking sensitive personal data.
+3. **Deterministic Context Construction:**
    - Agent prompts are supplied with structured files and database queries, drastically minimizing token overhead while ensuring complete context.

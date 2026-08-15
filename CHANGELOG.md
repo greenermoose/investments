@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-08-15
+
+### Privacy & Open-Source Collective Intelligence Restructuring
+- **Private Data Layer (`private/`):** Created dedicated top-level `private/` directory with `private/snapshots/` for real user screenshots/brokerage CSVs and `private/plans/` for personalized weekly trading plans and Monday limit order sheets. Listed `private/` permanently in `.gitignore`.
+- **Public Workflow Templates (`examples/`):** Converted `examples/` from gitignored storage into tracked public onboarding templates with `sample_portfolio.csv`, `sample_trading_plan.md`, and `README.md`.
+- **Legal & Risk Disclosure (`DISCLAIMER.md`):** Added comprehensive "Use at Your Own Risk", educational use only, and not financial advice disclaimer.
+- **Documentation Updates:** Updated `README.md`, `ROADMAP.md`, `docs/architecture.md`, and `docs/weekly-workflow-and-prompting.md` to reflect the new privacy architecture and dual-path execution flow.
+
 ## [2.0.0] - 2026-08-15
 
 ### Major Strategic Pivot: Agentic Investment Advisor & Context Provider

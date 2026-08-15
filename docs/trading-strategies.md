@@ -4,8 +4,6 @@ This document outlines the trading strategies intended for use in the market sim
 
 Uninvested capital is held in SGOV (short-term treasury ETF) to generate yield, serving as "dry powder" that is sold via market-limit orders when liquidity is needed for equity purchases. The trading universe is restricted to ETFs and a curated watchlist of ~25 individual public companies.
 
----
-
 ## Strategy 1: Scaled Position Trading (Legging In and Out)
 
 **Concept:** 
@@ -51,8 +49,6 @@ It is impossible to perfectly time the absolute bottom or top of a market moveme
 *   Minervini, M. *Think and Trade Like a Champion*. Minervini emphasizes strict risk management and strongly criticizes "averaging down" or scaling into losing positions in individual stocks, highlighting the risk of ruin.
 *   Lefèvre, E. *Reminiscences of a Stock Operator*. A foundational text on trading psychology that advises against adding to losing positions, a core risk of the "legging in" mechanic when applied to individual equities.
 
----
-
 ## Strategy 2: The Options Wheel (Cash-Secured Puts & Covered Calls)
 
 **Concept:**
@@ -87,8 +83,6 @@ This strategy directly addresses the "cash drag" problem identified in the no-ma
 *   *Early Retirement Now (ERN)*. "Passive options strategies are not a free lunch." ERN provides a mathematical breakdown of the Wheel Strategy, proving its risk profile is identical to a naked short put and exposing the "hidden drawdown" risk of being assigned falling stocks.
 *   *QuantConnect*. Algorithmic backtests on systematic short put writing demonstrate that while the strategy can produce superior risk-adjusted returns (Sharpe ratio) due to premium collection, it underperforms simple buy-and-hold during strong bull markets.
 
----
-
 ## Strategy 3: The "Screaming Buy" Active Legging & Covered Call Exit
 
 **Concept:**
@@ -115,8 +109,6 @@ When a stock on the watchlist crashes to a price that is simply too good to pass
 
 **References:**
 *   Bellafiore, M. *The Playbook*. Discusses the necessity of having systematized, rapid-execution setups for extreme market conditions. Bellafiore emphasizes that when a true edge (like a "screaming buy" alert) is present, aggressive and rapid capital deployment is required before the market corrects the inefficiency.
-
----
 
 ## Strategy 4: The Floor-to-Ceiling Ride (Premium Maximization)
 
@@ -155,8 +147,6 @@ Some high-conviction stocks are worth holding for massive long-term appreciation
 *   *tastylive*. Options education network that extensively documents the mechanics of "rolling for a net credit." Their quantitative research supports rolling as the primary defensive mechanism for covered calls to extend duration and collect extrinsic value while avoiding assignment.
 *   *Charles Schwab Options Research*. Literature on covered call defense emphasizes that while rolling is effective, capping upside on a high-conviction long-term hold mathematically guarantees underperformance if the stock experiences a massive breakout above the ceiling.
 
----
-
 ## Strategy 5: The "Double Dip" (Dividend Capture + Covered Call)
 
 **Concept:**
@@ -179,8 +169,6 @@ In a tax-advantaged Roth IRA, dividends are not taxed, making dividend capture h
 **References:**
 *   *Options Clearing Corporation (OCC)*. Reports and data from the OCC demonstrate a significant statistical spike in early option assignments immediately preceding ex-dividend dates, confirming the high risk of shares being called away before the dividend is captured.
 *   *TSI Network*. Financial research on dividend capture strategies. They criticize the "double dip" strategy by noting that efficient options pricing models (Black-Scholes) already price in the expected dividend drop, meaning the collected premium is inherently smaller and offers no statistical "free lunch."
-
----
 
 ## Strategy 6: Short-Term Channel Swing (Mean Reversion)
 
@@ -205,8 +193,6 @@ While waiting for "screaming buys", capital sits in SGOV earning 4%. This strate
 **References:**
 *   Bollinger, J. *Bollinger on Bollinger Bands*. The creator of the indicator explains how to use bands to define rolling local floors and ceilings for mean reversion trading. Crucially, he warns against the "whipsaw" effect, noting that in strong trends, prices will "ride the band" rather than revert, necessitating strict stop-loss rules.
 
----
-
 ## Strategy 7: Momentum Breakout with Trailing Stop Loss
 
 **Concept:**
@@ -228,8 +214,6 @@ All previous strategies involve holding through drawdowns, which carries the ris
 **References:**
 *   O'Neil, W. *How to Make Money in Stocks*. O'Neil's CAN SLIM strategy is foundational for momentum trading. He strictly mandates an absolute maximum stop loss of 7% to 8% to prevent catastrophic drawdowns, arguing that capital preservation is the single most important rule of investing.
 *   Minervini, M. *Trade Like a Stock Market Wizard*. Discusses the brutal mathematics of drawdowns, proving that cutting losses early with strict stops is a mathematical necessity because a 50% loss requires a 100% gain just to break even.
-
----
 
 ## Strategy 8: The Catalyst "Free Roll" (House Money)
 

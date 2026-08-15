@@ -2,8 +2,6 @@
 
 For the purposes of the market simulator and agent logic, "Technical Analysis" (TA) is defined broadly as any quantitative analysis derived purely from market-generated data. This excludes fundamental data (earnings, PE ratios, news) and focuses strictly on price, volume, options pricing, and market microstructure.
 
----
-
 ## 1. Options-Based Technical Analysis
 
 Because options are derivatives of the underlying stock, their pricing and volume often provide leading indicators regarding institutional sentiment, expected volatility, and structural support/resistance.
@@ -31,8 +29,6 @@ Because options are derivatives of the underlying stock, their pricing and volum
 *   **Definition:** Tracking massive, aggressive options trades ("sweeps") executed at the ask price.
 *   **Usage:** Indicates institutional conviction. If an agent detects a massive, multi-million dollar call sweep at the ask expiring in 3 weeks, it serves as a bullish momentum confirmation signal.
 
----
-
 ## 2. Price and Momentum Analysis
 
 These are traditional indicators derived from the time-series of the stock price itself.
@@ -52,8 +48,6 @@ These are traditional indicators derived from the time-series of the stock price
 *   **Definition:** A momentum oscillator that measures the speed and change of price movements on a scale of 0 to 100.
 *   **Usage:** Standard thresholds are 30 (Oversold) and 70 (Overbought). In strong trends, RSI can remain overbought/oversold for long periods, so it is best used to identify divergence (e.g., price makes a new low, but RSI makes a higher low, signaling a reversal).
 
----
-
 ## 3. Volume and Microstructure Analysis
 
 Price action without volume is often considered "noise." Volume validates the price movement.
@@ -67,8 +61,6 @@ Price action without volume is often considered "noise." Volume validates the pr
 *   **Usage:** 
     *   A widening spread indicates evaporating liquidity or impending high volatility.
     *   Agents can analyze the order book depth to determine if a breakout is supported by real buyers or if it's a low-liquidity "fakeout."
-
----
 
 ## 4. Macro-Market Data (Interest Rates)
 

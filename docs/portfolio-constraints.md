@@ -2,9 +2,7 @@
 
 This document codifies the mandatory constraints and risk policies governing the **Agentic Investment Advisor**. All agents must validate every recommendation against these rules before presenting proposals to the user.
 
----
-
-## 📋 Summary of Core Constraints
+## Summary of Core Constraints
 
 | Category | Constraint Policy | Enforcement |
 | :--- | :--- | :--- |
@@ -17,9 +15,7 @@ This document codifies the mandatory constraints and risk policies governing the
 | **Trading Cadence** | Weekly or less frequent (Weekend planning $\rightarrow$ Monday limit orders) | Operational Rule |
 | **Position Thesis** | Every position requires an explicit catalyst, target price, and invalidation rule | Memory Rule |
 
----
-
-## 🏢 1. Permitted Asset Universe
+## 1. Permitted Asset Universe
 
 1. **US Exchange-Traded Equities:**
    - Common stock listed on major US exchanges: **NYSE**, **NASDAQ**, and **AMEX**.
@@ -31,9 +27,7 @@ This document codifies the mandatory constraints and risk policies governing the
    - `SGOV` (iShares 0-3 Month Treasury Bond ETF) is permitted as a safe, liquid, yield-generating cash proxy.
    - When market conditions appear overextended, or when no individual company presents a compelling risk/reward setup, unallocated capital is parked in `SGOV` or cash to earn risk-free yields while waiting for entry points.
 
----
-
-## 🛡️ 2. Derivatives Strategy & Safety Rules
+## 2. Derivatives Strategy & Safety Rules
 
 ### Rule 2.1: 100% Cash-Secured Puts (CSPs)
 - Put options may be sold **only** to acquire high-conviction target companies at a discount or to generate cash yield while waiting for an entry price.
@@ -52,9 +46,7 @@ This document codifies the mandatory constraints and risk policies governing the
 - **Rolling Puts (Defensive/Yield):** If a short put is tested (underlying drops near or below strike), the position may be rolled out in time (further DTE) and down in strike for a **net credit** or small debit to reduce breakeven cost.
 - **Rolling Calls (Profit-Taking/Yield):** If a short call is tested (underlying rallies near or above strike), the position may be rolled out in time and up in strike for a net credit to lock in higher equity gains.
 
----
-
-## 🎯 3. Concentration & Position Sizing
+## 3. Concentration & Position Sizing
 
 - **Maximum Holdings:** Approximately **25 positions** active at any given time.
 - **Rationale:** 
@@ -62,9 +54,7 @@ This document codifies the mandatory constraints and risk policies governing the
   - A concentrated portfolio of $\le 25$ stocks ensures deep fundamental research, active catalyst monitoring, and thorough risk oversight.
 - **Adding New Tickers:** If the portfolio already holds ~25 positions, adding a new stock requires identifying a lower-conviction holding to liquidate or allowing an existing covered call to be called away.
 
----
-
-## ⏰ 4. Trading Cadence & Order Types
+## 4. Trading Cadence & Order Types
 
 - **Cadence:** Trades are planned and placed at most **once per week** (or less frequently).
 - **Execution Workflow:**

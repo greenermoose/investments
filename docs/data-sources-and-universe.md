@@ -2,17 +2,13 @@
 
 This document details how the repository manages the complete universe of US exchange-listed public equities, ingests financial data from trustworthy free public APIs, and maintains a local SQLite/Parquet cache for agent screening and analysis.
 
----
-
-## 🎯 The Context Challenge
+## The Context Challenge
 
 Standard LLMs suffer from "universe blindness"—when asked to screen for investment opportunities, they can only recall a few dozen popular mega-cap companies (Apple, Microsoft, Tesla, Nvidia) from their pre-training weights.
 
 To give our agent team institutional-grade screening capability across the **entire US public market (~4,000–6,000 active tickers)** without incurring prohibitive token costs or slow online scraping, this system builds a **local-first universe cache**.
 
----
-
-## 🏛️ 1. Complete US Public Equity Universe
+## 1. Complete US Public Equity Universe
 
 ### Scope & Inclusion Criteria
 - **Exchanges:** New York Stock Exchange (NYSE), NASDAQ, and NYSE American (AMEX).
@@ -25,9 +21,7 @@ To give our agent team institutional-grade screening capability across the **ent
   - Over-the-counter (OTC / Pink Sheets) penny stocks.
   - Warrants, rights, and structured notes.
 
----
-
-## 🌐 2. Trustworthy Free Public Data APIs
+## 2. Trustworthy Free Public Data APIs
 
 The system utilizes free, authoritative public endpoints to maintain historical prices and fundamental data:
 
@@ -69,9 +63,7 @@ flowchart TD
 | **SEC EDGAR API** | `data.sec.gov/api/xbrl/companyfacts/` | Official 10-K and 10-Q balance sheets, revenue, operating cash flow | Quarterly / As filed |
 | **FRED API** | `fred.stlouisfed.org/api/` | 3-Month US Treasury Rate (risk-free rate $r$ for Black-Scholes), CPI, Fed rate | Weekly |
 
----
-
-## 💾 3. Local SQLite & Parquet Schema
+## 3. Local SQLite & Parquet Schema
 
 Data is stored in `data/universe.db` to allow fast, deterministic agent querying with zero token overhead:
 
@@ -126,9 +118,7 @@ CREATE TABLE fundamentals (
 );
 ```
 
----
-
-## 🔍 4. Deterministic Helper Scripts (`scripts/`)
+## 4. Deterministic Helper Scripts (`scripts/`)
 
 To keep data management simple and repeatable, the repository provides Python scripts in `scripts/`:
 

@@ -2,8 +2,6 @@
 
 Methods used to determine the fair value of a company.
 
----
-
 ## Method 1: Historical Price-to-Sales (P/S) Ratio Reversion
 
 **Concept:**
@@ -35,8 +33,6 @@ Top-line revenue and share count changes (issuance vs. buybacks) are often easie
 *   Fisher, K. *Super Stocks*. Kenneth Fisher popularized the use of the Price-to-Sales ratio in this 1984 book. He argued that earnings are volatile and easily manipulated by accounting, whereas sales are stable. He used the P/S ratio to find undervalued "Super Companies" that were experiencing temporary earnings glitches but had strong underlying revenue generation.
 *   O'Shaughnessy, J. *What Works on Wall Street*. Through extensive quantitative backtesting of decades of stock market history, O'Shaughnessy concluded that the Price-to-Sales ratio was the single most effective valuation metric, crowning it the "King of the Value Factors" for consistently identifying market-beating stocks.
 
----
-
 ## Method 2: Reverse Discounted Cash Flow (Reverse DCF)
 
 **Concept:**
@@ -53,8 +49,6 @@ This methodology grounds valuation in reality by showing you the market's curren
     *   **Cheap Signal:** If the implied growth rate is significantly lower than the company's historical growth or reasonable forward estimates, the stock may be undervalued.
     *   **Expensive Signal:** If the implied growth rate is absurdly high or mathematically impossible given the total addressable market, the stock is likely overvalued.
 
----
-
 ## Method 3: Historical Dividend Yield Reversion
 
 **Concept:**
@@ -69,8 +63,6 @@ This directly complements dividend capture and income-generation strategies. Whe
 3.  **Signal Generation:**
     *   **Cheap Signal:** The current yield hits or exceeds the historical maximum yield band (e.g., historical yield is 2-4%, current is 4.5%).
     *   **Expensive Signal:** The current yield drops to or below the historical minimum yield band (e.g., current yield drops to 1.5%).
-
----
 
 ## Method 4: Price-to-Earnings-to-Growth (PEG) Ratio
 
@@ -87,8 +79,6 @@ A P/E ratio alone is useless for high-growth companies. A stock with a P/E of 40
 4.  **Signal Generation:**
     *   **Cheap Signal:** A PEG ratio below 1.0 generally indicates the stock is undervalued relative to its growth rate.
     *   **Expensive Signal:** A PEG ratio significantly above 1.5 or 2.0 suggests the stock's price has outpaced its realistic growth trajectory.
-
----
 
 ## Method 5: Enterprise Value to Free Cash Flow (EV/FCF)
 

@@ -2,9 +2,7 @@
 
 This roadmap outlines the phased development plan for the **Agentic Investment Advisor & Context Provider** system. The objective is to build a reliable context engine, persistent thesis memory store, US equity universe pipeline, and options modeling framework for our AI agent team.
 
----
-
-## 🗺️ High-Level Phases
+## High-Level Phases
 
 ```mermaid
 gantt
@@ -31,9 +29,7 @@ gantt
     Limit Fill & Target Price Tracker   :p6_2, after p6_1, 5d
 ```
 
----
-
-## 📌 Phase 1: Portfolio Ingestion & State Normalization
+## Phase 1: Portfolio Ingestion & State Normalization
 
 **Goal:** Establish dependable parsing of weekly portfolio snapshots (multimodal images or CSV exports) into clean, structured textual context for the agent team.
 
@@ -45,9 +41,7 @@ gantt
   - Equity holdings with covered call eligibility flag ($\ge 100$ shares).
   - Active options positions (CSPs, CCs, DTE, strike).
 
----
-
-## 📌 Phase 2: Investment Thesis Memory Engine
+## Phase 2: Investment Thesis Memory Engine
 
 **Goal:** Prevent agent amnesia and enable long-term thesis tracking across weekly runs using structured markdown dossiers.
 
@@ -62,9 +56,7 @@ gantt
   - Automatically flag broken theses with actionable sell/exit recommendations.
 - [ ] **2.3 Dossier Update Automation:** Enable agents to draft and update dossiers after approved trade executions.
 
----
-
-## 📌 Phase 3: US Equity Universe & Market Data Engine
+## Phase 3: US Equity Universe & Market Data Engine
 
 **Goal:** Provide AI agents with complete visibility over all US exchange-listed public equities without relying on restrictive, token-expensive live queries.
 
@@ -76,9 +68,7 @@ gantt
 - [ ] **3.3 Local SQLite / Parquet Cache:** Store weekly price summaries, moving averages (50-day, 200-day), 52-week ranges, and basic valuation multiples locally in `data/universe.db`.
 - [ ] **3.4 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the $\le 25$ position limit.
 
----
-
-## 📌 Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
+## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
 
 **Goal:** Model option pricing over the weekend when markets are closed, generating precise Monday market-open limit orders for cash-secured puts, covered calls, and rolls.
 
@@ -97,9 +87,7 @@ gantt
   - Detect threatened CSPs (ITM) or expiring CCs.
   - Compute net credit / debit limit orders to roll out in time and down/up in strike.
 
----
-
-## 📌 Phase 5: Sub-Agent Prompting Framework & Q&A Protocol
+## Phase 5: Sub-Agent Prompting Framework & Q&A Protocol
 
 **Goal:** Standardize system prompts and coordination protocols for the specialized agent team.
 
@@ -111,9 +99,7 @@ gantt
   - New trade proposals with target ROI, timeframe, and invalidation rules.
 - [ ] **5.4 Interactive Q&A Protocol:** Provide structured prompt flows for challenging agent assumptions, probing risk factors, and stress-testing limit orders.
 
----
-
-## 📌 Phase 6: Empirical Research Synthesis & Execution Calibration
+## Phase 6: Empirical Research Synthesis & Execution Calibration
 
 **Goal:** Build institutional skill by synthesizing published quantitative options/equity research and maintaining a lightweight order fill tracker.
 

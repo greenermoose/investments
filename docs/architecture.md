@@ -2,9 +2,7 @@
 
 This document details the multi-agent system architecture, agent team specialization, data pipelines, and decision-making workflows that power the **Agentic Investment Advisor & Context Provider**.
 
----
-
-## 🎯 Architecture Overview
+## Architecture Overview
 
 Standard LLM chatbots fail at personalized portfolio management because they suffer from:
 1. **Chatbot Friction & Guardrail Evasion:** Refusing to give specific advice or defaulting to generic broad index funds.
@@ -61,9 +59,7 @@ graph TD
     OUT_QA --> OUT_EXEC
 ```
 
----
-
-## 👥 Sub-Agent Roles & Responsibilities
+## Sub-Agent Roles & Responsibilities
 
 ### 1. Portfolio Ingestion Agent
 - **Purpose:** Parse raw portfolio artifacts into structured portfolio context.
@@ -113,9 +109,7 @@ graph TD
   - Facilitate the **Interactive User Q&A / Challenge Session**, answering user inquiries and stress-testing assumptions.
 - **Output:** Final actionable weekly executive report and execution-ready limit order table.
 
----
-
-## 🔒 Data Privacy & Ingestion Design
+## Data Privacy & Ingestion Design
 
 1. **Local-First & Git-Ignored:**
    - Brokerage screenshots, account balances, and raw CSVs are saved in `examples/`, which is permanently listed in `.gitignore`.

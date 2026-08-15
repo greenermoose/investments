@@ -2,9 +2,7 @@
 
 This document provides the end-to-end operational runbook for managing the portfolio on a weekly cycle. It includes exact master prompts, sub-agent persona prompts, output report formats, and the interactive Q&A deliberation protocol.
 
----
-
-## 📅 The Weekly Operating Cycle
+## The Weekly Operating Cycle
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -25,9 +23,7 @@ This document provides the end-to-end operational runbook for managing the portf
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-## 🤖 1. Master Agent Deliberation Prompt
+## 1. Master Agent Deliberation Prompt
 
 Copy and paste this master prompt into your AI agent workspace session each weekend to initiate the deliberation cycle:
 
@@ -53,9 +49,7 @@ Step 5 [Executive Report]: Synthesize all findings into the standard Weekly Trad
 Please begin by parsing the portfolio and presenting the Executive Report.
 ```
 
----
-
-## 📑 2. Standard Output Report Format
+## 2. Standard Output Report Format
 
 The agent team must format its weekly response as follows:
 
@@ -63,9 +57,7 @@ The agent team must format its weekly response as follows:
 # Weekly Portfolio Executive Report & Trading Plan
 **Date:** [YYYY-MM-DD] | **Target Execution:** Monday Market Open [YYYY-MM-DD]
 
----
-
-## 📋 1. Monday Limit Order Execution Sheet
+## 1. Monday Limit Order Execution Sheet
 
 | Action | Ticker | Contracts / Shares | Expiration | Strike | Modeled Fair Value | Monday Limit Price | Capital Required / Freed | Purpose / Target |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -74,9 +66,7 @@ The agent team must format its weekly response as follows:
 | **ROLL (CSP)**         | `XYZ`  | 1 Contract  | Oct $\rightarrow$ Nov | $50 $\rightarrow$ $47.50 | Net Credit $0.45 | **Net Credit $0.40** | $4,750 Collateral | Lower Cost Basis |
 | **HOLD**               | `MSFT` | 50 Shares   | N/A | N/A | N/A | N/A | N/A | Thesis Intact (Target $520) |
 
----
-
-## 🔍 2. Active Holdings & Thesis Review
+## 2. Active Holdings & Thesis Review
 
 ### 1. [TICKER] - [Company Name]
 - **Current Shares:** [N] | **Cost Basis:** $[X.XX] | **Current Price:** $[Y.YY]
@@ -84,9 +74,7 @@ The agent team must format its weekly response as follows:
 - **Catalyst Progress:** [Details on recent earnings, news, or milestones]
 - **Recommendation:** [HOLD / SELL_CC / ROLL / LIQUIDATE] with explicit rationale.
 
----
-
-## 💡 3. New Trade Proposals & Catalysts (If applicable)
+## 3. New Trade Proposals & Catalysts (If applicable)
 
 ### [TICKER] - [Company Name]
 - **Proposed Action:** [Buy Shares / Sell Cash-Secured Put at Strike $K]
@@ -95,17 +83,13 @@ The agent team must format its weekly response as follows:
 - **Target Exit Price:** $[Target Price] | **Target Annualized ROI:** [X.X%]
 - **Explicit Invalidation Criteria:** [What would prove this thesis wrong?]
 
----
-
-## 📊 4. Portfolio Allocation & Risk Health
+## 4. Portfolio Allocation & Risk Health
 - **Total Position Count:** [N / 25 Max]
 - **Capital Breakdown:** Equities: [X]% | Cash & SGOV: [Y]% | Short Option Collateral: [Z]%
 - **Safety Compliance:** 100% Cash-Secured / 100% Covered / Zero Naked Exposures.
 ```
 
----
-
-## 🗣️ 3. Interactive User Q&A / Challenge Protocol
+## 3. Interactive User Q&A / Challenge Protocol
 
 After the agent team presents the report, the user engages in an interactive deliberation to stress-test assumptions before Monday execution.
 
@@ -123,9 +107,7 @@ After the agent team presents the report, the user engages in an interactive del
 #### 4. Macro & SGOV Allocation Challenge
 > *"Why are we deploying $10k of cash into new CSPs this week instead of leaving it in SGOV earning risk-free yields ahead of the FOMC rate decision?"*
 
----
-
-## 📝 4. Post-Trade Logging
+## 4. Post-Trade Logging
 
 After executing Monday morning limit orders on your brokerage platform:
 1. Note which orders were filled and at what actual prices.

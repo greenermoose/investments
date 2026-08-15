@@ -5,11 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
----
-
 ## [2.0.0] - 2026-08-15
 
-### 🚀 Major Strategic Pivot: Agentic Investment Advisor & Context Provider
+### Major Strategic Pivot: Agentic Investment Advisor & Context Provider
 Completely overhauled repository architecture, documentation, and focus from general research/scraping into an intelligent multi-agent investment context engine.
 
 ### Added
@@ -25,8 +23,6 @@ Completely overhauled repository architecture, documentation, and focus from gen
 ### Changed
 - **README.md:** Rewritten from scratch to detail the multi-agent system vision, overcoming chatbot evasiveness and universe blindness, core safety rules, and weekly workflows.
 - **ROADMAP.md:** Restructured into 6 concrete development phases prioritizing portfolio ingestion, thesis memory, US equity universe caching, weekend options modeling, agent prompt orchestration, and empirical research calibration.
-
----
 
 ## [1.0.0] - 2026-08-01
 

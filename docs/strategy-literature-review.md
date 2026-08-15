@@ -2,8 +2,6 @@
 
 This document summarizes financial literature, expert opinions, and backtesting analyses regarding the six trading strategies proposed for the market simulator.
 
----
-
 ## 1. Scale Trading & Active Legging (Strategies 1 & 3)
 *Also known as: Interval Trading, Scaling In/Out, Averaging Down.*
 

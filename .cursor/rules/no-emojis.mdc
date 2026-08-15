@@ -1,13 +1,24 @@
 ---
-description: Prohibits use of emojis in any repository file
+description: Prohibits use of emojis and superfluous horizontal dividers in repository files
 globs: ["*"]
 alwaysApply: true
 ---
 
-# No Emojis Rule
+# Code & Markdown Style Rules
 
-## Policy
+## 1. No Emojis Policy
 
 - **CRITICAL**: Never include emojis (pictographs, smileys, symbols, or other colored icons/glyphs) in any file in this repository.
-- This applies to all file types including source code (.js, .html, .css), configuration, markdown documents (README.md, ROADMAP.md, CHANGELOG.md, etc.), and rules themselves.
-- All headings, lists, summaries, and descriptions must use text and standard ASCII symbols only.
+- This applies universally across all file types:
+  - Source code (`.js`, `.py`, `.html`, `.css`, etc.)
+  - Configuration and metadata files (`.json`, `.yaml`, `.toml`, etc.)
+  - Markdown and documentation files (`README.md`, `ROADMAP.md`, `CHANGELOG.md`, `docs/*.md`, `data/theses/*.md`, etc.)
+  - Rule files, comments, docstrings, and commit messages.
+- All headings, bullet points, callouts, and summaries must use clean text and standard ASCII symbols only.
+
+## 2. No Superfluous Horizontal Rules (`---`)
+
+- Do not use standalone horizontal rule dividers (`---`) between sections in Markdown documents.
+- Use clean, structured Markdown header hierarchies (`#`, `##`, `###`, `####`) and single blank lines for visual organization.
+- Note: Valid YAML frontmatter delimiters at the start of rule/metadata files (e.g. `.mdc`) and table syntax (e.g. `| :--- |`) are permitted.
+

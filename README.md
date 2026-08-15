@@ -2,9 +2,7 @@
 
 An intelligent, multi-agent investment advisory system engineered to overcome the limitations of standard chatbots. By maintaining full context over the entire US public equity universe, parsing weekly portfolio snapshots, managing persistent investment thesis memory, and mathematically modeling options strategies, this system empowers AI agent teams to deliver institutional-grade, actionable investment plans.
 
----
-
-## 🎯 The Problem & Vision
+## The Problem & Vision
 
 ### The Problem with Standard AI Chatbots
 - **Evasive Disclaimers & Refusals:** When asked for specific portfolio decisions, generic AI models balk, refuse to give actionable advice, or default to generic suggestions (e.g., "buy an S&P 500 index fund").
@@ -20,9 +18,7 @@ This repository serves as a **rich context provider, memory layer, and analytica
 4. **Weekend Options Theoretical Modeling:** Black-Scholes and volatility modeling to set accurate Monday morning limit orders for Cash-Secured Puts (CSPs), Covered Calls (CCs), and option rolls.
 5. **Interactive Deliberation & Q&A:** A structured framework for the user to challenge, interrogate, and refine the AI's weekly trading plan.
 
----
-
-## 🛡️ Core Portfolio Rules & Safety Constraints
+## Core Portfolio Rules & Safety Constraints
 
 The system strictly adheres to non-negotiable risk rules:
 
@@ -35,9 +31,8 @@ The system strictly adheres to non-negotiable risk rules:
 | **Concentration** | $\le 25$ Positions | Maximum ~25 high-conviction holdings to maintain portfolio clarity and depth of research. |
 | **Trade Frequency** | Weekly or Less | Analysis conducted over the weekend; limit orders placed for execution on Monday market open. |
 
----
 
-## 👥 Multi-Agent Team Architecture
+## Multi-Agent Team Architecture
 
 The system coordinates a team of specialized agent roles:
 
@@ -66,9 +61,7 @@ flowchart TD
 4. **Derivatives & Limit Pricing Specialist:** Models options pricing (Black-Scholes / IV estimation) over the weekend to compute precise Monday limit orders for Cash-Secured Puts, Covered Calls, and Rolls.
 5. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a unified **Weekly Trading Plan & Executive Report**, and leads the interactive Q&A discussion.
 
----
-
-## 🔄 Weekly Operating Workflow
+## Weekly Operating Workflow
 
 ```
 [Friday Close / Weekend]
@@ -81,9 +74,7 @@ flowchart TD
   5. Place generated Limit Orders at market open
 ```
 
----
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 investments/
@@ -106,9 +97,7 @@ investments/
 └── scripts/                            # Deterministic data ingestion & pricing helper scripts
 ```
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 1. **Explore the Documentation:**
    - Read the [Portfolio Constraints](file:///c:/Users/fyhor/Documents/GitHub/investments/docs/portfolio-constraints.md) to understand non-negotiable boundaries.

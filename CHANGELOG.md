@@ -1,3 +1,7 @@
+### 0.7.9
+
+- edited ROADMAP manually
+
 ### 0.7.8
 
 - trying to get Yahoo Finance proxy working

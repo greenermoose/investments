@@ -1,36 +1,31 @@
 # Investment App Roadmap
 
-> [!IMPORTANT]
-> **Developer & Agent Notice (Prevent Roadmap Drift)**: 
-> You **MUST** update this roadmap file immediately after writing or modifying code.
+This document outlines the system architecture and functionality to achieve the app's core investment goal of achieving a 20% annual return on investment or better on a portfolio of public companies with shares trading on exchanges in the United States.
+
+> **Developer & Agent Notice to Prevent Roadmap Drift**
+> Before and after writing code, consult this roadmap and ensure it accurately reflects the codebase.
 > - When features are implemented, move them from the **Next Features & Development Phases** section to the **Coded Features** subsection under **Current Status**.
 > - Ensure all paths, components, and services listed reflect their actual state in the codebase.
 > - Ensure `CHANGELOG.md` and this document remain synchronized.
 
-This document outlines the coding, functionality, and architectural roadmap to achieve the app's core investment goal.
-
----
-
 ## Overarching Goal
 
-Help achieve an annualized **20% Return on Investment (ROI)** over a **20-year horizon** inside a tax-advantaged **Roth IRA** (e.g., compounding starting capital of $200,000 to over $7,600,000 with zero tax drag).
-
----
+Provide specific buy-sell-hold advice to achieve an annualized **20% Return on Investment (ROI)** over a **20-year horizon** inside a tax-advantaged **Roth IRA** (e.g., compounding starting capital of $200,000 to over $7,600,000 with zero tax drag) that invests in individual stocks of public companies traded on exchanges in the United States.
 
 ## Core Strategy & Philosophy
 
-To achieve a consistent 20% return, the app is designed around five tactical pillars described in the design documents:
+To achieve a 20% return or better, the app is designed around five tactical pillars described in the design documents:
 
 1. **Rigorous Intrinsic Valuation (Low-Guesswork Metrics)**
-   * Avoid third-party data aggregators. Analyze raw **SEC EDGAR filings (10-K, 10-Q)** directly to obtain exact Trailing Twelve Months (TTM) revenue and fully diluted share counts (factoring in stock-based compensation).
+   * Do not trust third-party data aggregators without examining the original filings. Analyze raw **SEC EDGAR filings (10-K, 10-Q)** directly to obtain exact Trailing Twelve Months (TTM) revenue and fully diluted share counts (factoring in stock-based compensation).
    * Focus on metrics that are difficult to manipulate: **Price-to-Sales (P/S) historical reversion**, **Reverse Discounted Cash Flow (Reverse DCF)** growth expectations, **FCF Yield**, and **ROIC**.
 2. **Capital Velocity & Time-Stops**
-   * Focus on compounding micro-gains (e.g., target a **10% return in 90 days** on positions, which equates to ~46% annualized).
-   * Enforce a strict **90-day time-stop** on stagnant equity positions to eliminate "equity drag" and recycle capital.
+   * Focus on compounding gains (e.g., target a **10% return in 90 days** on positions, which equates to ~46% annualized).
+   * Evaluate positions using a **90-day event horizon** to eliminate "equity drag" and recycle capital aggressively.
 3. **Yield Enhancement (Options Wheel & Rolling)**
-   * Sell Out-of-the-Money (OTM) **Covered Calls** to automate disciplined exits and collect premiums.
-   * Sell **Cash-Secured Puts** (CSPs) on watchlisted "screaming buys" to monetize the wait, acquiring shares at a discount.
-   * Roll options defensively (horizontal or diagonal) exclusively for a **net credit**.
+   * Consider selling Out-of-the-Money (OTM) **Covered Calls** to automate disciplined exits and collect premiums.
+   * Consider selling **Cash-Secured Puts** (CSPs) on watchlisted "screaming buys" to monetize the wait, acquiring shares at a discount.
+   * Consider rolling options defensively (horizontal or diagonal) exclusively for a **net credit**.
 4. **The 27-Bucket Conviction Matrix**
    * **Bucket 1**: Cash equivalent (e.g., SGOV generating risk-free yield).
    * **Buckets 2–26**: Active holdings (up to 25 positions), each mapped with expected ROI and conviction scores.
@@ -39,9 +34,7 @@ To achieve a consistent 20% return, the app is designed around five tactical pil
 5. **Monte Carlo Strategy Simulator**
    * Model hypothetical future price paths and evaluate strategy outcomes using **Black-Scholes** options pricing, rather than relying on standard historical backtesting.
 
----
-
-## Current Status (New v0.6.0+ Architecture)
+## Current Status
 
 Following the `v0.6.0` refactor, the application has transitioned to a lightweight, zero-dependency browser-based architecture.
 

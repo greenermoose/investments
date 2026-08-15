@@ -13,7 +13,9 @@ The files in `examples/` are clean templates designed to:
 ## Files in this Directory
 
 - **`sample_portfolio.csv`**: A synthetic brokerage export showing standard equity holdings, SGOV cash proxy, cash reserves, and short options positions.
-- **`sample_trading_plan.md`**: A sample weekly executive report and Monday morning limit order sheet produced by the agent team.
+- **`sample_trading_plan.txt`**: A sample plain ASCII text weekly order sheet demonstrating single-session set-and-forget execution and entry-time contingencies.
+- **`sample_trading_plan.md`**: A sample weekly markdown document wrapping the plain-text order sheet produced by the agent team.
+
 
 ## How to Run the Workflow with Your Real Portfolio
 

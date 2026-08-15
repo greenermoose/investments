@@ -19,7 +19,10 @@ This document defines the strict, non-negotiable risk and allocation boundaries 
 - Single Stock Maximum Allocation: No single company equity position should exceed 15% of total portfolio net liquidating value.
 - SGOV Minimum: A minimum cash/SGOV cushion is maintained to service near-term CSP assignments.
 
-## 4. Cadence & Order Execution Rules
-- Weekly Cadence: Decisions are formulated over the weekend based on market close data.
-- Limit Orders Only: All trade recommendations must be specified as limit orders for Monday 9:30 AM ET market open. No market orders.
-- No Mid-Week Impulsive Trades: Trades execute on scheduled rebalances unless an explicit catastrophic thesis invalidation event occurs.
+## 4. Return Hurdle & Execution Cadence Rules
+- Return Hurdle: Maximize the probability of achieving a 20%+ annualized return over a multi-decade (20-year) horizon.
+- Single-Session "Set-and-Forget" Cadence: All orders are entered in a single session at Monday 9:30 AM ET (or as soon as the trader can log in). No mid-week monitoring or babysitting.
+- Limit & Contingent Orders Only: All trade recommendations must be specified as limit orders, GTC rolls, broker-native contingent orders, or deterministic execution-time branches (e.g. "if stock >= $X when placing order, submit Order A; if < $X, submit Order B instead").
+- Zero Open-Ended Ambiguity: Never present multiple-choice branches or "you decide" options. Deliver single, highest-conviction instructions for every position.
+- Hands-Off Expirations: Expiring options, assignments, and exercise settlements are handled automatically by the broker on Friday afternoon. Over the weekend, the new snapshot records execution outcomes and updates the state.
+

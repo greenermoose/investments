@@ -1,8 +1,3 @@
-# Weekly Executive Report & Trading Plan (Sample)
-
-This sample demonstrates the plain-text multi-portfolio format used across all weekly trading plan deliverables. It embodies the strict single-session "set-and-forget" execution discipline designed for busy professionals who place all orders in one sitting with zero mid-week monitoring.
-
-```
 ================================================================================
 WEEKLY TRADING PLAN: WEEK OF MONDAY, AUGUST 17, 2026 (SAMPLE)
 ================================================================================
@@ -14,7 +9,6 @@ CADENCE:   Single-session "set-and-forget" execution (Monday 9:30 AM ET or as so
            next weekend to evaluate results and generate the next plan.
 
 Execute all orders for PORTFOLIO 1 first, then proceed to PORTFOLIO 2.
-
 
 ================================================================================
 PORTFOLIO 1: PRIMARY GROWTH ACCOUNT (SAMPLE)
@@ -75,7 +69,6 @@ positions at 4:00 PM ET on Friday, August 21:
   EXPECTATION: Expires worthless OTM. Full 100 shares retained for new call
   roll next week.
 
-
 ================================================================================
 PORTFOLIO 2: SECONDARY ACCOUNT (SAMPLE)
 ================================================================================
@@ -104,8 +97,6 @@ STEP 2: FRIDAY EXPIRATION & ASSIGNMENT EXPECTATIONS (PORTFOLIO 2)
 --------------------------------------------------------------------------------
 - No active option contracts in this account. All equity positions compound passively.
 
-
 ================================================================================
 END OF TRADING PLAN
 ================================================================================
-```

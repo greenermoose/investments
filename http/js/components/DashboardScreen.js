@@ -7,7 +7,7 @@ export default {
   props: {
     userName: {
       type: String,
-      required: true
+      default: 'Investor'
     }
   },
   template: `
@@ -20,10 +20,10 @@ export default {
         <v-tab value="settings" prepend-icon="settings">Settings</v-tab>
       </v-tabs>
 
-      <!-- Welcome Message (Compact) -->
+      <!-- Dashboard Header -->
       <div class="d-flex justify-space-between align-center w-100 mb-2 flex-grow-0">
         <h2 class="text-h5 font-weight-bold">
-          Welcome back, <span class="gradient-text">{{ userName }}</span>.
+          Portfolio <span class="gradient-text">Command Center</span>
         </h2>
         <div class="text-right">
           <span class="text-caption text-medium-emphasis">Market simulator & allocation engine ready.</span>

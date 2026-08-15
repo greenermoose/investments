@@ -94,9 +94,9 @@ flowchart TD
   5. Place generated Limit Orders at market open
 ```
 
-## Running the Web Interface
+## Running the Documentation & System Guide
 
-To browse the interactive portfolio dashboard and human-facing documentation locally:
+To browse the human-facing documentation and system guide locally:
 
 ```bash
 # Start a lightweight local static web server serving http/

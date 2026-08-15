@@ -261,6 +261,61 @@ pre code {
   color: #e2e8f0;
 }
 
+/* Step Cards & Workflow Indicators */
+.step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.step-card {
+  display: flex;
+  gap: 20px;
+  background: var(--bg-color-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 20px 24px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.step-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.step-badge {
+  background: rgba(0, 212, 255, 0.15);
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border-accent);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.step-content p {
+  margin: 0 0 10px 0;
+  font-size: 0.92rem;
+}
+
+.step-content pre {
+  margin: 8px 0 0 0;
+}
+
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -274,5 +329,9 @@ pre code {
   .docs-main {
     margin-left: 0;
     padding: 24px 20px;
+  }
+  .step-card {
+    flex-direction: column;
+    gap: 12px;
   }
 }

@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 9064200000,
           "total_liabilities": 5455800000,
-          "total_shareholders_equity": 3608400000
+          "total_shareholders_equity": 3608400000,
+          "total_debt": 1900000000,
+          "short_term_debt": 629900000,
+          "long_term_debt": 1889800000,
+          "cash_and_cash_equivalents": 1826600000,
+          "cash_primary": 1364900000,
+          "marketable_securities_current": 461700000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 9383200000,
           "total_liabilities": 5872300000,
-          "total_shareholders_equity": 3510900000
+          "total_shareholders_equity": 3510900000,
+          "total_debt": 2500000000,
+          "short_term_debt": 30000000,
+          "long_term_debt": 2488000000,
+          "cash_and_cash_equivalents": 1989300000,
+          "cash_primary": 1545500000,
+          "marketable_securities_current": 443800000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 10010500000,
           "total_liabilities": 6514900000,
-          "total_shareholders_equity": 3495600000
+          "total_shareholders_equity": 3495600000,
+          "total_debt": 2500000000,
+          "short_term_debt": 582200000,
+          "long_term_debt": 2487000000,
+          "cash_and_cash_equivalents": 2359000000,
+          "cash_primary": 2160000000,
+          "marketable_securities_current": 199000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 10080300000,
           "total_liabilities": 6648400000,
-          "total_shareholders_equity": 3431900000
+          "total_shareholders_equity": 3431900000,
+          "total_debt": 2531300000,
+          "short_term_debt": 549300000,
+          "long_term_debt": 2517300000,
+          "cash_and_cash_equivalents": 2115500000,
+          "cash_primary": 1869100000,
+          "marketable_securities_current": 246400000
         }
       }
     }

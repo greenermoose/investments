@@ -1,0 +1,1154 @@
+{
+  "AAPL": {
+    "symbol": "AAPL",
+    "closing_price": 305.93,
+    "previous_close": 313.33,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ABNB": {
+    "symbol": "ABNB",
+    "closing_price": 184.06,
+    "previous_close": 178.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ADBE": {
+    "symbol": "ADBE",
+    "closing_price": 264.02,
+    "previous_close": 265.21,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ADI": {
+    "symbol": "ADI",
+    "closing_price": 389.39,
+    "previous_close": 389.93,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ADP": {
+    "symbol": "ADP",
+    "closing_price": 272.96,
+    "previous_close": 271.32,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ADSK": {
+    "symbol": "ADSK",
+    "closing_price": 251.66,
+    "previous_close": 249.08,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AEP": {
+    "symbol": "AEP",
+    "closing_price": 125.6,
+    "previous_close": 125.73,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ALNY": {
+    "symbol": "ALNY",
+    "closing_price": 228.65,
+    "previous_close": 219.2,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AMAT": {
+    "symbol": "AMAT",
+    "closing_price": 507.18,
+    "previous_close": 539.14,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "closing_price": 514.39,
+    "previous_close": 483.36,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AMGN": {
+    "symbol": "AMGN",
+    "closing_price": 415.21,
+    "previous_close": 410.95,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AMZN": {
+    "symbol": "AMZN",
+    "closing_price": 262.65,
+    "previous_close": 274.48,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "APP": {
+    "symbol": "APP",
+    "closing_price": 315.44,
+    "previous_close": 346.8,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ARM": {
+    "symbol": "ARM",
+    "closing_price": 279.44,
+    "previous_close": 282.57,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ASML": {
+    "symbol": "ASML",
+    "closing_price": 1844.08,
+    "previous_close": 1740.99,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AVGO": {
+    "symbol": "AVGO",
+    "closing_price": 392.99,
+    "previous_close": 427.76,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AXON": {
+    "symbol": "AXON",
+    "closing_price": 612.83,
+    "previous_close": 571.01,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "AXP": {
+    "symbol": "AXP",
+    "closing_price": 342.48,
+    "previous_close": 340.91,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "BA": {
+    "symbol": "BA",
+    "closing_price": 231.67,
+    "previous_close": 234.42,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "BAM": {
+    "symbol": "BAM",
+    "closing_price": 54.31,
+    "previous_close": 52.49,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "BEAM": {
+    "symbol": "BEAM",
+    "closing_price": 26.75,
+    "previous_close": 27.48,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "BETA": {
+    "symbol": "BETA",
+    "closing_price": 100.0,
+    "previous_close": 98.5,
+    "currency": "USD",
+    "exchange": "INDEX",
+    "market_time": 1786916136
+  },
+  "BKNG": {
+    "symbol": "BKNG",
+    "closing_price": 212.06,
+    "previous_close": 214.42,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "BKR": {
+    "symbol": "BKR",
+    "closing_price": 64.82,
+    "previous_close": 61.55,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "BRK-B": {
+    "symbol": "BRK-B",
+    "closing_price": 504.03,
+    "previous_close": 521.8,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737798
+  },
+  "CAT": {
+    "symbol": "CAT",
+    "closing_price": 856.57,
+    "previous_close": 842.19,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "CCEP": {
+    "symbol": "CCEP",
+    "closing_price": 107.64,
+    "previous_close": 108.29,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CDNS": {
+    "symbol": "CDNS",
+    "closing_price": 324.82,
+    "previous_close": 339.24,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CEG": {
+    "symbol": "CEG",
+    "closing_price": 282.5,
+    "previous_close": 269.89,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CHTR": {
+    "symbol": "CHTR",
+    "closing_price": 154.27,
+    "previous_close": 152.57,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CMCSA": {
+    "symbol": "CMCSA",
+    "closing_price": 26.18,
+    "previous_close": 25.36,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "COST": {
+    "symbol": "COST",
+    "closing_price": 961.1,
+    "previous_close": 947.82,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CPRT": {
+    "symbol": "CPRT",
+    "closing_price": 31.61,
+    "previous_close": 29.66,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CRM": {
+    "symbol": "CRM",
+    "closing_price": 196.21,
+    "previous_close": 192.74,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "CRSP": {
+    "symbol": "CRSP",
+    "closing_price": 53.55,
+    "previous_close": 53.52,
+    "currency": "USD",
+    "exchange": "NGM",
+    "market_time": 1786737601
+  },
+  "CRWD": {
+    "symbol": "CRWD",
+    "closing_price": 216.95,
+    "previous_close": 214.42,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CSCO": {
+    "symbol": "CSCO",
+    "closing_price": 111.68,
+    "previous_close": 121.43,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CSGP": {
+    "symbol": "CSGP",
+    "closing_price": 32.38,
+    "previous_close": 30.24,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CSIQ": {
+    "symbol": "CSIQ",
+    "closing_price": 15.14,
+    "previous_close": 15.91,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CSX": {
+    "symbol": "CSX",
+    "closing_price": 50.16,
+    "previous_close": 50.27,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CTAS": {
+    "symbol": "CTAS",
+    "closing_price": 199.52,
+    "previous_close": 203.05,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CTSH": {
+    "symbol": "CTSH",
+    "closing_price": 58.79,
+    "previous_close": 57.67,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "CVX": {
+    "symbol": "CVX",
+    "closing_price": 200.0,
+    "previous_close": 186.56,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737866
+  },
+  "DASH": {
+    "symbol": "DASH",
+    "closing_price": 217.02,
+    "previous_close": 216.26,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "DDOG": {
+    "symbol": "DDOG",
+    "closing_price": 255.46,
+    "previous_close": 233.93,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "DIS": {
+    "symbol": "DIS",
+    "closing_price": 106.85,
+    "previous_close": 104.91,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737843
+  },
+  "DXCM": {
+    "symbol": "DXCM",
+    "closing_price": 89.75,
+    "previous_close": 84.75,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "EA": {
+    "symbol": "EA",
+    "closing_price": 209.7,
+    "previous_close": 209.7,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1785873600
+  },
+  "EDIT": {
+    "symbol": "EDIT",
+    "closing_price": 2.82,
+    "previous_close": 2.88,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ENPH": {
+    "symbol": "ENPH",
+    "closing_price": 40.48,
+    "previous_close": 41.87,
+    "currency": "USD",
+    "exchange": "NGM",
+    "market_time": 1786737601
+  },
+  "ENVX": {
+    "symbol": "ENVX",
+    "closing_price": 4.39,
+    "previous_close": 4.7,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "EOSE": {
+    "symbol": "EOSE",
+    "closing_price": 4.02,
+    "previous_close": 4.15,
+    "currency": "USD",
+    "exchange": "NCM",
+    "market_time": 1786737601
+  },
+  "EXC": {
+    "symbol": "EXC",
+    "closing_price": 45.86,
+    "previous_close": 45.61,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "FANG": {
+    "symbol": "FANG",
+    "closing_price": 202.47,
+    "previous_close": 188.04,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "FAST": {
+    "symbol": "FAST",
+    "closing_price": 51.02,
+    "previous_close": 51.84,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "FER": {
+    "symbol": "FER",
+    "closing_price": 64.13,
+    "previous_close": 66.51,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "FTNT": {
+    "symbol": "FTNT",
+    "closing_price": 160.01,
+    "previous_close": 159.64,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "GEHC": {
+    "symbol": "GEHC",
+    "closing_price": 73.69,
+    "previous_close": 71.77,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "GILD": {
+    "symbol": "GILD",
+    "closing_price": 138.36,
+    "previous_close": 133.21,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "GNRC": {
+    "symbol": "GNRC",
+    "closing_price": 219.3,
+    "previous_close": 212.22,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737603
+  },
+  "GOOG": {
+    "symbol": "GOOG",
+    "closing_price": 343.54,
+    "previous_close": 353.47,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "GOOGL": {
+    "symbol": "GOOGL",
+    "closing_price": 345.9,
+    "previous_close": 354.3,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "GS": {
+    "symbol": "GS",
+    "closing_price": 1039.42,
+    "previous_close": 1039.61,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "GWH": {
+    "symbol": "GWH",
+    "closing_price": 0.62,
+    "previous_close": 0.64,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "HD": {
+    "symbol": "HD",
+    "closing_price": 338.86,
+    "previous_close": 355.62,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "HON": {
+    "symbol": "HON",
+    "closing_price": 233.96,
+    "previous_close": 246.21,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "IBM": {
+    "symbol": "IBM",
+    "closing_price": 234.32,
+    "previous_close": 237.28,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "IDXX": {
+    "symbol": "IDXX",
+    "closing_price": 550.96,
+    "previous_close": 586.67,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "INSM": {
+    "symbol": "INSM",
+    "closing_price": 123.74,
+    "previous_close": 131.1,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "INTC": {
+    "symbol": "INTC",
+    "closing_price": 102.5,
+    "previous_close": 101.65,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "INTU": {
+    "symbol": "INTU",
+    "closing_price": 345.66,
+    "previous_close": 325.25,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "ISRG": {
+    "symbol": "ISRG",
+    "closing_price": 394.51,
+    "previous_close": 378.81,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "JNJ": {
+    "symbol": "JNJ",
+    "closing_price": 260.35,
+    "previous_close": 259.24,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "JPM": {
+    "symbol": "JPM",
+    "closing_price": 362.84,
+    "previous_close": 357.52,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "KDP": {
+    "symbol": "KDP",
+    "closing_price": 31.44,
+    "previous_close": 30.01,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "KHC": {
+    "symbol": "KHC",
+    "closing_price": 25.51,
+    "previous_close": 25.32,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "KLAC": {
+    "symbol": "KLAC",
+    "closing_price": 203.72,
+    "previous_close": 198.11,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "KO": {
+    "symbol": "KO",
+    "closing_price": 87.71,
+    "previous_close": 87.05,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "LIN": {
+    "symbol": "LIN",
+    "closing_price": 482.74,
+    "previous_close": 489.98,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "LRCX": {
+    "symbol": "LRCX",
+    "closing_price": 332.36,
+    "previous_close": 311.35,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MA": {
+    "symbol": "MA",
+    "closing_price": 569.29,
+    "previous_close": 562.95,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737603
+  },
+  "MAR": {
+    "symbol": "MAR",
+    "closing_price": 356.72,
+    "previous_close": 353.91,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MCD": {
+    "symbol": "MCD",
+    "closing_price": 272.83,
+    "previous_close": 274.48,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "MCHP": {
+    "symbol": "MCHP",
+    "closing_price": 79.17,
+    "previous_close": 84.69,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MDLZ": {
+    "symbol": "MDLZ",
+    "closing_price": 63.61,
+    "previous_close": 62.61,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MELI": {
+    "symbol": "MELI",
+    "closing_price": 1844.58,
+    "previous_close": 1820.69,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "META": {
+    "symbol": "META",
+    "closing_price": 589.85,
+    "previous_close": 592.1,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MMM": {
+    "symbol": "MMM",
+    "closing_price": 182.65,
+    "previous_close": 182.9,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "MNST": {
+    "symbol": "MNST",
+    "closing_price": 46.82,
+    "previous_close": 90.36,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MPWR": {
+    "symbol": "MPWR",
+    "closing_price": 1402.01,
+    "previous_close": 1401.54,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MRK": {
+    "symbol": "MRK",
+    "closing_price": 135.84,
+    "previous_close": 128.58,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737806
+  },
+  "MRVL": {
+    "symbol": "MRVL",
+    "closing_price": 222.02,
+    "previous_close": 218.72,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MSFT": {
+    "symbol": "MSFT",
+    "closing_price": 495.4,
+    "previous_close": 499.99,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MSTR": {
+    "symbol": "MSTR",
+    "closing_price": 93.04,
+    "previous_close": 100.01,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "MU": {
+    "symbol": "MU",
+    "closing_price": 971.66,
+    "previous_close": 877.57,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "NFLX": {
+    "symbol": "NFLX",
+    "closing_price": 78.16,
+    "previous_close": 74.14,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "NKE": {
+    "symbol": "NKE",
+    "closing_price": 40.73,
+    "previous_close": 41.7,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737603
+  },
+  "NRGV": {
+    "symbol": "NRGV",
+    "closing_price": 3.79,
+    "previous_close": 3.49,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "NTLA": {
+    "symbol": "NTLA",
+    "closing_price": 11.91,
+    "previous_close": 11.94,
+    "currency": "USD",
+    "exchange": "NGM",
+    "market_time": 1786737600
+  },
+  "NVDA": {
+    "symbol": "NVDA",
+    "closing_price": 225.16,
+    "previous_close": 223.96,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "NXPI": {
+    "symbol": "NXPI",
+    "closing_price": 234.71,
+    "previous_close": 239.71,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "ODFL": {
+    "symbol": "ODFL",
+    "closing_price": 210.97,
+    "previous_close": 216.36,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "ORLY": {
+    "symbol": "ORLY",
+    "closing_price": 91.05,
+    "previous_close": 93.53,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "PANW": {
+    "symbol": "PANW",
+    "closing_price": 384.27,
+    "previous_close": 363.86,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PAYX": {
+    "symbol": "PAYX",
+    "closing_price": 122.02,
+    "previous_close": 120.04,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PCAR": {
+    "symbol": "PCAR",
+    "closing_price": 130.79,
+    "previous_close": 133.11,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PDD": {
+    "symbol": "PDD",
+    "closing_price": 84.79,
+    "previous_close": 91.76,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PEP": {
+    "symbol": "PEP",
+    "closing_price": 140.79,
+    "previous_close": 139.02,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PG": {
+    "symbol": "PG",
+    "closing_price": 144.55,
+    "previous_close": 145.79,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737809
+  },
+  "PLTR": {
+    "symbol": "PLTR",
+    "closing_price": 174.04,
+    "previous_close": 172.01,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "PYPL": {
+    "symbol": "PYPL",
+    "closing_price": 61.66,
+    "previous_close": 59.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "QCOM": {
+    "symbol": "QCOM",
+    "closing_price": 165.79,
+    "previous_close": 167.86,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "REGN": {
+    "symbol": "REGN",
+    "closing_price": 803.48,
+    "previous_close": 784.36,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "ROP": {
+    "symbol": "ROP",
+    "closing_price": 399.34,
+    "previous_close": 402.25,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "ROST": {
+    "symbol": "ROST",
+    "closing_price": 245.36,
+    "previous_close": 255.23,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "SBUX": {
+    "symbol": "SBUX",
+    "closing_price": 107.69,
+    "previous_close": 105.58,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "SEDG": {
+    "symbol": "SEDG",
+    "closing_price": 32.42,
+    "previous_close": 31.76,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "SHOP": {
+    "symbol": "SHOP",
+    "closing_price": 154.32,
+    "previous_close": 151.57,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "SHW": {
+    "symbol": "SHW",
+    "closing_price": 359.1,
+    "previous_close": 369.73,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "SLDP": {
+    "symbol": "SLDP",
+    "closing_price": 2.42,
+    "previous_close": 2.33,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737601
+  },
+  "SNPS": {
+    "symbol": "SNPS",
+    "closing_price": 421.5,
+    "previous_close": 415.99,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "STOK": {
+    "symbol": "STOK",
+    "closing_price": 31.27,
+    "previous_close": 32.71,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "STX": {
+    "symbol": "STX",
+    "closing_price": 973.44,
+    "previous_close": 812.76,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TDOC": {
+    "symbol": "TDOC",
+    "closing_price": 6.81,
+    "previous_close": 7.13,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "TEAM": {
+    "symbol": "TEAM",
+    "closing_price": 162.22,
+    "previous_close": 149.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TMUS": {
+    "symbol": "TMUS",
+    "closing_price": 182.61,
+    "previous_close": 177.19,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TRI": {
+    "symbol": "TRI",
+    "closing_price": 103.61,
+    "previous_close": 101.83,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TRV": {
+    "symbol": "TRV",
+    "closing_price": 370.36,
+    "previous_close": 384.31,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "TSLA": {
+    "symbol": "TSLA",
+    "closing_price": 342.27,
+    "previous_close": 328.58,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TTWO": {
+    "symbol": "TTWO",
+    "closing_price": 246.95,
+    "previous_close": 246.5,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "TXN": {
+    "symbol": "TXN",
+    "closing_price": 279.58,
+    "previous_close": 286.08,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "UNH": {
+    "symbol": "UNH",
+    "closing_price": 401.73,
+    "previous_close": 407.08,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "V": {
+    "symbol": "V",
+    "closing_price": 364.15,
+    "previous_close": 362.5,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "VRSK": {
+    "symbol": "VRSK",
+    "closing_price": 181.67,
+    "previous_close": 191.82,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "VRTX": {
+    "symbol": "VRTX",
+    "closing_price": 505.75,
+    "previous_close": 496.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "VZ": {
+    "symbol": "VZ",
+    "closing_price": 48.48,
+    "previous_close": 47.06,
+    "currency": "USD",
+    "exchange": "NYQ",
+    "market_time": 1786737602
+  },
+  "WBD": {
+    "symbol": "WBD",
+    "closing_price": 27.99,
+    "previous_close": 26.78,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "WDAY": {
+    "symbol": "WDAY",
+    "closing_price": 198.68,
+    "previous_close": 179.64,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "WDC": {
+    "symbol": "WDC",
+    "closing_price": 508.8,
+    "previous_close": 434.3,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "WMT": {
+    "symbol": "WMT",
+    "closing_price": 115.27,
+    "previous_close": 111.85,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "XEL": {
+    "symbol": "XEL",
+    "closing_price": 79.17,
+    "previous_close": 78.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "XYZ": {
+    "symbol": "XYZ",
+    "closing_price": 100.0,
+    "previous_close": 98.5,
+    "currency": "USD",
+    "exchange": "INDEX",
+    "market_time": 1786916164
+  },
+  "ZM": {
+    "symbol": "ZM",
+    "closing_price": 105.96,
+    "previous_close": 104.5,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  },
+  "ZS": {
+    "symbol": "ZS",
+    "closing_price": 183.6,
+    "previous_close": 168.68,
+    "currency": "USD",
+    "exchange": "NMS",
+    "market_time": 1786737600
+  }
+}

@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 97248000000,
           "total_liabilities": 63253000000,
-          "total_shareholders_equity": 32838000000
+          "total_shareholders_equity": 32838000000,
+          "total_debt": 30530000000,
+          "short_term_debt": 1493000000,
+          "long_term_debt": 32023000000,
+          "cash_and_cash_equivalents": 3369000000,
+          "cash_primary": 3369000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 97837000000,
           "total_liabilities": 64130000000,
-          "total_shareholders_equity": 32578000000
+          "total_shareholders_equity": 32578000000,
+          "total_debt": 30973000000,
+          "short_term_debt": 1493000000,
+          "long_term_debt": 32466000000,
+          "cash_and_cash_equivalents": 3264000000,
+          "cash_primary": 3264000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 100085000000,
           "total_liabilities": 62919000000,
-          "total_shareholders_equity": 35919000000
+          "total_shareholders_equity": 35919000000,
+          "total_debt": 32428000000,
+          "short_term_debt": 139000000,
+          "long_term_debt": 32567000000,
+          "cash_and_cash_equivalents": 4566000000,
+          "cash_primary": 4566000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 100519000000,
           "total_liabilities": 63214000000,
-          "total_shareholders_equity": 36018000000
+          "total_shareholders_equity": 36018000000,
+          "total_debt": 33382000000,
+          "short_term_debt": 139000000,
+          "long_term_debt": 33521000000,
+          "cash_and_cash_equivalents": 4294000000,
+          "cash_primary": 4294000000,
+          "marketable_securities_current": 0
         }
       }
     }

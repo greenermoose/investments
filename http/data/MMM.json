@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 34924000000,
           "total_liabilities": 31919000000,
-          "total_shareholders_equity": 2952000000
+          "total_shareholders_equity": 2952000000,
+          "total_debt": 12551000000,
+          "short_term_debt": 1647000000,
+          "long_term_debt": 10904000000,
+          "cash_and_cash_equivalents": 2955000000,
+          "cash_primary": 2955000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 35436000000,
           "total_liabilities": 32125000000,
-          "total_shareholders_equity": 3263000000
+          "total_shareholders_equity": 3263000000,
+          "total_debt": 12556000000,
+          "short_term_debt": 1650000000,
+          "long_term_debt": 10906000000,
+          "cash_and_cash_equivalents": 3729000000,
+          "cash_primary": 3729000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 37733000000,
           "total_liabilities": 32986000000,
-          "total_shareholders_equity": 4702000000
+          "total_shareholders_equity": 4702000000,
+          "total_debt": 12602000000,
+          "short_term_debt": 1670000000,
+          "long_term_debt": 10932000000,
+          "cash_and_cash_equivalents": 5235000000,
+          "cash_primary": 5235000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 37611000000,
           "total_liabilities": 32936000000,
-          "total_shareholders_equity": 4628000000
+          "total_shareholders_equity": 4628000000,
+          "total_debt": 12603000000,
+          "short_term_debt": 749000000,
+          "long_term_debt": 11854000000,
+          "cash_and_cash_equivalents": 4671000000,
+          "cash_primary": 4671000000,
+          "marketable_securities_current": 0
         }
       }
     }

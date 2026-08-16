@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 52562592000,
           "total_liabilities": 7235609000,
-          "total_shareholders_equity": 30886088000
+          "total_shareholders_equity": 30886088000,
+          "total_debt": 6709928000,
+          "short_term_debt": 39814000,
+          "long_term_debt": 6670114000,
+          "cash_and_cash_equivalents": 2447982000,
+          "cash_primary": 1711837000,
+          "marketable_securities_current": 736145000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 54268750000,
           "total_liabilities": 8632465000,
-          "total_shareholders_equity": 36651357000
+          "total_shareholders_equity": 36651357000,
+          "total_debt": 8196524000,
+          "short_term_debt": 31402000,
+          "long_term_debt": 8165122000,
+          "cash_and_cash_equivalents": 2207219000,
+          "cash_primary": 2207219000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 61641082000,
           "total_liabilities": 10598110000,
-          "total_shareholders_equity": 44123458000
+          "total_shareholders_equity": 44123458000,
+          "total_debt": 8190155000,
+          "short_term_debt": 31313000,
+          "long_term_debt": 8158842000,
+          "cash_and_cash_equivalents": 2301470000,
+          "cash_primary": 2301470000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 73619038000,
           "total_liabilities": 15501990000,
-          "total_shareholders_equity": 52330718000
+          "total_shareholders_equity": 52330718000,
+          "total_debt": 8173903000,
+          "short_term_debt": 316000,
+          "long_term_debt": 8173587000,
+          "cash_and_cash_equivalents": 54285000,
+          "cash_primary": 54285000,
+          "marketable_securities_current": 0
         }
       }
     }

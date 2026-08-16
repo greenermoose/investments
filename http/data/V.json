@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 95049000000,
           "total_liabilities": 59388000000,
-          "total_shareholders_equity": 35661000000
+          "total_shareholders_equity": 35661000000,
+          "total_debt": 23976000000,
+          "short_term_debt": 1559000000,
+          "long_term_debt": 22417000000,
+          "cash_and_cash_equivalents": 12404000000,
+          "cash_primary": 12404000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 96814000000,
           "total_liabilities": 58037000000,
-          "total_shareholders_equity": 38777000000
+          "total_shareholders_equity": 38777000000,
+          "total_debt": 21177000000,
+          "short_term_debt": 1589000000,
+          "long_term_debt": 19588000000,
+          "cash_and_cash_equivalents": 14756000000,
+          "cash_primary": 14756000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 99627000000,
           "total_liabilities": 61718000000,
-          "total_shareholders_equity": 37909000000
+          "total_shareholders_equity": 37909000000,
+          "total_debt": 25392000000,
+          "short_term_debt": 5569000000,
+          "long_term_debt": 19602000000,
+          "cash_and_cash_equivalents": 17164000000,
+          "cash_primary": 17164000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 100024000000,
           "total_liabilities": 61360000000,
-          "total_shareholders_equity": 38664000000
+          "total_shareholders_equity": 38664000000,
+          "total_debt": 25138000000,
+          "short_term_debt": 5548000000,
+          "long_term_debt": 19590000000,
+          "cash_and_cash_equivalents": 17092000000,
+          "cash_primary": 17092000000,
+          "marketable_securities_current": 0
         }
       }
     }

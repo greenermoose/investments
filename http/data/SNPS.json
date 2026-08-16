@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 46889027000,
           "total_liabilities": 16411962000,
-          "total_shareholders_equity": 30478131000
+          "total_shareholders_equity": 30478131000,
+          "total_debt": 10111691000,
+          "short_term_debt": 22117000,
+          "long_term_debt": 10013845000,
+          "cash_and_cash_equivalents": 2484438000,
+          "cash_primary": 2412472000,
+          "marketable_securities_current": 71966000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 47237928000,
           "total_liabilities": 16689930000,
-          "total_shareholders_equity": 30548827000
+          "total_shareholders_equity": 30548827000,
+          "total_debt": 10122546000,
+          "short_term_debt": 22117000,
+          "long_term_debt": 10022093000,
+          "cash_and_cash_equivalents": 2203482000,
+          "cash_primary": 2129572000,
+          "marketable_securities_current": 73910000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 48224461000,
           "total_liabilities": 19897446000,
-          "total_shareholders_equity": 28327602000
+          "total_shareholders_equity": 28327602000,
+          "total_debt": 13573671000,
+          "short_term_debt": 22117000,
+          "long_term_debt": 13462398000,
+          "cash_and_cash_equivalents": 2960959000,
+          "cash_primary": 2888030000,
+          "marketable_securities_current": 72929000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 48230256000,
           "total_liabilities": 20616070000,
-          "total_shareholders_equity": 27614531000
+          "total_shareholders_equity": 27614531000,
+          "total_debt": 14434607000,
+          "short_term_debt": 22117000,
+          "long_term_debt": 14318016000,
+          "cash_and_cash_equivalents": 2593710000,
+          "cash_primary": 2526475000,
+          "marketable_securities_current": 67235000
         }
       }
     }

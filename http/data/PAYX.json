@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 16174500000,
           "total_liabilities": 12439400000,
-          "total_shareholders_equity": 3735100000
+          "total_shareholders_equity": 3735100000,
+          "total_debt": 4600000000,
+          "short_term_debt": 0,
+          "long_term_debt": 4556100000,
+          "cash_and_cash_equivalents": 1124500000,
+          "cash_primary": 1088200000,
+          "marketable_securities_current": 36300000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 17511400000,
           "total_liabilities": 13497800000,
-          "total_shareholders_equity": 4013600000
+          "total_shareholders_equity": 4013600000,
+          "total_debt": 4954100000,
+          "short_term_debt": 400000000,
+          "long_term_debt": 4554100000,
+          "cash_and_cash_equivalents": 1780600000,
+          "cash_primary": 1742500000,
+          "marketable_securities_current": 38100000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 16518900000,
           "total_liabilities": 12638800000,
-          "total_shareholders_equity": 3880100000
+          "total_shareholders_equity": 3880100000,
+          "total_debt": 4952100000,
+          "short_term_debt": 399900000,
+          "long_term_debt": 4552200000,
+          "cash_and_cash_equivalents": 1523200000,
+          "cash_primary": 1485600000,
+          "marketable_securities_current": 37600000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 16663000000,
           "total_liabilities": 12692400000,
-          "total_shareholders_equity": 3970600000
+          "total_shareholders_equity": 3970600000,
+          "total_debt": 4950200000,
+          "short_term_debt": 399900000,
+          "long_term_debt": 4550300000,
+          "cash_and_cash_equivalents": 1670900000,
+          "cash_primary": 809000000,
+          "marketable_securities_current": 861900000
         }
       }
     }

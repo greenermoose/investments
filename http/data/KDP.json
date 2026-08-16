@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 87619000000,
           "total_liabilities": 53973000000,
-          "total_shareholders_equity": 25032000000
+          "total_shareholders_equity": 25032000000,
+          "total_debt": 29980000000,
+          "short_term_debt": 8394000000,
+          "long_term_debt": 21586000000,
+          "cash_and_cash_equivalents": 1517000000,
+          "cash_primary": 1517000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 73140000000,
           "total_liabilities": 39540000000,
-          "total_shareholders_equity": 25261000000
+          "total_shareholders_equity": 25261000000,
+          "total_debt": 25707000000,
+          "short_term_debt": 4816000000,
+          "long_term_debt": 20891000000,
+          "cash_and_cash_equivalents": 898000000,
+          "cash_primary": 898000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 55459000000,
           "total_liabilities": 29943000000,
-          "total_shareholders_equity": 25516000000
+          "total_shareholders_equity": 25516000000,
+          "total_debt": 16141000000,
+          "short_term_debt": 3105000000,
+          "long_term_debt": 13036000000,
+          "cash_and_cash_equivalents": 1026000000,
+          "cash_primary": 1026000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 54605000000,
           "total_liabilities": 29281000000,
-          "total_shareholders_equity": 25324000000
+          "total_shareholders_equity": 25324000000,
+          "total_debt": 15816000000,
+          "short_term_debt": 2285000000,
+          "long_term_debt": 13531000000,
+          "cash_and_cash_equivalents": 516000000,
+          "cash_primary": 516000000,
+          "marketable_securities_current": 0
         }
       }
     }

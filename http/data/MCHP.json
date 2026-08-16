@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 14407400000,
           "total_liabilities": 14407400000,
-          "total_shareholders_equity": 6451000000
+          "total_shareholders_equity": 6451000000,
+          "total_debt": 5398900000,
+          "short_term_debt": 0,
+          "long_term_debt": 5361300000,
+          "cash_and_cash_equivalents": 272300000,
+          "cash_primary": 272300000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 14370100000,
           "total_liabilities": 14370100000,
-          "total_shareholders_equity": 6432400000
+          "total_shareholders_equity": 6432400000,
+          "total_debt": 5536900000,
+          "short_term_debt": 0,
+          "long_term_debt": 5496400000,
+          "cash_and_cash_equivalents": 240300000,
+          "cash_primary": 240300000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 14325500000,
           "total_liabilities": 14325500000,
-          "total_shareholders_equity": 6560400000
+          "total_shareholders_equity": 6560400000,
+          "total_debt": 5393900000,
+          "short_term_debt": 0,
+          "long_term_debt": 5366000000,
+          "cash_and_cash_equivalents": 250700000,
+          "cash_primary": 250700000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 14469700000,
           "total_liabilities": 14469700000,
-          "total_shareholders_equity": 6695500000
+          "total_shareholders_equity": 6695500000,
+          "total_debt": 5406000000,
+          "short_term_debt": 0,
+          "long_term_debt": 5375900000,
+          "cash_and_cash_equivalents": 236800000,
+          "cash_primary": 236800000,
+          "marketable_securities_current": 0
         }
       }
     }

@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 16091000000,
           "total_liabilities": 9408000000,
-          "total_shareholders_equity": 6683000000
+          "total_shareholders_equity": 6683000000,
+          "total_debt": 3000000000,
+          "short_term_debt": 998000000,
+          "long_term_debt": 1990000000,
+          "cash_and_cash_equivalents": 4353000000,
+          "cash_primary": 559000000,
+          "marketable_securities_current": 3794000000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 18074000000,
           "total_liabilities": 10269000000,
-          "total_shareholders_equity": 7805000000
+          "total_shareholders_equity": 7805000000,
+          "total_debt": 3000000000,
+          "short_term_debt": 0,
+          "long_term_debt": 2987000000,
+          "cash_and_cash_equivalents": 5443000000,
+          "cash_primary": 1501000000,
+          "marketable_securities_current": 3942000000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 17751000000,
           "total_liabilities": 8872000000,
-          "total_shareholders_equity": 8879000000
+          "total_shareholders_equity": 8879000000,
+          "total_debt": 3000000000,
+          "short_term_debt": 0,
+          "long_term_debt": 2986000000,
+          "cash_and_cash_equivalents": 6843000000,
+          "cash_primary": 2609000000,
+          "marketable_securities_current": 4234000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 17961000000,
           "total_liabilities": 8789000000,
-          "total_shareholders_equity": 9172000000
+          "total_shareholders_equity": 9172000000,
+          "total_debt": 3000000000,
+          "short_term_debt": 0,
+          "long_term_debt": 2985000000,
+          "cash_and_cash_equivalents": 8186000000,
+          "cash_primary": 1264000000,
+          "marketable_securities_current": 6922000000
         }
       }
     }

@@ -477,19 +477,27 @@ pre code {
   display: flex;
   align-items: baseline;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .company-symbol {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.5px;
 }
 
 .company-price {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--text-secondary);
+}
+
+.company-price-prediction {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.2px;
 }
 
 .company-name {
@@ -549,6 +557,27 @@ pre code {
   align-items: center;
   padding-top: 12px;
   border-top: 1px solid var(--border-subtle);
+  gap: 8px;
+}
+
+.footer-index-chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.inspect-dossier-btn {
+  font-size: 0.82rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.company-card:hover .inspect-dossier-btn {
+  color: #38bdf8;
+  transform: translateX(2px);
 }
 
 /* Badges & Status */
@@ -594,38 +623,44 @@ pre code {
 /* Index Membership Badges */
 .index-badges {
   display: inline-flex;
-  gap: 5px;
+  gap: 6px;
   align-items: center;
-  margin-top: 4px;
   flex-wrap: wrap;
 }
 
 .badge-index {
   font-size: 0.68rem;
   font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
-  letter-spacing: 0.4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   line-height: 1.2;
+  display: inline-block;
 }
 
 .badge-index.badge-qqq {
-  background: rgba(129, 140, 248, 0.16);
+  background: rgba(99, 102, 241, 0.18);
   color: #a5b4fc;
-  border: 1px solid rgba(129, 140, 248, 0.35);
+  border: 1px solid rgba(129, 140, 248, 0.4);
 }
 
 .badge-index.badge-djia {
-  background: rgba(245, 158, 11, 0.16);
-  color: #fbbf24;
-  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
 }
 
 .badge-index.badge-sp500 {
-  background: rgba(16, 185, 129, 0.16);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.18);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-index.badge-other {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .badge-conviction {

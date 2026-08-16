@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 257548000000,
           "total_liabilities": 257548000000,
-          "total_shareholders_equity": 89763000000
+          "total_shareholders_equity": 89763000000,
+          "total_debt": 90400000000,
+          "short_term_debt": 6117000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 7678000000,
+          "cash_primary": 7661000000,
+          "marketable_securities_current": 17000000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 260002000000,
           "total_liabilities": 260002000000,
-          "total_shareholders_equity": 88274000000
+          "total_shareholders_equity": 88274000000,
+          "total_debt": 94600000000,
+          "short_term_debt": 5394000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 9486000000,
+          "cash_primary": 9468000000,
+          "marketable_securities_current": 18000000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 272631000000,
           "total_liabilities": 272631000000,
-          "total_shareholders_equity": 96903000000
+          "total_shareholders_equity": 96903000000,
+          "total_debt": 98900000000,
+          "short_term_debt": 5958000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 9495000000,
+          "cash_primary": 9481000000,
+          "marketable_securities_current": 14000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 272995000000,
           "total_liabilities": 272995000000,
-          "total_shareholders_equity": 97081000000
+          "total_shareholders_equity": 97081000000,
+          "total_debt": 99100000000,
+          "short_term_debt": 5852000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 9347000000,
+          "cash_primary": 9325000000,
+          "marketable_securities_current": 22000000
         }
       }
     }

@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 410186000000,
           "total_liabilities": 410186000000,
-          "total_shareholders_equity": 105196000000
+          "total_shareholders_equity": 105196000000,
+          "total_debt": 143448000000,
+          "short_term_debt": 21783000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1752000000,
+          "cash_primary": 1752000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 417882000000,
           "total_liabilities": 417882000000,
-          "total_shareholders_equity": 104622000000
+          "total_shareholders_equity": 104622000000,
+          "total_debt": 144231000000,
+          "short_term_debt": 28229000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 8366000000,
+          "cash_primary": 8366000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 404258000000,
           "total_liabilities": 404258000000,
-          "total_shareholders_equity": 105741000000
+          "total_shareholders_equity": 105741000000,
+          "total_debt": 139532000000,
+          "short_term_debt": 18618000000,
+          "long_term_debt": 1568000000,
+          "cash_and_cash_equivalents": 19048000000,
+          "cash_primary": 19048000000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 388331000000,
           "total_liabilities": 388331000000,
-          "total_shareholders_equity": 106345000000
+          "total_shareholders_equity": 106345000000,
+          "total_debt": 126629000000,
+          "short_term_debt": 20146000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 7706000000,
+          "cash_primary": 7706000000,
+          "marketable_securities_current": 0
         }
       }
     }

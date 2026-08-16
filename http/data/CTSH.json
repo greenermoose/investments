@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 20500000000,
           "total_liabilities": 5432000000,
-          "total_shareholders_equity": 15068000000
+          "total_shareholders_equity": 15068000000,
+          "total_debt": 568000000,
+          "short_term_debt": 33000000,
+          "long_term_debt": 535000000,
+          "cash_and_cash_equivalents": 1517000000,
+          "cash_primary": 1504000000,
+          "marketable_securities_current": 13000000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 20692000000,
           "total_liabilities": 5677000000,
-          "total_shareholders_equity": 15015000000
+          "total_shareholders_equity": 15015000000,
+          "total_debt": 576000000,
+          "short_term_debt": 33000000,
+          "long_term_debt": 543000000,
+          "cash_and_cash_equivalents": 1914000000,
+          "cash_primary": 1901000000,
+          "marketable_securities_current": 13000000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 20134000000,
           "total_liabilities": 5237000000,
-          "total_shareholders_equity": 14897000000
+          "total_shareholders_equity": 14897000000,
+          "total_debt": 584000000,
+          "short_term_debt": 33000000,
+          "long_term_debt": 551000000,
+          "cash_and_cash_equivalents": 2354000000,
+          "cash_primary": 2341000000,
+          "marketable_securities_current": 13000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 20164000000,
           "total_liabilities": 4876000000,
-          "total_shareholders_equity": 15288000000
+          "total_shareholders_equity": 15288000000,
+          "total_debt": 592000000,
+          "short_term_debt": 33000000,
+          "long_term_debt": 559000000,
+          "cash_and_cash_equivalents": 1808000000,
+          "cash_primary": 1796000000,
+          "marketable_securities_current": 12000000
         }
       }
     }

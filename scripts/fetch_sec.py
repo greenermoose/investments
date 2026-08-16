@@ -131,6 +131,50 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
             "TotalEquity"
         ])
         
+        # Debt metrics
+        short_debt = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "DebtCurrent",
+            "LongTermDebtCurrent",
+            "CommercialPaper",
+            "ShortTermBorrowings",
+            "OtherShortTermBorrowings",
+            "CurrentBorrowings",
+            "FinanceLeaseLiabilityCurrent"
+        ])
+        
+        long_debt = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "LongTermDebtNoncurrent",
+            "LongTermDebt",
+            "NoncurrentBorrowings",
+            "Borrowings",
+            "FinanceLeaseLiabilityNoncurrent"
+        ])
+        
+        total_debt_explicit = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "DebtAndCapitalLeaseObligations",
+            "LongTermDebtAndCapitalLeaseObligations",
+            "DebtInstrumentCarryingAmount"
+        ])
+        
+        # Cash & Marketable Securities metrics
+        cash_primary = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "CashAndCashEquivalentsAtCarryingValue",
+            "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+            "Cash",
+            "CashAndCashEquivalents",
+            "CashAndCashEquivalentsAtFairValue"
+        ])
+        
+        marketable_sec = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "MarketableSecuritiesCurrent",
+            "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+            "ShortTermInvestments"
+        ])
+        
+        cash_and_inv = extract_metric(facts, ["us-gaap", "ifrs-full"], [
+            "CashCashEquivalentsAndShortTermInvestments"
+        ])
+        
         # Find candidate filing dates
         valid_dates = []
         valid_forms = ["10-Q", "10-K", "20-F", "40-F", "6-K"]
@@ -192,6 +236,24 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
             e_node = next((x for x in equity if x.get("end") == end_date), None) if equity else None
             e_val = e_node["val"] if e_node else 0
             
+            # Debt calculation
+            st_d = next((x["val"] for x in short_debt if x.get("end") == end_date), 0) if short_debt else 0
+            lt_d = next((x["val"] for x in long_debt if x.get("end") == end_date), 0) if long_debt else 0
+            tot_d_exp = next((x["val"] for x in total_debt_explicit if x.get("end") == end_date), 0) if total_debt_explicit else 0
+            
+            calculated_debt = tot_d_exp if tot_d_exp > 0 else (st_d + lt_d)
+            if calculated_debt == 0 and lt_d > 0:
+                calculated_debt = lt_d
+                
+            # Cash & Equivalents calculation
+            c_val = next((x["val"] for x in cash_primary if x.get("end") == end_date), 0) if cash_primary else 0
+            m_val = next((x["val"] for x in marketable_sec if x.get("end") == end_date), 0) if marketable_sec else 0
+            ci_val = next((x["val"] for x in cash_and_inv if x.get("end") == end_date), 0) if cash_and_inv else 0
+            
+            calculated_cash = ci_val if ci_val > 0 else (c_val + m_val)
+            if calculated_cash == 0 and c_val > 0:
+                calculated_cash = c_val
+            
             filings.append({
                 "type": d["form"],
                 "filing_date": filed_date,
@@ -204,7 +266,13 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
                     "balance_sheet": {
                         "total_assets": a_val,
                         "total_liabilities": l_val,
-                        "total_shareholders_equity": e_val
+                        "total_shareholders_equity": e_val,
+                        "total_debt": calculated_debt,
+                        "short_term_debt": st_d,
+                        "long_term_debt": lt_d,
+                        "cash_and_cash_equivalents": calculated_cash,
+                        "cash_primary": c_val,
+                        "marketable_securities_current": m_val
                     }
                 }
             })
@@ -235,9 +303,14 @@ def main():
     with urllib.request.urlopen(req) as resp:
         tickers_data = json.loads(resp.read().decode("utf-8"))
         
-    ticker_to_cik = {}
+    ticker_to_cik = {
+        "AEP": "0000004904",
+        "BRK-B": "0001067983"
+    }
     for entry in tickers_data.values():
-        ticker_to_cik[entry["ticker"].upper()] = str(entry["cik_str"]).zfill(10)
+        t = entry["ticker"].upper()
+        if t not in ticker_to_cik:
+            ticker_to_cik[t] = str(entry["cik_str"]).zfill(10)
         
     symbols = args.symbols if args.symbols else load_universe_symbols()
     print(f"Ingesting SEC EDGAR data for {len(symbols)} public equities...")

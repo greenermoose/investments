@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 26951400000,
           "total_liabilities": 26951400000,
-          "total_shareholders_equity": 3854700000
+          "total_shareholders_equity": 3854700000,
+          "total_debt": 9825700000,
+          "short_term_debt": 1498400000,
+          "long_term_debt": 8327300000,
+          "cash_and_cash_equivalents": 293500000,
+          "cash_primary": 293500000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 26378700000,
           "total_liabilities": 26378700000,
-          "total_shareholders_equity": 4431100000
+          "total_shareholders_equity": 4431100000,
+          "total_debt": 9323200000,
+          "short_term_debt": 100000,
+          "long_term_debt": 9323100000,
+          "cash_and_cash_equivalents": 216900000,
+          "cash_primary": 216900000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 25901700000,
           "total_liabilities": 25901700000,
-          "total_shareholders_equity": 4598300000
+          "total_shareholders_equity": 4598300000,
+          "total_debt": 9670800000,
+          "short_term_debt": 350100000,
+          "long_term_debt": 9320700000,
+          "cash_and_cash_equivalents": 207200000,
+          "cash_primary": 207200000,
+          "marketable_securities_current": 0
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 26206400000,
           "total_liabilities": 26206400000,
-          "total_shareholders_equity": 4425300000
+          "total_shareholders_equity": 4425300000,
+          "total_debt": 9668600000,
+          "short_term_debt": 350500000,
+          "long_term_debt": 9318100000,
+          "cash_and_cash_equivalents": 241500000,
+          "cash_primary": 241500000,
+          "marketable_securities_current": 0
         }
       }
     }

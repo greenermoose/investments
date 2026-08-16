@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 201061000000,
           "total_liabilities": 116090000000,
-          "total_shareholders_equity": 84971000000
+          "total_shareholders_equity": 84971000000,
+          "total_debt": 49036000000,
+          "short_term_debt": 11692000000,
+          "long_term_debt": 37344000000,
+          "cash_and_cash_equivalents": 20758000000,
+          "cash_primary": 20422000000,
+          "marketable_securities_current": 336000000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 200894000000,
           "total_liabilities": 119708000000,
-          "total_shareholders_equity": 81186000000
+          "total_shareholders_equity": 81186000000,
+          "total_debt": 54987000000,
+          "short_term_debt": 17460000000,
+          "long_term_debt": 37527000000,
+          "cash_and_cash_equivalents": 22051000000,
+          "cash_primary": 21688000000,
+          "marketable_securities_current": 363000000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 199210000000,
           "total_liabilities": 117666000000,
-          "total_shareholders_equity": 81544000000
+          "total_shareholders_equity": 81544000000,
+          "total_debt": 47933000000,
+          "short_term_debt": 8495000000,
+          "long_term_debt": 39438000000,
+          "cash_and_cash_equivalents": 20102000000,
+          "cash_primary": 19709000000,
+          "marketable_securities_current": 393000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 192816000000,
           "total_liabilities": 113539000000,
-          "total_shareholders_equity": 79277000000
+          "total_shareholders_equity": 79277000000,
+          "total_debt": 45795000000,
+          "short_term_debt": 6387000000,
+          "long_term_debt": 39408000000,
+          "cash_and_cash_equivalents": 18562000000,
+          "cash_primary": 18231000000,
+          "marketable_securities_current": 331000000
         }
       }
     }

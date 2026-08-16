@@ -14,7 +14,13 @@
         "balance_sheet": {
           "total_assets": 51356000000,
           "total_liabilities": 43522000000,
-          "total_shareholders_equity": 7834000000
+          "total_shareholders_equity": 7834000000,
+          "total_debt": 10675000000,
+          "short_term_debt": 49000000,
+          "long_term_debt": 10626000000,
+          "cash_and_cash_equivalents": 5730000000,
+          "cash_primary": 3649000000,
+          "marketable_securities_current": 2081000000
         }
       }
     },
@@ -30,7 +36,13 @@
         "balance_sheet": {
           "total_assets": 46934000000,
           "total_liabilities": 39653000000,
-          "total_shareholders_equity": 7281000000
+          "total_shareholders_equity": 7281000000,
+          "total_debt": 4611000000,
+          "short_term_debt": 48000000,
+          "long_term_debt": 9927000000,
+          "cash_and_cash_equivalents": 5650000000,
+          "cash_primary": 3677000000,
+          "marketable_securities_current": 1973000000
         }
       }
     },
@@ -46,7 +58,13 @@
         "balance_sheet": {
           "total_assets": 42667000000,
           "total_liabilities": 35919000000,
-          "total_shareholders_equity": 6748000000
+          "total_shareholders_equity": 6748000000,
+          "total_debt": 4570000000,
+          "short_term_debt": 48000000,
+          "long_term_debt": 9193000000,
+          "cash_and_cash_equivalents": 6299000000,
+          "cash_primary": 3670000000,
+          "marketable_securities_current": 2629000000
         }
       }
     },
@@ -62,7 +80,13 @@
         "balance_sheet": {
           "total_assets": 36691000000,
           "total_liabilities": 30473000000,
-          "total_shareholders_equity": 6218000000
+          "total_shareholders_equity": 6218000000,
+          "total_debt": 3409000000,
+          "short_term_debt": 42000000,
+          "long_term_debt": 7840000000,
+          "cash_and_cash_equivalents": 6297000000,
+          "cash_primary": 2582000000,
+          "marketable_securities_current": 3715000000
         }
       }
     }

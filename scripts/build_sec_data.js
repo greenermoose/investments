@@ -54,15 +54,34 @@ function processCompany(symbol, filings) {
             };
         });
 
-    // Get latest shares outstanding
+    // Get latest shares outstanding, total debt, and cash & equivalents
     let latestShares = null;
     let latestSharesDate = null;
+    let latestDebt = null;
+    let latestDebtDate = null;
+    let latestCash = null;
+    let latestCashDate = null;
+
     for (const f of validFilings) {
+        const d = parseDate(f.period_end);
         if (f.data.shares_outstanding) {
-            const d = parseDate(f.period_end);
             if (!latestSharesDate || d > latestSharesDate) {
                 latestSharesDate = d;
                 latestShares = f.data.shares_outstanding;
+            }
+        }
+        if (f.data.balance_sheet) {
+            if (f.data.balance_sheet.total_debt !== undefined && f.data.balance_sheet.total_debt !== null) {
+                if (!latestDebtDate || d > latestDebtDate) {
+                    latestDebtDate = d;
+                    latestDebt = f.data.balance_sheet.total_debt;
+                }
+            }
+            if (f.data.balance_sheet.cash_and_cash_equivalents !== undefined && f.data.balance_sheet.cash_and_cash_equivalents !== null) {
+                if (!latestCashDate || d > latestCashDate) {
+                    latestCashDate = d;
+                    latestCash = f.data.balance_sheet.cash_and_cash_equivalents;
+                }
             }
         }
     }
@@ -100,9 +119,6 @@ function processCompany(symbol, filings) {
                     selected.push(f);
                     currentDays += f.days;
                     currentRevenue += f.data.revenue;
-                } else {
-                    // Try to see if taking it would be closer to 365 than skipping
-                    // but usually we strictly want <= 390 to avoid overcounting quarters
                 }
             }
             
@@ -123,7 +139,9 @@ function processCompany(symbol, filings) {
 
     return {
         shares_outstanding: latestShares,
-        ttm_revenue: bestTtmRevenue
+        ttm_revenue: bestTtmRevenue,
+        total_debt: latestDebt,
+        cash_and_cash_equivalents: latestCash
     };
 }
 

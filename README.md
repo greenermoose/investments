@@ -94,20 +94,24 @@ flowchart TD
   5. Place generated Limit Orders at market open
 ```
 
-## Running the Documentation & System Guide
+## Running the Documentation & Universe Explorer
 
-To browse the human-facing documentation and system guide locally:
+To browse the company universe, investment theses, and human-facing documentation locally:
 
 ```bash
 # Start a lightweight local static web server serving http/
 python -m http.server -d http 8080
 ```
 
-Then open `http://localhost:8080` in your web browser. You can access the documentation hub directly at `http://localhost:8080/docs/index.html`.
+Then open `http://localhost:8080` in your web browser:
+- **[Public Company Universe & SEC Provenance](http/universe.html):** Explore all tracked US equities, filter by sector/status, and audit primary source SEC EDGAR 10-K/10-Q filings.
+- **[Investment Theses & Memory](http/theses.html):** Inspect active thesis dossiers, catalyst milestones, invalidation criteria, and price targets.
+- **[Documentation Hub](http/docs/index.html):** Read architectural guides, options math, and deliberation protocols.
 
 ## Getting Started
 
-1. **Explore the Documentation:**
+1. **Explore the Public Intelligence & Documentation:**
+   - Browse the [Public Company Universe](http/universe.html) and [Investment Theses](http/theses.html).
    - Read the [Documentation Hub](http/docs/index.html) or [Architecture Guide](http/docs/architecture.html).
    - Review [Portfolio Constraints](http/docs/strategies.html) to understand non-negotiable boundaries.
    - Inspect [examples/](examples/README.md) to see synthetic inputs and output formats.

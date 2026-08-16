@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Theses & Memory Dossiers - Agentic Advisor</title>
+  <link rel="stylesheet" href="css/roboto-fonts.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Intelligence & Universe</div>
+      <a href="universe.html" class="docs-nav-link">Company Universe & SEC</a>
+      <a href="theses.html" class="docs-nav-link active">Investment Theses</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview</div>
+      <a href="index.html" class="docs-nav-link">System Overview & Guide</a>
+      <a href="docs/index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="docs/architecture.html" class="docs-nav-link">System Architecture</a>
+      <a href="docs/workflow.html" class="docs-nav-link">Weekly Workflow</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy & Risk</div>
+      <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="docs/options.html" class="docs-nav-link">Options & Limit Pricing</a>
+      <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Investment Theses & Thesis Memory</h1>
+      <p class="docs-lead">Persistent, audited investment dossiers tracking high-conviction US equities, multi-year catalyst calendars, explicit invalidation criteria, and weekly deliberation logs.</p>
+    </div>
+
+    <div class="stats-ribbon">
+      <div class="stat-box">
+        <div class="stat-label">Active Theses</div>
+        <div class="stat-value" style="color: #10b981;">14</div>
+        <div class="stat-sub">Tracked in context/theses/</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Avg Conviction</div>
+        <div class="stat-value" style="color: #00d4ff;">8.9 / 10</div>
+        <div class="stat-sub">High-Quality Compounders</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Target Compounding</div>
+        <div class="stat-value" style="color: #818cf8;">18.5%</div>
+        <div class="stat-sub">Expected Annualized ROI</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Portfolio Limit</div>
+        <div class="stat-value">25</div>
+        <div class="stat-sub">Strict Holding Ceiling</div>
+      </div>
+    </div>
+
+    <div class="callout important">
+      <div class="callout-title">Thesis & Memory Protocol</div>
+      <p>Under our multi-agent architecture, the <strong>Thesis & Memory Agent</strong> maintains persistent Markdown dossiers in <code>context/theses/*.md</code>. Every position is reviewed weekly against explicit catalyst milestones and invalidation triggers. If a thesis is broken, liquidation is mandated.</p>
+    </div>
+
+    <!-- Theses List Container -->
+    <div id="theses-container" style="display: flex; flex-direction: column; gap: 28px; margin-top: 28px;">
+      
+      <!-- AAPL Thesis Card -->
+      <div class="step-card" style="display: block;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">AAPL &bull; Apple Inc.</h3>
+              <span class="badge-conviction">Conviction: 9.2 / 10.0</span>
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Consumer Electronics & High-Margin Digital Services</div>
+          </div>
+          <span class="badge-status active-long">ACTIVE LONG</span>
+        </div>
+
+        <div class="company-metrics-grid" style="margin: 12px 0;">
+          <div class="metric-item">
+            <span class="metric-label">Entry Cost Basis</span>
+            <span class="metric-val">$195.50</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Exit Price</span>
+            <span class="metric-val" style="color: #10b981;">$275.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Expected Holding Period</span>
+            <span class="metric-val">3 to 5 Years</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Annualized ROI</span>
+            <span class="metric-val" style="color: #00d4ff;">18.5%</span>
+          </div>
+        </div>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+          Apple operates the world's most lucrative consumer hardware and services ecosystem with over 2.2B active devices. The convergence of privacy-first edge AI (Apple Intelligence) and high-margin recurring Services ($95B+ run rate, 74% gross margin) provides durable pricing power, massive free cash flow, and sustained double-digit EPS compounding fueled by $100B+ annual share repurchases.
+        </p>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Target Window</th>
+              <th>Catalyst Event</th>
+              <th>Expected Outcome</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>2026-Q3</code></td>
+              <td>Apple Intelligence International Localization</td>
+              <td>Expansion to Europe and Asia driving international upgrade cycle</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2026-Q4</code></td>
+              <td>iPhone 17 Launch & Holiday Quarter</td>
+              <td>Double-digit revenue acceleration in Greater China and Americas</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2027-Q1</code></td>
+              <td>Services Revenue Milestone ($28B/Quarter)</td>
+              <td>Margin mix expansion raising corporate gross margin > 47%</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+        <div class="callout warning" style="margin: 8px 0 16px 0;">
+          <p style="margin: 0; font-size: 0.9rem;">
+            1. Regulatory destruction of App Store economics (>50% margin decline).<br />
+            2. Active device installed base decline across two consecutive quarters.<br />
+            3. Catastrophic supply chain disruption lasting >9 months without alternative sourcing.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+          <a href="https://www.sec.gov/edgar/browse/?CIK=320193" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+            Primary SEC EDGAR CIK: 0000320193 &rarr;
+          </a>
+          <a href="universe.html" class="link-btn">
+            Inspect Full Company Dossier &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- MSFT Thesis Card -->
+      <div class="step-card" style="display: block;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">MSFT &bull; Microsoft Corporation</h3>
+              <span class="badge-conviction">Conviction: 9.5 / 10.0</span>
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Enterprise Cloud Infrastructure & Productivity Software</div>
+          </div>
+          <span class="badge-status active-long">ACTIVE LONG</span>
+        </div>
+
+        <div class="company-metrics-grid" style="margin: 12px 0;">
+          <div class="metric-item">
+            <span class="metric-label">Entry Cost Basis</span>
+            <span class="metric-val">$380.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Exit Price</span>
+            <span class="metric-val" style="color: #10b981;">$540.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Expected Holding Period</span>
+            <span class="metric-val">3 to 5 Years</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Annualized ROI</span>
+            <span class="metric-val" style="color: #00d4ff;">19.0%</span>
+          </div>
+        </div>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+          Microsoft holds an unassailable commercial moat across enterprise IT, cloud infrastructure (Azure), productivity tools (M365), and developer platforms (GitHub). Azure is winning market share in generative AI workloads, while Copilot monetization introduces an incremental $30/user/month high-margin subscription stream across hundreds of millions of commercial enterprise seats.
+        </p>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Target Window</th>
+              <th>Catalyst Event</th>
+              <th>Expected Outcome</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>2026-Q3</code></td>
+              <td>Maia Custom Silicon Deployment</td>
+              <td>Azure AI infrastructure margins stabilize >70%</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2026-Q4</code></td>
+              <td>M365 Copilot Enterprise Conversion</td>
+              <td>Paid Copilot seat adoption reaching 15% of E3/E5 enterprise base</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2027-Q2</code></td>
+              <td>Windows Next-Gen AI System</td>
+              <td>Enterprise PC refresh driving commercial Windows OEM revenue</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+        <div class="callout warning" style="margin: 8px 0 16px 0;">
+          <p style="margin: 0; font-size: 0.9rem;">
+            1. Azure constant-currency growth decelerates below 18% YoY for two quarters.<br />
+            2. Structural displacement of Office 365 / GitHub by open-source alternatives.<br />
+            3. Datacenter capex overbuild without monetization reducing ROIC below 18%.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+          <a href="https://www.sec.gov/edgar/browse/?CIK=0000789019" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+            Primary SEC EDGAR CIK: 0000789019 &rarr;
+          </a>
+          <a href="universe.html" class="link-btn">
+            Inspect Full Company Dossier &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- NVDA Thesis Card -->
+      <div class="step-card" style="display: block;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">NVDA &bull; NVIDIA Corporation</h3>
+              <span class="badge-conviction">Conviction: 9.4 / 10.0</span>
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Accelerated Computing & AI Datacenter Infrastructure</div>
+          </div>
+          <span class="badge-status active-long">ACTIVE LONG</span>
+        </div>
+
+        <div class="company-metrics-grid" style="margin: 12px 0;">
+          <div class="metric-item">
+            <span class="metric-label">Entry Cost Basis</span>
+            <span class="metric-val">$98.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Exit Price</span>
+            <span class="metric-val" style="color: #10b981;">$180.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Expected Holding Period</span>
+            <span class="metric-val">2 to 4 Years</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Annualized ROI</span>
+            <span class="metric-val" style="color: #00d4ff;">24.0%</span>
+          </div>
+        </div>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+          NVIDIA is the compute standard for the AI era. With over 5 million developers anchored to the proprietary CUDA software platform and hardware innovations across NVLink optical interconnects and Blackwell full-stack architecture, NVIDIA maintains pricing power, gross margins above 72%, and exceptional ROIC exceeding 65%.
+        </p>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Target Window</th>
+              <th>Catalyst Event</th>
+              <th>Expected Outcome</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>2026-Q3</code></td>
+              <td>Blackwell GB200 Volume Shipments</td>
+              <td>Hyperscalers ramp liquid-cooled rack clusters</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2026-Q4</code></td>
+              <td>Sovereign & Enterprise Datacenter Demand</td>
+              <td>Broadening non-hyperscaler revenue past 30% of datacenter total</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2027-Q2</code></td>
+              <td>Rubin Architecture Reveal</td>
+              <td>3nm compute and HBM4 memory architecture extending lead</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+        <div class="callout warning" style="margin: 8px 0 16px 0;">
+          <p style="margin: 0; font-size: 0.9rem;">
+            1. Hyperscalers migrating >40% of AI training workloads to internal custom ASICs.<br />
+            2. Non-GAAP gross margin falling below 62% due to severe price competition.<br />
+            3. Advanced packaging supply halt lasting >6 months.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+          <a href="https://www.sec.gov/edgar/browse/?CIK=0001045810" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+            Primary SEC EDGAR CIK: 0001045810 &rarr;
+          </a>
+          <a href="universe.html" class="link-btn">
+            Inspect Full Company Dossier &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- BRK-B Thesis Card -->
+      <div class="step-card" style="display: block;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">BRK-B &bull; Berkshire Hathaway Inc.</h3>
+              <span class="badge-conviction">Conviction: 8.9 / 10.0</span>
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NYSE &bull; Multi-Sector Conglomerate, Insurance & Infrastructure</div>
+          </div>
+          <span class="badge-status active-long">ACTIVE LONG</span>
+        </div>
+
+        <div class="company-metrics-grid" style="margin: 12px 0;">
+          <div class="metric-item">
+            <span class="metric-label">Entry Cost Basis</span>
+            <span class="metric-val">$395.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Exit Price</span>
+            <span class="metric-val" style="color: #10b981;">$520.00</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Expected Holding Period</span>
+            <span class="metric-val">5+ Years</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Target Annualized ROI</span>
+            <span class="metric-val" style="color: #00d4ff;">14.0%</span>
+          </div>
+        </div>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+          Berkshire Hathaway is the core defensive ballast for long-term compounding. With over $170B in negative-cost insurance float and a record $250B+ cash/T-bill fortress reserve earning 5%+ risk-free yield, Berkshire provides unmatched downside protection and deep optionality to execute opportunistic multi-billion dollar capital deployments during market downturns.
+        </p>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Target Window</th>
+              <th>Catalyst Event</th>
+              <th>Expected Outcome</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>2026-Q3</code></td>
+              <td>T-Bill Interest Income Compounding</td>
+              <td>Over $3.5B quarterly interest income boosting operating cash flow</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2026-Q4</code></td>
+              <td>GEICO Underwriting Optimization</td>
+              <td>Combined ratio sustained below 89%</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+            <tr>
+              <td><code>2027-Q2</code></td>
+              <td>Strategic Acquisition Deployment</td>
+              <td>Deployment of $30B-$50B cash into high-ROIC operating business</td>
+              <td><span class="badge-status watchlist">PENDING</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+        <div class="callout warning" style="margin: 8px 0 16px 0;">
+          <p style="margin: 0; font-size: 0.9rem;">
+            1. Destructive major acquisitions with material write-downs post-succession.<br />
+            2. Sustained underwriting losses across primary insurance groups (combined ratio >105%).<br />
+            3. Loss of decentralized autonomous operational culture.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+          <a href="https://www.sec.gov/edgar/browse/?CIK=0001067983" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+            Primary SEC EDGAR CIK: 0001067983 &rarr;
+          </a>
+          <a href="universe.html" class="link-btn">
+            Inspect Full Company Dossier &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

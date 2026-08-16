@@ -33,3 +33,9 @@
 - **Execution-Time Contingencies & Broker Conditions**: If market conditions may differ when the trader places orders, provide deterministic execution-time branching (e.g. "If ticker >= $X at order entry, submit Limit Order A; if ticker < $X, submit Limit Order B instead") or broker-native contingent / GTC limit orders entered during the same single session.
 - **Hands-Off Expiration & Settlement**: Friday option expirations, cash assignments, and call-aways settle automatically with the broker at 4:00 PM ET with zero mid-week intervention. The weekend snapshot records execution outcomes and updates the state for the following week.
 
+## 6. Data Provenance, Parametric Knowledge & Verification Rules
+- **Source Authority Hierarchy**: Adhere strictly to the 5-tier source hierarchy defined in `context/sources/catalog.md`. Tier 1 Primary Regulatory Filings (SEC EDGAR) and Direct Exchange Feeds always supersede secondary aggregators (Tier 2) and agent parametric memory (Tier 4).
+- **Agent Parametric Knowledge & Self-Description**: It is fully acceptable for AI agents to source information from pre-training, supervised fine-tuning (SFT), and reinforcement learning (RL) without external tools. However, this provenance must be explicitly marked (`TIER_4_AGENT_PARAMETRIC_KNOWLEDGE`). When an agent does not have access to telemetry revealing its base model name or cutoff date, it must provide a transparent runtime context signature (recording system clock timestamp, active role persona, and user prompt context).
+- **Verification & Errata Workflow**: When any stored claim, financial figure, or assumption is identified as erroneous, stale, or hallucinated, agents must follow the reconciliation workflow: verify against Tier 1 SEC data, update the affected dossier or data file in place, and record the entry in `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
+
+

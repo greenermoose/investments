@@ -56,17 +56,22 @@ gantt
   - Automatically flag broken theses with actionable sell/exit recommendations.
 - [ ] **2.3 Dossier Update Automation:** Enable agents to draft and update dossiers after approved trade executions.
 
-## Phase 3: US Equity Universe & Market Data Engine
+## Phase 3: US Equity Universe, Data Sources & Provenance Engine
 
-**Goal:** Provide AI agents with complete visibility over all US exchange-listed public equities without relying on restrictive, token-expensive live queries.
+**Goal:** Establish authoritative data source hierarchy, access methodologies, AI agent parametric knowledge attribution, and US equity universe visibility.
 
-- [ ] **3.1 Complete US Ticker Directory:** Generate and maintain a comprehensive list of all active stocks on NYSE, NASDAQ, and AMEX (~4,000–6,000 tickers).
-- [ ] **3.2 Free Trustworthy API Connectors:** Build lightweight, deterministic Python scripts in `scripts/` leveraging public data sources:
-  - `yfinance` / Yahoo Finance (historical daily/weekly OHLCV, market cap, PE, beta).
-  - SEC EDGAR API (10-K, 10-Q filing dates, income statements, balance sheets).
-  - Federal Reserve Economic Data (FRED) for interest rate & macro context.
-- [ ] **3.3 Local SQLite / Parquet Cache:** Store weekly price summaries, moving averages (50-day, 200-day), 52-week ranges, and basic valuation multiples locally in `scripts/data/universe.db`.
-- [ ] **3.4 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the 25 position limit.
+- [x] **3.1 Authoritative Data Sources & Provenance Architecture:**
+  - Codify 5-tier source hierarchy in `context/sources/catalog.md` (Tier 1 SEC EDGAR / Exchanges down to Tier 4 Agent Parametric Memory).
+  - Define granular data provenance schema (`context/schemas/data_provenance.json`) and agent runtime context signature.
+  - Implement data verification and errata tracking protocol (`context/schemas/errata_schema.json`, `context/research/errata_log.md`).
+  - Publish interactive web guide at `http/docs/sources.html`.
+- [ ] **3.2 Complete US Ticker Directory:** Generate and maintain a comprehensive list of all active stocks on NYSE, NASDAQ, and AMEX (~4,000–6,000 tickers).
+- [ ] **3.3 Free Trustworthy API Connectors & CLI Utilities:** Build and maintain lightweight deterministic scripts in `scripts/`:
+  - `scripts/fetch_sec.py` for SEC EDGAR XBRL company facts API.
+  - `yfinance` / Yahoo Finance connector (historical daily/weekly OHLCV, market cap, PE, beta).
+  - Federal Reserve Economic Data (FRED) connector for risk-free rates & macro context.
+- [ ] **3.4 Local SQLite / Parquet Cache:** Store weekly price summaries, moving averages (50-day, 200-day), 52-week ranges, and basic valuation multiples locally in `scripts/data/universe.db`.
+- [ ] **3.5 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the 25 position limit.
 
 ## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
 

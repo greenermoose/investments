@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DataProvenance",
+  "description": "Schema for recording data provenance, source authority tier, retrieval methodology, and AI agent parametric self-description context.",
+  "type": "object",
+  "properties": {
+    "provenance_id": {
+      "type": "string",
+      "description": "Unique identifier for the provenance record (e.g., PROV-2026-08-16-001)."
+    },
+    "fact_or_metric": {
+      "type": "string",
+      "description": "Description of the specific data point, claim, valuation metric, or financial figure."
+    },
+    "value": {
+      "description": "The recorded data value (numeric, string, boolean, or structured object)."
+    },
+    "source_tier": {
+      "type": "string",
+      "enum": [
+        "TIER_1_PRIMARY_REGULATORY",
+        "TIER_1_PRIMARY_EXCHANGE",
+        "TIER_2_FINANCIAL_AGGREGATOR",
+        "TIER_2_MACRO_DATABASE",
+        "TIER_3_QUANT_LITERATURE",
+        "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "TIER_5_HUMAN_DIRECT_ENTRY"
+      ],
+      "description": "Authoritative tier of the data source."
+    },
+    "source_name": {
+      "type": "string",
+      "description": "Name of the source (e.g., SEC EDGAR 10-K, Yahoo Finance, FRED, Internal Agent Memory)."
+    },
+    "access_method": {
+      "type": "string",
+      "enum": [
+        "deterministic_script",
+        "official_rest_api",
+        "tool_web_search",
+        "tool_url_read",
+        "tool_file_view",
+        "brokerage_snapshot_ingest",
+        "agent_parametric_inference",
+        "manual_human_lookup"
+      ],
+      "description": "Methodology used to retrieve or infer the data."
+    },
+    "retrieval_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the data was retrieved or generated."
+    },
+    "source_locator": {
+      "type": "string",
+      "description": "Direct URI, accession number, search query, or local file path where source data resides."
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date for which the data is valid or reported (e.g., fiscal quarter end date or market close date)."
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNCERTAIN"],
+      "description": "Assessed reliability and freshness of the data point."
+    },
+    "agent_context_signature": {
+      "type": "object",
+      "description": "Metadata recording runtime agent state when data is produced via parametric knowledge or unverified generation.",
+      "properties": {
+        "is_parametric_knowledge": {
+          "type": "boolean",
+          "description": "True if the data originates from model internal weights without external tool verification."
+        },
+        "system_clock_timestamp": {
+          "type": "string",
+          "description": "Current system clock timestamp observed by the agent."
+        },
+        "active_role": {
+          "type": "string",
+          "description": "Active agent role during deliberation (e.g., Fundamental Analyst, Valuation Specialist)."
+        },
+        "prompt_context_summary": {
+          "type": "string",
+          "description": "Summary of active prompt and context information available to the agent at time of generation."
+        },
+        "model_identity_state": {
+          "type": "string",
+          "description": "Model name and training cutoff if known, or explicit statement that model metadata is unknown."
+        }
+      },
+      "required": [
+        "is_parametric_knowledge",
+        "system_clock_timestamp",
+        "active_role"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["UNVERIFIED", "VERIFIED_PRIMARY", "VERIFIED_SECONDARY", "SUPERSEDED", "ERRONEOUS"],
+      "description": "Current verification state in repository audit lifecycle."
+    }
+  },
+  "required": [
+    "provenance_id",
+    "fact_or_metric",
+    "source_tier",
+    "source_name",
+    "access_method",
+    "retrieval_timestamp",
+    "confidence_level",
+    "verification_status"
+  ]
+}

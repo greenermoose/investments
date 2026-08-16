@@ -39,3 +39,13 @@ If any of the following occur, the thesis is broken and the position will be exi
 - **Catalyst Check:** Production ramp remains on schedule for Q3 FAA review.
 - **Thesis Assessment:** INTACT.
 - **Agent Action Recommendation:** Since 200 shares are owned, sell 2x Covered Call contracts at the $210 strike (45 DTE) at a modeled limit price of $3.40 to capture $680 premium yield while maintaining upside room toward the $265 target.
+
+## Data Provenance & Verification Metadata
+
+| Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Commercial Order Backlog (5,400 units) | TIER_1_PRIMARY_REGULATORY | SEC Form 10-Q Q2 2026 (Note 14) | deterministic_script (`fetch_sec.py`) | 2026-07-28 | VERIFIED_PRIMARY |
+| Free Cash Flow Guidance ($7B-$10B) | TIER_1_PRIMARY_REGULATORY | Investor Day 8-K Filing | tool_url_read | 2026-06-12 | VERIFIED_PRIMARY |
+| July Delivery Figures (43 aircraft) | TIER_2_FINANCIAL_AGGREGATOR | Boeing Monthly Orders & Deliveries Release | tool_web_search | 2026-08-10 | VERIFIED_SECONDARY |
+| Duopoly Structural Moat Assessment | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-15) | agent_parametric_inference | 2026-08-15 | VERIFIED_QUALITATIVE |
+

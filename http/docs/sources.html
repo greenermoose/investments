@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Sources & Provenance - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="../css/roboto-fonts.css" />
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="../index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview &amp; Workflow</div>
+      <a href="../index.html" class="docs-nav-link">System Overview &amp; Guide</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+      <a href="index.html" class="docs-nav-link">Documentation Hub</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Equity Intelligence</div>
+      <a href="../universe.html" class="docs-nav-link">Company Universe &amp; SEC</a>
+      <a href="../theses.html" class="docs-nav-link">Investment Theses</a>
+      <a href="sources.html" class="docs-nav-link active">Data Sources &amp; Provenance</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy &amp; Mechanics</div>
+      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Data Sources, Provenance &amp; Verification</h1>
+      <p class="docs-lead">Institutional standards for authoritative data hierarchy, access methodologies, AI agent parametric knowledge attribution, and systematic errata correction.</p>
+    </div>
+
+    <h2>Authoritative Data Hierarchy</h2>
+    <p>To eliminate hallucination and guarantee factual rigor, all quantitative metrics, catalyst dates, and financial figures follow a strict five-tier authority hierarchy:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Source Classification</th>
+          <th>Primary Providers &amp; Formats</th>
+          <th>Authority Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tier 1</strong></td>
+          <td>Primary Regulatory &amp; Exchanges</td>
+          <td>SEC EDGAR (10-K, 10-Q, 8-K, Form 4), CBOE, NYSE, NASDAQ</td>
+          <td>Absolute Ground Truth</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 2</strong></td>
+          <td>Institutional Aggregators &amp; Macro</td>
+          <td>FRED (Federal Reserve), US Treasury, Yahoo Finance, Finviz</td>
+          <td>High Reliability / Secondary</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 3</strong></td>
+          <td>Quantitative Literature</td>
+          <td>CBOE BuyWrite/PutWrite Benchmarks, AQR / Fama-French Studies</td>
+          <td>Empirical Strategy Baseline</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 4</strong></td>
+          <td>AI Agent Parametric Knowledge</td>
+          <td>Model Internal Weights (Pre-training, SFT, RL) + Context Signature</td>
+          <td>Qualitative / Unverified Numbers</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 5</strong></td>
+          <td>Private User Snapshot</td>
+          <td>Brokerage Records in <code>private/snapshots/</code> (CSV / Screenshots)</td>
+          <td>Private Ground Truth</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>AI Agent Parametric Knowledge &amp; Context Signature</h2>
+    <p>AI agents frequently synthesize insights from internal weights (pre-training, SFT, RL) without executing tool calls. This is fully supported, provided agents explicitly document the provenance and attach a runtime context signature.</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>1. Explicit Declaration</h4>
+        <p>Tag internal knowledge as <code>TIER_4_AGENT_PARAMETRIC_KNOWLEDGE</code> and mark numerical assertions as unverified pending Tier 1 SEC cross-check.</p>
+      </div>
+      <div class="docs-card">
+        <h4>2. System Clock Observation</h4>
+        <p>Record the observed runtime system clock timestamp (e.g. <code>2026-08-16T11:15:00-04:00</code>) to benchmark time-sensitive statements.</p>
+      </div>
+      <div class="docs-card">
+        <h4>3. Role &amp; Prompt Context</h4>
+        <p>Describe the active operational role (e.g. Fundamental Analyst) and conversation prompt context governing the synthesis.</p>
+      </div>
+      <div class="docs-card">
+        <h4>4. Model Identity Transparency</h4>
+        <p>If base model architecture or exact training cutoff is not internally exposed, explicitly note that model metadata is context-inferred.</p>
+      </div>
+    </div>
+
+    <h2>Data Access Methodologies</h2>
+    <p>The system utilizes three deterministic access channels for data ingestion and verification:</p>
+
+    <pre><code># 1. Deterministic SEC EDGAR XBRL Sync
+python scripts/fetch_sec.py --ticker AAPL
+node scripts/build_sec_data.js
+
+# 2. Macro Yield & Interest Rate Reference
+# Risk-Free Rate (RFR) pulled from FRED 3-Month Treasury Constant Maturity for option pricing.
+
+# 3. Private Snapshot Processing
+# Brokerage CSV/image ingested locally into context/schemas/portfolio_context.json.</code></pre>
+
+    <h2>Verification &amp; Errata Correction Protocol</h2>
+    <p>When an analytical assumption, catalyst target, or historical figure is found to be erroneous or superseded, the system executes an audited correction lifecycle:</p>
+
+    <ol style="margin-left: 1.5rem; line-height: 1.8; color: var(--docs-text-secondary); margin-bottom: 1.5rem;">
+      <li><strong>Detection:</strong> Flag conflicting data point against Tier 1 SEC EDGAR or direct exchange data.</li>
+      <li><strong>Triangulation:</strong> Retrieve official primary source evidence and verify ground truth value.</li>
+      <li><strong>In-Place Correction:</strong> Update the target dossier in <code>context/theses/</code> or dataset with new citation.</li>
+      <li><strong>Errata Log Entry:</strong> Append a permanent audit record to <code>context/research/errata_log.md</code> matching <code>context/schemas/errata_schema.json</code>.</li>
+    </ol>
+
+    <div class="callout important">
+      <div class="callout-title">Source Hierarchy Rule</div>
+      <p>In any conflict between an AI agent's memory or an aggregator summary and an SEC 10-K/10-Q filing, the primary SEC filing is the sole authoritative ground truth.</p>
+    </div>
+  </main>
+</body>
+</html>

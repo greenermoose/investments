@@ -15,13 +15,16 @@ investments/
   context/              # Primary audience: AI Agents (Markdown context, prompts, memory schemas, strategy constraints)
     prompts/            # Agent role prompts and weekly deliberation protocols
     theses/             # Markdown investment dossiers and catalyst logs (agent memory)
-    schemas/            # Schema definitions (portfolio context, JSON formats)
+    sources/            # Authoritative data sources catalog and access methodologies
+    research/           # Errata log, verification records, and quantitative research
+    schemas/            # Schema definitions (portfolio context, data provenance, errata)
     strategy/           # Factor models, empirical parameters, strategy rules
   http/                 # Primary audience: Humans (Public Web Interface & Companion Dashboard)
     index.html          # Web root entry point (discoverable documentation & dashboard)
     docs/               # Human-facing documentation (HTML / interactive guides)
       index.html        # Documentation hub
       architecture.html # System architecture & multi-agent pipeline
+      sources.html      # Data sources catalog, provenance, & verification protocols
       strategies.html   # Investment strategy & portfolio constraints
       options.html      # Options pricing & weekend limit order modeling
       valuation.html    # Valuation methodologies & financial models

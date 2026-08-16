@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-08-16
+
+### Data Sources Catalog, Provenance Framework & Errata Protocols
+- **Authoritative Data Sources Hierarchy (`context/sources/catalog.md`):** Codified a strict 5-tier source hierarchy spanning Tier 1 Primary Regulatory/Exchanges (SEC EDGAR, CBOE, NYSE), Tier 2 Institutional Aggregators & Macro (FRED, US Treasury, Yahoo Finance), Tier 3 Quantitative Literature, Tier 4 AI Agent Parametric Knowledge, and Tier 5 Private Brokerage Snapshots.
+- **Access Methodologies & Execution Protocols (`context/sources/access_methodologies.md`):** Documented deterministic retrieval scripts (`scripts/fetch_sec.py`), web/URL research workflows, rate-limiting rules, and SEC compliance.
+- **AI Agent Parametric Knowledge & Self-Description Standard:** Established standard runtime context signatures allowing AI agents to source information from internal weights (pre-training, SFT, RL) transparently by recording system clock timestamps, active role personas, and prompt context when base model metadata is not directly exposed.
+- **JSON Schemas (`context/schemas/`):** Created `data_provenance.json` for granular fact/metric provenance tracking and `errata_schema.json` for structured error invalidation and corrections.
+- **Data Verification & Errata Log (`context/research/errata_log.md`):** Established an audited verification lifecycle with primary source reconciliation and errata tracking.
+- **Web Documentation (`http/docs/sources.html`):** Added a dedicated interactive documentation page for data sources, provenance, agent self-description, and verification protocols, updating navigation across the entire web suite.
+- **Repository Guidelines (`AGENTS.md`):** Added Section 6 enforcing data source tiers, agent parametric knowledge documentation, and errata correction workflows.
+
 ## [2.2.0] - 2026-08-15
 
 ### Audience-First Repository Restructuring & Web Companion

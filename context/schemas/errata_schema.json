@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ErrataRecord",
+  "description": "Schema for logging corrections, erroneous data invalidation, and supersessions across investment theses, screening databases, and system models.",
+  "type": "object",
+  "properties": {
+    "erratum_id": {
+      "type": "string",
+      "description": "Unique identifier for the erratum (e.g., ERR-2026-08-001)."
+    },
+    "date_identified": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the erroneous data was identified."
+    },
+    "target_file": {
+      "type": "string",
+      "description": "Relative file path containing the erroneous or outdated claim (e.g., context/theses/BA.md)."
+    },
+    "target_field_or_claim": {
+      "type": "string",
+      "description": "The specific field, metric, catalyst date, or analytical assumption that was incorrect."
+    },
+    "erroneous_value": {
+      "description": "The incorrect data point or statement."
+    },
+    "corrected_value": {
+      "description": "The verified replacement data point or statement."
+    },
+    "error_category": {
+      "type": "string",
+      "enum": [
+        "HALLUCINATION",
+        "STALE_PARAMETRIC_MEMORY",
+        "TRANSCRIPTION_ERROR",
+        "UPSTREAM_API_ANOMALY",
+        "METHODOLOGY_CALCULATION_ERROR",
+        "CORPORATE_RESTATEMENT"
+      ],
+      "description": "Root cause category of the error."
+    },
+    "authoritative_source_citation": {
+      "type": "string",
+      "description": "Primary authoritative reference used to verify the correction (e.g., SEC 10-Q for Q2 2026 filed 2026-07-28)."
+    },
+    "identifying_agent_or_human": {
+      "type": "string",
+      "description": "Role of the agent or human reviewer who detected the error."
+    },
+    "correction_action_taken": {
+      "type": "string",
+      "description": "Summary of updates made to active dossiers, schemas, or script caches."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["RESOLVED", "PENDING_PRIMARY_VERIFICATION", "SUPERSEDED"],
+      "description": "Lifecycle state of the erratum."
+    }
+  },
+  "required": [
+    "erratum_id",
+    "date_identified",
+    "target_file",
+    "target_field_or_claim",
+    "erroneous_value",
+    "corrected_value",
+    "error_category",
+    "authoritative_source_citation",
+    "correction_action_taken",
+    "status"
+  ]
+}

@@ -7,9 +7,10 @@
 - **Benchmark Entry Price:** $460.00 per share
 - **Target Exit Price:** $620.00
 - **Expected Holding Period:** 2 to 3 Years
-- **Target Annualized ROI:** 18.0%
-- **Status:** COVERED_CALL_ACTIVE
-- **Conviction Score:** 8.8 / 10.0
+- **Target Annualized ROI:** 22.0%
+- **Status:** BUY
+- **Conviction Score:** 9.1 / 10.0
+- **Index Membership:** QQQ, S&P 500
 - **Primary Source SEC CIK:** 0001326801
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001326801
 

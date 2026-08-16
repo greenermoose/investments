@@ -8,8 +8,9 @@
 - **Target Exit Price:** $180.00
 - **Expected Holding Period:** 2 to 4 Years
 - **Target Annualized ROI:** 24.0%
-- **Status:** ACTIVE_LONG
+- **Status:** BUY
 - **Conviction Score:** 9.4 / 10.0
+- **Index Membership:** QQQ, S&P 500
 - **Primary Source SEC CIK:** 0001045810
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001045810
 

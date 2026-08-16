@@ -6,10 +6,10 @@
 - **Entry Date:** 2026-01-20
 - **Benchmark Entry Price:** $380.00 per share
 - **Target Exit Price:** $540.00
-- **Expected Holding Period:** 3 to 5 Years
-- **Target Annualized ROI:** 19.0%
-- **Status:** ACTIVE_LONG
+- **Target Annualized ROI:** 21.0%
+- **Status:** BUY
 - **Conviction Score:** 9.5 / 10.0
+- **Index Membership:** QQQ, DJIA, S&P 500
 - **Primary Source SEC CIK:** 0000789019
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0000789019
 

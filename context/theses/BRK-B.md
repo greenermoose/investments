@@ -7,9 +7,10 @@
 - **Benchmark Entry Price:** $395.00 per share
 - **Target Exit Price:** $520.00
 - **Expected Holding Period:** 5+ Years
-- **Target Annualized ROI:** 14.0%
-- **Status:** ACTIVE_LONG
-- **Conviction Score:** 8.9 / 10.0
+- **Target Annualized ROI:** 20.0% (Covered Call Yield + Capital Compounding)
+- **Status:** HOLD
+- **Conviction Score:** 9.3 / 10.0
+- **Index Membership:** S&P 500
 - **Primary Source SEC CIK:** 0001067983
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001067983
 

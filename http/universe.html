@@ -46,19 +46,19 @@
         <div class="stat-sub">US Exchange-Listed</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">Active / CC Theses</div>
-        <div class="stat-value" id="stat-active-theses" style="color: #10b981;">14</div>
-        <div class="stat-sub">High-Conviction Longs</div>
+        <div class="stat-label">Buy Compounders</div>
+        <div class="stat-value" id="stat-buy-count" style="color: #10b981;">51</div>
+        <div class="stat-sub">Capital Appreciation</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">Watchlist Compounders</div>
-        <div class="stat-value" id="stat-watchlist" style="color: #818cf8;">22</div>
-        <div class="stat-sub">Quality Candidates</div>
+        <div class="stat-label">Hold & CC Yield</div>
+        <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">51</div>
+        <div class="stat-sub">Covered Call Cash Cows</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">SEC Filings Indexed</div>
-        <div class="stat-value" id="stat-filings" style="color: #00d4ff;">160+</div>
-        <div class="stat-sub">Audited 10-K & 10-Q</div>
+        <div class="stat-label">Index Members</div>
+        <div class="stat-value" id="stat-index-count" style="color: #818cf8;">127</div>
+        <div class="stat-sub">QQQ &bull; DJIA &bull; S&P 500</div>
       </div>
     </div>
 
@@ -79,12 +79,12 @@
       </div>
 
       <div class="filter-chips" id="status-filters">
-        <button class="chip-btn active" data-filter="ALL">All Universe</button>
-        <button class="chip-btn" data-filter="ACTIVE_LONG">Active Long</button>
-        <button class="chip-btn" data-filter="COVERED_CALL_ACTIVE">Covered Call</button>
-        <button class="chip-btn" data-filter="WATCHLIST_CANDIDATE">Watchlist</button>
-        <button class="chip-btn" data-filter="UNDER_REVIEW">Under Review</button>
-        <button class="chip-btn" data-filter="LIQUIDATION_FLAGGED">Liquidation Flagged</button>
+        <button class="chip-btn active" data-filter="ALL">All</button>
+        <button class="chip-btn" data-filter="BUY">Buy</button>
+        <button class="chip-btn" data-filter="HOLD">Hold</button>
+        <button class="chip-btn" data-filter="SELL">Sell</button>
+        <button class="chip-btn" data-filter="AVOID">Avoid</button>
+        <button class="chip-btn" data-filter="INDEX_MEMBER">Index Member</button>
       </div>
     </div>
 
@@ -285,6 +285,14 @@
       return Number(val).toLocaleString('en-US');
     };
 
+    function renderIndexBadges(indices) {
+      if (!indices || indices.length === 0) return '';
+      return `<div class="index-badges">` + indices.map(idx => {
+        const cls = idx.toLowerCase() === 'sp500' ? 'badge-sp500' : (idx.toLowerCase() === 'djia' ? 'badge-djia' : 'badge-qqq');
+        return `<span class="badge-index ${cls}">${idx}</span>`;
+      }).join('') + `</div>`;
+    }
+
     async function loadUniverse() {
       try {
         const response = await fetch('data/universe.json');
@@ -293,12 +301,16 @@
         
         // Update stats
         document.getElementById('stat-total-companies').textContent = universeData.length;
-        const activeCount = universeData.filter(c => c.thesis_status === 'ACTIVE_LONG' || c.thesis_status === 'COVERED_CALL_ACTIVE').length;
-        const watchlistCount = universeData.filter(c => c.thesis_status === 'WATCHLIST_CANDIDATE').length;
-        const totalFilings = universeData.reduce((acc, c) => acc + (c.filings_count || 0), 0);
-        document.getElementById('stat-active-theses').textContent = activeCount;
-        document.getElementById('stat-watchlist').textContent = watchlistCount;
-        document.getElementById('stat-filings').textContent = totalFilings + '+';
+        const buyCount = universeData.filter(c => c.thesis_status === 'BUY').length;
+        const holdCount = universeData.filter(c => c.thesis_status === 'HOLD').length;
+        const indexCount = universeData.filter(c => c.is_index_member).length;
+        
+        const statBuyEl = document.getElementById('stat-buy-count');
+        if (statBuyEl) statBuyEl.textContent = buyCount;
+        const statHoldEl = document.getElementById('stat-hold-count');
+        if (statHoldEl) statHoldEl.textContent = holdCount;
+        const statIndexEl = document.getElementById('stat-index-count');
+        if (statIndexEl) statIndexEl.textContent = indexCount;
 
         renderGrid();
       } catch (err) {
@@ -317,10 +329,16 @@
       grid.innerHTML = '';
 
       const filtered = universeData.filter(item => {
-        // Status filter
-        if (currentFilter !== 'ALL' && item.thesis_status !== currentFilter) return false;
+        // Status & Index filter
+        if (currentFilter === 'INDEX_MEMBER') {
+          if (!item.is_index_member) return false;
+        } else if (currentFilter !== 'ALL') {
+          if (item.thesis_status !== currentFilter) return false;
+        }
+        
         // Sector filter
         if (currentSector !== 'ALL' && item.sector !== currentSector) return false;
+        
         // Search filter
         if (currentSearch.trim() !== '') {
           const query = currentSearch.toLowerCase();
@@ -350,8 +368,9 @@
         card.className = 'company-card';
         card.onclick = () => openCompanyModal(company);
 
-        const statusClass = company.thesis_status ? company.thesis_status.toLowerCase().replace(/_/g, '-') : 'watchlist';
-        const formattedStatus = company.thesis_status ? company.thesis_status.replace(/_/g, ' ') : 'WATCHLIST';
+        const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+        const statusClass = statusKey.toLowerCase();
+        const formattedStatus = statusKey;
 
         card.innerHTML = `
           <div>
@@ -364,7 +383,10 @@
             </div>
 
             <div class="company-name">${company.name || company.symbol}</div>
-            <div class="company-sector">${company.sector || 'US Equity'} &bull; ${company.industry || ''}</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; min-height: 22px;">
+              <div class="company-sector" style="margin-bottom: 0;">${company.sector || 'US Equity'} &bull; ${company.industry || ''}</div>
+              ${renderIndexBadges(company.indices)}
+            </div>
             
             <p class="company-desc">${company.description || 'Publicly traded company tracked by the investment advisor.'}</p>
             
@@ -405,12 +427,15 @@
     function openCompanyModal(company) {
       document.getElementById('modal-symbol-title').textContent = company.symbol;
       document.getElementById('modal-company-name').textContent = company.name || company.symbol;
-      document.getElementById('modal-sector-text').textContent = `${company.sector || 'US Equity'} • ${company.industry || ''}`;
+      
+      const indexBadgesHtml = renderIndexBadges(company.indices);
+      document.getElementById('modal-sector-text').innerHTML = `${company.sector || 'US Equity'} &bull; ${company.industry || ''} ${indexBadgesHtml ? '&nbsp;&nbsp;' + indexBadgesHtml : ''}`;
 
       // Status badge
+      const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
       const statusEl = document.getElementById('modal-status-badge');
-      statusEl.textContent = company.thesis_status ? company.thesis_status.replace(/_/g, ' ') : 'WATCHLIST';
-      statusEl.className = 'badge-status ' + (company.thesis_status ? company.thesis_status.toLowerCase().replace(/_/g, '-') : 'watchlist');
+      statusEl.textContent = statusKey;
+      statusEl.className = 'badge-status ' + statusKey.toLowerCase();
 
       // Overview Tab
       document.getElementById('modal-conviction').textContent = company.conviction_score ? `${company.conviction_score} / 10.0` : '-';

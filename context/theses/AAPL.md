@@ -7,10 +7,10 @@
 - **Benchmark Entry Price:** $195.50 per share
 - **Target Exit Price:** $275.00
 - **Expected Holding Period:** 3 to 5 Years
-- **Target Annualized ROI:** 18.5%
-- **Status:** ACTIVE_LONG
+- **Status:** HOLD
 - **Conviction Score:** 9.2 / 10.0
-- **Primary Source SEC CIK:** 0000320193
+- **Index Membership:** QQQ, DJIA, S&P 500
+- **Target Strategy:** Quality Compounder with Covered Call Income Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=320193
 
 ## Core Investment Thesis

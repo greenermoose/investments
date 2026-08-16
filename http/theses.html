@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Investment Theses & Memory Dossiers - Agentic Advisor</title>
+  <title>Investment Theses &amp; Memory Dossiers - Agentic Advisor</title>
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
@@ -35,394 +35,293 @@
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>Investment Theses & Thesis Memory</h1>
+      <h1>Investment Theses &amp; Thesis Memory</h1>
       <p class="docs-lead">Persistent, audited investment dossiers tracking high-conviction US equities, multi-year catalyst calendars, explicit invalidation criteria, and weekly deliberation logs.</p>
     </div>
 
     <div class="stats-ribbon">
       <div class="stat-box">
-        <div class="stat-label">Active Theses</div>
-        <div class="stat-value" style="color: #10b981;">14</div>
-        <div class="stat-sub">Tracked in context/theses/</div>
+        <div class="stat-label">Evaluated Universe</div>
+        <div class="stat-value" id="stat-total-theses">144</div>
+        <div class="stat-sub">Audited Public Equities</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">Avg Conviction</div>
-        <div class="stat-value" style="color: #00d4ff;">8.9 / 10</div>
-        <div class="stat-sub">High-Quality Compounders</div>
+        <div class="stat-label">Buy Compounders</div>
+        <div class="stat-value" id="stat-buy-theses" style="color: #10b981;">51</div>
+        <div class="stat-sub">Capital Appreciation Target</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">Target Return</div>
-        <div class="stat-value" style="color: #818cf8;">20%+</div>
-        <div class="stat-sub">Expected Annualized ROI</div>
+        <div class="stat-label">Hold &amp; CC Yield</div>
+        <div class="stat-value" id="stat-hold-theses" style="color: #00d4ff;">51</div>
+        <div class="stat-sub">Covered Call Compounding</div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">Target Holdings</div>
-        <div class="stat-value">1 to 25</div>
-        <div class="stat-sub">Public Company Stocks</div>
+        <div class="stat-label">Index Members</div>
+        <div class="stat-value" id="stat-index-theses" style="color: #818cf8;">127</div>
+        <div class="stat-sub">QQQ &bull; DJIA &bull; S&amp;P 500</div>
       </div>
     </div>
 
     <div class="callout important">
-      <div class="callout-title">Thesis & Memory Protocol</div>
-      <p>Under our multi-agent architecture, the <strong>Thesis & Memory Agent</strong> maintains persistent Markdown dossiers in <code>context/theses/*.md</code>. Every position is reviewed weekly against explicit catalyst milestones and invalidation triggers. If a thesis is broken, liquidation is mandated.</p>
+      <div class="callout-title">Thesis &amp; Memory Protocol</div>
+      <p>Under our multi-agent architecture, the <strong>Thesis &amp; Memory Agent</strong> maintains persistent Markdown dossiers in <code>context/theses/*.md</code>. Every position is reviewed weekly against explicit catalyst milestones and invalidation triggers. If a thesis is broken, liquidation is mandated.</p>
+    </div>
+
+    <!-- Filter Controls & Search -->
+    <div class="controls-bar" style="margin-top: 24px;">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="thesis-search-input" 
+          class="search-input" 
+          placeholder="Search theses by symbol, company name, moat, or catalyst (e.g. AAPL, NVIDIA, CUDA)..." 
+        />
+      </div>
+
+      <div class="filter-chips" id="thesis-status-filters">
+        <button class="chip-btn active" data-filter="ALL">All</button>
+        <button class="chip-btn" data-filter="BUY">Buy</button>
+        <button class="chip-btn" data-filter="HOLD">Hold</button>
+        <button class="chip-btn" data-filter="SELL">Sell</button>
+        <button class="chip-btn" data-filter="AVOID">Avoid</button>
+        <button class="chip-btn" data-filter="INDEX_MEMBER">Index Member</button>
+      </div>
+    </div>
+
+    <div class="d-flex justify-between align-center mb-3" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <div id="theses-results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Showing 144 thesis dossiers</div>
+      <div style="display: flex; gap: 8px;">
+        <select id="thesis-sector-select" class="search-input" style="padding: 6px 12px; font-size: 0.84rem; min-width: 180px; width: auto;">
+          <option value="ALL">All Sectors</option>
+          <option value="Information Technology">Information Technology</option>
+          <option value="Communication Services">Communication Services</option>
+          <option value="Consumer Discretionary">Consumer Discretionary</option>
+          <option value="Consumer Staples">Consumer Staples</option>
+          <option value="Financials">Financials</option>
+          <option value="Health Care">Health Care</option>
+          <option value="Industrials">Industrials</option>
+          <option value="Utilities">Utilities</option>
+          <option value="Energy">Energy</option>
+          <option value="Materials">Materials</option>
+          <option value="Real Estate">Real Estate</option>
+        </select>
+      </div>
     </div>
 
     <!-- Theses List Container -->
-    <div id="theses-container" style="display: flex; flex-direction: column; gap: 28px; margin-top: 28px;">
-      
-      <!-- AAPL Thesis Card -->
-      <div class="step-card" style="display: block;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <div>
-            <div style="display: flex; align-items: baseline; gap: 10px;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">AAPL &bull; Apple Inc.</h3>
-              <span class="badge-conviction">Conviction: 9.2 / 10.0</span>
-            </div>
-            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Consumer Electronics & High-Margin Digital Services</div>
-          </div>
-          <span class="badge-status active-long">ACTIVE LONG</span>
-        </div>
-
-        <div class="company-metrics-grid" style="margin: 12px 0;">
-          <div class="metric-item">
-            <span class="metric-label">Benchmark Entry Price</span>
-            <span class="metric-val">$195.50</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Exit Price</span>
-            <span class="metric-val" style="color: #10b981;">$275.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Expected Holding Period</span>
-            <span class="metric-val">3 to 5 Years</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Annualized ROI</span>
-            <span class="metric-val" style="color: #00d4ff;">18.5%</span>
-          </div>
-        </div>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-          Apple operates the world's most lucrative consumer hardware and services ecosystem with over 2.2B active devices. The convergence of privacy-first edge AI (Apple Intelligence) and high-margin recurring Services ($95B+ run rate, 74% gross margin) provides durable pricing power, massive free cash flow, and sustained double-digit EPS compounding fueled by $100B+ annual share repurchases.
-        </p>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Target Window</th>
-              <th>Catalyst Event</th>
-              <th>Expected Outcome</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>2026-Q3</code></td>
-              <td>Apple Intelligence International Localization</td>
-              <td>Expansion to Europe and Asia driving international upgrade cycle</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2026-Q4</code></td>
-              <td>iPhone 17 Launch & Holiday Quarter</td>
-              <td>Double-digit revenue acceleration in Greater China and Americas</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2027-Q1</code></td>
-              <td>Services Revenue Milestone ($28B/Quarter)</td>
-              <td>Margin mix expansion raising corporate gross margin > 47%</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
-        <div class="callout warning" style="margin: 8px 0 16px 0;">
-          <p style="margin: 0; font-size: 0.9rem;">
-            1. Regulatory destruction of App Store economics (>50% margin decline).<br />
-            2. Active device installed base decline across two consecutive quarters.<br />
-            3. Catastrophic supply chain disruption lasting >9 months without alternative sourcing.
-          </p>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
-          <a href="https://www.sec.gov/edgar/browse/?CIK=320193" target="_blank" rel="noopener noreferrer" class="provenance-pill">
-            Primary SEC EDGAR CIK: 0000320193 &rarr;
-          </a>
-          <a href="universe.html" class="link-btn">
-            Inspect Full Company Dossier &rarr;
-          </a>
-        </div>
-      </div>
-
-      <!-- MSFT Thesis Card -->
-      <div class="step-card" style="display: block;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <div>
-            <div style="display: flex; align-items: baseline; gap: 10px;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">MSFT &bull; Microsoft Corporation</h3>
-              <span class="badge-conviction">Conviction: 9.5 / 10.0</span>
-            </div>
-            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Enterprise Cloud Infrastructure & Productivity Software</div>
-          </div>
-          <span class="badge-status active-long">ACTIVE LONG</span>
-        </div>
-
-        <div class="company-metrics-grid" style="margin: 12px 0;">
-          <div class="metric-item">
-            <span class="metric-label">Benchmark Entry Price</span>
-            <span class="metric-val">$380.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Exit Price</span>
-            <span class="metric-val" style="color: #10b981;">$540.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Expected Holding Period</span>
-            <span class="metric-val">3 to 5 Years</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Annualized ROI</span>
-            <span class="metric-val" style="color: #00d4ff;">19.0%</span>
-          </div>
-        </div>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-          Microsoft holds an unassailable commercial moat across enterprise IT, cloud infrastructure (Azure), productivity tools (M365), and developer platforms (GitHub). Azure is winning market share in generative AI workloads, while Copilot monetization introduces an incremental $30/user/month high-margin subscription stream across hundreds of millions of commercial enterprise seats.
-        </p>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Target Window</th>
-              <th>Catalyst Event</th>
-              <th>Expected Outcome</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>2026-Q3</code></td>
-              <td>Maia Custom Silicon Deployment</td>
-              <td>Azure AI infrastructure margins stabilize >70%</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2026-Q4</code></td>
-              <td>M365 Copilot Enterprise Conversion</td>
-              <td>Paid Copilot seat adoption reaching 15% of E3/E5 enterprise base</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2027-Q2</code></td>
-              <td>Windows Next-Gen AI System</td>
-              <td>Enterprise PC refresh driving commercial Windows OEM revenue</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
-        <div class="callout warning" style="margin: 8px 0 16px 0;">
-          <p style="margin: 0; font-size: 0.9rem;">
-            1. Azure constant-currency growth decelerates below 18% YoY for two quarters.<br />
-            2. Structural displacement of Office 365 / GitHub by open-source alternatives.<br />
-            3. Datacenter capex overbuild without monetization reducing ROIC below 18%.
-          </p>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
-          <a href="https://www.sec.gov/edgar/browse/?CIK=0000789019" target="_blank" rel="noopener noreferrer" class="provenance-pill">
-            Primary SEC EDGAR CIK: 0000789019 &rarr;
-          </a>
-          <a href="universe.html" class="link-btn">
-            Inspect Full Company Dossier &rarr;
-          </a>
-        </div>
-      </div>
-
-      <!-- NVDA Thesis Card -->
-      <div class="step-card" style="display: block;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <div>
-            <div style="display: flex; align-items: baseline; gap: 10px;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">NVDA &bull; NVIDIA Corporation</h3>
-              <span class="badge-conviction">Conviction: 9.4 / 10.0</span>
-            </div>
-            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NASDAQ &bull; Accelerated Computing & AI Datacenter Infrastructure</div>
-          </div>
-          <span class="badge-status active-long">ACTIVE LONG</span>
-        </div>
-
-        <div class="company-metrics-grid" style="margin: 12px 0;">
-          <div class="metric-item">
-            <span class="metric-label">Benchmark Entry Price</span>
-            <span class="metric-val">$98.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Exit Price</span>
-            <span class="metric-val" style="color: #10b981;">$180.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Expected Holding Period</span>
-            <span class="metric-val">2 to 4 Years</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Annualized ROI</span>
-            <span class="metric-val" style="color: #00d4ff;">24.0%</span>
-          </div>
-        </div>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-          NVIDIA is the compute standard for the AI era. With over 5 million developers anchored to the proprietary CUDA software platform and hardware innovations across NVLink optical interconnects and Blackwell full-stack architecture, NVIDIA maintains pricing power, gross margins above 72%, and exceptional ROIC exceeding 65%.
-        </p>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Target Window</th>
-              <th>Catalyst Event</th>
-              <th>Expected Outcome</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>2026-Q3</code></td>
-              <td>Blackwell GB200 Volume Shipments</td>
-              <td>Hyperscalers ramp liquid-cooled rack clusters</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2026-Q4</code></td>
-              <td>Sovereign & Enterprise Datacenter Demand</td>
-              <td>Broadening non-hyperscaler revenue past 30% of datacenter total</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2027-Q2</code></td>
-              <td>Rubin Architecture Reveal</td>
-              <td>3nm compute and HBM4 memory architecture extending lead</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
-        <div class="callout warning" style="margin: 8px 0 16px 0;">
-          <p style="margin: 0; font-size: 0.9rem;">
-            1. Hyperscalers migrating >40% of AI training workloads to internal custom ASICs.<br />
-            2. Non-GAAP gross margin falling below 62% due to severe price competition.<br />
-            3. Advanced packaging supply halt lasting >6 months.
-          </p>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
-          <a href="https://www.sec.gov/edgar/browse/?CIK=0001045810" target="_blank" rel="noopener noreferrer" class="provenance-pill">
-            Primary SEC EDGAR CIK: 0001045810 &rarr;
-          </a>
-          <a href="universe.html" class="link-btn">
-            Inspect Full Company Dossier &rarr;
-          </a>
-        </div>
-      </div>
-
-      <!-- BRK-B Thesis Card -->
-      <div class="step-card" style="display: block;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <div>
-            <div style="display: flex; align-items: baseline; gap: 10px;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">BRK-B &bull; Berkshire Hathaway Inc.</h3>
-              <span class="badge-conviction">Conviction: 8.9 / 10.0</span>
-            </div>
-            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">NYSE &bull; Multi-Sector Conglomerate, Insurance & Infrastructure</div>
-          </div>
-          <span class="badge-status active-long">ACTIVE LONG</span>
-        </div>
-
-        <div class="company-metrics-grid" style="margin: 12px 0;">
-          <div class="metric-item">
-            <span class="metric-label">Benchmark Entry Price</span>
-            <span class="metric-val">$395.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Exit Price</span>
-            <span class="metric-val" style="color: #10b981;">$520.00</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Expected Holding Period</span>
-            <span class="metric-val">5+ Years</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Target Annualized ROI</span>
-            <span class="metric-val" style="color: #00d4ff;">14.0%</span>
-          </div>
-        </div>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-          Berkshire Hathaway is the core defensive ballast for long-term compounding. With over $170B in negative-cost insurance float and a record $250B+ cash/T-bill fortress reserve earning 5%+ risk-free yield, Berkshire provides unmatched downside protection and deep optionality to execute opportunistic multi-billion dollar capital deployments during market downturns.
-        </p>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar & Upcoming Milestones</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Target Window</th>
-              <th>Catalyst Event</th>
-              <th>Expected Outcome</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>2026-Q3</code></td>
-              <td>T-Bill Interest Income Compounding</td>
-              <td>Over $3.5B quarterly interest income boosting operating cash flow</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2026-Q4</code></td>
-              <td>GEICO Underwriting Optimization</td>
-              <td>Combined ratio sustained below 89%</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-            <tr>
-              <td><code>2027-Q2</code></td>
-              <td>Strategic Acquisition Deployment</td>
-              <td>Deployment of $30B-$50B cash into high-ROIC operating business</td>
-              <td><span class="badge-status watchlist">PENDING</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
-        <div class="callout warning" style="margin: 8px 0 16px 0;">
-          <p style="margin: 0; font-size: 0.9rem;">
-            1. Destructive major acquisitions with material write-downs post-succession.<br />
-            2. Sustained underwriting losses across primary insurance groups (combined ratio >105%).<br />
-            3. Loss of decentralized autonomous operational culture.
-          </p>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
-          <a href="https://www.sec.gov/edgar/browse/?CIK=0001067983" target="_blank" rel="noopener noreferrer" class="provenance-pill">
-            Primary SEC EDGAR CIK: 0001067983 &rarr;
-          </a>
-          <a href="universe.html" class="link-btn">
-            Inspect Full Company Dossier &rarr;
-          </a>
-        </div>
-      </div>
-
+    <div id="theses-container" style="display: flex; flex-direction: column; gap: 28px; margin-top: 16px;">
+      <!-- Injected dynamically via JavaScript -->
     </div>
   </main>
+
+  <script>
+    let universeThesesData = [];
+    let currentThesisFilter = 'ALL';
+    let currentThesisSector = 'ALL';
+    let currentThesisSearch = '';
+
+    function renderIndexBadges(indices) {
+      if (!indices || indices.length === 0) return '';
+      return `<div class="index-badges">` + indices.map(idx => {
+        const cls = idx.toLowerCase() === 'sp500' ? 'badge-sp500' : (idx.toLowerCase() === 'djia' ? 'badge-djia' : 'badge-qqq');
+        return `<span class="badge-index ${cls}">${idx}</span>`;
+      }).join('') + `</div>`;
+    }
+
+    async function loadTheses() {
+      try {
+        const response = await fetch('data/universe.json');
+        if (!response.ok) throw new Error('Failed to load universe data');
+        universeThesesData = await response.json();
+        
+        // Update stats ribbon
+        document.getElementById('stat-total-theses').textContent = universeThesesData.length;
+        const buyCount = universeThesesData.filter(c => c.thesis_status === 'BUY').length;
+        const holdCount = universeThesesData.filter(c => c.thesis_status === 'HOLD').length;
+        const indexCount = universeThesesData.filter(c => c.is_index_member).length;
+        
+        document.getElementById('stat-buy-theses').textContent = buyCount;
+        document.getElementById('stat-hold-theses').textContent = holdCount;
+        document.getElementById('stat-index-theses').textContent = indexCount;
+
+        renderThesesList();
+      } catch (err) {
+        console.error('Error loading theses:', err);
+        document.getElementById('theses-container').innerHTML = `
+          <div class="callout warning">
+            <div class="callout-title">Unable to Load Investment Theses</div>
+            <p>Could not retrieve <code>data/universe.json</code>. Please verify the local web server is running.</p>
+          </div>
+        `;
+      }
+    }
+
+    function renderThesesList() {
+      const container = document.getElementById('theses-container');
+      container.innerHTML = '';
+
+      const filtered = universeThesesData.filter(item => {
+        // Status & Index filter
+        if (currentThesisFilter === 'INDEX_MEMBER') {
+          if (!item.is_index_member) return false;
+        } else if (currentThesisFilter !== 'ALL') {
+          if (item.thesis_status !== currentThesisFilter) return false;
+        }
+        
+        // Sector filter
+        if (currentThesisSector !== 'ALL' && item.sector !== currentThesisSector) return false;
+        
+        // Search filter
+        if (currentThesisSearch.trim() !== '') {
+          const query = currentThesisSearch.toLowerCase();
+          const matchSym = item.symbol.toLowerCase().includes(query);
+          const matchName = item.name && item.name.toLowerCase().includes(query);
+          const matchSec = item.sector && item.sector.toLowerCase().includes(query);
+          const matchInd = item.industry && item.industry.toLowerCase().includes(query);
+          const matchMoat = item.moat && item.moat.toLowerCase().includes(query);
+          const matchCat = item.latest_catalyst && item.latest_catalyst.toLowerCase().includes(query);
+          if (!matchSym && !matchName && !matchSec && !matchInd && !matchMoat && !matchCat) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('theses-results-count').textContent = `Showing ${filtered.length} of ${universeThesesData.length} thesis dossiers`;
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="callout" style="text-align: center; padding: 32px;">
+            <div class="callout-title">No matching investment theses found</div>
+            <p>Try adjusting your search keywords or filter options.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(company => {
+        const card = document.createElement('div');
+        card.className = 'step-card';
+        card.style.display = 'block';
+
+        const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+        const statusClass = statusKey.toLowerCase();
+        const formattedStatus = statusKey;
+        const indexChipsHtml = renderIndexBadges(company.indices);
+
+        const entryPriceFormatted = company.entry_price ? `$${company.entry_price.toFixed(2)}` : '-';
+        const targetPriceFormatted = company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-';
+        const currentPriceFormatted = company.current_price ? `$${company.current_price.toFixed(2)}` : '-';
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">${company.symbol} &bull; ${company.name || company.symbol}</h3>
+                <span class="badge-conviction">Conviction: ${company.conviction_score ? company.conviction_score.toFixed(1) + ' / 10.0' : '-'}</span>
+                ${indexChipsHtml}
+              </div>
+              <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">
+                ${company.sector || 'US Equity'} &bull; ${company.industry || ''} &bull; Current Market Price: <strong style="color: #ffffff;">${currentPriceFormatted}</strong>
+              </div>
+            </div>
+            <span class="badge-status ${statusClass}">${formattedStatus}</span>
+          </div>
+
+          <div class="company-metrics-grid" style="margin: 12px 0;">
+            <div class="metric-item">
+              <span class="metric-label">Benchmark Entry Price</span>
+              <span class="metric-val">${entryPriceFormatted}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Target Exit Price</span>
+              <span class="metric-val" style="color: #10b981;">${targetPriceFormatted}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Expected Holding Period</span>
+              <span class="metric-val">${company.holding_period || '3 to 5 Years'}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Target Annualized ROI</span>
+              <span class="metric-val" style="color: #00d4ff;">${company.target_roi || '20.0%'}</span>
+            </div>
+          </div>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+            ${company.description}
+          </p>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Competitive Moat &amp; Strategic Advantages</h4>
+          <p style="font-size: 0.92rem; color: #e2e8f0; line-height: 1.5; margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.2); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #00d4ff;">
+            ${company.moat}
+          </p>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar &amp; Upcoming Milestones</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Target Window</th>
+                <th>Catalyst Event</th>
+                <th>Expected Outcome</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>2026-Q3 / Q4</code></td>
+                <td>${company.latest_catalyst}</td>
+                <td>Quarterly revenue and operating margin execution</td>
+                <td><span class="badge-status" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3);">PENDING</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+          <div class="callout warning" style="margin: 8px 0 16px 0;">
+            <p style="margin: 0; font-size: 0.9rem;">
+              ${company.invalidation_criteria}
+            </p>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 10px;">
+            <a href="${company.sec_edgar_url}" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+              Primary SEC EDGAR Records (${company.filings_count || 0} Filings) &rarr;
+            </a>
+            <a href="universe.html" class="link-btn">
+              Inspect Full Financials in Universe &rarr;
+            </a>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTheses();
+
+      // Search input
+      document.getElementById('thesis-search-input').addEventListener('input', (e) => {
+        currentThesisSearch = e.target.value;
+        renderThesesList();
+      });
+
+      // Sector select
+      document.getElementById('thesis-sector-select').addEventListener('change', (e) => {
+        currentThesisSector = e.target.value;
+        renderThesesList();
+      });
+
+      // Filter chips
+      document.querySelectorAll('#thesis-status-filters .chip-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#thesis-status-filters .chip-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentThesisFilter = btn.getAttribute('data-filter');
+          renderThesesList();
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.0] - 2026-08-16
+
+### Standardized Rating Taxonomy, Index Membership Badges & Dynamic Theses
+- **Rating Taxonomy Standardization (`Buy`, `Hold`, `Sell`, `Avoid`):** Standardized all 144 public equities in the database under four definitive, objective rating classifications:
+  - `Buy`: High-conviction companies capable of generating >=20% annualized ROI from capital appreciation.
+  - `Hold`: High-quality, mature compounders capable of generating >=20% annualized total return via covered calls.
+  - `Sell`: Equities unlikely to generate sufficient ROI; recommended to sell now to redeploy dry powder, but tracked on watchlist.
+  - `Avoid`: High-risk equities with chronic cash burn, balance sheet distress, severe dilution, or warning flags.
+- **Index Membership Badges & Filtering (`QQQ`, `DJIA`, `SP500`):** Extracted S&P 500 constituents from SPY NPORT-P filing (`scripts/data/spy_holdings.json`) and combined with QQQ and DIA datasets. Added visual index badge chips to company cards in `http/universe.html` and `http/theses.html`, and added an `Index Member` filter chip.
+- **Filter Chips Bar (`http/universe.html`, `http/theses.html`):** Updated search controls with `All`, `Buy`, `Hold`, `Sell`, `Avoid`, and `Index Member` filter chips.
+- **Real Dynamic Investment Theses (`http/theses.html`):** Upgraded `http/theses.html` from static mock examples to a dynamic explorer rendering audited investment theses, moats, catalyst timelines, and invalidation triggers directly from `data/universe.json`.
+- **Dossier Memory Updated (`context/theses/*.md`):** Updated markdown dossiers for AAPL, MSFT, NVDA, GOOGL, META, and BRK-B to reflect the new rating taxonomy, index tags, and options strategy context.
+
 ## [2.8.0] - 2026-08-16
 
 ### Portfolio Concentration Policy Relaxation & Conviction-Driven Sizing

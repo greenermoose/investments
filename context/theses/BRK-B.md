@@ -4,7 +4,7 @@
 - **Ticker:** BRK-B
 - **Exchange:** NYSE
 - **Entry Date:** 2026-01-10
-- **Cost Basis:** $395.00 per share
+- **Benchmark Entry Price:** $395.00 per share
 - **Target Exit Price:** $520.00
 - **Expected Holding Period:** 5+ Years
 - **Target Annualized ROI:** 14.0%

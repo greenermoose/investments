@@ -4,7 +4,7 @@
 - **Ticker:** GOOGL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-02-10
-- **Cost Basis:** $145.00 per share
+- **Benchmark Entry Price:** $145.00 per share
 - **Target Exit Price:** $220.00
 - **Expected Holding Period:** 3 to 5 Years
 - **Target Annualized ROI:** 17.5%

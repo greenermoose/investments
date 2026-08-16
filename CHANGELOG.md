@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7.0] - 2026-08-16
+
+### Strict One-Way Privacy Firewall & Equal-Footing Public Intelligence
+- **Strict Privacy Firewall Codification (`AGENTS.md`):** Added Section 7 mandating an absolute one-way information flow from public intelligence (`context/`, `http/`, `scripts/`) to private execution (`private/snapshots/`, `private/plans/`). Personal portfolio states, share counts, and private cost bases are forbidden from leaking into public dossiers.
+- **Equal Footing for All 144 Universe Equities (`http/index.html`, `http/universe.html`, `context/sources/investment_data_sources.md`):** Corrected legacy holdover references ("41 US equities tracked in our memory") across public portal cards, static fallback headers, and documentation to reflect the full 144-equity public universe on completely equal footing.
+- **Standardized Benchmark Entry Price Across Public Theses (`context/theses/*.md`, `http/theses.html`, `http/universe.html`):** Replaced personalized terms like `Cost Basis` and `Current Shares Owned` with objective public metrics (`Benchmark Entry Price`, `Target Exit Price`, `Conviction Score`), and generalized option strategy guidance to remove assumed portfolio lot sizes.
+
 ## [2.6.0] - 2026-08-16
 
 ### Dow Jones Industrial Average (DJIA) Universe Expansion & Holdings Extraction

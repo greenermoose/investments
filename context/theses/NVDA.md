@@ -4,7 +4,7 @@
 - **Ticker:** NVDA
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-02-01
-- **Cost Basis:** $98.00 per share (split-adjusted)
+- **Benchmark Entry Price:** $98.00 per share (split-adjusted)
 - **Target Exit Price:** $180.00
 - **Expected Holding Period:** 2 to 4 Years
 - **Target Annualized ROI:** 24.0%

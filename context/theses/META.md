@@ -4,7 +4,7 @@
 - **Ticker:** META
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-02-15
-- **Cost Basis:** $460.00 per share
+- **Benchmark Entry Price:** $460.00 per share
 - **Target Exit Price:** $620.00
 - **Expected Holding Period:** 2 to 3 Years
 - **Target Annualized ROI:** 18.0%
@@ -46,4 +46,4 @@ If any of the following occur, the thesis is broken and the position will be exi
 - **New Information / News:** Ray-Ban Meta AI smart glasses demand reported higher than manufacturing capacity.
 - **Catalyst Check:** Advantage+ ad conversions continuing to show double-digit ROAS gains for advertisers.
 - **Thesis Assessment:** INTACT.
-- **Agent Action Recommendation:** Since shares are held in 100-share blocks, sell Covered Calls at the $570 strike (30-45 DTE) at a modeled limit price of $7.50 to generate 1.4% monthly option yield while allowing $35/share upside room.
+- **Agent Action Recommendation:** For existing positions, target Covered Calls at the $570 strike (30-45 DTE) at a modeled limit price of $7.50 to generate option yield while allowing $35/share upside room.

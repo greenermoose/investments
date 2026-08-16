@@ -4,7 +4,7 @@
 - **Ticker:** AAPL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-01-15
-- **Cost Basis:** $195.50 per share
+- **Benchmark Entry Price:** $195.50 per share
 - **Target Exit Price:** $275.00
 - **Expected Holding Period:** 3 to 5 Years
 - **Target Annualized ROI:** 18.5%

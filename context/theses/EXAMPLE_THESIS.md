@@ -4,8 +4,7 @@
 - **Ticker:** BA
 - **Exchange:** NYSE
 - **Entry Date:** 2026-03-15
-- **Cost Basis:** $182.50 per share
-- **Current Shares Owned:** 200
+- **Benchmark Entry Price:** $182.50 per share
 - **Target Exit Price:** $265.00
 - **Expected Holding Period:** 3 to 5 Years
 - **Target Annualized ROI:** 14.5%
@@ -38,7 +37,7 @@ If any of the following occur, the thesis is broken and the position will be exi
 - **New Information / News:** Boeing announced delivery of 43 commercial aircraft in July, matching highest monthly total year-to-date.
 - **Catalyst Check:** Production ramp remains on schedule for Q3 FAA review.
 - **Thesis Assessment:** INTACT.
-- **Agent Action Recommendation:** Since 200 shares are owned, sell 2x Covered Call contracts at the $210 strike (45 DTE) at a modeled limit price of $3.40 to capture $680 premium yield while maintaining upside room toward the $265 target.
+- **Agent Action Recommendation:** For portfolios holding 100-share blocks, target Covered Calls at the $210 strike (45 DTE) at a modeled limit price of $3.40 to capture premium yield while maintaining upside room toward the $265 target.
 
 ## Data Provenance & Verification Metadata
 

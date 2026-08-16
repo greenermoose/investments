@@ -4,7 +4,7 @@
 - **Ticker:** MSFT
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-01-20
-- **Cost Basis:** $380.00 per share
+- **Benchmark Entry Price:** $380.00 per share
 - **Target Exit Price:** $540.00
 - **Expected Holding Period:** 3 to 5 Years
 - **Target Annualized ROI:** 19.0%

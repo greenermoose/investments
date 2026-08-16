@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.8.0] - 2026-08-16
+
+### Portfolio Concentration Policy Relaxation & Conviction-Driven Sizing
+- **Position Limit Clarification & Relaxation (`AGENTS.md`, `context/strategy/portfolio_constraints.md`):** Updated portfolio concentration rules to clarify that 25 positions is a soft target guideline rather than a rigid hard ceiling. Sizing is governed by conviction: with sufficiently high conviction, a trading plan can recommend concentrating down to a single position (up to 100% allocation), or expanding to 26+ holdings when multiple high-conviction ideas are present.
+- **Weekly Deliberation Prompt & Plan Template Updated (`context/prompts/weekly_deliberation.md`, `examples/sample_trading_plan.txt`):** Updated agent system prompts, core constraint checklists, and standard plan headers to display `Active Holdings: [COUNT] equities (Target: ~25 or fewer)` instead of a rigid cap.
+- **Documentation & UI Companion Synchronized (`README.md`, `ROADMAP.md`, `http/index.html`, `http/theses.html`, `http/docs/strategies.html`, `http/docs/architecture.html`, `http/docs/workflow.html`):** Aligned risk tables, agent cards, roadmap goals, and live web companion stats to communicate the flexible ~25 holdings soft guideline and high-conviction allocation model.
+
 ## [2.7.0] - 2026-08-16
 
 ### Strict One-Way Privacy Firewall & Equal-Footing Public Intelligence

@@ -120,7 +120,7 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
 
       <a href="docs/architecture.html" class="docs-card">
         <h4>3. Universe Screener & Analyst</h4>
-        <p>Screens the US public equity universe for high-ROIC, positive-FCF compounders while strictly enforcing the 25-position portfolio ceiling.</p>
+        <p>Screens the US public equity universe for high-ROIC, positive-FCF compounders while targeting ~25 or fewer high-conviction positions.</p>
       </a>
 
       <a href="docs/architecture.html" class="docs-card">
@@ -140,7 +140,7 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
         <tr>
           <th>Rule</th>
           <th>Constraint</th>
-          <th>Implementation Details</th>
+          <th>Details</th>
         </tr>
       </thead>
       <tbody>
@@ -166,8 +166,8 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
         </tr>
         <tr>
           <td><strong>Concentration</strong></td>
-          <td>Max 25 Positions</td>
-          <td>Strict cap of 25 holdings across the portfolio to ensure deep research depth and high conviction.</td>
+          <td>Target ~25 Positions</td>
+          <td>Soft target aiming for 25 or fewer holdings. Conviction dictates sizing, ranging from a single 100% position to 26+ holdings.</td>
         </tr>
         <tr>
           <td><strong>Cadence</strong></td>

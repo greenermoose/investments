@@ -19,7 +19,7 @@ ACCOUNT SNAPSHOT:
 - Settled Cash:       $11,500.00
 - SGOV (Cash Proxy):  365 shares ($36,682.50)
 - Total Dry Powder:   $48,182.50 (39.6% of account)
-- Active Holdings:    4 equities (Target Cap: 25)
+- Active Holdings:    4 equities (Target: ~25 or fewer)
 
 --------------------------------------------------------------------------------
 STEP 1: SINGLE-SESSION ORDER ENTRY (PORTFOLIO 1)

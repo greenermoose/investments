@@ -74,7 +74,7 @@ gantt
   - `scripts/build_sec_data.js` automated TTM revenue and shares aggregator.
   - `scripts/build_universe_json.py` master catalog synthesis engine.
 - [ ] **3.4 Master US Market Directory Sync:** Expand sync across full NYSE, NASDAQ, and AMEX common stock listings (~4,000–6,000 tickers) into local SQLite / Parquet cache (`scripts/data/universe.db`).
-- [ ] **3.5 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the 25 position limit.
+- [ ] **3.5 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates aligned with the ~25 position target guideline.
 
 ## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
 

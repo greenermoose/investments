@@ -15,7 +15,7 @@ This document defines the strict, non-negotiable risk and allocation boundaries 
 - Forbidden Derivatives: Naked options, long calls/puts without underlying, debit spreads, iron condors, straddles, or levered multi-leg structures.
 
 ## 3. Diversification & Concentration Boundaries
-- Position Limit: Aim for 25 or fewer simultaneous active equity holdings per portfolio.
+- Position Concentration Guideline: Aim for approximately 25 or fewer simultaneous active equity holdings per portfolio. This is a guideline rather than a rigid hard limit: with sufficient high conviction, a portfolio may be concentrated down to a single position (100% allocation), or expanded to 26+ holdings if high-conviction opportunities warrant it.
 - Single Stock Maximum Allocation: A single company equity position can be 100% of a portfolio if you have high enough conviction in the trade.
 - SGOV Minimum: No minimum cash/SGOV cushion needs to be maintained beyond the requirements for securing puts.
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="css/roboto-fonts.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview &amp; Guide</div>
+      <a href="index.html" class="docs-nav-link">System Overview</a>
+      <a href="guide.html" class="docs-nav-link active">User Guide</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Equity Intelligence</div>
+      <a href="universe.html" class="docs-nav-link">Company Universe &amp; SEC</a>
+      <a href="theses.html" class="docs-nav-link">Investment Theses</a>
+      <a href="docs/sources.html" class="docs-nav-link">Data Sources &amp; Provenance</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy &amp; Mechanics</div>
+      <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="docs/options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
+      <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>User Guide &amp; Operational Cadence</h1>
+      <p class="docs-lead">Step-by-step instructions for operating the multi-agent investment advisory system on a disciplined, single-session weekly schedule.</p>
+    </div>
+
+    <div class="callout important">
+      <div class="callout-title">Core Operating Philosophy: Single-Session "Set-and-Forget"</div>
+      <p>This system is specifically engineered for investors with demanding full-time professional schedules. There is <strong>zero mid-week babysitting or intraday monitoring</strong>. All deliberation takes place over the weekend, all limit orders are entered in one sitting on Monday morning, and all Friday option expirations settle automatically.</p>
+    </div>
+
+    <h2>How to Operate the System: Step-by-Step</h2>
+    <p>Follow this 5-step operational protocol every week to run deliberation, review your personalized plan, and execute trades.</p>
+
+    <div class="step-container">
+      <div class="step-card">
+        <div class="step-badge">Step 1</div>
+        <div class="step-content">
+          <h4>Capture Weekend Portfolio Snapshots</h4>
+          <p>Export your account holdings as a CSV or capture a clean screenshot from your brokerage portal. Save the file directly into the git-ignored private directory:</p>
+          <pre><code>private/snapshots/2026-08-15-schwab.csv
+private/snapshots/2026-08-15-fidelity.png</code></pre>
+          <p>If managing multiple accounts (e.g. taxable growth + retirement), drop snapshots for each account into <code>private/snapshots/</code>. The agents will parse and generate separate, self-contained order blocks for each portfolio.</p>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-badge">Step 2</div>
+        <div class="step-content">
+          <h4>Launch IDE or AI Agent Harness</h4>
+          <p>Open your AI coding assistant (such as Antigravity IDE, Claude Code, or Cursor) pointed directly at this repository root. This provides the AI agents with immediate access to repository guidelines (<code>AGENTS.md</code>), schemas, prompts, and public thesis dossiers.</p>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-badge">Step 3</div>
+        <div class="step-content">
+          <h4>Execute the Weekly Deliberation Protocol</h4>
+          <p>Prompt your AI agent to ingest the snapshots and trigger the deliberation pipeline using the prompt in <code>context/prompts/weekly_deliberation.md</code>:</p>
+          <pre><code>Please ingest private/snapshots/ and run context/prompts/weekly_deliberation.md to generate our Monday execution plan.</code></pre>
+          <p>The specialized sub-agents will automatically parse share counts, analyze thesis catalysts, screen candidate equities, calculate Black-Scholes option pricing, and synthesize decisions into a cohesive plan.</p>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-badge">Step 4</div>
+        <div class="step-content">
+          <h4>Review the Decisive Trading Plan</h4>
+          <p>Open the generated plan in <code>private/plans/YYYY-MM-DD-plan.txt</code>. The plan is rendered in clean, plain ASCII text conforming to repository schemas:</p>
+          <ul>
+            <li><strong>Account Snapshot:</strong> Total Value, Cash, SGOV proxy, Dry Powder percentage, and Active Positions.</li>
+            <li><strong>Monday 9:30 AM Orders:</strong> Clear numbered list of Limit Orders with exact limit prices, cash impacts, and rationales.</li>
+            <li><strong>Execution-Time Contingencies:</strong> Deterministic price branches (e.g. Branch A if stock &gt;= $X; Branch B if stock &lt; $X) for frictionless entry.</li>
+            <li><strong>Friday Expiration Expectations:</strong> Clear forecast of automated option settlements and collateral unlocks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-badge">Step 5</div>
+        <div class="step-content">
+          <h4>Monday Morning Execution</h4>
+          <p>Log in to your brokerage at 9:30 AM ET (or whenever you can access your account Monday morning) and submit all specified limit orders in one sitting. Once entered, log out. No further actions or mid-week checks are required until next weekend's snapshot.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Key Execution Rules &amp; Principles</h2>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>Zero Ambiguity Policy</h4>
+        <p>The system never presents open-ended dilemmas or "choose X or Y depending on risk tolerance". Every position receives a single, high-conviction recommendation.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>Deterministic Contingencies</h4>
+        <p>If market conditions fluctuate at market open, the plan provides instant deterministic branching (Branch A vs Branch B) so you never need to improvise.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>Multi-Portfolio Isolation</h4>
+        <p>Distinct accounts are analyzed independently. Orders for Portfolio 1 are executed completely before moving to Portfolio 2.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>Automated Friday Settlement</h4>
+        <p>Option expirations, call assignments, and cash collateral releases occur automatically via your broker at 4:00 PM ET on Friday.</p>
+      </div>
+    </div>
+
+    <h2>Detailed User Guide &amp; Workflow Documentation</h2>
+    <p>For deeper exploration into specific execution protocols and strategy mechanics, consult the following guides:</p>
+
+    <div class="card-grid">
+      <a href="docs/workflow.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
+        <h4 style="color: #00d4ff;">Weekly Workflow &amp; Plan Anatomy &rarr;</h4>
+        <p>Full breakdown of the weekly deliberation timeline, plain-text plan structure, sample multi-portfolio plan files, and execution mechanics.</p>
+      </a>
+
+      <a href="docs/options.html" class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
+        <h4 style="color: #818cf8;">Options &amp; Limit Pricing Mechanics &rarr;</h4>
+        <p>Understanding Black-Scholes pricing models, 0.15-0.30 Delta bands, 30-45 DTE cycles, Cash-Secured Puts, Covered Calls, and net-credit rolls.</p>
+      </a>
+
+      <a href="docs/strategies.html" class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
+        <h4 style="color: #10b981;">Investment Strategy &amp; Risk Constraints &rarr;</h4>
+        <p>Core portfolio constraints, ~25 position target guideline, SGOV cash proxy rules, and risk management framework.</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

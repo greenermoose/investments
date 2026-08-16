@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agentic Investment Advisor - System Overview & Guide</title>
+  <title>System Overview - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
@@ -13,11 +13,9 @@
       <span>Investments Portal</span>
     </a>
     <div class="docs-nav-group">
-      <div class="docs-nav-title">Overview &amp; Workflow</div>
-      <a href="index.html" class="docs-nav-link active">System Overview &amp; Guide</a>
-      <a href="docs/workflow.html" class="docs-nav-link">Weekly Workflow</a>
-      <a href="docs/index.html" class="docs-nav-link">Documentation Hub</a>
-      <a href="docs/architecture.html" class="docs-nav-link">System Architecture</a>
+      <div class="docs-nav-title">Overview &amp; Guide</div>
+      <a href="index.html" class="docs-nav-link active">System Overview</a>
+      <a href="guide.html" class="docs-nav-link">User Guide</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -35,106 +33,82 @@
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>Agentic Investment Advisor</h1>
-      <p class="docs-lead">A multi-agent equity advisory system designed to maximize the probability of achieving a 20%+ annualized return over a 20-year horizon.</p>
+      <h1>System Overview</h1>
+      <p class="docs-lead">A specialized multi-agent equity advisory architecture engineered to maximize the probability of achieving a 20%+ annualized return over a 20-year horizon.</p>
     </div>
 
     <!-- Quick Access Hub to Universe & Theses -->
     <div class="card-grid" style="margin-bottom: 32px;">
       <a href="universe.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4); background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
-        <h4 style="color: #00d4ff;">Public Company Universe & SEC Provenance &rarr;</h4>
+        <h4 style="color: #00d4ff;">Public Company Universe &amp; SEC Provenance &rarr;</h4>
         <p>Browse the 144 US equities in our tracked public universe, filter by sector and status, and audit verified primary source SEC EDGAR 10-K/10-Q filings.</p>
       </a>
       <a href="theses.html" class="docs-card" style="border-color: rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
-        <h4 style="color: #10b981;">Investment Theses & Conviction Matrix &rarr;</h4>
+        <h4 style="color: #10b981;">Investment Theses &amp; Conviction Matrix &rarr;</h4>
         <p>Inspect active long and covered call thesis dossiers, upcoming catalyst calendars, invalidation criteria, and price targets.</p>
       </a>
     </div>
 
     <div class="callout important">
       <div class="callout-title">System Architecture Principle</div>
-      <p>This repository is <strong>not</strong> a point-and-click web application. The core engine is executed inside your IDE or AI harness pointed at this repository, orchestrating specialized AI sub-agents with full repository context over your private portfolio snapshots and public equity theses.</p>
+      <p>This repository is <strong>not</strong> a generic point-and-click web application. The core advisory engine is executed inside your IDE or AI harness pointed at this repository, orchestrating specialized AI sub-agents with full repository context over your private portfolio snapshots, public equity theses, and deterministic math scripts.</p>
     </div>
 
-    <h2>How to Operate the System</h2>
-    <p>Operating this system follows a weekly single-session cadence designed for traders with demanding full-time schedules. There is zero mid-week monitoring or babysitting.</p>
+    <h2>System Rationale: Why Agent Teams Outperform Monolithic Chatbots</h2>
+    <p>Standard LLM chat sessions fail at reliable, personalized portfolio management due to four fundamental architectural flaws:</p>
+    <ul>
+      <li><strong>Session Amnesia:</strong> Ephemeral chat contexts lose track of historical cost bases, catalyst milestones, invalidation triggers, and multi-week option roll chains.</li>
+      <li><strong>Guardrail Hedging &amp; Indecision:</strong> Generic consumer bots produce timid, non-actionable answers filled with open-ended "it depends on your risk tolerance" disclaimers.</li>
+      <li><strong>Narrow Universe Focus:</strong> Single prompt windows lack the context capacity to simultaneously audit hundreds of public equities against verified SEC filings.</li>
+      <li><strong>Absence of Deterministic Derivatives Modeling:</strong> Standard language models cannot reliably calculate Black-Scholes Greeks, volatility skews, or exact limit pricing formulas.</li>
+    </ul>
+    <p>This system resolves these limitations by breaking the advisory process into five discrete, specialized sub-agent roles backed by persistent file-based memory, strict data provenance, and deterministic Python calculation scripts.</p>
 
-    <div class="step-container">
-      <div class="step-card">
-        <div class="step-badge">Step 1</div>
-        <div class="step-content">
-          <h4>Capture Weekend Portfolio Snapshots</h4>
-          <p>Export your account holdings as a CSV or capture a screenshot from your brokerage, and place the file in the git-ignored private directory:</p>
-          <pre><code>private/snapshots/2026-08-15-schwab.csv
-private/snapshots/2026-08-15-fidelity.png</code></pre>
-        </div>
-      </div>
-
-      <div class="step-card">
-        <div class="step-badge">Step 2</div>
-        <div class="step-content">
-          <h4>Open IDE or AI Agent Harness</h4>
-          <p>Launch your AI coding assistant (e.g. Antigravity IDE, Claude Code, Cursor) opened directly at this repository root so it has complete access to repository rules, schemas, and public theses.</p>
-        </div>
-      </div>
-
-      <div class="step-card">
-        <div class="step-badge">Step 3</div>
-        <div class="step-content">
-          <h4>Run the Weekly Deliberation Protocol</h4>
-          <p>Prompt your AI agent with the master deliberation prompt located at <code>context/prompts/weekly_deliberation.md</code>:</p>
-          <pre><code>Please ingest private/snapshots/ and run context/prompts/weekly_deliberation.md to generate our Monday execution plan.</code></pre>
-        </div>
-      </div>
-
-      <div class="step-card">
-        <div class="step-badge">Step 4</div>
-        <div class="step-content">
-          <h4>Review Decisive Trading Plan</h4>
-          <p>The AI agents parse holdings, evaluate thesis catalysts, model Black-Scholes options pricing, and write a human-readable plain text trading plan in <code>private/plans/</code> with unambiguous Monday limit orders.</p>
-        </div>
-      </div>
-
-      <div class="step-card">
-        <div class="step-badge">Step 5</div>
-        <div class="step-content">
-          <h4>Monday 9:30 AM ET Single-Session Execution</h4>
-          <p>Place the specified Limit Orders at market open. All Friday options expirations, cash assignments, and call-aways settle automatically at 4:00 PM ET with zero mid-week intervention.</p>
-        </div>
-      </div>
-    </div>
-
-    <h2>Multi-Agent Architecture</h2>
-    <p>Rather than relying on a single generalist chatbot, the system coordinates five specialized roles backed by deterministic data structures:</p>
+    <h2>Multi-Agent Sub-Agent Pipeline</h2>
+    <p>Rather than relying on a single generalist model, the deliberation protocol coordinates five specialized roles backed by structured data contracts:</p>
 
     <div class="card-grid">
-      <a href="docs/architecture.html" class="docs-card">
+      <div class="docs-card">
         <h4>1. Portfolio Ingestion Agent</h4>
-        <p>Extracts holdings, share lots, cash balances, SGOV shares, and open options contracts from raw snapshots, identifying covered call eligibility.</p>
-      </a>
+        <p><strong>Input:</strong> Brokerage screenshot or CSV export in <code>private/snapshots/</code>.</p>
+        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, and SGOV shares. Identifies 100-share blocks eligible for Covered Call income generation.</p>
+      </div>
 
-      <a href="docs/architecture.html" class="docs-card">
-        <h4>2. Thesis & Memory Agent</h4>
-        <p>Maintains persistent markdown dossiers in <code>context/theses/</code>, tracking multi-year catalysts, thesis health, and flagging broken theses for exit.</p>
-      </a>
+      <div class="docs-card">
+        <h4>2. Thesis &amp; Memory Agent</h4>
+        <p><strong>Input:</strong> Parsed holdings + persistent markdown dossiers in <code>context/theses/*.md</code>.</p>
+        <p><strong>Responsibility:</strong> Evaluates conviction levels, tracks multi-quarter earnings catalysts, monitors invalidation triggers, and flags broken theses for decisive exit.</p>
+      </div>
 
-      <a href="docs/architecture.html" class="docs-card">
-        <h4>3. Universe Screener & Analyst</h4>
-        <p>Screens the US public equity universe for high-ROIC, positive-FCF compounders while targeting ~25 or fewer high-conviction positions.</p>
-      </a>
+      <div class="docs-card">
+        <h4>3. Universe Screener &amp; Analyst</h4>
+        <p><strong>Input:</strong> 144 US public equities database + fundamental valuation filters.</p>
+        <p><strong>Responsibility:</strong> Screens for high-ROIC compounders with positive free cash flow, surfacing new entry candidates while targeting ~25 or fewer total positions.</p>
+      </div>
 
-      <a href="docs/architecture.html" class="docs-card">
+      <div class="docs-card">
         <h4>4. Derivatives Specialist</h4>
-        <p>Models Black-Scholes pricing over the weekend to compute precise Monday limit orders for Cash-Secured Puts, Covered Calls, and credit rolls.</p>
-      </a>
+        <p><strong>Input:</strong> Stock lots, cash collateral, candidate tickers, and Black-Scholes pricing models.</p>
+        <p><strong>Responsibility:</strong> Calculates precise Monday limit order pricing for Cash-Secured Puts (0.15-0.30 Delta, 30-45 DTE), Covered Calls, and net-credit calendar rolls.</p>
+      </div>
 
-      <a href="docs/architecture.html" class="docs-card">
+      <div class="docs-card">
         <h4>5. Lead Portfolio Manager</h4>
-        <p>Synthesizes sub-agent analysis into an unambiguous, single-conviction Weekly Trading Plan in <code>private/plans/</code>.</p>
-      </a>
+        <p><strong>Input:</strong> Sub-agent recommendations and portfolio risk constraints.</p>
+        <p><strong>Responsibility:</strong> Synthesizes executive decisions into an unambiguous plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) with single-session Monday execution.</p>
+      </div>
     </div>
 
-    <h2>Core Risk Rules & Portfolio Constraints</h2>
+    <h2>Data Isolation &amp; Privacy Architecture</h2>
+    <p>The system enforces a strict one-way information flow and privacy boundary between confidential user holdings and public intelligence:</p>
+    <ul>
+      <li><strong>Private Execution Tier (<code>private/</code>):</strong> All user snapshots, exact account values, cash balances, and personalized trading plans reside locally and are excluded from version control via <code>.gitignore</code>. Private data never bleeds back into public dossiers.</li>
+      <li><strong>Public Intelligence Tier (<code>context/theses/</code> &amp; <code>http/</code>):</strong> Fundamental company research, SEC EDGAR 10-K/10-Q provenance, catalyst timelines, and valuation metrics exist on completely equal footing for all universe equities.</li>
+      <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python and Node.js CLI tools execute mathematical models, options pricing, and local caching deterministically.</li>
+      <li><strong>Local Sandbox (<code>scratch/</code>):</strong> Git-ignored workspace for temporary test calculations and exploratory scripts.</li>
+    </ul>
+
+    <h2>Core Risk Rules &amp; Portfolio Constraints</h2>
     <table>
       <thead>
         <tr>
@@ -156,12 +130,12 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
         </tr>
         <tr>
           <td><strong>Derivatives</strong></td>
-          <td>CSPs & CCs Only</td>
-          <td>Strictly no naked options. All puts must be 100% cash-secured; all calls must be covered by >= 100 shares.</td>
+          <td>CSPs &amp; CCs Only</td>
+          <td>Strictly no naked options. All puts must be 100% cash-secured; all calls must be covered by &gt;= 100 shares.</td>
         </tr>
         <tr>
           <td><strong>Rolling Rules</strong></td>
-          <td>Defensive & Income</td>
+          <td>Defensive &amp; Income</td>
           <td>Rolls (out/down for puts, out/up for calls) are executed strictly for a net credit.</td>
         </tr>
         <tr>
@@ -172,18 +146,18 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
         <tr>
           <td><strong>Cadence</strong></td>
           <td>Single-Session Weekly</td>
-          <td>Weekend analysis and planning; set-and-forget limit orders placed Monday at 9:30 AM ET.</td>
+          <td>Weekend analysis and planning; set-and-forget limit orders placed Monday at 9:30 AM ET with zero mid-week monitoring.</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Repository & Audience Segmentation</h2>
+    <h2>Repository &amp; Audience Segmentation</h2>
     <table>
       <thead>
         <tr>
           <th>Directory</th>
           <th>Primary Consumer</th>
-          <th>Purpose & Contents</th>
+          <th>Purpose &amp; Contents</th>
         </tr>
       </thead>
       <tbody>
@@ -195,7 +169,7 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
         <tr>
           <td><code>http/</code></td>
           <td>Human Operator</td>
-          <td>System documentation hub (<code>docs/</code>), guides, and public metrics reference.</td>
+          <td>System companion dashboard, guides, universe explorer, and documentation.</td>
         </tr>
         <tr>
           <td><code>scripts/</code></td>
@@ -215,27 +189,25 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
       </tbody>
     </table>
 
-    <h2>System Documentation Guides</h2>
+    <h2>System Overview &amp; Architecture Documentation</h2>
+    <p>Explore detailed architectural and technical documentation across the system:</p>
+
     <div class="card-grid">
       <a href="docs/architecture.html" class="docs-card">
-        <h4>System Architecture</h4>
-        <p>In-depth review of the 5-agent pipeline, memory hierarchy, and context construction.</p>
+        <h4>System Architecture Deep Dive &rarr;</h4>
+        <p>In-depth review of the 5-agent pipeline, memory hierarchy, data isolation, and deterministic context construction.</p>
       </a>
-      <a href="docs/workflow.html" class="docs-card">
-        <h4>Weekly Workflow</h4>
-        <p>Detailed walkthrough of the weekend deliberation and Monday morning order execution.</p>
+      <a href="docs/sources.html" class="docs-card">
+        <h4>Data Sources &amp; Provenance &rarr;</h4>
+        <p>Authoritative 5-tier source hierarchy, SEC EDGAR primary feeds, agent parametric knowledge rules, and errata workflows.</p>
       </a>
       <a href="docs/strategies.html" class="docs-card">
-        <h4>Investment Strategy</h4>
-        <p>Comprehensive strategy guidelines, portfolio constraints, and risk management rules.</p>
-      </a>
-      <a href="docs/options.html" class="docs-card">
-        <h4>Options & Limit Pricing</h4>
-        <p>Mathematical foundations for Black-Scholes modeling, Delta targeting (0.15-0.30), and credit rolls.</p>
+        <h4>Investment Strategy &amp; Constraints &rarr;</h4>
+        <p>Comprehensive strategy guidelines, portfolio constraints, 20%+ annualized target objective, and risk rules.</p>
       </a>
       <a href="docs/valuation.html" class="docs-card">
-        <h4>Valuation Framework</h4>
-        <p>Multi-stage DCF models, Owner Earnings yield analysis, and Margin of Safety thresholds.</p>
+        <h4>Valuation Framework &rarr;</h4>
+        <p>Multi-stage DCF models, Owner Earnings yield analysis, ROIC metrics, and Margin of Safety thresholds.</p>
       </a>
     </div>
   </main>

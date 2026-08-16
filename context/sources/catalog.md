@@ -57,7 +57,19 @@ When evaluating factual data, financial metrics, or valuation variables, the sys
 - **Domain:** Official equity settlement prices, options chain definitions, strike listings, expiration schedules, open interest, and historical implied volatility indices (VIX, VXN).
 - **Authority Rating:** Absolute Ground Truth for options contracts, expirations, strike availability, and official exchange closing prices.
 
+### NASDAQ Trader Symbol Directory
+- **Provider:** NASDAQ Market Operations / Trader Services.
+- **Domain:** Authoritative daily master listings of all NASDAQ and other-exchange listed securities (`nasdaqlisted.txt`, `otherlisted.txt`), security categories, test issues, and ETF indicators.
+- **Authority Rating:** Absolute Ground Truth for exchange listing status, active trading symbols, and security classification.
+- **Access Protocol:** Public anonymous FTP (`ftp://ftp.nasdaqtrader.com/SymbolDirectory/`).
+
 ## Tier 2: Institutional Aggregators & Macro Databases
+
+### Developer Financial Data & Screener APIs (FMP, Polygon.io, Tiingo)
+- **Providers:** Financial Modeling Prep, Polygon.io, Tiingo, Alpaca, Finnhub, EODHD.
+- **Domain:** Programmatic stock screening endpoints, real-time/delayed OHLCV market feeds, adjusted historical price series, corporate actions, and structured XBRL financial statement extracts.
+- **Authority Rating:** High-reliability institutional aggregators. Built specifically for automated AI agent orchestration, programmatic querying, and algorithmic screening.
+- **Comprehensive Guide:** See [Master Guide to Investment Data Sources](file:///c:/Users/fyhor/Documents/GitHub/investments/context/sources/investment_data_sources.md) for full pricing, endpoint schemas, and bot policies.
 
 ### FRED (Federal Reserve Economic Data)
 - **Provider:** Federal Reserve Bank of St. Louis.

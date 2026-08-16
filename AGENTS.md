@@ -20,7 +20,7 @@
 ## 4. Multi-Portfolio Handling & Trading Plan Formatting Rules
 - **Multi-Portfolio Isolation**: When multiple portfolio snapshots exist in `private/snapshots/` (e.g. separate accounts across CSV and image files), agents must parse and analyze each portfolio separately. Never merge distinct portfolios into a single blended action table.
 - **Sequential Execution Layout**: The trading plan must present each portfolio as a completely self-contained section so the human trader can execute all trades for Portfolio 1, then proceed to Portfolio 2.
-- **Human-Centric Plain-Text Formatting**: Weekly trading plans written to `private/plans/` (`YYYY-MM-DD-plan.txt` and `YYYY-MM-DD-plan.md`) must use plain ASCII text formatting instead of cramped markdown tables. Use clear ASCII section headers, indentation, and step-by-step numbered order blocks.
+- **Human-Centric Plain-Text Formatting**: Weekly trading plans written to `private/plans/` (`YYYY-MM-DD-plan.txt`) must strictly use plain ASCII text formatting conforming to `context/schemas/trading_plan_schema.json`. Never output Markdown pipe tables, bulleted markdown summaries, or markdown formatting for trading plans. Use clear ASCII section headers, indentation, and step-by-step numbered order blocks.
 - **Standard Per-Portfolio Plan Structure**:
   1. Account Snapshot: Total Value, Cash Balance, SGOV proxy, Dry Powder, Position Count.
   2. Monday 9:30 AM ET Orders: Numbered list specifying Action, Symbol, Quantity, Order Type (Limit), Limit Price, Est. Cash Impact, and Rationale.

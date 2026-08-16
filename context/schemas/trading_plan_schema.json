@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TradingPlanSchema",
+  "description": "Structural specification and format constraints for weekly plain-text trading plans written to private/plans/YYYY-MM-DD-plan.txt.",
+  "type": "object",
+  "properties": {
+    "plan_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Monday execution date of the plan (YYYY-MM-DD)."
+    },
+    "format": {
+      "type": "string",
+      "enum": ["plain_ascii_text"],
+      "description": "Format must strictly be plain ASCII text with no Markdown pipe tables or complex formatting."
+    },
+    "objective": {
+      "type": "string",
+      "description": "Core mandate: Maximize probability of achieving >= 20% annualized return over 20 years."
+    },
+    "cadence": {
+      "type": "string",
+      "description": "Single-session set-and-forget execution (Monday 9:30 AM ET). Zero mid-week monitoring."
+    },
+    "portfolios": {
+      "type": "array",
+      "description": "Completely isolated, self-contained sequential portfolio execution sections.",
+      "items": {
+        "$ref": "#/definitions/PortfolioPlan"
+      }
+    }
+  },
+  "required": [
+    "plan_date",
+    "format",
+    "objective",
+    "cadence",
+    "portfolios"
+  ],
+  "definitions": {
+    "PortfolioPlan": {
+      "type": "object",
+      "properties": {
+        "portfolio_name": {
+          "type": "string",
+          "description": "Distinct account name (e.g. Primary Growth Account, Roth IRA)."
+        },
+        "account_snapshot": {
+          "$ref": "#/definitions/AccountSnapshot"
+        },
+        "step_1_monday_orders": {
+          "type": "array",
+          "description": "Numbered list of actionable limit orders for Monday 9:30 AM ET.",
+          "items": {
+            "$ref": "#/definitions/MondayOrder"
+          }
+        },
+        "step_2_friday_expirations": {
+          "$ref": "#/definitions/FridayExpirations"
+        }
+      },
+      "required": [
+        "portfolio_name",
+        "account_snapshot",
+        "step_1_monday_orders",
+        "step_2_friday_expirations"
+      ]
+    },
+    "AccountSnapshot": {
+      "type": "object",
+      "properties": {
+        "total_account_value": { "type": "number" },
+        "settled_cash": { "type": "number" },
+        "sgov_shares": { "type": "number" },
+        "total_dry_powder": { "type": "number" },
+        "active_holdings_count": { "type": "integer" }
+      },
+      "required": [
+        "total_account_value",
+        "settled_cash",
+        "total_dry_powder"
+      ]
+    },
+    "MondayOrder": {
+      "type": "object",
+      "properties": {
+        "order_number": { "type": "integer" },
+        "action": {
+          "type": "string",
+          "enum": ["SELL TO OPEN", "BUY TO CLOSE", "ROLL COVERED CALL", "ROLL CASH-SECURED PUT", "BUY TO OPEN", "SELL TO CLOSE", "HOLD"]
+        },
+        "symbol": { "type": "string" },
+        "order_type": { "type": "string" },
+        "limit_price": { "type": "string" },
+        "collateral_or_cash_impact": { "type": "string" },
+        "rationale": { "type": "string" },
+        "order_entry_contingency": {
+          "type": "object",
+          "description": "Deterministic price-dependent execution branches at order entry (Branch A / Branch B)."
+        }
+      },
+      "required": [
+        "order_number",
+        "action",
+        "symbol",
+        "order_type",
+        "limit_price",
+        "rationale"
+      ]
+    },
+    "FridayExpirations": {
+      "type": "object",
+      "properties": {
+        "zero_midweek_management_confirmed": { "type": "boolean" },
+        "expiring_positions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "symbol": { "type": "string" },
+              "contract": { "type": "string" },
+              "current_underlying_price": { "type": "number" },
+              "expected_settlement": { "type": "string" }
+            },
+            "required": ["symbol", "contract", "expected_settlement"]
+          }
+        }
+      },
+      "required": ["zero_midweek_management_confirmed", "expiring_positions"]
+    }
+  }
+}

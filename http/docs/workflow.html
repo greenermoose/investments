@@ -57,36 +57,126 @@
       <div class="docs-card">
         <h4>3. Executive Plan Generation</h4>
         <p><strong>Timing:</strong> Sunday Night</p>
-        <p>Lead Portfolio Manager writes the weekly trading plan to <code>private/plans/YYYY-MM-DD-plan.md</code>.</p>
+        <p>Lead Portfolio Manager writes the weekly trading plan to <code>private/plans/YYYY-MM-DD-plan.txt</code> in human-centric plain text.</p>
       </div>
 
       <div class="docs-card">
         <h4>4. Monday Execution</h4>
         <p><strong>Timing:</strong> Monday 9:30 AM ET</p>
-        <p>User reviews the plan, conducts Q&A if desired, and enters the specified limit orders into their brokerage.</p>
+        <p>User reviews the plain-text plan, conducts Q&A if desired, and enters the specified limit orders into their brokerage in a single session.</p>
       </div>
     </div>
 
     <h2>Weekly Trading Plan Structure</h2>
-    <p>Every generated plan in <code>private/plans/</code> follows a strict, actionable Markdown format:</p>
+    <p>Every generated plan in <code>private/plans/</code> is strictly plain ASCII text. It avoids hard-to-read Markdown pipe tables in favor of structured ASCII headers, clear indentation, sequential portfolio sections, and step-by-step numbered order blocks:</p>
 
-    <pre><code># Weekly Trading Plan: 2026-08-17
+    <pre><code>================================================================================
+WEEKLY TRADING PLAN: WEEK OF MONDAY, AUGUST 17, 2026
+================================================================================
 
-## Executive Action Summary (Monday Open Limit Orders)
-| Action | Symbol | Strategy | Strike / Limit | Expiration | Collateral / Value |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| SELL TO OPEN | AAPL | CSP | $210.00 Put @ $2.45 Limit | 2026-09-18 | $21,000.00 SGOV |
-| SELL TO OPEN | MSFT | CC | $460.00 Call @ $4.10 Limit | 2026-09-18 | 100 Shares |
+OBJECTIVE: Maximize probability of achieving &gt;= 20% annualized return over 20 years.
+CADENCE:   Single-session "set-and-forget" execution (Monday 9:30 AM ET or as soon
+           as you can access the account). No mid-week babysitting or monitoring.
+           Friday option settlements occur automatically. Upload a new snapshot
+           next weekend to evaluate results and generate the next plan.
 
-## Active Position Thesis & Catalyst Review
-- Detailed review of all holdings vs. earnings catalyst calendar.
+Execute all orders for PORTFOLIO 1 first, then proceed to PORTFOLIO 2.
 
-## New Trade Rationales & Invalidation Rules
-- Explicit investment thesis, valuation model, and sell rules for new proposals.</code></pre>
+
+================================================================================
+PORTFOLIO 1: PRIMARY GROWTH ACCOUNT
+================================================================================
+
+ACCOUNT SNAPSHOT:
+- Total Account Value: $121,602.50
+- Settled Cash:       $11,500.00
+- SGOV (Cash Proxy):  365 shares ($36,682.50)
+- Total Dry Powder:   $48,182.50 (39.6% of account)
+- Active Holdings:    4 equities (Target Cap: 25)
+
+--------------------------------------------------------------------------------
+STEP 1: SINGLE-SESSION ORDER ENTRY (PORTFOLIO 1)
+--------------------------------------------------------------------------------
+Submit the following 3 orders in one sitting at market open (or upon first login):
+
+1. SELL TO OPEN: NVDA 09/25/2026 $120.00 Put (Cash-Secured Put)
+   - Contracts:   1 (-100 share commitment)
+   - Order Type:  Limit Order (Day or GTC)
+   - Limit Price: $3.10 credit (or better)
+   - Collateral:  $12,000.00 reserved from SGOV/Cash
+   - Rationale:   Target entry at attractive support or harvest 2.58% 35-day ROI
+                  (26.9% annualized) on idle cash collateral.
+
+2. ROLL COVERED CALL: AAPL (Apple Inc)
+   - Step A:      BUY TO CLOSE AAPL 09/18/2026 $240.00 Call (Limit $0.85 debit)
+   - Step B:      SELL TO OPEN AAPL 09/25/2026 $245.00 Call (Limit $3.85 credit)
+   - Order Type:  Net Credit Calendar Roll Order
+   - Limit Price: &gt;= $3.00 net credit ($300.00 cash proceeds)
+   - Rationale:   Harvests 81% max profit on near-term leg and lifts strike $5 higher,
+                  preserving upside while generating high-conviction yield.
+
+3. CASH-SECURED PUT WITH ORDER-ENTRY CONTINGENCY: AMZN (Amazon.com Inc)
+   - Note: AMZN closed Friday at $182.40. Place ONE of the following based on
+     the market price at the moment you enter this order:
+     * BRANCH A (If AMZN is &gt;= $180.00 at entry):
+       - SELL TO OPEN 1x AMZN 09/25/2026 $170.00 Put (Limit Price $3.20 credit)
+       - Collateral: $17,000.00 reserved
+     * BRANCH B (If AMZN is &lt; $180.00 at entry):
+       - SELL TO OPEN 1x AMZN 09/25/2026 $165.00 Put (Limit Price $3.00 credit)
+       - Collateral: $16,500.00 reserved
+   - Alternative: If supported by your broker, submit Branch A and Branch B as a
+     single contingent OCO / conditional order during this Monday session.
+   - Rationale:   Ensures disciplined delta exposure without needing to monitor
+                  intraday price swings later in the week.
+
+--------------------------------------------------------------------------------
+STEP 2: FRIDAY EXPIRATION &amp; ASSIGNMENT EXPECTATIONS (PORTFOLIO 1)
+--------------------------------------------------------------------------------
+Zero mid-week management required. The broker automatically settles the following
+positions at 4:00 PM ET on Friday, August 21:
+
+- MSFT 08/21/2026 $430.00 Put (-1 contract): Stock currently at $448.00.
+  EXPECTATION: Expires worthless with 100% premium captured. $43,000 in cash
+  collateral unlocks automatically for next week's plan.
+- GOOGL 08/21/2026 $175.00 Call (-1 contract): Stock currently at $168.50.
+  EXPECTATION: Expires worthless OTM. Full 100 shares retained for new call
+  roll next week.
+
+================================================================================
+PORTFOLIO 2: SECONDARY ACCOUNT
+================================================================================
+
+ACCOUNT SNAPSHOT:
+- Total Value:     $15,420.00
+- Settled Cash:    $2,100.00
+- Active Holdings: 3 stocks (MSFT, GOOGL, SGOV)
+- Covered Call Eligible Blocks: 0
+
+--------------------------------------------------------------------------------
+STEP 1: SINGLE-SESSION ORDER ENTRY (PORTFOLIO 2)
+--------------------------------------------------------------------------------
+Submit the following order in one sitting:
+
+1. BUY TO OPEN: SGOV (iShares 0-3 Month Treasury Bond ETF)
+   - Shares:      20
+   - Order Type:  Limit Order
+   - Limit Price: $100.55
+   - Est. Cash:   -$2,011.00
+   - Rationale:   Park idle cash in yield proxy earning 5%+ risk-free return while
+                  awaiting high-conviction stock dip opportunities.
+
+--------------------------------------------------------------------------------
+STEP 2: FRIDAY EXPIRATION &amp; ASSIGNMENT EXPECTATIONS (PORTFOLIO 2)
+--------------------------------------------------------------------------------
+- No active option contracts in this account. All equity positions compound passively.
+
+================================================================================
+END OF TRADING PLAN
+================================================================================</code></pre>
 
     <div class="callout important">
-      <div class="callout-title">Plain Text & Markdown Simplicity</div>
-      <p>Trading plans in <code>private/plans/</code> are strictly plain text or standard Markdown. They do not require any web build or server to read, keeping confidential personal execution records clean, durable, and portable.</p>
+      <div class="callout-title">Plain Text Standard &amp; Execution Principles</div>
+      <p>Trading plans in <code>private/plans/</code> are strictly plain ASCII text. Never use Markdown tables or ambiguous choices. Every position has a decisive recommendation, single-session execution, deterministic contingencies, and automated Friday settlement.</p>
     </div>
   </main>
 </body>

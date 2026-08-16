@@ -36,9 +36,9 @@ investments/
     data/               # Local script databases and caches (e.g., universe.db)
   private/              # Primary audience: Humans (Private Data - Git Ignored)
     snapshots/          # Raw weekly inputs (brokerage CSVs, screenshots)
-    plans/              # Generated weekly trading plans (Markdown / Plain text)
+    plans/              # Generated weekly trading plans (Plain ASCII text .txt)
   scratch/              # Local Sandbox for Humans & Agents (Git Ignored)
-  examples/             # Public onboarding templates (sample portfolio CSV, sample plan)
+  examples/             # Public onboarding templates (sample portfolio CSV, sample plan .txt)
 ```
 
 ## Core Portfolio Rules & Safety Constraints
@@ -72,7 +72,7 @@ flowchart TD
     G --> H
     
     H --> I[Lead Portfolio Manager]
-    I --> J[Private Trading Plan in private/plans/]
+    I --> J[Plain-Text Trading Plan in private/plans/YYYY-MM-DD-plan.txt]
     I --> K[Updated Theses in context/theses/]
     J <--> L[Interactive User Q&A / Challenge Session]
     L --> M[Monday Market Open Execution]
@@ -82,7 +82,7 @@ flowchart TD
 2. **Thesis & Memory Agent:** Loads markdown dossiers from `context/theses/`, verifies if active catalysts materialized or failed (e.g., negative earnings, regulatory delays), and flags broken theses for exit.
 3. **Universe Screener & Fundamental Analyst:** Screens the broader US equity database against fundamental and technical criteria, identifying high-conviction ideas while respecting the 25 position ceiling.
 4. **Derivatives & Limit Pricing Specialist:** Models options pricing (Black-Scholes / IV estimation) over the weekend to compute precise Monday limit orders for Cash-Secured Puts, Covered Calls, and Rolls.
-5. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (saved to `private/plans/`) and updates public company dossiers in `context/theses/`.
+5. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`) and updates public company dossiers in `context/theses/`.
 
 ## Weekly Operating Workflow
 
@@ -90,11 +90,11 @@ flowchart TD
 [Friday Close / Weekend]
   1. Upload portfolio screenshot or CSV into private/snapshots/
   2. Run the weekly agent deliberation prompt (context/prompts/weekly_deliberation.md)
-  3. Review the Executive Report & Trading Plan saved in private/plans/
+  3. Review the plain-text Trading Plan saved in private/plans/YYYY-MM-DD-plan.txt
   4. Interrogate the agents via Interactive Q&A (challenge targets, theses, and limit prices)
   
 [Monday 9:30 AM ET]
-  5. Place generated Limit Orders at market open
+  5. Place generated Limit Orders at market open in a single session
 ```
 
 ## Running the Documentation & Universe Explorer
@@ -123,4 +123,4 @@ Then open `http://localhost:8080` in your web browser:
    - Drop your weekend portfolio screenshot (or CSV export) into the `private/snapshots/` directory.
 
 3. **Prompt the Agent Team:**
-   - Copy the master prompt template from [weekly_deliberation.md](context/prompts/weekly_deliberation.md) into your AI session to generate your Monday Trading Plan in `private/plans/`.
+   - Copy the master prompt template from [weekly_deliberation.md](context/prompts/weekly_deliberation.md) into your AI session to generate your Monday Trading Plan in `private/plans/YYYY-MM-DD-plan.txt`.

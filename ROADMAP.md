@@ -99,9 +99,10 @@ gantt
 - [x] **5.1 Multi-Agent Architecture Guide:** Codify agent roles, inputs, and outputs in `http/docs/architecture.html`.
 - [x] **5.2 Master Deliberation Prompt:** Create ready-to-use prompt templates in `context/prompts/weekly_deliberation.md` for weekly runs.
 - [x] **5.3 Executive Report & Trading Plan Template:** Standardize the final weekly output format:
-  - Executive Action Summary (Monday limit order table).
-  - Position-by-position thesis review & catalyst check.
-  - New trade proposals with target ROI, timeframe, and invalidation rules.
+  - Human-centric plain ASCII text layout (`private/plans/YYYY-MM-DD-plan.txt`).
+  - Isolated sequential portfolio execution sections with account snapshots.
+  - Numbered single-session Monday 9:30 AM ET limit orders with deterministic contingencies.
+  - Friday automated option expiration and settlement expectations.
 - [ ] **5.4 Interactive Q&A Protocol:** Provide structured prompt flows for challenging agent assumptions, probing risk factors, and stress-testing limit orders.
 
 ## Phase 6: Empirical Research Synthesis & Execution Calibration

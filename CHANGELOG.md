@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.0] - 2026-08-16
+
+### Plain-Text Weekly Trading Plan Standardization & Purge of Misleading Examples
+- **Purged Misleading Markdown Plan Examples:** Removed `examples/sample_trading_plan.md` and legacy markdown table examples from `http/docs/workflow.html` that previously showed hard-to-read markdown pipe tables for weekly trading plans.
+- **Enforced Plain ASCII Text Standard:** Standardized all weekly trading plan outputs to human-centric plain ASCII text (`YYYY-MM-DD-plan.txt`) across the repository, embedding structured ASCII section dividers, sequential multi-portfolio isolation, single-session set-and-forget Monday 9:30 AM ET order blocks, deterministic order-entry branching contingencies, and Friday automated expiration expectations.
+- **Web Workflow Guide Updated (`http/docs/workflow.html`):** Updated the live web documentation to display the canonical plain-text trading plan example and articulate execution principles clearly.
+- **Agent Prompts & Canonical Template (`context/prompts/weekly_deliberation.md`):** Embedded the full plain-text trading plan template directly into the Lead Portfolio Manager deliberation prompt, with explicit prohibitions against markdown tables and ambiguous options.
+- **Formal Trading Plan Schema (`context/schemas/trading_plan_schema.json`):** Created a JSON schema defining the required structural fields, portfolio snapshot properties, order entry attributes, and settlement expectations.
+- **Repository Guidelines & Roadmap Synchronized (`AGENTS.md`, `ROADMAP.md`, `README.md`, `examples/README.md`):** Updated repository rules, phase milestone 5.3, and onboarding docs to ensure complete alignment across human and AI agent workflows.
+
 ## [2.3.0] - 2026-08-16
 
 ### Data Sources Catalog, Provenance Framework & Errata Protocols

@@ -1,0 +1,70 @@
+{
+  "symbol": "AXP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-24",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+      "data": {
+        "shares_outstanding": 682326443,
+        "revenue": 21729000000,
+        "balance_sheet": {
+          "total_assets": 308203000000,
+          "total_liabilities": 273923000000,
+          "total_shareholders_equity": 34280000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+      "data": {
+        "shares_outstanding": 686614005,
+        "revenue": 10517000000,
+        "balance_sheet": {
+          "total_assets": 308894000000,
+          "total_liabilities": 274899000000,
+          "total_shareholders_equity": 33995000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+      "data": {
+        "shares_outstanding": 688851653,
+        "revenue": 41304000000,
+        "balance_sheet": {
+          "total_assets": 300052000000,
+          "total_liabilities": 266578000000,
+          "total_shareholders_equity": 33474000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-17",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+      "data": {
+        "shares_outstanding": 695882227,
+        "revenue": 30362000000,
+        "balance_sheet": {
+          "total_assets": 297550000000,
+          "total_liabilities": 265133000000,
+          "total_shareholders_equity": 32417000000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "MRK",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+      "data": {
+        "shares_outstanding": 2469824415,
+        "revenue": 32893000000,
+        "balance_sheet": {
+          "total_assets": 129802000000,
+          "total_liabilities": 129802000000,
+          "total_shareholders_equity": 41933000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-04",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+      "data": {
+        "shares_outstanding": 2472392003,
+        "revenue": 16286000000,
+        "balance_sheet": {
+          "total_assets": 128685000000,
+          "total_liabilities": 128685000000,
+          "total_shareholders_equity": 45878000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-24",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+      "data": {
+        "shares_outstanding": 2482022536,
+        "revenue": 65011000000,
+        "balance_sheet": {
+          "total_assets": 136866000000,
+          "total_liabilities": 136866000000,
+          "total_shareholders_equity": 52606000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-05",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+      "data": {
+        "shares_outstanding": 2497783211,
+        "revenue": 48611000000,
+        "balance_sheet": {
+          "total_assets": 129546000000,
+          "total_liabilities": 129546000000,
+          "total_shareholders_equity": 51850000000
+        }
+      }
+    }
+  ]
+}

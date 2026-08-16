@@ -15,20 +15,29 @@ if os.path.exists(meta_file):
     with open(meta_file, "r", encoding="utf-8") as f:
         company_meta = json.load(f)
 
-# Load QQQ ETF holdings for name and weight references
+# Load ETF holdings for name and weight references (QQQ and DIA)
+etf_holdings_map = {}
 qqq_file = os.path.join(os.path.dirname(__file__), "data", "qqq_holdings.json")
-qqq_holdings_map = {}
 if os.path.exists(qqq_file):
     with open(qqq_file, "r", encoding="utf-8") as f:
         qqq_data = json.load(f)
         for h in qqq_data.get("holdings", []):
             t = h.get("ticker")
             if t:
-                qqq_holdings_map[t] = h
+                etf_holdings_map[t] = h
 
-# Sector & Industry mapping heuristics for any remaining constituents
+dia_file = os.path.join(os.path.dirname(__file__), "data", "dia_holdings.json")
+if os.path.exists(dia_file):
+    with open(dia_file, "r", encoding="utf-8") as f:
+        dia_data = json.load(f)
+        for h in dia_data.get("holdings", []):
+            t = h.get("ticker")
+            if t and t not in etf_holdings_map:
+                etf_holdings_map[t] = h
+
+# Sector & Industry mapping heuristics for universe constituents
 SECTOR_MAP = {
-    # Semiconductors & Tech
+    # Semiconductors & Tech Hardware
     "AMAT": ("Information Technology", "Semiconductor Equipment"),
     "LRCX": ("Information Technology", "Semiconductor Equipment"),
     "KLAC": ("Information Technology", "Semiconductor Process Control"),
@@ -47,8 +56,10 @@ SECTOR_MAP = {
     "ADI": ("Information Technology", "Analog & Mixed-Signal Semiconductors"),
     "WDC": ("Information Technology", "Data Storage Technologies"),
     "STX": ("Information Technology", "Data Storage Technologies"),
+    "IBM": ("Information Technology", "IT Services & Hybrid Cloud Infrastructure"),
     
     # Software & Cloud
+    "CRM": ("Information Technology", "Enterprise CRM & Cloud Applications"),
     "PLTR": ("Information Technology", "Enterprise Software & AI Platforms"),
     "PANW": ("Information Technology", "Cybersecurity Software"),
     "CRWD": ("Information Technology", "Cybersecurity Software"),
@@ -73,6 +84,7 @@ SECTOR_MAP = {
     "GOOG": ("Communication Services", "Interactive Media & Services"),
     "META": ("Communication Services", "Interactive Media & Services"),
     "NFLX": ("Communication Services", "Entertainment & Streaming"),
+    "DIS": ("Communication Services", "Entertainment & Media Conglomerate"),
     "TMUS": ("Communication Services", "Wireless Telecommunication"),
     "CMCSA": ("Communication Services", "Broadband Cable & Media"),
     "CHTR": ("Communication Services", "Broadband Cable & Mobile"),
@@ -80,6 +92,7 @@ SECTOR_MAP = {
     "TTWO": ("Communication Services", "Interactive Entertainment Software"),
     "WBD": ("Communication Services", "Entertainment & Media"),
     "TTD": ("Communication Services", "Digital Advertising Marketplace"),
+    "VZ": ("Communication Services", "Integrated Telecommunications"),
     
     # Consumer Discretionary
     "AMZN": ("Consumer Discretionary", "E-Commerce & Cloud Infrastructure"),
@@ -93,17 +106,26 @@ SECTOR_MAP = {
     "ROST": ("Consumer Discretionary", "Apparel & Home Merchandise Retail"),
     "LULU": ("Consumer Discretionary", "Apparel & Athletic Wear"),
     "PDD": ("Consumer Discretionary", "E-Commerce & Digital Marketplace"),
+    "HD": ("Consumer Discretionary", "Home Improvement Retail"),
+    "MCD": ("Consumer Discretionary", "Restaurants & Global Franchising"),
+    "NKE": ("Consumer Discretionary", "Athletic Footwear & Apparel"),
+    "SBUX": ("Consumer Discretionary", "Specialty Coffee Retail & Roasteries"),
     
     # Consumer Staples
     "COST": ("Consumer Staples", "Consumer Staples Merchandise Retail"),
     "PEP": ("Consumer Staples", "Packaged Foods & Beverages"),
+    "KO": ("Consumer Staples", "Non-Alcoholic Beverages & Global Franchising"),
+    "WMT": ("Consumer Staples", "Omnichannel Hypermarket Retail"),
     "MDLZ": ("Consumer Staples", "Packaged Foods & Confectionery"),
     "MNST": ("Consumer Staples", "Non-Alcoholic Beverages"),
     "KDP": ("Consumer Staples", "Non-Alcoholic Beverages & Coffee"),
     "KHC": ("Consumer Staples", "Packaged Foods"),
     "CCEP": ("Consumer Staples", "Beverage Bottling & Distribution"),
+    "PG": ("Consumer Staples", "Household & Personal Care Products"),
     
     # Health Care & Biotech
+    "JNJ": ("Health Care", "Pharmaceuticals & MedTech"),
+    "UNH": ("Health Care", "Managed Healthcare & Health Services (Optum)"),
     "VRTX": ("Health Care", "Biotechnology"),
     "REGN": ("Health Care", "Biopharmaceuticals"),
     "GILD": ("Health Care", "Biopharmaceuticals"),
@@ -116,8 +138,15 @@ SECTOR_MAP = {
     "GEHC": ("Health Care", "Medical Imaging & Diagnostic Systems"),
     "BIIB": ("Health Care", "Biotechnology & Neuroscience"),
     "AZN": ("Health Care", "Pharmaceuticals & Oncology"),
+    "MRK": ("Health Care", "Pharmaceuticals & Oncology"),
+    "CRSP": ("Health Care", "CRISPR Gene Editing Therapeutics"),
+    "BEAM": ("Health Care", "Base Editing Genetic Medicines"),
+    "NTLA": ("Health Care", "CRISPR In Vivo Gene Editing"),
+    "EDIT": ("Health Care", "Gene Editing Technologies"),
+    "STOK": ("Health Care", "RNA Therapeutics"),
+    "TDOC": ("Health Care", "Virtual Healthcare & Telemedicine"),
     
-    # Industrials
+    # Industrials & Aerospace
     "HON": ("Industrials", "Industrial Conglomerate & Aerospace"),
     "ADP": ("Industrials", "Human Capital Management Services"),
     "PAYX": ("Industrials", "Payroll & HR Outsourcing"),
@@ -131,19 +160,43 @@ SECTOR_MAP = {
     "VRSK": ("Industrials", "Insurance Data & Risk Analytics"),
     "FER": ("Industrials", "Infrastructure Concessions & Toll Roads"),
     "TRI": ("Industrials", "Legal, Tax & Accounting Software"),
+    "CAT": ("Industrials", "Construction & Mining Machinery"),
+    "BA": ("Industrials", "Aerospace & Defense"),
+    "MMM": ("Industrials", "Diversified Industrial Conglomerates"),
+    "GNRC": ("Industrials", "Backup Power Generators & Energy Technology"),
     
-    # Utilities & Energy
+    # Financials
+    "GS": ("Financials", "Investment Banking & Capital Markets"),
+    "AXP": ("Financials", "Consumer & Commercial Financial Services"),
+    "TRV": ("Financials", "Property & Casualty Insurance"),
+    "V": ("Financials", "Transaction & Payment Processing"),
+    "JPM": ("Financials", "Diversified Banking & Financial Services"),
+    "MA": ("Financials", "Transaction & Payment Processing"),
+    "PYPL": ("Financials", "Digital Payments & FinTech"),
+    "BRK-B": ("Financials", "Diversified Holding Company & Insurance"),
+    "BAM": ("Financials", "Alternative Asset Management"),
+    
+    # Energy, Utilities & Clean Tech
     "CEG": ("Utilities", "Clean Electric Power Generation"),
     "AEP": ("Utilities", "Regulated Electric Utilities"),
     "EXC": ("Utilities", "Regulated Electric & Gas Transmission"),
     "XEL": ("Utilities", "Regulated Clean Energy Utility"),
     "FANG": ("Energy", "Oil & Gas Exploration & Production"),
     "BKR": ("Energy", "Energy Technology & Oilfield Services"),
+    "CVX": ("Energy", "Integrated Oil & Gas"),
+    "ENPH": ("Energy", "Solar Inverters & Microinverter Systems"),
+    "SEDG": ("Energy", "Solar Power Optimizers & Inverters"),
+    "CSIQ": ("Energy", "Solar Module Manufacturing & Utility Projects"),
+    "ENVX": ("Energy", "Silicon-Anode Lithium-Ion Battery Technology"),
+    "EOSE": ("Energy", "Zinc-Based Stationary Energy Storage"),
+    "GWH": ("Energy", "Iron Flow Long-Duration Energy Storage"),
+    "SLDP": ("Energy", "All-Solid-State Battery Technologies"),
+    "NRGV": ("Energy", "Gravity-Based Energy Storage Infrastructure"),
     
     # Materials & Real Estate
     "LIN": ("Materials", "Industrial Gases"),
-    "CSGP": ("Real Estate", "Real Estate Information & Marketplaces"),
-    "PYPL": ("Financials", "Digital Payments & FinTech")
+    "SHW": ("Materials", "Specialty Chemicals & Architectural Coatings"),
+    "CSGP": ("Real Estate", "Real Estate Information & Marketplaces")
 }
 
 # 1. Load SEC summary metrics
@@ -172,8 +225,8 @@ for filename in sorted(all_files):
     # Resolve metadata
     meta = company_meta.get(sym)
     if not meta:
-        qqq_item = qqq_holdings_map.get(sym, {})
-        legal_name = qqq_item.get("name") or f"{sym} Corporation"
+        etf_item = etf_holdings_map.get(sym, {})
+        legal_name = etf_item.get("name") or f"{sym} Corporation"
         sector_tuple = SECTOR_MAP.get(sym, ("Information Technology", "Public Equity"))
         
         meta = {

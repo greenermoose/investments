@@ -1,0 +1,280 @@
+{
+  "etf_ticker": "DIA",
+  "fund_name": "SPDR DOW JONES INDUSTRIAL AVERAGE ETF TRUST",
+  "fund_cik": "0001041130",
+  "report_date": "2026-06-25",
+  "accession_number": "0001410368-26-066832",
+  "total_holdings_count": 30,
+  "holdings": [
+    {
+      "ticker": "GS",
+      "name": "Goldman Sachs Group Inc/The",
+      "cusip": "38141G104",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 4891682698.19,
+      "weight_pct": 11.4507,
+      "cik": "0000886982"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc",
+      "cusip": "149123101",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 4713441318.17,
+      "weight_pct": 11.0334,
+      "cik": "0000018230"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp",
+      "cusip": "594918104",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 2159336599.66,
+      "weight_pct": 5.0547,
+      "cik": "0000789019"
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Inc",
+      "cusip": "91324P102",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1961820156.56,
+      "weight_pct": 4.5923,
+      "cik": "0000731766"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc",
+      "cusip": "031162100",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1833513898.75,
+      "weight_pct": 4.292,
+      "cik": "0000318154"
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "cusip": "92826C839",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1746617254.48,
+      "weight_pct": 4.0886,
+      "cik": "0001403161"
+    },
+    {
+      "ticker": "HD",
+      "name": "Home Depot Inc/The",
+      "cusip": "437076102",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1741110093.6,
+      "weight_pct": 4.0757,
+      "cik": "0000354950"
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express Co",
+      "cusip": "025816109",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1710661848.35,
+      "weight_pct": 4.0044,
+      "cik": "0000004962"
+    },
+    {
+      "ticker": "SHW",
+      "name": "Sherwin-Williams Co/The",
+      "cusip": "824348106",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1703036548.67,
+      "weight_pct": 3.9865,
+      "cik": "0000089800"
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co",
+      "cusip": "46625H100",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1658661540.81,
+      "weight_pct": 3.8827,
+      "cik": "0000019617"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers Cos Inc/The",
+      "cusip": "89417E109",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1615822183.58,
+      "weight_pct": 3.7824,
+      "cik": "0000086312"
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's Corp",
+      "cusip": "580135101",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1554660925.73,
+      "weight_pct": 3.6392,
+      "cik": "0000063908"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "cusip": "037833100",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1436892408.45,
+      "weight_pct": 3.3635,
+      "cik": "0000320193"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "cusip": "023135106",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1403584675.82,
+      "weight_pct": 3.2856,
+      "cik": "0001018724"
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corp",
+      "cusip": "459200101",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1223119250.06,
+      "weight_pct": 2.8631,
+      "cik": "0000051143"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "cusip": "478160104",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1217135507.95,
+      "weight_pct": 2.8491,
+      "cik": "0000200406"
+    },
+    {
+      "ticker": "BA",
+      "name": "Boeing Co/The",
+      "cusip": "097023105",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1212793323.41,
+      "weight_pct": 2.839,
+      "cik": "0000012927"
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc",
+      "cusip": "438516106",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1134951722.51,
+      "weight_pct": 2.6567,
+      "cik": "0000773840"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "cusip": "67066G104",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1056792400.79,
+      "weight_pct": 2.4738,
+      "cik": "0001045810"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corp",
+      "cusip": "166764100",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 1023643528.57,
+      "weight_pct": 2.3962,
+      "cik": "0000093410"
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce Inc",
+      "cusip": "79466L302",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 934787605.91,
+      "weight_pct": 2.1882,
+      "cik": "0001108524"
+    },
+    {
+      "ticker": "PG",
+      "name": "Procter & Gamble Co/The",
+      "cusip": "742718109",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 778892590.23,
+      "weight_pct": 1.8233,
+      "cik": "0000080424"
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M Co",
+      "cusip": "88579Y101",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 775874242.44,
+      "weight_pct": 1.8162,
+      "cik": "0000066740"
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc",
+      "cusip": "931142103",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 698615129.71,
+      "weight_pct": 1.6354,
+      "cik": "0000104169"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co Inc",
+      "cusip": "58933Y105",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 578145985.46,
+      "weight_pct": 1.3534,
+      "cik": "0000310158"
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Co/The",
+      "cusip": "254687106",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 549392251.25,
+      "weight_pct": 1.286,
+      "cik": "0001744489"
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems Inc",
+      "cusip": "17275R102",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 484524250.5,
+      "weight_pct": 1.1342,
+      "cik": "0000858877"
+    },
+    {
+      "ticker": "KO",
+      "name": "Coca-Cola Co/The",
+      "cusip": "191216100",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 417061529.72,
+      "weight_pct": 0.9763,
+      "cik": "0000021344"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon Communications Inc",
+      "cusip": "92343V104",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 254335516.41,
+      "weight_pct": 0.5954,
+      "cik": "0000732712"
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE Inc",
+      "cusip": "654106103",
+      "balance_shares": 5295347.0,
+      "market_value_usd": 234901592.92,
+      "weight_pct": 0.5499,
+      "cik": "0000320187"
+    }
+  ]
+}

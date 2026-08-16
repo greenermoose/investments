@@ -1,0 +1,70 @@
+{
+  "symbol": "TRV",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-17",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+      "data": {
+        "shares_outstanding": 212644693,
+        "revenue": 24077000000,
+        "balance_sheet": {
+          "total_assets": 143580000000,
+          "total_liabilities": 110459000000,
+          "total_shareholders_equity": 33121000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-16",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+      "data": {
+        "shares_outstanding": 216237902,
+        "revenue": 11924000000,
+        "balance_sheet": {
+          "total_assets": 142309000000,
+          "total_liabilities": 110323000000,
+          "total_shareholders_equity": 31986000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-12",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+      "data": {
+        "shares_outstanding": 223063417,
+        "revenue": 48828000000,
+        "balance_sheet": {
+          "total_assets": 143708000000,
+          "total_liabilities": 110814000000,
+          "total_shareholders_equity": 32894000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-16",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+      "data": {
+        "shares_outstanding": 225133841,
+        "revenue": 36396000000,
+        "balance_sheet": {
+          "total_assets": 143678000000,
+          "total_liabilities": 112069000000,
+          "total_shareholders_equity": 31609000000
+        }
+      }
+    }
+  ]
+}

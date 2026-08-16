@@ -1547,10 +1547,192 @@
     ]
   },
   {
+    "symbol": "AXP",
+    "name": "American Express Co",
+    "sector": "Financials",
+    "industry": "Consumer & Commercial Financial Services",
+    "description": "Publicly listed company AXP (American Express Co) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 682326443,
+    "ttm_revenue": 40879000000,
+    "market_cap": 78467540945.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-24",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-24",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+        "data": {
+          "shares_outstanding": 682326443,
+          "revenue": 21729000000,
+          "balance_sheet": {
+            "total_assets": 308203000000,
+            "total_liabilities": 273923000000,
+            "total_shareholders_equity": 34280000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-23",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+        "data": {
+          "shares_outstanding": 686614005,
+          "revenue": 10517000000,
+          "balance_sheet": {
+            "total_assets": 308894000000,
+            "total_liabilities": 274899000000,
+            "total_shareholders_equity": 33995000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-06",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+        "data": {
+          "shares_outstanding": 688851653,
+          "revenue": 41304000000,
+          "balance_sheet": {
+            "total_assets": 300052000000,
+            "total_liabilities": 266578000000,
+            "total_shareholders_equity": 33474000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-17",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4962",
+        "data": {
+          "shares_outstanding": 695882227,
+          "revenue": 30362000000,
+          "balance_sheet": {
+            "total_assets": 297550000000,
+            "total_liabilities": 265133000000,
+            "total_shareholders_equity": 32417000000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "BA",
+    "name": "Boeing Co/The",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "description": "Publicly listed company BA (Boeing Co/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 788302331,
+    "ttm_revenue": 87732000000,
+    "market_cap": 90654768065.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-28",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-28",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+        "data": {
+          "shares_outstanding": 788302331,
+          "revenue": 46777000000,
+          "balance_sheet": {
+            "total_assets": 165870000000,
+            "total_liabilities": 159755000000,
+            "total_shareholders_equity": 6100000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-22",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+        "data": {
+          "shares_outstanding": 785347096,
+          "revenue": 22217000000,
+          "balance_sheet": {
+            "total_assets": 164787000000,
+            "total_liabilities": 158800000000,
+            "total_shareholders_equity": 5987000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-01-30",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+        "data": {
+          "shares_outstanding": 760095468,
+          "revenue": 89463000000,
+          "balance_sheet": {
+            "total_assets": 168235000000,
+            "total_liabilities": 162778000000,
+            "total_shareholders_equity": 5454000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-29",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+        "data": {
+          "shares_outstanding": 756157695,
+          "revenue": 65515000000,
+          "balance_sheet": {
+            "total_assets": 150023000000,
+            "total_liabilities": 158276000000,
+            "total_shareholders_equity": -8250000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "BAM",
     "name": "BAM Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Financials",
+    "industry": "Alternative Asset Management",
     "description": "Publicly listed company BAM (BAM Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -1640,8 +1822,8 @@
   {
     "symbol": "BEAM",
     "name": "BEAM Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "Base Editing Genetic Medicines",
     "description": "Publicly listed company BEAM (BEAM Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -2004,8 +2186,8 @@
   {
     "symbol": "BRK-B",
     "name": "BRK-B Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Financials",
+    "industry": "Diversified Holding Company & Insurance",
     "description": "Publicly listed company BRK-B (BRK-B Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -2087,6 +2269,97 @@
             "total_assets": 1225963000000,
             "total_liabilities": 525522000000,
             "total_shareholders_equity": 698155000000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "CAT",
+    "name": "Caterpillar Inc",
+    "sector": "Industrials",
+    "industry": "Construction & Mining Machinery",
+    "description": "Publicly listed company CAT (Caterpillar Inc) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 459674889,
+    "ttm_revenue": 65871000000,
+    "market_cap": 52862612235.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-05",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-08-05",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+        "data": {
+          "shares_outstanding": 459674889,
+          "revenue": 37958000000,
+          "balance_sheet": {
+            "total_assets": 102609000000,
+            "total_liabilities": 83215000000,
+            "total_shareholders_equity": 19394000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-06",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+        "data": {
+          "shares_outstanding": 460637026,
+          "revenue": 17415000000,
+          "balance_sheet": {
+            "total_assets": 95550000000,
+            "total_liabilities": 76890000000,
+            "total_shareholders_equity": 18660000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-13",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+        "data": {
+          "shares_outstanding": 465287332,
+          "revenue": 67589000000,
+          "balance_sheet": {
+            "total_assets": 98585000000,
+            "total_liabilities": 77267000000,
+            "total_shareholders_equity": 21318000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-11-03",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=18230",
+        "data": {
+          "shares_outstanding": 467979596,
+          "revenue": 48456000000,
+          "balance_sheet": {
+            "total_assets": 93722000000,
+            "total_liabilities": 73063000000,
+            "total_shareholders_equity": 20659000000
           }
         }
       }
@@ -2731,10 +3004,10 @@
   },
   {
     "symbol": "CRM",
-    "name": "CRM Corporation",
+    "name": "Salesforce Inc",
     "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company CRM (CRM Corporation) tracked in the US equity investment universe.",
+    "industry": "Enterprise CRM & Cloud Applications",
+    "description": "Publicly listed company CRM (Salesforce Inc) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -2823,8 +3096,8 @@
   {
     "symbol": "CRSP",
     "name": "CRSP Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "CRISPR Gene Editing Therapeutics",
     "description": "Publicly listed company CRSP (CRSP Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -3187,8 +3460,8 @@
   {
     "symbol": "CSIQ",
     "name": "CSIQ Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Solar Module Manufacturing & Utility Projects",
     "description": "Publicly listed company CSIQ (CSIQ Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -3549,6 +3822,97 @@
     ]
   },
   {
+    "symbol": "CVX",
+    "name": "Chevron Corp",
+    "sector": "Energy",
+    "industry": "Integrated Oil & Gas",
+    "description": "Publicly listed company CVX (Chevron Corp) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 1975771274,
+    "ttm_revenue": 190765000000,
+    "market_cap": 227213696510.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-06",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-08-06",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+        "data": {
+          "shares_outstanding": 1975771274,
+          "revenue": 118662000000,
+          "balance_sheet": {
+            "total_assets": 330135000000,
+            "total_liabilities": 134577000000,
+            "total_shareholders_equity": 189883000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-07",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+        "data": {
+          "shares_outstanding": 1991597732,
+          "revenue": 48607000000,
+          "balance_sheet": {
+            "total_assets": 329551000000,
+            "total_liabilities": 140180000000,
+            "total_shareholders_equity": 183715000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-24",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+        "data": {
+          "shares_outstanding": 2013521597,
+          "revenue": 189031000000,
+          "balance_sheet": {
+            "total_assets": 324012000000,
+            "total_liabilities": 131836000000,
+            "total_shareholders_equity": 186450000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-11-06",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+        "data": {
+          "shares_outstanding": 2013521597,
+          "revenue": 142158000000,
+          "balance_sheet": {
+            "total_assets": 326501000000,
+            "total_liabilities": 130901000000,
+            "total_shareholders_equity": 189843000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "DASH",
     "name": "DoorDash, Inc.",
     "sector": "Consumer Discretionary",
@@ -3732,10 +4096,10 @@
   },
   {
     "symbol": "DIS",
-    "name": "DIS Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company DIS (DIS Corporation) tracked in the US equity investment universe.",
+    "name": "Walt Disney Co/The",
+    "sector": "Communication Services",
+    "industry": "Entertainment & Media Conglomerate",
+    "description": "Publicly listed company DIS (Walt Disney Co/The) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -4006,8 +4370,8 @@
   {
     "symbol": "EDIT",
     "name": "EDIT Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "Gene Editing Technologies",
     "description": "Publicly listed company EDIT (EDIT Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -4097,8 +4461,8 @@
   {
     "symbol": "ENPH",
     "name": "ENPH Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Solar Inverters & Microinverter Systems",
     "description": "Publicly listed company ENPH (ENPH Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -4188,8 +4552,8 @@
   {
     "symbol": "ENVX",
     "name": "ENVX Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Silicon-Anode Lithium-Ion Battery Technology",
     "description": "Publicly listed company ENVX (ENVX Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -4279,8 +4643,8 @@
   {
     "symbol": "EOSE",
     "name": "EOSE Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Zinc-Based Stationary Energy Storage",
     "description": "Publicly listed company EOSE (EOSE Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -4991,8 +5355,8 @@
   {
     "symbol": "GNRC",
     "name": "GNRC Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Industrials",
+    "industry": "Backup Power Generators & Energy Technology",
     "description": "Publicly listed company GNRC (GNRC Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -5262,10 +5626,101 @@
     ]
   },
   {
+    "symbol": "GS",
+    "name": "Goldman Sachs Group Inc/The",
+    "sector": "Financials",
+    "industry": "Investment Banking & Capital Markets",
+    "description": "Publicly listed company GS (Goldman Sachs Group Inc/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 295007421,
+    "ttm_revenue": 62056000000,
+    "market_cap": 33925853415.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-03",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-08-03",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+        "data": {
+          "shares_outstanding": 295007421,
+          "revenue": 37565000000,
+          "balance_sheet": {
+            "total_assets": 2127711000000,
+            "total_liabilities": 2004969000000,
+            "total_shareholders_equity": 122742000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-01",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+        "data": {
+          "shares_outstanding": 296752922,
+          "revenue": 17227000000,
+          "balance_sheet": {
+            "total_assets": 2060180000000,
+            "total_liabilities": 1937398000000,
+            "total_shareholders_equity": 122782000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-25",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+        "data": {
+          "shares_outstanding": 299928511,
+          "revenue": 58283000000,
+          "balance_sheet": {
+            "total_assets": 1809320000000,
+            "total_liabilities": 1684348000000,
+            "total_shareholders_equity": 124972000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-31",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=886982",
+        "data": {
+          "shares_outstanding": 302721092,
+          "revenue": 44829000000,
+          "balance_sheet": {
+            "total_assets": 1807982000000,
+            "total_liabilities": 1683580000000,
+            "total_shareholders_equity": 124402000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "GWH",
     "name": "GWH Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Iron Flow Long-Duration Energy Storage",
     "description": "Publicly listed company GWH (GWH Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -5347,6 +5802,97 @@
             "total_assets": 36145000,
             "total_liabilities": 37912000,
             "total_shareholders_equity": -1767000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "HD",
+    "name": "Home Depot Inc/The",
+    "sector": "Consumer Discretionary",
+    "industry": "Home Improvement Retail",
+    "description": "Publicly listed company HD (Home Depot Inc/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 996011466,
+    "ttm_revenue": 168250000000,
+    "market_cap": 114541318590.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+    "filings_count": 4,
+    "latest_filing_date": "2026-05-27",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-27",
+        "period_start": "2026-02-02",
+        "period_end": "2026-05-03",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+        "data": {
+          "shares_outstanding": 996011466,
+          "revenue": 41765000000,
+          "balance_sheet": {
+            "total_assets": 107904000000,
+            "total_liabilities": 94030000000,
+            "total_shareholders_equity": 13874000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-03-18",
+        "period_start": "2025-02-03",
+        "period_end": "2026-02-01",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+        "data": {
+          "shares_outstanding": 995511485,
+          "revenue": 164683000000,
+          "balance_sheet": {
+            "total_assets": 105095000000,
+            "total_liabilities": 92282000000,
+            "total_shareholders_equity": 12813000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-11-25",
+        "period_start": "2025-02-03",
+        "period_end": "2025-11-02",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+        "data": {
+          "shares_outstanding": 995386647,
+          "revenue": 126485000000,
+          "balance_sheet": {
+            "total_assets": 106274000000,
+            "total_liabilities": 94158000000,
+            "total_shareholders_equity": 12116000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-08-26",
+        "period_start": "2025-02-03",
+        "period_end": "2025-08-03",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+        "data": {
+          "shares_outstanding": 994927985,
+          "revenue": 85133000000,
+          "balance_sheet": {
+            "total_assets": 100049000000,
+            "total_liabilities": 89384000000,
+            "total_shareholders_equity": 10665000000
           }
         }
       }
@@ -5438,6 +5984,97 @@
             "total_assets": 80917000000,
             "total_liabilities": 80917000000,
             "total_shareholders_equity": 16782000000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "IBM",
+    "name": "International Business Machines Corp",
+    "sector": "Information Technology",
+    "industry": "IT Services & Hybrid Cloud Infrastructure",
+    "description": "Publicly listed company IBM (International Business Machines Corp) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 942134390,
+    "ttm_revenue": 63766000000,
+    "market_cap": 108345454850.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-23",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-23",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+        "data": {
+          "shares_outstanding": 942134390,
+          "revenue": 33079000000,
+          "balance_sheet": {
+            "total_assets": 152099000000,
+            "total_liabilities": 117558000000,
+            "total_shareholders_equity": 34452000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-23",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+        "data": {
+          "shares_outstanding": 939885280,
+          "revenue": 15917000000,
+          "balance_sheet": {
+            "total_assets": 156229000000,
+            "total_liabilities": 123174000000,
+            "total_shareholders_equity": 32974000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-24",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+        "data": {
+          "shares_outstanding": 934735206,
+          "revenue": 67535000000,
+          "balance_sheet": {
+            "total_assets": 151880000000,
+            "total_liabilities": 119139000000,
+            "total_shareholders_equity": 32648000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-23",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=51143",
+        "data": {
+          "shares_outstanding": 934735206,
+          "revenue": 47849000000,
+          "balance_sheet": {
+            "total_assets": 146312000000,
+            "total_liabilities": 118322000000,
+            "total_shareholders_equity": 27905000000
           }
         }
       }
@@ -5900,10 +6537,10 @@
   },
   {
     "symbol": "JNJ",
-    "name": "JNJ Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company JNJ (JNJ Corporation) tracked in the US equity investment universe.",
+    "name": "Johnson & Johnson",
+    "sector": "Health Care",
+    "industry": "Pharmaceuticals & MedTech",
+    "description": "Publicly listed company JNJ (Johnson & Johnson) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -5991,10 +6628,10 @@
   },
   {
     "symbol": "JPM",
-    "name": "JPM Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company JPM (JPM Corporation) tracked in the US equity investment universe.",
+    "name": "JPMorgan Chase & Co",
+    "sector": "Financials",
+    "industry": "Diversified Banking & Financial Services",
+    "description": "Publicly listed company JPM (JPMorgan Chase & Co) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -6355,10 +6992,10 @@
   },
   {
     "symbol": "KO",
-    "name": "KO Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company KO (KO Corporation) tracked in the US equity investment universe.",
+    "name": "Coca-Cola Co/The",
+    "sector": "Consumer Staples",
+    "industry": "Non-Alcoholic Beverages & Global Franchising",
+    "description": "Publicly listed company KO (Coca-Cola Co/The) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -6629,8 +7266,8 @@
   {
     "symbol": "MA",
     "name": "MA Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Financials",
+    "industry": "Transaction & Payment Processing",
     "description": "Publicly listed company MA (MA Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -6803,6 +7440,97 @@
             "total_assets": 27833000000,
             "total_liabilities": 27833000000,
             "total_shareholders_equity": -3119000000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "MCD",
+    "name": "McDonald's Corp",
+    "sector": "Consumer Discretionary",
+    "industry": "Restaurants & Global Franchising",
+    "description": "Publicly listed company MCD (McDonald's Corp) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 707641531,
+    "ttm_revenue": 26393000000,
+    "market_cap": 81378776065.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-07",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-08-07",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+        "data": {
+          "shares_outstanding": 707641531,
+          "revenue": 13616000000,
+          "balance_sheet": {
+            "total_assets": 59920000000,
+            "total_liabilities": 59920000000,
+            "total_shareholders_equity": -1023000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-07",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+        "data": {
+          "shares_outstanding": 710505859,
+          "revenue": 6517000000,
+          "balance_sheet": {
+            "total_assets": 60037000000,
+            "total_liabilities": 60037000000,
+            "total_shareholders_equity": -1286000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-24",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+        "data": {
+          "shares_outstanding": 712154350,
+          "revenue": 26885000000,
+          "balance_sheet": {
+            "total_assets": 59515000000,
+            "total_liabilities": 59515000000,
+            "total_shareholders_equity": -1791000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-11-05",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+        "data": {
+          "shares_outstanding": 712154350,
+          "revenue": 19876000000,
+          "balance_sheet": {
+            "total_assets": 60608000000,
+            "total_liabilities": 60608000000,
+            "total_shareholders_equity": -2163000000
           }
         }
       }
@@ -7173,6 +7901,97 @@
     ]
   },
   {
+    "symbol": "MMM",
+    "name": "3M Co",
+    "sector": "Industrials",
+    "industry": "Diversified Industrial Conglomerates",
+    "description": "Publicly listed company MMM (3M Co) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 515722417,
+    "ttm_revenue": 24845000000,
+    "market_cap": 59308077955.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-21",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-21",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+        "data": {
+          "shares_outstanding": 515722417,
+          "revenue": 12530000000,
+          "balance_sheet": {
+            "total_assets": 34924000000,
+            "total_liabilities": 31919000000,
+            "total_shareholders_equity": 2952000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-21",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+        "data": {
+          "shares_outstanding": 521567261,
+          "revenue": 6030000000,
+          "balance_sheet": {
+            "total_assets": 35436000000,
+            "total_liabilities": 32125000000,
+            "total_shareholders_equity": 3263000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-03",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+        "data": {
+          "shares_outstanding": 531225048,
+          "revenue": 24948000000,
+          "balance_sheet": {
+            "total_assets": 37733000000,
+            "total_liabilities": 32986000000,
+            "total_shareholders_equity": 4702000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-21",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=66740",
+        "data": {
+          "shares_outstanding": 531225048,
+          "revenue": 18815000000,
+          "balance_sheet": {
+            "total_assets": 37611000000,
+            "total_liabilities": 32936000000,
+            "total_shareholders_equity": 4628000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "MNST",
     "name": "Monster Beverage Corporation",
     "sector": "Consumer Staples",
@@ -7349,6 +8168,97 @@
             "total_assets": 4206392000,
             "total_liabilities": 638445000,
             "total_shareholders_equity": 3567947000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Co Inc",
+    "sector": "Health Care",
+    "industry": "Pharmaceuticals & Oncology",
+    "description": "Publicly listed company MRK (Merck & Co Inc) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 2469824415,
+    "ttm_revenue": 64897000000,
+    "market_cap": 284029807725.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-07",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-08-07",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+        "data": {
+          "shares_outstanding": 2469824415,
+          "revenue": 32893000000,
+          "balance_sheet": {
+            "total_assets": 129802000000,
+            "total_liabilities": 129802000000,
+            "total_shareholders_equity": 41933000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-04",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+        "data": {
+          "shares_outstanding": 2472392003,
+          "revenue": 16286000000,
+          "balance_sheet": {
+            "total_assets": 128685000000,
+            "total_liabilities": 128685000000,
+            "total_shareholders_equity": 45878000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-24",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+        "data": {
+          "shares_outstanding": 2482022536,
+          "revenue": 65011000000,
+          "balance_sheet": {
+            "total_assets": 136866000000,
+            "total_liabilities": 136866000000,
+            "total_shareholders_equity": 52606000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-11-05",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310158",
+        "data": {
+          "shares_outstanding": 2497783211,
+          "revenue": 48611000000,
+          "balance_sheet": {
+            "total_assets": 129546000000,
+            "total_liabilities": 129546000000,
+            "total_shareholders_equity": 51850000000
           }
         }
       }
@@ -7810,10 +8720,101 @@
     ]
   },
   {
+    "symbol": "NKE",
+    "name": "NIKE Inc",
+    "sector": "Consumer Discretionary",
+    "industry": "Athletic Footwear & Apparel",
+    "description": "Publicly listed company NKE (NIKE Inc) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 1479800000,
+    "ttm_revenue": 46398000000,
+    "market_cap": 170177000000.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-15",
+    "latest_filing_type": "10-K",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+    "filings": [
+      {
+        "type": "10-K",
+        "filing_date": "2026-07-15",
+        "period_start": "2025-06-01",
+        "period_end": "2026-05-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+        "data": {
+          "shares_outstanding": 1479800000,
+          "revenue": 46398000000,
+          "balance_sheet": {
+            "total_assets": 38410000000,
+            "total_liabilities": 38410000000,
+            "total_shareholders_equity": 14865000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-01",
+        "period_start": "2025-06-01",
+        "period_end": "2026-02-28",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+        "data": {
+          "shares_outstanding": 1478900000,
+          "revenue": 35426000000,
+          "balance_sheet": {
+            "total_assets": 37064000000,
+            "total_liabilities": 37064000000,
+            "total_shareholders_equity": 14090000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-12-30",
+        "period_start": "2025-06-01",
+        "period_end": "2025-11-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+        "data": {
+          "shares_outstanding": 1478100000,
+          "revenue": 24147000000,
+          "balance_sheet": {
+            "total_assets": 37787000000,
+            "total_liabilities": 37787000000,
+            "total_shareholders_equity": 14085000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-01",
+        "period_start": "2025-06-01",
+        "period_end": "2025-08-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
+        "data": {
+          "shares_outstanding": 1476600000,
+          "revenue": 11720000000,
+          "balance_sheet": {
+            "total_assets": 37334000000,
+            "total_liabilities": 37334000000,
+            "total_shareholders_equity": 13468000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "NRGV",
     "name": "NRGV Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Gravity-Based Energy Storage Infrastructure",
     "description": "Publicly listed company NRGV (NRGV Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -7903,8 +8904,8 @@
   {
     "symbol": "NTLA",
     "name": "NTLA Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "CRISPR In Vivo Gene Editing",
     "description": "Publicly listed company NTLA (NTLA Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -8811,6 +9812,97 @@
     ]
   },
   {
+    "symbol": "PG",
+    "name": "Procter & Gamble Co/The",
+    "sector": "Consumer Staples",
+    "industry": "Household & Personal Care Products",
+    "description": "Publicly listed company PG (Procter & Gamble Co/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 2328598978,
+    "ttm_revenue": 87032000000,
+    "market_cap": 267788882470.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+    "filings_count": 4,
+    "latest_filing_date": "2026-08-04",
+    "latest_filing_type": "10-K",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+    "filings": [
+      {
+        "type": "10-K",
+        "filing_date": "2026-08-04",
+        "period_start": "2025-07-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+        "data": {
+          "shares_outstanding": 2328598978,
+          "revenue": 87032000000,
+          "balance_sheet": {
+            "total_assets": 126521000000,
+            "total_liabilities": 72210000000,
+            "total_shareholders_equity": 54311000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-24",
+        "period_start": "2025-07-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+        "data": {
+          "shares_outstanding": 2328598978,
+          "revenue": 65828000000,
+          "balance_sheet": {
+            "total_assets": 128378000000,
+            "total_liabilities": 73647000000,
+            "total_shareholders_equity": 54731000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-01-23",
+        "period_start": "2025-07-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+        "data": {
+          "shares_outstanding": 2324000685,
+          "revenue": 44594000000,
+          "balance_sheet": {
+            "total_assets": 127286000000,
+            "total_liabilities": 73969000000,
+            "total_shareholders_equity": 53317000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-24",
+        "period_start": "2025-07-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=80424",
+        "data": {
+          "shares_outstanding": 2336733549,
+          "revenue": 22386000000,
+          "balance_sheet": {
+            "total_assets": 127599000000,
+            "total_liabilities": 74048000000,
+            "total_shareholders_equity": 53551000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "PLTR",
     "name": "Palantir Technologies Inc.",
     "sector": "Information Technology",
@@ -9359,8 +10451,8 @@
   {
     "symbol": "SBUX",
     "name": "Starbucks Corp.",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Consumer Discretionary",
+    "industry": "Specialty Coffee Retail & Roasteries",
     "description": "Publicly listed company SBUX (Starbucks Corp.) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -9450,8 +10542,8 @@
   {
     "symbol": "SEDG",
     "name": "SEDG Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "Solar Power Optimizers & Inverters",
     "description": "Publicly listed company SEDG (SEDG Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -9630,10 +10722,101 @@
     ]
   },
   {
+    "symbol": "SHW",
+    "name": "Sherwin-Williams Co/The",
+    "sector": "Materials",
+    "industry": "Specialty Chemicals & Architectural Coatings",
+    "description": "Publicly listed company SHW (Sherwin-Williams Co/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 242758151,
+    "ttm_revenue": 23645300000,
+    "market_cap": 27917187365.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-28",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-28",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+        "data": {
+          "shares_outstanding": 242758151,
+          "revenue": 12456200000,
+          "balance_sheet": {
+            "total_assets": 26951400000,
+            "total_liabilities": 26951400000,
+            "total_shareholders_equity": 3854700000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-28",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+        "data": {
+          "shares_outstanding": 246635621,
+          "revenue": 5666900000,
+          "balance_sheet": {
+            "total_assets": 26378700000,
+            "total_liabilities": 26378700000,
+            "total_shareholders_equity": 4431100000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-19",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+        "data": {
+          "shares_outstanding": 247893513,
+          "revenue": 23574300000,
+          "balance_sheet": {
+            "total_assets": 25901700000,
+            "total_liabilities": 25901700000,
+            "total_shareholders_equity": 4598300000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-28",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=89800",
+        "data": {
+          "shares_outstanding": 247893513,
+          "revenue": 17978400000,
+          "balance_sheet": {
+            "total_assets": 26206400000,
+            "total_liabilities": 26206400000,
+            "total_shareholders_equity": 4425300000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "SLDP",
     "name": "SLDP Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Energy",
+    "industry": "All-Solid-State Battery Technologies",
     "description": "Publicly listed company SLDP (SLDP Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -9814,8 +10997,8 @@
   {
     "symbol": "STOK",
     "name": "STOK Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "RNA Therapeutics",
     "description": "Publicly listed company STOK (STOK Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -9996,8 +11179,8 @@
   {
     "symbol": "TDOC",
     "name": "TDOC Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Health Care",
+    "industry": "Virtual Healthcare & Telemedicine",
     "description": "Publicly listed company TDOC (TDOC Corporation) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -10358,6 +11541,97 @@
     ]
   },
   {
+    "symbol": "TRV",
+    "name": "Travelers Cos Inc/The",
+    "sector": "Financials",
+    "industry": "Property & Casualty Insurance",
+    "description": "Publicly listed company TRV (Travelers Cos Inc/The) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 212644693,
+    "ttm_revenue": 48320000000,
+    "market_cap": 24454139695.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-17",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-17",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+        "data": {
+          "shares_outstanding": 212644693,
+          "revenue": 24077000000,
+          "balance_sheet": {
+            "total_assets": 143580000000,
+            "total_liabilities": 110459000000,
+            "total_shareholders_equity": 33121000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-16",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+        "data": {
+          "shares_outstanding": 216237902,
+          "revenue": 11924000000,
+          "balance_sheet": {
+            "total_assets": 142309000000,
+            "total_liabilities": 110323000000,
+            "total_shareholders_equity": 31986000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-12",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+        "data": {
+          "shares_outstanding": 223063417,
+          "revenue": 48828000000,
+          "balance_sheet": {
+            "total_assets": 143708000000,
+            "total_liabilities": 110814000000,
+            "total_shareholders_equity": 32894000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-16",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=86312",
+        "data": {
+          "shares_outstanding": 225133841,
+          "revenue": 36396000000,
+          "balance_sheet": {
+            "total_assets": 143678000000,
+            "total_liabilities": 112069000000,
+            "total_shareholders_equity": 31609000000
+          }
+        }
+      }
+    ]
+  },
+  {
     "symbol": "TSLA",
     "name": "Tesla, Inc.",
     "sector": "Consumer Discretionary",
@@ -10632,10 +11906,10 @@
   },
   {
     "symbol": "UNH",
-    "name": "UNH Corporation",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
-    "description": "Publicly listed company UNH (UNH Corporation) tracked in the US equity investment universe.",
+    "name": "UnitedHealth Group Inc",
+    "sector": "Health Care",
+    "industry": "Managed Healthcare & Health Services (Optum)",
+    "description": "Publicly listed company UNH (UnitedHealth Group Inc) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
     "entry_price": 100.0,
@@ -10716,6 +11990,97 @@
             "total_assets": 315269000000,
             "total_liabilities": 209456000000,
             "total_shareholders_equity": 101569000000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "V",
+    "name": "Visa Inc",
+    "sector": "Financials",
+    "industry": "Transaction & Payment Processing",
+    "description": "Publicly listed company V (Visa Inc) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 469280842,
+    "ttm_revenue": 40177000000,
+    "market_cap": 53967296830.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+    "filings_count": 4,
+    "latest_filing_date": "2026-04-29",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-04-29",
+        "period_start": "2025-10-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+        "data": {
+          "shares_outstanding": 469280842,
+          "revenue": 22131000000,
+          "balance_sheet": {
+            "total_assets": 95049000000,
+            "total_liabilities": 59388000000,
+            "total_shareholders_equity": 35661000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-01-30",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+        "data": {
+          "shares_outstanding": 469280842,
+          "revenue": 10901000000,
+          "balance_sheet": {
+            "total_assets": 96814000000,
+            "total_liabilities": 58037000000,
+            "total_shareholders_equity": 38777000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2025-11-06",
+        "period_start": "2024-10-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+        "data": {
+          "shares_outstanding": 469280842,
+          "revenue": 40000000000,
+          "balance_sheet": {
+            "total_assets": 99627000000,
+            "total_liabilities": 61718000000,
+            "total_shareholders_equity": 37909000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-07-30",
+        "period_start": "2024-10-01",
+        "period_end": "2025-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
+        "data": {
+          "shares_outstanding": 469280842,
+          "revenue": 29276000000,
+          "balance_sheet": {
+            "total_assets": 100024000000,
+            "total_liabilities": 61360000000,
+            "total_shareholders_equity": 38664000000
           }
         }
       }
@@ -10898,6 +12263,97 @@
             "total_assets": 24862300000,
             "total_liabilities": 7543500000,
             "total_shareholders_equity": 17318800000
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc",
+    "sector": "Communication Services",
+    "industry": "Integrated Telecommunications",
+    "description": "Publicly listed company VZ (Verizon Communications Inc) tracked in the US equity investment universe.",
+    "thesis_status": "WATCHLIST_CANDIDATE",
+    "conviction_score": 7.5,
+    "entry_price": 100.0,
+    "target_exit_price": 150.0,
+    "current_price": 115.0,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "16.0%",
+    "moat": "Established industry participant with high switching costs and customer brand equity.",
+    "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+    "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review.",
+    "shares_outstanding": 4154775202,
+    "ttm_revenue": 136250000000,
+    "market_cap": 477799148230.0,
+    "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+    "filings_count": 4,
+    "latest_filing_date": "2026-07-31",
+    "latest_filing_type": "10-Q",
+    "latest_filing_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+    "filings": [
+      {
+        "type": "10-Q",
+        "filing_date": "2026-07-31",
+        "period_start": "2026-01-01",
+        "period_end": "2026-06-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+        "data": {
+          "shares_outstanding": 4154775202,
+          "revenue": 68693000000,
+          "balance_sheet": {
+            "total_assets": 410186000000,
+            "total_liabilities": 410186000000,
+            "total_shareholders_equity": 105196000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2026-05-01",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+        "data": {
+          "shares_outstanding": 4175558910,
+          "revenue": 34440000000,
+          "balance_sheet": {
+            "total_assets": 417882000000,
+            "total_liabilities": 417882000000,
+            "total_shareholders_equity": 104622000000
+          }
+        }
+      },
+      {
+        "type": "10-K",
+        "filing_date": "2026-02-17",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+        "data": {
+          "shares_outstanding": 4216425489,
+          "revenue": 138191000000,
+          "balance_sheet": {
+            "total_assets": 404258000000,
+            "total_liabilities": 404258000000,
+            "total_shareholders_equity": 105741000000
+          }
+        }
+      },
+      {
+        "type": "10-Q",
+        "filing_date": "2025-10-29",
+        "period_start": "2025-01-01",
+        "period_end": "2025-09-30",
+        "filing_url": "https://www.sec.gov/edgar/browse/?CIK=732712",
+        "data": {
+          "shares_outstanding": 4216425489,
+          "revenue": 101810000000,
+          "balance_sheet": {
+            "total_assets": 388331000000,
+            "total_liabilities": 388331000000,
+            "total_shareholders_equity": 106345000000
           }
         }
       }
@@ -11179,8 +12635,8 @@
   {
     "symbol": "WMT",
     "name": "Walmart Inc.",
-    "sector": "Information Technology",
-    "industry": "Public Equity",
+    "sector": "Consumer Staples",
+    "industry": "Omnichannel Hypermarket Retail",
     "description": "Publicly listed company WMT (Walmart Inc.) tracked in the US equity investment universe.",
     "thesis_status": "WATCHLIST_CANDIDATE",
     "conviction_score": 7.5,
@@ -11284,7 +12740,7 @@
     "invalidation_criteria": "Catastrophic wildfire liability exceeding insurance reserves.",
     "latest_catalyst": "Clean energy transmission infrastructure expansion and data center load additions.",
     "shares_outstanding": 624269560,
-    "ttm_revenue": 0,
+    "ttm_revenue": 15129000000,
     "market_cap": 38954420544.0,
     "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=72903",
     "filings_count": 4,
@@ -11295,12 +12751,12 @@
       {
         "type": "10-Q",
         "filing_date": "2026-07-30",
-        "period_start": "2026-06-30",
+        "period_start": "2026-01-01",
         "period_end": "2026-06-30",
         "filing_url": "https://www.sec.gov/edgar/browse/?CIK=72903",
         "data": {
           "shares_outstanding": 624269560,
-          "revenue": 0,
+          "revenue": 7140000000,
           "balance_sheet": {
             "total_assets": 87165000000,
             "total_liabilities": 87165000000,
@@ -11311,12 +12767,12 @@
       {
         "type": "10-Q",
         "filing_date": "2026-04-30",
-        "period_start": "2026-03-31",
+        "period_start": "2026-01-01",
         "period_end": "2026-03-31",
         "filing_url": "https://www.sec.gov/edgar/browse/?CIK=72903",
         "data": {
           "shares_outstanding": 623876813,
-          "revenue": 0,
+          "revenue": 4021000000,
           "balance_sheet": {
             "total_assets": 84828000000,
             "total_liabilities": 84828000000,
@@ -11327,12 +12783,12 @@
       {
         "type": "10-K",
         "filing_date": "2026-02-25",
-        "period_start": "2025-12-31",
+        "period_start": "2025-01-01",
         "period_end": "2025-12-31",
         "filing_url": "https://www.sec.gov/edgar/browse/?CIK=72903",
         "data": {
           "shares_outstanding": 591539773,
-          "revenue": 0,
+          "revenue": 14669000000,
           "balance_sheet": {
             "total_assets": 81371000000,
             "total_liabilities": 81371000000,
@@ -11343,12 +12799,12 @@
       {
         "type": "10-Q",
         "filing_date": "2025-10-30",
-        "period_start": "2025-09-30",
+        "period_start": "2025-01-01",
         "period_end": "2025-09-30",
         "filing_url": "https://www.sec.gov/edgar/browse/?CIK=72903",
         "data": {
           "shares_outstanding": 591426177,
-          "revenue": 0,
+          "revenue": 11108000000,
           "balance_sheet": {
             "total_assets": 79154000000,
             "total_liabilities": 79154000000,

@@ -15,8 +15,8 @@ import xml.etree.ElementTree as ET
 
 KNOWN_ETF_CIKS = {
     "QQQ": "0001067839",  # Invesco QQQ Trust, Series 1
-    "SPY": "0000888702",  # SPDR S&P 500 ETF Trust
-    "DIA": "0001054659",  # SPDR Dow Jones Industrial Average ETF Trust
+    "SPY": "0000884394",  # SPDR S&P 500 ETF Trust
+    "DIA": "0001041130",  # SPDR Dow Jones Industrial Average ETF Trust
     "IWM": "0001100663",  # iShares Trust (Russell 2000)
     "IVV": "0001100663",  # iShares Core S&P 500 ETF
     "VOO": "0000036405",  # Vanguard S&P 500 ETF
@@ -38,6 +38,22 @@ KNOWN_TICKER_OVERRIDES = {
     "594972408": "MSTR",
     "595017104": "MCHP",
     "025537101": "AEP",
+    "38141G104": "GS",
+    "46625H100": "JPM",
+    "097023105": "BA",
+    "89417E109": "TRV",
+    "92826C839": "V",
+    "149123101": "CAT",
+    "025816109": "AXP",
+    "824348106": "SHW",
+    "580135101": "MCD",
+    "459200101": "IBM",
+    "166764100": "CVX",
+    "742718109": "PG",
+    "88579Y101": "MMM",
+    "58933Y105": "MRK",
+    "92343V104": "VZ",
+    "654106103": "NKE",
     "FERROVIAL SE": "FER",
     "LINDE PLC": "LIN",
     "ASTRAZENECA PLC": "AZN",
@@ -130,7 +146,37 @@ KNOWN_TICKER_OVERRIDES = {
     "TEXAS INSTRUMENTS INC": "TXN",
     "GILEAD SCIENCES INC": "GILD",
     "AMGEN INC": "AMGN",
-    "SHOPIFY INC": "SHOP"
+    "SHOPIFY INC": "SHOP",
+    "TRAVELERS COMPANIES INC": "TRV",
+    "TRAVELERS COS INC": "TRV",
+    "TRAVELERS COS INC/THE": "TRV",
+    "GOLDMAN SACHS GROUP INC": "GS",
+    "GOLDMAN SACHS GROUP INC/THE": "GS",
+    "JPMORGAN CHASE & CO": "JPM",
+    "BOEING CO": "BA",
+    "BOEING CO/THE": "BA",
+    "CATERPILLAR INC": "CAT",
+    "UNITEDHEALTH GROUP INC": "UNH",
+    "VISA INC": "V",
+    "HOME DEPOT INC": "HD",
+    "HOME DEPOT INC/THE": "HD",
+    "AMERICAN EXPRESS CO": "AXP",
+    "SHERWIN-WILLIAMS CO": "SHW",
+    "SHERWIN-WILLIAMS CO/THE": "SHW",
+    "MCDONALDS CORP": "MCD",
+    "MCDONALD'S CORP": "MCD",
+    "INTERNATIONAL BUSINESS MACHINES CORP": "IBM",
+    "JOHNSON & JOHNSON": "JNJ",
+    "CHEVRON CORP": "CVX",
+    "PROCTER & GAMBLE CO": "PG",
+    "PROCTER & GAMBLE CO/THE": "PG",
+    "3M CO": "MMM",
+    "WALMART INC": "WMT",
+    "MERCK & CO INC": "MRK",
+    "WALT DISNEY CO": "DIS",
+    "WALT DISNEY CO/THE": "DIS",
+    "VERIZON COMMUNICATIONS INC": "VZ",
+    "NIKE INC": "NKE"
 }
 
 def clean_str(s):
@@ -153,7 +199,17 @@ def get_sec_ticker_mapping(headers):
         title = entry["title"]
         info = {"ticker": sym, "cik": cik, "name": title}
         ticker_to_info[sym] = info
-        name_to_info[clean_str(title)] = info
+        c_title = clean_str(title)
+        
+        # Prefer primary equity tickers without hyphens or dots over preferred share classes
+        if c_title in name_to_info:
+            existing_sym = name_to_info[c_title]["ticker"]
+            if ("-" in existing_sym or "." in existing_sym) and ("-" not in sym and "." not in sym):
+                name_to_info[c_title] = info
+            elif len(sym) < len(existing_sym) and ("-" not in sym and "." not in sym):
+                name_to_info[c_title] = info
+        else:
+            name_to_info[c_title] = info
         
     return ticker_to_info, name_to_info
 

@@ -65,9 +65,9 @@ gantt
   - Define granular data provenance schema (`context/schemas/data_provenance.json`) and agent runtime context signature.
   - Implement data verification and errata tracking protocol (`context/schemas/errata_schema.json`, `context/research/errata_log.md`).
   - Publish interactive web guide at `http/docs/sources.html`.
-- [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ Benchmark):**
-  - Record agent skill in `.agents/skills/etf-holdings/SKILL.md` and CLI extractor in `scripts/fetch_etf_holdings.py` to parse Tier 1 Form NPORT-P filings (CIK `0001067839`).
-  - Expand universe catalog (`http/data/universe.json`) to 128 equities spanning all 101 QQQ constituents plus existing tracked compounders and watchlists.
+- [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ & DJIA Benchmarks):**
+  - Record agent skill in `.agents/skills/etf-holdings/SKILL.md` and CLI extractor in `scripts/fetch_etf_holdings.py` to parse Tier 1 Form NPORT-P filings (Invesco QQQ CIK `0001067839`, SPDR DIA CIK `0001041130`).
+  - Expand universe catalog (`http/data/universe.json`) to 144 equities spanning all 101 QQQ constituents, all 30 Dow Jones Industrial Average (DJIA) constituents, and existing tracked compounders and watchlists.
   - Verify live explorer rendering and sector filtering in `http/universe.html`.
 - [x] **3.3 SEC EDGAR XBRL Pipeline & CLI Utilities:**
   - `scripts/fetch_sec.py` automated XBRL company facts extractor for US GAAP and IFRS filers.

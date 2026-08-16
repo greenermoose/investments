@@ -1,0 +1,70 @@
+{
+  "symbol": "MCD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+      "data": {
+        "shares_outstanding": 707641531,
+        "revenue": 13616000000,
+        "balance_sheet": {
+          "total_assets": 59920000000,
+          "total_liabilities": 59920000000,
+          "total_shareholders_equity": -1023000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+      "data": {
+        "shares_outstanding": 710505859,
+        "revenue": 6517000000,
+        "balance_sheet": {
+          "total_assets": 60037000000,
+          "total_liabilities": 60037000000,
+          "total_shareholders_equity": -1286000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-24",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+      "data": {
+        "shares_outstanding": 712154350,
+        "revenue": 26885000000,
+        "balance_sheet": {
+          "total_assets": 59515000000,
+          "total_liabilities": 59515000000,
+          "total_shareholders_equity": -1791000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-05",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
+      "data": {
+        "shares_outstanding": 712154350,
+        "revenue": 19876000000,
+        "balance_sheet": {
+          "total_assets": 60608000000,
+          "total_liabilities": 60608000000,
+          "total_shareholders_equity": -2163000000
+        }
+      }
+    }
+  ]
+}

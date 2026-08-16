@@ -39,6 +39,19 @@ def load_universe_symbols():
         except Exception as e:
             print(f"Warning: Could not read QQQ holdings from {qqq_path}: {e}")
             
+    # Check DIA holdings
+    dia_path = os.path.join(os.path.dirname(__file__), "data", "dia_holdings.json")
+    if os.path.exists(dia_path):
+        try:
+            with open(dia_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                for h in data.get("holdings", []):
+                    t = h.get("ticker")
+                    if t and t != "UNKNOWN" and len(t) <= 5:
+                        symbols.add(t)
+        except Exception as e:
+            print(f"Warning: Could not read DIA holdings from {dia_path}: {e}")
+            
     # Check existing http/data files
     http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
     if os.path.exists(http_data_dir):
@@ -94,6 +107,9 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         revenue = extract_metric(facts, ["us-gaap", "ifrs-full"], [
             "Revenues",
             "Revenue",
+            "RevenuesNetOfInterestExpense",
+            "InterestAndNoninterestRevenue",
+            "RegulatedAndUnregulatedOperatingRevenue",
             "SalesRevenueNet",
             "RevenueFromContractWithCustomerExcludingAssessedTax",
             "RevenueFromContractWithCustomerIncludingAssessedTax",

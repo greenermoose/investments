@@ -1,0 +1,70 @@
+{
+  "symbol": "BA",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-28",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+      "data": {
+        "shares_outstanding": 788302331,
+        "revenue": 46777000000,
+        "balance_sheet": {
+          "total_assets": 165870000000,
+          "total_liabilities": 159755000000,
+          "total_shareholders_equity": 6100000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+      "data": {
+        "shares_outstanding": 785347096,
+        "revenue": 22217000000,
+        "balance_sheet": {
+          "total_assets": 164787000000,
+          "total_liabilities": 158800000000,
+          "total_shareholders_equity": 5987000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+      "data": {
+        "shares_outstanding": 760095468,
+        "revenue": 89463000000,
+        "balance_sheet": {
+          "total_assets": 168235000000,
+          "total_liabilities": 162778000000,
+          "total_shareholders_equity": 5454000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=12927",
+      "data": {
+        "shares_outstanding": 756157695,
+        "revenue": 65515000000,
+        "balance_sheet": {
+          "total_assets": 150023000000,
+          "total_liabilities": 158276000000,
+          "total_shareholders_equity": -8250000000
+        }
+      }
+    }
+  ]
+}

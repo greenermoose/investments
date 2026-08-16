@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.6.0] - 2026-08-16
+
+### Dow Jones Industrial Average (DJIA) Universe Expansion & Holdings Extraction
+- **DJIA Holdings Extraction (`scripts/fetch_etf_holdings.py`, `scripts/data/dia_holdings.json`):** Configured Tier 1 SEC EDGAR Form NPORT-P extraction for SPDR Dow Jones Industrial Average ETF Trust (DIA, CIK `0001041130`), pulling all 30 constituent holdings, CUSIPs, share balances, and portfolio percentage weights.
+- **ETF Holdings Discovery Skill (`.agents/skills/etf-holdings/SKILL.md`):** Updated Major Fund Trust CIK Directory with the authoritative DIA CIK `0001041130`.
+- **Universe Expanded to 144 Equities:** Ingested 16 newly added blue-chip equities from the DJIA (`GS`, `CAT`, `V`, `HD`, `AXP`, `SHW`, `TRV`, `MCD`, `IBM`, `BA`, `CVX`, `PG`, `MMM`, `MRK`, `VZ`, `NKE`), merging them with the existing 128 equities (101 QQQ constituents, compounders, and watchlists).
+- **SEC EDGAR XBRL Financial Pipeline Updated (`scripts/fetch_sec.py`, `scripts/build_sec_data.js`):** Ingested official 10-K and 10-Q XBRL company facts for all new DJIA constituents, computing standardized shares outstanding and TTM revenues.
+- **Master Universe Catalog & Sector Classifications (`scripts/build_universe_json.py`, `http/data/universe.json`):** Enhanced sector heuristics and company descriptions across Financials, Industrials, Materials, Energy, Consumer Discretionary, Consumer Staples, Health Care, and IT, rebuilding the 144-company master universe catalog.
+- **Live Web Companion Synchronized (`http/universe.html`):** Updated the public equities explorer interface to display 144 companies with complete SEC filing counts, financial metrics, and provenance deep dives.
+
 ## [2.5.0] - 2026-08-16
 
 ### Equity Universe Expansion via QQQ ETF Holdings & ETF Discovery Skill

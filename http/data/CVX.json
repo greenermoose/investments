@@ -1,0 +1,70 @@
+{
+  "symbol": "CVX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+      "data": {
+        "shares_outstanding": 1975771274,
+        "revenue": 118662000000,
+        "balance_sheet": {
+          "total_assets": 330135000000,
+          "total_liabilities": 134577000000,
+          "total_shareholders_equity": 189883000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+      "data": {
+        "shares_outstanding": 1991597732,
+        "revenue": 48607000000,
+        "balance_sheet": {
+          "total_assets": 329551000000,
+          "total_liabilities": 140180000000,
+          "total_shareholders_equity": 183715000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-24",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+      "data": {
+        "shares_outstanding": 2013521597,
+        "revenue": 189031000000,
+        "balance_sheet": {
+          "total_assets": 324012000000,
+          "total_liabilities": 131836000000,
+          "total_shareholders_equity": 186450000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=93410",
+      "data": {
+        "shares_outstanding": 2013521597,
+        "revenue": 142158000000,
+        "balance_sheet": {
+          "total_assets": 326501000000,
+          "total_liabilities": 130901000000,
+          "total_shareholders_equity": 189843000000
+        }
+      }
+    }
+  ]
+}

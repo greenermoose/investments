@@ -31,11 +31,11 @@ Every registered management investment company and unit investment trust is lega
 
 ### Major Fund Trust CIK Directory
 - **Invesco QQQ Trust, Series 1 (QQQ):** CIK `0001067839`
-- **SPDR S&P 500 ETF Trust (SPY):** CIK `0000888702`
+- **SPDR S&P 500 ETF Trust (SPY):** CIK `0000884394`
 - **iShares Trust (IWM, IVV, IJH, IJR, SOXX):** CIK `0001100663`
 - **Vanguard Index Funds (VTI, VOO, VUG):** CIK `0000036405`
 - **The Select Sector SPDR Trust (XLK, XLF, XLE, XLV, XLI):** CIK `0001064642`
-- **SPDR Dow Jones Industrial Average ETF Trust (DIA):** CIK `0001054659`
+- **SPDR Dow Jones Industrial Average ETF Trust (DIA):** CIK `0001041130`
 
 ### 2. Fund Sponsor Direct Daily CSV/JSON Feeds
 For real-time intraday or daily rebalance constituent extracts, fund sponsors publish downloadable files:

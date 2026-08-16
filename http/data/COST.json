@@ -1,0 +1,70 @@
+{
+  "symbol": "COST",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-06-03",
+      "period_start": "2025-09-01",
+      "period_end": "2026-05-10",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
+      "data": {
+        "shares_outstanding": 443652540,
+        "revenue": 207431000000,
+        "balance_sheet": {
+          "total_assets": 86430000000,
+          "total_liabilities": 52921000000,
+          "total_shareholders_equity": 33509000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-11",
+      "period_start": "2025-09-01",
+      "period_end": "2026-02-15",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
+      "data": {
+        "shares_outstanding": 443869411,
+        "revenue": 136904000000,
+        "balance_sheet": {
+          "total_assets": 83639000000,
+          "total_liabilities": 51552000000,
+          "total_shareholders_equity": 32087000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-17",
+      "period_start": "2025-09-01",
+      "period_end": "2025-11-23",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
+      "data": {
+        "shares_outstanding": 443179176,
+        "revenue": 67307000000,
+        "balance_sheet": {
+          "total_assets": 82790000000,
+          "total_liabilities": 52487000000,
+          "total_shareholders_equity": 30303000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-10-08",
+      "period_start": "2024-09-02",
+      "period_end": "2025-08-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
+      "data": {
+        "shares_outstanding": 443477086,
+        "revenue": 275235000000,
+        "balance_sheet": {
+          "total_assets": 77099000000,
+          "total_liabilities": 47935000000,
+          "total_shareholders_equity": 29164000000
+        }
+      }
+    }
+  ]
+}

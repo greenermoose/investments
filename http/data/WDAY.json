@@ -1,0 +1,70 @@
+{
+  "symbol": "WDAY",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-22",
+      "period_start": "2026-02-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+      "data": {
+        "shares_outstanding": 253891000,
+        "revenue": 2542000000,
+        "balance_sheet": {
+          "total_assets": 16091000000,
+          "total_liabilities": 9408000000,
+          "total_shareholders_equity": 6683000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-06",
+      "period_start": "2025-02-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+      "data": {
+        "shares_outstanding": 265097000,
+        "revenue": 9552000000,
+        "balance_sheet": {
+          "total_assets": 18074000000,
+          "total_liabilities": 10269000000,
+          "total_shareholders_equity": 7805000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-26",
+      "period_start": "2025-02-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+      "data": {
+        "shares_outstanding": 266387000,
+        "revenue": 7020000000,
+        "balance_sheet": {
+          "total_assets": 17751000000,
+          "total_liabilities": 8872000000,
+          "total_shareholders_equity": 8879000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-22",
+      "period_start": "2025-02-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+      "data": {
+        "shares_outstanding": 266649000,
+        "revenue": 4588000000,
+        "balance_sheet": {
+          "total_assets": 17961000000,
+          "total_liabilities": 8789000000,
+          "total_shareholders_equity": 9172000000
+        }
+      }
+    }
+  ]
+}

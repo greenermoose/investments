@@ -1,13 +1,29 @@
 {
   "symbol": "NFLX",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1065280",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-17",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1065280",
+      "data": {
+        "shares_outstanding": 4163939676,
+        "revenue": 24809695000,
+        "balance_sheet": {
+          "total_assets": 58450441000,
+          "total_liabilities": 28298389000,
+          "total_shareholders_equity": 30152052000
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-04-17",
       "period_start": "2026-01-01",
       "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1065280",
       "data": {
         "shares_outstanding": 4212794271,
         "revenue": 12249757000,
@@ -23,7 +39,7 @@
       "filing_date": "2026-01-23",
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1065280",
       "data": {
         "shares_outstanding": 4222162150,
         "revenue": 45183036000,
@@ -39,7 +55,7 @@
       "filing_date": "2025-10-22",
       "period_start": "2025-01-01",
       "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1065280",
       "data": {
         "shares_outstanding": 423732334,
         "revenue": 33132274000,
@@ -47,22 +63,6 @@
           "total_assets": 54934835000,
           "total_liabilities": 28980800000,
           "total_shareholders_equity": 25954035000
-        }
-      }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-07-18",
-      "period_start": "2025-01-01",
-      "period_end": "2025-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001065280",
-      "data": {
-        "shares_outstanding": 424926346,
-        "revenue": 21621967000,
-        "balance_sheet": {
-          "total_assets": 53099664000,
-          "total_liabilities": 28147765000,
-          "total_shareholders_equity": 24951899000
         }
       }
     }

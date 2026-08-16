@@ -1,0 +1,70 @@
+{
+  "symbol": "CSX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
+      "data": {
+        "shares_outstanding": 1852474917,
+        "revenue": 7417000000,
+        "balance_sheet": {
+          "total_assets": 44726000000,
+          "total_liabilities": 30638000000,
+          "total_shareholders_equity": 14088000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
+      "data": {
+        "shares_outstanding": 1858138856,
+        "revenue": 3482000000,
+        "balance_sheet": {
+          "total_assets": 44232000000,
+          "total_liabilities": 30651000000,
+          "total_shareholders_equity": 13581000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-12",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
+      "data": {
+        "shares_outstanding": 1862136956,
+        "revenue": 14092000000,
+        "balance_sheet": {
+          "total_assets": 43682000000,
+          "total_liabilities": 30522000000,
+          "total_shareholders_equity": 13160000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-16",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
+      "data": {
+        "shares_outstanding": 1862136956,
+        "revenue": 10584000000,
+        "balance_sheet": {
+          "total_assets": 43279000000,
+          "total_liabilities": 30521000000,
+          "total_shareholders_equity": 12758000000
+        }
+      }
+    }
+  ]
+}

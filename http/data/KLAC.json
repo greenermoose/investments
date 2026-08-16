@@ -1,0 +1,70 @@
+{
+  "symbol": "KLAC",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=319201",
+  "filings": [
+    {
+      "type": "10-K",
+      "filing_date": "2026-08-06",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=319201",
+      "data": {
+        "shares_outstanding": 130627521,
+        "revenue": 13579476000,
+        "balance_sheet": {
+          "total_assets": 17951535000,
+          "total_liabilities": 11601715000,
+          "total_shareholders_equity": 6349820000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-30",
+      "period_start": "2025-07-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=319201",
+      "data": {
+        "shares_outstanding": 131076611,
+        "revenue": 9921920000,
+        "balance_sheet": {
+          "total_assets": 16873515000,
+          "total_liabilities": 11043020000,
+          "total_shareholders_equity": 5830495000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-01-30",
+      "period_start": "2025-07-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=319201",
+      "data": {
+        "shares_outstanding": 131392338,
+        "revenue": 6506842000,
+        "balance_sheet": {
+          "total_assets": 16720228000,
+          "total_liabilities": 11254497000,
+          "total_shareholders_equity": 5465731000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-07-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=319201",
+      "data": {
+        "shares_outstanding": 131961370,
+        "revenue": 3209696000,
+        "balance_sheet": {
+          "total_assets": 16317974000,
+          "total_liabilities": 11332903000,
+          "total_shareholders_equity": 4985071000
+        }
+      }
+    }
+  ]
+}

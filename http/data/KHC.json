@@ -1,0 +1,70 @@
+{
+  "symbol": "KHC",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1637459",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2025-12-28",
+      "period_end": "2026-06-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1637459",
+      "data": {
+        "shares_outstanding": 1185777638,
+        "revenue": 12309000000,
+        "balance_sheet": {
+          "total_assets": 73065000000,
+          "total_liabilities": 36935000000,
+          "total_shareholders_equity": 36006000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2025-12-28",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1637459",
+      "data": {
+        "shares_outstanding": 1183744751,
+        "revenue": 6047000000,
+        "balance_sheet": {
+          "total_assets": 82046000000,
+          "total_liabilities": 39997000000,
+          "total_shareholders_equity": 41923000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-12",
+      "period_start": "2024-12-29",
+      "period_end": "2025-12-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1637459",
+      "data": {
+        "shares_outstanding": 1183655579,
+        "revenue": 24942000000,
+        "balance_sheet": {
+          "total_assets": 81786000000,
+          "total_liabilities": 39997000000,
+          "total_shareholders_equity": 41664000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-29",
+      "period_start": "2024-12-29",
+      "period_end": "2025-09-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1637459",
+      "data": {
+        "shares_outstanding": 1183599215,
+        "revenue": 18588000000,
+        "balance_sheet": {
+          "total_assets": 81695000000,
+          "total_liabilities": 40116000000,
+          "total_shareholders_equity": 41450000000
+        }
+      }
+    }
+  ]
+}

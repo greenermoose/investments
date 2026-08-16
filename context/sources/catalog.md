@@ -48,8 +48,9 @@ When evaluating factual data, financial metrics, or valuation variables, the sys
   - `Form 8-K`: Unscheduled material events (CEO changes, M&A announcements, major litigation, credit defaults).
   - `Form 4`: Insider equity transactions (officer/director stock purchases, sales, and option exercises).
   - `Form DEF 14A`: Definitive proxy statements, executive compensation structures, and corporate governance details.
-- **Authority Rating:** Absolute Ground Truth for historical financials, share counts, and regulatory disclosures.
-- **Access Protocol:** RESTful programmatic access via SEC EDGAR Company Facts API (`https://data.sec.gov/api/xbrl/companyfacts/`) and Python CLI (`scripts/fetch_sec.py`).
+  - `Form NPORT-P`: Monthly portfolio investment disclosures for ETFs and mutual funds, reporting complete constituent holdings, share balances, fair market values, and portfolio weights.
+- **Authority Rating:** Absolute Ground Truth for historical financials, share counts, ETF constituents, and regulatory disclosures.
+- **Access Protocol:** RESTful programmatic access via SEC EDGAR Company Facts API (`https://data.sec.gov/api/xbrl/companyfacts/`), submissions directory (`https://data.sec.gov/submissions/`), and Python CLI tools (`scripts/fetch_sec.py`, `scripts/fetch_etf_holdings.py`).
 - **Rate Limit & Policy:** SEC enforces a strict limit of 10 requests per second. User-Agent header must specify a declared identity format: `User-Agent: Sample Company Name AdminContact@domain.com`.
 
 ### CBOE (Chicago Board Options Exchange) & Primary Equity Exchanges

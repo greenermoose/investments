@@ -1,0 +1,70 @@
+{
+  "symbol": "ADSK",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=769397",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-29",
+      "period_start": "2026-02-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=769397",
+      "data": {
+        "shares_outstanding": 211000000,
+        "revenue": 1934000000,
+        "balance_sheet": {
+          "total_assets": 11932000000,
+          "total_liabilities": 11932000000,
+          "total_shareholders_equity": 3189000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-03",
+      "period_start": "2025-02-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=769397",
+      "data": {
+        "shares_outstanding": 212000000,
+        "revenue": 7206000000,
+        "balance_sheet": {
+          "total_assets": 12467000000,
+          "total_liabilities": 12467000000,
+          "total_shareholders_equity": 3045000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-26",
+      "period_start": "2025-02-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=769397",
+      "data": {
+        "shares_outstanding": 213000000,
+        "revenue": 5249000000,
+        "balance_sheet": {
+          "total_assets": 11198000000,
+          "total_liabilities": 11198000000,
+          "total_shareholders_equity": 2893000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-02",
+      "period_start": "2025-02-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=769397",
+      "data": {
+        "shares_outstanding": 214000000,
+        "revenue": 3396000000,
+        "balance_sheet": {
+          "total_assets": 10856000000,
+          "total_liabilities": 10856000000,
+          "total_shareholders_equity": 2715000000
+        }
+      }
+    }
+  ]
+}

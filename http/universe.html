@@ -100,6 +100,10 @@
           <option value="Financials">Financials</option>
           <option value="Health Care">Health Care</option>
           <option value="Industrials">Industrials</option>
+          <option value="Utilities">Utilities</option>
+          <option value="Energy">Energy</option>
+          <option value="Materials">Materials</option>
+          <option value="Real Estate">Real Estate</option>
         </select>
       </div>
     </div>
@@ -291,8 +295,10 @@
         document.getElementById('stat-total-companies').textContent = universeData.length;
         const activeCount = universeData.filter(c => c.thesis_status === 'ACTIVE_LONG' || c.thesis_status === 'COVERED_CALL_ACTIVE').length;
         const watchlistCount = universeData.filter(c => c.thesis_status === 'WATCHLIST_CANDIDATE').length;
+        const totalFilings = universeData.reduce((acc, c) => acc + (c.filings_count || 0), 0);
         document.getElementById('stat-active-theses').textContent = activeCount;
         document.getElementById('stat-watchlist').textContent = watchlistCount;
+        document.getElementById('stat-filings').textContent = totalFilings + '+';
 
         renderGrid();
       } catch (err) {

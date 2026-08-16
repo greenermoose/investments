@@ -1,0 +1,70 @@
+{
+  "symbol": "AEP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=4904",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4904",
+      "data": {
+        "shares_outstanding": 540861473,
+        "revenue": 6020000000,
+        "balance_sheet": {
+          "total_assets": 117776000000,
+          "total_liabilities": 84747000000,
+          "total_shareholders_equity": 31808000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-12",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4904",
+      "data": {
+        "shares_outstanding": 540861473,
+        "revenue": 21876000000,
+        "balance_sheet": {
+          "total_assets": 114460000000,
+          "total_liabilities": 82204000000,
+          "total_shareholders_equity": 31138000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4904",
+      "data": {
+        "shares_outstanding": 534794763,
+        "revenue": 16560700000,
+        "balance_sheet": {
+          "total_assets": 110253500000,
+          "total_liabilities": 78713500000,
+          "total_shareholders_equity": 30389300000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-07-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=4904",
+      "data": {
+        "shares_outstanding": 534195026,
+        "revenue": 10550300000,
+        "balance_sheet": {
+          "total_assets": 107778500000,
+          "total_liabilities": 76759500000,
+          "total_shareholders_equity": 29871100000
+        }
+      }
+    }
+  ]
+}

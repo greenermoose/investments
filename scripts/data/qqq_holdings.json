@@ -1,0 +1,919 @@
+{
+  "etf_ticker": "QQQ",
+  "fund_name": "INVESCO QQQ TRUST, SERIES 1",
+  "fund_cik": "0001067839",
+  "report_date": "2026-05-28",
+  "accession_number": "0001067839-26-000024",
+  "total_holdings_count": 101,
+  "holdings": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp.",
+      "cusip": "67066G104",
+      "balance_shares": 185426246.0,
+      "market_value_usd": 32338337302.4,
+      "weight_pct": 8.6813,
+      "cik": "0001045810"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "cusip": "037833100",
+      "balance_shares": 112027518.0,
+      "market_value_usd": 28431463793.22,
+      "weight_pct": 7.6325,
+      "cik": "0000320193"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp.",
+      "cusip": "594918104",
+      "balance_shares": 56662808.0,
+      "market_value_usd": 20974871637.36,
+      "weight_pct": 5.6307,
+      "cik": "0000789019"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "cusip": "023135106",
+      "balance_shares": 81915069.0,
+      "market_value_usd": 17060451420.63,
+      "weight_pct": 4.5799,
+      "cik": "0001018724"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "cusip": "88160R101",
+      "balance_shares": 38085568.0,
+      "market_value_usd": 14158309904.0,
+      "weight_pct": 3.8008,
+      "cik": "0001318605"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "cusip": "30303M102",
+      "balance_shares": 22505761.0,
+      "market_value_usd": 12876221040.93,
+      "weight_pct": 3.4566,
+      "cik": "0001326801"
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "cusip": "931142103",
+      "balance_shares": 102954591.0,
+      "market_value_usd": 12795196569.48,
+      "weight_pct": 3.4349,
+      "cik": "0000104169"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "cusip": "02079K305",
+      "balance_shares": 44426017.0,
+      "market_value_usd": 12775145448.52,
+      "weight_pct": 3.4295,
+      "cik": "0001652044"
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "cusip": "02079K107",
+      "balance_shares": 41495816.0,
+      "market_value_usd": 11903489777.76,
+      "weight_pct": 3.1955,
+      "cik": "0001652044"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "cusip": "11135F101",
+      "balance_shares": 36179296.0,
+      "market_value_usd": 11197853904.96,
+      "weight_pct": 3.0061,
+      "cik": "0001730168"
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corp.",
+      "cusip": "22160K105",
+      "balance_shares": 9350542.0,
+      "market_value_usd": 9317160565.06,
+      "weight_pct": 2.5012,
+      "cik": "0000909832"
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "cusip": "64110L106",
+      "balance_shares": 88944131.0,
+      "market_value_usd": 8551978195.65,
+      "weight_pct": 2.2958,
+      "cik": "0001065280"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "cusip": "595112103",
+      "balance_shares": 23709978.0,
+      "market_value_usd": 8010178967.52,
+      "weight_pct": 2.1503,
+      "cik": "0000723125"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "cusip": "69608A108",
+      "balance_shares": 48272196.0,
+      "market_value_usd": 7061256830.88,
+      "weight_pct": 1.8956,
+      "cik": "0001321655"
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "cusip": "007903107",
+      "balance_shares": 34346270.0,
+      "market_value_usd": 6987061706.1,
+      "weight_pct": 1.8757,
+      "cik": "0000002488"
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "cusip": "17275R102",
+      "balance_shares": 83208538.0,
+      "market_value_usd": 6456150463.42,
+      "weight_pct": 1.7332,
+      "cik": "0000858877"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "cusip": "038222105",
+      "balance_shares": 16718185.0,
+      "market_value_usd": 5714108451.15,
+      "weight_pct": 1.534,
+      "cik": "0000006951"
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corp.",
+      "cusip": "512807306",
+      "balance_shares": 26306628.0,
+      "market_value_usd": 5620674138.48,
+      "weight_pct": 1.5089,
+      "cik": "0000707549"
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "cusip": "872590104",
+      "balance_shares": 23211866.0,
+      "market_value_usd": 4875188215.98,
+      "weight_pct": 1.3087,
+      "cik": "0001283699"
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde PLC",
+      "cusip": "G54950103",
+      "balance_shares": 9761842.0,
+      "market_value_usd": 4839530789.92,
+      "weight_pct": 1.2992,
+      "cik": "0001707925"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corp.",
+      "cusip": "458140100",
+      "balance_shares": 105224739.0,
+      "market_value_usd": 4643567732.07,
+      "weight_pct": 1.2466,
+      "cik": "0000050863"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "cusip": "713448108",
+      "balance_shares": 28789883.0,
+      "market_value_usd": 4470780931.07,
+      "weight_pct": 1.2002,
+      "cik": "0000077476"
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corp.",
+      "cusip": "482480100",
+      "balance_shares": 2761263.0,
+      "market_value_usd": 4065711253.83,
+      "weight_pct": 1.0914,
+      "cik": "0000319201"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "cusip": "031162100",
+      "balance_shares": 11356021.0,
+      "market_value_usd": 3995615988.85,
+      "weight_pct": 1.0726,
+      "cik": "0000318154"
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments Inc.",
+      "cusip": "882508104",
+      "balance_shares": 19118468.0,
+      "market_value_usd": 3711659377.52,
+      "weight_pct": 0.9964,
+      "cik": "0000097476"
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "cusip": "375558103",
+      "balance_shares": 26151783.0,
+      "market_value_usd": 3644773996.71,
+      "weight_pct": 0.9784,
+      "cik": "0000882095"
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "cusip": "46120E602",
+      "balance_shares": 7480895.0,
+      "market_value_usd": 3448617786.05,
+      "weight_pct": 0.9258,
+      "cik": "0001035267"
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "cusip": "032654105",
+      "balance_shares": 10284527.0,
+      "market_value_usd": 3271919419.78,
+      "weight_pct": 0.8784,
+      "cik": "0000006281"
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "cusip": "82509L107",
+      "balance_shares": 25827722.0,
+      "market_value_usd": 3063684383.64,
+      "weight_pct": 0.8224,
+      "cik": "0001594805"
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "cusip": "438516106",
+      "balance_shares": 13391149.0,
+      "market_value_usd": 3026801408.47,
+      "weight_pct": 0.8125,
+      "cik": "0000773840"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Inc.",
+      "cusip": "747525103",
+      "balance_shares": 22477453.0,
+      "market_value_usd": 2894646397.34,
+      "weight_pct": 0.7771,
+      "cik": "0000804328"
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "cusip": "09857L108",
+      "balance_shares": 667212.0,
+      "market_value_usd": 2809176027.84,
+      "weight_pct": 0.7541,
+      "cik": "0001075531"
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "cusip": "697435105",
+      "balance_shares": 17189894.0,
+      "market_value_usd": 2755883806.08,
+      "weight_pct": 0.7398,
+      "cik": "0001327567"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corp.",
+      "cusip": "03831W108",
+      "balance_shares": 6468767.0,
+      "market_value_usd": 2574569266.0,
+      "weight_pct": 0.6911,
+      "cik": "0001751008"
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "cusip": "461202103",
+      "balance_shares": 5825776.0,
+      "market_value_usd": 2518949026.88,
+      "weight_pct": 0.6762,
+      "cik": "0000896878"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "cusip": "N07059210",
+      "balance_shares": 1851486.0,
+      "market_value_usd": 2445498253.38,
+      "weight_pct": 0.6565,
+      "cik": "0000937966"
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Inc.",
+      "cusip": "92532F100",
+      "balance_shares": 5351474.0,
+      "market_value_usd": 2389647199.96,
+      "weight_pct": 0.6415,
+      "cik": "0000875320"
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corp.",
+      "cusip": "20030N101",
+      "balance_shares": 75593336.0,
+      "market_value_usd": 2170284676.56,
+      "weight_pct": 0.5826,
+      "cik": "0001166691"
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks Corp.",
+      "cusip": "855244109",
+      "balance_shares": 23996194.0,
+      "market_value_usd": 2149819020.46,
+      "weight_pct": 0.5771,
+      "cik": "0000829224"
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corp.",
+      "cusip": "21037T109",
+      "balance_shares": 7625697.0,
+      "market_value_usd": 2129475887.25,
+      "weight_pct": 0.5717,
+      "cik": "0001868275"
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "cusip": "00724F101",
+      "balance_shares": 8587257.0,
+      "market_value_usd": 2087390431.56,
+      "weight_pct": 0.5604,
+      "cik": "0000796343"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "cusip": "22788C105",
+      "balance_shares": 5310685.0,
+      "market_value_usd": 2073344530.85,
+      "weight_pct": 0.5566,
+      "cik": "0001535527"
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp.",
+      "cusip": "958102105",
+      "balance_shares": 7142149.0,
+      "market_value_usd": 1931879883.01,
+      "weight_pct": 0.5186,
+      "cik": "0000106040"
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "cusip": "58733R102",
+      "balance_shares": 1067972.0,
+      "market_value_usd": 1846544947.44,
+      "weight_pct": 0.4957,
+      "cik": "0001099590"
+    },
+    {
+      "ticker": "MAR",
+      "name": "Marriott International, Inc.",
+      "cusip": "571903202",
+      "balance_shares": 5582146.0,
+      "market_value_usd": 1825752492.22,
+      "weight_pct": 0.4901,
+      "cik": "0001048286"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "cusip": "573874104",
+      "balance_shares": 18352467.0,
+      "market_value_usd": 1817811856.35,
+      "weight_pct": 0.488,
+      "cik": "0001835632"
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings PLC",
+      "cusip": "G7997R103",
+      "balance_shares": 4593936.0,
+      "market_value_usd": 1799720367.36,
+      "weight_pct": 0.4831,
+      "cik": "0001137789"
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "cusip": "053015103",
+      "balance_shares": 8482143.0,
+      "market_value_usd": 1723401814.74,
+      "weight_pct": 0.4626,
+      "cik": "0000008670"
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "cusip": "75886F107",
+      "balance_shares": 2188791.0,
+      "market_value_usd": 1691147478.24,
+      "weight_pct": 0.454,
+      "cik": "0000872589"
+    },
+    {
+      "ticker": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "cusip": "67103H107",
+      "balance_shares": 17663587.0,
+      "market_value_usd": 1630525715.97,
+      "weight_pct": 0.4377,
+      "cik": "0000898173"
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "cusip": "127387108",
+      "balance_shares": 5816160.0,
+      "market_value_usd": 1616136379.2,
+      "weight_pct": 0.4339,
+      "cik": "0000813672"
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corp.",
+      "cusip": "126408103",
+      "balance_shares": 39173473.0,
+      "market_value_usd": 1608071066.65,
+      "weight_pct": 0.4317,
+      "cik": "0000277948"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "cusip": "871607107",
+      "balance_shares": 4035433.0,
+      "market_value_usd": 1599968475.84,
+      "weight_pct": 0.4295,
+      "cik": "0000883241"
+    },
+    {
+      "ticker": "MDLZ",
+      "name": "Mondelez International, Inc.",
+      "cusip": "609207105",
+      "balance_shares": 27003382.0,
+      "market_value_usd": 1556474938.48,
+      "weight_pct": 0.4178,
+      "cik": "0001103982"
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corp.",
+      "cusip": "61174X109",
+      "balance_shares": 20608290.0,
+      "market_value_usd": 1493276693.4,
+      "weight_pct": 0.4009,
+      "cik": "0000865752"
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power Co., Inc.",
+      "cusip": "025537101",
+      "balance_shares": 11393805.0,
+      "market_value_usd": 1493499959.4,
+      "weight_pct": 0.4009,
+      "cik": ""
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores, Inc.",
+      "cusip": "778296103",
+      "balance_shares": 6813704.0,
+      "market_value_usd": 1476052697.52,
+      "weight_pct": 0.3962,
+      "cik": "0000745732"
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "cusip": "722304102",
+      "balance_shares": 14070541.0,
+      "market_value_usd": 1437727879.38,
+      "weight_pct": 0.386,
+      "cik": "0001737806"
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros. Discovery, Inc.",
+      "cusip": "934423104",
+      "balance_shares": 52242250.0,
+      "market_value_usd": 1434572185.0,
+      "weight_pct": 0.3851,
+      "cik": "0001437107"
+    },
+    {
+      "ticker": "CTAS",
+      "name": "Cintas Corp.",
+      "cusip": "172908105",
+      "balance_shares": 8424077.0,
+      "market_value_usd": 1424848383.78,
+      "weight_pct": 0.3825,
+      "cik": "0000723254"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "cusip": "25809K105",
+      "balance_shares": 8636396.0,
+      "market_value_usd": 1296754859.4,
+      "weight_pct": 0.3481,
+      "cik": "0001792789"
+    },
+    {
+      "ticker": "PCAR",
+      "name": "PACCAR Inc.",
+      "cusip": "693718108",
+      "balance_shares": 11081799.0,
+      "market_value_usd": 1279947784.5,
+      "weight_pct": 0.3436,
+      "cik": "0000075362"
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "cusip": "34959E109",
+      "balance_shares": 15587253.0,
+      "market_value_usd": 1273790315.16,
+      "weight_pct": 0.342,
+      "cik": "0001262039"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes Co.",
+      "cusip": "05722G100",
+      "balance_shares": 20820037.0,
+      "market_value_usd": 1271063258.85,
+      "weight_pct": 0.3412,
+      "cik": "0001701605"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "cusip": "25278X109",
+      "balance_shares": 5942252.0,
+      "market_value_usd": 1175318023.08,
+      "weight_pct": 0.3155,
+      "cik": "0001539838"
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "cusip": "609839105",
+      "balance_shares": 1034734.0,
+      "market_value_usd": 1131326418.9,
+      "weight_pct": 0.3037,
+      "cik": "0001280452"
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "cusip": "009066101",
+      "balance_shares": 8922974.0,
+      "market_value_usd": 1126793156.72,
+      "weight_pct": 0.3025,
+      "cik": "0001559720"
+    },
+    {
+      "ticker": "FAST",
+      "name": "Fastenal Co.",
+      "cusip": "311900104",
+      "balance_shares": 24190706.0,
+      "market_value_usd": 1122448758.4,
+      "weight_pct": 0.3013,
+      "cik": "0000815556"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "cusip": "285512109",
+      "balance_shares": 5271823.0,
+      "market_value_usd": 1074766555.01,
+      "weight_pct": 0.2885,
+      "cik": "0000712515"
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "cusip": "052769106",
+      "balance_shares": 4466006.0,
+      "market_value_usd": 1069161836.4,
+      "weight_pct": 0.287,
+      "cik": "0000769397"
+    },
+    {
+      "ticker": "EXC",
+      "name": "Exelon Corp.",
+      "cusip": "30161N101",
+      "balance_shares": 21548284.0,
+      "market_value_usd": 1056296881.68,
+      "weight_pct": 0.2836,
+      "cik": "0001109357"
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "cusip": "N6596X109",
+      "balance_shares": 5323204.0,
+      "market_value_usd": 1047925939.44,
+      "weight_pct": 0.2813,
+      "cik": "0001413447"
+    },
+    {
+      "ticker": "XEL",
+      "name": "Xcel Energy Inc.",
+      "cusip": "98389B100",
+      "balance_shares": 13142576.0,
+      "market_value_usd": 1044046237.44,
+      "weight_pct": 0.2803,
+      "cik": "0000072903"
+    },
+    {
+      "ticker": "FER",
+      "name": "FERROVIAL SE",
+      "cusip": "N/A",
+      "balance_shares": 15156089.0,
+      "market_value_usd": 985903589.45,
+      "weight_pct": 0.2647,
+      "cik": "0001468522"
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "cusip": "45168D104",
+      "balance_shares": 1677361.0,
+      "market_value_usd": 942492372.29,
+      "weight_pct": 0.253,
+      "cik": "0000874716"
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "cusip": "02043Q107",
+      "balance_shares": 2793810.0,
+      "market_value_usd": 924387914.7,
+      "weight_pct": 0.2482,
+      "cik": "0001178670"
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "cusip": "70450Y103",
+      "balance_shares": 19394753.0,
+      "market_value_usd": 877224678.19,
+      "weight_pct": 0.2355,
+      "cik": "0001633917"
+    },
+    {
+      "ticker": "CCEP",
+      "name": "Coca-Cola Europacific Partners PLC",
+      "cusip": "G25839104",
+      "balance_shares": 9652453.0,
+      "market_value_usd": 875187913.51,
+      "weight_pct": 0.2349,
+      "cik": "0001650107"
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "cusip": "679580100",
+      "balance_shares": 4390719.0,
+      "market_value_usd": 857946492.6,
+      "weight_pct": 0.2303,
+      "cik": "0000878927"
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corp.",
+      "cusip": "884903808",
+      "balance_shares": 9371083.0,
+      "market_value_usd": 843210048.34,
+      "weight_pct": 0.2264,
+      "cik": "0001075124"
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc.",
+      "cusip": "594972408",
+      "balance_shares": 6617090.0,
+      "market_value_usd": 825812832.0,
+      "weight_pct": 0.2217,
+      "cik": "0001050446"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "cusip": "23804L103",
+      "balance_shares": 6919861.0,
+      "market_value_usd": 816889591.05,
+      "weight_pct": 0.2193,
+      "cik": "0001561550"
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "cusip": "874054109",
+      "balance_shares": 3897276.0,
+      "market_value_usd": 769712010.0,
+      "weight_pct": 0.2066,
+      "cik": "0000946581"
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "cusip": "776696106",
+      "balance_shares": 2168276.0,
+      "market_value_usd": 767266145.36,
+      "weight_pct": 0.206,
+      "cik": "0000882835"
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper Inc.",
+      "cusip": "49271V100",
+      "balance_shares": 28621710.0,
+      "market_value_usd": 753609624.3,
+      "weight_pct": 0.2023,
+      "cik": "0001418135"
+    },
+    {
+      "ticker": "INSM",
+      "name": "Insmed Inc.",
+      "cusip": "457669307",
+      "balance_shares": 4540817.0,
+      "market_value_usd": 742514395.84,
+      "weight_pct": 0.1993,
+      "cik": "0001104506"
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Inc.",
+      "cusip": "595017104",
+      "balance_shares": 11400849.0,
+      "market_value_usd": 736608853.89,
+      "weight_pct": 0.1977,
+      "cik": "0000827054"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "cusip": "05464C101",
+      "balance_shares": 1693679.0,
+      "market_value_usd": 719288534.51,
+      "weight_pct": 0.1931,
+      "cik": "0001069183"
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "cusip": "704326107",
+      "balance_shares": 7562022.0,
+      "market_value_usd": 696613466.64,
+      "weight_pct": 0.187,
+      "cik": "0000723531"
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "cusip": "36266G107",
+      "balance_shares": 9600843.0,
+      "market_value_usd": 683388004.74,
+      "weight_pct": 0.1835,
+      "cik": "0001932393"
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "cusip": "217204106",
+      "balance_shares": 20392246.0,
+      "market_value_usd": 677022567.2,
+      "weight_pct": 0.1817,
+      "cik": "0000900075"
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant Technology Solutions Corp.",
+      "cusip": "192446102",
+      "balance_shares": 10074750.0,
+      "market_value_usd": 618085912.5,
+      "weight_pct": 0.1659,
+      "cik": "0001058290"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "cusip": "98138H101",
+      "balance_shares": 4490736.0,
+      "market_value_usd": 583436421.12,
+      "weight_pct": 0.1566,
+      "cik": "0001327811"
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "cusip": "16119P108",
+      "balance_shares": 2667605.0,
+      "market_value_usd": 575882567.4,
+      "weight_pct": 0.1546,
+      "cik": "0001091667"
+    },
+    {
+      "ticker": "KHC",
+      "name": "Kraft Heinz Co. (The)",
+      "cusip": "500754106",
+      "balance_shares": 24957189.0,
+      "market_value_usd": 561287180.61,
+      "weight_pct": 0.1507,
+      "cik": "0001637459"
+    },
+    {
+      "ticker": "VRSK",
+      "name": "Verisk Analytics, Inc.",
+      "cusip": "92345Y106",
+      "balance_shares": 2905903.0,
+      "market_value_usd": 551395094.25,
+      "weight_pct": 0.148,
+      "cik": "0001442145"
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom, Inc.",
+      "cusip": "252131107",
+      "balance_shares": 8107598.0,
+      "market_value_usd": 509157154.4,
+      "weight_pct": 0.1367,
+      "cik": "0001093557"
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
+      "cusip": "98980G102",
+      "balance_shares": 3387187.0,
+      "market_value_usd": 475188464.23,
+      "weight_pct": 0.1276,
+      "cik": "0001713683"
+    },
+    {
+      "ticker": "ARM",
+      "name": "ARM Holdings PLC",
+      "cusip": "042068205",
+      "balance_shares": 2941838.0,
+      "market_value_usd": 445041252.64,
+      "weight_pct": 0.1195,
+      "cik": "0001973239"
+    },
+    {
+      "ticker": "CSGP",
+      "name": "CoStar Group, Inc.",
+      "cusip": "22160N109",
+      "balance_shares": 8843403.0,
+      "market_value_usd": 356742877.02,
+      "weight_pct": 0.0958,
+      "cik": "0001057352"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "Atlassian Corp.",
+      "cusip": "049468101",
+      "balance_shares": 3573013.0,
+      "market_value_usd": 243858137.25,
+      "weight_pct": 0.0655,
+      "cik": "0001650372"
+    }
+  ]
+}

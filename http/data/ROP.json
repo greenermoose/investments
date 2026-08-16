@@ -1,0 +1,70 @@
+{
+  "symbol": "ROP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=882835",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=882835",
+      "data": {
+        "shares_outstanding": 100917359,
+        "revenue": 4204200000,
+        "balance_sheet": {
+          "total_assets": 35169500000,
+          "total_liabilities": 16469200000,
+          "total_shareholders_equity": 18700300000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=882835",
+      "data": {
+        "shares_outstanding": 102927515,
+        "revenue": 2095300000,
+        "balance_sheet": {
+          "total_assets": 34550800000,
+          "total_liabilities": 15732800000,
+          "total_shareholders_equity": 18818000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-24",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=882835",
+      "data": {
+        "shares_outstanding": 107637430,
+        "revenue": 7902500000,
+        "balance_sheet": {
+          "total_assets": 34577000000,
+          "total_liabilities": 14695500000,
+          "total_shareholders_equity": 19881500000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=882835",
+      "data": {
+        "shares_outstanding": 107613824,
+        "revenue": 5843900000,
+        "balance_sheet": {
+          "total_assets": 34584400000,
+          "total_liabilities": 14591600000,
+          "total_shareholders_equity": 19992800000
+        }
+      }
+    }
+  ]
+}

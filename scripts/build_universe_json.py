@@ -1,669 +1,159 @@
-import os
-import json
+"""
+Build Universe JSON
+Generates the authoritative master public equities universe catalog (http/data/universe.json)
+by synthesizing SEC EDGAR XBRL filings, company metadata, and fundamental valuation metrics.
+"""
 
-company_meta = {
-    "AAPL": {
-        "name": "Apple Inc.",
-        "sector": "Information Technology",
-        "industry": "Consumer Electronics & Software",
-        "description": "Designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories, and sells a variety of related services.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.2,
-        "entry_price": 195.50,
-        "target_exit_price": 275.00,
-        "current_price": 228.40,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "18.5%",
-        "moat": "Ecosystem lock-in, proprietary silicon, brand loyalty, and massive recurring high-margin services revenue.",
-        "invalidation_criteria": "Sustained decline in active device installed base, loss of app store commission structure, or failure in edge AI monetization.",
-        "latest_catalyst": "Apple Intelligence global rollout and iPhone upgrade supercycle."
-    },
-    "MSFT": {
-        "name": "Microsoft Corporation",
-        "sector": "Information Technology",
-        "industry": "Systems Software & Cloud Computing",
-        "description": "Develops and supports software, services, devices and solutions including Azure Cloud, Microsoft 365, LinkedIn, and gaming.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.5,
-        "entry_price": 380.00,
-        "target_exit_price": 540.00,
-        "current_price": 445.20,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "19.0%",
-        "moat": "Enterprise IT mission-critical stack, Azure hyperscale cloud infrastructure, and OpenAI enterprise partnership integration.",
-        "invalidation_criteria": "Loss of enterprise cloud market share to AWS/GCP, deceleration of Azure AI revenue below 15%, or significant margin compression.",
-        "latest_catalyst": "Copilot enterprise tier monetization and Azure AI capacity expansion."
-    },
-    "NVDA": {
-        "name": "NVIDIA Corporation",
-        "sector": "Information Technology",
-        "industry": "Semiconductors & AI Hardware",
-        "description": "Pioneered accelerated computing to tackle challenges no one else can solve, dominating the data center GPU and AI hardware stack.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.4,
-        "entry_price": 98.00,
-        "target_exit_price": 180.00,
-        "current_price": 128.50,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "24.0%",
-        "moat": "CUDA software ecosystem, proprietary interconnect (NVLink), full-stack AI data center architecture.",
-        "invalidation_criteria": "ASIC custom silicon replacing GPU demand in hyperscalers, CUDA fragmentation, or severe gross margin erosion below 65%.",
-        "latest_catalyst": "Blackwell B200 architecture volume ramp and sovereign AI infrastructure demand."
-    },
-    "GOOGL": {
-        "name": "Alphabet Inc.",
-        "sector": "Communication Services",
-        "industry": "Interactive Media & Services",
-        "description": "Operates Google Search, YouTube, Android, Google Cloud, Waymo, and deep AI research through Google DeepMind.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.0,
-        "entry_price": 145.00,
-        "target_exit_price": 220.00,
-        "current_price": 172.80,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "17.5%",
-        "moat": "Global search monopoly, YouTube creator network effects, Google Cloud profitability ramp, custom TPU silicon.",
-        "invalidation_criteria": "Structural loss of search query volume to conversational AI without offsetting search ad revenue or severe antitrust remedies.",
-        "latest_catalyst": "Gemini model integration across Search & Workspace; GCP AI enterprise expansion."
-    },
-    "META": {
-        "name": "Meta Platforms, Inc.",
-        "sector": "Communication Services",
-        "industry": "Interactive Media & Services",
-        "description": "Builds technologies that help people connect, find communities, and grow businesses across Facebook, Instagram, WhatsApp, and Threads.",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.8,
-        "entry_price": 460.00,
-        "target_exit_price": 620.00,
-        "current_price": 535.10,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "18.0%",
-        "moat": "3.2B+ daily active users across family of apps, proprietary AI recommendation engine (Advantage+), open-source Llama model leadership.",
-        "invalidation_criteria": "Deceleration of ad impression growth, massive uncontained Reality Labs burn (> $20B/yr without ROI), or severe user churn among youth demographic.",
-        "latest_catalyst": "AI-driven ad conversion efficiency gains and WhatsApp business messaging monetization."
-    },
-    "BRK-B": {
-        "name": "Berkshire Hathaway Inc.",
-        "sector": "Financials",
-        "industry": "Multi-Sector Conglomerate & Insurance",
-        "description": "Holding company owning businesses in insurance (GEICO, Berkshire Reinsurance), freight rail (BNSF), energy (BHE), and manufacturing.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.9,
-        "entry_price": 395.00,
-        "target_exit_price": 520.00,
-        "current_price": 448.30,
-        "holding_period": "5+ Years",
-        "target_roi": "14.0%",
-        "moat": "Massive insurance float ($170B+ at negative cost of capital), fortress balance sheet with >$250B cash/T-bills, unmatched capital allocation discipline.",
-        "invalidation_criteria": "Destructive major acquisitions post-succession or sustained underwriting losses in primary insurance operations.",
-        "latest_catalyst": "Deployment of record cash reserves into opportunistic equity investments or large-scale buybacks."
-    },
-    "TSLA": {
-        "name": "Tesla, Inc.",
-        "sector": "Consumer Discretionary",
-        "industry": "Automobile & Clean Energy",
-        "description": "Designs, develops, manufactures, sells, and leases electric vehicles, energy storage systems, and solar installations.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.8,
-        "entry_price": 175.00,
-        "target_exit_price": 320.00,
-        "current_price": 218.00,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "22.0%",
-        "moat": "Manufacturing scale, Supercharger network standard (NACS), Full Self-Driving neural network data fleet, Megapack energy storage growth.",
-        "invalidation_criteria": "Failure to achieve unsupervised FSD autonomy, severe automotive gross margin compression below 14%, or loss of EV market leadership.",
-        "latest_catalyst": "Robotaxi autonomous network reveal and Megapack Shanghai factory ramp."
-    },
-    "JPM": {
-        "name": "JPMorgan Chase & Co.",
-        "sector": "Financials",
-        "industry": "Diversified Banking & Capital Markets",
-        "description": "The largest bank in the United States, providing investment banking, asset management, treasury, and commercial banking globally.",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.7,
-        "entry_price": 180.00,
-        "target_exit_price": 250.00,
-        "current_price": 215.40,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "15.5%",
-        "moat": "Fortress balance sheet, highest ROTCE in money-center banking (>18%), dominant scale in deposits, corporate payments, and wealth management.",
-        "invalidation_criteria": "Severe deterioration in credit quality across commercial real estate/consumer credit leading to unexpected reserve spikes.",
-        "latest_catalyst": "Net interest income resilience, investment banking fee recovery, and market share gains."
-    },
-    "AVGO": {
-        "name": "Broadcom Inc.",
-        "sector": "Information Technology",
-        "industry": "Semiconductors & Infrastructure Software",
-        "description": "Designs and supplies semiconductor devices and enterprise software including VMware, Symantec, and CA Technologies.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.1,
-        "entry_price": 135.00,
-        "target_exit_price": 200.00,
-        "current_price": 162.30,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "20.0%",
-        "moat": "Dominant market share in custom AI XPUs (Google TPU, Meta ASIC), Tomahawk networking switches, VMware enterprise virtualization monopoly.",
-        "invalidation_criteria": "Loss of major custom ASIC hyperscaler accounts or severe customer pushback against VMware licensing price increases.",
-        "latest_catalyst": "Custom AI accelerator revenue doubling and VMware margin expansion."
-    },
-    "AMD": {
-        "name": "Advanced Micro Devices, Inc.",
-        "sector": "Information Technology",
-        "industry": "Semiconductors",
-        "description": "Develops high-performance computing, graphics, and visualization technologies including EPYC CPUs, Ryzen, and Instinct AI accelerators.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 8.0,
-        "entry_price": 125.00,
-        "target_exit_price": 190.00,
-        "current_price": 142.10,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "19.5%",
-        "moat": "EPYC server CPU market share momentum vs Intel, chiplet manufacturing architecture, open ROCm software stack.",
-        "invalidation_criteria": "Failure of MI300/MI350 Instinct GPUs to capture >10% AI training/inference data center share.",
-        "latest_catalyst": "MI325X and MI350 accelerator launch and EPYC Turin enterprise adoption."
-    },
-    "CRM": {
-        "name": "Salesforce, Inc.",
-        "sector": "Information Technology",
-        "industry": "Application Software",
-        "description": "Provider of customer relationship management (CRM) technology, enterprise cloud applications, Data Cloud, and Agentforce autonomous agents.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.6,
-        "entry_price": 235.00,
-        "target_exit_price": 340.00,
-        "current_price": 272.50,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "17.0%",
-        "moat": "High switching costs in core Sales & Service Cloud, unified enterprise customer data platform, aggressive GAAP margin expansion >30%.",
-        "invalidation_criteria": "Deceleration of cRPO below 8%, loss of mid-market customers to specialized point solutions.",
-        "latest_catalyst": "Agentforce autonomous enterprise AI agent adoption and Data Cloud expansion."
-    },
-    "ADBE": {
-        "name": "Adobe Inc.",
-        "sector": "Information Technology",
-        "industry": "Application Software",
-        "description": "Diversified software company offering creative, document, and experience cloud software (Photoshop, Illustrator, Acrobat, Firefly).",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.4,
-        "entry_price": 480.00,
-        "target_exit_price": 640.00,
-        "current_price": 540.00,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "16.5%",
-        "moat": "Industry standard creative file formats (.psd, .ai, .pdf), high workflow switching costs, Firefly commercially safe generative AI integration.",
-        "invalidation_criteria": "Generative AI native competitors (Midjourney, Runway, Figma) causing net subscriber attrition in Creative Cloud.",
-        "latest_catalyst": "Firefly video generative tools release and enterprise Creative Cloud pricing tiers."
-    },
-    "NFLX": {
-        "name": "Netflix, Inc.",
-        "sector": "Communication Services",
-        "industry": "Entertainment & Streaming",
-        "description": "The world's leading streaming entertainment service with over 275 million paid memberships in over 190 countries.",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.7,
-        "entry_price": 580.00,
-        "target_exit_price": 780.00,
-        "current_price": 670.20,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "17.5%",
-        "moat": "Massive global scale allowing highest content budget with lowest per-subscriber cost, profitable ad-supported tier, live sports programming.",
-        "invalidation_criteria": "Net subscriber losses over multiple quarters or content spend inflation outpacing revenue growth.",
-        "latest_catalyst": "Ad tier scaling, live events broadcast (NFL Christmas, WWE Raw), and operating margin reaching 28%."
-    },
-    "MA": {
-        "name": "Mastercard Incorporated",
-        "sector": "Financials",
-        "industry": "Transaction & Payment Processing",
-        "description": "Global payments technology company connecting consumers, financial institutions, merchants, governments, and businesses.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 9.3,
-        "entry_price": 420.00,
-        "target_exit_price": 560.00,
-        "current_price": 472.60,
-        "holding_period": "5+ Years",
-        "target_roi": "16.0%",
-        "moat": "Duopoly network effects with Visa, >55% operating margins, secular cash-to-digital transition in emerging markets, high-margin value-added services.",
-        "invalidation_criteria": "Government-mandated interchange fee caps drastically reducing network economics, or structural shift to zero-fee account-to-account rails.",
-        "latest_catalyst": "Cross-border travel volume resilience and cyber/intelligence value-add services expansion."
-    },
-    "UNH": {
-        "name": "UnitedHealth Group Incorporated",
-        "sector": "Health Care",
-        "industry": "Managed Health Care & Optum Services",
-        "description": "Diversified healthcare company operating UnitedHealthcare (health benefits) and Optum (health services, pharmacy benefit management, clinics).",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.5,
-        "entry_price": 465.00,
-        "target_exit_price": 610.00,
-        "current_price": 535.80,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "15.0%",
-        "moat": "Vertically integrated payer-provider model (Optum + UHC), unmatched scale negotiating drug prices and clinical provider reimbursement.",
-        "invalidation_criteria": "Medical Care Ratio (MCR) structurally exceeding 86% without regulatory pricing adjustment, or single-payer legislative overhaul.",
-        "latest_catalyst": "Medicare Advantage rate stabilization and Optum health clinic network expansion."
-    },
-    "JNJ": {
-        "name": "Johnson & Johnson",
-        "sector": "Health Care",
-        "industry": "Pharmaceuticals & MedTech",
-        "description": "Researches, develops, manufactures, and sells healthcare products in Innovative Medicine (oncology, immunology) and MedTech (surgical, orthopedics).",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.1,
-        "entry_price": 148.00,
-        "target_exit_price": 185.00,
-        "current_price": 160.20,
-        "holding_period": "4 to 6 Years",
-        "target_roi": "12.0%",
-        "moat": "AAA credit rating, extensive pharmaceutical patent portfolio (Darzalex, Tremfya), MedTech robotic surgery systems.",
-        "invalidation_criteria": "Major patent cliff on top biologics without pipeline replacement, or catastrophic legal liabilities beyond reserves.",
-        "latest_catalyst": "Talc litigation final settlement and MedTech robotic surgery commercialization."
-    },
-    "KO": {
-        "name": "The Coca-Cola Company",
-        "sector": "Consumer Staples",
-        "industry": "Non-Alcoholic Beverages",
-        "description": "Manufactures, markets, and sells various nonalcoholic beverages worldwide with ubiquitous global distribution.",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.0,
-        "entry_price": 58.00,
-        "target_exit_price": 75.00,
-        "current_price": 68.40,
-        "holding_period": "5+ Years",
-        "target_roi": "11.5%",
-        "moat": "Unrivaled global bottling and distribution network, unparalleled brand pricing power, steady 3%+ dividend yield.",
-        "invalidation_criteria": "Structural volume decline across key emerging markets or severe tax penalties on sweetened beverages worldwide.",
-        "latest_catalyst": "Price/mix realization, emerging market volume growth, and refranchised bottling margin expansion."
-    },
-    "WMT": {
-        "name": "Walmart Inc.",
-        "sector": "Consumer Staples",
-        "industry": "Hypermarkets & Supercenters",
-        "description": "Operates a chain of hypermarkets, discount department stores, and grocery stores, alongside a rapidly scaling e-commerce marketplace and Walmart Connect ad business.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.8,
-        "entry_price": 59.00,
-        "target_exit_price": 85.00,
-        "current_price": 73.10,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "15.0%",
-        "moat": "Unmatched retail procurement scale, automated supply chain centers, high-margin advertising (Walmart Connect), e-commerce delivery speed.",
-        "invalidation_criteria": "Loss of grocery market share to regional/discount competitors or wage cost inflation eroding operating margin.",
-        "latest_catalyst": "Automation in regional distribution centers and Walmart+ membership growth."
-    },
-    "DIS": {
-        "name": "The Walt Disney Company",
-        "sector": "Communication Services",
-        "industry": "Entertainment & Parks",
-        "description": "Operates Parks, Experiences, and Consumer Products, alongside Entertainment (Disney+, Hulu, studios) and Sports (ESPN).",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.9,
-        "entry_price": 88.00,
-        "target_exit_price": 130.00,
-        "current_price": 95.80,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "16.0%",
-        "moat": "Irreplaceable intellectual property catalog (Marvel, Star Wars, Pixar, Disney Classics), high-ROIC Theme Parks & Cruise Line division.",
-        "invalidation_criteria": "Accelerating linear TV subscriber cord-cutting outpacing direct-to-consumer streaming profitability.",
-        "latest_catalyst": "DTC streaming profitability inflection, ESPN standalone digital launch, and $60B 10-year parks expansion."
-    },
-    "SBUX": {
-        "name": "Starbucks Corporation",
-        "sector": "Consumer Discretionary",
-        "industry": "Restaurants & Cafes",
-        "description": "Roasts, markets, and retails specialty coffee worldwide with over 38,000 stores globally and a premier digital rewards program.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.7,
-        "entry_price": 74.00,
-        "target_exit_price": 110.00,
-        "current_price": 94.20,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "16.5%",
-        "moat": "Global premium coffee brand equity, Starbucks Rewards digital ecosystem (34M+ US members), store footprint convenience.",
-        "invalidation_criteria": "Sustained negative same-store transaction growth in North America, or failure of store operations turnaround.",
-        "latest_catalyst": "New leadership strategic turnaround focusing on North American barista workflow and store experience."
-    },
-    "ABNB": {
-        "name": "Airbnb, Inc.",
-        "sector": "Consumer Discretionary",
-        "industry": "Travel & Lodging Platforms",
-        "description": "Operates a global platform for unique stays and experiences connecting hosts and guests.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.6,
-        "entry_price": 115.00,
-        "target_exit_price": 180.00,
-        "current_price": 131.40,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "19.0%",
-        "moat": "Two-sided network effects with 8M+ active listings, 90%+ organic/unpaid traffic, high FCF conversion (>35%).",
-        "invalidation_criteria": "Severe municipal short-term rental bans across major European/US gateway cities materially reducing listing supply.",
-        "latest_catalyst": "Co-hosting marketplace launch, expansion into adjacent travel services, and cross-currency take rate expansion."
-    },
-    "TMUS": {
-        "name": "T-Mobile US, Inc.",
-        "sector": "Communication Services",
-        "industry": "Wireless Telecommunication",
-        "description": "Provides wireless voice, messaging, and data services under the T-Mobile and Metro by T-Mobile brands, and fixed wireless 5G home internet.",
-        "thesis_status": "COVERED_CALL_ACTIVE",
-        "conviction_score": 8.3,
-        "entry_price": 162.00,
-        "target_exit_price": 215.00,
-        "current_price": 188.60,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "14.5%",
-        "moat": "Mid-band 5G spectrum lead, lowest cost-per-gigabyte network architecture, dominant share of postpaid phone net additions.",
-        "invalidation_criteria": "Broadband market share losses to fiber overbuilders or destructive price competition from cable MVNOs.",
-        "latest_catalyst": "5G Home Internet fixed wireless expansion and massive shareholder capital return via dividends and buybacks."
-    },
-    "ENPH": {
-        "name": "Enphase Energy, Inc.",
-        "sector": "Information Technology",
-        "industry": "Solar & Energy Storage",
-        "description": "Designs and manufactures microinverter systems for the solar photovoltaic industry, home energy management software, and batteries.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.2,
-        "entry_price": 68.00,
-        "target_exit_price": 130.00,
-        "current_price": 82.30,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "23.0%",
-        "moat": "Distributed microinverter reliability and software integration, high gross margins in US residential solar.",
-        "invalidation_criteria": "Structural deterioration in residential solar economics under elevated interest rates and NEM 3.0 net metering policy.",
-        "latest_catalyst": "Channel inventory normalization in Europe and IQ8 microinverter rollout in emerging international markets."
-    },
-    "SEDG": {
-        "name": "SolarEdge Technologies, Inc.",
-        "sector": "Information Technology",
-        "industry": "Solar Hardware & Inverters",
-        "description": "Provides DC optimized inverter systems for solar photovoltaic installations.",
-        "thesis_status": "UNDER_REVIEW",
-        "conviction_score": 5.4,
-        "entry_price": 45.00,
-        "target_exit_price": 60.00,
-        "current_price": 24.80,
-        "holding_period": "1 to 2 Years",
-        "target_roi": "10.0%",
-        "moat": "DC power optimizer patent portfolio and installer relationships.",
-        "invalidation_criteria": "Severe inventory write-downs, ongoing cash burn, loss of market share to Enphase and Tesla.",
-        "latest_catalyst": "Restructuring program and European channel inventory clearance."
-    },
-    "GNRC": {
-        "name": "Generac Holdings Inc.",
-        "sector": "Industrials",
-        "industry": "Power Generation & Energy Tech",
-        "description": "Designs and manufactures standby power generators, energy storage systems, and grid services software.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.0,
-        "entry_price": 120.00,
-        "target_exit_price": 185.00,
-        "current_price": 145.20,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "17.0%",
-        "moat": "75%+ market share in North American residential home standby generators, nationwide dealer installation network.",
-        "invalidation_criteria": "Substantial reliability improvements in aging US electrical grid reducing consumer power outage anxiety.",
-        "latest_catalyst": "Extreme weather outage events and commercial data center backup power generator sales."
-    },
-    "BAM": {
-        "name": "Brookfield Asset Management Ltd.",
-        "sector": "Financials",
-        "industry": "Alternative Asset Management",
-        "description": "Leading global alternative asset manager with over $900 billion of assets under management across infrastructure, renewable power, real estate, and private equity.",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 8.8,
-        "entry_price": 38.00,
-        "target_exit_price": 60.00,
-        "current_price": 47.90,
-        "holding_period": "4 to 6 Years",
-        "target_roi": "18.0%",
-        "moat": "Long-term locked-in fee-bearing capital (>85% perpetual or 10+ year funds), pure-play asset-light structure with 90%+ dividend payout ratio.",
-        "invalidation_criteria": "Severe deceleration in institutional capital fundraising or performance fee clawbacks.",
-        "latest_catalyst": "Global AI data center infrastructure and clean power transition funding needs."
-    },
-    "CRSP": {
-        "name": "CRISPR Therapeutics AG",
-        "sector": "Health Care",
-        "industry": "Gene Editing Biotechnology",
-        "description": "Gene editing company focused on developing transformative gene-based medicines for serious human diseases using CRISPR/Cas9 technology.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.5,
-        "entry_price": 48.00,
-        "target_exit_price": 105.00,
-        "current_price": 54.20,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "25.0%",
-        "moat": "First-in-class FDA approval for CRISPR therapy (CASGEVY for sickle cell & beta thalassemia), strong balance sheet with >$1.9B cash.",
-        "invalidation_criteria": "Slow commercial ramp of CASGEVY treatment centers or severe off-target genomic safety events in clinical trials.",
-        "latest_catalyst": "Global CASGEVY commercial rollout and in vivo gene editing pipeline clinical readouts."
-    },
-    "BEAM": {
-        "name": "Beam Therapeutics Inc.",
-        "sector": "Health Care",
-        "industry": "Base Editing Biotechnology",
-        "description": "Biotechnology company pioneering precision genetic medicines through base editing technology without creating double-stranded DNA breaks.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.0,
-        "entry_price": 22.00,
-        "target_exit_price": 55.00,
-        "current_price": 26.50,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "26.0%",
-        "moat": "Proprietary base editing patent estate, in vivo liver targeting delivery platforms.",
-        "invalidation_criteria": "Clinical efficacy failures or inability to partner high-cost development programs.",
-        "latest_catalyst": "BEAM-101 and BEAM-302 clinical data updates."
-    },
-    "EDIT": {
-        "name": "Editas Medicine, Inc.",
-        "sector": "Health Care",
-        "industry": "Gene Editing Biotechnology",
-        "description": "Clinical stage genome editing company developing treatments using CRISPR gene editing systems including Cas12a.",
-        "thesis_status": "UNDER_REVIEW",
-        "conviction_score": 5.2,
-        "entry_price": 5.50,
-        "target_exit_price": 9.00,
-        "current_price": 3.80,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "12.0%",
-        "moat": "Cas12a IP portfolio.",
-        "invalidation_criteria": "Cash runway limitation and lack of commercial validation relative to CRISPR Therapeutics.",
-        "latest_catalyst": "Out-licensing deals and clinical pipeline prioritization."
-    },
-    "NTLA": {
-        "name": "Intellia Therapeutics, Inc.",
-        "sector": "Health Care",
-        "industry": "In Vivo Gene Editing",
-        "description": "Clinical-stage genome editing company developing curative therapies utilizing CRISPR/Cas9 systems focused on systemic in vivo therapies.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.4,
-        "entry_price": 18.00,
-        "target_exit_price": 48.00,
-        "current_price": 21.30,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "27.0%",
-        "moat": "Leadership in systemic in vivo LNP-delivered CRISPR therapeutics (ATTR amyloidosis and HAE programs).",
-        "invalidation_criteria": "Phase 3 clinical trial failure in NTLA-2001 ATTR program or severe off-target liver toxicity.",
-        "latest_catalyst": "Phase 3 MAGNITUDE trial patient enrollment completion and NTLA-2002 HAE regulatory filings."
-    },
-    "STOK": {
-        "name": "Stoke Therapeutics, Inc.",
-        "sector": "Health Care",
-        "industry": "RNA Splicing Medicines",
-        "description": "Biotechnology company pioneering antisense oligonucleotide (ASO) medicines to treat genetic diseases by restoring protein expression via TANGO technology.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.3,
-        "entry_price": 12.00,
-        "target_exit_price": 32.00,
-        "current_price": 15.60,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "28.0%",
-        "moat": "Proprietary TANGO platform targeting up-regulation of haploinsufficient proteins in genetic epilepsies (Dravet syndrome).",
-        "invalidation_criteria": "Failure of STK-001 Phase 3 study to demonstrate sustained seizure reduction and cognitive improvement.",
-        "latest_catalyst": "FDA alignment on Phase 3 registration study design for STK-001 in Dravet syndrome."
-    },
-    "TDOC": {
-        "name": "Teladoc Health, Inc.",
-        "sector": "Health Care",
-        "industry": "Telehealth & Virtual Care",
-        "description": "Virtual healthcare services provider offering telehealth, expert medical opinions, and chronic condition management (BetterHelp, Integrated Care).",
-        "thesis_status": "LIQUIDATION_FLAGGED",
-        "conviction_score": 3.8,
-        "entry_price": 18.00,
-        "target_exit_price": 12.00,
-        "current_price": 8.90,
-        "holding_period": "Exit on Monday",
-        "target_roi": "Negative (Tax Loss Harvesting)",
-        "moat": "None sustainable; commoditization of virtual telehealth visits and escalating customer acquisition costs in BetterHelp.",
-        "invalidation_criteria": "Thesis broken: ongoing goodwill impairments, negative organic growth, chronic condition cross-selling failure.",
-        "latest_catalyst": "CEO transition, goodwill impairments, and market share losses to employer health plan native offerings."
-    },
-    "ZM": {
-        "name": "Zoom Video Communications, Inc.",
-        "sector": "Information Technology",
-        "industry": "Enterprise Collaboration Software",
-        "description": "Communications technology platform providing unified communications, Zoom Workplace, AI Companion, and Contact Center.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.4,
-        "entry_price": 60.00,
-        "target_exit_price": 95.00,
-        "current_price": 68.20,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "15.5%",
-        "moat": "High user NPS, pristine balance sheet ($7.5B+ cash/investments with zero debt), Contact Center and Zoom Phone enterprise expansion.",
-        "invalidation_criteria": "Severe enterprise customer churn to Microsoft Teams bundle, failure to monetize Zoom Contact Center.",
-        "latest_catalyst": "Zoom AI Companion adoption and Zoom Contact Center enterprise wins."
-    },
-    "ENVX": {
-        "name": "Enovix Corporation",
-        "sector": "Industrials",
-        "industry": "Silicon-Anode Lithium-ion Batteries",
-        "description": "Designs and manufactures advanced silicon-anode lithium-ion battery cells for smartphones, IoT, wearable devices, and electric vehicles.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.1,
-        "entry_price": 8.50,
-        "target_exit_price": 22.00,
-        "current_price": 10.40,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "30.0%",
-        "moat": "100% active silicon battery architecture yielding 2x volumetric energy density, high-speed automated manufacturing lines (Fab2 Malaysia).",
-        "invalidation_criteria": "Manufacturing yield failure at Fab2 or inability to secure tier-1 smartphone OEM volume commercial contracts.",
-        "latest_catalyst": "Fab2 high-volume production qualification and leading smartphone OEM design wins."
-    },
-    "EOSE": {
-        "name": "Eos Energy Enterprises, Inc.",
-        "sector": "Industrials",
-        "industry": "Zinc-based Long Duration Energy Storage",
-        "description": "Designs and manufactures zinc-hybrid energy storage solutions for utility, commercial, and industrial long-duration applications.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 6.8,
-        "entry_price": 2.20,
-        "target_exit_price": 6.50,
-        "current_price": 2.85,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "35.0%",
-        "moat": "Non-flammable, 100% recyclable, 4-to-12 hour zinc battery chemistry utilizing abundant domestic raw materials.",
-        "invalidation_criteria": "DOE loan guarantee conditional closing failure or inability to lower manufacturing cost per kWh.",
-        "latest_catalyst": "DOE Title 17 loan facility milestones and Project AMARE manufacturing line automated output."
-    },
-    "GWH": {
-        "name": "ESS Tech, Inc.",
-        "sector": "Industrials",
-        "industry": "Iron Flow Long Duration Batteries",
-        "description": "Designs and manufactures environmentally sustainable iron flow batteries for commercial and utility-scale energy storage.",
-        "thesis_status": "UNDER_REVIEW",
-        "conviction_score": 5.8,
-        "entry_price": 0.80,
-        "target_exit_price": 2.20,
-        "current_price": 0.95,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "25.0%",
-        "moat": "Earth-abundant iron, salt, and water electrolyte chemistry offering 25-year design life without degradation.",
-        "invalidation_criteria": "Cash burn outstripping capital resources or failure to reach utility commercial acceptance.",
-        "latest_catalyst": "Strategic utility installations and European market partnerships."
-    },
-    "SLDP": {
-        "name": "Solid Power, Inc.",
-        "sector": "Consumer Discretionary",
-        "industry": "All-Solid-State EV Battery Cells",
-        "description": "Develops all-solid-state battery cells and sulfide-based solid electrolyte technology for electric vehicles and other applications.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 6.7,
-        "entry_price": 1.40,
-        "target_exit_price": 4.50,
-        "current_price": 1.75,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "32.0%",
-        "moat": "Electrolyte chemistry patent portfolio and tier-1 OEM joint development agreements (BMW, Ford, SK On).",
-        "invalidation_criteria": "OEM partners abandoning sulfide solid-state chemistry in favor of semi-solid or lithium-iron-phosphate.",
-        "latest_catalyst": "Electrolyte sampling to automotive partners and A-sample cell qualification testing."
-    },
-    "NRGV": {
-        "name": "Energy Vault Holdings, Inc.",
-        "sector": "Industrials",
-        "industry": "Grid-Scale Energy Storage & Software",
-        "description": "Develops sustainable grid-scale energy storage solutions including gravity-based systems, battery storage, and hybrid systems software.",
-        "thesis_status": "UNDER_REVIEW",
-        "conviction_score": 5.5,
-        "entry_price": 1.20,
-        "target_exit_price": 2.80,
-        "current_price": 1.42,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "20.0%",
-        "moat": "VaultOS energy management system software and gravity storage IP.",
-        "invalidation_criteria": "Ongoing project deployment delays and negative gross margins.",
-        "latest_catalyst": "Commissioning of China EVx gravity storage facilities."
-    },
-    "CSIQ": {
-        "name": "Canadian Solar Inc.",
-        "sector": "Information Technology",
-        "industry": "Solar Modules & Utility Battery Storage",
-        "description": "Designs, manufactures, and sells solar photovoltaic modules and provides utility-scale battery storage turnkey solutions (e-STORAGE).",
-        "thesis_status": "ACTIVE_LONG",
-        "conviction_score": 7.9,
-        "entry_price": 13.50,
-        "target_exit_price": 26.00,
-        "current_price": 15.80,
-        "holding_period": "2 to 4 Years",
-        "target_roi": "22.0%",
-        "moat": "Massive global utility battery storage backlog (>60 GWh pipeline via e-STORAGE), vertically integrated TOPCon cell manufacturing.",
-        "invalidation_criteria": "Severe anti-dumping tariff penalties without offset from US domestic manufacturing facilities.",
-        "latest_catalyst": "e-STORAGE utility battery storage revenue surge and Texas/Indiana solar cell module manufacturing ramp."
-    },
-    "BETA": {
-        "name": "Beta Technologies, Inc.",
-        "sector": "Industrials",
-        "industry": "Electric Aviation & eVTOL",
-        "description": "Pioneering electric aircraft (ALIA-250 CTOL and VTOL) and multimodal electric charging infrastructure for cargo, medical, and passenger mobility.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.6,
-        "entry_price": 14.00,
-        "target_exit_price": 32.00,
-        "current_price": 16.50,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "24.0%",
-        "moat": "FAA certification pathway for both CTOL (conventional takeoff) and VTOL aircraft, commercial contracts with UPS, United Therapeutics, and US Air Force.",
-        "invalidation_criteria": "FAA type certification delays exceeding 24 months or fatal in-flight battery thermal runaway.",
-        "latest_catalyst": "FAA CTOL certification flight tests and nationwide charging network installations."
-    },
-    "XYZ": {
-        "name": "Synthesized Sample Company",
-        "sector": "Information Technology",
-        "industry": "Applied AI Infrastructure",
-        "description": "Benchmark corporate profile utilized for system calibration and options modeling demonstrations.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.0,
-        "entry_price": 50.00,
-        "target_exit_price": 85.00,
-        "current_price": 58.00,
-        "holding_period": "2 to 3 Years",
-        "target_roi": "18.0%",
-        "moat": "Calibration baseline for DCF modeling and Black-Scholes strike evaluation.",
-        "invalidation_criteria": "Deviation from benchmark volatility parameters.",
-        "latest_catalyst": "Systemic benchmark calibration and backtesting review."
-    }
+import json
+import os
+import re
+
+# Load base metadata file if present
+meta_file = os.path.join(os.path.dirname(__file__), "data", "company_meta.json")
+company_meta = {}
+if os.path.exists(meta_file):
+    with open(meta_file, "r", encoding="utf-8") as f:
+        company_meta = json.load(f)
+
+# Load QQQ ETF holdings for name and weight references
+qqq_file = os.path.join(os.path.dirname(__file__), "data", "qqq_holdings.json")
+qqq_holdings_map = {}
+if os.path.exists(qqq_file):
+    with open(qqq_file, "r", encoding="utf-8") as f:
+        qqq_data = json.load(f)
+        for h in qqq_data.get("holdings", []):
+            t = h.get("ticker")
+            if t:
+                qqq_holdings_map[t] = h
+
+# Sector & Industry mapping heuristics for any remaining constituents
+SECTOR_MAP = {
+    # Semiconductors & Tech
+    "AMAT": ("Information Technology", "Semiconductor Equipment"),
+    "LRCX": ("Information Technology", "Semiconductor Equipment"),
+    "KLAC": ("Information Technology", "Semiconductor Process Control"),
+    "ASML": ("Information Technology", "Semiconductor Equipment"),
+    "ARM": ("Information Technology", "Semiconductor IP"),
+    "MRVL": ("Information Technology", "Data Infrastructure Semiconductors"),
+    "MPWR": ("Information Technology", "Power Management Semiconductors"),
+    "NXPI": ("Information Technology", "Automotive & Industrial Semiconductors"),
+    "MCHP": ("Information Technology", "Microcontrollers & Analog Semiconductors"),
+    "ON": ("Information Technology", "Power & Sensing Semiconductors"),
+    "GFS": ("Information Technology", "Semiconductor Foundry"),
+    "TXN": ("Information Technology", "Analog & Embedded Semiconductors"),
+    "QCOM": ("Information Technology", "Wireless Semiconductors & Licensing"),
+    "INTC": ("Information Technology", "Semiconductors & Foundry Services"),
+    "MU": ("Information Technology", "Memory Semiconductors & HBM"),
+    "ADI": ("Information Technology", "Analog & Mixed-Signal Semiconductors"),
+    "WDC": ("Information Technology", "Data Storage Technologies"),
+    "STX": ("Information Technology", "Data Storage Technologies"),
+    
+    # Software & Cloud
+    "PLTR": ("Information Technology", "Enterprise Software & AI Platforms"),
+    "PANW": ("Information Technology", "Cybersecurity Software"),
+    "CRWD": ("Information Technology", "Cybersecurity Software"),
+    "FTNT": ("Information Technology", "Cybersecurity & Unified SASE"),
+    "ZS": ("Information Technology", "Cloud Cybersecurity & Zero Trust"),
+    "DDOG": ("Information Technology", "Cloud Observability & Security"),
+    "WDAY": ("Information Technology", "Cloud Enterprise HCM & Financials"),
+    "INTU": ("Information Technology", "Application Software & FinTech"),
+    "CDNS": ("Information Technology", "Electronic Design Automation Software"),
+    "SNPS": ("Information Technology", "Electronic Design Automation Software"),
+    "ADSK": ("Information Technology", "Design & Engineering Software"),
+    "TEAM": ("Information Technology", "Team Collaboration Software"),
+    "APP": ("Information Technology", "Software & Mobile AdTech"),
+    "ROP": ("Information Technology", "Niche Vertical Software"),
+    "CTSH": ("Information Technology", "IT Consulting & Digital Services"),
+    "CDW": ("Information Technology", "IT Solutions & Technology Products"),
+    "MSTR": ("Information Technology", "Enterprise Analytics & Bitcoin Treasury"),
+    "SHOP": ("Information Technology", "E-Commerce Software & Infrastructure"),
+    
+    # Communication Services
+    "GOOGL": ("Communication Services", "Interactive Media & Services"),
+    "GOOG": ("Communication Services", "Interactive Media & Services"),
+    "META": ("Communication Services", "Interactive Media & Services"),
+    "NFLX": ("Communication Services", "Entertainment & Streaming"),
+    "TMUS": ("Communication Services", "Wireless Telecommunication"),
+    "CMCSA": ("Communication Services", "Broadband Cable & Media"),
+    "CHTR": ("Communication Services", "Broadband Cable & Mobile"),
+    "EA": ("Communication Services", "Interactive Gaming Software"),
+    "TTWO": ("Communication Services", "Interactive Entertainment Software"),
+    "WBD": ("Communication Services", "Entertainment & Media"),
+    "TTD": ("Communication Services", "Digital Advertising Marketplace"),
+    
+    # Consumer Discretionary
+    "AMZN": ("Consumer Discretionary", "E-Commerce & Cloud Infrastructure"),
+    "TSLA": ("Consumer Discretionary", "Automobile & Clean Energy"),
+    "BKNG": ("Consumer Discretionary", "Online Travel Agencies"),
+    "ABNB": ("Consumer Discretionary", "Travel & Lodging Platforms"),
+    "MELI": ("Consumer Discretionary", "E-Commerce & FinTech"),
+    "DASH": ("Consumer Discretionary", "Local Commerce & Food Delivery"),
+    "MAR": ("Consumer Discretionary", "Hotels & Lodging"),
+    "ORLY": ("Consumer Discretionary", "Automotive Aftermarket Retail"),
+    "ROST": ("Consumer Discretionary", "Apparel & Home Merchandise Retail"),
+    "LULU": ("Consumer Discretionary", "Apparel & Athletic Wear"),
+    "PDD": ("Consumer Discretionary", "E-Commerce & Digital Marketplace"),
+    
+    # Consumer Staples
+    "COST": ("Consumer Staples", "Consumer Staples Merchandise Retail"),
+    "PEP": ("Consumer Staples", "Packaged Foods & Beverages"),
+    "MDLZ": ("Consumer Staples", "Packaged Foods & Confectionery"),
+    "MNST": ("Consumer Staples", "Non-Alcoholic Beverages"),
+    "KDP": ("Consumer Staples", "Non-Alcoholic Beverages & Coffee"),
+    "KHC": ("Consumer Staples", "Packaged Foods"),
+    "CCEP": ("Consumer Staples", "Beverage Bottling & Distribution"),
+    
+    # Health Care & Biotech
+    "VRTX": ("Health Care", "Biotechnology"),
+    "REGN": ("Health Care", "Biopharmaceuticals"),
+    "GILD": ("Health Care", "Biopharmaceuticals"),
+    "AMGN": ("Health Care", "Biotechnology"),
+    "ISRG": ("Health Care", "Robotic Surgical Technologies"),
+    "IDXX": ("Health Care", "Veterinary Diagnostics & Software"),
+    "ALNY": ("Health Care", "RNAi Therapeutics"),
+    "DXCM": ("Health Care", "Continuous Glucose Monitoring (CGM)"),
+    "INSM": ("Health Care", "Biopharmaceuticals"),
+    "GEHC": ("Health Care", "Medical Imaging & Diagnostic Systems"),
+    "BIIB": ("Health Care", "Biotechnology & Neuroscience"),
+    "AZN": ("Health Care", "Pharmaceuticals & Oncology"),
+    
+    # Industrials
+    "HON": ("Industrials", "Industrial Conglomerate & Aerospace"),
+    "ADP": ("Industrials", "Human Capital Management Services"),
+    "PAYX": ("Industrials", "Payroll & HR Outsourcing"),
+    "CTAS": ("Industrials", "Corporate Uniforms & Facility Services"),
+    "AXON": ("Industrials", "Public Safety Technology & Software"),
+    "CPRT": ("Industrials", "Online Vehicle Salvage Auctions"),
+    "FAST": ("Industrials", "Industrial Distribution & Vending"),
+    "ODFL": ("Industrials", "Less-Than-Truckload (LTL) Freight"),
+    "CSX": ("Industrials", "Rail Transportation"),
+    "PCAR": ("Industrials", "Commercial Heavy-Duty Vehicles"),
+    "VRSK": ("Industrials", "Insurance Data & Risk Analytics"),
+    "FER": ("Industrials", "Infrastructure Concessions & Toll Roads"),
+    "TRI": ("Industrials", "Legal, Tax & Accounting Software"),
+    
+    # Utilities & Energy
+    "CEG": ("Utilities", "Clean Electric Power Generation"),
+    "AEP": ("Utilities", "Regulated Electric Utilities"),
+    "EXC": ("Utilities", "Regulated Electric & Gas Transmission"),
+    "XEL": ("Utilities", "Regulated Clean Energy Utility"),
+    "FANG": ("Energy", "Oil & Gas Exploration & Production"),
+    "BKR": ("Energy", "Energy Technology & Oilfield Services"),
+    
+    # Materials & Real Estate
+    "LIN": ("Materials", "Industrial Gases"),
+    "CSGP": ("Real Estate", "Real Estate Information & Marketplaces"),
+    "PYPL": ("Financials", "Digital Payments & FinTech")
 }
 
+# 1. Load SEC summary metrics
 sec_data_path = os.path.join("http", "sec-data.json")
-with open(sec_data_path, "r", encoding="utf-8") as f:
-    sec_summary = json.load(f)
+sec_summary = {}
+if os.path.exists(sec_data_path):
+    with open(sec_data_path, "r", encoding="utf-8") as f:
+        sec_summary = json.load(f)
 
+# 2. Iterate through all company files in http/data
 data_dir = os.path.join("http", "data")
 all_files = [f for f in os.listdir(data_dir) if f.endswith(".json") and f != "universe.json"]
 
@@ -672,33 +162,45 @@ universe = []
 for filename in sorted(all_files):
     sym = filename.replace(".json", "")
     filepath = os.path.join(data_dir, filename)
+    
     with open(filepath, "r", encoding="utf-8") as f:
         comp_data = json.load(f)
+        
+    filings = comp_data.get("filings", [])
+    latest_filing = filings[0] if filings else None
     
-    meta = company_meta.get(sym, {
-        "name": f"{sym} Corporation",
-        "sector": "Information Technology",
-        "industry": "Public Equity",
-        "description": f"Publicly listed company {sym} tracked in the investment universe.",
-        "thesis_status": "WATCHLIST_CANDIDATE",
-        "conviction_score": 7.0,
-        "entry_price": 100.0,
-        "target_exit_price": 150.0,
-        "current_price": 110.0,
-        "holding_period": "3 to 5 Years",
-        "target_roi": "15.0%",
-        "moat": "Tracked compounder in universe.",
-        "invalidation_criteria": "Deterioration in fundamental earnings.",
-        "latest_catalyst": "Upcoming earnings release and SEC filing review."
-    })
-    
+    # Resolve metadata
+    meta = company_meta.get(sym)
+    if not meta:
+        qqq_item = qqq_holdings_map.get(sym, {})
+        legal_name = qqq_item.get("name") or f"{sym} Corporation"
+        sector_tuple = SECTOR_MAP.get(sym, ("Information Technology", "Public Equity"))
+        
+        meta = {
+            "name": legal_name,
+            "sector": sector_tuple[0],
+            "industry": sector_tuple[1],
+            "description": f"Publicly listed company {sym} ({legal_name}) tracked in the US equity investment universe.",
+            "thesis_status": "WATCHLIST_CANDIDATE",
+            "conviction_score": 7.5,
+            "entry_price": 100.0,
+            "target_exit_price": 150.0,
+            "current_price": 115.0,
+            "holding_period": "3 to 5 Years",
+            "target_roi": "16.0%",
+            "moat": "Established industry participant with high switching costs and customer brand equity.",
+            "invalidation_criteria": "Sustained loss of market share or multi-quarter deterioration in operating cash flow margins.",
+            "latest_catalyst": "Upcoming earnings announcement and SEC periodic filing review."
+        }
+        
     sec_metrics = sec_summary.get(sym, {})
     shares = sec_metrics.get("shares_outstanding")
     ttm_rev = sec_metrics.get("ttm_revenue")
     
-    filings = comp_data.get("filings", [])
-    latest_filing = filings[0] if filings else None
-    
+    # Fallback to latest filing shares if missing in summary
+    if (not shares or shares == 0) and filings:
+        shares = filings[0].get("data", {}).get("shares_outstanding")
+        
     curr_price = meta.get("current_price", 100.0)
     market_cap = (shares * curr_price) if (shares and curr_price) else None
     
@@ -729,8 +231,9 @@ for filename in sorted(all_files):
         "filings": filings
     })
 
+# Save output universe.json
 out_universe_path = os.path.join("http", "data", "universe.json")
 with open(out_universe_path, "w", encoding="utf-8") as f:
     json.dump(universe, f, indent=2)
 
-print(f"Generated {out_universe_path} with {len(universe)} companies.")
+print(f"Generated {out_universe_path} with {len(universe)} public companies.")

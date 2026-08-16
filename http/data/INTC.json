@@ -1,0 +1,70 @@
+{
+  "symbol": "INTC",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=50863",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-24",
+      "period_start": "2025-12-28",
+      "period_end": "2026-06-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=50863",
+      "data": {
+        "shares_outstanding": 5026000000,
+        "revenue": 29705000000,
+        "balance_sheet": {
+          "total_assets": 202439000000,
+          "total_liabilities": 202439000000,
+          "total_shareholders_equity": 87542000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-24",
+      "period_start": "2025-12-28",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=50863",
+      "data": {
+        "shares_outstanding": 4995000000,
+        "revenue": 13577000000,
+        "balance_sheet": {
+          "total_assets": 205332000000,
+          "total_liabilities": 205332000000,
+          "total_shareholders_equity": 111394000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-23",
+      "period_start": "2024-12-29",
+      "period_end": "2025-12-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=50863",
+      "data": {
+        "shares_outstanding": 4770000000,
+        "revenue": 52853000000,
+        "balance_sheet": {
+          "total_assets": 211429000000,
+          "total_liabilities": 211429000000,
+          "total_shareholders_equity": 114281000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2024-12-29",
+      "period_end": "2025-09-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=50863",
+      "data": {
+        "shares_outstanding": 4377000000,
+        "revenue": 39179000000,
+        "balance_sheet": {
+          "total_assets": 204514000000,
+          "total_liabilities": 204514000000,
+          "total_shareholders_equity": 106376000000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "VRTX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=875320",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-04",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=875320",
+      "data": {
+        "shares_outstanding": 253805417,
+        "revenue": 6320800000,
+        "balance_sheet": {
+          "total_assets": 27423300000,
+          "total_liabilities": 7175400000,
+          "total_shareholders_equity": 20247900000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=875320",
+      "data": {
+        "shares_outstanding": 254034190,
+        "revenue": 2986900000,
+        "balance_sheet": {
+          "total_assets": 26484400000,
+          "total_liabilities": 7122500000,
+          "total_shareholders_equity": 19361900000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-13",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=875320",
+      "data": {
+        "shares_outstanding": 253718831,
+        "revenue": 12001300000,
+        "balance_sheet": {
+          "total_assets": 25643000000,
+          "total_liabilities": 6977200000,
+          "total_shareholders_equity": 18665800000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=875320",
+      "data": {
+        "shares_outstanding": 256390651,
+        "revenue": 8811300000,
+        "balance_sheet": {
+          "total_assets": 24862300000,
+          "total_liabilities": 7543500000,
+          "total_shareholders_equity": 17318800000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "ORLY",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=898173",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=898173",
+      "data": {
+        "shares_outstanding": 828715079,
+        "revenue": 9452552000,
+        "balance_sheet": {
+          "total_assets": 17389116000,
+          "total_liabilities": 17389116000,
+          "total_shareholders_equity": -1835725000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-08",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=898173",
+      "data": {
+        "shares_outstanding": 838487034,
+        "revenue": 4560539000,
+        "balance_sheet": {
+          "total_assets": 16937178000,
+          "total_liabilities": 16937178000,
+          "total_shareholders_equity": -1067055000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=898173",
+      "data": {
+        "shares_outstanding": 844104092,
+        "revenue": 17781992000,
+        "balance_sheet": {
+          "total_assets": 16538253000,
+          "total_liabilities": 16538253000,
+          "total_shareholders_equity": -763352000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-07",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=898173",
+      "data": {
+        "shares_outstanding": 848496680,
+        "revenue": 13367678000,
+        "balance_sheet": {
+          "total_assets": 16279627000,
+          "total_liabilities": 16279627000,
+          "total_shareholders_equity": -894676000
+        }
+      }
+    }
+  ]
+}

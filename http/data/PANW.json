@@ -1,0 +1,70 @@
+{
+  "symbol": "PANW",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1327567",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-06-03",
+      "period_start": "2025-08-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327567",
+      "data": {
+        "shares_outstanding": 816000000,
+        "revenue": 8070000000,
+        "balance_sheet": {
+          "total_assets": 46266000000,
+          "total_liabilities": 18598000000,
+          "total_shareholders_equity": 27668000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-08-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327567",
+      "data": {
+        "shares_outstanding": 697000000,
+        "revenue": 5068000000,
+        "balance_sheet": {
+          "total_assets": 24979000000,
+          "total_liabilities": 15586000000,
+          "total_shareholders_equity": 9393000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-20",
+      "period_start": "2025-08-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327567",
+      "data": {
+        "shares_outstanding": 668900000,
+        "revenue": 2474000000,
+        "balance_sheet": {
+          "total_assets": 23536000000,
+          "total_liabilities": 14871000000,
+          "total_shareholders_equity": 8665000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-08-29",
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327567",
+      "data": {
+        "shares_outstanding": 666800000,
+        "revenue": 9221500000,
+        "balance_sheet": {
+          "total_assets": 23576200000,
+          "total_liabilities": 15751800000,
+          "total_shareholders_equity": 7824400000
+        }
+      }
+    }
+  ]
+}

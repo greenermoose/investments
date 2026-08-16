@@ -4,13 +4,29 @@
   "filings": [
     {
       "type": "10-Q",
-      "filing_date": "2026-05-01",
-      "period_start": "2025-12-28",
-      "period_end": "2026-03-28",
-      "filing_url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019326000066/aapl-20260328.htm",
+      "filing_date": "2026-07-31",
+      "period_start": "2025-09-28",
+      "period_end": "2026-06-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
       "data": {
         "shares_outstanding": 14687356000,
-        "revenue": 111200000000,
+        "revenue": 364357000000,
+        "balance_sheet": {
+          "total_assets": 383266000000,
+          "total_liabilities": 275746000000,
+          "total_shareholders_equity": 107520000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_start": "2025-09-28",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
+      "data": {
+        "shares_outstanding": 14681140000,
+        "revenue": 254940000000,
         "balance_sheet": {
           "total_assets": 371082000000,
           "total_liabilities": 264591000000,
@@ -25,7 +41,7 @@
       "period_end": "2025-12-27",
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
       "data": {
-        "shares_outstanding": 14681140000,
+        "shares_outstanding": 14776353000,
         "revenue": 143756000000,
         "balance_sheet": {
           "total_assets": 379297000000,
@@ -39,46 +55,14 @@
       "filing_date": "2025-10-31",
       "period_start": "2024-09-29",
       "period_end": "2025-09-27",
-      "filing_url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019325000085/aapl-20250927.htm",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
       "data": {
-        "shares_outstanding": 14776353000,
+        "shares_outstanding": 14840390000,
         "revenue": 416161000000,
         "balance_sheet": {
           "total_assets": 359241000000,
           "total_liabilities": 285508000000,
           "total_shareholders_equity": 73733000000
-        }
-      }
-    },
-    {
-      "type": "8-K",
-      "filing_date": "2025-10-30",
-      "period_start": "2025-06-29",
-      "period_end": "2025-09-27",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
-      "data": {
-        "shares_outstanding": 14776353000,
-        "revenue": 102470000000,
-        "balance_sheet": {
-          "total_assets": 359241000000,
-          "total_liabilities": 285508000000,
-          "total_shareholders_equity": 73733000000
-        }
-      }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-01",
-      "period_start": "2025-03-30",
-      "period_end": "2025-06-28",
-      "filing_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm",
-      "data": {
-        "shares_outstanding": 14840390000,
-        "revenue": 94036000000,
-        "balance_sheet": {
-          "total_assets": 327319000000,
-          "total_liabilities": 265665000000,
-          "total_shareholders_equity": 61654000000
         }
       }
     }

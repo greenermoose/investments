@@ -82,6 +82,19 @@ For full-universe fundamental screening across all 4,000+ public companies:
 - Contents: A distinct JSON file for every CIK (`CIK0000000000.json`) containing every reported GAAP/IFRS concept (Revenues, Net Income, Operating Cash Flow, Capex, Long-Term Debt, Diluted Shares) reported across all historical 10-K and 10-Q filings.
 - Primary Advantage: Enables local, 100% offline, zero-cost fundamental screening and ratio calculation across the entire US public market without rate limits or commercial API fees.
 
+### 4. SEC EDGAR Form NPORT-P ETF Holdings Extraction
+
+To discover equity constituents and exact portfolio weightings of benchmark ETFs (e.g., Invesco QQQ Trust, SPDR SPY, iShares IWM):
+
+- Primary Source: SEC EDGAR Submissions API (`https://data.sec.gov/submissions/CIK{fund_cik}.json`) and raw Form NPORT-P XML payloads (`primary_doc.xml`).
+- Fund Identification:
+  - Invesco QQQ Trust, Series 1: CIK `0001067839`
+  - SPDR S&P 500 ETF Trust: CIK `0000888702`
+  - iShares Trust: CIK `0001100663`
+  - Vanguard Index Funds: CIK `0000036405`
+- Extraction Tooling: `scripts/fetch_etf_holdings.py` and `.agents/skills/etf-holdings/`.
+- Data Schema: Captures legal issuer name, CUSIP, ISIN, shares balance, fair USD market value, and exact portfolio weighting percentage.
+
 ## Investability Filtering Rules for US Public Equities
 
 When processing raw ticker lists (~10,000+ total symbols), we apply systematic filtering rules to isolate the approximately 4,000 active, liquid, investable US public operating companies:

@@ -1,0 +1,70 @@
+{
+  "symbol": "PAYX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=723531",
+  "filings": [
+    {
+      "type": "10-K",
+      "filing_date": "2026-07-17",
+      "period_start": "2025-06-01",
+      "period_end": "2026-05-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723531",
+      "data": {
+        "shares_outstanding": 358290881,
+        "revenue": 6512000000,
+        "balance_sheet": {
+          "total_assets": 16174500000,
+          "total_liabilities": 12439400000,
+          "total_shareholders_equity": 3735100000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-26",
+      "period_start": "2025-06-01",
+      "period_end": "2026-02-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723531",
+      "data": {
+        "shares_outstanding": 358290881,
+        "revenue": 4906500000,
+        "balance_sheet": {
+          "total_assets": 17511400000,
+          "total_liabilities": 13497800000,
+          "total_shareholders_equity": 4013600000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-22",
+      "period_start": "2025-06-01",
+      "period_end": "2025-11-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723531",
+      "data": {
+        "shares_outstanding": 358967450,
+        "revenue": 3097600000,
+        "balance_sheet": {
+          "total_assets": 16518900000,
+          "total_liabilities": 12638800000,
+          "total_shareholders_equity": 3880100000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-30",
+      "period_start": "2025-06-01",
+      "period_end": "2025-08-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723531",
+      "data": {
+        "shares_outstanding": 359894143,
+        "revenue": 1540000000,
+        "balance_sheet": {
+          "total_assets": 16663000000,
+          "total_liabilities": 12692400000,
+          "total_shareholders_equity": 3970600000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "PCAR",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-29",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
+      "data": {
+        "shares_outstanding": 526286229,
+        "revenue": 14323200000,
+        "balance_sheet": {
+          "total_assets": 43980100000,
+          "total_liabilities": 43980100000,
+          "total_shareholders_equity": 20321300000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-29",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
+      "data": {
+        "shares_outstanding": 525894443,
+        "revenue": 6776500000,
+        "balance_sheet": {
+          "total_assets": 43553500000,
+          "total_liabilities": 43553500000,
+          "total_shareholders_equity": 19756600000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
+      "data": {
+        "shares_outstanding": 525204359,
+        "revenue": 28444800000,
+        "balance_sheet": {
+          "total_assets": 44336200000,
+          "total_liabilities": 44336200000,
+          "total_shareholders_equity": 19264000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
+      "data": {
+        "shares_outstanding": 525103392,
+        "revenue": 21624000000,
+        "balance_sheet": {
+          "total_assets": 44201200000,
+          "total_liabilities": 44201200000,
+          "total_shareholders_equity": 19368600000
+        }
+      }
+    }
+  ]
+}

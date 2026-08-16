@@ -1,0 +1,70 @@
+{
+  "symbol": "SHOP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1594805",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1594805",
+      "data": {
+        "shares_outstanding": 1299266611,
+        "revenue": 6753000000,
+        "balance_sheet": {
+          "total_assets": 14470000000,
+          "total_liabilities": 14470000000,
+          "total_shareholders_equity": 12684000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1594805",
+      "data": {
+        "shares_outstanding": 1303357874,
+        "revenue": 3170000000,
+        "balance_sheet": {
+          "total_assets": 14121000000,
+          "total_liabilities": 14121000000,
+          "total_shareholders_equity": 12501000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-11",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1594805",
+      "data": {
+        "shares_outstanding": 1298955860,
+        "revenue": 11556000000,
+        "balance_sheet": {
+          "total_assets": 15189000000,
+          "total_liabilities": 15189000000,
+          "total_shareholders_equity": 13473000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1594805",
+      "data": {
+        "shares_outstanding": 1297764857,
+        "revenue": 7884000000,
+        "balance_sheet": {
+          "total_assets": 15039000000,
+          "total_liabilities": 15039000000,
+          "total_shareholders_equity": 12511000000
+        }
+      }
+    }
+  ]
+}

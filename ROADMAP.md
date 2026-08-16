@@ -65,12 +65,15 @@ gantt
   - Define granular data provenance schema (`context/schemas/data_provenance.json`) and agent runtime context signature.
   - Implement data verification and errata tracking protocol (`context/schemas/errata_schema.json`, `context/research/errata_log.md`).
   - Publish interactive web guide at `http/docs/sources.html`.
-- [ ] **3.2 Complete US Ticker Directory:** Generate and maintain a comprehensive list of all active stocks on NYSE, NASDAQ, and AMEX (~4,000–6,000 tickers).
-- [ ] **3.3 Free Trustworthy API Connectors & CLI Utilities:** Build and maintain lightweight deterministic scripts in `scripts/`:
-  - `scripts/fetch_sec.py` for SEC EDGAR XBRL company facts API.
-  - `yfinance` / Yahoo Finance connector (historical daily/weekly OHLCV, market cap, PE, beta).
-  - Federal Reserve Economic Data (FRED) connector for risk-free rates & macro context.
-- [ ] **3.4 Local SQLite / Parquet Cache:** Store weekly price summaries, moving averages (50-day, 200-day), 52-week ranges, and basic valuation multiples locally in `scripts/data/universe.db`.
+- [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ Benchmark):**
+  - Record agent skill in `.agents/skills/etf-holdings/SKILL.md` and CLI extractor in `scripts/fetch_etf_holdings.py` to parse Tier 1 Form NPORT-P filings (CIK `0001067839`).
+  - Expand universe catalog (`http/data/universe.json`) to 128 equities spanning all 101 QQQ constituents plus existing tracked compounders and watchlists.
+  - Verify live explorer rendering and sector filtering in `http/universe.html`.
+- [x] **3.3 SEC EDGAR XBRL Pipeline & CLI Utilities:**
+  - `scripts/fetch_sec.py` automated XBRL company facts extractor for US GAAP and IFRS filers.
+  - `scripts/build_sec_data.js` automated TTM revenue and shares aggregator.
+  - `scripts/build_universe_json.py` master catalog synthesis engine.
+- [ ] **3.4 Master US Market Directory Sync:** Expand sync across full NYSE, NASDAQ, and AMEX common stock listings (~4,000–6,000 tickers) into local SQLite / Parquet cache (`scripts/data/universe.db`).
 - [ ] **3.5 Universe Screening Agent:** Equip the screening agent with predefined query filters to surface high-conviction candidates within the 25 position limit.
 
 ## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator

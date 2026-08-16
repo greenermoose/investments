@@ -1,0 +1,70 @@
+{
+  "symbol": "AMAT",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-21",
+      "period_start": "2025-10-27",
+      "period_end": "2026-04-26",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
+      "data": {
+        "shares_outstanding": 793959430,
+        "revenue": 14922000000,
+        "balance_sheet": {
+          "total_assets": 40286000000,
+          "total_liabilities": 16377000000,
+          "total_shareholders_equity": 23909000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-19",
+      "period_start": "2025-10-27",
+      "period_end": "2026-01-25",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
+      "data": {
+        "shares_outstanding": 793609867,
+        "revenue": 7012000000,
+        "balance_sheet": {
+          "total_assets": 37644000000,
+          "total_liabilities": 15927000000,
+          "total_shareholders_equity": 21717000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-12",
+      "period_start": "2024-10-28",
+      "period_end": "2025-10-26",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
+      "data": {
+        "shares_outstanding": 796642427,
+        "revenue": 28368000000,
+        "balance_sheet": {
+          "total_assets": 36299000000,
+          "total_liabilities": 15884000000,
+          "total_shareholders_equity": 20415000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-21",
+      "period_start": "2024-10-28",
+      "period_end": "2025-07-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
+      "data": {
+        "shares_outstanding": 796642427,
+        "revenue": 21568000000,
+        "balance_sheet": {
+          "total_assets": 34211000000,
+          "total_liabilities": 14707000000,
+          "total_shareholders_equity": 19504000000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "BKNG",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-04",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
+      "data": {
+        "shares_outstanding": 774878436,
+        "revenue": 12884000000,
+        "balance_sheet": {
+          "total_assets": 29682000000,
+          "total_liabilities": 40465000000,
+          "total_shareholders_equity": -10783000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-28",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
+      "data": {
+        "shares_outstanding": 31673346,
+        "revenue": 5532000000,
+        "balance_sheet": {
+          "total_assets": 27720000000,
+          "total_liabilities": 36444000000,
+          "total_shareholders_equity": -8724000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
+      "data": {
+        "shares_outstanding": 32233815,
+        "revenue": 26917000000,
+        "balance_sheet": {
+          "total_assets": 29264000000,
+          "total_liabilities": 34842000000,
+          "total_shareholders_equity": -5578000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-28",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
+      "data": {
+        "shares_outstanding": 32409885,
+        "revenue": 20568000000,
+        "balance_sheet": {
+          "total_assets": 28752000000,
+          "total_liabilities": 33488000000,
+          "total_shareholders_equity": -4736000000
+        }
+      }
+    }
+  ]
+}

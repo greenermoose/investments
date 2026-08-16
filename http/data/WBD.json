@@ -1,0 +1,70 @@
+{
+  "symbol": "WBD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
+      "data": {
+        "shares_outstanding": 2507136702,
+        "revenue": 17610000000,
+        "balance_sheet": {
+          "total_assets": 97248000000,
+          "total_liabilities": 63253000000,
+          "total_shareholders_equity": 32838000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
+      "data": {
+        "shares_outstanding": 2479929515,
+        "revenue": 8893000000,
+        "balance_sheet": {
+          "total_assets": 97837000000,
+          "total_liabilities": 64130000000,
+          "total_shareholders_equity": 32578000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
+      "data": {
+        "shares_outstanding": 2477974509,
+        "revenue": 37296000000,
+        "balance_sheet": {
+          "total_assets": 100085000000,
+          "total_liabilities": 62919000000,
+          "total_shareholders_equity": 35919000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
+      "data": {
+        "shares_outstanding": 2475772282,
+        "revenue": 27836000000,
+        "balance_sheet": {
+          "total_assets": 100519000000,
+          "total_liabilities": 63214000000,
+          "total_shareholders_equity": 36018000000
+        }
+      }
+    }
+  ]
+}

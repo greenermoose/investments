@@ -1,0 +1,70 @@
+{
+  "symbol": "CHTR",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1091667",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-24",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1091667",
+      "data": {
+        "shares_outstanding": 122789924,
+        "revenue": 27123000000,
+        "balance_sheet": {
+          "total_assets": 155618000000,
+          "total_liabilities": 155618000000,
+          "total_shareholders_equity": 16952000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-24",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1091667",
+      "data": {
+        "shares_outstanding": 125488486,
+        "revenue": 13597000000,
+        "balance_sheet": {
+          "total_assets": 154644000000,
+          "total_liabilities": 154644000000,
+          "total_shareholders_equity": 16385000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1091667",
+      "data": {
+        "shares_outstanding": 135155309,
+        "revenue": 54774000000,
+        "balance_sheet": {
+          "total_assets": 154213000000,
+          "total_liabilities": 154213000000,
+          "total_shareholders_equity": 16054000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1091667",
+      "data": {
+        "shares_outstanding": 137825025,
+        "revenue": 41173000000,
+        "balance_sheet": {
+          "total_assets": 152850000000,
+          "total_liabilities": 152850000000,
+          "total_shareholders_equity": 15340000000
+        }
+      }
+    }
+  ]
+}

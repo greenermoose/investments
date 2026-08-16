@@ -1,7 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataDir = path.join(__dirname, '..', 'data');
+let dataDir = path.join(__dirname, '..', 'http', 'data');
+if (!fs.existsSync(dataDir)) {
+    dataDir = path.join(__dirname, '..', 'data');
+}
 const outputDir = path.join(__dirname, '..', 'http');
 const outputFile = path.join(outputDir, 'sec-data.json');
 

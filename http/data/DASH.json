@@ -1,0 +1,70 @@
+{
+  "symbol": "DASH",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1792789",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1792789",
+      "data": {
+        "shares_outstanding": 434924000,
+        "revenue": 8490000000,
+        "balance_sheet": {
+          "total_assets": 19561000000,
+          "total_liabilities": 9629000000,
+          "total_shareholders_equity": 9921000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1792789",
+      "data": {
+        "shares_outstanding": 435429000,
+        "revenue": 4036000000,
+        "balance_sheet": {
+          "total_assets": 19711000000,
+          "total_liabilities": 9501000000,
+          "total_shareholders_equity": 10198000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1792789",
+      "data": {
+        "shares_outstanding": 427043000,
+        "revenue": 13717000000,
+        "balance_sheet": {
+          "total_assets": 19659000000,
+          "total_liabilities": 9613000000,
+          "total_shareholders_equity": 10033000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1792789",
+      "data": {
+        "shares_outstanding": 425176000,
+        "revenue": 9762000000,
+        "balance_sheet": {
+          "total_assets": 17971000000,
+          "total_liabilities": 8463000000,
+          "total_shareholders_equity": 9495000000
+        }
+      }
+    }
+  ]
+}

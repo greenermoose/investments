@@ -1,0 +1,70 @@
+{
+  "symbol": "APP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1751008",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1751008",
+      "data": {
+        "shares_outstanding": 335291000,
+        "revenue": 3766135000,
+        "balance_sheet": {
+          "total_assets": 8269131000,
+          "total_liabilities": 5106115000,
+          "total_shareholders_equity": 3163016000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1751008",
+      "data": {
+        "shares_outstanding": 336294000,
+        "revenue": 1842449000,
+        "balance_sheet": {
+          "total_assets": 7707705000,
+          "total_liabilities": 5344222000,
+          "total_shareholders_equity": 2363483000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-19",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1751008",
+      "data": {
+        "shares_outstanding": 338313000,
+        "revenue": 5480717000,
+        "balance_sheet": {
+          "total_assets": 7259610000,
+          "total_liabilities": 5124939000,
+          "total_shareholders_equity": 2134671000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-05",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1751008",
+      "data": {
+        "shares_outstanding": 338533000,
+        "revenue": 3822773000,
+        "balance_sheet": {
+          "total_assets": 6343035000,
+          "total_liabilities": 4869115000,
+          "total_shareholders_equity": 1473920000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "CRWD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1535527",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-06-04",
+      "period_start": "2026-02-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1535527",
+      "data": {
+        "shares_outstanding": 252098440,
+        "revenue": 1385629000,
+        "balance_sheet": {
+          "total_assets": 11270100000,
+          "total_liabilities": 6594768000,
+          "total_shareholders_equity": 4633877000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-05",
+      "period_start": "2025-02-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1535527",
+      "data": {
+        "shares_outstanding": 252098440,
+        "revenue": 4812005000,
+        "balance_sheet": {
+          "total_assets": 11086684000,
+          "total_liabilities": 6614079000,
+          "total_shareholders_equity": 4428390000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-03",
+      "period_start": "2025-02-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1535527",
+      "data": {
+        "shares_outstanding": 250955140,
+        "revenue": 3506630000,
+        "balance_sheet": {
+          "total_assets": 9965347000,
+          "total_liabilities": 5906330000,
+          "total_shareholders_equity": 4016497000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-28",
+      "period_start": "2025-02-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1535527",
+      "data": {
+        "shares_outstanding": 249248174,
+        "revenue": 2272386000,
+        "balance_sheet": {
+          "total_assets": 9288859000,
+          "total_liabilities": 5494168000,
+          "total_shareholders_equity": 3756680000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "MU",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-06-25",
+      "period_start": "2025-08-29",
+      "period_end": "2026-05-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
+      "data": {
+        "shares_outstanding": 1127734051,
+        "revenue": 78959000000,
+        "balance_sheet": {
+          "total_assets": 134112000000,
+          "total_liabilities": 33388000000,
+          "total_shareholders_equity": 100724000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-19",
+      "period_start": "2025-08-29",
+      "period_end": "2026-02-26",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
+      "data": {
+        "shares_outstanding": 1125509261,
+        "revenue": 37503000000,
+        "balance_sheet": {
+          "total_assets": 101509000000,
+          "total_liabilities": 29050000000,
+          "total_shareholders_equity": 72459000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-18",
+      "period_start": "2025-08-29",
+      "period_end": "2025-11-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
+      "data": {
+        "shares_outstanding": 1122466035,
+        "revenue": 13643000000,
+        "balance_sheet": {
+          "total_assets": 85971000000,
+          "total_liabilities": 27165000000,
+          "total_shareholders_equity": 58806000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-10-03",
+      "period_start": "2024-08-30",
+      "period_end": "2025-08-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
+      "data": {
+        "shares_outstanding": 1119125101,
+        "revenue": 37378000000,
+        "balance_sheet": {
+          "total_assets": 82798000000,
+          "total_liabilities": 28633000000,
+          "total_shareholders_equity": 54165000000
+        }
+      }
+    }
+  ]
+}

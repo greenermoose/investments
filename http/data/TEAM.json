@@ -1,0 +1,70 @@
+{
+  "symbol": "TEAM",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
+  "filings": [
+    {
+      "type": "10-K",
+      "filing_date": "2026-08-14",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
+      "data": {
+        "shares_outstanding": 260163000,
+        "revenue": 6572308000,
+        "balance_sheet": {
+          "total_assets": 6103529000,
+          "total_liabilities": 5045087000,
+          "total_shareholders_equity": 1058442000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_start": "2025-07-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
+      "data": {
+        "shares_outstanding": 262606000,
+        "revenue": 4805839000,
+        "balance_sheet": {
+          "total_assets": 5650923000,
+          "total_liabilities": 4771895000,
+          "total_shareholders_equity": 879028000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-06",
+      "period_start": "2025-07-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
+      "data": {
+        "shares_outstanding": 263409000,
+        "revenue": 3018868000,
+        "balance_sheet": {
+          "total_assets": 6160381000,
+          "total_liabilities": 4569532000,
+          "total_shareholders_equity": 1590849000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-07-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
+      "data": {
+        "shares_outstanding": 262991000,
+        "revenue": 1432553000,
+        "balance_sheet": {
+          "total_assets": 5720500000,
+          "total_liabilities": 4341564000,
+          "total_shareholders_equity": 1378936000
+        }
+      }
+    }
+  ]
+}

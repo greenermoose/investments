@@ -1,0 +1,70 @@
+{
+  "symbol": "HON",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=773840",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=773840",
+      "data": {
+        "shares_outstanding": 316940010,
+        "revenue": 18862000000,
+        "balance_sheet": {
+          "total_assets": 77344000000,
+          "total_liabilities": 77344000000,
+          "total_shareholders_equity": 18537000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=773840",
+      "data": {
+        "shares_outstanding": 633653119,
+        "revenue": 9143000000,
+        "balance_sheet": {
+          "total_assets": 73988000000,
+          "total_liabilities": 73988000000,
+          "total_shareholders_equity": 13590000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-17",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=773840",
+      "data": {
+        "shares_outstanding": 634887208,
+        "revenue": 37442000000,
+        "balance_sheet": {
+          "total_assets": 73681000000,
+          "total_liabilities": 73681000000,
+          "total_shareholders_equity": 13904000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-23",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=773840",
+      "data": {
+        "shares_outstanding": 634887208,
+        "revenue": 30582000000,
+        "balance_sheet": {
+          "total_assets": 80917000000,
+          "total_liabilities": 80917000000,
+          "total_shareholders_equity": 16782000000
+        }
+      }
+    }
+  ]
+}

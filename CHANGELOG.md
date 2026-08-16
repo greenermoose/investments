@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.5.0] - 2026-08-16
+
+### Equity Universe Expansion via QQQ ETF Holdings & ETF Discovery Skill
+- **ETF Holdings Discovery Skill (`.agents/skills/etf-holdings/SKILL.md`):** Recorded an authoritative workflow and skill for AI agents to discover, extract, and normalize constituents from Tier 1 SEC EDGAR Form NPORT-P filings (e.g., Invesco QQQ Trust CIK `0001067839`), fund sponsor feeds, and exchange listings.
+- **ETF Holdings CLI Engine (`scripts/fetch_etf_holdings.py`):** Implemented a deterministic Python CLI tool querying SEC EDGAR submissions to parse raw portfolio XML, map CUSIPs/names to primary exchange tickers, filter non-equities, and export structured constituent manifests (`scripts/data/qqq_holdings.json`).
+- **Universe Expansion to 128 Equities:** Expanded the tracked public company universe from 41 to 128 equities by ingesting all 101 Invesco QQQ Trust constituents and merging them with existing tracked compounders and watchlists.
+- **Automated SEC EDGAR XBRL Pipeline (`scripts/fetch_sec.py`, `scripts/build_sec_data.js`):** Extended automated XBRL extraction across US GAAP and IFRS taxonomies, populating 511+ verified 10-K/10-Q/20-F filings, shares outstanding, balance sheet items, and TTM revenues.
+- **Master Universe Catalog (`scripts/build_universe_json.py`, `http/data/universe.json`):** Synthesized qualitative moat profiles, valuation metrics, and SEC metrics across all 128 equities into `http/data/universe.json`.
+- **Enhanced Public Web Explorer (`http/universe.html`):** Updated the live web interface with dynamic counter statistics (128 equities, 511+ filings indexed), real-time search, extended sector dropdown filters (Utilities, Energy, Materials, Real Estate), and SEC provenance deep-dive drawers.
+- **Authoritative Sources Catalog Updated (`context/sources/catalog.md`, `context/sources/investment_data_sources.md`):** Added Form NPORT-P and ETF discovery architectures to official data provenance documentation.
+
 ## [2.4.0] - 2026-08-16
 
 ### Plain-Text Weekly Trading Plan Standardization & Purge of Misleading Examples

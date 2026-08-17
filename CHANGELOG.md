@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.14.0] - 2026-08-17
+
+### Comprehensive Investment Strategy & Performance Mandate Architecture
+- **20-Year Compounding Mandate & Explicit Failure Standard:** Formalized the core performance hurdle of achieving an annualized return on investment of >= 20% over a 20-year horizon, with total annualized return < 20% after 20 years explicitly defined as a failure of the investment strategy.
+- **Active US Equities Selection vs. Passive Funds:** Formulated the deliberate active selection policy focusing on individual common stocks listed on US exchanges (NYSE, NASDAQ, AMEX) rather than buying and holding index or mutual funds.
+- **Empirical Multi-Year 20%+ Research Grounding:** Grounded all thesis models and trading strategies in extensive empirical research into credible investment methodologies demonstrated to achieve 20%+ returns across multiple historical market cycles.
+- **Dual Fundamental & Technical Entry/Exit Synthesis:** Integrated fundamental intrinsic valuation (13-quarter revenue path, Margin of Safety, ROIC > 15%, FCF conversion) with technical indicators (50/200-day SMAs, horizontal support/resistance floors, RSI exhaustion, volatility channels) to determine precise entry and exit prices.
+- **Derivatives Yield & Risk Mitigation Framework:** Detailed the systematic options overlay using Cash-Secured Puts (CSPs) for discounted accumulation and upfront yield, and Covered Calls (CCs) for yield harvesting and disciplined scaling out at valuation targets.
+- **Strict Risk Prohibitions:** Codified the strict prohibition against buying options (no long calls/puts or debit spreads), selling naked options, or using margin debt, with 100% collateralization enforced for all open options.
+- **AI Agent Directions & Skill Updates (`AGENTS.md`, `.agents/skills/investment-thesis/SKILL.md`, `context/strategy/`, `context/prompts/`):** Embedded the complete strategy mandate across agent rules, skill instructions, valuation guidelines, and deliberation prompts.
+- **Public Documentation Redesign (`http/docs/strategies.html`):** Redesigned the investment strategy documentation with structured sections, 20-year compounding math, fundamental/technical synthesis cards, risk boundary callouts, and constraint summary tables.
+
 ## [2.13.0] - 2026-08-17
 
 ### Institutional Investment Thesis Agent & 6-Agent Sub-Agent Architecture

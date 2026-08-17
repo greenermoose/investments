@@ -26,8 +26,18 @@
   2. Monday 9:30 AM ET Orders: Numbered list specifying Action, Symbol, Quantity, Order Type (Limit), Limit Price, Est. Cash Impact, and Rationale.
   3. Friday Expiration & Assignment Expectations: Explicit outcome expectations for open options expiring that week.
 
-## 5. Decisive Recommendations & Execution Cadence Rules
-- **Core Investment Objective**: All recommendations across all accounts must maximize the probability of achieving an annualized return of 20% or higher over a 20-year horizon.
+## 5. Investment Strategy Mandate & Execution Cadence Rules
+- **Core Investment Objective & 20-Year Hurdle**: All recommendations across all accounts must maximize the probability of achieving an annualized return on investment of 20% or higher over a 20-year horizon. We consider it a definitive failure of our investment strategy if total annualized return is less than 20% after 20 years of placing trades.
+- **Active US Public Equities Focus vs. Passive Indexing**: While acknowledging the academic and market literature regarding passive index funds and mutual funds, we do not buy and hold index funds or mutual funds. Instead, we actively buy and sell individual common stocks of public companies listed on US exchanges (NYSE, NASDAQ, AMEX) to generate alpha.
+- **Empirical Strategy Grounding**: Recommendations must be grounded in extensive empirical research identifying credible investment strategies that have demonstrated the ability to generate 20% or greater annualized returns across multiple years and market cycles.
+- **Dual Indicator Entry & Exit Determination**: Determination of entry prices and exit prices must synthesize both fundamental analysis (e.g. ROIC, FCF conversion, 13-quarter revenue trajectory, earnings power, margin of safety) and technical indicators (e.g. key support/resistance levels, trend structures, momentum, and volatility channels).
+- **Derivatives for Yield Enhancement & Downside Mitigation**: To increase overall return on investment and mitigate downside risk, the strategy systematically sells options:
+  - Cash-Secured Puts (CSPs): Sold on high-conviction BUY candidates at conservative valuation strikes to collect upfront premium and establish discounted entry basis.
+  - Covered Calls (CCs): Sold against existing 100-share blocks approaching fair value exit targets to harvest incremental yield and structure disciplined exits.
+- **Strict Derivatives Risk Controls & Prohibitions**:
+  - NO Option Buying: Never buy long call or long put options (no speculative premium outlays or debit spreads).
+  - NO Naked Option Selling: Never sell naked puts or naked calls.
+  - 100% Collateralization: Every put sold must be 100% secured by cash or SGOV cash proxy. Every call sold must be 100% secured by underlying shares.
 - **Portfolio Concentration & Position Guideline**: Aim for approximately 25 or fewer active equity holdings per portfolio. This is a soft target guideline rather than a rigid hard limit. Sizing is conviction-driven: with high enough conviction, a trading plan may recommend holding only a single position (up to 100% allocation), or expanding to 26+ holdings if high-conviction opportunities warrant it.
 - **Zero Ambiguity / No "You Decide" Policy**: Agents must never present open-ended choices, conditional "if you want" dilemmas, or multiple optional paths (e.g. "do X or Y depending on your risk tolerance"). Every position must have a single, definitive, high-conviction recommendation.
 - **Single-Session "Set-and-Forget" Cadence**: The human trader has a demanding full-time job and executes all recommendations in one single session (Monday 9:30 AM ET or as soon as they can access the account). There is zero mid-week monitoring or babysitting. Never output "mid-week watchlists" or instructions like "wait until price hits X mid-week and then place order Y."

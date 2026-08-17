@@ -8,7 +8,36 @@ description: Institutional-grade workflow, quantitative forecasting methodologie
 ## Overview
 This skill defines the complete operational protocol, quantitative models, narrative standards, and validation workflows for the **Investment Thesis Agent**.
 
-The Investment Thesis Agent synthesizes all gathered public information (Tier 1 SEC EDGAR 10-K/10-Q filings, earnings releases, consensus estimates, industry TAM trends, and economic moat dynamics) to construct forward-looking, institutional-grade investment thesis dossiers in `context/theses/<TICKER>.md` conforming to `context/schemas/investment_thesis_schema.json`.
+The Investment Thesis Agent synthesizes all gathered public information (Tier 1 SEC EDGAR 10-K/10-Q filings, earnings releases, consensus estimates, industry TAM trends, economic moat dynamics, and technical price structure) to construct forward-looking, institutional-grade investment thesis dossiers in `context/theses/<TICKER>.md` conforming to `context/schemas/investment_thesis_schema.json`.
+
+## Core Investment Strategy Mandate
+
+### 1. 20-Year Annualized Return Hurdle & Failure Standard
+- **Core Objective**: Manage downside risk while maximizing annualized return on investment (ROI).
+- **Target Hurdle**: Target a 20% or higher annualized return on investment over a 20-year horizon.
+- **Definitive Failure Criterion**: It is explicitly defined as a failure of our investment strategy if total annualized return is less than 20% after 20 years of placing trades. Every equity holding, options structure, and allocation decision must be justified by its probability of contributing to this multi-decade compounding goal.
+
+### 2. Active US Public Equities Selection vs. Passive Funds
+- **Deliberate Active Philosophy**: While recognizing the academic literature regarding passive index funds and mutual funds, the strategy deliberately does not buy and hold index funds or mutual funds.
+- **Asset Universe**: Focus exclusively on buying and selling shares of individual public companies that trade on US-listed exchanges (NYSE, NASDAQ, AMEX).
+- **Alpha Generation**: Deep fundamental analysis, forensic financial screening, and disciplined options overlay provide the operational edge to outperform broad market indexes.
+
+### 3. Empirical Grounding in Multi-Year 20%+ Strategies
+- **Evidence-Based Methodologies**: All thesis models, valuation frameworks, and trading mechanics are grounded in extensive empirical research into credible investment strategies that have demonstrated the ability to generate 20% or greater annualized returns across multiple years and market cycles.
+
+### 4. Dual Fundamental & Technical Indicator Synthesis for Entry & Exit
+- **Fundamental Indicators**: Determine intrinsic value, margin of safety, and business quality using ROIC (>15%), FCF conversion (>80%), balance sheet strength, 13-quarter bottom-up revenue projections, and 3-year valuation multiples.
+- **Technical Indicators**: Refine entry and exit price execution using key horizontal support/resistance levels, multi-timeframe moving averages (e.g. 50-day and 200-day SMAs), momentum indicators (RSI divergence), and volatility channels to optimize timing and avoid catching falling knives.
+- **Synthesis Rule**: A thesis is only actionable when fundamental undervaluation aligns with technical price structure confirming attractive risk-adjusted entry or exit zones.
+
+### 5. Derivatives for Return Enhancement & Risk Mitigation
+- **Permitted Strategies**: Systematically sell options (Cash-Secured Puts and Covered Calls) to harvest volatility premium, accelerate annualized ROI, and lower the effective purchase basis.
+  - **Cash-Secured Puts (CSPs)**: Sold on high-conviction BUY candidates at or below intrinsic fair value (0.15 to 0.30 Delta, 30-45 DTE).
+  - **Covered Calls (CCs)**: Sold against 100-share lots approaching valuation targets (0.20 to 0.35 Delta, 21-45 DTE) to monetize holding periods and scale out systematically.
+- **Strict Risk Prohibitions**:
+  - **NO Buying Options**: Never purchase long calls or long puts (no speculative premium outlays or debit spreads).
+  - **NO Naked Option Selling**: Never sell naked puts or naked calls.
+  - **100% Collateralization**: Every put sold must be 100% secured by cash or SGOV cash proxy. Every call sold must be 100% backed by underlying common stock.
 
 ## Core Responsibilities
 1. **Multi-Horizon Quantitative Forecasts**:
@@ -22,8 +51,6 @@ The Investment Thesis Agent synthesizes all gathered public information (Tier 1 
    - Assign an unambiguous rating of `BUY`, `HOLD`, `SELL`, or `AVOID` using mathematical return hurdles and margin-of-safety rules.
 4. **Data Provenance Compliance**:
    - Attribute all financial data points and claims according to the 5-tier source hierarchy defined in `context/sources/catalog.md`.
-
----
 
 ## Quantitative Modeling Methodologies
 
@@ -56,7 +83,7 @@ $$\text{Shares}_{t} = \text{Shares}_{t-1} \times \left(1 - \frac{\text{Annual FC
 
 ### 3. 4-Horizon Price Range & Target Modeling
 Price ranges are modeled across four horizons:
-- **13 Weeks (Near-Term)**: Reflects immediate earnings execution, sentiment, and current multiple range.
+- **13 Weeks (Near-Term)**: Reflects immediate earnings execution, sentiment, technical support/resistance, and current multiple range.
 - **52 Weeks (1 Year)**: Reflects NTM (Next Twelve Months) revenue execution and fundamental re-rating.
 - **104 Weeks (2 Years)**: Reflects mid-term compounding, market share gains, and earnings leverage.
 - **156 Weeks (3 Years)**: Reflects long-term intrinsic compounding toward target enterprise valuation.
@@ -69,8 +96,6 @@ $$\text{Base Target Price}_t = \frac{\text{TTM Revenue}_t \times \text{Target P/
 - **Expected CAGR**:
   $$\text{Annualized CAGR} = \left(\frac{\text{Base Target Price}_t}{\text{Current Price}}\right)^{\frac{52}{\text{Horizon Weeks}}} - 1$$
 
----
-
 ## Decisive Rating Logic
 
 The Investment Thesis Agent must assign exactly one rating:
@@ -81,8 +106,6 @@ The Investment Thesis Agent must assign exactly one rating:
 | **HOLD** | $10.0\% - 19.9\%$ | Adequate margin of safety | Thesis intact, compounding at steady rate, solid balance sheet | Maintain position / Harvest income via Covered Calls (0.20-0.30 Delta) |
 | **SELL** | $< 10.0\%$ | Negative margin of safety (overvalued) | Multiple compression imminent, decelerating revenue, or better opportunities | Liquidate position / Roll covered calls aggressively into ITM |
 | **AVOID** | Unfavorable risk/reward or $< 0\%$ | High downside skew | Chronic cash burn, excessive dilution (>3%/yr), structural moat erosion | Do not enter / Zero portfolio allocation |
-
----
 
 ## Dual Narrative Authoring Standard
 
@@ -101,8 +124,6 @@ Must address:
 - **Margin Profile & Operating Leverage**: Explain how gross margins and operating margins justify the forward multiple (e.g., higher SaaS mix expanding margins).
 - **Multiple Expansion/Compression Drivers**: Justify why the multiple will expand, remain stable, or compress over the 3-year horizon.
 - **Terminal Valuation Sanity Check**: Compare implied terminal P/E and FCF yield at year 3 against the risk-free rate + equity risk premium.
-
----
 
 ## Canonical Dossier Markdown Layout
 
@@ -173,8 +194,6 @@ Every dossier in `context/theses/<TICKER>.md` must use the following standard la
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | ... | TIER_1_PRIMARY_REGULATORY | ... | deterministic_script | YYYY-MM-DD | VERIFIED_PRIMARY |
 ```
-
----
 
 ## Validation Workflow
 

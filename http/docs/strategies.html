@@ -32,63 +32,172 @@
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>Investment Strategy & Constraints</h1>
-      <p class="docs-lead">Core portfolio principles, risk parameters, and boundary rules enforced during every weekly run.</p>
+      <h1>Investment Strategy &amp; Principles</h1>
+      <p class="docs-lead">Comprehensive framework for risk-managed alpha generation, multi-decade compounding, and disciplined options execution.</p>
     </div>
 
-    <h2>Non-Negotiable Portfolio Constraints</h2>
-    
+    <h2>1. Strategic Mandate &amp; 20-Year Compounding Objective</h2>
+    <p>The overarching mandate of our investment strategy is to aggressively manage downside risk while maximizing our annualized return on investment (ROI). All portfolio models, stock selection criteria, and options structures are designed around a clear, non-negotiable quantitative performance target:</p>
+
+    <div class="callout">
+      <div class="callout-title">Core Performance Target &amp; Failure Standard</div>
+      <p><strong>Target:</strong> An annualized return on investment of <strong>20% or higher</strong> over a <strong>20-year horizon</strong>.</p>
+      <p><strong>Failure Criterion:</strong> We will consider it a <strong>failure of our investment strategy</strong> if our total annualized return is less than 20% after 20 years of placing trades.</p>
+    </div>
+
+    <p>A 20% annualized return over 20 years represents extraordinary compounding power. At a 20% Compound Annual Growth Rate (CAGR), initial invested capital doubles approximately every 3.8 years, growing by a factor of <strong>38.3x</strong> over two decades (turning $100,000 into ~$3.83 million), compared to ~6.7x for a standard 10% broad market baseline.</p>
+
+    <h2>2. Active US Equities vs. Passive Index &amp; Mutual Funds</h2>
+    <p>We are fully aware of the academic and financial literature regarding passive index funds and mutual funds (e.g. Modern Portfolio Theory, Efficient Market Hypothesis, and low-cost index investing). We understand the merits of passive investing for general market participants. However, <strong>we are not buying and holding index funds or mutual funds</strong>.</p>
+
+    <p>Instead, our strategy is deliberately active and focused on individual security selection:</p>
+    <ul>
+      <li><strong>Individual Public Equities:</strong> We actively buy and sell shares of individual public companies listed exclusively on US exchanges (NYSE, NASDAQ, AMEX).</li>
+      <li><strong>Selective Concentration over Dilution:</strong> Broad market index funds hold hundreds or thousands of companies, including unprofitable, highly levered, or structurally declining businesses that dilute long-term portfolio returns. By rigorously filtering for elite business models, we seek concentrated exposure only to high-return assets.</li>
+      <li><strong>Forensic Quality Standards:</strong> We focus exclusively on businesses with durable economic moats, high Returns on Invested Capital (ROIC > 15%), strong Free Cash Flow (FCF) conversion, healthy balance sheets, and secular tailwinds.</li>
+      <li><strong>Tactical Asymmetry:</strong> Individual equity ownership enables us to selectively purchase shares at deep discounts (Margin of Safety) and overlay options strategies that are unavailable on broad index products.</li>
+    </ul>
+
+    <h2>3. Empirical Grounding in Proven 20%+ Return Strategies</h2>
+    <p>Our strategy does not rely on speculative market timing or unproven fads. We conduct extensive empirical research to identify credible investment strategies and institutional methodologies that have demonstrated the ability to generate <strong>20% or greater annualized returns across multiple years and market cycles</strong>.</p>
+
+    <p>These empirical foundations incorporate:</p>
+    <ul>
+      <li><strong>Concentrated Compounder Investing:</strong> Historical outperformance achieved by holding concentrated stakes in dominant enterprise franchises with high reinvestment rates and durable pricing power.</li>
+      <li><strong>Margin of Safety Value Discipline:</strong> Systematic entry only when price offers a quantifiable discount to conservative intrinsic value, protecting against permanent capital impairment.</li>
+      <li><strong>Structural Volatility Harvesting:</strong> Systematic capture of option implied volatility premium over realized volatility (the Volatility Risk Premium).</li>
+    </ul>
+
+    <h2>4. Entry &amp; Exit Pricing: Fundamental + Technical Synthesis</h2>
+    <p>Determining when to enter a position, what price to pay, and when to exit requires synthesizing both fundamental valuation models and technical price action indicators. Neither discipline is used in isolation.</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>Fundamental Indicators (Valuation Baseline)</h4>
+        <p>Establishes <em>what</em> to buy and <em>fair intrinsic value</em>:</p>
+        <ul>
+          <li><strong>13-Quarter Revenue Forecast:</strong> Bottom-up segment-level revenue modeling across 3 full years ($Q_0$ to $Q_{12}$).</li>
+          <li><strong>6-Horizon Share Counts:</strong> Projections of diluted shares accounting for FCF buybacks vs SBC dilution.</li>
+          <li><strong>Margin of Safety:</strong> Requiring a 15% to 25% discount to calculated base target valuation before initiating BUY status.</li>
+          <li><strong>Quality Hurdles:</strong> ROIC > 15%, FCF/Net Income > 80%, Net Debt/EBITDA &lt; 2.5x.</li>
+        </ul>
+      </div>
+
+      <div class="docs-card">
+        <h4>Technical Indicators (Execution &amp; Timing)</h4>
+        <p>Refines <em>when</em> to execute and <em>at what limit price</em>:</p>
+        <ul>
+          <li><strong>Moving Average Trend Alignment:</strong> 50-day and 200-day Simple Moving Averages (SMAs) to confirm structural trend regime and avoid catching falling knives.</li>
+          <li><strong>Support &amp; Resistance Zones:</strong> Key multi-month horizontal consolidation floors to set put strikes and limit buys; prior breakout peaks for call strikes and limit exits.</li>
+          <li><strong>Momentum &amp; Exhaustion (RSI):</strong> 14-period RSI to identify oversold accumulation zones (RSI &lt; 35) and overbought distribution zones (RSI &gt; 70).</li>
+          <li><strong>Volatility Bands (Bollinger / ATR):</strong> Measures expected price variance to optimize limit order pricing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>5. Derivatives Strategy: Yield Enhancement &amp; Downside Mitigation</h2>
+    <p>To accelerate our return on investment toward our 20%+ target while simultaneously mitigating downside risk, we systematically sell options across two primary structures:</p>
+
+    <h3>A. Cash-Secured Puts (CSPs) - Accumulation &amp; Yield Generation</h3>
+    <ul>
+      <li><strong>Mechanism:</strong> We sell Out-of-the-Money (OTM) put options on high-conviction BUY candidates with strike prices set at or below our fundamental Margin of Safety and technical support levels.</li>
+      <li><strong>Target Parameters:</strong> 0.15 to 0.30 Delta (80% to 85% probability of expiring OTM) and 30 to 45 Days to Expiration (DTE).</li>
+      <li><strong>Double Advantage:</strong>
+        <ul>
+          <li>If the option expires OTM, we retain 100% of the upfront premium, generating an Annualized Return on Collateral (AROC) of 12% to 20%+.</li>
+          <li>If the stock is assigned, our net purchase basis equals the strike price minus the collected premium, securing shares at an even deeper discount to fair value.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>B. Covered Calls (CCs) - Yield Harvesting &amp; Disciplined Exits</h3>
+    <ul>
+      <li><strong>Mechanism:</strong> We sell OTM call options against existing 100-share equity lots as the stock appreciates toward our calculated base or bull target valuation.</li>
+      <li><strong>Target Parameters:</strong> 0.20 to 0.35 Delta and 21 to 45 DTE.</li>
+      <li><strong>Double Advantage:</strong>
+        <ul>
+          <li>Harvests continuous cash flow (extrinsic time value) while holding high-conviction compounders.</li>
+          <li>Provides an automated, disciplined mechanism to scale out of positions at favorable target prices without emotional hesitation.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>6. Non-Negotiable Risk Prohibitions &amp; Boundary Rules</h2>
+    <p>Risk management is paramount. To eliminate catastrophic ruin risk and preserve capital for 20-year compounding, the following rules are strictly enforced across all portfolios:</p>
+
+    <div class="callout warning">
+      <div class="callout-title">Strict Derivatives Prohibitions</div>
+      <ul>
+        <li><strong>NO Buying Options:</strong> We never buy long calls, long puts, or speculative debit spreads. Long options suffer from perpetual time decay (Theta drag) and carry a high statistical probability of total loss.</li>
+        <li><strong>NO Naked Options:</strong> We never sell naked puts or naked calls under any circumstances. Naked options create unbounded liability and margin call risk.</li>
+        <li><strong>100% Collateralization:</strong> Every Cash-Secured Put MUST have 100% cash or <code>SGOV</code> backing the full assignment liability (Strike x 100 x Contracts). Every Covered Call MUST be backed by 100 actual shares owned.</li>
+        <li><strong>NO Margin Debt:</strong> Borrowing on margin is strictly prohibited.</li>
+      </ul>
+    </div>
+
+    <h2>7. Summary of Portfolio Constraints</h2>
+
     <table>
       <thead>
         <tr>
-          <th>Constraint</th>
-          <th>Specification</th>
-          <th>Rationale</th>
+          <th>Constraint Area</th>
+          <th>Rule &amp; Specification</th>
+          <th>Strategic Purpose</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td><strong>Performance Hurdle</strong></td>
+          <td>&ge; 20.0% annualized ROI over 20 years (&lt; 20% is strategy failure).</td>
+          <td>Maintains uncompromising focus on institutional-grade compounding.</td>
+        </tr>
+        <tr>
           <td><strong>Asset Universe</strong></td>
-          <td>US exchange-listed common stocks only (NYSE, NASDAQ, AMEX).</td>
-          <td>Ensures institutional liquidity, high reporting transparency (SEC EDGAR), and deep options chains.</td>
+          <td>US exchange-listed common stocks (NYSE, NASDAQ, AMEX).</td>
+          <td>High regulatory reporting transparency (SEC EDGAR), deep liquidity, and liquid options chains.</td>
+        </tr>
+        <tr>
+          <td><strong>Funds Policy</strong></td>
+          <td>NO passive index funds or mutual funds.</td>
+          <td>Eliminates index dilution and focuses capital on elite high-ROIC businesses with options overlay.</td>
         </tr>
         <tr>
           <td><strong>Cash Proxy</strong></td>
-          <td>Unallocated cash held in <code>SGOV</code> (0-3 Month US Treasury ETF).</td>
-          <td>Generates steady risk-free yield on collateral while maintaining near-cash liquidity for option assignments.</td>
+          <td>Unallocated collateral held in <code>SGOV</code> (0-3 Month US Treasury ETF).</td>
+          <td>Earns risk-free Treasury yield on cash backing puts while preserving instantaneous liquidity.</td>
         </tr>
         <tr>
           <td><strong>Permitted Derivatives</strong></td>
           <td>Cash-Secured Puts (CSPs) and Covered Calls (CCs) only.</td>
-          <td>Strictly eliminates ruin risk. No margin borrowing, naked options, or debit spreads.</td>
+          <td>Generates steady income, lowers cost basis, and structures systematic exits without debt.</td>
+        </tr>
+        <tr>
+          <td><strong>Forbidden Derivatives</strong></td>
+          <td>NO option buying (long calls/puts), NO naked options, NO debit spreads.</td>
+          <td>Eliminates time decay drag, speculative loss of premium, and infinite downside liability.</td>
         </tr>
         <tr>
           <td><strong>Position Concentration</strong></td>
-          <td>Aim for ~25 or fewer active equity positions.</td>
-          <td>Flexible concentration guideline: high conviction allows from 1 single 100% position to 26+ holdings.</td>
+          <td>Soft target guideline of ~25 or fewer active equity positions.</td>
+          <td>Conviction-driven sizing: allows 1 single position (up to 100% allocation) to 26+ holdings if warranted.</td>
         </tr>
         <tr>
           <td><strong>Execution Mode</strong></td>
-          <td>Weekly cadence, limit orders only for Monday market open (9:30 AM ET).</td>
-          <td>Eliminates emotional intraday trading and ensures structured execution.</td>
+          <td>Single-session Monday 9:30 AM ET set-and-forget limit orders.</td>
+          <td>Eliminates intraday emotional trading; allows full-time professional focus during market hours.</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Core Investment Philosophy</h2>
-    <p>The system operates at the intersection of high-quality value investing and disciplined derivatives income generation:</p>
-    
+    <h2>8. Execution Cadence: Single-Session "Set-and-Forget"</h2>
+    <p>Our operational model is built specifically for individuals with demanding full-time responsibilities:</p>
     <ul>
-      <li><strong>Acquire High-Quality Moats at a Discount:</strong> Sell Cash-Secured Puts on wonderful companies at strike prices matching conservative Margin of Safety valuations.</li>
-      <li><strong>Monetize Volatility:</strong> Harvest option premium over the 30-45 DTE window where time decay (Theta) accelerates most rapidly.</li>
-      <li><strong>Systematic Covered Call Exits:</strong> When a stock approaches its fair value target, write Covered Calls on 100-share blocks to collect premium while scaling out systematically.</li>
-      <li><strong>Active Invalidation Discipline:</strong> Hold positions with high conviction, but exit decisively when fundamental thesis criteria are violated.</li>
+      <li><strong>Single-Session Execution:</strong> All order recommendations for the week are formulated over the weekend and entered in one sitting at Monday 9:30 AM ET market open (or as soon as the trader logs in).</li>
+      <li><strong>Zero Mid-Week Babysitting:</strong> There is zero intraday monitoring, mid-week order chasing, or manual intervention required.</li>
+      <li><strong>Execution-Time Contingencies:</strong> Where market open price movement might alter optimal order parameters, plans provide deterministic execution-time branching (e.g., "If ticker &ge; $X at order entry, submit Limit Order A; if &lt; $X, submit Limit Order B instead").</li>
+      <li><strong>Automated Expiration &amp; Settlement:</strong> Expiring Friday options settle automatically with the broker at 4:00 PM ET. Over the weekend, a new brokerage snapshot updates the portfolio state for the next deliberative cycle.</li>
     </ul>
-
-    <div class="callout warning">
-      <div class="callout-title">Derivatives Safety Rule</div>
-      <p>Every Cash-Secured Put MUST have 100% cash or SGOV backing the full assignment liability (Strike x 100 x Contracts). Margin borrowing is strictly prohibited.</p>
-    </div>
   </main>
 </body>
 </html>
+

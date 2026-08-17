@@ -229,6 +229,53 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Reset all filters to neutral and activate the All chip
+  function resetAllFilters() {
+    Object.keys(chipFilters).forEach(key => {
+      chipFilters[key] = 'neutral';
+    });
+    document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
+      btn.setAttribute('data-state', 'neutral');
+    });
+    const allBtn = document.getElementById('chip-all-btn');
+    if (allBtn) allBtn.classList.add('active');
+    renderCurrentView();
+  }
+
+  // Apply a single positive filter (clearing all other status and index filters)
+  function applyExclusiveFilter(activeKey) {
+    Object.keys(chipFilters).forEach(key => {
+      chipFilters[key] = (key === activeKey) ? 'true' : 'neutral';
+    });
+    document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
+      const filterKey = btn.getAttribute('data-filter');
+      btn.setAttribute('data-state', chipFilters[filterKey] || 'neutral');
+    });
+    updateAllChipState();
+    renderCurrentView();
+  }
+
+  // Stat-box summary cards as quick-filter shortcuts
+  const cardFilterActions = [
+    { id: 'stat-card-all', action: () => resetAllFilters() },
+    { id: 'stat-card-buy', action: () => applyExclusiveFilter('BUY') },
+    { id: 'stat-card-hold', action: () => applyExclusiveFilter('HOLD') },
+    { id: 'stat-card-index', action: () => applyExclusiveFilter('INDEX_MEMBER') }
+  ];
+
+  cardFilterActions.forEach(({ id, action }) => {
+    const cardEl = document.getElementById(id);
+    if (cardEl) {
+      cardEl.addEventListener('click', action);
+      cardEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          action();
+        }
+      });
+    }
+  });
+
   // Filter chips: cycle state on click: neutral -> true -> false -> neutral
   document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -255,16 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // All button: clears active filters and shows all companies
   const allBtn = document.getElementById('chip-all-btn');
   if (allBtn) {
-    allBtn.addEventListener('click', () => {
-      Object.keys(chipFilters).forEach(key => {
-        chipFilters[key] = 'neutral';
-      });
-      document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
-        btn.setAttribute('data-state', 'neutral');
-      });
-      allBtn.classList.add('active');
-      renderCurrentView();
-    });
+    allBtn.addEventListener('click', resetAllFilters);
   }
 
   // View mode switcher

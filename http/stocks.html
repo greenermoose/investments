@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css?v=5" />
 </head>
+
 <body>
   <nav class="docs-sidebar">
     <a href="index.html" class="docs-brand">
@@ -33,70 +35,69 @@
   <main class="docs-main">
     <div class="docs-header">
       <h1>Public Equities Intelligence &amp; Live Market Pricing</h1>
-      <p class="docs-lead">Explore the 144 US public equities tracked by the agentic investment system with verified market prices, daily trading volumes, technical indicators, grounded valuation targets, and audited SEC EDGAR filings.</p>
+      <p class="docs-lead">Explore the 144 US public equities tracked by the agentic investment system with verified
+        market prices, daily trading volumes, technical indicators, grounded valuation targets, and audited SEC EDGAR
+        filings.</p>
     </div>
 
     <div class="stats-ribbon">
-      <div class="stat-box">
-        <div class="stat-label">Universe Equities</div>
+      <div class="stat-box" id="stat-card-all" role="button" tabindex="0" title="Filter by All Equities">
+        <div class="stat-label">Equity Universe</div>
         <div class="stat-value" id="stat-total-companies">144</div>
-        <div class="stat-sub">US Exchange-Listed</div>
+        <div class="stat-sub">US Exchange-Listed Stocks</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-label">Buy Compounders</div>
+      <div class="stat-box" id="stat-card-buy" role="button" tabindex="0" title="Filter by Buy Companies">
+        <div class="stat-label">Buy Companies</div>
         <div class="stat-value" id="stat-buy-count" style="color: #10b981;">51</div>
-        <div class="stat-sub">Capital Appreciation Target</div>
+        <div class="stat-sub">Add to Portfolios</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-label">Hold &amp; CC Yield</div>
+      <div class="stat-box" id="stat-card-hold" role="button" tabindex="0" title="Filter by Hold Companies">
+        <div class="stat-label">Hold Companies</div>
         <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">51</div>
-        <div class="stat-sub">Covered Call Compounding</div>
+        <div class="stat-sub">Keep in Portfolios</div>
       </div>
-      <div class="stat-box">
+      <div class="stat-box" id="stat-card-index" role="button" tabindex="0" title="Filter by Index Members">
         <div class="stat-label">Index Members</div>
         <div class="stat-value" id="stat-index-count" style="color: #818cf8;">127</div>
         <div class="stat-sub">QQQ &bull; DJIA &bull; S&amp;P 500</div>
       </div>
     </div>
 
-    <div class="callout tip">
-      <div class="callout-title">Authoritative Ingestion &amp; Mathematically Grounded Targets</div>
-      <p>Share prices and trading volumes are continuously verified via exchange market feeds (Tier 2 authority). Benchmark Entry Prices and Target Exit Prices are strictly grounded in actual market prices, 20-day technical support/resistance bands, and empirical 20%+ annualized CAGR compounding models rather than speculative estimates. Click any equity to inspect technical indicators, historical candlestick series, and SEC XBRL filings.</p>
-    </div>
-
     <!-- Filter Controls & Search -->
     <div class="controls-bar">
       <div class="search-wrapper">
-        <input 
-          type="text" 
-          id="search-input" 
-          class="search-input" 
-          placeholder="Search by symbol, company name, moat, or catalyst (e.g. AAPL, NVIDIA, CUDA)..." 
-        />
+        <input type="text" id="search-input" class="search-input"
+          placeholder="Search by symbol, company name, moat, or catalyst (e.g. AAPL, NVIDIA, CUDA)..." />
       </div>
 
       <div class="filter-chips" id="status-filters">
-        <button class="chip-btn chip-all-btn active" id="chip-all-btn" title="Show all companies (clears active filters)">
+        <button class="chip-btn chip-all-btn active" id="chip-all-btn"
+          title="Show all companies (clears active filters)">
           <span class="chip-indicator"></span>
           <span class="chip-label">All</span>
         </button>
-        <button class="chip-btn" data-filter="BUY" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+        <button class="chip-btn" data-filter="BUY" data-state="neutral"
+          title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
           <span class="chip-indicator"></span>
           <span class="chip-label">Buy</span>
         </button>
-        <button class="chip-btn" data-filter="HOLD" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+        <button class="chip-btn" data-filter="HOLD" data-state="neutral"
+          title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
           <span class="chip-indicator"></span>
           <span class="chip-label">Hold</span>
         </button>
-        <button class="chip-btn" data-filter="SELL" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+        <button class="chip-btn" data-filter="SELL" data-state="neutral"
+          title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
           <span class="chip-indicator"></span>
           <span class="chip-label">Sell</span>
         </button>
-        <button class="chip-btn" data-filter="AVOID" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+        <button class="chip-btn" data-filter="AVOID" data-state="neutral"
+          title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
           <span class="chip-indicator"></span>
           <span class="chip-label">Avoid</span>
         </button>
-        <button class="chip-btn" data-filter="INDEX_MEMBER" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+        <button class="chip-btn" data-filter="INDEX_MEMBER" data-state="neutral"
+          title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
           <span class="chip-indicator"></span>
           <span class="chip-label">Index Member</span>
         </button>
@@ -104,12 +105,15 @@
     </div>
 
     <!-- View & Sorting Toolbar -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
-      <div id="results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Showing 144 of 144 public equities</div>
-      
+    <div
+      style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div id="results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Showing 144 of 144 public
+        equities</div>
+
       <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
         <!-- Sector Selector -->
-        <select id="sector-select" class="search-input" style="padding: 6px 12px; font-size: 0.84rem; min-width: 170px; width: auto;">
+        <select id="sector-select" class="search-input"
+          style="padding: 6px 12px; font-size: 0.84rem; min-width: 170px; width: auto;">
           <option value="ALL">All Sectors</option>
           <option value="Information Technology">Information Technology</option>
           <option value="Communication Services">Communication Services</option>
@@ -125,7 +129,8 @@
         </select>
 
         <!-- Sorting Selector -->
-        <select id="sort-select" class="search-input" style="padding: 6px 12px; font-size: 0.84rem; min-width: 175px; width: auto;">
+        <select id="sort-select" class="search-input"
+          style="padding: 6px 12px; font-size: 0.84rem; min-width: 175px; width: auto;">
           <option value="conviction-desc">Sort: Conviction (High)</option>
           <option value="symbol-asc">Sort: Symbol (A-Z)</option>
           <option value="price-desc">Sort: Market Price (High)</option>
@@ -183,10 +188,13 @@
           <div class="modal-title-group">
             <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;">
               <h3 id="modal-symbol-title" style="margin: 0; color: #00d4ff; font-size: 1.4rem;">AAPL</h3>
-              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple Inc.</span>
-              <span id="modal-live-price-header" style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-left: 8px;"></span>
+              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple
+                Inc.</span>
+              <span id="modal-live-price-header"
+                style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-left: 8px;"></span>
             </div>
-            <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">Information Technology &bull; Consumer Electronics & Software</div>
+            <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">
+              Information Technology &bull; Consumer Electronics & Software</div>
           </div>
           <button id="modal-close" class="modal-close-btn" title="Close modal">&times;</button>
         </div>
@@ -201,7 +209,8 @@
         <div class="modal-body">
           <!-- Tab 1: Overview & Thesis -->
           <div id="tab-overview" class="modal-tab-content">
-            <div class="company-metrics-grid" style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+            <div class="company-metrics-grid"
+              style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
               <div class="metric-item">
                 <span class="metric-label">Thesis Status</span>
                 <span class="metric-val" id="modal-status-badge">BUY</span>
@@ -228,68 +237,90 @@
               </div>
             </div>
 
-            <div style="background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; border-left: 3px solid #10b981;">
-              <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">Price Target Methodology &amp; Mathematical Grounding</div>
+            <div
+              style="background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; border-left: 3px solid #10b981;">
+              <div
+                style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">
+                Price Target Methodology &amp; Mathematical Grounding</div>
               <div id="modal-target-methodology" style="font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
-                Target Exit Price is derived from the core 20.0% annualized CAGR compounding model over the expected holding period, anchored directly to current verified market closing price.
+                Target Exit Price is derived from the core 20.0% annualized CAGR compounding model over the expected
+                holding period, anchored directly to current verified market closing price.
               </div>
             </div>
 
             <!-- Return Engine Parameter Breakdown Card -->
-            <div id="modal-return-engine-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-                <div style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">Return Engine Execution &amp; Return Breakdown</div>
-                <span id="modal-engine-strategy-badge" class="badge-status" style="font-size: 0.76rem; padding: 2px 8px;">LIMIT_BUY &rarr; LIMIT_SELL</span>
+            <div id="modal-return-engine-card"
+              style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <div
+                  style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">
+                  Return Engine Execution &amp; Return Breakdown</div>
+                <span id="modal-engine-strategy-badge" class="badge-status"
+                  style="font-size: 0.76rem; padding: 2px 8px;">LIMIT_BUY &rarr; LIMIT_SELL</span>
               </div>
-              
-              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 8px;">
+
+              <div class="company-metrics-grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 8px;">
                 <div class="metric-item">
                   <span class="metric-label">Purchase Strategy</span>
-                  <span class="metric-val" id="modal-engine-entry-strat" style="font-size: 0.88rem; color: #ffffff;">Limit Buy Order</span>
+                  <span class="metric-val" id="modal-engine-entry-strat"
+                    style="font-size: 0.88rem; color: #ffffff;">Limit Buy Order</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Sale Strategy</span>
-                  <span class="metric-val" id="modal-engine-exit-strat" style="font-size: 0.88rem; color: #ffffff;">Limit Sell Order</span>
+                  <span class="metric-val" id="modal-engine-exit-strat"
+                    style="font-size: 0.88rem; color: #ffffff;">Limit Sell Order</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Entry Date</span>
-                  <span class="metric-val" id="modal-engine-entry-date" style="font-size: 0.88rem; color: #e2e8f0;">2026-08-17</span>
+                  <span class="metric-val" id="modal-engine-entry-date"
+                    style="font-size: 0.88rem; color: #e2e8f0;">2026-08-17</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Target Exit Date</span>
-                  <span class="metric-val" id="modal-engine-exit-date" style="font-size: 0.88rem; color: #e2e8f0;">2029-08-16</span>
+                  <span class="metric-val" id="modal-engine-exit-date"
+                    style="font-size: 0.88rem; color: #e2e8f0;">2029-08-16</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">CSP Put Premium ($/sh)</span>
-                  <span class="metric-val" id="modal-engine-csp-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                  <span class="metric-val" id="modal-engine-csp-proceeds"
+                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Covered Call Harvest ($/sh)</span>
-                  <span class="metric-val" id="modal-engine-cc-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                  <span class="metric-val" id="modal-engine-cc-proceeds"
+                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Initial Net Outlay ($/sh)</span>
-                  <span class="metric-val" id="modal-engine-net-outlay" style="font-size: 0.88rem; color: #ffffff;">$0.00</span>
+                  <span class="metric-val" id="modal-engine-net-outlay"
+                    style="font-size: 0.88rem; color: #ffffff;">$0.00</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Total Terminal Inflows</span>
-                  <span class="metric-val" id="modal-engine-total-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                  <span class="metric-val" id="modal-engine-total-proceeds"
+                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Capital Appreciation</span>
-                  <span class="metric-val" id="modal-engine-cap-gain" style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                  <span class="metric-val" id="modal-engine-cap-gain"
+                    style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Options Cash Yield</span>
-                  <span class="metric-val" id="modal-engine-opt-yield" style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                  <span class="metric-val" id="modal-engine-opt-yield"
+                    style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Total Unannualized ROI</span>
-                  <span class="metric-val" id="modal-engine-total-roi" style="font-size: 0.88rem; color: #10b981;">+0.0%</span>
+                  <span class="metric-val" id="modal-engine-total-roi"
+                    style="font-size: 0.88rem; color: #10b981;">+0.0%</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Compound Annualized ROI</span>
-                  <span class="metric-val" id="modal-engine-cagr" style="font-size: 0.92rem; font-weight: 700; color: #00d4ff;">20.0% Ann.</span>
+                  <span class="metric-val" id="modal-engine-cagr"
+                    style="font-size: 0.92rem; font-weight: 700; color: #00d4ff;">20.0% Ann.</span>
                 </div>
               </div>
             </div>
@@ -307,7 +338,8 @@
               <p id="modal-catalyst" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
             </div>
 
-            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)</h4>
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)
+            </h4>
             <div class="callout warning" style="margin: 8px 0 16px 0;">
               <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
             </div>
@@ -317,10 +349,12 @@
           <div id="tab-technicals" class="modal-tab-content" style="display: none;">
             <h4 style="margin: 0 0 10px 0; color: #ffffff;">Technical Trend &amp; Volume Analysis</h4>
             <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
-              Multi-day moving averages, swing support/resistance bands, and volume breakout ratios computed from verified exchange time-series.
+              Multi-day moving averages, swing support/resistance bands, and volume breakout ratios computed from
+              verified exchange time-series.
             </p>
 
-            <div class="company-metrics-grid" style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+            <div class="company-metrics-grid"
+              style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
               <div class="metric-item">
                 <span class="metric-label">20-Day SMA</span>
                 <span class="metric-val" id="modal-sma-20" style="color: #00d4ff;">-</span>
@@ -377,10 +411,12 @@
 
           <!-- Tab 3: SEC Provenance & Primary Source Filings -->
           <div id="tab-sec" class="modal-tab-content" style="display: none;">
-            <div class="d-flex justify-between align-center" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div class="d-flex justify-between align-center"
+              style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
               <div>
                 <h4 style="margin: 0 0 4px 0; color: #ffffff;">Audited SEC EDGAR Regulatory Records</h4>
-                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Direct accession links to verified filings submitted to the US Securities and Exchange Commission.</p>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Direct accession links to
+                  verified filings submitted to the US Securities and Exchange Commission.</p>
               </div>
               <a id="modal-sec-browse-btn" href="#" target="_blank" rel="noopener noreferrer" class="link-btn">
                 Browse SEC EDGAR Directory &rarr;
@@ -407,37 +443,48 @@
 
             <div class="callout important" style="margin-top: 20px;">
               <div class="callout-title">XBRL Data Provenance &amp; Verification</div>
-              <p>Financial facts are extracted directly from company XBRL interactive data instances filed with the SEC. If discrepancies occur, our ingestion agent audits the raw accession HTML document and records reconciliations in the errata log.</p>
+              <p>Financial facts are extracted directly from company XBRL interactive data instances filed with the SEC.
+                If discrepancies occur, our ingestion agent audits the raw accession HTML document and records
+                reconciliations in the errata log.</p>
             </div>
           </div>
 
           <!-- Tab 4: Options Strategy & Execution Limits -->
           <div id="tab-strategy" class="modal-tab-content" style="display: none;">
             <!-- Active Company Options Thesis Card -->
-            <div id="modal-tab-strategy-specific" style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
-              <div style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px;">Active Position Derivatives Roadmap &amp; Harvest Schedule</div>
+            <div id="modal-tab-strategy-specific"
+              style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+              <div
+                style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px;">
+                Active Position Derivatives Roadmap &amp; Harvest Schedule</div>
               <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
                 <div class="metric-item">
                   <span class="metric-label">Execution Strategy</span>
-                  <span class="metric-val" id="modal-tab4-strategy-name" style="font-size: 0.88rem; color: #ffffff;">-</span>
+                  <span class="metric-val" id="modal-tab4-strategy-name"
+                    style="font-size: 0.88rem; color: #ffffff;">-</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Entry Action</span>
-                  <span class="metric-val" id="modal-tab4-entry-action" style="font-size: 0.88rem; color: #10b981;">-</span>
+                  <span class="metric-val" id="modal-tab4-entry-action"
+                    style="font-size: 0.88rem; color: #10b981;">-</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Target Exit / Cap</span>
-                  <span class="metric-val" id="modal-tab4-exit-action" style="font-size: 0.88rem; color: #00d4ff;">-</span>
+                  <span class="metric-val" id="modal-tab4-exit-action"
+                    style="font-size: 0.88rem; color: #00d4ff;">-</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Options Cash Flow</span>
-                  <span class="metric-val" id="modal-tab4-options-harvest" style="font-size: 0.88rem; color: #10b981;">-</span>
+                  <span class="metric-val" id="modal-tab4-options-harvest"
+                    style="font-size: 0.88rem; color: #10b981;">-</span>
                 </div>
               </div>
             </div>
 
             <h4 style="margin: 0 0 8px 0; color: #ffffff;">Options Modeling &amp; Limit Order Guidelines</h4>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Under our weekly deliberation protocol, the Derivatives Specialist models Black-Scholes pricing to establish optimal entry and income harvest levels.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Under our weekly
+              deliberation protocol, the Derivatives Specialist models Black-Scholes pricing to establish optimal entry
+              and income harvest levels.</p>
 
             <table>
               <thead>
@@ -453,26 +500,30 @@
                   <td><strong>Cash-Secured Put (CSP)</strong></td>
                   <td><code>0.15 - 0.25 &Delta;</code></td>
                   <td>30 - 45 DTE</td>
-                  <td>Sell OTM puts on pullbacks at modeled limit prices to acquire shares at attractive discounts or collect annualized premium yields &gt;15%.</td>
+                  <td>Sell OTM puts on pullbacks at modeled limit prices to acquire shares at attractive discounts or
+                    collect annualized premium yields &gt;15%.</td>
                 </tr>
                 <tr>
                   <td><strong>Covered Call (CC)</strong></td>
                   <td><code>0.20 - 0.30 &Delta;</code></td>
                   <td>30 - 45 DTE</td>
-                  <td>Sell OTM calls on 100-share lots at strikes strictly above benchmark entry price to generate cash yield without sacrificing long-term compounding upside.</td>
+                  <td>Sell OTM calls on 100-share lots at strikes strictly above benchmark entry price to generate cash
+                    yield without sacrificing long-term compounding upside.</td>
                 </tr>
                 <tr>
                   <td><strong>Defensive Credit Roll</strong></td>
                   <td>Net Credit Only</td>
                   <td>Next Monthly Cycle</td>
-                  <td>Roll in-the-money puts down and out or tested calls up and out strictly for positive cash credit to reduce position risk.</td>
+                  <td>Roll in-the-money puts down and out or tested calls up and out strictly for positive cash credit
+                    to reduce position risk.</td>
                 </tr>
               </tbody>
             </table>
 
             <div class="callout" style="margin-top: 20px;">
               <div class="callout-title">Portfolio Isolation &amp; SGOV Cash Collateral</div>
-              <p>All unallocated cash securing put options is held in <strong>SGOV</strong> (iShares 0-3 Month Treasury Bond ETF), earning risk-free yield while maintaining complete liquidity for Monday execution.</p>
+              <p>All unallocated cash securing put options is held in <strong>SGOV</strong> (iShares 0-3 Month Treasury
+                Bond ETF), earning risk-free yield while maintaining complete liquidity for Monday execution.</p>
             </div>
           </div>
         </div>
@@ -482,4 +533,5 @@
 
   <script type="module" src="js/stocks.js"></script>
 </body>
+
 </html>

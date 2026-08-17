@@ -84,9 +84,11 @@ When evaluating factual data, financial metrics, or valuation variables, the sys
 - **Authority Rating:** Authoritative benchmark for cash proxy allocation and dry powder collateral yields.
 
 ### Yahoo Finance & Aggregated Market Feeds
-- **Provider:** Yahoo Finance / S&P Global Market Intelligence.
-- **Domain:** Daily and weekly OHLCV pricing, 50-day / 200-day moving averages, 52-week high/low ranges, market capitalization, trailing/forward P/E ratios, and beta.
-- **Authority Rating:** High-reliability secondary data source. Useful for universe-level screening, but fundamental accounting figures must be cross-verified against SEC EDGAR Tier 1 data when establishing investment theses.
+- **Provider:** Yahoo Finance / Direct Equity Exchanges.
+- **Domain:** Daily and multi-month OHLCV candlestick series, trading volume, 20-day / 50-day moving averages, 52-week high/low ranges, volume ratios, day changes, and technical support/resistance bands.
+- **Authority Rating:** High-reliability secondary data source (Tier 2). Essential for real-time and end-of-day price discovery, volume analysis, technical trend modeling, and market capitalization computation.
+- **Implementation & Schema:** Full ingestion protocol, schema specifications, and mathematical grounding models are documented in [Market Price Research & Technical Analysis Methodology](file:///c:/Users/fyhor/Documents/GitHub/investments/context/sources/market_price_methodology.md) and [market_prices_schema.json](file:///c:/Users/fyhor/Documents/GitHub/investments/context/schemas/market_prices_schema.json).
+
 
 ## Tier 3: Quantitative Literature & Empirical Benchmark Studies
 

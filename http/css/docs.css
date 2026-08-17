@@ -910,3 +910,76 @@ pre code {
   background: rgba(0, 212, 255, 0.04);
 }
 
+/* Market Price & Technical Analysis Styles */
+.price-change-positive {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.price-change-negative {
+  color: #f43f5e;
+  font-weight: 600;
+}
+
+.price-change-neutral {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.volume-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.76rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.volume-tag.breakout {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.range-52w-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 6px 0;
+}
+
+.range-52w-track {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  position: relative;
+}
+
+.range-52w-fill {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #10b981);
+  border-radius: 2px;
+}
+
+.range-52w-marker {
+  position: absolute;
+  top: -3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px #00d4ff;
+  transform: translateX(-50%);
+}
+
+.range-52w-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+

@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MarketPricesAndTechnicalAnalysis",
+  "description": "Schema for storing current market share prices, daily trading volumes, historical OHLCV candlestick series, and technical analysis indicators supporting price prediction and grounded valuation.",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Z0-9.-]+$": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "description": "Ticker symbol of the public equity."
+        },
+        "name": {
+          "type": "string",
+          "description": "Official company name."
+        },
+        "currency": {
+          "type": "string",
+          "description": "Currency of quote, typically USD."
+        },
+        "exchange": {
+          "type": "string",
+          "description": "Primary trading exchange (e.g., NMS, NYQ)."
+        },
+        "current_price": {
+          "type": "number",
+          "description": "Most recent verified market closing or regular trading price."
+        },
+        "previous_close": {
+          "type": "number",
+          "description": "Official closing price of the prior regular trading session."
+        },
+        "day_change": {
+          "type": "number",
+          "description": "Net price change in dollars relative to previous close."
+        },
+        "day_change_percent": {
+          "type": "number",
+          "description": "Percentage price change relative to previous close."
+        },
+        "day_open": {
+          "type": ["number", "null"],
+          "description": "Opening price of the latest trading session."
+        },
+        "day_high": {
+          "type": ["number", "null"],
+          "description": "Intraday high price of the latest trading session."
+        },
+        "day_low": {
+          "type": ["number", "null"],
+          "description": "Intraday low price of the latest trading session."
+        },
+        "day_volume": {
+          "type": ["integer", "null"],
+          "description": "Total share volume traded during the latest regular session."
+        },
+        "average_volume_20d": {
+          "type": ["integer", "null"],
+          "description": "20-day rolling average daily share trading volume."
+        },
+        "volume_ratio": {
+          "type": ["number", "null"],
+          "description": "Ratio of latest day volume to 20-day average volume (identifies accumulation/distribution breakouts)."
+        },
+        "fifty_two_week_high": {
+          "type": ["number", "null"],
+          "description": "Highest traded price in the preceding 52-week trailing window."
+        },
+        "fifty_two_week_low": {
+          "type": ["number", "null"],
+          "description": "Lowest traded price in the preceding 52-week trailing window."
+        },
+        "sma_20": {
+          "type": ["number", "null"],
+          "description": "20-day Simple Moving Average (short-term trend & mean reversion benchmark)."
+        },
+        "sma_50": {
+          "type": ["number", "null"],
+          "description": "50-day Simple Moving Average (intermediate institutional support/resistance level)."
+        },
+        "technical_support_20d": {
+          "type": ["number", "null"],
+          "description": "Estimated short-term support level based on recent 20-day swing lows."
+        },
+        "technical_resistance_20d": {
+          "type": ["number", "null"],
+          "description": "Estimated short-term resistance level based on recent 20-day swing highs."
+        },
+        "historical_candles_30d": {
+          "type": "array",
+          "description": "Chronological array of daily OHLCV candlestick records for charting and technical modeling.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "Trading date in YYYY-MM-DD format."
+              },
+              "open": {
+                "type": "number",
+                "description": "Session opening price."
+              },
+              "high": {
+                "type": "number",
+                "description": "Session high price."
+              },
+              "low": {
+                "type": "number",
+                "description": "Session low price."
+              },
+              "close": {
+                "type": "number",
+                "description": "Session closing price."
+              },
+              "volume": {
+                "type": "integer",
+                "description": "Session trading volume in shares."
+              }
+            },
+            "required": ["date", "open", "high", "low", "close", "volume"]
+          }
+        },
+        "as_of_timestamp": {
+          "type": "string",
+          "description": "ISO 8601 timestamp of data ingestion."
+        },
+        "provenance_tier": {
+          "type": "string",
+          "enum": ["TIER_1_PRIMARY_EXCHANGE", "TIER_2_FINANCIAL_AGGREGATOR"],
+          "description": "Data provenance classification tier."
+        },
+        "provenance_source": {
+          "type": "string",
+          "description": "Authoritative feed or API endpoint name."
+        }
+      },
+      "required": [
+        "symbol",
+        "current_price",
+        "previous_close",
+        "day_change",
+        "day_change_percent",
+        "as_of_timestamp",
+        "provenance_tier",
+        "provenance_source"
+      ]
+    }
+  }
+}

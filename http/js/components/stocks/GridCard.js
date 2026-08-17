@@ -1,12 +1,25 @@
 /**
  * GridCard Component
- * Renders individual equity cards for the responsive grid layout.
- * Shows Symbol, Benchmark Entry to Target Exit range, Recommendation status chip,
- * 52-week price range bar, 2x2 financial metrics (Target ROI, TTM Revenue, EV, Shares Out),
- * index membership badges, and inspection trigger.
+ * 
+ * STRICT DESIGN CONSTRAINT - LOCKED METRICS MATRIX:
+ * The 2x2 financial metrics grid on every GridCard is permanently locked down:
+ * +----------------------------------+----------------------------------+
+ * | ROI Prediction                   | Shares Out. (B)                  |
+ * | (Single % Annualized ROI, e.g. 20%) | (Shares in Billions, e.g. 0.595) |
+ * +----------------------------------+----------------------------------+
+ * | TTM Revenue (B)                  | Enterprise Value (B)             |
+ * | (Revenue in Billions, e.g. $32.67)| (EV in Billions, e.g. $120.5)    |
+ * +----------------------------------+----------------------------------+
+ * 
+ * Target ROI MUST show single annualized percentage only (never both annualized and total).
+ * Target ROI is grounded in the deterministic Return Engine parameterized by the Investment
+ * Thesis Agent from synthesized Equity Research and Memory Agent context.
+ * 
+ * Do NOT alter, redesign, or swap these 4 metric slots.
  */
 
 import {
+  formatTargetRoi,
   formatRevenueInBillions,
   formatEVInBillions,
   formatSharesB,
@@ -30,14 +43,11 @@ export function createGridCard(company, onSelect) {
   const targetExit = company.target_exit_price || currentPrice;
   const range52wHtml = render52WeekBar(company.fifty_two_week_low, company.fifty_two_week_high, currentPrice);
 
+  const targetRoiVal = company.annualized_roi_pct !== undefined ? company.annualized_roi_pct : company.target_roi;
+  const targetRoiStr = formatTargetRoi(targetRoiVal);
+  const sharesStr = formatSharesB(company.shares_outstanding || company.shares_outstanding_b);
   const ttmRevenueStr = formatRevenueInBillions(company.ttm_revenue || company.ttm_revenue_b);
   const evStr = formatEVInBillions(company.enterprise_value || company.enterprise_value_b);
-  const sharesStr = formatSharesB(company.shares_outstanding || company.shares_outstanding_b);
-
-  const consensus = company.analyst_consensus || {};
-  const analystTargetStr = consensus.mean_target ? `$${consensus.mean_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
-  const analystUpsideStr = consensus.average_upside_pct !== undefined ? `${consensus.average_upside_pct > 0 ? '+' : ''}${consensus.average_upside_pct.toFixed(1)}%` : '';
-  const analystCount = consensus.coverage_count || (company.analyst_price_targets ? company.analyst_price_targets.length : 0);
 
   card.innerHTML = `
     <div>
@@ -56,14 +66,15 @@ export function createGridCard(company, onSelect) {
       
       ${range52wHtml}
 
+      <!-- Locked 2x2 Financial Metrics Matrix (Design Constraint) -->
       <div class="company-metrics-grid" style="margin-top: 10px;">
         <div class="metric-item">
-          <span class="metric-label">Target ROI</span>
-          <span class="metric-val" style="color: #00d4ff;">${company.target_roi || '20.0%'}</span>
+          <span class="metric-label">ROI Prediction</span>
+          <span class="metric-val" style="color: #00d4ff;">${targetRoiStr}</span>
         </div>
         <div class="metric-item">
-          <span class="metric-label">Analyst Target (${analystCount})</span>
-          <span class="metric-val" style="color: #10b981;">${analystTargetStr} <small style="font-size: 0.72rem; color: #10b981;">(${analystUpsideStr})</small></span>
+          <span class="metric-label">Shares Out. (B)</span>
+          <span class="metric-val">${sharesStr}</span>
         </div>
         <div class="metric-item">
           <span class="metric-label">TTM Revenue (B)</span>

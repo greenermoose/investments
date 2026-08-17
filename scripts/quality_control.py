@@ -827,14 +827,15 @@ class QualityController:
                 growth_multiplier = (1.0 + annual_cagr) ** holding_years
                 target_exit_price = round(entry_price * growth_multiplier, 2)
                 roi_pct = ((target_exit_price - entry_price) / entry_price) * 100.0
-                target_roi_str = f"{roi_pct:.1f}% ({annual_cagr*100:.1f}% Ann.)"
+                cagr_pct = annual_cagr * 100.0
+                target_roi_str = f"{cagr_pct:.0f}%" if cagr_pct.is_integer() else f"{cagr_pct:.1f}%"
             elif thesis_status == "HOLD":
                 growth_multiplier = 1.30
                 target_exit_price = round(entry_price * growth_multiplier, 2)
-                target_roi_str = "20.0% (CC Yield)"
+                target_roi_str = "20%"
             else:  # SELL or AVOID
                 target_exit_price = entry_price
-                target_roi_str = "N/A (Exit/Avoid)"
+                target_roi_str = "N/A"
 
             # Market Cap & Enterprise Value
             market_cap = round(shares * current_price, 2) if (shares and current_price) else None

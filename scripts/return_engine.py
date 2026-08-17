@@ -173,13 +173,11 @@ def calculate_annualized_roi(
     else:
         annualized_roi_pct = -100.0
 
-    # 6. Formatted Human Display String
-    if exit_strat == "SELL_COVERED_CALLS" and cc_cash > 0:
-        target_roi_str = f"{annualized_roi_pct:.1f}% Ann. ({total_roi_pct:.1f}% Total w/ CC)"
-    elif entry_strat == "SELL_CSP" and csp_cash > 0:
-        target_roi_str = f"{annualized_roi_pct:.1f}% Ann. ({total_roi_pct:.1f}% Total w/ CSP)"
+    # 6. Formatted Human Display String (Annualized single percentage)
+    if annualized_roi_pct.is_integer():
+        target_roi_str = f"{annualized_roi_pct:.0f}%"
     else:
-        target_roi_str = f"{annualized_roi_pct:.1f}% Ann. ({total_roi_pct:.1f}% Total)"
+        target_roi_str = f"{annualized_roi_pct:.1f}%"
 
     return ReturnEngineResult(
         symbol=symbol,

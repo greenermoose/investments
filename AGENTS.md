@@ -57,6 +57,9 @@
 - **Equal Footing for All Universe Equities**: All equities in the tracked public universe (e.g. 144 US exchange-listed constituents across QQQ, DIA, and SMH) exist on completely equal footing in public intelligence. Agents must never treat equities differently or assign preferential status simply because an equity happens to be held in a private portfolio snapshot.
 - **Standardized Public Thesis Nomenclature**: Public thesis dossiers (`context/theses/*.md`) and public UI components must use objective market terminology such as `Benchmark Entry Price` (replacing personalized terms like `Cost Basis` or `Current Shares Owned`). Objective option strategies (e.g. target Delta bands and strike selection criteria) are recorded generically without assuming private share quantities.
 
-
-
-
+## 8. Web Interface & Grid Card Layout Design Constraints
+- **Locked 2x2 Grid Card Financial Metrics Matrix**: The financial metrics display on all public equity grid cards (`http/js/components/stocks/GridCard.js`) is permanently locked down. Agents must NEVER alter, replace, or redesign this 2x2 layout:
+  - Top-Left: `Target ROI` - Single annualized percentage only (e.g. `20%` or `22.0%`). Never display total ROI or both annualized and total ROI on grid cards. Grounded in the deterministic Return Engine using parameters established by the Investment Thesis Agent synthesized from Equity Research and Memory Agent context.
+  - Top-Right: `Shares Out. (B)` - Diluted shares outstanding scaled in billions (e.g. `0.595` or `14.69`).
+  - Bottom-Left: `TTM Revenue (B)` - Trailing twelve months revenue in billions (e.g. `$32.67`).
+  - Bottom-Right: `Enterprise Value (B)` - Enterprise value in billions (e.g. `$120.5` or `$715.17`).

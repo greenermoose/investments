@@ -29,12 +29,30 @@ export const formatRevenueInBillions = (val) => {
   return '$' + b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 
+export const formatTargetRoi = (val) => {
+  if (val === null || val === undefined) return '20%';
+  if (typeof val === 'number') {
+    if (isNaN(val) || val <= 0) return '0%';
+    return (val % 1 === 0 ? val.toFixed(0) : val.toFixed(1)) + '%';
+  }
+  if (typeof val === 'string') {
+    const match = val.match(/([\d.]+)%/);
+    if (match) {
+      const num = parseFloat(match[1]);
+      return (num % 1 === 0 ? num.toFixed(0) : num.toFixed(1)) + '%';
+    }
+    return val;
+  }
+  return '20%';
+};
+
 export const formatSharesB = (val) => {
   if (val === null || val === undefined || isNaN(val)) return '-';
   const b = (val >= 1e6) ? (val / 1e9) : Number(val);
   if (b === 0) return '-';
   if (b < 1 && b > 0) {
-    return Number(b.toFixed(2)).toString();
+    const str = b.toFixed(3);
+    return parseFloat(str).toString();
   }
   return b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };

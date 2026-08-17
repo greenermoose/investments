@@ -112,18 +112,22 @@ function renderCurrentView() {
   const dossiersContainer = document.getElementById('dossiers-container');
   const tableContainer = document.getElementById('table-view-container');
   const tableTbody = document.getElementById('stocks-table-tbody');
+  const statsRibbon = document.querySelector('.stats-ribbon');
 
   if (currentView === 'grid') {
+    if (statsRibbon) statsRibbon.style.display = 'grid';
     if (gridContainer) gridContainer.style.display = 'grid';
     if (dossiersContainer) dossiersContainer.style.display = 'none';
     if (tableContainer) tableContainer.style.display = 'none';
     renderGridView(gridContainer, data, openCompanyModal);
   } else if (currentView === 'dossiers') {
+    if (statsRibbon) statsRibbon.style.display = 'grid';
     if (gridContainer) gridContainer.style.display = 'none';
     if (dossiersContainer) dossiersContainer.style.display = 'flex';
     if (tableContainer) tableContainer.style.display = 'none';
     renderDossiersView(dossiersContainer, data, openCompanyModal);
   } else if (currentView === 'table') {
+    if (statsRibbon) statsRibbon.style.display = 'none';
     if (gridContainer) gridContainer.style.display = 'none';
     if (dossiersContainer) dossiersContainer.style.display = 'none';
     if (tableContainer) tableContainer.style.display = 'block';

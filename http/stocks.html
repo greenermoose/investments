@@ -32,9 +32,16 @@
     </div>
   </nav>
 
-  <main class="docs-main">
+  <main class="docs-main full-width">
     <div class="docs-header">
-      <h1>Public Equities Intelligence &amp; Live Market Pricing</h1>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 10px;">
+        <h1 style="margin: 0;">Public Equities Intelligence</h1>
+        <div class="view-switcher" id="view-switcher">
+          <button class="view-btn active" data-view="grid" title="Grid Card View">Grid Cards</button>
+          <button class="view-btn" data-view="dossiers" title="Expanded Dossier View">Dossiers</button>
+          <button class="view-btn" data-view="table" title="Dense Table View">Data Table</button>
+        </div>
+      </div>
       <p class="docs-lead">Explore the 144 US public equities tracked by the agentic investment system with verified
         market prices, daily trading volumes, technical indicators, grounded valuation targets, and audited SEC EDGAR
         filings.</p>
@@ -138,13 +145,6 @@
           <option value="roi-desc">Sort: Target ROI (High)</option>
           <option value="ev-desc">Sort: Market Cap / EV (High)</option>
         </select>
-
-        <!-- View Mode Switcher -->
-        <div class="view-switcher" id="view-switcher">
-          <button class="view-btn active" data-view="grid" title="Grid Card View">Grid Cards</button>
-          <button class="view-btn" data-view="dossiers" title="Expanded Dossier View">Dossiers</button>
-          <button class="view-btn" data-view="table" title="Dense Table View">Data Table</button>
-        </div>
       </div>
     </div>
 

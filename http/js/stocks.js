@@ -16,7 +16,13 @@ import { openCompanyModal, initModalListeners } from './components/stocks/ModalD
 
 // Global application state
 let universeData = [];
-let currentFilter = 'ALL';
+const chipFilters = {
+  BUY: 'neutral',          // 'neutral' | 'true' | 'false'
+  HOLD: 'neutral',
+  SELL: 'neutral',
+  AVOID: 'neutral',
+  INDEX_MEMBER: 'neutral'
+};
 let currentSector = 'ALL';
 let currentSearch = '';
 let currentSort = 'conviction-desc';
@@ -27,18 +33,32 @@ let currentView = 'grid'; // 'grid' | 'dossiers' | 'table'
 // ============================================================================
 
 function getFilteredAndSortedData() {
+  const statusKeys = ['BUY', 'HOLD', 'SELL', 'AVOID'];
+  const positiveStatuses = statusKeys.filter(k => chipFilters[k] === 'true');
+  const negativeStatuses = statusKeys.filter(k => chipFilters[k] === 'false');
+
   let filtered = universeData.filter(item => {
-    // Status & Index filter
-    if (currentFilter === 'INDEX_MEMBER') {
-      if (!item.is_index_member) return false;
-    } else if (currentFilter !== 'ALL') {
-      if (item.thesis_status !== currentFilter) return false;
+    // 1. Status positive match (if any status is true, item must match one of positiveStatuses)
+    if (positiveStatuses.length > 0) {
+      if (!positiveStatuses.includes(item.thesis_status)) return false;
     }
     
-    // Sector filter
+    // 2. Status negative match (if any status is false, item must NOT match negativeStatuses)
+    if (negativeStatuses.length > 0) {
+      if (negativeStatuses.includes(item.thesis_status)) return false;
+    }
+
+    // 3. Index Member filter
+    if (chipFilters.INDEX_MEMBER === 'true') {
+      if (!item.is_index_member) return false;
+    } else if (chipFilters.INDEX_MEMBER === 'false') {
+      if (item.is_index_member) return false;
+    }
+    
+    // 4. Sector filter
     if (currentSector !== 'ALL' && item.sector !== currentSector) return false;
     
-    // Search query
+    // 5. Search query
     if (currentSearch.trim() !== '') {
       const query = currentSearch.toLowerCase();
       const matchSym = item.symbol && item.symbol.toLowerCase().includes(query);
@@ -197,15 +217,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Filter chips
-  document.querySelectorAll('#status-filters .chip-btn').forEach(btn => {
+  // Helper to update All chip active state
+  function updateAllChipState() {
+    const allBtn = document.getElementById('chip-all-btn');
+    if (!allBtn) return;
+    const hasActive = Object.values(chipFilters).some(state => state !== 'neutral');
+    if (hasActive) {
+      allBtn.classList.remove('active');
+    } else {
+      allBtn.classList.add('active');
+    }
+  }
+
+  // Filter chips: cycle state on click: neutral -> true -> false -> neutral
+  document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('#status-filters .chip-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFilter = btn.getAttribute('data-filter');
+      const filterKey = btn.getAttribute('data-filter');
+      if (!filterKey || !(filterKey in chipFilters)) return;
+
+      const currentState = chipFilters[filterKey] || 'neutral';
+      let nextState = 'neutral';
+      if (currentState === 'neutral') {
+        nextState = 'true';
+      } else if (currentState === 'true') {
+        nextState = 'false';
+      } else {
+        nextState = 'neutral';
+      }
+
+      chipFilters[filterKey] = nextState;
+      btn.setAttribute('data-state', nextState);
+      updateAllChipState();
       renderCurrentView();
     });
   });
+
+  // All button: clears active filters and shows all companies
+  const allBtn = document.getElementById('chip-all-btn');
+  if (allBtn) {
+    allBtn.addEventListener('click', () => {
+      Object.keys(chipFilters).forEach(key => {
+        chipFilters[key] = 'neutral';
+      });
+      document.querySelectorAll('#status-filters .chip-btn[data-filter]').forEach(btn => {
+        btn.setAttribute('data-state', 'neutral');
+      });
+      allBtn.classList.add('active');
+      renderCurrentView();
+    });
+  }
 
   // View mode switcher
   document.querySelectorAll('#view-switcher .view-btn').forEach(btn => {

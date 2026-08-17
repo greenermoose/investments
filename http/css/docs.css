@@ -413,11 +413,15 @@ pre code {
 .filter-chips {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
 }
 
 .chip-btn {
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
   background: var(--bg-color-surface);
   border: 1px solid var(--border-subtle);
   border-radius: 20px;
@@ -425,19 +429,123 @@ pre code {
   font-size: 0.82rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  user-select: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
 }
 
 .chip-btn:hover {
   background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
   color: var(--text-primary);
 }
 
-.chip-btn.active {
+.chip-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Neutral state (always shows neutral symbol) */
+.chip-btn[data-state="neutral"] .chip-indicator {
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+}
+
+.chip-btn[data-state="neutral"] .chip-indicator::before {
+  content: "\25cb";
+  font-size: 0.65rem;
+}
+
+/* True state (+ / Include) */
+.chip-btn[data-state="true"] {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: #10b981;
+  color: #34d399;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.chip-btn[data-state="true"]:hover {
+  background: rgba(16, 185, 129, 0.22);
+}
+
+.chip-btn[data-state="true"] .chip-indicator {
+  background: #10b981;
+  border: 1px solid #10b981;
+  color: #0d131f;
+}
+
+.chip-btn[data-state="true"] .chip-indicator::before {
+  content: "+";
+  font-size: 0.75rem;
+}
+
+/* False state (- / Exclude) */
+.chip-btn[data-state="false"] {
+  background: rgba(239, 68, 68, 0.14);
+  border-color: #ef4444;
+  color: #f87171;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+}
+
+.chip-btn[data-state="false"]:hover {
+  background: rgba(239, 68, 68, 0.22);
+}
+
+.chip-btn[data-state="false"] .chip-indicator {
+  background: #ef4444;
+  border: 1px solid #ef4444;
+  color: #ffffff;
+}
+
+.chip-btn[data-state="false"] .chip-indicator::before {
+  content: "\2212";
+  font-size: 0.75rem;
+}
+
+/* Permanent All Chip */
+.chip-all-btn .chip-indicator {
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+}
+
+.chip-all-btn .chip-indicator::before {
+  content: "\25cb";
+  font-size: 0.65rem;
+}
+
+.chip-all-btn.active {
   background: rgba(0, 212, 255, 0.15);
   border-color: var(--accent-color);
   color: var(--accent-color);
   font-weight: 600;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.chip-all-btn.active .chip-indicator {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #0b111e;
+}
+
+.chip-all-btn.active .chip-indicator::before {
+  content: "\2713";
+  font-size: 0.65rem;
 }
 
 /* Company Grid & Cards */

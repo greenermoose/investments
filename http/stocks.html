@@ -76,12 +76,30 @@
       </div>
 
       <div class="filter-chips" id="status-filters">
-        <button class="chip-btn active" data-filter="ALL">All</button>
-        <button class="chip-btn" data-filter="BUY">Buy</button>
-        <button class="chip-btn" data-filter="HOLD">Hold</button>
-        <button class="chip-btn" data-filter="SELL">Sell</button>
-        <button class="chip-btn" data-filter="AVOID">Avoid</button>
-        <button class="chip-btn" data-filter="INDEX_MEMBER">Index Member</button>
+        <button class="chip-btn chip-all-btn active" id="chip-all-btn" title="Show all companies (clears active filters)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">All</span>
+        </button>
+        <button class="chip-btn" data-filter="BUY" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">Buy</span>
+        </button>
+        <button class="chip-btn" data-filter="HOLD" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">Hold</span>
+        </button>
+        <button class="chip-btn" data-filter="SELL" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">Sell</span>
+        </button>
+        <button class="chip-btn" data-filter="AVOID" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">Avoid</span>
+        </button>
+        <button class="chip-btn" data-filter="INDEX_MEMBER" data-state="neutral" title="Click to filter: Neutral -> Include (+) -> Exclude (-)">
+          <span class="chip-indicator"></span>
+          <span class="chip-label">Index Member</span>
+        </button>
       </div>
     </div>
 

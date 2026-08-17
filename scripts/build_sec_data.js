@@ -8,6 +8,17 @@ if (!fs.existsSync(dataDir)) {
 const outputDir = path.join(__dirname, '..', 'http');
 const outputFile = path.join(outputDir, 'sec-data.json');
 
+const contextDataDir = path.join(__dirname, '..', 'context', 'data');
+const contextEquitiesDir = path.join(contextDataDir, 'equities');
+const contextSecFile = path.join(contextDataDir, 'sec_reports.json');
+
+if (!fs.existsSync(contextDataDir)) {
+    fs.mkdirSync(contextDataDir, { recursive: true });
+}
+if (!fs.existsSync(contextEquitiesDir)) {
+    fs.mkdirSync(contextEquitiesDir, { recursive: true });
+}
+
 function parseDate(dateStr) {
     return new Date(dateStr);
 }
@@ -146,13 +157,17 @@ function processCompany(symbol, filings) {
 }
 
 function main() {
-    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json'));
+    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== 'universe.json' && f !== 'market_prices.json');
     const result = {};
 
     for (const file of files) {
         const filePath = path.join(dataDir, file);
+        const contextEquitiesFilePath = path.join(contextEquitiesDir, file);
         try {
             const content = fs.readFileSync(filePath, 'utf8');
+            // Replicate company filing JSON to context/data/equities/
+            fs.writeFileSync(contextEquitiesFilePath, content, 'utf8');
+
             const data = JSON.parse(content);
             if (data.symbol && data.filings) {
                 const metrics = processCompany(data.symbol, data.filings);
@@ -181,7 +196,9 @@ function main() {
     }
 
     fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));
-    console.log(`Successfully wrote ${Object.keys(result).length} companies to ${outputFile}`);
+    fs.writeFileSync(contextSecFile, JSON.stringify(result, null, 2));
+    console.log(`Successfully wrote ${Object.keys(result).length} companies to ${outputFile} and ${contextSecFile}`);
+    console.log(`Replicated ${files.length} equity SEC reports to ${contextEquitiesDir}`);
 }
 
 main();

@@ -169,11 +169,14 @@ def main():
 
     scripts_data_dir = os.path.join(os.path.dirname(__file__), "data")
     http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
+    context_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data")
     os.makedirs(scripts_data_dir, exist_ok=True)
     os.makedirs(http_data_dir, exist_ok=True)
+    os.makedirs(context_data_dir, exist_ok=True)
 
     out_file_scripts = os.path.join(scripts_data_dir, "market_prices.json")
     out_file_http = os.path.join(http_data_dir, "market_prices.json")
+    out_file_context = os.path.join(context_data_dir, "market_prices.json")
 
     prices_map = {}
     if os.path.exists(out_file_scripts):
@@ -197,15 +200,18 @@ def main():
             print(f"[{i}/{len(symbols)}] Warning: Could not fetch price for {sym}: {e}")
             fail_count += 1
 
-    # Save to both scripts/data/ and http/data/
+    # Save to scripts/data/, http/data/, and context/data/
     with open(out_file_scripts, "w", encoding="utf-8") as f:
         json.dump(prices_map, f, indent=2)
 
     with open(out_file_http, "w", encoding="utf-8") as f:
         json.dump(prices_map, f, indent=2)
 
+    with open(out_file_context, "w", encoding="utf-8") as f:
+        json.dump(prices_map, f, indent=2)
+
     print(f"\nPrice & volume ingestion complete: {success_count} succeeded, {fail_count} failed.")
-    print(f"Saved records to {out_file_scripts} and {out_file_http}")
+    print(f"Saved records to {out_file_scripts}, {out_file_http}, and {out_file_context}")
 
 if __name__ == "__main__":
     main()

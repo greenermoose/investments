@@ -1,0 +1,94 @@
+{
+  "symbol": "STOK",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-03",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
+      "data": {
+        "shares_outstanding": 62281655,
+        "revenue": 15554000,
+        "balance_sheet": {
+          "total_assets": 393966000,
+          "total_liabilities": 48419000,
+          "total_shareholders_equity": 345547000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 292818000,
+          "cash_primary": 110004000,
+          "marketable_securities_current": 182814000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
+      "data": {
+        "shares_outstanding": 59150790,
+        "revenue": 6229000,
+        "balance_sheet": {
+          "total_assets": 443277000,
+          "total_liabilities": 48400000,
+          "total_shareholders_equity": 394877000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 343545000,
+          "cash_primary": 155659000,
+          "marketable_securities_current": 187886000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-16",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
+      "data": {
+        "shares_outstanding": 57117150,
+        "revenue": 184420000,
+        "balance_sheet": {
+          "total_assets": 418434000,
+          "total_liabilities": 65977000,
+          "total_shareholders_equity": 352457000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 284670000,
+          "cash_primary": 84220000,
+          "marketable_securities_current": 200450000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
+      "data": {
+        "shares_outstanding": 54797418,
+        "revenue": 183018000,
+        "balance_sheet": {
+          "total_assets": 360264000,
+          "total_liabilities": 52159000,
+          "total_shareholders_equity": 308105000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 248310000,
+          "cash_primary": 83394000,
+          "marketable_securities_current": 164916000
+        }
+      }
+    }
+  ]
+}

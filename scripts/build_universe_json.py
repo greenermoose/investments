@@ -21,6 +21,8 @@ from return_engine import calculate_annualized_roi, derive_company_thesis_parame
 root_dir = os.path.dirname(os.path.dirname(__file__))
 scripts_data_dir = os.path.join(root_dir, "scripts", "data")
 http_data_dir = os.path.join(root_dir, "http", "data")
+context_data_dir = os.path.join(root_dir, "context", "data")
+os.makedirs(context_data_dir, exist_ok=True)
 
 # Load base metadata file
 meta_file = os.path.join(scripts_data_dir, "company_meta.json")
@@ -299,15 +301,20 @@ for filename in sorted(all_files):
     })
 
 # Save updated universe.json
-out_universe_path = os.path.join(http_data_dir, "universe.json")
-with open(out_universe_path, "w", encoding="utf-8") as f:
+out_universe_path_http = os.path.join(http_data_dir, "universe.json")
+out_universe_path_context = os.path.join(context_data_dir, "universe.json")
+
+with open(out_universe_path_http, "w", encoding="utf-8") as f:
+    json.dump(universe, f, indent=2)
+
+with open(out_universe_path_context, "w", encoding="utf-8") as f:
     json.dump(universe, f, indent=2)
 
 # Save updated company_meta.json
 with open(meta_file, "w", encoding="utf-8") as f:
     json.dump(updated_meta, f, indent=2)
 
-print(f"Generated {out_universe_path} with {len(universe)} public companies.")
+print(f"Generated {out_universe_path_http} and {out_universe_path_context} with {len(universe)} public companies.")
 print(f"Saved synchronized company metadata to {meta_file}")
 print(f"Index memberships breakdown:")
 print(f"  QQQ: {len([u for u in universe if 'QQQ' in u['indices']])}")

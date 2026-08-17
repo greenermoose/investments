@@ -1,0 +1,70 @@
+{
+  "symbol": "XYZ",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "data": {
+        "shares_outstanding": 597586000,
+        "revenue": 6056847000,
+        "balance_sheet": {
+          "total_assets": 39986081000,
+          "total_liabilities": 18305053000,
+          "total_shareholders_equity": 21715338000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-26",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "data": {
+        "shares_outstanding": 612243000,
+        "revenue": 24193683000,
+        "balance_sheet": {
+          "total_assets": 39549887000,
+          "total_liabilities": 17380005000,
+          "total_shareholders_equity": 22204278000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "data": {
+        "shares_outstanding": 614117000,
+        "revenue": 17941205000,
+        "balance_sheet": {
+          "total_assets": 39182823000,
+          "total_liabilities": 16709615000,
+          "total_shareholders_equity": 22507398000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-07",
+      "period_start": "2025-01-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "data": {
+        "shares_outstanding": 616108000,
+        "revenue": 11826253000,
+        "balance_sheet": {
+          "total_assets": 36858391000,
+          "total_liabilities": 14735499000,
+          "total_shareholders_equity": 22157136000
+        }
+      }
+    }
+  ]
+}

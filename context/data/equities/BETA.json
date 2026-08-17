@@ -1,0 +1,70 @@
+{
+  "symbol": "BETA",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001784570",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-12",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001784570",
+      "data": {
+        "shares_outstanding": 229644583,
+        "revenue": 10133000,
+        "balance_sheet": {
+          "total_assets": 2013102000,
+          "total_liabilities": 287847000,
+          "total_shareholders_equity": 1725255000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-09",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001784570",
+      "data": {
+        "shares_outstanding": 74970976,
+        "revenue": 35616000,
+        "balance_sheet": {
+          "total_assets": 2106265000,
+          "total_liabilities": 288429000,
+          "total_shareholders_equity": 1817836000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001784570",
+      "data": {
+        "shares_outstanding": 45807560,
+        "revenue": 24483000,
+        "balance_sheet": {
+          "total_assets": 1069337000,
+          "total_liabilities": 279448000,
+          "total_shareholders_equity": 789889000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-04",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001784570",
+      "data": {
+        "shares_outstanding": 45238028,
+        "revenue": 15092000,
+        "balance_sheet": {
+          "total_assets": 666372000,
+          "total_liabilities": 230429000,
+          "total_shareholders_equity": 435943000
+        }
+      }
+    }
+  ]
+}

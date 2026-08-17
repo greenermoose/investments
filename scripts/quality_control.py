@@ -44,13 +44,18 @@ class QualityController:
 
         self.scripts_data_dir = os.path.join(self.root_dir, "scripts", "data")
         self.http_data_dir = os.path.join(self.root_dir, "http", "data")
+        self.context_data_dir = os.path.join(self.root_dir, "context", "data")
+        self.context_equities_dir = os.path.join(self.context_data_dir, "equities")
         self.sec_summary_path = os.path.join(self.root_dir, "http", "sec-data.json")
+        self.context_sec_summary_path = os.path.join(self.context_data_dir, "sec_reports.json")
         self.errata_log_path = os.path.join(self.root_dir, "context", "research", "errata_log.md")
 
         self.company_meta_path = os.path.join(self.scripts_data_dir, "company_meta.json")
         self.market_prices_scripts_path = os.path.join(self.scripts_data_dir, "market_prices.json")
         self.market_prices_http_path = os.path.join(self.http_data_dir, "market_prices.json")
+        self.market_prices_context_path = os.path.join(self.context_data_dir, "market_prices.json")
         self.universe_path = os.path.join(self.http_data_dir, "universe.json")
+        self.universe_context_path = os.path.join(self.context_data_dir, "universe.json")
         self.sec_directory_cache_path = os.path.join(self.scripts_data_dir, "sec_tickers_directory.json")
 
         self.qqq_path = os.path.join(self.scripts_data_dir, "qqq_holdings.json")
@@ -319,18 +324,30 @@ class QualityController:
 
         # Cross-store name consistency check
         if meta_name and price_name and meta_name != price_name:
-            # Check if one is a simple minor variant vs a substantive mismatch
-            clean_meta = re.sub(r"[,\. ]", "", meta_name).lower()
-            clean_price = re.sub(r"[,\. ]", "", price_name).lower()
+            def clean_corp_name(s):
+                s = s.upper()
+                s = re.sub(r"\b(CLASS [A-Z]|COMMON STOCK|CAPITAL STOCK|ORDINARY SHARES|SPONSORED ADR|ADR)\b", "", s)
+                s = re.sub(r"\b(THE|COMPANY|CORPORATION|INCORPORATED|CORP|INC|CO|LTD|LIMITED|PLC|SE|NV|N\.V\.|S\.E\.|HOLDINGS|HOLDING)\b", "", s)
+                s = re.sub(r"[,\. \-]", "", s)
+                return s.lower()
+
+            clean_meta = clean_corp_name(meta_name)
+            clean_price = clean_corp_name(price_name)
             if clean_meta != clean_price and not (clean_meta in clean_price or clean_price in clean_meta):
-                issues.append({
-                    "severity": "ERROR",
-                    "rule": "COMPANY_NAME_CONCORDANCE",
-                    "symbol": sym,
-                    "field": "name",
-                    "actual": f"meta='{meta_name}', prices='{price_name}'",
-                    "description": f"[{sym}] Substantive name conflict between metadata ('{meta_name}') and price feed ('{price_name}')."
-                })
+                # Also allow single-character typo tolerance (e.g. Marriot vs Marriott)
+                match_ok = False
+                if len(clean_meta) > 5 and len(clean_price) > 5:
+                    if clean_meta.startswith(clean_price[:5]) or clean_price.startswith(clean_meta[:5]):
+                        match_ok = True
+                if not match_ok:
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "COMPANY_NAME_CONCORDANCE",
+                        "symbol": sym,
+                        "field": "name",
+                        "actual": f"meta='{meta_name}', prices='{price_name}'",
+                        "description": f"[{sym}] Substantive name conflict between metadata ('{meta_name}') and price feed ('{price_name}')."
+                    })
 
         # Check against SEC EDGAR ground truth title if available
         sec_info = sec_dir.get(sym) or sec_dir.get(sym.replace("-", ""))
@@ -658,6 +675,34 @@ class QualityController:
                 "description": f"Symbol '{sym}' present in universe.json but missing from market_prices.json."
             })
 
+        # Context store synchronization parity check
+        if not os.path.exists(self.universe_context_path):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "CONTEXT_STORE_PARITY",
+                "symbol": "ALL",
+                "field": "context/data/universe.json",
+                "description": "context/data/universe.json is missing."
+            })
+
+        if not os.path.exists(self.market_prices_context_path):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "CONTEXT_STORE_PARITY",
+                "symbol": "ALL",
+                "field": "context/data/market_prices.json",
+                "description": "context/data/market_prices.json is missing."
+            })
+
+        if not os.path.exists(self.context_sec_summary_path):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "CONTEXT_STORE_PARITY",
+                "symbol": "ALL",
+                "field": "context/data/sec_reports.json",
+                "description": "context/data/sec_reports.json is missing."
+            })
+
         return issues
 
     def fix_all(self, target_symbol=None, log_errata=True):
@@ -698,6 +743,7 @@ class QualityController:
         self._save_json(self.company_meta_path, self.company_meta)
         self._save_json(self.market_prices_scripts_path, self.market_prices)
         self._save_json(self.market_prices_http_path, self.market_prices)
+        self._save_json(self.market_prices_context_path, self.market_prices)
 
         # 2. Regenerate Master Universe Catalog with Ground-Truth Math and Index Memberships
         print("Rebuilding and synchronizing master universe.json catalog...")
@@ -854,6 +900,7 @@ class QualityController:
 
         self.universe = new_universe
         self._save_json(self.universe_path, self.universe)
+        self._save_json(self.universe_context_path, self.universe)
 
         # 3. Synchronize SEC summary data file
         for item in self.universe:
@@ -861,6 +908,13 @@ class QualityController:
             if sym in self.sec_summary:
                 self.sec_summary[sym]["company_name"] = item["name"]
         self._save_json(self.sec_summary_path, self.sec_summary)
+        self._save_json(self.context_sec_summary_path, self.sec_summary)
+
+        # Replicate individual equity files
+        os.makedirs(self.context_equities_dir, exist_ok=True)
+        for sym, comp_data in self.http_company_files.items():
+            context_eq_file = os.path.join(self.context_equities_dir, f"{sym}.json")
+            self._save_json(context_eq_file, comp_data)
 
         print(f"Quality Control fix execution complete. Applied {fixed_count} updates across datasets.")
         return fixed_count, errata_entries

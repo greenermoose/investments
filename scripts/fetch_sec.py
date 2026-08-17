@@ -287,6 +287,12 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(out_obj, f, indent=2)
             
+        context_equities_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data", "equities")
+        os.makedirs(context_equities_dir, exist_ok=True)
+        context_out_file = os.path.join(context_equities_dir, f"{sym}.json")
+        with open(context_out_file, "w", encoding="utf-8") as f:
+            json.dump(out_obj, f, indent=2)
+            
         return len(filings)
 
 def main():

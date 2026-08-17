@@ -13,8 +13,9 @@ This repository separates data, documentation, and logic cleanly according to it
 ```
 investments/
   context/              # Primary audience: AI Agents (Markdown context, prompts, memory schemas, strategy constraints)
+    data/               # Complete structured datasets for AI agents (universe.json, market_prices.json, sec_reports.json, equities/)
+    theses/             # Markdown investment dossiers and catalyst logs for all 144 equities (agent memory)
     prompts/            # Agent role prompts and weekly deliberation protocols
-    theses/             # Markdown investment dossiers and catalyst logs (agent memory)
     sources/            # Authoritative data sources catalog and access methodologies
     research/           # Errata log, verification records, and quantitative research
     schemas/            # Schema definitions (portfolio context, data provenance, errata)

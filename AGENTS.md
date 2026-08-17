@@ -11,7 +11,10 @@
 - Keep table syntax standard (e.g. `| :--- |`) and frontmatter delimiters only where strictly required by configuration parsers.
 
 ## 3. Directory & Audience Structure
-- `context/`: Primary store for AI agent prompts, markdown thesis dossiers (`context/theses/`), schemas, and strategy rules.
+- `context/`: Primary store for AI agents:
+  - `context/data/`: Complete structured datasets for AI agents (`universe.json`, `market_prices.json`, `sec_reports.json`, and `context/data/equities/<TICKER>.json`).
+  - `context/theses/`: Persistent markdown thesis dossiers (`context/theses/<TICKER>.md`) for all universe equities.
+  - `context/prompts/`, `context/schemas/`, `context/sources/`, `context/strategy/`, `context/research/`: Multi-agent protocols, schemas, and research logs.
 - `scripts/`: Deterministic Python and Node.js CLI tools, caching local databases in `scripts/data/`.
 - `http/`: Public human web interface with documentation in `http/docs/` and public metrics in `http/data/`.
 - `private/`: User confidential data (brokerage snapshots in `private/snapshots/`, simple plain text/Markdown trading plans in `private/plans/`). Never commit files in `private/`.

@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.17.0] - 2026-08-17
+
+### 144-Equity Market Price Ingestion, Context Data Layer & Bidirectional Synchronization
+- **Live Market Price & Technical Ingestion (`scripts/fetch_market_prices.py`):** Ingested live market quotes, 30-day daily OHLCV candlesticks, 52-week ranges, 20d/50d SMAs, volume breakout ratios, and 20-day technical support/resistance levels for all 144 public equities in the universe with 100% success.
+- **Context Data Layer (`context/data/`):** Established dedicated, comprehensive structured data stores under `context/` for direct consumption by AI agents:
+  - `context/data/universe.json`: Master catalog of all 144 equities with fundamentals, multiples, and ROI models.
+  - `context/data/market_prices.json`: Live exchange quotes, OHLCV candle history, and technical indicators.
+  - `context/data/sec_reports.json`: Consolidated SEC XBRL financial metrics (shares outstanding, TTM revenue, debt, cash).
+  - `context/data/equities/<TICKER>.json`: Complete individual SEC filings and balance sheets for all 144 equities.
+- **Full Universe Thesis Dossiers (`context/theses/*.md`, `scripts/generate_all_theses.py`):** Expanded markdown investment thesis dossiers from 7 to 144 equities in `context/theses/`, each conforming strictly to `context/schemas/investment_thesis_schema.json` with 13-quarter revenue matrices, 6-horizon shares outstanding, 4-horizon price targets, Wall Street analyst targets, catalyst timelines, and invalidation criteria. Validated all 145 files with 100% pass rate.
+- **Bidirectional Data Synchronization & Quality Control (`scripts/quality_control.py`, `scripts/build_universe_json.py`, `scripts/build_sec_data.js`):** Unified deterministic pipelines to write atomically to both `context/data/` and `http/data/`, with automated cross-store parity verification and 0 errors / 0 warnings in quality control audits.
+
 ## [2.16.0] - 2026-08-17
 
 ### AI Agent Roles Refinement, Dedicated Skills & Deterministic Scripting Suite

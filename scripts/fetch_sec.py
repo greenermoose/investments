@@ -322,35 +322,6 @@ def main():
     for i, sym in enumerate(symbols, 1):
         sym_clean = sym.upper()
         
-        # Handle synthetic or benchmark symbols
-        if sym_clean in ["XYZ", "BETA"]:
-            # Write synthetic profile if not exists
-            synth_file = os.path.join(out_dir, f"{sym_clean}.json")
-            if not os.path.exists(synth_file):
-                with open(synth_file, "w", encoding="utf-8") as f:
-                    json.dump({
-                        "symbol": sym_clean,
-                        "sec_edgar_url": "https://www.sec.gov/edgar/searchedgar/companysearch",
-                        "filings": [{
-                            "type": "10-K",
-                            "filing_date": "2026-03-15",
-                            "period_start": "2025-01-01",
-                            "period_end": "2025-12-31",
-                            "filing_url": "https://www.sec.gov/edgar/searchedgar/companysearch",
-                            "data": {
-                                "shares_outstanding": 150000000,
-                                "revenue": 1200000000,
-                                "balance_sheet": {
-                                    "total_assets": 2500000000,
-                                    "total_liabilities": 800000000,
-                                    "total_shareholders_equity": 1700000000
-                                }
-                            }
-                        }]
-                    }, f, indent=2)
-            success_count += 1
-            continue
-            
         lookup_sym = sym_clean
         if lookup_sym not in ticker_to_cik and "-" in lookup_sym:
             alt = lookup_sym.replace("-", "")

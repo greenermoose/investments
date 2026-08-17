@@ -46,6 +46,12 @@ To maintain data integrity across investment dossiers, valuation models, and tra
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ERR-2026-08-001 | 2026-08-16 | `context/theses/BA.md` | Boeing 737 MAX Backlog Share | 42.0% | 39.4% | STALE_PARAMETRIC_MEMORY | SEC Form 10-Q for Period Ended 2026-06-30 (Note 14) | RESOLVED |
 | ERR-2026-08-002 | 2026-08-16 | `context/theses/NVDA.md` | Data Center Revenue Q1 2026 | $22.6B | $26.3B | TRANSCRIPTION_ERROR | NVIDIA Form 10-Q filed 2026-05-28 | RESOLVED |
+| ERR-2026-08-003 | 2026-08-17 | `scripts/data/company_meta.json` | BETA Company Name & Description | Archer Aviation Inc. / Advanced Air Mobility | Beta Technologies, Inc. | HALLUCINATION | SEC EDGAR Form 10-K / Form 8-K for BETA | RESOLVED |
+| ERR-2026-08-004 | 2026-08-17 | `scripts/data/company_meta.json` | XYZ Company Name & Description | Block, Inc. (Square / Cash App) | Block, Inc. | TRANSCRIPTION_ERROR | SEC EDGAR Form 10-K / Form 8-K for XYZ | RESOLVED |
+| ERR-2026-08-005 | 2026-08-17 | `scripts/data/company_meta.json` | MSTR Company Name & Description | Strategy Inc. | MicroStrategy Incorporated | TRANSCRIPTION_ERROR | SEC EDGAR Form 10-K / Form 8-K for MSTR | RESOLVED |
+| ERR-2026-08-006 | 2026-08-17 | `scripts/data/market_prices.json` | BETA Market Price Record | $100.00 Synthetic Benchmark | $24.75 Live Exchange Feed | METHODOLOGY_CALCULATION_ERROR | Direct Exchange / Yahoo Finance Chart API | RESOLVED |
+| ERR-2026-08-007 | 2026-08-17 | `scripts/data/market_prices.json` | XYZ Market Price Record | $100.00 Synthetic Benchmark | $80.31 Live Exchange Feed | METHODOLOGY_CALCULATION_ERROR | Direct Exchange / Yahoo Finance Chart API | RESOLVED |
+| ERR-2026-08-008 | 2026-08-17 | `scripts/data/company_meta.json` | ZM Official Company Name | Zoom Video Communications, Inc. | Zoom Communications, Inc. | TRANSCRIPTION_ERROR | SEC EDGAR Form 10-Q filed 2026-06-04 (CIK 0001585521) | RESOLVED |
 
 ## Resolution Procedures for Target Dossiers
 

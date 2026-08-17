@@ -208,7 +208,7 @@
     "latest_catalyst": "AXON 2.0 AI ad engine efficiency driving >70% Software Platform segment adjusted EBITDA margins."
   },
   "ARM": {
-    "name": "ARM Holdings PLC",
+    "name": "Arm Holdings plc",
     "sector": "Information Technology",
     "industry": "Semiconductor IP & Architecture",
     "description": "Architects, develops, and licenses high-performance, low-power CPU architectures used in >99% of global smartphones, AI data centers, and IoT.",
@@ -336,20 +336,20 @@
     "latest_catalyst": "Phase 1/2 clinical data readouts in sickle cell disease and alpha-1 antitrypsin deficiency."
   },
   "BETA": {
-    "name": "Archer Aviation Inc. / Advanced Air Mobility",
+    "name": "Beta Technologies, Inc.",
     "sector": "Industrials",
-    "industry": "Electric Vertical Takeoff & Landing (eVTOL)",
-    "description": "Designs and develops electric vertical takeoff and landing aircraft for urban air mobility networks and commercial passenger transport.",
+    "industry": "Electric Aircraft & Charging Infrastructure",
+    "description": "Designs and manufactures electric aircraft (ALIA-250) and nationwide multimodal electric aircraft charging infrastructure for cargo, medical, and passenger transport.",
     "thesis_status": "AVOID",
-    "conviction_score": 3.8,
-    "entry_price": 100.0,
-    "target_exit_price": 100.0,
-    "current_price": 100.0,
+    "conviction_score": 4.5,
+    "entry_price": 24.75,
+    "target_exit_price": 24.75,
+    "current_price": 24.75,
     "holding_period": "Avoid",
     "target_roi": "N/A (Exit/Avoid)",
-    "moat": "Commercial aerospace certification progress; offset by lack of commercial revenue, massive capital expenditure requirements, and severe dilution risk.",
-    "invalidation_criteria": "FAA Type Certification delays beyond 2026, chronic operating cash burn exceeding $300M annually, or severe shareholder dilution.",
-    "latest_catalyst": "FAA piloted flight testing milestones and defense contract deliveries."
+    "moat": "Proprietary electric powertrain architecture, FAA certification testing milestones, and expanding operational nationwide dual-use charging infrastructure network.",
+    "invalidation_criteria": "FAA Type Certification delays beyond projected timelines, cash burn acceleration, or major order backlog cancellations.",
+    "latest_catalyst": "FAA piloted flight test envelope expansion and dual-use defense/commercial charging station deployments."
   },
   "BKNG": {
     "name": "Booking Holdings Inc.",
@@ -1248,7 +1248,7 @@
     "latest_catalyst": "Emerging markets volume growth, premium ready-to-drink alcohol brand extensions, and refranchising cash flow return."
   },
   "LIN": {
-    "name": "Linde PLC",
+    "name": "Linde plc",
     "sector": "Materials",
     "industry": "Industrial Gases",
     "description": "Leading global industrial gases and engineering company serving chemicals, refining, healthcare, electronics, and manufacturing.",
@@ -1488,20 +1488,20 @@
     "latest_catalyst": "Copilot enterprise tier monetization and Azure AI capacity expansion."
   },
   "MSTR": {
-    "name": "Strategy Inc.",
+    "name": "MicroStrategy Incorporated",
     "sector": "Information Technology",
-    "industry": "Enterprise Analytics & Bitcoin Treasury",
-    "description": "Provides enterprise analytics software and operates a strategic corporate treasury reserve consisting primarily of Bitcoin.",
+    "industry": "Enterprise Analytics & Treasury Reserve Management",
+    "description": "Provides enterprise analytics software and operates an active corporate treasury management strategy focused on holding Bitcoin reserves.",
     "thesis_status": "AVOID",
-    "conviction_score": 7.0,
+    "conviction_score": 3.0,
     "entry_price": 96.23,
     "target_exit_price": 96.23,
     "current_price": 96.23,
-    "holding_period": "2 to 4 Years",
+    "holding_period": "Avoid",
     "target_roi": "N/A (Exit/Avoid)",
-    "moat": "Pioneering institutional Bitcoin treasury vehicle utilizing convertible debt leverage at sub-1% interest rates.",
-    "invalidation_criteria": "Prolonged multi-year Bitcoin bear market below corporate average purchase cost basis.",
-    "latest_catalyst": "Bitcoin spot ETF adoption, Bitcoin halving cycle appreciation, and S&P 500 eligibility."
+    "moat": "First-mover corporate treasury Bitcoin access vehicle with institutional convertible debt capabilities; offset by severe digital asset volatility and dilution risk.",
+    "invalidation_criteria": "Prolonged digital asset bear market, inability to refinance convertible debt obligations, or regulatory actions on balance sheet asset classifications.",
+    "latest_catalyst": "Quarterly enterprise software ARR updates and ongoing convertible note issuances for reserve accumulation."
   },
   "MU": {
     "name": "Micron Technology, Inc.",
@@ -1952,7 +1952,7 @@
     "latest_catalyst": "Phase 3 registrational study initiation for zorevunersen in Dravet syndrome."
   },
   "STX": {
-    "name": "Seagate Technology Holdings PLC",
+    "name": "Seagate Technology Holdings plc",
     "sector": "Information Technology",
     "industry": "Data Storage Technologies",
     "description": "Provides data storage technology and infrastructure solutions, leading the transition to Heat-Assisted Magnetic Recording (HAMR) enterprise hard drives.",
@@ -2256,23 +2256,23 @@
     "latest_catalyst": "Clean energy transmission infrastructure expansion and data center load additions."
   },
   "XYZ": {
-    "name": "Block, Inc. (Square / Cash App)",
+    "name": "Block, Inc.",
     "sector": "Financials",
-    "industry": "Digital Payments & FinTech",
-    "description": "Builds economic tools for commerce (Square seller ecosystem) and financial services for individuals (Cash App, Afterpay BNPL).",
-    "thesis_status": "AVOID",
-    "conviction_score": 5.4,
-    "entry_price": 100.0,
-    "target_exit_price": 100.0,
-    "current_price": 100.0,
-    "holding_period": "Avoid",
-    "target_roi": "N/A (Exit/Avoid)",
-    "moat": "Two-sided Cash App and Square seller ecosystem; offset by volatile Bitcoin trading revenue reliance, intense fintech competition, and regulatory compliance headwinds.",
-    "invalidation_criteria": "Deceleration in Cash App gross profit growth below 10% or federal regulatory actions regarding Cash App compliance.",
-    "latest_catalyst": "Rule of 40 operational discipline and Square seller distribution integration."
+    "industry": "Financial Technology & Digital Payments",
+    "description": "Operates the Square small-business merchant ecosystem, Cash App consumer digital wallet platform, and decentralized financial infrastructure.",
+    "thesis_status": "HOLD",
+    "conviction_score": 7.5,
+    "entry_price": 80.31,
+    "target_exit_price": 104.4,
+    "current_price": 80.31,
+    "holding_period": "3 to 5 Years",
+    "target_roi": "20.0% (CC Yield)",
+    "moat": "Two-sided network effects across Cash App consumer banking and Square merchant point-of-sale ecosystem with integrated software solutions.",
+    "invalidation_criteria": "Cash App gross profit monetization slowdown, market share loss to alternative digital wallets, or regulatory enforcement on digital asset transactions.",
+    "latest_catalyst": "Rule of 40 operational efficiency target execution and Square merchant distribution expansion."
   },
   "ZM": {
-    "name": "Zoom Video Communications, Inc.",
+    "name": "Zoom Communications, Inc.",
     "sector": "Information Technology",
     "industry": "Video Communications & Collaboration",
     "description": "Provides a unified communications and collaboration platform including Zoom Meetings, Zoom Phone, Zoom Team Chat, and Contact Center.",

@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.11.0] - 2026-08-17
+
+### Deterministic Quality Control Tool (scripts/quality_control.py) & Data Integrity Hardening
+- **Deterministic Quality Control CLI (`scripts/quality_control.py`):** Developed a comprehensive audit and repair CLI engine supporting non-destructive diagnostic scanning (`--audit`) and automated data repair (`--fix`).
+- **Comprehensive Quality Check Suite:**
+  - `Valid Stock Symbols`: Formats, special class tickers (`BRK-B`), and real exchange equity verification.
+  - `Company Name & Symbol Concordance`: Eliminates name distortions and ensures concordance across `company_meta.json`, `market_prices.json`, `universe.json`, `sec-data.json`, and individual JSON files.
+  - `Stock Prices & Technical Bounds`: Validates non-zero positive prices, day change math, percentage calculations, 52-week high/low ranges, support/resistance ordering, and volume indicators.
+  - `Index Membership Verification`: Enforces exact bidirectional constituent matching against QQQ (`qqq_holdings.json`), DJIA (`dia_holdings.json`), and S&P 500 (`spy_holdings.json`).
+  - `Financial Fundamentals & Accounting Math`: Recomputes and validates market cap, enterprise value, and scale factors.
+  - `Valuation & Investment Thesis Math`: Enforces rating classification integrity (`Buy`, `Hold`, `Sell`, `Avoid`), conviction scores, and CAGR/yield pricing math.
+- **Discovered Data Errors Corrected:**
+  - `BETA`: Fixed erroneous mapping to "Archer Aviation Inc." -> Corrected to **Beta Technologies, Inc.** (CIK `0001784570`, electric aircraft & charging infrastructure), ingested live exchange quotes, and replaced synthetic benchmark records.
+  - `XYZ`: Verified and grounded ticker change for **Block, Inc.** (formerly Square, Inc. ticker `SQ`, changed to `XYZ` on Jan 21, 2025). Replaced synthetic placeholder with live market data ($80+ price, technical levels, and multi-year financial history).
+  - `MSTR`: Fixed truncated name from "Strategy Inc." to **MicroStrategy Incorporated**.
+  - `MAR`, `ZM`, `FER`, `ARM`, `LIN`, `STX`: Corrected minor casing and punctuation inconsistencies across market price and metadata caches.
+- **Authoritative Errata Logging (`context/research/errata_log.md`):** Logged structured errata records for all resolved anomalies conforming to `context/schemas/errata_schema.json`.
+
 ## [2.10.0] - 2026-08-16
 
 ### Consolidated Public Equities Explorer (stocks.html) & Navigation Refactoring

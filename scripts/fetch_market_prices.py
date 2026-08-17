@@ -187,37 +187,6 @@ def main():
     fail_count = 0
 
     for i, sym in enumerate(symbols, 1):
-        if sym in ["XYZ", "BETA"]:
-            prices_map[sym] = {
-                "symbol": sym,
-                "name": f"{sym} Benchmark Index",
-                "currency": "USD",
-                "exchange": "INDEX",
-                "current_price": 100.0,
-                "closing_price": 100.0,
-                "previous_close": 98.5,
-                "day_change": 1.5,
-                "day_change_percent": 1.52,
-                "day_open": 99.0,
-                "day_high": 100.5,
-                "day_low": 98.8,
-                "day_volume": 1000000,
-                "average_volume_20d": 1000000,
-                "volume_ratio": 1.0,
-                "fifty_two_week_high": 110.0,
-                "fifty_two_week_low": 85.0,
-                "sma_20": 98.0,
-                "sma_50": 95.0,
-                "technical_support_20d": 95.0,
-                "technical_resistance_20d": 105.0,
-                "historical_candles_30d": [],
-                "as_of_timestamp": datetime.now(timezone.utc).isoformat(),
-                "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-                "provenance_source": "Direct Exchange / Synthetic Benchmark"
-            }
-            success_count += 1
-            continue
-
         try:
             record = fetch_ticker_quote_and_technicals(sym)
             prices_map[sym] = record

@@ -68,7 +68,7 @@ gantt
 - [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ & DJIA Benchmarks):**
   - Record agent skill in `.agents/skills/etf-holdings/SKILL.md` and CLI extractor in `scripts/fetch_etf_holdings.py` to parse Tier 1 Form NPORT-P filings (Invesco QQQ CIK `0001067839`, SPDR DIA CIK `0001041130`).
   - Expand universe catalog (`http/data/universe.json`) to 144 equities spanning all 101 QQQ constituents, all 30 Dow Jones Industrial Average (DJIA) constituents, and existing tracked compounders and watchlists.
-  - Verify live explorer rendering and sector filtering in `http/universe.html`.
+  - Verify live explorer rendering and sector filtering in `http/stocks.html`.
 - [x] **3.3 SEC EDGAR XBRL Pipeline & CLI Utilities:**
   - `scripts/fetch_sec.py` automated XBRL company facts extractor for US GAAP and IFRS filers.
   - `scripts/build_sec_data.js` automated TTM revenue and shares aggregator.

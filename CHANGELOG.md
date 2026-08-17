@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.0] - 2026-08-16
+
+### Consolidated Public Equities Explorer (stocks.html) & Navigation Refactoring
+- **Consolidated Public Equities Interface (`http/stocks.html`):** Merged `http/universe.html` and `http/theses.html` into a single, cohesive, high-performance explorer.
+- **HCI & Multi-View Switching:** Implemented progressive disclosure with dynamic view mode toggles:
+  - `Grid Cards`: Fast visual exploration with company price prediction ranges, status chips, index badges, and 1-click modal deep dives.
+  - `Expanded Dossiers`: In-depth fundamental view displaying full thesis text, competitive moat cards, catalyst calendar, and invalidation triggers directly on the page.
+  - `Dense Data Table`: High-density comparative table with instant sorting across conviction, symbol, target ROI, and enterprise value.
+- **Left Navigation Rail Refactored:** Consolidated `Company Universe & SEC` and `Investment Theses` into a single `Public Equities` link across all 10 portal and documentation pages.
+- **Instant Client-Side Redirects (`http/universe.html`, `http/theses.html`):** Added zero-latency client redirects to prevent broken bookmarks or external links.
+- **URL Hash Deep Linking:** Enabled `#SYMBOL` deep linking (e.g. `stocks.html#NVDA`) to automatically open company dossiers and interactive modal tabs on load.
+
 ## [2.9.0] - 2026-08-16
 
 ### Standardized Rating Taxonomy, Index Membership Badges & Dynamic Theses

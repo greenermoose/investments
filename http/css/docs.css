@@ -813,3 +813,100 @@ pre code {
 .link-btn:hover {
   background: rgba(0, 212, 255, 0.25);
 }
+
+/* View Mode Switcher */
+.view-switcher {
+  display: inline-flex;
+  background: var(--bg-color-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.view-btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.view-btn.active {
+  background: rgba(0, 212, 255, 0.15);
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Dense Stocks Table */
+.stocks-table-container {
+  overflow-x: auto;
+  margin: 16px 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-color-card);
+}
+
+.stocks-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.stocks-table th {
+  background: var(--bg-color-surface);
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.stocks-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.stocks-table th.sortable:hover {
+  color: var(--text-primary);
+}
+
+.stocks-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.stocks-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stocks-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.stocks-table tr.clickable-row {
+  cursor: pointer;
+}
+
+.stocks-table tr.clickable-row:hover td {
+  background: rgba(0, 212, 255, 0.04);
+}
+

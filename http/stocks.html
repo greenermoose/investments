@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Equities - Agentic Investment Advisor</title>
+  <link rel="stylesheet" href="css/roboto-fonts.css" />
+  <link rel="stylesheet" href="css/docs.css?v=4" />
+</head>
+<body>
+  <nav class="docs-sidebar">
+    <a href="index.html" class="docs-brand">
+      <span>Investments Portal</span>
+    </a>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Overview &amp; Guide</div>
+      <a href="index.html" class="docs-nav-link">System Overview</a>
+      <a href="guide.html" class="docs-nav-link">User Guide</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Equity Intelligence</div>
+      <a href="stocks.html" class="docs-nav-link active">Public Equities</a>
+      <a href="docs/sources.html" class="docs-nav-link">Data Sources &amp; Provenance</a>
+    </div>
+    <div class="docs-nav-group">
+      <div class="docs-nav-title">Strategy &amp; Mechanics</div>
+      <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
+      <a href="docs/options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
+      <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
+    </div>
+  </nav>
+
+  <main class="docs-main">
+    <div class="docs-header">
+      <h1>Public Equities Intelligence &amp; SEC Provenance</h1>
+      <p class="docs-lead">Explore the 144 US public equities tracked by the agentic investment system, examine active investment theses, and audit verified primary source SEC EDGAR filings.</p>
+    </div>
+
+    <div class="stats-ribbon">
+      <div class="stat-box">
+        <div class="stat-label">Universe Equities</div>
+        <div class="stat-value" id="stat-total-companies">144</div>
+        <div class="stat-sub">US Exchange-Listed</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Buy Compounders</div>
+        <div class="stat-value" id="stat-buy-count" style="color: #10b981;">51</div>
+        <div class="stat-sub">Capital Appreciation Target</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Hold &amp; CC Yield</div>
+        <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">51</div>
+        <div class="stat-sub">Covered Call Compounding</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Index Members</div>
+        <div class="stat-value" id="stat-index-count" style="color: #818cf8;">127</div>
+        <div class="stat-sub">QQQ &bull; DJIA &bull; S&amp;P 500</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <div class="callout-title">Primary Source Provenance &amp; Multi-Agent Thesis Protocol</div>
+      <p>Every metric, share count, and balance sheet figure in our public database is grounded directly in official SEC EDGAR regulatory filings (10-K, 10-Q, and 8-K). Active investment dossiers in <code>context/theses/*.md</code> are audited weekly against explicit catalyst milestones and invalidation triggers. Click any equity to inspect primary source filings and options modeling.</p>
+    </div>
+
+    <!-- Filter Controls & Search -->
+    <div class="controls-bar">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Search by symbol, company name, moat, or catalyst (e.g. AAPL, NVIDIA, CUDA)..." 
+        />
+      </div>
+
+      <div class="filter-chips" id="status-filters">
+        <button class="chip-btn active" data-filter="ALL">All</button>
+        <button class="chip-btn" data-filter="BUY">Buy</button>
+        <button class="chip-btn" data-filter="HOLD">Hold</button>
+        <button class="chip-btn" data-filter="SELL">Sell</button>
+        <button class="chip-btn" data-filter="AVOID">Avoid</button>
+        <button class="chip-btn" data-filter="INDEX_MEMBER">Index Member</button>
+      </div>
+    </div>
+
+    <!-- View & Sorting Toolbar -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div id="results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Showing 144 of 144 public equities</div>
+      
+      <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <!-- Sector Selector -->
+        <select id="sector-select" class="search-input" style="padding: 6px 12px; font-size: 0.84rem; min-width: 170px; width: auto;">
+          <option value="ALL">All Sectors</option>
+          <option value="Information Technology">Information Technology</option>
+          <option value="Communication Services">Communication Services</option>
+          <option value="Consumer Discretionary">Consumer Discretionary</option>
+          <option value="Consumer Staples">Consumer Staples</option>
+          <option value="Financials">Financials</option>
+          <option value="Health Care">Health Care</option>
+          <option value="Industrials">Industrials</option>
+          <option value="Utilities">Utilities</option>
+          <option value="Energy">Energy</option>
+          <option value="Materials">Materials</option>
+          <option value="Real Estate">Real Estate</option>
+        </select>
+
+        <!-- Sorting Selector -->
+        <select id="sort-select" class="search-input" style="padding: 6px 12px; font-size: 0.84rem; min-width: 175px; width: auto;">
+          <option value="conviction-desc">Sort: Conviction (High)</option>
+          <option value="symbol-asc">Sort: Symbol (A-Z)</option>
+          <option value="roi-desc">Sort: Target ROI (High)</option>
+          <option value="ev-desc">Sort: Market Cap / EV (High)</option>
+        </select>
+
+        <!-- View Mode Switcher -->
+        <div class="view-switcher" id="view-switcher">
+          <button class="view-btn active" data-view="grid" title="Grid Card View">Grid Cards</button>
+          <button class="view-btn" data-view="dossiers" title="Expanded Dossier View">Dossiers</button>
+          <button class="view-btn" data-view="table" title="Dense Table View">Data Table</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- View 1: Grid Container -->
+    <div class="company-grid" id="company-grid">
+      <!-- Injected dynamically via JavaScript -->
+    </div>
+
+    <!-- View 2: Expanded Dossiers Container -->
+    <div id="dossiers-container" style="display: none; flex-direction: column; gap: 24px; margin-top: 16px;">
+      <!-- Injected dynamically via JavaScript -->
+    </div>
+
+    <!-- View 3: Dense Data Table Container -->
+    <div id="table-view-container" class="stocks-table-container" style="display: none;">
+      <table class="stocks-table">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Company Name</th>
+            <th>Sector &amp; Industry</th>
+            <th>Status</th>
+            <th>Indices</th>
+            <th>Conviction</th>
+            <th>Predicted Range</th>
+            <th>Target ROI</th>
+            <th>Enterprise Value</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="stocks-table-tbody">
+          <!-- Injected dynamically via JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Company Deep-Dive Modal Drawer -->
+    <div id="company-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;">
+              <h3 id="modal-symbol-title" style="margin: 0; color: #00d4ff; font-size: 1.4rem;">AAPL</h3>
+              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple Inc.</span>
+            </div>
+            <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">Information Technology &bull; Consumer Electronics & Software</div>
+          </div>
+          <button id="modal-close" class="modal-close-btn" title="Close modal">&times;</button>
+        </div>
+
+        <div class="modal-nav-tabs">
+          <button class="modal-tab active" data-tab="tab-overview">Thesis &amp; Conviction Dossier</button>
+          <button class="modal-tab" data-tab="tab-sec">SEC EDGAR Provenance</button>
+          <button class="modal-tab" data-tab="tab-strategy">Strategy &amp; Options Modeling</button>
+        </div>
+
+        <div class="modal-body">
+          <!-- Tab 1: Overview & Thesis -->
+          <div id="tab-overview" class="modal-tab-content">
+            <div class="company-metrics-grid" style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+              <div class="metric-item">
+                <span class="metric-label">Thesis Status</span>
+                <span class="metric-val" id="modal-status-badge">BUY</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Conviction Score</span>
+                <span class="metric-val" id="modal-conviction" style="color: #00d4ff;">9.2 / 10.0</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Predicted Range</span>
+                <span class="metric-val" id="modal-price-range">$228.40 &rarr; $275.00</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Target ROI</span>
+                <span class="metric-val" id="modal-target-roi" style="color: #10b981;">20.4%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Enterprise Value</span>
+                <span class="metric-val" id="modal-ev">$4,513.25 B</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Shares Out. (B)</span>
+                <span class="metric-val" id="modal-shares-out">14.69 B</span>
+              </div>
+            </div>
+
+            <h4 style="margin: 16px 0 8px 0; color: #ffffff;">Business Profile</h4>
+            <p id="modal-description" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;"></p>
+
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Competitive Moat Analysis</h4>
+            <div class="callout" style="margin: 8px 0 16px 0; border-left: 3px solid #00d4ff;">
+              <p id="modal-moat" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+            </div>
+
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Anticipated Catalysts &amp; Timeline</h4>
+            <div class="callout tip" style="margin: 8px 0 16px 0;">
+              <p id="modal-catalyst" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+            </div>
+
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)</h4>
+            <div class="callout warning" style="margin: 8px 0 16px 0;">
+              <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+            </div>
+          </div>
+
+          <!-- Tab 2: SEC Provenance & Primary Source Filings -->
+          <div id="tab-sec" class="modal-tab-content" style="display: none;">
+            <div class="d-flex justify-between align-center" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h4 style="margin: 0 0 4px 0; color: #ffffff;">Audited SEC EDGAR Regulatory Records</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Direct accession links to verified filings submitted to the US Securities and Exchange Commission.</p>
+              </div>
+              <a id="modal-sec-browse-btn" href="#" target="_blank" rel="noopener noreferrer" class="link-btn">
+                Browse SEC EDGAR Directory &rarr;
+              </a>
+            </div>
+
+            <div class="provenance-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Form Type</th>
+                    <th>Filing Date</th>
+                    <th>Period End</th>
+                    <th>Reported Revenue</th>
+                    <th>Shares Outstanding</th>
+                    <th>Primary Source Link</th>
+                  </tr>
+                </thead>
+                <tbody id="modal-filings-tbody">
+                  <!-- Filings rows injected via JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout important" style="margin-top: 20px;">
+              <div class="callout-title">XBRL Data Provenance &amp; Verification</div>
+              <p>Financial facts are extracted directly from company XBRL interactive data instances filed with the SEC. If discrepancies occur, our ingestion agent audits the raw accession HTML document and records reconciliations in the errata log.</p>
+            </div>
+          </div>
+
+          <!-- Tab 3: Options Strategy & Execution Limits -->
+          <div id="tab-strategy" class="modal-tab-content" style="display: none;">
+            <h4 style="margin: 0 0 8px 0; color: #ffffff;">Options Modeling &amp; Limit Order Guidelines</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Under our weekly deliberation protocol, the Derivatives Specialist models Black-Scholes pricing to establish optimal entry and income harvest levels.</p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Strategy Type</th>
+                  <th>Target Strike Delta</th>
+                  <th>Expiration Window</th>
+                  <th>Rule &amp; Execution Objective</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Cash-Secured Put (CSP)</strong></td>
+                  <td><code>0.15 - 0.25 &Delta;</code></td>
+                  <td>30 - 45 DTE</td>
+                  <td>Sell OTM puts on pullbacks at modeled limit prices to acquire shares at attractive discounts or collect annualized premium yields &gt;15%.</td>
+                </tr>
+                <tr>
+                  <td><strong>Covered Call (CC)</strong></td>
+                  <td><code>0.20 - 0.30 &Delta;</code></td>
+                  <td>30 - 45 DTE</td>
+                  <td>Sell OTM calls on 100-share lots at strikes strictly above benchmark entry price to generate cash yield without sacrificing long-term compounding upside.</td>
+                </tr>
+                <tr>
+                  <td><strong>Defensive Credit Roll</strong></td>
+                  <td>Net Credit Only</td>
+                  <td>Next Monthly Cycle</td>
+                  <td>Roll in-the-money puts down and out or tested calls up and out strictly for positive cash credit to reduce position risk.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="callout" style="margin-top: 20px;">
+              <div class="callout-title">Portfolio Isolation &amp; SGOV Cash Collateral</div>
+              <p>All unallocated cash securing put options is held in <strong>SGOV</strong> (iShares 0-3 Month Treasury Bond ETF), earning risk-free yield while maintaining complete liquidity for Monday execution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let universeData = [];
+    let currentFilter = 'ALL';
+    let currentSector = 'ALL';
+    let currentSearch = '';
+    let currentSort = 'conviction-desc';
+    let currentView = 'grid'; // 'grid' | 'dossiers' | 'table'
+
+    const formatCurrency = (val) => {
+      if (val === null || val === undefined || isNaN(val)) return '-';
+      if (Math.abs(val) >= 1e12) return '$' + (val / 1e12).toFixed(2) + ' T';
+      if (Math.abs(val) >= 1e9) return '$' + (val / 1e9).toFixed(2) + ' B';
+      if (Math.abs(val) >= 1e6) return '$' + (val / 1e6).toFixed(2) + ' M';
+      return '$' + Number(val).toLocaleString('en-US', { maximumFractionDigits: 2 });
+    };
+
+    const formatSharesB = (val) => {
+      if (val === null || val === undefined || isNaN(val)) return '-';
+      const b = (val >= 1e6) ? (val / 1e9) : Number(val);
+      if (b < 1) {
+        return Number(b.toFixed(3)).toString();
+      }
+      return b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    };
+
+    const formatEVInBillions = (val) => {
+      if (val === null || val === undefined || isNaN(val)) return '-';
+      const b = (val >= 1e6) ? (val / 1e9) : Number(val);
+      if (b < 1 && b > 0) {
+        return '$' + Number(b.toFixed(3)).toString();
+      }
+      return '$' + b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    };
+
+    function renderIndexBadges(indices) {
+      if (!indices || indices.length === 0) return '<span class="badge-index badge-other">UNINDEXED</span>';
+      return `<div class="index-badges">` + indices.map(idx => {
+        const u = idx.toUpperCase();
+        const cls = u === 'SP500' ? 'badge-sp500' : (u === 'DJIA' ? 'badge-djia' : 'badge-qqq');
+        return `<span class="badge-index ${cls}">${idx}</span>`;
+      }).join('') + `</div>`;
+    }
+
+    function getFilteredAndSortedData() {
+      let filtered = universeData.filter(item => {
+        // Status & Index filter
+        if (currentFilter === 'INDEX_MEMBER') {
+          if (!item.is_index_member) return false;
+        } else if (currentFilter !== 'ALL') {
+          if (item.thesis_status !== currentFilter) return false;
+        }
+        
+        // Sector filter
+        if (currentSector !== 'ALL' && item.sector !== currentSector) return false;
+        
+        // Search query
+        if (currentSearch.trim() !== '') {
+          const query = currentSearch.toLowerCase();
+          const matchSym = item.symbol && item.symbol.toLowerCase().includes(query);
+          const matchName = item.name && item.name.toLowerCase().includes(query);
+          const matchSec = item.sector && item.sector.toLowerCase().includes(query);
+          const matchInd = item.industry && item.industry.toLowerCase().includes(query);
+          const matchMoat = item.moat && item.moat.toLowerCase().includes(query);
+          const matchCat = item.latest_catalyst && item.latest_catalyst.toLowerCase().includes(query);
+          if (!matchSym && !matchName && !matchSec && !matchInd && !matchMoat && !matchCat) return false;
+        }
+        return true;
+      });
+
+      // Sorting
+      filtered.sort((a, b) => {
+        if (currentSort === 'conviction-desc') {
+          return (b.conviction_score || 0) - (a.conviction_score || 0);
+        } else if (currentSort === 'symbol-asc') {
+          return a.symbol.localeCompare(b.symbol);
+        } else if (currentSort === 'roi-desc') {
+          const roiA = parseFloat(a.target_roi) || 0;
+          const roiB = parseFloat(b.target_roi) || 0;
+          return roiB - roiA;
+        } else if (currentSort === 'ev-desc') {
+          const evA = a.enterprise_value || (a.enterprise_value_b ? a.enterprise_value_b * 1e9 : 0) || 0;
+          const evB = b.enterprise_value || (b.enterprise_value_b ? b.enterprise_value_b * 1e9 : 0) || 0;
+          return evB - evA;
+        }
+        return 0;
+      });
+
+      return filtered;
+    }
+
+    async function loadUniverse() {
+      try {
+        const response = await fetch('data/universe.json');
+        if (!response.ok) throw new Error('Failed to load universe data');
+        universeData = await response.json();
+        
+        // Update statistics ribbon
+        document.getElementById('stat-total-companies').textContent = universeData.length;
+        const buyCount = universeData.filter(c => c.thesis_status === 'BUY').length;
+        const holdCount = universeData.filter(c => c.thesis_status === 'HOLD').length;
+        const indexCount = universeData.filter(c => c.is_index_member).length;
+        
+        document.getElementById('stat-buy-count').textContent = buyCount;
+        document.getElementById('stat-hold-count').textContent = holdCount;
+        document.getElementById('stat-index-count').textContent = indexCount;
+
+        renderCurrentView();
+        checkUrlHash();
+      } catch (err) {
+        console.error('Error loading public equities:', err);
+        document.getElementById('company-grid').innerHTML = `
+          <div class="callout warning" style="grid-column: 1 / -1;">
+            <div class="callout-title">Unable to Load Public Equities Data</div>
+            <p>Could not retrieve <code>data/universe.json</code>. Please verify the local web server is running.</p>
+          </div>
+        `;
+      }
+    }
+
+    function renderCurrentView() {
+      const data = getFilteredAndSortedData();
+      document.getElementById('results-count').textContent = `Showing ${data.length} of ${universeData.length} public equities`;
+
+      const gridContainer = document.getElementById('company-grid');
+      const dossiersContainer = document.getElementById('dossiers-container');
+      const tableContainer = document.getElementById('table-view-container');
+
+      if (currentView === 'grid') {
+        gridContainer.style.display = 'grid';
+        dossiersContainer.style.display = 'none';
+        tableContainer.style.display = 'none';
+        renderGrid(data);
+      } else if (currentView === 'dossiers') {
+        gridContainer.style.display = 'none';
+        dossiersContainer.style.display = 'flex';
+        tableContainer.style.display = 'none';
+        renderDossiers(data);
+      } else if (currentView === 'table') {
+        gridContainer.style.display = 'none';
+        dossiersContainer.style.display = 'none';
+        tableContainer.style.display = 'block';
+        renderTable(data);
+      }
+    }
+
+    function renderGrid(data) {
+      const grid = document.getElementById('company-grid');
+      grid.innerHTML = '';
+
+      if (data.length === 0) {
+        grid.innerHTML = `
+          <div class="callout" style="grid-column: 1 / -1; text-align: center; padding: 32px;">
+            <div class="callout-title">No matching public equities found</div>
+            <p>Try adjusting your search keywords or filter criteria.</p>
+          </div>
+        `;
+        return;
+      }
+
+      data.forEach(company => {
+        const card = document.createElement('div');
+        card.className = 'company-card';
+        card.onclick = () => openCompanyModal(company);
+
+        const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+        const statusClass = statusKey.toLowerCase();
+        const formattedStatus = statusKey;
+
+        const entryPrice = company.entry_price || company.current_price || 0;
+        const targetExit = company.target_exit_price || 0;
+
+        card.innerHTML = `
+          <div>
+            <div class="company-card-header">
+              <div class="company-symbol-box">
+                <span class="company-symbol">${company.symbol}</span>
+                <span class="company-price-prediction">$${entryPrice.toFixed(2)} to $${targetExit.toFixed(2)}</span>
+              </div>
+              <span class="badge-status ${statusClass}">${formattedStatus}</span>
+            </div>
+
+            <div class="company-name">${company.name || company.symbol}</div>
+            <div class="company-sector">${company.sector || 'US Equity'} &bull; ${company.industry || ''}</div>
+            
+            <p class="company-desc">${company.description || 'Publicly traded company tracked by the investment advisor.'}</p>
+            
+            <div class="company-metrics-grid">
+              <div class="metric-item">
+                <span class="metric-label">Target ROI</span>
+                <span class="metric-val" style="color: #10b981;">${company.target_roi || '20.0%'}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Conviction</span>
+                <span class="metric-val" style="color: #00d4ff;">${company.conviction_score ? company.conviction_score.toFixed(1) + ' / 10' : '-'}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Enterprise Value (B)</span>
+                <span class="metric-val">${formatEVInBillions(company.enterprise_value || company.enterprise_value_b)}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Shares Out. (B)</span>
+                <span class="metric-val">${formatSharesB(company.shares_outstanding || company.shares_outstanding_b)}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="company-footer">
+            <div class="footer-index-chips">
+              ${renderIndexBadges(company.indices)}
+            </div>
+            <span class="inspect-dossier-btn">
+              Inspect Dossier &rarr;
+            </span>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    function renderDossiers(data) {
+      const container = document.getElementById('dossiers-container');
+      container.innerHTML = '';
+
+      if (data.length === 0) {
+        container.innerHTML = `
+          <div class="callout" style="text-align: center; padding: 32px;">
+            <div class="callout-title">No matching investment dossiers found</div>
+            <p>Try adjusting your search keywords or filter criteria.</p>
+          </div>
+        `;
+        return;
+      }
+
+      data.forEach(company => {
+        const card = document.createElement('div');
+        card.className = 'step-card';
+        card.style.display = 'block';
+
+        const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+        const statusClass = statusKey.toLowerCase();
+        const formattedStatus = statusKey;
+        const indexChipsHtml = renderIndexBadges(company.indices);
+
+        const entryPriceFormatted = company.entry_price ? `$${company.entry_price.toFixed(2)}` : '-';
+        const targetPriceFormatted = company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-';
+        const currentPriceFormatted = company.current_price ? `$${company.current_price.toFixed(2)}` : '-';
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <h3 style="margin: 0; font-size: 1.35rem; color: #00d4ff;">${company.symbol} &bull; ${company.name || company.symbol}</h3>
+                <span class="badge-conviction">Conviction: ${company.conviction_score ? company.conviction_score.toFixed(1) + ' / 10.0' : '-'}</span>
+                ${indexChipsHtml}
+              </div>
+              <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">
+                ${company.sector || 'US Equity'} &bull; ${company.industry || ''} &bull; Current Market Price: <strong style="color: #ffffff;">${currentPriceFormatted}</strong>
+              </div>
+            </div>
+            <span class="badge-status ${statusClass}">${formattedStatus}</span>
+          </div>
+
+          <div class="company-metrics-grid" style="margin: 12px 0; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+            <div class="metric-item">
+              <span class="metric-label">Benchmark Entry Price</span>
+              <span class="metric-val">${entryPriceFormatted}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Target Exit Price</span>
+              <span class="metric-val" style="color: #10b981;">${targetPriceFormatted}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Expected Holding Period</span>
+              <span class="metric-val">${company.holding_period || '3 to 5 Years'}</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Target Annualized ROI</span>
+              <span class="metric-val" style="color: #00d4ff;">${company.target_roi || '20.0%'}</span>
+            </div>
+          </div>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+            ${company.description || 'Investment thesis under fundamental analysis.'}
+          </p>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Competitive Moat &amp; Strategic Advantages</h4>
+          <p style="font-size: 0.92rem; color: #e2e8f0; line-height: 1.5; margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.2); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #00d4ff;">
+            ${company.moat || 'Economic moat under evaluation.'}
+          </p>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar &amp; Milestones</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.15); padding: 8px 12px; border-radius: 6px;">
+            ${company.latest_catalyst || 'Upcoming earnings reports and capital allocation updates.'}
+          </p>
+
+          <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
+          <div class="callout warning" style="margin: 8px 0 16px 0;">
+            <p style="margin: 0; font-size: 0.9rem;">
+              ${company.invalidation_criteria || 'Structural margin decline or loss of competitive moat.'}
+            </p>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 10px;">
+            <a href="${company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`}" target="_blank" rel="noopener noreferrer" class="provenance-pill">
+              Primary SEC EDGAR Filings (${company.filings_count || (company.filings ? company.filings.length : 0)} Records) &rarr;
+            </a>
+            <button class="link-btn" onclick="openCompanyModalBySymbol('${company.symbol}')">
+              Open Full Interactive Modal &rarr;
+            </button>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('stocks-table-tbody');
+      tbody.innerHTML = '';
+
+      if (data.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="10" style="text-align: center; padding: 28px; color: var(--text-muted);">
+              No matching public equities found.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      data.forEach(company => {
+        const row = document.createElement('tr');
+        row.className = 'clickable-row';
+        row.onclick = () => openCompanyModal(company);
+
+        const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+        const statusClass = statusKey.toLowerCase();
+        const entryPrice = company.entry_price || company.current_price || 0;
+        const targetExit = company.target_exit_price || 0;
+
+        row.innerHTML = `
+          <td><strong style="color: #00d4ff; font-size: 0.95rem;">${company.symbol}</strong></td>
+          <td style="color: #ffffff; font-weight: 500;">${company.name || company.symbol}</td>
+          <td><span style="font-size: 0.8rem;">${company.sector || '-'}</span></td>
+          <td><span class="badge-status ${statusClass}">${statusKey}</span></td>
+          <td>${renderIndexBadges(company.indices)}</td>
+          <td style="font-weight: 600; color: #00d4ff;">${company.conviction_score ? company.conviction_score.toFixed(1) : '-'}</td>
+          <td>$${entryPrice.toFixed(2)} &rarr; $${targetExit.toFixed(2)}</td>
+          <td style="color: #10b981; font-weight: 600;">${company.target_roi || '20.0%'}</td>
+          <td>${formatEVInBillions(company.enterprise_value || company.enterprise_value_b)} B</td>
+          <td>
+            <button class="link-btn" style="padding: 4px 8px; font-size: 0.76rem;" onclick="event.stopPropagation(); openCompanyModalBySymbol('${company.symbol}')">
+              Dossier &rarr;
+            </button>
+          </td>
+        `;
+
+        tbody.appendChild(row);
+      });
+    }
+
+    function openCompanyModalBySymbol(symbol) {
+      const company = universeData.find(c => c.symbol === symbol);
+      if (company) {
+        openCompanyModal(company);
+      }
+    }
+
+    function openCompanyModal(company) {
+      window.location.hash = company.symbol;
+      document.getElementById('modal-symbol-title').textContent = company.symbol;
+      document.getElementById('modal-company-name').textContent = company.name || company.symbol;
+      
+      const indexBadgesHtml = renderIndexBadges(company.indices);
+      document.getElementById('modal-sector-text').innerHTML = `${company.sector || 'US Equity'} &bull; ${company.industry || ''} ${indexBadgesHtml ? '&nbsp;&nbsp;' + indexBadgesHtml : ''}`;
+
+      // Status badge
+      const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+      const statusEl = document.getElementById('modal-status-badge');
+      statusEl.textContent = statusKey;
+      statusEl.className = 'badge-status ' + statusKey.toLowerCase();
+
+      // Overview Tab
+      const entryPrice = company.entry_price || company.current_price || 0;
+      const targetExit = company.target_exit_price || 0;
+
+      document.getElementById('modal-conviction').textContent = company.conviction_score ? `${company.conviction_score.toFixed(1)} / 10.0` : '-';
+      document.getElementById('modal-price-range').innerHTML = `$${entryPrice.toFixed(2)} &rarr; $${targetExit.toFixed(2)}`;
+      document.getElementById('modal-target-roi').textContent = company.target_roi || '20.0%';
+      document.getElementById('modal-ev').textContent = formatEVInBillions(company.enterprise_value || company.enterprise_value_b) + ' B';
+      document.getElementById('modal-shares-out').textContent = formatSharesB(company.shares_outstanding || company.shares_outstanding_b);
+      document.getElementById('modal-description').textContent = company.description || 'No description available.';
+      document.getElementById('modal-moat').textContent = company.moat || 'Economic moat under fundamental review.';
+      document.getElementById('modal-catalyst').textContent = company.latest_catalyst || 'Upcoming earnings and capital allocation reviews.';
+      document.getElementById('modal-invalidation').textContent = company.invalidation_criteria || 'Structural degradation of return on invested capital or secular market share loss.';
+
+      // SEC Tab
+      document.getElementById('modal-sec-browse-btn').href = company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`;
+      
+      const filingsTbody = document.getElementById('modal-filings-tbody');
+      filingsTbody.innerHTML = '';
+
+      if (company.filings && company.filings.length > 0) {
+        company.filings.forEach(f => {
+          const row = document.createElement('tr');
+          const rev = f.data && f.data.revenue ? formatCurrency(f.data.revenue) : '-';
+          const shares = f.data && f.data.shares_outstanding ? (formatSharesB(f.data.shares_outstanding) + ' B') : '-';
+          const filingUrl = f.filing_url || company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`;
+          
+          row.innerHTML = `
+            <td><code>${f.type || 'Filing'}</code></td>
+            <td>${f.filing_date || '-'}</td>
+            <td>${f.period_end || '-'}</td>
+            <td style="font-weight: 500;">${rev}</td>
+            <td>${shares}</td>
+            <td>
+              <a href="${filingUrl}" target="_blank" rel="noopener noreferrer" class="link-btn">
+                View Primary Source &rarr;
+              </a>
+            </td>
+          `;
+          filingsTbody.appendChild(row);
+        });
+      } else {
+        filingsTbody.innerHTML = `
+          <tr>
+            <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 20px;">
+              No granular filings cached for this ticker. <a href="${company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`}" target="_blank" style="color: var(--accent-color);">Browse SEC EDGAR directly</a>.
+            </td>
+          </tr>
+        `;
+      }
+
+      // Reset active tab to overview
+      switchTab('tab-overview');
+
+      // Show modal
+      document.getElementById('company-modal').style.display = 'flex';
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.modal-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
+      });
+      document.querySelectorAll('.modal-tab-content').forEach(content => {
+        content.style.display = content.id === tabId ? 'block' : 'none';
+      });
+    }
+
+    function checkUrlHash() {
+      const hash = window.location.hash.replace('#', '').trim().toUpperCase();
+      if (hash && universeData.length > 0) {
+        const found = universeData.find(c => c.symbol === hash);
+        if (found) {
+          openCompanyModal(found);
+        }
+      }
+    }
+
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      loadUniverse();
+
+      // Search input
+      document.getElementById('search-input').addEventListener('input', (e) => {
+        currentSearch = e.target.value;
+        renderCurrentView();
+      });
+
+      // Sector select
+      document.getElementById('sector-select').addEventListener('change', (e) => {
+        currentSector = e.target.value;
+        renderCurrentView();
+      });
+
+      // Sort select
+      document.getElementById('sort-select').addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        renderCurrentView();
+      });
+
+      // Filter chips
+      document.querySelectorAll('#status-filters .chip-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#status-filters .chip-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          renderCurrentView();
+        });
+      });
+
+      // View mode switcher
+      document.querySelectorAll('#view-switcher .view-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#view-switcher .view-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentView = btn.getAttribute('data-view');
+          renderCurrentView();
+        });
+      });
+
+      // Modal tabs
+      document.querySelectorAll('.modal-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          switchTab(btn.getAttribute('data-tab'));
+        });
+      });
+
+      // Close modal
+      const closeModal = () => {
+        document.getElementById('company-modal').style.display = 'none';
+        if (window.location.hash) {
+          history.pushState("", document.title, window.location.pathname + window.location.search);
+        }
+      };
+
+      document.getElementById('modal-close').addEventListener('click', closeModal);
+
+      document.getElementById('company-modal').addEventListener('click', (e) => {
+        if (e.target.id === 'company-modal') {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+
+      window.addEventListener('hashchange', checkUrlHash);
+    });
+  </script>
+</body>
+</html>

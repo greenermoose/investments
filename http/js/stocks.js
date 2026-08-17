@@ -83,8 +83,8 @@ function getFilteredAndSortedData() {
     } else if (currentSort === 'volume-desc') {
       return (b.day_volume || 0) - (a.day_volume || 0);
     } else if (currentSort === 'roi-desc') {
-      const roiA = parseFloat(a.target_roi) || 0;
-      const roiB = parseFloat(b.target_roi) || 0;
+      const roiA = a.annualized_roi_pct !== undefined ? a.annualized_roi_pct : (parseFloat(a.target_roi) || 0);
+      const roiB = b.annualized_roi_pct !== undefined ? b.annualized_roi_pct : (parseFloat(b.target_roi) || 0);
       return roiB - roiA;
     } else if (currentSort === 'ev-desc') {
       const evA = a.enterprise_value || (a.enterprise_value_b ? a.enterprise_value_b * 1e9 : 0) || 0;

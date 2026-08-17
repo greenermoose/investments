@@ -89,11 +89,68 @@ export function openCompanyModal(company) {
   if (isBuy) {
     methodText = `Target Exit Price of $${targetExit.toFixed(2)} represents a verified 20%+ annualized compound growth hurdle (${company.target_roi}) over an expected ${company.holding_period || '3 to 5 Years'} holding period, anchored to the verified entry price of $${entryPrice.toFixed(2)}.`;
   } else if (isHold) {
-    methodText = `Target Exit Price of $${targetExit.toFixed(2)} reflects the upper technical resistance band / covered call strike cap over 3 years, generating 20.0% annualized return through combined option harvest yield and capital appreciation.`;
+    methodText = `Target Exit Price of $${targetExit.toFixed(2)} reflects the upper technical resistance band / covered call strike cap over ${company.holding_period_years || 3.0} years, generating 20.0% annualized return through combined option harvest yield and capital appreciation.`;
   } else {
     methodText = `Position marked for ${statusKey}; benchmark price aligned with current market level to evaluate risk reduction.`;
   }
   if (methodEl) methodEl.textContent = methodText;
+
+  // Tab 1: Return Engine Parameter Breakdown
+  const engBadgeEl = document.getElementById('modal-engine-strategy-badge');
+  const engEntryStratEl = document.getElementById('modal-engine-entry-strat');
+  const engExitStratEl = document.getElementById('modal-engine-exit-strat');
+  const engEntryDateEl = document.getElementById('modal-engine-entry-date');
+  const engExitDateEl = document.getElementById('modal-engine-exit-date');
+  const engCspEl = document.getElementById('modal-engine-csp-proceeds');
+  const engCcEl = document.getElementById('modal-engine-cc-proceeds');
+  const engOutlayEl = document.getElementById('modal-engine-net-outlay');
+  const engProceedsEl = document.getElementById('modal-engine-total-proceeds');
+  const engCapGainEl = document.getElementById('modal-engine-cap-gain');
+  const engOptYieldEl = document.getElementById('modal-engine-opt-yield');
+  const engTotalRoiEl = document.getElementById('modal-engine-total-roi');
+  const engCagrEl = document.getElementById('modal-engine-cagr');
+
+  const entryStrat = company.entry_strategy || 'LIMIT_BUY';
+  const exitStrat = company.exit_strategy || 'LIMIT_SELL';
+  if (engBadgeEl) {
+    engBadgeEl.textContent = `${entryStrat} -> ${exitStrat}`;
+    engBadgeEl.className = 'badge-status ' + (isBuy ? 'buy' : (isHold ? 'hold' : 'avoid'));
+  }
+  if (engEntryStratEl) engEntryStratEl.textContent = entryStrat === 'SELL_CSP' ? 'Sell Cash-Secured Put (CSP)' : 'Direct Limit Buy Order';
+  if (engExitStratEl) engExitStratEl.textContent = exitStrat === 'SELL_COVERED_CALLS' ? 'Covered Call Harvesting (CC)' : 'Direct Limit Sell Target';
+  if (engEntryDateEl) engEntryDateEl.textContent = company.entry_date || '2026-08-17';
+  if (engExitDateEl) engExitDateEl.textContent = `${company.target_exit_date || '-'} (${company.holding_period_years || 3.0} Yrs)`;
+  if (engCspEl) engCspEl.textContent = `$${(company.csp_proceeds || 0).toFixed(2)}`;
+  if (engCcEl) engCcEl.textContent = `$${(company.cc_proceeds || 0).toFixed(2)}`;
+  if (engOutlayEl) engOutlayEl.textContent = `$${(company.initial_capital_outlay || entryPrice).toFixed(2)}`;
+  if (engProceedsEl) engProceedsEl.textContent = `$${(company.total_proceeds || targetExit).toFixed(2)}`;
+  if (engCapGainEl) engCapGainEl.textContent = `+${(company.capital_gain_pct || 0).toFixed(1)}%`;
+  if (engOptYieldEl) engOptYieldEl.textContent = `+${(company.options_yield_pct || 0).toFixed(1)}%`;
+  if (engTotalRoiEl) engTotalRoiEl.textContent = `+${(company.total_roi_pct || 0).toFixed(1)}%`;
+  if (engCagrEl) engCagrEl.textContent = company.annualized_roi_pct ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : (company.target_roi || '20.0%');
+
+  // Tab 4: Active Position Derivatives Roadmap
+  const tab4StratNameEl = document.getElementById('modal-tab4-strategy-name');
+  const tab4EntryActionEl = document.getElementById('modal-tab4-entry-action');
+  const tab4ExitActionEl = document.getElementById('modal-tab4-exit-action');
+  const tab4HarvestEl = document.getElementById('modal-tab4-options-harvest');
+
+  if (tab4StratNameEl) tab4StratNameEl.textContent = `${entryStrat} / ${exitStrat}`;
+  if (tab4EntryActionEl) {
+    tab4EntryActionEl.textContent = entryStrat === 'SELL_CSP' 
+      ? `Sell 0.20Δ CSP on pullbacks (Collect $${(company.csp_proceeds || 0).toFixed(2)}/sh discount)` 
+      : `Submit Limit Buy at $${entryPrice.toFixed(2)}`;
+  }
+  if (tab4ExitActionEl) {
+    tab4ExitActionEl.textContent = exitStrat === 'SELL_COVERED_CALLS' 
+      ? `Sell 30-45 DTE Calls above $${targetExit.toFixed(2)} target strike` 
+      : `Submit GTC Limit Sell at $${targetExit.toFixed(2)}`;
+  }
+  if (tab4HarvestEl) {
+    tab4HarvestEl.textContent = exitStrat === 'SELL_COVERED_CALLS' 
+      ? `$${(company.cc_proceeds || 0).toFixed(2)} CC proceeds (+${(company.options_yield_pct || 0).toFixed(1)}% yield)` 
+      : (entryStrat === 'SELL_CSP' ? `$${(company.csp_proceeds || 0).toFixed(2)} CSP premium` : 'None (Pure Equities)');
+  }
 
   // Tab 2: Technicals Tab
   const sma20El = document.getElementById('modal-sma-20');

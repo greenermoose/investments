@@ -74,6 +74,7 @@ export function createGridCard(company, onSelect) {
     <div class="company-footer">
       <div class="footer-index-chips">
         ${renderIndexBadges(company.indices)}
+        ${company.exit_strategy === 'SELL_COVERED_CALLS' ? '<span class="provenance-pill" style="font-size: 0.72rem; padding: 2px 6px; color: #00d4ff;">CC Harvest</span>' : (company.entry_strategy === 'SELL_CSP' ? '<span class="provenance-pill" style="font-size: 0.72rem; padding: 2px 6px; color: #10b981;">CSP Entry</span>' : '')}
       </div>
       <span class="inspect-dossier-btn">
         Inspect Dossier &rarr;

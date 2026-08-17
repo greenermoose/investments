@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.12.0] - 2026-08-17
+
+### Deterministic Investment Return Engine & Target ROI Grounding
+- **Pure Python Return Engine (`scripts/return_engine.py`):** Developed a deterministic mathematical calculation engine computing unannualized Total ROI (%) and Compound Annual Growth Rate (CAGR / Annualized ROI %) across multi-year holding horizons.
+- **Purchase & Sale Strategy Modeling:**
+  - `SELL_CSP`: Cash-Secured Put entry modeling upfront put premium collections ($/sh) and discounted net capital outlay.
+  - `LIMIT_BUY`: Baseline direct limit order entry at benchmark price.
+  - `SELL_COVERED_CALLS`: Multi-year covered call yield harvesting modeling cumulative call premium proceeds ($/sh) alongside capital appreciation targets.
+  - `LIMIT_SELL`: Direct limit order exit targets.
+- **Formal Return Engine Schema (`context/schemas/return_engine_schema.json`):** Defined strict JSON schema specification for thesis parameters, options proceeds, date ranges, cash outlays, proceeds, and calculated CAGR metrics.
+- **Universe Integration (`scripts/build_universe_json.py`):** Integrated `return_engine.py` to evaluate investment theses for all 144 universe equities, synchronizing `scripts/data/company_meta.json` and `http/data/universe.json`.
+- **Quality Control Audit Integration (`scripts/quality_control.py`):** Added validation checks enforcing return engine strategy enum conformance and numerical CAGR verification.
+- **Web UI & Modal Drawer Enhancement (`http/stocks.html`, `http/js/components/stocks/`):**
+  - Updated `GridCard.js`, `DossierCard.js`, and `TableRow.js` with dynamic Return Engine strategy pills, harvest metrics, and annualized ROI sorting.
+  - Built interactive "Return Engine Execution & Return Breakdown" panels in `ModalDrawer.js` (Overview and Options Strategy tabs), displaying full cash flow decomposition, capital gains vs options yields, and annualized compound growth.
+
 ## [2.11.0] - 2026-08-17
 
 ### Deterministic Quality Control Tool (scripts/quality_control.py) & Data Integrity Hardening

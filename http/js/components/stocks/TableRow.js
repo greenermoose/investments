@@ -42,7 +42,10 @@ export function createTableRow(company, onSelect) {
       <span style="font-size: 0.74rem; color: var(--text-muted);">${volRatio} 20d avg</span>
     </td>
     <td>$${entryPrice.toFixed(2)} &rarr; <strong style="color: #10b981;">$${targetExit.toFixed(2)}</strong></td>
-    <td style="color: #00d4ff; font-weight: 600;">${company.target_roi || '20.0%'}</td>
+    <td>
+      <strong style="color: #00d4ff; font-size: 0.88rem;">${company.target_roi || '20.0%'}</strong><br />
+      <span style="font-size: 0.72rem; color: var(--text-muted);">${company.entry_strategy === 'SELL_CSP' ? 'CSP Entry' : (company.exit_strategy === 'SELL_COVERED_CALLS' ? 'CC Harvest' : 'Limit Target')}</span>
+    </td>
     <td>
       <button class="link-btn dossier-btn" style="padding: 4px 8px; font-size: 0.76rem;">
         Dossier &rarr;

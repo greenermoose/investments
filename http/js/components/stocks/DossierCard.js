@@ -79,6 +79,17 @@ export function createDossierCard(company, onSelect) {
       </div>
     </div>
 
+    <div style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 8px 12px; margin: 10px 0 14px 0; font-size: 0.82rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        <strong style="color: #00d4ff;">Return Engine Strategy:</strong> 
+        <span>${company.entry_strategy === 'SELL_CSP' ? 'Sell CSP' : 'Limit Buy'} &rarr; ${company.exit_strategy === 'SELL_COVERED_CALLS' ? 'Covered Call Harvest' : 'Limit Sell'}</span>
+      </div>
+      <div style="color: var(--text-secondary);">
+        ${company.exit_strategy === 'SELL_COVERED_CALLS' ? `Options Harvest: <strong style="color: #10b981;">+$${(company.cc_proceeds || 0).toFixed(2)}/sh (+${(company.options_yield_pct || 0).toFixed(1)}%)</strong>` : (company.entry_strategy === 'SELL_CSP' ? `CSP Discount: <strong style="color: #10b981;">+$${(company.csp_proceeds || 0).toFixed(2)}/sh</strong>` : 'Pure Capital Growth')} 
+        &bull; Total ROI: <strong style="color: #10b981;">+${(company.total_roi_pct || 0).toFixed(1)}%</strong>
+      </div>
+    </div>
+
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
     <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
       ${company.description || 'Investment thesis under fundamental analysis.'}

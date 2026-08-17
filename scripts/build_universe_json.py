@@ -8,6 +8,14 @@ verified market prices, daily trading volume, OHLCV candlestick time-series, and
 import json
 import os
 import re
+import sys
+
+# Ensure scripts directory is in path for module imports
+scripts_dir = os.path.dirname(os.path.abspath(__file__))
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+from return_engine import calculate_annualized_roi, derive_company_thesis_parameters
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -137,33 +145,20 @@ for filename in sorted(all_files):
     tech_resistance_20d = price_info.get("technical_resistance_20d", round(current_price * 1.05, 2))
     historical_candles = price_info.get("historical_candles_30d", [])
 
-    # Grounded Benchmark Entry Price & Target Exit Price Calculation
-    # Formula anchored in real market price and 20%+ annualized CAGR target
-    entry_price = current_price
+    # Run thesis parameters through Return Engine
+    comp_name = meta.get("name") or price_info.get("name") or f"{sym} Corporation"
+    return_params = derive_company_thesis_parameters(
+        symbol=sym,
+        current_price=current_price,
+        thesis_status=thesis_status,
+        conviction_score=conviction_score,
+        holding_period=holding_period,
+        company_name=comp_name
+    )
 
-    # Determine Holding Period Years (T)
-    if "5" in holding_period or "4 to 6" in holding_period:
-        holding_years = 4.0
-    elif "2 to 4" in holding_period:
-        holding_years = 3.0
-    else:
-        holding_years = 3.0
-
-    if thesis_status == "BUY":
-        # Target CAGR >= 20.0% (e.g. 20.0% to 23.0% based on conviction score)
-        annual_cagr = 0.20 if conviction_score < 9.0 else 0.22
-        growth_multiplier = (1.0 + annual_cagr) ** holding_years
-        target_exit_price = round(entry_price * growth_multiplier, 2)
-        roi_pct = ((target_exit_price - entry_price) / entry_price) * 100.0
-        target_roi_str = f"{roi_pct:.1f}% ({annual_cagr*100:.1f}% Ann.)"
-    elif thesis_status == "HOLD":
-        # Covered Call Yield compounding: 30% capital target over 3 years + CC yield = 20% Ann.
-        growth_multiplier = 1.30
-        target_exit_price = round(entry_price * growth_multiplier, 2)
-        target_roi_str = "20.0% (CC Yield)"
-    else:  # SELL or AVOID
-        target_exit_price = entry_price
-        target_roi_str = "N/A (Exit/Avoid)"
+    entry_price = return_params["benchmark_entry_price"]
+    target_exit_price = return_params["target_exit_price"]
+    target_roi_str = return_params["target_roi_str"]
 
     # Update meta entry for persistent grounding
     meta_copy = dict(meta)
@@ -171,6 +166,21 @@ for filename in sorted(all_files):
     meta_copy["entry_price"] = entry_price
     meta_copy["target_exit_price"] = target_exit_price
     meta_copy["target_roi"] = target_roi_str
+    meta_copy["entry_strategy"] = return_params["entry_strategy"]
+    meta_copy["exit_strategy"] = return_params["exit_strategy"]
+    meta_copy["entry_date"] = return_params["entry_date"]
+    meta_copy["target_exit_date"] = return_params["target_exit_date"]
+    meta_copy["csp_proceeds"] = return_params["csp_proceeds"]
+    meta_copy["cc_proceeds"] = return_params["cc_proceeds"]
+    meta_copy["initial_capital_outlay"] = return_params["initial_capital_outlay"]
+    meta_copy["total_proceeds"] = return_params["total_proceeds"]
+    meta_copy["net_profit"] = return_params["net_profit"]
+    meta_copy["holding_period_days"] = return_params["holding_period_days"]
+    meta_copy["holding_period_years"] = return_params["holding_period_years"]
+    meta_copy["capital_gain_pct"] = return_params["capital_gain_pct"]
+    meta_copy["options_yield_pct"] = return_params["options_yield_pct"]
+    meta_copy["total_roi_pct"] = return_params["total_roi_pct"]
+    meta_copy["annualized_roi_pct"] = return_params["annualized_roi_pct"]
     updated_meta[sym] = meta_copy
 
     # Market Cap & Enterprise Value
@@ -186,7 +196,7 @@ for filename in sorted(all_files):
 
     universe.append({
         "symbol": sym,
-        "name": meta.get("name") or price_info.get("name") or f"{sym} Corporation",
+        "name": comp_name,
         "sector": meta.get("sector", "Information Technology"),
         "industry": meta.get("industry", "US Equity"),
         "description": meta.get("description", f"Public company {sym}."),
@@ -210,6 +220,22 @@ for filename in sorted(all_files):
         "technical_resistance_20d": tech_resistance_20d,
         "holding_period": holding_period,
         "target_roi": target_roi_str,
+        "entry_strategy": return_params["entry_strategy"],
+        "exit_strategy": return_params["exit_strategy"],
+        "entry_date": return_params["entry_date"],
+        "target_exit_date": return_params["target_exit_date"],
+        "csp_proceeds": return_params["csp_proceeds"],
+        "cc_proceeds": return_params["cc_proceeds"],
+        "dividend_proceeds": return_params["dividend_proceeds"],
+        "initial_capital_outlay": return_params["initial_capital_outlay"],
+        "total_proceeds": return_params["total_proceeds"],
+        "net_profit": return_params["net_profit"],
+        "holding_period_days": return_params["holding_period_days"],
+        "holding_period_years": return_params["holding_period_years"],
+        "capital_gain_pct": return_params["capital_gain_pct"],
+        "options_yield_pct": return_params["options_yield_pct"],
+        "total_roi_pct": return_params["total_roi_pct"],
+        "annualized_roi_pct": return_params["annualized_roi_pct"],
         "moat": meta.get("moat", "Established commercial moat and customer retention."),
         "invalidation_criteria": meta.get("invalidation_criteria", "Structural margin deterioration or loss of market share."),
         "latest_catalyst": meta.get("latest_catalyst", "Upcoming quarterly earnings and operational updates."),

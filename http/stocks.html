@@ -235,6 +235,65 @@
               </div>
             </div>
 
+            <!-- Return Engine Parameter Breakdown Card -->
+            <div id="modal-return-engine-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <div style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">Return Engine Execution &amp; Return Breakdown</div>
+                <span id="modal-engine-strategy-badge" class="badge-status" style="font-size: 0.76rem; padding: 2px 8px;">LIMIT_BUY &rarr; LIMIT_SELL</span>
+              </div>
+              
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 8px;">
+                <div class="metric-item">
+                  <span class="metric-label">Purchase Strategy</span>
+                  <span class="metric-val" id="modal-engine-entry-strat" style="font-size: 0.88rem; color: #ffffff;">Limit Buy Order</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Sale Strategy</span>
+                  <span class="metric-val" id="modal-engine-exit-strat" style="font-size: 0.88rem; color: #ffffff;">Limit Sell Order</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Entry Date</span>
+                  <span class="metric-val" id="modal-engine-entry-date" style="font-size: 0.88rem; color: #e2e8f0;">2026-08-17</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Target Exit Date</span>
+                  <span class="metric-val" id="modal-engine-exit-date" style="font-size: 0.88rem; color: #e2e8f0;">2029-08-16</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">CSP Put Premium ($/sh)</span>
+                  <span class="metric-val" id="modal-engine-csp-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Covered Call Harvest ($/sh)</span>
+                  <span class="metric-val" id="modal-engine-cc-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Initial Net Outlay ($/sh)</span>
+                  <span class="metric-val" id="modal-engine-net-outlay" style="font-size: 0.88rem; color: #ffffff;">$0.00</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Total Terminal Inflows</span>
+                  <span class="metric-val" id="modal-engine-total-proceeds" style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Capital Appreciation</span>
+                  <span class="metric-val" id="modal-engine-cap-gain" style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Options Cash Yield</span>
+                  <span class="metric-val" id="modal-engine-opt-yield" style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Total Unannualized ROI</span>
+                  <span class="metric-val" id="modal-engine-total-roi" style="font-size: 0.88rem; color: #10b981;">+0.0%</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Compound Annualized ROI</span>
+                  <span class="metric-val" id="modal-engine-cagr" style="font-size: 0.92rem; font-weight: 700; color: #00d4ff;">20.0% Ann.</span>
+                </div>
+              </div>
+            </div>
+
             <h4 style="margin: 16px 0 8px 0; color: #ffffff;">Business Profile</h4>
             <p id="modal-description" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;"></p>
 
@@ -354,6 +413,29 @@
 
           <!-- Tab 4: Options Strategy & Execution Limits -->
           <div id="tab-strategy" class="modal-tab-content" style="display: none;">
+            <!-- Active Company Options Thesis Card -->
+            <div id="modal-tab-strategy-specific" style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+              <div style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px;">Active Position Derivatives Roadmap &amp; Harvest Schedule</div>
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+                <div class="metric-item">
+                  <span class="metric-label">Execution Strategy</span>
+                  <span class="metric-val" id="modal-tab4-strategy-name" style="font-size: 0.88rem; color: #ffffff;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Entry Action</span>
+                  <span class="metric-val" id="modal-tab4-entry-action" style="font-size: 0.88rem; color: #10b981;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Target Exit / Cap</span>
+                  <span class="metric-val" id="modal-tab4-exit-action" style="font-size: 0.88rem; color: #00d4ff;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Options Cash Flow</span>
+                  <span class="metric-val" id="modal-tab4-options-harvest" style="font-size: 0.88rem; color: #10b981;">-</span>
+                </div>
+              </div>
+            </div>
+
             <h4 style="margin: 0 0 8px 0; color: #ffffff;">Options Modeling &amp; Limit Order Guidelines</h4>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Under our weekly deliberation protocol, the Derivatives Specialist models Black-Scholes pricing to establish optimal entry and income harvest levels.</p>
 

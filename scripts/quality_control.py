@@ -583,6 +583,45 @@ class QualityController:
                     "description": f"[{sym}] Missing thesis field '{req_field}'."
                 })
 
+        # Return Engine parameter and arithmetic validation
+        entry_strat = u_entry.get("entry_strategy")
+        exit_strat = u_entry.get("exit_strategy")
+        valid_entry_strats = {"SELL_CSP", "LIMIT_BUY"}
+        valid_exit_strats = {"SELL_COVERED_CALLS", "LIMIT_SELL"}
+
+        if entry_strat and entry_strat not in valid_entry_strats:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "RETURN_ENGINE_STRATEGY",
+                "symbol": sym,
+                "field": "entry_strategy",
+                "actual": entry_strat,
+                "expected": list(valid_entry_strats),
+                "description": f"[{sym}] Invalid entry_strategy '{entry_strat}'."
+            })
+
+        if exit_strat and exit_strat not in valid_exit_strats:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "RETURN_ENGINE_STRATEGY",
+                "symbol": sym,
+                "field": "exit_strategy",
+                "actual": exit_strat,
+                "expected": list(valid_exit_strats),
+                "description": f"[{sym}] Invalid exit_strategy '{exit_strat}'."
+            })
+
+        ann_roi = u_entry.get("annualized_roi_pct")
+        if ann_roi is not None and not isinstance(ann_roi, (int, float)):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "RETURN_ENGINE_MATH",
+                "symbol": sym,
+                "field": "annualized_roi_pct",
+                "actual": ann_roi,
+                "description": f"[{sym}] annualized_roi_pct must be numeric, got {ann_roi}."
+            })
+
         return issues
 
     def check_cross_store_parity(self):

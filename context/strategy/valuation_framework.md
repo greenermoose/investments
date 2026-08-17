@@ -7,12 +7,12 @@ This document defines the quantitative valuation metrics, fundamental quality sc
 - Failure Standard: Total annualized return < 20% over 20 years is defined as strategy failure.
 - Empirical Foundation: Employs proven institutional strategies demonstrated to achieve 20%+ returns across multiple historical market cycles.
 
-## 2. Core Fundamental Quality Screen
-To qualify for portfolio inclusion and thesis authoring, a US exchange-listed company must meet:
-1. Return on Invested Capital (ROIC): ROIC > 15% across 3-5 year averages, verifying structural competitive moat.
-2. Free Cash Flow (FCF) Conversion: FCF / Net Income > 80%, ensuring high earnings quality and cash conversion.
-3. Balance Sheet Strength: Net Debt / EBITDA < 2.5x (excluding financial institutions and utilities).
-4. Organic Revenue Growth: Secular tailwind supporting durable multi-year top-line expansion.
+## 2. Core Quantitative Screening & Solvency Check (Equity Research Agent)
+To qualify for universe onboarding and thesis authoring, a US exchange-listed equity is evaluated against:
+1. Annualized Compounding Potential: High probability of generating >= 20% annualized ROI over a 3- to 5-year investment horizon.
+2. Secular Revenue Trajectory: 3-year projected revenue growth >= 12% driven by durable structural tailwinds.
+3. Balance Sheet Solvency & Runway Verification: Manageable leverage (Debt/Equity < 3.5x for capital-light models) and at least 12-24 months of liquid cash runway for growth companies to eliminate catastrophic bankruptcy risk without dogmatic zero-debt filters.
+4. Competitive Moat & Quality: High ROIC (>15% normalized) or high gross margins (>50%) indicating durable pricing power.
 
 ## 3. Fundamental Valuation Methodologies
 1. Multi-Horizon Revenue & Multiple Framework:

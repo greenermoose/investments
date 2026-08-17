@@ -70,31 +70,31 @@
       <div class="docs-card">
         <h4>1. Portfolio Ingestion Agent</h4>
         <p><strong>Input:</strong> Brokerage screenshot or CSV export in <code>private/snapshots/</code>.</p>
-        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, and SGOV shares. Identifies 100-share blocks eligible for Covered Call income generation.</p>
+        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, and SGOV shares. Identifies 100-share blocks eligible for Covered Call income generation while maintaining strict multi-account isolation.</p>
       </div>
 
       <div class="docs-card">
-        <h4>2. Universe Screener &amp; Quantitative Analyst</h4>
-        <p><strong>Input:</strong> 144 US public equities database + fundamental valuation filters.</p>
-        <p><strong>Responsibility:</strong> Screens for high-ROIC compounders (>15%) with positive free cash flow and pristine balance sheets, filtering top candidates for thesis formulation.</p>
+        <h4>2. Equity Research Agent</h4>
+        <p><strong>Input:</strong> The Internet, US public exchanges (NYSE, NASDAQ, AMEX), SEC EDGAR NPORT-P / 10-K filings, and industry trend feeds.</p>
+        <p><strong>Responsibility:</strong> Proactively searches public markets to discover high-potential companies, verifies solvency and runway, and screens for high probability of achieving >= 20% annualized ROI to onboard into our universe.</p>
       </div>
 
       <div class="docs-card">
         <h4>3. Investment Thesis Agent</h4>
-        <p><strong>Input:</strong> Public SEC EDGAR filings (10-K/10-Q), earnings releases, and market data.</p>
+        <p><strong>Input:</strong> Tracked universe of equities backed by Tier 1 SEC EDGAR filings (10-K/10-Q) and earnings releases.</p>
         <p><strong>Responsibility:</strong> Builds institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target bounds), authors detailed Revenue and P/S Multiple narratives, and assigns decisive <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
       </div>
 
       <div class="docs-card">
-        <h4>4. Portfolio Memory &amp; Invalidation Agent</h4>
-        <p><strong>Input:</strong> Active portfolio lots + persistent dossiers in <code>context/theses/*.md</code>.</p>
-        <p><strong>Responsibility:</strong> Maintains multi-week holding memory, tracks catalyst execution vs. deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues liquidation alerts for broken theses.</p>
+        <h4>4. Memory Agent</h4>
+        <p><strong>Input:</strong> Persistent dossiers in <code>context/theses/*.md</code>, errata logs, and past deliberation history.</p>
+        <p><strong>Responsibility:</strong> Manages institutional context across runs, audits catalyst execution against deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent liquidation alerts for broken theses.</p>
       </div>
 
       <div class="docs-card">
-        <h4>5. Derivatives Specialist</h4>
-        <p><strong>Input:</strong> Stock lots, cash collateral, candidate tickers, and Black-Scholes pricing models.</p>
-        <p><strong>Responsibility:</strong> Calculates precise Monday limit order pricing for Cash-Secured Puts (0.15-0.30 Delta, 30-45 DTE), Covered Calls, and net-credit calendar rolls.</p>
+        <h4>5. Pricing Agent</h4>
+        <p><strong>Input:</strong> Valuation targets from Thesis Agent, technical price structures, moving averages, and volatility surfaces.</p>
+        <p><strong>Responsibility:</strong> Predicts price trends to calculate exact limit orders for common stocks, models Black-Scholes options pricing for Cash-Secured Puts (0.15-0.30 Delta) and Covered Calls (0.20-0.35 Delta), and verifies net-credit rolls.</p>
       </div>
 
       <div class="docs-card">

@@ -1,6 +1,6 @@
 # Options Pricing & Strategy Reference
 
-This document provides the mathematical foundation and parameter rules for the Derivatives & Limit Pricing Specialist agent.
+This document provides the mathematical foundation and parameter rules for the Pricing Agent.
 
 ## Cash-Secured Put (CSP) Guidelines
 - Target Delta: 0.15 to 0.30 (80% to 85% theoretical probability of expiring OTM).

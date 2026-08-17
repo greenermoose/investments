@@ -4,14 +4,19 @@ This directory contains deterministic Python and Node.js command-line utilities 
 
 ## Script Catalog
 
+- `parse_snapshot.py` (Portfolio Ingestion Agent): Parses uploaded CSV and text brokerage exports in `private/snapshots/`, isolates distinct accounts, tags covered call eligibility (>= 100 shares), and outputs normalized portfolio state.
+- `screen_market.py` (Equity Research Agent): Screens US exchange-listed public equities against quantitative criteria targeting >= 20% annualized ROI with debt solvency and runway checks.
+- `validate_thesis.py` (Investment Thesis Agent): Validates forward-looking 3-year quantitative forecasts, 13-quarter revenue paths, and price target bounds against `context/schemas/investment_thesis_schema.json`.
+- `manage_memory.py` (Memory Agent): Audits persistent dossiers in `context/theses/*.md`, tracks catalyst deadlines, checks invalidation exit triggers, and inspects errata logs.
+- `calculate_pricing.py` (Pricing Agent): Models Black-Scholes option pricing, Greeks (Delta, Theta, Gamma, Vega), Annualized Return on Collateral (AROC), net-credit rolls, and technical support/resistance limit order pricing.
+- `generate_plan.py` (Lead Portfolio Manager): Generates structured plain ASCII text Weekly Trading Plans conforming to `context/schemas/trading_plan_schema.json`.
+- `return_engine.py`: Computes annualized return on investment across multi-year holding horizons and scenario targets.
 - `quality_control.py`: Deterministic quality control CLI tool to audit (`--audit`) and automatically fix (`--fix`) data integrity errors across symbols, company names, market prices, technical bounds, index memberships, financial math, and investment theses.
-- `fetch_market_prices.py`: Extracts verified market share prices, daily trading volumes, historical OHLCV candlestick time-series, 52-week price ranges, and technical analysis indicators (SMA 20, SMA 50, Volume Ratio, Support/Resistance).
-- `fetch_etf_holdings.py`: Extracts ETF constituents and portfolio weights from Tier 1 SEC EDGAR Form NPORT-P filings (e.g., Invesco QQQ Trust CIK `0001067839`, SPDR Dow Jones Industrial Average ETF Trust CIK `0001041130`) and fund sponsor feeds.
+- `fetch_market_prices.py`: Extracts verified market share prices, daily trading volumes, historical OHLCV candlestick time-series, 52-week price ranges, and technical analysis indicators.
+- `fetch_etf_holdings.py`: Extracts ETF constituents and portfolio weights from Tier 1 SEC EDGAR Form NPORT-P filings and fund sponsor feeds.
 - `fetch_sec.py`: Fetches official 10-K, 10-Q, and 20-F XBRL data from SEC EDGAR for all equities in the universe.
 - `build_sec_data.js`: Aggregates company SEC data from `http/data/` into consolidated JSON manifests (`http/sec-data.json`).
 - `build_universe_json.py`: Synthesizes SEC EDGAR filings, company metadata, and fundamental valuation metrics into the master universe catalog (`http/data/universe.json`).
-- `option_pricer.py` *(Roadmap Phase 4)*: Deterministic Black-Scholes weekend options pricer and Monday market-open limit order calculator.
-- `sync_universe.py` *(Roadmap Phase 3)*: Synchronizes active NYSE, NASDAQ, and AMEX common stock directories into `scripts/data/universe.db`.
 
 ## Data Storage (`scripts/data/`)
 
@@ -28,26 +33,22 @@ Local binary databases, SQLite files, and Parquet caches populated by scripts ar
 
 Run scripts from the repository root:
 ```bash
+# 1. Parse Portfolio Snapshot
+python scripts/parse_snapshot.py --demo
+
+# 2. Screen Market for >= 20% ROI Opportunities
+python scripts/screen_market.py --min-roi 20.0
+
+# 3. Model Pricing (Options & Limit Orders)
+python scripts/calculate_pricing.py option --stock-price 124.50 --strike 120.00 --dte 35 --type put
+python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
+
+# 4. Audit Institutional Memory & Invalidation
+python scripts/manage_memory.py
+
+# 5. Generate Plain-Text Weekly Trading Plan
+python scripts/generate_plan.py
+
 # Run Quality Control Audit
 python scripts/quality_control.py --audit
-
-# Run Quality Control and Automatically Fix All Issues
-python scripts/quality_control.py --fix
-
-# Extract ETF constituents
-python scripts/fetch_etf_holdings.py --ticker QQQ
-python scripts/fetch_etf_holdings.py --ticker DIA
-python scripts/fetch_etf_holdings.py --ticker SPY
-
-# Ingest Market Prices & Technicals
-python scripts/fetch_market_prices.py
-
-# Ingest SEC EDGAR XBRL filings
-python scripts/fetch_sec.py
-
-# Compute SEC TTM revenues & shares
-node scripts/build_sec_data.js
-
-# Build master universe catalog
-python scripts/build_universe_json.py
 ```

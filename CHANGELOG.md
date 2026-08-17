@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.16.0] - 2026-08-17
+
+### AI Agent Roles Refinement, Dedicated Skills & Deterministic Scripting Suite
+- **Standardized 6-Agent Ecosystem:** Refined role definitions, boundaries, and titles across all documentation and deliberation prompts:
+  1. **Portfolio Ingestion Agent:** Ingests and normalizes private brokerage screenshots/CSVs, isolates distinct accounts, tags covered call eligibility, and enforces strict privacy firewalls.
+  2. **Equity Research Agent:** (formerly Universe Screener & Quantitative Analyst) Proactively explores the Internet and public markets (NYSE, NASDAQ, AMEX) using tools to discover companies offering a high probability of >= 20% annualized ROI, performing solvency & runway checks rather than rigid zero-debt dogma.
+  3. **Investment Thesis Agent:** Models multi-horizon 3-year quantitative forecasts (13Q revenue, 6-horizon shares, 4-horizon price targets) and dual Revenue/Valuation narratives on universe equities.
+  4. **Memory Agent:** (formerly Portfolio Memory & Invalidation Agent) Manages cross-run institutional context in `context/`, audits catalyst milestones, monitors invalidation triggers, and maintains errata logs.
+  5. **Pricing Agent:** (formerly Derivatives Specialist) Predicts price trends to calculate technical limit order prices for equities and models Black-Scholes pricing and Greeks for Cash-Secured Puts, Covered Calls, and net-credit rolls.
+  6. **Lead Portfolio Manager:** Synthesizes sub-agent outputs into single-session, plain ASCII Weekly Trading Plans (`private/plans/YYYY-MM-DD-plan.txt`).
+- **Dedicated Agent Skills (`.agents/skills/`):** Created full-fidelity, discoverable skill definitions with operational workflows, methodologies, and CLI invocations:
+  - `portfolio-ingestion`: Snapshot parsing, account isolation, dry powder calculation.
+  - `equity-research`: Market discovery, 20%+ ROI hurdle evaluation, solvency & runway checks.
+  - `investment-thesis`: Quantitative forecasting, narrative authoring, rating logic.
+  - `memory`: Institutional memory indexing, catalyst audits, invalidation alert protocols.
+  - `pricing`: Technical support/resistance limit pricing, Black-Scholes Greeks, AROC hurdles.
+  - `lead-portfolio-manager`: Multi-portfolio sequential synthesis, plain-text plan formatting.
+- **Deterministic CLI Scripting Engine (`scripts/`):** Added deterministic command-line tools for every agent to maximize predictability, ensure reproducibility, and minimize token spend:
+  - `scripts/parse_snapshot.py`: Deterministic portfolio snapshot parser.
+  - `scripts/screen_market.py`: Deterministic >= 20% annualized ROI screener with solvency checks.
+  - `scripts/calculate_pricing.py`: Deterministic Black-Scholes options pricer, Greeks, AROC, roll validator, and limit bounds calculator.
+  - `scripts/manage_memory.py`: Deterministic context and catalyst timeline auditor.
+  - `scripts/generate_plan.py`: Deterministic plain ASCII weekly trading plan scaffolding tool.
+- **Repository-Wide Documentation Updates (`http/`, `context/`, `AGENTS.md`, `README.md`):** Updated architecture diagrams, cards, workflows, options documentation, and deliberation prompts.
+
 ## [2.15.0] - 2026-08-17
 
 ### Wall Street Analyst Reports & Price Targets System

@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.13.0] - 2026-08-17
+
+### Institutional Investment Thesis Agent & 6-Agent Sub-Agent Architecture
+- **Dedicated Investment Thesis Agent Role:** Split the former unified Thesis & Memory Agent into two specialized roles:
+  - **Investment Thesis Agent:** Synthesizes public SEC EDGAR 10-K/10-Q filings, earnings releases, and industry trends to construct forward-looking 3-year quantitative forecasts, detailed Revenue and P/S Multiple narratives, and assign decisive `BUY`, `HOLD`, `SELL`, or `AVOID` ratings.
+  - **Portfolio Memory & Invalidation Agent:** Audits active holdings against persistent dossiers, monitors multi-quarter catalyst milestones, tracks explicit invalidation exit triggers, maintains the errata log, and issues liquidation alerts for broken theses.
+- **Formal Institutional Thesis Schema (`context/schemas/investment_thesis_schema.json`):**
+  - **13-Quarter Revenue Forecast Matrix ($Q_0$ to $Q_{12}$):** Explicit quarterly revenue path covering the current quarter and 12 subsequent quarters (3 full years) with YoY growth rates and segment drivers.
+  - **6-Horizon Shares Outstanding Projections:** Projections across 13, 26, 39, 52, 104, and 156 weeks incorporating buyback run-rates and SBC offset.
+  - **4-Horizon Price Target Trading Ranges:** Bear, Base, and Bull bounds for 13 weeks, 52 weeks (1 year), 104 weeks (2 years), and 156 weeks (3 years).
+  - **Dual Qualitative & Valuation Narratives:** Mandatory `revenue_drivers_narrative` (explaining why revenue will happen) and `valuation_ps_multiple_narrative` (explaining why the P/S multiple and valuation dynamics explain price action).
+  - **Decisive Rating System:** Strict `BUY`, `HOLD`, `SELL`, or `AVOID` rating logic based on 3-year expected CAGR and margin of safety.
+- **Investment Thesis Skill Package (`.agents/skills/investment-thesis/SKILL.md`):** Complete institutional guidelines, mathematical formulations for price targets and CAGRs, segment revenue breakdown methods, share count dilution/burn rate models, and rating hurdles.
+- **Deterministic Thesis Validator (`scripts/validate_thesis.py`):** CLI utility validating all thesis dossiers against the institutional schema and verifying 13-quarter, 6-horizon, and 4-horizon table structures.
+- **Dossier Upgrades (`context/theses/*.md`):** Upgraded `EXAMPLE_THESIS.md`, `AAPL.md`, `NVDA.md`, `MSFT.md`, `GOOGL.md`, `META.md`, and `BRK-B.md` to conform fully with the new schema.
+- **Documentation Updates (`http/index.html`, `http/docs/architecture.html`, `README.md`, `ROADMAP.md`, `context/prompts/weekly_deliberation.md`):** Updated architecture diagrams, cards, and execution sequences to reflect the 6-agent deliberative pipeline.
+
 ## [2.12.0] - 2026-08-17
 
 ### Deterministic Investment Return Engine & Target ROI Grounding

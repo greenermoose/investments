@@ -41,20 +41,23 @@ gantt
   - Equity holdings with covered call eligibility flag (>= 100 shares).
   - Active options positions (CSPs, CCs, DTE, strike).
 
-## Phase 2: Investment Thesis Memory Engine
+## Phase 2: Investment Thesis & Portfolio Memory Engine
 
-**Goal:** Prevent agent amnesia and enable long-term thesis tracking across weekly runs using structured markdown dossiers in `context/theses/`.
+**Goal:** Prevent agent amnesia, enable long-term thesis tracking, and construct institutional 3-year quantitative forecasts using structured markdown dossiers in `context/theses/` and schemas in `context/schemas/`.
 
-- [x] **2.1 Dossier Schema Design:** Define standard markdown schema in `context/theses/EXAMPLE_THESIS.md` with:
-  - Entry date, cost basis, target exit price.
-  - Anticipated catalyst timeline (earnings, product launches, regulatory decisions, macro pivots).
-  - Expected annualized ROI and investment horizon.
-  - Explicit thesis invalidation criteria.
-- [ ] **2.2 Memory Agent Integration:** Implement the `Thesis & Memory Agent` prompt to:
-  - Ingest all active dossiers in `context/theses/`.
-  - Compare incoming news/earnings against catalyst expectations.
+- [x] **2.1 Institutional Thesis Schema Design:** Define standard schema in `context/schemas/investment_thesis_schema.json` and canonical dossier `context/theses/EXAMPLE_THESIS.md` with:
+  - 13-Quarter Revenue Forecast Matrix ($Q_0$ to $Q_{12}$) with YoY growth and segment drivers.
+  - 6-Horizon Shares Outstanding Projections (13, 26, 39, 52, 104, 156 weeks) with dilution/buyback modeling.
+  - 4-Horizon Price Target Trading Ranges (13w, 52w, 104w, 156w) with Bear, Base, and Bull bounds.
+  - Comprehensive Revenue Drivers Narrative and Valuation P/S Multiple Narrative.
+  - Decisive Rating System (`BUY`, `HOLD`, `SELL`, `AVOID`).
+  - Anticipated catalyst timeline, explicit invalidation criteria, and Tier 1 SEC EDGAR data provenance.
+- [x] **2.2 Investment Thesis Agent Skill & Validator:**
+  - Author comprehensive skill guide in `.agents/skills/investment-thesis/SKILL.md`.
+  - Provide deterministic validation CLI script in `scripts/validate_thesis.py`.
+- [ ] **2.3 Portfolio Memory & Invalidation Agent:**
+  - Implement dedicated memory agent prompt to ingest active dossiers and compare incoming earnings against catalyst timelines.
   - Automatically flag broken theses with actionable sell/exit recommendations.
-- [ ] **2.3 Dossier Update Automation:** Enable agents to draft and update dossiers after approved trade executions.
 
 ## Phase 3: US Equity Universe, Data Sources & Provenance Engine
 

@@ -63,26 +63,31 @@ flowchart TD
     A[Weekly Snapshot in private/snapshots/] --> B[Portfolio Ingestion Agent]
     B --> C[Portfolio State: Equities, Cash, SGOV, Options Lots]
     
-    C --> D[Thesis & Memory Agent]
-    E[context/theses/*.md] <--> D
+    F[scripts/data/universe.db] --> G[Universe Screener & Quantitative Analyst]
     
-    F[scripts/data/universe.db] --> G[Universe Screener & Fundamental Analyst]
+    SEC[SEC EDGAR 10-K/10-Q & Consensus] --> TH[Investment Thesis Agent]
+    TH --> E[context/theses/*.md]
     
-    D --> H[Derivatives & Limit Pricing Specialist]
-    G --> H
+    C --> MEM[Portfolio Memory & Invalidation Agent]
+    E <--> MEM
+    
+    G --> H[Derivatives & Limit Pricing Specialist]
+    MEM --> H
+    TH --> H
     
     H --> I[Lead Portfolio Manager]
     I --> J[Plain-Text Trading Plan in private/plans/YYYY-MM-DD-plan.txt]
-    I --> K[Updated Theses in context/theses/]
+    I --> K[Updated Weekly Plan State]
     J <--> L[Interactive User Q&A / Challenge Session]
     L --> M[Monday Market Open Execution]
 ```
 
 1. **Portfolio Ingestion Agent:** Parses uploaded screenshots or CSV files in `private/snapshots/` into clean textual holdings (symbols, share counts, cash, `SGOV`, and open options). Identifies covered call eligibility (100 or more shares).
-2. **Thesis & Memory Agent:** Loads markdown dossiers from `context/theses/`, verifies if active catalysts materialized or failed (e.g., negative earnings, regulatory delays), and flags broken theses for exit.
-3. **Universe Screener & Fundamental Analyst:** Screens the broader US equity database against fundamental and technical criteria, identifying high-conviction ideas while targeting ~25 or fewer portfolio positions.
-4. **Derivatives & Limit Pricing Specialist:** Models options pricing (Black-Scholes / IV estimation) over the weekend to compute precise Monday limit orders for Cash-Secured Puts, Covered Calls, and Rolls.
-5. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`) and updates public company dossiers in `context/theses/`.
+2. **Universe Screener & Quantitative Analyst:** Screens the broader US equity database against fundamental and technical criteria (ROIC > 15%, positive FCF, debt health), identifying top compounders for portfolio inclusion.
+3. **Investment Thesis Agent:** Synthesizes SEC EDGAR 10-K/10-Q filings, earnings releases, and industry trends to author institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target ranges), dual Revenue and P/S narratives, and assigns decisive `BUY`, `HOLD`, `SELL`, or `AVOID` ratings.
+4. **Portfolio Memory & Invalidation Agent:** Audits active positions against persistent dossiers in `context/theses/`, tracks catalyst execution dates, monitors explicit invalidation exit triggers, maintains the errata log, and flags broken theses for decisive liquidation.
+5. **Derivatives & Limit Pricing Specialist:** Models options pricing (Black-Scholes / IV estimation) over the weekend to compute precise Monday limit orders for Cash-Secured Puts, Covered Calls, and Rolls.
+6. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`) and coordinates single-session execution.
 
 ## Weekly Operating Workflow
 

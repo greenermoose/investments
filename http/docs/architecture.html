@@ -49,25 +49,31 @@
       </div>
 
       <div class="docs-card">
-        <h4>2. Thesis & Memory Agent</h4>
-        <p><strong>Input:</strong> Parsed holdings + persistent markdown dossiers in <code>context/theses/*.md</code>.</p>
-        <p><strong>Responsibility:</strong> Tracks conviction levels, reviews earnings catalysts, detects broken theses, and flags positions for exit.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>3. Universe Screener & Analyst</h4>
+        <h4>2. Universe Screener &amp; Quantitative Analyst</h4>
         <p><strong>Input:</strong> US exchange-listed public equities database + fundamental filters.</p>
-        <p><strong>Responsibility:</strong> Surfaces high-conviction opportunities (ROIC > 15%, positive FCF) while targeting ~25 or fewer portfolio positions.</p>
+        <p><strong>Responsibility:</strong> Surfaces high-conviction compounders (ROIC > 15%, positive FCF, low debt) to filter candidates for deep thesis modeling.</p>
       </div>
 
       <div class="docs-card">
-        <h4>4. Derivatives Specialist</h4>
+        <h4>3. Investment Thesis Agent</h4>
+        <p><strong>Input:</strong> Public SEC EDGAR filings (10-K/10-Q), earnings data, and TAM market drivers.</p>
+        <p><strong>Responsibility:</strong> Authorizes 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target ranges), constructs Revenue &amp; P/S narratives, and assigns <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>4. Portfolio Memory &amp; Invalidation Agent</h4>
+        <p><strong>Input:</strong> Parsed holdings + persistent markdown dossiers in <code>context/theses/*.md</code>.</p>
+        <p><strong>Responsibility:</strong> Tracks historical holding periods, evaluates multi-quarter catalyst outcomes, audits invalidation criteria, and flags broken theses for decisive liquidation.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>5. Derivatives Specialist</h4>
         <p><strong>Input:</strong> Candidate tickers, stock lots, cash collateral, volatility data.</p>
         <p><strong>Responsibility:</strong> Models Black-Scholes pricing over the weekend to compute limit orders for Cash-Secured Puts, Covered Calls, and net-credit rolls.</p>
       </div>
 
       <div class="docs-card">
-        <h4>5. Lead Portfolio Manager</h4>
+        <h4>6. Lead Portfolio Manager</h4>
         <p><strong>Input:</strong> Sub-agent reports and policy constraints.</p>
         <p><strong>Responsibility:</strong> Synthesizes executive decisions into a concise plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) and updates public company intelligence.</p>
       </div>

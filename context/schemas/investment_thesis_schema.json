@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InvestmentThesisSchema",
+  "description": "Institutional schema for public equity investment thesis dossiers, multi-horizon financial forecasts, valuation multiple narratives, and decisive recommendations.",
+  "type": "object",
+  "required": [
+    "ticker",
+    "company_name",
+    "exchange",
+    "benchmark_entry_price",
+    "current_price",
+    "target_exit_price",
+    "expected_holding_period",
+    "conviction_score",
+    "rating",
+    "core_thesis",
+    "revenue_drivers_narrative",
+    "valuation_ps_multiple_narrative",
+    "revenue_forecast_13q",
+    "shares_outstanding_projections",
+    "price_target_ranges",
+    "catalyst_timeline",
+    "invalidation_criteria",
+    "data_provenance"
+  ],
+  "properties": {
+    "ticker": {
+      "type": "string",
+      "pattern": "^[A-Z0-9.-]{1,10}$",
+      "description": "Primary stock ticker symbol (e.g. AAPL, NVDA, BRK-B)."
+    },
+    "company_name": {
+      "type": "string",
+      "description": "Full legal corporate name of the company."
+    },
+    "exchange": {
+      "type": "string",
+      "enum": ["NASDAQ", "NYSE", "AMEX"],
+      "description": "Primary US listing exchange."
+    },
+    "benchmark_entry_price": {
+      "type": "number",
+      "minimum": 0.01,
+      "description": "Public reference entry price per share in USD."
+    },
+    "current_price": {
+      "type": "number",
+      "minimum": 0.01,
+      "description": "Most recent closing price per share in USD."
+    },
+    "target_exit_price": {
+      "type": "number",
+      "minimum": 0.01,
+      "description": "Long-term intrinsic value price target per share in USD."
+    },
+    "expected_holding_period": {
+      "type": "string",
+      "description": "Target investment horizon (e.g. '13 Weeks', '1 to 2 Years', '3 to 5 Years')."
+    },
+    "conviction_score": {
+      "type": "number",
+      "minimum": 1.0,
+      "maximum": 10.0,
+      "description": "Agent conviction rating from 1.0 (lowest) to 10.0 (highest)."
+    },
+    "rating": {
+      "type": "string",
+      "enum": ["BUY", "HOLD", "SELL", "AVOID"],
+      "description": "Decisive investment rating based on multi-horizon return projections and margin of safety."
+    },
+    "target_strategy": {
+      "type": "string",
+      "description": "Primary trading/income strategy (e.g. 'Quality Compounder with Covered Call Harvesting', 'Growth Acceleration', 'Cash-Secured Put Entry')."
+    },
+    "sec_cik": {
+      "type": "string",
+      "pattern": "^[0-9]{10}$",
+      "description": "10-digit Central Index Key for SEC EDGAR retrieval."
+    },
+    "sec_filing_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direct URL to primary SEC EDGAR filing."
+    },
+    "core_thesis": {
+      "type": "string",
+      "description": "High-level summary of the company's competitive moat, market position, and structural investment thesis."
+    },
+    "revenue_drivers_narrative": {
+      "type": "string",
+      "description": "Detailed narrative explaining WHY the projected 13-quarter revenue path will materialize (growth vectors, product roadmap, enterprise/consumer adoption, market share, TAM expansion, pricing power)."
+    },
+    "valuation_ps_multiple_narrative": {
+      "type": "string",
+      "description": "Detailed narrative explaining WHY the Price-to-Sales (P/S) ratio and valuation multiples will trend as projected to explain future price action (margin expansion, operating leverage, multiple re-rating or mean reversion, terminal moat dynamics)."
+    },
+    "revenue_forecast_13q": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "description": "Quarterly revenue projections for the current quarter (Q0) and each of the next 12 quarters (3 years).",
+      "items": {
+        "type": "object",
+        "required": ["quarter_index", "quarter_label", "projected_revenue_usd", "yoy_growth_pct", "primary_growth_driver"],
+        "properties": {
+          "quarter_index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 12,
+            "description": "Index from 0 (current quarter) to 12 (12 quarters out)."
+          },
+          "quarter_label": {
+            "type": "string",
+            "description": "Quarter label (e.g. '2026-Q3 (Current)', '2026-Q4', '2027-Q1', ..., '2029-Q3')."
+          },
+          "projected_revenue_usd": {
+            "type": "number",
+            "minimum": 0.0,
+            "description": "Projected quarterly revenue in USD."
+          },
+          "yoy_growth_pct": {
+            "type": "number",
+            "description": "Year-over-year revenue growth rate percentage (e.g. 14.5 for +14.5%)."
+          },
+          "primary_growth_driver": {
+            "type": "string",
+            "description": "Key business segment or catalyst driving revenue in this quarter."
+          }
+        }
+      }
+    },
+    "shares_outstanding_projections": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "description": "Projected diluted shares outstanding at 13, 26, 39, 52, 104, and 156 weeks.",
+      "items": {
+        "type": "object",
+        "required": ["horizon_weeks", "horizon_label", "shares_outstanding", "net_annual_dilution_or_burn_rate_pct", "rationale"],
+        "properties": {
+          "horizon_weeks": {
+            "type": "integer",
+            "enum": [13, 26, 39, 52, 104, 156],
+            "description": "Projection horizon in weeks."
+          },
+          "horizon_label": {
+            "type": "string",
+            "description": "Human-readable horizon (e.g. '13 Weeks (1Q)', '26 Weeks (2Q)', '39 Weeks (3Q)', '52 Weeks (1Y)', '104 Weeks (2Y)', '156 Weeks (3Y)')."
+          },
+          "shares_outstanding": {
+            "type": "number",
+            "minimum": 1.0,
+            "description": "Projected diluted shares outstanding count."
+          },
+          "net_annual_dilution_or_burn_rate_pct": {
+            "type": "number",
+            "description": "Net annual share count change percentage (negative for buyback reduction, positive for dilution)."
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Repurchase authorization pace, free cash flow deployment, or stock-based compensation offsetting assumptions."
+          }
+        }
+      }
+    },
+    "price_target_ranges": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "description": "Projected price trading ranges over 13, 52, 104, and 156 weeks.",
+      "items": {
+        "type": "object",
+        "required": ["horizon_weeks", "horizon_label", "bear_price", "base_price", "bull_price", "implied_ps_multiple", "annualized_cagr_pct"],
+        "properties": {
+          "horizon_weeks": {
+            "type": "integer",
+            "enum": [13, 52, 104, 156],
+            "description": "Projection horizon in weeks."
+          },
+          "horizon_label": {
+            "type": "string",
+            "description": "Human-readable label (e.g. '13 Weeks (Near-Term)', '52 Weeks (1 Year)', '104 Weeks (2 Years)', '156 Weeks (3 Years)')."
+          },
+          "bear_price": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Lower bound trading price in a downside/multiple-compression scenario."
+          },
+          "base_price": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Expected base-case target price based on fundamental cash flow and earnings compounding."
+          },
+          "bull_price": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Upper bound trading price in an upside/multiple-expansion scenario."
+          },
+          "implied_ps_multiple": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Base-case Price-to-Sales (P/S) multiple implied by the base price and forward revenue."
+          },
+          "annualized_cagr_pct": {
+            "type": "number",
+            "description": "Annualized compound return percentage from current price to base target price."
+          }
+        }
+      }
+    },
+    "catalyst_timeline": {
+      "type": "array",
+      "description": "Multi-quarter timeline of major anticipated catalysts.",
+      "items": {
+        "type": "object",
+        "required": ["target_window", "catalyst_event", "expected_impact", "status"],
+        "properties": {
+          "target_window": {
+            "type": "string",
+            "description": "Target calendar quarter or date window."
+          },
+          "catalyst_event": {
+            "type": "string",
+            "description": "Specific catalyst event."
+          },
+          "expected_impact": {
+            "type": "string",
+            "description": "Expected business or financial outcome."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["PENDING", "ACHIEVED", "FAILED", "DELAYED"],
+            "description": "Current status of catalyst tracking."
+          }
+        }
+      }
+    },
+    "invalidation_criteria": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Deterministic quantitative or structural exit triggers that invalidate the thesis.",
+      "items": {
+        "type": "string",
+        "description": "Specific invalidation rule and threshold."
+      }
+    },
+    "data_provenance": {
+      "type": "array",
+      "description": "Verification audit log conforming to context/schemas/data_provenance.json.",
+      "items": {
+        "type": "object",
+        "required": ["data_element", "authority_tier", "source_locator", "access_method", "as_of_date", "verification_status"],
+        "properties": {
+          "data_element": { "type": "string" },
+          "authority_tier": {
+            "type": "string",
+            "enum": [
+              "TIER_1_PRIMARY_REGULATORY",
+              "TIER_2_FINANCIAL_AGGREGATOR",
+              "TIER_3_CONSENSUS_ESTIMATES",
+              "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+              "TIER_5_UNVERIFIED_HEURISTIC"
+            ]
+          },
+          "source_locator": { "type": "string" },
+          "access_method": { "type": "string" },
+          "as_of_date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "verification_status": {
+            "type": "string",
+            "enum": ["VERIFIED_PRIMARY", "VERIFIED_SECONDARY", "VERIFIED_QUALITATIVE", "STALE_PENDING_AUDIT", "UNVERIFIED"]
+          }
+        }
+      }
+    }
+  }
+}

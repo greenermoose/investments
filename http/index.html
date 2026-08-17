@@ -61,10 +61,10 @@
       <li><strong>Narrow Universe Focus:</strong> Single prompt windows lack the context capacity to simultaneously audit hundreds of public equities against verified SEC filings.</li>
       <li><strong>Absence of Deterministic Derivatives Modeling:</strong> Standard language models cannot reliably calculate Black-Scholes Greeks, volatility skews, or exact limit pricing formulas.</li>
     </ul>
-    <p>This system resolves these limitations by breaking the advisory process into five discrete, specialized sub-agent roles backed by persistent file-based memory, strict data provenance, and deterministic Python calculation scripts.</p>
+    <p>This system resolves these limitations by breaking the advisory process into six discrete, specialized sub-agent roles backed by persistent file-based memory, strict data provenance, forward-looking quantitative forecasting, and deterministic Python calculation scripts.</p>
 
     <h2>Multi-Agent Sub-Agent Pipeline</h2>
-    <p>Rather than relying on a single generalist model, the deliberation protocol coordinates five specialized roles backed by structured data contracts:</p>
+    <p>Rather than relying on a single generalist model, the deliberation protocol coordinates six specialized roles backed by structured data contracts:</p>
 
     <div class="card-grid">
       <div class="docs-card">
@@ -74,25 +74,31 @@
       </div>
 
       <div class="docs-card">
-        <h4>2. Thesis &amp; Memory Agent</h4>
-        <p><strong>Input:</strong> Parsed holdings + persistent markdown dossiers in <code>context/theses/*.md</code>.</p>
-        <p><strong>Responsibility:</strong> Evaluates conviction levels, tracks multi-quarter earnings catalysts, monitors invalidation triggers, and flags broken theses for decisive exit.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>3. Universe Screener &amp; Analyst</h4>
+        <h4>2. Universe Screener &amp; Quantitative Analyst</h4>
         <p><strong>Input:</strong> 144 US public equities database + fundamental valuation filters.</p>
-        <p><strong>Responsibility:</strong> Screens for high-ROIC compounders with positive free cash flow, surfacing new entry candidates while targeting ~25 or fewer total positions.</p>
+        <p><strong>Responsibility:</strong> Screens for high-ROIC compounders (>15%) with positive free cash flow and pristine balance sheets, filtering top candidates for thesis formulation.</p>
       </div>
 
       <div class="docs-card">
-        <h4>4. Derivatives Specialist</h4>
+        <h4>3. Investment Thesis Agent</h4>
+        <p><strong>Input:</strong> Public SEC EDGAR filings (10-K/10-Q), earnings releases, and market data.</p>
+        <p><strong>Responsibility:</strong> Builds institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target bounds), authors detailed Revenue and P/S Multiple narratives, and assigns decisive <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>4. Portfolio Memory &amp; Invalidation Agent</h4>
+        <p><strong>Input:</strong> Active portfolio lots + persistent dossiers in <code>context/theses/*.md</code>.</p>
+        <p><strong>Responsibility:</strong> Maintains multi-week holding memory, tracks catalyst execution vs. deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues liquidation alerts for broken theses.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>5. Derivatives Specialist</h4>
         <p><strong>Input:</strong> Stock lots, cash collateral, candidate tickers, and Black-Scholes pricing models.</p>
         <p><strong>Responsibility:</strong> Calculates precise Monday limit order pricing for Cash-Secured Puts (0.15-0.30 Delta, 30-45 DTE), Covered Calls, and net-credit calendar rolls.</p>
       </div>
 
       <div class="docs-card">
-        <h4>5. Lead Portfolio Manager</h4>
+        <h4>6. Lead Portfolio Manager</h4>
         <p><strong>Input:</strong> Sub-agent recommendations and portfolio risk constraints.</p>
         <p><strong>Responsibility:</strong> Synthesizes executive decisions into an unambiguous plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) with single-session Monday execution.</p>
       </div>

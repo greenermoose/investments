@@ -1040,10 +1040,42 @@ pre code {
 .stocks-table th.sortable {
   cursor: pointer;
   user-select: none;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 
 .stocks-table th.sortable:hover {
   color: var(--text-primary);
+  background: #1c2330;
+}
+
+.stocks-table th.sortable::after {
+  content: " \2195";
+  font-size: 0.75rem;
+  margin-left: 6px;
+  color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stocks-table th.sortable:hover::after {
+  color: var(--text-secondary);
+}
+
+.stocks-table th.sortable.active-sort {
+  color: #00d4ff;
+  background: #182333;
+}
+
+.stocks-table th.sortable.sort-asc::after {
+  content: " \2191";
+  color: #00d4ff;
+  font-weight: 700;
+}
+
+.stocks-table th.sortable.sort-desc::after {
+  content: " \2193";
+  color: #00d4ff;
+  font-weight: 700;
 }
 
 .stocks-table td {

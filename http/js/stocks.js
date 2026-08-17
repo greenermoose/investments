@@ -73,25 +73,106 @@ function getFilteredAndSortedData() {
   });
 
   // Sorting
+  const thesisRank = { BUY: 1, HOLD: 2, SELL: 3, AVOID: 4 };
+
   filtered.sort((a, b) => {
-    if (currentSort === 'conviction-desc') {
-      return (b.conviction_score || 0) - (a.conviction_score || 0);
-    } else if (currentSort === 'symbol-asc') {
-      return a.symbol.localeCompare(b.symbol);
-    } else if (currentSort === 'price-desc') {
-      return (b.current_price || 0) - (a.current_price || 0);
-    } else if (currentSort === 'volume-desc') {
-      return (b.day_volume || 0) - (a.day_volume || 0);
-    } else if (currentSort === 'roi-desc') {
-      const roiA = a.annualized_roi_pct !== undefined ? a.annualized_roi_pct : (parseFloat(a.target_roi) || 0);
-      const roiB = b.annualized_roi_pct !== undefined ? b.annualized_roi_pct : (parseFloat(b.target_roi) || 0);
-      return roiB - roiA;
-    } else if (currentSort === 'ev-desc') {
-      const evA = a.enterprise_value || (a.enterprise_value_b ? a.enterprise_value_b * 1e9 : 0) || 0;
-      const evB = b.enterprise_value || (b.enterprise_value_b ? b.enterprise_value_b * 1e9 : 0) || 0;
-      return evB - evA;
+    switch (currentSort) {
+      case 'conviction-desc':
+        return (b.conviction_score || 0) - (a.conviction_score || 0);
+      case 'conviction-asc':
+        return (a.conviction_score || 0) - (b.conviction_score || 0);
+
+      case 'symbol-asc':
+        return (a.symbol || '').localeCompare(b.symbol || '');
+      case 'symbol-desc':
+        return (b.symbol || '').localeCompare(a.symbol || '');
+
+      case 'name-asc':
+        return (a.name || a.symbol || '').localeCompare(b.name || b.symbol || '');
+      case 'name-desc':
+        return (b.name || b.symbol || '').localeCompare(a.name || a.symbol || '');
+
+      case 'sector-asc':
+        return (a.sector || '').localeCompare(b.sector || '');
+      case 'sector-desc':
+        return (b.sector || '').localeCompare(a.sector || '');
+
+      case 'thesis-asc': {
+        const rankA = thesisRank[a.thesis_status] || 99;
+        const rankB = thesisRank[b.thesis_status] || 99;
+        if (rankA !== rankB) return rankA - rankB;
+        return (b.conviction_score || 0) - (a.conviction_score || 0);
+      }
+      case 'thesis-desc': {
+        const rankA = thesisRank[a.thesis_status] || 99;
+        const rankB = thesisRank[b.thesis_status] || 99;
+        if (rankA !== rankB) return rankB - rankA;
+        return (b.conviction_score || 0) - (a.conviction_score || 0);
+      }
+
+      case 'price-asc': {
+        const pA = a.current_price || a.closing_price || 0;
+        const pB = b.current_price || b.closing_price || 0;
+        return pA - pB;
+      }
+      case 'price-desc': {
+        const pA = a.current_price || a.closing_price || 0;
+        const pB = b.current_price || b.closing_price || 0;
+        return pB - pA;
+      }
+
+      case 'entry-asc': {
+        const eA = a.entry_price || a.current_price || 0;
+        const eB = b.entry_price || b.current_price || 0;
+        return eA - eB;
+      }
+      case 'entry-desc': {
+        const eA = a.entry_price || a.current_price || 0;
+        const eB = b.entry_price || b.current_price || 0;
+        return eB - eA;
+      }
+
+      case 'exit-asc': {
+        const xA = a.target_exit_price || a.current_price || 0;
+        const xB = b.target_exit_price || b.current_price || 0;
+        return xA - xB;
+      }
+      case 'exit-desc': {
+        const xA = a.target_exit_price || a.current_price || 0;
+        const xB = b.target_exit_price || b.current_price || 0;
+        return xB - xA;
+      }
+
+      case 'volume-desc':
+        return (b.day_volume || 0) - (a.day_volume || 0);
+      case 'volume-asc':
+        return (a.day_volume || 0) - (b.day_volume || 0);
+
+      case 'roi-asc': {
+        const roiA = a.annualized_roi_pct !== undefined ? a.annualized_roi_pct : (parseFloat(a.target_roi) || 0);
+        const roiB = b.annualized_roi_pct !== undefined ? b.annualized_roi_pct : (parseFloat(b.target_roi) || 0);
+        return roiA - roiB;
+      }
+      case 'roi-desc': {
+        const roiA = a.annualized_roi_pct !== undefined ? a.annualized_roi_pct : (parseFloat(a.target_roi) || 0);
+        const roiB = b.annualized_roi_pct !== undefined ? b.annualized_roi_pct : (parseFloat(b.target_roi) || 0);
+        return roiB - roiA;
+      }
+
+      case 'ev-desc': {
+        const evA = a.enterprise_value || (a.enterprise_value_b ? a.enterprise_value_b * 1e9 : 0) || 0;
+        const evB = b.enterprise_value || (b.enterprise_value_b ? b.enterprise_value_b * 1e9 : 0) || 0;
+        return evB - evA;
+      }
+      case 'ev-asc': {
+        const evA = a.enterprise_value || (a.enterprise_value_b ? a.enterprise_value_b * 1e9 : 0) || 0;
+        const evB = b.enterprise_value || (b.enterprise_value_b ? b.enterprise_value_b * 1e9 : 0) || 0;
+        return evA - evB;
+      }
+
+      default:
+        return 0;
     }
-    return 0;
   });
 
   return filtered;
@@ -100,6 +181,21 @@ function getFilteredAndSortedData() {
 // ============================================================================
 // View Manager & Dispatcher
 // ============================================================================
+
+function updateTableSortHeaders() {
+  const thElements = document.querySelectorAll('#table-view-container th.sortable');
+  thElements.forEach(th => {
+    const sortKey = th.getAttribute('data-sort');
+    th.classList.remove('active-sort', 'sort-asc', 'sort-desc');
+    th.removeAttribute('aria-sort');
+
+    if (currentSort.startsWith(sortKey + '-')) {
+      const dir = currentSort.endsWith('asc') ? 'asc' : 'desc';
+      th.classList.add('active-sort', `sort-${dir}`);
+      th.setAttribute('aria-sort', dir === 'asc' ? 'ascending' : 'descending');
+    }
+  });
+}
 
 function renderCurrentView() {
   const data = getFilteredAndSortedData();
@@ -131,6 +227,7 @@ function renderCurrentView() {
     if (gridContainer) gridContainer.style.display = 'none';
     if (dossiersContainer) dossiersContainer.style.display = 'none';
     if (tableContainer) tableContainer.style.display = 'block';
+    updateTableSortHeaders();
     renderTableView(tableTbody, data, openCompanyModal);
   }
 }
@@ -220,6 +317,38 @@ document.addEventListener('DOMContentLoaded', () => {
       renderCurrentView();
     });
   }
+
+  // Table header click-to-sort listeners
+  document.querySelectorAll('#table-view-container th.sortable').forEach(th => {
+    th.addEventListener('click', () => {
+      const sortKey = th.getAttribute('data-sort');
+      if (!sortKey) return;
+
+      let nextDir = 'asc';
+      if (currentSort.startsWith(sortKey + '-')) {
+        nextDir = currentSort.endsWith('asc') ? 'desc' : 'asc';
+      } else {
+        // Default sort direction per column type
+        if (['price', 'entry', 'exit', 'roi'].includes(sortKey)) {
+          nextDir = 'desc';
+        } else {
+          nextDir = 'asc';
+        }
+      }
+
+      currentSort = `${sortKey}-${nextDir}`;
+
+      // Synchronize with sort-select dropdown if an equivalent option exists
+      if (sortSelect) {
+        const matchingOption = sortSelect.querySelector(`option[value="${currentSort}"]`);
+        if (matchingOption) {
+          sortSelect.value = currentSort;
+        }
+      }
+
+      renderCurrentView();
+    });
+  });
 
   // Helper to update All chip active state
   function updateAllChipState() {

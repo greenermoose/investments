@@ -500,6 +500,13 @@ pre code {
   letter-spacing: 0.2px;
 }
 
+.company-price-range {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
 .company-name {
   font-size: 0.95rem;
   font-weight: 600;

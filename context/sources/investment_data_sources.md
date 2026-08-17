@@ -147,11 +147,36 @@ Applying these filters yields a clean universe of approximately 4,000 to 4,500 i
 +-----------------------------------------------------------------------------+
 ```
 
+## Sell-Side Analyst Reports & Price Target Data Sources
+
+For tracking individual analyst recommendations, price targets, announcement market prices, and consensus distributions, the system leverages structured institutional feeds:
+
+### 1. Financial Modeling Prep (FMP) Analyst Price Target API
+- **Endpoint:** `GET /v4/price-target?symbol={TICKER}` & `GET /v4/price-target-consensus?symbol={TICKER}`
+- **Fields Provided:** `symbol`, `publishedDate`, `analystName`, `analystCompany`, `priceTarget`, `adjPriceTarget`, `priceWhenPosted`, `newsTitle`, `newsURL`.
+- **Data Tier:** Tier 2 Institutional Aggregator.
+- **Coverage:** 6,000+ US equities with up to 10 years of historical analyst price target revisions.
+
+### 2. FactSet & LSEG / Refinitiv I/B/E/S Feeds
+- **Domain:** Global sell-side consensus estimates, mean/median target prices, high/low target dispersion, standard deviation of estimates, and broker revisions.
+- **Data Tier:** Tier 2 / Tier 3 Consensus Grounding.
+
+### 3. Sell-Side Brokerage Direct Research Releases
+- **Institutions:** Morgan Stanley, Goldman Sachs, JPMorgan Chase, Bernstein, Wedbush, Bank of America, UBS, Barclays, Citigroup, Jefferies, Evercore ISI, Baird.
+- **Core Attributes Extracted:**
+  1. Analyst Name (e.g. Toni Sacconaghi, Dan Ives, Toshiya Hari)
+  2. Announcement / Publication Date (`YYYY-MM-DD`)
+  3. Stock Symbol (e.g. `AAPL`, `NVDA`, `MSFT`)
+  4. Market Price as of Announcement
+  5. Target Price ($/share)
+  6. Implied Upside Percentage and Recommendation Action
+
 ## AI Agent Compatibility & Integration Guidelines
 
 When integrating market data into autonomous AI agents, adhere to the following operational standards:
 
 1. Never build production agent dependencies on scraped web portals (Finviz, Koyfin, Yahoo web scrapers). These break unpredictably and introduce unvetted data risks.
 2. Rely on Tier 1 primary sources (SEC EDGAR, NASDAQ FTP) for universe indexing and ground-truth financial statements.
-3. When real-time intraday quotes or technical indicators are required, connect structured APIs with explicit agent support (Polygon.io, Financial Modeling Prep, Alpaca, or Tiingo).
+3. When real-time intraday quotes, technical indicators, or analyst consensus feeds are required, connect structured APIs with explicit agent support (Polygon.io, Financial Modeling Prep, FactSet, Alpaca, or Tiingo).
 4. Maintain a local SQLite/JSON caching layer (`scripts/data/`) to eliminate redundant external calls, enforce SEC rate limits (max 10 req/sec), and enable fast multi-criteria queries for agent deliberations.
+

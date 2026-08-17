@@ -113,11 +113,22 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         else:
             errors.append("Could not parse Price Target Ranges table")
 
-    # 9. Invalidation Criteria
+    # 9. Analyst Price Targets & Wall Street Coverage
+    if "Analyst Price Targets" in content:
+        apt_match = re.search(r"##\s+Analyst Price Targets[^\n]*\n([\s\S]*?)(?=\n##|\Z)", content)
+        if apt_match:
+            table_lines = [l.strip() for l in apt_match.group(1).strip().split("\n") if l.strip().startswith("|")]
+            data_rows = [l for l in table_lines if not re.match(r"^\|\s*:?---", l) and "Analyst Name" not in l]
+            if len(data_rows) < 1:
+                errors.append("Analyst Price Targets table must contain at least 1 analyst price target row")
+        else:
+            errors.append("Could not parse Analyst Price Targets table")
+
+    # 10. Invalidation Criteria
     if "## Explicit Invalidation Criteria" not in content:
         errors.append("Missing section '## Explicit Invalidation Criteria (Exit Triggers)'")
 
-    # 10. Data Provenance
+    # 11. Data Provenance
     if "## Data Provenance & Verification Metadata" not in content and "## Data Provenance" not in content:
         errors.append("Missing section '## Data Provenance & Verification Metadata'")
 

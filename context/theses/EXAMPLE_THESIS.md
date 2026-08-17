@@ -65,6 +65,13 @@ This multiple expansion combined with 40%+ top-line recovery generates an expect
 | 104 Weeks (2Y) | $210.00 | $290.00 | $345.00 | 1.76x | +22.2% |
 | 156 Weeks (3Y) | $235.00 | $350.00 | $420.00 | 1.79x | +21.7% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ronald Epstein | Bank of America Global Research | 2026-08-05 | $190.50 | $255.00 | +33.9% | BUY |
+| Seth Seifman | JPMorgan Chase | 2026-07-31 | $186.20 | $245.00 | +31.6% | OVERWEIGHT |
+| Peter Arment | Baird | 2026-07-24 | $183.00 | $240.00 | +31.1% | OUTPERFORM |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

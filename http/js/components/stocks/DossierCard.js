@@ -10,7 +10,9 @@ import {
   formatVolume,
   renderPriceChange,
   render52WeekBar,
-  renderIndexBadges
+  renderIndexBadges,
+  renderAnalystRatingBadge,
+  renderAnalystUpside
 } from './formatters.js';
 
 export function createDossierCard(company, onSelect) {
@@ -32,6 +34,31 @@ export function createDossierCard(company, onSelect) {
   const volStr = formatVolume(company.day_volume);
   const avgVolStr = formatVolume(company.average_volume_20d);
   const volRatio = company.volume_ratio ? `${company.volume_ratio}x` : '1.0x';
+
+  // Build Analyst Price Targets rows
+  const analystTargets = company.analyst_price_targets || [];
+  let analystRowsHtml = '';
+  if (analystTargets.length > 0) {
+    analystRowsHtml = analystTargets.map(t => `
+      <tr>
+        <td><strong>${t.analyst_name}</strong></td>
+        <td><span style="color: var(--text-secondary);">${t.firm || 'Wall Street Research'}</span></td>
+        <td><code>${t.announcement_date}</code></td>
+        <td>$${Number(t.market_price_at_announcement).toFixed(2)}</td>
+        <td style="color: #10b981; font-weight: 600;">$${Number(t.target_price).toFixed(2)}</td>
+        <td>${renderAnalystUpside(t.implied_upside_pct)}</td>
+        <td>${renderAnalystRatingBadge(t.rating_action)}</td>
+      </tr>
+    `).join('');
+  } else {
+    analystRowsHtml = `
+      <tr>
+        <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 12px;">
+          No granular analyst price targets recorded. Target exit price modeled at $${targetPriceFormatted}.
+        </td>
+      </tr>
+    `;
+  }
 
   card.innerHTML = `
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
@@ -94,6 +121,26 @@ export function createDossierCard(company, onSelect) {
     <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
       ${company.description || 'Investment thesis under fundamental analysis.'}
     </p>
+
+    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Analyst Reports &amp; Wall Street Price Targets</h4>
+    <div class="provenance-table-container" style="margin-bottom: 14px; max-height: 200px; overflow-y: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Analyst Name</th>
+            <th>Firm / Institution</th>
+            <th>Announced</th>
+            <th>Price at Ann.</th>
+            <th>Target Price</th>
+            <th>Implied Upside</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${analystRowsHtml}
+        </tbody>
+      </table>
+    </div>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Competitive Moat &amp; Strategic Advantages</h4>
     <p style="font-size: 0.92rem; color: #e2e8f0; line-height: 1.5; margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.2); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #00d4ff;">

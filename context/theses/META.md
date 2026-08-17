@@ -68,6 +68,13 @@ This produces an expected 3-year annualized return (CAGR) of 21.8%, surpassing t
 | 104 Weeks (2Y) | $590.00 | $760.00 | $860.00 | 7.75x | +22.0% |
 | 156 Weeks (3Y) | $670.00 | $905.00 | $1,050.00 | 7.60x | +21.8% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Brian Nowak | Morgan Stanley | 2026-08-09 | $515.40 | $640.00 | +24.2% | OVERWEIGHT |
+| Doug Anmuth | JPMorgan Chase | 2026-08-04 | $508.20 | $625.00 | +23.0% | OVERWEIGHT |
+| Stephen Ju | UBS Global Research | 2026-07-27 | $498.60 | $610.00 | +22.3% | BUY |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

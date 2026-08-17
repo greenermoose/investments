@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.15.0] - 2026-08-17
+
+### Wall Street Analyst Reports & Price Targets System
+- **Formal Price Target Data Structure (`context/schemas/analyst_price_target_schema.json`):** Created institutional JSON schema enforcing the 5 core attributes for all sell-side analyst price targets:
+  1. `analyst_name`: Lead research analyst issuing the report (e.g. Toni Sacconaghi, Dan Ives, Toshiya Hari).
+  2. `announcement_date`: Date target was announced/published (`YYYY-MM-DD`).
+  3. `symbol`: Ticker symbol for the price target.
+  4. `market_price_at_announcement`: Prevailing market price of the common stock as of announcement date in USD.
+  5. `target_price`: 12-month forward price target per share in USD.
+  - Supplementary institutional attributes: `firm`, `rating_action` (BUY, OUTPERFORM, OVERWEIGHT, HOLD, EQUAL-WEIGHT, UNDERPERFORM, SELL), `implied_upside_pct`, and `report_title`.
+- **Data Sources Catalog & Ingestion Documentation (`context/sources/catalog.md`, `context/sources/investment_data_sources.md`, `http/docs/sources.html`):** Documented authoritative sell-side equity research sources across major global investment banks (Morgan Stanley, Goldman Sachs, JPMorgan Chase, Bank of America, Bernstein, Wedbush, UBS, Barclays, Baird) and institutional aggregator APIs (Financial Modeling Prep `/v4/price-target`, FactSet, Bloomberg Intelligence, LSEG/Refinitiv I/B/E/S).
+- **Master Price Target Cache & Consensus Engine (`scripts/data/analyst_price_targets.json`, `scripts/build_universe_json.py`):** Seeded price targets across all 144 equities in the universe; implemented automatic consensus aggregation calculating Mean Target, Median Target, High/Low Bounds, Coverage Count, and Average Implied Upside percentage.
+- **Thesis Dossier Integration (`context/theses/*.md`, `investment-thesis` skill, `scripts/validate_thesis.py`):** Added `## Analyst Price Targets & Wall Street Coverage` table to canonical dossiers and validator suite.
+- **Public Web Portal Integration (`http/stocks.html`, `http/js/components/stocks/`):**
+  - **Grid Card View (`GridCard.js`):** Integrated analyst consensus target price and average upside badge into equity overview cards.
+  - **Dossier Card View (`DossierCard.js`):** Integrated full tabular analyst price target breakdown with analyst name, firm, date, announcement price, target price, implied upside, and rating badge.
+  - **Interactive Deep-Dive Modal Drawer (`ModalDrawer.js`, `stocks.html`):** Added dedicated 5th tab `Wall Street Analyst Coverage` displaying consensus KPI summary metrics and complete individual analyst price target report history.
+  - **Data Table View (`TableRow.js`, `stocks.js`):** Added sortable `Analyst Target` column with implied upside percentages.
+
 ## [2.14.0] - 2026-08-17
 
 ### Comprehensive Investment Strategy & Performance Mandate Architecture

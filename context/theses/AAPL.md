@@ -67,6 +67,14 @@ Because the multiple is currently near the high end of its historical 10-year ra
 | 104 Weeks (2Y) | $230.00 | $288.00 | $325.00 | 8.08x | +12.3% |
 | 156 Weeks (3Y) | $250.00 | $328.00 | $375.00 | 7.85x | +12.8% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Dan Ives | Wedbush Securities | 2026-08-05 | $222.50 | $285.00 | +28.1% | OUTPERFORM |
+| Samik Chatterjee | JPMorgan Chase | 2026-07-22 | $224.10 | $270.00 | +20.5% | OVERWEIGHT |
+| Wamsi Mohan | Bank of America Global Research | 2026-08-01 | $219.80 | $260.00 | +18.3% | BUY |
+| Toni Sacconaghi | Bernstein Research | 2026-07-28 | $218.00 | $240.00 | +10.1% | EQUAL-WEIGHT |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

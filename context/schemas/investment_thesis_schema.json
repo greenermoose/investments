@@ -271,6 +271,25 @@
           }
         }
       }
+    },
+    "analyst_price_targets": {
+      "type": "array",
+      "description": "Sell-side analyst reports and price targets.",
+      "items": {
+        "$ref": "analyst_price_target_schema.json"
+      }
+    },
+    "analyst_consensus": {
+      "type": "object",
+      "description": "Aggregated Wall Street consensus statistics.",
+      "properties": {
+        "mean_target": { "type": "number" },
+        "median_target": { "type": "number" },
+        "high_target": { "type": "number" },
+        "low_target": { "type": "number" },
+        "coverage_count": { "type": "integer" },
+        "average_upside_pct": { "type": "number" }
+      }
     }
   }
 }

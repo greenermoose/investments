@@ -169,6 +169,7 @@
             <th class="sortable" data-sort="price">52-Week Price Range</th>
             <th class="sortable" data-sort="entry">Entry Price</th>
             <th class="sortable" data-sort="exit">Exit Price</th>
+            <th class="sortable" data-sort="analyst">Analyst Target</th>
             <th class="sortable" data-sort="roi">Target ROI</th>
           </tr>
         </thead>
@@ -198,6 +199,7 @@
 
         <div class="modal-nav-tabs">
           <button class="modal-tab active" data-tab="tab-overview">Thesis &amp; Conviction Dossier</button>
+          <button class="modal-tab" data-tab="tab-analysts">Wall Street Analyst Coverage</button>
           <button class="modal-tab" data-tab="tab-technicals">Technical Analysis &amp; Volume</button>
           <button class="modal-tab" data-tab="tab-sec">SEC EDGAR Provenance</button>
           <button class="modal-tab" data-tab="tab-strategy">Strategy &amp; Options Modeling</button>
@@ -521,6 +523,73 @@
               <div class="callout-title">Portfolio Isolation &amp; SGOV Cash Collateral</div>
               <p>All unallocated cash securing put options is held in <strong>SGOV</strong> (iShares 0-3 Month Treasury
                 Bond ETF), earning risk-free yield while maintaining complete liquidity for Monday execution.</p>
+            </div>
+          </div>
+
+          <!-- Tab 5: Wall Street Analyst Coverage & Price Targets -->
+          <div id="tab-analysts" class="modal-tab-content" style="display: none;">
+            <div class="d-flex justify-between align-center"
+              style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h4 style="margin: 0 0 4px 0; color: #ffffff;">Wall Street Analyst Research Reports &amp; Price Targets</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Individual sell-side price targets, announcement market prices, and consensus return distributions.</p>
+              </div>
+              <span id="modal-analyst-count-badge" class="provenance-pill">
+                0 Analyst Reports
+              </span>
+            </div>
+
+            <!-- Consensus Metrics Summary Card -->
+            <div class="company-metrics-grid" style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+              <div class="metric-item">
+                <span class="metric-label">Mean Price Target</span>
+                <span class="metric-val" id="modal-analyst-mean-pt" style="color: #10b981;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Median Target</span>
+                <span class="metric-val" id="modal-analyst-median-pt" style="color: #00d4ff;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">High Target (Bull)</span>
+                <span class="metric-val" id="modal-analyst-high-pt" style="color: #10b981;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Low Target (Bear)</span>
+                <span class="metric-val" id="modal-analyst-low-pt" style="color: #f59e0b;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Average Implied Upside</span>
+                <span class="metric-val" id="modal-analyst-avg-upside" style="color: #10b981;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Consensus Coverage</span>
+                <span class="metric-val" id="modal-analyst-coverage" style="color: #00d4ff;">-</span>
+              </div>
+            </div>
+
+            <div class="provenance-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Analyst Name</th>
+                    <th>Firm / Institution</th>
+                    <th>Date Announced</th>
+                    <th>Market Price at Ann.</th>
+                    <th>Target Price</th>
+                    <th>Implied Upside</th>
+                    <th>Rating Action</th>
+                    <th>Research Report Title</th>
+                  </tr>
+                </thead>
+                <tbody id="modal-analysts-tbody">
+                  <!-- Analyst rows injected via JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout tip" style="margin-top: 20px;">
+              <div class="callout-title">Analyst Research &amp; Target Pricing Methodology</div>
+              <p>Analyst price targets represent 12-month forward expectations published by sell-side research departments. Our quantitative engine compares consensus target distribution against internal 13-quarter discounted revenue forecasts and Black-Scholes strike boundaries to validate margin of safety.</p>
             </div>
           </div>
         </div>

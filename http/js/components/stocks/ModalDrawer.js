@@ -10,7 +10,9 @@ import {
   formatSharesB,
   formatEVInBillions,
   renderPriceChange,
-  renderIndexBadges
+  renderIndexBadges,
+  renderAnalystRatingBadge,
+  renderAnalystUpside
 } from './formatters.js';
 
 export function switchModalTab(tabId) {
@@ -228,6 +230,62 @@ export function openCompanyModal(company) {
         <tr>
           <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 20px;">
             No granular filings cached for this ticker. <a href="${company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`}" target="_blank" style="color: var(--accent-color);">Browse SEC EDGAR directly</a>.
+          </td>
+        </tr>
+      `;
+    }
+  }
+
+  // Tab 5: Wall Street Analyst Coverage Tab
+  const analystTargets = company.analyst_price_targets || [];
+  const consensus = company.analyst_consensus || {};
+  const analystCountBadgeEl = document.getElementById('modal-analyst-count-badge');
+  const meanPtEl = document.getElementById('modal-analyst-mean-pt');
+  const medianPtEl = document.getElementById('modal-analyst-median-pt');
+  const highPtEl = document.getElementById('modal-analyst-high-pt');
+  const lowPtEl = document.getElementById('modal-analyst-low-pt');
+  const avgUpsideEl = document.getElementById('modal-analyst-avg-upside');
+  const coverageEl = document.getElementById('modal-analyst-coverage');
+  const analystsTbody = document.getElementById('modal-analysts-tbody');
+
+  if (analystCountBadgeEl) {
+    analystCountBadgeEl.textContent = `${analystTargets.length} Analyst Report${analystTargets.length === 1 ? '' : 's'}`;
+  }
+
+  if (meanPtEl) meanPtEl.textContent = consensus.mean_target ? `$${consensus.mean_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
+  if (medianPtEl) medianPtEl.textContent = consensus.median_target ? `$${consensus.median_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
+  if (highPtEl) highPtEl.textContent = consensus.high_target ? `$${consensus.high_target.toFixed(2)}` : (company.fifty_two_week_high ? `$${company.fifty_two_week_high.toFixed(2)}` : '-');
+  if (lowPtEl) lowPtEl.textContent = consensus.low_target ? `$${consensus.low_target.toFixed(2)}` : (company.fifty_two_week_low ? `$${company.fifty_two_week_low.toFixed(2)}` : '-');
+  if (avgUpsideEl) {
+    const avgUp = consensus.average_upside_pct;
+    avgUpsideEl.innerHTML = renderAnalystUpside(avgUp);
+  }
+  if (coverageEl) {
+    coverageEl.textContent = analystTargets.length > 0 ? `${analystTargets.length} Firms Active` : 'Model Grounded';
+  }
+
+  if (analystsTbody) {
+    analystsTbody.innerHTML = '';
+    if (analystTargets.length > 0) {
+      analystTargets.forEach(t => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><strong>${t.analyst_name}</strong></td>
+          <td><span style="color: var(--text-secondary);">${t.firm || 'Wall Street Research'}</span></td>
+          <td><code>${t.announcement_date}</code></td>
+          <td>$${Number(t.market_price_at_announcement).toFixed(2)}</td>
+          <td style="color: #10b981; font-weight: 600;">$${Number(t.target_price).toFixed(2)}</td>
+          <td>${renderAnalystUpside(t.implied_upside_pct)}</td>
+          <td>${renderAnalystRatingBadge(t.rating_action)}</td>
+          <td style="font-size: 0.82rem; color: var(--text-muted); max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${t.report_title || ''}">${t.report_title || 'Equity Research Note'}</td>
+        `;
+        analystsTbody.appendChild(row);
+      });
+    } else {
+      analystsTbody.innerHTML = `
+        <tr>
+          <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 20px;">
+            No granular analyst price targets recorded. Target exit price modeled at $${targetExit.toFixed(2)}.
           </td>
         </tr>
       `;

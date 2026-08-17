@@ -66,6 +66,14 @@ Despite multiple compression, top-line compounding and aggressive buybacks yield
 | 104 Weeks (2Y) | $145.00 | $205.00 | $245.00 | 12.8x | +26.3% |
 | 156 Weeks (3Y) | $165.00 | $245.00 | $295.00 | 12.1x | +24.0% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Vivek Arya | Bank of America Global Research | 2026-08-06 | $124.80 | $170.00 | +36.2% | BUY |
+| Toshiya Hari | Goldman Sachs | 2026-08-10 | $126.40 | $165.00 | +30.5% | BUY |
+| Timothy Arcuri | UBS Global Research | 2026-07-25 | $122.90 | $160.00 | +30.2% | BUY |
+| Stacy Rasgon | Bernstein Research | 2026-07-30 | $121.50 | $155.00 | +27.6% | OUTPERFORM |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

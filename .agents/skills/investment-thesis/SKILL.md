@@ -180,6 +180,12 @@ Every dossier in `context/theses/<TICKER>.md` must use the following standard la
 | 104 Weeks (2Y) | $XX.XX | $XX.XX | $XX.XX | X.Xx | +XX.X% |
 | 156 Weeks (3Y) | $XX.XX | $XX.XX | $XX.XX | X.Xx | +XX.X% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <ANALYST_NAME> | <FIRM> | YYYY-MM-DD | $XX.XX | $XX.XX | +XX.X% | BUY / OUTPERFORM |
+| ... | ... | ... | ... | ... | ... | ... |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

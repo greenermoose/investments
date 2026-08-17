@@ -89,6 +89,13 @@ When evaluating factual data, financial metrics, or valuation variables, the sys
 - **Authority Rating:** High-reliability secondary data source (Tier 2). Essential for real-time and end-of-day price discovery, volume analysis, technical trend modeling, and market capitalization computation.
 - **Implementation & Schema:** Full ingestion protocol, schema specifications, and mathematical grounding models are documented in [Market Price Research & Technical Analysis Methodology](file:///c:/Users/fyhor/Documents/GitHub/investments/context/sources/market_price_methodology.md) and [market_prices_schema.json](file:///c:/Users/fyhor/Documents/GitHub/investments/context/schemas/market_prices_schema.json).
 
+### Wall Street Analyst Coverage & Price Target Aggregators
+- **Providers:** FactSet Research Systems, LSEG Workspace / Refinitiv I/B/E/S, Bloomberg Professional, Financial Modeling Prep (`/v4/price-target`, `/v4/price-target-consensus`), TipRanks, Benzinga, and MarketBeat.
+- **Primary Research Issuers:** Sell-side equity research departments of major global investment banks and institutional brokerages including Morgan Stanley, Goldman Sachs, JPMorgan Chase, Bank of America Global Research, Bernstein Research, Wedbush Securities, Barclays Capital, UBS Global Research, Citigroup, Jefferies, Evercore ISI, and Baird.
+- **Domain:** Analyst names, issuing research firms, publication/announcement dates, market prices as of announcement, forward target prices, recommendation ratings (Buy/Outperform, Hold/Equal-Weight, Sell/Underperform), report headlines, and aggregated consensus targets (mean, median, high, low, upside percentage).
+- **Authority Rating:** Tier 2 Institutional Aggregator (individual analyst reports) & Tier 3 Consensus Estimates (aggregated consensus distributions).
+- **Implementation & Schema:** Conforms strictly to `context/schemas/analyst_price_target_schema.json`. Recorded in `scripts/data/analyst_price_targets.json` and integrated into thesis dossiers (`context/theses/*.md`) and public web intelligence (`http/stocks.html`).
+
 
 ## Tier 3: Quantitative Literature & Empirical Benchmark Studies
 

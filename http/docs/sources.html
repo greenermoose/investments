@@ -65,15 +65,15 @@
         </tr>
         <tr>
           <td><strong>Tier 2</strong></td>
-          <td>Institutional Aggregators &amp; Macro</td>
-          <td>FRED (Federal Reserve), US Treasury, Yahoo Finance, Finviz</td>
+          <td>Institutional Aggregators &amp; Analyst Feeds</td>
+          <td>FRED, US Treasury, Yahoo Finance, FMP Price Targets, FactSet, LSEG</td>
           <td>High Reliability / Secondary</td>
         </tr>
         <tr>
           <td><strong>Tier 3</strong></td>
-          <td>Quantitative Literature</td>
-          <td>CBOE BuyWrite/PutWrite Benchmarks, AQR / Fama-French Studies</td>
-          <td>Empirical Strategy Baseline</td>
+          <td>Quantitative Literature &amp; Consensus</td>
+          <td>CBOE Indices, AQR/Fama-French Studies, Wall Street Consensus Estimates</td>
+          <td>Empirical Strategy &amp; Consensus Baseline</td>
         </tr>
         <tr>
           <td><strong>Tier 4</strong></td>
@@ -89,6 +89,32 @@
         </tr>
       </tbody>
     </table>
+
+    <h2>Wall Street Analyst Coverage &amp; Price Targets</h2>
+    <p>Individual sell-side analyst price targets and research notes are captured and tracked for all public equities in the active universe. Each recorded price target captures five core attributes:</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>1. Analyst Name &amp; Firm</h4>
+        <p>Lead equity research analyst issuing the report and their institutional firm (e.g. Toni Sacconaghi / Bernstein, Dan Ives / Wedbush, Toshiya Hari / Goldman Sachs).</p>
+      </div>
+      <div class="docs-card">
+        <h4>2. Announcement Date</h4>
+        <p>The exact date (<code>YYYY-MM-DD</code>) the price target or rating revision was published to institutional clients.</p>
+      </div>
+      <div class="docs-card">
+        <h4>3. Stock Symbol</h4>
+        <p>The primary exchange-listed ticker symbol (e.g. <code>AAPL</code>, <code>NVDA</code>, <code>MSFT</code>).</p>
+      </div>
+      <div class="docs-card">
+        <h4>4. Market Price at Announcement</h4>
+        <p>The prevailing market price of the common stock on the date of the research report release, establishing the initial return benchmark.</p>
+      </div>
+      <div class="docs-card">
+        <h4>5. Target Price &amp; Implied Upside</h4>
+        <p>The analyst's 12-month forward price target per share and the resulting implied percentage appreciation or return.</p>
+      </div>
+    </div>
 
     <h2>AI Agent Parametric Knowledge &amp; Context Signature</h2>
     <p>AI agents frequently synthesize insights from internal weights (pre-training, SFT, RL) without executing tool calls. This is fully supported, provided agents explicitly document the provenance and attach a runtime context signature.</p>

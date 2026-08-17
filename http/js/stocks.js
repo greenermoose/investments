@@ -143,6 +143,17 @@ function getFilteredAndSortedData() {
         return xB - xA;
       }
 
+      case 'analyst-asc': {
+        const ptA = (a.analyst_consensus && a.analyst_consensus.mean_target) ? a.analyst_consensus.mean_target : (a.target_exit_price || 0);
+        const ptB = (b.analyst_consensus && b.analyst_consensus.mean_target) ? b.analyst_consensus.mean_target : (b.target_exit_price || 0);
+        return ptA - ptB;
+      }
+      case 'analyst-desc': {
+        const ptA = (a.analyst_consensus && a.analyst_consensus.mean_target) ? a.analyst_consensus.mean_target : (a.target_exit_price || 0);
+        const ptB = (b.analyst_consensus && b.analyst_consensus.mean_target) ? b.analyst_consensus.mean_target : (b.target_exit_price || 0);
+        return ptB - ptA;
+      }
+
       case 'volume-desc':
         return (b.day_volume || 0) - (a.day_volume || 0);
       case 'volume-asc':
@@ -329,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextDir = currentSort.endsWith('asc') ? 'desc' : 'asc';
       } else {
         // Default sort direction per column type
-        if (['price', 'entry', 'exit', 'roi'].includes(sortKey)) {
+        if (['price', 'entry', 'exit', 'analyst', 'roi'].includes(sortKey)) {
           nextDir = 'desc';
         } else {
           nextDir = 'asc';

@@ -34,6 +34,11 @@ export function createGridCard(company, onSelect) {
   const evStr = formatEVInBillions(company.enterprise_value || company.enterprise_value_b);
   const sharesStr = formatSharesB(company.shares_outstanding || company.shares_outstanding_b);
 
+  const consensus = company.analyst_consensus || {};
+  const analystTargetStr = consensus.mean_target ? `$${consensus.mean_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
+  const analystUpsideStr = consensus.average_upside_pct !== undefined ? `${consensus.average_upside_pct > 0 ? '+' : ''}${consensus.average_upside_pct.toFixed(1)}%` : '';
+  const analystCount = consensus.coverage_count || (company.analyst_price_targets ? company.analyst_price_targets.length : 0);
+
   card.innerHTML = `
     <div>
       <div class="company-card-header">
@@ -57,16 +62,16 @@ export function createGridCard(company, onSelect) {
           <span class="metric-val" style="color: #00d4ff;">${company.target_roi || '20.0%'}</span>
         </div>
         <div class="metric-item">
+          <span class="metric-label">Analyst Target (${analystCount})</span>
+          <span class="metric-val" style="color: #10b981;">${analystTargetStr} <small style="font-size: 0.72rem; color: #10b981;">(${analystUpsideStr})</small></span>
+        </div>
+        <div class="metric-item">
           <span class="metric-label">TTM Revenue (B)</span>
           <span class="metric-val">${ttmRevenueStr}</span>
         </div>
         <div class="metric-item">
           <span class="metric-label">Enterprise Value (B)</span>
           <span class="metric-val">${evStr}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Shares Out. (B)</span>
-          <span class="metric-val">${sharesStr}</span>
         </div>
       </div>
     </div>

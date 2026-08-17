@@ -66,6 +66,13 @@ Assuming multiple stability around 11.5x–12.0x P/S and steady share retirement
 | 104 Weeks (2Y) | $490.00 | $610.00 | $680.00 | 11.6x | +20.6% |
 | 156 Weeks (3Y) | $550.00 | $710.00 | $800.00 | 11.5x | +20.8% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Keith Weiss | Morgan Stanley | 2026-08-08 | $442.30 | $530.00 | +19.8% | OVERWEIGHT |
+| Brent Thill | Jefferies | 2026-08-02 | $438.50 | $520.00 | +18.6% | BUY |
+| Kash Rangan | Goldman Sachs | 2026-07-29 | $435.00 | $500.00 | +14.9% | BUY |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

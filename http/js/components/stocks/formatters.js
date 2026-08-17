@@ -84,3 +84,25 @@ export function renderIndexBadges(indices) {
     return `<span class="badge-index ${cls}">${idx}</span>`;
   }).join('') + `</div>`;
 }
+
+export function renderAnalystRatingBadge(action) {
+  if (!action) return '<span class="badge-status hold">HOLD</span>';
+  const u = action.toUpperCase();
+  let cls = 'hold';
+  if (['BUY', 'OUTPERFORM', 'OVERWEIGHT'].includes(u)) {
+    cls = 'buy';
+  } else if (['UNDERPERFORM', 'UNDERWEIGHT', 'SELL', 'AVOID'].includes(u)) {
+    cls = 'avoid';
+  }
+  return `<span class="badge-status ${cls}" style="font-size: 0.74rem; padding: 2px 7px;">${u}</span>`;
+}
+
+export function renderAnalystUpside(upsidePct) {
+  if (upsidePct === null || upsidePct === undefined || isNaN(upsidePct)) return '-';
+  const isPos = upsidePct > 0;
+  const isNeg = upsidePct < 0;
+  const sign = isPos ? '+' : '';
+  const color = isPos ? '#10b981' : (isNeg ? '#f43f5e' : '#e2e8f0');
+  return `<strong style="color: ${color};">${sign}${Number(upsidePct).toFixed(1)}%</strong>`;
+}
+

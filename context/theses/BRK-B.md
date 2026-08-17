@@ -66,6 +66,12 @@ Assuming modest multiple stability around 2.45x–2.55x P/S and steady opportuni
 | 104 Weeks (2Y) | $485.00 | $570.00 | $625.00 | 2.50x | +12.8% |
 | 156 Weeks (3Y) | $535.00 | $640.00 | $710.00 | 2.48x | +12.6% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Brian Meredith | UBS Global Research | 2026-08-06 | $448.20 | $520.00 | +16.0% | BUY |
+| James Shanahan | Edward Jones | 2026-08-02 | $444.00 | $505.00 | +13.7% | BUY |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

@@ -66,6 +66,13 @@ Combined with 12-14% organic revenue compounding and ~2.5% annual share retireme
 | 104 Weeks (2Y) | $195.00 | $255.00 | $295.00 | 6.85x | +21.5% |
 | 156 Weeks (3Y) | $220.00 | $310.00 | $365.00 | 6.95x | +21.5% |
 
+## Analyst Price Targets & Wall Street Coverage
+| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Brian Nowak | Morgan Stanley | 2026-08-07 | $178.20 | $225.00 | +26.3% | OVERWEIGHT |
+| Doug Anmuth | JPMorgan Chase | 2026-08-03 | $176.50 | $220.00 | +24.6% | OVERWEIGHT |
+| Colin Sebastian | Baird | 2026-07-26 | $173.80 | $215.00 | +23.7% | OUTPERFORM |
+
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnalystPriceTargetSchema",
+  "description": "Institutional schema for sell-side analyst research reports, price targets, announcement market prices, and consensus analytics.",
+  "type": "object",
+  "required": [
+    "symbol",
+    "analyst_name",
+    "announcement_date",
+    "market_price_at_announcement",
+    "target_price"
+  ],
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "pattern": "^[A-Z0-9.-]{1,10}$",
+      "description": "Stock symbol for the price target (e.g. AAPL, NVDA, MSFT)."
+    },
+    "analyst_name": {
+      "type": "string",
+      "description": "Name of the sell-side research analyst issuing the price target."
+    },
+    "firm": {
+      "type": "string",
+      "description": "Investment bank, brokerage, or research institution (e.g. Morgan Stanley, Goldman Sachs, Wedbush)."
+    },
+    "announcement_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date target was officially published or announced (YYYY-MM-DD)."
+    },
+    "market_price_at_announcement": {
+      "type": "number",
+      "minimum": 0.01,
+      "description": "Market closing or prevailing price of the stock as of the announcement date in USD."
+    },
+    "target_price": {
+      "type": "number",
+      "minimum": 0.01,
+      "description": "Analyst target price per share in USD."
+    },
+    "implied_upside_pct": {
+      "type": "number",
+      "description": "Implied percentage upside or return from the announcement market price to the target price."
+    },
+    "rating_action": {
+      "type": "string",
+      "enum": [
+        "BUY",
+        "OUTPERFORM",
+        "OVERWEIGHT",
+        "HOLD",
+        "EQUAL-WEIGHT",
+        "NEUTRAL",
+        "UNDERPERFORM",
+        "UNDERWEIGHT",
+        "SELL"
+      ],
+      "description": "Standardized analyst recommendation or action."
+    },
+    "report_title": {
+      "type": "string",
+      "description": "Title or headline of the analyst research report."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direct URL or locator to research note or aggregator release."
+    },
+    "data_tier": {
+      "type": "string",
+      "enum": [
+        "TIER_1_PRIMARY_REGULATORY",
+        "TIER_2_FINANCIAL_AGGREGATOR",
+        "TIER_3_CONSENSUS_ESTIMATES"
+      ],
+      "default": "TIER_2_FINANCIAL_AGGREGATOR",
+      "description": "Data provenance authority tier."
+    }
+  }
+}

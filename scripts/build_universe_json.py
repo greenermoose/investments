@@ -68,6 +68,13 @@ if os.path.exists(prices_file):
     with open(prices_file, "r", encoding="utf-8") as f:
         market_prices = json.load(f)
 
+# Load analyst price targets & reports
+analyst_targets_file = os.path.join(scripts_data_dir, "analyst_price_targets.json")
+all_analyst_targets = {}
+if os.path.exists(analyst_targets_file):
+    with open(analyst_targets_file, "r", encoding="utf-8") as f:
+        all_analyst_targets = json.load(f)
+
 # Load SEC summary metrics
 sec_data_path = os.path.join(root_dir, "http", "sec-data.json")
 sec_summary = {}
@@ -194,6 +201,36 @@ for filename in sorted(all_files):
     ev_b = (enterprise_value / 1e9) if enterprise_value is not None else None
     market_cap_b = (market_cap / 1e9) if market_cap is not None else None
 
+    # Analyst price targets and consensus analytics
+    sym_targets = all_analyst_targets.get(sym, [])
+    if sym_targets:
+        pt_values = [t["target_price"] for t in sym_targets if t.get("target_price")]
+        upside_values = [t["implied_upside_pct"] for t in sym_targets if t.get("implied_upside_pct") is not None]
+        mean_pt = round(sum(pt_values) / len(pt_values), 2) if pt_values else current_price
+        sorted_pts = sorted(pt_values) if pt_values else [current_price]
+        median_pt = sorted_pts[len(sorted_pts) // 2]
+        high_pt = max(pt_values) if pt_values else current_price
+        low_pt = min(pt_values) if pt_values else current_price
+        avg_upside = round(sum(upside_values) / len(upside_values), 1) if upside_values else round(((mean_pt - current_price) / current_price) * 100.0, 1)
+        
+        analyst_consensus = {
+            "mean_target": mean_pt,
+            "median_target": median_pt,
+            "high_target": high_pt,
+            "low_target": low_pt,
+            "coverage_count": len(sym_targets),
+            "average_upside_pct": avg_upside
+        }
+    else:
+        analyst_consensus = {
+            "mean_target": target_exit_price,
+            "median_target": target_exit_price,
+            "high_target": target_exit_price,
+            "low_target": target_exit_price,
+            "coverage_count": 0,
+            "average_upside_pct": round(((target_exit_price - current_price) / current_price) * 100.0, 1)
+        }
+
     universe.append({
         "symbol": sym,
         "name": comp_name,
@@ -256,7 +293,9 @@ for filename in sorted(all_files):
         "latest_filing_type": latest_filing.get("type") if latest_filing else None,
         "latest_filing_url": latest_filing.get("filing_url") if latest_filing else None,
         "filings": filings,
-        "historical_candles_30d": historical_candles
+        "historical_candles_30d": historical_candles,
+        "analyst_price_targets": sym_targets,
+        "analyst_consensus": analyst_consensus
     })
 
 # Save updated universe.json

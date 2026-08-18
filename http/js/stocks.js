@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextDir = currentSort.endsWith('asc') ? 'desc' : 'asc';
       } else {
         // Default sort direction per column type
-        if (['price', 'entry', 'exit', 'analyst', 'roi'].includes(sortKey)) {
+        if (['price', 'entry', 'exit', 'roi'].includes(sortKey)) {
           nextDir = 'desc';
         } else {
           nextDir = 'asc';

@@ -310,20 +310,66 @@
             <h4 style="margin: 16px 0 8px 0; color: #ffffff;">Business Profile</h4>
             <p id="modal-description" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;"></p>
 
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Total Addressable Market &amp; Market Share</h4>
+            <div id="modal-tam-card" style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 12px 16px; margin: 8px 0 16px 0;">
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom: 10px;">
+                <div class="metric-item">
+                  <span class="metric-label">Estimated TAM</span>
+                  <span class="metric-val" id="modal-tam-val" style="color: #00d4ff; font-size: 0.9rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Current Market Share</span>
+                  <span class="metric-val" id="modal-market-share-curr" style="color: #ffffff; font-size: 0.9rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">3Y Projected Share</span>
+                  <span class="metric-val" id="modal-market-share-proj" style="color: #10b981; font-size: 0.9rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Market CAGR</span>
+                  <span class="metric-val" id="modal-tam-cagr" style="color: #e2e8f0; font-size: 0.9rem;">-</span>
+                </div>
+              </div>
+              <p id="modal-tam-text" style="margin: 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;"></p>
+            </div>
+
             <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Competitive Moat Analysis</h4>
             <div class="callout" style="margin: 8px 0 16px 0; border-left: 3px solid #00d4ff;">
-              <p id="modal-moat" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+              <p id="modal-moat" style="margin: 0; font-size: 0.92rem; color: #e2e8f0; line-height: 1.5;"></p>
             </div>
 
             <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Anticipated Catalysts &amp; Timeline</h4>
             <div class="callout tip" style="margin: 8px 0 16px 0;">
-              <p id="modal-catalyst" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+              <p id="modal-catalyst" style="margin: 0 0 8px 0; font-size: 0.92rem; color: #e2e8f0; line-height: 1.5;"></p>
+              <div id="modal-catalyst-chips" style="display: flex; flex-direction: column; gap: 6px;"></div>
             </div>
 
-            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)
-            </h4>
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Share Dilution or Buyback</h4>
+            <div id="modal-dilution-card" style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 12px 16px; margin: 8px 0 16px 0;">
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom: 10px;">
+                <div class="metric-item">
+                  <span class="metric-label">Capital Philosophy</span>
+                  <span class="metric-val" id="modal-dilution-phil" style="color: #00d4ff; font-size: 0.85rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Buyback Program</span>
+                  <span class="metric-val" id="modal-buyback-active" style="color: #10b981; font-size: 0.85rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Buyback Capacity</span>
+                  <span class="metric-val" id="modal-buyback-capacity" style="color: #ffffff; font-size: 0.85rem;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Annual Net Dilution/Burn</span>
+                  <span class="metric-val" id="modal-dilution-net-rate" style="color: #818cf8; font-size: 0.85rem;">-</span>
+                </div>
+              </div>
+              <p id="modal-dilution-text" style="margin: 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;"></p>
+            </div>
+
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)</h4>
             <div class="callout warning" style="margin: 8px 0 16px 0;">
-              <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+              <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0; line-height: 1.5;"></p>
             </div>
           </div>
 

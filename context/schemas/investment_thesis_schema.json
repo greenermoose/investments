@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "InvestmentThesisSchema",
-  "description": "Institutional schema for public equity investment thesis dossiers, multi-horizon financial forecasts, valuation multiple narratives, and decisive recommendations.",
+  "description": "Institutional schema for public equity investment thesis dossiers, multi-horizon financial forecasts, valuation multiple narratives, market share dynamics, and decisive recommendations.",
   "type": "object",
   "required": [
     "ticker",
@@ -14,6 +14,10 @@
     "conviction_score",
     "rating",
     "core_thesis",
+    "business_profile",
+    "tam_and_market_share",
+    "competitive_moat_analysis",
+    "share_dilution_or_buyback",
     "revenue_drivers_narrative",
     "valuation_ps_multiple_narrative",
     "revenue_forecast_13q",
@@ -84,7 +88,76 @@
     },
     "core_thesis": {
       "type": "string",
-      "description": "High-level summary of the company's competitive moat, market position, and structural investment thesis."
+      "description": "High-level executive summary of the investment thesis and return hurdle justification."
+    },
+    "business_profile": {
+      "type": "string",
+      "description": "Comprehensive description of the company's operating structure, core business segments, flagship products/services, and revenue monetization model."
+    },
+    "tam_and_market_share": {
+      "type": "object",
+      "description": "Total addressable market valuation, current market penetration, and projected 3-year market share dynamics.",
+      "required": ["tam_estimate_usd_b", "current_market_share_pct", "projected_market_share_3y_pct", "narrative"],
+      "properties": {
+        "tam_estimate_usd_b": {
+          "type": "number",
+          "minimum": 0.1,
+          "description": "Estimated total addressable market in billions of USD."
+        },
+        "current_market_share_pct": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 100.0,
+          "description": "Current market share percentage of TAM."
+        },
+        "projected_market_share_3y_pct": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 100.0,
+          "description": "Projected market share percentage after 3 years under competitive forces."
+        },
+        "tam_cagr_pct": {
+          "type": "number",
+          "description": "Underlying market annual growth rate percentage."
+        },
+        "narrative": {
+          "type": "string",
+          "description": "Detailed narrative explaining market size, competitor landscape, market share defense, and expansion into adjacent TAM segments."
+        }
+      }
+    },
+    "competitive_moat_analysis": {
+      "type": "string",
+      "description": "Detailed analysis of defensible economic moats, switching costs, network effects, scale advantages, IP, and gross margin / ROIC defense."
+    },
+    "share_dilution_or_buyback": {
+      "type": "object",
+      "description": "Management approach to share count, active buyback programs, and capital requirements / dilution assessment.",
+      "required": ["management_philosophy", "buyback_program_active", "net_annual_share_change_pct", "narrative"],
+      "properties": {
+        "management_philosophy": {
+          "type": "string",
+          "enum": ["AGGRESSIVE_BUYBACKS", "MODERATE_BUYBACKS", "SBC_NEUTRAL", "SBC_DILUTIVE", "CAPITAL_RAISE_RISK"],
+          "description": "Classification of management capital allocation posture."
+        },
+        "buyback_program_active": {
+          "type": "boolean",
+          "description": "Whether an authorized open-market share repurchase program is currently active."
+        },
+        "authorized_capacity_usd_b": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Remaining authorized share repurchase authorization in billions of USD."
+        },
+        "net_annual_share_change_pct": {
+          "type": "number",
+          "description": "Expected annual percentage change in shares outstanding (negative for share count reductions, positive for net dilution)."
+        },
+        "narrative": {
+          "type": "string",
+          "description": "Detailed narrative evaluating management track record, FCF conversion supporting buybacks, or necessity of issuing equity to meet capital needs."
+        }
+      }
     },
     "revenue_drivers_narrative": {
       "type": "string",
@@ -160,6 +233,14 @@
           "primary_growth_driver": {
             "type": "string",
             "description": "Key business segment or catalyst driving revenue in this quarter."
+          },
+          "catalyst_dependency": {
+            "type": "string",
+            "description": "Specific product or service catalyst milestone tied to this quarter."
+          },
+          "market_share_assumption_pct": {
+            "type": "number",
+            "description": "Implied market share percentage assumed for this quarter."
           }
         }
       }
@@ -245,22 +326,30 @@
     },
     "catalyst_timeline": {
       "type": "array",
-      "description": "Multi-quarter timeline of major anticipated catalysts.",
+      "description": "Multi-quarter timeline of major anticipated product, service, and strategic catalysts.",
       "items": {
         "type": "object",
-        "required": ["target_window", "catalyst_event", "expected_impact", "status"],
+        "required": ["target_window", "product_or_service_name", "expected_revenue_impact_b", "revenue_quarter_inflection", "expected_outcome", "status"],
         "properties": {
           "target_window": {
             "type": "string",
-            "description": "Target calendar quarter or date window."
+            "description": "Target calendar quarter or date window (e.g. '2026-Q4', '2027-Q2')."
           },
-          "catalyst_event": {
+          "product_or_service_name": {
             "type": "string",
-            "description": "Specific catalyst event."
+            "description": "Specific product, service, platform feature, or commercial expansion."
           },
-          "expected_impact": {
+          "expected_revenue_impact_b": {
+            "type": "number",
+            "description": "Expected incremental revenue contribution in billions of USD."
+          },
+          "revenue_quarter_inflection": {
             "type": "string",
-            "description": "Expected business or financial outcome."
+            "description": "Quarter index or label in 13Q forecast where top-line inflection starts."
+          },
+          "expected_outcome": {
+            "type": "string",
+            "description": "Expected business, operational, or commercial milestone outcome."
           },
           "status": {
             "type": "string",

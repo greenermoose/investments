@@ -1,9 +1,9 @@
 /**
  * DossierCard Component
  * Renders expanded in-depth equity dossier cards.
- * Displays conviction score, 20d/50d SMAs, investment thesis narrative,
- * competitive moat analysis, upcoming catalysts, invalidation criteria,
- * and audited primary SEC EDGAR access points.
+ * Displays conviction score, 20d/50d SMAs, business profile, TAM & market share,
+ * competitive moat analysis, upcoming catalysts, share dilution or buyback,
+ * invalidation criteria, and audited primary SEC EDGAR access points.
  */
 
 import {
@@ -58,6 +58,18 @@ export function createDossierCard(company, onSelect) {
         </td>
       </tr>
     `;
+  }
+
+  const tamInfo = company.tam_and_market_share || {};
+  const dilInfo = company.share_dilution_or_buyback || {};
+  const tamText = tamInfo.narrative || `Addresses $${tamInfo.tam_estimate_usd_b || 800}B TAM (${tamInfo.current_market_share_pct || 5.0}% share -> ${tamInfo.projected_market_share_3y_pct || 7.5}% in 3Y).`;
+  const dilText = dilInfo.narrative || `Management capital strategy: ${dilInfo.management_philosophy || 'Neutral'} (${dilInfo.net_annual_share_change_pct ? dilInfo.net_annual_share_change_pct + '%/yr' : '-1.5%/yr'}).`;
+
+  let invalidationHtml = '';
+  if (Array.isArray(company.invalidation_criteria)) {
+    invalidationHtml = company.invalidation_criteria.map((c, i) => `<div>&bull; ${c}</div>`).join('');
+  } else {
+    invalidationHtml = company.invalidation_criteria || 'Structural margin decline or loss of competitive moat.';
   }
 
   card.innerHTML = `
@@ -117,9 +129,9 @@ export function createDossierCard(company, onSelect) {
       </div>
     </div>
 
-    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Core Investment Thesis</h4>
+    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Business Profile</h4>
     <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-      ${company.description || 'Investment thesis under fundamental analysis.'}
+      ${company.business_profile || company.description || 'Investment thesis under fundamental analysis.'}
     </p>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Analyst Reports &amp; Wall Street Price Targets</h4>
@@ -142,9 +154,14 @@ export function createDossierCard(company, onSelect) {
       </table>
     </div>
 
+    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Total Addressable Market &amp; Market Share</h4>
+    <p style="font-size: 0.9rem; color: #e2e8f0; line-height: 1.5; margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.2); padding: 8px 12px; border-radius: 6px;">
+      ${tamText}
+    </p>
+
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Competitive Moat &amp; Strategic Advantages</h4>
     <p style="font-size: 0.92rem; color: #e2e8f0; line-height: 1.5; margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.2); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #00d4ff;">
-      ${company.moat || 'Economic moat under evaluation.'}
+      ${company.competitive_moat_analysis || company.moat || 'Economic moat under evaluation.'}
     </p>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar &amp; Milestones</h4>
@@ -152,11 +169,16 @@ export function createDossierCard(company, onSelect) {
       ${company.latest_catalyst || 'Upcoming earnings reports and capital allocation updates.'}
     </p>
 
+    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Share Dilution or Buyback</h4>
+    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.15); padding: 8px 12px; border-radius: 6px;">
+      ${dilText}
+    </p>
+
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>
     <div class="callout warning" style="margin: 8px 0 16px 0;">
-      <p style="margin: 0; font-size: 0.9rem;">
-        ${company.invalidation_criteria || 'Structural margin decline or loss of competitive moat.'}
-      </p>
+      <div style="font-size: 0.9rem; line-height: 1.5;">
+        ${invalidationHtml}
+      </div>
     </div>
 
     <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 10px;">

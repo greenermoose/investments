@@ -51,20 +51,47 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
             if rating_val not in ALLOWED_RATINGS:
                 errors.append(f"Invalid Rating '{rating_val}'. Must be one of {ALLOWED_RATINGS}")
 
-    # 3. Core Thesis Section
-    if "## Core Investment Thesis" not in content:
-        errors.append("Missing section '## Core Investment Thesis'")
+    # 3. Business Profile / Core Thesis Section
+    if "## Business Profile" not in content and "## Core Investment Thesis" not in content:
+        errors.append("Missing section '## Business Profile' (or '## Core Investment Thesis')")
 
-    # 4. Revenue Drivers Narrative
+    # 4. Total Addressable Market & Market Share
+    if "## Total Addressable Market" not in content:
+        errors.append("Missing section '## Total Addressable Market & Market Share'")
+    else:
+        tam_section = content.split("## Total Addressable Market")[1].split("##")[0].strip()
+        if len(tam_section) < 40:
+            errors.append("Total Addressable Market & Market Share section is too brief")
+
+    # 5. Competitive Moat Analysis
+    if "## Competitive Moat Analysis" not in content and "## Competitive Moat" not in content:
+        errors.append("Missing section '## Competitive Moat Analysis'")
+
+    # 6. Anticipated Catalysts & Timeline
+    if "## Anticipated Catalysts & Timeline" not in content:
+        errors.append("Missing section '## Anticipated Catalysts & Timeline'")
+
+    # 7. Share Dilution or Buyback
+    if "## Share Dilution or Buyback" not in content:
+        errors.append("Missing section '## Share Dilution or Buyback'")
+    else:
+        dilution_section = content.split("## Share Dilution or Buyback")[1].split("##")[0].strip()
+        if len(dilution_section) < 40:
+            errors.append("Share Dilution or Buyback section is too brief")
+
+    # 8. Invalidation Criteria
+    if "## Explicit Invalidation Criteria" not in content:
+        errors.append("Missing section '## Explicit Invalidation Criteria (Exit Triggers)'")
+
+    # 9. Revenue Drivers Narrative
     if "## Revenue Drivers Narrative" not in content:
         errors.append("Missing section '## Revenue Drivers Narrative'")
     else:
-        # Check narrative has substantive content
         rev_section = content.split("## Revenue Drivers Narrative")[1].split("##")[0].strip()
         if len(rev_section) < 50:
             errors.append("Revenue Drivers Narrative is too brief (minimum 50 characters required)")
 
-    # 5. Valuation & P/S Multiple Narrative
+    # 10. Valuation & P/S Multiple Narrative
     if "## Valuation & P/S Multiple Narrative" not in content and "## Valuation &amp; P/S Multiple Narrative" not in content:
         errors.append("Missing section '## Valuation & P/S Multiple Narrative'")
     else:
@@ -72,7 +99,7 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         if len(val_section) < 50:
             errors.append("Valuation & P/S Multiple Narrative is too brief (minimum 50 characters required)")
 
-    # 6. 13-Quarter Revenue Forecast Matrix
+    # 11. 13-Quarter Revenue Forecast Matrix
     if "13-Quarter Revenue Forecast Matrix" not in content and "Revenue Forecast Matrix" not in content:
         errors.append("Missing section '## 13-Quarter Revenue Forecast Matrix'")
     else:
@@ -87,7 +114,7 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         else:
             errors.append("Could not parse 13-Quarter Revenue Forecast table")
 
-    # 7. Shares Outstanding Projections (6 Horizons)
+    # 12. Shares Outstanding Projections (6 Horizons)
     if "Shares Outstanding Projections" not in content:
         errors.append("Missing section '## Shares Outstanding Projections (6 Horizons)'")
     else:
@@ -100,7 +127,7 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         else:
             errors.append("Could not parse Shares Outstanding Projections table")
 
-    # 8. Price Target Ranges (4 Horizons)
+    # 13. Price Target Ranges (4 Horizons)
     if "Price Target Ranges" not in content:
         errors.append("Missing section '## Price Target Ranges & Valuation Scenarios (4 Horizons)'")
     else:
@@ -113,7 +140,18 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         else:
             errors.append("Could not parse Price Target Ranges table")
 
-    # 9. Analyst Price Targets & Wall Street Coverage
+    # 14. Catalyst Timeline Table
+    if "## Anticipated Catalyst Timeline" in content:
+        cat_match = re.search(r"##\s+Anticipated Catalyst Timeline[^\n]*\n([\s\S]*?)(?=\n##|\Z)", content)
+        if cat_match:
+            table_lines = [l.strip() for l in cat_match.group(1).strip().split("\n") if l.strip().startswith("|")]
+            data_rows = [l for l in table_lines if not re.match(r"^\|\s*:?---", l) and "Target Date" not in l]
+            if len(data_rows) < 1:
+                errors.append("Anticipated Catalyst Timeline table must contain at least 1 catalyst row")
+        else:
+            errors.append("Could not parse Anticipated Catalyst Timeline table")
+
+    # 15. Analyst Price Targets & Wall Street Coverage
     if "Analyst Price Targets" in content:
         apt_match = re.search(r"##\s+Analyst Price Targets[^\n]*\n([\s\S]*?)(?=\n##|\Z)", content)
         if apt_match:
@@ -124,11 +162,7 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         else:
             errors.append("Could not parse Analyst Price Targets table")
 
-    # 10. Invalidation Criteria
-    if "## Explicit Invalidation Criteria" not in content:
-        errors.append("Missing section '## Explicit Invalidation Criteria (Exit Triggers)'")
-
-    # 11. Data Provenance
+    # 16. Data Provenance
     if "## Data Provenance & Verification Metadata" not in content and "## Data Provenance" not in content:
         errors.append("Missing section '## Data Provenance & Verification Metadata'")
 

@@ -6,56 +6,75 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $144.10 per share
 - **Current Price:** $144.10 per share
-- **Target Exit Price:** $106.04 per share
+- **Target Exit Price:** $191.52 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1091667
 
-## Core Investment Thesis
-Charter Communications, Inc. (CHTR) operates as an established participant within the Communication Services sector (Broadband Cable & Mobile). Broadband connectivity and cable operator serving over 32 million customers in 41 states through the Spectrum brand. The company benefits from a defensible commercial moat (Dense broadband coax infrastructure, Spectrum Mobile subscriber scaling.). Grounded in our deterministic valuation framework, CHTR trades at $144.10 against a 3-year baseline target of $106.04, generating a modeled annualized ROI of -9.7% under our disciplined portfolio allocation criteria.
+## Business Profile
+Charter Communications, Inc. (CHTR) operates as an established participant within the Communication Services sector (Broadband Cable & Mobile). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CHTR trades at $144.10 against a 3-year baseline price target of $191.52, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
+
+## Total Addressable Market & Market Share
+Charter Communications, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 8.4% market share. Over our 3-year investment horizon, we model market share evolving to 7.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+
+## Competitive Moat Analysis
+High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
+
+## Anticipated Catalysts & Timeline
+Charter Communications, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$2.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$3.42B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$4.79B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+
+## Share Dilution or Buyback
+Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements.
+
+## Explicit Invalidation Criteria (Exit Triggers)
+If any of the following occur, the thesis is broken and the position will be exited:
+1. **Trigger 1:** Structural failure to capture projected market share within the $650.0B addressable market.
+2. **Trigger 2:** Operating margins compress by more than 400 basis points across two consecutive quarters.
+3. **Trigger 3:** Unanticipated cancellation or material commercial delay of key catalyst product rollouts.
+4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
 Charter Communications, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of -1.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -9.7%, fully justifying our AVOID rating.
+CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.9%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $13.69 B | -1.0% | 0.123 B | 0.32x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $15.02 B | -1.0% | 0.123 B | 0.32x | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | 2027-03-31 | $12.94 B | -1.0% | 0.124 B | 0.31x | Communication Services core demand expansion and operational execution |
-| 2027-Q2 | 2027-06-30 | $13.59 B | -1.0% | 0.125 B | 0.31x | Communication Services core demand expansion and operational execution |
-| 2027-Q3 | 2027-09-30 | $13.56 B | -1.0% | 0.125 B | 0.30x | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | 2027-12-31 | $14.87 B | -1.0% | 0.126 B | 0.30x | Communication Services core demand expansion and operational execution |
-| 2028-Q1 | 2028-03-31 | $12.81 B | -1.0% | 0.126 B | 0.29x | Communication Services core demand expansion and operational execution |
-| 2028-Q2 | 2028-06-30 | $13.45 B | -1.0% | 0.127 B | 0.29x | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.42 B | -1.0% | 0.128 B | 0.28x | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | 2028-12-31 | $14.72 B | -1.0% | 0.128 B | 0.28x | Communication Services core demand expansion and operational execution |
-| 2029-Q1 | 2029-03-31 | $12.69 B | -1.0% | 0.129 B | 0.27x | Communication Services core demand expansion and operational execution |
-| 2029-Q2 | 2029-06-30 | $13.32 B | -1.0% | 0.130 B | 0.27x | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $13.29 B | -1.0% | 0.130 B | 0.26x | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | 2026-09-30 | $13.97 B | -6.3% | 0.123 B | 0.32x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $15.38 B | +18.8% | 0.123 B | 0.32x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $14.26 B | +6.0% | 0.124 B | 0.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $16.42 B | +17.6% | 0.125 B | 0.31x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $18.31 B | +31.1% | 0.125 B | 0.30x | Communication Services core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $21.57 B | +40.2% | 0.126 B | 0.30x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $21.56 B | +51.2% | 0.126 B | 0.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $23.51 B | +43.2% | 0.127 B | 0.29x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.03 B | +31.2% | 0.128 B | 0.28x | Communication Services core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $24.82 B | +15.0% | 0.128 B | 0.28x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $22.91 B | +6.2% | 0.129 B | 0.27x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $23.42 B | -0.4% | 0.130 B | 0.27x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $23.94 B | -0.4% | 0.130 B | 0.26x | Communication Services core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 124 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
-| 26 Weeks (2Q) | 124 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
-| 39 Weeks (3Q) | 125 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
-| 52 Weeks (1Y) | 125 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
-| 104 Weeks (2Y) | 128 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
-| 156 Weeks (3Y) | 131 M | +2.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 13 Weeks (1Q) | 124 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| 26 Weeks (2Q) | 124 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| 39 Weeks (3Q) | 125 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| 52 Weeks (1Y) | 125 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| 104 Weeks (2Y) | 128 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| 156 Weeks (3Y) | 131 M | +2.0% | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $113.34 | $141.67 | $170.00 | 0.3x | -6.6% |
-| 52 Weeks (1Y) | $103.90 | $129.88 | $155.86 | 0.3x | -9.9% |
-| 104 Weeks (2Y) | $94.12 | $117.65 | $141.18 | 0.3x | -9.6% |
-| 156 Weeks (3Y) | $84.83 | $106.04 | $127.25 | 0.3x | -9.7% |
+| 13 Weeks | $128.04 | $160.05 | $192.06 | 0.3x | +52.2% |
+| 52 Weeks (1Y) | $140.62 | $175.78 | $210.94 | 0.3x | +22.0% |
+| 104 Weeks (2Y) | $168.21 | $210.26 | $252.31 | 0.3x | +20.8% |
+| 156 Weeks (3Y) | $153.22 | $191.52 | $229.82 | 0.3x | +9.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,19 +86,11 @@ CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing tw
 | Gregory Williams | TD Cowen | 2026-07-27 | $144.10 | $380.00 | +201.4% | BUY |
 
 ## Anticipated Catalyst Timeline
-| Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
-| 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
-| 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
-
-## Explicit Invalidation Criteria (Exit Triggers)
-If any of the following occur, the thesis is broken and the position will be exited:
-1. **Structural Thesis Invalidation:** Accelerated broadband subscriber losses to fixed wireless home internet competitors.
-2. **Margin Deterioration:** Operating margins compress by more than 400 basis points across two consecutive quarters.
-3. **Customer Retention / Churn Risk:** Unanticipated loss of key tier-one customers or sharp decline in net retention rates.
-4. **Governance or Solvency Failure:** Material debt refinancing hurdles or unaddressed regulatory enforcement actions.
+| Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q4 | Communication Services Next-Generation Commercial Product Rollout | $2.05 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $3.42 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $4.79 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

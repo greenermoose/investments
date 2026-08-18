@@ -81,6 +81,14 @@ for equity in universe:
     target_roi_str = val_model["target_roi_str"]
     ann_roi_pct = val_model["annualized_roi_pct"]
 
+    # Extract narrative sections from val_model
+    business_profile = val_model["business_profile"]
+    tam_info = val_model["tam_and_market_share"]
+    moat_analysis = val_model["competitive_moat_analysis"]
+    dilution_info = val_model["share_dilution_or_buyback"]
+    catalysts_data = val_model["catalyst_timeline"]
+    invalidation_items = val_model["invalidation_criteria"]
+
     # 13-Quarter Revenue Forecast Rows
     forecast_rows = []
     for q in val_model["revenue_forecast_13q"]:
@@ -116,6 +124,19 @@ for equity in universe:
             f"| Consensus Model | Wall Street Consensus | 2026-08-10 | ${current_price:.2f} | ${target_exit_price:.2f} | {upside:+.1f}% | {thesis_status} |"
         )
 
+    # Catalyst Timeline rows
+    catalyst_rows = []
+    for cat in catalysts_data:
+        cat_p = cat.get("product_or_service_name", "Product Rollout")
+        cat_w = cat.get("target_window", "2026-Q4")
+        cat_rev = cat.get("expected_revenue_impact_b", 0.0)
+        cat_q = cat.get("revenue_quarter_inflection", "Q1")
+        cat_out = cat.get("expected_outcome", "Commercial launch")
+        cat_stat = cat.get("status", "PENDING")
+        catalyst_rows.append(
+            f"| {cat_w} | {cat_p} | ${cat_rev:.2f} B | {cat_q} | {cat_out} | {cat_stat} |"
+        )
+
     # Contextual exchange
     exchange = "NASDAQ"
     if equity.get("indices"):
@@ -124,7 +145,7 @@ for equity in universe:
         elif "SP500" in equity["indices"]:
             exchange = "NASDAQ"
 
-    # Assemble complete markdown thesis dossier
+    # Assemble complete markdown thesis dossier with all 6 narrative sections
     dossier_lines = [
         f"# Investment Thesis Dossier: {sym} - {name}",
         "",
@@ -141,8 +162,29 @@ for equity in universe:
         f"- **Target Strategy:** {target_strategy}",
         f"- **SEC EDGAR URL:** {sec_edgar_url}",
         "",
-        "## Core Investment Thesis",
-        f"{name} ({sym}) operates as an established participant within the {sector} sector ({industry}). {description} The company benefits from a defensible commercial moat ({moat}). Grounded in our deterministic valuation framework, {sym} trades at ${current_price:.2f} against a 3-year baseline target of ${target_exit_price:.2f}, generating a modeled annualized ROI of {target_roi_str} under our disciplined portfolio allocation criteria.",
+        "## Business Profile",
+        business_profile,
+        "",
+        "## Total Addressable Market & Market Share",
+        tam_info["narrative"],
+        "",
+        "## Competitive Moat Analysis",
+        moat_analysis,
+        "",
+        "## Anticipated Catalysts & Timeline",
+        f"{name}'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. " +
+        " ".join([f"- **{c['product_or_service_name']}** ({c['target_window']}): Expected top-line impact of ~${c['expected_revenue_impact_b']:.2f}B inflecting {c['revenue_quarter_inflection']} revenue. {c['expected_outcome']}" for c in catalysts_data]),
+        "",
+        "## Share Dilution or Buyback",
+        dilution_info["narrative"],
+        "",
+        "## Explicit Invalidation Criteria (Exit Triggers)",
+        "If any of the following occur, the thesis is broken and the position will be exited:",
+    ]
+    for idx, crit in enumerate(invalidation_items, 1):
+        dossier_lines.append(f"{idx}. **Trigger {idx}:** {crit}")
+
+    dossier_lines.extend([
         "",
         "## Revenue Drivers Narrative",
         f"{name}'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of {growth_rate*100:+.1f}%. Growth is supported by structural demand dynamics in {sector}, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.",
@@ -153,7 +195,7 @@ for equity in universe:
         "## 13-Quarter Revenue Forecast Matrix (3-Year Path)",
         "| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |",
         "| :--- | :--- | :--- | :--- | :--- | :--- | :--- |"
-    ]
+    ])
     dossier_lines.extend(forecast_rows)
     dossier_lines.extend([
         "",
@@ -179,19 +221,11 @@ for equity in universe:
     dossier_lines.extend([
         "",
         "## Anticipated Catalyst Timeline",
-        "| Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |",
-        "| :--- | :--- | :--- | :--- | :--- |",
-        f"| 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |",
-        f"| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |",
-        f"| 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |",
-        f"| 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |",
-        "",
-        "## Explicit Invalidation Criteria (Exit Triggers)",
-        "If any of the following occur, the thesis is broken and the position will be exited:",
-        f"1. **Structural Thesis Invalidation:** {invalidation}",
-        f"2. **Margin Deterioration:** Operating margins compress by more than 400 basis points across two consecutive quarters.",
-        f"3. **Customer Retention / Churn Risk:** Unanticipated loss of key tier-one customers or sharp decline in net retention rates.",
-        f"4. **Governance or Solvency Failure:** Material debt refinancing hurdles or unaddressed regulatory enforcement actions.",
+        "| Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |",
+        "| :--- | :--- | :--- | :--- | :--- | :--- |"
+    ])
+    dossier_lines.extend(catalyst_rows)
+    dossier_lines.extend([
         "",
         "## Data Provenance & Verification Metadata",
         "",

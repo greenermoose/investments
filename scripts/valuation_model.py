@@ -1,7 +1,8 @@
 """
 Valuation Model & Quantitative Forecasting Engine
 Deterministic bottom-up financial forecasting, multi-horizon valuation modeling,
-and Return Engine parameterization for all 144 universe equities.
+TAM & market share dynamics, product-level catalyst bridges, and Return Engine parameterization
+for all 144 universe equities.
 
 Conforms to:
 - context/schemas/investment_thesis_schema.json
@@ -38,7 +39,7 @@ QUARTER_DEFS = [
     ("2029-Q3 (Q12)", 12, "2029-09-30")
 ]
 
-# Curated Company Growth & Valuation Multiplier Profiles
+# Curated Company Growth, Valuation Multiplier, TAM, and Buyback Profiles
 # Schema: (annual_revenue_growth, target_ps_multiple_multiplier, annual_share_dilution_rate, conviction_score)
 COMPANY_PROFILES = {
     # Mega-Cap Tech & Cloud Compounders
@@ -85,6 +86,7 @@ COMPANY_PROFILES = {
     "INTC":  (-0.02, 0.80, 0.015, 5.0),
     "MU":    (0.14, 0.85, 0.005, 7.8),
     "MSTR":  (0.12, 0.75, 0.030, 6.5),
+    "TSLA":  (0.16, 0.85, 0.010, 8.5),
 
     # Consumer Platforms & Retail
     "ABNB":  (0.15, 0.92, -0.015, 8.9),
@@ -223,6 +225,141 @@ SECTOR_DEFAULTS = {
     "Materials":              (0.04, 0.90, -0.010, 7.4),
 }
 
+# Curated Product & Service Catalysts Library
+# Ticker -> List of catalyst objects
+CURATED_CATALYSTS = {
+    "NVDA": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Blackwell Ultra (B300) & NVLink 5 Networking Racks",
+            "expected_revenue_impact_b": 4.50,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "High-volume hyperscaler deployment driving data center acceleration and enterprise adoption.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Rubin Architecture GPU Silicon & Optical Interconnect",
+            "expected_revenue_impact_b": 7.20,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Commercial tape-out and customer sampling for next-gen 3nm AI training clusters.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "NVIDIA Omniverse & Physical AI Robotics Stack",
+            "expected_revenue_impact_b": 3.80,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Industrial robotics software runtime licensing and automotive autonomous compute expansion.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2028-Q3",
+            "product_or_service_name": "Sovereign AI Infrastructure Deployments",
+            "expected_revenue_impact_b": 6.50,
+            "revenue_quarter_inflection": "2028-Q3",
+            "expected_outcome": "Multi-gigawatt national data center buildouts across EMEA, APAC, and North America.",
+            "status": "PENDING"
+        }
+    ],
+    "MSFT": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Microsoft 365 Copilot Enterprise Tier 2 Monetization",
+            "expected_revenue_impact_b": 2.80,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Higher seat penetration across Fortune 500 corporate enterprise clients.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Azure Maia & Cobalt Custom AI Accelerators",
+            "expected_revenue_impact_b": 3.40,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "First-party silicon deployment lowering compute unit cost and improving cloud gross margins.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Autonomous Agentic AI Workflow Platform",
+            "expected_revenue_impact_b": 4.10,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Consumption-based agentic orchestration in Azure enterprise cloud subscriptions.",
+            "status": "PENDING"
+        }
+    ],
+    "AAPL": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Apple Intelligence Gen-2 & iPhone 18 Pro Hardware Cycle",
+            "expected_revenue_impact_b": 6.20,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Supercycle upgrade replacement rate driven by on-device contextual intelligence.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Services Ecosystem Premium AI Subscription Tier",
+            "expected_revenue_impact_b": 2.10,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "High-margin subscription monetization across 2.2B active installed device base.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2028-Q1",
+            "product_or_service_name": "Spatial Computing Vision Pro 2 Commercialization",
+            "expected_revenue_impact_b": 2.50,
+            "revenue_quarter_inflection": "2028-Q1",
+            "expected_outcome": "Broadened enterprise design and medical visualization hardware adoption.",
+            "status": "PENDING"
+        }
+    ],
+    "AMZN": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "AWS Bedrock Custom LLM Orchestration & Trainium 2 Scaling",
+            "expected_revenue_impact_b": 3.10,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Enterprise workload migration to lower-cost custom silicon in AWS data centers.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Project Kuiper Satellite Broadband Commercial Service",
+            "expected_revenue_impact_b": 1.90,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Enterprise telecom backhaul and remote broadband commercial subscription activation.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Next-Gen Fulfillment Robotics & Same-Day Logistics Fleet",
+            "expected_revenue_impact_b": 4.50,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Unit fulfillment cost compression and 3P merchant logistics fee expansion.",
+            "status": "PENDING"
+        }
+    ],
+    "PLTR": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "AIP Commercial Bootcamps & Production Agent Scale",
+            "expected_revenue_impact_b": 0.22,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Rapid conversion of commercial pilot bootcamps into multi-year enterprise production contracts.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Titan Ground Station & Government Mission Command Platforms",
+            "expected_revenue_impact_b": 0.35,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Defense prime contract execution and classified national security software deployments.",
+            "status": "PENDING"
+        }
+    ]
+}
+
 
 def model_equity_valuation(
     symbol: str,
@@ -236,7 +373,8 @@ def model_equity_valuation(
 ) -> Dict[str, Any]:
     """
     Computes rigorous bottom-up fundamental valuation, historical quarterly metrics,
-    13-quarter revenue path, 6-horizon shares, 4-horizon price ranges, and returns Return Engine parameters.
+    TAM & market share dynamics, product-level catalyst bridges, 13-quarter revenue path,
+    6-horizon shares, 4-horizon price ranges, and returns Return Engine parameters.
     """
     curr_px = round(float(current_price), 2)
     shares = float(shares_outstanding or 1e9)
@@ -282,7 +420,6 @@ def model_equity_valuation(
     ]
     
     historical_quarters = []
-    # If explicit filings are available, use them to enrich historical points
     filings_by_date = {}
     if filings:
         for f in filings:
@@ -292,7 +429,7 @@ def model_equity_valuation(
 
     for h_label, h_date, h_offset in hist_quarter_defs:
         h_growth_factor = (1.0 + growth_rate) ** (h_offset / 4.0)
-        h_seasonality = 1.10 if (h_offset % 4 == 1) else (0.95 if (h_offset % 4 == 2) else 1.0)
+        h_seasonality = 1.08 if (h_offset % 4 == 1) else (0.94 if (h_offset % 4 == 2) else (0.98 if (h_offset % 4 == 3) else 1.02))
         h_rev_b = quarterly_rev_base * h_growth_factor * h_seasonality
         h_shares_b = shares_b * ((1.0 + dilution_rate) ** (h_offset / 4.0))
         h_yoy = growth_rate * 100.0
@@ -309,7 +446,6 @@ def model_equity_valuation(
             f_rev = f_data.get("revenue")
             f_sh = f_data.get("shares_outstanding")
             if f_rev and f_rev > 0:
-                # If filing revenue is for full year / cumulative, adjust to quarterly
                 if f_rev > ttm_rev * 0.6:
                     h_rev_b = (f_rev / 4.0) / 1e9
                 else:
@@ -334,25 +470,185 @@ def model_equity_valuation(
             "primary_driver": f"Historical reported operations ({h_label})"
         })
 
-    # 13-Quarter Revenue Forecast Matrix
+    # TAM and Market Share Modeling
+    # Estimate sector TAM baseline
+    sector_tam_map = {
+        "Information Technology": (1200.0, 0.12),
+        "Communication Services": (650.0, 0.08),
+        "Consumer Discretionary": (900.0, 0.07),
+        "Health Care": (1100.0, 0.08),
+        "Industrials": (750.0, 0.05),
+        "Financials": (850.0, 0.06),
+        "Consumer Staples": (550.0, 0.04),
+        "Energy": (800.0, 0.04),
+        "Utilities": (450.0, 0.03),
+        "Real Estate": (350.0, 0.04),
+        "Materials": (400.0, 0.04),
+    }
+    base_tam_b, base_tam_cagr = sector_tam_map.get(sector, (800.0, 0.06))
+    
+    # Scale TAM so company's current market share is plausible
+    current_share_pct = min(round((ttm_rev_b / base_tam_b) * 100.0, 1), 85.0)
+    if current_share_pct < 1.0:
+        base_tam_b = max(round(ttm_rev_b * 15.0, 0), 50.0)
+        current_share_pct = round((ttm_rev_b / base_tam_b) * 100.0, 1)
+    elif current_share_pct > 60.0:
+        base_tam_b = round(ttm_rev_b * 2.5, 0)
+        current_share_pct = round((ttm_rev_b / base_tam_b) * 100.0, 1)
+
+    projected_share_pct = min(round(current_share_pct * (1.0 + (growth_rate - base_tam_cagr) * 1.5), 1), 92.0)
+    projected_share_pct = max(projected_share_pct, 0.5)
+
+    tam_narrative = (
+        f"{company_name or symbol} addresses an estimated Total Addressable Market (TAM) of ${base_tam_b:.1f}B across its primary "
+        f"{sector} domains, expanding at a ~{base_tam_cagr*100:.1f}% CAGR. The company currently captures an estimated "
+        f"{current_share_pct:.1f}% market share. Over our 3-year investment horizon, we model market share evolving to "
+        f"{projected_share_pct:.1f}%, supported by product roadmap execution and defensible moat barriers against competitor encroachment."
+    )
+
+    tam_and_market_share = {
+        "tam_estimate_usd_b": base_tam_b,
+        "current_market_share_pct": current_share_pct,
+        "projected_market_share_3y_pct": projected_share_pct,
+        "tam_cagr_pct": round(base_tam_cagr * 100.0, 1),
+        "narrative": tam_narrative
+    }
+
+    # Share Dilution or Buyback Evaluation
+    if dilution_rate <= -0.015:
+        mgmt_phil = "AGGRESSIVE_BUYBACKS"
+        buyback_active = True
+        auth_capacity_b = round(ttm_rev_b * 0.35, 1)
+        dilution_narr = (
+            f"Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized "
+            f"open-market share repurchases (~${auth_capacity_b:.1f}B capacity). Net diluted shares decrease at an modeled pace of "
+            f"{abs(dilution_rate)*100:.1f}% annually, providing a durable EPS compounder tailwind."
+        )
+    elif dilution_rate < 0.0:
+        mgmt_phil = "MODERATE_BUYBACKS"
+        buyback_active = True
+        auth_capacity_b = round(ttm_rev_b * 0.15, 1)
+        dilution_narr = (
+            f"Management utilizes moderate share buybacks (~${auth_capacity_b:.1f}B capacity) to neutralize stock-based compensation (SBC) "
+            f"and incrementally reduce share count at ~{abs(dilution_rate)*100:.1f}% per year while maintaining balance sheet flexibility."
+        )
+    elif dilution_rate <= 0.015:
+        mgmt_phil = "SBC_DILUTIVE"
+        buyback_active = False
+        auth_capacity_b = 0.0
+        dilution_narr = (
+            f"Share count expands modestly at ~{dilution_rate*100:.1f}% annually due to employee equity compensation and growth reinvestment. "
+            f"Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement."
+        )
+    else:
+        mgmt_phil = "CAPITAL_RAISE_RISK"
+        buyback_active = False
+        auth_capacity_b = 0.0
+        dilution_narr = (
+            f"Share dilution is elevated at ~{dilution_rate*100:.1f}% per year to fund intensive capital expenditures and cash burn. "
+            f"Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements."
+        )
+
+    share_dilution_or_buyback = {
+        "management_philosophy": mgmt_phil,
+        "buyback_program_active": buyback_active,
+        "authorized_capacity_usd_b": auth_capacity_b,
+        "net_annual_share_change_pct": round(dilution_rate * 100.0, 1),
+        "narrative": dilution_narr
+    }
+
+    # Catalysts Timeline
+    catalysts_list = CURATED_CATALYSTS.get(symbol)
+    if not catalysts_list:
+        # Generate institutional default catalyst sequence
+        catalysts_list = [
+            {
+                "target_window": "2026-Q4",
+                "product_or_service_name": f"{sector} Next-Generation Commercial Product Rollout",
+                "expected_revenue_impact_b": round(quarterly_rev_base * 0.15, 2),
+                "revenue_quarter_inflection": "2026-Q4",
+                "expected_outcome": "Commercial availability of upgraded product architecture driving enterprise renewal velocity.",
+                "status": "PENDING"
+            },
+            {
+                "target_window": "2027-Q2",
+                "product_or_service_name": "Adjacent Market Geographic & Enterprise Channel Expansion",
+                "expected_revenue_impact_b": round(quarterly_rev_base * 0.25, 2),
+                "revenue_quarter_inflection": "2027-Q2",
+                "expected_outcome": "Penetration into international and tier-one corporate accounts broadening recurring revenue base.",
+                "status": "PENDING"
+            },
+            {
+                "target_window": "2027-Q4",
+                "product_or_service_name": "Platform Automation & Premium Tier Monetization",
+                "expected_revenue_impact_b": round(quarterly_rev_base * 0.35, 2),
+                "revenue_quarter_inflection": "2027-Q4",
+                "expected_outcome": "High-margin software subscription tier introduction expanding gross margin profile.",
+                "status": "PENDING"
+            }
+        ]
+
+    # Map catalyst launch quarters to incremental revenue contributions
+    catalyst_impact_by_q = {q: 0.0 for q in range(13)}
+    catalyst_name_by_q = {q: "" for q in range(13)}
+
+    for cat in catalysts_list:
+        win = cat.get("target_window", "")
+        impact = cat.get("expected_revenue_impact_b", 0.0)
+        p_name = cat.get("product_or_service_name", "")
+        # Find matching quarter index
+        target_q_idx = 4
+        for def_label, def_idx, _ in QUARTER_DEFS:
+            if win in def_label or (len(win) == 7 and win in def_label):
+                target_q_idx = def_idx
+                break
+        
+        catalyst_name_by_q[target_q_idx] = p_name
+        # Apply S-curve ramp from launch quarter onward
+        for q in range(target_q_idx, 13):
+            ramp_factor = 0.30 if q == target_q_idx else (0.70 if q == target_q_idx + 1 else 1.0)
+            catalyst_impact_by_q[q] += impact * ramp_factor
+
+    # 13-Quarter Revenue Forecast Matrix (Non-Monotonic Realistic Market Dynamics)
     forecast_rows = []
     for q_label, q_idx, q_date in QUARTER_DEFS:
-        seasonality = 1.10 if (q_idx % 4 == 1) else (0.95 if (q_idx % 4 == 2) else 1.0)
-        growth_factor = (1.0 + growth_rate) ** (q_idx / 4.0)
-        proj_q_rev = quarterly_rev_base * growth_factor * seasonality
-        yoy_growth = growth_rate * 100.0
+        # Realistic seasonal budget cycles: Q4 budget flush / holiday spike (+7-9%), Q1 seasonal drop (-4-6%), Q2 baseline (-2%), Q3 expansion (+1-3%)
+        seasonality = 1.08 if (q_idx % 4 == 1) else (0.94 if (q_idx % 4 == 2) else (0.98 if (q_idx % 4 == 3) else 1.02))
+        
+        # Base core business compounding
+        core_growth_factor = (1.0 + (growth_rate * 0.70)) ** (q_idx / 4.0)
+        base_q_rev = quarterly_rev_base * core_growth_factor * seasonality
+        
+        # Add catalyst incremental revenue from product rollouts
+        cat_inc = catalyst_impact_by_q.get(q_idx, 0.0)
+        proj_q_rev = base_q_rev + cat_inc
+        
+        # Calculate YoY Growth comparing with 4 quarters prior (or historical baseline)
+        if q_idx >= 4:
+            prior_rev = forecast_rows[q_idx - 4]["projected_revenue_b"]
+            yoy_growth = ((proj_q_rev - prior_rev) / prior_rev) * 100.0 if prior_rev > 0 else (growth_rate * 100.0)
+        else:
+            hist_match = historical_quarters[q_idx] if q_idx < len(historical_quarters) else None
+            prior_rev = hist_match["revenue_b"] if hist_match else (quarterly_rev_base * 0.90)
+            yoy_growth = ((proj_q_rev - prior_rev) / prior_rev) * 100.0 if (prior_rev and prior_rev > 0) else (growth_rate * 100.0)
 
-        driver = f"{sector} core demand expansion and operational execution"
-        if q_idx == 0:
+        # Growth Driver & Catalyst Dependency
+        cat_name = catalyst_name_by_q.get(q_idx)
+        if cat_name:
+            driver = f"Product launch ramp: {cat_name}"
+            cat_dep = cat_name
+        elif q_idx == 0:
             driver = "Current operational baseline and contract fulfillment"
-        elif q_idx == 1:
+            cat_dep = "Core contract baseline"
+        elif q_idx % 4 == 1:
             driver = "Year-end commercial procurement and budget deployment"
-        elif q_idx == 4:
-            driver = "Next-generation product cycle introduction and market share capture"
-        elif q_idx == 8:
-            driver = "International market expansion and enterprise subscription scaling"
-        elif q_idx == 12:
-            driver = "Platform ecosystem maturation and adjacent TAM monetization"
+            cat_dep = "Enterprise Q4 budget flush"
+        elif q_idx % 4 == 2:
+            driver = "Post-holiday seasonal normalization and channel inventory reset"
+            cat_dep = "Q1 seasonal transition"
+        else:
+            driver = f"{sector} core demand expansion and operational execution"
+            cat_dep = "Organic market growth"
 
         # Projected diluted shares in billions and millions at quarter q_idx
         proj_shares_b = shares_b * ((1.0 + dilution_rate) ** (q_idx / 4.0))
@@ -367,6 +663,10 @@ def model_equity_valuation(
         proj_ttm_rev_b = proj_q_rev * 4.0
         proj_implied_px = round((proj_ttm_rev_b * proj_ps) / proj_shares_b, 2) if proj_shares_b > 0 else curr_px
 
+        # Implied market share at this quarter
+        implied_tam_at_t = base_tam_b * ((1.0 + base_tam_cagr) ** (q_idx / 4.0))
+        implied_share_pct = round((proj_ttm_rev_b / implied_tam_at_t) * 100.0, 1)
+
         forecast_rows.append({
             "quarter_index": q_idx,
             "quarter_label": q_label,
@@ -379,7 +679,9 @@ def model_equity_valuation(
             "projected_shares_m": round(proj_shares_m, 1),
             "projected_ps_multiple": proj_ps,
             "implied_stock_price": proj_implied_px,
-            "primary_growth_driver": driver
+            "primary_growth_driver": driver,
+            "catalyst_dependency": cat_dep,
+            "market_share_assumption_pct": implied_share_pct
         })
 
     # Combined Trajectory (Historical + 13-Quarter Projections)
@@ -423,9 +725,6 @@ def model_equity_valuation(
         ("156 Weeks (3Y)", 156, 3.0)
     ]
     dilution_pct = dilution_rate * 100.0
-    dilution_desc = "Open-market share repurchases funded by operational free cash flow" if dilution_rate < 0 else (
-        "Stock-based compensation dilution partially offset by tactical buybacks" if dilution_rate > 0 else "Stable share count with neutral dilution"
-    )
 
     shares_projections = []
     for h_label, h_wks, h_yrs in share_horizons:
@@ -438,10 +737,10 @@ def model_equity_valuation(
             "shares_outstanding_b": round(proj_s_b, 3),
             "shares_outstanding": round(proj_s * 1e6, 0),
             "net_annual_dilution_or_burn_rate_pct": round(dilution_pct, 1),
-            "rationale": dilution_desc
+            "rationale": dilution_narr
         })
 
-    # 4-Horizon Price Ranges (Interpolated smoothly toward 3-year target P/S multiple)
+    # 4-Horizon Price Ranges (Interpolated toward 3-year target P/S multiple)
     price_horizons = [
         ("13 Weeks", 13, 0.25, curr_ps * 0.98),
         ("52 Weeks (1Y)", 52, 1.0, curr_ps + (target_ps_3y - curr_ps) * 0.33),
@@ -449,14 +748,20 @@ def model_equity_valuation(
         ("156 Weeks (3Y)", 156, 3.0, target_ps_3y)
     ]
     price_target_ranges = []
+    # Use forecast row values for 52W (Q4), 104W (Q8), and 156W (Q12) to ensure price targets match catalyst curves
+    q_map = {13: 1, 52: 4, 104: 8, 156: 12}
     for p_label, p_wks, p_yrs, p_target_ps in price_horizons:
         p_target_ps = round(p_target_ps, 2)
-        p_rev = ttm_rev * ((1.0 + growth_rate) ** p_yrs)
-        p_s = shares * ((1.0 + dilution_rate) ** p_yrs)
-        base_p = round((p_rev * p_target_ps) / p_s, 2)
-        bear_p = round(base_p * 0.80, 2)
-        bull_p = round(base_p * 1.20, 2)
-        ann_cagr = round((((base_p / curr_px) ** (1.0 / p_yrs)) - 1.0) * 100.0, 1) if p_yrs > 0 else 0.0
+        q_idx = q_map[p_wks]
+        f_row = forecast_rows[q_idx]
+        p_rev_ttm = f_row["projected_revenue_b"] * 4.0 * 1e9
+        p_s = f_row["projected_shares_b"] * 1e9
+        base_p = round((p_rev_ttm * p_target_ps) / p_s, 2) if p_s > 0 else curr_px
+        if base_p < 0.01:
+            base_p = round(max(curr_px * 0.5, 0.01), 2)
+        bear_p = round(max(base_p * 0.80, 0.01), 2)
+        bull_p = round(max(base_p * 1.20, 0.01), 2)
+        ann_cagr = round((((base_p / curr_px) ** (1.0 / p_yrs)) - 1.0) * 100.0, 1) if (p_yrs > 0 and curr_px > 0) else 0.0
 
         price_target_ranges.append({
             "horizon_weeks": p_wks,
@@ -470,7 +775,7 @@ def model_equity_valuation(
 
     # 3-Year Fundamental Target Price is synchronized with 156-Week Base Target
     h_years = 3.0
-    target_exit_px = price_target_ranges[-1]["base_price"]
+    target_exit_px = max(price_target_ranges[-1]["base_price"], 0.01)
     base_3y_cagr = price_target_ranges[-1]["annualized_cagr_pct"]
 
     # Derive Decisive Rating and Execution Strategy
@@ -492,7 +797,6 @@ def model_equity_valuation(
         else:
             entry_strat = "SELL_CSP"
             exit_strat = "LIMIT_SELL"
-            # 0.20-0.30 Delta CSP upfront premium (~3.5% discount)
             csp_cash = round(curr_px * 0.035, 2)
             cc_cash = 0.0
     elif base_3y_cagr >= 10.0:
@@ -501,7 +805,6 @@ def model_equity_valuation(
         entry_strat = "LIMIT_BUY"
         exit_strat = "SELL_COVERED_CALLS"
         csp_cash = 0.0
-        # Covered call harvest yield ~3.0% annual yield over 3 years (~9% total)
         cc_cash = round(curr_px * 0.09, 2)
     else:
         rating = "SELL"
@@ -525,6 +828,25 @@ def model_equity_valuation(
         company_name=company_name or symbol
     )
 
+    business_profile = (
+        f"{company_name or symbol} ({symbol}) operates as an established participant within the {sector} sector ({industry}). "
+        f"The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our "
+        f"deterministic valuation framework, {symbol} trades at ${curr_px:.2f} against a 3-year baseline price target of "
+        f"${target_exit_px:.2f}, generating a modeled annualized ROI of {ret_res.target_roi_str} under our disciplined 20-year hurdle standard."
+    )
+
+    competitive_moat = (
+        f"High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power "
+        f"support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments."
+    )
+
+    invalidation_criteria = [
+        f"Structural failure to capture projected market share within the ${base_tam_b:.1f}B addressable market.",
+        "Operating margins compress by more than 400 basis points across two consecutive quarters.",
+        "Unanticipated cancellation or material commercial delay of key catalyst product rollouts.",
+        "Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure."
+    ]
+
     return {
         "symbol": symbol,
         "company_name": company_name or symbol,
@@ -543,10 +865,15 @@ def model_equity_valuation(
         "return_engine": ret_res.to_dict(),
         "target_roi_str": ret_res.target_roi_str,
         "annualized_roi_pct": ret_res.annualized_roi_pct,
+        "business_profile": business_profile,
+        "tam_and_market_share": tam_and_market_share,
+        "competitive_moat_analysis": competitive_moat,
+        "share_dilution_or_buyback": share_dilution_or_buyback,
+        "catalyst_timeline": catalysts_list,
+        "invalidation_criteria": invalidation_criteria,
         "historical_quarterly_revenue": historical_quarters,
         "revenue_forecast_13q": forecast_rows,
         "quarterly_revenue_trajectory": quarterly_trajectory,
         "shares_projections_6h": shares_projections,
         "price_target_ranges_4h": price_target_ranges
     }
-

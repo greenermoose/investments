@@ -78,10 +78,74 @@ export function openCompanyModal(company) {
   if (currentPriceEl) currentPriceEl.textContent = `$${currentPrice.toFixed(2)}`;
   if (targetPriceEl) targetPriceEl.textContent = `$${targetExit.toFixed(2)}`;
   if (targetRoiEl) targetRoiEl.textContent = company.target_roi || '20.0%';
-  if (descEl) descEl.textContent = company.description || 'No description available.';
-  if (moatEl) moatEl.textContent = company.moat || 'Economic moat under fundamental review.';
-  if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming earnings and capital allocation reviews.';
-  if (invalidationEl) invalidationEl.textContent = company.invalidation_criteria || 'Structural degradation of return on invested capital or secular market share loss.';
+  if (descEl) descEl.textContent = company.business_profile || company.description || 'No description available.';
+  if (moatEl) moatEl.textContent = company.competitive_moat_analysis || company.moat || 'Economic moat under fundamental review.';
+  if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming product milestones and earnings updates.';
+  
+  // Render granular catalyst chips
+  const catalystChipsEl = document.getElementById('modal-catalyst-chips');
+  if (catalystChipsEl) {
+    catalystChipsEl.innerHTML = '';
+    const timeline = company.catalyst_timeline || [];
+    if (timeline.length > 0) {
+      timeline.forEach(cat => {
+        const chip = document.createElement('div');
+        chip.style.cssText = 'background: rgba(0, 212, 255, 0.08); border: 1px solid rgba(0, 212, 255, 0.25); border-radius: 6px; padding: 6px 10px; font-size: 0.84rem; color: #e2e8f0;';
+        chip.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <strong style="color: #00d4ff;">${cat.product_or_service_name || 'Product Milestone'}</strong>
+            <span style="font-size: 0.76rem; color: #10b981; font-weight: 600;">+${cat.expected_revenue_impact_b ? '$' + cat.expected_revenue_impact_b.toFixed(2) + 'B' : '-'} (${cat.target_window || 'Planned'})</span>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary);">${cat.expected_outcome || ''}</div>
+        `;
+        catalystChipsEl.appendChild(chip);
+      });
+    }
+  }
+
+  // TAM & Market Share
+  const tamInfo = company.tam_and_market_share || {};
+  const tamValEl = document.getElementById('modal-tam-val');
+  const msCurrEl = document.getElementById('modal-market-share-curr');
+  const msProjEl = document.getElementById('modal-market-share-proj');
+  const tamCagrEl = document.getElementById('modal-tam-cagr');
+  const tamTextEl = document.getElementById('modal-tam-text');
+
+  if (tamValEl) tamValEl.textContent = tamInfo.tam_estimate_usd_b ? `$${tamInfo.tam_estimate_usd_b.toFixed(1)}B` : '-';
+  if (msCurrEl) msCurrEl.textContent = tamInfo.current_market_share_pct !== undefined ? `${tamInfo.current_market_share_pct.toFixed(1)}%` : '-';
+  if (msProjEl) msProjEl.textContent = tamInfo.projected_market_share_3y_pct !== undefined ? `${tamInfo.projected_market_share_3y_pct.toFixed(1)}%` : '-';
+  if (tamCagrEl) tamCagrEl.textContent = tamInfo.tam_cagr_pct !== undefined ? `+${tamInfo.tam_cagr_pct.toFixed(1)}% YoY` : '-';
+  if (tamTextEl) tamTextEl.textContent = tamInfo.narrative || 'Market share and TAM modeling computed during universe compilation.';
+
+  // Share Dilution or Buyback
+  const dilInfo = company.share_dilution_or_buyback || {};
+  const dilPhilEl = document.getElementById('modal-dilution-phil');
+  const bbActiveEl = document.getElementById('modal-buyback-active');
+  const bbCapEl = document.getElementById('modal-buyback-capacity');
+  const dilRateEl = document.getElementById('modal-dilution-net-rate');
+  const dilTextEl = document.getElementById('modal-dilution-text');
+
+  if (dilPhilEl) dilPhilEl.textContent = dilInfo.management_philosophy ? dilInfo.management_philosophy.replace('_', ' ') : 'NEUTRAL';
+  if (bbActiveEl) {
+    bbActiveEl.textContent = dilInfo.buyback_program_active ? 'Active Program' : 'No Active Program';
+    bbActiveEl.style.color = dilInfo.buyback_program_active ? '#10b981' : '#f59e0b';
+  }
+  if (bbCapEl) bbCapEl.textContent = dilInfo.authorized_capacity_usd_b ? `$${dilInfo.authorized_capacity_usd_b.toFixed(1)}B` : '$0.0B';
+  if (dilRateEl) {
+    const netRate = dilInfo.net_annual_share_change_pct !== undefined ? dilInfo.net_annual_share_change_pct : (company.net_dilution_rate ? company.net_dilution_rate * 100.0 : -1.5);
+    dilRateEl.textContent = netRate < 0 ? `${netRate.toFixed(1)}% (Buyback Burn)` : (netRate > 0 ? `+${netRate.toFixed(1)}% (Dilution)` : '0.0% (Neutral)');
+    dilRateEl.style.color = netRate < 0 ? '#10b981' : (netRate > 0 ? '#f43f5e' : '#818cf8');
+  }
+  if (dilTextEl) dilTextEl.textContent = dilInfo.narrative || 'Management share allocation and buyback authorization under ongoing review.';
+
+  // Invalidation Criteria
+  if (invalidationEl) {
+    if (Array.isArray(company.invalidation_criteria)) {
+      invalidationEl.innerHTML = company.invalidation_criteria.map((c, i) => `<div><strong>${i+1}.</strong> ${c}</div>`).join('');
+    } else {
+      invalidationEl.textContent = company.invalidation_criteria || 'Structural degradation of return on invested capital or secular market share loss.';
+    }
+  }
 
   const isBuy = statusKey === 'BUY';
   const isHold = statusKey === 'HOLD';

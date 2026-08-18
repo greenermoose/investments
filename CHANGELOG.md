@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.18.0] - 2026-08-18
+
+### Expanded Data Hierarchy, Aggregator Classifications, Analyst Research Discovery & Neural Parametric Governance
+- **Expanded Master Sources Hierarchy & Directory (`context/sources/catalog.md`, `http/docs/sources.html`):** Codified a complete 22-source master directory mapping every specific public URL, authority tier, access protocol, and reliability score across primary regulatory feeds (SEC EDGAR Facts, Submissions, NPORT-P, Master Tickers, NASDAQ FTP, CBOE, NYSE), macro databases (FRED, US Treasury), institutional APIs (FMP, Polygon.io, Tiingo), and secondary aggregators.
+- **Classification & Trust Assessment of Key Data Aggregators:** Formally evaluated and documented the role and trustworthiness of key financial aggregators:
+  - `Yahoo Finance` (https://finance.yahoo.com/): Tier 2 Secondary Market Data & News Aggregator (8.0/10) for daily OHLCV candlesticks, 20d/50d SMAs, and 52-week support/resistance bands.
+  - `TipRanks` (https://www.tipranks.com/): Tier 2 Analyst Accountability & Sentiment Aggregator (8.5/10) for tracking individual sell-side analyst track records, historical win rates, and price target revisions.
+  - `StockAnalysis.com` (https://stockanalysis.com/): Tier 2 Secondary Fundamental Screener & Portal (8.0/10) for multi-year financial statements and consensus metrics, subject to mandatory Tier 1 SEC cross-checks.
+  - `MarketBeat` (https://www.marketbeat.com/): Tier 2 Wall Street Analyst Price Target & Rating Aggregator (8.5/10) for time-stamped rating changes and audited URL links.
+  - `Morningstar` (https://www.morningstar.com/): Tier 2 Institutional Fundamental Research Authority (8.8/10) for Economic Moat ratings (Wide/Narrow/None) and DCF fair value estimates.
+- **Sell-Side Analyst Reports & Price Target Discovery Workflow (`context/sources/catalog.md`, `context/sources/access_methodologies.md`, `http/docs/sources.html`):** Documented the institutional equity research ecosystem, explaining how proprietary sell-side research behind enterprise terminal paywalls (Bloomberg, FactSet, Refinitiv) is broadcast across pre-market newswires (6:00 AM - 9:00 AM ET) and ingested into normalized schemas with ground-truth URLs.
+- **AI Agent Search Engines & Live Ingestion Tools:** Documented search engines and fetch tools (`search_web`, `read_url_content`, headless browser subagents, SEC EDGAR Full-Text Search EFTS) for live catalyst investigation and footnote extraction.
+- **Neural Internal Weights & Parametric Knowledge Generation Protocol:** Detailed how foundation LLM transformers compress market intelligence into high-dimensional weights during pre-training, activate latent pathways via self-attention, compute next-token logits, and align outputs via SFT/RLHF, while enforcing Tier 4 provenance tagging, runtime context signatures, and SEC ground-truth cross-checks.
+
 ## [2.17.0] - 2026-08-17
 
 ### 144-Equity Market Price Ingestion, Context Data Layer & Bidirectional Synchronization

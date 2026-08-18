@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Sources & Provenance - Agentic Investment Advisor</title>
+  <title>Data Sources, Provenance &amp; Verification - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
+  <style>
+    .source-table-wrapper {
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-color-surface);
+    }
+    .source-table-wrapper table {
+      margin: 0;
+      min-width: 900px;
+    }
+    .source-table-wrapper th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .tier-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .tier-1 { background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .tier-2 { background: rgba(0, 212, 255, 0.15); color: #38bdf8; border: 1px solid rgba(0, 212, 255, 0.3); }
+    .tier-3 { background: rgba(99, 102, 241, 0.18); color: #a5b4fc; border: 1px solid rgba(99, 102, 241, 0.3); }
+    .tier-4 { background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .tier-5 { background: rgba(244, 63, 94, 0.18); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+    .source-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+    .source-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <nav class="docs-sidebar">
@@ -30,22 +71,19 @@
     </div>
   </nav>
 
-  <main class="docs-main">
+  <main class="docs-main full-width">
     <div class="docs-header">
-      <h1>Data Sources, Provenance &amp; Verification</h1>
-      <p class="docs-lead">Institutional standards for authoritative data hierarchy, access methodologies, AI agent parametric knowledge attribution, and systematic errata correction.</p>
+      <h1>Data Sources, Provenance &amp; Verification Architecture</h1>
+      <p class="docs-lead">Complete directory of authoritative data sources, institutional aggregators, analyst discovery mechanisms, AI search tools, and neural parametric knowledge governance.</p>
     </div>
 
     <div class="callout tip">
-      <div class="callout-title">Authoritative Ingestion &amp; Mathematically Grounded Targets</div>
-      <p>Share prices and trading volumes are continuously verified via exchange market feeds (Tier 2 authority).
-        Benchmark Entry Prices and Target Exit Prices are strictly grounded in actual market prices, 20-day technical
-        support/resistance bands, and empirical 20%+ annualized CAGR compounding models rather than speculative
-        estimates. Click any equity in <a href="../stocks.html" style="color: var(--accent-color); font-weight: 600;">Public Equities</a> to inspect technical indicators, historical candlestick series, and SEC XBRL filings.</p>
+      <div class="callout-title">Authoritative Ingestion &amp; Ground-Truth Verification</div>
+      <p>All financial statements, share counts, and macro rates are ground-truthed against Tier 1 SEC EDGAR and Federal Reserve feeds. Market prices and Wall Street analyst coverage are tracked through verified secondary aggregators linking directly to audited URLs. Explore our active universe on the <a href="../stocks.html" style="color: var(--accent-color); font-weight: 600;">Public Equities</a> portal.</p>
     </div>
 
     <h2>Authoritative Data Hierarchy</h2>
-    <p>To eliminate hallucination and guarantee factual rigor, all quantitative metrics, catalyst dates, and financial figures follow a strict five-tier authority hierarchy:</p>
+    <p>To eliminate hallucination and guarantee mathematical rigor, all quantitative metrics, catalyst dates, and financial figures adhere to a strict five-tier authority hierarchy:</p>
 
     <table>
       <thead>
@@ -58,117 +96,384 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>Tier 1</strong></td>
+          <td><span class="tier-badge tier-1">Tier 1</span></td>
           <td>Primary Regulatory &amp; Exchanges</td>
-          <td>SEC EDGAR (10-K, 10-Q, 8-K, Form 4), CBOE, NYSE, NASDAQ</td>
-          <td>Absolute Ground Truth</td>
+          <td>SEC EDGAR (10-K, 10-Q, 8-K, Form 4, NPORT-P), CBOE, NYSE, NASDAQ</td>
+          <td>Absolute Ground Truth (10/10)</td>
         </tr>
         <tr>
-          <td><strong>Tier 2</strong></td>
-          <td>Institutional Aggregators &amp; Analyst Feeds</td>
-          <td>FRED, US Treasury, Yahoo Finance, FMP Price Targets, FactSet, LSEG</td>
-          <td>High Reliability / Secondary</td>
+          <td><span class="tier-badge tier-2">Tier 2</span></td>
+          <td>Institutional Aggregators, APIs &amp; Feeds</td>
+          <td>FRED, US Treasury, FMP, Polygon.io, Tiingo, MarketBeat, TipRanks, Morningstar, Yahoo Finance</td>
+          <td>High Reliability / Secondary (8.0 - 9.5/10)</td>
         </tr>
         <tr>
-          <td><strong>Tier 3</strong></td>
+          <td><span class="tier-badge tier-3">Tier 3</span></td>
           <td>Quantitative Literature &amp; Consensus</td>
-          <td>CBOE Indices, AQR/Fama-French Studies, Wall Street Consensus Estimates</td>
-          <td>Empirical Strategy &amp; Consensus Baseline</td>
+          <td>CBOE PUT/BXM Indices, AQR/Fama-French Studies, Wall Street Consensus Distributions</td>
+          <td>Empirical Strategy &amp; Consensus Baseline (9.0/10)</td>
         </tr>
         <tr>
-          <td><strong>Tier 4</strong></td>
+          <td><span class="tier-badge tier-4">Tier 4</span></td>
           <td>AI Agent Parametric Knowledge</td>
-          <td>Model Internal Weights (Pre-training, SFT, RL) + Context Signature</td>
-          <td>Qualitative / Unverified Numbers</td>
+          <td>Model Internal Weights (Pre-training, SFT, RL) + Runtime Context Signature</td>
+          <td>Qualitative / Unverified Historical Numbers (7.0/10)</td>
         </tr>
         <tr>
-          <td><strong>Tier 5</strong></td>
+          <td><span class="tier-badge tier-5">Tier 5</span></td>
           <td>Private User Snapshot</td>
           <td>Brokerage Records in <code>private/snapshots/</code> (CSV / Screenshots)</td>
-          <td>Private Ground Truth</td>
+          <td>Private Ground Truth for Account State (10/10)</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Wall Street Analyst Coverage &amp; Price Targets</h2>
-    <p>Individual sell-side analyst price targets and research notes are captured and tracked for all public equities in the active universe. Each recorded price target captures five core attributes:</p>
+    <h2>Complete Due Diligence Master Data Sources Directory</h2>
+    <p>The table below provides the full, unabridged master catalog of every specific data source, public URL, tier classification, access protocol, and reliability assessment consulted by the investment system:</p>
+
+    <div class="source-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Source Name</th>
+            <th>Primary URL</th>
+            <th>Tier</th>
+            <th>Access Method</th>
+            <th>Trustworthiness Assessment</th>
+            <th>Primary Purpose &amp; Extracted Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SEC EDGAR Company Facts API</strong></td>
+            <td><a href="https://data.sec.gov/api/xbrl/companyfacts/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/api/xbrl/companyfacts/</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Programmatic REST JSON</td>
+            <td>Absolute Ground Truth (10/10). Official regulatory filings under US Securities Law.</td>
+            <td>Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted shares, debt.</td>
+          </tr>
+          <tr>
+            <td><strong>SEC EDGAR Submissions API</strong></td>
+            <td><a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Programmatic REST JSON</td>
+            <td>Absolute Ground Truth (10/10). Official filing registry &amp; accession directory.</td>
+            <td>Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy statements.</td>
+          </tr>
+          <tr>
+            <td><strong>SEC EDGAR Form NPORT-P / XML</strong></td>
+            <td><a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Programmatic REST XML</td>
+            <td>Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US funds.</td>
+            <td>Authoritative constituent holdings, share counts, fair values, and weightings for QQQ, SPY, DIA, SMH.</td>
+          </tr>
+          <tr>
+            <td><strong>SEC Master Ticker Directory</strong></td>
+            <td><a href="https://www.sec.gov/files/company_tickers_exchange.json" target="_blank" rel="noopener noreferrer" class="source-link">sec.gov/.../company_tickers_exchange.json</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Programmatic REST JSON</td>
+            <td>Absolute Ground Truth (10/10). Real-time directory of all SEC registered filers.</td>
+            <td>CIK-to-ticker mapping, legal company names, and primary exchange listing designations.</td>
+          </tr>
+          <tr>
+            <td><strong>NASDAQ Trader Symbol Directory</strong></td>
+            <td><a href="ftp://ftp.nasdaqtrader.com/SymbolDirectory/" target="_blank" rel="noopener noreferrer" class="source-link">ftp.nasdaqtrader.com/SymbolDirectory/</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Public Anonymous FTP</td>
+            <td>Absolute Ground Truth (10/10). Direct exchange market operations listings.</td>
+            <td>Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue flags.</td>
+          </tr>
+          <tr>
+            <td><strong>CBOE Global Markets Data</strong></td>
+            <td><a href="https://www.cboe.com/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Official Feeds / Web</td>
+            <td>Absolute Ground Truth (10/10). Premier global options exchange operator.</td>
+            <td>Options chains, strike listings, expiration cycles, open interest, and historical VIX/VXN.</td>
+          </tr>
+          <tr>
+            <td><strong>NYSE / NASDAQ Consolidated Feeds</strong></td>
+            <td><a href="https://www.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">nasdaq.com</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Real-time SIP / Tape</td>
+            <td>Absolute Ground Truth (10/10). National Market System official tape.</td>
+            <td>Official market closing settlement prices, auction prints, and consolidated volume.</td>
+          </tr>
+          <tr>
+            <td><strong>FRED (Federal Reserve Economic Data)</strong></td>
+            <td><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="source-link">fred.stlouisfed.org</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Official REST API / Web</td>
+            <td>Highly Authoritative (9.5/10). St. Louis Fed official economic statistics.</td>
+            <td>3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Rate, CPI inflation, GDP growth.</td>
+          </tr>
+          <tr>
+            <td><strong>US Department of the Treasury</strong></td>
+            <td><a href="https://home.treasury.gov/" target="_blank" rel="noopener noreferrer" class="source-link">home.treasury.gov</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Official Web / CSV Feeds</td>
+            <td>Highly Authoritative (9.5/10). Sovereign fiscal authority of the United States.</td>
+            <td>Daily Treasury Par Yield Curve Rates, benchmark discount rates, sovereign debt yields.</td>
+          </tr>
+          <tr>
+            <td><strong>Financial Modeling Prep (FMP)</strong></td>
+            <td><a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer" class="source-link">financialmodelingprep.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Developer REST API</td>
+            <td>High Reliability (9.0/10). Developer API with verified XBRL statement ingestion.</td>
+            <td>Automated stock screening, price target history, financial ratios, DCF models, earnings dates.</td>
+          </tr>
+          <tr>
+            <td><strong>Polygon.io</strong></td>
+            <td><a href="https://polygon.io/" target="_blank" rel="noopener noreferrer" class="source-link">polygon.io</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>REST API &amp; WebSockets</td>
+            <td>High Reliability (9.0/10). Direct SIP-connected institutional market data feed.</td>
+            <td>Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference tickers.</td>
+          </tr>
+          <tr>
+            <td><strong>Tiingo Financial Data</strong></td>
+            <td><a href="https://www.tiingo.com/" target="_blank" rel="noopener noreferrer" class="source-link">tiingo.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>REST API &amp; Bulk Feeds</td>
+            <td>High Reliability (9.0/10). Institutional data clean-room with split adjustments.</td>
+            <td>End-of-day prices, corporate actions, adjusted price series, curated financial news.</td>
+          </tr>
+          <tr>
+            <td><strong>MarketBeat Analyst Coverage</strong></td>
+            <td><a href="https://www.marketbeat.com/" target="_blank" rel="noopener noreferrer" class="source-link">marketbeat.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Web Page Audit / RSS</td>
+            <td>High Reliability (8.5/10). Structured aggregator tracking rating revisions.</td>
+            <td>Analyst names, research firms, announcement dates, price targets, action ratings, source URLs.</td>
+          </tr>
+          <tr>
+            <td><strong>TipRanks</strong></td>
+            <td><a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Web Interface / Data Feed</td>
+            <td>High Reliability (8.5/10). Specializes in tracking and ranking sell-side analysts.</td>
+            <td>Analyst accuracy rankings, historical win rates, average returns per analyst, price targets.</td>
+          </tr>
+          <tr>
+            <td><strong>Morningstar</strong></td>
+            <td><a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Research Reports / Web</td>
+            <td>High Reliability (8.8/10). Premier institutional fundamental equity research.</td>
+            <td>Economic Moat ratings (Wide/Narrow/None), DCF Fair Value estimates, Stewardship grades.</td>
+          </tr>
+          <tr>
+            <td><strong>Yahoo Finance</strong></td>
+            <td><a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Web / yfinance Engine</td>
+            <td>Moderate to High (8.0/10). Rapid public market aggregator.</td>
+            <td>Daily OHLCV candlestick series, 20-day/50-day moving averages, 52-week ranges, trading volume.</td>
+          </tr>
+          <tr>
+            <td><strong>StockAnalysis.com</strong></td>
+            <td><a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Web Interface</td>
+            <td>Moderate to High (8.0/10). Clean secondary presentation of financial metrics.</td>
+            <td>Rapid visual overview of financial trends, balance sheet summaries, dividend histories.</td>
+          </tr>
+          <tr>
+            <td><strong>FactSet &amp; LSEG / Refinitiv I/B/E/S</strong></td>
+            <td><a href="https://www.factset.com/" target="_blank" rel="noopener noreferrer" class="source-link">factset.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2/3</span></td>
+            <td>Institutional Terminals</td>
+            <td>Highly Authoritative (9.5/10). Gold standard for institutional consensus.</td>
+            <td>Institutional earnings estimates, revenue consensus forecasts, target price dispersion.</td>
+          </tr>
+          <tr>
+            <td><strong>CBOE Benchmark Indices (PUT/BXM)</strong></td>
+            <td><a href="https://www.cboe.com/indices/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com/indices/</a></td>
+            <td><span class="tier-badge tier-3">Tier 3</span></td>
+            <td>Academic / Empirical Feeds</td>
+            <td>Highly Authoritative (9.0/10). Multi-decade empirical strategy benchmarks.</td>
+            <td>Risk/return data on option volatility risk premium (VRP) and systematic option harvesting.</td>
+          </tr>
+          <tr>
+            <td><strong>AQR Capital &amp; Fama-French Factor Data</strong></td>
+            <td><a href="https://www.aqr.com/Insights/Research" target="_blank" rel="noopener noreferrer" class="source-link">aqr.com/Insights/Research</a></td>
+            <td><span class="tier-badge tier-3">Tier 3</span></td>
+            <td>Peer-Reviewed Research</td>
+            <td>Highly Authoritative (9.0/10). Foundational quantitative asset pricing literature.</td>
+            <td>Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums across cycles.</td>
+          </tr>
+          <tr>
+            <td><strong>AI Agent Parametric Knowledge</strong></td>
+            <td>Internal Neural Weights</td>
+            <td><span class="tier-badge tier-4">Tier 4</span></td>
+            <td>Autoregressive Next-Token Sampling</td>
+            <td>Conceptual Grounding (7.0/10). Superb qualitative synthesis; unverified digits.</td>
+            <td>Qualitative thesis formulation, moat assessment, competitive dynamic mapping, financial logic.</td>
+          </tr>
+          <tr>
+            <td><strong>Private User Brokerage Snapshots</strong></td>
+            <td>Local <code>private/snapshots/</code></td>
+            <td><span class="tier-badge tier-5">Tier 5</span></td>
+            <td>Secure Local Ingestion</td>
+            <td>Absolute Ground Truth for Account State (10/10). Strictly isolated.</td>
+            <td>Settled cash, SGOV proxy balance, exact share quantities, cost bases, active options.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Detailed Classification of Key Data Aggregators</h2>
 
     <div class="card-grid">
       <div class="docs-card">
-        <h4>1. Analyst Name &amp; Firm</h4>
-        <p>Lead equity research analyst issuing the report and their institutional firm (e.g. Toni Sacconaghi / Bernstein, Dan Ives / Wedbush, Toshiya Hari / Goldman Sachs).</p>
+        <h4>1. Yahoo Finance (<a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Secondary Market Data &amp; News Aggregator.<br />
+        <strong>Assessment:</strong> High for historical prices, trading volume, and split/dividend adjustments. Moderate for consensus estimates.<br />
+        <strong>Role in Due Diligence:</strong> Serves as a rapid, zero-friction engine for pulling daily and multi-month OHLCV candlestick series, calculating 20-day and 50-day simple moving averages, and establishing 52-week support/resistance bands.<br />
+        <strong>Technical Caveat:</strong> Lacks an official developer REST API; internal endpoints change cookie/crumb headers. Ideal for ad-hoc inspection rather than the sole production backbone.</p>
       </div>
+
       <div class="docs-card">
-        <h4>2. Announcement Date</h4>
-        <p>The exact date (<code>YYYY-MM-DD</code>) the price target or rating revision was published to institutional clients.</p>
+        <h4>2. TipRanks (<a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Analyst Accountability &amp; Sentiment Aggregator.<br />
+        <strong>Assessment:</strong> High for individual sell-side analyst track records, historical win rates, and price target revisions.<br />
+        <strong>Role in Due Diligence:</strong> Provides analyst scoring by measuring the historical success rate and average return of specific Wall Street analysts (e.g. Dan Ives at Wedbush, Toni Sacconaghi at Bernstein, Toshiya Hari at Goldman Sachs).<br />
+        <strong>Strategic Utility:</strong> Enables AI agents to weigh analyst price targets based on proven forecasting accuracy on that specific equity.</p>
       </div>
+
       <div class="docs-card">
-        <h4>3. Stock Symbol</h4>
-        <p>The primary exchange-listed ticker symbol (e.g. <code>AAPL</code>, <code>NVDA</code>, <code>MSFT</code>).</p>
+        <h4>3. StockAnalysis.com (<a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Secondary Fundamental Screener &amp; Financial Portal.<br />
+        <strong>Assessment:</strong> Moderate to High. Offers clean, modern tabular summaries of multi-year financial statements, valuation multiples, and dividend histories.<br />
+        <strong>Role in Due Diligence:</strong> Fast visual and tabular cross-check for multi-year revenue trajectories, gross margin expansion, free cash flow generation, and consensus estimates.<br />
+        <strong>Verification Rule:</strong> As derived secondary data, critical figures must be cross-checked against Tier 1 SEC EDGAR XBRL filings.</p>
       </div>
+
       <div class="docs-card">
-        <h4>4. Market Price at Announcement</h4>
-        <p>The prevailing market price of the common stock on the date of the research report release, establishing the initial return benchmark.</p>
+        <h4>4. MarketBeat (<a href="https://www.marketbeat.com/" target="_blank" rel="noopener noreferrer" class="source-link">marketbeat.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Wall Street Analyst Price Target &amp; Rating Aggregator.<br />
+        <strong>Assessment:</strong> High for verified rating changes, price target revisions, and link-level auditability.<br />
+        <strong>Role in Due Diligence:</strong> Primary ground-truthed public aggregator for tracking individual analyst price targets. Publishes dedicated time-stamped tables linking directly to verifiable URLs where analyst name, firm, date, and target price are confirmed.</p>
       </div>
+
       <div class="docs-card">
-        <h4>5. Target Price &amp; Implied Upside</h4>
-        <p>The analyst's 12-month forward price target per share and the resulting implied percentage appreciation or return.</p>
-      </div>
-      <div class="docs-card">
-        <h4>6. Verifiable Source Link</h4>
-        <p>A direct URL to the Tier 2 institutional aggregator record (e.g. MarketBeat) where the analyst name, firm, date, and price target can be audited.</p>
+        <h4>5. Morningstar (<a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Institutional Fundamental Research &amp; Economic Moat Authority.<br />
+        <strong>Assessment:</strong> Very High for qualitative competitive moat analysis, capital allocation stewardship, and discounted cash flow (DCF) fair value modeling.<br />
+        <strong>Role in Due Diligence:</strong> Gold-standard framework for evaluating structural competitive advantages (network effects, switching costs, cost advantages, intangible assets, efficient scale) and independent DCF fair value benchmarks.</p>
       </div>
     </div>
 
-    <h2>AI Agent Parametric Knowledge &amp; Context Signature</h2>
-    <p>AI agents frequently synthesize insights from internal weights (pre-training, SFT, RL) without executing tool calls. This is fully supported, provided agents explicitly document the provenance and attach a runtime context signature.</p>
+    <h2>How Sell-Side Analyst Reports &amp; Price Targets Are Tracked and Discovered</h2>
+    
+    <h3>The Institutional Research Ecosystem</h3>
+    <p>Primary sell-side equity research reports are proprietary 10-to-50 page dossiers authored by chartered analysts at major global investment banks (Goldman Sachs, Morgan Stanley, JPMorgan, Bernstein, Wedbush, Bank of America, UBS, Barclays, Citigroup, Jefferies, Evercore ISI, Baird). These reports are commercial intellectual property distributed to paying institutional clients behind enterprise terminal paywalls (Bloomberg Professional Terminal, FactSet, LSEG Workspace / Refinitiv, S&P Capital IQ).</p>
+
+    <h3>How Price Targets Become Public</h3>
+    <p>Although full PDF reports remain behind client paywalls, the headline metrics and revisions are disseminated immediately through three public and secondary channels:</p>
+    <div class="step-container">
+      <div class="step-card">
+        <span class="step-badge">1. Morning Wires</span>
+        <div class="step-content">
+          <h4>Pre-Market Institutional Releases (6:00 AM - 9:00 AM ET)</h4>
+          <p>Investment banks issue executive wire releases announcing rating changes, target revisions, and thesis summaries. Financial newswires (Bloomberg News, Reuters, Dow Jones, The Fly on the Wall, StreetInsider, Benzinga, Seeking Alpha) publish immediate dispatches containing analyst names, firms, old/new price targets, and key drivers.</p>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <span class="step-badge">2. Structured Aggregators</span>
+        <div class="step-content">
+          <h4>Aggregator Ingestion &amp; API Feeds</h4>
+          <p>Structured aggregators (MarketBeat, TipRanks, Financial Modeling Prep API, Yahoo Finance) ingest newswire dispatches into normalized databases. For example, the FMP API provides dedicated endpoints (<code>GET /v4/price-target?symbol=AAPL</code>) returning analyst names, firms, price targets, announcement dates, and news links.</p>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <span class="step-badge">3. Corporate Disclosures</span>
+        <div class="step-content">
+          <h4>SEC 8-K Filings &amp; Investor Relations Fact Sheets</h4>
+          <p>Public corporations regularly disclose sell-side coverage rosters, consensus targets, and analyst day presentations via SEC EDGAR and Investor Relations (IR) websites.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Search Engines &amp; Live Ingestion Tools for AI Agents</h2>
+    <p>AI agents utilize three specialized tools to conduct real-time market research and catalyst investigations:</p>
 
     <div class="card-grid">
       <div class="docs-card">
-        <h4>1. Explicit Declaration</h4>
-        <p>Tag internal knowledge as <code>TIER_4_AGENT_PARAMETRIC_KNOWLEDGE</code> and mark numerical assertions as unverified pending Tier 1 SEC cross-check.</p>
+        <h4>1. <code>search_web</code> Engine</h4>
+        <p>Programmatic interface to global search indexes (Google / Bing). Enables agents to execute targeted, disambiguated queries across corporate investor relations portals, regulatory agency announcements (FDA, FAA, FTC), and breaking macroeconomic briefings.</p>
       </div>
+
       <div class="docs-card">
-        <h4>2. System Clock Observation</h4>
-        <p>Record the observed runtime system clock timestamp (e.g. <code>2026-08-16T11:15:00-04:00</code>) to benchmark time-sensitive statements.</p>
+        <h4>2. <code>read_url_content</code> &amp; Browser Subagent</h4>
+        <p>HTTP content fetchers and headless browser subagents capable of rendering static markdown, parsing HTML DOMs, and interacting with dynamic JavaScript applications to extract earnings call transcripts, CEO interviews, and SEC exhibits.</p>
       </div>
+
       <div class="docs-card">
-        <h4>3. Role &amp; Prompt Context</h4>
-        <p>Describe the active operational role (e.g. Fundamental Analyst) and conversation prompt context governing the synthesis.</p>
-      </div>
-      <div class="docs-card">
-        <h4>4. Model Identity Transparency</h4>
-        <p>If base model architecture or exact training cutoff is not internally exposed, explicitly note that model metadata is context-inferred.</p>
+        <h4>3. SEC EDGAR Full-Text Search (EFTS) API</h4>
+        <p>The SEC's native full-text search engine (<code>https://efts.sec.gov/LATEST/search-index</code>) indexing every word across millions of regulatory filings since 2001. Allows agents to search litigation disclosures, customer concentration figures, and supply chain dependencies directly inside 10-K/10-Q footnotes.</p>
       </div>
     </div>
 
-    <h2>Data Access Methodologies</h2>
-    <p>The system utilizes three deterministic access channels for data ingestion and verification:</p>
+    <h2>How AI Agents Generate Knowledge from Internal Weights (Parametric Knowledge)</h2>
+    <p>A central capability of foundation Large Language Models (LLMs) is synthesizing sophisticated qualitative analyses, competitive dynamics, financial theories, and business moat assessments directly from internal neural network weights without invoking external tools. Here is how this mathematical process operates:</p>
 
-    <pre><code># 1. Deterministic SEC EDGAR XBRL Sync
-python scripts/fetch_sec.py --ticker AAPL
-node scripts/build_sec_data.js
+    <div class="step-container">
+      <div class="step-card">
+        <span class="step-badge">Step 1</span>
+        <div class="step-content">
+          <h4>Pre-Training: Compressing Market Intelligence into High-Dimensional Weights</h4>
+          <p>During pre-training on supercomputing clusters, the model processes trillions of tokens spanning decades of SEC 10-K/10-Q filings, shareholder letters, financial newswires, earnings transcripts, academic finance literature (Fama-French, Black-Scholes), and corporate case studies. Through self-supervised autoregressive learning, the model adjusts billions of neural weight parameters across hundreds of transformer layers, creating a high-dimensional latent representation of accounting relationships, operating leverage, and competitive strategy.</p>
+        </div>
+      </div>
 
-# 2. Macro Yield & Interest Rate Reference
-# Risk-Free Rate (RFR) pulled from FRED 3-Month Treasury Constant Maturity for option pricing.
+      <div class="step-card">
+        <span class="step-badge">Step 2</span>
+        <div class="step-content">
+          <h4>Autoregressive Next-Token Generation: From Weights to Actionable Analysis</h4>
+          <p>When prompted to analyze an equity, the generation process executes mathematically:</p>
+          <ul style="margin: 6px 0 10px 18px; color: var(--text-secondary); font-size: 0.9rem;">
+            <li><strong>Context Encoding:</strong> The prompt, instructions, guidelines, and conversation history are converted into input token embeddings.</li>
+            <li><strong>Multi-Head Self-Attention:</strong> Transformer layers compute dynamic attention weights across concepts, activating neural pathways associated with pricing power, switching costs, or option Greek calculations.</li>
+            <li><strong>Feed-Forward Knowledge Projection:</strong> Dense layers project hidden states through weight matrices encoding deep statistical regularities about business models.</li>
+            <li><strong>Logit Computation &amp; Vocabulary Sampling:</strong> Output projection layers generate logits across the vocabulary (~32,000 to 256,000 tokens), converted by softmax into probability distributions from which the next token is generated.</li>
+            <li><strong>Autoregressive Loop:</strong> Each token is appended to the context sequence, producing structured, coherent, institutional financial analysis.</li>
+          </ul>
+        </div>
+      </div>
 
-# 3. Private Snapshot Processing
-# Brokerage CSV/image ingested locally into context/schemas/portfolio_context.json.</code></pre>
+      <div class="step-card">
+        <span class="step-badge">Step 3</span>
+        <div class="step-content">
+          <h4>Post-Training Alignment (SFT &amp; RLHF/DPO)</h4>
+          <p>Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) align the token distribution toward rigorous step-by-step reasoning, institutional financial terminology, schema compliance, and objective risk analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-title">Tier 4 Parametric Governance Rules</div>
+      <p>Because internal weights have a static training cutoff and may probabilistically drift on precise decimal numbers, the system enforces three governance rules:</p>
+      <ol style="margin-left: 1.5rem; margin-top: 8px; line-height: 1.6; color: var(--text-secondary);">
+        <li><strong>Explicit Provenance:</strong> Tag internal knowledge as <code>TIER_4_AGENT_PARAMETRIC_KNOWLEDGE</code>.</li>
+        <li><strong>Runtime Context Signature:</strong> Record system clock timestamp, active role persona, and prompt context.</li>
+        <li><strong>Mandatory SEC Cross-Check:</strong> All critical historical financial figures and share counts generated from parametric memory must be verified against Tier 1 SEC EDGAR XBRL data.</li>
+      </ol>
+    </div>
 
     <h2>Verification &amp; Errata Correction Protocol</h2>
-    <p>When an analytical assumption, catalyst target, or historical figure is found to be erroneous or superseded, the system executes an audited correction lifecycle:</p>
+    <p>When any stored claim, financial figure, or assumption is identified as erroneous, stale, or hallucinated, the system executes an audited correction lifecycle:</p>
 
-    <ol style="margin-left: 1.5rem; line-height: 1.8; color: var(--docs-text-secondary); margin-bottom: 1.5rem;">
+    <ol style="margin-left: 1.5rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
       <li><strong>Detection:</strong> Flag conflicting data point against Tier 1 SEC EDGAR or direct exchange data.</li>
       <li><strong>Triangulation:</strong> Retrieve official primary source evidence and verify ground truth value.</li>
       <li><strong>In-Place Correction:</strong> Update the target dossier in <code>context/theses/</code> or dataset with new citation.</li>
       <li><strong>Errata Log Entry:</strong> Append a permanent audit record to <code>context/research/errata_log.md</code> matching <code>context/schemas/errata_schema.json</code>.</li>
     </ol>
-
-    <div class="callout important">
-      <div class="callout-title">Source Hierarchy Rule</div>
-      <p>In any conflict between an AI agent's memory or an aggregator summary and an SEC 10-K/10-Q filing, the primary SEC filing is the sole authoritative ground truth.</p>
-    </div>
   </main>
 </body>
 </html>

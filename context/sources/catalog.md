@@ -1,128 +1,183 @@
-# Authoritative Data Sources Catalog
+# Authoritative Data Sources Catalog & Trust Architecture
 
-This catalog defines the official data sources used by the Agentic Investment Advisor system, their authority tiers, update cadences, primary domains, and trust hierarchy.
+This catalog defines the official data sources used by the Agentic Investment Advisor system, their authority tiers, update cadences, primary URLs, trust hierarchy, analyst report discovery mechanisms, search engine capabilities, and LLM internal weight parametric token generation mechanics.
 
 ## Source Hierarchy & Trust Architecture
 
-When evaluating factual data, financial metrics, or valuation variables, the system adheres to a strict five-tier authority hierarchy. Higher-tier sources supersede lower-tier sources in any reconciliation conflict.
+When evaluating factual data, financial metrics, valuation variables, or investment theses, the system adheres to a strict five-tier authority hierarchy. Higher-tier sources supersede lower-tier sources in any reconciliation conflict.
 
 ```
-+-------------------------------------------------------------------------+
-| Tier 1: Primary Regulatory Filings & Direct Exchange Data              |
-| (SEC EDGAR, 10-K/10-Q/8-K/Form 4, CBOE, NYSE/NASDAQ Official Feeds)      |
-+-------------------------------------------------------------------------+
-                                    |
-                                    v
-+-------------------------------------------------------------------------+
-| Tier 2: Institutional Aggregators & Official Macro Databases           |
-| (FRED / Federal Reserve, US Treasury Yield Curve, Yahoo Finance, Finviz)|
-+-------------------------------------------------------------------------+
-                                    |
-                                    v
-+-------------------------------------------------------------------------+
-| Tier 3: Quantitative Literature & Empirical Benchmark Studies           |
-| (CBOE BuyWrite/PutWrite Indices, AQR/Fama-French Factors, SSRN Papers)  |
-+-------------------------------------------------------------------------+
-                                    |
-                                    v
-+-------------------------------------------------------------------------+
-| Tier 4: AI Agent Parametric Knowledge (Self-Described Runtime Context)  |
-| (Pre-training, SFT, RL Internal Weights with Context Signature)         |
-+-------------------------------------------------------------------------+
-                                    |
-                                    v
-+-------------------------------------------------------------------------+
-| Tier 5: Direct Human Override & Explicit Brokerage Snapshots            |
-| (Private user snapshots in private/snapshots/, manual trade receipts)   |
-+-------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+| Tier 1: Primary Regulatory Filings & Direct Exchange Data                             |
+| (SEC EDGAR 10-K/10-Q/8-K/Form 4/NPORT-P, CBOE, NYSE, NASDAQ Official Feeds)           |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+| Tier 2: Institutional Aggregators, Macro Databases & Market APIs                      |
+| (FRED, US Treasury, FMP, Polygon.io, Tiingo, MarketBeat, TipRanks, Morningstar, YF)   |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+| Tier 3: Quantitative Literature, Academic Studies & Consensus Distributions           |
+| (CBOE BuyWrite/PutWrite Indices, AQR/Fama-French, Academic Journals, Mean Consensus)  |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+| Tier 4: AI Agent Parametric Knowledge & Internal Weights                              |
+| (Pre-training, SFT, RL Internal Weights with Context Signature & Runtime Audit)        |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+| Tier 5: Direct User Input & Private Brokerage Records                                 |
+| (Private user snapshots in private/snapshots/, manual trade execution receipts)        |
++---------------------------------------------------------------------------------------+
 ```
 
-## Tier 1: Primary Regulatory Filings & Direct Exchange Feeds
+## Comprehensive Master Sources Directory
 
-### SEC EDGAR System
-- **Provider:** US Securities and Exchange Commission (SEC).
-- **Domain:** Primary company disclosures, financial statements, insider transactions, and major material events.
-- **Key Document Types:**
-  - `Form 10-K`: Annual audited comprehensive financial statements, business segment breakdowns, risk factors, and notes.
-  - `Form 10-Q`: Quarterly unaudited financial statements, interim balance sheet updates, and management discussion.
-  - `Form 8-K`: Unscheduled material events (CEO changes, M&A announcements, major litigation, credit defaults).
-  - `Form 4`: Insider equity transactions (officer/director stock purchases, sales, and option exercises).
-  - `Form DEF 14A`: Definitive proxy statements, executive compensation structures, and corporate governance details.
-  - `Form NPORT-P`: Monthly portfolio investment disclosures for ETFs and mutual funds, reporting complete constituent holdings, share balances, fair market values, and portfolio weights.
-- **Authority Rating:** Absolute Ground Truth for historical financials, share counts, ETF constituents, and regulatory disclosures.
-- **Access Protocol:** RESTful programmatic access via SEC EDGAR Company Facts API (`https://data.sec.gov/api/xbrl/companyfacts/`), submissions directory (`https://data.sec.gov/submissions/`), and Python CLI tools (`scripts/fetch_sec.py`, `scripts/fetch_etf_holdings.py`).
-- **Rate Limit & Policy:** SEC enforces a strict limit of 10 requests per second. User-Agent header must specify a declared identity format: `User-Agent: Sample Company Name AdminContact@domain.com`.
+The following master directory catalogues every specific data source, public URL, authority classification, access method, and trust assessment utilized during equity due diligence:
 
-### CBOE (Chicago Board Options Exchange) & Primary Equity Exchanges
-- **Provider:** CBOE Global Markets, NYSE, NASDAQ.
-- **Domain:** Official equity settlement prices, options chain definitions, strike listings, expiration schedules, open interest, and historical implied volatility indices (VIX, VXN).
-- **Authority Rating:** Absolute Ground Truth for options contracts, expirations, strike availability, and official exchange closing prices.
+| Source Name | Primary URL | Tier Classification | Access Method | Trustworthiness & Reliability Assessment | Primary Purpose & Extracted Data |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| SEC EDGAR Company Facts API | https://data.sec.gov/api/xbrl/companyfacts/ | Tier 1 (Primary Regulatory) | Programmatic REST JSON | Absolute Ground Truth (10/10). Official regulatory filings under US Federal Securities Law. | Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted shares, long-term debt. |
+| SEC EDGAR Submissions API | https://data.sec.gov/submissions/ | Tier 1 (Primary Regulatory) | Programmatic REST JSON | Absolute Ground Truth (10/10). Official filing history and accession numbers. | Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy disclosures. |
+| SEC EDGAR Form NPORT-P / XML | https://data.sec.gov/submissions/ | Tier 1 (Primary Regulatory) | Programmatic REST XML/JSON | Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US registered funds. | Authoritative constituent holdings, share counts, fair market values, and weightings for QQQ, SPY, DIA, SMH. |
+| SEC Master Ticker Directory | https://www.sec.gov/files/company_tickers_exchange.json | Tier 1 (Primary Regulatory) | Programmatic REST JSON | Absolute Ground Truth (10/10). Authoritative registry of all SEC reporting entities. | CIK-to-ticker mapping, legal corporate entity names, and primary exchange listing designations. |
+| NASDAQ Trader Symbol Directory | ftp://ftp.nasdaqtrader.com/SymbolDirectory/ | Tier 1 (Primary Exchange) | Open Public FTP | Absolute Ground Truth (10/10). Direct national market exchange operations directory. | Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue flags, financial status. |
+| CBOE Global Markets Data | https://www.cboe.com/ | Tier 1 (Primary Exchange) | Official Feeds / Web | Absolute Ground Truth (10/10). World's premier options exchange operator. | Options chain definitions, strike listings, expiration cycles, open interest, and historical VIX/VXN series. |
+| NYSE / NASDAQ Consolidated Feeds | https://www.nasdaq.com/ | Tier 1 (Primary Exchange) | Real-time SIP / Tape | Absolute Ground Truth (10/10). Direct official national market system data. | Real-time and official market closing settlement prices, auction prints, and consolidated tape volume. |
+| FRED (Federal Reserve Economic Data) | https://fred.stlouisfed.org/ | Tier 2 (Macro Database) | Official REST API / Web | Highly Authoritative (9.5/10). St. Louis Fed official repository for national economic statistics. | 3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Effective Rate, CPI inflation, GDP growth. |
+| US Department of the Treasury | https://home.treasury.gov/ | Tier 2 (Macro Database) | Official Web / CSV Feeds | Highly Authoritative (9.5/10). Official sovereign fiscal authority of the United States. | Daily Treasury Par Yield Curve Rates, benchmark discount rates, and sovereign debt yield structure. |
+| Financial Modeling Prep (FMP) | https://financialmodelingprep.com/ | Tier 2 (Institutional API) | Developer REST API | High Reliability (9.0/10). Structured developer API with verified XBRL normalization. | Automated stock screening, price target history, historical financial ratios, DCF models, earnings calendar. |
+| Polygon.io | https://polygon.io/ | Tier 2 (Institutional API) | REST API & WebSockets | High Reliability (9.0/10). Direct SIP-connected institutional market data feed. | Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference ticker master directory. |
+| Tiingo Financial Data | https://www.tiingo.com/ | Tier 2 (Institutional API) | REST API & Bulk Feeds | High Reliability (9.0/10). Institutional data clean-room with split/dividend adjustment algorithms. | End-of-day prices, corporate actions, adjusted price series, curated financial news feeds with sentiment. |
+| MarketBeat Analyst Coverage | https://www.marketbeat.com/ | Tier 2 (Analyst Aggregator) | Web Page Audit / RSS | High Reliability (8.5/10). Structured aggregator ground-truthing individual Wall Street rating revisions. | Individual analyst names, research firms, announcement dates, price targets, rating actions, and news URLs. |
+| TipRanks | https://www.tipranks.com/ | Tier 2 (Analyst Aggregator) | Web Interface / Data Feed | High Reliability (8.5/10). Specializes in tracking and ranking individual Wall Street analysts. | Analyst accuracy rankings, historical win rates, average returns per analyst, price target consensus. |
+| Morningstar | https://www.morningstar.com/ | Tier 2 (Institutional Research) | Research Reports / Web | High Reliability (8.8/10). Premier institutional fundamental analysis and fund research house. | Economic Moat ratings (Wide, Narrow, None), DCF Fair Value estimates, Capital Allocation / Stewardship grades. |
+| Yahoo Finance | https://finance.yahoo.com/ | Tier 2 (Secondary Aggregator) | Web / yfinance Engine | Moderate to High (8.0/10). Broad public aggregator; high utility but subject to scraper rate limits. | Rapid multi-month OHLCV candlestick extraction, 20-day/50-day moving averages, 52-week ranges, trading volume. |
+| StockAnalysis.com | https://stockanalysis.com/ | Tier 2 (Secondary Aggregator) | Web Interface | Moderate to High (8.0/10). Clean secondary presentation of financial statements and metrics. | Rapid visual overview of financial trends, balance sheet summaries, dividend histories, consensus targets. |
+| FactSet & LSEG / Refinitiv I/B/E/S | https://www.factset.com/ | Tier 2 / 3 (Institutional) | Institutional Terminals | Highly Authoritative (9.5/10). Industry standard for institutional sell-side consensus estimates. | Institutional earnings estimates, revenue consensus forecasts, target price standard deviation/dispersion. |
+| CBOE Benchmark Indices (PUT/BXM) | https://www.cboe.com/indices/ | Tier 3 (Quantitative Literature) | Academic / Empirical Feeds | Highly Authoritative (9.0/10). Standard empirical benchmarks for cash-secured put and buy-write returns. | Multi-decade quantitative risk/return data on option volatility risk premium (VRP) and option harvesting. |
+| AQR Capital Management & Fama-French | https://www.aqr.com/Insights/Research | Tier 3 (Quantitative Literature) | Peer-Reviewed Research | Highly Authoritative (9.0/10). Foundational quantitative literature on asset pricing anomalies. | Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums across multi-decade cycles. |
+| AI Agent Parametric Knowledge | Internal Neural Weights | Tier 4 (Parametric Inference) | Autoregressive Next-Token Sampling | Conceptual Grounding (7.0/10). Outstanding qualitative synthesis; unverified for exact historical digits. | Qualitative thesis formulation, moat assessment, competitive dynamic evaluation, conceptual framework mapping. |
+| Private User Brokerage Snapshots | Local private/snapshots/ | Tier 5 (Private User Data) | Secure Local Ingestion | Absolute Ground Truth for Account State (10/10). Isolated strictly behind private firewall. | Settled cash, SGOV proxy balance, exact share quantities, cost bases, and open option contract positions. |
 
-### NASDAQ Trader Symbol Directory
-- **Provider:** NASDAQ Market Operations / Trader Services.
-- **Domain:** Authoritative daily master listings of all NASDAQ and other-exchange listed securities (`nasdaqlisted.txt`, `otherlisted.txt`), security categories, test issues, and ETF indicators.
-- **Authority Rating:** Absolute Ground Truth for exchange listing status, active trading symbols, and security classification.
-- **Access Protocol:** Public anonymous FTP (`ftp://ftp.nasdaqtrader.com/SymbolDirectory/`).
+## Detailed Classification & Assessment of Key Data Aggregators
 
-## Tier 2: Institutional Aggregators & Macro Databases
+### 1. Yahoo Finance (`https://finance.yahoo.com/`)
+- **Classification:** Tier 2 Secondary Market Data & News Aggregator.
+- **Trustworthiness Assessment:** High for historical market prices, trading volume, and split/dividend adjustments. Moderate for analyst consensus and balance sheet extracts.
+- **Role in Due Diligence:** Serves as a rapid, zero-friction engine for pulling daily and multi-month OHLCV candlestick series, calculating 20-day and 50-day simple moving averages, identifying 52-week high/low support and resistance levels, and reviewing recent company news releases.
+- **Technical Considerations:** While widely used via open-source tools (e.g. `yfinance`), Yahoo Finance does not provide a supported public developer REST API. Its internal endpoints frequently rotate cookie tokens and crumb headers, making it ideal for quick ad-hoc queries but unsuitable as the sole production data backbone.
 
-### Developer Financial Data & Screener APIs (FMP, Polygon.io, Tiingo)
-- **Providers:** Financial Modeling Prep, Polygon.io, Tiingo, Alpaca, Finnhub, EODHD.
-- **Domain:** Programmatic stock screening endpoints, real-time/delayed OHLCV market feeds, adjusted historical price series, corporate actions, and structured XBRL financial statement extracts.
-- **Authority Rating:** High-reliability institutional aggregators. Built specifically for automated AI agent orchestration, programmatic querying, and algorithmic screening.
-- **Comprehensive Guide:** See [Master Guide to Investment Data Sources](file:///c:/Users/fyhor/Documents/GitHub/investments/context/sources/investment_data_sources.md) for full pricing, endpoint schemas, and bot policies.
+### 2. TipRanks (`https://www.tipranks.com/`)
+- **Classification:** Tier 2 Institutional & Retail Analyst Accountability Aggregator.
+- **Trustworthiness Assessment:** High for tracking individual sell-side analyst credentials, historical accuracy rankings, and price target announcements.
+- **Role in Due Diligence:** TipRanks provides a unique analytical dimension by measuring the historical success rate and average return generated by individual Wall Street analysts (e.g. ranking Dan Ives at Wedbush, Toni Sacconaghi at Bernstein, or Toshiya Hari at Goldman Sachs). This allows AI agents to weight sell-side price targets based on the specific analyst's proven track record on that specific stock rather than treating all broker opinions equally.
 
-### FRED (Federal Reserve Economic Data)
-- **Provider:** Federal Reserve Bank of St. Louis.
-- **Domain:** Macroeconomic indicators, Fed Funds target rate, Treasury constant maturity yields (1-month, 3-month, 2-year, 10-year), CPI, GDP growth, and monetary base metrics.
-- **Authority Rating:** Authoritative for macroeconomic context and risk-free hurdle rates.
-- **Usage in System:** Calibrating risk-free interest rates (RFR) in Black-Scholes options pricing and discount rates for DCF valuation models.
+### 3. StockAnalysis.com (`https://stockanalysis.com/`)
+- **Classification:** Tier 2 Secondary Fundamental Screener & Financial Data Portal.
+- **Trustworthiness Assessment:** Moderate to High. Offers exceptionally clean, modern, and structured web layouts of financial statements, valuation multiples, and dividend histories.
+- **Role in Due Diligence:** Serves as a fast visual and tabular cross-check for multi-year revenue trajectories, gross margin expansion, free cash flow generation, and forward consensus estimates.
+- **Caveat & Verification Rule:** Because StockAnalysis.com aggregates and standardizes raw financial data from intermediate third-party providers, all critical figures (such as exact quarterly revenue or diluted shares outstanding) must be verified against Tier 1 SEC EDGAR XBRL filings before locking investment theses.
 
-### SGOV (iShares 0-3 Month Treasury Bond ETF) Official Data
-- **Provider:** BlackRock iShares / US Treasury Department.
-- **Domain:** Net Asset Value (NAV), distribution yields, 30-day SEC yield, and asset duration.
-- **Authority Rating:** Authoritative benchmark for cash proxy allocation and dry powder collateral yields.
+### 4. MarketBeat (`https://www.marketbeat.com/`)
+- **Classification:** Tier 2 Wall Street Analyst Price Target & Rating Aggregator.
+- **Trustworthiness Assessment:** High for verified rating changes, price target revisions, and link-level auditability.
+- **Role in Due Diligence:** MarketBeat is our primary ground-truthed public aggregator for tracking individual sell-side analyst price targets. For each tracked equity, MarketBeat publishes dedicated, time-stamped tables capturing the exact analyst name, brokerage firm, publication date, prevailing market price at announcement, and revised target price. Every record links directly to an accessible URL (`source_url`) enabling unambiguous programmatic and human verification.
 
-### Yahoo Finance & Aggregated Market Feeds
-- **Provider:** Yahoo Finance / Direct Equity Exchanges.
-- **Domain:** Daily and multi-month OHLCV candlestick series, trading volume, 20-day / 50-day moving averages, 52-week high/low ranges, volume ratios, day changes, and technical support/resistance bands.
-- **Authority Rating:** High-reliability secondary data source (Tier 2). Essential for real-time and end-of-day price discovery, volume analysis, technical trend modeling, and market capitalization computation.
-- **Implementation & Schema:** Full ingestion protocol, schema specifications, and mathematical grounding models are documented in [Market Price Research & Technical Analysis Methodology](file:///c:/Users/fyhor/Documents/GitHub/investments/context/sources/market_price_methodology.md) and [market_prices_schema.json](file:///c:/Users/fyhor/Documents/GitHub/investments/context/schemas/market_prices_schema.json).
+### 5. Morningstar (`https://www.morningstar.com/`)
+- **Classification:** Tier 2 Institutional Fundamental Research & Economic Moat Authority.
+- **Trustworthiness Assessment:** Very High for qualitative competitive advantage evaluation, stewardship assessment, and multi-stage discounted cash flow (DCF) fair value modeling.
+- **Role in Due Diligence:** Morningstar's Economic Moat methodology (Wide, Narrow, None) and Moat Trend assessments (Positive, Stable, Negative) provide a gold-standard framework for evaluating structural competitive advantages (network effects, switching costs, cost advantages, intangible assets, and efficient scale). Its forward-looking DCF Fair Value Estimates serve as a valuable independent fundamental benchmark against which market prices can be compared.
 
-### Wall Street Analyst Coverage & Price Target Aggregators
-- **Providers:** MarketBeat, FactSet Research Systems, LSEG Workspace / Refinitiv I/B/E/S, Bloomberg Professional, Financial Modeling Prep, TipRanks, and Benzinga.
-- **Primary Research Issuers:** Sell-side equity research departments of major global investment banks and institutional brokerages including Morgan Stanley, Goldman Sachs, JPMorgan Chase, Bank of America Global Research, Bernstein Research, Wedbush Securities, Barclays Capital, UBS Global Research, Citigroup, Jefferies, Evercore ISI, and Baird.
-- **Data Access & Paywall Nature:** Primary sell-side research dossiers published by investment banks are proprietary documents distributed to institutional clients behind paywalls (Bloomberg / FactSet / institutional portals). Public secondary aggregators (Tier 2) capture and publish verified rating announcements and price target revisions.
-- **Aggregator Quality & Ground-Truth Verification:** To eliminate stale or synthetic records, all analyst coverage records are ground-truthed against verified Tier 2 sources (e.g. MarketBeat dedicated forecast feeds). Every recorded entry must link to an accessible URL (`source_url`) where the analyst name, firm, announcement date, and target price are directly verifiable on the page. Generic aggregators of unknown quality or ungrounded data (such as StockAnalysis.com) are excluded or audited strictly against live pages.
-- **Domain:** Analyst names, issuing research firms, publication/announcement dates, market prices as of announcement, forward target prices, recommendation ratings (Buy/Outperform, Hold/Equal-Weight, Sell/Underperform), report headlines, and aggregated consensus targets (mean, median, high, low, upside percentage).
-- **Authority Rating:** Tier 2 Institutional Aggregator (individual analyst reports) & Tier 3 Consensus Estimates (aggregated consensus distributions).
-- **Implementation & Schema:** Conforms strictly to `context/schemas/analyst_price_target_schema.json`. Recorded in `scripts/data/analyst_price_targets.json` and integrated into thesis dossiers (`context/theses/*.md`) and public web intelligence (`http/stocks.html`).
+## How Sell-Side Analyst Reports & Price Targets Are Tracked and Discovered
 
+### The Institutional Research Ecosystem & Access Dynamics
+Primary sell-side equity research reports are extensive, 10-to-50 page proprietary dossiers written by chartered financial analysts (CFAs) and research teams at major global investment banks and institutional brokerages:
+- **Major Issuing Firms:** Goldman Sachs, Morgan Stanley, JPMorgan Chase, Bank of America Global Research, Bernstein Research, Wedbush Securities, Barclays Capital, UBS Global Research, Citigroup, Jefferies, Evercore ISI, Baird, Mizuho, Wells Fargo Securities, and Piper Sandler.
+- **The Paywall Model:** Primary research reports are commercial intellectual property distributed exclusively to paying institutional clients (hedge funds, mutual funds, sovereign wealth funds, family offices) via enterprise terminals:
+  - **Bloomberg Professional Terminal** (`BBSA` / Research Portal)
+  - **FactSet Research Systems**
+  - **LSEG Workspace / Refinitiv I/B/E/S**
+  - **S&P Capital IQ**
+  - **Proprietary Bank Client Portals** (e.g., Goldman Sachs Marquee, Morgan Stanley Matrix)
 
-## Tier 3: Quantitative Literature & Empirical Benchmark Studies
+### How Rating Changes & Price Targets Become Public
+Although full PDF research reports are protected by copyright and client paywalls, the core findings and headline metrics are disseminated immediately into the public domain through several channels:
+1. **Institutional Wire Feeds & Press Releases:** When an investment bank upgrades a stock, downgrades a stock, or initiates coverage, the firm issues an executive wire release before the market opens (typically between 6:00 AM and 9:00 AM ET).
+2. **Financial Newswires & Live Desks:** Real-time financial news desks (Bloomberg News, Dow Jones Newswires, Reuters, The Fly on the Wall, StreetInsider, Benzinga, Seeking Alpha News) capture these releases and publish immediate dispatches containing:
+   - Lead Analyst Name
+   - Investment Bank / Brokerage Firm
+   - Rating Action (Initiation, Upgrade, Downgrade, Reiteration)
+   - New Price Target vs. Previous Price Target
+   - Key Thesis Drivers & Earnings Estimate Adjustments
+3. **Structured Secondary Aggregators:** Specialized aggregators (MarketBeat, TipRanks, Financial Modeling Prep API, Yahoo Finance) ingest and structure these releases into structured databases and web pages.
+4. **SEC Disclosures & Corporate Investor Relations:** Public corporations frequently mention consensus analyst price targets and coverage rosters in Form 8-K presentations, annual shareholder letters, or Investor Relations (IR) fact sheets.
 
-### Empirical Options Strategy Benchmarks
-- **Sources:**
-  - CBOE S&P 500 PutWrite Index (`PUT`) and BuyWrite Index (`BXM`) benchmark performance data.
-  - Multi-decade academic studies on option volatility risk premium (VRP).
-  - AQR Capital Management and Fama-French factor research on quality, value, and momentum anomalies.
-- **Domain:** Mathematical boundary parameters, optimal Delta selection (0.15 to 0.30), optimal contract duration (30 to 45 DTE), and systematic roll rules.
-- **Authority Rating:** Institutional empirical standard for strategy rule formulation.
+### Ingestion & Verification Methodology for AI Agents
+To track and incorporate analyst price targets into our system without paying tens of thousands of dollars for institutional terminal licenses, our AI agents execute a deterministic three-step discovery protocol:
+1. **Target Price Extraction:** Query structured endpoints such as Financial Modeling Prep (`/v4/price-target?symbol={TICKER}`) or parse dedicated aggregator tables (MarketBeat `https://www.marketbeat.com/stocks/{EXCHANGE}/{TICKER}/price-target/`).
+2. **Schema Normalization:** Normalize every target into `context/schemas/analyst_price_target_schema.json`, recording `analyst_name`, `firm`, `announcement_date`, `market_price_at_announcement`, `target_price`, `implied_upside_percent`, `action`, and `source_url`.
+3. **Ground-Truth URL Verification:** Ensure every recorded entry contains a direct, verifiable URL where human traders and AI agents can inspect the announcement record and verify that the target was published on the declared date.
 
-## Tier 4: AI Agent Parametric Knowledge
+## Search Engines & Tools Accessible to AI Agents
 
-### Model Pre-Training, Supervised Fine-Tuning (SFT) & Reinforcement Learning (RL)
-- **Provider:** Underlying Foundation LLMs and Agentic Frameworks.
-- **Domain:** Conceptual reasoning, structural business analysis, competitive moat assessment, financial terminology, coding logic, and qualitative synthesis.
-- **Provenance Rules:**
-  - When an AI agent relies on pre-training or parametric memory without querying an external tool, it must document its data provenance as `TIER_4_AGENT_PARAMETRIC_KNOWLEDGE`.
-  - When specific base model identity, version, or exact knowledge cutoff dates are inaccessible to the runtime agent, the agent records its **runtime context signature** (system clock timestamp, active deliberation role, user task instruction, and explicit acknowledgement that model metadata is context-inferred).
-  - Parametric estimates of specific historical numbers (e.g. past quarter revenue or exact share count) must be marked as unverified until confirmed via Tier 1 SEC data or Tier 2 feeds.
+AI agents in our system have access to specialized external search and retrieval tools to conduct real-time market research and catalyst investigation:
 
-## Tier 5: Direct User Input & Brokerage Snapshots
+### 1. `search_web` Engine
+- **Mechanism:** Programmatic interface to real-time global web search indexes (Google / Bing indexes).
+- **Primary Capabilities:** Executes targeted queries across corporate investor relations portals, regulatory agency releases (FDA approvals, FAA certifications, FTC antitrust rulings), industry news wires, and macroeconomic press briefings.
+- **Best Practice Querying:** Agents formulate concise, disambiguated query strings (e.g. `"NVIDIA Corporation" "10-Q" "data center revenue" 2026` or `site:investor.apple.com "earnings release"`).
 
-### Private Brokerage Data (`private/snapshots/`)
-- **Provider:** Human user / Primary Brokerage Account Exports (Schwab, Fidelity, Interactive Brokers, Robinhood).
-- **Domain:** Exact settled cash, share lots, option contract positions, cost basis, and executed fill prices.
-- **Authority Rating:** Absolute Ground Truth for current account state and portfolio composition.
-- **Data Boundary:** Strictly isolated in `private/` and never published or committed.
+### 2. `read_url_content` & `browser_subagent`
+- **Mechanism:** HTTP fetch engines and headless browser subagents capable of rendering static markdown, parsing HTML DOMs, and interacting with dynamic JavaScript applications.
+- **Primary Capabilities:** Extracts complete, verbatim transcripts of quarterly earnings conference calls, CEO interviews, detailed 8-K exhibits, and technical whitepapers.
+
+### 3. SEC EDGAR Full-Text Search (EFTS) API
+- **Endpoint:** `https://efts.sec.gov/LATEST/search-index`
+- **Mechanism:** SEC's native full-text search engine indexing every word across millions of regulatory filings since 2001.
+- **Primary Capabilities:** Enables agents to search for specific litigation disclosures, customer concentration percentages, patent licenses, or supply chain supplier dependencies directly inside official 10-K and 10-Q footnotes.
+
+## How AI Agents Generate Knowledge from Internal Weights (Parametric Knowledge)
+
+A central capability of modern foundation Large Language Models (LLMs) is their ability to synthesize sophisticated qualitative analyses, competitive dynamics, financial theories, and business moat assessments directly from their internal neural network weights without executing external tool calls. Understanding how this occurs demystifies the process of generating knowledge "from thin air."
+
+### 1. Pre-Training: Compressing Market Intelligence into High-Dimensional Weights
+During pre-training on supercomputing clusters, the foundation neural network processes trillions of tokens of text spanning:
+- Decades of SEC 10-K and 10-Q filings, annual shareholder letters, and proxy statements.
+- Global financial news, earnings call transcripts, equity research notes, and economic textbooks.
+- Academic finance literature (Fama-French factor models, Black-Scholes derivations, modern portfolio theory).
+- Corporate histories, technological architectures, competitive supply chain mappings, and legal cases.
+
+Through self-supervised autoregressive learning, the model adjusts billions of neural weight parameters across hundreds of transformer layers. In doing so, it does not simply memorize raw text strings; it constructs a rich, continuous, high-dimensional latent representation of corporate strategy, accounting relationships, industry structures, and competitive moats.
+
+### 2. Autoregressive Next-Token Generation: From Weights to Actionable Intelligence
+When an agent is prompted to analyze a company (e.g. evaluating Microsoft's enterprise software lock-in or TSMC's manufacturing scale advantage), the generation process unfolds through deterministic mathematical operations:
+1. **Context Encoding:** The user prompt, system instructions, active workspace guidelines, and conversation history are converted into a sequence of input token embeddings.
+2. **Multi-Head Self-Attention:** Transformer attention layers compute dynamic relationship weights between all concepts in context, activating latent neural pathways associated with software switching costs, ROIC calculations, operating leverage, or option pricing mathematics.
+3. **Feed-Forward Knowledge Projection:** Dense feed-forward layers project internal hidden states through learned weight matrices, encoding deep statistical regularities about how businesses operate, grow, and defend market share.
+4. **Logit Computation & Vocabulary Sampling:** The final output projection layer produces a vector of unnormalized scores (logits) across the model's vocabulary (~32,000 to 256,000 tokens). A softmax function converts logits into probability distributions, from which the next token is generated.
+5. **Autoregressive Loop:** Each newly generated token is appended to the context sequence, and the process repeats hundreds of times per second, yielding structured, coherent, institutional-grade financial analysis.
+
+### 3. Post-Training: SFT and Reinforcement Learning (RL)
+Following pre-training, models undergo Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) / Direct Preference Optimization (DPO). This aligns the model's token distribution toward:
+- Rigorous step-by-step mathematical reasoning.
+- Professional institutional financial terminology.
+- Strict adherence to JSON schemas, markdown formats, and analytical rules.
+- Objective, balanced risk assessment rather than speculative hype.
+
+### 4. Epistemic Limitations & The Tier 4 Governance Rules
+While internal weights provide extraordinary conceptual reasoning, they possess distinct structural limitations:
+- **Static Knowledge Cutoff:** The model's weights reflect the state of the world as of its training cutoff date. It cannot know real-time market prices, today's breaking news, or earnings released this morning without external tools.
+- **Digit Hallucination Risk:** High-dimensional neural representations excel at structural relationships (e.g. "Company A's gross margin expanded due to cloud mix shift") but can probabilistically drift on precise decimal numbers (e.g. reporting Q3 revenue as $14.32B instead of $14.28B).
+
+To harness the cognitive power of internal weights while eliminating hallucination risk, our system enforces three mandatory governance rules for Tier 4 Parametric Knowledge:
+1. **Explicit Provenance Declaration:** Whenever an agent provides analysis from internal weights without tool execution, it must tag the source as `TIER_4_AGENT_PARAMETRIC_KNOWLEDGE`.
+2. **Runtime Context Signature:** The agent must attach its observed runtime timestamp, active role persona, and task prompt context.
+3. **Mandatory SEC Ground-Truth Cross-Check:** Any critical historical financial figures or share counts generated from parametric memory must be verified against Tier 1 SEC EDGAR XBRL filings before being committed to production datasets.
+

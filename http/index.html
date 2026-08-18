@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
+
 <body>
   <nav class="docs-sidebar">
     <a href="index.html" class="docs-brand">
@@ -33,84 +35,123 @@
   <main class="docs-main">
     <div class="docs-header">
       <h1>System Overview</h1>
-      <p class="docs-lead">A specialized multi-agent equity advisory architecture engineered to maximize the probability of achieving a 20%+ annualized return over a 20-year horizon.</p>
+      <p class="docs-lead">An AI harness for stock picking to achieve a 20%+ annualized return over a 20-year horizon.
+      </p>
     </div>
 
     <!-- Quick Access Hub to Public Equities -->
     <div class="card-grid" style="margin-bottom: 32px;">
-      <a href="stocks.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4); background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
+      <a href="stocks.html" class="docs-card"
+        style="border-color: rgba(0, 212, 255, 0.4); background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
         <h4 style="color: #00d4ff;">Public Equities Intelligence &amp; SEC Provenance &rarr;</h4>
-        <p>Explore the 144 US public equities in our tracked universe, audit verified primary source SEC EDGAR 10-K/10-Q filings, inspect active dossiers, and model derivatives.</p>
+        <p>Explore the 144 US public equities in our tracked universe, audit verified primary source SEC EDGAR 10-K/10-Q
+          filings, inspect active dossiers, and model derivatives.</p>
       </a>
-      <a href="docs/sources.html" class="docs-card" style="border-color: rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
+      <a href="docs/sources.html" class="docs-card"
+        style="border-color: rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(21, 26, 35, 0.9) 100%);">
         <h4 style="color: #10b981;">Data Sources &amp; Provenance Catalog &rarr;</h4>
-        <p>Review the strict 5-tier authoritative data hierarchy, SEC ingestion mechanics, and the persistent errata verification protocol.</p>
+        <p>Review the strict 5-tier authoritative data hierarchy, SEC ingestion mechanics, and the persistent errata
+          verification protocol.</p>
       </a>
     </div>
 
     <div class="callout important">
       <div class="callout-title">System Architecture Principle</div>
-      <p>This repository is <strong>not</strong> a generic point-and-click web application. The core advisory engine is executed inside your IDE or AI harness pointed at this repository, orchestrating specialized AI sub-agents with full repository context over your private portfolio snapshots, public equity theses, and deterministic math scripts.</p>
+      <p>This repository is <strong>not</strong> a point-and-click web application. Prompt your AI models in your IDE
+        or harness pointed at this repository to orchestrate specialized AI sub-agents with
+        context that includes your private portfolio snapshots, public equity theses, and deterministic
+        scripts.</p>
     </div>
 
     <h2>System Rationale: Why Agent Teams Outperform Monolithic Chatbots</h2>
-    <p>Standard LLM chat sessions fail at reliable, personalized portfolio management due to four fundamental architectural flaws:</p>
+    <p>Standard LLM chat sessions fail at reliable, personalized portfolio management due to four fundamental
+      architectural flaws:</p>
     <ul>
-      <li><strong>Session Amnesia:</strong> Ephemeral chat contexts lose track of historical cost bases, catalyst milestones, invalidation triggers, and multi-week option roll chains.</li>
-      <li><strong>Guardrail Hedging &amp; Indecision:</strong> Generic consumer bots produce timid, non-actionable answers filled with open-ended "it depends on your risk tolerance" disclaimers.</li>
-      <li><strong>Narrow Universe Focus:</strong> Single prompt windows lack the context capacity to simultaneously audit hundreds of public equities against verified SEC filings.</li>
-      <li><strong>Absence of Deterministic Derivatives Modeling:</strong> Standard language models cannot reliably calculate Black-Scholes Greeks, volatility skews, or exact limit pricing formulas.</li>
+      <li><strong>Session Amnesia:</strong> Ephemeral chat contexts lose track of historical cost bases, catalyst
+        milestones, invalidation triggers, and multi-week option roll chains.</li>
+      <li><strong>Guardrail Hedging &amp; Indecision:</strong> Generic consumer bots produce timid, non-actionable
+        answers filled with open-ended "it depends on your risk tolerance" disclaimers.</li>
+      <li><strong>Narrow Universe Focus:</strong> Single prompt windows lack the context capacity to simultaneously
+        audit hundreds of public equities against verified SEC filings.</li>
+      <li><strong>Absence of Deterministic Derivatives Modeling:</strong> Standard language models cannot reliably
+        calculate Black-Scholes Greeks, volatility skews, or exact limit pricing formulas.</li>
     </ul>
-    <p>This system resolves these limitations by breaking the advisory process into six discrete, specialized sub-agent roles backed by persistent file-based memory, strict data provenance, forward-looking quantitative forecasting, and deterministic Python calculation scripts.</p>
+    <p>This system resolves these limitations by breaking the advisory process into six discrete, specialized sub-agent
+      roles backed by persistent file-based memory, strict data provenance, forward-looking quantitative forecasting,
+      and deterministic Python calculation scripts.</p>
 
     <h2>Multi-Agent Sub-Agent Pipeline</h2>
-    <p>Rather than relying on a single generalist model, the deliberation protocol coordinates six specialized roles backed by structured data contracts:</p>
+    <p>This repo encourages AI to coordinate six specialized roles backed by structured data contracts:</p>
 
     <div class="card-grid">
       <div class="docs-card">
         <h4>1. Portfolio Ingestion Agent</h4>
         <p><strong>Input:</strong> Brokerage screenshot or CSV export in <code>private/snapshots/</code>.</p>
-        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, and SGOV shares. Identifies 100-share blocks eligible for Covered Call income generation while maintaining strict multi-account isolation.</p>
+        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, and SGOV shares.
+          Identifies 100-share blocks eligible for Covered Call income generation while maintaining strict multi-account
+          isolation.</p>
       </div>
 
       <div class="docs-card">
         <h4>2. Equity Research Agent</h4>
-        <p><strong>Input:</strong> The Internet, US public exchanges (NYSE, NASDAQ, AMEX), SEC EDGAR NPORT-P / 10-K filings, and industry trend feeds.</p>
-        <p><strong>Responsibility:</strong> Proactively searches public markets to discover high-potential companies, verifies solvency and runway, and screens for high probability of achieving >= 20% annualized ROI to onboard into our universe.</p>
+        <p><strong>Input:</strong> The Internet, US public exchanges (NYSE, NASDAQ, AMEX), SEC EDGAR NPORT-P / 10-K
+          filings, and industry trend feeds.</p>
+        <p><strong>Responsibility:</strong> Proactively searches public markets to discover high-potential companies,
+          verifies solvency and runway, and screens for high probability of achieving >= 20% annualized ROI to onboard
+          into our universe.</p>
       </div>
 
       <div class="docs-card">
         <h4>3. Investment Thesis Agent</h4>
-        <p><strong>Input:</strong> Tracked universe of equities backed by Tier 1 SEC EDGAR filings (10-K/10-Q) and earnings releases.</p>
-        <p><strong>Responsibility:</strong> Builds institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target bounds), authors detailed Revenue and P/S Multiple narratives, and assigns decisive <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
+        <p><strong>Input:</strong> Tracked universe of equities backed by Tier 1 SEC EDGAR filings (10-K/10-Q) and
+          earnings releases.</p>
+        <p><strong>Responsibility:</strong> Builds institutional 3-year quantitative forecasts (13-quarter revenue path,
+          6-horizon shares outstanding, 4-horizon price target bounds), authors detailed Revenue and P/S Multiple
+          narratives, and assigns decisive <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code>
+          ratings.</p>
       </div>
 
       <div class="docs-card">
         <h4>4. Memory Agent</h4>
-        <p><strong>Input:</strong> Persistent dossiers in <code>context/theses/*.md</code>, errata logs, and past deliberation history.</p>
-        <p><strong>Responsibility:</strong> Manages institutional context across runs, audits catalyst execution against deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent liquidation alerts for broken theses.</p>
+        <p><strong>Input:</strong> Persistent dossiers in <code>context/theses/*.md</code>, errata logs, and past
+          deliberation history.</p>
+        <p><strong>Responsibility:</strong> Manages institutional context across runs, audits catalyst execution against
+          deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent
+          liquidation alerts for broken theses.</p>
       </div>
 
       <div class="docs-card">
         <h4>5. Pricing Agent</h4>
-        <p><strong>Input:</strong> Valuation targets from Thesis Agent, technical price structures, moving averages, and volatility surfaces.</p>
-        <p><strong>Responsibility:</strong> Predicts price trends to calculate exact limit orders for common stocks, models Black-Scholes options pricing for Cash-Secured Puts (0.15-0.30 Delta) and Covered Calls (0.20-0.35 Delta), and verifies net-credit rolls.</p>
+        <p><strong>Input:</strong> Valuation targets from Thesis Agent, technical price structures, moving averages, and
+          volatility surfaces.</p>
+        <p><strong>Responsibility:</strong> Predicts price trends to calculate exact limit orders for common stocks,
+          models Black-Scholes options pricing for Cash-Secured Puts (0.15-0.30 Delta) and Covered Calls (0.20-0.35
+          Delta), and verifies net-credit rolls.</p>
       </div>
 
       <div class="docs-card">
         <h4>6. Lead Portfolio Manager</h4>
         <p><strong>Input:</strong> Sub-agent recommendations and portfolio risk constraints.</p>
-        <p><strong>Responsibility:</strong> Synthesizes executive decisions into an unambiguous plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) with single-session Monday execution.</p>
+        <p><strong>Responsibility:</strong> Synthesizes executive decisions into an unambiguous plain-text Weekly
+          Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) with single-session Monday execution.</p>
       </div>
     </div>
 
     <h2>Data Isolation &amp; Privacy Architecture</h2>
-    <p>The system enforces a strict one-way information flow and privacy boundary between confidential user holdings and public intelligence:</p>
+    <p>The system asks AI to enforce a strict one-way information flow and privacy boundary between confidential user
+      holdings and public intelligence:</p>
     <ul>
-      <li><strong>Private Execution Tier (<code>private/</code>):</strong> All user snapshots, exact account values, cash balances, and personalized trading plans reside locally and are excluded from version control via <code>.gitignore</code>. Private data never bleeds back into public dossiers.</li>
-      <li><strong>Public Intelligence Tier (<code>context/theses/</code> &amp; <code>http/</code>):</strong> Fundamental company research, SEC EDGAR 10-K/10-Q provenance, catalyst timelines, and valuation metrics exist on completely equal footing for all universe equities.</li>
-      <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python and Node.js CLI tools execute mathematical models, options pricing, and local caching deterministically.</li>
-      <li><strong>Local Sandbox (<code>scratch/</code>):</strong> Git-ignored workspace for temporary test calculations and exploratory scripts.</li>
+      <li><strong>Private Execution Tier (<code>private/</code>):</strong> All user snapshots, exact account values,
+        cash balances, and personalized trading plans reside locally and are excluded from version control via
+        <code>.gitignore</code>. Private data never bleeds back into public dossiers.
+      </li>
+      <li><strong>Public Intelligence Tier (<code>context/theses/</code> &amp; <code>http/</code>):</strong> Fundamental
+        company research, SEC EDGAR 10-K/10-Q provenance, catalyst timelines, and valuation metrics exist on completely
+        equal footing for all universe equities.</li>
+      <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python and Node.js CLI tools execute
+        mathematical models, options pricing, and local caching deterministically.</li>
+      <li><strong>Local Sandbox (<code>scratch/</code>):</strong> Git-ignored workspace for temporary test calculations
+        and exploratory scripts.</li>
     </ul>
 
     <h2>Core Risk Rules &amp; Portfolio Constraints</h2>
@@ -136,7 +177,8 @@
         <tr>
           <td><strong>Derivatives</strong></td>
           <td>CSPs &amp; CCs Only</td>
-          <td>Strictly no naked options. All puts must be 100% cash-secured; all calls must be covered by &gt;= 100 shares.</td>
+          <td>Strictly no naked options. All puts must be 100% cash-secured; all calls must be covered by &gt;= 100
+            shares.</td>
         </tr>
         <tr>
           <td><strong>Rolling Rules</strong></td>
@@ -146,12 +188,14 @@
         <tr>
           <td><strong>Concentration</strong></td>
           <td>Target ~25 Positions</td>
-          <td>Soft target aiming for 25 or fewer holdings. Conviction dictates sizing, ranging from a single 100% position to 26+ holdings.</td>
+          <td>Soft target aiming for 25 or fewer holdings. Conviction dictates sizing, ranging from a single 100%
+            position to 26+ holdings.</td>
         </tr>
         <tr>
           <td><strong>Cadence</strong></td>
           <td>Single-Session Weekly</td>
-          <td>Weekend analysis and planning; set-and-forget limit orders placed Monday at 9:30 AM ET with zero mid-week monitoring.</td>
+          <td>Weekend analysis and planning; set-and-forget limit orders placed Monday at 9:30 AM ET with zero mid-week
+            monitoring.</td>
         </tr>
       </tbody>
     </table>
@@ -169,7 +213,8 @@
         <tr>
           <td><code>context/</code></td>
           <td>AI Agents</td>
-          <td>High-density prompts (<code>prompts/</code>), public equity dossiers (<code>theses/</code>), and schemas.</td>
+          <td>High-density prompts (<code>prompts/</code>), public equity dossiers (<code>theses/</code>), and schemas.
+          </td>
         </tr>
         <tr>
           <td><code>http/</code></td>
@@ -184,7 +229,8 @@
         <tr>
           <td><code>private/</code></td>
           <td>Human Operator (Git-Ignored)</td>
-          <td>Brokerage snapshots (<code>snapshots/</code>) and generated weekly execution plans (<code>plans/</code>).</td>
+          <td>Brokerage snapshots (<code>snapshots/</code>) and generated weekly execution plans (<code>plans/</code>).
+          </td>
         </tr>
         <tr>
           <td><code>scratch/</code></td>
@@ -200,15 +246,18 @@
     <div class="card-grid">
       <a href="docs/architecture.html" class="docs-card">
         <h4>System Architecture Deep Dive &rarr;</h4>
-        <p>In-depth review of the 5-agent pipeline, memory hierarchy, data isolation, and deterministic context construction.</p>
+        <p>In-depth review of the 5-agent pipeline, memory hierarchy, data isolation, and deterministic context
+          construction.</p>
       </a>
       <a href="docs/sources.html" class="docs-card">
         <h4>Data Sources &amp; Provenance &rarr;</h4>
-        <p>Authoritative 5-tier source hierarchy, SEC EDGAR primary feeds, agent parametric knowledge rules, and errata workflows.</p>
+        <p>Authoritative 5-tier source hierarchy, SEC EDGAR primary feeds, agent parametric knowledge rules, and errata
+          workflows.</p>
       </a>
       <a href="docs/strategies.html" class="docs-card">
         <h4>Investment Strategy &amp; Constraints &rarr;</h4>
-        <p>Comprehensive strategy guidelines, portfolio constraints, 20%+ annualized target objective, and risk rules.</p>
+        <p>Comprehensive strategy guidelines, portfolio constraints, 20%+ annualized target objective, and risk rules.
+        </p>
       </a>
       <a href="docs/valuation.html" class="docs-card">
         <h4>Valuation Framework &rarr;</h4>
@@ -217,4 +266,5 @@
     </div>
   </main>
 </body>
+
 </html>

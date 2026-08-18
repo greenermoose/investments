@@ -60,10 +60,11 @@ EOSE currently trades at a Price-to-Sales (P/S) multiple of ~11.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Peter Levine | Wall Street Research | 2026-08-01 | $3.97 | $4.27 | +7.6% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $3.98 | $3.86 | -3.0% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $3.82 | $3.72 | -2.6% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $3.84 | $4.20 | +9.4% | BUY |
+| Ryan Pfingst | B. Riley Financial | 2026-08-14 | $3.93 | $5.00 | +20.3% | HOLD |
+| Jeff Osborne | TD Cowen | 2026-08-06 | $3.93 | $4.00 | -2.6% | HOLD |
+| Roth Capital Research Team | Roth Capital | 2026-08-06 | $3.93 | $4.00 | -2.6% | BUY |
+| Stephen Gengaro | Stifel Nicolaus | 2026-08-06 | $3.93 | $9.00 | +122.2% | BUY |
+| Christopher Souther | Truist Financial | 2026-07-13 | $3.93 | $7.00 | +60.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -108,7 +108,7 @@ for equity in universe:
     if sym_analysts:
         for a in sym_analysts[:5]:
             analyst_rows.append(
-                f"| {a.get('analyst_name', 'Senior Analyst')} | {a.get('institution', 'Wall Street Research')} | {a.get('date_announced', '2026-08-01')} | ${a.get('market_price_at_announcement', current_price):.2f} | ${a.get('target_price', target_exit_price):.2f} | {a.get('implied_upside_pct', 20.0):+.1f}% | {a.get('action', 'BUY')} |"
+                f"| {a.get('analyst_name', 'Senior Analyst')} | {a.get('firm', a.get('institution', 'Wall Street Research'))} | {a.get('announcement_date', a.get('date_announced', '2026-08-01'))} | ${a.get('market_price_at_announcement', current_price):.2f} | ${a.get('target_price', target_exit_price):.2f} | {a.get('implied_upside_pct', 20.0):+.1f}% | {a.get('rating_action', a.get('action', 'BUY'))} |"
             )
     else:
         upside = round(((target_exit_price - current_price) / current_price) * 100.0, 1)

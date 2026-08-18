@@ -60,10 +60,11 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $181.18 | $241.13 | +33.1% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $178.41 | $214.58 | +20.3% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $179.32 | $214.48 | +19.6% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $180.89 | $230.44 | +27.4% | BUY |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-10 | $179.29 | $168.00 | -7.5% | OUTPERFORM |
+| Brad Erickson | Royal Bank Of Canada | 2026-08-10 | $179.29 | $165.00 | -9.7% | BUY |
+| Brian Pitz | BMO Capital Markets | 2026-08-10 | $179.29 | $165.00 | -7.3% | BUY |
+| Evercore Research Team | Evercore | 2026-08-07 | $179.29 | $190.00 | +9.0% | OUTPERFORM |
+| Daniel L. Kurnos | Benchmark | 2026-08-07 | $179.29 | $180.00 | +2.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $199.80 | $240.50 | +20.4% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $196.54 | $237.64 | +20.9% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $200.90 | $231.46 | +15.2% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $205.93 | $233.64 | +13.5% | BUY |
+| Betty Jiang | Barclays | 2026-08-17 | $202.70 | $208.00 | +4.0% | BUY |
+| Jason Gabelman | TD Cowen | 2026-08-05 | $202.70 | $205.00 | +7.7% | HOLD |
+| Nitin Kumar | Mizuho | 2026-08-03 | $202.70 | $224.00 | +15.4% | BUY |
+| Bob Brackett | Sanford C. Bernstein | 2026-08-03 | $202.70 | $209.00 | +7.6% | BUY |
+| Jean Ann Salisbury | Bank of America | 2026-07-28 | $202.70 | $227.00 | +19.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ SNPS currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $403.35 | $523.58 | +29.8% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $404.56 | $549.03 | +35.7% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-08-11 | $413.22 | $450.00 | +9.3% | BUY |
+| Gary Mobley | Benchmark | 2026-07-15 | $413.22 | $570.00 | +34.0% | BUY |
+| Clarke Jeffries | Piper Sandler | 2026-06-23 | $413.22 | $550.00 | +18.4% | OVERWEIGHT |
+| Ruben Roy | Stifel Nicolaus | 2026-05-28 | $413.22 | $600.00 | +20.0% | BUY |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-05-28 | $413.22 | $558.00 | +6.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

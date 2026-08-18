@@ -60,8 +60,11 @@ IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $231.98 | $257.23 | +10.9% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $234.27 | $253.40 | +8.2% | BUY |
+| James Friedman | Susquehanna | 2026-07-24 | $228.85 | $225.00 | +6.8% | HOLD |
+| Fatima Boolani | Citigroup | 2026-07-24 | $228.85 | $245.00 | +13.8% | BUY |
+| Keith Bachman | BMO Capital Markets | 2026-07-23 | $228.85 | $230.00 | +11.7% | BUY |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-07-23 | $228.85 | $270.00 | +33.8% | BUY |
+| Erik Woodring | Morgan Stanley | 2026-07-23 | $228.85 | $190.00 | -7.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

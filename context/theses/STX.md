@@ -60,10 +60,11 @@ STX currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $1019.72 | $929.90 | -8.8% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $974.70 | $1058.65 | +8.6% | BUY |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $964.04 | $1025.94 | +6.4% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $980.62 | $1102.02 | +12.4% | BUY |
+| Tom O'Malley | Barclays | 2026-07-30 | $994.79 | $1250.00 | +47.6% | OVERWEIGHT |
+| Jim Kelleher | Argus | 2026-07-30 | $994.79 | $900.00 | +6.2% | BUY |
+| Mark Newman | Sanford C. Bernstein | 2026-07-29 | $994.79 | $1350.00 | +76.8% | OUTPERFORM |
+| Erik Woodring | Morgan Stanley | 2026-07-29 | $994.79 | $1187.00 | +58.8% | OVERWEIGHT |
+| Joseph Cardoso | JPMorgan Chase & Co. | 2026-07-29 | $994.79 | $1240.00 | +54.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

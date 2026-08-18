@@ -60,9 +60,11 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $196.15 | $237.48 | +21.1% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $191.46 | $251.78 | +31.5% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $190.88 | $236.63 | +24.0% | BUY |
+| JPMorgan Chase & Co. Research Team | JPMorgan Chase & Co. | 2026-08-13 | $190.97 | $250.00 | +27.9% | OVERWEIGHT |
+| Monness Crespi & Hardt Research Team | Monness Crespi & Hardt | 2026-08-13 | $190.97 | $222.00 | +14.9% | BUY |
+| Karl Keirstead | UBS Group | 2026-08-12 | $190.97 | $210.00 | +8.6% | HOLD |
+| Michael Turrin | Wells Fargo & Company | 2026-08-12 | $190.97 | $205.00 | +3.9% | BUY |
+| Keith Weiss | Morgan Stanley | 2026-07-21 | $190.97 | $185.00 | +6.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| David Vogt | Wall Street Research | 2026-08-01 | $327.71 | $370.34 | +13.0% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $328.76 | $409.47 | +24.5% | BUY |
+| Bill Carcache | Piper Sandler | 2026-08-12 | $336.21 | $405.00 | +18.6% | OVERWEIGHT |
+| Erika Najarian | UBS Group | 2026-08-03 | $336.21 | $384.00 | +14.0% | HOLD |
+| Betsy Graseck | Morgan Stanley | 2026-07-27 | $336.21 | $382.00 | +14.6% | BUY |
+| John Pancari | Evercore | 2026-07-27 | $336.21 | $370.00 | +11.0% | BUY |
+| Vincent Caintic | BTIG Research | 2026-07-27 | $336.21 | $315.00 | -3.3% | SELL |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $154.27 | $209.94 | +36.1% | BUY |
-| Dan Ives | Wall Street Research | 2026-08-01 | $156.36 | $201.47 | +28.9% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $157.92 | $194.31 | +23.0% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $156.61 | $204.38 | +30.5% | BUY |
+| Shyam Patil | Susquehanna | 2026-07-31 | $155.85 | $160.00 | +3.7% | HOLD |
+| Dan Bergstrom | Royal Bank Of Canada | 2026-07-30 | $155.85 | $185.00 | +19.8% | BUY |
+| Shrenik Kothari | Robert W. Baird | 2026-07-30 | $155.85 | $165.00 | +6.9% | BUY |
+| Evercore Research Team | Evercore | 2026-07-30 | $155.85 | $165.00 | +4.8% | BUY |
+| Meta Marshall | Morgan Stanley | 2026-07-30 | $155.85 | $136.00 | -15.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

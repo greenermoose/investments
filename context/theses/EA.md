@@ -60,9 +60,11 @@ EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $208.98 | $220.86 | +5.7% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $203.97 | $217.85 | +6.8% | BUY |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $203.50 | $195.76 | -3.8% | BUY |
+| Jason Bazinet | Citigroup | 2026-05-07 | $209.70 | $204.00 | +1.6% | HOLD |
+| Brian Nowak | Morgan Stanley | 2025-10-20 | $209.70 | $210.00 | +4.7% | BUY |
+| Eric Handler | Roth Capital | 2025-10-02 | $209.70 | $210.00 | +4.2% | HOLD |
+| Brian Pitz | BMO Capital Markets | 2025-09-30 | $209.70 | $210.00 | +3.9% | BUY |
+| James Heaney | Jefferies Financial Group | 2025-09-30 | $209.70 | $210.00 | +3.9% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

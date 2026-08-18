@@ -60,8 +60,11 @@ DIS currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $104.01 | $116.60 | +12.1% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $107.18 | $120.93 | +12.8% | BUY |
+| Steven Cahall | Wells Fargo & Company | 2026-08-06 | $103.50 | $132.00 | +27.8% | OVERWEIGHT |
+| Joseph Bonner | Argus | 2026-08-06 | $103.50 | $134.00 | +29.7% | BUY |
+| Kannan Venkateshwar | Barclays | 2026-08-06 | $103.50 | $115.00 | +11.2% | OVERWEIGHT |
+| Mike Hickey | Benchmark | 2026-08-06 | $103.50 | $115.00 | +11.2% | BUY |
+| Michael Morris | Guggenheim | 2026-08-06 | $103.50 | $120.00 | +16.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

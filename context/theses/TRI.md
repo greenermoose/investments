@@ -60,10 +60,11 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $99.93 | $136.45 | +36.5% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $101.43 | $135.15 | +33.2% | BUY |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $102.19 | $132.55 | +29.7% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $102.47 | $120.85 | +17.9% | BUY |
+| Maher Yaghi | Scotiabank | 2026-08-06 | $99.06 | $135.00 | +36.9% | OUTPERFORM |
+| Canaccord Genuity Group Research Team | Canaccord Genuity Group | 2026-08-06 | $99.06 | $132.50 | +33.1% | BUY |
+| Scotia Research Team | Scotia | 2026-08-06 | $99.06 | $135.00 | +35.6% | OUTPERFORM |
+| Drew McReynolds | Royal Bank Of Canada | 2026-08-06 | $99.06 | $124.00 | +24.6% | OUTPERFORM |
+| Jason Haas | Wells Fargo & Company | 2026-06-30 | $99.06 | $85.00 | +2.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,9 +60,11 @@ MNST currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $46.53 | $60.40 | +29.8% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $45.44 | $57.58 | +26.7% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $44.88 | $57.84 | +28.9% | BUY |
+| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-08-10 | $45.52 | $100.00 | +10.7% | HOLD |
+| Michael Lavery | Piper Sandler | 2026-08-07 | $45.52 | $50.50 | +12.5% | OVERWEIGHT |
+| Peter Grom | UBS Group | 2026-08-07 | $45.52 | $52.50 | +13.8% | HOLD |
+| Evercore Research Team | Evercore | 2026-08-07 | $45.52 | $52.50 | +11.5% | OUTPERFORM |
+| Nik Modi | Royal Bank Of Canada | 2026-08-05 | $45.52 | $48.50 | +2.0% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

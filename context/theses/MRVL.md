@@ -60,8 +60,11 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $232.74 | $310.37 | +33.4% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $237.01 | $312.51 | +31.9% | BUY |
+| Timothy Arcuri | UBS Group | 2026-08-17 | $234.33 | $300.00 | +35.1% | BUY |
+| James Schneider | The Goldman Sachs Group | 2026-08-12 | $234.33 | $195.00 | -10.2% | HOLD |
+| John Vinh | KeyCorp | 2026-07-14 | $234.33 | $400.00 | +83.9% | OVERWEIGHT |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-07-07 | $234.33 | $360.00 | +44.4% | OUTPERFORM |
+| C.J. Muse | Cantor Fitzgerald | 2026-06-29 | $234.33 | $300.00 | +12.5% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

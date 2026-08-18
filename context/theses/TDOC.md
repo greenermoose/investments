@@ -60,10 +60,11 @@ TDOC currently trades at a Price-to-Sales (P/S) multiple of ~0.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $6.57 | $6.90 | +5.0% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $6.45 | $6.40 | -0.8% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $6.56 | $6.81 | +3.8% | BUY |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $6.52 | $6.16 | -5.5% | BUY |
+| Daniel Grosslight | Citigroup | 2026-08-03 | $6.54 | $7.50 | +13.2% | HOLD |
+| Richard Close | Canaccord Genuity Group | 2026-07-30 | $6.54 | $10.00 | +47.4% | BUY |
+| Allen Lutz | Bank of America | 2026-07-07 | $6.54 | $10.50 | +13.0% | BUY |
+| Glen Santangelo | Barclays | 2026-03-26 | $6.54 | $7.00 | +25.8% | BUY |
+| Lisa Gill | JPMorgan Chase & Co. | 2026-03-13 | $6.54 | $7.00 | +32.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

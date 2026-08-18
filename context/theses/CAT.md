@@ -60,9 +60,11 @@ CAT currently trades at a Price-to-Sales (P/S) multiple of ~6.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $883.04 | $1060.64 | +20.1% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $871.37 | $991.34 | +13.8% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $843.82 | $1061.07 | +25.7% | BUY |
+| Michael Shlisky | DA Davidson | 2026-08-06 | $881.65 | $882.00 | +1.4% | HOLD |
+| Adam Seiden | Barclays | 2026-08-06 | $881.65 | $900.00 | +3.2% | BUY |
+| Chad Dillard | Sanford C. Bernstein | 2026-08-05 | $881.65 | $1002.00 | +12.8% | BUY |
+| Steven Fisher | UBS Group | 2026-08-05 | $881.65 | $925.00 | +4.2% | HOLD |
+| Jamie Cook | Truist Financial | 2026-08-05 | $881.65 | $980.00 | +10.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

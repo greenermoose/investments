@@ -60,10 +60,11 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $45.04 | $45.48 | +1.0% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $44.41 | $42.93 | -3.3% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $46.08 | $45.83 | -0.5% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $45.34 | $43.82 | -3.4% | BUY |
+| Richard Sunderland | Truist Financial | 2026-08-13 | $45.57 | $48.00 | +5.5% | HOLD |
+| Shelby Tucker | TD Cowen | 2026-05-15 | $45.57 | $49.00 | +13.1% | HOLD |
+| Sophie Karp | KeyCorp | 2026-05-13 | $45.57 | $41.00 | -8.8% | UNDERPERFORM |
+| David Arcaro | Morgan Stanley | 2026-04-21 | $45.57 | $55.00 | +18.6% | BUY |
+| Wells Fargo & Company Research Team | Wells Fargo & Company | 2026-04-21 | $45.57 | $50.00 | +7.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

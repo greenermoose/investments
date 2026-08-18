@@ -60,8 +60,11 @@ VRSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $173.32 | $215.00 | +24.0% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $177.21 | $208.93 | +17.9% | BUY |
+| Alex Kramm | UBS Group | 2026-07-30 | $175.62 | $235.00 | +17.4% | HOLD |
+| Jeffrey Meuler | Robert W. Baird | 2026-07-30 | $175.62 | $247.00 | +22.6% | BUY |
+| Evercore Research Team | Evercore | 2026-07-30 | $175.62 | $223.00 | +11.4% | BUY |
+| Jason Haas | Wells Fargo & Company | 2026-07-30 | $175.62 | $260.00 | +30.0% | OVERWEIGHT |
+| Russell Quelch | Rothschild & Co Redburn | 2026-06-18 | $175.62 | $185.00 | +5.5% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

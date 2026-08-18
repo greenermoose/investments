@@ -60,8 +60,11 @@ CSIQ currently trades at a Price-to-Sales (P/S) multiple of ~0.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $14.96 | $15.16 | +1.3% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $14.72 | $15.42 | +4.8% | BUY |
+| Vikram Bagri | Citigroup | 2026-07-22 | $14.79 | $18.00 | +17.1% | HOLD |
+| Maheep Mandloi | Mizuho | 2026-06-15 | $14.79 | $18.00 | +7.1% | HOLD |
+| Praneeth Satish | Wells Fargo & Company | 2026-04-08 | $14.79 | $17.00 | +35.9% | BUY |
+| Philip Shen | Roth Capital | 2026-03-23 | $14.79 | $15.00 | +17.0% | HOLD |
+| Colin Rusch | Oppenheimer | 2026-03-20 | $14.79 | $19.00 | +30.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

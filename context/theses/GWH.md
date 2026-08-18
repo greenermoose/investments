@@ -60,8 +60,9 @@ GWH currently trades at a Price-to-Sales (P/S) multiple of ~5.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $0.60 | $0.66 | +10.0% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $0.60 | $0.55 | -8.3% | BUY |
+| Roth Capital Research Team | Roth Capital | 2026-05-18 | $0.61 | $2.00 | +128.1% | BUY |
+| Ben Kallo | Robert W. Baird | 2025-08-18 | $0.61 | $2.00 | +14.9% | HOLD |
+| George Gianarikas | Canaccord Genuity Group | 2025-04-01 | $0.61 | $3.00 | +23.5% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $122.44 | $138.35 | +13.0% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $126.49 | $135.26 | +6.9% | BUY |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $121.99 | $131.17 | +7.5% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $123.67 | $138.31 | +11.8% | BUY |
+| Richard Sunderland | Truist Financial | 2026-08-17 | $126.53 | $139.00 | +10.7% | BUY |
+| Ryan Levine | Citigroup | 2026-08-05 | $126.53 | $142.00 | +12.5% | HOLD |
+| Nicholas Campanella | Barclays | 2026-08-03 | $126.53 | $129.00 | +0.9% | BUY |
+| Anthony Crowdell | Mizuho | 2026-07-31 | $126.53 | $135.00 | +4.9% | HOLD |
+| David Arcaro | Morgan Stanley | 2026-07-22 | $126.53 | $139.00 | +4.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

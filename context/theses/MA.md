@@ -60,9 +60,11 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $546.24 | $650.50 | +19.1% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $567.03 | $674.94 | +19.0% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $545.86 | $630.41 | +15.5% | BUY |
+| Matthew Coad | Truist Financial | 2026-08-05 | $562.26 | $633.00 | +10.5% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $562.26 | $695.00 | +21.2% | OVERWEIGHT |
+| Daniel R. Perlin | Royal Bank Of Canada | 2026-07-31 | $562.26 | $642.00 | +12.4% | OUTPERFORM |
+| Bryan C. Bergin | TD Cowen | 2026-07-31 | $562.26 | $667.00 | +17.2% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $562.26 | $632.00 | +10.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

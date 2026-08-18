@@ -60,8 +60,11 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $401.81 | $502.59 | +25.1% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $383.18 | $499.32 | +30.3% | BUY |
+| John Eade | Argus | 2026-08-06 | $389.71 | $450.00 | +14.1% | HOLD |
+| Chigusa Katoku | JPMorgan Chase & Co. | 2026-07-29 | $389.71 | $415.00 | +2.5% | UNDERPERFORM |
+| Deane Dray | Royal Bank Of Canada | 2026-07-24 | $389.71 | $417.00 | +13.2% | BUY |
+| Jon Vruwink | Robert W. Baird | 2026-07-24 | $389.71 | $480.00 | +33.1% | BUY |
+| Clarke Jeffries | Piper Sandler | 2026-07-24 | $389.71 | $526.00 | +48.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

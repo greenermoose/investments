@@ -60,10 +60,11 @@ BAM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $52.12 | $62.70 | +20.3% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $52.13 | $58.67 | +12.5% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $52.30 | $63.32 | +21.1% | BUY |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $52.75 | $65.16 | +23.5% | BUY |
+| Mario Saric | Scotiabank | 2026-08-06 | $52.57 | $59.00 | +11.8% | OUTPERFORM |
+| UBS Group Research Team | UBS Group | 2026-08-06 | $52.57 | $55.00 | +3.9% | HOLD |
+| National Bank Financial Research Team | National Bank Financial | 2026-08-06 | $52.57 | $70.00 | +32.5% | OUTPERFORM |
+| Scotia Research Team | Scotia | 2026-08-06 | $52.57 | $59.00 | +11.7% | OUTPERFORM |
+| Michael Cyprys | Morgan Stanley | 2026-07-21 | $52.57 | $56.00 | +19.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

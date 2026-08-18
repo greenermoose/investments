@@ -60,10 +60,11 @@ SHOP currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $144.66 | $180.64 | +24.9% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $147.02 | $194.02 | +32.0% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $146.92 | $181.54 | +23.6% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $149.02 | $194.36 | +30.4% | BUY |
+| Ken Gawrelski | Wells Fargo & Company | 2026-08-07 | $148.65 | $180.00 | +22.1% | OVERWEIGHT |
+| Gil Luria | DA Davidson | 2026-08-06 | $148.65 | $200.00 | +36.9% | BUY |
+| Paul Treiber | Royal Bank Of Canada | 2026-08-06 | $148.65 | $180.00 | +23.1% | OUTPERFORM |
+| Timothy Chiodo | UBS Group | 2026-08-06 | $148.65 | $145.00 | +0.5% | HOLD |
+| Trevor Young | Barclays | 2026-08-06 | $148.65 | $145.00 | +0.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

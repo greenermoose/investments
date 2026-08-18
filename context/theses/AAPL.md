@@ -60,10 +60,11 @@ AAPL currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Ives | Wall Street Research | 2026-08-01 | $222.50 | $285.00 | +28.1% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $219.80 | $260.00 | +18.3% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $218.00 | $240.00 | +10.1% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $224.10 | $270.00 | +20.5% | BUY |
+| Timm Schulze-Melander | Rothschild & Co Redburn | 2026-08-17 | $305.59 | $400.00 | +30.8% | HOLD |
+| Edison Lee | Jefferies Financial Group | 2026-08-10 | $305.59 | $263.66 | -15.8% | UNDERPERFORM |
+| China Renaissance Research Team | China Renaissance | 2026-08-04 | $305.59 | $280.00 | -7.7% | HOLD |
+| DZ Bank Research Team | DZ Bank | 2026-08-04 | $305.59 | $310.00 | +2.2% | HOLD |
+| Aaron Rakers | Wells Fargo & Company | 2026-07-31 | $305.59 | $350.00 | +5.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

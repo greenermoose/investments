@@ -60,10 +60,11 @@ CMCSA currently trades at a Price-to-Sales (P/S) multiple of ~0.7x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $26.30 | $27.89 | +6.0% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $25.25 | $27.63 | +9.4% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $25.78 | $28.16 | +9.2% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $25.12 | $26.04 | +3.7% | BUY |
+| Jonathan Atkin | Royal Bank Of Canada | 2026-07-24 | $25.57 | $26.00 | +16.9% | BUY |
+| Maher Yaghi | Scotiabank | 2026-07-24 | $25.57 | $29.00 | +31.0% | BUY |
+| Sean Diffley | Morgan Stanley | 2026-07-24 | $25.57 | $29.00 | +30.4% | BUY |
+| Edward Kelly | Wells Fargo & Company | 2026-07-24 | $25.57 | $23.00 | +4.9% | UNDERPERFORM |
+| Kannan Venkateshwar | Barclays | 2026-07-24 | $25.57 | $26.00 | +18.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

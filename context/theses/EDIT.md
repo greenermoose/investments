@@ -60,9 +60,11 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $2.84 | $2.96 | +4.2% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $2.83 | $3.07 | +8.5% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $2.74 | $2.72 | -0.7% | BUY |
+| LADENBURG THALM/SH SH Research Team | LADENBURG THALM/SH SH | 2026-08-18 | $2.84 | $6.00 | +111.3% | BUY |
+| Geulah Livshits | Chardan Capital | 2026-05-05 | $2.84 | $4.00 | +31.6% | BUY |
+| Soumit Roy | JonesTrading | 2026-03-10 | $2.84 | $8.00 | +206.5% | HOLD |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-03-09 | $2.84 | $6.00 | +158.6% | BUY |
+| Mitchell Kapoor | HC Wainwright | 2025-09-05 | $2.84 | $5.00 | +98.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

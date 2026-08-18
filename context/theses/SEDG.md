@@ -60,10 +60,11 @@ SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $31.23 | $32.97 | +5.6% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $31.13 | $32.96 | +5.9% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $31.69 | $30.26 | -4.5% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $30.18 | $30.66 | +1.6% | BUY |
+| Christopher Dendrinos | Royal Bank Of Canada | 2026-08-06 | $30.79 | $24.00 | -26.2% | BUY |
+| Christine Cho | Barclays | 2026-08-06 | $30.79 | $37.00 | +10.3% | BUY |
+| Biju Perincheril | Susquehanna | 2026-08-06 | $30.79 | $38.00 | +12.1% | HOLD |
+| Brian Lee | The Goldman Sachs Group | 2026-08-06 | $30.79 | $30.00 | -11.5% | SELL |
+| Jeff Osborne | TD Cowen | 2026-07-20 | $30.79 | $75.00 | +40.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

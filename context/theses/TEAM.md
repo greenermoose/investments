@@ -60,8 +60,11 @@ TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $151.48 | $196.39 | +29.6% | BUY |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $160.44 | $194.21 | +21.0% | BUY |
+| FBN Securities Research Team | FBN Securities | 2026-08-10 | $158.34 | $170.00 | +11.9% | OUTPERFORM |
+| Fatima Boolani | Citigroup | 2026-08-10 | $158.34 | $170.00 | +14.0% | BUY |
+| Raimo Lenschow | Barclays | 2026-08-10 | $158.34 | $172.00 | +15.4% | OVERWEIGHT |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-08-07 | $158.34 | $180.00 | +25.4% | BUY |
+| Keith Weiss | Morgan Stanley | 2026-08-07 | $158.34 | $180.00 | +24.7% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

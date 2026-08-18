@@ -60,9 +60,11 @@ DDOG currently trades at a Price-to-Sales (P/S) multiple of ~25.2x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $240.26 | $319.41 | +32.9% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $236.48 | $292.12 | +23.5% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $249.72 | $316.48 | +26.7% | BUY |
+| William Power | Robert W. Baird | 2026-08-07 | $247.32 | $300.00 | +26.5% | BUY |
+| Karl Keirstead | UBS Group | 2026-08-07 | $247.32 | $280.00 | +18.4% | BUY |
+| BMO Capital Markets Research Team | BMO Capital Markets | 2026-08-07 | $247.32 | $300.00 | +26.8% | BUY |
+| Patrick Colville | Scotiabank | 2026-08-07 | $247.32 | $285.00 | +24.3% | OUTPERFORM |
+| Mike Cikos | Needham & Company LLC | 2026-08-07 | $247.32 | $300.00 | +30.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ CTAS currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brent Thill | Wall Street Research | 2026-08-01 | $193.49 | $227.33 | +17.5% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $190.93 | $238.06 | +24.7% | BUY |
+| Joshua Chan | UBS Group | 2026-07-16 | $197.82 | $230.00 | +13.1% | BUY |
+| Jason Haas | Wells Fargo & Company | 2026-07-16 | $197.82 | $250.00 | +30.0% | OVERWEIGHT |
+| Ashish Sabadra | Royal Bank Of Canada | 2026-07-16 | $197.82 | $206.00 | +1.0% | BUY |
+| Andrew Wittmann | Robert W. Baird | 2026-07-16 | $197.82 | $214.00 | +11.2% | OUTPERFORM |
+| Curtis Nagle | Bank of America | 2026-07-16 | $197.82 | $230.00 | +19.6% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,9 +60,11 @@ UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $385.12 | $452.63 | +17.5% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $384.14 | $475.59 | +23.8% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $398.88 | $450.34 | +12.9% | BUY |
+| BMO Capital Markets Research Team | BMO Capital Markets | 2026-07-21 | $395.62 | $512.00 | +18.7% | BUY |
+| DA Davidson Research Team | DA Davidson | 2026-07-21 | $395.62 | $512.00 | +18.7% | BUY |
+| Lisa Gill | JPMorgan Chase & Co. | 2026-07-21 | $395.62 | $516.00 | +19.2% | OVERWEIGHT |
+| Ann Hynes | Mizuho | 2026-07-20 | $395.62 | $493.00 | +16.9% | OUTPERFORM |
+| Andrew Mok | Barclays | 2026-07-20 | $395.62 | $441.00 | +4.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

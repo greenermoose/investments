@@ -60,8 +60,11 @@ ADI currently trades at a Price-to-Sales (P/S) multiple of ~17.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $398.32 | $482.04 | +21.0% | BUY |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $388.99 | $452.58 | +16.3% | BUY |
+| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $390.28 | $550.00 | +41.2% | OVERWEIGHT |
+| John Vinh | KeyCorp | 2026-07-14 | $390.28 | $525.00 | +36.0% | OVERWEIGHT |
+| Joshua Buchalter | TD Cowen | 2026-07-13 | $390.28 | $460.00 | +19.4% | BUY |
+| Fundamental Research Research Team | Fundamental Research | 2026-06-29 | $390.28 | $550.00 | +40.6% | BUY |
+| Tore Svanberg | Stifel Nicolaus | 2026-06-24 | $390.28 | $498.00 | +22.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

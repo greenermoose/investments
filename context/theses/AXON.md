@@ -60,9 +60,11 @@ AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Peter Levine | Wall Street Research | 2026-08-01 | $593.52 | $725.81 | +22.3% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $587.78 | $752.26 | +28.0% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $603.00 | $815.07 | +35.2% | BUY |
+| Meta Marshall | Morgan Stanley | 2026-08-06 | $604.32 | $640.00 | +20.0% | OVERWEIGHT |
+| Michael Ng | The Goldman Sachs Group | 2026-08-06 | $604.32 | $715.00 | +27.1% | BUY |
+| James Fish | Piper Sandler | 2026-08-06 | $604.32 | $732.00 | +30.1% | OVERWEIGHT |
+| Tim Long | Barclays | 2026-08-06 | $604.32 | $688.00 | +12.9% | OVERWEIGHT |
+| Andrew Spinola | UBS Group | 2026-08-06 | $604.32 | $600.00 | +14.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

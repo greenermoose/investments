@@ -60,10 +60,11 @@ PLTR currently trades at a Price-to-Sales (P/S) multiple of ~88.2x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $176.82 | $222.08 | +25.6% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $172.57 | $229.77 | +33.1% | BUY |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $170.62 | $208.06 | +21.9% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $172.11 | $220.26 | +28.0% | BUY |
+| Karl Keirstead | UBS Group | 2026-08-11 | $172.55 | $215.00 | +22.7% | BUY |
+| Needham & Company LLC Research Team | Needham & Company LLC | 2026-08-11 | $172.55 | $215.00 | +22.7% | BUY |
+| Northland Securities Research Team | Northland Securities | 2026-08-04 | $172.55 | $200.00 | +26.5% | BUY |
+| Gregg Moskowitz | Mizuho | 2026-08-04 | $172.55 | $215.00 | +36.2% | OUTPERFORM |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-08-04 | $172.55 | $204.00 | +62.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

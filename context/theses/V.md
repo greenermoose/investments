@@ -60,8 +60,11 @@ V currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelv
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $356.64 | $424.34 | +19.0% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $363.02 | $410.69 | +13.1% | BUY |
+| Matthew Coad | Truist Financial | 2026-08-05 | $358.84 | $406.00 | +10.0% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $358.84 | $445.00 | +21.5% | OVERWEIGHT |
+| Jason Kupferberg | Wells Fargo & Company | 2026-07-30 | $358.84 | $432.00 | +16.9% | OVERWEIGHT |
+| Daniel Perlin | Royal Bank Of Canada | 2026-07-29 | $358.84 | $412.00 | +11.8% | OUTPERFORM |
+| Bill Carcache | Piper Sandler | 2026-07-29 | $358.84 | $430.00 | +17.3% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

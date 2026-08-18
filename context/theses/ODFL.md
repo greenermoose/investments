@@ -60,10 +60,11 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Peter Levine | Wall Street Research | 2026-08-01 | $204.29 | $248.27 | +21.5% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $210.93 | $241.31 | +14.4% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $208.95 | $250.22 | +19.8% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $215.95 | $236.82 | +9.7% | BUY |
+| Thomas Wadewitz | UBS Group | 2026-07-30 | $211.96 | $228.00 | +8.2% | HOLD |
+| Evercore Research Team | Evercore | 2026-07-30 | $211.96 | $243.00 | +14.3% | OUTPERFORM |
+| J. Bruce Chan | Stifel Nicolaus | 2026-07-30 | $211.96 | $263.00 | +23.8% | BUY |
+| Ariel Rosa | Citigroup | 2026-07-30 | $211.96 | $231.00 | +3.7% | HOLD |
+| Stephanie Moore | Jefferies Financial Group | 2026-07-30 | $211.96 | $227.00 | +1.9% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

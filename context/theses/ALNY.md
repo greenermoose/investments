@@ -60,8 +60,11 @@ ALNY currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $227.13 | $279.44 | +23.0% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $218.86 | $266.51 | +21.8% | BUY |
+| Derek Archila | Wells Fargo & Company | 2026-08-14 | $224.60 | $256.00 | +14.7% | BUY |
+| Danielle Brill | Truist Financial | 2026-08-04 | $224.60 | $315.00 | +45.8% | BUY |
+| Eric Joseph | Citigroup | 2026-08-03 | $224.60 | $340.00 | +57.0% | BUY |
+| Martin Auster | Raymond James Financial | 2026-08-03 | $224.60 | $420.00 | +104.4% | BUY |
+| Eliana Merle | Barclays | 2026-08-03 | $224.60 | $450.00 | +119.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

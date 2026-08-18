@@ -60,10 +60,11 @@ MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $63.74 | $76.81 | +20.5% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $63.01 | $68.48 | +8.7% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $62.55 | $73.52 | +17.5% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $64.04 | $71.56 | +11.7% | BUY |
+| Andrew Lazar | Barclays | 2026-07-30 | $62.18 | $70.00 | +7.7% | OVERWEIGHT |
+| Jefferies Financial Group Research Team | Jefferies Financial Group | 2026-07-29 | $62.18 | $73.00 | +16.8% | BUY |
+| Max Gumport | BNP Paribas Exane | 2026-07-29 | $62.18 | $70.00 | +8.2% | OUTPERFORM |
+| Thomas Palmer | JPMorgan Chase & Co. | 2026-07-29 | $62.18 | $72.00 | +10.5% | OVERWEIGHT |
+| Robert Moskow | TD Cowen | 2026-07-29 | $62.18 | $70.00 | +7.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

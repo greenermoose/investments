@@ -60,9 +60,11 @@ GOOGL currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $178.20 | $225.00 | +26.3% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $176.50 | $220.00 | +24.6% | BUY |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $173.80 | $215.00 | +23.7% | BUY |
+| Gil Luria | DA Davidson | 2026-07-23 | $344.00 | $350.00 | +9.4% | HOLD |
+| Brian Pitz | BMO Capital Markets | 2026-07-23 | $344.00 | $465.00 | +46.5% | OUTPERFORM |
+| Rohit Kulkarni | Roth Capital | 2026-07-23 | $344.00 | $440.00 | +28.6% | BUY |
+| Youssef Squali | Truist Financial | 2026-07-23 | $344.00 | $420.00 | +30.7% | BUY |
+| Deepak Mathivanan | Cantor Fitzgerald | 2026-07-23 | $344.00 | $420.00 | +22.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

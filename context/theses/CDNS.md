@@ -60,9 +60,11 @@ CDNS currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $328.89 | $403.60 | +22.7% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $322.77 | $409.29 | +26.8% | BUY |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $317.24 | $410.30 | +29.3% | BUY |
+| Morgan Stanley Research Team | Morgan Stanley | 2026-07-29 | $323.47 | $400.00 | +16.0% | OVERWEIGHT |
+| Oppenheimer Research Team | Oppenheimer | 2026-07-28 | $323.47 | $300.00 | -11.4% | BUY |
+| Kelsey Chia | Citigroup | 2026-07-28 | $323.47 | $420.00 | +24.0% | BUY |
+| Vivek Arya | Bank of America | 2026-07-28 | $323.47 | $420.00 | +21.4% | BUY |
+| Blair Abernethy | Rosenblatt Securities | 2026-07-28 | $323.47 | $420.00 | +24.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

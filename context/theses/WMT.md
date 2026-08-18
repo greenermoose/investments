@@ -60,10 +60,11 @@ WMT currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $115.22 | $128.78 | +11.8% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $111.84 | $133.20 | +19.1% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $114.05 | $139.21 | +22.1% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $115.52 | $131.89 | +14.2% | BUY |
+| John Heinbockel | Guggenheim | 2026-08-17 | $114.33 | $135.00 | +17.1% | BUY |
+| Michael Baker | DA Davidson | 2026-08-17 | $114.33 | $150.00 | +31.2% | BUY |
+| Steven Shemesh | Royal Bank Of Canada | 2026-08-12 | $114.33 | $137.00 | +19.2% | OUTPERFORM |
+| Zhihan Ma | Sanford C. Bernstein | 2026-07-31 | $114.33 | $142.00 | +27.8% | OUTPERFORM |
+| David Bellinger | Mizuho | 2026-07-27 | $114.33 | $130.00 | +18.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

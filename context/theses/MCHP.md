@@ -60,8 +60,11 @@ MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $80.32 | $88.15 | +9.7% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $81.91 | $82.59 | +0.8% | BUY |
+| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $80.26 | $125.00 | +57.9% | OVERWEIGHT |
+| Pradeep Ramani | UBS Group | 2026-08-07 | $80.26 | $120.00 | +61.4% | BUY |
+| Atif Malik | Citigroup | 2026-08-07 | $80.26 | $95.00 | +12.2% | BUY |
+| William Stein | Truist Financial | 2026-08-07 | $80.26 | $90.00 | +9.3% | HOLD |
+| Kevin Cassidy | Rosenblatt Securities | 2026-08-07 | $80.26 | $120.00 | +61.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

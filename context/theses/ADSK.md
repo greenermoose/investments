@@ -60,9 +60,11 @@ ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $241.07 | $300.29 | +24.6% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $241.76 | $318.96 | +31.9% | BUY |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $243.90 | $302.56 | +24.1% | BUY |
+| Matthew Martino | The Goldman Sachs Group | 2026-08-11 | $241.64 | $260.00 | +1.5% | HOLD |
+| John DiFucci | Guggenheim | 2026-07-22 | $241.64 | $245.00 | +20.4% | BUY |
+| Andrew DeGasperi | BNP Paribas Exane | 2026-06-18 | $241.64 | $295.00 | +52.8% | OUTPERFORM |
+| Blair Abernethy | Rosenblatt Securities | 2026-06-01 | $241.64 | $330.00 | +32.6% | BUY |
+| Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-06-01 | $241.64 | $360.00 | +49.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

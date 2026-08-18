@@ -60,9 +60,11 @@ CCEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $107.31 | $106.39 | -0.9% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $108.03 | $101.66 | -5.9% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $105.07 | $107.99 | +2.8% | BUY |
+| Sanjeet Auija | UBS Group | 2026-08-13 | $105.57 | $107.00 | -0.1% | HOLD |
+| Lauren Lieberman | Barclays | 2026-08-06 | $105.57 | $119.00 | +9.6% | OVERWEIGHT |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-05 | $105.57 | $106.00 | -2.4% | BUY |
+| Chris Carey | Wells Fargo & Company | 2026-08-03 | $105.57 | $120.00 | +8.6% | OVERWEIGHT |
+| Evercore Research Team | Evercore | 2026-02-18 | $105.57 | $112.00 | +7.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

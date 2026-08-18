@@ -60,10 +60,11 @@ ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $260.70 | $288.80 | +10.8% | BUY |
-| Dan Ives | Wall Street Research | 2026-08-01 | $247.47 | $307.13 | +24.1% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $257.20 | $295.96 | +15.1% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $254.47 | $306.48 | +20.4% | BUY |
+| Keith Weiss | Morgan Stanley | 2026-07-21 | $254.04 | $240.00 | +2.2% | UNDERPERFORM |
+| Bhavtosh Vajpayee | CLSA | 2026-07-20 | $254.04 | $300.00 | +26.4% | OUTPERFORM |
+| Tal Liani | Bank of America | 2026-07-07 | $254.04 | $190.00 | -12.9% | UNDERPERFORM |
+| Stephen Bersey | HSBC | 2026-07-02 | $254.04 | $308.00 | +46.0% | HOLD |
+| Gabriela Borges | The Goldman Sachs Group | 2026-06-12 | $254.04 | $190.00 | -12.9% | SELL |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

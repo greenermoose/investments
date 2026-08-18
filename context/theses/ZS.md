@@ -60,8 +60,11 @@ ZS currently trades at a Price-to-Sales (P/S) multiple of ~11.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $180.25 | $230.37 | +27.8% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $182.37 | $225.55 | +23.7% | BUY |
+| Richard Poland | Wells Fargo & Company | 2026-08-17 | $184.44 | $210.00 | +14.4% | OVERWEIGHT |
+| Shaul Eyal | TD Cowen | 2026-08-17 | $184.44 | $200.00 | +8.9% | BUY |
+| Eric Heath | KeyCorp | 2026-07-16 | $184.44 | $185.00 | +24.8% | OVERWEIGHT |
+| Todd Weller | Stephens | 2026-06-12 | $184.44 | $200.00 | +58.6% | OVERWEIGHT |
+| Wolfe Research Research Team | Wolfe Research | 2026-06-11 | $184.44 | $150.00 | +20.3% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ PANW currently trades at a Price-to-Sales (P/S) multiple of ~33.3x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $380.56 | $442.93 | +16.4% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $370.63 | $499.36 | +34.7% | BUY |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $376.40 | $486.04 | +29.1% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $365.42 | $499.55 | +36.7% | BUY |
+| Michael Turrin | Wells Fargo & Company | 2026-08-17 | $375.76 | $475.00 | +23.6% | OVERWEIGHT |
+| Hamza Fodderwala | Morgan Stanley | 2026-08-17 | $375.76 | $400.00 | +4.1% | BUY |
+| Shaul Eyal | TD Cowen | 2026-08-17 | $375.76 | $400.00 | +5.5% | BUY |
+| Matthew Hedberg | Royal Bank Of Canada | 2026-08-14 | $375.76 | $434.00 | +9.6% | OUTPERFORM |
+| Rustam Kanga | Citizens Jmp | 2026-08-12 | $375.76 | $415.00 | +8.9% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

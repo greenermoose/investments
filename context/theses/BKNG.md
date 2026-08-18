@@ -60,10 +60,11 @@ BKNG currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Patrick Walravens | Wall Street Research | 2026-08-01 | $212.83 | $267.07 | +25.5% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $208.40 | $262.94 | +26.2% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $206.04 | $280.90 | +36.3% | BUY |
-| Dan Ives | Wall Street Research | 2026-08-01 | $204.09 | $256.51 | +25.7% | BUY |
+| John Staszak | Argus | 2026-08-10 | $204.76 | $245.00 | +16.4% | BUY |
+| Susquehanna Research Team | Susquehanna | 2026-08-06 | $204.76 | $240.00 | +15.9% | BUY |
+| Tom White | DA Davidson | 2026-08-06 | $204.76 | $240.00 | +15.9% | BUY |
+| Greg Miller | Truist Financial | 2026-08-05 | $204.76 | $242.00 | +17.4% | BUY |
+| Benjamin Black | Deutsche Bank Aktiengesellschaft | 2026-08-05 | $204.76 | $230.00 | +10.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

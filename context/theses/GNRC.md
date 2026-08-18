@@ -60,9 +60,11 @@ GNRC currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Ng | Wall Street Research | 2026-08-01 | $219.37 | $213.54 | -2.7% | BUY |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $216.88 | $231.98 | +7.0% | BUY |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $218.21 | $204.39 | -6.3% | BUY |
+| Jon Windham | UBS Group | 2026-08-04 | $221.25 | $340.00 | +63.7% | BUY |
+| Chip Moore | Roth Capital | 2026-07-30 | $221.25 | $214.00 | +10.6% | BUY |
+| DA Davidson Research Team | DA Davidson | 2026-07-30 | $221.25 | $333.00 | +72.1% | BUY |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-07-30 | $221.25 | $305.00 | +56.8% | BUY |
+| Stephen Gengaro | Stifel Nicolaus | 2026-07-30 | $221.25 | $285.00 | +45.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $539.21 | $567.62 | +5.3% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $550.10 | $526.41 | -4.3% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $531.04 | $584.05 | +10.0% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $531.39 | $587.97 | +10.6% | BUY |
+| Glen Santangelo | Barclays | 2026-08-11 | $546.09 | $710.00 | +19.2% | OVERWEIGHT |
+| Daniel Grosslight | Citigroup | 2026-08-05 | $546.09 | $670.00 | +13.9% | HOLD |
+| Andrea Alfonso | UBS Group | 2026-08-05 | $546.09 | $670.00 | +14.6% | HOLD |
+| Jonathan Block | Stifel Nicolaus | 2026-03-31 | $546.09 | $675.00 | +21.6% | BUY |
+| David Westenberg | Piper Sandler | 2026-02-09 | $546.09 | $750.00 | +16.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

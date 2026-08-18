@@ -60,8 +60,11 @@ PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $121.29 | $136.64 | +12.7% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $121.78 | $145.71 | +19.7% | BUY |
+| Samad Samana | Jefferies Financial Group | 2026-08-12 | $118.54 | $120.00 | -0.3% | HOLD |
+| Bryan Keane | Citigroup | 2026-07-30 | $118.54 | $150.00 | +22.8% | BUY |
+| Kevin McVeigh | UBS Group | 2026-07-22 | $118.54 | $115.00 | +2.7% | HOLD |
+| Cantor Fitzgerald Research Team | Cantor Fitzgerald | 2026-07-20 | $118.54 | $107.00 | -5.1% | UNDERPERFORM |
+| James Faucette | Morgan Stanley | 2026-06-30 | $118.54 | $109.00 | +9.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

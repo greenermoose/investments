@@ -60,9 +60,11 @@ HD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Ng | Wall Street Research | 2026-08-01 | $325.10 | $374.29 | +15.1% | BUY |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $340.76 | $389.72 | +14.4% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $324.19 | $402.08 | +24.0% | BUY |
+| W. Andrew Carter | Stifel Nicolaus | 2026-08-17 | $337.88 | $340.00 | +0.5% | HOLD |
+| Steven Shemesh | Royal Bank Of Canada | 2026-08-12 | $337.88 | $343.00 | -1.1% | BUY |
+| Zhihan Ma | Sanford C. Bernstein | 2026-08-12 | $337.88 | $344.00 | -0.1% | BUY |
+| Zachary Fadem | Wells Fargo & Company | 2026-08-11 | $337.88 | $400.00 | +14.2% | OVERWEIGHT |
+| Michael Baker | DA Davidson | 2026-07-27 | $337.88 | $377.00 | +11.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

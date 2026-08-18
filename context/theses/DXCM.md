@@ -60,9 +60,11 @@ DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $88.89 | $110.17 | +23.9% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $88.87 | $111.88 | +25.9% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $87.08 | $113.50 | +30.3% | BUY |
+| Steve Silver | Argus | 2026-08-04 | $88.76 | $96.00 | +11.1% | BUY |
+| William Plovanic | Canaccord Genuity Group | 2026-08-03 | $88.76 | $90.00 | +3.6% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $88.76 | $94.00 | +11.5% | BUY |
+| Matt O'Brien | Piper Sandler | 2026-07-31 | $88.76 | $95.00 | +27.4% | OVERWEIGHT |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-07-31 | $88.76 | $105.00 | +24.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

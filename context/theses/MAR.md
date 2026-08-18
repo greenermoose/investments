@@ -60,8 +60,11 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $351.15 | $420.68 | +19.8% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $360.30 | $411.25 | +14.1% | BUY |
+| Ben Chaiken | Mizuho | 2026-08-04 | $356.57 | $374.00 | +8.6% | HOLD |
+| Trey Bowers | Wells Fargo & Company | 2026-08-04 | $356.57 | $425.00 | +22.5% | OVERWEIGHT |
+| Michael Bellisario | Robert W. Baird | 2026-08-04 | $356.57 | $393.00 | +13.3% | HOLD |
+| Brandt Montour | Barclays | 2026-08-04 | $356.57 | $348.00 | +0.3% | BUY |
+| Ari Klein | BMO Capital Markets | 2026-08-04 | $356.57 | $395.00 | +13.9% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

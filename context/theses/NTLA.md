@@ -60,9 +60,11 @@ NTLA currently trades at a Price-to-Sales (P/S) multiple of ~28.3x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $11.63 | $11.56 | -0.6% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $11.84 | $11.80 | -0.3% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $11.95 | $11.20 | -6.3% | BUY |
+| Evercore Research Team | Evercore | 2026-08-07 | $12.09 | $24.00 | +113.5% | OUTPERFORM |
+| Andy Chen | Wolfe Research | 2026-07-15 | $12.09 | $9.00 | -31.0% | UNDERPERFORM |
+| David Nierengarten | Wedbush | 2026-07-10 | $12.09 | $17.00 | +10.1% | HOLD |
+| Whitney Ijem | Canaccord Genuity Group | 2026-06-16 | $12.09 | $49.00 | +258.9% | BUY |
+| New Street Research Research Team | New Street Research | 2026-06-15 | $12.09 | $25.00 | +106.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

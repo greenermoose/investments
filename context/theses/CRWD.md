@@ -60,9 +60,11 @@ CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $215.49 | $266.65 | +23.7% | BUY |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $216.43 | $269.97 | +24.7% | BUY |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $206.37 | $287.51 | +39.3% | BUY |
+| Michael Turrin | Wells Fargo & Company | 2026-08-17 | $213.90 | $230.00 | +6.0% | BUY |
+| Shaul Eyal | TD Cowen | 2026-08-17 | $213.90 | $235.00 | +8.3% | BUY |
+| Matthew Hedberg | Royal Bank Of Canada | 2026-08-14 | $213.90 | $256.00 | +13.5% | OUTPERFORM |
+| Rustam Kanga | Citizens Jmp | 2026-08-12 | $213.90 | $230.00 | +3.5% | OUTPERFORM |
+| Yun Kim | Loop Capital | 2026-07-27 | $213.90 | $230.00 | +27.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

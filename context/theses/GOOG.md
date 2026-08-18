@@ -60,10 +60,11 @@ GOOG currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $331.40 | $417.09 | +25.9% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $341.44 | $410.49 | +20.2% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $340.73 | $420.47 | +23.4% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $339.37 | $445.03 | +31.1% | BUY |
+| HSBC Research Team | HSBC | 2026-08-14 | $341.45 | $515.00 | +49.7% | BUY |
+| Maria Ripps | Canaccord Genuity Group | 2026-07-23 | $341.45 | $450.00 | +40.5% | BUY |
+| Cantor Fitzgerald Research Team | Cantor Fitzgerald | 2026-07-23 | $341.45 | $420.00 | +22.8% | OVERWEIGHT |
+| Barton Crockett | Rosenblatt Securities | 2026-07-23 | $341.45 | $393.00 | +22.7% | BUY |
+| Jason Helfstein | Oppenheimer | 2026-07-23 | $341.45 | $400.00 | +17.0% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

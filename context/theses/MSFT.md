@@ -60,9 +60,11 @@ MSFT currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $442.30 | $530.00 | +19.8% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $438.50 | $520.00 | +18.6% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $435.00 | $500.00 | +14.9% | BUY |
+| Michael Turrin | Wells Fargo & Company | 2026-08-12 | $480.35 | $700.00 | +38.9% | OVERWEIGHT |
+| Mark Moerdler | Sanford C. Bernstein | 2026-08-10 | $480.35 | $660.00 | +29.2% | BUY |
+| Ivan Feinseth | Tigress Financial | 2026-08-05 | $480.35 | $690.00 | +41.0% | BUY |
+| Karl Kierstead | UBS Group | 2026-07-30 | $480.35 | $525.00 | +15.3% | BUY |
+| Patrick Colville | Scotiabank | 2026-07-30 | $480.35 | $510.00 | +13.4% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

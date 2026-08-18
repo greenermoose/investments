@@ -60,8 +60,11 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~70.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joe Spak | Wall Street Research | 2026-08-01 | $94.61 | $89.95 | -4.9% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $94.22 | $90.25 | -4.2% | BUY |
+| Dan Dolev | Mizuho | 2026-08-10 | $97.68 | $165.00 | +69.7% | BUY |
+| Mike Colonnese | HC Wainwright | 2026-08-03 | $97.68 | $325.00 | +241.6% | BUY |
+| Nik Cremo | Barclays | 2026-08-03 | $97.68 | $125.00 | +34.0% | OVERWEIGHT |
+| Fedor Shabalin | B. Riley Financial | 2026-08-03 | $97.68 | $155.00 | +63.2% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $97.68 | $186.00 | +99.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

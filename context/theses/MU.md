@@ -60,8 +60,11 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $1009.06 | $1348.98 | +33.7% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $1007.60 | $1205.64 | +19.7% | BUY |
+| New Street Research Research Team | New Street Research | 2026-08-14 | $1011.75 | $1250.00 | +31.6% | HOLD |
+| Atif Malik | Citigroup | 2026-08-07 | $1011.75 | $1150.00 | +31.6% | BUY |
+| Gil Luria | DA Davidson | 2026-06-25 | $1011.75 | $2000.00 | +69.8% | BUY |
+| N. Quinn | Needham & Company LLC | 2026-06-25 | $1011.75 | $1650.00 | +44.6% | BUY |
+| Chris Caso | Wolfe Research | 2026-06-25 | $1011.75 | $1500.00 | +44.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

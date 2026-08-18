@@ -60,9 +60,11 @@ BETA currently trades at a Price-to-Sales (P/S) multiple of ~169.8x on trailing 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $25.03 | $25.02 | -0.0% | BUY |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $23.90 | $24.66 | +3.2% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $23.77 | $26.21 | +10.3% | BUY |
+| Andres Sheppard | Cantor Fitzgerald | 2026-08-13 | $25.60 | $31.00 | +30.6% | OVERWEIGHT |
+| Andre Madrid | BTIG Research | 2026-08-13 | $25.60 | $33.00 | +39.1% | BUY |
+| Chris Pierce | Needham & Company LLC | 2026-08-12 | $25.60 | $34.00 | +42.4% | BUY |
+| Anthony Valentini | The Goldman Sachs Group | 2026-04-20 | $25.60 | $34.00 | +88.0% | BUY |
+| Sheila Kahyaoglu | Jefferies Financial Group | 2026-03-10 | $25.60 | $29.00 | +39.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $38.40 | $39.21 | +2.1% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $40.14 | $36.74 | -8.5% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $39.90 | $36.57 | -8.3% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $38.43 | $36.37 | -5.4% | BUY |
+| Matthew Boss | JPMorgan Chase & Co. | 2026-08-04 | $39.09 | $40.00 | -6.2% | HOLD |
+| Nick Anderson | Sanford C. Bernstein | 2026-07-29 | $39.09 | $68.00 | +58.1% | OUTPERFORM |
+| Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-07-17 | $39.09 | $37.00 | -13.9% | SELL |
+| Krisztina Katai | Deutsche Bank Aktiengesellschaft | 2026-07-17 | $39.09 | $45.00 | +4.7% | HOLD |
+| Nick Anderson | Berenberg Bank | 2026-07-03 | $39.09 | $49.00 | +11.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

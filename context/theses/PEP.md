@@ -60,10 +60,11 @@ PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $134.03 | $159.15 | +18.7% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $140.73 | $165.27 | +17.4% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $137.02 | $167.81 | +22.5% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $137.73 | $156.00 | +13.3% | BUY |
+| Lauren Lieberman | Barclays | 2026-07-21 | $138.24 | $142.00 | +4.8% | BUY |
+| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $138.24 | $155.00 | +12.8% | BUY |
+| Kaumil Gajrawala | Jefferies Financial Group | 2026-07-10 | $138.24 | $152.00 | +10.9% | HOLD |
+| Dara Mohsenian | Morgan Stanley | 2026-07-10 | $138.24 | $160.00 | +16.1% | BUY |
+| Filippo Falorni | Citigroup | 2026-07-10 | $138.24 | $145.00 | +5.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

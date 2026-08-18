@@ -60,10 +60,11 @@ JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $259.42 | $286.80 | +10.6% | BUY |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $258.75 | $310.80 | +20.1% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $260.71 | $304.99 | +17.0% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $253.88 | $296.44 | +16.8% | BUY |
+| Vamil Divan | Guggenheim | 2026-08-06 | $262.37 | $287.00 | +11.3% | BUY |
+| Jayson Bedford | Raymond James Financial | 2026-08-03 | $262.37 | $280.00 | +10.0% | BUY |
+| Larry Biegelsen | Wells Fargo & Company | 2026-08-03 | $262.37 | $282.00 | +11.8% | OVERWEIGHT |
+| David Toung | Argus | 2026-07-29 | $262.37 | $300.00 | +11.7% | BUY |
+| Scotiabank Research Team | Scotiabank | 2026-07-16 | $262.37 | $305.00 | +22.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $269.14 | $314.03 | +16.7% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $271.70 | $323.50 | +19.1% | BUY |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $267.21 | $300.72 | +12.5% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $277.93 | $326.42 | +17.4% | BUY |
+| John Eade | Argus | 2026-08-11 | $278.20 | $325.00 | +20.2% | BUY |
+| James Thalacker | BMO Capital Markets | 2026-08-07 | $278.20 | $379.00 | +43.0% | BUY |
+| Ross Fowler | UBS Group | 2026-07-28 | $278.20 | $380.00 | +46.2% | BUY |
+| Michael Lonegan | Barclays | 2026-07-28 | $278.20 | $324.00 | +20.0% | OVERWEIGHT |
+| Shahriar Pourreza | Wells Fargo & Company | 2026-07-27 | $278.20 | $362.00 | +31.9% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

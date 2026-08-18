@@ -60,8 +60,11 @@ MRK currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $131.28 | $156.39 | +19.1% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $138.50 | $160.79 | +16.1% | BUY |
+| Daiwa Securities Group Research Team | Daiwa Securities Group | 2026-08-12 | $135.97 | $143.00 | +9.7% | OUTPERFORM |
+| Jasper Hellweg | Argus | 2026-08-11 | $135.97 | $145.00 | +10.9% | BUY |
+| Vamil Divan | Guggenheim | 2026-08-05 | $135.97 | $146.00 | +13.8% | BUY |
+| Emily Field | Barclays | 2026-07-29 | $135.97 | $150.00 | +13.8% | OVERWEIGHT |
+| Chris Schott | JPMorgan Chase & Co. | 2026-07-13 | $135.97 | $140.00 | +13.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,10 +60,11 @@ MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $179.42 | $167.24 | -6.8% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $184.23 | $177.79 | -3.5% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $176.36 | $171.13 | -3.0% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $183.07 | $169.95 | -7.2% | BUY |
+| Brett Linzey | Mizuho | 2026-07-23 | $180.21 | $180.00 | +5.9% | HOLD |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-22 | $180.21 | $192.00 | +10.4% | HOLD |
+| Amit Mehrotra | UBS Group | 2026-07-22 | $180.21 | $218.00 | +27.3% | BUY |
+| Varun Govindaraj | Sanford C. Bernstein | 2026-07-22 | $180.21 | $145.00 | -15.3% | UNDERPERFORM |
+| Andrew Kaplowitz | Citigroup | 2026-07-22 | $180.21 | $183.00 | +6.9% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

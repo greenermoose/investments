@@ -60,10 +60,11 @@ ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $3.68 | $3.78 | +2.7% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $3.57 | $3.82 | +7.0% | BUY |
-| Patrick Walravens | Wall Street Research | 2026-08-01 | $3.70 | $3.76 | +1.6% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $3.64 | $3.67 | +0.8% | BUY |
+| Bank of America Research Team | Bank of America | 2026-08-17 | $3.60 | $5.00 | +38.9% | HOLD |
+| George Gianarikas | Canaccord Genuity Group | 2026-08-14 | $3.60 | $10.00 | +126.5% | BUY |
+| Anthony Stoss | Craig Hallum | 2026-08-13 | $3.60 | $7.00 | +56.4% | BUY |
+| Ryan Pfingst | B. Riley Financial | 2026-08-13 | $3.60 | $9.00 | +90.3% | BUY |
+| Derek Soderberg | Cantor Fitzgerald | 2026-08-13 | $3.60 | $25.00 | +428.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

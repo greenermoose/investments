@@ -60,10 +60,11 @@ VZ currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $48.06 | $52.16 | +8.5% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $47.10 | $48.78 | +3.6% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $47.88 | $48.38 | +1.0% | BUY |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $47.38 | $46.51 | -1.8% | BUY |
+| Gregory Williams | TD Cowen | 2026-07-27 | $48.06 | $56.00 | +18.5% | BUY |
+| Benjamin Swinburne | Morgan Stanley | 2026-07-27 | $48.06 | $52.00 | +9.9% | BUY |
+| Jonathan Atkin | Royal Bank Of Canada | 2026-07-27 | $48.06 | $47.00 | -0.3% | BUY |
+| Maher Yaghi | Scotiabank | 2026-07-27 | $48.06 | $52.50 | +11.5% | OUTPERFORM |
+| Steven Cahall | Wells Fargo & Company | 2026-07-27 | $48.06 | $47.00 | +1.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ APP currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $320.27 | $404.06 | +26.2% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $318.85 | $383.33 | +20.2% | BUY |
+| William Blair Research Team | William Blair | 2026-08-17 | $311.98 | $440.00 | +40.6% | BUY |
+| Mike Hickey | Benchmark | 2026-08-17 | $311.98 | $440.00 | +39.5% | BUY |
+| Clark Lampen | BTIG Research | 2026-08-12 | $311.98 | $408.00 | +28.0% | BUY |
+| Omar Dessouky | Bank of America | 2026-08-11 | $311.98 | $400.00 | +18.0% | HOLD |
+| Jason Bazinet | Citigroup | 2026-08-07 | $311.98 | $650.00 | +87.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

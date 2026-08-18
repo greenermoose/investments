@@ -60,10 +60,11 @@ COST currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| David Vogt | Wall Street Research | 2026-08-01 | $943.05 | $1064.98 | +12.9% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $931.75 | $1134.23 | +21.7% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $929.57 | $1089.12 | +17.2% | BUY |
-| Patrick Walravens | Wall Street Research | 2026-08-01 | $931.43 | $1073.07 | +15.2% | BUY |
+| Krisztina Katai | Deutsche Bank Aktiengesellschaft | 2026-08-06 | $953.50 | $1120.00 | +17.9% | BUY |
+| Royal Bank Of Canada Research Team | Royal Bank Of Canada | 2026-07-13 | $953.50 | $1000.00 | +9.1% | BUY |
+| Christopher Horvers | JPMorgan Chase & Co. | 2026-07-09 | $953.50 | $1100.00 | +15.4% | OVERWEIGHT |
+| Steven Zaccone | Citigroup | 2026-06-18 | $953.50 | $1020.00 | +7.5% | HOLD |
+| Michael Baker | DA Davidson | 2026-06-04 | $953.50 | $1000.00 | +1.5% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

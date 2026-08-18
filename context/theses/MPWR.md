@@ -60,9 +60,11 @@ MPWR currently trades at a Price-to-Sales (P/S) multiple of ~24.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $1414.48 | $1892.35 | +33.8% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $1455.55 | $1928.68 | +32.5% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $1441.03 | $1811.50 | +25.7% | BUY |
+| N. Quinn | Needham & Company LLC | 2026-07-31 | $1415.99 | $2000.00 | +51.8% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-07-31 | $1415.99 | $1800.00 | +24.1% | OVERWEIGHT |
+| William Stein | Truist Financial | 2026-07-31 | $1415.99 | $1889.00 | +24.9% | BUY |
+| Kevin Cassidy | Rosenblatt Securities | 2026-07-31 | $1415.99 | $1575.00 | +19.5% | HOLD |
+| John Vinh | KeyCorp | 2026-07-31 | $1415.99 | $2100.00 | +59.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

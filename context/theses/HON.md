@@ -60,9 +60,11 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $223.77 | $257.53 | +15.1% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $228.45 | $271.64 | +18.9% | BUY |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $232.46 | $254.93 | +9.7% | BUY |
+| Deane Dray | Royal Bank Of Canada | 2026-08-18 | $229.45 | $293.00 | +27.7% | OUTPERFORM |
+| Stephen Volkmann | Jefferies Financial Group | 2026-08-17 | $229.45 | $255.00 | +9.7% | HOLD |
+| Chigusa Katoku | JPMorgan Chase & Co. | 2026-08-14 | $229.45 | $255.00 | +8.9% | OVERWEIGHT |
+| Andrew Obin | Bank of America | 2026-07-28 | $229.45 | $265.00 | +7.8% | HOLD |
+| Brett Linzey | Mizuho | 2026-07-27 | $229.45 | $265.00 | +8.7% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

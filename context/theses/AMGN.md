@@ -60,10 +60,11 @@ AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $424.40 | $504.53 | +18.9% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $408.07 | $508.40 | +24.6% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $422.78 | $476.66 | +12.7% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $401.87 | $451.53 | +12.4% | BUY |
+| Carter Gould | Cantor Fitzgerald | 2026-08-18 | $419.38 | $400.00 | -4.6% | HOLD |
+| Salim Syed | Mizuho | 2026-08-18 | $419.38 | $352.00 | -16.1% | HOLD |
+| Emily Field | Barclays | 2026-08-14 | $419.38 | $380.00 | -9.1% | BUY |
+| Vamil Divan | Guggenheim | 2026-08-10 | $419.38 | $388.00 | -5.6% | HOLD |
+| Geoff Meacham | Citigroup | 2026-08-07 | $419.38 | $405.00 | +0.0% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

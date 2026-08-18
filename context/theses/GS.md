@@ -60,9 +60,11 @@ GS currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $1057.98 | $1181.93 | +11.7% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $1019.15 | $1249.05 | +22.6% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $1049.84 | $1177.96 | +12.2% | BUY |
+| Erika Najarian | UBS Group | 2026-08-03 | $1051.31 | $1150.00 | +13.1% | HOLD |
+| Keith Horowitz | Citigroup | 2026-07-16 | $1051.31 | $1200.00 | +4.2% | HOLD |
+| Ebrahim Poonawala | Bank of America | 2026-07-16 | $1051.31 | $1300.00 | +19.1% | BUY |
+| Brennan Hawken | BMO Capital Markets | 2026-07-15 | $1051.31 | $1190.00 | +3.9% | BUY |
+| Manan Gosalia | Morgan Stanley | 2026-07-15 | $1051.31 | $1145.00 | +0.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

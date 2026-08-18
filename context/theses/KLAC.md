@@ -60,10 +60,11 @@ KLAC currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brent Thill | Wall Street Research | 2026-08-01 | $197.04 | $233.22 | +18.4% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $203.48 | $232.39 | +14.2% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $197.44 | $232.84 | +17.9% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $204.35 | $234.46 | +14.7% | BUY |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-07-29 | $205.76 | $180.00 | +0.9% | BUY |
+| Mehdi Hosseini | Susquehanna | 2026-07-29 | $205.76 | $215.00 | +18.7% | HOLD |
+| Brian Chin | Stifel Nicolaus | 2026-07-29 | $205.76 | $250.00 | +38.0% | BUY |
+| Joseph Quatrochi | Wells Fargo & Company | 2026-07-29 | $205.76 | $245.00 | +28.4% | OVERWEIGHT |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-07-29 | $205.76 | $225.00 | +17.9% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

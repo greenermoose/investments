@@ -60,10 +60,11 @@ TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $367.30 | $430.30 | +17.2% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $363.36 | $427.58 | +17.7% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $360.63 | $430.84 | +19.5% | BUY |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $365.97 | $403.45 | +10.2% | BUY |
+| Yaron Kinar | Mizuho | 2026-07-24 | $364.51 | $343.00 | -11.4% | HOLD |
+| Harry Fong | Roth Capital | 2026-07-21 | $364.51 | $425.00 | +15.4% | BUY |
+| Alex Scott | Barclays | 2026-07-21 | $364.51 | $318.00 | -13.6% | UNDERPERFORM |
+| Michael Zaremski | BMO Capital Markets | 2026-07-21 | $364.51 | $379.00 | +2.9% | OUTPERFORM |
+| Bob Huang | Morgan Stanley | 2026-07-21 | $364.51 | $330.00 | -10.4% | UNDERPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,9 +60,11 @@ WBD currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brent Thill | Wall Street Research | 2026-08-01 | $27.81 | $28.59 | +2.8% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $28.03 | $28.52 | +1.7% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $27.04 | $30.11 | +11.4% | BUY |
+| John Hodulik | UBS Group | 2026-05-07 | $27.93 | $31.00 | +14.2% | HOLD |
+| Steven Cahall | Wells Fargo & Company | 2026-03-09 | $27.93 | $31.00 | +11.1% | BUY |
+| Joseph Bonner | Argus | 2026-03-03 | $27.93 | $31.00 | +9.6% | BUY |
+| Doug Creutz | TD Cowen | 2026-02-27 | $27.93 | $26.00 | -8.4% | HOLD |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-02-27 | $27.93 | $31.00 | +9.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

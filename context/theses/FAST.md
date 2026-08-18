@@ -60,9 +60,11 @@ FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $49.94 | $57.35 | +14.8% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $50.44 | $58.68 | +16.3% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $51.42 | $57.91 | +12.6% | BUY |
+| David Manthey | Robert W. Baird | 2026-08-07 | $51.23 | $54.00 | +5.0% | BUY |
+| Chris Snyder | Morgan Stanley | 2026-07-16 | $51.23 | $52.00 | +12.6% | BUY |
+| Guy Hardwick | Barclays | 2026-07-16 | $51.23 | $46.00 | +1.4% | BUY |
+| Chris Dankert | DA Davidson | 2026-07-15 | $51.23 | $46.00 | +1.8% | HOLD |
+| William Blunt | Rothschild & Co Redburn | 2026-07-13 | $51.23 | $55.00 | +18.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

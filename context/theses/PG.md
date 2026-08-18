@@ -60,10 +60,11 @@ PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $143.11 | $165.91 | +15.9% | BUY |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $140.25 | $165.56 | +18.0% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $145.75 | $157.95 | +8.4% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $138.00 | $172.19 | +24.8% | BUY |
+| Diego Serrano | HSBC | 2026-07-30 | $143.12 | $149.00 | +1.9% | HOLD |
+| Filippo Falorni | Citigroup | 2026-07-30 | $143.12 | $170.00 | +18.8% | BUY |
+| Lauren Lieberman | Barclays | 2026-07-21 | $143.12 | $152.00 | +1.9% | BUY |
+| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-16 | $143.12 | $162.00 | +7.5% | OVERWEIGHT |
+| Peter Galbo | Bank of America | 2026-07-10 | $143.12 | $166.00 | +13.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

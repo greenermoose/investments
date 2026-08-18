@@ -60,8 +60,11 @@ KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joe Spak | Wall Street Research | 2026-08-01 | $85.37 | $106.46 | +24.7% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $85.82 | $96.31 | +12.2% | BUY |
+| Lauren Lieberman | Barclays | 2026-07-30 | $86.98 | $93.00 | +4.1% | OVERWEIGHT |
+| Taylor Conrad | Argus | 2026-07-30 | $86.98 | $97.00 | +10.4% | BUY |
+| Nik Modi | Royal Bank Of Canada | 2026-07-29 | $86.98 | $96.00 | +6.5% | OUTPERFORM |
+| Peter Grom | UBS Group | 2026-07-29 | $86.98 | $104.00 | +15.4% | BUY |
+| Mike Lavery | Piper Sandler | 2026-07-29 | $86.98 | $95.00 | +7.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

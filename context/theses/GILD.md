@@ -60,10 +60,11 @@ GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $141.08 | $152.94 | +8.4% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $135.59 | $155.12 | +14.4% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $140.99 | $163.34 | +15.9% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $137.15 | $156.88 | +14.4% | BUY |
+| Brian Abrahams | Royal Bank Of Canada | 2026-08-05 | $138.92 | $123.00 | -5.9% | BUY |
+| Carter Gould | Cantor Fitzgerald | 2026-08-05 | $138.92 | $155.00 | +14.6% | OVERWEIGHT |
+| Joseph Stringer | Needham & Company LLC | 2026-08-05 | $138.92 | $170.00 | +25.7% | BUY |
+| Emily Field | Barclays | 2026-07-29 | $138.92 | $145.00 | +8.0% | BUY |
+| Matthew Harrison | Morgan Stanley | 2026-07-27 | $138.92 | $165.00 | +25.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

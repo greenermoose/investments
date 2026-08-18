@@ -60,8 +60,11 @@ CTSH currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $58.48 | $60.41 | +3.3% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $55.47 | $62.97 | +13.5% | BUY |
+| Dan Dolev | Mizuho | 2026-08-06 | $56.61 | $64.00 | +17.2% | BUY |
+| James Friedman | Susquehanna | 2026-07-30 | $56.61 | $82.00 | +54.2% | BUY |
+| David Koning | Robert W. Baird | 2026-07-30 | $56.61 | $68.00 | +27.8% | BUY |
+| James Faucette | Morgan Stanley | 2026-07-30 | $56.61 | $51.00 | -3.1% | BUY |
+| Bryan Keane | Citigroup | 2026-07-30 | $56.61 | $60.00 | +7.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

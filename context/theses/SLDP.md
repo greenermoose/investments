@@ -60,9 +60,10 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $2.24 | $2.52 | +12.5% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $2.29 | $2.22 | -3.1% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $2.32 | $2.19 | -5.6% | BUY |
+| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.35 | $6.75 | +141.1% | BUY |
+| Chris Pierce | Needham & Company LLC | 2026-05-06 | $2.35 | $7.00 | +99.4% | BUY |
+| Amit Dayal | HC Wainwright | 2026-03-16 | $2.35 | $7.00 | +122.2% | BUY |
+| Wolfe Research Research Team | Wolfe Research | 2024-09-05 | $2.35 | $1.00 | -24.2% | UNDERPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

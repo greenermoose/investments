@@ -60,8 +60,11 @@ CPRT currently trades at a Price-to-Sales (P/S) multiple of ~6.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brad Sills | Wall Street Research | 2026-08-01 | $32.11 | $34.88 | +8.6% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $31.79 | $36.46 | +14.7% | BUY |
+| John Babcock | Barclays | 2026-07-21 | $31.70 | $26.00 | -3.8% | UNDERPERFORM |
+| Jefferies Financial Group Research Team | Jefferies Financial Group | 2026-05-22 | $31.70 | $45.00 | +33.2% | BUY |
+| Jash Patwa | JPMorgan Chase & Co. | 2026-02-23 | $31.70 | $34.00 | -4.3% | HOLD |
+| Craig Kennison | Robert W. Baird | 2026-02-20 | $31.70 | $48.00 | +34.0% | OUTPERFORM |
+| Jeff Lick | Stephens | 2025-09-05 | $31.70 | $46.00 | -4.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $518.87 | $609.57 | +17.5% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $519.82 | $648.35 | +24.7% | BUY |
+| Jim Kelleher | Argus | 2026-08-06 | $506.00 | $625.00 | +27.1% | BUY |
+| Kevin Cassidy | Rosenblatt Securities | 2026-08-06 | $506.00 | $700.00 | +45.2% | BUY |
+| Gil Luria | DA Davidson | 2026-08-05 | $506.00 | $550.00 | +12.4% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $506.00 | $700.00 | +35.0% | OVERWEIGHT |
+| Joseph Moore | Morgan Stanley | 2026-08-05 | $506.00 | $465.00 | -10.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

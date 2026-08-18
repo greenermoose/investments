@@ -60,8 +60,11 @@ WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $191.62 | $236.68 | +23.5% | BUY |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $188.43 | $258.83 | +37.4% | BUY |
+| Karl Keirstead | UBS Group | 2026-08-14 | $191.18 | $220.00 | +6.6% | HOLD |
+| Lake Street Capital Research Team | Lake Street Capital | 2026-08-14 | $191.18 | $205.00 | -0.7% | BUY |
+| Brent Thill | Jefferies Financial Group | 2026-08-14 | $191.18 | $205.00 | -0.7% | HOLD |
+| Billy Fitzsimmons | Piper Sandler | 2026-08-14 | $191.18 | $145.00 | -29.8% | HOLD |
+| Mark Marcon | Robert W. Baird | 2026-08-14 | $191.18 | $215.00 | +4.1% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

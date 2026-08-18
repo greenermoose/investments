@@ -60,9 +60,11 @@ AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| David Vogt | Wall Street Research | 2026-08-01 | $533.04 | $607.19 | +13.9% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $518.23 | $581.63 | +12.2% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $516.66 | $571.14 | +10.5% | BUY |
+| Timothy Arcuri | UBS Group | 2026-08-14 | $535.31 | $675.00 | +33.5% | BUY |
+| Christian Schwab | Craig Hallum | 2026-08-14 | $535.31 | $585.00 | +15.0% | BUY |
+| Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-08-14 | $535.31 | $605.00 | +18.2% | BUY |
+| Shane Brett | Morgan Stanley | 2026-08-14 | $535.31 | $642.00 | +26.2% | BUY |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-08-14 | $535.31 | $700.00 | +30.9% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

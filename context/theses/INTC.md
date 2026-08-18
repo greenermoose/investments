@@ -60,9 +60,11 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $101.10 | $107.06 | +5.9% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $103.72 | $96.14 | -7.3% | BUY |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $102.37 | $97.58 | -4.7% | BUY |
+| Timothy Arcuri | UBS Group | 2026-08-12 | $103.49 | $112.00 | +14.6% | HOLD |
+| Vivek Arya | Bank of America | 2026-08-12 | $103.49 | $145.00 | +39.9% | BUY |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-07-27 | $103.49 | $110.00 | +22.4% | BUY |
+| Gil Luria | DA Davidson | 2026-07-24 | $103.49 | $100.00 | +3.1% | HOLD |
+| Tristan Gerra | Robert W. Baird | 2026-07-24 | $103.49 | $125.00 | +29.8% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

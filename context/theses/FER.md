@@ -60,10 +60,8 @@ FER currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| John Vinh | Wall Street Research | 2026-08-01 | $62.67 | $80.68 | +28.7% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $65.25 | $84.15 | +29.0% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $63.35 | $75.93 | +19.9% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $62.72 | $76.62 | +22.2% | BUY |
+| Marc Ip Tat Kuen | Citigroup | 2026-05-27 | $63.92 | $70.00 | +0.9% | HOLD |
+| Graham Hunt | Jefferies Financial Group | 2026-03-09 | $63.92 | $70.93 | +7.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

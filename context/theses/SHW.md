@@ -60,10 +60,11 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Ng | Wall Street Research | 2026-08-01 | $359.01 | $475.74 | +32.5% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $343.45 | $459.09 | +33.7% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $346.45 | $472.83 | +36.5% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $345.16 | $451.20 | +30.7% | BUY |
+| Steven Forbes | Guggenheim | 2026-08-03 | $349.97 | $400.00 | +17.2% | BUY |
+| Duffy Fischer | The Goldman Sachs Group | 2026-07-29 | $349.97 | $420.00 | +22.0% | BUY |
+| John McNulty | BMO Capital Markets | 2026-07-29 | $349.97 | $405.00 | +17.6% | OUTPERFORM |
+| Joshua Spector | UBS Group | 2026-07-29 | $349.97 | $390.00 | +13.2% | HOLD |
+| Michael Sison | Wells Fargo & Company | 2026-07-29 | $349.97 | $360.00 | +1.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

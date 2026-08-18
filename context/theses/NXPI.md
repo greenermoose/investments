@@ -60,9 +60,11 @@ NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $233.63 | $295.65 | +26.5% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $232.24 | $287.07 | +23.6% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $232.65 | $311.65 | +34.0% | BUY |
+| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $232.72 | $400.00 | +70.4% | OVERWEIGHT |
+| Francois-Xavier Bouvignies | UBS Group | 2026-08-03 | $232.72 | $270.00 | +17.8% | HOLD |
+| Tore Svanberg | Stifel Nicolaus | 2026-07-29 | $232.72 | $282.00 | +16.7% | BUY |
+| Vijay Rakesh | Mizuho | 2026-07-29 | $232.72 | $190.00 | -23.5% | UNDERPERFORM |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-07-29 | $232.72 | $290.00 | +11.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

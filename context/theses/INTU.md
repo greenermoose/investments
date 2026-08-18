@@ -60,8 +60,11 @@ INTU currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $327.91 | $435.87 | +32.9% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $339.82 | $421.85 | +24.1% | BUY |
+| Siti Panigrahi | Mizuho | 2026-08-17 | $335.60 | $430.00 | +24.4% | OUTPERFORM |
+| Steven Enders | Citigroup | 2026-08-13 | $335.60 | $457.00 | +36.5% | BUY |
+| Jared Levine | TD Cowen | 2026-08-11 | $335.60 | $328.00 | -1.9% | HOLD |
+| Arvind Ramnani | Truist Financial | 2026-08-03 | $335.60 | $350.00 | +9.9% | HOLD |
+| Keith Weiss | Morgan Stanley | 2026-07-21 | $335.60 | $335.00 | +14.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

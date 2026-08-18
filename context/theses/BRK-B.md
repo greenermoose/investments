@@ -60,8 +60,9 @@ BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Meredith | Wall Street Research | 2026-08-01 | $448.20 | $520.00 | +16.0% | BUY |
-| James Shanahan | Wall Street Research | 2026-08-01 | $444.00 | $505.00 | +13.7% | BUY |
+| Brian Meredith | UBS Group | 2026-08-10 | $498.23 | $604.00 | +14.5% | BUY |
+| TD Cowen Research Team | TD Cowen | 2025-11-11 | $498.23 | $481.00 | -3.2% | HOLD |
+| Kevin Heal | Argus | 2025-03-26 | $498.23 | $575.00 | +7.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

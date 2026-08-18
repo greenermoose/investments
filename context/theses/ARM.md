@@ -60,9 +60,11 @@ ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $267.82 | $358.97 | +34.0% | BUY |
-| Peter Levine | Wall Street Research | 2026-08-01 | $267.93 | $362.51 | +35.3% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $270.11 | $353.44 | +30.9% | BUY |
+| Kevin Cassidy | Rosenblatt Securities | 2026-07-31 | $271.43 | $250.00 | +2.9% | BUY |
+| Pierre Ferragu | New Street Research | 2026-07-30 | $271.43 | $260.00 | +9.1% | HOLD |
+| Timothy Arcuri | UBS Group | 2026-07-30 | $271.43 | $320.00 | +42.3% | BUY |
+| John DiFucci | Guggenheim | 2026-07-30 | $271.43 | $255.00 | +13.4% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-07-30 | $271.43 | $280.00 | +24.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,9 +60,11 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $530.98 | $550.91 | +3.8% | BUY |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $525.66 | $596.80 | +13.5% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $552.30 | $536.99 | -2.8% | BUY |
+| Asiya Merchant | Citigroup | 2026-08-07 | $536.01 | $740.00 | +63.9% | BUY |
+| Erik Woodring | Morgan Stanley | 2026-08-06 | $536.01 | $676.00 | +46.7% | OVERWEIGHT |
+| Tristan Gerra | Robert W. Baird | 2026-08-06 | $536.01 | $630.00 | +34.4% | BUY |
+| Krish Sankar | TD Cowen | 2026-08-06 | $536.01 | $540.00 | +18.3% | BUY |
+| Vijay Rakesh | Mizuho | 2026-08-06 | $536.01 | $590.00 | +29.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

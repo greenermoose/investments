@@ -60,9 +60,11 @@ TSLA currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $342.57 | $442.63 | +29.2% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $342.76 | $443.93 | +29.5% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $327.04 | $420.75 | +28.7% | BUY |
+| Stephen Gengaro | Stifel Nicolaus | 2026-08-03 | $339.30 | $491.00 | +57.8% | BUY |
+| Tom Narayan | Royal Bank Of Canada | 2026-07-28 | $339.30 | $500.00 | +61.7% | OUTPERFORM |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-27 | $339.30 | $420.00 | +36.1% | BUY |
+| Ben Kallo | Robert W. Baird | 2026-07-27 | $339.30 | $475.00 | +51.4% | BUY |
+| Alexander Potter | Piper Sandler | 2026-07-24 | $339.30 | $450.00 | +40.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

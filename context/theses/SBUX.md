@@ -60,9 +60,11 @@ SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $107.32 | $140.70 | +31.1% | BUY |
-| Barton Crockett | Wall Street Research | 2026-08-01 | $109.16 | $134.44 | +23.2% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $110.22 | $138.40 | +25.6% | BUY |
+| Melius Research Research Team | Melius Research | 2026-08-03 | $107.92 | $110.00 | +4.7% | BUY |
+| Peter Saleh | BTIG Research | 2026-07-31 | $107.92 | $115.00 | +8.6% | BUY |
+| Logan Reich | Royal Bank Of Canada | 2026-07-30 | $107.92 | $115.00 | +7.0% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $107.92 | $126.00 | +17.2% | BUY |
+| David Tarantino | Robert W. Baird | 2026-07-30 | $107.92 | $124.00 | +15.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

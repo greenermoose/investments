@@ -60,8 +60,11 @@ PDD currently trades at a Price-to-Sales (P/S) multiple of ~1.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $85.68 | $108.53 | +26.7% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $85.89 | $102.94 | +19.9% | BUY |
+| Daiwa Securities Group Research Team | Daiwa Securities Group | 2026-06-23 | $86.94 | $80.00 | +5.3% | HOLD |
+| Colin Liu | BNP Paribas Exane | 2026-06-15 | $86.94 | $89.00 | +6.5% | UNDERPERFORM |
+| Jiong Shao | Barclays | 2026-05-28 | $86.94 | $89.00 | +2.8% | OVERWEIGHT |
+| Fawne Jiang | Benchmark | 2026-05-28 | $86.94 | $127.00 | +46.6% | BUY |
+| Robin Zhu | Sanford C. Bernstein | 2026-05-27 | $86.94 | $110.00 | +27.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

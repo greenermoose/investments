@@ -60,8 +60,11 @@ CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $114.34 | $132.07 | +15.5% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $111.86 | $124.04 | +10.9% | BUY |
+| Stephen Bersey | HSBC | 2026-08-14 | $112.90 | $120.00 | +5.8% | HOLD |
+| David Vogt | UBS Group | 2026-08-13 | $112.90 | $138.00 | +21.6% | BUY |
+| Matthew Niknam | Truist Financial | 2026-08-13 | $112.90 | $140.00 | +23.9% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-13 | $112.90 | $150.00 | +31.3% | OVERWEIGHT |
+| Tim Long | Barclays | 2026-08-13 | $112.90 | $123.00 | +7.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

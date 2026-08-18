@@ -60,8 +60,11 @@ ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $242.73 | $277.51 | +14.3% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $244.02 | $264.72 | +8.5% | BUY |
+| Evercore Research Team | Evercore | 2026-08-17 | $235.28 | $276.00 | +12.5% | OUTPERFORM |
+| Dana Telsey | Telsey Advisory Group | 2026-08-14 | $235.28 | $280.00 | +14.1% | OUTPERFORM |
+| Morgan Stanley Research Team | Morgan Stanley | 2026-08-05 | $235.28 | $231.00 | -9.1% | BUY |
+| Ike Boruchow | Wells Fargo & Company | 2026-06-23 | $235.28 | $245.00 | +3.4% | OVERWEIGHT |
+| Adrienne Yih | Barclays | 2026-05-26 | $235.28 | $260.00 | +10.7% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

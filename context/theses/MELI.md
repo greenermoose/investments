@@ -60,10 +60,11 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $1746.67 | $2372.97 | +35.9% | BUY |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $1755.42 | $2291.11 | +30.5% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $1752.93 | $2313.44 | +32.0% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $1733.45 | $2329.51 | +34.4% | BUY |
+| Marcelo Santos | JPMorgan Chase & Co. | 2026-08-11 | $1787.57 | $2150.00 | +13.4% | HOLD |
+| Deepak Mathivanan | Cantor Fitzgerald | 2026-08-06 | $1787.57 | $2300.00 | +19.6% | OVERWEIGHT |
+| Marvin Fong | BTIG Research | 2026-08-06 | $1787.57 | $2150.00 | +11.8% | BUY |
+| Joao Pedro Soares | Citigroup | 2026-07-15 | $1787.57 | $2000.00 | +6.7% | HOLD |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-05-13 | $1787.57 | $2100.00 | +38.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

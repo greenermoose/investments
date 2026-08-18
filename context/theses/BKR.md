@@ -60,10 +60,11 @@ BKR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $63.52 | $61.42 | -3.3% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $65.02 | $69.37 | +6.7% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $62.54 | $67.48 | +7.9% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $65.24 | $61.92 | -5.1% | BUY |
+| Joe Laetsch | Morgan Stanley | 2026-08-07 | $64.90 | $70.00 | +11.6% | OVERWEIGHT |
+| Josh Silverstein | UBS Group | 2026-07-28 | $64.90 | $51.00 | -12.8% | BUY |
+| Marc Bianchi | TD Cowen | 2026-07-28 | $64.90 | $78.00 | +29.9% | BUY |
+| Stephen Gengaro | Stifel Nicolaus | 2026-07-28 | $64.90 | $75.00 | +23.8% | BUY |
+| Derek Podhaizer | Piper Sandler | 2026-07-28 | $64.90 | $73.00 | +20.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

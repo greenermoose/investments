@@ -60,9 +60,11 @@ VRTX currently trades at a Price-to-Sales (P/S) multiple of ~11.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $493.86 | $687.38 | +39.2% | BUY |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $511.24 | $641.96 | +25.6% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $521.89 | $686.77 | +31.6% | BUY |
+| Danielle Brill | Truist Financial | 2026-08-05 | $515.55 | $565.00 | +15.8% | BUY |
+| Eliana Merle | Barclays | 2026-08-05 | $515.55 | $617.00 | +28.9% | OVERWEIGHT |
+| Phil Nadeau | TD Cowen | 2026-08-04 | $515.55 | $550.00 | +16.8% | BUY |
+| Stifel Nicolaus Research Team | Stifel Nicolaus | 2026-08-04 | $515.55 | $500.00 | +2.8% | BUY |
+| Whitney Ijem | Canaccord Genuity Group | 2026-08-04 | $515.55 | $442.00 | -6.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

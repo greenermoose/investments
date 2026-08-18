@@ -60,9 +60,11 @@ LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $472.65 | $571.31 | +20.9% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $469.70 | $565.21 | +20.3% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $471.49 | $520.82 | +10.5% | BUY |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-08-10 | $474.33 | $580.00 | +18.5% | BUY |
+| John McNulty | BMO Capital Markets | 2026-08-10 | $474.33 | $546.00 | +11.4% | OUTPERFORM |
+| Joshua Spector | UBS Group | 2026-08-03 | $474.33 | $612.00 | +27.6% | BUY |
+| Patrick Cunningham | Citigroup | 2026-08-03 | $474.33 | $580.00 | +21.1% | BUY |
+| Arun Viswanathan | Royal Bank Of Canada | 2026-08-03 | $474.33 | $553.00 | +15.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

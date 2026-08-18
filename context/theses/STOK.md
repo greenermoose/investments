@@ -60,8 +60,11 @@ STOK currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $30.82 | $34.68 | +12.5% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $31.67 | $34.36 | +8.5% | BUY |
+| Yatin Suneja | Guggenheim | 2026-08-04 | $32.13 | $60.00 | +99.5% | BUY |
+| Laura Chico | Wedbush | 2026-08-04 | $32.13 | $40.00 | +35.3% | OUTPERFORM |
+| Sumant Kulkarni | Canaccord Genuity Group | 2026-08-04 | $32.13 | $58.00 | +96.2% | BUY |
+| Keay Nakae | Chardan Capital | 2026-08-04 | $32.13 | $35.00 | +18.4% | BUY |
+| Kevin Strang | The Goldman Sachs Group | 2026-07-13 | $32.13 | $44.00 | +40.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

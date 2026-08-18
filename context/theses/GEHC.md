@@ -60,10 +60,11 @@ GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $73.20 | $85.79 | +17.2% | BUY |
-| John Vinh | Wall Street Research | 2026-08-01 | $70.60 | $81.66 | +15.7% | BUY |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $71.30 | $79.19 | +11.1% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $71.76 | $81.10 | +13.0% | BUY |
+| Graham Doyle | UBS Group | 2026-07-31 | $72.37 | $73.00 | +7.3% | HOLD |
+| Evercore Research Team | Evercore | 2026-07-30 | $72.37 | $84.00 | +21.6% | OUTPERFORM |
+| Joanne Wuensch | Citigroup | 2026-07-30 | $72.37 | $75.00 | +4.3% | HOLD |
+| Larry Biegelsen | Wells Fargo & Company | 2026-07-30 | $72.37 | $85.00 | +22.8% | OVERWEIGHT |
+| Ryan Zimmerman | BTIG Research | 2026-07-29 | $72.37 | $79.00 | +11.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

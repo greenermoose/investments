@@ -60,9 +60,11 @@ BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ronald Epstein | Wall Street Research | 2026-08-01 | $190.50 | $255.00 | +33.9% | BUY |
-| Seth Seifman | Wall Street Research | 2026-08-01 | $186.20 | $245.00 | +31.6% | BUY |
-| Peter Arment | Wall Street Research | 2026-08-01 | $183.00 | $240.00 | +31.1% | BUY |
+| Kristina Ruggeri | Argus | 2026-08-11 | $225.95 | $265.00 | +13.8% | HOLD |
+| Ivan Feinseth | Tigress Financial | 2026-08-06 | $225.95 | $305.00 | +30.7% | BUY |
+| Matthew Akers | BNP Paribas Exane | 2026-08-03 | $225.95 | $300.00 | +38.5% | OUTPERFORM |
+| Peter Arment | Robert W. Baird | 2026-07-29 | $225.95 | $300.00 | +34.9% | BUY |
+| Seth Seifman | JPMorgan Chase & Co. | 2026-07-29 | $225.95 | $290.00 | +34.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Ng | Wall Street Research | 2026-08-01 | $176.16 | $219.37 | +24.5% | BUY |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $179.92 | $231.31 | +28.6% | BUY |
+| John Hodulik | UBS Group | 2026-07-24 | $180.12 | $235.00 | +30.5% | BUY |
+| Gregory Williams | TD Cowen | 2026-07-24 | $180.12 | $260.00 | +45.0% | BUY |
+| Steven Cahall | Wells Fargo & Company | 2026-07-24 | $180.12 | $169.00 | -5.6% | BUY |
+| Kannan Venkateshwar | Barclays | 2026-07-24 | $180.12 | $215.00 | +20.0% | OVERWEIGHT |
+| Matthew Harrigan | Benchmark | 2026-07-24 | $180.12 | $280.00 | +64.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

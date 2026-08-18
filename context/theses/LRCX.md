@@ -60,9 +60,11 @@ LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $323.61 | $378.90 | +17.1% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $341.77 | $367.75 | +7.6% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $331.99 | $382.47 | +15.2% | BUY |
+| Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $343.84 | $320.00 | +5.1% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-07-30 | $343.84 | $350.00 | +38.7% | OVERWEIGHT |
+| Blayne Curtis | Jefferies Financial Group | 2026-07-30 | $343.84 | $335.00 | +32.8% | BUY |
+| Shane Brett | Morgan Stanley | 2026-07-30 | $343.84 | $367.00 | +24.1% | OVERWEIGHT |
+| Craig Ellis | B. Riley Financial | 2026-07-30 | $343.84 | $350.00 | +17.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

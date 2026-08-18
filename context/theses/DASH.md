@@ -60,9 +60,11 @@ DASH currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $209.98 | $259.43 | +23.5% | BUY |
-| Richard Shannon | Wall Street Research | 2026-08-01 | $209.89 | $262.98 | +25.3% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $216.88 | $290.92 | +34.1% | BUY |
+| Rohit Kulkarni | Roth Capital | 2026-08-10 | $212.72 | $220.00 | +3.7% | HOLD |
+| Ken Gawrelski | Wells Fargo & Company | 2026-08-07 | $212.72 | $225.00 | +3.5% | BUY |
+| Shyam Patil | Susquehanna | 2026-08-07 | $212.72 | $250.00 | +17.2% | BUY |
+| Ross Sandler | Piper Sandler | 2026-08-06 | $212.72 | $220.00 | +3.9% | HOLD |
+| Youssef Squali | Truist Financial | 2026-08-06 | $212.72 | $336.00 | +58.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

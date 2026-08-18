@@ -60,9 +60,11 @@ META currently trades at a Price-to-Sales (P/S) multiple of ~7.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $515.40 | $640.00 | +24.2% | BUY |
-| Doug Anmuth | Wall Street Research | 2026-08-01 | $508.20 | $625.00 | +23.0% | BUY |
-| Stephen Ju | Wall Street Research | 2026-08-01 | $498.60 | $610.00 | +22.3% | BUY |
+| Scotiabank Research Team | Scotiabank | 2026-07-30 | $568.97 | $600.00 | +2.5% | BUY |
+| Thomas Champion | Piper Sandler | 2026-07-30 | $568.97 | $785.00 | +34.0% | OVERWEIGHT |
+| Scott Devitt | Wedbush | 2026-07-30 | $568.97 | $595.00 | +1.6% | HOLD |
+| Lloyd Walmsley | Mizuho | 2026-07-30 | $568.97 | $750.00 | +28.1% | BUY |
+| Shyam Patil | Susquehanna | 2026-07-30 | $568.97 | $650.00 | +11.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

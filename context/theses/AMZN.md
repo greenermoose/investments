@@ -60,8 +60,11 @@ AMZN currently trades at a Price-to-Sales (P/S) multiple of ~4.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Ives | Wall Street Research | 2026-08-01 | $251.40 | $310.88 | +23.7% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $251.59 | $318.44 | +26.6% | BUY |
+| Rohit Kulkarni | Roth Capital | 2026-08-03 | $261.31 | $325.00 | +19.7% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-31 | $261.31 | $325.00 | +20.7% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $261.31 | $390.00 | +44.8% | OUTPERFORM |
+| Deepak Mathivanan | Cantor Fitzgerald | 2026-07-31 | $261.31 | $320.00 | +35.9% | OVERWEIGHT |
+| Ken Gawrelski | Wells Fargo & Company | 2026-07-31 | $261.31 | $328.00 | +39.3% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

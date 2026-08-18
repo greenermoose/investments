@@ -60,8 +60,11 @@ JPM currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Karl Keirstead | Wall Street Research | 2026-08-01 | $351.85 | $419.15 | +19.1% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $360.12 | $436.48 | +21.2% | BUY |
+| Mike Mayo | Wells Fargo & Company | 2026-08-14 | $360.96 | $390.00 | +7.3% | OVERWEIGHT |
+| Erika Najarian | UBS Group | 2026-08-03 | $360.96 | $400.00 | +13.3% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-22 | $360.96 | $375.00 | +7.5% | HOLD |
+| Keith Horowitz | Citigroup | 2026-07-20 | $360.96 | $360.00 | +5.4% | HOLD |
+| Ebrahim Poonawala | Bank of America | 2026-07-16 | $360.96 | $420.00 | +22.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

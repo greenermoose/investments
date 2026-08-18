@@ -60,9 +60,11 @@ ISRG currently trades at a Price-to-Sales (P/S) multiple of ~13.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $393.58 | $520.38 | +32.2% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $394.03 | $477.80 | +21.3% | BUY |
-| Christopher Rolland | Wall Street Research | 2026-08-01 | $386.79 | $518.69 | +34.1% | BUY |
+| Suraj Kalia | Oppenheimer | 2026-08-12 | $390.33 | $500.00 | +24.6% | OUTPERFORM |
+| Helen Fang | HSBC | 2026-07-30 | $390.33 | $391.00 | +10.7% | HOLD |
+| Priya Sachdeva | UBS Group | 2026-07-28 | $390.33 | $500.00 | +36.6% | HOLD |
+| Adam Maeder | Piper Sandler | 2026-07-27 | $390.33 | $357.44 | +0.2% | BUY |
+| Jayson Bedford | Raymond James Financial | 2026-07-17 | $390.33 | $483.00 | +34.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

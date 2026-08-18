@@ -60,8 +60,11 @@ TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $278.99 | $314.29 | +12.7% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $275.23 | $346.16 | +25.8% | BUY |
+| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $282.91 | $340.00 | +21.6% | HOLD |
+| Alexi de Unger | Arete Research | 2026-07-29 | $282.91 | $405.00 | +46.2% | HOLD |
+| Kevin Cassidy | Rosenblatt Securities | 2026-07-24 | $282.91 | $350.00 | +22.8% | BUY |
+| Timothy Arcuri | UBS Group | 2026-07-23 | $282.91 | $380.00 | +33.7% | BUY |
+| Vijay Rakesh | Mizuho | 2026-07-23 | $282.91 | $305.00 | +7.3% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

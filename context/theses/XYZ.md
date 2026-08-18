@@ -60,9 +60,11 @@ XYZ currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $78.15 | $91.86 | +17.5% | BUY |
-| Brad Sills | Wall Street Research | 2026-08-01 | $80.17 | $97.24 | +21.3% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $79.45 | $86.81 | +9.3% | BUY |
+| Joseph Vafi | Canaccord Genuity Group | 2026-08-13 | $80.20 | $100.00 | +20.2% | BUY |
+| Stephen Biggar | Argus | 2026-08-07 | $80.20 | $103.00 | +30.6% | BUY |
+| Monness Crespi & Hardt Research Team | Monness Crespi & Hardt | 2026-08-07 | $80.20 | $125.00 | +57.5% | BUY |
+| David Koning | Robert W. Baird | 2026-08-06 | $80.20 | $105.00 | +32.1% | BUY |
+| Bill Carcache | Piper Sandler | 2026-08-06 | $80.20 | $105.00 | +31.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

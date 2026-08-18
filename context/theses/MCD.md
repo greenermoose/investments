@@ -60,9 +60,11 @@ MCD currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $261.49 | $299.00 | +14.3% | BUY |
-| Patrick Walravens | Wall Street Research | 2026-08-01 | $264.77 | $300.33 | +13.4% | BUY |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $257.55 | $319.84 | +24.2% | BUY |
+| Gregory Francfort | Guggenheim | 2026-08-05 | $265.53 | $290.00 | +6.7% | HOLD |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-05 | $265.53 | $295.00 | +7.3% | BUY |
+| Dennis Geiger | UBS Group | 2026-08-05 | $265.53 | $305.00 | +11.3% | BUY |
+| Jon Tower | Citigroup | 2026-08-05 | $265.53 | $345.00 | +27.6% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-08-05 | $265.53 | $345.00 | +28.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,9 +60,11 @@ KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $30.78 | $33.36 | +8.4% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $30.93 | $32.56 | +5.3% | BUY |
-| Amit Daryanani | Wall Street Research | 2026-08-01 | $29.56 | $31.87 | +7.8% | BUY |
+| Sorabh Daga | HSBC | 2026-08-13 | $30.28 | $40.00 | +35.3% | HOLD |
+| Lauren Lieberman | Barclays | 2026-08-10 | $30.28 | $38.00 | +26.6% | OVERWEIGHT |
+| Peter Grom | UBS Group | 2026-08-07 | $30.28 | $39.00 | +30.0% | BUY |
+| Royal Bank Of Canada Research Team | Royal Bank Of Canada | 2026-08-04 | $30.28 | $42.00 | +36.5% | OUTPERFORM |
+| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-23 | $30.28 | $38.00 | +28.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

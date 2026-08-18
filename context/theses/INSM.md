@@ -60,10 +60,11 @@ INSM currently trades at a Price-to-Sales (P/S) multiple of ~42.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Ives | Wall Street Research | 2026-08-01 | $122.39 | $168.06 | +37.3% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $124.28 | $166.38 | +33.9% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $121.68 | $155.12 | +27.5% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $124.75 | $151.86 | +21.7% | BUY |
+| Danielle Brill | Truist Financial | 2026-08-10 | $128.32 | $195.00 | +46.1% | BUY |
+| Jessica Fye | JPMorgan Chase & Co. | 2026-08-10 | $128.32 | $175.00 | +29.3% | OVERWEIGHT |
+| Matthew Harrison | Morgan Stanley | 2026-08-07 | $128.32 | $218.00 | +67.9% | OVERWEIGHT |
+| Evercore Research Team | Evercore | 2026-08-07 | $128.32 | $170.00 | +30.8% | OUTPERFORM |
+| Vamil Divan | Guggenheim | 2026-08-07 | $128.32 | $205.00 | +57.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

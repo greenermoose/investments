@@ -60,10 +60,11 @@ CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Kirk Materne | Wall Street Research | 2026-08-01 | $51.38 | $58.02 | +12.9% | BUY |
-| Dan Ives | Wall Street Research | 2026-08-01 | $49.21 | $58.46 | +18.8% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $51.13 | $58.58 | +14.6% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $50.00 | $59.94 | +19.9% | BUY |
+| Argus Research Team | Argus | 2026-07-31 | $50.58 | $56.00 | +11.5% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-24 | $50.58 | $59.00 | +11.2% | BUY |
+| Ariel Rosa | Citigroup | 2026-07-24 | $50.58 | $54.00 | +1.4% | HOLD |
+| Walter Spracklin | Royal Bank Of Canada | 2026-07-23 | $50.58 | $54.00 | +2.6% | OUTPERFORM |
+| Stifel Nicolaus Research Team | Stifel Nicolaus | 2026-07-23 | $50.58 | $54.00 | +2.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

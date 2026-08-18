@@ -60,8 +60,11 @@ ENPH currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $38.24 | $41.22 | +7.8% | BUY |
-| Keith Weiss | Wall Street Research | 2026-08-01 | $37.81 | $40.80 | +7.9% | BUY |
+| Nicholas Amicucci | Evercore | 2026-08-17 | $38.65 | $41.00 | +1.3% | BUY |
+| Biju Perincheril | Susquehanna | 2026-07-30 | $38.65 | $39.00 | +9.3% | HOLD |
+| Vikram Bagri | Citigroup | 2026-07-30 | $38.65 | $40.00 | +8.2% | HOLD |
+| Christopher Dendrinos | Royal Bank Of Canada | 2026-07-29 | $38.65 | $47.00 | +27.2% | OUTPERFORM |
+| UBS Group Research Team | UBS Group | 2026-07-29 | $38.65 | $56.00 | +49.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

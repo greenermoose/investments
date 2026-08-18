@@ -60,10 +60,11 @@ FANG currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Ives | Wall Street Research | 2026-08-01 | $200.80 | $191.33 | -4.7% | BUY |
-| William Stein | Wall Street Research | 2026-08-01 | $206.54 | $197.72 | -4.3% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $205.35 | $222.91 | +8.6% | BUY |
-| Brent Thill | Wall Street Research | 2026-08-01 | $201.89 | $201.07 | -0.4% | BUY |
+| Betty Jiang | Barclays | 2026-08-17 | $206.29 | $221.00 | +9.2% | OVERWEIGHT |
+| Scott Gruber | Citigroup | 2026-08-10 | $206.29 | $220.00 | +12.6% | BUY |
+| Jefferies Financial Group Research Team | Jefferies Financial Group | 2026-08-09 | $206.29 | $205.00 | +9.0% | HOLD |
+| Gabe Daoud | Truist Financial | 2026-08-05 | $206.29 | $224.00 | +20.5% | BUY |
+| Sam Margolin | Wells Fargo & Company | 2026-08-05 | $206.29 | $263.00 | +40.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

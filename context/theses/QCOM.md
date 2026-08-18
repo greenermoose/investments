@@ -60,10 +60,11 @@ QCOM currently trades at a Price-to-Sales (P/S) multiple of ~3.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $160.66 | $177.86 | +10.7% | BUY |
-| Kash Rangan | Wall Street Research | 2026-08-01 | $162.13 | $182.86 | +12.8% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $158.12 | $188.70 | +19.3% | BUY |
-| Wamsi Mohan | Wall Street Research | 2026-08-01 | $162.91 | $196.80 | +20.8% | BUY |
+| Mark Lipacis | Evercore | 2026-07-30 | $162.18 | $159.00 | +5.2% | BUY |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-07-30 | $162.18 | $160.00 | +6.7% | BUY |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-07-30 | $162.18 | $165.00 | +10.1% | BUY |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-07-30 | $162.18 | $160.00 | +6.7% | BUY |
+| Tom O'Malley | Barclays | 2026-07-30 | $162.18 | $180.00 | +15.6% | UNDERPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

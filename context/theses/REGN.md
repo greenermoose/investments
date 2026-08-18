@@ -60,9 +60,11 @@ REGN currently trades at a Price-to-Sales (P/S) multiple of ~5.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $803.89 | $1004.45 | +24.9% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $795.37 | $1016.53 | +27.8% | BUY |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $816.68 | $1040.31 | +27.4% | BUY |
+| David Risinger | Leerink Partners | 2026-08-17 | $805.93 | $824.00 | +2.5% | BUY |
+| Geoff Meacham | Citigroup | 2026-08-03 | $805.93 | $740.00 | -2.8% | HOLD |
+| Brad Canino | Guggenheim | 2026-08-03 | $805.93 | $1030.00 | +35.1% | BUY |
+| Brian Abrahams | Royal Bank Of Canada | 2026-07-31 | $805.93 | $737.00 | -3.4% | BUY |
+| Matthew Harrison | Morgan Stanley | 2026-07-31 | $805.93 | $758.00 | +0.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

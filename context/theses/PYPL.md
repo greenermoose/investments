@@ -60,10 +60,11 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $60.56 | $75.22 | +24.2% | BUY |
-| Srini Pajjuri | Wall Street Research | 2026-08-01 | $59.48 | $74.48 | +25.2% | BUY |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $59.56 | $75.89 | +27.4% | BUY |
-| Joe Spak | Wall Street Research | 2026-08-01 | $59.41 | $80.87 | +36.1% | BUY |
+| Bill Carcache | Piper Sandler | 2026-08-17 | $60.47 | $59.00 | -4.3% | HOLD |
+| Matthew Coad | Truist Financial | 2026-08-05 | $60.47 | $59.00 | +0.5% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $60.47 | $60.00 | +4.9% | HOLD |
+| Daniel R. Perlin | Royal Bank Of Canada | 2026-07-29 | $60.47 | $65.00 | +11.4% | OUTPERFORM |
+| Stephen Biggar | Argus | 2026-07-29 | $60.47 | $70.00 | +19.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

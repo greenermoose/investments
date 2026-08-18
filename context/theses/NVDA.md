@@ -60,10 +60,11 @@ NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Toshiya Hari | Wall Street Research | 2026-08-01 | $126.40 | $165.00 | +30.5% | BUY |
-| Vivek Arya | Wall Street Research | 2026-08-01 | $124.80 | $170.00 | +36.2% | BUY |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $121.50 | $155.00 | +27.6% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $122.90 | $160.00 | +30.2% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-11 | $225.01 | $315.00 | +44.8% | OVERWEIGHT |
+| John Vinh | KeyCorp | 2026-07-14 | $225.01 | $330.00 | +62.0% | OVERWEIGHT |
+| Itau BBA Securities Research Team | Itau BBA Securities | 2026-06-24 | $225.01 | $218.00 | +9.9% | BUY |
+| Jack Zhou | China Renaissance | 2026-06-05 | $225.01 | $319.00 | +45.9% | BUY |
+| N. Quinn | Needham & Company LLC | 2026-06-02 | $225.01 | $270.00 | +20.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

@@ -60,8 +60,11 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| William Stein | Wall Street Research | 2026-08-01 | $127.78 | $143.98 | +12.7% | BUY |
-| Ben Reitzes | Wall Street Research | 2026-08-01 | $129.41 | $143.32 | +10.7% | BUY |
+| Kyle Menges | Citigroup | 2026-07-30 | $130.84 | $140.00 | +4.3% | HOLD |
+| Jerry Revich | Wells Fargo & Company | 2026-07-30 | $130.84 | $157.00 | +18.4% | BUY |
+| Angel Castillo | Morgan Stanley | 2026-07-29 | $130.84 | $119.00 | -13.0% | BUY |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-07-29 | $130.84 | $148.00 | +9.9% | OUTPERFORM |
+| Tami Zakaria | JPMorgan Chase & Co. | 2026-07-29 | $130.84 | $164.00 | +18.7% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

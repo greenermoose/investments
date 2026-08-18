@@ -60,9 +60,11 @@ ADP currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Moerdler | Wall Street Research | 2026-08-01 | $267.32 | $311.85 | +16.7% | BUY |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $268.62 | $295.15 | +9.9% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $272.80 | $313.01 | +14.7% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $266.06 | $310.00 | +16.3% | OVERWEIGHT |
+| Bryan Keane | Citigroup | 2026-07-30 | $266.06 | $287.00 | +8.9% | HOLD |
+| James Faucette | Morgan Stanley | 2026-07-30 | $266.06 | $286.00 | +9.5% | BUY |
+| David Grossman | Stifel Nicolaus | 2026-07-30 | $266.06 | $285.00 | +9.2% | HOLD |
+| Jason Kupferberg | Wells Fargo & Company | 2026-07-30 | $266.06 | $283.00 | +9.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

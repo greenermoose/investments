@@ -60,8 +60,11 @@ ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $1903.78 | $2353.63 | +23.6% | BUY |
-| Stacy Rasgon | Wall Street Research | 2026-08-01 | $1805.60 | $2530.90 | +40.2% | BUY |
+| Argus Research Team | Argus | 2026-07-16 | $1883.12 | $2100.00 | +14.8% | BUY |
+| Joseph Quatrochi | Wells Fargo & Company | 2026-07-16 | $1883.12 | $2500.00 | +37.6% | OVERWEIGHT |
+| Sandeep Deshpande | JPMorgan Chase & Co. | 2026-07-16 | $1883.12 | $2400.00 | +33.6% | OVERWEIGHT |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-07-14 | $1883.12 | $2000.00 | +12.5% | OUTPERFORM |
+| David Dai | Sanford C. Bernstein | 2026-07-06 | $1883.12 | $2623.00 | +48.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

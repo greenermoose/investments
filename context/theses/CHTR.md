@@ -60,8 +60,11 @@ CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $153.98 | $155.64 | +1.1% | BUY |
-| Toni Sacconaghi | Wall Street Research | 2026-08-01 | $148.81 | $156.14 | +4.9% | BUY |
+| Sebastiano Petti | JPMorgan Chase & Co. | 2026-07-29 | $144.10 | $150.00 | +4.1% | HOLD |
+| Michael Rollins | Citigroup | 2026-07-28 | $144.10 | $180.00 | +29.5% | BUY |
+| John Hodulik | UBS Group | 2026-07-27 | $144.10 | $140.00 | +9.8% | HOLD |
+| Laurent Yoon | Sanford C. Bernstein | 2026-07-27 | $144.10 | $150.00 | +21.6% | BUY |
+| Gregory Williams | TD Cowen | 2026-07-27 | $144.10 | $380.00 | +201.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

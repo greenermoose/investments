@@ -60,8 +60,11 @@ AVGO currently trades at a Price-to-Sales (P/S) multiple of ~28.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $384.31 | $493.09 | +28.3% | BUY |
-| Adam Jonas | Wall Street Research | 2026-08-01 | $388.23 | $532.33 | +37.1% | BUY |
+| Rick Schafer | Oppenheimer | 2026-06-04 | $392.43 | $535.00 | +11.6% | OUTPERFORM |
+| Joseph Moore | Morgan Stanley | 2026-06-04 | $392.43 | $502.00 | +4.8% | OVERWEIGHT |
+| John Vinh | KeyCorp | 2026-06-04 | $392.43 | $575.00 | +20.0% | OVERWEIGHT |
+| Timothy Arcuri | UBS Group | 2026-06-04 | $392.43 | $485.00 | +1.2% | BUY |
+| Ross Seymore | Deutsche Bank Aktiengesellschaft | 2026-06-04 | $392.43 | $515.00 | +7.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

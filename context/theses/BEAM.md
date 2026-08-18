@@ -60,10 +60,11 @@ BEAM currently trades at a Price-to-Sales (P/S) multiple of ~48.6x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Alex Zukin | Wall Street Research | 2026-08-01 | $27.46 | $26.74 | -2.6% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $27.38 | $28.37 | +3.6% | BUY |
-| Michael Ng | Wall Street Research | 2026-08-01 | $27.35 | $26.40 | -3.5% | BUY |
-| Mark Murphy | Wall Street Research | 2026-08-01 | $26.46 | $29.28 | +10.7% | BUY |
+| Alec Stranahan | Bank of America | 2026-07-08 | $27.10 | $47.00 | +27.9% | BUY |
+| William Pickering | Tudor Pickering | 2026-05-13 | $27.10 | $39.00 | +23.5% | BUY |
+| William Pickering | Sanford C. Bernstein | 2026-05-13 | $27.10 | $39.00 | +23.5% | OUTPERFORM |
+| Samantha Semenkow | Citigroup | 2026-03-26 | $27.10 | $68.00 | +186.4% | BUY |
+| Luca Issi | Royal Bank Of Canada | 2026-02-25 | $27.10 | $26.00 | -19.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

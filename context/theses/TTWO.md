@@ -60,8 +60,11 @@ TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Nowak | Wall Street Research | 2026-08-01 | $241.13 | $259.23 | +7.5% | BUY |
-| Harlan Sur | Wall Street Research | 2026-08-01 | $249.71 | $242.19 | -3.0% | BUY |
+| Bryan Smilek | JPMorgan Chase & Co. | 2026-08-11 | $241.61 | $310.00 | +22.2% | OVERWEIGHT |
+| Martin Yang | Oppenheimer | 2026-08-10 | $241.61 | $280.00 | +13.6% | OUTPERFORM |
+| Clark Lampen | BTIG Research | 2026-08-10 | $241.61 | $313.00 | +27.0% | BUY |
+| Alec Brondolo | Wells Fargo & Company | 2026-08-10 | $241.61 | $300.00 | +21.7% | OVERWEIGHT |
+| Eric Handler | Roth Capital | 2026-08-10 | $241.61 | $300.00 | +19.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

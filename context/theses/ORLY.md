@@ -60,10 +60,11 @@ ORLY currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joe Spak | Wall Street Research | 2026-08-01 | $91.12 | $103.93 | +14.1% | BUY |
-| Colin Sebastian | Wall Street Research | 2026-08-01 | $88.71 | $106.57 | +20.1% | BUY |
-| David Vogt | Wall Street Research | 2026-08-01 | $92.61 | $98.76 | +6.6% | BUY |
-| Blayne Curtis | Wall Street Research | 2026-08-01 | $89.88 | $103.07 | +14.7% | BUY |
+| Steven Zaccone | Citigroup | 2026-08-03 | $90.23 | $106.00 | +18.6% | BUY |
+| Roth Capital Research Team | Roth Capital | 2026-07-31 | $90.23 | $111.00 | +25.2% | BUY |
+| Michael Baker | DA Davidson | 2026-07-31 | $90.23 | $106.00 | +19.1% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $90.23 | $110.00 | +24.5% | OUTPERFORM |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-07-31 | $90.23 | $100.00 | +13.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

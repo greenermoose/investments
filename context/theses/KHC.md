@@ -60,9 +60,11 @@ KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Ives | Wall Street Research | 2026-08-01 | $24.21 | $26.45 | +9.3% | BUY |
-| Raimo Lenschow | Wall Street Research | 2026-08-01 | $25.23 | $24.07 | -4.6% | BUY |
-| Ross Seymore | Wall Street Research | 2026-08-01 | $24.62 | $24.77 | +0.6% | BUY |
+| Andrew Lazar | Barclays | 2026-08-07 | $24.75 | $26.00 | +4.2% | BUY |
+| Michael Lavery | Piper Sandler | 2026-08-06 | $24.75 | $25.00 | +0.2% | HOLD |
+| David Palmer | Evercore | 2026-08-06 | $24.75 | $24.00 | -3.8% | BUY |
+| Robert Moskow | TD Cowen | 2026-08-06 | $24.75 | $22.00 | -12.3% | HOLD |
+| Peter Grom | UBS Group | 2026-08-06 | $24.75 | $27.00 | +7.6% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

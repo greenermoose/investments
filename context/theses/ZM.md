@@ -60,8 +60,11 @@ ZM currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Samik Chatterjee | Wall Street Research | 2026-08-01 | $101.53 | $112.66 | +11.0% | BUY |
-| Timothy Arcuri | Wall Street Research | 2026-08-01 | $102.10 | $99.03 | -3.0% | BUY |
+| Catharine Trebnick | Rosenblatt Securities | 2026-07-23 | $105.56 | $130.00 | +51.5% | BUY |
+| Joshua Reilly | Needham & Company LLC | 2026-07-02 | $105.56 | $130.00 | +47.8% | BUY |
+| Rishi Jaluria | Royal Bank Of Canada | 2026-06-30 | $105.56 | $130.00 | +51.4% | OUTPERFORM |
+| Stephen Bersey | HSBC | 2026-06-02 | $105.56 | $133.00 | +19.1% | BUY |
+| Tyler Radke | Citigroup | 2026-05-26 | $105.56 | $126.00 | +25.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |

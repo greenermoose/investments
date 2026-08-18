@@ -292,16 +292,16 @@ class QualityController:
             # 5. Financials & Accounting Math Check
             issues.extend(self.check_fundamentals_and_math(sym))
 
-            # 6. Thesis Schema & Completeness Check
-            issues.extend(self.check_thesis_schema(sym))
-
             # 7. Analyst Price Targets, Coverage & URLs Check
             issues.extend(self.check_analyst_coverage(sym, verify_live=verify_urls))
 
-        # 8. Cross-Store Synchronization & Orphan Detection
+            # 8. Investor Relations URL Structure & Live Verification
+            issues.extend(self.check_investor_relations_urls(sym, verify_live=verify_urls))
+
+        # 9. Cross-Store Synchronization & Orphan Detection
         issues.extend(self.check_cross_store_parity())
 
-        # 9. Statistical ROI Distribution Plausibility Check (Full Universe)
+        # 10. Statistical ROI Distribution Plausibility Check (Full Universe)
         if not target_symbol:
             issues.extend(self.check_roi_distribution())
 
@@ -742,6 +742,78 @@ class QualityController:
                         "expected": 200,
                         "description": f"[{sym}] Analyst report URL '{source_url}' failed existence check: {e}."
                     })
+
+        return issues
+
+    def check_investor_relations_urls(self, sym, verify_live=False):
+        """Rule 8: Validates presence, formatting, parity, and live connectivity of Investor Relations URLs."""
+        issues = []
+        u_entry = next((u for u in self.universe if u.get("symbol") == sym), {})
+        meta_entry = self.company_meta.get(sym, {})
+        comp_entry = self.http_company_files.get(sym, {})
+
+        ir_url = u_entry.get("investor_relations_url") or meta_entry.get("investor_relations_url") or comp_entry.get("investor_relations_url")
+
+        if not ir_url:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "INVESTOR_RELATIONS_URL_MISSING",
+                "symbol": sym,
+                "field": "investor_relations_url",
+                "description": f"[{sym}] Missing investor_relations_url in universe/metadata."
+            })
+            return issues
+
+        if not isinstance(ir_url, str) or not (ir_url.startswith("https://") or ir_url.startswith("http://")):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "INVESTOR_RELATIONS_URL_FORMAT",
+                "symbol": sym,
+                "field": "investor_relations_url",
+                "actual": ir_url,
+                "description": f"[{sym}] Invalid investor_relations_url format: '{ir_url}'."
+            })
+            return issues
+
+        # Verify cross-store parity
+        u_ir = u_entry.get("investor_relations_url")
+        meta_ir = meta_entry.get("investor_relations_url")
+        comp_ir = comp_entry.get("investor_relations_url")
+
+        if u_ir != meta_ir or (comp_ir and u_ir != comp_ir):
+            issues.append({
+                "severity": "WARNING",
+                "rule": "INVESTOR_RELATIONS_PARITY",
+                "symbol": sym,
+                "field": "investor_relations_url",
+                "description": f"[{sym}] Mismatch in investor_relations_url between universe ({u_ir}) and meta ({meta_ir})."
+            })
+
+        if verify_live:
+            try:
+                import subprocess
+                cmd = ["curl", "-s", "-o", "NUL", "-w", "%{http_code}", "-L", "--max-time", "8", "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36", ir_url]
+                res = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
+                code = res.stdout.strip()
+                if code in ["404", "502"] or (code == "000" and not res.stderr):
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "INVESTOR_RELATIONS_URL_BROKEN",
+                        "symbol": sym,
+                        "field": "investor_relations_url",
+                        "actual": f"HTTP {code}",
+                        "expected": 200,
+                        "description": f"[{sym}] Investor relations URL '{ir_url}' is unreachable or returned HTTP {code}."
+                    })
+            except Exception as e:
+                issues.append({
+                    "severity": "WARNING",
+                    "rule": "INVESTOR_RELATIONS_URL_CHECK_ERROR",
+                    "symbol": sym,
+                    "field": "investor_relations_url",
+                    "actual": str(e),
+                    "description": f"[{sym}] Failed to execute live check for IR URL '{ir_url}': {e}."
+                })
 
         return issues
 

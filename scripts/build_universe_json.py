@@ -205,6 +205,10 @@ for filename in sorted(all_files):
     meta_copy["options_yield_pct"] = ret_params["options_yield_pct"]
     meta_copy["total_roi_pct"] = ret_params["total_roi_pct"]
     meta_copy["annualized_roi_pct"] = ret_params["annualized_roi_pct"]
+    if "investor_relations_url" in meta:
+        meta_copy["investor_relations_url"] = meta["investor_relations_url"]
+    elif "investor_relations_url" in comp_data:
+        meta_copy["investor_relations_url"] = comp_data["investor_relations_url"]
     updated_meta[sym] = meta_copy
 
     # Market Cap & Enterprise Value
@@ -247,6 +251,8 @@ for filename in sorted(all_files):
             "coverage_count": 0,
             "average_upside_pct": round(((target_exit_price - current_price) / current_price) * 100.0, 1)
         }
+
+    ir_url = comp_data.get("investor_relations_url") or meta.get("investor_relations_url") or f"https://investor.{sym.lower()}.com/"
 
     universe.append({
         "symbol": sym,
@@ -305,6 +311,7 @@ for filename in sorted(all_files):
         "enterprise_value": enterprise_value,
         "enterprise_value_b": ev_b,
         "sec_edgar_url": comp_data.get("sec_edgar_url", f"https://www.sec.gov/edgar/browse/?CIK={sym}"),
+        "investor_relations_url": ir_url,
         "filings_count": len(filings),
         "latest_filing_date": latest_filing.get("filing_date") if latest_filing else None,
         "latest_filing_type": latest_filing.get("type") if latest_filing else None,

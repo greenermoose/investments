@@ -29,7 +29,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 29.17,
     "annualized_roi_pct": 8.91,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.apple.com/"
   },
   "ABNB": {
     "name": "Airbnb, Inc.",
@@ -61,7 +62,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 55.35,
     "annualized_roi_pct": 15.82,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.airbnb.com/"
   },
   "ADBE": {
     "name": "Adobe Inc.",
@@ -93,7 +95,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 30.61,
     "annualized_roi_pct": 9.31,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.adobe.com/investor-relations.html"
   },
   "ADI": {
     "name": "Analog Devices, Inc.",
@@ -125,7 +128,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 16.15,
     "annualized_roi_pct": 5.12,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.analog.com/"
   },
   "ADP": {
     "name": "Automatic Data Processing, Inc.",
@@ -157,7 +161,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.97,
     "annualized_roi_pct": 4.15,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.adp.com/"
   },
   "ADSK": {
     "name": "Autodesk, Inc.",
@@ -189,7 +194,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.6,
     "annualized_roi_pct": 7.61,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.autodesk.com/"
   },
   "AEP": {
     "name": "American Electric Power Company, Inc.",
@@ -221,7 +227,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -0.9,
     "annualized_roi_pct": -0.3,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.aep.com/investors/"
   },
   "ALNY": {
     "name": "Alnylam Pharmaceuticals, Inc.",
@@ -253,7 +260,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 69.43,
     "annualized_roi_pct": 19.21,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.alnylam.com/"
   },
   "AMAT": {
     "name": "Applied Materials, Inc.",
@@ -285,7 +293,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 42.67,
     "annualized_roi_pct": 12.58,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.appliedmaterials.com/"
   },
   "AMD": {
     "name": "Advanced Micro Devices, Inc.",
@@ -317,7 +326,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 52.1,
     "annualized_roi_pct": 15.0,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.amd.com/"
   },
   "AMGN": {
     "name": "Amgen Inc.",
@@ -349,7 +359,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 7.42,
     "annualized_roi_pct": 2.41,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.amgen.com/"
   },
   "AMZN": {
     "name": "Amazon.com, Inc.",
@@ -381,7 +392,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 44.11,
     "annualized_roi_pct": 12.95,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.aboutamazon.com/"
   },
   "APP": {
     "name": "AppLovin Corporation",
@@ -413,7 +425,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 68.2,
     "annualized_roi_pct": 18.93,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.applovin.com/"
   },
   "ARM": {
     "name": "Arm Holdings plc",
@@ -445,7 +458,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 29.54,
     "annualized_roi_pct": 9.01,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.arm.com/"
   },
   "ASML": {
     "name": "ASML Holding N.V.",
@@ -477,7 +491,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 53.61,
     "annualized_roi_pct": 15.38,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.asml.com/en/investors"
   },
   "AVGO": {
     "name": "Broadcom Inc.",
@@ -509,7 +524,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 47.83,
     "annualized_roi_pct": 13.92,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.broadcom.com/"
   },
   "AXON": {
     "name": "Axon Enterprise, Inc.",
@@ -541,7 +557,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 75.79,
     "annualized_roi_pct": 20.69,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.axon.com/"
   },
   "AXP": {
     "name": "American Express Company",
@@ -573,7 +590,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 43.33,
     "annualized_roi_pct": 12.75,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.americanexpress.com/"
   },
   "BA": {
     "name": "The Boeing Company",
@@ -605,7 +623,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -7.05,
     "annualized_roi_pct": -2.41,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.boeing.com/"
   },
   "BAM": {
     "name": "Brookfield Asset Management Ltd.",
@@ -637,7 +656,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 44.53,
     "annualized_roi_pct": 13.06,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://bam.brookfield.com/investor-relations"
   },
   "BEAM": {
     "name": "Beam Therapeutics Inc.",
@@ -669,7 +689,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -2.55,
     "annualized_roi_pct": -0.86,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.beamtx.com/"
   },
   "BETA": {
     "name": "Beta Technologies, Inc.",
@@ -701,7 +722,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -2.58,
     "annualized_roi_pct": -0.87,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.beta.team/"
   },
   "BKNG": {
     "name": "Booking Holdings Inc.",
@@ -733,7 +755,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 51.47,
     "annualized_roi_pct": 14.84,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.bookingholdings.com/"
   },
   "BKR": {
     "name": "Baker Hughes Company",
@@ -765,7 +788,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 7.3,
     "annualized_roi_pct": 2.38,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.bakerhughes.com/"
   },
   "BRK-B": {
     "name": "Berkshire Hathaway Inc. (Class B)",
@@ -797,7 +821,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 23.57,
     "annualized_roi_pct": 7.31,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.berkshirehathaway.com/"
   },
   "CAT": {
     "name": "Caterpillar Inc.",
@@ -829,7 +854,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 20.12,
     "annualized_roi_pct": 6.3,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.caterpillar.com/"
   },
   "CCEP": {
     "name": "Coca-Cola Europacific Partners PLC",
@@ -861,7 +887,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 9.93,
     "annualized_roi_pct": 3.21,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.cocacolaep.com/investors/"
   },
   "CDNS": {
     "name": "Cadence Design Systems, Inc.",
@@ -893,7 +920,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 43.78,
     "annualized_roi_pct": 12.87,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.cadence.com/"
   },
   "CEG": {
     "name": "Constellation Energy Corporation",
@@ -925,7 +953,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 10.8,
     "annualized_roi_pct": 3.48,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.constellationenergy.com/"
   },
   "CHTR": {
     "name": "Charter Communications, Inc.",
@@ -957,7 +986,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -26.41,
     "annualized_roi_pct": -9.72,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.charter.com/"
   },
   "CMCSA": {
     "name": "Comcast Corporation",
@@ -989,7 +1019,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -0.12,
     "annualized_roi_pct": -0.04,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.cmcsa.com/"
   },
   "COST": {
     "name": "Costco Wholesale Corporation",
@@ -1021,7 +1052,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 53.56,
     "annualized_roi_pct": 15.37,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.costco.com/"
   },
   "CPRT": {
     "name": "Copart, Inc.",
@@ -1053,7 +1085,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 28.3,
     "annualized_roi_pct": 8.66,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.copart.com/investorrelations/"
   },
   "CRM": {
     "name": "Salesforce, Inc.",
@@ -1085,7 +1118,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 25.46,
     "annualized_roi_pct": 7.85,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.salesforce.com/"
   },
   "CRSP": {
     "name": "CRISPR Therapeutics AG",
@@ -1117,7 +1151,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -2.58,
     "annualized_roi_pct": -0.87,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://crisprtx.gcs-web.com/"
   },
   "CRWD": {
     "name": "CrowdStrike Holdings, Inc.",
@@ -1149,7 +1184,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 60.28,
     "annualized_roi_pct": 17.03,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.crowdstrike.com/"
   },
   "CSCO": {
     "name": "Cisco Systems, Inc.",
@@ -1181,7 +1217,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.84,
     "annualized_roi_pct": 0.94,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.cisco.com/"
   },
   "CSGP": {
     "name": "CoStar Group, Inc.",
@@ -1213,7 +1250,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -1.79,
     "annualized_roi_pct": -0.6,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.costargroup.com/"
   },
   "CSIQ": {
     "name": "Canadian Solar Inc.",
@@ -1245,7 +1283,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -24.21,
     "annualized_roi_pct": -8.83,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.canadiansolar.com/"
   },
   "CSX": {
     "name": "CSX Corporation",
@@ -1277,7 +1316,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 13.56,
     "annualized_roi_pct": 4.33,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.csx.com/"
   },
   "CTAS": {
     "name": "Cintas Corporation",
@@ -1309,7 +1349,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 25.26,
     "annualized_roi_pct": 7.8,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.cintas.com/investors/"
   },
   "CTSH": {
     "name": "Cognizant Technology Solutions Corporation",
@@ -1341,7 +1382,8 @@
     "options_yield_pct": 8.99,
     "total_roi_pct": 61.72,
     "annualized_roi_pct": 17.38,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.cognizant.com/"
   },
   "CVX": {
     "name": "Chevron Corporation",
@@ -1373,7 +1415,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.94,
     "annualized_roi_pct": 0.97,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.chevron.com/investors"
   },
   "DASH": {
     "name": "DoorDash, Inc.",
@@ -1405,7 +1448,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 60.3,
     "annualized_roi_pct": 17.03,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.doordash.com/"
   },
   "DDOG": {
     "name": "Datadog, Inc.",
@@ -1437,7 +1481,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 51.38,
     "annualized_roi_pct": 14.82,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.datadoghq.com/"
   },
   "DIS": {
     "name": "The Walt Disney Company",
@@ -1469,7 +1514,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 7.18,
     "annualized_roi_pct": 2.34,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://thewaltdisneycompany.com/investor-relations/"
   },
   "DXCM": {
     "name": "DexCom, Inc.",
@@ -1501,7 +1547,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 47.41,
     "annualized_roi_pct": 13.81,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.dexcom.com/"
   },
   "EA": {
     "name": "Electronic Arts Inc.",
@@ -1533,7 +1580,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 16.6,
     "annualized_roi_pct": 5.25,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.ea.com/"
   },
   "EDIT": {
     "name": "Editas Medicine, Inc.",
@@ -1565,7 +1613,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -21.83,
     "annualized_roi_pct": -7.88,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.editasmedicine.com/"
   },
   "ENPH": {
     "name": "Enphase Energy, Inc.",
@@ -1597,7 +1646,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.95,
     "annualized_roi_pct": 0.97,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.enphase.com/"
   },
   "ENVX": {
     "name": "Enovix Corporation",
@@ -1629,7 +1679,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -10.83,
     "annualized_roi_pct": -3.75,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.enovix.com/"
   },
   "EOSE": {
     "name": "Eos Energy Enterprises, Inc.",
@@ -1661,7 +1712,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.8,
     "annualized_roi_pct": 0.92,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.eose.com/"
   },
   "EXC": {
     "name": "Exelon Corporation",
@@ -1693,7 +1745,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -3.03,
     "annualized_roi_pct": -1.02,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.exeloncorp.com/"
   },
   "FANG": {
     "name": "Diamondback Energy, Inc.",
@@ -1725,7 +1778,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 3.01,
     "annualized_roi_pct": 0.99,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.diamondbackenergy.com/"
   },
   "FAST": {
     "name": "Fastenal Company",
@@ -1757,7 +1811,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 14.39,
     "annualized_roi_pct": 4.58,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.fastenal.com/"
   },
   "FER": {
     "name": "Ferrovial SE",
@@ -1789,7 +1844,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.88,
     "annualized_roi_pct": 4.12,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.ferrovial.com/en/ir/"
   },
   "FTNT": {
     "name": "Fortinet, Inc.",
@@ -1821,7 +1877,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 66.51,
     "annualized_roi_pct": 18.53,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.fortinet.com/"
   },
   "GEHC": {
     "name": "GE HealthCare Technologies Inc.",
@@ -1853,7 +1910,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 43.84,
     "annualized_roi_pct": 12.88,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.gehealthcare.com/"
   },
   "GILD": {
     "name": "Gilead Sciences, Inc.",
@@ -1885,7 +1943,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 3.57,
     "annualized_roi_pct": 1.18,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.gilead.com/"
   },
   "GNRC": {
     "name": "Generac Holdings Inc.",
@@ -1917,7 +1976,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.98,
     "annualized_roi_pct": 4.15,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.generac.com/"
   },
   "GOOG": {
     "name": "Alphabet Inc. (Class C)",
@@ -1949,7 +2009,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 53.07,
     "annualized_roi_pct": 15.25,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://abc.xyz/investor/"
   },
   "GOOGL": {
     "name": "Alphabet Inc. (Class A)",
@@ -1981,7 +2042,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 53.01,
     "annualized_roi_pct": 15.23,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://abc.xyz/investor/"
   },
   "GS": {
     "name": "The Goldman Sachs Group, Inc.",
@@ -2013,7 +2075,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 21.83,
     "annualized_roi_pct": 6.8,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.goldmansachs.com/investor-relations/"
   },
   "GWH": {
     "name": "ESS Tech, Inc.",
@@ -2045,7 +2108,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 3.28,
     "annualized_roi_pct": 1.08,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.essinc.com/"
   },
   "HD": {
     "name": "The Home Depot, Inc.",
@@ -2077,7 +2141,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 8.28,
     "annualized_roi_pct": 2.69,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.homedepot.com/"
   },
   "HON": {
     "name": "Honeywell International Inc.",
@@ -2109,7 +2174,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 15.14,
     "annualized_roi_pct": 4.81,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.honeywell.com/"
   },
   "IBM": {
     "name": "International Business Machines Corporation",
@@ -2141,7 +2207,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 5.03,
     "annualized_roi_pct": 1.65,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.ibm.com/investor"
   },
   "IDXX": {
     "name": "IDEXX Laboratories, Inc.",
@@ -2173,7 +2240,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 26.17,
     "annualized_roi_pct": 8.06,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.idexx.com/"
   },
   "INSM": {
     "name": "Insmed Incorporated",
@@ -2205,7 +2273,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 6.8,
     "annualized_roi_pct": 2.22,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.insmed.com/"
   },
   "INTC": {
     "name": "Intel Corporation",
@@ -2237,7 +2306,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -27.97,
     "annualized_roi_pct": -10.36,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.intc.com/"
   },
   "INTU": {
     "name": "Intuit Inc.",
@@ -2269,7 +2339,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 42.08,
     "annualized_roi_pct": 12.42,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.intuit.com/"
   },
   "ISRG": {
     "name": "Intuitive Surgical, Inc.",
@@ -2301,7 +2372,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 63.42,
     "annualized_roi_pct": 17.79,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://isrg.intuitive.com/"
   },
   "JNJ": {
     "name": "Johnson & Johnson",
@@ -2333,7 +2405,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.67,
     "annualized_roi_pct": 4.06,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.jnj.com/"
   },
   "JPM": {
     "name": "JPMorgan Chase & Co.",
@@ -2365,7 +2438,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 21.83,
     "annualized_roi_pct": 6.8,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.jpmorganchase.com/ir"
   },
   "KDP": {
     "name": "Keurig Dr Pepper Inc.",
@@ -2397,7 +2471,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.97,
     "annualized_roi_pct": 0.98,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.keurigdrpepper.com/"
   },
   "KHC": {
     "name": "The Kraft Heinz Company",
@@ -2429,7 +2504,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 7.03,
     "annualized_roi_pct": 2.29,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.kraftheinzcompany.com/"
   },
   "KLAC": {
     "name": "KLA Corporation",
@@ -2461,7 +2537,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 79.75,
     "annualized_roi_pct": 21.59,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.kla.com/"
   },
   "KO": {
     "name": "The Coca-Cola Company",
@@ -2493,7 +2570,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 10.08,
     "annualized_roi_pct": 3.25,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.coca-colacompany.com/"
   },
   "LIN": {
     "name": "Linde plc",
@@ -2525,7 +2603,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 4.38,
     "annualized_roi_pct": 1.44,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.linde.com/investors"
   },
   "LRCX": {
     "name": "Lam Research Corporation",
@@ -2557,7 +2636,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 25.74,
     "annualized_roi_pct": 7.93,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.lamresearch.com/"
   },
   "MA": {
     "name": "Mastercard Incorporated",
@@ -2589,7 +2669,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 44.94,
     "annualized_roi_pct": 13.17,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.mastercard.com/"
   },
   "MAR": {
     "name": "Marriott International, Inc.",
@@ -2621,7 +2702,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 18.46,
     "annualized_roi_pct": 5.81,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://marriott.gcs-web.com/"
   },
   "MCD": {
     "name": "McDonald's Corporation",
@@ -2653,7 +2735,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 9.77,
     "annualized_roi_pct": 3.16,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://corporate.mcdonalds.com/corpmcd/investors.html"
   },
   "MCHP": {
     "name": "Microchip Technology Incorporated",
@@ -2685,7 +2768,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.52,
     "annualized_roi_pct": 7.58,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.microchip.com/"
   },
   "MDLZ": {
     "name": "Mondelez International, Inc.",
@@ -2717,7 +2801,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 6.45,
     "annualized_roi_pct": 2.11,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.mondelezinternational.com/"
   },
   "MELI": {
     "name": "MercadoLibre, Inc.",
@@ -2749,7 +2834,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 78.16,
     "annualized_roi_pct": 21.23,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.mercadolibre.com/"
   },
   "META": {
     "name": "Meta Platforms, Inc.",
@@ -2781,7 +2867,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 58.54,
     "annualized_roi_pct": 16.6,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.atmeta.com/"
   },
   "MMM": {
     "name": "3M Company",
@@ -2813,7 +2900,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.88,
     "annualized_roi_pct": 4.12,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.3m.com/"
   },
   "MNST": {
     "name": "Monster Beverage Corporation",
@@ -2845,7 +2933,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 28.16,
     "annualized_roi_pct": 8.62,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.monsterbevcorp.com/"
   },
   "MPWR": {
     "name": "Monolithic Power Systems, Inc.",
@@ -2877,7 +2966,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 13.48,
     "annualized_roi_pct": 4.31,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.monolithicpower.com/"
   },
   "MRK": {
     "name": "Merck & Co., Inc.",
@@ -2909,7 +2999,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.69,
     "annualized_roi_pct": 4.06,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.merck.com/investor-relations/"
   },
   "MRVL": {
     "name": "Marvell Technology, Inc.",
@@ -2941,7 +3032,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 13.47,
     "annualized_roi_pct": 4.3,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.marvell.com/"
   },
   "MSFT": {
     "name": "Microsoft Corporation",
@@ -2973,7 +3065,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 52.5,
     "annualized_roi_pct": 15.1,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.microsoft.com/en-us/investor"
   },
   "MSTR": {
     "name": "MicroStrategy Incorporated",
@@ -3005,7 +3098,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -10.0,
     "annualized_roi_pct": -3.45,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.microstrategy.com/investor-relations"
   },
   "MU": {
     "name": "Micron Technology, Inc.",
@@ -3037,7 +3131,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 19.68,
     "annualized_roi_pct": 6.17,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.micron.com/"
   },
   "NFLX": {
     "name": "Netflix, Inc.",
@@ -3069,7 +3164,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 48.58,
     "annualized_roi_pct": 14.11,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.netflix.net/"
   },
   "NKE": {
     "name": "NIKE, Inc.",
@@ -3101,7 +3197,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 45.95,
     "annualized_roi_pct": 13.43,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.nike.com/"
   },
   "NRGV": {
     "name": "Energy Vault Holdings, Inc.",
@@ -3133,7 +3230,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.88,
     "annualized_roi_pct": 0.95,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.energyvault.com/"
   },
   "NTLA": {
     "name": "Intellia Therapeutics, Inc.",
@@ -3165,7 +3263,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -22.0,
     "annualized_roi_pct": -7.95,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.intelliatx.com/"
   },
   "NVDA": {
     "name": "NVIDIA Corporation",
@@ -3197,7 +3296,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 82.69,
     "annualized_roi_pct": 22.25,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.nvidia.com/"
   },
   "NXPI": {
     "name": "NXP Semiconductors N.V.",
@@ -3229,7 +3329,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.6,
     "annualized_roi_pct": 7.61,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.nxp.com/"
   },
   "ODFL": {
     "name": "Old Dominion Freight Line, Inc.",
@@ -3261,7 +3362,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.9,
     "annualized_roi_pct": 4.13,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.odfl.com/"
   },
   "ORLY": {
     "name": "O'Reilly Automotive, Inc.",
@@ -3293,7 +3395,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 25.49,
     "annualized_roi_pct": 7.86,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://corporate.oreillyauto.com/investor-relations"
   },
   "PANW": {
     "name": "Palo Alto Networks, Inc.",
@@ -3325,7 +3428,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.25,
     "annualized_roi_pct": 7.51,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.paloaltonetworks.com/"
   },
   "PAYX": {
     "name": "Paychex, Inc.",
@@ -3357,7 +3461,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.92,
     "annualized_roi_pct": 4.13,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.paychex.com/"
   },
   "PCAR": {
     "name": "PACCAR Inc",
@@ -3389,7 +3494,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 4.23,
     "annualized_roi_pct": 1.39,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.paccar.com/investors/"
   },
   "PDD": {
     "name": "PDD Holdings Inc.",
@@ -3421,7 +3527,8 @@
     "options_yield_pct": 3.5,
     "total_roi_pct": 80.49,
     "annualized_roi_pct": 21.75,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.pddholdings.com/"
   },
   "PEP": {
     "name": "PepsiCo, Inc.",
@@ -3453,7 +3560,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 10.33,
     "annualized_roi_pct": 3.33,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.pepsico.com/"
   },
   "PG": {
     "name": "The Procter & Gamble Company",
@@ -3485,7 +3593,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 11.89,
     "annualized_roi_pct": 3.82,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.pginvestor.com/"
   },
   "PLTR": {
     "name": "Palantir Technologies Inc.",
@@ -3517,7 +3626,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 30.76,
     "annualized_roi_pct": 9.35,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.palantir.com/"
   },
   "PYPL": {
     "name": "PayPal Holdings, Inc.",
@@ -3549,7 +3659,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 9.81,
     "annualized_roi_pct": 3.17,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.pypl.com/"
   },
   "QCOM": {
     "name": "QUALCOMM Incorporated",
@@ -3581,7 +3692,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 21.23,
     "annualized_roi_pct": 6.63,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.qualcomm.com/"
   },
   "REGN": {
     "name": "Regeneron Pharmaceuticals, Inc.",
@@ -3613,7 +3725,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 21.24,
     "annualized_roi_pct": 6.63,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.regeneron.com/"
   },
   "ROP": {
     "name": "Roper Technologies, Inc.",
@@ -3645,7 +3758,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.61,
     "annualized_roi_pct": 7.61,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.ropertech.com/"
   },
   "ROST": {
     "name": "Ross Stores, Inc.",
@@ -3677,7 +3791,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.8,
     "annualized_roi_pct": 4.1,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.rossstores.com/"
   },
   "SBUX": {
     "name": "Starbucks Corporation",
@@ -3709,7 +3824,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 7.49,
     "annualized_roi_pct": 2.44,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.starbucks.com/"
   },
   "SEDG": {
     "name": "SolarEdge Technologies, Inc.",
@@ -3741,7 +3857,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 2.66,
     "annualized_roi_pct": 0.88,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.solaredge.com/"
   },
   "SHOP": {
     "name": "Shopify Inc.",
@@ -3773,7 +3890,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.53,
     "annualized_roi_pct": 7.59,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.shopify.com/"
   },
   "SHW": {
     "name": "The Sherwin-Williams Company",
@@ -3805,7 +3923,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 4.22,
     "annualized_roi_pct": 1.39,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.sherwin-williams.com/"
   },
   "SLDP": {
     "name": "Solid Power, Inc.",
@@ -3837,7 +3956,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -10.64,
     "annualized_roi_pct": -3.68,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.solidpowerbattery.com/"
   },
   "SNPS": {
     "name": "Synopsys, Inc.",
@@ -3869,7 +3989,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 43.72,
     "annualized_roi_pct": 12.85,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.synopsys.com/"
   },
   "STOK": {
     "name": "Stoke Therapeutics, Inc.",
@@ -3901,7 +4022,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.73,
     "annualized_roi_pct": 4.08,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.stoketherapeutics.com/"
   },
   "STX": {
     "name": "Seagate Technology Holdings plc",
@@ -3933,7 +4055,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 13.5,
     "annualized_roi_pct": 4.31,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.seagate.com/"
   },
   "TDOC": {
     "name": "Teladoc Health, Inc.",
@@ -3965,7 +4088,8 @@
     "options_yield_pct": 9.02,
     "total_roi_pct": 44.04,
     "annualized_roi_pct": 12.93,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.teladochealth.com/"
   },
   "TEAM": {
     "name": "Atlassian Corporation",
@@ -3997,7 +4121,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.54,
     "annualized_roi_pct": 7.59,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.atlassian.com/"
   },
   "TMUS": {
     "name": "T-Mobile US, Inc.",
@@ -4029,7 +4154,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 14.94,
     "annualized_roi_pct": 4.75,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.t-mobile.com/"
   },
   "TRI": {
     "name": "Thomson Reuters Corporation",
@@ -4061,7 +4187,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 13.01,
     "annualized_roi_pct": 4.16,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.thomsonreuters.com/"
   },
   "TRV": {
     "name": "The Travelers Companies, Inc.",
@@ -4093,7 +4220,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 45.74,
     "annualized_roi_pct": 13.38,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.travelers.com/"
   },
   "TSLA": {
     "name": "Tesla, Inc.",
@@ -4125,7 +4253,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 18.28,
     "annualized_roi_pct": 5.76,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.tesla.com/"
   },
   "TTWO": {
     "name": "Take-Two Interactive Software, Inc.",
@@ -4157,7 +4286,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 16.53,
     "annualized_roi_pct": 5.23,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.take2games.com/ir"
   },
   "TXN": {
     "name": "Texas Instruments Incorporated",
@@ -4189,7 +4319,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.94,
     "annualized_roi_pct": 4.14,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.ti.com/"
   },
   "UNH": {
     "name": "UnitedHealth Group Incorporated",
@@ -4221,7 +4352,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 52.46,
     "annualized_roi_pct": 15.09,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.unitedhealthgroup.com/investors.html"
   },
   "V": {
     "name": "Visa Inc.",
@@ -4253,7 +4385,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 32.25,
     "annualized_roi_pct": 9.77,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.visa.com/"
   },
   "VRSK": {
     "name": "Verisk Analytics, Inc.",
@@ -4285,7 +4418,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 12.86,
     "annualized_roi_pct": 4.12,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.verisk.com/"
   },
   "VRTX": {
     "name": "Vertex Pharmaceuticals Incorporated",
@@ -4317,7 +4451,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 69.93,
     "annualized_roi_pct": 19.33,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.vrtx.com/"
   },
   "VZ": {
     "name": "Verizon Communications Inc.",
@@ -4349,7 +4484,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -7.2,
     "annualized_roi_pct": -2.46,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://www.verizon.com/about/investors"
   },
   "WBD": {
     "name": "Warner Bros. Discovery, Inc.",
@@ -4381,7 +4517,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -33.55,
     "annualized_roi_pct": -12.74,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.wbd.com/"
   },
   "WDAY": {
     "name": "Workday, Inc.",
@@ -4413,7 +4550,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 23.32,
     "annualized_roi_pct": 7.24,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.workday.com/"
   },
   "WDC": {
     "name": "Western Digital Corporation",
@@ -4445,7 +4583,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.56,
     "annualized_roi_pct": 7.6,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investor.wdc.com/"
   },
   "WMT": {
     "name": "Walmart Inc.",
@@ -4477,7 +4616,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 8.34,
     "annualized_roi_pct": 2.71,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://stock.walmart.com/"
   },
   "XEL": {
     "name": "Xcel Energy Inc.",
@@ -4509,7 +4649,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": -0.32,
     "annualized_roi_pct": -0.11,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.xcelenergy.com/"
   },
   "XYZ": {
     "name": "Block, Inc.",
@@ -4541,7 +4682,8 @@
     "options_yield_pct": 9.0,
     "total_roi_pct": 57.42,
     "annualized_roi_pct": 16.33,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.block.xyz/"
   },
   "ZM": {
     "name": "Zoom Communications, Inc.",
@@ -4573,7 +4715,8 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.46,
     "annualized_roi_pct": 7.57,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://investors.zoom.us/"
   },
   "ZS": {
     "name": "Zscaler, Inc.",
@@ -4605,6 +4748,7 @@
     "options_yield_pct": 0.0,
     "total_roi_pct": 24.51,
     "annualized_roi_pct": 7.58,
-    "dividend_proceeds": 0.0
+    "dividend_proceeds": 0.0,
+    "investor_relations_url": "https://ir.zscaler.com/"
   }
 }

@@ -879,6 +879,32 @@ pre code {
   color: #ffffff;
 }
 
+.ir-header-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 212, 255, 0.12);
+  color: #00d4ff;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ir-header-chip:hover {
+  background: rgba(0, 212, 255, 0.25);
+  border-color: #00d4ff;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
 .modal-close-btn {
   background: rgba(255, 255, 255, 0.08);
   border: none;

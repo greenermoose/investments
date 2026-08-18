@@ -183,14 +183,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-title-group">
-            <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
               <h3 id="modal-symbol-title" style="margin: 0; color: #00d4ff; font-size: 1.4rem;">AAPL</h3>
-              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple
-                Inc.</span>
-              <span id="modal-live-price-header"
-                style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-left: 8px;"></span>
+              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple Inc.</span>
+              <a id="modal-ir-chip" href="#" target="_blank" rel="noopener noreferrer" class="ir-header-chip" title="Open official Investor Relations website">Investor Relations</a>
             </div>
-            <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">
+            <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">
               Information Technology &bull; Consumer Electronics & Software</div>
           </div>
           <button id="modal-close" class="modal-close-btn" title="Close modal">&times;</button>
@@ -401,9 +399,14 @@
                 <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Direct accession links to
                   verified filings submitted to the US Securities and Exchange Commission.</p>
               </div>
-              <a id="modal-sec-browse-btn" href="#" target="_blank" rel="noopener noreferrer" class="link-btn">
-                Browse SEC EDGAR Directory &rarr;
-              </a>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a id="modal-ir-browse-btn" href="#" target="_blank" rel="noopener noreferrer" class="link-btn" style="background: rgba(0, 212, 255, 0.12); border-color: rgba(0, 212, 255, 0.3); color: #00d4ff;">
+                  Investor Relations Portal &rarr;
+                </a>
+                <a id="modal-sec-browse-btn" href="#" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  Browse SEC EDGAR &rarr;
+                </a>
+              </div>
             </div>
 
             <div class="provenance-table-container">

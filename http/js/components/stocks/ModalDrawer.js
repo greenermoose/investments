@@ -42,12 +42,14 @@ export function openCompanyModal(company) {
 
   const symbolTitleEl = document.getElementById('modal-symbol-title');
   const companyNameEl = document.getElementById('modal-company-name');
-  const livePriceEl = document.getElementById('modal-live-price-header');
+  const irChipEl = document.getElementById('modal-ir-chip');
   const sectorTextEl = document.getElementById('modal-sector-text');
 
   if (symbolTitleEl) symbolTitleEl.textContent = company.symbol;
   if (companyNameEl) companyNameEl.textContent = company.name || company.symbol;
-  if (livePriceEl) livePriceEl.innerHTML = `$${currentPrice.toFixed(2)} &nbsp; ${dayChangeHtml}`;
+  if (irChipEl) {
+    irChipEl.href = company.investor_relations_url || `https://investor.${company.symbol.toLowerCase()}.com/`;
+  }
   
   const indexBadgesHtml = renderIndexBadges(company.indices);
   if (sectorTextEl) {
@@ -187,6 +189,8 @@ export function openCompanyModal(company) {
   // Tab 3: SEC Tab
   const secBrowseBtn = document.getElementById('modal-sec-browse-btn');
   if (secBrowseBtn) secBrowseBtn.href = company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`;
+  const irBrowseBtn = document.getElementById('modal-ir-browse-btn');
+  if (irBrowseBtn) irBrowseBtn.href = company.investor_relations_url || `https://investor.${company.symbol.toLowerCase()}.com/`;
   const filingsTbody = document.getElementById('modal-filings-tbody');
   if (filingsTbody) {
     filingsTbody.innerHTML = '';

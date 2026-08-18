@@ -128,3 +128,33 @@ Ingest private brokerage holdings, cash balance, SGOV shares, and active option 
 3. Validate output against `context/schemas/portfolio_context.json`.
 4. Ensure no private portfolio metrics leak into public web files or version control.
 
+## Methodology 7: Free API Etiquette, Rate Limits & Anti-Abuse Standards
+
+### Purpose
+Ensure all deterministic scripts and AI agent tool calls operate reliably, respect open source and government API terms of service, and eliminate the risk of IP throttling, rate-limit bans, or API key revocation.
+
+### Universal Etiquette & Rate Limit Rules
+
+| Data Provider | Endpoint / Service | Hard Rate Limit | Enforced Throttle in Repo | Required Headers & Authentication | Caching Policy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **SEC EDGAR** | Company Facts, Submissions, NPORT-P | 10 requests / second | Max 5-8 requests / second (`time.sleep(0.15)`) | `User-Agent: SampleApp AdminContact@domain.com` (Mandatory) | Local JSON in `http/data/` and `scripts/data/` (Permanent until new filing) |
+| **FRED (St. Louis Fed)** | Macro Economic Series REST API | 120 requests / minute | 1 request per benchmark run | Free Developer API Key (`api_key=...`) | Cached in `scripts/data/macro_rates.json` (24-hour TTL) |
+| **US Treasury** | Daily Par Yield Curve Feeds | Unspecified (Fair Use) | 1 batch pull per execution | Standard HTTP `User-Agent` | Cached with macro series (24-hour TTL) |
+| **Yahoo Finance** | `/v8/finance/chart/{symbol}` | Unofficial / Variable | 0.2s pause between symbols | Standard Browser `User-Agent` | Cached in `http/data/market_prices.json` (End-of-day / Single-session) |
+| **NASDAQ Trader FTP** | `ftp.nasdaqtrader.com` | Unspecified (Fair Use) | 1 session download per day | Anonymous FTP login | Cached in `scripts/data/` (Daily refresh) |
+| **MarketBeat / IR Portals** | Analyst Coverage & IR Transcripts | Polite Web Crawling | 0.5s pause between pages | Standard HTTP `User-Agent` | Cached in `scripts/data/analyst_price_targets.json` |
+
+### Error Recovery & Exponential Backoff Protocol
+
+When scripts or agents encounter HTTP response codes from external endpoints, they must adhere to the following deterministic error protocol:
+1. **HTTP 429 (Too Many Requests / Rate Limited):**
+   - Check response for `Retry-After` header. If present, pause for the indicated number of seconds.
+   - If absent, initiate exponential backoff: retry after 2s, 4s, 8s, up to 3 retries max before aborting and falling back to cached disk data.
+2. **HTTP 403 (Forbidden / Bad User-Agent):**
+   - Immediately verify that the `User-Agent` conforms to the provider's specification (e.g. SEC format `AdminContact@domain.com`).
+   - Never hammer a 403 response in a loop.
+3. **HTTP 500 / 503 (Server Error / Temporary Outage):**
+   - Log the temporary outage to system stdout and fall back gracefully to previous cached values in `http/data/` or `context/data/`.
+4. **Local Disk Cache Primacy:**
+   - AI agents must always check if fresh data exists in `http/data/`, `context/data/`, or `scripts/data/` before initiating remote network calls.
+

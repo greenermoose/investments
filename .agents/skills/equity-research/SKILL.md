@@ -60,3 +60,8 @@ python scripts/screen_market.py --max-debt-to-equity 3.0 --json --limit 30
 | **Solvency & Runway** | Debt/Equity <= 3.5x or >18 months cash runway | Prevents Bankruptcy Risk |
 | **Competitive Moat** | High switching costs, network effects, or IP | Qualitative Moat Confirmation |
 | **Handoff Action** | Register symbol in master database | Triggers Thesis Formulation |
+
+## API Etiquette & Data Ingestion Protocols
+- **SEC EDGAR Access**: Strictly adhere to the SEC 10 requests/second rate limit and always provide the configured User-Agent header when executing `scripts/fetch_sec.py` or `scripts/fetch_etf_holdings.py`.
+- **Local Cache First**: Check `http/data/` and `scripts/data/` before issuing new network queries.
+- **Polite Retrieval**: Comply with `context/sources/access_methodologies.md` (Methodology 7) including exponential backoff on HTTP 429 and polite crawling of company investor relations disclosures.

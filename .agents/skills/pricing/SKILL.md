@@ -66,3 +66,8 @@ python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 
 | **Defensive Roll** | Out & Away | 30 - 60 Days | Strictly Net Credit ($> $0.00) | Maintained from original leg |
 | **Equity Buy Limit** | At/Near Support | Single Session | Below Benchmark Entry | Available Settled Cash |
 | **Equity Sell Limit** | At/Near Resistance | Single Session | Intrinsic Fair Value Target | Active Common Shares |
+
+## API Etiquette & Market Price Fetching Protocols
+- **Price Feed Pacing**: When fetching real-time/historical candles via `scripts/fetch_market_prices.py`, maintain standard throttle intervals (0.2s pause between symbols) to prevent IP rate-limiting.
+- **FRED & Treasury Risk-Free Rate Caching**: Cache benchmark Treasury yields (3M Treasury DGS3MO) with a 24-hour TTL in `scripts/data/` rather than querying external endpoints on every options pricing calculation.
+- **Offline & Cache Primacy**: Adhere strictly to `context/sources/access_methodologies.md` (Methodology 7) by utilizing local market price caches in `http/data/market_prices.json` during agent deliberation loops.

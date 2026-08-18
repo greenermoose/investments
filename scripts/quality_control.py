@@ -91,7 +91,7 @@ class QualityController:
         self.http_company_files = {}
         if os.path.exists(self.http_data_dir):
             for fname in os.listdir(self.http_data_dir):
-                if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json"]:
+                if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
                     sym = fname[:-5]
                     fpath = os.path.join(self.http_data_dir, fname)
                     self.http_company_files[sym] = self._load_json(fpath, default={})
@@ -973,7 +973,7 @@ class QualityController:
         print("Rebuilding and synchronizing master universe.json catalog...")
         new_universe = []
         for filename in sorted(os.listdir(self.http_data_dir)):
-            if not filename.endswith(".json") or filename in ["universe.json", "market_prices.json"]:
+            if not filename.endswith(".json") or filename in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
                 continue
 
             sym = filename.replace(".json", "")
@@ -1154,7 +1154,8 @@ class QualityController:
                 "filings": filings,
                 "historical_candles_30d": historical_candles,
                 "analyst_price_targets": sym_targets,
-                "analyst_consensus": analyst_consensus
+                "analyst_consensus": analyst_consensus,
+                "last_updated": datetime.now(timezone.utc).isoformat()
             })
 
         self.universe = new_universe

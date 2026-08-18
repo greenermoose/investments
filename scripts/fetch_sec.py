@@ -4,6 +4,7 @@ Extracts authoritative 10-K/10-Q/20-F XBRL data for all public companies in the 
 """
 
 import argparse
+from datetime import datetime, timezone
 import json
 import os
 import re
@@ -56,7 +57,7 @@ def load_universe_symbols():
     http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
     if os.path.exists(http_data_dir):
         for fname in os.listdir(http_data_dir):
-            if fname.endswith(".json") and fname != "universe.json":
+            if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
                 sym = fname.replace(".json", "")
                 symbols.add(sym)
                 
@@ -284,6 +285,7 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         out_obj = {
             "symbol": sym,
             "sec_edgar_url": f"https://www.sec.gov/edgar/browse/?CIK={int(cik)}",
+            "last_updated": datetime.now(timezone.utc).isoformat(),
             "filings": filings
         }
         

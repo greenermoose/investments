@@ -32,7 +32,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.apple.com/",
     "current_ps_multiple": 10.8,
-    "target_ps_multiple": 10.25
+    "target_ps_multiple": 10.25,
+    "last_updated": "2026-08-18T18:11:08.401631+00:00"
   },
   "ABNB": {
     "name": "Airbnb, Inc.",
@@ -67,7 +68,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.airbnb.com/",
     "current_ps_multiple": 8.8,
-    "target_ps_multiple": 8.08
+    "target_ps_multiple": 8.08,
+    "last_updated": "2026-08-18T18:11:08.401631+00:00"
   },
   "ADBE": {
     "name": "Adobe Inc.",
@@ -102,7 +104,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.adobe.com/investor-relations.html",
     "current_ps_multiple": 4.3,
-    "target_ps_multiple": 3.85
+    "target_ps_multiple": 3.85,
+    "last_updated": "2026-08-18T18:11:08.402630+00:00"
   },
   "ADI": {
     "name": "Analog Devices, Inc.",
@@ -137,7 +140,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.analog.com/",
     "current_ps_multiple": 17.1,
-    "target_ps_multiple": 15.75
+    "target_ps_multiple": 15.75,
+    "last_updated": "2026-08-18T18:11:08.402630+00:00"
   },
   "ADP": {
     "name": "Automatic Data Processing, Inc.",
@@ -172,7 +176,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.adp.com/",
     "current_ps_multiple": 4.8,
-    "target_ps_multiple": 4.46
+    "target_ps_multiple": 4.46,
+    "last_updated": "2026-08-18T18:11:08.403614+00:00"
   },
   "ADSK": {
     "name": "Autodesk, Inc.",
@@ -207,7 +212,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.autodesk.com/",
     "current_ps_multiple": 7.1,
-    "target_ps_multiple": 6.39
+    "target_ps_multiple": 6.39,
+    "last_updated": "2026-08-18T18:11:08.403614+00:00"
   },
   "AEP": {
     "name": "American Electric Power Company, Inc.",
@@ -242,7 +248,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.aep.com/investors/",
     "current_ps_multiple": 3.0,
-    "target_ps_multiple": 2.79
+    "target_ps_multiple": 2.79,
+    "last_updated": "2026-08-18T18:11:08.403614+00:00"
   },
   "ALNY": {
     "name": "Alnylam Pharmaceuticals, Inc.",
@@ -277,7 +284,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.alnylam.com/",
     "current_ps_multiple": 7.8,
-    "target_ps_multiple": 6.85
+    "target_ps_multiple": 6.85,
+    "last_updated": "2026-08-18T18:11:08.404614+00:00"
   },
   "AMAT": {
     "name": "Applied Materials, Inc.",
@@ -312,7 +320,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.appliedmaterials.com/",
     "current_ps_multiple": 14.9,
-    "target_ps_multiple": 13.68
+    "target_ps_multiple": 13.68,
+    "last_updated": "2026-08-18T18:11:08.404614+00:00"
   },
   "AMD": {
     "name": "Advanced Micro Devices, Inc.",
@@ -347,7 +356,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.amd.com/",
     "current_ps_multiple": 23.8,
-    "target_ps_multiple": 19.54
+    "target_ps_multiple": 19.54,
+    "last_updated": "2026-08-18T18:11:08.405613+00:00"
   },
   "AMGN": {
     "name": "Amgen Inc.",
@@ -382,7 +392,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.amgen.com/",
     "current_ps_multiple": 6.4,
-    "target_ps_multiple": 5.74
+    "target_ps_multiple": 5.74,
+    "last_updated": "2026-08-18T18:11:08.405613+00:00"
   },
   "AMZN": {
     "name": "Amazon.com, Inc.",
@@ -417,7 +428,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.aboutamazon.com/",
     "current_ps_multiple": 4.1,
-    "target_ps_multiple": 3.9
+    "target_ps_multiple": 3.9,
+    "last_updated": "2026-08-18T18:11:08.405613+00:00"
   },
   "APP": {
     "name": "AppLovin Corporation",
@@ -452,7 +464,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.applovin.com/",
     "current_ps_multiple": 18.5,
-    "target_ps_multiple": 15.14
+    "target_ps_multiple": 15.14,
+    "last_updated": "2026-08-18T18:11:08.406613+00:00"
   },
   "ARM": {
     "name": "Arm Holdings plc",
@@ -487,7 +500,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.arm.com/",
     "current_ps_multiple": 61.4,
-    "target_ps_multiple": 43.0
+    "target_ps_multiple": 43.0,
+    "last_updated": "2026-08-18T18:11:08.406613+00:00"
   },
   "ASML": {
     "name": "ASML Holding N.V.",
@@ -522,7 +536,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.asml.com/en/investors",
     "current_ps_multiple": 22.2,
-    "target_ps_multiple": 18.22
+    "target_ps_multiple": 18.22,
+    "last_updated": "2026-08-18T18:11:08.407613+00:00"
   },
   "AVGO": {
     "name": "Broadcom Inc.",
@@ -557,7 +572,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.broadcom.com/",
     "current_ps_multiple": 28.5,
-    "target_ps_multiple": 23.37
+    "target_ps_multiple": 23.37,
+    "last_updated": "2026-08-18T18:11:08.408631+00:00"
   },
   "AXON": {
     "name": "Axon Enterprise, Inc.",
@@ -592,7 +608,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.axon.com/",
     "current_ps_multiple": 17.5,
-    "target_ps_multiple": 15.36
+    "target_ps_multiple": 15.36,
+    "last_updated": "2026-08-18T18:11:08.408631+00:00"
   },
   "AXP": {
     "name": "American Express Company",
@@ -627,7 +644,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.americanexpress.com/",
     "current_ps_multiple": 3.2,
-    "target_ps_multiple": 3.02
+    "target_ps_multiple": 3.02,
+    "last_updated": "2026-08-18T18:11:08.408631+00:00"
   },
   "BA": {
     "name": "The Boeing Company",
@@ -662,7 +680,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.boeing.com/",
     "current_ps_multiple": 2.0,
-    "target_ps_multiple": 1.73
+    "target_ps_multiple": 1.73,
+    "last_updated": "2026-08-18T18:11:08.409862+00:00"
   },
   "BAM": {
     "name": "Brookfield Asset Management Ltd.",
@@ -697,7 +716,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://bam.brookfield.com/investor-relations",
     "current_ps_multiple": 4.3,
-    "target_ps_multiple": 4.11
+    "target_ps_multiple": 4.11,
+    "last_updated": "2026-08-18T18:11:08.409862+00:00"
   },
   "BEAM": {
     "name": "Beam Therapeutics Inc.",
@@ -732,7 +752,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.beamtx.com/",
     "current_ps_multiple": 48.6,
-    "target_ps_multiple": 34.02
+    "target_ps_multiple": 34.02,
+    "last_updated": "2026-08-18T18:11:08.410864+00:00"
   },
   "BETA": {
     "name": "Beta Technologies, Inc.",
@@ -767,7 +788,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.beta.team/",
     "current_ps_multiple": 169.8,
-    "target_ps_multiple": 118.88
+    "target_ps_multiple": 118.88,
+    "last_updated": "2026-08-18T18:11:08.410864+00:00"
   },
   "BKNG": {
     "name": "Booking Holdings Inc.",
@@ -802,7 +824,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.bookingholdings.com/",
     "current_ps_multiple": 6.1,
-    "target_ps_multiple": 5.78
+    "target_ps_multiple": 5.78,
+    "last_updated": "2026-08-18T18:11:08.414060+00:00"
   },
   "BKR": {
     "name": "Baker Hughes Company",
@@ -837,7 +860,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.bakerhughes.com/",
     "current_ps_multiple": 2.4,
-    "target_ps_multiple": 2.15
+    "target_ps_multiple": 2.15,
+    "last_updated": "2026-08-18T18:11:08.414060+00:00"
   },
   "BRK-B": {
     "name": "Berkshire Hathaway Inc. (Class B)",
@@ -872,7 +896,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.berkshirehathaway.com/",
     "current_ps_multiple": 2.9,
-    "target_ps_multiple": 2.84
+    "target_ps_multiple": 2.84,
+    "last_updated": "2026-08-18T18:11:08.414060+00:00"
   },
   "CAT": {
     "name": "Caterpillar Inc.",
@@ -907,7 +932,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.caterpillar.com/",
     "current_ps_multiple": 6.2,
-    "target_ps_multiple": 5.84
+    "target_ps_multiple": 5.84,
+    "last_updated": "2026-08-18T18:11:08.415088+00:00"
   },
   "CCEP": {
     "name": "Coca-Cola Europacific Partners PLC",
@@ -942,7 +968,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.cocacolaep.com/investors/",
     "current_ps_multiple": 2.3,
-    "target_ps_multiple": 2.09
+    "target_ps_multiple": 2.09,
+    "last_updated": "2026-08-18T18:11:08.415088+00:00"
   },
   "CDNS": {
     "name": "Cadence Design Systems, Inc.",
@@ -977,7 +1004,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.cadence.com/",
     "current_ps_multiple": 16.7,
-    "target_ps_multiple": 15.4
+    "target_ps_multiple": 15.4,
+    "last_updated": "2026-08-18T18:11:08.416065+00:00"
   },
   "CEG": {
     "name": "Constellation Energy Corporation",
@@ -1012,7 +1040,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.constellationenergy.com/",
     "current_ps_multiple": 3.3,
-    "target_ps_multiple": 2.89
+    "target_ps_multiple": 2.89,
+    "last_updated": "2026-08-18T18:11:08.416690+00:00"
   },
   "CHTR": {
     "name": "Charter Communications, Inc.",
@@ -1047,7 +1076,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.charter.com/",
     "current_ps_multiple": 0.3,
-    "target_ps_multiple": 0.26
+    "target_ps_multiple": 0.26,
+    "last_updated": "2026-08-18T18:11:08.417227+00:00"
   },
   "CMCSA": {
     "name": "Comcast Corporation",
@@ -1082,7 +1112,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.cmcsa.com/",
     "current_ps_multiple": 0.7,
-    "target_ps_multiple": 0.66
+    "target_ps_multiple": 0.66,
+    "last_updated": "2026-08-18T18:11:08.417227+00:00"
   },
   "COST": {
     "name": "Costco Wholesale Corporation",
@@ -1117,7 +1148,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.costco.com/",
     "current_ps_multiple": 1.5,
-    "target_ps_multiple": 1.69
+    "target_ps_multiple": 1.69,
+    "last_updated": "2026-08-18T18:11:08.418235+00:00"
   },
   "CPRT": {
     "name": "Copart, Inc.",
@@ -1152,7 +1184,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.copart.com/investorrelations/",
     "current_ps_multiple": 6.6,
-    "target_ps_multiple": 6.24
+    "target_ps_multiple": 6.24,
+    "last_updated": "2026-08-18T18:11:08.418235+00:00"
   },
   "CRM": {
     "name": "Salesforce, Inc.",
@@ -1187,7 +1220,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.salesforce.com/",
     "current_ps_multiple": 4.3,
-    "target_ps_multiple": 3.83
+    "target_ps_multiple": 3.83,
+    "last_updated": "2026-08-18T18:11:08.418235+00:00"
   },
   "CRSP": {
     "name": "CRISPR Therapeutics AG",
@@ -1222,7 +1256,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://crisprtx.gcs-web.com/",
     "current_ps_multiple": 1275.6,
-    "target_ps_multiple": 892.95
+    "target_ps_multiple": 892.95,
+    "last_updated": "2026-08-18T18:11:08.419424+00:00"
   },
   "CRWD": {
     "name": "CrowdStrike Holdings, Inc.",
@@ -1257,7 +1292,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.crowdstrike.com/",
     "current_ps_multiple": 11.0,
-    "target_ps_multiple": 9.37
+    "target_ps_multiple": 9.37,
+    "last_updated": "2026-08-18T18:11:08.419424+00:00"
   },
   "CSCO": {
     "name": "Cisco Systems, Inc.",
@@ -1292,7 +1328,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.cisco.com/",
     "current_ps_multiple": 7.9,
-    "target_ps_multiple": 7.08
+    "target_ps_multiple": 7.08,
+    "last_updated": "2026-08-18T18:11:08.419424+00:00"
   },
   "CSGP": {
     "name": "CoStar Group, Inc.",
@@ -1327,7 +1364,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.costargroup.com/",
     "current_ps_multiple": 3.9,
-    "target_ps_multiple": 3.55
+    "target_ps_multiple": 3.55,
+    "last_updated": "2026-08-18T18:11:08.419424+00:00"
   },
   "CSIQ": {
     "name": "Canadian Solar Inc.",
@@ -1362,7 +1400,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.canadiansolar.com/",
     "current_ps_multiple": 0.2,
-    "target_ps_multiple": 0.13
+    "target_ps_multiple": 0.13,
+    "last_updated": "2026-08-18T18:11:08.420945+00:00"
   },
   "CSX": {
     "name": "CSX Corporation",
@@ -1397,7 +1436,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.csx.com/",
     "current_ps_multiple": 6.7,
-    "target_ps_multiple": 6.33
+    "target_ps_multiple": 6.33,
+    "last_updated": "2026-08-18T18:11:08.420945+00:00"
   },
   "CTAS": {
     "name": "Cintas Corporation",
@@ -1432,7 +1472,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.cintas.com/investors/",
     "current_ps_multiple": 7.7,
-    "target_ps_multiple": 7.27
+    "target_ps_multiple": 7.27,
+    "last_updated": "2026-08-18T18:11:08.421964+00:00"
   },
   "CTSH": {
     "name": "Cognizant Technology Solutions Corporation",
@@ -1467,7 +1508,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.cognizant.com/",
     "current_ps_multiple": 1.3,
-    "target_ps_multiple": 1.41
+    "target_ps_multiple": 1.41,
+    "last_updated": "2026-08-18T18:11:08.421964+00:00"
   },
   "CVX": {
     "name": "Chevron Corporation",
@@ -1502,7 +1544,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.chevron.com/investors",
     "current_ps_multiple": 2.1,
-    "target_ps_multiple": 1.89
+    "target_ps_multiple": 1.89,
+    "last_updated": "2026-08-18T18:11:08.421964+00:00"
   },
   "DASH": {
     "name": "DoorDash, Inc.",
@@ -1537,7 +1580,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.doordash.com/",
     "current_ps_multiple": 6.7,
-    "target_ps_multiple": 5.9
+    "target_ps_multiple": 5.9,
+    "last_updated": "2026-08-18T18:11:08.422962+00:00"
   },
   "DDOG": {
     "name": "Datadog, Inc.",
@@ -1572,7 +1616,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.datadoghq.com/",
     "current_ps_multiple": 25.2,
-    "target_ps_multiple": 20.67
+    "target_ps_multiple": 20.67,
+    "last_updated": "2026-08-18T18:11:08.423369+00:00"
   },
   "DIS": {
     "name": "The Walt Disney Company",
@@ -1607,7 +1652,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://thewaltdisneycompany.com/investor-relations/",
     "current_ps_multiple": 1.9,
-    "target_ps_multiple": 1.71
+    "target_ps_multiple": 1.71,
+    "last_updated": "2026-08-18T18:11:08.423877+00:00"
   },
   "DXCM": {
     "name": "DexCom, Inc.",
@@ -1642,7 +1688,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.dexcom.com/",
     "current_ps_multiple": 7.5,
-    "target_ps_multiple": 6.71
+    "target_ps_multiple": 6.71,
+    "last_updated": "2026-08-18T18:11:08.423877+00:00"
   },
   "EA": {
     "name": "Electronic Arts Inc.",
@@ -1677,7 +1724,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.ea.com/",
     "current_ps_multiple": 7.1,
-    "target_ps_multiple": 6.4
+    "target_ps_multiple": 6.4,
+    "last_updated": "2026-08-18T18:11:08.423877+00:00"
   },
   "EDIT": {
     "name": "Editas Medicine, Inc.",
@@ -1712,7 +1760,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.editasmedicine.com/",
     "current_ps_multiple": 14.9,
-    "target_ps_multiple": 9.71
+    "target_ps_multiple": 9.71,
+    "last_updated": "2026-08-18T18:11:08.424882+00:00"
   },
   "ENPH": {
     "name": "Enphase Energy, Inc.",
@@ -1747,7 +1796,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.enphase.com/",
     "current_ps_multiple": 3.6,
-    "target_ps_multiple": 3.23
+    "target_ps_multiple": 3.23,
+    "last_updated": "2026-08-18T18:11:08.424882+00:00"
   },
   "ENVX": {
     "name": "Enovix Corporation",
@@ -1782,7 +1832,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.enovix.com/",
     "current_ps_multiple": 27.9,
-    "target_ps_multiple": 18.13
+    "target_ps_multiple": 18.13,
+    "last_updated": "2026-08-18T18:11:08.425881+00:00"
   },
   "EOSE": {
     "name": "Eos Energy Enterprises, Inc.",
@@ -1817,7 +1868,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.eose.com/",
     "current_ps_multiple": 11.8,
-    "target_ps_multiple": 10.61
+    "target_ps_multiple": 10.61,
+    "last_updated": "2026-08-18T18:11:08.425881+00:00"
   },
   "EXC": {
     "name": "Exelon Corporation",
@@ -1852,7 +1904,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.exeloncorp.com/",
     "current_ps_multiple": 1.8,
-    "target_ps_multiple": 1.61
+    "target_ps_multiple": 1.61,
+    "last_updated": "2026-08-18T18:11:08.425881+00:00"
   },
   "FANG": {
     "name": "Diamondback Energy, Inc.",
@@ -1887,7 +1940,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.diamondbackenergy.com/",
     "current_ps_multiple": 3.7,
-    "target_ps_multiple": 3.29
+    "target_ps_multiple": 3.29,
+    "last_updated": "2026-08-18T18:11:08.426885+00:00"
   },
   "FAST": {
     "name": "Fastenal Company",
@@ -1922,7 +1976,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.fastenal.com/",
     "current_ps_multiple": 7.0,
-    "target_ps_multiple": 6.46
+    "target_ps_multiple": 6.46,
+    "last_updated": "2026-08-18T18:11:08.427886+00:00"
   },
   "FER": {
     "name": "Ferrovial SE",
@@ -1957,7 +2012,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.ferrovial.com/en/ir/",
     "current_ps_multiple": 4.8,
-    "target_ps_multiple": 4.4
+    "target_ps_multiple": 4.4,
+    "last_updated": "2026-08-18T18:11:08.428416+00:00"
   },
   "FTNT": {
     "name": "Fortinet, Inc.",
@@ -1992,7 +2048,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.fortinet.com/",
     "current_ps_multiple": 16.9,
-    "target_ps_multiple": 16.08
+    "target_ps_multiple": 16.08,
+    "last_updated": "2026-08-18T18:11:08.429424+00:00"
   },
   "GEHC": {
     "name": "GE HealthCare Technologies Inc.",
@@ -2027,7 +2084,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.gehealthcare.com/",
     "current_ps_multiple": 1.6,
-    "target_ps_multiple": 1.81
+    "target_ps_multiple": 1.81,
+    "last_updated": "2026-08-18T18:11:08.429424+00:00"
   },
   "GILD": {
     "name": "Gilead Sciences, Inc.",
@@ -2062,7 +2120,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.gilead.com/",
     "current_ps_multiple": 6.1,
-    "target_ps_multiple": 5.57
+    "target_ps_multiple": 5.57,
+    "last_updated": "2026-08-18T18:11:08.430424+00:00"
   },
   "GNRC": {
     "name": "Generac Holdings Inc.",
@@ -2097,7 +2156,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.generac.com/",
     "current_ps_multiple": 3.1,
-    "target_ps_multiple": 2.87
+    "target_ps_multiple": 2.87,
+    "last_updated": "2026-08-18T18:11:08.430424+00:00"
   },
   "GOOG": {
     "name": "Alphabet Inc. (Class C)",
@@ -2132,7 +2192,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://abc.xyz/investor/",
     "current_ps_multiple": 10.5,
-    "target_ps_multiple": 9.95
+    "target_ps_multiple": 9.95,
+    "last_updated": "2026-08-18T18:11:08.430424+00:00"
   },
   "GOOGL": {
     "name": "Alphabet Inc. (Class A)",
@@ -2167,7 +2228,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://abc.xyz/investor/",
     "current_ps_multiple": 10.5,
-    "target_ps_multiple": 10.02
+    "target_ps_multiple": 10.02,
+    "last_updated": "2026-08-18T18:11:08.431438+00:00"
   },
   "GS": {
     "name": "The Goldman Sachs Group, Inc.",
@@ -2202,7 +2264,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.goldmansachs.com/investor-relations/",
     "current_ps_multiple": 5.0,
-    "target_ps_multiple": 4.75
+    "target_ps_multiple": 4.75,
+    "last_updated": "2026-08-18T18:11:08.431438+00:00"
   },
   "GWH": {
     "name": "ESS Tech, Inc.",
@@ -2237,7 +2300,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.essinc.com/",
     "current_ps_multiple": 5.4,
-    "target_ps_multiple": 4.89
+    "target_ps_multiple": 4.89,
+    "last_updated": "2026-08-18T18:11:08.432421+00:00"
   },
   "HD": {
     "name": "The Home Depot, Inc.",
@@ -2272,7 +2336,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.homedepot.com/",
     "current_ps_multiple": 2.0,
-    "target_ps_multiple": 1.84
+    "target_ps_multiple": 1.84,
+    "last_updated": "2026-08-18T18:11:08.432421+00:00"
   },
   "HON": {
     "name": "Honeywell International Inc.",
@@ -2307,7 +2372,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.honeywell.com/",
     "current_ps_multiple": 1.8,
-    "target_ps_multiple": 1.74
+    "target_ps_multiple": 1.74,
+    "last_updated": "2026-08-18T18:11:08.432421+00:00"
   },
   "IBM": {
     "name": "International Business Machines Corporation",
@@ -2342,7 +2408,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.ibm.com/investor",
     "current_ps_multiple": 3.4,
-    "target_ps_multiple": 3.11
+    "target_ps_multiple": 3.11,
+    "last_updated": "2026-08-18T18:11:08.433437+00:00"
   },
   "IDXX": {
     "name": "IDEXX Laboratories, Inc.",
@@ -2377,7 +2444,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.idexx.com/",
     "current_ps_multiple": 9.9,
-    "target_ps_multiple": 9.1
+    "target_ps_multiple": 9.1,
+    "last_updated": "2026-08-18T18:11:08.433437+00:00"
   },
   "INSM": {
     "name": "Insmed Incorporated",
@@ -2412,7 +2480,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.insmed.com/",
     "current_ps_multiple": 42.9,
-    "target_ps_multiple": 30.02
+    "target_ps_multiple": 30.02,
+    "last_updated": "2026-08-18T18:11:08.434421+00:00"
   },
   "INTC": {
     "name": "Intel Corporation",
@@ -2447,7 +2516,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.intc.com/",
     "current_ps_multiple": 9.9,
-    "target_ps_multiple": 7.89
+    "target_ps_multiple": 7.89,
+    "last_updated": "2026-08-18T18:11:08.434421+00:00"
   },
   "INTU": {
     "name": "Intuit Inc.",
@@ -2482,7 +2552,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.intuit.com/",
     "current_ps_multiple": 4.9,
-    "target_ps_multiple": 4.53
+    "target_ps_multiple": 4.53,
+    "last_updated": "2026-08-18T18:11:08.434421+00:00"
   },
   "ISRG": {
     "name": "Intuitive Surgical, Inc.",
@@ -2517,7 +2588,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://isrg.intuitive.com/",
     "current_ps_multiple": 13.9,
-    "target_ps_multiple": 13.17
+    "target_ps_multiple": 13.17,
+    "last_updated": "2026-08-18T18:11:08.435421+00:00"
   },
   "JNJ": {
     "name": "Johnson & Johnson",
@@ -2552,7 +2624,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.jnj.com/",
     "current_ps_multiple": 6.7,
-    "target_ps_multiple": 6.2
+    "target_ps_multiple": 6.2,
+    "last_updated": "2026-08-18T18:11:08.435421+00:00"
   },
   "JPM": {
     "name": "JPMorgan Chase & Co.",
@@ -2587,7 +2660,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.jpmorganchase.com/ir",
     "current_ps_multiple": 5.1,
-    "target_ps_multiple": 4.89
+    "target_ps_multiple": 4.89,
+    "last_updated": "2026-08-18T18:11:08.435421+00:00"
   },
   "KDP": {
     "name": "Keurig Dr Pepper Inc.",
@@ -2622,7 +2696,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.keurigdrpepper.com/",
     "current_ps_multiple": 2.6,
-    "target_ps_multiple": 2.31
+    "target_ps_multiple": 2.31,
+    "last_updated": "2026-08-18T18:11:08.436440+00:00"
   },
   "KHC": {
     "name": "The Kraft Heinz Company",
@@ -2657,7 +2732,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.kraftheinzcompany.com/",
     "current_ps_multiple": 1.2,
-    "target_ps_multiple": 1.1
+    "target_ps_multiple": 1.1,
+    "last_updated": "2026-08-18T18:11:08.436440+00:00"
   },
   "KLAC": {
     "name": "KLA Corporation",
@@ -2692,7 +2768,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.kla.com/",
     "current_ps_multiple": 2.0,
-    "target_ps_multiple": 2.18
+    "target_ps_multiple": 2.18,
+    "last_updated": "2026-08-18T18:11:08.436440+00:00"
   },
   "KO": {
     "name": "The Coca-Cola Company",
@@ -2727,7 +2804,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.coca-colacompany.com/",
     "current_ps_multiple": 7.7,
-    "target_ps_multiple": 7.31
+    "target_ps_multiple": 7.31,
+    "last_updated": "2026-08-18T18:11:08.437421+00:00"
   },
   "LIN": {
     "name": "Linde plc",
@@ -2762,7 +2840,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.linde.com/investors",
     "current_ps_multiple": 6.4,
-    "target_ps_multiple": 5.79
+    "target_ps_multiple": 5.79,
+    "last_updated": "2026-08-18T18:11:08.437421+00:00"
   },
   "LRCX": {
     "name": "Lam Research Corporation",
@@ -2797,7 +2876,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.lamresearch.com/",
     "current_ps_multiple": 18.5,
-    "target_ps_multiple": 15.18
+    "target_ps_multiple": 15.18,
+    "last_updated": "2026-08-18T18:11:08.438421+00:00"
   },
   "MA": {
     "name": "Mastercard Incorporated",
@@ -2832,7 +2912,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.mastercard.com/",
     "current_ps_multiple": 15.4,
-    "target_ps_multiple": 14.63
+    "target_ps_multiple": 14.63,
+    "last_updated": "2026-08-18T18:11:08.438421+00:00"
   },
   "MAR": {
     "name": "Marriott International, Inc.",
@@ -2867,7 +2948,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://marriott.gcs-web.com/",
     "current_ps_multiple": 3.6,
-    "target_ps_multiple": 3.24
+    "target_ps_multiple": 3.24,
+    "last_updated": "2026-08-18T18:11:08.438421+00:00"
   },
   "MCD": {
     "name": "McDonald's Corporation",
@@ -2902,7 +2984,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://corporate.mcdonalds.com/corpmcd/investors.html",
     "current_ps_multiple": 7.1,
-    "target_ps_multiple": 6.55
+    "target_ps_multiple": 6.55,
+    "last_updated": "2026-08-18T18:11:08.439421+00:00"
   },
   "MCHP": {
     "name": "Microchip Technology Incorporated",
@@ -2937,7 +3020,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.microchip.com/",
     "current_ps_multiple": 8.9,
-    "target_ps_multiple": 8.01
+    "target_ps_multiple": 8.01,
+    "last_updated": "2026-08-18T18:11:08.439421+00:00"
   },
   "MDLZ": {
     "name": "Mondelez International, Inc.",
@@ -2972,7 +3056,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.mondelezinternational.com/",
     "current_ps_multiple": 2.1,
-    "target_ps_multiple": 1.92
+    "target_ps_multiple": 1.92,
+    "last_updated": "2026-08-18T18:11:08.439421+00:00"
   },
   "MELI": {
     "name": "MercadoLibre, Inc.",
@@ -3007,7 +3092,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.mercadolibre.com/",
     "current_ps_multiple": 3.1,
-    "target_ps_multiple": 2.81
+    "target_ps_multiple": 2.81,
+    "last_updated": "2026-08-18T18:11:08.440599+00:00"
   },
   "META": {
     "name": "Meta Platforms, Inc.",
@@ -3042,7 +3128,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.atmeta.com/",
     "current_ps_multiple": 7.3,
-    "target_ps_multiple": 6.95
+    "target_ps_multiple": 6.95,
+    "last_updated": "2026-08-18T18:11:08.440599+00:00"
   },
   "MMM": {
     "name": "3M Company",
@@ -3077,7 +3164,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.3m.com/",
     "current_ps_multiple": 3.7,
-    "target_ps_multiple": 3.44
+    "target_ps_multiple": 3.44,
+    "last_updated": "2026-08-18T18:11:08.440599+00:00"
   },
   "MNST": {
     "name": "Monster Beverage Corporation",
@@ -3112,7 +3200,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.monsterbevcorp.com/",
     "current_ps_multiple": 5.2,
-    "target_ps_multiple": 4.81
+    "target_ps_multiple": 4.81,
+    "last_updated": "2026-08-18T18:11:08.441599+00:00"
   },
   "MPWR": {
     "name": "Monolithic Power Systems, Inc.",
@@ -3147,7 +3236,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.monolithicpower.com/",
     "current_ps_multiple": 24.5,
-    "target_ps_multiple": 20.06
+    "target_ps_multiple": 20.06,
+    "last_updated": "2026-08-18T18:11:08.441599+00:00"
   },
   "MRK": {
     "name": "Merck & Co., Inc.",
@@ -3182,7 +3272,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.merck.com/investor-relations/",
     "current_ps_multiple": 5.2,
-    "target_ps_multiple": 4.76
+    "target_ps_multiple": 4.76,
+    "last_updated": "2026-08-18T18:11:08.441599+00:00"
   },
   "MRVL": {
     "name": "Marvell Technology, Inc.",
@@ -3217,7 +3308,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.marvell.com/",
     "current_ps_multiple": 24.4,
-    "target_ps_multiple": 20.01
+    "target_ps_multiple": 20.01,
+    "last_updated": "2026-08-18T18:11:08.442621+00:00"
   },
   "MSFT": {
     "name": "Microsoft Corporation",
@@ -3252,7 +3344,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.microsoft.com/en-us/investor",
     "current_ps_multiple": 10.8,
-    "target_ps_multiple": 10.22
+    "target_ps_multiple": 10.22,
+    "last_updated": "2026-08-18T18:11:08.442621+00:00"
   },
   "MSTR": {
     "name": "MicroStrategy Incorporated",
@@ -3287,7 +3380,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.microstrategy.com/investor-relations",
     "current_ps_multiple": 70.1,
-    "target_ps_multiple": 49.05
+    "target_ps_multiple": 49.05,
+    "last_updated": "2026-08-18T18:11:08.443602+00:00"
   },
   "MU": {
     "name": "Micron Technology, Inc.",
@@ -3322,7 +3416,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.micron.com/",
     "current_ps_multiple": 30.5,
-    "target_ps_multiple": 25.03
+    "target_ps_multiple": 25.03,
+    "last_updated": "2026-08-18T18:11:08.444603+00:00"
   },
   "NFLX": {
     "name": "Netflix, Inc.",
@@ -3357,7 +3452,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.netflix.net/",
     "current_ps_multiple": 7.0,
-    "target_ps_multiple": 6.28
+    "target_ps_multiple": 6.28,
+    "last_updated": "2026-08-18T18:11:08.445118+00:00"
   },
   "NKE": {
     "name": "NIKE, Inc.",
@@ -3392,7 +3488,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.nike.com/",
     "current_ps_multiple": 1.2,
-    "target_ps_multiple": 1.37
+    "target_ps_multiple": 1.37,
+    "last_updated": "2026-08-18T18:11:08.445625+00:00"
   },
   "NRGV": {
     "name": "Energy Vault Holdings, Inc.",
@@ -3427,7 +3524,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.energyvault.com/",
     "current_ps_multiple": 9.4,
-    "target_ps_multiple": 8.48
+    "target_ps_multiple": 8.48,
+    "last_updated": "2026-08-18T18:11:08.445625+00:00"
   },
   "NTLA": {
     "name": "Intellia Therapeutics, Inc.",
@@ -3462,7 +3560,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.intelliatx.com/",
     "current_ps_multiple": 28.3,
-    "target_ps_multiple": 18.39
+    "target_ps_multiple": 18.39,
+    "last_updated": "2026-08-18T18:11:08.446631+00:00"
   },
   "NVDA": {
     "name": "NVIDIA Corporation",
@@ -3497,7 +3596,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.nvidia.com/",
     "current_ps_multiple": 23.8,
-    "target_ps_multiple": 19.54
+    "target_ps_multiple": 19.54,
+    "last_updated": "2026-08-18T18:11:08.446631+00:00"
   },
   "NXPI": {
     "name": "NXP Semiconductors N.V.",
@@ -3532,7 +3632,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.nxp.com/",
     "current_ps_multiple": 4.9,
-    "target_ps_multiple": 4.37
+    "target_ps_multiple": 4.37,
+    "last_updated": "2026-08-18T18:11:08.446631+00:00"
   },
   "ODFL": {
     "name": "Old Dominion Freight Line, Inc.",
@@ -3567,7 +3668,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.odfl.com/",
     "current_ps_multiple": 8.0,
-    "target_ps_multiple": 7.34
+    "target_ps_multiple": 7.34,
+    "last_updated": "2026-08-18T18:11:08.447652+00:00"
   },
   "ORLY": {
     "name": "O'Reilly Automotive, Inc.",
@@ -3602,7 +3704,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://corporate.oreillyauto.com/investor-relations",
     "current_ps_multiple": 4.2,
-    "target_ps_multiple": 3.96
+    "target_ps_multiple": 3.96,
+    "last_updated": "2026-08-18T18:11:08.447652+00:00"
   },
   "PANW": {
     "name": "Palo Alto Networks, Inc.",
@@ -3637,7 +3740,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.paloaltonetworks.com/",
     "current_ps_multiple": 33.3,
-    "target_ps_multiple": 27.27
+    "target_ps_multiple": 27.27,
+    "last_updated": "2026-08-18T18:11:08.447652+00:00"
   },
   "PAYX": {
     "name": "Paychex, Inc.",
@@ -3672,7 +3776,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.paychex.com/",
     "current_ps_multiple": 6.5,
-    "target_ps_multiple": 6.0
+    "target_ps_multiple": 6.0,
+    "last_updated": "2026-08-18T18:11:08.448800+00:00"
   },
   "PCAR": {
     "name": "PACCAR Inc",
@@ -3707,7 +3812,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.paccar.com/investors/",
     "current_ps_multiple": 2.4,
-    "target_ps_multiple": 2.18
+    "target_ps_multiple": 2.18,
+    "last_updated": "2026-08-18T18:11:08.448800+00:00"
   },
   "PDD": {
     "name": "PDD Holdings Inc.",
@@ -3742,7 +3848,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.pddholdings.com/",
     "current_ps_multiple": 1.1,
-    "target_ps_multiple": 1.26
+    "target_ps_multiple": 1.26,
+    "last_updated": "2026-08-18T18:11:08.449673+00:00"
   },
   "PEP": {
     "name": "PepsiCo, Inc.",
@@ -3777,7 +3884,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.pepsico.com/",
     "current_ps_multiple": 2.2,
-    "target_ps_multiple": 2.14
+    "target_ps_multiple": 2.14,
+    "last_updated": "2026-08-18T18:11:08.450181+00:00"
   },
   "PG": {
     "name": "The Procter & Gamble Company",
@@ -3812,7 +3920,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.pginvestor.com/",
     "current_ps_multiple": 3.8,
-    "target_ps_multiple": 3.64
+    "target_ps_multiple": 3.64,
+    "last_updated": "2026-08-18T18:11:08.450862+00:00"
   },
   "PLTR": {
     "name": "Palantir Technologies Inc.",
@@ -3847,7 +3956,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.palantir.com/",
     "current_ps_multiple": 88.2,
-    "target_ps_multiple": 61.74
+    "target_ps_multiple": 61.74,
+    "last_updated": "2026-08-18T18:11:08.450862+00:00"
   },
   "PYPL": {
     "name": "PayPal Holdings, Inc.",
@@ -3882,7 +3992,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.pypl.com/",
     "current_ps_multiple": 1.7,
-    "target_ps_multiple": 1.49
+    "target_ps_multiple": 1.49,
+    "last_updated": "2026-08-18T18:11:08.450862+00:00"
   },
   "QCOM": {
     "name": "QUALCOMM Incorporated",
@@ -3917,7 +4028,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.qualcomm.com/",
     "current_ps_multiple": 3.9,
-    "target_ps_multiple": 3.55
+    "target_ps_multiple": 3.55,
+    "last_updated": "2026-08-18T18:11:08.451869+00:00"
   },
   "REGN": {
     "name": "Regeneron Pharmaceuticals, Inc.",
@@ -3952,7 +4064,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.regeneron.com/",
     "current_ps_multiple": 5.9,
-    "target_ps_multiple": 5.45
+    "target_ps_multiple": 5.45,
+    "last_updated": "2026-08-18T18:11:08.451869+00:00"
   },
   "ROP": {
     "name": "Roper Technologies, Inc.",
@@ -3987,7 +4100,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.ropertech.com/",
     "current_ps_multiple": 5.0,
-    "target_ps_multiple": 4.46
+    "target_ps_multiple": 4.46,
+    "last_updated": "2026-08-18T18:11:08.452869+00:00"
   },
   "ROST": {
     "name": "Ross Stores, Inc.",
@@ -4022,7 +4136,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.rossstores.com/",
     "current_ps_multiple": 3.4,
-    "target_ps_multiple": 3.15
+    "target_ps_multiple": 3.15,
+    "last_updated": "2026-08-18T18:11:08.452869+00:00"
   },
   "SBUX": {
     "name": "Starbucks Corporation",
@@ -4057,7 +4172,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.starbucks.com/",
     "current_ps_multiple": 3.3,
-    "target_ps_multiple": 2.98
+    "target_ps_multiple": 2.98,
+    "last_updated": "2026-08-18T18:11:08.452869+00:00"
   },
   "SEDG": {
     "name": "SolarEdge Technologies, Inc.",
@@ -4092,7 +4208,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.solaredge.com/",
     "current_ps_multiple": 1.6,
-    "target_ps_multiple": 1.45
+    "target_ps_multiple": 1.45,
+    "last_updated": "2026-08-18T18:11:08.453869+00:00"
   },
   "SHOP": {
     "name": "Shopify Inc.",
@@ -4127,7 +4244,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.shopify.com/",
     "current_ps_multiple": 17.5,
-    "target_ps_multiple": 15.72
+    "target_ps_multiple": 15.72,
+    "last_updated": "2026-08-18T18:11:08.453869+00:00"
   },
   "SHW": {
     "name": "The Sherwin-Williams Company",
@@ -4162,7 +4280,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.sherwin-williams.com/",
     "current_ps_multiple": 3.6,
-    "target_ps_multiple": 3.23
+    "target_ps_multiple": 3.23,
+    "last_updated": "2026-08-18T18:11:08.453869+00:00"
   },
   "SLDP": {
     "name": "Solid Power, Inc.",
@@ -4197,7 +4316,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.solidpowerbattery.com/",
     "current_ps_multiple": 25.0,
-    "target_ps_multiple": 16.22
+    "target_ps_multiple": 16.22,
+    "last_updated": "2026-08-18T18:11:08.454869+00:00"
   },
   "SNPS": {
     "name": "Synopsys, Inc.",
@@ -4232,7 +4352,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.synopsys.com/",
     "current_ps_multiple": 11.0,
-    "target_ps_multiple": 10.1
+    "target_ps_multiple": 10.1,
+    "last_updated": "2026-08-18T18:11:08.454869+00:00"
   },
   "STOK": {
     "name": "Stoke Therapeutics, Inc.",
@@ -4267,7 +4388,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.stoketherapeutics.com/",
     "current_ps_multiple": 10.6,
-    "target_ps_multiple": 9.73
+    "target_ps_multiple": 9.73,
+    "last_updated": "2026-08-18T18:11:08.455869+00:00"
   },
   "STX": {
     "name": "Seagate Technology Holdings plc",
@@ -4302,7 +4424,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.seagate.com/",
     "current_ps_multiple": 18.3,
-    "target_ps_multiple": 15.0
+    "target_ps_multiple": 15.0,
+    "last_updated": "2026-08-18T18:11:08.455869+00:00"
   },
   "TDOC": {
     "name": "Teladoc Health, Inc.",
@@ -4337,7 +4460,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.teladochealth.com/",
     "current_ps_multiple": 0.5,
-    "target_ps_multiple": 0.52
+    "target_ps_multiple": 0.52,
+    "last_updated": "2026-08-18T18:11:08.455869+00:00"
   },
   "TEAM": {
     "name": "Atlassian Corporation",
@@ -4372,7 +4496,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.atlassian.com/",
     "current_ps_multiple": 6.3,
-    "target_ps_multiple": 5.64
+    "target_ps_multiple": 5.64,
+    "last_updated": "2026-08-18T18:11:08.456869+00:00"
   },
   "TMUS": {
     "name": "T-Mobile US, Inc.",
@@ -4407,7 +4532,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.t-mobile.com/",
     "current_ps_multiple": 2.2,
-    "target_ps_multiple": 2.06
+    "target_ps_multiple": 2.06,
+    "last_updated": "2026-08-18T18:11:08.456869+00:00"
   },
   "TRI": {
     "name": "Thomson Reuters Corporation",
@@ -4442,7 +4568,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.thomsonreuters.com/",
     "current_ps_multiple": 6.4,
-    "target_ps_multiple": 5.93
+    "target_ps_multiple": 5.93,
+    "last_updated": "2026-08-18T18:11:08.456869+00:00"
   },
   "TRV": {
     "name": "The Travelers Companies, Inc.",
@@ -4477,7 +4604,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.travelers.com/",
     "current_ps_multiple": 1.6,
-    "target_ps_multiple": 1.76
+    "target_ps_multiple": 1.76,
+    "last_updated": "2026-08-18T18:11:08.457869+00:00"
   },
   "TSLA": {
     "name": "Tesla, Inc.",
@@ -4512,7 +4640,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.tesla.com/",
     "current_ps_multiple": 13.8,
-    "target_ps_multiple": 11.73
+    "target_ps_multiple": 11.73,
+    "last_updated": "2026-08-18T18:11:08.457869+00:00"
   },
   "TTWO": {
     "name": "Take-Two Interactive Software, Inc.",
@@ -4547,7 +4676,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.take2games.com/ir",
     "current_ps_multiple": 6.9,
-    "target_ps_multiple": 6.2
+    "target_ps_multiple": 6.2,
+    "last_updated": "2026-08-18T18:11:08.459293+00:00"
   },
   "TXN": {
     "name": "Texas Instruments Incorporated",
@@ -4582,7 +4712,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.ti.com/",
     "current_ps_multiple": 14.2,
-    "target_ps_multiple": 13.1
+    "target_ps_multiple": 13.1,
+    "last_updated": "2026-08-18T18:11:08.459293+00:00"
   },
   "UNH": {
     "name": "UnitedHealth Group Incorporated",
@@ -4617,7 +4748,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.unitedhealthgroup.com/investors.html",
     "current_ps_multiple": 0.8,
-    "target_ps_multiple": 0.89
+    "target_ps_multiple": 0.89,
+    "last_updated": "2026-08-18T18:11:08.460148+00:00"
   },
   "V": {
     "name": "Visa Inc.",
@@ -4652,7 +4784,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.visa.com/",
     "current_ps_multiple": 4.2,
-    "target_ps_multiple": 3.98
+    "target_ps_multiple": 3.98,
+    "last_updated": "2026-08-18T18:11:08.461633+00:00"
   },
   "VRSK": {
     "name": "Verisk Analytics, Inc.",
@@ -4687,7 +4820,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.verisk.com/",
     "current_ps_multiple": 7.9,
-    "target_ps_multiple": 7.24
+    "target_ps_multiple": 7.24,
+    "last_updated": "2026-08-18T18:11:08.462140+00:00"
   },
   "VRTX": {
     "name": "Vertex Pharmaceuticals Incorporated",
@@ -4722,7 +4856,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.vrtx.com/",
     "current_ps_multiple": 11.1,
-    "target_ps_multiple": 10.54
+    "target_ps_multiple": 10.54,
+    "last_updated": "2026-08-18T18:11:08.462663+00:00"
   },
   "VZ": {
     "name": "Verizon Communications Inc.",
@@ -4757,7 +4892,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://www.verizon.com/about/investors",
     "current_ps_multiple": 1.5,
-    "target_ps_multiple": 1.32
+    "target_ps_multiple": 1.32,
+    "last_updated": "2026-08-18T18:11:08.463182+00:00"
   },
   "WBD": {
     "name": "Warner Bros. Discovery, Inc.",
@@ -4792,7 +4928,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.wbd.com/",
     "current_ps_multiple": 1.9,
-    "target_ps_multiple": 1.43
+    "target_ps_multiple": 1.43,
+    "last_updated": "2026-08-18T18:11:08.463182+00:00"
   },
   "WDAY": {
     "name": "Workday, Inc.",
@@ -4827,7 +4964,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.workday.com/",
     "current_ps_multiple": 5.1,
-    "target_ps_multiple": 4.47
+    "target_ps_multiple": 4.47,
+    "last_updated": "2026-08-18T18:11:08.464190+00:00"
   },
   "WDC": {
     "name": "Western Digital Corporation",
@@ -4862,7 +5000,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investor.wdc.com/",
     "current_ps_multiple": 14.3,
-    "target_ps_multiple": 12.87
+    "target_ps_multiple": 12.87,
+    "last_updated": "2026-08-18T18:11:08.464190+00:00"
   },
   "WMT": {
     "name": "Walmart Inc.",
@@ -4897,7 +5036,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://stock.walmart.com/",
     "current_ps_multiple": 1.3,
-    "target_ps_multiple": 1.2
+    "target_ps_multiple": 1.2,
+    "last_updated": "2026-08-18T18:11:08.464190+00:00"
   },
   "XEL": {
     "name": "Xcel Energy Inc.",
@@ -4932,7 +5072,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.xcelenergy.com/",
     "current_ps_multiple": 3.3,
-    "target_ps_multiple": 2.94
+    "target_ps_multiple": 2.94,
+    "last_updated": "2026-08-18T18:11:08.465191+00:00"
   },
   "XYZ": {
     "name": "Block, Inc.",
@@ -4967,7 +5108,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.block.xyz/",
     "current_ps_multiple": 2.0,
-    "target_ps_multiple": 2.2
+    "target_ps_multiple": 2.2,
+    "last_updated": "2026-08-18T18:11:08.465191+00:00"
   },
   "ZM": {
     "name": "Zoom Communications, Inc.",
@@ -5002,7 +5144,8 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://investors.zoom.us/",
     "current_ps_multiple": 6.4,
-    "target_ps_multiple": 5.75
+    "target_ps_multiple": 5.75,
+    "last_updated": "2026-08-18T18:11:08.466191+00:00"
   },
   "ZS": {
     "name": "Zscaler, Inc.",
@@ -5037,6 +5180,7 @@
     "dividend_proceeds": 0.0,
     "investor_relations_url": "https://ir.zscaler.com/",
     "current_ps_multiple": 11.1,
-    "target_ps_multiple": 9.98
+    "target_ps_multiple": 9.98,
+    "last_updated": "2026-08-18T18:11:08.466191+00:00"
   }
 }

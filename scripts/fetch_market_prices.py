@@ -22,7 +22,7 @@ def load_universe_symbols():
     symbols = set()
     if os.path.exists(data_dir):
         for fname in os.listdir(data_dir):
-            if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json"]:
+            if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
                 symbols.add(fname.replace(".json", ""))
     return sorted(list(symbols))
 
@@ -155,6 +155,7 @@ def fetch_ticker_quote_and_technicals(symbol):
             "technical_resistance_20d": tech_resistance_20d,
             "historical_candles_30d": candles[-30:],
             "as_of_timestamp": datetime.now(timezone.utc).isoformat(),
+            "last_updated": datetime.now(timezone.utc).isoformat(),
             "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
             "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
         }

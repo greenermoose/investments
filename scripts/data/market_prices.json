@@ -265,7 +265,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:14.165452+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:14.165452+00:00"
   },
   "ABNB": {
     "symbol": "ABNB",
@@ -533,7 +534,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:14.783161+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:14.783161+00:00"
   },
   "ADBE": {
     "symbol": "ADBE",
@@ -801,7 +803,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:15.254076+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:15.254076+00:00"
   },
   "ADI": {
     "symbol": "ADI",
@@ -1069,7 +1072,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:15.552461+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:15.552461+00:00"
   },
   "ADP": {
     "symbol": "ADP",
@@ -1337,7 +1341,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:15.881727+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:15.881727+00:00"
   },
   "ADSK": {
     "symbol": "ADSK",
@@ -1605,7 +1610,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:16.112793+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:16.112793+00:00"
   },
   "AEP": {
     "symbol": "AEP",
@@ -1873,7 +1879,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:16.353927+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:16.353927+00:00"
   },
   "ALNY": {
     "symbol": "ALNY",
@@ -2141,7 +2148,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:16.849433+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:16.849433+00:00"
   },
   "AMAT": {
     "symbol": "AMAT",
@@ -2409,7 +2417,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:17.093659+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:17.093659+00:00"
   },
   "AMD": {
     "symbol": "AMD",
@@ -2677,7 +2686,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:17.309790+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:17.309790+00:00"
   },
   "AMGN": {
     "symbol": "AMGN",
@@ -2945,7 +2955,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:17.601757+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:17.601757+00:00"
   },
   "AMZN": {
     "symbol": "AMZN",
@@ -3213,7 +3224,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:17.856167+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:17.856167+00:00"
   },
   "APP": {
     "symbol": "APP",
@@ -3481,7 +3493,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:18.097484+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:18.097484+00:00"
   },
   "ARM": {
     "symbol": "ARM",
@@ -3749,7 +3762,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:18.413634+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:18.413634+00:00"
   },
   "ASML": {
     "symbol": "ASML",
@@ -4017,7 +4031,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:18.684145+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:18.684145+00:00"
   },
   "AVGO": {
     "symbol": "AVGO",
@@ -4285,7 +4300,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:18.936069+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:18.936069+00:00"
   },
   "AXON": {
     "symbol": "AXON",
@@ -4553,7 +4569,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:19.133548+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:19.133548+00:00"
   },
   "AXP": {
     "symbol": "AXP",
@@ -4821,7 +4838,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:19.383205+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:19.383205+00:00"
   },
   "BA": {
     "symbol": "BA",
@@ -5089,7 +5107,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:19.929136+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:19.929136+00:00"
   },
   "BAM": {
     "symbol": "BAM",
@@ -5357,7 +5376,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:20.224623+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:20.224623+00:00"
   },
   "BEAM": {
     "symbol": "BEAM",
@@ -5625,7 +5645,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:20.415191+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:20.415191+00:00"
   },
   "BETA": {
     "symbol": "BETA",
@@ -5893,7 +5914,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:20.631802+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:20.631802+00:00"
   },
   "BKNG": {
     "symbol": "BKNG",
@@ -6161,7 +6183,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:20.950386+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:20.950386+00:00"
   },
   "BKR": {
     "symbol": "BKR",
@@ -6429,7 +6452,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:21.235746+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:21.235746+00:00"
   },
   "BRK-B": {
     "symbol": "BRK-B",
@@ -6697,7 +6721,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:21.465959+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:21.465959+00:00"
   },
   "CAT": {
     "symbol": "CAT",
@@ -6965,7 +6990,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:21.782911+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:21.782911+00:00"
   },
   "CCEP": {
     "symbol": "CCEP",
@@ -7233,7 +7259,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:22.043407+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:22.043407+00:00"
   },
   "CDNS": {
     "symbol": "CDNS",
@@ -7501,7 +7528,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:22.752791+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:22.752791+00:00"
   },
   "CEG": {
     "symbol": "CEG",
@@ -7769,7 +7797,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:23.104568+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:23.104568+00:00"
   },
   "CHTR": {
     "symbol": "CHTR",
@@ -8037,7 +8066,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:23.309956+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:23.309956+00:00"
   },
   "CMCSA": {
     "symbol": "CMCSA",
@@ -8305,7 +8335,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:23.695996+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:23.695996+00:00"
   },
   "COST": {
     "symbol": "COST",
@@ -8573,7 +8604,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:23.941348+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:23.941348+00:00"
   },
   "CPRT": {
     "symbol": "CPRT",
@@ -8841,7 +8873,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:24.178009+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:24.178009+00:00"
   },
   "CRM": {
     "symbol": "CRM",
@@ -9109,7 +9142,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:25.008004+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:25.008004+00:00"
   },
   "CRSP": {
     "symbol": "CRSP",
@@ -9377,7 +9411,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:25.206107+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:25.206107+00:00"
   },
   "CRWD": {
     "symbol": "CRWD",
@@ -9645,7 +9680,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:25.407985+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:25.407985+00:00"
   },
   "CSCO": {
     "symbol": "CSCO",
@@ -9913,7 +9949,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:32.594941+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:32.594941+00:00"
   },
   "CSGP": {
     "symbol": "CSGP",
@@ -10181,7 +10218,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:33.042433+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:33.042433+00:00"
   },
   "CSIQ": {
     "symbol": "CSIQ",
@@ -10449,7 +10487,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:33.649561+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:33.649561+00:00"
   },
   "CSX": {
     "symbol": "CSX",
@@ -10717,7 +10756,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:33.877408+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:33.877408+00:00"
   },
   "CTAS": {
     "symbol": "CTAS",
@@ -10985,7 +11025,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:41.281901+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:41.281901+00:00"
   },
   "CTSH": {
     "symbol": "CTSH",
@@ -11253,7 +11294,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:43.841434+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:43.841434+00:00"
   },
   "CVX": {
     "symbol": "CVX",
@@ -11521,7 +11563,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:44.428460+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:44.428460+00:00"
   },
   "DASH": {
     "symbol": "DASH",
@@ -11789,7 +11832,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:44.879203+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:44.879203+00:00"
   },
   "DDOG": {
     "symbol": "DDOG",
@@ -12057,7 +12101,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:45.822240+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:45.822240+00:00"
   },
   "DIS": {
     "symbol": "DIS",
@@ -12325,7 +12370,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:46.086295+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:46.086295+00:00"
   },
   "DXCM": {
     "symbol": "DXCM",
@@ -12593,7 +12639,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:46.310835+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:46.310835+00:00"
   },
   "EA": {
     "symbol": "EA",
@@ -12669,7 +12716,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:46.606432+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:46.606432+00:00"
   },
   "EDIT": {
     "symbol": "EDIT",
@@ -12937,7 +12985,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:46.830818+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:46.830818+00:00"
   },
   "ENPH": {
     "symbol": "ENPH",
@@ -13205,7 +13254,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:47.126698+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:47.126698+00:00"
   },
   "ENVX": {
     "symbol": "ENVX",
@@ -13473,7 +13523,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:47.351809+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:47.351809+00:00"
   },
   "EOSE": {
     "symbol": "EOSE",
@@ -13741,7 +13792,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:47.856729+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:47.856729+00:00"
   },
   "EXC": {
     "symbol": "EXC",
@@ -14009,7 +14061,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:48.192573+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:48.192573+00:00"
   },
   "FANG": {
     "symbol": "FANG",
@@ -14277,7 +14330,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:48.424388+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:48.424388+00:00"
   },
   "FAST": {
     "symbol": "FAST",
@@ -14545,7 +14599,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:48.738288+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:48.738288+00:00"
   },
   "FER": {
     "symbol": "FER",
@@ -14813,7 +14868,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:48.948988+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:48.948988+00:00"
   },
   "FTNT": {
     "symbol": "FTNT",
@@ -15081,7 +15137,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:49.151887+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:49.151887+00:00"
   },
   "GEHC": {
     "symbol": "GEHC",
@@ -15349,7 +15406,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:49.478890+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:49.478890+00:00"
   },
   "GILD": {
     "symbol": "GILD",
@@ -15617,7 +15675,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:49.697370+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:49.697370+00:00"
   },
   "GNRC": {
     "symbol": "GNRC",
@@ -15885,7 +15944,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:49.924287+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:49.924287+00:00"
   },
   "GOOG": {
     "symbol": "GOOG",
@@ -16153,7 +16213,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:50.148805+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:50.148805+00:00"
   },
   "GOOGL": {
     "symbol": "GOOGL",
@@ -16421,7 +16482,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:50.368456+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:50.368456+00:00"
   },
   "GS": {
     "symbol": "GS",
@@ -16689,7 +16751,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:50.701730+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:50.701730+00:00"
   },
   "GWH": {
     "symbol": "GWH",
@@ -16957,7 +17020,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:50.987302+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:50.987302+00:00"
   },
   "HD": {
     "symbol": "HD",
@@ -17225,7 +17289,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:51.314413+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:51.314413+00:00"
   },
   "HON": {
     "symbol": "HON",
@@ -17493,7 +17558,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:51.590939+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:51.590939+00:00"
   },
   "IBM": {
     "symbol": "IBM",
@@ -17761,7 +17827,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:51.956475+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:51.956475+00:00"
   },
   "IDXX": {
     "symbol": "IDXX",
@@ -18029,7 +18096,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:52.227397+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:52.227397+00:00"
   },
   "INSM": {
     "symbol": "INSM",
@@ -18297,7 +18365,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:52.475280+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:52.475280+00:00"
   },
   "INTC": {
     "symbol": "INTC",
@@ -18565,7 +18634,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:52.725240+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:52.725240+00:00"
   },
   "INTU": {
     "symbol": "INTU",
@@ -18833,7 +18903,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:52.962827+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:52.962827+00:00"
   },
   "ISRG": {
     "symbol": "ISRG",
@@ -19101,7 +19172,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:53.194682+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:53.194682+00:00"
   },
   "JNJ": {
     "symbol": "JNJ",
@@ -19369,7 +19441,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:53.468618+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:53.468618+00:00"
   },
   "JPM": {
     "symbol": "JPM",
@@ -19637,7 +19710,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:53.754596+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:53.754596+00:00"
   },
   "KDP": {
     "symbol": "KDP",
@@ -19905,7 +19979,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:54.444443+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:54.444443+00:00"
   },
   "KHC": {
     "symbol": "KHC",
@@ -20173,7 +20248,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:56.030024+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:56.030024+00:00"
   },
   "KLAC": {
     "symbol": "KLAC",
@@ -20441,7 +20517,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:56.253284+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:56.253284+00:00"
   },
   "KO": {
     "symbol": "KO",
@@ -20709,7 +20786,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:56.557076+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:56.557076+00:00"
   },
   "LIN": {
     "symbol": "LIN",
@@ -20977,7 +21055,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:56.815294+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:56.815294+00:00"
   },
   "LRCX": {
     "symbol": "LRCX",
@@ -21245,7 +21324,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:57.135973+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:57.135973+00:00"
   },
   "MA": {
     "symbol": "MA",
@@ -21513,7 +21593,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:57.377379+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:57.377379+00:00"
   },
   "MAR": {
     "symbol": "MAR",
@@ -21781,7 +21862,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:57.624702+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:57.624702+00:00"
   },
   "MCD": {
     "symbol": "MCD",
@@ -22049,7 +22131,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:57.891953+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:57.891953+00:00"
   },
   "MCHP": {
     "symbol": "MCHP",
@@ -22317,7 +22400,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:58.230033+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:58.230033+00:00"
   },
   "MDLZ": {
     "symbol": "MDLZ",
@@ -22585,7 +22669,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:58.458207+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:58.458207+00:00"
   },
   "MELI": {
     "symbol": "MELI",
@@ -22853,7 +22938,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:58.671695+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:58.671695+00:00"
   },
   "META": {
     "symbol": "META",
@@ -23121,7 +23207,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:59.030635+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:59.030635+00:00"
   },
   "MMM": {
     "symbol": "MMM",
@@ -23389,7 +23476,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:59.311628+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:59.311628+00:00"
   },
   "MNST": {
     "symbol": "MNST",
@@ -23657,7 +23745,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:59.581062+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:59.581062+00:00"
   },
   "MPWR": {
     "symbol": "MPWR",
@@ -23925,7 +24014,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:26:59.794678+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:26:59.794678+00:00"
   },
   "MRK": {
     "symbol": "MRK",
@@ -24193,7 +24283,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:00.218244+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:00.218244+00:00"
   },
   "MRVL": {
     "symbol": "MRVL",
@@ -24461,7 +24552,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:00.444361+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:00.444361+00:00"
   },
   "MSFT": {
     "symbol": "MSFT",
@@ -24729,7 +24821,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:00.828447+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:00.828447+00:00"
   },
   "MSTR": {
     "symbol": "MSTR",
@@ -24997,7 +25090,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:01.046343+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:01.046343+00:00"
   },
   "MU": {
     "symbol": "MU",
@@ -25265,7 +25359,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:01.305216+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:01.305216+00:00"
   },
   "NFLX": {
     "symbol": "NFLX",
@@ -25533,7 +25628,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:01.987685+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:01.987685+00:00"
   },
   "NKE": {
     "symbol": "NKE",
@@ -25801,7 +25897,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:02.246237+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:02.246237+00:00"
   },
   "NRGV": {
     "symbol": "NRGV",
@@ -26069,7 +26166,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:02.460346+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:02.460346+00:00"
   },
   "NTLA": {
     "symbol": "NTLA",
@@ -26337,7 +26435,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:02.734306+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:02.734306+00:00"
   },
   "NVDA": {
     "symbol": "NVDA",
@@ -26605,7 +26704,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:03.464918+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:03.464918+00:00"
   },
   "NXPI": {
     "symbol": "NXPI",
@@ -26873,7 +26973,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:04.570323+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:04.570323+00:00"
   },
   "ODFL": {
     "symbol": "ODFL",
@@ -27141,7 +27242,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:05.440729+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:05.440729+00:00"
   },
   "ORLY": {
     "symbol": "ORLY",
@@ -27409,7 +27511,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:05.665202+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:05.665202+00:00"
   },
   "PANW": {
     "symbol": "PANW",
@@ -27677,7 +27780,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:05.897363+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:05.897363+00:00"
   },
   "PAYX": {
     "symbol": "PAYX",
@@ -27945,7 +28049,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:06.275944+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:06.275944+00:00"
   },
   "PCAR": {
     "symbol": "PCAR",
@@ -28213,7 +28318,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:06.547478+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:06.547478+00:00"
   },
   "PDD": {
     "symbol": "PDD",
@@ -28481,7 +28587,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:06.767041+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:06.767041+00:00"
   },
   "PEP": {
     "symbol": "PEP",
@@ -28749,7 +28856,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:07.034124+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:07.034124+00:00"
   },
   "PG": {
     "symbol": "PG",
@@ -29017,7 +29125,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:07.398145+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:07.398145+00:00"
   },
   "PLTR": {
     "symbol": "PLTR",
@@ -29285,7 +29394,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:07.606328+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:07.606328+00:00"
   },
   "PYPL": {
     "symbol": "PYPL",
@@ -29553,7 +29663,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:07.856619+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:07.856619+00:00"
   },
   "QCOM": {
     "symbol": "QCOM",
@@ -29821,7 +29932,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:08.078770+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:08.078770+00:00"
   },
   "REGN": {
     "symbol": "REGN",
@@ -30089,7 +30201,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:08.298693+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:08.298693+00:00"
   },
   "ROP": {
     "symbol": "ROP",
@@ -30357,7 +30470,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:08.644635+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:08.644635+00:00"
   },
   "ROST": {
     "symbol": "ROST",
@@ -30625,7 +30739,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:08.905112+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:08.905112+00:00"
   },
   "SBUX": {
     "symbol": "SBUX",
@@ -30893,7 +31008,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:09.130175+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:09.130175+00:00"
   },
   "SEDG": {
     "symbol": "SEDG",
@@ -31161,7 +31277,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:09.444533+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:09.444533+00:00"
   },
   "SHOP": {
     "symbol": "SHOP",
@@ -31429,7 +31546,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:09.653935+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:09.653935+00:00"
   },
   "SHW": {
     "symbol": "SHW",
@@ -31697,7 +31815,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:10.007144+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:10.007144+00:00"
   },
   "SLDP": {
     "symbol": "SLDP",
@@ -31965,7 +32084,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:10.305352+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:10.305352+00:00"
   },
   "SNPS": {
     "symbol": "SNPS",
@@ -32233,7 +32353,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:10.558929+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:10.558929+00:00"
   },
   "STOK": {
     "symbol": "STOK",
@@ -32501,7 +32622,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:10.798041+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:10.798041+00:00"
   },
   "STX": {
     "symbol": "STX",
@@ -32769,7 +32891,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:11.117089+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:11.117089+00:00"
   },
   "TDOC": {
     "symbol": "TDOC",
@@ -33037,7 +33160,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:11.427531+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:11.427531+00:00"
   },
   "TEAM": {
     "symbol": "TEAM",
@@ -33305,7 +33429,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:12.416704+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:12.416704+00:00"
   },
   "TMUS": {
     "symbol": "TMUS",
@@ -33573,7 +33698,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:12.646289+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:12.646289+00:00"
   },
   "TRI": {
     "symbol": "TRI",
@@ -33841,7 +33967,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:12.902436+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:12.902436+00:00"
   },
   "TRV": {
     "symbol": "TRV",
@@ -34109,7 +34236,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:13.211988+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:13.211988+00:00"
   },
   "TSLA": {
     "symbol": "TSLA",
@@ -34377,7 +34505,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:13.461595+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:13.461595+00:00"
   },
   "TTWO": {
     "symbol": "TTWO",
@@ -34645,7 +34774,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:13.677893+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:13.677893+00:00"
   },
   "TXN": {
     "symbol": "TXN",
@@ -34913,7 +35043,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:13.967980+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:13.967980+00:00"
   },
   "UNH": {
     "symbol": "UNH",
@@ -35181,7 +35312,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:14.245328+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:14.245328+00:00"
   },
   "V": {
     "symbol": "V",
@@ -35449,7 +35581,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:14.831834+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:14.831834+00:00"
   },
   "VRSK": {
     "symbol": "VRSK",
@@ -35717,7 +35850,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:15.061561+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:15.061561+00:00"
   },
   "VRTX": {
     "symbol": "VRTX",
@@ -35985,7 +36119,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:15.261695+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:15.261695+00:00"
   },
   "VZ": {
     "symbol": "VZ",
@@ -36253,7 +36388,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:16.149092+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:16.149092+00:00"
   },
   "WBD": {
     "symbol": "WBD",
@@ -36521,7 +36657,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:16.384044+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:16.384044+00:00"
   },
   "WDAY": {
     "symbol": "WDAY",
@@ -36789,7 +36926,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:16.777453+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:16.777453+00:00"
   },
   "WDC": {
     "symbol": "WDC",
@@ -37057,7 +37195,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:17.108930+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:17.108930+00:00"
   },
   "WMT": {
     "symbol": "WMT",
@@ -37325,7 +37464,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:17.381792+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:17.381792+00:00"
   },
   "XEL": {
     "symbol": "XEL",
@@ -37593,7 +37733,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:17.667704+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:17.667704+00:00"
   },
   "XYZ": {
     "symbol": "XYZ",
@@ -37861,7 +38002,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:17.926891+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:17.926891+00:00"
   },
   "ZM": {
     "symbol": "ZM",
@@ -38129,7 +38271,8 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:18.161310+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:18.161310+00:00"
   },
   "ZS": {
     "symbol": "ZS",
@@ -38397,6 +38540,7 @@
     ],
     "as_of_timestamp": "2026-08-17T22:27:18.383319+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-    "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+    "provenance_source": "Direct Exchange / Yahoo Finance Chart API",
+    "last_updated": "2026-08-17T22:27:18.383319+00:00"
   }
 }

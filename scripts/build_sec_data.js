@@ -156,12 +156,13 @@ function processCompany(symbol, filings) {
         shares_outstanding: latestShares,
         ttm_revenue: bestTtmRevenue,
         total_debt: latestDebt,
-        cash_and_cash_equivalents: latestCash
+        cash_and_cash_equivalents: latestCash,
+        last_updated: new Date().toISOString()
     };
 }
 
 function main() {
-    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== 'universe.json' && f !== 'market_prices.json');
+    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== 'universe.json' && f !== 'market_prices.json' && f !== 'analyst_coverage_registry.json');
     const result = {};
 
     for (const file of files) {

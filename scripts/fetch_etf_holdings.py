@@ -5,6 +5,7 @@ Authoritative Extraction of ETF Constituents via SEC EDGAR Form NPORT-P & Fund F
 
 import argparse
 import csv
+from datetime import datetime, timezone
 import json
 import os
 import re
@@ -363,6 +364,7 @@ def fetch_etf_holdings(ticker, cik=None, headers=None):
         "report_date": filing_date,
         "accession_number": accn,
         "total_holdings_count": len(holdings),
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "holdings": holdings
     }
     

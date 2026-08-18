@@ -87,7 +87,7 @@ if os.path.exists(sec_data_path):
         sec_summary = json.load(f)
 
 # Iterate through all company files in http/data
-all_files = [f for f in os.listdir(http_data_dir) if f.endswith(".json") and f not in ["universe.json", "market_prices.json"]]
+all_files = [f for f in os.listdir(http_data_dir) if f.endswith(".json") and f not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]]
 
 universe = []
 updated_meta = {}
@@ -216,6 +216,7 @@ for filename in sorted(all_files):
     meta_copy["options_yield_pct"] = ret_params["options_yield_pct"]
     meta_copy["total_roi_pct"] = ret_params["total_roi_pct"]
     meta_copy["annualized_roi_pct"] = ret_params["annualized_roi_pct"]
+    meta_copy["last_updated"] = datetime.now(timezone.utc).isoformat()
     if "investor_relations_url" in meta:
         meta_copy["investor_relations_url"] = meta["investor_relations_url"]
     elif "investor_relations_url" in comp_data:
@@ -342,7 +343,8 @@ for filename in sorted(all_files):
         "shares_projections_6h": shares_projections_6h,
         "price_target_ranges_4h": price_target_ranges_4h,
         "analyst_price_targets": sym_targets,
-        "analyst_consensus": analyst_consensus
+        "analyst_consensus": analyst_consensus,
+        "last_updated": datetime.now(timezone.utc).isoformat()
     })
 
 # Save updated universe.json

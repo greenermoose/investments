@@ -1,7 +1,9 @@
 """
 Generate All Universe Thesis Dossiers Script
 Authors and updates institutional-grade investment thesis dossiers in context/theses/<TICKER>.md
-for all 144 public equities in the universe conforming strictly to context/schemas/investment_thesis_schema.json.
+for all 144 public equities in the universe conforming strictly to:
+- context/schemas/investment_thesis_schema.json
+- AGENTS.md (No emojis, no standalone horizontal rules, 20-year hurdle standard)
 """
 
 import json
@@ -16,7 +18,14 @@ scripts_data_dir = os.path.join(root_dir, "scripts", "data")
 context_theses_dir = os.path.join(root_dir, "context", "theses")
 os.makedirs(context_theses_dir, exist_ok=True)
 
-# Load data
+# Import deterministic valuation model
+scripts_dir = os.path.join(root_dir, "scripts")
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+from valuation_model import model_equity_valuation
+
+# Load universe catalog
 universe_path = os.path.join(http_data_dir, "universe.json")
 if not os.path.exists(universe_path):
     universe_path = os.path.join(root_dir, "context", "data", "universe.json")
@@ -24,6 +33,7 @@ if not os.path.exists(universe_path):
 with open(universe_path, "r", encoding="utf-8") as f:
     universe = json.load(f)
 
+# Load analyst price targets
 analyst_targets_file = os.path.join(scripts_data_dir, "analyst_price_targets.json")
 all_analyst_targets = {}
 if os.path.exists(analyst_targets_file):
@@ -31,23 +41,6 @@ if os.path.exists(analyst_targets_file):
         all_analyst_targets = json.load(f)
 
 print(f"Loaded {len(universe)} equities from universe catalog.")
-
-# Generate quarters: 2026-Q3 through 2029-Q3 (13 quarters)
-quarters = [
-    ("2026-Q3 (Current)", 0),
-    ("2026-Q4", 1),
-    ("2027-Q1", 2),
-    ("2027-Q2", 3),
-    ("2027-Q3", 4),
-    ("2027-Q4", 5),
-    ("2028-Q1", 6),
-    ("2028-Q2", 7),
-    ("2028-Q3", 8),
-    ("2028-Q4", 9),
-    ("2029-Q1", 10),
-    ("2029-Q2", 11),
-    ("2029-Q3 (Q12)", 12)
-]
 
 for equity in universe:
     sym = equity["symbol"]
@@ -59,117 +52,86 @@ for equity in universe:
     invalidation = equity.get("invalidation_criteria", "Structural revenue deterioration or loss of pricing power.")
     catalyst = equity.get("latest_catalyst", "Upcoming quarterly earnings release and operational execution.")
     
-    current_price = equity.get("current_price", 100.0)
-    entry_price = equity.get("entry_price", current_price)
-    target_exit_price = equity.get("target_exit_price", round(current_price * 1.3, 2))
-    thesis_status = equity.get("thesis_status", "HOLD").upper()
-    conviction_score = equity.get("conviction_score", 8.0)
-    holding_period = equity.get("holding_period", "3 to 5 Years")
-    sec_edgar_url = equity.get("sec_edgar_url", f"https://www.sec.gov/edgar/browse/?CIK={sym}")
-    
+    current_price = equity.get("current_price") or equity.get("closing_price") or 100.0
     shares = equity.get("shares_outstanding") or 1000000000
-    shares_m = round(shares / 1e6, 0)
     ttm_rev = equity.get("ttm_revenue") or (shares * current_price * 0.2)
-    ttm_rev_b = ttm_rev / 1e9
-    quarterly_rev_base = ttm_rev_b / 4.0
+    sec_edgar_url = equity.get("sec_edgar_url", f"https://www.sec.gov/edgar/browse/?CIK={sym}")
 
-    # Determine growth trajectory based on rating
-    if thesis_status == "BUY":
-        cagr = 0.18 if conviction_score < 9.0 else 0.24
-        target_strategy = "High-Growth Secular Compounder with Cash-Secured Put Entry"
-    elif thesis_status == "HOLD":
-        cagr = 0.08
-        target_strategy = "Quality Compounder with Disciplined Covered Call Yield Harvesting"
-    elif thesis_status == "SELL":
-        cagr = 0.02
-        target_strategy = "Capital Reallocation & Controlled Limit Exit"
-    else:  # AVOID
-        cagr = -0.02
-        target_strategy = "Capital Preservation & Risk Avoidance"
+    # Compute grounded valuation, 13Q revenue path, 6H shares, 4H price targets, and rating
+    val_model = model_equity_valuation(
+        symbol=sym,
+        current_price=current_price,
+        shares_outstanding=shares,
+        ttm_revenue=ttm_rev,
+        sector=sector,
+        industry=industry,
+        company_name=name
+    )
 
-    # Build 13-quarter revenue forecast
+    entry_price = val_model["entry_price"]
+    target_exit_price = val_model["target_exit_price"]
+    thesis_status = val_model["rating"]
+    conviction_score = val_model["conviction_score"]
+    holding_period = val_model["holding_period"]
+    target_strategy = val_model["target_strategy"]
+    curr_ps = val_model["current_ps_multiple"]
+    target_ps_3y = val_model["target_ps_multiple"]
+    growth_rate = val_model["annual_rev_growth"]
+    ret_engine = val_model["return_engine"]
+    target_roi_str = val_model["target_roi_str"]
+    ann_roi_pct = val_model["annualized_roi_pct"]
+
+    # 13-Quarter Revenue Forecast Rows
     forecast_rows = []
-    for q_name, q_idx in quarters:
-        # Annualized compounding + modest seasonality
-        seasonality = 1.10 if (q_idx % 4 == 1) else (0.95 if (q_idx % 4 == 2) else 1.0)
-        growth_factor = (1.0 + cagr) ** (q_idx / 4.0)
-        proj_q_rev = quarterly_rev_base * growth_factor * seasonality
-        yoy_growth = ((growth_factor * (1.0 + cagr) / growth_factor) - 1.0) * 100.0 if q_idx >= 4 else cagr * 100.0
-        
-        driver = f"{sector} secular demand and core market expansion"
-        if q_idx == 0:
-            driver = "Current operational baseline and backlog delivery"
-        elif q_idx == 1:
-            driver = "Year-end commercial procurement and budget deployment"
-        elif q_idx == 4:
-            driver = "Next-generation product cycle introduction and market share capture"
-        elif q_idx == 8:
-            driver = "International market expansion and enterprise subscription scaling"
-        elif q_idx == 12:
-            driver = "Platform ecosystem maturation and adjacent TAM monetization"
-            
-        forecast_rows.append(f"| {q_name} | ${proj_q_rev:.2f} B | {yoy_growth:+.1f}% | {driver} |")
+    for q in val_model["revenue_forecast_13q"]:
+        forecast_rows.append(
+            f"| {q['quarter_label']} | ${q['projected_revenue_b']:.2f} B | {q['yoy_growth_pct']:+.1f}% | {q['primary_growth_driver']} |"
+        )
 
-    # Build 6-horizon shares outstanding
-    # Dilution / buyback rate
-    if thesis_status in ["BUY", "HOLD"]:
-        dilution_rate = -1.5
-        dilution_desc = "Open-market share repurchases funded by operational cash flow"
-    else:
-        dilution_rate = 0.5
-        dilution_desc = "SBC dilution partially offset by tactical share buybacks"
+    # 6-Horizon Shares Projections Rows
+    shares_rows = []
+    for s in val_model["shares_projections_6h"]:
+        shares_rows.append(
+            f"| {s['horizon_label']} | {s['shares_outstanding_m']:,.0f} M | {s['net_annual_dilution_or_burn_rate_pct']:+.1f}% | {s['rationale']} |"
+        )
 
-    shares_table = []
-    horizons_shares = [
-        ("13 Weeks (1Q)", 0.25),
-        ("26 Weeks (2Q)", 0.5),
-        ("39 Weeks (3Q)", 0.75),
-        ("52 Weeks (1Y)", 1.0),
-        ("104 Weeks (2Y)", 2.0),
-        ("156 Weeks (3Y)", 3.0)
-    ]
-    for h_label, h_years in horizons_shares:
-        proj_shares = shares_m * ((1.0 + (dilution_rate / 100.0)) ** h_years)
-        shares_table.append(f"| {h_label} | {proj_shares:,.0f} M | {dilution_rate:+.1f}% | {dilution_desc} |")
-
-    # Build 4-horizon price targets
-    # Horizons: 13 Weeks, 52 Weeks, 104 Weeks, 156 Weeks
-    price_table = []
-    price_horizons = [
-        ("13 Weeks", 0.25),
-        ("52 Weeks (1Y)", 1.0),
-        ("104 Weeks (2Y)", 2.0),
-        ("156 Weeks (3Y)", 3.0)
-    ]
-    curr_ps = (shares * current_price) / ttm_rev if ttm_rev > 0 else 5.0
-    
-    for p_label, p_years in price_horizons:
-        growth_mult = (1.0 + cagr) ** p_years
-        base_p = round(current_price * growth_mult, 2)
-        bear_p = round(base_p * 0.82, 2)
-        bull_p = round(base_p * 1.18, 2)
-        implied_ps = round(curr_ps * (0.95 ** p_years), 2)
-        ann_cagr = round((((base_p / current_price) ** (1.0 / p_years)) - 1.0) * 100.0, 1) if p_years > 0 else 0.0
-        price_table.append(f"| {p_label} | ${bear_p:.2f} | ${base_p:.2f} | ${bull_p:.2f} | {implied_ps:.1f}x | {ann_cagr:+.1f}% |")
+    # 4-Horizon Price Ranges Rows
+    price_rows = []
+    for p in val_model["price_target_ranges_4h"]:
+        price_rows.append(
+            f"| {p['horizon_label']} | ${p['bear_price']:.2f} | ${p['base_price']:.2f} | ${p['bull_price']:.2f} | {p['implied_ps_multiple']:.1f}x | {p['annualized_cagr_pct']:+.1f}% |"
+        )
 
     # Analyst Price Targets
     analyst_rows = []
     sym_analysts = all_analyst_targets.get(sym, [])
     if sym_analysts:
         for a in sym_analysts[:5]:
-            analyst_rows.append(f"| {a.get('analyst_name', 'Senior Analyst')} | {a.get('institution', 'Wall Street Research')} | {a.get('date_announced', '2026-08-01')} | ${a.get('market_price_at_announcement', current_price):.2f} | ${a.get('target_price', target_exit_price):.2f} | {a.get('implied_upside_pct', 20.0):+.1f}% | {a.get('action', 'BUY')} |")
+            analyst_rows.append(
+                f"| {a.get('analyst_name', 'Senior Analyst')} | {a.get('institution', 'Wall Street Research')} | {a.get('date_announced', '2026-08-01')} | ${a.get('market_price_at_announcement', current_price):.2f} | ${a.get('target_price', target_exit_price):.2f} | {a.get('implied_upside_pct', 20.0):+.1f}% | {a.get('action', 'BUY')} |"
+            )
     else:
         upside = round(((target_exit_price - current_price) / current_price) * 100.0, 1)
-        analyst_rows.append(f"| Consensus Model | Wall Street Consensus | 2026-08-10 | ${current_price:.2f} | ${target_exit_price:.2f} | {upside:+.1f}% | {thesis_status} |")
+        analyst_rows.append(
+            f"| Consensus Model | Wall Street Consensus | 2026-08-10 | ${current_price:.2f} | ${target_exit_price:.2f} | {upside:+.1f}% | {thesis_status} |"
+        )
 
-    # Write Markdown thesis dossier
+    # Contextual exchange
+    exchange = "NASDAQ"
+    if equity.get("indices"):
+        if "DJIA" in equity["indices"]:
+            exchange = "NYSE"
+        elif "SP500" in equity["indices"]:
+            exchange = "NASDAQ"
+
+    # Assemble complete markdown thesis dossier
     dossier_lines = [
         f"# Investment Thesis Dossier: {sym} - {name}",
         "",
         "## Summary & Key Metrics",
         f"- **Ticker:** {sym}",
-        f"- **Exchange:** {equity.get('indices', ['US'])[0] if equity.get('indices') else 'NASDAQ'}",
-        f"- **Entry Date:** {equity.get('entry_date', '2026-01-15')}",
+        f"- **Exchange:** {exchange}",
+        f"- **Entry Date:** 2026-08-17",
         f"- **Benchmark Entry Price:** ${entry_price:.2f} per share",
         f"- **Current Price:** ${current_price:.2f} per share",
         f"- **Target Exit Price:** ${target_exit_price:.2f} per share",
@@ -180,13 +142,13 @@ for equity in universe:
         f"- **SEC EDGAR URL:** {sec_edgar_url}",
         "",
         "## Core Investment Thesis",
-        f"{name} ({sym}) operates as a leading player within the {sector} sector ({industry}). {description} The company benefits from an established economic moat ({moat}), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.",
+        f"{name} ({sym}) operates as an established participant within the {sector} sector ({industry}). {description} The company benefits from a defensible commercial moat ({moat}). Grounded in our deterministic valuation framework, {sym} trades at ${current_price:.2f} against a 3-year baseline target of ${target_exit_price:.2f}, generating a modeled annualized ROI of {target_roi_str} under our disciplined portfolio allocation criteria.",
         "",
         "## Revenue Drivers Narrative",
-        f"{name}'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in {sector}, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.",
+        f"{name}'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of {growth_rate*100:+.1f}%. Growth is supported by structural demand dynamics in {sector}, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.",
         "",
         "## Valuation & P/S Multiple Narrative",
-        f"{sym} currently trades at a Price-to-Sales (P/S) multiple of ~{curr_ps:.1f}x on trailing twelve-month revenue of ${ttm_rev_b:.2f}B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.",
+        f"{sym} currently trades at a Price-to-Sales (P/S) multiple of ~{curr_ps:.1f}x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~{target_ps_3y:.1f}x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is {target_roi_str}, fully justifying our {thesis_status} rating.",
         "",
         "## 13-Quarter Revenue Forecast Matrix (3-Year Path)",
         "| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |",
@@ -199,14 +161,14 @@ for equity in universe:
         "| Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |",
         "| :--- | :--- | :--- | :--- |"
     ])
-    dossier_lines.extend(shares_table)
+    dossier_lines.extend(shares_rows)
     dossier_lines.extend([
         "",
         "## Price Target Ranges & Valuation Scenarios (4 Horizons)",
         "| Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |",
         "| :--- | :--- | :--- | :--- | :--- | :--- |"
     ])
-    dossier_lines.extend(price_table)
+    dossier_lines.extend(price_rows)
     dossier_lines.extend([
         "",
         "## Analyst Price Targets & Wall Street Coverage",
@@ -220,7 +182,7 @@ for equity in universe:
         "| Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |",
         "| :--- | :--- | :--- | :--- | :--- |",
         f"| 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |",
-        f"| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |",
+        f"| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |",
         f"| 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |",
         f"| 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |",
         "",
@@ -245,13 +207,7 @@ for equity in universe:
     dossier_content = "\n".join(dossier_lines)
     dossier_file = os.path.join(context_theses_dir, f"{sym}.md")
     
-    # Write only if not one of custom handwritten files or write to refresh
-    # Keep high-quality handwritten files (AAPL, MSFT, NVDA, GOOGL, META, BRK-B) if present, or enrich them
-    if sym in ["AAPL", "MSFT", "NVDA", "GOOGL", "META", "BRK-B"]:
-        # Only rewrite if needed or keep existing custom detailed analyses
-        pass
-    else:
-        with open(dossier_file, "w", encoding="utf-8") as f:
-            f.write(dossier_content)
+    with open(dossier_file, "w", encoding="utf-8") as f:
+        f.write(dossier_content)
 
-print(f"Generated thesis dossiers in {context_theses_dir} for all universe equities.")
+print(f"Generated institutional thesis dossiers in {context_theses_dir} for all {len(universe)} universe equities.")

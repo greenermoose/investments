@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** UNH
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $395.62 per share
 - **Current Price:** $395.62 per share
-- **Target Exit Price:** $538.24 per share
+- **Target Exit Price:** $567.55 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.2 / 10.0
+- **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=731766
 
 ## Core Investment Thesis
-UnitedHealth Group Incorporated (UNH) operates as a leading player within the Health Care sector (Managed Care & Healthcare Services (Optum)). Diversified healthcare company operating UnitedHealthcare (health benefits) and Optum (OptumHealth clinical care, OptumRx pharmacy benefit manager, Optum Insight data analytics). The company benefits from an established economic moat (Massive healthcare ecosystem integrating insurance with clinical care and pharmacy benefits, unmatched data analytics, and high return on capital (>22% ROIC).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+UnitedHealth Group Incorporated (UNH) operates as an established participant within the Health Care sector (Managed Care & Healthcare Services (Optum)). Diversified healthcare company operating UnitedHealthcare (health benefits) and Optum (OptumHealth clinical care, OptumRx pharmacy benefit manager, Optum Insight data analytics). The company benefits from a defensible commercial moat (Massive healthcare ecosystem integrating insurance with clinical care and pharmacy benefits, unmatched data analytics, and high return on capital (>22% ROIC).). Grounded in our deterministic valuation framework, UNH trades at $395.62 against a 3-year baseline target of $567.55, generating a modeled annualized ROI of 15.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-UnitedHealth Group Incorporated's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+UnitedHealth Group Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +8.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twelve-month revenue of $446.07B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $111.52 B | +8.0% | Current operational baseline and backlog delivery |
+| 2026-Q3 (Current) | $111.52 B | +8.0% | Current operational baseline and contract fulfillment |
 | 2026-Q4 | $125.05 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $110.10 B | +8.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $118.14 B | +8.0% | Health Care secular demand and core market expansion |
+| 2027-Q1 | $110.10 B | +8.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $118.14 B | +8.0% | Health Care core demand expansion and operational execution |
 | 2027-Q3 | $120.44 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $135.06 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $118.91 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $127.60 B | +8.0% | Health Care secular demand and core market expansion |
+| 2027-Q4 | $135.06 B | +8.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $118.91 B | +8.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $127.60 B | +8.0% | Health Care core demand expansion and operational execution |
 | 2028-Q3 | $130.07 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $145.86 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $128.42 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $137.80 B | +8.0% | Health Care secular demand and core market expansion |
+| 2028-Q4 | $145.86 B | +8.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $128.42 B | +8.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $137.80 B | +8.0% | Health Care core demand expansion and operational execution |
 | 2029-Q3 (Q12) | $140.48 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 905 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 901 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 898 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 894 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 881 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 868 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 906 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 903 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 901 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 899 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 890 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 881 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $330.71 | $403.31 | $475.91 | 0.8x | +8.0% |
-| 52 Weeks (1Y) | $350.36 | $427.27 | $504.18 | 0.8x | +8.0% |
-| 104 Weeks (2Y) | $378.39 | $461.45 | $544.51 | 0.7x | +8.0% |
-| 156 Weeks (3Y) | $408.66 | $498.37 | $588.08 | 0.7x | +8.0% |
+| 13 Weeks | $316.98 | $396.23 | $475.48 | 0.8x | +0.6% |
+| 52 Weeks (1Y) | $356.66 | $445.83 | $535.00 | 0.8x | +12.7% |
+| 104 Weeks (2Y) | $401.90 | $502.37 | $602.84 | 0.9x | +12.7% |
+| 156 Weeks (3Y) | $451.98 | $564.98 | $677.98 | 0.9x | +12.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

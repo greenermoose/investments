@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** DXCM
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $88.76 per share
 - **Current Price:** $88.76 per share
-- **Target Exit Price:** $148.00 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 8.6 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $122.85 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.5 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1093557
 
 ## Core Investment Thesis
-DexCom, Inc. (DXCM) operates as a leading player within the Health Care sector (Continuous Glucose Monitoring (CGM)). Designs, develops, and commercializes continuous glucose monitoring (CGM) systems for people with diabetes (Dexcom G7 and Stelo). The company benefits from an established economic moat (Sensor accuracy and automated insulin pump integration leadership, recurring high-margin sensor patch subscriptions, Stelo OTC expansion.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+DexCom, Inc. (DXCM) operates as an established participant within the Health Care sector (Continuous Glucose Monitoring (CGM)). Designs, develops, and commercializes continuous glucose monitoring (CGM) systems for people with diabetes (Dexcom G7 and Stelo). The company benefits from a defensible commercial moat (Sensor accuracy and automated insulin pump integration leadership, recurring high-margin sensor patch subscriptions, Stelo OTC expansion.). Grounded in our deterministic valuation framework, DXCM trades at $88.76 against a 3-year baseline target of $122.85, generating a modeled annualized ROI of 13.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-DexCom, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+DexCom, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +16.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing twelve-month revenue of $4.59B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.15 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.32 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.19 B | +18.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $1.30 B | +18.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $1.36 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.55 B | +18.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $1.40 B | +18.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $1.53 B | +18.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $1.60 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.83 B | +18.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $1.65 B | +18.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $1.81 B | +18.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.89 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.15 B | +16.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.31 B | +16.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.18 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $1.28 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $1.33 B | +16.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.52 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $1.36 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $1.49 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $1.55 B | +16.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $1.76 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $1.58 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $1.73 B | +16.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $1.79 B | +16.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 385 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 383 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 382 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 380 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 375 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 369 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 386 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 387 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 387 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 388 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 390 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 392 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $75.86 | $92.51 | $109.16 | 7.4x | +18.0% |
-| 52 Weeks (1Y) | $85.89 | $104.74 | $123.59 | 7.1x | +18.0% |
-| 104 Weeks (2Y) | $101.34 | $123.59 | $145.84 | 6.7x | +18.0% |
-| 156 Weeks (3Y) | $119.59 | $145.84 | $172.09 | 6.4x | +18.0% |
+| 13 Weeks | $72.13 | $90.16 | $108.19 | 7.3x | +6.5% |
+| 52 Weeks (1Y) | $79.26 | $99.07 | $118.88 | 7.2x | +11.6% |
+| 104 Weeks (2Y) | $88.26 | $110.33 | $132.40 | 7.0x | +11.5% |
+| 156 Weeks (3Y) | $98.27 | $122.84 | $147.41 | 6.7x | +11.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

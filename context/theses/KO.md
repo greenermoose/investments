@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** KO
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $86.98 per share
 - **Current Price:** $86.98 per share
-- **Target Exit Price:** $118.34 per share
-- **Expected Holding Period:** 5+ Years
-- **Conviction Score:** 8.8 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Target Exit Price:** $95.75 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=21344
 
 ## Core Investment Thesis
-The Coca-Cola Company (KO) operates as a leading player within the Consumer Staples sector (Non-Alcoholic Beverages & Global Franchising). World's largest non-alcoholic beverage company, marketing over 200 brands including Coca-Cola, Sprite, Fanta, Dasani, Minute Maid, and Costa Coffee across 200+ countries. The company benefits from an established economic moat (Unmatched global bottling and distribution network, massive brand equity and consumer pricing power, asset-light franchising model generating >28% operating margins.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+The Coca-Cola Company (KO) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Global Franchising). World's largest non-alcoholic beverage company, marketing over 200 brands including Coca-Cola, Sprite, Fanta, Dasani, Minute Maid, and Costa Coffee across 200+ countries. The company benefits from a defensible commercial moat (Unmatched global bottling and distribution network, massive brand equity and consumer pricing power, asset-light franchising model generating >28% operating margins.). Grounded in our deterministic valuation framework, KO trades at $86.98 against a 3-year baseline target of $95.75, generating a modeled annualized ROI of 3.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-The Coca-Cola Company's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Staples, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+The Coca-Cola Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue of $48.59B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $12.15 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $13.62 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.99 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q2 | $12.87 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q3 | $13.12 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.71 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q1 | $12.95 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q2 | $13.90 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q3 | $14.17 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $15.89 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q1 | $13.99 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q2 | $15.01 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q3 (Q12) | $15.30 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $12.15 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $13.49 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $11.77 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q2 | $12.51 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q3 | $12.63 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $14.03 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q1 | $12.24 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q2 | $13.01 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | $13.14 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $14.60 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q1 | $12.73 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q2 | $13.53 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $13.66 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 4,285 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 4,269 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 4,253 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 4,236 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 4,173 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 4,110 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 4,290 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 4,279 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 4,269 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 4,258 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 4,215 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 4,173 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $72.71 | $88.67 | $104.63 | 7.6x | +8.0% |
-| 52 Weeks (1Y) | $77.03 | $93.94 | $110.85 | 7.3x | +8.0% |
-| 104 Weeks (2Y) | $83.19 | $101.45 | $119.71 | 7.0x | +8.0% |
-| 156 Weeks (3Y) | $89.85 | $109.57 | $129.29 | 6.6x | +8.0% |
+| 13 Weeks | $69.04 | $86.30 | $103.56 | 7.5x | -3.1% |
+| 52 Weeks (1Y) | $71.90 | $89.87 | $107.84 | 7.6x | +3.3% |
+| 104 Weeks (2Y) | $74.22 | $92.77 | $111.32 | 7.4x | +3.3% |
+| 156 Weeks (3Y) | $76.63 | $95.79 | $114.95 | 7.3x | +3.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twel
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

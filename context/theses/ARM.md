@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ARM
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $271.43 per share
 - **Current Price:** $271.43 per share
-- **Target Exit Price:** $601.31 per share
+- **Target Exit Price:** $351.60 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.3 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.9 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1973239
 
 ## Core Investment Thesis
-Arm Holdings plc (ARM) operates as a leading player within the Information Technology sector (Semiconductor IP & Architecture). Architects, develops, and licenses high-performance, low-power CPU architectures used in >99% of global smartphones, AI data centers, and IoT. The company benefits from an established economic moat (Universal low-power computing architecture standard, software ecosystem optimization, royalty rate doubling with Armv9 transition.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Arm Holdings plc (ARM) operates as an established participant within the Information Technology sector (Semiconductor IP & Architecture). Architects, develops, and licenses high-performance, low-power CPU architectures used in >99% of global smartphones, AI data centers, and IoT. The company benefits from a defensible commercial moat (Universal low-power computing architecture standard, software ecosystem optimization, royalty rate doubling with Armv9 transition.). Grounded in our deterministic valuation framework, ARM trades at $271.43 against a 3-year baseline target of $351.60, generating a modeled annualized ROI of 9.0% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Arm Holdings plc's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Arm Holdings plc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +24.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing twelve-month revenue of $4.72B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~43.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.18 B | +24.0% | Current operational baseline and backlog delivery |
+| 2026-Q3 (Current) | $1.18 B | +24.0% | Current operational baseline and contract fulfillment |
 | 2026-Q4 | $1.37 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.25 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $1.39 B | +24.0% | Information Technology secular demand and core market expansion |
+| 2027-Q1 | $1.25 B | +24.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $1.39 B | +24.0% | Information Technology core demand expansion and operational execution |
 | 2027-Q3 | $1.46 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.70 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $1.55 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $1.72 B | +24.0% | Information Technology secular demand and core market expansion |
+| 2027-Q4 | $1.70 B | +24.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $1.55 B | +24.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $1.72 B | +24.0% | Information Technology core demand expansion and operational execution |
 | 2028-Q3 | $1.81 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.11 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $1.92 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $2.13 B | +24.0% | Information Technology secular demand and core market expansion |
+| 2028-Q4 | $2.11 B | +24.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $1.92 B | +24.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.13 B | +24.0% | Information Technology core demand expansion and operational execution |
 | 2029-Q3 (Q12) | $2.25 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,064 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 1,060 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 1,056 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 1,052 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 1,036 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 1,021 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 1,071 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 1,073 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 1,076 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 1,079 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 1,089 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 1,100 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $234.87 | $286.43 | $337.99 | 60.6x | +24.0% |
-| 52 Weeks (1Y) | $275.99 | $336.57 | $397.15 | 58.4x | +24.0% |
-| 104 Weeks (2Y) | $342.23 | $417.35 | $492.47 | 55.4x | +24.0% |
-| 156 Weeks (3Y) | $424.36 | $517.51 | $610.66 | 52.7x | +24.0% |
+| 13 Weeks | $224.00 | $280.00 | $336.00 | 60.2x | +13.2% |
+| 52 Weeks (1Y) | $240.20 | $300.25 | $360.30 | 55.3x | +10.6% |
+| 104 Weeks (2Y) | $261.51 | $326.89 | $392.27 | 49.1x | +9.7% |
+| 156 Weeks (3Y) | $281.29 | $351.61 | $421.93 | 43.0x | +9.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

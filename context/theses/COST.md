@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** COST
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $953.50 per share
 - **Current Price:** $953.50 per share
-- **Target Exit Price:** $1297.23 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.0 / 10.0
+- **Target Exit Price:** $1378.34 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.9 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=909832
 
 ## Core Investment Thesis
-Costco Wholesale Corporation (COST) operates as a leading player within the Consumer Staples sector (Consumer Staples Merchandise Retail). Operates membership warehouses based on the concept of offering low prices on a limited selection of brand-name and private-label products. The company benefits from an established economic moat (Scale economies shared, unmatched membership renewal rates (>93% North America), Kirkland Signature private brand power.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Costco Wholesale Corporation (COST) operates as an established participant within the Consumer Staples sector (Consumer Staples Merchandise Retail). Operates membership warehouses based on the concept of offering low prices on a limited selection of brand-name and private-label products. The company benefits from a defensible commercial moat (Scale economies shared, unmatched membership renewal rates (>93% North America), Kirkland Signature private brand power.). Grounded in our deterministic valuation framework, COST trades at $953.50 against a 3-year baseline target of $1378.34, generating a modeled annualized ROI of 15.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Costco Wholesale Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Staples, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Costco Wholesale Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-COST currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing twelve-month revenue of $275.24B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+COST currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $68.81 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $77.16 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $67.93 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q2 | $72.90 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q3 | $74.31 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $83.33 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q1 | $73.37 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q2 | $78.73 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q3 | $80.26 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $90.00 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q1 | $79.24 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q2 | $85.03 B | +8.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q3 (Q12) | $86.68 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $68.81 B | +9.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $77.34 B | +9.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $68.25 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q2 | $73.40 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q3 | $75.00 B | +9.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $84.30 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q1 | $74.39 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q2 | $80.01 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | $81.75 B | +9.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $91.89 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q1 | $81.08 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q2 | $87.21 B | +9.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $89.11 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 442 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 441 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 439 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 437 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 431 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 424 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 443 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 443 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 442 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 442 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 440 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 437 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $797.06 | $972.02 | $1146.98 | 1.5x | +8.0% |
-| 52 Weeks (1Y) | $844.42 | $1029.78 | $1215.14 | 1.5x | +8.0% |
-| 104 Weeks (2Y) | $911.97 | $1112.16 | $1312.35 | 1.4x | +8.0% |
-| 156 Weeks (3Y) | $984.93 | $1201.14 | $1417.35 | 1.3x | +8.0% |
+| 13 Weeks | $764.78 | $955.98 | $1147.18 | 1.5x | +1.0% |
+| 52 Weeks (1Y) | $863.21 | $1079.01 | $1294.81 | 1.6x | +13.2% |
+| 104 Weeks (2Y) | $976.74 | $1220.93 | $1465.12 | 1.6x | +13.2% |
+| 156 Weeks (3Y) | $1103.10 | $1378.87 | $1654.64 | 1.7x | +13.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ COST currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

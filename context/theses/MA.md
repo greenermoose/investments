@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** MA
-- **Exchange:** SP500
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $562.26 per share
 - **Current Price:** $562.26 per share
-- **Target Exit Price:** $764.95 per share
+- **Target Exit Price:** $764.36 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.4 / 10.0
+- **Conviction Score:** 9.1 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1141391
 
 ## Core Investment Thesis
-Mastercard Incorporated (MA) operates as a leading player within the Financials sector (Transaction & Payment Processing). Global payments technology company connecting consumers, financial institutions, merchants, and governments across more than 210 countries and territories. The company benefits from an established economic moat (Global payment duopoly with Visa, immense network effects, tollbooth business model with 57%+ operating margins, and high inflation resilience.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Mastercard Incorporated (MA) operates as an established participant within the Financials sector (Transaction & Payment Processing). Global payments technology company connecting consumers, financial institutions, merchants, and governments across more than 210 countries and territories. The company benefits from a defensible commercial moat (Global payment duopoly with Visa, immense network effects, tollbooth business model with 57%+ operating margins, and high inflation resilience.). Grounded in our deterministic valuation framework, MA trades at $562.26 against a 3-year baseline target of $764.36, generating a modeled annualized ROI of 13.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Mastercard Incorporated's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Financials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Mastercard Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +11.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twelve-month revenue of $32.38B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~14.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.10 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $9.08 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $7.99 B | +8.0% | Financials secular demand and core market expansion |
-| 2027-Q2 | $8.58 B | +8.0% | Financials secular demand and core market expansion |
-| 2027-Q3 | $8.74 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $9.80 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q1 | $8.63 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q2 | $9.26 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q3 | $9.44 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $10.59 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q1 | $9.32 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q2 | $10.00 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $10.20 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $8.10 B | +11.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $9.14 B | +11.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $8.10 B | +11.0% | Financials core demand expansion and operational execution |
+| 2027-Q2 | $8.75 B | +11.0% | Financials core demand expansion and operational execution |
+| 2027-Q3 | $8.99 B | +11.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $10.15 B | +11.0% | Financials core demand expansion and operational execution |
+| 2028-Q1 | $8.99 B | +11.0% | Financials core demand expansion and operational execution |
+| 2028-Q2 | $9.72 B | +11.0% | Financials core demand expansion and operational execution |
+| 2028-Q3 | $9.97 B | +11.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $11.26 B | +11.0% | Financials core demand expansion and operational execution |
+| 2029-Q1 | $9.98 B | +11.0% | Financials core demand expansion and operational execution |
+| 2029-Q2 | $10.79 B | +11.0% | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $11.07 B | +11.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 884 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 880 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 877 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 874 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 861 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 848 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 884 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 880 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 877 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 874 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 861 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 848 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $470.01 | $573.18 | $676.35 | 15.2x | +8.0% |
-| 52 Weeks (1Y) | $497.94 | $607.24 | $716.54 | 14.6x | +8.0% |
-| 104 Weeks (2Y) | $537.77 | $655.82 | $773.87 | 13.9x | +8.0% |
-| 156 Weeks (3Y) | $580.80 | $708.29 | $835.78 | 13.2x | +8.0% |
+| 13 Weeks | $454.18 | $567.72 | $681.26 | 15.1x | +3.9% |
+| 52 Weeks (1Y) | $498.53 | $623.16 | $747.79 | 15.1x | +10.8% |
+| 104 Weeks (2Y) | $552.08 | $690.10 | $828.12 | 14.9x | +10.8% |
+| 156 Weeks (3Y) | $611.52 | $764.40 | $917.28 | 14.6x | +10.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

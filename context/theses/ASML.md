@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ASML
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1883.12 per share
 - **Current Price:** $1883.12 per share
-- **Target Exit Price:** $4171.74 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.6 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $2723.09 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 9.1 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=937966
 
 ## Core Investment Thesis
-ASML Holding N.V. (ASML) operates as a leading player within the Information Technology sector (Semiconductor Equipment). Manufacturer of photolithography systems used in semiconductor manufacturing, with an exclusive monopoly in extreme ultraviolet (EUV) lithography. The company benefits from an established economic moat (100% global monopoly on EUV and High-NA EUV lithography systems required for all sub-5nm logic and advanced DRAM manufacturing.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+ASML Holding N.V. (ASML) operates as an established participant within the Information Technology sector (Semiconductor Equipment). Manufacturer of photolithography systems used in semiconductor manufacturing, with an exclusive monopoly in extreme ultraviolet (EUV) lithography. The company benefits from a defensible commercial moat (100% global monopoly on EUV and High-NA EUV lithography systems required for all sub-5nm logic and advanced DRAM manufacturing.). Grounded in our deterministic valuation framework, ASML trades at $1883.12 against a 3-year baseline target of $2723.09, generating a modeled annualized ROI of 15.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-ASML Holding N.V.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+ASML Holding N.V.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +19.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing twelve-month revenue of $32.67B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~18.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.17 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $9.48 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.64 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $9.60 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $10.13 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $11.76 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $10.71 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $11.90 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $12.56 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $14.58 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $13.28 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $14.76 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $15.57 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $8.17 B | +19.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $9.38 B | +19.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $8.46 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $9.30 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $9.72 B | +19.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $11.17 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $10.07 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $11.07 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $11.57 B | +19.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $13.29 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $11.99 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $13.18 B | +19.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $13.76 B | +19.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 384 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 382 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 381 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 379 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 374 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 368 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 384 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 382 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 381 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 379 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 374 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 368 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1629.47 | $1987.16 | $2344.85 | 21.9x | +24.0% |
-| 52 Weeks (1Y) | $1914.76 | $2335.07 | $2755.38 | 21.1x | +24.0% |
-| 104 Weeks (2Y) | $2374.30 | $2895.49 | $3416.68 | 20.1x | +24.0% |
-| 156 Weeks (3Y) | $2944.13 | $3590.40 | $4236.67 | 19.1x | +24.0% |
+| 13 Weeks | $1547.82 | $1934.78 | $2321.74 | 21.8x | +11.4% |
+| 52 Weeks (1Y) | $1711.92 | $2139.90 | $2567.88 | 20.9x | +13.6% |
+| 104 Weeks (2Y) | $1933.64 | $2417.05 | $2900.46 | 19.5x | +13.3% |
+| 156 Weeks (3Y) | $2178.28 | $2722.85 | $3267.42 | 18.2x | +13.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

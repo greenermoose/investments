@@ -15,7 +15,8 @@ scripts_dir = os.path.dirname(os.path.abspath(__file__))
 if scripts_dir not in sys.path:
     sys.path.insert(0, scripts_dir)
 
-from return_engine import calculate_annualized_roi, derive_company_thesis_parameters
+from return_engine import calculate_annualized_roi
+from valuation_model import model_equity_valuation
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -154,42 +155,52 @@ for filename in sorted(all_files):
     tech_resistance_20d = price_info.get("technical_resistance_20d", round(current_price * 1.05, 2))
     historical_candles = price_info.get("historical_candles_30d", [])
 
-    # Run thesis parameters through Return Engine
+    # Run thesis parameters through fundamental Valuation Model & Return Engine
     comp_name = meta.get("name") or price_info.get("name") or f"{sym} Corporation"
-    return_params = derive_company_thesis_parameters(
+    sector_val = meta.get("sector", "Information Technology")
+    industry_val = meta.get("industry", "US Equity")
+    
+    val_model = model_equity_valuation(
         symbol=sym,
         current_price=current_price,
-        thesis_status=thesis_status,
-        conviction_score=conviction_score,
-        holding_period=holding_period,
+        shares_outstanding=shares or 1e9,
+        ttm_revenue=ttm_rev or (current_price * (shares or 1e9) * 0.2),
+        sector=sector_val,
+        industry=industry_val,
         company_name=comp_name
     )
 
-    entry_price = return_params["benchmark_entry_price"]
-    target_exit_price = return_params["target_exit_price"]
-    target_roi_str = return_params["target_roi_str"]
+    thesis_status = val_model["rating"]
+    conviction_score = val_model["conviction_score"]
+    entry_price = val_model["entry_price"]
+    target_exit_price = val_model["target_exit_price"]
+    target_roi_str = val_model["target_roi_str"]
+    ret_params = val_model["return_engine"]
 
     # Update meta entry for persistent grounding
     meta_copy = dict(meta)
+    meta_copy["thesis_status"] = thesis_status
+    meta_copy["conviction_score"] = conviction_score
     meta_copy["current_price"] = current_price
     meta_copy["entry_price"] = entry_price
     meta_copy["target_exit_price"] = target_exit_price
     meta_copy["target_roi"] = target_roi_str
-    meta_copy["entry_strategy"] = return_params["entry_strategy"]
-    meta_copy["exit_strategy"] = return_params["exit_strategy"]
-    meta_copy["entry_date"] = return_params["entry_date"]
-    meta_copy["target_exit_date"] = return_params["target_exit_date"]
-    meta_copy["csp_proceeds"] = return_params["csp_proceeds"]
-    meta_copy["cc_proceeds"] = return_params["cc_proceeds"]
-    meta_copy["initial_capital_outlay"] = return_params["initial_capital_outlay"]
-    meta_copy["total_proceeds"] = return_params["total_proceeds"]
-    meta_copy["net_profit"] = return_params["net_profit"]
-    meta_copy["holding_period_days"] = return_params["holding_period_days"]
-    meta_copy["holding_period_years"] = return_params["holding_period_years"]
-    meta_copy["capital_gain_pct"] = return_params["capital_gain_pct"]
-    meta_copy["options_yield_pct"] = return_params["options_yield_pct"]
-    meta_copy["total_roi_pct"] = return_params["total_roi_pct"]
-    meta_copy["annualized_roi_pct"] = return_params["annualized_roi_pct"]
+    meta_copy["entry_strategy"] = ret_params["entry_strategy"]
+    meta_copy["exit_strategy"] = ret_params["exit_strategy"]
+    meta_copy["entry_date"] = ret_params["entry_date"]
+    meta_copy["target_exit_date"] = ret_params["target_exit_date"]
+    meta_copy["csp_proceeds"] = ret_params["csp_proceeds"]
+    meta_copy["cc_proceeds"] = ret_params["cc_proceeds"]
+    meta_copy["dividend_proceeds"] = ret_params.get("dividend_proceeds", 0.0)
+    meta_copy["initial_capital_outlay"] = ret_params["initial_capital_outlay"]
+    meta_copy["total_proceeds"] = ret_params["total_proceeds"]
+    meta_copy["net_profit"] = ret_params["net_profit"]
+    meta_copy["holding_period_days"] = ret_params["holding_period_days"]
+    meta_copy["holding_period_years"] = ret_params["holding_period_years"]
+    meta_copy["capital_gain_pct"] = ret_params["capital_gain_pct"]
+    meta_copy["options_yield_pct"] = ret_params["options_yield_pct"]
+    meta_copy["total_roi_pct"] = ret_params["total_roi_pct"]
+    meta_copy["annualized_roi_pct"] = ret_params["annualized_roi_pct"]
     updated_meta[sym] = meta_copy
 
     # Market Cap & Enterprise Value
@@ -259,22 +270,22 @@ for filename in sorted(all_files):
         "technical_resistance_20d": tech_resistance_20d,
         "holding_period": holding_period,
         "target_roi": target_roi_str,
-        "entry_strategy": return_params["entry_strategy"],
-        "exit_strategy": return_params["exit_strategy"],
-        "entry_date": return_params["entry_date"],
-        "target_exit_date": return_params["target_exit_date"],
-        "csp_proceeds": return_params["csp_proceeds"],
-        "cc_proceeds": return_params["cc_proceeds"],
-        "dividend_proceeds": return_params["dividend_proceeds"],
-        "initial_capital_outlay": return_params["initial_capital_outlay"],
-        "total_proceeds": return_params["total_proceeds"],
-        "net_profit": return_params["net_profit"],
-        "holding_period_days": return_params["holding_period_days"],
-        "holding_period_years": return_params["holding_period_years"],
-        "capital_gain_pct": return_params["capital_gain_pct"],
-        "options_yield_pct": return_params["options_yield_pct"],
-        "total_roi_pct": return_params["total_roi_pct"],
-        "annualized_roi_pct": return_params["annualized_roi_pct"],
+        "entry_strategy": ret_params["entry_strategy"],
+        "exit_strategy": ret_params["exit_strategy"],
+        "entry_date": ret_params["entry_date"],
+        "target_exit_date": ret_params["target_exit_date"],
+        "csp_proceeds": ret_params["csp_proceeds"],
+        "cc_proceeds": ret_params["cc_proceeds"],
+        "dividend_proceeds": ret_params.get("dividend_proceeds", 0.0),
+        "initial_capital_outlay": ret_params["initial_capital_outlay"],
+        "total_proceeds": ret_params["total_proceeds"],
+        "net_profit": ret_params["net_profit"],
+        "holding_period_days": ret_params["holding_period_days"],
+        "holding_period_years": ret_params["holding_period_years"],
+        "capital_gain_pct": ret_params["capital_gain_pct"],
+        "options_yield_pct": ret_params["options_yield_pct"],
+        "total_roi_pct": ret_params["total_roi_pct"],
+        "annualized_roi_pct": ret_params["annualized_roi_pct"],
         "moat": meta.get("moat", "Established commercial moat and customer retention."),
         "invalidation_criteria": meta.get("invalidation_criteria", "Structural margin deterioration or loss of market share."),
         "latest_catalyst": meta.get("latest_catalyst", "Upcoming quarterly earnings and operational updates."),

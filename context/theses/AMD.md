@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** AMD
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $506.00 per share
 - **Current Price:** $506.00 per share
-- **Target Exit Price:** $843.77 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 8.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $724.08 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.8 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=2488
 
 ## Core Investment Thesis
-Advanced Micro Devices, Inc. (AMD) operates as a leading player within the Information Technology sector (Semiconductors). Develops high-performance computing, graphics, and visualization technologies including EPYC CPUs, Ryzen, and Instinct AI accelerators. The company benefits from an established economic moat (EPYC server CPU market share momentum vs Intel, chiplet manufacturing architecture, open ROCm software stack.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Advanced Micro Devices, Inc. (AMD) operates as an established participant within the Information Technology sector (Semiconductors). Develops high-performance computing, graphics, and visualization technologies including EPYC CPUs, Ryzen, and Instinct AI accelerators. The company benefits from a defensible commercial moat (EPYC server CPU market share momentum vs Intel, chiplet manufacturing architecture, open ROCm software stack.). Grounded in our deterministic valuation framework, AMD trades at $506.00 against a 3-year baseline target of $724.08, generating a modeled annualized ROI of 15% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Advanced Micro Devices, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Advanced Micro Devices, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +21.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMD currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing twelve-month revenue of $34.62B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+AMD currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~19.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.66 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $9.92 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.93 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $9.80 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $10.21 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $11.71 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $10.54 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $11.56 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $12.05 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $13.82 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $12.44 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $13.64 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $14.22 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $8.66 B | +21.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $9.99 B | +21.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $9.04 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $9.99 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $10.47 B | +21.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $12.08 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $10.94 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $12.08 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $12.67 B | +21.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $14.62 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $13.24 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $14.62 B | +21.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $15.33 B | +21.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,625 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 1,619 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 1,613 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 1,607 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 1,582 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 1,559 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 1,633 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 1,635 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 1,637 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 1,639 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 1,647 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 1,656 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $432.45 | $527.38 | $622.31 | 23.5x | +18.0% |
-| 52 Weeks (1Y) | $489.61 | $597.08 | $704.55 | 22.6x | +18.0% |
-| 104 Weeks (2Y) | $577.73 | $704.55 | $831.37 | 21.5x | +18.0% |
-| 156 Weeks (3Y) | $681.72 | $831.37 | $981.02 | 20.4x | +18.0% |
+| 13 Weeks | $415.55 | $519.44 | $623.33 | 23.4x | +11.1% |
+| 52 Weeks (1Y) | $458.42 | $573.03 | $687.64 | 22.4x | +13.2% |
+| 104 Weeks (2Y) | $516.02 | $645.02 | $774.02 | 21.0x | +12.9% |
+| 156 Weeks (3Y) | $579.31 | $724.14 | $868.97 | 19.5x | +12.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

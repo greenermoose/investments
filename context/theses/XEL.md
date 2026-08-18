@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** XEL
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $79.21 per share
 - **Current Price:** $79.21 per share
-- **Target Exit Price:** $79.21 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.0 / 10.0
-- **Rating:** SELL
-- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Target Exit Price:** $78.96 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.2 / 10.0
+- **Rating:** AVOID
+- **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=72903
 
 ## Core Investment Thesis
-Xcel Energy Inc. (XEL) operates as a leading player within the Utilities sector (Regulated Clean Energy Utility). Regulated electric and natural gas delivery company serving 3.7 million electricity and 2.1 million natural gas customers across eight Western and Midwestern states. The company benefits from an established economic moat (Regulated monopoly service territories, high rate-base growth supporting renewable energy transition and data center power demand.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Xcel Energy Inc. (XEL) operates as an established participant within the Utilities sector (Regulated Clean Energy Utility). Regulated electric and natural gas delivery company serving 3.7 million electricity and 2.1 million natural gas customers across eight Western and Midwestern states. The company benefits from a defensible commercial moat (Regulated monopoly service territories, high rate-base growth supporting renewable energy transition and data center power demand.). Grounded in our deterministic valuation framework, XEL trades at $79.21 against a 3-year baseline target of $78.96, generating a modeled annualized ROI of -0.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Xcel Energy Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Utilities, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Xcel Energy Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-XEL currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue of $15.13B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+XEL currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.1%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $3.78 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $4.18 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $3.63 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q2 | $3.84 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q3 | $3.86 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $4.26 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q1 | $3.70 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q2 | $3.92 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q3 | $3.94 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $4.35 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q1 | $3.78 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q2 | $3.99 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q3 (Q12) | $4.01 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $3.78 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $4.20 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $3.66 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2027-Q2 | $3.90 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2027-Q3 | $3.93 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $4.37 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2028-Q1 | $3.81 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2028-Q2 | $4.05 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2028-Q3 | $4.09 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $4.54 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2029-Q1 | $3.96 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2029-Q2 | $4.21 B | +4.0% | Utilities core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $4.25 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 625 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 626 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 626 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 627 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 630 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 633 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 625 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 626 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 626 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 627 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 630 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 633 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $65.27 | $79.60 | $93.93 | 3.2x | +2.0% |
-| 52 Weeks (1Y) | $66.25 | $80.79 | $95.33 | 3.1x | +2.0% |
-| 104 Weeks (2Y) | $67.58 | $82.41 | $97.24 | 3.0x | +2.0% |
-| 156 Weeks (3Y) | $68.93 | $84.06 | $99.19 | 2.8x | +2.0% |
+| 13 Weeks | $62.63 | $78.29 | $93.95 | 3.2x | -4.6% |
+| 52 Weeks (1Y) | $63.41 | $79.26 | $95.11 | 3.2x | +0.1% |
+| 104 Weeks (2Y) | $63.31 | $79.14 | $94.97 | 3.0x | -0.0% |
+| 156 Weeks (3Y) | $63.20 | $79.00 | $94.80 | 2.9x | -0.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ XEL currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

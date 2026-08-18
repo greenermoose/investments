@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ODFL
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $211.96 per share
 - **Current Price:** $211.96 per share
-- **Target Exit Price:** $288.37 per share
+- **Target Exit Price:** $239.30 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.2 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 8.0 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=878927
 
 ## Core Investment Thesis
-Old Dominion Freight Line, Inc. (ODFL) operates as a leading player within the Industrials sector (Less-Than-Truckload (LTL) Freight). Leading North American less-than-truckload (LTL) motor carrier providing regional, inter-regional, and national shipping services. The company benefits from an established economic moat (Best-in-class service quality (99% on-time delivery, 0.2% cargo claims ratio), industry-leading operating ratio (<75%), premium pricing power.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Old Dominion Freight Line, Inc. (ODFL) operates as an established participant within the Industrials sector (Less-Than-Truckload (LTL) Freight). Leading North American less-than-truckload (LTL) motor carrier providing regional, inter-regional, and national shipping services. The company benefits from a defensible commercial moat (Best-in-class service quality (99% on-time delivery, 0.2% cargo claims ratio), industry-leading operating ratio (<75%), premium pricing power.). Grounded in our deterministic valuation framework, ODFL trades at $211.96 against a 3-year baseline target of $239.30, generating a modeled annualized ROI of 4.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Old Dominion Freight Line, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Industrials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Old Dominion Freight Line, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing twelve-month revenue of $5.52B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.38 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.55 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.36 B | +8.0% | Industrials secular demand and core market expansion |
-| 2027-Q2 | $1.46 B | +8.0% | Industrials secular demand and core market expansion |
-| 2027-Q3 | $1.49 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.67 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q1 | $1.47 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q2 | $1.58 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q3 | $1.61 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.81 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q1 | $1.59 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q2 | $1.71 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.74 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.38 B | +6.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.54 B | +6.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.35 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2027-Q2 | $1.44 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2027-Q3 | $1.46 B | +6.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.63 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q1 | $1.43 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q2 | $1.53 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q3 | $1.55 B | +6.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $1.73 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q1 | $1.52 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q2 | $1.62 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $1.64 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 207 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 206 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 206 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 205 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 202 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 199 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 207 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 207 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 206 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 206 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 204 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 202 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $177.19 | $216.08 | $254.97 | 7.9x | +8.0% |
-| 52 Weeks (1Y) | $187.71 | $228.92 | $270.13 | 7.6x | +8.0% |
-| 104 Weeks (2Y) | $202.73 | $247.23 | $291.73 | 7.2x | +8.0% |
-| 156 Weeks (3Y) | $218.95 | $267.01 | $315.07 | 6.8x | +8.0% |
+| 13 Weeks | $169.04 | $211.30 | $253.56 | 7.8x | -1.2% |
+| 52 Weeks (1Y) | $176.77 | $220.96 | $265.15 | 7.8x | +4.2% |
+| 104 Weeks (2Y) | $183.98 | $229.97 | $275.96 | 7.6x | +4.2% |
+| 156 Weeks (3Y) | $191.49 | $239.36 | $287.23 | 7.3x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

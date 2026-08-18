@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** CRM
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $190.97 per share
 - **Current Price:** $190.97 per share
-- **Target Exit Price:** $423.06 per share
+- **Target Exit Price:** $239.59 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.1 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.6 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1108524
 
 ## Core Investment Thesis
-Salesforce, Inc. (CRM) operates as a leading player within the Information Technology sector (Enterprise Cloud CRM & Applications). Provides customer relationship management technology including Sales Cloud, Service Cloud, Marketing Cloud, Data Cloud, and Agentforce AI platform. The company benefits from an established economic moat (Mission-critical enterprise software system of record, sticky multi-cloud customer relationships, Data Cloud integration, and expanding 30%+ non-GAAP operating margins.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Salesforce, Inc. (CRM) operates as an established participant within the Information Technology sector (Enterprise Cloud CRM & Applications). Provides customer relationship management technology including Sales Cloud, Service Cloud, Marketing Cloud, Data Cloud, and Agentforce AI platform. The company benefits from a defensible commercial moat (Mission-critical enterprise software system of record, sticky multi-cloud customer relationships, Data Cloud integration, and expanding 30%+ non-GAAP operating margins.). Grounded in our deterministic valuation framework, CRM trades at $190.97 against a 3-year baseline target of $239.59, generating a modeled annualized ROI of 7.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Salesforce, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Salesforce, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twelve-month revenue of $41.46B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $10.36 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $12.03 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $10.96 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $12.18 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $12.85 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.92 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $13.60 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $15.10 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $15.94 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $18.50 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $16.86 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $18.73 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $19.76 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $10.36 B | +10.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $11.68 B | +10.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $10.33 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $11.13 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $11.40 B | +10.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $12.84 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $11.36 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $12.25 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $12.54 B | +10.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $14.13 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $12.50 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $13.47 B | +10.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $13.79 B | +10.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 920 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 916 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 913 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 909 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 896 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 882 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 920 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 916 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 913 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 909 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 896 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 882 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $165.25 | $201.52 | $237.79 | 4.2x | +24.0% |
-| 52 Weeks (1Y) | $194.18 | $236.80 | $279.42 | 4.0x | +24.0% |
-| 104 Weeks (2Y) | $240.78 | $293.64 | $346.50 | 3.8x | +24.0% |
-| 156 Weeks (3Y) | $298.57 | $364.11 | $429.65 | 3.6x | +24.0% |
+| 13 Weeks | $153.91 | $192.39 | $230.87 | 4.2x | +3.0% |
+| 52 Weeks (1Y) | $164.98 | $206.23 | $247.48 | 4.1x | +8.0% |
+| 104 Weeks (2Y) | $177.77 | $222.21 | $266.65 | 4.0x | +7.9% |
+| 156 Weeks (3Y) | $191.50 | $239.37 | $287.24 | 3.8x | +7.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

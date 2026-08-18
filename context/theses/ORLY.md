@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ORLY
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $90.23 per share
 - **Current Price:** $90.23 per share
-- **Target Exit Price:** $122.76 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.3 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Target Exit Price:** $113.23 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.8 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=898173
 
 ## Core Investment Thesis
-O'Reilly Automotive, Inc. (ORLY) operates as a leading player within the Consumer Discretionary sector (Automotive Aftermarket Retail). Retailer and supplier of automotive aftermarket parts, tools, supplies, equipment, and accessories serving both DIY and professional service providers. The company benefits from an established economic moat (Dual-market strategy (DIY + Professional DIFM), hub-and-spoke parts availability within hours, aging US vehicle fleet (avg 12.6 years).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+O'Reilly Automotive, Inc. (ORLY) operates as an established participant within the Consumer Discretionary sector (Automotive Aftermarket Retail). Retailer and supplier of automotive aftermarket parts, tools, supplies, equipment, and accessories serving both DIY and professional service providers. The company benefits from a defensible commercial moat (Dual-market strategy (DIY + Professional DIFM), hub-and-spoke parts availability within hours, aging US vehicle fleet (avg 12.6 years).). Grounded in our deterministic valuation framework, ORLY trades at $90.23 against a 3-year baseline target of $113.23, generating a modeled annualized ROI of 7.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-O'Reilly Automotive, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+O'Reilly Automotive, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ORLY currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelve-month revenue of $17.93B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ORLY currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $4.48 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $5.03 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $4.42 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $4.75 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $4.84 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $5.43 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $4.78 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $5.13 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $5.23 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $5.86 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $5.16 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $5.54 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $5.65 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $4.48 B | +7.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $5.01 B | +7.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $4.40 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $4.72 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $4.80 B | +7.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $5.37 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $4.71 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $5.05 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $5.13 B | +7.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $5.74 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $5.04 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $5.40 B | +7.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $5.49 B | +7.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 826 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 823 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 820 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 817 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 804 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 792 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 824 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 819 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 813 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 808 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 788 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 768 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $75.42 | $91.98 | $108.54 | 4.1x | +8.0% |
-| 52 Weeks (1Y) | $79.91 | $97.45 | $114.99 | 4.0x | +8.0% |
-| 104 Weeks (2Y) | $86.30 | $105.24 | $124.18 | 3.8x | +8.0% |
-| 156 Weeks (3Y) | $93.20 | $113.66 | $134.12 | 3.6x | +8.0% |
+| 13 Weeks | $72.40 | $90.50 | $108.60 | 4.1x | +1.2% |
+| 52 Weeks (1Y) | $77.91 | $97.39 | $116.87 | 4.1x | +7.9% |
+| 104 Weeks (2Y) | $84.02 | $105.03 | $126.04 | 4.0x | +7.9% |
+| 156 Weeks (3Y) | $90.64 | $113.30 | $135.96 | 4.0x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ ORLY currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

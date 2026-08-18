@@ -6,56 +6,56 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $32.13 per share
 - **Current Price:** $32.13 per share
-- **Target Exit Price:** $32.13 per share
-- **Expected Holding Period:** Avoid
-- **Conviction Score:** 4.2 / 10.0
-- **Rating:** AVOID
-- **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Target Exit Price:** $36.22 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.8 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1623526
 
 ## Core Investment Thesis
-Stoke Therapeutics, Inc. (STOK) operates as a leading player within the Health Care sector (RNA Splicing Therapeutics). Biotechnology company pioneering antisense oligonucleotides (TANGO platform) to restore protein levels in severe genetic diseases like Dravet syndrome. The company benefits from an established economic moat (Proprietary TANGO RNA upregulation platform; offset by early-stage clinical risks, lack of commercial revenues, and ongoing equity financing needs.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Stoke Therapeutics, Inc. (STOK) operates as an established participant within the Health Care sector (RNA Splicing Therapeutics). Biotechnology company pioneering antisense oligonucleotides (TANGO platform) to restore protein levels in severe genetic diseases like Dravet syndrome. The company benefits from a defensible commercial moat (Proprietary TANGO RNA upregulation platform; offset by early-stage clinical risks, lack of commercial revenues, and ongoing equity financing needs.). Grounded in our deterministic valuation framework, STOK trades at $32.13 against a 3-year baseline target of $36.22, generating a modeled annualized ROI of 4.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Stoke Therapeutics, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Stoke Therapeutics, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-STOK currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing twelve-month revenue of $0.19B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+STOK currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.05 B | -2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $0.05 B | -2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.04 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $0.05 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $0.05 B | -2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $0.05 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $0.04 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $0.05 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $0.05 B | -2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $0.05 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $0.04 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $0.04 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $0.04 B | -2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $0.05 B | +7.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $0.05 B | +7.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $0.05 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $0.05 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $0.05 B | +7.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $0.06 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $0.05 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $0.05 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $0.05 B | +7.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $0.06 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $0.05 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $0.06 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $0.06 B | +7.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 62 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 62 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 62 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 62 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 63 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 63 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 62 M | +0.0% | Stable share count with neutral dilution |
+| 26 Weeks (2Q) | 62 M | +0.0% | Stable share count with neutral dilution |
+| 39 Weeks (3Q) | 62 M | +0.0% | Stable share count with neutral dilution |
+| 52 Weeks (1Y) | 62 M | +0.0% | Stable share count with neutral dilution |
+| 104 Weeks (2Y) | 62 M | +0.0% | Stable share count with neutral dilution |
+| 156 Weeks (3Y) | 62 M | +0.0% | Stable share count with neutral dilution |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $26.22 | $31.97 | $37.72 | 10.4x | -2.0% |
-| 52 Weeks (1Y) | $25.82 | $31.49 | $37.16 | 10.1x | -2.0% |
-| 104 Weeks (2Y) | $25.31 | $30.86 | $36.41 | 9.5x | -2.0% |
-| 156 Weeks (3Y) | $24.80 | $30.24 | $35.68 | 9.1x | -2.0% |
+| 13 Weeks | $25.62 | $32.02 | $38.42 | 10.4x | -1.4% |
+| 52 Weeks (1Y) | $26.78 | $33.47 | $40.16 | 10.3x | +4.2% |
+| 104 Weeks (2Y) | $27.85 | $34.81 | $41.77 | 10.0x | +4.1% |
+| 156 Weeks (3Y) | $28.97 | $36.21 | $43.45 | 9.7x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ STOK currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

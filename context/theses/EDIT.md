@@ -6,56 +6,56 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $2.84 per share
 - **Current Price:** $2.84 per share
-- **Target Exit Price:** $2.84 per share
-- **Expected Holding Period:** Avoid
-- **Conviction Score:** 3.5 / 10.0
+- **Target Exit Price:** $2.22 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 5.5 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650664
 
 ## Core Investment Thesis
-Editas Medicine, Inc. (EDIT) operates as a leading player within the Health Care sector (Gene Editing Medicines). Clinical-stage genome editing company developing treatments for hemoglobinopathies and oncology using CRISPR/Cas12a and Cas9 technologies. The company benefits from an established economic moat (CRISPR patent rights; offset by chronic cash burn, early-stage pipeline, and significant dilution risk.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Editas Medicine, Inc. (EDIT) operates as an established participant within the Health Care sector (Gene Editing Medicines). Clinical-stage genome editing company developing treatments for hemoglobinopathies and oncology using CRISPR/Cas12a and Cas9 technologies. The company benefits from a defensible commercial moat (CRISPR patent rights; offset by chronic cash burn, early-stage pipeline, and significant dilution risk.). Grounded in our deterministic valuation framework, EDIT trades at $2.84 against a 3-year baseline target of $2.22, generating a modeled annualized ROI of -7.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Editas Medicine, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Editas Medicine, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing twelve-month revenue of $0.02B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -7.9%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.00 B | -2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $0.01 B | -2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $0.00 B | -2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $0.00 B | -2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $0.00 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $0.00 B | -2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $0.00 B | +10.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $0.01 B | +10.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $0.00 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $0.00 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $0.01 B | +10.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $0.01 B | +10.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $0.01 B | +10.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $0.01 B | +10.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 98 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 98 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 98 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 98 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 99 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 99 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 99 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 100 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 101 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 101 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 105 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 109 M | +3.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $2.32 | $2.83 | $3.34 | 14.8x | -1.4% |
-| 52 Weeks (1Y) | $2.28 | $2.78 | $3.28 | 14.2x | -2.1% |
-| 104 Weeks (2Y) | $2.24 | $2.73 | $3.22 | 13.5x | -2.0% |
-| 156 Weeks (3Y) | $2.19 | $2.67 | $3.15 | 12.8x | -2.0% |
+| 13 Weeks | $2.26 | $2.83 | $3.40 | 14.6x | -1.4% |
+| 52 Weeks (1Y) | $2.14 | $2.67 | $3.20 | 13.2x | -6.0% |
+| 104 Weeks (2Y) | $1.97 | $2.46 | $2.95 | 11.4x | -6.9% |
+| 156 Weeks (3Y) | $1.78 | $2.22 | $2.66 | 9.7x | -7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

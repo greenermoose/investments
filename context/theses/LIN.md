@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** LIN
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $474.33 per share
 - **Current Price:** $474.33 per share
-- **Target Exit Price:** $645.32 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.0 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Target Exit Price:** $495.12 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.4 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1707925
 
 ## Core Investment Thesis
-Linde plc (LIN) operates as a leading player within the Materials sector (Industrial Gases). Leading global industrial gases and engineering company serving chemicals, refining, healthcare, electronics, and manufacturing. The company benefits from an established economic moat (Oligopolistic pricing power, long-term take-or-pay on-site pipeline contracts (15-20 years), essential input for high-tech semiconductor fabs.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Linde plc (LIN) operates as an established participant within the Materials sector (Industrial Gases). Leading global industrial gases and engineering company serving chemicals, refining, healthcare, electronics, and manufacturing. The company benefits from a defensible commercial moat (Oligopolistic pricing power, long-term take-or-pay on-site pipeline contracts (15-20 years), essential input for high-tech semiconductor fabs.). Grounded in our deterministic valuation framework, LIN trades at $474.33 against a 3-year baseline target of $495.12, generating a modeled annualized ROI of 1.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Linde plc's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Materials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Linde plc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Materials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue of $34.00B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.50 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $9.53 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.39 B | +8.0% | Materials secular demand and core market expansion |
-| 2027-Q2 | $9.01 B | +8.0% | Materials secular demand and core market expansion |
-| 2027-Q3 | $9.18 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $10.30 B | +8.0% | Materials secular demand and core market expansion |
-| 2028-Q1 | $9.06 B | +8.0% | Materials secular demand and core market expansion |
-| 2028-Q2 | $9.73 B | +8.0% | Materials secular demand and core market expansion |
-| 2028-Q3 | $9.92 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $11.12 B | +8.0% | Materials secular demand and core market expansion |
-| 2029-Q1 | $9.79 B | +8.0% | Materials secular demand and core market expansion |
-| 2029-Q2 | $10.50 B | +8.0% | Materials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $10.71 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $8.50 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $9.44 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $8.24 B | +4.0% | Materials core demand expansion and operational execution |
+| 2027-Q2 | $8.75 B | +4.0% | Materials core demand expansion and operational execution |
+| 2027-Q3 | $8.84 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $9.82 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q1 | $8.57 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q2 | $9.10 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q3 | $9.19 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $10.21 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q1 | $8.91 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q2 | $9.47 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $9.56 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 459 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 458 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 456 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 454 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 447 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 441 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 460 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 459 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 458 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 456 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 452 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 447 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $396.50 | $483.54 | $570.58 | 6.3x | +8.0% |
-| 52 Weeks (1Y) | $420.07 | $512.28 | $604.49 | 6.1x | +8.0% |
-| 104 Weeks (2Y) | $453.67 | $553.26 | $652.85 | 5.8x | +8.0% |
-| 156 Weeks (3Y) | $489.97 | $597.52 | $705.07 | 5.5x | +8.0% |
+| 13 Weeks | $376.48 | $470.60 | $564.72 | 6.3x | -3.1% |
+| 52 Weeks (1Y) | $385.47 | $481.84 | $578.21 | 6.2x | +1.6% |
+| 104 Weeks (2Y) | $390.70 | $488.38 | $586.06 | 6.0x | +1.5% |
+| 156 Weeks (3Y) | $395.92 | $494.90 | $593.88 | 5.8x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

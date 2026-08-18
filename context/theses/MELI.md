@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** MELI
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1787.57 per share
 - **Current Price:** $1787.57 per share
-- **Target Exit Price:** $3960.07 per share
+- **Target Exit Price:** $3184.69 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.3 / 10.0
 - **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Strategy:** High-Conviction Secular Growth Leader with Limit Buy Accumulation
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1099590
 
 ## Core Investment Thesis
-MercadoLibre, Inc. (MELI) operates as a leading player within the Consumer Discretionary sector (E-Commerce & FinTech). Operates the largest e-commerce and digital payments ecosystem in Latin America across Mercado Libre and Mercado Pago. The company benefits from an established economic moat (Irreplaceable logistics network across Brazil/Mexico (Mercado Envios), digital financial ecosystem dominance (Mercado Pago), 60M+ unique buyers.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). Operates the largest e-commerce and digital payments ecosystem in Latin America across Mercado Libre and Mercado Pago. The company benefits from a defensible commercial moat (Irreplaceable logistics network across Brazil/Mexico (Mercado Envios), digital financial ecosystem dominance (Mercado Pago), 60M+ unique buyers.). Grounded in our deterministic valuation framework, MELI trades at $1787.57 against a 3-year baseline target of $3184.69, generating a modeled annualized ROI of 21.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +25.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue of $28.98B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 21.2%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $7.24 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $8.41 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $7.66 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $8.51 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $8.98 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $10.43 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $9.50 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $10.56 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $11.14 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $12.93 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $11.78 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $13.09 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $13.81 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $7.24 B | +25.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $8.43 B | +25.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $7.69 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $8.56 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $9.06 B | +25.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $10.53 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $9.62 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $10.71 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $11.32 B | +25.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $13.17 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $12.02 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $13.38 B | +25.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $14.15 B | +25.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 51 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 51 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 50 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 50 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 49 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 49 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 51 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 51 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 51 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 51 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 50 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 50 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1546.79 | $1886.33 | $2225.87 | 3.1x | +24.0% |
-| 52 Weeks (1Y) | $1817.60 | $2216.59 | $2615.58 | 3.0x | +24.0% |
-| 104 Weeks (2Y) | $2253.83 | $2748.57 | $3243.31 | 2.8x | +24.0% |
-| 156 Weeks (3Y) | $2794.74 | $3408.22 | $4021.70 | 2.7x | +24.0% |
+| 13 Weeks | $1483.72 | $1854.65 | $2225.58 | 3.1x | +15.9% |
+| 52 Weeks (1Y) | $1737.26 | $2171.58 | $2605.90 | 3.0x | +21.5% |
+| 104 Weeks (2Y) | $2105.76 | $2632.20 | $3158.64 | 2.9x | +21.3% |
+| 156 Weeks (3Y) | $2551.86 | $3189.82 | $3827.78 | 2.8x | +21.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

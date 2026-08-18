@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** DIS
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $103.50 per share
 - **Current Price:** $103.50 per share
-- **Target Exit Price:** $140.81 per share
+- **Target Exit Price:** $110.93 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.2 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 7.8 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1744489
 
 ## Core Investment Thesis
-The Walt Disney Company (DIS) operates as a leading player within the Communication Services sector (Entertainment & Media Conglomerate). Global entertainment company operating theme parks, cruise lines, movie studios, television networks, and direct-to-consumer streaming (Disney+, Hulu, ESPN+). The company benefits from an established economic moat (Unmatched global intellectual property portfolio (Marvel, Star Wars, Pixar, Disney Classics), destination theme parks with immense pricing power, and direct streaming scale.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+The Walt Disney Company (DIS) operates as an established participant within the Communication Services sector (Entertainment & Media Conglomerate). Global entertainment company operating theme parks, cruise lines, movie studios, television networks, and direct-to-consumer streaming (Disney+, Hulu, ESPN+). The company benefits from a defensible commercial moat (Unmatched global intellectual property portfolio (Marvel, Star Wars, Pixar, Disney Classics), destination theme parks with immense pricing power, and direct streaming scale.). Grounded in our deterministic valuation framework, DIS trades at $103.50 against a 3-year baseline target of $110.93, generating a modeled annualized ROI of 2.3% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-The Walt Disney Company's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Communication Services, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+The Walt Disney Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-DIS currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twelve-month revenue of $94.42B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+DIS currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $23.61 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $26.47 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $23.31 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2027-Q2 | $25.01 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2027-Q3 | $25.49 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $28.59 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q1 | $25.17 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q2 | $27.01 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q3 | $27.53 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $30.88 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q1 | $27.18 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q2 | $29.17 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q3 (Q12) | $29.74 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $23.61 B | +5.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $26.29 B | +5.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $22.98 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | $24.49 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | $24.79 B | +5.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $27.60 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | $24.13 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | $25.71 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | $26.03 B | +5.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $28.98 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | $25.34 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | $27.00 B | +5.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $27.33 B | +5.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,730 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 1,724 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 1,717 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 1,711 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 1,685 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 1,660 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 1,733 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 1,728 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 1,724 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 1,720 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 1,702 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 1,685 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $86.52 | $105.51 | $124.50 | 1.9x | +8.0% |
-| 52 Weeks (1Y) | $91.66 | $111.78 | $131.90 | 1.8x | +8.0% |
-| 104 Weeks (2Y) | $98.99 | $120.72 | $142.45 | 1.7x | +8.0% |
-| 156 Weeks (3Y) | $106.91 | $130.38 | $153.85 | 1.6x | +8.0% |
+| 13 Weeks | $82.34 | $102.93 | $123.52 | 1.9x | -2.2% |
+| 52 Weeks (1Y) | $84.92 | $106.15 | $127.38 | 1.8x | +2.6% |
+| 104 Weeks (2Y) | $86.90 | $108.63 | $130.36 | 1.8x | +2.4% |
+| 156 Weeks (3Y) | $88.90 | $111.13 | $133.36 | 1.7x | +2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ DIS currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

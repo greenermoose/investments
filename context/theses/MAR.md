@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** MAR
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $356.57 per share
 - **Current Price:** $356.57 per share
-- **Target Exit Price:** $485.11 per share
+- **Target Exit Price:** $422.41 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.7 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 8.0 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1048286
 
 ## Core Investment Thesis
-Marriott International, Inc. (MAR) operates as a leading player within the Consumer Discretionary sector (Hotels & Lodging). Operates, franchises, and licenses hotel, residential, and timeshare properties across 30 leading brands worldwide. The company benefits from an established economic moat (Asset-light franchise/management business model (>95% fee-based), Marriott Bonvoy loyalty program (210M+ members), global lodging scale.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Marriott International, Inc. (MAR) operates as an established participant within the Consumer Discretionary sector (Hotels & Lodging). Operates, franchises, and licenses hotel, residential, and timeshare properties across 30 leading brands worldwide. The company benefits from a defensible commercial moat (Asset-light franchise/management business model (>95% fee-based), Marriott Bonvoy loyalty program (210M+ members), global lodging scale.). Grounded in our deterministic valuation framework, MAR trades at $356.57 against a 3-year baseline target of $422.41, generating a modeled annualized ROI of 5.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Marriott International, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Marriott International, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue of $26.15B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $6.54 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $7.33 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $6.45 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $6.93 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $7.06 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $7.92 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $6.97 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $7.48 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $7.63 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $8.55 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $7.53 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $8.08 B | +8.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $8.24 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $6.54 B | +9.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $7.35 B | +9.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $6.48 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $6.97 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $7.13 B | +9.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $8.01 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $7.07 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $7.60 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $7.77 B | +9.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $8.73 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $7.70 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $8.29 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $8.47 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 263 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 262 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 261 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 260 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 256 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 252 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 264 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 263 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 263 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 263 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 261 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 260 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $298.07 | $363.50 | $428.93 | 3.5x | +8.0% |
-| 52 Weeks (1Y) | $315.78 | $385.10 | $454.42 | 3.4x | +8.0% |
-| 104 Weeks (2Y) | $341.04 | $415.90 | $490.76 | 3.2x | +8.0% |
-| 156 Weeks (3Y) | $368.33 | $449.18 | $530.03 | 3.1x | +8.0% |
+| 13 Weeks | $286.00 | $357.50 | $429.00 | 3.5x | +1.0% |
+| 52 Weeks (1Y) | $302.18 | $377.72 | $453.26 | 3.5x | +5.9% |
+| 104 Weeks (2Y) | $319.39 | $399.24 | $479.09 | 3.4x | +5.8% |
+| 156 Weeks (3Y) | $337.51 | $421.89 | $506.27 | 3.2x | +5.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

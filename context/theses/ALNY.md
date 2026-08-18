@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ALNY
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $224.60 per share
 - **Current Price:** $224.60 per share
-- **Target Exit Price:** $497.56 per share
+- **Target Exit Price:** $360.32 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.1 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.7 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1178670
 
 ## Core Investment Thesis
-Alnylam Pharmaceuticals, Inc. (ALNY) operates as a leading player within the Health Care sector (RNAi Therapeutics). Biopharmaceutical company pioneering RNA interference (RNAi) therapeutics for rare genetic, cardio-metabolic, and infectious diseases. The company benefits from an established economic moat (Unmatched patent portfolio and platform technology in systemic siRNA delivery, blockbuster commercial drug HELIOS-B Phase 3 success in ATTR-CM.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Alnylam Pharmaceuticals, Inc. (ALNY) operates as an established participant within the Health Care sector (RNAi Therapeutics). Biopharmaceutical company pioneering RNA interference (RNAi) therapeutics for rare genetic, cardio-metabolic, and infectious diseases. The company benefits from a defensible commercial moat (Unmatched patent portfolio and platform technology in systemic siRNA delivery, blockbuster commercial drug HELIOS-B Phase 3 success in ATTR-CM.). Grounded in our deterministic valuation framework, ALNY trades at $224.60 against a 3-year baseline target of $360.32, generating a modeled annualized ROI of 19.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Alnylam Pharmaceuticals, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Alnylam Pharmaceuticals, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +24.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ALNY currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing twelve-month revenue of $3.83B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ALNY currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 19.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.96 B | +24.0% | Current operational baseline and backlog delivery |
+| 2026-Q3 (Current) | $0.96 B | +24.0% | Current operational baseline and contract fulfillment |
 | 2026-Q4 | $1.11 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.01 B | +24.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $1.12 B | +24.0% | Health Care secular demand and core market expansion |
+| 2027-Q1 | $1.01 B | +24.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $1.12 B | +24.0% | Health Care core demand expansion and operational execution |
 | 2027-Q3 | $1.19 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.38 B | +24.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $1.25 B | +24.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $1.39 B | +24.0% | Health Care secular demand and core market expansion |
+| 2027-Q4 | $1.38 B | +24.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $1.25 B | +24.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $1.39 B | +24.0% | Health Care core demand expansion and operational execution |
 | 2028-Q3 | $1.47 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.71 B | +24.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $1.56 B | +24.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $1.73 B | +24.0% | Health Care secular demand and core market expansion |
+| 2028-Q4 | $1.71 B | +24.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $1.56 B | +24.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $1.73 B | +24.0% | Health Care core demand expansion and operational execution |
 | 2029-Q3 (Q12) | $1.82 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 132 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 132 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 132 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 131 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 129 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 127 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 133 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 134 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 134 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 135 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 137 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 139 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $194.35 | $237.01 | $279.67 | 7.7x | +24.0% |
-| 52 Weeks (1Y) | $228.37 | $278.50 | $328.63 | 7.4x | +24.0% |
-| 104 Weeks (2Y) | $283.18 | $345.34 | $407.50 | 7.0x | +24.0% |
-| 156 Weeks (3Y) | $351.15 | $428.23 | $505.31 | 6.7x | +24.0% |
+| 13 Weeks | $185.13 | $231.41 | $277.69 | 7.6x | +12.7% |
+| 52 Weeks (1Y) | $210.82 | $263.52 | $316.22 | 7.5x | +17.3% |
+| 104 Weeks (2Y) | $246.61 | $308.26 | $369.91 | 7.2x | +17.2% |
+| 156 Weeks (3Y) | $288.30 | $360.38 | $432.46 | 6.9x | +17.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ ALNY currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

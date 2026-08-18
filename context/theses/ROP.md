@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ROP
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $389.71 per share
 - **Current Price:** $389.71 per share
-- **Target Exit Price:** $863.34 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $485.63 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=882835
 
 ## Core Investment Thesis
-Roper Technologies, Inc. (ROP) operates as a leading player within the Information Technology sector (Niche Vertical Software). Designs and develops vertical software and technology-enabled products for niche healthcare, education, government, and commercial end markets. The company benefits from an established economic moat (Diversified portfolio of mission-critical niche software monopolies, negative working capital cycle, high FCF conversion (>30% of revenue).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Roper Technologies, Inc. (ROP) operates as an established participant within the Information Technology sector (Niche Vertical Software). Designs and develops vertical software and technology-enabled products for niche healthcare, education, government, and commercial end markets. The company benefits from a defensible commercial moat (Diversified portfolio of mission-critical niche software monopolies, negative working capital cycle, high FCF conversion (>30% of revenue).). Grounded in our deterministic valuation framework, ROP trades at $389.71 against a 3-year baseline target of $485.63, generating a modeled annualized ROI of 7.6% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Roper Technologies, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Roper Technologies, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twelve-month revenue of $7.94B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.98 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.30 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.10 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $2.33 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $2.46 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.86 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $2.60 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $2.89 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $3.05 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.54 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $3.23 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $3.59 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $3.78 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.98 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.25 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $2.00 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $2.16 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $2.22 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.52 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $2.23 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $2.42 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $2.49 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.82 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $2.50 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.71 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.79 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 101 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 100 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 100 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 99 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 98 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 97 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 101 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 101 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 101 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 102 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 102 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 103 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $337.22 | $411.24 | $485.26 | 4.9x | +24.0% |
-| 52 Weeks (1Y) | $396.26 | $483.24 | $570.22 | 4.7x | +24.0% |
-| 104 Weeks (2Y) | $491.36 | $599.22 | $707.08 | 4.5x | +24.0% |
-| 156 Weeks (3Y) | $609.28 | $743.03 | $876.78 | 4.2x | +24.0% |
+| 13 Weeks | $313.92 | $392.40 | $470.88 | 4.9x | +2.8% |
+| 52 Weeks (1Y) | $335.98 | $419.97 | $503.96 | 4.8x | +7.8% |
+| 104 Weeks (2Y) | $361.26 | $451.57 | $541.88 | 4.6x | +7.6% |
+| 156 Weeks (3Y) | $388.35 | $485.44 | $582.53 | 4.5x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

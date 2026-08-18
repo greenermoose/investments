@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** TXN
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $282.91 per share
 - **Current Price:** $282.91 per share
-- **Target Exit Price:** $384.90 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.6 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Target Exit Price:** $319.52 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.1 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=97476
 
 ## Core Investment Thesis
-Texas Instruments Incorporated (TXN) operates as a leading player within the Information Technology sector (Analog & Embedded Semiconductors). Designs and manufactures analog and embedded processing chips for industrial, automotive, personal electronics, and communications equipment. The company benefits from an established economic moat (Low-cost 300mm analog wafer manufacturing advantage (40%+ cost savings vs 200mm), 80,000+ catalog products, unmatched customer diversity.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Texas Instruments Incorporated (TXN) operates as an established participant within the Information Technology sector (Analog & Embedded Semiconductors). Designs and manufactures analog and embedded processing chips for industrial, automotive, personal electronics, and communications equipment. The company benefits from a defensible commercial moat (Low-cost 300mm analog wafer manufacturing advantage (40%+ cost savings vs 200mm), 80,000+ catalog products, unmatched customer diversity.). Grounded in our deterministic valuation framework, TXN trades at $282.91 against a 3-year baseline target of $319.52, generating a modeled annualized ROI of 4.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Texas Instruments Incorporated's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Texas Instruments Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing twelve-month revenue of $18.08B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $4.52 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $5.07 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $4.46 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $4.79 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $4.88 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $5.48 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $4.82 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $5.17 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $5.27 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $5.91 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $5.21 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $5.59 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $5.70 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $4.52 B | +6.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $5.05 B | +6.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $4.42 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $4.72 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $4.79 B | +6.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $5.35 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $4.69 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $5.01 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $5.08 B | +6.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $5.67 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $4.97 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $5.31 B | +6.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $5.38 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 907 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 903 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 900 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 896 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 883 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 870 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 908 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 905 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 903 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 901 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 892 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 883 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $236.50 | $288.41 | $340.32 | 14.1x | +8.0% |
-| 52 Weeks (1Y) | $250.54 | $305.54 | $360.54 | 13.5x | +8.0% |
-| 104 Weeks (2Y) | $270.59 | $329.99 | $389.39 | 12.8x | +8.0% |
-| 156 Weeks (3Y) | $292.24 | $356.39 | $420.54 | 12.2x | +8.0% |
+| 13 Weeks | $225.62 | $282.03 | $338.44 | 14.0x | -1.2% |
+| 52 Weeks (1Y) | $235.94 | $294.92 | $353.90 | 13.9x | +4.2% |
+| 104 Weeks (2Y) | $245.56 | $306.95 | $368.34 | 13.5x | +4.2% |
+| 156 Weeks (3Y) | $255.58 | $319.48 | $383.38 | 13.1x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

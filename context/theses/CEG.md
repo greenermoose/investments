@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** CEG
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $278.20 per share
 - **Current Price:** $278.20 per share
-- **Target Exit Price:** $378.49 per share
+- **Target Exit Price:** $308.24 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.2 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1868275
 
 ## Core Investment Thesis
-Constellation Energy Corporation (CEG) operates as a leading player within the Utilities sector (Clean Electric Power Generation). The largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of nuclear, solar, and wind assets. The company benefits from an established economic moat (Largest commercial nuclear fleet in North America (>22 GW 24/7 carbon-free baseload power), long-term power purchase agreements (PPAs) with hyperscalers.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Constellation Energy Corporation (CEG) operates as an established participant within the Utilities sector (Clean Electric Power Generation). The largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of nuclear, solar, and wind assets. The company benefits from a defensible commercial moat (Largest commercial nuclear fleet in North America (>22 GW 24/7 carbon-free baseload power), long-term power purchase agreements (PPAs) with hyperscalers.). Grounded in our deterministic valuation framework, CEG trades at $278.20 against a 3-year baseline target of $308.24, generating a modeled annualized ROI of 3.5% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Constellation Energy Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Utilities, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Constellation Energy Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +8.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue of $30.58B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.5%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $7.65 B | +8.0% | Current operational baseline and backlog delivery |
+| 2026-Q3 (Current) | $7.65 B | +8.0% | Current operational baseline and contract fulfillment |
 | 2026-Q4 | $8.57 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $7.55 B | +8.0% | Utilities secular demand and core market expansion |
-| 2027-Q2 | $8.10 B | +8.0% | Utilities secular demand and core market expansion |
+| 2027-Q1 | $7.55 B | +8.0% | Utilities core demand expansion and operational execution |
+| 2027-Q2 | $8.10 B | +8.0% | Utilities core demand expansion and operational execution |
 | 2027-Q3 | $8.26 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $9.26 B | +8.0% | Utilities secular demand and core market expansion |
-| 2028-Q1 | $8.15 B | +8.0% | Utilities secular demand and core market expansion |
-| 2028-Q2 | $8.75 B | +8.0% | Utilities secular demand and core market expansion |
+| 2027-Q4 | $9.26 B | +8.0% | Utilities core demand expansion and operational execution |
+| 2028-Q1 | $8.15 B | +8.0% | Utilities core demand expansion and operational execution |
+| 2028-Q2 | $8.75 B | +8.0% | Utilities core demand expansion and operational execution |
 | 2028-Q3 | $8.92 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $10.00 B | +8.0% | Utilities secular demand and core market expansion |
-| 2029-Q1 | $8.80 B | +8.0% | Utilities secular demand and core market expansion |
-| 2029-Q2 | $9.45 B | +8.0% | Utilities secular demand and core market expansion |
+| 2028-Q4 | $10.00 B | +8.0% | Utilities core demand expansion and operational execution |
+| 2029-Q1 | $8.80 B | +8.0% | Utilities core demand expansion and operational execution |
+| 2029-Q2 | $9.45 B | +8.0% | Utilities core demand expansion and operational execution |
 | 2029-Q3 (Q12) | $9.63 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 360 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 358 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 357 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 356 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 350 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 345 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 361 M | +0.0% | Stable share count with neutral dilution |
+| 26 Weeks (2Q) | 361 M | +0.0% | Stable share count with neutral dilution |
+| 39 Weeks (3Q) | 361 M | +0.0% | Stable share count with neutral dilution |
+| 52 Weeks (1Y) | 361 M | +0.0% | Stable share count with neutral dilution |
+| 104 Weeks (2Y) | 361 M | +0.0% | Stable share count with neutral dilution |
+| 156 Weeks (3Y) | 361 M | +0.0% | Stable share count with neutral dilution |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $232.55 | $283.60 | $334.65 | 3.2x | +8.0% |
-| 52 Weeks (1Y) | $246.38 | $300.46 | $354.54 | 3.1x | +8.0% |
-| 104 Weeks (2Y) | $266.08 | $324.49 | $382.90 | 3.0x | +8.0% |
-| 156 Weeks (3Y) | $287.37 | $350.45 | $413.53 | 2.8x | +8.0% |
+| 13 Weeks | $222.34 | $277.93 | $333.52 | 3.2x | -0.4% |
+| 52 Weeks (1Y) | $230.85 | $288.56 | $346.27 | 3.2x | +3.7% |
+| 104 Weeks (2Y) | $238.72 | $298.40 | $358.08 | 3.0x | +3.6% |
+| 156 Weeks (3Y) | $246.72 | $308.40 | $370.08 | 2.9x | +3.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** EA
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $209.70 per share
 - **Current Price:** $209.70 per share
-- **Target Exit Price:** $209.70 per share
+- **Target Exit Price:** $244.50 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.4 / 10.0
+- **Conviction Score:** 7.9 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=712515
 
 ## Core Investment Thesis
-Electronic Arts Inc. (EA) operates as a leading player within the Communication Services sector (Interactive Gaming Software). Develops, markets, and delivers games, content, and online services across consoles, mobile devices, and personal computers (EA SPORTS FC, Madden, Apex Legends). The company benefits from an established economic moat (Exclusive sports licensing agreements (FIFA replacement EA SPORTS FC, NFL, College Football), highly recurring Ultimate Team live-service revenue.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Electronic Arts Inc. (EA) operates as an established participant within the Communication Services sector (Interactive Gaming Software). Develops, markets, and delivers games, content, and online services across consoles, mobile devices, and personal computers (EA SPORTS FC, Madden, Apex Legends). The company benefits from a defensible commercial moat (Exclusive sports licensing agreements (FIFA replacement EA SPORTS FC, NFL, College Football), highly recurring Ultimate Team live-service revenue.). Grounded in our deterministic valuation framework, EA trades at $209.70 against a 3-year baseline target of $244.50, generating a modeled annualized ROI of 5.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Electronic Arts Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Communication Services, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Electronic Arts Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue of $7.40B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.85 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.04 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.77 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2027-Q2 | $1.88 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2027-Q3 | $1.89 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.09 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q1 | $1.81 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q2 | $1.91 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q3 | $1.92 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.13 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q1 | $1.85 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q2 | $1.95 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.96 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.85 B | +9.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.08 B | +9.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.83 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | $1.97 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | $2.02 B | +9.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.27 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | $2.00 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | $2.15 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | $2.20 B | +9.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.47 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | $2.18 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | $2.34 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.39 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 251 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 252 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 252 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 252 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 254 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 255 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 251 M | +0.0% | Stable share count with neutral dilution |
+| 26 Weeks (2Q) | 251 M | +0.0% | Stable share count with neutral dilution |
+| 39 Weeks (3Q) | 251 M | +0.0% | Stable share count with neutral dilution |
+| 52 Weeks (1Y) | 251 M | +0.0% | Stable share count with neutral dilution |
+| 104 Weeks (2Y) | 251 M | +0.0% | Stable share count with neutral dilution |
+| 156 Weeks (3Y) | 251 M | +0.0% | Stable share count with neutral dilution |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $172.81 | $210.74 | $248.67 | 7.0x | +2.0% |
-| 52 Weeks (1Y) | $175.39 | $213.89 | $252.39 | 6.8x | +2.0% |
-| 104 Weeks (2Y) | $178.90 | $218.17 | $257.44 | 6.4x | +2.0% |
-| 156 Weeks (3Y) | $182.48 | $222.54 | $262.60 | 6.1x | +2.0% |
+| 13 Weeks | $167.98 | $209.98 | $251.98 | 7.0x | +0.5% |
+| 52 Weeks (1Y) | $176.82 | $221.03 | $265.24 | 6.9x | +5.4% |
+| 104 Weeks (2Y) | $185.96 | $232.45 | $278.94 | 6.6x | +5.3% |
+| 156 Weeks (3Y) | $195.53 | $244.41 | $293.29 | 6.4x | +5.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twel
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

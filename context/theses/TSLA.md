@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** TSLA
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $339.30 per share
 - **Current Price:** $339.30 per share
-- **Target Exit Price:** $678.94 per share
+- **Target Exit Price:** $401.33 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 7.8 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.0 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1318605
 
 ## Core Investment Thesis
-Tesla, Inc. (TSLA) operates as a leading player within the Consumer Discretionary sector (Automobile & Clean Energy). Designs, develops, manufactures, sells, and leases electric vehicles, energy storage systems, and solar installations. The company benefits from an established economic moat (Manufacturing scale, Supercharger network standard (NACS), Full Self-Driving neural network data fleet, Megapack energy storage growth.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Tesla, Inc. (TSLA) operates as an established participant within the Consumer Discretionary sector (Automobile & Clean Energy). Designs, develops, manufactures, sells, and leases electric vehicles, energy storage systems, and solar installations. The company benefits from a defensible commercial moat (Manufacturing scale, Supercharger network standard (NACS), Full Self-Driving neural network data fleet, Megapack energy storage growth.). Grounded in our deterministic valuation framework, TSLA trades at $339.30 against a 3-year baseline target of $401.33, generating a modeled annualized ROI of 5.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Tesla, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Tesla, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TSLA currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing twelve-month revenue of $92.31B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+TSLA currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~12.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $23.08 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $26.46 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $23.82 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $26.13 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $27.23 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $31.22 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $28.10 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $30.83 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $32.13 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $36.84 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $33.16 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $36.38 B | +18.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $37.92 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $23.08 B | +9.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $25.94 B | +9.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $22.89 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $24.62 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $25.16 B | +9.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $28.27 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $24.95 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $26.83 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $27.42 B | +9.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $30.82 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $27.20 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $29.25 B | +9.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $29.89 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 3,742 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 3,728 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 3,714 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 3,700 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 3,644 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 3,590 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 3,751 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 3,747 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 3,742 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 3,737 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 3,719 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 3,700 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $289.98 | $353.63 | $417.28 | 13.6x | +18.0% |
-| 52 Weeks (1Y) | $328.30 | $400.37 | $472.44 | 13.1x | +18.0% |
-| 104 Weeks (2Y) | $387.40 | $472.44 | $557.48 | 12.5x | +18.0% |
-| 156 Weeks (3Y) | $457.13 | $557.48 | $657.83 | 11.8x | +18.0% |
+| 13 Weeks | $272.14 | $340.18 | $408.22 | 13.5x | +1.0% |
+| 52 Weeks (1Y) | $287.54 | $359.43 | $431.32 | 13.3x | +5.9% |
+| 104 Weeks (2Y) | $303.92 | $379.90 | $455.88 | 12.9x | +5.8% |
+| 156 Weeks (3Y) | $321.16 | $401.45 | $481.74 | 12.4x | +5.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ TSLA currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

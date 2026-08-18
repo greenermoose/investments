@@ -207,94 +207,97 @@ def calculate_annualized_roi(
 def derive_company_thesis_parameters(
     symbol: str,
     current_price: float,
-    thesis_status: str = "HOLD",
+    target_exit_price: Optional[float] = None,
+    entry_price: Optional[float] = None,
+    thesis_status: Optional[str] = None,
     conviction_score: float = 8.0,
     holding_period: str = "3 to 5 Years",
+    holding_period_years: Optional[float] = None,
+    ttm_revenue: Optional[float] = None,
+    shares_outstanding: Optional[float] = None,
+    target_ps_multiple: Optional[float] = None,
+    annual_rev_growth: Optional[float] = None,
+    entry_strategy: Optional[str] = None,
+    exit_strategy: Optional[str] = None,
+    csp_proceeds: float = 0.0,
+    cc_proceeds: float = 0.0,
+    dividend_proceeds: float = 0.0,
     company_name: Optional[str] = None
 ) -> Dict[str, Any]:
     """
-    Derives grounded investment thesis strategy parameters conforming to the core 20%+ target rule.
-    - BUY: High conviction capital compounder (Limit Buy / Sell CSP on pullback, target 20-22% CAGR)
-    - HOLD: Core compounder with Covered Call yield harvesting (Limit Buy / Hold + CC harvesting, target 20% CAGR)
-    - SELL/AVOID: Capital preservation / liquidation at benchmark
+    Derives grounded investment thesis strategy parameters and computes genuine annualized ROI.
+    Does NOT hardcode returns. Evaluates fundamental price targets and computes exact CAGR.
     """
-    status = thesis_status.upper()
-    entry_px = round(float(current_price), 2)
+    curr_px = round(float(current_price), 2)
+    entry_px = round(float(entry_price or curr_px), 2)
     entry_date = "2026-08-17"
 
-    # Derive holding years from period descriptor
-    if "5" in holding_period or "4 to 6" in holding_period:
-        holding_years = 4.0
-    elif "2 to 4" in holding_period:
-        holding_years = 3.0
-    elif "1 to 2" in holding_period:
-        holding_years = 2.0
+    # Derive holding years from period descriptor if not explicitly provided
+    if holding_period_years is not None and holding_period_years > 0:
+        h_years = float(holding_period_years)
+    elif "5" in str(holding_period) or "4 to 6" in str(holding_period):
+        h_years = 4.0
+    elif "2 to 4" in str(holding_period):
+        h_years = 3.0
+    elif "1 to 2" in str(holding_period) or "1 Year" in str(holding_period) or "52 Weeks" in str(holding_period):
+        h_years = 1.0
+    elif "13 Weeks" in str(holding_period):
+        h_years = 0.25
     else:
-        holding_years = 3.0
+        h_years = 3.0
 
-    target_exit_date = (parse_iso_date(entry_date) + timedelta(days=int(holding_years * 365.25))).isoformat()
+    target_exit_date = (parse_iso_date(entry_date) + timedelta(days=int(h_years * 365.25))).isoformat()
 
-    if status == "BUY":
-        # Buy Strategy:
-        # If conviction >= 9.0: Direct Limit Buy with 22.0% CAGR capital growth target
-        # If conviction < 9.0: Sell CSP entry on pullback (discount) + Limit Sell
-        if conviction_score >= 9.0:
-            entry_strategy = "LIMIT_BUY"
-            exit_strategy = "LIMIT_SELL"
-            annual_cagr = 0.22
-            csp_proceeds = 0.0
-            cc_proceeds = 0.0
-            target_exit_price = round(entry_px * ((1.0 + annual_cagr) ** holding_years), 2)
-        else:
-            entry_strategy = "SELL_CSP"
-            exit_strategy = "LIMIT_SELL"
-            annual_cagr = 0.20
-            # 0.20 Delta CSP modeled premium ~3.5% discount
-            csp_proceeds = round(entry_px * 0.035, 2)
-            cc_proceeds = 0.0
-            target_multiple = (1.0 + annual_cagr) ** holding_years
-            target_exit_price = round((entry_px - csp_proceeds) * target_multiple, 2)
+    # Determine or model target exit price
+    if target_exit_price is not None and target_exit_price > 0:
+        exit_px = round(float(target_exit_price), 2)
+    elif ttm_revenue and shares_outstanding and target_ps_multiple and ttm_revenue > 0 and shares_outstanding > 0:
+        growth = annual_rev_growth if annual_rev_growth is not None else 0.08
+        proj_rev = ttm_revenue * ((1.0 + growth) ** h_years)
+        # Net dilution/buyback rate
+        dilution_rate = -0.015 if conviction_score >= 8.0 else 0.005
+        proj_shares = shares_outstanding * ((1.0 + dilution_rate) ** h_years)
+        exit_px = round((proj_rev * target_ps_multiple) / proj_shares, 2)
+    else:
+        # Default fallback if no valuation target is provided: current price
+        exit_px = curr_px
 
-    elif status == "HOLD":
-        # Hold Strategy:
-        # Covered Call Income Harvesting to achieve 20.0% annualized return
-        # Target ~8% annual capital appreciation + ~12% to 17% annual CC harvest yield
-        entry_strategy = "LIMIT_BUY"
-        exit_strategy = "SELL_COVERED_CALLS"
-        csp_proceeds = 0.0
-        annual_cagr = 0.20
-        total_target_multiple = (1.0 + annual_cagr) ** holding_years
-        total_target_inflows = entry_px * total_target_multiple
-
-        # Capital growth portion (~8% per year)
-        cap_gain_multiple = (1.08 ** holding_years)
-        target_exit_price = round(entry_px * cap_gain_multiple, 2)
-
-        # Covered call harvest proceeds balance
-        cc_proceeds = round(max(total_target_inflows - target_exit_price, 0.0), 2)
-
-    else:  # SELL or AVOID
-        entry_strategy = "LIMIT_BUY"
-        exit_strategy = "LIMIT_SELL"
-        csp_proceeds = 0.0
-        cc_proceeds = 0.0
-        target_exit_price = entry_px
+    # Resolve strategies
+    entry_strat = str(entry_strategy).strip().upper() if entry_strategy else ("SELL_CSP" if (thesis_status == "BUY" and conviction_score < 9.0) else "LIMIT_BUY")
+    exit_strat = str(exit_strategy).strip().upper() if exit_strategy else ("SELL_COVERED_CALLS" if thesis_status == "HOLD" else "LIMIT_SELL")
 
     res = calculate_annualized_roi(
         benchmark_entry_price=entry_px,
-        target_exit_price=target_exit_price,
-        entry_strategy=entry_strategy,
-        exit_strategy=exit_strategy,
+        target_exit_price=exit_px,
+        entry_strategy=entry_strat,
+        exit_strategy=exit_strat,
         entry_date=entry_date,
         target_exit_date=target_exit_date,
-        holding_period_years=holding_years,
+        holding_period_years=h_years,
         csp_proceeds=csp_proceeds,
         cc_proceeds=cc_proceeds,
+        dividend_proceeds=dividend_proceeds,
         symbol=symbol,
         company_name=company_name
     )
 
-    return res.to_dict()
+    result_dict = res.to_dict()
+
+    # Derive decisive rating if not explicitly assigned
+    calc_cagr = result_dict["annualized_roi_pct"]
+    if thesis_status:
+        result_dict["thesis_status"] = str(thesis_status).upper()
+    else:
+        if calc_cagr >= 20.0:
+            result_dict["thesis_status"] = "BUY"
+        elif calc_cagr >= 10.0:
+            result_dict["thesis_status"] = "HOLD"
+        elif calc_cagr >= 0.0:
+            result_dict["thesis_status"] = "SELL"
+        else:
+            result_dict["thesis_status"] = "AVOID"
+
+    return result_dict
 
 
 def run_self_tests():
@@ -316,7 +319,7 @@ def run_self_tests():
     assert t1.initial_capital_outlay == 100.0
     assert t1.total_proceeds == 172.80
     assert t1.capital_gain_pct == 72.8
-    print("Test Case 1 (Limit Buy & Limit Sell): PASS")
+    print("Test Case 1 (Limit Buy & Limit Sell, 20% CAGR): PASS")
 
     # Test Case 2: Sell CSP Entry + Limit Sell Exit
     # Entry: $100, CSP Premium: $5.00 -> Net Outlay: $95.00. Exit: $164.16 over 3 years -> 164.16 / 95 = 1.728 -> 20.0% CAGR
@@ -334,39 +337,53 @@ def run_self_tests():
     assert abs(t2.annualized_roi_pct - 20.0) < 0.1, f"Test 2 failed: CAGR {t2.annualized_roi_pct} != 20.0%"
     print("Test Case 2 (Sell CSP Entry & Limit Sell Exit): PASS")
 
-    # Test Case 3: Limit Buy + Covered Call Yield Harvesting
-    # Entry: $100, Exit: $130.00 (30% capital gain), CC Yield: $42.80 over 3 years -> Total Proceeds: $172.80 -> 20.0% CAGR
+    # Test Case 3: Limit Buy + Covered Call Yield Harvesting (Moderate Growth + Income)
+    # Entry: $100, Exit: $120.00 (20% capital gain), CC Yield: $25.00 over 3 years -> Total Inflows: $145.00
+    # Gross multiple: 1.45 over 3 years -> CAGR = (1.45)^(1/3) - 1 = 13.18%
     t3 = calculate_annualized_roi(
         benchmark_entry_price=100.0,
-        target_exit_price=130.00,
+        target_exit_price=120.00,
         entry_strategy="LIMIT_BUY",
         exit_strategy="SELL_COVERED_CALLS",
-        cc_proceeds=42.80,
+        cc_proceeds=25.00,
         entry_date="2026-08-17",
         holding_period_years=3.0,
         symbol="TEST_CC"
     )
-    assert t3.total_proceeds == 172.80
-    assert abs(t3.annualized_roi_pct - 20.0) < 0.1, f"Test 3 failed: CAGR {t3.annualized_roi_pct} != 20.0%"
-    assert t3.options_yield_pct == 42.8
-    print("Test Case 3 (Limit Buy & Covered Call Harvesting): PASS")
+    assert t3.total_proceeds == 145.00
+    assert abs(t3.annualized_roi_pct - 13.18) < 0.1, f"Test 3 failed: CAGR {t3.annualized_roi_pct} != 13.18%"
+    assert t3.target_roi_str == "13.2%"
+    print("Test Case 3 (Limit Buy & Covered Call Harvesting, 13.2% CAGR): PASS")
 
-    # Test Case 4: Sell CSP Entry + Covered Call Harvesting Exit
-    # Entry: $100, CSP Premium: $4.00 (Net Outlay: $96), Exit: $130, CC Yield: $35.89 -> Total: $165.89 -> 165.89/96 = 1.728 -> 20.0% CAGR
+    # Test Case 4: Negative Return / Overvalued Equity Scenario
+    # Entry: $100, Exit: $70.00 (down 30%) over 3 years. Multiple = 0.70 -> CAGR = (0.70)^(1/3) - 1 = -11.21%
     t4 = calculate_annualized_roi(
         benchmark_entry_price=100.0,
-        target_exit_price=130.00,
-        entry_strategy="SELL_CSP",
-        exit_strategy="SELL_COVERED_CALLS",
-        csp_proceeds=4.00,
-        cc_proceeds=35.89,
+        target_exit_price=70.00,
+        entry_strategy="LIMIT_BUY",
+        exit_strategy="LIMIT_SELL",
         entry_date="2026-08-17",
         holding_period_years=3.0,
-        symbol="TEST_COMBO"
+        symbol="TEST_LOSS"
     )
-    assert t4.initial_capital_outlay == 96.00
-    assert abs(t4.annualized_roi_pct - 20.0) < 0.1, f"Test 4 failed: CAGR {t4.annualized_roi_pct} != 20.0%"
-    print("Test Case 4 (Sell CSP Entry & Covered Call Harvesting Exit): PASS")
+    assert abs(t4.annualized_roi_pct - (-11.21)) < 0.1, f"Test 4 failed: CAGR {t4.annualized_roi_pct} != -11.21%"
+    assert t4.target_roi_str == "-11.2%"
+    print("Test Case 4 (Negative ROI Scenario, -11.2% CAGR): PASS")
+
+    # Test Case 5: Low Positive Growth Scenario (< 10% CAGR)
+    # Entry: $100, Exit: $115.00 over 3 years -> Multiple = 1.15 -> CAGR = (1.15)^(1/3) - 1 = 4.77%
+    t5 = calculate_annualized_roi(
+        benchmark_entry_price=100.0,
+        target_exit_price=115.00,
+        entry_strategy="LIMIT_BUY",
+        exit_strategy="LIMIT_SELL",
+        entry_date="2026-08-17",
+        holding_period_years=3.0,
+        symbol="TEST_LOW"
+    )
+    assert abs(t5.annualized_roi_pct - 4.77) < 0.1, f"Test 5 failed: CAGR {t5.annualized_roi_pct} != 4.77%"
+    assert t5.target_roi_str == "4.8%"
+    print("Test Case 5 (Low Positive ROI Scenario, 4.8% CAGR): PASS")
 
     print("All Return Engine unit tests PASSED successfully!")
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** TRV
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $364.51 per share
 - **Current Price:** $364.51 per share
-- **Target Exit Price:** $495.91 per share
+- **Target Exit Price:** $498.42 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.8 / 10.0
+- **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=86312
 
 ## Core Investment Thesis
-The Travelers Companies, Inc. (TRV) operates as a leading player within the Financials sector (Property & Casualty Insurance). Provides commercial and personal property and casualty insurance products and services to businesses, government units, associations, and individuals. The company benefits from an established economic moat (Disciplined underwriting culture, commercial lines broker relationships, proprietary risk analytics, and high investment portfolio yields from higher interest rates.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+The Travelers Companies, Inc. (TRV) operates as an established participant within the Financials sector (Property & Casualty Insurance). Provides commercial and personal property and casualty insurance products and services to businesses, government units, associations, and individuals. The company benefits from a defensible commercial moat (Disciplined underwriting culture, commercial lines broker relationships, proprietary risk analytics, and high investment portfolio yields from higher interest rates.). Grounded in our deterministic valuation framework, TRV trades at $364.51 against a 3-year baseline target of $498.42, generating a modeled annualized ROI of 13.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-The Travelers Companies, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Financials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+The Travelers Companies, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue of $48.32B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $12.08 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $13.55 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.93 B | +8.0% | Financials secular demand and core market expansion |
-| 2027-Q2 | $12.80 B | +8.0% | Financials secular demand and core market expansion |
-| 2027-Q3 | $13.05 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.63 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q1 | $12.88 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q2 | $13.82 B | +8.0% | Financials secular demand and core market expansion |
-| 2028-Q3 | $14.09 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $15.80 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q1 | $13.91 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q2 | $14.93 B | +8.0% | Financials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $15.22 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $12.08 B | +6.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $13.48 B | +6.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $11.82 B | +6.0% | Financials core demand expansion and operational execution |
+| 2027-Q2 | $12.62 B | +6.0% | Financials core demand expansion and operational execution |
+| 2027-Q3 | $12.80 B | +6.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $14.29 B | +6.0% | Financials core demand expansion and operational execution |
+| 2028-Q1 | $12.52 B | +6.0% | Financials core demand expansion and operational execution |
+| 2028-Q2 | $13.38 B | +6.0% | Financials core demand expansion and operational execution |
+| 2028-Q3 | $13.57 B | +6.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $15.15 B | +6.0% | Financials core demand expansion and operational execution |
+| 2029-Q1 | $13.28 B | +6.0% | Financials core demand expansion and operational execution |
+| 2029-Q2 | $14.18 B | +6.0% | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $14.39 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 212 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 211 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 211 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 210 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 207 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 204 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 212 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 211 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 211 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 210 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 207 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 204 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $304.70 | $371.59 | $438.48 | 1.6x | +8.0% |
-| 52 Weeks (1Y) | $322.81 | $393.67 | $464.53 | 1.5x | +8.0% |
-| 104 Weeks (2Y) | $348.63 | $425.16 | $501.69 | 1.4x | +8.0% |
-| 156 Weeks (3Y) | $376.53 | $459.18 | $541.83 | 1.4x | +8.0% |
+| 13 Weeks | $291.06 | $363.83 | $436.60 | 1.6x | -0.7% |
+| 52 Weeks (1Y) | $324.17 | $405.21 | $486.25 | 1.7x | +11.2% |
+| 104 Weeks (2Y) | $360.34 | $450.42 | $540.50 | 1.7x | +11.2% |
+| 156 Weeks (3Y) | $399.76 | $499.70 | $599.64 | 1.8x | +11.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

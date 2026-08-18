@@ -6,56 +6,56 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $27.10 per share
 - **Current Price:** $27.10 per share
-- **Target Exit Price:** $27.10 per share
-- **Expected Holding Period:** Avoid
-- **Conviction Score:** 4.5 / 10.0
+- **Target Exit Price:** $26.41 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 6.0 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1745999
 
 ## Core Investment Thesis
-Beam Therapeutics Inc. (BEAM) operates as a leading player within the Health Care sector (Base Editing Genetic Medicines). Biotechnology company pioneering precision base editing to develop lifelong cures for serious genetic diseases. The company benefits from an established economic moat (Proprietary base editing patent estate; offset by high clinical trial cash burn, binary regulatory risk, and multi-year timeline to commercial revenue.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Beam Therapeutics Inc. (BEAM) operates as an established participant within the Health Care sector (Base Editing Genetic Medicines). Biotechnology company pioneering precision base editing to develop lifelong cures for serious genetic diseases. The company benefits from a defensible commercial moat (Proprietary base editing patent estate; offset by high clinical trial cash burn, binary regulatory risk, and multi-year timeline to commercial revenue.). Grounded in our deterministic valuation framework, BEAM trades at $27.10 against a 3-year baseline target of $26.41, generating a modeled annualized ROI of -0.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Beam Therapeutics Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Beam Therapeutics Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-BEAM currently trades at a Price-to-Sales (P/S) multiple of ~48.6x on trailing twelve-month revenue of $0.06B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+BEAM currently trades at a Price-to-Sales (P/S) multiple of ~48.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~34.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.9%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.01 B | -2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $0.02 B | -2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $0.01 B | -2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $0.02 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $0.01 B | -2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $0.02 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $0.01 B | -2.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $0.01 B | -2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $0.01 B | +15.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $0.02 B | +15.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $0.01 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $0.02 B | +15.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $0.02 B | +15.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $0.02 B | +15.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $0.02 B | +15.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 103 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 103 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 103 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 104 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 104 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 105 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 104 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 105 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 105 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 106 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 109 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 113 M | +3.0% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $22.11 | $26.96 | $31.81 | 48.0x | -2.1% |
-| 52 Weeks (1Y) | $21.78 | $26.56 | $31.34 | 46.2x | -2.0% |
-| 104 Weeks (2Y) | $21.34 | $26.03 | $30.72 | 43.9x | -2.0% |
-| 156 Weeks (3Y) | $20.92 | $25.51 | $30.10 | 41.7x | -2.0% |
+| 13 Weeks | $21.84 | $27.30 | $32.76 | 47.6x | +3.0% |
+| 52 Weeks (1Y) | $21.81 | $27.26 | $32.71 | 43.8x | +0.6% |
+| 104 Weeks (2Y) | $21.59 | $26.99 | $32.39 | 38.8x | -0.2% |
+| 156 Weeks (3Y) | $21.12 | $26.40 | $31.68 | 34.0x | -0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ BEAM currently trades at a Price-to-Sales (P/S) multiple of ~48.6x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

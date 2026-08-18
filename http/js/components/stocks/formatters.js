@@ -30,20 +30,23 @@ export const formatRevenueInBillions = (val) => {
 };
 
 export const formatTargetRoi = (val) => {
-  if (val === null || val === undefined) return '20%';
+  if (val === null || val === undefined) return '-';
   if (typeof val === 'number') {
-    if (isNaN(val) || val <= 0) return '0%';
-    return (val % 1 === 0 ? val.toFixed(0) : val.toFixed(1)) + '%';
+    if (isNaN(val)) return '-';
+    const isInt = val % 1 === 0;
+    return (isInt ? val.toFixed(0) : val.toFixed(1)) + '%';
   }
   if (typeof val === 'string') {
-    const match = val.match(/([\d.]+)%/);
+    const match = val.match(/([+-]?[\d.]+)%/);
     if (match) {
       const num = parseFloat(match[1]);
-      return (num % 1 === 0 ? num.toFixed(0) : num.toFixed(1)) + '%';
+      if (isNaN(num)) return val;
+      const isInt = num % 1 === 0;
+      return (isInt ? num.toFixed(0) : num.toFixed(1)) + '%';
     }
     return val;
   }
-  return '20%';
+  return '-';
 };
 
 export const formatSharesB = (val) => {

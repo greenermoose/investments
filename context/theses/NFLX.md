@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** NFLX
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $76.02 per share
 - **Current Price:** $76.02 per share
-- **Target Exit Price:** $95.76 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 8.7 / 10.0
+- **Target Exit Price:** $106.11 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1065280
 
 ## Core Investment Thesis
-Netflix, Inc. (NFLX) operates as a leading player within the Communication Services sector (Entertainment & Streaming). The world's leading streaming entertainment service with over 275 million paid memberships in over 190 countries. The company benefits from an established economic moat (Massive global scale allowing highest content budget with lowest per-subscriber cost, profitable ad-supported tier, live sports programming.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Netflix, Inc. (NFLX) operates as an established participant within the Communication Services sector (Entertainment & Streaming). The world's leading streaming entertainment service with over 275 million paid memberships in over 190 countries. The company benefits from a defensible commercial moat (Massive global scale allowing highest content budget with lowest per-subscriber cost, profitable ad-supported tier, live sports programming.). Grounded in our deterministic valuation framework, NFLX trades at $76.02 against a 3-year baseline target of $106.11, generating a modeled annualized ROI of 14.1% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Netflix, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Communication Services, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Netflix, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +14.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing twelve-month revenue of $45.38B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $11.35 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $12.72 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.20 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2027-Q2 | $12.02 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2027-Q3 | $12.25 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $13.74 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q1 | $12.10 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q2 | $12.98 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2028-Q3 | $13.23 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $14.84 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q1 | $13.06 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q2 | $14.02 B | +8.0% | Communication Services secular demand and core market expansion |
-| 2029-Q3 (Q12) | $14.29 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $11.35 B | +14.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $12.90 B | +14.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $11.51 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | $12.52 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | $12.93 B | +14.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $14.70 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | $13.12 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | $14.27 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | $14.74 B | +14.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $16.76 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | $14.96 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | $16.27 B | +14.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $16.81 B | +14.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 4,148 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 4,133 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 4,117 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 4,102 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 4,040 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 3,979 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 4,148 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 4,133 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 4,117 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 4,102 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 4,040 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 3,979 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $63.55 | $77.50 | $91.45 | 6.9x | +8.0% |
-| 52 Weeks (1Y) | $67.32 | $82.10 | $96.88 | 6.6x | +8.0% |
-| 104 Weeks (2Y) | $72.71 | $88.67 | $104.63 | 6.3x | +8.0% |
-| 156 Weeks (3Y) | $78.52 | $95.76 | $113.00 | 6.0x | +8.0% |
+| 13 Weeks | $61.82 | $77.27 | $92.72 | 6.8x | +6.7% |
+| 52 Weeks (1Y) | $68.06 | $85.08 | $102.10 | 6.7x | +11.9% |
+| 104 Weeks (2Y) | $76.01 | $95.01 | $114.01 | 6.5x | +11.8% |
+| 156 Weeks (3Y) | $84.86 | $106.07 | $127.28 | 6.3x | +11.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

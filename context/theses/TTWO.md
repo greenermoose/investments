@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** TTWO
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $241.61 per share
 - **Current Price:** $241.61 per share
-- **Target Exit Price:** $241.61 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 9.1 / 10.0
+- **Target Exit Price:** $281.55 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.9 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=946581
 
 ## Core Investment Thesis
-Take-Two Interactive Software, Inc. (TTWO) operates as a leading player within the Communication Services sector (Interactive Entertainment Software). Develops, publishes, and markets interactive entertainment software across Rockstar Games, 2K, and Zynga (Grand Theft Auto, NBA 2K, Red Dead). The company benefits from an established economic moat (Grand Theft Auto franchise (highest-grossing entertainment property in history), NBA 2K annual sports franchise, recurring online microtransactions.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Take-Two Interactive Software, Inc. (TTWO) operates as an established participant within the Communication Services sector (Interactive Entertainment Software). Develops, publishes, and markets interactive entertainment software across Rockstar Games, 2K, and Zynga (Grand Theft Auto, NBA 2K, Red Dead). The company benefits from a defensible commercial moat (Grand Theft Auto franchise (highest-grossing entertainment property in history), NBA 2K annual sports franchise, recurring online microtransactions.). Grounded in our deterministic valuation framework, TTWO trades at $241.61 against a 3-year baseline target of $281.55, generating a modeled annualized ROI of 5.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Take-Two Interactive Software, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Communication Services, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Take-Two Interactive Software, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twelve-month revenue of $6.51B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.63 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.80 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.56 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2027-Q2 | $1.65 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2027-Q3 | $1.66 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.84 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q1 | $1.59 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q2 | $1.69 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2028-Q3 | $1.69 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.87 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q1 | $1.62 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q2 | $1.72 B | +2.0% | Communication Services secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.73 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.63 B | +9.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.83 B | +9.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.61 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | $1.74 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | $1.77 B | +9.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.99 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | $1.76 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | $1.89 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | $1.93 B | +9.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.17 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | $1.92 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | $2.06 B | +9.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.11 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 186 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 186 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 187 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 187 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 188 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 189 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 186 M | +0.0% | Stable share count with neutral dilution |
+| 26 Weeks (2Q) | 186 M | +0.0% | Stable share count with neutral dilution |
+| 39 Weeks (3Q) | 186 M | +0.0% | Stable share count with neutral dilution |
+| 52 Weeks (1Y) | 186 M | +0.0% | Stable share count with neutral dilution |
+| 104 Weeks (2Y) | 186 M | +0.0% | Stable share count with neutral dilution |
+| 156 Weeks (3Y) | 186 M | +0.0% | Stable share count with neutral dilution |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $199.10 | $242.81 | $286.52 | 6.8x | +2.0% |
-| 52 Weeks (1Y) | $202.08 | $246.44 | $290.80 | 6.5x | +2.0% |
-| 104 Weeks (2Y) | $206.12 | $251.37 | $296.62 | 6.2x | +2.0% |
-| 156 Weeks (3Y) | $210.25 | $256.40 | $302.55 | 5.9x | +2.0% |
+| 13 Weeks | $193.54 | $241.93 | $290.32 | 6.8x | +0.5% |
+| 52 Weeks (1Y) | $203.73 | $254.66 | $305.59 | 6.7x | +5.4% |
+| 104 Weeks (2Y) | $214.26 | $267.82 | $321.38 | 6.4x | +5.3% |
+| 156 Weeks (3Y) | $225.28 | $281.60 | $337.92 | 6.2x | +5.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

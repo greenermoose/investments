@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** AXON
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $604.32 per share
 - **Current Price:** $604.32 per share
-- **Target Exit Price:** $1338.77 per share
+- **Target Exit Price:** $1007.95 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.3 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.9 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1069183
 
 ## Core Investment Thesis
-Axon Enterprise, Inc. (AXON) operates as a leading player within the Industrials sector (Public Safety Technology & Software). Develops, manufactures, and sells conducted energy devices (TASER), body-worn cameras, in-car video, and cloud-based digital evidence management (Axon Cloud). The company benefits from an established economic moat (Monopoly in public safety body cameras and digital evidence software (Axon Evidence), high multi-year bundled subscription contracts (>120% NRR).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Axon Enterprise, Inc. (AXON) operates as an established participant within the Industrials sector (Public Safety Technology & Software). Develops, manufactures, and sells conducted energy devices (TASER), body-worn cameras, in-car video, and cloud-based digital evidence management (Axon Cloud). The company benefits from a defensible commercial moat (Monopoly in public safety body cameras and digital evidence software (Axon Evidence), high multi-year bundled subscription contracts (>120% NRR).). Grounded in our deterministic valuation framework, AXON trades at $604.32 against a 3-year baseline target of $1007.95, generating a modeled annualized ROI of 20.7% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Axon Enterprise, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Industrials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Axon Enterprise, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +25.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing twelve-month revenue of $2.79B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 20.7%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.70 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $0.81 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.74 B | +24.0% | Industrials secular demand and core market expansion |
-| 2027-Q2 | $0.82 B | +24.0% | Industrials secular demand and core market expansion |
-| 2027-Q3 | $0.86 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.00 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q1 | $0.92 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q2 | $1.02 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q3 | $1.07 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.24 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q1 | $1.13 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q2 | $1.26 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.33 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $0.70 B | +25.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $0.81 B | +25.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $0.74 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2027-Q2 | $0.82 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2027-Q3 | $0.87 B | +25.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.01 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2028-Q1 | $0.93 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2028-Q2 | $1.03 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2028-Q3 | $1.09 B | +25.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $1.27 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2029-Q1 | $1.16 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2029-Q2 | $1.29 B | +25.0% | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $1.36 B | +25.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 81 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 80 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 80 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 80 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 79 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 77 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 81 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 81 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 82 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 82 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 83 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 83 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $522.92 | $637.71 | $752.50 | 17.2x | +24.0% |
-| 52 Weeks (1Y) | $614.48 | $749.36 | $884.24 | 16.6x | +24.0% |
-| 104 Weeks (2Y) | $761.94 | $929.20 | $1096.46 | 15.8x | +24.0% |
-| 156 Weeks (3Y) | $944.81 | $1152.21 | $1359.61 | 15.0x | +24.0% |
+| 13 Weeks | $499.72 | $624.65 | $749.58 | 17.1x | +14.2% |
+| 52 Weeks (1Y) | $574.64 | $718.30 | $861.96 | 16.8x | +18.9% |
+| 104 Weeks (2Y) | $680.98 | $851.22 | $1021.46 | 16.1x | +18.7% |
+| 156 Weeks (3Y) | $806.50 | $1008.13 | $1209.76 | 15.4x | +18.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

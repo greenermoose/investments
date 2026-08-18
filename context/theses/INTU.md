@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** INTU
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $335.60 per share
 - **Current Price:** $335.60 per share
-- **Target Exit Price:** $671.54 per share
+- **Target Exit Price:** $446.63 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.9 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.8 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=896878
 
 ## Core Investment Thesis
-Intuit Inc. (INTU) operates as a leading player within the Information Technology sector (Application Software & FinTech). Provides financial management, compliance, and marketing products including TurboTax, QuickBooks, Credit Karma, and Mailchimp. The company benefits from an established economic moat (Near-monopoly in small business accounting (QuickBooks) and consumer tax filing (TurboTax), mission-critical compliance switching costs, Intuit Assist GenAI.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Intuit Inc. (INTU) operates as an established participant within the Information Technology sector (Application Software & FinTech). Provides financial management, compliance, and marketing products including TurboTax, QuickBooks, Credit Karma, and Mailchimp. The company benefits from a defensible commercial moat (Near-monopoly in small business accounting (QuickBooks) and consumer tax filing (TurboTax), mission-critical compliance switching costs, Intuit Assist GenAI.). Grounded in our deterministic valuation framework, INTU trades at $335.60 against a 3-year baseline target of $446.63, generating a modeled annualized ROI of 12.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Intuit Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Intuit Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-INTU currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing twelve-month revenue of $18.83B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+INTU currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $4.71 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $5.40 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $4.86 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $5.33 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $5.56 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $6.37 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $5.73 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $6.29 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $6.56 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $7.52 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $6.76 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $7.42 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $7.73 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $4.71 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $5.33 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $4.73 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $5.13 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $5.27 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $5.97 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $5.30 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $5.74 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $5.91 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $6.68 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $5.94 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $6.43 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $6.61 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 276 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 275 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 274 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 273 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 269 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 265 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 276 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 276 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 275 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 274 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 271 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 269 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $286.82 | $349.78 | $412.74 | 4.9x | +18.0% |
-| 52 Weeks (1Y) | $324.73 | $396.01 | $467.29 | 4.7x | +18.0% |
-| 104 Weeks (2Y) | $383.18 | $467.29 | $551.40 | 4.5x | +18.0% |
-| 156 Weeks (3Y) | $452.15 | $551.40 | $650.65 | 4.2x | +18.0% |
+| 13 Weeks | $271.35 | $339.19 | $407.03 | 4.8x | +4.3% |
+| 52 Weeks (1Y) | $295.72 | $369.65 | $443.58 | 4.8x | +10.1% |
+| 104 Weeks (2Y) | $325.20 | $406.50 | $487.80 | 4.7x | +10.1% |
+| 156 Weeks (3Y) | $357.64 | $447.05 | $536.46 | 4.5x | +10.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ INTU currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

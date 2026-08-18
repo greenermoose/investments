@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** TRI
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $99.06 per share
 - **Current Price:** $99.06 per share
-- **Target Exit Price:** $219.45 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $111.95 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.0 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075124
 
 ## Core Investment Thesis
-Thomson Reuters Corporation (TRI) operates as a leading player within the Industrials sector (Legal, Tax & Accounting Software). Provides authoritative information, software, and AI solutions for legal, tax, accounting, and compliance professionals (Westlaw, Checkpoint, CoCounsel). The company benefits from an established economic moat (Proprietary legal and tax content archives, high switching costs in enterprise law firms and corporate tax departments, CoCounsel GenAI legal assistant.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Thomson Reuters Corporation (TRI) operates as an established participant within the Industrials sector (Legal, Tax & Accounting Software). Provides authoritative information, software, and AI solutions for legal, tax, accounting, and compliance professionals (Westlaw, Checkpoint, CoCounsel). The company benefits from a defensible commercial moat (Proprietary legal and tax content archives, high switching costs in enterprise law firms and corporate tax departments, CoCounsel GenAI legal assistant.). Grounded in our deterministic valuation framework, TRI trades at $99.06 against a 3-year baseline target of $111.95, generating a modeled annualized ROI of 4.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Thomson Reuters Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Industrials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Thomson Reuters Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue of $7.48B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.87 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.17 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.98 B | +24.0% | Industrials secular demand and core market expansion |
-| 2027-Q2 | $2.20 B | +24.0% | Industrials secular demand and core market expansion |
-| 2027-Q3 | $2.32 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.69 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q1 | $2.45 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q2 | $2.72 B | +24.0% | Industrials secular demand and core market expansion |
-| 2028-Q3 | $2.87 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.34 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q1 | $3.04 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q2 | $3.38 B | +24.0% | Industrials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $3.56 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.87 B | +6.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.09 B | +6.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.83 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2027-Q2 | $1.95 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2027-Q3 | $1.98 B | +6.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.21 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q1 | $1.94 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q2 | $2.07 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2028-Q3 | $2.10 B | +6.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.34 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q1 | $2.05 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q2 | $2.19 B | +6.0% | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.23 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 484 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 482 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 481 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 479 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 472 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 464 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 485 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 484 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 482 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 481 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 476 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 472 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $85.71 | $104.53 | $123.35 | 6.4x | +24.0% |
-| 52 Weeks (1Y) | $100.72 | $122.83 | $144.94 | 6.1x | +24.0% |
-| 104 Weeks (2Y) | $124.89 | $152.31 | $179.73 | 5.8x | +24.0% |
-| 156 Weeks (3Y) | $154.87 | $188.87 | $222.87 | 5.5x | +24.0% |
+| 13 Weeks | $79.00 | $98.75 | $118.50 | 6.3x | -1.2% |
+| 52 Weeks (1Y) | $82.61 | $103.26 | $123.91 | 6.3x | +4.2% |
+| 104 Weeks (2Y) | $85.98 | $107.48 | $128.98 | 6.1x | +4.2% |
+| 156 Weeks (3Y) | $89.50 | $111.87 | $134.24 | 5.9x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** APP
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $311.98 per share
 - **Current Price:** $311.98 per share
-- **Target Exit Price:** $520.23 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 8.6 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $496.67 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.9 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1751008
 
 ## Core Investment Thesis
-AppLovin Corporation (APP) operates as a leading player within the Information Technology sector (Software & Mobile AdTech). Builds software-based platforms for mobile app developers to enhance marketing and monetization using its AI recommendation engine (AXON 2.0). The company benefits from an established economic moat (Proprietary AXON AI advertising engine, massive high-frequency mobile ad auction liquidity, expanding from mobile gaming into web e-commerce ads.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+AppLovin Corporation (APP) operates as an established participant within the Information Technology sector (Software & Mobile AdTech). Builds software-based platforms for mobile app developers to enhance marketing and monetization using its AI recommendation engine (AXON 2.0). The company benefits from a defensible commercial moat (Proprietary AXON AI advertising engine, massive high-frequency mobile ad auction liquidity, expanding from mobile gaming into web e-commerce ads.). Grounded in our deterministic valuation framework, APP trades at $311.98 against a 3-year baseline target of $496.67, generating a modeled annualized ROI of 18.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-AppLovin Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+AppLovin Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +26.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-APP currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue of $5.67B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+APP currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 18.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.42 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.62 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.46 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $1.60 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $1.67 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.92 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $1.72 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $1.89 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $1.97 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.26 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $2.04 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $2.23 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $2.33 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.42 B | +26.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.65 B | +26.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.51 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $1.68 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $1.78 B | +26.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.08 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $1.90 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $2.12 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $2.25 B | +26.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.62 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $2.40 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.67 B | +26.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.83 B | +26.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 334 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 332 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 331 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 330 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 325 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 320 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 336 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 337 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 338 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 338 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 342 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 345 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $266.63 | $325.16 | $383.69 | 18.2x | +18.0% |
-| 52 Weeks (1Y) | $301.87 | $368.14 | $434.41 | 17.5x | +18.0% |
-| 104 Weeks (2Y) | $356.21 | $434.40 | $512.59 | 16.7x | +18.0% |
-| 156 Weeks (3Y) | $420.32 | $512.59 | $604.86 | 15.8x | +18.0% |
+| 13 Weeks | $258.50 | $323.12 | $387.74 | 18.1x | +15.1% |
+| 52 Weeks (1Y) | $292.86 | $366.08 | $439.30 | 17.4x | +17.3% |
+| 104 Weeks (2Y) | $341.58 | $426.98 | $512.38 | 16.2x | +17.0% |
+| 156 Weeks (3Y) | $397.35 | $496.69 | $596.03 | 15.1x | +16.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ APP currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -45,6 +45,9 @@ export function createGridCard(company, onSelect) {
 
   const targetRoiVal = company.annualized_roi_pct !== undefined ? company.annualized_roi_pct : company.target_roi;
   const targetRoiStr = formatTargetRoi(targetRoiVal);
+  const isNegRoi = typeof targetRoiVal === 'number' ? (targetRoiVal < 0) : (typeof targetRoiVal === 'string' && targetRoiVal.trim().startsWith('-'));
+  const isHighRoi = typeof targetRoiVal === 'number' ? (targetRoiVal >= 20.0) : (typeof targetRoiVal === 'string' && parseFloat(targetRoiVal) >= 20.0);
+  const roiColor = isNegRoi ? '#f43f5e' : (isHighRoi ? '#10b981' : '#00d4ff');
   const sharesStr = formatSharesB(company.shares_outstanding || company.shares_outstanding_b);
   const ttmRevenueStr = formatRevenueInBillions(company.ttm_revenue || company.ttm_revenue_b);
   const evStr = formatEVInBillions(company.enterprise_value || company.enterprise_value_b);
@@ -70,7 +73,7 @@ export function createGridCard(company, onSelect) {
       <div class="company-metrics-grid" style="margin-top: 10px;">
         <div class="metric-item">
           <span class="metric-label">ROI Prediction</span>
-          <span class="metric-val" style="color: #00d4ff;">${targetRoiStr}</span>
+          <span class="metric-val" style="color: ${roiColor};">${targetRoiStr}</span>
         </div>
         <div class="metric-item">
           <span class="metric-label">Shares Out. (B)</span>

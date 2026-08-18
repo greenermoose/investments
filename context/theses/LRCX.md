@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** LRCX
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $343.84 per share
 - **Current Price:** $343.84 per share
-- **Target Exit Price:** $467.79 per share
+- **Target Exit Price:** $432.33 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.7 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=707549
 
 ## Core Investment Thesis
-Lam Research Corporation (LRCX) operates as a leading player within the Information Technology sector (Semiconductor Equipment). Designs, manufactures, markets, and services semiconductor processing equipment used in the fabrication of integrated circuits. The company benefits from an established economic moat (Monopolistic market share in advanced dielectric etch and deposition for 3D NAND memory and advanced logic nodes.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Lam Research Corporation (LRCX) operates as an established participant within the Information Technology sector (Semiconductor Equipment). Designs, manufactures, markets, and services semiconductor processing equipment used in the fabrication of integrated circuits. The company benefits from a defensible commercial moat (Monopolistic market share in advanced dielectric etch and deposition for 3D NAND memory and advanced logic nodes.). Grounded in our deterministic valuation framework, LRCX trades at $343.84 against a 3-year baseline target of $432.33, generating a modeled annualized ROI of 7.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Lam Research Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Lam Research Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +13.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue of $23.23B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $5.81 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $6.51 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $5.73 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $6.15 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $6.27 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $7.03 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $6.19 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $6.65 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $6.77 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $7.60 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $6.69 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $7.18 B | +8.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $7.32 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $5.81 B | +13.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $6.59 B | +13.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $5.87 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $6.37 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $6.56 B | +13.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $7.44 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $6.63 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $7.19 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $7.42 B | +13.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $8.41 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $7.49 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $8.13 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $8.38 B | +13.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,246 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 1,242 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 1,237 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 1,232 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 1,214 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 1,196 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 1,245 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 1,238 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 1,232 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 1,226 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 1,201 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 1,177 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $287.43 | $350.52 | $413.61 | 18.3x | +8.0% |
-| 52 Weeks (1Y) | $304.51 | $371.35 | $438.19 | 17.6x | +8.0% |
-| 104 Weeks (2Y) | $328.86 | $401.05 | $473.24 | 16.7x | +8.0% |
-| 156 Weeks (3Y) | $355.17 | $433.14 | $511.11 | 15.9x | +8.0% |
+| 13 Weeks | $279.34 | $349.18 | $419.02 | 18.1x | +6.4% |
+| 52 Weeks (1Y) | $298.34 | $372.92 | $447.50 | 17.4x | +8.5% |
+| 104 Weeks (2Y) | $321.62 | $402.02 | $482.42 | 16.3x | +8.1% |
+| 156 Weeks (3Y) | $345.79 | $432.24 | $518.69 | 15.2x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

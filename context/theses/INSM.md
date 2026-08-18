@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** INSM
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $128.32 per share
 - **Current Price:** $128.32 per share
-- **Target Exit Price:** $213.98 per share
-- **Expected Holding Period:** 2 to 4 Years
-- **Conviction Score:** 8.8 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $137.04 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1104506
 
 ## Core Investment Thesis
-Insmed Incorporated (INSM) operates as a leading player within the Health Care sector (Biopharmaceuticals). Global biopharmaceutical company focused on transforming the lives of patients with serious and rare pulmonary and inflammatory diseases. The company benefits from an established economic moat (First-in-class DPP1 inhibitor (Brensocatib) with breakthrough Phase 3 ASPEN trial success in non-cystic fibrosis bronchiectasis, ARIKAYCE commercial base.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Insmed Incorporated (INSM) operates as an established participant within the Health Care sector (Biopharmaceuticals). Global biopharmaceutical company focused on transforming the lives of patients with serious and rare pulmonary and inflammatory diseases. The company benefits from a defensible commercial moat (First-in-class DPP1 inhibitor (Brensocatib) with breakthrough Phase 3 ASPEN trial success in non-cystic fibrosis bronchiectasis, ARIKAYCE commercial base.). Grounded in our deterministic valuation framework, INSM trades at $128.32 against a 3-year baseline target of $137.04, generating a modeled annualized ROI of 2.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Insmed Incorporated's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Insmed Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +18.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-INSM currently trades at a Price-to-Sales (P/S) multiple of ~42.9x on trailing twelve-month revenue of $0.65B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+INSM currently trades at a Price-to-Sales (P/S) multiple of ~42.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~30.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.16 B | +18.0% | Current operational baseline and backlog delivery |
+| 2026-Q3 (Current) | $0.16 B | +18.0% | Current operational baseline and contract fulfillment |
 | 2026-Q4 | $0.19 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.17 B | +18.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $0.18 B | +18.0% | Health Care secular demand and core market expansion |
+| 2027-Q1 | $0.17 B | +18.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $0.18 B | +18.0% | Health Care core demand expansion and operational execution |
 | 2027-Q3 | $0.19 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $0.22 B | +18.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $0.20 B | +18.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $0.22 B | +18.0% | Health Care secular demand and core market expansion |
+| 2027-Q4 | $0.22 B | +18.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $0.20 B | +18.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $0.22 B | +18.0% | Health Care core demand expansion and operational execution |
 | 2028-Q3 | $0.23 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $0.26 B | +18.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $0.23 B | +18.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $0.26 B | +18.0% | Health Care secular demand and core market expansion |
+| 2028-Q4 | $0.26 B | +18.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $0.23 B | +18.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $0.26 B | +18.0% | Health Care core demand expansion and operational execution |
 | 2029-Q3 (Q12) | $0.27 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 216 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 215 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 215 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 214 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 211 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 207 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 218 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 220 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 221 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 222 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 228 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 234 M | +2.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $109.67 | $133.74 | $157.81 | 42.3x | +18.0% |
-| 52 Weeks (1Y) | $124.16 | $151.42 | $178.68 | 40.7x | +18.0% |
-| 104 Weeks (2Y) | $146.51 | $178.67 | $210.83 | 38.7x | +18.0% |
-| 156 Weeks (3Y) | $172.88 | $210.83 | $248.78 | 36.8x | +18.0% |
+| 13 Weeks | $104.21 | $130.26 | $156.31 | 42.0x | +6.2% |
+| 52 Weeks (1Y) | $106.48 | $133.10 | $159.72 | 38.6x | +3.7% |
+| 104 Weeks (2Y) | $108.70 | $135.88 | $163.06 | 34.3x | +2.9% |
+| 156 Weeks (3Y) | $109.64 | $137.05 | $164.46 | 30.0x | +2.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ INSM currently trades at a Price-to-Sales (P/S) multiple of ~42.9x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** SHW
-- **Exchange:** DJIA
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $349.97 per share
 - **Current Price:** $349.97 per share
-- **Target Exit Price:** $700.30 per share
+- **Target Exit Price:** $364.73 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.9 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 7.4 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=89800
 
 ## Core Investment Thesis
-The Sherwin-Williams Company (SHW) operates as a leading player within the Materials sector (Specialty Chemicals & Architectural Coatings). Develops, manufactures, and distributes paints, coatings, and related products to professional, industrial, commercial, and retail customers. The company benefits from an established economic moat (Exclusive 5,000+ store dedicated retail distribution network, unbeatable painter contractor loyalty and pricing power, leading industrial coatings franchise.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+The Sherwin-Williams Company (SHW) operates as an established participant within the Materials sector (Specialty Chemicals & Architectural Coatings). Develops, manufactures, and distributes paints, coatings, and related products to professional, industrial, commercial, and retail customers. The company benefits from a defensible commercial moat (Exclusive 5,000+ store dedicated retail distribution network, unbeatable painter contractor loyalty and pricing power, leading industrial coatings franchise.). Grounded in our deterministic valuation framework, SHW trades at $349.97 against a 3-year baseline target of $364.73, generating a modeled annualized ROI of 1.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-The Sherwin-Williams Company's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Materials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+The Sherwin-Williams Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Materials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue of $23.65B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $5.91 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $6.78 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $6.10 B | +18.0% | Materials secular demand and core market expansion |
-| 2027-Q2 | $6.69 B | +18.0% | Materials secular demand and core market expansion |
-| 2027-Q3 | $6.98 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $8.00 B | +18.0% | Materials secular demand and core market expansion |
-| 2028-Q1 | $7.20 B | +18.0% | Materials secular demand and core market expansion |
-| 2028-Q2 | $7.90 B | +18.0% | Materials secular demand and core market expansion |
-| 2028-Q3 | $8.23 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $9.44 B | +18.0% | Materials secular demand and core market expansion |
-| 2029-Q1 | $8.49 B | +18.0% | Materials secular demand and core market expansion |
-| 2029-Q2 | $9.32 B | +18.0% | Materials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $9.71 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $5.91 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $6.57 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $5.73 B | +4.0% | Materials core demand expansion and operational execution |
+| 2027-Q2 | $6.09 B | +4.0% | Materials core demand expansion and operational execution |
+| 2027-Q3 | $6.15 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $6.83 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q1 | $5.96 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q2 | $6.33 B | +4.0% | Materials core demand expansion and operational execution |
+| 2028-Q3 | $6.39 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $7.10 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q1 | $6.19 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q2 | $6.58 B | +4.0% | Materials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $6.65 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 242 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 241 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 240 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 239 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 236 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 232 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 242 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 242 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 241 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 241 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 238 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 236 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $299.10 | $364.76 | $430.42 | 3.5x | +18.0% |
-| 52 Weeks (1Y) | $338.63 | $412.96 | $487.29 | 3.4x | +18.0% |
-| 104 Weeks (2Y) | $399.59 | $487.30 | $575.01 | 3.2x | +18.0% |
-| 156 Weeks (3Y) | $471.51 | $575.01 | $678.51 | 3.1x | +18.0% |
+| 13 Weeks | $277.78 | $347.22 | $416.66 | 3.5x | -3.1% |
+| 52 Weeks (1Y) | $284.41 | $355.51 | $426.61 | 3.5x | +1.6% |
+| 104 Weeks (2Y) | $288.27 | $360.34 | $432.41 | 3.4x | +1.5% |
+| 156 Weeks (3Y) | $292.12 | $365.15 | $438.18 | 3.2x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** KDP
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $30.28 per share
 - **Current Price:** $30.28 per share
-- **Target Exit Price:** $30.28 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.1 / 10.0
+- **Target Exit Price:** $31.18 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1418135
 
 ## Core Investment Thesis
-Keurig Dr Pepper Inc. (KDP) operates as a leading player within the Consumer Staples sector (Non-Alcoholic Beverages & Coffee). Beverage company in North America with a diverse portfolio of flavored beverages, concentrates, and single-serve Keurig brewing systems. The company benefits from an established economic moat (Keurig single-serve coffee pod ecosystem lock-in, Dr Pepper volume momentum (surpassing Pepsi as #2 US carbonated soft drink), 4% dividend yield.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Keurig Dr Pepper Inc. (KDP) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Coffee). Beverage company in North America with a diverse portfolio of flavored beverages, concentrates, and single-serve Keurig brewing systems. The company benefits from a defensible commercial moat (Keurig single-serve coffee pod ecosystem lock-in, Dr Pepper volume momentum (surpassing Pepsi as #2 US carbonated soft drink), 4% dividend yield.). Grounded in our deterministic valuation framework, KDP trades at $30.28 against a 3-year baseline target of $31.18, generating a modeled annualized ROI of 1.0% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Keurig Dr Pepper Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Staples, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Keurig Dr Pepper Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twelve-month revenue of $16.08B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $4.02 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $4.44 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $3.86 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q2 | $4.08 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q3 | $4.10 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $4.53 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q1 | $3.93 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q2 | $4.16 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q3 | $4.18 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $4.62 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q1 | $4.01 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q2 | $4.24 B | +2.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q3 (Q12) | $4.27 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $4.02 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $4.47 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $3.89 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q2 | $4.14 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q3 | $4.18 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $4.64 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q1 | $4.05 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q2 | $4.31 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | $4.35 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $4.83 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q1 | $4.21 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q2 | $4.48 B | +4.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $4.52 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,363 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 1,364 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 1,366 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 1,368 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 1,375 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 1,382 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 1,359 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 1,358 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 1,356 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 1,354 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 1,347 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 1,341 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $24.95 | $30.43 | $35.91 | 2.5x | +2.0% |
-| 52 Weeks (1Y) | $25.33 | $30.89 | $36.45 | 2.4x | +2.0% |
-| 104 Weeks (2Y) | $25.83 | $31.50 | $37.17 | 2.3x | +2.0% |
-| 156 Weeks (3Y) | $26.35 | $32.13 | $37.91 | 2.2x | +2.0% |
+| 13 Weeks | $24.00 | $30.00 | $36.00 | 2.5x | -3.6% |
+| 52 Weeks (1Y) | $24.49 | $30.61 | $36.73 | 2.5x | +1.1% |
+| 104 Weeks (2Y) | $24.69 | $30.86 | $37.03 | 2.4x | +1.0% |
+| 156 Weeks (3Y) | $24.90 | $31.12 | $37.34 | 2.3x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

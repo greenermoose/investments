@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** BKNG
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $204.76 per share
 - **Current Price:** $204.76 per share
-- **Target Exit Price:** $453.61 per share
+- **Target Exit Price:** $291.73 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 9.1 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075531
 
 ## Core Investment Thesis
-Booking Holdings Inc. (BKNG) operates as a leading player within the Consumer Discretionary sector (Online Travel Agencies). Provider of online travel and related services across Booking.com, Priceline, Agoda, KAYAK, and OpenTable. The company benefits from an established economic moat (Global travel marketplace network effects, dominant alternative accommodation and hotel inventory in Europe/Asia, massive FCF generation.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Booking Holdings Inc. (BKNG) operates as an established participant within the Consumer Discretionary sector (Online Travel Agencies). Provider of online travel and related services across Booking.com, Priceline, Agoda, KAYAK, and OpenTable. The company benefits from a defensible commercial moat (Global travel marketplace network effects, dominant alternative accommodation and hotel inventory in Europe/Asia, massive FCF generation.). Grounded in our deterministic valuation framework, BKNG trades at $204.76 against a 3-year baseline target of $291.73, generating a modeled annualized ROI of 14.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Booking Holdings Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Booking Holdings Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +11.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-BKNG currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twelve-month revenue of $26.10B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+BKNG currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $6.53 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $7.57 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $6.90 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $7.67 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $8.09 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $9.39 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $8.56 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $9.51 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $10.03 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $11.65 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $10.61 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $11.79 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $12.44 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $6.53 B | +11.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $7.37 B | +11.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $6.53 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $7.06 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $7.24 B | +11.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $8.18 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $7.25 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $7.83 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $8.04 B | +11.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $9.08 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $8.05 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $8.69 B | +11.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $8.92 B | +11.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 772 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 769 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 766 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 763 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 752 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 741 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 769 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 763 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 757 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 752 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 729 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 707 M | -3.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $177.18 | $216.07 | $254.96 | 6.0x | +24.0% |
-| 52 Weeks (1Y) | $208.20 | $253.90 | $299.60 | 5.8x | +24.0% |
-| 104 Weeks (2Y) | $258.17 | $314.84 | $371.51 | 5.5x | +24.0% |
-| 156 Weeks (3Y) | $320.13 | $390.40 | $460.67 | 5.2x | +24.0% |
+| 13 Weeks | $166.03 | $207.54 | $249.05 | 6.0x | +5.5% |
+| 52 Weeks (1Y) | $184.36 | $230.45 | $276.54 | 6.0x | +12.5% |
+| 104 Weeks (2Y) | $207.32 | $259.15 | $310.98 | 5.9x | +12.5% |
+| 156 Weeks (3Y) | $233.19 | $291.49 | $349.79 | 5.8x | +12.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ BKNG currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

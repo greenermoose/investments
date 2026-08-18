@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** PLTR
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $172.55 per share
 - **Current Price:** $172.55 per share
-- **Target Exit Price:** $345.28 per share
+- **Target Exit Price:** $225.62 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.9 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 9.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1321655
 
 ## Core Investment Thesis
-Palantir Technologies Inc. (PLTR) operates as a leading player within the Information Technology sector (Enterprise Software & AI Platforms). Builds software platforms for data-driven operations and decision making, including Artificial Intelligence Platform (AIP), Foundry, and Gotham. The company benefits from an established economic moat (Ontology-driven architecture, mission-critical US defense/intelligence contracts, hyper-accelerating US Commercial AIP adoption.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Palantir Technologies Inc. (PLTR) operates as an established participant within the Information Technology sector (Enterprise Software & AI Platforms). Builds software platforms for data-driven operations and decision making, including Artificial Intelligence Platform (AIP), Foundry, and Gotham. The company benefits from a defensible commercial moat (Ontology-driven architecture, mission-critical US defense/intelligence contracts, hyper-accelerating US Commercial AIP adoption.). Grounded in our deterministic valuation framework, PLTR trades at $172.55 against a 3-year baseline target of $225.62, generating a modeled annualized ROI of 9.3% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Palantir Technologies Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Palantir Technologies Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +25.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PLTR currently trades at a Price-to-Sales (P/S) multiple of ~88.2x on trailing twelve-month revenue of $4.70B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+PLTR currently trades at a Price-to-Sales (P/S) multiple of ~88.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~61.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.18 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.35 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.21 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $1.33 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $1.39 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.59 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $1.43 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $1.57 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $1.64 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.88 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $1.69 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $1.85 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $1.93 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.18 B | +25.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.37 B | +25.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.25 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $1.39 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $1.47 B | +25.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.71 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $1.56 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $1.74 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $1.84 B | +25.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.14 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $1.95 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.17 B | +25.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.30 B | +25.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 2,394 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 2,385 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 2,376 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 2,367 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 2,331 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 2,296 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 2,412 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 2,421 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 2,430 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 2,439 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 2,476 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 2,513 M | +1.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $147.47 | $179.84 | $212.21 | 87.1x | +18.0% |
-| 52 Weeks (1Y) | $166.96 | $203.61 | $240.26 | 83.8x | +18.0% |
-| 104 Weeks (2Y) | $197.01 | $240.26 | $283.51 | 79.6x | +18.0% |
-| 156 Weeks (3Y) | $232.48 | $283.51 | $334.54 | 75.6x | +18.0% |
+| 13 Weeks | $142.51 | $178.14 | $213.77 | 86.4x | +13.6% |
+| 52 Weeks (1Y) | $153.17 | $191.46 | $229.75 | 79.5x | +11.0% |
+| 104 Weeks (2Y) | $167.28 | $209.10 | $250.92 | 70.5x | +10.1% |
+| 156 Weeks (3Y) | $180.48 | $225.60 | $270.72 | 61.7x | +9.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ PLTR currently trades at a Price-to-Sales (P/S) multiple of ~88.2x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** MNST
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $45.52 per share
 - **Current Price:** $45.52 per share
-- **Target Exit Price:** $91.09 per share
+- **Target Exit Price:** $58.34 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.7 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.5 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=865752
 
 ## Core Investment Thesis
-Monster Beverage Corporation (MNST) operates as a leading player within the Consumer Staples sector (Non-Alcoholic Beverages). Develops, markets, and distributes energy drink beverages including Monster Energy, Reign, Bang Energy, and Ultra. The company benefits from an established economic moat (Global distribution partnership with The Coca-Cola Company, dominant energy drink brand equity, pristine debt-free balance sheet with high ROIC (>25%).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Monster Beverage Corporation (MNST) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages). Develops, markets, and distributes energy drink beverages including Monster Energy, Reign, Bang Energy, and Ultra. The company benefits from a defensible commercial moat (Global distribution partnership with The Coca-Cola Company, dominant energy drink brand equity, pristine debt-free balance sheet with high ROIC (>25%).). Grounded in our deterministic valuation framework, MNST trades at $45.52 against a 3-year baseline target of $58.34, generating a modeled annualized ROI of 8.6% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Monster Beverage Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Staples, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Monster Beverage Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MNST currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twelve-month revenue of $8.52B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+MNST currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 8.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.13 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.44 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.20 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q2 | $2.41 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2027-Q3 | $2.51 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.88 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q1 | $2.59 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q2 | $2.84 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2028-Q3 | $2.96 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.40 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q1 | $3.06 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q2 | $3.36 B | +18.0% | Consumer Staples secular demand and core market expansion |
-| 2029-Q3 (Q12) | $3.50 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $2.13 B | +10.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.40 B | +10.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $2.12 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q2 | $2.29 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2027-Q3 | $2.34 B | +10.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.64 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q1 | $2.33 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q2 | $2.52 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | $2.58 B | +10.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.90 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q1 | $2.57 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q2 | $2.77 B | +10.0% | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.83 B | +10.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 974 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 971 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 967 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 963 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 949 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 935 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 974 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 971 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 967 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 963 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 949 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 935 M | -1.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $38.90 | $47.44 | $55.98 | 5.2x | +18.0% |
-| 52 Weeks (1Y) | $44.04 | $53.71 | $63.38 | 5.0x | +18.0% |
-| 104 Weeks (2Y) | $51.97 | $63.38 | $74.79 | 4.7x | +18.0% |
-| 156 Weeks (3Y) | $61.33 | $74.79 | $88.25 | 4.5x | +18.0% |
+| 13 Weeks | $36.69 | $45.86 | $55.03 | 5.1x | +3.0% |
+| 52 Weeks (1Y) | $39.59 | $49.49 | $59.39 | 5.1x | +8.7% |
+| 104 Weeks (2Y) | $42.98 | $53.73 | $64.48 | 4.9x | +8.6% |
+| 156 Weeks (3Y) | $46.66 | $58.33 | $70.00 | 4.8x | +8.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ MNST currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

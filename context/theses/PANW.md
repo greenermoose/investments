@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** PANW
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $375.76 per share
 - **Current Price:** $375.76 per share
-- **Target Exit Price:** $832.43 per share
+- **Target Exit Price:** $466.88 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.1 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.4 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1327567
 
 ## Core Investment Thesis
-Palo Alto Networks, Inc. (PANW) operates as a leading player within the Information Technology sector (Cybersecurity Software & Network Security). Global cybersecurity leader delivering network security (Strata), cloud security (Prisma Cloud), and AI-powered SecOps (Cortex & XSIAM). The company benefits from an established economic moat (Enterprise security platformization strategy, high vendor consolidation switching costs, AI-powered automated security operations (XSIAM ARR doubling).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Palo Alto Networks, Inc. (PANW) operates as an established participant within the Information Technology sector (Cybersecurity Software & Network Security). Global cybersecurity leader delivering network security (Strata), cloud security (Prisma Cloud), and AI-powered SecOps (Cortex & XSIAM). The company benefits from a defensible commercial moat (Enterprise security platformization strategy, high vendor consolidation switching costs, AI-powered automated security operations (XSIAM ARR doubling).). Grounded in our deterministic valuation framework, PANW trades at $375.76 against a 3-year baseline target of $466.88, generating a modeled annualized ROI of 7.5% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Palo Alto Networks, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Palo Alto Networks, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +16.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PANW currently trades at a Price-to-Sales (P/S) multiple of ~33.3x on trailing twelve-month revenue of $9.22B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+PANW currently trades at a Price-to-Sales (P/S) multiple of ~33.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~27.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.5%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.31 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.68 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.44 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $2.71 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $2.86 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $3.32 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $3.02 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $3.36 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $3.54 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $4.11 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $3.75 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $4.17 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $4.40 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $2.31 B | +16.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.63 B | +16.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $2.36 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $2.58 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $2.67 B | +16.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $3.05 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $2.74 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $2.99 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $3.10 B | +16.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $3.54 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $3.17 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $3.47 B | +16.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $3.60 B | +16.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 813 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 810 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 807 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 804 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 792 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 780 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 818 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 820 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 822 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 824 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 832 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 841 M | +1.0% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $325.15 | $396.52 | $467.89 | 32.8x | +24.0% |
-| 52 Weeks (1Y) | $382.07 | $465.94 | $549.81 | 31.6x | +24.0% |
-| 104 Weeks (2Y) | $473.77 | $577.77 | $681.77 | 30.0x | +24.0% |
-| 156 Weeks (3Y) | $587.47 | $716.43 | $845.39 | 28.5x | +24.0% |
+| 13 Weeks | $304.98 | $381.22 | $457.46 | 32.6x | +5.9% |
+| 52 Weeks (1Y) | $324.74 | $405.93 | $487.12 | 31.3x | +8.0% |
+| 104 Weeks (2Y) | $348.70 | $435.88 | $523.06 | 29.2x | +7.7% |
+| 156 Weeks (3Y) | $373.44 | $466.80 | $560.16 | 27.3x | +7.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ PANW currently trades at a Price-to-Sales (P/S) multiple of ~33.3x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

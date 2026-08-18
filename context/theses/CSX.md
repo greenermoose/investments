@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** CSX
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $50.58 per share
 - **Current Price:** $50.58 per share
-- **Target Exit Price:** $68.81 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.3 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Target Exit Price:** $57.44 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=277948
 
 ## Core Investment Thesis
-CSX Corporation (CSX) operates as a leading player within the Industrials sector (Rail Transportation). One of the nation's premier transportation suppliers, providing rail-based freight transportation services across the eastern United States. The company benefits from an established economic moat (Irreplaceable private right-of-way rail network, superior fuel efficiency (3-4x more fuel-efficient than trucking), high pricing power.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+CSX Corporation (CSX) operates as an established participant within the Industrials sector (Rail Transportation). One of the nation's premier transportation suppliers, providing rail-based freight transportation services across the eastern United States. The company benefits from a defensible commercial moat (Irreplaceable private right-of-way rail network, superior fuel efficiency (3-4x more fuel-efficient than trucking), high pricing power.). Grounded in our deterministic valuation framework, CSX trades at $50.58 against a 3-year baseline target of $57.44, generating a modeled annualized ROI of 4.3% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-CSX Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Industrials, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+CSX Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue of $14.07B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $3.52 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $3.94 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $3.47 B | +8.0% | Industrials secular demand and core market expansion |
-| 2027-Q2 | $3.73 B | +8.0% | Industrials secular demand and core market expansion |
-| 2027-Q3 | $3.80 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $4.26 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q1 | $3.75 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q2 | $4.02 B | +8.0% | Industrials secular demand and core market expansion |
-| 2028-Q3 | $4.10 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $4.60 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q1 | $4.05 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q2 | $4.35 B | +8.0% | Industrials secular demand and core market expansion |
-| 2029-Q3 (Q12) | $4.43 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $3.52 B | +4.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $3.91 B | +4.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $3.41 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2027-Q2 | $3.62 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2027-Q3 | $3.66 B | +4.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $4.06 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2028-Q1 | $3.54 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2028-Q2 | $3.77 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2028-Q3 | $3.80 B | +4.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $4.23 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2029-Q1 | $3.68 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2029-Q2 | $3.92 B | +4.0% | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $3.96 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,845 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 1,838 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 1,831 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 1,824 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 1,797 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 1,770 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 1,843 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 1,833 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 1,824 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 1,815 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 1,779 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 1,743 M | -2.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $42.28 | $51.56 | $60.84 | 6.6x | +8.0% |
-| 52 Weeks (1Y) | $44.80 | $54.63 | $64.46 | 6.3x | +8.0% |
-| 104 Weeks (2Y) | $48.38 | $59.00 | $69.62 | 6.0x | +8.0% |
-| 156 Weeks (3Y) | $52.25 | $63.72 | $75.19 | 5.7x | +8.0% |
+| 13 Weeks | $40.25 | $50.31 | $60.37 | 6.5x | -2.1% |
+| 52 Weeks (1Y) | $42.23 | $52.79 | $63.35 | 6.6x | +4.4% |
+| 104 Weeks (2Y) | $44.04 | $55.05 | $66.06 | 6.4x | +4.3% |
+| 156 Weeks (3Y) | $45.94 | $57.43 | $68.92 | 6.3x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

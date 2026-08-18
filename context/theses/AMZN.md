@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** AMZN
-- **Exchange:** QQQ
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $261.31 per share
 - **Current Price:** $261.31 per share
-- **Target Exit Price:** $578.89 per share
+- **Target Exit Price:** $353.05 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.3 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 9.2 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1018724
 
 ## Core Investment Thesis
-Amazon.com, Inc. (AMZN) operates as a leading player within the Consumer Discretionary sector (E-Commerce & Cloud Infrastructure). Global e-commerce marketplace, cloud computing leader (AWS), digital advertising network, and logistics infrastructure. The company benefits from an established economic moat (Prime customer loyalty, unmatched regional fulfillment network, AWS cloud infrastructure scale, and high-margin ad network.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Amazon.com, Inc. (AMZN) operates as an established participant within the Consumer Discretionary sector (E-Commerce & Cloud Infrastructure). Global e-commerce marketplace, cloud computing leader (AWS), digital advertising network, and logistics infrastructure. The company benefits from a defensible commercial moat (Prime customer loyalty, unmatched regional fulfillment network, AWS cloud infrastructure scale, and high-margin ad network.). Grounded in our deterministic valuation framework, AMZN trades at $261.31 against a 3-year baseline target of $353.05, generating a modeled annualized ROI of 12.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Amazon.com, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Consumer Discretionary, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Amazon.com, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +13.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMZN currently trades at a Price-to-Sales (P/S) multiple of ~4.1x on trailing twelve-month revenue of $685.06B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+AMZN currently trades at a Price-to-Sales (P/S) multiple of ~4.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $171.26 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $198.80 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $181.18 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q2 | $201.25 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2027-Q3 | $212.37 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $246.51 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q1 | $224.66 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q2 | $249.55 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2028-Q3 | $263.34 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $305.67 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q1 | $278.58 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q2 | $309.44 B | +24.0% | Consumer Discretionary secular demand and core market expansion |
-| 2029-Q3 (Q12) | $326.54 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $171.26 B | +13.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $194.24 B | +13.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $172.95 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | $187.70 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | $193.53 B | +13.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $219.49 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | $195.44 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | $212.11 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | $218.69 B | +13.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $248.02 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | $220.84 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | $239.68 B | +13.0% | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $247.12 B | +13.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 10,716 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 10,676 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 10,636 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 10,596 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 10,437 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 10,280 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 10,770 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 10,784 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 10,797 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 10,811 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 10,865 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 10,919 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $226.11 | $275.75 | $325.38 | 4.0x | +24.0% |
-| 52 Weeks (1Y) | $265.70 | $324.02 | $382.34 | 3.9x | +24.0% |
-| 104 Weeks (2Y) | $329.47 | $401.79 | $474.11 | 3.7x | +24.0% |
-| 156 Weeks (3Y) | $408.54 | $498.22 | $587.90 | 3.5x | +24.0% |
+| 13 Weeks | $210.96 | $263.70 | $316.44 | 4.0x | +3.7% |
+| 52 Weeks (1Y) | $231.17 | $288.96 | $346.75 | 4.0x | +10.6% |
+| 104 Weeks (2Y) | $255.43 | $319.29 | $383.15 | 4.0x | +10.5% |
+| 156 Weeks (3Y) | $282.30 | $352.87 | $423.44 | 3.9x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ AMZN currently trades at a Price-to-Sales (P/S) multiple of ~4.1x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

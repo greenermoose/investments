@@ -52,6 +52,7 @@ To maintain data integrity across investment dossiers, valuation models, and tra
 | ERR-2026-08-006 | 2026-08-17 | `scripts/data/market_prices.json` | BETA Market Price Record | $100.00 Synthetic Benchmark | $24.75 Live Exchange Feed | METHODOLOGY_CALCULATION_ERROR | Direct Exchange / Yahoo Finance Chart API | RESOLVED |
 | ERR-2026-08-007 | 2026-08-17 | `scripts/data/market_prices.json` | XYZ Market Price Record | $100.00 Synthetic Benchmark | $80.31 Live Exchange Feed | METHODOLOGY_CALCULATION_ERROR | Direct Exchange / Yahoo Finance Chart API | RESOLVED |
 | ERR-2026-08-008 | 2026-08-17 | `scripts/data/company_meta.json` | ZM Official Company Name | Zoom Video Communications, Inc. | Zoom Communications, Inc. | TRANSCRIPTION_ERROR | SEC EDGAR Form 10-Q filed 2026-06-04 (CIK 0001585521) | RESOLVED |
+| ERR-2026-08-009 | 2026-08-17 | `scripts/return_engine.py` / `context/theses/*.md` | Universe ROI Predictions & Target Price Valuation Models | Synthetic Clustering (20%, 22%, 0%) | Grounded Continuous ROI Distribution (-12.7% to +28.0%) with Bottom-Up Multi-Horizon Valuation Models | METHODOLOGY_CALCULATION_ERROR | Tier 1 SEC EDGAR 10-K/10-Q Financials & Deterministic Valuation Model | RESOLVED |
 
 ## Resolution Procedures for Target Dossiers
 

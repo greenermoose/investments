@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** MRVL
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $234.33 per share
 - **Current Price:** $234.33 per share
-- **Target Exit Price:** $468.90 per share
+- **Target Exit Price:** $265.89 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.8 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1835632
 
 ## Core Investment Thesis
-Marvell Technology, Inc. (MRVL) operates as a leading player within the Information Technology sector (Data Infrastructure Semiconductors). Designs and develops analog, mixed-signal, and digital processing integrated circuits for cloud data centers, carrier infrastructure, and automotive. The company benefits from an established economic moat (Custom AI ASIC compute and electro-optics interconnect leadership (PAM4 optical DSPs), high content in tier-1 cloud hyperscaler clusters.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Marvell Technology, Inc. (MRVL) operates as an established participant within the Information Technology sector (Data Infrastructure Semiconductors). Designs and develops analog, mixed-signal, and digital processing integrated circuits for cloud data centers, carrier infrastructure, and automotive. The company benefits from a defensible commercial moat (Custom AI ASIC compute and electro-optics interconnect leadership (PAM4 optical DSPs), high content in tier-1 cloud hyperscaler clusters.). Grounded in our deterministic valuation framework, MRVL trades at $234.33 against a 3-year baseline target of $265.89, generating a modeled annualized ROI of 4.3% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Marvell Technology, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Marvell Technology, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing twelve-month revenue of $8.39B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~20.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.10 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.41 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.17 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $2.38 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $2.48 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.84 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $2.56 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $2.80 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $2.92 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.35 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $3.02 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $3.31 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $3.45 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $2.10 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.37 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $2.11 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $2.28 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $2.35 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.66 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $2.36 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $2.56 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $2.63 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.98 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $2.65 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.87 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.95 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 871 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 867 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 864 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 861 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 848 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 835 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 875 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 876 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 877 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 878 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 883 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 887 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $200.27 | $244.23 | $288.19 | 24.1x | +18.0% |
-| 52 Weeks (1Y) | $226.74 | $276.51 | $326.28 | 23.2x | +18.0% |
-| 104 Weeks (2Y) | $267.55 | $326.28 | $385.01 | 22.0x | +18.0% |
-| 156 Weeks (3Y) | $315.71 | $385.01 | $454.31 | 20.9x | +18.0% |
+| 13 Weeks | $188.76 | $235.95 | $283.14 | 23.9x | +2.8% |
+| 52 Weeks (1Y) | $196.50 | $245.63 | $294.76 | 23.0x | +4.8% |
+| 104 Weeks (2Y) | $204.74 | $255.93 | $307.12 | 21.5x | +4.5% |
+| 156 Weeks (3Y) | $212.76 | $265.95 | $319.14 | 20.0x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -67,7 +67,7 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

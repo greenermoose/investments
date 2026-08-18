@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** GOOG
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $341.45 per share
 - **Current Price:** $341.45 per share
-- **Target Exit Price:** $756.43 per share
+- **Target Exit Price:** $491.93 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 9.3 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1652044
 
 ## Core Investment Thesis
-Alphabet Inc. (Class C) (GOOG) operates as a leading player within the Communication Services sector (Interactive Media & Services). Non-voting Class C shares of Alphabet Inc., operating Google Search, YouTube, Android, Google Cloud, and DeepMind. The company benefits from an established economic moat (Global search monopoly, YouTube creator network effects, Google Cloud profitability ramp, custom TPU silicon.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Alphabet Inc. (Class C) (GOOG) operates as an established participant within the Communication Services sector (Interactive Media & Services). Non-voting Class C shares of Alphabet Inc., operating Google Search, YouTube, Android, Google Cloud, and DeepMind. The company benefits from a defensible commercial moat (Global search monopoly, YouTube creator network effects, Google Cloud profitability ramp, custom TPU silicon.). Grounded in our deterministic valuation framework, GOOG trades at $341.45 against a 3-year baseline target of $491.93, generating a modeled annualized ROI of 15.2% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Alphabet Inc. (Class C)'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Communication Services, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Alphabet Inc. (Class C)'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-GOOG currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing twelve-month revenue of $398.90B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+GOOG currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $99.73 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $115.76 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $105.50 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2027-Q2 | $117.19 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2027-Q3 | $123.66 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $143.54 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2028-Q1 | $130.82 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2028-Q2 | $145.31 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2028-Q3 | $153.34 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $177.99 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2029-Q1 | $162.21 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2029-Q2 | $180.18 B | +24.0% | Communication Services secular demand and core market expansion |
-| 2029-Q3 (Q12) | $190.14 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $99.73 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $112.85 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $100.26 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | $108.57 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | $111.69 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $126.39 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | $112.29 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | $121.60 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | $125.10 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $141.56 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | $125.77 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | $136.19 B | +12.0% | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $140.11 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 12,184 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 12,138 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 12,092 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 12,047 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 11,866 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 11,688 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 12,153 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 12,076 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 12,000 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 11,924 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 11,626 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 11,335 M | -2.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $295.46 | $360.32 | $425.18 | 10.3x | +24.0% |
-| 52 Weeks (1Y) | $347.19 | $423.40 | $499.61 | 9.9x | +24.0% |
-| 104 Weeks (2Y) | $430.51 | $525.01 | $619.51 | 9.4x | +24.0% |
-| 156 Weeks (3Y) | $533.84 | $651.02 | $768.20 | 9.0x | +24.0% |
+| 13 Weeks | $277.14 | $346.42 | $415.70 | 10.3x | +6.0% |
+| 52 Weeks (1Y) | $308.61 | $385.76 | $462.91 | 10.3x | +13.0% |
+| 104 Weeks (2Y) | $348.38 | $435.47 | $522.56 | 10.1x | +12.9% |
+| 156 Weeks (3Y) | $393.35 | $491.69 | $590.03 | 9.9x | +12.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ GOOG currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

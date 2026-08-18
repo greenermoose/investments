@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** CDNS
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $323.47 per share
 - **Current Price:** $323.47 per share
-- **Target Exit Price:** $716.59 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 9.4 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Target Exit Price:** $435.98 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.7 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=813672
 
 ## Core Investment Thesis
-Cadence Design Systems, Inc. (CDNS) operates as a leading player within the Information Technology sector (Electronic Design Automation Software). Provides electronic design automation (EDA) software, hardware, and IP products used to design advanced microchips and electronic systems. The company benefits from an established economic moat (Duopoly in EDA software (with Synopsys), mission-critical software required for designing every modern semiconductor, recurring subscription ARR (>85%).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Cadence Design Systems, Inc. (CDNS) operates as an established participant within the Information Technology sector (Electronic Design Automation Software). Provides electronic design automation (EDA) software, hardware, and IP products used to design advanced microchips and electronic systems. The company benefits from a defensible commercial moat (Duopoly in EDA software (with Synopsys), mission-critical software required for designing every modern semiconductor, recurring subscription ARR (>85%).). Grounded in our deterministic valuation framework, CDNS trades at $323.47 against a 3-year baseline target of $435.98, generating a modeled annualized ROI of 12.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Cadence Design Systems, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Cadence Design Systems, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +13.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CDNS currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing twelve-month revenue of $5.33B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+CDNS currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.33 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $1.55 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.41 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $1.57 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $1.65 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.92 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $1.75 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $1.94 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $2.05 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.38 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $2.17 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $2.41 B | +24.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $2.54 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.33 B | +13.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $1.51 B | +13.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.35 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $1.46 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $1.51 B | +13.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $1.71 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $1.52 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $1.65 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $1.70 B | +13.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $1.93 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $1.72 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $1.87 B | +13.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $1.92 B | +13.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 275 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 274 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 273 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 272 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 268 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 264 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 276 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 275 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 275 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 275 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 273 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 272 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $279.90 | $341.34 | $402.78 | 16.5x | +24.0% |
-| 52 Weeks (1Y) | $328.90 | $401.10 | $473.30 | 15.9x | +24.0% |
-| 104 Weeks (2Y) | $407.84 | $497.37 | $586.90 | 15.1x | +24.0% |
-| 156 Weeks (3Y) | $505.73 | $616.74 | $727.75 | 14.3x | +24.0% |
+| 13 Weeks | $261.80 | $327.25 | $392.70 | 16.4x | +4.8% |
+| 52 Weeks (1Y) | $286.13 | $357.66 | $429.19 | 16.3x | +10.6% |
+| 104 Weeks (2Y) | $315.87 | $394.84 | $473.81 | 15.8x | +10.5% |
+| 156 Weeks (3Y) | $348.72 | $435.90 | $523.08 | 15.4x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ CDNS currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

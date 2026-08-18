@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** EXC
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $45.57 per share
 - **Current Price:** $45.57 per share
-- **Target Exit Price:** $45.57 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.2 / 10.0
-- **Rating:** SELL
-- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Target Exit Price:** $44.19 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 6.9 / 10.0
+- **Rating:** AVOID
+- **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1109357
 
 ## Core Investment Thesis
-Exelon Corporation (EXC) operates as a leading player within the Utilities sector (Regulated Electric & Gas Transmission). The nation's largest pure-play transmission and distribution utility company, serving more than 10.5 million customers across six fully regulated utilities. The company benefits from an established economic moat (100% rate-regulated electric transmission and distribution infrastructure without merchant generation commodity risk, stable 4% dividend yield.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The nation's largest pure-play transmission and distribution utility company, serving more than 10.5 million customers across six fully regulated utilities. The company benefits from a defensible commercial moat (100% rate-regulated electric transmission and distribution infrastructure without merchant generation commodity risk, stable 4% dividend yield.). Grounded in our deterministic valuation framework, EXC trades at $45.57 against a 3-year baseline target of $44.19, generating a modeled annualized ROI of -1.0% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Exelon Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Utilities, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Exelon Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue of $26.09B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -1.0%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $6.52 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $7.21 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $6.26 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q2 | $6.62 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q3 | $6.65 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $7.35 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q1 | $6.38 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q2 | $6.75 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q3 | $6.79 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $7.50 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q1 | $6.51 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q2 | $6.89 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q3 (Q12) | $6.92 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $6.52 B | +3.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $7.23 B | +3.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $6.29 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2027-Q2 | $6.67 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2027-Q3 | $6.72 B | +3.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $7.44 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q1 | $6.48 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q2 | $6.87 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q3 | $6.92 B | +3.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $7.67 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q1 | $6.67 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q2 | $7.07 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $7.13 B | +3.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,024 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 1,026 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 1,027 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 1,028 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 1,033 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 1,038 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 1,024 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 1,026 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 1,027 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 1,028 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 1,033 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 1,038 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $37.56 | $45.80 | $54.04 | 1.8x | +2.0% |
-| 52 Weeks (1Y) | $38.11 | $46.48 | $54.85 | 1.7x | +2.0% |
-| 104 Weeks (2Y) | $38.88 | $47.41 | $55.94 | 1.6x | +2.0% |
-| 156 Weeks (3Y) | $39.66 | $48.36 | $57.06 | 1.5x | +2.0% |
+| 13 Weeks | $35.94 | $44.93 | $53.92 | 1.8x | -5.5% |
+| 52 Weeks (1Y) | $36.13 | $45.16 | $54.19 | 1.7x | -0.9% |
+| 104 Weeks (2Y) | $35.73 | $44.66 | $53.59 | 1.7x | -1.0% |
+| 156 Weeks (3Y) | $35.32 | $44.15 | $52.98 | 1.6x | -1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

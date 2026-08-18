@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** GEHC
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $72.37 per share
 - **Current Price:** $72.37 per share
-- **Target Exit Price:** $98.46 per share
+- **Target Exit Price:** $97.59 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.7 / 10.0
+- **Conviction Score:** 7.8 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1932393
 
 ## Core Investment Thesis
-GE HealthCare Technologies Inc. (GEHC) operates as a leading player within the Health Care sector (Medical Imaging & Diagnostic Systems). Global medical technology and digital solutions innovator in imaging (MRI, CT, ultrasound), patient care solutions, and pharmaceutical diagnostics. The company benefits from an established economic moat (Huge global installed base of 4M+ imaging and ultrasound devices, recurring service maintenance contracts (>50% of revenue), Theranostics precision medicine.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+GE HealthCare Technologies Inc. (GEHC) operates as an established participant within the Health Care sector (Medical Imaging & Diagnostic Systems). Global medical technology and digital solutions innovator in imaging (MRI, CT, ultrasound), patient care solutions, and pharmaceutical diagnostics. The company benefits from a defensible commercial moat (Huge global installed base of 4M+ imaging and ultrasound devices, recurring service maintenance contracts (>50% of revenue), Theranostics precision medicine.). Grounded in our deterministic valuation framework, GEHC trades at $72.37 against a 3-year baseline target of $97.59, generating a modeled annualized ROI of 12.9% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-GE HealthCare Technologies Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+GE HealthCare Technologies Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue of $20.06B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $5.01 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $5.62 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $4.95 B | +8.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $5.31 B | +8.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $5.42 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $6.07 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $5.35 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $5.74 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $5.85 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $6.56 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $5.77 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $6.20 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $6.32 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $5.01 B | +7.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $5.61 B | +7.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $4.93 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $5.28 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $5.37 B | +7.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $6.00 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $5.27 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $5.64 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $5.74 B | +7.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $6.42 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $5.64 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $6.04 B | +7.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $6.14 B | +7.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 454 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 453 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 451 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 449 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 442 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 436 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 456 M | +0.0% | Stable share count with neutral dilution |
+| 26 Weeks (2Q) | 456 M | +0.0% | Stable share count with neutral dilution |
+| 39 Weeks (3Q) | 456 M | +0.0% | Stable share count with neutral dilution |
+| 52 Weeks (1Y) | 456 M | +0.0% | Stable share count with neutral dilution |
+| 104 Weeks (2Y) | 456 M | +0.0% | Stable share count with neutral dilution |
+| 156 Weeks (3Y) | 456 M | +0.0% | Stable share count with neutral dilution |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $60.50 | $73.78 | $87.06 | 1.6x | +8.0% |
-| 52 Weeks (1Y) | $64.09 | $78.16 | $92.23 | 1.6x | +8.0% |
-| 104 Weeks (2Y) | $69.22 | $84.41 | $99.60 | 1.5x | +8.0% |
-| 156 Weeks (3Y) | $74.76 | $91.17 | $107.58 | 1.4x | +8.0% |
+| 13 Weeks | $57.70 | $72.13 | $86.56 | 1.6x | -1.3% |
+| 52 Weeks (1Y) | $63.99 | $79.99 | $95.99 | 1.7x | +10.5% |
+| 104 Weeks (2Y) | $70.73 | $88.41 | $106.09 | 1.8x | +10.5% |
+| 156 Weeks (3Y) | $78.02 | $97.52 | $117.02 | 1.8x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

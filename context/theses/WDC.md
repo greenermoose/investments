@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** WDC
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $536.01 per share
 - **Current Price:** $536.01 per share
-- **Target Exit Price:** $536.01 per share
-- **Expected Holding Period:** 2 to 3 Years
-- **Conviction Score:** 8.0 / 10.0
+- **Target Exit Price:** $667.64 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=106040
 
 ## Core Investment Thesis
-Western Digital Corporation (WDC) operates as a leading player within the Information Technology sector (Data Storage Technologies). Develops, manufactures, and sells data storage devices including hard disk drives (ePMR/UltraSMR HDDs) and solid-state drives (Flash/NAND). The company benefits from an established economic moat (Duopoly in nearline mass-capacity enterprise HDDs (with Seagate), UltraSMR capacity density leadership for cloud hyperscaler storage.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Western Digital Corporation (WDC) operates as an established participant within the Information Technology sector (Data Storage Technologies). Develops, manufactures, and sells data storage devices including hard disk drives (ePMR/UltraSMR HDDs) and solid-state drives (Flash/NAND). The company benefits from a defensible commercial moat (Duopoly in nearline mass-capacity enterprise HDDs (with Seagate), UltraSMR capacity density leadership for cloud hyperscaler storage.). Grounded in our deterministic valuation framework, WDC trades at $536.01 against a 3-year baseline target of $667.64, generating a modeled annualized ROI of 7.6% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Western Digital Corporation's top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Western Digital Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing twelve-month revenue of $12.92B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~12.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $3.23 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $3.57 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $3.10 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $3.28 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $3.29 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $3.64 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $3.16 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $3.34 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $3.36 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.71 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $3.22 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $3.41 B | +2.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $3.43 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $3.23 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $3.65 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $3.25 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $3.52 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $3.62 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $4.09 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $3.64 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $3.94 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $4.05 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $4.58 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $4.07 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $4.41 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $4.54 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 345 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 346 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 346 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 347 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 348 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 350 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 345 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 346 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 346 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 347 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 348 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 350 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $441.71 | $538.67 | $635.63 | 14.1x | +2.0% |
-| 52 Weeks (1Y) | $448.32 | $546.73 | $645.14 | 13.6x | +2.0% |
-| 104 Weeks (2Y) | $457.28 | $557.66 | $658.04 | 12.9x | +2.0% |
-| 156 Weeks (3Y) | $466.43 | $568.82 | $671.21 | 12.3x | +2.0% |
+| 13 Weeks | $431.77 | $539.71 | $647.65 | 14.0x | +2.8% |
+| 52 Weeks (1Y) | $462.10 | $577.63 | $693.16 | 13.8x | +7.8% |
+| 104 Weeks (2Y) | $496.88 | $621.10 | $745.32 | 13.3x | +7.6% |
+| 156 Weeks (3Y) | $534.14 | $667.68 | $801.22 | 12.9x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

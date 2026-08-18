@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ISRG
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $390.33 per share
 - **Current Price:** $390.33 per share
-- **Target Exit Price:** $864.71 per share
+- **Target Exit Price:** $602.75 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.2 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 9.0 / 10.0
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1035267
 
 ## Core Investment Thesis
-Intuitive Surgical, Inc. (ISRG) operates as a leading player within the Health Care sector (Robotic Surgical Technologies). Develops, manufactures, and markets robotic-assisted surgical systems (da Vinci and Ion) for minimally invasive medical procedures. The company benefits from an established economic moat (Massive installed base (9,000+ systems), extensive surgeon training moat, recurring instruments and accessories revenue (>80% of total).), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Intuitive Surgical, Inc. (ISRG) operates as an established participant within the Health Care sector (Robotic Surgical Technologies). Develops, manufactures, and markets robotic-assisted surgical systems (da Vinci and Ion) for minimally invasive medical procedures. The company benefits from a defensible commercial moat (Massive installed base (9,000+ systems), extensive surgeon training moat, recurring instruments and accessories revenue (>80% of total).). Grounded in our deterministic valuation framework, ISRG trades at $390.33 against a 3-year baseline target of $602.75, generating a modeled annualized ROI of 17.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Intuitive Surgical, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Intuitive Surgical, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +17.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ISRG currently trades at a Price-to-Sales (P/S) multiple of ~13.9x on trailing twelve-month revenue of $9.97B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ISRG currently trades at a Price-to-Sales (P/S) multiple of ~13.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 17.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.49 B | +24.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.89 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.64 B | +24.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $2.93 B | +24.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $3.09 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $3.59 B | +24.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $3.27 B | +24.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $3.63 B | +24.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $3.83 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $4.45 B | +24.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $4.05 B | +24.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $4.50 B | +24.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $4.75 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $2.49 B | +17.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.85 B | +17.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $2.56 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $2.80 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $2.92 B | +17.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $3.34 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $3.00 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $3.28 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $3.41 B | +17.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $3.90 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $3.51 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $3.84 B | +17.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $3.99 B | +17.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 353 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 351 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 350 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 349 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 343 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 338 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 354 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 353 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 353 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 352 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 350 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 349 M | -0.5% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $337.76 | $411.90 | $486.04 | 13.7x | +24.0% |
-| 52 Weeks (1Y) | $396.89 | $484.01 | $571.13 | 13.2x | +24.0% |
-| 104 Weeks (2Y) | $492.14 | $600.17 | $708.20 | 12.5x | +24.0% |
-| 156 Weeks (3Y) | $610.25 | $744.21 | $878.17 | 11.9x | +24.0% |
+| 13 Weeks | $318.67 | $398.34 | $478.01 | 13.6x | +8.5% |
+| 52 Weeks (1Y) | $361.13 | $451.41 | $541.69 | 13.6x | +15.6% |
+| 104 Weeks (2Y) | $417.30 | $521.63 | $625.96 | 13.4x | +15.6% |
+| 156 Weeks (3Y) | $482.32 | $602.90 | $723.48 | 13.2x | +15.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ ISRG currently trades at a Price-to-Sales (P/S) multiple of ~13.9x on trailing t
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

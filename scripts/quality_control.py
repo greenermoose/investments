@@ -26,6 +26,12 @@ import sys
 import time
 import urllib.request
 
+scripts_dir = os.path.dirname(os.path.abspath(__file__))
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+from valuation_model import model_equity_valuation
+
 SEC_HEADERS = {
     "User-Agent": "InvestmentsApp System (contact@investments.app)"
 }
@@ -813,29 +819,27 @@ class QualityController:
             tech_resistance_20d = price_info.get("technical_resistance_20d", round(current_price * 1.05, 2))
             historical_candles = price_info.get("historical_candles_30d", [])
 
-            # Grounded Benchmark Entry Price & Target Exit Price Calculation
-            entry_price = current_price
-            if "5" in holding_period or "4 to 6" in holding_period:
-                holding_years = 4.0
-            elif "2 to 4" in holding_period:
-                holding_years = 3.0
-            else:
-                holding_years = 3.0
+            # Grounded Valuation Model & Return Engine Execution
+            sector_val = meta.get("sector", "Information Technology")
+            industry_val = meta.get("industry", "US Equity")
+            comp_name = meta.get("name") or price_info.get("name") or f"{sym} Corporation"
 
-            if thesis_status == "BUY":
-                annual_cagr = 0.20 if conviction_score < 9.0 else 0.22
-                growth_multiplier = (1.0 + annual_cagr) ** holding_years
-                target_exit_price = round(entry_price * growth_multiplier, 2)
-                roi_pct = ((target_exit_price - entry_price) / entry_price) * 100.0
-                cagr_pct = annual_cagr * 100.0
-                target_roi_str = f"{cagr_pct:.0f}%" if cagr_pct.is_integer() else f"{cagr_pct:.1f}%"
-            elif thesis_status == "HOLD":
-                growth_multiplier = 1.30
-                target_exit_price = round(entry_price * growth_multiplier, 2)
-                target_roi_str = "20%"
-            else:  # SELL or AVOID
-                target_exit_price = entry_price
-                target_roi_str = "N/A"
+            val_model = model_equity_valuation(
+                symbol=sym,
+                current_price=current_price,
+                shares_outstanding=shares or 1e9,
+                ttm_revenue=ttm_rev or (current_price * (shares or 1e9) * 0.2),
+                sector=sector_val,
+                industry=industry_val,
+                company_name=comp_name
+            )
+
+            thesis_status = val_model["rating"]
+            conviction_score = val_model["conviction_score"]
+            entry_price = val_model["entry_price"]
+            target_exit_price = val_model["target_exit_price"]
+            target_roi_str = val_model["target_roi_str"]
+            holding_period = val_model["holding_period"]
 
             # Market Cap & Enterprise Value
             market_cap = round(shares * current_price, 2) if (shares and current_price) else None

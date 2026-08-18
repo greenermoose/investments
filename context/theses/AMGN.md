@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** AMGN
-- **Exchange:** QQQ
+- **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $419.38 per share
 - **Current Price:** $419.38 per share
-- **Target Exit Price:** $570.56 per share
+- **Target Exit Price:** $450.48 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.2 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 7.8 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=318154
 
 ## Core Investment Thesis
-Amgen Inc. (AMGN) operates as a leading player within the Health Care sector (Biotechnology). Discovers, develops, manufactures, and delivers human therapeutics across oncology, inflammation, and general medicine. The company benefits from an established economic moat (Biologics manufacturing scale, patent-protected commercial therapies (Prolia, Repatha, Tezspire), Horizon Therapeutics rare disease portfolio.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Amgen Inc. (AMGN) operates as an established participant within the Health Care sector (Biotechnology). Discovers, develops, manufactures, and delivers human therapeutics across oncology, inflammation, and general medicine. The company benefits from a defensible commercial moat (Biologics manufacturing scale, patent-protected commercial therapies (Prolia, Repatha, Tezspire), Horizon Therapeutics rare disease portfolio.). Grounded in our deterministic valuation framework, AMGN trades at $419.38 against a 3-year baseline target of $450.48, generating a modeled annualized ROI of 2.4% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Amgen Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Health Care, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Amgen Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue of $35.50B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.88 B | +8.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $9.95 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.76 B | +8.0% | Health Care secular demand and core market expansion |
-| 2027-Q2 | $9.40 B | +8.0% | Health Care secular demand and core market expansion |
-| 2027-Q3 | $9.59 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $10.75 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q1 | $9.46 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q2 | $10.16 B | +8.0% | Health Care secular demand and core market expansion |
-| 2028-Q3 | $10.35 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $11.61 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q1 | $10.22 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q2 | $10.97 B | +8.0% | Health Care secular demand and core market expansion |
-| 2029-Q3 (Q12) | $11.18 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $8.88 B | +5.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $9.88 B | +5.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $8.64 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2027-Q2 | $9.21 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2027-Q3 | $9.32 B | +5.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $10.38 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2028-Q1 | $9.07 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2028-Q2 | $9.67 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2028-Q3 | $9.79 B | +5.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $10.90 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2029-Q1 | $9.53 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2029-Q2 | $10.15 B | +5.0% | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $10.27 B | +5.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 538 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 536 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 534 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 532 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 524 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 516 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 539 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 26 Weeks (2Q) | 537 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 39 Weeks (3Q) | 536 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 52 Weeks (1Y) | 535 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 104 Weeks (2Y) | 529 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
+| 156 Weeks (3Y) | 524 M | -1.0% | Open-market share repurchases funded by operational free cash flow |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $350.57 | $427.53 | $504.49 | 6.3x | +8.0% |
-| 52 Weeks (1Y) | $371.40 | $452.93 | $534.46 | 6.1x | +8.0% |
-| 104 Weeks (2Y) | $401.11 | $489.16 | $577.21 | 5.8x | +8.0% |
-| 156 Weeks (3Y) | $433.21 | $528.30 | $623.39 | 5.5x | +8.0% |
+| 13 Weeks | $333.66 | $417.08 | $500.50 | 6.2x | -2.2% |
+| 52 Weeks (1Y) | $344.10 | $430.12 | $516.14 | 6.2x | +2.6% |
+| 104 Weeks (2Y) | $352.12 | $440.15 | $528.18 | 5.9x | +2.4% |
+| 156 Weeks (3Y) | $360.25 | $450.31 | $540.37 | 5.7x | +2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

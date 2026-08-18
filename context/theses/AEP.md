@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** AEP
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $126.53 per share
 - **Current Price:** $126.53 per share
-- **Target Exit Price:** $126.53 per share
-- **Expected Holding Period:** 4 to 6 Years
-- **Conviction Score:** 8.1 / 10.0
-- **Rating:** SELL
-- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Target Exit Price:** $125.39 per share
+- **Expected Holding Period:** 3 to 5 Years
+- **Conviction Score:** 7.0 / 10.0
+- **Rating:** AVOID
+- **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=4904
 
 ## Core Investment Thesis
-American Electric Power Company, Inc. (AEP) operates as a leading player within the Utilities sector (Regulated Electric Utilities). One of the largest electric utilities in the United States, delivering electricity to over 5.6 million customers across 11 states. The company benefits from an established economic moat (Regulated transmission network monopoly (largest transmission grid in the US with 40,000+ miles of lines), high rate-base growth driven by data centers.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+American Electric Power Company, Inc. (AEP) operates as an established participant within the Utilities sector (Regulated Electric Utilities). One of the largest electric utilities in the United States, delivering electricity to over 5.6 million customers across 11 states. The company benefits from a defensible commercial moat (Regulated transmission network monopoly (largest transmission grid in the US with 40,000+ miles of lines), high rate-base growth driven by data centers.). Grounded in our deterministic valuation framework, AEP trades at $126.53 against a 3-year baseline target of $125.39, generating a modeled annualized ROI of -0.3% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-American Electric Power Company, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Utilities, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+American Electric Power Company, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twelve-month revenue of $22.58B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.3%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $5.65 B | +2.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $6.24 B | +2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $5.42 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q2 | $5.73 B | +2.0% | Utilities secular demand and core market expansion |
-| 2027-Q3 | $5.76 B | +2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $6.37 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q1 | $5.52 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q2 | $5.84 B | +2.0% | Utilities secular demand and core market expansion |
-| 2028-Q3 | $5.87 B | +2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $6.49 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q1 | $5.64 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q2 | $5.96 B | +2.0% | Utilities secular demand and core market expansion |
-| 2029-Q3 (Q12) | $5.99 B | +2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $5.65 B | +3.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $6.26 B | +3.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $5.44 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2027-Q2 | $5.77 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2027-Q3 | $5.81 B | +3.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $6.44 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q1 | $5.61 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q2 | $5.94 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2028-Q3 | $5.99 B | +3.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $6.64 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q1 | $5.77 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q2 | $6.12 B | +3.0% | Utilities core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $6.17 B | +3.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 542 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 26 Weeks (2Q) | 542 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 39 Weeks (3Q) | 543 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 52 Weeks (1Y) | 544 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 104 Weeks (2Y) | 546 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
-| 156 Weeks (3Y) | 549 M | +0.5% | SBC dilution partially offset by tactical share buybacks |
+| 13 Weeks (1Q) | 542 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 542 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 543 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 544 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 546 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 549 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $104.27 | $127.16 | $150.05 | 3.0x | +2.0% |
-| 52 Weeks (1Y) | $105.83 | $129.06 | $152.29 | 2.9x | +2.0% |
-| 104 Weeks (2Y) | $107.94 | $131.64 | $155.34 | 2.7x | +2.0% |
-| 156 Weeks (3Y) | $110.10 | $134.27 | $158.44 | 2.6x | +2.0% |
+| 13 Weeks | $99.81 | $124.76 | $149.71 | 3.0x | -5.5% |
+| 52 Weeks (1Y) | $101.00 | $126.25 | $151.50 | 3.0x | -0.2% |
+| 104 Weeks (2Y) | $100.62 | $125.78 | $150.94 | 2.9x | -0.3% |
+| 156 Weeks (3Y) | $100.25 | $125.31 | $150.37 | 2.8x | -0.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -69,7 +69,7 @@ AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twe
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

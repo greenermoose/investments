@@ -2,60 +2,60 @@
 
 ## Summary & Key Metrics
 - **Ticker:** ADSK
-- **Exchange:** QQQ
+- **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $241.64 per share
 - **Current Price:** $241.64 per share
-- **Target Exit Price:** $483.52 per share
+- **Target Exit Price:** $301.08 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.9 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Conviction Score:** 8.2 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=769397
 
 ## Core Investment Thesis
-Autodesk, Inc. (ADSK) operates as a leading player within the Information Technology sector (Design & Engineering Software). Provides 3D design, engineering, and entertainment software and services (AutoCAD, Revit, Inventor, Fusion, Maya) across AEC, manufacturing, and media. The company benefits from an established economic moat (Standard architecture and engineering design software (AutoCAD, Revit), high file format and workflow switching costs, expanding cloud construction platform.), positioning it to generate sustainable cash flows and attractive risk-adjusted returns across the 3-to-5 year horizon.
+Autodesk, Inc. (ADSK) operates as an established participant within the Information Technology sector (Design & Engineering Software). Provides 3D design, engineering, and entertainment software and services (AutoCAD, Revit, Inventor, Fusion, Maya) across AEC, manufacturing, and media. The company benefits from a defensible commercial moat (Standard architecture and engineering design software (AutoCAD, Revit), high file format and workflow switching costs, expanding cloud construction platform.). Grounded in our deterministic valuation framework, ADSK trades at $241.64 against a 3-year baseline target of $301.08, generating a modeled annualized ROI of 7.6% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
-Autodesk, Inc.'s top-line revenue trajectory over the 13-quarter forecast period is supported by durable secular tailwinds in Information Technology, expanding customer contract sizes, and disciplined operational execution. Commercial growth is driven by core market share expansion, product innovations, and recurring revenue resilience across diversified enterprise and consumer channels.
+Autodesk, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue of $7.18B. Over the 3-year investment horizon, revenue compounding combined with operating leverage supports fundamental valuation expansion. We model normalized multiples reflecting durable cash conversion, yielding an annualized total return profile aligned with our multi-year compounding mandate.
+ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
 | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.80 B | +18.0% | Current operational baseline and backlog delivery |
-| 2026-Q4 | $2.06 B | +18.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.85 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q2 | $2.03 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2027-Q3 | $2.12 B | +18.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.43 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q1 | $2.19 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q2 | $2.40 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2028-Q3 | $2.50 B | +18.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.87 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q1 | $2.58 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q2 | $2.83 B | +18.0% | Information Technology secular demand and core market expansion |
-| 2029-Q3 (Q12) | $2.95 B | +18.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| 2026-Q3 (Current) | $1.80 B | +12.0% | Current operational baseline and contract fulfillment |
+| 2026-Q4 | $2.03 B | +12.0% | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | $1.81 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | $1.96 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | $2.01 B | +12.0% | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | $2.28 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | $2.02 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | $2.19 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | $2.25 B | +12.0% | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | $2.55 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | $2.26 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | $2.45 B | +12.0% | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | $2.52 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 210 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 26 Weeks (2Q) | 209 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 39 Weeks (3Q) | 209 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 52 Weeks (1Y) | 208 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 104 Weeks (2Y) | 205 M | -1.5% | Open-market share repurchases funded by operational cash flow |
-| 156 Weeks (3Y) | 202 M | -1.5% | Open-market share repurchases funded by operational cash flow |
+| 13 Weeks (1Q) | 211 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 26 Weeks (2Q) | 212 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 39 Weeks (3Q) | 212 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 52 Weeks (1Y) | 212 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 104 Weeks (2Y) | 213 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
+| 156 Weeks (3Y) | 214 M | +0.5% | Stock-based compensation dilution partially offset by tactical buybacks |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $206.52 | $251.85 | $297.18 | 7.0x | +18.0% |
-| 52 Weeks (1Y) | $233.81 | $285.14 | $336.47 | 6.7x | +18.0% |
-| 104 Weeks (2Y) | $275.90 | $336.46 | $397.02 | 6.4x | +18.0% |
-| 156 Weeks (3Y) | $325.56 | $397.02 | $468.48 | 6.1x | +18.0% |
+| 13 Weeks | $194.65 | $243.31 | $291.97 | 7.0x | +2.8% |
+| 52 Weeks (1Y) | $208.32 | $260.40 | $312.48 | 6.9x | +7.8% |
+| 104 Weeks (2Y) | $224.00 | $280.00 | $336.00 | 6.6x | +7.6% |
+| 156 Weeks (3Y) | $240.80 | $301.00 | $361.20 | 6.4x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -68,7 +68,7 @@ ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing tw
 | Target Date / Window | Event / Catalyst | Expected Outcome | Actual Outcome & Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 | Operational Execution & Earnings | Delivery against quarterly revenue and margin guidance | Tracking solid performance | PENDING |
-| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and enterprise offerings | Market adoption expanding | PENDING |
+| 2026-Q4 | Product Roadmap Milestone | Launch of upgraded capabilities and commercial offerings | Market adoption expanding | PENDING |
 | 2027-Q2 | Geographic / Channel Expansion | Penetration into adjacent market segments | Broadening revenue base | PENDING |
 | 2027-Q4 | Capital Return & Free Cash Flow Milestone | Sustained cash return program and balance sheet strengthening | Enhancing per-share value | PENDING |
 

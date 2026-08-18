@@ -848,7 +848,7 @@ pre code {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  padding: 20px;
+  padding: 16px;
 }
 
 .modal-content {
@@ -856,8 +856,9 @@ pre code {
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   width: 100%;
-  max-width: 900px;
-  max-height: 90vh;
+  max-width: none;
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
   display: flex;
   flex-direction: column;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
@@ -961,9 +962,96 @@ pre code {
   flex: 1;
 }
 
+.quarterly-revenue-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(100vh - 300px);
+  min-height: 380px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  background: var(--bg-color-card);
+  margin: 16px 0;
+  position: relative;
+}
+
+.quarterly-revenue-table-container table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+}
+
+.quarterly-revenue-table-container thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.quarterly-revenue-table-container th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #151a23;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.quarterly-revenue-table-container td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+}
+
+.quarterly-revenue-table-container td:last-child {
+  white-space: normal;
+  min-width: 260px;
+}
+
 .provenance-table-container {
   overflow-x: auto;
   margin: 16px 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  background: var(--bg-color-card);
+}
+
+.provenance-table-container table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+}
+
+.provenance-table-container thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.provenance-table-container th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #151a23;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.provenance-table-container td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .link-btn {

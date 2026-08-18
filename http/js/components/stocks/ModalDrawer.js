@@ -173,15 +173,9 @@ export function openCompanyModal(company) {
         const row = document.createElement('tr');
         const periodType = q.period_type || (q.quarter_index !== undefined ? (q.quarter_index === 0 ? 'CURRENT' : 'PROJECTED') : 'HISTORICAL');
         
-        let typeBadge = '';
         let rowBg = '';
-        if (periodType === 'HISTORICAL') {
-          typeBadge = '<span class="badge-status" style="background: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.3); font-size: 0.72rem; padding: 2px 6px;">HISTORICAL</span>';
-        } else if (periodType === 'CURRENT') {
-          typeBadge = '<span class="badge-status buy" style="font-size: 0.72rem; padding: 2px 6px;">CURRENT (Q0)</span>';
+        if (periodType === 'CURRENT') {
           rowBg = 'background: rgba(0, 212, 255, 0.05);';
-        } else {
-          typeBadge = '<span class="badge-status" style="background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); font-size: 0.72rem; padding: 2px 6px;">PROJECTED</span>';
         }
 
         const revB = q.revenue_b !== undefined ? q.revenue_b : (q.projected_revenue_b !== undefined ? q.projected_revenue_b : 0);
@@ -190,25 +184,22 @@ export function openCompanyModal(company) {
         const yoySign = yoy >= 0 ? '+' : '';
         const sharesB = q.shares_b !== undefined ? q.shares_b : (q.projected_shares_b !== undefined ? q.projected_shares_b : (company.shares_outstanding_b || 1.0));
         const psMult = q.ps_multiple !== undefined ? q.ps_multiple : (q.projected_ps_multiple !== undefined ? q.projected_ps_multiple : currPs);
-        const impliedPx = q.implied_stock_price !== undefined ? q.implied_stock_price : currentPrice;
         const driverText = q.primary_driver || q.primary_growth_driver || 'Operational execution and market scaling';
 
         row.style.cssText = rowBg;
         row.innerHTML = `
           <td><strong>${q.quarter_label || '-'}</strong></td>
           <td><code>${q.date || '-'}</code></td>
-          <td>${typeBadge}</td>
           <td style="font-weight: 600; color: #ffffff;">$${Number(revB).toFixed(2)} B</td>
           <td style="color: ${yoyColor}; font-weight: 600;">${yoySign}${Number(yoy).toFixed(1)}%</td>
           <td>${Number(sharesB).toFixed(3)} B</td>
           <td style="color: #00d4ff; font-weight: 600;">${Number(psMult).toFixed(2)}x</td>
-          <td style="color: #e2e8f0; font-weight: 500;">$${Number(impliedPx).toFixed(2)}</td>
-          <td style="font-size: 0.82rem; color: var(--text-secondary); max-width: 240px;">${driverText}</td>
+          <td style="font-size: 0.85rem; color: var(--text-secondary);">${driverText}</td>
         `;
         quarterlyTbody.appendChild(row);
       });
     } else {
-      quarterlyTbody.innerHTML = `<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 16px;">Quarterly forecast matrix generated during universe compilation.</td></tr>`;
+      quarterlyTbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 16px;">Quarterly forecast matrix generated during universe compilation.</td></tr>`;
     }
   }
 

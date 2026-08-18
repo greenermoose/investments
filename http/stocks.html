@@ -196,6 +196,7 @@
 
         <div class="modal-nav-tabs">
           <button class="modal-tab active" data-tab="tab-overview">Investment Thesis</button>
+          <button class="modal-tab" data-tab="tab-quarterly">Quarterly Revenue</button>
           <button class="modal-tab" data-tab="tab-analysts">Analyst Coverage</button>
           <button class="modal-tab" data-tab="tab-technicals">Technical Analysis</button>
           <button class="modal-tab" data-tab="tab-sec">SEC Filings</button>
@@ -319,78 +320,73 @@
               <p id="modal-catalyst" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
             </div>
 
-            <!-- Quarterly Revenue Trajectory & Valuation Multiples (Historical & Projected) Card -->
-            <div id="modal-quarterly-trajectory-card"
-              style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; margin: 20px 0;">
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-                <div>
-                  <div
-                    style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">
-                    Quarterly Revenue Trajectory &amp; Valuation Multiples</div>
-                  <p style="margin: 4px 0 0 0; font-size: 0.82rem; color: var(--text-secondary);">
-                    Historical SEC reported quarters and forward 13-quarter projections with diluted shares and Price-to-Sales multiples.
-                  </p>
-                </div>
-                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-                  <span id="modal-ps-summary-pill" class="badge-status hold" style="font-size: 0.76rem; padding: 3px 8px;">
-                    P/S: <span id="modal-ps-curr-val">10.8x</span> &rarr; <span id="modal-ps-target-val">10.2x</span>
-                  </span>
-                </div>
-              </div>
-
-              <!-- Key Multiple & Growth Metrics Ribbon -->
-              <div class="company-metrics-grid"
-                style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom: 14px;">
-                <div class="metric-item">
-                  <span class="metric-label">Current P/S Ratio</span>
-                  <span class="metric-val" id="modal-grid-ps-current" style="font-size: 0.88rem; color: #ffffff;">-</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-label">3Y Target P/S Multiple</span>
-                  <span class="metric-val" id="modal-grid-ps-target" style="font-size: 0.88rem; color: #00d4ff;">-</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-label">Multiple Evolution</span>
-                  <span class="metric-val" id="modal-grid-ps-delta" style="font-size: 0.88rem; color: #e2e8f0;">-</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-label">Annual Revenue CAGR</span>
-                  <span class="metric-val" id="modal-grid-rev-growth" style="font-size: 0.88rem; color: #10b981;">-</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-label">Net Share Dilution/Burn</span>
-                  <span class="metric-val" id="modal-grid-dilution" style="font-size: 0.88rem; color: #818cf8;">-</span>
-                </div>
-              </div>
-
-              <!-- Responsive Quarterly Table -->
-              <div class="provenance-table-container" style="max-height: 380px; overflow-y: auto;">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Period / Quarter</th>
-                      <th>Calendar Date</th>
-                      <th>Type</th>
-                      <th>Revenue ($B)</th>
-                      <th>YoY Growth (%)</th>
-                      <th>Diluted Shares (B)</th>
-                      <th>Price / Sales (P/S)</th>
-                      <th>Implied Price</th>
-                      <th>Operational Growth Vector</th>
-                    </tr>
-                  </thead>
-                  <tbody id="modal-quarterly-revenue-tbody">
-                    <!-- Injected via JS -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
             <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)
             </h4>
             <div class="callout warning" style="margin: 8px 0 16px 0;">
               <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0;"></p>
+            </div>
+          </div>
+
+          <!-- Tab 2: Quarterly Revenue Trajectory & Valuation Multiples -->
+          <div id="tab-quarterly" class="modal-tab-content" style="display: none;">
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <h4 style="margin: 0 0 4px 0; color: #ffffff;">Quarterly Revenue Trajectory &amp; Valuation Multiples</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">
+                  Historical SEC reported quarters and forward 13-quarter projections with diluted shares and Price-to-Sales multiples.
+                </p>
+              </div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span id="modal-ps-summary-pill" class="badge-status hold" style="font-size: 0.76rem; padding: 3px 8px;">
+                  P/S: <span id="modal-ps-curr-val">10.8x</span> &rarr; <span id="modal-ps-target-val">10.2x</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Key Multiple & Growth Metrics Ribbon -->
+            <div class="company-metrics-grid"
+              style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom: 16px;">
+              <div class="metric-item">
+                <span class="metric-label">Current P/S Ratio</span>
+                <span class="metric-val" id="modal-grid-ps-current" style="font-size: 0.88rem; color: #ffffff;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">3Y Target P/S Multiple</span>
+                <span class="metric-val" id="modal-grid-ps-target" style="font-size: 0.88rem; color: #00d4ff;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Multiple Evolution</span>
+                <span class="metric-val" id="modal-grid-ps-delta" style="font-size: 0.88rem; color: #e2e8f0;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Annual Revenue CAGR</span>
+                <span class="metric-val" id="modal-grid-rev-growth" style="font-size: 0.88rem; color: #10b981;">-</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Net Share Dilution/Burn</span>
+                <span class="metric-val" id="modal-grid-dilution" style="font-size: 0.88rem; color: #818cf8;">-</span>
+              </div>
+            </div>
+
+            <!-- Responsive Quarterly Table with Sticky Header -->
+            <div class="quarterly-revenue-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Period / Quarter</th>
+                    <th>Calendar Date</th>
+                    <th>Revenue ($B)</th>
+                    <th>YoY Growth (%)</th>
+                    <th>Diluted Shares (B)</th>
+                    <th>Price / Sales (P/S)</th>
+                    <th>Operational Growth Vector</th>
+                  </tr>
+                </thead>
+                <tbody id="modal-quarterly-revenue-tbody">
+                  <!-- Injected via JS -->
+                </tbody>
+              </table>
             </div>
           </div>
 

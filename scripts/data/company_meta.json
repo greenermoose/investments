@@ -33,7 +33,7 @@
     "investor_relations_url": "https://investor.apple.com/",
     "current_ps_multiple": 10.8,
     "target_ps_multiple": 10.25,
-    "last_updated": "2026-08-18T18:26:18.697066+00:00"
+    "last_updated": "2026-08-18T20:33:24.363897+00:00"
   },
   "ABNB": {
     "name": "Airbnb, Inc.",
@@ -69,7 +69,7 @@
     "investor_relations_url": "https://investors.airbnb.com/",
     "current_ps_multiple": 8.8,
     "target_ps_multiple": 8.08,
-    "last_updated": "2026-08-18T18:26:18.698051+00:00"
+    "last_updated": "2026-08-18T20:33:24.363897+00:00"
   },
   "ADBE": {
     "name": "Adobe Inc.",
@@ -105,7 +105,7 @@
     "investor_relations_url": "https://www.adobe.com/investor-relations.html",
     "current_ps_multiple": 4.3,
     "target_ps_multiple": 3.85,
-    "last_updated": "2026-08-18T18:26:18.698051+00:00"
+    "last_updated": "2026-08-18T20:33:24.363897+00:00"
   },
   "ADI": {
     "name": "Analog Devices, Inc.",
@@ -141,7 +141,7 @@
     "investor_relations_url": "https://investor.analog.com/",
     "current_ps_multiple": 17.1,
     "target_ps_multiple": 15.75,
-    "last_updated": "2026-08-18T18:26:18.698051+00:00"
+    "last_updated": "2026-08-18T20:33:24.365277+00:00"
   },
   "ADP": {
     "name": "Automatic Data Processing, Inc.",
@@ -177,7 +177,7 @@
     "investor_relations_url": "https://investors.adp.com/",
     "current_ps_multiple": 4.8,
     "target_ps_multiple": 4.46,
-    "last_updated": "2026-08-18T18:26:18.699051+00:00"
+    "last_updated": "2026-08-18T20:33:24.365277+00:00"
   },
   "ADSK": {
     "name": "Autodesk, Inc.",
@@ -213,7 +213,7 @@
     "investor_relations_url": "https://investors.autodesk.com/",
     "current_ps_multiple": 7.1,
     "target_ps_multiple": 6.39,
-    "last_updated": "2026-08-18T18:26:18.699051+00:00"
+    "last_updated": "2026-08-18T20:33:24.366152+00:00"
   },
   "AEP": {
     "name": "American Electric Power Company, Inc.",
@@ -249,7 +249,7 @@
     "investor_relations_url": "https://www.aep.com/investors/",
     "current_ps_multiple": 3.0,
     "target_ps_multiple": 2.79,
-    "last_updated": "2026-08-18T18:26:18.700050+00:00"
+    "last_updated": "2026-08-18T20:33:24.366152+00:00"
   },
   "ALNY": {
     "name": "Alnylam Pharmaceuticals, Inc.",
@@ -285,7 +285,7 @@
     "investor_relations_url": "https://investors.alnylam.com/",
     "current_ps_multiple": 7.8,
     "target_ps_multiple": 6.85,
-    "last_updated": "2026-08-18T18:26:18.700050+00:00"
+    "last_updated": "2026-08-18T20:33:24.366152+00:00"
   },
   "AMAT": {
     "name": "Applied Materials, Inc.",
@@ -321,7 +321,7 @@
     "investor_relations_url": "https://ir.appliedmaterials.com/",
     "current_ps_multiple": 14.9,
     "target_ps_multiple": 13.68,
-    "last_updated": "2026-08-18T18:26:18.700050+00:00"
+    "last_updated": "2026-08-18T20:33:24.367226+00:00"
   },
   "AMD": {
     "name": "Advanced Micro Devices, Inc.",
@@ -357,7 +357,7 @@
     "investor_relations_url": "https://ir.amd.com/",
     "current_ps_multiple": 23.8,
     "target_ps_multiple": 21.45,
-    "last_updated": "2026-08-18T18:26:18.701220+00:00"
+    "last_updated": "2026-08-18T20:33:24.367226+00:00"
   },
   "AMGN": {
     "name": "Amgen Inc.",
@@ -393,7 +393,7 @@
     "investor_relations_url": "https://investors.amgen.com/",
     "current_ps_multiple": 6.4,
     "target_ps_multiple": 5.74,
-    "last_updated": "2026-08-18T18:26:18.703627+00:00"
+    "last_updated": "2026-08-18T20:33:24.368198+00:00"
   },
   "AMZN": {
     "name": "Amazon.com, Inc.",
@@ -429,7 +429,7 @@
     "investor_relations_url": "https://ir.aboutamazon.com/",
     "current_ps_multiple": 4.1,
     "target_ps_multiple": 3.9,
-    "last_updated": "2026-08-18T18:26:18.704619+00:00"
+    "last_updated": "2026-08-18T20:33:24.369248+00:00"
   },
   "APP": {
     "name": "AppLovin Corporation",
@@ -465,7 +465,7 @@
     "investor_relations_url": "https://investors.applovin.com/",
     "current_ps_multiple": 18.5,
     "target_ps_multiple": 16.25,
-    "last_updated": "2026-08-18T18:26:18.704619+00:00"
+    "last_updated": "2026-08-18T20:33:24.369248+00:00"
   },
   "ARM": {
     "name": "Arm Holdings plc",
@@ -501,7 +501,7 @@
     "investor_relations_url": "https://investors.arm.com/",
     "current_ps_multiple": 61.4,
     "target_ps_multiple": 47.92,
-    "last_updated": "2026-08-18T18:26:18.705915+00:00"
+    "last_updated": "2026-08-18T20:33:24.369248+00:00"
   },
   "ASML": {
     "name": "ASML Holding N.V.",
@@ -537,7 +537,7 @@
     "investor_relations_url": "https://www.asml.com/en/investors",
     "current_ps_multiple": 22.2,
     "target_ps_multiple": 21.11,
-    "last_updated": "2026-08-18T18:26:18.705915+00:00"
+    "last_updated": "2026-08-18T20:33:24.370754+00:00"
   },
   "AVGO": {
     "name": "Broadcom Inc.",
@@ -573,7 +573,7 @@
     "investor_relations_url": "https://investors.broadcom.com/",
     "current_ps_multiple": 28.5,
     "target_ps_multiple": 24.23,
-    "last_updated": "2026-08-18T18:26:18.705915+00:00"
+    "last_updated": "2026-08-18T20:33:24.370754+00:00"
   },
   "AXON": {
     "name": "Axon Enterprise, Inc.",
@@ -609,7 +609,7 @@
     "investor_relations_url": "https://investor.axon.com/",
     "current_ps_multiple": 17.5,
     "target_ps_multiple": 15.36,
-    "last_updated": "2026-08-18T18:26:18.706912+00:00"
+    "last_updated": "2026-08-18T20:33:24.371289+00:00"
   },
   "AXP": {
     "name": "American Express Company",
@@ -645,7 +645,7 @@
     "investor_relations_url": "https://ir.americanexpress.com/",
     "current_ps_multiple": 3.2,
     "target_ps_multiple": 3.02,
-    "last_updated": "2026-08-18T18:26:18.706912+00:00"
+    "last_updated": "2026-08-18T20:33:24.371289+00:00"
   },
   "BA": {
     "name": "The Boeing Company",
@@ -681,7 +681,7 @@
     "investor_relations_url": "https://investors.boeing.com/",
     "current_ps_multiple": 2.0,
     "target_ps_multiple": 1.73,
-    "last_updated": "2026-08-18T18:26:18.707923+00:00"
+    "last_updated": "2026-08-18T20:33:24.372302+00:00"
   },
   "BAM": {
     "name": "Brookfield Asset Management Ltd.",
@@ -717,7 +717,7 @@
     "investor_relations_url": "https://bam.brookfield.com/investor-relations",
     "current_ps_multiple": 4.3,
     "target_ps_multiple": 4.11,
-    "last_updated": "2026-08-18T18:26:18.707923+00:00"
+    "last_updated": "2026-08-18T20:33:24.372302+00:00"
   },
   "BEAM": {
     "name": "Beam Therapeutics Inc.",
@@ -753,7 +753,7 @@
     "investor_relations_url": "https://investors.beamtx.com/",
     "current_ps_multiple": 48.6,
     "target_ps_multiple": 34.02,
-    "last_updated": "2026-08-18T18:26:18.707923+00:00"
+    "last_updated": "2026-08-18T20:33:24.372302+00:00"
   },
   "BETA": {
     "name": "Beta Technologies, Inc.",
@@ -789,7 +789,7 @@
     "investor_relations_url": "https://investors.beta.team/",
     "current_ps_multiple": 169.8,
     "target_ps_multiple": 118.88,
-    "last_updated": "2026-08-18T18:26:18.708922+00:00"
+    "last_updated": "2026-08-18T20:33:24.373637+00:00"
   },
   "BKNG": {
     "name": "Booking Holdings Inc.",
@@ -825,7 +825,7 @@
     "investor_relations_url": "https://ir.bookingholdings.com/",
     "current_ps_multiple": 6.1,
     "target_ps_multiple": 5.78,
-    "last_updated": "2026-08-18T18:26:18.708922+00:00"
+    "last_updated": "2026-08-18T20:33:24.373637+00:00"
   },
   "BKR": {
     "name": "Baker Hughes Company",
@@ -861,7 +861,7 @@
     "investor_relations_url": "https://investors.bakerhughes.com/",
     "current_ps_multiple": 2.4,
     "target_ps_multiple": 2.15,
-    "last_updated": "2026-08-18T18:26:18.709922+00:00"
+    "last_updated": "2026-08-18T20:33:24.374645+00:00"
   },
   "BRK-B": {
     "name": "Berkshire Hathaway Inc. (Class B)",
@@ -897,7 +897,7 @@
     "investor_relations_url": "https://www.berkshirehathaway.com/",
     "current_ps_multiple": 2.9,
     "target_ps_multiple": 2.84,
-    "last_updated": "2026-08-18T18:26:18.709922+00:00"
+    "last_updated": "2026-08-18T20:33:24.375647+00:00"
   },
   "CAT": {
     "name": "Caterpillar Inc.",
@@ -933,7 +933,43 @@
     "investor_relations_url": "https://investors.caterpillar.com/",
     "current_ps_multiple": 6.2,
     "target_ps_multiple": 5.84,
-    "last_updated": "2026-08-18T18:26:18.709922+00:00"
+    "last_updated": "2026-08-18T20:33:24.376665+00:00"
+  },
+  "CAVA": {
+    "name": "CAVA Group, Inc.",
+    "sector": "Consumer Discretionary",
+    "industry": "Fast-Casual Restaurants & Hospitality",
+    "description": "Owns and operates a premier national fast-casual Mediterranean restaurant chain combining culinary innovation, high restaurant-level profit margins, digital ordering infrastructure, and nationwide unit expansion.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.3,
+    "holding_period": "3 to 5 Years",
+    "moat": "Distinct category leadership in fast-casual Mediterranean dining, industry-leading restaurant-level profit margins (>25%), strong brand resonance, high digital mix (>35%), and debt-free fortress balance sheet.",
+    "invalidation_criteria": "Same-restaurant sales turning negative across consecutive quarters, unit economics degrading below 20% restaurant-level margin, or persistent food-safety operational breaches.",
+    "latest_catalyst": "Accelerating nationwide unit expansion toward 1,000+ restaurants and enhanced digital loyalty monetization.",
+    "investor_relations_url": "https://investor.cava.com/",
+    "current_price": 68.24,
+    "entry_price": 68.24,
+    "target_exit_price": 147.39,
+    "target_roi": "30.8%",
+    "current_ps_multiple": 6.0,
+    "target_ps_multiple": 5.43,
+    "entry_strategy": "SELL_CSP",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 2.39,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 65.85,
+    "total_proceeds": 147.39,
+    "net_profit": 81.54,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 115.99,
+    "options_yield_pct": 3.5,
+    "total_roi_pct": 123.83,
+    "annualized_roi_pct": 30.81,
+    "last_updated": "2026-08-18T20:33:24.376665+00:00"
   },
   "CCEP": {
     "name": "Coca-Cola Europacific Partners PLC",
@@ -969,7 +1005,7 @@
     "investor_relations_url": "https://www.cocacolaep.com/investors/",
     "current_ps_multiple": 2.3,
     "target_ps_multiple": 2.09,
-    "last_updated": "2026-08-18T18:26:18.709922+00:00"
+    "last_updated": "2026-08-18T20:33:24.376665+00:00"
   },
   "CDNS": {
     "name": "Cadence Design Systems, Inc.",
@@ -1005,7 +1041,7 @@
     "investor_relations_url": "https://investor.cadence.com/",
     "current_ps_multiple": 16.7,
     "target_ps_multiple": 15.4,
-    "last_updated": "2026-08-18T18:26:18.711154+00:00"
+    "last_updated": "2026-08-18T20:33:24.378176+00:00"
   },
   "CEG": {
     "name": "Constellation Energy Corporation",
@@ -1041,7 +1077,7 @@
     "investor_relations_url": "https://investors.constellationenergy.com/",
     "current_ps_multiple": 3.3,
     "target_ps_multiple": 2.89,
-    "last_updated": "2026-08-18T18:26:18.711154+00:00"
+    "last_updated": "2026-08-18T20:33:24.378176+00:00"
   },
   "CHTR": {
     "name": "Charter Communications, Inc.",
@@ -1077,7 +1113,7 @@
     "investor_relations_url": "https://ir.charter.com/",
     "current_ps_multiple": 0.3,
     "target_ps_multiple": 0.26,
-    "last_updated": "2026-08-18T18:26:18.712152+00:00"
+    "last_updated": "2026-08-18T20:33:24.378176+00:00"
   },
   "CMCSA": {
     "name": "Comcast Corporation",
@@ -1113,7 +1149,7 @@
     "investor_relations_url": "https://www.cmcsa.com/",
     "current_ps_multiple": 0.7,
     "target_ps_multiple": 0.66,
-    "last_updated": "2026-08-18T18:26:18.712152+00:00"
+    "last_updated": "2026-08-18T20:33:24.378176+00:00"
   },
   "COST": {
     "name": "Costco Wholesale Corporation",
@@ -1149,7 +1185,7 @@
     "investor_relations_url": "https://investor.costco.com/",
     "current_ps_multiple": 1.5,
     "target_ps_multiple": 1.66,
-    "last_updated": "2026-08-18T18:26:18.712152+00:00"
+    "last_updated": "2026-08-18T20:33:24.379581+00:00"
   },
   "CPRT": {
     "name": "Copart, Inc.",
@@ -1185,7 +1221,7 @@
     "investor_relations_url": "https://www.copart.com/investorrelations/",
     "current_ps_multiple": 6.6,
     "target_ps_multiple": 6.24,
-    "last_updated": "2026-08-18T18:26:18.713152+00:00"
+    "last_updated": "2026-08-18T20:33:24.379581+00:00"
   },
   "CRM": {
     "name": "Salesforce, Inc.",
@@ -1221,7 +1257,7 @@
     "investor_relations_url": "https://investor.salesforce.com/",
     "current_ps_multiple": 4.3,
     "target_ps_multiple": 3.83,
-    "last_updated": "2026-08-18T18:26:18.713152+00:00"
+    "last_updated": "2026-08-18T20:33:24.380591+00:00"
   },
   "CRSP": {
     "name": "CRISPR Therapeutics AG",
@@ -1257,7 +1293,7 @@
     "investor_relations_url": "https://crisprtx.gcs-web.com/",
     "current_ps_multiple": 1275.6,
     "target_ps_multiple": 892.95,
-    "last_updated": "2026-08-18T18:26:18.713152+00:00"
+    "last_updated": "2026-08-18T20:33:24.380591+00:00"
   },
   "CRWD": {
     "name": "CrowdStrike Holdings, Inc.",
@@ -1293,7 +1329,7 @@
     "investor_relations_url": "https://ir.crowdstrike.com/",
     "current_ps_multiple": 11.0,
     "target_ps_multiple": 9.7,
-    "last_updated": "2026-08-18T18:26:18.714151+00:00"
+    "last_updated": "2026-08-18T20:33:24.380591+00:00"
   },
   "CSCO": {
     "name": "Cisco Systems, Inc.",
@@ -1329,7 +1365,7 @@
     "investor_relations_url": "https://investor.cisco.com/",
     "current_ps_multiple": 7.9,
     "target_ps_multiple": 7.08,
-    "last_updated": "2026-08-18T18:26:18.714151+00:00"
+    "last_updated": "2026-08-18T20:33:24.381581+00:00"
   },
   "CSGP": {
     "name": "CoStar Group, Inc.",
@@ -1365,7 +1401,7 @@
     "investor_relations_url": "https://investors.costargroup.com/",
     "current_ps_multiple": 3.9,
     "target_ps_multiple": 3.55,
-    "last_updated": "2026-08-18T18:26:18.715152+00:00"
+    "last_updated": "2026-08-18T20:33:24.381581+00:00"
   },
   "CSIQ": {
     "name": "Canadian Solar Inc.",
@@ -1401,7 +1437,7 @@
     "investor_relations_url": "https://investors.canadiansolar.com/",
     "current_ps_multiple": 0.2,
     "target_ps_multiple": 0.13,
-    "last_updated": "2026-08-18T18:26:18.715708+00:00"
+    "last_updated": "2026-08-18T20:33:24.382535+00:00"
   },
   "CSX": {
     "name": "CSX Corporation",
@@ -1437,7 +1473,7 @@
     "investor_relations_url": "https://investors.csx.com/",
     "current_ps_multiple": 6.7,
     "target_ps_multiple": 6.33,
-    "last_updated": "2026-08-18T18:26:18.715708+00:00"
+    "last_updated": "2026-08-18T20:33:24.383125+00:00"
   },
   "CTAS": {
     "name": "Cintas Corporation",
@@ -1473,7 +1509,7 @@
     "investor_relations_url": "https://www.cintas.com/investors/",
     "current_ps_multiple": 7.7,
     "target_ps_multiple": 7.27,
-    "last_updated": "2026-08-18T18:26:18.716737+00:00"
+    "last_updated": "2026-08-18T20:33:24.383125+00:00"
   },
   "CTSH": {
     "name": "Cognizant Technology Solutions Corporation",
@@ -1509,7 +1545,7 @@
     "investor_relations_url": "https://investors.cognizant.com/",
     "current_ps_multiple": 1.3,
     "target_ps_multiple": 1.38,
-    "last_updated": "2026-08-18T18:26:18.716737+00:00"
+    "last_updated": "2026-08-18T20:33:24.384134+00:00"
   },
   "CVX": {
     "name": "Chevron Corporation",
@@ -1545,7 +1581,7 @@
     "investor_relations_url": "https://www.chevron.com/investors",
     "current_ps_multiple": 2.1,
     "target_ps_multiple": 1.89,
-    "last_updated": "2026-08-18T18:26:18.717719+00:00"
+    "last_updated": "2026-08-18T20:33:24.384134+00:00"
   },
   "DASH": {
     "name": "DoorDash, Inc.",
@@ -1581,7 +1617,7 @@
     "investor_relations_url": "https://ir.doordash.com/",
     "current_ps_multiple": 6.7,
     "target_ps_multiple": 6.03,
-    "last_updated": "2026-08-18T18:26:18.717719+00:00"
+    "last_updated": "2026-08-18T20:33:24.384134+00:00"
   },
   "DDOG": {
     "name": "Datadog, Inc.",
@@ -1617,7 +1653,7 @@
     "investor_relations_url": "https://investors.datadoghq.com/",
     "current_ps_multiple": 25.2,
     "target_ps_multiple": 21.43,
-    "last_updated": "2026-08-18T18:26:18.717719+00:00"
+    "last_updated": "2026-08-18T20:33:24.385435+00:00"
   },
   "DIS": {
     "name": "The Walt Disney Company",
@@ -1653,7 +1689,43 @@
     "investor_relations_url": "https://thewaltdisneycompany.com/investor-relations/",
     "current_ps_multiple": 1.9,
     "target_ps_multiple": 1.71,
-    "last_updated": "2026-08-18T18:26:18.718731+00:00"
+    "last_updated": "2026-08-18T20:33:24.385435+00:00"
+  },
+  "DUOL": {
+    "name": "Duolingo, Inc.",
+    "sector": "Consumer Discretionary",
+    "industry": "Digital Learning & EdTech Platforms",
+    "description": "Operates the world leading mobile language and education learning platform, utilizing gamified mechanics, data-driven learning algorithms, and generative AI conversational tutoring across 100M+ active users.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.2,
+    "holding_period": "3 to 5 Years",
+    "moat": "Global organic brand dominance (>90% organic user acquisition), massive data flywheel (>1B exercises daily), >73% gross margin, >30% free cash flow margin, and Duolingo Max AI pricing power.",
+    "invalidation_criteria": "Daily Active Users (DAU) stagnating or contracting YoY, paid subscriber conversion rate declining below 6%, or open-source LLMs disintermediating standalone language learning apps.",
+    "latest_catalyst": "Duolingo Max AI multi-modal interactive conversation tiers rollout and expansion into Math and Music subjects.",
+    "investor_relations_url": "https://investors.duolingo.com/",
+    "current_price": 139.64,
+    "entry_price": 139.64,
+    "target_exit_price": 294.71,
+    "target_roi": "29.8%",
+    "current_ps_multiple": 5.7,
+    "target_ps_multiple": 5.22,
+    "entry_strategy": "SELL_CSP",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 4.89,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 134.75,
+    "total_proceeds": 294.71,
+    "net_profit": 159.96,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 111.05,
+    "options_yield_pct": 3.5,
+    "total_roi_pct": 118.71,
+    "annualized_roi_pct": 29.8,
+    "last_updated": "2026-08-18T20:33:24.386338+00:00"
   },
   "DXCM": {
     "name": "DexCom, Inc.",
@@ -1689,7 +1761,7 @@
     "investor_relations_url": "https://investors.dexcom.com/",
     "current_ps_multiple": 7.5,
     "target_ps_multiple": 6.71,
-    "last_updated": "2026-08-18T18:26:18.718731+00:00"
+    "last_updated": "2026-08-18T20:33:24.386338+00:00"
   },
   "EA": {
     "name": "Electronic Arts Inc.",
@@ -1725,7 +1797,7 @@
     "investor_relations_url": "https://ir.ea.com/",
     "current_ps_multiple": 7.1,
     "target_ps_multiple": 6.4,
-    "last_updated": "2026-08-18T18:26:18.719730+00:00"
+    "last_updated": "2026-08-18T20:33:24.386338+00:00"
   },
   "EDIT": {
     "name": "Editas Medicine, Inc.",
@@ -1761,7 +1833,7 @@
     "investor_relations_url": "https://ir.editasmedicine.com/",
     "current_ps_multiple": 14.9,
     "target_ps_multiple": 9.71,
-    "last_updated": "2026-08-18T18:26:18.720722+00:00"
+    "last_updated": "2026-08-18T20:33:24.387335+00:00"
   },
   "ENPH": {
     "name": "Enphase Energy, Inc.",
@@ -1797,7 +1869,7 @@
     "investor_relations_url": "https://investor.enphase.com/",
     "current_ps_multiple": 3.6,
     "target_ps_multiple": 3.23,
-    "last_updated": "2026-08-18T18:26:18.720722+00:00"
+    "last_updated": "2026-08-18T20:33:24.387335+00:00"
   },
   "ENVX": {
     "name": "Enovix Corporation",
@@ -1833,7 +1905,7 @@
     "investor_relations_url": "https://ir.enovix.com/",
     "current_ps_multiple": 27.9,
     "target_ps_multiple": 18.13,
-    "last_updated": "2026-08-18T18:26:18.720722+00:00"
+    "last_updated": "2026-08-18T20:33:24.387335+00:00"
   },
   "EOSE": {
     "name": "Eos Energy Enterprises, Inc.",
@@ -1869,7 +1941,7 @@
     "investor_relations_url": "https://investors.eose.com/",
     "current_ps_multiple": 11.8,
     "target_ps_multiple": 10.61,
-    "last_updated": "2026-08-18T18:26:18.722487+00:00"
+    "last_updated": "2026-08-18T20:33:24.388335+00:00"
   },
   "EXC": {
     "name": "Exelon Corporation",
@@ -1905,7 +1977,7 @@
     "investor_relations_url": "https://investors.exeloncorp.com/",
     "current_ps_multiple": 1.8,
     "target_ps_multiple": 1.61,
-    "last_updated": "2026-08-18T18:26:18.722487+00:00"
+    "last_updated": "2026-08-18T20:33:24.388335+00:00"
   },
   "FANG": {
     "name": "Diamondback Energy, Inc.",
@@ -1941,7 +2013,7 @@
     "investor_relations_url": "https://ir.diamondbackenergy.com/",
     "current_ps_multiple": 3.7,
     "target_ps_multiple": 3.29,
-    "last_updated": "2026-08-18T18:26:18.723500+00:00"
+    "last_updated": "2026-08-18T20:33:24.389335+00:00"
   },
   "FAST": {
     "name": "Fastenal Company",
@@ -1977,7 +2049,7 @@
     "investor_relations_url": "https://investor.fastenal.com/",
     "current_ps_multiple": 7.0,
     "target_ps_multiple": 6.46,
-    "last_updated": "2026-08-18T18:26:18.723500+00:00"
+    "last_updated": "2026-08-18T20:33:24.389335+00:00"
   },
   "FER": {
     "name": "Ferrovial SE",
@@ -2013,7 +2085,7 @@
     "investor_relations_url": "https://www.ferrovial.com/en/ir/",
     "current_ps_multiple": 4.8,
     "target_ps_multiple": 4.4,
-    "last_updated": "2026-08-18T18:26:18.723500+00:00"
+    "last_updated": "2026-08-18T20:33:24.389335+00:00"
   },
   "FTNT": {
     "name": "Fortinet, Inc.",
@@ -2049,7 +2121,7 @@
     "investor_relations_url": "https://investor.fortinet.com/",
     "current_ps_multiple": 16.9,
     "target_ps_multiple": 16.08,
-    "last_updated": "2026-08-18T18:26:18.724500+00:00"
+    "last_updated": "2026-08-18T20:33:24.390335+00:00"
   },
   "GEHC": {
     "name": "GE HealthCare Technologies Inc.",
@@ -2085,7 +2157,7 @@
     "investor_relations_url": "https://investor.gehealthcare.com/",
     "current_ps_multiple": 1.6,
     "target_ps_multiple": 1.78,
-    "last_updated": "2026-08-18T18:26:18.724500+00:00"
+    "last_updated": "2026-08-18T20:33:24.390335+00:00"
   },
   "GILD": {
     "name": "Gilead Sciences, Inc.",
@@ -2121,7 +2193,7 @@
     "investor_relations_url": "https://investors.gilead.com/",
     "current_ps_multiple": 6.1,
     "target_ps_multiple": 5.57,
-    "last_updated": "2026-08-18T18:26:18.725499+00:00"
+    "last_updated": "2026-08-18T20:33:24.391336+00:00"
   },
   "GNRC": {
     "name": "Generac Holdings Inc.",
@@ -2157,7 +2229,7 @@
     "investor_relations_url": "https://investors.generac.com/",
     "current_ps_multiple": 3.1,
     "target_ps_multiple": 2.87,
-    "last_updated": "2026-08-18T18:26:18.725499+00:00"
+    "last_updated": "2026-08-18T20:33:24.392342+00:00"
   },
   "GOOG": {
     "name": "Alphabet Inc. (Class C)",
@@ -2193,7 +2265,7 @@
     "investor_relations_url": "https://abc.xyz/investor/",
     "current_ps_multiple": 10.5,
     "target_ps_multiple": 9.95,
-    "last_updated": "2026-08-18T18:26:18.725499+00:00"
+    "last_updated": "2026-08-18T20:33:24.393338+00:00"
   },
   "GOOGL": {
     "name": "Alphabet Inc. (Class A)",
@@ -2229,7 +2301,7 @@
     "investor_relations_url": "https://abc.xyz/investor/",
     "current_ps_multiple": 10.5,
     "target_ps_multiple": 10.02,
-    "last_updated": "2026-08-18T18:26:18.726516+00:00"
+    "last_updated": "2026-08-18T20:33:24.393338+00:00"
   },
   "GS": {
     "name": "The Goldman Sachs Group, Inc.",
@@ -2265,7 +2337,7 @@
     "investor_relations_url": "https://www.goldmansachs.com/investor-relations/",
     "current_ps_multiple": 5.0,
     "target_ps_multiple": 4.75,
-    "last_updated": "2026-08-18T18:26:18.726516+00:00"
+    "last_updated": "2026-08-18T20:33:24.394550+00:00"
   },
   "GWH": {
     "name": "ESS Tech, Inc.",
@@ -2301,7 +2373,7 @@
     "investor_relations_url": "https://investors.essinc.com/",
     "current_ps_multiple": 5.4,
     "target_ps_multiple": 4.89,
-    "last_updated": "2026-08-18T18:26:18.726516+00:00"
+    "last_updated": "2026-08-18T20:33:24.394550+00:00"
   },
   "HD": {
     "name": "The Home Depot, Inc.",
@@ -2337,7 +2409,7 @@
     "investor_relations_url": "https://ir.homedepot.com/",
     "current_ps_multiple": 2.0,
     "target_ps_multiple": 1.84,
-    "last_updated": "2026-08-18T18:26:18.727527+00:00"
+    "last_updated": "2026-08-18T20:33:24.395525+00:00"
   },
   "HON": {
     "name": "Honeywell International Inc.",
@@ -2373,7 +2445,7 @@
     "investor_relations_url": "https://investor.honeywell.com/",
     "current_ps_multiple": 1.8,
     "target_ps_multiple": 1.74,
-    "last_updated": "2026-08-18T18:26:18.727527+00:00"
+    "last_updated": "2026-08-18T20:33:24.395525+00:00"
   },
   "IBM": {
     "name": "International Business Machines Corporation",
@@ -2409,7 +2481,7 @@
     "investor_relations_url": "https://www.ibm.com/investor",
     "current_ps_multiple": 3.4,
     "target_ps_multiple": 3.11,
-    "last_updated": "2026-08-18T18:26:18.728527+00:00"
+    "last_updated": "2026-08-18T20:33:24.395525+00:00"
   },
   "IDXX": {
     "name": "IDEXX Laboratories, Inc.",
@@ -2445,7 +2517,7 @@
     "investor_relations_url": "https://ir.idexx.com/",
     "current_ps_multiple": 9.9,
     "target_ps_multiple": 9.1,
-    "last_updated": "2026-08-18T18:26:18.728527+00:00"
+    "last_updated": "2026-08-18T20:33:24.396525+00:00"
   },
   "INSM": {
     "name": "Insmed Incorporated",
@@ -2481,7 +2553,7 @@
     "investor_relations_url": "https://investor.insmed.com/",
     "current_ps_multiple": 42.9,
     "target_ps_multiple": 33.45,
-    "last_updated": "2026-08-18T18:26:18.728527+00:00"
+    "last_updated": "2026-08-18T20:33:24.396525+00:00"
   },
   "INTC": {
     "name": "Intel Corporation",
@@ -2517,7 +2589,7 @@
     "investor_relations_url": "https://www.intc.com/",
     "current_ps_multiple": 9.9,
     "target_ps_multiple": 7.89,
-    "last_updated": "2026-08-18T18:26:18.729548+00:00"
+    "last_updated": "2026-08-18T20:33:24.397525+00:00"
   },
   "INTU": {
     "name": "Intuit Inc.",
@@ -2553,7 +2625,43 @@
     "investor_relations_url": "https://investors.intuit.com/",
     "current_ps_multiple": 4.9,
     "target_ps_multiple": 4.53,
-    "last_updated": "2026-08-18T18:26:18.729548+00:00"
+    "last_updated": "2026-08-18T20:33:24.397525+00:00"
+  },
+  "IOT": {
+    "name": "Samsara Inc.",
+    "sector": "Information Technology",
+    "industry": "Enterprise Software & IoT Operations Cloud",
+    "description": "Provides the Connected Operations Cloud platform that aggregates IoT sensor telematics, computer vision AI, and workflow automation for commercial transportation fleets, logistics, and industrial physical infrastructure.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.2,
+    "holding_period": "3 to 5 Years",
+    "moat": "Proprietary multi-tenant telematics cloud, mission-critical workflow integration, high switching costs with hardware-software lock-in, and net expansion rates exceeding 115%.",
+    "invalidation_criteria": "Net revenue retention dropping below 105%, major hardware supply chain failure, or severe competitive pricing erosion from legacy telematics vendors.",
+    "latest_catalyst": "AI-driven proactive safety alert video intelligence rollout and international EMEA market acceleration.",
+    "investor_relations_url": "https://investors.samsara.com/",
+    "current_price": 39.58,
+    "entry_price": 39.58,
+    "target_exit_price": 80.85,
+    "target_roi": "28.4%",
+    "current_ps_multiple": 13.3,
+    "target_ps_multiple": 12.0,
+    "entry_strategy": "SELL_CSP",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 1.39,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 38.19,
+    "total_proceeds": 80.85,
+    "net_profit": 42.66,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 104.27,
+    "options_yield_pct": 3.51,
+    "total_roi_pct": 111.7,
+    "annualized_roi_pct": 28.4,
+    "last_updated": "2026-08-18T20:33:24.397525+00:00"
   },
   "ISRG": {
     "name": "Intuitive Surgical, Inc.",
@@ -2589,7 +2697,7 @@
     "investor_relations_url": "https://isrg.intuitive.com/",
     "current_ps_multiple": 13.9,
     "target_ps_multiple": 13.17,
-    "last_updated": "2026-08-18T18:26:18.729548+00:00"
+    "last_updated": "2026-08-18T20:33:24.398525+00:00"
   },
   "JNJ": {
     "name": "Johnson & Johnson",
@@ -2625,7 +2733,7 @@
     "investor_relations_url": "https://investor.jnj.com/",
     "current_ps_multiple": 6.7,
     "target_ps_multiple": 6.2,
-    "last_updated": "2026-08-18T18:26:18.730528+00:00"
+    "last_updated": "2026-08-18T20:33:24.398525+00:00"
   },
   "JPM": {
     "name": "JPMorgan Chase & Co.",
@@ -2661,7 +2769,7 @@
     "investor_relations_url": "https://www.jpmorganchase.com/ir",
     "current_ps_multiple": 5.1,
     "target_ps_multiple": 4.89,
-    "last_updated": "2026-08-18T18:26:18.730528+00:00"
+    "last_updated": "2026-08-18T20:33:24.398525+00:00"
   },
   "KDP": {
     "name": "Keurig Dr Pepper Inc.",
@@ -2697,7 +2805,7 @@
     "investor_relations_url": "https://investors.keurigdrpepper.com/",
     "current_ps_multiple": 2.6,
     "target_ps_multiple": 2.31,
-    "last_updated": "2026-08-18T18:26:18.731711+00:00"
+    "last_updated": "2026-08-18T20:33:24.399542+00:00"
   },
   "KHC": {
     "name": "The Kraft Heinz Company",
@@ -2733,7 +2841,7 @@
     "investor_relations_url": "https://ir.kraftheinzcompany.com/",
     "current_ps_multiple": 1.2,
     "target_ps_multiple": 1.1,
-    "last_updated": "2026-08-18T18:26:18.731711+00:00"
+    "last_updated": "2026-08-18T20:33:24.399542+00:00"
   },
   "KLAC": {
     "name": "KLA Corporation",
@@ -2769,7 +2877,7 @@
     "investor_relations_url": "https://ir.kla.com/",
     "current_ps_multiple": 2.0,
     "target_ps_multiple": 2.14,
-    "last_updated": "2026-08-18T18:26:18.731711+00:00"
+    "last_updated": "2026-08-18T20:33:24.400525+00:00"
   },
   "KO": {
     "name": "The Coca-Cola Company",
@@ -2805,7 +2913,7 @@
     "investor_relations_url": "https://investors.coca-colacompany.com/",
     "current_ps_multiple": 7.7,
     "target_ps_multiple": 7.31,
-    "last_updated": "2026-08-18T18:26:18.732710+00:00"
+    "last_updated": "2026-08-18T20:33:24.400525+00:00"
   },
   "LIN": {
     "name": "Linde plc",
@@ -2841,7 +2949,7 @@
     "investor_relations_url": "https://www.linde.com/investors",
     "current_ps_multiple": 6.4,
     "target_ps_multiple": 5.79,
-    "last_updated": "2026-08-18T18:26:18.732710+00:00"
+    "last_updated": "2026-08-18T20:33:24.400525+00:00"
   },
   "LRCX": {
     "name": "Lam Research Corporation",
@@ -2877,7 +2985,7 @@
     "investor_relations_url": "https://investor.lamresearch.com/",
     "current_ps_multiple": 18.5,
     "target_ps_multiple": 17.58,
-    "last_updated": "2026-08-18T18:26:18.732710+00:00"
+    "last_updated": "2026-08-18T20:33:24.401525+00:00"
   },
   "MA": {
     "name": "Mastercard Incorporated",
@@ -2913,7 +3021,7 @@
     "investor_relations_url": "https://investor.mastercard.com/",
     "current_ps_multiple": 15.4,
     "target_ps_multiple": 14.63,
-    "last_updated": "2026-08-18T18:26:18.733710+00:00"
+    "last_updated": "2026-08-18T20:33:24.401525+00:00"
   },
   "MAR": {
     "name": "Marriott International, Inc.",
@@ -2949,7 +3057,7 @@
     "investor_relations_url": "https://marriott.gcs-web.com/",
     "current_ps_multiple": 3.6,
     "target_ps_multiple": 3.24,
-    "last_updated": "2026-08-18T18:26:18.733710+00:00"
+    "last_updated": "2026-08-18T20:33:24.401525+00:00"
   },
   "MCD": {
     "name": "McDonald's Corporation",
@@ -2985,7 +3093,7 @@
     "investor_relations_url": "https://corporate.mcdonalds.com/corpmcd/investors.html",
     "current_ps_multiple": 7.1,
     "target_ps_multiple": 6.55,
-    "last_updated": "2026-08-18T18:26:18.734710+00:00"
+    "last_updated": "2026-08-18T20:33:24.402539+00:00"
   },
   "MCHP": {
     "name": "Microchip Technology Incorporated",
@@ -3021,7 +3129,7 @@
     "investor_relations_url": "https://ir.microchip.com/",
     "current_ps_multiple": 8.9,
     "target_ps_multiple": 8.01,
-    "last_updated": "2026-08-18T18:26:18.734710+00:00"
+    "last_updated": "2026-08-18T20:33:24.402539+00:00"
   },
   "MDLZ": {
     "name": "Mondelez International, Inc.",
@@ -3057,7 +3165,7 @@
     "investor_relations_url": "https://ir.mondelezinternational.com/",
     "current_ps_multiple": 2.1,
     "target_ps_multiple": 1.92,
-    "last_updated": "2026-08-18T18:26:18.734710+00:00"
+    "last_updated": "2026-08-18T20:33:24.403525+00:00"
   },
   "MELI": {
     "name": "MercadoLibre, Inc.",
@@ -3093,7 +3201,7 @@
     "investor_relations_url": "https://investor.mercadolibre.com/",
     "current_ps_multiple": 3.1,
     "target_ps_multiple": 2.88,
-    "last_updated": "2026-08-18T18:26:18.735710+00:00"
+    "last_updated": "2026-08-18T20:33:24.403525+00:00"
   },
   "META": {
     "name": "Meta Platforms, Inc.",
@@ -3129,7 +3237,7 @@
     "investor_relations_url": "https://investor.atmeta.com/",
     "current_ps_multiple": 7.3,
     "target_ps_multiple": 6.95,
-    "last_updated": "2026-08-18T18:26:18.735710+00:00"
+    "last_updated": "2026-08-18T20:33:24.403525+00:00"
   },
   "MMM": {
     "name": "3M Company",
@@ -3165,7 +3273,43 @@
     "investor_relations_url": "https://investors.3m.com/",
     "current_ps_multiple": 3.7,
     "target_ps_multiple": 3.44,
-    "last_updated": "2026-08-18T18:26:18.736715+00:00"
+    "last_updated": "2026-08-18T20:33:24.404632+00:00"
+  },
+  "MNDY": {
+    "name": "monday.com Ltd.",
+    "sector": "Information Technology",
+    "industry": "Enterprise Workflow Software & Cloud",
+    "description": "Develops the Work OS cloud software platform enabling organizations to build custom work management applications, CRM pipelines, software dev trackers, and automated cross-functional workflows.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.1,
+    "holding_period": "3 to 5 Years",
+    "moat": "Highly flexible low-code/no-code architecture, >85% gross margins, rapid enterprise seat expansion (+ ARR clients growing >30%), >.3B net cash balance, and powerful workflow automation network effects.",
+    "invalidation_criteria": "Gross customer churn rising above historical norms, inability to expand outside SMB into enterprise tiers, or structural platform displacement by Microsoft 365 Copilot.",
+    "latest_catalyst": "monday AI Work Platform agentic orchestration launch and enterprise CRM module acceleration.",
+    "investor_relations_url": "https://ir.monday.com/",
+    "current_price": 88.04,
+    "entry_price": 88.04,
+    "target_exit_price": 172.2,
+    "target_roi": "26.6%",
+    "current_ps_multiple": 3.2,
+    "target_ps_multiple": 2.87,
+    "entry_strategy": "SELL_CSP",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 3.08,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 84.96,
+    "total_proceeds": 172.2,
+    "net_profit": 87.24,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 95.59,
+    "options_yield_pct": 3.5,
+    "total_roi_pct": 102.68,
+    "annualized_roi_pct": 26.55,
+    "last_updated": "2026-08-18T20:33:24.404632+00:00"
   },
   "MNST": {
     "name": "Monster Beverage Corporation",
@@ -3201,7 +3345,7 @@
     "investor_relations_url": "https://investors.monsterbevcorp.com/",
     "current_ps_multiple": 5.2,
     "target_ps_multiple": 4.81,
-    "last_updated": "2026-08-18T18:26:18.737709+00:00"
+    "last_updated": "2026-08-18T20:33:24.404632+00:00"
   },
   "MPWR": {
     "name": "Monolithic Power Systems, Inc.",
@@ -3237,7 +3381,7 @@
     "investor_relations_url": "https://ir.monolithicpower.com/",
     "current_ps_multiple": 24.5,
     "target_ps_multiple": 22.02,
-    "last_updated": "2026-08-18T18:26:18.737709+00:00"
+    "last_updated": "2026-08-18T20:33:24.405655+00:00"
   },
   "MRK": {
     "name": "Merck & Co., Inc.",
@@ -3273,7 +3417,7 @@
     "investor_relations_url": "https://www.merck.com/investor-relations/",
     "current_ps_multiple": 5.2,
     "target_ps_multiple": 4.76,
-    "last_updated": "2026-08-18T18:26:18.738710+00:00"
+    "last_updated": "2026-08-18T20:33:24.405655+00:00"
   },
   "MRVL": {
     "name": "Marvell Technology, Inc.",
@@ -3309,7 +3453,7 @@
     "investor_relations_url": "https://investor.marvell.com/",
     "current_ps_multiple": 24.4,
     "target_ps_multiple": 21.97,
-    "last_updated": "2026-08-18T18:26:18.738710+00:00"
+    "last_updated": "2026-08-18T20:33:24.406633+00:00"
   },
   "MSFT": {
     "name": "Microsoft Corporation",
@@ -3345,7 +3489,7 @@
     "investor_relations_url": "https://www.microsoft.com/en-us/investor",
     "current_ps_multiple": 10.8,
     "target_ps_multiple": 10.22,
-    "last_updated": "2026-08-18T18:26:18.739710+00:00"
+    "last_updated": "2026-08-18T20:33:24.406633+00:00"
   },
   "MSTR": {
     "name": "MicroStrategy Incorporated",
@@ -3381,7 +3525,7 @@
     "investor_relations_url": "https://www.microstrategy.com/investor-relations",
     "current_ps_multiple": 70.1,
     "target_ps_multiple": 52.55,
-    "last_updated": "2026-08-18T18:26:18.739710+00:00"
+    "last_updated": "2026-08-18T20:33:24.406633+00:00"
   },
   "MU": {
     "name": "Micron Technology, Inc.",
@@ -3417,7 +3561,7 @@
     "investor_relations_url": "https://investors.micron.com/",
     "current_ps_multiple": 30.5,
     "target_ps_multiple": 25.95,
-    "last_updated": "2026-08-18T18:26:18.739710+00:00"
+    "last_updated": "2026-08-18T20:33:24.407635+00:00"
   },
   "NFLX": {
     "name": "Netflix, Inc.",
@@ -3453,7 +3597,7 @@
     "investor_relations_url": "https://ir.netflix.net/",
     "current_ps_multiple": 7.0,
     "target_ps_multiple": 6.28,
-    "last_updated": "2026-08-18T18:26:18.740922+00:00"
+    "last_updated": "2026-08-18T20:33:24.409145+00:00"
   },
   "NKE": {
     "name": "NIKE, Inc.",
@@ -3489,7 +3633,7 @@
     "investor_relations_url": "https://investors.nike.com/",
     "current_ps_multiple": 1.2,
     "target_ps_multiple": 1.12,
-    "last_updated": "2026-08-18T18:26:18.740922+00:00"
+    "last_updated": "2026-08-18T20:33:24.409145+00:00"
   },
   "NRGV": {
     "name": "Energy Vault Holdings, Inc.",
@@ -3525,7 +3669,7 @@
     "investor_relations_url": "https://investors.energyvault.com/",
     "current_ps_multiple": 9.4,
     "target_ps_multiple": 8.48,
-    "last_updated": "2026-08-18T18:26:18.741432+00:00"
+    "last_updated": "2026-08-18T20:33:24.410178+00:00"
   },
   "NTLA": {
     "name": "Intellia Therapeutics, Inc.",
@@ -3561,7 +3705,43 @@
     "investor_relations_url": "https://ir.intelliatx.com/",
     "current_ps_multiple": 28.3,
     "target_ps_multiple": 18.39,
-    "last_updated": "2026-08-18T18:26:18.741432+00:00"
+    "last_updated": "2026-08-18T20:33:24.410178+00:00"
+  },
+  "NU": {
+    "name": "Nu Holdings Ltd.",
+    "sector": "Financials",
+    "industry": "Digital Banking & Consumer Fintech",
+    "description": "Operates Nubank, the leading digital banking platform in Latin America providing zero-fee credit cards, mobile payments, high-yield savings, and investment accounts to over 139 million customers across Brazil, Mexico, and Colombia.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.4,
+    "holding_period": "3 to 5 Years",
+    "moat": "Ultra-low cost-to-serve (</customer/month), proprietary credit risk engine, virality network effects, high brand loyalty (NPS >80), and massive low-cost retail deposit funding base.",
+    "invalidation_criteria": "Severe deterioration in 90-day NPL delinquency rates (>7.5%), regulatory caps on interchange fees in Brazil or Mexico, or chronic failure to scale deposit funding outside Brazil.",
+    "latest_catalyst": "Approval of full banking license in Mexico and expansion of high-margin secured payroll lending.",
+    "investor_relations_url": "https://investors.nubank.com.br/",
+    "current_price": 14.35,
+    "entry_price": 14.35,
+    "target_exit_price": 32.01,
+    "target_roi": "30.7%",
+    "current_ps_multiple": 6.6,
+    "target_ps_multiple": 6.28,
+    "entry_strategy": "LIMIT_BUY",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 0.0,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 14.35,
+    "total_proceeds": 32.01,
+    "net_profit": 17.66,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 123.07,
+    "options_yield_pct": 0.0,
+    "total_roi_pct": 123.07,
+    "annualized_roi_pct": 30.66,
+    "last_updated": "2026-08-18T20:33:24.411153+00:00"
   },
   "NVDA": {
     "name": "NVIDIA Corporation",
@@ -3597,7 +3777,7 @@
     "investor_relations_url": "https://investor.nvidia.com/",
     "current_ps_multiple": 23.8,
     "target_ps_multiple": 20.97,
-    "last_updated": "2026-08-18T18:26:18.742444+00:00"
+    "last_updated": "2026-08-18T20:33:24.411153+00:00"
   },
   "NXPI": {
     "name": "NXP Semiconductors N.V.",
@@ -3633,7 +3813,7 @@
     "investor_relations_url": "https://investors.nxp.com/",
     "current_ps_multiple": 4.9,
     "target_ps_multiple": 4.37,
-    "last_updated": "2026-08-18T18:26:18.742444+00:00"
+    "last_updated": "2026-08-18T20:33:24.411153+00:00"
   },
   "ODFL": {
     "name": "Old Dominion Freight Line, Inc.",
@@ -3669,7 +3849,7 @@
     "investor_relations_url": "https://ir.odfl.com/",
     "current_ps_multiple": 8.0,
     "target_ps_multiple": 7.34,
-    "last_updated": "2026-08-18T18:26:18.742444+00:00"
+    "last_updated": "2026-08-18T20:33:24.412152+00:00"
   },
   "ORLY": {
     "name": "O'Reilly Automotive, Inc.",
@@ -3705,7 +3885,7 @@
     "investor_relations_url": "https://corporate.oreillyauto.com/investor-relations",
     "current_ps_multiple": 4.2,
     "target_ps_multiple": 3.96,
-    "last_updated": "2026-08-18T18:26:18.743458+00:00"
+    "last_updated": "2026-08-18T20:33:24.412152+00:00"
   },
   "PANW": {
     "name": "Palo Alto Networks, Inc.",
@@ -3741,7 +3921,7 @@
     "investor_relations_url": "https://investors.paloaltonetworks.com/",
     "current_ps_multiple": 33.3,
     "target_ps_multiple": 28.26,
-    "last_updated": "2026-08-18T18:26:18.743458+00:00"
+    "last_updated": "2026-08-18T20:33:24.413152+00:00"
   },
   "PAYX": {
     "name": "Paychex, Inc.",
@@ -3777,7 +3957,7 @@
     "investor_relations_url": "https://investor.paychex.com/",
     "current_ps_multiple": 6.5,
     "target_ps_multiple": 6.0,
-    "last_updated": "2026-08-18T18:26:18.743458+00:00"
+    "last_updated": "2026-08-18T20:33:24.413152+00:00"
   },
   "PCAR": {
     "name": "PACCAR Inc",
@@ -3813,7 +3993,7 @@
     "investor_relations_url": "https://www.paccar.com/investors/",
     "current_ps_multiple": 2.4,
     "target_ps_multiple": 2.18,
-    "last_updated": "2026-08-18T18:26:18.744444+00:00"
+    "last_updated": "2026-08-18T20:33:24.413152+00:00"
   },
   "PDD": {
     "name": "PDD Holdings Inc.",
@@ -3849,7 +4029,7 @@
     "investor_relations_url": "https://investor.pddholdings.com/",
     "current_ps_multiple": 1.1,
     "target_ps_multiple": 1.24,
-    "last_updated": "2026-08-18T18:26:18.744444+00:00"
+    "last_updated": "2026-08-18T20:33:24.414670+00:00"
   },
   "PEP": {
     "name": "PepsiCo, Inc.",
@@ -3885,7 +4065,7 @@
     "investor_relations_url": "https://investors.pepsico.com/",
     "current_ps_multiple": 2.2,
     "target_ps_multiple": 2.14,
-    "last_updated": "2026-08-18T18:26:18.745444+00:00"
+    "last_updated": "2026-08-18T20:33:24.415176+00:00"
   },
   "PG": {
     "name": "The Procter & Gamble Company",
@@ -3921,7 +4101,7 @@
     "investor_relations_url": "https://www.pginvestor.com/",
     "current_ps_multiple": 3.8,
     "target_ps_multiple": 3.64,
-    "last_updated": "2026-08-18T18:26:18.745444+00:00"
+    "last_updated": "2026-08-18T20:33:24.415176+00:00"
   },
   "PLTR": {
     "name": "Palantir Technologies Inc.",
@@ -3957,7 +4137,7 @@
     "investor_relations_url": "https://investors.palantir.com/",
     "current_ps_multiple": 88.2,
     "target_ps_multiple": 68.79,
-    "last_updated": "2026-08-18T18:26:18.746010+00:00"
+    "last_updated": "2026-08-18T20:33:24.416184+00:00"
   },
   "PYPL": {
     "name": "PayPal Holdings, Inc.",
@@ -3993,7 +4173,7 @@
     "investor_relations_url": "https://investor.pypl.com/",
     "current_ps_multiple": 1.7,
     "target_ps_multiple": 1.49,
-    "last_updated": "2026-08-18T18:26:18.746010+00:00"
+    "last_updated": "2026-08-18T20:33:24.416184+00:00"
   },
   "QCOM": {
     "name": "QUALCOMM Incorporated",
@@ -4029,7 +4209,7 @@
     "investor_relations_url": "https://investor.qualcomm.com/",
     "current_ps_multiple": 3.9,
     "target_ps_multiple": 3.55,
-    "last_updated": "2026-08-18T18:26:18.746010+00:00"
+    "last_updated": "2026-08-18T20:33:24.417184+00:00"
   },
   "REGN": {
     "name": "Regeneron Pharmaceuticals, Inc.",
@@ -4065,7 +4245,7 @@
     "investor_relations_url": "https://investor.regeneron.com/",
     "current_ps_multiple": 5.9,
     "target_ps_multiple": 5.45,
-    "last_updated": "2026-08-18T18:26:18.747502+00:00"
+    "last_updated": "2026-08-18T20:33:24.417184+00:00"
   },
   "ROP": {
     "name": "Roper Technologies, Inc.",
@@ -4101,7 +4281,7 @@
     "investor_relations_url": "https://investors.ropertech.com/",
     "current_ps_multiple": 5.0,
     "target_ps_multiple": 4.46,
-    "last_updated": "2026-08-18T18:26:18.748511+00:00"
+    "last_updated": "2026-08-18T20:33:24.417184+00:00"
   },
   "ROST": {
     "name": "Ross Stores, Inc.",
@@ -4137,7 +4317,7 @@
     "investor_relations_url": "https://investors.rossstores.com/",
     "current_ps_multiple": 3.4,
     "target_ps_multiple": 3.15,
-    "last_updated": "2026-08-18T18:26:18.748511+00:00"
+    "last_updated": "2026-08-18T20:33:24.418185+00:00"
   },
   "SBUX": {
     "name": "Starbucks Corporation",
@@ -4173,7 +4353,7 @@
     "investor_relations_url": "https://investor.starbucks.com/",
     "current_ps_multiple": 3.3,
     "target_ps_multiple": 2.98,
-    "last_updated": "2026-08-18T18:26:18.748511+00:00"
+    "last_updated": "2026-08-18T20:33:24.418185+00:00"
   },
   "SEDG": {
     "name": "SolarEdge Technologies, Inc.",
@@ -4209,7 +4389,7 @@
     "investor_relations_url": "https://investors.solaredge.com/",
     "current_ps_multiple": 1.6,
     "target_ps_multiple": 1.45,
-    "last_updated": "2026-08-18T18:26:18.749513+00:00"
+    "last_updated": "2026-08-18T20:33:24.419184+00:00"
   },
   "SHOP": {
     "name": "Shopify Inc.",
@@ -4245,7 +4425,7 @@
     "investor_relations_url": "https://investors.shopify.com/",
     "current_ps_multiple": 17.5,
     "target_ps_multiple": 15.72,
-    "last_updated": "2026-08-18T18:26:18.749513+00:00"
+    "last_updated": "2026-08-18T20:33:24.419184+00:00"
   },
   "SHW": {
     "name": "The Sherwin-Williams Company",
@@ -4281,7 +4461,7 @@
     "investor_relations_url": "https://investors.sherwin-williams.com/",
     "current_ps_multiple": 3.6,
     "target_ps_multiple": 3.23,
-    "last_updated": "2026-08-18T18:26:18.750513+00:00"
+    "last_updated": "2026-08-18T20:33:24.419184+00:00"
   },
   "SLDP": {
     "name": "Solid Power, Inc.",
@@ -4317,7 +4497,7 @@
     "investor_relations_url": "https://ir.solidpowerbattery.com/",
     "current_ps_multiple": 25.0,
     "target_ps_multiple": 16.22,
-    "last_updated": "2026-08-18T18:26:18.750513+00:00"
+    "last_updated": "2026-08-18T20:33:24.420184+00:00"
   },
   "SNPS": {
     "name": "Synopsys, Inc.",
@@ -4353,7 +4533,7 @@
     "investor_relations_url": "https://investor.synopsys.com/",
     "current_ps_multiple": 11.0,
     "target_ps_multiple": 10.1,
-    "last_updated": "2026-08-18T18:26:18.750513+00:00"
+    "last_updated": "2026-08-18T20:33:24.420184+00:00"
   },
   "STOK": {
     "name": "Stoke Therapeutics, Inc.",
@@ -4389,7 +4569,7 @@
     "investor_relations_url": "https://investor.stoketherapeutics.com/",
     "current_ps_multiple": 10.6,
     "target_ps_multiple": 9.73,
-    "last_updated": "2026-08-18T18:26:18.751705+00:00"
+    "last_updated": "2026-08-18T20:33:24.420184+00:00"
   },
   "STX": {
     "name": "Seagate Technology Holdings plc",
@@ -4425,7 +4605,7 @@
     "investor_relations_url": "https://investors.seagate.com/",
     "current_ps_multiple": 18.3,
     "target_ps_multiple": 16.46,
-    "last_updated": "2026-08-18T18:26:18.751705+00:00"
+    "last_updated": "2026-08-18T20:33:24.421183+00:00"
   },
   "TDOC": {
     "name": "Teladoc Health, Inc.",
@@ -4461,7 +4641,7 @@
     "investor_relations_url": "https://ir.teladochealth.com/",
     "current_ps_multiple": 0.5,
     "target_ps_multiple": 0.51,
-    "last_updated": "2026-08-18T18:26:18.751705+00:00"
+    "last_updated": "2026-08-18T20:33:24.422184+00:00"
   },
   "TEAM": {
     "name": "Atlassian Corporation",
@@ -4497,7 +4677,7 @@
     "investor_relations_url": "https://investors.atlassian.com/",
     "current_ps_multiple": 6.3,
     "target_ps_multiple": 5.64,
-    "last_updated": "2026-08-18T18:26:18.752701+00:00"
+    "last_updated": "2026-08-18T20:33:24.422184+00:00"
   },
   "TMUS": {
     "name": "T-Mobile US, Inc.",
@@ -4533,7 +4713,43 @@
     "investor_relations_url": "https://investor.t-mobile.com/",
     "current_ps_multiple": 2.2,
     "target_ps_multiple": 2.06,
-    "last_updated": "2026-08-18T18:26:18.754213+00:00"
+    "last_updated": "2026-08-18T20:33:24.423183+00:00"
+  },
+  "TOST": {
+    "name": "Toast, Inc.",
+    "sector": "Information Technology",
+    "industry": "Vertical SaaS & Fintech Solutions",
+    "description": "Provides a comprehensive vertical SaaS platform and point-of-sale ecosystem purpose-built for the restaurant industry, integrating order management, payment processing, kitchen operations, payroll, and capital access.",
+    "thesis_status": "BUY",
+    "conviction_score": 9.1,
+    "holding_period": "3 to 5 Years",
+    "moat": "Deep vertical SaaS workflow integration, high customer switching friction (>90% restaurant retention), processing take-rate monetization, and expanding multi-product attach rates.",
+    "invalidation_criteria": "Deceleration of net location additions below 10% YoY, payment processing margin compression, or macro restaurant bankruptcy wave eroding recurring GPV.",
+    "latest_catalyst": "Inflection to sustained GAAP operating profitability and enterprise multi-unit chain customer adoption.",
+    "investor_relations_url": "https://investors.toasttab.com/",
+    "current_price": 34.95,
+    "entry_price": 34.95,
+    "target_exit_price": 64.93,
+    "target_roi": "24.4%",
+    "current_ps_multiple": 3.1,
+    "target_ps_multiple": 2.85,
+    "entry_strategy": "SELL_CSP",
+    "exit_strategy": "LIMIT_SELL",
+    "entry_date": "2026-08-17",
+    "target_exit_date": "2029-08-17",
+    "csp_proceeds": 1.22,
+    "cc_proceeds": 0.0,
+    "dividend_proceeds": 0.0,
+    "initial_capital_outlay": 33.73,
+    "total_proceeds": 64.93,
+    "net_profit": 31.2,
+    "holding_period_days": 1096,
+    "holding_period_years": 3.0,
+    "capital_gain_pct": 85.78,
+    "options_yield_pct": 3.49,
+    "total_roi_pct": 92.5,
+    "annualized_roi_pct": 24.4,
+    "last_updated": "2026-08-18T20:33:24.423183+00:00"
   },
   "TRI": {
     "name": "Thomson Reuters Corporation",
@@ -4569,7 +4785,7 @@
     "investor_relations_url": "https://ir.thomsonreuters.com/",
     "current_ps_multiple": 6.4,
     "target_ps_multiple": 5.93,
-    "last_updated": "2026-08-18T18:26:18.754213+00:00"
+    "last_updated": "2026-08-18T20:33:24.423183+00:00"
   },
   "TRV": {
     "name": "The Travelers Companies, Inc.",
@@ -4605,7 +4821,7 @@
     "investor_relations_url": "https://investor.travelers.com/",
     "current_ps_multiple": 1.6,
     "target_ps_multiple": 1.52,
-    "last_updated": "2026-08-18T18:26:18.755229+00:00"
+    "last_updated": "2026-08-18T20:33:24.424384+00:00"
   },
   "TSLA": {
     "name": "Tesla, Inc.",
@@ -4641,7 +4857,7 @@
     "investor_relations_url": "https://ir.tesla.com/",
     "current_ps_multiple": 13.8,
     "target_ps_multiple": 11.73,
-    "last_updated": "2026-08-18T18:26:18.755229+00:00"
+    "last_updated": "2026-08-18T20:33:24.425389+00:00"
   },
   "TTWO": {
     "name": "Take-Two Interactive Software, Inc.",
@@ -4677,7 +4893,7 @@
     "investor_relations_url": "https://www.take2games.com/ir",
     "current_ps_multiple": 6.9,
     "target_ps_multiple": 6.2,
-    "last_updated": "2026-08-18T18:26:18.756226+00:00"
+    "last_updated": "2026-08-18T20:33:24.426386+00:00"
   },
   "TXN": {
     "name": "Texas Instruments Incorporated",
@@ -4713,7 +4929,7 @@
     "investor_relations_url": "https://investor.ti.com/",
     "current_ps_multiple": 14.2,
     "target_ps_multiple": 13.1,
-    "last_updated": "2026-08-18T18:26:18.756226+00:00"
+    "last_updated": "2026-08-18T20:33:24.426386+00:00"
   },
   "UNH": {
     "name": "UnitedHealth Group Incorporated",
@@ -4749,7 +4965,7 @@
     "investor_relations_url": "https://www.unitedhealthgroup.com/investors.html",
     "current_ps_multiple": 0.8,
     "target_ps_multiple": 0.87,
-    "last_updated": "2026-08-18T18:26:18.757225+00:00"
+    "last_updated": "2026-08-18T20:33:24.426386+00:00"
   },
   "V": {
     "name": "Visa Inc.",
@@ -4785,7 +5001,7 @@
     "investor_relations_url": "https://investor.visa.com/",
     "current_ps_multiple": 4.2,
     "target_ps_multiple": 3.98,
-    "last_updated": "2026-08-18T18:26:18.757225+00:00"
+    "last_updated": "2026-08-18T20:33:24.427893+00:00"
   },
   "VRSK": {
     "name": "Verisk Analytics, Inc.",
@@ -4821,7 +5037,7 @@
     "investor_relations_url": "https://investor.verisk.com/",
     "current_ps_multiple": 7.9,
     "target_ps_multiple": 7.24,
-    "last_updated": "2026-08-18T18:26:18.757225+00:00"
+    "last_updated": "2026-08-18T20:33:24.427893+00:00"
   },
   "VRTX": {
     "name": "Vertex Pharmaceuticals Incorporated",
@@ -4857,7 +5073,7 @@
     "investor_relations_url": "https://investors.vrtx.com/",
     "current_ps_multiple": 11.1,
     "target_ps_multiple": 10.54,
-    "last_updated": "2026-08-18T18:26:18.758226+00:00"
+    "last_updated": "2026-08-18T20:33:24.428901+00:00"
   },
   "VZ": {
     "name": "Verizon Communications Inc.",
@@ -4893,7 +5109,7 @@
     "investor_relations_url": "https://www.verizon.com/about/investors",
     "current_ps_multiple": 1.5,
     "target_ps_multiple": 1.32,
-    "last_updated": "2026-08-18T18:26:18.758226+00:00"
+    "last_updated": "2026-08-18T20:33:24.428901+00:00"
   },
   "WBD": {
     "name": "Warner Bros. Discovery, Inc.",
@@ -4929,7 +5145,7 @@
     "investor_relations_url": "https://ir.wbd.com/",
     "current_ps_multiple": 1.9,
     "target_ps_multiple": 1.43,
-    "last_updated": "2026-08-18T18:26:18.759226+00:00"
+    "last_updated": "2026-08-18T20:33:24.428901+00:00"
   },
   "WDAY": {
     "name": "Workday, Inc.",
@@ -4965,7 +5181,7 @@
     "investor_relations_url": "https://investor.workday.com/",
     "current_ps_multiple": 5.1,
     "target_ps_multiple": 4.47,
-    "last_updated": "2026-08-18T18:26:18.759226+00:00"
+    "last_updated": "2026-08-18T20:33:24.429902+00:00"
   },
   "WDC": {
     "name": "Western Digital Corporation",
@@ -5001,7 +5217,7 @@
     "investor_relations_url": "https://investor.wdc.com/",
     "current_ps_multiple": 14.3,
     "target_ps_multiple": 12.87,
-    "last_updated": "2026-08-18T18:26:18.759226+00:00"
+    "last_updated": "2026-08-18T20:33:24.430497+00:00"
   },
   "WMT": {
     "name": "Walmart Inc.",
@@ -5037,7 +5253,7 @@
     "investor_relations_url": "https://stock.walmart.com/",
     "current_ps_multiple": 1.3,
     "target_ps_multiple": 1.2,
-    "last_updated": "2026-08-18T18:26:18.760226+00:00"
+    "last_updated": "2026-08-18T20:33:24.430497+00:00"
   },
   "XEL": {
     "name": "Xcel Energy Inc.",
@@ -5073,7 +5289,7 @@
     "investor_relations_url": "https://investors.xcelenergy.com/",
     "current_ps_multiple": 3.3,
     "target_ps_multiple": 2.94,
-    "last_updated": "2026-08-18T18:26:18.760226+00:00"
+    "last_updated": "2026-08-18T20:33:24.431505+00:00"
   },
   "XYZ": {
     "name": "Block, Inc.",
@@ -5109,7 +5325,7 @@
     "investor_relations_url": "https://investors.block.xyz/",
     "current_ps_multiple": 2.0,
     "target_ps_multiple": 2.16,
-    "last_updated": "2026-08-18T18:26:18.760226+00:00"
+    "last_updated": "2026-08-18T20:33:24.431505+00:00"
   },
   "ZM": {
     "name": "Zoom Communications, Inc.",
@@ -5145,7 +5361,7 @@
     "investor_relations_url": "https://investors.zoom.us/",
     "current_ps_multiple": 6.4,
     "target_ps_multiple": 5.75,
-    "last_updated": "2026-08-18T18:26:18.761432+00:00"
+    "last_updated": "2026-08-18T20:33:24.431505+00:00"
   },
   "ZS": {
     "name": "Zscaler, Inc.",
@@ -5181,6 +5397,6 @@
     "investor_relations_url": "https://ir.zscaler.com/",
     "current_ps_multiple": 11.1,
     "target_ps_multiple": 9.98,
-    "last_updated": "2026-08-18T18:26:18.762018+00:00"
+    "last_updated": "2026-08-18T20:33:24.432504+00:00"
   }
 }

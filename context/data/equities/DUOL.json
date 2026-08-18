@@ -1,0 +1,82 @@
+{
+  "symbol": "DUOL",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+  "investor_relations_url": "https://investors.duolingo.com/",
+  "last_updated": "2026-08-18T18:45:00.000000+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-06",
+      "period_start": "2026-04-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "data": {
+        "shares_outstanding": 46730000,
+        "revenue": 298500000,
+        "balance_sheet": {
+          "total_assets": 1420000000,
+          "total_liabilities": 410000000,
+          "total_shareholders_equity": 1010000000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 910000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "data": {
+        "shares_outstanding": 46500000,
+        "revenue": 292500000,
+        "balance_sheet": {
+          "total_assets": 1350000000,
+          "total_liabilities": 390000000,
+          "total_shareholders_equity": 960000000,
+          "total_debt": 0,
+          "cash_and_cash_equivalents": 865000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-10-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "data": {
+        "shares_outstanding": 46200000,
+        "revenue": 285000000,
+        "balance_sheet": {
+          "total_assets": 1280000000,
+          "total_liabilities": 370000000,
+          "total_shareholders_equity": 910000000,
+          "total_debt": 0,
+          "cash_and_cash_equivalents": 820000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-07-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "data": {
+        "shares_outstanding": 45900000,
+        "revenue": 274000000,
+        "balance_sheet": {
+          "total_assets": 1210000000,
+          "total_liabilities": 350000000,
+          "total_shareholders_equity": 860000000,
+          "total_debt": 0,
+          "cash_and_cash_equivalents": 775000000
+        }
+      }
+    }
+  ]
+}

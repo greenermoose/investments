@@ -117,9 +117,15 @@ COMPANY_PROFILES = {
     "BRK-B": (0.07, 0.98, -0.010, 9.4),
     "BAM":   (0.12, 0.95, -0.005, 8.8),
     "BLK":   (0.08, 0.95, -0.010, 8.7),
+    "NU":    (0.28, 0.95, 0.005, 9.4),
     "PYPL":  (0.05, 0.88, -0.025, 7.5),
     "SQ":    (0.11, 0.88, 0.005, 8.0),
     "XYZ":   (0.11, 0.88, 0.005, 8.0),
+    "IOT":   (0.26, 0.90, 0.015, 9.2),
+    "TOST":  (0.24, 0.92, 0.010, 9.1),
+    "MNDY":  (0.24, 0.90, 0.015, 9.1),
+    "CAVA":  (0.28, 0.90, 0.005, 9.3),
+    "DUOL":  (0.25, 0.92, 0.010, 9.2),
 
     # Healthcare, MedTech & Biotech
     "ISRG":  (0.18, 0.95, -0.005, 9.1),
@@ -355,6 +361,162 @@ CURATED_CATALYSTS = {
             "expected_revenue_impact_b": 0.35,
             "revenue_quarter_inflection": "2027-Q2",
             "expected_outcome": "Defense prime contract execution and classified national security software deployments.",
+            "status": "PENDING"
+        }
+    ],
+    "NU": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Mexico Full Banking License & High-Yield Deposit Ingestion",
+            "expected_revenue_impact_b": 0.45,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Accelerated deposit growth and credit underwriting expansion across 16M+ Mexican account holders.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Colombia Credit Card & Secured Lending Acceleration",
+            "expected_revenue_impact_b": 0.65,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Secured payroll loan rollout and high-margin credit line activation in Andean markets.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "SME Merchant Payment Services & Regional Wealth Management Tier",
+            "expected_revenue_impact_b": 0.85,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Fee revenue diversification and institutional merchant payment processing across Latin America.",
+            "status": "PENDING"
+        }
+    ],
+    "IOT": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Connected Operations AI Asset Intelligence & Worker Safety Tier",
+            "expected_revenue_impact_b": 0.08,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "AI camera detection and telematics workflow upsell across Fortune 500 transportation fleets.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "International EMEA & APAC Telematics Fleet Expansion",
+            "expected_revenue_impact_b": 0.12,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "European commercial fleet compliance rollout and global supply chain asset monitoring.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Autonomous Industrial Sensor & Supply Chain Logistics Suite",
+            "expected_revenue_impact_b": 0.16,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Facility equipment telematics and predictive maintenance software subscription scaling.",
+            "status": "PENDING"
+        }
+    ],
+    "CAVA": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "National Unit Expansion & Digital Loyalty Program V2",
+            "expected_revenue_impact_b": 0.06,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Increased digital order frequency and higher average order value across 480+ locations.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Midwest & West Coast Regional Hub Rollout (75+ Net New Units)",
+            "expected_revenue_impact_b": 0.09,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Market entry into high-density suburban markets maintaining 25%+ restaurant-level profit margins.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Drive-Thru Digital Pick-Up Lanes & Catering Platform Scaling",
+            "expected_revenue_impact_b": 0.12,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "High-margin catering sales and throughput optimization via digital order drive-thru lanes.",
+            "status": "PENDING"
+        }
+    ],
+    "TOST": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Enterprise Multi-Unit Franchise Management Platform & Toast IQ AI",
+            "expected_revenue_impact_b": 0.18,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Tier-1 regional restaurant chain wins and automated kitchen display AI optimization.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Retail & International Foodservice Market Expansion",
+            "expected_revenue_impact_b": 0.28,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Market entry into UK, Canada, and Ireland foodservice point-of-sale markets.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Fintech Lending Capital & Embedded Payroll Monetization",
+            "expected_revenue_impact_b": 0.38,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "High-margin recurring SaaS payroll subscriptions and loan origination take rate expansion.",
+            "status": "PENDING"
+        }
+    ],
+    "DUOL": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "Duolingo Max AI Advanced Conversation Tiers Global Expansion",
+            "expected_revenue_impact_b": 0.05,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Higher ARPPU conversion to premium AI subscription tier across 100M+ active learners.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "Math & Music Core Curriculum Gamification & School Integration",
+            "expected_revenue_impact_b": 0.08,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Adoption of STEM and music subjects broadening demographic reach into K-12 education.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Duolingo English Test (DET) University & Corporate Enterprise Adoption",
+            "expected_revenue_impact_b": 0.11,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Institutional testing certification volume growth displacing legacy testing centers.",
+            "status": "PENDING"
+        }
+    ],
+    "MNDY": [
+        {
+            "target_window": "2026-Q4",
+            "product_or_service_name": "monday AI Work Platform & Automated Cross-Departmental Workflows",
+            "expected_revenue_impact_b": 0.06,
+            "revenue_quarter_inflection": "2026-Q4",
+            "expected_outcome": "Doubling of AI-driven ARR through agentic workplace workflow automation.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q2",
+            "product_or_service_name": "monday Service & Enterprise CRM Tier 2 Acceleration",
+            "expected_revenue_impact_b": 0.09,
+            "revenue_quarter_inflection": "2027-Q2",
+            "expected_outcome": "Enterprise customer expansion with $100k+ ARR clients growing >30% YoY.",
+            "status": "PENDING"
+        },
+        {
+            "target_window": "2027-Q4",
+            "product_or_service_name": "Enterprise Scaled Seat Licensing & Marketplace App Ecosystem",
+            "expected_revenue_impact_b": 0.13,
+            "revenue_quarter_inflection": "2027-Q4",
+            "expected_outcome": "Third-party marketplace commission revenue and enterprise wide-deployment renewals.",
             "status": "PENDING"
         }
     ]

@@ -11,7 +11,6 @@ import {
   formatEVInBillions,
   renderPriceChange,
   renderIndexBadges,
-  renderAnalystRatingBadge,
   renderAnalystUpside
 } from './formatters.js';
 
@@ -280,6 +279,12 @@ export function openCompanyModal(company) {
     if (analystTargets.length > 0) {
       analystTargets.forEach(t => {
         const row = document.createElement('tr');
+        const reportUrl = t.source_url || '';
+        const titleText = t.report_title || 'Equity Research Note';
+        const titleContent = reportUrl
+          ? `<a href="${reportUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color, #38bdf8); text-decoration: none; font-weight: 500;" title="${titleText}">${titleText}</a>`
+          : `<span title="${titleText}">${titleText}</span>`;
+
         row.innerHTML = `
           <td><strong>${t.analyst_name}</strong></td>
           <td><span style="color: var(--text-secondary);">${t.firm || 'Wall Street Research'}</span></td>
@@ -287,15 +292,14 @@ export function openCompanyModal(company) {
           <td>$${Number(t.market_price_at_announcement).toFixed(2)}</td>
           <td style="color: #10b981; font-weight: 600;">$${Number(t.target_price).toFixed(2)}</td>
           <td>${renderAnalystUpside(t.implied_upside_pct)}</td>
-          <td>${renderAnalystRatingBadge(t.rating_action)}</td>
-          <td style="font-size: 0.82rem; color: var(--text-muted); max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${t.report_title || ''}">${t.report_title || 'Equity Research Note'}</td>
+          <td style="font-size: 0.82rem; max-width: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${titleContent}</td>
         `;
         analystsTbody.appendChild(row);
       });
     } else {
       analystsTbody.innerHTML = `
         <tr>
-          <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 20px;">
+          <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 20px;">
             No granular analyst price targets recorded. Target exit price modeled at $${targetExit.toFixed(2)}.
           </td>
         </tr>

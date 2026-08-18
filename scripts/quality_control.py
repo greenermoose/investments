@@ -63,6 +63,7 @@ class QualityController:
         self.universe_path = os.path.join(self.http_data_dir, "universe.json")
         self.universe_context_path = os.path.join(self.context_data_dir, "universe.json")
         self.sec_directory_cache_path = os.path.join(self.scripts_data_dir, "sec_tickers_directory.json")
+        self.analyst_targets_path = os.path.join(self.scripts_data_dir, "analyst_price_targets.json")
 
         self.qqq_path = os.path.join(self.scripts_data_dir, "qqq_holdings.json")
         self.dia_path = os.path.join(self.scripts_data_dir, "dia_holdings.json")
@@ -76,6 +77,7 @@ class QualityController:
         self.market_prices = self._load_json(self.market_prices_scripts_path, default={})
         self.universe = self._load_json(self.universe_path, default=[])
         self.sec_summary = self._load_json(self.sec_summary_path, default={})
+        self.analyst_targets = self._load_json(self.analyst_targets_path, default={})
 
         self.qqq_holdings = self._load_json(self.qqq_path, default={}).get("holdings", [])
         self.dia_holdings = self._load_json(self.dia_path, default={}).get("holdings", [])
@@ -268,7 +270,7 @@ class QualityController:
                 "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
             }
 
-    def audit(self, target_symbol=None):
+    def audit(self, target_symbol=None, verify_urls=False):
         """Runs comprehensive deterministic audit across all rules."""
         issues = []
         symbols = [target_symbol] if target_symbol else sorted(list(set(self.http_company_files.keys())))
@@ -293,10 +295,13 @@ class QualityController:
             # 6. Thesis Schema & Completeness Check
             issues.extend(self.check_thesis_schema(sym))
 
-        # 7. Cross-Store Synchronization & Orphan Detection
+            # 7. Analyst Price Targets, Coverage & URLs Check
+            issues.extend(self.check_analyst_coverage(sym, verify_live=verify_urls))
+
+        # 8. Cross-Store Synchronization & Orphan Detection
         issues.extend(self.check_cross_store_parity())
 
-        # 8. Statistical ROI Distribution Plausibility Check (Full Universe)
+        # 9. Statistical ROI Distribution Plausibility Check (Full Universe)
         if not target_symbol:
             issues.extend(self.check_roi_distribution())
 
@@ -661,6 +666,85 @@ class QualityController:
 
         return issues
 
+    def check_analyst_coverage(self, sym, verify_live=False):
+        """Rule 7: Validates Wall Street analyst price targets, schemas, and live report URLs."""
+        issues = []
+        u_entry = next((u for u in self.universe if u.get("symbol") == sym), {})
+        sym_targets = self.analyst_targets.get(sym, [])
+
+        if not sym_targets and not u_entry.get("analyst_price_targets"):
+            issues.append({
+                "severity": "WARNING",
+                "rule": "ANALYST_COVERAGE_INTEGRITY",
+                "symbol": sym,
+                "field": "analyst_price_targets",
+                "description": f"[{sym}] No analyst price targets recorded in analyst_price_targets.json."
+            })
+            return issues
+
+        targets_to_check = sym_targets or u_entry.get("analyst_price_targets", [])
+        for idx, t in enumerate(targets_to_check):
+            # Check required fields
+            for req in ["analyst_name", "target_price", "market_price_at_announcement", "announcement_date"]:
+                if t.get(req) is None or t.get(req) == "":
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "ANALYST_COVERAGE_SCHEMA",
+                        "symbol": sym,
+                        "field": req,
+                        "description": f"[{sym}] Target #{idx+1} is missing required field '{req}'."
+                    })
+
+            # Check target price > 0
+            tp = t.get("target_price")
+            if tp is not None and tp <= 0:
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "ANALYST_COVERAGE_SCHEMA",
+                    "symbol": sym,
+                    "field": "target_price",
+                    "actual": tp,
+                    "description": f"[{sym}] Non-positive analyst target price ({tp})."
+                })
+
+            # Check URL presence and format
+            source_url = t.get("source_url")
+            if not source_url or not isinstance(source_url, str) or not (source_url.startswith("http://") or source_url.startswith("https://")):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "ANALYST_URL_INTEGRITY",
+                    "symbol": sym,
+                    "field": "source_url",
+                    "actual": source_url,
+                    "description": f"[{sym}] Target #{idx+1} by {t.get('analyst_name')} has invalid/missing source_url: '{source_url}'."
+                })
+            elif verify_live:
+                try:
+                    req = urllib.request.Request(source_url, headers=MARKET_HEADERS)
+                    with urllib.request.urlopen(req, timeout=10) as resp:
+                        if resp.status not in [200, 301, 302, 307, 308]:
+                            issues.append({
+                                "severity": "ERROR",
+                                "rule": "ANALYST_URL_EXISTENCE",
+                                "symbol": sym,
+                                "field": "source_url",
+                                "actual": resp.status,
+                                "expected": 200,
+                                "description": f"[{sym}] Analyst report URL '{source_url}' returned HTTP {resp.status} (does not exist or unavailable)."
+                            })
+                except Exception as e:
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "ANALYST_URL_EXISTENCE",
+                        "symbol": sym,
+                        "field": "source_url",
+                        "actual": str(e),
+                        "expected": 200,
+                        "description": f"[{sym}] Analyst report URL '{source_url}' failed existence check: {e}."
+                    })
+
+        return issues
+
     def check_cross_store_parity(self):
         issues = []
         u_syms = set(u.get("symbol") for u in self.universe if u.get("symbol"))
@@ -920,6 +1004,36 @@ class QualityController:
 
             company_name = meta.get("name") or price_info.get("name") or f"{sym} Corporation"
 
+            # Analyst price targets and consensus analytics
+            sym_targets = self.analyst_targets.get(sym, [])
+            if sym_targets:
+                pt_values = [t["target_price"] for t in sym_targets if t.get("target_price")]
+                upside_values = [t["implied_upside_pct"] for t in sym_targets if t.get("implied_upside_pct") is not None]
+                mean_pt = round(sum(pt_values) / len(pt_values), 2) if pt_values else current_price
+                sorted_pts = sorted(pt_values) if pt_values else [current_price]
+                median_pt = sorted_pts[len(sorted_pts) // 2]
+                high_pt = max(pt_values) if pt_values else current_price
+                low_pt = min(pt_values) if pt_values else current_price
+                avg_upside = round(sum(upside_values) / len(upside_values), 1) if upside_values else round(((mean_pt - current_price) / current_price) * 100.0, 1)
+
+                analyst_consensus = {
+                    "mean_target": mean_pt,
+                    "median_target": median_pt,
+                    "high_target": high_pt,
+                    "low_target": low_pt,
+                    "coverage_count": len(sym_targets),
+                    "average_upside_pct": avg_upside
+                }
+            else:
+                analyst_consensus = {
+                    "mean_target": target_exit_price,
+                    "median_target": target_exit_price,
+                    "high_target": target_exit_price,
+                    "low_target": target_exit_price,
+                    "coverage_count": 0,
+                    "average_upside_pct": round(((target_exit_price - current_price) / current_price) * 100.0, 1)
+                }
+
             new_universe.append({
                 "symbol": sym,
                 "name": company_name,
@@ -966,7 +1080,9 @@ class QualityController:
                 "latest_filing_type": latest_filing.get("type") if latest_filing else None,
                 "latest_filing_url": latest_filing.get("filing_url") if latest_filing else None,
                 "filings": filings,
-                "historical_candles_30d": historical_candles
+                "historical_candles_30d": historical_candles,
+                "analyst_price_targets": sym_targets,
+                "analyst_consensus": analyst_consensus
             })
 
         self.universe = new_universe
@@ -995,6 +1111,7 @@ def main():
     parser = argparse.ArgumentParser(description="Deterministic Quality Control & Ground-Truth Verification CLI Tool")
     parser.add_argument("--audit", "--check", action="store_true", help="Run non-destructive audit scan and print discrepancies (default mode)")
     parser.add_argument("--fix", action="store_true", help="Automatically repair data calculations, technicals, and store parity")
+    parser.add_argument("--verify-urls", "--check-urls", action="store_true", help="Deterministically verify live HTTP reachability of all analyst report source URLs")
     parser.add_argument("--symbol", type=str, help="Target specific symbol for check or fix")
     parser.add_argument("--verbose", action="store_true", help="Print detailed diagnostic messages")
     args = parser.parse_args()
@@ -1004,7 +1121,7 @@ def main():
     if args.fix:
         qc.fix_all(target_symbol=args.symbol)
         qc.load_datasets()
-        issues = qc.audit(target_symbol=args.symbol)
+        issues = qc.audit(target_symbol=args.symbol, verify_urls=args.verify_urls)
         print("\n" + "=" * 80)
         print(f"POST-FIX AUDIT REPORT: {len(issues)} remaining issues found.")
         print("=" * 80)
@@ -1017,7 +1134,7 @@ def main():
             print("SUCCESS: 0 errors detected across all datasets. Perfect system integrity verified.")
             sys.exit(0)
     else:
-        issues = qc.audit(target_symbol=args.symbol)
+        issues = qc.audit(target_symbol=args.symbol, verify_urls=args.verify_urls)
         print("=" * 80)
         print(f"QUALITY CONTROL AUDIT REPORT: {len(issues)} discrepancies identified.")
         print("=" * 80)

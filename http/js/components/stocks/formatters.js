@@ -21,12 +21,14 @@ export const formatVolume = (val) => {
 
 export const formatRevenueInBillions = (val) => {
   if (val === null || val === undefined || isNaN(val)) return '-';
-  const b = (val >= 1e6) ? (val / 1e9) : Number(val);
+  const b = (Math.abs(val) >= 1e6) ? (val / 1e9) : Number(val);
   if (b === 0) return '-';
-  if (b < 1 && b > 0) {
-    return '$' + Number(b.toFixed(2)).toString();
+  const sign = b < 0 ? '-' : '';
+  const absB = Math.abs(b);
+  if (absB < 1 && absB > 0) {
+    return sign + '$' + Number(absB.toFixed(2)).toString();
   }
-  return '$' + b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return sign + '$' + absB.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 
 export const formatTargetRoi = (val) => {
@@ -51,23 +53,27 @@ export const formatTargetRoi = (val) => {
 
 export const formatSharesB = (val) => {
   if (val === null || val === undefined || isNaN(val)) return '-';
-  const b = (val >= 1e6) ? (val / 1e9) : Number(val);
+  const b = (Math.abs(val) >= 1e6) ? (val / 1e9) : Number(val);
   if (b === 0) return '-';
-  if (b < 1 && b > 0) {
-    const str = b.toFixed(3);
-    return parseFloat(str).toString();
+  const sign = b < 0 ? '-' : '';
+  const absB = Math.abs(b);
+  if (absB < 1 && absB > 0) {
+    const str = absB.toFixed(3);
+    return sign + parseFloat(str).toString();
   }
-  return b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return sign + absB.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 
 export const formatEVInBillions = (val) => {
   if (val === null || val === undefined || isNaN(val)) return '-';
-  const b = (val >= 1e6) ? (val / 1e9) : Number(val);
+  const b = (Math.abs(val) >= 1e6) ? (val / 1e9) : Number(val);
   if (b === 0) return '-';
-  if (b < 1 && b > 0) {
-    return '$' + Number(b.toFixed(2)).toString();
+  const sign = b < 0 ? '-' : '';
+  const absB = Math.abs(b);
+  if (absB < 1 && absB > 0) {
+    return sign + '$' + Number(absB.toFixed(2)).toString();
   }
-  return '$' + b.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return sign + '$' + absB.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 
 export function renderPriceChange(dayChange, dayChangePct) {

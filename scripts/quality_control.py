@@ -540,6 +540,16 @@ class QualityController:
                 "actual": shares,
                 "description": f"[{sym}] shares_outstanding is missing or non-positive ({shares})."
             })
+        elif sym in ["BRK-B", "BRK.B"] and shares < 100e6:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "FUNDAMENTAL_ACCOUNTING",
+                "symbol": sym,
+                "field": "shares_outstanding",
+                "actual": shares,
+                "expected": 2160000000,
+                "description": f"[{sym}] Berkshire Hathaway Class B shares count must be normalized to Class B equivalent count (~2.16B shares), found {shares}."
+            })
         elif cp and mc:
             expected_mc = round(shares * cp, 2)
             if abs(mc - expected_mc) > max(100.0, expected_mc * 0.01):
@@ -841,6 +851,10 @@ class QualityController:
 
             if (not shares or shares == 0) and filings:
                 shares = filings[0].get("data", {}).get("shares_outstanding")
+
+            # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
+            if sym in ["BRK-B", "BRK.B"] and shares and shares < 100e6:
+                shares = 2160000000
 
             total_debt = sec_metrics.get("total_debt")
             if total_debt is None:

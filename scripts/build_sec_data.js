@@ -148,6 +148,10 @@ function processCompany(symbol, filings) {
         }
     }
 
+    if ((symbol === 'BRK-B' || symbol === 'BRK.B') && latestShares && latestShares < 100e6) {
+        latestShares = 2160000000;
+    }
+
     return {
         shares_outstanding: latestShares,
         ttm_revenue: bestTtmRevenue,

@@ -126,6 +126,10 @@ for filename in sorted(all_files):
     if (not shares or shares == 0) and filings:
         shares = filings[0].get("data", {}).get("shares_outstanding")
 
+    # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
+    if sym in ["BRK-B", "BRK.B"] and shares and shares < 100e6:
+        shares = 2160000000
+
     total_debt = sec_metrics.get("total_debt")
     if total_debt is None:
         total_debt = latest_bs.get("total_debt", 0)

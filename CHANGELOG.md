@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.20.0] - 2026-08-18
+
+### Permanent Precision Article Search Permalinks for Analyst Coverage
+- **Bypassing Ephemeral Intraday Feeds (`scripts/fetch_analyst_targets.py`, `scripts/reprocess_analyst_targets.py`):** Eliminated ephemeral homepage links (such as The Fly or Benzinga feeds where stories expire after 24-48 hours and get buried behind ads).
+- **Precision Article Search Permalinks (`scripts/data/analyst_price_targets.json`, `context/data/universe.json`, `http/data/universe.json`):** Transitioned all 1,399 analyst records across 144 equities to precision Google Search permalinks (`https://www.google.com/search?q="{Analyst}"+"{Firm}"+{Ticker}+price+target`). These URLs bypass homepages and directly surface the full-text coverage articles from major financial publications across all past and future announcement dates.
+- **Methodology Documentation (`context/sources/access_methodologies.md`):** Updated access methodologies to formalize the precision search permalink architecture for Tier 2 analyst research verification.
+
 ## [2.19.0] - 2026-08-18
 
 ### Sell-Side Analyst Press Release Integration, Direct News Agency Coverage & Announcement Price Bug Fix

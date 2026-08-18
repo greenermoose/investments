@@ -25,28 +25,22 @@ if os.path.exists(market_prices_file):
     with open(market_prices_file, "r", encoding="utf-8") as f:
         market_prices = json.load(f)
 
-NEWS_AGENCIES = [
-    {
-        "name": "The Fly",
-        "url_template": "https://thefly.com/news.php?symbol={sym}",
-    },
-    {
-        "name": "Benzinga",
-        "url_template": "https://www.benzinga.com/quote/{sym}/analyst-ratings",
-    },
-    {
-        "name": "StreetInsider",
-        "url_template": "https://www.streetinsider.com/stock_lookup.php?q={sym}",
-    },
-    {
-        "name": "Seeking Alpha",
-        "url_template": "https://seekingalpha.com/symbol/{sym}/news",
-    },
-    {
-        "name": "Yahoo Finance",
-        "url_template": "https://finance.yahoo.com/quote/{sym}/news/",
-    }
-]
+import urllib.parse
+
+def build_analyst_search_url(analyst_name, firm, sym):
+    clean_analyst = (analyst_name or "").replace(" Research Team", "").replace(" Research Department", "").strip()
+    is_named = clean_analyst and clean_analyst.lower() not in ["not rated", "wall street research", "research team", (firm or "").lower()]
+    
+    clean_firm = (firm or "Wall Street Research").replace("& Co.", "").replace("& Company", "").replace("Financial Group", "").replace("Capital Markets", "").replace("Securities", "").strip()
+    
+    if is_named:
+        q = f'"{clean_analyst}" "{clean_firm}" {sym} price target'
+    else:
+        q = f'"{clean_firm}" {sym} price target'
+        
+    encoded_q = urllib.parse.quote_plus(q)
+    return f"https://www.google.com/search?q={encoded_q}"
+
 
 def generate_press_release_title(brokerage, sym, raw_title, rating_action, target_price):
     b = brokerage.strip()
@@ -98,10 +92,8 @@ for sym, targets in all_targets.items():
         
         press_release_title = generate_press_release_title(brokerage, sym, old_title, std_action, target_price)
         
-        # Select deterministic news agency press release URL
-        agency_idx = (abs(hash(f"{sym}_{brokerage}_{parsed_date}")) % len(NEWS_AGENCIES))
-        agency = NEWS_AGENCIES[agency_idx]
-        source_url = agency["url_template"].format(sym=sym.upper())
+        # Generate direct precision article search permalink
+        source_url = build_analyst_search_url(analyst, brokerage, sym.upper())
         
         updated_list.append({
             "symbol": sym.upper(),

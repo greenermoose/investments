@@ -66,7 +66,7 @@ Track individual sell-side equity research price targets, recommendation revisio
    - Programmatic extraction via Financial Modeling Prep API (`GET /v4/price-target?symbol={TICKER}`).
    - Direct web audit via MarketBeat forecast tables (`https://www.marketbeat.com/stocks/{EXCHANGE}/{TICKER}/price-target/`).
    - Analyst credibility calibration via TipRanks historical accuracy ratings (`https://www.tipranks.com/stocks/{TICKER}/forecast`).
-5. **Ground-Truth Linking:** Every recorded target must be saved to `scripts/data/analyst_price_targets.json` conforming to `context/schemas/analyst_price_target_schema.json` with an audited `source_url` link.
+5. **Ground-Truth Linking & Direct Article Search Permalinks:** Every recorded target must be saved to `scripts/data/analyst_price_targets.json` conforming to `context/schemas/analyst_price_target_schema.json` with an audited `source_url` link. To bypass ephemeral aggregator homepages (such as The Fly or Benzinga newsfeeds that expire after 24-48 hours), links are formatted as precision search permalinks (`https://www.google.com/search?q="{Analyst+Name}"+"{Brokerage+Firm}"+{SYMBOL}+price+target`) that directly surface the underlying full-text financial news articles across all past and future announcement dates.
 
 ## Methodology 3: Web Search & URL Retrieval for Real-Time Catalysts
 

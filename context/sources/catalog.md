@@ -128,10 +128,12 @@ Although full PDF research reports are protected by copyright and client paywall
 4. **SEC Disclosures & Corporate Investor Relations:** Public corporations frequently mention consensus analyst price targets and coverage rosters in Form 8-K presentations, annual shareholder letters, or Investor Relations (IR) fact sheets.
 
 ### Ingestion & Verification Methodology for AI Agents
-To track and incorporate analyst price targets into our system without paying tens of thousands of dollars for institutional terminal licenses, our AI agents execute a deterministic three-step discovery protocol:
-1. **Press Release Ingestion:** Ingest pre-market sell-side research dispatches broadcast across financial newswires (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance).
-2. **Schema Normalization & Historical Price Reconciliation:** Normalize every target into `context/schemas/analyst_price_target_schema.json`, recording `analyst_name`, `firm`, `announcement_date`, accurate historical `market_price_at_announcement`, `target_price`, `implied_upside_pct`, `rating_action`, `press_release_title`, and `source_url`.
-3. **Direct Press Release Verification:** Ensure every recorded entry contains a direct URL to the specific news agency press release article where human traders and AI agents can verify the announcement details.
+To track and incorporate analyst price targets into our system without paying tens of thousands of dollars for institutional terminal licenses, our AI agents execute a deterministic four-step discovery protocol:
+1. **Press Release Ingestion:** Ingest pre-market sell-side research dispatches broadcast across financial newswires. The ranked directory of press release sources (`context/sources/analyst_press_release_sources.json`) prioritizes sites by trust score and search reliability (TheFly, Benzinga, StreetInsider, MarketBeat, Yahoo Finance, TipRanks, Seeking Alpha, Investing.com, Barron's, StockAnalysis.com).
+2. **Schema Normalization & Historical Price Reconciliation:** Normalize every target into `context/schemas/analyst_price_target_schema.json`, recording `analyst_name`, `firm`, `announcement_date`, accurate historical `market_price_at_announcement`, `target_price`, `implied_upside_pct`, `rating_action`, `press_release_title`, and `source_url`. The `market_price_at_announcement` is resolved from the persistent historical OHLCV price archive (`scripts/data/historical_price_archive.json`, schema: `context/schemas/historical_price_archive_schema.json`) which stores 18+ months of daily closing prices for all universe equities.
+3. **Direct Press Release Verification:** Ensure every recorded entry contains a targeted search URL scoped to top-ranked press release source sites (using `site:` operators) where human traders and AI agents can verify the announcement details.
+4. **Coverage Registry & Firm Cross-Reference:** Aggregate individual price targets into a per-company analyst coverage registry (`scripts/data/analyst_coverage_registry.json`, schema: `context/schemas/analyst_coverage_registry_schema.json`), cross-referencing against the curated sell-side firms directory (`context/sources/sell_side_firms_directory.json`) which catalogs ~40 major research firms with research portal URLs, sector specializations, and access models.
+
 
 ## Search Engines & Tools Accessible to AI Agents
 

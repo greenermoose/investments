@@ -159,12 +159,120 @@ def fetch_ticker_quote_and_technicals(symbol):
             "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
         }
 
+def fetch_historical_archive_data(symbol, range_str="18mo"):
+    """Fetch extended historical daily closes for the price archive.
+
+    Returns a dict of {YYYY-MM-DD: close_price} for all trading days in the range.
+    Uses Yahoo Finance Chart API with daily interval.
+    """
+    query_sym = symbol.replace(".", "-")
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{query_sym}?interval=1d&range={range_str}"
+    req = urllib.request.Request(url, headers=HEADERS)
+
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+        result = data.get("chart", {}).get("result", [])
+        if not result:
+            raise ValueError(f"No chart result returned for {symbol}")
+
+        timestamps = result[0].get("timestamp", [])
+        indicators = result[0].get("indicators", {}).get("quote", [{}])[0]
+        closes = indicators.get("close", [])
+
+        daily_closes = {}
+        for i in range(len(timestamps)):
+            ts = timestamps[i]
+            c = closes[i] if i < len(closes) else None
+            if c is not None and ts is not None:
+                dt_str = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+                daily_closes[dt_str] = round(float(c), 2)
+
+        return daily_closes
+
+
+def run_archive_mode(symbols):
+    """Build/update the persistent historical price archive with 18 months of daily closes."""
+    scripts_data_dir = os.path.join(os.path.dirname(__file__), "data")
+    http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
+    context_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data")
+    os.makedirs(scripts_data_dir, exist_ok=True)
+    os.makedirs(http_data_dir, exist_ok=True)
+    os.makedirs(context_data_dir, exist_ok=True)
+
+    archive_file = os.path.join(scripts_data_dir, "historical_price_archive.json")
+
+    # Load existing archive to merge with
+    archive = {}
+    if os.path.exists(archive_file):
+        try:
+            with open(archive_file, "r", encoding="utf-8") as f:
+                archive = json.load(f)
+        except Exception:
+            archive = {}
+
+    print(f"Building historical price archive (18mo) for {len(symbols)} equities...")
+    success_count = 0
+    fail_count = 0
+
+    for i, sym in enumerate(symbols, 1):
+        try:
+            new_closes = fetch_historical_archive_data(sym, range_str="18mo")
+            if not new_closes:
+                print(f"[{i}/{len(symbols)}] {sym}: No historical data returned.")
+                fail_count += 1
+                continue
+
+            # Merge: existing entries are preserved, new entries are added/updated
+            existing_entry = archive.get(sym, {})
+            existing_closes = existing_entry.get("daily_closes", {})
+            existing_closes.update(new_closes)
+
+            sorted_dates = sorted(existing_closes.keys())
+            archive[sym] = {
+                "symbol": sym,
+                "daily_closes": existing_closes,
+                "first_date": sorted_dates[0] if sorted_dates else "",
+                "last_date": sorted_dates[-1] if sorted_dates else "",
+                "total_trading_days": len(existing_closes),
+                "as_of_timestamp": datetime.now(timezone.utc).isoformat(),
+                "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
+                "provenance_source": "Yahoo Finance Chart API (18mo historical)"
+            }
+
+            success_count += 1
+            print(f"[{i}/{len(symbols)}] {sym:5s}: {len(new_closes)} candles fetched, {len(existing_closes)} total archived [{sorted_dates[0]} to {sorted_dates[-1]}]")
+            time.sleep(0.08)
+        except Exception as e:
+            print(f"[{i}/{len(symbols)}] Warning: Could not fetch archive for {sym}: {e}")
+            fail_count += 1
+
+    # Save archive to all three locations
+    for out_path in [
+        archive_file,
+        os.path.join(http_data_dir, "historical_price_archive.json"),
+        os.path.join(context_data_dir, "historical_price_archive.json"),
+    ]:
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(archive, f, indent=2)
+
+    print(f"\nHistorical price archive complete: {success_count} succeeded, {fail_count} failed.")
+    print(f"Archive contains {len(archive)} equities. Saved to {archive_file} (and http/data/, context/data/).")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch latest market prices, volumes, and technical indicators.")
     parser.add_argument("--symbols", nargs="+", help="Specific symbols to fetch (default: all universe)")
+    parser.add_argument("--archive", action="store_true",
+                        help="Build/update historical price archive (18 months of daily closes) for accurate analyst announcement price lookups.")
     args = parser.parse_args()
 
     symbols = args.symbols if args.symbols else load_universe_symbols()
+
+    # Archive mode: build persistent historical daily close archive
+    if args.archive:
+        run_archive_mode(symbols)
+        return
+
     print(f"Ingesting authoritative market prices & technical data for {len(symbols)} public equities...")
 
     scripts_data_dir = os.path.join(os.path.dirname(__file__), "data")

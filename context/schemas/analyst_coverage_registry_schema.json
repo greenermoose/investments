@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnalystCoverageRegistrySchema",
+  "description": "Schema for the per-company analyst and firm coverage registry. Aggregates all known sell-side research coverage relationships, tracking which firms and analysts actively cover each equity in the universe.",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Z0-9.-]+$": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "pattern": "^[A-Z0-9.-]{1,10}$",
+          "description": "Ticker symbol of the covered equity."
+        },
+        "covering_firms": {
+          "type": "array",
+          "description": "Array of sell-side research firms and their lead analysts covering this equity.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "firm": {
+                "type": "string",
+                "description": "Name of the sell-side research firm or investment bank."
+              },
+              "lead_analyst": {
+                "type": "string",
+                "description": "Name of the lead research analyst at the firm covering this equity."
+              },
+              "coverage_type": {
+                "type": "string",
+                "enum": ["Active", "Suspended", "Dropped"],
+                "description": "Current status of the firm's coverage on this equity."
+              },
+              "latest_rating": {
+                "type": "string",
+                "enum": ["BUY", "OUTPERFORM", "OVERWEIGHT", "HOLD", "EQUAL-WEIGHT", "NEUTRAL", "UNDERPERFORM", "UNDERWEIGHT", "SELL"],
+                "description": "Most recent standardized rating action from this firm."
+              },
+              "latest_target_price": {
+                "type": "number",
+                "minimum": 0.01,
+                "description": "Most recent price target from this firm in USD."
+              },
+              "latest_date": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+                "description": "Date of the most recent report from this firm (YYYY-MM-DD)."
+              },
+              "total_reports": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Total number of reports/revisions recorded from this firm for this equity."
+              },
+              "ir_page_listed": {
+                "type": "boolean",
+                "description": "Whether this firm is listed on the company's investor relations analyst coverage page."
+              },
+              "firm_research_url": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL to the firm's public research portal or analyst bio page."
+              }
+            },
+            "required": ["firm", "lead_analyst", "latest_rating", "latest_target_price", "latest_date"]
+          }
+        },
+        "total_covering_firms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of distinct sell-side firms with active coverage."
+        },
+        "total_reports": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of individual analyst reports recorded."
+        },
+        "last_updated": {
+          "type": "string",
+          "description": "ISO 8601 timestamp of when this registry entry was last rebuilt."
+        }
+      },
+      "required": ["symbol", "covering_firms", "total_covering_firms", "last_updated"]
+    }
+  }
+}

@@ -388,6 +388,19 @@ export function openCompanyModal(company) {
     analystCountBadgeEl.textContent = `${analystTargets.length} Analyst Report${analystTargets.length === 1 ? '' : 's'}`;
   }
 
+  // Coverage summary line (firm count and total reports)
+  const coverageSummaryEl = document.getElementById('modal-analyst-coverage-summary');
+  const firmsCountEl = document.getElementById('modal-analyst-firms-count');
+  const reportsCountEl = document.getElementById('modal-analyst-reports-count');
+  if (coverageSummaryEl && analystTargets.length > 0) {
+    const uniqueFirms = new Set(analystTargets.map(t => t.firm || 'Unknown'));
+    if (firmsCountEl) firmsCountEl.textContent = `Covered by ${uniqueFirms.size} firm${uniqueFirms.size === 1 ? '' : 's'}`;
+    if (reportsCountEl) reportsCountEl.textContent = `${analystTargets.length} individual report${analystTargets.length === 1 ? '' : 's'}`;
+    coverageSummaryEl.style.display = 'block';
+  } else if (coverageSummaryEl) {
+    coverageSummaryEl.style.display = 'none';
+  }
+
   // Calculate predicted price movement percentages (low, median, mean, high)
   const upsides = analystTargets
     .map(t => {
@@ -436,10 +449,30 @@ export function openCompanyModal(company) {
           ? `<a href="${reportUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color, #38bdf8); text-decoration: none; font-weight: 500;" title="${titleText}">${titleText}</a>`
           : `<span title="${titleText}">${titleText}</span>`;
 
+        // Rating action badge with color coding
+        const ratingAction = t.rating_action || '';
+        let ratingColor = '#94a3b8'; // default gray
+        let ratingBg = 'rgba(148, 163, 184, 0.12)';
+        const ratingUpper = ratingAction.toUpperCase();
+        if (['BUY', 'OUTPERFORM', 'OVERWEIGHT'].includes(ratingUpper)) {
+          ratingColor = '#10b981';
+          ratingBg = 'rgba(16, 185, 129, 0.12)';
+        } else if (['HOLD', 'EQUAL-WEIGHT', 'NEUTRAL'].includes(ratingUpper)) {
+          ratingColor = '#f59e0b';
+          ratingBg = 'rgba(245, 158, 11, 0.12)';
+        } else if (['SELL', 'UNDERPERFORM', 'UNDERWEIGHT'].includes(ratingUpper)) {
+          ratingColor = '#ef4444';
+          ratingBg = 'rgba(239, 68, 68, 0.12)';
+        }
+        const ratingBadge = ratingAction
+          ? `<span style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; color: ${ratingColor}; background: ${ratingBg}; border: 1px solid ${ratingColor}30; letter-spacing: 0.3px;">${ratingAction}</span>`
+          : '<span style="color: var(--text-muted);">-</span>';
+
         row.innerHTML = `
           <td><strong>${t.analyst_name}</strong></td>
           <td><span style="color: var(--text-secondary);">${t.firm || 'Wall Street Research'}</span></td>
           <td><code>${t.announcement_date}</code></td>
+          <td>${ratingBadge}</td>
           <td>$${Number(t.market_price_at_announcement).toFixed(2)}</td>
           <td style="color: #10b981; font-weight: 600;">$${Number(t.target_price).toFixed(2)}</td>
           <td>${renderAnalystUpside(t.implied_upside_pct)}</td>
@@ -450,7 +483,7 @@ export function openCompanyModal(company) {
     } else {
       analystsTbody.innerHTML = `
         <tr>
-          <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 20px;">
+          <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 20px;">
             No granular analyst price targets recorded. Target exit price modeled at $${targetExit.toFixed(2)}.
           </td>
         </tr>

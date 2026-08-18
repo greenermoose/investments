@@ -228,29 +228,52 @@ export function openCompanyModal(company) {
   const analystTargets = company.analyst_price_targets || [];
   const consensus = company.analyst_consensus || {};
   const analystCountBadgeEl = document.getElementById('modal-analyst-count-badge');
-  const meanPtEl = document.getElementById('modal-analyst-mean-pt');
-  const medianPtEl = document.getElementById('modal-analyst-median-pt');
-  const highPtEl = document.getElementById('modal-analyst-high-pt');
-  const lowPtEl = document.getElementById('modal-analyst-low-pt');
-  const avgUpsideEl = document.getElementById('modal-analyst-avg-upside');
-  const coverageEl = document.getElementById('modal-analyst-coverage');
+  const lowPredEl = document.getElementById('modal-analyst-low-pred');
+  const medianPredEl = document.getElementById('modal-analyst-median-pred');
+  const meanPredEl = document.getElementById('modal-analyst-mean-pred');
+  const highPredEl = document.getElementById('modal-analyst-high-pred');
   const analystsTbody = document.getElementById('modal-analysts-tbody');
 
   if (analystCountBadgeEl) {
     analystCountBadgeEl.textContent = `${analystTargets.length} Analyst Report${analystTargets.length === 1 ? '' : 's'}`;
   }
 
-  if (meanPtEl) meanPtEl.textContent = consensus.mean_target ? `$${consensus.mean_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
-  if (medianPtEl) medianPtEl.textContent = consensus.median_target ? `$${consensus.median_target.toFixed(2)}` : (company.target_exit_price ? `$${company.target_exit_price.toFixed(2)}` : '-');
-  if (highPtEl) highPtEl.textContent = consensus.high_target ? `$${consensus.high_target.toFixed(2)}` : (company.fifty_two_week_high ? `$${company.fifty_two_week_high.toFixed(2)}` : '-');
-  if (lowPtEl) lowPtEl.textContent = consensus.low_target ? `$${consensus.low_target.toFixed(2)}` : (company.fifty_two_week_low ? `$${company.fifty_two_week_low.toFixed(2)}` : '-');
-  if (avgUpsideEl) {
-    const avgUp = consensus.average_upside_pct;
-    avgUpsideEl.innerHTML = renderAnalystUpside(avgUp);
+  // Calculate predicted price movement percentages (low, median, mean, high)
+  const upsides = analystTargets
+    .map(t => {
+      if (t.implied_upside_pct !== undefined && t.implied_upside_pct !== null && !isNaN(t.implied_upside_pct)) {
+        return Number(t.implied_upside_pct);
+      }
+      if (t.target_price && t.market_price_at_announcement) {
+        return ((Number(t.target_price) - Number(t.market_price_at_announcement)) / Number(t.market_price_at_announcement)) * 100;
+      }
+      return null;
+    })
+    .filter(v => v !== null && !isNaN(v));
+
+  let lowPred = null;
+  let medianPred = null;
+  let meanPred = null;
+  let highPred = null;
+
+  if (upsides.length > 0) {
+    const sorted = [...upsides].sort((a, b) => a - b);
+    lowPred = sorted[0];
+    highPred = sorted[sorted.length - 1];
+    meanPred = sorted.reduce((sum, v) => sum + v, 0) / sorted.length;
+    const mid = Math.floor(sorted.length / 2);
+    medianPred = sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  } else if (consensus.average_upside_pct !== undefined && consensus.average_upside_pct !== null) {
+    lowPred = consensus.average_upside_pct;
+    medianPred = consensus.average_upside_pct;
+    meanPred = consensus.average_upside_pct;
+    highPred = consensus.average_upside_pct;
   }
-  if (coverageEl) {
-    coverageEl.textContent = analystTargets.length > 0 ? `${analystTargets.length} Firms Active` : 'Model Grounded';
-  }
+
+  if (lowPredEl) lowPredEl.innerHTML = renderAnalystUpside(lowPred);
+  if (medianPredEl) medianPredEl.innerHTML = renderAnalystUpside(medianPred);
+  if (meanPredEl) meanPredEl.innerHTML = renderAnalystUpside(meanPred);
+  if (highPredEl) highPredEl.innerHTML = renderAnalystUpside(highPred);
 
   if (analystsTbody) {
     analystsTbody.innerHTML = '';

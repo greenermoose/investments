@@ -212,12 +212,12 @@
     "target_universe": "large_cap_quality_universe",
     "bounds": {
       "median_annualized_roi_min": 4.0,
-      "median_annualized_roi_max": 30.0,
+      "median_annualized_roi_max": 10.0,
       "mean_annualized_roi_min": 5.0,
-      "mean_annualized_roi_max": 30.0,
+      "mean_annualized_roi_max": 12.0,
       "pct_negative_roi_max": 35.0,
       "pct_exceeding_20_cagr_min": 3.0,
-      "pct_exceeding_20_cagr_max": 95.0,
+      "pct_exceeding_20_cagr_max": 20.0,
       "max_single_stock_cagr": 50.0
     }
   }

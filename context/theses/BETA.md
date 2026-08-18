@@ -44,19 +44,19 @@ BETA currently trades at a Price-to-Sales (P/S) multiple of ~169.8x on trailing 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -11.7% | 0.230 B | 169.83x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | -4.2% | 0.231 B | 165.59x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -14.5% | 0.233 B | 161.34x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -8.6% | 0.235 B | 157.09x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -2.5% | 0.237 B | 152.85x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | +5.9% | 0.238 B | 148.60x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -5.5% | 0.240 B | 144.36x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | +1.0% | 0.242 B | 140.11x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | +7.8% | 0.244 B | 135.86x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | +17.0% | 0.245 B | 131.62x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | +4.4% | 0.247 B | 127.37x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | +11.6% | 0.249 B | 123.13x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +19.1% | 0.251 B | 118.88x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -12.6% | 0.230 B | 169.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | -5.3% | 0.231 B | 165.59x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -12.3% | 0.233 B | 161.34x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -6.6% | 0.235 B | 157.09x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -0.5% | 0.237 B | 152.85x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | +7.8% | 0.238 B | 148.60x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -0.2% | 0.240 B | 144.36x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | +6.3% | 0.242 B | 140.11x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | +13.2% | 0.244 B | 135.86x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | +22.7% | 0.245 B | 131.62x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | +13.6% | 0.247 B | 127.37x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | +21.0% | 0.249 B | 123.13x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +28.8% | 0.251 B | 118.88x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -79,11 +79,11 @@ BETA currently trades at a Price-to-Sales (P/S) multiple of ~169.8x on trailing 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Andres Sheppard | Cantor Fitzgerald | 2026-08-13 | $25.60 | $31.00 | +30.6% | OVERWEIGHT |
-| Andre Madrid | BTIG Research | 2026-08-13 | $25.60 | $33.00 | +39.1% | BUY |
-| Chris Pierce | Needham & Company LLC | 2026-08-12 | $25.60 | $34.00 | +42.4% | BUY |
-| Anthony Valentini | The Goldman Sachs Group | 2026-04-20 | $25.60 | $34.00 | +88.0% | BUY |
-| Sheila Kahyaoglu | Jefferies Financial Group | 2026-03-10 | $25.60 | $29.00 | +39.3% | BUY |
+| Andres Sheppard | Cantor Fitzgerald | 2026-08-13 | $23.73 | $31.00 | +30.6% | OVERWEIGHT |
+| Andre Madrid | BTIG Research | 2026-08-13 | $23.73 | $33.00 | +39.1% | BUY |
+| Chris Pierce | Needham & Company LLC | 2026-08-12 | $23.87 | $34.00 | +42.4% | BUY |
+| Anthony Valentini | The Goldman Sachs Group | 2026-04-20 | $18.08 | $34.00 | +88.0% | BUY |
+| Sheila Kahyaoglu | Jefferies Financial Group | 2026-03-10 | $20.82 | $29.00 | +39.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

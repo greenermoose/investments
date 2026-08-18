@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $30.28 per share
 - **Current Price:** $30.28 per share
-- **Target Exit Price:** $51.44 per share
+- **Target Exit Price:** $31.10 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1418135
 
 ## Business Profile
-Keurig Dr Pepper Inc. (KDP) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Coffee). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KDP trades at $30.28 against a 3-year baseline price target of $51.44, generating a modeled annualized ROI of 21.4% under our disciplined 20-year hurdle standard.
+Keurig Dr Pepper Inc. (KDP) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Coffee). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KDP trades at $30.28 against a 3-year baseline price target of $31.10, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Keurig Dr Pepper Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Keurig Dr Pepper Inc. addresses an estimated Total Addressable Market (TAM) of $
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Keurig Dr Pepper Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.60B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.00B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.41B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Keurig Dr Pepper Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.03B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.04B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.05B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management utilizes moderate share buybacks (~$2.4B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~0.5% per year while maintaining balance sheet flexibility.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Keurig Dr Pepper Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 21.4%, fully justifying our HOLD rating.
+KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $4.10 B | -2.8% | 1.361 B | 2.56x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $4.55 B | +22.7% | 1.359 B | 2.54x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $4.25 B | +9.0% | 1.357 B | 2.52x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $4.92 B | +20.0% | 1.355 B | 2.50x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $5.52 B | +34.5% | 1.354 B | 2.48x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.52 B | +43.2% | 1.352 B | 2.46x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $6.53 B | +53.5% | 1.350 B | 2.44x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $7.14 B | +45.2% | 1.349 B | 2.42x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $7.34 B | +33.0% | 1.347 B | 2.39x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $7.63 B | +17.0% | 1.345 B | 2.37x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $7.06 B | +8.1% | 1.344 B | 2.35x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.26 B | +1.7% | 1.342 B | 2.33x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $7.46 B | +1.7% | 1.340 B | 2.31x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $4.06 B | -3.8% | 1.361 B | 2.56x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $4.31 B | +16.1% | 1.359 B | 2.54x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.90 B | +0.1% | 1.357 B | 2.52x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $4.08 B | -0.5% | 1.355 B | 2.50x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $4.25 B | +4.7% | 1.354 B | 2.48x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $4.52 B | +4.9% | 1.352 B | 2.46x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $4.11 B | +5.4% | 1.350 B | 2.44x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $4.29 B | +5.1% | 1.349 B | 2.42x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.45 B | +4.8% | 1.347 B | 2.39x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.71 B | +4.3% | 1.345 B | 2.37x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.27 B | +3.9% | 1.344 B | 2.35x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.44 B | +3.5% | 1.342 B | 2.33x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.62 B | +3.7% | 1.340 B | 2.31x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $26.89 | $33.61 | $40.33 | 2.5x | +51.8% |
-| 52 Weeks (1Y) | $32.35 | $40.44 | $48.53 | 2.5x | +33.6% |
-| 104 Weeks (2Y) | $41.67 | $52.09 | $62.51 | 2.4x | +31.2% |
-| 156 Weeks (3Y) | $41.15 | $51.44 | $61.73 | 2.3x | +19.3% |
+| 13 Weeks | $25.47 | $31.84 | $38.21 | 2.5x | +22.3% |
+| 52 Weeks (1Y) | $24.23 | $30.29 | $36.35 | 2.5x | +0.0% |
+| 104 Weeks (2Y) | $24.66 | $30.82 | $36.98 | 2.4x | +0.9% |
+| 156 Weeks (3Y) | $24.88 | $31.10 | $37.32 | 2.3x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Sorabh Daga | HSBC | 2026-08-13 | $30.28 | $40.00 | +35.3% | HOLD |
-| Lauren Lieberman | Barclays | 2026-08-10 | $30.28 | $38.00 | +26.6% | OVERWEIGHT |
-| Peter Grom | UBS Group | 2026-08-07 | $30.28 | $39.00 | +30.0% | BUY |
-| Royal Bank Of Canada Research Team | Royal Bank Of Canada | 2026-08-04 | $30.28 | $42.00 | +36.5% | OUTPERFORM |
-| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-23 | $30.28 | $38.00 | +28.0% | OVERWEIGHT |
+| Sorabh Daga | HSBC | 2026-08-13 | $29.56 | $40.00 | +35.3% | HOLD |
+| Lauren Lieberman | Barclays | 2026-08-10 | $30.01 | $38.00 | +26.6% | OVERWEIGHT |
+| Peter Grom | UBS Group | 2026-08-07 | $30.01 | $39.00 | +30.0% | BUY |
+| Royal Bank Of Canada Research Team | Royal Bank Of Canada | 2026-08-04 | $30.77 | $42.00 | +36.5% | OUTPERFORM |
+| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-23 | $29.68 | $38.00 | +28.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.60 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.00 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $1.41 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.03 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.04 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.05 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

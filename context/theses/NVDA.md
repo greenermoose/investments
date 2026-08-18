@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $225.01 per share
 - **Current Price:** $225.01 per share
-- **Target Exit Price:** $417.23 per share
+- **Target Exit Price:** $443.43 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.5 / 10.0
 - **Rating:** BUY
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1045810
 
 ## Business Profile
-NVIDIA Corporation (NVDA) operates as an established participant within the Information Technology sector (Semiconductors & AI Hardware). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NVDA trades at $225.01 against a 3-year baseline price target of $417.23, generating a modeled annualized ROI of 22.9% under our disciplined 20-year hurdle standard.
+NVIDIA Corporation (NVDA) operates as an established participant within the Information Technology sector (Semiconductors & AI Hardware). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NVDA trades at $225.01 against a 3-year baseline price target of $443.43, generating a modeled annualized ROI of 25.4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 NVIDIA Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 19.1% market share. Over our 3-year investment horizon, we model market share evolving to 23.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 NVIDIA Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +28.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~19.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.9%, fully justifying our BUY rating.
+NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~21.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 25.4%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $58.50 B | +13.6% | 24.300 B | 23.83x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $66.13 B | +38.8% | 24.178 B | 23.47x | Product launch ramp: Blackwell Ultra (B300) & NVLink 5 Networking Racks |
-| 2027-Q1 | 2027-03-31 | $62.11 B | +17.5% | 24.056 B | 23.12x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $70.94 B | +21.3% | 23.935 B | 22.76x | Product launch ramp: Rubin Architecture GPU Silicon & Optical Interconnect |
-| 2027-Q3 | 2027-09-30 | $79.51 B | +35.9% | 23.814 B | 22.40x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $90.32 B | +36.6% | 23.694 B | 22.04x | Product launch ramp: NVIDIA Omniverse & Physical AI Robotics Stack |
-| 2028-Q1 | 2028-03-31 | $84.88 B | +36.7% | 23.575 B | 21.69x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $92.38 B | +30.2% | 23.456 B | 21.33x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $101.13 B | +27.2% | 23.338 B | 20.97x | Product launch ramp: Sovereign AI Infrastructure Deployments |
-| 2028-Q4 | 2028-12-31 | $112.71 B | +24.8% | 23.220 B | 20.61x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $106.34 B | +25.3% | 23.103 B | 20.26x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $113.95 B | +23.4% | 22.987 B | 19.90x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $122.09 B | +20.7% | 22.871 B | 19.54x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $57.93 B | +12.5% | 24.300 B | 23.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $65.28 B | +37.0% | 24.178 B | 23.59x | Product launch ramp: Blackwell Ultra (B300) & NVLink 5 Networking Racks |
+| 2027-Q1 | 2027-03-31 | $63.36 B | +19.9% | 24.056 B | 23.36x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $71.57 B | +22.3% | 23.935 B | 23.12x | Product launch ramp: Rubin Architecture GPU Silicon & Optical Interconnect |
+| 2027-Q3 | 2027-09-30 | $79.83 B | +37.8% | 23.814 B | 22.88x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $90.50 B | +38.6% | 23.694 B | 22.64x | Product launch ramp: NVIDIA Omniverse & Physical AI Robotics Stack |
+| 2028-Q1 | 2028-03-31 | $87.52 B | +38.1% | 23.575 B | 22.40x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $95.57 B | +33.5% | 23.456 B | 22.16x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $104.54 B | +31.0% | 23.338 B | 21.92x | Product launch ramp: Sovereign AI Infrastructure Deployments |
+| 2028-Q4 | 2028-12-31 | $116.70 B | +29.0% | 23.220 B | 21.69x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $113.14 B | +29.3% | 23.103 B | 21.45x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $122.07 B | +27.7% | 22.987 B | 21.21x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $131.72 B | +26.0% | 22.871 B | 20.97x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,19 +71,19 @@ NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $204.46 | $255.57 | $306.68 | 23.4x | +66.4% |
-| 52 Weeks (1Y) | $239.54 | $299.42 | $359.30 | 22.4x | +33.1% |
-| 104 Weeks (2Y) | $290.64 | $363.30 | $435.96 | 21.0x | +27.1% |
-| 156 Weeks (3Y) | $333.78 | $417.23 | $500.68 | 19.5x | +22.9% |
+| 13 Weeks | $201.83 | $252.29 | $302.75 | 23.4x | +58.0% |
+| 52 Weeks (1Y) | $215.34 | $269.17 | $323.00 | 22.9x | +19.6% |
+| 104 Weeks (2Y) | $283.99 | $354.99 | $425.99 | 21.9x | +25.6% |
+| 156 Weeks (3Y) | $354.74 | $443.43 | $532.12 | 21.0x | +25.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-11 | $225.01 | $315.00 | +44.8% | OVERWEIGHT |
-| John Vinh | KeyCorp | 2026-07-14 | $225.01 | $330.00 | +62.0% | OVERWEIGHT |
-| Itau BBA Securities Research Team | Itau BBA Securities | 2026-06-24 | $225.01 | $218.00 | +9.9% | BUY |
-| Jack Zhou | China Renaissance | 2026-06-05 | $225.01 | $319.00 | +45.9% | BUY |
-| N. Quinn | Needham & Company LLC | 2026-06-02 | $225.01 | $270.00 | +20.2% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-11 | $217.56 | $315.00 | +44.8% | OVERWEIGHT |
+| John Vinh | KeyCorp | 2026-07-14 | $203.69 | $330.00 | +62.0% | OVERWEIGHT |
+| Itau BBA Securities Research Team | Itau BBA Securities | 2026-06-24 | $198.33 | $218.00 | +9.9% | BUY |
+| Jack Zhou | China Renaissance | 2026-06-05 | $218.66 | $319.00 | +45.9% | BUY |
+| N. Quinn | Needham & Company LLC | 2026-06-02 | $224.68 | $270.00 | +20.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

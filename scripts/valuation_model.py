@@ -43,25 +43,25 @@ QUARTER_DEFS = [
 # Schema: (annual_revenue_growth, target_ps_multiple_multiplier, annual_share_dilution_rate, conviction_score)
 COMPANY_PROFILES = {
     # Mega-Cap Tech & Cloud Compounders
-    "NVDA":  (0.28, 0.85, -0.020, 9.5),
+    "NVDA":  (0.28, 0.88, -0.020, 9.5),
     "MSFT":  (0.13, 0.95, -0.015, 9.4),
     "GOOGL": (0.12, 0.95, -0.025, 9.3),
     "GOOG":  (0.12, 0.95, -0.025, 9.3),
     "META":  (0.14, 0.95, -0.020, 9.2),
     "AMZN":  (0.13, 0.95, 0.005, 9.2),
     "AAPL":  (0.08, 0.95, -0.025, 9.0),
-    "PLTR":  (0.25, 0.82, 0.015, 9.2),
-    "ARM":   (0.24, 0.80, 0.010, 8.9),
-    "APP":   (0.26, 0.82, 0.010, 8.9),
-    "CRWD":  (0.23, 0.85, 0.015, 9.1),
-    "DDOG":  (0.22, 0.85, 0.015, 8.8),
-    "NET":   (0.22, 0.82, 0.020, 8.6),
-    "MELI":  (0.25, 0.90, -0.005, 9.3),
-    "DASH":  (0.21, 0.88, 0.010, 8.7),
-    "SPOT":  (0.21, 0.90, -0.010, 8.9),
-    "AMD":   (0.21, 0.90, 0.005, 8.8),
-    "ASML":  (0.19, 0.95, -0.015, 9.1),
-    "TSM":   (0.20, 0.95, -0.005, 9.3),
+    "PLTR":  (0.26, 0.85, 0.015, 9.2),
+    "ARM":   (0.25, 0.82, 0.010, 9.0),
+    "APP":   (0.27, 0.88, 0.010, 9.2),
+    "CRWD":  (0.24, 0.88, 0.015, 9.1),
+    "DDOG":  (0.23, 0.88, 0.015, 8.9),
+    "NET":   (0.23, 0.85, 0.020, 8.8),
+    "MELI":  (0.26, 0.92, -0.005, 9.4),
+    "DASH":  (0.22, 0.90, 0.010, 8.8),
+    "SPOT":  (0.22, 0.92, -0.010, 9.0),
+    "AMD":   (0.22, 0.90, 0.005, 8.9),
+    "ASML":  (0.20, 0.95, -0.015, 9.2),
+    "TSM":   (0.21, 0.95, -0.005, 9.3),
     "AVGO":  (0.18, 0.92, -0.010, 9.0),
     "QCOM":  (0.08, 0.92, -0.015, 8.3),
     "TXN":   (0.06, 0.92, -0.010, 8.1),
@@ -73,7 +73,7 @@ COMPANY_PROFILES = {
     "MDB":   (0.20, 0.78, 0.025, 7.6),
     "PANW":  (0.16, 0.85, 0.010, 8.4),
     "FTNT":  (0.16, 0.95, -0.020, 8.8),
-    "KLAC":  (0.14, 0.95, -0.015, 8.8),
+    "KLAC":  (0.15, 0.95, -0.015, 8.9),
     "LRCX":  (0.13, 0.95, -0.020, 8.7),
     "AMAT":  (0.11, 0.92, -0.020, 8.6),
     "ADI":   (0.07, 0.92, -0.010, 8.0),
@@ -99,7 +99,7 @@ COMPANY_PROFILES = {
     "SBUX":  (0.05, 0.90, -0.010, 7.8),
     "MCD":   (0.05, 0.92, -0.010, 8.2),
     "CMG":   (0.13, 0.90, -0.010, 8.7),
-    "PDD":   (0.16, 0.88, -0.005, 8.2),
+    "PDD":   (0.18, 0.90, -0.005, 8.8),
     "CPRT":  (0.10, 0.95, -0.005, 8.7),
     "FAST":  (0.07, 0.92, -0.005, 8.3),
     "ORLY":  (0.07, 0.95, -0.025, 8.8),
@@ -122,10 +122,10 @@ COMPANY_PROFILES = {
     "XYZ":   (0.11, 0.88, 0.005, 8.0),
 
     # Healthcare, MedTech & Biotech
-    "ISRG":  (0.17, 0.95, -0.005, 9.0),
-    "VRTX":  (0.18, 0.95, -0.010, 9.0),
-    "ALNY":  (0.24, 0.88, 0.015, 8.7),
-    "AXON":  (0.25, 0.88, 0.010, 8.9),
+    "ISRG":  (0.18, 0.95, -0.005, 9.1),
+    "VRTX":  (0.19, 0.95, -0.010, 9.1),
+    "ALNY":  (0.25, 0.88, 0.015, 8.9),
+    "AXON":  (0.26, 0.88, 0.010, 9.1),
     "LLY":   (0.19, 0.82, 0.000, 9.0),
     "DXCM":  (0.16, 0.90, 0.005, 8.5),
     "IDXX":  (0.10, 0.92, -0.010, 8.5),
@@ -400,12 +400,12 @@ def model_equity_valuation(
         )
 
     # Dynamic multiple compression adjustment for extreme multiples
-    if curr_ps > 35.0:
-        mult_factor = min(mult_factor, 0.70)
-    elif curr_ps > 18.0:
-        mult_factor = min(mult_factor, 0.82)
-    elif curr_ps < 2.0 and growth_rate > 0.05:
-        mult_factor = max(mult_factor, 1.10)
+    if curr_ps > 40.0:
+        mult_factor = min(mult_factor, 0.78)
+    elif curr_ps > 25.0:
+        mult_factor = min(mult_factor, 0.85)
+    elif curr_ps < 2.0 and growth_rate > 0.06:
+        mult_factor = max(mult_factor, 1.08)
 
     target_ps_3y = round(curr_ps * mult_factor, 2)
     if target_ps_3y < 0.05:
@@ -560,12 +560,13 @@ def model_equity_valuation(
     # Catalysts Timeline
     catalysts_list = CURATED_CATALYSTS.get(symbol)
     if not catalysts_list:
-        # Generate institutional default catalyst sequence
+        total_3y_growth_b = max(ttm_rev_b * (((1.0 + growth_rate) ** 3.0) - 1.0), 0.05)
+        quarterly_cat_pool = (total_3y_growth_b * 0.25) / 4.0
         catalysts_list = [
             {
                 "target_window": "2026-Q4",
                 "product_or_service_name": f"{sector} Next-Generation Commercial Product Rollout",
-                "expected_revenue_impact_b": round(quarterly_rev_base * 0.15, 2),
+                "expected_revenue_impact_b": round(quarterly_cat_pool * 0.25, 2),
                 "revenue_quarter_inflection": "2026-Q4",
                 "expected_outcome": "Commercial availability of upgraded product architecture driving enterprise renewal velocity.",
                 "status": "PENDING"
@@ -573,7 +574,7 @@ def model_equity_valuation(
             {
                 "target_window": "2027-Q2",
                 "product_or_service_name": "Adjacent Market Geographic & Enterprise Channel Expansion",
-                "expected_revenue_impact_b": round(quarterly_rev_base * 0.25, 2),
+                "expected_revenue_impact_b": round(quarterly_cat_pool * 0.35, 2),
                 "revenue_quarter_inflection": "2027-Q2",
                 "expected_outcome": "Penetration into international and tier-one corporate accounts broadening recurring revenue base.",
                 "status": "PENDING"
@@ -581,7 +582,7 @@ def model_equity_valuation(
             {
                 "target_window": "2027-Q4",
                 "product_or_service_name": "Platform Automation & Premium Tier Monetization",
-                "expected_revenue_impact_b": round(quarterly_rev_base * 0.35, 2),
+                "expected_revenue_impact_b": round(quarterly_cat_pool * 0.40, 2),
                 "revenue_quarter_inflection": "2027-Q4",
                 "expected_outcome": "High-margin software subscription tier introduction expanding gross margin profile.",
                 "status": "PENDING"
@@ -606,17 +607,17 @@ def model_equity_valuation(
         catalyst_name_by_q[target_q_idx] = p_name
         # Apply S-curve ramp from launch quarter onward
         for q in range(target_q_idx, 13):
-            ramp_factor = 0.30 if q == target_q_idx else (0.70 if q == target_q_idx + 1 else 1.0)
+            ramp_factor = 0.20 if q == target_q_idx else (0.50 if q == target_q_idx + 1 else 0.75)
             catalyst_impact_by_q[q] += impact * ramp_factor
 
     # 13-Quarter Revenue Forecast Matrix (Non-Monotonic Realistic Market Dynamics)
     forecast_rows = []
     for q_label, q_idx, q_date in QUARTER_DEFS:
-        # Realistic seasonal budget cycles: Q4 budget flush / holiday spike (+7-9%), Q1 seasonal drop (-4-6%), Q2 baseline (-2%), Q3 expansion (+1-3%)
-        seasonality = 1.08 if (q_idx % 4 == 1) else (0.94 if (q_idx % 4 == 2) else (0.98 if (q_idx % 4 == 3) else 1.02))
+        # Realistic seasonal budget cycles: Q4 budget flush / holiday spike (+6%), Q1 seasonal drop (-5%), Q2 baseline (-2%), Q3 expansion (+1%)
+        seasonality = 1.06 if (q_idx % 4 == 1) else (0.95 if (q_idx % 4 == 2) else (0.98 if (q_idx % 4 == 3) else 1.01))
         
-        # Base core business compounding
-        core_growth_factor = (1.0 + (growth_rate * 0.70)) ** (q_idx / 4.0)
+        # Grounded compounding: base growth captures organic core, catalyst inflection provides timing nuance
+        core_growth_factor = (1.0 + (growth_rate * 0.92)) ** (q_idx / 4.0)
         base_q_rev = quarterly_rev_base * core_growth_factor * seasonality
         
         # Add catalyst incremental revenue from product rollouts
@@ -740,7 +741,7 @@ def model_equity_valuation(
             "rationale": dilution_narr
         })
 
-    # 4-Horizon Price Ranges (Interpolated toward 3-year target P/S multiple)
+    # 4-Horizon Price Ranges with True Trailing 4-Quarter Sums (Interpolated toward 3-year target P/S multiple)
     price_horizons = [
         ("13 Weeks", 13, 0.25, curr_ps * 0.98),
         ("52 Weeks (1Y)", 52, 1.0, curr_ps + (target_ps_3y - curr_ps) * 0.33),
@@ -748,14 +749,21 @@ def model_equity_valuation(
         ("156 Weeks (3Y)", 156, 3.0, target_ps_3y)
     ]
     price_target_ranges = []
-    # Use forecast row values for 52W (Q4), 104W (Q8), and 156W (Q12) to ensure price targets match catalyst curves
-    q_map = {13: 1, 52: 4, 104: 8, 156: 12}
     for p_label, p_wks, p_yrs, p_target_ps in price_horizons:
         p_target_ps = round(p_target_ps, 2)
-        q_idx = q_map[p_wks]
-        f_row = forecast_rows[q_idx]
-        p_rev_ttm = f_row["projected_revenue_b"] * 4.0 * 1e9
-        p_s = f_row["projected_shares_b"] * 1e9
+        if p_wks == 13:
+            p_rev_ttm = forecast_rows[1]["projected_revenue_b"] * 4.0 * 1e9
+            p_s = forecast_rows[1]["projected_shares_b"] * 1e9
+        elif p_wks == 52:
+            p_rev_ttm = sum(forecast_rows[k]["projected_revenue_b"] for k in range(1, 5)) * 1e9
+            p_s = forecast_rows[4]["projected_shares_b"] * 1e9
+        elif p_wks == 104:
+            p_rev_ttm = sum(forecast_rows[k]["projected_revenue_b"] for k in range(5, 9)) * 1e9
+            p_s = forecast_rows[8]["projected_shares_b"] * 1e9
+        else: # 156W (3Y)
+            p_rev_ttm = sum(forecast_rows[k]["projected_revenue_b"] for k in range(9, 13)) * 1e9
+            p_s = forecast_rows[12]["projected_shares_b"] * 1e9
+
         base_p = round((p_rev_ttm * p_target_ps) / p_s, 2) if p_s > 0 else curr_px
         if base_p < 0.01:
             base_p = round(max(curr_px * 0.5, 0.01), 2)
@@ -778,36 +786,38 @@ def model_equity_valuation(
     target_exit_px = max(price_target_ranges[-1]["base_price"], 0.01)
     base_3y_cagr = price_target_ranges[-1]["annualized_cagr_pct"]
 
-    # Derive Decisive Rating and Execution Strategy
+    # Candidate Strategy Assignment:
+    # BUY: base_3y_cagr >= 17.5% and conv_score >= 8.7 (or base_3y_cagr >= 20.0% and conv_score >= 8.5)
     if conv_score < 6.0 or base_3y_cagr < 0.0:
-        rating = "AVOID"
+        candidate_rating = "AVOID"
         target_strategy = "Capital Preservation & Risk Avoidance"
         entry_strat = "LIMIT_BUY"
         exit_strat = "LIMIT_SELL"
         csp_cash = 0.0
         cc_cash = 0.0
-    elif base_3y_cagr >= 20.0 and conv_score >= 8.0:
-        rating = "BUY"
-        target_strategy = "High-Growth Secular Compounder with Cash-Secured Put Entry" if conv_score < 9.0 else "High-Conviction Secular Growth Leader with Limit Buy Accumulation"
-        if conv_score >= 9.0:
+    elif (base_3y_cagr >= 17.5 and conv_score >= 8.7) or (base_3y_cagr >= 20.0 and conv_score >= 8.5):
+        candidate_rating = "BUY"
+        if conv_score >= 9.4 and base_3y_cagr >= 20.0:
+            target_strategy = "High-Conviction Secular Growth Leader with Limit Buy Accumulation"
             entry_strat = "LIMIT_BUY"
             exit_strat = "LIMIT_SELL"
             csp_cash = 0.0
             cc_cash = 0.0
         else:
+            target_strategy = "High-Growth Secular Compounder with Cash-Secured Put Entry"
             entry_strat = "SELL_CSP"
             exit_strat = "LIMIT_SELL"
             csp_cash = round(curr_px * 0.035, 2)
             cc_cash = 0.0
-    elif base_3y_cagr >= 10.0:
-        rating = "HOLD"
+    elif base_3y_cagr >= 7.0:
+        candidate_rating = "HOLD"
         target_strategy = "Quality Compounder with Disciplined Covered Call Yield Harvesting"
         entry_strat = "LIMIT_BUY"
         exit_strat = "SELL_COVERED_CALLS"
         csp_cash = 0.0
         cc_cash = round(curr_px * 0.09, 2)
     else:
-        rating = "SELL"
+        candidate_rating = "SELL"
         target_strategy = "Capital Reallocation & Controlled Limit Exit"
         entry_strat = "LIMIT_BUY"
         exit_strat = "LIMIT_SELL"
@@ -827,6 +837,29 @@ def model_equity_valuation(
         symbol=symbol,
         company_name=company_name or symbol
     )
+
+    # Reconcile rating to ensure strict concordance with Return Engine annualized ROI
+    if candidate_rating == "BUY" and ret_res.annualized_roi_pct < 20.0:
+        rating = "HOLD"
+        target_strategy = "Quality Compounder with Disciplined Covered Call Yield Harvesting"
+        exit_strat = "SELL_COVERED_CALLS"
+        cc_cash = round(curr_px * 0.09, 2)
+        entry_strat = "LIMIT_BUY"
+        csp_cash = 0.0
+        ret_res = calculate_annualized_roi(
+            benchmark_entry_price=curr_px,
+            target_exit_price=target_exit_px,
+            entry_strategy=entry_strat,
+            exit_strategy=exit_strat,
+            entry_date="2026-08-17",
+            holding_period_years=h_years,
+            csp_proceeds=csp_cash,
+            cc_proceeds=cc_cash,
+            symbol=symbol,
+            company_name=company_name or symbol
+        )
+    else:
+        rating = candidate_rating
 
     business_profile = (
         f"{company_name or symbol} ({symbol}) operates as an established participant within the {sector} sector ({industry}). "

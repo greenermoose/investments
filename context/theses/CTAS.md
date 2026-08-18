@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $197.82 per share
 - **Current Price:** $197.82 per share
-- **Target Exit Price:** $383.67 per share
+- **Target Exit Price:** $246.84 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.7 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723254
 
 ## Business Profile
-Cintas Corporation (CTAS) operates as an established participant within the Industrials sector (Corporate Uniforms & Facility Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CTAS trades at $197.82 against a 3-year baseline price target of $383.67, generating a modeled annualized ROI of 26.2% under our disciplined 20-year hurdle standard.
+Cintas Corporation (CTAS) operates as an established participant within the Industrials sector (Corporate Uniforms & Facility Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CTAS trades at $197.82 against a 3-year baseline price target of $246.84, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Cintas Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.4% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Cintas Corporation addresses an estimated Total Addressable Market (TAM) of $750
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Cintas Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.39B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.65B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.90B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Cintas Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.04B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.06B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.07B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$3.6B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Cintas Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +8.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CTAS currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 26.2%, fully justifying our BUY rating.
+CTAS currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.64 B | -0.1% | 0.400 B | 7.65x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.95 B | +25.9% | 0.398 B | 7.62x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.77 B | +11.2% | 0.397 B | 7.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.22 B | +22.1% | 0.395 B | 7.56x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.63 B | +37.5% | 0.394 B | 7.52x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $4.30 B | +45.7% | 0.392 B | 7.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $4.31 B | +55.5% | 0.391 B | 7.46x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $4.73 B | +46.8% | 0.389 B | 7.43x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $4.88 B | +34.4% | 0.388 B | 7.40x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $5.10 B | +18.5% | 0.387 B | 7.37x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $4.72 B | +9.6% | 0.385 B | 7.33x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $4.88 B | +3.2% | 0.384 B | 7.30x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $5.04 B | +3.4% | 0.382 B | 7.27x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.61 B | -1.1% | 0.400 B | 7.65x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.80 B | +19.5% | 0.398 B | 7.62x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.56 B | +3.0% | 0.397 B | 7.59x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.71 B | +2.8% | 0.395 B | 7.56x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.86 B | +9.7% | 0.394 B | 7.52x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.08 B | +10.1% | 0.392 B | 7.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.84 B | +11.0% | 0.391 B | 7.46x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $3.00 B | +10.6% | 0.389 B | 7.43x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.14 B | +9.7% | 0.388 B | 7.40x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $3.34 B | +8.5% | 0.387 B | 7.37x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $3.06 B | +7.8% | 0.385 B | 7.33x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $3.21 B | +6.9% | 0.384 B | 7.30x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.36 B | +7.0% | 0.382 B | 7.27x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ CTAS currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $177.89 | $222.36 | $266.83 | 7.5x | +59.6% |
-| 52 Weeks (1Y) | $221.70 | $277.13 | $332.56 | 7.5x | +40.1% |
-| 104 Weeks (2Y) | $297.83 | $372.29 | $446.75 | 7.4x | +37.2% |
-| 156 Weeks (3Y) | $306.94 | $383.67 | $460.40 | 7.3x | +24.7% |
+| 13 Weeks | $168.85 | $211.06 | $253.27 | 7.5x | +29.6% |
+| 52 Weeks (1Y) | $166.89 | $208.61 | $250.33 | 7.5x | +5.5% |
+| 104 Weeks (2Y) | $184.01 | $230.01 | $276.01 | 7.4x | +7.8% |
+| 156 Weeks (3Y) | $197.47 | $246.84 | $296.21 | 7.3x | +7.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joshua Chan | UBS Group | 2026-07-16 | $197.82 | $230.00 | +13.1% | BUY |
-| Jason Haas | Wells Fargo & Company | 2026-07-16 | $197.82 | $250.00 | +30.0% | OVERWEIGHT |
-| Ashish Sabadra | Royal Bank Of Canada | 2026-07-16 | $197.82 | $206.00 | +1.0% | BUY |
-| Andrew Wittmann | Robert W. Baird | 2026-07-16 | $197.82 | $214.00 | +11.2% | OUTPERFORM |
-| Curtis Nagle | Bank of America | 2026-07-16 | $197.82 | $230.00 | +19.6% | HOLD |
+| Joshua Chan | UBS Group | 2026-07-16 | $203.41 | $230.00 | +13.1% | BUY |
+| Jason Haas | Wells Fargo & Company | 2026-07-16 | $192.37 | $250.00 | +30.0% | OVERWEIGHT |
+| Ashish Sabadra | Royal Bank Of Canada | 2026-07-16 | $204.00 | $206.00 | +1.0% | BUY |
+| Andrew Wittmann | Robert W. Baird | 2026-07-16 | $192.38 | $214.00 | +11.2% | OUTPERFORM |
+| Curtis Nagle | Bank of America | 2026-07-16 | $192.37 | $230.00 | +19.6% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.39 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.65 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.90 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.04 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.06 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.07 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

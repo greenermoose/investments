@@ -44,19 +44,19 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -46.0% | 0.225 B | 24.95x | Current operational baseline and contract fulfillment |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -46.5% | 0.225 B | 24.95x | Current operational baseline and contract fulfillment |
 | 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.227 B | 24.22x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -47.7% | 0.229 B | 23.50x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -44.1% | 0.231 B | 22.77x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -40.3% | 0.233 B | 22.04x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -35.2% | 0.235 B | 21.31x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -42.2% | 0.237 B | 20.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | -38.2% | 0.239 B | 19.86x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -34.0% | 0.241 B | 19.13x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -28.4% | 0.243 B | 18.40x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -36.1% | 0.245 B | 17.68x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -31.7% | 0.247 B | 16.95x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -27.1% | 0.249 B | 16.22x | Energy core demand expansion and operational execution |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -46.3% | 0.229 B | 23.50x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -42.8% | 0.231 B | 22.77x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -39.1% | 0.233 B | 22.04x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -34.0% | 0.235 B | 21.31x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -38.9% | 0.237 B | 20.59x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | -34.9% | 0.239 B | 19.86x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -30.7% | 0.241 B | 19.13x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -24.9% | 0.243 B | 18.40x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -30.5% | 0.245 B | 17.68x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -25.9% | 0.247 B | 16.95x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -21.2% | 0.249 B | 16.22x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -79,10 +79,10 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.35 | $6.75 | +141.1% | BUY |
-| Chris Pierce | Needham & Company LLC | 2026-05-06 | $2.35 | $7.00 | +99.4% | BUY |
-| Amit Dayal | HC Wainwright | 2026-03-16 | $2.35 | $7.00 | +122.2% | BUY |
-| Wolfe Research Research Team | Wolfe Research | 2024-09-05 | $2.35 | $1.00 | -24.2% | UNDERPERFORM |
+| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.80 | $6.75 | +141.1% | BUY |
+| Chris Pierce | Needham & Company LLC | 2026-05-06 | $3.51 | $7.00 | +99.4% | BUY |
+| Amit Dayal | HC Wainwright | 2026-03-16 | $3.15 | $7.00 | +122.2% | BUY |
+| Wolfe Research Research Team | Wolfe Research | 2024-09-05 | $1.32 | $1.00 | -24.2% | UNDERPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

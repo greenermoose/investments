@@ -18,6 +18,7 @@ if scripts_dir not in sys.path:
 
 from return_engine import calculate_annualized_roi
 from valuation_model import model_equity_valuation
+from compare_roi_distribution import run_comparison, print_comparison_report
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -368,3 +369,14 @@ print(f"  QQQ: {len([u for u in universe if 'QQQ' in u['indices']])}")
 print(f"  DJIA: {len([u for u in universe if 'DJIA' in u['indices']])}")
 print(f"  SP500: {len([u for u in universe if 'SP500' in u['indices']])}")
 print(f"  Total in at least one index: {len([u for u in universe if u['is_index_member']])}")
+
+# Run Deterministic Empirical Quality Control Gate
+print("\nRunning Empirical Return Distribution Quality Control Gate...")
+qc_res = run_comparison(root_dir)
+print_comparison_report(qc_res)
+
+if not qc_res["all_passed"]:
+    print("CRITICAL ERROR: Generated universe failed empirical distribution quality control bounds.")
+    sys.exit(1)
+else:
+    print("SUCCESS: Master universe confirmed in full alignment with empirical distribution benchmarks.")

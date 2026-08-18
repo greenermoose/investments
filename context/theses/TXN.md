@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $282.91 per share
 - **Current Price:** $282.91 per share
-- **Target Exit Price:** $510.94 per share
+- **Target Exit Price:** $318.67 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.1 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=97476
 
 ## Business Profile
-Texas Instruments Incorporated (TXN) operates as an established participant within the Information Technology sector (Analog & Embedded Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TXN trades at $282.91 against a 3-year baseline price target of $510.94, generating a modeled annualized ROI of 23.2% under our disciplined 20-year hurdle standard.
+Texas Instruments Incorporated (TXN) operates as an established participant within the Information Technology sector (Analog & Embedded Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TXN trades at $282.91 against a 3-year baseline price target of $318.67, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Texas Instruments Incorporated addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.5% market share. Over our 3-year investment horizon, we model market share evolving to 1.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Texas Instruments Incorporated addresses an estimated Total Addressable Market (
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Texas Instruments Incorporated's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.68B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.13B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.58B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Texas Instruments Incorporated's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.08B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.09B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management utilizes moderate share buybacks (~$2.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Texas Instruments Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 23.2%, fully justifying our BUY rating.
+TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $4.61 B | -1.3% | 0.910 B | 14.24x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $5.14 B | +24.4% | 0.908 B | 14.14x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $4.81 B | +10.2% | 0.906 B | 14.05x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $5.59 B | +21.2% | 0.903 B | 13.95x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $6.28 B | +36.1% | 0.901 B | 13.86x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $7.42 B | +44.4% | 0.899 B | 13.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $7.44 B | +54.6% | 0.896 B | 13.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $8.15 B | +45.8% | 0.894 B | 13.57x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $8.40 B | +33.7% | 0.892 B | 13.48x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $8.75 B | +17.9% | 0.890 B | 13.38x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $8.10 B | +8.9% | 0.888 B | 13.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $8.35 B | +2.5% | 0.885 B | 13.19x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $8.61 B | +2.5% | 0.883 B | 13.10x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $4.57 B | -2.2% | 0.910 B | 14.24x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $4.87 B | +17.8% | 0.908 B | 14.14x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $4.44 B | +1.5% | 0.906 B | 14.05x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $4.67 B | +1.2% | 0.903 B | 13.95x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $4.90 B | +7.1% | 0.901 B | 13.86x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $5.24 B | +7.6% | 0.899 B | 13.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $4.80 B | +8.1% | 0.896 B | 13.67x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $5.03 B | +7.8% | 0.894 B | 13.57x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $5.25 B | +7.1% | 0.892 B | 13.48x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $5.57 B | +6.4% | 0.890 B | 13.38x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $5.08 B | +5.8% | 0.888 B | 13.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $5.30 B | +5.4% | 0.885 B | 13.19x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $5.53 B | +5.3% | 0.883 B | 13.10x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $252.70 | $315.87 | $379.04 | 13.9x | +55.4% |
-| 52 Weeks (1Y) | $309.14 | $386.42 | $463.70 | 13.9x | +36.6% |
-| 104 Weeks (2Y) | $406.22 | $507.77 | $609.32 | 13.5x | +34.0% |
-| 156 Weeks (3Y) | $408.75 | $510.94 | $613.13 | 13.1x | +21.8% |
+| 13 Weeks | $239.42 | $299.28 | $359.14 | 13.9x | +25.2% |
+| 52 Weeks (1Y) | $232.34 | $290.43 | $348.52 | 13.9x | +2.7% |
+| 104 Weeks (2Y) | $245.66 | $307.08 | $368.50 | 13.5x | +4.2% |
+| 156 Weeks (3Y) | $254.94 | $318.67 | $382.40 | 13.1x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $282.91 | $340.00 | +21.6% | HOLD |
-| Alexi de Unger | Arete Research | 2026-07-29 | $282.91 | $405.00 | +46.2% | HOLD |
-| Kevin Cassidy | Rosenblatt Securities | 2026-07-24 | $282.91 | $350.00 | +22.8% | BUY |
-| Timothy Arcuri | UBS Group | 2026-07-23 | $282.91 | $380.00 | +33.7% | BUY |
-| Vijay Rakesh | Mizuho | 2026-07-23 | $282.91 | $305.00 | +7.3% | HOLD |
+| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $279.58 | $340.00 | +21.6% | HOLD |
+| Alexi de Unger | Arete Research | 2026-07-29 | $277.07 | $405.00 | +46.2% | HOLD |
+| Kevin Cassidy | Rosenblatt Securities | 2026-07-24 | $284.99 | $350.00 | +22.8% | BUY |
+| Timothy Arcuri | UBS Group | 2026-07-23 | $284.22 | $380.00 | +33.7% | BUY |
+| Vijay Rakesh | Mizuho | 2026-07-23 | $284.22 | $305.00 | +7.3% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.68 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.13 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $1.58 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.05 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.08 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.09 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

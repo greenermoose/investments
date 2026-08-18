@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1415.99 per share
 - **Current Price:** $1415.99 per share
-- **Target Exit Price:** $2343.01 per share
+- **Target Exit Price:** $1752.79 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1280452
 
 ## Business Profile
-Monolithic Power Systems, Inc. (MPWR) operates as an established participant within the Information Technology sector (Power Management Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MPWR trades at $1415.99 against a 3-year baseline price target of $2343.01, generating a modeled annualized ROI of 20.4% under our disciplined 20-year hurdle standard.
+Monolithic Power Systems, Inc. (MPWR) operates as an established participant within the Information Technology sector (Power Management Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MPWR trades at $1415.99 against a 3-year baseline price target of $1752.79, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Monolithic Power Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 5.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Monolithic Power Systems, Inc. addresses an estimated Total Addressable Market (
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Monolithic Power Systems, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.11B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.18B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.25B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Monolithic Power Systems, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.02B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.03B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.03B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Monolithic Power Systems, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MPWR currently trades at a Price-to-Sales (P/S) multiple of ~24.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~20.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 20.4%, fully justifying our HOLD rating.
+MPWR currently trades at a Price-to-Sales (P/S) multiple of ~24.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~22.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.73 B | +2.1% | 0.049 B | 24.47x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.82 B | +29.6% | 0.049 B | 24.10x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.77 B | +13.6% | 0.049 B | 23.73x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.90 B | +23.8% | 0.049 B | 23.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.02 B | +40.0% | 0.049 B | 23.00x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.21 B | +48.1% | 0.049 B | 22.63x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.22 B | +58.3% | 0.049 B | 22.26x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.34 B | +49.1% | 0.050 B | 21.90x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.39 B | +36.5% | 0.050 B | 21.53x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.46 B | +20.7% | 0.050 B | 21.16x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.36 B | +11.3% | 0.050 B | 20.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.41 B | +5.2% | 0.050 B | 20.43x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.46 B | +5.3% | 0.050 B | 20.06x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.72 B | +1.1% | 0.049 B | 24.47x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.78 B | +23.4% | 0.049 B | 24.26x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.72 B | +6.1% | 0.049 B | 24.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.77 B | +6.1% | 0.049 B | 23.85x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.83 B | +14.9% | 0.049 B | 23.65x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.90 B | +15.7% | 0.049 B | 23.45x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.84 B | +17.0% | 0.049 B | 23.24x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.90 B | +16.5% | 0.050 B | 23.04x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.95 B | +13.9% | 0.050 B | 22.84x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.01 B | +12.6% | 0.050 B | 22.63x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.94 B | +11.6% | 0.050 B | 22.43x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.99 B | +9.9% | 0.050 B | 22.22x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.04 B | +9.8% | 0.050 B | 22.02x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ MPWR currently trades at a Price-to-Sales (P/S) multiple of ~24.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1284.15 | $1605.19 | $1926.23 | 24.0x | +65.1% |
-| 52 Weeks (1Y) | $1532.74 | $1915.93 | $2299.12 | 23.0x | +35.3% |
-| 104 Weeks (2Y) | $1913.53 | $2391.91 | $2870.29 | 21.5x | +30.0% |
-| 156 Weeks (3Y) | $1874.41 | $2343.01 | $2811.61 | 20.1x | +18.3% |
+| 13 Weeks | $1221.51 | $1526.89 | $1832.27 | 24.0x | +35.2% |
+| 52 Weeks (1Y) | $1197.49 | $1496.86 | $1796.23 | 23.7x | +5.7% |
+| 104 Weeks (2Y) | $1311.35 | $1639.19 | $1967.03 | 22.8x | +7.6% |
+| 156 Weeks (3Y) | $1402.23 | $1752.79 | $2103.35 | 22.0x | +7.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| N. Quinn | Needham & Company LLC | 2026-07-31 | $1415.99 | $2000.00 | +51.8% | BUY |
-| Joe Quatrochi | Wells Fargo & Company | 2026-07-31 | $1415.99 | $1800.00 | +24.1% | OVERWEIGHT |
-| William Stein | Truist Financial | 2026-07-31 | $1415.99 | $1889.00 | +24.9% | BUY |
-| Kevin Cassidy | Rosenblatt Securities | 2026-07-31 | $1415.99 | $1575.00 | +19.5% | HOLD |
-| John Vinh | KeyCorp | 2026-07-31 | $1415.99 | $2100.00 | +59.4% | OVERWEIGHT |
+| N. Quinn | Needham & Company LLC | 2026-07-31 | $1317.52 | $2000.00 | +51.8% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-07-31 | $1450.09 | $1800.00 | +24.1% | OVERWEIGHT |
+| William Stein | Truist Financial | 2026-07-31 | $1513.02 | $1889.00 | +24.9% | BUY |
+| Kevin Cassidy | Rosenblatt Securities | 2026-07-31 | $1317.55 | $1575.00 | +19.5% | HOLD |
+| John Vinh | KeyCorp | 2026-07-31 | $1317.52 | $2100.00 | +59.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.11 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.18 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.25 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.02 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.03 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.03 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $143.12 per share
 - **Current Price:** $143.12 per share
-- **Target Exit Price:** $264.57 per share
+- **Target Exit Price:** $159.87 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.4 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=80424
 
 ## Business Profile
-The Procter & Gamble Company (PG) operates as an established participant within the Consumer Staples sector (Household & Personal Care Products). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PG trades at $143.12 against a 3-year baseline price target of $264.57, generating a modeled annualized ROI of 24.2% under our disciplined 20-year hurdle standard.
+The Procter & Gamble Company (PG) operates as an established participant within the Consumer Staples sector (Household & Personal Care Products). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PG trades at $143.12 against a 3-year baseline price target of $159.87, generating a modeled annualized ROI of 3.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Procter & Gamble Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.8% market share. Over our 3-year investment horizon, we model market share evolving to 15.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ The Procter & Gamble Company addresses an estimated Total Addressable Market (TA
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-The Procter & Gamble Company's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$3.26B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$5.44B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$7.62B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+The Procter & Gamble Company's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.17B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.24B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.27B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$30.5B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Procter & Gamble Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.2%, fully justifying our BUY rating.
+PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $22.19 B | -2.7% | 2.329 B | 3.83x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $24.64 B | +22.8% | 2.320 B | 3.81x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $23.02 B | +9.0% | 2.311 B | 3.80x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $26.66 B | +20.1% | 2.302 B | 3.78x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $29.88 B | +34.7% | 2.294 B | 3.77x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $35.31 B | +43.3% | 2.285 B | 3.75x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $35.35 B | +53.6% | 2.276 B | 3.73x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $38.70 B | +45.2% | 2.268 B | 3.72x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $39.77 B | +33.1% | 2.259 B | 3.70x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $41.33 B | +17.0% | 2.251 B | 3.69x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $38.23 B | +8.2% | 2.242 B | 3.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $39.33 B | +1.6% | 2.234 B | 3.66x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $40.43 B | +1.7% | 2.225 B | 3.64x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $21.98 B | -3.7% | 2.329 B | 3.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $23.31 B | +16.2% | 2.320 B | 3.81x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $21.13 B | +0.1% | 2.311 B | 3.80x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $22.08 B | -0.5% | 2.302 B | 3.78x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $23.03 B | +4.8% | 2.294 B | 3.77x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $24.49 B | +5.1% | 2.285 B | 3.75x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $22.26 B | +5.4% | 2.276 B | 3.73x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $23.22 B | +5.2% | 2.268 B | 3.72x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.13 B | +4.8% | 2.259 B | 3.70x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $25.53 B | +4.2% | 2.251 B | 3.69x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $23.13 B | +3.9% | 2.242 B | 3.67x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $24.06 B | +3.6% | 2.234 B | 3.66x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $25.00 B | +3.6% | 2.225 B | 3.64x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $127.45 | $159.31 | $191.17 | 3.8x | +53.5% |
-| 52 Weeks (1Y) | $157.14 | $196.42 | $235.70 | 3.8x | +37.2% |
-| 104 Weeks (2Y) | $208.45 | $260.56 | $312.67 | 3.7x | +34.9% |
-| 156 Weeks (3Y) | $211.66 | $264.57 | $317.48 | 3.6x | +22.7% |
+| 13 Weeks | $120.57 | $150.71 | $180.85 | 3.8x | +23.0% |
+| 52 Weeks (1Y) | $117.74 | $147.17 | $176.60 | 3.8x | +2.8% |
+| 104 Weeks (2Y) | $123.30 | $154.13 | $184.96 | 3.7x | +3.8% |
+| 156 Weeks (3Y) | $127.90 | $159.87 | $191.84 | 3.6x | +3.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Diego Serrano | HSBC | 2026-07-30 | $143.12 | $149.00 | +1.9% | HOLD |
-| Filippo Falorni | Citigroup | 2026-07-30 | $143.12 | $170.00 | +18.8% | BUY |
-| Lauren Lieberman | Barclays | 2026-07-21 | $143.12 | $152.00 | +1.9% | BUY |
-| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-16 | $143.12 | $162.00 | +7.5% | OVERWEIGHT |
-| Peter Galbo | Bank of America | 2026-07-10 | $143.12 | $166.00 | +13.1% | BUY |
+| Diego Serrano | HSBC | 2026-07-30 | $146.26 | $149.00 | +1.9% | HOLD |
+| Filippo Falorni | Citigroup | 2026-07-30 | $143.07 | $170.00 | +18.8% | BUY |
+| Lauren Lieberman | Barclays | 2026-07-21 | $149.11 | $152.00 | +1.9% | BUY |
+| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-16 | $150.71 | $162.00 | +7.5% | OVERWEIGHT |
+| Peter Galbo | Bank of America | 2026-07-10 | $146.73 | $166.00 | +13.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $3.26 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $5.44 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $7.62 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.17 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.24 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.27 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

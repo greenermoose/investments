@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1883.12 per share
 - **Current Price:** $1883.12 per share
-- **Target Exit Price:** $3614.29 per share
+- **Target Exit Price:** $3175.10 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.1 / 10.0
+- **Conviction Score:** 9.2 / 10.0
 - **Rating:** BUY
-- **Target Strategy:** High-Conviction Secular Growth Leader with Limit Buy Accumulation
+- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=937966
 
 ## Business Profile
-ASML Holding N.V. (ASML) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ASML trades at $1883.12 against a 3-year baseline price target of $3614.29, generating a modeled annualized ROI of 24.3% under our disciplined 20-year hurdle standard.
+ASML Holding N.V. (ASML) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ASML trades at $1883.12 against a 3-year baseline price target of $3175.10, generating a modeled annualized ROI of 20.4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 ASML Holding N.V. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.7% market share. Over our 3-year investment horizon, we model market share evolving to 3.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ ASML Holding N.V. addresses an estimated Total Addressable Market (TAM) of $1200
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-ASML Holding N.V.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$1.23B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$2.04B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.86B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+ASML Holding N.V.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.37B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.52B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.59B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$11.4B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -36,27 +36,27 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-ASML Holding N.V.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +19.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+ASML Holding N.V.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +20.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~18.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.3%, fully justifying our BUY rating.
+ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~21.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 20.4%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.33 B | +7.6% | 0.385 B | 22.22x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.47 B | +34.5% | 0.384 B | 21.88x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.03 B | +17.9% | 0.383 B | 21.55x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $10.63 B | +27.6% | 0.381 B | 21.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $12.10 B | +45.2% | 0.380 B | 20.89x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $14.44 B | +52.5% | 0.378 B | 20.55x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $14.53 B | +60.9% | 0.377 B | 20.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $16.09 B | +51.3% | 0.375 B | 19.89x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $16.82 B | +39.0% | 0.374 B | 19.55x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $17.81 B | +23.3% | 0.373 B | 19.22x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $16.62 B | +14.4% | 0.371 B | 18.89x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $17.41 B | +8.2% | 0.370 B | 18.55x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $18.25 B | +8.5% | 0.368 B | 18.22x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $8.25 B | +7.3% | 0.385 B | 22.22x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.10 B | +29.9% | 0.384 B | 22.13x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.63 B | +12.8% | 0.383 B | 22.03x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $9.47 B | +13.6% | 0.381 B | 21.94x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $10.30 B | +24.9% | 0.380 B | 21.85x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $11.48 B | +26.1% | 0.378 B | 21.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.96 B | +27.0% | 0.377 B | 21.66x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $11.87 B | +25.3% | 0.375 B | 21.57x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.67 B | +23.0% | 0.374 B | 21.48x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.77 B | +19.9% | 0.373 B | 21.39x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $12.94 B | +18.1% | 0.371 B | 21.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.84 B | +16.6% | 0.370 B | 21.20x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.80 B | +16.8% | 0.368 B | 21.11x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1718.02 | $2147.52 | $2577.02 | 21.8x | +69.1% |
-| 52 Weeks (1Y) | $2129.60 | $2662.00 | $3194.40 | 20.9x | +41.4% |
-| 104 Weeks (2Y) | $2812.09 | $3515.11 | $4218.13 | 19.5x | +36.6% |
-| 156 Weeks (3Y) | $2891.43 | $3614.29 | $4337.15 | 18.2x | +24.3% |
+| 13 Weeks | $1650.89 | $2063.61 | $2476.33 | 21.8x | +44.2% |
+| 52 Weeks (1Y) | $1725.00 | $2156.25 | $2587.50 | 21.9x | +14.5% |
+| 104 Weeks (2Y) | $2158.57 | $2698.21 | $3237.85 | 21.5x | +19.7% |
+| 156 Weeks (3Y) | $2540.08 | $3175.10 | $3810.12 | 21.1x | +19.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Argus Research Team | Argus | 2026-07-16 | $1883.12 | $2100.00 | +14.8% | BUY |
-| Joseph Quatrochi | Wells Fargo & Company | 2026-07-16 | $1883.12 | $2500.00 | +37.6% | OVERWEIGHT |
-| Sandeep Deshpande | JPMorgan Chase & Co. | 2026-07-16 | $1883.12 | $2400.00 | +33.6% | OVERWEIGHT |
-| Srini Pajjuri | Royal Bank Of Canada | 2026-07-14 | $1883.12 | $2000.00 | +12.5% | OUTPERFORM |
-| David Dai | Sanford C. Bernstein | 2026-07-06 | $1883.12 | $2623.00 | +48.2% | OUTPERFORM |
+| Argus Research Team | Argus | 2026-07-16 | $1828.79 | $2100.00 | +14.8% | BUY |
+| Joseph Quatrochi | Wells Fargo & Company | 2026-07-16 | $1816.60 | $2500.00 | +37.6% | OVERWEIGHT |
+| Sandeep Deshpande | JPMorgan Chase & Co. | 2026-07-16 | $1796.68 | $2400.00 | +33.6% | OVERWEIGHT |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-07-14 | $1777.15 | $2000.00 | +12.5% | OUTPERFORM |
+| David Dai | Sanford C. Bernstein | 2026-07-06 | $1769.31 | $2623.00 | +48.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $1.23 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $2.04 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $2.86 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.37 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.52 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.59 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $229.45 per share
 - **Current Price:** $229.45 per share
-- **Target Exit Price:** $429.09 per share
+- **Target Exit Price:** $263.58 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.3 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=773840
 
 ## Business Profile
-Honeywell International Inc. (HON) operates as an established participant within the Industrials sector (Industrial Conglomerate & Aerospace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HON trades at $229.45 against a 3-year baseline price target of $429.09, generating a modeled annualized ROI of 24.7% under our disciplined 20-year hurdle standard.
+Honeywell International Inc. (HON) operates as an established participant within the Industrials sector (Industrial Conglomerate & Aerospace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HON trades at $229.45 against a 3-year baseline price target of $263.58, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Honeywell International Inc. addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 5.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Honeywell International Inc. addresses an estimated Total Addressable Market (TA
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Honeywell International Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$1.49B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$2.48B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$3.48B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Honeywell International Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.10B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.14B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.16B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$13.9B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Honeywell International Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.7%, fully justifying our BUY rating.
+HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $10.13 B | -2.0% | 0.317 B | 1.83x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $11.27 B | +23.7% | 0.316 B | 1.82x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $10.54 B | +9.7% | 0.315 B | 1.82x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $12.22 B | +20.6% | 0.313 B | 1.81x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $13.71 B | +35.3% | 0.312 B | 1.80x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $16.21 B | +43.8% | 0.311 B | 1.79x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $16.24 B | +54.0% | 0.310 B | 1.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $17.79 B | +45.6% | 0.309 B | 1.78x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $18.30 B | +33.5% | 0.308 B | 1.77x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $19.04 B | +17.5% | 0.306 B | 1.76x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $17.62 B | +8.5% | 0.305 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $18.15 B | +2.0% | 0.304 B | 1.75x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $18.68 B | +2.1% | 0.303 B | 1.74x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $10.03 B | -3.0% | 0.317 B | 1.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.67 B | +17.1% | 0.316 B | 1.82x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.70 B | +0.9% | 0.315 B | 1.82x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $10.17 B | +0.4% | 0.313 B | 1.81x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $10.64 B | +6.1% | 0.312 B | 1.80x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $11.35 B | +6.4% | 0.311 B | 1.79x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.35 B | +6.7% | 0.310 B | 1.79x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $10.83 B | +6.5% | 0.309 B | 1.78x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $11.27 B | +6.0% | 0.308 B | 1.77x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $11.95 B | +5.3% | 0.306 B | 1.76x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $10.86 B | +4.9% | 0.305 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $11.31 B | +4.5% | 0.304 B | 1.75x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $11.78 B | +4.5% | 0.303 B | 1.74x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $204.29 | $255.36 | $306.43 | 1.8x | +53.4% |
-| 52 Weeks (1Y) | $253.10 | $316.38 | $379.66 | 1.8x | +37.9% |
-| 104 Weeks (2Y) | $336.53 | $420.66 | $504.79 | 1.8x | +35.4% |
-| 156 Weeks (3Y) | $343.27 | $429.09 | $514.91 | 1.7x | +23.2% |
+| 13 Weeks | $193.41 | $241.76 | $290.11 | 1.8x | +23.2% |
+| 52 Weeks (1Y) | $190.06 | $237.58 | $285.10 | 1.8x | +3.5% |
+| 104 Weeks (2Y) | $201.37 | $251.71 | $302.05 | 1.8x | +4.7% |
+| 156 Weeks (3Y) | $210.86 | $263.58 | $316.30 | 1.7x | +4.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Deane Dray | Royal Bank Of Canada | 2026-08-18 | $229.45 | $293.00 | +27.7% | OUTPERFORM |
-| Stephen Volkmann | Jefferies Financial Group | 2026-08-17 | $229.45 | $255.00 | +9.7% | HOLD |
-| Chigusa Katoku | JPMorgan Chase & Co. | 2026-08-14 | $229.45 | $255.00 | +8.9% | OVERWEIGHT |
-| Andrew Obin | Bank of America | 2026-07-28 | $229.45 | $265.00 | +7.8% | HOLD |
-| Brett Linzey | Mizuho | 2026-07-27 | $229.45 | $265.00 | +8.7% | OUTPERFORM |
+| Deane Dray | Royal Bank Of Canada | 2026-08-18 | $229.44 | $293.00 | +27.7% | OUTPERFORM |
+| Stephen Volkmann | Jefferies Financial Group | 2026-08-17 | $232.37 | $255.00 | +9.7% | HOLD |
+| Chigusa Katoku | JPMorgan Chase & Co. | 2026-08-14 | $234.07 | $255.00 | +8.9% | OVERWEIGHT |
+| Andrew Obin | Bank of America | 2026-07-28 | $245.76 | $265.00 | +7.8% | HOLD |
+| Brett Linzey | Mizuho | 2026-07-27 | $243.75 | $265.00 | +8.7% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $1.49 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $2.48 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $3.48 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.10 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.14 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.16 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1787.57 per share
 - **Current Price:** $1787.57 per share
-- **Target Exit Price:** $3918.26 per share
+- **Target Exit Price:** $3245.18 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 9.3 / 10.0
+- **Conviction Score:** 9.4 / 10.0
 - **Rating:** BUY
 - **Target Strategy:** High-Conviction Secular Growth Leader with Limit Buy Accumulation
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1099590
 
 ## Business Profile
-MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MELI trades at $1787.57 against a 3-year baseline price target of $3918.26, generating a modeled annualized ROI of 29.9% under our disciplined 20-year hurdle standard.
+MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MELI trades at $1787.57 against a 3-year baseline price target of $3245.18, generating a modeled annualized ROI of 22.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 MercadoLibre, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 3.2% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ MercadoLibre, Inc. addresses an estimated Total Addressable Market (TAM) of $900
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-MercadoLibre, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$1.09B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.81B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.54B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+MercadoLibre, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.45B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.63B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.72B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management utilizes moderate share buybacks (~$4.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~0.5% per year while maintaining balance sheet flexibility.
@@ -36,27 +36,27 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +25.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +26.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 29.9%, fully justifying our BUY rating.
+MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.0%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.39 B | +11.6% | 0.051 B | 3.13x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $8.47 B | +39.1% | 0.051 B | 3.10x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.14 B | +21.4% | 0.051 B | 3.07x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $9.65 B | +30.5% | 0.051 B | 3.05x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $11.04 B | +49.4% | 0.050 B | 3.02x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.23 B | +56.2% | 0.050 B | 3.00x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $13.35 B | +64.0% | 0.050 B | 2.97x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $14.85 B | +53.9% | 0.050 B | 2.94x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $15.64 B | +41.7% | 0.050 B | 2.92x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $16.69 B | +26.1% | 0.050 B | 2.89x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $15.63 B | +17.1% | 0.050 B | 2.86x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $16.50 B | +11.1% | 0.050 B | 2.84x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $17.43 B | +11.4% | 0.050 B | 2.81x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.32 B | +11.2% | 0.051 B | 3.13x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.19 B | +35.0% | 0.051 B | 3.11x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $7.89 B | +17.7% | 0.051 B | 3.09x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.80 B | +19.1% | 0.051 B | 3.07x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.72 B | +32.8% | 0.050 B | 3.04x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.99 B | +34.2% | 0.050 B | 3.02x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.66 B | +35.2% | 0.050 B | 3.00x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $11.68 B | +32.8% | 0.050 B | 2.98x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.59 B | +29.5% | 0.050 B | 2.96x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.79 B | +25.5% | 0.050 B | 2.94x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.12 B | +23.0% | 0.050 B | 2.92x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $14.16 B | +21.2% | 0.050 B | 2.90x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $15.27 B | +21.3% | 0.050 B | 2.88x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1626.24 | $2032.80 | $2439.36 | 3.1x | +67.2% |
-| 52 Weeks (1Y) | $2133.81 | $2667.26 | $3200.71 | 3.0x | +49.2% |
-| 104 Weeks (2Y) | $2912.79 | $3640.99 | $4369.19 | 2.9x | +42.7% |
-| 156 Weeks (3Y) | $3134.61 | $3918.26 | $4701.91 | 2.8x | +29.9% |
+| 13 Weeks | $1572.48 | $1965.60 | $2358.72 | 3.1x | +46.2% |
+| 52 Weeks (1Y) | $1688.48 | $2110.60 | $2532.72 | 3.0x | +18.1% |
+| 104 Weeks (2Y) | $2174.77 | $2718.46 | $3262.15 | 3.0x | +23.3% |
+| 156 Weeks (3Y) | $2596.14 | $3245.18 | $3894.22 | 2.9x | +22.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Marcelo Santos | JPMorgan Chase & Co. | 2026-08-11 | $1787.57 | $2150.00 | +13.4% | HOLD |
-| Deepak Mathivanan | Cantor Fitzgerald | 2026-08-06 | $1787.57 | $2300.00 | +19.6% | OVERWEIGHT |
-| Marvin Fong | BTIG Research | 2026-08-06 | $1787.57 | $2150.00 | +11.8% | BUY |
-| Joao Pedro Soares | Citigroup | 2026-07-15 | $1787.57 | $2000.00 | +6.7% | HOLD |
-| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-05-13 | $1787.57 | $2100.00 | +38.8% | BUY |
+| Marcelo Santos | JPMorgan Chase & Co. | 2026-08-11 | $1896.28 | $2150.00 | +13.4% | HOLD |
+| Deepak Mathivanan | Cantor Fitzgerald | 2026-08-06 | $1922.59 | $2300.00 | +19.6% | OVERWEIGHT |
+| Marvin Fong | BTIG Research | 2026-08-06 | $1922.56 | $2150.00 | +11.8% | BUY |
+| Joao Pedro Soares | Citigroup | 2026-07-15 | $1873.89 | $2000.00 | +6.7% | HOLD |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-05-13 | $1512.75 | $2100.00 | +38.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $1.09 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.81 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $2.54 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $0.45 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.63 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.72 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

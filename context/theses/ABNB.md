@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $179.29 per share
 - **Current Price:** $179.29 per share
-- **Target Exit Price:** $366.94 per share
+- **Target Exit Price:** $259.01 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.9 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1559720
 
 ## Business Profile
-Airbnb, Inc. (ABNB) operates as an established participant within the Consumer Discretionary sector (Travel & Lodging Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ABNB trades at $179.29 against a 3-year baseline price target of $366.94, generating a modeled annualized ROI of 28.5% under our disciplined 20-year hurdle standard.
+Airbnb, Inc. (ABNB) operates as an established participant within the Consumer Discretionary sector (Travel & Lodging Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ABNB trades at $179.29 against a 3-year baseline price target of $259.01, generating a modeled annualized ROI of 15.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Airbnb, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Airbnb, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B ac
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Airbnb, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.46B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.76B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.06B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Airbnb, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.10B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.14B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.16B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$4.2B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Airbnb, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 28.5%, fully justifying our BUY rating.
+ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.3%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.10 B | +4.9% | 0.595 B | 8.79x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.50 B | +31.5% | 0.593 B | 8.73x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.32 B | +15.7% | 0.591 B | 8.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.89 B | +25.6% | 0.588 B | 8.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $4.41 B | +42.4% | 0.586 B | 8.55x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $5.25 B | +50.1% | 0.584 B | 8.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $5.28 B | +58.9% | 0.582 B | 8.43x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $5.82 B | +49.7% | 0.579 B | 8.37x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.06 B | +37.4% | 0.577 B | 8.32x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.38 B | +21.6% | 0.575 B | 8.26x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $5.94 B | +12.5% | 0.573 B | 8.20x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.19 B | +6.4% | 0.571 B | 8.14x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.46 B | +6.6% | 0.569 B | 8.08x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.07 B | +3.9% | 0.595 B | 8.79x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.34 B | +25.7% | 0.593 B | 8.73x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.13 B | +8.9% | 0.591 B | 8.67x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.38 B | +9.0% | 0.588 B | 8.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.63 B | +18.4% | 0.586 B | 8.55x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.99 B | +19.6% | 0.584 B | 8.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.76 B | +20.1% | 0.582 B | 8.43x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $4.03 B | +19.2% | 0.579 B | 8.37x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.27 B | +17.6% | 0.577 B | 8.32x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.60 B | +15.4% | 0.575 B | 8.26x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.28 B | +13.9% | 0.573 B | 8.20x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.54 B | +12.8% | 0.571 B | 8.14x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.82 B | +12.8% | 0.569 B | 8.08x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $162.62 | $203.27 | $243.92 | 8.6x | +65.2% |
-| 52 Weeks (1Y) | $205.90 | $257.38 | $308.86 | 8.6x | +43.6% |
-| 104 Weeks (2Y) | $279.29 | $349.11 | $418.93 | 8.3x | +39.5% |
-| 156 Weeks (3Y) | $293.55 | $366.94 | $440.33 | 8.1x | +27.0% |
+| 13 Weeks | $155.18 | $193.98 | $232.78 | 8.6x | +37.0% |
+| 52 Weeks (1Y) | $157.34 | $196.68 | $236.02 | 8.6x | +9.7% |
+| 104 Weeks (2Y) | $184.92 | $231.15 | $277.38 | 8.3x | +13.5% |
+| 156 Weeks (3Y) | $207.21 | $259.01 | $310.81 | 8.1x | +13.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-10 | $179.29 | $168.00 | -7.5% | OUTPERFORM |
-| Brad Erickson | Royal Bank Of Canada | 2026-08-10 | $179.29 | $165.00 | -9.7% | BUY |
-| Brian Pitz | BMO Capital Markets | 2026-08-10 | $179.29 | $165.00 | -7.3% | BUY |
-| Evercore Research Team | Evercore | 2026-08-07 | $179.29 | $190.00 | +9.0% | OUTPERFORM |
-| Daniel L. Kurnos | Benchmark | 2026-08-07 | $179.29 | $180.00 | +2.7% | BUY |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-10 | $181.68 | $168.00 | -7.5% | OUTPERFORM |
+| Brad Erickson | Royal Bank Of Canada | 2026-08-10 | $182.70 | $165.00 | -9.7% | BUY |
+| Brian Pitz | BMO Capital Markets | 2026-08-10 | $178.07 | $165.00 | -7.3% | BUY |
+| Evercore Research Team | Evercore | 2026-08-07 | $174.33 | $190.00 | +9.0% | OUTPERFORM |
+| Daniel L. Kurnos | Benchmark | 2026-08-07 | $175.23 | $180.00 | +2.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $0.46 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.76 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $1.06 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $0.10 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.14 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.16 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

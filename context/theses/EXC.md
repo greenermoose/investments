@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $45.57 per share
 - **Current Price:** $45.57 per share
-- **Target Exit Price:** $74.19 per share
+- **Target Exit Price:** $44.10 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 6.9 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Rating:** AVOID
+- **Target Strategy:** Capital Preservation & Risk Avoidance
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1109357
 
 ## Business Profile
-Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EXC trades at $45.57 against a 3-year baseline price target of $74.19, generating a modeled annualized ROI of 19.8% under our disciplined 20-year hurdle standard.
+Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EXC trades at $45.57 against a 3-year baseline price target of $44.10, generating a modeled annualized ROI of -1.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Exelon Corporation addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 5.8% market share. Over our 3-year investment horizon, we model market share evolving to 5.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Exelon Corporation addresses an estimated Total Addressable Market (TAM) of $450
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Exelon Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Utilities Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.98B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.63B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.28B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Exelon Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Utilities Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.04B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.05B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.06B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Exelon Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 19.8%, fully justifying our HOLD rating.
+EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -1.1%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $6.65 B | -3.4% | 1.023 B | 1.79x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.37 B | +22.1% | 1.024 B | 1.77x | Product launch ramp: Utilities Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.88 B | +8.5% | 1.026 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.96 B | +19.7% | 1.027 B | 1.74x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $8.91 B | +34.0% | 1.028 B | 1.73x | Utilities core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.52 B | +42.8% | 1.030 B | 1.71x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $10.53 B | +53.1% | 1.031 B | 1.70x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $11.52 B | +44.7% | 1.032 B | 1.68x | Utilities core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $11.82 B | +32.7% | 1.033 B | 1.67x | Utilities core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $12.27 B | +16.6% | 1.035 B | 1.65x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $11.35 B | +7.8% | 1.036 B | 1.64x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $11.66 B | +1.2% | 1.037 B | 1.62x | Utilities core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $11.97 B | +1.3% | 1.039 B | 1.61x | Utilities core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $6.59 B | -4.4% | 1.023 B | 1.79x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.97 B | +15.4% | 1.024 B | 1.77x | Product launch ramp: Utilities Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.30 B | -0.6% | 1.026 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.56 B | -1.3% | 1.027 B | 1.74x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.82 B | +3.6% | 1.028 B | 1.73x | Utilities core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.23 B | +3.8% | 1.030 B | 1.71x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.55 B | +4.0% | 1.031 B | 1.70x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.82 B | +3.9% | 1.032 B | 1.68x | Utilities core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.07 B | +3.6% | 1.033 B | 1.67x | Utilities core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $7.46 B | +3.2% | 1.035 B | 1.65x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.74 B | +3.0% | 1.036 B | 1.64x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $7.00 B | +2.7% | 1.037 B | 1.62x | Utilities core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $7.26 B | +2.7% | 1.039 B | 1.61x | Utilities core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $40.30 | $50.38 | $60.46 | 1.8x | +49.4% |
-| 52 Weeks (1Y) | $47.98 | $59.98 | $71.98 | 1.7x | +31.6% |
-| 104 Weeks (2Y) | $61.15 | $76.44 | $91.73 | 1.7x | +29.5% |
-| 156 Weeks (3Y) | $59.35 | $74.19 | $89.03 | 1.6x | +17.6% |
+| 13 Weeks | $38.12 | $47.65 | $57.18 | 1.8x | +19.5% |
+| 52 Weeks (1Y) | $35.88 | $44.85 | $53.82 | 1.7x | -1.6% |
+| 104 Weeks (2Y) | $35.78 | $44.73 | $53.68 | 1.7x | -0.9% |
+| 156 Weeks (3Y) | $35.28 | $44.10 | $52.92 | 1.6x | -1.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Richard Sunderland | Truist Financial | 2026-08-13 | $45.57 | $48.00 | +5.5% | HOLD |
-| Shelby Tucker | TD Cowen | 2026-05-15 | $45.57 | $49.00 | +13.1% | HOLD |
-| Sophie Karp | KeyCorp | 2026-05-13 | $45.57 | $41.00 | -8.8% | UNDERPERFORM |
-| David Arcaro | Morgan Stanley | 2026-04-21 | $45.57 | $55.00 | +18.6% | BUY |
-| Wells Fargo & Company Research Team | Wells Fargo & Company | 2026-04-21 | $45.57 | $50.00 | +7.8% | BUY |
+| Richard Sunderland | Truist Financial | 2026-08-13 | $45.50 | $48.00 | +5.5% | HOLD |
+| Shelby Tucker | TD Cowen | 2026-05-15 | $43.33 | $49.00 | +13.1% | HOLD |
+| Sophie Karp | KeyCorp | 2026-05-13 | $44.98 | $41.00 | -8.8% | UNDERPERFORM |
+| David Arcaro | Morgan Stanley | 2026-04-21 | $46.39 | $55.00 | +18.6% | BUY |
+| Wells Fargo & Company Research Team | Wells Fargo & Company | 2026-04-21 | $46.40 | $50.00 | +7.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Utilities Next-Generation Commercial Product Rollout | $0.98 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.63 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $2.28 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Utilities Next-Generation Commercial Product Rollout | $0.04 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.05 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.06 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

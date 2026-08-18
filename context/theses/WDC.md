@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $536.01 per share
 - **Current Price:** $536.01 per share
-- **Target Exit Price:** $973.71 per share
+- **Target Exit Price:** $660.78 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=106040
 
 ## Business Profile
-Western Digital Corporation (WDC) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDC trades at $536.01 against a 3-year baseline price target of $973.71, generating a modeled annualized ROI of 23.5% under our disciplined 20-year hurdle standard.
+Western Digital Corporation (WDC) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDC trades at $536.01 against a 3-year baseline price target of $660.78, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Western Digital Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Western Digital Corporation addresses an estimated Total Addressable Market (TAM
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Western Digital Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.48B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.81B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.13B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Western Digital Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.08B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.11B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.13B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Western Digital Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~12.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 23.5%, fully justifying our BUY rating.
+WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~12.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.29 B | +2.9% | 0.345 B | 14.30x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.70 B | +29.0% | 0.345 B | 14.18x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.50 B | +13.5% | 0.346 B | 14.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $4.09 B | +24.2% | 0.346 B | 13.94x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $4.62 B | +40.4% | 0.346 B | 13.82x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $5.49 B | +48.3% | 0.347 B | 13.70x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $5.51 B | +57.4% | 0.347 B | 13.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.06 B | +48.3% | 0.348 B | 13.47x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.29 B | +36.2% | 0.348 B | 13.35x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.60 B | +20.3% | 0.349 B | 13.23x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.13 B | +11.3% | 0.349 B | 13.11x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.37 B | +5.1% | 0.349 B | 12.99x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.62 B | +5.2% | 0.350 B | 12.87x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.26 B | +1.9% | 0.345 B | 14.30x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.53 B | +23.0% | 0.345 B | 14.18x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.27 B | +6.3% | 0.346 B | 14.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.51 B | +6.6% | 0.346 B | 13.94x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.74 B | +14.6% | 0.346 B | 13.82x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $4.07 B | +15.3% | 0.347 B | 13.70x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.80 B | +16.1% | 0.347 B | 13.59x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $4.04 B | +15.1% | 0.348 B | 13.47x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.26 B | +14.0% | 0.348 B | 13.35x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.57 B | +12.4% | 0.349 B | 13.23x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.23 B | +11.2% | 0.349 B | 13.11x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.46 B | +10.4% | 0.349 B | 12.99x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.71 B | +10.5% | 0.350 B | 12.87x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $480.81 | $601.01 | $721.21 | 14.0x | +58.1% |
-| 52 Weeks (1Y) | $590.94 | $738.67 | $886.40 | 13.8x | +37.8% |
-| 104 Weeks (2Y) | $771.58 | $964.47 | $1157.36 | 13.3x | +34.1% |
-| 156 Weeks (3Y) | $778.97 | $973.71 | $1168.45 | 12.9x | +22.0% |
+| 13 Weeks | $458.71 | $573.39 | $688.07 | 14.0x | +31.0% |
+| 52 Weeks (1Y) | $449.27 | $561.59 | $673.91 | 13.8x | +4.8% |
+| 104 Weeks (2Y) | $495.88 | $619.85 | $743.82 | 13.3x | +7.5% |
+| 156 Weeks (3Y) | $528.62 | $660.78 | $792.94 | 12.9x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Asiya Merchant | Citigroup | 2026-08-07 | $536.01 | $740.00 | +63.9% | BUY |
-| Erik Woodring | Morgan Stanley | 2026-08-06 | $536.01 | $676.00 | +46.7% | OVERWEIGHT |
-| Tristan Gerra | Robert W. Baird | 2026-08-06 | $536.01 | $630.00 | +34.4% | BUY |
-| Krish Sankar | TD Cowen | 2026-08-06 | $536.01 | $540.00 | +18.3% | BUY |
-| Vijay Rakesh | Mizuho | 2026-08-06 | $536.01 | $590.00 | +29.3% | BUY |
+| Asiya Merchant | Citigroup | 2026-08-07 | $451.52 | $740.00 | +63.9% | BUY |
+| Erik Woodring | Morgan Stanley | 2026-08-06 | $460.93 | $676.00 | +46.7% | OVERWEIGHT |
+| Tristan Gerra | Robert W. Baird | 2026-08-06 | $468.85 | $630.00 | +34.4% | BUY |
+| Krish Sankar | TD Cowen | 2026-08-06 | $456.43 | $540.00 | +18.3% | BUY |
+| Vijay Rakesh | Mizuho | 2026-08-06 | $456.44 | $590.00 | +29.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.48 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.81 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $1.13 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.08 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.11 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.13 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

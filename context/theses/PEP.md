@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $138.24 per share
 - **Current Price:** $138.24 per share
-- **Target Exit Price:** $251.96 per share
+- **Target Exit Price:** $152.22 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.1 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=77476
 
 ## Business Profile
-PepsiCo, Inc. (PEP) operates as an established participant within the Consumer Staples sector (Packaged Foods & Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PEP trades at $138.24 against a 3-year baseline price target of $251.96, generating a modeled annualized ROI of 23.6% under our disciplined 20-year hurdle standard.
+PepsiCo, Inc. (PEP) operates as an established participant within the Consumer Staples sector (Packaged Foods & Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PEP trades at $138.24 against a 3-year baseline price target of $152.22, generating a modeled annualized ROI of 3.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.3% market share. Over our 3-year investment horizon, we model market share evolving to 15.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B a
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-PepsiCo, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$3.15B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$5.25B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$7.35B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+PepsiCo, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.16B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.23B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.26B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 PepsiCo, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 23.6%, fully justifying our BUY rating.
+PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $21.43 B | -2.7% | 1.367 B | 2.25x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $23.79 B | +22.9% | 1.363 B | 2.24x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $22.23 B | +9.0% | 1.360 B | 2.23x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $25.74 B | +20.1% | 1.357 B | 2.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $28.85 B | +34.6% | 1.353 B | 2.21x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $34.09 B | +43.3% | 1.350 B | 2.20x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $34.13 B | +53.5% | 1.346 B | 2.19x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $37.36 B | +45.1% | 1.343 B | 2.19x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $38.39 B | +33.1% | 1.340 B | 2.18x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $39.89 B | +17.0% | 1.336 B | 2.17x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $36.91 B | +8.1% | 1.333 B | 2.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $37.96 B | +1.6% | 1.330 B | 2.15x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $39.03 B | +1.7% | 1.326 B | 2.14x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $21.22 B | -3.7% | 1.367 B | 2.25x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $22.50 B | +16.2% | 1.363 B | 2.24x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $20.40 B | +0.0% | 1.360 B | 2.23x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $21.32 B | -0.5% | 1.357 B | 2.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $22.23 B | +4.8% | 1.353 B | 2.21x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $23.64 B | +5.1% | 1.350 B | 2.20x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $21.49 B | +5.3% | 1.346 B | 2.19x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $22.42 B | +5.1% | 1.343 B | 2.19x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $23.29 B | +4.8% | 1.340 B | 2.18x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $24.64 B | +4.2% | 1.336 B | 2.17x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $22.33 B | +3.9% | 1.333 B | 2.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $23.22 B | +3.6% | 1.330 B | 2.15x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $24.13 B | +3.6% | 1.326 B | 2.14x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $122.88 | $153.60 | $184.32 | 2.2x | +52.4% |
-| 52 Weeks (1Y) | $150.80 | $188.50 | $226.20 | 2.2x | +36.4% |
-| 104 Weeks (2Y) | $199.86 | $249.82 | $299.78 | 2.2x | +34.4% |
-| 156 Weeks (3Y) | $201.57 | $251.96 | $302.35 | 2.1x | +22.2% |
+| 13 Weeks | $116.22 | $145.27 | $174.32 | 2.2x | +21.9% |
+| 52 Weeks (1Y) | $112.97 | $141.21 | $169.45 | 2.2x | +2.1% |
+| 104 Weeks (2Y) | $118.22 | $147.78 | $177.34 | 2.2x | +3.4% |
+| 156 Weeks (3Y) | $121.78 | $152.22 | $182.66 | 2.1x | +3.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Lauren Lieberman | Barclays | 2026-07-21 | $138.24 | $142.00 | +4.8% | BUY |
-| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $138.24 | $155.00 | +12.8% | BUY |
-| Kaumil Gajrawala | Jefferies Financial Group | 2026-07-10 | $138.24 | $152.00 | +10.9% | HOLD |
-| Dara Mohsenian | Morgan Stanley | 2026-07-10 | $138.24 | $160.00 | +16.1% | BUY |
-| Filippo Falorni | Citigroup | 2026-07-10 | $138.24 | $145.00 | +5.2% | HOLD |
+| Lauren Lieberman | Barclays | 2026-07-21 | $135.46 | $142.00 | +4.8% | BUY |
+| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $137.35 | $155.00 | +12.8% | BUY |
+| Kaumil Gajrawala | Jefferies Financial Group | 2026-07-10 | $137.02 | $152.00 | +10.9% | HOLD |
+| Dara Mohsenian | Morgan Stanley | 2026-07-10 | $137.86 | $160.00 | +16.1% | BUY |
+| Filippo Falorni | Citigroup | 2026-07-10 | $137.86 | $145.00 | +5.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $3.15 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $5.25 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $7.35 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.16 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.23 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.26 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

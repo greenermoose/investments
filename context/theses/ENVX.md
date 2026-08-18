@@ -44,19 +44,19 @@ ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing t
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -28.2% | 0.218 B | 27.89x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | -22.1% | 0.220 B | 27.08x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -30.4% | 0.222 B | 26.27x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -25.7% | 0.224 B | 25.45x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -20.7% | 0.226 B | 24.64x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -13.9% | 0.228 B | 23.83x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -23.1% | 0.230 B | 23.01x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | -17.8% | 0.232 B | 22.20x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -12.3% | 0.234 B | 21.38x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -4.8% | 0.236 B | 20.57x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -15.1% | 0.238 B | 19.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -9.2% | 0.240 B | 18.94x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -3.1% | 0.242 B | 18.13x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -28.9% | 0.218 B | 27.89x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | -22.9% | 0.220 B | 27.08x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -28.7% | 0.222 B | 26.27x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -24.0% | 0.224 B | 25.45x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -19.1% | 0.226 B | 24.64x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -12.3% | 0.228 B | 23.83x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -18.8% | 0.230 B | 23.01x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | -13.5% | 0.232 B | 22.20x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -7.9% | 0.234 B | 21.38x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -0.2% | 0.236 B | 20.57x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -7.6% | 0.238 B | 19.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -1.6% | 0.240 B | 18.94x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +4.8% | 0.242 B | 18.13x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -80,10 +80,10 @@ ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing t
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Bank of America Research Team | Bank of America | 2026-08-17 | $3.60 | $5.00 | +38.9% | HOLD |
-| George Gianarikas | Canaccord Genuity Group | 2026-08-14 | $3.60 | $10.00 | +126.5% | BUY |
-| Anthony Stoss | Craig Hallum | 2026-08-13 | $3.60 | $7.00 | +56.4% | BUY |
-| Ryan Pfingst | B. Riley Financial | 2026-08-13 | $3.60 | $9.00 | +90.3% | BUY |
-| Derek Soderberg | Cantor Fitzgerald | 2026-08-13 | $3.60 | $25.00 | +428.5% | OVERWEIGHT |
+| George Gianarikas | Canaccord Genuity Group | 2026-08-14 | $4.42 | $10.00 | +126.2% | BUY |
+| Anthony Stoss | Craig Hallum | 2026-08-13 | $4.48 | $7.00 | +56.2% | BUY |
+| Ryan Pfingst | B. Riley Financial | 2026-08-13 | $4.73 | $9.00 | +90.3% | BUY |
+| Derek Soderberg | Cantor Fitzgerald | 2026-08-13 | $4.73 | $25.00 | +428.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

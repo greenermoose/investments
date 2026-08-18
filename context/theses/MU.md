@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $1011.75 per share
 - **Current Price:** $1011.75 per share
-- **Target Exit Price:** $1716.47 per share
+- **Target Exit Price:** $1240.61 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723125
 
 ## Business Profile
-Micron Technology, Inc. (MU) operates as an established participant within the Information Technology sector (Memory Semiconductors & HBM). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MU trades at $1011.75 against a 3-year baseline price target of $1716.47, generating a modeled annualized ROI of 21.3% under our disciplined 20-year hurdle standard.
+Micron Technology, Inc. (MU) operates as an established participant within the Information Technology sector (Memory Semiconductors & HBM). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MU trades at $1011.75 against a 3-year baseline price target of $1240.61, generating a modeled annualized ROI of 9.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Micron Technology, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.1% market share. Over our 3-year investment horizon, we model market share evolving to 3.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Micron Technology, Inc. addresses an estimated Total Addressable Market (TAM) of
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Micron Technology, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$1.40B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$2.34B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$3.27B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Micron Technology, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.28B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.39B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.45B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Micron Technology, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +14.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~25.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 21.3%, fully justifying our HOLD rating.
+MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~25.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.6%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $9.53 B | +4.2% | 1.128 B | 30.53x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $10.75 B | +30.6% | 1.129 B | 30.07x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $10.18 B | +14.9% | 1.131 B | 29.61x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $11.92 B | +25.1% | 1.132 B | 29.15x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $13.50 B | +41.7% | 1.133 B | 28.69x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $16.06 B | +49.4% | 1.135 B | 28.24x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $16.14 B | +58.5% | 1.136 B | 27.78x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $17.80 B | +49.3% | 1.138 B | 27.32x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $18.50 B | +37.0% | 1.139 B | 26.86x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $19.46 B | +21.2% | 1.140 B | 26.40x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $18.11 B | +12.2% | 1.142 B | 25.95x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $18.85 B | +5.9% | 1.143 B | 25.49x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $19.63 B | +6.1% | 1.145 B | 25.03x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $9.44 B | +3.1% | 1.128 B | 30.53x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.27 B | +24.7% | 1.129 B | 30.14x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.57 B | +8.0% | 1.131 B | 29.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $10.32 B | +8.3% | 1.132 B | 29.38x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $11.06 B | +17.1% | 1.133 B | 29.00x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $12.12 B | +18.0% | 1.135 B | 28.62x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $11.37 B | +18.9% | 1.136 B | 28.24x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.16 B | +17.8% | 1.138 B | 27.86x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.87 B | +16.3% | 1.139 B | 27.48x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.85 B | +14.3% | 1.140 B | 27.09x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $12.86 B | +13.1% | 1.142 B | 26.71x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.62 B | +12.0% | 1.143 B | 26.33x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.41 B | +12.0% | 1.145 B | 25.95x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $911.65 | $1139.56 | $1367.47 | 29.9x | +60.9% |
-| 52 Weeks (1Y) | $1094.68 | $1368.35 | $1642.02 | 28.7x | +35.2% |
-| 104 Weeks (2Y) | $1395.02 | $1743.78 | $2092.54 | 26.8x | +31.3% |
-| 156 Weeks (3Y) | $1373.18 | $1716.47 | $2059.76 | 25.0x | +19.3% |
+| 13 Weeks | $870.94 | $1088.67 | $1306.40 | 29.9x | +34.1% |
+| 52 Weeks (1Y) | $844.62 | $1055.78 | $1266.94 | 29.0x | +4.4% |
+| 104 Weeks (2Y) | $935.81 | $1169.76 | $1403.71 | 27.5x | +7.5% |
+| 156 Weeks (3Y) | $992.49 | $1240.61 | $1488.73 | 25.9x | +7.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| New Street Research Research Team | New Street Research | 2026-08-14 | $1011.75 | $1250.00 | +31.6% | HOLD |
-| Atif Malik | Citigroup | 2026-08-07 | $1011.75 | $1150.00 | +31.6% | BUY |
-| Gil Luria | DA Davidson | 2026-06-25 | $1011.75 | $2000.00 | +69.8% | BUY |
-| N. Quinn | Needham & Company LLC | 2026-06-25 | $1011.75 | $1650.00 | +44.6% | BUY |
-| Chris Caso | Wolfe Research | 2026-06-25 | $1011.75 | $1500.00 | +44.5% | BUY |
+| New Street Research Research Team | New Street Research | 2026-08-14 | $949.85 | $1250.00 | +31.6% | HOLD |
+| Atif Malik | Citigroup | 2026-08-07 | $874.19 | $1150.00 | +31.6% | BUY |
+| Gil Luria | DA Davidson | 2026-06-25 | $1177.86 | $2000.00 | +69.8% | BUY |
+| N. Quinn | Needham & Company LLC | 2026-06-25 | $1141.08 | $1650.00 | +44.6% | BUY |
+| Chris Caso | Wolfe Research | 2026-06-25 | $1037.92 | $1500.00 | +44.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $1.40 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $2.34 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $3.27 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.28 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.39 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.45 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

@@ -49,14 +49,14 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | 2027-Q1 | 2027-03-31 | $0.00 B | +10.0% | 0.100 B | 14.07x | Post-holiday seasonal normalization and channel inventory reset |
 | 2027-Q2 | 2027-06-30 | $0.00 B | +10.0% | 0.100 B | 13.63x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
 | 2027-Q3 | 2027-09-30 | $0.01 B | +10.0% | 0.101 B | 13.20x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -45.3% | 0.102 B | 12.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.00 B | +10.0% | 0.103 B | 12.33x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -44.9% | 0.102 B | 12.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | +10.0% | 0.103 B | 12.33x | Post-holiday seasonal normalization and channel inventory reset |
 | 2028-Q2 | 2028-06-30 | $0.01 B | +10.0% | 0.104 B | 11.89x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -45.7% | 0.105 B | 11.45x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -41.5% | 0.106 B | 11.02x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | +10.0% | 0.107 B | 10.58x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -45.1% | 0.108 B | 10.15x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -41.9% | 0.109 B | 9.71x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -44.0% | 0.105 B | 11.45x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -39.9% | 0.106 B | 11.02x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -44.9% | 0.107 B | 10.58x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -41.9% | 0.108 B | 10.15x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -38.8% | 0.109 B | 9.71x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -72,7 +72,7 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $4.74 | $5.92 | $7.10 | 14.6x | +1788.0% |
-| 52 Weeks (1Y) | $4.18 | $5.23 | $6.28 | 13.2x | +84.2% |
+| 52 Weeks (1Y) | $2.10 | $2.62 | $3.14 | 13.2x | -7.7% |
 | 104 Weeks (2Y) | $3.49 | $4.36 | $5.23 | 11.4x | +23.9% |
 | 156 Weeks (3Y) | $2.85 | $3.56 | $4.27 | 9.7x | +7.8% |
 
@@ -80,10 +80,10 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | LADENBURG THALM/SH SH Research Team | LADENBURG THALM/SH SH | 2026-08-18 | $2.84 | $6.00 | +111.3% | BUY |
-| Geulah Livshits | Chardan Capital | 2026-05-05 | $2.84 | $4.00 | +31.6% | BUY |
-| Soumit Roy | JonesTrading | 2026-03-10 | $2.84 | $8.00 | +206.5% | HOLD |
-| Robert W. Baird Research Team | Robert W. Baird | 2026-03-09 | $2.84 | $6.00 | +158.6% | BUY |
-| Mitchell Kapoor | HC Wainwright | 2025-09-05 | $2.84 | $5.00 | +98.4% | BUY |
+| Geulah Livshits | Chardan Capital | 2026-05-05 | $3.04 | $4.00 | +31.6% | BUY |
+| Soumit Roy | JonesTrading | 2026-03-10 | $2.61 | $8.00 | +206.5% | HOLD |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-03-09 | $2.32 | $6.00 | +158.6% | BUY |
+| Mitchell Kapoor | HC Wainwright | 2025-09-05 | $2.52 | $5.00 | +98.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $262.37 per share
 - **Current Price:** $262.37 per share
-- **Target Exit Price:** $465.19 per share
+- **Target Exit Price:** $294.47 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=200406
 
 ## Business Profile
-Johnson & Johnson (JNJ) operates as an established participant within the Health Care sector (Pharmaceuticals & MedTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, JNJ trades at $262.37 against a 3-year baseline price target of $465.19, generating a modeled annualized ROI of 23.1% under our disciplined 20-year hurdle standard.
+Johnson & Johnson (JNJ) operates as an established participant within the Health Care sector (Pharmaceuticals & MedTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, JNJ trades at $262.37 against a 3-year baseline price target of $294.47, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Johnson & Johnson addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 8.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Johnson & Johnson addresses an estimated Total Addressable Market (TAM) of $1100
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Johnson & Johnson's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$3.51B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$5.86B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$8.20B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Johnson & Johnson's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.33B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.46B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.53B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Share count expands modestly at ~0.0% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Johnson & Johnson's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 23.1%, fully justifying our HOLD rating.
+JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $23.89 B | -0.6% | 2.407 B | 6.74x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $26.65 B | +25.2% | 2.407 B | 6.70x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $25.01 B | +10.8% | 2.407 B | 6.65x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $29.06 B | +21.6% | 2.407 B | 6.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $32.67 B | +36.8% | 2.407 B | 6.56x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $38.69 B | +45.2% | 2.407 B | 6.52x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $38.77 B | +55.0% | 2.407 B | 6.47x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $42.53 B | +46.3% | 2.407 B | 6.43x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $43.86 B | +34.3% | 2.407 B | 6.38x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $45.74 B | +18.2% | 2.407 B | 6.34x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $42.38 B | +9.3% | 2.407 B | 6.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $43.75 B | +2.9% | 2.407 B | 6.25x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $45.15 B | +2.9% | 2.407 B | 6.20x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $23.66 B | -1.6% | 2.407 B | 6.74x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $25.28 B | +18.8% | 2.407 B | 6.70x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $23.12 B | +2.4% | 2.407 B | 6.65x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $24.39 B | +2.1% | 2.407 B | 6.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $25.66 B | +8.4% | 2.407 B | 6.56x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $27.54 B | +8.9% | 2.407 B | 6.52x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $25.29 B | +9.4% | 2.407 B | 6.47x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $26.59 B | +9.0% | 2.407 B | 6.43x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $27.79 B | +8.3% | 2.407 B | 6.38x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $29.56 B | +7.3% | 2.407 B | 6.34x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $27.00 B | +6.8% | 2.407 B | 6.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $28.24 B | +6.2% | 2.407 B | 6.25x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $29.52 B | +6.2% | 2.407 B | 6.20x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $234.19 | $292.74 | $351.29 | 6.6x | +55.0% |
-| 52 Weeks (1Y) | $284.92 | $356.15 | $427.38 | 6.6x | +35.7% |
-| 104 Weeks (2Y) | $372.02 | $465.02 | $558.02 | 6.4x | +33.1% |
-| 156 Weeks (3Y) | $372.15 | $465.19 | $558.23 | 6.2x | +21.0% |
+| 13 Weeks | $222.15 | $277.69 | $333.23 | 6.6x | +25.5% |
+| 52 Weeks (1Y) | $214.65 | $268.31 | $321.97 | 6.6x | +2.3% |
+| 104 Weeks (2Y) | $227.34 | $284.17 | $341.00 | 6.4x | +4.1% |
+| 156 Weeks (3Y) | $235.58 | $294.47 | $353.36 | 6.2x | +3.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vamil Divan | Guggenheim | 2026-08-06 | $262.37 | $287.00 | +11.3% | BUY |
-| Jayson Bedford | Raymond James Financial | 2026-08-03 | $262.37 | $280.00 | +10.0% | BUY |
-| Larry Biegelsen | Wells Fargo & Company | 2026-08-03 | $262.37 | $282.00 | +11.8% | OVERWEIGHT |
-| David Toung | Argus | 2026-07-29 | $262.37 | $300.00 | +11.7% | BUY |
-| Scotiabank Research Team | Scotiabank | 2026-07-16 | $262.37 | $305.00 | +22.5% | OUTPERFORM |
+| Vamil Divan | Guggenheim | 2026-08-06 | $257.77 | $287.00 | +11.3% | BUY |
+| Jayson Bedford | Raymond James Financial | 2026-08-03 | $254.55 | $280.00 | +10.0% | BUY |
+| Larry Biegelsen | Wells Fargo & Company | 2026-08-03 | $252.35 | $282.00 | +11.8% | OVERWEIGHT |
+| David Toung | Argus | 2026-07-29 | $268.48 | $300.00 | +11.7% | BUY |
+| Scotiabank Research Team | Scotiabank | 2026-07-16 | $248.96 | $305.00 | +22.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Health Care Next-Generation Commercial Product Rollout | $3.51 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $5.86 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $8.20 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Health Care Next-Generation Commercial Product Rollout | $0.33 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.46 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.53 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

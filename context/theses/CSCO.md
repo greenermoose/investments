@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $112.90 per share
 - **Current Price:** $112.90 per share
-- **Target Exit Price:** $195.05 per share
+- **Target Exit Price:** $115.91 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=858877
 
 ## Business Profile
-Cisco Systems, Inc. (CSCO) operates as an established participant within the Information Technology sector (Communications Equipment & Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSCO trades at $112.90 against a 3-year baseline price target of $195.05, generating a modeled annualized ROI of 22.0% under our disciplined 20-year hurdle standard.
+Cisco Systems, Inc. (CSCO) operates as an established participant within the Information Technology sector (Communications Equipment & Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSCO trades at $112.90 against a 3-year baseline price target of $115.91, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Cisco Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 4.7% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Cisco Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $12
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Cisco Systems, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$2.12B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$3.54B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$4.96B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Cisco Systems, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.08B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.11B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.13B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$19.8B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Cisco Systems, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.0%, fully justifying our HOLD rating.
+CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $14.45 B | -3.4% | 3.950 B | 7.87x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $16.01 B | +22.0% | 3.935 B | 7.81x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $14.94 B | +8.4% | 3.920 B | 7.74x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $17.28 B | +19.6% | 3.905 B | 7.67x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $19.35 B | +33.9% | 3.891 B | 7.61x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $22.85 B | +42.7% | 3.876 B | 7.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $22.87 B | +53.1% | 3.861 B | 7.48x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $25.01 B | +44.8% | 3.847 B | 7.41x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $25.68 B | +32.7% | 3.832 B | 7.34x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $26.65 B | +16.6% | 3.818 B | 7.28x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $24.64 B | +7.8% | 3.803 B | 7.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $25.32 B | +1.2% | 3.789 B | 7.15x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $26.00 B | +1.2% | 3.775 B | 7.08x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $14.31 B | -4.4% | 3.950 B | 7.87x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $15.13 B | +15.3% | 3.935 B | 7.81x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $13.68 B | -0.7% | 3.920 B | 7.74x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $14.25 B | -1.4% | 3.905 B | 7.67x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $14.81 B | +3.5% | 3.891 B | 7.61x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $15.70 B | +3.8% | 3.876 B | 7.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $14.22 B | +4.0% | 3.861 B | 7.48x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $14.80 B | +3.8% | 3.847 B | 7.41x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $15.35 B | +3.6% | 3.832 B | 7.34x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $16.20 B | +3.2% | 3.818 B | 7.28x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $14.64 B | +3.0% | 3.803 B | 7.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $15.20 B | +2.7% | 3.789 B | 7.15x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $15.76 B | +2.7% | 3.775 B | 7.08x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $100.38 | $125.48 | $150.58 | 7.7x | +52.6% |
-| 52 Weeks (1Y) | $121.10 | $151.38 | $181.66 | 7.6x | +34.1% |
-| 104 Weeks (2Y) | $157.40 | $196.75 | $236.10 | 7.3x | +32.0% |
-| 156 Weeks (3Y) | $156.04 | $195.05 | $234.06 | 7.1x | +20.0% |
+| 13 Weeks | $94.86 | $118.58 | $142.30 | 7.7x | +21.7% |
+| 52 Weeks (1Y) | $90.54 | $113.18 | $135.82 | 7.6x | +0.2% |
+| 104 Weeks (2Y) | $92.05 | $115.06 | $138.07 | 7.3x | +1.0% |
+| 156 Weeks (3Y) | $92.73 | $115.91 | $139.09 | 7.1x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Stephen Bersey | HSBC | 2026-08-14 | $112.90 | $120.00 | +5.8% | HOLD |
-| David Vogt | UBS Group | 2026-08-13 | $112.90 | $138.00 | +21.6% | BUY |
-| Matthew Niknam | Truist Financial | 2026-08-13 | $112.90 | $140.00 | +23.9% | BUY |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-13 | $112.90 | $150.00 | +31.3% | OVERWEIGHT |
-| Tim Long | Barclays | 2026-08-13 | $112.90 | $123.00 | +7.7% | BUY |
+| Stephen Bersey | HSBC | 2026-08-14 | $113.48 | $120.00 | +5.8% | HOLD |
+| David Vogt | UBS Group | 2026-08-13 | $113.47 | $138.00 | +21.6% | BUY |
+| Matthew Niknam | Truist Financial | 2026-08-13 | $112.97 | $140.00 | +23.9% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-13 | $114.23 | $150.00 | +31.3% | OVERWEIGHT |
+| Tim Long | Barclays | 2026-08-13 | $114.24 | $123.00 | +7.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $2.12 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $3.54 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $4.96 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.08 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.11 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.13 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

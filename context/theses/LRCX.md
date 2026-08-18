@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $343.84 per share
 - **Current Price:** $343.84 per share
-- **Target Exit Price:** $621.13 per share
+- **Target Exit Price:** $496.03 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.7 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=707549
 
 ## Business Profile
-Lam Research Corporation (LRCX) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LRCX trades at $343.84 against a 3-year baseline price target of $621.13, generating a modeled annualized ROI of 23.2% under our disciplined 20-year hurdle standard.
+Lam Research Corporation (LRCX) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LRCX trades at $343.84 against a 3-year baseline price target of $496.03, generating a modeled annualized ROI of 15.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Lam Research Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.9% market share. Over our 3-year investment horizon, we model market share evolving to 1.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Lam Research Corporation addresses an estimated Total Addressable Market (TAM) o
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Lam Research Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.87B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.45B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.03B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Lam Research Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.16B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.23B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.26B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$8.1B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Lam Research Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +13.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 23.2%, fully justifying our BUY rating.
+LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~17.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.3%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.92 B | +3.6% | 1.251 B | 18.51x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.67 B | +29.8% | 1.244 B | 18.23x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.31 B | +14.3% | 1.238 B | 17.95x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.38 B | +24.7% | 1.232 B | 17.68x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $8.35 B | +41.0% | 1.226 B | 17.40x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $9.92 B | +48.8% | 1.219 B | 17.12x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $9.96 B | +57.9% | 1.213 B | 16.84x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $10.98 B | +48.8% | 1.207 B | 16.57x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $11.40 B | +36.5% | 1.201 B | 16.29x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $11.98 B | +20.8% | 1.195 B | 16.01x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $11.14 B | +11.8% | 1.189 B | 15.73x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $11.58 B | +5.5% | 1.183 B | 15.46x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $12.04 B | +5.6% | 1.177 B | 15.18x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $5.87 B | +2.6% | 1.251 B | 18.51x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.37 B | +23.8% | 1.244 B | 18.43x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.92 B | +7.2% | 1.238 B | 18.35x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.36 B | +7.5% | 1.232 B | 18.28x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.80 B | +15.9% | 1.226 B | 18.20x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.43 B | +16.7% | 1.219 B | 18.12x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.96 B | +17.6% | 1.213 B | 18.04x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.42 B | +16.7% | 1.207 B | 17.97x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.84 B | +15.3% | 1.201 B | 17.89x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.43 B | +13.4% | 1.195 B | 17.81x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.81 B | +12.2% | 1.189 B | 17.73x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $8.25 B | +11.2% | 1.183 B | 17.66x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.72 B | +11.2% | 1.177 B | 17.58x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $311.24 | $389.05 | $466.86 | 18.1x | +63.9% |
-| 52 Weeks (1Y) | $379.44 | $474.30 | $569.16 | 17.4x | +37.9% |
-| 104 Weeks (2Y) | $494.50 | $618.12 | $741.74 | 16.3x | +34.1% |
-| 156 Weeks (3Y) | $496.90 | $621.13 | $745.36 | 15.2x | +21.8% |
+| 13 Weeks | $297.24 | $371.55 | $445.86 | 18.1x | +36.3% |
+| 52 Weeks (1Y) | $302.25 | $377.81 | $453.37 | 18.2x | +9.9% |
+| 104 Weeks (2Y) | $353.33 | $441.66 | $529.99 | 17.9x | +13.3% |
+| 156 Weeks (3Y) | $396.82 | $496.03 | $595.24 | 17.6x | +13.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $343.84 | $320.00 | +5.1% | BUY |
-| Joe Quatrochi | Wells Fargo & Company | 2026-07-30 | $343.84 | $350.00 | +38.7% | OVERWEIGHT |
-| Blayne Curtis | Jefferies Financial Group | 2026-07-30 | $343.84 | $335.00 | +32.8% | BUY |
-| Shane Brett | Morgan Stanley | 2026-07-30 | $343.84 | $367.00 | +24.1% | OVERWEIGHT |
-| Craig Ellis | B. Riley Financial | 2026-07-30 | $343.84 | $350.00 | +17.1% | BUY |
+| Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $304.56 | $320.00 | +5.1% | BUY |
+| Joe Quatrochi | Wells Fargo & Company | 2026-07-30 | $252.34 | $350.00 | +38.7% | OVERWEIGHT |
+| Blayne Curtis | Jefferies Financial Group | 2026-07-30 | $252.35 | $335.00 | +32.8% | BUY |
+| Shane Brett | Morgan Stanley | 2026-07-30 | $295.75 | $367.00 | +24.1% | OVERWEIGHT |
+| Craig Ellis | B. Riley Financial | 2026-07-30 | $298.92 | $350.00 | +17.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.87 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.45 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $2.03 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.16 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.23 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.26 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

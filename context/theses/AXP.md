@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $336.21 per share
 - **Current Price:** $336.21 per share
-- **Target Exit Price:** $678.70 per share
+- **Target Exit Price:** $448.67 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.0 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Conviction Secular Growth Leader with Limit Buy Accumulation
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=4962
 
 ## Business Profile
-American Express Company (AXP) operates as an established participant within the Financials sector (Consumer & Commercial Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXP trades at $336.21 against a 3-year baseline price target of $678.70, generating a modeled annualized ROI of 26.4% under our disciplined 20-year hurdle standard.
+American Express Company (AXP) operates as an established participant within the Financials sector (Consumer & Commercial Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXP trades at $336.21 against a 3-year baseline price target of $448.67, generating a modeled annualized ROI of 12.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 American Express Company addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 9.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ American Express Company addresses an estimated Total Addressable Market (TAM) o
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-American Express Company's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Financials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$2.71B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$4.51B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$6.31B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+American Express Company's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Financials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.37B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.52B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.60B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$25.3B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 American Express Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 26.4%, fully justifying our BUY rating.
+AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.5%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $18.40 B | +1.4% | 0.682 B | 3.18x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $20.63 B | +27.6% | 0.679 B | 3.17x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $19.44 B | +12.6% | 0.675 B | 3.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $22.66 B | +23.2% | 0.672 B | 3.14x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $25.55 B | +38.9% | 0.669 B | 3.13x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $30.31 B | +46.9% | 0.665 B | 3.11x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $30.40 B | +56.4% | 0.662 B | 3.10x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $33.43 B | +47.5% | 0.659 B | 3.09x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $34.60 B | +35.4% | 0.655 B | 3.07x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $36.22 B | +19.5% | 0.652 B | 3.06x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $33.61 B | +10.6% | 0.649 B | 3.05x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $34.82 B | +4.2% | 0.645 B | 3.03x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $36.07 B | +4.3% | 0.642 B | 3.02x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $18.22 B | +0.4% | 0.682 B | 3.18x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $19.62 B | +21.3% | 0.679 B | 3.17x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $18.09 B | +4.8% | 0.675 B | 3.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $19.27 B | +4.7% | 0.672 B | 3.14x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $20.43 B | +12.1% | 0.669 B | 3.13x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $22.13 B | +12.8% | 0.665 B | 3.11x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $20.52 B | +13.4% | 0.662 B | 3.10x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $21.74 B | +12.8% | 0.659 B | 3.09x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $22.84 B | +11.8% | 0.655 B | 3.07x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $24.43 B | +10.4% | 0.652 B | 3.06x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $22.47 B | +9.5% | 0.649 B | 3.05x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $23.64 B | +8.7% | 0.645 B | 3.03x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $24.84 B | +8.8% | 0.642 B | 3.02x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $303.34 | $379.18 | $455.02 | 3.1x | +61.8% |
-| 52 Weeks (1Y) | $382.53 | $478.16 | $573.79 | 3.1x | +42.2% |
-| 104 Weeks (2Y) | $518.94 | $648.68 | $778.42 | 3.1x | +38.9% |
-| 156 Weeks (3Y) | $542.96 | $678.70 | $814.44 | 3.0x | +26.4% |
+| 13 Weeks | $288.50 | $360.62 | $432.74 | 3.1x | +32.4% |
+| 52 Weeks (1Y) | $289.74 | $362.17 | $434.60 | 3.1x | +7.7% |
+| 104 Weeks (2Y) | $327.08 | $408.85 | $490.62 | 3.1x | +10.3% |
+| 156 Weeks (3Y) | $358.94 | $448.67 | $538.40 | 3.0x | +10.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Bill Carcache | Piper Sandler | 2026-08-12 | $336.21 | $405.00 | +18.6% | OVERWEIGHT |
-| Erika Najarian | UBS Group | 2026-08-03 | $336.21 | $384.00 | +14.0% | HOLD |
-| Betsy Graseck | Morgan Stanley | 2026-07-27 | $336.21 | $382.00 | +14.6% | BUY |
-| John Pancari | Evercore | 2026-07-27 | $336.21 | $370.00 | +11.0% | BUY |
-| Vincent Caintic | BTIG Research | 2026-07-27 | $336.21 | $315.00 | -3.3% | SELL |
+| Bill Carcache | Piper Sandler | 2026-08-12 | $341.54 | $405.00 | +18.6% | OVERWEIGHT |
+| Erika Najarian | UBS Group | 2026-08-03 | $336.81 | $384.00 | +14.0% | HOLD |
+| Betsy Graseck | Morgan Stanley | 2026-07-27 | $333.22 | $382.00 | +14.6% | BUY |
+| John Pancari | Evercore | 2026-07-27 | $333.21 | $370.00 | +11.0% | BUY |
+| Vincent Caintic | BTIG Research | 2026-07-27 | $325.85 | $315.00 | -3.3% | SELL |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Financials Next-Generation Commercial Product Rollout | $2.71 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $4.51 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $6.31 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Financials Next-Generation Commercial Product Rollout | $0.37 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.52 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.60 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

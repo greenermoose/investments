@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $180.12 per share
 - **Current Price:** $180.12 per share
-- **Target Exit Price:** $336.42 per share
+- **Target Exit Price:** $206.47 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1283699
 
 ## Business Profile
-T-Mobile US, Inc. (TMUS) operates as an established participant within the Communication Services sector (Wireless Telecommunication). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TMUS trades at $180.12 against a 3-year baseline price target of $336.42, generating a modeled annualized ROI of 24.6% under our disciplined 20-year hurdle standard.
+T-Mobile US, Inc. (TMUS) operates as an established participant within the Communication Services sector (Wireless Telecommunication). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TMUS trades at $180.12 against a 3-year baseline price target of $206.47, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 T-Mobile US, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 13.4% market share. Over our 3-year investment horizon, we model market share evolving to 12.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ T-Mobile US, Inc. addresses an estimated Total Addressable Market (TAM) of $650.
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-T-Mobile US, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$3.27B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$5.44B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$7.62B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+T-Mobile US, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.21B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.30B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.34B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$30.5B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 T-Mobile US, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.6%, fully justifying our BUY rating.
+TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $22.21 B | -2.0% | 1.082 B | 2.24x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $24.70 B | +23.7% | 1.075 B | 2.22x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $23.11 B | +9.6% | 1.069 B | 2.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $26.79 B | +20.6% | 1.062 B | 2.19x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $30.06 B | +35.3% | 1.055 B | 2.18x | Communication Services core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $35.54 B | +43.9% | 1.048 B | 2.16x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $35.59 B | +54.0% | 1.042 B | 2.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $38.99 B | +45.5% | 1.035 B | 2.13x | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $40.12 B | +33.5% | 1.029 B | 2.12x | Communication Services core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $41.73 B | +17.4% | 1.022 B | 2.10x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $38.63 B | +8.5% | 1.016 B | 2.09x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $39.78 B | +2.0% | 1.009 B | 2.07x | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $40.95 B | +2.1% | 1.003 B | 2.06x | Communication Services core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $21.99 B | -3.0% | 1.082 B | 2.24x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $23.38 B | +17.1% | 1.075 B | 2.22x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $21.26 B | +0.8% | 1.069 B | 2.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $22.28 B | +0.3% | 1.062 B | 2.19x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $23.31 B | +6.0% | 1.055 B | 2.18x | Communication Services core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $24.86 B | +6.3% | 1.048 B | 2.16x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $22.68 B | +6.7% | 1.042 B | 2.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $23.72 B | +6.5% | 1.035 B | 2.13x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.70 B | +5.9% | 1.029 B | 2.12x | Communication Services core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $26.17 B | +5.3% | 1.022 B | 2.10x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $23.78 B | +4.9% | 1.016 B | 2.09x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $24.78 B | +4.5% | 1.009 B | 2.07x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $25.80 B | +4.5% | 1.003 B | 2.06x | Communication Services core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $161.02 | $201.28 | $241.54 | 2.2x | +55.9% |
-| 52 Weeks (1Y) | $198.77 | $248.46 | $298.15 | 2.2x | +37.9% |
-| 104 Weeks (2Y) | $264.50 | $330.63 | $396.76 | 2.1x | +35.5% |
-| 156 Weeks (3Y) | $269.14 | $336.42 | $403.70 | 2.1x | +23.2% |
+| 13 Weeks | $152.42 | $190.52 | $228.62 | 2.2x | +25.2% |
+| 52 Weeks (1Y) | $149.16 | $186.45 | $223.74 | 2.2x | +3.5% |
+| 104 Weeks (2Y) | $158.16 | $197.70 | $237.24 | 2.1x | +4.8% |
+| 156 Weeks (3Y) | $165.18 | $206.47 | $247.76 | 2.1x | +4.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| John Hodulik | UBS Group | 2026-07-24 | $180.12 | $235.00 | +30.5% | BUY |
-| Gregory Williams | TD Cowen | 2026-07-24 | $180.12 | $260.00 | +45.0% | BUY |
-| Steven Cahall | Wells Fargo & Company | 2026-07-24 | $180.12 | $169.00 | -5.6% | BUY |
-| Kannan Venkateshwar | Barclays | 2026-07-24 | $180.12 | $215.00 | +20.0% | OVERWEIGHT |
-| Matthew Harrigan | Benchmark | 2026-07-24 | $180.12 | $280.00 | +64.3% | BUY |
+| John Hodulik | UBS Group | 2026-07-24 | $180.09 | $235.00 | +30.5% | BUY |
+| Gregory Williams | TD Cowen | 2026-07-24 | $179.34 | $260.00 | +45.0% | BUY |
+| Steven Cahall | Wells Fargo & Company | 2026-07-24 | $179.03 | $169.00 | -5.6% | BUY |
+| Kannan Venkateshwar | Barclays | 2026-07-24 | $179.20 | $215.00 | +20.0% | OVERWEIGHT |
+| Matthew Harrigan | Benchmark | 2026-07-24 | $170.42 | $280.00 | +64.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Communication Services Next-Generation Commercial Product Rollout | $3.27 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $5.44 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $7.62 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Communication Services Next-Generation Commercial Product Rollout | $0.21 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.30 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.34 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

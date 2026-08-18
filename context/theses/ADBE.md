@@ -6,15 +6,15 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $254.04 per share
 - **Current Price:** $254.04 per share
-- **Target Exit Price:** $491.99 per share
+- **Target Exit Price:** $329.58 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.7 / 10.0
-- **Rating:** BUY
-- **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Rating:** HOLD
+- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=796343
 
 ## Business Profile
-Adobe Inc. (ADBE) operates as an established participant within the Information Technology sector (Application Software & Digital Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADBE trades at $254.04 against a 3-year baseline price target of $491.99, generating a modeled annualized ROI of 26.1% under our disciplined 20-year hurdle standard.
+Adobe Inc. (ADBE) operates as an established participant within the Information Technology sector (Application Software & Digital Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADBE trades at $254.04 against a 3-year baseline price target of $329.58, generating a modeled annualized ROI of 11.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Adobe Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.0% market share. Over our 3-year investment horizon, we model market share evolving to 2.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -23,7 +23,7 @@ Adobe Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B acr
 High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments.
 
 ## Anticipated Catalysts & Timeline
-Adobe Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.90B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$1.50B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.10B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Adobe Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.19B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.22B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Share Dilution or Buyback
 Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$8.4B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Adobe Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +11.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 26.1%, fully justifying our BUY rating.
+ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 11.5%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $6.11 B | +2.1% | 0.404 B | 4.28x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.86 B | +28.3% | 0.402 B | 4.25x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.48 B | +13.2% | 0.400 B | 4.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.56 B | +23.7% | 0.398 B | 4.17x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $8.53 B | +39.7% | 0.396 B | 4.14x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.13 B | +47.7% | 0.394 B | 4.10x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $10.17 B | +56.9% | 0.392 B | 4.07x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $11.19 B | +48.0% | 0.390 B | 4.03x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $11.59 B | +35.9% | 0.388 B | 3.99x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $12.15 B | +19.9% | 0.386 B | 3.96x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $11.28 B | +10.9% | 0.384 B | 3.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $11.70 B | +4.6% | 0.382 B | 3.89x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $12.14 B | +4.7% | 0.380 B | 3.85x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $6.05 B | +1.1% | 0.404 B | 4.28x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.54 B | +22.2% | 0.402 B | 4.25x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.04 B | +5.7% | 0.400 B | 4.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.46 B | +5.7% | 0.398 B | 4.17x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.87 B | +13.5% | 0.396 B | 4.14x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.46 B | +14.0% | 0.394 B | 4.10x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.94 B | +14.8% | 0.392 B | 4.07x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.37 B | +14.0% | 0.390 B | 4.03x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.75 B | +12.9% | 0.388 B | 3.99x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.30 B | +11.3% | 0.386 B | 3.96x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.66 B | +10.3% | 0.384 B | 3.92x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $8.07 B | +9.5% | 0.382 B | 3.89x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.50 B | +9.6% | 0.380 B | 3.85x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,26 +71,26 @@ ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $229.35 | $286.69 | $344.03 | 4.2x | +62.2% |
-| 52 Weeks (1Y) | $285.37 | $356.71 | $428.05 | 4.1x | +40.4% |
-| 104 Weeks (2Y) | $381.39 | $476.74 | $572.09 | 4.0x | +37.0% |
-| 156 Weeks (3Y) | $393.59 | $491.99 | $590.39 | 3.9x | +24.6% |
+| 13 Weeks | $218.65 | $273.31 | $327.97 | 4.2x | +34.0% |
+| 52 Weeks (1Y) | $216.70 | $270.88 | $325.06 | 4.1x | +6.6% |
+| 104 Weeks (2Y) | $242.86 | $303.57 | $364.28 | 4.0x | +9.3% |
+| 156 Weeks (3Y) | $263.66 | $329.58 | $395.50 | 3.9x | +9.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Morgan Stanley | 2026-07-21 | $254.04 | $240.00 | +2.2% | UNDERPERFORM |
-| Bhavtosh Vajpayee | CLSA | 2026-07-20 | $254.04 | $300.00 | +26.4% | OUTPERFORM |
-| Tal Liani | Bank of America | 2026-07-07 | $254.04 | $190.00 | -12.9% | UNDERPERFORM |
-| Stephen Bersey | HSBC | 2026-07-02 | $254.04 | $308.00 | +46.0% | HOLD |
-| Gabriela Borges | The Goldman Sachs Group | 2026-06-12 | $254.04 | $190.00 | -12.9% | SELL |
+| Keith Weiss | Morgan Stanley | 2026-07-21 | $234.74 | $240.00 | +2.2% | UNDERPERFORM |
+| Bhavtosh Vajpayee | CLSA | 2026-07-20 | $237.25 | $300.00 | +26.4% | OUTPERFORM |
+| Tal Liani | Bank of America | 2026-07-07 | $218.06 | $190.00 | -12.9% | UNDERPERFORM |
+| Stephen Bersey | HSBC | 2026-07-02 | $210.97 | $308.00 | +46.0% | HOLD |
+| Gabriela Borges | The Goldman Sachs Group | 2026-06-12 | $218.24 | $190.00 | -12.9% | SELL |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.90 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $1.50 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $2.10 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.14 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.19 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.22 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

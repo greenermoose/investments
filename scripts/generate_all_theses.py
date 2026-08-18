@@ -85,7 +85,7 @@ for equity in universe:
     forecast_rows = []
     for q in val_model["revenue_forecast_13q"]:
         forecast_rows.append(
-            f"| {q['quarter_label']} | ${q['projected_revenue_b']:.2f} B | {q['yoy_growth_pct']:+.1f}% | {q['primary_growth_driver']} |"
+            f"| {q['quarter_label']} | {q['date']} | ${q['projected_revenue_b']:.2f} B | {q['yoy_growth_pct']:+.1f}% | {q['projected_shares_b']:.3f} B | {q['projected_ps_multiple']:.2f}x | {q['primary_growth_driver']} |"
         )
 
     # 6-Horizon Shares Projections Rows
@@ -151,8 +151,8 @@ for equity in universe:
         f"{sym} currently trades at a Price-to-Sales (P/S) multiple of ~{curr_ps:.1f}x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~{target_ps_3y:.1f}x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is {target_roi_str}, fully justifying our {thesis_status} rating.",
         "",
         "## 13-Quarter Revenue Forecast Matrix (3-Year Path)",
-        "| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |",
-        "| :--- | :--- | :--- | :--- |"
+        "| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |",
+        "| :--- | :--- | :--- | :--- | :--- | :--- | :--- |"
     ]
     dossier_lines.extend(forecast_rows)
     dossier_lines.extend([

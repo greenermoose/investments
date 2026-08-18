@@ -23,21 +23,21 @@ Amgen Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is
 AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.88 B | +5.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $9.88 B | +5.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.64 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2027-Q2 | $9.21 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2027-Q3 | $9.32 B | +5.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $10.38 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2028-Q1 | $9.07 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2028-Q2 | $9.67 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2028-Q3 | $9.79 B | +5.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $10.90 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2029-Q1 | $9.53 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2029-Q2 | $10.15 B | +5.0% | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $10.27 B | +5.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $8.88 B | +5.0% | 0.540 B | 6.38x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.88 B | +5.0% | 0.538 B | 6.32x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $8.64 B | +5.0% | 0.537 B | 6.27x | Health Care core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $9.21 B | +5.0% | 0.536 B | 6.22x | Health Care core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $9.32 B | +5.0% | 0.534 B | 6.16x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $10.38 B | +5.0% | 0.533 B | 6.11x | Health Care core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $9.07 B | +5.0% | 0.532 B | 6.06x | Health Care core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $9.67 B | +5.0% | 0.530 B | 6.00x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $9.79 B | +5.0% | 0.529 B | 5.95x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $10.90 B | +5.0% | 0.528 B | 5.90x | Health Care core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $9.53 B | +5.0% | 0.526 B | 5.85x | Health Care core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $10.15 B | +5.0% | 0.525 B | 5.79x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $10.27 B | +5.0% | 0.524 B | 5.74x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

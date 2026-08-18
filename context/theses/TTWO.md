@@ -23,21 +23,21 @@ Take-Two Interactive Software, Inc.'s top-line revenue trajectory over the 13-qu
 TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.63 B | +9.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $1.83 B | +9.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.61 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q2 | $1.74 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q3 | $1.77 B | +9.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.99 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q1 | $1.76 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q2 | $1.89 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | $1.93 B | +9.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.17 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q1 | $1.92 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q2 | $2.06 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $2.11 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $1.63 B | +9.0% | 0.186 B | 6.89x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.83 B | +9.0% | 0.186 B | 6.83x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $1.61 B | +9.0% | 0.186 B | 6.78x | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.74 B | +9.0% | 0.186 B | 6.72x | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $1.77 B | +9.0% | 0.186 B | 6.66x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $1.99 B | +9.0% | 0.186 B | 6.60x | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $1.76 B | +9.0% | 0.186 B | 6.55x | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $1.89 B | +9.0% | 0.186 B | 6.49x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.93 B | +9.0% | 0.186 B | 6.43x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $2.17 B | +9.0% | 0.186 B | 6.37x | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $1.92 B | +9.0% | 0.186 B | 6.32x | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $2.06 B | +9.0% | 0.186 B | 6.26x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.11 B | +9.0% | 0.186 B | 6.20x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

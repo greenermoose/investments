@@ -23,21 +23,21 @@ Microsoft Corporation's top-line revenue trajectory over the 13-quarter forecast
 MSFT currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~10.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $82.96 B | +13.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $94.09 B | +13.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $83.78 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $90.92 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $93.74 B | +13.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $106.32 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $94.67 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $102.74 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $105.93 B | +13.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $120.14 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $106.98 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $116.10 B | +13.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $119.70 B | +13.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $82.96 B | +13.0% | 7.428 B | 10.75x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $94.09 B | +13.0% | 7.400 B | 10.71x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $83.78 B | +13.0% | 7.373 B | 10.66x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $90.92 B | +13.0% | 7.345 B | 10.62x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $93.74 B | +13.0% | 7.317 B | 10.58x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $106.32 B | +13.0% | 7.289 B | 10.53x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $94.67 B | +13.0% | 7.262 B | 10.49x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $102.74 B | +13.0% | 7.235 B | 10.44x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $105.93 B | +13.0% | 7.207 B | 10.40x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $120.14 B | +13.0% | 7.180 B | 10.35x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $106.98 B | +13.0% | 7.153 B | 10.31x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $116.10 B | +13.0% | 7.126 B | 10.26x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $119.70 B | +13.0% | 7.099 B | 10.22x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

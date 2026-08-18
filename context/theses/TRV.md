@@ -23,21 +23,21 @@ The Travelers Companies, Inc.'s top-line revenue trajectory over the 13-quarter 
 TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $12.08 B | +6.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $13.48 B | +6.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.82 B | +6.0% | Financials core demand expansion and operational execution |
-| 2027-Q2 | $12.62 B | +6.0% | Financials core demand expansion and operational execution |
-| 2027-Q3 | $12.80 B | +6.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.29 B | +6.0% | Financials core demand expansion and operational execution |
-| 2028-Q1 | $12.52 B | +6.0% | Financials core demand expansion and operational execution |
-| 2028-Q2 | $13.38 B | +6.0% | Financials core demand expansion and operational execution |
-| 2028-Q3 | $13.57 B | +6.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $15.15 B | +6.0% | Financials core demand expansion and operational execution |
-| 2029-Q1 | $13.28 B | +6.0% | Financials core demand expansion and operational execution |
-| 2029-Q2 | $14.18 B | +6.0% | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $14.39 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $12.08 B | +6.0% | 0.213 B | 1.60x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $13.48 B | +6.0% | 0.212 B | 1.62x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $11.82 B | +6.0% | 0.211 B | 1.63x | Financials core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $12.62 B | +6.0% | 0.210 B | 1.64x | Financials core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $12.80 B | +6.0% | 0.209 B | 1.66x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $14.29 B | +6.0% | 0.209 B | 1.67x | Financials core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $12.52 B | +6.0% | 0.208 B | 1.68x | Financials core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $13.38 B | +6.0% | 0.207 B | 1.70x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.57 B | +6.0% | 0.206 B | 1.71x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $15.15 B | +6.0% | 0.206 B | 1.72x | Financials core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $13.28 B | +6.0% | 0.205 B | 1.73x | Financials core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $14.18 B | +6.0% | 0.204 B | 1.75x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.39 B | +6.0% | 0.203 B | 1.76x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

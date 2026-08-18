@@ -23,21 +23,21 @@ Microchip Technology Incorporated's top-line revenue trajectory over the 13-quar
 MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.22 B | +12.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $1.38 B | +12.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.23 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $1.33 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $1.37 B | +12.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.55 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $1.38 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $1.49 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $1.53 B | +12.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.73 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $1.54 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $1.67 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $1.72 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $1.22 B | +12.0% | 0.542 B | 8.90x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.38 B | +12.0% | 0.543 B | 8.83x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $1.23 B | +12.0% | 0.543 B | 8.75x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.33 B | +12.0% | 0.544 B | 8.68x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $1.37 B | +12.0% | 0.545 B | 8.61x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $1.55 B | +12.0% | 0.545 B | 8.53x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $1.38 B | +12.0% | 0.546 B | 8.46x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $1.49 B | +12.0% | 0.547 B | 8.38x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.53 B | +12.0% | 0.548 B | 8.31x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $1.73 B | +12.0% | 0.548 B | 8.23x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $1.54 B | +12.0% | 0.549 B | 8.16x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $1.67 B | +12.0% | 0.550 B | 8.08x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.72 B | +12.0% | 0.550 B | 8.01x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

@@ -23,21 +23,21 @@ Visa Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is 
 V currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $10.04 B | +10.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $11.32 B | +10.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $10.01 B | +10.0% | Financials core demand expansion and operational execution |
-| 2027-Q2 | $10.79 B | +10.0% | Financials core demand expansion and operational execution |
-| 2027-Q3 | $11.05 B | +10.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $12.45 B | +10.0% | Financials core demand expansion and operational execution |
-| 2028-Q1 | $11.01 B | +10.0% | Financials core demand expansion and operational execution |
-| 2028-Q2 | $11.87 B | +10.0% | Financials core demand expansion and operational execution |
-| 2028-Q3 | $12.15 B | +10.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $13.69 B | +10.0% | Financials core demand expansion and operational execution |
-| 2029-Q1 | $12.11 B | +10.0% | Financials core demand expansion and operational execution |
-| 2029-Q2 | $13.05 B | +10.0% | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $13.37 B | +10.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $10.04 B | +10.0% | 0.469 B | 4.19x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $11.32 B | +10.0% | 0.468 B | 4.17x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $10.01 B | +10.0% | 0.466 B | 4.16x | Financials core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $10.79 B | +10.0% | 0.464 B | 4.14x | Financials core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $11.05 B | +10.0% | 0.462 B | 4.12x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $12.45 B | +10.0% | 0.460 B | 4.10x | Financials core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $11.01 B | +10.0% | 0.459 B | 4.09x | Financials core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $11.87 B | +10.0% | 0.457 B | 4.07x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.15 B | +10.0% | 0.455 B | 4.05x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $13.69 B | +10.0% | 0.454 B | 4.03x | Financials core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $12.11 B | +10.0% | 0.452 B | 4.02x | Financials core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $13.05 B | +10.0% | 0.450 B | 4.00x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $13.37 B | +10.0% | 0.448 B | 3.98x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

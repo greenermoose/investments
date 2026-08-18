@@ -23,21 +23,21 @@ UnitedHealth Group Incorporated's top-line revenue trajectory over the 13-quarte
 UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $111.52 B | +8.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $125.05 B | +8.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $110.10 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2027-Q2 | $118.14 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2027-Q3 | $120.44 B | +8.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $135.06 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2028-Q1 | $118.91 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2028-Q2 | $127.60 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2028-Q3 | $130.07 B | +8.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $145.86 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2029-Q1 | $128.42 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2029-Q2 | $137.80 B | +8.0% | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $140.48 B | +8.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $111.52 B | +8.0% | 0.908 B | 0.81x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $125.05 B | +8.0% | 0.906 B | 0.81x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $110.10 B | +8.0% | 0.904 B | 0.82x | Health Care core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $118.14 B | +8.0% | 0.901 B | 0.83x | Health Care core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $120.44 B | +8.0% | 0.899 B | 0.83x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $135.06 B | +8.0% | 0.897 B | 0.84x | Health Care core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $118.91 B | +8.0% | 0.895 B | 0.85x | Health Care core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $127.60 B | +8.0% | 0.892 B | 0.85x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $130.07 B | +8.0% | 0.890 B | 0.86x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $145.86 B | +8.0% | 0.888 B | 0.87x | Health Care core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $128.42 B | +8.0% | 0.886 B | 0.88x | Health Care core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $137.80 B | +8.0% | 0.883 B | 0.88x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $140.48 B | +8.0% | 0.881 B | 0.89x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

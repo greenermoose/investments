@@ -23,21 +23,21 @@ Exelon Corporation's top-line revenue trajectory over the 13-quarter forecast ho
 EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -1.0%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $6.52 B | +3.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $7.23 B | +3.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $6.29 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2027-Q2 | $6.67 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2027-Q3 | $6.72 B | +3.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $7.44 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2028-Q1 | $6.48 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2028-Q2 | $6.87 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2028-Q3 | $6.92 B | +3.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $7.67 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2029-Q1 | $6.67 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2029-Q2 | $7.07 B | +3.0% | Utilities core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $7.13 B | +3.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $6.52 B | +3.0% | 1.023 B | 1.79x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.23 B | +3.0% | 1.024 B | 1.77x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $6.29 B | +3.0% | 1.026 B | 1.76x | Utilities core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $6.67 B | +3.0% | 1.027 B | 1.74x | Utilities core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $6.72 B | +3.0% | 1.028 B | 1.73x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $7.44 B | +3.0% | 1.030 B | 1.71x | Utilities core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $6.48 B | +3.0% | 1.031 B | 1.70x | Utilities core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $6.87 B | +3.0% | 1.032 B | 1.68x | Utilities core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $6.92 B | +3.0% | 1.033 B | 1.67x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $7.67 B | +3.0% | 1.035 B | 1.65x | Utilities core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $6.67 B | +3.0% | 1.036 B | 1.64x | Utilities core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $7.07 B | +3.0% | 1.037 B | 1.62x | Utilities core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $7.13 B | +3.0% | 1.039 B | 1.61x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

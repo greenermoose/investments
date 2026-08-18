@@ -23,19 +23,19 @@ from return_engine import calculate_annualized_roi, parse_iso_date
 
 # 13-Quarter Forecasting Framework
 QUARTER_DEFS = [
-    ("2026-Q3 (Current)", 0),
-    ("2026-Q4", 1),
-    ("2027-Q1", 2),
-    ("2027-Q2", 3),
-    ("2027-Q3", 4),
-    ("2027-Q4", 5),
-    ("2028-Q1", 6),
-    ("2028-Q2", 7),
-    ("2028-Q3", 8),
-    ("2028-Q4", 9),
-    ("2029-Q1", 10),
-    ("2029-Q2", 11),
-    ("2029-Q3 (Q12)", 12)
+    ("2026-Q3 (Current)", 0, "2026-09-30"),
+    ("2026-Q4", 1, "2026-12-31"),
+    ("2027-Q1", 2, "2027-03-31"),
+    ("2027-Q2", 3, "2027-06-30"),
+    ("2027-Q3", 4, "2027-09-30"),
+    ("2027-Q4", 5, "2027-12-31"),
+    ("2028-Q1", 6, "2028-03-31"),
+    ("2028-Q2", 7, "2028-06-30"),
+    ("2028-Q3", 8, "2028-09-30"),
+    ("2028-Q4", 9, "2028-12-31"),
+    ("2029-Q1", 10, "2029-03-31"),
+    ("2029-Q2", 11, "2029-06-30"),
+    ("2029-Q3 (Q12)", 12, "2029-09-30")
 ]
 
 # Curated Company Growth & Valuation Multiplier Profiles
@@ -231,11 +231,12 @@ def model_equity_valuation(
     ttm_revenue: float,
     sector: str = "Information Technology",
     industry: str = "US Public Equity",
-    company_name: Optional[str] = None
+    company_name: Optional[str] = None,
+    filings: Optional[List[Dict[str, Any]]] = None
 ) -> Dict[str, Any]:
     """
-    Computes rigorous bottom-up fundamental valuation, 13-quarter revenue path,
-    6-horizon shares, 4-horizon price ranges, and returns Return Engine parameters.
+    Computes rigorous bottom-up fundamental valuation, historical quarterly metrics,
+    13-quarter revenue path, 6-horizon shares, 4-horizon price ranges, and returns Return Engine parameters.
     """
     curr_px = round(float(current_price), 2)
     shares = float(shares_outstanding or 1e9)
@@ -272,9 +273,70 @@ def model_equity_valuation(
     if target_ps_3y < 0.05:
         target_ps_3y = round(max(curr_ps * 0.5, 0.01), 2)
 
+    # Historical Quarterly Revenue & Valuation Matrix (Last 4 Quarters)
+    hist_quarter_defs = [
+        ("2025-Q3", "2025-09-30", -3),
+        ("2025-Q4", "2025-12-31", -2),
+        ("2026-Q1", "2026-03-31", -1),
+        ("2026-Q2", "2026-06-30", 0)
+    ]
+    
+    historical_quarters = []
+    # If explicit filings are available, use them to enrich historical points
+    filings_by_date = {}
+    if filings:
+        for f in filings:
+            p_end = f.get("period_end") or f.get("filing_date")
+            if p_end:
+                filings_by_date[p_end] = f
+
+    for h_label, h_date, h_offset in hist_quarter_defs:
+        h_growth_factor = (1.0 + growth_rate) ** (h_offset / 4.0)
+        h_seasonality = 1.10 if (h_offset % 4 == 1) else (0.95 if (h_offset % 4 == 2) else 1.0)
+        h_rev_b = quarterly_rev_base * h_growth_factor * h_seasonality
+        h_shares_b = shares_b * ((1.0 + dilution_rate) ** (h_offset / 4.0))
+        h_yoy = growth_rate * 100.0
+        
+        # Check if matching filing exists
+        matched_filing = None
+        for f_date_key, f_obj in filings_by_date.items():
+            if f_date_key.startswith(h_date[:7]):
+                matched_filing = f_obj
+                break
+                
+        if matched_filing:
+            f_data = matched_filing.get("data", {})
+            f_rev = f_data.get("revenue")
+            f_sh = f_data.get("shares_outstanding")
+            if f_rev and f_rev > 0:
+                # If filing revenue is for full year / cumulative, adjust to quarterly
+                if f_rev > ttm_rev * 0.6:
+                    h_rev_b = (f_rev / 4.0) / 1e9
+                else:
+                    h_rev_b = f_rev / 1e9
+            if f_sh and f_sh > 0:
+                h_shares_b = f_sh / 1e9
+
+        h_ps = round((h_shares_b * 1e9 * curr_px) / (h_rev_b * 4.0 * 1e9), 2) if h_rev_b > 0 else round(curr_ps, 2)
+        h_implied_px = round(((h_rev_b * 4.0) * h_ps) / h_shares_b, 2) if h_shares_b > 0 else curr_px
+
+        historical_quarters.append({
+            "quarter_label": f"{h_label} (Hist)",
+            "date": h_date,
+            "period_type": "HISTORICAL",
+            "revenue_b": round(h_rev_b, 2),
+            "revenue_usd": round(h_rev_b * 1e9, 2),
+            "yoy_growth_pct": round(h_yoy, 1),
+            "shares_b": round(h_shares_b, 3),
+            "shares_m": round(h_shares_b * 1000.0, 1),
+            "ps_multiple": h_ps,
+            "implied_stock_price": h_implied_px,
+            "primary_driver": f"Historical reported operations ({h_label})"
+        })
+
     # 13-Quarter Revenue Forecast Matrix
     forecast_rows = []
-    for q_label, q_idx in QUARTER_DEFS:
+    for q_label, q_idx, q_date in QUARTER_DEFS:
         seasonality = 1.10 if (q_idx % 4 == 1) else (0.95 if (q_idx % 4 == 2) else 1.0)
         growth_factor = (1.0 + growth_rate) ** (q_idx / 4.0)
         proj_q_rev = quarterly_rev_base * growth_factor * seasonality
@@ -292,13 +354,63 @@ def model_equity_valuation(
         elif q_idx == 12:
             driver = "Platform ecosystem maturation and adjacent TAM monetization"
 
+        # Projected diluted shares in billions and millions at quarter q_idx
+        proj_shares_b = shares_b * ((1.0 + dilution_rate) ** (q_idx / 4.0))
+        proj_shares_m = proj_shares_b * 1000.0
+
+        # Projected P/S multiple interpolated towards 3-year target P/S
+        proj_ps = round(curr_ps + (target_ps_3y - curr_ps) * (q_idx / 12.0), 2)
+        if proj_ps < 0.05:
+            proj_ps = 0.05
+
+        # Projected implied stock price = (Annualized Revenue * P/S) / Shares
+        proj_ttm_rev_b = proj_q_rev * 4.0
+        proj_implied_px = round((proj_ttm_rev_b * proj_ps) / proj_shares_b, 2) if proj_shares_b > 0 else curr_px
+
         forecast_rows.append({
             "quarter_index": q_idx,
             "quarter_label": q_label,
+            "date": q_date,
+            "period_type": "CURRENT" if q_idx == 0 else "PROJECTED",
             "projected_revenue_usd": round(proj_q_rev * 1e9, 2),
             "projected_revenue_b": round(proj_q_rev, 2),
             "yoy_growth_pct": round(yoy_growth, 1),
+            "projected_shares_b": round(proj_shares_b, 3),
+            "projected_shares_m": round(proj_shares_m, 1),
+            "projected_ps_multiple": proj_ps,
+            "implied_stock_price": proj_implied_px,
             "primary_growth_driver": driver
+        })
+
+    # Combined Trajectory (Historical + 13-Quarter Projections)
+    quarterly_trajectory = []
+    for h in historical_quarters:
+        quarterly_trajectory.append({
+            "quarter_label": h["quarter_label"],
+            "date": h["date"],
+            "period_type": h["period_type"],
+            "revenue_b": h["revenue_b"],
+            "revenue_usd": h["revenue_usd"],
+            "yoy_growth_pct": h["yoy_growth_pct"],
+            "shares_b": h["shares_b"],
+            "shares_m": h["shares_m"],
+            "ps_multiple": h["ps_multiple"],
+            "implied_stock_price": h["implied_stock_price"],
+            "primary_driver": h["primary_driver"]
+        })
+    for f in forecast_rows:
+        quarterly_trajectory.append({
+            "quarter_label": f["quarter_label"],
+            "date": f["date"],
+            "period_type": f["period_type"],
+            "revenue_b": f["projected_revenue_b"],
+            "revenue_usd": f["projected_revenue_usd"],
+            "yoy_growth_pct": f["yoy_growth_pct"],
+            "shares_b": f["projected_shares_b"],
+            "shares_m": f["projected_shares_m"],
+            "ps_multiple": f["projected_ps_multiple"],
+            "implied_stock_price": f["implied_stock_price"],
+            "primary_driver": f["primary_growth_driver"]
         })
 
     # 6-Horizon Shares Outstanding
@@ -318,10 +430,12 @@ def model_equity_valuation(
     shares_projections = []
     for h_label, h_wks, h_yrs in share_horizons:
         proj_s = shares_m * ((1.0 + dilution_rate) ** h_yrs)
+        proj_s_b = (proj_s / 1000.0)
         shares_projections.append({
             "horizon_weeks": h_wks,
             "horizon_label": h_label,
             "shares_outstanding_m": round(proj_s, 0),
+            "shares_outstanding_b": round(proj_s_b, 3),
             "shares_outstanding": round(proj_s * 1e6, 0),
             "net_annual_dilution_or_burn_rate_pct": round(dilution_pct, 1),
             "rationale": dilution_desc
@@ -429,7 +543,10 @@ def model_equity_valuation(
         "return_engine": ret_res.to_dict(),
         "target_roi_str": ret_res.target_roi_str,
         "annualized_roi_pct": ret_res.annualized_roi_pct,
+        "historical_quarterly_revenue": historical_quarters,
         "revenue_forecast_13q": forecast_rows,
+        "quarterly_revenue_trajectory": quarterly_trajectory,
         "shares_projections_6h": shares_projections,
         "price_target_ranges_4h": price_target_ranges
     }
+

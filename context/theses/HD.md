@@ -23,21 +23,21 @@ The Home Depot, Inc.'s top-line revenue trajectory over the 13-quarter forecast 
 HD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $42.06 B | +4.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $46.72 B | +4.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $40.75 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q2 | $43.32 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q3 | $43.75 B | +4.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $48.59 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q1 | $42.38 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q2 | $45.05 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | $45.49 B | +4.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $50.54 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q1 | $44.08 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q2 | $46.85 B | +4.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $47.31 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $42.06 B | +4.0% | 0.996 B | 2.00x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $46.72 B | +4.0% | 0.992 B | 1.99x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $40.75 B | +4.0% | 0.989 B | 1.97x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $43.32 B | +4.0% | 0.985 B | 1.96x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $43.75 B | +4.0% | 0.981 B | 1.95x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $48.59 B | +4.0% | 0.977 B | 1.93x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $42.38 B | +4.0% | 0.974 B | 1.92x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $45.05 B | +4.0% | 0.970 B | 1.91x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $45.49 B | +4.0% | 0.966 B | 1.89x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $50.54 B | +4.0% | 0.963 B | 1.88x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $44.08 B | +4.0% | 0.959 B | 1.87x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $46.85 B | +4.0% | 0.955 B | 1.85x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $47.31 B | +4.0% | 0.952 B | 1.84x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

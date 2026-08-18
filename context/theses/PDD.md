@@ -23,21 +23,21 @@ PDD Holdings Inc.'s top-line revenue trajectory over the 13-quarter forecast hor
 PDD currently trades at a Price-to-Sales (P/S) multiple of ~1.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 21.8%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $107.96 B | +16.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $123.25 B | +16.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $110.46 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q2 | $120.67 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q3 | $125.24 B | +16.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $142.97 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q1 | $128.14 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q2 | $139.98 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | $145.27 B | +16.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $165.84 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q1 | $148.64 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q2 | $162.38 B | +16.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $168.52 B | +16.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $107.96 B | +16.0% | 5.694 B | 1.15x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $123.25 B | +16.0% | 5.686 B | 1.16x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $110.46 B | +16.0% | 5.679 B | 1.17x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $120.67 B | +16.0% | 5.672 B | 1.17x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $125.24 B | +16.0% | 5.665 B | 1.18x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $142.97 B | +16.0% | 5.658 B | 1.19x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $128.14 B | +16.0% | 5.651 B | 1.20x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $139.98 B | +16.0% | 5.644 B | 1.21x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $145.27 B | +16.0% | 5.637 B | 1.22x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $165.84 B | +16.0% | 5.630 B | 1.23x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $148.64 B | +16.0% | 5.623 B | 1.24x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $162.38 B | +16.0% | 5.616 B | 1.25x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $168.52 B | +16.0% | 5.609 B | 1.26x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

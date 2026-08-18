@@ -23,21 +23,21 @@ Charter Communications, Inc.'s top-line revenue trajectory over the 13-quarter f
 CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -9.7%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $13.69 B | -1.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $15.02 B | -1.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $12.94 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q2 | $13.59 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q3 | $13.56 B | -1.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.87 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q1 | $12.81 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q2 | $13.45 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | $13.42 B | -1.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $14.72 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q1 | $12.69 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q2 | $13.32 B | -1.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $13.29 B | -1.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $13.69 B | -1.0% | 0.123 B | 0.32x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $15.02 B | -1.0% | 0.123 B | 0.32x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $12.94 B | -1.0% | 0.124 B | 0.31x | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $13.59 B | -1.0% | 0.125 B | 0.31x | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $13.56 B | -1.0% | 0.125 B | 0.30x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $14.87 B | -1.0% | 0.126 B | 0.30x | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $12.81 B | -1.0% | 0.126 B | 0.29x | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $13.45 B | -1.0% | 0.127 B | 0.29x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.42 B | -1.0% | 0.128 B | 0.28x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $14.72 B | -1.0% | 0.128 B | 0.28x | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $12.69 B | -1.0% | 0.129 B | 0.27x | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $13.32 B | -1.0% | 0.130 B | 0.27x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $13.29 B | -1.0% | 0.130 B | 0.26x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

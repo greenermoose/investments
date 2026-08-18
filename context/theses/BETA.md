@@ -23,21 +23,21 @@ Beta Technologies, Inc.'s top-line revenue trajectory over the 13-quarter foreca
 BETA currently trades at a Price-to-Sales (P/S) multiple of ~169.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~118.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.9%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $0.01 B | +15.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $0.01 B | +15.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2027-Q2 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2027-Q3 | $0.01 B | +15.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2028-Q1 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2028-Q2 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2028-Q3 | $0.01 B | +15.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2029-Q1 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2029-Q2 | $0.01 B | +15.0% | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $0.01 B | +15.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | +15.0% | 0.230 B | 169.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.231 B | 165.59x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $0.01 B | +15.0% | 0.233 B | 161.34x | Industrials core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $0.01 B | +15.0% | 0.235 B | 157.09x | Industrials core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $0.01 B | +15.0% | 0.237 B | 152.85x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $0.01 B | +15.0% | 0.238 B | 148.60x | Industrials core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $0.01 B | +15.0% | 0.240 B | 144.36x | Industrials core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $0.01 B | +15.0% | 0.242 B | 140.11x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | +15.0% | 0.244 B | 135.86x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $0.01 B | +15.0% | 0.245 B | 131.62x | Industrials core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $0.01 B | +15.0% | 0.247 B | 127.37x | Industrials core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $0.01 B | +15.0% | 0.249 B | 123.13x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +15.0% | 0.251 B | 118.88x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

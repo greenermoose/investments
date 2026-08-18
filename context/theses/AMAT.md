@@ -23,21 +23,21 @@ Applied Materials, Inc.'s top-line revenue trajectory over the 13-quarter foreca
 AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.6%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $7.14 B | +11.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $8.07 B | +11.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $7.15 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $7.73 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $7.93 B | +11.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $8.95 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $7.94 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $8.58 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $8.80 B | +11.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $9.94 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $8.81 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $9.52 B | +11.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $9.77 B | +11.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $7.14 B | +11.0% | 0.794 B | 14.87x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.07 B | +11.0% | 0.790 B | 14.77x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $7.15 B | +11.0% | 0.786 B | 14.67x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $7.73 B | +11.0% | 0.782 B | 14.57x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $7.93 B | +11.0% | 0.778 B | 14.47x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $8.95 B | +11.0% | 0.774 B | 14.37x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $7.94 B | +11.0% | 0.770 B | 14.28x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $8.58 B | +11.0% | 0.766 B | 14.18x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $8.80 B | +11.0% | 0.763 B | 14.08x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $9.94 B | +11.0% | 0.759 B | 13.98x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $8.81 B | +11.0% | 0.755 B | 13.88x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $9.52 B | +11.0% | 0.751 B | 13.78x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $9.77 B | +11.0% | 0.747 B | 13.68x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

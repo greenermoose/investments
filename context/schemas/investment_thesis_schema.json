@@ -113,14 +113,49 @@
             "type": "string",
             "description": "Quarter label (e.g. '2026-Q3 (Current)', '2026-Q4', '2027-Q1', ..., '2029-Q3')."
           },
+          "date": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+            "description": "Calendar quarter ending date in ISO format."
+          },
+          "period_type": {
+            "type": "string",
+            "enum": ["CURRENT", "PROJECTED", "HISTORICAL"],
+            "description": "Classification of period."
+          },
           "projected_revenue_usd": {
             "type": "number",
             "minimum": 0.0,
             "description": "Projected quarterly revenue in USD."
           },
+          "projected_revenue_b": {
+            "type": "number",
+            "minimum": 0.0,
+            "description": "Projected quarterly revenue in billions of USD."
+          },
           "yoy_growth_pct": {
             "type": "number",
             "description": "Year-over-year revenue growth rate percentage (e.g. 14.5 for +14.5%)."
+          },
+          "projected_shares_b": {
+            "type": "number",
+            "minimum": 0.001,
+            "description": "Projected diluted shares outstanding in billions."
+          },
+          "projected_shares_m": {
+            "type": "number",
+            "minimum": 1.0,
+            "description": "Projected diluted shares outstanding in millions."
+          },
+          "projected_ps_multiple": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Projected Price-to-Sales (P/S) multiple."
+          },
+          "implied_stock_price": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Projected implied stock price in USD."
           },
           "primary_growth_driver": {
             "type": "string",

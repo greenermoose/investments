@@ -23,21 +23,21 @@ IDEXX Laboratories, Inc.'s top-line revenue trajectory over the 13-quarter forec
 IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 8.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.09 B | +10.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $1.23 B | +10.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.08 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2027-Q2 | $1.17 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2027-Q3 | $1.20 B | +10.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.35 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2028-Q1 | $1.19 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2028-Q2 | $1.29 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2028-Q3 | $1.32 B | +10.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $1.48 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2029-Q1 | $1.31 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2029-Q2 | $1.41 B | +10.0% | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $1.45 B | +10.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $1.09 B | +10.0% | 0.079 B | 9.89x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.23 B | +10.0% | 0.079 B | 9.83x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $1.08 B | +10.0% | 0.078 B | 9.76x | Health Care core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.17 B | +10.0% | 0.078 B | 9.70x | Health Care core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $1.20 B | +10.0% | 0.078 B | 9.63x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $1.35 B | +10.0% | 0.078 B | 9.56x | Health Care core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $1.19 B | +10.0% | 0.078 B | 9.50x | Health Care core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $1.29 B | +10.0% | 0.078 B | 9.43x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.32 B | +10.0% | 0.077 B | 9.36x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $1.48 B | +10.0% | 0.077 B | 9.30x | Health Care core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $1.31 B | +10.0% | 0.077 B | 9.23x | Health Care core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $1.41 B | +10.0% | 0.077 B | 9.17x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.45 B | +10.0% | 0.077 B | 9.10x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

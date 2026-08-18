@@ -23,21 +23,21 @@ NVIDIA Corporation's top-line revenue trajectory over the 13-quarter forecast ho
 NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~19.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.2%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $57.36 B | +28.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $67.11 B | +28.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $61.65 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $69.02 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $73.42 B | +28.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $85.90 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $78.91 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $88.35 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $93.97 B | +28.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $109.95 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $101.00 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $113.09 B | +28.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $120.29 B | +28.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $57.36 B | +28.0% | 24.300 B | 23.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $67.11 B | +28.0% | 24.178 B | 23.47x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $61.65 B | +28.0% | 24.056 B | 23.12x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $69.02 B | +28.0% | 23.935 B | 22.76x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $73.42 B | +28.0% | 23.814 B | 22.40x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $85.90 B | +28.0% | 23.694 B | 22.04x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $78.91 B | +28.0% | 23.575 B | 21.69x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $88.35 B | +28.0% | 23.456 B | 21.33x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $93.97 B | +28.0% | 23.338 B | 20.97x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $109.95 B | +28.0% | 23.220 B | 20.61x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $101.00 B | +28.0% | 23.103 B | 20.26x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $113.09 B | +28.0% | 22.987 B | 19.90x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $120.29 B | +28.0% | 22.871 B | 19.54x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

@@ -23,21 +23,21 @@ Intel Corporation's top-line revenue trajectory over the 13-quarter forecast hor
 INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -10.4%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $13.19 B | -2.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $14.43 B | -2.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $12.40 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $12.99 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $12.93 B | -2.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.15 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $12.16 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $12.73 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $12.67 B | -2.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $13.86 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $11.91 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $12.48 B | -2.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $12.41 B | -2.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $13.19 B | -2.0% | 5.026 B | 9.86x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $14.43 B | -2.0% | 5.045 B | 9.70x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $12.40 B | -2.0% | 5.064 B | 9.53x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $12.99 B | -2.0% | 5.082 B | 9.37x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $12.93 B | -2.0% | 5.101 B | 9.20x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $14.15 B | -2.0% | 5.120 B | 9.04x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $12.16 B | -2.0% | 5.140 B | 8.87x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $12.73 B | -2.0% | 5.159 B | 8.71x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.67 B | -2.0% | 5.178 B | 8.55x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $13.86 B | -2.0% | 5.197 B | 8.38x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $11.91 B | -2.0% | 5.217 B | 8.22x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $12.48 B | -2.0% | 5.236 B | 8.05x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $12.41 B | -2.0% | 5.256 B | 7.89x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

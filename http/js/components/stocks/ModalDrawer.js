@@ -120,6 +120,98 @@ export function openCompanyModal(company) {
   if (engTotalRoiEl) engTotalRoiEl.textContent = `+${(company.total_roi_pct || 0).toFixed(1)}%`;
   if (engCagrEl) engCagrEl.textContent = company.annualized_roi_pct ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : (company.target_roi || '20.0%');
 
+  // Tab 1: Quarterly Revenue Trajectory & Valuation Multiples Table
+  const currPs = company.current_ps_multiple || ((company.shares_outstanding && company.ttm_revenue) ? ((company.shares_outstanding * currentPrice) / company.ttm_revenue) : 5.0);
+  const targetPs = company.target_ps_multiple || (currPs * 0.95);
+  const psDelta = currPs > 0 ? (((targetPs - currPs) / currPs) * 100) : 0;
+  
+  const psCurrValEl = document.getElementById('modal-ps-curr-val');
+  const psTargetValEl = document.getElementById('modal-ps-target-val');
+  const gridPsCurrEl = document.getElementById('modal-grid-ps-current');
+  const gridPsTargetEl = document.getElementById('modal-grid-ps-target');
+  const gridPsDeltaEl = document.getElementById('modal-grid-ps-delta');
+  const gridRevGrowthEl = document.getElementById('modal-grid-rev-growth');
+  const gridDilutionEl = document.getElementById('modal-grid-dilution');
+
+  if (psCurrValEl) psCurrValEl.textContent = `${currPs.toFixed(1)}x`;
+  if (psTargetValEl) psTargetValEl.textContent = `${targetPs.toFixed(1)}x`;
+  if (gridPsCurrEl) gridPsCurrEl.textContent = `${currPs.toFixed(1)}x`;
+  if (gridPsTargetEl) gridPsTargetEl.textContent = `${targetPs.toFixed(1)}x`;
+  if (gridPsDeltaEl) {
+    const sign = psDelta >= 0 ? '+' : '';
+    const color = psDelta >= 0 ? '#10b981' : '#f59e0b';
+    gridPsDeltaEl.innerHTML = `<span style="color: ${color};">${sign}${psDelta.toFixed(1)}% (${psDelta >= 0 ? 'Expansion' : 'Compression'})</span>`;
+  }
+
+  // Find annual revenue growth and dilution rate from trajectory or fallbacks
+  let revGrowthRate = 8.0;
+  let dilutionRate = -1.5;
+  if (company.revenue_forecast_13q && company.revenue_forecast_13q.length > 0) {
+    revGrowthRate = company.revenue_forecast_13q[0].yoy_growth_pct || 8.0;
+  }
+  if (company.shares_projections_6h && company.shares_projections_6h.length > 0) {
+    dilutionRate = company.shares_projections_6h[0].net_annual_dilution_or_burn_rate_pct || -1.5;
+  }
+
+  if (gridRevGrowthEl) gridRevGrowthEl.textContent = `${revGrowthRate >= 0 ? '+' : ''}${revGrowthRate.toFixed(1)}% YoY`;
+  if (gridDilutionEl) {
+    const dilText = dilutionRate < 0 ? `${dilutionRate.toFixed(1)}% (Buybacks)` : (dilutionRate > 0 ? `+${dilutionRate.toFixed(1)}% (Dilution)` : '0.0% (Neutral)');
+    gridDilutionEl.textContent = dilText;
+  }
+
+  // Populate Quarterly Table
+  const quarterlyTbody = document.getElementById('modal-quarterly-revenue-tbody');
+  if (quarterlyTbody) {
+    quarterlyTbody.innerHTML = '';
+    const trajectory = company.quarterly_revenue_trajectory || [
+      ...(company.historical_quarterly_revenue || []),
+      ...(company.revenue_forecast_13q || [])
+    ];
+
+    if (trajectory.length > 0) {
+      trajectory.forEach(q => {
+        const row = document.createElement('tr');
+        const periodType = q.period_type || (q.quarter_index !== undefined ? (q.quarter_index === 0 ? 'CURRENT' : 'PROJECTED') : 'HISTORICAL');
+        
+        let typeBadge = '';
+        let rowBg = '';
+        if (periodType === 'HISTORICAL') {
+          typeBadge = '<span class="badge-status" style="background: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.3); font-size: 0.72rem; padding: 2px 6px;">HISTORICAL</span>';
+        } else if (periodType === 'CURRENT') {
+          typeBadge = '<span class="badge-status buy" style="font-size: 0.72rem; padding: 2px 6px;">CURRENT (Q0)</span>';
+          rowBg = 'background: rgba(0, 212, 255, 0.05);';
+        } else {
+          typeBadge = '<span class="badge-status" style="background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); font-size: 0.72rem; padding: 2px 6px;">PROJECTED</span>';
+        }
+
+        const revB = q.revenue_b !== undefined ? q.revenue_b : (q.projected_revenue_b !== undefined ? q.projected_revenue_b : 0);
+        const yoy = q.yoy_growth_pct !== undefined ? q.yoy_growth_pct : 0;
+        const yoyColor = yoy >= 0 ? '#10b981' : '#f43f5e';
+        const yoySign = yoy >= 0 ? '+' : '';
+        const sharesB = q.shares_b !== undefined ? q.shares_b : (q.projected_shares_b !== undefined ? q.projected_shares_b : (company.shares_outstanding_b || 1.0));
+        const psMult = q.ps_multiple !== undefined ? q.ps_multiple : (q.projected_ps_multiple !== undefined ? q.projected_ps_multiple : currPs);
+        const impliedPx = q.implied_stock_price !== undefined ? q.implied_stock_price : currentPrice;
+        const driverText = q.primary_driver || q.primary_growth_driver || 'Operational execution and market scaling';
+
+        row.style.cssText = rowBg;
+        row.innerHTML = `
+          <td><strong>${q.quarter_label || '-'}</strong></td>
+          <td><code>${q.date || '-'}</code></td>
+          <td>${typeBadge}</td>
+          <td style="font-weight: 600; color: #ffffff;">$${Number(revB).toFixed(2)} B</td>
+          <td style="color: ${yoyColor}; font-weight: 600;">${yoySign}${Number(yoy).toFixed(1)}%</td>
+          <td>${Number(sharesB).toFixed(3)} B</td>
+          <td style="color: #00d4ff; font-weight: 600;">${Number(psMult).toFixed(2)}x</td>
+          <td style="color: #e2e8f0; font-weight: 500;">$${Number(impliedPx).toFixed(2)}</td>
+          <td style="font-size: 0.82rem; color: var(--text-secondary); max-width: 240px;">${driverText}</td>
+        `;
+        quarterlyTbody.appendChild(row);
+      });
+    } else {
+      quarterlyTbody.innerHTML = `<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 16px;">Quarterly forecast matrix generated during universe compilation.</td></tr>`;
+    }
+  }
+
   // Tab 4: Active Position Derivatives Roadmap
   const tab4StratNameEl = document.getElementById('modal-tab4-strategy-name');
   const tab4EntryActionEl = document.getElementById('modal-tab4-entry-action');

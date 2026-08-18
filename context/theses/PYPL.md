@@ -23,21 +23,21 @@ PayPal Holdings, Inc.'s top-line revenue trajectory over the 13-quarter forecast
 PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.21 B | +5.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $9.14 B | +5.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $7.99 B | +5.0% | Financials core demand expansion and operational execution |
-| 2027-Q2 | $8.52 B | +5.0% | Financials core demand expansion and operational execution |
-| 2027-Q3 | $8.62 B | +5.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $9.60 B | +5.0% | Financials core demand expansion and operational execution |
-| 2028-Q1 | $8.39 B | +5.0% | Financials core demand expansion and operational execution |
-| 2028-Q2 | $8.94 B | +5.0% | Financials core demand expansion and operational execution |
-| 2028-Q3 | $9.05 B | +5.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $10.08 B | +5.0% | Financials core demand expansion and operational execution |
-| 2029-Q1 | $8.81 B | +5.0% | Financials core demand expansion and operational execution |
-| 2029-Q2 | $9.39 B | +5.0% | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $9.51 B | +5.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $8.21 B | +5.0% | 0.921 B | 1.69x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.14 B | +5.0% | 0.915 B | 1.68x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $7.99 B | +5.0% | 0.909 B | 1.66x | Financials core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $8.52 B | +5.0% | 0.903 B | 1.64x | Financials core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $8.62 B | +5.0% | 0.898 B | 1.63x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $9.60 B | +5.0% | 0.892 B | 1.61x | Financials core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $8.39 B | +5.0% | 0.886 B | 1.59x | Financials core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $8.94 B | +5.0% | 0.881 B | 1.58x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $9.05 B | +5.0% | 0.875 B | 1.56x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $10.08 B | +5.0% | 0.870 B | 1.54x | Financials core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $8.81 B | +5.0% | 0.864 B | 1.52x | Financials core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $9.39 B | +5.0% | 0.859 B | 1.51x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $9.51 B | +5.0% | 0.853 B | 1.49x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

@@ -23,21 +23,21 @@ Johnson & Johnson's top-line revenue trajectory over the 13-quarter forecast hor
 JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $23.42 B | +7.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $26.20 B | +7.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $23.02 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2027-Q2 | $24.64 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2027-Q3 | $25.06 B | +7.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $28.04 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2028-Q1 | $24.63 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2028-Q2 | $26.37 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2028-Q3 | $26.82 B | +7.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $30.00 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2029-Q1 | $26.35 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2029-Q2 | $28.21 B | +7.0% | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $28.69 B | +7.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $23.42 B | +7.0% | 2.407 B | 6.74x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $26.20 B | +7.0% | 2.407 B | 6.70x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $23.02 B | +7.0% | 2.407 B | 6.65x | Health Care core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $24.64 B | +7.0% | 2.407 B | 6.61x | Health Care core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $25.06 B | +7.0% | 2.407 B | 6.56x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $28.04 B | +7.0% | 2.407 B | 6.52x | Health Care core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $24.63 B | +7.0% | 2.407 B | 6.47x | Health Care core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $26.37 B | +7.0% | 2.407 B | 6.43x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $26.82 B | +7.0% | 2.407 B | 6.38x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $30.00 B | +7.0% | 2.407 B | 6.34x | Health Care core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $26.35 B | +7.0% | 2.407 B | 6.29x | Health Care core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $28.21 B | +7.0% | 2.407 B | 6.25x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $28.69 B | +7.0% | 2.407 B | 6.20x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

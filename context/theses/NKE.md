@@ -23,21 +23,21 @@ NIKE, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is
 NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $11.60 B | +6.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $12.95 B | +6.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.35 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q2 | $12.12 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q3 | $12.30 B | +6.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $13.72 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q1 | $12.03 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q2 | $12.84 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | $13.03 B | +6.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $14.55 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q1 | $12.75 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q2 | $13.62 B | +6.0% | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $13.82 B | +6.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $11.60 B | +6.0% | 1.480 B | 1.25x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $12.95 B | +6.0% | 1.474 B | 1.26x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $11.35 B | +6.0% | 1.469 B | 1.27x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $12.12 B | +6.0% | 1.463 B | 1.28x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $12.30 B | +6.0% | 1.458 B | 1.29x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $13.72 B | +6.0% | 1.452 B | 1.30x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $12.03 B | +6.0% | 1.447 B | 1.31x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $12.84 B | +6.0% | 1.441 B | 1.32x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.03 B | +6.0% | 1.436 B | 1.33x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $14.55 B | +6.0% | 1.430 B | 1.34x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $12.75 B | +6.0% | 1.425 B | 1.35x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $13.62 B | +6.0% | 1.420 B | 1.36x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $13.82 B | +6.0% | 1.414 B | 1.37x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

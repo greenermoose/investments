@@ -23,21 +23,21 @@ Shopify Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon 
 SHOP currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.76 B | +12.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $3.13 B | +12.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.78 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $3.01 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $3.10 B | +12.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $3.50 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $3.11 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $3.37 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $3.47 B | +12.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.92 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $3.49 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $3.77 B | +12.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $3.88 B | +12.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $2.76 B | +12.0% | 1.299 B | 17.47x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.13 B | +12.0% | 1.301 B | 17.33x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $2.78 B | +12.0% | 1.303 B | 17.18x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $3.01 B | +12.0% | 1.304 B | 17.03x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $3.10 B | +12.0% | 1.306 B | 16.89x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $3.50 B | +12.0% | 1.307 B | 16.74x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $3.11 B | +12.0% | 1.309 B | 16.60x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $3.37 B | +12.0% | 1.311 B | 16.45x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.47 B | +12.0% | 1.312 B | 16.30x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $3.92 B | +12.0% | 1.314 B | 16.16x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $3.49 B | +12.0% | 1.316 B | 16.01x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $3.77 B | +12.0% | 1.317 B | 15.87x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.88 B | +12.0% | 1.319 B | 15.72x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

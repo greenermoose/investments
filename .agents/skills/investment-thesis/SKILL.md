@@ -155,12 +155,12 @@ Every dossier in `context/theses/<TICKER>.md` must use the following standard la
 <Comprehensive narrative explaining why the P/S ratio and multiple dynamics explain future price action>
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $XX.XX B | +XX.X% | ... |
-| 2026-Q4 | $XX.XX B | +XX.X% | ... |
-| ... | ... | ... | ... |
-| 2029-Q3 (Q12) | $XX.XX B | +XX.X% | ... |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $XX.XX B | +XX.X% | X.XXX B | X.Xx | ... |
+| 2026-Q4 | 2026-12-31 | $XX.XX B | +XX.X% | X.XXX B | X.Xx | ... |
+| ... | ... | ... | ... | ... | ... | ... |
+| 2029-Q3 (Q12) | 2029-09-30 | $XX.XX B | +XX.X% | X.XXX B | X.Xx | ... |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

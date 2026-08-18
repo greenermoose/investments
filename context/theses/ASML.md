@@ -23,21 +23,21 @@ ASML Holding N.V.'s top-line revenue trajectory over the 13-quarter forecast hor
 ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~18.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $8.17 B | +19.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $9.38 B | +19.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $8.46 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $9.30 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $9.72 B | +19.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $11.17 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $10.07 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $11.07 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $11.57 B | +19.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $13.29 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $11.99 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $13.18 B | +19.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $13.76 B | +19.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $8.17 B | +19.0% | 0.385 B | 22.22x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.38 B | +19.0% | 0.384 B | 21.88x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $8.46 B | +19.0% | 0.383 B | 21.55x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $9.30 B | +19.0% | 0.381 B | 21.22x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $9.72 B | +19.0% | 0.380 B | 20.89x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $11.17 B | +19.0% | 0.378 B | 20.55x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $10.07 B | +19.0% | 0.377 B | 20.22x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $11.07 B | +19.0% | 0.375 B | 19.89x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $11.57 B | +19.0% | 0.374 B | 19.55x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $13.29 B | +19.0% | 0.373 B | 19.22x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $11.99 B | +19.0% | 0.371 B | 18.89x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $13.18 B | +19.0% | 0.370 B | 18.55x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $13.76 B | +19.0% | 0.368 B | 18.22x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

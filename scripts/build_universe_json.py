@@ -171,7 +171,8 @@ for filename in sorted(all_files):
         ttm_revenue=ttm_rev or (current_price * (shares or 1e9) * 0.2),
         sector=sector_val,
         industry=industry_val,
-        company_name=comp_name
+        company_name=comp_name,
+        filings=filings
     )
 
     thesis_status = val_model["rating"]
@@ -180,6 +181,13 @@ for filename in sorted(all_files):
     target_exit_price = val_model["target_exit_price"]
     target_roi_str = val_model["target_roi_str"]
     ret_params = val_model["return_engine"]
+    current_ps_multiple = val_model["current_ps_multiple"]
+    target_ps_multiple = val_model["target_ps_multiple"]
+    historical_quarterly_revenue = val_model["historical_quarterly_revenue"]
+    revenue_forecast_13q = val_model["revenue_forecast_13q"]
+    quarterly_revenue_trajectory = val_model["quarterly_revenue_trajectory"]
+    shares_projections_6h = val_model["shares_projections_6h"]
+    price_target_ranges_4h = val_model["price_target_ranges_4h"]
 
     # Update meta entry for persistent grounding
     meta_copy = dict(meta)
@@ -189,6 +197,8 @@ for filename in sorted(all_files):
     meta_copy["entry_price"] = entry_price
     meta_copy["target_exit_price"] = target_exit_price
     meta_copy["target_roi"] = target_roi_str
+    meta_copy["current_ps_multiple"] = current_ps_multiple
+    meta_copy["target_ps_multiple"] = target_ps_multiple
     meta_copy["entry_strategy"] = ret_params["entry_strategy"]
     meta_copy["exit_strategy"] = ret_params["exit_strategy"]
     meta_copy["entry_date"] = ret_params["entry_date"]
@@ -303,6 +313,8 @@ for filename in sorted(all_files):
         "is_index_member": is_index_member,
         "shares_outstanding": shares,
         "shares_outstanding_b": shares_b,
+        "current_ps_multiple": current_ps_multiple,
+        "target_ps_multiple": target_ps_multiple,
         "ttm_revenue": ttm_rev,
         "total_debt": total_debt,
         "cash_and_cash_equivalents": cash_equiv,
@@ -318,6 +330,11 @@ for filename in sorted(all_files):
         "latest_filing_url": latest_filing.get("filing_url") if latest_filing else None,
         "filings": filings,
         "historical_candles_30d": historical_candles,
+        "historical_quarterly_revenue": historical_quarterly_revenue,
+        "revenue_forecast_13q": revenue_forecast_13q,
+        "quarterly_revenue_trajectory": quarterly_revenue_trajectory,
+        "shares_projections_6h": shares_projections_6h,
+        "price_target_ranges_4h": price_target_ranges_4h,
         "analyst_price_targets": sym_targets,
         "analyst_consensus": analyst_consensus
     })

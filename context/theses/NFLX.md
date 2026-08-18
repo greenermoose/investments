@@ -23,21 +23,21 @@ Netflix, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon
 NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $11.35 B | +14.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $12.90 B | +14.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $11.51 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q2 | $12.52 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q3 | $12.93 B | +14.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $14.70 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q1 | $13.12 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q2 | $14.27 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | $14.74 B | +14.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $16.76 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q1 | $14.96 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q2 | $16.27 B | +14.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $16.81 B | +14.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $11.35 B | +14.0% | 4.164 B | 6.98x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $12.90 B | +14.0% | 4.148 B | 6.92x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $11.51 B | +14.0% | 4.133 B | 6.86x | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $12.52 B | +14.0% | 4.117 B | 6.80x | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $12.93 B | +14.0% | 4.101 B | 6.74x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $14.70 B | +14.0% | 4.086 B | 6.69x | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $13.12 B | +14.0% | 4.071 B | 6.63x | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $14.27 B | +14.0% | 4.055 B | 6.57x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $14.74 B | +14.0% | 4.040 B | 6.51x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $16.76 B | +14.0% | 4.025 B | 6.45x | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $14.96 B | +14.0% | 4.010 B | 6.40x | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $16.27 B | +14.0% | 3.994 B | 6.34x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $16.81 B | +14.0% | 3.979 B | 6.28x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

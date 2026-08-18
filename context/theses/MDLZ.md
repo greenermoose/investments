@@ -23,21 +23,21 @@ Mondelez International, Inc.'s top-line revenue trajectory over the 13-quarter f
 MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $9.53 B | +4.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $10.59 B | +4.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $9.23 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2027-Q2 | $9.81 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2027-Q3 | $9.91 B | +4.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $11.01 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2028-Q1 | $9.60 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2028-Q2 | $10.21 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | $10.31 B | +4.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $11.45 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2029-Q1 | $9.99 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2029-Q2 | $10.62 B | +4.0% | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $10.72 B | +4.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $9.53 B | +4.0% | 1.282 B | 2.09x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.59 B | +4.0% | 1.279 B | 2.08x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $9.23 B | +4.0% | 1.275 B | 2.06x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $9.81 B | +4.0% | 1.272 B | 2.05x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $9.91 B | +4.0% | 1.269 B | 2.03x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $11.01 B | +4.0% | 1.266 B | 2.02x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $9.60 B | +4.0% | 1.263 B | 2.01x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $10.21 B | +4.0% | 1.259 B | 1.99x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $10.31 B | +4.0% | 1.256 B | 1.98x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $11.45 B | +4.0% | 1.253 B | 1.96x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $9.99 B | +4.0% | 1.250 B | 1.95x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $10.62 B | +4.0% | 1.247 B | 1.93x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $10.72 B | +4.0% | 1.244 B | 1.92x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

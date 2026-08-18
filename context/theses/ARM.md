@@ -23,21 +23,21 @@ Arm Holdings plc's top-line revenue trajectory over the 13-quarter forecast hori
 ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~43.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.18 B | +24.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $1.37 B | +24.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.25 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $1.39 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $1.46 B | +24.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $1.70 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $1.55 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $1.72 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $1.81 B | +24.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.11 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $1.92 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $2.13 B | +24.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $2.25 B | +24.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $1.18 B | +24.0% | 1.068 B | 61.43x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.37 B | +24.0% | 1.071 B | 59.89x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $1.25 B | +24.0% | 1.073 B | 58.36x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.39 B | +24.0% | 1.076 B | 56.82x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $1.46 B | +24.0% | 1.079 B | 55.29x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $1.70 B | +24.0% | 1.081 B | 53.75x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $1.55 B | +24.0% | 1.084 B | 52.21x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $1.72 B | +24.0% | 1.087 B | 50.68x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.81 B | +24.0% | 1.089 B | 49.14x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $2.11 B | +24.0% | 1.092 B | 47.61x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $1.92 B | +24.0% | 1.095 B | 46.07x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $2.13 B | +24.0% | 1.098 B | 44.54x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.25 B | +24.0% | 1.100 B | 43.00x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

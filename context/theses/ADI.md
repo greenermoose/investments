@@ -23,21 +23,21 @@ Analog Devices, Inc.'s top-line revenue trajectory over the 13-quarter forecast 
 ADI currently trades at a Price-to-Sales (P/S) multiple of ~17.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $2.78 B | +7.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $3.11 B | +7.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $2.73 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q2 | $2.92 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2027-Q3 | $2.97 B | +7.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $3.32 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q1 | $2.92 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q2 | $3.12 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | $3.18 B | +7.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $3.56 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q1 | $3.12 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q2 | $3.34 B | +7.0% | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $3.40 B | +7.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $2.78 B | +7.0% | 0.487 B | 17.12x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.11 B | +7.0% | 0.486 B | 17.01x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $2.73 B | +7.0% | 0.485 B | 16.89x | Information Technology core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $2.92 B | +7.0% | 0.483 B | 16.78x | Information Technology core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $2.97 B | +7.0% | 0.482 B | 16.66x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $3.32 B | +7.0% | 0.481 B | 16.55x | Information Technology core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $2.92 B | +7.0% | 0.480 B | 16.44x | Information Technology core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $3.12 B | +7.0% | 0.479 B | 16.32x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.18 B | +7.0% | 0.477 B | 16.21x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $3.56 B | +7.0% | 0.476 B | 16.09x | Information Technology core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $3.12 B | +7.0% | 0.475 B | 15.98x | Information Technology core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $3.34 B | +7.0% | 0.474 B | 15.86x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.40 B | +7.0% | 0.473 B | 15.75x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

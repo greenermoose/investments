@@ -23,21 +23,21 @@ Electronic Arts Inc.'s top-line revenue trajectory over the 13-quarter forecast 
 EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
-| :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | $1.85 B | +9.0% | Current operational baseline and contract fulfillment |
-| 2026-Q4 | $2.08 B | +9.0% | Year-end commercial procurement and budget deployment |
-| 2027-Q1 | $1.83 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q2 | $1.97 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2027-Q3 | $2.02 B | +9.0% | Next-generation product cycle introduction and market share capture |
-| 2027-Q4 | $2.27 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q1 | $2.00 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q2 | $2.15 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | $2.20 B | +9.0% | International market expansion and enterprise subscription scaling |
-| 2028-Q4 | $2.47 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q1 | $2.18 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q2 | $2.34 B | +9.0% | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | $2.39 B | +9.0% | Platform ecosystem maturation and adjacent TAM monetization |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-Q3 (Current) | 2026-09-30 | $1.85 B | +9.0% | 0.251 B | 7.11x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.08 B | +9.0% | 0.251 B | 7.05x | Year-end commercial procurement and budget deployment |
+| 2027-Q1 | 2027-03-31 | $1.83 B | +9.0% | 0.251 B | 6.99x | Communication Services core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.97 B | +9.0% | 0.251 B | 6.93x | Communication Services core demand expansion and operational execution |
+| 2027-Q3 | 2027-09-30 | $2.02 B | +9.0% | 0.251 B | 6.87x | Next-generation product cycle introduction and market share capture |
+| 2027-Q4 | 2027-12-31 | $2.27 B | +9.0% | 0.251 B | 6.81x | Communication Services core demand expansion and operational execution |
+| 2028-Q1 | 2028-03-31 | $2.00 B | +9.0% | 0.251 B | 6.75x | Communication Services core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $2.15 B | +9.0% | 0.251 B | 6.70x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.20 B | +9.0% | 0.251 B | 6.64x | International market expansion and enterprise subscription scaling |
+| 2028-Q4 | 2028-12-31 | $2.47 B | +9.0% | 0.251 B | 6.58x | Communication Services core demand expansion and operational execution |
+| 2029-Q1 | 2029-03-31 | $2.18 B | +9.0% | 0.251 B | 6.52x | Communication Services core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $2.34 B | +9.0% | 0.251 B | 6.46x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.39 B | +9.0% | 0.251 B | 6.40x | Platform ecosystem maturation and adjacent TAM monetization |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |

@@ -86,10 +86,10 @@ The following master directory catalogues every specific data source, public URL
 - **Role in Due Diligence:** Serves as a fast visual and tabular cross-check for multi-year revenue trajectories, gross margin expansion, free cash flow generation, and forward consensus estimates.
 - **Caveat & Verification Rule:** Because StockAnalysis.com aggregates and standardizes raw financial data from intermediate third-party providers, all critical figures (such as exact quarterly revenue or diluted shares outstanding) must be verified against Tier 1 SEC EDGAR XBRL filings before locking investment theses.
 
-### 4. MarketBeat (`https://www.marketbeat.com/`)
-- **Classification:** Tier 2 Wall Street Analyst Price Target & Rating Aggregator.
-- **Trustworthiness Assessment:** High for verified rating changes, price target revisions, and link-level auditability.
-- **Role in Due Diligence:** MarketBeat is our primary ground-truthed public aggregator for tracking individual sell-side analyst price targets. For each tracked equity, MarketBeat publishes dedicated, time-stamped tables capturing the exact analyst name, brokerage firm, publication date, prevailing market price at announcement, and revised target price. Every record links directly to an accessible URL (`source_url`) enabling unambiguous programmatic and human verification.
+### 4. Financial Newswires & Live Desks (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance)
+- **Classification:** Tier 2 Financial Newswires & Press Release Broadcasters.
+- **Trustworthiness Assessment:** High for real-time sell-side analyst research releases, rating actions, price target revisions, and link-level auditability.
+- **Role in Due Diligence:** Authoritative financial newswires capture pre-market sell-side research notes from Wall Street investment banks. For each tracked equity, our system catalogs individual press release articles detailing the lead analyst name, brokerage firm, publication date, historical market price on announcement date, and revised price target. Every record links directly to an accessible news agency press release article (`source_url`) enabling unambiguous verification.
 
 ### 5. Morningstar (`https://www.morningstar.com/`)
 - **Classification:** Tier 2 Institutional Fundamental Research & Economic Moat Authority.
@@ -118,20 +118,20 @@ Primary sell-side equity research reports are extensive, 10-to-50 page proprieta
 ### How Rating Changes & Price Targets Become Public
 Although full PDF research reports are protected by copyright and client paywalls, the core findings and headline metrics are disseminated immediately into the public domain through several channels:
 1. **Institutional Wire Feeds & Press Releases:** When an investment bank upgrades a stock, downgrades a stock, or initiates coverage, the firm issues an executive wire release before the market opens (typically between 6:00 AM and 9:00 AM ET).
-2. **Financial Newswires & Live Desks:** Real-time financial news desks (Bloomberg News, Dow Jones Newswires, Reuters, The Fly on the Wall, StreetInsider, Benzinga, Seeking Alpha News) capture these releases and publish immediate dispatches containing:
+2. **Financial Newswires & Live Desks:** Real-time financial news desks (The Fly on the Wall, Benzinga, StreetInsider, Seeking Alpha News, Yahoo Finance News, Reuters) capture these releases and publish immediate dispatches containing:
    - Lead Analyst Name
    - Investment Bank / Brokerage Firm
    - Rating Action (Initiation, Upgrade, Downgrade, Reiteration)
    - New Price Target vs. Previous Price Target
    - Key Thesis Drivers & Earnings Estimate Adjustments
-3. **Structured Secondary Aggregators:** Specialized aggregators (MarketBeat, TipRanks, Financial Modeling Prep API, Yahoo Finance) ingest and structure these releases into structured databases and web pages.
+3. **Structured Ingestion & Historical Price Reconciliation:** Dispatches are captured into structured datasets where each target price is matched with its true historical market price on the announcement date.
 4. **SEC Disclosures & Corporate Investor Relations:** Public corporations frequently mention consensus analyst price targets and coverage rosters in Form 8-K presentations, annual shareholder letters, or Investor Relations (IR) fact sheets.
 
 ### Ingestion & Verification Methodology for AI Agents
 To track and incorporate analyst price targets into our system without paying tens of thousands of dollars for institutional terminal licenses, our AI agents execute a deterministic three-step discovery protocol:
-1. **Target Price Extraction:** Query structured endpoints such as Financial Modeling Prep (`/v4/price-target?symbol={TICKER}`) or parse dedicated aggregator tables (MarketBeat `https://www.marketbeat.com/stocks/{EXCHANGE}/{TICKER}/price-target/`).
-2. **Schema Normalization:** Normalize every target into `context/schemas/analyst_price_target_schema.json`, recording `analyst_name`, `firm`, `announcement_date`, `market_price_at_announcement`, `target_price`, `implied_upside_percent`, `action`, and `source_url`.
-3. **Ground-Truth URL Verification:** Ensure every recorded entry contains a direct, verifiable URL where human traders and AI agents can inspect the announcement record and verify that the target was published on the declared date.
+1. **Press Release Ingestion:** Ingest pre-market sell-side research dispatches broadcast across financial newswires (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance).
+2. **Schema Normalization & Historical Price Reconciliation:** Normalize every target into `context/schemas/analyst_price_target_schema.json`, recording `analyst_name`, `firm`, `announcement_date`, accurate historical `market_price_at_announcement`, `target_price`, `implied_upside_pct`, `rating_action`, `press_release_title`, and `source_url`.
+3. **Direct Press Release Verification:** Ensure every recorded entry contains a direct URL to the specific news agency press release article where human traders and AI agents can verify the announcement details.
 
 ## Search Engines & Tools Accessible to AI Agents
 

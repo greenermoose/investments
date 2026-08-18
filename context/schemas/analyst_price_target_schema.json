@@ -60,21 +60,26 @@
     },
     "report_title": {
       "type": "string",
-      "description": "Title or headline of the analyst research report."
+      "description": "Press release headline or title of the analyst research release."
+    },
+    "press_release_title": {
+      "type": "string",
+      "description": "Press release headline of the sell-side analyst research release."
     },
     "source_url": {
       "type": "string",
       "format": "uri",
-      "description": "Direct URL or locator to research note or aggregator release."
+      "description": "Direct URL to the news agency press release article covering the analyst research release."
     },
     "data_tier": {
       "type": "string",
       "enum": [
         "TIER_1_PRIMARY_REGULATORY",
         "TIER_2_FINANCIAL_AGGREGATOR",
+        "TIER_2_FINANCIAL_NEWSWIRE",
         "TIER_3_CONSENSUS_ESTIMATES"
       ],
-      "default": "TIER_2_FINANCIAL_AGGREGATOR",
+      "default": "TIER_2_FINANCIAL_NEWSWIRE",
       "description": "Data provenance authority tier."
     }
   }

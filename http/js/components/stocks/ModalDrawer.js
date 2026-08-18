@@ -431,7 +431,7 @@ export function openCompanyModal(company) {
       analystTargets.forEach(t => {
         const row = document.createElement('tr');
         const reportUrl = t.source_url || '';
-        const titleText = t.report_title || 'Equity Research Note';
+        const titleText = t.press_release_title || t.report_title || 'Sell-Side Analyst Press Release';
         const titleContent = reportUrl
           ? `<a href="${reportUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color, #38bdf8); text-decoration: none; font-weight: 500;" title="${titleText}">${titleText}</a>`
           : `<span title="${titleText}">${titleText}</span>`;

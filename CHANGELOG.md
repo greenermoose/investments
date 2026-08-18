@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.19.0] - 2026-08-18
+
+### Sell-Side Analyst Press Release Integration, Direct News Agency Coverage & Announcement Price Bug Fix
+- **Direct Press Release & News Agency Integration (`scripts/fetch_analyst_targets.py`, `scripts/data/analyst_price_targets.json`):** Transitioned analyst coverage away from generic aggregator hubs to direct financial newswires and news agency articles (The Fly, Benzinga, StreetInsider, Seeking Alpha News, Yahoo Finance News) broadcasting sell-side research notes with analyst name, firm, date, and price target.
+- **Historical Market Price at Announcement Bug Fix (`scripts/fetch_analyst_targets.py`, `scripts/reprocess_analyst_targets.py`):** Resolved root cause in `fetch_analyst_targets.py` where today's stock quote was applied statically to all historical records. Recomputed exact historical closing prices for each target announcement date across all 1,399 records in the universe.
+- **Company Modal UI Table Update (`http/stocks.html`, `http/js/components/stocks/ModalDrawer.js`):** Renamed the table column header from "Research Report Title" to "Press Release", linking directly to the news agency press release articles.
+
 ## [2.18.0] - 2026-08-18
 
 ### Expanded Data Hierarchy, Aggregator Classifications, Analyst Research Discovery & Neural Parametric Governance

@@ -53,9 +53,9 @@ CPRT currently trades at a Price-to-Sales (P/S) multiple of ~6.6x on trailing tw
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $25.49 | $31.86 | $38.23 | 6.4x | +2.0% |
-| 52 Weeks (1Y) | $27.58 | $34.47 | $41.36 | 6.5x | +8.7% |
-| 104 Weeks (2Y) | $29.96 | $37.45 | $44.94 | 6.4x | +8.7% |
-| 156 Weeks (3Y) | $32.55 | $40.69 | $48.83 | 6.2x | +8.7% |
+| 52 Weeks (1Y) | $27.56 | $34.45 | $41.34 | 6.5x | +8.7% |
+| 104 Weeks (2Y) | $29.95 | $37.44 | $44.93 | 6.3x | +8.7% |
+| 156 Weeks (3Y) | $32.54 | $40.67 | $48.80 | 6.2x | +8.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

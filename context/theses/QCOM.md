@@ -52,10 +52,10 @@ QCOM currently trades at a Price-to-Sales (P/S) multiple of ~3.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $130.11 | $162.64 | $195.17 | 3.8x | +1.1% |
-| 52 Weeks (1Y) | $138.50 | $173.13 | $207.76 | 3.8x | +6.8% |
-| 104 Weeks (2Y) | $147.62 | $184.52 | $221.42 | 3.7x | +6.7% |
-| 156 Weeks (3Y) | $157.34 | $196.67 | $236.00 | 3.6x | +6.6% |
+| 13 Weeks | $130.02 | $162.52 | $195.02 | 3.8x | +0.8% |
+| 52 Weeks (1Y) | $138.57 | $173.21 | $207.85 | 3.8x | +6.8% |
+| 104 Weeks (2Y) | $147.49 | $184.36 | $221.23 | 3.6x | +6.6% |
+| 156 Weeks (3Y) | $157.29 | $196.61 | $235.93 | 3.5x | +6.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

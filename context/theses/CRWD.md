@@ -52,10 +52,10 @@ CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $175.95 | $219.94 | $263.93 | 10.8x | +11.8% |
-| 52 Weeks (1Y) | $197.10 | $246.38 | $295.66 | 10.5x | +15.2% |
-| 104 Weeks (2Y) | $226.04 | $282.55 | $339.06 | 9.9x | +14.9% |
-| 156 Weeks (3Y) | $258.84 | $323.55 | $388.26 | 9.4x | +14.8% |
+| 13 Weeks | $175.92 | $219.90 | $263.88 | 10.8x | +11.7% |
+| 52 Weeks (1Y) | $197.17 | $246.46 | $295.75 | 10.5x | +15.2% |
+| 104 Weeks (2Y) | $226.16 | $282.70 | $339.24 | 9.9x | +15.0% |
+| 156 Weeks (3Y) | $258.87 | $323.59 | $388.31 | 9.4x | +14.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

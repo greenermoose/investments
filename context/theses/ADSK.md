@@ -52,10 +52,10 @@ ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $194.65 | $243.31 | $291.97 | 7.0x | +2.8% |
-| 52 Weeks (1Y) | $208.32 | $260.40 | $312.48 | 6.9x | +7.8% |
-| 104 Weeks (2Y) | $224.00 | $280.00 | $336.00 | 6.6x | +7.6% |
-| 156 Weeks (3Y) | $240.80 | $301.00 | $361.20 | 6.4x | +7.6% |
+| 13 Weeks | $194.75 | $243.44 | $292.13 | 7.0x | +3.0% |
+| 52 Weeks (1Y) | $208.21 | $260.26 | $312.31 | 6.9x | +7.7% |
+| 104 Weeks (2Y) | $223.91 | $279.89 | $335.87 | 6.6x | +7.6% |
+| 156 Weeks (3Y) | $240.86 | $301.08 | $361.30 | 6.4x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

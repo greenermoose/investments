@@ -52,10 +52,10 @@ BKR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $51.63 | $64.54 | $77.45 | 2.3x | -2.2% |
-| 52 Weeks (1Y) | $53.25 | $66.56 | $79.87 | 2.3x | +2.6% |
-| 104 Weeks (2Y) | $54.49 | $68.11 | $81.73 | 2.2x | +2.4% |
-| 156 Weeks (3Y) | $55.75 | $69.69 | $83.63 | 2.2x | +2.4% |
+| 13 Weeks | $51.58 | $64.47 | $77.36 | 2.3x | -2.6% |
+| 52 Weeks (1Y) | $53.22 | $66.52 | $79.82 | 2.3x | +2.5% |
+| 104 Weeks (2Y) | $54.48 | $68.10 | $81.72 | 2.2x | +2.4% |
+| 156 Weeks (3Y) | $55.71 | $69.64 | $83.57 | 2.1x | +2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

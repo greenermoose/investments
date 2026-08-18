@@ -54,8 +54,8 @@ INSM currently trades at a Price-to-Sales (P/S) multiple of ~42.9x on trailing t
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $104.21 | $130.26 | $156.31 | 42.0x | +6.2% |
 | 52 Weeks (1Y) | $106.48 | $133.10 | $159.72 | 38.6x | +3.7% |
-| 104 Weeks (2Y) | $108.70 | $135.88 | $163.06 | 34.3x | +2.9% |
-| 156 Weeks (3Y) | $109.64 | $137.05 | $164.46 | 30.0x | +2.2% |
+| 104 Weeks (2Y) | $108.72 | $135.90 | $163.08 | 34.3x | +2.9% |
+| 156 Weeks (3Y) | $109.63 | $137.04 | $164.45 | 30.0x | +2.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

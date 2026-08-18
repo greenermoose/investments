@@ -53,9 +53,9 @@ ALNY currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing tw
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $185.13 | $231.41 | $277.69 | 7.6x | +12.7% |
-| 52 Weeks (1Y) | $210.82 | $263.52 | $316.22 | 7.5x | +17.3% |
-| 104 Weeks (2Y) | $246.61 | $308.26 | $369.91 | 7.2x | +17.2% |
-| 156 Weeks (3Y) | $288.30 | $360.38 | $432.46 | 6.9x | +17.1% |
+| 52 Weeks (1Y) | $210.90 | $263.62 | $316.34 | 7.5x | +17.4% |
+| 104 Weeks (2Y) | $246.62 | $308.28 | $369.94 | 7.2x | +17.2% |
+| 156 Weeks (3Y) | $288.26 | $360.32 | $432.38 | 6.8x | +17.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

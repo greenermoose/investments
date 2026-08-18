@@ -52,10 +52,10 @@ AMZN currently trades at a Price-to-Sales (P/S) multiple of ~4.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $210.96 | $263.70 | $316.44 | 4.0x | +3.7% |
-| 52 Weeks (1Y) | $231.17 | $288.96 | $346.75 | 4.0x | +10.6% |
-| 104 Weeks (2Y) | $255.43 | $319.29 | $383.15 | 4.0x | +10.5% |
-| 156 Weeks (3Y) | $282.30 | $352.87 | $423.44 | 3.9x | +10.5% |
+| 13 Weeks | $210.90 | $263.62 | $316.34 | 4.0x | +3.6% |
+| 52 Weeks (1Y) | $231.42 | $289.28 | $347.14 | 4.0x | +10.7% |
+| 104 Weeks (2Y) | $255.70 | $319.63 | $383.56 | 4.0x | +10.6% |
+| 156 Weeks (3Y) | $282.44 | $353.05 | $423.66 | 3.9x | +10.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

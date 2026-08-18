@@ -52,10 +52,10 @@ AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $432.96 | $541.20 | $649.44 | 14.6x | +4.5% |
-| 52 Weeks (1Y) | $472.25 | $590.31 | $708.37 | 14.5x | +10.3% |
-| 104 Weeks (2Y) | $519.95 | $649.94 | $779.93 | 14.1x | +10.2% |
-| 156 Weeks (3Y) | $572.50 | $715.62 | $858.74 | 13.7x | +10.2% |
+| 13 Weeks | $432.85 | $541.06 | $649.27 | 14.6x | +4.4% |
+| 52 Weeks (1Y) | $472.30 | $590.38 | $708.46 | 14.5x | +10.3% |
+| 104 Weeks (2Y) | $519.81 | $649.76 | $779.71 | 14.1x | +10.2% |
+| 156 Weeks (3Y) | $572.44 | $715.55 | $858.66 | 13.7x | +10.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

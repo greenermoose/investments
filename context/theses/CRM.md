@@ -52,10 +52,10 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $153.91 | $192.39 | $230.87 | 4.2x | +3.0% |
-| 52 Weeks (1Y) | $164.98 | $206.23 | $247.48 | 4.1x | +8.0% |
-| 104 Weeks (2Y) | $177.77 | $222.21 | $266.65 | 4.0x | +7.9% |
-| 156 Weeks (3Y) | $191.50 | $239.37 | $287.24 | 3.8x | +7.8% |
+| 13 Weeks | $154.03 | $192.54 | $231.05 | 4.2x | +3.3% |
+| 52 Weeks (1Y) | $164.93 | $206.16 | $247.39 | 4.1x | +8.0% |
+| 104 Weeks (2Y) | $177.90 | $222.38 | $266.86 | 4.0x | +7.9% |
+| 156 Weeks (3Y) | $191.67 | $239.59 | $287.51 | 3.8x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -53,9 +53,9 @@ STOK currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing t
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $25.62 | $32.02 | $38.42 | 10.4x | -1.4% |
-| 52 Weeks (1Y) | $26.78 | $33.47 | $40.16 | 10.3x | +4.2% |
-| 104 Weeks (2Y) | $27.85 | $34.81 | $41.77 | 10.0x | +4.1% |
-| 156 Weeks (3Y) | $28.97 | $36.21 | $43.45 | 9.7x | +4.1% |
+| 52 Weeks (1Y) | $26.79 | $33.49 | $40.19 | 10.3x | +4.2% |
+| 104 Weeks (2Y) | $27.86 | $34.82 | $41.78 | 10.0x | +4.1% |
+| 156 Weeks (3Y) | $28.98 | $36.22 | $43.46 | 9.7x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

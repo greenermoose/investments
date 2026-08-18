@@ -53,6 +53,7 @@ To maintain data integrity across investment dossiers, valuation models, and tra
 | ERR-2026-08-007 | 2026-08-17 | `scripts/data/market_prices.json` | XYZ Market Price Record | $100.00 Synthetic Benchmark | $80.31 Live Exchange Feed | METHODOLOGY_CALCULATION_ERROR | Direct Exchange / Yahoo Finance Chart API | RESOLVED |
 | ERR-2026-08-008 | 2026-08-17 | `scripts/data/company_meta.json` | ZM Official Company Name | Zoom Video Communications, Inc. | Zoom Communications, Inc. | TRANSCRIPTION_ERROR | SEC EDGAR Form 10-Q filed 2026-06-04 (CIK 0001585521) | RESOLVED |
 | ERR-2026-08-009 | 2026-08-17 | `scripts/return_engine.py` / `context/theses/*.md` | Universe ROI Predictions & Target Price Valuation Models | Synthetic Clustering (20%, 22%, 0%) | Grounded Continuous ROI Distribution (-12.7% to +28.0%) with Bottom-Up Multi-Horizon Valuation Models | METHODOLOGY_CALCULATION_ERROR | Tier 1 SEC EDGAR 10-K/10-Q Financials & Deterministic Valuation Model | RESOLVED |
+| ERR-2026-08-010 | 2026-08-17 | `scripts/valuation_model.py` / `context/theses/CSIQ.md` | Target P/S Multiple Lower Bound & Target Exit Price Synchronization | Hardcoded 0.5x P/S Floor inflating low-margin firms (e.g. CSIQ +42.9% ROI with AVOID rating) | Proportionate multiple scaling without arbitrary floor; synchronized 156-week base target with target exit price | METHODOLOGY_CALCULATION_ERROR | Empirical ROI Distribution Benchmark & SEC Form 20-F Filings | RESOLVED |
 
 ## Resolution Procedures for Target Dossiers
 

@@ -52,10 +52,10 @@ ORLY currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $72.40 | $90.50 | $108.60 | 4.1x | +1.2% |
-| 52 Weeks (1Y) | $77.91 | $97.39 | $116.87 | 4.1x | +7.9% |
-| 104 Weeks (2Y) | $84.02 | $105.03 | $126.04 | 4.0x | +7.9% |
-| 156 Weeks (3Y) | $90.64 | $113.30 | $135.96 | 4.0x | +7.9% |
+| 13 Weeks | $72.45 | $90.56 | $108.67 | 4.1x | +1.5% |
+| 52 Weeks (1Y) | $77.87 | $97.34 | $116.81 | 4.1x | +7.9% |
+| 104 Weeks (2Y) | $84.00 | $105.00 | $126.00 | 4.0x | +7.9% |
+| 156 Weeks (3Y) | $90.58 | $113.23 | $135.88 | 4.0x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $80.42 | $100.53 | $120.64 | 9.7x | -11.0% |
-| 52 Weeks (1Y) | $74.66 | $93.33 | $112.00 | 9.2x | -9.8% |
-| 104 Weeks (2Y) | $66.84 | $83.55 | $100.26 | 8.5x | -10.1% |
-| 156 Weeks (3Y) | $59.62 | $74.52 | $89.42 | 7.9x | -10.4% |
+| 13 Weeks | $80.41 | $100.51 | $120.61 | 9.7x | -11.0% |
+| 52 Weeks (1Y) | $74.67 | $93.34 | $112.01 | 9.2x | -9.8% |
+| 104 Weeks (2Y) | $66.86 | $83.57 | $100.28 | 8.5x | -10.1% |
+| 156 Weeks (3Y) | $59.63 | $74.54 | $89.45 | 7.9x | -10.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

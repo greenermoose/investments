@@ -52,10 +52,10 @@ TDOC currently trades at a Price-to-Sales (P/S) multiple of ~0.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $5.22 | $6.52 | $7.82 | 0.5x | -1.2% |
-| 52 Weeks (1Y) | $5.78 | $7.23 | $8.68 | 0.5x | +10.6% |
-| 104 Weeks (2Y) | $6.39 | $7.99 | $9.59 | 0.5x | +10.5% |
-| 156 Weeks (3Y) | $7.05 | $8.81 | $10.57 | 0.5x | +10.4% |
+| 13 Weeks | $5.18 | $6.48 | $7.78 | 0.5x | -3.6% |
+| 52 Weeks (1Y) | $5.82 | $7.27 | $8.72 | 0.5x | +11.2% |
+| 104 Weeks (2Y) | $6.34 | $7.93 | $9.52 | 0.5x | +10.1% |
+| 156 Weeks (3Y) | $7.06 | $8.83 | $10.60 | 0.5x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~14.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $431.77 | $539.71 | $647.65 | 14.0x | +2.8% |
-| 52 Weeks (1Y) | $462.10 | $577.63 | $693.16 | 13.8x | +7.8% |
-| 104 Weeks (2Y) | $496.88 | $621.10 | $745.32 | 13.3x | +7.6% |
-| 156 Weeks (3Y) | $534.14 | $667.68 | $801.22 | 12.9x | +7.6% |
+| 13 Weeks | $431.62 | $539.52 | $647.42 | 14.0x | +2.6% |
+| 52 Weeks (1Y) | $462.14 | $577.68 | $693.22 | 13.8x | +7.8% |
+| 104 Weeks (2Y) | $496.78 | $620.97 | $745.16 | 13.3x | +7.6% |
+| 156 Weeks (3Y) | $534.11 | $667.64 | $801.17 | 12.9x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

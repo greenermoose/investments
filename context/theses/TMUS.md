@@ -52,10 +52,10 @@ TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $143.86 | $179.82 | $215.78 | 2.2x | -0.7% |
-| 52 Weeks (1Y) | $151.08 | $188.85 | $226.62 | 2.2x | +4.8% |
-| 104 Weeks (2Y) | $158.16 | $197.70 | $237.24 | 2.1x | +4.8% |
-| 156 Weeks (3Y) | $165.58 | $206.97 | $248.36 | 2.1x | +4.7% |
+| 13 Weeks | $143.62 | $179.52 | $215.42 | 2.2x | -1.3% |
+| 52 Weeks (1Y) | $151.13 | $188.91 | $226.69 | 2.2x | +4.9% |
+| 104 Weeks (2Y) | $158.27 | $197.84 | $237.41 | 2.1x | +4.8% |
+| 156 Weeks (3Y) | $165.62 | $207.03 | $248.44 | 2.1x | +4.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

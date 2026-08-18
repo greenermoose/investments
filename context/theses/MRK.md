@@ -52,10 +52,10 @@ MRK currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $108.42 | $135.52 | $162.62 | 5.1x | -1.3% |
-| 52 Weeks (1Y) | $113.32 | $141.65 | $169.98 | 5.0x | +4.2% |
-| 104 Weeks (2Y) | $117.86 | $147.33 | $176.80 | 4.9x | +4.1% |
-| 156 Weeks (3Y) | $122.59 | $153.24 | $183.89 | 4.8x | +4.1% |
+| 13 Weeks | $108.39 | $135.49 | $162.59 | 5.1x | -1.4% |
+| 52 Weeks (1Y) | $113.36 | $141.70 | $170.04 | 5.0x | +4.2% |
+| 104 Weeks (2Y) | $117.93 | $147.41 | $176.89 | 4.9x | +4.1% |
+| 156 Weeks (3Y) | $122.58 | $153.22 | $183.86 | 4.8x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

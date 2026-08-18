@@ -52,10 +52,10 @@ ZM currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $85.03 | $106.29 | $127.55 | 6.3x | +2.8% |
-| 52 Weeks (1Y) | $91.01 | $113.76 | $136.51 | 6.2x | +7.8% |
-| 104 Weeks (2Y) | $97.86 | $122.32 | $146.78 | 6.0x | +7.6% |
-| 156 Weeks (3Y) | $105.19 | $131.49 | $157.79 | 5.8x | +7.6% |
+| 13 Weeks | $85.08 | $106.35 | $127.62 | 6.3x | +3.0% |
+| 52 Weeks (1Y) | $90.96 | $113.70 | $136.44 | 6.2x | +7.7% |
+| 104 Weeks (2Y) | $97.76 | $122.20 | $146.64 | 6.0x | +7.6% |
+| 156 Weeks (3Y) | $105.10 | $131.38 | $157.66 | 5.8x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

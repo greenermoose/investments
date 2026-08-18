@@ -52,10 +52,10 @@ KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $69.04 | $86.30 | $103.56 | 7.5x | -3.1% |
-| 52 Weeks (1Y) | $71.90 | $89.87 | $107.84 | 7.6x | +3.3% |
-| 104 Weeks (2Y) | $74.22 | $92.77 | $111.32 | 7.4x | +3.3% |
-| 156 Weeks (3Y) | $76.63 | $95.79 | $114.95 | 7.3x | +3.3% |
+| 13 Weeks | $69.00 | $86.25 | $103.50 | 7.5x | -3.3% |
+| 52 Weeks (1Y) | $71.88 | $89.85 | $107.82 | 7.6x | +3.3% |
+| 104 Weeks (2Y) | $74.21 | $92.76 | $111.31 | 7.4x | +3.3% |
+| 156 Weeks (3Y) | $76.60 | $95.75 | $114.90 | 7.3x | +3.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

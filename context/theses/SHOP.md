@@ -52,10 +52,10 @@ SHOP currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $119.74 | $149.68 | $179.62 | 17.1x | +2.8% |
-| 52 Weeks (1Y) | $128.15 | $160.19 | $192.23 | 16.9x | +7.8% |
-| 104 Weeks (2Y) | $137.80 | $172.25 | $206.70 | 16.3x | +7.6% |
-| 156 Weeks (3Y) | $148.14 | $185.17 | $222.20 | 15.7x | +7.6% |
+| 13 Weeks | $119.72 | $149.65 | $179.58 | 17.1x | +2.7% |
+| 52 Weeks (1Y) | $128.11 | $160.14 | $192.17 | 16.9x | +7.7% |
+| 104 Weeks (2Y) | $137.78 | $172.23 | $206.68 | 16.3x | +7.6% |
+| 156 Weeks (3Y) | $148.09 | $185.11 | $222.13 | 15.7x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

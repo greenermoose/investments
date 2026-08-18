@@ -52,10 +52,10 @@ JPM currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $288.91 | $361.14 | $433.37 | 5.0x | +0.2% |
-| 52 Weeks (1Y) | $308.51 | $385.64 | $462.77 | 5.1x | +6.8% |
-| 104 Weeks (2Y) | $329.34 | $411.68 | $494.02 | 5.0x | +6.8% |
-| 156 Weeks (3Y) | $351.66 | $439.57 | $527.48 | 4.9x | +6.8% |
+| 13 Weeks | $288.78 | $360.97 | $433.16 | 5.0x | +0.0% |
+| 52 Weeks (1Y) | $308.50 | $385.62 | $462.74 | 5.1x | +6.8% |
+| 104 Weeks (2Y) | $329.15 | $411.44 | $493.73 | 5.0x | +6.8% |
+| 156 Weeks (3Y) | $351.80 | $439.75 | $527.70 | 4.9x | +6.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

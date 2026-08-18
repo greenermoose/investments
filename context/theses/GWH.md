@@ -52,8 +52,8 @@ GWH currently trades at a Price-to-Sales (P/S) multiple of ~5.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $0.48 | $0.60 | $0.72 | 5.3x | -6.4% |
-| 52 Weeks (1Y) | $0.50 | $0.62 | $0.74 | 5.3x | +1.6% |
+| 13 Weeks | $0.49 | $0.61 | $0.73 | 5.3x | +0.0% |
+| 52 Weeks (1Y) | $0.50 | $0.62 | $0.74 | 5.2x | +1.6% |
 | 104 Weeks (2Y) | $0.50 | $0.62 | $0.74 | 5.1x | +0.8% |
 | 156 Weeks (3Y) | $0.50 | $0.63 | $0.76 | 4.9x | +1.1% |
 

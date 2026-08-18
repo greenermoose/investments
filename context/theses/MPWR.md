@@ -52,10 +52,10 @@ MPWR currently trades at a Price-to-Sales (P/S) multiple of ~24.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1140.62 | $1425.77 | $1710.92 | 24.0x | +2.8% |
-| 52 Weeks (1Y) | $1187.42 | $1484.28 | $1781.14 | 23.0x | +4.8% |
-| 104 Weeks (2Y) | $1237.20 | $1546.50 | $1855.80 | 21.5x | +4.5% |
-| 156 Weeks (3Y) | $1285.64 | $1607.05 | $1928.46 | 20.1x | +4.3% |
+| 13 Weeks | $1140.79 | $1425.99 | $1711.19 | 24.0x | +2.9% |
+| 52 Weeks (1Y) | $1187.30 | $1484.13 | $1780.96 | 23.0x | +4.8% |
+| 104 Weeks (2Y) | $1236.91 | $1546.14 | $1855.37 | 21.5x | +4.5% |
+| 156 Weeks (3Y) | $1285.53 | $1606.91 | $1928.29 | 20.1x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

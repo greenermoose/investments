@@ -54,8 +54,8 @@ PLTR currently trades at a Price-to-Sales (P/S) multiple of ~88.2x on trailing t
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $142.51 | $178.14 | $213.77 | 86.4x | +13.6% |
 | 52 Weeks (1Y) | $153.17 | $191.46 | $229.75 | 79.5x | +11.0% |
-| 104 Weeks (2Y) | $167.28 | $209.10 | $250.92 | 70.5x | +10.1% |
-| 156 Weeks (3Y) | $180.48 | $225.60 | $270.72 | 61.7x | +9.3% |
+| 104 Weeks (2Y) | $167.29 | $209.11 | $250.93 | 70.5x | +10.1% |
+| 156 Weeks (3Y) | $180.50 | $225.62 | $270.74 | 61.7x | +9.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

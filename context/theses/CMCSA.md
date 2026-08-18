@@ -9,8 +9,8 @@
 - **Target Exit Price:** $25.54 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.0 / 10.0
-- **Rating:** AVOID
-- **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1166691
 
 ## Core Investment Thesis
@@ -20,7 +20,7 @@ Comcast Corporation (CMCSA) operates as an established participant within the Co
 Comcast Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +2.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CMCSA currently trades at a Price-to-Sales (P/S) multiple of ~0.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.0%, fully justifying our AVOID rating.
+CMCSA currently trades at a Price-to-Sales (P/S) multiple of ~0.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
@@ -52,10 +52,10 @@ CMCSA currently trades at a Price-to-Sales (P/S) multiple of ~0.7x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $20.25 | $25.31 | $30.37 | 0.7x | -4.0% |
-| 52 Weeks (1Y) | $20.45 | $25.56 | $30.67 | 0.7x | -0.0% |
-| 104 Weeks (2Y) | $20.38 | $25.47 | $30.56 | 0.7x | -0.2% |
-| 156 Weeks (3Y) | $20.30 | $25.37 | $30.44 | 0.7x | -0.3% |
+| 13 Weeks | $20.24 | $25.30 | $30.36 | 0.7x | -4.2% |
+| 52 Weeks (1Y) | $20.58 | $25.72 | $30.86 | 0.7x | +0.6% |
+| 104 Weeks (2Y) | $20.52 | $25.65 | $30.78 | 0.7x | +0.2% |
+| 156 Weeks (3Y) | $20.43 | $25.54 | $30.65 | 0.7x | -0.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

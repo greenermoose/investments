@@ -52,10 +52,10 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $79.00 | $98.75 | $118.50 | 6.3x | -1.2% |
-| 52 Weeks (1Y) | $82.61 | $103.26 | $123.91 | 6.3x | +4.2% |
-| 104 Weeks (2Y) | $85.98 | $107.48 | $128.98 | 6.1x | +4.2% |
-| 156 Weeks (3Y) | $89.50 | $111.87 | $134.24 | 5.9x | +4.1% |
+| 13 Weeks | $78.98 | $98.72 | $118.46 | 6.3x | -1.4% |
+| 52 Weeks (1Y) | $82.60 | $103.25 | $123.90 | 6.3x | +4.2% |
+| 104 Weeks (2Y) | $86.04 | $107.55 | $129.06 | 6.1x | +4.2% |
+| 156 Weeks (3Y) | $89.56 | $111.95 | $134.34 | 5.9x | +4.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

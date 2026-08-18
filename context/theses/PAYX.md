@@ -52,9 +52,9 @@ PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $94.54 | $118.17 | $141.80 | 6.4x | -1.2% |
+| 13 Weeks | $94.51 | $118.14 | $141.77 | 6.4x | -1.3% |
 | 52 Weeks (1Y) | $98.86 | $123.57 | $148.28 | 6.3x | +4.2% |
-| 104 Weeks (2Y) | $102.89 | $128.61 | $154.33 | 6.2x | +4.2% |
+| 104 Weeks (2Y) | $102.85 | $128.56 | $154.27 | 6.2x | +4.1% |
 | 156 Weeks (3Y) | $107.09 | $133.86 | $160.63 | 6.0x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage

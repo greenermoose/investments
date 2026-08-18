@@ -52,10 +52,10 @@ AVGO currently trades at a Price-to-Sales (P/S) multiple of ~28.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $321.47 | $401.84 | $482.21 | 27.9x | +9.9% |
-| 52 Weeks (1Y) | $351.97 | $439.96 | $527.95 | 26.8x | +12.1% |
-| 104 Weeks (2Y) | $392.22 | $490.28 | $588.34 | 25.1x | +11.8% |
-| 156 Weeks (3Y) | $435.92 | $544.90 | $653.88 | 23.4x | +11.6% |
+| 13 Weeks | $321.42 | $401.77 | $482.12 | 27.9x | +9.9% |
+| 52 Weeks (1Y) | $351.94 | $439.93 | $527.92 | 26.8x | +12.1% |
+| 104 Weeks (2Y) | $392.11 | $490.14 | $588.17 | 25.1x | +11.8% |
+| 156 Weeks (3Y) | $435.85 | $544.81 | $653.77 | 23.4x | +11.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

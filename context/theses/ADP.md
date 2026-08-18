@@ -52,10 +52,10 @@ ADP currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $212.18 | $265.23 | $318.28 | 4.7x | -1.2% |
-| 52 Weeks (1Y) | $221.88 | $277.35 | $332.82 | 4.7x | +4.2% |
-| 104 Weeks (2Y) | $230.94 | $288.67 | $346.40 | 4.6x | +4.2% |
-| 156 Weeks (3Y) | $240.36 | $300.45 | $360.54 | 4.5x | +4.1% |
+| 13 Weeks | $212.23 | $265.29 | $318.35 | 4.8x | -1.2% |
+| 52 Weeks (1Y) | $221.98 | $277.48 | $332.98 | 4.7x | +4.3% |
+| 104 Weeks (2Y) | $231.13 | $288.91 | $346.69 | 4.6x | +4.2% |
+| 156 Weeks (3Y) | $240.46 | $300.58 | $360.70 | 4.5x | +4.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

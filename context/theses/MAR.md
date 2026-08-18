@@ -52,10 +52,10 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $286.00 | $357.50 | $429.00 | 3.5x | +1.0% |
-| 52 Weeks (1Y) | $302.18 | $377.72 | $453.26 | 3.5x | +5.9% |
-| 104 Weeks (2Y) | $319.39 | $399.24 | $479.09 | 3.4x | +5.8% |
-| 156 Weeks (3Y) | $337.51 | $421.89 | $506.27 | 3.2x | +5.8% |
+| 13 Weeks | $285.70 | $357.13 | $428.56 | 3.5x | +0.6% |
+| 52 Weeks (1Y) | $302.45 | $378.06 | $453.67 | 3.5x | +6.0% |
+| 104 Weeks (2Y) | $319.90 | $399.88 | $479.86 | 3.4x | +5.9% |
+| 156 Weeks (3Y) | $337.93 | $422.41 | $506.89 | 3.2x | +5.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

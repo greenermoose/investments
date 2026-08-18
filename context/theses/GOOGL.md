@@ -52,10 +52,10 @@ GOOGL currently trades at a Price-to-Sales (P/S) multiple of ~10.5x on trailing 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $279.21 | $349.01 | $418.81 | 10.3x | +6.0% |
-| 52 Weeks (1Y) | $310.91 | $388.64 | $466.37 | 10.4x | +13.0% |
-| 104 Weeks (2Y) | $350.98 | $438.72 | $526.46 | 10.2x | +12.9% |
-| 156 Weeks (3Y) | $396.29 | $495.36 | $594.43 | 10.0x | +12.9% |
+| 13 Weeks | $279.32 | $349.15 | $418.98 | 10.3x | +6.1% |
+| 52 Weeks (1Y) | $310.83 | $388.54 | $466.25 | 10.4x | +12.9% |
+| 104 Weeks (2Y) | $350.86 | $438.57 | $526.28 | 10.2x | +12.9% |
+| 156 Weeks (3Y) | $396.31 | $495.39 | $594.47 | 10.0x | +12.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

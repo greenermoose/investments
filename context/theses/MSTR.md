@@ -52,9 +52,9 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~70.1x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $78.20 | $97.75 | $117.30 | 68.7x | +0.3% |
+| 13 Weeks | $78.21 | $97.76 | $117.31 | 68.7x | +0.3% |
 | 52 Weeks (1Y) | $76.56 | $95.70 | $114.84 | 63.1x | -2.0% |
-| 104 Weeks (2Y) | $73.82 | $92.28 | $110.74 | 56.0x | -2.8% |
+| 104 Weeks (2Y) | $73.83 | $92.29 | $110.75 | 56.0x | -2.8% |
 | 156 Weeks (3Y) | $70.33 | $87.91 | $105.49 | 49.0x | -3.5% |
 
 ## Analyst Price Targets & Wall Street Coverage

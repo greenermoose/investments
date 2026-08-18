@@ -52,10 +52,10 @@ AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $333.66 | $417.08 | $500.50 | 6.2x | -2.2% |
-| 52 Weeks (1Y) | $344.10 | $430.12 | $516.14 | 6.2x | +2.6% |
-| 104 Weeks (2Y) | $352.12 | $440.15 | $528.18 | 5.9x | +2.4% |
-| 156 Weeks (3Y) | $360.25 | $450.31 | $540.37 | 5.7x | +2.4% |
+| 13 Weeks | $333.78 | $417.23 | $500.68 | 6.2x | -2.0% |
+| 52 Weeks (1Y) | $344.38 | $430.47 | $516.56 | 6.2x | +2.6% |
+| 104 Weeks (2Y) | $352.22 | $440.28 | $528.34 | 6.0x | +2.5% |
+| 156 Weeks (3Y) | $360.38 | $450.48 | $540.58 | 5.7x | +2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

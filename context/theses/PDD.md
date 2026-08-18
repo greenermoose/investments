@@ -52,10 +52,10 @@ PDD currently trades at a Price-to-Sales (P/S) multiple of ~1.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $70.82 | $88.53 | $106.24 | 1.1x | +7.5% |
-| 52 Weeks (1Y) | $83.76 | $104.70 | $125.64 | 1.2x | +20.4% |
-| 104 Weeks (2Y) | $100.86 | $126.08 | $151.30 | 1.2x | +20.4% |
-| 156 Weeks (3Y) | $121.23 | $151.54 | $181.85 | 1.3x | +20.3% |
+| 13 Weeks | $70.62 | $88.27 | $105.92 | 1.1x | +6.3% |
+| 52 Weeks (1Y) | $83.47 | $104.34 | $125.21 | 1.2x | +20.0% |
+| 104 Weeks (2Y) | $100.62 | $125.77 | $150.92 | 1.2x | +20.3% |
+| 156 Weeks (3Y) | $121.14 | $151.43 | $181.72 | 1.3x | +20.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

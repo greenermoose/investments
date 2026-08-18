@@ -52,10 +52,10 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $35.94 | $44.93 | $53.92 | 1.8x | -5.5% |
-| 52 Weeks (1Y) | $36.13 | $45.16 | $54.19 | 1.7x | -0.9% |
-| 104 Weeks (2Y) | $35.73 | $44.66 | $53.59 | 1.7x | -1.0% |
-| 156 Weeks (3Y) | $35.32 | $44.15 | $52.98 | 1.6x | -1.0% |
+| 13 Weeks | $35.91 | $44.89 | $53.87 | 1.8x | -5.8% |
+| 52 Weeks (1Y) | $36.17 | $45.21 | $54.25 | 1.7x | -0.8% |
+| 104 Weeks (2Y) | $35.78 | $44.72 | $53.66 | 1.7x | -0.9% |
+| 156 Weeks (3Y) | $35.35 | $44.19 | $53.03 | 1.6x | -1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

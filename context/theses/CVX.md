@@ -52,10 +52,10 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $160.70 | $200.88 | $241.06 | 2.1x | -3.5% |
-| 52 Weeks (1Y) | $163.98 | $204.97 | $245.96 | 2.0x | +1.1% |
-| 104 Weeks (2Y) | $165.43 | $206.79 | $248.15 | 2.0x | +1.0% |
-| 156 Weeks (3Y) | $166.87 | $208.59 | $250.31 | 1.9x | +1.0% |
+| 13 Weeks | $160.90 | $201.13 | $241.36 | 2.1x | -3.1% |
+| 52 Weeks (1Y) | $163.97 | $204.96 | $245.95 | 2.0x | +1.1% |
+| 104 Weeks (2Y) | $165.54 | $206.93 | $248.32 | 2.0x | +1.0% |
+| 156 Weeks (3Y) | $166.92 | $208.65 | $250.38 | 1.9x | +1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

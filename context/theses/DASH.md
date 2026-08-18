@@ -52,10 +52,10 @@ DASH currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $174.48 | $218.10 | $261.72 | 6.6x | +10.5% |
-| 52 Weeks (1Y) | $195.80 | $244.75 | $293.70 | 6.4x | +15.1% |
-| 104 Weeks (2Y) | $224.61 | $280.76 | $336.91 | 6.2x | +14.9% |
-| 156 Weeks (3Y) | $257.50 | $321.87 | $386.24 | 5.9x | +14.8% |
+| 13 Weeks | $174.45 | $218.06 | $261.67 | 6.6x | +10.4% |
+| 52 Weeks (1Y) | $195.82 | $244.77 | $293.72 | 6.4x | +15.1% |
+| 104 Weeks (2Y) | $224.75 | $280.94 | $337.13 | 6.2x | +14.9% |
+| 156 Weeks (3Y) | $257.48 | $321.85 | $386.22 | 5.9x | +14.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

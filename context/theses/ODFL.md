@@ -52,10 +52,10 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $169.04 | $211.30 | $253.56 | 7.8x | -1.2% |
-| 52 Weeks (1Y) | $176.77 | $220.96 | $265.15 | 7.8x | +4.2% |
-| 104 Weeks (2Y) | $183.98 | $229.97 | $275.96 | 7.6x | +4.2% |
-| 156 Weeks (3Y) | $191.49 | $239.36 | $287.23 | 7.3x | +4.1% |
+| 13 Weeks | $169.02 | $211.28 | $253.54 | 7.8x | -1.3% |
+| 52 Weeks (1Y) | $176.78 | $220.97 | $265.16 | 7.8x | +4.3% |
+| 104 Weeks (2Y) | $183.91 | $229.89 | $275.87 | 7.5x | +4.1% |
+| 156 Weeks (3Y) | $191.44 | $239.30 | $287.16 | 7.3x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

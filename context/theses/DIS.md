@@ -52,10 +52,10 @@ DIS currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $82.34 | $102.93 | $123.52 | 1.9x | -2.2% |
-| 52 Weeks (1Y) | $84.92 | $106.15 | $127.38 | 1.8x | +2.6% |
-| 104 Weeks (2Y) | $86.90 | $108.63 | $130.36 | 1.8x | +2.4% |
-| 156 Weeks (3Y) | $88.90 | $111.13 | $133.36 | 1.7x | +2.4% |
+| 13 Weeks | $82.55 | $103.19 | $123.83 | 1.9x | -1.2% |
+| 52 Weeks (1Y) | $84.90 | $106.12 | $127.34 | 1.8x | +2.5% |
+| 104 Weeks (2Y) | $86.62 | $108.27 | $129.92 | 1.8x | +2.3% |
+| 156 Weeks (3Y) | $88.74 | $110.93 | $133.12 | 1.7x | +2.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

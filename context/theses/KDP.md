@@ -52,10 +52,10 @@ KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $24.00 | $30.00 | $36.00 | 2.5x | -3.6% |
-| 52 Weeks (1Y) | $24.49 | $30.61 | $36.73 | 2.5x | +1.1% |
+| 13 Weeks | $23.99 | $29.99 | $35.99 | 2.5x | -3.8% |
+| 52 Weeks (1Y) | $24.51 | $30.64 | $36.77 | 2.5x | +1.2% |
 | 104 Weeks (2Y) | $24.69 | $30.86 | $37.03 | 2.4x | +1.0% |
-| 156 Weeks (3Y) | $24.90 | $31.12 | $37.34 | 2.3x | +0.9% |
+| 156 Weeks (3Y) | $24.94 | $31.18 | $37.42 | 2.3x | +1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

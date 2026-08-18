@@ -53,9 +53,9 @@ ARM currently trades at a Price-to-Sales (P/S) multiple of ~61.4x on trailing tw
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $224.00 | $280.00 | $336.00 | 60.2x | +13.2% |
-| 52 Weeks (1Y) | $240.20 | $300.25 | $360.30 | 55.3x | +10.6% |
-| 104 Weeks (2Y) | $261.51 | $326.89 | $392.27 | 49.1x | +9.7% |
-| 156 Weeks (3Y) | $281.29 | $351.61 | $421.93 | 43.0x | +9.0% |
+| 52 Weeks (1Y) | $240.21 | $300.26 | $360.31 | 55.4x | +10.6% |
+| 104 Weeks (2Y) | $261.50 | $326.88 | $392.26 | 49.1x | +9.7% |
+| 156 Weeks (3Y) | $281.28 | $351.60 | $421.92 | 43.0x | +9.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

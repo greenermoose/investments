@@ -52,10 +52,10 @@ UNH currently trades at a Price-to-Sales (P/S) multiple of ~0.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $316.98 | $396.23 | $475.48 | 0.8x | +0.6% |
-| 52 Weeks (1Y) | $356.66 | $445.83 | $535.00 | 0.8x | +12.7% |
-| 104 Weeks (2Y) | $401.90 | $502.37 | $602.84 | 0.9x | +12.7% |
-| 156 Weeks (3Y) | $451.98 | $564.98 | $677.98 | 0.9x | +12.6% |
+| 13 Weeks | $317.26 | $396.57 | $475.88 | 0.8x | +1.0% |
+| 52 Weeks (1Y) | $355.80 | $444.75 | $533.70 | 0.8x | +12.4% |
+| 104 Weeks (2Y) | $402.18 | $502.72 | $603.26 | 0.9x | +12.7% |
+| 156 Weeks (3Y) | $454.04 | $567.55 | $681.06 | 0.9x | +12.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

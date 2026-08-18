@@ -52,10 +52,10 @@ COST currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $764.78 | $955.98 | $1147.18 | 1.5x | +1.0% |
-| 52 Weeks (1Y) | $863.21 | $1079.01 | $1294.81 | 1.6x | +13.2% |
-| 104 Weeks (2Y) | $976.74 | $1220.93 | $1465.12 | 1.6x | +13.2% |
-| 156 Weeks (3Y) | $1103.10 | $1378.87 | $1654.64 | 1.7x | +13.1% |
+| 13 Weeks | $766.70 | $958.38 | $1150.06 | 1.5x | +2.1% |
+| 52 Weeks (1Y) | $864.47 | $1080.59 | $1296.71 | 1.6x | +13.3% |
+| 104 Weeks (2Y) | $976.79 | $1220.99 | $1465.19 | 1.6x | +13.2% |
+| 156 Weeks (3Y) | $1102.67 | $1378.34 | $1654.01 | 1.7x | +13.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

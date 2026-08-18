@@ -52,10 +52,10 @@ MSFT currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $389.75 | $487.19 | $584.63 | 10.5x | +5.8% |
-| 52 Weeks (1Y) | $433.58 | $541.97 | $650.36 | 10.6x | +12.8% |
-| 104 Weeks (2Y) | $488.80 | $611.00 | $733.20 | 10.4x | +12.8% |
-| 156 Weeks (3Y) | $551.18 | $688.98 | $826.78 | 10.2x | +12.8% |
+| 13 Weeks | $389.82 | $487.28 | $584.74 | 10.5x | +5.9% |
+| 52 Weeks (1Y) | $433.76 | $542.20 | $650.64 | 10.6x | +12.9% |
+| 104 Weeks (2Y) | $489.14 | $611.43 | $733.72 | 10.4x | +12.8% |
+| 156 Weeks (3Y) | $551.44 | $689.30 | $827.16 | 10.2x | +12.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

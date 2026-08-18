@@ -52,10 +52,10 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $313.92 | $392.40 | $470.88 | 4.9x | +2.8% |
-| 52 Weeks (1Y) | $335.98 | $419.97 | $503.96 | 4.8x | +7.8% |
-| 104 Weeks (2Y) | $361.26 | $451.57 | $541.88 | 4.6x | +7.6% |
-| 156 Weeks (3Y) | $388.35 | $485.44 | $582.53 | 4.5x | +7.6% |
+| 13 Weeks | $313.62 | $392.03 | $470.44 | 4.8x | +2.4% |
+| 52 Weeks (1Y) | $335.96 | $419.95 | $503.94 | 4.8x | +7.8% |
+| 104 Weeks (2Y) | $361.12 | $451.40 | $541.68 | 4.6x | +7.6% |
+| 156 Weeks (3Y) | $388.50 | $485.63 | $582.76 | 4.5x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

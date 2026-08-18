@@ -52,10 +52,10 @@ META currently trades at a Price-to-Sales (P/S) multiple of ~7.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $463.26 | $579.08 | $694.90 | 7.2x | +7.3% |
-| 52 Weeks (1Y) | $520.75 | $650.94 | $781.13 | 7.2x | +14.4% |
-| 104 Weeks (2Y) | $595.30 | $744.13 | $892.96 | 7.1x | +14.4% |
-| 156 Weeks (3Y) | $680.67 | $850.84 | $1021.01 | 7.0x | +14.4% |
+| 13 Weeks | $463.29 | $579.11 | $694.93 | 7.2x | +7.3% |
+| 52 Weeks (1Y) | $521.10 | $651.38 | $781.66 | 7.2x | +14.5% |
+| 104 Weeks (2Y) | $595.23 | $744.04 | $892.85 | 7.1x | +14.4% |
+| 156 Weeks (3Y) | $680.66 | $850.83 | $1021.00 | 7.0x | +14.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

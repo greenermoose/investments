@@ -52,10 +52,10 @@ WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $154.15 | $192.69 | $231.23 | 5.0x | +3.2% |
-| 52 Weeks (1Y) | $164.34 | $205.42 | $246.50 | 4.9x | +7.4% |
-| 104 Weeks (2Y) | $176.06 | $220.07 | $264.08 | 4.7x | +7.3% |
-| 156 Weeks (3Y) | $188.49 | $235.61 | $282.73 | 4.5x | +7.2% |
+| 13 Weeks | $154.01 | $192.51 | $231.01 | 5.0x | +2.8% |
+| 52 Weeks (1Y) | $164.50 | $205.63 | $246.76 | 4.9x | +7.6% |
+| 104 Weeks (2Y) | $176.13 | $220.16 | $264.19 | 4.7x | +7.3% |
+| 156 Weeks (3Y) | $188.62 | $235.77 | $282.92 | 4.5x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

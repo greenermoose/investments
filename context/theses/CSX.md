@@ -52,10 +52,10 @@ CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $40.25 | $50.31 | $60.37 | 6.5x | -2.1% |
-| 52 Weeks (1Y) | $42.23 | $52.79 | $63.35 | 6.6x | +4.4% |
-| 104 Weeks (2Y) | $44.04 | $55.05 | $66.06 | 6.4x | +4.3% |
-| 156 Weeks (3Y) | $45.94 | $57.43 | $68.92 | 6.3x | +4.3% |
+| 13 Weeks | $40.26 | $50.32 | $60.38 | 6.5x | -2.0% |
+| 52 Weeks (1Y) | $42.22 | $52.78 | $63.34 | 6.5x | +4.3% |
+| 104 Weeks (2Y) | $44.06 | $55.07 | $66.08 | 6.4x | +4.3% |
+| 156 Weeks (3Y) | $45.95 | $57.44 | $68.93 | 6.3x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

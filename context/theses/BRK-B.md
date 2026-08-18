@@ -52,10 +52,10 @@ BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $398.27 | $497.84 | $597.41 | 2.8x | -0.3% |
-| 52 Weeks (1Y) | $427.95 | $534.94 | $641.93 | 2.9x | +7.4% |
-| 104 Weeks (2Y) | $459.37 | $574.21 | $689.05 | 2.9x | +7.4% |
-| 156 Weeks (3Y) | $493.17 | $616.46 | $739.75 | 2.8x | +7.4% |
+| 13 Weeks | $397.77 | $497.21 | $596.65 | 2.8x | -0.8% |
+| 52 Weeks (1Y) | $427.58 | $534.48 | $641.38 | 2.9x | +7.3% |
+| 104 Weeks (2Y) | $458.93 | $573.66 | $688.39 | 2.9x | +7.3% |
+| 156 Weeks (3Y) | $492.54 | $615.68 | $738.82 | 2.8x | +7.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

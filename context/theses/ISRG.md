@@ -52,10 +52,10 @@ ISRG currently trades at a Price-to-Sales (P/S) multiple of ~13.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $318.67 | $398.34 | $478.01 | 13.6x | +8.5% |
-| 52 Weeks (1Y) | $361.13 | $451.41 | $541.69 | 13.6x | +15.6% |
-| 104 Weeks (2Y) | $417.30 | $521.63 | $625.96 | 13.4x | +15.6% |
-| 156 Weeks (3Y) | $482.32 | $602.90 | $723.48 | 13.2x | +15.6% |
+| 13 Weeks | $318.69 | $398.36 | $478.03 | 13.6x | +8.5% |
+| 52 Weeks (1Y) | $361.18 | $451.48 | $541.78 | 13.6x | +15.7% |
+| 104 Weeks (2Y) | $417.24 | $521.55 | $625.86 | 13.4x | +15.6% |
+| 156 Weeks (3Y) | $482.20 | $602.75 | $723.30 | 13.2x | +15.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

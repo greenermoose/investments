@@ -52,7 +52,7 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1.89 | $2.36 | $2.83 | 24.5x | +1.7% |
+| 13 Weeks | $1.89 | $2.36 | $2.83 | 24.4x | +1.7% |
 | 52 Weeks (1Y) | $1.85 | $2.31 | $2.77 | 22.1x | -1.7% |
 | 104 Weeks (2Y) | $1.78 | $2.22 | $2.66 | 19.1x | -2.8% |
 | 156 Weeks (3Y) | $1.68 | $2.10 | $2.52 | 16.2x | -3.7% |

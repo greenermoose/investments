@@ -52,10 +52,10 @@ DDOG currently trades at a Price-to-Sales (P/S) multiple of ~25.2x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $203.02 | $253.78 | $304.54 | 24.7x | +10.9% |
-| 52 Weeks (1Y) | $223.69 | $279.61 | $335.53 | 23.7x | +13.1% |
+| 13 Weeks | $203.06 | $253.82 | $304.58 | 24.7x | +10.9% |
+| 52 Weeks (1Y) | $223.66 | $279.58 | $335.50 | 23.7x | +13.0% |
 | 104 Weeks (2Y) | $251.38 | $314.22 | $377.06 | 22.2x | +12.7% |
-| 156 Weeks (3Y) | $281.74 | $352.17 | $422.60 | 20.7x | +12.5% |
+| 156 Weeks (3Y) | $281.70 | $352.13 | $422.56 | 20.7x | +12.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

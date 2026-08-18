@@ -52,10 +52,10 @@ CTAS currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $158.70 | $198.38 | $238.06 | 7.5x | +1.1% |
-| 52 Weeks (1Y) | $170.66 | $213.32 | $255.98 | 7.5x | +7.8% |
-| 104 Weeks (2Y) | $183.88 | $229.85 | $275.82 | 7.4x | +7.8% |
-| 156 Weeks (3Y) | $198.18 | $247.72 | $297.26 | 7.3x | +7.8% |
+| 13 Weeks | $158.76 | $198.45 | $238.14 | 7.5x | +1.3% |
+| 52 Weeks (1Y) | $170.56 | $213.20 | $255.84 | 7.5x | +7.8% |
+| 104 Weeks (2Y) | $184.03 | $230.04 | $276.05 | 7.4x | +7.8% |
+| 156 Weeks (3Y) | $198.23 | $247.79 | $297.35 | 7.3x | +7.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

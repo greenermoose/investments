@@ -52,10 +52,10 @@ SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $85.86 | $107.33 | $128.80 | 3.2x | -2.2% |
-| 52 Weeks (1Y) | $88.54 | $110.68 | $132.82 | 3.2x | +2.6% |
-| 104 Weeks (2Y) | $90.61 | $113.26 | $135.91 | 3.1x | +2.4% |
-| 156 Weeks (3Y) | $92.70 | $115.88 | $139.06 | 3.0x | +2.4% |
+| 13 Weeks | $85.82 | $107.28 | $128.74 | 3.2x | -2.4% |
+| 52 Weeks (1Y) | $88.58 | $110.73 | $132.88 | 3.2x | +2.6% |
+| 104 Weeks (2Y) | $90.73 | $113.41 | $136.09 | 3.1x | +2.5% |
+| 156 Weeks (3Y) | $92.80 | $116.00 | $139.20 | 3.0x | +2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

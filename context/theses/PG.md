@@ -52,10 +52,10 @@ PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $113.74 | $142.18 | $170.62 | 3.8x | -2.6% |
-| 52 Weeks (1Y) | $118.90 | $148.62 | $178.34 | 3.8x | +3.8% |
-| 104 Weeks (2Y) | $123.36 | $154.20 | $185.04 | 3.7x | +3.8% |
-| 156 Weeks (3Y) | $128.03 | $160.04 | $192.05 | 3.6x | +3.8% |
+| 13 Weeks | $113.66 | $142.07 | $170.48 | 3.8x | -2.9% |
+| 52 Weeks (1Y) | $119.02 | $148.77 | $178.52 | 3.8x | +3.9% |
+| 104 Weeks (2Y) | $123.33 | $154.16 | $184.99 | 3.7x | +3.8% |
+| 156 Weeks (3Y) | $128.10 | $160.13 | $192.16 | 3.6x | +3.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

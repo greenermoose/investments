@@ -52,10 +52,10 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $31.22 | $39.02 | $46.82 | 1.2x | -0.7% |
-| 52 Weeks (1Y) | $34.76 | $43.45 | $52.14 | 1.3x | +11.2% |
-| 104 Weeks (2Y) | $38.64 | $48.30 | $57.96 | 1.3x | +11.2% |
-| 156 Weeks (3Y) | $42.87 | $53.59 | $64.31 | 1.4x | +11.1% |
+| 13 Weeks | $31.17 | $38.96 | $46.75 | 1.2x | -1.3% |
+| 52 Weeks (1Y) | $34.82 | $43.53 | $52.24 | 1.3x | +11.4% |
+| 104 Weeks (2Y) | $38.63 | $48.29 | $57.95 | 1.3x | +11.1% |
+| 156 Weeks (3Y) | $42.82 | $53.53 | $64.24 | 1.4x | +11.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

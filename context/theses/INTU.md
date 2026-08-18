@@ -53,9 +53,9 @@ INTU currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $271.35 | $339.19 | $407.03 | 4.8x | +4.3% |
-| 52 Weeks (1Y) | $295.72 | $369.65 | $443.58 | 4.8x | +10.1% |
-| 104 Weeks (2Y) | $325.20 | $406.50 | $487.80 | 4.7x | +10.1% |
-| 156 Weeks (3Y) | $357.64 | $447.05 | $536.46 | 4.5x | +10.0% |
+| 52 Weeks (1Y) | $295.81 | $369.76 | $443.71 | 4.8x | +10.2% |
+| 104 Weeks (2Y) | $324.90 | $406.12 | $487.34 | 4.7x | +10.0% |
+| 156 Weeks (3Y) | $357.30 | $446.63 | $535.96 | 4.5x | +10.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

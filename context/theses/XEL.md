@@ -52,10 +52,10 @@ XEL currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $62.63 | $78.29 | $93.95 | 3.2x | -4.6% |
-| 52 Weeks (1Y) | $63.41 | $79.26 | $95.11 | 3.2x | +0.1% |
-| 104 Weeks (2Y) | $63.31 | $79.14 | $94.97 | 3.0x | -0.0% |
-| 156 Weeks (3Y) | $63.20 | $79.00 | $94.80 | 2.9x | -0.1% |
+| 13 Weeks | $62.58 | $78.22 | $93.86 | 3.2x | -4.9% |
+| 52 Weeks (1Y) | $63.40 | $79.25 | $95.10 | 3.2x | +0.1% |
+| 104 Weeks (2Y) | $63.32 | $79.15 | $94.98 | 3.0x | -0.0% |
+| 156 Weeks (3Y) | $63.17 | $78.96 | $94.75 | 2.9x | -0.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

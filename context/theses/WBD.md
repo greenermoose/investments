@@ -52,9 +52,9 @@ WBD currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $21.68 | $27.10 | $32.52 | 1.9x | -11.4% |
-| 52 Weeks (1Y) | $19.69 | $24.61 | $29.53 | 1.7x | -11.9% |
-| 104 Weeks (2Y) | $17.16 | $21.45 | $25.74 | 1.6x | -12.4% |
+| 13 Weeks | $21.70 | $27.12 | $32.54 | 1.9x | -11.1% |
+| 52 Weeks (1Y) | $19.70 | $24.62 | $29.54 | 1.8x | -11.9% |
+| 104 Weeks (2Y) | $17.18 | $21.48 | $25.78 | 1.6x | -12.3% |
 | 156 Weeks (3Y) | $14.85 | $18.56 | $22.27 | 1.4x | -12.7% |
 
 ## Analyst Price Targets & Wall Street Coverage

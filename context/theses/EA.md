@@ -52,10 +52,10 @@ EA currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $167.98 | $209.98 | $251.98 | 7.0x | +0.5% |
-| 52 Weeks (1Y) | $176.82 | $221.03 | $265.24 | 6.9x | +5.4% |
-| 104 Weeks (2Y) | $185.96 | $232.45 | $278.94 | 6.6x | +5.3% |
-| 156 Weeks (3Y) | $195.53 | $244.41 | $293.29 | 6.4x | +5.2% |
+| 13 Weeks | $168.07 | $210.09 | $252.11 | 7.0x | +0.7% |
+| 52 Weeks (1Y) | $176.72 | $220.90 | $265.08 | 6.9x | +5.3% |
+| 104 Weeks (2Y) | $185.90 | $232.37 | $278.84 | 6.6x | +5.3% |
+| 156 Weeks (3Y) | $195.60 | $244.50 | $293.40 | 6.4x | +5.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

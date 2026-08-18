@@ -52,10 +52,10 @@ DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $72.13 | $90.16 | $108.19 | 7.3x | +6.5% |
-| 52 Weeks (1Y) | $79.26 | $99.07 | $118.88 | 7.2x | +11.6% |
-| 104 Weeks (2Y) | $88.26 | $110.33 | $132.40 | 7.0x | +11.5% |
-| 156 Weeks (3Y) | $98.27 | $122.84 | $147.41 | 6.7x | +11.4% |
+| 13 Weeks | $72.17 | $90.21 | $108.25 | 7.3x | +6.7% |
+| 52 Weeks (1Y) | $79.26 | $99.08 | $118.90 | 7.2x | +11.6% |
+| 104 Weeks (2Y) | $88.32 | $110.40 | $132.48 | 7.0x | +11.5% |
+| 156 Weeks (3Y) | $98.28 | $122.85 | $147.42 | 6.7x | +11.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

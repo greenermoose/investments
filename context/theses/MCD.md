@@ -52,10 +52,10 @@ MCD currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $211.26 | $264.08 | $316.90 | 7.0x | -2.2% |
-| 52 Weeks (1Y) | $219.35 | $274.19 | $329.03 | 6.9x | +3.3% |
-| 104 Weeks (2Y) | $226.14 | $282.68 | $339.22 | 6.7x | +3.2% |
-| 156 Weeks (3Y) | $233.16 | $291.45 | $349.74 | 6.5x | +3.2% |
+| 13 Weeks | $211.35 | $264.19 | $317.03 | 7.0x | -2.0% |
+| 52 Weeks (1Y) | $219.30 | $274.13 | $328.96 | 6.9x | +3.2% |
+| 104 Weeks (2Y) | $226.22 | $282.78 | $339.34 | 6.7x | +3.2% |
+| 156 Weeks (3Y) | $233.17 | $291.46 | $349.75 | 6.5x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ FANG currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $163.54 | $204.43 | $245.32 | 3.6x | -3.6% |
-| 52 Weeks (1Y) | $166.88 | $208.60 | $250.32 | 3.5x | +1.1% |
-| 104 Weeks (2Y) | $168.37 | $210.46 | $252.55 | 3.4x | +1.0% |
-| 156 Weeks (3Y) | $169.83 | $212.29 | $254.75 | 3.3x | +1.0% |
+| 13 Weeks | $163.59 | $204.49 | $245.39 | 3.6x | -3.4% |
+| 52 Weeks (1Y) | $166.80 | $208.50 | $250.20 | 3.5x | +1.1% |
+| 104 Weeks (2Y) | $168.50 | $210.62 | $252.74 | 3.4x | +1.0% |
+| 156 Weeks (3Y) | $169.99 | $212.49 | $254.99 | 3.3x | +1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ WMT currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $90.85 | $113.56 | $136.27 | 1.3x | -2.7% |
-| 52 Weeks (1Y) | $93.97 | $117.46 | $140.95 | 1.3x | +2.7% |
-| 104 Weeks (2Y) | $96.39 | $120.49 | $144.59 | 1.2x | +2.7% |
-| 156 Weeks (3Y) | $98.89 | $123.61 | $148.33 | 1.2x | +2.6% |
+| 13 Weeks | $91.16 | $113.95 | $136.74 | 1.3x | -1.3% |
+| 52 Weeks (1Y) | $94.18 | $117.72 | $141.26 | 1.3x | +3.0% |
+| 104 Weeks (2Y) | $96.25 | $120.31 | $144.37 | 1.2x | +2.6% |
+| 156 Weeks (3Y) | $99.10 | $123.87 | $148.64 | 1.2x | +2.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

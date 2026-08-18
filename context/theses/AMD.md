@@ -52,10 +52,10 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $415.55 | $519.44 | $623.33 | 23.4x | +11.1% |
-| 52 Weeks (1Y) | $458.42 | $573.03 | $687.64 | 22.4x | +13.2% |
-| 104 Weeks (2Y) | $516.02 | $645.02 | $774.02 | 21.0x | +12.9% |
-| 156 Weeks (3Y) | $579.31 | $724.14 | $868.97 | 19.5x | +12.7% |
+| 13 Weeks | $415.46 | $519.33 | $623.20 | 23.4x | +11.0% |
+| 52 Weeks (1Y) | $458.51 | $573.14 | $687.77 | 22.4x | +13.3% |
+| 104 Weeks (2Y) | $516.09 | $645.11 | $774.13 | 21.0x | +12.9% |
+| 156 Weeks (3Y) | $579.26 | $724.08 | $868.90 | 19.5x | +12.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

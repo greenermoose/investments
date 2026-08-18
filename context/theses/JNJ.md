@@ -52,10 +52,10 @@ JNJ currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $209.21 | $261.51 | $313.81 | 6.6x | -1.3% |
-| 52 Weeks (1Y) | $218.66 | $273.32 | $327.98 | 6.6x | +4.2% |
-| 104 Weeks (2Y) | $227.43 | $284.29 | $341.15 | 6.4x | +4.1% |
-| 156 Weeks (3Y) | $236.56 | $295.70 | $354.84 | 6.2x | +4.1% |
+| 13 Weeks | $209.33 | $261.66 | $313.99 | 6.6x | -1.1% |
+| 52 Weeks (1Y) | $218.55 | $273.19 | $327.83 | 6.6x | +4.1% |
+| 104 Weeks (2Y) | $227.44 | $284.30 | $341.16 | 6.4x | +4.1% |
+| 156 Weeks (3Y) | $236.49 | $295.61 | $354.73 | 6.2x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

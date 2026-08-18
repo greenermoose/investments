@@ -52,10 +52,10 @@ GS currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $841.46 | $1051.83 | $1262.20 | 4.9x | +0.2% |
-| 52 Weeks (1Y) | $898.55 | $1123.19 | $1347.83 | 4.9x | +6.8% |
-| 104 Weeks (2Y) | $959.22 | $1199.02 | $1438.82 | 4.8x | +6.8% |
-| 156 Weeks (3Y) | $1024.21 | $1280.26 | $1536.31 | 4.7x | +6.8% |
+| 13 Weeks | $841.83 | $1052.29 | $1262.75 | 4.9x | +0.4% |
+| 52 Weeks (1Y) | $899.40 | $1124.25 | $1349.10 | 4.9x | +6.9% |
+| 104 Weeks (2Y) | $959.14 | $1198.93 | $1438.72 | 4.8x | +6.8% |
+| 156 Weeks (3Y) | $1024.66 | $1280.82 | $1536.98 | 4.8x | +6.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ FER currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $50.98 | $63.72 | $76.46 | 4.7x | -1.2% |
-| 52 Weeks (1Y) | $53.30 | $66.63 | $79.96 | 4.7x | +4.2% |
-| 104 Weeks (2Y) | $55.48 | $69.35 | $83.22 | 4.5x | +4.2% |
-| 156 Weeks (3Y) | $57.74 | $72.18 | $86.62 | 4.4x | +4.1% |
+| 13 Weeks | $50.98 | $63.73 | $76.48 | 4.7x | -1.2% |
+| 52 Weeks (1Y) | $53.33 | $66.66 | $79.99 | 4.7x | +4.3% |
+| 104 Weeks (2Y) | $55.50 | $69.38 | $83.26 | 4.5x | +4.2% |
+| 156 Weeks (3Y) | $57.72 | $72.15 | $86.58 | 4.4x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

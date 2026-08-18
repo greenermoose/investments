@@ -53,9 +53,9 @@ AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twe
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $99.81 | $124.76 | $149.71 | 3.0x | -5.5% |
-| 52 Weeks (1Y) | $101.00 | $126.25 | $151.50 | 3.0x | -0.2% |
-| 104 Weeks (2Y) | $100.62 | $125.78 | $150.94 | 2.9x | -0.3% |
-| 156 Weeks (3Y) | $100.25 | $125.31 | $150.37 | 2.8x | -0.3% |
+| 52 Weeks (1Y) | $100.98 | $126.22 | $151.46 | 3.0x | -0.2% |
+| 104 Weeks (2Y) | $100.69 | $125.86 | $151.03 | 2.9x | -0.3% |
+| 156 Weeks (3Y) | $100.31 | $125.39 | $150.47 | 2.8x | -0.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

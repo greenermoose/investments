@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $14.79 per share
 - **Current Price:** $14.79 per share
-- **Target Exit Price:** $43.11 per share
+- **Target Exit Price:** $11.21 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.5 / 10.0
 - **Rating:** AVOID
@@ -14,13 +14,13 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1375877
 
 ## Core Investment Thesis
-Canadian Solar Inc. (CSIQ) operates as an established participant within the Energy sector (Solar Modules & Battery Storage). Designs, manufactures, and sells solar photovoltaic modules and operates utility-scale solar and battery storage project development. The company benefits from a defensible commercial moat (Vertically integrated solar manufacturing; offset by severe global polysilicon and module overcapacity, Chinese price wars, and gross margin compression.). Grounded in our deterministic valuation framework, CSIQ trades at $14.79 against a 3-year baseline target of $43.11, generating a modeled annualized ROI of 42.9% under our disciplined portfolio allocation criteria.
+Canadian Solar Inc. (CSIQ) operates as an established participant within the Energy sector (Solar Modules & Battery Storage). Designs, manufactures, and sells solar photovoltaic modules and operates utility-scale solar and battery storage project development. The company benefits from a defensible commercial moat (Vertically integrated solar manufacturing; offset by severe global polysilicon and module overcapacity, Chinese price wars, and gross margin compression.). Grounded in our deterministic valuation framework, CSIQ trades at $14.79 against a 3-year baseline target of $11.21, generating a modeled annualized ROI of -8.8% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
 Canadian Solar Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSIQ currently trades at a Price-to-Sales (P/S) multiple of ~0.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 42.9%, fully justifying our AVOID rating.
+CSIQ currently trades at a Price-to-Sales (P/S) multiple of ~0.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -8.8%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
@@ -52,10 +52,10 @@ CSIQ currently trades at a Price-to-Sales (P/S) multiple of ~0.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $11.64 | $14.55 | $17.46 | 0.2x | -6.3% |
-| 52 Weeks (1Y) | $11.02 | $13.77 | $16.52 | 0.2x | -6.9% |
-| 104 Weeks (2Y) | $10.14 | $12.68 | $15.22 | 0.1x | -7.4% |
-| 156 Weeks (3Y) | $9.27 | $11.59 | $13.91 | 0.1x | -7.8% |
+| 13 Weeks | $11.93 | $14.91 | $17.89 | 0.2x | +3.3% |
+| 52 Weeks (1Y) | $10.72 | $13.40 | $16.08 | 0.2x | -9.4% |
+| 104 Weeks (2Y) | $10.20 | $12.75 | $15.30 | 0.1x | -7.2% |
+| 156 Weeks (3Y) | $8.97 | $11.21 | $13.45 | 0.1x | -8.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

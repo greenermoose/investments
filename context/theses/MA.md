@@ -52,10 +52,10 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $454.18 | $567.72 | $681.26 | 15.1x | +3.9% |
-| 52 Weeks (1Y) | $498.53 | $623.16 | $747.79 | 15.1x | +10.8% |
-| 104 Weeks (2Y) | $552.08 | $690.10 | $828.12 | 14.9x | +10.8% |
-| 156 Weeks (3Y) | $611.52 | $764.40 | $917.28 | 14.6x | +10.8% |
+| 13 Weeks | $454.10 | $567.62 | $681.14 | 15.1x | +3.9% |
+| 52 Weeks (1Y) | $498.63 | $623.29 | $747.95 | 15.2x | +10.9% |
+| 104 Weeks (2Y) | $551.90 | $689.87 | $827.84 | 14.9x | +10.8% |
+| 156 Weeks (3Y) | $611.49 | $764.36 | $917.23 | 14.6x | +10.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

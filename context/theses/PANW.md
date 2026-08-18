@@ -52,10 +52,10 @@ PANW currently trades at a Price-to-Sales (P/S) multiple of ~33.3x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $304.98 | $381.22 | $457.46 | 32.6x | +5.9% |
-| 52 Weeks (1Y) | $324.74 | $405.93 | $487.12 | 31.3x | +8.0% |
+| 13 Weeks | $305.02 | $381.27 | $457.52 | 32.6x | +6.0% |
+| 52 Weeks (1Y) | $324.79 | $405.99 | $487.19 | 31.3x | +8.0% |
 | 104 Weeks (2Y) | $348.70 | $435.88 | $523.06 | 29.2x | +7.7% |
-| 156 Weeks (3Y) | $373.44 | $466.80 | $560.16 | 27.3x | +7.5% |
+| 156 Weeks (3Y) | $373.50 | $466.88 | $560.26 | 27.3x | +7.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

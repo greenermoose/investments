@@ -52,10 +52,10 @@ KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $19.65 | $24.56 | $29.47 | 1.2x | -3.0% |
-| 52 Weeks (1Y) | $20.25 | $25.31 | $30.37 | 1.2x | +2.3% |
-| 104 Weeks (2Y) | $20.68 | $25.85 | $31.02 | 1.1x | +2.2% |
-| 156 Weeks (3Y) | $21.12 | $26.40 | $31.68 | 1.1x | +2.2% |
+| 13 Weeks | $19.69 | $24.61 | $29.53 | 1.2x | -2.2% |
+| 52 Weeks (1Y) | $20.26 | $25.32 | $30.38 | 1.2x | +2.3% |
+| 104 Weeks (2Y) | $20.73 | $25.91 | $31.09 | 1.1x | +2.3% |
+| 156 Weeks (3Y) | $21.19 | $26.49 | $31.79 | 1.1x | +2.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

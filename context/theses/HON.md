@@ -52,10 +52,10 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $182.78 | $228.48 | $274.18 | 1.8x | -1.7% |
-| 52 Weeks (1Y) | $192.45 | $240.56 | $288.67 | 1.8x | +4.8% |
-| 104 Weeks (2Y) | $201.60 | $252.00 | $302.40 | 1.8x | +4.8% |
-| 156 Weeks (3Y) | $211.23 | $264.04 | $316.85 | 1.7x | +4.8% |
+| 13 Weeks | $182.38 | $227.97 | $273.56 | 1.8x | -2.6% |
+| 52 Weeks (1Y) | $192.40 | $240.50 | $288.60 | 1.8x | +4.8% |
+| 104 Weeks (2Y) | $201.68 | $252.10 | $302.52 | 1.8x | +4.8% |
+| 156 Weeks (3Y) | $211.34 | $264.18 | $317.02 | 1.7x | +4.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

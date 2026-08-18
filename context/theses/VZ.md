@@ -52,10 +52,10 @@ VZ currently trades at a Price-to-Sales (P/S) multiple of ~1.5x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $37.78 | $47.22 | $56.66 | 1.4x | -6.8% |
-| 52 Weeks (1Y) | $37.55 | $46.94 | $56.33 | 1.4x | -2.3% |
-| 104 Weeks (2Y) | $36.59 | $45.74 | $54.89 | 1.4x | -2.4% |
-| 156 Weeks (3Y) | $35.65 | $44.56 | $53.47 | 1.3x | -2.5% |
+| 13 Weeks | $37.87 | $47.34 | $56.81 | 1.4x | -5.9% |
+| 52 Weeks (1Y) | $37.62 | $47.03 | $56.44 | 1.4x | -2.1% |
+| 104 Weeks (2Y) | $36.66 | $45.83 | $55.00 | 1.4x | -2.3% |
+| 156 Weeks (3Y) | $35.68 | $44.60 | $53.52 | 1.3x | -2.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

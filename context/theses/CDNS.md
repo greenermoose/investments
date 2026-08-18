@@ -52,10 +52,10 @@ CDNS currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $261.80 | $327.25 | $392.70 | 16.4x | +4.8% |
-| 52 Weeks (1Y) | $286.13 | $357.66 | $429.19 | 16.3x | +10.6% |
-| 104 Weeks (2Y) | $315.87 | $394.84 | $473.81 | 15.8x | +10.5% |
-| 156 Weeks (3Y) | $348.72 | $435.90 | $523.08 | 15.4x | +10.5% |
+| 13 Weeks | $261.78 | $327.22 | $392.66 | 16.4x | +4.7% |
+| 52 Weeks (1Y) | $286.22 | $357.78 | $429.34 | 16.3x | +10.6% |
+| 104 Weeks (2Y) | $315.89 | $394.86 | $473.83 | 15.8x | +10.5% |
+| 156 Weeks (3Y) | $348.78 | $435.98 | $523.18 | 15.4x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

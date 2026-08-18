@@ -52,10 +52,10 @@ CTSH currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $45.60 | $57.00 | $68.40 | 1.3x | +2.8% |
+| 13 Weeks | $45.52 | $56.90 | $68.28 | 1.2x | +2.1% |
 | 52 Weeks (1Y) | $52.14 | $65.17 | $78.20 | 1.3x | +15.1% |
-| 104 Weeks (2Y) | $60.02 | $75.02 | $90.02 | 1.4x | +15.1% |
-| 156 Weeks (3Y) | $68.95 | $86.19 | $103.43 | 1.4x | +15.0% |
+| 104 Weeks (2Y) | $60.30 | $75.38 | $90.46 | 1.4x | +15.4% |
+| 156 Weeks (3Y) | $69.17 | $86.46 | $103.75 | 1.4x | +15.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

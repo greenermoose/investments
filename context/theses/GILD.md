@@ -52,10 +52,10 @@ GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $110.00 | $137.50 | $165.00 | 5.9x | -4.0% |
-| 52 Weeks (1Y) | $112.58 | $140.72 | $168.86 | 5.9x | +1.3% |
-| 104 Weeks (2Y) | $113.85 | $142.31 | $170.77 | 5.7x | +1.2% |
-| 156 Weeks (3Y) | $115.14 | $143.93 | $172.72 | 5.6x | +1.2% |
+| 13 Weeks | $110.08 | $137.60 | $165.12 | 5.9x | -3.7% |
+| 52 Weeks (1Y) | $112.64 | $140.80 | $168.96 | 5.9x | +1.4% |
+| 104 Weeks (2Y) | $113.81 | $142.26 | $170.71 | 5.7x | +1.2% |
+| 156 Weeks (3Y) | $115.10 | $143.88 | $172.66 | 5.6x | +1.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

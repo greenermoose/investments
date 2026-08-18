@@ -52,10 +52,10 @@ NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $61.82 | $77.27 | $92.72 | 6.8x | +6.7% |
-| 52 Weeks (1Y) | $68.06 | $85.08 | $102.10 | 6.7x | +11.9% |
-| 104 Weeks (2Y) | $76.01 | $95.01 | $114.01 | 6.5x | +11.8% |
-| 156 Weeks (3Y) | $84.86 | $106.07 | $127.28 | 6.3x | +11.7% |
+| 13 Weeks | $61.86 | $77.32 | $92.78 | 6.8x | +7.0% |
+| 52 Weeks (1Y) | $68.11 | $85.14 | $102.17 | 6.8x | +12.0% |
+| 104 Weeks (2Y) | $76.03 | $95.04 | $114.05 | 6.5x | +11.8% |
+| 156 Weeks (3Y) | $84.89 | $106.11 | $127.33 | 6.3x | +11.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

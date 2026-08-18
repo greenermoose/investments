@@ -52,10 +52,10 @@ CSGP currently trades at a Price-to-Sales (P/S) multiple of ~3.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $24.76 | $30.95 | $37.14 | 3.9x | -5.0% |
-| 52 Weeks (1Y) | $24.98 | $31.22 | $37.46 | 3.8x | -0.4% |
-| 104 Weeks (2Y) | $24.81 | $31.01 | $37.21 | 3.7x | -0.5% |
-| 156 Weeks (3Y) | $24.64 | $30.80 | $36.96 | 3.6x | -0.6% |
+| 13 Weeks | $24.78 | $30.97 | $37.16 | 3.9x | -4.8% |
+| 52 Weeks (1Y) | $25.00 | $31.25 | $37.50 | 3.8x | -0.3% |
+| 104 Weeks (2Y) | $24.80 | $31.00 | $37.20 | 3.7x | -0.6% |
+| 156 Weeks (3Y) | $24.63 | $30.79 | $36.95 | 3.5x | -0.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

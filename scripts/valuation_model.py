@@ -269,14 +269,8 @@ def model_equity_valuation(
         mult_factor = max(mult_factor, 1.10)
 
     target_ps_3y = round(curr_ps * mult_factor, 2)
-    if target_ps_3y < 0.5:
-        target_ps_3y = 0.5
-
-    # 3-Year Fundamental Target
-    h_years = 3.0
-    proj_rev_3y = ttm_rev * ((1.0 + growth_rate) ** h_years)
-    proj_shares_3y = shares * ((1.0 + dilution_rate) ** h_years)
-    target_exit_px = round((proj_rev_3y * target_ps_3y) / proj_shares_3y, 2)
+    if target_ps_3y < 0.05:
+        target_ps_3y = round(max(curr_ps * 0.5, 0.01), 2)
 
     # 13-Quarter Revenue Forecast Matrix
     forecast_rows = []
@@ -333,18 +327,18 @@ def model_equity_valuation(
             "rationale": dilution_desc
         })
 
-    # 4-Horizon Price Ranges
+    # 4-Horizon Price Ranges (Interpolated smoothly toward 3-year target P/S multiple)
     price_horizons = [
-        ("13 Weeks", 13, 0.25, 0.98),
-        ("52 Weeks (1Y)", 52, 1.0, (1.0 + (mult_factor - 1.0) * 0.33)),
-        ("104 Weeks (2Y)", 104, 2.0, (1.0 + (mult_factor - 1.0) * 0.67)),
-        ("156 Weeks (3Y)", 156, 3.0, mult_factor)
+        ("13 Weeks", 13, 0.25, curr_ps * 0.98),
+        ("52 Weeks (1Y)", 52, 1.0, curr_ps + (target_ps_3y - curr_ps) * 0.33),
+        ("104 Weeks (2Y)", 104, 2.0, curr_ps + (target_ps_3y - curr_ps) * 0.67),
+        ("156 Weeks (3Y)", 156, 3.0, target_ps_3y)
     ]
     price_target_ranges = []
-    for p_label, p_wks, p_yrs, p_mult_fact in price_horizons:
+    for p_label, p_wks, p_yrs, p_target_ps in price_horizons:
+        p_target_ps = round(p_target_ps, 2)
         p_rev = ttm_rev * ((1.0 + growth_rate) ** p_yrs)
         p_s = shares * ((1.0 + dilution_rate) ** p_yrs)
-        p_target_ps = curr_ps * p_mult_fact
         base_p = round((p_rev * p_target_ps) / p_s, 2)
         bear_p = round(base_p * 0.80, 2)
         bull_p = round(base_p * 1.20, 2)
@@ -356,14 +350,24 @@ def model_equity_valuation(
             "bear_price": bear_p,
             "base_price": base_p,
             "bull_price": bull_p,
-            "implied_ps_multiple": round(p_target_ps, 1),
+            "implied_ps_multiple": p_target_ps,
             "annualized_cagr_pct": ann_cagr
         })
 
-    # Derive Rating and Options Strategies
+    # 3-Year Fundamental Target Price is synchronized with 156-Week Base Target
+    h_years = 3.0
+    target_exit_px = price_target_ranges[-1]["base_price"]
     base_3y_cagr = price_target_ranges[-1]["annualized_cagr_pct"]
 
-    if base_3y_cagr >= 20.0:
+    # Derive Decisive Rating and Execution Strategy
+    if conv_score < 6.0 or base_3y_cagr < 0.0:
+        rating = "AVOID"
+        target_strategy = "Capital Preservation & Risk Avoidance"
+        entry_strat = "LIMIT_BUY"
+        exit_strat = "LIMIT_SELL"
+        csp_cash = 0.0
+        cc_cash = 0.0
+    elif base_3y_cagr >= 20.0 and conv_score >= 8.0:
         rating = "BUY"
         target_strategy = "High-Growth Secular Compounder with Cash-Secured Put Entry" if conv_score < 9.0 else "High-Conviction Secular Growth Leader with Limit Buy Accumulation"
         if conv_score >= 9.0:
@@ -385,16 +389,9 @@ def model_equity_valuation(
         csp_cash = 0.0
         # Covered call harvest yield ~3.0% annual yield over 3 years (~9% total)
         cc_cash = round(curr_px * 0.09, 2)
-    elif base_3y_cagr >= 0.0:
+    else:
         rating = "SELL"
         target_strategy = "Capital Reallocation & Controlled Limit Exit"
-        entry_strat = "LIMIT_BUY"
-        exit_strat = "LIMIT_SELL"
-        csp_cash = 0.0
-        cc_cash = 0.0
-    else:
-        rating = "AVOID"
-        target_strategy = "Capital Preservation & Risk Avoidance"
         entry_strat = "LIMIT_BUY"
         exit_strat = "LIMIT_SELL"
         csp_cash = 0.0

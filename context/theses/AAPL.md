@@ -52,10 +52,10 @@ AAPL currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $245.78 | $307.23 | $368.68 | 10.6x | +2.2% |
-| 52 Weeks (1Y) | $266.33 | $332.91 | $399.49 | 10.6x | +8.9% |
-| 104 Weeks (2Y) | $289.91 | $362.39 | $434.87 | 10.4x | +8.9% |
-| 156 Weeks (3Y) | $315.66 | $394.57 | $473.48 | 10.2x | +8.9% |
+| 13 Weeks | $245.80 | $307.25 | $368.70 | 10.6x | +2.2% |
+| 52 Weeks (1Y) | $266.41 | $333.01 | $399.61 | 10.6x | +9.0% |
+| 104 Weeks (2Y) | $290.09 | $362.61 | $435.13 | 10.4x | +8.9% |
+| 156 Weeks (3Y) | $315.78 | $394.73 | $473.68 | 10.2x | +8.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

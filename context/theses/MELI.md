@@ -52,10 +52,10 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1483.72 | $1854.65 | $2225.58 | 3.1x | +15.9% |
-| 52 Weeks (1Y) | $1737.26 | $2171.58 | $2605.90 | 3.0x | +21.5% |
-| 104 Weeks (2Y) | $2105.76 | $2632.20 | $3158.64 | 2.9x | +21.3% |
-| 156 Weeks (3Y) | $2551.86 | $3189.82 | $3827.78 | 2.8x | +21.3% |
+| 13 Weeks | $1481.43 | $1851.79 | $2222.15 | 3.1x | +15.2% |
+| 52 Weeks (1Y) | $1734.94 | $2168.67 | $2602.40 | 3.0x | +21.3% |
+| 104 Weeks (2Y) | $2100.18 | $2625.22 | $3150.26 | 2.9x | +21.2% |
+| 156 Weeks (3Y) | $2547.75 | $3184.69 | $3821.63 | 2.8x | +21.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ CAT currently trades at a Price-to-Sales (P/S) multiple of ~6.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $704.90 | $881.13 | $1057.36 | 6.0x | -0.2% |
-| 52 Weeks (1Y) | $750.31 | $937.89 | $1125.47 | 6.1x | +6.4% |
-| 104 Weeks (2Y) | $797.53 | $996.91 | $1196.29 | 5.9x | +6.3% |
-| 156 Weeks (3Y) | $847.91 | $1059.89 | $1271.87 | 5.8x | +6.3% |
+| 13 Weeks | $704.97 | $881.21 | $1057.45 | 6.0x | -0.2% |
+| 52 Weeks (1Y) | $750.18 | $937.73 | $1125.28 | 6.0x | +6.4% |
+| 104 Weeks (2Y) | $796.67 | $995.84 | $1195.01 | 5.9x | +6.3% |
+| 156 Weeks (3Y) | $847.20 | $1059.00 | $1270.80 | 5.8x | +6.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

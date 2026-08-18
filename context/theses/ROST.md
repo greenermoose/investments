@@ -52,10 +52,10 @@ ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $187.64 | $234.55 | $281.46 | 3.4x | -1.2% |
-| 52 Weeks (1Y) | $196.22 | $245.27 | $294.32 | 3.3x | +4.2% |
-| 104 Weeks (2Y) | $204.22 | $255.27 | $306.32 | 3.2x | +4.2% |
-| 156 Weeks (3Y) | $212.56 | $265.70 | $318.84 | 3.2x | +4.1% |
+| 13 Weeks | $187.67 | $234.59 | $281.51 | 3.4x | -1.2% |
+| 52 Weeks (1Y) | $196.37 | $245.46 | $294.55 | 3.3x | +4.3% |
+| 104 Weeks (2Y) | $203.95 | $254.94 | $305.93 | 3.2x | +4.1% |
+| 156 Weeks (3Y) | $212.31 | $265.39 | $318.47 | 3.1x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $181.42 | $226.77 | $272.12 | 3.3x | -3.6% |
-| 52 Weeks (1Y) | $186.31 | $232.89 | $279.47 | 3.3x | +1.8% |
+| 13 Weeks | $181.22 | $226.52 | $271.82 | 3.3x | -4.0% |
+| 52 Weeks (1Y) | $186.20 | $232.75 | $279.30 | 3.3x | +1.7% |
 | 104 Weeks (2Y) | $189.30 | $236.62 | $283.94 | 3.2x | +1.7% |
-| 156 Weeks (3Y) | $192.34 | $240.42 | $288.50 | 3.1x | +1.7% |
+| 156 Weeks (3Y) | $192.29 | $240.36 | $288.43 | 3.1x | +1.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

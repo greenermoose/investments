@@ -52,10 +52,10 @@ TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $127.54 | $159.43 | $191.32 | 6.1x | +2.8% |
-| 52 Weeks (1Y) | $136.51 | $170.64 | $204.77 | 6.1x | +7.8% |
-| 104 Weeks (2Y) | $146.78 | $183.47 | $220.16 | 5.8x | +7.6% |
-| 156 Weeks (3Y) | $157.79 | $197.24 | $236.69 | 5.6x | +7.6% |
+| 13 Weeks | $127.50 | $159.37 | $191.24 | 6.1x | +2.6% |
+| 52 Weeks (1Y) | $136.49 | $170.61 | $204.73 | 6.1x | +7.7% |
+| 104 Weeks (2Y) | $146.83 | $183.54 | $220.25 | 5.8x | +7.7% |
+| 156 Weeks (3Y) | $157.76 | $197.20 | $236.64 | 5.6x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

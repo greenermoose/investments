@@ -52,10 +52,10 @@ AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $271.31 | $339.14 | $406.97 | 3.1x | +3.5% |
-| 52 Weeks (1Y) | $296.92 | $371.15 | $445.38 | 3.1x | +10.4% |
-| 104 Weeks (2Y) | $327.52 | $409.40 | $491.28 | 3.1x | +10.3% |
-| 156 Weeks (3Y) | $361.34 | $451.68 | $542.02 | 3.0x | +10.3% |
+| 13 Weeks | $271.69 | $339.61 | $407.53 | 3.1x | +4.1% |
+| 52 Weeks (1Y) | $297.22 | $371.53 | $445.84 | 3.1x | +10.5% |
+| 104 Weeks (2Y) | $327.22 | $409.03 | $490.84 | 3.1x | +10.3% |
+| 156 Weeks (3Y) | $361.30 | $451.63 | $541.96 | 3.0x | +10.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

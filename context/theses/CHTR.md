@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $144.10 per share
 - **Current Price:** $144.10 per share
-- **Target Exit Price:** $203.92 per share
+- **Target Exit Price:** $106.04 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
@@ -14,13 +14,13 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1091667
 
 ## Core Investment Thesis
-Charter Communications, Inc. (CHTR) operates as an established participant within the Communication Services sector (Broadband Cable & Mobile). Broadband connectivity and cable operator serving over 32 million customers in 41 states through the Spectrum brand. The company benefits from a defensible commercial moat (Dense broadband coax infrastructure, Spectrum Mobile subscriber scaling.). Grounded in our deterministic valuation framework, CHTR trades at $144.10 against a 3-year baseline target of $203.92, generating a modeled annualized ROI of 12.3% under our disciplined portfolio allocation criteria.
+Charter Communications, Inc. (CHTR) operates as an established participant within the Communication Services sector (Broadband Cable & Mobile). Broadband connectivity and cable operator serving over 32 million customers in 41 states through the Spectrum brand. The company benefits from a defensible commercial moat (Dense broadband coax infrastructure, Spectrum Mobile subscriber scaling.). Grounded in our deterministic valuation framework, CHTR trades at $144.10 against a 3-year baseline target of $106.04, generating a modeled annualized ROI of -9.7% under our disciplined portfolio allocation criteria.
 
 ## Revenue Drivers Narrative
 Charter Communications, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of -1.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.3%, fully justifying our AVOID rating.
+CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~0.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -9.7%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Projected Revenue (USD) | YoY Growth (%) | Primary Growth Driver |
@@ -52,10 +52,10 @@ CHTR currently trades at a Price-to-Sales (P/S) multiple of ~0.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $112.14 | $140.17 | $168.20 | 0.3x | -10.5% |
-| 52 Weeks (1Y) | $104.50 | $130.63 | $156.76 | 0.3x | -9.3% |
-| 104 Weeks (2Y) | $94.05 | $117.56 | $141.07 | 0.3x | -9.7% |
-| 156 Weeks (3Y) | $84.32 | $105.40 | $126.48 | 0.3x | -9.9% |
+| 13 Weeks | $113.34 | $141.67 | $170.00 | 0.3x | -6.6% |
+| 52 Weeks (1Y) | $103.90 | $129.88 | $155.86 | 0.3x | -9.9% |
+| 104 Weeks (2Y) | $94.12 | $117.65 | $141.18 | 0.3x | -9.6% |
+| 156 Weeks (3Y) | $84.83 | $106.04 | $127.25 | 0.3x | -9.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

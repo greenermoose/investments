@@ -52,10 +52,10 @@ XYZ currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $64.46 | $80.57 | $96.68 | 2.0x | +1.9% |
-| 52 Weeks (1Y) | $73.20 | $91.50 | $109.80 | 2.1x | +14.1% |
-| 104 Weeks (2Y) | $83.51 | $104.39 | $125.27 | 2.1x | +14.1% |
-| 156 Weeks (3Y) | $95.09 | $118.86 | $142.63 | 2.2x | +14.0% |
+| 13 Weeks | $64.55 | $80.69 | $96.83 | 2.0x | +2.5% |
+| 52 Weeks (1Y) | $73.10 | $91.37 | $109.64 | 2.1x | +13.9% |
+| 104 Weeks (2Y) | $83.47 | $104.34 | $125.21 | 2.1x | +14.1% |
+| 156 Weeks (3Y) | $95.22 | $119.03 | $142.84 | 2.2x | +14.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

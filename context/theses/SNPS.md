@@ -52,10 +52,10 @@ SNPS currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $334.43 | $418.04 | $501.65 | 10.8x | +4.7% |
-| 52 Weeks (1Y) | $365.52 | $456.90 | $548.28 | 10.7x | +10.6% |
-| 104 Weeks (2Y) | $403.51 | $504.39 | $605.27 | 10.4x | +10.5% |
-| 156 Weeks (3Y) | $445.48 | $556.85 | $668.22 | 10.1x | +10.5% |
+| 13 Weeks | $334.37 | $417.96 | $501.55 | 10.8x | +4.7% |
+| 52 Weeks (1Y) | $365.46 | $456.82 | $548.18 | 10.7x | +10.6% |
+| 104 Weeks (2Y) | $403.39 | $504.24 | $605.09 | 10.4x | +10.5% |
+| 156 Weeks (3Y) | $445.34 | $556.67 | $668.00 | 10.1x | +10.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

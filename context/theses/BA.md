@@ -52,10 +52,10 @@ BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $178.43 | $223.04 | $267.65 | 2.0x | -5.1% |
-| 52 Weeks (1Y) | $176.86 | $221.08 | $265.30 | 1.9x | -2.2% |
-| 104 Weeks (2Y) | $172.30 | $215.37 | $258.44 | 1.8x | -2.4% |
-| 156 Weeks (3Y) | $167.61 | $209.51 | $251.41 | 1.7x | -2.5% |
+| 13 Weeks | $178.46 | $223.08 | $267.70 | 2.0x | -5.0% |
+| 52 Weeks (1Y) | $176.89 | $221.11 | $265.33 | 1.9x | -2.1% |
+| 104 Weeks (2Y) | $172.66 | $215.82 | $258.98 | 1.8x | -2.3% |
+| 156 Weeks (3Y) | $168.02 | $210.03 | $252.04 | 1.7x | -2.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

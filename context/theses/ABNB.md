@@ -52,10 +52,10 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $146.11 | $182.64 | $219.17 | 8.6x | +7.7% |
-| 52 Weeks (1Y) | $163.04 | $203.80 | $244.56 | 8.6x | +13.7% |
-| 104 Weeks (2Y) | $185.03 | $231.29 | $277.55 | 8.3x | +13.6% |
-| 156 Weeks (3Y) | $210.00 | $262.50 | $315.00 | 8.1x | +13.6% |
+| 13 Weeks | $146.10 | $182.62 | $219.14 | 8.6x | +7.6% |
+| 52 Weeks (1Y) | $162.95 | $203.69 | $244.43 | 8.6x | +13.6% |
+| 104 Weeks (2Y) | $184.90 | $231.13 | $277.36 | 8.3x | +13.5% |
+| 156 Weeks (3Y) | $209.90 | $262.38 | $314.86 | 8.1x | +13.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

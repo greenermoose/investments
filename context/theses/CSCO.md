@@ -52,10 +52,10 @@ CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $89.50 | $111.88 | $134.26 | 7.7x | -3.6% |
-| 52 Weeks (1Y) | $91.33 | $114.16 | $136.99 | 7.6x | +1.1% |
-| 104 Weeks (2Y) | $92.14 | $115.18 | $138.22 | 7.3x | +1.0% |
-| 156 Weeks (3Y) | $92.94 | $116.18 | $139.42 | 7.1x | +1.0% |
+| 13 Weeks | $89.46 | $111.83 | $134.20 | 7.7x | -3.7% |
+| 52 Weeks (1Y) | $91.31 | $114.14 | $136.97 | 7.6x | +1.1% |
+| 104 Weeks (2Y) | $92.10 | $115.12 | $138.14 | 7.3x | +1.0% |
+| 156 Weeks (3Y) | $92.89 | $116.11 | $139.33 | 7.1x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

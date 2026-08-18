@@ -52,10 +52,10 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $818.61 | $1023.26 | $1227.91 | 29.9x | +4.6% |
-| 52 Weeks (1Y) | $863.59 | $1079.49 | $1295.39 | 28.7x | +6.7% |
-| 104 Weeks (2Y) | $915.86 | $1144.82 | $1373.78 | 26.8x | +6.4% |
-| 156 Weeks (3Y) | $968.71 | $1210.89 | $1453.07 | 25.0x | +6.2% |
+| 13 Weeks | $818.74 | $1023.42 | $1228.10 | 29.9x | +4.7% |
+| 52 Weeks (1Y) | $863.52 | $1079.40 | $1295.28 | 28.7x | +6.7% |
+| 104 Weeks (2Y) | $915.71 | $1144.64 | $1373.57 | 26.8x | +6.4% |
+| 156 Weeks (3Y) | $968.67 | $1210.84 | $1453.01 | 25.0x | +6.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -53,9 +53,9 @@ CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $222.34 | $277.93 | $333.52 | 3.2x | -0.4% |
-| 52 Weeks (1Y) | $230.85 | $288.56 | $346.27 | 3.2x | +3.7% |
-| 104 Weeks (2Y) | $238.72 | $298.40 | $358.08 | 3.0x | +3.6% |
-| 156 Weeks (3Y) | $246.72 | $308.40 | $370.08 | 2.9x | +3.5% |
+| 52 Weeks (1Y) | $231.16 | $288.95 | $346.74 | 3.2x | +3.9% |
+| 104 Weeks (2Y) | $238.59 | $298.24 | $357.89 | 3.0x | +3.5% |
+| 156 Weeks (3Y) | $246.59 | $308.24 | $369.89 | 2.9x | +3.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

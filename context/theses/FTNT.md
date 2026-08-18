@@ -52,10 +52,10 @@ FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $127.45 | $159.31 | $191.17 | 16.6x | +9.2% |
-| 52 Weeks (1Y) | $145.14 | $181.43 | $217.72 | 16.7x | +16.4% |
-| 104 Weeks (2Y) | $168.83 | $211.04 | $253.25 | 16.4x | +16.4% |
-| 156 Weeks (3Y) | $196.43 | $245.54 | $294.65 | 16.1x | +16.4% |
+| 13 Weeks | $127.43 | $159.29 | $191.15 | 16.6x | +9.1% |
+| 52 Weeks (1Y) | $145.14 | $181.42 | $217.70 | 16.6x | +16.4% |
+| 104 Weeks (2Y) | $168.80 | $211.00 | $253.20 | 16.4x | +16.4% |
+| 156 Weeks (3Y) | $196.38 | $245.48 | $294.58 | 16.1x | +16.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ HD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $268.52 | $335.65 | $402.78 | 2.0x | -2.6% |
-| 52 Weeks (1Y) | $277.86 | $347.33 | $416.80 | 1.9x | +2.8% |
-| 104 Weeks (2Y) | $285.18 | $356.48 | $427.78 | 1.9x | +2.7% |
-| 156 Weeks (3Y) | $292.70 | $365.88 | $439.06 | 1.8x | +2.7% |
+| 13 Weeks | $268.50 | $335.62 | $402.74 | 2.0x | -2.6% |
+| 52 Weeks (1Y) | $278.23 | $347.79 | $417.35 | 1.9x | +2.9% |
+| 104 Weeks (2Y) | $284.74 | $355.92 | $427.10 | 1.9x | +2.6% |
+| 156 Weeks (3Y) | $292.68 | $365.85 | $439.02 | 1.8x | +2.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

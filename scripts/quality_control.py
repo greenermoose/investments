@@ -296,6 +296,10 @@ class QualityController:
         # 7. Cross-Store Synchronization & Orphan Detection
         issues.extend(self.check_cross_store_parity())
 
+        # 8. Statistical ROI Distribution Plausibility Check (Full Universe)
+        if not target_symbol:
+            issues.extend(self.check_roi_distribution())
+
         return issues
 
     def check_symbol_validity(self, sym, sec_dir):
@@ -707,6 +711,54 @@ class QualityController:
                 "symbol": "ALL",
                 "field": "context/data/sec_reports.json",
                 "description": "context/data/sec_reports.json is missing."
+            })
+
+        return issues
+
+    def check_roi_distribution(self):
+        """Rule 8: Verifies that the cross-sectional ROI distribution satisfies empirical benchmark bounds."""
+        issues = []
+        expected_dist_path = os.path.join(self.context_data_dir, "expected_roi_distribution.json")
+        if not os.path.exists(expected_dist_path):
+            issues.append({
+                "severity": "ERROR",
+                "rule": "ROI_DISTRIBUTION_BENCHMARK",
+                "symbol": "ALL",
+                "field": "expected_roi_distribution.json",
+                "description": "Empirical ROI distribution benchmark dataset context/data/expected_roi_distribution.json is missing."
+            })
+            return issues
+
+        try:
+            from compare_roi_distribution import run_comparison
+            res = run_comparison(self.root_dir)
+            for chk in res.get("quality_control_checks", []):
+                if chk.get("status") == "FAIL":
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "ROI_DISTRIBUTION_PLAUSIBILITY",
+                        "symbol": "ALL",
+                        "field": chk.get("check"),
+                        "actual": chk.get("actual"),
+                        "expected": chk.get("acceptable_range"),
+                        "description": f"ROI distribution plausibility failure: {chk.get('check')} (Actual: {chk.get('actual')}, Expected: {chk.get('acceptable_range')}). {chk.get('details')}"
+                    })
+
+            for inc in res.get("inconsistencies", []):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "THESIS_RATING_CONCORDANCE",
+                    "symbol": "MULTI",
+                    "field": "annualized_roi_pct",
+                    "description": inc
+                })
+        except Exception as e:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "ROI_DISTRIBUTION_PLAUSIBILITY",
+                "symbol": "ALL",
+                "field": "run_comparison",
+                "description": f"Error running ROI distribution comparison: {e}"
             })
 
         return issues

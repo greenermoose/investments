@@ -52,10 +52,10 @@ TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $291.06 | $363.83 | $436.60 | 1.6x | -0.7% |
-| 52 Weeks (1Y) | $324.17 | $405.21 | $486.25 | 1.7x | +11.2% |
-| 104 Weeks (2Y) | $360.34 | $450.42 | $540.50 | 1.7x | +11.2% |
-| 156 Weeks (3Y) | $399.76 | $499.70 | $599.64 | 1.8x | +11.1% |
+| 13 Weeks | $290.69 | $363.36 | $436.03 | 1.6x | -1.3% |
+| 52 Weeks (1Y) | $324.74 | $405.93 | $487.12 | 1.7x | +11.4% |
+| 104 Weeks (2Y) | $360.00 | $450.00 | $540.00 | 1.7x | +11.1% |
+| 156 Weeks (3Y) | $398.74 | $498.42 | $598.10 | 1.8x | +11.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

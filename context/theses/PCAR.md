@@ -52,10 +52,10 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $103.85 | $129.81 | $155.77 | 2.4x | -3.1% |
-| 52 Weeks (1Y) | $106.33 | $132.91 | $159.49 | 2.3x | +1.6% |
-| 104 Weeks (2Y) | $107.78 | $134.72 | $161.66 | 2.3x | +1.5% |
-| 156 Weeks (3Y) | $109.21 | $136.51 | $163.81 | 2.2x | +1.4% |
+| 13 Weeks | $104.02 | $130.03 | $156.04 | 2.4x | -2.5% |
+| 52 Weeks (1Y) | $106.12 | $132.65 | $159.18 | 2.3x | +1.4% |
+| 104 Weeks (2Y) | $107.67 | $134.59 | $161.51 | 2.3x | +1.4% |
+| 156 Weeks (3Y) | $109.10 | $136.38 | $163.66 | 2.2x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

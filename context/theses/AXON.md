@@ -52,10 +52,10 @@ AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $499.72 | $624.65 | $749.58 | 17.1x | +14.2% |
-| 52 Weeks (1Y) | $574.64 | $718.30 | $861.96 | 16.8x | +18.9% |
-| 104 Weeks (2Y) | $680.98 | $851.22 | $1021.46 | 16.1x | +18.7% |
-| 156 Weeks (3Y) | $806.50 | $1008.13 | $1209.76 | 15.4x | +18.6% |
+| 13 Weeks | $499.77 | $624.71 | $749.65 | 17.1x | +14.2% |
+| 52 Weeks (1Y) | $574.77 | $718.46 | $862.15 | 16.8x | +18.9% |
+| 104 Weeks (2Y) | $680.81 | $851.01 | $1021.21 | 16.1x | +18.7% |
+| 156 Weeks (3Y) | $806.36 | $1007.95 | $1209.54 | 15.4x | +18.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

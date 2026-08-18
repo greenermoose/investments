@@ -53,9 +53,9 @@ BEAM currently trades at a Price-to-Sales (P/S) multiple of ~48.6x on trailing t
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $21.84 | $27.30 | $32.76 | 47.6x | +3.0% |
-| 52 Weeks (1Y) | $21.81 | $27.26 | $32.71 | 43.8x | +0.6% |
+| 52 Weeks (1Y) | $21.82 | $27.27 | $32.72 | 43.8x | +0.6% |
 | 104 Weeks (2Y) | $21.59 | $26.99 | $32.39 | 38.8x | -0.2% |
-| 156 Weeks (3Y) | $21.12 | $26.40 | $31.68 | 34.0x | -0.9% |
+| 156 Weeks (3Y) | $21.13 | $26.41 | $31.69 | 34.0x | -0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

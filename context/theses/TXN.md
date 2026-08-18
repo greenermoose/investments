@@ -52,10 +52,10 @@ TXN currently trades at a Price-to-Sales (P/S) multiple of ~14.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $225.62 | $282.03 | $338.44 | 14.0x | -1.2% |
-| 52 Weeks (1Y) | $235.94 | $294.92 | $353.90 | 13.9x | +4.2% |
-| 104 Weeks (2Y) | $245.56 | $306.95 | $368.34 | 13.5x | +4.2% |
-| 156 Weeks (3Y) | $255.58 | $319.48 | $383.38 | 13.1x | +4.1% |
+| 13 Weeks | $225.58 | $281.97 | $338.36 | 13.9x | -1.3% |
+| 52 Weeks (1Y) | $235.90 | $294.88 | $353.86 | 13.9x | +4.2% |
+| 104 Weeks (2Y) | $245.66 | $307.07 | $368.48 | 13.5x | +4.2% |
+| 156 Weeks (3Y) | $255.62 | $319.52 | $383.42 | 13.1x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

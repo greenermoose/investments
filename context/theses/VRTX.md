@@ -52,10 +52,10 @@ VRTX currently trades at a Price-to-Sales (P/S) multiple of ~11.1x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $422.33 | $527.91 | $633.49 | 10.9x | +9.9% |
-| 52 Weeks (1Y) | $483.48 | $604.35 | $725.22 | 10.9x | +17.2% |
-| 104 Weeks (2Y) | $566.31 | $707.89 | $849.47 | 10.7x | +17.2% |
-| 156 Weeks (3Y) | $663.47 | $829.34 | $995.21 | 10.5x | +17.2% |
+| 13 Weeks | $422.38 | $527.97 | $633.56 | 10.9x | +10.0% |
+| 52 Weeks (1Y) | $483.59 | $604.49 | $725.39 | 10.9x | +17.3% |
+| 104 Weeks (2Y) | $566.36 | $707.95 | $849.54 | 10.7x | +17.2% |
+| 156 Weeks (3Y) | $663.72 | $829.65 | $995.58 | 10.5x | +17.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

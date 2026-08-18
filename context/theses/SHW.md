@@ -52,10 +52,10 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $277.78 | $347.22 | $416.66 | 3.5x | -3.1% |
-| 52 Weeks (1Y) | $284.41 | $355.51 | $426.61 | 3.5x | +1.6% |
-| 104 Weeks (2Y) | $288.27 | $360.34 | $432.41 | 3.4x | +1.5% |
-| 156 Weeks (3Y) | $292.12 | $365.15 | $438.18 | 3.2x | +1.4% |
+| 13 Weeks | $277.69 | $347.11 | $416.53 | 3.5x | -3.2% |
+| 52 Weeks (1Y) | $284.05 | $355.06 | $426.07 | 3.5x | +1.5% |
+| 104 Weeks (2Y) | $288.07 | $360.09 | $432.11 | 3.4x | +1.4% |
+| 156 Weeks (3Y) | $291.78 | $364.73 | $437.68 | 3.2x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

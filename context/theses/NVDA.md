@@ -52,10 +52,10 @@ NVDA currently trades at a Price-to-Sales (P/S) multiple of ~23.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $188.58 | $235.73 | $282.88 | 23.4x | +20.5% |
-| 52 Weeks (1Y) | $221.14 | $276.43 | $331.72 | 22.4x | +22.9% |
-| 104 Weeks (2Y) | $270.05 | $337.56 | $405.07 | 21.0x | +22.5% |
-| 156 Weeks (3Y) | $328.90 | $411.12 | $493.34 | 19.5x | +22.3% |
+| 13 Weeks | $188.62 | $235.78 | $282.94 | 23.4x | +20.6% |
+| 52 Weeks (1Y) | $221.18 | $276.47 | $331.76 | 22.4x | +22.9% |
+| 104 Weeks (2Y) | $270.07 | $337.59 | $405.11 | 21.0x | +22.5% |
+| 156 Weeks (3Y) | $328.86 | $411.07 | $493.28 | 19.5x | +22.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

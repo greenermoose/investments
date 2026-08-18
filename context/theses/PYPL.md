@@ -52,10 +52,10 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $48.30 | $60.37 | $72.44 | 1.7x | -0.7% |
-| 52 Weeks (1Y) | $50.03 | $62.54 | $75.05 | 1.6x | +3.4% |
-| 104 Weeks (2Y) | $51.59 | $64.49 | $77.39 | 1.6x | +3.3% |
-| 156 Weeks (3Y) | $53.17 | $66.46 | $79.75 | 1.5x | +3.2% |
+| 13 Weeks | $48.27 | $60.34 | $72.41 | 1.7x | -0.9% |
+| 52 Weeks (1Y) | $50.10 | $62.63 | $75.16 | 1.6x | +3.6% |
+| 104 Weeks (2Y) | $51.64 | $64.55 | $77.46 | 1.6x | +3.3% |
+| 156 Weeks (3Y) | $53.12 | $66.40 | $79.68 | 1.5x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

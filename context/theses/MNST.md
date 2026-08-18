@@ -52,10 +52,10 @@ MNST currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $36.69 | $45.86 | $55.03 | 5.1x | +3.0% |
-| 52 Weeks (1Y) | $39.59 | $49.49 | $59.39 | 5.1x | +8.7% |
-| 104 Weeks (2Y) | $42.98 | $53.73 | $64.48 | 4.9x | +8.6% |
-| 156 Weeks (3Y) | $46.66 | $58.33 | $70.00 | 4.8x | +8.6% |
+| 13 Weeks | $36.66 | $45.83 | $55.00 | 5.1x | +2.8% |
+| 52 Weeks (1Y) | $39.60 | $49.50 | $59.40 | 5.1x | +8.7% |
+| 104 Weeks (2Y) | $43.01 | $53.76 | $64.51 | 5.0x | +8.7% |
+| 156 Weeks (3Y) | $46.67 | $58.34 | $70.01 | 4.8x | +8.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

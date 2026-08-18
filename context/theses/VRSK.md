@@ -52,10 +52,10 @@ VRSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $140.06 | $175.07 | $210.08 | 7.7x | -1.2% |
-| 52 Weeks (1Y) | $146.46 | $183.07 | $219.68 | 7.7x | +4.2% |
-| 104 Weeks (2Y) | $152.43 | $190.54 | $228.65 | 7.5x | +4.2% |
-| 156 Weeks (3Y) | $158.66 | $198.32 | $237.98 | 7.2x | +4.1% |
+| 13 Weeks | $140.11 | $175.14 | $210.17 | 7.7x | -1.1% |
+| 52 Weeks (1Y) | $146.34 | $182.92 | $219.50 | 7.7x | +4.2% |
+| 104 Weeks (2Y) | $152.38 | $190.48 | $228.58 | 7.5x | +4.1% |
+| 156 Weeks (3Y) | $158.56 | $198.20 | $237.84 | 7.2x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $64.65 | $80.81 | $96.97 | 8.7x | +2.8% |
-| 52 Weeks (1Y) | $69.19 | $86.49 | $103.79 | 8.6x | +7.8% |
-| 104 Weeks (2Y) | $74.40 | $93.00 | $111.60 | 8.3x | +7.6% |
-| 156 Weeks (3Y) | $79.98 | $99.98 | $119.98 | 8.0x | +7.6% |
+| 13 Weeks | $64.69 | $80.86 | $97.03 | 8.7x | +3.0% |
+| 52 Weeks (1Y) | $69.20 | $86.50 | $103.80 | 8.6x | +7.8% |
+| 104 Weeks (2Y) | $74.34 | $92.92 | $111.50 | 8.3x | +7.6% |
+| 156 Weeks (3Y) | $79.95 | $99.94 | $119.93 | 8.0x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

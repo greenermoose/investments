@@ -52,10 +52,10 @@ IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $439.56 | $549.45 | $659.34 | 9.7x | +2.5% |
-| 52 Weeks (1Y) | $472.60 | $590.75 | $708.90 | 9.6x | +8.2% |
-| 104 Weeks (2Y) | $510.44 | $638.05 | $765.66 | 9.4x | +8.1% |
-| 156 Weeks (3Y) | $551.34 | $689.17 | $827.00 | 9.1x | +8.1% |
+| 13 Weeks | $439.74 | $549.68 | $659.62 | 9.7x | +2.7% |
+| 52 Weeks (1Y) | $472.47 | $590.59 | $708.71 | 9.6x | +8.1% |
+| 104 Weeks (2Y) | $510.25 | $637.81 | $765.37 | 9.4x | +8.1% |
+| 156 Weeks (3Y) | $551.19 | $688.99 | $826.79 | 9.1x | +8.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

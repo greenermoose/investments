@@ -52,10 +52,10 @@ TTWO currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $193.54 | $241.93 | $290.32 | 6.8x | +0.5% |
-| 52 Weeks (1Y) | $203.73 | $254.66 | $305.59 | 6.7x | +5.4% |
-| 104 Weeks (2Y) | $214.26 | $267.82 | $321.38 | 6.4x | +5.3% |
-| 156 Weeks (3Y) | $225.28 | $281.60 | $337.92 | 6.2x | +5.2% |
+| 13 Weeks | $193.48 | $241.85 | $290.22 | 6.8x | +0.4% |
+| 52 Weeks (1Y) | $203.64 | $254.55 | $305.46 | 6.7x | +5.4% |
+| 104 Weeks (2Y) | $214.30 | $267.88 | $321.46 | 6.4x | +5.3% |
+| 156 Weeks (3Y) | $225.24 | $281.55 | $337.86 | 6.2x | +5.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

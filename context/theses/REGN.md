@@ -52,10 +52,10 @@ REGN currently trades at a Price-to-Sales (P/S) multiple of ~5.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $646.56 | $808.20 | $969.84 | 5.8x | +1.1% |
-| 52 Weeks (1Y) | $688.26 | $860.33 | $1032.40 | 5.8x | +6.7% |
-| 104 Weeks (2Y) | $733.56 | $916.95 | $1100.34 | 5.6x | +6.7% |
-| 156 Weeks (3Y) | $781.87 | $977.34 | $1172.81 | 5.5x | +6.6% |
+| 13 Weeks | $646.92 | $808.65 | $970.38 | 5.8x | +1.4% |
+| 52 Weeks (1Y) | $688.40 | $860.50 | $1032.60 | 5.8x | +6.8% |
+| 104 Weeks (2Y) | $733.86 | $917.33 | $1100.80 | 5.6x | +6.7% |
+| 156 Weeks (3Y) | $781.70 | $977.12 | $1172.54 | 5.5x | +6.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

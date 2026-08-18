@@ -52,10 +52,10 @@ CCEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $83.99 | $104.99 | $125.99 | 2.2x | -2.2% |
-| 52 Weeks (1Y) | $87.21 | $109.01 | $130.81 | 2.2x | +3.3% |
-| 104 Weeks (2Y) | $89.91 | $112.39 | $134.87 | 2.1x | +3.2% |
-| 156 Weeks (3Y) | $92.70 | $115.88 | $139.06 | 2.1x | +3.2% |
+| 13 Weeks | $83.88 | $104.85 | $125.82 | 2.2x | -2.7% |
+| 52 Weeks (1Y) | $87.27 | $109.09 | $130.91 | 2.2x | +3.3% |
+| 104 Weeks (2Y) | $90.05 | $112.56 | $135.07 | 2.1x | +3.3% |
+| 156 Weeks (3Y) | $92.84 | $116.05 | $139.26 | 2.1x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

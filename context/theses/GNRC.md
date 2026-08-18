@@ -52,10 +52,10 @@ GNRC currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $176.45 | $220.56 | $264.67 | 3.1x | -1.2% |
-| 52 Weeks (1Y) | $184.51 | $230.64 | $276.77 | 3.0x | +4.2% |
-| 104 Weeks (2Y) | $192.04 | $240.05 | $288.06 | 3.0x | +4.2% |
-| 156 Weeks (3Y) | $199.88 | $249.85 | $299.82 | 2.9x | +4.1% |
+| 13 Weeks | $176.69 | $220.86 | $265.03 | 3.1x | -0.7% |
+| 52 Weeks (1Y) | $184.76 | $230.95 | $277.14 | 3.0x | +4.4% |
+| 104 Weeks (2Y) | $191.97 | $239.96 | $287.95 | 3.0x | +4.1% |
+| 156 Weeks (3Y) | $199.97 | $249.96 | $299.95 | 2.9x | +4.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

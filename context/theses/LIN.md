@@ -52,10 +52,10 @@ LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $376.48 | $470.60 | $564.72 | 6.3x | -3.1% |
-| 52 Weeks (1Y) | $385.47 | $481.84 | $578.21 | 6.2x | +1.6% |
-| 104 Weeks (2Y) | $390.70 | $488.38 | $586.06 | 6.0x | +1.5% |
-| 156 Weeks (3Y) | $395.92 | $494.90 | $593.88 | 5.8x | +1.4% |
+| 13 Weeks | $376.37 | $470.46 | $564.55 | 6.3x | -3.2% |
+| 52 Weeks (1Y) | $385.58 | $481.97 | $578.36 | 6.2x | +1.6% |
+| 104 Weeks (2Y) | $390.73 | $488.41 | $586.09 | 6.0x | +1.5% |
+| 156 Weeks (3Y) | $396.10 | $495.12 | $594.14 | 5.8x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

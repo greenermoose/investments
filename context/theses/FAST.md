@@ -52,10 +52,10 @@ FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $40.90 | $51.13 | $61.36 | 6.9x | -0.8% |
-| 52 Weeks (1Y) | $42.91 | $53.64 | $64.37 | 6.8x | +4.7% |
-| 104 Weeks (2Y) | $44.86 | $56.07 | $67.28 | 6.6x | +4.6% |
-| 156 Weeks (3Y) | $46.89 | $58.61 | $70.33 | 6.5x | +4.6% |
+| 13 Weeks | $40.89 | $51.11 | $61.33 | 6.9x | -0.9% |
+| 52 Weeks (1Y) | $42.93 | $53.66 | $64.39 | 6.8x | +4.7% |
+| 104 Weeks (2Y) | $44.88 | $56.10 | $67.32 | 6.7x | +4.6% |
+| 156 Weeks (3Y) | $46.88 | $58.60 | $70.32 | 6.5x | +4.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

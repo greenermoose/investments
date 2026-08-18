@@ -52,10 +52,10 @@ BAM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $42.46 | $53.07 | $63.68 | 4.2x | +3.9% |
-| 52 Weeks (1Y) | $46.56 | $58.20 | $69.84 | 4.3x | +10.7% |
-| 104 Weeks (2Y) | $51.50 | $64.38 | $77.26 | 4.2x | +10.7% |
-| 156 Weeks (3Y) | $56.98 | $71.23 | $85.48 | 4.1x | +10.7% |
+| 13 Weeks | $42.46 | $53.08 | $63.70 | 4.2x | +3.9% |
+| 52 Weeks (1Y) | $46.52 | $58.15 | $69.78 | 4.2x | +10.6% |
+| 104 Weeks (2Y) | $51.50 | $64.37 | $77.24 | 4.2x | +10.7% |
+| 156 Weeks (3Y) | $57.00 | $71.25 | $85.50 | 4.1x | +10.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

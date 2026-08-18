@@ -52,10 +52,10 @@ APP currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $258.50 | $323.12 | $387.74 | 18.1x | +15.1% |
-| 52 Weeks (1Y) | $292.86 | $366.08 | $439.30 | 17.4x | +17.3% |
-| 104 Weeks (2Y) | $341.58 | $426.98 | $512.38 | 16.2x | +17.0% |
-| 156 Weeks (3Y) | $397.35 | $496.69 | $596.03 | 15.1x | +16.8% |
+| 13 Weeks | $258.42 | $323.03 | $387.64 | 18.1x | +14.9% |
+| 52 Weeks (1Y) | $292.91 | $366.14 | $439.37 | 17.4x | +17.4% |
+| 104 Weeks (2Y) | $341.64 | $427.05 | $512.46 | 16.2x | +17.0% |
+| 156 Weeks (3Y) | $397.34 | $496.67 | $596.00 | 15.1x | +16.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

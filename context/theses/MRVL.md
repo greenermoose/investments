@@ -53,9 +53,9 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing t
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $188.76 | $235.95 | $283.14 | 23.9x | +2.8% |
-| 52 Weeks (1Y) | $196.50 | $245.63 | $294.76 | 23.0x | +4.8% |
-| 104 Weeks (2Y) | $204.74 | $255.93 | $307.12 | 21.5x | +4.5% |
-| 156 Weeks (3Y) | $212.76 | $265.95 | $319.14 | 20.0x | +4.3% |
+| 52 Weeks (1Y) | $196.52 | $245.65 | $294.78 | 23.0x | +4.8% |
+| 104 Weeks (2Y) | $204.70 | $255.87 | $307.04 | 21.5x | +4.5% |
+| 156 Weeks (3Y) | $212.71 | $265.89 | $319.07 | 20.0x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

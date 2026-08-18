@@ -52,10 +52,10 @@ STX currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $801.33 | $1001.66 | $1201.99 | 17.9x | +2.8% |
-| 52 Weeks (1Y) | $834.22 | $1042.77 | $1251.32 | 17.2x | +4.8% |
-| 104 Weeks (2Y) | $869.18 | $1086.48 | $1303.78 | 16.1x | +4.5% |
-| 156 Weeks (3Y) | $903.22 | $1129.02 | $1354.82 | 15.0x | +4.3% |
+| 13 Weeks | $801.54 | $1001.92 | $1202.30 | 17.9x | +2.9% |
+| 52 Weeks (1Y) | $834.47 | $1043.09 | $1251.71 | 17.2x | +4.9% |
+| 104 Weeks (2Y) | $869.44 | $1086.80 | $1304.16 | 16.1x | +4.5% |
+| 156 Weeks (3Y) | $903.29 | $1129.11 | $1354.93 | 15.0x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

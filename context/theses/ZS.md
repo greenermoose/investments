@@ -52,10 +52,10 @@ ZS currently trades at a Price-to-Sales (P/S) multiple of ~11.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $148.57 | $185.71 | $222.85 | 10.9x | +2.8% |
-| 52 Weeks (1Y) | $159.01 | $198.76 | $238.51 | 10.7x | +7.8% |
-| 104 Weeks (2Y) | $170.98 | $213.72 | $256.46 | 10.4x | +7.6% |
-| 156 Weeks (3Y) | $183.80 | $229.75 | $275.70 | 10.0x | +7.6% |
+| 13 Weeks | $148.54 | $185.67 | $222.80 | 10.9x | +2.7% |
+| 52 Weeks (1Y) | $159.04 | $198.80 | $238.56 | 10.7x | +7.8% |
+| 104 Weeks (2Y) | $170.96 | $213.70 | $256.44 | 10.3x | +7.6% |
+| 156 Weeks (3Y) | $183.71 | $229.64 | $275.57 | 10.0x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

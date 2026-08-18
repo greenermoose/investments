@@ -53,7 +53,7 @@ CRSP currently trades at a Price-to-Sales (P/S) multiple of ~1275.6x on trailing
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 13 Weeks | $43.74 | $54.68 | $65.62 | 1250.1x | +3.0% |
-| 52 Weeks (1Y) | $43.68 | $54.60 | $65.52 | 1149.4x | +0.6% |
+| 52 Weeks (1Y) | $43.68 | $54.60 | $65.52 | 1149.3x | +0.6% |
 | 104 Weeks (2Y) | $43.25 | $54.06 | $64.87 | 1019.2x | -0.2% |
 | 156 Weeks (3Y) | $42.30 | $52.88 | $63.46 | 893.0x | -0.9% |
 

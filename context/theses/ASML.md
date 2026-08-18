@@ -52,10 +52,10 @@ ASML currently trades at a Price-to-Sales (P/S) multiple of ~22.2x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1547.82 | $1934.78 | $2321.74 | 21.8x | +11.4% |
-| 52 Weeks (1Y) | $1711.92 | $2139.90 | $2567.88 | 20.9x | +13.6% |
-| 104 Weeks (2Y) | $1933.64 | $2417.05 | $2900.46 | 19.5x | +13.3% |
-| 156 Weeks (3Y) | $2178.28 | $2722.85 | $3267.42 | 18.2x | +13.1% |
+| 13 Weeks | $1547.60 | $1934.50 | $2321.40 | 21.8x | +11.4% |
+| 52 Weeks (1Y) | $1712.10 | $2140.12 | $2568.14 | 20.9x | +13.6% |
+| 104 Weeks (2Y) | $1933.82 | $2417.28 | $2900.74 | 19.5x | +13.3% |
+| 156 Weeks (3Y) | $2178.47 | $2723.09 | $3267.71 | 18.2x | +13.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

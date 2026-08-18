@@ -52,10 +52,10 @@ KLAC currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $167.32 | $209.15 | $250.98 | 1.9x | +6.8% |
-| 52 Weeks (1Y) | $196.80 | $246.00 | $295.20 | 2.0x | +19.6% |
-| 104 Weeks (2Y) | $235.26 | $294.08 | $352.90 | 2.1x | +19.6% |
-| 156 Weeks (3Y) | $280.70 | $350.88 | $421.06 | 2.2x | +19.5% |
+| 13 Weeks | $167.34 | $209.18 | $251.02 | 1.9x | +6.8% |
+| 52 Weeks (1Y) | $197.31 | $246.64 | $295.97 | 2.0x | +19.9% |
+| 104 Weeks (2Y) | $235.05 | $293.81 | $352.57 | 2.1x | +19.5% |
+| 156 Weeks (3Y) | $281.06 | $351.33 | $421.60 | 2.2x | +19.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $57.70 | $72.13 | $86.56 | 1.6x | -1.3% |
-| 52 Weeks (1Y) | $63.99 | $79.99 | $95.99 | 1.7x | +10.5% |
-| 104 Weeks (2Y) | $70.73 | $88.41 | $106.09 | 1.8x | +10.5% |
-| 156 Weeks (3Y) | $78.02 | $97.52 | $117.02 | 1.8x | +10.5% |
+| 13 Weeks | $57.66 | $72.07 | $86.48 | 1.6x | -1.6% |
+| 52 Weeks (1Y) | $64.05 | $80.06 | $96.07 | 1.7x | +10.6% |
+| 104 Weeks (2Y) | $70.94 | $88.68 | $106.42 | 1.8x | +10.7% |
+| 156 Weeks (3Y) | $78.07 | $97.59 | $117.11 | 1.8x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

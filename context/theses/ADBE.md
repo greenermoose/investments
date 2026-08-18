@@ -52,10 +52,10 @@ ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $205.46 | $256.83 | $308.20 | 4.2x | +4.5% |
-| 52 Weeks (1Y) | $222.59 | $278.24 | $333.89 | 4.1x | +9.5% |
-| 104 Weeks (2Y) | $243.26 | $304.07 | $364.88 | 4.0x | +9.4% |
-| 156 Weeks (3Y) | $265.78 | $332.23 | $398.68 | 3.9x | +9.4% |
+| 13 Weeks | $205.58 | $256.98 | $308.38 | 4.2x | +4.7% |
+| 52 Weeks (1Y) | $222.49 | $278.11 | $333.73 | 4.1x | +9.5% |
+| 104 Weeks (2Y) | $242.87 | $303.59 | $364.31 | 4.0x | +9.3% |
+| 156 Weeks (3Y) | $265.44 | $331.80 | $398.16 | 3.9x | +9.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

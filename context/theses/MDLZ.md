@@ -52,10 +52,10 @@ MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $49.35 | $61.69 | $74.03 | 2.0x | -3.1% |
-| 52 Weeks (1Y) | $50.88 | $63.60 | $76.32 | 2.0x | +2.3% |
-| 104 Weeks (2Y) | $51.95 | $64.94 | $77.93 | 2.0x | +2.2% |
-| 156 Weeks (3Y) | $53.06 | $66.32 | $79.58 | 1.9x | +2.2% |
+| 13 Weeks | $49.38 | $61.72 | $74.06 | 2.0x | -2.9% |
+| 52 Weeks (1Y) | $50.74 | $63.42 | $76.10 | 2.0x | +2.0% |
+| 104 Weeks (2Y) | $51.98 | $64.98 | $77.98 | 2.0x | +2.2% |
+| 156 Weeks (3Y) | $52.95 | $66.19 | $79.43 | 1.9x | +2.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

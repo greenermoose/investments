@@ -52,10 +52,10 @@ LRCX currently trades at a Price-to-Sales (P/S) multiple of ~18.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $279.34 | $349.18 | $419.02 | 18.1x | +6.4% |
-| 52 Weeks (1Y) | $298.34 | $372.92 | $447.50 | 17.4x | +8.5% |
-| 104 Weeks (2Y) | $321.62 | $402.02 | $482.42 | 16.3x | +8.1% |
-| 156 Weeks (3Y) | $345.79 | $432.24 | $518.69 | 15.2x | +7.9% |
+| 13 Weeks | $279.37 | $349.21 | $419.05 | 18.1x | +6.4% |
+| 52 Weeks (1Y) | $298.35 | $372.94 | $447.53 | 17.4x | +8.5% |
+| 104 Weeks (2Y) | $321.70 | $402.12 | $482.54 | 16.3x | +8.1% |
+| 156 Weeks (3Y) | $345.86 | $432.33 | $518.80 | 15.2x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

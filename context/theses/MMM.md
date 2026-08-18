@@ -52,10 +52,10 @@ MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $143.72 | $179.65 | $215.58 | 3.7x | -1.2% |
-| 52 Weeks (1Y) | $150.29 | $187.86 | $225.43 | 3.6x | +4.2% |
-| 104 Weeks (2Y) | $156.42 | $195.52 | $234.62 | 3.5x | +4.2% |
-| 156 Weeks (3Y) | $162.81 | $203.51 | $244.21 | 3.4x | +4.1% |
+| 13 Weeks | $143.88 | $179.85 | $215.82 | 3.7x | -0.8% |
+| 52 Weeks (1Y) | $150.21 | $187.76 | $225.31 | 3.6x | +4.2% |
+| 104 Weeks (2Y) | $156.41 | $195.51 | $234.61 | 3.5x | +4.2% |
+| 156 Weeks (3Y) | $162.74 | $203.42 | $244.10 | 3.4x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

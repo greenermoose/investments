@@ -52,10 +52,10 @@ PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $109.72 | $137.15 | $164.58 | 2.2x | -3.1% |
-| 52 Weeks (1Y) | $114.26 | $142.83 | $171.40 | 2.2x | +3.3% |
-| 104 Weeks (2Y) | $117.96 | $147.45 | $176.94 | 2.2x | +3.3% |
-| 156 Weeks (3Y) | $121.80 | $152.25 | $182.70 | 2.1x | +3.3% |
+| 13 Weeks | $109.54 | $136.93 | $164.32 | 2.2x | -3.7% |
+| 52 Weeks (1Y) | $114.18 | $142.73 | $171.28 | 2.2x | +3.2% |
+| 104 Weeks (2Y) | $118.32 | $147.90 | $177.48 | 2.2x | +3.4% |
+| 156 Weeks (3Y) | $122.02 | $152.52 | $183.02 | 2.1x | +3.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

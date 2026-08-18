@@ -52,10 +52,10 @@ ENPH currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $30.64 | $38.30 | $45.96 | 3.5x | -3.6% |
-| 52 Weeks (1Y) | $31.26 | $39.08 | $46.90 | 3.5x | +1.1% |
-| 104 Weeks (2Y) | $31.54 | $39.43 | $47.32 | 3.3x | +1.0% |
-| 156 Weeks (3Y) | $31.82 | $39.77 | $47.72 | 3.2x | +1.0% |
+| 13 Weeks | $30.68 | $38.35 | $46.02 | 3.5x | -3.1% |
+| 52 Weeks (1Y) | $31.28 | $39.10 | $46.92 | 3.5x | +1.2% |
+| 104 Weeks (2Y) | $31.58 | $39.47 | $47.36 | 3.4x | +1.1% |
+| 156 Weeks (3Y) | $31.83 | $39.79 | $47.75 | 3.2x | +1.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

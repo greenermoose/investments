@@ -52,10 +52,10 @@ ADI currently trades at a Price-to-Sales (P/S) multiple of ~17.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $311.98 | $389.98 | $467.98 | 16.8x | -0.3% |
-| 52 Weeks (1Y) | $328.54 | $410.68 | $492.82 | 16.7x | +5.2% |
-| 104 Weeks (2Y) | $345.18 | $431.47 | $517.76 | 16.2x | +5.1% |
-| 156 Weeks (3Y) | $362.66 | $453.33 | $544.00 | 15.8x | +5.1% |
+| 13 Weeks | $312.02 | $390.03 | $468.04 | 16.8x | -0.3% |
+| 52 Weeks (1Y) | $328.58 | $410.73 | $492.88 | 16.7x | +5.2% |
+| 104 Weeks (2Y) | $345.12 | $431.40 | $517.68 | 16.2x | +5.1% |
+| 156 Weeks (3Y) | $362.65 | $453.31 | $543.97 | 15.8x | +5.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

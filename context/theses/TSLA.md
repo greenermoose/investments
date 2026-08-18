@@ -52,10 +52,10 @@ TSLA currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $272.14 | $340.18 | $408.22 | 13.5x | +1.0% |
-| 52 Weeks (1Y) | $287.54 | $359.43 | $431.32 | 13.3x | +5.9% |
-| 104 Weeks (2Y) | $303.92 | $379.90 | $455.88 | 12.9x | +5.8% |
-| 156 Weeks (3Y) | $321.16 | $401.45 | $481.74 | 12.4x | +5.8% |
+| 13 Weeks | $272.18 | $340.23 | $408.28 | 13.5x | +1.1% |
+| 52 Weeks (1Y) | $287.57 | $359.46 | $431.35 | 13.3x | +5.9% |
+| 104 Weeks (2Y) | $303.94 | $379.92 | $455.90 | 12.9x | +5.8% |
+| 156 Weeks (3Y) | $321.06 | $401.33 | $481.60 | 12.4x | +5.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

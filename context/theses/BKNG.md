@@ -52,10 +52,10 @@ BKNG currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $166.03 | $207.54 | $249.05 | 6.0x | +5.5% |
-| 52 Weeks (1Y) | $184.36 | $230.45 | $276.54 | 6.0x | +12.5% |
-| 104 Weeks (2Y) | $207.32 | $259.15 | $310.98 | 5.9x | +12.5% |
-| 156 Weeks (3Y) | $233.19 | $291.49 | $349.79 | 5.8x | +12.5% |
+| 13 Weeks | $166.10 | $207.63 | $249.16 | 6.0x | +5.7% |
+| 52 Weeks (1Y) | $184.39 | $230.49 | $276.59 | 6.0x | +12.6% |
+| 104 Weeks (2Y) | $207.48 | $259.35 | $311.22 | 5.9x | +12.5% |
+| 156 Weeks (3Y) | $233.38 | $291.73 | $350.08 | 5.8x | +12.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

@@ -52,10 +52,10 @@ V currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelv
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $289.21 | $361.51 | $433.81 | 4.1x | +3.0% |
-| 52 Weeks (1Y) | $315.30 | $394.12 | $472.94 | 4.1x | +9.8% |
-| 104 Weeks (2Y) | $346.02 | $432.53 | $519.04 | 4.1x | +9.8% |
-| 156 Weeks (3Y) | $379.82 | $474.78 | $569.74 | 4.0x | +9.8% |
+| 13 Weeks | $289.38 | $361.72 | $434.06 | 4.1x | +3.2% |
+| 52 Weeks (1Y) | $315.13 | $393.91 | $472.69 | 4.1x | +9.8% |
+| 104 Weeks (2Y) | $345.94 | $432.43 | $518.92 | 4.0x | +9.8% |
+| 156 Weeks (3Y) | $379.66 | $474.57 | $569.48 | 4.0x | +9.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

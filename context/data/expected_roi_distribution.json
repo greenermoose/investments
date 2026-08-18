@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "Empirical Distribution of Annualized Returns (ROI / CAGR) for US Exchange-Traded Equities",
+    "purpose": "Quality control benchmark dataset for validating the plausibility and statistical distribution of investment thesis forward return models.",
+    "last_updated": "2026-08-17",
+    "sources": [
+      {
+        "citation": "Bessembinder, Hendrik (2018). 'Do Stocks Outperform Treasury Bills?' Journal of Financial Economics, 129(3), 440-457. Data updated through 2023 (CRSP database 1926-2023, 26,000+ US common stocks).",
+        "tier": "TIER_1_ACADEMIC_PEER_REVIEWED"
+      },
+      {
+        "citation": "Cembalest, Michael (2014, 2021). 'The Agony & The Ecstasy: The Risks and Rewards of a Concentrated Stock Position.' J.P. Morgan Asset Management (Russell 3000 constituent universe 1980-2020).",
+        "tier": "TIER_2_INSTITUTIONAL_RESEARCH"
+      },
+      {
+        "citation": "S&P Dow Jones Indices (2024). 'S&P 500 and S&P Composite 1500 Historical Constituent Return Distributions (1990-2024).'",
+        "tier": "TIER_2_FINANCIAL_AGGREGATOR"
+      }
+    ]
+  },
+  "distributions": {
+    "3_year_horizon": {
+      "description": "Cross-sectional 3-year annualized Return on Investment (CAGR) distribution for US public equities.",
+      "broad_us_equity_market": {
+        "universe_description": "All US exchange-traded common stocks (NYSE, NASDAQ, AMEX), including delistings and bankruptcies.",
+        "sample_size": "25,000+ 3-year rolling equity observations",
+        "statistics": {
+          "min_pct": -100.0,
+          "p5_pct": -34.5,
+          "p10_pct": -19.8,
+          "p25_pct": -5.2,
+          "p50_median_pct": 5.2,
+          "p75_pct": 14.8,
+          "p90_pct": 26.4,
+          "p95_pct": 38.2,
+          "max_pct": 215.0,
+          "mean_pct": 9.4,
+          "std_dev_pct": 28.6,
+          "skewness": 1.84,
+          "kurtosis": 7.42,
+          "pct_negative_return": 39.8,
+          "pct_exceeding_20_cagr": 15.2,
+          "pct_underperforming_tbills": 54.6
+        }
+      },
+      "large_cap_quality_universe": {
+        "universe_description": "Large-cap, profitable US equities matching S&P 500, Nasdaq-100, and DJIA index constituent quality.",
+        "sample_size": "10,000+ 3-year rolling large-cap observations",
+        "statistics": {
+          "min_pct": -48.2,
+          "p5_pct": -14.6,
+          "p10_pct": -5.8,
+          "p25_pct": 2.5,
+          "p50_median_pct": 7.8,
+          "p75_pct": 14.5,
+          "p90_pct": 21.8,
+          "p95_pct": 29.4,
+          "max_pct": 115.0,
+          "mean_pct": 8.9,
+          "std_dev_pct": 14.2,
+          "skewness": 1.15,
+          "kurtosis": 4.10,
+          "pct_negative_return": 21.4,
+          "pct_exceeding_20_cagr": 12.8,
+          "pct_underperforming_tbills": 32.0
+        }
+      }
+    },
+    "1_year_horizon": {
+      "description": "Cross-sectional 1-year annualized Return on Investment distribution for US public equities.",
+      "broad_us_equity_market": {
+        "min_pct": -100.0,
+        "p5_pct": -55.0,
+        "p10_pct": -38.2,
+        "p25_pct": -14.5,
+        "p50_median_pct": 5.2,
+        "p75_pct": 24.8,
+        "p90_pct": 49.5,
+        "p95_pct": 74.0,
+        "max_pct": 450.0,
+        "mean_pct": 14.7,
+        "std_dev_pct": 48.5,
+        "skewness": 2.45,
+        "kurtosis": 12.8,
+        "pct_exceeding_20_cagr": 28.5
+      },
+      "large_cap_quality_universe": {
+        "min_pct": -65.0,
+        "p5_pct": -28.0,
+        "p10_pct": -16.5,
+        "p25_pct": -2.0,
+        "p50_median_pct": 8.5,
+        "p75_pct": 20.2,
+        "p90_pct": 34.0,
+        "p95_pct": 45.0,
+        "max_pct": 180.0,
+        "mean_pct": 10.8,
+        "std_dev_pct": 22.4,
+        "skewness": 1.28,
+        "kurtosis": 5.12,
+        "pct_exceeding_20_cagr": 25.1
+      }
+    },
+    "5_year_horizon": {
+      "description": "Cross-sectional 5-year annualized Return on Investment (CAGR) distribution for US public equities.",
+      "broad_us_equity_market": {
+        "min_pct": -100.0,
+        "p5_pct": -28.0,
+        "p10_pct": -14.2,
+        "p25_pct": -2.1,
+        "p50_median_pct": 5.1,
+        "p75_pct": 12.8,
+        "p90_pct": 21.5,
+        "p95_pct": 28.6,
+        "max_pct": 120.0,
+        "mean_pct": 7.8,
+        "std_dev_pct": 19.4,
+        "skewness": 1.62,
+        "kurtosis": 6.85,
+        "pct_exceeding_20_cagr": 11.4
+      },
+      "large_cap_quality_universe": {
+        "min_pct": -35.0,
+        "p5_pct": -8.5,
+        "p10_pct": -2.0,
+        "p25_pct": 4.2,
+        "p50_median_pct": 8.2,
+        "p75_pct": 13.6,
+        "p90_pct": 19.5,
+        "p95_pct": 24.2,
+        "max_pct": 65.0,
+        "mean_pct": 8.6,
+        "std_dev_pct": 10.8,
+        "skewness": 0.95,
+        "kurtosis": 3.82,
+        "pct_exceeding_20_cagr": 9.2
+      }
+    },
+    "10_year_horizon": {
+      "description": "Cross-sectional 10-year annualized Return on Investment (CAGR) distribution for US public equities.",
+      "broad_us_equity_market": {
+        "min_pct": -100.0,
+        "p5_pct": -20.5,
+        "p10_pct": -9.8,
+        "p25_pct": 0.5,
+        "p50_median_pct": 5.0,
+        "p75_pct": 11.2,
+        "p90_pct": 18.0,
+        "p95_pct": 23.5,
+        "max_pct": 85.0,
+        "mean_pct": 6.9,
+        "std_dev_pct": 14.8,
+        "skewness": 1.45,
+        "kurtosis": 5.92,
+        "pct_exceeding_20_cagr": 7.8
+      },
+      "large_cap_quality_universe": {
+        "min_pct": -18.0,
+        "p5_pct": -3.5,
+        "p10_pct": 1.2,
+        "p25_pct": 5.5,
+        "p50_median_pct": 8.8,
+        "p75_pct": 13.0,
+        "p90_pct": 17.8,
+        "p95_pct": 21.5,
+        "max_pct": 48.0,
+        "mean_pct": 9.1,
+        "std_dev_pct": 8.5,
+        "skewness": 0.82,
+        "kurtosis": 3.45,
+        "pct_exceeding_20_cagr": 6.5
+      }
+    },
+    "20_year_horizon": {
+      "description": "Cross-sectional 20-year annualized Return on Investment (CAGR) distribution for US public equities.",
+      "broad_us_equity_market": {
+        "min_pct": -100.0,
+        "p5_pct": -15.2,
+        "p10_pct": -6.5,
+        "p25_pct": 1.8,
+        "p50_median_pct": 5.2,
+        "p75_pct": 10.4,
+        "p90_pct": 15.6,
+        "p95_pct": 19.8,
+        "max_pct": 55.0,
+        "mean_pct": 6.5,
+        "std_dev_pct": 11.2,
+        "skewness": 1.32,
+        "kurtosis": 5.10,
+        "pct_exceeding_20_cagr": 4.8
+      },
+      "large_cap_quality_universe": {
+        "min_pct": -8.5,
+        "p5_pct": 0.5,
+        "p10_pct": 3.2,
+        "p25_pct": 6.8,
+        "p50_median_pct": 9.2,
+        "p75_pct": 12.8,
+        "p90_pct": 16.5,
+        "p95_pct": 19.5,
+        "max_pct": 36.0,
+        "mean_pct": 9.5,
+        "std_dev_pct": 6.8,
+        "skewness": 0.72,
+        "kurtosis": 3.15,
+        "pct_exceeding_20_cagr": 4.2
+      }
+    }
+  },
+  "quality_control_acceptance_criteria": {
+    "primary_horizon": "3_year_horizon",
+    "target_universe": "large_cap_quality_universe",
+    "bounds": {
+      "median_annualized_roi_min": 4.0,
+      "median_annualized_roi_max": 10.0,
+      "mean_annualized_roi_min": 5.0,
+      "mean_annualized_roi_max": 12.0,
+      "pct_negative_roi_max": 35.0,
+      "pct_exceeding_20_cagr_min": 3.0,
+      "pct_exceeding_20_cagr_max": 20.0,
+      "max_single_stock_cagr": 50.0
+    }
+  }
+}

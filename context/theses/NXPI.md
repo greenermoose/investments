@@ -52,10 +52,10 @@ NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $187.46 | $234.33 | $281.20 | 4.8x | +2.8% |
-| 52 Weeks (1Y) | $200.63 | $250.79 | $300.95 | 4.7x | +7.8% |
-| 104 Weeks (2Y) | $215.73 | $269.66 | $323.59 | 4.5x | +7.6% |
-| 156 Weeks (3Y) | $231.91 | $289.89 | $347.87 | 4.4x | +7.6% |
+| 13 Weeks | $187.58 | $234.48 | $281.38 | 4.8x | +3.1% |
+| 52 Weeks (1Y) | $200.47 | $250.59 | $300.71 | 4.7x | +7.7% |
+| 104 Weeks (2Y) | $215.78 | $269.73 | $323.68 | 4.5x | +7.7% |
+| 156 Weeks (3Y) | $231.98 | $289.98 | $347.98 | 4.4x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

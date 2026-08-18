@@ -52,10 +52,10 @@ SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $24.41 | $30.51 | $36.61 | 1.6x | -3.6% |
-| 52 Weeks (1Y) | $24.90 | $31.13 | $37.36 | 1.6x | +1.1% |
-| 104 Weeks (2Y) | $25.13 | $31.41 | $37.69 | 1.5x | +1.0% |
-| 156 Weeks (3Y) | $25.35 | $31.69 | $38.03 | 1.5x | +1.0% |
+| 13 Weeks | $24.37 | $30.46 | $36.55 | 1.6x | -4.2% |
+| 52 Weeks (1Y) | $24.88 | $31.10 | $37.32 | 1.6x | +1.0% |
+| 104 Weeks (2Y) | $25.02 | $31.27 | $37.52 | 1.5x | +0.8% |
+| 156 Weeks (3Y) | $25.29 | $31.61 | $37.93 | 1.4x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |

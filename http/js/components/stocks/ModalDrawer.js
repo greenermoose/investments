@@ -68,18 +68,15 @@ export function openCompanyModal(company) {
   const currentPriceEl = document.getElementById('modal-current-price');
   const targetPriceEl = document.getElementById('modal-target-price');
   const targetRoiEl = document.getElementById('modal-target-roi');
-  const evEl = document.getElementById('modal-ev');
   const descEl = document.getElementById('modal-description');
   const moatEl = document.getElementById('modal-moat');
   const catalystEl = document.getElementById('modal-catalyst');
   const invalidationEl = document.getElementById('modal-invalidation');
-  const methodEl = document.getElementById('modal-target-methodology');
 
   if (convictionEl) convictionEl.textContent = company.conviction_score ? `${company.conviction_score.toFixed(1)} / 10.0` : '-';
   if (currentPriceEl) currentPriceEl.textContent = `$${currentPrice.toFixed(2)}`;
   if (targetPriceEl) targetPriceEl.textContent = `$${targetExit.toFixed(2)}`;
   if (targetRoiEl) targetRoiEl.textContent = company.target_roi || '20.0%';
-  if (evEl) evEl.textContent = formatEVInBillions(company.enterprise_value || company.enterprise_value_b) + ' B';
   if (descEl) descEl.textContent = company.description || 'No description available.';
   if (moatEl) moatEl.textContent = company.moat || 'Economic moat under fundamental review.';
   if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming earnings and capital allocation reviews.';
@@ -87,15 +84,6 @@ export function openCompanyModal(company) {
 
   const isBuy = statusKey === 'BUY';
   const isHold = statusKey === 'HOLD';
-  let methodText = '';
-  if (isBuy) {
-    methodText = `Target Exit Price of $${targetExit.toFixed(2)} represents a verified 20%+ annualized compound growth hurdle (${company.target_roi}) over an expected ${company.holding_period || '3 to 5 Years'} holding period, anchored to the verified entry price of $${entryPrice.toFixed(2)}.`;
-  } else if (isHold) {
-    methodText = `Target Exit Price of $${targetExit.toFixed(2)} reflects the upper technical resistance band / covered call strike cap over ${company.holding_period_years || 3.0} years, generating 20.0% annualized return through combined option harvest yield and capital appreciation.`;
-  } else {
-    methodText = `Position marked for ${statusKey}; benchmark price aligned with current market level to evaluate risk reduction.`;
-  }
-  if (methodEl) methodEl.textContent = methodText;
 
   // Tab 1: Return Engine Parameter Breakdown
   const engBadgeEl = document.getElementById('modal-engine-strategy-badge');

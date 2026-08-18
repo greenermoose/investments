@@ -197,20 +197,20 @@
         </div>
 
         <div class="modal-nav-tabs">
-          <button class="modal-tab active" data-tab="tab-overview">Thesis &amp; Conviction Dossier</button>
-          <button class="modal-tab" data-tab="tab-analysts">Wall Street Analyst Coverage</button>
-          <button class="modal-tab" data-tab="tab-technicals">Technical Analysis &amp; Volume</button>
-          <button class="modal-tab" data-tab="tab-sec">SEC EDGAR Provenance</button>
-          <button class="modal-tab" data-tab="tab-strategy">Strategy &amp; Options Modeling</button>
+          <button class="modal-tab active" data-tab="tab-overview">Investment Thesis</button>
+          <button class="modal-tab" data-tab="tab-analysts">Analyst Coverage</button>
+          <button class="modal-tab" data-tab="tab-technicals">Technical Analysis</button>
+          <button class="modal-tab" data-tab="tab-sec">SEC Filings</button>
+          <button class="modal-tab" data-tab="tab-strategy">Strategy</button>
         </div>
 
         <div class="modal-body">
-          <!-- Tab 1: Overview & Thesis -->
+          <!-- Tab 1: Investment Thesis -->
           <div id="tab-overview" class="modal-tab-content">
             <div class="company-metrics-grid"
               style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
               <div class="metric-item">
-                <span class="metric-label">Thesis Status</span>
+                <span class="metric-label">Status</span>
                 <span class="metric-val" id="modal-status-badge">BUY</span>
               </div>
               <div class="metric-item">
@@ -229,21 +229,6 @@
                 <span class="metric-label">Target ROI</span>
                 <span class="metric-val" id="modal-target-roi" style="color: #00d4ff;">20.0% (CC Yield)</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-label">Enterprise Value</span>
-                <span class="metric-val" id="modal-ev">$4,490.49 B</span>
-              </div>
-            </div>
-
-            <div
-              style="background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; border-left: 3px solid #10b981;">
-              <div
-                style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">
-                Price Target Methodology &amp; Mathematical Grounding</div>
-              <div id="modal-target-methodology" style="font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
-                Target Exit Price is derived from the core 20.0% annualized CAGR compounding model over the expected
-                holding period, anchored directly to current verified market closing price.
-              </div>
             </div>
 
             <!-- Return Engine Parameter Breakdown Card -->
@@ -253,7 +238,7 @@
                 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
                 <div
                   style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">
-                  Return Engine Execution &amp; Return Breakdown</div>
+                  Return Engine Parameters &amp; Results</div>
                 <span id="modal-engine-strategy-badge" class="badge-status"
                   style="font-size: 0.76rem; padding: 2px 8px;">LIMIT_BUY &rarr; LIMIT_SELL</span>
               </div>
@@ -407,7 +392,7 @@
             </div>
           </div>
 
-          <!-- Tab 3: SEC Provenance & Primary Source Filings -->
+          <!-- Tab 3: SEC Filings -->
           <div id="tab-sec" class="modal-tab-content" style="display: none;">
             <div class="d-flex justify-between align-center"
               style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
@@ -530,8 +515,10 @@
             <div class="d-flex justify-between align-center"
               style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
               <div>
-                <h4 style="margin: 0 0 4px 0; color: #ffffff;">Wall Street Analyst Research Reports &amp; Price Targets</h4>
-                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Individual sell-side price targets, announcement market prices, and consensus return distributions.</p>
+                <h4 style="margin: 0 0 4px 0; color: #ffffff;">Wall Street Analyst Research Reports &amp; Price Targets
+                </h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Individual sell-side price
+                  targets, announcement market prices, and consensus return distributions.</p>
               </div>
               <span id="modal-analyst-count-badge" class="provenance-pill">
                 0 Analyst Reports
@@ -539,7 +526,8 @@
             </div>
 
             <!-- Consensus Metrics Summary Card -->
-            <div class="company-metrics-grid" style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+            <div class="company-metrics-grid"
+              style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
               <div class="metric-item">
                 <span class="metric-label">Mean Price Target</span>
                 <span class="metric-val" id="modal-analyst-mean-pt" style="color: #10b981;">-</span>
@@ -588,7 +576,9 @@
 
             <div class="callout tip" style="margin-top: 20px;">
               <div class="callout-title">Analyst Research &amp; Target Pricing Methodology</div>
-              <p>Analyst price targets represent 12-month forward expectations published by sell-side research departments. Our quantitative engine compares consensus target distribution against internal 13-quarter discounted revenue forecasts and Black-Scholes strike boundaries to validate margin of safety.</p>
+              <p>Analyst price targets represent 12-month forward expectations published by sell-side research
+                departments. Our quantitative engine compares consensus target distribution against internal 13-quarter
+                discounted revenue forecasts and Black-Scholes strike boundaries to validate margin of safety.</p>
             </div>
           </div>
         </div>

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1835632
 
 ## Business Profile
-Marvell Technology, Inc. (MRVL) operates as an established participant within the Information Technology sector (Data Infrastructure Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MRVL trades at $232.02 against a 3-year baseline price target of $285.67, generating a modeled annualized ROI of 9.7% under our disciplined 20-year hurdle standard.
+Marvell Technology, Inc. is a leading semiconductor designer specializing in data infrastructure semiconductor solutions, providing high-speed electro-optics (PAM4 DSPs), custom cloud ASIC accelerators, enterprise networking switches, storage controllers, and automotive Ethernet PHYs. Marvell is a key supplier of custom computing and optical interconnect silicon to cloud hyperscalers and data center operators.
+
+Marvell benefits from deep custom ASIC co-design partnerships with cloud hyperscalers, proprietary high-speed networking IP, and leadership in optical interconnect DSPs essential for linking AI compute clusters. Management is aggressively targeting the AI data center buildout, scaling custom compute accelerator production and next-generation 800G/1.6T optical DSP shipments.
 
 ## Total Addressable Market & Market Share
 Marvell Technology, Inc. addresses an estimated Total Addressable Market (TAM) of $126.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

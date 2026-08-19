@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1018724
 
 ## Business Profile
-Amazon.com, Inc. (AMZN) operates as an established participant within the Consumer Discretionary sector (E-Commerce & Cloud Infrastructure). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMZN trades at $260.16 against a 3-year baseline price target of $337.62, generating a modeled annualized ROI of 11.5% under our disciplined 20-year hurdle standard.
+Amazon.com, Inc. is a global technology and commerce behemoth operating the world's largest e-commerce marketplace, the dominant cloud infrastructure platform (Amazon Web Services / AWS), digital advertising networks, and subscription entertainment platforms (Prime Video). AWS delivers high-margin enterprise infrastructure, compute, database, and generative AI services (Bedrock and Trainium chips), while the retail division monetizes 1P/3P goods, logistics fulfillment, and advertising take-rates.
+
+Amazon possesses one of the deepest economic moats globally, built on massive logistics scale, regional fulfillment density, high-margin cloud infrastructure switching costs, and high-yield digital retail advertising. Management continues to drive regional fulfillment efficiencies, expand generative AI offerings across AWS enterprise clients, and scale high-margin advertising and subscription revenues to fuel operating margin expansion.
 
 ## Total Addressable Market & Market Share
 Amazon.com, Inc. addresses an estimated Total Addressable Market (TAM) of $1713.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 40.0% market share. Over our 3-year investment horizon, we model market share evolving to 43.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

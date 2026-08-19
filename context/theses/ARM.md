@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1973239
 
 ## Business Profile
-Arm Holdings plc (ARM) operates as an established participant within the Information Technology sector (Semiconductor IP & Architecture). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ARM trades at $245.79 against a 3-year baseline price target of $353.83, generating a modeled annualized ROI of 15.2% under our disciplined 20-year hurdle standard.
+Arm Holdings plc is the world's premier semiconductor intellectual property (IP) architecture provider, designing the standard instruction set architectures (ISA) and CPU/GPU processor cores that power over 99% of global smartphones, IoT devices, automotive systems, and an expanding share of cloud data center servers. Arm licenses its architecture and processor designs to chipmakers in exchange for upfront licensing fees and recurring per-chip royalties.
+
+Arm's competitive advantage is practically insurmountable due to the global developer ecosystem and software stack compiled natively for the Arm architecture, creating immense software lock-in. Management is driving multi-year royalty rate expansion through its Armv9 architecture, expanding into cloud hyperscaler custom AI silicon (e.g., AWS Graviton, Google Axion, Microsoft Cobalt), and licensing pre-integrated compute subsystems (CSS) for AI workloads.
 
 ## Total Addressable Market & Market Share
 Arm Holdings plc addresses an estimated Total Addressable Market (TAM) of $71.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

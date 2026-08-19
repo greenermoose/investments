@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=872589
 
 ## Business Profile
-Regeneron Pharmaceuticals, Inc. (REGN) operates as an established participant within the Health Care sector (Biopharmaceuticals). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, REGN trades at $840.42 against a 3-year baseline price target of $1012.07, generating a modeled annualized ROI of 6.4% under our disciplined 20-year hurdle standard.
+Regeneron Pharmaceuticals, Inc. is a leading biotechnology company that discovers, develops, and manufactures transformative medicines for serious diseases. Its commercial portfolio includes blockbuster eye treatment EYLEA (and high-dose EYLEA HD), immunology blockbuster Dupixent (co-developed with Sanofi for asthma, eczema, and COPD), oncology treatment Libtayo, and rare disease therapeutics.
+
+Regeneron possesses one of the industry's most productive proprietary drug discovery engines (VelociSuite genetic technologies), enabling in-house biologics discovery with high clinical success rates. Management is advancing a deep internal pipeline across bispecific antibodies in oncology, genetic medicines, and metabolic therapeutics while expanding Dupixent into massive new respiratory indications.
 
 ## Total Addressable Market & Market Share
 Regeneron Pharmaceuticals, Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

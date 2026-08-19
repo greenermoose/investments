@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1637459
 
 ## Business Profile
-The Kraft Heinz Company (KHC) operates as an established participant within the Consumer Staples sector (Packaged Foods). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KHC trades at $25.41 against a 3-year baseline price target of $27.17, generating a modeled annualized ROI of 2.3% under our disciplined 20-year hurdle standard.
+The Kraft Heinz Company is one of the world's largest food and beverage manufacturers, producing iconic consumer food brands including Heinz ketchup, Kraft mac and cheese, Oscar Mayer meats, Philadelphia cream cheese, Lunchables, and Velveeta. The company distributes its packaged food products across retail grocery, mass merchant, convenience, and foodservice channels globally.
+
+Kraft Heinz benefits from deep brand heritage, ubiquitous retail shelf-space placement, and massive manufacturing and distribution scale across North America and Europe. Management is executing a long-term transformation strategy centered on portfolio premiumization, foodservice channel expansion, emerging market growth, and digital supply chain efficiencies to improve operating margins and cash returns.
 
 ## Total Addressable Market & Market Share
 The Kraft Heinz Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 4.5% market share. Over our 3-year investment horizon, we model market share evolving to 4.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

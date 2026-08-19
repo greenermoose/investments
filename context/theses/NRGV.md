@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1828536
 
 ## Business Profile
-Energy Vault Holdings, Inc. (NRGV) operates as an established participant within the Energy sector (Gravity & Hybrid Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NRGV trades at $3.58 against a 3-year baseline price target of $3.74, generating a modeled annualized ROI of 1.5% under our disciplined 20-year hurdle standard.
+Energy Vault Holdings, Inc. is a grid-scale energy storage technology company developing utility-scale battery storage, gravity-based energy storage, and green hydrogen hybrid energy systems. Energy Vault provides hardware architectures and proprietary energy management software (VaultOS) to integrate renewable generation with electric grids, industrial microgrids, and data centers.
+
+Energy Vault's competitive edge lies in its technology-agnostic software integration platform and modular storage designs that optimize levelized cost of storage (LCOS) across multiple durations. Management is deploying utility-scale battery and hybrid storage projects globally while expanding multi-year service contracts and licensing gravity storage architectures.
 
 ## Total Addressable Market & Market Share
 Energy Vault Holdings, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

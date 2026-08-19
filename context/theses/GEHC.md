@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1932393
 
 ## Business Profile
-GE HealthCare Technologies Inc. (GEHC) operates as an established participant within the Health Care sector (Medical Imaging & Diagnostic Systems). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GEHC trades at $74.95 against a 3-year baseline price target of $98.74, generating a modeled annualized ROI of 12.1% under our disciplined 20-year hurdle standard.
+GE HealthCare Technologies Inc. is a leading global medical technology and digital solutions innovator, operating across four core segments: Imaging (CT, MRI, X-ray, surgical systems), Ultrasound, Patient Care Solutions (monitoring, anesthesia delivery), and Pharmaceutical Diagnostics (contrast media agents). GE HealthCare's equipment is installed in over four million medical settings worldwide.
+
+GE HealthCare benefits from high customer switching costs, a vast global installed base generating steady high-margin service and maintenance contracts, and deep brand prestige among healthcare systems. Management is accelerating product innovation in AI-assisted precision imaging, digital cloud pathology, and theranostics to expand gross margins and drive organic growth.
 
 ## Total Addressable Market & Market Share
 GE HealthCare Technologies Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.8% market share. Over our 3-year investment horizon, we model market share evolving to 1.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

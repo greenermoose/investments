@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1828318
 
 ## Business Profile
-Enovix Corporation (ENVX) operates as an established participant within the Energy sector (Advanced Silicon-Anode Batteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ENVX trades at $3.27 against a 3-year baseline price target of $2.72, generating a modeled annualized ROI of -6.0% under our disciplined 20-year hurdle standard.
+Enovix Corporation is an advanced silicon-anode lithium-ion battery manufacturer developing next-generation energy storage cells with 100% active silicon anodes. Its patented 3D cell architecture overcomes conventional silicon swelling and battery degradation issues, delivering significantly higher energy density for smartphones, wearables, laptops, and electric vehicles.
+
+Enovix's proprietary competitive edge lies in its 3D mechanical constraint architecture and laser-patterning manufacturing process that allows high-capacity silicon integration without sacrificing cycle life. Management is executing a high-volume manufacturing scale-up in Malaysia (Fab2), securing commercial supply contracts with global consumer electronics OEMs, and pursuing automotive battery partnerships.
 
 ## Total Addressable Market & Market Share
 Enovix Corporation addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

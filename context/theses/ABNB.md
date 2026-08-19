@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1559720
 
 ## Business Profile
-Airbnb, Inc. (ABNB) operates as an established participant within the Consumer Discretionary sector (Travel & Lodging Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ABNB trades at $187.14 against a 3-year baseline price target of $270.55, generating a modeled annualized ROI of 15.4% under our disciplined 20-year hurdle standard.
+Airbnb, Inc. operates a global online travel and alternative accommodation marketplace connecting hundreds of millions of guests with millions of hosts offering private rooms, entire homes, and curated local experiences worldwide. The business operates a capital-light platform model, taking a percentage service fee from both guest bookings and host payouts across more than 220 countries and regions.
+
+The company's economic moat is powered by a dominant global two-sided network effect, strong brand recognition where over 90% of web traffic is organic/direct, and high operational leverage that drives free cash flow margins exceeding 35%. Management is expanding supply across international emerging markets, launching co-hosting services, and building extended-stay and corporate travel offerings to capture additional share of global travel spending.
 
 ## Total Addressable Market & Market Share
 Airbnb, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

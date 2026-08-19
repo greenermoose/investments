@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1065280
 
 ## Business Profile
-Netflix, Inc. (NFLX) operates as an established participant within the Communication Services sector (Entertainment & Streaming). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NFLX trades at $79.80 against a 3-year baseline price target of $110.12, generating a modeled annualized ROI of 13.7% under our disciplined 20-year hurdle standard.
+Netflix, Inc. is the world's leading subscription streaming entertainment service, with over 280 million paid memberships in more than 190 countries enjoying TV series, documentaries, feature films, mobile games, and live events across a wide variety of genres and languages. Netflix monetizes through recurring monthly subscription tiers (standard, premium, and ad-supported) and brand advertising.
+
+Netflix possesses an unrivaled entertainment moat driven by global subscriber scale (amortizing multi-billion dollar annual content budgets across the largest subscriber base in streaming), proprietary recommendation algorithms, and strong cultural franchise creation. Management is driving profitable revenue growth through its rapidly growing ad-supported tier, paid sharing monetization, and selective expansion into live sports and global events.
 
 ## Total Addressable Market & Market Share
 Netflix, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 7.0% market share. Over our 3-year investment horizon, we model market share evolving to 7.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

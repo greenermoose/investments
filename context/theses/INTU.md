@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=896878
 
 ## Business Profile
-Intuit Inc. (INTU) operates as an established participant within the Information Technology sector (Application Software & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, INTU trades at $360.27 against a 3-year baseline price target of $476.64, generating a modeled annualized ROI of 12.2% under our disciplined 20-year hurdle standard.
+Intuit Inc. is a financial software powerhouse providing business and financial management solutions for small businesses, self-employed individuals, and consumers. Its core platforms include QuickBooks (small business accounting, payroll, and merchant payments), TurboTax (consumer tax preparation), Credit Karma (consumer credit monitoring and financial marketplace), and Mailchimp (email marketing and customer engagement).
+
+Intuit commands an entrenched economic moat built on high customer switching costs, ubiquitous brand trust, extensive proprietary financial data networks, and deep compliance workflows. Management is leveraging its proprietary Intuit Assist generative AI engine to deliver automated financial decision-making, expanding QuickBooks into mid-market businesses, and cross-selling fintech products across its 100+ million customer ecosystem.
 
 ## Total Addressable Market & Market Share
 Intuit Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.6% market share. Over our 3-year investment horizon, we model market share evolving to 1.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

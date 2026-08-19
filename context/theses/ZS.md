@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1713683
 
 ## Business Profile
-Zscaler, Inc. (ZS) operates as an established participant within the Information Technology sector (Cloud Cybersecurity & Zero Trust). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ZS trades at $184.50 against a 3-year baseline price target of $229.22, generating a modeled annualized ROI of 10.0% under our disciplined 20-year hurdle standard.
+Zscaler, Inc. is the pioneer and global leader in cloud-native cybersecurity, delivering a zero-trust architecture through its Zero Trust Exchange platform. Zscaler securely connects users, workloads, and devices over any network without placing them on the corporate network, replacing legacy virtual private networks (VPNs) and firewalls with Zscaler Internet Access (ZIA) and Zscaler Private Access (ZPA).
+
+Zscaler commands a powerful network moat powered by its globally distributed cloud security exchange (processing over 400 billion daily transactions across 150+ data centers), high enterprise switching costs, and high gross retention rates. Management is accelerating growth by expanding zero-trust security into AI workloads, IoT/OT device protection, cloud workload connectivity, and advanced threat intelligence.
 
 ## Total Addressable Market & Market Share
 Zscaler, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 5.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

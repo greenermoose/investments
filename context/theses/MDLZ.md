@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1103982
 
 ## Business Profile
-Mondelez International, Inc. (MDLZ) operates as an established participant within the Consumer Staples sector (Packaged Foods & Confectionery). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MDLZ trades at $63.80 against a 3-year baseline price target of $67.76, generating a modeled annualized ROI of 2.0% under our disciplined 20-year hurdle standard.
+Mondelez International, Inc. is a global snacking powerhouse and market leader in biscuits, chocolates, baked snacks, and confectionery. Its iconic global and regional brands include Oreo, Ritz, LU, and belVita biscuits, Cadbury Dairy Milk, Milka, and Toblerone chocolates, alongside sour candy brands Sour Patch Kids and Swedish Fish, sold in more than 150 countries.
+
+Mondelez possesses an extensive economic moat built on dominant market share positions in high-frequency snacking categories, strong consumer brand loyalty, and direct-store delivery (DSD) distribution networks in developed and emerging markets. Management is focusing its portfolio on core chocolate and biscuit categories, expanding in high-growth emerging economies, and driving digital e-commerce channel penetration.
 
 ## Total Addressable Market & Market Share
 Mondelez International, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 6.9% market share. Over our 3-year investment horizon, we model market share evolving to 6.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

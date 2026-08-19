@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=745732
 
 ## Business Profile
-Ross Stores, Inc. (ROST) operates as an established participant within the Consumer Discretionary sector (Apparel & Home Merchandise Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ROST trades at $237.46 against a 3-year baseline price target of $267.10, generating a modeled annualized ROI of 4% under our disciplined 20-year hurdle standard.
+Ross Stores, Inc. is the second-largest off-price apparel and home fashion retailer in the United States, operating over 2,100 Ross Dress for Less and dd's DISCOUNTS stores across 43 states. Ross offers first-quality, in-season, name-brand and designer apparel, accessories, footwear, and home merchandise at discounts of 20% to 60% below department store regular prices.
+
+Ross Stores benefits from an off-price retail model that is highly insulated from e-commerce disruption, creating a 'treasure hunt' in-store shopping experience for value-seeking consumers. Management leverages massive merchant opportunistic buying scale, flexible store layouts, and lean inventory supply chains to drive consistent store unit growth and steady customer traffic.
 
 ## Total Addressable Market & Market Share
 Ross Stores, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.5% market share. Over our 3-year investment horizon, we model market share evolving to 2.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

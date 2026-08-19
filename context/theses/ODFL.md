@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=878927
 
 ## Business Profile
-Old Dominion Freight Line, Inc. (ODFL) operates as an established participant within the Industrials sector (Less-Than-Truckload (LTL) Freight). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ODFL trades at $211.77 against a 3-year baseline price target of $238.37, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Old Dominion Freight Line, Inc. is the premier less-than-truckload (LTL) motor carrier in North America, operating an extensive nationwide network of service centers, pickup and delivery fleets, and linehaul tractors. Old Dominion transports multiple small freight shipments on single trailers, providing regional, inter-regional, and national LTL logistics services.
+
+Old Dominion maintains the gold standard in the LTL industry, distinguished by industry-leading on-time delivery rates (>99%), low cargo claims ratios (<0.2%), and significant real estate capacity reserves across its owned service centers. Management's relentless focus on service quality enables disciplined premium pricing, consistently producing the best operating ratio and highest returns on invested capital in the trucking sector.
 
 ## Total Addressable Market & Market Share
 Old Dominion Freight Line, Inc. addresses an estimated Total Addressable Market (TAM) of $83.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

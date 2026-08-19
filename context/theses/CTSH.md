@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1058290
 
 ## Business Profile
-Cognizant Technology Solutions Corporation (CTSH) operates as an established participant within the Information Technology sector (IT Consulting & Digital Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CTSH trades at $59.85 against a 3-year baseline price target of $88.74, generating a modeled annualized ROI of 16.3% under our disciplined 20-year hurdle standard.
+Cognizant Technology Solutions Corporation is a leading multinational professional services and IT consulting company, helping enterprise clients modernize applications, manage cloud infrastructure, optimize business processes, and implement digital transformations. The company serves global corporations across financial services, health sciences, manufacturing, and communications.
+
+Cognizant's competitive advantage relies on deep client domain expertise, multi-year IT outsourcing managed service contracts, and global delivery scale with extensive engineering talent in India. Management is repositioning the business toward high-margin digital engineering, generative AI enterprise integration partnerships, and cloud modernization to accelerate revenue growth and margin expansion.
 
 ## Total Addressable Market & Market Share
 Cognizant Technology Solutions Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.8% market share. Over our 3-year investment horizon, we model market share evolving to 1.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

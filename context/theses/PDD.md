@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1737806
 
 ## Business Profile
-PDD Holdings Inc. (PDD) operates as an established participant within the Consumer Discretionary sector (E-Commerce & Digital Marketplace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PDD trades at $88.82 against a 3-year baseline price target of $156.79, generating a modeled annualized ROI of 22.3% under our disciplined 20-year hurdle standard.
+PDD Holdings Inc. is a multinational commerce powerhouse that owns and operates Pinduoduo (China's leading value-focused social e-commerce platform) and Temu (a global cross-border digital marketplace operating in over 50 countries). PDD operates a consumer-to-manufacturer (C2M) model that eliminates intermediaries, connecting consumers directly with manufacturers to offer everyday low prices.
+
+PDD's competitive edge centers on its extreme supply chain efficiency, proprietary algorithm-driven product recommendations, viral social group-buying mechanics, and direct manufacturer pricing. Management is scaling Temu's global cross-border and local merchant fulfillment networks, expanding market share in international digital commerce while maintaining a robust net cash balance sheet.
 
 ## Total Addressable Market & Market Share
 PDD Holdings Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 48.0% market share. Over our 3-year investment horizon, we model market share evolving to 55.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

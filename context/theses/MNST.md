@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=865752
 
 ## Business Profile
-Monster Beverage Corporation (MNST) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MNST trades at $47.60 against a 3-year baseline price target of $60.52, generating a modeled annualized ROI of 10.8% under our disciplined 20-year hurdle standard.
+Monster Beverage Corporation is a global leader in the energy drink category, developing, marketing, and distributing energy drink beverages including Monster Energy, Reign Total Body Fuel, NOS, Full Throttle, Bang Energy, and craft alcoholic beverages. The company operates an asset-light model where it manufactures beverage concentrates, partnering with The Coca-Cola Company's global bottling network for packaging, bottling, and worldwide retail distribution.
+
+Monster Beverage commands an enduring brand moat powered by high consumer brand loyalty, active lifestyle sponsorships, and preferred retail cooler shelf placement facilitated by the global Coca-Cola distribution partnership. Management is expanding internationally across Asia-Pacific and Latin America, launching affordable energy brands (Predator) in developing markets, and innovating with zero-sugar and functional beverage lines.
 
 ## Total Addressable Market & Market Share
 Monster Beverage Corporation addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 1.5% market share. Over our 3-year investment horizon, we model market share evolving to 1.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

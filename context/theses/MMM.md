@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=66740
 
 ## Business Profile
-3M Company (MMM) operates as an established participant within the Industrials sector (Diversified Industrial Conglomerate). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MMM trades at $182.87 against a 3-year baseline price target of $205.77, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+3M Company is a diversified global industrial and materials technology manufacturer operating across three core business segments: Safety & Industrial (adhesives, abrasives, personal safety gear), Transportation & Electronics (automotive components, advanced display films), and Consumer (Post-it notes, Scotch tape, Command hanging strips, Filtrete filters).
+
+3M's economic moat is grounded in proprietary materials science capabilities, thousands of active patents, high brand recognition across industrial and consumer channels, and deep manufacturing scale. Following the successful spin-off of its healthcare business (Solventum) and settlement of legacy environmental and product liabilities, management is focused on operational restructuring, supply chain simplification, and higher-ROIC product innovation.
 
 ## Total Addressable Market & Market Share
 3M Company addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 3.3% market share. Over our 3-year investment horizon, we model market share evolving to 3.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

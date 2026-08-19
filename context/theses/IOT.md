@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001642896
 
 ## Business Profile
-Samsara Inc. (IOT) operates as an established participant within the Information Technology sector (Enterprise Software & IoT Operations Cloud). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IOT trades at $40.19 against a 3-year baseline price target of $82.13, generating a modeled annualized ROI of 28.4% under our disciplined 20-year hurdle standard.
+Samsara Inc. is the pioneer of the Connected Operations Cloud, an enterprise IoT software platform that enables businesses with physical operations (transportation, logistics, construction, field services, utilities) to harness Internet of Things data to improve safety, efficiency, and sustainability. Samsara provides cloud-connected telematics hardware, AI dashcams, and asset sensors tied to a unified SaaS software subscription.
+
+Samsara's moat is driven by high customer ROI (reducing vehicle accidents, insurance costs, and fuel burn), rapid module cross-selling, and large operational data network effects capturing billions of sensory data points weekly. Management is scaling rapidly across large enterprise fleets, expanding internationally in Europe and Latin America, and adding new operational AI workflows to optimize physical asset management.
 
 ## Total Addressable Market & Market Share
 Samsara Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.5% market share. Over our 3-year investment horizon, we model market share evolving to 4.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

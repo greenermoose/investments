@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1262039
 
 ## Business Profile
-Fortinet, Inc. (FTNT) operates as an established participant within the Information Technology sector (Cybersecurity & Unified SASE). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FTNT trades at $153.73 against a 3-year baseline price target of $238.28, generating a modeled annualized ROI of 17.9% under our disciplined 20-year hurdle standard.
+Fortinet, Inc. is a global leader in cybersecurity and secure networking solutions, delivering integrated firewalls, Secure Access Service Edge (SASE), and cloud security through its flagship FortiOS operating system and custom-designed Security Processing Units (ASIC chips). The company serves enterprises, service providers, and government organizations worldwide.
+
+Fortinet's competitive edge is anchored by its proprietary ASIC hardware architecture, which provides superior firewall throughput and energy efficiency at a fraction of competitors' total cost of ownership. Management is aggressively expanding into the high-growth Unified SASE and Security Operations (SecOps) markets, cross-selling software subscription modules to its massive global firewall customer base.
 
 ## Total Addressable Market & Market Share
 Fortinet, Inc. addresses an estimated Total Addressable Market (TAM) of $101.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

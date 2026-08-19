@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=882095
 
 ## Business Profile
-Gilead Sciences, Inc. (GILD) operates as an established participant within the Health Care sector (Biopharmaceuticals). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GILD trades at $148.56 against a 3-year baseline price target of $153.82, generating a modeled annualized ROI of 1.2% under our disciplined 20-year hurdle standard.
+Gilead Sciences, Inc. is a biopharmaceutical powerhouse that discovers, develops, and commercializes innovative therapeutics in virology (HIV, viral hepatitis, COVID-19) and oncology (cell therapies and targeted cancer therapeutics). Its HIV franchise (anchored by Biktarvy and lenacapavir) dominates global HIV treatment and prevention markets, complemented by cancer treatments Trodelvy and Yescarta (via Kite Pharma).
+
+Gilead holds an entrenched competitive moat in HIV antiviral care supported by deep clinical expertise, patent portfolios, and unmatched global physician loyalty. Management is advancing lenacapavir as a twice-yearly subcutaneous injection for HIV pre-exposure prophylaxis (PrEP) and treatment, while expanding clinical indications for its oncology pipeline to build a diversified biopharmaceutical powerhouse.
 
 ## Total Addressable Market & Market Share
 Gilead Sciences, Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 2.6% market share. Over our 3-year investment horizon, we model market share evolving to 2.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

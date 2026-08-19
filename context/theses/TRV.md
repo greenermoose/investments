@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=86312
 
 ## Business Profile
-The Travelers Companies, Inc. (TRV) operates as an established participant within the Financials sector (Property & Casualty Insurance). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRV trades at $370.99 against a 3-year baseline price target of $437.82, generating a modeled annualized ROI of 5.7% under our disciplined 20-year hurdle standard.
+The Travelers Companies, Inc. is a leading commercial and personal property and casualty (P&C) insurance holding company, providing commercial insurance, personal auto and homeowners insurance, and surety/financial products. Travelers distributes policies through an extensive independent agent and broker network across the United States, Canada, the United Kingdom, and Ireland.
+
+Travelers holds an enduring competitive moat built on sophisticated proprietary risk underwriting algorithms, vast actuarial claims databases, strong independent broker relationships, and a conservative investment portfolio. Management consistently delivers industry-leading underwriting profitability (sub-100% combined ratios), strong return on equity (ROE), and steady dividend increases backed by disciplined risk selection.
 
 ## Total Addressable Market & Market Share
 The Travelers Companies, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 5.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

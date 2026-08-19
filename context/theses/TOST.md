@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001653772
 
 ## Business Profile
-Toast, Inc. (TOST) operates as an established participant within the Information Technology sector (Vertical SaaS & Fintech Solutions). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TOST trades at $35.62 against a 3-year baseline price target of $66.07, generating a modeled annualized ROI of 24.3% under our disciplined 20-year hurdle standard.
+Toast, Inc. is the leading cloud-based end-to-end digital technology platform purpose-built for the restaurant industry. Toast combines point-of-sale (POS) hardware, software-as-a-service modules (kitchen display systems, online ordering, payroll, employee scheduling, inventory management), and integrated payment processing into a unified restaurant operating system.
+
+Toast commands a strong competitive moat within the restaurant vertical driven by deep operational workflow lock-in, rapid word-of-mouth restaurant community adoption, and integrated payment monetization take-rates. Management is driving rapid new restaurant location additions, expanding into international markets (UK, Canada, Ireland), scaling hotel food-and-beverage platforms, and expanding high-margin SaaS fintech products.
 
 ## Total Addressable Market & Market Share
 Toast, Inc. addresses an estimated Total Addressable Market (TAM) of $98.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

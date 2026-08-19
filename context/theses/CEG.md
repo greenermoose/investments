@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1868275
 
 ## Business Profile
-Constellation Energy Corporation (CEG) operates as an established participant within the Utilities sector (Clean Electric Power Generation). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CEG trades at $268.14 against a 3-year baseline price target of $296.16, generating a modeled annualized ROI of 3.4% under our disciplined 20-year hurdle standard.
+Constellation Energy Corporation is the largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of commercial nuclear power plants alongside hydro, wind, and solar assets. Constellation generates roughly 10% of America's carbon-free electricity and supplies power and energy management solutions to wholesale customers, major utilities, municipalities, and commercial enterprises.
+
+Constellation's competitive advantage lies in its baseload, 24/7 carbon-free nuclear generation capacity, which cannot be easily replicated due to extreme capital costs and regulatory barriers. Management is strategically capitalizing on surging hyperscale data center electricity demand by structuring long-term, premium power purchase agreements (PPAs) that co-locate AI infrastructure directly with nuclear facilities.
 
 ## Total Addressable Market & Market Share
 Constellation Energy Corporation addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 6.8% market share. Over our 3-year investment horizon, we model market share evolving to 7.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

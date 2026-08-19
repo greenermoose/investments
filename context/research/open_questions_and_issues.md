@@ -90,3 +90,32 @@ When frontier reasoning models review this issue, they should evaluate and test:
 2. **Adversarial Red-Team Prompting**: Can an explicit "Short Seller / Bear Thesis" agent sub-prompt be embedded into the thesis generation pipeline to actively attack every prospective Buy recommendation before finalizing a rating?
 3. **Structured Prompt Ingestion**: How should Tier 1 SEC filings, earnings transcripts, and competitive metrics be ingested and summarized within prompt context to maximize the signal-to-noise ratio for stock selection?
 4. **Evaluation Benchmark**: What objective evaluation benchmark (e.g. historical backtesting against 5-year multi-cycle stock performance) should be used to quantitatively score and rank candidate prompt templates?
+
+### OQI-2026-08-003: Macroeconomic Regimes, Secular Trends, and Thematic Synthesis in Fundamental Analysis
+
+- **Item ID**: OQI-2026-08-003
+- **Date Logged**: 2026-08-19
+- **Domain / Agents**: Investment Thesis Agent, Equity Research Agent, Macro & Thematic Synthesis
+- **Related Files**: [investment-thesis SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/investment-thesis/SKILL.md), [equity-research SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/equity-research/SKILL.md), [weekly_deliberation.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/prompts/weekly_deliberation.md), [valuation_framework.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/valuation_framework.md)
+- **Status**: OPEN
+
+#### Question
+How do we systematically incorporate macro-regime shifts (e.g. global bond routs, rate regime changes), industry-wide disruption cycles (e.g. the "SaaS-pocalypse" / multiple re-ratings), and broader technological and social trends into the bottom-up fundamental analysis performed by the Investment Thesis Agent?
+
+#### Context & Strategic Nuance
+Legendary stock pickers historically succeed not only by performing forensic balance sheet analysis on single equities, but by identifying and riding overarching secular waves, technological paradigms, and macroeconomic regimes that drive dramatic inflections in consumer spending, enterprise budgets, and corporate profitability.
+
+Current multi-agent investment architectures face specific challenges when bridging top-down macro/thematic trends with bottom-up equity research:
+1. **Macro & Secular Disruption Blind Spots**: Bottom-up valuation models anchored strictly on trailing 10-K/10-Q figures and linear 13-quarter revenue growth can miss structural industry regime shifts (such as enterprise SaaS multiple compression / "SaaS-pocalypse" or higher-for-longer cost of capital caused by global bond market routs).
+2. **AI Thematic Synthesis Capabilities**: Multi-agent AI systems possess a unique capability to continuously digest and synthesize vast, heterogeneous datasets (cross-industry earnings calls, consumer behavior indicators, regulatory shifts, technological breakthroughs, and macro yield curve dynamics) to detect early-stage structural trends before they are fully recognized by consensus sell-side analysts.
+3. **Translating Thematic Trends to Individual Alpha**: A broad macro or tech trend (e.g. generative AI infrastructure, edge compute, reshoring, demographic shifts) must be translated into quantifiable company-level metrics: incremental addressable market (TAM), pricing power, operating leverage, and earnings per share impact for specific public companies, rather than vague thematic hype.
+
+#### Current Baseline Implementation
+The current system focuses primarily on bottom-up equity research (evaluating universe constituents via historical SEC filings, 13-quarter revenue trends, and deterministic multiples) without a formal macro/thematic tracking layer. Macro factors and industry re-ratings are indirectly captured through company earnings results and price action rather than explicit top-down thematic modules.
+
+#### Advanced AI Review Mandate
+When frontier reasoning models review this issue, they should address:
+1. **Thematic Knowledge Store Architecture**: How can we design a persistent thematic and secular trend knowledge repository (e.g. `context/trends/` or specialized macro dossiers) that tracks evolving paradigms (e.g. enterprise software disruption, bond yield regimes, power/energy constraints for compute) and maps their beneficiaries and casualties across universe constituents?
+2. **Top-Down to Bottom-Up Valuation Bridge**: What quantitative mechanism should allow macro/thematic insights to directly adjust bottom-up valuation parameters (e.g. terminal multiple ceilings, cost of capital hurdle rates, revenue trajectory acceleration/deceleration coefficients) in [valuation_model.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/valuation_model.py)?
+3. **Cross-Industry Trend Detection Agents**: Can a dedicated Macro & Thematic Research Agent or specialized prompt pipeline monitor cross-sector signals (e.g. supplier lead times, capex announcements, consumer spend surveys, bond market volatility) to generate predictive thematic briefs for the Investment Thesis Agent?
+4. **Historical Paradigm Backtesting**: How can we evaluate whether thematic trend identification improves the hit rate of 20%+ annualized return equity selections versus pure bottom-up fundamental screening over 10- to 20-year historical market cycles?

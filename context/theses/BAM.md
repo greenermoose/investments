@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1937926
 
 ## Business Profile
-Brookfield Asset Management Ltd. (BAM) operates as an established participant within the Financials sector (Alternative Asset Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BAM trades at $52.47 against a 3-year baseline price target of $70.53, generating a modeled annualized ROI of 12.8% under our disciplined 20-year hurdle standard.
+Brookfield Asset Management Ltd. is a leading global alternative asset manager with over $900 billion in assets under management (AUM), specializing in long-term investments across infrastructure, renewable energy, real estate, private equity, and credit strategies. BAM earns predictable recurring base asset management fees, carried interest incentives, and advisory revenue from institutional investors, sovereign wealth funds, and high-net-worth clients.
+
+Brookfield's moat is anchored by its global operational expertise in executing large-scale, complex infrastructure and energy transition deals, a massive permanent capital base, and sticky institutional client relationships. Management is capitalizing on multi-trillion dollar secular capital deployment themes, including global decarbonization, AI data center power infrastructure, and private credit expansion.
 
 ## Total Addressable Market & Market Share
 Brookfield Asset Management Ltd. addresses an estimated Total Addressable Market (TAM) of $71.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

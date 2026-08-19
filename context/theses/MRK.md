@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=310158
 
 ## Business Profile
-Merck & Co., Inc. (MRK) operates as an established participant within the Health Care sector (Pharmaceuticals & Oncology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MRK trades at $150.21 against a 3-year baseline price target of $168.68, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
+Merck & Co., Inc. is a premier global biopharmaceutical company discovering, developing, and manufacturing innovative medicines and vaccines across oncology, infectious diseases, cardiometabolic health, and animal health. Its commercial portfolio is anchored by KEYTRUDA (the world's top-selling anti-PD-1 cancer immunotherapy), Gardasil HPV vaccines, ProQuad pediatric vaccines, and cardiovascular medicine WINREVAIR.
+
+Merck's economic moat is built on KEYTRUDA's broad clinical validation across dozens of tumor indications, deep oncology commercial infrastructure, and extensive vaccine manufacturing capabilities. Management is actively executing life-cycle extensions for KEYTRUDA (subcutaneous formulation), expanding newly approved pulmonary arterial hypertension drug WINREVAIR, and acquiring clinical-stage assets to diversify long-term revenue.
 
 ## Total Addressable Market & Market Share
 Merck & Co., Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 5.9% market share. Over our 3-year investment horizon, we model market share evolving to 5.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

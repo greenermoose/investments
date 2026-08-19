@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723531
 
 ## Business Profile
-Paychex, Inc. (PAYX) operates as an established participant within the Industrials sector (Payroll & HR Outsourcing Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PAYX trades at $122.90 against a 3-year baseline price target of $138.34, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Paychex, Inc. is a leading provider of integrated human capital management (HCM) solutions for small to medium-sized businesses across the United States and Europe. Paychex provides payroll processing, HR outsourcing (Paychex HR PEO), employee benefits administration, retirement services, and compliance management, monetizing via recurring SaaS subscriptions and client float interest income.
+
+Paychex holds an entrenched competitive moat built on mission-critical compliance workflows, high client switching costs, high client retention rates, and dense direct sales distribution. Management is expanding digital self-service capabilities via Paychex Flex, growing higher-margin HR outsourcing services, and returning substantial capital to shareholders via dependable dividend payouts.
 
 ## Total Addressable Market & Market Share
 Paychex, Inc. addresses an estimated Total Addressable Market (TAM) of $98.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

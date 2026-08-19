@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=19617
 
 ## Business Profile
-JPMorgan Chase & Co. (JPM) operates as an established participant within the Financials sector (Diversified Banking & Financial Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, JPM trades at $360.48 against a 3-year baseline price target of $437.20, generating a modeled annualized ROI of 6.6% under our disciplined 20-year hurdle standard.
+JPMorgan Chase & Co. is the largest and most profitable bank in the United States and a global financial services leader, operating across Consumer & Community Banking (retail branches, Chase credit cards, auto and home lending), Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management. The bank manages over $4 trillion in assets and processes trillions in daily global payments.
+
+JPMorgan holds an unmatched competitive moat characterized by its 'fortress balance sheet,' immense retail deposit gathering scale, premier investment banking franchise, and substantial annual technology investments exceeding $15 billion. Under CEO Jamie Dimon, management consistently executes counter-cyclical capital deployment, gaining market share across commercial lending, wealth management, and global treasury services.
 
 ## Total Addressable Market & Market Share
 JPMorgan Chase & Co. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 21.9% market share. Over our 3-year investment horizon, we model market share evolving to 22.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

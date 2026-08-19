@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1326801
 
 ## Business Profile
-Meta Platforms, Inc. (META) operates as an established participant within the Communication Services sector (Interactive Media & Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, META trades at $544.87 against a 3-year baseline price target of $806.17, generating a modeled annualized ROI of 16.2% under our disciplined 20-year hurdle standard.
+Meta Platforms, Inc. is the world's leading social connectivity and digital advertising company, connecting more than 3.2 billion daily active users across its Family of Apps: Facebook, Instagram, WhatsApp, Messenger, and Threads. Meta monetizes its vast user engagement primarily through targeted digital advertising, while investing in open-source artificial intelligence models (Llama series) and spatial computing hardware/software (Meta Quest and Ray-Ban Meta smart glasses via Reality Labs).
+
+Meta possesses an extraordinary competitive moat driven by global social graph network effects, massive advertiser reach, and industry-leading AI recommendation engines (Advantage+ ad platform and content discovery algorithms). Management is deploying massive compute infrastructure to advance generative AI assistants, optimize digital advertising ROI, monetize WhatsApp business messaging, and pioneer AI-powered smart eyewear.
 
 ## Total Addressable Market & Market Share
 Meta Platforms, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 30.4% market share. Over our 3-year investment horizon, we model market share evolving to 33.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

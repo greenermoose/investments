@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=6951
 
 ## Business Profile
-Applied Materials, Inc. (AMAT) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMAT trades at $495.25 against a 3-year baseline price target of $657.07, generating a modeled annualized ROI of 12.3% under our disciplined 20-year hurdle standard.
+Applied Materials, Inc. is the world's largest semiconductor wafer fabrication equipment (WFE) manufacturer, supplying critical precision materials engineering systems used to produce virtually every advanced chip and display in the world. Its technology offerings span atomic-layer deposition, chemical vapor deposition (CVD), physical vapor deposition (PVD), chemical mechanical planarization (CMP), etch, ion implantation, and metrology inspection.
+
+Applied Materials commands unmatched breadth across semiconductor manufacturing steps, creating deep co-development partnerships with leading-edge foundries, logic, and memory chipmakers. Management is capitalizing on secular demand for gate-all-around (GAA) transistor architectures, backside power delivery networks, heterogeneous advanced chip packaging, and high-margin recurring services and spare parts revenue through Applied Global Services (AGS).
 
 ## Total Addressable Market & Market Share
 Applied Materials, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.4% market share. Over our 3-year investment horizon, we model market share evolving to 2.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1844862
 
 ## Business Profile
-Solid Power, Inc. (SLDP) operates as an established participant within the Energy sector (All-Solid-State Battery Technology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SLDP trades at $2.27 against a 3-year baseline price target of $2.52, generating a modeled annualized ROI of 3.5% under our disciplined 20-year hurdle standard.
+Solid Power, Inc. is a developer of all-solid-state rechargeable battery technology for electric vehicles and energy storage markets. Solid Power replaces conventional liquid or gel electrolytes with proprietary sulfide-based solid electrolytes, pairing them with high-capacity silicon or lithium metal anodes to deliver higher energy density, longer range, and enhanced thermal safety.
+
+Solid Power's competitive advantage lies in its patented sulfide solid electrolyte material and its strategy of designing cells that can be manufactured using existing lithium-ion roll-to-roll manufacturing equipment. Management maintains strong strategic development partnerships with BMW and Ford, licensing cell designs and supplying electrolyte powder to automotive battery manufacturers.
 
 ## Total Addressable Market & Market Share
 Solid Power, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

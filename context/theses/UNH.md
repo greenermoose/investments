@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=731766
 
 ## Business Profile
-UnitedHealth Group Incorporated (UNH) operates as an established participant within the Health Care sector (Managed Care & Healthcare Services (Optum)). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, UNH trades at $394.99 against a 3-year baseline price target of $552.19, generating a modeled annualized ROI of 14.2% under our disciplined 20-year hurdle standard.
+UnitedHealth Group Incorporated is the largest and most diversified healthcare enterprise in the United States, operating through two complementary platforms: UnitedHealthcare (providing health benefit coverage to over 50 million commercial, Medicare Advantage, and Medicaid members) and Optum (health services encompassing Optum Health ambulatory care/physician practices, Optum Rx pharmacy benefit management, and Optum Insight healthcare data analytics).
+
+UnitedHealth Group commands an unmatched healthcare ecosystem moat, capturing synergistic cash flows across health insurance underwriting, direct physician clinical care, prescription drug management, and healthcare IT. Management leverages its immense scale to negotiate favorable provider rates, deploy AI-driven clinical workflow analytics, and deliver consistent double-digit earnings growth and dividend compounding.
 
 ## Total Addressable Market & Market Share
 UnitedHealth Group Incorporated addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 40.6% market share. Over our 3-year investment horizon, we model market share evolving to 40.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

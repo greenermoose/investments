@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=12927
 
 ## Business Profile
-The Boeing Company (BA) operates as a premier global aerospace manufacturer spanning Commercial Airplanes (BCA), Defense, Space & Security (BDS), and Global Services (BGS). The company monetizes long-cycle commercial aircraft programs and defense contracts across global airlines and sovereign governments. Grounded in our deterministic valuation framework, BA trades at $194.20 against a 3-year baseline target of $265.00, generating a modeled annualized ROI of 21.4% under our disciplined 20-year hurdle standard.
+The Boeing Company is one of the world's two major commercial aerospace manufacturers (commercial airplanes: 737 MAX, 787 Dreamliner, 777X) and a premier defense, space, and security contractor for global governments. Boeing manufactures commercial jetliners, military aircraft, satellites, and missile defense systems, backed by a global aftermarket parts, maintenance, and fleet servicing division (Boeing Global Services).
+
+Boeing operates in an effective commercial aerospace duopoly alongside Airbus, supported by massive multi-year aircraft order backlogs, extreme regulatory certification barriers, and deep defense procurement relationships. Management is focused on overhauling manufacturing quality control, stabilizing commercial assembly line delivery rates, streamlining supply chains, and restoring positive free cash flow generation.
 
 ## Total Addressable Market & Market Share
 Boeing addresses an estimated Total Addressable Market (TAM) of $750.0B across commercial aerospace, government defense systems, and global aviation fleet services, growing at a ~5.0% CAGR. Boeing currently commands an estimated 38.5% market share. Over our 3-year investment horizon, we model market share recovering to 44.0%, supported by order backlog deliveries, production normalization, and durable duopoly barriers alongside Airbus.

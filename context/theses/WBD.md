@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1437107
 
 ## Business Profile
-Warner Bros. Discovery, Inc. (WBD) operates as an established participant within the Communication Services sector (Entertainment & Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WBD trades at $28.62 against a 3-year baseline price target of $19.42, generating a modeled annualized ROI of -12.1% under our disciplined 20-year hurdle standard.
+Warner Bros. Discovery, Inc. is a premier global media and entertainment company operating iconic film, television, and streaming content assets across Warner Bros. Pictures, HBO, Max, Discovery Channel, CNN, HGTV, Food Network, TNT Sports, and DC Comics. The company monetizes through direct-to-consumer streaming subscriptions (Max), theatrical box office releases, television advertising, and content licensing.
+
+Warner Bros. Discovery possesses one of the world's richest libraries of premium intellectual property (Harry Potter, DC Universe, Game of Thrones, Lord of the Rings) and award-winning prestige television production via HBO. Management is executing an aggressive international expansion of the Max streaming platform, driving direct-to-consumer streaming profitability, and paying down corporate debt with strong free cash flow.
 
 ## Total Addressable Market & Market Share
 Warner Bros. Discovery, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 4.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=769397
 
 ## Business Profile
-Autodesk, Inc. (ADSK) operates as an established participant within the Information Technology sector (Design & Engineering Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADSK trades at $252.51 against a 3-year baseline price target of $311.84, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Autodesk, Inc. is the leading software platform provider for 3D design, engineering, architecture, construction, and entertainment media production. Its core industry-standard applications include AutoCAD, Revit (Building Information Modeling), Inventor, Fusion 360, Civil 3D, and Maya, monetized primarily through cloud-based recurring term subscriptions and enterprise consumption agreements.
+
+Autodesk's platform acts as the ubiquitous standard across global architecture, engineering, and construction (AEC) industries, creating massive switching costs and network effects as project files and workflows are shared across architects, engineers, and general contractors. Management is executing a strategic expansion into cloud construction management (Autodesk Construction Cloud), unified digital manufacturing pipelines, and generative AI design automation tools.
 
 ## Total Addressable Market & Market Share
 Autodesk, Inc. addresses an estimated Total Addressable Market (TAM) of $108.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

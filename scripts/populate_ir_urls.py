@@ -6,7 +6,7 @@ scripts_data_dir = os.path.join(root_dir, "scripts", "data")
 http_data_dir = os.path.join(root_dir, "http", "data")
 context_equities_dir = os.path.join(root_dir, "context", "data", "equities")
 
-# Authoritative IR URLs for all 144 Universe Tickers
+# Authoritative IR URLs for all 150 Universe Tickers
 IR_URLS = {
     "AAPL": "https://investor.apple.com/",
     "ABNB": "https://investors.airbnb.com/",

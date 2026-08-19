@@ -2,7 +2,7 @@
 Valuation Model & Quantitative Forecasting Engine
 Deterministic bottom-up financial forecasting, multi-horizon valuation modeling,
 TAM & market share dynamics, product-level catalyst bridges, and Return Engine parameterization
-for all 144 universe equities.
+for all 150 universe equities.
 
 Conforms to:
 - context/schemas/investment_thesis_schema.json
@@ -10,6 +10,7 @@ Conforms to:
 - AGENTS.md (No emojis, locked 2x2 grid card metric matrix, 20-year hurdle standard)
 """
 
+import json
 import math
 import os
 import sys
@@ -1023,12 +1024,24 @@ def model_equity_valuation(
     else:
         rating = candidate_rating
 
-    business_profile = (
-        f"{company_name or symbol} ({symbol}) operates as an established participant within the {sector} sector ({industry}). "
-        f"The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our "
-        f"deterministic valuation framework, {symbol} trades at ${curr_px:.2f} against a 3-year baseline price target of "
-        f"${target_exit_px:.2f}, generating a modeled annualized ROI of {ret_res.target_roi_str} under our disciplined 20-year hurdle standard."
-    )
+    # Load curated business profile from company_meta if available
+    business_profile = None
+    meta_path = os.path.join(scripts_dir, "data", "company_meta.json")
+    if os.path.exists(meta_path):
+        try:
+            with open(meta_path, "r", encoding="utf-8") as f:
+                c_meta = json.load(f)
+                if symbol in c_meta and c_meta[symbol].get("business_profile"):
+                    business_profile = c_meta[symbol]["business_profile"]
+        except Exception:
+            pass
+
+    if not business_profile:
+        business_profile = (
+            f"{company_name or symbol} operates within the {sector} sector, specializing in {industry}. "
+            f"The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.\n\n"
+            f"Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments."
+        )
 
     competitive_moat = (
         f"High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power "

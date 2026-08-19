@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1403161
 
 ## Business Profile
-Visa Inc. (V) operates as an established participant within the Financials sector (Transaction & Payment Processing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, V trades at $368.33 against a 3-year baseline price target of $484.77, generating a modeled annualized ROI of 12.0% under our disciplined 20-year hurdle standard.
+Visa Inc. is the world's largest retail electronic payments network, connecting consumers, merchants, financial institutions, and government entities across more than 200 countries and territories. Visa facilitates tens of billions of daily payment transactions across Visa-branded credit, debit, and prepaid credentials, earning transaction processing, service, and international transaction fees without taking underlying credit risk.
+
+Visa possesses one of the widest economic moats in history, protected by virtually insurmountable global two-sided network effects, universal merchant acceptance, and extreme operational processing scale that delivers operating margins above 65%. Management is capitalizing on the worldwide secular cash-to-digital payments conversion, scaling high-margin value-added services (fraud prevention, cyber risk, data analytics), and expanding new payment flows (Visa Direct B2B/P2P payouts).
 
 ## Total Addressable Market & Market Share
 Visa Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 4.7% market share. Over our 3-year investment horizon, we model market share evolving to 5.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1419612
 
 ## Business Profile
-SolarEdge Technologies, Inc. (SEDG) operates as an established participant within the Energy sector (Solar Inverters & Power Optimizers). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SEDG trades at $30.50 against a 3-year baseline price target of $31.03, generating a modeled annualized ROI of 0.6% under our disciplined 20-year hurdle standard.
+SolarEdge Technologies, Inc. is a global leader in smart energy technology, inventing an intelligent DC optimized inverter solution that transformed the way power is harvested and managed in solar photovoltaic (PV) systems. The company manufactures DC power optimizers, solar inverters, residential battery storage systems, and EV chargers for residential and commercial solar installations.
+
+SolarEdge's technological advantage centers on module-level power electronics (MLPE), maximizing energy yield per solar panel while providing module-level monitoring and integrated rapid shutdown safety compliance. Management is navigating solar channel inventory normalization, scaling manufacturing footprint in the US, and launching next-generation commercial storage and software solutions.
 
 ## Total Addressable Market & Market Share
 SolarEdge Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.3% market share. Over our 3-year investment horizon, we model market share evolving to 2.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

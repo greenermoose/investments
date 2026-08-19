@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1280452
 
 ## Business Profile
-Monolithic Power Systems, Inc. (MPWR) operates as an established participant within the Information Technology sector (Power Management Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MPWR trades at $1289.26 against a 3-year baseline price target of $1595.98, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
+Monolithic Power Systems, Inc. (MPS) is a high-performance semiconductor company specializing in advanced power management solutions and power delivery architectures. MPS designs monolithic integrated circuits that convert, distribute, and manage electrical power across cloud computing data centers, AI accelerator servers, automotive electronics, industrial equipment, and enterprise communications.
+
+MPS commands a substantial technological moat based on its proprietary BCD (Bipolar-CMOS-DMOS) process technology, enabling smaller chip form factors, superior thermal dissipation, and industry-leading power efficiency. Management is capturing dominant market share in high-density power delivery modules for generative AI data center GPUs and accelerators, while expanding content per vehicle in electric and autonomous vehicles.
 
 ## Total Addressable Market & Market Share
 Monolithic Power Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 5.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1633917
 
 ## Business Profile
-PayPal Holdings, Inc. (PYPL) operates as an established participant within the Financials sector (Digital Payments & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PYPL trades at $61.59 against a 3-year baseline price target of $67.57, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
+PayPal Holdings, Inc. is a global digital payments pioneer operating a leading two-sided consumer and merchant payment platform. Its portfolio includes PayPal, Venmo, Braintree (unbranded merchant payment processing), and PayPal Honey, facilitating digital checkout, peer-to-peer transfers, merchant acquiring, and point-of-sale commerce across more than 200 markets globally.
+
+PayPal benefits from strong brand trust in digital checkout, a massive user base of over 400 million active consumer and merchant accounts, and extensive global payments regulatory licensing. Management is executing a strategic turnaround focused on improving branded checkout conversion (Fastlane guest checkout), monetizing Venmo, driving high-margin small business solutions, and executing disciplined share buybacks.
 
 ## Total Addressable Market & Market Share
 PayPal Holdings, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 3.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

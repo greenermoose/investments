@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1318605
 
 ## Business Profile
-Tesla, Inc. (TSLA) operates as an established participant within the Consumer Discretionary sector (Automobile & Clean Energy). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TSLA trades at $338.62 against a 3-year baseline price target of $429.97, generating a modeled annualized ROI of 10.8% under our disciplined 20-year hurdle standard.
+Tesla, Inc. is an automotive and clean energy technology leader, designing, manufacturing, and selling premium mass-market electric vehicles (Model Y, Model 3, Cybertruck, Model S, Model X, Semi), stationary battery energy storage systems (Megapack and Powerwall), solar energy systems, and autonomous driving technology (Full Self-Driving / FSD Supervised and Robotaxi).
+
+Tesla's competitive moat is driven by massive manufacturing cost efficiencies (gigacasting, vertical integration, structural battery packs), proprietary global Supercharger network dominance, real-world autonomous fleet video data collection, and software margins. Management is ramping high-margin Megapack utility storage deployments, training next-generation end-to-end neural network autonomous driving models, and developing humanoid robotics (Optimus).
 
 ## Total Addressable Market & Market Share
 Tesla, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 10.3% market share. Over our 3-year investment horizon, we model market share evolving to 11.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

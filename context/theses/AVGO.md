@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1730168
 
 ## Business Profile
-Broadcom Inc. (AVGO) operates as an established participant within the Information Technology sector (Semiconductors & Infrastructure Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AVGO trades at $361.37 against a 3-year baseline price target of $511.61, generating a modeled annualized ROI of 14.6% under our disciplined 20-year hurdle standard.
+Broadcom Inc. is a diversified global semiconductor and infrastructure software provider, designing custom ASIC accelerators, high-speed networking switches (Tomahawk and Jericho series), optical interconnects, RF front-end chips, and enterprise infrastructure software (VMware, CA Technologies, Symantec). The company supplies mission-critical custom silicon and ethernet networking hardware to leading cloud hyperscalers and enterprise data centers.
+
+Broadcom's economic moat is reinforced by deep ASIC co-design relationships with cloud hyperscalers, proprietary ethernet networking IP, and high enterprise software switching costs embedded within VMware virtualization infrastructure. Under CEO Hock Tan, management executes disciplined capital allocation, aggressive cost optimization, high free cash flow generation, and double-digit annual dividend increases.
 
 ## Total Addressable Market & Market Share
 Broadcom Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.4% market share. Over our 3-year investment horizon, we model market share evolving to 5.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

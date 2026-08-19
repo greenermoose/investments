@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=18230
 
 ## Business Profile
-Caterpillar Inc. (CAT) operates as an established participant within the Industrials sector (Construction, Mining & Heavy Machinery). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CAT trades at $814.38 against a 3-year baseline price target of $975.37, generating a modeled annualized ROI of 6.2% under our disciplined 20-year hurdle standard.
+Caterpillar Inc. is the world's leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives. The company operates through three primary segments: Construction Industries, Resource Industries (mining), and Energy & Transportation, complemented by customer equipment financing through Caterpillar Financial Services.
+
+Caterpillar's formidable moat is reinforced by an unmatched global independent dealer network (over 150 dealers operating in 190+ countries), strong brand pricing power, and an expanding high-margin aftermarket parts and maintenance services business. Management is capitalizing on multi-year secular tailwinds in global infrastructure renewal, critical mineral mining for the energy transition, and autonomous heavy machinery automation.
 
 ## Total Addressable Market & Market Share
 Caterpillar Inc. addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 8.8% market share. Over our 3-year investment horizon, we model market share evolving to 8.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

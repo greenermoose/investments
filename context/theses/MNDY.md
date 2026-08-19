@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001845338
 
 ## Business Profile
-monday.com Ltd. (MNDY) operates as an established participant within the Information Technology sector (Enterprise Workflow Software & Cloud). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MNDY trades at $91.46 against a 3-year baseline price target of $179.40, generating a modeled annualized ROI of 26.7% under our disciplined 20-year hurdle standard.
+monday.com Ltd. is a leading cloud-based Work Operating System (Work OS) platform that enables organizations of all sizes to build custom digital workflow software applications and work management tools without coding. Its modular platform supports project management, sales CRM (monday sales CRM), software development lifecycle management (monday dev), and enterprise service management.
+
+monday.com benefits from rapid self-serve customer adoption, a highly intuitive visual interface, strong multi-product expansion across departments, and high net expansion rates within enterprise accounts. Management is driving sustained high growth by moving upmarket into large enterprise deployments, integrating generative AI workflow assistants, and expanding third-party app marketplace integrations.
 
 ## Total Addressable Market & Market Share
 monday.com Ltd. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

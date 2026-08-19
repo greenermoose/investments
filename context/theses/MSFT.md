@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=789019
 
 ## Business Profile
-Microsoft Corporation (MSFT) operates as an established participant within the Information Technology sector (Systems Software & Cloud Computing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MSFT trades at $482.69 against a 3-year baseline price target of $690.56, generating a modeled annualized ROI of 15.0% under our disciplined 20-year hurdle standard.
+Microsoft Corporation is a global technology leader operating across three core pillars: Productivity & Business Processes (Microsoft 365, Office, Teams, LinkedIn, Dynamics 365), Intelligent Cloud (Microsoft Azure cloud infrastructure, SQL Server, Windows Server), and More Personal Computing (Windows OEM, Xbox gaming content and consoles via Activision Blizzard, Surface hardware).
+
+Microsoft commands one of the widest economic moats in corporate history, underpinned by massive enterprise software lock-in, global mission-critical cloud infrastructure scale, and deep strategic partnership with OpenAI. Management is leading the enterprise generative AI revolution through Microsoft Copilot integrations across Office and software workflows, while Azure continues to capture high-margin enterprise cloud market share.
 
 ## Total Addressable Market & Market Share
 Microsoft Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 27.7% market share. Over our 3-year investment horizon, we model market share evolving to 28.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

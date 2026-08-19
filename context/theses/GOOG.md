@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1652044
 
 ## Business Profile
-Alphabet Inc. (Class C) (GOOG) operates as an established participant within the Communication Services sector (Interactive Media & Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GOOG trades at $339.31 against a 3-year baseline price target of $484.11, generating a modeled annualized ROI of 14.9% under our disciplined 20-year hurdle standard.
+Alphabet Inc. (Class C) is a global technology leader operating the world's most dominant search engine (Google Search), digital video platform (YouTube), mobile operating system (Android), and third-largest cloud computing provider (Google Cloud). The company monetizes through targeted search and video advertising, cloud infrastructure enterprise subscriptions, digital hardware (Pixel devices), and subscription services (YouTube TV, Google One).
+
+Alphabet commands an immense economic moat powered by unmatched digital advertising scale, global consumer search habits, YouTube's video network effects, and deep foundational AI research (Google DeepMind and Gemini models). Management is actively infusing generative AI across Search (AI Overviews) and Google Cloud to accelerate enterprise adoption, while maintaining disciplined cost management and massive share buybacks.
 
 ## Total Addressable Market & Market Share
 Alphabet Inc. (Class C) addresses an estimated Total Addressable Market (TAM) of $997.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 40.0% market share. Over our 3-year investment horizon, we model market share evolving to 42.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1463101
 
 ## Business Profile
-Enphase Energy, Inc. (ENPH) operates as an established participant within the Energy sector (Solar Microinverters & Energy Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ENPH trades at $38.09 against a 3-year baseline price target of $38.67, generating a modeled annualized ROI of 0.5% under our disciplined 20-year hurdle standard.
+Enphase Energy, Inc. is a global energy technology company and the world's leading supplier of microinverter-based solar-plus-storage systems. Its semiconductor-based microinverters convert direct current (DC) from individual solar panels into alternating current (AC) at the modular level, paired with Enphase IQ batteries, EV chargers, and cloud-based energy management software.
+
+Enphase commands significant pricing power and customer loyalty due to its high system reliability, module-level optimization, simplified installation, and integrated homeowner software app. Management is expanding its international residential footprint, ramping commercial solar microinverters, and scaling residential battery storage systems across global markets.
 
 ## Total Addressable Market & Market Share
 Enphase Energy, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.8% market share. Over our 3-year investment horizon, we model market share evolving to 2.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

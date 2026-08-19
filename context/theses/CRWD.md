@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1535527
 
 ## Business Profile
-CrowdStrike Holdings, Inc. (CRWD) operates as an established participant within the Information Technology sector (Cybersecurity Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRWD trades at $200.66 against a 3-year baseline price target of $313.67, generating a modeled annualized ROI of 18.2% under our disciplined 20-year hurdle standard.
+CrowdStrike Holdings, Inc. is the leading cloud-native cybersecurity platform provider, protecting enterprise endpoints, cloud workloads, identity data, and corporate networks through its unified Falcon platform. Falcon leverages a single lightweight agent architecture and a centralized threat graph powered by artificial intelligence to stop breaches in real time, monetized through modular SaaS subscription tiers.
+
+CrowdStrike's competitive advantage is powered by powerful crowd-sourced data network effects (the Falcon Threat Graph analyzes trillions of security events daily, making the platform smarter for all customers), high platform module adoption, and high gross retention rates. Management is driving sustained growth by expanding into next-generation cloud security, identity protection, next-gen SIEM (Falcon LogScale), and generative AI security operations (Charlotte AI).
 
 ## Total Addressable Market & Market Share
 CrowdStrike Holdings, Inc. addresses an estimated Total Addressable Market (TAM) of $73.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

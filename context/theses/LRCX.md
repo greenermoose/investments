@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=707549
 
 ## Business Profile
-Lam Research Corporation (LRCX) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LRCX trades at $315.72 against a 3-year baseline price target of $455.40, generating a modeled annualized ROI of 15.3% under our disciplined 20-year hurdle standard.
+Lam Research Corporation is a premier semiconductor wafer fabrication equipment manufacturer, specializing in critical thin-film deposition and plasma etch equipment. Lam's systems are essential for carving intricate circuit pathways and depositing atomic-scale materials onto silicon wafers, dominating the manufacturing of 3D NAND flash memory, advanced DRAM, and leading-edge logic chips.
+
+Lam Research maintains an entrenched competitive moat built on specialized chemical engineering, deep atomic-scale plasma etching IP, and a massive installed base of over 90,000 chambers that generates high-margin recurring spare parts and service revenue via Customer Support Business Group (CSBG). Management is capitalizing on the transition to vertical 3D memory architectures, GAA logic nodes, and backside power delivery integration.
 
 ## Total Addressable Market & Market Share
 Lam Research Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.9% market share. Over our 3-year investment horizon, we model market share evolving to 1.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

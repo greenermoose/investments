@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=200406
 
 ## Business Profile
-Johnson & Johnson (JNJ) operates as an established participant within the Health Care sector (Pharmaceuticals & MedTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, JNJ trades at $275.40 against a 3-year baseline price target of $309.19, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
+Johnson & Johnson is a global healthcare giant operating across two high-margin divisions: Innovative Medicine (oncology, immunology, neuroscience, and cardiovascular pharmaceuticals such as Darzalex, Stelara, Tremfya, and Carvykti) and MedTech (orthopedics, interventional solutions, surgical instruments, and vision care products).
+
+Johnson & Johnson's economic moat is underpinned by deep clinical R&D scale, extensive global hospital commercial distribution networks, and a diversified portfolio of blockbuster therapies and surgical devices. Management is aggressively expanding its innovative oncology and bispecific antibody pipelines while deploying targeted acquisitions in cardiovascular interventional devices (Shockwave Medical and Abiomed) to drive sustainable, dividend-supported long-term compounding.
 
 ## Total Addressable Market & Market Share
 Johnson & Johnson addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 8.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

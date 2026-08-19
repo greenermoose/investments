@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001512673
 
 ## Business Profile
-Block, Inc. (XYZ) operates as an established participant within the Financials sector (Financial Technology & Digital Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, XYZ trades at $80.52 against a 3-year baseline price target of $94.41, generating a modeled annualized ROI of 5.5% under our disciplined 20-year hurdle standard.
+Block, Inc. (formerly Square) is a global fintech and digital commerce company operating two major ecosystems: Square (providing integrated point-of-sale software, hardware terminals, inventory management, and merchant financing for small to mid-sized businesses) and Cash App (a consumer financial super-app offering digital payments, direct deposit banking, debit cards, stock investing, and Bitcoin trading).
+
+Block commands a strong economic moat built on two-sided ecosystem integration, high merchant software lock-in, and Cash App's low-cost viral peer-to-peer network effects among younger demographics. Management is focused on connecting the Square seller and Cash App consumer ecosystems, driving operating efficiency and Rule of 40 profitability, and scaling Cash App's banking and commerce monetization.
 
 ## Total Addressable Market & Market Share
 Block, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 2.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

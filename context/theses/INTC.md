@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=50863
 
 ## Business Profile
-Intel Corporation (INTC) operates as an established participant within the Information Technology sector (Semiconductors & Foundry Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, INTC trades at $92.43 against a 3-year baseline price target of $67.31, generating a modeled annualized ROI of -10.0% under our disciplined 20-year hurdle standard.
+Intel Corporation is a global semiconductor designer and integrated device manufacturer (IDM), producing microprocessors for personal computers (Core processors), data center servers (Xeon processors), networking chips, and autonomous driving technology (via Mobileye). Intel is executing an ambitious dual strategy to regain transistor performance leadership while operating Intel Foundry as an open, commercial semiconductor foundry.
+
+Intel benefits from an enormous global installed base of x86 software architecture, extensive enterprise IT procurement relationships, and major government subsidies under the US CHIPS Act. Management is focused on executing its aggressive process technology roadmap (transitioning to Intel 18A node featuring RibbonFET and PowerVia), restructuring operational cost structures, and ramping leading-edge foundry customer commitments.
 
 ## Total Addressable Market & Market Share
 Intel Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 4.4% market share. Over our 3-year investment horizon, we model market share evolving to 3.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

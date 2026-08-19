@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=804328
 
 ## Business Profile
-QUALCOMM Incorporated (QCOM) operates as an established participant within the Information Technology sector (Semiconductors & Wireless Licensing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, QCOM trades at $161.93 against a 3-year baseline price target of $195.73, generating a modeled annualized ROI of 6.5% under our disciplined 20-year hurdle standard.
+QUALCOMM Incorporated is the global wireless technology leader and pioneer of mobile communications, developing foundational 3G, 4G, 5G, and next-generation connectivity standards. The company operates two main divisions: QCT (semiconductor chips including Snapdragon processors, 5G modems, and automotive/IoT connectivity silicon) and QTL (licensing Qualcomm's vast global patent portfolio to virtually all mobile device manufacturers).
+
+Qualcomm commands an entrenched licensing moat protected by essential wireless standard patents, alongside market-leading mobile CPU, GPU, and NPU silicon engineering. Management is aggressively diversifying beyond smartphones into AI-powered PC processors (Snapdragon X Elite), automotive digital cockpits and ADAS platforms (Snapdragon Digital Chassis), and industrial edge IoT devices.
 
 ## Total Addressable Market & Market Share
 QUALCOMM Incorporated addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.7% market share. Over our 3-year investment horizon, we model market share evolving to 3.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

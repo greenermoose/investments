@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723125
 
 ## Business Profile
-Micron Technology, Inc. (MU) operates as an established participant within the Information Technology sector (Memory Semiconductors & HBM). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MU trades at $927.42 against a 3-year baseline price target of $1136.87, generating a modeled annualized ROI of 9.6% under our disciplined 20-year hurdle standard.
+Micron Technology, Inc. is a global semiconductor leader and the only US-based manufacturer of memory and storage technologies, designing dynamic random-access memory (DRAM), NAND flash memory, and NOR flash chips. Micron's memory solutions are critical components across AI data center servers (High Bandwidth Memory / HBM3E), enterprise cloud storage, smartphones, PCs, and automotive electronics.
+
+Micron operates in an entrenched global oligopoly alongside Samsung and SK Hynix, supported by extreme capital expenditure requirements and proprietary advanced manufacturing process nodes (1-beta DRAM and 232-layer NAND). Management is positioned at the forefront of the generative AI compute buildout, ramping high-margin HBM3E memory for leading GPU architectures and benefiting from tight industry supply-demand dynamics.
 
 ## Total Addressable Market & Market Share
 Micron Technology, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.1% market share. Over our 3-year investment horizon, we model market share evolving to 3.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

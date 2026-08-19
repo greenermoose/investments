@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1091667
 
 ## Business Profile
-Charter Communications, Inc. (CHTR) operates as an established participant within the Communication Services sector (Broadband Cable & Mobile). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CHTR trades at $154.49 against a 3-year baseline price target of $115.14, generating a modeled annualized ROI of -9.3% under our disciplined 20-year hurdle standard.
+Charter Communications, Inc. is a leading broadband connectivity and cable operator serving over 32 million residential and commercial customers across 41 states under the Spectrum brand. Charter provides high-speed internet, video entertainment, mobile phone services, and enterprise networking infrastructure.
+
+Charter's competitive moat is anchored by its ubiquitous hybrid fiber-coaxial (HFC) network infrastructure, high household passings density, and bundled connectivity offerings combining Spectrum Internet with Spectrum Mobile. Management is executing a major network evolution upgrade to deliver multi-gigabit symmetrical speeds through DOCSIS 4.0 while aggressively expanding subsidized rural broadband buildouts.
 
 ## Total Addressable Market & Market Share
 Charter Communications, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 8.4% market share. Over our 3-year investment horizon, we model market share evolving to 7.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

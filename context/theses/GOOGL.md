@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1652044
 
 ## Business Profile
-Alphabet Inc. (Class A) (GOOGL) operates as an established participant within the Communication Services sector (Interactive Media & Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GOOGL trades at $341.92 against a 3-year baseline price target of $488.03, generating a modeled annualized ROI of 14.9% under our disciplined 20-year hurdle standard.
+Alphabet Inc. (Class A) is the parent company of Google, representing the voting common equity of the global internet technology pioneer. Its core revenue engine comprises Google Services (Google Search, YouTube advertising, Google Play store, and consumer hardware) and Google Cloud (enterprise infrastructure, BigQuery analytics, and Vertex AI developer platforms), complemented by transformative Other Bets investments (Waymo autonomous driving).
+
+Alphabet's economic moat is among the strongest in history, driven by billions of daily active users, massive advertising take-rates, proprietary tensor processing unit (TPU) AI infrastructure, and premier artificial intelligence research talent. Management is scaling Google Cloud's AI infrastructure, monetizing enterprise generative AI tools, expanding Waymo commercial robotaxi rides, and returning robust capital to shareholders via dividends and buybacks.
 
 ## Total Addressable Market & Market Share
 Alphabet Inc. (Class A) addresses an estimated Total Addressable Market (TAM) of $997.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 40.0% market share. Over our 3-year investment horizon, we model market share evolving to 42.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=858877
 
 ## Business Profile
-Cisco Systems, Inc. (CSCO) operates as an established participant within the Information Technology sector (Communications Equipment & Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSCO trades at $111.16 against a 3-year baseline price target of $114.27, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
+Cisco Systems, Inc. is the world's premier provider of networking, security, collaboration, and cloud observability hardware and software. Cisco supplies enterprise routers, ethernet switches, optical networking systems, wireless access points, and security appliances, while aggressively transitioning its revenue model toward recurring software and SaaS subscriptions (reinforced by its acquisition of Splunk).
+
+Cisco's moat is built on its massive global installed base in enterprise networking, extensive partner distribution channels, and deep IT administrator certification brand loyalty. Management is integrating Splunk's security and observability data platform with Cisco's networking infrastructure to deliver end-to-end digital resilience, high-speed AI data center ethernet switching fabrics, and automated network management.
 
 ## Total Addressable Market & Market Share
 Cisco Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 4.7% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

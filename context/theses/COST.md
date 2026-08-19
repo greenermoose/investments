@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=909832
 
 ## Business Profile
-Costco Wholesale Corporation (COST) operates as an established participant within the Consumer Staples sector (Consumer Staples Merchandise Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, COST trades at $973.74 against a 3-year baseline price target of $1378.56, generating a modeled annualized ROI of 14.6% under our disciplined 20-year hurdle standard.
+Costco Wholesale Corporation is the world's leading membership warehouse operator, providing a curated selection of brand-name and high-quality private-label (Kirkland Signature) merchandise at ultra-low prices across more than 870 warehouse locations worldwide. Costco operates a membership-based retail model where recurring membership fees account for the majority of operating profits.
+
+Costco's economic moat is driven by massive purchasing scale, extreme supply chain efficiency, high inventory turnover, and exceptional member loyalty (exceeding 92% renewal rates in North America). Management pursues a disciplined international warehouse expansion strategy, ongoing digital app enhancements, and uncompromising value pricing that deepens customer trust and traffic frequency.
 
 ## Total Addressable Market & Market Share
 Costco Wholesale Corporation addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 50.0% market share. Over our 3-year investment horizon, we model market share evolving to 53.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

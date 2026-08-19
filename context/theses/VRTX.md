@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=875320
 
 ## Business Profile
-Vertex Pharmaceuticals Incorporated (VRTX) operates as an established participant within the Health Care sector (Biotechnology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, VRTX trades at $542.90 against a 3-year baseline price target of $881.23, generating a modeled annualized ROI of 19.7% under our disciplined 20-year hurdle standard.
+Vertex Pharmaceuticals Incorporated is a global biotechnology leader that transformed the treatment of cystic fibrosis (CF) through its life-changing CFTR modulator therapies (TRIKAFTA/KAFTRIO, SYMDEKO, ORKAMBI, KALYDECO). Vertex is expanding beyond CF into transformative medicines for sickle cell disease and beta-thalassemia (CASGEVY, co-developed with CRISPR Therapeutics), acute and neuropathic pain (suzetrigine non-opioid NaV1.8 inhibitor), and APOL1-mediated kidney disease.
+
+Vertex holds a virtual global monopoly in cystic fibrosis disease treatment, supported by strong patent protection through the late 2030s and extraordinary patient adherence. Management is preparing for the commercial rollout of suzetrigine (a revolutionary non-opioid pain therapy) and next-generation vanzacaftor triple CF therapy, opening massive new multi-billion dollar commercial therapeutic markets.
 
 ## Total Addressable Market & Market Share
 Vertex Pharmaceuticals Incorporated addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

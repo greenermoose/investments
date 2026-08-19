@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=6281
 
 ## Business Profile
-Analog Devices, Inc. (ADI) operates as an established participant within the Information Technology sector (Analog & Mixed-Signal Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADI trades at $374.16 against a 3-year baseline price target of $431.61, generating a modeled annualized ROI of 4.9% under our disciplined 20-year hurdle standard.
+Analog Devices, Inc. is a global semiconductor leader specializing in high-performance analog, mixed-signal, and digital signal processing integrated circuits (ICs). The company designs sensor interfaces, data converters, power management chips, and radio frequency products that bridge the physical world with digital computing systems across industrial automation, automotive electronics, aerospace, communications, and consumer markets.
+
+Analog Devices possesses an exceptionally durable economic moat characterized by long product lifecycles (frequently 10 to 20 years), high engineering switching costs, and high gross margins. Management focuses on high-margin industrial and automotive electrification applications, intelligent edge sensor processing, and software-defined connectivity to drive steady secular growth and strong free cash flow generation.
 
 ## Total Addressable Market & Market Share
 Analog Devices, Inc. addresses an estimated Total Addressable Market (TAM) of $167.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

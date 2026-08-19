@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1104506
 
 ## Business Profile
-Insmed Incorporated (INSM) operates as an established participant within the Health Care sector (Biopharmaceuticals). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, INSM trades at $128.62 against a 3-year baseline price target of $152.54, generating a modeled annualized ROI of 5.8% under our disciplined 20-year hurdle standard.
+Insmed Incorporated is a biopharmaceutical company focused on transforming the lives of patients battling serious and rare pulmonary and inflammatory diseases. The company commercializes ARIKAYCE, an approved inhaled liposomal antibacterial therapy for refractory Mycobacterium avium complex (MAC) lung disease, and is advancing its blockbuster anti-inflammatory asset brensocatib for non-cystic fibrosis bronchiectasis.
+
+Insmed's competitive strength relies on its proprietary liposomal inhalation drug delivery platforms, deep clinical expertise in rare pulmonary diseases, and positive Phase 3 ASPEN trial data for brensocatib. Management is preparing for the commercial launch of brensocatib as a first-in-class dipeptidyl peptidase 1 (DPP1) inhibitor, establishing a major new treatment paradigm in neutrophil-mediated inflammatory diseases.
 
 ## Total Addressable Market & Market Share
 Insmed Incorporated addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

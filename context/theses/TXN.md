@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=97476
 
 ## Business Profile
-Texas Instruments Incorporated (TXN) operates as an established participant within the Information Technology sector (Analog & Embedded Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TXN trades at $269.85 against a 3-year baseline price target of $303.83, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Texas Instruments Incorporated is the world's leading designer and manufacturer of analog and embedded processing semiconductors, producing tens of thousands of products used across industrial automation, automotive systems, personal electronics, enterprise computing, and communications equipment. Texas Instruments operates low-cost, 300mm wafer manufacturing fabrication facilities across the United States.
+
+Texas Instruments holds a formidable economic moat grounded in unmatched product diversity (over 80,000 products serving 100,000+ customers), decades-long chip product lifecycles, and a structural 40%+ manufacturing cost advantage from owning internal 300mm wafer fabs. Management is executing a multi-year manufacturing expansion to secure long-term domestic semiconductor capacity while prioritizing long-term free cash flow per share growth.
 
 ## Total Addressable Market & Market Share
 Texas Instruments Incorporated addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.5% market share. Over our 3-year investment horizon, we model market share evolving to 1.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

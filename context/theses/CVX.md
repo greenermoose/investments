@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=93410
 
 ## Business Profile
-Chevron Corporation (CVX) operates as an established participant within the Energy sector (Integrated Oil & Gas). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CVX trades at $207.04 against a 3-year baseline price target of $212.84, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
+Chevron Corporation is one of the world's leading integrated energy supermajors, with global operations spanning upstream oil and natural gas exploration and production (Permian Basin, Gulf of Mexico, Kazakhstan, Australia LNG) and downstream refining, petrochemicals, and lubricant manufacturing. The company also invests in lower-carbon renewable fuels, hydrogen, and carbon capture initiatives.
+
+Chevron's competitive strength is supported by low-cost, short-cycle asset positions in the Permian Basin, high-value global LNG projects, and a fortress balance sheet with industry-low debt leverage. Management maintains strict capital allocation discipline, targeting high return on capital employed (ROCE), regular dividend growth, and counter-cyclical share repurchases.
 
 ## Total Addressable Market & Market Share
 Chevron Corporation addresses an estimated Total Addressable Market (TAM) of $800.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 23.8% market share. Over our 3-year investment horizon, we model market share evolving to 23.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

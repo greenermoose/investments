@@ -135,11 +135,10 @@ The Investment Thesis Agent must assign exactly one rating:
 
 Every dossier must contain the following six core narrative sections:
 
-### 1. Business Profile (`## Business Profile` / `## Core Investment Thesis`)
-Must summarize:
-- Core business model, revenue streams, customer segments, and primary products/services.
-- Strategic position within its sector and industry classification.
-- Executive summary of the 3-year investment rationale and return expectation.
+### 1. Business Profile (`## Business Profile`)
+Must provide a detailed, bespoke 2-paragraph investor profile (never formulaic boilerplate or valuation target recitations):
+- **Paragraph 1 (Core Operations & Revenue Model)**: Core business model, flagship operating segments, primary products/platforms, customer end-markets, and how the company generates revenue and cash flow.
+- **Paragraph 2 (Strategy, Technology Edge & Secular Growth)**: Strategic industry positioning, proprietary technology or competitive moat advantages, management execution and capital allocation, and primary secular growth vectors.
 
 ### 2. Total Addressable Market & Market Share (`## Total Addressable Market & Market Share`)
 Must analyze:

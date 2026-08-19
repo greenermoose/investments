@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1585521
 
 ## Business Profile
-Zoom Communications, Inc. (ZM) operates as an established participant within the Information Technology sector (Video Communications & Collaboration). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ZM trades at $106.90 against a 3-year baseline price target of $131.81, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Zoom Video Communications, Inc. is a leading communications and collaboration platform provider, delivering video meetings, cloud phone systems (Zoom Phone), team chat, contact centers (Zoom Contact Center), and AI-powered workspace collaboration tools to enterprise clients and individual users worldwide.
+
+Zoom possesses a globally recognized brand name, superior video compression algorithms, and high enterprise customer retention. Management is expanding beyond standalone video conferencing into a full-suite enterprise communications platform, scaling Zoom Phone, deploying Zoom Contact Center, and providing Zoom AI Companion at no additional cost to drive enterprise platform lock-in and high free cash flow generation.
 
 ## Total Addressable Market & Market Share
 Zoom Communications, Inc. addresses an estimated Total Addressable Market (TAM) of $73.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

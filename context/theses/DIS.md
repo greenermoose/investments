@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1744489
 
 ## Business Profile
-The Walt Disney Company (DIS) operates as an established participant within the Communication Services sector (Entertainment & Media Conglomerate). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DIS trades at $105.98 against a 3-year baseline price target of $113.24, generating a modeled annualized ROI of 2.2% under our disciplined 20-year hurdle standard.
+The Walt Disney Company is a global media and entertainment conglomerate operating through three core segments: Entertainment (streaming services Disney+, Hulu, Disney+ Hotstar; theatrical films from Disney, Pixar, Marvel, Lucasfilm, 20th Century Studios; linear television networks ABC, Disney Channel), Sports (ESPN networks and ESPN+), and Experiences (theme parks, cruise lines, consumer products).
+
+Disney commands an unmatched library of timeless intellectual property franchises and a unique cross-monetization flywheel where blockbuster movies fuel theme park attractions, merchandise sales, and streaming engagement. Management is driving direct-to-consumer streaming profitability, expanding high-ROIC Disney Experiences theme park capital investments, and launching a flagship ESPN direct-to-consumer streaming service.
 
 ## Total Addressable Market & Market Share
 The Walt Disney Company addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 14.5% market share. Over our 3-year investment horizon, we model market share evolving to 13.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=89800
 
 ## Business Profile
-The Sherwin-Williams Company (SHW) operates as an established participant within the Materials sector (Specialty Chemicals & Architectural Coatings). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SHW trades at $354.57 against a 3-year baseline price target of $368.72, generating a modeled annualized ROI of 1.3% under our disciplined 20-year hurdle standard.
+The Sherwin-Williams Company is the premier manufacturer, distributor, and retailer of paints, coatings, and related supplies in the Americas and Europe. The company operates through three segments: The Paint Stores Group (operating over 4,600 dedicated company-owned retail stores across North America), Consumer Brands (supplying retail home centers), and Performance Coatings (industrial, automotive, and packaging coatings).
+
+Sherwin-Williams commands an extraordinary economic moat anchored by its dense company-owned paint store distribution network, high professional painter contractor loyalty, strong brand pricing power, and superior architectural product quality. Management continues to open new paint store locations, capture professional contractor market share, and generate dependable cash flow returned through steady dividend increases.
 
 ## Total Addressable Market & Market Share
 The Sherwin-Williams Company addresses an estimated Total Addressable Market (TAM) of $400.0B across its primary Materials domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 5.9% market share. Over our 3-year investment horizon, we model market share evolving to 5.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

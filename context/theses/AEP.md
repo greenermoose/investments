@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=4904
 
 ## Business Profile
-American Electric Power Company, Inc. (AEP) operates as an established participant within the Utilities sector (Regulated Electric Utilities). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AEP trades at $126.53 against a 3-year baseline price target of $125.22, generating a modeled annualized ROI of -0.3% under our disciplined 20-year hurdle standard.
+American Electric Power Company, Inc. (AEP) is one of the largest regulated electric utility holding companies in the United States, providing generation, transmission, and distribution services to more than 5.6 million retail customers across 11 states in the Midwest and South. The company operates the nation's largest electricity transmission system, comprising over 40,000 miles of high-voltage transmission lines.
+
+AEP's business model is characterized by regulated, rate-base capital expenditure compounding, which provides steady, predictable returns on equity approved by state public utility commissions and the Federal Energy Regulatory Commission (FERC). Management is deploying extensive capital to support surging power demand from data centers, industrial onshoring, grid modernization, and renewable energy integration while maintaining a disciplined balance sheet.
 
 ## Total Addressable Market & Market Share
 American Electric Power Company, Inc. addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 5.0% market share. Over our 3-year investment horizon, we model market share evolving to 5.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

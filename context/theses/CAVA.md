@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001948892
 
 ## Business Profile
-CAVA Group, Inc. (CAVA) operates as an established participant within the Consumer Discretionary sector (Fast-Casual Restaurants & Hospitality). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CAVA trades at $72.82 against a 3-year baseline price target of $157.43, generating a modeled annualized ROI of 30.9% under our disciplined 20-year hurdle standard.
+CAVA Group, Inc. is a category-defining fast-casual Mediterranean restaurant brand operating a nationwide footprint of company-owned restaurants offering customizable bowls, pitas, and curated Mediterranean dips. In addition to in-restaurant dining and digital app orders, CAVA sells a line of branded Mediterranean dips and dressings across grocery retail channels.
+
+CAVA benefits from attractive unit economics, industry-leading average unit volumes (AUVs exceeding $2.8 million), high digital sales mix, and a health-conscious lifestyle brand identity with broad consumer appeal. Management is executing a disciplined real estate rollout toward 1,000+ restaurant locations by 2032, leveraging supply chain efficiencies and digital loyalty engagement to drive sustained comparable restaurant sales growth.
 
 ## Total Addressable Market & Market Share
 CAVA Group, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.6% market share. Over our 3-year investment horizon, we model market share evolving to 3.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=937966
 
 ## Business Profile
-ASML Holding N.V. (ASML) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ASML trades at $1770.60 against a 3-year baseline price target of $2985.59, generating a modeled annualized ROI of 20.4% under our disciplined 20-year hurdle standard.
+ASML Holding N.V. is the world's sole manufacturer of Extreme Ultraviolet (EUV) lithography systems and a leading producer of Deep Ultraviolet (DUV) lithography equipment, which are indispensable for printing microscopic circuit patterns onto silicon wafers. Based in the Netherlands, ASML holds a global monopoly on leading-edge EUV tools required to manufacture chips below 7nm, serving foundries including TSMC, Samsung, and Intel.
+
+ASML's technological monopoly is protected by decades of proprietary optical engineering, specialized supply chain integration (Zeiss optical systems), extreme capital requirements, and thousands of patents. Management is currently shipping and ramping its next-generation High-NA EUV systems (0.55 NA), enabling 2nm and sub-2nm semiconductor fabrication nodes, ensuring enduring pricing power and multi-year order backlogs.
 
 ## Total Addressable Market & Market Share
 ASML Holding N.V. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.7% market share. Over our 3-year investment horizon, we model market share evolving to 3.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

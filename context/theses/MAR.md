@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1048286
 
 ## Business Profile
-Marriott International, Inc. (MAR) operates as an established participant within the Consumer Discretionary sector (Hotels & Lodging). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MAR trades at $364.08 against a 3-year baseline price target of $427.22, generating a modeled annualized ROI of 5.5% under our disciplined 20-year hurdle standard.
+Marriott International, Inc. is the world's largest hotel and lodging franchising company, managing and franchising more than 8,900 properties across 30 leading hotel brands (including The Ritz-Carlton, St. Regis, JW Marriott, Sheraton, Westin, and Courtyard) spanning luxury, premium, and select-service tiers in 140+ countries.
+
+Marriott operates an asset-light franchising and management model where it collects recurring base and incentive management fees while property owners fund capital expenditures and real estate risk. Its economic moat is reinforced by the industry's leading guest loyalty program (Marriott Bonvoy with over 200 million members), driving direct bookings and strong hotel owner demand to join the Marriott network.
 
 ## Total Addressable Market & Market Share
 Marriott International, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

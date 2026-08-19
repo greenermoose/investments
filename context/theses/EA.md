@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=712515
 
 ## Business Profile
-Electronic Arts Inc. (EA) operates as an established participant within the Communication Services sector (Interactive Gaming Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EA trades at $209.70 against a 3-year baseline price target of $242.23, generating a modeled annualized ROI of 4.9% under our disciplined 20-year hurdle standard.
+Electronic Arts Inc. is a global leader in digital interactive entertainment, developing, publishing, and operating blockbuster video game franchises across consoles, PCs, and mobile devices. Its core portfolio includes perennial sports franchises (EA SPORTS FC, Madden NFL, EA SPORTS College Football, F1) alongside blockbuster narrative and shooter IP (Apex Legends, Battlefield, The Sims, Star Wars).
+
+EA's moat is anchored by exclusive multi-year licensing agreements with major sports leagues (FIFA successor leagues, NFL, UEFA), massive multiplayer network effects, and high-margin recurring live-service monetization. Management focuses on growing live-service spending, expanding mobile gaming franchises, and leveraging proprietary game engines to produce high-return entertainment.
 
 ## Total Addressable Market & Market Share
 Electronic Arts Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

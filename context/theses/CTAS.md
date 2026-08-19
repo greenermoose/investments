@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723254
 
 ## Business Profile
-Cintas Corporation (CTAS) operates as an established participant within the Industrials sector (Corporate Uniforms & Facility Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CTAS trades at $204.14 against a 3-year baseline price target of $254.65, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
+Cintas Corporation is the undisputed North American leader in corporate uniform rental and facility services, providing uniform rental programs, entrance mats, restroom supplies, first aid and safety products, and fire protection equipment to more than one million businesses across the US and Canada. The company operates a dense route-based delivery network servicing commercial clients on a weekly basis.
+
+Cintas possesses a powerful route-density economic moat, where adding incremental customer stops along existing delivery routes generates exceptionally high marginal operating profit and return on capital. Management consistently expands revenue through cross-selling safety and hygiene services to existing uniform customers, customer acquisitions, and ongoing operational automation.
 
 ## Total Addressable Market & Market Share
 Cintas Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.4% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1539838
 
 ## Business Profile
-Diamondback Energy, Inc. (FANG) operates as an established participant within the Energy sector (Oil & Gas Exploration & Production). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FANG trades at $212.32 against a 3-year baseline price target of $217.75, generating a modeled annualized ROI of 0.8% under our disciplined 20-year hurdle standard.
+Diamondback Energy, Inc. is an independent oil and natural gas exploration and production company operating exclusively in the heart of the prolific Permian Basin in West Texas. Diamondback focuses on horizontal drilling across the Midland and Delaware Basins, complemented by midstream gathering and water disposal assets operated through Viper Energy and regional partnerships.
+
+Diamondback is renowned as one of the lowest-cost, most efficient operators in the Permian Basin, generating exceptional free cash flow at low oil breakeven prices. Management enforces a disciplined shareholder return framework, distributing over 50% of free cash flow to investors through base-plus-variable dividends and opportunistic share buybacks while maintaining conservative debt leverage.
 
 ## Total Addressable Market & Market Share
 Diamondback Energy, Inc. addresses an estimated Total Addressable Market (TAM) of $800.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.0% market share. Over our 3-year investment horizon, we model market share evolving to 2.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

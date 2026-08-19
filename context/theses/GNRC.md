@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1474735
 
 ## Business Profile
-Generac Holdings Inc. (GNRC) operates as an established participant within the Industrials sector (Power Generation & Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GNRC trades at $207.45 against a 3-year baseline price target of $234.08, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
+Generac Holdings Inc. is the leading designer and manufacturer of backup power generation systems and clean energy management solutions for residential, commercial, and industrial markets. Generac dominates the North American residential standby generator market with roughly 75% market share, while expanding into residential solar-plus-storage batteries, grid management software, and industrial generators.
+
+Generac possesses an unmatched distribution network of more than 8,500 independent electrical contractors and dealers, paired with dominant brand awareness among homeowners seeking power reliability against an aging electrical grid. Management is expanding its virtual power plant (VPP) software integrations with electric utilities and rolling out commercial backup power systems to support telecommunications and data infrastructure.
 
 ## Total Addressable Market & Market Share
 Generac Holdings Inc. addresses an estimated Total Addressable Market (TAM) of $63.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

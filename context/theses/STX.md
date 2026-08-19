@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1137789
 
 ## Business Profile
-Seagate Technology Holdings plc (STX) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, STX trades at $867.56 against a 3-year baseline price target of $1070.07, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Seagate Technology Holdings plc is a leading global provider of mass-capacity data storage solutions, designing and manufacturing hard disk drives (HDDs) and solid-state drives (SSDs) for cloud hyperscale data centers, enterprise servers, edge computing, and consumer electronics. Seagate dominates the mass-capacity nearline HDD market required to store the explosion of global digital data.
+
+Seagate operates in a consolidated global HDD duopoly alongside Western Digital, protected by immense capital requirements, microscopic nanometer magnetic head physics, and deep customer qualification cycles with cloud hyperscalers. Management is leading the commercial transition to Heat-Assisted Magnetic Recording (HAMR) technology (Mozaic 3+ platform), delivering 30TB+ drive capacities with superior areal density and total cost of ownership.
 
 ## Total Addressable Market & Market Share
 Seagate Technology Holdings plc addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

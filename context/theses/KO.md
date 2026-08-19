@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=21344
 
 ## Business Profile
-The Coca-Cola Company (KO) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Global Franchising). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KO trades at $89.90 against a 3-year baseline price target of $98.79, generating a modeled annualized ROI of 3.2% under our disciplined 20-year hurdle standard.
+The Coca-Cola Company is the world's largest non-alcoholic ready-to-drink beverage company, owning iconic global beverage brands across sparkling soft drinks (Coca-Cola, Diet Coke, Sprite, Fanta), hydration and sports drinks (Powerade, BodyArmor, smartwater, Dasani), juices, dairy, plant-based drinks (Minute Maid, Fairlife), and ready-to-drink teas and coffees (Costa, Gold Peak).
+
+Coca-Cola commands one of the world's most valuable brand moats, supported by an unmatched global independent bottling and distribution network serving over 200 countries, dominant retail point-of-sale shelf space, and immense pricing power. Management operates an asset-light concentrate sales model with high returns on invested capital (ROIC), driving disciplined dividend growth and targeted brand innovations.
 
 ## Total Addressable Market & Market Share
 The Coca-Cola Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 8.8% market share. Over our 3-year investment horizon, we model market share evolving to 8.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

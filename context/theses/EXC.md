@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1109357
 
 ## Business Profile
-Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EXC trades at $45.75 against a 3-year baseline price target of $44.10, generating a modeled annualized ROI of -1.2% under our disciplined 20-year hurdle standard.
+Exelon Corporation is the largest pure-play transmission and distribution utility company in the United States, providing regulated electricity and natural gas delivery to more than 10.5 million customers across six major urban utilities (Atlantic City Electric, BGE, ComEd, Delmarva Power, PECO, and Pepco).
+
+Exelon operates as a 100% rate-regulated transmission and distribution utility, insulating the business from commodity price swings and power generation risk while earning stable, approved returns on rate-base capital expenditures. Management is executing a multi-billion dollar capital expenditure plan to harden grid infrastructure, support urban electrification, and accommodate renewable energy integration.
 
 ## Total Addressable Market & Market Share
 Exelon Corporation addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 5.8% market share. Over our 3-year investment horizon, we model market share evolving to 5.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

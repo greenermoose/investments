@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075531
 
 ## Business Profile
-Booking Holdings Inc. (BKNG) operates as an established participant within the Consumer Discretionary sector (Online Travel Agencies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BKNG trades at $214.13 against a 3-year baseline price target of $302.60, generating a modeled annualized ROI of 14.6% under our disciplined 20-year hurdle standard.
+Booking Holdings Inc. is the world's leading online travel agency (OTA) platform, operating flagship travel brands including Booking.com, Priceline, Agoda, KAYAK, and OpenTable. The company connects travelers with over 28 million reported listings across hotels, alternative accommodations, flights, rental cars, and attractions, monetizing primarily through merchant and agency transaction take-rates.
+
+Booking possesses a powerful global two-sided network effect, high customer brand loyalty in Europe and Asia, and immense algorithmic digital marketing efficiency. Management is scaling its 'Connected Trip' initiative to bundle full-journey itineraries, expanding its high-margin merchant payment platform, and increasing direct app-based bookings to reduce marketing acquisition costs.
 
 ## Total Addressable Market & Market Share
 Booking Holdings Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

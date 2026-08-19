@@ -312,7 +312,7 @@ for filename in sorted(all_files):
         "moat": meta.get("moat") or val_model.get("competitive_moat_analysis", "Established commercial moat and customer retention."),
         "invalidation_criteria": meta.get("invalidation_criteria", "Structural margin deterioration or loss of market share."),
         "latest_catalyst": meta.get("latest_catalyst", "Upcoming quarterly earnings and operational updates."),
-        "business_profile": val_model.get("business_profile"),
+        "business_profile": meta.get("business_profile") or val_model.get("business_profile"),
         "tam_and_market_share": val_model.get("tam_and_market_share"),
         "competitive_moat_analysis": val_model.get("competitive_moat_analysis"),
         "share_dilution_or_buyback": val_model.get("share_dilution_or_buyback"),

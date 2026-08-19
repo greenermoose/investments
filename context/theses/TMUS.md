@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1283699
 
 ## Business Profile
-T-Mobile US, Inc. (TMUS) operates as an established participant within the Communication Services sector (Wireless Telecommunication). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TMUS trades at $185.91 against a 3-year baseline price target of $213.49, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
+T-Mobile US, Inc. is the leading 5G telecommunications provider in the United States, delivering wireless voice, high-speed mobile data, and nationwide 5G Home Internet broadband services to more than 125 million customers. T-Mobile operates through postpaid and prepaid consumer wireless subscriptions, enterprise telecom solutions, and fixed wireless access (FWA).
+
+T-Mobile holds a significant competitive advantage in mid-band 5G spectrum depth and nationwide network coverage following its integration of Sprint, delivering superior network speeds and lower cost-per-gigabyte economics. Management continues to capture industry-leading postpaid phone customer additions, expand 5G Home Internet broadband passings, and return robust capital via share repurchases and dividends.
 
 ## Total Addressable Market & Market Share
 T-Mobile US, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 13.4% market share. Over our 3-year investment horizon, we model market share evolving to 12.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

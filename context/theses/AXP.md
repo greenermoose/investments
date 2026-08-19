@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=4962
 
 ## Business Profile
-American Express Company (AXP) operates as an established participant within the Financials sector (Consumer & Commercial Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXP trades at $342.75 against a 3-year baseline price target of $457.59, generating a modeled annualized ROI of 12.5% under our disciplined 20-year hurdle standard.
+American Express Company is a globally integrated payments company operating a closed-loop credit card and payments network. The company issues premium consumer and commercial cards, provides merchant acquiring services, and offers business expense management solutions, generating revenue through merchant discount fees, net interest income, card fees, and service charges.
+
+American Express holds a distinctive competitive moat built on its affluent, high-spending cardholder demographic, closed-loop proprietary data network, and strong brand prestige that allows it to charge premium annual card fees. Management is successfully attracting younger millennial and Gen Z cardholders through lifestyle rewards partnerships, while expanding international acceptance and B2B corporate commercial payments.
 
 ## Total Addressable Market & Market Share
 American Express Company addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 9.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1413447
 
 ## Business Profile
-NXP Semiconductors N.V. (NXPI) operates as an established participant within the Information Technology sector (Automotive & Industrial Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NXPI trades at $228.03 against a 3-year baseline price target of $281.11, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+NXP Semiconductors N.V. is a leading global automotive and industrial semiconductor manufacturer, providing microcontrollers, radar processors, secure car access systems, vehicle networking transceivers, and industrial IoT connectivity chips. NXP designs critical hardware that enables vehicle electrification, advanced driver-assistance systems (ADAS), and secure edge processing.
+
+NXP's competitive moat is reinforced by deep integration into global automotive OEM supply chains, stringent automotive safety qualification barriers, and high switching costs on mission-critical embedded control chips. Management focuses on expanding content per vehicle in software-defined and electric vehicles, maintaining disciplined fab-lite manufacturing, and returning substantial free cash flow via dividends and buybacks.
 
 ## Total Addressable Market & Market Share
 NXP Semiconductors N.V. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

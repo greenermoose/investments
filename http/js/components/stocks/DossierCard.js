@@ -130,9 +130,13 @@ export function createDossierCard(company, onSelect) {
     </div>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Business Profile</h4>
-    <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
-      ${company.business_profile || company.description || 'Investment thesis under fundamental analysis.'}
-    </p>
+    <div style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+      ${(company.business_profile || company.description || 'Investment thesis under fundamental analysis.')
+        .split(/\n\n+/)
+        .filter(Boolean)
+        .map(p => `<p style="margin: 0 0 10px 0;">${p.trim()}</p>`)
+        .join('')}
+    </div>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Analyst Reports &amp; Wall Street Price Targets</h4>
     <div class="provenance-table-container" style="margin-bottom: 14px; max-height: 200px; overflow-y: auto;">

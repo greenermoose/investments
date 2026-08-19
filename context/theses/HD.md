@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=354950
 
 ## Business Profile
-The Home Depot, Inc. (HD) operates as an established participant within the Consumer Discretionary sector (Home Improvement Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HD trades at $347.35 against a 3-year baseline price target of $375.10, generating a modeled annualized ROI of 2.6% under our disciplined 20-year hurdle standard.
+The Home Depot, Inc. is the world's largest home improvement specialty retailer, operating over 2,300 warehouse-format stores across the United States, Canada, and Mexico. The company offers a comprehensive assortment of building materials, home improvement products, lawn and garden supplies, and installation services, serving both DIY (Do-It-Yourself) homeowners and professional (Pro) contractors.
+
+Home Depot commands a powerful economic moat supported by vast purchasing scale, prime real estate locations, sophisticated supply chain logistics, and deep relationships with professional contractors. Management is expanding its Pro customer ecosystem through specialized sales teams, complex job site delivery capabilities (enhanced by the acquisition of SRS Distribution), and frictionless omnichannel digital retail fulfillment.
 
 ## Total Addressable Market & Market Share
 The Home Depot, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 18.7% market share. Over our 3-year investment horizon, we model market share evolving to 17.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

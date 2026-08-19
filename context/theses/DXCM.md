@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1093557
 
 ## Business Profile
-DexCom, Inc. (DXCM) operates as an established participant within the Health Care sector (Continuous Glucose Monitoring (CGM)). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DXCM trades at $91.33 against a 3-year baseline price target of $124.45, generating a modeled annualized ROI of 13.2% under our disciplined 20-year hurdle standard.
+DexCom, Inc. is a pioneering medical device manufacturer that designs and commercializes continuous glucose monitoring (CGM) systems for people with diabetes and metabolic health needs. Its flagship G6 and G7 wearable sensor systems transmit real-time subcutaneous glucose readings directly to smartphones and insulin pumps without fingersticks, sold via pharmacy and durable medical equipment channels.
+
+DexCom holds an established competitive moat in diabetes management supported by proprietary biosensor technology, clinical evidence of improved patient glycemic control, and deep integration with automated insulin delivery (AID) systems. Management is expanding beyond intensive type 1 diabetes into the vast type 2 diabetes and non-insulin-using metabolic health markets through its over-the-counter sensor platform (Stelo).
 
 ## Total Addressable Market & Market Share
 DexCom, Inc. addresses an estimated Total Addressable Market (TAM) of $69.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

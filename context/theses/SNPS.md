@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=883241
 
 ## Business Profile
-Synopsys, Inc. (SNPS) operates as an established participant within the Information Technology sector (Electronic Design Automation Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SNPS trades at $403.12 against a 3-year baseline price target of $536.82, generating a modeled annualized ROI of 12.4% under our disciplined 20-year hurdle standard.
+Synopsys, Inc. is the global leader in electronic design automation (EDA) software, semiconductor intellectual property (IP), and software security validation solutions. Synopsys provides foundational software tools used by engineers to design, simulate, verify, and manufacture complex system-on-chip (SoC) architectures, AI processors, and automotive electronics.
+
+Synopsys commands an entrenched duopoly alongside Cadence Design Systems, characterized by mission-critical workflow integration, extreme customer switching costs, and recurring multi-year subscription contracts. Management is integrating Ansys (multiphysics simulation) to deliver complete silicon-to-systems engineering platforms, while expanding generative AI design capabilities (Synopsys.ai) to automate chip design workflows.
 
 ## Total Addressable Market & Market Share
 Synopsys, Inc. addresses an estimated Total Addressable Market (TAM) of $108.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

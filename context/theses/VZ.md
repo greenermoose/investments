@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=732712
 
 ## Business Profile
-Verizon Communications Inc. (VZ) operates as an established participant within the Communication Services sector (Integrated Telecommunications). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, VZ trades at $49.40 against a 3-year baseline price target of $45.93, generating a modeled annualized ROI of -2.4% under our disciplined 20-year hurdle standard.
+Verizon Communications Inc. is one of the largest telecommunications and broadband providers in the United States, delivering wireless voice, high-speed mobile data, fiber-optic broadband (Fios), and enterprise network solutions to more than 140 million retail connections. Verizon monetizes through postpaid and prepaid consumer wireless subscriptions, enterprise business telecom solutions, and broadband internet access.
+
+Verizon's competitive moat is supported by its extensive physical wireless network infrastructure, prime high-band and C-band spectrum holdings, dense fiber routing, and massive retail subscriber base. Management is focused on expanding C-band 5G deployment to drive fixed wireless access (FWA) broadband additions, scaling business connectivity solutions, and generating steady operational cash flow to fund regular dividend distributions.
 
 ## Total Addressable Market & Market Share
 Verizon Communications Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 21.0% market share. Over our 3-year investment horizon, we model market share evolving to 18.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

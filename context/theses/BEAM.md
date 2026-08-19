@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1745999
 
 ## Business Profile
-Beam Therapeutics Inc. (BEAM) operates as an established participant within the Health Care sector (Base Editing Genetic Medicines). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BEAM trades at $28.59 against a 3-year baseline price target of $25.64, generating a modeled annualized ROI of -3.6% under our disciplined 20-year hurdle standard.
+Beam Therapeutics Inc. is a clinical-stage biotechnology company pioneering base editing, a proprietary next-generation gene editing technology that enables precise, single-base conversions in genomic DNA without creating double-stranded breaks. Its therapeutic pipeline focuses on sickle cell disease, beta-thalassemia, alpha-1 antitrypsin deficiency (AATD), and oncologic and genetic liver diseases.
+
+Beam's competitive advantage lies in its proprietary base editing platform, mRNA delivery technologies, and strategic pharmaceutical partnerships with companies like Eli Lilly and Pfizer. Management is advancing clinical proof-of-concept readouts for BEAM-101 and BEAM-302, while optimizing lipid nanoparticle (LNP) in vivo delivery capabilities to address broader genetic patient populations.
 
 ## Total Addressable Market & Market Share
 Beam Therapeutics Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

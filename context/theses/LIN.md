@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1707925
 
 ## Business Profile
-Linde plc (LIN) operates as an established participant within the Materials sector (Industrial Gases). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LIN trades at $481.71 against a 3-year baseline price target of $502.37, generating a modeled annualized ROI of 1.4% under our disciplined 20-year hurdle standard.
+Linde plc is the world's largest industrial gases and engineering company, supplying oxygen, nitrogen, argon, hydrogen, and helium to essential industries including healthcare, chemicals, energy, manufacturing, food and beverage, and electronics. The company operates through high-density regional pipeline systems, on-site production plants, merchant liquid bulk tankers, and packaged gas cylinders.
+
+Linde's formidable economic moat is built on long-term (15- to 20-year) take-or-pay on-site supply contracts with complete energy cost pass-through mechanisms, high geographic route density that prevents local competition, and critical customer integration. Management maintains industry-leading operational discipline, steadily expanding operating margins, returning substantial cash through buybacks, and leading global clean hydrogen infrastructure development.
 
 ## Total Addressable Market & Market Share
 Linde plc addresses an estimated Total Addressable Market (TAM) of $400.0B across its primary Materials domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 8.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

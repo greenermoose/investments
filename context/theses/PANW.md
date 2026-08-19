@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1327567
 
 ## Business Profile
-Palo Alto Networks, Inc. (PANW) operates as an established participant within the Information Technology sector (Cybersecurity Software & Network Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PANW trades at $359.48 against a 3-year baseline price target of $456.56, generating a modeled annualized ROI of 10.8% under our disciplined 20-year hurdle standard.
+Palo Alto Networks, Inc. is the world's leading pure-play cybersecurity company, delivering comprehensive security solutions across Network Security (Strata hardware and software firewalls), Cloud Security (Prisma Cloud), and Security Operations (Cortex AI-driven SecOps and XSIAM). Palo Alto Networks monetizes through software subscriptions, cloud consumption agreements, and security hardware appliances.
+
+Palo Alto Networks benefits from high enterprise switching costs, deep IT security architecture integration, and a strategic 'platformization' strategy that consolidates disparate point security tools into a unified ecosystem. Management is accelerating platformization across global enterprises, scaling its automated AI security operations platform (XSIAM), and driving expanding operating margins and free cash flow.
 
 ## Total Addressable Market & Market Share
 Palo Alto Networks, Inc. addresses an estimated Total Addressable Market (TAM) of $138.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

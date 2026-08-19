@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=2488
 
 ## Business Profile
-Advanced Micro Devices, Inc. (AMD) operates as an established participant within the Information Technology sector (Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMD trades at $467.06 against a 3-year baseline price target of $735.89, generating a modeled annualized ROI of 18.5% under our disciplined 20-year hurdle standard.
+Advanced Micro Devices, Inc. (AMD) is a high-performance semiconductor designer developing x86 microprocessors (Ryzen for PCs, EPYC for data centers), graphics processors (Radeon and Instinct AI accelerators), FPGA architectures, and embedded adaptive computing solutions (via Xilinx). AMD operates on a fabless manufacturing model, partnering with leading pure-play foundries like TSMC to produce dense, energy-efficient computing silicon.
+
+AMD has built a formidable competitive moat in data center computing through its modular chiplet architecture, high memory bandwidth solutions, and consistent CPU IPC execution against legacy competitors. Management is aggressively targeting the booming generative AI accelerator market with its Instinct MI300/MI350 GPU series and ROCm open software platform, while expanding enterprise server market share and edge computing solutions.
 
 ## Total Addressable Market & Market Share
 Advanced Micro Devices, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

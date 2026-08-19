@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=882835
 
 ## Business Profile
-Roper Technologies, Inc. (ROP) operates as an established participant within the Information Technology sector (Niche Vertical Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ROP trades at $404.89 against a 3-year baseline price target of $501.13, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
+Roper Technologies, Inc. is a diversified technology company operating a collection of market-leading niche software and engineered product businesses. Roper operates across three core divisions: Application Software (vertical SaaS platforms like Deltek, Vertafore, and Aderant for professional services), Network Software (data analytics and supply chain networks), and Technology Enabled Products (medical products and fluid measurement).
+
+Roper commands exceptional economic moats within defensible, mission-critical niche vertical markets, resulting in high recurring software revenues (>75%), high gross margins, and minimal customer churn. Management executes a disciplined compounding model, reinvesting strong operational free cash flow into acquisitions of high-margin, asset-light vertical software businesses with market-leading positions.
 
 ## Total Addressable Market & Market Share
 Roper Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $119.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1108524
 
 ## Business Profile
-Salesforce, Inc. (CRM) operates as an established participant within the Information Technology sector (Enterprise Cloud CRM & Applications). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRM trades at $201.90 against a 3-year baseline price target of $251.59, generating a modeled annualized ROI of 10.1% under our disciplined 20-year hurdle standard.
+Salesforce, Inc. is the world's leading customer relationship management (CRM) software platform, providing cloud-based applications across sales automation (Sales Cloud), customer service (Service Cloud), digital marketing (Marketing Cloud), commerce, analytics (Tableau), and collaboration (Slack). Salesforce monetizes through multi-year recurring SaaS subscription licenses and enterprise platform consumption agreements.
+
+Salesforce commands massive enterprise switching costs, deep workflow integration across global corporate processes, and a rich ecosystem of third-party applications on the AppExchange. Management is focused on driving profitable growth and operating margin expansion while rolling out Agentforce, an autonomous generative AI platform that executes complex business workflows directly within the Salesforce enterprise data layer.
 
 ## Total Addressable Market & Market Share
 Salesforce, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.5% market share. Over our 3-year investment horizon, we model market share evolving to 3.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

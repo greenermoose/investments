@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=946581
 
 ## Business Profile
-Take-Two Interactive Software, Inc. (TTWO) operates as an established participant within the Communication Services sector (Interactive Entertainment Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TTWO trades at $243.62 against a 3-year baseline price target of $281.92, generating a modeled annualized ROI of 5.0% under our disciplined 20-year hurdle standard.
+Take-Two Interactive Software, Inc. is a leading global developer, publisher, and marketer of interactive entertainment across consoles, PCs, and mobile devices under the Rockstar Games, 2K, Private Division, and Zynga publishing labels. Its world-renowned blockbuster franchises include Grand Theft Auto (GTA), Red Dead Redemption, NBA 2K, WWE 2K, BioShock, Borderlands, and mobile games from Zynga.
+
+Take-Two possesses some of the most valuable intellectual property in global entertainment, highlighted by the unprecedented commercial longevity and recurring live-service monetization of Grand Theft Auto V / GTA Online. Management is preparing for the landmark launch of Grand Theft Auto VI, which is poised to drive historic revenue scale, expanding mobile live-services, and multi-year cash flow compounding.
 
 ## Total Addressable Market & Market Share
 Take-Two Interactive Software, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

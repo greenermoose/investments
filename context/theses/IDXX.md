@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=874716
 
 ## Business Profile
-IDEXX Laboratories, Inc. (IDXX) operates as an established participant within the Health Care sector (Veterinary Diagnostics & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IDXX trades at $568.71 against a 3-year baseline price target of $709.15, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
+IDEXX Laboratories, Inc. is the global leader in veterinary diagnostics, software, and water microbiology testing, developing diagnostic test instruments, single-use consumable test kits, reference laboratory services, and veterinary practice management software for companion animals. The company operates a razor-and-blade model where installed diagnostic instruments generate predictable recurring consumable sales.
+
+IDEXX holds a durable competitive moat characterized by high customer switching costs, deep integration with veterinary workflows, and an unmatched distribution and direct sales network. Management continues to benefit from secular increases in pet humanization and veterinary healthcare spending, expanding instrument placements globally, and introducing advanced diagnostic biomarkers like SDMA and fecal antigen testing.
 
 ## Total Addressable Market & Market Share
 IDEXX Laboratories, Inc. addresses an estimated Total Addressable Market (TAM) of $65.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

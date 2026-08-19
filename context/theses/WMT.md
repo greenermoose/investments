@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=104169
 
 ## Business Profile
-Walmart Inc. (WMT) operates as an established participant within the Consumer Staples sector (Omnichannel Hypermarket Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WMT trades at $116.44 against a 3-year baseline price target of $125.62, generating a modeled annualized ROI of 2.6% under our disciplined 20-year hurdle standard.
+Walmart Inc. is the world's largest retail enterprise by revenue, serving over 250 million customers weekly across more than 10,500 stores, clubs (Sam's Club), and e-commerce websites in 19 countries. Walmart offers an expansive selection of groceries, apparel, home goods, electronics, and pharmacy services, operating on an 'Everyday Low Price' (EDLP) business philosophy.
+
+Walmart commands an unrivaled retail scale moat, unmatched supply chain and logistics density with physical store locations within 10 miles of 90% of the US population, and immense purchasing leverage over suppliers. Management is transforming the business into an omnichannel digital retail powerhouse, expanding automated fulfillment centers, scaling high-margin retail media advertising (Walmart Connect), and growing its Walmart+ membership program.
 
 ## Total Addressable Market & Market Share
 Walmart Inc. addresses an estimated Total Addressable Market (TAM) of $1751.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 40.0% market share. Over our 3-year investment horizon, we model market share evolving to 40.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

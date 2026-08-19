@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1178670
 
 ## Business Profile
-Alnylam Pharmaceuticals, Inc. (ALNY) operates as an established participant within the Health Care sector (RNAi Therapeutics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ALNY trades at $240.02 against a 3-year baseline price target of $383.91, generating a modeled annualized ROI of 19.1% under our disciplined 20-year hurdle standard.
+Alnylam Pharmaceuticals, Inc. is the pioneer and undisputed biopharmaceutical leader in RNA interference (RNAi) therapeutics, developing a novel class of targeted medicines that silence disease-causing genes. The company commercializes approved therapies including ONPATTRO, AMVUTTRA, GIVLAARI, and OXLUMO for rare and cardiometabolic diseases, monetizing through global product sales and collaborative pharmaceutical milestone royalties.
+
+Alnylam's competitive advantage is anchored by its proprietary GalNAc-conjugate delivery platform, extensive intellectual property portfolio, and clinical validation across multiple indications. Management is advancing AMVUTTRA into broad ATTR amyloidosis with cardiomyopathy populations (HELIOS-B trial data) and expanding its clinical pipeline into high-prevalence indications including hypertension, Alzheimer's disease, and nonalcoholic steatohepatitis (NASH).
 
 ## Total Addressable Market & Market Share
 Alnylam Pharmaceuticals, Inc. addresses an estimated Total Addressable Market (TAM) of $57.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 8.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=813672
 
 ## Business Profile
-Cadence Design Systems, Inc. (CDNS) operates as an established participant within the Information Technology sector (Electronic Design Automation Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CDNS trades at $315.29 against a 3-year baseline price target of $419.95, generating a modeled annualized ROI of 12.4% under our disciplined 20-year hurdle standard.
+Cadence Design Systems, Inc. is a premier computational software provider delivering electronic design automation (EDA) software, hardware emulation systems, and semiconductor intellectual property (IP). Its tools are indispensable for global chipmakers and systems companies designing complex microprocessors, AI accelerators, automotive silicon, and aerospace electronic systems.
+
+Cadence operates in an entrenched duopoly alongside Synopsys, benefiting from massive switching costs, deep integration into customer engineering toolchains, and multi-year subscription licenses. Management is expanding beyond traditional silicon EDA into multiphysics system simulation (aerodynamics, structural, and thermal analysis), generative AI design workflows (Cadence Cerebrus and JedAI), and custom cloud-hosted EDA environments.
 
 ## Total Addressable Market & Market Share
 Cadence Design Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $80.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

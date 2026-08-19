@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=51143
 
 ## Business Profile
-International Business Machines Corporation (IBM) operates as an established participant within the Information Technology sector (Hybrid Cloud Infrastructure & IT Consulting). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IBM trades at $235.31 against a 3-year baseline price target of $246.79, generating a modeled annualized ROI of 1.6% under our disciplined 20-year hurdle standard.
+International Business Machines Corporation (IBM) is a global hybrid cloud, enterprise software, and IT consulting company, delivering mission-critical technology infrastructure to the world's largest banks, airlines, healthcare providers, and governments. Its business revolves around three key segments: Software (Red Hat OpenShift, data platforms, cybersecurity), Consulting (digital transformation and system integration), and Infrastructure (zSystems mainframes).
+
+IBM's economic moat is fortified by massive enterprise switching costs in core transactional computing (IBM mainframes process over 70% of the world's financial transactions), the open-source hybrid cloud standard of Red Hat, and deep consulting domain expertise. Management is expanding watsonx enterprise generative AI deployments and orchestrating hybrid cloud integrations to drive sustained recurring revenue and free cash flow.
 
 ## Total Addressable Market & Market Share
 International Business Machines Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 4.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

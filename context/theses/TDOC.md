@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1477449
 
 ## Business Profile
-Teladoc Health, Inc. (TDOC) operates as an established participant within the Health Care sector (Virtual Healthcare & Telemedicine). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TDOC trades at $6.63 against a 3-year baseline price target of $8.73, generating a modeled annualized ROI of 12.1% under our disciplined 20-year hurdle standard.
+Teladoc Health, Inc. is a global virtual healthcare services provider, delivering whole-person telehealth, chronic condition management (via Livongo), mental health therapy (BetterHelp), and integrated hospital clinical care systems. Teladoc connects patients with physicians, therapists, and specialists via phone and video across more than 130 countries.
+
+Teladoc holds significant scale advantages in virtual care delivery, maintaining extensive commercial health plan relationships and employer benefit distribution channels. Management is focused on expanding integrated chronic care programs (diabetes, hypertension, weight management), scaling digital mental health, and improving operating efficiencies to generate consistent free cash flow.
 
 ## Total Addressable Market & Market Share
 Teladoc Health, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 5.0% market share. Over our 3-year investment horizon, we model market share evolving to 4.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

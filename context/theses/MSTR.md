@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1050446
 
 ## Business Profile
-MicroStrategy Incorporated (MSTR) operates as an established participant within the Information Technology sector (Enterprise Analytics & Treasury Reserve Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MSTR trades at $97.28 against a 3-year baseline price target of $89.33, generating a modeled annualized ROI of -2.8% under our disciplined 20-year hurdle standard.
+MicroStrategy Incorporated operates an enterprise analytics and business intelligence software platform, alongside an aggressive corporate treasury strategy of acquiring and holding Bitcoin as its primary treasury reserve asset. MicroStrategy provides cloud-based analytics, embedded dashboards, and AI-driven reporting tools to enterprise customers, while actively raising debt and equity capital to expand its massive corporate Bitcoin reserves.
+
+MicroStrategy combines recurring enterprise analytics software cash flows with a unique position as the largest corporate institutional Bitcoin treasury vehicle in public capital markets. Management leverages capital markets access, convertible debt issuances, and at-the-market equity offerings to systematically acquire Bitcoin, providing public equity investors with magnified exposure to digital asset adoption.
 
 ## Total Addressable Market & Market Share
 MicroStrategy Incorporated addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

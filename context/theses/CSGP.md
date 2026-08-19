@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1057352
 
 ## Business Profile
-CoStar Group, Inc. (CSGP) operates as an established participant within the Real Estate sector (Real Estate Information & Marketplaces). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSGP trades at $33.21 against a 3-year baseline price target of $32.78, generating a modeled annualized ROI of -0.4% under our disciplined 20-year hurdle standard.
+CoStar Group, Inc. is the leading provider of commercial real estate information, analytics, and online marketplaces in the United States and United Kingdom. Its flagship platforms include CoStar (commercial real estate intelligence), LoopNet (commercial real estate marketplace), Apartments.com (multifamily rental marketplace), and Homes.com (residential real estate portal), monetized via high-margin recurring subscriptions and advertising fees.
+
+CoStar holds an extensive competitive moat powered by decades of proprietary real estate data collection, millions of verified property records, and dominant two-sided marketplace traffic. Management is deploying substantial capital into building Homes.com into the leading residential portal in the US, leveraging an 'agent-friendly' business model to capture billions in residential advertising spending.
 
 ## Total Addressable Market & Market Share
 CoStar Group, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Real Estate domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 6.5% market share. Over our 3-year investment horizon, we model market share evolving to 6.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

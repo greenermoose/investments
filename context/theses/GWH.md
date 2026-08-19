@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1819438
 
 ## Business Profile
-ESS Tech, Inc. (GWH) operates as an established participant within the Energy sector (Iron Flow Long-Duration Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GWH trades at $0.68 against a 3-year baseline price target of $0.34, generating a modeled annualized ROI of -20.6% under our disciplined 20-year hurdle standard.
+ESS Tech, Inc. is a clean energy technology company that designs and manufactures environmentally sustainable iron flow batteries for long-duration commercial and utility-scale energy storage. Its Energy Warehouse and Energy Center systems utilize non-toxic, earth-abundant iron, salt, and water electrolytes to deliver 4 to 12 hours of continuous energy discharge.
+
+ESS Tech's iron flow battery technology provides a safe, non-flammable, fully recyclable energy storage solution that avoids rare or expensive critical minerals like lithium, cobalt, and nickel with zero cell degradation over a 20-year operational life. Management is partnering with major utilities, independent power producers, and industrial microgrids to deploy long-duration storage and scale automated manufacturing.
 
 ## Total Addressable Market & Market Share
 ESS Tech, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

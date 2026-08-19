@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1652130
 
 ## Business Profile
-Intellia Therapeutics, Inc. (NTLA) operates as an established participant within the Health Care sector (CRISPR In Vivo Gene Editing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NTLA trades at $12.56 against a 3-year baseline price target of $9.86, generating a modeled annualized ROI of -7.8% under our disciplined 20-year hurdle standard.
+Intellia Therapeutics, Inc. is a leading clinical-stage genome editing company pioneering in vivo and ex vivo CRISPR/Cas9 therapeutic applications. Its lead in vivo programs utilize proprietary lipid nanoparticles (LNPs) to deliver CRISPR machinery directly to target organs, advancing clinical candidates NTLA-2001 (for ATTR amyloidosis, partnered with Regeneron) and NTLA-2002 (for hereditary angioedema / HAE).
+
+Intellia was the first company to demonstrate systemic in vivo CRISPR genome editing in humans, holding a strong competitive position in non-viral LNP tissue delivery and CRISPR gene knockout/insertion technology. Management is advancing NTLA-2001 and NTLA-2002 into pivotal Phase 3 clinical trials, establishing a path toward potentially curative, one-time genetic therapies.
 
 ## Total Addressable Market & Market Share
 Intellia Therapeutics, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

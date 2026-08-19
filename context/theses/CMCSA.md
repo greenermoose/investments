@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1166691
 
 ## Business Profile
-Comcast Corporation (CMCSA) operates as an established participant within the Communication Services sector (Broadband, Cable & Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CMCSA trades at $26.78 against a 3-year baseline price target of $26.68, generating a modeled annualized ROI of -0.1% under our disciplined 20-year hurdle standard.
+Comcast Corporation is a global media and technology powerhouse operating through three core pillars: Connectivity & Platforms (Xfinity broadband, cable, wireless, and business services in the US; Sky in Europe), Media & Entertainment (NBCUniversal, Peacock streaming, Universal Pictures), and Theme Parks (Universal Studios theme parks globally).
+
+Comcast benefits from high-cash-flow broadband infrastructure passings, valuable content and intellectual property franchises (Illumination, DreamWorks, sports broadcasting rights), and destination theme park assets. Management is deploying DOCSIS 4.0 multi-gigabit broadband upgrades, expanding its high-growth Xfinity Mobile MVNO service, and opening major new theme park destinations (Universal Epic Universe).
 
 ## Total Addressable Market & Market Share
 Comcast Corporation addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 18.9% market share. Over our 3-year investment horizon, we model market share evolving to 17.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

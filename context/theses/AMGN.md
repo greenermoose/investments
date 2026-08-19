@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=318154
 
 ## Business Profile
-Amgen Inc. (AMGN) operates as an established participant within the Health Care sector (Biotechnology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMGN trades at $439.94 against a 3-year baseline price target of $471.03, generating a modeled annualized ROI of 2.3% under our disciplined 20-year hurdle standard.
+Amgen Inc. is one of the world's largest independent biotechnology companies, discovering, developing, and manufacturing human therapeutics focused on oncology, hematology, cardiovascular disease, inflammation, and rare diseases. Its commercial portfolio includes blockbuster biologics such as Prolia/XGEVA, Enbrel, Repatha, Otezla, and TEPEZZA (acquired via Horizon Therapeutics), monetized through worldwide pharmaceutical distribution.
+
+Amgen's competitive edge relies on advanced biologic manufacturing capabilities, extensive clinical development infrastructure, and commercial execution across global hospital and specialty pharmacy networks. Management is driving growth through its next-generation cardiometabolic and obesity pipeline (MariTide), expanded rare disease offerings, and a robust biosimilars business that balances patent expiration exposure.
 
 ## Total Addressable Market & Market Share
 Amgen Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 3.2% market share. Over our 3-year investment horizon, we model market share evolving to 3.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650107
 
 ## Business Profile
-Coca-Cola Europacific Partners PLC (CCEP) operates as an established participant within the Consumer Staples sector (Beverage Bottling & Distribution). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CCEP trades at $108.07 against a 3-year baseline price target of $118.34, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
+Coca-Cola Europacific Partners PLC (CCEP) is the world's largest independent Coca-Cola bottling partner by revenue, serving over 600 million consumers across 31 countries in Western Europe, Australia, the Pacific, and Southeast Asia. CCEP purchases concentrates and syrups from The Coca-Cola Company to produce, package, market, and distribute iconic non-alcoholic ready-to-drink beverages.
+
+CCEP's economic moat stems from exclusive geographic bottling and distribution licenses, massive direct-store delivery logistics networks, and close retail relationships across grocery, convenience, and on-premise channels. Management focuses on revenue growth management (RGM), packaging premiumization, cost efficiencies, and expansion in high-growth Asia-Pacific markets to generate strong free cash flow and dividends.
 
 ## Total Addressable Market & Market Share
 Coca-Cola Europacific Partners PLC addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

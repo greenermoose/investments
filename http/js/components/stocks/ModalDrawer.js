@@ -77,9 +77,15 @@ export function openCompanyModal(company) {
   if (convictionEl) convictionEl.textContent = company.conviction_score ? `${company.conviction_score.toFixed(1)} / 10.0` : '-';
   if (currentPriceEl) currentPriceEl.textContent = `$${currentPrice.toFixed(2)}`;
   if (targetPriceEl) targetPriceEl.textContent = `$${targetExit.toFixed(2)}`;
-  if (targetRoiEl) targetRoiEl.textContent = company.target_roi || '20.0%';
-  if (descEl) descEl.textContent = company.business_profile || company.description || 'No description available.';
-  if (moatEl) moatEl.textContent = company.competitive_moat_analysis || company.moat || 'Economic moat under fundamental review.';
+  if (descEl) {
+    const rawProfile = company.business_profile || company.description || 'No description available.';
+    const paragraphs = rawProfile.split(/\n\n+/).filter(Boolean);
+    if (paragraphs.length > 1) {
+      descEl.innerHTML = paragraphs.map(p => `<p style="margin: 0 0 12px 0; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">${p.trim()}</p>`).join('');
+    } else {
+      descEl.textContent = rawProfile;
+    }
+  }
   if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming product milestones and earnings updates.';
   
   // Render granular catalyst chips

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1375877
 
 ## Business Profile
-Canadian Solar Inc. (CSIQ) operates as an established participant within the Energy sector (Solar Modules & Battery Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSIQ trades at $14.96 against a 3-year baseline price target of $12.03, generating a modeled annualized ROI of -7.0% under our disciplined 20-year hurdle standard.
+Canadian Solar Inc. is one of the world's largest solar technology and renewable energy companies, manufacturing solar photovoltaic modules and utility-scale battery energy storage systems (Recurrent Energy and e-STORAGE). The company operates vertically integrated ingot, wafer, cell, and module production facilities across North America, Asia, and Latin America.
+
+Canadian Solar benefits from global manufacturing scale, advanced N-type TOPCon solar cell technology, and a massive utility-scale project development pipeline with long-term power purchase agreements. Management is rapidly scaling its high-margin turnkey battery energy storage solutions (e-STORAGE) to capitalize on the global grid-scale storage boom.
 
 ## Total Addressable Market & Market Share
 Canadian Solar Inc. addresses an estimated Total Addressable Market (TAM) of $84.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1141391
 
 ## Business Profile
-Mastercard Incorporated (MA) operates as an established participant within the Financials sector (Transaction & Payment Processing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MA trades at $579.00 against a 3-year baseline price target of $781.05, generating a modeled annualized ROI of 12.9% under our disciplined 20-year hurdle standard.
+Mastercard Incorporated is a global payments and technology giant operating the world's second-largest payment processing network. Mastercard connects consumers, financial institutions, merchants, governments, and businesses across more than 210 countries, facilitating trillions in annual gross dollar volume across credit, debit, and prepaid cards while providing value-added cybersecurity, fraud prevention, and data analytics services.
+
+Mastercard operates an extraordinary economic tollbooth moat characterized by immense global two-sided network effects, universal merchant acceptance, high barriers to entry, and near-zero marginal processing costs that deliver operating margins above 55%. Management continues to benefit from secular cash-to-digital payment conversion worldwide, cross-border travel volume growth, and rapid expansion in high-margin value-added services.
 
 ## Total Addressable Market & Market Share
 Mastercard Incorporated addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

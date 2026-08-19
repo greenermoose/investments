@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1099590
 
 ## Business Profile
-MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MELI trades at $1819.43 against a 3-year baseline price target of $3301.52, generating a modeled annualized ROI of 22.0% under our disciplined 20-year hurdle standard.
+MercadoLibre, Inc. is the undisputed e-commerce, digital payments, and fintech market leader in Latin America, operating across 18 countries with dominant market positions in Brazil, Mexico, and Argentina. The company operates a comprehensive commerce ecosystem (Mercado Libre marketplace and Mercado Envíos proprietary logistics network) tightly integrated with a full-suite fintech platform (Mercado Pago digital wallets, merchant acquiring, credit lending, and savings accounts).
+
+MercadoLibre's competitive advantage is anchored by powerful two-sided marketplace network effects, unmatched regional logistics speed (delivering the majority of orders within 48 hours), and an expanding financial services ecosystem that benefits from Latin America's cash-to-digital transition. Management is scaling high-margin retail media advertising, expanding credit card and fintech adoption, and deepening warehouse automation.
 
 ## Total Addressable Market & Market Share
 MercadoLibre, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 3.2% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

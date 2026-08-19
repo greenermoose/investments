@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1623526
 
 ## Business Profile
-Stoke Therapeutics, Inc. (STOK) operates as an established participant within the Health Care sector (RNA Splicing Therapeutics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, STOK trades at $33.34 against a 3-year baseline price target of $37.43, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
+Stoke Therapeutics, Inc. is a clinical-stage biotechnology company pioneering antisense oligonucleotide (ASO) medicines designed to upregulate protein expression to treat severe genetic diseases. Its proprietary TANGO (Targeted Augmentation of Nuclear Gene Output) platform targets non-productive RNA splicing to increase healthy protein production in haploinsufficient diseases, led by STK-001 for Dravet syndrome.
+
+Stoke's competitive edge centers on its proprietary TANGO platform technology, which uniquely addresses genetic diseases caused by insufficient protein expression rather than toxic protein accumulation. Management is advancing STK-001 into pivotal registrational studies for Dravet syndrome, having demonstrated significant reductions in convulsive seizure frequency and cognitive improvements.
 
 ## Total Addressable Market & Market Share
 Stoke Therapeutics, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.4% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=815556
 
 ## Business Profile
-Fastenal Company (FAST) operates as an established participant within the Industrials sector (Industrial Distribution & Vending). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FAST trades at $51.87 against a 3-year baseline price target of $59.10, generating a modeled annualized ROI of 4.5% under our disciplined 20-year hurdle standard.
+Fastenal Company is a leading industrial and construction supplies distributor, providing fasteners, safety supplies, cutting tools, and industrial materials across North America. The company operates a high-touch customer distribution model combining physical branch locations with automated on-site industrial vending machines (FASTVend) and customer-dedicated Onsite service locations.
+
+Fastenal's economic moat is built on high customer switching costs, automated on-site inventory supply vending that integrates directly into customer factory floors, and efficient regional distribution logistics. Management is driving steady market share gains by accelerating its high-growth Onsite model inside large manufacturing plants and scaling digital e-commerce procurement channels.
 
 ## Total Addressable Market & Market Share
 Fastenal Company addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

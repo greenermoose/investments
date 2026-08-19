@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001784570
 
 ## Business Profile
-Beta Technologies, Inc. (BETA) operates as an established participant within the Industrials sector (Electric Aircraft & Charging Infrastructure). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BETA trades at $26.34 against a 3-year baseline price target of $19.49, generating a modeled annualized ROI of -9.6% under our disciplined 20-year hurdle standard.
+BETA Technologies, Inc. is an aerospace and electric aviation manufacturer developing all-electric vertical takeoff and landing (eVTOL) and conventional takeoff and landing (eCTOL) aircraft, alongside multimodal electric charging infrastructure. Designed for cargo logistics, medical transport, and passenger transit, BETA monetizes through commercial aircraft sales, defense contracts, and recurring charging network fees.
+
+BETA's technological edge centers on its proprietary electric powertrain, thermal management systems, and dual-purpose aircraft design optimized for payload efficiency and rapid regulatory certification. Management maintains strong commercial partnerships with UPS, United Therapeutics, and the U.S. Air Force, positioning the company as a leader in next-generation zero-emission aviation.
 
 ## Total Addressable Market & Market Share
 Beta Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

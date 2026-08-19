@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650664
 
 ## Business Profile
-Editas Medicine, Inc. (EDIT) operates as an established participant within the Health Care sector (Gene Editing Medicines). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EDIT trades at $3.18 against a 3-year baseline price target of $3.99, generating a modeled annualized ROI of 7.9% under our disciplined 20-year hurdle standard.
+Editas Medicine, Inc. is a clinical-stage genome editing company developing revolutionary therapies using proprietary CRISPR/Cas9 and CRISPR/Cas12a technologies. The company's lead clinical asset, renizgamglogene autogedtemcel (reni-cel), is designed to treat severe sickle cell disease and transfusion-dependent beta-thalassemia by editing the HBG1/2 promoter to reactivate fetal hemoglobin.
+
+Editas holds foundational CRISPR intellectual property licensed from the Broad Institute and Harvard University, covering essential Cas9 and Cas12a editing mechanisms. Management is focused on advancing reni-cel through clinical trials, exploring commercialization partnerships, and leveraging targeted in vivo gene editing platforms for oncology and genetic diseases.
 
 ## Total Addressable Market & Market Share
 Editas Medicine, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

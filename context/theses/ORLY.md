@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=898173
 
 ## Business Profile
-O'Reilly Automotive, Inc. (ORLY) operates as an established participant within the Consumer Discretionary sector (Automotive Aftermarket Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ORLY trades at $92.10 against a 3-year baseline price target of $114.99, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
+O'Reilly Automotive, Inc. is one of the largest specialty retailers of automotive aftermarket parts, tools, supplies, equipment, and accessories in North America, operating over 6,100 stores across the United States, Canada, and Mexico. O'Reilly operates a dual-market model, serving both professional service providers (Pro installers) and Do-It-Yourself (DIY) customers.
+
+O'Reilly's economic moat is driven by its advanced hub-and-spoke distribution logistics network, providing same-day and overnight parts availability for virtually every vehicle make and model, which is critical for repair shops needing immediate parts. Management consistently delivers robust same-store sales growth, exceptional return on invested capital, and aggressive EPS compounding through massive share repurchases.
 
 ## Total Addressable Market & Market Share
 O'Reilly Automotive, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.0% market share. Over our 3-year investment horizon, we model market share evolving to 2.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

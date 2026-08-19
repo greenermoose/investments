@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650372
 
 ## Business Profile
-Atlassian Corporation (TEAM) operates as an established participant within the Information Technology sector (Team Collaboration Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TEAM trades at $167.16 against a 3-year baseline price target of $207.02, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
+Atlassian Corporation is a leading provider of team collaboration, project tracking, and agile software development tools, including Jira Software, Confluence, Jira Service Management, Trello, and Bitbucket. Atlassian monetizes through cloud-based SaaS subscription tiers across software engineering, IT service management, and enterprise business teams.
+
+Atlassian's economic moat is built on ubiquitous developer and IT workflow adoption, high collaboration switching costs, and an efficient product-led growth (PLG) distribution model with low sales acquisition costs. Management is executing a major cloud migration across its enterprise installed base, cross-selling Jira Service Management into enterprise IT, and integrating Atlassian Intelligence AI agents.
 
 ## Total Addressable Market & Market Share
 Atlassian Corporation addresses an estimated Total Addressable Market (TAM) of $99.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

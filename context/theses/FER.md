@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1468522
 
 ## Business Profile
-Ferrovial SE (FER) operates as an established participant within the Industrials sector (Infrastructure Concessions & Toll Roads). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FER trades at $64.26 against a 3-year baseline price target of $72.57, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
+Ferrovial SE is a global infrastructure giant that develops, constructs, and operates high-return infrastructure assets, specializing in toll roads (express toll lanes including 407 ETR in Toronto and Managed Lanes in Texas/Virginia), airports (Heathrow, JFK Terminal 1), and urban construction projects worldwide.
+
+Ferrovial's competitive advantage centers on long-term concession agreements (often 50 to 99 years) on essential urban transit arteries featuring dynamic congestion pricing that hedges against inflation. Management continues to deploy capital into high-growth North American managed lanes and airport terminal redevelopments, generating predictable, inflation-linked long-term cash distributions.
 
 ## Total Addressable Market & Market Share
 Ferrovial SE addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=72903
 
 ## Business Profile
-Xcel Energy Inc. (XEL) operates as an established participant within the Utilities sector (Regulated Clean Energy Utility). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, XEL trades at $79.52 against a 3-year baseline price target of $79.05, generating a modeled annualized ROI of -0.2% under our disciplined 20-year hurdle standard.
+Xcel Energy Inc. is a major regulated electric and natural gas delivery holding company operating through four utility operating subsidiaries across eight Midwestern and Western states (Minnesota, Colorado, Wisconsin, North Dakota, South Dakota, Texas, New Mexico, and Michigan), serving over 3.9 million electric and 2.2 million natural gas customers.
+
+Xcel operates as a 100% rate-regulated electric and gas utility, benefiting from stable, approved regulatory returns on rate-base capital investments. Management is leading the US utility clean energy transition with a comprehensive plan to achieve 100% carbon-free electricity by 2050, deploying significant capital expenditures to expand wind, solar, transmission line infrastructure, and advanced grid reliability.
 
 ## Total Addressable Market & Market Share
 Xcel Energy Inc. addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 3.4% market share. Over our 3-year investment horizon, we model market share evolving to 3.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=829224
 
 ## Business Profile
-Starbucks Corporation (SBUX) operates as an established participant within the Consumer Discretionary sector (Specialty Coffee Retail & Roasteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SBUX trades at $107.86 against a 3-year baseline price target of $115.72, generating a modeled annualized ROI of 2.4% under our disciplined 20-year hurdle standard.
+Starbucks Corporation is the world's premier specialty coffee roaster and retailer, operating more than 39,000 company-operated and licensed stores across 80+ global markets. Starbucks sells handcrafted coffee and tea beverages, fresh food items, and packaged coffees, while monetizing branded consumer packaged goods through the Global Coffee Alliance with Nestlé.
+
+Starbucks holds an iconic global lifestyle brand moat, prime real estate locations worldwide, and an industry-leading digital customer loyalty program (Starbucks Rewards with over 34 million active US members) driving high mobile order and pay volume. Under leadership focused on operational turnaround, management is streamlining store operations, accelerating beverage prep times, and elevating the customer cafe experience.
 
 ## Total Addressable Market & Market Share
 Starbucks Corporation addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 4.1% market share. Over our 3-year investment horizon, we model market share evolving to 4.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

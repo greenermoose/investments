@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1674416
 
 ## Business Profile
-CRISPR Therapeutics AG (CRSP) operates as an established participant within the Health Care sector (Gene Editing Therapeutics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRSP trades at $56.65 against a 3-year baseline price target of $28.32, generating a modeled annualized ROI of -20.6% under our disciplined 20-year hurdle standard.
+CRISPR Therapeutics AG is a leading gene-editing biotechnology company developing transformative medicines based on the revolutionary CRISPR/Cas9 gene-editing platform. The company achieved a historic milestone with CASGEVY, the world's first approved CRISPR-based therapy (co-developed with Vertex Pharmaceuticals) for sickle cell disease and transfusion-dependent beta-thalassemia, and is advancing an internal pipeline in oncology, autoimmune, and cardiovascular diseases.
+
+CRISPR Therapeutics holds fundamental intellectual property and pioneering clinical expertise in in vivo and ex vivo genome editing. Management is focused on scaling global commercialization of CASGEVY while advancing wholly owned allogeneic CAR-T cell therapies (targeting CD19 and CD70) and in vivo gene editing candidates for liver and cardiovascular indications.
 
 ## Total Addressable Market & Market Share
 CRISPR Therapeutics AG addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

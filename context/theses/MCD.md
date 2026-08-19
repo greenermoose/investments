@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=63908
 
 ## Business Profile
-McDonald's Corporation (MCD) operates as an established participant within the Consumer Discretionary sector (Restaurants & Global Franchising). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MCD trades at $269.76 against a 3-year baseline price target of $294.94, generating a modeled annualized ROI of 3.0% under our disciplined 20-year hurdle standard.
+McDonald's Corporation is the world's premier fast-food restaurant franchisor, operating over 41,000 restaurant locations across more than 100 countries. McDonald's operates a unique real estate-heavy franchising model where it owns the underlying land and physical buildings for the majority of its locations, leasing them back to franchisees while collecting recurring royalties, franchise fees, and rental payments based on gross sales.
+
+McDonald's holds an iconic brand moat, massive global purchasing scale, premier physical real estate locations, and digital customer engagement via the McDonald's mobile app and MyMcDonald's Rewards. Management is executing its 'Accelerating the Arches' growth strategy by optimizing core menu burgers and chicken offerings, expanding digital delivery and drive-thru automation, and accelerating new restaurant unit openings globally.
 
 ## Total Addressable Market & Market Share
 McDonald's Corporation addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 2.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

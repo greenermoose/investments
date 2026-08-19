@@ -25,7 +25,7 @@ Michael Cembalest's longitudinal study across the Russell 3000 universe (1980-20
 - **Extreme Winners**: Only ~7% of companies generated excess returns greater than two standard deviations above the market mean.
 
 ### 3. Large-Cap / Index Constituent Distribution (S&P 500, Nasdaq-100, DJIA)
-For our actively tracked universe (144 constituents of QQQ, DIA, and SMH), historical constituent datasets show higher survivorship and profitability compared to microcaps:
+For our actively tracked universe (150 constituents across QQQ, DIA, and SP500), historical constituent datasets show higher survivorship and profitability compared to microcaps:
 - **3-Year Median CAGR**: Typically spans 7.0% to 9.0%.
 - **Negative 3-Year Return Rate**: Approximately 20% to 25% of large caps experience negative returns over 3-year windows during normal market cycles.
 - **High Compounder Rate (>=20% CAGR)**: Across large-cap universes, between 10% and 15% of constituents achieve >=20% annualized ROI over rolling 3-year horizons, primarily concentrated in technology, healthcare, and consumer platform leaders.

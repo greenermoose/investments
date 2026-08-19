@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1069183
 
 ## Business Profile
-Axon Enterprise, Inc. (AXON) operates as an established participant within the Industrials sector (Public Safety Technology & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXON trades at $633.16 against a 3-year baseline price target of $1051.35, generating a modeled annualized ROI of 20.5% under our disciplined 20-year hurdle standard.
+Axon Enterprise, Inc. is the dominant public safety technology company, developing conducted energy devices (TASER), body-worn and in-car video cameras, cloud-based digital evidence management software (Axon Evidence), and automated real-time dispatch platforms. Axon sells bundled multi-year hardware-software subscriptions to federal, state, and local law enforcement agencies and correctional institutions.
+
+Axon benefits from virtually insurmountable switching costs and regulatory compliance entrenchment, as Axon Evidence manages digital video records and chain-of-custody protocols for over 18,000 public safety agencies. Management is scaling high-margin SaaS subscriptions, deploying AI-powered automated report drafting (Draft One), and expanding into international law enforcement, enterprise security, and consumer personal safety markets.
 
 ## Total Addressable Market & Market Share
 Axon Enterprise, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 5.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=320187
 
 ## Business Profile
-NIKE, Inc. (NKE) operates as an established participant within the Consumer Discretionary sector (Athletic Footwear & Apparel). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NKE trades at $40.88 against a 3-year baseline price target of $45.58, generating a modeled annualized ROI of 3.7% under our disciplined 20-year hurdle standard.
+NIKE, Inc. is the world's largest athletic footwear, apparel, and equipment company, designing and marketing iconic performance and lifestyle products under the Nike, Jordan, and Converse brand names. Nike sells products through a global omnichannel network combining wholesale athletic retailers with direct-to-consumer channels (Nike digital apps and company-owned retail stores).
+
+Nike's economic moat is powered by unmatched global brand prestige, iconic athlete endorsement partnerships, decades of athletic footwear innovation (Air, Zoom, Flyknit), and dominant retail shelf space. Management is refocusing its strategic priorities on wholesale retailer partnerships, core athletic performance innovation, and streamlined supply chain inventory management to reignite brand momentum and market share gains.
 
 ## Total Addressable Market & Market Share
 NIKE, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 5.2% market share. Over our 3-year investment horizon, we model market share evolving to 5.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

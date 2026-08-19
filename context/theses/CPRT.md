@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=900075
 
 ## Business Profile
-Copart, Inc. (CPRT) operates as an established participant within the Industrials sector (Online Vehicle Salvage Auctions). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CPRT trades at $33.36 against a 3-year baseline price target of $42.44, generating a modeled annualized ROI of 10.8% under our disciplined 20-year hurdle standard.
+Copart, Inc. is the global leader in online vehicle auctions and remarketing services, connecting vehicle sellers (primarily auto insurance companies, banks, fleet operators, and car dealerships) with buyers across more than 190 countries through its proprietary VB3 auction platform. Copart handles salvaged, total-loss, and used vehicles, providing vehicle storage, title processing, and global logistics.
+
+Copart commands a durable economic moat based on its vast proprietary real estate network (thousands of acres of secure vehicle storage land near major metropolitan areas that are nearly impossible to re-zone today) and deep two-sided global network effects. Management continues to expand salvage yard land holdings internationally, grow non-insurance commercial volume, and benefit from the rising technological complexity of modern vehicles, which increases total-loss frequency.
 
 ## Total Addressable Market & Market Share
 Copart, Inc. addresses an estimated Total Addressable Market (TAM) of $70.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

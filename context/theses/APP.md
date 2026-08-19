@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1751008
 
 ## Business Profile
-AppLovin Corporation (APP) operates as an established participant within the Information Technology sector (Software & Mobile AdTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, APP trades at $309.43 against a 3-year baseline price target of $526.12, generating a modeled annualized ROI of 20.8% under our disciplined 20-year hurdle standard.
+AppLovin Corporation is a leading mobile technology and software marketing platform that enables mobile application developers to monetize, acquire users, and optimize advertising performance. Its proprietary AI advertising recommendation engine, AXON 2.0, powers real-time programmatic ad auctions (MAX mediation platform and AppDiscovery), connecting mobile app developers with global advertising demand.
+
+AppLovin's moat is driven by AXON's self-learning algorithmic prediction accuracy, massive mobile user behavioral dataset, and high market share in mobile game ad mediation. Management is expanding AXON's machine learning engine beyond mobile gaming into broad e-commerce web advertising, connected TV (CTV), and enterprise app discovery, unlocking high-margin secular growth and immense free cash flow generation.
 
 ## Total Addressable Market & Market Share
 AppLovin Corporation addresses an estimated Total Addressable Market (TAM) of $85.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 8.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

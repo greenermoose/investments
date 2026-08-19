@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1701605
 
 ## Business Profile
-Baker Hughes Company (BKR) operates as an established participant within the Energy sector (Energy Technology & Oilfield Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BKR trades at $64.63 against a 3-year baseline price target of $69.16, generating a modeled annualized ROI of 2.3% under our disciplined 20-year hurdle standard.
+Baker Hughes Company is an energy technology company operating in more than 120 countries, providing equipment, software, and digital solutions for energy and industrial customers. The company operates through two main segments: Oilfield Services & Equipment (OFSE) and Industrial & Energy Technology (IET), which manufactures industrial gas turbines, compressors, and subsea production systems.
+
+Baker Hughes is distinguished by its technological leadership in LNG (liquefied natural gas) turbomachinery, industrial decarbonization equipment, and long-term service contracts with global energy majors. Management is pivoting the portfolio toward clean power generation, carbon capture, utilization, and storage (CCUS), and hydrogen infrastructure to capture long-term industrial energy transition spending.
 
 ## Total Addressable Market & Market Share
 Baker Hughes Company addresses an estimated Total Addressable Market (TAM) of $800.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 3.4% market share. Over our 3-year investment horizon, we model market share evolving to 3.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001691493
 
 ## Business Profile
-Nu Holdings Ltd. (NU) operates as an established participant within the Financials sector (Digital Banking & Consumer Fintech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NU trades at $14.95 against a 3-year baseline price target of $33.39, generating a modeled annualized ROI of 30.7% under our disciplined 20-year hurdle standard.
+Nu Holdings Ltd. (Nubank) is the largest digital banking platform in Latin America outside of legacy incumbents, serving over 100 million customers across Brazil, Mexico, and Colombia. Nubank provides a comprehensive, 100% digital financial services platform spanning credit cards, digital savings accounts, personal loans, business accounts, investments, and insurance.
+
+Nubank holds an extraordinary competitive advantage based on its modern, low-cost cloud technology architecture (operating cost per active customer is ~85% lower than traditional Latin American banks), viral brand word-of-mouth adoption, and superior credit underwriting algorithms. Management is aggressively expanding into Mexico and Colombia, scaling high-margin personal loans and credit cards, and cross-selling investment products.
 
 ## Total Addressable Market & Market Share
 Nu Holdings Ltd. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 1.2% market share. Over our 3-year investment horizon, we model market share evolving to 1.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

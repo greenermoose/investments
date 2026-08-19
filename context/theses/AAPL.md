@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=320193
 
 ## Business Profile
-Apple Inc. (AAPL) operates as an established participant within the Information Technology sector (Consumer Electronics & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AAPL trades at $316.75 against a 3-year baseline price target of $416.44, generating a modeled annualized ROI of 12.0% under our disciplined 20-year hurdle standard.
+Apple Inc. designs, manufactures, and markets premium consumer hardware and software ecosystems, anchored by the iPhone, Mac personal computers, iPad tablets, Apple Watch wearables, and AirPods. The company pairs its hardware install base with a high-margin Services division comprising the App Store, Apple Music, iCloud storage, Apple Pay, AppleCare, and digital subscriptions, creating recurring cash generation with industry-leading free cash flow conversion.
+
+Apple's competitive advantage stems from its proprietary silicon engineering (M-series and A-series architectures), end-to-end hardware-software vertical integration, and an active installed base exceeding 2.2 billion devices with unmatched customer retention. Management's capital allocation strategy aggressively returns capital through massive share repurchases and regular dividend increases, while strategic expansion into on-device generative AI (Apple Intelligence), spatial computing, and digital health services provides multi-year monetization vectors.
 
 ## Total Addressable Market & Market Share
 Apple Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 34.7% market share. Over our 3-year investment horizon, we model market share evolving to 32.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

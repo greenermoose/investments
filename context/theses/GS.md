@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=886982
 
 ## Business Profile
-The Goldman Sachs Group, Inc. (GS) operates as an established participant within the Financials sector (Investment Banking & Capital Markets). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GS trades at $1026.42 against a 3-year baseline price target of $1246.22, generating a modeled annualized ROI of 6.7% under our disciplined 20-year hurdle standard.
+The Goldman Sachs Group, Inc. is a leading global investment banking, securities, and asset and wealth management institution, advising corporations, financial institutions, governments, and ultra-high-net-worth individuals worldwide. Its core business divisions comprise Global Banking & Markets (M&A advisory, equity/debt underwriting, fixed income/currencies/commodities trading, equities financing) and Asset & Wealth Management.
+
+Goldman Sachs holds an enduring franchise moat built on premier brand prestige, top-tier global investment banking league table rankings, and deep capital markets client execution capabilities. Management is executing a streamlined strategic focus on core institutional banking, scaling alternatives and private credit within asset management, and growing stable, fee-based wealth management revenues.
 
 ## Total Addressable Market & Market Share
 The Goldman Sachs Group, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 7.3% market share. Over our 3-year investment horizon, we model market share evolving to 7.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

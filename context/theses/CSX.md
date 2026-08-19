@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=277948
 
 ## Business Profile
-CSX Corporation (CSX) operates as an established participant within the Industrials sector (Rail Transportation). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSX trades at $51.41 against a 3-year baseline price target of $58.25, generating a modeled annualized ROI of 4.2% under our disciplined 20-year hurdle standard.
+CSX Corporation is a premier freight rail transportation company operating a roughly 20,000-mile rail network across 26 states in the eastern United States and two Canadian provinces. CSX transports a broad portfolio of freight, including intermodal containers, automotive parts and finished vehicles, chemicals, agriculture, construction materials, and energy commodities.
+
+CSX operates as a regional duopoly in the eastern US alongside Norfolk Southern, benefiting from irreplaceable rights-of-way, lower cost-per-ton-mile freight economics compared to trucking, and high fuel efficiency. Management is executing scheduled railroading operational discipline to enhance service reliability, improve operating ratios, and capture freight market share from highway trucks.
 
 ## Total Addressable Market & Market Share
 CSX Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.9% market share. Over our 3-year investment horizon, we model market share evolving to 1.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

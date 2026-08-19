@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1045810
 
 ## Business Profile
-NVIDIA Corporation (NVDA) operates as an established participant within the Information Technology sector (Semiconductors & AI Hardware). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NVDA trades at $218.17 against a 3-year baseline price target of $429.90, generating a modeled annualized ROI of 25.4% under our disciplined 20-year hurdle standard.
+NVIDIA Corporation is the global pioneer and market leader in accelerated computing, designing the industry-standard GPU architectures (Hopper, Blackwell), networking interconnects (Quantum InfiniBand and Spectrum-X Ethernet), and CUDA software stack powering modern AI infrastructure. The company monetizes through high-margin data center compute platforms, gaming graphics, enterprise AI software, and autonomous vehicle solutions.
+
+NVIDIA commands an extraordinary economic moat built on its proprietary CUDA software ecosystem (with millions of developers locked into its software library and compiler tools), full-stack data center architectural integration, and rapid silicon innovation cycles. Under CEO Jensen Huang, management is capitalizing on the multi-trillion dollar transition from general-purpose CPUs to accelerated computing and the emergence of enterprise generative AI.
 
 ## Total Addressable Market & Market Share
 NVIDIA Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 19.1% market share. Over our 3-year investment horizon, we model market share evolving to 23.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

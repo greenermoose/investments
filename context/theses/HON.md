@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=773840
 
 ## Business Profile
-Honeywell International Inc. (HON) operates as an established participant within the Industrials sector (Industrial Conglomerate & Aerospace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HON trades at $225.86 against a 3-year baseline price target of $259.04, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
+Honeywell International Inc. is a diversified technology and manufacturing conglomerate operating across four major segments: Aerospace Technologies (commercial and defense avionics, aircraft engines), Industrial Automation (warehouse automation, process solutions), Building Solutions (building management systems, fire/security), and Energy and Sustainability Solutions (specialty chemicals, process technology).
+
+Honeywell's competitive advantage relies on mission-critical technologies with high switching costs, a vast global installed base generating recurring maintenance and software revenue, and extensive intellectual property. Management is actively simplifying its corporate portfolio into three compelling megatrends: the future of aviation, the energy transition, and industrial automation, while accelerating software integration via Honeywell Forge.
 
 ## Total Addressable Market & Market Share
 Honeywell International Inc. addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 5.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

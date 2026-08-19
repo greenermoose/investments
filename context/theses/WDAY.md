@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1327811
 
 ## Business Profile
-Workday, Inc. (WDAY) operates as an established participant within the Information Technology sector (Cloud Enterprise Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDAY trades at $196.18 against a 3-year baseline price target of $238.96, generating a modeled annualized ROI of 6.8% under our disciplined 20-year hurdle standard.
+Workday, Inc. is a leading provider of enterprise cloud applications for human resources and finance, delivering unified cloud platforms for financial management, human capital management (HCM), payroll, workforce planning, and spend management to thousands of global enterprises, educational institutions, and government agencies.
+
+Workday commands massive enterprise switching costs, high gross retention rates (>95%), and high contract renewal values as Fortune 500 organizations run core payroll, HR, and financial ledgers natively on Workday. Management is accelerating growth by expanding full-suite financial management adoption, infusing Workday AI and Illuminate agents to automate HR workflows, and expanding international enterprise market penetration.
 
 ## Total Addressable Market & Market Share
 Workday, Inc. addresses an estimated Total Addressable Market (TAM) of $143.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1792789
 
 ## Business Profile
-DoorDash, Inc. (DASH) operates as an established participant within the Consumer Discretionary sector (Local Commerce & Food Delivery). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DASH trades at $219.14 against a 3-year baseline price target of $340.57, generating a modeled annualized ROI of 18.0% under our disciplined 20-year hurdle standard.
+DoorDash, Inc. is the leading local commerce and on-demand delivery platform in North America, connecting consumers with local restaurants, grocery stores, convenience stores, and retail merchants through a nationwide fleet of independent couriers (Dashers). DoorDash monetizes through merchant marketplace commission take-rates, consumer delivery fees, DashPass subscription memberships, and retail advertising.
+
+DoorDash holds the dominant market share (>65%) in US restaurant delivery, generating superior network route density, lower fulfillment costs per order, and high consumer order frequency. Management is rapidly expanding into non-restaurant retail categories (grocery, alcohol, pharmacy, pet supplies), scaling international operations via Wolt, and growing high-margin merchant retail media advertising.
 
 ## Total Addressable Market & Market Share
 DoorDash, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 1.5% market share. Over our 3-year investment horizon, we model market share evolving to 1.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

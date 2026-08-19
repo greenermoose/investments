@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1594805
 
 ## Business Profile
-Shopify Inc. (SHOP) operates as an established participant within the Information Technology sector (E-Commerce Software & Merchant Solutions). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SHOP trades at $148.19 against a 3-year baseline price target of $182.95, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Shopify Inc. is the leading global commerce platform providing mission-critical internet infrastructure for merchants of all sizes to start, run, and grow retail businesses. Shopify's cloud platform unifies online storefronts, physical point-of-sale (POS) systems, social media commerce, and B2B wholesale, monetizing through recurring subscription tiers and Merchant Solutions (Shopify Payments take-rates, shipping, capital, and merchant apps).
+
+Shopify holds a powerful economic moat built on high merchant switching costs, massive merchant volume scale (>10% of US e-commerce GMV), and a rich ecosystem of thousands of app developers and agency partners. Management is expanding enterprise brand adoption (Shopify Plus and Commerce Components), scaling global cross-border commerce (Shopify Markets), and integrating generative AI tools (Shopify Magic) to accelerate merchant success.
 
 ## Total Addressable Market & Market Share
 Shopify Inc. addresses an estimated Total Addressable Market (TAM) of $166.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

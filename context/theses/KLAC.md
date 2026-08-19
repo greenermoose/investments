@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=319201
 
 ## Business Profile
-KLA Corporation (KLAC) operates as an established participant within the Information Technology sector (Semiconductor Process Control). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KLAC trades at $189.06 against a 3-year baseline price target of $319.72, generating a modeled annualized ROI of 20.6% under our disciplined 20-year hurdle standard.
+KLA Corporation is the undisputed global market leader in semiconductor process control and yield management systems, specializing in optical and electron-beam wafer inspection, reticle inspection, and metrology equipment. KLA's tools detect microscopic defects during chip fabrication, enabling foundries and logic/memory manufacturers to optimize manufacturing yields and accelerate new process ramps.
+
+KLA holds a dominant market share (over 50% globally) in process control, supported by proprietary optical sensor physics, complex algorithms, and deep co-development partnerships with leading-edge foundries. Management is capitalizing on the extreme complexity of gate-all-around (GAA) transistor nodes, advanced multi-die packaging, and EUV lithography adoption, all of which require exponential increases in metrology inspection steps.
 
 ## Total Addressable Market & Market Share
 KLA Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

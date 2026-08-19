@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1442145
 
 ## Business Profile
-Verisk Analytics, Inc. (VRSK) operates as an established participant within the Industrials sector (Insurance Data & Risk Analytics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, VRSK trades at $182.54 against a 3-year baseline price target of $204.55, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
+Verisk Analytics, Inc. is a leading data analytics and risk assessment provider serving the global property and casualty (P&C) insurance industry. Verisk delivers predictive data models, underwriting software, catastrophic weather risk modeling, actuarial rating tables, and automated claims management solutions that help insurers price policies and settle claims.
+
+Verisk commands a near-monopolistic economic moat built on decades of aggregated industry insurance loss data, deep regulatory acceptance across state insurance commissioners, and mission-critical integration into carrier underwriting workflows. Management operates a high-margin, asset-light SaaS and subscription business model (>80% recurring revenue) that generates exceptional free cash flow conversion.
 
 ## Total Addressable Market & Market Share
 Verisk Analytics, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.2% market share. Over our 3-year investment horizon, we model market share evolving to 6.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

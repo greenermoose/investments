@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1805077
 
 ## Business Profile
-Eos Energy Enterprises, Inc. (EOSE) operates as an established participant within the Energy sector (Zinc-Based Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EOSE trades at $3.54 against a 3-year baseline price target of $3.54, generating a modeled annualized ROI of 0% under our disciplined 20-year hurdle standard.
+Eos Energy Enterprises, Inc. designs and manufactures innovative zinc-based long-duration energy storage systems (the Znyth aqueous zinc battery) tailored for utility-scale solar and wind integration, microgrids, and industrial grid support. Unlike lithium-ion alternatives, Eos batteries utilize non-flammable, earth-abundant materials with 3 to 12 hour discharge durations.
+
+Eos offers a safe, environmentally benign, and cost-effective long-duration energy storage alternative that eliminates thermal runaway fire risk and relies on domestic US supply chains. Management is scaling automated manufacturing capacity under Project AMA (supported by Department of Energy loan programs) to fulfill a growing multi-gigawatt commercial order backlog.
 
 ## Total Addressable Market & Market Share
 Eos Energy Enterprises, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.2% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

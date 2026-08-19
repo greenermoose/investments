@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=80424
 
 ## Business Profile
-The Procter & Gamble Company (PG) operates as an established participant within the Consumer Staples sector (Household & Personal Care Products). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PG trades at $145.75 against a 3-year baseline price target of $162.50, generating a modeled annualized ROI of 3.7% under our disciplined 20-year hurdle standard.
+The Procter & Gamble Company is the world's leading consumer packaged goods company, manufacturing and marketing trusted household and personal care brands across Beauty (Head & Shoulders, Pantene, Olay), Grooming (Gillette, Venus), Health Care (Oral-B, Crest, Vicks), Fabric & Home Care (Tide, Ariel, Downy, Dawn, Cascade, Febreze), and Baby & Family Care (Pampers, Luvs, Bounty, Charmin).
+
+P&G holds an exceptional economic moat built on timeless consumer brand trust, massive global retail distribution scale, multi-billion dollar annual advertising power, and consistent product performance superiority. Management pursues a strategy of constructive disruption and category growth, steadily expanding gross margins and delivering reliable shareholder returns through unbroken multi-decade dividend increases.
 
 ## Total Addressable Market & Market Share
 The Procter & Gamble Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.8% market share. Over our 3-year investment horizon, we model market share evolving to 15.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

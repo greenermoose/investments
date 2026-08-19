@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1321655
 
 ## Business Profile
-Palantir Technologies Inc. (PLTR) operates as an established participant within the Information Technology sector (Enterprise Software & AI Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PLTR trades at $170.87 against a 3-year baseline price target of $270.53, generating a modeled annualized ROI of 18.7% under our disciplined 20-year hurdle standard.
+Palantir Technologies Inc. is a leading enterprise software provider specializing in big data analytics, operational intelligence, and artificial intelligence orchestration platforms. Its core platforms—Gotham (for defense and intelligence agencies), Foundry (for commercial enterprises), Apollo (for continuous software deployment), and the Artificial Intelligence Platform (AIP)—allow organizations to integrate siloed operational data with large language models to automate complex decision-making.
+
+Palantir commands virtually insurmountable switching costs and regulatory security clearances, deeply embedded within US and allied government defense infrastructure and Fortune 500 corporate workflows. Management is experiencing hyper-growth in US commercial AIP deployments, leveraging intensive 'AIP Bootcamps' to convert enterprise trials into high-margin, multi-year software expansion contracts.
 
 ## Total Addressable Market & Market Share
 Palantir Technologies Inc. addresses an estimated Total Addressable Market (TAM) of $71.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 8.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001562088
 
 ## Business Profile
-Duolingo, Inc. (DUOL) operates as an established participant within the Consumer Discretionary sector (Digital Learning & EdTech Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DUOL trades at $143.22 against a 3-year baseline price target of $302.05, generating a modeled annualized ROI of 29.8% under our disciplined 20-year hurdle standard.
+Duolingo, Inc. is the world's leading mobile learning platform and the top-grossing education app globally, offering gamified language courses alongside math and music learning. The company employs a freemium model where its engaging, bite-sized lessons attract over 100 million active monthly learners, monetizing through paid Super Duolingo and Duolingo Max (generative AI) subscriptions, in-app purchases, and English proficiency testing (Duolingo English Test).
+
+Duolingo's competitive moat is driven by massive organic user acquisition (>90% organic traffic), proprietary AI-driven personalized learning algorithms, and deep gamification retention mechanics. Management is aggressively integrating OpenAI-powered conversational AI features into premium subscription tiers while expanding into core subject education worldwide.
 
 ## Total Addressable Market & Market Share
 Duolingo, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.3% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

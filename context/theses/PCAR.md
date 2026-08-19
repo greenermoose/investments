@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=75362
 
 ## Business Profile
-PACCAR Inc (PCAR) operates as an established participant within the Industrials sector (Commercial Heavy-Duty Vehicles). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PCAR trades at $128.47 against a 3-year baseline price target of $133.68, generating a modeled annualized ROI of 1.3% under our disciplined 20-year hurdle standard.
+PACCAR Inc is a global technology leader in the design, manufacture, and customer support of premium light, medium, and heavy-duty commercial trucks under the iconic Kenworth, Peterbilt, and DAF nameplates. PACCAR also designs advanced diesel powertrains, provides financial services, and distributes aftermarket truck parts through PACCAR Parts.
+
+PACCAR commands a formidable brand moat supported by superior truck build quality, high resale values, strong driver brand loyalty, and an extensive global independent dealer network. Management consistently generates industry-leading profit margins through all economic cycles, expanding high-margin recurring parts revenue, and pioneering zero-emission electric and hydrogen fuel-cell truck technologies.
 
 ## Total Addressable Market & Market Share
 PACCAR Inc addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

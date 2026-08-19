@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=796343
 
 ## Business Profile
-Adobe Inc. (ADBE) operates as an established participant within the Information Technology sector (Application Software & Digital Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADBE trades at $271.19 against a 3-year baseline price target of $352.69, generating a modeled annualized ROI of 11.6% under our disciplined 20-year hurdle standard.
+Adobe Inc. provides foundational software platforms for creative professionals, enterprise marketers, and digital document workflows. The business operates through three core cloud segments: Digital Media (Creative Cloud applications including Photoshop, Illustrator, Premiere Pro, and the Firefly generative AI engine), Document Cloud (Acrobat and Adobe Sign), and Digital Experience (real-time enterprise customer data, marketing automation, and digital commerce analytics).
+
+Adobe commands the industry standard in creative tooling, benefiting from massive customer switching costs, workflow integration across global enterprises, and pricing power delivered through subscription tiers. Management is actively infusing native generative AI capabilities (Adobe Firefly) across its creative suite to accelerate creator productivity, expand consumption-based credit revenue, and solidify its enterprise marketing dominance.
 
 ## Total Addressable Market & Market Share
 Adobe Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.0% market share. Over our 3-year investment horizon, we model market share evolving to 2.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

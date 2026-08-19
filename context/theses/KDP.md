@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1418135
 
 ## Business Profile
-Keurig Dr Pepper Inc. (KDP) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Coffee). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KDP trades at $31.05 against a 3-year baseline price target of $31.77, generating a modeled annualized ROI of 0.8% under our disciplined 20-year hurdle standard.
+Keurig Dr Pepper Inc. is a leading North American beverage company operating a balanced portfolio of single-serve coffee systems (Keurig brewing systems and K-Cup pods) and packaged ready-to-drink beverages (Dr Pepper, Canada Dry, Snapple, 7UP, Mott's, Core Hydration, and C4 Energy partnership). The company monetizes through retail pod sales, proprietary brewer distribution, and direct-store delivery (DSD) networks.
+
+Keurig Dr Pepper commands an economic moat derived from its ubiquitous single-serve coffee appliance installed base (present in over 40 million North American households), long-term coffee brand licensing partnerships, and an extensive nationwide beverage distribution footprint. Management is accelerating growth in ready-to-drink energy drinks, cold-brew coffee innovations, and packaging efficiency across grocery and convenience channels.
 
 ## Total Addressable Market & Market Share
 Keurig Dr Pepper Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

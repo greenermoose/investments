@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075124
 
 ## Business Profile
-Thomson Reuters Corporation (TRI) operates as an established participant within the Industrials sector (Legal, Tax & Accounting Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRI trades at $104.23 against a 3-year baseline price target of $117.21, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Thomson Reuters Corporation is a leading global provider of business information services, delivering specialized software, authoritative data, and workflow solutions to legal, tax, accounting, compliance, and corporate professionals. Its flagship software platforms include Westlaw (legal research), Practical Law, Checkpoint (tax and accounting), and ONESOURCE (corporate tax compliance), alongside the Reuters news agency.
+
+Thomson Reuters commands massive professional switching costs, deep integration into law firm and corporate tax workflows, and proprietary legal and regulatory databases that cannot be easily replicated. Management is aggressively integrating generative AI capabilities (CoCounsel legal AI assistant) across its legal and tax platforms, driving high recurring subscription growth and expanding operating margins.
 
 ## Total Addressable Market & Market Share
 Thomson Reuters Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

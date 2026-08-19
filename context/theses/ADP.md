@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=8670
 
 ## Business Profile
-Automatic Data Processing, Inc. (ADP) operates as an established participant within the Industrials sector (Human Capital Management Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ADP trades at $276.96 against a 3-year baseline price target of $311.65, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Automatic Data Processing, Inc. (ADP) is a premier global provider of cloud-based human capital management (HCM) solutions, comprehensive payroll processing, talent management, tax administration, and benefits outsourcing services. Serving over one million business clients ranging from small businesses (RUN Powered by ADP) to multinational enterprises (ADP Vantage and Workforce Now), the company monetizes through recurring SaaS subscription contracts and client fund float interest earnings.
+
+ADP maintains an extensive competitive moat built on mission-critical compliance workflows, deep enterprise software switching costs, and exceptional client retention rates consistently above 92%. Management continues to modernize its technology stack through next-generation platforms like ADP Lyric, expanding higher-margin HR business process outsourcing (BPO), and leveraging proprietary workforce data analytics to cross-sell additional HCM modules.
 
 ## Total Addressable Market & Market Share
 Automatic Data Processing, Inc. addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

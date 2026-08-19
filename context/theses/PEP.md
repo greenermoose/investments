@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=77476
 
 ## Business Profile
-PepsiCo, Inc. (PEP) operates as an established participant within the Consumer Staples sector (Packaged Foods & Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PEP trades at $141.72 against a 3-year baseline price target of $155.78, generating a modeled annualized ROI of 3.2% under our disciplined 20-year hurdle standard.
+PepsiCo, Inc. is a global food and beverage giant operating a world-class portfolio of complementary snacks, foods, and convenient beverages across Frito-Lay North America (Lay's, Doritos, Cheetos, Tostitos), Quaker Foods, PepsiCo Beverages North America (Pepsi, Mountain Dew, Gatorade), and international divisions in over 200 countries.
+
+PepsiCo commands a powerful economic moat supported by its direct-store delivery (DSD) distribution network, dominant market share in global savory snacks, ubiquitous retail shelf space, and immense brand pricing power. Management is focused on international market penetration, zero-sugar beverage innovation, packaging optimization, and continuous productivity automation to drive steady earnings and dividend compounding.
 
 ## Total Addressable Market & Market Share
 PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.3% market share. Over our 3-year investment horizon, we model market share evolving to 15.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

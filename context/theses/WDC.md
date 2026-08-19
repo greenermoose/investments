@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=106040
 
 ## Business Profile
-Western Digital Corporation (WDC) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDC trades at $476.14 against a 3-year baseline price target of $586.85, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Western Digital Corporation is a leading developer and manufacturer of data storage devices, producing hard disk drives (HDDs) for enterprise cloud data centers and flash memory storage devices (SSDs, embedded flash) for smartphones, gaming consoles, PCs, and automotive systems.
+
+Western Digital holds an established competitive position in mass-capacity nearline hard disk drives, sharing an effective duopoly with Seagate for cloud hyperscale storage tiers, alongside a major flash memory manufacturing joint venture with Kioxia in Japan. Management is executing a strategic corporate separation of its HDD and Flash memory business units to unlock shareholder value, streamline capital allocation, and focus on pure-play storage opportunities.
 
 ## Total Addressable Market & Market Share
 Western Digital Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

@@ -14,7 +14,9 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1035267
 
 ## Business Profile
-Intuitive Surgical, Inc. (ISRG) operates as an established participant within the Health Care sector (Robotic Surgical Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ISRG trades at $402.62 against a 3-year baseline price target of $627.32, generating a modeled annualized ROI of 18.1% under our disciplined 20-year hurdle standard.
+Intuitive Surgical, Inc. is the pioneer and global market leader in robotic-assisted minimally invasive surgery, designing and manufacturing the da Vinci surgical system and the Ion endoluminal robotic bronchoscopy platform. The company operates an attractive razor-and-blade business model where a growing global installed base of robotic systems generates recurring revenue from proprietary surgical instruments, accessories, and maintenance contracts.
+
+Intuitive Surgical commands a near-impregnable competitive moat supported by thousands of hospital system integrations, extensive surgeon training and certification lock-in, and decades of proprietary robotic patent IP. Management is rolling out the next-generation da Vinci 5 system (featuring advanced force feedback sensing, enhanced computing power, and surgical workflow analytics), expanding robotic surgical indications across general surgery, gynecology, and urology.
 
 ## Total Addressable Market & Market Share
 Intuitive Surgical, Inc. addresses an estimated Total Addressable Market (TAM) of $150.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.

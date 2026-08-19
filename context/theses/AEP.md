@@ -38,6 +38,16 @@ American Electric Power Company, Inc. operates under a sbc dilutive capital stra
 | Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$4.97 B / yr CapEx | 18 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+American Electric Power Company, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.27B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.27 B / yr | PARTIAL_OFFSET | Risk: MODERATE |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: +0.5% / yr | SBC_DILUTIVE | Dilution Drag |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $450.0B addressable market.

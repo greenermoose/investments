@@ -38,6 +38,16 @@ Berkshire Hathaway Inc. (Class B) operates under a balanced capital return capit
 | Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$14.84 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+Berkshire Hathaway Inc. (Class B) utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $4.45B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $4.45 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $850.0B addressable market.

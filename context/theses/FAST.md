@@ -38,6 +38,16 @@ Fastenal Company operates under a balanced capital return capital strategy. The 
 | Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$0.67 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+Fastenal Company utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.10B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases actively absorb gross equity grant dilution, maintaining a stable share count. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Stock-based compensation is immaterial to total return, with negligible dilution risk or supply overhang.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.10 B / yr | NEUTRAL_OFFSET | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -0.5% / yr | MODERATE_BUYBACKS | Dilution Drag |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.

@@ -87,6 +87,7 @@ for equity in universe:
     moat_analysis = val_model["competitive_moat_analysis"]
     cap_info = val_model["capital_needs_and_strategy"]
     dilution_info = val_model["share_dilution_or_buyback"]
+    sbc_info = val_model["stock_based_compensation"]
     catalysts_data = val_model["catalyst_timeline"]
     invalidation_items = val_model["invalidation_criteria"]
 
@@ -191,6 +192,16 @@ for equity in universe:
         f"| Debt & Equity Issuance | {iss_d['recent_debt_issuance']} | ${iss_d['total_debt_usd_b']:.2f} B Debt vs ${iss_d['cash_and_equivalents_usd_b']:.2f} B Cash | Net: ${iss_d['net_cash_or_debt_usd_b']:+.2f} B | {iss_d['description']} |",
         f"| Capital Needs & Runway | {needs_d['primary_needs']} | ~${needs_d['annual_capex_usd_b']:.2f} B / yr CapEx | {needs_d['liquidity_runway_months']} Months Runway | {needs_d['funding_strategy']} |",
         f"| Going Concern & Solvency | {'ALERT' if needs_d['going_concern_warning'] else 'CLEAN'} | Zero Going Concern Doubt | Solvency Confirmed | {needs_d['going_concern_assessment']} |",
+        "",
+        "## Stock-Based Compensation & Lock-Up Dynamics",
+        sbc_info["narrative"],
+        "",
+        "| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |",
+        "| :--- | :--- | :--- | :--- | :--- |",
+        f"| Annual Stock Compensation | ~{sbc_info['sbc_pct_of_revenue']:.1f}% of TTM Revenue | ${sbc_info['sbc_annual_expense_usd_b']:.2f} B / yr | {sbc_info['buyback_offset_status']} | Risk: {sbc_info['downward_price_pressure_risk']} |",
+        f"| Gross vs Net Dilution Rate | Gross: +{sbc_info['gross_annual_dilution_pct']:.1f}% / yr | Net: {sbc_info['net_dilution_rate_pct']:+.1f}% / yr | {dilution_info['management_philosophy']} | {'Accretive Repurchases' if sbc_info['buyback_offset_status'] == 'FULL_OFFSET_ACCRETIVE' else 'Dilution Drag'} |",
+        f"| Lock-Up & Window Status | {sbc_info['lock_up_status']} | 10b5-1 Trading Window | {sbc_info['lock_up_details'][:60]}... | {sbc_info['downward_price_pressure_risk']} Overhang Risk |",
+        f"| Vesting Architecture | {sbc_info['vesting_schedule_structure']} | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |",
         "",
         "## Explicit Invalidation Criteria (Exit Triggers)",
         "If any of the following occur, the thesis is broken and the position will be exited:",

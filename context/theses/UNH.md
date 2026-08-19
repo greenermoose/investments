@@ -38,6 +38,16 @@ UnitedHealth Group Incorporated operates under a balanced capital return capital
 | Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$31.23 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+UnitedHealth Group Incorporated utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $15.61B (~3.5% of TTM revenue). Gross annual equity grant issuance is estimated at +0.8% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~3.5% of TTM Revenue | $15.61 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.8% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting with clinical development milestone-based stock option allocations | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $1100.0B addressable market.

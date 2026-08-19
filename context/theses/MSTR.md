@@ -38,6 +38,16 @@ MicroStrategy Incorporated operates under a sbc dilutive capital strategy. The c
 | Capital Needs & Runway | CAPEX_AND_RD | ~$0.05 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+MicroStrategy Incorporated utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.09B (~18.0% of TTM revenue). Gross annual equity grant issuance is estimated at +4.5% per year. No active buyback offset; employee equity compensation expands share count at +3.0%/yr, creating structural dilution. Regarding lock-up dynamics, Executive leadership and key engineering equity compensation packages include multi-year performance milestone vesting tranches. Quarterly tax-withholding 'sell-to-cover' executions occur during open trading windows 2 to 3 trading days post-earnings. Elevated stock compensation and unoffset share issuance create meaningful downward price pressure and per-share dilution drag (~3.0%/yr), requiring strict valuation discipline and tactical entry timing on post-vesting pullbacks.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~18.0% of TTM Revenue | $0.09 B / yr | UNOFFSET_DILUTIVE | Risk: HIGH |
+| Gross vs Net Dilution Rate | Gross: +4.5% / yr | Net: +3.0% / yr | CAPITAL_RAISE_RISK | Dilution Drag |
+| Lock-Up & Window Status | EXECUTIVE_VESTING_CLIFF_SCHEDULED | 10b5-1 Trading Window | Executive leadership and key engineering equity compensation... | HIGH Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

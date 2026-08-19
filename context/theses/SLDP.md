@@ -38,6 +38,16 @@ Solid Power, Inc. operates under a external capital dependent capital strategy. 
 | Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$0.20 B / yr CapEx | 18 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+Solid Power, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.02B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. No active buyback offset; employee equity compensation expands share count at +3.5%/yr, creating structural dilution. Regarding lock-up dynamics, Initial 180-day IPO/deSPAC lock-up expirations and early sponsor restrictions have expired. Secondary float volume has stabilized into standard exchange trading channels. Insider dispositions remain subject to quarterly Form 4 reporting. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.02 B / yr | UNOFFSET_DILUTIVE | Risk: MODERATE |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: +3.5% / yr | CAPITAL_RAISE_RISK | Dilution Drag |
+| Lock-Up & Window Status | RECENT_UNLOCK_ABSORBED | 10b5-1 Trading Window | Initial 180-day IPO/deSPAC lock-up expirations and early spo... | MODERATE Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

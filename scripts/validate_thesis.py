@@ -84,7 +84,15 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
         if len(cap_section) < 40:
             errors.append("Capital Needs & Strategy section is too brief")
 
-    # 8. Invalidation Criteria
+    # 8. Stock-Based Compensation & Lock-Up Dynamics
+    if "## Stock-Based Compensation" not in content and "## Stock-Based Compensation & Lock-Up Dynamics" not in content:
+        errors.append("Missing section '## Stock-Based Compensation & Lock-Up Dynamics'")
+    else:
+        sbc_section = content.split("## Stock-Based Compensation")[1].split("##")[0].strip()
+        if len(sbc_section) < 40:
+            errors.append("Stock-Based Compensation & Lock-Up Dynamics section is too brief")
+
+    # 9. Invalidation Criteria
     if "## Explicit Invalidation Criteria" not in content:
         errors.append("Missing section '## Explicit Invalidation Criteria (Exit Triggers)'")
 

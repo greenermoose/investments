@@ -317,6 +317,7 @@ for filename in sorted(all_files):
         "competitive_moat_analysis": val_model.get("competitive_moat_analysis"),
         "capital_needs_and_strategy": val_model.get("capital_needs_and_strategy"),
         "share_dilution_or_buyback": val_model.get("share_dilution_or_buyback"),
+        "stock_based_compensation": val_model.get("stock_based_compensation"),
         "catalyst_timeline": val_model.get("catalyst_timeline"),
         "indices": indices,
         "is_index_member": is_index_member,

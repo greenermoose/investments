@@ -41,6 +41,16 @@ Management operates under a balanced capital preservation and operational turnar
 | Capital Needs & Runway | CAPEX_AND_RD | ~$4.20 B / yr CapEx | 24 Months Runway | 100% funded via operational turnaround cash flow inflection and credit facilities. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Unqualified clean audit opinion. Ample liquidity buffer protects operational continuity. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+The Boeing Company utilizes equity incentives primarily for senior leadership, executive retention, and engineering milestone alignment, incurring an estimated annual SBC run-rate of $0.62B (~0.8% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. While share repurchases remain temporarily paused to prioritize cash preservation, net annual share dilution is modest (+0.5%/yr), creating minimal dilution drag on per-share intrinsic value. Regarding lock-up dynamics, all initial offering and merger lock-ups are fully expired. Insider transactions operate under Rule 10b5-1 predetermined trading plans with open windows commencing 2 business days following quarterly earnings releases. Downward price pressure risk from equity vesting is LOW.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~0.8% of TTM Revenue | $0.62 B / yr | PARTIAL_OFFSET | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: +0.5% / yr | SBC_NEUTRAL | Manageable Dilution |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | Pre-scheduled executive disposition plans active | LOW Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & LTIP Performance Shares | Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Permanent grounding or regulatory certification cancellation of the 737 MAX or 777X program by FAA/EASA.

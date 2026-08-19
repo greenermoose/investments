@@ -325,6 +325,70 @@
         }
       }
     },
+    "stock_based_compensation": {
+      "type": "object",
+      "description": "Stock-based compensation (SBC), equity grant dilution, lock-up periods, and supply overhang risk assessment.",
+      "required": [
+        "sbc_annual_expense_usd_b",
+        "sbc_pct_of_revenue",
+        "gross_annual_dilution_pct",
+        "net_dilution_rate_pct",
+        "buyback_offset_status",
+        "lock_up_status",
+        "lock_up_details",
+        "vesting_schedule_structure",
+        "downward_price_pressure_risk",
+        "narrative"
+      ],
+      "properties": {
+        "sbc_annual_expense_usd_b": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Estimated annual stock-based compensation expense run-rate in billions of USD."
+        },
+        "sbc_pct_of_revenue": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Stock-based compensation expense as a percentage of trailing twelve month revenue."
+        },
+        "gross_annual_dilution_pct": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Gross annual share issuance rate from equity awards prior to buybacks."
+        },
+        "net_dilution_rate_pct": {
+          "type": "number",
+          "description": "Net annual change in diluted shares outstanding accounting for buybacks."
+        },
+        "buyback_offset_status": {
+          "type": "string",
+          "enum": ["FULL_OFFSET_ACCRETIVE", "NEUTRAL_OFFSET", "PARTIAL_OFFSET", "UNOFFSET_DILUTIVE"],
+          "description": "Classification of corporate repurchase capacity relative to annual equity compensation dilution."
+        },
+        "lock_up_status": {
+          "type": "string",
+          "enum": ["EXPIRED_STANDARD_TRADING_WINDOWS", "RECENT_UNLOCK_ABSORBED", "ACTIVE_LOCKUP_MONITORED", "EXECUTIVE_VESTING_CLIFF_SCHEDULED"],
+          "description": "Status of IPO/merger lockup restrictions and trading window policies."
+        },
+        "lock_up_details": {
+          "type": "string",
+          "description": "Granular description of lock-up expiration timing, 10b5-1 executive disposition plans, and post-earnings trading windows."
+        },
+        "vesting_schedule_structure": {
+          "type": "string",
+          "description": "Standard equity incentive vesting architecture (e.g. 4-year graded vesting, 3-year performance PSUs)."
+        },
+        "downward_price_pressure_risk": {
+          "type": "string",
+          "enum": ["LOW", "MODERATE", "HIGH"],
+          "description": "Supply overhang risk rating evaluating whether impending unlocks, tax sell-to-cover, or heavy dilution depress market share price."
+        },
+        "narrative": {
+          "type": "string",
+          "description": "Comprehensive qualitative analysis of stock compensation, dilution effects, lock-up dynamics, and thesis impact."
+        }
+      }
+    },
     "revenue_drivers_narrative": {
       "type": "string",
       "description": "Detailed narrative explaining WHY the projected 13-quarter revenue path will materialize (growth vectors, product roadmap, enterprise/consumer adoption, market share, TAM expansion, pricing power)."

@@ -38,6 +38,16 @@ CRISPR Therapeutics AG operates under a sbc dilutive capital strategy. The compa
 | Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$0.05 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+CRISPR Therapeutics AG utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.02B (~22.0% of TTM revenue). Gross annual equity grant issuance is estimated at +4.0% per year. No active buyback offset; employee equity compensation expands share count at +3.0%/yr, creating structural dilution. Regarding lock-up dynamics, All initial offering lock-up periods are fully expired. Company maintains standard quarterly insider trading blackout periods, with open trading windows activating 48 hours following quarterly Form 10-Q/10-K filings under Rule 10b5-1 executive disposition plans. Elevated stock compensation and unoffset share issuance create meaningful downward price pressure and per-share dilution drag (~3.0%/yr), requiring strict valuation discipline and tactical entry timing on post-vesting pullbacks.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~22.0% of TTM Revenue | $0.02 B / yr | UNOFFSET_DILUTIVE | Risk: HIGH |
+| Gross vs Net Dilution Rate | Gross: +4.0% / yr | Net: +3.0% / yr | CAPITAL_RAISE_RISK | Dilution Drag |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial offering lock-up periods are fully expired. Comp... | HIGH Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting with clinical development milestone-based stock option allocations | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

@@ -38,6 +38,16 @@ AppLovin Corporation operates under a reinvestment for growth capital strategy. 
 | Capital Needs & Runway | CAPEX_AND_RD | ~$0.28 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+AppLovin Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.71B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +2.2% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.0%/yr. Regarding lock-up dynamics, Initial 180-day IPO/deSPAC lock-up expirations and early sponsor restrictions have expired. Secondary float volume has stabilized into standard exchange trading channels. Insider dispositions remain subject to quarterly Form 4 reporting. Stock-based compensation is immaterial to total return, with negligible dilution risk or supply overhang.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~12.5% of TTM Revenue | $0.71 B / yr | PARTIAL_OFFSET | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +2.2% / yr | Net: +1.0% / yr | SBC_DILUTIVE | Dilution Drag |
+| Lock-Up & Window Status | RECENT_UNLOCK_ABSORBED | 10b5-1 Trading Window | Initial 180-day IPO/deSPAC lock-up expirations and early spo... | LOW Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $85.0B addressable market.

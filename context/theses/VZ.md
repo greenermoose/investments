@@ -38,6 +38,16 @@ Verizon Communications Inc. operates under a balanced capital return capital str
 | Capital Needs & Runway | CAPEX_AND_RD | ~$6.81 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+Verizon Communications Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $8.86B (~6.5% of TTM revenue). Gross annual equity grant issuance is estimated at +0.8% per year. Share repurchases actively absorb gross equity grant dilution, maintaining a stable share count. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Stock-based compensation is immaterial to total return, with negligible dilution risk or supply overhang.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~6.5% of TTM Revenue | $8.86 B / yr | NEUTRAL_OFFSET | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.8% / yr | Net: +0.0% / yr | SBC_DILUTIVE | Dilution Drag |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $650.0B addressable market.

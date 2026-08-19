@@ -38,6 +38,16 @@ DoorDash, Inc. operates under a reinvestment for growth capital strategy. The co
 | Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$0.55 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+DoorDash, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.62B (~4.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.2% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.0%/yr. Regarding lock-up dynamics, Executive leadership and key engineering equity compensation packages include multi-year performance milestone vesting tranches. Quarterly tax-withholding 'sell-to-cover' executions occur during open trading windows 2 to 3 trading days post-earnings. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~4.5% of TTM Revenue | $0.62 B / yr | PARTIAL_OFFSET | Risk: MODERATE |
+| Gross vs Net Dilution Rate | Gross: +1.2% / yr | Net: +1.0% / yr | SBC_DILUTIVE | Dilution Drag |
+| Lock-Up & Window Status | EXECUTIVE_VESTING_CLIFF_SCHEDULED | 10b5-1 Trading Window | Executive leadership and key engineering equity compensation... | MODERATE Overhang Risk |
+| Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $900.0B addressable market.

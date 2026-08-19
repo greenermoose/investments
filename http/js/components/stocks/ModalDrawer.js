@@ -197,6 +197,65 @@ export function openCompanyModal(company) {
     capNarrativeEl.textContent = capInfo.narrative || company.share_dilution_or_buyback?.narrative || 'Management capital allocation and balance sheet strategy under ongoing evaluation.';
   }
 
+  // Stock-Based Compensation & Lock-Up Dynamics
+  const sbcInfo = company.stock_based_compensation || {};
+  const sbcRiskBadgeEl = document.getElementById('modal-sbc-risk-badge');
+  const sbcExpenseEl = document.getElementById('modal-sbc-expense');
+  const sbcGrossEl = document.getElementById('modal-sbc-gross-dilution');
+  const sbcNetEl = document.getElementById('modal-sbc-net-dilution');
+  const sbcOffsetEl = document.getElementById('modal-sbc-offset-status');
+  const sbcLockupStatusEl = document.getElementById('modal-sbc-lockup-status');
+  const sbcVestingEl = document.getElementById('modal-sbc-vesting-schedule');
+  const sbcLockupDetailsEl = document.getElementById('modal-sbc-lockup-details');
+  const sbcNarrativeEl = document.getElementById('modal-sbc-narrative');
+
+  const sbcRisk = sbcInfo.downward_price_pressure_risk || 'LOW';
+  if (sbcRiskBadgeEl) {
+    sbcRiskBadgeEl.textContent = `${sbcRisk} OVERHANG RISK`;
+    sbcRiskBadgeEl.className = 'badge-status ' + (sbcRisk === 'LOW' ? 'buy' : (sbcRisk === 'MODERATE' ? 'hold' : 'avoid'));
+  }
+
+  if (sbcExpenseEl) {
+    const sbcB = sbcInfo.sbc_annual_expense_usd_b !== undefined ? sbcInfo.sbc_annual_expense_usd_b : 0;
+    const sbcPct = sbcInfo.sbc_pct_of_revenue !== undefined ? sbcInfo.sbc_pct_of_revenue : 0;
+    sbcExpenseEl.textContent = `$${sbcB.toFixed(2)}B (${sbcPct.toFixed(1)}% of Rev)`;
+  }
+
+  if (sbcGrossEl) {
+    const grossDil = sbcInfo.gross_annual_dilution_pct !== undefined ? sbcInfo.gross_annual_dilution_pct : 1.0;
+    sbcGrossEl.textContent = `+${grossDil.toFixed(1)}%/yr`;
+  }
+
+  if (sbcNetEl) {
+    const netDil = sbcInfo.net_dilution_rate_pct !== undefined ? sbcInfo.net_dilution_rate_pct : (company.share_dilution_or_buyback?.net_annual_share_change_pct || 0);
+    sbcNetEl.textContent = `${netDil >= 0 ? '+' : ''}${netDil.toFixed(1)}%/yr`;
+    sbcNetEl.style.color = netDil <= 0 ? '#10b981' : (netDil > 2.0 ? '#f43f5e' : '#f59e0b');
+  }
+
+  if (sbcOffsetEl) {
+    const offsetKey = sbcInfo.buyback_offset_status || (company.share_dilution_or_buyback?.buyback_program_active ? 'FULL_OFFSET_ACCRETIVE' : 'UNOFFSET_DILUTIVE');
+    sbcOffsetEl.textContent = offsetKey.replace(/_/g, ' ');
+    sbcOffsetEl.style.color = offsetKey.includes('ACCRETIVE') || offsetKey.includes('NEUTRAL') ? '#10b981' : (offsetKey.includes('DILUTIVE') ? '#f43f5e' : '#f59e0b');
+  }
+
+  if (sbcLockupStatusEl) {
+    const lockKey = sbcInfo.lock_up_status || 'EXPIRED_STANDARD_TRADING_WINDOWS';
+    sbcLockupStatusEl.textContent = lockKey.replace(/_/g, ' ');
+  }
+
+  if (sbcVestingEl) {
+    sbcVestingEl.textContent = sbcInfo.vesting_schedule_structure ? sbcInfo.vesting_schedule_structure.split('+')[0].trim() : '4-Year Graded Vesting';
+    sbcVestingEl.title = sbcInfo.vesting_schedule_structure || '';
+  }
+
+  if (sbcLockupDetailsEl) {
+    sbcLockupDetailsEl.textContent = sbcInfo.lock_up_details || 'Standard quarterly 10b5-1 insider trading windows activate following Form 10-Q/10-K filings.';
+  }
+
+  if (sbcNarrativeEl) {
+    sbcNarrativeEl.textContent = sbcInfo.narrative || 'Stock-based compensation and lock-up schedule under active fundamental surveillance.';
+  }
+
   // Invalidation Criteria
   if (invalidationEl) {
     if (Array.isArray(company.invalidation_criteria)) {

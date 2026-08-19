@@ -38,6 +38,16 @@ ESS Tech, Inc. operates under a aggressive shareholder return capital strategy. 
 | Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$0.20 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
+## Stock-Based Compensation & Lock-Up Dynamics
+ESS Tech, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.02B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.5%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, Initial 180-day IPO/deSPAC lock-up expirations and early sponsor restrictions have expired. Secondary float volume has stabilized into standard exchange trading channels. Insider dispositions remain subject to quarterly Form 4 reporting. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+
+| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
+| :--- | :--- | :--- | :--- | :--- |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.02 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -1.5% / yr | AGGRESSIVE_BUYBACKS | Accretive Repurchases |
+| Lock-Up & Window Status | RECENT_UNLOCK_ABSORBED | 10b5-1 Trading Window | Initial 180-day IPO/deSPAC lock-up expirations and early spo... | LOW Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

@@ -91,12 +91,37 @@ export function render52WeekBar(low, high, current) {
   const currentPct = Math.max(0, Math.min(100, (current / high) * 100));
   const fillLeft = Math.min(lowPct, currentPct);
   const fillWidth = Math.max(0, Math.abs(currentPct - lowPct));
+
+  // Determine positions for low, current, and high labels to avoid overlap.
+  // minGap is the minimum percentage distance between label anchor points.
+  // High label is pinned to the right edge (100%).
+  const minGap = 18;
+  const minLeft = 8;
+  const maxCur = 100 - minGap;
+
+  let posCur = Math.min(Math.max(currentPct, minLeft + minGap), maxCur);
+  let posLow = Math.min(lowPct, posCur - minGap);
+
+  if (posLow < minLeft) {
+    posLow = minLeft;
+    if (posCur < posLow + minGap) {
+      posCur = posLow + minGap;
+    }
+  }
+
+  if (posCur > maxCur) {
+    posCur = maxCur;
+    if (posLow > posCur - minGap) {
+      posLow = posCur - minGap;
+    }
+  }
+
   return `
     <div class="range-52w-bar" title="52-Week Range: $${low.toFixed(2)} - $${high.toFixed(2)} | Current: $${current.toFixed(2)}">
       <div class="range-52w-labels">
-        <span>$0</span>
-        <span>52W Range</span>
-        <span>$${high.toFixed(2)}</span>
+        <span class="range-52w-label-low" style="left: ${posLow.toFixed(1)}%;">$${low.toFixed(2)}</span>
+        <span class="range-52w-label-cur" style="left: ${posCur.toFixed(1)}%;">$${current.toFixed(2)}</span>
+        <span class="range-52w-label-high">$${high.toFixed(2)}</span>
       </div>
       <div class="range-52w-track">
         <div class="range-52w-fill" style="left: ${fillLeft.toFixed(1)}%; width: ${fillWidth.toFixed(1)}%;"></div>

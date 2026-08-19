@@ -1281,10 +1281,34 @@ pre code {
 }
 
 .range-52w-labels {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  height: 14px;
   font-size: 0.7rem;
+  line-height: 14px;
   color: var(--text-muted);
+}
+
+.range-52w-label-low {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: var(--text-muted);
+}
+
+.range-52w-label-cur {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.range-52w-label-high {
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  color: var(--text-muted);
+  text-align: right;
 }
 
 

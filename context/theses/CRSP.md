@@ -4,9 +4,9 @@
 - **Ticker:** CRSP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $54.28 per share
-- **Current Price:** $54.28 per share
-- **Target Exit Price:** $27.14 per share
+- **Benchmark Entry Price:** $56.65 per share
+- **Current Price:** $56.65 per share
+- **Target Exit Price:** $28.32 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 6.0 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1674416
 
 ## Business Profile
-CRISPR Therapeutics AG (CRSP) operates as an established participant within the Health Care sector (Gene Editing Therapeutics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRSP trades at $54.28 against a 3-year baseline price target of $27.14, generating a modeled annualized ROI of -20.6% under our disciplined 20-year hurdle standard.
+CRISPR Therapeutics AG (CRSP) operates as an established participant within the Health Care sector (Gene Editing Therapeutics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRSP trades at $56.65 against a 3-year baseline price target of $28.32, generating a modeled annualized ROI of -20.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 CRISPR Therapeutics AG addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 CRISPR Therapeutics AG's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CRSP currently trades at a Price-to-Sales (P/S) multiple of ~1275.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~893.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -20.6%, fully justifying our AVOID rating.
+CRSP currently trades at a Price-to-Sales (P/S) multiple of ~1331.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~931.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -20.6%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.00 B | +15.0% | 0.096 B | 1275.64x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.00 B | +15.0% | 0.097 B | 1243.75x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.00 B | +15.0% | 0.098 B | 1211.86x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.00 B | +15.0% | 0.099 B | 1179.97x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.00 B | +15.0% | 0.099 B | 1148.08x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.00 B | +15.0% | 0.100 B | 1116.19x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.00 B | +15.0% | 0.101 B | 1084.30x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.00 B | +15.0% | 0.102 B | 1052.41x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.00 B | +15.0% | 0.102 B | 1020.51x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.00 B | +15.0% | 0.103 B | 988.62x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.00 B | +15.0% | 0.104 B | 956.73x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.00 B | +15.0% | 0.105 B | 924.84x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.00 B | +15.0% | 0.105 B | 892.95x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.00 B | +15.0% | 0.096 B | 1331.34x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.00 B | +15.0% | 0.097 B | 1298.06x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.00 B | +15.0% | 0.098 B | 1264.77x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.00 B | +15.0% | 0.099 B | 1231.49x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.00 B | +15.0% | 0.099 B | 1198.21x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.00 B | +15.0% | 0.100 B | 1164.92x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.00 B | +15.0% | 0.101 B | 1131.64x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.00 B | +15.0% | 0.102 B | 1098.36x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.00 B | +15.0% | 0.102 B | 1065.07x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.00 B | +15.0% | 0.103 B | 1031.79x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.00 B | +15.0% | 0.104 B | 998.51x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.00 B | +15.0% | 0.105 B | 965.22x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.00 B | +15.0% | 0.105 B | 931.94x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CRSP currently trades at a Price-to-Sales (P/S) multiple of ~1275.6x on trailing
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $21.71 | $27.14 | $32.57 | 1250.1x | -93.8% |
-| 52 Weeks (1Y) | $21.71 | $27.14 | $32.57 | 1149.3x | -50.0% |
-| 104 Weeks (2Y) | $21.71 | $27.14 | $32.57 | 1019.2x | -29.3% |
-| 156 Weeks (3Y) | $21.71 | $27.14 | $32.57 | 893.0x | -20.6% |
+| 13 Weeks | $22.66 | $28.32 | $33.98 | 1304.7x | -93.8% |
+| 52 Weeks (1Y) | $22.66 | $28.32 | $33.98 | 1199.5x | -50.0% |
+| 104 Weeks (2Y) | $22.66 | $28.32 | $33.98 | 1063.7x | -29.3% |
+| 156 Weeks (3Y) | $22.66 | $28.32 | $33.98 | 931.9x | -20.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CRSP currently trades at a Price-to-Sales (P/S) multiple of ~1275.6x on trailing
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($54.28) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($56.65) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** LIN
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $474.33 per share
-- **Current Price:** $474.33 per share
-- **Target Exit Price:** $494.68 per share
+- **Benchmark Entry Price:** $481.71 per share
+- **Current Price:** $481.71 per share
+- **Target Exit Price:** $502.37 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.4 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1707925
 
 ## Business Profile
-Linde plc (LIN) operates as an established participant within the Materials sector (Industrial Gases). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LIN trades at $474.33 against a 3-year baseline price target of $494.68, generating a modeled annualized ROI of 1.4% under our disciplined 20-year hurdle standard.
+Linde plc (LIN) operates as an established participant within the Materials sector (Industrial Gases). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, LIN trades at $481.71 against a 3-year baseline price target of $502.37, generating a modeled annualized ROI of 1.4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Linde plc addresses an estimated Total Addressable Market (TAM) of $400.0B across its primary Materials domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 8.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Linde plc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Materials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.4%, fully justifying our SELL rating.
+LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.59 B | -3.6% | 0.461 B | 6.43x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.11 B | +16.2% | 0.460 B | 6.38x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.26 B | +0.1% | 0.459 B | 6.32x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.63 B | -0.5% | 0.458 B | 6.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.00 B | +4.8% | 0.456 B | 6.22x | Materials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $9.57 B | +5.0% | 0.455 B | 6.16x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $8.70 B | +5.3% | 0.454 B | 6.11x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $9.08 B | +5.2% | 0.453 B | 6.06x | Materials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $9.43 B | +4.8% | 0.452 B | 6.00x | Materials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $9.98 B | +4.2% | 0.451 B | 5.95x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $9.04 B | +3.9% | 0.450 B | 5.90x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $9.40 B | +3.6% | 0.448 B | 5.84x | Materials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $9.77 B | +3.6% | 0.447 B | 5.79x | Materials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $8.59 B | -3.6% | 0.461 B | 6.53x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.11 B | +16.2% | 0.460 B | 6.48x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.26 B | +0.1% | 0.459 B | 6.42x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.63 B | -0.5% | 0.458 B | 6.37x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.00 B | +4.8% | 0.456 B | 6.31x | Materials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $9.57 B | +5.0% | 0.455 B | 6.26x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $8.70 B | +5.3% | 0.454 B | 6.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $9.08 B | +5.2% | 0.453 B | 6.15x | Materials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $9.43 B | +4.8% | 0.452 B | 6.10x | Materials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $9.98 B | +4.2% | 0.451 B | 6.04x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $9.04 B | +3.9% | 0.450 B | 5.99x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $9.40 B | +3.6% | 0.448 B | 5.93x | Materials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $9.77 B | +3.6% | 0.447 B | 5.88x | Materials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $399.26 | $499.07 | $598.88 | 6.3x | +22.6% |
-| 52 Weeks (1Y) | $381.93 | $477.41 | $572.89 | 6.2x | +0.6% |
-| 104 Weeks (2Y) | $390.58 | $488.23 | $585.88 | 6.0x | +1.5% |
-| 156 Weeks (3Y) | $395.74 | $494.68 | $593.62 | 5.8x | +1.4% |
+| 13 Weeks | $405.59 | $506.99 | $608.39 | 6.4x | +22.7% |
+| 52 Weeks (1Y) | $388.07 | $485.09 | $582.11 | 6.3x | +0.7% |
+| 104 Weeks (2Y) | $396.44 | $495.55 | $594.66 | 6.1x | +1.4% |
+| 156 Weeks (3Y) | $401.90 | $502.37 | $602.84 | 5.9x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ LIN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($474.33) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($481.71) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** MELI
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $1787.57 per share
-- **Current Price:** $1787.57 per share
-- **Target Exit Price:** $3245.18 per share
+- **Benchmark Entry Price:** $1819.43 per share
+- **Current Price:** $1819.43 per share
+- **Target Exit Price:** $3301.52 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.4 / 10.0
 - **Rating:** BUY
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1099590
 
 ## Business Profile
-MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MELI trades at $1787.57 against a 3-year baseline price target of $3245.18, generating a modeled annualized ROI of 22.0% under our disciplined 20-year hurdle standard.
+MercadoLibre, Inc. (MELI) operates as an established participant within the Consumer Discretionary sector (E-Commerce & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MELI trades at $1819.43 against a 3-year baseline price target of $3301.52, generating a modeled annualized ROI of 22.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 MercadoLibre, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 3.2% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +26.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.0%, fully justifying our BUY rating.
+MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.0%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.32 B | +11.2% | 0.051 B | 3.13x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $8.19 B | +35.0% | 0.051 B | 3.11x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $7.89 B | +17.7% | 0.051 B | 3.09x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.80 B | +19.1% | 0.051 B | 3.07x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.72 B | +32.8% | 0.050 B | 3.04x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.99 B | +34.2% | 0.050 B | 3.02x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $10.66 B | +35.2% | 0.050 B | 3.00x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $11.68 B | +32.8% | 0.050 B | 2.98x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $12.59 B | +29.5% | 0.050 B | 2.96x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $13.79 B | +25.5% | 0.050 B | 2.94x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $13.12 B | +23.0% | 0.050 B | 2.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $14.16 B | +21.2% | 0.050 B | 2.90x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $15.27 B | +21.3% | 0.050 B | 2.88x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.32 B | +11.2% | 0.051 B | 3.18x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.19 B | +35.0% | 0.051 B | 3.16x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $7.89 B | +17.7% | 0.051 B | 3.14x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.80 B | +19.1% | 0.051 B | 3.12x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.72 B | +32.8% | 0.050 B | 3.10x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.99 B | +34.2% | 0.050 B | 3.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.66 B | +35.2% | 0.050 B | 3.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $11.68 B | +32.8% | 0.050 B | 3.04x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.59 B | +29.5% | 0.050 B | 3.01x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.79 B | +25.5% | 0.050 B | 2.99x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.12 B | +23.0% | 0.050 B | 2.97x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $14.16 B | +21.2% | 0.050 B | 2.95x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $15.27 B | +21.3% | 0.050 B | 2.93x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1572.48 | $1965.60 | $2358.72 | 3.1x | +46.2% |
-| 52 Weeks (1Y) | $1688.48 | $2110.60 | $2532.72 | 3.0x | +18.1% |
-| 104 Weeks (2Y) | $2174.77 | $2718.46 | $3262.15 | 3.0x | +23.3% |
-| 156 Weeks (3Y) | $2596.14 | $3245.18 | $3894.22 | 2.9x | +22.0% |
+| 13 Weeks | $1603.31 | $2004.14 | $2404.97 | 3.1x | +47.2% |
+| 52 Weeks (1Y) | $1716.16 | $2145.20 | $2574.24 | 3.1x | +17.9% |
+| 104 Weeks (2Y) | $2211.50 | $2764.38 | $3317.26 | 3.0x | +23.3% |
+| 156 Weeks (3Y) | $2641.22 | $3301.52 | $3961.82 | 2.9x | +22.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($1787.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($1819.43) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

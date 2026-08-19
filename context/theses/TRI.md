@@ -4,9 +4,9 @@
 - **Ticker:** TRI
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $99.06 per share
-- **Current Price:** $99.06 per share
-- **Target Exit Price:** $111.56 per share
+- **Benchmark Entry Price:** $104.23 per share
+- **Current Price:** $104.23 per share
+- **Target Exit Price:** $117.21 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075124
 
 ## Business Profile
-Thomson Reuters Corporation (TRI) operates as an established participant within the Industrials sector (Legal, Tax & Accounting Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRI trades at $99.06 against a 3-year baseline price target of $111.56, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Thomson Reuters Corporation (TRI) operates as an established participant within the Industrials sector (Legal, Tax & Accounting Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRI trades at $104.23 against a 3-year baseline price target of $117.21, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Thomson Reuters Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Thomson Reuters Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
+TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.89 B | -2.2% | 0.486 B | 6.44x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.01 B | +17.7% | 0.485 B | 6.40x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.83 B | +1.3% | 0.484 B | 6.36x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.93 B | +0.9% | 0.482 B | 6.31x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.02 B | +7.0% | 0.481 B | 6.27x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.16 B | +7.7% | 0.480 B | 6.23x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.98 B | +8.3% | 0.479 B | 6.19x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.08 B | +7.8% | 0.478 B | 6.14x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.17 B | +7.4% | 0.476 B | 6.10x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.30 B | +6.6% | 0.475 B | 6.06x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.10 B | +6.0% | 0.474 B | 6.02x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.19 B | +5.3% | 0.473 B | 5.97x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.29 B | +5.3% | 0.472 B | 5.93x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.89 B | -2.2% | 0.486 B | 6.78x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.01 B | +17.7% | 0.485 B | 6.73x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.83 B | +1.3% | 0.484 B | 6.69x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.93 B | +0.9% | 0.482 B | 6.64x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.02 B | +7.0% | 0.481 B | 6.59x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.16 B | +7.7% | 0.480 B | 6.55x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.98 B | +8.3% | 0.479 B | 6.50x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.08 B | +7.8% | 0.478 B | 6.46x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.17 B | +7.4% | 0.476 B | 6.41x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.30 B | +6.6% | 0.475 B | 6.37x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.10 B | +6.0% | 0.474 B | 6.32x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.19 B | +5.3% | 0.473 B | 6.28x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.29 B | +5.3% | 0.472 B | 6.23x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $83.68 | $104.60 | $125.52 | 6.3x | +24.3% |
-| 52 Weeks (1Y) | $81.24 | $101.55 | $121.86 | 6.3x | +2.5% |
-| 104 Weeks (2Y) | $86.02 | $107.52 | $129.02 | 6.1x | +4.2% |
-| 156 Weeks (3Y) | $89.25 | $111.56 | $133.87 | 5.9x | +4.0% |
+| 13 Weeks | $88.06 | $110.07 | $132.08 | 6.6x | +24.4% |
+| 52 Weeks (1Y) | $85.51 | $106.89 | $128.27 | 6.6x | +2.6% |
+| 104 Weeks (2Y) | $90.38 | $112.98 | $135.58 | 6.4x | +4.1% |
+| 156 Weeks (3Y) | $93.77 | $117.21 | $140.65 | 6.2x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($99.06) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($104.23) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

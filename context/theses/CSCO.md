@@ -4,9 +4,9 @@
 - **Ticker:** CSCO
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $112.90 per share
-- **Current Price:** $112.90 per share
-- **Target Exit Price:** $115.91 per share
+- **Benchmark Entry Price:** $111.16 per share
+- **Current Price:** $111.16 per share
+- **Target Exit Price:** $114.27 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=858877
 
 ## Business Profile
-Cisco Systems, Inc. (CSCO) operates as an established participant within the Information Technology sector (Communications Equipment & Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSCO trades at $112.90 against a 3-year baseline price target of $115.91, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
+Cisco Systems, Inc. (CSCO) operates as an established participant within the Information Technology sector (Communications Equipment & Security). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CSCO trades at $111.16 against a 3-year baseline price target of $114.27, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Cisco Systems, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 4.7% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Cisco Systems, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.9%, fully justifying our SELL rating.
+CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $14.31 B | -4.4% | 3.950 B | 7.87x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $15.13 B | +15.3% | 3.935 B | 7.81x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $13.68 B | -0.7% | 3.920 B | 7.74x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $14.25 B | -1.4% | 3.905 B | 7.67x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $14.81 B | +3.5% | 3.891 B | 7.61x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $15.70 B | +3.8% | 3.876 B | 7.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $14.22 B | +4.0% | 3.861 B | 7.48x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $14.80 B | +3.8% | 3.847 B | 7.41x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $15.35 B | +3.6% | 3.832 B | 7.34x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $16.20 B | +3.2% | 3.818 B | 7.28x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $14.64 B | +3.0% | 3.803 B | 7.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $15.20 B | +2.7% | 3.789 B | 7.15x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $15.76 B | +2.7% | 3.775 B | 7.08x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $14.31 B | -4.4% | 3.950 B | 7.75x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $15.13 B | +15.3% | 3.935 B | 7.69x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $13.68 B | -0.7% | 3.920 B | 7.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $14.25 B | -1.4% | 3.905 B | 7.56x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $14.81 B | +3.5% | 3.891 B | 7.49x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $15.70 B | +3.8% | 3.876 B | 7.43x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $14.22 B | +4.0% | 3.861 B | 7.37x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $14.80 B | +3.8% | 3.847 B | 7.30x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $15.35 B | +3.6% | 3.832 B | 7.24x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $16.20 B | +3.2% | 3.818 B | 7.17x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $14.64 B | +3.0% | 3.803 B | 7.11x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $15.20 B | +2.7% | 3.789 B | 7.04x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $15.76 B | +2.7% | 3.775 B | 6.98x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $94.86 | $118.58 | $142.30 | 7.7x | +21.7% |
-| 52 Weeks (1Y) | $90.54 | $113.18 | $135.82 | 7.6x | +0.2% |
-| 104 Weeks (2Y) | $92.05 | $115.06 | $138.07 | 7.3x | +1.0% |
-| 156 Weeks (3Y) | $92.73 | $115.91 | $139.09 | 7.1x | +0.9% |
+| 13 Weeks | $93.51 | $116.89 | $140.27 | 7.6x | +22.3% |
+| 52 Weeks (1Y) | $89.24 | $111.55 | $133.86 | 7.5x | +0.4% |
+| 104 Weeks (2Y) | $90.67 | $113.34 | $136.01 | 7.2x | +1.0% |
+| 156 Weeks (3Y) | $91.42 | $114.27 | $137.12 | 7.0x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CSCO currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($112.90) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($111.16) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

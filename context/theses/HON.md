@@ -4,9 +4,9 @@
 - **Ticker:** HON
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $229.45 per share
-- **Current Price:** $229.45 per share
-- **Target Exit Price:** $263.58 per share
+- **Benchmark Entry Price:** $225.86 per share
+- **Current Price:** $225.86 per share
+- **Target Exit Price:** $259.04 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.3 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=773840
 
 ## Business Profile
-Honeywell International Inc. (HON) operates as an established participant within the Industrials sector (Industrial Conglomerate & Aerospace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HON trades at $229.45 against a 3-year baseline price target of $263.58, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
+Honeywell International Inc. (HON) operates as an established participant within the Industrials sector (Industrial Conglomerate & Aerospace). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, HON trades at $225.86 against a 3-year baseline price target of $259.04, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Honeywell International Inc. addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 5.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $10.03 B | -3.0% | 0.317 B | 1.83x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $10.67 B | +17.1% | 0.316 B | 1.82x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.70 B | +0.9% | 0.315 B | 1.82x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $10.17 B | +0.4% | 0.313 B | 1.81x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $10.64 B | +6.1% | 0.312 B | 1.80x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $11.35 B | +6.4% | 0.311 B | 1.79x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $10.35 B | +6.7% | 0.310 B | 1.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $10.83 B | +6.5% | 0.309 B | 1.78x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $11.27 B | +6.0% | 0.308 B | 1.77x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $11.95 B | +5.3% | 0.306 B | 1.76x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $10.86 B | +4.9% | 0.305 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $11.31 B | +4.5% | 0.304 B | 1.75x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $11.78 B | +4.5% | 0.303 B | 1.74x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $10.03 B | -3.0% | 0.317 B | 1.80x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.67 B | +17.1% | 0.316 B | 1.79x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.70 B | +0.9% | 0.315 B | 1.79x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $10.17 B | +0.4% | 0.313 B | 1.78x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $10.64 B | +6.1% | 0.312 B | 1.77x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $11.35 B | +6.4% | 0.311 B | 1.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.35 B | +6.7% | 0.310 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $10.83 B | +6.5% | 0.309 B | 1.75x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $11.27 B | +6.0% | 0.308 B | 1.74x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $11.95 B | +5.3% | 0.306 B | 1.73x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $10.86 B | +4.9% | 0.305 B | 1.73x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $11.31 B | +4.5% | 0.304 B | 1.72x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $11.78 B | +4.5% | 0.303 B | 1.71x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $193.41 | $241.76 | $290.11 | 1.8x | +23.2% |
-| 52 Weeks (1Y) | $190.06 | $237.58 | $285.10 | 1.8x | +3.5% |
-| 104 Weeks (2Y) | $201.37 | $251.71 | $302.05 | 1.8x | +4.7% |
-| 156 Weeks (3Y) | $210.86 | $263.58 | $316.30 | 1.7x | +4.7% |
+| 13 Weeks | $191.25 | $239.06 | $286.87 | 1.8x | +25.5% |
+| 52 Weeks (1Y) | $186.90 | $233.62 | $280.34 | 1.8x | +3.4% |
+| 104 Weeks (2Y) | $197.95 | $247.44 | $296.93 | 1.7x | +4.7% |
+| 156 Weeks (3Y) | $207.23 | $259.04 | $310.85 | 1.7x | +4.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ HON currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($229.45) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($225.86) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

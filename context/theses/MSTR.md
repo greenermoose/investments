@@ -4,9 +4,9 @@
 - **Ticker:** MSTR
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $97.68 per share
-- **Current Price:** $97.68 per share
-- **Target Exit Price:** $89.69 per share
+- **Benchmark Entry Price:** $97.28 per share
+- **Current Price:** $97.28 per share
+- **Target Exit Price:** $89.33 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 6.5 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1050446
 
 ## Business Profile
-MicroStrategy Incorporated (MSTR) operates as an established participant within the Information Technology sector (Enterprise Analytics & Treasury Reserve Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MSTR trades at $97.68 against a 3-year baseline price target of $89.69, generating a modeled annualized ROI of -2.8% under our disciplined 20-year hurdle standard.
+MicroStrategy Incorporated (MSTR) operates as an established participant within the Information Technology sector (Enterprise Analytics & Treasury Reserve Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MSTR trades at $97.28 against a 3-year baseline price target of $89.33, generating a modeled annualized ROI of -2.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 MicroStrategy Incorporated addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 MicroStrategy Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MSTR currently trades at a Price-to-Sales (P/S) multiple of ~70.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~52.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -2.8%, fully justifying our AVOID rating.
+MSTR currently trades at a Price-to-Sales (P/S) multiple of ~69.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~52.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -2.8%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.12 B | +0.7% | 0.343 B | 70.07x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.13 B | +18.3% | 0.346 B | 68.61x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.12 B | +8.9% | 0.348 B | 67.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.13 B | +5.7% | 0.351 B | 65.69x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.13 B | +11.8% | 0.354 B | 64.23x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.14 B | +11.2% | 0.356 B | 62.77x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.13 B | +10.8% | 0.359 B | 61.31x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.14 B | +8.3% | 0.361 B | 59.85x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.15 B | +14.6% | 0.364 B | 58.39x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.16 B | +14.6% | 0.367 B | 56.93x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.15 B | +13.6% | 0.370 B | 55.47x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.16 B | +11.7% | 0.372 B | 54.01x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.17 B | +10.3% | 0.375 B | 52.55x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.12 B | +0.7% | 0.343 B | 69.78x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.13 B | +18.3% | 0.346 B | 68.33x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.12 B | +8.9% | 0.348 B | 66.87x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.13 B | +5.7% | 0.351 B | 65.42x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.13 B | +11.8% | 0.354 B | 63.97x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.14 B | +11.2% | 0.356 B | 62.51x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.13 B | +10.8% | 0.359 B | 61.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.14 B | +8.3% | 0.361 B | 59.61x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.15 B | +14.6% | 0.364 B | 58.15x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.16 B | +14.6% | 0.367 B | 56.70x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.15 B | +13.6% | 0.370 B | 55.25x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.16 B | +11.7% | 0.372 B | 53.79x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.17 B | +10.3% | 0.375 B | 52.34x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~70.1x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $82.56 | $103.20 | $123.84 | 68.7x | +24.6% |
-| 52 Weeks (1Y) | $74.10 | $92.62 | $111.14 | 64.3x | -5.2% |
-| 104 Weeks (2Y) | $71.79 | $89.74 | $107.69 | 58.3x | -4.2% |
-| 156 Weeks (3Y) | $71.75 | $89.69 | $107.63 | 52.5x | -2.8% |
+| 13 Weeks | $82.22 | $102.78 | $123.34 | 68.4x | +24.6% |
+| 52 Weeks (1Y) | $73.80 | $92.25 | $110.70 | 64.0x | -5.2% |
+| 104 Weeks (2Y) | $71.50 | $89.38 | $107.26 | 58.1x | -4.1% |
+| 156 Weeks (3Y) | $71.46 | $89.33 | $107.20 | 52.3x | -2.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~70.1x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($97.68) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($97.28) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

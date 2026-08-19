@@ -4,9 +4,9 @@
 - **Ticker:** NKE
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $39.09 per share
-- **Current Price:** $39.09 per share
-- **Target Exit Price:** $43.63 per share
+- **Benchmark Entry Price:** $40.88 per share
+- **Current Price:** $40.88 per share
+- **Target Exit Price:** $45.58 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.9 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=320187
 
 ## Business Profile
-NIKE, Inc. (NKE) operates as an established participant within the Consumer Discretionary sector (Athletic Footwear & Apparel). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NKE trades at $39.09 against a 3-year baseline price target of $43.63, generating a modeled annualized ROI of 3.7% under our disciplined 20-year hurdle standard.
+NIKE, Inc. (NKE) operates as an established participant within the Consumer Discretionary sector (Athletic Footwear & Apparel). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NKE trades at $40.88 against a 3-year baseline price target of $45.58, generating a modeled annualized ROI of 3.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 NIKE, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 5.2% market share. Over our 3-year investment horizon, we model market share evolving to 5.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 NIKE, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.7%, fully justifying our SELL rating.
+NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $11.72 B | -2.3% | 1.480 B | 1.25x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $12.49 B | +17.9% | 1.474 B | 1.24x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $11.39 B | +1.7% | 1.469 B | 1.23x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $11.98 B | +1.3% | 1.463 B | 1.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $12.56 B | +7.2% | 1.458 B | 1.20x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.44 B | +7.6% | 1.452 B | 1.19x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.30 B | +8.0% | 1.447 B | 1.18x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.90 B | +7.7% | 1.441 B | 1.17x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.46 B | +7.1% | 1.436 B | 1.16x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $14.29 B | +6.3% | 1.430 B | 1.15x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $13.02 B | +5.8% | 1.425 B | 1.14x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $13.59 B | +5.3% | 1.420 B | 1.13x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $14.18 B | +5.3% | 1.414 B | 1.12x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $11.72 B | -2.3% | 1.480 B | 1.30x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $12.49 B | +17.9% | 1.474 B | 1.29x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $11.39 B | +1.7% | 1.469 B | 1.28x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $11.98 B | +1.3% | 1.463 B | 1.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $12.56 B | +7.2% | 1.458 B | 1.26x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $13.44 B | +7.6% | 1.452 B | 1.25x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.30 B | +8.0% | 1.447 B | 1.24x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.90 B | +7.7% | 1.441 B | 1.23x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.46 B | +7.1% | 1.436 B | 1.21x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $14.29 B | +6.3% | 1.430 B | 1.20x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.02 B | +5.8% | 1.425 B | 1.19x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.59 B | +5.3% | 1.420 B | 1.18x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.18 B | +5.3% | 1.414 B | 1.17x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $33.08 | $41.35 | $49.62 | 1.2x | +25.2% |
-| 52 Weeks (1Y) | $31.88 | $39.85 | $47.82 | 1.2x | +1.9% |
-| 104 Weeks (2Y) | $33.67 | $42.09 | $50.51 | 1.2x | +3.8% |
-| 156 Weeks (3Y) | $34.90 | $43.63 | $52.36 | 1.1x | +3.7% |
+| 13 Weeks | $34.70 | $43.38 | $52.06 | 1.3x | +26.8% |
+| 52 Weeks (1Y) | $33.47 | $41.84 | $50.21 | 1.3x | +2.3% |
+| 104 Weeks (2Y) | $35.12 | $43.90 | $52.68 | 1.2x | +3.6% |
+| 156 Weeks (3Y) | $36.46 | $45.58 | $54.70 | 1.2x | +3.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($39.09) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($40.88) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

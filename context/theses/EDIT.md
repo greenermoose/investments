@@ -4,9 +4,9 @@
 - **Ticker:** EDIT
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $2.84 per share
-- **Current Price:** $2.84 per share
-- **Target Exit Price:** $3.56 per share
+- **Benchmark Entry Price:** $3.18 per share
+- **Current Price:** $3.18 per share
+- **Target Exit Price:** $3.99 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.5 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650664
 
 ## Business Profile
-Editas Medicine, Inc. (EDIT) operates as an established participant within the Health Care sector (Gene Editing Medicines). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EDIT trades at $2.84 against a 3-year baseline price target of $3.56, generating a modeled annualized ROI of 7.8% under our disciplined 20-year hurdle standard.
+Editas Medicine, Inc. (EDIT) operates as an established participant within the Health Care sector (Gene Editing Medicines). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EDIT trades at $3.18 against a 3-year baseline price target of $3.99, generating a modeled annualized ROI of 7.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Editas Medicine, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Editas Medicine, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.8%, fully justifying our AVOID rating.
+EDIT currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~10.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 7.9%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.00 B | +10.0% | 0.098 B | 14.94x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | +10.0% | 0.099 B | 14.51x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.00 B | +10.0% | 0.100 B | 14.07x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.00 B | +10.0% | 0.100 B | 13.63x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | +10.0% | 0.101 B | 13.20x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -44.9% | 0.102 B | 12.76x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | +10.0% | 0.103 B | 12.33x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | +10.0% | 0.104 B | 11.89x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -44.0% | 0.105 B | 11.45x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -39.9% | 0.106 B | 11.02x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -44.9% | 0.107 B | 10.58x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -41.9% | 0.108 B | 10.15x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -38.8% | 0.109 B | 9.71x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.00 B | +10.0% | 0.098 B | 16.73x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | +10.0% | 0.099 B | 16.24x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.00 B | +10.0% | 0.100 B | 15.75x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.00 B | +10.0% | 0.100 B | 15.26x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | +10.0% | 0.101 B | 14.78x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -44.9% | 0.102 B | 14.29x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | +10.0% | 0.103 B | 13.80x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | +10.0% | 0.104 B | 13.31x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -44.0% | 0.105 B | 12.82x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -39.9% | 0.106 B | 12.33x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -44.9% | 0.107 B | 11.85x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -41.9% | 0.108 B | 11.36x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -38.8% | 0.109 B | 10.87x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $4.74 | $5.92 | $7.10 | 14.6x | +1788.0% |
-| 52 Weeks (1Y) | $2.10 | $2.62 | $3.14 | 13.2x | -7.7% |
-| 104 Weeks (2Y) | $3.49 | $4.36 | $5.23 | 11.4x | +23.9% |
-| 156 Weeks (3Y) | $2.85 | $3.56 | $4.27 | 9.7x | +7.8% |
+| 13 Weeks | $5.30 | $6.63 | $7.96 | 16.4x | +1789.5% |
+| 52 Weeks (1Y) | $2.34 | $2.93 | $3.52 | 14.8x | -7.9% |
+| 104 Weeks (2Y) | $3.90 | $4.88 | $5.86 | 12.8x | +23.9% |
+| 156 Weeks (3Y) | $3.19 | $3.99 | $4.79 | 10.9x | +7.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ EDIT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($2.84) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($3.18) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

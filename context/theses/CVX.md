@@ -4,9 +4,9 @@
 - **Ticker:** CVX
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $202.70 per share
-- **Current Price:** $202.70 per share
-- **Target Exit Price:** $208.43 per share
+- **Benchmark Entry Price:** $207.04 per share
+- **Current Price:** $207.04 per share
+- **Target Exit Price:** $212.84 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=93410
 
 ## Business Profile
-Chevron Corporation (CVX) operates as an established participant within the Energy sector (Integrated Oil & Gas). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CVX trades at $202.70 against a 3-year baseline price target of $208.43, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
+Chevron Corporation (CVX) operates as an established participant within the Energy sector (Integrated Oil & Gas). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CVX trades at $207.04 against a 3-year baseline price target of $212.84, generating a modeled annualized ROI of 0.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Chevron Corporation addresses an estimated Total Addressable Market (TAM) of $800.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 23.8% market share. Over our 3-year investment horizon, we model market share evolving to 23.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $48.17 B | -4.4% | 1.976 B | 2.10x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $50.95 B | +15.4% | 1.968 B | 2.08x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $46.07 B | -0.7% | 1.961 B | 2.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $47.99 B | -1.4% | 1.954 B | 2.05x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $49.90 B | +3.6% | 1.946 B | 2.03x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $52.89 B | +3.8% | 1.939 B | 2.01x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $47.92 B | +4.0% | 1.931 B | 1.99x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $49.85 B | +3.9% | 1.924 B | 1.98x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $51.70 B | +3.6% | 1.917 B | 1.96x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $54.58 B | +3.2% | 1.910 B | 1.94x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $49.33 B | +2.9% | 1.903 B | 1.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $51.20 B | +2.7% | 1.895 B | 1.91x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $53.10 B | +2.7% | 1.888 B | 1.89x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $48.17 B | -4.4% | 1.976 B | 2.14x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $50.95 B | +15.4% | 1.968 B | 2.13x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $46.07 B | -0.7% | 1.961 B | 2.11x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $47.99 B | -1.4% | 1.954 B | 2.09x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $49.90 B | +3.6% | 1.946 B | 2.07x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $52.89 B | +3.8% | 1.939 B | 2.06x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $47.92 B | +4.0% | 1.931 B | 2.04x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $49.85 B | +3.9% | 1.924 B | 2.02x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $51.70 B | +3.6% | 1.917 B | 2.00x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $54.58 B | +3.2% | 1.910 B | 1.98x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $49.33 B | +2.9% | 1.903 B | 1.97x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $51.20 B | +2.7% | 1.895 B | 1.95x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $53.10 B | +2.7% | 1.888 B | 1.93x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $170.66 | $213.33 | $256.00 | 2.1x | +22.7% |
-| 52 Weeks (1Y) | $162.66 | $203.32 | $243.98 | 2.0x | +0.3% |
-| 104 Weeks (2Y) | $165.52 | $206.90 | $248.28 | 2.0x | +1.0% |
-| 156 Weeks (3Y) | $166.74 | $208.43 | $250.12 | 1.9x | +0.9% |
+| 13 Weeks | $173.98 | $217.47 | $260.96 | 2.1x | +21.7% |
+| 52 Weeks (1Y) | $165.86 | $207.33 | $248.80 | 2.1x | +0.1% |
+| 104 Weeks (2Y) | $168.90 | $211.12 | $253.34 | 2.0x | +1.0% |
+| 156 Weeks (3Y) | $170.27 | $212.84 | $255.41 | 1.9x | +0.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($202.70) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($207.04) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** INTC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $103.49 per share
-- **Current Price:** $103.49 per share
-- **Target Exit Price:** $75.43 per share
+- **Benchmark Entry Price:** $92.43 per share
+- **Current Price:** $92.43 per share
+- **Target Exit Price:** $67.31 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.0 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=50863
 
 ## Business Profile
-Intel Corporation (INTC) operates as an established participant within the Information Technology sector (Semiconductors & Foundry Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, INTC trades at $103.49 against a 3-year baseline price target of $75.43, generating a modeled annualized ROI of -10% under our disciplined 20-year hurdle standard.
+Intel Corporation (INTC) operates as an established participant within the Information Technology sector (Semiconductors & Foundry Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, INTC trades at $92.43 against a 3-year baseline price target of $67.31, generating a modeled annualized ROI of -10.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Intel Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 4.4% market share. Over our 3-year investment horizon, we model market share evolving to 3.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Intel Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of -2.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -10%, fully justifying our AVOID rating.
+INTC currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -10.0%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $13.32 B | -7.9% | 5.026 B | 9.86x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $13.92 B | +11.1% | 5.045 B | 9.70x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $12.41 B | -4.4% | 5.064 B | 9.53x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $12.75 B | -5.2% | 5.082 B | 9.37x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $13.08 B | -1.8% | 5.101 B | 9.20x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.66 B | -1.9% | 5.120 B | 9.04x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.19 B | -1.8% | 5.140 B | 8.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.51 B | -1.9% | 5.159 B | 8.71x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $12.84 B | -1.9% | 5.178 B | 8.55x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $13.41 B | -1.8% | 5.197 B | 8.38x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $11.96 B | -1.9% | 5.217 B | 8.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $12.28 B | -1.8% | 5.236 B | 8.05x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $12.60 B | -1.9% | 5.256 B | 7.89x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $13.32 B | -7.9% | 5.026 B | 8.81x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $13.92 B | +11.1% | 5.045 B | 8.66x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $12.41 B | -4.4% | 5.064 B | 8.51x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $12.75 B | -5.2% | 5.082 B | 8.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $13.08 B | -1.8% | 5.101 B | 8.22x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $13.66 B | -1.9% | 5.120 B | 8.07x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.19 B | -1.8% | 5.140 B | 7.92x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.51 B | -1.9% | 5.159 B | 7.78x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.84 B | -1.9% | 5.178 B | 7.63x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.41 B | -1.8% | 5.197 B | 7.48x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $11.96 B | -1.9% | 5.217 B | 7.33x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $12.28 B | -1.8% | 5.236 B | 7.19x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $12.60 B | -1.9% | 5.256 B | 7.04x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $85.29 | $106.61 | $127.93 | 9.7x | +12.6% |
-| 52 Weeks (1Y) | $75.34 | $94.18 | $113.02 | 9.2x | -9.0% |
-| 104 Weeks (2Y) | $67.55 | $84.44 | $101.33 | 8.5x | -9.7% |
-| 156 Weeks (3Y) | $60.34 | $75.43 | $90.52 | 7.9x | -10.0% |
+| 13 Weeks | $76.20 | $95.25 | $114.30 | 8.6x | +12.8% |
+| 52 Weeks (1Y) | $67.24 | $84.05 | $100.86 | 8.2x | -9.1% |
+| 104 Weeks (2Y) | $60.28 | $75.35 | $90.42 | 7.6x | -9.7% |
+| 156 Weeks (3Y) | $53.85 | $67.31 | $80.77 | 7.0x | -10.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($103.49) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($92.43) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

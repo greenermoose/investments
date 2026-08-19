@@ -4,9 +4,9 @@
 - **Ticker:** BRK-B
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $498.23 per share
-- **Current Price:** $498.23 per share
-- **Target Exit Price:** $613.17 per share
+- **Benchmark Entry Price:** $506.42 per share
+- **Current Price:** $506.42 per share
+- **Target Exit Price:** $623.97 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.4 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1067983
 
 ## Business Profile
-Berkshire Hathaway Inc. (Class B) (BRK-B) operates as an established participant within the Financials sector (Multi-Sector Conglomerate & Insurance). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BRK-B trades at $498.23 against a 3-year baseline price target of $613.17, generating a modeled annualized ROI of 9.7% under our disciplined 20-year hurdle standard.
+Berkshire Hathaway Inc. (Class B) (BRK-B) operates as an established participant within the Financials sector (Multi-Sector Conglomerate & Insurance). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BRK-B trades at $506.42 against a 3-year baseline price target of $623.97, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Berkshire Hathaway Inc. (Class B) addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 43.6% market share. Over our 3-year investment horizon, we model market share evolving to 44.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Berkshire Hathaway Inc. (Class B)'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.7%, fully justifying our HOLD rating.
+BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $93.65 B | -1.6% | 2.160 B | 2.90x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $100.09 B | +18.8% | 2.155 B | 2.90x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $91.53 B | +2.4% | 2.149 B | 2.89x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $96.56 B | +2.1% | 2.144 B | 2.89x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $101.57 B | +8.5% | 2.138 B | 2.88x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $109.03 B | +8.9% | 2.133 B | 2.88x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $100.12 B | +9.4% | 2.128 B | 2.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $105.27 B | +9.0% | 2.122 B | 2.87x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $110.01 B | +8.3% | 2.117 B | 2.86x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $117.02 B | +7.3% | 2.112 B | 2.86x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $106.87 B | +6.7% | 2.106 B | 2.85x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $111.80 B | +6.2% | 2.101 B | 2.85x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $116.85 B | +6.2% | 2.096 B | 2.84x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $93.65 B | -1.6% | 2.160 B | 2.95x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $100.09 B | +18.8% | 2.155 B | 2.94x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $91.53 B | +2.4% | 2.149 B | 2.94x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $96.56 B | +2.1% | 2.144 B | 2.93x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $101.57 B | +8.5% | 2.138 B | 2.93x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $109.03 B | +8.9% | 2.133 B | 2.92x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $100.12 B | +9.4% | 2.128 B | 2.92x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $105.27 B | +9.0% | 2.122 B | 2.91x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $110.01 B | +8.3% | 2.117 B | 2.91x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $117.02 B | +7.3% | 2.112 B | 2.90x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $106.87 B | +6.7% | 2.106 B | 2.90x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $111.80 B | +6.2% | 2.101 B | 2.89x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $116.85 B | +6.2% | 2.096 B | 2.89x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $422.10 | $527.62 | $633.14 | 2.8x | +25.8% |
-| 52 Weeks (1Y) | $420.01 | $525.01 | $630.01 | 2.9x | +5.4% |
-| 104 Weeks (2Y) | $458.71 | $573.39 | $688.07 | 2.9x | +7.3% |
-| 156 Weeks (3Y) | $490.54 | $613.17 | $735.80 | 2.8x | +7.2% |
+| 13 Weeks | $429.53 | $536.91 | $644.29 | 2.9x | +26.3% |
+| 52 Weeks (1Y) | $427.30 | $534.13 | $640.96 | 2.9x | +5.5% |
+| 104 Weeks (2Y) | $466.74 | $583.42 | $700.10 | 2.9x | +7.3% |
+| 156 Weeks (3Y) | $499.18 | $623.97 | $748.76 | 2.9x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -95,6 +95,6 @@ BRK-B currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($498.23) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($506.42) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

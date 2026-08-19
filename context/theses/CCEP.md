@@ -4,9 +4,9 @@
 - **Ticker:** CCEP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $105.57 per share
-- **Current Price:** $105.57 per share
-- **Target Exit Price:** $115.57 per share
+- **Benchmark Entry Price:** $108.07 per share
+- **Current Price:** $108.07 per share
+- **Target Exit Price:** $118.34 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.1 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650107
 
 ## Business Profile
-Coca-Cola Europacific Partners PLC (CCEP) operates as an established participant within the Consumer Staples sector (Beverage Bottling & Distribution). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CCEP trades at $105.57 against a 3-year baseline price target of $115.57, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
+Coca-Cola Europacific Partners PLC (CCEP) operates as an established participant within the Consumer Staples sector (Beverage Bottling & Distribution). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CCEP trades at $108.07 against a 3-year baseline price target of $118.34, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Coca-Cola Europacific Partners PLC addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ CCEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing tw
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.28 B | -3.0% | 0.449 B | 2.27x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $5.61 B | +17.1% | 0.448 B | 2.25x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.10 B | +0.8% | 0.447 B | 2.24x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $5.35 B | +0.3% | 0.446 B | 2.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $5.59 B | +5.9% | 0.445 B | 2.21x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $5.97 B | +6.3% | 0.443 B | 2.19x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $5.44 B | +6.7% | 0.442 B | 2.18x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $5.69 B | +6.4% | 0.441 B | 2.16x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $5.92 B | +6.0% | 0.440 B | 2.15x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.28 B | +5.2% | 0.439 B | 2.13x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $5.70 B | +4.9% | 0.438 B | 2.12x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $5.94 B | +4.5% | 0.437 B | 2.10x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.19 B | +4.6% | 0.436 B | 2.09x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $5.28 B | -3.0% | 0.449 B | 2.32x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $5.61 B | +17.1% | 0.448 B | 2.31x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.10 B | +0.8% | 0.447 B | 2.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $5.35 B | +0.3% | 0.446 B | 2.28x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $5.59 B | +5.9% | 0.445 B | 2.26x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $5.97 B | +6.3% | 0.443 B | 2.25x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $5.44 B | +6.7% | 0.442 B | 2.23x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $5.69 B | +6.4% | 0.441 B | 2.22x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $5.92 B | +6.0% | 0.440 B | 2.20x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $6.28 B | +5.2% | 0.439 B | 2.19x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $5.70 B | +4.9% | 0.438 B | 2.17x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $5.94 B | +4.5% | 0.437 B | 2.16x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $6.19 B | +4.6% | 0.436 B | 2.14x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CCEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $88.96 | $111.20 | $133.44 | 2.2x | +23.1% |
-| 52 Weeks (1Y) | $86.02 | $107.52 | $129.02 | 2.2x | +1.8% |
-| 104 Weeks (2Y) | $89.98 | $112.48 | $134.98 | 2.1x | +3.2% |
-| 156 Weeks (3Y) | $92.46 | $115.57 | $138.68 | 2.1x | +3.1% |
+| 13 Weeks | $91.36 | $114.20 | $137.04 | 2.3x | +24.7% |
+| 52 Weeks (1Y) | $87.96 | $109.95 | $131.94 | 2.3x | +1.7% |
+| 104 Weeks (2Y) | $92.08 | $115.10 | $138.12 | 2.2x | +3.2% |
+| 156 Weeks (3Y) | $94.67 | $118.34 | $142.01 | 2.1x | +3.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CCEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($105.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($108.07) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

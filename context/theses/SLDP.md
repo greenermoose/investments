@@ -4,9 +4,9 @@
 - **Ticker:** SLDP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $2.35 per share
-- **Current Price:** $2.35 per share
-- **Target Exit Price:** $2.61 per share
+- **Benchmark Entry Price:** $2.27 per share
+- **Current Price:** $2.27 per share
+- **Target Exit Price:** $2.52 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1844862
 
 ## Business Profile
-Solid Power, Inc. (SLDP) operates as an established participant within the Energy sector (All-Solid-State Battery Technology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SLDP trades at $2.35 against a 3-year baseline price target of $2.61, generating a modeled annualized ROI of 3.6% under our disciplined 20-year hurdle standard.
+Solid Power, Inc. (SLDP) operates as an established participant within the Energy sector (All-Solid-State Battery Technology). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SLDP trades at $2.27 against a 3-year baseline price target of $2.52, generating a modeled annualized ROI of 3.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Solid Power, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.0% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Solid Power, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.6%, fully justifying our AVOID rating.
+SLDP currently trades at a Price-to-Sales (P/S) multiple of ~24.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.5%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -46.5% | 0.225 B | 24.95x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.227 B | 24.22x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -46.3% | 0.229 B | 23.50x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -42.8% | 0.231 B | 22.77x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -39.1% | 0.233 B | 22.04x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -34.0% | 0.235 B | 21.31x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -38.9% | 0.237 B | 20.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | -34.9% | 0.239 B | 19.86x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -30.7% | 0.241 B | 19.13x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -24.9% | 0.243 B | 18.40x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -30.5% | 0.245 B | 17.68x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -25.9% | 0.247 B | 16.95x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -21.2% | 0.249 B | 16.22x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -46.5% | 0.225 B | 24.10x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.227 B | 23.40x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -46.3% | 0.229 B | 22.70x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -42.8% | 0.231 B | 21.99x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -39.1% | 0.233 B | 21.29x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -34.0% | 0.235 B | 20.59x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -38.9% | 0.237 B | 19.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | -34.9% | 0.239 B | 19.18x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -30.7% | 0.241 B | 18.48x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -24.9% | 0.243 B | 17.78x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -30.5% | 0.245 B | 17.08x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -25.9% | 0.247 B | 16.37x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -21.2% | 0.249 B | 15.67x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $3.45 | $4.31 | $5.17 | 24.4x | +1031.5% |
-| 52 Weeks (1Y) | $3.03 | $3.79 | $4.55 | 22.1x | +61.3% |
-| 104 Weeks (2Y) | $2.54 | $3.17 | $3.80 | 19.1x | +16.1% |
-| 156 Weeks (3Y) | $2.09 | $2.61 | $3.13 | 16.2x | +3.6% |
+| 13 Weeks | $3.33 | $4.16 | $4.99 | 23.6x | +1027.9% |
+| 52 Weeks (1Y) | $2.93 | $3.66 | $4.39 | 21.3x | +61.2% |
+| 104 Weeks (2Y) | $2.45 | $3.06 | $3.67 | 18.4x | +16.1% |
+| 156 Weeks (3Y) | $2.02 | $2.52 | $3.02 | 15.7x | +3.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -96,6 +96,6 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~25.0x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($2.35) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($2.27) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

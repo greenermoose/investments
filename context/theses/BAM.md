@@ -4,9 +4,9 @@
 - **Ticker:** BAM
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $52.57 per share
-- **Current Price:** $52.57 per share
-- **Target Exit Price:** $70.70 per share
+- **Benchmark Entry Price:** $52.47 per share
+- **Current Price:** $52.47 per share
+- **Target Exit Price:** $70.53 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1937926
 
 ## Business Profile
-Brookfield Asset Management Ltd. (BAM) operates as an established participant within the Financials sector (Alternative Asset Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BAM trades at $52.57 against a 3-year baseline price target of $70.70, generating a modeled annualized ROI of 12.8% under our disciplined 20-year hurdle standard.
+Brookfield Asset Management Ltd. (BAM) operates as an established participant within the Financials sector (Alternative Asset Management). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BAM trades at $52.47 against a 3-year baseline price target of $70.53, generating a modeled annualized ROI of 12.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Brookfield Asset Management Ltd. addresses an estimated Total Addressable Market (TAM) of $71.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ BAM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.20 B | +1.9% | 0.392 B | 4.33x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.30 B | +22.7% | 0.391 B | 4.31x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.21 B | +6.8% | 0.391 B | 4.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.29 B | +6.8% | 0.390 B | 4.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.38 B | +14.8% | 0.390 B | 4.25x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.50 B | +15.4% | 0.389 B | 4.24x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.40 B | +15.7% | 0.389 B | 4.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.49 B | +15.6% | 0.388 B | 4.20x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.57 B | +13.9% | 0.388 B | 4.18x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.69 B | +12.5% | 0.387 B | 4.16x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.56 B | +11.4% | 0.387 B | 4.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.65 B | +10.5% | 0.386 B | 4.13x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.74 B | +10.6% | 0.386 B | 4.11x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.20 B | +1.9% | 0.392 B | 4.32x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.30 B | +22.7% | 0.391 B | 4.30x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.21 B | +6.8% | 0.391 B | 4.28x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.29 B | +6.8% | 0.390 B | 4.26x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.38 B | +14.8% | 0.390 B | 4.24x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.50 B | +15.4% | 0.389 B | 4.23x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.40 B | +15.7% | 0.389 B | 4.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.49 B | +15.6% | 0.388 B | 4.19x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.57 B | +13.9% | 0.388 B | 4.17x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.69 B | +12.5% | 0.387 B | 4.15x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.56 B | +11.4% | 0.387 B | 4.14x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.65 B | +10.5% | 0.386 B | 4.12x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.74 B | +10.6% | 0.386 B | 4.10x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ BAM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $45.11 | $56.39 | $67.67 | 4.2x | +32.4% |
-| 52 Weeks (1Y) | $45.16 | $56.45 | $67.74 | 4.2x | +7.4% |
-| 104 Weeks (2Y) | $51.37 | $64.21 | $77.05 | 4.2x | +10.5% |
-| 156 Weeks (3Y) | $56.56 | $70.70 | $84.84 | 4.1x | +10.4% |
+| 13 Weeks | $45.01 | $56.26 | $67.51 | 4.2x | +32.2% |
+| 52 Weeks (1Y) | $45.16 | $56.45 | $67.74 | 4.2x | +7.6% |
+| 104 Weeks (2Y) | $51.24 | $64.05 | $76.86 | 4.2x | +10.5% |
+| 156 Weeks (3Y) | $56.42 | $70.53 | $84.64 | 4.1x | +10.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ BAM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($52.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($52.47) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

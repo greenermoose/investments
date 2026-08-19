@@ -4,9 +4,9 @@
 - **Ticker:** PCAR
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $130.84 per share
-- **Current Price:** $130.84 per share
-- **Target Exit Price:** $136.18 per share
+- **Benchmark Entry Price:** $128.47 per share
+- **Current Price:** $128.47 per share
+- **Target Exit Price:** $133.68 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=75362
 
 ## Business Profile
-PACCAR Inc (PCAR) operates as an established participant within the Industrials sector (Commercial Heavy-Duty Vehicles). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PCAR trades at $130.84 against a 3-year baseline price target of $136.18, generating a modeled annualized ROI of 1.3% under our disciplined 20-year hurdle standard.
+PACCAR Inc (PCAR) operates as an established participant within the Industrials sector (Commercial Heavy-Duty Vehicles). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PCAR trades at $128.47 against a 3-year baseline price target of $133.68, generating a modeled annualized ROI of 1.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 PACCAR Inc addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 PACCAR Inc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
+PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.17 B | -3.7% | 0.526 B | 2.42x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.61 B | +16.3% | 0.525 B | 2.40x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.90 B | +0.1% | 0.524 B | 2.38x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.21 B | -0.4% | 0.522 B | 2.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $7.52 B | +4.9% | 0.521 B | 2.34x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $8.00 B | +5.1% | 0.520 B | 2.32x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $7.27 B | +5.4% | 0.518 B | 2.30x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $7.58 B | +5.2% | 0.517 B | 2.28x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $7.88 B | +4.8% | 0.516 B | 2.26x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $8.34 B | +4.2% | 0.515 B | 2.24x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $7.56 B | +3.9% | 0.513 B | 2.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.86 B | +3.7% | 0.512 B | 2.20x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $8.16 B | +3.6% | 0.511 B | 2.18x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.17 B | -3.7% | 0.526 B | 2.38x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.61 B | +16.3% | 0.525 B | 2.36x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.90 B | +0.1% | 0.524 B | 2.34x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $7.21 B | -0.4% | 0.522 B | 2.32x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $7.52 B | +4.9% | 0.521 B | 2.30x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $8.00 B | +5.1% | 0.520 B | 2.28x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $7.27 B | +5.4% | 0.518 B | 2.26x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.58 B | +5.2% | 0.517 B | 2.24x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.88 B | +4.8% | 0.516 B | 2.22x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.34 B | +4.2% | 0.515 B | 2.20x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.56 B | +3.9% | 0.513 B | 2.18x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $7.86 B | +3.7% | 0.512 B | 2.16x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.16 B | +3.6% | 0.511 B | 2.14x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $110.39 | $137.99 | $165.59 | 2.4x | +23.7% |
-| 52 Weeks (1Y) | $105.06 | $131.33 | $157.60 | 2.3x | +0.4% |
-| 104 Weeks (2Y) | $107.67 | $134.59 | $161.51 | 2.3x | +1.4% |
-| 156 Weeks (3Y) | $108.94 | $136.18 | $163.42 | 2.2x | +1.3% |
+| 13 Weeks | $108.08 | $135.10 | $162.12 | 2.3x | +22.3% |
+| 52 Weeks (1Y) | $103.26 | $129.08 | $154.90 | 2.3x | +0.5% |
+| 104 Weeks (2Y) | $105.77 | $132.21 | $158.65 | 2.2x | +1.4% |
+| 156 Weeks (3Y) | $106.94 | $133.68 | $160.42 | 2.1x | +1.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($130.84) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($128.47) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

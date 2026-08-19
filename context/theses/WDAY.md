@@ -4,9 +4,9 @@
 - **Ticker:** WDAY
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $191.18 per share
-- **Current Price:** $191.18 per share
-- **Target Exit Price:** $233.22 per share
+- **Benchmark Entry Price:** $196.18 per share
+- **Current Price:** $196.18 per share
+- **Target Exit Price:** $238.96 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.3 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1327811
 
 ## Business Profile
-Workday, Inc. (WDAY) operates as an established participant within the Information Technology sector (Cloud Enterprise Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDAY trades at $191.18 against a 3-year baseline price target of $233.22, generating a modeled annualized ROI of 6.8% under our disciplined 20-year hurdle standard.
+Workday, Inc. (WDAY) operates as an established participant within the Information Technology sector (Cloud Enterprise Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WDAY trades at $196.18 against a 3-year baseline price target of $238.96, generating a modeled annualized ROI of 6.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Workday, Inc. addresses an estimated Total Addressable Market (TAM) of $143.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Workday, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +13.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 6.8%, fully justifying our SELL rating.
+WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 6.8%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.41 B | +2.3% | 0.254 B | 5.08x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.62 B | +24.2% | 0.255 B | 5.03x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.44 B | +7.4% | 0.255 B | 4.98x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.62 B | +7.4% | 0.256 B | 4.92x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.80 B | +16.2% | 0.256 B | 4.87x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $3.06 B | +16.8% | 0.257 B | 4.82x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.87 B | +17.4% | 0.258 B | 4.77x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $3.06 B | +16.7% | 0.258 B | 4.72x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $3.23 B | +15.3% | 0.259 B | 4.67x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $3.47 B | +13.4% | 0.260 B | 4.62x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $3.21 B | +12.0% | 0.260 B | 4.57x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $3.40 B | +11.1% | 0.261 B | 4.52x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $3.59 B | +11.2% | 0.262 B | 4.47x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.41 B | +2.3% | 0.254 B | 5.21x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.62 B | +24.2% | 0.255 B | 5.16x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.44 B | +7.4% | 0.255 B | 5.10x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.62 B | +7.4% | 0.256 B | 5.05x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.80 B | +16.2% | 0.256 B | 5.00x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.06 B | +16.8% | 0.257 B | 4.95x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.87 B | +17.4% | 0.258 B | 4.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $3.06 B | +16.7% | 0.258 B | 4.84x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.23 B | +15.3% | 0.259 B | 4.79x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $3.47 B | +13.4% | 0.260 B | 4.74x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $3.21 B | +12.0% | 0.260 B | 4.68x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $3.40 B | +11.1% | 0.261 B | 4.63x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.59 B | +11.2% | 0.262 B | 4.58x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $163.41 | $204.26 | $245.11 | 5.0x | +30.3% |
-| 52 Weeks (1Y) | $159.82 | $199.78 | $239.74 | 4.9x | +4.5% |
-| 104 Weeks (2Y) | $176.27 | $220.34 | $264.41 | 4.7x | +7.4% |
-| 156 Weeks (3Y) | $186.58 | $233.22 | $279.86 | 4.5x | +6.8% |
+| 13 Weeks | $167.68 | $209.60 | $251.52 | 5.1x | +30.3% |
+| 52 Weeks (1Y) | $163.75 | $204.69 | $245.63 | 5.0x | +4.3% |
+| 104 Weeks (2Y) | $180.80 | $226.00 | $271.20 | 4.8x | +7.3% |
+| 156 Weeks (3Y) | $191.17 | $238.96 | $286.75 | 4.6x | +6.8% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($191.18) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($196.18) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

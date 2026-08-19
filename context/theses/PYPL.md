@@ -4,9 +4,9 @@
 - **Ticker:** PYPL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $60.47 per share
-- **Current Price:** $60.47 per share
-- **Target Exit Price:** $66.24 per share
+- **Benchmark Entry Price:** $61.59 per share
+- **Current Price:** $61.59 per share
+- **Target Exit Price:** $67.57 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1633917
 
 ## Business Profile
-PayPal Holdings, Inc. (PYPL) operates as an established participant within the Financials sector (Digital Payments & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PYPL trades at $60.47 against a 3-year baseline price target of $66.24, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
+PayPal Holdings, Inc. (PYPL) operates as an established participant within the Financials sector (Digital Payments & FinTech). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PYPL trades at $61.59 against a 3-year baseline price target of $67.57, generating a modeled annualized ROI of 3.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 PayPal Holdings, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 3.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.29 B | -3.0% | 0.921 B | 1.69x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $8.82 B | +17.1% | 0.915 B | 1.68x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.02 B | +0.9% | 0.909 B | 1.66x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.41 B | +0.3% | 0.903 B | 1.64x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $8.79 B | +6.0% | 0.898 B | 1.63x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $9.38 B | +6.3% | 0.892 B | 1.61x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $8.55 B | +6.7% | 0.886 B | 1.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $8.95 B | +6.4% | 0.881 B | 1.58x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $9.32 B | +6.0% | 0.875 B | 1.56x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $9.87 B | +5.2% | 0.870 B | 1.54x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $8.97 B | +4.9% | 0.864 B | 1.52x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $9.35 B | +4.4% | 0.859 B | 1.51x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $9.73 B | +4.4% | 0.853 B | 1.49x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $8.29 B | -3.0% | 0.921 B | 1.73x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.82 B | +17.1% | 0.915 B | 1.71x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.02 B | +0.9% | 0.909 B | 1.69x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.41 B | +0.3% | 0.903 B | 1.67x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $8.79 B | +6.0% | 0.898 B | 1.66x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $9.38 B | +6.3% | 0.892 B | 1.64x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $8.55 B | +6.7% | 0.886 B | 1.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $8.95 B | +6.4% | 0.881 B | 1.61x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $9.32 B | +6.0% | 0.875 B | 1.59x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $9.87 B | +5.2% | 0.870 B | 1.57x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $8.97 B | +4.9% | 0.864 B | 1.55x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $9.35 B | +4.4% | 0.859 B | 1.54x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $9.73 B | +4.4% | 0.853 B | 1.52x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $51.21 | $64.01 | $76.81 | 1.7x | +25.6% |
-| 52 Weeks (1Y) | $49.43 | $61.79 | $74.15 | 1.6x | +2.2% |
-| 104 Weeks (2Y) | $51.63 | $64.54 | $77.45 | 1.6x | +3.3% |
-| 156 Weeks (3Y) | $52.99 | $66.24 | $79.49 | 1.5x | +3.1% |
+| 13 Weeks | $52.13 | $65.16 | $78.19 | 1.7x | +25.3% |
+| 52 Weeks (1Y) | $50.34 | $62.92 | $75.50 | 1.7x | +2.2% |
+| 104 Weeks (2Y) | $52.62 | $65.78 | $78.94 | 1.6x | +3.3% |
+| 156 Weeks (3Y) | $54.06 | $67.57 | $81.08 | 1.5x | +3.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($60.47) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($61.59) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

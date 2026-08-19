@@ -4,9 +4,9 @@
 - **Ticker:** SHW
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $349.97 per share
-- **Current Price:** $349.97 per share
-- **Target Exit Price:** $363.10 per share
+- **Benchmark Entry Price:** $354.57 per share
+- **Current Price:** $354.57 per share
+- **Target Exit Price:** $368.72 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.4 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=89800
 
 ## Business Profile
-The Sherwin-Williams Company (SHW) operates as an established participant within the Materials sector (Specialty Chemicals & Architectural Coatings). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SHW trades at $349.97 against a 3-year baseline price target of $363.10, generating a modeled annualized ROI of 1.2% under our disciplined 20-year hurdle standard.
+The Sherwin-Williams Company (SHW) operates as an established participant within the Materials sector (Specialty Chemicals & Architectural Coatings). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SHW trades at $354.57 against a 3-year baseline price target of $368.72, generating a modeled annualized ROI of 1.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Sherwin-Williams Company addresses an estimated Total Addressable Market (TAM) of $400.0B across its primary Materials domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 5.9% market share. Over our 3-year investment horizon, we model market share evolving to 5.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Sherwin-Williams Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Materials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.2%, fully justifying our SELL rating.
+SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.97 B | -3.7% | 0.243 B | 3.59x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.33 B | +16.2% | 0.242 B | 3.56x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.74 B | +0.1% | 0.242 B | 3.53x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.00 B | -0.5% | 0.241 B | 3.50x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $6.26 B | +4.8% | 0.240 B | 3.47x | Materials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.65 B | +5.1% | 0.240 B | 3.44x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $6.05 B | +5.3% | 0.239 B | 3.41x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.31 B | +5.1% | 0.239 B | 3.38x | Materials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.55 B | +4.7% | 0.238 B | 3.35x | Materials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.93 B | +4.2% | 0.237 B | 3.32x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.28 B | +3.8% | 0.237 B | 3.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.53 B | +3.5% | 0.236 B | 3.26x | Materials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.79 B | +3.7% | 0.236 B | 3.23x | Materials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $5.97 B | -3.7% | 0.243 B | 3.64x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.33 B | +16.2% | 0.242 B | 3.61x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.74 B | +0.1% | 0.242 B | 3.58x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.00 B | -0.5% | 0.241 B | 3.55x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.26 B | +4.8% | 0.240 B | 3.52x | Materials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $6.65 B | +5.1% | 0.240 B | 3.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.05 B | +5.3% | 0.239 B | 3.46x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.31 B | +5.1% | 0.239 B | 3.43x | Materials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $6.55 B | +4.7% | 0.238 B | 3.40x | Materials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $6.93 B | +4.2% | 0.237 B | 3.37x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.28 B | +3.8% | 0.237 B | 3.34x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $6.53 B | +3.5% | 0.236 B | 3.31x | Materials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $6.79 B | +3.7% | 0.236 B | 3.28x | Materials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $294.63 | $368.29 | $441.95 | 3.5x | +22.6% |
-| 52 Weeks (1Y) | $281.42 | $351.77 | $422.12 | 3.5x | +0.5% |
-| 104 Weeks (2Y) | $287.82 | $359.77 | $431.72 | 3.4x | +1.4% |
-| 156 Weeks (3Y) | $290.48 | $363.10 | $435.72 | 3.2x | +1.2% |
+| 13 Weeks | $298.82 | $373.52 | $448.22 | 3.6x | +23.2% |
+| 52 Weeks (1Y) | $285.47 | $356.84 | $428.21 | 3.5x | +0.6% |
+| 104 Weeks (2Y) | $292.11 | $365.14 | $438.17 | 3.4x | +1.5% |
+| 156 Weeks (3Y) | $294.98 | $368.72 | $442.46 | 3.3x | +1.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($349.97) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($354.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

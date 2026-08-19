@@ -4,9 +4,9 @@
 - **Ticker:** PAYX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $118.54 per share
-- **Current Price:** $118.54 per share
-- **Target Exit Price:** $133.45 per share
+- **Benchmark Entry Price:** $122.90 per share
+- **Current Price:** $122.90 per share
+- **Target Exit Price:** $138.34 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723531
 
 ## Business Profile
-Paychex, Inc. (PAYX) operates as an established participant within the Industrials sector (Payroll & HR Outsourcing Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PAYX trades at $118.54 against a 3-year baseline price target of $133.45, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Paychex, Inc. (PAYX) operates as an established participant within the Industrials sector (Payroll & HR Outsourcing Services). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PAYX trades at $122.90 against a 3-year baseline price target of $138.34, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Paychex, Inc. addresses an estimated Total Addressable Market (TAM) of $98.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Paychex, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
+PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.64 B | -2.1% | 0.358 B | 6.52x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.75 B | +17.7% | 0.357 B | 6.48x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.60 B | +1.8% | 0.356 B | 6.44x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.68 B | +1.3% | 0.356 B | 6.39x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.77 B | +7.6% | 0.355 B | 6.35x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.89 B | +7.9% | 0.354 B | 6.30x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.73 B | +8.1% | 0.353 B | 6.26x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.81 B | +7.9% | 0.352 B | 6.22x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.89 B | +6.8% | 0.351 B | 6.17x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.01 B | +6.2% | 0.350 B | 6.13x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.83 B | +5.7% | 0.349 B | 6.09x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.91 B | +5.5% | 0.349 B | 6.04x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.99 B | +5.4% | 0.348 B | 6.00x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.64 B | -2.1% | 0.358 B | 6.76x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.75 B | +17.7% | 0.357 B | 6.72x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.60 B | +1.8% | 0.356 B | 6.67x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.68 B | +1.3% | 0.356 B | 6.63x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.77 B | +7.6% | 0.355 B | 6.58x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.89 B | +7.9% | 0.354 B | 6.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.73 B | +8.1% | 0.353 B | 6.49x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.81 B | +7.9% | 0.352 B | 6.45x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.89 B | +6.8% | 0.351 B | 6.40x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.01 B | +6.2% | 0.350 B | 6.36x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.83 B | +5.7% | 0.349 B | 6.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.91 B | +5.5% | 0.349 B | 6.27x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.99 B | +5.4% | 0.348 B | 6.22x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $100.23 | $125.29 | $150.35 | 6.4x | +24.8% |
-| 52 Weeks (1Y) | $97.30 | $121.63 | $145.96 | 6.3x | +2.6% |
-| 104 Weeks (2Y) | $102.94 | $128.67 | $154.40 | 6.2x | +4.2% |
-| 156 Weeks (3Y) | $106.76 | $133.45 | $160.14 | 6.0x | +4.0% |
+| 13 Weeks | $104.00 | $130.00 | $156.00 | 6.6x | +25.2% |
+| 52 Weeks (1Y) | $100.83 | $126.04 | $151.25 | 6.6x | +2.6% |
+| 104 Weeks (2Y) | $106.78 | $133.47 | $160.16 | 6.4x | +4.2% |
+| 156 Weeks (3Y) | $110.67 | $138.34 | $166.01 | 6.2x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ PAYX currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($118.54) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($122.90) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

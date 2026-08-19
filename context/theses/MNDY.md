@@ -4,9 +4,9 @@
 - **Ticker:** MNDY
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $88.04 per share
-- **Current Price:** $88.04 per share
-- **Target Exit Price:** $172.20 per share
+- **Benchmark Entry Price:** $91.46 per share
+- **Current Price:** $91.46 per share
+- **Target Exit Price:** $179.40 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** BUY
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001845338
 
 ## Business Profile
-monday.com Ltd. (MNDY) operates as an established participant within the Information Technology sector (Enterprise Workflow Software & Cloud). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MNDY trades at $88.04 against a 3-year baseline price target of $172.20, generating a modeled annualized ROI of 26.6% under our disciplined 20-year hurdle standard.
+monday.com Ltd. (MNDY) operates as an established participant within the Information Technology sector (Enterprise Workflow Software & Cloud). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MNDY trades at $91.46 against a 3-year baseline price target of $179.40, generating a modeled annualized ROI of 26.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 monday.com Ltd. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.8% market share. Over our 3-year investment horizon, we model market share evolving to 3.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 monday.com Ltd.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +24.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MNDY currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 26.6%, fully justifying our BUY rating.
+MNDY currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 26.7%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.36 B | +8.7% | 0.051 B | 3.19x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.41 B | +35.8% | 0.052 B | 3.17x | Product launch ramp: monday AI Work Platform & Automated Cross-Departmental Workflows |
-| 2027-Q1 | 2027-03-31 | $0.40 B | +22.0% | 0.052 B | 3.14x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.47 B | +29.7% | 0.052 B | 3.11x | Product launch ramp: monday Service & Enterprise CRM Tier 2 Acceleration |
-| 2027-Q3 | 2027-09-30 | $0.53 B | +46.6% | 0.052 B | 3.09x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.62 B | +51.6% | 0.052 B | 3.06x | Product launch ramp: Enterprise Scaled Seat Licensing & Marketplace App Ecosystem |
-| 2028-Q1 | 2028-03-31 | $0.63 B | +58.1% | 0.053 B | 3.03x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.70 B | +49.6% | 0.053 B | 3.00x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.74 B | +40.4% | 0.053 B | 2.98x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.80 B | +29.0% | 0.053 B | 2.95x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.77 B | +21.5% | 0.053 B | 2.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.81 B | +16.0% | 0.054 B | 2.90x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.86 B | +16.5% | 0.054 B | 2.87x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.36 B | +8.7% | 0.051 B | 3.32x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.41 B | +35.8% | 0.052 B | 3.29x | Product launch ramp: monday AI Work Platform & Automated Cross-Departmental Workflows |
+| 2027-Q1 | 2027-03-31 | $0.40 B | +22.0% | 0.052 B | 3.26x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.47 B | +29.7% | 0.052 B | 3.24x | Product launch ramp: monday Service & Enterprise CRM Tier 2 Acceleration |
+| 2027-Q3 | 2027-09-30 | $0.53 B | +46.6% | 0.052 B | 3.21x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.62 B | +51.6% | 0.052 B | 3.18x | Product launch ramp: Enterprise Scaled Seat Licensing & Marketplace App Ecosystem |
+| 2028-Q1 | 2028-03-31 | $0.63 B | +58.1% | 0.053 B | 3.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.70 B | +49.6% | 0.053 B | 3.13x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.74 B | +40.4% | 0.053 B | 3.10x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.80 B | +29.0% | 0.053 B | 3.07x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.77 B | +21.5% | 0.053 B | 3.04x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.81 B | +16.0% | 0.054 B | 3.02x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.86 B | +16.5% | 0.054 B | 2.99x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MNDY currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $78.98 | $98.72 | $118.46 | 3.1x | +58.1% |
-| 52 Weeks (1Y) | $86.05 | $107.56 | $129.07 | 3.1x | +22.2% |
-| 104 Weeks (2Y) | $121.00 | $151.25 | $181.50 | 3.0x | +31.1% |
-| 156 Weeks (3Y) | $137.76 | $172.20 | $206.64 | 2.9x | +25.1% |
+| 13 Weeks | $82.00 | $102.50 | $123.00 | 3.2x | +57.8% |
+| 52 Weeks (1Y) | $89.38 | $111.73 | $134.08 | 3.2x | +22.2% |
+| 104 Weeks (2Y) | $125.87 | $157.34 | $188.81 | 3.1x | +31.2% |
+| 156 Weeks (3Y) | $143.52 | $179.40 | $215.28 | 3.0x | +25.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -94,6 +94,6 @@ MNDY currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($88.04) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($91.46) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

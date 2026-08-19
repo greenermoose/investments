@@ -4,9 +4,9 @@
 - **Ticker:** IBM
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $228.85 per share
-- **Current Price:** $228.85 per share
-- **Target Exit Price:** $239.85 per share
+- **Benchmark Entry Price:** $235.31 per share
+- **Current Price:** $235.31 per share
+- **Target Exit Price:** $246.79 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.7 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=51143
 
 ## Business Profile
-International Business Machines Corporation (IBM) operates as an established participant within the Information Technology sector (Hybrid Cloud Infrastructure & IT Consulting). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IBM trades at $228.85 against a 3-year baseline price target of $239.85, generating a modeled annualized ROI of 1.6% under our disciplined 20-year hurdle standard.
+International Business Machines Corporation (IBM) operates as an established participant within the Information Technology sector (Hybrid Cloud Infrastructure & IT Consulting). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IBM trades at $235.31 against a 3-year baseline price target of $246.79, generating a modeled annualized ROI of 1.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 International Business Machines Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.3% market share. Over our 3-year investment horizon, we model market share evolving to 4.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 International Business Machines Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.6%, fully justifying our SELL rating.
+IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $16.10 B | -3.7% | 0.942 B | 3.38x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $17.08 B | +16.2% | 0.941 B | 3.36x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $15.48 B | +0.1% | 0.940 B | 3.34x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $16.18 B | -0.5% | 0.939 B | 3.31x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $16.87 B | +4.8% | 0.937 B | 3.29x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $17.94 B | +5.0% | 0.936 B | 3.27x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $16.31 B | +5.3% | 0.935 B | 3.25x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $17.01 B | +5.1% | 0.934 B | 3.22x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $17.68 B | +4.8% | 0.933 B | 3.20x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $18.70 B | +4.2% | 0.932 B | 3.18x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $16.94 B | +3.9% | 0.930 B | 3.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $17.62 B | +3.6% | 0.929 B | 3.13x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $18.31 B | +3.6% | 0.928 B | 3.11x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $16.10 B | -3.7% | 0.942 B | 3.48x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $17.08 B | +16.2% | 0.941 B | 3.45x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $15.48 B | +0.1% | 0.940 B | 3.43x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $16.18 B | -0.5% | 0.939 B | 3.41x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $16.87 B | +4.8% | 0.937 B | 3.38x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $17.94 B | +5.0% | 0.936 B | 3.36x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $16.31 B | +5.3% | 0.935 B | 3.34x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $17.01 B | +5.1% | 0.934 B | 3.32x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $17.68 B | +4.8% | 0.933 B | 3.29x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $18.70 B | +4.2% | 0.932 B | 3.27x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $16.94 B | +3.9% | 0.930 B | 3.25x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $17.62 B | +3.6% | 0.929 B | 3.22x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $18.31 B | +3.6% | 0.928 B | 3.20x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $192.26 | $240.32 | $288.38 | 3.3x | +21.6% |
-| 52 Weeks (1Y) | $184.30 | $230.37 | $276.44 | 3.3x | +0.7% |
-| 104 Weeks (2Y) | $189.16 | $236.45 | $283.74 | 3.2x | +1.6% |
-| 156 Weeks (3Y) | $191.88 | $239.85 | $287.82 | 3.1x | +1.6% |
+| 13 Weeks | $198.06 | $247.58 | $297.10 | 3.4x | +22.5% |
+| 52 Weeks (1Y) | $189.90 | $237.37 | $284.84 | 3.4x | +0.9% |
+| 104 Weeks (2Y) | $194.48 | $243.10 | $291.72 | 3.3x | +1.6% |
+| 156 Weeks (3Y) | $197.43 | $246.79 | $296.15 | 3.2x | +1.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ IBM currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($228.85) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($235.31) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

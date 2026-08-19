@@ -4,9 +4,9 @@
 - **Ticker:** TRV
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $364.51 per share
-- **Current Price:** $364.51 per share
-- **Target Exit Price:** $429.34 per share
+- **Benchmark Entry Price:** $370.99 per share
+- **Current Price:** $370.99 per share
+- **Target Exit Price:** $437.82 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=86312
 
 ## Business Profile
-The Travelers Companies, Inc. (TRV) operates as an established participant within the Financials sector (Property & Casualty Insurance). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRV trades at $364.51 against a 3-year baseline price target of $429.34, generating a modeled annualized ROI of 5.6% under our disciplined 20-year hurdle standard.
+The Travelers Companies, Inc. (TRV) operates as an established participant within the Financials sector (Property & Casualty Insurance). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TRV trades at $370.99 against a 3-year baseline price target of $437.82, generating a modeled annualized ROI of 5.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Travelers Companies, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 5.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Travelers Companies, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.6%, fully justifying our SELL rating.
+TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $12.20 B | -2.3% | 0.213 B | 1.60x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $13.01 B | +17.9% | 0.212 B | 1.60x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $11.86 B | +1.6% | 0.211 B | 1.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $12.47 B | +1.2% | 0.210 B | 1.58x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $13.08 B | +7.2% | 0.209 B | 1.58x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $14.00 B | +7.6% | 0.209 B | 1.57x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.81 B | +8.0% | 0.208 B | 1.56x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $13.43 B | +7.7% | 0.207 B | 1.56x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $14.01 B | +7.1% | 0.206 B | 1.55x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $14.88 B | +6.3% | 0.206 B | 1.54x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $13.55 B | +5.8% | 0.205 B | 1.53x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $14.15 B | +5.4% | 0.204 B | 1.53x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $14.76 B | +5.4% | 0.203 B | 1.52x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $12.20 B | -2.3% | 0.213 B | 1.63x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $13.01 B | +17.9% | 0.212 B | 1.63x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $11.86 B | +1.6% | 0.211 B | 1.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $12.47 B | +1.2% | 0.210 B | 1.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $13.08 B | +7.2% | 0.209 B | 1.61x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $14.00 B | +7.6% | 0.209 B | 1.60x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.81 B | +8.0% | 0.208 B | 1.59x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $13.43 B | +7.7% | 0.207 B | 1.58x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $14.01 B | +7.1% | 0.206 B | 1.58x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $14.88 B | +6.3% | 0.206 B | 1.57x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.55 B | +5.8% | 0.205 B | 1.56x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $14.15 B | +5.4% | 0.204 B | 1.56x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.76 B | +5.4% | 0.203 B | 1.55x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $308.31 | $385.39 | $462.47 | 1.6x | +25.0% |
-| 52 Weeks (1Y) | $304.94 | $381.17 | $457.40 | 1.6x | +4.6% |
-| 104 Weeks (2Y) | $326.55 | $408.19 | $489.83 | 1.6x | +5.8% |
-| 156 Weeks (3Y) | $343.47 | $429.34 | $515.21 | 1.5x | +5.6% |
+| 13 Weeks | $314.20 | $392.75 | $471.30 | 1.6x | +25.6% |
+| 52 Weeks (1Y) | $310.72 | $388.40 | $466.08 | 1.6x | +4.7% |
+| 104 Weeks (2Y) | $332.87 | $416.09 | $499.31 | 1.6x | +5.9% |
+| 156 Weeks (3Y) | $350.26 | $437.82 | $525.38 | 1.6x | +5.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ TRV currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($364.51) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($370.99) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

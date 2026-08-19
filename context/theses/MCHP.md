@@ -4,9 +4,9 @@
 - **Ticker:** MCHP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $80.26 per share
-- **Current Price:** $80.26 per share
-- **Target Exit Price:** $99.03 per share
+- **Benchmark Entry Price:** $77.59 per share
+- **Current Price:** $77.59 per share
+- **Target Exit Price:** $95.82 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=827054
 
 ## Business Profile
-Microchip Technology Incorporated (MCHP) operates as an established participant within the Information Technology sector (Microcontrollers & Analog Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MCHP trades at $80.26 against a 3-year baseline price target of $99.03, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Microchip Technology Incorporated (MCHP) operates as an established participant within the Information Technology sector (Microcontrollers & Analog Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MCHP trades at $77.59 against a 3-year baseline price target of $95.82, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Microchip Technology Incorporated addresses an estimated Total Addressable Market (TAM) of $73.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Microchip Technology Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
+MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.23 B | +2.0% | 0.542 B | 8.90x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.34 B | +22.5% | 0.543 B | 8.83x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.24 B | +6.7% | 0.543 B | 8.75x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.33 B | +6.0% | 0.544 B | 8.68x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.41 B | +14.8% | 0.545 B | 8.61x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.54 B | +14.8% | 0.545 B | 8.53x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.44 B | +15.8% | 0.546 B | 8.46x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.53 B | +14.9% | 0.547 B | 8.38x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.61 B | +14.3% | 0.548 B | 8.31x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.73 B | +12.3% | 0.548 B | 8.23x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.60 B | +11.0% | 0.549 B | 8.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.69 B | +10.2% | 0.550 B | 8.08x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.78 B | +10.5% | 0.550 B | 8.01x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.23 B | +2.0% | 0.542 B | 8.61x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.34 B | +22.5% | 0.543 B | 8.54x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.24 B | +6.7% | 0.543 B | 8.46x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.33 B | +6.0% | 0.544 B | 8.39x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.41 B | +14.8% | 0.545 B | 8.32x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.54 B | +14.8% | 0.545 B | 8.25x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.44 B | +15.8% | 0.546 B | 8.18x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.53 B | +14.9% | 0.547 B | 8.11x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.61 B | +14.3% | 0.548 B | 8.04x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.73 B | +12.3% | 0.548 B | 7.96x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.60 B | +11.0% | 0.549 B | 7.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.69 B | +10.2% | 0.550 B | 7.82x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.78 B | +10.5% | 0.550 B | 7.75x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $68.94 | $86.17 | $103.40 | 8.7x | +32.9% |
-| 52 Weeks (1Y) | $67.24 | $84.05 | $100.86 | 8.6x | +4.7% |
-| 104 Weeks (2Y) | $74.15 | $92.69 | $111.23 | 8.3x | +7.5% |
-| 156 Weeks (3Y) | $79.22 | $99.03 | $118.84 | 8.0x | +7.3% |
+| 13 Weeks | $66.65 | $83.31 | $99.97 | 8.4x | +32.9% |
+| 52 Weeks (1Y) | $64.98 | $81.22 | $97.46 | 8.3x | +4.7% |
+| 104 Weeks (2Y) | $71.74 | $89.68 | $107.62 | 8.0x | +7.5% |
+| 156 Weeks (3Y) | $76.66 | $95.82 | $114.98 | 7.8x | +7.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($80.26) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($77.59) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

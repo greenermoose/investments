@@ -4,9 +4,9 @@
 - **Ticker:** CRM
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $190.97 per share
-- **Current Price:** $190.97 per share
-- **Target Exit Price:** $237.92 per share
+- **Benchmark Entry Price:** $201.90 per share
+- **Current Price:** $201.90 per share
+- **Target Exit Price:** $251.59 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.6 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1108524
 
 ## Business Profile
-Salesforce, Inc. (CRM) operates as an established participant within the Information Technology sector (Enterprise Cloud CRM & Applications). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRM trades at $190.97 against a 3-year baseline price target of $237.92, generating a modeled annualized ROI of 10.1% under our disciplined 20-year hurdle standard.
+Salesforce, Inc. (CRM) operates as an established participant within the Information Technology sector (Enterprise Cloud CRM & Applications). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRM trades at $201.90 against a 3-year baseline price target of $251.59, generating a modeled annualized ROI of 10.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Salesforce, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.5% market share. Over our 3-year investment horizon, we model market share evolving to 3.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Salesforce, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.1%, fully justifying our HOLD rating.
+CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.1%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $10.47 B | +0.5% | 0.923 B | 4.25x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $11.27 B | +21.3% | 0.920 B | 4.22x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $10.39 B | +4.8% | 0.916 B | 4.18x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $11.07 B | +4.7% | 0.913 B | 4.15x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $11.74 B | +12.1% | 0.909 B | 4.11x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $12.71 B | +12.8% | 0.906 B | 4.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $11.79 B | +13.5% | 0.902 B | 4.04x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.49 B | +12.8% | 0.899 B | 4.01x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.12 B | +11.8% | 0.896 B | 3.97x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $14.03 B | +10.4% | 0.892 B | 3.94x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $12.91 B | +9.5% | 0.889 B | 3.90x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $13.58 B | +8.7% | 0.885 B | 3.87x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $14.27 B | +8.8% | 0.882 B | 3.83x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $10.47 B | +0.5% | 0.923 B | 4.50x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $11.27 B | +21.3% | 0.920 B | 4.46x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $10.39 B | +4.8% | 0.916 B | 4.42x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $11.07 B | +4.7% | 0.913 B | 4.38x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $11.74 B | +12.1% | 0.909 B | 4.35x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $12.71 B | +12.8% | 0.906 B | 4.31x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $11.79 B | +13.5% | 0.902 B | 4.27x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.49 B | +12.8% | 0.899 B | 4.24x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.12 B | +11.8% | 0.896 B | 4.20x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $14.03 B | +10.4% | 0.892 B | 4.16x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $12.91 B | +9.5% | 0.889 B | 4.12x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.58 B | +8.7% | 0.885 B | 4.09x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.27 B | +8.8% | 0.882 B | 4.05x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $163.46 | $204.33 | $245.20 | 4.2x | +31.1% |
-| 52 Weeks (1Y) | $160.86 | $201.07 | $241.28 | 4.1x | +5.3% |
-| 104 Weeks (2Y) | $177.62 | $222.03 | $266.44 | 4.0x | +7.8% |
-| 156 Weeks (3Y) | $190.34 | $237.92 | $285.50 | 3.8x | +7.6% |
+| 13 Weeks | $172.87 | $216.09 | $259.31 | 4.4x | +31.2% |
+| 52 Weeks (1Y) | $170.25 | $212.81 | $255.37 | 4.3x | +5.4% |
+| 104 Weeks (2Y) | $187.91 | $234.89 | $281.87 | 4.2x | +7.9% |
+| 156 Weeks (3Y) | $201.27 | $251.59 | $301.91 | 4.0x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~4.3x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($190.97) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($201.90) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

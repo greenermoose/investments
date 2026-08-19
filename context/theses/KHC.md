@@ -4,9 +4,9 @@
 - **Ticker:** KHC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $24.75 per share
-- **Current Price:** $24.75 per share
-- **Target Exit Price:** $26.45 per share
+- **Benchmark Entry Price:** $25.41 per share
+- **Current Price:** $25.41 per share
+- **Target Exit Price:** $27.17 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1637459
 
 ## Business Profile
-The Kraft Heinz Company (KHC) operates as an established participant within the Consumer Staples sector (Packaged Foods). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KHC trades at $24.75 against a 3-year baseline price target of $26.45, generating a modeled annualized ROI of 2.2% under our disciplined 20-year hurdle standard.
+The Kraft Heinz Company (KHC) operates as an established participant within the Consumer Staples sector (Packaged Foods). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KHC trades at $25.41 against a 3-year baseline price target of $27.17, generating a modeled annualized ROI of 2.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Kraft Heinz Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 4.5% market share. Over our 3-year investment horizon, we model market share evolving to 4.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Kraft Heinz Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.2%, fully justifying our SELL rating.
+KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $6.22 B | -3.7% | 1.186 B | 1.19x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.60 B | +16.2% | 1.183 B | 1.18x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.98 B | +0.0% | 1.180 B | 1.18x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.25 B | -0.4% | 1.177 B | 1.17x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $6.52 B | +4.9% | 1.174 B | 1.16x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.94 B | +5.1% | 1.171 B | 1.15x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $6.31 B | +5.5% | 1.168 B | 1.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.58 B | +5.3% | 1.165 B | 1.14x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.84 B | +4.9% | 1.162 B | 1.13x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $7.23 B | +4.2% | 1.159 B | 1.12x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.55 B | +3.9% | 1.156 B | 1.12x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.82 B | +3.6% | 1.153 B | 1.11x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $7.08 B | +3.5% | 1.151 B | 1.10x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $6.22 B | -3.7% | 1.186 B | 1.22x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.60 B | +16.2% | 1.183 B | 1.22x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.98 B | +0.0% | 1.180 B | 1.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.25 B | -0.4% | 1.177 B | 1.20x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.52 B | +4.9% | 1.174 B | 1.19x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $6.94 B | +5.1% | 1.171 B | 1.18x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.31 B | +5.5% | 1.168 B | 1.18x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.58 B | +5.3% | 1.165 B | 1.17x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $6.84 B | +4.9% | 1.162 B | 1.16x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $7.23 B | +4.2% | 1.159 B | 1.15x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.55 B | +3.9% | 1.156 B | 1.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $6.82 B | +3.6% | 1.153 B | 1.14x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $7.08 B | +3.5% | 1.151 B | 1.13x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $20.89 | $26.11 | $31.33 | 1.2x | +23.9% |
-| 52 Weeks (1Y) | $20.04 | $25.05 | $30.06 | 1.2x | +1.2% |
-| 104 Weeks (2Y) | $20.75 | $25.94 | $31.13 | 1.1x | +2.4% |
-| 156 Weeks (3Y) | $21.16 | $26.45 | $31.74 | 1.1x | +2.2% |
+| 13 Weeks | $21.42 | $26.78 | $32.14 | 1.2x | +23.4% |
+| 52 Weeks (1Y) | $20.56 | $25.70 | $30.84 | 1.2x | +1.1% |
+| 104 Weeks (2Y) | $21.30 | $26.62 | $31.94 | 1.2x | +2.4% |
+| 156 Weeks (3Y) | $21.74 | $27.17 | $32.60 | 1.1x | +2.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ KHC currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($24.75) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($25.41) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

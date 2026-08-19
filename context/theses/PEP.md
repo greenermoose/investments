@@ -4,9 +4,9 @@
 - **Ticker:** PEP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $138.24 per share
-- **Current Price:** $138.24 per share
-- **Target Exit Price:** $152.22 per share
+- **Benchmark Entry Price:** $141.72 per share
+- **Current Price:** $141.72 per share
+- **Target Exit Price:** $155.78 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.1 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=77476
 
 ## Business Profile
-PepsiCo, Inc. (PEP) operates as an established participant within the Consumer Staples sector (Packaged Foods & Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PEP trades at $138.24 against a 3-year baseline price target of $152.22, generating a modeled annualized ROI of 3.3% under our disciplined 20-year hurdle standard.
+PepsiCo, Inc. (PEP) operates as an established participant within the Consumer Staples sector (Packaged Foods & Beverages). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, PEP trades at $141.72 against a 3-year baseline price target of $155.78, generating a modeled annualized ROI of 3.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.3% market share. Over our 3-year investment horizon, we model market share evolving to 15.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 PepsiCo, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.3%, fully justifying our SELL rating.
+PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $21.22 B | -3.7% | 1.367 B | 2.25x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $22.50 B | +16.2% | 1.363 B | 2.24x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $20.40 B | +0.0% | 1.360 B | 2.23x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $21.32 B | -0.5% | 1.357 B | 2.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $22.23 B | +4.8% | 1.353 B | 2.21x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $23.64 B | +5.1% | 1.350 B | 2.20x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $21.49 B | +5.3% | 1.346 B | 2.19x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $22.42 B | +5.1% | 1.343 B | 2.19x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $23.29 B | +4.8% | 1.340 B | 2.18x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $24.64 B | +4.2% | 1.336 B | 2.17x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $22.33 B | +3.9% | 1.333 B | 2.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $23.22 B | +3.6% | 1.330 B | 2.15x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $24.13 B | +3.6% | 1.326 B | 2.14x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $21.22 B | -3.7% | 1.367 B | 2.31x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $22.50 B | +16.2% | 1.363 B | 2.30x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $20.40 B | +0.0% | 1.360 B | 2.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $21.32 B | -0.5% | 1.357 B | 2.28x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $22.23 B | +4.8% | 1.353 B | 2.27x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $23.64 B | +5.1% | 1.350 B | 2.26x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $21.49 B | +5.3% | 1.346 B | 2.25x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $22.42 B | +5.1% | 1.343 B | 2.24x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $23.29 B | +4.8% | 1.340 B | 2.23x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $24.64 B | +4.2% | 1.336 B | 2.22x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $22.33 B | +3.9% | 1.333 B | 2.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $23.22 B | +3.6% | 1.330 B | 2.20x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $24.13 B | +3.6% | 1.326 B | 2.19x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $116.22 | $145.27 | $174.32 | 2.2x | +21.9% |
-| 52 Weeks (1Y) | $112.97 | $141.21 | $169.45 | 2.2x | +2.1% |
-| 104 Weeks (2Y) | $118.22 | $147.78 | $177.34 | 2.2x | +3.4% |
-| 156 Weeks (3Y) | $121.78 | $152.22 | $182.66 | 2.1x | +3.3% |
+| 13 Weeks | $119.38 | $149.23 | $179.08 | 2.3x | +22.9% |
+| 52 Weeks (1Y) | $116.03 | $145.04 | $174.05 | 2.3x | +2.3% |
+| 104 Weeks (2Y) | $120.94 | $151.17 | $181.40 | 2.2x | +3.3% |
+| 156 Weeks (3Y) | $124.62 | $155.78 | $186.94 | 2.2x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($138.24) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($141.72) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

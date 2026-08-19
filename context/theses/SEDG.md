@@ -4,9 +4,9 @@
 - **Ticker:** SEDG
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $30.79 per share
-- **Current Price:** $30.79 per share
-- **Target Exit Price:** $31.25 per share
+- **Benchmark Entry Price:** $30.50 per share
+- **Current Price:** $30.50 per share
+- **Target Exit Price:** $31.03 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1419612
 
 ## Business Profile
-SolarEdge Technologies, Inc. (SEDG) operates as an established participant within the Energy sector (Solar Inverters & Power Optimizers). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SEDG trades at $30.79 against a 3-year baseline price target of $31.25, generating a modeled annualized ROI of 0.5% under our disciplined 20-year hurdle standard.
+SolarEdge Technologies, Inc. (SEDG) operates as an established participant within the Energy sector (Solar Inverters & Power Optimizers). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SEDG trades at $30.50 against a 3-year baseline price target of $31.03, generating a modeled annualized ROI of 0.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 SolarEdge Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 2.3% market share. Over our 3-year investment horizon, we model market share evolving to 2.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 SolarEdge Technologies, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.5%, fully justifying our SELL rating.
+SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0.6%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.29 B | -5.5% | 0.061 B | 1.61x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.31 B | +14.6% | 0.061 B | 1.60x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.28 B | -0.3% | 0.060 B | 1.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.29 B | -3.3% | 0.060 B | 1.57x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.30 B | +3.8% | 0.060 B | 1.56x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.32 B | +2.6% | 0.060 B | 1.55x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.29 B | +2.5% | 0.059 B | 1.53x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.30 B | +2.7% | 0.059 B | 1.52x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.31 B | +3.1% | 0.059 B | 1.50x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.33 B | +2.1% | 0.059 B | 1.49x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.29 B | +1.7% | 0.059 B | 1.48x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.31 B | +2.1% | 0.058 B | 1.46x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.32 B | +2.5% | 0.058 B | 1.45x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.29 B | -5.5% | 0.061 B | 1.60x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.31 B | +14.6% | 0.061 B | 1.59x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.28 B | -0.3% | 0.060 B | 1.57x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.29 B | -3.3% | 0.060 B | 1.56x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.30 B | +3.8% | 0.060 B | 1.55x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.32 B | +2.6% | 0.060 B | 1.53x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.29 B | +2.5% | 0.059 B | 1.52x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.30 B | +2.7% | 0.059 B | 1.51x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.31 B | +3.1% | 0.059 B | 1.49x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.33 B | +2.1% | 0.059 B | 1.48x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.29 B | +1.7% | 0.059 B | 1.47x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.31 B | +2.1% | 0.058 B | 1.45x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.32 B | +2.5% | 0.058 B | 1.44x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $25.70 | $32.12 | $38.54 | 1.6x | +18.4% |
-| 52 Weeks (1Y) | $24.54 | $30.68 | $36.82 | 1.6x | -0.4% |
-| 104 Weeks (2Y) | $24.82 | $31.02 | $37.22 | 1.5x | +0.4% |
-| 156 Weeks (3Y) | $25.00 | $31.25 | $37.50 | 1.4x | +0.5% |
+| 13 Weeks | $25.53 | $31.91 | $38.29 | 1.6x | +19.8% |
+| 52 Weeks (1Y) | $24.38 | $30.48 | $36.58 | 1.6x | -0.1% |
+| 104 Weeks (2Y) | $24.65 | $30.81 | $36.97 | 1.5x | +0.5% |
+| 156 Weeks (3Y) | $24.82 | $31.03 | $37.24 | 1.4x | +0.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($30.79) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($30.50) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

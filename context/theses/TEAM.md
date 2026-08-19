@@ -4,9 +4,9 @@
 - **Ticker:** TEAM
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $158.34 per share
-- **Current Price:** $158.34 per share
-- **Target Exit Price:** $195.90 per share
+- **Benchmark Entry Price:** $167.16 per share
+- **Current Price:** $167.16 per share
+- **Target Exit Price:** $207.02 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650372
 
 ## Business Profile
-Atlassian Corporation (TEAM) operates as an established participant within the Information Technology sector (Team Collaboration Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TEAM trades at $158.34 against a 3-year baseline price target of $195.90, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
+Atlassian Corporation (TEAM) operates as an established participant within the Information Technology sector (Team Collaboration Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TEAM trades at $167.16 against a 3-year baseline price target of $207.02, generating a modeled annualized ROI of 9.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Atlassian Corporation addresses an estimated Total Addressable Market (TAM) of $99.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Atlassian Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.9%, fully justifying our HOLD rating.
+TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.66 B | +1.8% | 0.260 B | 6.27x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.80 B | +23.0% | 0.260 B | 6.22x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.66 B | +6.0% | 0.261 B | 6.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.78 B | +6.2% | 0.261 B | 6.11x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.90 B | +14.6% | 0.261 B | 6.06x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.07 B | +15.2% | 0.262 B | 6.01x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.94 B | +16.7% | 0.262 B | 5.95x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.06 B | +15.8% | 0.262 B | 5.90x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.17 B | +14.4% | 0.263 B | 5.85x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.33 B | +12.7% | 0.263 B | 5.80x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.16 B | +11.1% | 0.263 B | 5.74x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.28 B | +10.4% | 0.264 B | 5.69x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.40 B | +10.6% | 0.264 B | 5.64x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.66 B | +1.8% | 0.260 B | 6.62x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.80 B | +23.0% | 0.260 B | 6.56x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.66 B | +6.0% | 0.261 B | 6.51x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.78 B | +6.2% | 0.261 B | 6.45x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.90 B | +14.6% | 0.261 B | 6.40x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.07 B | +15.2% | 0.262 B | 6.34x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.94 B | +16.7% | 0.262 B | 6.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.06 B | +15.8% | 0.262 B | 6.23x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.17 B | +14.4% | 0.263 B | 6.18x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.33 B | +12.7% | 0.263 B | 6.12x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.16 B | +11.1% | 0.263 B | 6.07x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.28 B | +10.4% | 0.264 B | 6.01x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.40 B | +10.6% | 0.264 B | 5.96x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $136.02 | $170.03 | $204.04 | 6.1x | +33.0% |
-| 52 Weeks (1Y) | $132.62 | $165.78 | $198.94 | 6.1x | +4.7% |
-| 104 Weeks (2Y) | $146.63 | $183.29 | $219.95 | 5.8x | +7.6% |
-| 156 Weeks (3Y) | $156.72 | $195.90 | $235.08 | 5.6x | +7.4% |
+| 13 Weeks | $143.56 | $179.45 | $215.34 | 6.5x | +32.8% |
+| 52 Weeks (1Y) | $140.06 | $175.08 | $210.10 | 6.4x | +4.7% |
+| 104 Weeks (2Y) | $154.90 | $193.62 | $232.34 | 6.2x | +7.6% |
+| 156 Weeks (3Y) | $165.62 | $207.02 | $248.42 | 6.0x | +7.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ TEAM currently trades at a Price-to-Sales (P/S) multiple of ~6.3x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($158.34) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($167.16) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

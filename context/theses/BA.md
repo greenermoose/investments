@@ -4,9 +4,9 @@
 - **Ticker:** BA
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $225.95 per share
-- **Current Price:** $225.95 per share
-- **Target Exit Price:** $209.44 per share
+- **Benchmark Entry Price:** $221.59 per share
+- **Current Price:** $221.59 per share
+- **Target Exit Price:** $204.60 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.8 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=12927
 
 ## Business Profile
-The Boeing Company (BA) operates as an established participant within the Industrials sector (Aerospace & Defense). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BA trades at $225.95 against a 3-year baseline price target of $209.44, generating a modeled annualized ROI of -2.5% under our disciplined 20-year hurdle standard.
+The Boeing Company (BA) operates as an established participant within the Industrials sector (Aerospace & Defense). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, BA trades at $221.59 against a 3-year baseline price target of $204.60, generating a modeled annualized ROI of -2.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Boeing Company addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 11.7% market share. Over our 3-year investment horizon, we model market share evolving to 11.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Boeing Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -2.5%, fully justifying our AVOID rating.
+BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -2.6%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $22.15 B | -3.0% | 0.788 B | 2.03x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $23.56 B | +17.1% | 0.792 B | 2.01x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $21.42 B | +0.9% | 0.796 B | 1.98x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $22.46 B | +0.4% | 0.800 B | 1.96x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $23.49 B | +6.0% | 0.804 B | 1.93x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $25.05 B | +6.3% | 0.808 B | 1.91x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $22.86 B | +6.7% | 0.812 B | 1.88x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $23.91 B | +6.4% | 0.816 B | 1.86x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $24.89 B | +6.0% | 0.820 B | 1.83x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $26.38 B | +5.3% | 0.824 B | 1.81x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $23.97 B | +4.8% | 0.828 B | 1.78x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $24.98 B | +4.5% | 0.832 B | 1.76x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $26.00 B | +4.5% | 0.837 B | 1.73x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $22.15 B | -3.0% | 0.788 B | 1.99x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $23.56 B | +17.1% | 0.792 B | 1.97x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $21.42 B | +0.9% | 0.796 B | 1.94x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $22.46 B | +0.4% | 0.800 B | 1.92x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $23.49 B | +6.0% | 0.804 B | 1.89x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $25.05 B | +6.3% | 0.808 B | 1.87x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $22.86 B | +6.7% | 0.812 B | 1.84x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $23.91 B | +6.4% | 0.816 B | 1.82x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.89 B | +6.0% | 0.820 B | 1.79x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $26.38 B | +5.3% | 0.824 B | 1.77x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $23.97 B | +4.8% | 0.828 B | 1.74x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $24.98 B | +4.5% | 0.832 B | 1.72x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $26.00 B | +4.5% | 0.837 B | 1.69x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $189.43 | $236.79 | $284.15 | 2.0x | +20.6% |
-| 52 Weeks (1Y) | $174.62 | $218.28 | $261.94 | 1.9x | -3.4% |
-| 104 Weeks (2Y) | $172.66 | $215.83 | $259.00 | 1.8x | -2.3% |
-| 156 Weeks (3Y) | $167.55 | $209.44 | $251.33 | 1.7x | -2.5% |
+| 13 Weeks | $185.62 | $232.03 | $278.44 | 1.9x | +20.2% |
+| 52 Weeks (1Y) | $171.00 | $213.75 | $256.50 | 1.9x | -3.5% |
+| 104 Weeks (2Y) | $168.89 | $211.11 | $253.33 | 1.8x | -2.4% |
+| 156 Weeks (3Y) | $163.68 | $204.60 | $245.52 | 1.7x | -2.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ BA currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($225.95) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($221.59) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

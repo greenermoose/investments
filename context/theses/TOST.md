@@ -4,9 +4,9 @@
 - **Ticker:** TOST
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $34.95 per share
-- **Current Price:** $34.95 per share
-- **Target Exit Price:** $64.93 per share
+- **Benchmark Entry Price:** $35.62 per share
+- **Current Price:** $35.62 per share
+- **Target Exit Price:** $66.07 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** BUY
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001653772
 
 ## Business Profile
-Toast, Inc. (TOST) operates as an established participant within the Information Technology sector (Vertical SaaS & Fintech Solutions). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TOST trades at $34.95 against a 3-year baseline price target of $64.93, generating a modeled annualized ROI of 24.4% under our disciplined 20-year hurdle standard.
+Toast, Inc. (TOST) operates as an established participant within the Information Technology sector (Vertical SaaS & Fintech Solutions). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TOST trades at $35.62 against a 3-year baseline price target of $66.07, generating a modeled annualized ROI of 24.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Toast, Inc. addresses an estimated Total Addressable Market (TAM) of $98.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Toast, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +24.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TOST currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.4%, fully justifying our BUY rating.
+TOST currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.3%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.64 B | +10.2% | 0.576 B | 3.09x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.85 B | +34.8% | 0.577 B | 3.07x | Product launch ramp: Enterprise Multi-Unit Franchise Management Platform & Toast IQ AI |
-| 2027-Q1 | 2027-03-31 | $1.80 B | +18.9% | 0.578 B | 3.05x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.04 B | +22.9% | 0.580 B | 3.03x | Product launch ramp: Retail & International Foodservice Market Expansion |
-| 2027-Q3 | 2027-09-30 | $2.28 B | +38.9% | 0.581 B | 3.01x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.63 B | +42.2% | 0.583 B | 2.99x | Product launch ramp: Fintech Lending Capital & Embedded Payroll Monetization |
-| 2028-Q1 | 2028-03-31 | $2.62 B | +45.4% | 0.584 B | 2.97x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.89 B | +41.6% | 0.586 B | 2.95x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $3.08 B | +34.9% | 0.587 B | 2.93x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $3.33 B | +26.6% | 0.589 B | 2.91x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $3.17 B | +21.1% | 0.590 B | 2.89x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $3.39 B | +17.2% | 0.591 B | 2.87x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $3.62 B | +17.4% | 0.593 B | 2.85x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.64 B | +10.2% | 0.576 B | 3.15x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.85 B | +34.8% | 0.577 B | 3.13x | Product launch ramp: Enterprise Multi-Unit Franchise Management Platform & Toast IQ AI |
+| 2027-Q1 | 2027-03-31 | $1.80 B | +18.9% | 0.578 B | 3.11x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.04 B | +22.9% | 0.580 B | 3.09x | Product launch ramp: Retail & International Foodservice Market Expansion |
+| 2027-Q3 | 2027-09-30 | $2.28 B | +38.9% | 0.581 B | 3.07x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.63 B | +42.2% | 0.583 B | 3.05x | Product launch ramp: Fintech Lending Capital & Embedded Payroll Monetization |
+| 2028-Q1 | 2028-03-31 | $2.62 B | +45.4% | 0.584 B | 3.03x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.89 B | +41.6% | 0.586 B | 3.01x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.08 B | +34.9% | 0.587 B | 2.98x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $3.33 B | +26.6% | 0.589 B | 2.96x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $3.17 B | +21.1% | 0.590 B | 2.94x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $3.39 B | +17.2% | 0.591 B | 2.92x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.62 B | +17.4% | 0.593 B | 2.90x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ TOST currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $31.09 | $38.86 | $46.63 | 3.0x | +52.8% |
-| 52 Weeks (1Y) | $33.03 | $41.29 | $49.55 | 3.0x | +18.1% |
-| 104 Weeks (2Y) | $44.80 | $56.00 | $67.20 | 2.9x | +26.6% |
-| 156 Weeks (3Y) | $51.94 | $64.93 | $77.92 | 2.9x | +22.9% |
+| 13 Weeks | $31.70 | $39.63 | $47.56 | 3.1x | +53.2% |
+| 52 Weeks (1Y) | $33.69 | $42.11 | $50.53 | 3.1x | +18.2% |
+| 104 Weeks (2Y) | $45.57 | $56.96 | $68.35 | 3.0x | +26.5% |
+| 156 Weeks (3Y) | $52.86 | $66.07 | $79.28 | 2.9x | +22.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -94,6 +94,6 @@ TOST currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($34.95) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($35.62) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

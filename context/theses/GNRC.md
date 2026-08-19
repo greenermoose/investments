@@ -4,9 +4,9 @@
 - **Ticker:** GNRC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $221.25 per share
-- **Current Price:** $221.25 per share
-- **Target Exit Price:** $249.74 per share
+- **Benchmark Entry Price:** $207.45 per share
+- **Current Price:** $207.45 per share
+- **Target Exit Price:** $234.08 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1474735
 
 ## Business Profile
-Generac Holdings Inc. (GNRC) operates as an established participant within the Industrials sector (Power Generation & Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GNRC trades at $221.25 against a 3-year baseline price target of $249.74, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
+Generac Holdings Inc. (GNRC) operates as an established participant within the Industrials sector (Power Generation & Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GNRC trades at $207.45 against a 3-year baseline price target of $234.08, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Generac Holdings Inc. addresses an estimated Total Addressable Market (TAM) of $63.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Generac Holdings Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-GNRC currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
+GNRC currently trades at a Price-to-Sales (P/S) multiple of ~2.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.05 B | -2.3% | 0.059 B | 3.12x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.12 B | +18.3% | 0.059 B | 3.10x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.02 B | +1.4% | 0.059 B | 3.08x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.08 B | +0.6% | 0.058 B | 3.06x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.13 B | +7.7% | 0.058 B | 3.04x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.21 B | +8.1% | 0.058 B | 3.01x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.11 B | +8.6% | 0.058 B | 2.99x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.16 B | +7.6% | 0.058 B | 2.97x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.21 B | +7.2% | 0.058 B | 2.95x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.29 B | +6.3% | 0.058 B | 2.93x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.17 B | +5.6% | 0.057 B | 2.91x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.22 B | +5.5% | 0.057 B | 2.89x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.28 B | +5.5% | 0.057 B | 2.87x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.05 B | -2.3% | 0.059 B | 2.92x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.12 B | +18.3% | 0.059 B | 2.90x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.02 B | +1.4% | 0.059 B | 2.88x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.08 B | +0.6% | 0.058 B | 2.87x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.13 B | +7.7% | 0.058 B | 2.85x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.21 B | +8.1% | 0.058 B | 2.83x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.11 B | +8.6% | 0.058 B | 2.81x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.16 B | +7.6% | 0.058 B | 2.79x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.21 B | +7.2% | 0.058 B | 2.77x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.29 B | +6.3% | 0.058 B | 2.75x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.17 B | +5.6% | 0.057 B | 2.73x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.22 B | +5.5% | 0.057 B | 2.71x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.28 B | +5.5% | 0.057 B | 2.69x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ GNRC currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $185.88 | $232.35 | $278.82 | 3.1x | +21.6% |
-| 52 Weeks (1Y) | $182.40 | $228.00 | $273.60 | 3.0x | +3.1% |
-| 104 Weeks (2Y) | $190.83 | $238.54 | $286.25 | 3.0x | +3.8% |
-| 156 Weeks (3Y) | $199.79 | $249.74 | $299.69 | 2.9x | +4.1% |
+| 13 Weeks | $174.34 | $217.93 | $261.52 | 2.9x | +21.8% |
+| 52 Weeks (1Y) | $171.00 | $213.75 | $256.50 | 2.9x | +3.0% |
+| 104 Weeks (2Y) | $179.19 | $223.99 | $268.79 | 2.8x | +3.9% |
+| 156 Weeks (3Y) | $187.26 | $234.08 | $280.90 | 2.7x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ GNRC currently trades at a Price-to-Sales (P/S) multiple of ~3.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($221.25) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($207.45) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

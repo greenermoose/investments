@@ -4,9 +4,9 @@
 - **Ticker:** MU
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $1011.75 per share
-- **Current Price:** $1011.75 per share
-- **Target Exit Price:** $1240.61 per share
+- **Benchmark Entry Price:** $927.42 per share
+- **Current Price:** $927.42 per share
+- **Target Exit Price:** $1136.87 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=723125
 
 ## Business Profile
-Micron Technology, Inc. (MU) operates as an established participant within the Information Technology sector (Memory Semiconductors & HBM). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MU trades at $1011.75 against a 3-year baseline price target of $1240.61, generating a modeled annualized ROI of 9.6% under our disciplined 20-year hurdle standard.
+Micron Technology, Inc. (MU) operates as an established participant within the Information Technology sector (Memory Semiconductors & HBM). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MU trades at $927.42 against a 3-year baseline price target of $1136.87, generating a modeled annualized ROI of 9.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Micron Technology, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 3.1% market share. Over our 3-year investment horizon, we model market share evolving to 3.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Micron Technology, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +14.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~25.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.6%, fully justifying our HOLD rating.
+MU currently trades at a Price-to-Sales (P/S) multiple of ~28.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~23.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.6%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $9.44 B | +3.1% | 1.128 B | 30.53x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $10.27 B | +24.7% | 1.129 B | 30.14x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.57 B | +8.0% | 1.131 B | 29.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $10.32 B | +8.3% | 1.132 B | 29.38x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $11.06 B | +17.1% | 1.133 B | 29.00x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $12.12 B | +18.0% | 1.135 B | 28.62x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $11.37 B | +18.9% | 1.136 B | 28.24x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.16 B | +17.8% | 1.138 B | 27.86x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $12.87 B | +16.3% | 1.139 B | 27.48x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $13.85 B | +14.3% | 1.140 B | 27.09x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $12.86 B | +13.1% | 1.142 B | 26.71x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $13.62 B | +12.0% | 1.143 B | 26.33x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $14.41 B | +12.0% | 1.145 B | 25.95x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $9.44 B | +3.1% | 1.128 B | 27.98x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.27 B | +24.7% | 1.129 B | 27.63x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.57 B | +8.0% | 1.131 B | 27.28x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $10.32 B | +8.3% | 1.132 B | 26.93x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $11.06 B | +17.1% | 1.133 B | 26.58x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $12.12 B | +18.0% | 1.135 B | 26.23x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $11.37 B | +18.9% | 1.136 B | 25.88x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.16 B | +17.8% | 1.138 B | 25.53x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.87 B | +16.3% | 1.139 B | 25.18x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.85 B | +14.3% | 1.140 B | 24.83x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $12.86 B | +13.1% | 1.142 B | 24.48x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.62 B | +12.0% | 1.143 B | 24.13x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.41 B | +12.0% | 1.145 B | 23.78x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $870.94 | $1088.67 | $1306.40 | 29.9x | +34.1% |
-| 52 Weeks (1Y) | $844.62 | $1055.78 | $1266.94 | 29.0x | +4.4% |
-| 104 Weeks (2Y) | $935.81 | $1169.76 | $1403.71 | 27.5x | +7.5% |
-| 156 Weeks (3Y) | $992.49 | $1240.61 | $1488.73 | 25.9x | +7.0% |
+| 13 Weeks | $798.17 | $997.71 | $1197.25 | 27.4x | +33.9% |
+| 52 Weeks (1Y) | $773.90 | $967.38 | $1160.86 | 26.6x | +4.3% |
+| 104 Weeks (2Y) | $857.77 | $1072.21 | $1286.65 | 25.2x | +7.5% |
+| 156 Weeks (3Y) | $909.50 | $1136.87 | $1364.24 | 23.8x | +7.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~30.5x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($1011.75) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($927.42) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** TMUS
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $180.12 per share
-- **Current Price:** $180.12 per share
-- **Target Exit Price:** $206.47 per share
+- **Benchmark Entry Price:** $185.91 per share
+- **Current Price:** $185.91 per share
+- **Target Exit Price:** $213.49 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1283699
 
 ## Business Profile
-T-Mobile US, Inc. (TMUS) operates as an established participant within the Communication Services sector (Wireless Telecommunication). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TMUS trades at $180.12 against a 3-year baseline price target of $206.47, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
+T-Mobile US, Inc. (TMUS) operates as an established participant within the Communication Services sector (Wireless Telecommunication). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, TMUS trades at $185.91 against a 3-year baseline price target of $213.49, generating a modeled annualized ROI of 4.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 T-Mobile US, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 13.4% market share. Over our 3-year investment horizon, we model market share evolving to 12.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 T-Mobile US, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.7%, fully justifying our SELL rating.
+TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $21.99 B | -3.0% | 1.082 B | 2.24x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $23.38 B | +17.1% | 1.075 B | 2.22x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $21.26 B | +0.8% | 1.069 B | 2.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $22.28 B | +0.3% | 1.062 B | 2.19x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $23.31 B | +6.0% | 1.055 B | 2.18x | Communication Services core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $24.86 B | +6.3% | 1.048 B | 2.16x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $22.68 B | +6.7% | 1.042 B | 2.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $23.72 B | +6.5% | 1.035 B | 2.13x | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $24.70 B | +5.9% | 1.029 B | 2.12x | Communication Services core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $26.17 B | +5.3% | 1.022 B | 2.10x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $23.78 B | +4.9% | 1.016 B | 2.09x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $24.78 B | +4.5% | 1.009 B | 2.07x | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $25.80 B | +4.5% | 1.003 B | 2.06x | Communication Services core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $21.99 B | -3.0% | 1.082 B | 2.31x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $23.38 B | +17.1% | 1.075 B | 2.30x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $21.26 B | +0.8% | 1.069 B | 2.28x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $22.28 B | +0.3% | 1.062 B | 2.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $23.31 B | +6.0% | 1.055 B | 2.25x | Communication Services core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $24.86 B | +6.3% | 1.048 B | 2.24x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $22.68 B | +6.7% | 1.042 B | 2.22x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $23.72 B | +6.5% | 1.035 B | 2.21x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.70 B | +5.9% | 1.029 B | 2.19x | Communication Services core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $26.17 B | +5.3% | 1.022 B | 2.18x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $23.78 B | +4.9% | 1.016 B | 2.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $24.78 B | +4.5% | 1.009 B | 2.15x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $25.80 B | +4.5% | 1.003 B | 2.13x | Communication Services core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $152.42 | $190.52 | $228.62 | 2.2x | +25.2% |
-| 52 Weeks (1Y) | $149.16 | $186.45 | $223.74 | 2.2x | +3.5% |
-| 104 Weeks (2Y) | $158.16 | $197.70 | $237.24 | 2.1x | +4.8% |
-| 156 Weeks (3Y) | $165.18 | $206.47 | $247.76 | 2.1x | +4.7% |
+| 13 Weeks | $157.29 | $196.61 | $235.93 | 2.3x | +25.1% |
+| 52 Weeks (1Y) | $153.94 | $192.43 | $230.92 | 2.2x | +3.5% |
+| 104 Weeks (2Y) | $163.38 | $204.23 | $245.08 | 2.2x | +4.8% |
+| 156 Weeks (3Y) | $170.79 | $213.49 | $256.19 | 2.1x | +4.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ TMUS currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($180.12) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($185.91) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

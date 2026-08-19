@@ -4,9 +4,9 @@
 - **Ticker:** EOSE
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $3.93 per share
-- **Current Price:** $3.93 per share
-- **Target Exit Price:** $3.93 per share
+- **Benchmark Entry Price:** $3.54 per share
+- **Current Price:** $3.54 per share
+- **Target Exit Price:** $3.54 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1805077
 
 ## Business Profile
-Eos Energy Enterprises, Inc. (EOSE) operates as an established participant within the Energy sector (Zinc-Based Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EOSE trades at $3.93 against a 3-year baseline price target of $3.93, generating a modeled annualized ROI of 0% under our disciplined 20-year hurdle standard.
+Eos Energy Enterprises, Inc. (EOSE) operates as an established participant within the Energy sector (Zinc-Based Energy Storage). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EOSE trades at $3.54 against a 3-year baseline price target of $3.54, generating a modeled annualized ROI of 0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Eos Energy Enterprises, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.2% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Eos Energy Enterprises, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EOSE currently trades at a Price-to-Sales (P/S) multiple of ~11.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~10.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0%, fully justifying our SELL rating.
+EOSE currently trades at a Price-to-Sales (P/S) multiple of ~10.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.03 B | -4.8% | 0.340 B | 11.79x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.03 B | +0.6% | 0.338 B | 11.69x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.03 B | -9.2% | 0.337 B | 11.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.03 B | -5.7% | 0.336 B | 11.50x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.03 B | -2.1% | 0.334 B | 11.40x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.03 B | +3.4% | 0.333 B | 11.30x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.03 B | -6.7% | 0.332 B | 11.20x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.03 B | -3.1% | 0.331 B | 11.10x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.03 B | +0.6% | 0.329 B | 11.00x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.03 B | +6.3% | 0.328 B | 10.91x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.03 B | -4.1% | 0.327 B | 10.81x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.03 B | -0.4% | 0.326 B | 10.71x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.03 B | +3.4% | 0.324 B | 10.61x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.03 B | -4.8% | 0.340 B | 10.62x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.03 B | +0.6% | 0.338 B | 10.53x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.03 B | -9.2% | 0.337 B | 10.44x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.03 B | -5.7% | 0.336 B | 10.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.03 B | -2.1% | 0.334 B | 10.27x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.03 B | +3.4% | 0.333 B | 10.18x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.03 B | -6.7% | 0.332 B | 10.09x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.03 B | -3.1% | 0.331 B | 10.00x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.03 B | +0.6% | 0.329 B | 9.91x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.03 B | +6.3% | 0.328 B | 9.83x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.03 B | -4.1% | 0.327 B | 9.74x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.03 B | -0.4% | 0.326 B | 9.65x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.03 B | +3.4% | 0.324 B | 9.56x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ EOSE currently trades at a Price-to-Sales (P/S) multiple of ~11.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $3.28 | $4.10 | $4.92 | 11.6x | +18.5% |
-| 52 Weeks (1Y) | $3.28 | $4.10 | $4.92 | 11.4x | +4.3% |
-| 104 Weeks (2Y) | $3.21 | $4.01 | $4.81 | 11.0x | +1.0% |
-| 156 Weeks (3Y) | $3.14 | $3.93 | $4.72 | 10.6x | +0.0% |
+| 13 Weeks | $2.96 | $3.70 | $4.44 | 10.4x | +19.3% |
+| 52 Weeks (1Y) | $2.95 | $3.69 | $4.43 | 10.3x | +4.2% |
+| 104 Weeks (2Y) | $2.89 | $3.61 | $4.33 | 9.9x | +1.0% |
+| 156 Weeks (3Y) | $2.83 | $3.54 | $4.25 | 9.6x | +0.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ EOSE currently trades at a Price-to-Sales (P/S) multiple of ~11.8x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($3.93) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($3.54) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

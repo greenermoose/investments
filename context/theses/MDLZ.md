@@ -4,9 +4,9 @@
 - **Ticker:** MDLZ
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $62.18 per share
-- **Current Price:** $62.18 per share
-- **Target Exit Price:** $66.04 per share
+- **Benchmark Entry Price:** $63.80 per share
+- **Current Price:** $63.80 per share
+- **Target Exit Price:** $67.76 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1103982
 
 ## Business Profile
-Mondelez International, Inc. (MDLZ) operates as an established participant within the Consumer Staples sector (Packaged Foods & Confectionery). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MDLZ trades at $62.18 against a 3-year baseline price target of $66.04, generating a modeled annualized ROI of 2.0% under our disciplined 20-year hurdle standard.
+Mondelez International, Inc. (MDLZ) operates as an established participant within the Consumer Staples sector (Packaged Foods & Confectionery). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MDLZ trades at $63.80 against a 3-year baseline price target of $67.76, generating a modeled annualized ROI of 2.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Mondelez International, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 6.9% market share. Over our 3-year investment horizon, we model market share evolving to 6.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Mondelez International, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.0%, fully justifying our SELL rating.
+MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $9.63 B | -3.6% | 1.282 B | 2.09x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $10.21 B | +16.3% | 1.279 B | 2.08x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.25 B | +0.0% | 1.275 B | 2.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $9.67 B | -0.5% | 1.272 B | 2.05x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $10.08 B | +4.7% | 1.269 B | 2.03x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.72 B | +5.0% | 1.266 B | 2.02x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $9.75 B | +5.4% | 1.263 B | 2.01x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $10.17 B | +5.1% | 1.259 B | 1.99x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $10.56 B | +4.8% | 1.256 B | 1.98x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $11.18 B | +4.2% | 1.253 B | 1.96x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $10.13 B | +3.9% | 1.250 B | 1.95x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $10.53 B | +3.6% | 1.247 B | 1.93x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $10.95 B | +3.6% | 1.244 B | 1.92x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $9.63 B | -3.6% | 1.282 B | 2.15x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $10.21 B | +16.3% | 1.279 B | 2.13x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.25 B | +0.0% | 1.275 B | 2.12x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $9.67 B | -0.5% | 1.272 B | 2.10x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $10.08 B | +4.7% | 1.269 B | 2.09x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.72 B | +5.0% | 1.266 B | 2.07x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $9.75 B | +5.4% | 1.263 B | 2.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $10.17 B | +5.1% | 1.259 B | 2.04x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $10.56 B | +4.8% | 1.256 B | 2.03x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $11.18 B | +4.2% | 1.253 B | 2.01x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $10.13 B | +3.9% | 1.250 B | 2.00x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $10.53 B | +3.6% | 1.247 B | 1.98x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $10.95 B | +3.6% | 1.244 B | 1.97x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $52.37 | $65.46 | $78.55 | 2.0x | +22.8% |
-| 52 Weeks (1Y) | $50.18 | $62.72 | $75.26 | 2.0x | +0.9% |
-| 104 Weeks (2Y) | $51.96 | $64.95 | $77.94 | 2.0x | +2.2% |
-| 156 Weeks (3Y) | $52.83 | $66.04 | $79.25 | 1.9x | +2.0% |
+| 13 Weeks | $53.65 | $67.06 | $80.47 | 2.1x | +22.1% |
+| 52 Weeks (1Y) | $51.66 | $64.58 | $77.50 | 2.1x | +1.2% |
+| 104 Weeks (2Y) | $53.27 | $66.59 | $79.91 | 2.0x | +2.2% |
+| 156 Weeks (3Y) | $54.21 | $67.76 | $81.31 | 2.0x | +2.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MDLZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($62.18) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($63.80) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

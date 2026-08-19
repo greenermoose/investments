@@ -4,9 +4,9 @@
 - **Ticker:** MMM
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $180.21 per share
-- **Current Price:** $180.21 per share
-- **Target Exit Price:** $202.82 per share
+- **Benchmark Entry Price:** $182.87 per share
+- **Current Price:** $182.87 per share
+- **Target Exit Price:** $205.77 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=66740
 
 ## Business Profile
-3M Company (MMM) operates as an established participant within the Industrials sector (Diversified Industrial Conglomerate). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MMM trades at $180.21 against a 3-year baseline price target of $202.82, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+3M Company (MMM) operates as an established participant within the Industrials sector (Diversified Industrial Conglomerate). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MMM trades at $182.87 against a 3-year baseline price target of $205.77, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 3M Company addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 3.3% market share. Over our 3-year investment horizon, we model market share evolving to 3.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 3M Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
+MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $6.27 B | -2.3% | 0.516 B | 3.74x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.69 B | +17.9% | 0.514 B | 3.72x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.10 B | +1.6% | 0.513 B | 3.69x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.41 B | +1.1% | 0.512 B | 3.67x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $6.72 B | +7.2% | 0.511 B | 3.64x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $7.19 B | +7.5% | 0.509 B | 3.62x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $6.58 B | +7.9% | 0.508 B | 3.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.90 B | +7.7% | 0.507 B | 3.57x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $7.20 B | +7.2% | 0.505 B | 3.54x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $7.65 B | +6.4% | 0.504 B | 3.52x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.97 B | +5.9% | 0.503 B | 3.49x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.27 B | +5.4% | 0.502 B | 3.47x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $7.59 B | +5.4% | 0.500 B | 3.44x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $6.27 B | -2.3% | 0.516 B | 3.80x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.69 B | +17.9% | 0.514 B | 3.77x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.10 B | +1.6% | 0.513 B | 3.74x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.41 B | +1.1% | 0.512 B | 3.72x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.72 B | +7.2% | 0.511 B | 3.69x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.19 B | +7.5% | 0.509 B | 3.67x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.58 B | +7.9% | 0.508 B | 3.64x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.90 B | +7.7% | 0.507 B | 3.62x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.20 B | +7.2% | 0.505 B | 3.59x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $7.65 B | +6.4% | 0.504 B | 3.57x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.97 B | +5.9% | 0.503 B | 3.54x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $7.27 B | +5.4% | 0.502 B | 3.52x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $7.59 B | +5.4% | 0.500 B | 3.49x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $152.86 | $191.07 | $229.28 | 3.7x | +26.4% |
-| 52 Weeks (1Y) | $147.71 | $184.64 | $221.57 | 3.6x | +2.5% |
-| 104 Weeks (2Y) | $156.30 | $195.37 | $234.44 | 3.5x | +4.1% |
-| 156 Weeks (3Y) | $162.26 | $202.82 | $243.38 | 3.4x | +4.0% |
+| 13 Weeks | $154.94 | $193.67 | $232.40 | 3.7x | +25.8% |
+| 52 Weeks (1Y) | $149.74 | $187.17 | $224.60 | 3.7x | +2.4% |
+| 104 Weeks (2Y) | $158.50 | $198.13 | $237.76 | 3.6x | +4.1% |
+| 156 Weeks (3Y) | $164.62 | $205.77 | $246.92 | 3.5x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MMM currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($180.21) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($182.87) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

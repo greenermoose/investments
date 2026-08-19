@@ -4,8 +4,8 @@
 - **Ticker:** ODFL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $211.96 per share
-- **Current Price:** $211.96 per share
+- **Benchmark Entry Price:** $211.77 per share
+- **Current Price:** $211.77 per share
 - **Target Exit Price:** $238.37 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=878927
 
 ## Business Profile
-Old Dominion Freight Line, Inc. (ODFL) operates as an established participant within the Industrials sector (Less-Than-Truckload (LTL) Freight). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ODFL trades at $211.96 against a 3-year baseline price target of $238.37, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Old Dominion Freight Line, Inc. (ODFL) operates as an established participant within the Industrials sector (Less-Than-Truckload (LTL) Freight). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ODFL trades at $211.77 against a 3-year baseline price target of $238.37, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Old Dominion Freight Line, Inc. addresses an estimated Total Addressable Market (TAM) of $83.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,14 +44,14 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.39 B | -2.5% | 0.208 B | 7.98x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.49 B | +18.1% | 0.207 B | 7.93x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2026-Q3 (Current) | 2026-09-30 | $1.39 B | -2.5% | 0.208 B | 7.97x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.49 B | +18.1% | 0.207 B | 7.92x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
 | 2027-Q1 | 2027-03-31 | $1.36 B | +2.1% | 0.207 B | 7.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.43 B | +1.3% | 0.206 B | 7.82x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.50 B | +7.7% | 0.206 B | 7.77x | Industrials core demand expansion and operational execution |
+| 2027-Q2 | 2027-06-30 | $1.43 B | +1.3% | 0.206 B | 7.81x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.50 B | +7.7% | 0.206 B | 7.76x | Industrials core demand expansion and operational execution |
 | 2027-Q4 | 2027-12-31 | $1.60 B | +7.5% | 0.205 B | 7.71x | Product launch ramp: Platform Automation & Premium Tier Monetization |
 | 2028-Q1 | 2028-03-31 | $1.47 B | +7.9% | 0.205 B | 7.66x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.54 B | +7.6% | 0.204 B | 7.61x | Industrials core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $1.54 B | +7.6% | 0.204 B | 7.60x | Industrials core demand expansion and operational execution |
 | 2028-Q3 | 2028-09-30 | $1.61 B | +7.0% | 0.204 B | 7.55x | Industrials core demand expansion and operational execution |
 | 2028-Q4 | 2028-12-31 | $1.70 B | +6.5% | 0.203 B | 7.50x | Year-end commercial procurement and budget deployment |
 | 2029-Q1 | 2029-03-31 | $1.55 B | +5.6% | 0.203 B | 7.45x | Post-holiday seasonal normalization and channel inventory reset |
@@ -71,9 +71,9 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $180.13 | $225.16 | $270.19 | 7.8x | +27.3% |
-| 52 Weeks (1Y) | $174.41 | $218.01 | $261.61 | 7.8x | +2.9% |
-| 104 Weeks (2Y) | $184.16 | $230.20 | $276.24 | 7.5x | +4.2% |
+| 13 Weeks | $179.90 | $224.87 | $269.84 | 7.8x | +27.1% |
+| 52 Weeks (1Y) | $174.18 | $217.73 | $261.28 | 7.8x | +2.8% |
+| 104 Weeks (2Y) | $184.16 | $230.20 | $276.24 | 7.5x | +4.3% |
 | 156 Weeks (3Y) | $190.70 | $238.37 | $286.04 | 7.3x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
@@ -97,6 +97,6 @@ ODFL currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($211.96) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($211.77) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** NXPI
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $232.72 per share
-- **Current Price:** $232.72 per share
-- **Target Exit Price:** $287.03 per share
+- **Benchmark Entry Price:** $228.03 per share
+- **Current Price:** $228.03 per share
+- **Target Exit Price:** $281.11 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1413447
 
 ## Business Profile
-NXP Semiconductors N.V. (NXPI) operates as an established participant within the Information Technology sector (Automotive & Industrial Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NXPI trades at $232.72 against a 3-year baseline price target of $287.03, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+NXP Semiconductors N.V. (NXPI) operates as an established participant within the Information Technology sector (Automotive & Industrial Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, NXPI trades at $228.03 against a 3-year baseline price target of $281.11, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 NXP Semiconductors N.V. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 NXP Semiconductors N.V.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
+NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.06 B | +2.0% | 0.253 B | 4.85x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.31 B | +23.1% | 0.253 B | 4.81x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.07 B | +6.3% | 0.253 B | 4.77x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.29 B | +6.6% | 0.254 B | 4.73x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.51 B | +14.8% | 0.254 B | 4.69x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $3.83 B | +15.6% | 0.254 B | 4.65x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $3.57 B | +16.3% | 0.255 B | 4.61x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $3.80 B | +15.4% | 0.255 B | 4.57x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $4.00 B | +14.1% | 0.255 B | 4.53x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $4.30 B | +12.2% | 0.256 B | 4.49x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $3.97 B | +11.2% | 0.256 B | 4.45x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $4.19 B | +10.3% | 0.256 B | 4.41x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $4.42 B | +10.5% | 0.257 B | 4.37x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.06 B | +2.0% | 0.253 B | 4.76x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.31 B | +23.1% | 0.253 B | 4.72x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.07 B | +6.3% | 0.253 B | 4.68x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.29 B | +6.6% | 0.254 B | 4.64x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.51 B | +14.8% | 0.254 B | 4.60x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.83 B | +15.6% | 0.254 B | 4.56x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.57 B | +16.3% | 0.255 B | 4.52x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $3.80 B | +15.4% | 0.255 B | 4.48x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.00 B | +14.1% | 0.255 B | 4.44x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.30 B | +12.2% | 0.256 B | 4.40x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $3.97 B | +11.2% | 0.256 B | 4.36x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.19 B | +10.3% | 0.256 B | 4.32x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.42 B | +10.5% | 0.257 B | 4.28x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $199.28 | $249.10 | $298.92 | 4.8x | +31.3% |
-| 52 Weeks (1Y) | $194.69 | $243.36 | $292.03 | 4.7x | +4.6% |
-| 104 Weeks (2Y) | $216.02 | $270.02 | $324.02 | 4.5x | +7.7% |
-| 156 Weeks (3Y) | $229.62 | $287.03 | $344.44 | 4.4x | +7.2% |
+| 13 Weeks | $195.10 | $243.87 | $292.64 | 4.7x | +30.8% |
+| 52 Weeks (1Y) | $190.95 | $238.69 | $286.43 | 4.6x | +4.7% |
+| 104 Weeks (2Y) | $211.73 | $264.66 | $317.59 | 4.4x | +7.7% |
+| 156 Weeks (3Y) | $224.89 | $281.11 | $337.33 | 4.3x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ NXPI currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($232.72) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($228.03) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

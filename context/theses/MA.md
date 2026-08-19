@@ -4,9 +4,9 @@
 - **Ticker:** MA
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $562.26 per share
-- **Current Price:** $562.26 per share
-- **Target Exit Price:** $758.24 per share
+- **Benchmark Entry Price:** $579.00 per share
+- **Current Price:** $579.00 per share
+- **Target Exit Price:** $781.05 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1141391
 
 ## Business Profile
-Mastercard Incorporated (MA) operates as an established participant within the Financials sector (Transaction & Payment Processing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MA trades at $562.26 against a 3-year baseline price target of $758.24, generating a modeled annualized ROI of 12.9% under our disciplined 20-year hurdle standard.
+Mastercard Incorporated (MA) operates as an established participant within the Financials sector (Transaction & Payment Processing). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MA trades at $579.00 against a 3-year baseline price target of $781.05, generating a modeled annualized ROI of 12.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Mastercard Incorporated addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 3.8% market share. Over our 3-year investment horizon, we model market share evolving to 4.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Mastercard Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +11.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~14.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.9%, fully justifying our HOLD rating.
+MA currently trades at a Price-to-Sales (P/S) multiple of ~15.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.18 B | +1.1% | 0.887 B | 15.40x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $8.83 B | +22.3% | 0.884 B | 15.34x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.17 B | +5.6% | 0.880 B | 15.27x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.72 B | +5.6% | 0.877 B | 15.21x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.28 B | +13.4% | 0.874 B | 15.14x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.08 B | +14.1% | 0.870 B | 15.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $9.38 B | +14.7% | 0.867 B | 15.02x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $9.95 B | +14.2% | 0.864 B | 14.95x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $10.48 B | +12.9% | 0.861 B | 14.89x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $11.22 B | +11.3% | 0.857 B | 14.82x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $10.35 B | +10.3% | 0.854 B | 14.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $10.90 B | +9.6% | 0.851 B | 14.69x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $11.48 B | +9.6% | 0.848 B | 14.63x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $8.18 B | +1.1% | 0.887 B | 15.86x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.83 B | +22.3% | 0.884 B | 15.79x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.17 B | +5.6% | 0.880 B | 15.73x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.72 B | +5.6% | 0.877 B | 15.66x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.28 B | +13.4% | 0.874 B | 15.60x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.08 B | +14.1% | 0.870 B | 15.53x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $9.38 B | +14.7% | 0.867 B | 15.46x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $9.95 B | +14.2% | 0.864 B | 15.40x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $10.48 B | +12.9% | 0.861 B | 15.33x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $11.22 B | +11.3% | 0.857 B | 15.27x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $10.35 B | +10.3% | 0.854 B | 15.20x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $10.90 B | +9.6% | 0.851 B | 15.14x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $11.48 B | +9.6% | 0.848 B | 15.07x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $482.34 | $602.92 | $723.50 | 15.1x | +32.2% |
-| 52 Weeks (1Y) | $485.35 | $606.69 | $728.03 | 15.2x | +7.9% |
-| 104 Weeks (2Y) | $551.51 | $689.39 | $827.27 | 14.9x | +10.7% |
-| 156 Weeks (3Y) | $606.59 | $758.24 | $909.89 | 14.6x | +10.5% |
+| 13 Weeks | $496.72 | $620.90 | $745.08 | 15.5x | +32.2% |
+| 52 Weeks (1Y) | $499.77 | $624.71 | $749.65 | 15.6x | +7.9% |
+| 104 Weeks (2Y) | $568.19 | $710.24 | $852.29 | 15.3x | +10.8% |
+| 156 Weeks (3Y) | $624.84 | $781.05 | $937.26 | 15.1x | +10.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~15.4x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($562.26) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($579.00) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

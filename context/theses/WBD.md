@@ -4,9 +4,9 @@
 - **Ticker:** WBD
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $27.93 per share
-- **Current Price:** $27.93 per share
-- **Target Exit Price:** $18.90 per share
+- **Benchmark Entry Price:** $28.62 per share
+- **Current Price:** $28.62 per share
+- **Target Exit Price:** $19.42 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 4.5 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1437107
 
 ## Business Profile
-Warner Bros. Discovery, Inc. (WBD) operates as an established participant within the Communication Services sector (Entertainment & Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WBD trades at $27.93 against a 3-year baseline price target of $18.90, generating a modeled annualized ROI of -12.2% under our disciplined 20-year hurdle standard.
+Warner Bros. Discovery, Inc. (WBD) operates as an established participant within the Communication Services sector (Entertainment & Media). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, WBD trades at $28.62 against a 3-year baseline price target of $19.42, generating a modeled annualized ROI of -12.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Warner Bros. Discovery, Inc. addresses an estimated Total Addressable Market (TAM) of $650.0B across its primary Communication Services domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 5.7% market share. Over our 3-year investment horizon, we model market share evolving to 4.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Warner Bros. Discovery, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of -3.0%. Growth is supported by structural demand dynamics in Communication Services, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-WBD currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -12.2%, fully justifying our AVOID rating.
+WBD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -12.1%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $9.27 B | -8.6% | 2.507 B | 1.91x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.67 B | +10.3% | 2.513 B | 1.87x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.60 B | -5.2% | 2.520 B | 1.83x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.81 B | -6.0% | 2.526 B | 1.79x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.02 B | -2.7% | 2.532 B | 1.75x | Communication Services core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $9.40 B | -2.8% | 2.539 B | 1.71x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $8.36 B | -2.7% | 2.545 B | 1.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $8.57 B | -2.7% | 2.551 B | 1.63x | Communication Services core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $8.77 B | -2.8% | 2.558 B | 1.59x | Communication Services core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $9.14 B | -2.8% | 2.564 B | 1.55x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $8.13 B | -2.7% | 2.570 B | 1.51x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $8.33 B | -2.8% | 2.577 B | 1.47x | Communication Services core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $8.53 B | -2.8% | 2.583 B | 1.43x | Communication Services core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $9.27 B | -8.6% | 2.507 B | 1.95x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.67 B | +10.3% | 2.513 B | 1.91x | Product launch ramp: Communication Services Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.60 B | -5.2% | 2.520 B | 1.87x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.81 B | -6.0% | 2.526 B | 1.83x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.02 B | -2.7% | 2.532 B | 1.79x | Communication Services core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $9.40 B | -2.8% | 2.539 B | 1.75x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $8.36 B | -2.7% | 2.545 B | 1.71x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $8.57 B | -2.7% | 2.551 B | 1.67x | Communication Services core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $8.77 B | -2.8% | 2.558 B | 1.63x | Communication Services core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $9.14 B | -2.8% | 2.564 B | 1.59x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $8.13 B | -2.7% | 2.570 B | 1.55x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $8.33 B | -2.8% | 2.577 B | 1.51x | Communication Services core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.53 B | -2.8% | 2.583 B | 1.47x | Communication Services core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ WBD currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $23.02 | $28.78 | $34.54 | 1.9x | +12.7% |
-| 52 Weeks (1Y) | $19.96 | $24.95 | $29.94 | 1.8x | -10.7% |
-| 104 Weeks (2Y) | $17.46 | $21.82 | $26.18 | 1.6x | -11.6% |
-| 156 Weeks (3Y) | $15.12 | $18.90 | $22.68 | 1.4x | -12.2% |
+| 13 Weeks | $23.52 | $29.40 | $35.28 | 1.9x | +11.4% |
+| 52 Weeks (1Y) | $20.42 | $25.52 | $30.62 | 1.8x | -10.8% |
+| 104 Weeks (2Y) | $17.90 | $22.37 | $26.84 | 1.6x | -11.6% |
+| 156 Weeks (3Y) | $15.54 | $19.42 | $23.30 | 1.5x | -12.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ WBD currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($27.93) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($28.62) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

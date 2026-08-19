@@ -4,9 +4,9 @@
 - **Ticker:** GILD
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $138.92 per share
-- **Current Price:** $138.92 per share
-- **Target Exit Price:** $143.76 per share
+- **Benchmark Entry Price:** $148.56 per share
+- **Current Price:** $148.56 per share
+- **Target Exit Price:** $153.82 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.2 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=882095
 
 ## Business Profile
-Gilead Sciences, Inc. (GILD) operates as an established participant within the Health Care sector (Biopharmaceuticals). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GILD trades at $138.92 against a 3-year baseline price target of $143.76, generating a modeled annualized ROI of 1.1% under our disciplined 20-year hurdle standard.
+Gilead Sciences, Inc. (GILD) operates as an established participant within the Health Care sector (Biopharmaceuticals). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GILD trades at $148.56 against a 3-year baseline price target of $153.82, generating a modeled annualized ROI of 1.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Gilead Sciences, Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 2.6% market share. Over our 3-year investment horizon, we model market share evolving to 2.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Gilead Sciences, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.1%, fully justifying our SELL rating.
+GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.19 B | -4.4% | 1.242 B | 6.06x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.61 B | +15.4% | 1.238 B | 6.02x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.88 B | -0.8% | 1.235 B | 5.98x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.16 B | -1.3% | 1.232 B | 5.93x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $7.45 B | +3.6% | 1.229 B | 5.89x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $7.90 B | +3.8% | 1.226 B | 5.85x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $7.16 B | +4.0% | 1.223 B | 5.81x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $7.45 B | +4.0% | 1.220 B | 5.77x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $7.72 B | +3.6% | 1.217 B | 5.73x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $8.15 B | +3.2% | 1.214 B | 5.69x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $7.37 B | +2.9% | 1.211 B | 5.65x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.65 B | +2.6% | 1.208 B | 5.61x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $7.93 B | +2.7% | 1.205 B | 5.57x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.19 B | -4.4% | 1.242 B | 6.48x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.61 B | +15.4% | 1.238 B | 6.43x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.88 B | -0.8% | 1.235 B | 6.39x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $7.16 B | -1.3% | 1.232 B | 6.35x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $7.45 B | +3.6% | 1.229 B | 6.30x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.90 B | +3.8% | 1.226 B | 6.26x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $7.16 B | +4.0% | 1.223 B | 6.22x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.45 B | +4.0% | 1.220 B | 6.18x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.72 B | +3.6% | 1.217 B | 6.13x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.15 B | +3.2% | 1.214 B | 6.09x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.37 B | +2.9% | 1.211 B | 6.05x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $7.65 B | +2.6% | 1.208 B | 6.00x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $7.93 B | +2.7% | 1.205 B | 5.96x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $116.84 | $146.05 | $175.26 | 5.9x | +22.2% |
-| 52 Weeks (1Y) | $111.76 | $139.70 | $167.64 | 5.9x | +0.6% |
-| 104 Weeks (2Y) | $113.86 | $142.33 | $170.80 | 5.7x | +1.2% |
-| 156 Weeks (3Y) | $115.01 | $143.76 | $172.51 | 5.6x | +1.1% |
+| 13 Weeks | $124.90 | $156.13 | $187.36 | 6.3x | +22.0% |
+| 52 Weeks (1Y) | $119.53 | $149.41 | $179.29 | 6.3x | +0.6% |
+| 104 Weeks (2Y) | $121.82 | $152.27 | $182.72 | 6.1x | +1.2% |
+| 156 Weeks (3Y) | $123.06 | $153.82 | $184.58 | 6.0x | +1.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ GILD currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($138.92) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($148.56) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

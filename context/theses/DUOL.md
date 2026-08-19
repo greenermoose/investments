@@ -4,9 +4,9 @@
 - **Ticker:** DUOL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $139.64 per share
-- **Current Price:** $139.64 per share
-- **Target Exit Price:** $294.71 per share
+- **Benchmark Entry Price:** $143.22 per share
+- **Current Price:** $143.22 per share
+- **Target Exit Price:** $302.05 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.2 / 10.0
 - **Rating:** BUY
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001562088
 
 ## Business Profile
-Duolingo, Inc. (DUOL) operates as an established participant within the Consumer Discretionary sector (Digital Learning & EdTech Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DUOL trades at $139.64 against a 3-year baseline price target of $294.71, generating a modeled annualized ROI of 29.8% under our disciplined 20-year hurdle standard.
+Duolingo, Inc. (DUOL) operates as an established participant within the Consumer Discretionary sector (Digital Learning & EdTech Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, DUOL trades at $143.22 against a 3-year baseline price target of $302.05, generating a modeled annualized ROI of 29.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Duolingo, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.3% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Duolingo, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +25.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-DUOL currently trades at a Price-to-Sales (P/S) multiple of ~5.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 29.8%, fully justifying our BUY rating.
+DUOL currently trades at a Price-to-Sales (P/S) multiple of ~5.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 29.8%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.29 B | +11.7% | 0.047 B | 5.67x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.33 B | +37.9% | 0.047 B | 5.64x | Product launch ramp: Duolingo Max AI Advanced Conversation Tiers Global Expansion |
-| 2027-Q1 | 2027-03-31 | $0.33 B | +21.4% | 0.047 B | 5.60x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.38 B | +31.9% | 0.047 B | 5.56x | Product launch ramp: Math & Music Core Curriculum Gamification & School Integration |
-| 2027-Q3 | 2027-09-30 | $0.43 B | +49.9% | 0.047 B | 5.52x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.51 B | +55.8% | 0.047 B | 5.48x | Product launch ramp: Duolingo English Test (DET) University & Corporate Enterprise Adoption |
-| 2028-Q1 | 2028-03-31 | $0.53 B | +59.1% | 0.047 B | 5.45x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.58 B | +53.9% | 0.048 B | 5.41x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.62 B | +44.0% | 0.048 B | 5.37x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.67 B | +30.5% | 0.048 B | 5.33x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.64 B | +20.4% | 0.048 B | 5.30x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.68 B | +16.9% | 0.048 B | 5.26x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.72 B | +16.2% | 0.048 B | 5.22x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.29 B | +11.7% | 0.047 B | 5.82x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.33 B | +37.9% | 0.047 B | 5.78x | Product launch ramp: Duolingo Max AI Advanced Conversation Tiers Global Expansion |
+| 2027-Q1 | 2027-03-31 | $0.33 B | +21.4% | 0.047 B | 5.74x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.38 B | +31.9% | 0.047 B | 5.70x | Product launch ramp: Math & Music Core Curriculum Gamification & School Integration |
+| 2027-Q3 | 2027-09-30 | $0.43 B | +49.9% | 0.047 B | 5.66x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.51 B | +55.8% | 0.047 B | 5.62x | Product launch ramp: Duolingo English Test (DET) University & Corporate Enterprise Adoption |
+| 2028-Q1 | 2028-03-31 | $0.53 B | +59.1% | 0.047 B | 5.58x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.58 B | +53.9% | 0.048 B | 5.55x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.62 B | +44.0% | 0.048 B | 5.51x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.67 B | +30.5% | 0.048 B | 5.47x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.64 B | +20.4% | 0.048 B | 5.43x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.68 B | +16.9% | 0.048 B | 5.39x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.72 B | +16.2% | 0.048 B | 5.35x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~5.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $124.92 | $156.15 | $187.38 | 5.6x | +56.4% |
-| 52 Weeks (1Y) | $138.12 | $172.65 | $207.18 | 5.5x | +23.6% |
-| 104 Weeks (2Y) | $200.48 | $250.60 | $300.72 | 5.4x | +34.0% |
-| 156 Weeks (3Y) | $235.77 | $294.71 | $353.65 | 5.2x | +28.3% |
+| 13 Weeks | $128.07 | $160.09 | $192.11 | 5.7x | +56.1% |
+| 52 Weeks (1Y) | $141.62 | $177.03 | $212.44 | 5.7x | +23.6% |
+| 104 Weeks (2Y) | $205.70 | $257.13 | $308.56 | 5.5x | +34.0% |
+| 156 Weeks (3Y) | $241.64 | $302.05 | $362.46 | 5.3x | +28.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -94,6 +94,6 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~5.7x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($139.64) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($143.22) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

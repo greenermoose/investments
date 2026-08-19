@@ -4,9 +4,9 @@
 - **Ticker:** FAST
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $51.23 per share
-- **Current Price:** $51.23 per share
-- **Target Exit Price:** $58.37 per share
+- **Benchmark Entry Price:** $51.87 per share
+- **Current Price:** $51.87 per share
+- **Target Exit Price:** $59.10 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.3 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=815556
 
 ## Business Profile
-Fastenal Company (FAST) operates as an established participant within the Industrials sector (Industrial Distribution & Vending). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FAST trades at $51.23 against a 3-year baseline price target of $58.37, generating a modeled annualized ROI of 4.5% under our disciplined 20-year hurdle standard.
+Fastenal Company (FAST) operates as an established participant within the Industrials sector (Industrial Distribution & Vending). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FAST trades at $51.87 against a 3-year baseline price target of $59.10, generating a modeled annualized ROI of 4.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Fastenal Company addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Fastenal Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.5%, fully justifying our SELL rating.
+FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.5%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.11 B | -1.6% | 1.148 B | 7.02x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.26 B | +19.0% | 1.147 B | 6.98x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.07 B | +2.3% | 1.145 B | 6.93x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.18 B | +1.9% | 1.144 B | 6.88x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.29 B | +8.7% | 1.142 B | 6.84x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.46 B | +8.9% | 1.141 B | 6.79x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.26 B | +9.3% | 1.139 B | 6.74x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.38 B | +9.1% | 1.138 B | 6.69x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.49 B | +8.5% | 1.137 B | 6.65x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.64 B | +7.5% | 1.135 B | 6.60x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.41 B | +6.9% | 1.134 B | 6.55x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.53 B | +6.1% | 1.132 B | 6.51x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.64 B | +6.0% | 1.131 B | 6.46x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.11 B | -1.6% | 1.148 B | 7.11x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.26 B | +19.0% | 1.147 B | 7.06x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.07 B | +2.3% | 1.145 B | 7.02x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.18 B | +1.9% | 1.144 B | 6.97x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.29 B | +8.7% | 1.142 B | 6.92x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.46 B | +8.9% | 1.141 B | 6.87x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.26 B | +9.3% | 1.139 B | 6.83x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.38 B | +9.1% | 1.138 B | 6.78x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.49 B | +8.5% | 1.137 B | 6.73x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.64 B | +7.5% | 1.135 B | 6.68x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.41 B | +6.9% | 1.134 B | 6.64x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.53 B | +6.1% | 1.132 B | 6.59x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.64 B | +6.0% | 1.131 B | 6.54x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $43.38 | $54.22 | $65.06 | 6.9x | +25.5% |
-| 52 Weeks (1Y) | $42.17 | $52.71 | $63.25 | 6.8x | +2.9% |
-| 104 Weeks (2Y) | $44.87 | $56.09 | $67.31 | 6.7x | +4.6% |
-| 156 Weeks (3Y) | $46.70 | $58.37 | $70.04 | 6.5x | +4.4% |
+| 13 Weeks | $43.94 | $54.93 | $65.92 | 7.0x | +25.8% |
+| 52 Weeks (1Y) | $42.66 | $53.32 | $63.98 | 6.9x | +2.8% |
+| 104 Weeks (2Y) | $45.41 | $56.76 | $68.11 | 6.7x | +4.6% |
+| 156 Weeks (3Y) | $47.28 | $59.10 | $70.92 | 6.5x | +4.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ FAST currently trades at a Price-to-Sales (P/S) multiple of ~7.0x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($51.23) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($51.87) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

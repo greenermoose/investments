@@ -4,9 +4,9 @@
 - **Ticker:** AVGO
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $392.43 per share
-- **Current Price:** $392.43 per share
-- **Target Exit Price:** $555.64 per share
+- **Benchmark Entry Price:** $361.37 per share
+- **Current Price:** $361.37 per share
+- **Target Exit Price:** $511.61 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.0 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1730168
 
 ## Business Profile
-Broadcom Inc. (AVGO) operates as an established participant within the Information Technology sector (Semiconductors & Infrastructure Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AVGO trades at $392.43 against a 3-year baseline price target of $555.64, generating a modeled annualized ROI of 14.6% under our disciplined 20-year hurdle standard.
+Broadcom Inc. (AVGO) operates as an established participant within the Information Technology sector (Semiconductors & Infrastructure Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AVGO trades at $361.37 against a 3-year baseline price target of $511.61, generating a modeled annualized ROI of 14.6% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Broadcom Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 5.4% market share. Over our 3-year investment horizon, we model market share evolving to 5.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Broadcom Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +18.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AVGO currently trades at a Price-to-Sales (P/S) multiple of ~28.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~24.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.6%, fully justifying our HOLD rating.
+AVGO currently trades at a Price-to-Sales (P/S) multiple of ~26.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~22.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.6%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $16.46 B | +5.9% | 4.735 B | 28.50x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $18.08 B | +28.2% | 4.723 B | 28.15x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $17.04 B | +11.2% | 4.711 B | 27.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $18.59 B | +11.8% | 4.699 B | 27.44x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $20.13 B | +22.3% | 4.687 B | 27.08x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $22.31 B | +23.4% | 4.676 B | 26.72x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $21.18 B | +24.3% | 4.664 B | 26.37x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $22.85 B | +22.9% | 4.652 B | 26.01x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $24.33 B | +20.8% | 4.640 B | 25.65x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $26.35 B | +18.1% | 4.629 B | 25.30x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $24.67 B | +16.5% | 4.617 B | 24.94x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $26.30 B | +15.1% | 4.606 B | 24.59x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $28.03 B | +15.2% | 4.594 B | 24.23x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $16.46 B | +5.9% | 4.735 B | 26.25x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $18.08 B | +28.2% | 4.723 B | 25.92x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $17.04 B | +11.2% | 4.711 B | 25.59x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $18.59 B | +11.8% | 4.699 B | 25.26x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $20.13 B | +22.3% | 4.687 B | 24.94x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $22.31 B | +23.4% | 4.676 B | 24.61x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $21.18 B | +24.3% | 4.664 B | 24.28x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $22.85 B | +22.9% | 4.652 B | 23.95x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $24.33 B | +20.8% | 4.640 B | 23.62x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $26.35 B | +18.1% | 4.629 B | 23.29x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $24.67 B | +16.5% | 4.617 B | 22.97x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $26.30 B | +15.1% | 4.606 B | 22.64x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $28.03 B | +15.2% | 4.594 B | 22.31x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ AVGO currently trades at a Price-to-Sales (P/S) multiple of ~28.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $342.14 | $427.67 | $513.20 | 27.9x | +41.1% |
-| 52 Weeks (1Y) | $341.42 | $426.78 | $512.14 | 27.1x | +8.8% |
-| 104 Weeks (2Y) | $400.82 | $501.03 | $601.24 | 25.6x | +13.0% |
-| 156 Weeks (3Y) | $444.51 | $555.64 | $666.77 | 24.2x | +12.3% |
+| 13 Weeks | $315.06 | $393.83 | $472.60 | 25.7x | +41.1% |
+| 52 Weeks (1Y) | $314.46 | $393.07 | $471.68 | 24.9x | +8.8% |
+| 104 Weeks (2Y) | $369.09 | $461.36 | $553.63 | 23.6x | +13.0% |
+| 156 Weeks (3Y) | $409.29 | $511.61 | $613.93 | 22.3x | +12.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ AVGO currently trades at a Price-to-Sales (P/S) multiple of ~28.5x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($392.43) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($361.37) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

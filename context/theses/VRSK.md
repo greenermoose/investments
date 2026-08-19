@@ -4,9 +4,9 @@
 - **Ticker:** VRSK
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $175.62 per share
-- **Current Price:** $175.62 per share
-- **Target Exit Price:** $196.67 per share
+- **Benchmark Entry Price:** $182.54 per share
+- **Current Price:** $182.54 per share
+- **Target Exit Price:** $204.55 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1442145
 
 ## Business Profile
-Verisk Analytics, Inc. (VRSK) operates as an established participant within the Industrials sector (Insurance Data & Risk Analytics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, VRSK trades at $175.62 against a 3-year baseline price target of $196.67, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
+Verisk Analytics, Inc. (VRSK) operates as an established participant within the Industrials sector (Insurance Data & Risk Analytics). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, VRSK trades at $182.54 against a 3-year baseline price target of $204.55, generating a modeled annualized ROI of 3.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Verisk Analytics, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 6.2% market share. Over our 3-year investment horizon, we model market share evolving to 6.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Verisk Analytics, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-VRSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.9%, fully justifying our SELL rating.
+VRSK currently trades at a Price-to-Sales (P/S) multiple of ~8.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.9%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.78 B | -2.9% | 0.138 B | 7.87x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.83 B | +18.3% | 0.138 B | 7.82x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.76 B | +2.1% | 0.137 B | 7.77x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.79 B | +1.8% | 0.137 B | 7.72x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.83 B | +6.7% | 0.137 B | 7.66x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.89 B | +7.1% | 0.136 B | 7.61x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.81 B | +6.8% | 0.136 B | 7.56x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.85 B | +7.7% | 0.136 B | 7.50x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.89 B | +6.9% | 0.135 B | 7.45x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.94 B | +5.9% | 0.135 B | 7.40x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.86 B | +6.0% | 0.135 B | 7.35x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.90 B | +5.4% | 0.134 B | 7.29x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.94 B | +5.1% | 0.134 B | 7.24x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.78 B | -2.9% | 0.138 B | 8.18x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.83 B | +18.3% | 0.138 B | 8.13x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.76 B | +2.1% | 0.137 B | 8.08x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.79 B | +1.8% | 0.137 B | 8.02x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.83 B | +6.7% | 0.137 B | 7.97x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.89 B | +7.1% | 0.136 B | 7.91x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.81 B | +6.8% | 0.136 B | 7.86x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.85 B | +7.7% | 0.136 B | 7.80x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.89 B | +6.9% | 0.135 B | 7.75x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.94 B | +5.9% | 0.135 B | 7.69x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.86 B | +6.0% | 0.135 B | 7.64x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.90 B | +5.4% | 0.134 B | 7.58x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.94 B | +5.1% | 0.134 B | 7.53x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ VRSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $148.58 | $185.73 | $222.88 | 7.7x | +25.1% |
-| 52 Weeks (1Y) | $143.58 | $179.48 | $215.38 | 7.7x | +2.2% |
-| 104 Weeks (2Y) | $151.87 | $189.84 | $227.81 | 7.5x | +4.0% |
-| 156 Weeks (3Y) | $157.34 | $196.67 | $236.00 | 7.2x | +3.8% |
+| 13 Weeks | $154.35 | $192.94 | $231.53 | 8.0x | +24.8% |
+| 52 Weeks (1Y) | $149.39 | $186.74 | $224.09 | 8.0x | +2.3% |
+| 104 Weeks (2Y) | $157.98 | $197.48 | $236.98 | 7.8x | +4.0% |
+| 156 Weeks (3Y) | $163.64 | $204.55 | $245.46 | 7.5x | +3.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ VRSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($175.62) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($182.54) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

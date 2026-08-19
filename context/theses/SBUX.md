@@ -4,8 +4,8 @@
 - **Ticker:** SBUX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $107.92 per share
-- **Current Price:** $107.92 per share
+- **Benchmark Entry Price:** $107.86 per share
+- **Current Price:** $107.86 per share
 - **Target Exit Price:** $115.72 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=829224
 
 ## Business Profile
-Starbucks Corporation (SBUX) operates as an established participant within the Consumer Discretionary sector (Specialty Coffee Retail & Roasteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SBUX trades at $107.92 against a 3-year baseline price target of $115.72, generating a modeled annualized ROI of 2.4% under our disciplined 20-year hurdle standard.
+Starbucks Corporation (SBUX) operates as an established participant within the Consumer Discretionary sector (Specialty Coffee Retail & Roasteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, SBUX trades at $107.86 against a 3-year baseline price target of $115.72, generating a modeled annualized ROI of 2.4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Starbucks Corporation addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 4.1% market share. Over our 3-year investment horizon, we model market share evolving to 4.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -47,7 +47,7 @@ SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 | 2026-Q3 (Current) | 2026-09-30 | $9.39 B | -3.0% | 1.140 B | 3.31x | Current operational baseline and contract fulfillment |
 | 2026-Q4 | 2026-12-31 | $9.98 B | +17.0% | 1.137 B | 3.28x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
 | 2027-Q1 | 2027-03-31 | $9.08 B | +0.9% | 1.134 B | 3.25x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $9.52 B | +0.4% | 1.131 B | 3.23x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q2 | 2027-06-30 | $9.52 B | +0.4% | 1.131 B | 3.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
 | 2027-Q3 | 2027-09-30 | $9.95 B | +6.0% | 1.128 B | 3.20x | Consumer Discretionary core demand expansion and operational execution |
 | 2027-Q4 | 2027-12-31 | $10.62 B | +6.4% | 1.125 B | 3.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
 | 2028-Q1 | 2028-03-31 | $9.69 B | +6.7% | 1.123 B | 3.14x | Post-holiday seasonal normalization and channel inventory reset |
@@ -71,7 +71,7 @@ SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $91.01 | $113.76 | $136.51 | 3.2x | +23.5% |
+| 13 Weeks | $91.01 | $113.76 | $136.51 | 3.2x | +23.7% |
 | 52 Weeks (1Y) | $87.44 | $109.30 | $131.16 | 3.2x | +1.3% |
 | 104 Weeks (2Y) | $90.71 | $113.39 | $136.07 | 3.1x | +2.5% |
 | 156 Weeks (3Y) | $92.58 | $115.72 | $138.86 | 3.0x | +2.4% |
@@ -97,6 +97,6 @@ SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($107.92) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($107.86) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

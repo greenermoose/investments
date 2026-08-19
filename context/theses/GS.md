@@ -4,9 +4,9 @@
 - **Ticker:** GS
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $1051.31 per share
-- **Current Price:** $1051.31 per share
-- **Target Exit Price:** $1275.76 per share
+- **Benchmark Entry Price:** $1026.42 per share
+- **Current Price:** $1026.42 per share
+- **Target Exit Price:** $1246.22 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.6 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=886982
 
 ## Business Profile
-The Goldman Sachs Group, Inc. (GS) operates as an established participant within the Financials sector (Investment Banking & Capital Markets). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GS trades at $1051.31 against a 3-year baseline price target of $1275.76, generating a modeled annualized ROI of 6.7% under our disciplined 20-year hurdle standard.
+The Goldman Sachs Group, Inc. (GS) operates as an established participant within the Financials sector (Investment Banking & Capital Markets). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, GS trades at $1026.42 against a 3-year baseline price target of $1246.22, generating a modeled annualized ROI of 6.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Goldman Sachs Group, Inc. addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 7.3% market share. Over our 3-year investment horizon, we model market share evolving to 7.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Goldman Sachs Group, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +7.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-GS currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 6.7%, fully justifying our SELL rating.
+GS currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 6.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $15.67 B | -1.6% | 0.295 B | 5.00x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $16.75 B | +18.8% | 0.294 B | 4.98x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $15.32 B | +2.4% | 0.293 B | 4.96x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $16.16 B | +2.1% | 0.292 B | 4.94x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $17.00 B | +8.5% | 0.291 B | 4.92x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $18.25 B | +8.9% | 0.289 B | 4.89x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $16.76 B | +9.4% | 0.288 B | 4.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $17.62 B | +9.0% | 0.287 B | 4.85x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $18.41 B | +8.3% | 0.286 B | 4.83x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $19.58 B | +7.3% | 0.285 B | 4.81x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $17.89 B | +6.7% | 0.284 B | 4.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $18.71 B | +6.2% | 0.283 B | 4.77x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $19.56 B | +6.2% | 0.282 B | 4.75x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $15.67 B | -1.6% | 0.295 B | 4.88x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $16.75 B | +18.8% | 0.294 B | 4.86x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $15.32 B | +2.4% | 0.293 B | 4.84x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $16.16 B | +2.1% | 0.292 B | 4.82x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $17.00 B | +8.5% | 0.291 B | 4.80x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $18.25 B | +8.9% | 0.289 B | 4.78x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $16.76 B | +9.4% | 0.288 B | 4.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $17.62 B | +9.0% | 0.287 B | 4.74x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $18.41 B | +8.3% | 0.286 B | 4.72x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $19.58 B | +7.3% | 0.285 B | 4.70x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $17.89 B | +6.7% | 0.284 B | 4.68x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $18.71 B | +6.2% | 0.283 B | 4.66x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $19.56 B | +6.2% | 0.282 B | 4.64x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ GS currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $893.34 | $1116.67 | $1340.00 | 4.9x | +27.3% |
-| 52 Weeks (1Y) | $882.29 | $1102.86 | $1323.43 | 4.9x | +4.9% |
-| 104 Weeks (2Y) | $959.78 | $1199.73 | $1439.68 | 4.8x | +6.8% |
-| 156 Weeks (3Y) | $1020.61 | $1275.76 | $1530.91 | 4.8x | +6.7% |
+| 13 Weeks | $871.46 | $1089.32 | $1307.18 | 4.8x | +26.9% |
+| 52 Weeks (1Y) | $860.77 | $1075.96 | $1291.15 | 4.8x | +4.8% |
+| 104 Weeks (2Y) | $937.93 | $1172.41 | $1406.89 | 4.7x | +6.9% |
+| 156 Weeks (3Y) | $996.98 | $1246.22 | $1495.46 | 4.6x | +6.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ GS currently trades at a Price-to-Sales (P/S) multiple of ~5.0x on trailing twel
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($1051.31) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($1026.42) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

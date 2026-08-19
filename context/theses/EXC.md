@@ -4,8 +4,8 @@
 - **Ticker:** EXC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $45.57 per share
-- **Current Price:** $45.57 per share
+- **Benchmark Entry Price:** $45.75 per share
+- **Current Price:** $45.75 per share
 - **Target Exit Price:** $44.10 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 6.9 / 10.0
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1109357
 
 ## Business Profile
-Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EXC trades at $45.57 against a 3-year baseline price target of $44.10, generating a modeled annualized ROI of -1.1% under our disciplined 20-year hurdle standard.
+Exelon Corporation (EXC) operates as an established participant within the Utilities sector (Regulated Electric & Gas Transmission). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, EXC trades at $45.75 against a 3-year baseline price target of $44.10, generating a modeled annualized ROI of -1.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Exelon Corporation addresses an estimated Total Addressable Market (TAM) of $450.0B across its primary Utilities domains, expanding at a ~3.0% CAGR. The company currently captures an estimated 5.8% market share. Over our 3-year investment horizon, we model market share evolving to 5.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,23 +39,23 @@ If any of the following occur, the thesis is broken and the position will be exi
 Exelon Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +3.0%. Growth is supported by structural demand dynamics in Utilities, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -1.1%, fully justifying our AVOID rating.
+EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -1.2%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q3 (Current) | 2026-09-30 | $6.59 B | -4.4% | 1.023 B | 1.79x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.97 B | +15.4% | 1.024 B | 1.77x | Product launch ramp: Utilities Next-Generation Commercial Product Rollout |
+| 2026-Q4 | 2026-12-31 | $6.97 B | +15.4% | 1.024 B | 1.78x | Product launch ramp: Utilities Next-Generation Commercial Product Rollout |
 | 2027-Q1 | 2027-03-31 | $6.30 B | -0.6% | 1.026 B | 1.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.56 B | -1.3% | 1.027 B | 1.74x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q2 | 2027-06-30 | $6.56 B | -1.3% | 1.027 B | 1.75x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
 | 2027-Q3 | 2027-09-30 | $6.82 B | +3.6% | 1.028 B | 1.73x | Utilities core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $7.23 B | +3.8% | 1.030 B | 1.71x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2027-Q4 | 2027-12-31 | $7.23 B | +3.8% | 1.030 B | 1.72x | Product launch ramp: Platform Automation & Premium Tier Monetization |
 | 2028-Q1 | 2028-03-31 | $6.55 B | +4.0% | 1.031 B | 1.70x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.82 B | +3.9% | 1.032 B | 1.68x | Utilities core demand expansion and operational execution |
+| 2028-Q2 | 2028-06-30 | $6.82 B | +3.9% | 1.032 B | 1.69x | Utilities core demand expansion and operational execution |
 | 2028-Q3 | 2028-09-30 | $7.07 B | +3.6% | 1.033 B | 1.67x | Utilities core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $7.46 B | +3.2% | 1.035 B | 1.65x | Year-end commercial procurement and budget deployment |
+| 2028-Q4 | 2028-12-31 | $7.46 B | +3.2% | 1.035 B | 1.66x | Year-end commercial procurement and budget deployment |
 | 2029-Q1 | 2029-03-31 | $6.74 B | +3.0% | 1.036 B | 1.64x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.00 B | +2.7% | 1.037 B | 1.62x | Utilities core demand expansion and operational execution |
+| 2029-Q2 | 2029-06-30 | $7.00 B | +2.7% | 1.037 B | 1.63x | Utilities core demand expansion and operational execution |
 | 2029-Q3 (Q12) | 2029-09-30 | $7.26 B | +2.7% | 1.039 B | 1.61x | Utilities core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
@@ -71,10 +71,10 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $38.12 | $47.65 | $57.18 | 1.8x | +19.5% |
-| 52 Weeks (1Y) | $35.88 | $44.85 | $53.82 | 1.7x | -1.6% |
-| 104 Weeks (2Y) | $35.78 | $44.73 | $53.68 | 1.7x | -0.9% |
-| 156 Weeks (3Y) | $35.28 | $44.10 | $52.92 | 1.6x | -1.1% |
+| 13 Weeks | $38.34 | $47.92 | $57.50 | 1.8x | +20.4% |
+| 52 Weeks (1Y) | $35.88 | $44.85 | $53.82 | 1.7x | -2.0% |
+| 104 Weeks (2Y) | $35.78 | $44.73 | $53.68 | 1.7x | -1.1% |
+| 156 Weeks (3Y) | $35.28 | $44.10 | $52.92 | 1.6x | -1.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.8x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($45.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($45.75) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

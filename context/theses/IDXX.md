@@ -4,9 +4,9 @@
 - **Ticker:** IDXX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $546.09 per share
-- **Current Price:** $546.09 per share
-- **Target Exit Price:** $680.73 per share
+- **Benchmark Entry Price:** $568.71 per share
+- **Current Price:** $568.71 per share
+- **Target Exit Price:** $709.15 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.5 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=874716
 
 ## Business Profile
-IDEXX Laboratories, Inc. (IDXX) operates as an established participant within the Health Care sector (Veterinary Diagnostics & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IDXX trades at $546.09 against a 3-year baseline price target of $680.73, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
+IDEXX Laboratories, Inc. (IDXX) operates as an established participant within the Health Care sector (Veterinary Diagnostics & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, IDXX trades at $568.71 against a 3-year baseline price target of $709.15, generating a modeled annualized ROI of 10.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 IDEXX Laboratories, Inc. addresses an estimated Total Addressable Market (TAM) of $65.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 IDEXX Laboratories, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.2%, fully justifying our HOLD rating.
+IDXX currently trades at a Price-to-Sales (P/S) multiple of ~10.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.10 B | +0.9% | 0.079 B | 9.89x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.18 B | +20.8% | 0.079 B | 9.83x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.09 B | +4.9% | 0.078 B | 9.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.16 B | +4.5% | 0.078 B | 9.70x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.23 B | +11.9% | 0.078 B | 9.63x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.33 B | +13.0% | 0.078 B | 9.56x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.24 B | +13.5% | 0.078 B | 9.50x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.31 B | +13.1% | 0.078 B | 9.43x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.38 B | +12.1% | 0.077 B | 9.36x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.47 B | +10.8% | 0.077 B | 9.30x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.36 B | +9.4% | 0.077 B | 9.23x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.43 B | +8.9% | 0.077 B | 9.17x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.50 B | +8.6% | 0.077 B | 9.10x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.10 B | +0.9% | 0.079 B | 10.30x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.18 B | +20.8% | 0.079 B | 10.24x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.09 B | +4.9% | 0.078 B | 10.17x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.16 B | +4.5% | 0.078 B | 10.10x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.23 B | +11.9% | 0.078 B | 10.03x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.33 B | +13.0% | 0.078 B | 9.96x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.24 B | +13.5% | 0.078 B | 9.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.31 B | +13.1% | 0.078 B | 9.82x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.38 B | +12.1% | 0.077 B | 9.75x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.47 B | +10.8% | 0.077 B | 9.69x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.36 B | +9.4% | 0.077 B | 9.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.43 B | +8.9% | 0.077 B | 9.55x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.50 B | +8.6% | 0.077 B | 9.48x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $463.63 | $579.54 | $695.45 | 9.7x | +26.8% |
-| 52 Weeks (1Y) | $460.26 | $575.33 | $690.40 | 9.6x | +5.4% |
-| 104 Weeks (2Y) | $511.52 | $639.40 | $767.28 | 9.4x | +8.2% |
-| 156 Weeks (3Y) | $544.58 | $680.73 | $816.88 | 9.1x | +7.6% |
+| 13 Weeks | $482.75 | $603.44 | $724.13 | 10.1x | +26.8% |
+| 52 Weeks (1Y) | $479.38 | $599.23 | $719.08 | 10.0x | +5.4% |
+| 104 Weeks (2Y) | $532.83 | $666.04 | $799.25 | 9.8x | +8.2% |
+| 156 Weeks (3Y) | $567.32 | $709.15 | $850.98 | 9.5x | +7.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ IDXX currently trades at a Price-to-Sales (P/S) multiple of ~9.9x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($546.09) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($568.71) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

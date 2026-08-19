@@ -4,9 +4,9 @@
 - **Ticker:** FTNT
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $155.85 per share
-- **Current Price:** $155.85 per share
-- **Target Exit Price:** $241.43 per share
+- **Benchmark Entry Price:** $153.73 per share
+- **Current Price:** $153.73 per share
+- **Target Exit Price:** $238.28 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1262039
 
 ## Business Profile
-Fortinet, Inc. (FTNT) operates as an established participant within the Information Technology sector (Cybersecurity & Unified SASE). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FTNT trades at $155.85 against a 3-year baseline price target of $241.43, generating a modeled annualized ROI of 17.9% under our disciplined 20-year hurdle standard.
+Fortinet, Inc. (FTNT) operates as an established participant within the Information Technology sector (Cybersecurity & Unified SASE). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FTNT trades at $153.73 against a 3-year baseline price target of $238.28, generating a modeled annualized ROI of 17.9% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Fortinet, Inc. addresses an estimated Total Addressable Market (TAM) of $101.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Fortinet, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +16.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 17.9%, fully justifying our HOLD rating.
+FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 17.9%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.70 B | +4.5% | 0.733 B | 16.93x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.86 B | +26.6% | 0.729 B | 16.86x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.75 B | +9.8% | 0.725 B | 16.79x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.89 B | +10.0% | 0.722 B | 16.72x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.04 B | +19.9% | 0.718 B | 16.65x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.24 B | +20.7% | 0.714 B | 16.58x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.12 B | +21.0% | 0.711 B | 16.51x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.27 B | +20.3% | 0.707 B | 16.43x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.41 B | +18.3% | 0.704 B | 16.36x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.61 B | +16.4% | 0.700 B | 16.29x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.43 B | +14.6% | 0.697 B | 16.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.58 B | +13.8% | 0.693 B | 16.15x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.74 B | +13.8% | 0.690 B | 16.08x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.70 B | +4.5% | 0.733 B | 16.70x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.86 B | +26.6% | 0.729 B | 16.63x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.75 B | +9.8% | 0.725 B | 16.56x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.89 B | +10.0% | 0.722 B | 16.49x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.04 B | +19.9% | 0.718 B | 16.42x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.24 B | +20.7% | 0.714 B | 16.35x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.12 B | +21.0% | 0.711 B | 16.29x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.27 B | +20.3% | 0.707 B | 16.22x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.41 B | +18.3% | 0.704 B | 16.15x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.61 B | +16.4% | 0.700 B | 16.08x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.43 B | +14.6% | 0.697 B | 16.01x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.58 B | +13.8% | 0.693 B | 15.94x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.74 B | +13.8% | 0.690 B | 15.87x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $135.45 | $169.31 | $203.17 | 16.6x | +39.3% |
-| 52 Weeks (1Y) | $139.88 | $174.85 | $209.82 | 16.6x | +12.2% |
-| 104 Weeks (2Y) | $168.06 | $210.08 | $252.10 | 16.4x | +16.1% |
-| 156 Weeks (3Y) | $193.14 | $241.43 | $289.72 | 16.1x | +15.7% |
+| 13 Weeks | $133.66 | $167.07 | $200.48 | 16.4x | +39.5% |
+| 52 Weeks (1Y) | $138.03 | $172.54 | $207.05 | 16.4x | +12.2% |
+| 104 Weeks (2Y) | $165.80 | $207.25 | $248.70 | 16.1x | +16.1% |
+| 156 Weeks (3Y) | $190.62 | $238.28 | $285.94 | 15.9x | +15.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ FTNT currently trades at a Price-to-Sales (P/S) multiple of ~16.9x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($155.85) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($153.73) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

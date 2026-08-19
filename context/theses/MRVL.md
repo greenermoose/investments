@@ -4,9 +4,9 @@
 - **Ticker:** MRVL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $234.33 per share
-- **Current Price:** $234.33 per share
-- **Target Exit Price:** $288.56 per share
+- **Benchmark Entry Price:** $232.02 per share
+- **Current Price:** $232.02 per share
+- **Target Exit Price:** $285.67 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1835632
 
 ## Business Profile
-Marvell Technology, Inc. (MRVL) operates as an established participant within the Information Technology sector (Data Infrastructure Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MRVL trades at $234.33 against a 3-year baseline price target of $288.56, generating a modeled annualized ROI of 9.7% under our disciplined 20-year hurdle standard.
+Marvell Technology, Inc. (MRVL) operates as an established participant within the Information Technology sector (Data Infrastructure Semiconductors). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MRVL trades at $232.02 against a 3-year baseline price target of $285.67, generating a modeled annualized ROI of 9.7% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Marvell Technology, Inc. addresses an estimated Total Addressable Market (TAM) of $126.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Marvell Technology, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~22.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.7%, fully justifying our HOLD rating.
+MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~21.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.7%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.12 B | +1.9% | 0.874 B | 24.41x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.29 B | +23.3% | 0.875 B | 24.20x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.13 B | +6.3% | 0.876 B | 24.00x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.28 B | +6.4% | 0.878 B | 23.80x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.43 B | +14.4% | 0.879 B | 23.60x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.64 B | +15.3% | 0.880 B | 23.39x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.46 B | +15.6% | 0.881 B | 23.19x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.62 B | +14.9% | 0.882 B | 22.99x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.76 B | +13.7% | 0.883 B | 22.78x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.97 B | +12.3% | 0.884 B | 22.58x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.74 B | +11.4% | 0.885 B | 22.38x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.89 B | +10.4% | 0.886 B | 22.17x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $3.05 B | +10.6% | 0.887 B | 21.97x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.12 B | +1.9% | 0.874 B | 24.17x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.29 B | +23.3% | 0.875 B | 23.97x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.13 B | +6.3% | 0.876 B | 23.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.28 B | +6.4% | 0.878 B | 23.56x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.43 B | +14.4% | 0.879 B | 23.36x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.64 B | +15.3% | 0.880 B | 23.16x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.46 B | +15.6% | 0.881 B | 22.96x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.62 B | +14.9% | 0.882 B | 22.76x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.76 B | +13.7% | 0.883 B | 22.56x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.97 B | +12.3% | 0.884 B | 22.35x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.74 B | +11.4% | 0.885 B | 22.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.89 B | +10.4% | 0.886 B | 21.95x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $3.05 B | +10.6% | 0.887 B | 21.75x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $200.33 | $250.41 | $300.49 | 23.9x | +30.4% |
-| 52 Weeks (1Y) | $196.10 | $245.13 | $294.16 | 23.6x | +4.6% |
-| 104 Weeks (2Y) | $216.20 | $270.25 | $324.30 | 22.8x | +7.4% |
-| 156 Weeks (3Y) | $230.85 | $288.56 | $346.27 | 22.0x | +7.2% |
+| 13 Weeks | $198.32 | $247.90 | $297.48 | 23.7x | +30.3% |
+| 52 Weeks (1Y) | $194.19 | $242.74 | $291.29 | 23.4x | +4.6% |
+| 104 Weeks (2Y) | $214.11 | $267.64 | $321.17 | 22.6x | +7.4% |
+| 156 Weeks (3Y) | $228.54 | $285.67 | $342.80 | 21.8x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~24.4x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($234.33) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($232.02) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

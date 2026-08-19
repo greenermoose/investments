@@ -4,9 +4,9 @@
 - **Ticker:** CRWD
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $213.90 per share
-- **Current Price:** $213.90 per share
-- **Target Exit Price:** $334.36 per share
+- **Benchmark Entry Price:** $200.66 per share
+- **Current Price:** $200.66 per share
+- **Target Exit Price:** $313.67 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1535527
 
 ## Business Profile
-CrowdStrike Holdings, Inc. (CRWD) operates as an established participant within the Information Technology sector (Cybersecurity Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRWD trades at $213.90 against a 3-year baseline price target of $334.36, generating a modeled annualized ROI of 18.2% under our disciplined 20-year hurdle standard.
+CrowdStrike Holdings, Inc. (CRWD) operates as an established participant within the Information Technology sector (Cybersecurity Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, CRWD trades at $200.66 against a 3-year baseline price target of $313.67, generating a modeled annualized ROI of 18.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 CrowdStrike Holdings, Inc. addresses an estimated Total Addressable Market (TAM) of $73.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 CrowdStrike Holdings, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +24.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 18.2%, fully justifying our HOLD rating.
+CRWD currently trades at a Price-to-Sales (P/S) multiple of ~10.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 18.2%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.24 B | +10.3% | 0.252 B | 11.02x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.38 B | +33.7% | 0.253 B | 10.91x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.32 B | +15.7% | 0.254 B | 10.80x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.46 B | +17.2% | 0.255 B | 10.69x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.61 B | +29.9% | 0.256 B | 10.58x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.81 B | +31.4% | 0.257 B | 10.47x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.75 B | +32.6% | 0.258 B | 10.36x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.91 B | +30.8% | 0.259 B | 10.25x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.05 B | +27.4% | 0.260 B | 10.14x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.24 B | +23.8% | 0.261 B | 10.03x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.12 B | +21.3% | 0.262 B | 9.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.28 B | +19.6% | 0.263 B | 9.81x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.46 B | +19.9% | 0.264 B | 9.70x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.24 B | +10.3% | 0.252 B | 10.34x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.38 B | +33.7% | 0.253 B | 10.24x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.32 B | +15.7% | 0.254 B | 10.13x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.46 B | +17.2% | 0.255 B | 10.03x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.61 B | +29.9% | 0.256 B | 9.93x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.81 B | +31.4% | 0.257 B | 9.82x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.75 B | +32.6% | 0.258 B | 9.72x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.91 B | +30.8% | 0.259 B | 9.62x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.05 B | +27.4% | 0.260 B | 9.51x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.24 B | +23.8% | 0.261 B | 9.41x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.12 B | +21.3% | 0.262 B | 9.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.28 B | +19.6% | 0.263 B | 9.20x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.46 B | +19.9% | 0.264 B | 9.10x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $188.51 | $235.64 | $282.77 | 10.8x | +47.3% |
-| 52 Weeks (1Y) | $190.95 | $238.69 | $286.43 | 10.6x | +11.6% |
-| 104 Weeks (2Y) | $234.62 | $293.28 | $351.94 | 10.1x | +17.1% |
-| 156 Weeks (3Y) | $267.49 | $334.36 | $401.23 | 9.7x | +16.1% |
+| 13 Weeks | $176.82 | $221.02 | $265.22 | 10.1x | +47.2% |
+| 52 Weeks (1Y) | $179.05 | $223.81 | $268.57 | 9.9x | +11.5% |
+| 104 Weeks (2Y) | $220.05 | $275.06 | $330.07 | 9.5x | +17.1% |
+| 156 Weeks (3Y) | $250.94 | $313.67 | $376.40 | 9.1x | +16.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($213.90) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($200.66) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

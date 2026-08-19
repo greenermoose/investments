@@ -4,9 +4,9 @@
 - **Ticker:** FER
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $63.92 per share
-- **Current Price:** $63.92 per share
-- **Target Exit Price:** $72.07 per share
+- **Benchmark Entry Price:** $64.26 per share
+- **Current Price:** $64.26 per share
+- **Target Exit Price:** $72.57 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1468522
 
 ## Business Profile
-Ferrovial SE (FER) operates as an established participant within the Industrials sector (Infrastructure Concessions & Toll Roads). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FER trades at $63.92 against a 3-year baseline price target of $72.07, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
+Ferrovial SE (FER) operates as an established participant within the Industrials sector (Infrastructure Concessions & Toll Roads). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, FER trades at $64.26 against a 3-year baseline price target of $72.57, generating a modeled annualized ROI of 4.1% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Ferrovial SE addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -44,19 +44,19 @@ FER currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.43 B | -2.4% | 0.721 B | 4.78x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.59 B | +17.8% | 0.719 B | 4.75x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.36 B | +1.9% | 0.717 B | 4.72x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.49 B | +1.5% | 0.715 B | 4.69x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.61 B | +7.3% | 0.713 B | 4.66x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.79 B | +7.8% | 0.712 B | 4.62x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.56 B | +8.3% | 0.710 B | 4.59x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.68 B | +7.7% | 0.708 B | 4.56x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.80 B | +7.1% | 0.706 B | 4.53x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.97 B | +6.4% | 0.705 B | 4.50x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.71 B | +5.7% | 0.703 B | 4.46x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.82 B | +5.4% | 0.701 B | 4.43x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.95 B | +5.2% | 0.699 B | 4.40x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.43 B | -2.4% | 0.721 B | 4.81x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.59 B | +17.8% | 0.719 B | 4.78x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.36 B | +1.9% | 0.717 B | 4.75x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.49 B | +1.5% | 0.715 B | 4.72x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.61 B | +7.3% | 0.713 B | 4.68x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.79 B | +7.8% | 0.712 B | 4.65x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.56 B | +8.3% | 0.710 B | 4.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.68 B | +7.7% | 0.708 B | 4.59x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.80 B | +7.1% | 0.706 B | 4.56x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.97 B | +6.4% | 0.705 B | 4.53x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.71 B | +5.7% | 0.703 B | 4.49x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.82 B | +5.4% | 0.701 B | 4.46x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.95 B | +5.2% | 0.699 B | 4.43x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ FER currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $54.06 | $67.58 | $81.10 | 4.7x | +24.9% |
-| 52 Weeks (1Y) | $52.54 | $65.68 | $78.82 | 4.7x | +2.8% |
-| 104 Weeks (2Y) | $55.59 | $69.49 | $83.39 | 4.5x | +4.3% |
-| 156 Weeks (3Y) | $57.66 | $72.07 | $86.48 | 4.4x | +4.1% |
+| 13 Weeks | $54.30 | $67.87 | $81.44 | 4.7x | +24.4% |
+| 52 Weeks (1Y) | $52.78 | $65.97 | $79.16 | 4.7x | +2.7% |
+| 104 Weeks (2Y) | $55.96 | $69.95 | $83.94 | 4.6x | +4.3% |
+| 156 Weeks (3Y) | $58.06 | $72.57 | $87.08 | 4.4x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -94,6 +94,6 @@ FER currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($63.92) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($64.26) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

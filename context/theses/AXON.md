@@ -4,9 +4,9 @@
 - **Ticker:** AXON
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $604.32 per share
-- **Current Price:** $604.32 per share
-- **Target Exit Price:** $1003.03 per share
+- **Benchmark Entry Price:** $633.16 per share
+- **Current Price:** $633.16 per share
+- **Target Exit Price:** $1051.35 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1069183
 
 ## Business Profile
-Axon Enterprise, Inc. (AXON) operates as an established participant within the Industrials sector (Public Safety Technology & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXON trades at $604.32 against a 3-year baseline price target of $1003.03, generating a modeled annualized ROI of 20.5% under our disciplined 20-year hurdle standard.
+Axon Enterprise, Inc. (AXON) operates as an established participant within the Industrials sector (Public Safety Technology & Software). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXON trades at $633.16 against a 3-year baseline price target of $1051.35, generating a modeled annualized ROI of 20.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Axon Enterprise, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 5.6% market share. Over our 3-year investment horizon, we model market share evolving to 7.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Axon Enterprise, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +26.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 20.5%, fully justifying our HOLD rating.
+AXON currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 20.5%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.70 B | +11.8% | 0.081 B | 17.46x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.79 B | +35.9% | 0.081 B | 17.28x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.76 B | +16.6% | 0.081 B | 17.11x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.84 B | +19.0% | 0.081 B | 16.93x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.93 B | +33.3% | 0.081 B | 16.76x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.06 B | +33.6% | 0.082 B | 16.58x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.02 B | +34.8% | 0.082 B | 16.41x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.12 B | +33.6% | 0.082 B | 16.23x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.21 B | +30.0% | 0.082 B | 16.06x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.33 B | +25.0% | 0.082 B | 15.88x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.26 B | +23.6% | 0.083 B | 15.71x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.36 B | +21.5% | 0.083 B | 15.53x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.47 B | +21.3% | 0.083 B | 15.36x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.70 B | +11.8% | 0.081 B | 18.29x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.79 B | +35.9% | 0.081 B | 18.11x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.76 B | +16.6% | 0.081 B | 17.93x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.84 B | +19.0% | 0.081 B | 17.74x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.93 B | +33.3% | 0.081 B | 17.56x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.06 B | +33.6% | 0.082 B | 17.38x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.02 B | +34.8% | 0.082 B | 17.20x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.12 B | +33.6% | 0.082 B | 17.01x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.21 B | +30.0% | 0.082 B | 16.83x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.33 B | +25.0% | 0.082 B | 16.65x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.26 B | +23.6% | 0.083 B | 16.47x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.36 B | +21.5% | 0.083 B | 16.28x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.47 B | +21.3% | 0.083 B | 16.10x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $534.00 | $667.50 | $801.00 | 17.1x | +48.8% |
-| 52 Weeks (1Y) | $549.89 | $687.36 | $824.83 | 16.8x | +13.7% |
-| 104 Weeks (2Y) | $690.54 | $863.18 | $1035.82 | 16.1x | +19.5% |
-| 156 Weeks (3Y) | $802.42 | $1003.03 | $1203.64 | 15.4x | +18.4% |
+| 13 Weeks | $559.28 | $699.10 | $838.92 | 17.9x | +48.6% |
+| 52 Weeks (1Y) | $576.12 | $720.15 | $864.18 | 17.6x | +13.7% |
+| 104 Weeks (2Y) | $723.67 | $904.59 | $1085.51 | 16.8x | +19.5% |
+| 156 Weeks (3Y) | $841.08 | $1051.35 | $1261.62 | 16.1x | +18.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ AXON currently trades at a Price-to-Sales (P/S) multiple of ~17.5x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($604.32) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($633.16) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

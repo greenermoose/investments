@@ -4,9 +4,9 @@
 - **Ticker:** ENVX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $3.60 per share
-- **Current Price:** $3.60 per share
-- **Target Exit Price:** $3.00 per share
+- **Benchmark Entry Price:** $3.27 per share
+- **Current Price:** $3.27 per share
+- **Target Exit Price:** $2.72 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1828318
 
 ## Business Profile
-Enovix Corporation (ENVX) operates as an established participant within the Energy sector (Advanced Silicon-Anode Batteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ENVX trades at $3.60 against a 3-year baseline price target of $3.00, generating a modeled annualized ROI of -5.9% under our disciplined 20-year hurdle standard.
+Enovix Corporation (ENVX) operates as an established participant within the Energy sector (Advanced Silicon-Anode Batteries). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ENVX trades at $3.27 against a 3-year baseline price target of $2.72, generating a modeled annualized ROI of -6.0% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Enovix Corporation addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Energy domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 0.1% market share. Over our 3-year investment horizon, we model market share evolving to 0.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Enovix Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~18.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -5.9%, fully justifying our AVOID rating.
+ENVX currently trades at a Price-to-Sales (P/S) multiple of ~25.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -6.0%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -28.9% | 0.218 B | 27.89x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | -22.9% | 0.220 B | 27.08x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -28.7% | 0.222 B | 26.27x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -24.0% | 0.224 B | 25.45x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -19.1% | 0.226 B | 24.64x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -12.3% | 0.228 B | 23.83x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -18.8% | 0.230 B | 23.01x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | -13.5% | 0.232 B | 22.20x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -7.9% | 0.234 B | 21.38x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -0.2% | 0.236 B | 20.57x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -7.6% | 0.238 B | 19.76x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -1.6% | 0.240 B | 18.94x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +4.8% | 0.242 B | 18.13x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -28.9% | 0.218 B | 25.34x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | -22.9% | 0.220 B | 24.60x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -28.7% | 0.222 B | 23.86x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -24.0% | 0.224 B | 23.12x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -19.1% | 0.226 B | 22.38x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -12.3% | 0.228 B | 21.64x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -18.8% | 0.230 B | 20.90x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | -13.5% | 0.232 B | 20.16x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -7.9% | 0.234 B | 19.43x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -0.2% | 0.236 B | 18.69x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -7.6% | 0.238 B | 17.95x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -1.6% | 0.240 B | 17.21x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | +4.8% | 0.242 B | 16.47x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $3.98 | $4.97 | $5.96 | 27.3x | +263.3% |
-| 52 Weeks (1Y) | $3.50 | $4.37 | $5.24 | 24.7x | +21.4% |
-| 104 Weeks (2Y) | $2.92 | $3.65 | $4.38 | 21.4x | +0.7% |
-| 156 Weeks (3Y) | $2.40 | $3.00 | $3.60 | 18.1x | -5.9% |
+| 13 Weeks | $3.61 | $4.51 | $5.41 | 24.8x | +261.8% |
+| 52 Weeks (1Y) | $3.18 | $3.97 | $4.76 | 22.4x | +21.4% |
+| 104 Weeks (2Y) | $2.66 | $3.32 | $3.98 | 19.4x | +0.8% |
+| 156 Weeks (3Y) | $2.18 | $2.72 | $3.26 | 16.5x | -6.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ ENVX currently trades at a Price-to-Sales (P/S) multiple of ~27.9x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($3.60) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($3.27) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

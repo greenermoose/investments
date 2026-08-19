@@ -4,9 +4,9 @@
 - **Ticker:** ROST
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $235.28 per share
-- **Current Price:** $235.28 per share
-- **Target Exit Price:** $264.58 per share
+- **Benchmark Entry Price:** $237.46 per share
+- **Current Price:** $237.46 per share
+- **Target Exit Price:** $267.10 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=745732
 
 ## Business Profile
-Ross Stores, Inc. (ROST) operates as an established participant within the Consumer Discretionary sector (Apparel & Home Merchandise Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ROST trades at $235.28 against a 3-year baseline price target of $264.58, generating a modeled annualized ROI of 4.0% under our disciplined 20-year hurdle standard.
+Ross Stores, Inc. (ROST) operates as an established participant within the Consumer Discretionary sector (Apparel & Home Merchandise Retail). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ROST trades at $237.46 against a 3-year baseline price target of $267.10, generating a modeled annualized ROI of 4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Ross Stores, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.5% market share. Over our 3-year investment horizon, we model market share evolving to 2.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Ross Stores, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
+ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.5x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.59 B | -2.3% | 0.322 B | 3.43x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $5.96 B | +18.0% | 0.322 B | 3.40x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.43 B | +1.7% | 0.321 B | 3.38x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $5.71 B | +1.3% | 0.320 B | 3.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $5.99 B | +7.2% | 0.319 B | 3.34x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.41 B | +7.6% | 0.318 B | 3.31x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $5.87 B | +8.1% | 0.318 B | 3.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.16 B | +7.8% | 0.317 B | 3.27x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.42 B | +7.2% | 0.316 B | 3.24x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.82 B | +6.4% | 0.315 B | 3.22x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.21 B | +5.8% | 0.314 B | 3.20x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.49 B | +5.3% | 0.314 B | 3.17x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.77 B | +5.4% | 0.313 B | 3.15x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $5.59 B | -2.3% | 0.322 B | 3.46x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $5.96 B | +18.0% | 0.322 B | 3.44x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.43 B | +1.7% | 0.321 B | 3.41x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $5.71 B | +1.3% | 0.320 B | 3.39x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $5.99 B | +7.2% | 0.319 B | 3.37x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $6.41 B | +7.6% | 0.318 B | 3.34x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $5.87 B | +8.1% | 0.318 B | 3.32x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.16 B | +7.8% | 0.317 B | 3.30x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $6.42 B | +7.2% | 0.316 B | 3.27x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $6.82 B | +6.4% | 0.315 B | 3.25x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.21 B | +5.8% | 0.314 B | 3.23x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $6.49 B | +5.3% | 0.314 B | 3.20x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $6.77 B | +5.4% | 0.313 B | 3.18x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $199.02 | $248.77 | $298.52 | 3.4x | +25.0% |
-| 52 Weeks (1Y) | $193.41 | $241.76 | $290.11 | 3.3x | +2.8% |
-| 104 Weeks (2Y) | $203.91 | $254.89 | $305.87 | 3.2x | +4.1% |
-| 156 Weeks (3Y) | $211.66 | $264.58 | $317.50 | 3.1x | +4.0% |
+| 13 Weeks | $200.79 | $250.99 | $301.19 | 3.4x | +24.8% |
+| 52 Weeks (1Y) | $195.14 | $243.93 | $292.72 | 3.4x | +2.7% |
+| 104 Weeks (2Y) | $205.80 | $257.25 | $308.70 | 3.3x | +4.1% |
+| 156 Weeks (3Y) | $213.68 | $267.10 | $320.52 | 3.2x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($235.28) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($237.46) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -4,9 +4,9 @@
 - **Ticker:** KO
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $86.98 per share
-- **Current Price:** $86.98 per share
-- **Target Exit Price:** $95.52 per share
+- **Benchmark Entry Price:** $89.90 per share
+- **Current Price:** $89.90 per share
+- **Target Exit Price:** $98.79 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=21344
 
 ## Business Profile
-The Coca-Cola Company (KO) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Global Franchising). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KO trades at $86.98 against a 3-year baseline price target of $95.52, generating a modeled annualized ROI of 3.2% under our disciplined 20-year hurdle standard.
+The Coca-Cola Company (KO) operates as an established participant within the Consumer Staples sector (Non-Alcoholic Beverages & Global Franchising). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, KO trades at $89.90 against a 3-year baseline price target of $98.79, generating a modeled annualized ROI of 3.2% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 The Coca-Cola Company addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 8.8% market share. Over our 3-year investment horizon, we model market share evolving to 8.8%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Coca-Cola Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
+KO currently trades at a Price-to-Sales (P/S) multiple of ~8.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $12.27 B | -3.7% | 4.301 B | 7.70x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $13.01 B | +16.2% | 4.290 B | 7.67x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $11.80 B | +0.0% | 4.279 B | 7.63x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $12.33 B | -0.5% | 4.268 B | 7.60x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $12.85 B | +4.8% | 4.258 B | 7.57x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.67 B | +5.0% | 4.247 B | 7.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.42 B | +5.3% | 4.236 B | 7.50x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.96 B | +5.1% | 4.226 B | 7.47x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.47 B | +4.8% | 4.215 B | 7.44x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $14.24 B | +4.2% | 4.205 B | 7.41x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $12.91 B | +3.9% | 4.194 B | 7.37x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $13.43 B | +3.6% | 4.183 B | 7.34x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $13.95 B | +3.6% | 4.173 B | 7.31x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $12.27 B | -3.7% | 4.301 B | 7.96x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $13.01 B | +16.2% | 4.290 B | 7.92x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $11.80 B | +0.0% | 4.279 B | 7.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $12.33 B | -0.5% | 4.268 B | 7.86x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $12.85 B | +4.8% | 4.258 B | 7.82x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $13.67 B | +5.0% | 4.247 B | 7.79x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.42 B | +5.3% | 4.236 B | 7.76x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.96 B | +5.1% | 4.226 B | 7.73x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.47 B | +4.8% | 4.215 B | 7.69x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $14.24 B | +4.2% | 4.205 B | 7.66x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $12.91 B | +3.9% | 4.194 B | 7.63x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.43 B | +3.6% | 4.183 B | 7.59x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $13.95 B | +3.6% | 4.173 B | 7.56x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $73.17 | $91.46 | $109.75 | 7.5x | +22.2% |
-| 52 Weeks (1Y) | $71.10 | $88.87 | $106.64 | 7.6x | +2.2% |
-| 104 Weeks (2Y) | $74.16 | $92.70 | $111.24 | 7.4x | +3.2% |
-| 156 Weeks (3Y) | $76.42 | $95.52 | $114.62 | 7.3x | +3.2% |
+| 13 Weeks | $75.70 | $94.62 | $113.54 | 7.8x | +22.7% |
+| 52 Weeks (1Y) | $73.54 | $91.93 | $110.32 | 7.8x | +2.3% |
+| 104 Weeks (2Y) | $76.66 | $95.82 | $114.98 | 7.7x | +3.2% |
+| 156 Weeks (3Y) | $79.03 | $98.79 | $118.55 | 7.6x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ KO currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twel
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($86.98) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($89.90) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

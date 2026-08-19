@@ -4,9 +4,9 @@
 - **Ticker:** MAR
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $356.57 per share
-- **Current Price:** $356.57 per share
-- **Target Exit Price:** $419.46 per share
+- **Benchmark Entry Price:** $364.08 per share
+- **Current Price:** $364.08 per share
+- **Target Exit Price:** $427.22 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1048286
 
 ## Business Profile
-Marriott International, Inc. (MAR) operates as an established participant within the Consumer Discretionary sector (Hotels & Lodging). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MAR trades at $356.57 against a 3-year baseline price target of $419.46, generating a modeled annualized ROI of 5.6% under our disciplined 20-year hurdle standard.
+Marriott International, Inc. (MAR) operates as an established participant within the Consumer Discretionary sector (Hotels & Lodging). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, MAR trades at $364.08 against a 3-year baseline price target of $427.22, generating a modeled annualized ROI of 5.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Marriott International, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 3.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Marriott International, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +9.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.6%, fully justifying our SELL rating.
+MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 5.5%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $6.60 B | -0.3% | 0.264 B | 3.60x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.09 B | +20.4% | 0.263 B | 3.57x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.52 B | +4.0% | 0.263 B | 3.54x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.92 B | +3.8% | 0.263 B | 3.51x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $7.32 B | +11.0% | 0.262 B | 3.48x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $7.91 B | +11.6% | 0.262 B | 3.45x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $7.31 B | +12.1% | 0.262 B | 3.42x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $7.72 B | +11.6% | 0.261 B | 3.39x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $8.10 B | +10.7% | 0.261 B | 3.36x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $8.65 B | +9.3% | 0.261 B | 3.33x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $7.94 B | +8.6% | 0.260 B | 3.30x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $8.33 B | +7.9% | 0.260 B | 3.27x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $8.74 B | +7.9% | 0.260 B | 3.24x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $6.60 B | -0.3% | 0.264 B | 3.67x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.09 B | +20.4% | 0.263 B | 3.64x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.52 B | +4.0% | 0.263 B | 3.61x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $6.92 B | +3.8% | 0.263 B | 3.58x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $7.32 B | +11.0% | 0.262 B | 3.55x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $7.91 B | +11.6% | 0.262 B | 3.52x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $7.31 B | +12.1% | 0.262 B | 3.49x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.72 B | +11.6% | 0.261 B | 3.45x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $8.10 B | +10.7% | 0.261 B | 3.42x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.65 B | +9.3% | 0.261 B | 3.39x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.94 B | +8.6% | 0.260 B | 3.36x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $8.33 B | +7.9% | 0.260 B | 3.33x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.74 B | +7.9% | 0.260 B | 3.30x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $303.66 | $379.57 | $455.48 | 3.5x | +28.4% |
-| 52 Weeks (1Y) | $295.94 | $369.92 | $443.90 | 3.5x | +3.7% |
-| 104 Weeks (2Y) | $319.68 | $399.60 | $479.52 | 3.4x | +5.9% |
-| 156 Weeks (3Y) | $335.57 | $419.46 | $503.35 | 3.2x | +5.6% |
+| 13 Weeks | $310.56 | $388.20 | $465.84 | 3.6x | +29.3% |
+| 52 Weeks (1Y) | $301.89 | $377.36 | $452.83 | 3.5x | +3.6% |
+| 104 Weeks (2Y) | $325.38 | $406.73 | $488.08 | 3.4x | +5.7% |
+| 156 Weeks (3Y) | $341.78 | $427.22 | $512.66 | 3.3x | +5.5% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($356.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($364.08) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

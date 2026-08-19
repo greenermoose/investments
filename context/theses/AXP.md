@@ -4,9 +4,9 @@
 - **Ticker:** AXP
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $336.21 per share
-- **Current Price:** $336.21 per share
-- **Target Exit Price:** $448.67 per share
+- **Benchmark Entry Price:** $342.75 per share
+- **Current Price:** $342.75 per share
+- **Target Exit Price:** $457.59 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.0 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=4962
 
 ## Business Profile
-American Express Company (AXP) operates as an established participant within the Financials sector (Consumer & Commercial Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXP trades at $336.21 against a 3-year baseline price target of $448.67, generating a modeled annualized ROI of 12.5% under our disciplined 20-year hurdle standard.
+American Express Company (AXP) operates as an established participant within the Financials sector (Consumer & Commercial Payments). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AXP trades at $342.75 against a 3-year baseline price target of $457.59, generating a modeled annualized ROI of 12.5% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 American Express Company addresses an estimated Total Addressable Market (TAM) of $850.0B across its primary Financials domains, expanding at a ~6.0% CAGR. The company currently captures an estimated 8.5% market share. Over our 3-year investment horizon, we model market share evolving to 9.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 American Express Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +10.0%. Growth is supported by structural demand dynamics in Financials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.5%, fully justifying our HOLD rating.
+AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.5%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $18.22 B | +0.4% | 0.682 B | 3.18x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $19.62 B | +21.3% | 0.679 B | 3.17x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $18.09 B | +4.8% | 0.675 B | 3.15x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $19.27 B | +4.7% | 0.672 B | 3.14x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $20.43 B | +12.1% | 0.669 B | 3.13x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $22.13 B | +12.8% | 0.665 B | 3.11x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $20.52 B | +13.4% | 0.662 B | 3.10x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $21.74 B | +12.8% | 0.659 B | 3.09x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $22.84 B | +11.8% | 0.655 B | 3.07x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $24.43 B | +10.4% | 0.652 B | 3.06x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $22.47 B | +9.5% | 0.649 B | 3.05x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $23.64 B | +8.7% | 0.645 B | 3.03x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $24.84 B | +8.8% | 0.642 B | 3.02x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $18.22 B | +0.4% | 0.682 B | 3.24x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $19.62 B | +21.3% | 0.679 B | 3.23x | Product launch ramp: Financials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $18.09 B | +4.8% | 0.675 B | 3.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $19.27 B | +4.7% | 0.672 B | 3.20x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $20.43 B | +12.1% | 0.669 B | 3.19x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $22.13 B | +12.8% | 0.665 B | 3.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $20.52 B | +13.4% | 0.662 B | 3.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $21.74 B | +12.8% | 0.659 B | 3.15x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $22.84 B | +11.8% | 0.655 B | 3.13x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $24.43 B | +10.4% | 0.652 B | 3.12x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $22.47 B | +9.5% | 0.649 B | 3.11x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $23.64 B | +8.7% | 0.645 B | 3.09x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $24.84 B | +8.8% | 0.642 B | 3.08x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $288.50 | $360.62 | $432.74 | 3.1x | +32.4% |
-| 52 Weeks (1Y) | $289.74 | $362.17 | $434.60 | 3.1x | +7.7% |
-| 104 Weeks (2Y) | $327.08 | $408.85 | $490.62 | 3.1x | +10.3% |
-| 156 Weeks (3Y) | $358.94 | $448.67 | $538.40 | 3.0x | +10.1% |
+| 13 Weeks | $294.04 | $367.55 | $441.06 | 3.2x | +32.2% |
+| 52 Weeks (1Y) | $295.29 | $369.11 | $442.93 | 3.2x | +7.7% |
+| 104 Weeks (2Y) | $333.47 | $416.84 | $500.21 | 3.1x | +10.3% |
+| 156 Weeks (3Y) | $366.07 | $457.59 | $549.11 | 3.1x | +10.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ AXP currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($336.21) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($342.75) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

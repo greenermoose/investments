@@ -4,9 +4,9 @@
 - **Ticker:** ABNB
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $179.29 per share
-- **Current Price:** $179.29 per share
-- **Target Exit Price:** $259.01 per share
+- **Benchmark Entry Price:** $187.14 per share
+- **Current Price:** $187.14 per share
+- **Target Exit Price:** $270.55 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.9 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1559720
 
 ## Business Profile
-Airbnb, Inc. (ABNB) operates as an established participant within the Consumer Discretionary sector (Travel & Lodging Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ABNB trades at $179.29 against a 3-year baseline price target of $259.01, generating a modeled annualized ROI of 15.3% under our disciplined 20-year hurdle standard.
+Airbnb, Inc. (ABNB) operates as an established participant within the Consumer Discretionary sector (Travel & Lodging Platforms). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, ABNB trades at $187.14 against a 3-year baseline price target of $270.55, generating a modeled annualized ROI of 15.4% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Airbnb, Inc. addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 1.3% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Airbnb, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.3%, fully justifying our HOLD rating.
+ABNB currently trades at a Price-to-Sales (P/S) multiple of ~9.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~8.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 15.4%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.07 B | +3.9% | 0.595 B | 8.79x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.34 B | +25.7% | 0.593 B | 8.73x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.13 B | +8.9% | 0.591 B | 8.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.38 B | +9.0% | 0.588 B | 8.61x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.63 B | +18.4% | 0.586 B | 8.55x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $3.99 B | +19.6% | 0.584 B | 8.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $3.76 B | +20.1% | 0.582 B | 8.43x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $4.03 B | +19.2% | 0.579 B | 8.37x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $4.27 B | +17.6% | 0.577 B | 8.32x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $4.60 B | +15.4% | 0.575 B | 8.26x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $4.28 B | +13.9% | 0.573 B | 8.20x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $4.54 B | +12.8% | 0.571 B | 8.14x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $4.82 B | +12.8% | 0.569 B | 8.08x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.07 B | +3.9% | 0.595 B | 9.17x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.34 B | +25.7% | 0.593 B | 9.11x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.13 B | +8.9% | 0.591 B | 9.05x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.38 B | +9.0% | 0.588 B | 8.99x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.63 B | +18.4% | 0.586 B | 8.93x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.99 B | +19.6% | 0.584 B | 8.87x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.76 B | +20.1% | 0.582 B | 8.81x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $4.03 B | +19.2% | 0.579 B | 8.74x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.27 B | +17.6% | 0.577 B | 8.68x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.60 B | +15.4% | 0.575 B | 8.62x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.28 B | +13.9% | 0.573 B | 8.56x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.54 B | +12.8% | 0.571 B | 8.50x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.82 B | +12.8% | 0.569 B | 8.44x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $155.18 | $193.98 | $232.78 | 8.6x | +37.0% |
-| 52 Weeks (1Y) | $157.34 | $196.68 | $236.02 | 8.6x | +9.7% |
-| 104 Weeks (2Y) | $184.92 | $231.15 | $277.38 | 8.3x | +13.5% |
-| 156 Weeks (3Y) | $207.21 | $259.01 | $310.81 | 8.1x | +13.0% |
+| 13 Weeks | $162.03 | $202.54 | $243.05 | 9.0x | +37.2% |
+| 52 Weeks (1Y) | $164.34 | $205.42 | $246.50 | 8.9x | +9.8% |
+| 104 Weeks (2Y) | $193.16 | $241.45 | $289.74 | 8.7x | +13.6% |
+| 156 Weeks (3Y) | $216.44 | $270.55 | $324.66 | 8.4x | +13.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($179.29) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($187.14) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

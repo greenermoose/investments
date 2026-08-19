@@ -4,9 +4,9 @@
 - **Ticker:** STX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $994.79 per share
-- **Current Price:** $994.79 per share
-- **Target Exit Price:** $1226.56 per share
+- **Benchmark Entry Price:** $867.56 per share
+- **Current Price:** $867.56 per share
+- **Target Exit Price:** $1070.07 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1137789
 
 ## Business Profile
-Seagate Technology Holdings plc (STX) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, STX trades at $994.79 against a 3-year baseline price target of $1226.56, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
+Seagate Technology Holdings plc (STX) operates as an established participant within the Information Technology sector (Data Storage Technologies). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, STX trades at $867.56 against a 3-year baseline price target of $1070.07, generating a modeled annualized ROI of 9.8% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Seagate Technology Holdings plc addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Seagate Technology Holdings plc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-STX currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
+STX currently trades at a Price-to-Sales (P/S) multiple of ~16.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~14.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.08 B | +2.0% | 0.224 B | 18.29x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.33 B | +23.0% | 0.225 B | 18.14x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.09 B | +6.6% | 0.225 B | 17.99x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.31 B | +6.6% | 0.225 B | 17.83x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.53 B | +14.7% | 0.225 B | 17.68x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $3.85 B | +15.6% | 0.226 B | 17.53x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $3.59 B | +16.2% | 0.226 B | 17.38x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $3.82 B | +15.4% | 0.226 B | 17.22x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $4.03 B | +14.1% | 0.226 B | 17.07x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $4.32 B | +12.3% | 0.227 B | 16.92x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $4.00 B | +11.3% | 0.227 B | 16.77x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $4.22 B | +10.4% | 0.227 B | 16.61x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $4.45 B | +10.4% | 0.228 B | 16.46x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.08 B | +2.0% | 0.224 B | 15.95x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.33 B | +23.0% | 0.225 B | 15.82x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.09 B | +6.6% | 0.225 B | 15.69x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.31 B | +6.6% | 0.225 B | 15.55x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.53 B | +14.7% | 0.225 B | 15.42x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.85 B | +15.6% | 0.226 B | 15.29x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.59 B | +16.2% | 0.226 B | 15.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $3.82 B | +15.4% | 0.226 B | 15.02x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.03 B | +14.1% | 0.226 B | 14.89x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.32 B | +12.3% | 0.227 B | 14.76x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.00 B | +11.3% | 0.227 B | 14.63x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.22 B | +10.4% | 0.227 B | 14.49x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.45 B | +10.4% | 0.228 B | 14.36x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ STX currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $849.17 | $1061.46 | $1273.75 | 17.9x | +29.6% |
-| 52 Weeks (1Y) | $834.02 | $1042.53 | $1251.04 | 17.7x | +4.8% |
-| 104 Weeks (2Y) | $923.35 | $1154.19 | $1385.03 | 17.1x | +7.7% |
-| 156 Weeks (3Y) | $981.25 | $1226.56 | $1471.87 | 16.5x | +7.2% |
+| 13 Weeks | $740.24 | $925.30 | $1110.36 | 15.6x | +29.4% |
+| 52 Weeks (1Y) | $727.47 | $909.34 | $1091.21 | 15.4x | +4.8% |
+| 104 Weeks (2Y) | $805.90 | $1007.38 | $1208.86 | 14.9x | +7.8% |
+| 156 Weeks (3Y) | $856.06 | $1070.07 | $1284.08 | 14.4x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ STX currently trades at a Price-to-Sales (P/S) multiple of ~18.3x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($994.79) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($867.56) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

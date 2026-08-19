@@ -4,9 +4,9 @@
 - **Ticker:** AMAT
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $535.31 per share
-- **Current Price:** $535.31 per share
-- **Target Exit Price:** $710.00 per share
+- **Benchmark Entry Price:** $495.25 per share
+- **Current Price:** $495.25 per share
+- **Target Exit Price:** $657.07 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.6 / 10.0
 - **Rating:** HOLD
@@ -14,7 +14,7 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=6951
 
 ## Business Profile
-Applied Materials, Inc. (AMAT) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMAT trades at $535.31 against a 3-year baseline price target of $710.00, generating a modeled annualized ROI of 12.3% under our disciplined 20-year hurdle standard.
+Applied Materials, Inc. (AMAT) operates as an established participant within the Information Technology sector (Semiconductor Equipment). The company monetizes core platform offerings across commercial enterprise and consumer end-markets. Grounded in our deterministic valuation framework, AMAT trades at $495.25 against a 3-year baseline price target of $657.07, generating a modeled annualized ROI of 12.3% under our disciplined 20-year hurdle standard.
 
 ## Total Addressable Market & Market Share
 Applied Materials, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.4% market share. Over our 3-year investment horizon, we model market share evolving to 2.4%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
@@ -39,24 +39,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Applied Materials, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +11.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~13.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.3%, fully justifying our HOLD rating.
+AMAT currently trades at a Price-to-Sales (P/S) multiple of ~13.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~12.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 12.3%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.22 B | +1.1% | 0.794 B | 14.87x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.79 B | +22.3% | 0.790 B | 14.77x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $7.20 B | +5.6% | 0.786 B | 14.67x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.69 B | +5.5% | 0.782 B | 14.57x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $8.18 B | +13.3% | 0.778 B | 14.47x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $8.89 B | +14.1% | 0.774 B | 14.37x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $8.27 B | +14.8% | 0.770 B | 14.28x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $8.78 B | +14.1% | 0.766 B | 14.18x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $9.24 B | +12.9% | 0.763 B | 14.08x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $9.90 B | +11.3% | 0.759 B | 13.98x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $9.13 B | +10.3% | 0.755 B | 13.88x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $9.62 B | +9.5% | 0.751 B | 13.78x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $10.12 B | +9.6% | 0.747 B | 13.68x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.22 B | +1.1% | 0.794 B | 13.76x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.79 B | +22.3% | 0.790 B | 13.67x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $7.20 B | +5.6% | 0.786 B | 13.58x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $7.69 B | +5.5% | 0.782 B | 13.48x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $8.18 B | +13.3% | 0.778 B | 13.39x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $8.89 B | +14.1% | 0.774 B | 13.30x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $8.27 B | +14.8% | 0.770 B | 13.21x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $8.78 B | +14.1% | 0.766 B | 13.12x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $9.24 B | +12.9% | 0.763 B | 13.03x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $9.90 B | +11.3% | 0.759 B | 12.93x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $9.13 B | +10.3% | 0.755 B | 12.84x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $9.62 B | +9.5% | 0.751 B | 12.75x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $10.12 B | +9.6% | 0.747 B | 12.66x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -71,10 +71,10 @@ AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $459.75 | $574.69 | $689.63 | 14.6x | +32.8% |
-| 52 Weeks (1Y) | $459.49 | $574.36 | $689.23 | 14.5x | +7.3% |
-| 104 Weeks (2Y) | $518.98 | $648.73 | $778.48 | 14.1x | +10.1% |
-| 156 Weeks (3Y) | $568.00 | $710.00 | $852.00 | 13.7x | +9.9% |
+| 13 Weeks | $425.35 | $531.69 | $638.03 | 13.5x | +32.8% |
+| 52 Weeks (1Y) | $425.22 | $531.52 | $637.82 | 13.4x | +7.3% |
+| 104 Weeks (2Y) | $480.26 | $600.32 | $720.38 | 13.0x | +10.1% |
+| 156 Weeks (3Y) | $525.66 | $657.07 | $788.48 | 12.7x | +9.9% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -97,6 +97,6 @@ AMAT currently trades at a Price-to-Sales (P/S) multiple of ~14.9x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($535.31) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($495.25) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

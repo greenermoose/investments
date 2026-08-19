@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 UnitedHealth Group Incorporated's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$1.81B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$2.53B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$2.90B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management utilizes moderate share buybacks (~$66.9B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
+## Capital Needs & Strategy
+UnitedHealth Group Incorporated operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($5.53/share annually, ~30% payout ratio). Management executes an active share repurchase program (~$66.9B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $111.52B in cash & equivalents against $89.21B in total debt (net balance: $+22.31B). Anticipated annual CapEx and operational capital requirements of ~$31.23B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $5.53 / share | 1.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $5.53/share (1.40% yield, ~30% payout ratio) with +12.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $66.9 B | -1.0% / yr | Management utilizes moderate share buybacks (~$66.9B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $89.21 B Debt vs $111.52 B Cash | Net: $+22.31 B | Institutional investment-grade corporate bond issuer with $89.21B total debt vs $111.52B in cash & equivalents (Net balance: $+22.31B). |
+| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$31.23 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -344,27 +344,39 @@
               <div id="modal-catalyst-chips" style="display: flex; flex-direction: column; gap: 6px;"></div>
             </div>
 
-            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Share Dilution or Buyback</h4>
-            <div id="modal-dilution-card" style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 12px 16px; margin: 8px 0 16px 0;">
-              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom: 10px;">
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Capital Needs &amp; Strategy</h4>
+            <div id="modal-capital-card" style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px 16px; margin: 8px 0 16px 0;">
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 12px; gap: 10px;">
                 <div class="metric-item">
                   <span class="metric-label">Capital Philosophy</span>
-                  <span class="metric-val" id="modal-dilution-phil" style="color: #00d4ff; font-size: 0.85rem;">-</span>
+                  <span class="metric-val" id="modal-cap-phil" style="color: #00d4ff; font-size: 0.85rem; font-weight: 600;">-</span>
                 </div>
                 <div class="metric-item">
-                  <span class="metric-label">Buyback Program</span>
-                  <span class="metric-val" id="modal-buyback-active" style="color: #10b981; font-size: 0.85rem;">-</span>
+                  <span class="metric-label">Dividends Declared &amp; Paid</span>
+                  <span class="metric-val" id="modal-cap-dividends" style="color: #10b981; font-size: 0.85rem; font-weight: 600;">-</span>
                 </div>
                 <div class="metric-item">
-                  <span class="metric-label">Buyback Capacity</span>
-                  <span class="metric-val" id="modal-buyback-capacity" style="color: #ffffff; font-size: 0.85rem;">-</span>
+                  <span class="metric-label">Buybacks &amp; Burn Rate</span>
+                  <span class="metric-val" id="modal-cap-buybacks" style="color: #ffffff; font-size: 0.85rem; font-weight: 600;">-</span>
                 </div>
                 <div class="metric-item">
-                  <span class="metric-label">Annual Net Dilution/Burn</span>
-                  <span class="metric-val" id="modal-dilution-net-rate" style="color: #818cf8; font-size: 0.85rem;">-</span>
+                  <span class="metric-label">Balance Sheet (Debt vs Cash)</span>
+                  <span class="metric-val" id="modal-cap-debt-cash" style="color: #818cf8; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Annual CapEx Need</span>
+                  <span class="metric-val" id="modal-cap-capex" style="color: #cbd5e1; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Liquidity Runway</span>
+                  <span class="metric-val" id="modal-cap-runway" style="color: #10b981; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Going Concern Status</span>
+                  <span class="metric-val" id="modal-cap-going-concern" style="color: #10b981; font-size: 0.85rem; font-weight: 600;">-</span>
                 </div>
               </div>
-              <p id="modal-dilution-text" style="margin: 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;"></p>
+              <p id="modal-cap-narrative" style="margin: 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;"></p>
             </div>
 
             <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)</h4>

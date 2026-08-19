@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Mastercard Incorporated's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Financials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.19B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.26B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.30B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$11.3B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Mastercard Incorporated operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 2.20% dividend yield ($12.74/share annually, ~32% payout ratio). Management executes an active share repurchase program (~$11.3B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $4.86B in cash & equivalents against $48.57B in total debt (net balance: $-43.71B). Anticipated annual CapEx and operational capital requirements of ~$1.30B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $12.74 / share | 2.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $12.74/share (2.20% yield, ~32% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $11.3 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$11.3B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $48.57 B Debt vs $4.86 B Cash | Net: $-43.71 B | Institutional investment-grade corporate bond issuer with $48.57B total debt vs $4.86B in cash & equivalents (Net balance: $-43.71B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.30 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

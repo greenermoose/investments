@@ -61,9 +61,10 @@ export function createDossierCard(company, onSelect) {
   }
 
   const tamInfo = company.tam_and_market_share || {};
+  const capInfo = company.capital_needs_and_strategy || {};
   const dilInfo = company.share_dilution_or_buyback || {};
   const tamText = tamInfo.narrative || `Addresses $${tamInfo.tam_estimate_usd_b || 800}B TAM (${tamInfo.current_market_share_pct || 5.0}% share -> ${tamInfo.projected_market_share_3y_pct || 7.5}% in 3Y).`;
-  const dilText = dilInfo.narrative || `Management capital strategy: ${dilInfo.management_philosophy || 'Neutral'} (${dilInfo.net_annual_share_change_pct ? dilInfo.net_annual_share_change_pct + '%/yr' : '-1.5%/yr'}).`;
+  const capText = capInfo.narrative || dilInfo.narrative || `Management capital strategy: ${dilInfo.management_philosophy || 'Neutral'} (${dilInfo.net_annual_share_change_pct ? dilInfo.net_annual_share_change_pct + '%/yr' : '-1.5%/yr'}).`;
 
   let invalidationHtml = '';
   if (Array.isArray(company.invalidation_criteria)) {
@@ -173,9 +174,9 @@ export function createDossierCard(company, onSelect) {
       ${company.latest_catalyst || 'Upcoming earnings reports and capital allocation updates.'}
     </p>
 
-    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Share Dilution or Buyback</h4>
+    <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Capital Needs &amp; Strategy</h4>
     <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.15); padding: 8px 12px; border-radius: 6px;">
-      ${dilText}
+      ${capText}
     </p>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Explicit Invalidation Triggers</h4>

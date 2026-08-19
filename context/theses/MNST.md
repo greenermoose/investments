@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Monster Beverage Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.04B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.06B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.07B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$3.0B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Monster Beverage Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 2.40% dividend yield ($1.14/share annually, ~55% payout ratio). Management executes an active share repurchase program (~$3.0B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $1.02B in cash & equivalents against $3.83B in total debt (net balance: $-2.81B). Anticipated annual CapEx and operational capital requirements of ~$0.34B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.14 / share | 2.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.14/share (2.40% yield, ~55% payout ratio) with +5.5% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $3.0 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$3.0B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $3.83 B Debt vs $1.02 B Cash | Net: $-2.81 B | Conservative debt profile of $3.83B debt vs $1.02B cash & equivalents (Net balance: $-2.81B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$0.34 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

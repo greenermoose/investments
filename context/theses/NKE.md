@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 NIKE, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.19B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.22B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$16.2B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+NIKE, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.80% dividend yield ($0.74/share annually, ~45% payout ratio). Management executes an active share repurchase program (~$16.2B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $11.60B in cash & equivalents against $9.28B in total debt (net balance: $+2.32B). Anticipated annual CapEx and operational capital requirements of ~$1.86B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.74 / share | 1.80% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.74/share (1.80% yield, ~45% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $16.2 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$16.2B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $9.28 B Debt vs $11.60 B Cash | Net: $+2.32 B | Manageable balance sheet leverage with $9.28B total debt against $11.60B liquid reserves (Net balance: $+2.32B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.86 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

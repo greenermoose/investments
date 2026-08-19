@@ -17,7 +17,7 @@
     "business_profile",
     "tam_and_market_share",
     "competitive_moat_analysis",
-    "share_dilution_or_buyback",
+    "capital_needs_and_strategy",
     "revenue_drivers_narrative",
     "valuation_ps_multiple_narrative",
     "revenue_forecast_13q",
@@ -130,9 +130,175 @@
       "type": "string",
       "description": "Detailed analysis of defensible economic moats, switching costs, network effects, scale advantages, IP, and gross margin / ROIC defense."
     },
+    "capital_needs_and_strategy": {
+      "type": "object",
+      "description": "Comprehensive evaluation of capital allocation, dividends declared and paid, share buyback programs, equity/bond issuance, anticipated capital needs, and going concern / liquidity assessment.",
+      "required": [
+        "capital_allocation_philosophy",
+        "dividends",
+        "share_buybacks",
+        "share_and_debt_issuance",
+        "anticipated_capital_needs",
+        "narrative"
+      ],
+      "properties": {
+        "capital_allocation_philosophy": {
+          "type": "string",
+          "enum": [
+            "AGGRESSIVE_SHAREHOLDER_RETURN",
+            "BALANCED_CAPITAL_RETURN",
+            "REINVESTMENT_FOR_GROWTH",
+            "SBC_DILUTIVE",
+            "EXTERNAL_CAPITAL_DEPENDENT"
+          ],
+          "description": "Primary capital allocation posture and philosophy of management."
+        },
+        "dividends": {
+          "type": "object",
+          "description": "Historical and forward dividend distribution metrics.",
+          "required": ["status", "annual_dividend_usd", "dividend_yield_pct", "description"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["PAYING", "NONE", "SUSPENDED"],
+              "description": "Current status of dividend program."
+            },
+            "annual_dividend_usd": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Current annualized dividend per share in USD."
+            },
+            "dividend_yield_pct": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Indicated dividend yield as a percentage of current share price."
+            },
+            "payout_ratio_pct": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Estimated dividend payout ratio as a percentage of earnings or free cash flow."
+            },
+            "dividend_growth_rate_pct": {
+              "type": "number",
+              "description": "Historical or expected annual dividend growth rate percentage."
+            },
+            "description": {
+              "type": "string",
+              "description": "Qualitative summary of dividend policy, payment frequency, and sustainability."
+            }
+          }
+        },
+        "share_buybacks": {
+          "type": "object",
+          "description": "Open-market share repurchase programs and execution pace.",
+          "required": ["buyback_program_active", "authorized_capacity_usd_b", "net_annual_share_change_pct", "description"],
+          "properties": {
+            "buyback_program_active": {
+              "type": "boolean",
+              "description": "Whether an authorized open-market share repurchase program is currently active."
+            },
+            "authorized_capacity_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Remaining authorized share repurchase capacity in billions of USD."
+            },
+            "net_annual_share_change_pct": {
+              "type": "number",
+              "description": "Expected annual percentage change in shares outstanding (negative for share count reduction/burn, positive for net dilution)."
+            },
+            "description": {
+              "type": "string",
+              "description": "Summary of share repurchase pace, Board authorization, and EPS compounding impact."
+            }
+          }
+        },
+        "share_and_debt_issuance": {
+          "type": "object",
+          "description": "Equity dilution, secondary offerings, bond issuances, and balance sheet leverage.",
+          "required": ["total_debt_usd_b", "cash_and_equivalents_usd_b", "net_cash_or_debt_usd_b", "description"],
+          "properties": {
+            "recent_equity_issuance": {
+              "type": "string",
+              "description": "Recent equity financing or dilution mechanism (e.g. 'NONE', 'MODEST_SBC', 'SECONDARY_OFFERING')."
+            },
+            "recent_debt_issuance": {
+              "type": "string",
+              "description": "Recent bond or credit facility activity (e.g. 'INVESTMENT_GRADE_BONDS', 'CONVERTIBLE_NOTES', 'COMMERCIAL_PAPER', 'NONE')."
+            },
+            "total_debt_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Total balance sheet debt in billions of USD."
+            },
+            "cash_and_equivalents_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Total cash, cash equivalents, and short-term marketable securities in billions of USD."
+            },
+            "net_cash_or_debt_usd_b": {
+              "type": "number",
+              "description": "Net cash (positive) or net debt (negative) position in billions of USD."
+            },
+            "debt_to_cash_ratio": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Total debt divided by cash reserves."
+            },
+            "description": {
+              "type": "string",
+              "description": "Evaluation of debt leverage, refinancing obligations, and equity issuance profile."
+            }
+          }
+        },
+        "anticipated_capital_needs": {
+          "type": "object",
+          "description": "Forward capital expenditure requirements, liquidity runway, and going concern status.",
+          "required": [
+            "primary_needs",
+            "annual_capex_usd_b",
+            "liquidity_runway_months",
+            "going_concern_warning",
+            "funding_strategy",
+            "going_concern_assessment"
+          ],
+          "properties": {
+            "primary_needs": {
+              "type": "string",
+              "description": "Primary driver of capital requirements (e.g. 'CAPEX_AND_RD', 'DEBT_SERVICE', 'WORKING_CAPITAL', 'ORGANIC_EXPANSION')."
+            },
+            "annual_capex_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Estimated annual capital expenditures in billions of USD."
+            },
+            "liquidity_runway_months": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Estimated operational cash runway in months at current burn/reinvestment rates."
+            },
+            "going_concern_warning": {
+              "type": "boolean",
+              "description": "Whether an explicit going concern warning or substantial doubt disclosure has been flagged in SEC filings or audit reports."
+            },
+            "funding_strategy": {
+              "type": "string",
+              "description": "How management expects to satisfy its capital requirements (e.g. internal operating cash flows, debt facilities, equity offerings)."
+            },
+            "going_concern_assessment": {
+              "type": "string",
+              "description": "Detailed auditor and fundamental assessment of solvency, bankruptcy risk, and capital runway."
+            }
+          }
+        },
+        "narrative": {
+          "type": "string",
+          "description": "Comprehensive qualitative synthesis of capital needs, shareholder returns, issuance activity, and solvency assurance."
+        }
+      }
+    },
     "share_dilution_or_buyback": {
       "type": "object",
-      "description": "Management approach to share count, active buyback programs, and capital requirements / dilution assessment.",
+      "description": "Legacy management approach to share count, active buyback programs, and capital requirements / dilution assessment.",
       "required": ["management_philosophy", "buyback_program_active", "net_annual_share_change_pct", "narrative"],
       "properties": {
         "management_philosophy": {

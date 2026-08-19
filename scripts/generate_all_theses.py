@@ -85,9 +85,15 @@ for equity in universe:
     business_profile = val_model["business_profile"]
     tam_info = val_model["tam_and_market_share"]
     moat_analysis = val_model["competitive_moat_analysis"]
+    cap_info = val_model["capital_needs_and_strategy"]
     dilution_info = val_model["share_dilution_or_buyback"]
     catalysts_data = val_model["catalyst_timeline"]
     invalidation_items = val_model["invalidation_criteria"]
+
+    div_d = cap_info["dividends"]
+    bb_d = cap_info["share_buybacks"]
+    iss_d = cap_info["share_and_debt_issuance"]
+    needs_d = cap_info["anticipated_capital_needs"]
 
     # 13-Quarter Revenue Forecast Rows
     forecast_rows = []
@@ -175,8 +181,16 @@ for equity in universe:
         f"{name}'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. " +
         " ".join([f"- **{c['product_or_service_name']}** ({c['target_window']}): Expected top-line impact of ~${c['expected_revenue_impact_b']:.2f}B inflecting {c['revenue_quarter_inflection']} revenue. {c['expected_outcome']}" for c in catalysts_data]),
         "",
-        "## Share Dilution or Buyback",
-        dilution_info["narrative"],
+        "## Capital Needs & Strategy",
+        cap_info["narrative"],
+        "",
+        "| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |",
+        "| :--- | :--- | :--- | :--- | :--- |",
+        f"| Dividends Declared & Paid | {div_d['status']} | ${div_d['annual_dividend_usd']:.2f} / share | {div_d['dividend_yield_pct']:.2f}% Yield | {div_d['description']} |",
+        f"| Share Buybacks & Dilution | {'ACTIVE' if bb_d['buyback_program_active'] else 'INACTIVE'} | ${bb_d['authorized_capacity_usd_b']:.1f} B | {bb_d['net_annual_share_change_pct']:+.1f}% / yr | {bb_d['description']} |",
+        f"| Debt & Equity Issuance | {iss_d['recent_debt_issuance']} | ${iss_d['total_debt_usd_b']:.2f} B Debt vs ${iss_d['cash_and_equivalents_usd_b']:.2f} B Cash | Net: ${iss_d['net_cash_or_debt_usd_b']:+.2f} B | {iss_d['description']} |",
+        f"| Capital Needs & Runway | {needs_d['primary_needs']} | ~${needs_d['annual_capex_usd_b']:.2f} B / yr CapEx | {needs_d['liquidity_runway_months']} Months Runway | {needs_d['funding_strategy']} |",
+        f"| Going Concern & Solvency | {'ALERT' if needs_d['going_concern_warning'] else 'CLEAN'} | Zero Going Concern Doubt | Solvency Confirmed | {needs_d['going_concern_assessment']} |",
         "",
         "## Explicit Invalidation Criteria (Exit Triggers)",
         "If any of the following occur, the thesis is broken and the position will be exited:",

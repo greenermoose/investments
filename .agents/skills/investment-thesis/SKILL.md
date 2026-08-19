@@ -49,7 +49,7 @@ The Investment Thesis Agent synthesizes all gathered public information (Tier 1 
    - **2. Total Addressable Market (TAM) & Market Share**: Quantify total addressable market size, current market share, and 3-year projected market share under competitive forces.
    - **3. Competitive Moat Analysis**: Defensibility, switching costs, network effects, scale advantages, intellectual property, and pricing power.
    - **4. Anticipated Catalysts & Timeline**: Granular product/service releases, exact target launch windows, expected incremental revenue ($B), and explicit links to 13Q revenue forecast inflections.
-   - **5. Share Dilution or Buyback**: Management capital allocation philosophy, authorized repurchase capacity/pace, free cash flow conversion, or future equity issuance needs for capital expenditures and SBC offset.
+   - **5. Capital Needs & Strategy**: Comprehensive synthesis of capital allocation philosophy, cash dividends declared and paid (yield, annual payout, payout ratio), active open-market share buyback authorizations, debt and equity issuance history/leverage, anticipated capital requirements (CapEx/R&D), and auditor going concern / solvency evaluations.
    - **6. Explicit Invalidation Criteria (Mandatory Exit Triggers)**: Deterministic quantitative and structural hurdles that mandate immediate position exit.
 3. **Decisive Rating Determination**:
    - Assign an unambiguous rating of `BUY`, `HOLD`, `SELL`, or `AVOID` using mathematical return hurdles and margin-of-safety rules.
@@ -89,21 +89,17 @@ For every equity, the agent must evaluate:
   - Model market share expansion driven by new product introductions entering adjacent TAM segments.
   - Confirm that projected year-3 revenue ($\text{Revenue}_{12} \times 4$) does not exceed realistic market share bounds of the projected future TAM.
 
-### 3. Share Dilution or Buyback Modeling (6 Horizons)
-Diluted shares outstanding must be modeled at:
-- Horizon 1: **13 Weeks (1Q)**
-- Horizon 2: **26 Weeks (2Q)**
-- Horizon 3: **39 Weeks (3Q)**
-- Horizon 4: **52 Weeks (1 Year)**
-- Horizon 5: **104 Weeks (2 Years)**
-- Horizon 6: **156 Weeks (3 Years)**
+### 3. Capital Needs & Strategy Modeling (Shares, Dividends, Debt, CapEx & Going Concern)
+Diluted shares outstanding must be modeled at 6 horizons (13, 26, 39, 52, 104, 156 weeks):
 
 $$\text{Shares}_{t} = \text{Shares}_{0} \times \left(1 + \text{Net Annual Dilution or Burn Rate}\right)^{\frac{\text{Weeks}}{52}}$$
 
 #### Management Capital Allocation Analysis:
 - **Share Repurchase Leaders (Net Burn Rate: -1.0% to -4.0%/year)**: Companies with high free cash flow conversion (>80%), robust balance sheets, and active Board-authorized share buyback programs (e.g. Apple, Alphabet, Meta, AutoZone). Buybacks retire shares, expanding per-share earnings and intrinsic price targets.
-- **Stock-Based Compensation Diluters (Net Dilution Rate: +1.0% to +3.5%/year)**: High-growth cloud, cyber, and tech companies issuing substantial equity grants to employees. Buybacks (if any) only partially offset option dilution.
-- **Capital Raise & Equity Issuance Risks (Net Dilution Rate: >+3.5%/year)**: Speculative growth, biotech, or capital-intensive infrastructure companies with ongoing cash burn that may need secondary equity offerings to fund operations or debt service.
+- **Dividends Declared & Paid**: Quantify indicated annual dividend distributions ($/share), dividend yield %, payout ratio, and historical growth rate. Verify cash dividend coverage against trailing operating free cash flow.
+- **Debt & Equity Issuance**: Evaluate balance sheet leverage, corporate bond maturity schedules, revolving credit facilities, and any secondary equity offering risks.
+- **Anticipated Capital Needs & Liquidity Runway**: Project annual capital expenditure (CapEx) and operational liquidity demands. Calculate cash runway in months.
+- **Going Concern & Audit Risk**: Explicitly review SEC Form 10-K/10-Q audit opinions for substantial doubt or going concern warnings. Flag any distressed companies that cannot self-fund operations.
 
 ### 4. 4-Horizon Price Range & Target Modeling
 Price ranges are modeled across four horizons:

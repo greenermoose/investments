@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Samsara Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Connected Operations AI Asset Intelligence & Worker Safety Tier** (2026-Q4): Expected top-line impact of ~$0.08B inflecting 2026-Q4 revenue. AI camera detection and telematics workflow upsell across Fortune 500 transportation fleets. - **International EMEA & APAC Telematics Fleet Expansion** (2027-Q2): Expected top-line impact of ~$0.12B inflecting 2027-Q2 revenue. European commercial fleet compliance rollout and global supply chain asset monitoring. - **Autonomous Industrial Sensor & Supply Chain Logistics Suite** (2027-Q4): Expected top-line impact of ~$0.16B inflecting 2027-Q4 revenue. Facility equipment telematics and predictive maintenance software subscription scaling.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~1.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+Samsara Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~1.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.43B in cash & equivalents against $0.35B in total debt (net balance: $+0.08B). Anticipated annual CapEx and operational capital requirements of ~$0.09B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +1.5% / yr | Share count expands modestly at ~1.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | NONE | $0.35 B Debt vs $0.43 B Cash | Net: $+0.08 B | Pristine balance sheet with minimal debt ($0.35B) and $0.43B in cash reserves (Net cash: $+0.08B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$0.09 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

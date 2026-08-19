@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 PACCAR Inc's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.06B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.08B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.09B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management utilizes moderate share buybacks (~$4.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
+## Capital Needs & Strategy
+PACCAR Inc operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($2.06/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$4.3B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $3.41B in cash & equivalents against $12.78B in total debt (net balance: $-9.37B). Anticipated annual CapEx and operational capital requirements of ~$2.27B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $2.06 / share | 1.60% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.06/share (1.60% yield, ~38% payout ratio) with +7.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $4.3 B | -1.0% / yr | Management utilizes moderate share buybacks (~$4.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $12.78 B Debt vs $3.41 B Cash | Net: $-9.37 B | Manageable balance sheet leverage with $12.78B total debt against $3.41B liquid reserves (Net balance: $-9.37B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$2.27 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

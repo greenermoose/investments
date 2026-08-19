@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Caterpillar Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.20B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.28B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.31B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$23.1B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Caterpillar Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($11.40/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$23.1B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $7.90B in cash & equivalents against $29.64B in total debt (net balance: $-21.74B). Anticipated annual CapEx and operational capital requirements of ~$5.27B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $11.40 / share | 1.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $11.40/share (1.40% yield, ~25% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $23.1 B | -2.0% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$23.1B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $29.64 B Debt vs $7.90 B Cash | Net: $-21.74 B | Institutional investment-grade corporate bond issuer with $29.64B total debt vs $7.90B in cash & equivalents (Net balance: $-21.74B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$5.27 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

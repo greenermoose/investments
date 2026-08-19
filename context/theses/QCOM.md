@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 QUALCOMM Incorporated's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.18B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.25B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.29B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$15.5B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+QUALCOMM Incorporated operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 2.00% dividend yield ($3.24/share annually, ~35% payout ratio). Management executes an active share repurchase program (~$15.5B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $11.07B in cash & equivalents against $8.86B in total debt (net balance: $+2.21B). Anticipated annual CapEx and operational capital requirements of ~$2.21B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $3.24 / share | 2.00% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $3.24/share (2.00% yield, ~35% payout ratio) with +7.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $15.5 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$15.5B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $8.86 B Debt vs $11.07 B Cash | Net: $+2.21 B | Manageable balance sheet leverage with $8.86B total debt against $11.07B liquid reserves (Net balance: $+2.21B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$2.21 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 CAVA Group, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **National Unit Expansion & Digital Loyalty Program V2** (2026-Q4): Expected top-line impact of ~$0.06B inflecting 2026-Q4 revenue. Increased digital order frequency and higher average order value across 480+ locations. - **Midwest & West Coast Regional Hub Rollout (75+ Net New Units)** (2027-Q2): Expected top-line impact of ~$0.09B inflecting 2027-Q2 revenue. Market entry into high-density suburban markets maintaining 25%+ restaurant-level profit margins. - **Drive-Thru Digital Pick-Up Lanes & Catering Platform Scaling** (2027-Q4): Expected top-line impact of ~$0.12B inflecting 2027-Q4 revenue. High-margin catering sales and throughput optimization via digital order drive-thru lanes.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+CAVA Group, Inc. operates under a reinvestment for growth capital strategy. The company returns capital to shareholders through a 0.40% dividend yield ($0.29/share annually, ~15% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.33B in cash & equivalents against $0.26B in total debt (net balance: $+0.07B). Anticipated annual CapEx and operational capital requirements of ~$0.05B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.29 / share | 0.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.29/share (0.40% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | NONE | $0.26 B Debt vs $0.33 B Cash | Net: $+0.07 B | Pristine balance sheet with minimal debt ($0.26B) and $0.33B in cash reserves (Net cash: $+0.07B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$0.05 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

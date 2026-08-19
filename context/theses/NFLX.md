@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Netflix, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.34B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.48B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.55B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$15.9B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Netflix, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 0.50% dividend yield ($0.40/share annually, ~15% payout ratio). Management executes an active share repurchase program (~$15.9B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $11.35B in cash & equivalents against $9.08B in total debt (net balance: $+2.27B). Anticipated annual CapEx and operational capital requirements of ~$2.27B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.40 / share | 0.50% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.40/share (0.50% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $15.9 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$15.9B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $9.08 B Debt vs $11.35 B Cash | Net: $+2.27 B | Manageable balance sheet leverage with $9.08B total debt against $11.35B liquid reserves (Net balance: $+2.27B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$2.27 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

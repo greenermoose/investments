@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Amazon.com, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **AWS Bedrock Custom LLM Orchestration & Trainium 2 Scaling** (2026-Q4): Expected top-line impact of ~$3.10B inflecting 2026-Q4 revenue. Enterprise workload migration to lower-cost custom silicon in AWS data centers. - **Project Kuiper Satellite Broadband Commercial Service** (2027-Q2): Expected top-line impact of ~$1.90B inflecting 2027-Q2 revenue. Enterprise telecom backhaul and remote broadband commercial subscription activation. - **Next-Gen Fulfillment Robotics & Same-Day Logistics Fleet** (2027-Q4): Expected top-line impact of ~$4.50B inflecting 2027-Q4 revenue. Unit fulfillment cost compression and 3P merchant logistics fee expansion.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+Amazon.com, Inc. operates under a reinvestment for growth capital strategy. The company returns capital to shareholders through a 0.40% dividend yield ($1.04/share annually, ~15% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $171.26B in cash & equivalents against $137.01B in total debt (net balance: $+34.25B). Anticipated annual CapEx and operational capital requirements of ~$27.40B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.04 / share | 0.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.04/share (0.40% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $137.01 B Debt vs $171.26 B Cash | Net: $+34.25 B | Institutional investment-grade corporate bond issuer with $137.01B total debt vs $171.26B in cash & equivalents (Net balance: $+34.25B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$27.40 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

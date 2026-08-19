@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Microsoft Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Microsoft 365 Copilot Enterprise Tier 2 Monetization** (2026-Q4): Expected top-line impact of ~$2.80B inflecting 2026-Q4 revenue. Higher seat penetration across Fortune 500 corporate enterprise clients. - **Azure Maia & Cobalt Custom AI Accelerators** (2027-Q2): Expected top-line impact of ~$3.40B inflecting 2027-Q2 revenue. First-party silicon deployment lowering compute unit cost and improving cloud gross margins. - **Autonomous Agentic AI Workflow Platform** (2027-Q4): Expected top-line impact of ~$4.10B inflecting 2027-Q4 revenue. Consumption-based agentic orchestration in Azure enterprise cloud subscriptions.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$116.1B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Microsoft Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 0.72% dividend yield ($3.48/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$116.1B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $82.96B in cash & equivalents against $66.37B in total debt (net balance: $+16.59B). Anticipated annual CapEx and operational capital requirements of ~$53.09B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $3.48 / share | 0.72% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $3.48/share (0.72% yield, ~25% payout ratio) with +10.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $116.1 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$116.1B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $66.37 B Debt vs $82.96 B Cash | Net: $+16.59 B | Institutional investment-grade corporate bond issuer with $66.37B total debt vs $82.96B in cash & equivalents (Net balance: $+16.59B). |
+| Capital Needs & Runway | AI_INFRASTRUCTURE_AND_RD | ~$53.09 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

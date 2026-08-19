@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Broadcom Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.65B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.92B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.05B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management utilizes moderate share buybacks (~$9.8B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
+## Capital Needs & Strategy
+Broadcom Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.30% dividend yield ($4.70/share annually, ~45% payout ratio). Management executes an active share repurchase program (~$9.8B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $16.30B in cash & equivalents against $13.04B in total debt (net balance: $+3.26B). Anticipated annual CapEx and operational capital requirements of ~$3.26B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $4.70 / share | 1.30% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $4.70/share (1.30% yield, ~45% payout ratio) with +12.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $9.8 B | -1.0% / yr | Management utilizes moderate share buybacks (~$9.8B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $13.04 B Debt vs $16.30 B Cash | Net: $+3.26 B | Manageable balance sheet leverage with $13.04B total debt against $16.30B liquid reserves (Net balance: $+3.26B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$3.26 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

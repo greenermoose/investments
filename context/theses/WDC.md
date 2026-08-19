@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Western Digital Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.08B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.11B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.13B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+Western Digital Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $3.23B in cash & equivalents against $2.58B in total debt (net balance: $+0.65B). Anticipated annual CapEx and operational capital requirements of ~$0.65B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $2.58 B Debt vs $3.23 B Cash | Net: $+0.65 B | Conservative debt profile of $2.58B debt vs $3.23B cash & equivalents (Net balance: $+0.65B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$0.65 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

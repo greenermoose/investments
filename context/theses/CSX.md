@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 CSX Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.03B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.04B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$4.9B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+CSX Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($0.72/share annually, ~35% payout ratio). Management executes an active share repurchase program (~$4.9B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $1.69B in cash & equivalents against $6.33B in total debt (net balance: $-4.64B). Anticipated annual CapEx and operational capital requirements of ~$1.13B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.72 / share | 1.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.72/share (1.40% yield, ~35% payout ratio) with +7.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $4.9 B | -2.0% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$4.9B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $6.33 B Debt vs $1.69 B Cash | Net: $-4.64 B | Manageable balance sheet leverage with $6.33B total debt against $1.69B liquid reserves (Net balance: $-4.64B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$1.13 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

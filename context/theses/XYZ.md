@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Block, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Financials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.19B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.22B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+Block, Inc. operates under a reinvestment for growth capital strategy. The company returns capital to shareholders through a 2.20% dividend yield ($1.77/share annually, ~32% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $3.60B in cash & equivalents against $36.00B in total debt (net balance: $-32.40B). Anticipated annual CapEx and operational capital requirements of ~$0.96B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 18 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.77 / share | 2.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.77/share (2.20% yield, ~32% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $36.00 B Debt vs $3.60 B Cash | Net: $-32.40 B | Institutional investment-grade corporate bond issuer with $36.00B total debt vs $3.60B in cash & equivalents (Net balance: $-32.40B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$0.96 B / yr CapEx | 18 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Lam Research Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.16B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.23B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.26B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$8.1B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Lam Research Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.15% dividend yield ($3.63/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$8.1B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $5.81B in cash & equivalents against $4.65B in total debt (net balance: $+1.16B). Anticipated annual CapEx and operational capital requirements of ~$1.16B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $3.63 / share | 1.15% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $3.63/share (1.15% yield, ~25% payout ratio) with +10.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $8.1 B | -2.0% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$8.1B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $4.65 B Debt vs $5.81 B Cash | Net: $+1.16 B | Conservative debt profile of $4.65B debt vs $5.81B cash & equivalents (Net balance: $+1.16B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$1.16 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

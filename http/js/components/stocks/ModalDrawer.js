@@ -123,26 +123,79 @@ export function openCompanyModal(company) {
   if (tamCagrEl) tamCagrEl.textContent = tamInfo.tam_cagr_pct !== undefined ? `+${tamInfo.tam_cagr_pct.toFixed(1)}% YoY` : '-';
   if (tamTextEl) tamTextEl.textContent = tamInfo.narrative || 'Market share and TAM modeling computed during universe compilation.';
 
-  // Share Dilution or Buyback
-  const dilInfo = company.share_dilution_or_buyback || {};
-  const dilPhilEl = document.getElementById('modal-dilution-phil');
-  const bbActiveEl = document.getElementById('modal-buyback-active');
-  const bbCapEl = document.getElementById('modal-buyback-capacity');
-  const dilRateEl = document.getElementById('modal-dilution-net-rate');
-  const dilTextEl = document.getElementById('modal-dilution-text');
+  // Capital Needs & Strategy
+  const capInfo = company.capital_needs_and_strategy || {};
+  const philEl = document.getElementById('modal-cap-phil');
+  const divEl = document.getElementById('modal-cap-dividends');
+  const bbEl = document.getElementById('modal-cap-buybacks');
+  const debtCashEl = document.getElementById('modal-cap-debt-cash');
+  const capexEl = document.getElementById('modal-cap-capex');
+  const runwayEl = document.getElementById('modal-cap-runway');
+  const gcEl = document.getElementById('modal-cap-going-concern');
+  const capNarrativeEl = document.getElementById('modal-cap-narrative');
 
-  if (dilPhilEl) dilPhilEl.textContent = dilInfo.management_philosophy ? dilInfo.management_philosophy.replace('_', ' ') : 'NEUTRAL';
-  if (bbActiveEl) {
-    bbActiveEl.textContent = dilInfo.buyback_program_active ? 'Active Program' : 'No Active Program';
-    bbActiveEl.style.color = dilInfo.buyback_program_active ? '#10b981' : '#f59e0b';
+  if (philEl) {
+    philEl.textContent = capInfo.capital_allocation_philosophy
+      ? capInfo.capital_allocation_philosophy.replace(/_/g, ' ')
+      : (company.share_dilution_or_buyback?.management_philosophy?.replace(/_/g, ' ') || 'BALANCED RETURN');
   }
-  if (bbCapEl) bbCapEl.textContent = dilInfo.authorized_capacity_usd_b ? `$${dilInfo.authorized_capacity_usd_b.toFixed(1)}B` : '$0.0B';
-  if (dilRateEl) {
-    const netRate = dilInfo.net_annual_share_change_pct !== undefined ? dilInfo.net_annual_share_change_pct : (company.net_dilution_rate ? company.net_dilution_rate * 100.0 : -1.5);
-    dilRateEl.textContent = netRate < 0 ? `${netRate.toFixed(1)}% (Buyback Burn)` : (netRate > 0 ? `+${netRate.toFixed(1)}% (Dilution)` : '0.0% (Neutral)');
-    dilRateEl.style.color = netRate < 0 ? '#10b981' : (netRate > 0 ? '#f43f5e' : '#818cf8');
+
+  if (divEl) {
+    const divData = capInfo.dividends || {};
+    if (divData.status === 'PAYING' && divData.dividend_yield_pct !== undefined) {
+      divEl.textContent = `${divData.dividend_yield_pct.toFixed(2)}% ($${(divData.annual_dividend_usd || 0).toFixed(2)}/yr)`;
+      divEl.style.color = '#10b981';
+    } else {
+      divEl.textContent = 'None / Reinvested';
+      divEl.style.color = '#94a3b8';
+    }
   }
-  if (dilTextEl) dilTextEl.textContent = dilInfo.narrative || 'Management share allocation and buyback authorization under ongoing review.';
+
+  if (bbEl) {
+    const bbData = capInfo.share_buybacks || company.share_dilution_or_buyback || {};
+    if (bbData.buyback_program_active) {
+      const authCap = bbData.authorized_capacity_usd_b ? `$${bbData.authorized_capacity_usd_b.toFixed(1)}B` : 'Active';
+      const burnRate = bbData.net_annual_share_change_pct !== undefined ? `${bbData.net_annual_share_change_pct.toFixed(1)}%/yr` : '-1.5%/yr';
+      bbEl.textContent = `Active (${authCap}, ${burnRate})`;
+      bbEl.style.color = '#10b981';
+    } else {
+      const dilRate = bbData.net_annual_share_change_pct || 0;
+      bbEl.textContent = dilRate > 0 ? `Dilutive (+${dilRate.toFixed(1)}%/yr)` : 'Inactive / Neutral';
+      bbEl.style.color = dilRate > 0 ? '#f43f5e' : '#94a3b8';
+    }
+  }
+
+  if (debtCashEl) {
+    const issData = capInfo.share_and_debt_issuance || {};
+    const debtVal = issData.total_debt_usd_b !== undefined ? issData.total_debt_usd_b : ((company.total_debt || 0) / 1e9);
+    const cashVal = issData.cash_and_equivalents_usd_b !== undefined ? issData.cash_and_equivalents_usd_b : ((company.cash_and_cash_equivalents || 0) / 1e9);
+    const netVal = issData.net_cash_or_debt_usd_b !== undefined ? issData.net_cash_or_debt_usd_b : (cashVal - debtVal);
+    debtCashEl.textContent = `$${debtVal.toFixed(1)}B Debt | $${cashVal.toFixed(1)}B Cash (${netVal >= 0 ? '+' : ''}$${netVal.toFixed(1)}B Net)`;
+    debtCashEl.style.color = netVal >= 0 ? '#10b981' : (Math.abs(netVal) > cashVal * 3 ? '#f59e0b' : '#818cf8');
+  }
+
+  if (capexEl) {
+    const needsData = capInfo.anticipated_capital_needs || {};
+    capexEl.textContent = needsData.annual_capex_usd_b ? `~$${needsData.annual_capex_usd_b.toFixed(2)}B / yr` : 'Self-Funded';
+  }
+
+  if (runwayEl) {
+    const needsData = capInfo.anticipated_capital_needs || {};
+    const runwayMonths = needsData.liquidity_runway_months || 36;
+    runwayEl.textContent = `${runwayMonths}+ Months`;
+    runwayEl.style.color = '#10b981';
+  }
+
+  if (gcEl) {
+    const needsData = capInfo.anticipated_capital_needs || {};
+    const gcWarn = needsData.going_concern_warning || false;
+    gcEl.textContent = gcWarn ? 'Alert: Going Concern' : 'Clean (Zero Warning)';
+    gcEl.style.color = gcWarn ? '#f43f5e' : '#10b981';
+  }
+
+  if (capNarrativeEl) {
+    capNarrativeEl.textContent = capInfo.narrative || company.share_dilution_or_buyback?.narrative || 'Management capital allocation and balance sheet strategy under ongoing evaluation.';
+  }
 
   // Invalidation Criteria
   if (invalidationEl) {

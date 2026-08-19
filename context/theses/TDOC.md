@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Teladoc Health, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.0% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+Teladoc Health, Inc. operates under a sbc dilutive capital strategy. The company returns capital to shareholders through a 1.20% dividend yield ($0.08/share annually, ~35% payout ratio). Share count is managed at an SBC-neutral pace. Balance sheet liquidity is supported by $0.63B in cash & equivalents against $0.50B in total debt (net balance: $+0.13B). Anticipated annual CapEx and operational capital requirements of ~$0.18B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.08 / share | 1.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.08/share (1.20% yield, ~35% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.0% / yr | Share count expands modestly at ~0.0% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | NONE | $0.50 B Debt vs $0.63 B Cash | Net: $+0.13 B | Pristine balance sheet with minimal debt ($0.50B) and $0.63B in cash reserves (Net cash: $+0.13B). |
+| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$0.18 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Salesforce, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.21B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.30B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.34B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$14.5B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Salesforce, Inc. operates under a aggressive shareholder return capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Management executes an active share repurchase program (~$14.5B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $10.36B in cash & equivalents against $8.29B in total debt (net balance: $+2.07B). Anticipated annual CapEx and operational capital requirements of ~$2.07B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
+| Share Buybacks & Dilution | ACTIVE | $14.5 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$14.5B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $8.29 B Debt vs $10.36 B Cash | Net: $+2.07 B | Manageable balance sheet leverage with $8.29B total debt against $10.36B liquid reserves (Net balance: $+2.07B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$2.07 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

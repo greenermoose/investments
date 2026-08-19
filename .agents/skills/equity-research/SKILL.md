@@ -58,6 +58,8 @@ python scripts/screen_market.py --max-debt-to-equity 3.0 --json --limit 30
 | **Annualized ROI Hurdle** | Estimated 3-Year Compounding >= 20.0% | Core Quantitative Filter |
 | **Revenue Trajectory** | 3-Year Secular Growth Rate >= 12% | High-Conviction Growth |
 | **Solvency & Runway** | Debt/Equity <= 3.5x or >18 months cash runway | Prevents Bankruptcy Risk |
+| **Going Concern Audit** | Clean audit opinion (zero going concern warnings) | Mandatory Solvency Gate |
+| **Capital Needs & Strategy** | Self-funded FCF, disciplined dividends & buybacks | Capital Allocation Verification |
 | **Competitive Moat** | High switching costs, network effects, or IP | Qualitative Moat Confirmation |
 | **Handoff Action** | Register symbol in master database | Triggers Thesis Formulation |
 

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Charter Communications, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.00B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.00B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.00B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements.
+## Capital Needs & Strategy
+Charter Communications, Inc. operates under a sbc dilutive capital strategy. The company returns capital to shareholders through a 0.50% dividend yield ($0.77/share annually, ~15% payout ratio). Diluted share count expands at ~2.0% per year due to employee stock compensation. Balance sheet liquidity is supported by $13.69B in cash & equivalents against $10.95B in total debt (net balance: $+2.74B). Anticipated annual CapEx and operational capital requirements of ~$2.74B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $0.77 / share | 0.50% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.77/share (0.50% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +2.0% / yr | Share dilution is elevated at ~2.0% per year to fund intensive capital expenditures and cash burn. Investors must monitor potential secondary equity issuances or convertible note offerings to meet ongoing capital requirements. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $10.95 B Debt vs $13.69 B Cash | Net: $+2.74 B | Manageable balance sheet leverage with $10.95B total debt against $13.69B liquid reserves (Net balance: $+2.74B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$2.74 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

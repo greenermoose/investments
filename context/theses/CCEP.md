@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Coca-Cola Europacific Partners PLC's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.07B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.08B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management utilizes moderate share buybacks (~$3.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
+## Capital Needs & Strategy
+Coca-Cola Europacific Partners PLC operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 2.40% dividend yield ($2.59/share annually, ~55% payout ratio). Management executes an active share repurchase program (~$3.1B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $2.51B in cash & equivalents against $9.41B in total debt (net balance: $-6.90B). Anticipated annual CapEx and operational capital requirements of ~$0.84B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $2.59 / share | 2.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.59/share (2.40% yield, ~55% payout ratio) with +5.5% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $3.1 B | -1.0% / yr | Management utilizes moderate share buybacks (~$3.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $9.41 B Debt vs $2.51 B Cash | Net: $-6.90 B | Manageable balance sheet leverage with $9.41B total debt against $2.51B liquid reserves (Net balance: $-6.90B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$0.84 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

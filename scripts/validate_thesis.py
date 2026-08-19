@@ -71,13 +71,18 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
     if "## Anticipated Catalysts & Timeline" not in content:
         errors.append("Missing section '## Anticipated Catalysts & Timeline'")
 
-    # 7. Share Dilution or Buyback
-    if "## Share Dilution or Buyback" not in content:
-        errors.append("Missing section '## Share Dilution or Buyback'")
+    # 7. Capital Needs & Strategy (or legacy Share Dilution or Buyback)
+    if "## Capital Needs & Strategy" not in content and "## Capital Needs and Strategy" not in content and "## Share Dilution or Buyback" not in content:
+        errors.append("Missing section '## Capital Needs & Strategy'")
     else:
-        dilution_section = content.split("## Share Dilution or Buyback")[1].split("##")[0].strip()
-        if len(dilution_section) < 40:
-            errors.append("Share Dilution or Buyback section is too brief")
+        if "## Capital Needs & Strategy" in content:
+            cap_section = content.split("## Capital Needs & Strategy")[1].split("##")[0].strip()
+        elif "## Capital Needs and Strategy" in content:
+            cap_section = content.split("## Capital Needs and Strategy")[1].split("##")[0].strip()
+        else:
+            cap_section = content.split("## Share Dilution or Buyback")[1].split("##")[0].strip()
+        if len(cap_section) < 40:
+            errors.append("Capital Needs & Strategy section is too brief")
 
     # 8. Invalidation Criteria
     if "## Explicit Invalidation Criteria" not in content:

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 JPMorgan Chase & Co.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Financials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.66B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.92B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.05B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$65.3B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+JPMorgan Chase & Co. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 2.10% dividend yield ($7.57/share annually, ~28% payout ratio). Management executes an active share repurchase program (~$65.3B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $27.97B in cash & equivalents against $279.73B in total debt (net balance: $-251.76B). Anticipated annual CapEx and operational capital requirements of ~$7.46B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $7.57 / share | 2.10% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $7.57/share (2.10% yield, ~28% payout ratio) with +10.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $65.3 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$65.3B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $279.73 B Debt vs $27.97 B Cash | Net: $-251.76 B | Institutional investment-grade corporate bond issuer with $279.73B total debt vs $27.97B in cash & equivalents (Net balance: $-251.76B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$7.46 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

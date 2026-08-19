@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 T-Mobile US, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.21B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.30B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.34B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$30.5B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+T-Mobile US, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($2.60/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$30.5B authorized capacity), reducing share count at ~2.5% annually. Balance sheet liquidity is supported by $21.77B in cash & equivalents against $17.42B in total debt (net balance: $+4.35B). Anticipated annual CapEx and operational capital requirements of ~$4.35B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $2.60 / share | 1.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.60/share (1.40% yield, ~25% payout ratio) with +10.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $30.5 B | -2.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$30.5B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $17.42 B Debt vs $21.77 B Cash | Net: $+4.35 B | Manageable balance sheet leverage with $17.42B total debt against $21.77B liquid reserves (Net balance: $+4.35B). |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$4.35 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

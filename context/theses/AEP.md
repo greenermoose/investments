@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 American Electric Power Company, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Utilities Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.03B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.05B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.05B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement.
+## Capital Needs & Strategy
+American Electric Power Company, Inc. operates under a sbc dilutive capital strategy. The company returns capital to shareholders through a 3.70% dividend yield ($4.68/share annually, ~68% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $3.39B in cash & equivalents against $33.87B in total debt (net balance: $-30.48B). Anticipated annual CapEx and operational capital requirements of ~$4.97B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 18 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $4.68 / share | 3.70% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $4.68/share (3.70% yield, ~68% payout ratio) with +5.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $33.87 B Debt vs $3.39 B Cash | Net: $-30.48 B | Institutional investment-grade corporate bond issuer with $33.87B total debt vs $3.39B in cash & equivalents (Net balance: $-30.48B). |
+| Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$4.97 B / yr CapEx | 18 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

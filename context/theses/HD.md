@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 The Home Depot, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.33B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.46B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.53B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$58.9B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+The Home Depot, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 2.20% dividend yield ($7.64/share annually, ~55% payout ratio). Management executes an active share repurchase program (~$58.9B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $42.06B in cash & equivalents against $33.65B in total debt (net balance: $+8.41B). Anticipated annual CapEx and operational capital requirements of ~$6.73B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $7.64 / share | 2.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $7.64/share (2.20% yield, ~55% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $58.9 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$58.9B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $33.65 B Debt vs $42.06 B Cash | Net: $+8.41 B | Institutional investment-grade corporate bond issuer with $33.65B total debt vs $42.06B in cash & equivalents (Net balance: $+8.41B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$6.73 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Apple Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Apple Intelligence Gen-2 & iPhone 18 Pro Hardware Cycle** (2026-Q4): Expected top-line impact of ~$6.20B inflecting 2026-Q4 revenue. Supercycle upgrade replacement rate driven by on-device contextual intelligence. - **Services Ecosystem Premium AI Subscription Tier** (2027-Q2): Expected top-line impact of ~$2.10B inflecting 2027-Q2 revenue. High-margin subscription monetization across 2.2B active installed device base. - **Spatial Computing Vision Pro 2 Commercialization** (2028-Q1): Expected top-line impact of ~$2.50B inflecting 2028-Q1 revenue. Broadened enterprise design and medical visualization hardware adoption.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$145.7B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Apple Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 0.50% dividend yield ($1.58/share annually, ~15% payout ratio). Management executes an active share repurchase program (~$145.7B authorized capacity), reducing share count at ~2.5% annually. Balance sheet liquidity is supported by $104.04B in cash & equivalents against $83.23B in total debt (net balance: $+20.81B). Anticipated annual CapEx and operational capital requirements of ~$66.59B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.58 / share | 0.50% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.58/share (0.50% yield, ~15% payout ratio) with +5.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $145.7 B | -2.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$145.7B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $83.23 B Debt vs $104.04 B Cash | Net: $+20.81 B | Institutional investment-grade corporate bond issuer with $83.23B total debt vs $104.04B in cash & equivalents (Net balance: $+20.81B). |
+| Capital Needs & Runway | AI_INFRASTRUCTURE_AND_RD | ~$66.59 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

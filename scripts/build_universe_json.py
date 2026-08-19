@@ -315,6 +315,7 @@ for filename in sorted(all_files):
         "business_profile": meta.get("business_profile") or val_model.get("business_profile"),
         "tam_and_market_share": val_model.get("tam_and_market_share"),
         "competitive_moat_analysis": val_model.get("competitive_moat_analysis"),
+        "capital_needs_and_strategy": val_model.get("capital_needs_and_strategy"),
         "share_dilution_or_buyback": val_model.get("share_dilution_or_buyback"),
         "catalyst_timeline": val_model.get("catalyst_timeline"),
         "indices": indices,

@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Diamondback Energy, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Energy Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.02B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.03B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$5.6B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Diamondback Energy, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 3.00% dividend yield ($6.37/share annually, ~40% payout ratio). Management executes an active share repurchase program (~$5.6B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $2.38B in cash & equivalents against $23.84B in total debt (net balance: $-21.46B). Anticipated annual CapEx and operational capital requirements of ~$3.50B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $6.37 / share | 3.00% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $6.37/share (3.00% yield, ~40% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $5.6 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$5.6B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $23.84 B Debt vs $2.38 B Cash | Net: $-21.46 B | Institutional investment-grade corporate bond issuer with $23.84B total debt vs $2.38B in cash & equivalents (Net balance: $-21.46B). |
+| Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$3.50 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

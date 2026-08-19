@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Mondelez International, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.07B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.10B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.12B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management utilizes moderate share buybacks (~$5.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility.
+## Capital Needs & Strategy
+Mondelez International, Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 2.50% dividend yield ($1.59/share annually, ~50% payout ratio). Management executes an active share repurchase program (~$5.7B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $4.57B in cash & equivalents against $17.15B in total debt (net balance: $-12.58B). Anticipated annual CapEx and operational capital requirements of ~$1.52B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.59 / share | 2.50% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.59/share (2.50% yield, ~50% payout ratio) with +8.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $5.7 B | -1.0% / yr | Management utilizes moderate share buybacks (~$5.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $17.15 B Debt vs $4.57 B Cash | Net: $-12.58 B | Manageable balance sheet leverage with $17.15B total debt against $4.57B liquid reserves (Net balance: $-12.58B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.52 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

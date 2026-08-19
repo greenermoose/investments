@@ -30,8 +30,16 @@ Boeing's commercial expansion is driven by distinct product and service mileston
 - **787 Dreamliner Production Ramp to 10/mo** (2027-Q2): Expected top-line impact of ~$2.20B inflecting Q2 revenue backed by transatlantic replacement orders.
 - **777X Type Inspection Authorization & First Delivery** (2027-Q4): Expected top-line impact of ~$3.00B inflecting Q4 revenue as passenger flagship widebodies enter service.
 
-## Share Dilution or Buyback
-Management is currently focused on operational turnaround and balance sheet deleveraging following past debt issuances. Free cash flow inflection ($7B–$10B annually by 2028) halts secondary equity dilution risks and positions the company to resume selective share repurchases in year 3 as net debt-to-EBITDA drops below 3.0x.
+## Capital Needs & Strategy
+Management operates under a balanced capital preservation and operational turnaround framework. The company currently does not pay a cash dividend, directing 100% of operational cash flow toward manufacturing quality stabilization, factory ramp rates, and commercial delivery execution. Share repurchases remain paused with an SBC-neutral target as free cash flow inflection ($7B–$10B annually by 2028) stabilizes the equity base. Balance sheet liquidity is supported by $10.40B in cash & equivalents against $53.30B in total long-term debt (net debt: -$42.90B). Anticipated annual CapEx and R&D requirements of ~$4.20B are funded through operating cash flow recovery and existing revolving credit lines. Independent audit opinions confirm zero going concern doubt, with operational liquidity runway exceeding 24 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | Dividend suspended to prioritize balance sheet deleveraging and manufacturing ramp investments. |
+| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share repurchases paused; modest +0.5% share expansion from employee compensation vesting. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $53.30 B Debt vs $10.40 B Cash | Net: -$42.90 B | Long-dated debt structure with manageable maturity wall and access to investment-grade debt markets. |
+| Capital Needs & Runway | CAPEX_AND_RD | ~$4.20 B / yr CapEx | 24 Months Runway | 100% funded via operational turnaround cash flow inflection and credit facilities. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Unqualified clean audit opinion. Ample liquidity buffer protects operational continuity. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

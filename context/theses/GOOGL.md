@@ -27,8 +27,16 @@ High customer switching costs, proprietary technology architecture, deep ecosyst
 ## Anticipated Catalysts & Timeline
 Alphabet Inc. (Class A)'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Communication Services Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$2.52B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$3.53B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$4.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
-## Share Dilution or Buyback
-Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$139.6B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind.
+## Capital Needs & Strategy
+Alphabet Inc. (Class A) operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 0.42% dividend yield ($1.44/share annually, ~10% payout ratio). Management executes an active share repurchase program (~$139.6B authorized capacity), reducing share count at ~2.5% annually. Balance sheet liquidity is supported by $99.73B in cash & equivalents against $79.78B in total debt (net balance: $+19.95B). Anticipated annual CapEx and operational capital requirements of ~$63.82B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+
+| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| Dividends Declared & Paid | PAYING | $1.44 / share | 0.42% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.44/share (0.42% yield, ~10% payout ratio) with +12.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $139.6 B | -2.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$139.6B capacity). Net diluted shares decrease at an modeled pace of 2.5% annually, providing a durable EPS compounder tailwind. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $79.78 B Debt vs $99.73 B Cash | Net: $+19.95 B | Institutional investment-grade corporate bond issuer with $79.78B total debt vs $99.73B in cash & equivalents (Net balance: $+19.95B). |
+| Capital Needs & Runway | AI_INFRASTRUCTURE_AND_RD | ~$63.82 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

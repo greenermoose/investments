@@ -735,13 +735,13 @@ pre code {
   text-transform: uppercase;
 }
 
-.badge-status.buy, .badge-status.BUY, .badge-status.active-long, .badge-status.ACTIVE_LONG {
+.badge-status.buy, .badge-status.BUY, .badge-status.active-long, .badge-status.ACTIVE_LONG, .badge-status.csp, .badge-status.CSP {
   background: rgba(16, 185, 129, 0.15);
   color: #10b981;
   border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-.badge-status.hold, .badge-status.HOLD, .badge-status.covered-call, .badge-status.COVERED_CALL_ACTIVE {
+.badge-status.hold, .badge-status.HOLD, .badge-status.covered-call, .badge-status.COVERED_CALL_ACTIVE, .badge-status.cc, .badge-status.CC {
   background: rgba(0, 212, 255, 0.15);
   color: #00d4ff;
   border: 1px solid rgba(0, 212, 255, 0.3);

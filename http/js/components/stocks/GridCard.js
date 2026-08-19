@@ -59,7 +59,11 @@ export function createGridCard(company, onSelect) {
           <span class="company-symbol">${company.symbol}</span>
           <span class="company-price-range" style="font-size: 0.95rem; font-weight: 600; color: #ffffff;">$${entryPrice.toFixed(2)} to $${targetExit.toFixed(2)}</span>
         </div>
-        <span class="badge-status ${statusClass}">${formattedStatus}</span>
+        <div class="company-status-badges" style="display: flex; gap: 6px; align-items: center;">
+          ${company.entry_strategy === 'SELL_CSP' ? '<span class="badge-status csp">CSP</span>' : ''}
+          <span class="badge-status ${statusClass}">${formattedStatus}</span>
+          ${company.exit_strategy === 'SELL_COVERED_CALLS' ? '<span class="badge-status cc">CC</span>' : ''}
+        </div>
       </div>
 
       <div class="company-name">${company.name || company.symbol}</div>
@@ -93,7 +97,6 @@ export function createGridCard(company, onSelect) {
     <div class="company-footer">
       <div class="footer-index-chips">
         ${renderIndexBadges(company.indices)}
-        ${company.exit_strategy === 'SELL_COVERED_CALLS' ? '<span class="provenance-pill" style="font-size: 0.72rem; padding: 2px 6px; color: #00d4ff;">CC Harvest</span>' : (company.entry_strategy === 'SELL_CSP' ? '<span class="provenance-pill" style="font-size: 0.72rem; padding: 2px 6px; color: #10b981;">CSP Entry</span>' : '')}
       </div>
       <span class="inspect-dossier-btn">
         Inspect Dossier &rarr;

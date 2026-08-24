@@ -23,16 +23,17 @@ The Equity Research Agent acts as the proactive discovery engine for the investm
   $$\text{Total 3-Year Return} = (1 + g_{\text{rev}})^3 \times \left(\frac{P/S_{\text{target}}}{P/S_{\text{current}}}\right)$$
 - An equity qualifies for universe onboarding when conservative revenue growth and realistic multiple maintenance/expansion produce an annualized compounding rate >= 20.0%.
 
-### 3. Solvency & Runway Sanity Check (vs. Rigid Balance Sheet Dogma)
+### 3. Solvency, Runway & Off-Balance Sheet Encumbrance Audit
 - Do not dogmatically eliminate companies simply because they have debt or are reinvesting cash into growth.
-- Instead, perform a rigorous **solvency and runway check**:
+- Instead, perform a rigorous **solvency, runway, and off-balance sheet liability check**:
   - Debt-to-Equity / Net Debt to EBITDA: Confirm leverage is manageable given the stability of cash flows (typically Debt/Equity < 3.5x for capital-light models).
   - Cash Runway & Liquidity: Ensure liquid cash and short-term investments cover at least 12 to 24 months of operational cash burn for non-profitable growth firms.
   - Dilution / SBC Rate: Verify that annual share count dilution from stock-based compensation is moderate (< 3% to 5% annually) so per-share compounding is preserved.
   - Going Concern / Solvency Audit: Confirm absence of debt default covenants, distress restructuring, or going-concern disclosures in recent SEC 10-Q/10-K filings.
+  - Off-Balance Sheet & Contingent Claims Audit: Audit footnotes for gross pension/OPEB obligations, Superfund/PFAS environmental cleanup commitments, product liability/mass tort litigation dockets, and unconditional take-or-pay purchase obligations according to `context/strategy/off_balance_sheet_liabilities_framework.md`.
 
 ### 4. Universe Onboarding & Handoff
-- When a candidate passes quantitative screening and solvency checks, add its symbol and core profile to the master tracking universe in `http/data/universe.json`.
+- When a candidate passes quantitative screening, solvency checks, and off-balance sheet liability verification, add its symbol and core profile to the master tracking universe in `context/data/universe.json`.
 - Queue the candidate for the **Investment Thesis Agent** to author a complete, multi-horizon thesis dossier in `context/theses/<TICKER>.md`.
 
 ## Deterministic Screening Tooling

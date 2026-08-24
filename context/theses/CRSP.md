@@ -48,6 +48,18 @@ CRISPR Therapeutics AG utilizes equity-based compensation as a core talent recru
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial offering lock-up periods are fully expired. Comp... | HIGH Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting with clinical development milestone-based stock option allocations | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+CRISPR Therapeutics AG's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | CRISPR Therapeutics AG sponsors modest domestic and international defined benefi... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical d... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.00 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and gover... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Active pharmaceutical ingredient supply agreements and clinical contract researc... |
+
+**Equity Cash Flow Seniority Impact:** Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

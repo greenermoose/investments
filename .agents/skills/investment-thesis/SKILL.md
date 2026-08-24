@@ -50,7 +50,8 @@ The Investment Thesis Agent synthesizes all gathered public information (Tier 1 
    - **3. Competitive Moat Analysis**: Defensibility, switching costs, network effects, scale advantages, intellectual property, and pricing power.
    - **4. Anticipated Catalysts & Timeline**: Granular product/service releases, exact target launch windows, expected incremental revenue ($B), and explicit links to 13Q revenue forecast inflections.
    - **5. Capital Needs & Strategy**: Comprehensive synthesis of capital allocation philosophy, cash dividends declared and paid (yield, annual payout, payout ratio), active open-market share buyback authorizations, debt and equity issuance history/leverage, anticipated capital requirements (CapEx/R&D), and auditor going concern / solvency evaluations.
-   - **6. Explicit Invalidation Criteria (Mandatory Exit Triggers)**: Deterministic quantitative and structural hurdles that mandate immediate position exit.
+   - **6. Off-Balance Sheet & Long-Term Obligations**: Forensic audit of defined benefit pension/OPEB gross PBO and funded status, environmental/PFAS contamination cleanup reserves, pending mass tort/toxic litigation dockets, and unconditional take-or-pay purchase commitments.
+   - **7. Explicit Invalidation Criteria (Mandatory Exit Triggers)**: Deterministic quantitative and structural hurdles that mandate immediate position exit.
 3. **Decisive Rating Determination**:
    - Assign an unambiguous rating of `BUY`, `HOLD`, `SELL`, or `AVOID` using mathematical return hurdles and margin-of-safety rules.
 4. **Data Provenance Compliance**:

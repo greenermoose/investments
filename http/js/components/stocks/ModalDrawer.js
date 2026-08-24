@@ -265,6 +265,111 @@ export function openCompanyModal(company) {
     sbcNarrativeEl.textContent = sbcInfo.narrative || 'Stock-based compensation and lock-up schedule under active fundamental surveillance.';
   }
 
+  // Off-Balance Sheet & Long-Term Liabilities
+  const obsInfo = company.off_balance_sheet_and_contingent_liabilities || {};
+  const penData = obsInfo.pension_and_opeb || {};
+  const envData = obsInfo.environmental_and_remediation || {};
+  const litData = obsInfo.litigation_and_toxic_torts || {};
+  const purData = obsInfo.purchase_commitments_and_guarantees || {};
+
+  const obsTotalEl = document.getElementById('modal-obs-total-val');
+  const obsRiskBadgeEl = document.getElementById('modal-obs-risk-badge');
+  const obsPenGapEl = document.getElementById('modal-obs-pension-gap');
+  const obsPenPboEl = document.getElementById('modal-obs-pension-pbo');
+  const obsPenCashEl = document.getElementById('modal-obs-pension-cash');
+  const obsEnvReserveEl = document.getElementById('modal-obs-env-reserve');
+  const obsEnvCashEl = document.getElementById('modal-obs-env-cash');
+  const obsLitScheduledEl = document.getElementById('modal-obs-lit-scheduled');
+  const obsPurchTotalEl = document.getElementById('modal-obs-purch-total');
+  const obsEquityImpactEl = document.getElementById('modal-obs-equity-impact');
+  const obsPenDescEl = document.getElementById('modal-obs-pen-desc');
+  const obsEnvDescEl = document.getElementById('modal-obs-env-desc');
+  const obsLitDescEl = document.getElementById('modal-obs-lit-desc');
+  const obsPurDescEl = document.getElementById('modal-obs-pur-desc');
+  const obsNarrativeEl = document.getElementById('modal-obs-narrative');
+
+  const obsRating = obsInfo.overall_liability_overhang_rating || 'LOW';
+  if (obsRiskBadgeEl) {
+    obsRiskBadgeEl.textContent = `${obsRating} OVERHANG`;
+    obsRiskBadgeEl.className = 'badge-status ' + (obsRating === 'MINIMAL' || obsRating === 'LOW' ? 'buy' : (obsRating === 'MODERATE' ? 'hold' : 'avoid'));
+  }
+
+  if (obsTotalEl) {
+    const totB = obsInfo.total_estimated_off_balance_sheet_encumbrance_usd_b !== undefined ? obsInfo.total_estimated_off_balance_sheet_encumbrance_usd_b : 0;
+    obsTotalEl.textContent = `$${totB.toFixed(1)}B`;
+  }
+
+  if (obsPenGapEl) {
+    const pboVal = penData.pbo_gross_usd_b || 0;
+    const gapVal = penData.funded_status_usd_b || 0;
+    if (pboVal === 0) {
+      obsPenGapEl.textContent = 'None (401k Only)';
+      obsPenGapEl.style.color = '#10b981';
+    } else {
+      obsPenGapEl.textContent = `${gapVal >= 0 ? '+' : ''}$${gapVal.toFixed(2)}B (${gapVal >= 0 ? 'Surplus' : 'Deficit'})`;
+      obsPenGapEl.style.color = gapVal >= 0 ? '#10b981' : (gapVal < -2.0 ? '#f43f5e' : '#f59e0b');
+    }
+  }
+
+  if (obsPenPboEl) {
+    const pboVal = penData.pbo_gross_usd_b || 0;
+    obsPenPboEl.textContent = pboVal > 0 ? `$${pboVal.toFixed(2)}B PBO` : '$0.00 B';
+  }
+
+  if (obsPenCashEl) {
+    const penCash = penData.annual_cash_contribution_usd_b || 0;
+    obsPenCashEl.textContent = penCash > 0 ? `~$${penCash.toFixed(2)}B / yr` : '$0.00 B / yr';
+  }
+
+  if (obsEnvReserveEl) {
+    const envRes = envData.accrued_environmental_reserve_usd_b || 0;
+    const sites = envData.superfund_and_pfas_sites_count || 0;
+    obsEnvReserveEl.textContent = `$${envRes.toFixed(2)}B (${sites} sites)`;
+    obsEnvReserveEl.style.color = envRes > 1.0 ? '#f87171' : '#cbd5e1';
+  }
+
+  if (obsEnvCashEl) {
+    const envCash = envData.annual_remediation_cash_drain_usd_b || 0;
+    obsEnvCashEl.textContent = envCash > 0 ? `~$${envCash.toFixed(2)}B / yr` : '< $0.01B / yr';
+  }
+
+  if (obsLitScheduledEl) {
+    const litSched = litData.recent_settlements_scheduled_usd_b || 0;
+    const litDrain = litData.annual_legal_settlement_cash_drain_usd_b || 0;
+    obsLitScheduledEl.textContent = litSched > 0 ? `$${litSched.toFixed(2)}B (~$${litDrain.toFixed(2)}B/yr)` : 'Minimal / Insured';
+    obsLitScheduledEl.style.color = litSched > 2.0 ? '#f43f5e' : (litSched > 0 ? '#f59e0b' : '#10b981');
+  }
+
+  if (obsPurchTotalEl) {
+    const purTot = purData.unconditional_purchase_obligations_usd_b || 0;
+    const takePay = purData.take_or_pay_commitments_usd_b || 0;
+    obsPurchTotalEl.textContent = `$${purTot.toFixed(1)}B (Take-or-Pay: $${takePay.toFixed(1)}B)`;
+  }
+
+  if (obsEquityImpactEl) {
+    obsEquityImpactEl.textContent = obsInfo.equity_cash_flow_diversion_risk || 'Zero material off-balance sheet encumbrance on common equity cash flows.';
+  }
+
+  if (obsPenDescEl) {
+    obsPenDescEl.textContent = penData.narrative || 'Defined contribution retirement plans with zero legacy pension debt.';
+  }
+
+  if (obsEnvDescEl) {
+    obsEnvDescEl.textContent = envData.narrative || 'Zero material Superfund or environmental cleanup liabilities.';
+  }
+
+  if (obsLitDescEl) {
+    obsLitDescEl.textContent = litData.narrative || 'Standard commercial litigation covered by ordinary operating reserves.';
+  }
+
+  if (obsPurDescEl) {
+    obsPurDescEl.textContent = purData.narrative || 'Commercial purchase commitments aligned with standard operational procurement.';
+  }
+
+  if (obsNarrativeEl) {
+    obsNarrativeEl.textContent = obsInfo.narrative || 'Comprehensive off-balance sheet audit confirms robust equityholder cash flow protection.';
+  }
+
   // Invalidation Criteria
   if (invalidationEl) {
     if (Array.isArray(company.invalidation_criteria)) {

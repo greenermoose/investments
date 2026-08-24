@@ -48,6 +48,18 @@ Honeywell International Inc. utilizes equity-based compensation as a core talent
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Honeywell has successfully ring-fenced and de-risked historical asbestos and environmental exposures through corporate spin-offs and settlement agreements.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $13.5 B (Gap: $-0.8 B) | ~$0.18 B / yr | Honeywell sponsors global defined benefit plans ($13.5B PBO vs $12.7B assets) an... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.80 B (55 Sites) | ~$0.15 B / yr | Accrued remediation reserves at 55 Superfund and historical industrial sites, pr... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $1.20 B | ~$0.12 B / yr | Legacy Bendix friction materials asbestos claims (managed through ongoing indemn... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $7.50 B | Take-or-Pay: $2.50 B | Aerospace component, specialized titanium, and specialty refrigerant chemical su... |
+
+**Equity Cash Flow Seniority Impact:** Manageable cash drag: Combined legacy liabilities represent ~$0.45B in annual cash outlays, well within $5B+ annual free cash flow.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.

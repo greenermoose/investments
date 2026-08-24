@@ -48,6 +48,18 @@ DoorDash, Inc. utilizes equity-based compensation as a core talent recruitment a
 | Lock-Up & Window Status | EXECUTIVE_VESTING_CLIFF_SCHEDULED | 10b5-1 Trading Window | Executive leadership and key engineering equity compensation... | MODERATE Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+DoorDash, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.66 B (Gap: $-0.08 B) | ~$0.04 B / yr | DoorDash, Inc. maintains legacy defined benefit plans ($1.66B PBO vs $1.58B asse... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.48 B | Take-or-Pay: $0.62 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+
+**Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $900.0B addressable market.

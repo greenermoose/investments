@@ -92,5 +92,41 @@
     }
   ],
   "investor_relations_url": "https://investors.3m.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-18T18:03:44.937667+00:00",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "HIGH",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 18.8,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.6,
+      "pbo_gross_usd_b": 11.8,
+      "plan_assets_usd_b": 11.2,
+      "annual_cash_contribution_usd_b": 0.15,
+      "underfunding_risk_level": "MODERATE",
+      "opeb_unfunded_usd_b": 0.7,
+      "narrative": "3M maintains legacy defined benefit pension plans with $11.8B in gross PBO against $11.2B in plan assets (-$0.6B net funded gap). Unfunded retiree medical OPEB obligations add $0.7B in pay-as-you-go claims. Annual cash contributions average ~$0.15B."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 10.3,
+      "estimated_unreserved_exposure_usd_b": 1.2,
+      "superfund_and_pfas_sites_count": 48,
+      "annual_remediation_cash_drain_usd_b": 0.85,
+      "risk_level": "HIGH",
+      "narrative": "Subject to historic public water supplier PFAS settlement ($10.3B payable across 13 years through 2036) and ongoing site remediation at 48+ legacy manufacturing and disposal facilities. Annual cash remediation drain exceeds $0.85B."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Combat Arms Earplugs CAEv2 MDL settlement ($6.0B payable through 2029) and international/state PFAS personal injury claims.",
+      "recent_settlements_scheduled_usd_b": 6.0,
+      "annual_legal_settlement_cash_drain_usd_b": 1.1,
+      "catastrophic_loss_risk_level": "ELEVATED",
+      "narrative": "Finalized global settlements for Combat Arms earplugs ($6.0B) and drinking water PFAS have established structured payment schedules, substantially reducing trial risk but imposing an annual cash drain of ~$1.1B."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 2.4,
+      "take_or_pay_commitments_usd_b": 0.8,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional raw materials and specialty chemical supply agreements total $2.4B across 5 years with $0.8B in binding take-or-pay clauses."
+    },
+    "equity_cash_flow_diversion_risk": "High cash flow encumbrance: ~$1.95B in annual cash outlays dedicated to PFAS and Combat Arms settlements through 2029-2036 restricts common share repurchases and moderates dividend growth.",
+    "narrative": "3M's legacy industrial footprint imposes substantial off-balance-sheet encumbrances. While recent settlements have capped catastrophic trial risk, multi-year installment payments represent senior claims on operating cash flow ahead of equity distributions."
+  }
 }

@@ -48,6 +48,18 @@ Amazon.com, Inc. utilizes equity-based compensation as a core talent recruitment
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Amazon.com, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $82.21 B (Gap: $-4.11 B) | ~$2.06 B / yr | Amazon.com, Inc. maintains legacy defined benefit plans ($82.21B PBO vs $78.10B ... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $123.31 B | Take-or-Pay: $30.83 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+
+**Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $1713.0B addressable market.

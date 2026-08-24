@@ -48,6 +48,18 @@ Verizon Communications Inc. utilizes equity-based compensation as a core talent 
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Verizon Communications Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Verizon Communications Inc. operates zero defined benefit pension plans or retir... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Verizon Communications Inc. has zero legacy manufacturing, toxic chemical, or fe... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $47.69 B | Take-or-Pay: $14.31 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $650.0B addressable market.

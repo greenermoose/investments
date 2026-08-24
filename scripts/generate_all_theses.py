@@ -96,6 +96,12 @@ for equity in universe:
     iss_d = cap_info["share_and_debt_issuance"]
     needs_d = cap_info["anticipated_capital_needs"]
 
+    obs_info = val_model.get("off_balance_sheet_and_contingent_liabilities") or {}
+    pen_d = obs_info.get("pension_and_opeb", {})
+    env_d = obs_info.get("environmental_and_remediation", {})
+    lit_d = obs_info.get("litigation_and_toxic_torts", {})
+    pur_d = obs_info.get("purchase_commitments_and_guarantees", {})
+
     # 13-Quarter Revenue Forecast Rows
     forecast_rows = []
     for q in val_model["revenue_forecast_13q"]:
@@ -201,7 +207,19 @@ for equity in universe:
         f"| Annual Stock Compensation | ~{sbc_info['sbc_pct_of_revenue']:.1f}% of TTM Revenue | ${sbc_info['sbc_annual_expense_usd_b']:.2f} B / yr | {sbc_info['buyback_offset_status']} | Risk: {sbc_info['downward_price_pressure_risk']} |",
         f"| Gross vs Net Dilution Rate | Gross: +{sbc_info['gross_annual_dilution_pct']:.1f}% / yr | Net: {sbc_info['net_dilution_rate_pct']:+.1f}% / yr | {dilution_info['management_philosophy']} | {'Accretive Repurchases' if sbc_info['buyback_offset_status'] == 'FULL_OFFSET_ACCRETIVE' else 'Dilution Drag'} |",
         f"| Lock-Up & Window Status | {sbc_info['lock_up_status']} | 10b5-1 Trading Window | {sbc_info['lock_up_details'][:60]}... | {sbc_info['downward_price_pressure_risk']} Overhang Risk |",
-        f"| Vesting Architecture | {sbc_info['vesting_schedule_structure']} | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |",
+        "| Vesting Architecture | " + sbc_info['vesting_schedule_structure'] + " | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |",
+        "",
+        "## Off-Balance Sheet & Long-Term Obligations",
+        obs_info["narrative"] if obs_info else f"{name} manages an established liability profile with minimal off-balance sheet encumbrances.",
+        "",
+        "| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |",
+        "| :--- | :--- | :--- | :--- | :--- |",
+        f"| Defined Benefit Pension & OPEB | {pen_d['underfunding_risk_level'] if obs_info else 'NONE'} | PBO: {('$' + str(round(pen_d['pbo_gross_usd_b'], 2)) + ' B') if obs_info and pen_d['pbo_gross_usd_b'] > 0 else 'None (401k Only)'} (Gap: {('$' + str(round(pen_d['funded_status_usd_b'], 2)) + ' B') if obs_info and pen_d['pbo_gross_usd_b'] > 0 else '$0.00 B'}) | ~${pen_d['annual_cash_contribution_usd_b']:.2f} B / yr | {pen_d['narrative'][:80]}... |" if obs_info else "| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |",
+        f"| Environmental Remediation & PFAS | Risk: {env_d['risk_level']} | Accrued: ${env_d['accrued_environmental_reserve_usd_b']:.2f} B ({env_d['superfund_and_pfas_sites_count']} Sites) | ~${env_d['annual_remediation_cash_drain_usd_b']:.2f} B / yr | {env_d['narrative'][:80]}... |" if obs_info else "| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |",
+        f"| Product Liability & Mass Torts | Risk: {lit_d['catastrophic_loss_risk_level']} | Scheduled: ${lit_d['recent_settlements_scheduled_usd_b']:.2f} B | ~${lit_d['annual_legal_settlement_cash_drain_usd_b']:.2f} B / yr | {lit_d['active_mass_torts_or_mdl'][:80]}... |" if obs_info else "| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |",
+        f"| Purchase Commitments & Guarantees | Active Contracts | Total: ${pur_d['unconditional_purchase_obligations_usd_b']:.2f} B | Take-or-Pay: ${pur_d['take_or_pay_commitments_usd_b']:.2f} B | {pur_d['narrative'][:80]}... |" if obs_info else "| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |",
+        "",
+        f"**Equity Cash Flow Seniority Impact:** {obs_info['equity_cash_flow_diversion_risk'] if obs_info else 'Zero material off-balance sheet encumbrances on common equity distributions.'}",
         "",
         "## Explicit Invalidation Criteria (Exit Triggers)",
         "If any of the following occur, the thesis is broken and the position will be exited:",

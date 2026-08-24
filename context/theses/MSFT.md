@@ -48,6 +48,18 @@ Microsoft Corporation utilizes equity-based compensation as a core talent recrui
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Microsoft's off-balance sheet footprint is entirely forward-looking growth capital (cloud datacenters, GPU clusters, clean power) with zero dead-weight legacy worker or environmental encumbrances.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Microsoft maintains zero defined benefit pension plans or retiree healthcare OPE... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero industrial contamination liabilities. Environmental commitments consist of ... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.50 B | ~$0.10 B / yr | FTC cloud software licensing review, European Commission Teams unbundling monito... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $65.00 B | Take-or-Pay: $28.00 B | Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access... |
+
+**Equity Cash Flow Seniority Impact:** Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $1200.0B addressable market.

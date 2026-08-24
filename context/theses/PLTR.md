@@ -48,6 +48,18 @@ Palantir Technologies Inc. utilizes equity-based compensation as a core talent r
 | Lock-Up & Window Status | EXECUTIVE_VESTING_CLIFF_SCHEDULED | 10b5-1 Trading Window | Executive leadership and key engineering equity compensation... | MODERATE Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Palantir Technologies Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Palantir Technologies Inc. operates zero defined benefit pension plans or retire... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Palantir Technologies Inc. has zero legacy manufacturing, toxic chemical, or fed... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.65 B | Take-or-Pay: $0.49 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $71.0B addressable market.

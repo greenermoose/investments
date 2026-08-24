@@ -48,6 +48,18 @@ PepsiCo, Inc. utilizes equity-based compensation as a core talent recruitment an
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+PepsiCo, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $10.08 B (Gap: $-0.5 B) | ~$0.25 B / yr | PepsiCo, Inc. maintains legacy defined benefit plans ($10.08B PBO vs $9.58B asse... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $15.12 B | Take-or-Pay: $3.78 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+
+**Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $550.0B addressable market.

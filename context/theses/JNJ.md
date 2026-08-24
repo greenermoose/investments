@@ -48,6 +48,18 @@ Johnson & Johnson utilizes equity-based compensation as a core talent recruitmen
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting with clinical development milestone-based stock option allocations | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+While JNJ faces substantial mass tort exposure from cosmetic talc claims, its enormous free cash generation and balance sheet strength ensure equity dividend safety, though headline litigation risk continues to compress valuation multiples.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $32.4 B (Gap: $-1.3 B) | ~$0.30 B / yr | Worldwide defined benefit pension PBO totals $32.4B against $31.1B in assets (-$... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.60 B (14 Sites) | ~$0.05 B / yr | Remediation reserves across 14 historical pharmaceutical and medical packaging s... |
+| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $9.50 B | ~$0.75 B / yr | Cosmetic talcum powder ovarian cancer and mesothelioma mass torts (proposed $8.9... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $6.20 B | Take-or-Pay: $2.10 B | Unconditional active pharmaceutical ingredient (API) manufacturing, clinical res... |
+
+**Equity Cash Flow Seniority Impact:** Moderate cash diversion: AAA-rated balance sheet and $18B+ annual free cash flow readily service talc settlement installments and pension contributions while maintaining consecutive annual dividend increases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $1100.0B addressable market.

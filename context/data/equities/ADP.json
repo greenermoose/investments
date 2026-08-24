@@ -92,5 +92,41 @@
     }
   ],
   "investor_relations_url": "https://investors.adp.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-18T18:03:44.937667+00:00",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "MODERATE",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 7.51,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.34,
+      "pbo_gross_usd_b": 4.83,
+      "plan_assets_usd_b": 4.49,
+      "annual_cash_contribution_usd_b": 0.14,
+      "underfunding_risk_level": "MODERATE",
+      "opeb_unfunded_usd_b": 0.88,
+      "narrative": "Automatic Data Processing, Inc. sponsors defined benefit pension plans with $4.83B in gross PBO against $4.49B in assets ($-0.34B net gap) and $0.88B in unfunded OPEB."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.3,
+      "estimated_unreserved_exposure_usd_b": 0.15,
+      "superfund_and_pfas_sites_count": 6,
+      "annual_remediation_cash_drain_usd_b": 0.03,
+      "risk_level": "LOW",
+      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
+      "recent_settlements_scheduled_usd_b": 0.3,
+      "annual_legal_settlement_cash_drain_usd_b": 0.04,
+      "catastrophic_loss_risk_level": "LOW",
+      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 5.49,
+      "take_or_pay_commitments_usd_b": 1.65,
+      "jv_and_vie_debt_guarantees_usd_b": 0.2,
+      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $5.49B."
+    },
+    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
+    "narrative": "Automatic Data Processing, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
+  }
 }

@@ -48,6 +48,18 @@ Exelon Corporation utilizes equity-based compensation as a core talent recruitme
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Exelon Corporation's off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $6.52 B (Gap: $-0.65 B) | ~$0.20 B / yr | Exelon Corporation sponsors utility and industrial defined benefit plans ($6.52B... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $11.74 B (12 Sites) | ~$0.70 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $13.04 B | Take-or-Pay: $7.82 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
+
+**Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $450.0B addressable market.

@@ -48,6 +48,18 @@
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+3M's legacy industrial footprint imposes substantial off-balance-sheet encumbrances. While recent settlements have capped catastrophic trial risk, multi-year installment payments represent senior claims on operating cash flow ahead of equity distributions.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $11.8 B (Gap: $-0.6 B) | ~$0.15 B / yr | 3M maintains legacy defined benefit pension plans with $11.8B in gross PBO again... |
+| Environmental Remediation & PFAS | Risk: HIGH | Accrued: $10.30 B (48 Sites) | ~$0.85 B / yr | Subject to historic public water supplier PFAS settlement ($10.3B payable across... |
+| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $6.00 B | ~$1.10 B / yr | Combat Arms Earplugs CAEv2 MDL settlement ($6.0B payable through 2029) and inter... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.40 B | Take-or-Pay: $0.80 B | Unconditional raw materials and specialty chemical supply agreements total $2.4B... |
+
+**Equity Cash Flow Seniority Impact:** High cash flow encumbrance: ~$1.95B in annual cash outlays dedicated to PFAS and Combat Arms settlements through 2029-2036 restricts common share repurchases and moderates dividend growth.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.

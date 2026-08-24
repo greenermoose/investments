@@ -48,6 +48,18 @@ Chevron Corporation utilizes equity-based compensation as a core talent recruitm
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Chevron's primary off-balance-sheet commitments consist of Asset Retirement Obligations (AROs) and long-term midstream take-or-pay agreements typical for supermajor energy operators.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $12.5 B (Gap: $-0.7 B) | ~$0.25 B / yr | Chevron sponsors global defined benefit plans with $12.5B PBO against $11.8B pla... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $14.80 B (35 Sites) | ~$1.20 B / yr | Extensive Asset Retirement Obligations (AROs) for offshore drilling platform dec... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.90 B | ~$0.15 B / yr | Municipal climate change torts, historical international concession arbitrations... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $22.00 B | Take-or-Pay: $12.50 B | Long-term LNG transport vessel charters, pipeline throughput take-or-pay agreeme... |
+
+**Equity Cash Flow Seniority Impact:** Standard energy major encumbrances: AROs and pipeline commitments are integral to upstream operating models and fully covered by upstream cash generation above $60/bbl oil.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $800.0B addressable market.

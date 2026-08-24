@@ -92,5 +92,41 @@
     }
   ],
   "investor_relations_url": "https://investor.mercadolibre.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-18T18:03:44.937667+00:00",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 6.27,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.17,
+      "pbo_gross_usd_b": 3.48,
+      "plan_assets_usd_b": 3.31,
+      "annual_cash_contribution_usd_b": 0.09,
+      "underfunding_risk_level": "MINIMAL",
+      "opeb_unfunded_usd_b": 0.58,
+      "narrative": "MercadoLibre, Inc. maintains legacy defined benefit plans ($3.48B PBO vs $3.31B assets; $-0.17B gap) and $0.58B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.05,
+      "estimated_unreserved_exposure_usd_b": 0.02,
+      "superfund_and_pfas_sites_count": 1,
+      "annual_remediation_cash_drain_usd_b": 0.01,
+      "risk_level": "MINIMAL",
+      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
+      "recent_settlements_scheduled_usd_b": 0.2,
+      "annual_legal_settlement_cash_drain_usd_b": 0.03,
+      "catastrophic_loss_risk_level": "MINIMAL",
+      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 5.22,
+      "take_or_pay_commitments_usd_b": 1.3,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $5.22B across 3-5 years."
+    },
+    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
+    "narrative": "MercadoLibre, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
+  }
 }

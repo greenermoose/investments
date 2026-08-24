@@ -48,6 +48,18 @@ Nu Holdings Ltd. utilizes equity-based compensation as a core talent recruitment
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Nu Holdings Ltd.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.05 B (Gap: $-0.02 B) | ~$0.02 B / yr | Nu Holdings Ltd. maintains well-funded legacy defined benefit pension plans ($1.... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Nu Holdings Ltd. has zero industrial contamination or Superfund remediation liab... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, in... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.26 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
+
+**Equity Cash Flow Seniority Impact:** Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $850.0B addressable market.

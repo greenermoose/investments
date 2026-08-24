@@ -418,6 +418,76 @@
               <p id="modal-sbc-narrative" style="margin: 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;"></p>
             </div>
 
+            <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Off-Balance Sheet &amp; Long-Term Liabilities (Pensions, Litigation, Environmental)</h4>
+            <div id="modal-obs-card" style="background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px 16px; margin: 8px 0 16px 0;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <div style="font-size: 0.82rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">Off-Balance Sheet &amp; Contingent Obligations Audit</div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Total Encumbrance: <strong id="modal-obs-total-val" style="color: #ffffff;">$0.0B</strong></span>
+                  <span id="modal-obs-risk-badge" class="badge-status buy" style="font-size: 0.76rem; padding: 2px 8px;">MINIMAL OVERHANG</span>
+                </div>
+              </div>
+              
+              <div class="company-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 12px; gap: 10px;">
+                <div class="metric-item">
+                  <span class="metric-label">Pension Funded Status (ASC 715)</span>
+                  <span class="metric-val" id="modal-obs-pension-gap" style="color: #10b981; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Gross Pension PBO</span>
+                  <span class="metric-val" id="modal-obs-pension-pbo" style="color: #ffffff; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Annual Pension Funding</span>
+                  <span class="metric-val" id="modal-obs-pension-cash" style="color: #818cf8; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Environmental Reserves &amp; PFAS</span>
+                  <span class="metric-val" id="modal-obs-env-reserve" style="color: #cbd5e1; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Annual Remediation Cash Drain</span>
+                  <span class="metric-val" id="modal-obs-env-cash" style="color: #f59e0b; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Mass Tort &amp; Legal Scheduled</span>
+                  <span class="metric-val" id="modal-obs-lit-scheduled" style="color: #f87171; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Unconditional Purchase Oblig.</span>
+                  <span class="metric-val" id="modal-obs-purch-total" style="color: #00d4ff; font-size: 0.85rem; font-weight: 600;">-</span>
+                </div>
+              </div>
+
+              <!-- Seniority & Cash Diversion Callout -->
+              <div style="background: rgba(0, 0, 0, 0.25); border-left: 3px solid #00d4ff; padding: 10px 14px; border-radius: 4px; margin-bottom: 10px; font-size: 0.84rem; color: #e2e8f0; line-height: 1.5;">
+                <strong style="color: #00d4ff;">Equityholder Cash Flow Seniority Impact: </strong>
+                <span id="modal-obs-equity-impact">-</span>
+              </div>
+
+              <!-- Breakout grid for Pension, Environmental, Litigation, Commitments -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-bottom: 10px;">
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 10px 12px;">
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #818cf8; text-transform: uppercase; margin-bottom: 4px;">Pensions &amp; OPEB (Worker Obligations)</div>
+                  <p id="modal-obs-pen-desc" style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">-</p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 10px 12px;">
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #f59e0b; text-transform: uppercase; margin-bottom: 4px;">Environmental &amp; Superfund Remediation</div>
+                  <p id="modal-obs-env-desc" style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">-</p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 10px 12px;">
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #f87171; text-transform: uppercase; margin-bottom: 4px;">Product Safety &amp; Toxic Tort Litigation</div>
+                  <p id="modal-obs-lit-desc" style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">-</p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 10px 12px;">
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #00d4ff; text-transform: uppercase; margin-bottom: 4px;">Contractual Purchase Commitments</div>
+                  <p id="modal-obs-pur-desc" style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">-</p>
+                </div>
+              </div>
+
+              <p id="modal-obs-narrative" style="margin: 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;"></p>
+            </div>
+
             <h4 style="margin: 20px 0 8px 0; color: #ffffff;">Explicit Invalidation Criteria (Mandatory Exit Triggers)</h4>
             <div class="callout warning" style="margin: 8px 0 16px 0;">
               <p id="modal-invalidation" style="margin: 0; font-size: 0.92rem; color: #e2e8f0; line-height: 1.5;"></p>

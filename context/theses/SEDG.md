@@ -48,6 +48,18 @@ SolarEdge Technologies, Inc. utilizes equity-based compensation as a core talent
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+SolarEdge Technologies, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.29 B (Gap: $-0.03 B) | ~$0.01 B / yr | SolarEdge Technologies, Inc. sponsors utility and industrial defined benefit pla... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.52 B (12 Sites) | ~$0.03 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.58 B | Take-or-Pay: $0.35 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
+
+**Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

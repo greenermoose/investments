@@ -389,6 +389,198 @@
         }
       }
     },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "type": "object",
+      "description": "Comprehensive audit of off-balance-sheet commitments, defined benefit pension/OPEB obligations (ASC 715), environmental contamination/PFAS remediation (ASC 410/450), product liability/mass tort litigation, and take-or-pay purchase obligations that redirect operational cash flows away from common equity investors.",
+      "required": [
+        "overall_liability_overhang_rating",
+        "total_estimated_off_balance_sheet_encumbrance_usd_b",
+        "pension_and_opeb",
+        "environmental_and_remediation",
+        "litigation_and_toxic_torts",
+        "purchase_commitments_and_guarantees",
+        "equity_cash_flow_diversion_risk",
+        "narrative"
+      ],
+      "properties": {
+        "overall_liability_overhang_rating": {
+          "type": "string",
+          "enum": ["MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH", "CRITICAL"],
+          "description": "Composite risk rating of total off-balance sheet encumbrances relative to market capitalization and free cash flow."
+        },
+        "total_estimated_off_balance_sheet_encumbrance_usd_b": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Aggregate estimated off-balance sheet encumbrance in billions of USD."
+        },
+        "pension_and_opeb": {
+          "type": "object",
+          "description": "Defined benefit pension plan and other post-employment benefit (OPEB) obligations.",
+          "required": [
+            "funded_status_usd_b",
+            "pbo_gross_usd_b",
+            "plan_assets_usd_b",
+            "annual_cash_contribution_usd_b",
+            "underfunding_risk_level",
+            "opeb_unfunded_usd_b",
+            "narrative"
+          ],
+          "properties": {
+            "funded_status_usd_b": {
+              "type": "number",
+              "description": "Net funded status on balance sheet in billions of USD (Plan Assets minus PBO; positive for net asset, negative for net liability)."
+            },
+            "pbo_gross_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Gross projected benefit obligation (PBO) in billions of USD."
+            },
+            "plan_assets_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Fair value of dedicated pension plan assets in billions of USD."
+            },
+            "annual_cash_contribution_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Estimated annual employer cash contribution to pension trusts in billions of USD."
+            },
+            "underfunding_risk_level": {
+              "type": "string",
+              "enum": ["NONE", "MINIMAL", "MODERATE", "SIGNIFICANT", "CRITICAL"],
+              "description": "Evaluation of pension underfunding and discount-rate sensitivity."
+            },
+            "opeb_unfunded_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Unfunded accumulated postretirement benefit obligation (OPEB retiree healthcare/life) in billions of USD."
+            },
+            "narrative": {
+              "type": "string",
+              "description": "Qualitative summary of pension plan structure, actuarial discount rate assumptions, and cash flow priority."
+            }
+          }
+        },
+        "environmental_and_remediation": {
+          "type": "object",
+          "description": "Environmental remediation, Superfund/CERCLA, PFAS contamination, and Asset Retirement Obligations (AROs).",
+          "required": [
+            "accrued_environmental_reserve_usd_b",
+            "estimated_unreserved_exposure_usd_b",
+            "superfund_and_pfas_sites_count",
+            "annual_remediation_cash_drain_usd_b",
+            "risk_level",
+            "narrative"
+          ],
+          "properties": {
+            "accrued_environmental_reserve_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Balance sheet accrued environmental remediation reserves under ASC 450/410 in billions of USD."
+            },
+            "estimated_unreserved_exposure_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Estimated potential unaccrued environmental cleanup exposure across long-term mandates in billions of USD."
+            },
+            "superfund_and_pfas_sites_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of active federal Superfund (CERCLA) PRP or major PFAS remediation programs."
+            },
+            "annual_remediation_cash_drain_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Estimated annual operational cash outlay dedicated to environmental remediation in billions of USD."
+            },
+            "risk_level": {
+              "type": "string",
+              "enum": ["MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH"],
+              "description": "Risk rating for legacy environmental and chemical contamination liabilities."
+            },
+            "narrative": {
+              "type": "string",
+              "description": "Qualitative summary of remediation programs, regulatory consent decrees, and multi-year cash commitments."
+            }
+          }
+        },
+        "litigation_and_toxic_torts": {
+          "type": "object",
+          "description": "Product liability, mass torts, multi-district litigation (MDL), and consumer/regulatory legal claims.",
+          "required": [
+            "active_mass_torts_or_mdl",
+            "recent_settlements_scheduled_usd_b",
+            "annual_legal_settlement_cash_drain_usd_b",
+            "catastrophic_loss_risk_level",
+            "narrative"
+          ],
+          "properties": {
+            "active_mass_torts_or_mdl": {
+              "type": "string",
+              "description": "Description or summary of active MDL dockets, mass torts, product liability claims, or regulatory anti-trust actions."
+            },
+            "recent_settlements_scheduled_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Total scheduled future installment payments for finalized legal settlements in billions of USD."
+            },
+            "annual_legal_settlement_cash_drain_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Annual cash flow diverted toward legal settlement installments and mass tort defense in billions of USD."
+            },
+            "catastrophic_loss_risk_level": {
+              "type": "string",
+              "enum": ["MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH"],
+              "description": "Risk rating evaluating potential for catastrophic uninsurable legal verdicts or injunctive business restrictions."
+            },
+            "narrative": {
+              "type": "string",
+              "description": "Qualitative summary of pending lawsuits, insurance coverage sufficiency, and settlement payment schedules."
+            }
+          }
+        },
+        "purchase_commitments_and_guarantees": {
+          "type": "object",
+          "description": "Unconditional purchase obligations, take-or-pay agreements, cloud/hardware capacity commitments, and debt guarantees.",
+          "required": [
+            "unconditional_purchase_obligations_usd_b",
+            "take_or_pay_commitments_usd_b",
+            "jv_and_vie_debt_guarantees_usd_b",
+            "narrative"
+          ],
+          "properties": {
+            "unconditional_purchase_obligations_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Total multi-year unconditional purchase obligations in billions of USD."
+            },
+            "take_or_pay_commitments_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Binding take-or-pay or minimum capacity purchase commitments in billions of USD."
+            },
+            "jv_and_vie_debt_guarantees_usd_b": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Off-balance sheet guarantees of third-party, joint venture, or unconsolidated VIE debt in billions of USD."
+            },
+            "narrative": {
+              "type": "string",
+              "description": "Qualitative summary of long-term commercial commitments, supply agreements, and collateral guarantees."
+            }
+          }
+        },
+        "equity_cash_flow_diversion_risk": {
+          "type": "string",
+          "description": "Executive summary assessment of how these liabilities constrain share repurchases, dividends, and shareholder return."
+        },
+        "narrative": {
+          "type": "string",
+          "description": "Comprehensive institutional synthesis of total off-balance sheet liabilities and equityholder seniority implications."
+        }
+      }
+    },
     "revenue_drivers_narrative": {
       "type": "string",
       "description": "Detailed narrative explaining WHY the projected 13-quarter revenue path will materialize (growth vectors, product roadmap, enterprise/consumer adoption, market share, TAM expansion, pricing power)."

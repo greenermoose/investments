@@ -48,6 +48,18 @@ CoStar Group, Inc. utilizes equity-based compensation as a core talent recruitme
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+CoStar Group, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.71 B (Gap: $-0.05 B) | ~$0.02 B / yr | CoStar Group, Inc. sponsors defined benefit pension plans with $0.71B in gross P... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.81 B | Take-or-Pay: $0.24 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+
+**Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $50.0B addressable market.

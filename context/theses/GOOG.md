@@ -48,6 +48,18 @@ Alphabet Inc. (Class C) utilizes equity-based compensation as a core talent recr
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Alphabet maintains pristine balance sheet strength with zero pension or toxic contamination drag; legal overhang is focused on antitrust structural remedies.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Alphabet has zero defined benefit pension plans or post-retirement medical liabi... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero legacy manufacturing or Superfund cleanup obligations.... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $8.00 B | ~$0.50 B / yr | US DOJ Search distribution antitrust litigation remedy phase, US DOJ Ad Tech ant... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $38.00 B | Take-or-Pay: $14.50 B | Unconditional purchase obligations for cloud server infrastructure, TPU custom s... |
+
+**Equity Cash Flow Seniority Impact:** Low risk: Antitrust legal reserves and datacenter commitments represent a modest fraction of $100B+ annual operating cash flow.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $997.0B addressable market.

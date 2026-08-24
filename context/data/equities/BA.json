@@ -92,5 +92,41 @@
     }
   ],
   "investor_relations_url": "https://investors.boeing.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-18T18:03:44.937667+00:00",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "HIGH",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 63.5,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -4.4,
+      "pbo_gross_usd_b": 48.2,
+      "plan_assets_usd_b": 43.8,
+      "annual_cash_contribution_usd_b": 0.45,
+      "underfunding_risk_level": "SIGNIFICANT",
+      "opeb_unfunded_usd_b": 3.2,
+      "narrative": "Boeing sponsors extensive defined benefit plans with $48.2B in gross PBO against $43.8B in dedicated plan assets, leaving a -$4.4B net funded deficit. Unfunded retiree healthcare OPEB obligations add $3.2B. Annual cash funding requirements run at ~$0.45B."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 1.1,
+      "estimated_unreserved_exposure_usd_b": 0.6,
+      "superfund_and_pfas_sites_count": 22,
+      "annual_remediation_cash_drain_usd_b": 0.08,
+      "risk_level": "MODERATE",
+      "narrative": "Legacy aviation manufacturing and testing remediation programs across 22 sites including the Lower Duwamish Waterway Superfund site and Santa Susana Field Laboratory."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "737 MAX fatal accident wrongful death litigation, Alaska Airlines Flight 1282 fuselage blowout passenger lawsuits, SEC/DOJ deferred prosecution compliance, and airline customer compensation claims.",
+      "recent_settlements_scheduled_usd_b": 2.8,
+      "annual_legal_settlement_cash_drain_usd_b": 0.6,
+      "catastrophic_loss_risk_level": "HIGH",
+      "narrative": "Ongoing aircraft safety investigations, commercial airline delivery delay liquidated damages, and defense department contract renegotiations require ~$0.60B in annual legal and settlement cash outflows."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 52.0,
+      "take_or_pay_commitments_usd_b": 18.5,
+      "jv_and_vie_debt_guarantees_usd_b": 1.2,
+      "narrative": "Extensive aerospace multi-year tier-1 supply agreements (CFM International engines, Spirit AeroSystems aerostructures, titanium supply) total $52.0B with $18.5B in take-or-pay minimum volume commitments."
+    },
+    "equity_cash_flow_diversion_risk": "Severe cash flow diversion: Pension underfunding, aircraft quality rework, and supply chain commitments prevent dividend reinstatement and share repurchases until free cash flow stabilizes above $8B/year.",
+    "narrative": "Boeing carries one of the largest gross pension obligations in the US industrial universe ($48.2B PBO) combined with extensive supply chain procurement commitments. Operational cash must satisfy pension and supply obligations before equity capital returns can resume."
+  }
 }

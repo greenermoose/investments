@@ -92,5 +92,41 @@
     }
   ],
   "investor_relations_url": "https://investor.apple.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-18T18:03:44.937667+00:00",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 51.5,
+    "pension_and_opeb": {
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.0,
+      "plan_assets_usd_b": 0.0,
+      "annual_cash_contribution_usd_b": 0.0,
+      "underfunding_risk_level": "NONE",
+      "opeb_unfunded_usd_b": 0.0,
+      "narrative": "Apple maintains zero defined benefit pension or post-retirement medical OPEB plans. Employee retirement benefits are 100% defined contribution 401(k) plans with immediate expense recognition."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "Apple has zero material historical Superfund or chemical remediation liabilities; manufacturing is outsourced to contract partners subject to Supplier Clean Energy mandates."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil antitrust lawsuit regarding App Store ecosystem, and patent licensing disputes.",
+      "recent_settlements_scheduled_usd_b": 3.0,
+      "annual_legal_settlement_cash_drain_usd_b": 0.25,
+      "catastrophic_loss_risk_level": "LOW",
+      "narrative": "Regulatory antitrust litigation carries risk of commission structure modifications, but balance sheet reserves and annual FCF easily absorb any monetary penalties."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 48.5,
+      "take_or_pay_commitments_usd_b": 15.0,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional manufacturing and component purchase commitments (TSMC advanced silicon wafer allocations, OLED display panels, flash memory) total $48.5B across 1-3 years."
+    },
+    "equity_cash_flow_diversion_risk": "Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.",
+    "narrative": "Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory."
+  }
 }

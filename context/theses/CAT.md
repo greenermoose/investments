@@ -48,6 +48,18 @@ Caterpillar Inc. utilizes equity-based compensation as a core talent recruitment
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Caterpillar's heavy industrial pension and legacy OPEB footprint is mature, de-risked, and fully supported by high equipment margin cash flow.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $14.2 B (Gap: $-0.6 B) | ~$0.20 B / yr | Caterpillar sponsors global defined benefit plans with $14.2B PBO against $13.6B... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.50 B (18 Sites) | ~$0.04 B / yr | Ongoing remediation at 18 manufacturing foundry and heavy equipment engine assem... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.08 B / yr | Routine commercial distributor disputes, patent infringement claims, and histori... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $8.50 B | Take-or-Pay: $3.20 B | Long-term steel procurement, specialized casting component agreements, and Cat F... |
+
+**Equity Cash Flow Seniority Impact:** Low risk to equity returns: Annual pension and OPEB service (~$0.25B) represents less than 3% of normalized annual operating cash flow.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.

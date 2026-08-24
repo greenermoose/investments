@@ -48,6 +48,18 @@ The Boeing Company utilizes equity-based compensation as a core talent recruitme
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Boeing carries one of the largest gross pension obligations in the US industrial universe ($48.2B PBO) combined with extensive supply chain procurement commitments. Operational cash must satisfy pension and supply obligations before equity capital returns can resume.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | SIGNIFICANT | PBO: $48.2 B (Gap: $-4.4 B) | ~$0.45 B / yr | Boeing sponsors extensive defined benefit plans with $48.2B in gross PBO against... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.10 B (22 Sites) | ~$0.08 B / yr | Legacy aviation manufacturing and testing remediation programs across 22 sites i... |
+| Product Liability & Mass Torts | Risk: HIGH | Scheduled: $2.80 B | ~$0.60 B / yr | 737 MAX fatal accident wrongful death litigation, Alaska Airlines Flight 1282 fu... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $52.00 B | Take-or-Pay: $18.50 B | Extensive aerospace multi-year tier-1 supply agreements (CFM International engin... |
+
+**Equity Cash Flow Seniority Impact:** Severe cash flow diversion: Pension underfunding, aircraft quality rework, and supply chain commitments prevent dividend reinstatement and share repurchases until free cash flow stabilizes above $8B/year.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.

@@ -48,6 +48,18 @@ Apple Inc. utilizes equity-based compensation as a core talent recruitment and a
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
+## Off-Balance Sheet & Long-Term Obligations
+Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Apple maintains zero defined benefit pension or post-retirement medical OPEB pla... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Apple has zero material historical Superfund or chemical remediation liabilities... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $3.00 B | ~$0.25 B / yr | European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil anti... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $48.50 B | Take-or-Pay: $15.00 B | Unconditional manufacturing and component purchase commitments (TSMC advanced si... |
+
+**Equity Cash Flow Seniority Impact:** Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** Structural failure to capture projected market share within the $1200.0B addressable market.

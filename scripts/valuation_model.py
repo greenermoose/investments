@@ -1539,6 +1539,7 @@ def model_equity_valuation(
         "capital_needs_and_strategy": capital_needs_and_strategy,
         "share_dilution_or_buyback": share_dilution_or_buyback,
         "stock_based_compensation": stock_based_compensation,
+        "off_balance_sheet_and_contingent_liabilities": c_meta.get(symbol, {}).get("off_balance_sheet_and_contingent_liabilities"),
         "catalyst_timeline": catalysts_list,
         "invalidation_criteria": invalidation_criteria,
         "historical_quarterly_revenue": historical_quarters,

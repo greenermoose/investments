@@ -63,3 +63,10 @@
   - Top-Right: `Shares Out. (B)` - Diluted shares outstanding scaled in billions (e.g. `0.595` or `14.69`).
   - Bottom-Left: `TTM Revenue (B)` - Trailing twelve months revenue in billions (e.g. `$32.67`).
   - Bottom-Right: `Enterprise Value (B)` - Enterprise value in billions (e.g. `$120.5` or `$715.17`).
+
+## 9. Deterministic Scripts vs. Generative Agent Synthesis
+- **Strict Division of Labor**: Governed in detail by `context/strategy/deterministic_vs_generative_execution.md`.
+- **Deterministic Scripts Required**: Tasks that are mathematical, algorithmic, rule-based, or involve bulk validation across dataset records (e.g. option Greeks, CAGR calculations, schema compliance audits, checking that all records have non-empty profiles) must always be executed via deterministic Python or Node.js scripts in `scripts/`. Agents must never "freestyle" or approximate these operations in natural language.
+- **Generative Synthesis Required**: Tasks requiring research, qualitative reasoning, narrative synthesis, strategic trade rationale authoring, and bespoke content generation (e.g. writing individual company business profiles, evaluating management commentary, synthesizing competitive moats) are directly authored by AI agents utilizing external tools (`search_web`, `read_url_content`, SEC filings) where needed.
+- **Hybrid Pipeline Standard**: Agents formulate qualitative theses and parameter estimates (Phase 1), and then pass these parameters to deterministic engines (`valuation_model.py`, `return_engine.py`, `calculate_pricing.py`, `validate_thesis.py`) to compute mathematical outputs and verify schema integrity (Phase 2).
+

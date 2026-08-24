@@ -1,6 +1,8 @@
 # Deterministic CLI Scripts & Engines
 
-This directory contains deterministic Python and Node.js command-line utilities used for data synchronization, API ingestion, and quantitative modeling.
+This directory contains deterministic Python and Node.js command-line utilities used for data synchronization, API ingestion, mathematical modeling, and automated quality control audits.
+
+For complete rules and decision criteria on when to use deterministic scripts versus generative AI agent reasoning, see [deterministic_vs_generative_execution.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/deterministic_vs_generative_execution.md).
 
 ## Script Catalog
 

@@ -86,6 +86,15 @@ export function openCompanyModal(company) {
       descEl.textContent = rawProfile;
     }
   }
+  if (moatEl) {
+    const rawMoat = company.competitive_moat_analysis || company.moat || 'Economic moat under evaluation.';
+    const moatParagraphs = rawMoat.split(/\n\n+/).filter(Boolean);
+    if (moatParagraphs.length > 1) {
+      moatEl.innerHTML = moatParagraphs.map(p => `<p style="margin: 0 0 8px 0; color: #e2e8f0; font-size: 0.92rem; line-height: 1.5;">${p.trim()}</p>`).join('');
+    } else {
+      moatEl.textContent = rawMoat;
+    }
+  }
   if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming product milestones and earnings updates.';
   
   // Render granular catalyst chips

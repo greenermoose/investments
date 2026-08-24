@@ -1468,12 +1468,17 @@ def model_equity_valuation(
     # Load curated business profile from company_meta if available
     business_profile = None
     meta_path = os.path.join(scripts_dir, "data", "company_meta.json")
+    c_meta = {}
+    competitive_moat = None
     if os.path.exists(meta_path):
         try:
             with open(meta_path, "r", encoding="utf-8") as f:
                 c_meta = json.load(f)
-                if symbol in c_meta and c_meta[symbol].get("business_profile"):
-                    business_profile = c_meta[symbol]["business_profile"]
+                if symbol in c_meta:
+                    if c_meta[symbol].get("business_profile"):
+                        business_profile = c_meta[symbol]["business_profile"]
+                    if c_meta[symbol].get("competitive_moat_analysis"):
+                        competitive_moat = c_meta[symbol]["competitive_moat_analysis"]
         except Exception:
             pass
 
@@ -1484,10 +1489,24 @@ def model_equity_valuation(
             f"Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments."
         )
 
-    competitive_moat = (
-        f"High customer switching costs, proprietary technology architecture, deep ecosystem integration, and sustained pricing power "
-        f"support gross margin durability and an ROIC above 15%. Moat defenses protect against entrant erosion across primary revenue segments."
-    )
+    if not competitive_moat:
+        if business_profile and "\n\n" in business_profile:
+            paragraphs = [p.strip() for p in business_profile.split("\n\n") if p.strip()]
+            if len(paragraphs) > 1:
+                competitive_moat = paragraphs[1]
+        
+        if not competitive_moat:
+            moat_summary = c_meta.get(symbol, {}).get("moat") if symbol in c_meta else None
+            if moat_summary:
+                competitive_moat = (
+                    f"{company_name or symbol} maintains defensible economic moat barriers anchored by {moat_summary.rstrip('.')}. "
+                    f"These strategic advantages support durable gross margins, customer retention, and long-term return on invested capital (ROIC) exceeding our investment hurdle."
+                )
+            else:
+                competitive_moat = (
+                    f"{company_name or symbol} maintains durable economic moat defenses supported by proprietary technology architecture, "
+                    f"high customer switching costs, and disciplined operational scale that sustain gross margin durability and an ROIC above 15%."
+                )
 
     invalidation_criteria = [
         f"Structural failure to capture projected market share within the ${base_tam_b:.1f}B addressable market.",

@@ -117,16 +117,20 @@ $$\text{Base Target Price}_t = \frac{\text{TTM Revenue}_t \times \text{Target P/
 - **Expected CAGR**:
   $$\text{Annualized CAGR} = \left(\frac{\text{Base Target Price}_t}{\text{Current Price}}\right)^{\frac{52}{\text{Horizon Weeks}}} - 1$$
 
-## Decisive Rating Logic
+## Decisive Rating Logic & Avoid vs. Sell Framework
 
-The Investment Thesis Agent must assign exactly one rating:
+The Investment Thesis Agent assigns exactly one rating according to `context/strategy/avoid_vs_sell_framework.md` and `context/strategy/token_triage_and_avoid_pipeline.md`:
 
-| Rating | 3-Year Expected CAGR Hurdle | Margin of Safety | Structural Criteria | Actionable Guidance |
+| Rating | 3-Year Expected CAGR Hurdle | Margin of Safety | Structural Criteria | Actionable Guidance & Token Scope |
 | :--- | :--- | :--- | :--- | :--- |
-| **BUY** | $\ge 20.0\%$ | $\ge 15.0\%$ discount to Base Target | Deep moat, ROIC > 15%, positive FCF, accelerating or stable growth | Add shares / Sell Cash-Secured Puts (0.20-0.30 Delta) to accumulate |
-| **HOLD** | $10.0\% - 19.9\%$ | Adequate margin of safety | Thesis intact, compounding at steady rate, solid balance sheet | Maintain position / Harvest income via Covered Calls (0.20-0.30 Delta) |
-| **SELL** | $< 10.0\%$ | Negative margin of safety (overvalued) | Multiple compression imminent, decelerating revenue, or better opportunities | Liquidate position / Roll covered calls aggressively into ITM |
-| **AVOID** | Unfavorable risk/reward or $< 0\%$ | High downside skew | Chronic cash burn, excessive dilution (>3%/yr), structural moat erosion | Do not enter / Zero portfolio allocation |
+| **BUY** | $\ge 20.0\%$ | $\ge 15.0\%$ discount to Base Target | Deep moat, ROIC > 15%, positive FCF, accelerating or stable growth | Add shares / Sell Cash-Secured Puts (0.20-0.30 Delta) to accumulate. Full Stage 2 institutional modeling. |
+| **HOLD** | $10.0\% - 19.9\%$ | Adequate margin of safety | Thesis intact, compounding at steady rate, solid balance sheet | Maintain position / Harvest income via Covered Calls (0.20-0.30 Delta). Full Stage 2 institutional modeling. |
+| **SELL** | $< 10.0\%$ | Negative margin of safety (overvalued) | High-quality business with multiple compression imminent, peak catalyst realization, or portfolio opportunity cost | Liquidate position / Roll covered calls aggressively into ITM. Full Stage 2 institutional modeling to optimize exit timing. |
+| **AVOID** | Unfavorable risk/reward or $< 0\%$ | High downside skew / Value Trap | Broken unit economics, chronic dilution (>3%/yr), structural secular decline, or insolvency risk | Freeze deep compute. Do not own, do not sell puts. Maintained via lightweight triage metadata card. |
+
+### Critical Distinction: SELL vs. AVOID
+- **`AVOID` (Universe-Level Exclusion & Token Optimization Gate)**: Structural defect in business model, terminal disruption, or insolvency risk. Uninvestable at any multiple; excluded from deep 13Q/6-horizon modeling to maximize token ROI.
+- **`SELL` (Portfolio-Level Capital Reallocation & Transition Mandate)**: High-quality or viable business that has outrun intrinsic value (3Y CAGR < 10%) or reached peak catalyst monetization. Merits full analytical depth to structure disciplined limit sales or ITM covered call call-aways.
 
 ## Six-Section Narrative Authoring Standard
 

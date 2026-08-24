@@ -161,3 +161,35 @@ When frontier reasoning models review this issue, they should evaluate and formu
 3. **Macro Regime Modulator**: What quantifiable macroeconomic rules (e.g. 10-year Treasury yield shifts, equity risk premium spreads, sector Capex-to-Depreciation ratios) should dynamically lengthen or compress target holding periods across the portfolio?
 4. **Historical Backtesting of Holding Duration Strategies**: How does a catalyst-synchronized holding period strategy compare against fixed 1-year rebalancing and static 5-year buy-and-hold across multi-cycle historical datasets in achieving the 20%+ annualized compounding mandate?
 
+### OQI-2026-08-005: Token ROI Optimization & Avoid List Gating Architecture
+
+- **Item ID**: OQI-2026-08-005
+- **Date Logged**: 2026-08-24
+- **Domain / Agents**: Equity Research Agent, Investment Thesis Agent, Memory Agent, Token Economics
+- **Related Files**: [avoid_vs_sell_framework.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/avoid_vs_sell_framework.md), [token_triage_and_avoid_pipeline.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/token_triage_and_avoid_pipeline.md), [triage_universe.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/triage_universe.py), [equity-research SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/equity-research/SKILL.md), [investment-thesis SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/investment-thesis/SKILL.md)
+- **Status**: OPEN
+
+#### Question
+How can we mathematically optimize the triage gating thresholds and lightweight LLM scanning heuristics to maximize token cost efficiency while minimizing Type II errors (false negatives where an eventual multi-bagger compounder is mistakenly relegated to the Avoid List)?
+
+#### Context & Strategic Nuance
+Generating institutional-grade investment thesis dossiers (13-quarter revenue forecasts, 6-horizon shares outstanding, 4-horizon price targets, forensic footnote audits) requires ~15,000+ tokens per ticker. In an expanding universe of 150 to 500+ equities, analyzing companies doomed to secular obsolescence, unmanageable debt default, or chronic share dilution creates massive compute drag.
+
+We have established a two-stage analysis funnel:
+1. **Stage 1 (Lightweight Triage & Gating)**: Deterministic quantitative filters + lightweight qualitative LLM probes (~1,000 tokens) tag value traps as `AVOID` and freeze deep compute.
+2. **Stage 2 (Deep Scrutiny)**: High-token institutional modeling is reserved exclusively for cleared `QUALIFIED_CANDIDATE` equities.
+
+The critical strategic trade-offs involve:
+- **Type I Errors (False Positives)**: Allowing a value trap through triage into Stage 2 deep analysis wastes ~15,000 tokens, but the deep analysis will subsequently catch the flaws and assign a `SELL` or `AVOID` rating without risking capital.
+- **Type II Errors (False Negatives)**: Prematurely tagging an early-stage inflection play or misunderstood turnaround as `AVOID` saves tokens, but risks missing a 20%+ annualized alpha compounding opportunity.
+
+#### Current Baseline Implementation
+Currently, [triage_universe.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/triage_universe.py) enforces quantitative baselines (gross margin >= 15%, runway >= 12m, dilution <= 4%/yr, debt/equity <= 4.0x) paired with the conceptual doctrine in [avoid_vs_sell_framework.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/avoid_vs_sell_framework.md). Equities on the Avoid List maintain explicit de-listing triggers audited quarterly by the Memory Agent.
+
+#### Advanced AI Review Mandate
+When frontier reasoning models review this issue, they should evaluate and formulate:
+1. **Optimal Multi-Armed Bandit / Active Learning Allocation**: How can we dynamically allocate exploration tokens (e.g. sampling 5-10% of borderline Avoid equities for deep audits) to empirically calibrate triage error rates?
+2. **Probabilistic Triage Scoring Models**: Can we train a lightweight logistic or gradient-boosted classifier on historical 10-K data to assign a continuous "Avoid Probability Score" ($P_{\text{avoid}}$) that routes compute budget with optimal precision-recall trade-offs?
+3. **Automated De-Listing Trigger Parsing**: How can LLM-based SEC 8-K / 10-Q parsers autonomously evaluate and score de-listing triggers (e.g. debt restructuring covenants, executive turnaround plans) to promote avoided companies in real time without human intervention?
+
+

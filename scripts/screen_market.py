@@ -53,6 +53,7 @@ def screen_candidates(
     max_debt_to_equity=4.0,
     target_sector=None,
     status_filter=None,
+    exclude_avoid=False,
 ):
     universe = load_universe()
     if not universe:
@@ -72,6 +73,7 @@ def screen_candidates(
         annualized_roi = float(item.get("annualized_roi_pct", item.get("annualized_roi", 0.0)))
         conviction = float(item.get("conviction_score", 5.0))
         thesis_status = item.get("thesis_status", "HOLD")
+        triage_status = item.get("triage_status", "QUALIFIED_CANDIDATE")
         moat = item.get("moat", "")
 
         total_debt = float(item.get("total_debt", 0.0))
@@ -85,6 +87,8 @@ def screen_candidates(
         if annualized_roi <= 0.0 and price > 0 and target_exit_price > price:
             annualized_roi = round(((target_exit_price / price) ** (1.0 / 3.0) - 1.0) * 100.0, 2)
 
+        if exclude_avoid and (thesis_status.upper() == "AVOID" or triage_status.upper() == "AVOID"):
+            continue
         if target_sector and sector.lower() != target_sector.lower():
             continue
         if market_cap_b > 0 and market_cap_b < min_market_cap_b:
@@ -127,6 +131,7 @@ def main():
     parser.add_argument("--min-cap", type=float, default=1.0, help="Minimum Market Cap in $B (default: 1.0)")
     parser.add_argument("--sector", type=str, default=None, help="Filter by sector")
     parser.add_argument("--status", type=str, default=None, help="Filter by rating status (BUY, HOLD, SELL, AVOID)")
+    parser.add_argument("--exclude-avoid", action="store_true", help="Exclude all AVOID list equities from results")
     parser.add_argument("--json", action="store_true", help="Output raw JSON array")
     parser.add_argument("--limit", type=int, default=20, help="Max candidates to output (default: 20)")
 
@@ -136,7 +141,8 @@ def main():
         min_roi=args.min_roi,
         min_market_cap_b=args.min_cap,
         target_sector=args.sector,
-        status_filter=args.status
+        status_filter=args.status,
+        exclude_avoid=args.exclude_avoid,
     )
 
     results = results[:args.limit]

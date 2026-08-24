@@ -35,6 +35,11 @@ The Memory Agent ensures the multi-agent collective never suffers from session a
   - Update the affected dossier in place.
   - Log the correction in `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
 
+### 5. Avoid List De-Listing Trigger Auditing
+- Maintain tracking of all equities cataloged on the Avoid List (`triage_status: "AVOID"`) according to `context/strategy/token_triage_and_avoid_pipeline.md`.
+- Monitor periodic quarterly earnings releases, debt refinancing notices, and governance updates for declared **De-Listing Triggers** (e.g. positive operating cash flow for 2 consecutive quarters, runway extension > 24 months, gross margin stabilization, or cyclical inflection).
+- When an Avoid company satisfies its de-listing triggers, issue a Promotion Alert transitioning the ticker to `QUALIFIED_CANDIDATE` and queuing it for Stage 2 deep thesis authoring.
+
 ## Deterministic Memory Tooling
 
 Audit thesis statuses, catalyst timelines, and invalidation triggers deterministically using `scripts/manage_memory.py`:

@@ -23,26 +23,34 @@ The Equity Research Agent acts as the proactive discovery engine for the investm
   $$\text{Total 3-Year Return} = (1 + g_{\text{rev}})^3 \times \left(\frac{P/S_{\text{target}}}{P/S_{\text{current}}}\right)$$
 - An equity qualifies for universe onboarding when conservative revenue growth and realistic multiple maintenance/expansion produce an annualized compounding rate >= 20.0%.
 
-### 3. Solvency, Runway & Off-Balance Sheet Encumbrance Audit
-- Do not dogmatically eliminate companies simply because they have debt or are reinvesting cash into growth.
-- Instead, perform a rigorous **solvency, runway, and off-balance sheet liability check**:
+### 3. Two-Stage Triage Gating & Token ROI Optimization
+- To maximize the ROI of tokens and compute time, route all newly discovered equities through the **Stage 1 Lightweight Triage Gate** before initiating deep research (conforming to `context/strategy/token_triage_and_avoid_pipeline.md` and `context/strategy/avoid_vs_sell_framework.md`):
+  - **Deterministic Filter**: Execute `python scripts/triage_universe.py` to evaluate gross margin viability (>=15%), cash runway (>=12 months or positive FCF), leverage (Debt/Equity <= 4.0x), and annual share dilution (<=4.0%/year).
+  - **Red Flag Gating**: Equities exhibiting secular disruption, negative unit economics, going-concern warnings, or toxic unquantifiable liabilities are assigned to the **Avoid List** (`triage_status: "AVOID"`).
+  - **Avoid List Freezing**: Equities on the Avoid List receive lightweight triage metadata and are frozen from expensive Stage 2 deep analysis until explicit de-listing triggers are met.
+
+### 4. Solvency, Runway & Off-Balance Sheet Encumbrance Audit
+- For candidate equities passing Stage 1 triage, perform a rigorous **solvency, runway, and off-balance sheet liability check**:
   - Debt-to-Equity / Net Debt to EBITDA: Confirm leverage is manageable given the stability of cash flows (typically Debt/Equity < 3.5x for capital-light models).
   - Cash Runway & Liquidity: Ensure liquid cash and short-term investments cover at least 12 to 24 months of operational cash burn for non-profitable growth firms.
   - Dilution / SBC Rate: Verify that annual share count dilution from stock-based compensation is moderate (< 3% to 5% annually) so per-share compounding is preserved.
   - Going Concern / Solvency Audit: Confirm absence of debt default covenants, distress restructuring, or going-concern disclosures in recent SEC 10-Q/10-K filings.
   - Off-Balance Sheet & Contingent Claims Audit: Audit footnotes for gross pension/OPEB obligations, Superfund/PFAS environmental cleanup commitments, product liability/mass tort litigation dockets, and unconditional take-or-pay purchase obligations according to `context/strategy/off_balance_sheet_liabilities_framework.md`.
 
-### 4. Universe Onboarding & Handoff
-- When a candidate passes quantitative screening, solvency checks, and off-balance sheet liability verification, add its symbol and core profile to the master tracking universe in `context/data/universe.json`.
+### 5. Universe Onboarding & Stage 2 Handoff
+- When a candidate passes Stage 1 triage and solvency/liability verification, tag it as `QUALIFIED_CANDIDATE` and register its core profile in `context/data/universe.json`.
 - Queue the candidate for the **Investment Thesis Agent** to author a complete, multi-horizon thesis dossier in `context/theses/<TICKER>.md`.
 
 ## Deterministic Screening Tooling
 
-Execute deterministic market screening and candidate ranking via `scripts/screen_market.py`:
+Execute deterministic market screening and candidate ranking via `scripts/screen_market.py` and `scripts/triage_universe.py`:
 
 ```bash
-# Screen universe for equities with >= 20% estimated annualized ROI
-python scripts/screen_market.py --min-roi 20.0
+# Execute Stage 1 Lightweight Triage across universe
+python scripts/triage_universe.py
+
+# Screen universe for equities with >= 20% estimated annualized ROI (excluding Avoid list)
+python scripts/screen_market.py --min-roi 20.0 --exclude-avoid
 
 # Screen for high-growth tech opportunities with positive FCF
 python scripts/screen_market.py --min-growth 15.0 --fcf-positive --sector Technology
@@ -56,13 +64,14 @@ python scripts/screen_market.py --max-debt-to-equity 3.0 --json --limit 30
 | Criterion | Evaluation Standard | Pass / Fail Rule |
 | :--- | :--- | :--- |
 | **Listing Exchange** | NYSE, NASDAQ, or AMEX | Mandatory Pass |
+| **Stage 1 Triage Gate** | Gross margin >= 15%, runway >= 12m, dilution <= 4%/yr | Pass = Qualified / Fail = Avoid List |
 | **Annualized ROI Hurdle** | Estimated 3-Year Compounding >= 20.0% | Core Quantitative Filter |
 | **Revenue Trajectory** | 3-Year Secular Growth Rate >= 12% | High-Conviction Growth |
 | **Solvency & Runway** | Debt/Equity <= 3.5x or >18 months cash runway | Prevents Bankruptcy Risk |
 | **Going Concern Audit** | Clean audit opinion (zero going concern warnings) | Mandatory Solvency Gate |
 | **Capital Needs & Strategy** | Self-funded FCF, disciplined dividends & buybacks | Capital Allocation Verification |
 | **Competitive Moat** | High switching costs, network effects, or IP | Qualitative Moat Confirmation |
-| **Handoff Action** | Register symbol in master database | Triggers Thesis Formulation |
+| **Handoff Action** | Register symbol as QUALIFIED_CANDIDATE | Triggers Stage 2 Deep Modeling |
 
 ## API Etiquette & Data Ingestion Protocols
 - **SEC EDGAR Access**: Strictly adhere to the SEC 10 requests/second rate limit and always provide the configured User-Agent header when executing `scripts/fetch_sec.py` or `scripts/fetch_etf_holdings.py`.

@@ -119,3 +119,45 @@ When frontier reasoning models review this issue, they should address:
 2. **Top-Down to Bottom-Up Valuation Bridge**: What quantitative mechanism should allow macro/thematic insights to directly adjust bottom-up valuation parameters (e.g. terminal multiple ceilings, cost of capital hurdle rates, revenue trajectory acceleration/deceleration coefficients) in [valuation_model.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/valuation_model.py)?
 3. **Cross-Industry Trend Detection Agents**: Can a dedicated Macro & Thematic Research Agent or specialized prompt pipeline monitor cross-sector signals (e.g. supplier lead times, capex announcements, consumer spend surveys, bond market volatility) to generate predictive thematic briefs for the Investment Thesis Agent?
 4. **Historical Paradigm Backtesting**: How can we evaluate whether thematic trend identification improves the hit rate of 20%+ annualized return equity selections versus pure bottom-up fundamental screening over 10- to 20-year historical market cycles?
+
+### OQI-2026-08-004: Holding Period Determination, Inflection Point Synchronization, and Macro/Cycle Calibration
+
+- **Item ID**: OQI-2026-08-004
+- **Date Logged**: 2026-08-24
+- **Domain / Agents**: Investment Thesis Agent, Pricing Agent, Lead Portfolio Manager Agent, Valuation Framework
+- **Related Files**: [investment-thesis SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/investment-thesis/SKILL.md), [pricing SKILL.md](file:///c:/Users/fyhor/Documents/GitHub/investments/.agents/skills/pricing/SKILL.md), [valuation_framework.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/valuation_framework.md), [valuation_model.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/valuation_model.py), [return_engine.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/return_engine.py)
+- **Status**: OPEN
+
+#### Question
+How should the holding period for a given position be determined and quantitatively synchronized with predicted business inflection points? What empirical literature guides optimal holding periods across different asset profiles, and what explicit heuristics can incorporate macro variables (market valuation regimes, interest rates/cost of capital, technology adoption cycles, options premium harvest) to dynamically modulate the target holding duration?
+
+#### Context & Strategic Nuance
+Our investment mandate requires a 20%+ annualized return over a 20-year horizon, using active US equities selection and options overlays without speculative trading. A recurring structural question is: *what determines the holding period of an investment, and how does it connect to the predicted inflection point of the underlying business?*
+
+1. **Company-Specific Circumstances & Thesis Archetypes**:
+   - **Catalyst / Inflection Plays (1 to 2 Years / 4 to 8 Quarters)**: New product commercialization ramps, operational turnarounds, margin inflection, or regulatory approvals have defined realization windows where operating leverage peaks. Holding beyond the catalyst realization often leads to diminishing marginal CAGR.
+   - **High-ROIC Secular Compounders (3 to 5+ Years / Indefinite)**: Businesses with durable economic moats, high returns on invested capital (ROIC > 15%), and large reinvestment runways compound intrinsic value continuously. Selling prematurely cuts off multi-bagger compounders.
+   - **Cyclical / Capex Plays (2 to 3 Years / 8 to 12 Quarters)**: Semiconductor capital equipment, memory chips, and industrial cycles require buying at trough cycle inflection and selling into peak cycle multiple expansion.
+
+2. **Empirical Literature on Optimal Holding Periods**:
+   - **Value & Mean Reversion Literature (De Bondt & Thaler 1985; Lakonishok, Shleifer & Vishny 1994; Fama & French 1992, 1996)**: Fundamental mispricings and valuation multiples take an empirical median of 3 to 5 years (36 to 60 months) to fully mean-revert to fair value. Sub-1-year periods are dominated by market microstructure noise; beyond 5 years, underlying business ROIC dominates initial multiple re-rating.
+   - **Momentum & PEAD Literature (Jegadeesh & Titman 1993; Bernard & Thomas 1989)**: Momentum and post-earnings announcement drift exhibit half-lives of 3 to 12 months, after which mean reversion sets in.
+   - **Quality Compounder Literature (Buffett, Munger; Phil Fisher; Terry Smith; Chuck Akre)**: Compounding returns are maximized when the holding period equals the duration over which ROIC remains well above WACC and capital can be reinvested at high marginal returns.
+   - **Tax and Frictional Efficiency (Constantinides 1984)**: Holding assets for at least 1 year (qualifying for long-term capital gains tax rates) and minimizing transaction turnover significantly reduces hurdle drag.
+
+3. **Macro, Technological, and Structural Heuristics Modulating Holding Periods**:
+   - **Interest Rate / Cost of Capital Regime**: High interest rate environments raise the discount rate on distant cash flows, favoring shorter-duration positions (1-2 year cash-flow inflections) over speculative 10-year horizons.
+   - **Market Valuation Regime (Bull vs. Bear/Crisis Entry)**: Acquiring high-quality assets at crash troughs (e.g. 2008, 2020, 2022) allows target 20%+ IRR to be achieved in 12-24 months due to violent multiple expansion, shortening the holding period, whereas high broad-market valuation regimes require longer 3-5 year earnings growth compounding.
+   - **Technology S-Curve Adoption Phase**: The steep adoption phase (10% to 50% penetration) typically spans 3 to 5 years; entering before adoption inflection risks dead money, while holding past 50% penetration enters growth deceleration.
+   - **Derivatives Premium Duration Compression**: Systematically selling 30-45 DTE cash-secured puts and covered calls generates 15-25% annualized cash yield, shortening the payback period and providing an automated, disciplined mechanism for rotating out of positions upon full fair value realization.
+
+#### Current Baseline Implementation
+Currently, dossiers in `context/theses/<TICKER>.md` declare a standardized `Expected Holding Period: 3 to 5 Years`, paired with a 13-quarter (3-year) bottom-up revenue projection and 4 valuation horizons (13 weeks, 52 weeks, 104 weeks, 156 weeks). While [valuation_model.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/valuation_model.py) and [return_engine.py](file:///c:/Users/fyhor/Documents/GitHub/investments/scripts/return_engine.py) calculate annualized CAGR across these four discrete horizons, the assignment of expected holding duration is largely static rather than dynamically derived from catalyst timing, industry capex cycles, or macro valuation regimes.
+
+#### Advanced AI Review Mandate
+When frontier reasoning models review this issue, they should evaluate and formulate:
+1. **Dynamic Inflection-to-Holding Period Mapping Algorithm**: How can we formulate a mathematical function that maps catalyst launch dates, product S-curve inflection quarters ($Q_k$), and operating leverage peak estimates directly to an equity's target holding period ($T_{\text{target}}$)?
+2. **Multi-Horizon Exit Trigger Calibration**: How should the Lead Portfolio Manager and Pricing Agent synthesize dynamic holding periods with covered call strike horizons (e.g. selling shorter 30-DTE calls near catalyst targets vs. wider 60-90 DTE calls on multi-year compounders)?
+3. **Macro Regime Modulator**: What quantifiable macroeconomic rules (e.g. 10-year Treasury yield shifts, equity risk premium spreads, sector Capex-to-Depreciation ratios) should dynamically lengthen or compress target holding periods across the portfolio?
+4. **Historical Backtesting of Holding Duration Strategies**: How does a catalyst-synchronized holding period strategy compare against fixed 1-year rebalancing and static 5-year buy-and-hold across multi-cycle historical datasets in achieving the 20%+ annualized compounding mandate?
+

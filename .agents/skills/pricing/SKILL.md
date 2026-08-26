@@ -67,7 +67,14 @@ python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 
 | **Equity Buy Limit** | At/Near Support | Single Session | Below Benchmark Entry | Available Settled Cash |
 | **Equity Sell Limit** | At/Near Resistance | Single Session | Intrinsic Fair Value Target | Active Common Shares |
 
+## Dual Price Series Architecture: Nominal vs. Split-Adjusted vs. Dividend-Adjusted
+- **Active Trade & Option Execution**: Limit orders and option strike selections always anchor to the active session market price (`current_price` / `nominal_current_price`) which matches real-time broker execution.
+- **Technical Trend Indicators (SMA 20, SMA 50, Channels)**: Computed strictly against the continuous backward-adjusted series (`split_adj_close` / `close`) to eliminate artificial split cliffs and preserve genuine moving average slopes.
+- **Historical Press Release & Document Ground-Truthing**: When reconciling analyst notes, executive remarks, or news dispatches citing historical stock prices, agents must compare against the immutable nominal series (`nominal_close`, `daily_nominal_closes`) rather than backward-adjusted figures.
+- **Multi-Year ROI & Benchmark Calculations**: Use total-return adjusted prices (`adj_close`, `daily_adjusted_closes`) to capture both capital appreciation and cash dividend distributions.
+
 ## API Etiquette & Market Price Fetching Protocols
-- **Price Feed Pacing**: When fetching real-time/historical candles via `scripts/fetch_market_prices.py`, maintain standard throttle intervals (0.2s pause between symbols) to prevent IP rate-limiting.
+- **Price Feed Pacing**: When fetching real-time/historical candles via `scripts/fetch_market_prices.py`, maintain standard throttle intervals (0.08s - 0.2s pause between symbols) to prevent IP rate-limiting.
 - **FRED & Treasury Risk-Free Rate Caching**: Cache benchmark Treasury yields (3M Treasury DGS3MO) with a 24-hour TTL in `scripts/data/` rather than querying external endpoints on every options pricing calculation.
 - **Offline & Cache Primacy**: Adhere strictly to `context/sources/access_methodologies.md` (Methodology 7) by utilizing local market price caches in `http/data/market_prices.json` during agent deliberation loops.
+

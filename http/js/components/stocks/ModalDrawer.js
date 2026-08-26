@@ -548,20 +548,40 @@ export function openCompanyModal(company) {
       const revCandles = [...company.historical_candles_30d].reverse();
       revCandles.slice(0, 15).forEach(c => {
         const row = document.createElement('tr');
-        const isUp = c.close >= c.open;
+        const splitAdjClose = c.split_adj_close !== undefined ? c.split_adj_close : c.close;
+        const splitAdjOpen = c.split_adj_open !== undefined ? c.split_adj_open : c.open;
+        const isUp = splitAdjClose >= splitAdjOpen;
         const closeCls = isUp ? 'color: #10b981;' : 'color: #f43f5e;';
+
+        const nomClose = c.nominal_close !== undefined ? c.nominal_close : splitAdjClose;
+        const adjClose = c.adj_close !== undefined ? c.adj_close : splitAdjClose;
+        const openVal = c.split_adj_open !== undefined ? c.split_adj_open : (c.open || 0);
+        const highVal = c.split_adj_high !== undefined ? c.split_adj_high : (c.high || 0);
+        const lowVal = c.split_adj_low !== undefined ? c.split_adj_low : (c.low || 0);
+        const volVal = c.nominal_volume !== undefined ? c.nominal_volume : (c.volume || 0);
+
+        let eventBadge = '<span style="color: var(--text-muted);">-</span>';
+        if (c.split_ratio) {
+          eventBadge = `<span style="background: rgba(168, 85, 247, 0.2); color: #c084fc; padding: 2px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 600;">Split ${c.split_ratio}</span>`;
+        } else if (c.dividend_amount) {
+          eventBadge = `<span style="background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 2px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 600;">Div $${Number(c.dividend_amount).toFixed(2)}</span>`;
+        }
+
         row.innerHTML = `
           <td><code>${c.date}</code></td>
-          <td>$${c.open.toFixed(2)}</td>
-          <td>$${c.high.toFixed(2)}</td>
-          <td>$${c.low.toFixed(2)}</td>
-          <td style="font-weight: 600; ${closeCls}">$${c.close.toFixed(2)}</td>
-          <td>${Number(c.volume).toLocaleString('en-US')}</td>
+          <td>$${openVal.toFixed(2)}</td>
+          <td>$${highVal.toFixed(2)}</td>
+          <td>$${lowVal.toFixed(2)}</td>
+          <td style="font-weight: 500; color: #ffffff;">$${nomClose.toFixed(2)}</td>
+          <td style="font-weight: 600; ${closeCls}">$${splitAdjClose.toFixed(2)}</td>
+          <td style="color: var(--text-muted);">$${adjClose.toFixed(2)}</td>
+          <td>${Number(volVal).toLocaleString('en-US')}</td>
+          <td>${eventBadge}</td>
         `;
         candlesTbody.appendChild(row);
       });
     } else {
-      candlesTbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 16px;">Historical OHLCV candles cached in scripts/data/market_prices.json.</td></tr>`;
+      candlesTbody.innerHTML = `<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 16px;">Historical OHLCV candles cached in scripts/data/market_prices.json.</td></tr>`;
     }
   }
 

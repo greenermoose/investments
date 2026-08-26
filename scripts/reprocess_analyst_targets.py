@@ -34,33 +34,47 @@ def load_price_archive():
     return {}
 
 
-def lookup_archive_price(archive, symbol, date_str):
+def lookup_archive_price(archive, symbol, date_str, price_type="split_adjusted"):
     """Look up the closing price for a symbol on a specific date from the archive.
+
+    price_type:
+      - 'split_adjusted' (default): looks in daily_split_adjusted_closes or daily_closes
+      - 'nominal': looks in daily_nominal_closes (matching historical press releases)
+      - 'adjusted': looks in daily_adjusted_closes (dividend + split adjusted)
 
     If the exact date is not found (weekend/holiday), searches up to 5 prior
     trading days to find the most recent available close.
     Returns the price or None if not found.
     """
     entry = archive.get(symbol, {})
-    daily_closes = entry.get("daily_closes", {})
-    if not daily_closes:
+    if price_type == "nominal" and "daily_nominal_closes" in entry:
+        closes_map = entry["daily_nominal_closes"]
+    elif price_type == "adjusted" and "daily_adjusted_closes" in entry:
+        closes_map = entry["daily_adjusted_closes"]
+    elif "daily_split_adjusted_closes" in entry:
+        closes_map = entry["daily_split_adjusted_closes"]
+    else:
+        closes_map = entry.get("daily_closes", {})
+
+    if not closes_map:
         return None
 
     # Try exact date first
-    if date_str in daily_closes:
-        return daily_closes[date_str]
+    if date_str in closes_map:
+        return closes_map[date_str]
 
     # Search up to 5 prior trading days (handles weekends, holidays)
     try:
         dt = datetime.strptime(date_str, "%Y-%m-%d")
         for offset in range(1, 6):
             prior = (dt - timedelta(days=offset)).strftime("%Y-%m-%d")
-            if prior in daily_closes:
-                return daily_closes[prior]
+            if prior in closes_map:
+                return closes_map[prior]
     except Exception:
         pass
 
     return None
+
 
 
 def load_press_release_domains():

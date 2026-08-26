@@ -160,9 +160,9 @@ class QualityController:
             return self.sec_master_directory
 
     def fetch_live_quote_and_meta(self, symbol):
-        """Fetches live market quote, OHLCV candles, and metadata from direct exchange feed."""
+        """Fetches live market quote, dual nominal/adjusted OHLCV candles, and metadata from direct exchange feed."""
         query_sym = symbol.replace(".", "-")
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{query_sym}?interval=1d&range=3mo"
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{query_sym}?interval=1d&range=3mo&events=div%7Csplit"
         req = urllib.request.Request(url, headers=MARKET_HEADERS)
 
         with urllib.request.urlopen(req, timeout=12) as resp:
@@ -176,13 +176,51 @@ class QualityController:
             chart_prev_close = meta.get("chartPreviousClose")
             prev_close = meta.get("previousClose", chart_prev_close)
 
+            events_dict = result[0].get("events", {})
+            splits_raw = events_dict.get("splits", {}) if events_dict else {}
+            dividends_raw = events_dict.get("dividends", {}) if events_dict else {}
+
+            split_events = []
+            for k, v in splits_raw.items():
+                s_date_ts = int(v.get("date", k))
+                num = float(v.get("numerator", 1.0))
+                den = float(v.get("denominator", 1.0))
+                ratio_str = v.get("splitRatio", f"{int(num)}:{int(den)}")
+                dt_str = datetime.fromtimestamp(s_date_ts, tz=timezone.utc).strftime("%Y-%m-%d")
+                split_events.append({
+                    "timestamp": s_date_ts,
+                    "date": dt_str,
+                    "numerator": num,
+                    "denominator": den,
+                    "ratio": ratio_str
+                })
+            split_events.sort(key=lambda x: x["date"])
+            split_date_map = {s["date"]: s for s in split_events}
+
+            dividend_events = []
+            dividend_map = {}
+            for k, v in dividends_raw.items():
+                d_date_ts = int(v.get("date", k))
+                amount = round(float(v.get("amount", 0.0)), 4)
+                dt_str = datetime.fromtimestamp(d_date_ts, tz=timezone.utc).strftime("%Y-%m-%d")
+                dividend_events.append({
+                    "timestamp": d_date_ts,
+                    "date": dt_str,
+                    "amount": amount
+                })
+                dividend_map[dt_str] = amount
+            dividend_events.sort(key=lambda x: x["date"])
+
             timestamps = result[0].get("timestamp", [])
-            indicators = result[0].get("indicators", {}).get("quote", [{}])[0]
-            opens = indicators.get("open", [])
-            highs = indicators.get("high", [])
-            lows = indicators.get("low", [])
-            closes = indicators.get("close", [])
-            volumes = indicators.get("volume", [])
+            indicators = result[0].get("indicators", {})
+            quote_indicators = indicators.get("quote", [{}])[0]
+            adjclose_list = indicators.get("adjclose", [{}])[0].get("adjclose", [])
+
+            opens = quote_indicators.get("open", [])
+            highs = quote_indicators.get("high", [])
+            lows = quote_indicators.get("low", [])
+            closes = quote_indicators.get("close", [])
+            volumes = quote_indicators.get("volume", [])
 
             candles = []
             for i in range(len(timestamps)):
@@ -192,22 +230,58 @@ class QualityController:
                 l = lows[i] if i < len(lows) else None
                 c = closes[i] if i < len(closes) else None
                 v = volumes[i] if i < len(volumes) else None
+                adj_c_raw = adjclose_list[i] if (i < len(adjclose_list) and adjclose_list[i] is not None) else c
 
                 if c is not None and ts is not None:
                     dt_str = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+                    split_mult = 1.0
+                    for s in split_events:
+                        if s["date"] > dt_str:
+                            split_mult *= (s["numerator"] / s["denominator"])
+
+                    split_adj_open = round(float(o), 2) if o is not None else round(float(c), 2)
+                    split_adj_high = round(float(h), 2) if h is not None else round(float(c), 2)
+                    split_adj_low = round(float(l), 2) if l is not None else round(float(c), 2)
+                    split_adj_close = round(float(c), 2)
+                    split_adj_volume = int(v) if v is not None else 0
+
+                    nominal_open = round(split_adj_open * split_mult, 2)
+                    nominal_high = round(split_adj_high * split_mult, 2)
+                    nominal_low = round(split_adj_low * split_mult, 2)
+                    nominal_close = round(split_adj_close * split_mult, 2)
+                    nominal_volume = int(round(split_adj_volume / split_mult)) if split_mult > 0 else split_adj_volume
+
+                    adj_close = round(float(adj_c_raw), 2) if adj_c_raw is not None else split_adj_close
+
+                    split_info = split_date_map.get(dt_str)
+                    div_amount = dividend_map.get(dt_str)
+
                     candles.append({
                         "date": dt_str,
-                        "open": round(float(o), 2) if o is not None else round(float(c), 2),
-                        "high": round(float(h), 2) if h is not None else round(float(c), 2),
-                        "low": round(float(l), 2) if l is not None else round(float(c), 2),
-                        "close": round(float(c), 2),
-                        "volume": int(v) if v is not None else 0
+                        "nominal_open": nominal_open,
+                        "nominal_high": nominal_high,
+                        "nominal_low": nominal_low,
+                        "nominal_close": nominal_close,
+                        "nominal_volume": nominal_volume,
+                        "split_adj_open": split_adj_open,
+                        "split_adj_high": split_adj_high,
+                        "split_adj_low": split_adj_low,
+                        "split_adj_close": split_adj_close,
+                        "adj_close": adj_close,
+                        "open": split_adj_open,
+                        "high": split_adj_high,
+                        "low": split_adj_low,
+                        "close": split_adj_close,
+                        "volume": split_adj_volume,
+                        "split_factor": round(split_mult, 4),
+                        "split_ratio": split_info["ratio"] if split_info else None,
+                        "dividend_amount": div_amount
                     })
 
-            valid_closes = [c["close"] for c in candles]
+            valid_closes = [c["split_adj_close"] for c in candles]
             valid_volumes = [c["volume"] for c in candles if c["volume"] > 0]
-            valid_highs = [c["high"] for c in candles]
-            valid_lows = [c["low"] for c in candles]
+            valid_highs = [c["split_adj_high"] for c in candles]
+            valid_lows = [c["split_adj_low"] for c in candles]
 
             last_close = valid_closes[-1] if valid_closes else regular_price
             current_price = regular_price if regular_price is not None else last_close
@@ -225,9 +299,9 @@ class QualityController:
             day_change_percent = round((day_change / prev_close) * 100.0, 2) if prev_close else 0.0
 
             latest_candle = candles[-1] if candles else {}
-            day_open = latest_candle.get("open", current_price)
-            day_high = meta.get("regularMarketDayHigh", latest_candle.get("high", current_price))
-            day_low = meta.get("regularMarketDayLow", latest_candle.get("low", current_price))
+            day_open = latest_candle.get("split_adj_open", current_price)
+            day_high = meta.get("regularMarketDayHigh", latest_candle.get("split_adj_high", current_price))
+            day_low = meta.get("regularMarketDayLow", latest_candle.get("split_adj_low", current_price))
             day_volume = meta.get("regularMarketVolume", latest_candle.get("volume", 0))
 
             vol_slice = valid_volumes[-20:] if len(valid_volumes) >= 20 else valid_volumes
@@ -248,6 +322,10 @@ class QualityController:
             tech_support_20d = round(min(l_slice_20), 2) if l_slice_20 else round(current_price * 0.95, 2)
 
             resolved_name = meta.get("shortName") or meta.get("longName") or f"{symbol} Corporation"
+            earliest_split_factor = candles[0].get("split_factor", 1.0) if candles else 1.0
+            latest_adj_close = candles[-1].get("adj_close", current_price) if candles else current_price
+
+            nom_prev_close = candles[-2].get("nominal_close", prev_close) if len(candles) >= 2 else prev_close
 
             return {
                 "symbol": symbol,
@@ -255,8 +333,12 @@ class QualityController:
                 "currency": meta.get("currency", "USD"),
                 "exchange": meta.get("exchangeName", "NASDAQ"),
                 "current_price": current_price,
+                "nominal_current_price": current_price,
                 "closing_price": current_price,
                 "previous_close": prev_close,
+                "nominal_previous_close": nom_prev_close,
+                "split_adj_previous_close": prev_close,
+                "adj_close": latest_adj_close,
                 "day_change": day_change,
                 "day_change_percent": day_change_percent,
                 "day_open": round(float(day_open), 2) if day_open is not None else current_price,
@@ -271,6 +353,23 @@ class QualityController:
                 "sma_50": sma_50,
                 "technical_support_20d": tech_support_20d,
                 "technical_resistance_20d": tech_resistance_20d,
+                "cumulative_split_factor": earliest_split_factor,
+                "recent_splits": [
+                    {
+                        "date": s["date"],
+                        "ratio": s["ratio"],
+                        "numerator": s["numerator"],
+                        "denominator": s["denominator"]
+                    }
+                    for s in split_events
+                ],
+                "recent_dividends": [
+                    {
+                        "date": d["date"],
+                        "amount": d["amount"]
+                    }
+                    for d in dividend_events
+                ],
                 "historical_candles_30d": candles[-30:],
                 "as_of_timestamp": datetime.now(timezone.utc).isoformat(),
                 "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
@@ -486,6 +585,25 @@ class QualityController:
                 "actual": f"supp={supp}, res={res}",
                 "description": f"[{sym}] 20-day support ({supp}) exceeds 20-day resistance ({res})."
             })
+
+        # Dual nominal vs. split-adjusted price concordance check
+        candles = p.get("historical_candles_30d", [])
+        for c in candles:
+            nom_c = c.get("nominal_close")
+            split_adj_c = c.get("split_adj_close", c.get("close"))
+            split_factor = c.get("split_factor", 1.0)
+            if nom_c is not None and split_adj_c is not None and split_factor is not None:
+                expected_nom = round(split_adj_c * split_factor, 2)
+                if abs(nom_c - expected_nom) > 0.05:
+                    issues.append({
+                        "severity": "ERROR",
+                        "rule": "PRICE_ADJUSTMENT_CONCORDANCE",
+                        "symbol": sym,
+                        "field": f"candle_{c.get('date', '')}",
+                        "actual": nom_c,
+                        "expected": expected_nom,
+                        "description": f"[{sym} {c.get('date')}] Nominal close (${nom_c}) does not match split-adjusted close (${split_adj_c}) * split_factor ({split_factor})."
+                    })
 
         return issues
 

@@ -15,15 +15,20 @@ In accordance with the 5-tier authority hierarchy defined in `context/sources/ca
                                     v
 +-------------------------------------------------------------------------+
 | Tier 2: Institutional Market Feeds & APIs (Yahoo Finance v8, Polygon,   |
-| Alpaca, Tiingo, Stooq) - Daily OHLCV time-series, volume, 52W ranges   |
+| Alpaca, Tiingo, Stooq) - Dual nominal & adjusted OHLCV, splits, divs    |
 +-------------------------------------------------------------------------+
 ```
 
 ### Authoritative Pricing Endpoints
 - **Yahoo Finance Chart API (`query1.finance.yahoo.com/v8/finance/chart/{symbol}`)**:
-  - Parameters: `interval=1d&range=3mo`
+  - Parameters: `interval=1d&range=3mo&events=div%7Csplit` (or `range=3y`/`5y` for persistent archive)
   - Output fields: `regularMarketPrice`, `chartPreviousClose`, `previousClose`, `regularMarketDayHigh`, `regularMarketDayLow`, `regularMarketVolume`, `fiftyTwoWeekHigh`, `fiftyTwoWeekLow`, `currency`, `exchangeName`.
-  - Indicators: Arrays of `timestamp`, `open`, `high`, `low`, `close`, `volume` representing daily trading sessions.
+  - Indicators:
+    - `indicators.quote[0]`: Arrays of `timestamp`, `open`, `high`, `low`, `close`, `volume` (backward **Split-Adjusted**).
+    - `indicators.adjclose[0]`: Array of `adjclose` (backward **Dividend- and Split-Adjusted**).
+  - Corporate Actions:
+    - `events.splits`: Dict of split timestamps with `numerator`, `denominator`, and `splitRatio`.
+    - `events.dividends`: Dict of ex-dividend timestamps with `amount`.
 
 ## 2. Ingestion & Verification Protocol
 
@@ -31,24 +36,39 @@ The deterministic CLI script `scripts/fetch_market_prices.py` executes the follo
 
 ### Step 1: Query Execution & Resilience
 - Formats ticker symbols for exchange compatibility (e.g., Berkshire Hathaway Class B mapped to `BRK-B`).
-- Submits structured HTTP request with declared browser User-Agent headers.
+- Submits structured HTTP request with declared browser User-Agent headers and query parameters `&events=div|split`.
 - Employs polite inter-request rate-limiting delays (80ms) and automated timeout/retry handling.
 
-### Step 2: Factual Data Verification
+### Step 2: Factual Data Verification & Adjustment Parsing
 - **Price Validity**: Confirms `regularMarketPrice > 0.0` and `close > 0.0`. Rejects null or negative values.
 - **Volume Sanity**: Validates `day_volume >= 0` and ensures historical candle arrays match timestamp lengths.
+- **Corporate Action Multipliers**: Derives cumulative split multipliers from `events.splits` and cash payouts from `events.dividends`.
 - **Timestamp Freshness**: Verifies the latest candle timestamp aligns with the most recent US exchange trading session.
 - **Delta Calculation**: Computes explicit daily dollar change (`current_price - previous_close`) and percentage change (`(day_change / previous_close) * 100`).
+- **Concordance Verification**: Verifies `nominal_close == round(split_adj_close * split_factor, 2)` for all candlesticks.
 
 ### Step 3: Cache Storage & Provenance
-- Serializes complete technical payloads to `scripts/data/market_prices.json` and mirrors to `http/data/market_prices.json`.
+- Serializes complete dual-price technical payloads to `scripts/data/market_prices.json` and mirrors to `http/data/market_prices.json` and `context/data/market_prices.json`.
 - Records `as_of_timestamp`, `provenance_tier: TIER_2_FINANCIAL_AGGREGATOR`, and `provenance_source: Direct Exchange / Yahoo Finance Chart API`.
 
-## 3. Data Structure for Share Price & Trading Volume Over Time
+## 3. Dual-Series Architecture: Nominal vs. Adjusted Prices
 
-To support technical analysis and price movement prediction, price records store both snapshot metrics and historical daily candlestick time-series conforming to `context/schemas/market_prices_schema.json`.
+To support both historical document verification and quantitative mathematical modeling, the system maintains two parallel price representations:
 
-### Structure Specification
+### Architectural Principles
+
+1. **Continuous Backward-Adjusted Series (`split_adj_open`, `split_adj_high`, `split_adj_low`, `split_adj_close`, `adj_close`)**:
+   - Backward-adjusted whenever a forward split, reverse split, or dividend occurs.
+   - Anchors to the active session market price ($P_0$).
+   - Ensures continuous mathematical trends without split step-cliffs for moving averages (SMA 20, SMA 50), technical support/resistance bands, options Greeks, and CAGR calculations.
+2. **Immutable Historical Nominal Series (`nominal_open`, `nominal_high`, `nominal_low`, `nominal_close`)**:
+   - Permanently locked at the exact dollar amount printed on the exchange floor tape on that trading session.
+   - Enables 100% auditable ground-truthing against historical press releases, news archives, and SEC Form 4 insider transaction reports.
+3. **Deterministic Multiplier Conversion**:
+   $$\text{Nominal Price}(t) = \text{Split-Adjusted Price}(t) \times \prod_{t_{split} > t} \left(\frac{\text{numerator}_i}{\text{denominator}_i}\right)$$
+   $$\text{Split-Adjusted Price}(t) = \frac{\text{Nominal Price}(t)}{\text{Cumulative Split Multiplier}(t)}$$
+
+### Data Structure Specification
 
 ```json
 {
@@ -56,41 +76,69 @@ To support technical analysis and price movement prediction, price records store
   "name": "Apple Inc.",
   "currency": "USD",
   "exchange": "NMS",
-  "current_price": 258.45,
-  "previous_close": 256.20,
-  "day_change": 2.25,
-  "day_change_percent": 0.88,
-  "day_open": 257.00,
-  "day_high": 259.80,
-  "day_low": 256.50,
-  "day_volume": 48291000,
-  "average_volume_20d": 52100000,
-  "volume_ratio": 0.93,
-  "fifty_two_week_high": 260.10,
-  "fifty_two_week_low": 164.08,
-  "sma_20": 252.30,
-  "sma_50": 241.10,
-  "technical_support_20d": 248.50,
-  "technical_resistance_20d": 260.00,
-  "historical_candles_30d": [
+  "current_price": 313.42,
+  "nominal_current_price": 313.42,
+  "closing_price": 313.42,
+  "previous_close": 316.75,
+  "nominal_previous_close": 316.75,
+  "split_adj_previous_close": 316.75,
+  "adj_close": 313.42,
+  "day_change": -3.33,
+  "day_change_percent": -1.05,
+  "day_open": 312.42,
+  "day_high": 315.60,
+  "day_low": 311.20,
+  "day_volume": 10327146,
+  "average_volume_20d": 48291000,
+  "volume_ratio": 0.21,
+  "fifty_two_week_high": 344.57,
+  "fifty_two_week_low": 225.95,
+  "sma_20": 315.80,
+  "sma_50": 308.90,
+  "technical_support_20d": 300.00,
+  "technical_resistance_20d": 344.57,
+  "cumulative_split_factor": 1.0,
+  "recent_splits": [],
+  "recent_dividends": [
     {
-      "date": "2026-08-15",
-      "open": 257.00,
-      "high": 259.80,
-      "low": 256.50,
-      "close": 258.45,
-      "volume": 48291000
+      "date": "2026-08-07",
+      "amount": 0.26
     }
   ],
-  "as_of_timestamp": "2026-08-17T10:30:00Z",
+  "historical_candles_30d": [
+    {
+      "date": "2026-08-25",
+      "nominal_open": 314.72,
+      "nominal_high": 316.91,
+      "nominal_low": 312.17,
+      "nominal_close": 316.75,
+      "nominal_volume": 34132300,
+      "split_adj_open": 314.72,
+      "split_adj_high": 316.91,
+      "split_adj_low": 312.17,
+      "split_adj_close": 316.75,
+      "adj_close": 316.75,
+      "open": 314.72,
+      "high": 316.91,
+      "low": 312.17,
+      "close": 316.75,
+      "volume": 34132300,
+      "split_factor": 1.0,
+      "split_ratio": null,
+      "dividend_amount": null
+    }
+  ],
+  "as_of_timestamp": "2026-08-26T16:00:00Z",
+  "last_updated": "2026-08-26T16:00:00Z",
   "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
   "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
 }
 ```
 
-### Technical Indicators for Price Movement Prediction
+## 4. Technical Indicators for Price Movement Prediction
+
 1. **20-Day Simple Moving Average (`sma_20`)**:
-   Measures short-term momentum and baseline mean reversion. When price is above `sma_20` on above-average volume, short-term accumulation is confirmed.
+   Measures short-term momentum and baseline mean reversion on the split-adjusted continuous series. When price is above `sma_20` on above-average volume, short-term accumulation is confirmed.
 2. **50-Day Simple Moving Average (`sma_50`)**:
    Acts as primary institutional trend support. Pullbacks to `sma_50` during secular uptrends represent high-probability risk-reward entry zones.
 3. **Volume Ratio (`volume_ratio = day_volume / average_volume_20d`)**:
@@ -102,7 +150,7 @@ To support technical analysis and price movement prediction, price records store
 5. **52-Week Range Position**:
    Calculates where the current price sits relative to its annual range (`(current_price - 52w_low) / (52w_high - 52w_low) * 100`).
 
-## 4. Grounding Benchmark Entry Price & Target Exit Price
+## 5. Grounding Benchmark Entry Price & Target Exit Price
 
 Historical dossiers previously suffered from ungrounded entry and exit prices that were disconnected from actual trading reality. All entry and exit prices are now strictly derived from verified market prices, technical support/resistance bands, and empirical 20% annualized compound growth models.
 

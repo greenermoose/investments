@@ -113,6 +113,35 @@ The following master directory catalogues every specific data source, public URL
   - **CT Plan Transition (`https://www.thectplanllc.com/`):** The SEC-approved unified Consolidated Tape Plan (DataCT) transitioning governance of CTA and UTP into a single operating entity by April 2027.
 - **Why `nasdaq.com` is NOT a Consolidated Feed:** Real-time equity quotes on the public `nasdaq.com` website and its developer API (`https://data.nasdaq.com/`) are powered by **Nasdaq Last Sale (NLS)** and **Nasdaq Basic**. While these feeds provide quotes and trades for NYSE- and Nasdaq-listed tickers, they **only reflect executions that take place on Nasdaq's own venues** (The Nasdaq Stock Market, Nasdaq BX, PSX) and off-exchange trades reported to the **FINRA/Nasdaq TRF**. They do **not** capture trades or quotes occurring on the NYSE floor, NYSE Arca, Cboe, IEX, or other exchanges. Consolidated Level 1 feeds for public web visitors are 15-minute delayed. True real-time consolidated market data requires direct SIP connectivity (via SIAC and Nasdaq SIP) or an authorized SIP-connected data vendor (e.g. Polygon.io, Alpaca SIP, Bloomberg, FactSet).
 
+### 8. Price Adjustment Mechanics across Data Sources: Nominal vs. Split-Adjusted vs. Dividend-Adjusted
+When ingesting and cross-verifying historical share prices across multiple tiers, AI agents must account for how each source handles corporate actions (forward stock splits, reverse stock splits, ordinary cash dividends, and special capital distributions):
+
+#### 1. Yahoo Finance Chart API (`query1.finance.yahoo.com/v8/finance/chart/{symbol}`)
+- **Quote Array (`indicators.quote[0]`: `open`, `high`, `low`, `close`, `volume`):** Automatically **Split-Adjusted** backward in time for all forward stock splits (e.g. 10:1, 20:1) and reverse stock splits (e.g. 1:5, 1:10). It is **not** adjusted for cash dividends.
+- **Adjusted Close Array (`indicators.adjclose[0].adjclose`):** Fully **Dividend- and Split-Adjusted** backward in time (CRSP total-return methodology). Reflects price appreciation plus theoretical dividend reinvestment.
+- **Realtime / Spot Price (`meta.regularMarketPrice`):** Spot **Nominal** trading price on the current trading session (at session date $T_0$, nominal price equals split-adjusted price).
+- **Corporate Events (`events.splits`, `events.dividends`):** Returns exact timestamped records for splits (`numerator`, `denominator`, `splitRatio`) and cash dividends (`amount`).
+- **Nominal Price Reconstruction Formula:** Nominal historical OHLC prices prior to split events are reconstructed by multiplying split-adjusted prices by the cumulative split multiplier:
+  $$\text{Nominal Price}(t) = \text{Split-Adjusted Price}(t) \times \prod_{t_{split} > t} \left(\frac{\text{numerator}_i}{\text{denominator}_i}\right)$$
+
+#### 2. SEC EDGAR Corporate Filings (Tier 1 Primary Regulatory)
+- **Forms 10-K & 10-Q (XBRL Statement Disclosures):** Historical share counts, basic EPS, and diluted EPS are retroactively **restated for stock splits** across all comparative historical periods presented in the filing.
+- **Form 4 (Insider Transactions) & Form 8-K (Current Reports):** Record the **Nominal Unadjusted** share price and transaction price on the specific date the transaction or event occurred.
+
+#### 3. Financial Newswires & Press Release Broadcasters (Tier 2 Aggregators)
+- **MarketBeat, The Fly, Benzinga, StreetInsider, Seeking Alpha:** Dispatches published on historical announcement dates record **Nominal Unadjusted** share prices and target prices as of that calendar date (e.g., citing NVDA at $1,200/share prior to its 10-for-1 split). Ground-truthing press release texts requires comparing against the **nominal** price series.
+
+#### 4. Institutional SIP Feeds & Consolidated Tape (CTA / UTP)
+- **Tape A / B / C Execution Prints:** The Consolidated Tape records raw **Nominal Unadjusted** trade execution prints and official daily closing auction crosses without retroactive adjustments.
+
+#### 5. Institutional APIs (Tiingo, Polygon.io)
+- Provide explicit dual endpoints/fields separating `unadjusted` (nominal OHLCV) from `adjusted` (split- and dividend-adjusted OHLCV) alongside discrete `splitFactor` and `divCash` arrays.
+
+#### 6. Dual-Series Architecture & Backward Adjustment Standard
+Our system implements a Dual-Series Architecture:
+- **Continuous Backward-Adjusted Series:** Scales historical prices backward whenever a corporate action occurs so that the current session price ($P_0$) remains continuous with history, preventing artificial step jumps in moving averages (SMA 20, SMA 50), technical support/resistance bands, and Return Engine CAGR calculations.
+- **Immutable Historical Nominal Series:** Permanently locks nominal prices traded on each calendar day (`nominal_open`, `nominal_high`, `nominal_low`, `nominal_close`), preserving zero-distortion auditability against historical press releases, news archives, and regulatory filings.
+
 ## How Sell-Side Analyst Reports & Price Targets Are Tracked and Discovered
 
 ### The Institutional Research Ecosystem & Access Dynamics

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "MarketPricesAndTechnicalAnalysis",
-  "description": "Schema for storing current market share prices, daily trading volumes, historical OHLCV candlestick series, and technical analysis indicators supporting price prediction and grounded valuation.",
+  "description": "Schema for storing current market share prices, daily trading volumes, dual nominal and split/dividend-adjusted historical OHLCV candlestick series, corporate action events, and technical analysis indicators supporting price prediction and grounded valuation.",
   "type": "object",
   "patternProperties": {
     "^[A-Z0-9.-]+$": {
@@ -25,11 +25,27 @@
         },
         "current_price": {
           "type": "number",
-          "description": "Most recent verified market closing or regular trading price."
+          "description": "Most recent verified market closing or regular trading price (on the active session, nominal and split-adjusted are identical)."
+        },
+        "nominal_current_price": {
+          "type": "number",
+          "description": "Current nominal spot trading price."
         },
         "previous_close": {
           "type": "number",
-          "description": "Official closing price of the prior regular trading session."
+          "description": "Official closing price of the prior regular trading session (split-adjusted)."
+        },
+        "nominal_previous_close": {
+          "type": "number",
+          "description": "Nominal closing price of the prior regular trading session."
+        },
+        "split_adj_previous_close": {
+          "type": "number",
+          "description": "Split-adjusted closing price of the prior regular trading session."
+        },
+        "adj_close": {
+          "type": "number",
+          "description": "Total-return adjusted closing price (dividend- and split-adjusted)."
         },
         "day_change": {
           "type": "number",
@@ -65,19 +81,19 @@
         },
         "fifty_two_week_high": {
           "type": ["number", "null"],
-          "description": "Highest traded price in the preceding 52-week trailing window."
+          "description": "Highest traded price in the preceding 52-week trailing window (split-adjusted)."
         },
         "fifty_two_week_low": {
           "type": ["number", "null"],
-          "description": "Lowest traded price in the preceding 52-week trailing window."
+          "description": "Lowest traded price in the preceding 52-week trailing window (split-adjusted)."
         },
         "sma_20": {
           "type": ["number", "null"],
-          "description": "20-day Simple Moving Average (short-term trend & mean reversion benchmark)."
+          "description": "20-day Simple Moving Average (short-term trend & mean reversion benchmark, split-adjusted)."
         },
         "sma_50": {
           "type": ["number", "null"],
-          "description": "50-day Simple Moving Average (intermediate institutional support/resistance level)."
+          "description": "50-day Simple Moving Average (intermediate institutional support/resistance level, split-adjusted)."
         },
         "technical_support_20d": {
           "type": ["number", "null"],
@@ -87,9 +103,39 @@
           "type": ["number", "null"],
           "description": "Estimated short-term resistance level based on recent 20-day swing highs."
         },
+        "cumulative_split_factor": {
+          "type": "number",
+          "description": "Cumulative split factor applicable across the series window."
+        },
+        "recent_splits": {
+          "type": "array",
+          "description": "List of recent stock splits and reverse splits recorded for this equity.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": { "type": "string" },
+              "ratio": { "type": "string" },
+              "numerator": { "type": "number" },
+              "denominator": { "type": "number" }
+            },
+            "required": ["date", "ratio", "numerator", "denominator"]
+          }
+        },
+        "recent_dividends": {
+          "type": "array",
+          "description": "List of recent cash dividend distributions recorded for this equity.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": { "type": "string" },
+              "amount": { "type": "number" }
+            },
+            "required": ["date", "amount"]
+          }
+        },
         "historical_candles_30d": {
           "type": "array",
-          "description": "Chronological array of daily OHLCV candlestick records for charting and technical modeling.",
+          "description": "Chronological array of daily OHLCV candlestick records containing dual nominal and split/dividend-adjusted prices.",
           "items": {
             "type": "object",
             "properties": {
@@ -98,25 +144,77 @@
                 "format": "date",
                 "description": "Trading date in YYYY-MM-DD format."
               },
+              "nominal_open": {
+                "type": "number",
+                "description": "Nominal unadjusted opening price traded on the exchange floor on this date."
+              },
+              "nominal_high": {
+                "type": "number",
+                "description": "Nominal unadjusted session high price."
+              },
+              "nominal_low": {
+                "type": "number",
+                "description": "Nominal unadjusted session low price."
+              },
+              "nominal_close": {
+                "type": "number",
+                "description": "Nominal unadjusted closing price (matches historical press releases and news articles)."
+              },
+              "nominal_volume": {
+                "type": "integer",
+                "description": "Actual nominal share volume traded on this session."
+              },
+              "split_adj_open": {
+                "type": "number",
+                "description": "Split-adjusted opening price."
+              },
+              "split_adj_high": {
+                "type": "number",
+                "description": "Split-adjusted session high price."
+              },
+              "split_adj_low": {
+                "type": "number",
+                "description": "Split-adjusted session low price."
+              },
+              "split_adj_close": {
+                "type": "number",
+                "description": "Split-adjusted closing price."
+              },
+              "adj_close": {
+                "type": "number",
+                "description": "Total return adjusted closing price (backward-adjusted for forward/reverse splits and cash dividends)."
+              },
               "open": {
                 "type": "number",
-                "description": "Session opening price."
+                "description": "Session opening price (split-adjusted alias for backward compatibility)."
               },
               "high": {
                 "type": "number",
-                "description": "Session high price."
+                "description": "Session high price (split-adjusted alias for backward compatibility)."
               },
               "low": {
                 "type": "number",
-                "description": "Session low price."
+                "description": "Session low price (split-adjusted alias for backward compatibility)."
               },
               "close": {
                 "type": "number",
-                "description": "Session closing price."
+                "description": "Session closing price (split-adjusted alias for backward compatibility)."
               },
               "volume": {
                 "type": "integer",
-                "description": "Session trading volume in shares."
+                "description": "Session trading volume in shares (split-adjusted alias for backward compatibility)."
+              },
+              "split_factor": {
+                "type": "number",
+                "description": "Cumulative split multiplier at this date (Nominal = Split-Adj * split_factor)."
+              },
+              "split_ratio": {
+                "type": ["string", "null"],
+                "description": "Split ratio string if a split or reverse split occurred on this date (e.g. '10:1', '1:5'), otherwise null."
+              },
+              "dividend_amount": {
+                "type": ["number", "null"],
+                "description": "Cash dividend per share paid on this ex-dividend date, otherwise null."
               }
             },
             "required": ["date", "open", "high", "low", "close", "volume"]

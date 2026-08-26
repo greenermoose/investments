@@ -304,11 +304,39 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
 def main():
     parser = argparse.ArgumentParser(description="Fetch SEC EDGAR financial filings for equity universe.")
     parser.add_argument("--symbols", nargs="+", help="Specific symbols to fetch (default: all universe)")
+    parser.add_argument("--offline", action="store_true", help="Offline mode: use local cache in http/data/ without querying SEC API")
+    parser.add_argument("--live", action="store_true", help="Live mode: query SEC EDGAR API (default)")
     args = parser.parse_args()
     
     out_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
     os.makedirs(out_dir, exist_ok=True)
     
+    symbols = args.symbols if args.symbols else load_universe_symbols()
+    offline_mode = args.offline and not args.live
+
+    if offline_mode:
+        print(f"Offline Mode: Verifying local SEC filings cache for {len(symbols)} public equities...")
+        success_count = 0
+        missing_count = 0
+        for i, sym in enumerate(symbols, 1):
+            sym_clean = sym.upper()
+            filepath = os.path.join(out_dir, f"{sym_clean}.json")
+            if os.path.exists(filepath):
+                try:
+                    with open(filepath, "r", encoding="utf-8") as f:
+                        cdata = json.load(f)
+                    filings = cdata.get("filings", [])
+                    print(f"[{i}/{len(symbols)}] Verified cache: {sym_clean}.json ({len(filings)} filings cached)")
+                    success_count += 1
+                except Exception as e:
+                    print(f"[{i}/{len(symbols)}] Error reading cached {sym_clean}.json: {e}")
+                    missing_count += 1
+            else:
+                print(f"[{i}/{len(symbols)}] Warning: Cached file not found for {sym_clean}")
+                missing_count += 1
+        print(f"\nSEC Cache Verification Complete: {success_count} verified, {missing_count} missing, total {len(symbols)}.")
+        return
+
     # 1. Fetch SEC ticker-CIK directory
     print("Fetching SEC Master CIK directory...")
     req = urllib.request.Request("https://www.sec.gov/files/company_tickers.json", headers=HEADERS)
@@ -324,8 +352,7 @@ def main():
         if t not in ticker_to_cik:
             ticker_to_cik[t] = str(entry["cik_str"]).zfill(10)
         
-    symbols = args.symbols if args.symbols else load_universe_symbols()
-    print(f"Ingesting SEC EDGAR data for {len(symbols)} public equities...")
+    print(f"Ingesting live SEC EDGAR data for {len(symbols)} public equities...")
     
     success_count = 0
     skip_count = 0
@@ -354,7 +381,7 @@ def main():
             print(f"[{i}/{len(symbols)}] Error fetching {sym_clean} (CIK {cik}): {e}")
             fail_count += 1
             
-    print(f"\nSEC Ingestion Complete: {success_count} succeeded, {fail_count} failed, total {len(symbols)}.")
+    print(f"\nLive SEC Ingestion Complete: {success_count} succeeded, {fail_count} failed, total {len(symbols)}.")
 
 if __name__ == "__main__":
     main()

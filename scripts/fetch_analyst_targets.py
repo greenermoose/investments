@@ -256,16 +256,51 @@ def parse_marketbeat_ticker(sym, curr_price, default_exchange="NASDAQ", price_ar
 def main():
     global _press_release_domains
 
+    import argparse
+    parser = argparse.ArgumentParser(description="Fetch Wall Street Analyst Price Targets for universe.")
+    parser.add_argument("--symbols", nargs="+", help="Specific symbols to process (default: all universe)")
+    parser.add_argument("--offline", action="store_true", help="Offline mode: reprocess local cache without making external HTTP requests")
+    parser.add_argument("--live", action="store_true", help="Live mode: query MarketBeat for fresh analyst targets (default)")
+    args = parser.parse_args()
+
     universe_file = os.path.join(http_data_dir, "universe.json")
     prices_file = os.path.join(http_data_dir, "market_prices.json")
 
     with open(universe_file, "r", encoding="utf-8") as f:
         universe = json.load(f)
 
+    if args.symbols:
+        requested_syms = set(s.upper() for s in args.symbols)
+        universe = [u for u in universe if u.get("symbol") in requested_syms]
+
     market_prices = {}
     if os.path.exists(prices_file):
         with open(prices_file, "r", encoding="utf-8") as f:
             market_prices = json.load(f)
+
+    output_path = os.path.join(data_dir, "analyst_price_targets.json")
+    existing_targets = {}
+    if os.path.exists(output_path):
+        with open(output_path, "r", encoding="utf-8") as f:
+            existing_targets = json.load(f)
+
+    offline_mode = args.offline and not args.live
+
+    if offline_mode:
+        print(f"Offline Mode: Verifying analyst price targets cache for {len(universe)} equities...")
+        cached_count = 0
+        missing_count = 0
+        for idx, u in enumerate(universe, 1):
+            sym = u["symbol"]
+            if sym in existing_targets and existing_targets[sym]:
+                cached_count += 1
+                t = existing_targets[sym][0]
+                print(f"[{idx}/{len(universe)}] Cached {sym:5s}: {len(existing_targets[sym])} targets (Latest: {t.get('analyst_name', 'Analyst')} / {t.get('firm', 'Firm')} ${t.get('target_price', 0.0):.2f})")
+            else:
+                missing_count += 1
+                print(f"[{idx}/{len(universe)}] Warning: No cached analyst targets for {sym}")
+        print(f"\nOffline Analyst Targets Complete: {cached_count} verified, {missing_count} missing, total {len(universe)}.")
+        return
 
     # Load historical price archive for accurate announcement price lookups
     price_archive = load_price_archive()
@@ -281,20 +316,12 @@ def main():
     _press_release_domains = load_press_release_domains()
     print(f"Using {len(_press_release_domains)} press release source domains for search URLs: {', '.join(_press_release_domains)}")
 
-    output_path = os.path.join(data_dir, "analyst_price_targets.json")
-    
-    # Load existing if available
-    existing_targets = {}
-    if os.path.exists(output_path):
-        with open(output_path, "r", encoding="utf-8") as f:
-            existing_targets = json.load(f)
-
-    results = {}
+    results = dict(existing_targets)
     total = len(universe)
     archive_hits = 0
     archive_misses = 0
 
-    print(f"Fetching Wall Street Analyst Price Targets for {total} universe equities...")
+    print(f"Fetching live Wall Street Analyst Price Targets for {total} universe equities...")
     for idx, u in enumerate(universe):
         sym = u["symbol"]
         curr_price = market_prices.get(sym, {}).get("current_price") or u.get("current_price", 100.0)
@@ -307,10 +334,8 @@ def main():
 
         targets = parse_marketbeat_ticker(sym, curr_price, default_exchange=exch, price_archive=price_archive)
         if targets:
-            # Sort newest first, keep top 10
             targets.sort(key=lambda x: x.get("announcement_date", ""), reverse=True)
             results[sym] = targets[:10]
-            # Count archive hits/misses for diagnostics
             for t in results[sym]:
                 if lookup_archive_price(price_archive, sym, t.get("announcement_date", "")) is not None:
                     archive_hits += 1

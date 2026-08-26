@@ -123,6 +123,61 @@ def screen_candidates(
     return candidates
 
 
+def categorize_all_universe():
+    universe = load_universe()
+    if not universe:
+        print("Warning: Master universe data not found or empty. Please run build_universe_json.py first.", file=sys.stderr)
+        return {}
+
+    categories = {
+        "BUY": [],
+        "HOLD": [],
+        "SELL": [],
+        "AVOID": []
+    }
+
+    for item in universe:
+        symbol = item.get("symbol", "")
+        name = item.get("name", "")
+        sector = item.get("sector", "Technology")
+        price = float(item.get("current_price", item.get("price", item.get("closing_price", 0.0))))
+        entry_price = float(item.get("entry_price", item.get("benchmarkEntry", price)))
+        target_exit_price = float(item.get("target_exit_price", price * 1.5))
+        annualized_roi = float(item.get("annualized_roi_pct", item.get("annualized_roi", 0.0)))
+        conviction = float(item.get("conviction_score", 5.0))
+        thesis_status = item.get("thesis_status", "HOLD").upper()
+        triage_status = item.get("triage_status", "QUALIFIED_CANDIDATE").upper()
+
+        if triage_status == "AVOID" or thesis_status == "AVOID":
+            cat = "AVOID"
+        elif thesis_status in categories:
+            cat = thesis_status
+        elif annualized_roi >= 20.0:
+            cat = "BUY"
+        elif annualized_roi >= 10.0:
+            cat = "HOLD"
+        else:
+            cat = "SELL"
+
+        record = {
+            "symbol": symbol,
+            "name": name,
+            "sector": sector,
+            "price": price,
+            "benchmark_entry": entry_price,
+            "target_exit_price": target_exit_price,
+            "annualized_roi_pct": annualized_roi,
+            "conviction_score": conviction,
+            "thesis_status": cat
+        }
+        categories[cat].append(record)
+
+    for cat in categories:
+        categories[cat].sort(key=lambda x: (x["annualized_roi_pct"], x["conviction_score"]), reverse=True)
+
+    return categories
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Deterministic Equity Screener CLI for Equity Research Agent"
@@ -132,10 +187,39 @@ def main():
     parser.add_argument("--sector", type=str, default=None, help="Filter by sector")
     parser.add_argument("--status", type=str, default=None, help="Filter by rating status (BUY, HOLD, SELL, AVOID)")
     parser.add_argument("--exclude-avoid", action="store_true", help="Exclude all AVOID list equities from results")
+    parser.add_argument("--summary", action="store_true", help="Show full universe categorization summary across BUY, HOLD, SELL, and AVOID")
+    parser.add_argument("--categorize-all", action="store_true", help="Alias for --summary")
     parser.add_argument("--json", action="store_true", help="Output raw JSON array")
     parser.add_argument("--limit", type=int, default=20, help="Max candidates to output (default: 20)")
 
     args = parser.parse_args()
+
+    if args.summary or args.categorize_all:
+        cats = categorize_all_universe()
+        total_count = sum(len(v) for v in cats.values())
+
+        if args.json:
+            print(json.dumps(cats, indent=2))
+            return
+
+        print("=" * 80)
+        print("MASTER PUBLIC EQUITIES UNIVERSE CATEGORIZATION SUMMARY")
+        print("=" * 80)
+        print(f"Total Tracked Public Equities: {total_count}\n")
+
+        for cat_name in ["BUY", "HOLD", "SELL", "AVOID"]:
+            items = cats[cat_name]
+            pct = round((len(items) / total_count * 100.0), 1) if total_count > 0 else 0.0
+            rois = [it["annualized_roi_pct"] for it in items]
+            median_roi = round(sorted(rois)[len(rois) // 2], 1) if rois else 0.0
+
+            print(f"[{cat_name}] {len(items)} Equities ({pct}%) | Median 3Y CAGR: +{median_roi}%")
+            if items:
+                top_syms = ", ".join([f"{it['symbol']} (+{it['annualized_roi_pct']}%)" for it in items[:6]])
+                print(f"  Top Constituents: {top_syms}")
+            print("-" * 80)
+        print("=" * 80)
+        return
 
     results = screen_candidates(
         min_roi=args.min_roi,

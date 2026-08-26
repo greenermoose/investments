@@ -6,6 +6,7 @@ for all 150 public equities in the universe conforming strictly to:
 - AGENTS.md (No emojis, no standalone horizontal rules, 20-year hurdle standard)
 """
 
+import argparse
 import json
 import math
 import os
@@ -25,6 +26,14 @@ if scripts_dir not in sys.path:
 
 from valuation_model import model_equity_valuation
 
+# CLI arguments
+parser = argparse.ArgumentParser(description="Generate institutional investment thesis dossiers.")
+parser.add_argument("--full", action="store_true", help="Regenerate all universe thesis dossiers")
+parser.add_argument("--symbols", nargs="+", help="Specific symbols to regenerate")
+parser.add_argument("--ratings", nargs="+", help="Regenerate only symbols matching specific ratings (e.g. BUY HOLD)")
+parser.add_argument("--subset-file", type=str, help="Path to text or JSON file containing list of symbols")
+args = parser.parse_args()
+
 # Load universe catalog
 universe_path = os.path.join(http_data_dir, "universe.json")
 if not os.path.exists(universe_path):
@@ -33,6 +42,25 @@ if not os.path.exists(universe_path):
 with open(universe_path, "r", encoding="utf-8") as f:
     universe = json.load(f)
 
+# Filter universe based on CLI arguments
+target_symbols = None
+if args.symbols:
+    target_symbols = set(s.upper() for s in args.symbols)
+elif args.subset_file:
+    with open(args.subset_file, "r", encoding="utf-8") as f:
+        content = f.read().strip()
+        if content.startswith("["):
+            target_symbols = set(json.loads(content))
+        else:
+            target_symbols = set(line.strip().upper() for line in content.splitlines() if line.strip())
+
+if target_symbols:
+    universe = [e for e in universe if e.get("symbol") in target_symbols]
+
+if args.ratings:
+    allowed_ratings = set(r.upper() for r in args.ratings)
+    universe = [e for e in universe if e.get("thesis_status", "").upper() in allowed_ratings]
+
 # Load analyst price targets
 analyst_targets_file = os.path.join(scripts_data_dir, "analyst_price_targets.json")
 all_analyst_targets = {}
@@ -40,7 +68,7 @@ if os.path.exists(analyst_targets_file):
     with open(analyst_targets_file, "r", encoding="utf-8") as f:
         all_analyst_targets = json.load(f)
 
-print(f"Loaded {len(universe)} equities from universe catalog.")
+print(f"Generating institutional thesis dossiers for {len(universe)} equities...")
 
 for equity in universe:
     sym = equity["symbol"]

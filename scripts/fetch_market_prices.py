@@ -263,18 +263,14 @@ def run_archive_mode(symbols):
 def main():
     parser = argparse.ArgumentParser(description="Fetch latest market prices, volumes, and technical indicators.")
     parser.add_argument("--symbols", nargs="+", help="Specific symbols to fetch (default: all universe)")
+    parser.add_argument("--offline", action="store_true", help="Offline mode: use local cached prices without making remote HTTP calls")
+    parser.add_argument("--live", action="store_true", help="Live mode: fetch fresh quotes from exchange APIs (default)")
     parser.add_argument("--archive", action="store_true",
                         help="Build/update historical price archive (18 months of daily closes) for accurate analyst announcement price lookups.")
     args = parser.parse_args()
 
     symbols = args.symbols if args.symbols else load_universe_symbols()
-
-    # Archive mode: build persistent historical daily close archive
-    if args.archive:
-        run_archive_mode(symbols)
-        return
-
-    print(f"Ingesting authoritative market prices & technical data for {len(symbols)} public equities...")
+    offline_mode = args.offline and not args.live
 
     scripts_data_dir = os.path.join(os.path.dirname(__file__), "data")
     http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
@@ -286,6 +282,37 @@ def main():
     out_file_scripts = os.path.join(scripts_data_dir, "market_prices.json")
     out_file_http = os.path.join(http_data_dir, "market_prices.json")
     out_file_context = os.path.join(context_data_dir, "market_prices.json")
+
+    # Archive mode: build persistent historical daily close archive
+    if args.archive:
+        run_archive_mode(symbols)
+        return
+
+    if offline_mode:
+        print(f"Offline Mode: Verifying cached market prices for {len(symbols)} public equities...")
+        prices_map = {}
+        if os.path.exists(out_file_scripts):
+            try:
+                with open(out_file_scripts, "r", encoding="utf-8") as f:
+                    prices_map = json.load(f)
+            except Exception:
+                prices_map = {}
+
+        success_count = 0
+        missing_count = 0
+        for i, sym in enumerate(symbols, 1):
+            if sym in prices_map:
+                record = prices_map[sym]
+                print(f"[{i}/{len(symbols)}] Cached {sym:5s}: Price = ${record.get('current_price', 0.0):7.2f} | 52W: [${record.get('fifty_two_week_low', 0.0):.2f} - ${record.get('fifty_two_week_high', 0.0):.2f}]")
+                success_count += 1
+            else:
+                print(f"[{i}/{len(symbols)}] Warning: No cached price found for {sym}")
+                missing_count += 1
+
+        print(f"\nOffline Price Verification Complete: {success_count} verified, {missing_count} missing, total {len(symbols)}.")
+        return
+
+    print(f"Ingesting live market prices & technical data for {len(symbols)} public equities...")
 
     prices_map = {}
     if os.path.exists(out_file_scripts):
@@ -319,7 +346,7 @@ def main():
     with open(out_file_context, "w", encoding="utf-8") as f:
         json.dump(prices_map, f, indent=2)
 
-    print(f"\nPrice & volume ingestion complete: {success_count} succeeded, {fail_count} failed.")
+    print(f"\nLive price & volume ingestion complete: {success_count} succeeded, {fail_count} failed.")
     print(f"Saved records to {out_file_scripts}, {out_file_http}, and {out_file_context}")
 
 if __name__ == "__main__":

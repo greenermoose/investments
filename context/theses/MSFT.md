@@ -14,15 +14,15 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=789019
 
 ## Business Profile
-Microsoft Corporation is a global technology leader operating across three core pillars: Productivity & Business Processes (Microsoft 365, Office, Teams, LinkedIn, Dynamics 365), Intelligent Cloud (Microsoft Azure cloud infrastructure, SQL Server, Windows Server), and More Personal Computing (Windows OEM, Xbox gaming content and consoles via Activision Blizzard, Surface hardware).
+Microsoft Corporation operates within the Information Technology sector, specializing in Systems Software & Cloud Computing. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
 
-Microsoft commands one of the widest economic moats in corporate history, underpinned by massive enterprise software lock-in, global mission-critical cloud infrastructure scale, and deep strategic partnership with OpenAI. Management is leading the enterprise generative AI revolution through Microsoft Copilot integrations across Office and software workflows, while Azure continues to capture high-margin enterprise cloud market share.
+Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
 
 ## Total Addressable Market & Market Share
 Microsoft Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 27.7% market share. Over our 3-year investment horizon, we model market share evolving to 28.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Microsoft commands one of the widest economic moats in corporate history, underpinned by massive enterprise software switching costs, global cloud infrastructure scale (Azure), and the ubiquitous Windows and Office 365 commercial ecosystems. Millions of enterprises are structurally dependent on Microsoft's active directory, security, and developer tooling (GitHub, Visual Studio). Its strategic partnership with OpenAI and deployment of Copilot AI assistants across enterprise workflows cement its enterprise software dominance.
+Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
 
 ## Anticipated Catalysts & Timeline
 Microsoft Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Microsoft 365 Copilot Enterprise Tier 2 Monetization** (2026-Q4): Expected top-line impact of ~$2.80B inflecting 2026-Q4 revenue. Higher seat penetration across Fortune 500 corporate enterprise clients. - **Azure Maia & Cobalt Custom AI Accelerators** (2027-Q2): Expected top-line impact of ~$3.40B inflecting 2027-Q2 revenue. First-party silicon deployment lowering compute unit cost and improving cloud gross margins. - **Autonomous Agentic AI Workflow Platform** (2027-Q4): Expected top-line impact of ~$4.10B inflecting 2027-Q4 revenue. Consumption-based agentic orchestration in Azure enterprise cloud subscriptions.
@@ -49,16 +49,16 @@ Microsoft Corporation utilizes equity-based compensation as a core talent recrui
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-Microsoft's off-balance sheet footprint is entirely forward-looking growth capital (cloud datacenters, GPU clusters, clean power) with zero dead-weight legacy worker or environmental encumbrances.
+Microsoft Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Microsoft maintains zero defined benefit pension plans or retiree healthcare OPE... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero industrial contamination liabilities. Environmental commitments consist of ... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.50 B | ~$0.10 B / yr | FTC cloud software licensing review, European Commission Teams unbundling monito... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $65.00 B | Take-or-Pay: $28.00 B | Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
 
-**Equity Cash Flow Seniority Impact:** Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.
+**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

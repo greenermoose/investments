@@ -16,12 +16,13 @@ To maximize analytical rigor while maintaining strict token parsimony, the syste
 | **Layer 1: Lightweight Triage & Gating** | `triage_universe.py`, `screen_market.py` | 0 to 1,000 Tokens | Weekly / Discovery | Screening candidate equities, applying gross margin and cash runway filters, routing value traps to the Avoid List. |
 | **Layer 2: Event-Driven Surveillance** | `surveil_sentiment.py`, `track_short_sellers.py` | 500 to 1,500 Tokens | Event-Driven / Daily | Scanning press releases, Reddit chatter, investor concern themes, and activist short seller publications. |
 | **Layer 3: Single-Session Deliberation** | `weekly_deliberation.md`, `generate_plan.py` | 2,000 to 5,000 Tokens | Weekly (Weekend Session) | Parsing user snapshot, checking limit buy/sell triggers, calculating CSP/CC orders, outputting plain ASCII trading plan. |
-| **Layer 4: Deep Institutional Thesis Authoring** | `thesis_authoring.md`, `valuation_model.py` | 10,000 to 15,000 Tokens per Stock | Targeted / Quarterly (BUY candidates only) | 13-quarter revenue modeling, 6-horizon diluted share paths, 4-horizon price target ranges, moat analysis, and invalidation triggers. |
-| **Layer 5: Full Ground-Truth Regeneration** | `rare_full_source_regeneration.md`, `fetch_sec.py --live` | On-Demand / Periodic | Rare (Quarterly or Anti-Hallucination Audit) | Full rebuild from primary regulatory filings (SEC EDGAR XBRL) and exchange feeds to eliminate hallucinations and model drift. |
+| **Layer 4: Universe Expansion & Coverage Onboarding** | `onboard_company.py`, `screen_market.py` | ~10,000 to 15,000 Tokens per Stock | Periodic / On-Demand (Few times/yr) | Screening candidates for >= 20% ROI hurdle, ingesting SEC XBRL filings, modeling multi-horizon valuation, authoring thesis dossiers, and updating master catalogs. |
+| **Layer 5: Deep Institutional Thesis Authoring** | `thesis_authoring.md`, `valuation_model.py` | 10,000 to 15,000 Tokens per Stock | Targeted / Quarterly (BUY candidates only) | 13-quarter revenue modeling, 6-horizon diluted share paths, 4-horizon price target ranges, moat analysis, and invalidation triggers. |
+| **Layer 6: Full Ground-Truth Regeneration** | `rare_full_source_regeneration.md`, `fetch_sec.py --live` | On-Demand / Periodic | Rare (Quarterly or Anti-Hallucination Audit) | Full rebuild from primary regulatory filings (SEC EDGAR XBRL) and exchange feeds to eliminate hallucinations and model drift. |
 
-## 2. The Five Operational Cadences
+## 2. The Six Operational Cadences
 
-The system structures all operations into five disciplined cadences:
+The system structures all operations into six disciplined cadences:
 
 ### Cadence 1: High-Frequency Daily (Market Open & Close)
 - **Objective:** Track intraday and daily price movements, trading volume anomalies, moving average breaches (SMA 20, SMA 50), and 52-week support/resistance levels.
@@ -65,7 +66,24 @@ The system structures all operations into five disciplined cadences:
   Prompt AI agent using `context/prompts/weekly_deliberation.md`.
 - **Operational Trigger:** Executed once per weekend between Friday market close and Sunday night.
 
-### Cadence 5: Rare Ground-Truth Regeneration & Full Audit
+### Cadence 5: Periodic / On-Demand Universe Expansion & Coverage Onboarding
+- **Objective:** Proactively screen US public exchanges for compelling compounders with high potential to achieve >= 20% annualized ROI, and onboard single or batch equities into the public coverage universe on demand.
+- **Token Spend:** ~10,000 to 15,000 Tokens per onboarded stock (or 0 tokens for deterministic screening).
+- **Execution Workflow:**
+  Prompt AI agent using `context/prompts/onboard_company.md` or execute:
+  ```bash
+  # Onboard single equity
+  python scripts/onboard_company.py --symbol CRWD --live
+
+  # Onboard batch of multiple equities (any number of additions)
+  python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
+
+  # Screen market for >= 20% ROI candidates and auto-onboard top N
+  python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
+  ```
+- **Operational Trigger:** Executed on-demand whenever the user requests coverage expansion or identifies new prospective investment themes (anticipated a few times per year).
+
+### Cadence 6: Rare Ground-Truth Regeneration & Full Audit
 - **Objective:** Complete end-to-end reconciliation and dataset regeneration from primary regulatory sources (Tier 1 SEC EDGAR, exchange feeds) to guarantee zero hallucination drift.
 - **Token Spend:** Deterministic script execution + focused agent verification.
 - **Execution Workflow:**
@@ -99,7 +117,7 @@ To operate cheaply and quickly day-to-day without repeatedly querying remote end
 
 ### Verification Rules for Cached Data:
 1. **Never Assume Decimal Precision from Memory:** Financial digits, share counts, and revenue numbers are never recalled from LLM weights; they are read directly from `context/data/` or `http/data/`.
-2. **Deterministic Parity Assertion:** Before any trading plan is finalized, `scripts/quality_control.py --audit` executes 8 programmatic integrity checks verifying that all 150 universe constituents have valid prices, correct CIKs, and matching math.
+2. **Deterministic Parity Assertion:** Before any trading plan is finalized, `scripts/quality_control.py --audit` executes 8 programmatic integrity checks verifying that all universe constituents have valid prices, correct CIKs, and matching math.
 3. **Errata Logging:** If any cached value is found to be stale or erroneous, it is corrected immediately and logged in `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
 
 ## 4. Anti-Hallucination Protocol & Primary Source Regeneration

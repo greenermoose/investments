@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weekly Workflow & Execution - Agentic Investment Advisor</title>
+  <title>System Workflows &amp; Execution - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
 </head>
@@ -15,7 +15,7 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide</a>
+      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -27,28 +27,35 @@
       <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
       <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+      <a href="workflow.html" class="docs-nav-link active">System Workflows</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>Weekly Workflow & Execution Protocol</h1>
-      <p class="docs-lead">The operational cadence connecting weekend portfolio ingestion, agent deliberation, executive reporting, and Monday market-open order placement.</p>
+      <h1>System Workflows &amp; Execution Protocols</h1>
+      <p class="docs-lead">Complete operational playbooks for the two primary system workflows: Weekly Trading Deliberation (Single-Session Execution) and Coverage Universe Expansion (On-Demand 20%+ ROI Screening &amp; Onboarding).</p>
     </div>
 
-    <h2>Weekly Cadence & Timeline</h2>
+    <div class="callout note">
+      <div class="callout-title">Two Distinct Operational Workflows</div>
+      <p>The system operates across two core workflows: <strong>Workflow 1 (Weekly Trading Deliberation)</strong> executes once per weekend to produce Monday morning execution plans for user portfolios; <strong>Workflow 2 (Coverage Universe Expansion)</strong> runs on demand (anticipated a few times per year) to screen for and onboard new public compounders into our tracked universe.</p>
+    </div>
+
+    <h2>Workflow 1: Weekly Deliberation &amp; Single-Session Execution</h2>
+    <p>Connecting weekend portfolio ingestion, agent deliberation, executive reporting, and Monday market-open order placement.</p>
 
     <div class="card-grid">
       <div class="docs-card">
         <h4>1. Weekend Snapshot</h4>
         <p><strong>Timing:</strong> Saturday / Sunday</p>
-        <p>User places a fresh brokerage screenshot or CSV export into <code>private/snapshots/</code>.</p>
+        <p>User places fresh brokerage exports or screenshots into <code>private/snapshots/</code>.</p>
       </div>
 
       <div class="docs-card">
         <h4>2. Multi-Agent Deliberation</h4>
         <p><strong>Timing:</strong> Sunday Evening</p>
-        <p>Ingestion parses holdings &rarr; Equity Research discovers opportunities &rarr; Thesis models multi-horizon forecasts &rarr; Memory audits invalidation &rarr; Pricing models limits.</p>
+        <p>Ingestion parses holdings &rarr; Research discovers opportunities &rarr; Thesis models forecasts &rarr; Memory audits invalidations &rarr; Pricing models limits.</p>
       </div>
 
       <div class="docs-card">
@@ -60,12 +67,12 @@
       <div class="docs-card">
         <h4>4. Monday Execution</h4>
         <p><strong>Timing:</strong> Monday 9:30 AM ET</p>
-        <p>User reviews the plain-text plan, conducts Q&A if desired, and enters the specified limit orders into their brokerage in a single session.</p>
+        <p>User reviews the plan and enters specified limit orders into their brokerage in one sitting with zero mid-week intervention.</p>
       </div>
     </div>
 
-    <h2>Weekly Trading Plan Structure</h2>
-    <p>Every generated plan in <code>private/plans/</code> is strictly plain ASCII text. It avoids hard-to-read Markdown pipe tables in favor of structured ASCII headers, clear indentation, sequential portfolio sections, and step-by-step numbered order blocks:</p>
+    <h3>Sample Plain-Text Weekly Trading Plan Structure</h3>
+    <p>Weekly trading plans written to <code>private/plans/</code> are strictly plain ASCII text conforming to <code>context/schemas/trading_plan_schema.json</code>:</p>
 
     <pre><code>================================================================================
 WEEKLY TRADING PLAN: WEEK OF MONDAY, AUGUST 17, 2026
@@ -140,40 +147,97 @@ positions at 4:00 PM ET on Friday, August 21:
   roll next week.
 
 ================================================================================
-PORTFOLIO 2: SECONDARY ACCOUNT
-================================================================================
-
-ACCOUNT SNAPSHOT:
-- Total Value:     $15,420.00
-- Settled Cash:    $2,100.00
-- Active Holdings: 3 stocks (MSFT, GOOGL, SGOV)
-- Covered Call Eligible Blocks: 0
-
---------------------------------------------------------------------------------
-STEP 1: SINGLE-SESSION ORDER ENTRY (PORTFOLIO 2)
---------------------------------------------------------------------------------
-Submit the following order in one sitting:
-
-1. BUY TO OPEN: SGOV (iShares 0-3 Month Treasury Bond ETF)
-   - Shares:      20
-   - Order Type:  Limit Order
-   - Limit Price: $100.55
-   - Est. Cash:   -$2,011.00
-   - Rationale:   Park idle cash in yield proxy earning 5%+ risk-free return while
-                  awaiting high-conviction stock dip opportunities.
-
---------------------------------------------------------------------------------
-STEP 2: FRIDAY EXPIRATION &amp; ASSIGNMENT EXPECTATIONS (PORTFOLIO 2)
---------------------------------------------------------------------------------
-- No active option contracts in this account. All equity positions compound passively.
-
-================================================================================
 END OF TRADING PLAN
 ================================================================================</code></pre>
 
+    <h2>Workflow 2: Coverage Universe Expansion &amp; Onboarding</h2>
+    <p>Enables the Equity Research Agent to proactively search the market, screen for high-conviction companies with the potential to generate <strong>&gt;= 20% annualized ROI</strong>, and onboard single or batch equities on demand at any time.</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>1. Discovery &amp; Screening</h4>
+        <p>Equity Research Agent searches US exchanges (NYSE, NASDAQ, AMEX) or filters candidates via <code>scripts/screen_market.py</code> for 20%+ ROI compounders.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>2. Stage 1 Triage &amp; Solvency</h4>
+        <p>Verifies gross margins &gt;= 15%, cash runway &gt;= 12m, Debt/Equity &lt;= 4.0x, dilution &lt;= 4%/yr, and clean SEC audit opinions.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>3. SEC Ingestion &amp; Catalogs</h4>
+        <p>Executes <code>scripts/onboard_company.py</code> to pull Tier 1 XBRL filings, update market quotes, and re-synthesize <code>universe.json</code> and <code>sec-data.json</code>.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>4. Institutional Dossier</h4>
+        <p>Investment Thesis Agent authors 13Q revenue paths, 6H shares, 4H price bounds, and 6 qualitative sections in <code>context/theses/&lt;SYM&gt;.md</code>.</p>
+      </div>
+    </div>
+
+    <h3>6-Stage End-to-End Onboarding Pipeline</h3>
+    <ol>
+      <li><strong>Exchange &amp; Security Validation:</strong> Verifies common stock or liquid ADR listed on NYSE, NASDAQ, or AMEX. Excludes OTC penny stocks, closed-end funds, and leveraged ETFs.</li>
+      <li><strong>The 20%+ ROI Hurdle &amp; Stage 1 Triage:</strong> Quantitatively computes estimated 3-year compounding rate. Requires estimated CAGR &gt;= 20.0%. Discards value traps to the Avoid List.</li>
+      <li><strong>Deterministic Data Ingestion:</strong> Ingests official SEC EDGAR 10-K/10-Q XBRL statements, market quotes, volume averages, and Wall Street consensus price targets.</li>
+      <li><strong>Multi-Horizon Valuation Modeling:</strong> Computes 13-quarter revenue path ($Q_0$ to $Q_{12}$), 6-horizon shares outstanding, and 4-horizon price target ranges (13w, 52w, 104w, 156w).</li>
+      <li><strong>Institutional Thesis Dossier Generation:</strong> Authors Business Profile, TAM &amp; Market Share, Competitive Moats, Catalysts &amp; Timeline, Capital Allocation Strategy, and Explicit Invalidation Criteria in <code>context/theses/&lt;TICKER&gt;.md</code>.</li>
+      <li><strong>Deterministic Parity &amp; Quality Control Audit:</strong> Executes <code>scripts/quality_control.py --audit</code> asserting 0 errors and 0 warnings across all universe datasets.</li>
+    </ol>
+
+    <h3>How to Invoke Universe Expansion</h3>
+    <p>You can ask the AI agent team to expand the coverage universe at any time using one of three prompt patterns:</p>
+
+    <div class="docs-card" style="margin-bottom: 20px;">
+      <h4>Pattern A: Thematic / Sector Market Screening for 20%+ Compounders</h4>
+      <p>Use when you want the Equity Research Agent to proactively discover new candidates in a specific sector or theme:</p>
+      <pre><code>Act as the Equity Research Agent. Search the public markets and SEC filings for high-growth cybersecurity and enterprise cloud infrastructure companies listed on US exchanges that offer high potential to achieve &gt;= 20% annualized ROI.
+
+Run Stage 1 Lightweight Triage (gross margin &gt;= 15%, runway &gt;= 12m, Debt/Equity &lt;= 4.0x, dilution &lt;= 4%/yr), audit balance sheet solvency and off-balance sheet liabilities, and select the top 3 highest-conviction candidates.
+
+Onboard these equities into our universe by executing scripts/onboard_company.py with live regulatory data, author complete thesis dossiers with the Investment Thesis Agent, validate schema compliance, and execute scripts/quality_control.py --audit. Provide a summary of newly added equities with expected CAGR and dossier paths.</code></pre>
+    </div>
+
+    <div class="docs-card" style="margin-bottom: 20px;">
+      <h4>Pattern B: Single Named Public Equity Onboarding</h4>
+      <p>Use when you have a specific US-listed company in mind that you want to add to full coverage:</p>
+      <pre><code>Act as the Equity Research Agent. Add CRWD to our coverage universe.
+
+Ingest authoritative SEC EDGAR 10-K/10-Q filings and live market prices using python scripts/onboard_company.py --symbol CRWD --live. Evaluate Stage 1 triage and solvency. Collaborate with the Investment Thesis Agent to author the full 6-part qualitative thesis in context/theses/CRWD.md, model the 13Q revenue trajectory and 4H price targets, validate schema compliance with scripts/validate_thesis.py, and run scripts/quality_control.py --audit.</code></pre>
+    </div>
+
+    <div class="docs-card" style="margin-bottom: 20px;">
+      <h4>Pattern C: Batch Multi-Equity Onboarding (Any Number of Additions)</h4>
+      <p>Use when adding any arbitrary list of companies simultaneously (e.g. during quarterly universe refresh):</p>
+      <pre><code>Act as the Equity Research Agent. Add the following 4 equities to our coverage universe: NOW, ABNB, NET, MDB.
+
+Execute the batch onboarding pipeline via python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live. Ensure SEC XBRL statements, market quotes, analyst price targets, and master catalogs (universe.json and sec-data.json) are fully synchronized. Author and validate thesis dossiers for each company, and assert zero discrepancies with scripts/quality_control.py --audit.</code></pre>
+    </div>
+
+    <h3>Deterministic CLI Commands for Universe Onboarding</h3>
+    <p>All universe expansion operations can also be executed directly via the command line:</p>
+
+    <pre><code># 1. Onboard a single named equity (live SEC &amp; market data)
+python scripts/onboard_company.py --symbol CRWD --live
+
+# 2. Onboard multiple equities in batch (any arbitrary list)
+python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
+
+# 3. Screen market for high-conviction &gt;= 20% ROI candidates and auto-onboard top N
+python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
+
+# 4. Screen existing universe for &gt;= 20% annualized ROI (excluding Avoid list)
+python scripts/screen_market.py --min-roi 20.0 --exclude-avoid
+
+# 5. Screen full universe categorization summary across BUY, HOLD, SELL, and AVOID
+python scripts/screen_market.py --summary
+
+# 6. Audit quality control across all universe records after onboarding
+python scripts/quality_control.py --audit</code></pre>
+
     <div class="callout important">
-      <div class="callout-title">Plain Text Standard &amp; Execution Principles</div>
-      <p>Trading plans in <code>private/plans/</code> are strictly plain ASCII text. Never use Markdown tables or ambiguous choices. Every position has a decisive recommendation, single-session execution, deterministic contingencies, and automated Friday settlement.</p>
+      <div class="callout-title">Equal-Footing &amp; Privacy Rules for Newly Onboarded Equities</div>
+      <p>All equities added to the coverage universe exist on completely equal footing in public intelligence (<code>context/theses/*.md</code>, <code>http/data/universe.json</code>, and the web interface). Private portfolio holdings in <code>private/snapshots/</code> NEVER alter public ratings or dossiers, preserving the strict one-way privacy firewall.</p>
     </div>
   </main>
 </body>

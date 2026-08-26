@@ -1,13 +1,14 @@
 # Deterministic CLI Scripts & Engines
 
-This directory contains deterministic Python and Node.js command-line utilities used for data synchronization, API ingestion, mathematical modeling, and automated quality control audits.
+This directory contains deterministic Python and Node.js command-line utilities used for data synchronization, API ingestion, mathematical modeling, coverage onboarding, and automated quality control audits.
 
-For complete rules and decision criteria on when to use deterministic scripts versus generative AI agent reasoning, see [deterministic_vs_generative_execution.md](file:///c:/Users/fyhor/Documents/GitHub/investments/context/strategy/deterministic_vs_generative_execution.md).
+For complete rules and decision criteria on when to use deterministic scripts versus generative AI agent reasoning, see [deterministic_vs_generative_execution.md](file:///c:/Users/Fred/github/investments/context/strategy/deterministic_vs_generative_execution.md).
 
 ## Script Catalog
 
-- `parse_snapshot.py` (Portfolio Ingestion Agent): Parses uploaded CSV and text brokerage exports in `private/snapshots/`, isolates distinct accounts, tags covered call eligibility (>= 100 shares), and outputs normalized portfolio state.
+- `onboard_company.py` (Equity Research & Investment Thesis Agents): Deterministic company onboarding engine supporting single, batch, or screened additions to the coverage universe with SEC EDGAR XBRL ingestion, market pricing, valuation modeling, thesis authoring, and quality control auditing.
 - `screen_market.py` (Equity Research Agent): Screens US exchange-listed public equities against quantitative criteria targeting >= 20% annualized ROI with debt solvency and runway checks.
+- `parse_snapshot.py` (Portfolio Ingestion Agent): Parses uploaded CSV and text brokerage exports in `private/snapshots/`, isolates distinct accounts, tags covered call eligibility (>= 100 shares), and outputs normalized portfolio state.
 - `validate_thesis.py` (Investment Thesis Agent): Validates forward-looking 3-year quantitative forecasts, 13-quarter revenue paths, and price target bounds against `context/schemas/investment_thesis_schema.json`.
 - `manage_memory.py` (Memory Agent): Audits persistent dossiers in `context/theses/*.md`, tracks catalyst deadlines, checks invalidation exit triggers, and inspects errata logs.
 - `calculate_pricing.py` (Pricing Agent): Models Black-Scholes option pricing, Greeks (Delta, Theta, Gamma, Vega), Annualized Return on Collateral (AROC), net-credit rolls, and technical support/resistance limit order pricing.
@@ -35,22 +36,34 @@ Local binary databases, SQLite files, and Parquet caches populated by scripts ar
 
 Run scripts from the repository root:
 ```bash
-# 1. Parse Portfolio Snapshot
+# 1. Onboard a Single Equity (Live SEC & Market Feeds or Offline)
+python scripts/onboard_company.py --symbol CRWD --live
+python scripts/onboard_company.py --symbol CRWD --offline
+
+# 2. Onboard Multiple Equities in Batch
+python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
+python scripts/onboard_company.py --symbols MSFT AAPL NVDA --offline
+
+# 3. Screen Market for >= 20% ROI Candidates & Auto-Onboard
+python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
+
+# 4. Screen Market for Opportunities (Analysis Only)
+python scripts/screen_market.py --min-roi 20.0 --limit 10
+python scripts/screen_market.py --summary
+
+# 5. Parse Portfolio Snapshot
 python scripts/parse_snapshot.py --demo
 
-# 2. Screen Market for >= 20% ROI Opportunities
-python scripts/screen_market.py --min-roi 20.0
-
-# 3. Model Pricing (Options & Limit Orders)
+# 6. Model Pricing (Options & Limit Orders)
 python scripts/calculate_pricing.py option --stock-price 124.50 --strike 120.00 --dte 35 --type put
 python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
 
-# 4. Audit Institutional Memory & Invalidation
+# 7. Audit Institutional Memory & Invalidation
 python scripts/manage_memory.py
 
-# 5. Generate Plain-Text Weekly Trading Plan
+# 8. Generate Plain-Text Weekly Trading Plan
 python scripts/generate_plan.py
 
-# Run Quality Control Audit
+# 9. Run Deterministic Quality Control Audit
 python scripts/quality_control.py --audit
 ```

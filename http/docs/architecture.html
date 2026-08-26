@@ -15,7 +15,7 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide</a>
+      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -27,6 +27,7 @@
       <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
       <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+      <a href="workflow.html" class="docs-nav-link">System Workflows</a>
     </div>
   </nav>
 
@@ -39,19 +40,19 @@
     <h2>Why Agent Teams Outperform Monolithic Chatbots</h2>
     <p>Standard LLM chatbots struggle with personalized portfolio management due to session amnesia, guardrail hedging, narrow market scope, and lack of derivatives modeling. This system resolves these limitations by orchestrating specialized sub-agents backed by deterministic local memory stores.</p>
 
-    <h2>Sub-Agent Roles & Pipeline</h2>
+    <h2>Sub-Agent Roles &amp; Pipeline</h2>
     
     <div class="card-grid">
       <div class="docs-card">
         <h4>1. Portfolio Ingestion Agent</h4>
         <p><strong>Input:</strong> Brokerage screenshot or CSV export in <code>private/snapshots/</code>.</p>
-        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, SGOV shares, isolates distinct accounts, and tags covered call eligibility (>= 100 shares).</p>
+        <p><strong>Responsibility:</strong> Extracts share counts, options contracts, cash balances, SGOV shares, isolates distinct accounts, and tags covered call eligibility (&gt;= 100 shares).</p>
       </div>
 
       <div class="docs-card">
         <h4>2. Equity Research Agent</h4>
-        <p><strong>Input:</strong> The Internet, US public markets (NYSE, NASDAQ, AMEX), SEC EDGAR filings, and market news.</p>
-        <p><strong>Responsibility:</strong> Discovers compelling public companies, checks balance sheet solvency/runway, and screens for high probability of achieving >= 20% annualized ROI to onboard into our universe.</p>
+        <p><strong>Input:</strong> The Internet, US public markets (NYSE, NASDAQ, AMEX), SEC EDGAR filings, and screening tools.</p>
+        <p><strong>Responsibility:</strong> Discovers compelling public companies, checks balance sheet solvency/runway, screens for high probability of achieving &gt;= 20% annualized ROI, and onboards single or batch equities into our coverage universe on demand.</p>
       </div>
 
       <div class="docs-card">
@@ -79,15 +80,15 @@
       </div>
     </div>
 
-    <h2>Data Isolation & Privacy Model</h2>
+    <h2>Data Isolation &amp; Privacy Model</h2>
     <p>The system enforces strict data privacy through isolated directory tiers:</p>
     <ul>
       <li><strong>Private User Tier (<code>private/</code>):</strong> All user snapshots, exact account values, and personalized execution plans are stored locally and git-ignored.</li>
-      <li><strong>Public Intelligence Tier (<code>context/theses/</code> & <code>http/</code>):</strong> Fundamental company research, catalyst timelines, and valuation models contain zero private user data and are committed to version control.</li>
+      <li><strong>Public Intelligence Tier (<code>context/theses/</code> &amp; <code>http/</code>):</strong> Fundamental company research, catalyst timelines, and valuation models contain zero private user data and are committed to version control.</li>
       <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python scripts execute mathematical models and API connectors locally.</li>
     </ul>
 
-    <div class="callout">
+    <div class="callout note">
       <div class="callout-title">Deterministic Context Construction</div>
       <p>Agents are fed targeted, structured Markdown context files rather than hundreds of pages of raw data, maximizing token efficiency while maintaining perfect reasoning accuracy.</p>
     </div>

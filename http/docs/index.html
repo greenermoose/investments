@@ -15,7 +15,7 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide</a>
+      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -27,35 +27,36 @@
       <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
       <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+      <a href="workflow.html" class="docs-nav-link">System Workflows</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
       <h1>Documentation Hub</h1>
-      <p class="docs-lead">Comprehensive architecture, strategy guides, options modeling principles, data provenance, and deliberation workflows for the Agentic Investment Advisor system.</p>
+      <p class="docs-lead">Comprehensive architecture, strategy guides, options modeling principles, data provenance, and operational workflows for the Agentic Investment Advisor system.</p>
     </div>
 
     <h2>System Guides</h2>
     <div class="card-grid">
+      <a href="workflow.html" class="docs-card">
+        <h4>System Workflows</h4>
+        <p>Operational playbooks for Weekly Trading Deliberation (Single-Session Execution) and Coverage Universe Expansion (20%+ ROI Screening).</p>
+      </a>
       <a href="architecture.html" class="docs-card">
         <h4>System Architecture</h4>
         <p>Explore the 6-agent team, multi-agent pipeline, data boundary isolation, and deterministic context construction.</p>
-      </a>
-      <a href="workflow.html" class="docs-card">
-        <h4>Weekly Workflow</h4>
-        <p>Step-by-step cadence for weekend portfolio snapshots, deliberation protocols, and Monday limit order execution.</p>
       </a>
       <a href="sources.html" class="docs-card">
         <h4>Data Sources &amp; Provenance</h4>
         <p>Authoritative source hierarchy, access methodologies, AI agent parametric knowledge attribution, and errata protocols.</p>
       </a>
       <a href="strategies.html" class="docs-card">
-        <h4>Investment Strategy & Constraints</h4>
+        <h4>Investment Strategy &amp; Constraints</h4>
         <p>Core portfolio principles: US equities, SGOV cash proxy, Cash-Secured Puts, Covered Calls, and position caps.</p>
       </a>
       <a href="options.html" class="docs-card">
-        <h4>Options Pricing & Modeling</h4>
+        <h4>Options Pricing &amp; Modeling</h4>
         <p>Mathematical foundations for Black-Scholes modeling, optimal Delta (0.15-0.30), DTE (30-45), and roll execution.</p>
       </a>
       <a href="valuation.html" class="docs-card">
@@ -72,7 +73,7 @@
         <tr>
           <th>Target Audience</th>
           <th>Directory</th>
-          <th>Format & Purpose</th>
+          <th>Format &amp; Purpose</th>
         </tr>
       </thead>
       <tbody>
@@ -83,13 +84,13 @@
         </tr>
         <tr>
           <td><strong>Humans (Public Web)</strong></td>
-          <td><code>http/</code> & <code>http/docs/</code></td>
+          <td><code>http/</code> &amp; <code>http/docs/</code></td>
           <td>Responsive HTML/JS companion dashboard, documentation, universe cards, and options tools.</td>
         </tr>
         <tr>
-          <td><strong>CLI & Deterministic Automation</strong></td>
+          <td><strong>CLI &amp; Deterministic Automation</strong></td>
           <td><code>scripts/</code></td>
-          <td>Python utilities for Black-Scholes options pricing, SEC EDGAR scraping, and universe caching.</td>
+          <td>Python utilities for Black-Scholes options pricing, SEC EDGAR scraping, onboarding, and quality audits.</td>
         </tr>
         <tr>
           <td><strong>Humans (Private Data)</strong></td>
@@ -105,7 +106,7 @@
     </table>
 
     <div class="callout important">
-      <div class="callout-title">Privacy & Local Execution</div>
+      <div class="callout-title">Privacy &amp; Local Execution</div>
       <p>All sensitive account snapshots and weekly trading plans are stored locally under <code>private/</code>, which is excluded from source control. Public company intelligence and research are tracked in <code>context/theses/</code> and displayed under <code>http/</code>.</p>
     </div>
   </main>

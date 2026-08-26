@@ -14,8 +14,8 @@ This repository separates data, documentation, and logic cleanly according to it
 investments/
   context/              # Primary audience: AI Agents (Markdown context, prompts, memory schemas, strategy constraints)
     data/               # Complete structured datasets for AI agents (universe.json, market_prices.json, sec_reports.json, equities/)
-    theses/             # Markdown investment dossiers and catalyst logs for all 144 equities (agent memory)
-    prompts/            # Agent role prompts and weekly deliberation protocols
+    theses/             # Markdown investment dossiers and catalyst logs for all universe equities (agent memory)
+    prompts/            # Agent role prompts, weekly deliberation, and universe onboarding protocols
     sources/            # Authoritative data sources catalog and access methodologies
     research/           # Errata log, verification records, and quantitative research
     schemas/            # Schema definitions (portfolio context, data provenance, errata)
@@ -29,11 +29,11 @@ investments/
       strategies.html   # Investment strategy & portfolio constraints
       options.html      # Options pricing & weekend limit order modeling
       valuation.html    # Valuation methodologies & financial models
-      workflow.html     # Weekly deliberation & executive planning workflow
+      workflow.html     # System workflows: weekly deliberation & universe onboarding
     data/               # Public company data and JSON fixtures for the web interface
     css/                # Styling and typography (app.css, docs.css, roboto-fonts.css)
     js/                 # Vue 3 no-build ESM components and services
-  scripts/              # Deterministic CLI tools (data sync, Black-Scholes pricing, SEC fetchers)
+  scripts/              # Deterministic CLI tools (data sync, Black-Scholes pricing, SEC fetchers, company onboarding)
     data/               # Local script databases and caches (e.g., universe.db)
   private/              # Primary audience: Humans (Private Data - Git Ignored)
     snapshots/          # Raw weekly inputs (brokerage CSVs, screenshots)
@@ -64,8 +64,9 @@ flowchart TD
     A[Weekly Snapshot in private/snapshots/] --> B[Portfolio Ingestion Agent]
     B --> C[Portfolio State: Equities, Cash, SGOV, Options Lots]
     
-    NET[The Internet & SEC Filings] --> G[Equity Research Agent]
-    G --> UNIV[Tracked Equity Universe]
+    NET[The Internet, SEC Filings & Markets] --> G[Equity Research Agent]
+    G -- "Screen >= 20% ROI & Stage 1 Triage" --> ONB[Coverage Onboarding Pipeline: scripts/onboard_company.py]
+    ONB --> UNIV[Tracked Equity Universe]
     
     UNIV --> TH[Investment Thesis Agent]
     SEC[SEC EDGAR 10-K/10-Q Filings] --> TH
@@ -87,13 +88,17 @@ flowchart TD
 ```
 
 1. **Portfolio Ingestion Agent:** Parses uploaded screenshots or CSV files in `private/snapshots/` into clean textual holdings (symbols, share counts, cash, `SGOV`, and open options) while maintaining strict multi-portfolio isolation. Identifies covered call eligibility (100 or more shares).
-2. **Equity Research Agent:** Proactively searches the Internet and US public exchanges (NYSE, NASDAQ, AMEX) using tools to discover compelling companies, evaluates solvency/runway, and screens for high probability of achieving >= 20% annualized ROI to onboard into our universe.
+2. **Equity Research Agent:** Proactively searches the Internet and US public exchanges (NYSE, NASDAQ, AMEX) using tools to discover compelling companies, evaluates solvency/runway, and screens for high probability of achieving >= 20% annualized ROI to onboard single or batch equities into our universe on demand.
 3. **Investment Thesis Agent:** Synthesizes SEC EDGAR 10-K/10-Q filings, earnings releases, and industry trends to author institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target ranges), dual Revenue and P/S narratives, and assigns decisive `BUY`, `HOLD`, `SELL`, or `AVOID` ratings.
 4. **Memory Agent:** Manages institutional memory across runs in `context/`, audits catalyst milestones against quarterly results, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent liquidation alerts for broken theses.
 5. **Pricing Agent:** Predicts price trends to calculate technical limit order prices for common stocks, models Black-Scholes options pricing for Cash-Secured Puts (0.15-0.30 Delta) and Covered Calls (0.20-0.35 Delta), and verifies net-credit rolls.
 6. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`) and coordinates single-session Monday execution.
 
-## Weekly Operating Workflow
+## System Operating Workflows
+
+The system supports two core operating workflows:
+
+### Workflow 1: Weekly Deliberation & Single-Session Order Execution
 
 ```
 [Friday Close / Weekend]
@@ -106,6 +111,17 @@ flowchart TD
   5. Place generated Limit Orders at market open in a single session
 ```
 
+### Workflow 2: Coverage Universe Expansion & Equity Onboarding
+
+```
+[On-Demand (Anticipated a few times per year)]
+  1. Ask the Equity Research Agent to screen for >= 20% ROI compounders or specify new tickers (e.g. CRWD or NOW, ABNB, NET, MDB)
+  2. Execute deterministic onboarding: python scripts/onboard_company.py --symbols <TICKERS> --live
+  3. AI agents ingest Tier 1 SEC EDGAR statements, model 13Q revenue paths, and author qualitative dossiers
+  4. Master catalogs (universe.json) update and scripts/quality_control.py --audit asserts 0 errors
+  5. Newly added equities become immediately available for future weekly deliberation and dashboard tracking
+```
+
 ## Operational Cadences & Token Economy
 
 The system is engineered for maximum token parsimony, separating deterministic tasks (0 LLM tokens) from focused generative agent reasoning:
@@ -116,7 +132,8 @@ The system is engineered for maximum token parsimony, separating deterministic t
 | **Cadence 2: Weekly Deliberation** | Weekend Single-Session | `weekly_deliberation.md`, `generate_plan.py` | ~2K - 5K Tokens | Ingest snapshots, calculate Black-Scholes limit orders, write plain ASCII plan. |
 | **Cadence 3: Event Surveillance** | Event-Driven / Daily | `surveil_sentiment.py`, `track_short_sellers.py` | ~500 - 1.5K Tokens | Surveil press releases, Reddit chatter, and 20 top activist short sellers. |
 | **Cadence 4: Scheduled SEC Sync** | Scheduled / Monthly | `anticipate_sec_filings.py`, `fetch_sec.py` | ~500 Tokens / Stock | Track 10-Q/10-K statutory deadlines and ingest newly filed XBRL statements. |
-| **Cadence 5: Ground-Truth Rebuild** | Rare / On-Demand | `rare_full_source_regeneration.md` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
+| **Cadence 5: Universe Expansion** | On-Demand / Periodic | `onboard_company.py`, `screen_market.py` | ~10K - 15K Tokens / Stock | Screen 20%+ ROI compounders, ingest SEC XBRL data, author dossiers, update universe. |
+| **Cadence 6: Ground-Truth Rebuild** | Rare / On-Demand | `rare_full_source_regeneration.md` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
 
 Detailed operational playbooks and copy-paste CLI commands are documented in the [User Guide & Operational Cadences](http/guide.html).
 
@@ -131,7 +148,8 @@ python -m http.server -d http 8080
 
 Then open `http://localhost:8080` in your web browser:
 - **[User Guide & Operational Cadences](http/guide.html):** Complete operational playbooks, token economy matrix, and CLI tool instructions.
-- **[Public Equities Intelligence & SEC Provenance](http/stocks.html):** Explore all 150 tracked US equities, filter by sector/status, view multi-view dossiers and dense tables, and audit primary source SEC EDGAR 10-K/10-Q filings.
+- **[System Workflows & Execution Protocols](http/docs/workflow.html):** Deep dive into weekly trading plans and coverage universe expansion.
+- **[Public Equities Intelligence & SEC Provenance](http/stocks.html):** Explore tracked US equities, filter by sector/status, view multi-view dossiers, and audit SEC filings.
 - **[Documentation Hub](http/docs/index.html):** Read architectural guides, options math, data provenance hierarchy, and deliberation protocols.
 
 ## Getting Started
@@ -139,12 +157,15 @@ Then open `http://localhost:8080` in your web browser:
 1. **Explore the Public Intelligence & Documentation:**
    - Read the [User Guide & Operational Cadences](http/guide.html).
    - Browse [Public Equities Intelligence](http/stocks.html).
-   - Read the [Documentation Hub](http/docs/index.html) or [Data Sources Catalog](http/docs/sources.html).
+   - Read the [System Workflows Guide](http/docs/workflow.html) and [Documentation Hub](http/docs/index.html).
    - Review [Portfolio Constraints](http/docs/strategies.html) to understand non-negotiable boundaries.
    - Inspect [examples/](examples/README.md) to see synthetic inputs and output formats.
 
-2. **Set Up Your Private Portfolio Snapshot:**
+2. **Add Equities to Your Coverage Universe (As Desired):**
+   - Prompt the Equity Research Agent using the templates in [onboard_company.md](context/prompts/onboard_company.md) to screen for >= 20% ROI candidates or onboard specific tickers.
+
+3. **Set Up Your Private Portfolio Snapshot:**
    - Drop your weekend portfolio screenshot (or CSV export) into the `private/snapshots/` directory.
 
-3. **Prompt the Agent Team:**
+4. **Prompt the Agent Team for Weekly Deliberation:**
    - Copy the master prompt template from [weekly_deliberation.md](context/prompts/weekly_deliberation.md) into your AI session to generate your Monday Trading Plan in `private/plans/YYYY-MM-DD-plan.txt`.

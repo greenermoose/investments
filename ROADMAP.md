@@ -17,6 +17,7 @@ gantt
     Quality Control Audit & Repair CLI      :done, f6, 2026-08-16, 2026-08-18
     Analyst Coverage & Consensus Engine     :done, f7, 2026-08-17, 2026-08-19
     Stage 1 Triage & Token ROI Screener     :done, f8, 2026-08-17, 2026-08-19
+    Universe Expansion & Onboarding CLI     :done, f9, 2026-08-18, 2026-08-20
     section Phase 5: Weekly Execution
     Single-Session Deliberation & Plans     :active, p5_1, 2026-08-20, 7d
     Post-Trade Fill & Calibration Tracker   :p5_2, after p5_1, 5d
@@ -50,7 +51,7 @@ gantt
 
 **Goal:** Prevent agent amnesia, enable long-term thesis tracking, and construct institutional 3-year quantitative forecasts using structured markdown dossiers in `context/theses/` and schemas in `context/schemas/`.
 
-- [x] **2.1 Institutional Thesis Schema Design:** Define standard schema in [context/schemas/investment_thesis_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/investment_thesis_schema.json) and populated across 150 full dossiers in [context/theses/](file:///c:/Users/Fred/github/investments/context/theses/):
+- [x] **2.1 Institutional Thesis Schema Design:** Define standard schema in [context/schemas/investment_thesis_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/investment_thesis_schema.json) and populated across full dossiers in [context/theses/](file:///c:/Users/Fred/github/investments/context/theses/):
   - 13-Quarter Revenue Forecast Matrix ($Q_0$ to $Q_{12}$) with YoY growth and segment drivers.
   - 6-Horizon Shares Outstanding Projections (13, 26, 39, 52, 104, 156 weeks) with dilution/buyback modeling.
   - 4-Horizon Price Target Trading Ranges (13w, 52w, 104w, 156w) with Bear, Base, and Bull bounds.
@@ -68,7 +69,7 @@ gantt
   - Build pure Python mathematical calculation engine in [scripts/return_engine.py](file:///c:/Users/Fred/github/investments/scripts/return_engine.py) computing unannualized Total ROI (%) and Compound Annual Growth Rate (CAGR / Annualized ROI %) across multi-year holding horizons and options strategy combinations (`SELL_CSP`, `LIMIT_BUY`, `SELL_COVERED_CALLS`, `LIMIT_SELL`).
   - Define formal JSON specification in [context/schemas/return_engine_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/return_engine_schema.json).
 - [x] **2.5 Bottom-Up Valuation Forecasting Engine:**
-  - Build deterministic financial forecasting and valuation model in [scripts/valuation_model.py](file:///c:/Users/Fred/github/investments/scripts/valuation_model.py) generating 13-quarter revenue trajectories, 6-horizon shares outstanding, and 4-horizon price targets across 150 equities.
+  - Build deterministic financial forecasting and valuation model in [scripts/valuation_model.py](file:///c:/Users/Fred/github/investments/scripts/valuation_model.py) generating 13-quarter revenue trajectories, 6-horizon shares outstanding, and 4-horizon price targets.
 
 ## Phase 3: US Equity Universe, Data Sources & Provenance Engine
 
@@ -81,14 +82,14 @@ gantt
   - Publish interactive web guide at [http/docs/sources.html](file:///c:/Users/Fred/github/investments/http/docs/sources.html).
 - [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ & DJIA Benchmarks):**
   - Record agent skill in [.agents/skills/etf-holdings/SKILL.md](file:///c:/Users/Fred/github/investments/.agents/skills/etf-holdings/SKILL.md) and CLI extractor in [scripts/fetch_etf_holdings.py](file:///c:/Users/Fred/github/investments/scripts/fetch_etf_holdings.py) to parse Tier 1 Form NPORT-P filings (Invesco QQQ CIK `0001067839`, SPDR DIA CIK `0001041130`, SPDR SPY CIK `0000884394`).
-  - Expand universe catalog ([context/data/universe.json](file:///c:/Users/Fred/github/investments/context/data/universe.json), [http/data/universe.json](file:///c:/Users/Fred/github/investments/http/data/universe.json)) to 150 tracked equities spanning QQQ, DJIA, and high-growth innovators.
+  - Expand universe catalog ([context/data/universe.json](file:///c:/Users/Fred/github/investments/context/data/universe.json), [http/data/universe.json](file:///c:/Users/Fred/github/investments/http/data/universe.json)) across QQQ, DJIA, and high-growth innovators.
   - Verify live explorer rendering, sector filtering, and locked 2x2 grid metrics in [http/stocks.html](file:///c:/Users/Fred/github/investments/http/stocks.html).
 - [x] **3.3 SEC EDGAR XBRL Pipeline & CLI Utilities:**
   - [scripts/fetch_sec.py](file:///c:/Users/Fred/github/investments/scripts/fetch_sec.py) automated XBRL company facts extractor for US GAAP and IFRS filers.
   - [scripts/build_sec_data.js](file:///c:/Users/Fred/github/investments/scripts/build_sec_data.js) automated TTM revenue and shares aggregator.
   - [scripts/build_universe_json.py](file:///c:/Users/Fred/github/investments/scripts/build_universe_json.py) master catalog synthesis engine.
 - [x] **3.4 Sell-Side Analyst Registry & Precision Search Permalinks:**
-  - Seed and reprocess 1,399 analyst records across 144+ equities in [scripts/data/analyst_price_targets.json](file:///c:/Users/Fred/github/investments/scripts/data/analyst_price_targets.json) with historical prices at announcement dates and precision Google Search permalinks.
+  - Seed and reprocess analyst records across equities in [scripts/data/analyst_price_targets.json](file:///c:/Users/Fred/github/investments/scripts/data/analyst_price_targets.json) with historical prices at announcement dates and precision Google Search permalinks.
   - Standardize schema in [context/schemas/analyst_coverage_registry_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/analyst_coverage_registry_schema.json) and compile consolidated registry in [scripts/build_analyst_registry.py](file:///c:/Users/Fred/github/investments/scripts/build_analyst_registry.py).
 - [x] **3.5 Stage 1 Triage Screener & Token ROI Optimizer:**
   - Build deterministic triage engine in [scripts/triage_universe.py](file:///c:/Users/Fred/github/investments/scripts/triage_universe.py) separating uninvestable value traps (`AVOID`) from high-conviction opportunities (`QUALIFIED_CANDIDATE`).
@@ -97,6 +98,10 @@ gantt
   - Implement comprehensive off-balance sheet financial extractor in [scripts/build_off_balance_sheet_data.py](file:///c:/Users/Fred/github/investments/scripts/build_off_balance_sheet_data.py) compiling operating leases, purchase obligations, pension shortfalls, and credit facility terms conforming to [context/strategy/off_balance_sheet_liabilities_framework.md](file:///c:/Users/Fred/github/investments/context/strategy/off_balance_sheet_liabilities_framework.md).
 - [x] **3.7 Deterministic Quality Control & Data Integrity Engine:**
   - Build comprehensive audit and auto-repair CLI tool in [scripts/quality_control.py](file:///c:/Users/Fred/github/investments/scripts/quality_control.py) verifying SEC CIK concordance, stock prices, technical bounds, index memberships, financial accounting math, thesis schema compliance, and cross-store data parity with 0 errors / 0 warnings.
+- [x] **3.8 On-Demand Coverage Universe Expansion & Screening Pipeline:**
+  - Implement deterministic onboarding engine in [scripts/onboard_company.py](file:///c:/Users/Fred/github/investments/scripts/onboard_company.py) supporting single, multi-symbol batch, and screened candidate additions on demand.
+  - Connect Equity Research Agent to automated 20%+ ROI screening, Stage 1 Triage gating, SEC EDGAR XBRL ingestion, valuation modeling, thesis generation, and quality control auditing.
+  - Deploy comprehensive protocol in [context/prompts/onboard_company.md](file:///c:/Users/Fred/github/investments/context/prompts/onboard_company.md), [http/docs/workflow.html](file:///c:/Users/Fred/github/investments/http/docs/workflow.html), and [http/guide.html](file:///c:/Users/Fred/github/investments/http/guide.html) (Cadence 5).
 
 ## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
 
@@ -150,14 +155,15 @@ gantt
   - Generate automated 14-day and 30-day imminent filing calendar in [context/data/sec_filing_calendar.json](file:///c:/Users/Fred/github/investments/context/data/sec_filing_calendar.json).
 - [x] **6.4 Token Parsimony Architecture & Modular Prompt Suite:**
   - Codify token budget hierarchy in [context/strategy/token_parsimony_and_operational_cadences.md](file:///c:/Users/Fred/github/investments/context/strategy/token_parsimony_and_operational_cadences.md).
-  - Deploy modular prompt protocols for all 5 operational cadences:
+  - Deploy modular prompt protocols for all 6 operational cadences:
     - [context/prompts/frequent_price_volume_refresh.md](file:///c:/Users/Fred/github/investments/context/prompts/frequent_price_volume_refresh.md) (Cadence 1: Daily Price & Volume Refresh, 0 Tokens)
-    - [context/prompts/weekly_deliberation.md](file:///c:/Users/Fred/github/investments/context/prompts/weekly_deliberation.md) (Cadence 2: Weekly Single-Session Plan, ~2K-5K Tokens)
+    - [context/prompts/scheduled_sec_ingestion.md](file:///c:/Users/Fred/github/investments/context/prompts/scheduled_sec_ingestion.md) (Cadence 2: Scheduled SEC Ingestion, ~500 Tokens/Stock)
     - [context/prompts/sentiment_and_short_seller_surveillance.md](file:///c:/Users/Fred/github/investments/context/prompts/sentiment_and_short_seller_surveillance.md) (Cadence 3: Press & Short Report Alerts, ~1K Tokens)
-    - [context/prompts/scheduled_sec_ingestion.md](file:///c:/Users/Fred/github/investments/context/prompts/scheduled_sec_ingestion.md) (Cadence 4: Scheduled SEC Ingestion, ~500 Tokens/Stock)
-    - [context/prompts/rare_full_source_regeneration.md](file:///c:/Users/Fred/github/investments/context/prompts/rare_full_source_regeneration.md) (Cadence 5: Full Ground-Truth Rebuild)
+    - [context/prompts/weekly_deliberation.md](file:///c:/Users/Fred/github/investments/context/prompts/weekly_deliberation.md) (Cadence 4: Weekly Single-Session Plan, ~2K-5K Tokens)
+    - [context/prompts/onboard_company.md](file:///c:/Users/Fred/github/investments/context/prompts/onboard_company.md) (Cadence 5: Universe Expansion & Coverage Onboarding, ~10K-15K Tokens)
+    - [context/prompts/rare_full_source_regeneration.md](file:///c:/Users/Fred/github/investments/context/prompts/rare_full_source_regeneration.md) (Cadence 6: Full Ground-Truth Rebuild)
 - [x] **6.5 User Guide & Operational Cadences Web Interface:**
-  - Overhaul [http/guide.html](file:///c:/Users/Fred/github/investments/http/guide.html) into an interactive operational guide showcasing the 5 cadences, token economy table, copy-paste CLI commands, and short seller directory.
+  - Overhaul [http/guide.html](file:///c:/Users/Fred/github/investments/http/guide.html) into an interactive operational guide showcasing the 6 cadences, token economy table, copy-paste CLI commands, and short seller directory.
 
 ## Phase 7: Persistent Macro & Thematic Knowledge Store (`context/trends/`)
 
@@ -176,12 +182,12 @@ gantt
   - Connect thematic and macro facts directly to parameter inputs in [scripts/valuation_model.py](file:///c:/Users/Fred/github/investments/scripts/valuation_model.py) (e.g. dynamic terminal multiple ceilings, cost of capital hurdle rates, and revenue acceleration/deceleration coefficients).
   - Update deliberation prompts to require explicit citation of factual trend dossiers when adjusting growth or valuation multiples.
 
-## Phase 8: Deepening 150-Equity Universe & Holding Period Calibration
+## Phase 8: Deepening Universe & Holding Period Calibration
 
-**Goal:** Deepen qualitative moats, catalyst timelines, and product-level inflection points for all 150 universe constituents, quantitatively synchronizing target holding periods with predicted business inflection points (addressing [OQI-2026-08-001](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md) and [OQI-2026-08-004](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md)).
+**Goal:** Deepen qualitative moats, catalyst timelines, and product-level inflection points for all universe constituents, quantitatively synchronizing target holding periods with predicted business inflection points (addressing [OQI-2026-08-001](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md) and [OQI-2026-08-004](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md)).
 
-- [ ] **8.1 Deep Dossier Enrichment Across 150 Universe Equities:**
-  - Upgrade qualitative moats, revenue segment breakdowns, and product-level catalyst bridges for all 150 equities in [context/theses/](file:///c:/Users/Fred/github/investments/context/theses/).
+- [ ] **8.1 Deep Dossier Enrichment Across Universe Equities:**
+  - Upgrade qualitative moats, revenue segment breakdowns, and product-level catalyst bridges for all equities in [context/theses/](file:///c:/Users/Fred/github/investments/context/theses/).
   - Audit catalyst calendars against actual upcoming SEC earnings release dates and product announcements.
 - [ ] **8.2 Holding Period & Inflection Point Calibration Engine:**
   - Classify each thesis into distinct investment archetypes:
@@ -195,7 +201,7 @@ gantt
 
 ## Phase 9: Market-Wide Universe Scaling (~4,000–6,000 Equities)
 
-**Goal:** Expand scanning and screening capabilities across the full US equity market (NYSE, NASDAQ, AMEX common stocks) into a high-performance local SQLite / Parquet cache once the core 150-equity foundation is fully optimized.
+**Goal:** Expand scanning and screening capabilities across the full US equity market (NYSE, NASDAQ, AMEX common stocks) into a high-performance local SQLite / Parquet cache once the core foundation is fully optimized.
 
 - [ ] **9.1 Master US Market Directory Sync:**
   - Build automated ingestion engine pulling all active US exchange-listed common stocks (~4,000–6,000 tickers) into a local SQLite store (`scripts/data/universe.db`).

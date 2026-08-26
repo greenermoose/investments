@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Guide - Agentic Investment Advisor</title>
+  <title>User Guide &amp; Operational Cadences - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
@@ -27,23 +27,23 @@
       <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
       <a href="docs/options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
-      <a href="docs/workflow.html" class="docs-nav-link">Weekly Workflow &amp; Plans</a>
+      <a href="docs/workflow.html" class="docs-nav-link">System Workflows</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
       <h1>User Guide &amp; Operational Cadences</h1>
-      <p class="docs-lead">Step-by-step operational playbooks, token economy architecture, primary source anti-hallucination regeneration, and prompt protocols for running the multi-agent investment advisory system.</p>
+      <p class="docs-lead">Complete operational procedures, token economy rules, CLI commands, and playbooks for human traders and autonomous AI agents.</p>
     </div>
 
     <div class="callout important">
       <div class="callout-title">Core Operating Philosophy: Parsimonious Token Spend &amp; "Trust But Verify"</div>
-      <p>Running unconstrained whole-universe LLM queries on every market tick is cost-prohibitive and introduces hallucination drift. This system enforces a strict division of labor: <strong>deterministic scripts execute math, price syncs, and schedule projections at 0 LLM tokens</strong>, while <strong>generative AI agents are invoked selectively</strong> for qualitative synthesis, thesis authoring, and single-session weekly deliberation using verified cached data.</p>
+      <p>Running unconstrained whole-universe LLM queries on every market tick is cost-prohibitive and introduces hallucination drift. This system enforces a strict division of labor: <strong>deterministic scripts execute math, price syncs, onboarding, and schedule projections at 0 LLM tokens</strong>, while <strong>generative AI agents are invoked selectively</strong> for qualitative synthesis, thesis authoring, and single-session weekly deliberation using verified cached data.</p>
     </div>
 
-    <h2>The 5 Tiered Operational Cadences</h2>
-    <p>Operational workflows are partitioned into five distinct cadences ranging from intraday zero-token price updates to rare ground-truth reconciliations from primary SEC filings:</p>
+    <h2>The 6 Tiered Operational Cadences</h2>
+    <p>Operational workflows are partitioned into six distinct cadences ranging from intraday zero-token price updates to on-demand universe expansion and rare ground-truth reconciliations from primary SEC filings:</p>
 
     <div class="card-grid">
       <div class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
@@ -82,13 +82,22 @@
         <p style="font-size: 0.88rem; color: #94a3b8;">Tracking statutory 10-Q and 10-K filing deadlines, projecting company filing windows, and ingesting authoritative audited financial facts within 24 hours of release.</p>
       </div>
 
-      <div class="docs-card" style="border-color: rgba(239, 68, 68, 0.4); grid-column: 1 / -1;">
+      <div class="docs-card" style="border-color: rgba(168, 85, 247, 0.4);">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f87171; font-weight: 700;">Cadence 5: Rare / On-Demand</span>
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #c084fc; font-weight: 700;">Cadence 5: On-Demand</span>
+          <span style="font-size: 0.75rem; background: rgba(168, 85, 247, 0.15); color: #c084fc; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~10K - 15K / Stock</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">Coverage Universe Expansion &amp; Onboarding</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Screening US markets for compounders targeting &gt;= 20% annualized ROI, ingesting SEC XBRL filings, modeling multi-horizon valuations, and onboarding single or batch equities on demand.</p>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(239, 68, 68, 0.4);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f87171; font-weight: 700;">Cadence 6: Rare / Audit</span>
           <span style="font-size: 0.75rem; background: rgba(239, 68, 68, 0.15); color: #f87171; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Full Audit Mode</span>
         </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Rare Full Ground-Truth Source Regeneration &amp; Anti-Hallucination Audit</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">End-to-end rebuild and reconciliation directly from original Tier 1 primary sources (SEC EDGAR XBRL APIs, exchange price feeds, Form NPORT-P fund filings) to purge stale state and guarantee 100% mathematical and factual accuracy.</p>
+        <h4 style="color: #ffffff; margin-top: 0;">Full Ground-Truth Source Regeneration</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">End-to-end rebuild and reconciliation directly from original Tier 1 primary sources (SEC EDGAR XBRL APIs, exchange feeds, Form NPORT-P fund filings) to purge stale state and guarantee 100% accuracy.</p>
       </div>
     </div>
 
@@ -101,7 +110,7 @@
         <div class="step-content">
           <h4>Frequent Daily Price &amp; Volume Updates (0 LLM Tokens)</h4>
           <p>Because stock prices and trading volumes fluctuate every market session, run the live price fetcher daily before market open (9:00 AM ET) and after close (4:30 PM ET):</p>
-          <pre><code># Ingest live market prices and 30-day candles across the entire 150-equity universe
+          <pre><code># Ingest live market prices and 30-day candles across the entire universe
 python scripts/fetch_market_prices.py --live
 
 # Refresh a specific target watchlist during intraday market action
@@ -173,7 +182,6 @@ python scripts/anticipate_sec_filings.py --status IMMINENT_NEXT_14_DAYS
 python scripts/fetch_sec.py --symbols NVDA CRM WDAY --live
 
 # Re-aggregate TTM revenues, share counts, and master catalogs
-node scripts/build_sec_data.js
 python scripts/build_universe_json.py</code></pre>
         </div>
       </div>
@@ -181,6 +189,30 @@ python scripts/build_universe_json.py</code></pre>
       <!-- Playbook 5 -->
       <div class="step-card">
         <div class="step-badge">Cadence 5</div>
+        <div class="step-content">
+          <h4>On-Demand Coverage Universe Expansion &amp; Onboarding</h4>
+          <p>When you want to screen the market for new 20%+ ROI compounders or add any number of additional public equities to coverage on demand:</p>
+          <pre><code># 1. Onboard a single named equity (live SEC EDGAR XBRL statements &amp; market feeds)
+python scripts/onboard_company.py --symbol CRWD --live
+
+# 2. Onboard a batch of multiple equities simultaneously
+python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
+
+# 3. Screen market for >= 20% ROI candidates in a sector and auto-onboard top N
+python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
+
+# 4. Screen existing universe for >= 20% ROI candidates (analysis mode)
+python scripts/screen_market.py --min-roi 20.0 --exclude-avoid
+
+# 5. Run full quality control audit to assert 0 errors / 0 warnings across all universe files
+python scripts/quality_control.py --audit</code></pre>
+          <p>See <a href="docs/workflow.html">System Workflows</a> for prompt templates to trigger this workflow through your AI agent.</p>
+        </div>
+      </div>
+
+      <!-- Playbook 6 -->
+      <div class="step-card">
+        <div class="step-badge">Cadence 6</div>
         <div class="step-content">
           <h4>Rare Ground-Truth Regeneration &amp; Full Anti-Hallucination Audit</h4>
           <p>When you want to regenerate all repository intelligence directly from original primary sources to eliminate any chance of hallucination or parameter drift:</p>
@@ -202,7 +234,6 @@ python scripts/build_analyst_registry.py
 python scripts/build_off_balance_sheet_data.py
 
 # 6. Re-synthesize master catalogs, SEC calendar, sentiment, and short campaigns
-node scripts/build_sec_data.js
 python scripts/build_universe_json.py
 python scripts/anticipate_sec_filings.py
 python scripts/surveil_sentiment.py --seed
@@ -235,6 +266,20 @@ python scripts/quality_control.py --audit</code></pre>
             <td style="padding: 10px 16px;">Daily / Intraday</td>
             <td style="padding: 10px 16px;">Tier 2 (Exchange Feeds)</td>
             <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/market_prices.json</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">screen_market.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Weekly / Screening</td>
+            <td style="padding: 10px 16px;">Tier 1 Math &amp; Models</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI Standard Output / JSON</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">onboard_company.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens (Script)</td>
+            <td style="padding: 10px 16px;">On-Demand / Expansion</td>
+            <td style="padding: 10px 16px;">Tier 1 SEC + Tier 2 Feeds</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/ &amp; universe.json</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-subtle);">
             <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">anticipate_sec_filings.py</td>
@@ -277,6 +322,13 @@ python scripts/quality_control.py --audit</code></pre>
             <td style="padding: 10px 16px;">Weekly (Weekend)</td>
             <td style="padding: 10px 16px;">Multi-Agent Synthesis</td>
             <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">private/plans/YYYY-MM-DD-plan.txt</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #c084fc;">onboard_company.md</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~10K - 15K / Stock</td>
+            <td style="padding: 10px 16px;">On-Demand (Expansion)</td>
+            <td style="padding: 10px 16px;">Tier 1 SEC + Generative Thesis</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/&lt;TICKER&gt;.md</td>
           </tr>
           <tr>
             <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">thesis_authoring.md</td>
@@ -341,8 +393,8 @@ python scripts/quality_control.py --audit</code></pre>
 
     <div class="card-grid">
       <a href="docs/workflow.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
-        <h4 style="color: #00d4ff;">Weekly Workflow &amp; Plan Anatomy &rarr;</h4>
-        <p>Full breakdown of the weekly deliberation timeline, plain-text plan structure, sample multi-portfolio plan files, and execution mechanics.</p>
+        <h4 style="color: #00d4ff;">System Workflows &amp; Execution Protocols &rarr;</h4>
+        <p>Full breakdown of Weekly Trading Deliberation and On-Demand Coverage Universe Expansion with prompt templates and CLI commands.</p>
       </a>
 
       <a href="docs/options.html" class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">

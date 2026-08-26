@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Investment Strategy & Constraints - Agentic Investment Advisor</title>
+  <title>Investment Strategy &amp; Constraints - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
 </head>
@@ -15,7 +15,7 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide</a>
+      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -27,13 +27,14 @@
       <a href="strategies.html" class="docs-nav-link active">Investment Strategy</a>
       <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
+      <a href="workflow.html" class="docs-nav-link">System Workflows</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
       <h1>Investment Strategy &amp; Principles</h1>
-      <p class="docs-lead">Comprehensive framework for risk-managed alpha generation, multi-decade compounding, and disciplined options execution.</p>
+      <p class="docs-lead">Comprehensive framework for risk-managed alpha generation, multi-decade compounding, universe expansion, and disciplined options execution.</p>
     </div>
 
     <h2>1. Strategic Mandate &amp; 20-Year Compounding Objective</h2>
@@ -54,15 +55,21 @@
     <ul>
       <li><strong>Individual Public Equities:</strong> We actively buy and sell shares of individual public companies listed exclusively on US exchanges (NYSE, NASDAQ, AMEX).</li>
       <li><strong>Selective Concentration over Dilution:</strong> Broad market index funds hold hundreds or thousands of companies, including unprofitable, highly levered, or structurally declining businesses that dilute long-term portfolio returns. By rigorously filtering for elite business models, we seek concentrated exposure only to high-return assets.</li>
-      <li><strong>Forensic Quality Standards:</strong> We focus exclusively on businesses with durable economic moats, high Returns on Invested Capital (ROIC > 15%), strong Free Cash Flow (FCF) conversion, healthy balance sheets, and secular tailwinds.</li>
+      <li><strong>Forensic Quality Standards:</strong> We focus exclusively on businesses with durable economic moats, high Returns on Invested Capital (ROIC &gt; 15%), strong Free Cash Flow (FCF) conversion, healthy balance sheets, and secular tailwinds.</li>
       <li><strong>Tactical Asymmetry:</strong> Individual equity ownership enables us to selectively purchase shares at deep discounts (Margin of Safety) and harvest idiosyncratic volatility premiums and valuation-anchored options yields that are unattainable on broad index products.</li>
     </ul>
 
-    <h2>3. Empirical Grounding in Proven 20%+ Return Strategies</h2>
-    <p>Our mandate is grounded in extensive empirical research into institutional track records, market anomalies, and quantitative models that have proven capable of compounding capital at <strong>20% or greater annualized returns across multi-year cycles and varied market regimes</strong>. Generating consistent 20%+ CAGR over multi-decade horizons is rare in public markets, but the historical record demonstrates that disciplined, non-dogmatic strategies combining high-quality individual equities, asymmetric valuation margins, and systematic volatility harvesting can achieve this hurdle.</p>
+    <h2>3. Coverage Universe Expansion &amp; Quantitative Market Screening</h2>
+    <p>Rather than remaining restricted to a fixed list of companies, our Equity Research Agent continuously monitors and screens the broader US public markets to expand our coverage universe on demand:</p>
+    <ul>
+      <li><strong>Market-Wide Screening:</strong> We screen US exchange-listed companies against our quantitative hurdle: conservative 3-year revenue growth and valuation modeling capable of generating <strong>&ge; 20% annualized ROI</strong>.</li>
+      <li><strong>Stage 1 Lightweight Triage:</strong> Candidate equities must demonstrate viable gross margins (&ge; 15%), sufficient cash runway (&ge; 12 months or positive FCF), prudent leverage (Debt/Equity &le; 4.0x), and restrained dilution (&le; 4.0%/year).</li>
+      <li><strong>On-Demand Addition:</strong> The human trader can request to onboard single or batch equities into coverage at any time (anticipated a few times per year) via <code>scripts/onboard_company.py</code>.</li>
+      <li><strong>Equal Footing:</strong> All onboarded equities receive complete institutional thesis dossiers, SEC XBRL modeling, and live tracking on completely equal footing in public intelligence.</li>
+    </ul>
 
-    <h3>A. Verified Institutional Track Records of 20%+ Compounders</h3>
-    <p>The table below summarizes leading historical investors, investment partnerships, and systematic strategies that achieved verified annualized returns exceeding 20% over extensive multi-year periods, along with their core operational mechanics and primary literature citations:</p>
+    <h2>4. Empirical Grounding in Proven 20%+ Return Strategies</h2>
+    <p>Our mandate is grounded in extensive empirical research into institutional track records, market anomalies, and quantitative models that have proven capable of compounding capital at <strong>20% or greater annualized returns across multi-year cycles and varied market regimes</strong>:</p>
 
     <table>
       <thead>
@@ -143,33 +150,8 @@
       </tbody>
     </table>
 
-    <h3>B. Core Methodological Pillars of 20%+ Compounding</h3>
-    <p>Synthesizing the empirical evidence from these top-performing investment programs reveals five core structural principles that form the foundation of our advisory system:</p>
-
-    <div class="card-grid">
-      <div class="docs-card">
-        <h4>1. Concentrated High-ROIC Moats</h4>
-        <p>A business cannot compound shareholder capital faster than its underlying Return on Invested Capital over the long run (<span class="math-inline"><var>g</var> = <span class="math-txt">Reinvestment Rate</span> &times; <span class="math-txt">ROIC</span></span>). By concentrating capital into elite franchises with ROIC &gt; 15&ndash;20%, durable competitive barriers, and high Free Cash Flow conversion, we ensure the underlying earnings power compounds at institutional rates.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>2. Margin of Safety Entry Discipline</h4>
-        <p>High quality alone is insufficient if purchased at excessive multiples. Grounded in Graham, Buffett, and Greenblatt, our model mandates entering positions at a 15% to 25% discount to conservative intrinsic value, ensuring both downside protection and multiple-expansion alpha.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>3. Volatility Risk Premium (VRP) Harvest</h4>
-        <p>Market participants routinely overpay for downside insurance. Systematically selling cash-secured puts and covered calls exploits this structural variance risk premium, converting option extrinsic time decay (Theta) into 12% to 20%+ annualized returns on cash collateral while lowering equity purchase basis.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>4. Active Selection vs. Index Dilution</h4>
-        <p>Broad index funds hold hundreds of low-return, debt-heavy, and secularly declining firms. Concentrating in 1 to ~25 high-conviction US equities eliminates index dilution and focuses 100% of risk budget on top-decile business models.</p>
-      </div>
-    </div>
-
-    <h2>4. Entry &amp; Exit Pricing: Fundamental + Technical Synthesis</h2>
-    <p>Determining when to enter a position, what price to pay, and when to exit requires synthesizing both fundamental valuation models and technical price action indicators. Neither discipline is used in isolation.</p>
+    <h2>5. Entry &amp; Exit Pricing: Fundamental + Technical Synthesis</h2>
+    <p>Determining when to enter a position, what price to pay, and when to exit requires synthesizing both fundamental valuation models and technical price action indicators:</p>
 
     <div class="card-grid">
       <div class="docs-card">
@@ -195,7 +177,7 @@
       </div>
     </div>
 
-    <h2>5. Derivatives Strategy: Yield Enhancement &amp; Downside Mitigation</h2>
+    <h2>6. Derivatives Strategy: Yield Enhancement &amp; Downside Mitigation</h2>
     <p>To accelerate our return on investment toward our 20%+ target while simultaneously mitigating downside risk, we systematically sell options across two primary structures:</p>
 
     <h3>A. Cash-Secured Puts (CSPs) - Accumulation &amp; Yield Generation</h3>
@@ -222,7 +204,7 @@
       </li>
     </ul>
 
-    <h2>6. Non-Negotiable Risk Prohibitions &amp; Boundary Rules</h2>
+    <h2>7. Non-Negotiable Risk Prohibitions &amp; Boundary Rules</h2>
     <p>Risk management is paramount. To eliminate catastrophic ruin risk and preserve capital for 20-year compounding, the following rules are strictly enforced across all portfolios:</p>
 
     <div class="callout warning">
@@ -235,7 +217,7 @@
       </ul>
     </div>
 
-    <h2>7. Summary of Portfolio Constraints</h2>
+    <h2>8. Summary of Portfolio Constraints</h2>
 
     <table>
       <thead>
@@ -289,7 +271,7 @@
       </tbody>
     </table>
 
-    <h2>8. Execution Cadence: Single-Session "Set-and-Forget"</h2>
+    <h2>9. Execution Cadence: Single-Session "Set-and-Forget"</h2>
     <p>Our operational model is built specifically for individuals with demanding full-time responsibilities:</p>
     <ul>
       <li><strong>Single-Session Execution:</strong> All order recommendations for the week are formulated over the weekend and entered in one sitting at Monday 9:30 AM ET market open (or as soon as the trader logs in).</li>
@@ -300,4 +282,3 @@
   </main>
 </body>
 </html>
-

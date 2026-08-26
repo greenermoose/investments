@@ -6,22 +6,38 @@
   <title>Data Sources, Provenance &amp; Verification - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
-  <style>
+    <style>
     .source-table-wrapper {
-      overflow-x: auto;
       margin: 24px 0;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--border-subtle);
       background: var(--bg-color-surface);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     }
-    .source-table-wrapper table {
+    .source-directory-table {
+      width: 100%;
+      border-collapse: collapse;
       margin: 0;
-      min-width: 900px;
+      font-size: 0.9rem;
+      table-layout: fixed;
     }
-    .source-table-wrapper th {
-      position: sticky;
-      top: 0;
-      z-index: 2;
+    .th-source {
+      width: 48%;
+    }
+    .th-access {
+      width: 52%;
+    }
+    .source-directory-table thead th {
+      background: var(--bg-color-card);
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      padding: 14px 20px;
+      border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+      text-align: left;
     }
     .tier-badge {
       display: inline-block;
@@ -37,14 +53,125 @@
     .tier-3 { background: rgba(99, 102, 241, 0.18); color: #a5b4fc; border: 1px solid rgba(99, 102, 241, 0.3); }
     .tier-4 { background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
     .tier-5 { background: rgba(244, 63, 94, 0.18); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+    
+    .source-entry {
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background 0.15s ease;
+    }
+    .source-entry:last-child {
+      border-bottom: none;
+    }
+    .source-entry:nth-child(even) tr td {
+      background: rgba(255, 255, 255, 0.015);
+    }
+    .source-entry:hover tr td {
+      background: rgba(0, 212, 255, 0.035);
+    }
+    .source-row-main td {
+      padding: 16px 20px 6px 20px;
+      border-bottom: none;
+      vertical-align: top;
+    }
+    .source-row-details td {
+      padding: 6px 20px 16px 20px;
+      border-bottom: none;
+      vertical-align: top;
+    }
+    .source-title-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .source-name {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+    }
+    .source-url-bar {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .url-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(0, 212, 255, 0.12);
+      color: var(--accent-color);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
     .source-link {
       color: var(--accent-color);
       text-decoration: none;
-      font-family: monospace;
-      font-size: 0.85rem;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 0.84rem;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+      transition: color 0.15s ease, text-shadow 0.15s ease;
     }
     .source-link:hover {
       text-decoration: underline;
+      color: #38bdf8;
+      text-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+    }
+    .source-link-text {
+      color: var(--text-secondary);
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 0.84rem;
+    }
+    .access-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      font-weight: 500;
+    }
+    .field-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .field-value {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+      .source-directory-table {
+        table-layout: auto;
+      }
+      .source-directory-table thead {
+        display: none;
+      }
+      .source-row-main, .source-row-details {
+        display: block;
+      }
+      .source-row-main td, .source-row-details td {
+        display: block;
+        width: 100% !important;
+        padding: 8px 16px;
+      }
+      .source-row-main td {
+        padding-top: 14px;
+      }
+      .source-row-details td:last-child {
+        padding-bottom: 14px;
+      }
     }
   </style>
 </head>
@@ -131,218 +258,712 @@
     <h2>Complete Due Diligence Master Data Sources Directory</h2>
     <p>The table below provides the full, unabridged master catalog of every specific data source, public URL, tier classification, access protocol, and reliability assessment consulted by the investment system:</p>
 
-    <div class="source-table-wrapper">
-      <table>
+        <div class="source-table-wrapper">
+      <table class="source-directory-table">
         <thead>
           <tr>
-            <th>Source Name</th>
-            <th>Primary URL</th>
-            <th>Tier</th>
-            <th>Access Method</th>
-            <th>Trustworthiness Assessment</th>
-            <th>Primary Purpose &amp; Extracted Data</th>
+            <th class="th-source">Data Source, Tier &amp; Primary Endpoint</th>
+            <th class="th-access">Access Protocol &amp; Extraction Details</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td><strong>SEC EDGAR Company Facts API</strong></td>
-            <td><a href="https://data.sec.gov/api/xbrl/companyfacts/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/api/xbrl/companyfacts/</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Programmatic REST JSON</td>
-            <td>Absolute Ground Truth (10/10). Official regulatory filings under US Securities Law.</td>
-            <td>Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted shares, debt.</td>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">SEC EDGAR Company Facts API</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://data.sec.gov/api/xbrl/companyfacts/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/api/xbrl/companyfacts/</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Programmatic REST JSON</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>SEC EDGAR Submissions API</strong></td>
-            <td><a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Programmatic REST JSON</td>
-            <td>Absolute Ground Truth (10/10). Official filing registry &amp; accession directory.</td>
-            <td>Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy statements.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official regulatory filings under US Securities Law.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted shares, debt.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>SEC EDGAR Form NPORT-P / XML</strong></td>
-            <td><a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Programmatic REST XML</td>
-            <td>Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US funds.</td>
-            <td>Authoritative constituent holdings, share counts, fair values, and weightings for QQQ, SPY, DIA, SMH.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">SEC EDGAR Submissions API</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Programmatic REST JSON</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>SEC Master Ticker Directory</strong></td>
-            <td><a href="https://www.sec.gov/files/company_tickers_exchange.json" target="_blank" rel="noopener noreferrer" class="source-link">sec.gov/.../company_tickers_exchange.json</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Programmatic REST JSON</td>
-            <td>Absolute Ground Truth (10/10). Real-time directory of all SEC registered filers.</td>
-            <td>CIK-to-ticker mapping, legal company names, and primary exchange listing designations.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official filing registry &amp; accession directory.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy statements.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>NASDAQ Trader Symbol Directory</strong></td>
-            <td><a href="ftp://ftp.nasdaqtrader.com/SymbolDirectory/" target="_blank" rel="noopener noreferrer" class="source-link">ftp.nasdaqtrader.com/SymbolDirectory/</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Public Anonymous FTP</td>
-            <td>Absolute Ground Truth (10/10). Direct exchange market operations listings.</td>
-            <td>Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue flags.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">SEC EDGAR Form NPORT-P / XML</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Programmatic REST XML</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>CBOE Global Markets Data</strong></td>
-            <td><a href="https://www.cboe.com/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Official Feeds / Web</td>
-            <td>Absolute Ground Truth (10/10). Premier global options exchange operator.</td>
-            <td>Options chains, strike listings, expiration cycles, open interest, and historical VIX/VXN.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US funds.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Authoritative constituent holdings, share counts, fair values, and weightings for QQQ, SPY, DIA, SMH.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Consolidated Tape Association (CTA / CQS Plan)</strong></td>
-            <td><a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Institutional SIP / SIAC</td>
-            <td>Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NYSE &amp; regional listings.</td>
-            <td>Consolidated quotes (CQS/NBBO), trades (CTS), official closing prices, auction prints, and total tape volume for Tape A (NYSE) and Tape B (NYSE American, Arca, Cboe).</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">SEC Master Ticker Directory</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.sec.gov/files/company_tickers_exchange.json" target="_blank" rel="noopener noreferrer" class="source-link">sec.gov/files/company_tickers_exchange.json</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Programmatic REST JSON</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>UTP Plan (OTC/UTP Plan)</strong></td>
-            <td><a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a></td>
-            <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Institutional SIP / Nasdaq SIP</td>
-            <td>Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NASDAQ-listed equities.</td>
-            <td>Consolidated quotes (UQDF/NBBO), trades (UTDF), official closing crosses, IPO opening prints, and consolidated volume for Tape C (NASDAQ).</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Real-time directory of all SEC registered filers.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">CIK-to-ticker mapping, legal company names, and primary exchange listing designations.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Nasdaq Data Link &amp; Market Data (Nasdaq Basic / NLS)</strong></td>
-            <td><a href="https://data.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">data.nasdaq.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Developer API / REST / Web</td>
-            <td>High Reliability (9.5/10). Proprietary Nasdaq execution venue market data.</td>
-            <td>Nasdaq Last Sale (NLS) trade prints and Nasdaq Basic top-of-book quotes for Nasdaq venues &amp; FINRA/Nasdaq TRF. Note: Excludes non-Nasdaq exchange executions and is distinct from consolidated SIP feeds.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">NASDAQ Trader Symbol Directory</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="ftp://ftp.nasdaqtrader.com/SymbolDirectory/" target="_blank" rel="noopener noreferrer" class="source-link">ftp.nasdaqtrader.com/SymbolDirectory/</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Public Anonymous FTP</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>FRED (Federal Reserve Economic Data)</strong></td>
-            <td><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="source-link">fred.stlouisfed.org</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Official REST API / Web</td>
-            <td>Highly Authoritative (9.5/10). St. Louis Fed official economic statistics.</td>
-            <td>3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Rate, CPI inflation, GDP growth.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Direct exchange market operations listings.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue flags.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>US Department of the Treasury</strong></td>
-            <td><a href="https://home.treasury.gov/" target="_blank" rel="noopener noreferrer" class="source-link">home.treasury.gov</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Official Web / CSV Feeds</td>
-            <td>Highly Authoritative (9.5/10). Sovereign fiscal authority of the United States.</td>
-            <td>Daily Treasury Par Yield Curve Rates, benchmark discount rates, sovereign debt yields.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">CBOE Global Markets Data</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.cboe.com/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Official Feeds / Web</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Financial Modeling Prep (FMP)</strong></td>
-            <td><a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer" class="source-link">financialmodelingprep.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Developer REST API</td>
-            <td>High Reliability (9.0/10). Developer API with verified XBRL statement ingestion.</td>
-            <td>Automated stock screening, price target history, financial ratios, DCF models, earnings dates.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Premier global options exchange operator.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Options chains, strike listings, expiration cycles, open interest, and historical VIX/VXN.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Polygon.io</strong></td>
-            <td><a href="https://polygon.io/" target="_blank" rel="noopener noreferrer" class="source-link">polygon.io</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>REST API &amp; WebSockets</td>
-            <td>High Reliability (9.0/10). Direct SIP-connected institutional market data feed.</td>
-            <td>Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference tickers.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Consolidated Tape Association (CTA / CQS Plan)</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Institutional SIP / SIAC</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Tiingo Financial Data</strong></td>
-            <td><a href="https://www.tiingo.com/" target="_blank" rel="noopener noreferrer" class="source-link">tiingo.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>REST API &amp; Bulk Feeds</td>
-            <td>High Reliability (9.0/10). Institutional data clean-room with split adjustments.</td>
-            <td>End-of-day prices, corporate actions, adjusted price series, curated financial news.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NYSE &amp; regional listings.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Consolidated quotes (CQS/NBBO), trades (CTS), official closing prices, auction prints, and total tape volume for Tape A (NYSE) and Tape B (NYSE American, Arca, Cboe).</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Financial Newswires &amp; Press Releases (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance)</strong></td>
-            <td><a href="https://thefly.com/" target="_blank" rel="noopener noreferrer" class="source-link">thefly.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Newswires / Web Articles</td>
-            <td>High Reliability (9.0/10). Real-time press releases broadcasting sell-side research notes.</td>
-            <td>Analyst names, research firms, announcement dates, accurate historical market prices, target prices, rating actions, press release URLs.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">UTP Plan (OTC/UTP Plan)</span>
+                <span class="tier-badge tier-1">Tier 1</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Institutional SIP / Nasdaq SIP</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>TipRanks</strong></td>
-            <td><a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Web Interface / Data Feed</td>
-            <td>High Reliability (8.5/10). Specializes in tracking and ranking sell-side analysts.</td>
-            <td>Analyst accuracy rankings, historical win rates, average returns per analyst, price targets.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NASDAQ-listed equities.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Consolidated quotes (UQDF/NBBO), trades (UTDF), official closing crosses, IPO opening prints, and consolidated volume for Tape C (NASDAQ).</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Morningstar</strong></td>
-            <td><a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Research Reports / Web</td>
-            <td>High Reliability (8.8/10). Premier institutional fundamental equity research.</td>
-            <td>Economic Moat ratings (Wide/Narrow/None), DCF Fair Value estimates, Stewardship grades.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Nasdaq Data Link &amp; Market Data (Nasdaq Basic / NLS)</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://data.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">data.nasdaq.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Developer API / REST / Web</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Corporate Investor Relations (IR) Portals</strong></td>
-            <td><a href="https://investor.apple.com/" target="_blank" rel="noopener noreferrer" class="source-link">Configured Per-Equity (e.g. investor.apple.com)</a></td>
-            <td><span class="tier-badge tier-1">Tier 1/2</span></td>
-            <td>Web / HTTP / Headless Browser</td>
-            <td>High Reliability (9.2/10). Official primary issuer presentations &amp; management disclosures.</td>
-            <td>Earnings slide decks, webcasts, Q&amp;A transcripts, investor day roadmaps, non-GAAP KPIs, event calendars.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.5/10). Proprietary Nasdaq execution venue market data.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Nasdaq Last Sale (NLS) trade prints and Nasdaq Basic top-of-book quotes for Nasdaq venues &amp; FINRA/Nasdaq TRF. Note: Excludes non-Nasdaq exchange executions and is distinct from consolidated SIP feeds.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Yahoo Finance</strong></td>
-            <td><a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Web / yfinance Engine</td>
-            <td>Moderate to High (8.0/10). Rapid public market aggregator.</td>
-            <td>Daily OHLCV candlestick series, 20-day/50-day moving averages, 52-week ranges, trading volume.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">FRED (Federal Reserve Economic Data)</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="source-link">fred.stlouisfed.org</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Official REST API / Web</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>StockAnalysis.com</strong></td>
-            <td><a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2</span></td>
-            <td>Web Interface</td>
-            <td>Moderate to High (8.0/10). Clean secondary presentation of financial metrics.</td>
-            <td>Rapid visual overview of financial trends, balance sheet summaries, dividend histories.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Highly Authoritative (9.5/10). St. Louis Fed official economic statistics.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Rate, CPI inflation, GDP growth.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>FactSet &amp; LSEG / Refinitiv I/B/E/S</strong></td>
-            <td><a href="https://www.factset.com/" target="_blank" rel="noopener noreferrer" class="source-link">factset.com</a></td>
-            <td><span class="tier-badge tier-2">Tier 2/3</span></td>
-            <td>Institutional Terminals</td>
-            <td>Highly Authoritative (9.5/10). Gold standard for institutional consensus.</td>
-            <td>Institutional earnings estimates, revenue consensus forecasts, target price dispersion.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">US Department of the Treasury</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://home.treasury.gov/" target="_blank" rel="noopener noreferrer" class="source-link">home.treasury.gov</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Official Web / CSV Feeds</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>CBOE Benchmark Indices (PUT/BXM)</strong></td>
-            <td><a href="https://www.cboe.com/indices/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com/indices/</a></td>
-            <td><span class="tier-badge tier-3">Tier 3</span></td>
-            <td>Academic / Empirical Feeds</td>
-            <td>Highly Authoritative (9.0/10). Multi-decade empirical strategy benchmarks.</td>
-            <td>Risk/return data on option volatility risk premium (VRP) and systematic option harvesting.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Highly Authoritative (9.5/10). Sovereign fiscal authority of the United States.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Daily Treasury Par Yield Curve Rates, benchmark discount rates, sovereign debt yields.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>AQR Capital &amp; Fama-French Factor Data</strong></td>
-            <td><a href="https://www.aqr.com/Insights/Research" target="_blank" rel="noopener noreferrer" class="source-link">aqr.com/Insights/Research</a></td>
-            <td><span class="tier-badge tier-3">Tier 3</span></td>
-            <td>Peer-Reviewed Research</td>
-            <td>Highly Authoritative (9.0/10). Foundational quantitative asset pricing literature.</td>
-            <td>Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums across cycles.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Financial Modeling Prep (FMP)</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer" class="source-link">financialmodelingprep.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Developer REST API</span>
+            </td>
           </tr>
-          <tr>
-            <td><strong>AI Agent Parametric Knowledge</strong></td>
-            <td>Internal Neural Weights</td>
-            <td><span class="tier-badge tier-4">Tier 4</span></td>
-            <td>Autoregressive Next-Token Sampling</td>
-            <td>Conceptual Grounding (7.0/10). Superb qualitative synthesis; unverified digits.</td>
-            <td>Qualitative thesis formulation, moat assessment, competitive dynamic mapping, financial logic.</td>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.0/10). Developer API with verified XBRL statement ingestion.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Automated stock screening, price target history, financial ratios, DCF models, earnings dates.</div>
+            </td>
           </tr>
-          <tr>
-            <td><strong>Private User Brokerage Snapshots</strong></td>
-            <td>Local <code>private/snapshots/</code></td>
-            <td><span class="tier-badge tier-5">Tier 5</span></td>
-            <td>Secure Local Ingestion</td>
-            <td>Absolute Ground Truth for Account State (10/10). Strictly isolated.</td>
-            <td>Settled cash, SGOV proxy balance, exact share quantities, cost bases, active options.</td>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Polygon.io</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://polygon.io/" target="_blank" rel="noopener noreferrer" class="source-link">polygon.io</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">REST API &amp; WebSockets</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.0/10). Direct SIP-connected institutional market data feed.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference tickers.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Tiingo Financial Data</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.tiingo.com/" target="_blank" rel="noopener noreferrer" class="source-link">tiingo.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">REST API &amp; Bulk Feeds</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.0/10). Institutional data clean-room with split adjustments.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">End-of-day prices, corporate actions, adjusted price series, curated financial news.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Financial Newswires &amp; Press Releases (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance)</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://thefly.com/" target="_blank" rel="noopener noreferrer" class="source-link">thefly.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Newswires / Web Articles</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.0/10). Real-time press releases broadcasting sell-side research notes.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Analyst names, research firms, announcement dates, accurate historical market prices, target prices, rating actions, press release URLs.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">TipRanks</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Web Interface / Data Feed</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (8.5/10). Specializes in tracking and ranking sell-side analysts.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Analyst accuracy rankings, historical win rates, average returns per analyst, price targets.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Morningstar</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Research Reports / Web</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (8.8/10). Premier institutional fundamental equity research.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Economic Moat ratings (Wide/Narrow/None), DCF Fair Value estimates, Stewardship grades.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Corporate Investor Relations (IR) Portals</span>
+                <span class="tier-badge tier-1">Tier 1/2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://investor.apple.com/" target="_blank" rel="noopener noreferrer" class="source-link">Configured Per-Equity (e.g. investor.apple.com)</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Web / HTTP / Headless Browser</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">High Reliability (9.2/10). Official primary issuer presentations &amp; management disclosures.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Earnings slide decks, webcasts, Q&amp;A transcripts, investor day roadmaps, non-GAAP KPIs, event calendars.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Yahoo Finance</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Web / yfinance Engine</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Moderate to High (8.0/10). Rapid public market aggregator.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Daily OHLCV candlestick series, 20-day/50-day moving averages, 52-week ranges, trading volume.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">StockAnalysis.com</span>
+                <span class="tier-badge tier-2">Tier 2</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Web Interface</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Moderate to High (8.0/10). Clean secondary presentation of financial metrics.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Rapid visual overview of financial trends, balance sheet summaries, dividend histories.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">FactSet &amp; LSEG / Refinitiv I/B/E/S</span>
+                <span class="tier-badge tier-2">Tier 2/3</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.factset.com/" target="_blank" rel="noopener noreferrer" class="source-link">factset.com</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Institutional Terminals</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Highly Authoritative (9.5/10). Gold standard for institutional consensus.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Institutional earnings estimates, revenue consensus forecasts, target price dispersion.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">CBOE Benchmark Indices (PUT/BXM)</span>
+                <span class="tier-badge tier-3">Tier 3</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.cboe.com/indices/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com/indices/</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Academic / Empirical Feeds</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Highly Authoritative (9.0/10). Multi-decade empirical strategy benchmarks.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Risk/return data on option volatility risk premium (VRP) and systematic option harvesting.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">AQR Capital &amp; Fama-French Factor Data</span>
+                <span class="tier-badge tier-3">Tier 3</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <a href="https://www.aqr.com/Insights/Research" target="_blank" rel="noopener noreferrer" class="source-link">aqr.com/Insights/Research</a>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Peer-Reviewed Research</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Highly Authoritative (9.0/10). Foundational quantitative asset pricing literature.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums across cycles.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">AI Agent Parametric Knowledge</span>
+                <span class="tier-badge tier-4">Tier 4</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <span class="source-link-text">Internal Neural Weights</span>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Autoregressive Next-Token Sampling</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Conceptual Grounding (7.0/10). Superb qualitative synthesis; unverified digits.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Qualitative thesis formulation, moat assessment, competitive dynamic mapping, financial logic.</div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="source-entry">
+          <tr class="source-row-main">
+            <td class="col-source-header">
+              <div class="source-title-bar">
+                <span class="source-name">Private User Brokerage Snapshots</span>
+                <span class="tier-badge tier-5">Tier 5</span>
+              </div>
+              <div class="source-url-bar">
+                <span class="url-badge">URL</span>
+                <span class="source-link-text">Local <code>private/snapshots/</code></span>
+              </div>
+            </td>
+            <td class="col-access-header">
+              <div class="field-label">Access Method</div>
+              <span class="access-tag">Secure Local Ingestion</span>
+            </td>
+          </tr>
+          <tr class="source-row-details">
+            <td class="col-trust-details">
+              <div class="field-label">Trustworthiness Assessment</div>
+              <div class="field-value">Absolute Ground Truth for Account State (10/10). Strictly isolated.</div>
+            </td>
+            <td class="col-purpose-details">
+              <div class="field-label">Primary Purpose &amp; Extracted Data</div>
+              <div class="field-value">Settled cash, SGOV proxy balance, exact share quantities, cost bases, active options.</div>
+            </td>
           </tr>
         </tbody>
       </table>

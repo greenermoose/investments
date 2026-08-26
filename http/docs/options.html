@@ -41,7 +41,7 @@
     <div class="card-grid">
       <div class="docs-card">
         <h4>Cash-Secured Puts (CSPs)</h4>
-        <p><strong>Delta:</strong> 0.15 to 0.30 (80%-85% probability of profit).</p>
+        <p><strong>Delta (<var>&Delta;</var>):</strong> 0.15 to 0.30 (80%&ndash;85% probability of profit).</p>
         <p><strong>DTE:</strong> 30 to 45 Days to Expiration.</p>
         <p><strong>Hurdle Rate:</strong> Minimum 12% to 18% Annualized Return on Collateral (AROC).</p>
         <p><strong>Collateral:</strong> 100% reserved in SGOV or cash.</p>
@@ -49,26 +49,104 @@
 
       <div class="docs-card">
         <h4>Covered Calls (CCs)</h4>
-        <p><strong>Eligibility:</strong> Only on equity lots with >= 100 shares.</p>
+        <p><strong>Eligibility:</strong> Only on equity lots with &ge; 100 shares.</p>
         <p><strong>Strike:</strong> Out-of-the-money (OTM) above cost basis, aligned with fair value target.</p>
-        <p><strong>Delta:</strong> 0.20 to 0.35.</p>
+        <p><strong>Delta (<var>&Delta;</var>):</strong> 0.20 to 0.35.</p>
         <p><strong>DTE:</strong> 21 to 45 Days to Expiration.</p>
       </div>
     </div>
 
     <h2>Annualized Return on Collateral (AROC) Formula</h2>
-    <pre><code>AROC = (Option Premium / Strike Price) * (365 / DTE)</code></pre>
+    <div class="math-block">
+      <div class="math-row">
+        <span class="math-txt">AROC</span>
+        <span class="math-op">=</span>
+        <span class="math-paren">(</span>
+        <span class="math-fraction">
+          <span class="num">Option Premium</span>
+          <span class="den">Strike Price</span>
+        </span>
+        <span class="math-paren">)</span>
+        <span class="math-op">&times;</span>
+        <span class="math-paren">(</span>
+        <span class="math-fraction">
+          <span class="num">365</span>
+          <span class="den">DTE</span>
+        </span>
+        <span class="math-paren">)</span>
+      </div>
+    </div>
     <p>For example, selling a $100 strike put with 35 DTE for $1.80 generates:</p>
-    <pre><code>AROC = ($1.80 / $100) * (365 / 35) = 1.8% * 10.43 = 18.77% Annualized Return</code></pre>
+    <div class="math-block">
+      <div class="math-row">
+        <span class="math-txt">AROC</span>
+        <span class="math-op">=</span>
+        <span class="math-paren">(</span>
+        <span class="math-fraction">
+          <span class="num">$1.80</span>
+          <span class="den">$100.00</span>
+        </span>
+        <span class="math-paren">)</span>
+        <span class="math-op">&times;</span>
+        <span class="math-paren">(</span>
+        <span class="math-fraction">
+          <span class="num">365</span>
+          <span class="den">35</span>
+        </span>
+        <span class="math-paren">)</span>
+        <span class="math-op">=</span>
+        1.80%
+        <span class="math-op">&times;</span>
+        10.428
+        <span class="math-op">=</span>
+        <strong style="color: #10b981;">18.77% Annualized Return</strong>
+      </div>
+    </div>
 
     <h2>Weekend Black-Scholes Modeling</h2>
-    <p>Because options markets are closed over the weekend, the Pricing Agent calculates theoretical fair values using closed prices and volatility surface data:</p>
-    
+    <p>Because options markets are closed over the weekend, the Pricing Agent calculates theoretical fair values using closed prices and volatility surface data via the Black-Scholes analytical model:</p>
+
+    <div class="math-block">
+      <div class="math-row">
+        <span class="math-txt">Call Option Price</span>
+        <span class="math-op">:</span>
+        <var>C</var>(<var>S</var>, <var>t</var>)
+        <span class="math-op">=</span>
+        <var>S</var> &middot; <var>N</var>(<var>d</var><sub>1</sub>)
+        <span class="math-op">&minus;</span>
+        <var>K</var><var>e</var><sup>&minus;<var>r</var>(<var>T</var>&minus;<var>t</var>)</sup> &middot; <var>N</var>(<var>d</var><sub>2</sub>)
+      </div>
+      <div class="math-row">
+        <span class="math-txt">Put Option Price</span>
+        <span class="math-op">:</span>
+        <var>P</var>(<var>S</var>, <var>t</var>)
+        <span class="math-op">=</span>
+        <var>K</var><var>e</var><sup>&minus;<var>r</var>(<var>T</var>&minus;<var>t</var>)</sup> &middot; <var>N</var>(&minus;<var>d</var><sub>2</sub>)
+        <span class="math-op">&minus;</span>
+        <var>S</var> &middot; <var>N</var>(&minus;<var>d</var><sub>1</sub>)
+      </div>
+      <div class="math-row" style="font-size: 0.92em; color: var(--text-secondary); margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border-subtle);">
+        <span class="math-txt">where</span>
+        <var>d</var><sub>1</sub>
+        <span class="math-op">=</span>
+        <span class="math-fraction">
+          <span class="num">ln(<var>S</var> / <var>K</var>) + (<var>r</var> + <var>&sigma;</var><sup>2</sup> / 2)(<var>T</var> &minus; <var>t</var>)</span>
+          <span class="den"><var>&sigma;</var> &radic;(<var>T</var> &minus; <var>t</var>)</span>
+        </span>,
+        &emsp;
+        <var>d</var><sub>2</sub>
+        <span class="math-op">=</span>
+        <var>d</var><sub>1</sub> &minus; <var>&sigma;</var> &radic;(<var>T</var> &minus; <var>t</var>)
+      </div>
+    </div>
+
     <ul>
-      <li><strong>Underlying Price (S):</strong> Friday 4:00 PM ET closing price.</li>
-      <li><strong>Strike Price (K):</strong> Candidate strike price.</li>
-      <li><strong>Risk-Free Rate (r):</strong> Current 3-Month US Treasury yield (FRED / yfinance).</li>
-      <li><strong>Implied Volatility (&sigma;):</strong> 30-day historical and implied volatility percentile.</li>
+      <li><strong>Underlying Price (<var>S</var>):</strong> Friday 4:00 PM ET closing price.</li>
+      <li><strong>Strike Price (<var>K</var>):</strong> Candidate strike price.</li>
+      <li><strong>Risk-Free Rate (<var>r</var>):</strong> Current 3-Month US Treasury yield (FRED / yfinance).</li>
+      <li><strong>Implied Volatility (<var>&sigma;</var>):</strong> 30-day historical and implied volatility percentile.</li>
+      <li><strong>Time to Expiration (<var>T</var> &minus; <var>t</var>):</strong> Days to Expiration (DTE) scaled in years (<span class="math-inline"><var>DTE</var> / 365</span>).</li>
+      <li><strong>Cumulative Standard Normal Distribution (<var>N</var>):</strong> Probability distribution function for delta and exercise bounds.</li>
       <li><strong>Limit Order Setting:</strong> Modeled fair values are used to specify Monday 9:30 AM ET limit prices that guarantee favorable entry pricing.</li>
     </ul>
 

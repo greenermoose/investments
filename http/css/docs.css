@@ -1311,4 +1311,134 @@ pre code {
   text-align: right;
 }
 
+/* ==========================================================================
+   Mathematical Typesetting & Formula Styling
+   ========================================================================== */
+
+.math-inline {
+  font-family: 'Cambria Math', 'Latin Modern Math', 'STIX Two Math', 'Times New Roman', 'Roboto', serif;
+  font-size: 0.98em;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+  vertical-align: baseline;
+  letter-spacing: 0.01em;
+}
+
+.math-inline var,
+.math-block var,
+var {
+  font-style: italic;
+  font-family: 'Cambria Math', 'STIX Two Math', 'Times New Roman', serif;
+  color: var(--accent-color);
+  padding: 0 1px;
+}
+
+.math-inline .math-op,
+.math-block .math-op {
+  color: #94a3b8;
+  padding: 0 0.2em;
+  font-style: normal;
+}
+
+.math-inline .math-txt,
+.math-block .math-txt {
+  font-style: normal;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.math-block {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-x: auto;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.math-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  line-height: 1.6;
+}
+
+.math-fraction {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 4px;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.math-fraction .num {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.35);
+  padding-bottom: 2px;
+  display: block;
+}
+
+.math-fraction .den {
+  padding-top: 2px;
+  display: block;
+}
+
+.math-paren {
+  font-size: 1.35em;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1;
+  font-family: 'Cambria Math', 'Times New Roman', serif;
+}
+
+.math-sub,
+sub {
+  font-size: 0.75em;
+  vertical-align: sub;
+  color: var(--text-secondary);
+}
+
+.math-sup,
+sup {
+  font-size: 0.75em;
+  vertical-align: super;
+  color: var(--accent-color);
+}
+
+/* Native MathML Dark Theme Integration */
+math {
+  font-family: 'Cambria Math', 'Latin Modern Math', 'STIX Two Math', 'Times New Roman', serif;
+  font-size: 1.05em;
+  color: var(--text-primary);
+}
+
+math mi {
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+math mo {
+  color: #94a3b8;
+  padding: 0 0.15em;
+}
+
+math mtext {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: var(--text-primary);
+}
+
+
 

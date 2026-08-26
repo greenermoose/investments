@@ -55,17 +55,17 @@
         </tr>
         <tr>
           <td><strong>Free Cash Flow Conversion</strong></td>
-          <td>FCF / Net Income &gt; 80%</td>
+          <td><span class="math-inline"><span class="math-txt">FCF</span> / <span class="math-txt">Net Income</span> &gt; 80%</span></td>
           <td>Guarantees accounting profits translate to hard cash flows.</td>
         </tr>
         <tr>
           <td><strong>Leverage Ratio</strong></td>
-          <td>Net Debt / EBITDA &lt; 2.5x</td>
+          <td><span class="math-inline"><span class="math-txt">Net Debt</span> / <span class="math-txt">EBITDA</span> &lt; 2.5&times;</span></td>
           <td>Protects against interest rate shocks and credit stress.</td>
         </tr>
         <tr>
           <td><strong>Revenue Growth</strong></td>
-          <td>&gt; 7.0% Organic CAGR</td>
+          <td><span class="math-inline">&gt; 7.0% Organic CAGR</span></td>
           <td>Confirms alignment with secular growth tailwinds.</td>
         </tr>
       </tbody>
@@ -74,11 +74,63 @@
     <h2>Valuation Models</h2>
 
     <h3>1. Multi-Stage Discounted Free Cash Flow (DCF)</h3>
-    <p>Projects discrete unlevered free cash flows over a 5-year forecast period, discounted back at the Weighted Average Cost of Capital (WACC), plus a perpetual terminal growth value (2.5%-3.0%).</p>
+    <p>Projects discrete unlevered free cash flows over a 5-year forecast period, discounted back at the Weighted Average Cost of Capital (WACC), plus a perpetual terminal growth value (<span class="math-inline"><var>g</var> = 2.5%&ndash;3.0%</span>):</p>
+
+    <div class="math-block">
+      <div class="math-row">
+        <span class="math-txt">Intrinsic Value</span>
+        <span class="math-op">=</span>
+        <span style="font-size: 1.25em; font-family: 'Cambria Math', serif; color: var(--accent-color);">&sum;</span>
+        <span class="math-fraction" style="font-size: 0.85em;">
+          <span class="num"><var>t</var>=1</span>
+          <span class="den">5</span>
+        </span>
+        <span class="math-fraction">
+          <span class="num"><span class="math-txt">FCF</span><sub><var>t</var></sub></span>
+          <span class="den">(1 + <span class="math-txt">WACC</span>)<sup><var>t</var></sup></span>
+        </span>
+        <span class="math-op">+</span>
+        <span class="math-fraction">
+          <span class="num"><span class="math-txt">Terminal Value</span><sub>5</sub></span>
+          <span class="den">(1 + <span class="math-txt">WACC</span>)<sup>5</sup></span>
+        </span>
+      </div>
+      <div class="math-row" style="font-size: 0.92em; color: var(--text-secondary); margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border-subtle);">
+        <span class="math-txt">where</span>
+        <span class="math-txt">Terminal Value</span><sub>5</sub>
+        <span class="math-op">=</span>
+        <span class="math-fraction">
+          <span class="num"><span class="math-txt">FCF</span><sub>5</sub> &times; (1 + <var>g</var>)</span>
+          <span class="den"><span class="math-txt">WACC</span> &minus; <var>g</var></span>
+        </span>
+      </div>
+    </div>
 
     <h3>2. Owner Earnings Yield</h3>
-    <pre><code>Owner Earnings = Net Income + D&A - Maintenance CapEx</code></pre>
-    <p>Measures the cash yield a 100% owner could extract annually without impairing the business's competitive position. We require an Owner Earnings Yield exceeding the 3-Month Treasury yield plus a minimum 300 bps equity risk premium.</p>
+    <div class="math-block">
+      <div class="math-row">
+        <span class="math-txt">Owner Earnings</span>
+        <span class="math-op">=</span>
+        <span class="math-txt">Net Income</span>
+        <span class="math-op">+</span>
+        <span class="math-txt">D&amp;A</span>
+        <span class="math-op">&minus;</span>
+        <span class="math-txt">Maintenance CapEx</span>
+      </div>
+      <div class="math-row" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border-subtle);">
+        <span class="math-txt">Owner Earnings Yield</span>
+        <span class="math-op">=</span>
+        <span class="math-fraction">
+          <span class="num">Owner Earnings</span>
+          <span class="den">Enterprise Value (EV)</span>
+        </span>
+        <span class="math-op">&ge;</span>
+        <var>r</var><sub>3M Treasury</sub>
+        <span class="math-op">+</span>
+        300 bps ERP
+      </div>
+    </div>
+    <p>Measures the cash yield a 100% owner could extract annually without impairing the business's competitive position. We require an Owner Earnings Yield exceeding the 3-Month Treasury yield plus a minimum 300 bps equity risk premium (ERP).</p>
 
     <h2>Margin of Safety & Price Targets</h2>
     <div class="callout">

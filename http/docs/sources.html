@@ -193,12 +193,28 @@
             <td>Options chains, strike listings, expiration cycles, open interest, and historical VIX/VXN.</td>
           </tr>
           <tr>
-            <td><strong>NYSE / NASDAQ Consolidated Feeds</strong></td>
-            <td><a href="https://www.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">nasdaq.com</a></td>
+            <td><strong>Consolidated Tape Association (CTA / CQS Plan)</strong></td>
+            <td><a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a></td>
             <td><span class="tier-badge tier-1">Tier 1</span></td>
-            <td>Real-time SIP / Tape</td>
-            <td>Absolute Ground Truth (10/10). National Market System official tape.</td>
-            <td>Official market closing settlement prices, auction prints, and consolidated volume.</td>
+            <td>Institutional SIP / SIAC</td>
+            <td>Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NYSE &amp; regional listings.</td>
+            <td>Consolidated quotes (CQS/NBBO), trades (CTS), official closing prices, auction prints, and total tape volume for Tape A (NYSE) and Tape B (NYSE American, Arca, Cboe).</td>
+          </tr>
+          <tr>
+            <td><strong>UTP Plan (OTC/UTP Plan)</strong></td>
+            <td><a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a></td>
+            <td><span class="tier-badge tier-1">Tier 1</span></td>
+            <td>Institutional SIP / Nasdaq SIP</td>
+            <td>Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NASDAQ-listed equities.</td>
+            <td>Consolidated quotes (UQDF/NBBO), trades (UTDF), official closing crosses, IPO opening prints, and consolidated volume for Tape C (NASDAQ).</td>
+          </tr>
+          <tr>
+            <td><strong>Nasdaq Data Link &amp; Market Data (Nasdaq Basic / NLS)</strong></td>
+            <td><a href="https://data.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">data.nasdaq.com</a></td>
+            <td><span class="tier-badge tier-2">Tier 2</span></td>
+            <td>Developer API / REST / Web</td>
+            <td>High Reliability (9.5/10). Proprietary Nasdaq execution venue market data.</td>
+            <td>Nasdaq Last Sale (NLS) trade prints and Nasdaq Basic top-of-book quotes for Nasdaq venues &amp; FINRA/Nasdaq TRF. Note: Excludes non-Nasdaq exchange executions and is distinct from consolidated SIP feeds.</td>
           </tr>
           <tr>
             <td><strong>FRED (Federal Reserve Economic Data)</strong></td>
@@ -379,6 +395,13 @@
         <strong>Assessment:</strong> High (9.2/10) for official earnings decks, webcast transcripts, and multi-year roadmaps. Unaudited non-GAAP claims require SEC GAAP reconciliation.<br />
         <strong>Role in Due Diligence:</strong> Delivers high-conviction context complementing SEC filings: segment KPIs (ARR, net retention, ARPU), TAM expansion targets, management guidance, and catalyst timelines.<br />
         <strong>Integration:</strong> Directly linked per equity in <code>universe.json</code> and accessible with one click in the Public Equities inspection modal.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>7. US Equity Market Data &amp; SIP Architecture</h4>
+        <p><strong>Classification:</strong> Tier 1 Consolidated SIP vs. Tier 2 Proprietary Top-of-Book.<br />
+        <strong>National Market System (NMS) SIPs:</strong> The Consolidated Tape is split under two distinct regulatory plans: the <strong>CTA/CQS Plan</strong> (Tape A/B via SIAC for NYSE &amp; regional listings at <a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a>) and the <strong>UTP Plan</strong> (Tape C via Nasdaq SIP at <a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a>).<br />
+        <strong>Why nasdaq.com is NOT a Consolidated Feed:</strong> Real-time quotes on <code>nasdaq.com</code> are powered by <em>Nasdaq Last Sale (NLS)</em> and <em>Nasdaq Basic</em> (via Nasdaq Data Link). These proprietary feeds only capture executions occurring on Nasdaq's own venues and the FINRA/Nasdaq TRF, omitting executions from the NYSE floor, NYSE Arca, Cboe, and IEX. Consolidated Level 1 web data is delayed by 15 minutes.</p>
       </div>
     </div>
 

@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "description": "Ranked directory of financial newswires, press release distribution networks, and online investor chatter communities. Used by surveil_sentiment.py and AI agents to monitor real-time company press releases, track social sentiment shifts, and detect emerging investor concerns and friction points.",
+  "last_updated": "2026-08-26",
+  "provenance": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+  "usage_guidance": "Use primary corporate press release distribution feeds for official corporate disclosures (Tier 2 Primary Dissemination), financial newswires for sell-side/analyst reactions, and community chatter forums (Reddit, StockTwits) for sentiment velocity and retail investor anxiety/conviction indicators.",
+  "channels": [
+    {
+      "category": "CORPORATE_PRESS_DISTRIBUTION",
+      "sources": [
+        {
+          "name": "PR Newswire (Cision)",
+          "domain": "prnewswire.com",
+          "url": "https://www.prnewswire.com/",
+          "search_url_template": "https://www.prnewswire.com/search/news/?keyword={SYMBOL}",
+          "trust_score": 9.5,
+          "data_tier": "TIER_2_FINANCIAL_NEWSWIRE",
+          "coverage_focus": "Official corporate press releases, earnings release dates, executive management changes, M&A announcements."
+        },
+        {
+          "name": "Business Wire (Berkshire Hathaway)",
+          "domain": "businesswire.com",
+          "url": "https://www.businesswire.com/",
+          "search_url_template": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm={SYMBOL}",
+          "trust_score": 9.5,
+          "data_tier": "TIER_2_FINANCIAL_NEWSWIRE",
+          "coverage_focus": "Official issuer press releases, regulatory compliance filings, dividend declarations, quarterly financial results."
+        },
+        {
+          "name": "GlobeNewswire (Notified)",
+          "domain": "globenewswire.com",
+          "url": "https://www.globenewswire.com/",
+          "search_url_template": "https://www.globenewswire.com/search?keyword={SYMBOL}",
+          "trust_score": 9.2,
+          "data_tier": "TIER_2_FINANCIAL_NEWSWIRE",
+          "coverage_focus": "Mid-cap and large-cap corporate announcements, clinical trial milestones, contract awards, share buyback updates."
+        },
+        {
+          "name": "SEC Form 8-K Unscheduled Events Feed",
+          "domain": "sec.gov",
+          "url": "https://www.sec.gov/edgar/searchedgar/companysearch",
+          "search_url_template": "https://data.sec.gov/submissions/CIK{CIK}.json",
+          "trust_score": 10.0,
+          "data_tier": "TIER_1_PRIMARY_REGULATORY",
+          "coverage_focus": "Material corporate events, departures of directors/officers, material impairments, non-reliance on financial statements."
+        }
+      ]
+    },
+    {
+      "category": "INVESTOR_CHATTER_AND_COMMUNITIES",
+      "sources": [
+        {
+          "name": "Reddit r/stocks",
+          "domain": "reddit.com",
+          "url": "https://www.reddit.com/r/stocks/",
+          "search_url_template": "https://www.reddit.com/r/stocks/search/?q={SYMBOL}&restrict_sr=1&sort=new",
+          "trust_score": 7.5,
+          "data_tier": "TIER_4_INVESTOR_SENTIMENT",
+          "coverage_focus": "Fundamental discussions, earnings takeaways, investor skepticism, macroeconomic friction points, moat durability debates."
+        },
+        {
+          "name": "Reddit r/wallstreetbets",
+          "domain": "reddit.com",
+          "url": "https://www.reddit.com/r/wallstreetbets/",
+          "search_url_template": "https://www.reddit.com/r/wallstreetbets/search/?q={SYMBOL}&restrict_sr=1&sort=new",
+          "trust_score": 6.5,
+          "data_tier": "TIER_4_INVESTOR_SENTIMENT",
+          "coverage_focus": "High-velocity retail sentiment, retail positioning, options volume surges, short squeeze dynamics, extreme sentiment sentiment swings."
+        },
+        {
+          "name": "Reddit r/investing",
+          "domain": "reddit.com",
+          "url": "https://www.reddit.com/r/investing/",
+          "search_url_template": "https://www.reddit.com/r/investing/search/?q={SYMBOL}&restrict_sr=1&sort=new",
+          "trust_score": 7.8,
+          "data_tier": "TIER_4_INVESTOR_SENTIMENT",
+          "coverage_focus": "Long-term allocation perspectives, portfolio construction debates, valuation multiple pushback, industry secular trends."
+        },
+        {
+          "name": "Reddit r/ValueInvesting",
+          "domain": "reddit.com",
+          "url": "https://www.reddit.com/r/ValueInvesting/",
+          "search_url_template": "https://www.reddit.com/r/ValueInvesting/search/?q={SYMBOL}&restrict_sr=1&sort=new",
+          "trust_score": 8.0,
+          "data_tier": "TIER_4_INVESTOR_SENTIMENT",
+          "coverage_focus": "Forensic balance sheet deep-dives, debt maturity audits, ROIC verification, margin of safety calculations, value-trap warnings."
+        },
+        {
+          "name": "StockTwits Social Stream",
+          "domain": "stocktwits.com",
+          "url": "https://stocktwits.com/",
+          "search_url_template": "https://stocktwits.com/symbol/{SYMBOL}",
+          "trust_score": 6.0,
+          "data_tier": "TIER_4_INVESTOR_SENTIMENT",
+          "coverage_focus": "Intraday sentiment polarity (Bullish/Bearish percentage), message velocity, trending tickers, breaking rumor dissemination."
+        },
+        {
+          "name": "Seeking Alpha Investor Comments & Transcripts",
+          "domain": "seekingalpha.com",
+          "url": "https://seekingalpha.com/",
+          "search_url_template": "https://seekingalpha.com/symbol/{SYMBOL}/earnings/transcripts",
+          "trust_score": 8.0,
+          "data_tier": "TIER_2_FINANCIAL_NEWSWIRE",
+          "coverage_focus": "Earnings call Q&A reactions, institutional/retail debate on guidance, customer churn concerns, Capex efficiency feedback."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "description": "Registry of activist short seller reports and campaigns tracked across public equities.",
+  "last_updated": "2026-08-26",
+  "provenance": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+  "campaigns": [
+    {
+      "campaign_id": "SSC-2024-SMCI-HINDENBURG",
+      "symbol": "SMCI",
+      "company_name": "Super Micro Computer, Inc.",
+      "short_seller_firm": "Hindenburg Research",
+      "publication_date": "2024-08-27",
+      "report_title": "Super Micro Computer: Fresh Evidence of Accounting Manipulation, Sibling Self-Dealing and Sanctions Evasion",
+      "report_url": "https://hindenburgresearch.com/smci/",
+      "primary_allegations": [
+        "Undisclosed related-party transactions with CEO family entities Ablecom and Compuware",
+        "Improper revenue recognition and premature shipment booking",
+        "Rehiring of executives previously implicated in SEC accounting restatement"
+      ],
+      "allegation_severity": "CRITICAL_FRAUD",
+      "stock_price_before_report": 548.0,
+      "stock_price_day1_close": 443.5,
+      "day1_reaction_pct": -19.07,
+      "status": "REGULATORY_ACTION_CONFIRMED",
+      "company_rebuttal_summary": "Company delayed 10-K filing, appointed special board committee, and later auditor Ernst & Young resigned.",
+      "agent_thesis_verdict": "AVOID_LIST_CONFIRMED",
+      "thesis_action_rationale": "High forensic accounting risk and auditor resignation mandate strict Avoid status until audited financial restatements are filed."
+    },
+    {
+      "campaign_id": "SSC-2024-ENVX-SCORPION",
+      "symbol": "ENVX",
+      "company_name": "Enovix Corporation",
+      "short_seller_firm": "Scorpion Capital",
+      "publication_date": "2023-01-20",
+      "report_title": "A Toxic Silicon Mirage: Enovix's Manufacturing Impossibility and Battery Yield Collapse",
+      "report_url": "https://scorpioncapital.com/research",
+      "primary_allegations": [
+        "Exaggerated silicon battery energy density and unviable commercial yields",
+        "Delays in Fab-1 automated manufacturing line in Fremont",
+        "Excessive cash burn relative to commercialization timeline"
+      ],
+      "allegation_severity": "HIGH_GOVERNANCE_RISK",
+      "stock_price_before_report": 12.1,
+      "stock_price_day1_close": 7.15,
+      "day1_reaction_pct": -40.91,
+      "status": "SETTLED_PRICED_IN",
+      "company_rebuttal_summary": "Enovix restructured executive team, appointed TJ Rodgers as Executive Chairman, pivoted manufacturing to Fab-2 in Malaysia, and validated Route 1 high-volume samples.",
+      "agent_thesis_verdict": "MONITOR_RUNWAY_COVENANTS",
+      "thesis_action_rationale": "Commercial pivot to Malaysia Fab-2 derisked production, but quarterly cash burn and customer qualification milestones require close quarterly monitoring."
+    },
+    {
+      "campaign_id": "SSC-2023-SLDP-JCAPITAL",
+      "symbol": "SLDP",
+      "company_name": "Solid Power, Inc.",
+      "short_seller_firm": "J Capital Research",
+      "publication_date": "2023-04-12",
+      "report_title": "Solid Power: Solid State Science Project Running on Empty",
+      "report_url": "https://www.jcapitalresearch.com/reports",
+      "primary_allegations": [
+        "All-solid-state electrolyte degradation and low cycle life under real automotive conditions",
+        "Commercial automotive deployment timeline pushed beyond 2028",
+        "Over-reliance on joint development partners BMW and Ford"
+      ],
+      "allegation_severity": "MODERATE_OVERVALUATION",
+      "stock_price_before_report": 2.45,
+      "stock_price_day1_close": 2.18,
+      "day1_reaction_pct": -11.02,
+      "status": "SETTLED_PRICED_IN",
+      "company_rebuttal_summary": "Solid Power delivered A-sample cells to BMW for parallel testing, expanded Korean pilot facility, and maintained $350M+ liquid balance sheet runway.",
+      "agent_thesis_verdict": "MONITOR_RUNWAY_COVENANTS",
+      "thesis_action_rationale": "High cash balance provides >3 years runway, but long commercialization horizon caps allocation size."
+    },
+    {
+      "campaign_id": "SSC-2024-MSTR-KERRISDALE",
+      "symbol": "MSTR",
+      "company_name": "MicroStrategy Incorporated",
+      "short_seller_firm": "Kerrisdale Capital",
+      "publication_date": "2024-03-28",
+      "report_title": "Long Bitcoin, Short MicroStrategy: Unjustifiable 2.3x Net Asset Value Premium",
+      "report_url": "https://www.kerrisdalecap.com/blog/",
+      "primary_allegations": [
+        "MicroStrategy trading at an unsustainable 100%+ premium to underlying Bitcoin holdings",
+        "Core enterprise analytics software revenue stagnant and declining",
+        "Debt-financed Bitcoin accumulation creating extreme dilution risk if NAV premium compresses"
+      ],
+      "allegation_severity": "MODERATE_OVERVALUATION",
+      "stock_price_before_report": 170.5,
+      "stock_price_day1_close": 151.4,
+      "day1_reaction_pct": -11.2,
+      "status": "MONITORING",
+      "company_rebuttal_summary": "Management continued executing convertible bond offerings with 0% coupons and buying Bitcoin accretively on per-share BTC Yield basis.",
+      "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
+      "thesis_action_rationale": "Software revenue is secondary; MSTR acts as an active capital markets vehicle. However, valuation must be disciplined to avoid buying above peak NAV multiple bands."
+    },
+    {
+      "campaign_id": "SSC-2024-PDD-GRIZZLY",
+      "symbol": "PDD",
+      "company_name": "PDD Holdings Inc.",
+      "short_seller_firm": "Grizzly Research",
+      "publication_date": "2023-09-07",
+      "report_title": "We Believe PDD Is a Dying Fraud and Temu Is Cleverly Concealed Malware",
+      "report_url": "https://grizzlyreports.com/feed/",
+      "primary_allegations": [
+        "Temu mobile application allegedly incorporates unauthorized spyware and data exfiltration",
+        "Fabrication of domestic China GMV and merchant take-rates",
+        "Unreconciled cash balances in Chinese domestic subsidiaries"
+      ],
+      "allegation_severity": "HIGH_GOVERNANCE_RISK",
+      "stock_price_before_report": 98.4,
+      "stock_price_day1_close": 96.6,
+      "day1_reaction_pct": -1.83,
+      "status": "REFUTED_BY_COMPANY",
+      "company_rebuttal_summary": "Subsequent quarterly earnings demonstrated massive international revenue and operating profit growth; app security certifications updated.",
+      "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
+      "thesis_action_rationale": "Market price reacted minimally, and massive free cash flow conversion ($20B+ TTM) confirmed operating leverage."
+    }
+  ]
+}

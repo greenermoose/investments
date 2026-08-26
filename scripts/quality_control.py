@@ -87,11 +87,18 @@ class QualityController:
         self.dia_tickers = set(h.get("ticker") for h in self.dia_holdings if h.get("ticker"))
         self.spy_tickers = set(h.get("ticker") for h in self.spy_holdings if h.get("ticker"))
 
+        # System-level dataset files to exclude from individual company ticker parsing
+        self.system_dataset_files = {
+            "universe.json", "market_prices.json", "historical_price_archive.json",
+            "analyst_coverage_registry.json", "sec_filing_calendar.json",
+            "sentiment_surveillance.json", "short_seller_campaigns.json"
+        }
+
         # Individual company files in http/data/
         self.http_company_files = {}
         if os.path.exists(self.http_data_dir):
             for fname in os.listdir(self.http_data_dir):
-                if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
+                if fname.endswith(".json") and fname not in self.system_dataset_files:
                     sym = fname[:-5]
                     fpath = os.path.join(self.http_data_dir, fname)
                     self.http_company_files[sym] = self._load_json(fpath, default={})
@@ -973,7 +980,7 @@ class QualityController:
         print("Rebuilding and synchronizing master universe.json catalog...")
         new_universe = []
         for filename in sorted(os.listdir(self.http_data_dir)):
-            if not filename.endswith(".json") or filename in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
+            if not filename.endswith(".json") or filename in self.system_dataset_files:
                 continue
 
             sym = filename.replace(".json", "")

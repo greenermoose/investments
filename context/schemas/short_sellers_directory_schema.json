@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ShortSellersDirectory",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "description",
+    "last_updated",
+    "provenance",
+    "short_sellers"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "provenance": {
+      "type": "string",
+      "enum": [
+        "TIER_1_PRIMARY_REGULATORY",
+        "TIER_2_FINANCIAL_AGGREGATOR",
+        "TIER_2_FINANCIAL_NEWSWIRE",
+        "TIER_3_QUANTITATIVE_LITERATURE",
+        "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE"
+      ]
+    },
+    "usage_guidance": {
+      "type": "string"
+    },
+    "short_sellers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "firm_name",
+          "founder_or_key_figures",
+          "website",
+          "market_impact_rating",
+          "primary_attack_vectors",
+          "notable_historical_targets",
+          "search_query_template"
+        ],
+        "properties": {
+          "rank": {
+            "type": "integer"
+          },
+          "firm_name": {
+            "type": "string"
+          },
+          "founder_or_key_figures": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri"
+          },
+          "founded_year": {
+            "type": "integer"
+          },
+          "market_impact_rating": {
+            "type": "string",
+            "enum": ["EXTREME", "VERY_HIGH", "HIGH", "MODERATE"]
+          },
+          "estimated_avg_day1_drop_pct": {
+            "type": "number"
+          },
+          "focus_sectors": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "primary_attack_vectors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+                "RELATED_PARTY_TRANSACTIONS",
+                "PRODUCT_DEFICIENCY_EXAGGERATION",
+                "REGULATORY_INVESTIGATION_HAZARDS",
+                "CUSTOMER_CONCENTRATION_FABRICATION",
+                "GOVERNANCE_AND_INSIDER_ENRICHMENT",
+                "HYPER_VALUATION_PROMOTIONAL_HYPE",
+                "SUPPLY_CHAIN_AND_OFF_BALANCE_SHEET_DEBT"
+              ]
+            }
+          },
+          "notable_historical_targets": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "search_query_template": {
+            "type": "string"
+          },
+          "report_feed_url": {
+            "type": "string"
+          },
+          "investigative_style": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

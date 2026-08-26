@@ -15,7 +15,7 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="index.html" class="docs-nav-link">System Overview</a>
-      <a href="guide.html" class="docs-nav-link active">User Guide</a>
+      <a href="guide.html" class="docs-nav-link active">User Guide &amp; Cadences</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
@@ -27,82 +27,297 @@
       <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
       <a href="docs/options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
       <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
+      <a href="docs/workflow.html" class="docs-nav-link">Weekly Workflow &amp; Plans</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>User Guide &amp; Operational Cadence</h1>
-      <p class="docs-lead">Step-by-step instructions for operating the multi-agent investment advisory system on a disciplined, single-session weekly schedule.</p>
+      <h1>User Guide &amp; Operational Cadences</h1>
+      <p class="docs-lead">Step-by-step operational playbooks, token economy architecture, primary source anti-hallucination regeneration, and prompt protocols for running the multi-agent investment advisory system.</p>
     </div>
 
     <div class="callout important">
-      <div class="callout-title">Core Operating Philosophy: Single-Session "Set-and-Forget"</div>
-      <p>This system is specifically engineered for investors with demanding full-time professional schedules. There is <strong>zero mid-week babysitting or intraday monitoring</strong>. All deliberation takes place over the weekend, all limit orders are entered in one sitting on Monday morning, and all Friday option expirations settle automatically.</p>
+      <div class="callout-title">Core Operating Philosophy: Parsimonious Token Spend &amp; "Trust But Verify"</div>
+      <p>Running unconstrained whole-universe LLM queries on every market tick is cost-prohibitive and introduces hallucination drift. This system enforces a strict division of labor: <strong>deterministic scripts execute math, price syncs, and schedule projections at 0 LLM tokens</strong>, while <strong>generative AI agents are invoked selectively</strong> for qualitative synthesis, thesis authoring, and single-session weekly deliberation using verified cached data.</p>
     </div>
 
-    <h2>How to Operate the System: Step-by-Step</h2>
-    <p>Follow this 5-step operational protocol every week to run deliberation, review your personalized plan, and execute trades.</p>
+    <h2>The 5 Tiered Operational Cadences</h2>
+    <p>Operational workflows are partitioned into five distinct cadences ranging from intraday zero-token price updates to rare ground-truth reconciliations from primary SEC filings:</p>
 
+    <div class="card-grid">
+      <div class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #00d4ff; font-weight: 700;">Cadence 1: Daily</span>
+          <span style="font-size: 0.75rem; background: rgba(0, 212, 255, 0.15); color: #00d4ff; padding: 2px 8px; border-radius: 12px; font-weight: 600;">0 Tokens</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">Market Prices &amp; Technical Volume Refresh</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Daily synchronization of live share prices, trading volumes, 20/50-day moving averages, and 52-week support/resistance bounds to screen for buyable dips and limit triggers.</p>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #818cf8; font-weight: 700;">Cadence 2: Weekly</span>
+          <span style="font-size: 0.75rem; background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~2K - 5K Tokens</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">Weekly Deliberation &amp; Trading Plan</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Single-session weekend portfolio snapshot ingestion, Black-Scholes options limit calculation, and decisive plain-text Monday execution plan synthesis in <code>private/plans/</code>.</p>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #fbbf24; font-weight: 700;">Cadence 3: Event-Driven</span>
+          <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #fbbf24; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~500 - 1.5K Tokens</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">Press, Sentiment &amp; Short Seller Surveillance</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Surveilling corporate press wires, Reddit investor chatter (r/stocks, r/wallstreetbets), and reports from 20 top activist short sellers to catch thesis friction early.</p>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #34d399; font-weight: 700;">Cadence 4: Scheduled</span>
+          <span style="font-size: 0.75rem; background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~500 Tokens / Stock</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">SEC Filing Anticipation &amp; XBRL Ingestion</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Tracking statutory 10-Q and 10-K filing deadlines, projecting company filing windows, and ingesting authoritative audited financial facts within 24 hours of release.</p>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(239, 68, 68, 0.4); grid-column: 1 / -1;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f87171; font-weight: 700;">Cadence 5: Rare / On-Demand</span>
+          <span style="font-size: 0.75rem; background: rgba(239, 68, 68, 0.15); color: #f87171; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Full Audit Mode</span>
+        </div>
+        <h4 style="color: #ffffff; margin-top: 0;">Rare Full Ground-Truth Source Regeneration &amp; Anti-Hallucination Audit</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">End-to-end rebuild and reconciliation directly from original Tier 1 primary sources (SEC EDGAR XBRL APIs, exchange price feeds, Form NPORT-P fund filings) to purge stale state and guarantee 100% mathematical and factual accuracy.</p>
+      </div>
+    </div>
+
+    <h2>Operational Playbooks &amp; CLI Tool Instructions</h2>
+
+    <!-- Playbook 1 -->
     <div class="step-container">
       <div class="step-card">
-        <div class="step-badge">Step 1</div>
+        <div class="step-badge">Cadence 1</div>
         <div class="step-content">
-          <h4>Capture Weekend Portfolio Snapshots</h4>
-          <p>Export your account holdings as a CSV or capture a clean screenshot from your brokerage portal. Save the file directly into the git-ignored private directory:</p>
-          <pre><code>private/snapshots/2026-08-15-schwab.csv
-private/snapshots/2026-08-15-fidelity.png</code></pre>
-          <p>If managing multiple accounts (e.g. taxable growth + retirement), drop snapshots for each account into <code>private/snapshots/</code>. The agents will parse and generate separate, self-contained order blocks for each portfolio.</p>
+          <h4>Frequent Daily Price &amp; Volume Updates (0 LLM Tokens)</h4>
+          <p>Because stock prices and trading volumes fluctuate every market session, run the live price fetcher daily before market open (9:00 AM ET) and after close (4:30 PM ET):</p>
+          <pre><code># Ingest live market prices and 30-day candles across the entire 150-equity universe
+python scripts/fetch_market_prices.py --live
+
+# Refresh a specific target watchlist during intraday market action
+python scripts/fetch_market_prices.py --symbols NVDA AAPL MSFT TSLA AMZN --live
+
+# Screen for high-conviction opportunities (>= 20% annualized ROI) at current prices
+python scripts/screen_market.py --min-roi 20.0 --exclude-avoid</code></pre>
+          <p>This updates <code>context/data/market_prices.json</code> and <code>http/data/market_prices.json</code> deterministically without consuming any LLM tokens.</p>
         </div>
       </div>
 
+      <!-- Playbook 2 -->
       <div class="step-card">
-        <div class="step-badge">Step 2</div>
+        <div class="step-badge">Cadence 2</div>
         <div class="step-content">
-          <h4>Launch IDE or AI Agent Harness</h4>
-          <p>Open your AI coding assistant (such as Antigravity IDE, Claude Code, or Cursor) pointed directly at this repository root. This provides the AI agents with immediate access to repository guidelines (<code>AGENTS.md</code>), schemas, prompts, and public thesis dossiers.</p>
+          <h4>Weekly Deliberation &amp; Monday Execution Plan</h4>
+          <p>Execute the weekly single-session deliberation workflow over the weekend:</p>
+          <ol style="padding-left: 20px; font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 12px;">
+            <li>Export account holdings as CSV or screenshots into <code>private/snapshots/</code>.</li>
+            <li>Prompt your AI agent with the protocol in <code>context/prompts/weekly_deliberation.md</code>.</li>
+            <li>Open the generated plain ASCII plan in <code>private/plans/YYYY-MM-DD-plan.txt</code>.</li>
+            <li>Execute all specified limit orders at Monday 9:30 AM ET market open in one sitting.</li>
+          </ol>
+          <pre><code># Test snapshot parsing deterministically
+python scripts/parse_snapshot.py --json
+
+# Run Black-Scholes options pricing calculator for target strikes
+python scripts/calculate_pricing.py --symbol NVDA --stock-price 218.17 --strike 200.0 --dte 35 --option-type put
+
+# Generate plain ASCII trading plan from parsed snapshot state
+python scripts/generate_plan.py --save</code></pre>
         </div>
       </div>
 
+      <!-- Playbook 3 -->
       <div class="step-card">
-        <div class="step-badge">Step 3</div>
+        <div class="step-badge">Cadence 3</div>
         <div class="step-content">
-          <h4>Execute the Weekly Deliberation Protocol</h4>
-          <p>Prompt your AI agent to ingest the snapshots and trigger the deliberation pipeline using the prompt in <code>context/prompts/weekly_deliberation.md</code>:</p>
-          <pre><code>Please ingest private/snapshots/ and run context/prompts/weekly_deliberation.md to generate our Monday execution plan.</code></pre>
-          <p>The specialized sub-agents will automatically parse share counts, analyze thesis catalysts, screen candidate equities, calculate Black-Scholes option pricing, and synthesize decisions into a cohesive plan.</p>
+          <h4>Event-Driven Press, Sentiment &amp; Short Seller Surveillance</h4>
+          <p>Surveil breaking news, emerging investor friction themes on Reddit, and reports from 20 influential short sellers:</p>
+          <pre><code># Inspect high and medium severity investor concern themes across the universe
+python scripts/surveil_sentiment.py --concerns-only
+
+# Deep dive into sentiment polarity and press headlines for target tickers
+python scripts/surveil_sentiment.py --symbols NVDA TSLA ENPH PLTR --json
+
+# Check whether a candidate company has active short seller campaigns or reports
+python scripts/track_short_sellers.py --symbol SMCI
+
+# Review all 20 influential activist short seller research firms and track records
+python scripts/track_short_sellers.py --list-firms</code></pre>
+          <p>If an activist short report is published, follow <code>context/prompts/sentiment_and_short_seller_surveillance.md</code> to determine if the report mandates thesis invalidation or creates a high-margin-of-safety buyable dip.</p>
         </div>
       </div>
 
+      <!-- Playbook 4 -->
       <div class="step-card">
-        <div class="step-badge">Step 4</div>
+        <div class="step-badge">Cadence 4</div>
         <div class="step-content">
-          <h4>Review the Decisive Trading Plan</h4>
-          <p>Open the generated plan in <code>private/plans/YYYY-MM-DD-plan.txt</code>. The plan is rendered in clean, plain ASCII text conforming to repository schemas:</p>
-          <ul>
-            <li><strong>Account Snapshot:</strong> Total Value, Cash, SGOV proxy, Dry Powder percentage, and Active Positions.</li>
-            <li><strong>Monday 9:30 AM Orders:</strong> Clear numbered list of Limit Orders with exact limit prices, cash impacts, and rationales.</li>
-            <li><strong>Execution-Time Contingencies:</strong> Deterministic price branches (e.g. Branch A if stock &gt;= $X; Branch B if stock &lt; $X) for frictionless entry.</li>
-            <li><strong>Friday Expiration Expectations:</strong> Clear forecast of automated option settlements and collateral unlocks.</li>
-          </ul>
+          <h4>Scheduled SEC Filing Anticipation &amp; XBRL Ingestion</h4>
+          <p>Track upcoming 10-Q and 10-K filing windows and ingest audited statements as they are submitted:</p>
+          <pre><code># Audit filings due in the next 30 days based on statutory deadlines
+python scripts/anticipate_sec_filings.py --upcoming-days 30
+
+# Inspect imminent filings due in the next 14 days
+python scripts/anticipate_sec_filings.py --status IMMINENT_NEXT_14_DAYS
+
+# Ingest authoritative SEC EDGAR XBRL facts for newly filed companies
+python scripts/fetch_sec.py --symbols NVDA CRM WDAY --live
+
+# Re-aggregate TTM revenues, share counts, and master catalogs
+node scripts/build_sec_data.js
+python scripts/build_universe_json.py</code></pre>
         </div>
       </div>
 
+      <!-- Playbook 5 -->
       <div class="step-card">
-        <div class="step-badge">Step 5</div>
+        <div class="step-badge">Cadence 5</div>
         <div class="step-content">
-          <h4>Monday Morning Execution</h4>
-          <p>Log in to your brokerage at 9:30 AM ET (or whenever you can access your account Monday morning) and submit all specified limit orders in one sitting. Once entered, log out. No further actions or mid-week checks are required until next weekend's snapshot.</p>
+          <h4>Rare Ground-Truth Regeneration &amp; Full Anti-Hallucination Audit</h4>
+          <p>When you want to regenerate all repository intelligence directly from original primary sources to eliminate any chance of hallucination or parameter drift:</p>
+          <pre><code># 1. Fetch fresh master CIK directory and live SEC EDGAR XBRL statements
+python scripts/fetch_sec.py --live
+
+# 2. Re-ingest live market closing prices and rebuild historical price archive (18mo)
+python scripts/fetch_market_prices.py --live
+python scripts/fetch_market_prices.py --archive
+
+# 3. Synchronize QQQ, DIA, and SPY constituents from SEC Form NPORT-P filings
+python scripts/fetch_etf_holdings.py
+
+# 4. Refresh sell-side analyst price targets and coverage registry
+python scripts/fetch_analyst_targets.py --live
+python scripts/build_analyst_registry.py
+
+# 5. Compile off-balance sheet footnote liabilities (leases, pensions, commitments)
+python scripts/build_off_balance_sheet_data.py
+
+# 6. Re-synthesize master catalogs, SEC calendar, sentiment, and short campaigns
+node scripts/build_sec_data.js
+python scripts/build_universe_json.py
+python scripts/anticipate_sec_filings.py
+python scripts/surveil_sentiment.py --seed
+python scripts/track_short_sellers.py --seed
+
+# 7. Execute complete deterministic Quality Control audit to assert 0 errors / 0 warnings
+python scripts/quality_control.py --audit</code></pre>
         </div>
       </div>
     </div>
 
-    <h2>Key Execution Rules &amp; Principles</h2>
+    <h2>Token Economy &amp; Resource Consumption Matrix</h2>
+    <p>The table below provides a full reference of system tools, their token costs, update cadences, primary source authorities, and synchronized storage locations:</p>
+
+    <div style="overflow-x: auto; margin: 24px 0;">
+      <table style="width: 100%; border-collapse: collapse; background: var(--bg-color-surface); border: 1px solid var(--border-subtle); border-radius: 8px; font-size: 0.88rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--border-subtle); background: var(--bg-color-card); text-align: left;">
+            <th style="padding: 12px 16px; color: var(--accent-color);">Operation / Tool</th>
+            <th style="padding: 12px 16px; color: var(--text-primary);">Token Cost</th>
+            <th style="padding: 12px 16px; color: var(--text-primary);">Cadence</th>
+            <th style="padding: 12px 16px; color: var(--text-primary);">Source Tier &amp; Authority</th>
+            <th style="padding: 12px 16px; color: var(--text-primary);">Target File Path</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">fetch_market_prices.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Daily / Intraday</td>
+            <td style="padding: 10px 16px;">Tier 2 (Exchange Feeds)</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/market_prices.json</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">anticipate_sec_filings.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Weekly / Scheduled</td>
+            <td style="padding: 10px 16px;">Tier 1 (SEC Statutory Deadlines)</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/sec_filing_calendar.json</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">surveil_sentiment.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 - 500 Tokens</td>
+            <td style="padding: 10px 16px;">Event-Driven / Daily</td>
+            <td style="padding: 10px 16px;">Tier 2 / Tier 4 (Wires &amp; Social)</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/sentiment_surveillance.json</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">track_short_sellers.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Event-Driven / Screening</td>
+            <td style="padding: 10px 16px;">Tier 2 / Tier 4 (Short Research)</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/short_seller_campaigns.json</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">calculate_pricing.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Weekly Deliberation</td>
+            <td style="padding: 10px 16px;">Deterministic Black-Scholes</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI Standard Output / Trading Plan</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">quality_control.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Post-Update Audit</td>
+            <td style="padding: 10px 16px;">Tier 1 Ground-Truth Cross-Check</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Automated Audit / Errata Log</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">weekly_deliberation.md</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~2K - 5K Tokens</td>
+            <td style="padding: 10px 16px;">Weekly (Weekend)</td>
+            <td style="padding: 10px 16px;">Multi-Agent Synthesis</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">private/plans/YYYY-MM-DD-plan.txt</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">thesis_authoring.md</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~10K - 15K / Ticker</td>
+            <td style="padding: 10px 16px;">Targeted (BUY Only)</td>
+            <td style="padding: 10px 16px;">Tier 1 Filings + Tier 4 Agent</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/&lt;TICKER&gt;.md</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Influential Short Seller Directory (20 Tracked Firms)</h2>
+    <p>The system maintains active search templates and track records for 20 top activist short sellers whose reports have demonstrated significant market-moving impact:</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4 style="color: #f87171;">Hindenburg Research (Nathan Anderson)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-14.5% Day 1 Avg). <strong>Attack Vectors:</strong> Forensic accounting fraud, undisclosed related party self-dealing, fabricated backlogs.</p>
+      </div>
+      <div class="docs-card">
+        <h4 style="color: #f87171;">Muddy Waters Research (Carson Block)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-12.8% Day 1 Avg). <strong>Attack Vectors:</strong> Offshore revenue round-tripping, fake customer invoices, asset striping.</p>
+      </div>
+      <div class="docs-card">
+        <h4 style="color: #fbbf24;">Citron Research (Andrew Left)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-10.2% Day 1 Avg). <strong>Attack Vectors:</strong> Extreme overvaluation hype, promotional claims, regulatory investigations.</p>
+      </div>
+      <div class="docs-card">
+        <h4 style="color: #fbbf24;">Kerrisdale Capital (Sahm Adrangi)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-9.5% Day 1 Avg). <strong>Attack Vectors:</strong> Engineering due diligence, unviable technology, multiple re-rating theses.</p>
+      </div>
+    </div>
+    <p style="font-size: 0.88rem; color: var(--text-muted);">See <code>context/sources/short_sellers_directory.json</code> for the complete catalog of 20 firms, founders, and report feed endpoints.</p>
+
+    <h2>Key Execution Rules &amp; Portfolio Safety Constraints</h2>
 
     <div class="card-grid">
       <div class="docs-card">
         <h4>Zero Ambiguity Policy</h4>
-        <p>The system never presents open-ended dilemmas or "choose X or Y depending on risk tolerance". Every position receives a single, high-conviction recommendation.</p>
+        <p>The system never presents open-ended dilemmas or "choose X or Y depending on your risk tolerance". Every position receives a single, high-conviction recommendation.</p>
       </div>
 
       <div class="docs-card">
@@ -116,13 +331,13 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
       </div>
 
       <div class="docs-card">
-        <h4>Automated Friday Settlement</h4>
-        <p>Option expirations, call assignments, and cash collateral releases occur automatically via your broker at 4:00 PM ET on Friday.</p>
+        <h4>100% Collateralized Derivatives</h4>
+        <p>Strictly NO option buying and NO naked selling. Every put sold is 100% cash-secured (or SGOV-backed); every call sold is 100% covered by common shares.</p>
       </div>
     </div>
 
-    <h2>Detailed User Guide &amp; Workflow Documentation</h2>
-    <p>For deeper exploration into specific execution protocols and strategy mechanics, consult the following guides:</p>
+    <h2>Detailed Deep-Dive Documentation</h2>
+    <p>Consult the following companion guides for deeper mathematical derivations and strategy rules:</p>
 
     <div class="card-grid">
       <a href="docs/workflow.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
@@ -133,6 +348,11 @@ private/snapshots/2026-08-15-fidelity.png</code></pre>
       <a href="docs/options.html" class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
         <h4 style="color: #818cf8;">Options &amp; Limit Pricing Mechanics &rarr;</h4>
         <p>Understanding Black-Scholes pricing models, 0.15-0.30 Delta bands, 30-45 DTE cycles, Cash-Secured Puts, Covered Calls, and net-credit rolls.</p>
+      </a>
+
+      <a href="docs/sources.html" class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
+        <h4 style="color: #fbbf24;">Data Sources &amp; Provenance Hierarchy &rarr;</h4>
+        <p>The 5-tier authority hierarchy, SEC EDGAR XBRL verification, sell-side analyst registry, and short seller research directory.</p>
       </a>
 
       <a href="docs/strategies.html" class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">

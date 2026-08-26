@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0",
+  "description": "Comprehensive directory of 20 influential activist short seller research firms and investigative hedge funds. When these firms publish short reports, significant market volatility and price dislocations can occur. Used by AI agents and track_short_sellers.py to monitor campaigns, anticipate adversarial counter-theses, and evaluate down-side catalysts.",
+  "last_updated": "2026-08-26",
+  "provenance": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+  "usage_guidance": "When investigating potential BUY candidates or existing portfolio holdings, query the search_query_template for the target ticker against the top short selling firms. If an active report exists, assess the allegation severity, evaluate whether accounting or solvency covenants are breached, and determine whether the report creates a high-margin-of-safety buyable dip or mandates immediate thesis invalidation.",
+  "short_sellers": [
+    {
+      "rank": 1,
+      "firm_name": "Hindenburg Research",
+      "founder_or_key_figures": "Nathan Anderson",
+      "website": "https://hindenburgresearch.com/",
+      "founded_year": 2017,
+      "market_impact_rating": "EXTREME",
+      "estimated_avg_day1_drop_pct": -14.5,
+      "focus_sectors": ["Technology", "Electric Vehicles", "Clean Energy", "Financial Conglomerates", "Cross-Border Rollups"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS",
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT"
+      ],
+      "notable_historical_targets": ["NKLA", "ADEN", "IEP", "SMCI", "SQ", "CLOV"],
+      "search_query_template": "site:hindenburgresearch.com OR \"Hindenburg Research\" {SYMBOL}",
+      "report_feed_url": "https://hindenburgresearch.com/feed/",
+      "investigative_style": "Forensic on-the-ground investigative reporting, FOIA requests, former employee whistleblowers, and deep forensic accounting audits."
+    },
+    {
+      "rank": 2,
+      "firm_name": "Muddy Waters Research",
+      "founder_or_key_figures": "Carson Block",
+      "website": "https://www.muddywatersresearch.com/",
+      "founded_year": 2010,
+      "market_impact_rating": "EXTREME",
+      "estimated_avg_day1_drop_pct": -12.8,
+      "focus_sectors": ["Chinese US-Listed ADRs", "Industrial Rollups", "Financial Technology", "Subprime Lending"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT",
+        "SUPPLY_CHAIN_AND_OFF_BALANCE_SHEET_DEBT"
+      ],
+      "notable_historical_targets": ["GSX", "TAL", "TRE", "BUR", "CVNA"],
+      "search_query_template": "site:muddywatersresearch.com OR \"Muddy Waters\" {SYMBOL}",
+      "report_feed_url": "https://www.muddywatersresearch.com/research/",
+      "investigative_style": "Pioneering forensic accounting investigator specializing in offshore revenue round-tripping, fake customer invoices, and corporate asset striping."
+    },
+    {
+      "rank": 3,
+      "firm_name": "Citron Research",
+      "founder_or_key_figures": "Andrew Left",
+      "website": "https://citronresearch.com/",
+      "founded_year": 2001,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -10.2,
+      "focus_sectors": ["High-Beta Tech", "Consumer Platforms", "Pharmaceuticals", "AI Infrastructure"],
+      "primary_attack_vectors": [
+        "HYPER_VALUATION_PROMOTIONAL_HYPE",
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "REGULATORY_INVESTIGATION_HAZARDS"
+      ],
+      "notable_historical_targets": ["VRX", "SHOP", "NVDA", "ROKU", "PTON"],
+      "search_query_template": "site:citronresearch.com OR \"Citron Research\" {SYMBOL}",
+      "report_feed_url": "https://citronresearch.com/reports/",
+      "investigative_style": "High-profile activist public commentary focusing on overvaluation extremes, aggressive executive promotional claims, and regulatory scrutiny."
+    },
+    {
+      "rank": 4,
+      "firm_name": "Kerrisdale Capital",
+      "founder_or_key_figures": "Sahm Adrangi",
+      "website": "https://www.kerrisdalecap.com/",
+      "founded_year": 2009,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -9.5,
+      "focus_sectors": ["Telecommunications", "Software & Cloud", "Biotechnology", "Cryptocurrency & Mining"],
+      "primary_attack_vectors": [
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "HYPER_VALUATION_PROMOTIONAL_HYPE",
+        "CUSTOMER_CONCENTRATION_FABRICATION"
+      ],
+      "notable_historical_targets": ["MSTR", "LUMN", "PLUG", "GSAT", "ASTS"],
+      "search_query_template": "site:kerrisdalecap.com OR \"Kerrisdale Capital\" {SYMBOL}",
+      "report_feed_url": "https://www.kerrisdalecap.com/blog/",
+      "investigative_style": "Technical and engineering due diligence combined with commercial viability audits and structural multiple re-rating theses."
+    },
+    {
+      "rank": 5,
+      "firm_name": "Spruce Point Capital Management",
+      "founder_or_key_figures": "Ben Axler",
+      "website": "https://www.sprucepointcap.com/",
+      "founded_year": 2009,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -8.1,
+      "focus_sectors": ["Enterprise Software", "Consumer Staples", "Industrials", "Specialty Chemicals"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT",
+        "SUPPLY_CHAIN_AND_OFF_BALANCE_SHEET_DEBT"
+      ],
+      "notable_historical_targets": ["WDAY", "OTEX", "LTHM", "CHWY", "ZTS"],
+      "search_query_template": "site:sprucepointcap.com OR \"Spruce Point Capital\" {SYMBOL}",
+      "report_feed_url": "https://www.sprucepointcap.com/research/",
+      "investigative_style": "Extremely voluminous, 100+ page forensic dossiers examining accounting non-GAAP adjustments, M&A integration failures, and CFO turnover."
+    },
+    {
+      "rank": 6,
+      "firm_name": "Culper Research",
+      "founder_or_key_figures": "Christian Bash",
+      "website": "https://culperresearch.com/",
+      "founded_year": 2019,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -11.0,
+      "focus_sectors": ["Fintech", "High-Growth Software", "Clean Energy", "Crypto Infrastructure"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "CUSTOMER_CONCENTRATION_FABRICATION",
+        "PRODUCT_DEFICIENCY_EXAGGERATION"
+      ],
+      "notable_historical_targets": ["CLSK", "SYM", "IOT", "SOFI", "MARA"],
+      "search_query_template": "site:culperresearch.com OR \"Culper Research\" {SYMBOL}",
+      "report_feed_url": "https://culperresearch.com/research",
+      "investigative_style": "Aggressive whistleblowing and channel check verification, probing unannounced customer cancellations and exaggerated contract backlogs."
+    },
+    {
+      "rank": 7,
+      "firm_name": "Grizzly Research",
+      "founder_or_key_figures": "Siegfried Eggert",
+      "website": "https://grizzlyreports.com/",
+      "founded_year": 2019,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -8.7,
+      "focus_sectors": ["Chinese US ADRs", "E-Commerce", "Hardware Technology", "Bio-Pharma"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT"
+      ],
+      "notable_historical_targets": ["PDD", "NIO", "BZ", "CAN"],
+      "search_query_template": "site:grizzlyreports.com OR \"Grizzly Research\" {SYMBOL}",
+      "report_feed_url": "https://grizzlyreports.com/feed/",
+      "investigative_style": "Forensic data scraping, network traffic analysis, app spyware dissection, and SAIC local Chinese filing reconciliation."
+    },
+    {
+      "rank": 8,
+      "firm_name": "Viceroy Research",
+      "founder_or_key_figures": "Fraser Perring",
+      "website": "https://viceroyresearch.org/",
+      "founded_year": 2016,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -13.2,
+      "focus_sectors": ["Healthcare REITs", "Financial Institutions", "European/US Cross-Border Equities"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "SUPPLY_CHAIN_AND_OFF_BALANCE_SHEET_DEBT",
+        "REGULATORY_INVESTIGATION_HAZARDS"
+      ],
+      "notable_historical_targets": ["MPW", "WDI", "SMMT", "HYPO"],
+      "search_query_template": "site:viceroyresearch.org OR \"Viceroy Research\" {SYMBOL}",
+      "report_feed_url": "https://viceroyresearch.org/feed/",
+      "investigative_style": "Relentless multi-part campaigns targeting debt covenant breaches, circular round-trip tenant lending, and accounting insolvencies."
+    },
+    {
+      "rank": 9,
+      "firm_name": "Scorpion Capital",
+      "founder_or_key_figures": "Kiril Sokoloff and Investigative Partners",
+      "website": "https://scorpioncapital.com/",
+      "founded_year": 2020,
+      "market_impact_rating": "EXTREME",
+      "estimated_avg_day1_drop_pct": -15.0,
+      "focus_sectors": ["Biotechnology", "Synthetic Biology", "Clean Tech", "Solid-State Batteries"],
+      "primary_attack_vectors": [
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "REGULATORY_INVESTIGATION_HAZARDS"
+      ],
+      "notable_historical_targets": ["DNA", "QS", "SLDP", "ENVX", "TWST"],
+      "search_query_template": "site:scorpioncapital.com OR \"Scorpion Capital\" {SYMBOL}",
+      "report_feed_url": "https://scorpioncapital.com/research",
+      "investigative_style": "In-depth audio-recorded interviews with former VP-level scientists, dissecting fraudulent lab data and unviable physics."
+    },
+    {
+      "rank": 10,
+      "firm_name": "Blue Orca Capital",
+      "founder_or_key_figures": "Soren Aandahl",
+      "website": "https://www.blueorcacapital.com/",
+      "founded_year": 2018,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -7.9,
+      "focus_sectors": ["Consumer Goods", "Cross-Border Manufacturing", "Direct Selling / MLM"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS",
+        "REGULATORY_INVESTIGATION_HAZARDS"
+      ],
+      "notable_historical_targets": ["NUS", "SAM", "BHIL", "CAN"],
+      "search_query_template": "site:blueorcacapital.com OR \"Blue Orca Capital\" {SYMBOL}",
+      "report_feed_url": "https://www.blueorcacapital.com/research",
+      "investigative_style": "Global supply chain tracking, customs import/export data reconciliation, and offshore subsidiary asset audits."
+    },
+    {
+      "rank": 11,
+      "firm_name": "Wolfpack Research",
+      "founder_or_key_figures": "Dan David",
+      "website": "https://wolfpackresearch.com/",
+      "founded_year": 2019,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -9.1,
+      "focus_sectors": ["Technology", "Autonomous Flight & Drones", "Telecommunications"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "CUSTOMER_CONCENTRATION_FABRICATION",
+        "PRODUCT_DEFICIENCY_EXAGGERATION"
+      ],
+      "notable_historical_targets": ["EH", "IQ", "GTT", "SOS"],
+      "search_query_template": "site:wolfpackresearch.com OR \"Wolfpack Research\" {SYMBOL}",
+      "report_feed_url": "https://wolfpackresearch.com/research",
+      "investigative_style": "On-site facility photography, empty manufacturing floor verification, and fake customer contract investigation."
+    },
+    {
+      "rank": 12,
+      "firm_name": "Jehoshaphat Research",
+      "founder_or_key_figures": "Anonymous Principal",
+      "website": "https://jehoshaphatresearch.com/",
+      "founded_year": 2021,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -8.5,
+      "focus_sectors": ["Enterprise Software", "Healthcare Tech", "Commercial Services"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT"
+      ],
+      "notable_historical_targets": ["TECH", "AVDX", "OMCL", "EXLS"],
+      "search_query_template": "site:jehoshaphatresearch.com OR \"Jehoshaphat Research\" {SYMBOL}",
+      "report_feed_url": "https://jehoshaphatresearch.com/research",
+      "investigative_style": "Nuanced accounting analyses focusing on deferred revenue depletion, capitalized software inflation, and DSO deterioration."
+    },
+    {
+      "rank": 13,
+      "firm_name": "Bonitas Research",
+      "founder_or_key_figures": "Matthew Wiechert",
+      "website": "https://www.bonitasresearch.com/",
+      "founded_year": 2018,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -8.0,
+      "focus_sectors": ["Renewable Energy", "Medical Devices", "Natural Resources"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS"
+      ],
+      "notable_historical_targets": ["FTCI", "RNW", "NMC"],
+      "search_query_template": "site:bonitasresearch.com OR \"Bonitas Research\" {SYMBOL}",
+      "report_feed_url": "https://www.bonitasresearch.com/company-reports/",
+      "investigative_style": "Dissecting undisclosed related-party siphoning, phantom asset purchases, and fabricated inventory balances."
+    },
+    {
+      "rank": 14,
+      "firm_name": "Gotham City Research",
+      "founder_or_key_figures": "Daniel Yu",
+      "website": "https://gothamcityresearch.com/",
+      "founded_year": 2012,
+      "market_impact_rating": "EXTREME",
+      "estimated_avg_day1_drop_pct": -16.0,
+      "focus_sectors": ["Biotechnology", "AdTech", "Industrial conglomerates"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "RELATED_PARTY_TRANSACTIONS",
+        "REGULATORY_INVESTIGATION_HAZARDS"
+      ],
+      "notable_historical_targets": ["GRF", "MBLY", "LET", "GOW"],
+      "search_query_template": "site:gothamcityresearch.com OR \"Gotham City Research\" {SYMBOL}",
+      "report_feed_url": "https://gothamcityresearch.com/research/",
+      "investigative_style": "High-conviction, devastating accounting investigations exposing multi-billion dollar holding company debt concealment."
+    },
+    {
+      "rank": 15,
+      "firm_name": "J Capital Research",
+      "founder_or_key_figures": "Anne Stevenson-Yang and Tim Murray",
+      "website": "https://www.jcapitalresearch.com/",
+      "founded_year": 2010,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -7.5,
+      "focus_sectors": ["Semiconductors", "Lithium & Battery Minerals", "SaaS & AI"],
+      "primary_attack_vectors": [
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "CUSTOMER_CONCENTRATION_FABRICATION",
+        "HYPER_VALUATION_PROMOTIONAL_HYPE"
+      ],
+      "notable_historical_targets": ["NVX", "SLDP", "CSIQ", "CAN"],
+      "search_query_template": "site:jcapitalresearch.com OR \"J Capital Research\" {SYMBOL}",
+      "report_feed_url": "https://www.jcapitalresearch.com/reports",
+      "investigative_style": "Physical site visits, environmental permit verification, and deep-dive operational feasibility testing."
+    },
+    {
+      "rank": 16,
+      "firm_name": "Fuzzy Panda Research",
+      "founder_or_key_figures": "Anonymous Investigative Group",
+      "website": "https://fuzzypandaresearch.com/",
+      "founded_year": 2019,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -12.0,
+      "focus_sectors": ["Automotive Tech", "Clean Energy", "Special Situations"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "PRODUCT_DEFICIENCY_EXAGGERATION",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT"
+      ],
+      "notable_historical_targets": ["WKHS", "FSR", "LAZR", "GOEV"],
+      "search_query_template": "site:fuzzypandaresearch.com OR \"Fuzzy Panda Research\" {SYMBOL}",
+      "report_feed_url": "https://fuzzypandaresearch.com/feed/",
+      "investigative_style": "Uncovering fake reservation numbers, undisclosed government subpoenas, and prototype vehicle malfunctions."
+    },
+    {
+      "rank": 17,
+      "firm_name": "Marcus Aurelius Value",
+      "founder_or_key_figures": "Anonymous Principal",
+      "website": "https://mavalue.org/",
+      "founded_year": 2016,
+      "market_impact_rating": "HIGH",
+      "estimated_avg_day1_drop_pct": -8.3,
+      "focus_sectors": ["Healthcare", "Specialty Finance", "Consumer Services"],
+      "primary_attack_vectors": [
+        "REGULATORY_INVESTIGATION_HAZARDS",
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION"
+      ],
+      "notable_historical_targets": ["EBS", "PRPO", "BCLI", "DFRG"],
+      "search_query_template": "site:mavalue.org OR \"Marcus Aurelius Value\" {SYMBOL}",
+      "report_feed_url": "https://mavalue.org/feed/",
+      "investigative_style": "FOIA document extractions exposing DOJ/FDA criminal inquiries, Medicare billing fraud, and undisclosed clinical failures."
+    },
+    {
+      "rank": 18,
+      "firm_name": "White Diamond Research",
+      "founder_or_key_figures": "Adam Resnick",
+      "website": "https://whitediamondresearch.com/",
+      "founded_year": 2017,
+      "market_impact_rating": "MODERATE",
+      "estimated_avg_day1_drop_pct": -6.5,
+      "focus_sectors": ["Small-Cap Bio", "Medical Devices", "Micro-Cap Speculations"],
+      "primary_attack_vectors": [
+        "HYPER_VALUATION_PROMOTIONAL_HYPE",
+        "PRODUCT_DEFICIENCY_EXAGGERATION"
+      ],
+      "notable_historical_targets": ["AVXL", "SAVA", "SESN"],
+      "search_query_template": "site:whitediamondresearch.com OR \"White Diamond Research\" {SYMBOL}",
+      "report_feed_url": "https://whitediamondresearch.com/reports",
+      "investigative_style": "Clinical trial design analysis, statistical power flaw detection, and biotech management background audits."
+    },
+    {
+      "rank": 19,
+      "firm_name": "Iceberg Research",
+      "founder_or_key_figures": "Arnaud Vagner",
+      "website": "https://iceberg-research.com/",
+      "founded_year": 2015,
+      "market_impact_rating": "VERY_HIGH",
+      "estimated_avg_day1_drop_pct": -10.5,
+      "focus_sectors": ["Commodity Trading", "Electric Vehicles", "Crypto Mining", "Battery Materials"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "SUPPLY_CHAIN_AND_OFF_BALANCE_SHEET_DEBT"
+      ],
+      "notable_historical_targets": ["NOBL", "LCID", "HYZN", "CORZ"],
+      "search_query_template": "site:iceberg-research.com OR \"Iceberg Research\" {SYMBOL}",
+      "report_feed_url": "https://iceberg-research.com/feed/",
+      "investigative_style": "Fair value mark-to-model derivatives dissection, capital commitment shortfalls, and liquidity burn modeling."
+    },
+    {
+      "rank": 20,
+      "firm_name": "Quintessential Capital Management",
+      "founder_or_key_figures": "Gabriel Grego",
+      "website": "https://qcmfunds.com/",
+      "founded_year": 2014,
+      "market_impact_rating": "EXTREME",
+      "estimated_avg_day1_drop_pct": -17.5,
+      "focus_sectors": ["Consumer Retail", "European/US Cross-Border Tech", "Cannabis"],
+      "primary_attack_vectors": [
+        "ACCOUNTING_FRAUD_REVENUE_FABRICATION",
+        "GOVERNANCE_AND_INSIDER_ENRICHMENT",
+        "PRODUCT_DEFICIENCY_EXAGGERATION"
+      ],
+      "notable_historical_targets": ["FFRF", "APHA", "BIO.MI", "PEN"],
+      "search_query_template": "site:qcmfunds.com OR \"Quintessential Capital Management\" {SYMBOL}",
+      "report_feed_url": "https://qcmfunds.com/research/",
+      "investigative_style": "Total catastrophic fraud exposes leading to delistings, criminal indictments, and total shareholder equity wipeouts."
+    }
+  ]
+}

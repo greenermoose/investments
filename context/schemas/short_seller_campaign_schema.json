@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ShortSellerCampaignRegistry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "description",
+    "last_updated",
+    "provenance",
+    "campaigns"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "campaigns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "campaign_id",
+          "symbol",
+          "company_name",
+          "short_seller_firm",
+          "publication_date",
+          "report_title",
+          "primary_allegations",
+          "allegation_severity",
+          "status"
+        ],
+        "properties": {
+          "campaign_id": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "short_seller_firm": {
+            "type": "string"
+          },
+          "publication_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "report_title": {
+            "type": "string"
+          },
+          "report_url": {
+            "type": "string"
+          },
+          "primary_allegations": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "allegation_severity": {
+            "type": "string",
+            "enum": ["CRITICAL_FRAUD", "HIGH_GOVERNANCE_RISK", "MODERATE_OVERVALUATION", "LOW_CONCERN"]
+          },
+          "stock_price_before_report": {
+            "type": "number"
+          },
+          "stock_price_day1_close": {
+            "type": "number"
+          },
+          "day1_reaction_pct": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ACTIVE_THREAT", "REFUTED_BY_COMPANY", "REGULATORY_ACTION_CONFIRMED", "SETTLED_PRICED_IN", "MONITORING"]
+          },
+          "company_rebuttal_summary": {
+            "type": "string"
+          },
+          "agent_thesis_verdict": {
+            "type": "string",
+            "enum": ["THESIS_INVALIDATED_LIQUIDATE", "THESIS_INTACT_BUY_THE_DIP", "MONITOR_RUNWAY_COVENANTS", "AVOID_LIST_CONFIRMED"]
+          },
+          "thesis_action_rationale": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -54,10 +54,15 @@ def load_universe_symbols():
             print(f"Warning: Could not read DIA holdings from {dia_path}: {e}")
             
     # Check existing http/data files
+    system_dataset_files = {
+        "universe.json", "market_prices.json", "historical_price_archive.json",
+        "analyst_coverage_registry.json", "sec_filing_calendar.json",
+        "sentiment_surveillance.json", "short_seller_campaigns.json"
+    }
     http_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
     if os.path.exists(http_data_dir):
         for fname in os.listdir(http_data_dir):
-            if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
+            if fname.endswith(".json") and fname not in system_dataset_files:
                 sym = fname.replace(".json", "")
                 symbols.add(sym)
                 

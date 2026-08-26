@@ -106,9 +106,23 @@ flowchart TD
   5. Place generated Limit Orders at market open in a single session
 ```
 
+## Operational Cadences & Token Economy
+
+The system is engineered for maximum token parsimony, separating deterministic tasks (0 LLM tokens) from focused generative agent reasoning:
+
+| Cadence | Frequency | Primary Tooling | Token Cost | Objective |
+| :--- | :--- | :--- | :--- | :--- |
+| **Cadence 1: Daily Price Sync** | Daily (Open/Close) | `fetch_market_prices.py --live` | 0 Tokens | Refresh live market quotes, trading volume, 52W bounds, and moving averages. |
+| **Cadence 2: Weekly Deliberation** | Weekend Single-Session | `weekly_deliberation.md`, `generate_plan.py` | ~2K - 5K Tokens | Ingest snapshots, calculate Black-Scholes limit orders, write plain ASCII plan. |
+| **Cadence 3: Event Surveillance** | Event-Driven / Daily | `surveil_sentiment.py`, `track_short_sellers.py` | ~500 - 1.5K Tokens | Surveil press releases, Reddit chatter, and 20 top activist short sellers. |
+| **Cadence 4: Scheduled SEC Sync** | Scheduled / Monthly | `anticipate_sec_filings.py`, `fetch_sec.py` | ~500 Tokens / Stock | Track 10-Q/10-K statutory deadlines and ingest newly filed XBRL statements. |
+| **Cadence 5: Ground-Truth Rebuild** | Rare / On-Demand | `rare_full_source_regeneration.md` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
+
+Detailed operational playbooks and copy-paste CLI commands are documented in the [User Guide & Operational Cadences](http/guide.html).
+
 ## Running the Documentation & Universe Explorer
 
-To browse the company universe, investment theses, and human-facing documentation locally:
+To browse the company universe, investment theses, operational cadences, and human-facing documentation locally:
 
 ```bash
 # Start a lightweight local static web server serving http/
@@ -116,14 +130,16 @@ python -m http.server -d http 8080
 ```
 
 Then open `http://localhost:8080` in your web browser:
-- **[Public Equities Intelligence & SEC Provenance](http/stocks.html):** Explore all 144 tracked US equities, filter by sector/status, view multi-view dossiers and dense tables, and audit primary source SEC EDGAR 10-K/10-Q filings.
+- **[User Guide & Operational Cadences](http/guide.html):** Complete operational playbooks, token economy matrix, and CLI tool instructions.
+- **[Public Equities Intelligence & SEC Provenance](http/stocks.html):** Explore all 150 tracked US equities, filter by sector/status, view multi-view dossiers and dense tables, and audit primary source SEC EDGAR 10-K/10-Q filings.
 - **[Documentation Hub](http/docs/index.html):** Read architectural guides, options math, data provenance hierarchy, and deliberation protocols.
 
 ## Getting Started
 
 1. **Explore the Public Intelligence & Documentation:**
+   - Read the [User Guide & Operational Cadences](http/guide.html).
    - Browse [Public Equities Intelligence](http/stocks.html).
-   - Read the [Documentation Hub](http/docs/index.html) or [Architecture Guide](http/docs/architecture.html).
+   - Read the [Documentation Hub](http/docs/index.html) or [Data Sources Catalog](http/docs/sources.html).
    - Review [Portfolio Constraints](http/docs/strategies.html) to understand non-negotiable boundaries.
    - Inspect [examples/](examples/README.md) to see synthetic inputs and output formats.
 

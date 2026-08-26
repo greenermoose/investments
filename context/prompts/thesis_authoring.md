@@ -59,6 +59,7 @@ When performing generative authoring on targeted companies, author non-formulaic
 
 ### 6. Explicit Invalidation Criteria (`## Explicit Invalidation Criteria (Exit Triggers)`)
 - Concrete, measurable tripwires that invalidate the thesis (e.g. gross margin collapse below threshold, loss of major customer, debt covenant breach).
+- Integrate adversarial findings: Evaluate claims from activist short seller reports (`scripts/track_short_sellers.py --symbol <TICKER>`) and prominent investor concern themes (`scripts/surveil_sentiment.py --symbols <TICKER>`). Define explicit quantitative tripwires that would confirm a bear thesis (e.g. DSO spiking >25%, loss of Tier 1 anchor client, non-reliance accounting disclosures).
 
 ## Quantitative Multi-Horizon Matrices
 

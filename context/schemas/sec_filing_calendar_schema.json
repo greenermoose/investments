@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SecFilingCalendar",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "description",
+    "last_updated",
+    "provenance",
+    "total_equities_tracked",
+    "calendar_entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "total_equities_tracked": {
+      "type": "integer"
+    },
+    "calendar_entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "company_name",
+          "cik",
+          "fiscal_year_end",
+          "last_filed_form",
+          "last_filing_date",
+          "last_period_end",
+          "next_expected_form",
+          "estimated_filing_window_start",
+          "estimated_filing_window_end",
+          "statutory_deadline",
+          "days_until_window_start",
+          "status"
+        ],
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "cik": {
+            "type": "string"
+          },
+          "fiscal_year_end": {
+            "type": "string"
+          },
+          "filer_category": {
+            "type": "string",
+            "enum": ["LARGE_ACCELERATED_FILER", "ACCELERATED_FILER", "NON_ACCELERATED_FILER", "FOREIGN_PRIVATE_ISSUER"]
+          },
+          "last_filed_form": {
+            "type": "string"
+          },
+          "last_filing_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "last_period_end": {
+            "type": "string",
+            "format": "date"
+          },
+          "next_expected_form": {
+            "type": "string",
+            "enum": ["10-Q", "10-K", "20-F", "6-K"]
+          },
+          "next_expected_fiscal_period": {
+            "type": "string"
+          },
+          "estimated_filing_window_start": {
+            "type": "string",
+            "format": "date"
+          },
+          "estimated_filing_window_end": {
+            "type": "string",
+            "format": "date"
+          },
+          "statutory_deadline": {
+            "type": "string",
+            "format": "date"
+          },
+          "days_until_window_start": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["IMMINENT_NEXT_14_DAYS", "UPCOMING_NEXT_30_DAYS", "SCHEDULED", "OVERDUE", "RECENTLY_FILED"]
+          },
+          "sec_edgar_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

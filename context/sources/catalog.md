@@ -187,7 +187,32 @@ While internal weights provide extraordinary conceptual reasoning, they possess 
 - **Digit Hallucination Risk:** High-dimensional neural representations excel at structural relationships (e.g. "Company A's gross margin expanded due to cloud mix shift") but can probabilistically drift on precise decimal numbers (e.g. reporting Q3 revenue as $14.32B instead of $14.28B).
 
 To harness the cognitive power of internal weights while eliminating hallucination risk, our system enforces three mandatory governance rules for Tier 4 Parametric Knowledge:
-1. **Explicit Provenance Declaration:** Whenever an agent provides analysis from internal weights without tool execution, it must tag the source as `TIER_4_AGENT_PARAMETRIC_KNOWLEDGE`.
-2. **Runtime Context Signature:** The agent must attach its observed runtime timestamp, active role persona, and task prompt context.
-3. **Mandatory SEC Ground-Truth Cross-Check:** Any critical historical financial figures or share counts generated from parametric memory must be verified against Tier 1 SEC EDGAR XBRL filings before being committed to production datasets.
+## Influential Short Seller Research Firms & Campaign Tracking
+
+Activistic short seller research firms conduct forensic accounting, whistleblower interviews, and investigative due diligence to expose corporate fraud, undisclosed liabilities, and structural impairments. When top-tier short sellers release reports, immediate and severe market volatility frequently follows.
+
+Our system systematically monitors the ranked directory of influential short sellers (`context/sources/short_sellers_directory.json`, schema: `context/schemas/short_sellers_directory_schema.json`):
+- **Tier 1 Impact Firms:** Hindenburg Research, Muddy Waters Research, Citron Research, Kerrisdale Capital, Gotham City Research, Scorpion Capital, and Quintessential Capital Management.
+- **Surveillance Methodology:** The `scripts/track_short_sellers.py` CLI tool scans new publications and queries search templates (e.g. `site:hindenburgresearch.com OR "Hindenburg Research" {SYMBOL}`) to determine if any portfolio holding or universe candidate is under an active short campaign.
+- **Deliberation Integration:** When a short report is published, the agent team dissects the primary attack vectors (accounting fraud, related party transactions, unviable technology, customer fabrication) to determine whether the thesis is invalidated (mandating immediate position liquidation) or if the allegation is spurious/priced-in (creating an attractive, high-margin-of-safety entry).
+
+## Investor Sentiment, Press Releases & Social Chatter Surveillance
+
+Market sentiment and retail/institutional investor chatter provide early warning signals for thesis friction, narrative shifts, and emerging operational concerns before they appear in quarterly financial statements.
+
+Our system catalogs and surveils investor sentiment sources (`context/sources/investor_sentiment_sources.json`, schema: `context/schemas/investor_sentiment_schema.json`):
+- **Corporate Press Distribution:** PR Newswire, Business Wire, GlobeNewswire, and SEC Form 8-K unscheduled event filings.
+- **Investor Chatter Communities:** Reddit communities (r/stocks, r/wallstreetbets, r/investing, r/ValueInvesting), StockTwits, and Seeking Alpha earnings transcripts and commentary.
+- **Surveillance Engine:** The `scripts/surveil_sentiment.py` CLI tool aggregates headline themes, sentiment polarity (-100 to +100), discussion velocity, and specific investor concern themes (such as margin compression, executive turnover, competitive displacement, and supply chain friction).
+
+## SEC Filing Anticipation & Statutory Schedule Calendar
+
+While market prices fluctuate continuously, official regulatory disclosures follow statutory calendar cycles governed by SEC filing deadlines:
+- **Large Accelerated Filers (Public Float >= $700M):** Form 10-K due within 60 days of fiscal year-end; Form 10-Q due within 40 days of fiscal quarter-end.
+- **Accelerated Filers (Public Float $75M - $700M):** Form 10-K due within 75 days; Form 10-Q due within 40 days.
+- **Non-Accelerated Filers:** Form 10-K due within 90 days; Form 10-Q due within 45 days.
+- **Foreign Private Issuers:** Form 20-F due within 4 months of fiscal year-end.
+
+The `scripts/anticipate_sec_filings.py` tool computes historical filing patterns for all universe equities, projecting estimated 10-Q and 10-K filing windows into `context/data/sec_filing_calendar.json` (schema: `context/schemas/sec_filing_calendar_schema.json`). This enables the system to schedule targeted XBRL ingestions (`scripts/fetch_sec.py --live`) immediately as new quarterly data is released.
+
 

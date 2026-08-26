@@ -415,6 +415,47 @@
       </div>
     </div>
 
+    <h2>Influential Activist Short Sellers Directory</h2>
+    <p>The system catalogs and tracks 20 prominent activist short selling firms whose investigative reports have demonstrated substantial market-moving impact. When reports are published, the agent team evaluates whether allegations reveal fundamental fraud (mandating Avoid/Sell action) or temporary overreaction:</p>
+
+    <div class="card-grid">
+      <div class="docs-card" style="border-left: 3px solid #ef4444;">
+        <h4 style="color: #f87171;">Hindenburg Research (Nathan Anderson)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-14.5% Day 1 Move). <strong>Focus:</strong> Forensic accounting fraud, undisclosed related-party transactions, fabricated backlogs, and whistleblower intelligence.</p>
+      </div>
+
+      <div class="docs-card" style="border-left: 3px solid #ef4444;">
+        <h4 style="color: #f87171;">Muddy Waters Research (Carson Block)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-12.8% Day 1 Move). <strong>Focus:</strong> Offshore revenue round-tripping, fake customer invoices, asset striping, and cross-border rollups.</p>
+      </div>
+
+      <div class="docs-card" style="border-left: 3px solid #f59e0b;">
+        <h4 style="color: #fbbf24;">Citron Research (Andrew Left)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-10.2% Day 1 Move). <strong>Focus:</strong> Extreme valuation multiples, aggressive promotional marketing, and regulatory investigation risks.</p>
+      </div>
+
+      <div class="docs-card" style="border-left: 3px solid #f59e0b;">
+        <h4 style="color: #fbbf24;">Kerrisdale Capital (Sahm Adrangi)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-9.5% Day 1 Move). <strong>Focus:</strong> Commercial engineering due diligence, unviable technology, and structural multiple compression.</p>
+      </div>
+    </div>
+    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">The full directory of 20 firms is maintained in <code>context/sources/short_sellers_directory.json</code> and queried via <code>scripts/track_short_sellers.py</code>.</p>
+
+    <h2>Investor Sentiment &amp; Press Release Surveillance Sources</h2>
+    <p>To detect emerging investor concerns before they appear in quarterly SEC filings, the system surveils corporate press release newswires and investor chatter forums:</p>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>Corporate Press Distribution</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;">PR Newswire, Business Wire, GlobeNewswire, and SEC Form 8-K feeds for official management announcements, clinical readouts, and executive changes.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>Investor Chatter &amp; Communities</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8;">Reddit (r/stocks, r/wallstreetbets, r/investing, r/ValueInvesting), StockTwits, and Seeking Alpha commentary for sentiment polarity, velocity, and investor skepticism.</p>
+      </div>
+    </div>
+
     <h2>Search Engines &amp; Live Ingestion Tools for AI Agents</h2>
     <p>AI agents utilize three specialized tools to conduct real-time market research and catalyst investigations:</p>
 

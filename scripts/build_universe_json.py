@@ -87,8 +87,15 @@ if os.path.exists(sec_data_path):
     with open(sec_data_path, "r", encoding="utf-8") as f:
         sec_summary = json.load(f)
 
+# System-level dataset files to exclude from individual company ticker parsing
+system_dataset_files = {
+    "universe.json", "market_prices.json", "historical_price_archive.json",
+    "analyst_coverage_registry.json", "sec_filing_calendar.json",
+    "sentiment_surveillance.json", "short_seller_campaigns.json"
+}
+
 # Iterate through all company files in http/data
-all_files = [f for f in os.listdir(http_data_dir) if f.endswith(".json") and f not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]]
+all_files = [f for f in os.listdir(http_data_dir) if f.endswith(".json") and f not in system_dataset_files]
 
 universe = []
 updated_meta = {}

@@ -17,12 +17,18 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
+SYSTEM_DATASET_FILES = {
+    "universe.json", "market_prices.json", "historical_price_archive.json",
+    "analyst_coverage_registry.json", "sec_filing_calendar.json",
+    "sentiment_surveillance.json", "short_seller_campaigns.json"
+}
+
 def load_universe_symbols():
     data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "http", "data")
     symbols = set()
     if os.path.exists(data_dir):
         for fname in os.listdir(data_dir):
-            if fname.endswith(".json") and fname not in ["universe.json", "market_prices.json", "analyst_coverage_registry.json"]:
+            if fname.endswith(".json") and fname not in SYSTEM_DATASET_FILES:
                 symbols.add(fname.replace(".json", ""))
     return sorted(list(symbols))
 

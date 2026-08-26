@@ -162,7 +162,12 @@ function processCompany(symbol, filings) {
 }
 
 function main() {
-    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== 'universe.json' && f !== 'market_prices.json' && f !== 'analyst_coverage_registry.json');
+    const systemDatasetFiles = new Set([
+        'universe.json', 'market_prices.json', 'historical_price_archive.json',
+        'analyst_coverage_registry.json', 'sec_filing_calendar.json',
+        'sentiment_surveillance.json', 'short_seller_campaigns.json'
+    ]);
+    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && !systemDatasetFiles.has(f));
     const result = {};
 
     for (const file of files) {

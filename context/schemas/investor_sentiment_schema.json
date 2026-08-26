@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InvestorSentimentSurveillance",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "description",
+    "last_updated",
+    "provenance",
+    "equities_surveillance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "surveillance_channels": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "equities_surveillance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "company_name",
+          "sentiment_score",
+          "sentiment_label",
+          "discussion_velocity",
+          "key_investor_concerns",
+          "key_bullish_catalysts",
+          "recent_press_headlines"
+        ],
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "sentiment_score": {
+            "type": "number",
+            "minimum": -100.0,
+            "maximum": 100.0
+          },
+          "sentiment_label": {
+            "type": "string",
+            "enum": ["HIGHLY_BULLISH", "BULLISH", "NEUTRAL", "BEARISH", "HIGHLY_BEARISH"]
+          },
+          "discussion_velocity": {
+            "type": "string",
+            "enum": ["VERY_HIGH", "ELEVATED", "NORMAL", "LOW", "DORMANT"]
+          },
+          "key_investor_concerns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["theme", "severity", "description"],
+              "properties": {
+                "theme": { "type": "string" },
+                "severity": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+                "description": { "type": "string" },
+                "chatter_source": { "type": "string" }
+              }
+            }
+          },
+          "key_bullish_catalysts": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "recent_press_headlines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["headline", "date", "source_name"],
+              "properties": {
+                "headline": { "type": "string" },
+                "date": { "type": "string" },
+                "source_name": { "type": "string" },
+                "url": { "type": "string" }
+              }
+            }
+          },
+          "last_surveilled_timestamp": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

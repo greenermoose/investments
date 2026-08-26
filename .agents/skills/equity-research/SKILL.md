@@ -37,8 +37,14 @@ The Equity Research Agent acts as the proactive discovery engine for the investm
   - Going Concern / Solvency Audit: Confirm absence of debt default covenants, distress restructuring, or going-concern disclosures in recent SEC 10-Q/10-K filings.
   - Off-Balance Sheet & Contingent Claims Audit: Audit footnotes for gross pension/OPEB obligations, Superfund/PFAS environmental cleanup commitments, product liability/mass tort litigation dockets, and unconditional take-or-pay purchase obligations according to `context/strategy/off_balance_sheet_liabilities_framework.md`.
 
-### 5. Universe Onboarding & Stage 2 Handoff
-- When a candidate passes Stage 1 triage and solvency/liability verification, tag it as `QUALIFIED_CANDIDATE` and register its core profile in `context/data/universe.json`.
+### 5. Investor Sentiment Surveillance & Activist Short Seller Gating
+- Before promoting a candidate to `QUALIFIED_CANDIDATE`, audit public investor sentiment and short seller activity:
+  - **Sentiment & Chatter Scan**: Execute `python scripts/surveil_sentiment.py --symbols <TICKER> --json` to detect active investor concern themes (e.g. customer concentration, margin compression, executive turnover).
+  - **Activist Short Seller Gating**: Execute `python scripts/track_short_sellers.py --symbol <TICKER>` to check whether any of the 20 influential short seller firms (Hindenburg, Muddy Waters, Citron, Kerrisdale, Scorpion, etc.) has targeted the company.
+  - If a credible active fraud or accounting investigation is documented (`CRITICAL_FRAUD`), assign the ticker to the Avoid List (`triage_status: "AVOID"`) to conserve tokens and prevent capital destruction.
+
+### 6. Universe Onboarding & Stage 2 Handoff
+- When a candidate passes Stage 1 triage, solvency verification, and sentiment/short seller gating, tag it as `QUALIFIED_CANDIDATE` and register its core profile in `context/data/universe.json`.
 - Queue the candidate for the **Investment Thesis Agent** to author a complete, multi-horizon thesis dossier in `context/theses/<TICKER>.md`.
 
 ## Deterministic Screening Tooling

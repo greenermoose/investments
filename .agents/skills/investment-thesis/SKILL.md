@@ -259,6 +259,13 @@ Every dossier in `context/theses/<TICKER>.md` must use the following standard la
 | ... | TIER_1_PRIMARY_REGULATORY | ... | deterministic_script | YYYY-MM-DD | VERIFIED_PRIMARY |
 ```
 
+## Adversarial Short-Seller Red-Teaming & Sentiment Synthesis
+
+To prevent confirmation bias and overly optimistic bull hallucinations, the Investment Thesis Agent must stress-test prospective BUY theses against adversarial intelligence before finalizing ratings:
+1. **Activist Short Seller Inquiry**: Execute `python scripts/track_short_sellers.py --symbol <TICKER>` to review historical and active short seller reports across the 20 tracked firms (`context/sources/short_sellers_directory.json`). Dissect allegations regarding accounting manipulation, unannounced churn, or undisclosed related-party transactions.
+2. **Investor Sentiment & Concern Scan**: Execute `python scripts/surveil_sentiment.py --symbols <TICKER> --json` to identify top investor friction themes across financial newswires and Reddit chatter.
+3. **Adversarial Invalidation Integration**: Formulate at least one explicit invalidation exit trigger directly addressing the primary short seller critique or highest-severity investor concern theme.
+
 ## Validation Workflow
 
 Before writing or committing any thesis:
@@ -271,4 +278,5 @@ Before writing or committing any thesis:
 4. Confirm that all 6 share count horizons are present (13, 26, 39, 52, 104, 156 weeks).
 5. Confirm that all 4 price target horizons are present (13, 52, 104, 156 weeks) with Bear $\le$ Base $\le$ Bull.
 6. Verify that the rating is strictly one of `BUY`, `HOLD`, `SELL`, or `AVOID`.
+
 

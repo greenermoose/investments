@@ -135,21 +135,29 @@ gantt
   - Limit order fill rate and slippage statistics.
   - Target price hit/miss rate across investment horizons to calibrate limit order aggression.
 
-## Phase 6: Adversarial Red-Teaming & Short Seller / Bear Thesis Engine
+## Phase 6: Adversarial Red-Teaming, Short Seller & Sentiment Surveillance
 
-**Goal:** Eliminate confirmation bias and optimistic bull hallucinations by embedding an explicit adversarial "Short Seller / Bear Thesis" red-team layer into the thesis generation and deliberation pipeline (addressing [OQI-2026-08-002](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md)).
+**Goal:** Eliminate confirmation bias, monitor market-moving activist short campaigns, surveil retail/press sentiment friction, and establish tiered operational cadences for maximum token parsimony (addressing [OQI-2026-08-002](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md)).
 
-- [ ] **6.1 Short Seller / Bear Thesis Agent Persona & Skill:**
-  - Create dedicated adversarial agent skill in `.agents/skills/bear-thesis/SKILL.md`.
-  - Equip the agent with short-seller investigative frameworks (e.g. accounting red flags, revenue recognition aggressive shifts, customer concentration risks, margin compression vectors, competitive displacement).
-- [ ] **6.2 Forensic Accounting & Autopsy Checklist:**
-  - Embed deterministic checks for Days Sales Outstanding (DSO) spikes, inventory-to-sales buildup, SBC-to-revenue ratios, off-balance sheet debt acceleration, and executive insider selling patterns.
-- [ ] **6.3 Adversarial Red-Team Deliberation Protocol:**
-  - Integrate a mandatory adversarial phase in [context/prompts/weekly_deliberation.md](file:///c:/Users/Fred/github/investments/context/prompts/weekly_deliberation.md) where the Bear Thesis Agent must actively attack prospective `BUY` candidates.
-  - Require every `BUY` candidate to survive the Bear attack with an explicit "Rebuttal and Margin of Safety Defense" before a `BUY` rating can be confirmed.
-- [ ] **6.4 Formalized Bear Target ($P_{\text{Bear}}$) and Invalidation Mandate:**
-  - Mandate quantitative Bear-case downside calculation ($P_{\text{Bear}}$) in [scripts/valuation_model.py](file:///c:/Users/Fred/github/investments/scripts/valuation_model.py) reflecting severe multiple contraction and revenue growth stall.
-  - Enforce explicit invalidation stop triggers in every thesis dossier.
+- [x] **6.1 Influential Short Sellers Directory & Surveillance CLI:**
+  - Curate comprehensive directory of 20 influential short sellers in [context/sources/short_sellers_directory.json](file:///c:/Users/Fred/github/investments/context/sources/short_sellers_directory.json) conforming to [context/schemas/short_sellers_directory_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/short_sellers_directory_schema.json).
+  - Build active short campaign tracking engine in [scripts/track_short_sellers.py](file:///c:/Users/Fred/github/investments/scripts/track_short_sellers.py) generating [context/data/short_seller_campaigns.json](file:///c:/Users/Fred/github/investments/context/data/short_seller_campaigns.json).
+- [x] **6.2 Press & Investor Sentiment Surveillance Engine:**
+  - Build corporate newswire and social chatter surveillance engine in [scripts/surveil_sentiment.py](file:///c:/Users/Fred/github/investments/scripts/surveil_sentiment.py) conforming to [context/schemas/investor_sentiment_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/investor_sentiment_schema.json) and [context/sources/investor_sentiment_sources.json](file:///c:/Users/Fred/github/investments/context/sources/investor_sentiment_sources.json).
+  - Extract sentiment scores (-100 to +100), discussion velocity, and key investor friction themes across Reddit (r/stocks, r/wallstreetbets, r/ValueInvesting) and PR wires.
+- [x] **6.3 SEC Filing Statutory Schedule & Anticipation Engine:**
+  - Implement statutory deadline and filing window projection engine in [scripts/anticipate_sec_filings.py](file:///c:/Users/Fred/github/investments/scripts/anticipate_sec_filings.py) conforming to [context/schemas/sec_filing_calendar_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/sec_filing_calendar_schema.json).
+  - Generate automated 14-day and 30-day imminent filing calendar in [context/data/sec_filing_calendar.json](file:///c:/Users/Fred/github/investments/context/data/sec_filing_calendar.json).
+- [x] **6.4 Token Parsimony Architecture & Modular Prompt Suite:**
+  - Codify token budget hierarchy in [context/strategy/token_parsimony_and_operational_cadences.md](file:///c:/Users/Fred/github/investments/context/strategy/token_parsimony_and_operational_cadences.md).
+  - Deploy modular prompt protocols for all 5 operational cadences:
+    - [context/prompts/frequent_price_volume_refresh.md](file:///c:/Users/Fred/github/investments/context/prompts/frequent_price_volume_refresh.md) (Cadence 1: Daily Price & Volume Refresh, 0 Tokens)
+    - [context/prompts/weekly_deliberation.md](file:///c:/Users/Fred/github/investments/context/prompts/weekly_deliberation.md) (Cadence 2: Weekly Single-Session Plan, ~2K-5K Tokens)
+    - [context/prompts/sentiment_and_short_seller_surveillance.md](file:///c:/Users/Fred/github/investments/context/prompts/sentiment_and_short_seller_surveillance.md) (Cadence 3: Press & Short Report Alerts, ~1K Tokens)
+    - [context/prompts/scheduled_sec_ingestion.md](file:///c:/Users/Fred/github/investments/context/prompts/scheduled_sec_ingestion.md) (Cadence 4: Scheduled SEC Ingestion, ~500 Tokens/Stock)
+    - [context/prompts/rare_full_source_regeneration.md](file:///c:/Users/Fred/github/investments/context/prompts/rare_full_source_regeneration.md) (Cadence 5: Full Ground-Truth Rebuild)
+- [x] **6.5 User Guide & Operational Cadences Web Interface:**
+  - Overhaul [http/guide.html](file:///c:/Users/Fred/github/investments/http/guide.html) into an interactive operational guide showcasing the 5 cadences, token economy table, copy-paste CLI commands, and short seller directory.
 
 ## Phase 7: Persistent Macro & Thematic Knowledge Store (`context/trends/`)
 

@@ -13,6 +13,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -28,28 +29,34 @@ if str(SCRIPTS_DIR) not in sys.path:
 from parse_snapshot import parse_csv_snapshot, process_portfolio_state
 
 
-def load_universe_recommendations():
+def load_universe_data():
     universe_path = HTTP_DATA_DIR / "universe.json"
     if not universe_path.exists():
         universe_path = ROOT_DIR / "context" / "data" / "universe.json"
 
     buy_candidates = []
+    universe_map = {}
     if universe_path.exists():
         try:
             with open(universe_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 companies = data if isinstance(data, list) else data.get("companies", [])
                 for c in companies:
+                    sym = c.get("symbol", "").upper()
+                    if sym:
+                        universe_map[sym] = c
                     if c.get("thesis_status", "").upper() == "BUY":
                         buy_candidates.append(c)
         except Exception:
             pass
 
     buy_candidates.sort(key=lambda x: float(x.get("annualized_roi_pct", 0.0)), reverse=True)
-    return buy_candidates
+    return buy_candidates, universe_map
 
 
-def build_plan_orders_for_account(acc_data, buy_candidates):
+def build_plan_orders_for_account(acc_data, buy_candidates, universe_map=None):
+    if universe_map is None:
+        universe_map = {}
     orders = []
     expirations = []
     order_num = 1
@@ -58,21 +65,71 @@ def build_plan_orders_for_account(acc_data, buy_candidates):
     positions = acc_data.get("positions", [])
     open_options = acc_data.get("open_options", [])
 
-    # Step 1: Open Options Expirations (Step 2 section)
+    # Step 1: Check Open Options for Buy to Close on Losing Propositions / Invalidation
     for opt in open_options:
-        sym = opt.get("symbol", "")
+        sym_full = opt.get("symbol", "")
+        base_sym = sym_full.split()[0].upper() if sym_full else ""
         contracts = opt.get("contracts", 1)
         mark_price = opt.get("mark_price", 0.0)
-        expirations.append({
-            "symbol": f"{sym} ({abs(contracts)} contract{'s' if abs(contracts) > 1 else ''})",
-            "status": f"Monitored position (Mark: ${mark_price:.2f})",
-            "expectation": "Expected to settle automatically at 4:00 PM ET Friday with zero mid-week intervention."
-        })
+        
+        company_info = universe_map.get(base_sym, {})
+        rating = company_info.get("thesis_status", "HOLD").upper()
 
-    # Step 2: Covered Call Opportunities (Holdings >= 100 shares)
+        # If downgraded to SELL/AVOID or marked as losing proposition, issue BUY TO CLOSE order
+        if rating in ["SELL", "AVOID"] and contracts < 0:
+            is_put = " P" in sym_full.upper() or "PUT" in sym_full.upper()
+            limit_buy = round(mark_price * 1.05, 2) if mark_price > 0 else 1.00
+            cash_debit = round(limit_buy * 100 * abs(contracts), 2)
+            
+            # Extract strike if present
+            strike = 100.0
+            occ_match = re.search(r"[CP](\d{8})$", sym_full)
+            if occ_match:
+                strike = int(occ_match.group(1)) / 1000.0
+            else:
+                strike_match = re.search(r"\$?\b(\d+(?:\.\d+)?)\s*(?:P|C|Put|Call)\b", sym_full, re.IGNORECASE)
+                if strike_match:
+                    strike = float(strike_match.group(1))
+                else:
+                    numbers = re.findall(r"\b\d+(?:\.\d+)?\b", sym_full)
+                    if numbers:
+                        strike = float(numbers[-1])
+
+            if is_put:
+                collateral_unlocked = round(strike * 100 * abs(contracts), 2)
+                collateral_text = f"Unlocks ${collateral_unlocked:,.2f} reserved cash collateral; eliminates assignment risk on declining stock"
+                rat_text = f"Thesis downgraded to {rating}; buying to close short put eliminates assignment risk on a stock trending further down."
+            else:
+                collateral_text = f"Unlocks {abs(contracts) * 100} shares of {base_sym} for immediate market open liquidation (SELL TO CLOSE)"
+                rat_text = f"Thesis downgraded to {rating}; buying to close short call releases share lock for complete liquidation at Monday open."
+
+            orders.append({
+                "num": order_num,
+                "action": "BUY TO CLOSE",
+                "symbol": f"{sym_full} (Downside Loss Mitigation)",
+                "contracts": abs(contracts),
+                "share_commitment": f"+{abs(contracts) * 100} share commitment removed",
+                "type": "Limit",
+                "limit_price": f"${limit_buy:.2f} debit (or better)",
+                "cash_impact": f"-${cash_debit:,.2f} (cash debit to close short option liability)",
+                "collateral": collateral_text,
+                "rationale": rat_text
+            })
+            order_num += 1
+        else:
+            expirations.append({
+                "symbol": f"{sym_full} ({abs(contracts)} contract{'s' if abs(contracts) > 1 else ''})",
+                "status": f"Monitored position (Mark: ${mark_price:.2f})",
+                "expectation": "Expected to settle automatically at 4:00 PM ET Friday with zero mid-week intervention."
+            })
+
+    # Step 2: Covered Call Opportunities (Holdings >= 100 shares on BUY/HOLD positions)
     for pos in positions:
-        if pos.get("cc_eligible") and pos.get("cc_eligible_blocks", 0) > 0:
-            sym = pos.get("symbol", "")
+        sym = pos.get("symbol", "").upper()
+        company_info = universe_map.get(sym, {})
+        rating = company_info.get("thesis_status", "HOLD").upper()
+
+        if rating in ["BUY", "HOLD"] and pos.get("cc_eligible") and pos.get("cc_eligible_blocks", 0) > 0:
             blocks = pos.get("cc_eligible_blocks", 1)
             mark_price = pos.get("mark_price", 100.0)
             strike = round(mark_price * 1.08, 0)
@@ -98,7 +155,6 @@ def build_plan_orders_for_account(acc_data, buy_candidates):
     for cand in buy_candidates:
         sym = cand.get("symbol", "")
         curr_p = float(cand.get("current_price", cand.get("price", 100.0)))
-        entry_p = float(cand.get("entry_price", cand.get("benchmarkEntry", curr_p * 0.95)))
         strike = round(curr_p * 0.93, 0)
         collateral_needed = strike * 100.0
 
@@ -150,7 +206,7 @@ def generate_ascii_plan(date_str=None, accounts=None):
         except ValueError:
             monday_full = f"MONDAY, {date_str}".upper()
 
-    buy_candidates = load_universe_recommendations()
+    buy_candidates, universe_map = load_universe_data()
 
     lines = []
     lines.append("=" * 80)
@@ -169,7 +225,7 @@ def generate_ascii_plan(date_str=None, accounts=None):
         lines.append("")
 
     for idx, acc in enumerate(accounts, 1):
-        orders, expirations = build_plan_orders_for_account(acc, buy_candidates)
+        orders, expirations = build_plan_orders_for_account(acc, buy_candidates, universe_map)
         acc_name = acc.get("account_name", f"PORTFOLIO {idx}").upper()
 
         lines.append("=" * 80)

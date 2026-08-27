@@ -37,4 +37,5 @@ Fundamental valuation establishes *what* to buy and *fair value*; technical indi
 ## 5. Derivatives Execution Synthesis
 - Cash-Secured Put Entry: Strike set at or below the intersection of fundamental Margin of Safety and key technical support (0.15 - 0.30 Delta, 30-45 DTE).
 - Covered Call Exit: Strike set at or above fundamental fair value target and major technical resistance (0.20 - 0.35 Delta, 21-45 DTE).
-- Strict Prohibition: No buying options and no naked options under any circumstances. All puts 100% cash-backed, all calls 100% share-backed.
+- Buy to Close (BTC) on Losing Propositions: When a fundamental thesis breaks or an equity is evaluated as a losing proposition, buy to close open short puts to eliminate assignment risk on a falling stock, and buy to close open short calls to unlock shares for complete Monday open liquidation.
+- Strict Prohibition: No speculative option buying (no long calls/puts or debit spreads) and no naked options under any circumstances. All puts 100% cash-backed, all calls 100% share-backed.

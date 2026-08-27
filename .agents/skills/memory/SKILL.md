@@ -25,7 +25,7 @@ The Memory Agent ensures the multi-agent collective never suffers from session a
 - Continuously monitor the **Explicit Invalidation Criteria** section of each thesis dossier.
 - If a hard exit trigger occurs (e.g., structural deceleration below the thesis floor, revenue miss exceeding threshold, loss of major customer, accounting irregularity, or CEO departure under distress):
   - Mark the thesis as `INVALIDATED_BROKEN`.
-  - Issue an immediate high-priority Liquidation Alert to the Lead Portfolio Manager for Monday market-open divestment.
+  - Issue an immediate high-priority Liquidation Alert to the Lead Portfolio Manager for Monday market-open divestment (including BUY TO CLOSE mandates for short puts and covered calls).
   - Never allow broken theses to linger or rationalizations to delay capital preservation.
 
 ### 4. Data Consistency & Errata Log Administration
@@ -72,7 +72,9 @@ SYMBOL:               <TICKER>
 CURRENT RATING:       DOWNGRADED TO SELL (IMMEDIATE EXIT)
 TRIGGER VIOLATED:     <Trigger Number and Description from context/theses/<TICKER>.md>
 EVIDENCE:             <Tier 1 SEC Filing Reference / Reported Metric vs. Floor>
-RECOMMENDED ACTION:   Liquidate 100% of equity position at Monday 9:30 AM ET market open.
-                      Cancel all open buy limit orders and roll/close short puts.
+RECOMMENDED ACTION:   1. BUY TO CLOSE all open short puts to avert assignment on a declining stock.
+                      2. BUY TO CLOSE all open short calls to unlock 100-share blocks.
+                      3. SELL TO CLOSE 100% of underlying common shares at Monday 9:30 AM ET.
+                      4. Cancel all open buy limit orders.
 ================================================================================
 ```

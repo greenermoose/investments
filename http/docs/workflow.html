@@ -101,7 +101,7 @@ ACCOUNT SNAPSHOT:
 --------------------------------------------------------------------------------
 STEP 1: SINGLE-SESSION ORDER ENTRY (PORTFOLIO 1)
 --------------------------------------------------------------------------------
-Submit the following 3 orders in one sitting at market open (or upon first login):
+Submit the following 4 orders in one sitting at market open (or upon first login):
 
 1. SELL TO OPEN: NVDA 09/25/2026 $120.00 Put (Cash-Secured Put)
    - Contracts:   1 (-100 share commitment)
@@ -132,6 +132,16 @@ Submit the following 3 orders in one sitting at market open (or upon first login
      single contingent OCO / conditional order during this Monday session.
    - Rationale:   Ensures disciplined delta exposure without needing to monitor
                   intraday price swings later in the week.
+
+4. BUY TO CLOSE: INTC 09/18/2026 $32.00 Put (Downside Loss Mitigation)
+   - Contracts:   1 (+100 share assignment liability eliminated)
+   - Order Type:  Limit Order (Day or GTC)
+   - Limit Price: $4.20 debit (or better)
+   - Cash Impact: -$420.00 cash debit to close open short put
+   - Collateral:  Unlocks $3,200.00 cash collateral; eliminates assignment risk on declining stock
+   - Rationale:   Thesis downgraded to AVOID following gross margin contraction;
+                  buying to close put avoids getting assigned 100 shares of a stock
+                  trending further down.
 
 --------------------------------------------------------------------------------
 STEP 2: FRIDAY EXPIRATION &amp; ASSIGNMENT EXPECTATIONS (PORTFOLIO 1)

@@ -11,8 +11,8 @@ For complete rules and decision criteria on when to use deterministic scripts ve
 - `parse_snapshot.py` (Portfolio Ingestion Agent): Parses uploaded CSV and text brokerage exports in `private/snapshots/`, isolates distinct accounts, tags covered call eligibility (>= 100 shares), and outputs normalized portfolio state.
 - `validate_thesis.py` (Investment Thesis Agent): Validates forward-looking 3-year quantitative forecasts, 13-quarter revenue paths, and price target bounds against `context/schemas/investment_thesis_schema.json`.
 - `manage_memory.py` (Memory Agent): Audits persistent dossiers in `context/theses/*.md`, tracks catalyst deadlines, checks invalidation exit triggers, and inspects errata logs.
-- `calculate_pricing.py` (Pricing Agent): Models Black-Scholes option pricing, Greeks (Delta, Theta, Gamma, Vega), Annualized Return on Collateral (AROC), net-credit rolls, and technical support/resistance limit order pricing.
-- `generate_plan.py` (Lead Portfolio Manager): Generates structured plain ASCII text Weekly Trading Plans conforming to `context/schemas/trading_plan_schema.json`.
+- `calculate_pricing.py` (Pricing Agent): Models Black-Scholes option pricing, Greeks (Delta, Theta, Gamma, Vega), Annualized Return on Collateral (AROC), net-credit rolls, Buy-to-Close (BTC) order pricing on losing propositions, and technical support/resistance limit order pricing.
+- `generate_plan.py` (Lead Portfolio Manager): Generates structured plain ASCII text Weekly Trading Plans conforming to `context/schemas/trading_plan_schema.json`, including automated BUY TO CLOSE order formulation for downgraded positions.
 - `return_engine.py`: Computes annualized return on investment across multi-year holding horizons and scenario targets.
 - `quality_control.py`: Deterministic quality control CLI tool to audit (`--audit`) and automatically fix (`--fix`) data integrity errors across symbols, company names, market prices, technical bounds, index memberships, financial math, and investment theses.
 - `fetch_market_prices.py`: Extracts verified market share prices, daily trading volumes, historical OHLCV candlestick time-series, 52-week price ranges, and technical analysis indicators.
@@ -54,8 +54,10 @@ python scripts/screen_market.py --summary
 # 5. Parse Portfolio Snapshot
 python scripts/parse_snapshot.py --demo
 
-# 6. Model Pricing (Options & Limit Orders)
+# 6. Model Pricing (Options, Rolls, BTC & Limit Orders)
 python scripts/calculate_pricing.py option --stock-price 124.50 --strike 120.00 --dte 35 --type put
+python scripts/calculate_pricing.py roll --close-cost 3.50 --open-credit 4.80 --contracts 1
+python scripts/calculate_pricing.py btc --symbol INTC --type put --strike 30.00 --current-mark 4.20 --contracts 1
 python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
 
 # 7. Audit Institutional Memory & Invalidation

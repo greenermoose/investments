@@ -24,8 +24,9 @@ This document defines the strict, non-negotiable risk and allocation boundaries 
   1. Cash-Secured Puts (CSPs): Must have 100% cash or SGOV backing the assignment value (Strike x 100). Used on BUY candidates to generate upfront yield and secure discounted entry basis.
   2. Covered Calls (CCs): Permitted only on holdings where shares >= 100 per contract. Used to harvest option premium and execute disciplined scaling out at valuation price targets.
   3. Option Rolls: Rolling existing CSPs or CCs out in time and/or strike for net credits.
+  4. Buy to Close (BTC) on Losing Propositions: Buying to close open short cash-secured puts or covered calls when an equity's fundamental thesis breaks or becomes a losing proposition, avoiding getting stuck with or assigned on a stock trending further down (or liberating shares for immediate liquidation).
 - Forbidden Derivatives & Practices:
-  1. NO Option Buying: Never buy long calls or long puts (no speculative premium bleed or debit spreads).
+  1. NO Speculative Option Buying: Never buy long calls or long puts for directional speculation (no speculative premium bleed or debit spreads). Note: Buying to close (BTC) an existing short CSP or CC to cut losses, avert assignment on a declining stock, or unlock shares for liquidation on losing propositions is fully permitted and standard risk mitigation.
   2. NO Naked Options: Never sell naked puts or naked calls.
   3. NO Margin Borrowing: Margin debt is strictly prohibited.
 

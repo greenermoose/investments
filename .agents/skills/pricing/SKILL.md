@@ -34,14 +34,17 @@ The Pricing Agent unifies all pricing calculations across both common equities a
   - Target Delta: 0.20 to 0.35.
   - Target DTE: 21 to 45 days.
 
-### 4. Defensive Option Rolling Rules
-- Roll Trigger (Puts): When underlying breaches strike price (ITM) or extrinsic value drops below 20% of initial premium with > 14 DTE.
+### 4. Defensive Option Rolling & Buy to Close (BTC) Rules
+- Roll Trigger (Puts): When underlying breaches strike price (ITM) or extrinsic value drops below 20% of initial premium with > 14 DTE, provided the thesis remains intact.
 - Roll Trigger (Calls): When underlying surges past strike and assignment would cause premature exit below revised fair value.
 - Net Credit Mandate: All rolls must be executed out in time and away in strike strictly for a net credit. Never execute a roll for a net debit.
+- Buy to Close (BTC) Trigger (Losing Propositions): When a holding's thesis breaks or an equity is deemed a losing proposition:
+  - Short Puts: Buy to close the put on Monday open to avert assignment and eliminate downside exposure on a declining stock.
+  - Short Calls: Buy to close the call on Monday open to unlock 100-share blocks for immediate common stock liquidation.
 
 ## Deterministic Pricing Tooling
 
-Calculate Black-Scholes pricing, Greeks, AROC, and technical limit bounds deterministically using `scripts/calculate_pricing.py`:
+Calculate Black-Scholes pricing, Greeks, AROC, net-credit rolls, and technical limit bounds deterministically using `scripts/calculate_pricing.py`:
 
 ```bash
 # Calculate CSP pricing and Greeks (Delta, Theta, AROC)
@@ -52,6 +55,9 @@ python scripts/calculate_pricing.py option --symbol MSFT --stock-price 415.00 --
 
 # Verify net-credit roll economics
 python scripts/calculate_pricing.py roll --close-cost 3.50 --open-credit 4.80 --contracts 1
+
+# Calculate Buy-to-Close (BTC) order pricing on a losing proposition / broken thesis
+python scripts/calculate_pricing.py btc --symbol INTC --type put --strike 30.00 --current-mark 4.50 --contracts 1 --reason "Thesis invalidation"
 
 # Calculate technical limit order price bounds
 python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
@@ -64,6 +70,7 @@ python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 
 | **Cash-Secured Put** | 0.15 - 0.30 | 30 - 45 Days | AROC >= 12% - 18% | 100% Cash or SGOV |
 | **Covered Call** | 0.20 - 0.35 | 21 - 45 Days | Yield Harvest + Exit Target | 100 Shares Common Stock |
 | **Defensive Roll** | Out & Away | 30 - 60 Days | Strictly Net Credit ($> $0.00) | Maintained from original leg |
+| **Buy to Close (BTC)** | N/A (Closing) | Immediate (Mon Open) | Downside Loss Mitigation | Releases cash / Unlocks shares |
 | **Equity Buy Limit** | At/Near Support | Single Session | Below Benchmark Entry | Available Settled Cash |
 | **Equity Sell Limit** | At/Near Resistance | Single Session | Intrinsic Fair Value Target | Active Common Shares |
 

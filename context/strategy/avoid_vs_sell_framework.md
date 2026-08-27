@@ -24,7 +24,7 @@ To maximize operational efficiency and capital preservation, the system establis
 | Dimension | `AVOID` | `SELL` |
 | :--- | :--- | :--- |
 | **Primary Subsystem Role** | Universe screening gate & compute defense filter | Portfolio disposition & capital reallocation mandate |
-| **Actionable Mandate** | Do not own, do not sell cash-secured puts, and freeze deep 13Q/6-horizon modeling | Liquidate shares, roll covered calls in-the-money, and reallocate dry powder |
+| **Actionable Mandate** | Do not own, do not sell cash-secured puts, freeze deep 13Q/6-horizon modeling, and immediately BUY TO CLOSE any legacy short puts/calls | Liquidate shares, BUY TO CLOSE short calls to liberate shares for sale, BUY TO CLOSE short puts to prevent assignment on broken theses, and reallocate dry powder |
 | **Underlying Business Quality** | Structurally broken, unviable unit economics, chronic dilution, or insolvency risk | High or solid business quality whose valuation has outrun intrinsic compounding capacity |
 | **Valuation Multiple Sensitivity** | Uninvestable regardless of how cheap the multiple appears (classic value trap) | Temporarily overvalued (expected 3-year CAGR < 10%); attractive again upon multiple contraction |
 | **Token Investment Policy** | Lightweight triage metadata card only (~500–1,500 tokens) | Full institutional dossier maintenance to optimize exit timing and covered call strikes |
@@ -83,5 +83,5 @@ An equity is classified as `SELL` not because the underlying business is inheren
 
 1. **Equity Research Agent**: Focuses on high-conviction discovery. Pre-screens candidate tickers against the `AVOID` triage criteria. If a candidate triggers `AVOID` red flags, it is cataloged in the Avoid Registry without triggering expensive deep research.
 2. **Investment Thesis Agent**: Focuses deep 13-quarter, 6-horizon, and 4-horizon modeling exclusively on `QUALIFIED_CANDIDATE` equities. When authoring dossiers, `AVOID` ratings are populated via lightweight triage templates, while full quantitative forecasting is applied to `BUY`, `HOLD`, and `SELL`.
-3. **Memory Agent**: Tracks de-listing triggers for `AVOID` equities and invalidation exit triggers for active `HOLD`/`BUY` positions transitioning to `SELL`.
-4. **Lead Portfolio Manager Agent**: Enforces strict execution isolation: `AVOID` tickers are never included in trade orders or cash-secured put candidates; `SELL` tickers receive concrete single-session limit sell orders or aggressive ITM covered call exit structures.
+3. **Memory Agent**: Tracks de-listing triggers for `AVOID` equities and invalidation exit triggers for active `HOLD`/`BUY` positions transitioning to `SELL`. When an invalidation is detected, alerts the team to cancel buy orders, BUY TO CLOSE short puts, and BUY TO CLOSE short calls.
+4. **Lead Portfolio Manager Agent**: Enforces strict execution isolation: `AVOID` tickers are never included in trade orders or cash-secured put candidates; `SELL` tickers receive concrete single-session limit sell orders, `BUY TO CLOSE` orders on short puts (to eliminate assignment risk on a stock going down), or `BUY TO CLOSE` orders on short calls (to liberate 100-share blocks for immediate market-open sale).

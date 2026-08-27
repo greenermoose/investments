@@ -151,10 +151,27 @@
       <li><strong>Limit Order Setting:</strong> Modeled fair values are used to specify Monday 9:30 AM ET limit prices that guarantee favorable entry pricing.</li>
     </ul>
 
-    <h2>Rolling Mechanics</h2>
-    <div class="callout">
-      <div class="callout-title">The Net-Credit Roll Rule</div>
-      <p>When rolling options (e.g. threatened in-the-money CSPs or expiring CCs), positions are rolled out in time and away in strike <strong>strictly for a net credit</strong>. Never pay a debit to roll an options position.</p>
+    <h2>Rolling &amp; Buy-to-Close Mechanics</h2>
+
+    <div class="card-grid">
+      <div class="docs-card">
+        <h4>The Net-Credit Roll Rule</h4>
+        <p>When rolling options on thesis-intact holdings (e.g. threatened in-the-money CSPs or expiring CCs), positions are rolled out in time and away in strike <strong>strictly for a net credit</strong>. Never pay a debit to roll an options position.</p>
+      </div>
+
+      <div class="docs-card">
+        <h4>Buy to Close (BTC) on Losing Propositions</h4>
+        <p>When an underlying equity's thesis breaks or is deemed a losing proposition, we execute <strong>BUY TO CLOSE</strong> limit orders on Monday open:</p>
+        <ul>
+          <li><strong>Short Puts:</strong> Closes the put contract to avert assignment, eliminating the downside risk of being forced to buy a stock going further down.</li>
+          <li><strong>Short Calls:</strong> Closes the short call to release the collateral lock, enabling immediate Monday open liquidation of underlying shares.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-title">Capital Preservation Over Premium Retention</div>
+      <p>Accepting a contained debit to buy to close a short put or call is far superior to taking assignment on a declining value trap or holding locked shares during a downward spiral. The system decisively prioritizes multi-decade compounding and downside defense.</p>
     </div>
   </main>
 </body>

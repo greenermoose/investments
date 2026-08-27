@@ -64,19 +64,19 @@
       <div class="docs-card">
         <h4>4. Memory Agent</h4>
         <p><strong>Input:</strong> Persistent markdown dossiers in <code>context/theses/*.md</code>, errata logs, and historical run contexts.</p>
-        <p><strong>Responsibility:</strong> Tracks cross-run continuity, evaluates multi-quarter catalyst outcomes, audits invalidation criteria, and flags broken theses for decisive liquidation.</p>
+        <p><strong>Responsibility:</strong> Tracks cross-run continuity, evaluates multi-quarter catalyst outcomes, audits invalidation criteria, and flags broken theses for decisive liquidation (including BUY TO CLOSE mandates on open derivatives).</p>
       </div>
 
       <div class="docs-card">
         <h4>5. Pricing Agent</h4>
         <p><strong>Input:</strong> Thesis price targets, technical support/resistance levels, moving averages, and volatility data.</p>
-        <p><strong>Responsibility:</strong> Predicts price trends to calculate technical limit orders, models Black-Scholes pricing for Cash-Secured Puts and Covered Calls, and verifies net-credit rolls.</p>
+        <p><strong>Responsibility:</strong> Predicts price trends to calculate technical limit orders, models Black-Scholes pricing for Cash-Secured Puts and Covered Calls, verifies net-credit rolls, and computes Buy to Close (BTC) limit prices on losing propositions.</p>
       </div>
 
       <div class="docs-card">
         <h4>6. Lead Portfolio Manager</h4>
         <p><strong>Input:</strong> Sub-agent reports and policy constraints.</p>
-        <p><strong>Responsibility:</strong> Synthesizes executive decisions into a concise plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) and enforces single-session Monday execution.</p>
+        <p><strong>Responsibility:</strong> Synthesizes executive decisions into a concise plain-text Weekly Trading Plan (<code>private/plans/YYYY-MM-DD-plan.txt</code>) with single-session Monday execution (issuing BUY TO CLOSE orders on losing propositions to eliminate assignment risk or unlock shares for sale).</p>
       </div>
     </div>
 

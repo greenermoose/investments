@@ -34,8 +34,9 @@ The Investment Thesis Agent synthesizes all gathered public information (Tier 1 
 - **Permitted Strategies**: Systematically sell options (Cash-Secured Puts and Covered Calls) to harvest volatility premium, accelerate annualized ROI, and lower the effective purchase basis.
   - **Cash-Secured Puts (CSPs)**: Sold on high-conviction BUY candidates at or below intrinsic fair value (0.15 to 0.30 Delta, 30-45 DTE).
   - **Covered Calls (CCs)**: Sold against 100-share lots approaching valuation targets (0.20 to 0.35 Delta, 21-45 DTE) to monetize holding periods and scale out systematically.
+  - **Buy to Close (BTC) on Losing Propositions**: If an equity is downgraded or triggers invalidation exit criteria, open short puts are bought to close to prevent assignment on a falling stock, and open short calls are bought to close to release the shares for full market-open sale.
 - **Strict Risk Prohibitions**:
-  - **NO Buying Options**: Never purchase long calls or long puts (no speculative premium outlays or debit spreads).
+  - **NO Speculative Option Buying**: Never purchase long calls or long puts for directional speculation (no speculative premium outlays or debit spreads). Note: Buying to Close (BTC) an existing short position to cut loss on a broken thesis is explicitly authorized.
   - **NO Naked Option Selling**: Never sell naked puts or naked calls.
   - **100% Collateralization**: Every put sold must be 100% secured by cash or SGOV cash proxy. Every call sold must be 100% backed by underlying common stock.
 

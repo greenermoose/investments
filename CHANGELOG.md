@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.21.0] - 2026-08-27
+
+### Buy-to-Close (BTC) Risk Control on Losing Propositions & Invalidation
+- **Strategy Rule & Clarification (`AGENTS.md`, `context/strategy/options_modeling.md`, `context/strategy/portfolio_constraints.md`, `context/strategy/valuation_framework.md`, `context/strategy/avoid_vs_sell_framework.md`):** Codified Buy to Close (BTC) on losing propositions and invalidated theses across all core strategy documents. Explicitly distinguished between prohibited speculative long option buying (outright calls/puts/debit spreads) and permitted defensive BTC orders on short options to prevent assignment on falling stocks (short puts) or liberate locked shares for immediate liquidation (short calls).
+- **Agent Skill & Prompt Integration (`.agents/skills/pricing/SKILL.md`, `.agents/skills/memory/SKILL.md`, `.agents/skills/lead-portfolio-manager/SKILL.md`, `.agents/skills/investment-thesis/SKILL.md`, `context/prompts/weekly_deliberation.md`):** Updated Memory Agent invalidation alert protocols to mandate immediate BUY TO CLOSE orders; updated Pricing Agent with BTC pricing mechanics; updated Lead Portfolio Manager to output Monday open BTC limit orders.
+- **Deterministic Pricing CLI (`scripts/calculate_pricing.py`):** Added `btc` subcommand (Mode 4: Buy-to-Close Calculator) to calculate limit buyback prices, single-session fill buffers, debit cash impact, and unlocked collateral / shares.
+- **Deterministic Trading Plan Generator (`scripts/generate_plan.py`):** Integrated automatic `BUY TO CLOSE` order generation for open short options on downgraded positions (`SELL` or `AVOID`).
+- **Web Documentation & Guides (`http/docs/strategies.html`, `http/docs/options.html`, `http/docs/architecture.html`, `http/docs/workflow.html`, `http/guide.html`, `http/index.html`):** Updated public documentation and strategy tables with detailed explanations of Buy-to-Close mechanics and capital preservation principles.
+
 ## [2.20.0] - 2026-08-18
 
 ### Permanent Precision Article Search Permalinks for Analyst Coverage

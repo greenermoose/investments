@@ -38,7 +38,8 @@ The Lead Portfolio Manager acts as the ultimate fiduciary and decision-making sy
 ### 6. Portfolio Concentration & Cash Allocation
 - Aim for approximately 25 or fewer active equity holdings per portfolio (soft target guideline; high conviction allows 1 concentrated holding up to 26+ positions).
 - Allocate all uninvested cash collateral into `SGOV` for risk-free yield.
-- Enforce 100% cash/SGOV collateralization for short puts and 100% share collateralization for short calls. Strictly NO option buying and NO naked selling.
+- Enforce 100% cash/SGOV collateralization for short puts and 100% share collateralization for short calls. Strictly NO speculative option buying (no long calls/puts or debit spreads) and NO naked selling.
+- Buy to Close (BTC) on Losing Propositions: When an equity is downgraded to `SELL` or `AVOID`, or is identified as a losing proposition, author single-session `BUY TO CLOSE` orders to eliminate assignment risk on short puts or unlock 100-share blocks on short calls for immediate equity liquidation.
 
 ## Deterministic Plan Generation Tooling
 

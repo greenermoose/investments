@@ -118,9 +118,11 @@ gantt
   - Identify holdings with 100 or more shares.
   - Select OTM strike prices aligned with the 52-week thesis price target and technical resistance levels.
   - Compute Monday limit order prices to harvest incremental yield or structure disciplined profitable exits.
-- [x] **4.4 Option Rolling Calculator:**
+- [x] **4.4 Option Rolling & Buy-to-Close (BTC) Calculator:**
   - Validate net-credit roll economics via [scripts/calculate_pricing.py](file:///c:/Users/Fred/github/investments/scripts/calculate_pricing.py) (`roll` subcommand).
   - Enforce strict risk rule prohibiting net-debit rolls.
+  - Calculate Buy-to-Close (BTC) limit prices and risk mitigation metrics on losing propositions / broken theses via [scripts/calculate_pricing.py](file:///c:/Users/Fred/github/investments/scripts/calculate_pricing.py) (`btc` subcommand).
+  - Avert assignment into declining stocks (short puts) and liberate 100-share blocks for immediate market open liquidation (short calls).
 
 ## Phase 5: Single-Session Weekly Execution & Deliberation Engine
 

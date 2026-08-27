@@ -129,6 +129,16 @@ def main():
     limit_parser.add_argument("--resistance", type=float, default=None, help="Technical resistance level")
     limit_parser.add_argument("--json", action="store_true", help="Output raw JSON")
 
+    # Mode 4: Buy-to-Close (BTC) on Losing Propositions
+    btc_parser = subparsers.add_parser("btc", help="Calculate Buy-to-Close order pricing on losing propositions / broken theses")
+    btc_parser.add_argument("--symbol", type=str, required=True, help="Stock ticker symbol")
+    btc_parser.add_argument("--type", choices=["put", "call"], default="put", help="Option type (put or call)")
+    btc_parser.add_argument("--strike", type=float, required=True, help="Option strike price")
+    btc_parser.add_argument("--current-mark", type=float, required=True, help="Current option mark/ask price per share")
+    btc_parser.add_argument("--contracts", type=int, default=1, help="Number of contracts to close")
+    btc_parser.add_argument("--reason", type=str, default="Thesis invalidation / downside avoidance", help="Strategic rationale")
+    btc_parser.add_argument("--json", action="store_true", help="Output raw JSON")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -217,6 +227,56 @@ def main():
         print(f"Resistance Level:     ${bounds['resistance_level']:.2f}")
         print(f"Suggested Buy Limit:  ${bounds['conservative_buy_limit']:.2f}")
         print(f"Suggested Sell Limit: ${bounds['disciplined_sell_limit']:.2f}")
+        print("=" * 70)
+
+    elif args.command == "btc":
+        limit_buy_price = round(args.current_mark * 1.05, 2)
+        total_cash_debit = round(limit_buy_price * 100 * args.contracts, 2)
+        
+        if args.type == "put":
+            collateral_unlocked = round(args.strike * 100 * args.contracts, 2)
+            shares_unlocked = 0
+            mitigation_text = f"Eliminates assignment liability of {args.contracts * 100} shares (${collateral_unlocked:,.2f} cash exposure) on declining stock."
+        else:
+            collateral_unlocked = 0.0
+            shares_unlocked = args.contracts * 100
+            mitigation_text = f"Unlocks {shares_unlocked} common shares for immediate Monday market open liquidation (SELL TO CLOSE)."
+
+        output = {
+            "symbol": args.symbol.upper(),
+            "type": args.type.upper(),
+            "strike": args.strike,
+            "contracts": args.contracts,
+            "current_mark": args.current_mark,
+            "suggested_limit_buy_price": limit_buy_price,
+            "total_cash_debit": total_cash_debit,
+            "collateral_unlocked_usd": collateral_unlocked,
+            "shares_unlocked": shares_unlocked,
+            "reason": args.reason,
+            "risk_mitigation": mitigation_text,
+            "order_instruction": f"BUY TO CLOSE {args.contracts}x {args.symbol.upper()} ${args.strike:.2f} {args.type.capitalize()} (Limit ${limit_buy_price:.2f} debit)"
+        }
+
+        if args.json:
+            print(json.dumps(output, indent=2))
+            return
+
+        print("=" * 70)
+        print(f"PRICING AGENT: BUY TO CLOSE (BTC) - LOSING PROPOSITION EXIT")
+        print("=" * 70)
+        print(f"Symbol:               {output['symbol']}")
+        print(f"Contract:             ${args.strike:.2f} {output['type']} ({args.contracts} contract{'s' if args.contracts > 1 else ''})")
+        print(f"Current Mark / Ask:   ${args.current_mark:.2f} / share")
+        print(f"Suggested Buy Limit:  ${limit_buy_price:.2f} (Single-session fill buffer)")
+        print(f"Total Debit Impact:   -${total_cash_debit:,.2f}")
+        if args.type == "put":
+            print(f"Collateral Unlocked:  +${collateral_unlocked:,.2f} cash back to dry powder")
+        else:
+            print(f"Shares Unlocked:      +{shares_unlocked} shares liberated for immediate sale")
+        print(f"Strategic Rationale:  {args.reason}")
+        print(f"Risk Mitigation:      {mitigation_text}")
+        print("-" * 70)
+        print(f"Order Instruction:    {output['order_instruction']}")
         print("=" * 70)
 
 

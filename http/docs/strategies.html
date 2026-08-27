@@ -204,13 +204,20 @@
       </li>
     </ul>
 
+    <h3>C. Buy to Close (BTC) - Downside Risk Elimination on Losing Propositions</h3>
+    <ul>
+      <li><strong>Mechanism:</strong> If we have sold cash-secured puts or covered calls on equities that we determine are losing propositions or undergoing structural thesis invalidation, we buy to close (BTC) the short puts or calls on Monday market open.</li>
+      <li><strong>Short Put Defense:</strong> Buying to close short puts on deteriorating companies strictly prevents assignment, eliminating the severe risk of being forced to buy 100 shares of a company trending further down.</li>
+      <li><strong>Short Call Defense:</strong> Buying to close short calls on deteriorating positions unlocks the underlying 100-share blocks so the entire equity position can be immediately sold and liquidated at market open.</li>
+    </ul>
+
     <h2>7. Non-Negotiable Risk Prohibitions &amp; Boundary Rules</h2>
     <p>Risk management is paramount. To eliminate catastrophic ruin risk and preserve capital for 20-year compounding, the following rules are strictly enforced across all portfolios:</p>
 
     <div class="callout warning">
       <div class="callout-title">Strict Derivatives Prohibitions</div>
       <ul>
-        <li><strong>NO Buying Options:</strong> We never buy long calls, long puts, or speculative debit spreads. Long options suffer from perpetual time decay (Theta drag) and carry a high statistical probability of total loss.</li>
+        <li><strong>NO Speculative Option Buying:</strong> We never buy long calls, long puts, or speculative debit spreads for directional bets. Long options suffer from perpetual time decay (Theta drag) and carry a high statistical probability of total loss. <em>(Note: Buying to close existing short positions on losing propositions to avert assignment or liquidate shares is fully permitted and enforced).</em></li>
         <li><strong>NO Naked Options:</strong> We never sell naked puts or naked calls under any circumstances. Naked options create unbounded liability and margin call risk.</li>
         <li><strong>100% Collateralization:</strong> Every Cash-Secured Put MUST have 100% cash or <code>SGOV</code> backing the full assignment liability (<span class="math-inline"><span class="math-txt">Strike</span> &times; 100 &times; <span class="math-txt">Contracts</span></span>). Every Covered Call MUST be backed by 100 actual shares owned.</li>
         <li><strong>NO Margin Debt:</strong> Borrowing on margin is strictly prohibited.</li>
@@ -250,12 +257,12 @@
         </tr>
         <tr>
           <td><strong>Permitted Derivatives</strong></td>
-          <td>Cash-Secured Puts (CSPs) and Covered Calls (CCs) only.</td>
-          <td>Generates steady income, lowers cost basis, and structures systematic exits without debt.</td>
+          <td>Cash-Secured Puts (CSPs), Covered Calls (CCs), and Buy to Close (BTC) exits.</td>
+          <td>Generates steady income, lowers cost basis, structures exits, and cuts downside risk on broken theses.</td>
         </tr>
         <tr>
           <td><strong>Forbidden Derivatives</strong></td>
-          <td>NO option buying (long calls/puts), NO naked options, NO debit spreads.</td>
+          <td>NO speculative option buying (long calls/puts), NO naked options, NO debit spreads.</td>
           <td>Eliminates time decay drag, speculative loss of premium, and infinite downside liability.</td>
         </tr>
         <tr>

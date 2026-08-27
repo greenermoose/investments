@@ -247,6 +247,36 @@ function renderCurrentView() {
 // Data Ingestion & State Initialization
 // ============================================================================
 
+function populateSectorDropdown(data) {
+  const sectorSelect = document.getElementById('sector-select');
+  if (!sectorSelect) return;
+
+  const currentVal = sectorSelect.value || currentSector || 'ALL';
+  const sectors = Array.from(new Set(data.map(d => d.sector).filter(Boolean))).sort();
+
+  sectorSelect.innerHTML = '';
+  
+  const allOption = document.createElement('option');
+  allOption.value = 'ALL';
+  allOption.textContent = 'All Sectors';
+  sectorSelect.appendChild(allOption);
+
+  sectors.forEach(sec => {
+    const opt = document.createElement('option');
+    opt.value = sec;
+    opt.textContent = sec;
+    sectorSelect.appendChild(opt);
+  });
+
+  if (sectors.includes(currentVal) || currentVal === 'ALL') {
+    sectorSelect.value = currentVal;
+    currentSector = currentVal;
+  } else {
+    sectorSelect.value = 'ALL';
+    currentSector = 'ALL';
+  }
+}
+
 async function loadUniverse() {
   try {
     const response = await fetch('data/universe.json');
@@ -256,11 +286,18 @@ async function loadUniverse() {
     // Update summary ribbon via component
     updateStatsRibbon(universeData);
 
+    // Dynamically populate sector filter options from dataset
+    populateSectorDropdown(universeData);
+
     // Initial render and deep link check
     renderCurrentView();
     checkUrlHash();
   } catch (err) {
     console.error('Error loading public equities:', err);
+    const resultsEl = document.getElementById('results-count');
+    if (resultsEl) {
+      resultsEl.textContent = 'Error loading public equities data';
+    }
     const gridEl = document.getElementById('company-grid');
     if (gridEl) {
       gridEl.innerHTML = `

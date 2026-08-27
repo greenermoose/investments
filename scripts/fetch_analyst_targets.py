@@ -1,7 +1,7 @@
 """
 Wall Street Analyst Price Targets & Coverage Fetcher
 Fetches and ground-truths sell-side analyst research targets and forecasts from MarketBeat
-for all 150 constituents in the tracked investment universe.
+for constituents in the tracked investment universe.
 
 Uses the historical price archive for accurate market_price_at_announcement lookups
 and the ranked press release sources directory for targeted search URLs.

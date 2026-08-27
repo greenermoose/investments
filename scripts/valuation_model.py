@@ -2,7 +2,7 @@
 Valuation Model & Quantitative Forecasting Engine
 Deterministic bottom-up financial forecasting, multi-horizon valuation modeling,
 TAM & market share dynamics, product-level catalyst bridges, and Return Engine parameterization
-for all 150 universe equities.
+for all universe equities.
 
 Conforms to:
 - context/schemas/investment_thesis_schema.json

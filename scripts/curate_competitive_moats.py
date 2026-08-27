@@ -1,5 +1,5 @@
 """
-Curate High-Quality Institutional-Grade Competitive Moat Analyses for all 150 Equities
+Curate High-Quality Institutional-Grade Competitive Moat Analyses for Universe Equities
 Populates bespoke, research-backed competitive moat analyses in scripts/data/company_meta.json
 and synchronizes with valuation models and thesis dossiers.
 

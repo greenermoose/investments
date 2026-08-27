@@ -10,8 +10,10 @@ export function updateStatsRibbon(universeData) {
   const statHoldEl = document.getElementById('stat-hold-count');
   const statIndexEl = document.getElementById('stat-index-count');
 
-  if (statTotalEl) statTotalEl.textContent = universeData.length;
-  if (statBuyEl) statBuyEl.textContent = universeData.filter(c => c.thesis_status === 'BUY').length;
-  if (statHoldEl) statHoldEl.textContent = universeData.filter(c => c.thesis_status === 'HOLD').length;
-  if (statIndexEl) statIndexEl.textContent = universeData.filter(c => c.is_index_member).length;
+  const data = Array.isArray(universeData) ? universeData : [];
+
+  if (statTotalEl) statTotalEl.textContent = data.length;
+  if (statBuyEl) statBuyEl.textContent = data.filter(c => c.thesis_status === 'BUY').length;
+  if (statHoldEl) statHoldEl.textContent = data.filter(c => c.thesis_status === 'HOLD').length;
+  if (statIndexEl) statIndexEl.textContent = data.filter(c => c.is_index_member).length;
 }

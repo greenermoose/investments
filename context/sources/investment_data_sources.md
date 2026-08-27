@@ -33,7 +33,7 @@ Investment data sources fall into four distinct operational categories:
 
 ## Detailed Breakdown of Primary Sources for Building the US Equities Master Database
 
-To expand our coverage from our current 150 tracked universe equities to the full universe of approximately 4,000 investable US public companies, we do not need to rely on brittle third-party screeners or expensive commercial subscriptions. We can build our own authoritative, deterministic master database using Tier 1 exchange and regulatory feeds.
+To expand our coverage from our tracked universe equities to the full universe of approximately 4,000 investable US public companies, we do not need to rely on brittle third-party screeners or expensive commercial subscriptions. We can build our own authoritative, deterministic master database using Tier 1 exchange and regulatory feeds.
 
 ### 1. SEC EDGAR Master Exchange Mapping (`company_tickers_exchange.json`)
 

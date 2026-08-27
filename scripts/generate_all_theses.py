@@ -1,7 +1,7 @@
 """
 Generate All Universe Thesis Dossiers Script
 Authors and updates institutional-grade investment thesis dossiers in context/theses/<TICKER>.md
-for all 150 public equities in the universe conforming strictly to:
+for public equities in the universe conforming strictly to:
 - context/schemas/investment_thesis_schema.json
 - AGENTS.md (No emojis, no standalone horizontal rules, 20-year hurdle standard)
 """

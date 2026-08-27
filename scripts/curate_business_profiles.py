@@ -1,5 +1,5 @@
 """
-Curate High-Quality 2-Paragraph Business Profiles for all 150 Equities
+Curate High-Quality 2-Paragraph Business Profiles for Universe Equities
 Populates bespoke, informative, institutional-grade business profiles in scripts/data/company_meta.json
 for every company in the universe.
 """
@@ -627,7 +627,7 @@ def update_company_meta():
     if missing_in_profiles:
         print(f"WARNING: Tickers missing in PROFILES dictionary: {missing_in_profiles}")
     else:
-        print("SUCCESS: All 150 tickers have curated business profiles defined.")
+        print(f"SUCCESS: All {len(PROFILES)} defined tickers have curated business profiles.")
         
     for sym, profile_text in PROFILES.items():
         if sym in meta:

@@ -14,7 +14,7 @@ This prompt protocol defines the authoring standards, quantitative forecasting m
 To optimize token efficiency and analytical depth, the system supports dual thesis authoring workflows:
 
 ### Mode A: Full Universe Batch Regeneration
-Generates grounded multi-horizon quantitative matrices, 13Q revenue paths, 6H share counts, and 4H price target bands across all 150 universe constituents:
+Generates grounded multi-horizon quantitative matrices, 13Q revenue paths, 6H share counts, and 4H price target bands across all universe constituents:
 ```bash
 python scripts/generate_all_theses.py --full
 ```

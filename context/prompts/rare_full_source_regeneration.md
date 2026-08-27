@@ -19,7 +19,7 @@ python scripts/fetch_sec.py --live
 
 ### Step 2: Live Regulatory Ingestion Across Universe
 
-Pull full XBRL company facts for all 150 universe constituents directly from the SEC EDGAR API (enforcing the SEC rate limit):
+Pull full XBRL company facts for all universe constituents directly from the SEC EDGAR API (enforcing the SEC rate limit):
 
 ```bash
 # Live SEC XBRL statements fetch

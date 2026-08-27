@@ -50,22 +50,22 @@
     <div class="stats-ribbon">
       <div class="stat-box" id="stat-card-all" role="button" tabindex="0" title="Filter by All Equities">
         <div class="stat-label">Equity Universe</div>
-        <div class="stat-value" id="stat-total-companies">150</div>
+        <div class="stat-value" id="stat-total-companies">--</div>
         <div class="stat-sub">US Exchange-Listed Stocks</div>
       </div>
       <div class="stat-box" id="stat-card-buy" role="button" tabindex="0" title="Filter by Buy Companies">
         <div class="stat-label">Buy Companies</div>
-        <div class="stat-value" id="stat-buy-count" style="color: #10b981;">51</div>
+        <div class="stat-value" id="stat-buy-count" style="color: #10b981;">--</div>
         <div class="stat-sub">Add to Portfolios</div>
       </div>
       <div class="stat-box" id="stat-card-hold" role="button" tabindex="0" title="Filter by Hold Companies">
         <div class="stat-label">Hold Companies</div>
-        <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">51</div>
+        <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">--</div>
         <div class="stat-sub">Keep in Portfolios</div>
       </div>
       <div class="stat-box" id="stat-card-index" role="button" tabindex="0" title="Filter by Index Members">
         <div class="stat-label">Index Members</div>
-        <div class="stat-value" id="stat-index-count" style="color: #818cf8;">127</div>
+        <div class="stat-value" id="stat-index-count" style="color: #818cf8;">--</div>
         <div class="stat-sub">QQQ &bull; DJIA &bull; S&amp;P 500</div>
       </div>
     </div>
@@ -114,25 +114,14 @@
     <!-- View & Sorting Toolbar -->
     <div
       style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
-      <div id="results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Showing 150 of 150 public
-        equities</div>
+      <div id="results-count" style="font-size: 0.88rem; color: var(--text-secondary);">Loading public
+        equities...</div>
 
       <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
         <!-- Sector Selector -->
         <select id="sector-select" class="search-input"
           style="padding: 6px 12px; font-size: 0.84rem; min-width: 170px; width: auto;">
           <option value="ALL">All Sectors</option>
-          <option value="Information Technology">Information Technology</option>
-          <option value="Communication Services">Communication Services</option>
-          <option value="Consumer Discretionary">Consumer Discretionary</option>
-          <option value="Consumer Staples">Consumer Staples</option>
-          <option value="Financials">Financials</option>
-          <option value="Health Care">Health Care</option>
-          <option value="Industrials">Industrials</option>
-          <option value="Utilities">Utilities</option>
-          <option value="Energy">Energy</option>
-          <option value="Materials">Materials</option>
-          <option value="Real Estate">Real Estate</option>
         </select>
 
         <!-- Sorting Selector -->
@@ -185,12 +174,12 @@
         <div class="modal-header">
           <div class="modal-title-group">
             <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <h3 id="modal-symbol-title" style="margin: 0; color: #00d4ff; font-size: 1.4rem;">AAPL</h3>
-              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">Apple Inc.</span>
+              <h3 id="modal-symbol-title" style="margin: 0; color: #00d4ff; font-size: 1.4rem;">--</h3>
+              <span id="modal-company-name" style="font-size: 1.1rem; color: #ffffff; font-weight: 500;">--</span>
               <a id="modal-ir-chip" href="#" target="_blank" rel="noopener noreferrer" class="ir-header-chip" title="Open official Investor Relations website">Investor Relations</a>
             </div>
             <div id="modal-sector-text" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">
-              Information Technology &bull; Consumer Electronics & Software</div>
+              --</div>
           </div>
           <button id="modal-close" class="modal-close-btn" title="Close modal">&times;</button>
         </div>
@@ -211,23 +200,23 @@
               style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
               <div class="metric-item">
                 <span class="metric-label">Status</span>
-                <span class="metric-val" id="modal-status-badge">BUY</span>
+                <span class="metric-val" id="modal-status-badge">--</span>
               </div>
               <div class="metric-item">
                 <span class="metric-label">Conviction Score</span>
-                <span class="metric-val" id="modal-conviction" style="color: #00d4ff;">9.2 / 10.0</span>
+                <span class="metric-val" id="modal-conviction" style="color: #00d4ff;">--</span>
               </div>
               <div class="metric-item">
                 <span class="metric-label">Current Market Price</span>
-                <span class="metric-val" id="modal-current-price" style="color: #ffffff;">$304.38</span>
+                <span class="metric-val" id="modal-current-price" style="color: #ffffff;">--</span>
               </div>
               <div class="metric-item">
                 <span class="metric-label">Target Exit Price</span>
-                <span class="metric-val" id="modal-target-price" style="color: #10b981;">$395.69</span>
+                <span class="metric-val" id="modal-target-price" style="color: #10b981;">--</span>
               </div>
               <div class="metric-item">
                 <span class="metric-label">Target ROI</span>
-                <span class="metric-val" id="modal-target-roi" style="color: #00d4ff;">20.0% (CC Yield)</span>
+                <span class="metric-val" id="modal-target-roi" style="color: #00d4ff;">--</span>
               </div>
             </div>
 
@@ -240,7 +229,7 @@
                   style="font-size: 0.85rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 0.5px;">
                   Return Engine Parameters &amp; Results</div>
                 <span id="modal-engine-strategy-badge" class="badge-status"
-                  style="font-size: 0.76rem; padding: 2px 8px;">LIMIT_BUY &rarr; LIMIT_SELL</span>
+                  style="font-size: 0.76rem; padding: 2px 8px;">--</span>
               </div>
 
               <div class="company-metrics-grid"
@@ -248,62 +237,62 @@
                 <div class="metric-item">
                   <span class="metric-label">Purchase Strategy</span>
                   <span class="metric-val" id="modal-engine-entry-strat"
-                    style="font-size: 0.88rem; color: #ffffff;">Limit Buy Order</span>
+                    style="font-size: 0.88rem; color: #ffffff;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Sale Strategy</span>
                   <span class="metric-val" id="modal-engine-exit-strat"
-                    style="font-size: 0.88rem; color: #ffffff;">Limit Sell Order</span>
+                    style="font-size: 0.88rem; color: #ffffff;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Entry Date</span>
                   <span class="metric-val" id="modal-engine-entry-date"
-                    style="font-size: 0.88rem; color: #e2e8f0;">2026-08-17</span>
+                    style="font-size: 0.88rem; color: #e2e8f0;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Target Exit Date</span>
                   <span class="metric-val" id="modal-engine-exit-date"
-                    style="font-size: 0.88rem; color: #e2e8f0;">2029-08-16</span>
+                    style="font-size: 0.88rem; color: #e2e8f0;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">CSP Put Premium ($/sh)</span>
                   <span class="metric-val" id="modal-engine-csp-proceeds"
-                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                    style="font-size: 0.88rem; color: #10b981;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Covered Call Harvest ($/sh)</span>
                   <span class="metric-val" id="modal-engine-cc-proceeds"
-                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                    style="font-size: 0.88rem; color: #10b981;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Initial Net Outlay ($/sh)</span>
                   <span class="metric-val" id="modal-engine-net-outlay"
-                    style="font-size: 0.88rem; color: #ffffff;">$0.00</span>
+                    style="font-size: 0.88rem; color: #ffffff;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Total Terminal Inflows</span>
                   <span class="metric-val" id="modal-engine-total-proceeds"
-                    style="font-size: 0.88rem; color: #10b981;">$0.00</span>
+                    style="font-size: 0.88rem; color: #10b981;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Capital Appreciation</span>
                   <span class="metric-val" id="modal-engine-cap-gain"
-                    style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                    style="font-size: 0.88rem; color: #00d4ff;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Options Cash Yield</span>
                   <span class="metric-val" id="modal-engine-opt-yield"
-                    style="font-size: 0.88rem; color: #00d4ff;">+0.0%</span>
+                    style="font-size: 0.88rem; color: #00d4ff;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Total Unannualized ROI</span>
                   <span class="metric-val" id="modal-engine-total-roi"
-                    style="font-size: 0.88rem; color: #10b981;">+0.0%</span>
+                    style="font-size: 0.88rem; color: #10b981;">--</span>
                 </div>
                 <div class="metric-item">
                   <span class="metric-label">Compound Annualized ROI</span>
                   <span class="metric-val" id="modal-engine-cagr"
-                    style="font-size: 0.92rem; font-weight: 700; color: #00d4ff;">20.0% Ann.</span>
+                    style="font-size: 0.92rem; font-weight: 700; color: #00d4ff;">--</span>
                 </div>
               </div>
             </div>

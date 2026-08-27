@@ -1,6 +1,6 @@
 # High-Frequency Market Price & Volume Refresh Protocol
 
-This prompt protocol defines the high-frequency daily workflow for synchronizing live stock prices, trading volumes, 52-week support/resistance bounds, and technical moving averages (SMA 20, SMA 50) across all 150 universe constituents at 0 LLM token cost.
+This prompt protocol defines the high-frequency daily workflow for synchronizing live stock prices, trading volumes, 52-week support/resistance bounds, and technical moving averages (SMA 20, SMA 50) across all universe constituents at 0 LLM token cost.
 
 ## Operational Context & Objective
 

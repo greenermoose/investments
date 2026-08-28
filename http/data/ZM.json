@@ -1,7 +1,30 @@
 {
   "symbol": "ZM",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1585521",
+  "last_updated": "2026-08-28T19:24:27.415331+00:00",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-26",
+      "period_start": "2026-02-01",
+      "period_end": "2026-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1585521",
+      "data": {
+        "shares_outstanding": 293688378,
+        "revenue": 2516223000.0,
+        "balance_sheet": {
+          "total_assets": 13585396000.0,
+          "total_liabilities": 2281785000.0,
+          "total_shareholders_equity": 11303611000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 7249721000.0,
+          "cash_primary": 931992000.0,
+          "marketable_securities_current": 6317729000.0
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-05-22",
@@ -67,37 +90,6 @@
           "marketable_securities_current": 6727428000.0
         }
       }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-22",
-      "period_start": "2025-02-01",
-      "period_end": "2025-07-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1585521",
-      "data": {
-        "shares_outstanding": 303354835,
-        "revenue": 2391942000.0,
-        "balance_sheet": {
-          "total_assets": 11044063000.0,
-          "total_liabilities": 2093986000.0,
-          "total_shareholders_equity": 8950077000.0,
-          "total_debt": 0.0,
-          "short_term_debt": 0.0,
-          "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 7778649000.0,
-          "cash_primary": 1198576000.0,
-          "marketable_securities_current": 6580073000.0
-        }
-      }
     }
-  ],
-  "investor_relations_url": "https://investors.zoom.us/",
-  "last_updated": "2026-08-28T03:13:30.872533+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

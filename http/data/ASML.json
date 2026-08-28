@@ -1,6 +1,7 @@
 {
   "symbol": "ASML",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=937966",
+  "last_updated": "2026-08-28T19:23:01.037245+00:00",
   "filings": [
     {
       "type": "20-F",
@@ -90,14 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://www.asml.com/en/investors",
-  "last_updated": "2026-08-28T03:13:30.565298+00:00",
-  "is_adr": true,
-  "listing_type": "ADR",
-  "country_of_origin": "Netherlands",
-  "primary_exchange": "Euronext Amsterdam (ASML)",
-  "adr_ratio": 1.0,
-  "adr_underlying_description": "1 NY Registry Share = 1 Euronext Ordinary Share",
-  "depositary_bank": "JPMorgan Chase Bank, N.A."
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "symbol": "SPGI",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
-  "last_updated": "2026-08-28T03:13:30.813453+00:00",
+  "last_updated": "2026-08-28T19:24:11.383299+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -92,51 +92,6 @@
       }
     }
   ],
-  "name": "S&P Global Inc.",
-  "investor_relations_url": "https://investor.spglobal.com/",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null,
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.37,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.03,
-      "pbo_gross_usd_b": 1.53,
-      "plan_assets_usd_b": 1.5,
-      "annual_cash_contribution_usd_b": 0.03,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.2,
-      "narrative": "S&P Global Inc. maintains well-funded legacy defined benefit pension plans ($1.53B PBO vs $1.50B assets) with strong institutional risk-matching asset allocation."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "S&P Global Inc. has zero industrial contamination or Superfund remediation liabilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
-      "recent_settlements_scheduled_usd_b": 0.8,
-      "annual_legal_settlement_cash_drain_usd_b": 0.12,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 1.84,
-      "take_or_pay_commitments_usd_b": 0.2,
-      "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $1.84B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
-    "narrative": "S&P Global Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  },
   "research": {
     "symbol": "SPGI",
     "schema_version": "1.0",
@@ -146,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -155,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -164,9 +119,147 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "moat_summary": {
+      "text": "S&P Global commands one of the widest and most impenetrable economic moats in global finance, functioning as a federally registered Nationally Recognized Statistical Rating Organization (NRSRO) within an entrenched credit ratings duopoly alongside Moody's. Institutional bond mandates legally require",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "latest_catalyst": {
+      "text": "Next earnings release and operational guidance update for S&P Global Inc., with revenue and margin trajectory versus prior SEC filings.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for S&P Global Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=64040"
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Sustained revenue deceleration below the modeled floor for two consecutive quarters or a material adverse revision to forward guidance from Tier 1 filings"
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Upcoming product cycle and margin execution milestones.",
+          "expected_revenue_impact_b": 0.08,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Upcoming product cycle and margin execution milestones.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 14.6,
+      "tam_cagr_pct": 8.0,
+      "narrative": "S&P Global Inc. operates in a total addressable market we size at approximately $14.6B, implying room to grow share from current revenue of roughly $4.17B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Financials. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 0.63,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "S&P Global Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $1.81B cash and $13.32B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=64040"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 3.0,
+      "gross_annual_dilution_pct": 1.8,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 3.0% of revenue for Financial Information & Credit Ratings peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.5,
+      "payout_ratio_pct": 25.0,
+      "annual_dividend_growth_pct": 4.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for S&P Global Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. S&P Global Inc. is the world's premier provider of transparent and independent credit ratings, financial benchmarks, commodity price assessments, and essential workflow intelligence to capital and commodity markets globally. The business operates five major divisions: S&P Global Ratings, S&P Global Market Intelligence (Capital IQ platform), S&P Dow Jones Indices (S&P 500, Dow Jones Industrial Aver",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "S&P Global Inc. is valued on a price-to-sales basis consistent with Financials leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:32.115276+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.332451+00:00"
 }

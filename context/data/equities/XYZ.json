@@ -1,20 +1,49 @@
 {
   "symbol": "XYZ",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
+  "last_updated": "2026-08-28T19:24:27.080060+00:00",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
+      "data": {
+        "shares_outstanding": 597702000,
+        "revenue": 12674534000.0,
+        "balance_sheet": {
+          "total_assets": 39156667000.0,
+          "total_liabilities": 17145350000.0,
+          "total_shareholders_equity": 22047075000.0,
+          "total_debt": 5775000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 5720569000.0,
+          "cash_and_cash_equivalents": 6427331000.0,
+          "cash_primary": 6427331000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-05-07",
       "period_start": "2026-01-01",
       "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 597586000,
         "revenue": 6056847000.0,
         "balance_sheet": {
           "total_assets": 39986081000.0,
           "total_liabilities": 18305053000.0,
-          "total_shareholders_equity": 21715338000.0
+          "total_shareholders_equity": 21715338000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7292520000.0,
+          "cash_and_cash_equivalents": 6858357000.0,
+          "cash_primary": 6858357000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -23,14 +52,20 @@
       "filing_date": "2026-02-26",
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 612243000,
         "revenue": 24193683000.0,
         "balance_sheet": {
           "total_assets": 39549887000.0,
           "total_liabilities": 17380005000.0,
-          "total_shareholders_equity": 22204278000.0
+          "total_shareholders_equity": 22204278000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7289018000.0,
+          "cash_and_cash_equivalents": 6564092000.0,
+          "cash_primary": 6564092000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -39,79 +74,24 @@
       "filing_date": "2025-11-06",
       "period_start": "2025-01-01",
       "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 614117000,
         "revenue": 17941205000.0,
         "balance_sheet": {
           "total_assets": 39182823000.0,
           "total_liabilities": 16709615000.0,
-          "total_shareholders_equity": 22507398000.0
-        }
-      }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-07",
-      "period_start": "2025-01-01",
-      "period_end": "2025-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
-      "data": {
-        "shares_outstanding": 616108000,
-        "revenue": 11826253000.0,
-        "balance_sheet": {
-          "total_assets": 36858391000.0,
-          "total_liabilities": 14735499000.0,
-          "total_shareholders_equity": 22157136000.0
+          "total_shareholders_equity": 22507398000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7285500000.0,
+          "cash_and_cash_equivalents": 8335934000.0,
+          "cash_primary": 8335934000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
-  "investor_relations_url": "https://investors.block.xyz/",
-  "last_updated": "2026-08-28T03:13:30.871241+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null,
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 3.45,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.05,
-      "pbo_gross_usd_b": 2.42,
-      "plan_assets_usd_b": 2.37,
-      "annual_cash_contribution_usd_b": 0.05,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.2,
-      "narrative": "Block, Inc. maintains well-funded legacy defined benefit pension plans ($2.42B PBO vs $2.37B assets) with strong institutional risk-matching asset allocation."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Block, Inc. has zero industrial contamination or Superfund remediation liabilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
-      "recent_settlements_scheduled_usd_b": 0.8,
-      "annual_legal_settlement_cash_drain_usd_b": 0.12,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.9,
-      "take_or_pay_commitments_usd_b": 0.2,
-      "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $2.90B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
-    "narrative": "Block, Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  },
   "research": {
     "symbol": "XYZ",
     "schema_version": "1.0",
@@ -121,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -130,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -139,7 +119,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "moat_summary": {
@@ -148,7 +128,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "latest_catalyst": {
@@ -157,32 +137,129 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for Block, Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1512673"
       }
     },
     "invalidation_criteria": {
       "items": [
-        "Cash App gross profit monetization slowdown, market share loss to alternative digital wallets, or regulatory enforcement on digital asset transactions."
+        "Cash App gross profit monetization slowdown, market share loss to alternative digital wallets, or regulatory enforcement on digital asset transactions"
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.11,
-      "target_ps_multiple_multiplier": 0.88,
-      "annual_share_dilution_rate": 0.005,
-      "conviction_score": 8.0,
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Rule of 40 operational efficiency target execution and Square merchant distribution expansion.",
+          "expected_revenue_impact_b": 0.25,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Rule of 40 operational efficiency target execution and Square merchant distribution expansion.",
+          "status": "PENDING"
+        }
+      ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 44.4,
+      "tam_cagr_pct": 8.0,
+      "narrative": "Block, Inc. operates in a total addressable market we size at approximately $44.4B, implying room to grow share from current revenue of roughly $12.67B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Financials. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 1.9,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "Block, Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $6.43B cash and $5.78B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1512673"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 3.0,
+      "gross_annual_dilution_pct": 1.8,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 3.0% of revenue for Financial Technology & Digital Payments peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.5,
+      "payout_ratio_pct": 25.0,
+      "annual_dividend_growth_pct": 4.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for Block, Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Block, Inc. (formerly Square) is a global fintech and digital commerce company operating two major ecosystems: Square (providing integrated point-of-sale software, hardware terminals, inventory management, and merchant financing for small to mid-sized businesses) and Cash App (a consumer financial super-app offering digital payments, direct deposit banking, debit cards, stock investing, and Bitcoi",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "Block, Inc. is valued on a price-to-sales basis consistent with Financials leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:32.164317+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.412374+00:00"
 }

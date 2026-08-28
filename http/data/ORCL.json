@@ -1,7 +1,7 @@
 {
   "symbol": "ORCL",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
-  "last_updated": "2026-08-28T03:13:30.773900+00:00",
+  "last_updated": "2026-08-28T19:23:59.166336+00:00",
   "filings": [
     {
       "type": "10-K",
@@ -91,14 +91,5 @@
         }
       }
     }
-  ],
-  "name": "Oracle Corporation",
-  "investor_relations_url": "https://investor.oracle.com/",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

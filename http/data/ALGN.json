@@ -1,7 +1,7 @@
 {
   "symbol": "ALGN",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
-  "last_updated": "2026-08-28T13:19:04.722923+00:00",
+  "last_updated": "2026-08-28T19:22:57.227707+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,6 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investor.aligntech.com/"
+  ]
 }

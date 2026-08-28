@@ -1,6 +1,7 @@
 {
   "symbol": "AVGO",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1730168",
+  "last_updated": "2026-08-28T19:23:01.535849+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -90,14 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investors.broadcom.com/",
-  "last_updated": "2026-08-28T03:13:30.567318+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

@@ -1,6 +1,7 @@
 {
   "symbol": "PEP",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=77476",
+  "last_updated": "2026-08-28T19:24:02.133590+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -16,7 +17,7 @@
           "total_liabilities": 89919000000.0,
           "total_shareholders_equity": 22098000000.0,
           "total_debt": 42612000000.0,
-          "short_term_debt": 500000000.0,
+          "short_term_debt": 1600000000.0,
           "long_term_debt": 0.0,
           "cash_and_cash_equivalents": 10716000000.0,
           "cash_primary": 10251000000.0,
@@ -38,7 +39,7 @@
           "total_liabilities": 89110000000.0,
           "total_shareholders_equity": 21383000000.0,
           "total_debt": 42577000000.0,
-          "short_term_debt": 0.0,
+          "short_term_debt": 1600000000.0,
           "long_term_debt": 0.0,
           "cash_and_cash_equivalents": 10828000000.0,
           "cash_primary": 10475000000.0,
@@ -82,7 +83,7 @@
           "total_liabilities": 87015000000.0,
           "total_shareholders_equity": 19388000000.0,
           "total_debt": 44113000000.0,
-          "short_term_debt": 0.0,
+          "short_term_debt": 3200000000.0,
           "long_term_debt": 0.0,
           "cash_and_cash_equivalents": 8661000000.0,
           "cash_primary": 8126000000.0,
@@ -90,14 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investors.pepsico.com/",
-  "last_updated": "2026-08-28T03:13:30.784474+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

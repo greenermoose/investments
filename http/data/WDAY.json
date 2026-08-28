@@ -1,7 +1,30 @@
 {
   "symbol": "WDAY",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+  "last_updated": "2026-08-28T19:24:24.957996+00:00",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-27",
+      "period_start": "2026-02-01",
+      "period_end": "2026-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
+      "data": {
+        "shares_outstanding": 249464000,
+        "revenue": 5191000000.0,
+        "balance_sheet": {
+          "total_assets": 15857000000.0,
+          "total_liabilities": 9397000000.0,
+          "total_shareholders_equity": 6460000000.0,
+          "total_debt": 3000000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 1990000000.0,
+          "cash_and_cash_equivalents": 3403000000.0,
+          "cash_primary": 661000000.0,
+          "marketable_securities_current": 2742000000.0
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-05-22",
@@ -67,37 +90,6 @@
           "marketable_securities_current": 4234000000.0
         }
       }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-22",
-      "period_start": "2025-02-01",
-      "period_end": "2025-07-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1327811",
-      "data": {
-        "shares_outstanding": 266649000,
-        "revenue": 4588000000.0,
-        "balance_sheet": {
-          "total_assets": 17961000000.0,
-          "total_liabilities": 8789000000.0,
-          "total_shareholders_equity": 9172000000.0,
-          "total_debt": 3000000000.0,
-          "short_term_debt": 0.0,
-          "long_term_debt": 2985000000.0,
-          "cash_and_cash_equivalents": 8186000000.0,
-          "cash_primary": 1264000000.0,
-          "marketable_securities_current": 6922000000.0
-        }
-      }
     }
-  ],
-  "investor_relations_url": "https://investor.workday.com/",
-  "last_updated": "2026-08-28T03:13:30.860435+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

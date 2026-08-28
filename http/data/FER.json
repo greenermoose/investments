@@ -1,6 +1,7 @@
 {
   "symbol": "FER",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1468522",
+  "last_updated": "2026-08-28T19:23:24.542120+00:00",
   "filings": [
     {
       "type": "20-F",
@@ -68,14 +69,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://www.ferrovial.com/en/ir/",
-  "last_updated": "2026-08-28T03:13:30.659958+00:00",
-  "is_adr": false,
-  "listing_type": "FOREIGN_ORDINARY",
-  "country_of_origin": "Netherlands / Spain",
-  "primary_exchange": "Euronext Amsterdam / BME (FER)",
-  "adr_ratio": null,
-  "adr_underlying_description": "Ordinary Shares Direct Listing",
-  "depositary_bank": null
+  ]
 }

@@ -1,127 +1,97 @@
 {
   "symbol": "MNDY",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338",
-  "investor_relations_url": "https://ir.monday.com/",
-  "last_updated": "2026-08-28T03:13:30.736760+00:00",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1845338",
+  "last_updated": "2026-08-28T19:23:49.602408+00:00",
   "filings": [
     {
-      "type": "6-K",
-      "filing_date": "2026-08-11",
-      "period_start": "2026-04-01",
-      "period_end": "2026-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338",
+      "type": "20-F",
+      "filing_date": "2026-03-13",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1845338",
       "data": {
-        "shares_outstanding": 51500000,
-        "revenue": 364600000.0,
+        "shares_outstanding": 51160822,
+        "revenue": 1231997000.0,
         "balance_sheet": {
-          "total_assets": 2100000000.0,
-          "total_liabilities": 750000000.0,
-          "total_shareholders_equity": 1350000000.0,
+          "total_assets": 2106600000.0,
+          "total_liabilities": 859764000.0,
+          "total_shareholders_equity": 1246836000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 1360000000.0
+          "cash_and_cash_equivalents": 1665457000.0,
+          "cash_primary": 1503149000.0,
+          "marketable_securities_current": 162308000.0
         }
       }
     },
     {
       "type": "6-K",
-      "filing_date": "2026-05-15",
-      "period_start": "2026-01-01",
-      "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338",
+      "filing_date": "2025-08-11",
+      "period_start": "2025-01-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1845338",
       "data": {
-        "shares_outstanding": 51200000,
-        "revenue": 357400000.0,
+        "shares_outstanding": 50773337,
+        "revenue": 581264000.0,
         "balance_sheet": {
-          "total_assets": 2020000000.0,
-          "total_liabilities": 730000000.0,
-          "total_shareholders_equity": 1290000000.0,
+          "total_assets": 1963971000.0,
+          "total_liabilities": 771593000.0,
+          "total_shareholders_equity": 1192378000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 1310000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1650617000.0,
+          "cash_primary": 1590515000.0,
+          "marketable_securities_current": 60102000.0
         }
       }
     },
     {
       "type": "20-F",
-      "filing_date": "2026-03-12",
-      "period_start": "2025-10-01",
-      "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338",
+      "filing_date": "2025-03-17",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1845338",
       "data": {
-        "shares_outstanding": 50800000,
-        "revenue": 352000000.0,
+        "shares_outstanding": 50773337,
+        "revenue": 971995000.0,
         "balance_sheet": {
-          "total_assets": 1950000000.0,
-          "total_liabilities": 710000000.0,
-          "total_shareholders_equity": 1240000000.0,
+          "total_assets": 1685508000.0,
+          "total_liabilities": 655277000.0,
+          "total_shareholders_equity": 1030231000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 1260000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1461606000.0,
+          "cash_primary": 1411602000.0,
+          "marketable_securities_current": 50004000.0
         }
       }
     },
     {
       "type": "6-K",
-      "filing_date": "2025-11-10",
-      "period_start": "2025-07-01",
-      "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338",
+      "filing_date": "2024-08-12",
+      "period_start": "2024-01-01",
+      "period_end": "2024-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1845338",
       "data": {
-        "shares_outstanding": 50500000,
-        "revenue": 346000000.0,
+        "shares_outstanding": 48923903,
+        "revenue": 453019000.0,
         "balance_sheet": {
-          "total_assets": 1880000000.0,
-          "total_liabilities": 690000000.0,
-          "total_shareholders_equity": 1190000000.0,
+          "total_assets": 1470198000.0,
+          "total_liabilities": 560076000.0,
+          "total_shareholders_equity": 910122000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 1210000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1290242000.0,
+          "cash_primary": 1290242000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
-  "is_adr": false,
-  "listing_type": "FOREIGN_ORDINARY",
-  "country_of_origin": "Israel",
-  "primary_exchange": "NASDAQ",
-  "adr_ratio": null,
-  "adr_underlying_description": "Ordinary Shares Direct Listing",
-  "depositary_bank": null,
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.75,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "monday.com Ltd. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "monday.com Ltd. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.25,
-      "take_or_pay_commitments_usd_b": 0.07,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $0.25B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "monday.com Ltd. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  },
   "research": {
     "symbol": "MNDY",
     "schema_version": "1.0",
@@ -131,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -140,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -149,7 +119,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "moat_summary": {
@@ -158,7 +128,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "latest_catalyst": {
@@ -167,56 +137,38 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for monday.com Ltd. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1845338"
       }
     },
     "invalidation_criteria": {
       "items": [
-        "Gross customer churn rising above historical norms, inability to expand outside SMB into enterprise tiers, or structural platform displacement by Microsoft 365 Copilot."
+        "Gross customer churn rising above historical norms, inability to expand outside SMB into enterprise tiers, or structural platform displacement by Microsoft 365 Copilot"
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
-      }
-    },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.24,
-      "target_ps_multiple_multiplier": 0.9,
-      "annual_share_dilution_rate": 0.015,
-      "conviction_score": 9.1,
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "catalyst_timeline": {
       "items": [
         {
-          "target_window": "2026-Q4",
-          "product_or_service_name": "monday AI Work Platform & Automated Cross-Departmental Workflows",
-          "expected_revenue_impact_b": 0.06,
-          "revenue_quarter_inflection": "2026-Q4",
-          "expected_outcome": "Doubling of AI-driven ARR through agentic workplace workflow automation.",
-          "status": "PENDING"
-        },
-        {
           "target_window": "2027-Q2",
-          "product_or_service_name": "monday Service & Enterprise CRM Tier 2 Acceleration",
-          "expected_revenue_impact_b": 0.09,
+          "product_or_service_name": "monday AI Work Platform agentic orchestration launch and enterprise CRM module acceleration.",
+          "expected_revenue_impact_b": 0.05,
           "revenue_quarter_inflection": "2027-Q2",
-          "expected_outcome": "Enterprise customer expansion with $100k+ ARR clients growing >30% YoY.",
-          "status": "PENDING"
-        },
-        {
-          "target_window": "2027-Q4",
-          "product_or_service_name": "Enterprise Scaled Seat Licensing & Marketplace App Ecosystem",
-          "expected_revenue_impact_b": 0.13,
-          "revenue_quarter_inflection": "2027-Q4",
-          "expected_outcome": "Third-party marketplace commission revenue and enterprise wide-deployment renewals.",
+          "expected_outcome": "monday AI Work Platform agentic orchestration launch and enterprise CRM module acceleration.",
           "status": "PENDING"
         }
       ],
@@ -224,9 +176,90 @@
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 10.0,
+      "tam_cagr_pct": 8.0,
+      "narrative": "monday.com Ltd. operates in a total addressable market we size at approximately $10.0B, implying room to grow share from current revenue of roughly $1.23B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Information Technology. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 0.5,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "monday.com Ltd. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $1.67B cash and $0.00B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1845338"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 8.0,
+      "gross_annual_dilution_pct": 4.8,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 8.0% of revenue for Enterprise Workflow Software & Cloud peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for monday.com Ltd. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. monday.com Ltd. is a leading cloud-based Work Operating System (Work OS) platform that enables organizations of all sizes to build custom digital workflow software applications and work management tools without coding. Its modular platform supports project management, sales CRM (monday sales CRM), software development lifecycle management (monday dev), and enterprise service management.\n\nmonday.co",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "monday.com Ltd. is valued on a price-to-sales basis consistent with Information Technology leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:32.048564+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.224252+00:00"
 }

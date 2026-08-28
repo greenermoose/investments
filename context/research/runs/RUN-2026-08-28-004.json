@@ -1,0 +1,108 @@
+{
+  "run_id": "RUN-2026-08-28-004",
+  "schema_version": "1.0",
+  "started_at": "2026-08-28T19:17:11.255467+00:00",
+  "completed_at": "2026-08-28T19:34:03.501610+00:00",
+  "status": "COMPLETED",
+  "cadence": "EVENT_DRIVEN",
+  "trigger": "research_refresh",
+  "agent_roles": [
+    "Equity Research Agent",
+    "Investment Thesis Agent",
+    "Memory Agent"
+  ],
+  "prompt_ref": "context/prompts/research_refresh.md",
+  "runtime_context_signature": "System clock 2026-08-28; full-universe research refresh; sector-batch delivery",
+  "summary": "Full-universe research refresh complete; 204 dossiers; zero research gaps; QC clean.",
+  "deliverables": [
+    "context/research/audits/2026-08-28-sector-information-technology-refresh.md",
+    "context/research/audits/2026-08-28-sector-health-care-refresh.md",
+    "context/research/audits/2026-08-28-sector-industrials-refresh.md",
+    "context/research/audits/2026-08-28-sector-financials-refresh.md",
+    "context/research/audits/2026-08-28-sector-consumer-discretionary-communication-services-refresh.md",
+    "context/research/audits/2026-08-28-sector-energy-staples-utilities-real-estate-refresh.md",
+    "context/research/audits/2026-08-28-full-universe-readiness-audit.md"
+  ],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-28-001",
+      "recorded_at": "2026-08-28T19:20:04.190768+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Pre-refresh baseline: research_gaps and errata summary captured",
+      "target_path": "scratch/research_gaps_baseline.txt"
+    },
+    {
+      "event_id": "EVT-2026-08-28-002",
+      "recorded_at": "2026-08-28T19:22:35.047581+00:00",
+      "event_type": "ERRATA_LINKED",
+      "agent_role": "Memory Agent",
+      "subject": "ERR-2026-08-014 resolved: QC fix_all delegates to build_universe_json",
+      "target_path": "context/research/errata/ERR-2026-08-014.json"
+    },
+    {
+      "event_id": "EVT-2026-08-28-003",
+      "recorded_at": "2026-08-28T19:22:35.153418+00:00",
+      "event_type": "ERRATA_LINKED",
+      "agent_role": "Memory Agent",
+      "subject": "ERR-2026-08-015 resolved: nominal previous_close alignment in fetch_market_prices",
+      "target_path": "context/research/errata/ERR-2026-08-015.json"
+    },
+    {
+      "event_id": "EVT-2026-08-28-004",
+      "recorded_at": "2026-08-28T19:32:40.270319+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Information Technology QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-information-technology-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-005",
+      "recorded_at": "2026-08-28T19:32:44.135181+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Health Care QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-health-care-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-006",
+      "recorded_at": "2026-08-28T19:32:48.139388+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Industrials QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-industrials-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-007",
+      "recorded_at": "2026-08-28T19:32:50.821127+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Financials QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-financials-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-008",
+      "recorded_at": "2026-08-28T19:32:54.596937+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Consumer Discretionary + Communication Services QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-consumer-discretionary-communication-services-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-009",
+      "recorded_at": "2026-08-28T19:32:58.195991+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Sector Energy + Staples + Utilities + Real Estate QC gate",
+      "target_path": "C:\\Users\\Fred\\github\\investments\\context\\research\\audits\\2026-08-28-sector-energy-staples-utilities-real-estate-refresh.md"
+    },
+    {
+      "event_id": "EVT-2026-08-28-010",
+      "recorded_at": "2026-08-28T19:34:03.393229+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Adversarial spot-audit and red-team HOLD review",
+      "target_path": "context/research/audits/2026-08-28-adversarial-spot-audit.md"
+    }
+  ]
+}

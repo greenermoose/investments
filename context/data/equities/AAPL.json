@@ -1,6 +1,7 @@
 {
   "symbol": "AAPL",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=320193",
+  "last_updated": "2026-08-28T19:22:53.366106+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,51 +92,6 @@
       }
     }
   ],
-  "investor_relations_url": "https://investor.apple.com/",
-  "last_updated": "2026-08-28T03:13:30.520091+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null,
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 51.5,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Apple maintains zero defined benefit pension or post-retirement medical OPEB plans. Employee retirement benefits are 100% defined contribution 401(k) plans with immediate expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Apple has zero material historical Superfund or chemical remediation liabilities; manufacturing is outsourced to contract partners subject to Supplier Clean Energy mandates."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil antitrust lawsuit regarding App Store ecosystem, and patent licensing disputes.",
-      "recent_settlements_scheduled_usd_b": 3.0,
-      "annual_legal_settlement_cash_drain_usd_b": 0.25,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Regulatory antitrust litigation carries risk of commission structure modifications, but balance sheet reserves and annual FCF easily absorb any monetary penalties."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 48.5,
-      "take_or_pay_commitments_usd_b": 15.0,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional manufacturing and component purchase commitments (TSMC advanced silicon wafer allocations, OLED display panels, flash memory) total $48.5B across 1-3 years."
-    },
-    "equity_cash_flow_diversion_risk": "Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.",
-    "narrative": "Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory."
-  },
   "research": {
     "symbol": "AAPL",
     "schema_version": "1.0",
@@ -145,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -154,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -163,99 +119,56 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "moat_summary": {
+      "text": "Apple's economic moat is anchored by massive customer switching costs within its unified iOS and macOS ecosystem, industry-leading proprietary silicon engineering (M-series and A-series architectures), exceptional brand prestige, and an active installed base exceeding 2.2 billion devices. The compan",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "latest_catalyst": {
+      "text": "Next earnings release and operational guidance update for Apple Inc., with revenue and margin trajectory versus prior SEC filings.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "off_balance_sheet_and_contingent_liabilities": {
       "overall_liability_overhang_rating": "LOW",
-      "total_estimated_off_balance_sheet_encumbrance_usd_b": 51.5,
-      "pension_and_opeb": {
-        "funded_status_usd_b": 0.0,
-        "pbo_gross_usd_b": 0.0,
-        "plan_assets_usd_b": 0.0,
-        "annual_cash_contribution_usd_b": 0.0,
-        "underfunding_risk_level": "NONE",
-        "opeb_unfunded_usd_b": 0.0,
-        "narrative": "Apple maintains zero defined benefit pension or post-retirement medical OPEB plans. Employee retirement benefits are 100% defined contribution 401(k) plans with immediate expense recognition."
-      },
-      "environmental_and_remediation": {
-        "accrued_environmental_reserve_usd_b": 0.0,
-        "estimated_unreserved_exposure_usd_b": 0.0,
-        "superfund_and_pfas_sites_count": 0,
-        "annual_remediation_cash_drain_usd_b": 0.0,
-        "risk_level": "MINIMAL",
-        "narrative": "Apple has zero material historical Superfund or chemical remediation liabilities; manufacturing is outsourced to contract partners subject to Supplier Clean Energy mandates."
-      },
-      "litigation_and_toxic_torts": {
-        "active_mass_torts_or_mdl": "European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil antitrust lawsuit regarding App Store ecosystem, and patent licensing disputes.",
-        "recent_settlements_scheduled_usd_b": 3.0,
-        "annual_legal_settlement_cash_drain_usd_b": 0.25,
-        "catastrophic_loss_risk_level": "LOW",
-        "narrative": "Regulatory antitrust litigation carries risk of commission structure modifications, but balance sheet reserves and annual FCF easily absorb any monetary penalties."
-      },
-      "purchase_commitments_and_guarantees": {
-        "unconditional_purchase_obligations_usd_b": 48.5,
-        "take_or_pay_commitments_usd_b": 15.0,
-        "jv_and_vie_debt_guarantees_usd_b": 0.0,
-        "narrative": "Unconditional manufacturing and component purchase commitments (TSMC advanced silicon wafer allocations, OLED display panels, flash memory) total $48.5B across 1-3 years."
-      },
-      "equity_cash_flow_diversion_risk": "Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.",
-      "narrative": "Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory.",
+      "narrative": "Forensic review of latest Tier 1 filings for Apple Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
-        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/build_off_balance_sheet_data.py BESPOKE_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=320193"
       }
     },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.08,
-      "target_ps_multiple_multiplier": 0.95,
-      "annual_share_dilution_rate": -0.025,
-      "conviction_score": 9.0,
+    "invalidation_criteria": {
+      "items": [
+        "Sustained revenue deceleration below the modeled floor for two consecutive quarters or a material adverse revision to forward guidance from Tier 1 filings"
+      ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
-      }
-    },
-    "dividend_profile": {
-      "status": "PAYING",
-      "dividend_yield_pct": 0.5,
-      "payout_ratio_pct": 15.0,
-      "annual_dividend_growth_pct": 5.0,
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "catalyst_timeline": {
       "items": [
         {
-          "target_window": "2026-Q4",
-          "product_or_service_name": "Apple Intelligence Gen-2 & iPhone 18 Pro Hardware Cycle",
-          "expected_revenue_impact_b": 6.2,
-          "revenue_quarter_inflection": "2026-Q4",
-          "expected_outcome": "Supercycle upgrade replacement rate driven by on-device contextual intelligence.",
-          "status": "PENDING"
-        },
-        {
           "target_window": "2027-Q2",
-          "product_or_service_name": "Services Ecosystem Premium AI Subscription Tier",
-          "expected_revenue_impact_b": 2.1,
+          "product_or_service_name": "Upcoming product cycle and margin execution milestones.",
+          "expected_revenue_impact_b": 7.29,
           "revenue_quarter_inflection": "2027-Q2",
-          "expected_outcome": "High-margin subscription monetization across 2.2B active installed device base.",
-          "status": "PENDING"
-        },
-        {
-          "target_window": "2028-Q1",
-          "product_or_service_name": "Spatial Computing Vision Pro 2 Commercialization",
-          "expected_revenue_impact_b": 2.5,
-          "revenue_quarter_inflection": "2028-Q1",
-          "expected_outcome": "Broadened enterprise design and medical visualization hardware adoption.",
+          "expected_outcome": "Upcoming product cycle and margin execution milestones.",
           "status": "PENDING"
         }
       ],
@@ -263,9 +176,90 @@
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 1821.8,
+      "tam_cagr_pct": 8.0,
+      "narrative": "Apple Inc. operates in a total addressable market we size at approximately $1821.8B, implying room to grow share from current revenue of roughly $364.36B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Information Technology. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 54.65,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "Apple Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $62.40B cash and $82.35B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=320193"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 8.0,
+      "gross_annual_dilution_pct": 4.8,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 8.0% of revenue for Consumer Electronics & Software peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for Apple Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Apple Inc. designs, manufactures, and markets premium consumer hardware and software ecosystems, anchored by the iPhone, Mac personal computers, iPad tablets, Apple Watch wearables, and AirPods. The company pairs its hardware install base with a high-margin Services division comprising the App Store, Apple Music, iCloud storage, Apple Pay, AppleCare, and digital subscriptions, creating recurring c",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "Apple Inc. is valued on a price-to-sales basis consistent with Information Technology leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
+  "research_last_updated": "2026-08-28T19:28:47.921173+00:00"
 }

@@ -326,14 +326,34 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
             "last_updated": datetime.now(timezone.utc).isoformat(),
             "filings": filings
         }
+
+        def merge_preserved_fields(target_path, payload):
+            if not os.path.exists(target_path):
+                return payload
+            try:
+                with open(target_path, "r", encoding="utf-8") as f:
+                    existing = json.load(f)
+                for key in (
+                    "research",
+                    "research_last_updated",
+                    "off_balance_sheet_and_contingent_liabilities",
+                    "investor_relations_url",
+                ):
+                    if key in existing and key not in payload:
+                        payload[key] = existing[key]
+            except (OSError, json.JSONDecodeError):
+                pass
+            return payload
         
         out_file = os.path.join(out_dir, f"{sym}.json")
+        out_obj = merge_preserved_fields(out_file, out_obj)
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(out_obj, f, indent=2)
             
         context_equities_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data", "equities")
         os.makedirs(context_equities_dir, exist_ok=True)
         context_out_file = os.path.join(context_equities_dir, f"{sym}.json")
+        out_obj = merge_preserved_fields(context_out_file, out_obj)
         with open(context_out_file, "w", encoding="utf-8") as f:
             json.dump(out_obj, f, indent=2)
             

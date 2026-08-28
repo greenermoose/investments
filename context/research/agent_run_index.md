@@ -4,6 +4,7 @@ Generated index of agent run logs in `context/research/runs/`. Do not edit by ha
 
 | Run ID | Started | Status | Trigger | Agents | Events | Summary |
 | :--- | :--- | :--- | :--- | :--- | ---: | :--- |
+| RUN-2026-08-28-004 | 2026-08-28 | COMPLETED | research_refresh | Equity Research Agent, Investment Thesis Agent, Memory Agent | 10 | Full-universe research refresh complete; 204 dossiers; zero research gaps; QC... |
 | RUN-2026-08-28-003 | 2026-08-28 | COMPLETED | manual | documentation-agent | 0 | Redesigned the human user guide around the weekly snapshot-to-plan workflow, ... |
 | RUN-2026-08-28-002 | 2026-08-28 | COMPLETED | equity_onboarding | Equity Research Agent, Investment Thesis Agent, Memory Agent | 7 | Onboarded ENIC, HST, OMAB; completed CSIQ and NVDA research; fixed ADR regist... |
 | RUN-2026-08-28-001 | 2026-08-28 | COMPLETED | manual | Memory Agent, Investment Thesis Agent | 1 | Completed v3.0 refactor separating agent-authored research into context/data/... |

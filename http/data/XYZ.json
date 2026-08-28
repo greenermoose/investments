@@ -1,20 +1,49 @@
 {
   "symbol": "XYZ",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
+  "last_updated": "2026-08-28T19:24:27.080060+00:00",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
+      "data": {
+        "shares_outstanding": 597702000,
+        "revenue": 12674534000.0,
+        "balance_sheet": {
+          "total_assets": 39156667000.0,
+          "total_liabilities": 17145350000.0,
+          "total_shareholders_equity": 22047075000.0,
+          "total_debt": 5775000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 5720569000.0,
+          "cash_and_cash_equivalents": 6427331000.0,
+          "cash_primary": 6427331000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-05-07",
       "period_start": "2026-01-01",
       "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 597586000,
         "revenue": 6056847000.0,
         "balance_sheet": {
           "total_assets": 39986081000.0,
           "total_liabilities": 18305053000.0,
-          "total_shareholders_equity": 21715338000.0
+          "total_shareholders_equity": 21715338000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7292520000.0,
+          "cash_and_cash_equivalents": 6858357000.0,
+          "cash_primary": 6858357000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -23,14 +52,20 @@
       "filing_date": "2026-02-26",
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 612243000,
         "revenue": 24193683000.0,
         "balance_sheet": {
           "total_assets": 39549887000.0,
           "total_liabilities": 17380005000.0,
-          "total_shareholders_equity": 22204278000.0
+          "total_shareholders_equity": 22204278000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7289018000.0,
+          "cash_and_cash_equivalents": 6564092000.0,
+          "cash_primary": 6564092000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -39,41 +74,22 @@
       "filing_date": "2025-11-06",
       "period_start": "2025-01-01",
       "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1512673",
       "data": {
         "shares_outstanding": 614117000,
         "revenue": 17941205000.0,
         "balance_sheet": {
           "total_assets": 39182823000.0,
           "total_liabilities": 16709615000.0,
-          "total_shareholders_equity": 22507398000.0
-        }
-      }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-07",
-      "period_start": "2025-01-01",
-      "period_end": "2025-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
-      "data": {
-        "shares_outstanding": 616108000,
-        "revenue": 11826253000.0,
-        "balance_sheet": {
-          "total_assets": 36858391000.0,
-          "total_liabilities": 14735499000.0,
-          "total_shareholders_equity": 22157136000.0
+          "total_shareholders_equity": 22507398000.0,
+          "total_debt": 7350000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7285500000.0,
+          "cash_and_cash_equivalents": 8335934000.0,
+          "cash_primary": 8335934000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investors.block.xyz/",
-  "last_updated": "2026-08-28T03:13:30.871241+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

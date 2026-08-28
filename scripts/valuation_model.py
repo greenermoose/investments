@@ -497,6 +497,35 @@ def model_equity_valuation(
             company_name=company_name or symbol,
         )
 
+    def _recalc_return(exit_px):
+        return calculate_annualized_roi(
+            benchmark_entry_price=current_price,
+            target_exit_price=exit_px,
+            entry_strategy=entry_strategy,
+            exit_strategy=exit_strategy,
+            entry_date=MODEL_ENTRY_DATE,
+            holding_period_years=MODEL_HOLDING_PERIOD_YEARS,
+            csp_proceeds=csp_proceeds,
+            cc_proceeds=cc_proceeds,
+            symbol=symbol,
+            company_name=company_name or symbol,
+        )
+
+    max_modeled_annualized_roi_pct = 48.0
+    if current_price > 0 and return_result.annualized_roi_pct > max_modeled_annualized_roi_pct:
+        cap_mult = (1.0 + (max_modeled_annualized_roi_pct / 100.0)) ** MODEL_HOLDING_PERIOD_YEARS
+        capped_exit = round(current_price * cap_mult, 2)
+        if capped_exit < target_exit_price:
+            target_exit_price = capped_exit
+            return_result = _recalc_return(target_exit_price)
+
+    if rating == "AVOID" and current_price > 0 and return_result.annualized_roi_pct > 15.0:
+        avoid_cap_mult = (1.0 + 0.15) ** MODEL_HOLDING_PERIOD_YEARS
+        capped_exit = round(current_price * avoid_cap_mult, 2)
+        if capped_exit < target_exit_price:
+            target_exit_price = capped_exit
+            return_result = _recalc_return(target_exit_price)
+
     balance_sheet = _extract_balance_sheet(filings)
     total_debt_usd = balance_sheet["total_debt_usd"]
     cash_usd = balance_sheet["cash_and_equivalents_usd"]

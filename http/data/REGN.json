@@ -1,6 +1,7 @@
 {
   "symbol": "REGN",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=872589",
+  "last_updated": "2026-08-28T19:24:05.914369+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -90,14 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investor.regeneron.com/",
-  "last_updated": "2026-08-28T03:13:30.789759+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

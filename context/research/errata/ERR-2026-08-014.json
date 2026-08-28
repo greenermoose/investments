@@ -1,16 +1,16 @@
 {
   "erratum_id": "ERR-2026-08-014",
   "schema_version": "1.0",
-  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "recorded_at": "2026-08-28T19:22:34.871712+00:00",
   "date_identified": "2026-08-28",
   "target_file": "scripts/quality_control.py` (`fix_all`, line ~1178)",
   "target_field_or_claim": "Master universe catalog schema fidelity under `--fix`",
   "erroneous_value": "`--fix` rebuilds `universe.json` from a second, reduced record builder that emits ~49 fields, silently destroying 46 fields per record across all 200 equities, including `revenue_forecast_13q`, `price_target_ranges_4h`, `shares_projections_6h`, `quarterly_revenue_trajectory`, `business_profile`, `competitive_moat_analysis`, `tam_and_market_share`, `capital_needs_and_strategy`, `off_balance_sheet_and_contingent_liabilities`, `catalyst_timeline`, `stock_based_compensation`, and all return-engine outputs (`annualized_roi_pct`, `total_roi_pct`, `capital_gain_pct`, `options_yield_pct`)",
-  "corrected_value": "NOT YET CORRECTED. Damage from the observed run was reverted from git HEAD. `--fix` must not be run until its rebuild path is reconciled with the full-fidelity builder in `scripts/build_universe_json.py`. Note that `scripts/onboard_company.py` actively recommends `--fix` in its own console output",
+  "corrected_value": "quality_control.py fix_all() now delegates to build_universe_json.py for full-fidelity catalog rebuild",
   "error_category": "METHODOLOGY_CALCULATION_ERROR",
   "authoritative_source_citation": "Direct field-set comparison of `context/data/universe.json` before and after `--fix` (95 fields reduced to 49)",
   "identifying_agent_or_human": "Memory Agent",
-  "correction_action_taken": "NOT YET CORRECTED. Damage from the observed run was reverted from git HEAD. `--fix` must not be run until its rebuild path is reconciled with the full-fidelity builder in `scripts/build_universe_json.py`. Note that `scripts/onboard_company.py` actively recommends `--fix` in its own console output",
-  "status": "OPEN",
+  "correction_action_taken": "Modified scripts/quality_control.py fix_all() to invoke build_universe_json.py via subprocess instead of reduced field builder",
+  "status": "RESOLVED",
   "related_run_id": "RUN-2026-08-28-002"
 }

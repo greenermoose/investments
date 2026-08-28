@@ -1,7 +1,7 @@
 {
   "symbol": "VEEV",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1393052",
-  "last_updated": "2026-08-28T13:18:59.445908+00:00",
+  "last_updated": "2026-08-28T19:24:21.755552+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,6 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://ir.veeva.com/"
+  ]
 }

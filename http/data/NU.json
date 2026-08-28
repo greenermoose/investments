@@ -1,89 +1,95 @@
 {
   "symbol": "NU",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
-  "investor_relations_url": "https://investors.nubank.com.br/",
-  "last_updated": "2026-08-28T03:13:30.762664+00:00",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1691493",
+  "last_updated": "2026-08-28T19:23:56.446203+00:00",
   "filings": [
     {
-      "type": "6-K",
-      "filing_date": "2026-08-13",
-      "period_start": "2026-04-01",
-      "period_end": "2026-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
+      "type": "20-F",
+      "filing_date": "2025-04-16",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1691493",
       "data": {
-        "shares_outstanding": 4831000000,
-        "revenue": 2940000000.0,
+        "shares_outstanding": 0,
+        "revenue": 11517075000.0,
         "balance_sheet": {
-          "total_assets": 52140000000.0,
-          "total_liabilities": 44210000000.0,
-          "total_shareholders_equity": 7930000000.0,
-          "total_debt": 1250000000.0,
-          "short_term_debt": 250000000.0,
-          "long_term_debt": 1000000000.0,
-          "cash_and_cash_equivalents": 7450000000.0
-        }
-      }
-    },
-    {
-      "type": "6-K",
-      "filing_date": "2026-05-14",
-      "period_start": "2026-01-01",
-      "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
-      "data": {
-        "shares_outstanding": 4825000000,
-        "revenue": 2680000000.0,
-        "balance_sheet": {
-          "total_assets": 48650000000.0,
-          "total_liabilities": 41400000000.0,
-          "total_shareholders_equity": 7250000000.0,
-          "total_debt": 1280000000.0,
-          "cash_and_cash_equivalents": 6820000000.0
+          "total_assets": 49931214000.0,
+          "total_liabilities": 42284138000.0,
+          "total_shareholders_equity": 7647076000.0,
+          "total_debt": 1730357000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 1730357000.0,
+          "cash_and_cash_equivalents": 9185742000.0,
+          "cash_primary": 9185742000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
     {
       "type": "20-F",
-      "filing_date": "2026-04-18",
-      "period_start": "2025-10-01",
-      "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
+      "filing_date": "2024-04-19",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1691493",
       "data": {
-        "shares_outstanding": 4818000000,
-        "revenue": 2480000000.0,
+        "shares_outstanding": 0,
+        "revenue": 8028976000.0,
         "balance_sheet": {
-          "total_assets": 44920000000.0,
-          "total_liabilities": 38240000000.0,
-          "total_shareholders_equity": 6680000000.0,
-          "total_debt": 1310000000.0,
-          "cash_and_cash_equivalents": 6150000000.0
+          "total_assets": 43498449000.0,
+          "total_liabilities": 37092064000.0,
+          "total_shareholders_equity": 6406385000.0,
+          "total_debt": 1136344000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 1136344000.0,
+          "cash_and_cash_equivalents": 5923440000.0,
+          "cash_primary": 5923440000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
     {
-      "type": "6-K",
-      "filing_date": "2025-11-13",
-      "period_start": "2025-07-01",
-      "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
+      "type": "20-F",
+      "filing_date": "2023-04-20",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1691493",
       "data": {
-        "shares_outstanding": 4810000000,
-        "revenue": 2380000000.0,
+        "shares_outstanding": 0,
+        "revenue": 4792231000.0,
         "balance_sheet": {
-          "total_assets": 41800000000.0,
-          "total_liabilities": 35600000000.0,
-          "total_shareholders_equity": 6200000000.0,
-          "total_debt": 1350000000.0,
-          "cash_and_cash_equivalents": 5720000000.0
+          "total_assets": 29934872000.0,
+          "total_liabilities": 25044089000.0,
+          "total_shareholders_equity": 4890783000.0,
+          "total_debt": 585568000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 585568000.0,
+          "cash_and_cash_equivalents": 4172316000.0,
+          "cash_primary": 4172316000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2022-04-21",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1691493",
+      "data": {
+        "shares_outstanding": 0,
+        "revenue": 1698023000.0,
+        "balance_sheet": {
+          "total_assets": 19858681000.0,
+          "total_liabilities": 15416140000.0,
+          "total_shareholders_equity": 4442541000.0,
+          "total_debt": 147243000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 147243000.0,
+          "cash_and_cash_equivalents": 2705675000.0,
+          "cash_primary": 2705675000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
-  ],
-  "is_adr": false,
-  "listing_type": "FOREIGN_ORDINARY",
-  "country_of_origin": "Cayman Islands / Brazil",
-  "primary_exchange": "NYSE",
-  "adr_ratio": null,
-  "adr_underlying_description": "Class A Ordinary Shares Direct Listing",
-  "depositary_bank": null
+  ]
 }

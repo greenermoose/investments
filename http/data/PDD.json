@@ -1,6 +1,7 @@
 {
   "symbol": "PDD",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1737806",
+  "last_updated": "2026-08-28T19:24:01.608799+00:00",
   "filings": [
     {
       "type": "20-F",
@@ -10,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1737806",
       "data": {
         "shares_outstanding": 1423396462,
-        "revenue": 59564925931.03,
+        "revenue": 61753116000.0,
         "balance_sheet": {
-          "total_assets": 86902665793.1,
-          "total_liabilities": 29884023586.21,
-          "total_shareholders_equity": 57018642206.9,
+          "total_assets": 90095139000.0,
+          "total_liabilities": 30981848000.0,
+          "total_shareholders_equity": 59113291000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 24128852827.59,
-          "cash_primary": 15020770620.69,
-          "marketable_securities_current": 9108082206.9
+          "cash_and_cash_equivalents": 25015256000.0,
+          "cash_primary": 15572577000.0,
+          "marketable_securities_current": 9442679000.0
         }
       }
     },
@@ -32,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1737806",
       "data": {
         "shares_outstanding": 1392146462,
-        "revenue": 54322220275.86,
+        "revenue": 53955324000.0,
         "balance_sheet": {
-          "total_assets": 69659905655.17,
-          "total_liabilities": 26444302344.83,
-          "total_shareholders_equity": 43215603310.34,
+          "total_assets": 69189417000.0,
+          "total_liabilities": 26265695000.0,
+          "total_shareholders_equity": 42923722000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 14103097517.24,
-          "cash_primary": 7968007310.34,
-          "marketable_securities_current": 6135090206.9
+          "cash_and_cash_equivalents": 14007844000.0,
+          "cash_primary": 7914191000.0,
+          "marketable_securities_current": 6093653000.0
         }
       }
     },
@@ -54,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1737806",
       "data": {
         "shares_outstanding": 1375872787,
-        "revenue": 34157131724.14,
+        "revenue": 34879253000.0,
         "balance_sheet": {
-          "total_assets": 48010775172.41,
-          "total_liabilities": 22184346620.69,
-          "total_shareholders_equity": 25826428551.72,
+          "total_assets": 49025778000.0,
+          "total_liabilities": 22653349000.0,
+          "total_shareholders_equity": 26372429000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 10613180000.0,
-          "cash_primary": 8247512965.52,
-          "marketable_securities_current": 2365667034.48
+          "cash_and_cash_equivalents": 10837555000.0,
+          "cash_primary": 8421875000.0,
+          "marketable_securities_current": 2415680000.0
         }
       }
     },
@@ -76,28 +77,19 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1737806",
       "data": {
         "shares_outstanding": 1319587099,
-        "revenue": 18007943310.34,
+        "revenue": 18929071000.0,
         "balance_sheet": {
-          "total_assets": 32706200413.79,
-          "total_liabilities": 16461936827.59,
-          "total_shareholders_equity": 16244263586.21,
+          "total_assets": 34379162000.0,
+          "total_liabilities": 17303985000.0,
+          "total_shareholders_equity": 17075177000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 4735601241.38,
-          "cash_primary": 4734647172.41,
-          "marketable_securities_current": 954068.97
+          "cash_and_cash_equivalents": 4976830000.0,
+          "cash_primary": 4976830000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
-  ],
-  "investor_relations_url": "https://investor.pddholdings.com/",
-  "last_updated": "2026-08-28T03:13:30.782809+00:00",
-  "is_adr": true,
-  "listing_type": "ADS",
-  "country_of_origin": "China",
-  "primary_exchange": "NASDAQ Global Select",
-  "adr_ratio": 4.0,
-  "adr_underlying_description": "1 ADS = 4 Class A Ordinary Shares",
-  "depositary_bank": "Deutsche Bank Trust Company Americas"
+  ]
 }

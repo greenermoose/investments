@@ -189,8 +189,16 @@ def fetch_ticker_quote_and_technicals(symbol):
         else:
             prev_close = current_price
 
-        day_change = round(current_price - prev_close, 2) if (current_price and prev_close) else 0.0
-        day_change_percent = round((day_change / prev_close) * 100.0, 2) if prev_close else 0.0
+        # Nominal previous close for session-over-session change (broker-observable)
+        if len(candles) >= 2:
+            nom_prev_close = round(float(candles[-2].get("nominal_close", prev_close)), 2)
+        else:
+            nom_prev_close = round(float(meta.get("previousClose", chart_prev_close or prev_close)), 2)
+
+        # Day change uses nominal prices so previous_close aligns with nominal_current_price
+        nominal_current = current_price
+        day_change = round(nominal_current - nom_prev_close, 2) if (nominal_current and nom_prev_close) else 0.0
+        day_change_percent = round((day_change / nom_prev_close) * 100.0, 2) if nom_prev_close else 0.0
 
         # Latest session metrics
         latest_candle = candles[-1] if candles else {}
@@ -232,14 +240,8 @@ def fetch_ticker_quote_and_technicals(symbol):
         else:
             fifty_two_week_low = round(min(valid_lows), 2) if valid_lows else current_price
 
-        earliest_split_factor = candles[0].get("split_factor", 1.0) if candles else 1.0
+        earliest_split_factor = candles[-1].get("split_factor", 1.0) if candles else 1.0
         latest_adj_close = candles[-1].get("adj_close", current_price) if candles else current_price
-
-        # Nominal previous close
-        if len(candles) >= 2:
-            nom_prev_close = candles[-2].get("nominal_close", prev_close)
-        else:
-            nom_prev_close = prev_close
 
         return {
             "symbol": symbol,
@@ -249,7 +251,7 @@ def fetch_ticker_quote_and_technicals(symbol):
             "current_price": current_price,
             "nominal_current_price": current_price,
             "closing_price": current_price,
-            "previous_close": prev_close,
+            "previous_close": nom_prev_close,
             "nominal_previous_close": nom_prev_close,
             "split_adj_previous_close": prev_close,
             "adj_close": latest_adj_close,

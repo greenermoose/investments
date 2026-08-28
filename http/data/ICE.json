@@ -1,7 +1,7 @@
 {
   "symbol": "ICE",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1571949",
-  "last_updated": "2026-08-28T13:19:05.553118+00:00",
+  "last_updated": "2026-08-28T19:23:34.725474+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,6 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://ir.theice.com/"
+  ]
 }

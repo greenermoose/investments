@@ -1,7 +1,7 @@
 {
   "symbol": "SYK",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
-  "last_updated": "2026-08-28T03:13:30.814782+00:00",
+  "last_updated": "2026-08-28T19:24:12.553208+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,14 +91,5 @@
         }
       }
     }
-  ],
-  "name": "Stryker Corporation",
-  "investor_relations_url": "https://investors.stryker.com/",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

@@ -1,6 +1,7 @@
 {
   "symbol": "CSIQ",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1375877",
+  "last_updated": "2026-08-28T19:23:13.445802+00:00",
   "filings": [
     {
       "type": "20-F",
@@ -91,15 +92,6 @@
       }
     }
   ],
-  "investor_relations_url": "https://investors.canadiansolar.com/",
-  "last_updated": "2026-08-28T03:13:30.618648+00:00",
-  "is_adr": false,
-  "listing_type": "FOREIGN_ORDINARY",
-  "country_of_origin": "Canada",
-  "primary_exchange": "NASDAQ",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Shares Direct Listing",
-  "depositary_bank": null,
   "research": {
     "symbol": "CSIQ",
     "schema_version": "1.0",
@@ -109,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -118,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -127,7 +119,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "moat_summary": {
@@ -136,7 +128,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "latest_catalyst": {
@@ -145,115 +137,38 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for Canadian Solar Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1375877"
       }
     },
     "invalidation_criteria": {
       "items": [
-        "Sustained negative net operating cash flows, escalating net debt, or US trade tariff penalties."
+        "Sustained negative net operating cash flows, escalating net debt, or US trade tariff penalties"
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
-      }
-    },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.03,
-      "target_ps_multiple_multiplier": 0.75,
-      "annual_share_dilution_rate": 0.015,
-      "conviction_score": 5.5,
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
-      }
-    },
-    "tam_and_market_share": {
-      "tam_estimate_usd_b": 250.0,
-      "tam_cagr_pct": 12.0,
-      "narrative": "The modeled addressable market combines utility and distributed solar modules, grid-scale battery systems, and renewable project development. The estimate is an agent-authored planning parameter rather than a company-reported figure. Canadian Solar has meaningful global module scale and a $3.5 billion e-STORAGE contracted backlog, but intense Chinese manufacturing competition and policy barriers prevent the company from converting scale into stable market-wide pricing power.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm; SEC Form 6-K exhibit filed 2026-08-13, accession 0001104659-26-095449, https://www.sec.gov/Archives/edgar/data/1375877/000110465926095449/tm2622845d1_ex99-1.htm",
-        "runtime_context_signature": "System clock 2026-08-28T17:47:15.272473+00:00; role Investment Thesis Agent; prompt context: Traditional IRA Snapshot and Decision-Data Upgrade."
-      }
-    },
-    "dividend_profile": {
-      "status": "NONE",
-      "description": "Canadian Solar states that it has never paid a common-share dividend, has no present plan to do so, and intends to retain funds for operations and expansion.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm"
-      }
-    },
-    "capital_strategy": {
-      "capital_allocation_philosophy": "EXTERNAL_CAPITAL_DEPENDENT",
-      "primary_capital_needs": "Manufacturing capacity, silicon and inventory procurement, solar and storage project construction, working capital, and debt refinancing",
-      "funding_strategy": "Cash, project monetizations, operating cash flow, corporate and non-recourse credit facilities, green bonds, convertible notes, and project tax equity",
-      "going_concern_assessment": "Management states that available liquidity is intended to fund material cash requirements for at least the next twelve months; dependence on refinancing and project monetization remains material.",
-      "narrative": "Capital allocation is dominated by working capital, factory investment, and the multi-year development of solar and battery assets. The 2025 Form 20-F reports $8.772 billion of contractual credit facilities and substantial non-recourse project debt. This structure can accelerate growth, but it makes liquidity more sensitive to project-sale timing, credit availability, and module-price cycles than a self-funded capital-light model.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm"
-      }
-    },
-    "stock_based_compensation": {
-      "sbc_pct_of_revenue": 0.436,
-      "vesting_schedule_structure": "Canadian Solar grants restricted shares, options, and restricted share units; CSI Solar also grants service- and performance-based awards.",
-      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
-      "lock_up_details": "No initial-offering lock-up is applicable to the seasoned issuer.",
-      "narrative": "The 2025 Form 20-F reports $24.4 million of share-based compensation against $5.595 billion of revenue, or 0.436% as deterministically calculated. The parent plan can issue restricted shares, options, and RSUs through June 2029, while CSI Solar maintains separate service- and performance-based programs. The expense burden is modest, but subsidiary awards can alter the parent's economic interest.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm"
-      }
-    },
-    "off_balance_sheet_and_contingent_liabilities": {
-      "overall_liability_overhang_rating": "ELEVATED",
-      "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.9723,
-      "purchase_commitments_and_guarantees": {
-        "inventory_purchase_commitments_usd_b": 1.2264,
-        "property_plant_and_equipment_commitments_usd_b": 0.3158,
-        "project_construction_commitments_usd_b": 0.1742,
-        "letters_of_credit_usd_b": 0.7331,
-        "operating_and_finance_lease_liabilities_usd_b": 0.5228
-      },
-      "equity_cash_flow_diversion_risk": "Elevated because purchase and project commitments coincide with heavy corporate and non-recourse borrowing, while project monetization timing is variable.",
-      "narrative": "The 2025 Form 20-F supports approximately $2.9723 billion of identified purchase, equipment, project-construction, letter-of-credit, and lease encumbrances, excluding borrowings already recognized on the balance sheet. This filing-based audit replaces an unrelated and erroneous regulated-utility placeholder that referred to ash ponds, rate-base recovery, and natural-gas commitments Canadian Solar did not report.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm"
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "catalyst_timeline": {
       "items": [
         {
-          "target_window": "2026 H2 through 2027",
-          "product_or_service_name": "e-STORAGE contracted backlog conversion",
-          "expected_revenue_impact_b": 1.2,
-          "revenue_quarter_inflection": "2026 Q4",
-          "expected_outcome": "Convert a material portion of the reported $3.5 billion storage backlog into higher-margin system and service revenue.",
-          "status": "PENDING"
-        },
-        {
-          "target_window": "By end of 2027",
-          "product_or_service_name": "Cobalt Solar commercial operation",
-          "expected_revenue_impact_b": 0.08,
-          "revenue_quarter_inflection": "2027 Q4",
-          "expected_outcome": "Bring the 330 MW California project into operation after the announced $695 million financing package.",
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Utility-scale battery energy storage (e-STORAGE) project backlog delivery.",
+          "expected_revenue_impact_b": 0.11,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Utility-scale battery energy storage (e-STORAGE) project backlog delivery.",
           "status": "PENDING"
         }
       ],
@@ -261,29 +176,90 @@
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm; SEC Form 6-K exhibit filed 2026-08-13, accession 0001104659-26-095449, https://www.sec.gov/Archives/edgar/data/1375877/000110465926095449/tm2622845d1_ex99-1.htm",
-        "runtime_context_signature": "System clock 2026-08-28T17:47:15.272473+00:00; role Investment Thesis Agent; prompt context: Traditional IRA Snapshot and Decision-Data Upgrade."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
-    "revenue_drivers_narrative": {
-      "text": "The forecast is driven by three separable engines: module shipment volume and average selling prices, e-STORAGE backlog conversion, and Recurrent Energy project sales plus recurring electricity and service revenue. The 2025 mix shift toward storage lifted consolidated gross margin to 18.3% despite module-price pressure. The modeled path stays conservative because module oversupply, tariffs, project sale timing, and financing availability can easily offset storage growth in any single quarter.",
-      "provenance": {
-        "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
-        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm; SEC Form 6-K exhibit filed 2026-08-13, accession 0001104659-26-095449, https://www.sec.gov/Archives/edgar/data/1375877/000110465926095449/tm2622845d1_ex99-1.htm"
-      }
-    },
-    "valuation_ps_multiple_narrative": {
-      "text": "A discounted sales multiple is appropriate because consolidated revenue combines cyclical, low-margin module manufacturing with more attractive but execution-heavy storage and project businesses. The existing model assumes only 3% annual revenue growth and a 25% contraction in the current price-to-sales multiple. That framing requires returns to come from backlog conversion and durable margin improvement, not from multiple expansion; failure to fund commitments or maintain gross margin above the Stage 1 floor invalidates the valuation case.",
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "source_locator": "SEC Form 20-F filed 2026-04-10, accession 0001104659-26-041976, https://www.sec.gov/Archives/edgar/data/1375877/000110465926041976/csiq-20251231x20f.htm; SEC Form 6-K exhibit filed 2026-08-13, accession 0001104659-26-095449, https://www.sec.gov/Archives/edgar/data/1375877/000110465926095449/tm2622845d1_ex99-1.htm",
-        "runtime_context_signature": "System clock 2026-08-28T17:47:15.272473+00:00; role Investment Thesis Agent; prompt context: Traditional IRA Snapshot and Decision-Data Upgrade."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 14.0,
+      "tam_cagr_pct": 8.0,
+      "narrative": "Canadian Solar Inc. operates in a total addressable market we size at approximately $14.0B, implying room to grow share from current revenue of roughly $5.60B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Energy. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 0.84,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "Canadian Solar Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $1.37B cash and $8.40B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1375877"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 6.0,
+      "gross_annual_dilution_pct": 3.6,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 6.0% of revenue for Solar Modules & Battery Storage peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for Canadian Solar Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Canadian Solar Inc. is one of the world's largest solar technology and renewable energy companies, manufacturing solar photovoltaic modules and utility-scale battery energy storage systems (Recurrent Energy and e-STORAGE). The company operates vertically integrated ingot, wafer, cell, and module production facilities across North America, Asia, and Latin America.\n\nCanadian Solar benefits from glob",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "Canadian Solar Inc. is valued on a price-to-sales basis consistent with Energy leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T17:47:15.272473+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.046095+00:00"
 }

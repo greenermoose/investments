@@ -1,7 +1,30 @@
 {
   "symbol": "HD",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+  "last_updated": "2026-08-28T19:23:30.844205+00:00",
   "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-25",
+      "period_start": "2026-02-02",
+      "period_end": "2026-08-02",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
+      "data": {
+        "shares_outstanding": 997116682,
+        "revenue": 89626000000.0,
+        "balance_sheet": {
+          "total_assets": 109384000000.0,
+          "total_liabilities": 92767000000.0,
+          "total_shareholders_equity": 16617000000.0,
+          "total_debt": 43951000000.0,
+          "short_term_debt": 4248000000.0,
+          "long_term_debt": 2791000000.0,
+          "cash_and_cash_equivalents": 2085000000.0,
+          "cash_primary": 2085000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
     {
       "type": "10-Q",
       "filing_date": "2026-05-27",
@@ -67,37 +90,6 @@
           "marketable_securities_current": 0.0
         }
       }
-    },
-    {
-      "type": "10-Q",
-      "filing_date": "2025-08-26",
-      "period_start": "2025-02-03",
-      "period_end": "2025-08-03",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=354950",
-      "data": {
-        "shares_outstanding": 994927985,
-        "revenue": 85133000000.0,
-        "balance_sheet": {
-          "total_assets": 100049000000.0,
-          "total_liabilities": 89384000000.0,
-          "total_shareholders_equity": 10665000000.0,
-          "total_debt": 45917000000.0,
-          "short_term_debt": 0.0,
-          "long_term_debt": 2727000000.0,
-          "cash_and_cash_equivalents": 2804000000.0,
-          "cash_primary": 2804000000.0,
-          "marketable_securities_current": 0.0
-        }
-      }
     }
-  ],
-  "investor_relations_url": "https://ir.homedepot.com/",
-  "last_updated": "2026-08-28T03:13:30.682824+00:00",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

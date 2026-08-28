@@ -1,7 +1,7 @@
 {
   "symbol": "ETN",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
-  "last_updated": "2026-08-28T03:13:30.650177+00:00",
+  "last_updated": "2026-08-28T19:23:22.253518+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,14 +91,5 @@
         }
       }
     }
-  ],
-  "name": "Eaton Corporation plc",
-  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html",
-  "is_adr": false,
-  "listing_type": "FOREIGN_DOMICILE_10K",
-  "country_of_origin": "Ireland",
-  "primary_exchange": "NYSE (ETN)",
-  "adr_ratio": null,
-  "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
-  "depositary_bank": null
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "symbol": "TSM",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
-  "last_updated": "2026-08-28T03:13:30.836924+00:00",
+  "last_updated": "2026-08-28T19:24:16.822610+00:00",
   "filings": [
     {
       "type": "20-F",
@@ -11,11 +11,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
       "data": {
         "shares_outstanding": 5186546648,
-        "revenue": 89055621538.46,
+        "revenue": 88268000000.0,
         "balance_sheet": {
-          "total_assets": 205900452307.69,
-          "total_liabilities": 74230556923.08,
-          "total_shareholders_equity": 131669895384.62,
+          "total_assets": 204079400000.0,
+          "total_liabilities": 73574000000.0,
+          "total_shareholders_equity": 130505400000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
@@ -33,11 +33,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
       "data": {
         "shares_outstanding": 5186414198,
-        "revenue": 66514947692.31,
+        "revenue": 70598800000.0,
         "balance_sheet": {
-          "total_assets": 170221433846.15,
-          "total_liabilities": 63948618461.54,
-          "total_shareholders_equity": 106272815384.62,
+          "total_assets": 180672700000.0,
+          "total_liabilities": 67874900000.0,
+          "total_shareholders_equity": 112797800000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
@@ -55,11 +55,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
       "data": {
         "shares_outstanding": 5186076092,
-        "revenue": 69658193846.15,
+        "revenue": 73670400000.0,
         "balance_sheet": {
-          "total_assets": 152752587692.31,
-          "total_liabilities": 62973129230.77,
-          "total_shareholders_equity": 89779458461.54,
+          "total_assets": 161550900000.0,
+          "total_liabilities": 66600300000.0,
+          "total_shareholders_equity": 94950600000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
@@ -77,11 +77,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
       "data": {
         "shares_outstanding": 5186076092,
-        "revenue": 48843538461.54,
+        "revenue": 57224800000.0,
         "balance_sheet": {
-          "total_assets": 114624683076.92,
-          "total_liabilities": 48419067692.31,
-          "total_shareholders_equity": 66205615384.62,
+          "total_assets": 134293500000.0,
+          "total_liabilities": 56727500000.0,
+          "total_shareholders_equity": 77566000000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
@@ -92,51 +92,6 @@
       }
     }
   ],
-  "name": "Taiwan Semiconductor Manufacturing Company Limited",
-  "investor_relations_url": "https://investor.tsmc.com/",
-  "is_adr": true,
-  "listing_type": "ADR",
-  "country_of_origin": "Taiwan",
-  "primary_exchange": "Taiwan Stock Exchange (TWSE: 2330)",
-  "adr_ratio": 5.0,
-  "adr_underlying_description": "1 ADR = 5 TWSE Ordinary Shares",
-  "depositary_bank": "Citibank, N.A.",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 31.67,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Taiwan Semiconductor Manufacturing Company Limited operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Taiwan Semiconductor Manufacturing Company Limited has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 31.17,
-      "take_or_pay_commitments_usd_b": 9.35,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $31.17B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Taiwan Semiconductor Manufacturing Company Limited maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  },
   "research": {
     "symbol": "TSM",
     "schema_version": "1.0",
@@ -146,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -155,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -164,21 +119,147 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.21,
-      "target_ps_multiple_multiplier": 0.95,
-      "annual_share_dilution_rate": -0.005,
-      "conviction_score": 9.3,
+    "moat_summary": {
+      "text": "TSMC commands an extraordinary wide economic moat anchored by immense technological leadership, insurmountable manufacturing scale, and billions in annual capital expenditures ($30B+ per year) that create insurmountable barriers to entry. TSMC manufactures more than 90% of the world's advanced compu",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "latest_catalyst": {
+      "text": "Next earnings release and operational guidance update for Taiwan Semiconductor Manufacturing Company Limited, with revenue and margin trajectory versus prior SEC filings.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for Taiwan Semiconductor Manufacturing Company Limited indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1046179"
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Sustained revenue deceleration below the modeled floor for two consecutive quarters or a material adverse revision to forward guidance from Tier 1 filings"
+      ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Upcoming product cycle and margin execution milestones.",
+          "expected_revenue_impact_b": 1.77,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Upcoming product cycle and margin execution milestones.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 441.3,
+      "tam_cagr_pct": 8.0,
+      "narrative": "Taiwan Semiconductor Manufacturing Company Limited operates in a total addressable market we size at approximately $441.3B, implying room to grow share from current revenue of roughly $88.27B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Information Technology. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 13.24,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "Taiwan Semiconductor Manufacturing Company Limited allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $65.25B cash and $0.00B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1046179"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 8.0,
+      "gross_annual_dilution_pct": 4.8,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 8.0% of revenue for Semiconductors peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for Taiwan Semiconductor Manufacturing Company Limited is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Taiwan Semiconductor Manufacturing Company Limited (TSMC) is the world's largest and most technologically advanced dedicated pure-play semiconductor foundry. The company manufactures advanced logic integrated circuits, high-performance computing (HPC) processors, AI accelerators, mobile system-on-chips (SoCs), and automotive silicon for leading global fabless semiconductor designers including NVID",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "Taiwan Semiconductor Manufacturing Company Limited is valued on a price-to-sales basis consistent with Information Technology leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:32.133589+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.364502+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "symbol": "BSX",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
-  "last_updated": "2026-08-28T03:13:30.587177+00:00",
+  "last_updated": "2026-08-28T19:23:05.838263+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,14 +91,5 @@
         }
       }
     }
-  ],
-  "name": "Boston Scientific Corporation",
-  "investor_relations_url": "https://investors.bostonscientific.com/",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

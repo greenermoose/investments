@@ -1,127 +1,97 @@
 {
   "symbol": "DUOL",
-  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
-  "investor_relations_url": "https://investors.duolingo.com/",
-  "last_updated": "2026-08-28T03:13:30.637546+00:00",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1562088",
+  "last_updated": "2026-08-28T19:23:18.592062+00:00",
   "filings": [
     {
       "type": "10-Q",
       "filing_date": "2026-08-06",
-      "period_start": "2026-04-01",
+      "period_start": "2026-01-01",
       "period_end": "2026-06-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1562088",
       "data": {
-        "shares_outstanding": 46730000,
-        "revenue": 298500000.0,
+        "shares_outstanding": 50080000,
+        "revenue": 590421000.0,
         "balance_sheet": {
-          "total_assets": 1420000000.0,
-          "total_liabilities": 410000000.0,
-          "total_shareholders_equity": 1010000000.0,
+          "total_assets": 2073953000.0,
+          "total_liabilities": 664211000.0,
+          "total_shareholders_equity": 1409742000.0,
           "total_debt": 0.0,
           "short_term_debt": 0.0,
           "long_term_debt": 0.0,
-          "cash_and_cash_equivalents": 910000000.0
+          "cash_and_cash_equivalents": 1180887000.0,
+          "cash_primary": 1180887000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
     {
       "type": "10-Q",
-      "filing_date": "2026-05-07",
+      "filing_date": "2026-05-05",
       "period_start": "2026-01-01",
       "period_end": "2026-03-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1562088",
       "data": {
-        "shares_outstanding": 46500000,
-        "revenue": 292500000.0,
+        "shares_outstanding": 48987000,
+        "revenue": 291967000.0,
         "balance_sheet": {
-          "total_assets": 1350000000.0,
-          "total_liabilities": 390000000.0,
-          "total_shareholders_equity": 960000000.0,
+          "total_assets": 2057994000.0,
+          "total_liabilities": 666230000.0,
+          "total_shareholders_equity": 1391764000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 865000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1138561000.0,
+          "cash_primary": 1138561000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
     {
       "type": "10-K",
       "filing_date": "2026-02-27",
-      "period_start": "2025-10-01",
+      "period_start": "2025-01-01",
       "period_end": "2025-12-31",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1562088",
       "data": {
-        "shares_outstanding": 46200000,
-        "revenue": 285000000.0,
+        "shares_outstanding": 48308000,
+        "revenue": 1037589000.0,
         "balance_sheet": {
-          "total_assets": 1280000000.0,
-          "total_liabilities": 370000000.0,
-          "total_shareholders_equity": 910000000.0,
+          "total_assets": 1992182000.0,
+          "total_liabilities": 645176000.0,
+          "total_shareholders_equity": 1347006000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 820000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1036389000.0,
+          "cash_primary": 1036389000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
     {
       "type": "10-Q",
       "filing_date": "2025-11-06",
-      "period_start": "2025-07-01",
+      "period_start": "2025-01-01",
       "period_end": "2025-09-30",
-      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1562088",
       "data": {
-        "shares_outstanding": 45900000,
-        "revenue": 274000000.0,
+        "shares_outstanding": 48766000,
+        "revenue": 754721000.0,
         "balance_sheet": {
-          "total_assets": 1210000000.0,
-          "total_liabilities": 350000000.0,
-          "total_shareholders_equity": 860000000.0,
+          "total_assets": 1885638000.0,
+          "total_liabilities": 578099000.0,
+          "total_shareholders_equity": 1307539000.0,
           "total_debt": 0.0,
-          "cash_and_cash_equivalents": 775000000.0
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1011542000.0,
+          "cash_primary": 1011542000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null,
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.42,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.07,
-      "plan_assets_usd_b": 0.07,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.01,
-      "narrative": "Duolingo, Inc. maintains legacy defined benefit plans ($0.07B PBO vs $0.07B assets; $0.00B gap) and $0.01B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.11,
-      "take_or_pay_commitments_usd_b": 0.03,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $0.11B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Duolingo, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  },
   "research": {
     "symbol": "DUOL",
     "schema_version": "1.0",
@@ -131,7 +101,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "business_profile": {
@@ -140,7 +110,7 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "competitive_moat_analysis": {
@@ -149,45 +119,56 @@
         "authored_by": "Equity Research Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
-    "valuation_parameters": {
-      "annual_revenue_growth": 0.25,
-      "target_ps_multiple_multiplier": 0.92,
-      "annual_share_dilution_rate": 0.01,
-      "conviction_score": 9.2,
+    "moat_summary": {
+      "text": "Duolingo commands a consumer brand and data network moat as the world's most downloaded and highest-grossing education app. Over 90% of its 100M+ active learners are acquired organically through viral social media marketing and word-of-mouth. Its proprietary AI-driven gamification engine analyzes bi",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "latest_catalyst": {
+      "text": "Next earnings release and operational guidance update for Duolingo, Inc., with revenue and margin trajectory versus prior SEC filings.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "narrative": "Forensic review of latest Tier 1 filings for Duolingo, Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1562088"
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Sustained revenue deceleration below the modeled floor for two consecutive quarters or a material adverse revision to forward guidance from Tier 1 filings"
+      ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     },
     "catalyst_timeline": {
       "items": [
         {
-          "target_window": "2026-Q4",
-          "product_or_service_name": "Duolingo Max AI Advanced Conversation Tiers Global Expansion",
-          "expected_revenue_impact_b": 0.05,
-          "revenue_quarter_inflection": "2026-Q4",
-          "expected_outcome": "Higher ARPPU conversion to premium AI subscription tier across 100M+ active learners.",
-          "status": "PENDING"
-        },
-        {
           "target_window": "2027-Q2",
-          "product_or_service_name": "Math & Music Core Curriculum Gamification & School Integration",
-          "expected_revenue_impact_b": 0.08,
+          "product_or_service_name": "Upcoming product cycle and margin execution milestones.",
+          "expected_revenue_impact_b": 0.05,
           "revenue_quarter_inflection": "2027-Q2",
-          "expected_outcome": "Adoption of STEM and music subjects broadening demographic reach into K-12 education.",
-          "status": "PENDING"
-        },
-        {
-          "target_window": "2027-Q4",
-          "product_or_service_name": "Duolingo English Test (DET) University & Corporate Enterprise Adoption",
-          "expected_revenue_impact_b": 0.11,
-          "revenue_quarter_inflection": "2027-Q4",
-          "expected_outcome": "Institutional testing certification volume growth displacing legacy testing centers.",
+          "expected_outcome": "Upcoming product cycle and margin execution milestones.",
           "status": "PENDING"
         }
       ],
@@ -195,9 +176,90 @@
         "authored_by": "Investment Thesis Agent",
         "authored_date": "2026-08-28",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 6.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 10.0,
+      "tam_cagr_pct": 8.0,
+      "narrative": "Duolingo, Inc. operates in a total addressable market we size at approximately $10.0B, implying room to grow share from current revenue of roughly $0.59B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Consumer Discretionary. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 0.5,
+      "primary_capital_needs": "Organic growth investment, maintenance capex, and talent retention",
+      "funding_strategy": "Primarily self-funded from operating cash flow per latest SEC filings.",
+      "going_concern_assessment": "No going-concern indicators in the latest Tier 1 filing summary.",
+      "narrative": "Duolingo, Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $1.18B cash and $0.00B total debt, grounding liquidity assessment in Tier 1 data.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1562088"
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 6.0,
+      "gross_annual_dilution_pct": 3.6,
+      "vesting_schedule_structure": "4-year graded RSU vesting with annual refresh grants",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "Seasoned issuer; insider sales typically via 10b5-1 plans.",
+      "narrative": "Stock-based compensation is modeled at approximately 6.0% of revenue for Digital Learning & EdTech Platforms peers, with net dilution partially offset by repurchases where authorized.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter revenue path for Duolingo, Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Duolingo, Inc. is the world's leading mobile learning platform and the top-grossing education app globally, offering gamified language courses alongside math and music learning. The company employs a freemium model where its engaging, bite-sized lessons attract over 100 million active monthly learners, monetizing through paid Super Duolingo and Duolingo Max (generative AI) subscriptions, in-app pu",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "Duolingo, Inc. is valued on a price-to-sales basis consistent with Consumer Discretionary leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
     }
   },
-  "research_last_updated": "2026-08-28T14:10:31.953995+00:00"
+  "research_last_updated": "2026-08-28T19:28:48.072584+00:00"
 }

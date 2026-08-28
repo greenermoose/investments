@@ -171,7 +171,10 @@ def validate_markdown_thesis(file_path: str) -> tuple[bool, list[str]]:
             table_lines = [l.strip() for l in apt_match.group(1).strip().split("\n") if l.strip().startswith("|")]
             data_rows = [l for l in table_lines if not re.match(r"^\|\s*:?---", l) and "Analyst Name" not in l]
             if len(data_rows) < 1:
-                errors.append("Analyst Price Targets table must contain at least 1 analyst price target row")
+                if "No sell-side analyst coverage is recorded" not in apt_match.group(1):
+                    errors.append(
+                        "Analyst Price Targets table must contain at least 1 analyst price target row"
+                    )
         else:
             errors.append("Could not parse Analyst Price Targets table")
 

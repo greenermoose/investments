@@ -1,7 +1,7 @@
 {
   "symbol": "BLK",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=2012383",
-  "last_updated": "2026-08-28T03:13:30.584617+00:00",
+  "last_updated": "2026-08-28T19:23:04.970476+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,14 +91,5 @@
         }
       }
     }
-  ],
-  "name": "BlackRock, Inc.",
-  "investor_relations_url": "https://ir.blackrock.com/",
-  "is_adr": false,
-  "listing_type": "US_COMMON_STOCK",
-  "country_of_origin": "United States",
-  "primary_exchange": "US Exchange",
-  "adr_ratio": null,
-  "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  ]
 }

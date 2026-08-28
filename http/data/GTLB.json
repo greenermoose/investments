@@ -1,7 +1,7 @@
 {
   "symbol": "GTLB",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1653482",
-  "last_updated": "2026-08-28T13:19:01.923011+00:00",
+  "last_updated": "2026-08-28T19:23:29.536199+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,6 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://ir.gitlab.com/"
+  ]
 }

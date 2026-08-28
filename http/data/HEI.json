@@ -1,7 +1,7 @@
 {
   "symbol": "HEI",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
-  "last_updated": "2026-08-28T13:19:08.735233+00:00",
+  "last_updated": "2026-08-28T19:23:31.226260+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -91,6 +91,5 @@
         }
       }
     }
-  ],
-  "investor_relations_url": "https://www.heico.com/investor-relations/"
+  ]
 }

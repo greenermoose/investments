@@ -56,13 +56,18 @@ python scripts/reprocess_analyst_targets.py
 python scripts/build_analyst_registry.py
 ```
 
-### Step 6: Off-Balance Sheet Footnotes & Encumbrances Audit
+### Step 6: Off-Balance Sheet Footnotes & Encumbrances Propagation
 
-Compile operating lease schedules, pension gross PBO, and take-or-pay commitments:
+Propagate the authored pension, environmental, litigation, and purchase commitment
+audits into the derived datasets, and report which tickers remain unaudited:
 
 ```bash
 python scripts/build_off_balance_sheet_data.py
 ```
+
+The audits themselves are authored by the Investment Thesis Agent into the research
+store. This step computes the encumbrance totals and synchronizes the catalogs; it
+does not construct a liability profile for an unaudited ticker.
 
 ### Step 7: Master Universe & Financial Catalogs Re-Synthesis
 
@@ -72,17 +77,26 @@ Deterministically aggregate TTM revenues, diluted share counts, enterprise value
 node scripts/build_sec_data.js
 python scripts/build_universe_json.py
 python scripts/anticipate_sec_filings.py
-python scripts/surveil_sentiment.py --seed
-python scripts/track_short_sellers.py --seed
+python scripts/surveil_sentiment.py --audit
+python scripts/track_short_sellers.py --audit
 ```
 
-### Step 8: Multi-Horizon Valuation & Thesis Regeneration
+Sentiment observations and short seller campaigns are agent research, not regenerable
+output. A rebuild validates what has been recorded; it does not manufacture records for
+tickers nobody has surveilled.
 
-Execute deterministic financial forecasting models across all universe dossiers:
+### Step 8: Multi-Horizon Valuation & Thesis Rendering
+
+Render every dossier whose research is complete, and report the rest:
 
 ```bash
-python scripts/generate_all_theses.py --full
+python scripts/research_gaps.py --thesis-only --summary
+python scripts/render_thesis.py --all
 ```
+
+`render_thesis.py` exits non-zero while any ticker is missing a required section.
+That is expected during a rebuild and is not a rebuild failure: it is the standing
+authoring backlog, which only an agent can clear.
 
 ### Step 9: Full Quality Control Audit Gate
 

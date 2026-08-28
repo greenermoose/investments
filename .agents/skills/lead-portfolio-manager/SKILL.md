@@ -41,20 +41,84 @@ The Lead Portfolio Manager acts as the ultimate fiduciary and decision-making sy
 - Enforce 100% cash/SGOV collateralization for short puts and 100% share collateralization for short calls. Strictly NO speculative option buying (no long calls/puts or debit spreads) and NO naked selling.
 - Buy to Close (BTC) on Losing Propositions: When an equity is downgraded to `SELL` or `AVOID`, or is identified as a losing proposition, author single-session `BUY TO CLOSE` orders to eliminate assignment risk on short puts or unlock 100-share blocks on short calls for immediate equity liquidation.
 
-## Deterministic Plan Generation Tooling
+## Authoring the Order Set, Then Rendering the Plan
 
-Scaffold and generate trading plans deterministically using `scripts/generate_plan.py`:
+You decide every trade. `scripts/render_plan.py` validates and renders what you decided; it selects no trades and composes no rationale.
+
+### Step 1: Author the order set
+
+Write an orders file conforming to `context/schemas/trading_plan_orders_schema.json`. One entry per portfolio, one record per order:
+
+```json
+{
+  "plan_date": "2026-08-31",
+  "authored_by": "Lead Portfolio Manager Agent",
+  "snapshot_source": "private/snapshots/2026-08-30-positions.csv",
+  "portfolios": [
+    {
+      "account_name": "Individual Brokerage ...999",
+      "orders": [
+        {
+          "action": "SELL TO OPEN",
+          "symbol": "GOOGL",
+          "security_type": "OPTION",
+          "option_type": "PUT",
+          "strike": 150.0,
+          "expiration": "2026-10-02",
+          "quantity": 1,
+          "order_type": "Limit",
+          "limit_price": 3.40,
+          "asserted_collateral_usd": 15000.0,
+          "asserted_cash_impact_usd": 340.0,
+          "asserted_aroc_pct": 25.85,
+          "rationale": "Your reasoning for this specific order, in your own words."
+        }
+      ],
+      "expirations": [
+        {
+          "symbol": "AAPL 09/18/2026 240.00 C",
+          "contracts": -1,
+          "status": "Short call, stock at $225.50 against a $240.00 strike",
+          "expectation": "Your stated settlement expectation for 4:00 PM ET Friday."
+        }
+      ]
+    }
+  ]
+}
+```
+
+The `asserted_*` fields are optional but recommended. The renderer recomputes each one and fails on disagreement, which catches an arithmetic slip before the plan reaches the trader.
+
+Price the options with `scripts/calculate_pricing.py` rather than estimating premiums. Contingent orders go in the `contingency` object as deterministic execution-time branching, never as a mid-week instruction.
+
+### Step 2: Validate and render
 
 ```bash
-# Generate plain-text trading plan template for upcoming Monday
-python scripts/generate_plan.py
+# Validate the order set against the mandate without rendering
+python scripts/render_plan.py --orders private/plans/2026-08-31-orders.json --check-only
 
-# Save plan directly to private/plans/YYYY-MM-DD-plan.txt
-python scripts/generate_plan.py --save
+# Render to stdout against a specific snapshot
+python scripts/render_plan.py --orders private/plans/2026-08-31-orders.json \
+    --snapshot private/snapshots/2026-08-30-positions.csv
 
-# Generate plan for a specific date
-python scripts/generate_plan.py --date 2026-08-24 --save
+# Save to private/plans/YYYY-MM-DD-plan.txt
+python scripts/render_plan.py --orders private/plans/2026-08-31-orders.json --save
 ```
+
+### What the renderer checks before it renders anything
+
+- Every short put is 100 percent cash-secured against dry powder, net of the collateral already reserved by open short puts in that account.
+- Every short call is backed by an uncommitted 100-share block, net of shares already covering an open short call.
+- No `BUY TO OPEN` on an option: speculative long option purchases are prohibited outright.
+- Limit orders only; no market orders.
+- Every symbol exists in the tracked universe.
+- Portfolio isolation: collateral is drawn down per account, never pooled across accounts.
+- The asserted collateral, cash impact, and AROC match the recomputed values.
+- The rendered plan is pure ASCII with no markdown pipe tables.
+
+A failing order set renders no plan and exits non-zero. Correct the orders rather than the check.
+
+A worked example lives at `examples/sample_orders.json`, paired with `examples/sample_portfolio.csv`.
 
 ## Standard Plain-Text Plan Structure
 

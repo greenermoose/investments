@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "Solid Power, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  },
+  "research": {
+    "symbol": "SLDP",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops all-solid-state rechargeable battery cells and sulfide-based solid electrolyte materials for electric vehicles and other markets.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Solid Power, Inc. is a developer of all-solid-state rechargeable battery technology for electric vehicles and energy storage markets. Solid Power replaces conventional liquid or gel electrolytes with proprietary sulfide-based solid electrolytes, pairing them with high-capacity silicon or lithium metal anodes to deliver higher energy density, longer range, and enhanced thermal safety.\n\nSolid Power's competitive advantage lies in its patented sulfide solid electrolyte material and its strategy of designing cells that can be manufactured using existing lithium-ion roll-to-roll manufacturing equipment. Management maintains strong strategic development partnerships with BMW and Ford, licensing cell designs and supplying electrolyte powder to automotive battery manufacturers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Solid Power possesses a specialized solid-state battery technology moat, developing all-solid-state battery cells and sulfide-based solid electrolyte materials for electric vehicles. By replacing flammable liquid electrolytes with solid sulfide materials, Solid Power targets higher energy density, longer driving range, and improved EV battery safety. Strategic joint development partnerships with BMW and Ford validate its automotive commercialization pipeline.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Sulfide solid electrolyte patents and automotive partnerships (BMW, Ford); offset by lack of commercial revenue, multi-year EV qualification cycles, and cash burn.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "A-sample battery cell validation and electrolyte sampling expansion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Partner OEM program cancellations or cash runway dropping under 12 months."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.15,
+      "target_ps_multiple_multiplier": 0.65,
+      "annual_share_dilution_rate": 0.035,
+      "conviction_score": 5.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.099940+00:00"
 }

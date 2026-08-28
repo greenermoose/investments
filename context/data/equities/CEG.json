@@ -135,5 +135,90 @@
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "Constellation Energy Corporation's off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  },
+  "research": {
+    "symbol": "CEG",
+    "schema_version": "1.0",
+    "description": {
+      "text": "The largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of nuclear, solar, and wind assets.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Constellation Energy Corporation is the largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of commercial nuclear power plants alongside hydro, wind, and solar assets. Constellation generates roughly 10% of America's carbon-free electricity and supplies power and energy management solutions to wholesale customers, major utilities, municipalities, and commercial enterprises.\n\nConstellation's competitive advantage lies in its baseload, 24/7 carbon-free nuclear generation capacity, which cannot be easily replicated due to extreme capital costs and regulatory barriers. Management is strategically capitalizing on surging hyperscale data center electricity demand by structuring long-term, premium power purchase agreements (PPAs) that co-locate AI infrastructure directly with nuclear facilities.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Constellation Energy holds an unmatched clean energy infrastructure moat as the largest producer of carbon-free electricity in the United States, operating the nation's premier fleet of nuclear power plants. Nuclear assets provide 24/7/365 baseload zero-carbon power that cannot be replicated due to extreme capital costs, environmental permitting constraints, and regulatory barriers. Constellation is uniquely positioned to command premium power purchase agreements (PPAs) co-locating AI hyperscale data centers directly at nuclear plant sites.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Largest commercial nuclear fleet in North America (>22 GW 24/7 carbon-free baseload power), long-term power purchase agreements (PPAs) with hyperscalers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Crane Clean Energy Center 20-year power contract with Microsoft to restart Three Mile Island Unit 1.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Regulatory rejection of co-located behind-the-meter data center nuclear power interconnection."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.08,
+      "target_ps_multiple_multiplier": 0.88,
+      "annual_share_dilution_rate": 0.0,
+      "conviction_score": 8.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.8,
+      "payout_ratio_pct": 20.0,
+      "annual_dividend_growth_pct": 10.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.927204+00:00"
 }

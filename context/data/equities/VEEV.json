@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Veeva Systems Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "VEEV",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Cloud software, clinical trial data, and regulatory compliance platforms for the life sciences industry.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Veeva Systems Inc. is the leading global provider of cloud-based software, data, and analytics solutions purpose-built for the life sciences and pharmaceutical industries. Its core platform offerings include Veeva Development Cloud (unifying clinical trial operations, regulatory compliance, quality control, and safety data across drug development) and Veeva Commercial Cloud (delivering omnichannel CRM, medical affairs management, and commercial content).\n\nVeeva commands a near-monopoly industry cloud moat characterized by massive regulatory compliance switching costs, high gross margins above 70%, and a pristine, zero-debt balance sheet with robust net cash reserves. With life sciences enterprises standardized on Veeva Vault as their single source of regulatory truth, management is expanding into clinical data management (Veeva Vault EDC), proprietary industry data feeds (Veeva Compass), and AI-driven commercial insights, sustaining durable double-digit top-line compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Veeva Systems possesses a near-impenetrable industry cloud moat rooted in specialized regulatory compliance workflows, clinical data validation, and deep software standardization across global pharmaceutical and life sciences enterprises. Life sciences companies face stringent FDA 21 CFR Part 11 and global regulatory mandates that make switching core clinical, regulatory, and quality software (Veeva Vault) virtually prohibitive. With gross margins exceeding 70%, zero debt, and standard-setting market share in commercial CRM and clinical data management, Veeva commands exceptional pricing power and sustained high returns on capital.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.147727+00:00"
 }

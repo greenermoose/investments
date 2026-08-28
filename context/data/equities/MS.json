@@ -136,5 +136,61 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Morgan Stanley's off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "MS",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Premier global financial services firm providing wealth management, institutional securities trading, investment banking, and asset management.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Morgan Stanley is a premier global financial services firm providing investment banking, institutional securities trading, wealth management, and investment management services. Through transformative strategic acquisitions (E*TRADE, Eaton Vance, and Smith Barney), Morgan Stanley has pivoted its business model toward recurring, fee-based Wealth and Investment Management, which now account for over 50% of firmwide revenues.\n\nThe Wealth Management division serves ultra-high-net-worth, high-net-worth, and workplace stock plan participants across trillions in client assets, monetizing through asset-based advisory fees, client bank deposit net interest income, and lending products. Management continues to leverage its elite investment banking franchise to capture major advisory and underwriting mandates while expanding wealth management asset inflows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Morgan Stanley's economic moat is built on high client wealth management switching costs, elite brand prestige in institutional dealmaking, and extensive financial advisor networks. Wealth management clients exhibit high advisor loyalty and face significant friction when transferring customized estate, tax, and lending relationships. This creates predictable, recurring fee streams with high returns on tangible equity that insulate Morgan Stanley from cyclical investment banking volatility.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.06,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 8.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 3.2,
+      "payout_ratio_pct": 45.0,
+      "annual_dividend_growth_pct": 8.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.057658+00:00"
 }

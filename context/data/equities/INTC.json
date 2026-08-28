@@ -135,5 +135,90 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Intel Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "INTC",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs, manufactures, and sells computer products and technologies including client CPUs, data center processors, and Intel Foundry.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Intel Corporation is a global semiconductor designer and integrated device manufacturer (IDM), producing microprocessors for personal computers (Core processors), data center servers (Xeon processors), networking chips, and autonomous driving technology (via Mobileye). Intel is executing an ambitious dual strategy to regain transistor performance leadership while operating Intel Foundry as an open, commercial semiconductor foundry.\n\nIntel benefits from an enormous global installed base of x86 software architecture, extensive enterprise IT procurement relationships, and major government subsidies under the US CHIPS Act. Management is focused on executing its aggressive process technology roadmap (transitioning to Intel 18A node featuring RibbonFET and PowerVia), restructuring operational cost structures, and ramping leading-edge foundry customer commitments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Intel Corporation possesses a legacy semiconductor manufacturing scale moat, maintaining the largest domestic fab infrastructure footprint in the United States. While navigating an intensive multi-year operational turnaround, Intel's x86 processor architecture remains embedded in hundreds of millions of client PCs and enterprise data centers. The execution of Intel Foundry services and node transition (Intel 18A) is backed by extensive US CHIPS Act subsidies and domestic defense manufacturing mandates.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "x86 architecture patent estate, CHIPS Act direct subsidies, domestic US wafer fab footprint.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Intel 18A process node commercial ramp and strategic packaging customer commitments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Yield failure on 18A process node or further market share collapse in data center server CPUs."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": -0.02,
+      "target_ps_multiple_multiplier": 0.8,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 5.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "NONE",
+      "dividend_yield_pct": 0.0,
+      "payout_ratio_pct": 0.0,
+      "annual_dividend_growth_pct": 0.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

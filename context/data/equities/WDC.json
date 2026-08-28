@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Western Digital Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "WDC",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops, manufactures, and sells data storage devices including hard disk drives (ePMR/UltraSMR HDDs) and solid-state drives (Flash/NAND).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Western Digital Corporation is a leading developer and manufacturer of data storage devices, producing hard disk drives (HDDs) for enterprise cloud data centers and flash memory storage devices (SSDs, embedded flash) for smartphones, gaming consoles, PCs, and automotive systems.\n\nWestern Digital holds an established competitive position in mass-capacity nearline hard disk drives, sharing an effective duopoly with Seagate for cloud hyperscale storage tiers, alongside a major flash memory manufacturing joint venture with Kioxia in Japan. Management is executing a strategic corporate separation of its HDD and Flash memory business units to unlock shareholder value, streamline capital allocation, and focus on pure-play storage opportunities.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Western Digital Corporation operates in a memory and storage duopoly alongside Seagate in mass-capacity enterprise HDDs and flash memory SSDs. Cloud data centers require massive storage density, where Western Digital's UltraSMR hard drives provide the lowest cost per terabyte for archival and AI data storage. Vertically integrated flash memory joint ventures (BiCS technology with Kioxia) provide scale in client SSDs.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Duopoly in nearline mass-capacity enterprise HDDs (with Seagate), UltraSMR capacity density leadership for cloud hyperscaler storage.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Spin-off separation of Flash business to unlock pure-play market valuations.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Severe cloud storage capex pause or execution friction in planned corporate separation into Flash and HDD standalone entities."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.158572+00:00"
 }

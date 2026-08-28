@@ -135,5 +135,132 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Antitrust legal reserves and datacenter commitments represent a modest fraction of $100B+ annual operating cash flow.",
     "narrative": "Alphabet maintains pristine balance sheet strength with zero pension or toxic contamination drag; legal overhang is focused on antitrust structural remedies."
-  }
+  },
+  "research": {
+    "symbol": "GOOGL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Operates Google Search, YouTube, Android, Google Cloud, Waymo, and deep AI research through Google DeepMind.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Alphabet Inc. (Class A) is the parent company of Google, representing the voting common equity of the global internet technology pioneer. Its core revenue engine comprises Google Services (Google Search, YouTube advertising, Google Play store, and consumer hardware) and Google Cloud (enterprise infrastructure, BigQuery analytics, and Vertex AI developer platforms), complemented by transformative Other Bets investments (Waymo autonomous driving).\n\nAlphabet's economic moat is among the strongest in history, driven by billions of daily active users, massive advertising take-rates, proprietary tensor processing unit (TPU) AI infrastructure, and premier artificial intelligence research talent. Management is scaling Google Cloud's AI infrastructure, monetizing enterprise generative AI tools, expanding Waymo commercial robotaxi rides, and returning robust capital to shareholders via dividends and buybacks.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Alphabet commands a multi-dimensional economic moat anchored by Google Search (holding >90% global search market share), the Android mobile operating system (powering >70% of global smartphones), YouTube, and Google Cloud. The two-sided digital advertising network effect between billions of consumers and millions of global advertisers generates immense cash flow with high operating margins. Alphabet's world-leading AI research infrastructure (Gemini models, custom TPU silicon) protects its search dominance and powers enterprise cloud acceleration.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Global search monopoly, YouTube creator network effects, Google Cloud profitability ramp, custom TPU silicon.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Gemini model integration across Search & Workspace; GCP AI enterprise expansion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Structural loss of search query volume to conversational AI without offsetting search ad revenue or severe antitrust remedies."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "total_estimated_off_balance_sheet_encumbrance_usd_b": 46.0,
+      "pension_and_opeb": {
+        "funded_status_usd_b": 0.0,
+        "pbo_gross_usd_b": 0.0,
+        "plan_assets_usd_b": 0.0,
+        "annual_cash_contribution_usd_b": 0.0,
+        "underfunding_risk_level": "NONE",
+        "opeb_unfunded_usd_b": 0.0,
+        "narrative": "Alphabet has zero defined benefit pension plans or post-retirement medical liabilities. Retirement benefits are 100% defined contribution 401(k) plans."
+      },
+      "environmental_and_remediation": {
+        "accrued_environmental_reserve_usd_b": 0.0,
+        "estimated_unreserved_exposure_usd_b": 0.0,
+        "superfund_and_pfas_sites_count": 0,
+        "annual_remediation_cash_drain_usd_b": 0.0,
+        "risk_level": "MINIMAL",
+        "narrative": "Zero legacy manufacturing or Superfund cleanup obligations."
+      },
+      "litigation_and_toxic_torts": {
+        "active_mass_torts_or_mdl": "US DOJ Search distribution antitrust litigation remedy phase, US DOJ Ad Tech antitrust trial, European Commission antitrust fines appeals, and state attorney general digital advertising settlements.",
+        "recent_settlements_scheduled_usd_b": 8.0,
+        "annual_legal_settlement_cash_drain_usd_b": 0.5,
+        "catastrophic_loss_risk_level": "MODERATE",
+        "narrative": "Antitrust remedies could impact exclusive search default contracts (e.g. Apple Safari revenue share) or ad-tech bundling, but monetary fines are readily absorbed by $80B+ net cash reserves."
+      },
+      "purchase_commitments_and_guarantees": {
+        "unconditional_purchase_obligations_usd_b": 38.0,
+        "take_or_pay_commitments_usd_b": 14.5,
+        "jv_and_vie_debt_guarantees_usd_b": 0.0,
+        "narrative": "Unconditional purchase obligations for cloud server infrastructure, TPU custom silicon fabrication, undersea fiber cables, and renewable power purchase agreements total $38.0B."
+      },
+      "equity_cash_flow_diversion_risk": "Low risk: Antitrust legal reserves and datacenter commitments represent a modest fraction of $100B+ annual operating cash flow.",
+      "narrative": "Alphabet maintains pristine balance sheet strength with zero pension or toxic contamination drag; legal overhang is focused on antitrust structural remedies.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/build_off_balance_sheet_data.py BESPOKE_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.12,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.025,
+      "conviction_score": 9.3,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.42,
+      "payout_ratio_pct": 10.0,
+      "annual_dividend_growth_pct": 12.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

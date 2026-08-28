@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "SolarEdge Technologies, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  },
+  "research": {
+    "symbol": "SEDG",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs and develops DC optimized inverter solutions for residential, commercial, and small utility-scale solar PV installations.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "SolarEdge Technologies, Inc. is a global leader in smart energy technology, inventing an intelligent DC optimized inverter solution that transformed the way power is harvested and managed in solar photovoltaic (PV) systems. The company manufactures DC power optimizers, solar inverters, residential battery storage systems, and EV chargers for residential and commercial solar installations.\n\nSolarEdge's technological advantage centers on module-level power electronics (MLPE), maximizing energy yield per solar panel while providing module-level monitoring and integrated rapid shutdown safety compliance. Management is navigating solar channel inventory normalization, scaling manufacturing footprint in the US, and launching next-generation commercial storage and software solutions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "SolarEdge Technologies holds a clean energy technology moat in smart solar inverters and power optimizers. SolarEdge's DC-optimized inverter system couples individual module power optimizers with a centralized inverter, increasing solar energy harvest, module-level monitoring, and rapid safety shutdown compliance. A global network of residential solar installers and proprietary ASICs create contractor switching friction.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Power optimizer patent portfolio; heavily offset by catastrophic European inventory destocking, collapse in revenue, negative free cash flow, and debt covenants.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Completion of distributor inventory clearing and commercial storage product launches.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Severe ongoing quarterly operating cash burn, covenant breach, or loss of installer distribution channels."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.099940+00:00"
 }

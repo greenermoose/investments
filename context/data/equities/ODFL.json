@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Old Dominion Freight Line, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "ODFL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Leading North American less-than-truckload (LTL) motor carrier providing regional, inter-regional, and national shipping services.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Old Dominion Freight Line, Inc. is the premier less-than-truckload (LTL) motor carrier in North America, operating an extensive nationwide network of service centers, pickup and delivery fleets, and linehaul tractors. Old Dominion transports multiple small freight shipments on single trailers, providing regional, inter-regional, and national LTL logistics services.\n\nOld Dominion maintains the gold standard in the LTL industry, distinguished by industry-leading on-time delivery rates (>99%), low cargo claims ratios (<0.2%), and significant real estate capacity reserves across its owned service centers. Management's relentless focus on service quality enables disciplined premium pricing, consistently producing the best operating ratio and highest returns on invested capital in the trucking sector.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Old Dominion Freight Line maintains the premier operational efficiency and service quality moat in North American Less-Than-Truckload (LTL) motor transportation. ODFL consistently achieves an industry-leading on-time delivery rate (>99%) and peer-low cargo claims ratio (<0.2%). Shippers willingly pay premium freight rates for ODFL's superior reliability, enabling an industry-leading operating ratio in the low-70s and superior return on invested capital.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Best-in-class service quality (99% on-time delivery, 0.2% cargo claims ratio), industry-leading operating ratio (<75%), premium pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Market share capture from Yellow Corp terminal bankruptcies and LTL freight cycle turnaround.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Prolonged freight recession with sustained drop in LTL daily tonnage."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.068967+00:00"
 }

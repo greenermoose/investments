@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EquityResearchSchema",
+  "description": "Schema for the agent-authored research block stored at context/data/equities/<TICKER>.json under the 'research' key. This block is the system of record for every qualitative judgment and every forward-looking parameter in the repository. Deterministic scripts read this block and must never author, infer, or substitute a default for any field defined here. Shared field shapes are referenced from investment_thesis_schema.json rather than redefined.",
+  "type": "object",
+  "required": [
+    "symbol",
+    "schema_version"
+  ],
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "pattern": "^[A-Z0-9.-]{1,10}$",
+      "description": "Primary stock ticker symbol. Must match the enclosing file name."
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Version of this research block schema."
+    },
+    "description": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Concise 1-2 sentence company business description used on grid cards and in universe.json."
+    },
+    "business_profile": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Two-paragraph business profile. Shape matches investment_thesis_schema.json#/properties/business_profile."
+    },
+    "competitive_moat_analysis": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Economic moat analysis. Shape matches investment_thesis_schema.json#/properties/competitive_moat_analysis."
+    },
+    "moat_summary": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Single-clause moat summary used in compact universe records."
+    },
+    "tam_and_market_share": {
+      "type": "object",
+      "description": "Agent-estimated total addressable market. Scripts compute market-share arithmetic from tam_estimate_usd_b but must never estimate the TAM itself.",
+      "required": ["tam_estimate_usd_b", "narrative", "provenance"],
+      "properties": {
+        "tam_estimate_usd_b": {
+          "type": "number",
+          "minimum": 0.1,
+          "description": "Estimated total addressable market in billions of USD."
+        },
+        "tam_cagr_pct": {
+          "type": "number",
+          "description": "Underlying market annual growth rate percentage."
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 120,
+          "description": "Market size, competitor landscape, share defense, and adjacent-segment expansion."
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "valuation_parameters": {
+      "type": "object",
+      "description": "Forward-looking parameters the agent supplies to valuation_model.py. Without this object a ticker receives no valuation, no ROI, and no rating.",
+      "required": [
+        "annual_revenue_growth",
+        "target_ps_multiple_multiplier",
+        "annual_share_dilution_rate",
+        "conviction_score",
+        "provenance"
+      ],
+      "properties": {
+        "annual_revenue_growth": {
+          "type": "number",
+          "minimum": -0.9,
+          "maximum": 3.0,
+          "description": "Modeled annual revenue growth rate as a decimal (0.28 = 28% per year)."
+        },
+        "target_ps_multiple_multiplier": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 3.0,
+          "description": "Multiplier applied to the current P/S multiple to reach the 3-year target multiple. Below 1.0 models multiple compression."
+        },
+        "annual_share_dilution_rate": {
+          "type": "number",
+          "minimum": -0.2,
+          "maximum": 0.5,
+          "description": "Net annual change in diluted share count as a decimal. Negative indicates net buyback."
+        },
+        "conviction_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Agent conviction on a 0-10 scale."
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "dividend_profile": {
+      "type": "object",
+      "description": "Agent-researched dividend policy. A recorded status of NONE means the agent determined the company pays no dividend, which is distinct from the field being unauthored.",
+      "required": ["status", "provenance"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["PAYING", "NONE", "SUSPENDED"]
+        },
+        "dividend_yield_pct": { "type": "number", "minimum": 0.0 },
+        "payout_ratio_pct": { "type": "number", "minimum": 0.0 },
+        "annual_dividend_growth_pct": { "type": "number" },
+        "description": { "type": "string" },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "capital_strategy": {
+      "type": "object",
+      "description": "Capital allocation posture and narrative. Numeric balance sheet inputs (debt, cash, CapEx) are read from Tier 1 filings by scripts and are not authored here.",
+      "required": ["capital_allocation_philosophy", "narrative", "provenance"],
+      "properties": {
+        "capital_allocation_philosophy": {
+          "type": "string",
+          "enum": [
+            "AGGRESSIVE_SHAREHOLDER_RETURN",
+            "BALANCED_CAPITAL_RETURN",
+            "REINVESTMENT_FOR_GROWTH",
+            "SBC_DILUTIVE",
+            "EXTERNAL_CAPITAL_DEPENDENT"
+          ]
+        },
+        "buyback_authorized_capacity_usd_b": { "type": "number", "minimum": 0.0 },
+        "primary_capital_needs": { "type": "string" },
+        "funding_strategy": { "type": "string" },
+        "going_concern_assessment": { "type": "string" },
+        "narrative": { "type": "string", "minLength": 120 },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "stock_based_compensation": {
+      "type": "object",
+      "description": "SBC run-rate, vesting architecture, and lock-up dynamics. Every value here is a research finding from filings or proxy statements, never a sector heuristic.",
+      "required": ["sbc_pct_of_revenue", "vesting_schedule_structure", "narrative", "provenance"],
+      "properties": {
+        "sbc_pct_of_revenue": { "type": "number", "minimum": 0.0, "maximum": 100.0 },
+        "gross_annual_dilution_pct": { "type": "number" },
+        "vesting_schedule_structure": { "type": "string" },
+        "lock_up_status": { "type": "string" },
+        "lock_up_details": { "type": "string" },
+        "narrative": { "type": "string", "minLength": 120 },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "type": "object",
+      "description": "Forensic audit of pension/OPEB, environmental remediation, mass torts, and purchase commitments. Conforms to context/strategy/off_balance_sheet_liabilities_framework.md. An absent block means unaudited, not zero.",
+      "required": ["overall_liability_overhang_rating", "narrative", "provenance"],
+      "properties": {
+        "overall_liability_overhang_rating": {
+          "type": "string",
+          "enum": ["MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH", "SEVERE"]
+        },
+        "total_estimated_off_balance_sheet_encumbrance_usd_b": { "type": "number", "minimum": 0.0 },
+        "pension_and_opeb": { "type": "object" },
+        "environmental_and_remediation": { "type": "object" },
+        "litigation_and_toxic_torts": { "type": "object" },
+        "purchase_commitments_and_guarantees": { "type": "object" },
+        "equity_cash_flow_diversion_risk": { "type": "string" },
+        "narrative": { "type": "string", "minLength": 120 },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "catalyst_timeline": {
+      "type": "object",
+      "description": "Company-specific catalysts. Items match investment_thesis_schema.json#/properties/catalyst_timeline/items.",
+      "required": ["items", "provenance"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "investment_thesis_schema.json#/properties/catalyst_timeline/items" }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "invalidation_criteria": {
+      "type": "object",
+      "description": "Per-company exit triggers. Criteria shared verbatim across many tickers indicate boilerplate rather than research and are reported by the duplicate-boilerplate audit.",
+      "required": ["items", "provenance"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 30 }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "latest_catalyst": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Single-sentence summary of the nearest-term catalyst, used in compact universe records. Distinct from catalyst_timeline, which carries the dated, revenue-bridged entries."
+    },
+    "revenue_drivers_narrative": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Explanation of what drives the 13-quarter revenue path. Scripts render the matrix; the agent explains it."
+    },
+    "valuation_ps_multiple_narrative": {
+      "$ref": "#/$defs/authored_string",
+      "description": "Explanation of the P/S multiple trajectory and why the modeled return justifies the rating."
+    }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "description": "Authorship and source attribution, required on every authored field per AGENTS.md section 6.",
+      "required": ["authored_by", "authored_date", "authority_tier"],
+      "properties": {
+        "authored_by": {
+          "type": "string",
+          "description": "Agent role that authored this content (e.g. 'Investment Thesis Agent', 'Equity Research Agent')."
+        },
+        "authored_date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "authority_tier": {
+          "type": "string",
+          "enum": [
+            "TIER_1_PRIMARY_REGULATORY",
+            "TIER_2_FINANCIAL_AGGREGATOR",
+            "TIER_3_CONSENSUS_ESTIMATES",
+            "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+            "TIER_5_UNVERIFIED_HEURISTIC"
+          ],
+          "description": "Source authority per context/sources/catalog.md. Content written from model weights without external tool verification must be marked TIER_4_AGENT_PARAMETRIC_KNOWLEDGE."
+        },
+        "source_locator": {
+          "type": "string",
+          "description": "URL, SEC accession number, or filing reference supporting the content."
+        },
+        "runtime_context_signature": {
+          "type": "string",
+          "description": "For TIER_4 content: system clock timestamp, active role persona, and prompt context at authoring time."
+        }
+      }
+    },
+    "authored_string": {
+      "type": "object",
+      "required": ["text", "provenance"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    }
+  }
+}

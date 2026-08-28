@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Fair Isaac Corporation's off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "FICO",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Industry-standard consumer credit scoring models (FICO Score) and enterprise decision analytics software.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Fair Isaac Corporation (FICO) is a leading analytics and decision management software company, world-renowned for the FICO Score, the standard measure of consumer credit risk in the United States utilized in more than 90% of US lending decisions. The company operates two segments: Scores (B2B and B2C credit risk scoring algorithms) and Software (FICO Platform for enterprise fraud detection, customer onboarding, and decision optimization).\n\nFICO commands an exceptionally durable economic moat derived from industry standardization, deep regulatory integration across mortgage (GSEs Fannie Mae and Freddie Mac), auto lending, and credit cards, and virtually insurmountable network effects. The Scores business requires negligible capital expenditure, allowing FICO to implement disciplined score pricing while expanding its modern cloud FICO Platform across global financial institutions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Fair Isaac Corporation possesses an exceptionally wide economic moat derived from the industry standardization of the FICO Score across US consumer credit markets. Used in over 90% of US lending decisions and mandated by government-sponsored enterprises (Fannie Mae and Freddie Mac) for mortgage securitization, the FICO Score is deeply embedded into lender underwriting algorithms, secondary market loan packaging, and credit bureau feeds. Minimal capital expenditure requirements allow FICO to capture high operating margins and return substantial cash to shareholders via aggressive share buybacks.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

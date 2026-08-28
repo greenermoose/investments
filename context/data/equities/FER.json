@@ -113,5 +113,78 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Ferrovial SE manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "FER",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global infrastructure operator managing high-margin managed express toll lanes (407 ETR in Toronto, NTE/LBJ Express in Texas) and international airports (Heathrow, JFK T1).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Ferrovial SE is a global infrastructure giant that develops, constructs, and operates high-return infrastructure assets, specializing in toll roads (express toll lanes including 407 ETR in Toronto and Managed Lanes in Texas/Virginia), airports (Heathrow, JFK Terminal 1), and urban construction projects worldwide.\n\nFerrovial's competitive advantage centers on long-term concession agreements (often 50 to 99 years) on essential urban transit arteries featuring dynamic congestion pricing that hedges against inflation. Management continues to deploy capital into high-growth North American managed lanes and airport terminal redevelopments, generating predictable, inflation-linked long-term cash distributions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Ferrovial SE holds a global infrastructure monopoly moat, developing and operating high-concession toll roads (Managed Express Lanes) and airports across North America and Europe. Its flagship assets\u2014including the 407 ETR in Toronto and dynamic Express Lanes in Texas and Virginia\u2014operate under long-duration 50-to-99-year concession agreements with dynamic toll pricing that adjusts in real time with traffic congestion, generating inflation-protected recurring cash flow.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Perpetual/multi-decade exclusive concessions on essential urban highway corridors with dynamic congestion toll pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "US Nasdaq primary listing liquidity and JFK New Terminal One opening.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Regulatory capping of dynamic congestion toll rates on key US express lanes."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.0,
+      "payout_ratio_pct": 45.0,
+      "annual_dividend_growth_pct": 6.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.981872+00:00"
 }

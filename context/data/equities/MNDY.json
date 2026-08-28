@@ -121,5 +121,112 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "monday.com Ltd. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "MNDY",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops the Work OS cloud software platform enabling organizations to build custom work management applications, CRM pipelines, software dev trackers, and automated cross-functional workflows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "monday.com Ltd. is a leading cloud-based Work Operating System (Work OS) platform that enables organizations of all sizes to build custom digital workflow software applications and work management tools without coding. Its modular platform supports project management, sales CRM (monday sales CRM), software development lifecycle management (monday dev), and enterprise service management.\n\nmonday.com benefits from rapid self-serve customer adoption, a highly intuitive visual interface, strong multi-product expansion across departments, and high net expansion rates within enterprise accounts. Management is driving sustained high growth by moving upmarket into large enterprise deployments, integrating generative AI workflow assistants, and expanding third-party app marketplace integrations.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Monday.com holds a high-growth SaaS moat in work operating systems and low-code workflow management. Its intuitive visual interface allows non-technical teams across marketing, software, HR, and sales to build custom business applications and automated workflows. Over 225,000 customers utilize Monday.com, driving gross margins above 89% and strong net expansion through multi-product cross-selling (Monday Dev, Monday CRM).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Highly flexible low-code/no-code architecture, >85% gross margins, rapid enterprise seat expansion (+ ARR clients growing >30%), >.3B net cash balance, and powerful workflow automation network effects.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "monday AI Work Platform agentic orchestration launch and enterprise CRM module acceleration.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Gross customer churn rising above historical norms, inability to expand outside SMB into enterprise tiers, or structural platform displacement by Microsoft 365 Copilot."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.24,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 9.1,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "monday AI Work Platform & Automated Cross-Departmental Workflows",
+          "expected_revenue_impact_b": 0.06,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Doubling of AI-driven ARR through agentic workplace workflow automation.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "monday Service & Enterprise CRM Tier 2 Acceleration",
+          "expected_revenue_impact_b": 0.09,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Enterprise customer expansion with $100k+ ARR clients growing >30% YoY.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Enterprise Scaled Seat Licensing & Marketplace App Ecosystem",
+          "expected_revenue_impact_b": 0.13,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Third-party marketplace commission revenue and enterprise wide-deployment renewals.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.048564+00:00"
 }

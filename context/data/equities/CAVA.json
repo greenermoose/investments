@@ -121,5 +121,83 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "CAVA Group, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  },
+  "research": {
+    "symbol": "CAVA",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Category-defining fast-casual Mediterranean restaurant chain serving customizable bowls, pitas, and dips alongside retail packaged goods.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "CAVA Group, Inc. is a category-defining fast-casual Mediterranean restaurant brand operating a nationwide footprint of company-owned restaurants offering customizable bowls, pitas, and curated Mediterranean dips. In addition to in-restaurant dining and digital app orders, CAVA sells a line of branded Mediterranean dips and dressings across grocery retail channels.\n\nCAVA benefits from attractive unit economics, industry-leading average unit volumes (AUVs exceeding $2.8 million), high digital sales mix, and a health-conscious lifestyle brand identity with broad consumer appeal. Management is executing a disciplined real estate rollout toward 1,000+ restaurant locations by 2032, leveraging supply chain efficiencies and digital loyalty engagement to drive sustained comparable restaurant sales growth.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "CAVA Group holds an emerging brand and operational moat in the fast-casual restaurant sector, pioneering Mediterranean cuisine at scale. Its industry-leading average unit volumes (AUVs exceeding $2.8 million), high digital sales mix (~36%), and exceptional restaurant-level profit margins (~25%) reflect strong consumer loyalty and operating efficiency. A vertically integrated dip and dressing production network and nationwide real estate pipeline support high-ROIC restaurant unit compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.28,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": 0.005,
+      "conviction_score": 9.3,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "National Unit Expansion & Digital Loyalty Program V2",
+          "expected_revenue_impact_b": 0.06,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Increased digital order frequency and higher average order value across 480+ locations.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Midwest & West Coast Regional Hub Rollout (75+ Net New Units)",
+          "expected_revenue_impact_b": 0.09,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Market entry into high-density suburban markets maintaining 25%+ restaurant-level profit margins.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Drive-Thru Digital Pick-Up Lanes & Catering Platform Scaling",
+          "expected_revenue_impact_b": 0.12,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "High-margin catering sales and throughput optimization via digital order drive-thru lanes.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.917593+00:00"
 }

@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Uber Technologies, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "UBER",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global mobility and logistics platform connecting consumers with on-demand rides, food and grocery delivery (Uber Eats), and enterprise freight services.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Uber Technologies, Inc. is the world's premier technology platform for on-demand mobility, delivery, and freight logistics, connecting hundreds of millions of consumers with independent drivers and merchant partners across 70+ countries. The business operates three primary segments: Mobility (ridesharing, taxi dispatch, and corporate commute), Delivery (Uber Eats restaurant food, grocery, and convenience retail delivery), and Freight (digital logistics brokerage).\n\nUber operates a capital-light platform model monetizing through take-rates on gross bookings across its global marketplace. Management has achieved sustained GAAP operating profitability and significant free cash flow generation by expanding high-margin advertising networks (Uber Advertising), cross-selling between Mobility and Delivery through the Uber One membership program, and partnering with autonomous vehicle developers (Waymo, Cruise) to deploy autonomous fleets at scale.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Uber commands a powerful two-sided local network effect across global metropolitan markets, pairing driver supply density with massive consumer demand to minimize rider wait times and maximize driver utilization. High platform liquidity creates high customer conversion and allows Uber to cross-sell food delivery to rideshare users at near-zero customer acquisition cost. Furthermore, Uber's membership program (Uber One) drives higher frequency, lower churn, and high-margin advertising monetization that subscale regional competitors cannot match.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.140321+00:00"
 }

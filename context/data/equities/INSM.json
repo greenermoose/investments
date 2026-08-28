@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Insmed Incorporated's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "INSM",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global biopharmaceutical company focused on transforming the lives of patients with serious and rare pulmonary and inflammatory diseases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Insmed Incorporated is a biopharmaceutical company focused on transforming the lives of patients battling serious and rare pulmonary and inflammatory diseases. The company commercializes ARIKAYCE, an approved inhaled liposomal antibacterial therapy for refractory Mycobacterium avium complex (MAC) lung disease, and is advancing its blockbuster anti-inflammatory asset brensocatib for non-cystic fibrosis bronchiectasis.\n\nInsmed's competitive strength relies on its proprietary liposomal inhalation drug delivery platforms, deep clinical expertise in rare pulmonary diseases, and positive Phase 3 ASPEN trial data for brensocatib. Management is preparing for the commercial launch of brensocatib as a first-in-class dipeptidyl peptidase 1 (DPP1) inhibitor, establishing a major new treatment paradigm in neutrophil-mediated inflammatory diseases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Insmed Incorporated possesses a specialized biopharmaceutical moat focused on severe, rare respiratory and inflammatory diseases. Its commercial medicine ARIKAYCE is the standard-of-care inhaled therapy for refractory Mycobacterium avium complex (MAC) lung disease. Insmed's dpp1 inhibitor brensocatib (Phase 3 ASPEN trial success in non-cystic fibrosis bronchiectasis) establishes first-in-class market exclusivity in an unserved multi-billion dollar commercial patient population.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "First-in-class DPP1 inhibitor (Brensocatib) with breakthrough Phase 3 ASPEN trial success in non-cystic fibrosis bronchiectasis, ARIKAYCE commercial base.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Brensocatib FDA NDA filing and commercial launch preparation in bronchiectasis.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "FDA approval delay or clinical safety issues in brensocatib hidradenitis suppurativa trials."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.18,
+      "target_ps_multiple_multiplier": 0.8,
+      "annual_share_dilution_rate": 0.025,
+      "conviction_score": 7.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

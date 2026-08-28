@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Danaher Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "DHR",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global life sciences and diagnostics innovator designing bioprocessing tools, filtration systems, and medical diagnostics instruments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Danaher Corporation is a global life sciences and diagnostics innovator designing, manufacturing, and marketing professional, medical, and commercial instruments, consumables, and services. Following the successful spin-offs of Fortive, Envista, and Veralto, Danaher operates as a focused biopharma and healthcare pure-play across three segments: Biotechnology (Cytiva bioprocessing equipment and filtration consumables), Life Sciences, and Diagnostics (Beckman Coulter, Cepheid).\n\nThe foundation of Danaher's operational excellence is the Danaher Business System (DBS), a proprietary continuous-improvement methodology rooted in lean manufacturing and capital allocation rigor. Management is levered to the long-term secular expansion of biologic and cell/gene therapy drug development, generating recurring revenue where over 80% of sales are high-margin consumables.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Danaher commands an exceptional wide economic moat derived from high regulatory switching costs and mission-critical bioprocessing consumable specification. In biopharmaceutical manufacturing, Cytiva's chromatography resins, single-use bioreactors, and filtration membranes are explicitly specified in FDA biologic drug approval master files. Drug manufacturers cannot switch consumable suppliers without undergoing expensive, multi-year regulatory revalidation, locking in Danaher's recurring cash flow.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.4,
+      "payout_ratio_pct": 15.0,
+      "annual_dividend_growth_pct": 8.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.953995+00:00"
 }

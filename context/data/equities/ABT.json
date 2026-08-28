@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Abbott Laboratories manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "ABT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Diversified healthcare leader developing medical devices (FreeStyle Libre), diagnostic systems, pediatric and adult nutritionals, and branded generic medicines.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Abbott Laboratories is a diversified global healthcare leader discovering, developing, manufacturing, and marketing a broad line of healthcare products across four primary segments: Medical Devices (FreeStyle Libre continuous glucose monitors, cardiac rhythm management, electrophysiology, structural heart), Diagnostics (core laboratory, point-of-care, and rapid testing systems), Established Pharmaceuticals, and Nutritionals (Ensure, Similac).\n\nAbbott's growth is spearheaded by its revolutionary FreeStyle Libre diabetes care franchise, the world's most widely prescribed continuous glucose monitoring (CGM) system serving millions of diabetic patients globally. Management is expanding FreeStyle Libre into dual glucose-ketone sensors, advancing transcatheter cardiovascular repairs (TriClip, MitraClip), and returning capital through consistent dividend growth.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Abbott holds a wide economic moat founded on medical device intellectual property, massive manufacturing economies of scale, and entrenched global clinical distribution channels. FreeStyle Libre commands category leadership in CGM due to its low out-of-pocket patient cost, superior sensor accuracy, and broad pharmacy insurance reimbursement. High regulatory approval thresholds and patent protections insulate Abbott's medical device and diagnostic platforms from competitive displacement.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 1.8,
+      "payout_ratio_pct": 40.0,
+      "annual_dividend_growth_pct": 8.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

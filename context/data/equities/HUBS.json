@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "HubSpot, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "HUBS",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Cloud-based customer relationship management (CRM) and marketing automation platform for scaling enterprises.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "HubSpot, Inc. is a leading cloud-based customer relationship management (CRM) and customer engagement platform engineered specifically for scaling mid-market enterprises. The company's unified platform encompasses Marketing Hub, Sales Hub, Service Hub, Content Hub, Operations Hub, and Commerce Hub, enabling businesses to attract, engage, and delight customers across the entire lifecycle while monetizing through multi-tiered recurring SaaS subscriptions.\n\nHubSpot's economic moat is reinforced by its single-codebase architecture (built organically rather than stitched together via disparate acquisitions), intuitive user experience, and low total cost of ownership that captures mid-market customers underserved by complex enterprise legacy platforms. Management continues to drive multi-hub adoption among existing accounts, expand international presence, and infuse native generative AI tooling (HubSpot Breeze) across its core platform to increase customer lifetime value and expand operating margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "HubSpot commands a durable competitive moat powered by high switching costs, brand loyalty, and single-codebase platform integration within the underserved mid-market customer segment. Unlike complex enterprise CRM suites that require costly systems integrators or cobbled-together point tools with brittle APIs, HubSpot provides an all-in-one, intuitive platform spanning marketing, sales, customer service, content, and commerce. High customer retention and continuous multi-hub expansion drive strong net revenue retention, expanding operating leverage, and robust free cash flow compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

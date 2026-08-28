@@ -135,5 +135,90 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Gilead Sciences, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "GILD",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Discovers, develops, and commercializes innovative therapeutics in areas of unmet medical need including HIV, viral hepatitis, and oncology.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Gilead Sciences, Inc. is a biopharmaceutical powerhouse that discovers, develops, and commercializes innovative therapeutics in virology (HIV, viral hepatitis, COVID-19) and oncology (cell therapies and targeted cancer therapeutics). Its HIV franchise (anchored by Biktarvy and lenacapavir) dominates global HIV treatment and prevention markets, complemented by cancer treatments Trodelvy and Yescarta (via Kite Pharma).\n\nGilead holds an entrenched competitive moat in HIV antiviral care supported by deep clinical expertise, patent portfolios, and unmatched global physician loyalty. Management is advancing lenacapavir as a twice-yearly subcutaneous injection for HIV pre-exposure prophylaxis (PrEP) and treatment, while expanding clinical indications for its oncology pipeline to build a diversified biopharmaceutical powerhouse.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Gilead Sciences maintains a dominant pharmaceutical moat in HIV antiviral care, supported by blockbuster franchise Biktarvy (which commands >49% US HIV treatment market share) and breakthrough long-acting capsid inhibitor lenacapavir (Sunlenca). Gilead's deep virology R&D expertise, extensive patent protections, and near-universal physician loyalty create high clinical switching barriers, while an expanding oncology portfolio (Trodelvy, Yescarta) diversifies its long-term cash flows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Global HIV market dominance (Biktarvy), breakthrough long-acting lenacapavir PrEP efficacy (100% prevention), strong cash generation.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Lenacapavir twice-yearly subcutaneous injection regulatory approvals and Trodelvy expansion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "HIV franchise patent cliffs or repeated write-downs in clinical oncology acquisitions."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.03,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": -0.01,
+      "conviction_score": 7.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 3.6,
+      "payout_ratio_pct": 50.0,
+      "annual_dividend_growth_pct": 5.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

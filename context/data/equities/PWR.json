@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Quanta Services, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "PWR",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Comprehensive infrastructure solutions for electric power transmission, substations, and renewable energy.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Quanta Services, Inc. is the leading specialized contracting services provider delivering comprehensive infrastructure solutions for the electric power, renewable energy, and communications industries. Its capabilities include designing, constructing, and maintaining high-voltage transmission lines, electrical substations, utility-scale solar and wind generation, and modern fiber-optic communications networks.\n\nQuanta commands an unmatched competitive advantage built on North America's largest skilled craft labor workforce, proprietary equipment fleet, and master service agreements (MSAs) with major investor-owned utilities. As electric utilities invest hundreds of billions to upgrade aging power grids, interconnect renewable energy, and satisfy data center power demand, Quanta's massive scale and safety track record make it the indispensable builder of the modern electric grid.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Quanta Services commands an unmatched competitive advantage as North America's premier infrastructure solutions provider for electric utilities and renewable energy developers. Quanta operates the continent's largest skilled craft labor workforce and specialized equipment fleet, enabling it to execute large-scale, high-voltage transmission, grid modernization, and substation projects that smaller competitors cannot staff or bond. Master Service Agreements (MSAs) covering multi-year utility CapEx plans provide high revenue visibility and insulation from cyclical downturns.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.083730+00:00"
 }

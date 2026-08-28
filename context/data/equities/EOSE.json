@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "Eos Energy Enterprises, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  },
+  "research": {
+    "symbol": "EOSE",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops and manufactures zinc-powered battery energy storage solutions for utility-scale, commercial, and industrial long-duration applications.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Eos Energy Enterprises, Inc. designs and manufactures innovative zinc-based long-duration energy storage systems (the Znyth aqueous zinc battery) tailored for utility-scale solar and wind integration, microgrids, and industrial grid support. Unlike lithium-ion alternatives, Eos batteries utilize non-flammable, earth-abundant materials with 3 to 12 hour discharge durations.\n\nEos offers a safe, environmentally benign, and cost-effective long-duration energy storage alternative that eliminates thermal runaway fire risk and relies on domestic US supply chains. Management is scaling automated manufacturing capacity under Project AMA (supported by Department of Energy loan programs) to fulfill a growing multi-gigawatt commercial order backlog.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Eos Energy Enterprises possesses a clean technology moat in long-duration grid energy storage, manufacturing proprietary zinc-hybrid cathode battery systems (Znyth technology). Unlike lithium-ion batteries, Eos aqueous zinc systems are non-flammable, utilize abundant domestic raw materials, operate without thermal runaway risk, and provide 3 to 12 hours of discharge duration, positioning Eos as a cost-effective solution for utility-scale solar and wind storage integration.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Non-lithium aqueous battery chemistry; severely offset by high cash burn, heavy debt obligations, ongoing dilution, and intense manufacturing scaling challenges.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Project Spring automated manufacturing line commissioning.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "DOE loan guarantee conditions unmet, cash depletion, or catastrophic gross margin deficit per MWh produced."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.968669+00:00"
 }

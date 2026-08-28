@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "United Rentals, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "URI",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World's largest industrial equipment rental network, telematics fleet management, and jobsite services.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "United Rentals, Inc. is the world's largest equipment rental company, operating a comprehensive network of over 1,500 rental locations across North America, Europe, and Australia. The company serves commercial construction, industrial manufacturing, infrastructure, and event customers, offering an extensive fleet of general construction equipment (aerial work platforms, earthmoving, material handling) and specialty equipment (power and HVAC, trench safety, fluid solutions).\n\nUnited Rentals maintains an insurmountable scale advantage over fragmented local competitors, utilizing proprietary digital telematics (Total Control software) and dynamic fleet repositioning to maximize equipment utilization and return on invested capital. Its Specialty rental division provides high-margin, recession-resilient revenues, while substantial free cash flow is redeployed into accretive tuck-in acquisitions and share repurchases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "United Rentals maintains an insurmountable scale advantage as the world's largest equipment rental provider, operating a fleet exceeding $20 billion across 1,500+ locations. Its massive fleet density allows United Rentals to service large national accounts and mega-projects with guaranteed equipment availability and 24/7 digital telematics (Total Control software). Economies of scale in equipment purchasing, dynamic branch fleet repositioning, and high-margin Specialty rental offerings drive superior fleet utilization, industry-leading operating margins, and strong free cash flow generation.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.140321+00:00"
 }

@@ -5,28 +5,6 @@
   "provenance": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
   "campaigns": [
     {
-      "campaign_id": "SSC-2024-SMCI-HINDENBURG",
-      "symbol": "SMCI",
-      "company_name": "Super Micro Computer, Inc.",
-      "short_seller_firm": "Hindenburg Research",
-      "publication_date": "2024-08-27",
-      "report_title": "Super Micro Computer: Fresh Evidence of Accounting Manipulation, Sibling Self-Dealing and Sanctions Evasion",
-      "report_url": "https://hindenburgresearch.com/smci/",
-      "primary_allegations": [
-        "Undisclosed related-party transactions with CEO family entities Ablecom and Compuware",
-        "Improper revenue recognition and premature shipment booking",
-        "Rehiring of executives previously implicated in SEC accounting restatement"
-      ],
-      "allegation_severity": "CRITICAL_FRAUD",
-      "stock_price_before_report": 548.0,
-      "stock_price_day1_close": 443.5,
-      "day1_reaction_pct": -19.07,
-      "status": "REGULATORY_ACTION_CONFIRMED",
-      "company_rebuttal_summary": "Company delayed 10-K filing, appointed special board committee, and later auditor Ernst & Young resigned.",
-      "agent_thesis_verdict": "AVOID_LIST_CONFIRMED",
-      "thesis_action_rationale": "High forensic accounting risk and auditor resignation mandate strict Avoid status until audited financial restatements are filed."
-    },
-    {
       "campaign_id": "SSC-2024-ENVX-SCORPION",
       "symbol": "ENVX",
       "company_name": "Enovix Corporation",
@@ -71,6 +49,28 @@
       "thesis_action_rationale": "High cash balance provides >3 years runway, but long commercialization horizon caps allocation size."
     },
     {
+      "campaign_id": "SSC-2024-PDD-GRIZZLY",
+      "symbol": "PDD",
+      "company_name": "PDD Holdings Inc.",
+      "short_seller_firm": "Grizzly Research",
+      "publication_date": "2023-09-07",
+      "report_title": "We Believe PDD Is a Dying Fraud and Temu Is Cleverly Concealed Malware",
+      "report_url": "https://grizzlyreports.com/feed/",
+      "primary_allegations": [
+        "Temu mobile application allegedly incorporates unauthorized spyware and data exfiltration",
+        "Fabrication of domestic China GMV and merchant take-rates",
+        "Unreconciled cash balances in Chinese domestic subsidiaries"
+      ],
+      "allegation_severity": "HIGH_GOVERNANCE_RISK",
+      "stock_price_before_report": 98.4,
+      "stock_price_day1_close": 96.6,
+      "day1_reaction_pct": -1.83,
+      "status": "REFUTED_BY_COMPANY",
+      "company_rebuttal_summary": "Subsequent quarterly earnings demonstrated massive international revenue and operating profit growth; app security certifications updated.",
+      "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
+      "thesis_action_rationale": "Market price reacted minimally, and massive free cash flow conversion ($20B+ TTM) confirmed operating leverage."
+    },
+    {
       "campaign_id": "SSC-2024-MSTR-KERRISDALE",
       "symbol": "MSTR",
       "company_name": "MicroStrategy Incorporated",
@@ -93,26 +93,26 @@
       "thesis_action_rationale": "Software revenue is secondary; MSTR acts as an active capital markets vehicle. However, valuation must be disciplined to avoid buying above peak NAV multiple bands."
     },
     {
-      "campaign_id": "SSC-2024-PDD-GRIZZLY",
-      "symbol": "PDD",
-      "company_name": "PDD Holdings Inc.",
-      "short_seller_firm": "Grizzly Research",
-      "publication_date": "2023-09-07",
-      "report_title": "We Believe PDD Is a Dying Fraud and Temu Is Cleverly Concealed Malware",
-      "report_url": "https://grizzlyreports.com/feed/",
+      "campaign_id": "SSC-2024-SMCI-HINDENBURG",
+      "symbol": "SMCI",
+      "company_name": "Super Micro Computer, Inc.",
+      "short_seller_firm": "Hindenburg Research",
+      "publication_date": "2024-08-27",
+      "report_title": "Super Micro Computer: Fresh Evidence of Accounting Manipulation, Sibling Self-Dealing and Sanctions Evasion",
+      "report_url": "https://hindenburgresearch.com/smci/",
       "primary_allegations": [
-        "Temu mobile application allegedly incorporates unauthorized spyware and data exfiltration",
-        "Fabrication of domestic China GMV and merchant take-rates",
-        "Unreconciled cash balances in Chinese domestic subsidiaries"
+        "Undisclosed related-party transactions with CEO family entities Ablecom and Compuware",
+        "Improper revenue recognition and premature shipment booking",
+        "Rehiring of executives previously implicated in SEC accounting restatement"
       ],
-      "allegation_severity": "HIGH_GOVERNANCE_RISK",
-      "stock_price_before_report": 98.4,
-      "stock_price_day1_close": 96.6,
-      "day1_reaction_pct": -1.83,
-      "status": "REFUTED_BY_COMPANY",
-      "company_rebuttal_summary": "Subsequent quarterly earnings demonstrated massive international revenue and operating profit growth; app security certifications updated.",
-      "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
-      "thesis_action_rationale": "Market price reacted minimally, and massive free cash flow conversion ($20B+ TTM) confirmed operating leverage."
+      "allegation_severity": "CRITICAL_FRAUD",
+      "stock_price_before_report": 548.0,
+      "stock_price_day1_close": 443.5,
+      "day1_reaction_pct": -19.07,
+      "status": "REGULATORY_ACTION_CONFIRMED",
+      "company_rebuttal_summary": "Company delayed 10-K filing, appointed special board committee, and later auditor Ernst & Young resigned.",
+      "agent_thesis_verdict": "AVOID_LIST_CONFIRMED",
+      "thesis_action_rationale": "High forensic accounting risk and auditor resignation mandate strict Avoid status until audited financial restatements are filed."
     }
   ]
 }

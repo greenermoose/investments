@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "Keurig Dr Pepper Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  },
+  "research": {
+    "symbol": "KDP",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Beverage company in North America with a diverse portfolio of flavored beverages, concentrates, and single-serve Keurig brewing systems.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Keurig Dr Pepper Inc. is a leading North American beverage company operating a balanced portfolio of single-serve coffee systems (Keurig brewing systems and K-Cup pods) and packaged ready-to-drink beverages (Dr Pepper, Canada Dry, Snapple, 7UP, Mott's, Core Hydration, and C4 Energy partnership). The company monetizes through retail pod sales, proprietary brewer distribution, and direct-store delivery (DSD) networks.\n\nKeurig Dr Pepper commands an economic moat derived from its ubiquitous single-serve coffee appliance installed base (present in over 40 million North American households), long-term coffee brand licensing partnerships, and an extensive nationwide beverage distribution footprint. Management is accelerating growth in ready-to-drink energy drinks, cold-brew coffee innovations, and packaging efficiency across grocery and convenience channels.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Keurig Dr Pepper possesses an economic moat in single-serve coffee and ready-to-drink beverages. Its proprietary Keurig single-serve coffee brewing system operates a classic razor-and-blade model, where millions of installed countertop brewers generate steady recurring K-Cup pod licensing royalties. Keurig Dr Pepper pairs this with a nationwide direct-store-delivery (DSD) distribution network that distributes iconic beverage brands including Dr Pepper, Canada Dry, and Snapple.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Keurig single-serve coffee pod ecosystem lock-in, Dr Pepper volume momentum (surpassing Pepsi as #2 US carbonated soft drink), 4% dividend yield.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Dr Pepper market share gains, K-Cup single-serve pod brewer refresh.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Coffee green bean cost inflation unable to be offset by pod price increases."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.04,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": -0.005,
+      "conviction_score": 7.8,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.018325+00:00"
 }

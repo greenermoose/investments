@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Thomson Reuters Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "TRI",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides authoritative information, software, and AI solutions for legal, tax, accounting, and compliance professionals (Westlaw, Checkpoint, CoCounsel).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Thomson Reuters Corporation is a leading global provider of business information services, delivering specialized software, authoritative data, and workflow solutions to legal, tax, accounting, compliance, and corporate professionals. Its flagship software platforms include Westlaw (legal research), Practical Law, Checkpoint (tax and accounting), and ONESOURCE (corporate tax compliance), alongside the Reuters news agency.\n\nThomson Reuters commands massive professional switching costs, deep integration into law firm and corporate tax workflows, and proprietary legal and regulatory databases that cannot be easily replicated. Management is aggressively integrating generative AI capabilities (CoCounsel legal AI assistant) across its legal and tax platforms, driving high recurring subscription growth and expanding operating margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Thomson Reuters holds a wide economic moat in legal, tax, and accounting professional workflow software. Its flagship platforms (Westlaw, Checkpoint, Practical Law) provide proprietary legal research precedents, tax compliance codes, and verified regulatory intelligence. Lawyers and accountants rely on Westlaw's authoritative primary source annotations for legal briefs, creating recurring subscription retention rates above 90% and high pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Proprietary legal and tax content archives, high switching costs in enterprise law firms and corporate tax departments, CoCounsel GenAI legal assistant.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "CoCounsel GenAI legal assistant adoption and Westlaw Precision upgrade cycle.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Loss of Westlaw market share to generative AI startups."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.128826+00:00"
 }

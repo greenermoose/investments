@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "CME Group Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "CME",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global financial derivatives exchange operating futures and options markets across interest rates, equities, and energy.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "CME Group Inc. is the world's largest and most diverse financial derivatives exchange, operating marketplaces for trading futures and options across benchmark asset classes including interest rates (SOFR, US Treasuries), equity indexes (S&P 500, Nasdaq-100), foreign exchange, energy, agricultural commodities, and metals. The company operates the Chicago Mercantile Exchange, Chicago Board of Trade, New York Mercantile Exchange, and The Commodity Exchange.\n\nCME Group possesses one of the widest economic moats in global finance, powered by liquidity-driven network effects and centralized clearing house operations (CME Clearing). Market participants concentrate trading volume where open interest and liquidity are deepest to minimize execution slippage, creating self-reinforcing monopolies. With operating margins exceeding 65% and asset-light operations, CME converts substantial cash flow into shareholder returns via base and special dividends.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "CME Group operates one of the widest economic moats in global financial infrastructure, powered by deep liquidity network effects and centralized clearing house operations (CME Clearing). Market participants naturally concentrate trading volume where open interest and liquidity are deepest to achieve minimal bid-ask spread slippage, making it virtually impossible for competing venues to launch competing contracts in benchmark interest rate (SOFR, Treasuries) and equity index (S&P 500, Nasdaq-100) futures. Operating margins exceeding 65% and high capital efficiency generate substantial free cash flow.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.931788+00:00"
 }

@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Autodesk, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ADSK",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides 3D design, engineering, and entertainment software and services (AutoCAD, Revit, Inventor, Fusion, Maya) across AEC, manufacturing, and media.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Autodesk, Inc. is the leading software platform provider for 3D design, engineering, architecture, construction, and entertainment media production. Its core industry-standard applications include AutoCAD, Revit (Building Information Modeling), Inventor, Fusion 360, Civil 3D, and Maya, monetized primarily through cloud-based recurring term subscriptions and enterprise consumption agreements.\n\nAutodesk's platform acts as the ubiquitous standard across global architecture, engineering, and construction (AEC) industries, creating massive switching costs and network effects as project files and workflows are shared across architects, engineers, and general contractors. Management is executing a strategic expansion into cloud construction management (Autodesk Construction Cloud), unified digital manufacturing pipelines, and generative AI design automation tools.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Autodesk's economic moat is fortified by the ubiquitous industry standardization of its architecture, engineering, and construction (AEC) software platforms, anchored by AutoCAD and Revit. Decades of institutional adoption, university curriculum entrenchment, and complex BIM (Building Information Modeling) file format dependencies create prohibitive switching costs for enterprises and contractors. As multi-party AEC projects require seamless model collaboration, network effects prevent customer defection and support gross margins above 90%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Standard architecture and engineering design software (AutoCAD, Revit), high file format and workflow switching costs, expanding cloud construction platform.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Autodesk AI generative design workflows and new direct transaction billing model transition.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Deceleration in AEC software billings or macroeconomic freeze in commercial construction."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

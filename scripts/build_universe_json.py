@@ -20,6 +20,7 @@ from return_engine import calculate_annualized_roi
 from valuation_model import model_equity_valuation
 from compare_roi_distribution import run_comparison, print_comparison_report
 from adr_registry import normalize_shares_outstanding, convert_to_usd, get_listing_metadata
+import research_store
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -98,8 +99,59 @@ system_dataset_files = {
 # Iterate through all company files in http/data
 all_files = [f for f in os.listdir(http_data_dir) if f.endswith(".json") and f not in system_dataset_files]
 
+def build_capital_needs_view(research, val_model):
+    """Assembles the capital view the web UI consumes.
+
+    Every value here is either authored research or computed from Tier 1
+    filings. Sub-fields with no source are None, which the UI renders as an
+    explicit absence. This function originates nothing.
+    """
+    capital = research.get("capital_strategy") or {}
+    dividend = research.get("dividend_profile") or {}
+    if not capital and not dividend:
+        return None
+
+    dilution = (research.get("valuation_parameters") or {}).get("annual_share_dilution_rate")
+    capacity = capital.get("buyback_authorized_capacity_usd_b")
+    debt = val_model.get("total_debt_usd")
+    cash = val_model.get("cash_and_equivalents_usd")
+
+    return {
+        "capital_allocation_philosophy": capital.get("capital_allocation_philosophy"),
+        "dividends": {
+            "status": dividend.get("status"),
+            "annual_dividend_usd": val_model.get("annual_dividend_usd"),
+            "dividend_yield_pct": dividend.get("dividend_yield_pct"),
+            "payout_ratio_pct": dividend.get("payout_ratio_pct"),
+            "dividend_growth_rate_pct": dividend.get("annual_dividend_growth_pct"),
+            "description": dividend.get("description"),
+        } if dividend else None,
+        "share_buybacks": {
+            "buyback_program_active": (
+                None if dilution is None else dilution < 0.0),
+            "authorized_capacity_usd_b": capacity,
+            "net_annual_share_change_pct": (
+                None if dilution is None else round(dilution * 100.0, 1)),
+        } if (capital or dilution is not None) else None,
+        "share_and_debt_issuance": {
+            "total_debt_usd_b": None if debt is None else round(debt / 1e9, 2),
+            "cash_and_equivalents_usd_b": None if cash is None else round(cash / 1e9, 2),
+            "net_cash_or_debt_usd_b": (
+                None if val_model.get("net_cash_usd") is None
+                else round(val_model["net_cash_usd"] / 1e9, 2)),
+        },
+        "anticipated_capital_needs": {
+            "primary_needs": capital.get("primary_capital_needs"),
+            "funding_strategy": capital.get("funding_strategy"),
+            "going_concern_assessment": capital.get("going_concern_assessment"),
+        } if capital else None,
+        "narrative": capital.get("narrative"),
+    }
+
+
 universe = []
 updated_meta = {}
+unmodeled_symbols = []
 
 for filename in sorted(all_files):
     sym = filename.replace(".json", "")
@@ -112,10 +164,11 @@ for filename in sorted(all_files):
     latest_filing = filings[0] if filings else None
     latest_bs = latest_filing.get("data", {}).get("balance_sheet", {}) if latest_filing else {}
 
-    # Resolve metadata
+    # Resolve metadata. The rating, conviction, and holding period are set below
+    # from the valuation model, or left unset when it has no authored parameters
+    # to work from. They are deliberately not seeded from the cache here: a stale
+    # rating carried forward is indistinguishable from a current one.
     meta = company_meta.get(sym, {})
-    thesis_status = meta.get("thesis_status", "HOLD").upper()
-    conviction_score = meta.get("conviction_score", 8.0)
     holding_period = meta.get("holding_period", "3 to 5 Years")
 
     # Determine index memberships
@@ -177,30 +230,55 @@ for filename in sorted(all_files):
     sector_val = meta.get("sector", "Information Technology")
     industry_val = meta.get("industry", "US Equity")
     
+    research = research_store.load_research(sym)
+
     val_model = model_equity_valuation(
         symbol=sym,
         current_price=current_price,
-        shares_outstanding=shares or 1e9,
-        ttm_revenue=ttm_rev or (current_price * (shares or 1e9) * 0.2),
+        shares_outstanding=shares or 0.0,
+        ttm_revenue=ttm_rev or 0.0,
         sector=sector_val,
         industry=industry_val,
         company_name=comp_name,
-        filings=filings
+        filings=filings,
+        research=research
     )
 
-    thesis_status = val_model["rating"]
-    conviction_score = val_model["conviction_score"]
-    entry_price = val_model["entry_price"]
-    target_exit_price = val_model["target_exit_price"]
-    target_roi_str = val_model["target_roi_str"]
-    ret_params = val_model["return_engine"]
-    current_ps_multiple = val_model["current_ps_multiple"]
-    target_ps_multiple = val_model["target_ps_multiple"]
-    historical_quarterly_revenue = val_model["historical_quarterly_revenue"]
-    revenue_forecast_13q = val_model["revenue_forecast_13q"]
-    quarterly_revenue_trajectory = val_model["quarterly_revenue_trajectory"]
-    shares_projections_6h = val_model["shares_projections_6h"]
-    price_target_ranges_4h = val_model["price_target_ranges_4h"]
+    # A ticker with no authored valuation parameters stays in the public catalog
+    # with its market data and whatever research exists, but carries no rating,
+    # no price target, and no ROI. Those are outputs of research this ticker has
+    # not received yet, and a placeholder would be indistinguishable from one.
+    if val_model["status"] != "MODELED":
+        unmodeled_symbols.append(sym)
+        thesis_status = None
+        triage_status = "AWAITING_RESEARCH"
+        conviction_score = None
+        entry_price = None
+        target_exit_price = None
+        target_roi_str = None
+        ret_params = {}
+        current_ps_multiple = None
+        target_ps_multiple = None
+        historical_quarterly_revenue = []
+        revenue_forecast_13q = []
+        quarterly_revenue_trajectory = []
+        shares_projections_6h = []
+        price_target_ranges_4h = []
+    else:
+        thesis_status = val_model["rating"]
+        triage_status = "QUALIFIED_CANDIDATE" if thesis_status != "AVOID" else "AVOID"
+        conviction_score = val_model["conviction_score"]
+        entry_price = val_model["entry_price"]
+        target_exit_price = val_model["target_exit_price"]
+        target_roi_str = val_model["target_roi_str"]
+        ret_params = val_model["return_engine"]
+        current_ps_multiple = val_model["current_ps_multiple"]
+        target_ps_multiple = val_model["target_ps_multiple"]
+        historical_quarterly_revenue = val_model["historical_quarterly_revenue"]
+        revenue_forecast_13q = val_model["revenue_forecast_13q"]
+        quarterly_revenue_trajectory = val_model["quarterly_revenue_trajectory"]
+        shares_projections_6h = val_model["shares_projections_6h"]
+        price_target_ranges_4h = val_model["price_target_ranges_4h"]
 
     # Resolve authoritative listing and ADR metadata
     listing_meta = get_listing_metadata(sym)
@@ -222,22 +300,16 @@ for filename in sorted(all_files):
     meta_copy["target_roi"] = target_roi_str
     meta_copy["current_ps_multiple"] = current_ps_multiple
     meta_copy["target_ps_multiple"] = target_ps_multiple
-    meta_copy["entry_strategy"] = ret_params["entry_strategy"]
-    meta_copy["exit_strategy"] = ret_params["exit_strategy"]
-    meta_copy["entry_date"] = ret_params["entry_date"]
-    meta_copy["target_exit_date"] = ret_params["target_exit_date"]
-    meta_copy["csp_proceeds"] = ret_params["csp_proceeds"]
-    meta_copy["cc_proceeds"] = ret_params["cc_proceeds"]
-    meta_copy["dividend_proceeds"] = ret_params.get("dividend_proceeds", 0.0)
-    meta_copy["initial_capital_outlay"] = ret_params["initial_capital_outlay"]
-    meta_copy["total_proceeds"] = ret_params["total_proceeds"]
-    meta_copy["net_profit"] = ret_params["net_profit"]
-    meta_copy["holding_period_days"] = ret_params["holding_period_days"]
-    meta_copy["holding_period_years"] = ret_params["holding_period_years"]
-    meta_copy["capital_gain_pct"] = ret_params["capital_gain_pct"]
-    meta_copy["options_yield_pct"] = ret_params["options_yield_pct"]
-    meta_copy["total_roi_pct"] = ret_params["total_roi_pct"]
-    meta_copy["annualized_roi_pct"] = ret_params["annualized_roi_pct"]
+    # Return Engine outputs exist only for modelled tickers. On an unmodelled one
+    # ret_params is empty and every downstream key is cleared rather than defaulted,
+    # so a stale figure from a previous run cannot survive into the cache.
+    for key in ("entry_strategy", "exit_strategy", "entry_date", "target_exit_date",
+                "csp_proceeds", "cc_proceeds", "dividend_proceeds",
+                "initial_capital_outlay", "total_proceeds", "net_profit",
+                "holding_period_days", "holding_period_years", "capital_gain_pct",
+                "options_yield_pct", "total_roi_pct", "annualized_roi_pct"):
+        meta_copy[key] = ret_params.get(key)
+    meta_copy["triage_status"] = triage_status
     meta_copy["is_adr"] = is_adr_flag
     meta_copy["listing_type"] = listing_type_val
     meta_copy["country_of_origin"] = country_of_origin
@@ -285,12 +357,14 @@ for filename in sorted(all_files):
         }
     else:
         analyst_consensus = {
-            "mean_target": target_exit_price,
-            "median_target": target_exit_price,
-            "high_target": target_exit_price,
-            "low_target": target_exit_price,
+            # No external coverage. Restating this repository's own target here
+            # would dress a modeled number as an independent opinion.
+            "mean_target": None,
+            "median_target": None,
+            "high_target": None,
+            "low_target": None,
             "coverage_count": 0,
-            "average_upside_pct": round(((target_exit_price - current_price) / current_price) * 100.0, 1)
+            "average_upside_pct": None
         }
 
     ir_url = comp_data.get("investor_relations_url") or meta.get("investor_relations_url") or f"https://investor.{sym.lower()}.com/"
@@ -298,8 +372,8 @@ for filename in sorted(all_files):
     universe.append({
         "symbol": sym,
         "name": comp_name,
-        "sector": meta.get("sector", "Information Technology"),
-        "industry": meta.get("industry", "US Equity"),
+        "sector": meta.get("sector"),
+        "industry": meta.get("industry"),
         "is_adr": is_adr_flag,
         "listing_type": listing_type_val,
         "country_of_origin": country_of_origin,
@@ -307,7 +381,7 @@ for filename in sorted(all_files):
         "adr_ratio": adr_ratio,
         "adr_underlying_description": adr_underlying_desc,
         "depositary_bank": depositary_bank,
-        "description": meta.get("description", f"Public company {sym}."),
+        "description": research_store.get_text(research, "description"),
         "thesis_status": thesis_status,
         "conviction_score": conviction_score,
         "entry_price": entry_price,
@@ -335,33 +409,36 @@ for filename in sorted(all_files):
         "recent_dividends": price_info.get("recent_dividends", []),
         "holding_period": holding_period,
         "target_roi": target_roi_str,
-        "entry_strategy": ret_params["entry_strategy"],
-        "exit_strategy": ret_params["exit_strategy"],
-        "entry_date": ret_params["entry_date"],
-        "target_exit_date": ret_params["target_exit_date"],
-        "csp_proceeds": ret_params["csp_proceeds"],
-        "cc_proceeds": ret_params["cc_proceeds"],
+        "entry_strategy": ret_params.get("entry_strategy"),
+        "exit_strategy": ret_params.get("exit_strategy"),
+        "entry_date": ret_params.get("entry_date"),
+        "target_exit_date": ret_params.get("target_exit_date"),
+        "csp_proceeds": ret_params.get("csp_proceeds"),
+        "cc_proceeds": ret_params.get("cc_proceeds"),
         "dividend_proceeds": ret_params.get("dividend_proceeds", 0.0),
-        "initial_capital_outlay": ret_params["initial_capital_outlay"],
-        "total_proceeds": ret_params["total_proceeds"],
-        "net_profit": ret_params["net_profit"],
-        "holding_period_days": ret_params["holding_period_days"],
-        "holding_period_years": ret_params["holding_period_years"],
-        "capital_gain_pct": ret_params["capital_gain_pct"],
-        "options_yield_pct": ret_params["options_yield_pct"],
-        "total_roi_pct": ret_params["total_roi_pct"],
-        "annualized_roi_pct": ret_params["annualized_roi_pct"],
-        "moat": meta.get("moat") or val_model.get("competitive_moat_analysis", "Established commercial moat and customer retention."),
-        "invalidation_criteria": meta.get("invalidation_criteria", "Structural margin deterioration or loss of market share."),
-        "latest_catalyst": meta.get("latest_catalyst", "Upcoming quarterly earnings and operational updates."),
-        "business_profile": meta.get("business_profile") or val_model.get("business_profile"),
-        "tam_and_market_share": val_model.get("tam_and_market_share"),
-        "competitive_moat_analysis": val_model.get("competitive_moat_analysis"),
-        "capital_needs_and_strategy": val_model.get("capital_needs_and_strategy"),
-        "share_dilution_or_buyback": val_model.get("share_dilution_or_buyback"),
-        "stock_based_compensation": val_model.get("stock_based_compensation"),
-        "off_balance_sheet_and_contingent_liabilities": val_model.get("off_balance_sheet_and_contingent_liabilities"),
-        "catalyst_timeline": val_model.get("catalyst_timeline"),
+        "initial_capital_outlay": ret_params.get("initial_capital_outlay"),
+        "total_proceeds": ret_params.get("total_proceeds"),
+        "net_profit": ret_params.get("net_profit"),
+        "holding_period_days": ret_params.get("holding_period_days"),
+        "holding_period_years": ret_params.get("holding_period_years"),
+        "capital_gain_pct": ret_params.get("capital_gain_pct"),
+        "options_yield_pct": ret_params.get("options_yield_pct"),
+        "total_roi_pct": ret_params.get("total_roi_pct"),
+        "annualized_roi_pct": ret_params.get("annualized_roi_pct"),
+        "moat": research_store.get_text(research, "moat_summary"),
+        "invalidation_criteria": (research.get("invalidation_criteria") or {}).get("items"),
+        "latest_catalyst": research_store.get_text(research, "latest_catalyst"),
+        "business_profile": research_store.get_text(research, "business_profile"),
+        "competitive_moat_analysis": research_store.get_text(research, "competitive_moat_analysis"),
+        "tam_and_market_share": research.get("tam_and_market_share"),
+        "market_share": val_model.get("market_share"),
+        "capital_strategy": research.get("capital_strategy"),
+        "capital_needs_and_strategy": build_capital_needs_view(research, val_model),
+        "stock_based_compensation": research.get("stock_based_compensation"),
+        "off_balance_sheet_and_contingent_liabilities": research.get(
+            "off_balance_sheet_and_contingent_liabilities"),
+        "catalyst_timeline": (research.get("catalyst_timeline") or {}).get("items"),
+        "triage_status": triage_status,
         "indices": indices,
         "is_index_member": is_index_member,
         "shares_outstanding": shares,
@@ -409,6 +486,13 @@ with open(meta_file, "w", encoding="utf-8") as f:
 
 print(f"Generated {out_universe_path_http} and {out_universe_path_context} with {len(universe)} public companies.")
 print(f"Saved synchronized company metadata to {meta_file}")
+if unmodeled_symbols:
+    print("")
+    print(f"{len(unmodeled_symbols)} equities carry no rating or price target because their")
+    print("valuation parameters have not been authored. They remain in the catalog with market")
+    print("data and whatever research exists. Run scripts/research_gaps.py for the queue.")
+    print("")
+
 print(f"Index memberships breakdown:")
 print(f"  QQQ: {len([u for u in universe if 'QQQ' in u['indices']])}")
 print(f"  DJIA: {len([u for u in universe if 'DJIA' in u['indices']])}")

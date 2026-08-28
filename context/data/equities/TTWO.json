@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Take-Two Interactive Software, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "TTWO",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops, publishes, and markets interactive entertainment software across Rockstar Games, 2K, and Zynga (Grand Theft Auto, NBA 2K, Red Dead).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Take-Two Interactive Software, Inc. is a leading global developer, publisher, and marketer of interactive entertainment across consoles, PCs, and mobile devices under the Rockstar Games, 2K, Private Division, and Zynga publishing labels. Its world-renowned blockbuster franchises include Grand Theft Auto (GTA), Red Dead Redemption, NBA 2K, WWE 2K, BioShock, Borderlands, and mobile games from Zynga.\n\nTake-Two possesses some of the most valuable intellectual property in global entertainment, highlighted by the unprecedented commercial longevity and recurring live-service monetization of Grand Theft Auto V / GTA Online. Management is preparing for the landmark launch of Grand Theft Auto VI, which is poised to drive historic revenue scale, expanding mobile live-services, and multi-year cash flow compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Take-Two Interactive Software commands a world-class interactive entertainment IP moat anchored by Rockstar Games (Grand Theft Auto, Red Dead Redemption) and 2K Games (NBA 2K). The Grand Theft Auto franchise is the most profitable entertainment property in human history, with GTA V selling over 200 million copies. Massive live-services player engagement (GTA Online, NBA 2K MyTEAM) generates high-margin recurring digital net bookings between major blockbuster game release cycles.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Grand Theft Auto franchise (highest-grossing entertainment property in history), NBA 2K annual sports franchise, recurring online microtransactions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Grand Theft Auto VI worldwide launch and Zynga mobile advertising recovery.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Grand Theft Auto VI release delay beyond late 2025/2026 or major creative missteps."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.136307+00:00"
 }

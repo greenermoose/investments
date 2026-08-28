@@ -121,5 +121,112 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Toast, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "TOST",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides a comprehensive vertical SaaS platform and point-of-sale ecosystem purpose-built for the restaurant industry, integrating order management, payment processing, kitchen operations, payroll, and capital access.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Toast, Inc. is the leading cloud-based end-to-end digital technology platform purpose-built for the restaurant industry. Toast combines point-of-sale (POS) hardware, software-as-a-service modules (kitchen display systems, online ordering, payroll, employee scheduling, inventory management), and integrated payment processing into a unified restaurant operating system.\n\nToast commands a strong competitive moat within the restaurant vertical driven by deep operational workflow lock-in, rapid word-of-mouth restaurant community adoption, and integrated payment monetization take-rates. Management is driving rapid new restaurant location additions, expanding into international markets (UK, Canada, Ireland), scaling hotel food-and-beverage platforms, and expanding high-margin SaaS fintech products.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Toast commands a specialized vertical SaaS and fintech moat in the restaurant industry, powering point-of-sale, kitchen display systems, online ordering, payroll, and payment processing for over 120,000 restaurant locations. Replacing Toast requires shutting down daily restaurant operations, making customer switching costs extremely high. High payment processing take-rates and rapid SaaS module cross-selling generate expanding gross profit.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Deep vertical SaaS workflow integration, high customer switching friction (>90% restaurant retention), processing take-rate monetization, and expanding multi-product attach rates.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Inflection to sustained GAAP operating profitability and enterprise multi-unit chain customer adoption.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Deceleration of net location additions below 10% YoY, payment processing margin compression, or macro restaurant bankruptcy wave eroding recurring GPV."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.24,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.01,
+      "conviction_score": 9.1,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Enterprise Multi-Unit Franchise Management Platform & Toast IQ AI",
+          "expected_revenue_impact_b": 0.18,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Tier-1 regional restaurant chain wins and automated kitchen display AI optimization.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Retail & International Foodservice Market Expansion",
+          "expected_revenue_impact_b": 0.28,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Market entry into UK, Canada, and Ireland foodservice point-of-sale markets.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Fintech Lending Capital & Embedded Payroll Monetization",
+          "expected_revenue_impact_b": 0.38,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "High-margin recurring SaaS payroll subscriptions and loan origination take rate expansion.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

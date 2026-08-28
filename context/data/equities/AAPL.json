@@ -135,5 +135,137 @@
     },
     "equity_cash_flow_diversion_risk": "Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.",
     "narrative": "Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory."
-  }
+  },
+  "research": {
+    "symbol": "AAPL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs, manufactures, and markets consumer electronics (iPhone, Mac, iPad, Watch) and high-margin services (App Store, Apple Pay, iCloud).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Apple Inc. designs, manufactures, and markets premium consumer hardware and software ecosystems, anchored by the iPhone, Mac personal computers, iPad tablets, Apple Watch wearables, and AirPods. The company pairs its hardware install base with a high-margin Services division comprising the App Store, Apple Music, iCloud storage, Apple Pay, AppleCare, and digital subscriptions, creating recurring cash generation with industry-leading free cash flow conversion.\n\nApple's competitive advantage stems from its proprietary silicon engineering (M-series and A-series architectures), end-to-end hardware-software vertical integration, and an active installed base exceeding 2.2 billion devices with unmatched customer retention. Management's capital allocation strategy aggressively returns capital through massive share repurchases and regular dividend increases, while strategic expansion into on-device generative AI (Apple Intelligence), spatial computing, and digital health services provides multi-year monetization vectors.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Apple's economic moat is anchored by massive customer switching costs within its unified iOS and macOS ecosystem, industry-leading proprietary silicon engineering (M-series and A-series architectures), exceptional brand prestige, and an active installed base exceeding 2.2 billion devices. The company pairs premium hardware margins with an expanding high-margin Services division (App Store, iCloud, Apple Pay, AppleCare) that generates predictable recurring revenue. This integrated hardware-software flywheel delivers industry-leading Return on Invested Capital (ROIC > 50%) and provides virtually impenetrable barriers against Android-based hardware competitors.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "total_estimated_off_balance_sheet_encumbrance_usd_b": 51.5,
+      "pension_and_opeb": {
+        "funded_status_usd_b": 0.0,
+        "pbo_gross_usd_b": 0.0,
+        "plan_assets_usd_b": 0.0,
+        "annual_cash_contribution_usd_b": 0.0,
+        "underfunding_risk_level": "NONE",
+        "opeb_unfunded_usd_b": 0.0,
+        "narrative": "Apple maintains zero defined benefit pension or post-retirement medical OPEB plans. Employee retirement benefits are 100% defined contribution 401(k) plans with immediate expense recognition."
+      },
+      "environmental_and_remediation": {
+        "accrued_environmental_reserve_usd_b": 0.0,
+        "estimated_unreserved_exposure_usd_b": 0.0,
+        "superfund_and_pfas_sites_count": 0,
+        "annual_remediation_cash_drain_usd_b": 0.0,
+        "risk_level": "MINIMAL",
+        "narrative": "Apple has zero material historical Superfund or chemical remediation liabilities; manufacturing is outsourced to contract partners subject to Supplier Clean Energy mandates."
+      },
+      "litigation_and_toxic_torts": {
+        "active_mass_torts_or_mdl": "European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil antitrust lawsuit regarding App Store ecosystem, and patent licensing disputes.",
+        "recent_settlements_scheduled_usd_b": 3.0,
+        "annual_legal_settlement_cash_drain_usd_b": 0.25,
+        "catastrophic_loss_risk_level": "LOW",
+        "narrative": "Regulatory antitrust litigation carries risk of commission structure modifications, but balance sheet reserves and annual FCF easily absorb any monetary penalties."
+      },
+      "purchase_commitments_and_guarantees": {
+        "unconditional_purchase_obligations_usd_b": 48.5,
+        "take_or_pay_commitments_usd_b": 15.0,
+        "jv_and_vie_debt_guarantees_usd_b": 0.0,
+        "narrative": "Unconditional manufacturing and component purchase commitments (TSMC advanced silicon wafer allocations, OLED display panels, flash memory) total $48.5B across 1-3 years."
+      },
+      "equity_cash_flow_diversion_risk": "Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.",
+      "narrative": "Apple has an exceptionally clean liability structure with zero pension deficits, zero environmental cleanup mandates, and purchase commitments that represent profitable hardware inventory.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/build_off_balance_sheet_data.py BESPOKE_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.08,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.025,
+      "conviction_score": 9.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.5,
+      "payout_ratio_pct": 15.0,
+      "annual_dividend_growth_pct": 5.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Apple Intelligence Gen-2 & iPhone 18 Pro Hardware Cycle",
+          "expected_revenue_impact_b": 6.2,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Supercycle upgrade replacement rate driven by on-device contextual intelligence.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Services Ecosystem Premium AI Subscription Tier",
+          "expected_revenue_impact_b": 2.1,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "High-margin subscription monetization across 2.2B active installed device base.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2028-Q1",
+          "product_or_service_name": "Spatial Computing Vision Pro 2 Commercialization",
+          "expected_revenue_impact_b": 2.5,
+          "revenue_quarter_inflection": "2028-Q1",
+          "expected_outcome": "Broadened enterprise design and medical visualization hardware adoption.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

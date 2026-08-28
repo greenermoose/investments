@@ -47,6 +47,29 @@ def calculate_estimated_roi(growth_rate, current_ps, target_ps, years=3):
     return round(annualized_roi, 2)
 
 
+def _num(item, *keys, default=0.0):
+    """First numeric value among keys, else default.
+
+    dict.get(key, default) returns None when the key is present and null, which
+    it now is for every ticker awaiting authored valuation parameters. This
+    walks the candidate keys and only accepts an actual number.
+    """
+    for key in keys:
+        value = item.get(key)
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            return float(value)
+    return default
+
+
+def _is_unrated(item):
+    """Whether this ticker has no rating because its research is unauthored.
+
+    An unrated ticker is not a SELL. Screens exclude it and say so rather than
+    ranking it against tickers that have been researched.
+    """
+    return item.get("triage_status") == "AWAITING_RESEARCH" or not item.get("thesis_status")
+
+
 def screen_candidates(
     min_roi=20.0,
     min_market_cap_b=1.0,
@@ -61,25 +84,30 @@ def screen_candidates(
         return []
 
     candidates = []
+    unrated = []
 
     for item in universe:
         symbol = item.get("symbol", "")
         name = item.get("name", "")
         sector = item.get("sector", "Technology")
-        market_cap_b = float(item.get("market_cap_b", item.get("marketCapB", 0.0)))
-        price = float(item.get("current_price", item.get("price", item.get("closing_price", 0.0))))
-        entry_price = float(item.get("entry_price", item.get("benchmarkEntry", price)))
-        target_exit_price = float(item.get("target_exit_price", price * 1.5))
-        annualized_roi = float(item.get("annualized_roi_pct", item.get("annualized_roi", 0.0)))
-        conviction = float(item.get("conviction_score", 5.0))
-        thesis_status = item.get("thesis_status", "HOLD")
-        triage_status = item.get("triage_status", "QUALIFIED_CANDIDATE")
-        moat = item.get("moat", "")
+        if _is_unrated(item):
+            unrated.append(symbol)
+            continue
 
-        total_debt = float(item.get("total_debt", 0.0))
-        cash = float(item.get("cash_and_cash_equivalents", 0.0))
+        market_cap_b = _num(item, "market_cap_b", "marketCapB")
+        price = _num(item, "current_price", "price", "closing_price")
+        entry_price = _num(item, "entry_price", "benchmarkEntry", default=price)
+        target_exit_price = _num(item, "target_exit_price", default=price * 1.5)
+        annualized_roi = _num(item, "annualized_roi_pct", "annualized_roi")
+        conviction = _num(item, "conviction_score", default=5.0)
+        thesis_status = item.get("thesis_status") or "HOLD"
+        triage_status = item.get("triage_status") or "QUALIFIED_CANDIDATE"
+        moat = item.get("moat") or ""
+
+        total_debt = _num(item, "total_debt")
+        cash = _num(item, "cash_and_cash_equivalents")
         net_debt = total_debt - cash
-        market_cap = float(item.get("market_cap", market_cap_b * 1e9))
+        market_cap = _num(item, "market_cap", default=market_cap_b * 1e9)
 
         # Solvency evaluation: Net Debt / Market Cap or Cash Runway
         debt_to_market_cap = round(total_debt / market_cap, 2) if market_cap > 0 else 0.0
@@ -133,22 +161,27 @@ def categorize_all_universe():
         "BUY": [],
         "HOLD": [],
         "SELL": [],
-        "AVOID": []
+        "AVOID": [],
+        # Tickers in coverage whose valuation parameters have not been authored.
+        # They are neither a buy nor a sell; nobody has evaluated them yet.
+        "AWAITING_RESEARCH": []
     }
 
     for item in universe:
         symbol = item.get("symbol", "")
         name = item.get("name", "")
         sector = item.get("sector", "Technology")
-        price = float(item.get("current_price", item.get("price", item.get("closing_price", 0.0))))
-        entry_price = float(item.get("entry_price", item.get("benchmarkEntry", price)))
-        target_exit_price = float(item.get("target_exit_price", price * 1.5))
-        annualized_roi = float(item.get("annualized_roi_pct", item.get("annualized_roi", 0.0)))
-        conviction = float(item.get("conviction_score", 5.0))
-        thesis_status = item.get("thesis_status", "HOLD").upper()
-        triage_status = item.get("triage_status", "QUALIFIED_CANDIDATE").upper()
+        price = _num(item, "current_price", "price", "closing_price")
+        entry_price = _num(item, "entry_price", "benchmarkEntry", default=price)
+        target_exit_price = _num(item, "target_exit_price", default=price * 1.5)
+        annualized_roi = _num(item, "annualized_roi_pct", "annualized_roi")
+        conviction = _num(item, "conviction_score", default=5.0)
+        thesis_status = str(item.get("thesis_status") or "").upper()
+        triage_status = str(item.get("triage_status") or "QUALIFIED_CANDIDATE").upper()
 
-        if triage_status == "AVOID" or thesis_status == "AVOID":
+        if _is_unrated(item):
+            cat = "AWAITING_RESEARCH"
+        elif triage_status == "AVOID" or thesis_status == "AVOID":
             cat = "AVOID"
         elif thesis_status in categories:
             cat = thesis_status
@@ -207,15 +240,24 @@ def main():
         print("=" * 80)
         print(f"Total Tracked Public Equities: {total_count}\n")
 
-        for cat_name in ["BUY", "HOLD", "SELL", "AVOID"]:
-            items = cats[cat_name]
+        for cat_name in ["BUY", "HOLD", "SELL", "AVOID", "AWAITING_RESEARCH"]:
+            items = cats.get(cat_name, [])
             pct = round((len(items) / total_count * 100.0), 1) if total_count > 0 else 0.0
+
+            if cat_name == "AWAITING_RESEARCH":
+                print(f"[{cat_name}] {len(items)} Equities ({pct}%) | No rating: "
+                      "valuation parameters unauthored")
+                if items:
+                    print("  Run: python scripts/research_gaps.py --field valuation_parameters")
+                print("-" * 80)
+                continue
+
             rois = [it["annualized_roi_pct"] for it in items]
             median_roi = round(sorted(rois)[len(rois) // 2], 1) if rois else 0.0
 
-            print(f"[{cat_name}] {len(items)} Equities ({pct}%) | Median 3Y CAGR: +{median_roi}%")
+            print(f"[{cat_name}] {len(items)} Equities ({pct}%) | Median 3Y CAGR: {median_roi:+}%")
             if items:
-                top_syms = ", ".join([f"{it['symbol']} (+{it['annualized_roi_pct']}%)" for it in items[:6]])
+                top_syms = ", ".join([f"{it['symbol']} ({it['annualized_roi_pct']:+}%)" for it in items[:6]])
                 print(f"  Top Constituents: {top_syms}")
             print("-" * 80)
         print("=" * 80)

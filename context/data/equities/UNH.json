@@ -135,5 +135,90 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "UnitedHealth Group Incorporated's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "UNH",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Diversified healthcare company operating UnitedHealthcare (health benefits) and Optum (OptumHealth clinical care, OptumRx pharmacy benefit manager, Optum Insight data analytics).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "UnitedHealth Group Incorporated is the largest and most diversified healthcare enterprise in the United States, operating through two complementary platforms: UnitedHealthcare (providing health benefit coverage to over 50 million commercial, Medicare Advantage, and Medicaid members) and Optum (health services encompassing Optum Health ambulatory care/physician practices, Optum Rx pharmacy benefit management, and Optum Insight healthcare data analytics).\n\nUnitedHealth Group commands an unmatched healthcare ecosystem moat, capturing synergistic cash flows across health insurance underwriting, direct physician clinical care, prescription drug management, and healthcare IT. Management leverages its immense scale to negotiate favorable provider rates, deploy AI-driven clinical workflow analytics, and deliver consistent double-digit earnings growth and dividend compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "UnitedHealth Group commands an unmatched healthcare ecosystem moat, capturing synergistic cash flows across health insurance underwriting (UnitedHealthcare, covering over 50 million members) and direct healthcare services (Optum, comprising 90,000+ employed physicians, pharmacy benefit management, and healthcare IT analytics). Immense purchasing scale enables superior provider rate negotiations, lower medical loss ratios, and consistent double-digit earnings growth.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Massive healthcare ecosystem integrating insurance with clinical care and pharmacy benefits, unmatched data analytics, and high return on capital (>22% ROIC).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Medical loss ratio stabilization, OptumHealth clinic expansion, and Medicare Advantage rate adjustments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Medical loss ratio (MLR) structurally exceeding 87% or aggressive federal PBM regulatory reform destroying OptumRx margins."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.08,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.01,
+      "conviction_score": 8.8,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 1.4,
+      "payout_ratio_pct": 30.0,
+      "annual_dividend_growth_pct": 12.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.140321+00:00"
 }

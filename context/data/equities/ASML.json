@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "ASML Holding N.V. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ASML",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Manufacturer of photolithography systems used in semiconductor manufacturing, with an exclusive monopoly in extreme ultraviolet (EUV) lithography.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "ASML Holding N.V. is the world's sole manufacturer of Extreme Ultraviolet (EUV) lithography systems and a leading producer of Deep Ultraviolet (DUV) lithography equipment, which are indispensable for printing microscopic circuit patterns onto silicon wafers. Based in the Netherlands, ASML holds a global monopoly on leading-edge EUV tools required to manufacture chips below 7nm, serving foundries including TSMC, Samsung, and Intel.\n\nASML's technological monopoly is protected by decades of proprietary optical engineering, specialized supply chain integration (Zeiss optical systems), extreme capital requirements, and thousands of patents. Management is currently shipping and ramping its next-generation High-NA EUV systems (0.55 NA), enabling 2nm and sub-2nm semiconductor fabrication nodes, ensuring enduring pricing power and multi-year order backlogs.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "ASML maintains an absolute global monopoly in Extreme Ultraviolet (EUV) lithography systems and a dominant position in Deep Ultraviolet (DUV) immersion tools. Producing sub-3nm semiconductor nodes is physically impossible without ASML's EUV scanners. The company's moat is protected by thousands of proprietary patents, exclusive supply chain integration with Carl Zeiss optics, extreme capital requirements ($350M+ per High-NA scanner), and over two decades of unmatched engineering mastery, ensuring multi-year order backlogs and absolute pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "100% global monopoly on EUV and High-NA EUV lithography systems required for all sub-5nm logic and advanced DRAM manufacturing.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "High-NA EUV system shipments to TSMC/Intel and 2nm node manufacturing volume ramp.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Breakthrough alternative non-optical lithography technology (nanoimprint) gaining viable commercial traction."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.2,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 9.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.900002+00:00"
 }

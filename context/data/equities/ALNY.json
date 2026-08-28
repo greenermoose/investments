@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Alnylam Pharmaceuticals, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "ALNY",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Biopharmaceutical company pioneering RNA interference (RNAi) therapeutics for rare genetic, cardio-metabolic, and infectious diseases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Alnylam Pharmaceuticals, Inc. is the pioneer and undisputed biopharmaceutical leader in RNA interference (RNAi) therapeutics, developing a novel class of targeted medicines that silence disease-causing genes. The company commercializes approved therapies including ONPATTRO, AMVUTTRA, GIVLAARI, and OXLUMO for rare and cardiometabolic diseases, monetizing through global product sales and collaborative pharmaceutical milestone royalties.\n\nAlnylam's competitive advantage is anchored by its proprietary GalNAc-conjugate delivery platform, extensive intellectual property portfolio, and clinical validation across multiple indications. Management is advancing AMVUTTRA into broad ATTR amyloidosis with cardiomyopathy populations (HELIOS-B trial data) and expanding its clinical pipeline into high-prevalence indications including hypertension, Alzheimer's disease, and nonalcoholic steatohepatitis (NASH).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Alnylam Pharmaceuticals maintains a powerful biotechnology moat based on its pioneering, unmatched patent estate in RNA interference (RNAi) therapeutics and proprietary GalNAc-conjugate systemic delivery platforms. Its approved medicines (AMVUTTRA, ONPATTRO, GIVLAARI, OXLUMO) hold dominant positions in rare cardiometabolic diseases. Breakthrough Phase 3 HELIOS-B data in ATTR cardiomyopathy establishes multi-year market exclusivity and high clinical switching barriers against oral competitors.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Unmatched patent portfolio and platform technology in systemic siRNA delivery, blockbuster commercial drug HELIOS-B Phase 3 success in ATTR-CM.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Amvuttra (vutrisiran) FDA approval in ATTR amyloidosis with cardiomyopathy (ATTR-CM).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Safety issues or delayed regulatory approval for vutrisiran in ATTR-CM indication."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.25,
+      "target_ps_multiple_multiplier": 0.88,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 8.9,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.883005+00:00"
 }

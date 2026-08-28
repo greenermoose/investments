@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Beam Therapeutics Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "BEAM",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Biotechnology company pioneering precision base editing to develop lifelong cures for serious genetic diseases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Beam Therapeutics Inc. is a clinical-stage biotechnology company pioneering base editing, a proprietary next-generation gene editing technology that enables precise, single-base conversions in genomic DNA without creating double-stranded breaks. Its therapeutic pipeline focuses on sickle cell disease, beta-thalassemia, alpha-1 antitrypsin deficiency (AATD), and oncologic and genetic liver diseases.\n\nBeam's competitive advantage lies in its proprietary base editing platform, mRNA delivery technologies, and strategic pharmaceutical partnerships with companies like Eli Lilly and Pfizer. Management is advancing clinical proof-of-concept readouts for BEAM-101 and BEAM-302, while optimizing lipid nanoparticle (LNP) in vivo delivery capabilities to address broader genetic patient populations.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Beam Therapeutics holds a pioneering biotechnology moat based on its proprietary base editing platform, a next-generation precision gene editing technology that enables single-nucleotide conversions without creating double-stranded DNA breaks. This minimizes unwanted insertions/deletions and chromosomal rearrangements compared to legacy CRISPR/Cas9. Protected by core foundational patents and strategic partnerships with Eli Lilly and Pfizer, Beam possesses a highly defensible platform for genetic and hematologic diseases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Proprietary base editing patent estate; offset by high clinical trial cash burn, binary regulatory risk, and multi-year timeline to commercial revenue.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Phase 1/2 clinical data readouts in sickle cell disease and alpha-1 antitrypsin deficiency.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Cash runway falling below 12 months, adverse clinical safety signals (off-target mutations), or heavy equity dilution."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.15,
+      "target_ps_multiple_multiplier": 0.7,
+      "annual_share_dilution_rate": 0.03,
+      "conviction_score": 6.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.909019+00:00"
 }

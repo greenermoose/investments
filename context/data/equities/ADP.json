@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Automatic Data Processing, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "ADP",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides cloud-based human capital management (HCM) solutions including payroll, talent management, HR, benefits administration, and compliance.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Automatic Data Processing, Inc. (ADP) is a premier global provider of cloud-based human capital management (HCM) solutions, comprehensive payroll processing, talent management, tax administration, and benefits outsourcing services. Serving over one million business clients ranging from small businesses (RUN Powered by ADP) to multinational enterprises (ADP Vantage and Workforce Now), the company monetizes through recurring SaaS subscription contracts and client fund float interest earnings.\n\nADP maintains an extensive competitive moat built on mission-critical compliance workflows, deep enterprise software switching costs, and exceptional client retention rates consistently above 92%. Management continues to modernize its technology stack through next-generation platforms like ADP Lyric, expanding higher-margin HR business process outsourcing (BPO), and leveraging proprietary workforce data analytics to cross-sell additional HCM modules.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Automatic Data Processing maintains a wide economic moat rooted in mission-critical payroll compliance workflows, deep enterprise human capital management (HCM) software integration, and exceptional client retention rates consistently exceeding 92%. Replacing a core payroll and tax filing platform carries severe operational disruption and regulatory compliance risk for employers. Furthermore, ADP generates high-margin float income from tens of billions in average client funds balances, providing defensive cash flow unmatched by smaller SaaS competitors.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Extremely high client retention (>92%), client fund float interest earnings ($35B+ average client balance), mission-critical payroll compliance.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "ADP Assist generative AI tool rollout and international HR platform consolidation.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Major recession causing severe white-collar corporate employment contraction."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

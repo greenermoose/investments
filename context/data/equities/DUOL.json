@@ -121,5 +121,83 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "Duolingo, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  },
+  "research": {
+    "symbol": "DUOL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Leading mobile learning platform and top-grossing education app providing gamified language, math, and literacy learning alongside the Duolingo English Test.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Duolingo, Inc. is the world's leading mobile learning platform and the top-grossing education app globally, offering gamified language courses alongside math and music learning. The company employs a freemium model where its engaging, bite-sized lessons attract over 100 million active monthly learners, monetizing through paid Super Duolingo and Duolingo Max (generative AI) subscriptions, in-app purchases, and English proficiency testing (Duolingo English Test).\n\nDuolingo's competitive moat is driven by massive organic user acquisition (>90% organic traffic), proprietary AI-driven personalized learning algorithms, and deep gamification retention mechanics. Management is aggressively integrating OpenAI-powered conversational AI features into premium subscription tiers while expanding into core subject education worldwide.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Duolingo commands a consumer brand and data network moat as the world's most downloaded and highest-grossing education app. Over 90% of its 100M+ active learners are acquired organically through viral social media marketing and word-of-mouth. Its proprietary AI-driven gamification engine analyzes billions of daily language exercises to optimize lesson difficulty and engagement, driving high subscription conversion (Super Duolingo and Duolingo Max) and high gross margins (>73%).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.25,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.01,
+      "conviction_score": 9.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Duolingo Max AI Advanced Conversation Tiers Global Expansion",
+          "expected_revenue_impact_b": 0.05,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Higher ARPPU conversion to premium AI subscription tier across 100M+ active learners.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Math & Music Core Curriculum Gamification & School Integration",
+          "expected_revenue_impact_b": 0.08,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Adoption of STEM and music subjects broadening demographic reach into K-12 education.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Duolingo English Test (DET) University & Corporate Enterprise Adoption",
+          "expected_revenue_impact_b": 0.11,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Institutional testing certification volume growth displacing legacy testing centers.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.953995+00:00"
 }

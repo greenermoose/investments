@@ -5,6 +5,41 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2026-08-28
+
+### Separation of Generative Authoring from Deterministic Scripting
+
+Deterministic scripts were producing content that belongs to AI agents: company prose, market size estimates, catalysts, invalidation criteria, sentiment findings, and trade selection with its rationale. This release moves that work back to the agents, gives it a system of record, and reduces the scripts to arithmetic, validation, and rendering.
+
+#### Added
+- **Research store (`context/data/equities/<TICKER>.json`, `research` key):** The single system of record for every qualitative judgment and forward-looking parameter, conforming to the new `context/schemas/equity_research_schema.json`. Agents author into it; scripts read from it. `scripts/data/company_meta.json`, `http/data/universe.json`, and `context/theses/*.md` are now all derived.
+- **`scripts/research_store.py`:** Read/write accessor and structural validator. `write_research` refuses to persist a malformed block, so a downstream reader can trust whatever is on disk. `require_fields` returns typed gap records rather than raising, so batch callers process every ticker they can.
+- **`scripts/research_gaps.py`:** The authoring queue. Reports which agent-authored fields each equity is missing, grouped by owning agent role, with what each gap blocks. Exits non-zero when gaps exist. Wired into `manage_universe.py` as the `gaps` subcommand and as the final step of `rebuild-all`.
+- **`scripts/render_thesis.py`:** Replaces `generate_all_theses.py`. Copies authored prose through verbatim and computes every number from authored parameters. A ticker missing a required section is skipped with its gaps named and no file written.
+- **`scripts/render_plan.py`:** Replaces `generate_plan.py`. Validates an agent-authored order set (new `context/schemas/trading_plan_orders_schema.json`) against the mandate in `AGENTS.md` section 5, recomputes the collateral and cash arithmetic the agent asserted, and renders the plain-ASCII plan. Checks 100 percent cash collateralization on short puts net of existing encumbrances, 100 percent share cover on short calls net of open short calls, the prohibition on speculative long option opens, limit-orders-only, portfolio isolation, universe membership, and ASCII output with no markdown tables.
+- **`examples/sample_orders.json`:** Public synthetic order-set fixture paired with `examples/sample_portfolio.csv`.
+
+#### Removed
+- **`scripts/curate_business_profiles.py`, `scripts/curate_competitive_moats.py`, `scripts/update_company_descriptions.py`:** 2,091 lines of research prose held as Python string literals. Contents migrated to the research store; the scripts deleted.
+- **`valuation_model.py` fabrication:** `SECTOR_DEFAULTS` and `SECTOR_DIVIDENDS` deleted outright. The TAM sector map, capital and SBC narrative composition, sector-branched vesting schedules, lock-up language, generic catalyst placeholders, the business profile and moat fallbacks, and the four boilerplate invalidation criteria that every universe ticker shared are all gone. `COMPANY_PROFILES`, `DIVIDEND_PROFILES`, and `CURATED_CATALYSTS` migrated to the store and removed from the module. Growth rate, target multiple, dilution, and conviction are now required agent inputs; without them the model returns status `UNMODELED`.
+- **`build_off_balance_sheet_data.py` `generate_sector_default_profile()`:** Invented pension PBO figures, Superfund and PFAS site counts, and litigation exposure from the sector field for 190 tickers. Deleted. `BESPOKE_PROFILES` migrated to the store. The script now propagates authored audits, computes encumbrance totals, and reports unaudited tickers.
+- **`surveil_sentiment.py` `seed_sentiment_data()`:** Manufactured sentiment scores, discussion velocities, and named "investor concerns" for all 201 equities from sector and triage status. Deleted, along with the 201 records it had written to `context/data/`, `http/data/`, and `scripts/data/`.
+- **`track_short_sellers.py` `seed_initial_campaigns()`:** Hardcoded campaign records. Migrated to `context/data/short_seller_campaigns.json` and deleted.
+- **Fabricated analyst consensus:** `generate_all_theses.py` wrote a synthetic "Wall Street Consensus" analyst row from this repository's own price target when real coverage was missing, and `build_universe_json.py` filled `analyst_consensus` the same way. Absent coverage is now recorded as absent.
+- **Placeholder defaults in `quality_control.py` `fix_all`:** `"Public company {sym}."`, `"Established commercial moat and customer retention."`, and the matching invalidation and catalyst strings no longer back-fill unauthored fields.
+- **200 stale thesis dossiers:** Every dossier under `context/theses/` was assembled from the fabricated content above. They were removed rather than left asserting unresearched claims; `render_thesis.py` regenerates each one the moment its research is authored. Recoverable from git history.
+
+#### Changed
+- **`scripts/valuation_model.py`:** Reduced to pure arithmetic over agent-supplied parameters. Historical quarters now distinguish `REPORTED` rows from `BACKCAST` rows. The 13-quarter matrix records a mechanical `basis` (`CATALYST_RAMP` or `BASELINE_EXTRAPOLATION`) with the agent's catalyst name, replacing composed growth-driver prose. A catalyst dated outside the 13-quarter window contributes no modeled revenue instead of being snapped to an arbitrary quarter. Balance sheet figures come from Tier 1 filings or are reported absent, never estimated from revenue by sector. Verified to reproduce the pre-refactor figures exactly for tickers with authored parameters.
+- **`scripts/onboard_company.py`:** Onboarding brings a ticker into coverage; it no longer researches it. A newly onboarded ticker is marked `AWAITING_RESEARCH` and carries no rating until its parameters are authored.
+- **`scripts/build_universe_json.py`:** Reads narrative fields from the research store. Unmodelled tickers stay in the public catalog with their market data and whatever research exists, carrying `triage_status: AWAITING_RESEARCH` and no rating, price target, or ROI. Stale ratings are no longer seeded forward from the cache.
+- **`scripts/quality_control.py`:** `check_thesis_schema` was defined but never dispatched from `audit()`; it is now wired in. A ticker recorded as `AWAITING_RESEARCH` reports as a tracked gap pointing at `research_gaps.py`, not as a data integrity error.
+- **`scripts/render_thesis.py` exchange resolution:** Reads the listing exchange from the market data feed. The predecessor inferred NYSE from Dow membership, which mislabelled every NASDAQ-listed Dow constituent, `NVDA` among them.
+- **Documentation:** `AGENTS.md` section 9, `context/strategy/deterministic_vs_generative_execution.md`, `context/prompts/thesis_authoring.md`, `weekly_deliberation.md`, `rare_full_source_regeneration.md`, `research_refresh.md`, `sentiment_and_short_seller_surveillance.md`, `scripts/README.md`, and the Investment Thesis and Lead Portfolio Manager skills all describe the store-and-render workflow. The strategy document previously cited `curate_business_profiles.py` as an example of correct deterministic practice, and the thesis prompt described a template renderer as "Generative LLM Authoring".
+
+#### Known State
+This release reduces what the repository claims. 78 equities carry no rating pending authored valuation parameters, 191 await an off-balance-sheet audit, 201 await a TAM estimate and the capital, SBC, and valuation narratives, and 201 await sentiment observation. `python scripts/research_gaps.py --summary` is the standing view. Re-authoring is agent work that follows this refactor; `NVDA` is authored end to end as the worked example.
+
 ## [2.23.0] - 2026-08-28
 
 ### Universe Expansion: 25 High-Conviction Public Equities Onboarded (175 to 200 Equities)

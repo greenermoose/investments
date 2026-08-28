@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Regeneron Pharmaceuticals, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "REGN",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Discovers, invents, develops, and commercializes medicines for serious diseases including eye diseases (EYLEA HD), inflammatory diseases (Dupixent), and oncology (Libtayo).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Regeneron Pharmaceuticals, Inc. is a leading biotechnology company that discovers, develops, and manufactures transformative medicines for serious diseases. Its commercial portfolio includes blockbuster eye treatment EYLEA (and high-dose EYLEA HD), immunology blockbuster Dupixent (co-developed with Sanofi for asthma, eczema, and COPD), oncology treatment Libtayo, and rare disease therapeutics.\n\nRegeneron possesses one of the industry's most productive proprietary drug discovery engines (VelociSuite genetic technologies), enabling in-house biologics discovery with high clinical success rates. Management is advancing a deep internal pipeline across bispecific antibodies in oncology, genetic medicines, and metabolic therapeutics while expanding Dupixent into massive new respiratory indications.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Regeneron Pharmaceuticals holds a premier biotechnology R&D platform moat powered by its proprietary VelociSuite genetic engineering technologies. Its commercial blockbuster medicines include EYLEA (co-developed with Bayer for macular degeneration) and DUPIXENT (co-commercialized with Sanofi for asthma, atopic dermatitis, and COPD). VelociSuite enables rapid antibody discovery, generating a robust clinical oncology and immunology pipeline.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Proprietary VelociSuite drug discovery platform, mega-blockbuster Dupixent global expansion across multiple indications, EYLEA HD conversion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Dupixent approval in chronic obstructive pulmonary disease (COPD) and pipeline bispecific oncology readouts.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Biosimilar erosion on standard EYLEA outpacing EYLEA HD adoption."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.08,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 8.4,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.098587+00:00"
 }

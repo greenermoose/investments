@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Vertiv Holdings Co manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "VRT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global leader in critical digital infrastructure, designing power management, precision liquid cooling, and thermal management for AI data centers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Vertiv Holdings Co is a global leader in critical digital infrastructure and continuity solutions, specializing in power management, precision thermal management (liquid and air cooling), integrated modular solutions, and lifecycle management services for data centers, communication networks, and industrial facilities.\n\nVertiv is the critical enabler of high-density artificial intelligence computing infrastructure, providing direct-to-chip liquid cooling systems, rear-door heat exchangers, high-capacity chillers, and high-efficiency uninterruptible power supplies (UPS) engineered to handle 100kW+ server rack thermal loads. Management is rapidly scaling global manufacturing capacity to meet multi-billion dollar backlogs from hyperscalers and colocation data center operators.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Vertiv holds an entrenched economic moat founded on deep thermal and power engineering expertise, proprietary liquid cooling IP, and global field service support networks. As AI GPUs generate unprecedented thermal density that air cooling cannot dissipate, data center operators rely exclusively on trusted, field-tested thermal infrastructure to protect multi-million dollar computing clusters. Vertiv's co-engineering partnerships with leading AI chipmakers and global service technicians create high switching costs and pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.151090+00:00"
 }

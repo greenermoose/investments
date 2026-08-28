@@ -136,5 +136,61 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "General Electric Company manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "GE",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World-class aerospace propulsion leader designing, manufacturing, and servicing commercial and military jet engines (LEAP, GE9X) and integrated aircraft systems.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "GE Aerospace (General Electric Company) is a world-class aerospace propulsion leader designing, manufacturing, and servicing commercial and military aircraft jet engines, avionics, and power systems. Operating as a standalone aviation pure-play, the company powers three out of every four commercial airline flights worldwide through its proprietary engines (GE90, GE9X, GEnx) and its 50/50 CFM International joint venture with Safran (CFM56 and LEAP engine families).\n\nGE Aerospace operates a highly lucrative razor-and-blade business model: engines are sold at competitive initial pricing, locking in multi-decade, high-margin aftermarket spare parts, maintenance, repair, and overhaul (MRO) services under long-term time-and-materials or power-by-the-hour contracts. Management is ramping production of the fuel-efficient LEAP engine for the Airbus A320neo and Boeing 737 MAX families while advancing next-generation hybrid-electric and open-fan RISE engine technologies.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "GE Aerospace commands an exceptional economic moat built on an installed base of more than 44,000 commercial engines and 26,000 military aircraft engines, immense FAA certification barriers, and multi-decade aftermarket service agreements. Developing and certifying a commercial jet engine requires billions in R&D and over a decade of regulatory testing, creating near-total duopoly market dynamics. Airlines face prohibitive aircraft modification costs to switch engine suppliers, guaranteeing GE Aerospace highly recurring, high-margin aftermarket cash flow spanning 30-year engine lifecycles.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.1,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 8.7,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.6,
+      "payout_ratio_pct": 20.0,
+      "annual_dividend_growth_pct": 15.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Dynatrace, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "DT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "AI-powered observability, application performance monitoring (APM), and security analytics platform.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Dynatrace, Inc. provides a unified, AI-powered observability and application security platform designed for complex, hybrid multi-cloud enterprise computing environments. The Dynatrace platform ingests billions of system metrics, logs, traces, and user interactions in real time, delivering automated root-cause analysis, infrastructure monitoring, application performance management (APM), and runtime vulnerability analytics.\n\nDynatrace benefits from deep technical moats powered by its proprietary causal AI engine (Davis AI) and Grail data lakehouse architecture, which deliver precise automated problem resolution rather than simple statistical correlation. High enterprise switching costs, deep integration with AWS, Azure, and Google Cloud, and expanding adoption of Dynatrace Application Security drive net expansion rates above 110% and industry-leading free cash flow margins exceeding 28%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Dynatrace commands a formidable technological and switching-cost moat in enterprise observability and application security. Its proprietary causal AI engine (Davis AI) and Grail data lakehouse architecture analyze billions of dependencies across hybrid multi-cloud environments in real time, delivering automated root-cause determinations rather than noisy statistical alerts. Replacing Dynatrace requires re-instrumenting mission-critical application infrastructure, creating high friction for enterprise IT teams and maintaining net expansion rates consistently above 110% with gross margins around 82%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.953995+00:00"
 }

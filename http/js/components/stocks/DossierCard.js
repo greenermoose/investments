@@ -20,7 +20,7 @@ export function createDossierCard(company, onSelect) {
   card.className = 'step-card';
   card.style.display = 'block';
 
-  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'UNRATED';
   const statusClass = statusKey.toLowerCase();
   const formattedStatus = statusKey;
   const indexChipsHtml = renderIndexBadges(company.indices);
@@ -62,17 +62,17 @@ export function createDossierCard(company, onSelect) {
 
   const tamInfo = company.tam_and_market_share || {};
   const capInfo = company.capital_needs_and_strategy || {};
-  const dilInfo = company.share_dilution_or_buyback || {};
+
   const sbcInfo = company.stock_based_compensation || {};
-  const tamText = tamInfo.narrative || `Addresses $${tamInfo.tam_estimate_usd_b || 800}B TAM (${tamInfo.current_market_share_pct || 5.0}% share -> ${tamInfo.projected_market_share_3y_pct || 7.5}% in 3Y).`;
-  const capText = capInfo.narrative || dilInfo.narrative || `Management capital strategy: ${dilInfo.management_philosophy || 'Neutral'} (${dilInfo.net_annual_share_change_pct ? dilInfo.net_annual_share_change_pct + '%/yr' : '-1.5%/yr'}).`;
-  const sbcText = sbcInfo.narrative || `SBC annual run-rate ~$${(sbcInfo.sbc_annual_expense_usd_b || 0).toFixed(2)}B (${sbcInfo.sbc_pct_of_revenue || 0}% of Rev). Lock-up: ${sbcInfo.lock_up_status || 'Standard'}. Supply risk: ${sbcInfo.downward_price_pressure_risk || 'LOW'}.`;
+  const tamText = tamInfo.narrative || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
+  const capText = capInfo.narrative || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
+  const sbcText = sbcInfo.narrative || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
 
   let invalidationHtml = '';
   if (Array.isArray(company.invalidation_criteria)) {
     invalidationHtml = company.invalidation_criteria.map((c, i) => `<div>&bull; ${c}</div>`).join('');
   } else {
-    invalidationHtml = company.invalidation_criteria || 'Structural margin decline or loss of competitive moat.';
+    invalidationHtml = company.invalidation_criteria || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
   }
 
   card.innerHTML = `
@@ -112,7 +112,7 @@ export function createDossierCard(company, onSelect) {
       </div>
       <div class="metric-item">
         <span class="metric-label">Target Annualized ROI</span>
-        <span class="metric-val" style="color: #00d4ff;">${company.target_roi || '20.0%'}</span>
+        <span class="metric-val" style="color: #00d4ff;">${company.target_roi || 'Not modeled'}</span>
       </div>
       <div class="metric-item">
         <span class="metric-label">20-Day SMA</span>
@@ -201,7 +201,7 @@ export function createDossierCard(company, onSelect) {
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Catalyst Calendar &amp; Milestones</h4>
     <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0 0 14px 0; background: rgba(0, 0, 0, 0.15); padding: 8px 12px; border-radius: 6px;">
-      ${company.latest_catalyst || 'Upcoming earnings reports and capital allocation updates.'}
+      ${company.latest_catalyst || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.'}
     </p>
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Capital Needs &amp; Strategy</h4>

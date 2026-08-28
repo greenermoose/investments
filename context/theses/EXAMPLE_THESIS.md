@@ -1,5 +1,7 @@
 # Investment Thesis Dossier: BA - The Boeing Company
 
+> **Format reference only.** This file documents the dossier layout that `scripts/render_thesis.py` produces. It is not live coverage: the figures below are illustrative and are not read by any script or agent as research. Live dossiers are rendered from the research store and named `<TICKER>.md`.
+
 ## Summary & Key Metrics
 - **Ticker:** BA
 - **Exchange:** NYSE

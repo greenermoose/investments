@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Intuitive Surgical, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "ISRG",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops, manufactures, and markets robotic-assisted surgical systems (da Vinci and Ion) for minimally invasive medical procedures.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Intuitive Surgical, Inc. is the pioneer and global market leader in robotic-assisted minimally invasive surgery, designing and manufacturing the da Vinci surgical system and the Ion endoluminal robotic bronchoscopy platform. The company operates an attractive razor-and-blade business model where a growing global installed base of robotic systems generates recurring revenue from proprietary surgical instruments, accessories, and maintenance contracts.\n\nIntuitive Surgical commands a near-impregnable competitive moat supported by thousands of hospital system integrations, extensive surgeon training and certification lock-in, and decades of proprietary robotic patent IP. Management is rolling out the next-generation da Vinci 5 system (featuring advanced force feedback sensing, enhanced computing power, and surgical workflow analytics), expanding robotic surgical indications across general surgery, gynecology, and urology.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Intuitive Surgical commands a near-impregnable medical device moat as the global pioneer of robotic-assisted minimally invasive surgery. Over 9,000 da Vinci surgical systems are installed worldwide, having performed more than 14 million procedures. Because surgeons undergo hundreds of hours of da Vinci training during medical residency and hospitals invest millions in instrumentation, switching costs are prohibitive. The company operates a lucrative razor-and-blade model where recurring instrument, accessory, and service sales exceed 80% of revenue.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Massive installed base (9,000+ systems), extensive surgeon training moat, recurring instruments and accessories revenue (>80% of total).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "da Vinci 5 system global rollout with force-sensing feedback and expanded clinical indications.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Hospital capex freeze or unexpected mechanical safety recalls on da Vinci 5 platform."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.18,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.005,
+      "conviction_score": 9.1,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.016452+00:00"
 }

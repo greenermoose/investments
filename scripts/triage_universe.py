@@ -33,6 +33,17 @@ def load_universe():
     return []
 
 
+def _format_roi(item):
+    """Formats the modelled ROI, or reports it as unavailable."""
+    roi_str = item.get("target_roi")
+    if roi_str:
+        return roi_str
+    roi = item.get("annualized_roi_pct")
+    if isinstance(roi, (int, float)):
+        return f"{roi:.1f}%"
+    return "n/a"
+
+
 def evaluate_triage(company, min_gross_margin=15.0, max_dilution_pct=4.0, max_debt_to_equity=4.0):
     """
     Evaluates a company record against quantitative triage criteria.
@@ -151,8 +162,10 @@ def main():
             "name": item.get("name", ""),
             "sector": item.get("sector", ""),
             "triage_status": t_status,
-            "thesis_rating": item.get("thesis_status", item.get("rating", "HOLD")),
-            "target_roi": item.get("target_roi", f"{item.get('annualized_roi_pct', 0.0):.1f}%"),
+            # A ticker awaiting authored valuation parameters carries no rating and
+            # no ROI. Report the absence rather than defaulting it to HOLD at 0.0%.
+            "thesis_rating": item.get("thesis_status") or item.get("rating") or "UNRATED",
+            "target_roi": _format_roi(item),
             "avoid_reasons": reasons,
             "de_listing_triggers": triggers,
         })

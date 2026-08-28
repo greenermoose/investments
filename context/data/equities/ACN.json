@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Accenture plc maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ACN",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global professional services and technology consulting leader driving cloud migrations and enterprise AI integration.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Accenture plc is the world's leading professional services and technology consulting organization, providing strategy, consulting, digital transformation, cloud migration, cybersecurity, and enterprise operations services to more than 9,000 corporate and government clients across 120 countries, including over three-quarters of the Fortune Global 500.\n\nAccenture's competitive moat is built on unmatched global scale, deep industry domain expertise, and executive client relationships spanning decades. As the primary implementation and systems integration partner for hyperscalers and enterprise software platforms (Microsoft, AWS, Google Cloud, Salesforce, SAP, ServiceNow), Accenture is uniquely positioned as the primary architect of global enterprise AI adoption, driving steady mid-single to double-digit revenue growth and strong cash returns.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Accenture commands a formidable competitive advantage built on global scale, comprehensive domain expertise, and executive client relationships with over three-quarters of the Fortune Global 500. As the premier global implementation partner for hyperscalers (Microsoft, AWS, Google Cloud) and enterprise platforms (SAP, Salesforce, ServiceNow), Accenture acts as the indispensable systems integrator for large-scale enterprise cloud transformations and generative AI deployments. Deep industry specialization, global delivery networks, and elite brand prestige create high client switching costs and durable compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "GitLab Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "GTLB",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Comprehensive, single-application DevSecOps platform unifying the complete software development lifecycle.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "GitLab Inc. delivers a comprehensive, single-application DevSecOps platform that enables organizations to manage the complete software development lifecycle from project planning and source code management to continuous integration/continuous deployment (CI/CD), automated security testing, and cloud infrastructure provisioning.\n\nGitLab's competitive edge is anchored in its unified single-platform architecture, which replaces fragmented toolchains of disparate point solutions, reducing developer friction and enterprise licensing overhead. With strong net retention and expanding adoption of enterprise Ultimate tiers, management is capitalizing on generative AI developer automation (GitLab Duo) to accelerate software delivery cycles and expand enterprise market share.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "GitLab commands a strong competitive moat anchored in its comprehensive, single-application DevSecOps platform that unifies the entire software development lifecycle from planning and code repository management to CI/CD, security scanning, and cloud deployment. By consolidating fragmented multi-vendor developer toolchains into a single permissioned platform, GitLab reduces IT administrative overhead and security vulnerabilities. Expanding enterprise adoption of its premium Ultimate tier and native AI code assistance (GitLab Duo) fuels durable revenue growth and expanding cash flow margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

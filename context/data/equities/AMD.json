@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Advanced Micro Devices, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "AMD",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops high-performance computing, graphics, and visualization technologies including EPYC CPUs, Ryzen, and Instinct AI accelerators.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Advanced Micro Devices, Inc. (AMD) is a high-performance semiconductor designer developing x86 microprocessors (Ryzen for PCs, EPYC for data centers), graphics processors (Radeon and Instinct AI accelerators), FPGA architectures, and embedded adaptive computing solutions (via Xilinx). AMD operates on a fabless manufacturing model, partnering with leading pure-play foundries like TSMC to produce dense, energy-efficient computing silicon.\n\nAMD has built a formidable competitive moat in data center computing through its modular chiplet architecture, high memory bandwidth solutions, and consistent CPU IPC execution against legacy competitors. Management is aggressively targeting the booming generative AI accelerator market with its Instinct MI300/MI350 GPU series and ROCm open software platform, while expanding enterprise server market share and edge computing solutions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "AMD's competitive moat is driven by its modular chiplet manufacturing architecture, high-bandwidth memory packaging expertise, and superior energy-efficient CPU core design across EPYC server and Ryzen PC processors. In cloud data centers, EPYC CPUs have consistently gained market share against Intel due to superior total cost of ownership (TCO) and multi-threaded throughput. In AI acceleration, AMD's Instinct MI300/MI350 silicon combined with the maturing open-source ROCm software stack provides hyperscalers with an essential alternative to proprietary single-vendor architectures.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "EPYC server CPU market share momentum vs Intel, chiplet manufacturing architecture, open ROCm software stack.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "MI325X and MI350 accelerator launch and EPYC Turin enterprise adoption.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Failure of MI300/MI350 Instinct GPUs to capture >10% AI training/inference data center share."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.22,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": 0.005,
+      "conviction_score": 8.9,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.883005+00:00"
 }

@@ -52,8 +52,11 @@ This prompt protocol defines the multi-agent coordination workflow and tool sequ
 
 ### Step 2: Footnote & Off-Balance Sheet Encumbrance Audit
 
-1. Audit company footnotes for pension/OPEB gross PBO, environmental/PFAS reserves, and take-or-pay purchase commitments:
+1. Author the footnote audit (pension/OPEB gross PBO, environmental and PFAS reserves,
+   mass tort dockets, take-or-pay purchase commitments) into the research store under
+   `off_balance_sheet_and_contingent_liabilities`, then propagate and report coverage:
    ```bash
+   python scripts/research_gaps.py --field off_balance_sheet_and_contingent_liabilities
    python scripts/build_off_balance_sheet_data.py
    ```
 

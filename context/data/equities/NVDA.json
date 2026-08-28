@@ -135,5 +135,189 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "NVIDIA Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "NVDA",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Pioneered accelerated computing to tackle challenges no one else can solve, dominating the data center GPU and AI hardware stack.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "NVIDIA Corporation is the global pioneer and market leader in accelerated computing, designing the industry-standard GPU architectures (Hopper, Blackwell), networking interconnects (Quantum InfiniBand and Spectrum-X Ethernet), and CUDA software stack powering modern AI infrastructure. The company monetizes through high-margin data center compute platforms, gaming graphics, enterprise AI software, and autonomous vehicle solutions.\n\nNVIDIA commands an extraordinary economic moat built on its proprietary CUDA software ecosystem (with millions of developers locked into its software library and compiler tools), full-stack data center architectural integration, and rapid silicon innovation cycles. Under CEO Jensen Huang, management is capitalizing on the multi-trillion dollar transition from general-purpose CPUs to accelerated computing and the emergence of enterprise generative AI.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "NVIDIA commands an extraordinary full-stack computing and AI accelerator moat anchored by its proprietary CUDA software architecture. Millions of AI researchers, developers, and software libraries are compiled natively on CUDA, creating prohibitive software switching costs. In hardware, NVIDIA's rapid silicon innovation cadence (Hopper, Blackwell, Rubin architectures), combined with NVLink interconnects and InfiniBand networking (Quantum platform), delivers unrivaled data-center-scale AI compute performance and gross margins exceeding 70%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "CUDA software ecosystem, proprietary interconnect (NVLink), full-stack AI data center architecture.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Blackwell B200 architecture volume ramp and sovereign AI infrastructure demand.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "ASIC custom silicon replacing GPU demand in hyperscalers, CUDA fragmentation, or severe gross margin erosion below 65%."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.28,
+      "target_ps_multiple_multiplier": 0.88,
+      "annual_share_dilution_rate": -0.02,
+      "conviction_score": 9.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.03,
+      "payout_ratio_pct": 2.0,
+      "annual_dividend_growth_pct": 15.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Blackwell Ultra (B300) & NVLink 5 Networking Racks",
+          "expected_revenue_impact_b": 4.5,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "High-volume hyperscaler deployment driving data center acceleration and enterprise adoption.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Rubin Architecture GPU Silicon & Optical Interconnect",
+          "expected_revenue_impact_b": 7.2,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Commercial tape-out and customer sampling for next-gen 3nm AI training clusters.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "NVIDIA Omniverse & Physical AI Robotics Stack",
+          "expected_revenue_impact_b": 3.8,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Industrial robotics software runtime licensing and automotive autonomous compute expansion.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2028-Q3",
+          "product_or_service_name": "Sovereign AI Infrastructure Deployments",
+          "expected_revenue_impact_b": 6.5,
+          "revenue_quarter_inflection": "2028-Q3",
+          "expected_outcome": "Multi-gigawatt national data center buildouts across EMEA, APAC, and North America.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "tam_and_market_share": {
+      "tam_estimate_usd_b": 620.0,
+      "tam_cagr_pct": 24.0,
+      "narrative": "NVIDIA addresses an accelerated computing market we size at roughly $620B of annual spend, spanning data center AI training and inference silicon, high-speed networking fabric, professional visualization, and automotive autonomy platforms. The market is compounding in the mid-twenties percent range as hyperscaler capital budgets shift from general-purpose CPU racks toward accelerated systems, and as sovereign and enterprise buyers enter alongside the four largest cloud operators. NVIDIA holds the dominant share of merchant AI accelerator revenue. The share it does not hold sits with hyperscaler in-house silicon, which is designed for internal workloads rather than sold merchant, and with AMD's Instinct line. We model share drifting down modestly over the horizon as custom silicon absorbs a growing slice of inference, offset by NVIDIA capturing more dollars per rack through networking and systems.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
+      }
+    },
+    "capital_strategy": {
+      "capital_allocation_philosophy": "BALANCED_CAPITAL_RETURN",
+      "buyback_authorized_capacity_usd_b": 50.0,
+      "primary_capital_needs": "Advanced packaging and HBM supply prepayments, foundry capacity reservations, and sustained R&D on the annual architecture cadence",
+      "funding_strategy": "Entirely self-funded from operating cash flow. The fabless model keeps capital intensity low relative to revenue; the binding constraint is supply commitment, not balance sheet capacity.",
+      "going_concern_assessment": "No going concern doubt. Cash and marketable securities exceed total debt, and operating cash flow covers all committed supply obligations several times over.",
+      "narrative": "NVIDIA runs a balanced capital return policy against an unusually strong balance sheet: cash and equivalents exceed total debt, and free cash flow conversion is high enough that the repurchase program and the token dividend are both funded from operations with room to spare. Capital priorities run in a clear order: secure advanced packaging and high-bandwidth memory supply ahead of demand, fund the annual architecture cadence, then return the residual. The principal capital risk is not leverage but commitment timing, since supply is contracted well ahead of the orders it serves and a demand air pocket would land on prepaid capacity.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
+      }
+    },
+    "stock_based_compensation": {
+      "sbc_pct_of_revenue": 2.4,
+      "gross_annual_dilution_pct": 1.4,
+      "vesting_schedule_structure": "4-year graded RSU vesting with a 1-year cliff and quarterly settlement thereafter, plus multi-year performance share units tied to relative total shareholder return",
+      "lock_up_status": "NOT_APPLICABLE_SEASONED_ISSUER",
+      "lock_up_details": "No lock-up applies. Insider sales run through pre-established 10b5-1 plans, so supply from executives is scheduled rather than discretionary.",
+      "narrative": "Stock-based compensation is a small share of revenue because revenue has grown far faster than headcount and grant value. Gross grant issuance runs above one percent of shares a year, but the repurchase program more than absorbs it, leaving net share count contracting. The practical consequence for a shareholder is that per-share value compounds slightly faster than enterprise value, and that quarterly vest-and-sell-to-cover flows are immaterial against the stock's traded volume. The dilution risk worth watching is not routine compensation but equity issued in an acquisition.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
+      }
+    },
+    "revenue_drivers_narrative": {
+      "text": "The 13-quarter path is driven by data center systems revenue, which now dominates the mix and is itself a function of hyperscaler and sovereign capital budgets rather than of unit demand from any single end market. Three things move the line. First, the annual architecture cadence: each generation raises average selling price per rack because the sale is increasingly a full system, GPUs plus networking plus software, rather than a board. Second, supply: through the modeled period the constraint is advanced packaging and high-bandwidth memory allocation, so revenue tracks secured capacity more closely than it tracks order book. Third, mix shift from training to inference, which broadens the buyer base beyond the largest clouds but at lower revenue per deployment. We model growth decelerating from the current rate as the base compounds, with the quarterly shape reflecting datacenter build schedules rather than consumer seasonality.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
+      }
+    },
+    "valuation_ps_multiple_narrative": {
+      "text": "NVIDIA trades at a price-to-sales multiple well above the semiconductor peer group, which is defensible only if the current gross margin structure holds. We model the multiple compressing over the three-year horizon rather than expanding, on the view that the market will progressively price NVIDIA as a very large, very profitable systems business rather than as an uncapped growth story. The modeled return therefore comes from revenue compounding outrunning multiple compression, not from any rerating. That is the central risk in the thesis: at this starting multiple, a growth deceleration and a derating would arrive together and compound, which is why the invalidation criteria are written against margin and concentration rather than against the share price.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:26:30.071734+00:00"
 }

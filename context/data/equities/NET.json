@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Cloudflare, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "NET",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global cloud connectivity and cybersecurity platform providing CDN, DDoS mitigation, Zero Trust network access, and edge computing (Cloudflare Workers).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Cloudflare, Inc. is a leading global cloud services and cybersecurity provider on a mission to build a better Internet. The company operates an expansive global edge network spanning more than 330 cities in over 120 countries, delivering web application performance acceleration, DDoS mitigation, Zero Trust network access (Cloudflare One), and developer serverless computing (Cloudflare Workers).\n\nCloudflare's serverless compute and inference platform, Workers AI, allows developers to deploy full-stack applications and run generative AI models directly at the network edge with ultra-low latency. Management is expanding enterprise sales to capture Global 2000 corporate IT modernization budgets, scaling its Secure Access Service Edge (SASE) offerings, and growing high-margin subscription revenue at double-digit compound rates.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Cloudflare commands a wide network effect and scale moat built on its unified global software-defined network architecture, which runs every service on every server in every data center worldwide. This architecture allows Cloudflare to deploy software updates globally in seconds and absorb massive cyberattacks at near-zero marginal cost. Because Cloudflare proxies a significant fraction of global web traffic, it continuously refines threat intelligence, creating high switching costs for enterprise customers and sustaining gross margins above 75%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.23,
+      "target_ps_multiple_multiplier": 0.85,
+      "annual_share_dilution_rate": 0.02,
+      "conviction_score": 8.8,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.057658+00:00"
 }

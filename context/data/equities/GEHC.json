@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "GE HealthCare Technologies Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "GEHC",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global medical technology and digital solutions innovator in imaging (MRI, CT, ultrasound), patient care solutions, and pharmaceutical diagnostics.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "GE HealthCare Technologies Inc. is a leading global medical technology and digital solutions innovator, operating across four core segments: Imaging (CT, MRI, X-ray, surgical systems), Ultrasound, Patient Care Solutions (monitoring, anesthesia delivery), and Pharmaceutical Diagnostics (contrast media agents). GE HealthCare's equipment is installed in over four million medical settings worldwide.\n\nGE HealthCare benefits from high customer switching costs, a vast global installed base generating steady high-margin service and maintenance contracts, and deep brand prestige among healthcare systems. Management is accelerating product innovation in AI-assisted precision imaging, digital cloud pathology, and theranostics to expand gross margins and drive organic growth.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "GE HealthCare Technologies holds an entrenched medical technology moat built on a global installed base of over 4 million medical imaging, ultrasound, and patient monitoring systems across global hospitals. Hospitals face prohibitive capital costs and physician retraining friction to replace core MRI, CT, and molecular imaging equipment. Over 50% of GE HealthCare's revenue is recurring, generated through long-term service contracts, spare parts, and proprietary medical software subscriptions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Huge global installed base of 4M+ imaging and ultrasound devices, recurring service maintenance contracts (>50% of revenue), Theranostics precision medicine.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "AI-enabled CT/MRI scanner upgrades and FDA radiopharmaceutical diagnostic pipeline.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Hospital capital spending cuts in the US and China."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

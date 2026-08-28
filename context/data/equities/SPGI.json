@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "S&P Global Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "SPGI",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Premier financial information provider delivering independent credit ratings, index benchmarks (S&P 500, Dow Jones), and essential market intelligence.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "S&P Global Inc. is the world's premier provider of transparent and independent credit ratings, financial benchmarks, commodity price assessments, and essential workflow intelligence to capital and commodity markets globally. The business operates five major divisions: S&P Global Ratings, S&P Global Market Intelligence (Capital IQ platform), S&P Dow Jones Indices (S&P 500, Dow Jones Industrial Average), S&P Global Mobility, and S&P Global Commodity Insights (Platts).\n\nS&P Global monetizes through transaction fees on debt issuance ratings, recurring software and market data subscriptions, and asset-linked licensing fees on trillions of dollars indexed to the S&P 500 and Dow Jones benchmarks. Management is actively infusing AI into Capital IQ analytics, expanding private market intelligence, and delivering exceptional operating margins exceeding 45%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "S&P Global commands one of the widest and most impenetrable economic moats in global finance, functioning as a federally registered Nationally Recognized Statistical Rating Organization (NRSRO) within an entrenched credit ratings duopoly alongside Moody's. Institutional bond mandates legally require independent ratings from S&P or Moody's for corporate debt to be eligible for pension fund purchase, granting S&P unmatched pricing power. Simultaneously, the S&P 500 index represents the global standard for equity benchmarking, generating perpetual asset-linked royalty streams.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.115276+00:00"
 }

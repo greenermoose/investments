@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TradingPlanOrdersSchema",
+  "description": "Schema for the order set the Lead Portfolio Manager Agent authors ahead of rendering a weekly trading plan. Every trade decision, every limit price, and every rationale in this file is the agent's. scripts/render_plan.py validates this file against the strategy mandate in AGENTS.md section 5, recomputes the collateral and cash arithmetic, and renders the plain-ASCII plan conforming to trading_plan_schema.json. The renderer selects no trades and writes no rationale.",
+  "type": "object",
+  "required": ["plan_date", "authored_by", "portfolios"],
+  "properties": {
+    "plan_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Monday of the execution week. All orders are entered in one session on this date."
+    },
+    "authored_by": {
+      "type": "string",
+      "description": "Agent role that decided these orders, normally 'Lead Portfolio Manager Agent'."
+    },
+    "snapshot_source": {
+      "type": "string",
+      "description": "Path of the brokerage export in private/snapshots/ these orders were built against."
+    },
+    "portfolios": {
+      "type": "array",
+      "minItems": 1,
+      "description": "One entry per account. Accounts stay isolated: an order in one portfolio never draws on another's collateral (AGENTS.md section 4).",
+      "items": {
+        "type": "object",
+        "required": ["account_name", "orders"],
+        "properties": {
+          "account_name": {
+            "type": "string",
+            "description": "Account label. Must match an account parsed from the snapshot."
+          },
+          "orders": {
+            "type": "array",
+            "description": "Ordered list of orders to submit in a single Monday session. Rendered in array order.",
+            "items": { "$ref": "#/$defs/order" }
+          },
+          "expirations": {
+            "type": "array",
+            "description": "Expected Friday settlement outcomes for open options, authored by the agent.",
+            "items": { "$ref": "#/$defs/expiration" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "order": {
+      "type": "object",
+      "required": ["action", "symbol", "security_type", "quantity", "order_type", "limit_price", "rationale"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": ["BUY", "SELL TO CLOSE", "SELL TO OPEN", "BUY TO CLOSE", "BUY TO OPEN"],
+          "description": "BUY TO OPEN on an OPTION is rejected by the renderer: the mandate prohibits speculative long option purchases (AGENTS.md section 5)."
+        },
+        "symbol": {
+          "type": "string",
+          "description": "Underlying ticker. Option contracts carry their strike and expiration in the dedicated fields, not appended here."
+        },
+        "security_type": {
+          "type": "string",
+          "enum": ["EQUITY", "OPTION"]
+        },
+        "option_type": {
+          "type": "string",
+          "enum": ["PUT", "CALL"],
+          "description": "Required when security_type is OPTION."
+        },
+        "strike": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Required when security_type is OPTION."
+        },
+        "expiration": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "Option expiration date. Required when security_type is OPTION."
+        },
+        "quantity": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Shares for EQUITY, contracts for OPTION. Always positive; direction comes from action."
+        },
+        "order_type": {
+          "type": "string",
+          "enum": ["Limit"],
+          "description": "Limit only. A market order cannot be priced ahead of a single-session Monday entry."
+        },
+        "limit_price": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Per-share price for EQUITY, per-contract premium for OPTION."
+        },
+        "time_in_force": {
+          "type": "string",
+          "enum": ["DAY", "GTC"],
+          "description": "Defaults to DAY. GTC for orders intended to rest past the session."
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 40,
+          "description": "The agent's reason for this order, in its own words. The renderer never composes this."
+        },
+        "contingency": {
+          "type": "object",
+          "description": "Deterministic execution-time branching for orders whose price depends on the market at entry (AGENTS.md section 5). No mid-week waiting.",
+          "required": ["condition", "branch_a", "branch_b"],
+          "properties": {
+            "condition": { "type": "string" },
+            "branch_a": { "type": "string" },
+            "branch_b": { "type": "string" }
+          }
+        },
+        "asserted_collateral_usd": {
+          "type": "number",
+          "description": "The agent's own figure for collateral required. The renderer recomputes it and fails on disagreement."
+        },
+        "asserted_cash_impact_usd": {
+          "type": "number",
+          "description": "The agent's own figure for cash impact, negative for a debit. Recomputed and cross-checked."
+        },
+        "asserted_aroc_pct": {
+          "type": "number",
+          "description": "The agent's own annualized return on collateral for a short option. Recomputed via calculate_pricing and cross-checked."
+        }
+      }
+    },
+    "expiration": {
+      "type": "object",
+      "required": ["symbol", "expectation"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "contracts": { "type": "number" },
+        "status": { "type": "string" },
+        "expectation": {
+          "type": "string",
+          "description": "The agent's stated settlement expectation for this position at 4:00 PM ET Friday."
+        }
+      }
+    }
+  }
+}

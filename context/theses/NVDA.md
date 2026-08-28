@@ -2,8 +2,7 @@
 
 ## Summary & Key Metrics
 - **Ticker:** NVDA
-- **Exchange:** NYSE
-- **Entry Date:** 2026-08-17
+- **Exchange:** NASDAQ
 - **Benchmark Entry Price:** $227.98 per share
 - **Current Price:** $227.98 per share
 - **Target Exit Price:** $437.70 per share
@@ -20,86 +19,76 @@ NVIDIA Corporation is the global pioneer and market leader in accelerated comput
 NVIDIA commands an extraordinary economic moat built on its proprietary CUDA software ecosystem (with millions of developers locked into its software library and compiler tools), full-stack data center architectural integration, and rapid silicon innovation cycles. Under CEO Jensen Huang, management is capitalizing on the multi-trillion dollar transition from general-purpose CPUs to accelerated computing and the emergence of enterprise generative AI.
 
 ## Total Addressable Market & Market Share
-NVIDIA Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 18.0% market share. Over our 3-year investment horizon, we model market share evolving to 22.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+NVIDIA addresses an accelerated computing market we size at roughly $620B of annual spend, spanning data center AI training and inference silicon, high-speed networking fabric, professional visualization, and automotive autonomy platforms. The market is compounding in the mid-twenties percent range as hyperscaler capital budgets shift from general-purpose CPU racks toward accelerated systems, and as sovereign and enterprise buyers enter alongside the four largest cloud operators. NVIDIA holds the dominant share of merchant AI accelerator revenue. The share it does not hold sits with hyperscaler in-house silicon, which is designed for internal workloads rather than sold merchant, and with AMD's Instinct line. We model share drifting down modestly over the horizon as custom silicon absorbs a growing slice of inference, offset by NVIDIA capturing more dollars per rack through networking and systems.
+
+Computed against the $620.0B addressable market recorded above: current share 34.83%, modeled 3-year share 38.83%.
 
 ## Competitive Moat Analysis
 NVIDIA commands an extraordinary full-stack computing and AI accelerator moat anchored by its proprietary CUDA software architecture. Millions of AI researchers, developers, and software libraries are compiled natively on CUDA, creating prohibitive software switching costs. In hardware, NVIDIA's rapid silicon innovation cadence (Hopper, Blackwell, Rubin architectures), combined with NVLink interconnects and InfiniBand networking (Quantum platform), delivers unrivaled data-center-scale AI compute performance and gross margins exceeding 70%.
 
 ## Anticipated Catalysts & Timeline
-NVIDIA Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Blackwell Ultra (B300) & NVLink 5 Networking Racks** (2026-Q4): Expected top-line impact of ~$4.50B inflecting 2026-Q4 revenue. High-volume hyperscaler deployment driving data center acceleration and enterprise adoption. - **Rubin Architecture GPU Silicon & Optical Interconnect** (2027-Q2): Expected top-line impact of ~$7.20B inflecting 2027-Q2 revenue. Commercial tape-out and customer sampling for next-gen 3nm AI training clusters. - **NVIDIA Omniverse & Physical AI Robotics Stack** (2027-Q4): Expected top-line impact of ~$3.80B inflecting 2027-Q4 revenue. Industrial robotics software runtime licensing and automotive autonomous compute expansion. - **Sovereign AI Infrastructure Deployments** (2028-Q3): Expected top-line impact of ~$6.50B inflecting 2028-Q3 revenue. Multi-gigawatt national data center buildouts across EMEA, APAC, and North America.
+- **Blackwell Ultra (B300) & NVLink 5 Networking Racks** (2026-Q4): expected top-line impact of ~$4.50B inflecting 2026-Q4 revenue. High-volume hyperscaler deployment driving data center acceleration and enterprise adoption.
+- **Rubin Architecture GPU Silicon & Optical Interconnect** (2027-Q2): expected top-line impact of ~$7.20B inflecting 2027-Q2 revenue. Commercial tape-out and customer sampling for next-gen 3nm AI training clusters.
+- **NVIDIA Omniverse & Physical AI Robotics Stack** (2027-Q4): expected top-line impact of ~$3.80B inflecting 2027-Q4 revenue. Industrial robotics software runtime licensing and automotive autonomous compute expansion.
+- **Sovereign AI Infrastructure Deployments** (2028-Q3): expected top-line impact of ~$6.50B inflecting 2028-Q3 revenue. Multi-gigawatt national data center buildouts across EMEA, APAC, and North America.
 
 ## Capital Needs & Strategy
-NVIDIA Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 0.03% dividend yield ($0.07/share annually, ~2% payout ratio). Management executes an active share repurchase program (~$75.6B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $53.98B in cash & equivalents against $43.19B in total debt (net balance: $+10.79B). Anticipated annual CapEx and operational capital requirements of ~$34.55B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+NVIDIA runs a balanced capital return policy against an unusually strong balance sheet: cash and equivalents exceed total debt, and free cash flow conversion is high enough that the repurchase program and the token dividend are both funded from operations with room to spare. Capital priorities run in a clear order: secure advanced packaging and high-bandwidth memory supply ahead of demand, fund the annual architecture cadence, then return the residual. The principal capital risk is not leverage but commitment timing, since supply is contracted well ahead of the orders it serves and a demand air pocket would land on prepaid capacity.
 
-| Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
-| :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $0.07 / share | 0.03% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.07/share (0.03% yield, ~2% payout ratio) with +15.0% annual modeled dividend growth. |
-| Share Buybacks & Dilution | ACTIVE | $75.6 B | -2.0% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $43.19 B Debt vs $53.98 B Cash | Net: $+10.79 B | Institutional investment-grade corporate bond issuer with $43.19B total debt vs $53.98B in cash & equivalents (Net balance: $+10.79B). |
-| Capital Needs & Runway | AI_INFRASTRUCTURE_AND_RD | ~$34.55 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
-| Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
+- **Capital Allocation Philosophy:** Balanced Capital Return
+- **Dividends:** $0.07 per share annually (0.03% yield)
+- **Authorized Repurchase Capacity:** $50.0B
+- **Modeled Net Annual Share Change:** -2.0% per year
+- **Balance Sheet (latest filing):** $13.24B cash and equivalents against $8.47B total debt (net +4.77B)
+- **Primary Capital Needs:** Advanced packaging and HBM supply prepayments, foundry capacity reservations, and sustained R&D on the annual architecture cadence
+- **Funding Strategy:** Entirely self-funded from operating cash flow. The fabless model keeps capital intensity low relative to revenue; the binding constraint is supply commitment, not balance sheet capacity.
+- **Going Concern Assessment:** No going concern doubt. Cash and marketable securities exceed total debt, and operating cash flow covers all committed supply obligations several times over.
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-NVIDIA Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $3.89B (~1.8% of TTM revenue). Gross annual equity grant issuance is estimated at +1.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 2.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+Stock-based compensation is a small share of revenue because revenue has grown far faster than headcount and grant value. Gross grant issuance runs above one percent of shares a year, but the repurchase program more than absorbs it, leaving net share count contracting. The practical consequence for a shareholder is that per-share value compounds slightly faster than enterprise value, and that quarterly vest-and-sell-to-cover flows are immaterial against the stock's traded volume. The dilution risk worth watching is not routine compensation but equity issued in an acquisition.
 
-| SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
-| :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~1.8% of TTM Revenue | $3.89 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
-| Gross vs Net Dilution Rate | Gross: +1.6% / yr | Net: -2.0% / yr | AGGRESSIVE_BUYBACKS | Accretive Repurchases |
-| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
-| Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
-
-## Off-Balance Sheet & Long-Term Obligations
-NVIDIA Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
-
-| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
-| :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | NVIDIA Corporation operates zero defined benefit pension plans or retiree health... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | NVIDIA Corporation has zero legacy manufacturing, toxic chemical, or federal Sup... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $75.58 B | Take-or-Pay: $22.67 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
-
-**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+- **Annual SBC:** 2.4% of TTM revenue
+- **Vesting Architecture:** 4-year graded RSU vesting with a 1-year cliff and quarterly settlement thereafter, plus multi-year performance share units tied to relative total shareholder return
+- **Gross Annual Grant Issuance:** +1.4% per year
+- **Lock-Up Status:** NOT_APPLICABLE_SEASONED_ISSUER
+- **Lock-Up Detail:** No lock-up applies. Insider sales run through pre-established 10b5-1 plans, so supply from executives is scheduled rather than discretionary.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
-1. **Trigger 1:** Structural failure to capture projected market share within the $1200.0B addressable market.
-2. **Trigger 2:** Operating margins compress by more than 400 basis points across two consecutive quarters.
-3. **Trigger 3:** Unanticipated cancellation or material commercial delay of key catalyst product rollouts.
-4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
+1. **Trigger 1:** ASIC custom silicon replacing GPU demand in hyperscalers, CUDA fragmentation, or severe gross margin erosion below 65%.
 
 ## Revenue Drivers Narrative
-NVIDIA Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +28.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+The 13-quarter path is driven by data center systems revenue, which now dominates the mix and is itself a function of hyperscaler and sovereign capital budgets rather than of unit demand from any single end market. Three things move the line. First, the annual architecture cadence: each generation raises average selling price per rack because the sale is increasingly a full system, GPUs plus networking plus software, rather than a board. Second, supply: through the modeled period the constraint is advanced packaging and high-bandwidth memory allocation, so revenue tracks secured capacity more closely than it tracks order book. Third, mix shift from training to inference, which broadens the buyer base beyond the largest clouds but at lower revenue per deployment. We model growth decelerating from the current rate as the base compounds, with the quarterly shape reflecting datacenter build schedules rather than consumer seasonality.
 
 ## Valuation & P/S Multiple Narrative
-NVDA currently trades at a Price-to-Sales (P/S) multiple of ~25.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~21.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 24.3%, fully justifying our BUY rating.
+NVIDIA trades at a price-to-sales multiple well above the semiconductor peer group, which is defensible only if the current gross margin structure holds. We model the multiple compressing over the three-year horizon rather than expanding, on the view that the market will progressively price NVIDIA as a very large, very profitable systems business rather than as an uncapped growth story. The modeled return therefore comes from revenue compounding outrunning multiple compression, not from any rerating. That is the central risk in the thesis: at this starting multiple, a growth deceleration and a derating would arrive together and compound, which is why the invalidation criteria are written against margin and concentration rather than against the share price.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
+| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Modeling Basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $54.52 B | +12.5% | 24.300 B | 25.66x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $61.50 B | +37.1% | 24.178 B | 25.33x | Product launch ramp: Blackwell Ultra (B300) & NVLink 5 Networking Racks |
-| 2027-Q1 | 2027-03-31 | $59.76 B | +20.2% | 24.056 B | 25.01x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $67.64 B | +22.9% | 23.935 B | 24.69x | Product launch ramp: Rubin Architecture GPU Silicon & Optical Interconnect |
-| 2027-Q3 | 2027-09-30 | $75.54 B | +38.6% | 23.814 B | 24.37x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $85.74 B | +39.4% | 23.694 B | 24.05x | Product launch ramp: NVIDIA Omniverse & Physical AI Robotics Stack |
-| 2028-Q1 | 2028-03-31 | $83.00 B | +38.9% | 23.575 B | 23.73x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $90.64 B | +34.0% | 23.456 B | 23.41x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $99.16 B | +31.3% | 23.338 B | 23.09x | Product launch ramp: Sovereign AI Infrastructure Deployments |
-| 2028-Q4 | 2028-12-31 | $110.71 B | +29.1% | 23.220 B | 22.77x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $107.46 B | +29.5% | 23.103 B | 22.45x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $115.87 B | +27.8% | 22.987 B | 22.13x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $124.95 B | +26.0% | 22.871 B | 21.81x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $54.52 B | +12.5% | 24.300 B | 25.66x | Baseline growth extrapolation |
+| 2026-Q4 | 2026-12-31 | $61.50 B | +37.1% | 24.178 B | 25.33x | Catalyst ramp: Blackwell Ultra (B300) & NVLink 5 Networking Racks |
+| 2027-Q1 | 2027-03-31 | $59.76 B | +20.2% | 24.056 B | 25.01x | Catalyst ramp (continuing) |
+| 2027-Q2 | 2027-06-30 | $67.64 B | +22.9% | 23.935 B | 24.69x | Catalyst ramp: Rubin Architecture GPU Silicon & Optical Interconnect |
+| 2027-Q3 | 2027-09-30 | $75.54 B | +38.6% | 23.814 B | 24.37x | Catalyst ramp (continuing) |
+| 2027-Q4 | 2027-12-31 | $85.74 B | +39.4% | 23.694 B | 24.05x | Catalyst ramp: NVIDIA Omniverse & Physical AI Robotics Stack |
+| 2028-Q1 | 2028-03-31 | $83.00 B | +38.9% | 23.575 B | 23.73x | Catalyst ramp (continuing) |
+| 2028-Q2 | 2028-06-30 | $90.64 B | +34.0% | 23.456 B | 23.41x | Catalyst ramp (continuing) |
+| 2028-Q3 | 2028-09-30 | $99.16 B | +31.3% | 23.338 B | 23.09x | Catalyst ramp: Sovereign AI Infrastructure Deployments |
+| 2028-Q4 | 2028-12-31 | $110.71 B | +29.1% | 23.220 B | 22.77x | Catalyst ramp (continuing) |
+| 2029-Q1 | 2029-03-31 | $107.46 B | +29.5% | 23.103 B | 22.45x | Catalyst ramp (continuing) |
+| 2029-Q2 | 2029-06-30 | $115.87 B | +27.8% | 22.987 B | 22.13x | Catalyst ramp (continuing) |
+| 2029-Q3 (Q12) | 2029-09-30 | $124.95 B | +26.0% | 22.871 B | 21.81x | Catalyst ramp (continuing) |
 
 ## Shares Outstanding Projections (6 Horizons)
-| Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
+| Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Basis |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 24,178 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| 26 Weeks (2Q) | 24,056 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| 39 Weeks (3Q) | 23,935 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| 52 Weeks (1Y) | 23,814 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| 104 Weeks (2Y) | 23,338 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| 156 Weeks (3Y) | 22,871 M | -2.0% | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$75.6B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
+| 13 Weeks (1Q) | 24,178 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
+| 26 Weeks (2Q) | 24,056 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
+| 39 Weeks (3Q) | 23,935 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
+| 52 Weeks (1Y) | 23,814 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
+| 104 Weeks (2Y) | 23,338 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
+| 156 Weeks (3Y) | 22,871 M | -2.0% | Compounded from the authored dilution rate under a Balanced Capital Return policy |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
@@ -130,7 +119,14 @@ NVDA currently trades at a Price-to-Sales (P/S) multiple of ~25.7x on trailing t
 
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($227.98) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
-| Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
-| Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |
+| Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-28 | VERIFIED_PRIMARY |
+| Market Quote ($227.98) | TIER_2_FINANCIAL_AGGREGATOR | Direct exchange feed | deterministic_script (`fetch_market_prices.py`) | 2026-08-28 | VERIFIED_SECONDARY |
+| Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-28 | VERIFIED_PRIMARY |
+| Business Profile | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Equity Research Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Competitive Moat Analysis | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Equity Research Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Tam And Market Share | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Valuation Parameters | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Capital Strategy | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Stock Based Compensation | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Catalyst Timeline | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+| Invalidation Criteria | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |

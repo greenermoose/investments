@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "HEICO Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "HEI",
+    "schema_version": "1.0",
+    "description": {
+      "text": "FAA-PMA replacement aircraft components, defense electronics, and space technologies.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "HEICO Corporation is a premier manufacturer of FAA-approved alternative replacement aircraft parts (Parts Manufacturer Approval / PMA) and mission-critical defense, space, and electronic components. Through its Flight Support Group (FSG) and Electronic Technologies Group (ETG), HEICO supplies virtually every commercial airline and major defense contractor worldwide.\n\nHEICO maintains an exceptional competitive moat by reverse-engineering high-cost OEM aerospace replacement parts and securing rigorous FAA-PMA certifications, offering airlines 30% to 50% cost savings without compromising safety. Its disciplined, family-led acquisition model targets niche sole-source manufacturers, generating high returns on invested capital and consistent, double-digit annual compounding for over three decades.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "HEICO Corporation maintains an exceptional competitive moat by reverse-engineering high-cost OEM aircraft replacement parts and securing rigorous FAA Parts Manufacturer Approval (PMA) certifications. HEICO offers commercial airlines identical reliability and safety at 30% to 50% discounts to OEM pricing, creating compelling customer ROI while earning high gross margins. High FAA certification barriers, thousands of proprietary PMA parts, and a disciplined acquisition track record of niche sole-source defense suppliers protect HEICO's multi-decade double-digit cash flow compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

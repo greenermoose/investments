@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "MercadoLibre, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  },
+  "research": {
+    "symbol": "MELI",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Operates the largest e-commerce and digital payments ecosystem in Latin America across Mercado Libre and Mercado Pago.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "MercadoLibre, Inc. is the undisputed e-commerce, digital payments, and fintech market leader in Latin America, operating across 18 countries with dominant market positions in Brazil, Mexico, and Argentina. The company operates a comprehensive commerce ecosystem (Mercado Libre marketplace and Mercado Env\u00edos proprietary logistics network) tightly integrated with a full-suite fintech platform (Mercado Pago digital wallets, merchant acquiring, credit lending, and savings accounts).\n\nMercadoLibre's competitive advantage is anchored by powerful two-sided marketplace network effects, unmatched regional logistics speed (delivering the majority of orders within 48 hours), and an expanding financial services ecosystem that benefits from Latin America's cash-to-digital transition. Management is scaling high-margin retail media advertising, expanding credit card and fintech adoption, and deepening warehouse automation.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "MercadoLibre commands an unrivaled commerce and fintech ecosystem moat across Latin America, holding dominant market share in Brazil, Mexico, and Argentina. Its integrated proprietary logistics network (Mercado Envios) delivers over 75% of orders within 48 hours\u2014a logistics capability unmatched in the region. Tightly paired with Mercado Pago (the leading digital wallet, merchant acquiring, and credit platform), MercadoLibre's two-sided network effect creates insurmountable barriers against international entrants.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Irreplaceable logistics network across Brazil/Mexico (Mercado Envios), digital financial ecosystem dominance (Mercado Pago), 60M+ unique buyers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Mercado Pago digital banking credit card expansion and fast-shipping fulfillment moat widening.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Severe credit loss deterioration in consumer fintech loan portfolio or hostile regulatory intervention."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.26,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": -0.005,
+      "conviction_score": 9.4,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.043567+00:00"
 }

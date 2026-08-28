@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "GE Vernova Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "GEV",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global electric power generation, gas turbines, wind power, and high-voltage grid electrification pure-play.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "GE Vernova Inc. is a purpose-built global energy equipment and services leader operating across three core segments: Power (heavy-duty gas turbines, steam turbines, nuclear, and hydro power generation), Wind (onshore and offshore wind turbines), and Electrification (grid orchestration software, high-voltage substations, and power conversion equipment).\n\nGE Vernova occupies a central role in meeting the world's soaring electrical power demand driven by AI data centers, industrial electrification, and electric vehicles. The company benefits from an installed base of over 7,000 gas turbines generating approximately 25% of the world's electricity, which creates decades of high-margin, recurring long-term service agreements (LTSAs). Management is driving operational turnaround in Wind and expanding high-margin Electrification grid backlog.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "GE Vernova holds a wide economic moat rooted in proprietary heavy-duty gas turbine engineering, extensive intellectual property, and an installed base of over 7,000 gas turbines generating roughly 25% of the world's electricity. Replacing or servicing heavy-duty gas turbines requires proprietary OEM components and specialized engineering expertise, locking in multi-decade, high-margin Long-Term Service Agreements (LTSAs). Surging electricity demand from AI data centers, industrial reshoring, and electric grid electrification reinforces GE Vernova's multi-year power equipment backlog and pricing power.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.983081+00:00"
 }

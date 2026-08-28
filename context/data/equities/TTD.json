@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "The Trade Desk, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "TTD",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Independent cloud-based demand-side programmatic advertising platform empowering ad buyers to optimize campaigns across Connected TV, audio, and web.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "The Trade Desk, Inc. operates the world's leading independent cloud-based demand-side programmatic advertising platform (DSP). The platform enables ad agencies and enterprise brand marketers to plan, purchase, manage, and optimize data-driven digital advertising campaigns across connected TV (CTV), online video, audio, mobile, display, and digital out-of-home channels in real time.\n\nThe Trade Desk operates as a pure buy-side platform with no media ownership or inventory conflicts of interest, aligning completely with advertising buyers. Management is capitalizing on the massive migration of linear television advertising budgets to Connected TV, championing the open internet identity standard Unified ID 2.0 (UID2), and leveraging its AI media optimization engine, Kokai, to drive programmatic efficiency.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "The Trade Desk possesses a robust economic moat driven by strong data network effects, independent buy-side alignment, and massive platform scale processing over one trillion ad queries daily. Because The Trade Desk does not own digital media inventory (unlike closed gardens Google and Meta), major media publishers and streaming networks (Disney, Netflix, Paramount) willingly share first-party data and CTV inventory. This independence attracts top global brands, creating high client retention consistently exceeding 95% and operating margins above 35%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.133589+00:00"
 }

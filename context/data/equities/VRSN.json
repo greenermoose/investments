@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "VeriSign, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "VRSN",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Exclusive global domain name registry operator for .com and .net top-level domains and DNS root servers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "VeriSign, Inc. is the global provider of internet domain name registry services and internet infrastructure, exclusively operating the definitive registry for the world's two largest top-level domain (TLD) extensions: .com and .net. The company also operates two of the world's 13 root zone domain name system (DNS) servers, ensuring the uninterrupted routing and navigational security of the global internet.\n\nVeriSign operates an absolute legal and infrastructural monopoly under exclusive agreements with ICANN and the US Department of Commerce. With near-zero incremental marginal costs for domain registrations and contractual annual price increase provisions, VeriSign delivers extraordinary gross margins approaching 88%, operating margins above 67%, and near-100% free cash flow conversion, which management systematically returns to shareholders through massive share buybacks.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "VeriSign holds an absolute legal and operational monopoly as the exclusive registry operator for .com and .net top-level domain names under long-term agreements with ICANN and the US Department of Commerce. With over 170 million active domain registrations and contractual rights to implement annual price increases, VeriSign operates with near-zero marginal variable costs per domain renewal. This unique infrastructural position delivers exceptional gross margins approaching 88%, operating margins above 67%, and near-100% free cash flow conversion dedicated to retiring shares.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.151090+00:00"
 }

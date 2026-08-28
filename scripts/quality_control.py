@@ -404,6 +404,9 @@ class QualityController:
             # 5. Financials & Accounting Math Check
             issues.extend(self.check_fundamentals_and_math(sym))
 
+            # 6. Thesis Schema & Completeness Check
+            issues.extend(self.check_thesis_schema(sym))
+
             # 7. Analyst Price Targets, Coverage & URLs Check
             issues.extend(self.check_analyst_coverage(sym, verify_live=verify_urls))
 
@@ -787,8 +790,21 @@ class QualityController:
         status = u_entry.get("thesis_status")
         score = u_entry.get("conviction_score")
         valid_statuses = {"BUY", "HOLD", "SELL", "AVOID"}
+        awaiting_research = u_entry.get("triage_status") == "AWAITING_RESEARCH"
 
-        if status not in valid_statuses:
+        if status is None and awaiting_research:
+            # Correctly recorded absence: the valuation parameters this rating
+            # would derive from have not been authored. Tracked by research_gaps.py.
+            issues.append({
+                "severity": "WARNING",
+                "rule": "THESIS_AWAITING_RESEARCH",
+                "symbol": sym,
+                "field": "thesis_status",
+                "actual": None,
+                "description": f"[{sym}] No rating: valuation parameters are unauthored. "
+                               f"Run 'python scripts/research_gaps.py --symbol {sym}'."
+            })
+        elif status not in valid_statuses:
             issues.append({
                 "severity": "ERROR",
                 "rule": "THESIS_SCHEMA",
@@ -798,6 +814,9 @@ class QualityController:
                 "expected": list(valid_statuses),
                 "description": f"[{sym}] Invalid thesis_status: '{status}' (must be BUY, HOLD, SELL, or AVOID)."
             })
+
+        if awaiting_research:
+            return issues
 
         if score is None or not (0.0 <= score <= 10.0):
             issues.append({
@@ -827,7 +846,9 @@ class QualityController:
                     "rule": "THESIS_COMPLETENESS",
                     "symbol": sym,
                     "field": req_field,
-                    "description": f"[{sym}] Missing thesis field '{req_field}'."
+                    "description": f"[{sym}] Missing thesis field '{req_field}'. This field is "
+                                   f"agent-authored; run 'python scripts/research_gaps.py "
+                                   f"--symbol {sym}' for what it blocks."
                 })
 
         # Return Engine parameter and arithmetic validation
@@ -1314,12 +1335,15 @@ class QualityController:
                     "average_upside_pct": round(((target_exit_price - current_price) / current_price) * 100.0, 1)
                 }
 
+            # Agent-authored fields pass through exactly as authored. A field the
+            # agent has not written stays None so check_thesis_schema reports it,
+            # rather than being back-filled with a plausible placeholder.
             new_universe.append({
                 "symbol": sym,
                 "name": company_name,
-                "sector": meta.get("sector", "Information Technology"),
-                "industry": meta.get("industry", "US Equity"),
-                "description": meta.get("description", f"Public company {sym}."),
+                "sector": meta.get("sector"),
+                "industry": meta.get("industry"),
+                "description": meta.get("description"),
                 "thesis_status": thesis_status,
                 "conviction_score": conviction_score,
                 "entry_price": entry_price,
@@ -1340,9 +1364,9 @@ class QualityController:
                 "technical_resistance_20d": tech_resistance_20d,
                 "holding_period": holding_period,
                 "target_roi": target_roi_str,
-                "moat": meta.get("moat", "Established commercial moat and customer retention."),
-                "invalidation_criteria": meta.get("invalidation_criteria", "Structural margin deterioration or loss of market share."),
-                "latest_catalyst": meta.get("latest_catalyst", "Upcoming quarterly earnings and operational updates."),
+                "moat": meta.get("moat"),
+                "invalidation_criteria": meta.get("invalidation_criteria"),
+                "latest_catalyst": meta.get("latest_catalyst"),
                 "indices": indices,
                 "is_index_member": is_index_member,
                 "shares_outstanding": shares,

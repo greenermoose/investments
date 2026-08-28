@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Thermo Fisher Scientific Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "TMO",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World leader in serving science, supplying analytical instruments, life science reagents, biopharma contract manufacturing (PPD), and specialty diagnostics.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Thermo Fisher Scientific Inc. is the world leader in serving science, providing an unparalleled breadth of analytical instruments, laboratory equipment, biopharma manufacturing consumables, clinical research services (PPD contract research organization), and specialty diagnostics to pharmaceutical, biotechnology, academic, and government laboratories worldwide.\n\nThermo Fisher operates as the indispensable 'one-stop shop' for life sciences research, leveraging its global supply chain and e-commerce distribution platforms to deliver everything from electron microscopes and mass spectrometers to sterile pipettes and clinical trial logistics. Management compounds capital through high-return R&D investments, disciplined M&A integration, and expanding high-margin biopharma services.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Thermo Fisher's economic moat is built on unmatched product breadth, global laboratory distribution scale, and mission-critical enterprise supply agreements. Pharmaceutical research facilities and clinical labs rely on Thermo Fisher's integrated platform to source thousands of daily supplies and manage end-to-end clinical trial development through PPD. This comprehensive ecosystem creates massive procurement switching costs and pricing power, driving consistent free cash flow conversion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.25,
+      "payout_ratio_pct": 8.0,
+      "annual_dividend_growth_pct": 10.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

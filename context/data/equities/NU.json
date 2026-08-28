@@ -121,5 +121,112 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Nu Holdings Ltd.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "NU",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Operates Nubank, the leading digital banking platform in Latin America providing zero-fee credit cards, mobile payments, high-yield savings, and investment accounts to over 139 million customers across Brazil, Mexico, and Colombia.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Nu Holdings Ltd. (Nubank) is the largest digital banking platform in Latin America outside of legacy incumbents, serving over 100 million customers across Brazil, Mexico, and Colombia. Nubank provides a comprehensive, 100% digital financial services platform spanning credit cards, digital savings accounts, personal loans, business accounts, investments, and insurance.\n\nNubank holds an extraordinary competitive advantage based on its modern, low-cost cloud technology architecture (operating cost per active customer is ~85% lower than traditional Latin American banks), viral brand word-of-mouth adoption, and superior credit underwriting algorithms. Management is aggressively expanding into Mexico and Colombia, scaling high-margin personal loans and credit cards, and cross-selling investment products.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Nu Holdings (Nubank) commands an extraordinary digital banking platform moat across Latin America, serving over 105 million customers in Brazil, Mexico, and Colombia. Nubank's 100% digital, branchless operating model results in a cost-to-serve per active customer that is 85% lower than legacy incumbent banks. Viral organic customer acquisition (over 80% via word-of-mouth), expanding credit card and personal loan underwriting, and deep digital app engagement deliver Return on Equity (ROE) above 28%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Ultra-low cost-to-serve (</customer/month), proprietary credit risk engine, virality network effects, high brand loyalty (NPS >80), and massive low-cost retail deposit funding base.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Approval of full banking license in Mexico and expansion of high-margin secured payroll lending.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Severe deterioration in 90-day NPL delinquency rates (>7.5%), regulatory caps on interchange fees in Brazil or Mexico, or chronic failure to scale deposit funding outside Brazil."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.28,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": 0.005,
+      "conviction_score": 9.4,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Mexico Full Banking License & High-Yield Deposit Ingestion",
+          "expected_revenue_impact_b": 0.45,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Accelerated deposit growth and credit underwriting expansion across 16M+ Mexican account holders.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Colombia Credit Card & Secured Lending Acceleration",
+          "expected_revenue_impact_b": 0.65,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "Secured payroll loan rollout and high-margin credit line activation in Andean markets.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "SME Merchant Payment Services & Regional Wealth Management Tier",
+          "expected_revenue_impact_b": 0.85,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Fee revenue diversification and institutional merchant payment processing across Latin America.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.068967+00:00"
 }

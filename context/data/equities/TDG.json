@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "TransDigm Group Incorporated manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "TDG",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Proprietary, sole-source engineered aircraft components and high-margin aftermarket aerospace parts.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "TransDigm Group Incorporated is a leading global designer, producer, and supplier of highly engineered, proprietary aircraft components for commercial transport aircraft, regional jets, military aircraft, and defense systems. Its product catalog spans ignition systems, mechanical actuators, engine pumps, specialty valves, aerospace motors, and cockpit security devices.\n\nTransDigm's economic moat is among the widest in the industrial sector: over 90% of net sales are generated from proprietary products for which TransDigm holds sole-source manufacturing rights, and roughly 75% of revenue is derived from high-margin aftermarket replacement parts. Because components are flight-critical and FAA-certified, airlines face immense regulatory hurdles to replace them, giving TransDigm unmatched pricing power, EBITDA margins exceeding 50%, and exceptional multi-decade compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "TransDigm Group commands one of the most lucrative economic moats in global industrials. Approximately 90% of net sales are generated from proprietary aerospace components for which TransDigm holds sole-source manufacturing rights, and roughly 75% of revenue is derived from high-margin aftermarket parts. Because components are flight-critical, FAA-certified, and account for a tiny fraction of total aircraft operating costs, airlines and military operators face immense regulatory barriers to switch suppliers, allowing TransDigm to exercise unmatched pricing power and achieve EBITDA margins exceeding 50%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

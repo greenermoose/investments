@@ -11,16 +11,34 @@ Market sentiment shifts, social chatter velocity, and activist short seller camp
 
 ## Multi-Channel Surveillance Execution
 
-### Step 1: Surveil Investor Sentiment & Press Releases
+### Step 1: Read What Has Been Observed
 
-Run the sentiment surveillance tool to scan press releases and investor chatter:
+`surveil_sentiment.py` reads and reports recorded observations. It does not scan
+anything on its own and it never infers sentiment from a company's sector, rating, or
+fundamentals. An empty result means nothing has been observed for that ticker, which is
+different from neutral sentiment.
 
 ```bash
-# Check top investor concerns across the universe
+# Investor concerns already recorded across the universe
 python scripts/surveil_sentiment.py --concerns-only
 
-# Deep dive into sentiment on specific candidate symbols
+# Detail on specific candidate symbols
 python scripts/surveil_sentiment.py --symbols NVDA TSLA ENPH PLTR --json
+
+# Which universe equities have no recorded observation at all
+python scripts/surveil_sentiment.py --coverage
+```
+
+### Step 1b: Observe and Record
+
+Surveillance itself is agent work: read the newswires and forums with your source
+tools, judge whether a concern is credible, and grade its severity. Record what you
+observed as conforming records in `context/data/sentiment_surveillance.json`, per
+`context/schemas/investor_sentiment_schema.json`. Every concern names the
+`chatter_source` it was observed on, and every headline carries its date and publisher.
+
+```bash
+python scripts/surveil_sentiment.py --audit
 ```
 
 ### Step 2: Query Short Seller Research Directory & Active Reports

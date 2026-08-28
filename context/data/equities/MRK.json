@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Merck & Co., Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "MRK",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global healthcare company delivering innovative health solutions through prescription medicines (Keytruda, Gardasil), vaccines, and animal health products.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Merck & Co., Inc. is a premier global biopharmaceutical company discovering, developing, and manufacturing innovative medicines and vaccines across oncology, infectious diseases, cardiometabolic health, and animal health. Its commercial portfolio is anchored by KEYTRUDA (the world's top-selling anti-PD-1 cancer immunotherapy), Gardasil HPV vaccines, ProQuad pediatric vaccines, and cardiovascular medicine WINREVAIR.\n\nMerck's economic moat is built on KEYTRUDA's broad clinical validation across dozens of tumor indications, deep oncology commercial infrastructure, and extensive vaccine manufacturing capabilities. Management is actively executing life-cycle extensions for KEYTRUDA (subcutaneous formulation), expanding newly approved pulmonary arterial hypertension drug WINREVAIR, and acquiring clinical-stage assets to diversify long-term revenue.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Merck & Co. holds a premier pharmaceutical moat anchored by KEYTRUDA, the world's best-selling oncology medicine. KEYTRUDA is FDA-approved across more than 40 indications as a foundational immunotherapy for non-small cell lung cancer, melanoma, and renal cell carcinoma. Merck is reinforcing this moat by advancing subcutaneous KEYTRUDA formulations, expanding its antibody-drug conjugate (ADC) oncology pipeline, and commercializing cardiovascular breakthrough WINREVAIR.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Keytruda mega-blockbuster oncology franchise ($28B+ annual revenue), Gardasil HPV vaccine monopoly, and strong pipeline of antibody-drug conjugates (ADCs).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Subcutaneous Keytruda formulation approval and Winrevair (sotatercept) pulmonary arterial hypertension rollout.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Failure to diversify revenue before Keytruda loss of exclusivity (2028 patent cliff) or major clinical trial failures in late-stage oncology."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.8,
+      "payout_ratio_pct": 50.0,
+      "annual_dividend_growth_pct": 6.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.052064+00:00"
 }

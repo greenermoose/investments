@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Arista Networks, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ANET",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides high-performance, cognitive cloud and AI networking switches and EOS software for hyperscale data centers and enterprise campuses.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Arista Networks, Inc. is the industry-leading provider of high-performance, cognitive cloud and AI data center networking solutions. The company designs ultra-low-latency Ethernet switches, routers, and network software architectures that power large-scale enterprise data centers, cloud titan hyperscalers (Microsoft, Meta), and high-frequency financial trading systems.\n\nArista's core technological foundation is its Extensible Operating System (EOS), a single, programmable, open Linux-based network software image that runs uniformly across all hardware switching platforms. Management is aggressively capturing the generative AI back-end networking transition with its Etherlink AI switching platforms, 800G/1.6T optics, and CloudVision telemetry automation software, delivering exceptional operating margins and a debt-free balance sheet.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Arista possesses an enduring economic moat rooted in its proprietary EOS software architecture, merchant silicon independence, and deep customer switching costs within hyperscale cloud and enterprise data centers. Network engineers and cloud architects standardize on EOS for its single-binary programmability, self-healing modularity, and real-time state telemetry, which eliminates network downtime. Arista's leading-edge Ethernet switching performance for AI clusters provides a superior, open alternative to proprietary InfiniBand fabrics, protecting gross margins above 60% and generating industry-leading ROIC.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.888704+00:00"
 }

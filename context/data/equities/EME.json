@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "EMCOR Group, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "EME",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Specialized mechanical and electrical construction and facilities infrastructure for data centers and mega-fabs.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "EMCOR Group, Inc. is a Fortune 500 leader in mechanical and electrical construction, industrial infrastructure, and facilities services. The company designs, installs, and maintains complex electrical distribution systems, high-efficiency HVAC networks, cleanrooms, and fire protection systems for mission-critical facilities, including semiconductor fabrication plants, hyperscale data centers, pharmaceutical manufacturing, and healthcare campuses.\n\nEMCOR's competitive edge relies on specialized technical engineering expertise, local market density, and an exemplary jobsite safety record that qualifies it for the most demanding high-tech construction projects. Benefiting from powerful secular tailwinds in domestic semiconductor reshoring, EV battery plants, and AI data center buildouts, EMCOR consistently expands high-margin electrical construction backlog while generating strong free cash flow and maintaining a conservative balance sheet.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "EMCOR Group holds a durable competitive advantage in complex mechanical and electrical infrastructure construction, facilities management, and building systems engineering. High-tech facilities such as semiconductor mega-fabs, hyperscale AI data centers, and advanced biotechnology cleanrooms require extraordinary engineering precision and impeccable safety records. EMCOR's technical workforce density, local market relationships, and spotless safety ratings make it the trusted contractor of choice for mission-critical domestic infrastructure projects, sustaining strong order backlogs and high returns on equity.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.967105+00:00"
 }

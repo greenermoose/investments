@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Taiwan Semiconductor Manufacturing Company Limited maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "TSM",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World's largest dedicated semiconductor foundry, manufacturing advanced silicon (3nm, 2nm, CoWoS packaging) for leading global chip designers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Taiwan Semiconductor Manufacturing Company Limited (TSMC) is the world's largest and most technologically advanced dedicated pure-play semiconductor foundry. The company manufactures advanced logic integrated circuits, high-performance computing (HPC) processors, AI accelerators, mobile system-on-chips (SoCs), and automotive silicon for leading global fabless semiconductor designers including NVIDIA, Apple, AMD, Qualcomm, and Broadcom.\n\nTSMC operates the global semiconductor industry's most sophisticated manufacturing fabs, pioneering leading-edge process nodes (N3, N2, and A16 GAA transistor architectures) alongside advanced packaging solutions (CoWoS, InFO, and SoIC). Management is executing a strategic global manufacturing footprint expansion across Taiwan, the United States (Arizona), Japan (Kumamoto), and Europe (Dresden), capturing substantial secular growth from artificial intelligence computing infrastructure and high-performance silicon demand.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "TSMC commands an extraordinary wide economic moat anchored by immense technological leadership, insurmountable manufacturing scale, and billions in annual capital expenditures ($30B+ per year) that create insurmountable barriers to entry. TSMC manufactures more than 90% of the world's advanced computing and AI logic chips, benefiting from unmatched process yield optimization, steep learning curve advantages, and deep co-engineering partnerships with every major hyperscaler and chip designer. Customers face prohibitive switching costs and yield degradation risks when attempting to migrate leading-edge wafer fabrication to competing foundries.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.21,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.005,
+      "conviction_score": 9.3,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.133589+00:00"
 }

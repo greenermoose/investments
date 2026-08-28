@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Stryker Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "SYK",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global medical technology leader providing orthopedic joint replacement implants, Mako robotic-arm surgical systems, and surgical equipment.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Stryker Corporation is a premier global medical technology company operating through two primary segments: MedSurg and Neurotechnology (surgical equipment, navigation systems, endoscopic imaging, neurovascular devices) and Orthopaedics (joint replacement implants, trauma fixation, and spinal surgery systems).\n\nStryker's flagship technological platform is the Mako robotic-arm assisted surgery system, which enables orthopedic surgeons to execute total knee, partial knee, and total hip replacements with millimeter precision. Management drives organic revenue growth by expanding Mako robotic indications (including spine and shoulder applications), selling high-margin proprietary consumable surgical tools, and maintaining dominant hospital equipment share.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Stryker maintains a formidable economic moat built on robotic platform lock-in (Mako), hospital procurement entrenchment, and surgeon switching costs. When a hospital system invests hundreds of thousands of dollars in a Mako robotic console, orthopedic surgeons exclusively utilize Stryker's proprietary implants and cutting blades for every procedure. This razor-and-blade model generates high-margin, recurring implant sales and reinforces Stryker's gross margins above 65%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.09,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.005,
+      "conviction_score": 8.6,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "AbbVie Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "ABBV",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global research-based biopharmaceutical company developing advanced therapies in immunology (Skyrizi, Rinvoq), oncology, and neuroscience.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "AbbVie Inc. is a global research-based biopharmaceutical company focused on developing advanced therapies in immunology, oncology, neuroscience, eye care, and aesthetics (via Allergan). The company commercializes blockbuster immunology therapies Skyrizi (risankizumab) and Rinvoq (upadacitinib), oncology treatments Imbruvica and Venclexta, neuroscience medicines (Vraylar, Qulipta), and the iconic Botox aesthetic franchise.\n\nAbbVie has successfully executed one of the biopharmaceutical industry's most impressive patent cliff transitions, replacing revenue from legacy blockbuster Humira with rapid growth in Skyrizi and Rinvoq across plaque psoriasis, psoriatic arthritis, Crohn's disease, and ulcerative colitis. Management is advancing a deep oncology and neuroscience pipeline while returning substantial cash to shareholders via high-yield dividend growth.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "AbbVie's economic moat is secured by robust patent portfolios, proven clinical superiority in immunology, and unmatched commercial salesforce execution. Skyrizi and Rinvoq have demonstrated superior clinical clearance rates in head-to-head trials against competing biologics, securing preferred formulary placement with major pharmacy benefit managers (PBMs). Furthermore, the Botox aesthetic and therapeutic franchises possess strong consumer brand equity and provider loyalty that generic biosimilars cannot erode.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 3.3,
+      "payout_ratio_pct": 65.0,
+      "annual_dividend_growth_pct": 6.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.866960+00:00"
 }

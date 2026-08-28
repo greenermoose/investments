@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "ESS Tech, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  },
+  "research": {
+    "symbol": "GWH",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs and produces environmentally sustainable iron flow batteries for commercial and utility-scale long-duration energy storage systems.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "ESS Tech, Inc. is a clean energy technology company that designs and manufactures environmentally sustainable iron flow batteries for long-duration commercial and utility-scale energy storage. Its Energy Warehouse and Energy Center systems utilize non-toxic, earth-abundant iron, salt, and water electrolytes to deliver 4 to 12 hours of continuous energy discharge.\n\nESS Tech's iron flow battery technology provides a safe, non-flammable, fully recyclable energy storage solution that avoids rare or expensive critical minerals like lithium, cobalt, and nickel with zero cell degradation over a 20-year operational life. Management is partnering with major utilities, independent power producers, and industrial microgrids to deploy long-duration storage and scale automated manufacturing.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "ESS Tech holds a clean energy technology moat in long-duration grid storage, manufacturing environmentally sustainable iron flow batteries. Utilizing an abundant electrolyte chemistry of iron, salt, and water, ESS battery systems provide 4 to 12 hours of energy storage capacity with zero thermal runaway risk and an operational design life exceeding 20,000 cycles (>20 years) without capacity fade, offering a compelling alternative to lithium-ion for utility solar and wind smoothing.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Abundant iron-chloride electrolyte chemistry; offset by micro-cap liquidity risk, chronic cash burn, micro revenues, and imminent dilution/reverse-split risks.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Automated battery module line output and European utility storage project deployments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Inability to secure commercial project financing or cash runway depletion under 6 months."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.998570+00:00"
 }

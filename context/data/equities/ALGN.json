@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Align Technology, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "ALGN",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Invisalign clear aligner orthodontic treatments, iTero digital intraoral scanners, and CAD/CAM dental software.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Align Technology, Inc. designs, manufactures, and markets the Invisalign system, the world's leading clear aligner orthodontic treatment, as well as iTero intraoral digital scanners and exocad CAD/CAM software for dental laboratories. The company provides a complete end-to-end digital orthodontic workflow connecting orthodontists, general dentists, and patients worldwide.\n\nAlign's competitive moat is founded on a proprietary database of over 18 million treated patients, sophisticated biomechanical 3D software algorithms, automated mass-customization manufacturing facilities, and unmatched global doctor adoption. Management is expanding orthodontic penetration in teen and complex malocclusion segments, driving digital scanner adoption in restorative dentistry, and generating high returns on invested capital with strong cash conversion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Align Technology holds a wide economic moat built on the world's largest proprietary orthodontic database (over 18 million treated patients), advanced biomechanical 3D modeling algorithms, and mass-customization manufacturing scale. Dentists and orthodontists invest substantial time training on the Invisalign and iTero digital ecosystem, creating high clinical switching costs. Unmatched consumer brand recognition, continuous material science innovation (SmartTrack material), and global doctor certification networks defend Align's high market share in clear aligner therapy.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.883005+00:00"
 }

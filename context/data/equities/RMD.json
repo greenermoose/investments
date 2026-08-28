@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "ResMed Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "RMD",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Cloud-connected CPAP medical devices, masks, and digital health software for sleep apnea and respiratory care.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "ResMed Inc. is the global pioneer and market leader in cloud-connected medical devices and digital health software for the treatment of sleep apnea, chronic obstructive pulmonary disease (COPD), and respiratory conditions. The company manufactures CPAP machines (AirSense series), masks, and ventilation devices, complemented by a high-margin out-of-hospital Software-as-a-Service (SaaS) division serving home medical equipment providers.\n\nResMed commands an extensive global economic moat underpinned by vast clinical data networks (over 20 million cloud-connected patient devices), proprietary algorithm intellectual property, and dominant distribution channels across healthcare systems worldwide. Management leverages connected device telemetry to improve patient compliance, drive recurring consumable mask replacements, and benefit from demographic aging and rising sleep apnea diagnosis rates.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "ResMed maintains a wide economic moat underpinned by vast clinical telemetry datasets (over 20 million cloud-connected patient devices), proprietary algorithm intellectual property, and global healthcare distribution relationships. The company's connected AirSense CPAP ecosystem improves sleep therapy compliance and automates remote patient monitoring for home medical equipment providers. High brand loyalty, automated recurring mask and tube replacement supply chains, and superior cloud integration protect ResMed's dominant market share and high gross margins across global respiratory care.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.099940+00:00"
 }

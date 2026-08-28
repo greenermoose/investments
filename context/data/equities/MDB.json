@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "MongoDB, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "MDB",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Developer-centric general purpose data platform providing MongoDB Atlas, a multi-cloud document database for modern web, mobile, and AI applications.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "MongoDB, Inc. is the leading modern, developer-centric general purpose database platform provider. Its flagship document database platform, MongoDB Atlas, is a multi-cloud database-as-a-service available across AWS, Microsoft Azure, and Google Cloud, enabling developers to build, scale, and manage modern software applications using flexible JSON-like document models.\n\nMongoDB's platform handles structured, semi-structured, and unstructured data seamlessly, incorporating native vector search for generative AI applications, real-time analytics, and stream processing. Management is aggressively expanding Atlas consumption across Global 2000 enterprises, driving high-margin recurring database subscription revenues, and establishing MongoDB as the primary operational database for next-generation AI-powered software.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "MongoDB's economic moat is reinforced by deep developer mindshare, high application switching costs, and the viral adoption of its flexible document data model. Developers globally learn and build applications natively on MongoDB due to its intuitive schema flexibility and developer ergonomics. Once an enterprise deploys an application backend on MongoDB Atlas, migrating database architectures involves severe software recoding, query translation risks, and potential application downtime, securing high net revenue retention.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.2,
+      "target_ps_multiple_multiplier": 0.78,
+      "annual_share_dilution_rate": 0.025,
+      "conviction_score": 7.6,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.041559+00:00"
 }

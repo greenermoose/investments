@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Electronic Arts Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "EA",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Develops, markets, and delivers games, content, and online services across consoles, mobile devices, and personal computers (EA SPORTS FC, Madden, Apex Legends).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Electronic Arts Inc. is a global leader in digital interactive entertainment, developing, publishing, and operating blockbuster video game franchises across consoles, PCs, and mobile devices. Its core portfolio includes perennial sports franchises (EA SPORTS FC, Madden NFL, EA SPORTS College Football, F1) alongside blockbuster narrative and shooter IP (Apex Legends, Battlefield, The Sims, Star Wars).\n\nEA's moat is anchored by exclusive multi-year licensing agreements with major sports leagues (FIFA successor leagues, NFL, UEFA), massive multiplayer network effects, and high-margin recurring live-service monetization. Management focuses on growing live-service spending, expanding mobile gaming franchises, and leveraging proprietary game engines to produce high-return entertainment.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Electronic Arts commands a digital entertainment IP moat anchored by evergreen sports video game franchises (EA SPORTS FC, Madden NFL, College Football) and proprietary live-services communities (Apex Legends, The Sims). Exclusive multi-year licensing agreements with FIFA leagues, UEFA, the NFL, and collegiate athletic associations create impenetrable barriers to entry for competing developers, generating high-margin recurring in-game Ultimate Team monetization.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Exclusive sports licensing agreements (FIFA replacement EA SPORTS FC, NFL, College Football), highly recurring Ultimate Team live-service revenue.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "College Football 25 blockbuster launch and EA SPORTS FC franchise monetization resilience.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Severe engagement drop in live-service multiplayer franchises."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.964184+00:00"
 }

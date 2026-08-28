@@ -236,7 +236,7 @@ The system is engineered for maximum token parsimony, separating deterministic t
 | Cadence | Frequency | Primary Tooling | Token Cost | Objective |
 | :--- | :--- | :--- | :--- | :--- |
 | **Cadence 1: Daily Price Sync** | Daily (Open/Close) | `manage_universe.py update-prices` | 0 Tokens | Refresh live market quotes, trading volume, 52W bounds, and moving averages. |
-| **Cadence 2: Weekly Deliberation** | Weekend Single-Session | `weekly_deliberation.md`, `generate_plan.py` | ~2K - 5K Tokens | Ingest snapshots, calculate Black-Scholes limit orders, write plain ASCII plan. |
+| **Cadence 2: Weekly Deliberation** | Weekend Single-Session | `weekly_deliberation.md`, `render_plan.py` | ~2K - 5K Tokens | Ingest snapshots, calculate Black-Scholes limit orders, write plain ASCII plan. |
 | **Cadence 3: Event Surveillance** | Event-Driven / Daily | `surveil_sentiment.py`, `track_short_sellers.py` | ~500 - 1.5K Tokens | Surveil press releases, Reddit chatter, and 20 top activist short sellers. |
 | **Cadence 4: Scheduled SEC Sync** | Scheduled / Monthly | `manage_universe.py refresh-sec` | ~500 Tokens / Stock | Track 10-Q/10-K statutory deadlines and ingest newly filed XBRL statements. |
 | **Cadence 5: Universe Expansion** | On-Demand / Periodic | `manage_universe.py onboard`, `screen` | ~10K - 15K Tokens / Stock | Screen 20%+ ROI compounders, ingest SEC XBRL data, author dossiers, update universe. |

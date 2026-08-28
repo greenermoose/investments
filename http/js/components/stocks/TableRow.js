@@ -10,7 +10,7 @@ export function createTableRow(company, onSelect) {
     row.onclick = () => onSelect(company);
   }
 
-  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'UNRATED';
   const statusClass = statusKey.toLowerCase();
   const currentPrice = company.current_price || company.closing_price || 0;
   const entryPrice = company.entry_price || currentPrice;

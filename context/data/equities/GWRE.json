@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Guidewire Software, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "GWRE",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Core underwriting, billing, and claims processing cloud software for property and casualty insurers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Guidewire Software, Inc. is the dominant core software platform provider for the global property and casualty (P&C) insurance industry. Its flagship Guidewire Cloud platform delivers core transactional systems through InsuranceSuite (PolicyCenter for underwriting and policy administration, ClaimCenter for end-to-end claims processing, and BillingCenter for premium billing), complemented by digital engagement applications and advanced predictive analytics.\n\nGuidewire possesses an extraordinarily wide economic moat anchored by mission-critical core systems where replacement cycles span 10 to 20 years and insurer operational risk makes switching carriers virtually unthinkable. Having completed its strategic cloud transition from on-premise licenses to multi-tenant cloud subscriptions, Guidewire is realizing accelerating annual recurring revenue (ARR) growth, expanding subscription gross margins, and monetizing insurance ecosystem APIs through its Guidewire Marketplace.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Guidewire Software holds an exceptionally wide economic moat built on irreplaceable core systems of record (InsuranceSuite) that handle policy underwriting, claims processing, and billing for the global property and casualty insurance industry. P&C core system replacement cycles span 10 to 20 years, and insurers face catastrophic operational risk if mission-critical claims or billing systems fail during a migration. Having successfully transitioned its customer base to Guidewire Cloud, the company benefits from recurring multi-year subscription contracts, high gross margin expansion, and a thriving third-party developer ecosystem on the Guidewire Marketplace.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

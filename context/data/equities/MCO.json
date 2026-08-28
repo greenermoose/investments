@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Moody's Corporation's off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "MCO",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global credit ratings agency (Moody's Investors Service) and risk management analytics software (Moody's Analytics).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Moody's Corporation is a cornerstone provider of global credit ratings, research, and risk analysis through Moody's Investors Service (MIS), and integrated risk management data, analytics, and software solutions through Moody's Analytics (MA). MIS rates sovereign and corporate debt obligations across global capital markets, while MA provides banking and insurance risk solutions, KYC/AML compliance data, and economic research.\n\nMoody's operates within a heavily protected global ratings duopoly (alongside S&P Global) mandated by regulatory frameworks, bond covenants, and institutional investment guidelines. This structural position confers exceptional pricing power, high operating margins above 45%, and high free cash flow conversion. Management is scaling recurring SaaS analytics revenues across compliance and climate risk, driving multi-year compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Moody's Corporation operates within a federally designated and globally entrenched credit ratings duopoly (alongside S&P Global). Regulatory mandates, bond indenture covenants, and institutional investment mandates require independent credit ratings from Nationally Recognized Statistical Rating Organizations (NRSROs) before debt securities can be issued and purchased by institutional funds. This structural requirement confers immense pricing power, operating margins above 45%, and asset-light free cash flow conversion, complemented by high-retention enterprise risk software in Moody's Analytics.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.033021+00:00"
 }

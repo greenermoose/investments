@@ -678,6 +678,30 @@ def execute_snapshot_command(args):
     return subprocess.run(cmd, cwd=str(ROOT_DIR)).returncode
 
 
+def execute_gaps_command(args):
+    """Handler for the research authoring queue.
+
+    Delegates to scripts/research_gaps.py so the report has one implementation.
+    Exits non-zero when gaps exist, matching that script's contract.
+    """
+    cmd = [sys.executable, str(SCRIPTS_DIR / "research_gaps.py")]
+    if getattr(args, "symbol", None):
+        cmd += ["--symbol"] + list(args.symbol)
+    if getattr(args, "role", None):
+        cmd += ["--role", args.role]
+    if getattr(args, "field", None):
+        cmd += ["--field"] + list(args.field)
+    if getattr(args, "thesis_only", False):
+        cmd.append("--thesis-only")
+    if getattr(args, "summary", False):
+        cmd.append("--summary")
+    if getattr(args, "by_symbol", False):
+        cmd.append("--by-symbol")
+    if getattr(args, "format", "text") != "text":
+        cmd += ["--format", args.format]
+    return subprocess.run(cmd, cwd=str(ROOT_DIR)).returncode
+
+
 def execute_rebuild_all_command(args):
     """Handler for Cadence 6 full ground-truth rebuild."""
     print("================================================================================")
@@ -690,9 +714,10 @@ def execute_rebuild_all_command(args):
         ("Step 2/7: Synchronizing ETF Constituents from SEC Form NPORT-P", [sys.executable, str(SCRIPTS_DIR / "fetch_etf_holdings.py")]),
         ("Step 3/7: Ingesting Live Market Prices & 52W Channels", [sys.executable, str(SCRIPTS_DIR / "fetch_market_prices.py"), "--live", "--archive"]),
         ("Step 4/7: Refreshing Sell-Side Analyst Targets & Registry", [sys.executable, str(SCRIPTS_DIR / "fetch_analyst_targets.py"), "--live"]),
-        ("Step 5/7: Compiling Off-Balance Sheet Liabilities", [sys.executable, str(SCRIPTS_DIR / "build_off_balance_sheet_data.py")]),
-        ("Step 6/7: Rebuilding SEC Filing Deadlines Calendar", [sys.executable, str(SCRIPTS_DIR / "anticipate_sec_filings.py")]),
-        ("Step 7/7: Re-synthesizing Master Universe Catalog", [sys.executable, str(SCRIPTS_DIR / "build_universe_json.py")]),
+        ("Step 5/8: Propagating Authored Off-Balance Sheet Audits", [sys.executable, str(SCRIPTS_DIR / "build_off_balance_sheet_data.py")]),
+        ("Step 6/8: Rebuilding SEC Filing Deadlines Calendar", [sys.executable, str(SCRIPTS_DIR / "anticipate_sec_filings.py")]),
+        ("Step 7/8: Re-synthesizing Master Universe Catalog", [sys.executable, str(SCRIPTS_DIR / "build_universe_json.py")]),
+        ("Step 8/8: Reporting Outstanding Research Authoring Queue", [sys.executable, str(SCRIPTS_DIR / "research_gaps.py"), "--summary"]),
     ]
 
     for title, cmd in steps:
@@ -742,6 +767,7 @@ EXAMPLES:
 
   # 4. Deterministic System Workflows
   python scripts/manage_universe.py audit
+  python scripts/manage_universe.py gaps --summary
   python scripts/manage_universe.py screen --min-roi 20.0 --limit 10
   python scripts/manage_universe.py triage --summary
   python scripts/manage_universe.py pricing option --stock-price 125.0 --strike 120.0 --dte 35 --type put
@@ -867,7 +893,19 @@ EXAMPLES:
     snapshot_parser.add_argument("--json", action="store_true", help="Output normalized portfolio state as JSON.")
     snapshot_parser.add_argument("--file", type=str, help="Specific snapshot file path to parse.")
 
-    # 11. 'rebuild-all' subcommand
+    # 11. 'gaps' subcommand
+    gaps_parser = subparsers.add_parser(
+        "gaps", help="Report which agent-authored research each universe equity is missing.")
+    gaps_parser.add_argument("--symbol", nargs="+", help="Restrict to specific symbols.")
+    gaps_parser.add_argument("--role", type=str, help="Restrict to one owning agent role.")
+    gaps_parser.add_argument("--field", nargs="+", help="Restrict to specific research fields.")
+    gaps_parser.add_argument("--thesis-only", action="store_true",
+                             help="Report only the fields a thesis dossier requires.")
+    gaps_parser.add_argument("--summary", action="store_true", help="One line per field.")
+    gaps_parser.add_argument("--by-symbol", action="store_true", help="Group the report by equity.")
+    gaps_parser.add_argument("--format", choices=["text", "json"], default="text")
+
+    # 12. 'rebuild-all' subcommand
     subparsers.add_parser("rebuild-all", help="Execute Cadence 6 full ground-truth source regeneration across all tiers.")
 
     return parser
@@ -921,6 +959,7 @@ def main():
         "onboard": execute_onboard_command,
         "memory": execute_memory_command,
         "snapshot": execute_snapshot_command,
+        "gaps": execute_gaps_command,
         "rebuild-all": execute_rebuild_all_command,
     }
 

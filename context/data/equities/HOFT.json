@@ -91,5 +91,19 @@
         }
       }
     }
-  ]
+  ],
+  "research": {
+    "symbol": "HOFT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs, imports, and markets residential casegoods, upholstery, and home furnishings under the Hooker, Bradington-Young, Shenandoah, and Sunset West brands, sold through furniture retailers and e-commerce channels.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

@@ -31,6 +31,17 @@ export function closeModal() {
   }
 }
 
+const NOT_AUTHORED = 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
+
+/** True only for a real, finite number. Null and undefined both fail. */
+const isNum = (v) => typeof v === 'number' && Number.isFinite(v);
+
+/** First finite number among the candidates, or null. */
+const firstNum = (...vals) => {
+  for (const v of vals) if (isNum(v)) return v;
+  return null;
+};
+
 export function openCompanyModal(company) {
   if (!company) return;
   window.location.hash = company.symbol;
@@ -75,7 +86,7 @@ export function openCompanyModal(company) {
   }
 
   // Status badge
-  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'UNRATED';
   const statusEl = document.getElementById('modal-status-badge');
   if (statusEl) {
     statusEl.textContent = statusKey;
@@ -167,7 +178,7 @@ export function openCompanyModal(company) {
       moatEl.textContent = rawMoat;
     }
   }
-  if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Upcoming product milestones and earnings updates.';
+  if (catalystEl) catalystEl.textContent = company.latest_catalyst || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
   
   // Render granular catalyst chips
   const catalystChipsEl = document.getElementById('modal-catalyst-chips');
@@ -202,7 +213,7 @@ export function openCompanyModal(company) {
   if (msCurrEl) msCurrEl.textContent = tamInfo.current_market_share_pct !== undefined ? `${tamInfo.current_market_share_pct.toFixed(1)}%` : '-';
   if (msProjEl) msProjEl.textContent = tamInfo.projected_market_share_3y_pct !== undefined ? `${tamInfo.projected_market_share_3y_pct.toFixed(1)}%` : '-';
   if (tamCagrEl) tamCagrEl.textContent = tamInfo.tam_cagr_pct !== undefined ? `+${tamInfo.tam_cagr_pct.toFixed(1)}% YoY` : '-';
-  if (tamTextEl) tamTextEl.textContent = tamInfo.narrative || 'Market share and TAM modeling computed during universe compilation.';
+  if (tamTextEl) tamTextEl.textContent = tamInfo.narrative || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
 
   // Capital Needs & Strategy
   const capInfo = company.capital_needs_and_strategy || {};
@@ -218,13 +229,17 @@ export function openCompanyModal(company) {
   if (philEl) {
     philEl.textContent = capInfo.capital_allocation_philosophy
       ? capInfo.capital_allocation_philosophy.replace(/_/g, ' ')
-      : (company.share_dilution_or_buyback?.management_philosophy?.replace(/_/g, ' ') || 'BALANCED RETURN');
+      : 'Not yet authored';
   }
 
   if (divEl) {
     const divData = capInfo.dividends || {};
-    if (divData.status === 'PAYING' && divData.dividend_yield_pct !== undefined) {
-      divEl.textContent = `${divData.dividend_yield_pct.toFixed(2)}% ($${(divData.annual_dividend_usd || 0).toFixed(2)}/yr)`;
+    if (divData.status === 'PAYING' && typeof divData.dividend_yield_pct === 'number') {
+      // The per-share figure comes from the valuation model and is absent on an
+      // unrated ticker. Report the yield alone rather than $0.00/yr.
+      const perShare = typeof divData.annual_dividend_usd === 'number'
+        ? ` ($${divData.annual_dividend_usd.toFixed(2)}/yr)` : '';
+      divEl.textContent = `${divData.dividend_yield_pct.toFixed(2)}%${perShare}`;
       divEl.style.color = '#10b981';
     } else {
       divEl.textContent = 'None / Reinvested';
@@ -233,49 +248,71 @@ export function openCompanyModal(company) {
   }
 
   if (bbEl) {
-    const bbData = capInfo.share_buybacks || company.share_dilution_or_buyback || {};
+    const bbData = capInfo.share_buybacks || {};
     if (bbData.buyback_program_active) {
       const authCap = bbData.authorized_capacity_usd_b ? `$${bbData.authorized_capacity_usd_b.toFixed(1)}B` : 'Active';
-      const burnRate = bbData.net_annual_share_change_pct !== undefined ? `${bbData.net_annual_share_change_pct.toFixed(1)}%/yr` : '-1.5%/yr';
+      const burnRate = typeof bbData.net_annual_share_change_pct === 'number' ? `${bbData.net_annual_share_change_pct.toFixed(1)}%/yr` : 'rate not authored';
       bbEl.textContent = `Active (${authCap}, ${burnRate})`;
       bbEl.style.color = '#10b981';
     } else {
-      const dilRate = bbData.net_annual_share_change_pct || 0;
-      bbEl.textContent = dilRate > 0 ? `Dilutive (+${dilRate.toFixed(1)}%/yr)` : 'Inactive / Neutral';
-      bbEl.style.color = dilRate > 0 ? '#f43f5e' : '#94a3b8';
+      const dilRate = firstNum(bbData.net_annual_share_change_pct);
+      if (dilRate === null) {
+        bbEl.textContent = 'Not authored';
+      } else {
+        bbEl.textContent = dilRate > 0 ? `Dilutive (+${dilRate.toFixed(1)}%/yr)` : 'Inactive / Neutral';
+      }
+      bbEl.style.color = dilRate !== null && dilRate > 0 ? '#f43f5e' : '#94a3b8';
     }
   }
 
   if (debtCashEl) {
     const issData = capInfo.share_and_debt_issuance || {};
-    const debtVal = issData.total_debt_usd_b !== undefined ? issData.total_debt_usd_b : ((company.total_debt || 0) / 1e9);
-    const cashVal = issData.cash_and_equivalents_usd_b !== undefined ? issData.cash_and_equivalents_usd_b : ((company.cash_and_cash_equivalents || 0) / 1e9);
-    const netVal = issData.net_cash_or_debt_usd_b !== undefined ? issData.net_cash_or_debt_usd_b : (cashVal - debtVal);
-    debtCashEl.textContent = `$${debtVal.toFixed(1)}B Debt | $${cashVal.toFixed(1)}B Cash (${netVal >= 0 ? '+' : ''}$${netVal.toFixed(1)}B Net)`;
-    debtCashEl.style.color = netVal >= 0 ? '#10b981' : (Math.abs(netVal) > cashVal * 3 ? '#f59e0b' : '#818cf8');
+    const debtVal = firstNum(issData.total_debt_usd_b, company.total_debt / 1e9);
+    const cashVal = firstNum(issData.cash_and_equivalents_usd_b, company.cash_and_cash_equivalents / 1e9);
+    const netVal = firstNum(issData.net_cash_or_debt_usd_b,
+      debtVal !== null && cashVal !== null ? cashVal - debtVal : null);
+
+    if (debtVal === null || cashVal === null) {
+      debtCashEl.textContent = 'Not available in ingested filings';
+      debtCashEl.style.color = '#94a3b8';
+    } else {
+      const netStr = netVal === null ? ''
+        : ` (${netVal >= 0 ? '+' : '-'}$${Math.abs(netVal).toFixed(1)}B Net)`;
+      debtCashEl.textContent = `$${debtVal.toFixed(1)}B Debt | $${cashVal.toFixed(1)}B Cash${netStr}`;
+      debtCashEl.style.color = netVal === null ? '#94a3b8'
+        : (netVal >= 0 ? '#10b981' : (Math.abs(netVal) > cashVal * 3 ? '#f59e0b' : '#818cf8'));
+    }
   }
 
+  // CapEx, liquidity runway, and the going concern opinion are research findings.
+  // Rendering "Self-Funded", "36+ Months", and "Clean (Zero Warning)" in green for
+  // a company nobody analysed asserts solvency we have no basis for.
   if (capexEl) {
-    const needsData = capInfo.anticipated_capital_needs || {};
-    capexEl.textContent = needsData.annual_capex_usd_b ? `~$${needsData.annual_capex_usd_b.toFixed(2)}B / yr` : 'Self-Funded';
+    const capex = firstNum((capInfo.anticipated_capital_needs || {}).annual_capex_usd_b);
+    capexEl.textContent = capex === null ? 'Not authored' : `~$${capex.toFixed(2)}B / yr`;
   }
 
   if (runwayEl) {
-    const needsData = capInfo.anticipated_capital_needs || {};
-    const runwayMonths = needsData.liquidity_runway_months || 36;
-    runwayEl.textContent = `${runwayMonths}+ Months`;
-    runwayEl.style.color = '#10b981';
+    const runwayMonths = firstNum((capInfo.anticipated_capital_needs || {}).liquidity_runway_months);
+    runwayEl.textContent = runwayMonths === null ? 'Not authored' : `${runwayMonths}+ Months`;
+    runwayEl.style.color = runwayMonths === null ? '#94a3b8' : '#10b981';
   }
 
   if (gcEl) {
     const needsData = capInfo.anticipated_capital_needs || {};
-    const gcWarn = needsData.going_concern_warning || false;
-    gcEl.textContent = gcWarn ? 'Alert: Going Concern' : 'Clean (Zero Warning)';
-    gcEl.style.color = gcWarn ? '#f43f5e' : '#10b981';
+    const assessment = needsData.going_concern_assessment;
+    const gcWarn = needsData.going_concern_warning;
+    if (gcWarn === undefined && !assessment) {
+      gcEl.textContent = 'Not assessed';
+      gcEl.style.color = '#94a3b8';
+    } else {
+      gcEl.textContent = gcWarn ? 'Alert: Going Concern' : 'Clean (Zero Warning)';
+      gcEl.style.color = gcWarn ? '#f43f5e' : '#10b981';
+    }
   }
 
   if (capNarrativeEl) {
-    capNarrativeEl.textContent = capInfo.narrative || company.share_dilution_or_buyback?.narrative || 'Management capital allocation and balance sheet strategy under ongoing evaluation.';
+    capNarrativeEl.textContent = capInfo.narrative || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
   }
 
   // Stock-Based Compensation & Lock-Up Dynamics
@@ -290,31 +327,38 @@ export function openCompanyModal(company) {
   const sbcLockupDetailsEl = document.getElementById('modal-sbc-lockup-details');
   const sbcNarrativeEl = document.getElementById('modal-sbc-narrative');
 
-  const sbcRisk = sbcInfo.downward_price_pressure_risk || 'LOW';
+  const sbcRisk = sbcInfo.downward_price_pressure_risk || null;
   if (sbcRiskBadgeEl) {
-    sbcRiskBadgeEl.textContent = `${sbcRisk} OVERHANG RISK`;
-    sbcRiskBadgeEl.className = 'badge-status ' + (sbcRisk === 'LOW' ? 'buy' : (sbcRisk === 'MODERATE' ? 'hold' : 'avoid'));
+    sbcRiskBadgeEl.textContent = sbcRisk ? `${sbcRisk} OVERHANG RISK` : 'OVERHANG NOT GRADED';
+    sbcRiskBadgeEl.className = 'badge-status ' + (
+      !sbcRisk ? 'unrated' : (sbcRisk === 'LOW' ? 'buy' : (sbcRisk === 'MODERATE' ? 'hold' : 'avoid')));
   }
 
   if (sbcExpenseEl) {
-    const sbcB = sbcInfo.sbc_annual_expense_usd_b !== undefined ? sbcInfo.sbc_annual_expense_usd_b : 0;
-    const sbcPct = sbcInfo.sbc_pct_of_revenue !== undefined ? sbcInfo.sbc_pct_of_revenue : 0;
-    sbcExpenseEl.textContent = `$${sbcB.toFixed(2)}B (${sbcPct.toFixed(1)}% of Rev)`;
+    const sbcPct = firstNum(sbcInfo.sbc_pct_of_revenue);
+    const sbcB = firstNum(sbcInfo.sbc_annual_expense_usd_b);
+    if (sbcPct === null) {
+      sbcExpenseEl.textContent = '-';
+    } else {
+      const dollars = sbcB === null ? '' : `$${sbcB.toFixed(2)}B `;
+      sbcExpenseEl.textContent = `${dollars}(${sbcPct.toFixed(1)}% of Rev)`;
+    }
   }
 
   if (sbcGrossEl) {
-    const grossDil = sbcInfo.gross_annual_dilution_pct !== undefined ? sbcInfo.gross_annual_dilution_pct : 1.0;
-    sbcGrossEl.textContent = `+${grossDil.toFixed(1)}%/yr`;
+    const grossDil = firstNum(sbcInfo.gross_annual_dilution_pct);
+    sbcGrossEl.textContent = grossDil === null ? '-' : `+${grossDil.toFixed(1)}%/yr`;
   }
 
   if (sbcNetEl) {
-    const netDil = sbcInfo.net_dilution_rate_pct !== undefined ? sbcInfo.net_dilution_rate_pct : (company.share_dilution_or_buyback?.net_annual_share_change_pct || 0);
-    sbcNetEl.textContent = `${netDil >= 0 ? '+' : ''}${netDil.toFixed(1)}%/yr`;
-    sbcNetEl.style.color = netDil <= 0 ? '#10b981' : (netDil > 2.0 ? '#f43f5e' : '#f59e0b');
+    const netDil = firstNum(sbcInfo.net_dilution_rate_pct, capInfo.share_buybacks?.net_annual_share_change_pct);
+    sbcNetEl.textContent = netDil === null ? '-' : `${netDil >= 0 ? '+' : ''}${netDil.toFixed(1)}%/yr`;
+    sbcNetEl.style.color = netDil === null ? '#94a3b8'
+      : (netDil <= 0 ? '#10b981' : (netDil > 2.0 ? '#f43f5e' : '#f59e0b'));
   }
 
   if (sbcOffsetEl) {
-    const offsetKey = sbcInfo.buyback_offset_status || (company.share_dilution_or_buyback?.buyback_program_active ? 'FULL_OFFSET_ACCRETIVE' : 'UNOFFSET_DILUTIVE');
+    const offsetKey = sbcInfo.buyback_offset_status || (capInfo.share_buybacks?.buyback_program_active ? 'FULL_OFFSET_ACCRETIVE' : 'UNOFFSET_DILUTIVE');
     sbcOffsetEl.textContent = offsetKey.replace(/_/g, ' ');
     sbcOffsetEl.style.color = offsetKey.includes('ACCRETIVE') || offsetKey.includes('NEUTRAL') ? '#10b981' : (offsetKey.includes('DILUTIVE') ? '#f43f5e' : '#f59e0b');
   }
@@ -330,7 +374,7 @@ export function openCompanyModal(company) {
   }
 
   if (sbcLockupDetailsEl) {
-    sbcLockupDetailsEl.textContent = sbcInfo.lock_up_details || 'Standard quarterly 10b5-1 insider trading windows activate following Form 10-Q/10-K filings.';
+    sbcLockupDetailsEl.textContent = sbcInfo.lock_up_details || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
   }
 
   if (sbcNarrativeEl) {
@@ -360,15 +404,18 @@ export function openCompanyModal(company) {
   const obsPurDescEl = document.getElementById('modal-obs-pur-desc');
   const obsNarrativeEl = document.getElementById('modal-obs-narrative');
 
-  const obsRating = obsInfo.overall_liability_overhang_rating || 'LOW';
+  const obsRating = obsInfo.overall_liability_overhang_rating || null;
   if (obsRiskBadgeEl) {
-    obsRiskBadgeEl.textContent = `${obsRating} OVERHANG`;
-    obsRiskBadgeEl.className = 'badge-status ' + (obsRating === 'MINIMAL' || obsRating === 'LOW' ? 'buy' : (obsRating === 'MODERATE' ? 'hold' : 'avoid'));
+    obsRiskBadgeEl.textContent = obsRating ? `${obsRating} OVERHANG` : 'NOT AUDITED';
+    obsRiskBadgeEl.className = 'badge-status ' + (
+      !obsRating ? 'unrated'
+        : (obsRating === 'MINIMAL' || obsRating === 'LOW' ? 'buy'
+          : (obsRating === 'MODERATE' ? 'hold' : 'avoid')));
   }
 
   if (obsTotalEl) {
-    const totB = obsInfo.total_estimated_off_balance_sheet_encumbrance_usd_b !== undefined ? obsInfo.total_estimated_off_balance_sheet_encumbrance_usd_b : 0;
-    obsTotalEl.textContent = `$${totB.toFixed(1)}B`;
+    const totB = firstNum(obsInfo.total_estimated_off_balance_sheet_encumbrance_usd_b);
+    obsTotalEl.textContent = totB === null ? 'Not audited' : `$${totB.toFixed(1)}B`;
   }
 
   if (obsPenGapEl) {
@@ -419,7 +466,7 @@ export function openCompanyModal(company) {
   }
 
   if (obsEquityImpactEl) {
-    obsEquityImpactEl.textContent = obsInfo.equity_cash_flow_diversion_risk || 'Zero material off-balance sheet encumbrance on common equity cash flows.';
+    obsEquityImpactEl.textContent = obsInfo.equity_cash_flow_diversion_risk || 'Not assessed. An absent assessment is not a finding of zero encumbrance.';
   }
 
   if (obsPenDescEl) {
@@ -427,11 +474,11 @@ export function openCompanyModal(company) {
   }
 
   if (obsEnvDescEl) {
-    obsEnvDescEl.textContent = envData.narrative || 'Zero material Superfund or environmental cleanup liabilities.';
+    obsEnvDescEl.textContent = envData.narrative || 'Not audited. An absent environmental audit is not a finding of zero liability.';
   }
 
   if (obsLitDescEl) {
-    obsLitDescEl.textContent = litData.narrative || 'Standard commercial litigation covered by ordinary operating reserves.';
+    obsLitDescEl.textContent = litData.narrative || 'Not audited. An absent litigation audit is not a finding of no exposure.';
   }
 
   if (obsPurDescEl) {
@@ -447,7 +494,7 @@ export function openCompanyModal(company) {
     if (Array.isArray(company.invalidation_criteria)) {
       invalidationEl.innerHTML = company.invalidation_criteria.map((c, i) => `<div><strong>${i+1}.</strong> ${c}</div>`).join('');
     } else {
-      invalidationEl.textContent = company.invalidation_criteria || 'Structural degradation of return on invested capital or secular market share loss.';
+      invalidationEl.textContent = company.invalidation_criteria || 'Not yet authored. See scripts/research_gaps.py for the authoring queue.';
     }
   }
 
@@ -486,7 +533,7 @@ export function openCompanyModal(company) {
   if (engCapGainEl) engCapGainEl.textContent = `+${(company.capital_gain_pct || 0).toFixed(1)}%`;
   if (engOptYieldEl) engOptYieldEl.textContent = `+${(company.options_yield_pct || 0).toFixed(1)}%`;
   if (engTotalRoiEl) engTotalRoiEl.textContent = `+${(company.total_roi_pct || 0).toFixed(1)}%`;
-  if (engCagrEl) engCagrEl.textContent = company.annualized_roi_pct ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : (company.target_roi || '20.0%');
+  if (engCagrEl) engCagrEl.textContent = typeof company.annualized_roi_pct === 'number' ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : (company.target_roi || 'Not modeled');
 
   // Tab 1: Quarterly Revenue Trajectory & Valuation Multiples Table
   const currPs = company.current_ps_multiple || ((company.shares_outstanding && company.ttm_revenue) ? ((company.shares_outstanding * currentPrice) / company.ttm_revenue) : 5.0);

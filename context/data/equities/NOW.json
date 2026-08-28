@@ -128,5 +128,49 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "ServiceNow, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "NOW",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Enterprise digital workflow platform automating IT, customer, and employee workflows with generative AI.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "ServiceNow, Inc. operates the premier cloud-based digital workflow platform that orchestrates end-to-end enterprise operations across IT service management (ITSM), IT operations management (ITOM), customer service management (CSM), and human resources service delivery (HRSD). The company's unified Now Platform connects disparate enterprise legacy systems, enabling organizations to automate complex cross-functional workflows, modernize service operations, and monetize via high-margin SaaS subscriptions and consumption tiers.\n\nServiceNow maintains a formidable competitive moat driven by high switching costs and pervasive workflow entrenchment across more than 85% of the Fortune 500. The platform's proprietary single-data-model architecture (Common Service Data Model) creates unmatched operating efficiencies and customer renewal rates exceeding 98%. Management is accelerating growth by embedding generative AI capabilities (Now Assist) across all workflow workflows, expanding Pro Plus premium tier adoption, and deepening strategic partnerships with enterprise cloud and hardware leaders.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "ServiceNow maintains an exceptionally wide economic moat characterized by high customer switching costs and mission-critical enterprise workflow entrenchment across more than 85% of the Fortune 500. Organizations standardize core IT, employee, and customer workflows on the unified Now Platform, making displacement extremely complex, costly, and operationally disruptive. The platform's proprietary Common Service Data Model (CSDM) enables seamless cross-functional data orchestration, sustaining customer renewal rates exceeding 98% and driving steady annual contract expansion as enterprises consolidate point solutions onto ServiceNow.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.19,
+      "target_ps_multiple_multiplier": 0.88,
+      "annual_share_dilution_rate": 0.01,
+      "conviction_score": 9.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.067962+00:00"
 }

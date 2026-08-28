@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Manhattan Associates, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "MANH",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Cloud-native supply chain commerce, warehouse management, and omnichannel retail inventory software.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Manhattan Associates, Inc. is the premier developer of cloud-native supply chain commerce, warehouse management, and omnichannel retail inventory software solutions. The company's flagship Manhattan Active platform spans Warehouse Management (WMS), Transportation Management (TMS), Omnichannel Point-of-Sale (POS), and Order Management (OMS), enabling global enterprises to optimize inventory positioning and streamline logistics fulfillment.\n\nManhattan Associates commands an entrenched competitive advantage in mission-critical distribution centers and retail logistics networks, where downtime carries severe financial consequences. Its cloud-native microservices architecture (Manhattan Active) eliminates disruptive software upgrade cycles, driving rapid customer migration, subscription ARR compounding above 20%, and gross margins exceeding 55% with zero debt.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Manhattan Associates holds an entrenched competitive advantage in mission-critical supply chain execution, warehouse management, and omnichannel retail inventory software. Its Manhattan Active platform serves as the central operational nervous system for major global retailers, third-party logistics providers, and manufacturers where warehouse downtime causes severe supply chain disruption. Its cloud-native microservices architecture eliminates version upgrades, creating frictionless feature deployment, high enterprise customer retention, and double-digit subscription ARR compounding with zero debt.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.033021+00:00"
 }

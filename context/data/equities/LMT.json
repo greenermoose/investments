@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Lockheed Martin Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "LMT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World's largest defense prime contractor specializing in advanced aerospace (F-35 Lightning II), precision missiles, hypersonics, and tactical rotorcraft.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Lockheed Martin Corporation is the world's largest defense prime contractor, specializing in the research, design, development, and integration of advanced aerospace, defense, and security technology systems. The company operates four segments: Aeronautics (F-35 Lightning II, C-130 Hercules, F-16), Missiles and Fire Control (HIMARS, PAC-3, Javelin), Rotary and Mission Systems (Sikorsky helicopters, Aegis combat systems), and Space (military satellites, missile defense).\n\nLockheed Martin serves as the premier strategic defense partner to the US Department of Defense and allied sovereign nations. Its crown jewel program is the 5th-generation F-35 Joint Strike Fighter, which represents a multi-decade production and maintenance program expected to operate through 2070. Management manages a record multi-year defense backlog exceeding $160 billion, driving stable cash flow and reliable dividend compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Lockheed Martin possesses a wide economic moat rooted in deep government defense relationships, classified security clearances, immense R&D scale, and multi-decade defense program lifecycles. The F-35 platform is the undisputed standard fighter jet for the US military and NATO allies; developing a competing 5th-generation stealth aircraft is financially and technologically out of reach for new entrants. These long-term defense contracts ensure high revenue visibility, protected cost-plus and fixed-price margins, and multi-decade sustainment cash flows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.4,
+      "payout_ratio_pct": 45.0,
+      "annual_dividend_growth_pct": 6.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.030876+00:00"
 }

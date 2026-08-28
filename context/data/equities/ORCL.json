@@ -136,5 +136,61 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Oracle Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ORCL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Enterprise technology provider offering Oracle Cloud Infrastructure (OCI), Autonomous Database platforms, and cloud ERP/HCM application suites (Fusion, NetSuite).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Oracle Corporation is a global technology leader providing enterprise cloud infrastructure, autonomous database platforms, and cloud application suites. The business operates through four segments: Cloud and License (Oracle Cloud Infrastructure / OCI, Oracle Autonomous Database, ERP/HCM SaaS suites including Fusion and NetSuite), Hardware (engineered database systems), and Services. OCI delivers high-performance compute clusters, GPU supercomputing for AI training, and multi-cloud database interoperability.\n\nOracle's strategic expansion centers on its Gen 2 Cloud Infrastructure, which provides RDMA networking and cost-efficient bare-metal GPU clusters tailored for generative AI workloads, winning multi-billion dollar infrastructure contracts with OpenAI, Microsoft, and leading enterprise AI developers. Management is scaling cloud database services across AWS, Azure, and Google Cloud while driving recurring subscription revenue and expanding high-margin cloud gross margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Oracle's economic moat is fortified by profound enterprise switching costs and mission-critical database lock-in. Global Fortune 500 corporations, financial institutions, and government agencies run core transaction processing and enterprise resource planning on Oracle Database engines where migration risks system disruption and catastrophic downtime. OCI reinforces this moat through proprietary RDMA cluster networking architectures and multi-cloud database partnerships, maintaining recurring enterprise cash flows and gross margins above 70%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.09,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": 0.005,
+      "conviction_score": 8.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 1.1,
+      "payout_ratio_pct": 30.0,
+      "annual_dividend_growth_pct": 10.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.068967+00:00"
 }

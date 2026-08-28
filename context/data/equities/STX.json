@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Seagate Technology Holdings plc maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "STX",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides data storage technology and infrastructure solutions, leading the transition to Heat-Assisted Magnetic Recording (HAMR) enterprise hard drives.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Seagate Technology Holdings plc is a leading global provider of mass-capacity data storage solutions, designing and manufacturing hard disk drives (HDDs) and solid-state drives (SSDs) for cloud hyperscale data centers, enterprise servers, edge computing, and consumer electronics. Seagate dominates the mass-capacity nearline HDD market required to store the explosion of global digital data.\n\nSeagate operates in a consolidated global HDD duopoly alongside Western Digital, protected by immense capital requirements, microscopic nanometer magnetic head physics, and deep customer qualification cycles with cloud hyperscalers. Management is leading the commercial transition to Heat-Assisted Magnetic Recording (HAMR) technology (Mozaic 3+ platform), delivering 30TB+ drive capacities with superior areal density and total cost of ownership.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Seagate Technology operates in an entrenched duopoly alongside Western Digital in high-capacity hard disk drive (HDD) manufacturing. In enterprise cloud hyperscale data centers, mass-capacity HDDs provide over 80% of secondary cloud storage volume at a cost-per-terabyte that is approximately 5x cheaper than flash memory SSDs. Seagate's proprietary Heat-Assisted Magnetic Recording (HAMR) technology (Mozaic 3+ platform) enables 30TB+ areal density leadership.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Pioneering HAMR (Mozaic 3+) areal density technology enabling 30TB+ to 40TB+ hard drives, essential low-cost tier for AI training datasets.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Mozaic 3+ HAMR volume qualification with major cloud service providers.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "HAMR manufacturing yield bottlenecks or faster-than-expected price declines in enterprise QLC flash."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

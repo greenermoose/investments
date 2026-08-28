@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Snowflake Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "SNOW",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Cloud Data Cloud platform enabling enterprise data warehousing, data lakes, secure data sharing, and AI application development across multi-cloud environments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Snowflake Inc. is a leading cloud Data Cloud platform that unifies data warehousing, data lakes, data engineering, data science, and secure application sharing across multi-cloud environments (AWS, Azure, Google Cloud). Its innovative architecture separates compute and storage, allowing enterprises to scale database workloads independently and pay strictly for the compute resources consumed.\n\nSnowflake's platform enables organizations to build enterprise AI applications, securely query enterprise data using generative AI models (Snowflake Cortex), and share data seamlessly across corporate boundaries without copying files (Snowflake Data Marketplace). Management focuses on expanding enterprise data consumption, driving Iceberg open table format interoperability, and capturing large-scale data analytics workloads.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Snowflake commands a strong economic moat powered by high enterprise switching costs, cross-cloud interoperability, and proprietary multi-party data sharing network effects. Enterprises consolidate mission-critical financial, customer, and operational data into Snowflake to eliminate data silos. Snowflake's unique data sharing capabilities allow companies to query third-party vendor datasets directly without ETL pipelines, creating a data network effect that locks in enterprise clients and drives net revenue retention above 120%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.22,
+      "target_ps_multiple_multiplier": 0.75,
+      "annual_share_dilution_rate": 0.025,
+      "conviction_score": 7.8,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.111432+00:00"
 }

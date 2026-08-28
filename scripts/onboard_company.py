@@ -279,23 +279,52 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
         company_name=name
     )
 
-    triage_status = "QUALIFIED_CANDIDATE" if val_model["rating"] != "AVOID" else "AVOID"
-    print(f"    Rating: {val_model['rating']} | 3Y CAGR: +{val_model['annualized_roi_pct']:.1f}% | Triage: {triage_status}")
-
-    existing_meta.update({
+    base_meta = {
         "name": name,
         "sector": sec,
         "industry": ind,
+        "current_price": current_price,
+        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    }
+
+    if val_model["status"] != "MODELED":
+        # Ingestion succeeded; the valuation is waiting on the Investment Thesis
+        # Agent. No rating is recorded, because a rating derived from anything
+        # other than researched parameters is not a rating.
+        missing = ", ".join(g["field"] for g in val_model["gaps"])
+        print(f"    Rating: not assigned. Awaiting authored research: {missing}")
+        base_meta["triage_status"] = "AWAITING_RESEARCH"
+        existing_meta.update(base_meta)
+        if description:
+            existing_meta["description"] = description
+        meta_dict[sym] = existing_meta
+        with open(meta_file, "w", encoding="utf-8") as f:
+            json.dump(meta_dict, f, indent=2)
+
+        return {
+            "symbol": sym,
+            "name": name,
+            "sector": sec,
+            "industry": ind,
+            "current_price": current_price,
+            "rating": None,
+            "triage_status": "AWAITING_RESEARCH",
+            "gaps": [g["field"] for g in val_model["gaps"]],
+        }
+
+    triage_status = "QUALIFIED_CANDIDATE" if val_model["rating"] != "AVOID" else "AVOID"
+    print(f"    Rating: {val_model['rating']} | 3Y CAGR: +{val_model['annualized_roi_pct']:.1f}% | Triage: {triage_status}")
+
+    base_meta.update({
         "thesis_status": val_model["rating"],
         "conviction_score": val_model["conviction_score"],
         "holding_period": val_model["holding_period"],
         "target_strategy": val_model["target_strategy"],
         "benchmark_entry": val_model["entry_price"],
         "target_exit_price": val_model["target_exit_price"],
-        "current_price": current_price,
         "triage_status": triage_status,
-        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d")
     })
+    existing_meta.update(base_meta)
     if description:
         existing_meta["description"] = description
     meta_dict[sym] = existing_meta
@@ -314,7 +343,8 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
         "target_exit_price": val_model["target_exit_price"],
         "annualized_roi_pct": val_model["annualized_roi_pct"],
         "conviction_score": val_model["conviction_score"],
-        "triage_status": triage_status
+        "triage_status": triage_status,
+        "gaps": [],
     }
 
 
@@ -352,22 +382,26 @@ def onboard_batch(symbols, company_name=None, sector=None, industry=None, descri
     except Exception as e:
         print(f"  Warning: Rebuilding universe.json encountered: {e}")
 
-    # Author Institutional Thesis Dossiers
+    # Render thesis dossiers for whatever research already exists, and name the
+    # rest. Onboarding brings a ticker into coverage; it does not research it.
     sym_list = [r["symbol"] for r in results]
-    print(f"[Step 6/7] Generating institutional thesis dossiers in context/theses/...")
-    try:
-        cmd = [sys.executable, str(SCRIPTS_DIR / "generate_all_theses.py"), "--symbols"] + sym_list
-        subprocess.run(cmd, check=True, cwd=str(ROOT_DIR), capture_output=True)
-        print(f"  Thesis dossiers generated for {len(sym_list)} equities.")
-    except Exception as e:
-        print(f"  Warning: generate_all_theses encountered: {e}")
+    print("[Step 6/7] Rendering thesis dossiers in context/theses/...")
+    cmd = [sys.executable, str(SCRIPTS_DIR / "render_thesis.py"), "--symbols"] + sym_list
+    completed = subprocess.run(cmd, cwd=str(ROOT_DIR), capture_output=True, text=True)
+    for line in (completed.stdout or "").strip().splitlines():
+        print("  " + line)
+
+    awaiting = [r["symbol"] for r in results if r.get("gaps")]
+    if awaiting:
+        print(f"  {len(awaiting)} newly onboarded equities need research before they carry a")
+        print("  rating or a dossier. Run 'python scripts/research_gaps.py --symbol "
+              + " ".join(awaiting) + "'.")
 
     # Synchronize secondary registries (filing calendar, sentiment, short campaigns)
     print("[Step 7/7] Synchronizing SEC filing calendar, sentiment, and short campaign registries...")
     try:
         subprocess.run([sys.executable, str(SCRIPTS_DIR / "anticipate_sec_filings.py")], cwd=str(ROOT_DIR), capture_output=True)
-        subprocess.run([sys.executable, str(SCRIPTS_DIR / "surveil_sentiment.py"), "--seed"], cwd=str(ROOT_DIR), capture_output=True)
-        subprocess.run([sys.executable, str(SCRIPTS_DIR / "track_short_sellers.py"), "--seed"], cwd=str(ROOT_DIR), capture_output=True)
+        subprocess.run([sys.executable, str(SCRIPTS_DIR / "anticipate_sec_filings.py")], cwd=str(ROOT_DIR), capture_output=True)
     except Exception as e:
         print(f"  Warning: Secondary registry sync encountered: {e}")
 

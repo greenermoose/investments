@@ -34,13 +34,19 @@ export function createGridCard(company, onSelect) {
     card.onclick = () => onSelect(company);
   }
 
-  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'HOLD';
+  const statusKey = company.thesis_status ? company.thesis_status.toUpperCase() : 'UNRATED';
   const statusClass = statusKey.toLowerCase();
   const formattedStatus = statusKey;
 
   const currentPrice = company.current_price || company.closing_price || 0;
-  const entryPrice = company.entry_price || currentPrice;
-  const targetExit = company.target_exit_price || currentPrice;
+  // Entry and target come from the valuation model. On an unrated ticker they are
+  // null; substituting the current price would render a $X to $X "range" that
+  // looks like a modelled result.
+  const entryPrice = company.entry_price;
+  const targetExit = company.target_exit_price;
+  const priceRangeStr = (typeof entryPrice === 'number' && typeof targetExit === 'number')
+    ? `$${entryPrice.toFixed(2)} to $${targetExit.toFixed(2)}`
+    : 'No price target modeled';
   const range52wHtml = render52WeekBar(company.fifty_two_week_low, company.fifty_two_week_high, currentPrice);
 
   const targetRoiVal = company.annualized_roi_pct !== undefined ? company.annualized_roi_pct : company.target_roi;
@@ -57,7 +63,7 @@ export function createGridCard(company, onSelect) {
       <div class="company-card-header">
         <div class="company-symbol-box">
           <span class="company-symbol">${company.symbol}</span>
-          <span class="company-price-range" style="font-size: 0.95rem; font-weight: 600; color: #ffffff;">$${entryPrice.toFixed(2)} to $${targetExit.toFixed(2)}</span>
+          <span class="company-price-range" style="font-size: 0.95rem; font-weight: 600; color: #ffffff;">${priceRangeStr}</span>
         </div>
         <div class="company-status-badges" style="display: flex; gap: 6px; align-items: center;">
           ${company.is_adr ? `<span class="badge-status adr" title="American Depositary Receipt (${company.adr_underlying_description || '1 ADR = Ordinary Shares'})">${company.listing_type || 'ADR'}</span>` : ''}

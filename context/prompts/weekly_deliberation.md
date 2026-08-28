@@ -27,15 +27,15 @@ You are the Lead Portfolio Manager and multi-agent coordination engine for the A
 
 ### Step 2: Equity Research Agent
 - Source: The Internet, US public markets (NYSE, NASDAQ, AMEX), SEC EDGAR NPORT-P / 10-K filings, industry trend reports, sentiment feeds, and short seller alerts.
-- Tool: `python scripts/triage_universe.py`, `python scripts/screen_market.py --min-roi 20.0 --exclude-avoid`, `python scripts/surveil_sentiment.py --concerns-only`, and `python scripts/track_short_sellers.py`
+- Tool: `python scripts/triage_universe.py`, `python scripts/screen_market.py --min-roi 20.0 --exclude-avoid`, `python scripts/surveil_sentiment.py --concerns-only`, `python scripts/track_short_sellers.py`, and `python scripts/research_gaps.py`
 - Task: Discover compelling US-listed equities, investigate business models and secular growth drivers, and evaluate whether they offer a high probability of achieving >= 20% annualized ROI.
 - Stage 1 Triage Gate: Filter newly discovered equities through Stage 1 Triage (`scripts/triage_universe.py`). Route failing tickers to the Avoid List (`triage_status: "AVOID"`) with minimal metadata, freezing them from deep compute. Pass qualifying candidates as `QUALIFIED_CANDIDATE`.
-- Sentiment & Short Seller Check: Query `scripts/surveil_sentiment.py` to evaluate sentiment polarity and emerging investor friction themes. Cross-check against `scripts/track_short_sellers.py` to ensure candidate equities are not subject to credible active fraud investigations.
+- Sentiment & Short Seller Check: Query `scripts/surveil_sentiment.py` to read sentiment observations already recorded. These scripts report what agents have observed and recorded from named sources; they do not infer sentiment from fundamentals, and an empty result means nothing has been observed rather than that sentiment is neutral. Record new observations by writing conforming records into `context/data/sentiment_surveillance.json` and validating with `--audit`. Cross-check against `scripts/track_short_sellers.py` to ensure candidate equities are not subject to credible active fraud investigations.
 - Solvency Check: Verify solvency and cash runway (Debt/Equity sanity check, >12-24 months runway) rather than rigid zero-debt dogma. Add qualifying candidates to the master tracking universe.
 
 ### Step 3: Investment Thesis Agent
 - Source: Master tracking universe (`QUALIFIED_CANDIDATE` equities), Tier 1 SEC EDGAR filings (10-K/10-Q), SEC filing calendar (`context/data/sec_filing_calendar.json`), earnings releases, and market fundamentals.
-- Tool: `python scripts/validate_thesis.py --file context/theses/<TICKER>.md` and `python scripts/anticipate_sec_filings.py --upcoming-days 30`
+- Tool: `python scripts/research_gaps.py --thesis-only`, then author into the research store, then `python scripts/render_thesis.py --symbols <TICKER>` and `python scripts/validate_thesis.py --file context/theses/<TICKER>.md`. See `context/prompts/thesis_authoring.md`. Also `python scripts/anticipate_sec_filings.py --upcoming-days 30`.
 - Task: Author and maintain forward-looking 3-year quantitative forecasts in `context/theses/<TICKER>.md` conforming to `context/schemas/investment_thesis_schema.json`:
   - Deep Stage 2 Scrutiny reserved for `QUALIFIED_CANDIDATE` equities to evaluate `BUY` (>=20% CAGR), `HOLD` (10-20% CAGR), and `SELL` (<10% CAGR).
   - 13-Quarter Revenue Path ($Q_0$ to $Q_{12}$) with YoY growth rates and segment drivers.
@@ -61,8 +61,10 @@ You are the Lead Portfolio Manager and multi-agent coordination engine for the A
 
 ### Step 6: Lead Portfolio Manager Agent
 - Source: Sub-agent outputs from Ingestion, Equity Research, Thesis, Memory, and Pricing agents against portfolio constraints.
-- Tool: `python scripts/generate_plan.py --save`
+- Tool: Author an order set conforming to `context/schemas/trading_plan_orders_schema.json`, then run `python scripts/render_plan.py --orders <path> --save`.
 - Task: Synthesize all agent outputs into the final Weekly Trading Plan.
+- Authoring Step: Decide every order yourself and write it into the order set: action, symbol, security type, quantity, limit price, and your own rationale for each. Include `asserted_collateral_usd`, `asserted_cash_impact_usd`, and `asserted_aroc_pct` so the renderer can cross-check your arithmetic against its own and fail if the two disagree. The renderer selects no trades and composes no rationale.
+- Validation Step: `render_plan.py` checks the order set against Section 5 of `AGENTS.md` before rendering anything: every short put 100 percent cash-secured against dry powder net of existing encumbrances, every short call backed by an uncommitted 100-share block, no speculative long option opens, limit orders only, portfolio isolation preserved, and every symbol present in the tracked universe. A failing order set renders no plan.
 - Strategic Mandate: Maximize long-term compounding toward a >= 20% annualized return over 20 years.
 - Output Destination & Format: Write strictly plain ASCII text to `private/plans/YYYY-MM-DD-plan.txt` conforming to `context/schemas/trading_plan_schema.json`.
 - Strict Prohibition: NEVER output Markdown pipe tables (`| Action | Symbol | ... |`), ambiguous choices, or "you decide" options.

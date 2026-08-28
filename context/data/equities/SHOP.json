@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Shopify Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "SHOP",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides internet infrastructure for commerce, offering trusted tools to start, scale, market, and run a retail business of any size.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Shopify Inc. is the leading global commerce platform providing mission-critical internet infrastructure for merchants of all sizes to start, run, and grow retail businesses. Shopify's cloud platform unifies online storefronts, physical point-of-sale (POS) systems, social media commerce, and B2B wholesale, monetizing through recurring subscription tiers and Merchant Solutions (Shopify Payments take-rates, shipping, capital, and merchant apps).\n\nShopify holds a powerful economic moat built on high merchant switching costs, massive merchant volume scale (>10% of US e-commerce GMV), and a rich ecosystem of thousands of app developers and agency partners. Management is expanding enterprise brand adoption (Shopify Plus and Commerce Components), scaling global cross-border commerce (Shopify Markets), and integrating generative AI tools (Shopify Magic) to accelerate merchant success.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Shopify commands a powerful merchant e-commerce platform and ecosystem moat, powering over 10% of total US e-commerce sales. Over 2 million merchants\u2014from direct-to-consumer startups to enterprise brands\u2014rely on Shopify as their unified retail operating system across web, mobile, and physical POS. The Shopify App Store, integrated Shopify Payments, and Shop Pay one-click checkout create strong network effects and high merchant retention.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Dominant direct-to-consumer commerce platform, high switching costs for merchants, expanding take rate via Shop Pay and enterprise Shopify Plus.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Enterprise merchant wins, Shop Pay off-network transaction volume expansion, and free cash flow margin ramp >15%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Consumer discretionary spending collapse leading to merchant churn, or competitive pricing pressure from native social commerce."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.099940+00:00"
 }

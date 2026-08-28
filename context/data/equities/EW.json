@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Edwards Lifesciences Corporation's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "EW",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Transcatheter heart valves (TAVR), structural heart disease therapies, and critical care monitoring.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Edwards Lifesciences Corporation is the global leader in patient-focused medical innovations for structural heart disease and critical care monitoring. The company pioneered Transcatheter Aortic Valve Replacement (TAVR) with its flagship SAPIEN valve platform, allowing minimally invasive valve replacement without open-heart surgery, alongside innovative Transcatheter Mitral and Tricuspid Therapies (TMTT).\n\nEdwards maintains a wide economic moat supported by multi-decade clinical trial datasets, extensive physician training networks, and robust intellectual property portfolios across structural heart interventions. Management continues to expand clinical indications for TAVR into asymptomatic severe aortic stenosis, scale its tricuspid repair and replacement portfolio (EVOQUE and PASCAL), and reinvest over 17% of sales into R&D to sustain technology leadership.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Edwards Lifesciences possesses a wide economic moat anchored by decades of clinical trial data, unmatched physician training programs, and robust patent portfolios in transcatheter heart valve technology. Its proprietary SAPIEN valve platform is the global clinical standard for Transcatheter Aortic Valve Replacement (TAVR), supported by extensive long-term randomized clinical trials demonstrating superior safety and survival outcomes. High regulatory approval hurdles, steep surgeon learning curves, and continuous innovation in mitral and tricuspid valve repair (TMTT) protect Edwards' market leadership and gross margins above 76%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.968669+00:00"
 }

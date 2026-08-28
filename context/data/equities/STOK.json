@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Stoke Therapeutics, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "STOK",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Biotechnology company pioneering antisense oligonucleotides (TANGO platform) to restore protein levels in severe genetic diseases like Dravet syndrome.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Stoke Therapeutics, Inc. is a clinical-stage biotechnology company pioneering antisense oligonucleotide (ASO) medicines designed to upregulate protein expression to treat severe genetic diseases. Its proprietary TANGO (Targeted Augmentation of Nuclear Gene Output) platform targets non-productive RNA splicing to increase healthy protein production in haploinsufficient diseases, led by STK-001 for Dravet syndrome.\n\nStoke's competitive edge centers on its proprietary TANGO platform technology, which uniquely addresses genetic diseases caused by insufficient protein expression rather than toxic protein accumulation. Management is advancing STK-001 into pivotal registrational studies for Dravet syndrome, having demonstrated significant reductions in convulsive seizure frequency and cognitive improvements.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Stoke Therapeutics holds an innovative biotechnology platform moat in RNA-targeted genetic medicines. Its proprietary TANGO (Targeted Augmentation of Nuclear Gene Output) antisense oligonucleotide platform restores deficient protein levels to treat severe genetic diseases caused by haploinsufficiency. Clinical proof-of-concept for zorevunersen (STK-001) in Dravet syndrome establishes first-in-class therapeutic potential and strong patent exclusivity.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Proprietary TANGO RNA upregulation platform; offset by early-stage clinical risks, lack of commercial revenues, and ongoing equity financing needs.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Phase 3 registrational study initiation for zorevunersen in Dravet syndrome.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Safety issues in zorevunersen Phase 3 trials or regulatory design disagreements with the FDA."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.116627+00:00"
 }

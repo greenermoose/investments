@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Tyler Technologies, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "TYL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Integrated software and ERP management systems tailored for local, county, and state government entities.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Tyler Technologies, Inc. is the largest software company in the United States focused exclusively on providing end-to-end information management and ERP systems to local, county, and state government entities. Its core platform solutions span financial management, property appraisal and tax assessment, courts and justice administration, public safety and 911 dispatch, public works, and citizen engagement portals.\n\nTyler commands an exceptional economic moat built on high regulatory switching costs, deep local government workflow integration, and customer retention rates consistently above 98%. As municipal and state agencies transition from legacy on-premise mainframe infrastructure to Tyler Cloud (hosted on AWS), Tyler is accelerating recurring SaaS subscription revenue, expanding transaction convenience fees, and sustaining predictable multi-decade cash flow compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Tyler Technologies holds a wide economic moat driven by high regulatory switching costs, deep local government workflow integration, and municipal customer retention exceeding 98%. Local, county, and state public sector agencies rely on Tyler for mission-critical functions including property tax assessment, court administration, 911 dispatch, and public records management. Municipalities rarely replace functional core ERP and judicial software due to severe operational risk and specialized public-sector procurement barriers, providing Tyler with highly predictable, inflation-protected public software cash flows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.138315+00:00"
 }

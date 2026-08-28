@@ -121,5 +121,112 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Samsara Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "IOT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Provides the Connected Operations Cloud platform that aggregates IoT sensor telematics, computer vision AI, and workflow automation for commercial transportation fleets, logistics, and industrial physical infrastructure.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Samsara Inc. is the pioneer of the Connected Operations Cloud, an enterprise IoT software platform that enables businesses with physical operations (transportation, logistics, construction, field services, utilities) to harness Internet of Things data to improve safety, efficiency, and sustainability. Samsara provides cloud-connected telematics hardware, AI dashcams, and asset sensors tied to a unified SaaS software subscription.\n\nSamsara's moat is driven by high customer ROI (reducing vehicle accidents, insurance costs, and fuel burn), rapid module cross-selling, and large operational data network effects capturing billions of sensory data points weekly. Management is scaling rapidly across large enterprise fleets, expanding internationally in Europe and Latin America, and adding new operational AI workflows to optimize physical asset management.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Samsara commands a fast-growing software moat in Connected Operations Cloud infrastructure. Over 20,000 commercial fleet and industrial enterprises utilize Samsara's IoT hardware sensors and AI dashcams to automate fleet tracking, driver safety, compliance, and equipment maintenance. High integration into client dispatch and insurance risk underwriting creates high gross retention (>95%) and net retention exceeding 115%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Proprietary multi-tenant telematics cloud, mission-critical workflow integration, high switching costs with hardware-software lock-in, and net expansion rates exceeding 115%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "AI-driven proactive safety alert video intelligence rollout and international EMEA market acceleration.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Net revenue retention dropping below 105%, major hardware supply chain failure, or severe competitive pricing erosion from legacy telematics vendors."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.26,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": 0.015,
+      "conviction_score": 9.2,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Connected Operations AI Asset Intelligence & Worker Safety Tier",
+          "expected_revenue_impact_b": 0.08,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "AI camera detection and telematics workflow upsell across Fortune 500 transportation fleets.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "International EMEA & APAC Telematics Fleet Expansion",
+          "expected_revenue_impact_b": 0.12,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "European commercial fleet compliance rollout and global supply chain asset monitoring.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Autonomous Industrial Sensor & Supply Chain Logistics Suite",
+          "expected_revenue_impact_b": 0.16,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Facility equipment telematics and predictive maintenance software subscription scaling.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.014199+00:00"
 }

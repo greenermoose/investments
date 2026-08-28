@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Onto Innovation Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "ONTO",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Process control, automated wafer defect inspection, and advanced packaging 3D metrology systems.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Onto Innovation Inc. is a leading designer and manufacturer of advanced process control and metrology systems used by global semiconductor foundries, memory makers, and advanced packaging manufacturers. The company's systems provide automated wafer defect inspection, 3D optical metrology, lithography patterning, and yield management software critical for leading-edge chip fabrication.\n\nOnto Innovation occupies a critical chokepoint in heterogeneous semiconductor packaging, where multiple chiplets, high-bandwidth memory (HBM) stacks, and glass substrates require nanometer-scale alignment and defect inspection. With accelerating secular demand from generative AI accelerators and high-performance computing, Onto's Dragonfly and Echo inspection platforms command strong pricing power and high gross margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Onto Innovation commands a high-barrier technological moat in semiconductor process control, wafer defect inspection, and advanced packaging metrology. The company's Dragonfly and Echo platforms occupy an indispensable chokepoint in heterogeneous integration, high-bandwidth memory (HBM) stacking, and multi-die chiplet packaging, where nanometer-scale sub-surface defects must be detected to ensure multi-thousand-dollar AI processor yields. Deep co-development partnerships with leading logic and memory foundries and extensive optical metrology patents confer strong pricing power and high gross margins.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.068967+00:00"
 }

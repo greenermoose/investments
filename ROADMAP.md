@@ -145,7 +145,7 @@ gantt
   - Isolated sequential portfolio execution sections with account snapshots.
   - Numbered single-session Monday 9:30 AM ET limit orders with deterministic execution-time branching contingencies.
   - Friday automated option expiration and settlement expectations.
-  - Deterministic plan generator tool in [scripts/generate_plan.py](file:///c:/Users/Fred/github/investments/scripts/generate_plan.py) conforming to [context/schemas/trading_plan_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/trading_plan_schema.json).
+  - Deterministic order-set validator and plan renderer in [scripts/render_plan.py](file:///c:/Users/Fred/github/investments/scripts/render_plan.py), validating the agent-authored order set in [context/schemas/trading_plan_orders_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/trading_plan_orders_schema.json) against the strategy mandate and rendering to [context/schemas/trading_plan_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/trading_plan_schema.json). Superseded `generate_plan.py`, which selected trades and authored rationale.
 - [ ] **5.4 Live Snapshots Ingestion & Execution Trial:** Execute live weekly run using real user portfolio snapshots placed in `private/snapshots/`, generating validated Monday morning trading plans.
 - [ ] **5.5 Monday Limit Fill & Target Tracker:** Implement lightweight execution tracker in `private/plans/execution_tracker.md` to record:
   - Modeled limit price vs. actual Monday open fill price.

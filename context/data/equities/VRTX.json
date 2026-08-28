@@ -135,5 +135,78 @@
     },
     "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
     "narrative": "Vertex Pharmaceuticals Incorporated's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  },
+  "research": {
+    "symbol": "VRTX",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Discovers and develops transformative medicines for serious diseases including cystic fibrosis (Trikafta), sickle cell (CASGEVY), and acute pain (Suzetrigine).",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Vertex Pharmaceuticals Incorporated is a global biotechnology leader that transformed the treatment of cystic fibrosis (CF) through its life-changing CFTR modulator therapies (TRIKAFTA/KAFTRIO, SYMDEKO, ORKAMBI, KALYDECO). Vertex is expanding beyond CF into transformative medicines for sickle cell disease and beta-thalassemia (CASGEVY, co-developed with CRISPR Therapeutics), acute and neuropathic pain (suzetrigine non-opioid NaV1.8 inhibitor), and APOL1-mediated kidney disease.\n\nVertex holds a virtual global monopoly in cystic fibrosis disease treatment, supported by strong patent protection through the late 2030s and extraordinary patient adherence. Management is preparing for the commercial rollout of suzetrigine (a revolutionary non-opioid pain therapy) and next-generation vanzacaftor triple CF therapy, opening massive new multi-billion dollar commercial therapeutic markets.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Vertex Pharmaceuticals holds an economic monopoly moat in cystic fibrosis (CF) transmembrane conductance regulator (CFTR) modulator therapies. Its commercial medicines\u2014anchored by blockbuster TRIKAFTA/KAFTRIO\u2014treat the underlying genetic defect in approximately 90% of global CF patients. With patent protections extending into the late 2030s and a pipeline advancing into non-opioid pain therapeutics (suzetrigine) and cell therapies for Type 1 diabetes, Vertex generates high operating margins and dependable biopharmaceutical cash flow.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Cystic fibrosis monopoly (>90% market share), non-opioid acute/neuropathic pain franchise (Suzetrigine), $10B+ net cash balance sheet.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Suzetrigine FDA approval in moderate-to-severe acute pain and CASGEVY commercial ramp.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "FDA approval rejection or clinical safety issues in suzetrigine pain franchise."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.19,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.01,
+      "conviction_score": 9.1,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.151090+00:00"
 }

@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Eaton Corporation plc manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "ETN",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global intelligent power management company providing electrical distribution equipment, grid modernization systems, and aerospace components.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Eaton Corporation plc is a global intelligent power management company providing electrical components, systems, and industrial solutions that manage electrical, hydraulic, and mechanical power safely and efficiently. The company operates through Electrical Americas, Electrical Global, Aerospace, Vehicle, and eMobility segments, supplying switchgear, transformers, uninterruptible power supplies (UPS), busways, and power distribution units.\n\nEaton is positioned at the exact convergence of secular mega-trends: AI data center power infrastructure, utility grid modernization, industrial onshoring/electrification, and commercial building decarbonization. Management is deploying targeted growth capital to expand high-voltage electrical manufacturing capacity, driving sustained double-digit organic order growth and expanding operating margins across its global electrical operations.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Eaton holds a durable economic moat powered by high engineering switching costs, extensive regulatory safety certifications (UL, IEEE, NEC), and deep electrical distribution contractor networks. In mission-critical hyperscale data centers and utility substations, electrical switchgear and power management systems must operate flawlessly to prevent catastrophic power outages and equipment damage. Eaton's proprietary power architectures and integrated software controls create deep customer entrenchment, supporting pricing power and operating margins above 23%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 1.1,
+      "payout_ratio_pct": 35.0,
+      "annual_dividend_growth_pct": 10.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.968669+00:00"
 }

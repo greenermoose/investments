@@ -40,125 +40,66 @@ def load_short_seller_campaigns():
             return []
     return []
 
-def seed_initial_campaigns():
+REQUIRED_CAMPAIGN_FIELDS = [
+    "campaign_id",
+    "symbol",
+    "short_seller_firm",
+    "publication_date",
+    "report_title",
+    "report_url",
+    "primary_allegations",
+    "allegation_severity",
+    "status",
+]
+
+ALLEGATION_SEVERITIES = {
+    "CRITICAL_FRAUD",
+    "HIGH_GOVERNANCE_RISK",
+    "MODERATE_OVERVALUATION",
+    "LOW_CONCERN",
+}
+
+
+def validate_campaigns(campaigns):
+    """Structural validation against short_seller_campaign_schema.json.
+
+    Campaign records are research: an agent read the short seller report, judged
+    the severity of its allegations, and recorded the company rebuttal and the
+    thesis verdict. This function checks the shape of what was recorded. It does
+    not originate a campaign, and the removed seed_initial_campaigns() that used
+    to hardcode five of them no longer exists.
     """
-    Seed initial documented short seller campaigns across public equities to provide
-    rich adversarial research context for the agent team.
-    """
-    return [
-        {
-          "campaign_id": "SSC-2024-SMCI-HINDENBURG",
-          "symbol": "SMCI",
-          "company_name": "Super Micro Computer, Inc.",
-          "short_seller_firm": "Hindenburg Research",
-          "publication_date": "2024-08-27",
-          "report_title": "Super Micro Computer: Fresh Evidence of Accounting Manipulation, Sibling Self-Dealing and Sanctions Evasion",
-          "report_url": "https://hindenburgresearch.com/smci/",
-          "primary_allegations": [
-            "Undisclosed related-party transactions with CEO family entities Ablecom and Compuware",
-            "Improper revenue recognition and premature shipment booking",
-            "Rehiring of executives previously implicated in SEC accounting restatement"
-          ],
-          "allegation_severity": "CRITICAL_FRAUD",
-          "stock_price_before_report": 548.00,
-          "stock_price_day1_close": 443.50,
-          "day1_reaction_pct": -19.07,
-          "status": "REGULATORY_ACTION_CONFIRMED",
-          "company_rebuttal_summary": "Company delayed 10-K filing, appointed special board committee, and later auditor Ernst & Young resigned.",
-          "agent_thesis_verdict": "AVOID_LIST_CONFIRMED",
-          "thesis_action_rationale": "High forensic accounting risk and auditor resignation mandate strict Avoid status until audited financial restatements are filed."
-        },
-        {
-          "campaign_id": "SSC-2024-ENVX-SCORPION",
-          "symbol": "ENVX",
-          "company_name": "Enovix Corporation",
-          "short_seller_firm": "Scorpion Capital",
-          "publication_date": "2023-01-20",
-          "report_title": "A Toxic Silicon Mirage: Enovix's Manufacturing Impossibility and Battery Yield Collapse",
-          "report_url": "https://scorpioncapital.com/research",
-          "primary_allegations": [
-            "Exaggerated silicon battery energy density and unviable commercial yields",
-            "Delays in Fab-1 automated manufacturing line in Fremont",
-            "Excessive cash burn relative to commercialization timeline"
-          ],
-          "allegation_severity": "HIGH_GOVERNANCE_RISK",
-          "stock_price_before_report": 12.10,
-          "stock_price_day1_close": 7.15,
-          "day1_reaction_pct": -40.91,
-          "status": "SETTLED_PRICED_IN",
-          "company_rebuttal_summary": "Enovix restructured executive team, appointed TJ Rodgers as Executive Chairman, pivoted manufacturing to Fab-2 in Malaysia, and validated Route 1 high-volume samples.",
-          "agent_thesis_verdict": "MONITOR_RUNWAY_COVENANTS",
-          "thesis_action_rationale": "Commercial pivot to Malaysia Fab-2 derisked production, but quarterly cash burn and customer qualification milestones require close quarterly monitoring."
-        },
-        {
-          "campaign_id": "SSC-2023-SLDP-JCAPITAL",
-          "symbol": "SLDP",
-          "company_name": "Solid Power, Inc.",
-          "short_seller_firm": "J Capital Research",
-          "publication_date": "2023-04-12",
-          "report_title": "Solid Power: Solid State Science Project Running on Empty",
-          "report_url": "https://www.jcapitalresearch.com/reports",
-          "primary_allegations": [
-            "All-solid-state electrolyte degradation and low cycle life under real automotive conditions",
-            "Commercial automotive deployment timeline pushed beyond 2028",
-            "Over-reliance on joint development partners BMW and Ford"
-          ],
-          "allegation_severity": "MODERATE_OVERVALUATION",
-          "stock_price_before_report": 2.45,
-          "stock_price_day1_close": 2.18,
-          "day1_reaction_pct": -11.02,
-          "status": "SETTLED_PRICED_IN",
-          "company_rebuttal_summary": "Solid Power delivered A-sample cells to BMW for parallel testing, expanded Korean pilot facility, and maintained $350M+ liquid balance sheet runway.",
-          "agent_thesis_verdict": "MONITOR_RUNWAY_COVENANTS",
-          "thesis_action_rationale": "High cash balance provides >3 years runway, but long commercialization horizon caps allocation size."
-        },
-        {
-          "campaign_id": "SSC-2024-MSTR-KERRISDALE",
-          "symbol": "MSTR",
-          "company_name": "MicroStrategy Incorporated",
-          "short_seller_firm": "Kerrisdale Capital",
-          "publication_date": "2024-03-28",
-          "report_title": "Long Bitcoin, Short MicroStrategy: Unjustifiable 2.3x Net Asset Value Premium",
-          "report_url": "https://www.kerrisdalecap.com/blog/",
-          "primary_allegations": [
-            "MicroStrategy trading at an unsustainable 100%+ premium to underlying Bitcoin holdings",
-            "Core enterprise analytics software revenue stagnant and declining",
-            "Debt-financed Bitcoin accumulation creating extreme dilution risk if NAV premium compresses"
-          ],
-          "allegation_severity": "MODERATE_OVERVALUATION",
-          "stock_price_before_report": 170.50,
-          "stock_price_day1_close": 151.40,
-          "day1_reaction_pct": -11.20,
-          "status": "MONITORING",
-          "company_rebuttal_summary": "Management continued executing convertible bond offerings with 0% coupons and buying Bitcoin accretively on per-share BTC Yield basis.",
-          "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
-          "thesis_action_rationale": "Software revenue is secondary; MSTR acts as an active capital markets vehicle. However, valuation must be disciplined to avoid buying above peak NAV multiple bands."
-        },
-        {
-          "campaign_id": "SSC-2024-PDD-GRIZZLY",
-          "symbol": "PDD",
-          "company_name": "PDD Holdings Inc.",
-          "short_seller_firm": "Grizzly Research",
-          "publication_date": "2023-09-07",
-          "report_title": "We Believe PDD Is a Dying Fraud and Temu Is Cleverly Concealed Malware",
-          "report_url": "https://grizzlyreports.com/feed/",
-          "primary_allegations": [
-            "Temu mobile application allegedly incorporates unauthorized spyware and data exfiltration",
-            "Fabrication of domestic China GMV and merchant take-rates",
-            "Unreconciled cash balances in Chinese domestic subsidiaries"
-          ],
-          "allegation_severity": "HIGH_GOVERNANCE_RISK",
-          "stock_price_before_report": 98.40,
-          "stock_price_day1_close": 96.60,
-          "day1_reaction_pct": -1.83,
-          "status": "REFUTED_BY_COMPANY",
-          "company_rebuttal_summary": "Subsequent quarterly earnings demonstrated massive international revenue and operating profit growth; app security certifications updated.",
-          "agent_thesis_verdict": "THESIS_INTACT_BUY_THE_DIP",
-          "thesis_action_rationale": "Market price reacted minimally, and massive free cash flow conversion ($20B+ TTM) confirmed operating leverage."
-        }
-    ]
+    errors = []
+    seen = set()
+    for idx, campaign in enumerate(campaigns):
+        if not isinstance(campaign, dict):
+            errors.append(f"campaign[{idx}] is not an object")
+            continue
+        cid = campaign.get("campaign_id", f"<campaign {idx}>")
+        for field in REQUIRED_CAMPAIGN_FIELDS:
+            if not campaign.get(field):
+                errors.append(f"[{cid}] missing required field '{field}'")
+        if cid in seen:
+            errors.append(f"[{cid}] duplicate campaign_id")
+        seen.add(cid)
+        severity = campaign.get("allegation_severity")
+        if severity and severity not in ALLEGATION_SEVERITIES:
+            errors.append(f"[{cid}] allegation_severity '{severity}' is not recognized")
+        url = campaign.get("report_url", "")
+        if url and not str(url).startswith("http"):
+            errors.append(f"[{cid}] report_url '{url}' is not a resolvable locator")
+        allegations = campaign.get("primary_allegations")
+        if allegations is not None and not isinstance(allegations, list):
+            errors.append(f"[{cid}] primary_allegations must be an array")
+    return errors
+
 
 def save_campaigns(campaigns):
+    errors = validate_campaigns(campaigns)
+    if errors:
+        raise ValueError(
+            "Refusing to write invalid short seller campaigns:\n  " + "\n  ".join(errors))
+
     dirs = get_base_dirs()
     output_doc = {
         "schema_version": "1.0",
@@ -181,20 +122,28 @@ def main():
     parser.add_argument("--severity", type=str, choices=["CRITICAL_FRAUD", "HIGH_GOVERNANCE_RISK", "MODERATE_OVERVALUATION", "LOW_CONCERN"])
     parser.add_argument("--list-firms", action="store_true", help="List all 20 influential short seller firms")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
-    parser.add_argument("--seed", action="store_true", help="Seed/reset documented short seller campaigns")
+    parser.add_argument("--audit", action="store_true", help="Validate recorded campaigns against the campaign schema")
     args = parser.parse_args()
 
     short_sellers = load_short_sellers_directory()
     campaigns = load_short_seller_campaigns()
 
-    if not campaigns or args.seed:
-        campaigns = seed_initial_campaigns()
-        save_campaigns(campaigns)
+    if args.audit:
+        errors = validate_campaigns(campaigns)
+        print(f"Validating {len(campaigns)} recorded short seller campaign(s)...")
+        if errors:
+            for err in errors:
+                print(f"  FAIL: {err}")
+            print(f"\n{len(errors)} validation error(s).")
+            return 1
+        print("All recorded campaigns conform to "
+              "context/schemas/short_seller_campaign_schema.json.")
+        return 0
 
     if args.list_firms:
         if args.json:
             print(json.dumps(short_sellers, indent=2))
-            return
+            return 0
         print("================================================================================")
         print(f"DIRECTORY OF INFLUENTIAL ACTIVIST SHORT SELLERS ({len(short_sellers)} FIRMS)")
         print("================================================================================")
@@ -203,7 +152,7 @@ def main():
         for f in short_sellers:
             print(f"{f.get('rank', 0):<5} {f.get('firm_name', ''):<32} {f.get('founder_or_key_figures', ''):<25} {f.get('market_impact_rating', ''):<10} {f.get('estimated_avg_day1_drop_pct', 0.0):.1f}%")
         print("================================================================================")
-        return
+        return 0
 
     if args.symbol:
         sym = args.symbol.upper()
@@ -232,7 +181,7 @@ def main():
             q = s.get("search_query_template", "").replace("{SYMBOL}", sym)
             print(f"  [{s.get('firm_name')}]: {q}")
         print("================================================================================")
-        return
+        return 0
 
     # Filtered list
     display_campaigns = campaigns
@@ -243,7 +192,7 @@ def main():
 
     if args.json:
         print(json.dumps(display_campaigns, indent=2))
-        return
+        return 0
 
     print("================================================================================")
     print(f"TRACKED ACTIVIST SHORT SELLER CAMPAIGNS ({len(display_campaigns)} Records)")
@@ -255,6 +204,8 @@ def main():
         print(f"{c.get('symbol', ''):<7} {c.get('short_seller_firm', '')[:23]:<24} {c.get('publication_date', ''):<12} {day1_str:<8} {c.get('allegation_severity', ''):<22} {c.get('status', '')}")
     print("================================================================================")
     print("Execute 'python scripts/track_short_sellers.py --symbol <TICKER>' for deep report breakdown.")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

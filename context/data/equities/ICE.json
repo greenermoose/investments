@@ -128,5 +128,37 @@
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Intercontinental Exchange, Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  },
+  "research": {
+    "symbol": "ICE",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Operator of global regulated exchanges (NYSE), energy markets, financial data networks, and mortgage technology.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Intercontinental Exchange, Inc. (ICE) is a premier global operator of regulated financial exchanges, clearing houses, and market data networks, operating across three core segments: Exchanges (including the New York Stock Exchange / NYSE, global energy contracts, and interest rate derivatives), Fixed Income & Data Services (pricing, indices, and analytics), and Mortgage Technology (end-to-end digital mortgage origination and servicing platforms).\n\nICE commands an entrenched competitive advantage through mission-critical financial market infrastructure, exclusive proprietary energy benchmarks (Brent crude), and extensive recurring data feeds. Its strategic expansion into digital mortgage technology (Encompass and Black Knight) establishes a digitized end-to-end workflow for US residential lending. Management consistently delivers operating margin expansion and strong free cash flow generation.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Intercontinental Exchange commands an entrenched competitive advantage through mission-critical financial market infrastructure, exclusive proprietary energy benchmarks (Brent crude), and extensive recurring data feeds. Its ownership of the New York Stock Exchange (NYSE), exclusive clearing venues, and end-to-end digital mortgage origination networks (Encompass and Black Knight) creates high customer switching costs across global capital markets and US residential mortgage workflows. High recurring subscription revenues and high operating margins drive predictable cash compounding.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.999680+00:00"
 }

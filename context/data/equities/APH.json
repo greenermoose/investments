@@ -136,5 +136,37 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Amphenol Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "APH",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs and manufactures electrical, electronic, and fiber optic connectors, specialty interconnect systems, and coaxial cables across diversified end markets.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Amphenol Corporation is one of the world's largest designers and manufacturers of electrical, electronic, and fiber optic connectors, coaxial and flat-ribbon cables, interconnect systems, and specialized sensors. The company serves diverse end markets including IT and data communications (AI data center server interconnects), automotive electronics, commercial aerospace, defense, industrial automation, and broadband communications.\n\nAmphenol operates an agile, decentralized entrepreneurial business model comprising hundreds of operating units that rapidly innovate customized interconnect products for global OEM clients. Management is heavily levered to the surging demand for high-speed copper and optical interconnect solutions required to connect GPU clusters in AI computing architectures, while compounding capital through disciplined, bolt-on acquisitions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Amphenol's economic moat stems from deep engineering customer co-design, high customization, and substantial switching costs across complex electronics. High-speed interconnects in AI servers and aerospace systems represent a low percentage of total system cost but are utterly critical to signal integrity, thermal performance, and system reliability. Amphenol's decentralized engineering culture enables rapid time-to-market and high customer intimacy, generating consistent free cash flow and sustaining return on invested capital above 20%.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.888704+00:00"
 }

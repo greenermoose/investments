@@ -135,5 +135,137 @@
     },
     "equity_cash_flow_diversion_risk": "Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.",
     "narrative": "Microsoft's off-balance sheet footprint is entirely forward-looking growth capital (cloud datacenters, GPU clusters, clean power) with zero dead-weight legacy worker or environmental encumbrances."
-  }
+  },
+  "research": {
+    "symbol": "MSFT",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global technology leader providing enterprise cloud infrastructure (Azure), productivity software (Microsoft 365, Teams), LinkedIn, and AI copilot services.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Microsoft Corporation is a global technology leader operating across three core pillars: Productivity & Business Processes (Microsoft 365, Office, Teams, LinkedIn, Dynamics 365), Intelligent Cloud (Microsoft Azure cloud infrastructure, SQL Server, Windows Server), and More Personal Computing (Windows OEM, Xbox gaming content and consoles via Activision Blizzard, Surface hardware).\n\nMicrosoft commands one of the widest economic moats in corporate history, underpinned by massive enterprise software lock-in, global mission-critical cloud infrastructure scale, and deep strategic partnership with OpenAI. Management is leading the enterprise generative AI revolution through Microsoft Copilot integrations across Office and software workflows, while Azure continues to capture high-margin enterprise cloud market share.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Microsoft commands one of the widest economic moats in corporate history, underpinned by massive enterprise software switching costs, global cloud infrastructure scale (Azure), and the ubiquitous Windows and Office 365 commercial ecosystems. Millions of enterprises are structurally dependent on Microsoft's active directory, security, and developer tooling (GitHub, Visual Studio). Its strategic partnership with OpenAI and deployment of Copilot AI assistants across enterprise workflows cement its enterprise software dominance.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "LOW",
+      "total_estimated_off_balance_sheet_encumbrance_usd_b": 65.5,
+      "pension_and_opeb": {
+        "funded_status_usd_b": 0.0,
+        "pbo_gross_usd_b": 0.0,
+        "plan_assets_usd_b": 0.0,
+        "annual_cash_contribution_usd_b": 0.0,
+        "underfunding_risk_level": "NONE",
+        "opeb_unfunded_usd_b": 0.0,
+        "narrative": "Microsoft maintains zero defined benefit pension plans or retiree healthcare OPEB obligations; all employee retirement plans operate under defined contribution matching."
+      },
+      "environmental_and_remediation": {
+        "accrued_environmental_reserve_usd_b": 0.0,
+        "estimated_unreserved_exposure_usd_b": 0.0,
+        "superfund_and_pfas_sites_count": 0,
+        "annual_remediation_cash_drain_usd_b": 0.0,
+        "risk_level": "MINIMAL",
+        "narrative": "Zero industrial contamination liabilities. Environmental commitments consist of voluntary long-term carbon removal purchases and nuclear energy power purchase agreements (Constellation Energy Three Mile Island PPA)."
+      },
+      "litigation_and_toxic_torts": {
+        "active_mass_torts_or_mdl": "FTC cloud software licensing review, European Commission Teams unbundling monitoring, and routine intellectual property/patent litigation.",
+        "recent_settlements_scheduled_usd_b": 0.5,
+        "annual_legal_settlement_cash_drain_usd_b": 0.1,
+        "catastrophic_loss_risk_level": "LOW",
+        "narrative": "Legal and regulatory risks are minor relative to scale, with no mass tort or systemic liability exposure."
+      },
+      "purchase_commitments_and_guarantees": {
+        "unconditional_purchase_obligations_usd_b": 65.0,
+        "take_or_pay_commitments_usd_b": 28.0,
+        "jv_and_vie_debt_guarantees_usd_b": 0.0,
+        "narrative": "Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access agreements, Nvidia GPU cluster procurement, and green power purchase agreements total $65.0B over 5-15 years."
+      },
+      "equity_cash_flow_diversion_risk": "Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.",
+      "narrative": "Microsoft's off-balance sheet footprint is entirely forward-looking growth capital (cloud datacenters, GPU clusters, clean power) with zero dead-weight legacy worker or environmental encumbrances.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/build_off_balance_sheet_data.py BESPOKE_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.13,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 9.4,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 0.72,
+      "payout_ratio_pct": 25.0,
+      "annual_dividend_growth_pct": 10.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "catalyst_timeline": {
+      "items": [
+        {
+          "target_window": "2026-Q4",
+          "product_or_service_name": "Microsoft 365 Copilot Enterprise Tier 2 Monetization",
+          "expected_revenue_impact_b": 2.8,
+          "revenue_quarter_inflection": "2026-Q4",
+          "expected_outcome": "Higher seat penetration across Fortune 500 corporate enterprise clients.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q2",
+          "product_or_service_name": "Azure Maia & Cobalt Custom AI Accelerators",
+          "expected_revenue_impact_b": 3.4,
+          "revenue_quarter_inflection": "2027-Q2",
+          "expected_outcome": "First-party silicon deployment lowering compute unit cost and improving cloud gross margins.",
+          "status": "PENDING"
+        },
+        {
+          "target_window": "2027-Q4",
+          "product_or_service_name": "Autonomous Agentic AI Workflow Platform",
+          "expected_revenue_impact_b": 4.1,
+          "revenue_quarter_inflection": "2027-Q4",
+          "expected_outcome": "Consumption-based agentic orchestration in Azure enterprise cloud subscriptions.",
+          "status": "PENDING"
+        }
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py CURATED_CATALYSTS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.057658+00:00"
 }

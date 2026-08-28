@@ -135,5 +135,66 @@
     },
     "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
     "narrative": "Marvell Technology, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  },
+  "research": {
+    "symbol": "MRVL",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Designs and develops analog, mixed-signal, and digital processing integrated circuits for cloud data centers, carrier infrastructure, and automotive.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Marvell Technology, Inc. is a leading semiconductor designer specializing in data infrastructure semiconductor solutions, providing high-speed electro-optics (PAM4 DSPs), custom cloud ASIC accelerators, enterprise networking switches, storage controllers, and automotive Ethernet PHYs. Marvell is a key supplier of custom computing and optical interconnect silicon to cloud hyperscalers and data center operators.\n\nMarvell benefits from deep custom ASIC co-design partnerships with cloud hyperscalers, proprietary high-speed networking IP, and leadership in optical interconnect DSPs essential for linking AI compute clusters. Management is aggressively targeting the AI data center buildout, scaling custom compute accelerator production and next-generation 800G/1.6T optical DSP shipments.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Marvell Technology commands a custom silicon and high-speed data infrastructure semiconductor moat. Marvell designs custom cloud AI ASICs (partnering with major cloud hyperscalers), electro-optics PAM4 DSPs for optical transceivers, and PCIe/CXL retimers. As generative AI clusters require extreme interconnect bandwidth and low latency, Marvell's optical and custom compute silicon positions it as a critical enabler of next-generation data center scaling.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Custom AI ASIC compute and electro-optics interconnect leadership (PAM4 optical DSPs), high content in tier-1 cloud hyperscaler clusters.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Custom AI accelerator production ramp and 800G/1.6T optical interconnect demand surge.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Loss of custom ASIC silicon sockets to Broadcom or in-house hyperscaler designs."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.054831+00:00"
 }

@@ -135,5 +135,132 @@
     },
     "equity_cash_flow_diversion_risk": "Standard energy major encumbrances: AROs and pipeline commitments are integral to upstream operating models and fully covered by upstream cash generation above $60/bbl oil.",
     "narrative": "Chevron's primary off-balance-sheet commitments consist of Asset Retirement Obligations (AROs) and long-term midstream take-or-pay agreements typical for supermajor energy operators."
-  }
+  },
+  "research": {
+    "symbol": "CVX",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Integrated energy company engaged in petroleum exploration, production, refining, transportation, chemicals, and power generation worldwide.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json description during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Chevron Corporation is one of the world's leading integrated energy supermajors, with global operations spanning upstream oil and natural gas exploration and production (Permian Basin, Gulf of Mexico, Kazakhstan, Australia LNG) and downstream refining, petrochemicals, and lubricant manufacturing. The company also invests in lower-carbon renewable fuels, hydrogen, and carbon capture initiatives.\n\nChevron's competitive strength is supported by low-cost, short-cycle asset positions in the Permian Basin, high-value global LNG projects, and a fortress balance sheet with industry-low debt leverage. Management maintains strict capital allocation discipline, targeting high return on capital employed (ROCE), regular dividend growth, and counter-cyclical share repurchases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Chevron Corporation commands an integrated energy scale moat supported by low-cost, short-cycle asset positions in the Permian Basin, world-class LNG export facilities (Gorgon and Wheatstone in Australia), and deepwater offshore developments. Its fortress balance sheet and integrated downstream refining and chemicals operations provide cash flow stability across volatile commodity cycles, supporting disciplined capital expenditure, low cash breakevens ($35-40/bbl Brent), and 37+ years of consecutive annual dividend increases.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "moat_summary": {
+      "text": "Premier Permian Basin low-cost acreage, pristine balance sheet (net debt ratio <15%), disciplined capital expenditure framework, and 35+ year dividend growth track record.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json moat during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "latest_catalyst": {
+      "text": "Permian Basin production reaching 1M boe/d and closure of Hess acquisition.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json latest_catalyst during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "invalidation_criteria": {
+      "items": [
+        "Prolonged oil prices below $50/bbl causing FCF dividend deficit or major execution failures on mega-projects (Tengiz / Hess integration)."
+      ],
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/data/company_meta.json invalidation_criteria during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "MODERATE",
+      "total_estimated_off_balance_sheet_encumbrance_usd_b": 41.1,
+      "pension_and_opeb": {
+        "funded_status_usd_b": -0.7,
+        "pbo_gross_usd_b": 12.5,
+        "plan_assets_usd_b": 11.8,
+        "annual_cash_contribution_usd_b": 0.25,
+        "underfunding_risk_level": "MODERATE",
+        "opeb_unfunded_usd_b": 2.4,
+        "narrative": "Chevron sponsors global defined benefit plans with $12.5B PBO against $11.8B plan assets, with $2.4B in unfunded retiree healthcare."
+      },
+      "environmental_and_remediation": {
+        "accrued_environmental_reserve_usd_b": 14.8,
+        "estimated_unreserved_exposure_usd_b": 3.5,
+        "superfund_and_pfas_sites_count": 35,
+        "annual_remediation_cash_drain_usd_b": 1.2,
+        "risk_level": "MODERATE",
+        "narrative": "Extensive Asset Retirement Obligations (AROs) for offshore drilling platform decommissioning, subsea well plugging, and refinery environmental remediation totaling $14.8B on balance sheet with annual decommissioning cash drain of ~$1.2B."
+      },
+      "litigation_and_toxic_torts": {
+        "active_mass_torts_or_mdl": "Municipal climate change torts, historical international concession arbitrations (Ecuador judgment enforcement challenges), and refinery emission compliance.",
+        "recent_settlements_scheduled_usd_b": 0.9,
+        "annual_legal_settlement_cash_drain_usd_b": 0.15,
+        "catastrophic_loss_risk_level": "MODERATE",
+        "narrative": "Municipal climate change lawsuits are routinely dismissed or moved to federal courts; international arbitration reserves are manageable."
+      },
+      "purchase_commitments_and_guarantees": {
+        "unconditional_purchase_obligations_usd_b": 22.0,
+        "take_or_pay_commitments_usd_b": 12.5,
+        "jv_and_vie_debt_guarantees_usd_b": 1.8,
+        "narrative": "Long-term LNG transport vessel charters, pipeline throughput take-or-pay agreements (TCO project), and joint venture refining guarantees total $22.0B."
+      },
+      "equity_cash_flow_diversion_risk": "Standard energy major encumbrances: AROs and pipeline commitments are integral to upstream operating models and fully covered by upstream cash generation above $60/bbl oil.",
+      "narrative": "Chevron's primary off-balance-sheet commitments consist of Asset Retirement Obligations (AROs) and long-term midstream take-or-pay agreements typical for supermajor energy operators.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/build_off_balance_sheet_data.py BESPOKE_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.03,
+      "target_ps_multiple_multiplier": 0.9,
+      "annual_share_dilution_rate": -0.015,
+      "conviction_score": 7.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 4.1,
+      "payout_ratio_pct": 55.0,
+      "annual_dividend_growth_pct": 8.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.950566+00:00"
 }

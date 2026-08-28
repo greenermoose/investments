@@ -136,5 +136,61 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Union Pacific Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "UNP",
+    "schema_version": "1.0",
+    "description": {
+      "text": "North America's premier transcontinental freight railroad operating over 32,000 route miles connecting 23 western US states, Pacific ports, and Mexican gateways.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Union Pacific Corporation operates the largest transcontinental freight railroad franchise in North America through its primary operating subsidiary, Union Pacific Railroad Company. The company's rail network spans over 32,000 route miles across 23 states in the western two-thirds of the United States, connecting Pacific Coast ports with Midwest and Gulf Coast gateways and the Mexican border.\n\nUnion Pacific transports essential bulk commodities (grain, coal, fertilizer), industrial products (chemicals, metals, lumber), and premium intermodal freight (consumer electronics, automotive parts). Management focuses on precision scheduled railroading (PSR) operating principles, driving network velocity, improving locomotive fuel efficiency, and generating strong free cash flow and shareholder returns.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Union Pacific operates a classic natural monopoly / duopoly moat with virtually insurmountable barriers to entry. Replicating a 32,000-mile contiguous rail network with exclusive rights-of-way, heavy tracks, rail yards, and ocean port access is economically and geographically impossible. Railroads offer an irreplaceable four-to-one fuel efficiency advantage over long-haul trucking for bulk freight, providing Union Pacific with durable pricing power, high operating margins, and defensive cash flows.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.05,
+      "target_ps_multiple_multiplier": 0.95,
+      "annual_share_dilution_rate": -0.02,
+      "conviction_score": 8.5,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 2.1,
+      "payout_ratio_pct": 45.0,
+      "annual_dividend_growth_pct": 7.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.140321+00:00"
 }

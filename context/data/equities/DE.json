@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Deere & Company manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "DE",
+    "schema_version": "1.0",
+    "description": {
+      "text": "World's leading manufacturer of agricultural, construction, and forestry equipment, precision ag technologies, and diesel power engines.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Deere & Company is the world's leading manufacturer of agricultural, construction, and forestry machinery, operating through four segments: Production & Precision Agriculture (large tractors, combines, precision planters), Small Agriculture & Turf, Construction & Forestry, and John Deere Financial.\n\nJohn Deere is revolutionizing farming through precision agriculture and autonomous machinery, integrating computer vision, AI-driven weed targeting (See & Spray), and satellite guidance into its green equipment. Management monetizes through initial equipment sales, high-margin aftermarket parts, proprietary software subscriptions (John Deere Operations Center), and retail financing, capturing substantial farmer efficiency gains.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Deere & Company commands a formidable economic moat protected by an unmatched global independent dealer network, iconic brand equity, and proprietary precision agricultural software. Farmers rely on local Deere dealers for rapid same-day field repairs during critical, time-sensitive planting and harvest windows. Furthermore, the John Deere Operations Center manages proprietary farm agronomic data across millions of acres, creating immense software and hardware switching costs that competitors cannot match.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "dividend_profile": {
+      "status": "PAYING",
+      "dividend_yield_pct": 1.5,
+      "payout_ratio_pct": 25.0,
+      "annual_dividend_growth_pct": 8.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py DIVIDEND_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.953995+00:00"
 }

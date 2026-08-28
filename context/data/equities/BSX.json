@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Boston Scientific Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "BSX",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global medical technology manufacturer developing minimally invasive devices for interventional cardiology, electrophysiology (FARAPULSE), and endoscopy.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Boston Scientific Corporation is a leading global medical device manufacturer developing and marketing minimally invasive devices for cardiovascular disease, structural heart disorders, cardiac rhythm management, endoscopy, neuromodulation, and urology/pelvic health. Its high-growth commercial portfolio includes WATCHMAN left atrial appendage closure devices, FARAPULSE pulsed field ablation (PFA) systems, and ACURATE neo2 transcatheter aortic valves.\n\nBoston Scientific operates at the forefront of medical technology innovation, focusing on category leadership in high-growth clinical adjacencies. Management is capitalizing on the secular clinical adoption of pulsed field ablation for atrial fibrillation treatment, driving double-digit organic revenue growth, and compounding operating margins through manufacturing scale and strategic bolt-on acquisitions.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Boston Scientific's economic moat is anchored by extensive clinical IP, stringent regulatory clinical trial barriers (FDA PMA approvals), and high physician training switching costs. Electrophysiologists and interventional cardiologists undergo specialized clinical training on Boston Scientific's proprietary catheter systems and delivery consoles, creating high procedural comfort and hospital protocol entrenchment. The revolutionary clinical efficacy of FARAPULSE PFA provides multi-year competitive insulation against legacy thermal ablation technologies.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.12,
+      "target_ps_multiple_multiplier": 0.92,
+      "annual_share_dilution_rate": 0.0,
+      "conviction_score": 8.6,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:31.917593+00:00"
 }

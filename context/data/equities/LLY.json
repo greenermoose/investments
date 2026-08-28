@@ -136,5 +136,49 @@
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Eli Lilly and Company manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  },
+  "research": {
+    "symbol": "LLY",
+    "schema_version": "1.0",
+    "description": {
+      "text": "Global pharmaceutical leader discovering and commercializing breakthrough therapies across cardiometabolic health (Mounjaro, Zepbound), oncology, and immunology.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/update_company_descriptions.py DESCRIPTIONS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "business_profile": {
+      "text": "Eli Lilly and Company is a leading global pharmaceutical enterprise discovering, developing, and commercializing innovative human therapeutics across diabetes, obesity, oncology, immunology, and neuroscience. The company's commercial portfolio is anchored by blockbuster incretin medicines Mounjaro (tirzepatide for type 2 diabetes) and Zepbound (tirzepatide for chronic weight management), alongside established oncology therapies (Verzenio), immunology treatments (Taltz, Omvoh), and neuroscience products (Kisunla for early symptomatic Alzheimer's disease).\n\nEli Lilly commands a world-class metabolic disease franchise with substantial patent runway, proprietary peptide manufacturing scale, and extensive clinical development pipelines. Management is aggressively expanding global active pharmaceutical ingredient (API) and injectable device manufacturing capacity, advancing next-generation oral GLP-1 agonists (orforglipron) and triple GIP/GLP-1/glucagon agonists (retatrutide), and allocating capital to high-yield biopharmaceutical research and shareholder dividends.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_business_profiles.py PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "competitive_moat_analysis": {
+      "text": "Eli Lilly possesses a wide biopharmaceutical economic moat protected by formidable intellectual property, massive manufacturing capital requirements for complex peptide synthesis, and unmatched commercial execution in cardiometabolic medicine. Clinical efficacy data for tirzepatide (Mounjaro/Zepbound) demonstrates superior weight loss and glycemic control compared to earlier-generation GLP-1 therapies, creating immense physician preference and payer formulary integration. The company's deep clinical pipeline and extensive biologic production scale provide durable competitive insulation against generic erosion.",
+      "provenance": {
+        "authored_by": "Equity Research Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/curate_competitive_moats.py COMPETITIVE_MOATS during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    },
+    "valuation_parameters": {
+      "annual_revenue_growth": 0.19,
+      "target_ps_multiple_multiplier": 0.82,
+      "annual_share_dilution_rate": 0.0,
+      "conviction_score": 9.0,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "runtime_context_signature": "Migrated 2026-08-28 from scripts/valuation_model.py COMPANY_PROFILES during the deterministic/generative separation refactor. Authored by an agent in an earlier session; original authoring timestamp was not recorded at the pre-refactor source location."
+      }
+    }
+  },
+  "research_last_updated": "2026-08-28T14:10:32.023268+00:00"
 }

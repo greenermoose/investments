@@ -78,6 +78,14 @@ def format_price(price):
     return f"${price:,.4f}" if price < 1.0 else f"${price:,.2f}"
 
 
+def format_optional_money(value):
+    return "UNKNOWN" if value is None else f"${float(value):,.2f}"
+
+
+def format_optional_percent(value):
+    return "UNKNOWN" if value is None else f"{float(value):.1f}%"
+
+
 def load_universe_symbols():
     for path in (HTTP_DATA_DIR / "universe.json", CONTEXT_DATA_DIR / "universe.json"):
         if not path.exists():
@@ -222,7 +230,14 @@ def validate_orders(document, accounts, universe_symbols):
 
         # Portfolio isolation: each account's collateral is tracked on its own.
         reserved_cash, shares_committed, unparsed = existing_encumbrances(account)
-        available_cash = float(account.get("total_dry_powder", 0.0)) - reserved_cash
+        verified_dry_powder = account.get("total_dry_powder")
+        collateral_is_complete = verified_dry_powder is not None
+        verified_cash_floor = (
+            float(verified_dry_powder)
+            if collateral_is_complete
+            else float(account.get("settled_cash") or 0.0)
+        )
+        available_cash = verified_cash_floor - reserved_cash
         shares_held = {
             str(p.get("symbol", "")).upper(): float(p.get("shares", 0) or 0)
             for p in account.get("positions", [])
@@ -234,9 +249,10 @@ def validate_orders(document, accounts, universe_symbols):
                 "netted out, so this plan cannot be checked for 100 percent collateralization."
             )
         if available_cash < 0:
+            source_label = "dry powder" if collateral_is_complete else "verified settled cash"
             errors.append(
                 f"[{name}] open short puts reserve ${reserved_cash:,.2f} against "
-                f"${account.get('total_dry_powder', 0.0):,.2f} of dry powder, leaving the account "
+                f"${verified_cash_floor:,.2f} of {source_label}, leaving the account "
                 "under-collateralized before this plan's orders are considered."
             )
 
@@ -286,10 +302,16 @@ def validate_orders(document, accounts, universe_symbols):
                     if order.get("option_type") == "PUT":
                         required = compute_collateral(order)
                         if required > available_cash + 0.005:
+                            unknown_note = (
+                                " SGOV market value is unknown, so only verified settled cash "
+                                "can be counted."
+                                if not collateral_is_complete else ""
+                            )
                             errors.append(
                                 f"{label}: short put requires ${required:,.2f} of cash collateral "
                                 f"but only ${available_cash:,.2f} of dry powder remains in this "
                                 "portfolio. Every put sold must be 100 percent cash-secured."
+                                f"{unknown_note}"
                             )
                         available_cash -= required
                     elif order.get("option_type") == "CALL":
@@ -329,9 +351,15 @@ def validate_orders(document, accounts, universe_symbols):
                 if action == "BUY":
                     cost = -compute_cash_impact(order)
                     if cost > available_cash + 0.005:
+                        unknown_note = (
+                            " SGOV market value is unknown, so only verified settled cash "
+                            "can be counted."
+                            if not collateral_is_complete else ""
+                        )
                         errors.append(
                             f"{label}: purchase costs ${cost:,.2f} but only "
                             f"${available_cash:,.2f} of dry powder remains in this portfolio."
+                            f"{unknown_note}"
                         )
                     available_cash -= cost
                 if action == "SELL TO CLOSE":
@@ -516,12 +544,12 @@ def render_plan(document, accounts):
             "=" * 80,
             "",
             "ACCOUNT SNAPSHOT:",
-            f"- Total Account Value: ${account.get('total_account_value', 0.0):,.2f}",
-            f"- Settled Cash:       ${account.get('settled_cash', 0.0):,.2f}",
-            f"- SGOV (Cash Proxy):  {account.get('sgov_shares', 0)} shares "
-            f"(${account.get('sgov_market_value', 0.0):,.2f})",
-            f"- Total Dry Powder:   ${account.get('total_dry_powder', 0.0):,.2f} "
-            f"({account.get('dry_powder_percentage', 0.0)}% of account)",
+            f"- Total Account Value: {format_optional_money(account.get('total_account_value'))}",
+            f"- Settled Cash:       {format_optional_money(account.get('settled_cash'))}",
+            f"- SGOV (Cash Proxy):  {format_share_count(float(account.get('sgov_shares', 0) or 0))} shares "
+            f"({format_optional_money(account.get('sgov_market_value'))})",
+            f"- Total Dry Powder:   {format_optional_money(account.get('total_dry_powder'))} "
+            f"({format_optional_percent(account.get('dry_powder_percentage'))} of account)",
             f"- Active Holdings:    {account.get('active_positions_count', 0)} equities "
             f"(Target: ~{POSITION_COUNT_SOFT_TARGET} or fewer)",
             "",

@@ -317,7 +317,27 @@
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
         "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; authored during the deterministic/generative separation refactor to exercise the research store end to end. Model parametric knowledge only, no external tool verification in this session."
       }
+    },
+    "off_balance_sheet_and_contingent_liabilities": {
+      "overall_liability_overhang_rating": "ELEVATED",
+      "total_estimated_off_balance_sheet_encumbrance_usd_b": 373.207,
+      "purchase_commitments_and_guarantees": {
+        "supply_and_capacity_commitments_usd_b": 279.0,
+        "cloud_service_agreements_usd_b": 29.0,
+        "data_center_leases_not_commenced_usd_b": 25.0,
+        "equity_investment_commitments_usd_b": 25.0,
+        "capital_expenditure_commitments_usd_b": 8.0,
+        "commenced_operating_lease_obligations_usd_b": 7.207
+      },
+      "equity_cash_flow_diversion_risk": "Elevated in absolute dollars but moderated by exceptional operating cash flow; a demand slowdown could still strand prepaid or non-cancellable AI supply capacity.",
+      "narrative": "NVIDIA's July 2026 Form 10-Q reports $366 billion of future supply, capacity, cloud, uncommenced data-center lease, equity-investment, and capital-expenditure commitments, plus $7.207 billion of commenced operating lease obligations. The overhang is rated elevated because commitments extend ahead of customer demand and include $279 billion for supply and capacity, although the company's cash generation and net-cash balance materially reduce near-term solvency risk.",
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-28",
+        "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+        "source_locator": "SEC Form 10-Q filed 2026-08-26, accession 0001045810-26-000075, https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+      }
     }
   },
-  "research_last_updated": "2026-08-28T14:26:30.071734+00:00"
+  "research_last_updated": "2026-08-28T17:47:15.279998+00:00"
 }

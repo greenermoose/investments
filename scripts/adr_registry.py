@@ -19,6 +19,9 @@ ADR_RATIOS: Dict[str, float] = {
     "AZN": 2.0,    # AstraZeneca (1 ADS = 2 ordinary shares)
     "TM": 10.0,    # Toyota Motor (1 ADR = 10 common shares)
     "HDB": 3.0,    # HDFC Bank (1 ADR = 3 equity shares)
+    "ENIC": 50.0,  # Enel Chile (1 ADS = 50 common shares)
+    "HSBC": 5.0,   # HSBC Holdings (1 ADS = 5 ordinary shares)
+    "OMAB": 8.0,   # OMA (1 ADS = 8 Series B shares)
     
     # 1:1 ADRs / Direct listings (Explicit for validation clarity)
     "ASML": 1.0,   # ASML Holding (1 NY Share = 1 Euronext ordinary share)
@@ -63,6 +66,8 @@ FX_RATES_TO_USD: Dict[str, float] = {
     "INR": 1.0 / 84.00,      # ~0.011905 (Indian Rupee)
     "KRW": 1.0 / 1350.0,     # ~0.000741 (South Korean Won)
     "SEK": 1.0 / 10.50,      # ~0.095238 (Swedish Krona)
+    "CLP": 1.0 / 950.0,      # Chilean Peso baseline; refresh before valuation use
+    "MXN": 1.0 / 18.50,      # Mexican Peso baseline; refresh before valuation use
 }
 
 # Known Foreign Issuer Primary Reporting Currencies
@@ -86,6 +91,9 @@ TICKER_PRIMARY_CURRENCIES: Dict[str, str] = {
     "SHOP": "USD",  # Reports in USD
     "TRI": "USD",   # Reports in USD
     "NVO": "DKK",   # Reports in DKK
+    "ENIC": "CLP",  # SEC XBRL monetary facts are primarily reported in CLP
+    "HSBC": "USD",  # SEC financial statements are presented in USD
+    "OMAB": "USD",  # OMAB's SEC financial statements include USD translations
 }
 
 
@@ -100,6 +108,9 @@ ADR_ALREADY_NORMALIZED_THRESHOLDS: Dict[str, float] = {
     "AZN": 2.2e9,   # Ordinary shares > 3B; ADSs ~1.55B
     "TM": 5e9,      # Ordinary shares > 13B; ADRs ~1.35B
     "HDB": 4.5e9,   # Ordinary shares > 7B; ADRs ~2.53B
+    "ENIC": 2.0e9,  # Ordinary shares ~69B; ADS equivalents ~1.38B
+    "HSBC": 5.0e9,  # Ordinary shares ~17B; ADS equivalents ~3.4B
+    "OMAB": 100e6,  # Series B shares ~386M; ADS equivalents ~48M
 }
 
 # Foreign currency magnitude thresholds (values below these are already in USD)
@@ -111,6 +122,7 @@ CURRENCY_ALREADY_USD_THRESHOLDS: Dict[str, float] = {
     "JD": 200e9,    # CNY statements are > 500B CNY; USD amounts < 150B
     "NTES": 30e9,   # CNY statements are > 80B CNY; USD amounts < 20B
     "TM": 1000e9,   # JPY statements are > 10,000B JPY; USD amounts < 400B
+    "ENIC": 300e9,  # CLP statements are in hundreds of billions/trillions
 }
 
 
@@ -320,6 +332,36 @@ LISTING_METADATA: Dict[str, Dict[str, Any]] = {
         "primary_exchange": "National Stock Exchange of India (NSE: HDFCBANK)",
         "adr_ratio": 3.0,
         "adr_underlying_description": "1 ADR = 3 Equity Shares",
+        "depositary_bank": "JPMorgan Chase Bank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "ENIC": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "Chile",
+        "primary_exchange": "Santiago Stock Exchange (ENELCHILE)",
+        "adr_ratio": 50.0,
+        "adr_underlying_description": "1 ADS = 50 Common Shares",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "HSBC": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "United Kingdom",
+        "primary_exchange": "London Stock Exchange (HSBA)",
+        "adr_ratio": 5.0,
+        "adr_underlying_description": "1 ADS = 5 Ordinary Shares",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "OMAB": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "Mexico",
+        "primary_exchange": "Bolsa Mexicana de Valores (OMA B)",
+        "adr_ratio": 8.0,
+        "adr_underlying_description": "1 ADS = 8 Series B Shares",
         "depositary_bank": "JPMorgan Chase Bank, N.A.",
         "sec_form": "Form 20-F"
     },
@@ -570,4 +612,3 @@ def is_adr(symbol: str) -> bool:
     """Returns True if the symbol is an American Depositary Receipt or Share."""
     meta = get_listing_metadata(symbol)
     return meta.get("is_adr", False)
-

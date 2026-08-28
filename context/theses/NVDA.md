@@ -53,6 +53,20 @@ Stock-based compensation is a small share of revenue because revenue has grown f
 - **Lock-Up Status:** NOT_APPLICABLE_SEASONED_ISSUER
 - **Lock-Up Detail:** No lock-up applies. Insider sales run through pre-established 10b5-1 plans, so supply from executives is scheduled rather than discretionary.
 
+## Off-Balance Sheet & Long-Term Obligations
+NVIDIA's July 2026 Form 10-Q reports $366 billion of future supply, capacity, cloud, uncommenced data-center lease, equity-investment, and capital-expenditure commitments, plus $7.207 billion of commenced operating lease obligations. The overhang is rated elevated because commitments extend ahead of customer demand and include $279 billion for supply and capacity, although the company's cash generation and net-cash balance materially reduce near-term solvency risk.
+
+| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| Defined Benefit Pension & OPEB | Not audited | PBO: None (defined contribution only) (Gap: $0.00 B) | $0.00 B / yr | Not audited |
+| Environmental Remediation & PFAS | Risk: Not audited | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | Not audited |
+| Product Liability & Mass Torts | Risk: Not audited | Scheduled: $0.00 B | $0.00 B / yr | Not audited |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Not audited |
+
+**Total Audited Encumbrance:** $0.00 B gross, $0.00 B per year in recurring cash outflows.
+
+**Equity Cash Flow Seniority Impact:** Elevated in absolute dollars but moderated by exceptional operating cash flow; a demand slowdown could still strand prepaid or non-cancellable AI supply capacity.
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
 1. **Trigger 1:** ASIC custom silicon replacing GPU demand in hyperscalers, CUDA fragmentation, or severe gross margin erosion below 65%.

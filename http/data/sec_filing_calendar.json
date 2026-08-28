@@ -3,7 +3,7 @@
   "description": "Anticipated SEC filing schedule (10-Q / 10-K / 20-F) for universe equities calculated from statutory deadlines and fiscal year-ends.",
   "last_updated": "2026-08-28",
   "provenance": "TIER_1_PRIMARY_REGULATORY",
-  "total_equities_tracked": 201,
+  "total_equities_tracked": 204,
   "calendar_entries": [
     {
       "symbol": "ABT",
@@ -276,6 +276,24 @@
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1058290"
     },
     {
+      "symbol": "ENIC",
+      "company_name": "Enel Chile S.A.",
+      "cik": "0000000000",
+      "fiscal_year_end": "12-31",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "20-F",
+      "last_filing_date": "2025-04-29",
+      "last_period_end": "2024-12-31",
+      "next_expected_form": "6-K",
+      "next_expected_fiscal_period": "Semi-Annual / Interim",
+      "estimated_filing_window_start": "2025-05-06",
+      "estimated_filing_window_end": "2025-05-26",
+      "statutory_deadline": "2025-05-31",
+      "days_until_window_start": 0,
+      "status": "OVERDUE",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1659939"
+    },
+    {
       "symbol": "ENPH",
       "company_name": "Enphase Energy, Inc.",
       "cik": "0000000000",
@@ -508,6 +526,24 @@
       "days_until_window_start": 0,
       "status": "OVERDUE",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1413447"
+    },
+    {
+      "symbol": "OMAB",
+      "company_name": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
+      "cik": "0000000000",
+      "fiscal_year_end": "12-31",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "20-F",
+      "last_filing_date": "2025-04-29",
+      "last_period_end": "2024-12-31",
+      "next_expected_form": "6-K",
+      "next_expected_fiscal_period": "Semi-Annual / Interim",
+      "estimated_filing_window_start": "2025-05-06",
+      "estimated_filing_window_end": "2025-05-26",
+      "statutory_deadline": "2025-05-31",
+      "days_until_window_start": 0,
+      "status": "OVERDUE",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1378239"
     },
     {
       "symbol": "PDD",
@@ -2146,6 +2182,24 @@
       "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=773840"
+    },
+    {
+      "symbol": "HST",
+      "company_name": "Host Hotels & Resorts, Inc.",
+      "cik": "0000000000",
+      "fiscal_year_end": "12-31",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "10-Q",
+      "last_filing_date": "2026-08-07",
+      "last_period_end": "2026-06-30",
+      "next_expected_form": "10-Q",
+      "next_expected_fiscal_period": "Q3",
+      "estimated_filing_window_start": "2026-10-24",
+      "estimated_filing_window_end": "2026-11-06",
+      "statutory_deadline": "2026-11-08",
+      "days_until_window_start": 57,
+      "status": "SCHEDULED",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1070750"
     },
     {
       "symbol": "HUBS",

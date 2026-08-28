@@ -258,3 +258,18 @@ Triage thresholds are documented and enforced in code, but the code reads fields
 1. Add a validation pass asserting `previous_close == nominal_previous_close` whenever `cumulative_split_factor == 1.0`, and requiring any `|day_change_percent|` above a threshold (25% is a reasonable starting point) to be corroborated by a volume anomaly or an explicit recorded override.
 2. Establish a single authoritative universe record schema, and make both `build_universe_json.py` and `quality_control.py` validate their output against it before writing, so that no repair path can silently narrow the record.
 3. Determine whether schema conformance validation should be strengthened to assert substantive content. `validate_thesis.py` passed a HOFT dossier that described a residential furniture manufacturer as an Information Technology company pursuing software subscription monetization. Structural validation confirmed every required section was present while the content was categorically wrong.
+
+### OQI-2026-08-007: Close-Only Orders for Held ETFs Outside the Equity Universe
+
+- **Item ID**: OQI-2026-08-007
+- **Date Opened**: 2026-08-28
+- **Status**: OPEN
+- **Related Files**: [render_plan.py](../../scripts/render_plan.py), [trading_plan_orders_schema.json](../schemas/trading_plan_orders_schema.json)
+
+#### Question
+
+How should the renderer permit a close-only sale of a verified held ETF that is intentionally excluded from the individual-equity research universe without weakening the prohibition on opening trades in unresearched symbols?
+
+#### Current Conflict
+
+`render_plan.py` rejects every order whose symbol is absent from the public equity universe before considering whether the order reduces an existing position. That is appropriate for opening purchases and option sales, but it also blocks `SELL TO CLOSE` orders for verified held ETFs. A narrow resolution should allow only a quantity-bounded close of a symbol present in the parsed account, while continuing to reject purchases, short sales, and option openings for non-universe symbols. This issue is recorded only; it is not resolved in the 2026-08-28 snapshot task.

@@ -1,121 +1,107 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "PortfolioContext",
-  "description": "Normalized portfolio state representation passed between ingestion, thesis, and derivatives sub-agents.",
-  "type": "object",
-  "properties": {
-    "as_of_date": {
-      "type": "string",
-      "format": "date",
-      "description": "The date of the snapshot (YYYY-MM-DD)."
-    },
-    "total_net_liquidation_value": {
-      "type": "number",
-      "description": "Total account net liquidating value in USD."
-    },
-    "cash_balance": {
-      "type": "number",
-      "description": "Unallocated settled cash in USD."
-    },
-    "sgov_shares": {
-      "type": "number",
-      "description": "Number of SGOV ETF shares held as cash proxy."
-    },
-    "sgov_market_value": {
-      "type": "number",
-      "description": "Total market value of SGOV holdings in USD."
-    },
-    "holdings": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/Holding"
-      }
-    },
-    "options_positions": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/OptionPosition"
-      }
-    }
-  },
-  "required": [
-    "as_of_date",
-    "total_net_liquidation_value",
-    "cash_balance",
-    "holdings"
-  ],
+  "title": "PortfolioContextCollection",
+  "description": "Normalized, account-isolated portfolio states emitted by scripts/parse_snapshot.py. Null means the brokerage source did not provide enough information; it never means zero.",
+  "type": "array",
+  "items": { "$ref": "#/definitions/PortfolioContext" },
   "definitions": {
+    "NullableNumber": { "type": ["number", "null"] },
+    "PortfolioContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "account_name", "as_of_date", "total_account_value", "settled_cash",
+        "long_stock_value", "long_option_value", "short_option_value",
+        "sgov_shares", "sgov_market_value", "total_dry_powder",
+        "dry_powder_percentage", "active_positions_count",
+        "total_securities_count", "total_option_market_value", "positions",
+        "open_options", "reconciliation"
+      ],
+      "properties": {
+        "account_name": { "type": "string", "minLength": 1 },
+        "as_of_date": { "type": ["string", "null"], "format": "date" },
+        "total_account_value": { "$ref": "#/definitions/NullableNumber" },
+        "settled_cash": { "$ref": "#/definitions/NullableNumber" },
+        "long_stock_value": { "$ref": "#/definitions/NullableNumber" },
+        "long_option_value": { "$ref": "#/definitions/NullableNumber" },
+        "short_option_value": { "$ref": "#/definitions/NullableNumber" },
+        "sgov_shares": { "type": "number", "minimum": 0 },
+        "sgov_market_value": { "$ref": "#/definitions/NullableNumber" },
+        "total_dry_powder": { "$ref": "#/definitions/NullableNumber" },
+        "dry_powder_percentage": { "$ref": "#/definitions/NullableNumber" },
+        "active_positions_count": { "type": "integer", "minimum": 0 },
+        "total_securities_count": { "type": "integer", "minimum": 0 },
+        "total_option_market_value": { "$ref": "#/definitions/NullableNumber" },
+        "positions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Holding" }
+        },
+        "open_options": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/OptionPosition" }
+        },
+        "reconciliation": { "$ref": "#/definitions/Reconciliation" }
+      }
+    },
     "Holding": {
       "type": "object",
-      "properties": {
-        "symbol": {
-          "type": "string"
-        },
-        "shares": {
-          "type": "number"
-        },
-        "cost_basis_per_share": {
-          "type": "number"
-        },
-        "current_price": {
-          "type": "number"
-        },
-        "market_value": {
-          "type": "number"
-        },
-        "covered_call_eligible_blocks": {
-          "type": "integer",
-          "description": "Floor of shares / 100 representing 100-share blocks available for CC write."
-        },
-        "has_active_thesis": {
-          "type": "boolean"
-        }
-      },
+      "additionalProperties": false,
       "required": [
-        "symbol",
-        "shares",
-        "cost_basis_per_share"
-      ]
+        "symbol", "shares", "mark_price", "market_value",
+        "cost_basis_per_share", "cc_eligible_blocks", "cc_eligible"
+      ],
+      "properties": {
+        "symbol": { "type": "string", "pattern": "^[A-Z0-9.-]+$" },
+        "shares": { "type": "number", "minimum": 0 },
+        "mark_price": { "$ref": "#/definitions/NullableNumber" },
+        "market_value": { "$ref": "#/definitions/NullableNumber" },
+        "cost_basis_per_share": { "$ref": "#/definitions/NullableNumber" },
+        "cc_eligible_blocks": { "type": "integer", "minimum": 0 },
+        "cc_eligible": { "type": "boolean" }
+      }
     },
     "OptionPosition": {
       "type": "object",
-      "properties": {
-        "symbol": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string",
-          "enum": ["PUT", "CALL"]
-        },
-        "strategy": {
-          "type": "string",
-          "enum": ["CSP", "CC"]
-        },
-        "strike": {
-          "type": "number"
-        },
-        "expiration_date": {
-          "type": "string",
-          "format": "date"
-        },
-        "contracts": {
-          "type": "integer"
-        },
-        "premium_received": {
-          "type": "number"
-        },
-        "collateral_required": {
-          "type": "number"
-        }
-      },
+      "additionalProperties": false,
       "required": [
-        "symbol",
-        "type",
-        "strategy",
-        "strike",
-        "expiration_date",
-        "contracts"
-      ]
+        "symbol", "contracts", "mark_price", "market_value", "cost_per_contract"
+      ],
+      "properties": {
+        "symbol": { "type": "string" },
+        "contracts": { "type": "integer" },
+        "mark_price": { "$ref": "#/definitions/NullableNumber" },
+        "market_value": { "$ref": "#/definitions/NullableNumber" },
+        "cost_per_contract": { "$ref": "#/definitions/NullableNumber" }
+      }
+    },
+    "Reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status", "authoritative_source", "authoritative_total_account_value",
+        "computed_total_account_value", "difference_usd", "balance_changes"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "RECONCILED", "AUTHORITATIVE_TOTAL_WITH_UNRESOLVED_COMPONENTS",
+            "AUTHORITATIVE_TOTAL_MISMATCH", "COMPUTED_FROM_COMPLETE_COMPONENTS",
+            "INCOMPLETE"
+          ]
+        },
+        "authoritative_source": {
+          "type": ["string", "null"],
+          "enum": ["brokerage_balance", "positions_total", null]
+        },
+        "authoritative_total_account_value": { "$ref": "#/definitions/NullableNumber" },
+        "computed_total_account_value": { "$ref": "#/definitions/NullableNumber" },
+        "difference_usd": { "$ref": "#/definitions/NullableNumber" },
+        "balance_changes": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/NullableNumber" }
+        }
+      }
     }
   }
 }

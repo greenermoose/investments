@@ -1,0 +1,95 @@
+{
+  "symbol": "ENIC",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1659939",
+  "last_updated": "2026-08-28T17:33:59.637175+00:00",
+  "filings": [
+    {
+      "type": "20-F",
+      "filing_date": "2025-04-29",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1659939",
+      "data": {
+        "shares_outstanding": 69166557220,
+        "revenue": 3904732890000.0,
+        "balance_sheet": {
+          "total_assets": 12719897584000.0,
+          "total_liabilities": 7393518069000.0,
+          "total_shareholders_equity": 5326379515000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 383399319000.0,
+          "cash_primary": 383399319000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2024-04-30",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1659939",
+      "data": {
+        "shares_outstanding": 69166557220,
+        "revenue": 4262591097000.0,
+        "balance_sheet": {
+          "total_assets": 11833721036000.0,
+          "total_liabilities": 7072834764000.0,
+          "total_shareholders_equity": 4760886272000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 563291290000.0,
+          "cash_primary": 563291290000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2023-04-26",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1659939",
+      "data": {
+        "shares_outstanding": 69166557220,
+        "revenue": 4379000090000.0,
+        "balance_sheet": {
+          "total_assets": 11865579732000.0,
+          "total_liabilities": 7476640429000.0,
+          "total_shareholders_equity": 4388939303000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 875213699000.0,
+          "cash_primary": 875213699000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2022-04-28",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1659939",
+      "data": {
+        "shares_outstanding": 69166557220,
+        "revenue": 2829682404000.0,
+        "balance_sheet": {
+          "total_assets": 9500323596000.0,
+          "total_liabilities": 6153830698000.0,
+          "total_shareholders_equity": 3346492898000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 309975140000.0,
+          "cash_primary": 309975140000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ]
+}

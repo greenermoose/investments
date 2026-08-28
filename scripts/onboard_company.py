@@ -441,13 +441,16 @@ def onboard_batch(symbols, company_name=None, sector=None, industry=None, descri
     print(f"{'SYMBOL':<8} {'COMPANY NAME':<26} {'SECTOR':<22} {'PRICE':<8} {'RATING':<8} {'3Y CAGR':<9}")
     print("-" * 80)
     for r in results:
+        rating = r.get("rating") or "UNRATED"
+        roi = r.get("annualized_roi_pct")
+        roi_text = f"+{roi:.1f}%" if roi is not None else "n/a"
         print(
             f"{r['symbol']:<8} "
             f"{r['name'][:25]:<26} "
             f"{r['sector'][:21]:<22} "
             f"${r['current_price']:<7.2f} "
-            f"{r['rating']:<8} "
-            f"+{r['annualized_roi_pct']:.1f}%"
+            f"{rating:<8} "
+            f"{roi_text:<9}"
         )
     print("=" * 80)
     print(f"Total Onboarded: {len(results)} | Validation Failures: {validation_failures}")

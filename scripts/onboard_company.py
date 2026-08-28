@@ -113,7 +113,7 @@ def sync_sec_summary():
         json.dump(sec_summary, f, indent=2)
 
 
-def onboard_single_equity(symbol, company_name=None, sector=None, industry=None, live=False):
+def onboard_single_equity(symbol, company_name=None, sector=None, industry=None, description=None, live=False):
     sym = symbol.upper().strip()
     print(f"\n--- Processing Public Equity: {sym} ---")
 
@@ -282,7 +282,7 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
     triage_status = "QUALIFIED_CANDIDATE" if val_model["rating"] != "AVOID" else "AVOID"
     print(f"    Rating: {val_model['rating']} | 3Y CAGR: +{val_model['annualized_roi_pct']:.1f}% | Triage: {triage_status}")
 
-    meta_dict[sym] = {
+    existing_meta.update({
         "name": name,
         "sector": sec,
         "industry": ind,
@@ -295,7 +295,10 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
         "current_price": current_price,
         "triage_status": triage_status,
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    }
+    })
+    if description:
+        existing_meta["description"] = description
+    meta_dict[sym] = existing_meta
 
     with open(meta_file, "w", encoding="utf-8") as f:
         json.dump(meta_dict, f, indent=2)
@@ -315,7 +318,7 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
     }
 
 
-def onboard_batch(symbols, company_name=None, sector=None, industry=None, live=False):
+def onboard_batch(symbols, company_name=None, sector=None, industry=None, description=None, live=False):
     """
     Executes full onboarding pipeline for a list of symbols.
     """
@@ -331,6 +334,7 @@ def onboard_batch(symbols, company_name=None, sector=None, industry=None, live=F
             company_name=company_name if len(symbols) == 1 else None,
             sector=sector if len(symbols) == 1 else None,
             industry=industry if len(symbols) == 1 else None,
+            description=description if len(symbols) == 1 else None,
             live=live
         )
         results.append(res)
@@ -428,6 +432,7 @@ def main():
     parser.add_argument("--min-cap", type=float, default=1.0, help="Minimum market cap in $B for screening (default: 1.0)")
     parser.add_argument("--limit", type=int, default=5, help="Maximum number of candidates to onboard in screening mode (default: 5)")
     parser.add_argument("--name", type=str, default=None, help="Official company name (used for single symbol onboarding)")
+    parser.add_argument("--description", type=str, default=None, help="Concise company business description")
     parser.add_argument("--sector", type=str, default=None, help="GICS sector classification")
     parser.add_argument("--industry", type=str, default=None, help="Industry group")
     parser.add_argument("--live", action="store_true", help="Fetch live data from SEC EDGAR and exchange feeds (default: offline/cached)")
@@ -489,6 +494,7 @@ def main():
         company_name=args.name,
         sector=args.sector,
         industry=args.industry,
+        description=args.description,
         live=live_mode
     )
 

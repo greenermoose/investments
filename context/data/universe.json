@@ -11,7 +11,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company AAPL.",
+    "description": "Designs, manufactures, and markets consumer electronics (iPhone, Mac, iPad, Watch) and high-margin services (App Store, Apple Pay, iCloud).",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
     "entry_price": 314.58,
@@ -1664,7 +1664,7 @@
       "coverage_count": 10,
       "average_upside_pct": 4.3
     },
-    "last_updated": "2026-08-28T03:22:09.186101+00:00"
+    "last_updated": "2026-08-28T03:30:39.606324+00:00"
   },
   {
     "symbol": "ABBV",
@@ -1678,7 +1678,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company ABBV.",
+    "description": "Global research-based biopharmaceutical company developing advanced therapies in immunology (Skyrizi, Rinvoq), oncology, and neuroscience.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
     "entry_price": 258.15,
@@ -3329,7 +3329,7 @@
       "coverage_count": 10,
       "average_upside_pct": 14.1
     },
-    "last_updated": "2026-08-28T03:22:09.192520+00:00"
+    "last_updated": "2026-08-28T03:30:39.609810+00:00"
   },
   {
     "symbol": "ABNB",
@@ -4990,7 +4990,7 @@
       "coverage_count": 10,
       "average_upside_pct": 1.1
     },
-    "last_updated": "2026-08-28T03:22:09.198562+00:00"
+    "last_updated": "2026-08-28T03:30:39.619489+00:00"
   },
   {
     "symbol": "ABT",
@@ -5004,7 +5004,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company ABT.",
+    "description": "Diversified healthcare leader developing medical devices (FreeStyle Libre), diagnostic systems, pediatric and adult nutritionals, and branded generic medicines.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
     "entry_price": 111.59,
@@ -6655,7 +6655,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.0
     },
-    "last_updated": "2026-08-28T03:22:09.206539+00:00"
+    "last_updated": "2026-08-28T03:30:39.626148+00:00"
   },
   {
     "symbol": "ADBE",
@@ -8316,7 +8316,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.9
     },
-    "last_updated": "2026-08-28T03:22:09.212934+00:00"
+    "last_updated": "2026-08-28T03:30:39.628422+00:00"
   },
   {
     "symbol": "ADI",
@@ -9982,7 +9982,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:22:09.219022+00:00"
+    "last_updated": "2026-08-28T03:30:39.636092+00:00"
   },
   {
     "symbol": "ADP",
@@ -11648,7 +11648,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.1
     },
-    "last_updated": "2026-08-28T03:22:09.225341+00:00"
+    "last_updated": "2026-08-28T03:30:39.641146+00:00"
   },
   {
     "symbol": "ADSK",
@@ -13309,7 +13309,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.0
     },
-    "last_updated": "2026-08-28T03:22:09.231820+00:00"
+    "last_updated": "2026-08-28T03:30:39.650949+00:00"
   },
   {
     "symbol": "AEP",
@@ -14975,7 +14975,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:22:09.238128+00:00"
+    "last_updated": "2026-08-28T03:30:39.655921+00:00"
   },
   {
     "symbol": "ALNY",
@@ -16635,7 +16635,7 @@
       "coverage_count": 10,
       "average_upside_pct": 69.5
     },
-    "last_updated": "2026-08-28T03:22:09.246283+00:00"
+    "last_updated": "2026-08-28T03:30:39.660367+00:00"
   },
   {
     "symbol": "AMAT",
@@ -18301,7 +18301,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.5
     },
-    "last_updated": "2026-08-28T03:22:09.254352+00:00"
+    "last_updated": "2026-08-28T03:30:39.668188+00:00"
   },
   {
     "symbol": "AMD",
@@ -19962,7 +19962,7 @@
       "coverage_count": 10,
       "average_upside_pct": 26.8
     },
-    "last_updated": "2026-08-28T03:22:09.260740+00:00"
+    "last_updated": "2026-08-28T03:30:39.676067+00:00"
   },
   {
     "symbol": "AMGN",
@@ -21629,7 +21629,7 @@
       "coverage_count": 10,
       "average_upside_pct": -3.7
     },
-    "last_updated": "2026-08-28T03:22:09.267264+00:00"
+    "last_updated": "2026-08-28T03:30:39.683814+00:00"
   },
   {
     "symbol": "AMZN",
@@ -23291,7 +23291,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.0
     },
-    "last_updated": "2026-08-28T03:22:09.273624+00:00"
+    "last_updated": "2026-08-28T03:30:39.688749+00:00"
   },
   {
     "symbol": "ANET",
@@ -23305,7 +23305,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company ANET.",
+    "description": "Provides high-performance, cognitive cloud and AI networking switches and EOS software for hyperscale data centers and enterprise campuses.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
     "entry_price": 201.09,
@@ -24951,7 +24951,7 @@
       "coverage_count": 10,
       "average_upside_pct": 29.0
     },
-    "last_updated": "2026-08-28T03:22:09.279952+00:00"
+    "last_updated": "2026-08-28T03:30:39.696310+00:00"
   },
   {
     "symbol": "APH",
@@ -24965,7 +24965,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company APH.",
+    "description": "Designs and manufactures electrical, electronic, and fiber optic connectors, specialty interconnect systems, and coaxial cables across diversified end markets.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
     "entry_price": 161.38,
@@ -26616,7 +26616,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.6
     },
-    "last_updated": "2026-08-28T03:22:09.286109+00:00"
+    "last_updated": "2026-08-28T03:30:39.701639+00:00"
   },
   {
     "symbol": "APP",
@@ -28277,7 +28277,7 @@
       "coverage_count": 10,
       "average_upside_pct": 55.3
     },
-    "last_updated": "2026-08-28T03:22:09.292612+00:00"
+    "last_updated": "2026-08-28T03:30:39.708702+00:00"
   },
   {
     "symbol": "ARM",
@@ -29937,7 +29937,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.5
     },
-    "last_updated": "2026-08-28T03:22:09.300498+00:00"
+    "last_updated": "2026-08-28T03:30:39.713740+00:00"
   },
   {
     "symbol": "ASML",
@@ -31588,7 +31588,7 @@
       "coverage_count": 9,
       "average_upside_pct": 23.9
     },
-    "last_updated": "2026-08-28T03:22:09.307160+00:00"
+    "last_updated": "2026-08-28T03:30:39.721303+00:00"
   },
   {
     "symbol": "AVGO",
@@ -33254,7 +33254,7 @@
       "coverage_count": 10,
       "average_upside_pct": 24.2
     },
-    "last_updated": "2026-08-28T03:22:09.313430+00:00"
+    "last_updated": "2026-08-28T03:30:39.725949+00:00"
   },
   {
     "symbol": "AXON",
@@ -34915,7 +34915,7 @@
       "coverage_count": 10,
       "average_upside_pct": 41.0
     },
-    "last_updated": "2026-08-28T03:22:09.319520+00:00"
+    "last_updated": "2026-08-28T03:30:39.729997+00:00"
   },
   {
     "symbol": "AXP",
@@ -36581,7 +36581,7 @@
       "coverage_count": 10,
       "average_upside_pct": 6.7
     },
-    "last_updated": "2026-08-28T03:22:09.327518+00:00"
+    "last_updated": "2026-08-28T03:30:39.736547+00:00"
   },
   {
     "symbol": "BA",
@@ -38242,7 +38242,7 @@
       "coverage_count": 10,
       "average_upside_pct": 23.5
     },
-    "last_updated": "2026-08-28T03:22:09.333990+00:00"
+    "last_updated": "2026-08-28T03:30:39.746098+00:00"
   },
   {
     "symbol": "BAM",
@@ -39905,7 +39905,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:22:09.340799+00:00"
+    "last_updated": "2026-08-28T03:30:39.748678+00:00"
   },
   {
     "symbol": "BEAM",
@@ -41563,7 +41563,7 @@
       "coverage_count": 10,
       "average_upside_pct": 64.6
     },
-    "last_updated": "2026-08-28T03:22:09.347616+00:00"
+    "last_updated": "2026-08-28T03:30:39.756188+00:00"
   },
   {
     "symbol": "BETA",
@@ -43169,7 +43169,7 @@
       "coverage_count": 8,
       "average_upside_pct": 46.7
     },
-    "last_updated": "2026-08-28T03:22:09.354476+00:00"
+    "last_updated": "2026-08-28T03:30:39.766266+00:00"
   },
   {
     "symbol": "BKNG",
@@ -44835,7 +44835,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.4
     },
-    "last_updated": "2026-08-28T03:22:09.360292+00:00"
+    "last_updated": "2026-08-28T03:30:39.768606+00:00"
   },
   {
     "symbol": "BKR",
@@ -46501,7 +46501,7 @@
       "coverage_count": 10,
       "average_upside_pct": 19.8
     },
-    "last_updated": "2026-08-28T03:22:09.368214+00:00"
+    "last_updated": "2026-08-28T03:30:39.777051+00:00"
   },
   {
     "symbol": "BLK",
@@ -46515,7 +46515,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company BLK.",
+    "description": "World's largest asset manager providing institutional and retail investment products (iShares ETFs), risk management, and enterprise technology (Aladdin).",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
     "entry_price": 1167.57,
@@ -48166,7 +48166,7 @@
       "coverage_count": 10,
       "average_upside_pct": 23.5
     },
-    "last_updated": "2026-08-28T03:22:09.374773+00:00"
+    "last_updated": "2026-08-28T03:30:39.783969+00:00"
   },
   {
     "symbol": "BRK-B",
@@ -49728,7 +49728,7 @@
       "coverage_count": 3,
       "average_upside_pct": 6.2
     },
-    "last_updated": "2026-08-28T03:22:09.381288+00:00"
+    "last_updated": "2026-08-28T03:30:39.790035+00:00"
   },
   {
     "symbol": "BSX",
@@ -49742,7 +49742,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company BSX.",
+    "description": "Global medical technology manufacturer developing minimally invasive devices for interventional cardiology, electrophysiology (FARAPULSE), and endoscopy.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
     "entry_price": 46.67,
@@ -51388,7 +51388,7 @@
       "coverage_count": 10,
       "average_upside_pct": 31.4
     },
-    "last_updated": "2026-08-28T03:22:09.388868+00:00"
+    "last_updated": "2026-08-28T03:30:39.796059+00:00"
   },
   {
     "symbol": "CAT",
@@ -53054,7 +53054,7 @@
       "coverage_count": 10,
       "average_upside_pct": 11.9
     },
-    "last_updated": "2026-08-28T03:22:09.395156+00:00"
+    "last_updated": "2026-08-28T03:30:39.804109+00:00"
   },
   {
     "symbol": "CAVA",
@@ -53068,7 +53068,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company CAVA.",
+    "description": "Category-defining fast-casual Mediterranean restaurant chain serving customizable bowls, pitas, and dips alongside retail packaged goods.",
     "thesis_status": "BUY",
     "conviction_score": 9.3,
     "entry_price": 66.95,
@@ -54586,7 +54586,7 @@
       "coverage_count": 2,
       "average_upside_pct": 31.0
     },
-    "last_updated": "2026-08-28T03:22:09.401388+00:00"
+    "last_updated": "2026-08-28T03:30:39.809148+00:00"
   },
   {
     "symbol": "CCEP",
@@ -56232,7 +56232,7 @@
       "coverage_count": 9,
       "average_upside_pct": 2.9
     },
-    "last_updated": "2026-08-28T03:22:09.409409+00:00"
+    "last_updated": "2026-08-28T03:30:39.816175+00:00"
   },
   {
     "symbol": "CDNS",
@@ -57893,7 +57893,7 @@
       "coverage_count": 10,
       "average_upside_pct": 14.0
     },
-    "last_updated": "2026-08-28T03:22:09.415603+00:00"
+    "last_updated": "2026-08-28T03:30:39.822239+00:00"
   },
   {
     "symbol": "CEG",
@@ -59559,7 +59559,7 @@
       "coverage_count": 10,
       "average_upside_pct": 27.9
     },
-    "last_updated": "2026-08-28T03:22:09.421949+00:00"
+    "last_updated": "2026-08-28T03:30:39.828287+00:00"
   },
   {
     "symbol": "CHTR",
@@ -61220,7 +61220,7 @@
       "coverage_count": 10,
       "average_upside_pct": 20.4
     },
-    "last_updated": "2026-08-28T03:22:09.429765+00:00"
+    "last_updated": "2026-08-28T03:30:39.834307+00:00"
   },
   {
     "symbol": "CMCSA",
@@ -62886,7 +62886,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:22:09.436233+00:00"
+    "last_updated": "2026-08-28T03:30:39.841378+00:00"
   },
   {
     "symbol": "COST",
@@ -64552,7 +64552,7 @@
       "coverage_count": 10,
       "average_upside_pct": 16.6
     },
-    "last_updated": "2026-08-28T03:22:09.442499+00:00"
+    "last_updated": "2026-08-28T03:30:39.848485+00:00"
   },
   {
     "symbol": "CPRT",
@@ -66157,7 +66157,7 @@
       "coverage_count": 6,
       "average_upside_pct": 12.6
     },
-    "last_updated": "2026-08-28T03:22:09.448230+00:00"
+    "last_updated": "2026-08-28T03:30:39.854504+00:00"
   },
   {
     "symbol": "CRM",
@@ -67823,7 +67823,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:22:09.454512+00:00"
+    "last_updated": "2026-08-28T03:30:39.861063+00:00"
   },
   {
     "symbol": "CRSP",
@@ -69481,7 +69481,7 @@
       "coverage_count": 10,
       "average_upside_pct": 42.6
     },
-    "last_updated": "2026-08-28T03:22:09.461143+00:00"
+    "last_updated": "2026-08-28T03:30:39.866083+00:00"
   },
   {
     "symbol": "CRWD",
@@ -71149,7 +71149,7 @@
       "coverage_count": 10,
       "average_upside_pct": 14.5
     },
-    "last_updated": "2026-08-28T03:22:09.467628+00:00"
+    "last_updated": "2026-08-28T03:30:39.874904+00:00"
   },
   {
     "symbol": "CSCO",
@@ -72816,7 +72816,7 @@
       "coverage_count": 10,
       "average_upside_pct": 19.6
     },
-    "last_updated": "2026-08-28T03:22:09.474150+00:00"
+    "last_updated": "2026-08-28T03:30:39.880922+00:00"
   },
   {
     "symbol": "CSGP",
@@ -74477,7 +74477,7 @@
       "coverage_count": 10,
       "average_upside_pct": 25.7
     },
-    "last_updated": "2026-08-28T03:22:09.481328+00:00"
+    "last_updated": "2026-08-28T03:30:39.888684+00:00"
   },
   {
     "symbol": "CSIQ",
@@ -76135,7 +76135,7 @@
       "coverage_count": 10,
       "average_upside_pct": 4.9
     },
-    "last_updated": "2026-08-28T03:22:09.487810+00:00"
+    "last_updated": "2026-08-28T03:30:39.894706+00:00"
   },
   {
     "symbol": "CSX",
@@ -77801,7 +77801,7 @@
       "coverage_count": 10,
       "average_upside_pct": 5.2
     },
-    "last_updated": "2026-08-28T03:22:09.494358+00:00"
+    "last_updated": "2026-08-28T03:30:39.902737+00:00"
   },
   {
     "symbol": "CTAS",
@@ -79467,7 +79467,7 @@
       "coverage_count": 10,
       "average_upside_pct": 11.6
     },
-    "last_updated": "2026-08-28T03:22:09.500401+00:00"
+    "last_updated": "2026-08-28T03:30:39.910502+00:00"
   },
   {
     "symbol": "CTSH",
@@ -81133,7 +81133,7 @@
       "coverage_count": 10,
       "average_upside_pct": 20.1
     },
-    "last_updated": "2026-08-28T03:22:09.506702+00:00"
+    "last_updated": "2026-08-28T03:30:39.916521+00:00"
   },
   {
     "symbol": "CVX",
@@ -82799,7 +82799,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.2
     },
-    "last_updated": "2026-08-28T03:22:09.512644+00:00"
+    "last_updated": "2026-08-28T03:30:39.924288+00:00"
   },
   {
     "symbol": "DASH",
@@ -84460,7 +84460,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.3
     },
-    "last_updated": "2026-08-28T03:22:09.519153+00:00"
+    "last_updated": "2026-08-28T03:30:39.930309+00:00"
   },
   {
     "symbol": "DDOG",
@@ -86121,7 +86121,7 @@
       "coverage_count": 10,
       "average_upside_pct": 19.4
     },
-    "last_updated": "2026-08-28T03:22:09.525686+00:00"
+    "last_updated": "2026-08-28T03:30:39.938082+00:00"
   },
   {
     "symbol": "DE",
@@ -86135,7 +86135,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company DE.",
+    "description": "World's leading manufacturer of agricultural, construction, and forestry equipment, precision ag technologies, and diesel power engines.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
     "entry_price": 622.66,
@@ -87786,7 +87786,7 @@
       "coverage_count": 10,
       "average_upside_pct": 10.7
     },
-    "last_updated": "2026-08-28T03:22:09.532235+00:00"
+    "last_updated": "2026-08-28T03:30:39.944108+00:00"
   },
   {
     "symbol": "DHR",
@@ -87800,7 +87800,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company DHR.",
+    "description": "Global life sciences and diagnostics innovator designing bioprocessing tools, filtration systems, and medical diagnostics instruments.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
     "entry_price": 215.68,
@@ -89451,7 +89451,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.7
     },
-    "last_updated": "2026-08-28T03:22:09.538257+00:00"
+    "last_updated": "2026-08-28T03:30:39.952135+00:00"
   },
   {
     "symbol": "DIS",
@@ -91117,7 +91117,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.3
     },
-    "last_updated": "2026-08-28T03:22:09.544822+00:00"
+    "last_updated": "2026-08-28T03:30:39.959576+00:00"
   },
   {
     "symbol": "DUOL",
@@ -91131,7 +91131,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company DUOL.",
+    "description": "Leading mobile learning platform and top-grossing education app providing gamified language, math, and literacy learning alongside the Duolingo English Test.",
     "thesis_status": "BUY",
     "conviction_score": 9.2,
     "entry_price": 142.86,
@@ -92649,7 +92649,7 @@
       "coverage_count": 2,
       "average_upside_pct": 44.9
     },
-    "last_updated": "2026-08-28T03:22:09.551191+00:00"
+    "last_updated": "2026-08-28T03:30:39.965596+00:00"
   },
   {
     "symbol": "DXCM",
@@ -94310,7 +94310,7 @@
       "coverage_count": 10,
       "average_upside_pct": 11.2
     },
-    "last_updated": "2026-08-28T03:22:09.556999+00:00"
+    "last_updated": "2026-08-28T03:30:39.973623+00:00"
   },
   {
     "symbol": "EA",
@@ -95467,7 +95467,7 @@
       "coverage_count": 10,
       "average_upside_pct": 4.0
     },
-    "last_updated": "2026-08-28T03:22:09.562972+00:00"
+    "last_updated": "2026-08-28T03:30:39.979644+00:00"
   },
   {
     "symbol": "EDIT",
@@ -97125,7 +97125,7 @@
       "coverage_count": 10,
       "average_upside_pct": 120.9
     },
-    "last_updated": "2026-08-28T03:22:09.569263+00:00"
+    "last_updated": "2026-08-28T03:30:39.987409+00:00"
   },
   {
     "symbol": "ENPH",
@@ -98783,7 +98783,7 @@
       "coverage_count": 10,
       "average_upside_pct": 19.7
     },
-    "last_updated": "2026-08-28T03:22:09.575582+00:00"
+    "last_updated": "2026-08-28T03:30:39.993429+00:00"
   },
   {
     "symbol": "ENVX",
@@ -100441,7 +100441,7 @@
       "coverage_count": 10,
       "average_upside_pct": 134.0
     },
-    "last_updated": "2026-08-28T03:22:09.581725+00:00"
+    "last_updated": "2026-08-28T03:30:40.001195+00:00"
   },
   {
     "symbol": "EOSE",
@@ -102085,7 +102085,7 @@
       "coverage_count": 9,
       "average_upside_pct": 53.2
     },
-    "last_updated": "2026-08-28T03:22:09.589642+00:00"
+    "last_updated": "2026-08-28T03:30:40.007214+00:00"
   },
   {
     "symbol": "ETN",
@@ -102099,7 +102099,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
     "depositary_bank": null,
-    "description": "Public company ETN.",
+    "description": "Global intelligent power management company providing electrical distribution equipment, grid modernization systems, and aerospace components.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
     "entry_price": 416.04,
@@ -103750,7 +103750,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:22:09.595814+00:00"
+    "last_updated": "2026-08-28T03:30:40.014978+00:00"
   },
   {
     "symbol": "EXC",
@@ -105416,7 +105416,7 @@
       "coverage_count": 10,
       "average_upside_pct": 5.9
     },
-    "last_updated": "2026-08-28T03:22:09.603429+00:00"
+    "last_updated": "2026-08-28T03:30:40.020998+00:00"
   },
   {
     "symbol": "FANG",
@@ -107082,7 +107082,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:22:09.609606+00:00"
+    "last_updated": "2026-08-28T03:30:40.029024+00:00"
   },
   {
     "symbol": "FAST",
@@ -108748,7 +108748,7 @@
       "coverage_count": 10,
       "average_upside_pct": 5.4
     },
-    "last_updated": "2026-08-28T03:22:09.615878+00:00"
+    "last_updated": "2026-08-28T03:30:40.034789+00:00"
   },
   {
     "symbol": "FER",
@@ -110274,7 +110274,7 @@
       "coverage_count": 2,
       "average_upside_pct": 4.1
     },
-    "last_updated": "2026-08-28T03:22:09.622257+00:00"
+    "last_updated": "2026-08-28T03:30:40.038803+00:00"
   },
   {
     "symbol": "FTNT",
@@ -111935,7 +111935,7 @@
       "coverage_count": 10,
       "average_upside_pct": 8.4
     },
-    "last_updated": "2026-08-28T03:22:09.630229+00:00"
+    "last_updated": "2026-08-28T03:30:40.046564+00:00"
   },
   {
     "symbol": "GE",
@@ -111949,7 +111949,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company GE.",
+    "description": "World-class aerospace propulsion leader designing, manufacturing, and servicing commercial and military jet engines (LEAP, GE9X) and integrated aircraft systems.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
     "entry_price": 342.73,
@@ -113600,7 +113600,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.9
     },
-    "last_updated": "2026-08-28T03:22:09.636550+00:00"
+    "last_updated": "2026-08-28T03:30:40.046564+00:00"
   },
   {
     "symbol": "GEHC",
@@ -115266,7 +115266,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.6
     },
-    "last_updated": "2026-08-28T03:22:09.642856+00:00"
+    "last_updated": "2026-08-28T03:30:40.063443+00:00"
   },
   {
     "symbol": "GILD",
@@ -116932,7 +116932,7 @@
       "coverage_count": 10,
       "average_upside_pct": 14.8
     },
-    "last_updated": "2026-08-28T03:22:09.649254+00:00"
+    "last_updated": "2026-08-28T03:30:40.063443+00:00"
   },
   {
     "symbol": "GNRC",
@@ -118592,7 +118592,7 @@
       "coverage_count": 10,
       "average_upside_pct": 47.3
     },
-    "last_updated": "2026-08-28T03:22:09.655684+00:00"
+    "last_updated": "2026-08-28T03:30:40.063443+00:00"
   },
   {
     "symbol": "GOOG",
@@ -120258,7 +120258,7 @@
       "coverage_count": 10,
       "average_upside_pct": 32.5
     },
-    "last_updated": "2026-08-28T03:22:09.663580+00:00"
+    "last_updated": "2026-08-28T03:30:40.078249+00:00"
   },
   {
     "symbol": "GOOGL",
@@ -121924,7 +121924,7 @@
       "coverage_count": 10,
       "average_upside_pct": 31.3
     },
-    "last_updated": "2026-08-28T03:22:09.670015+00:00"
+    "last_updated": "2026-08-28T03:30:40.078249+00:00"
   },
   {
     "symbol": "GS",
@@ -123590,7 +123590,7 @@
       "coverage_count": 10,
       "average_upside_pct": 6.0
     },
-    "last_updated": "2026-08-28T03:22:09.676392+00:00"
+    "last_updated": "2026-08-28T03:30:40.097412+00:00"
   },
   {
     "symbol": "GWH",
@@ -125150,7 +125150,7 @@
       "coverage_count": 3,
       "average_upside_pct": 53.5
     },
-    "last_updated": "2026-08-28T03:22:09.682785+00:00"
+    "last_updated": "2026-08-28T03:30:40.104245+00:00"
   },
   {
     "symbol": "HD",
@@ -126816,7 +126816,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:22:09.689067+00:00"
+    "last_updated": "2026-08-28T03:30:40.111833+00:00"
   },
   {
     "symbol": "HON",
@@ -128490,7 +128490,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:22:09.696941+00:00"
+    "last_updated": "2026-08-28T03:30:40.118370+00:00"
   },
   {
     "symbol": "IBM",
@@ -130156,7 +130156,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.1
     },
-    "last_updated": "2026-08-28T03:22:09.703321+00:00"
+    "last_updated": "2026-08-28T03:30:40.126502+00:00"
   },
   {
     "symbol": "IDXX",
@@ -131817,7 +131817,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.6
     },
-    "last_updated": "2026-08-28T03:22:09.709747+00:00"
+    "last_updated": "2026-08-28T03:30:40.134622+00:00"
   },
   {
     "symbol": "INSM",
@@ -133477,7 +133477,7 @@
       "coverage_count": 10,
       "average_upside_pct": 52.4
     },
-    "last_updated": "2026-08-28T03:22:09.715643+00:00"
+    "last_updated": "2026-08-28T03:30:40.144449+00:00"
   },
   {
     "symbol": "INTC",
@@ -135138,7 +135138,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.2
     },
-    "last_updated": "2026-08-28T03:22:09.723635+00:00"
+    "last_updated": "2026-08-28T03:30:40.154058+00:00"
   },
   {
     "symbol": "INTU",
@@ -136804,7 +136804,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:22:09.729997+00:00"
+    "last_updated": "2026-08-28T03:30:40.163898+00:00"
   },
   {
     "symbol": "IOT",
@@ -138336,7 +138336,7 @@
       "coverage_count": 2,
       "average_upside_pct": 31.5
     },
-    "last_updated": "2026-08-28T03:22:09.736530+00:00"
+    "last_updated": "2026-08-28T03:30:40.173032+00:00"
   },
   {
     "symbol": "ISRG",
@@ -139997,7 +139997,7 @@
       "coverage_count": 10,
       "average_upside_pct": 32.5
     },
-    "last_updated": "2026-08-28T03:22:09.742427+00:00"
+    "last_updated": "2026-08-28T03:30:40.184266+00:00"
   },
   {
     "symbol": "JNJ",
@@ -141663,7 +141663,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.1
     },
-    "last_updated": "2026-08-28T03:22:09.749002+00:00"
+    "last_updated": "2026-08-28T03:30:40.193911+00:00"
   },
   {
     "symbol": "JPM",
@@ -143329,7 +143329,7 @@
       "coverage_count": 10,
       "average_upside_pct": 8.1
     },
-    "last_updated": "2026-08-28T03:22:09.755453+00:00"
+    "last_updated": "2026-08-28T03:30:40.205110+00:00"
   },
   {
     "symbol": "KDP",
@@ -144995,7 +144995,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:22:09.762011+00:00"
+    "last_updated": "2026-08-28T03:30:40.216309+00:00"
   },
   {
     "symbol": "KHC",
@@ -146661,7 +146661,7 @@
       "coverage_count": 10,
       "average_upside_pct": -5.2
     },
-    "last_updated": "2026-08-28T03:22:09.768615+00:00"
+    "last_updated": "2026-08-28T03:30:40.227077+00:00"
   },
   {
     "symbol": "KLAC",
@@ -148334,7 +148334,7 @@
       "coverage_count": 10,
       "average_upside_pct": 39.1
     },
-    "last_updated": "2026-08-28T03:22:09.775100+00:00"
+    "last_updated": "2026-08-28T03:30:40.234944+00:00"
   },
   {
     "symbol": "KO",
@@ -150000,7 +150000,7 @@
       "coverage_count": 10,
       "average_upside_pct": 8.9
     },
-    "last_updated": "2026-08-28T03:22:09.781635+00:00"
+    "last_updated": "2026-08-28T03:30:40.244547+00:00"
   },
   {
     "symbol": "LIN",
@@ -151666,7 +151666,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:22:09.788187+00:00"
+    "last_updated": "2026-08-28T03:30:40.252588+00:00"
   },
   {
     "symbol": "LLY",
@@ -151680,7 +151680,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company LLY.",
+    "description": "Global pharmaceutical leader discovering and commercializing breakthrough therapies across cardiometabolic health (Mounjaro, Zepbound), oncology, and immunology.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
     "entry_price": 1176.1,
@@ -153331,7 +153331,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.8
     },
-    "last_updated": "2026-08-28T03:22:09.794689+00:00"
+    "last_updated": "2026-08-28T03:30:40.260500+00:00"
   },
   {
     "symbol": "LMT",
@@ -153345,7 +153345,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company LMT.",
+    "description": "World's largest defense prime contractor specializing in advanced aerospace (F-35 Lightning II), precision missiles, hypersonics, and tactical rotorcraft.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
     "entry_price": 565.89,
@@ -154996,7 +154996,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:22:09.799550+00:00"
+    "last_updated": "2026-08-28T03:30:40.266762+00:00"
   },
   {
     "symbol": "LRCX",
@@ -156662,7 +156662,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.4
     },
-    "last_updated": "2026-08-28T03:22:09.806037+00:00"
+    "last_updated": "2026-08-28T03:30:40.274586+00:00"
   },
   {
     "symbol": "MA",
@@ -158327,7 +158327,7 @@
       "coverage_count": 10,
       "average_upside_pct": 16.0
     },
-    "last_updated": "2026-08-28T03:22:09.812481+00:00"
+    "last_updated": "2026-08-28T03:30:40.280673+00:00"
   },
   {
     "symbol": "MAR",
@@ -159993,7 +159993,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.0
     },
-    "last_updated": "2026-08-28T03:22:09.819092+00:00"
+    "last_updated": "2026-08-28T03:30:40.288502+00:00"
   },
   {
     "symbol": "MCD",
@@ -161659,7 +161659,7 @@
       "coverage_count": 10,
       "average_upside_pct": 14.4
     },
-    "last_updated": "2026-08-28T03:22:09.825591+00:00"
+    "last_updated": "2026-08-28T03:30:40.295605+00:00"
   },
   {
     "symbol": "MCHP",
@@ -163325,7 +163325,7 @@
       "coverage_count": 10,
       "average_upside_pct": 22.2
     },
-    "last_updated": "2026-08-28T03:22:09.830446+00:00"
+    "last_updated": "2026-08-28T03:30:40.305603+00:00"
   },
   {
     "symbol": "MDB",
@@ -163339,7 +163339,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company MDB.",
+    "description": "Developer-centric general purpose data platform providing MongoDB Atlas, a multi-cloud document database for modern web, mobile, and AI applications.",
     "thesis_status": "SELL",
     "conviction_score": 7.6,
     "entry_price": 440.58,
@@ -164983,7 +164983,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:22:09.838072+00:00"
+    "last_updated": "2026-08-28T03:30:40.316946+00:00"
   },
   {
     "symbol": "MDLZ",
@@ -166649,7 +166649,7 @@
       "coverage_count": 10,
       "average_upside_pct": 7.4
     },
-    "last_updated": "2026-08-28T03:22:09.842962+00:00"
+    "last_updated": "2026-08-28T03:30:40.324716+00:00"
   },
   {
     "symbol": "MELI",
@@ -168309,7 +168309,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.2
     },
-    "last_updated": "2026-08-28T03:22:09.848999+00:00"
+    "last_updated": "2026-08-28T03:30:40.331081+00:00"
   },
   {
     "symbol": "META",
@@ -169975,7 +169975,7 @@
       "coverage_count": 10,
       "average_upside_pct": 30.3
     },
-    "last_updated": "2026-08-28T03:22:09.856247+00:00"
+    "last_updated": "2026-08-28T03:30:40.338993+00:00"
   },
   {
     "symbol": "MMM",
@@ -171641,7 +171641,7 @@
       "coverage_count": 10,
       "average_upside_pct": 7.6
     },
-    "last_updated": "2026-08-28T03:22:09.863284+00:00"
+    "last_updated": "2026-08-28T03:30:40.345379+00:00"
   },
   {
     "symbol": "MNDY",
@@ -173173,7 +173173,7 @@
       "coverage_count": 2,
       "average_upside_pct": 33.2
     },
-    "last_updated": "2026-08-28T03:22:09.869572+00:00"
+    "last_updated": "2026-08-28T03:30:40.351659+00:00"
   },
   {
     "symbol": "MNST",
@@ -174841,7 +174841,7 @@
       "coverage_count": 10,
       "average_upside_pct": -35.8
     },
-    "last_updated": "2026-08-28T03:22:09.876020+00:00"
+    "last_updated": "2026-08-28T03:30:40.357466+00:00"
   },
   {
     "symbol": "MPWR",
@@ -176507,7 +176507,7 @@
       "coverage_count": 10,
       "average_upside_pct": 22.3
     },
-    "last_updated": "2026-08-28T03:22:09.880791+00:00"
+    "last_updated": "2026-08-28T03:30:40.363787+00:00"
   },
   {
     "symbol": "MRK",
@@ -178173,7 +178173,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.2
     },
-    "last_updated": "2026-08-28T03:22:09.887060+00:00"
+    "last_updated": "2026-08-28T03:30:40.370144+00:00"
   },
   {
     "symbol": "MRVL",
@@ -179838,7 +179838,7 @@
       "coverage_count": 10,
       "average_upside_pct": 25.0
     },
-    "last_updated": "2026-08-28T03:22:09.893354+00:00"
+    "last_updated": "2026-08-28T03:30:40.376287+00:00"
   },
   {
     "symbol": "MS",
@@ -179852,7 +179852,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company MS.",
+    "description": "Premier global financial services firm providing wealth management, institutional securities trading, investment banking, and asset management.",
     "thesis_status": "SELL",
     "conviction_score": 8.5,
     "entry_price": 214.86,
@@ -181503,7 +181503,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:22:09.904309+00:00"
+    "last_updated": "2026-08-28T03:30:40.387275+00:00"
   },
   {
     "symbol": "MSFT",
@@ -181517,7 +181517,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company MSFT.",
+    "description": "Global technology leader providing enterprise cloud infrastructure (Azure), productivity software (Microsoft 365, Teams), LinkedIn, and AI copilot services.",
     "thesis_status": "HOLD",
     "conviction_score": 9.4,
     "entry_price": 505.06,
@@ -183170,7 +183170,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.0
     },
-    "last_updated": "2026-08-28T03:22:09.910697+00:00"
+    "last_updated": "2026-08-28T03:30:40.393645+00:00"
   },
   {
     "symbol": "MSTR",
@@ -184830,7 +184830,7 @@
       "coverage_count": 10,
       "average_upside_pct": 145.5
     },
-    "last_updated": "2026-08-28T03:22:09.916929+00:00"
+    "last_updated": "2026-08-28T03:30:40.401572+00:00"
   },
   {
     "symbol": "MU",
@@ -186496,7 +186496,7 @@
       "coverage_count": 10,
       "average_upside_pct": 28.6
     },
-    "last_updated": "2026-08-28T03:22:09.923374+00:00"
+    "last_updated": "2026-08-28T03:30:40.407574+00:00"
   },
   {
     "symbol": "NET",
@@ -186510,7 +186510,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company NET.",
+    "description": "Global cloud connectivity and cybersecurity platform providing CDN, DDoS mitigation, Zero Trust network access, and edge computing (Cloudflare Workers).",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
     "entry_price": 308.23,
@@ -188154,7 +188154,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.4
     },
-    "last_updated": "2026-08-28T03:22:09.929877+00:00"
+    "last_updated": "2026-08-28T03:30:40.413986+00:00"
   },
   {
     "symbol": "NFLX",
@@ -189815,7 +189815,7 @@
       "coverage_count": 10,
       "average_upside_pct": 24.4
     },
-    "last_updated": "2026-08-28T03:22:09.936266+00:00"
+    "last_updated": "2026-08-28T03:30:40.420344+00:00"
   },
   {
     "symbol": "NKE",
@@ -191481,7 +191481,7 @@
       "coverage_count": 10,
       "average_upside_pct": 8.6
     },
-    "last_updated": "2026-08-28T03:22:09.942686+00:00"
+    "last_updated": "2026-08-28T03:30:40.426189+00:00"
   },
   {
     "symbol": "NRGV",
@@ -193083,7 +193083,7 @@
       "coverage_count": 6,
       "average_upside_pct": 57.7
     },
-    "last_updated": "2026-08-28T03:22:09.949067+00:00"
+    "last_updated": "2026-08-28T03:30:40.432494+00:00"
   },
   {
     "symbol": "NTLA",
@@ -194741,7 +194741,7 @@
       "coverage_count": 10,
       "average_upside_pct": 71.8
     },
-    "last_updated": "2026-08-28T03:22:09.955451+00:00"
+    "last_updated": "2026-08-28T03:30:40.438848+00:00"
   },
   {
     "symbol": "NU",
@@ -196287,7 +196287,7 @@
       "coverage_count": 3,
       "average_upside_pct": 25.8
     },
-    "last_updated": "2026-08-28T03:22:09.961954+00:00"
+    "last_updated": "2026-08-28T03:30:40.446650+00:00"
   },
   {
     "symbol": "NVDA",
@@ -197962,7 +197962,7 @@
       "coverage_count": 10,
       "average_upside_pct": 42.5
     },
-    "last_updated": "2026-08-28T03:22:09.969885+00:00"
+    "last_updated": "2026-08-28T03:30:40.452882+00:00"
   },
   {
     "symbol": "NXPI",
@@ -199628,7 +199628,7 @@
       "coverage_count": 10,
       "average_upside_pct": 23.1
     },
-    "last_updated": "2026-08-28T03:22:09.976330+00:00"
+    "last_updated": "2026-08-28T03:30:40.459300+00:00"
   },
   {
     "symbol": "ODFL",
@@ -201294,7 +201294,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.9
     },
-    "last_updated": "2026-08-28T03:22:09.982717+00:00"
+    "last_updated": "2026-08-28T03:30:40.465568+00:00"
   },
   {
     "symbol": "ORCL",
@@ -201308,7 +201308,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company ORCL.",
+    "description": "Enterprise technology provider offering Oracle Cloud Infrastructure (OCI), Autonomous Database platforms, and cloud ERP/HCM application suites (Fusion, NetSuite).",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
     "entry_price": 151.94,
@@ -202959,7 +202959,7 @@
       "coverage_count": 10,
       "average_upside_pct": 29.6
     },
-    "last_updated": "2026-08-28T03:22:09.989155+00:00"
+    "last_updated": "2026-08-28T03:30:40.471836+00:00"
   },
   {
     "symbol": "ORLY",
@@ -204620,7 +204620,7 @@
       "coverage_count": 10,
       "average_upside_pct": 19.4
     },
-    "last_updated": "2026-08-28T03:22:09.995650+00:00"
+    "last_updated": "2026-08-28T03:30:40.477916+00:00"
   },
   {
     "symbol": "PANW",
@@ -204634,7 +204634,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company PANW.",
+    "description": "World's leading pure-play cybersecurity provider offering next-generation firewalls (Strata), Prisma Cloud security, and Cortex AI SecOps platforms.",
     "thesis_status": "HOLD",
     "conviction_score": 8.4,
     "entry_price": 382.85,
@@ -206281,7 +206281,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.5
     },
-    "last_updated": "2026-08-28T03:22:10.001949+00:00"
+    "last_updated": "2026-08-28T03:30:40.484338+00:00"
   },
   {
     "symbol": "PAYX",
@@ -207947,7 +207947,7 @@
       "coverage_count": 10,
       "average_upside_pct": 2.4
     },
-    "last_updated": "2026-08-28T03:22:10.008382+00:00"
+    "last_updated": "2026-08-28T03:30:40.490751+00:00"
   },
   {
     "symbol": "PCAR",
@@ -209613,7 +209613,7 @@
       "coverage_count": 10,
       "average_upside_pct": 7.9
     },
-    "last_updated": "2026-08-28T03:22:10.014772+00:00"
+    "last_updated": "2026-08-28T03:30:40.497268+00:00"
   },
   {
     "symbol": "PDD",
@@ -211273,7 +211273,7 @@
       "coverage_count": 10,
       "average_upside_pct": 26.2
     },
-    "last_updated": "2026-08-28T03:22:10.021074+00:00"
+    "last_updated": "2026-08-28T03:30:40.503817+00:00"
   },
   {
     "symbol": "PEP",
@@ -212939,7 +212939,7 @@
       "coverage_count": 10,
       "average_upside_pct": 8.2
     },
-    "last_updated": "2026-08-28T03:22:10.027515+00:00"
+    "last_updated": "2026-08-28T03:30:40.510081+00:00"
   },
   {
     "symbol": "PG",
@@ -214605,7 +214605,7 @@
       "coverage_count": 10,
       "average_upside_pct": 11.0
     },
-    "last_updated": "2026-08-28T03:22:10.035358+00:00"
+    "last_updated": "2026-08-28T03:30:40.516369+00:00"
   },
   {
     "symbol": "PLTR",
@@ -216258,7 +216258,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:22:10.041882+00:00"
+    "last_updated": "2026-08-28T03:30:40.522851+00:00"
   },
   {
     "symbol": "PYPL",
@@ -217924,7 +217924,7 @@
       "coverage_count": 10,
       "average_upside_pct": -2.2
     },
-    "last_updated": "2026-08-28T03:22:10.048218+00:00"
+    "last_updated": "2026-08-28T03:30:40.529317+00:00"
   },
   {
     "symbol": "QCOM",
@@ -219590,7 +219590,7 @@
       "coverage_count": 10,
       "average_upside_pct": 25.3
     },
-    "last_updated": "2026-08-28T03:22:10.054584+00:00"
+    "last_updated": "2026-08-28T03:30:40.535710+00:00"
   },
   {
     "symbol": "REGN",
@@ -221256,7 +221256,7 @@
       "coverage_count": 10,
       "average_upside_pct": -1.0
     },
-    "last_updated": "2026-08-28T03:22:10.060958+00:00"
+    "last_updated": "2026-08-28T03:30:40.543009+00:00"
   },
   {
     "symbol": "ROP",
@@ -222922,7 +222922,7 @@
       "coverage_count": 10,
       "average_upside_pct": 16.5
     },
-    "last_updated": "2026-08-28T03:22:10.067281+00:00"
+    "last_updated": "2026-08-28T03:30:40.549286+00:00"
   },
   {
     "symbol": "ROST",
@@ -224588,7 +224588,7 @@
       "coverage_count": 10,
       "average_upside_pct": 10.1
     },
-    "last_updated": "2026-08-28T03:22:10.073772+00:00"
+    "last_updated": "2026-08-28T03:30:40.555594+00:00"
   },
   {
     "symbol": "SBUX",
@@ -226254,7 +226254,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:22:10.080192+00:00"
+    "last_updated": "2026-08-28T03:30:40.561770+00:00"
   },
   {
     "symbol": "SEDG",
@@ -227912,7 +227912,7 @@
       "coverage_count": 10,
       "average_upside_pct": -1.9
     },
-    "last_updated": "2026-08-28T03:22:10.088199+00:00"
+    "last_updated": "2026-08-28T03:30:40.568105+00:00"
   },
   {
     "symbol": "SHOP",
@@ -229572,7 +229572,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.1
     },
-    "last_updated": "2026-08-28T03:22:10.094593+00:00"
+    "last_updated": "2026-08-28T03:30:40.575648+00:00"
   },
   {
     "symbol": "SHW",
@@ -231238,7 +231238,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.2
     },
-    "last_updated": "2026-08-28T03:22:10.101012+00:00"
+    "last_updated": "2026-08-28T03:30:40.582062+00:00"
   },
   {
     "symbol": "SLDP",
@@ -232812,7 +232812,7 @@
       "coverage_count": 4,
       "average_upside_pct": 86.8
     },
-    "last_updated": "2026-08-28T03:22:10.107518+00:00"
+    "last_updated": "2026-08-28T03:30:40.588480+00:00"
   },
   {
     "symbol": "SNOW",
@@ -232826,7 +232826,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company SNOW.",
+    "description": "Cloud Data Cloud platform enabling enterprise data warehousing, data lakes, secure data sharing, and AI application development across multi-cloud environments.",
     "thesis_status": "HOLD",
     "conviction_score": 7.8,
     "entry_price": 329.11,
@@ -234470,7 +234470,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.7
     },
-    "last_updated": "2026-08-28T03:22:10.113828+00:00"
+    "last_updated": "2026-08-28T03:30:40.594636+00:00"
   },
   {
     "symbol": "SNPS",
@@ -236131,7 +236131,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.9
     },
-    "last_updated": "2026-08-28T03:22:10.121752+00:00"
+    "last_updated": "2026-08-28T03:30:40.601007+00:00"
   },
   {
     "symbol": "SPGI",
@@ -236145,7 +236145,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company SPGI.",
+    "description": "Premier financial information provider delivering independent credit ratings, index benchmarks (S&P 500, Dow Jones), and essential market intelligence.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
     "entry_price": 435.39,
@@ -237807,7 +237807,7 @@
       "coverage_count": 10,
       "average_upside_pct": 20.3
     },
-    "last_updated": "2026-08-28T03:22:10.128093+00:00"
+    "last_updated": "2026-08-28T03:30:40.607750+00:00"
   },
   {
     "symbol": "STOK",
@@ -239465,7 +239465,7 @@
       "coverage_count": 10,
       "average_upside_pct": 36.9
     },
-    "last_updated": "2026-08-28T03:22:10.134621+00:00"
+    "last_updated": "2026-08-28T03:30:40.615085+00:00"
   },
   {
     "symbol": "STX",
@@ -241131,7 +241131,7 @@
       "coverage_count": 10,
       "average_upside_pct": 44.7
     },
-    "last_updated": "2026-08-28T03:22:10.141095+00:00"
+    "last_updated": "2026-08-28T03:30:40.621367+00:00"
   },
   {
     "symbol": "SYK",
@@ -241145,7 +241145,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company SYK.",
+    "description": "Global medical technology leader providing orthopedic joint replacement implants, Mako robotic-arm surgical systems, and surgical equipment.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
     "entry_price": 322.12,
@@ -242796,7 +242796,7 @@
       "coverage_count": 10,
       "average_upside_pct": 13.7
     },
-    "last_updated": "2026-08-28T03:22:10.147655+00:00"
+    "last_updated": "2026-08-28T03:30:40.627675+00:00"
   },
   {
     "symbol": "TDOC",
@@ -244454,7 +244454,7 @@
       "coverage_count": 10,
       "average_upside_pct": 27.5
     },
-    "last_updated": "2026-08-28T03:22:10.154128+00:00"
+    "last_updated": "2026-08-28T03:30:40.634092+00:00"
   },
   {
     "symbol": "TEAM",
@@ -246114,7 +246114,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:22:10.160706+00:00"
+    "last_updated": "2026-08-28T03:30:40.640516+00:00"
   },
   {
     "symbol": "TMO",
@@ -246128,7 +246128,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company TMO.",
+    "description": "World leader in serving science, supplying analytical instruments, life science reagents, biopharma contract manufacturing (PPD), and specialty diagnostics.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
     "entry_price": 630.7,
@@ -247779,7 +247779,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.5
     },
-    "last_updated": "2026-08-28T03:22:10.167216+00:00"
+    "last_updated": "2026-08-28T03:30:40.646485+00:00"
   },
   {
     "symbol": "TMUS",
@@ -249445,7 +249445,7 @@
       "coverage_count": 10,
       "average_upside_pct": 27.5
     },
-    "last_updated": "2026-08-28T03:22:10.173650+00:00"
+    "last_updated": "2026-08-28T03:30:40.652736+00:00"
   },
   {
     "symbol": "TOST",
@@ -250977,7 +250977,7 @@
       "coverage_count": 2,
       "average_upside_pct": 28.3
     },
-    "last_updated": "2026-08-28T03:22:10.180238+00:00"
+    "last_updated": "2026-08-28T03:30:40.658960+00:00"
   },
   {
     "symbol": "TRI",
@@ -252642,7 +252642,7 @@
       "coverage_count": 10,
       "average_upside_pct": 34.9
     },
-    "last_updated": "2026-08-28T03:22:10.186544+00:00"
+    "last_updated": "2026-08-28T03:30:40.665465+00:00"
   },
   {
     "symbol": "TRV",
@@ -254308,7 +254308,7 @@
       "coverage_count": 10,
       "average_upside_pct": -2.1
     },
-    "last_updated": "2026-08-28T03:22:10.193108+00:00"
+    "last_updated": "2026-08-28T03:30:40.672066+00:00"
   },
   {
     "symbol": "TSLA",
@@ -255969,7 +255969,7 @@
       "coverage_count": 10,
       "average_upside_pct": 42.9
     },
-    "last_updated": "2026-08-28T03:22:10.199620+00:00"
+    "last_updated": "2026-08-28T03:30:40.678404+00:00"
   },
   {
     "symbol": "TSM",
@@ -255983,7 +255983,7 @@
     "adr_ratio": 5.0,
     "adr_underlying_description": "1 ADR = 5 TWSE Ordinary Shares",
     "depositary_bank": "Citibank, N.A.",
-    "description": "Public company TSM.",
+    "description": "World's largest dedicated semiconductor foundry, manufacturing advanced silicon (3nm, 2nm, CoWoS packaging) for leading global chip designers.",
     "thesis_status": "BUY",
     "conviction_score": 9.3,
     "entry_price": 427.3,
@@ -257604,7 +257604,7 @@
       "coverage_count": 8,
       "average_upside_pct": 31.1
     },
-    "last_updated": "2026-08-28T03:22:10.206188+00:00"
+    "last_updated": "2026-08-28T03:30:40.684905+00:00"
   },
   {
     "symbol": "TTD",
@@ -257618,7 +257618,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company TTD.",
+    "description": "Independent cloud-based demand-side programmatic advertising platform empowering ad buyers to optimize campaigns across Connected TV, audio, and web.",
     "thesis_status": "SELL",
     "conviction_score": 7.9,
     "entry_price": 13.42,
@@ -259264,7 +259264,7 @@
       "coverage_count": 10,
       "average_upside_pct": -14.4
     },
-    "last_updated": "2026-08-28T03:22:10.212822+00:00"
+    "last_updated": "2026-08-28T03:30:40.691160+00:00"
   },
   {
     "symbol": "TTWO",
@@ -260925,7 +260925,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.8
     },
-    "last_updated": "2026-08-28T03:22:10.218800+00:00"
+    "last_updated": "2026-08-28T03:30:40.699005+00:00"
   },
   {
     "symbol": "TXN",
@@ -262591,7 +262591,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:22:10.226536+00:00"
+    "last_updated": "2026-08-28T03:30:40.705675+00:00"
   },
   {
     "symbol": "UBER",
@@ -262605,7 +262605,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company UBER.",
+    "description": "Global mobility and logistics platform connecting consumers with on-demand rides, food and grocery delivery (Uber Eats), and enterprise freight services.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
     "entry_price": 76.95,
@@ -264251,7 +264251,7 @@
       "coverage_count": 10,
       "average_upside_pct": 44.5
     },
-    "last_updated": "2026-08-28T03:22:10.232789+00:00"
+    "last_updated": "2026-08-28T03:30:40.712016+00:00"
   },
   {
     "symbol": "UNH",
@@ -265917,7 +265917,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.6
     },
-    "last_updated": "2026-08-28T03:22:10.238951+00:00"
+    "last_updated": "2026-08-28T03:30:40.718621+00:00"
   },
   {
     "symbol": "UNP",
@@ -265931,7 +265931,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company UNP.",
+    "description": "North America's premier transcontinental freight railroad operating over 32,000 route miles connecting 23 western US states, Pacific ports, and Mexican gateways.",
     "thesis_status": "SELL",
     "conviction_score": 8.5,
     "entry_price": 307.67,
@@ -267582,7 +267582,7 @@
       "coverage_count": 10,
       "average_upside_pct": 9.4
     },
-    "last_updated": "2026-08-28T03:22:10.245477+00:00"
+    "last_updated": "2026-08-28T03:30:40.725524+00:00"
   },
   {
     "symbol": "V",
@@ -269248,7 +269248,7 @@
       "coverage_count": 10,
       "average_upside_pct": 15.8
     },
-    "last_updated": "2026-08-28T03:22:10.252456+00:00"
+    "last_updated": "2026-08-28T03:30:40.731296+00:00"
   },
   {
     "symbol": "VRSK",
@@ -270914,7 +270914,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.0
     },
-    "last_updated": "2026-08-28T03:22:10.258835+00:00"
+    "last_updated": "2026-08-28T03:30:40.737922+00:00"
   },
   {
     "symbol": "VRT",
@@ -270928,7 +270928,7 @@
     "adr_ratio": null,
     "adr_underlying_description": "Common Stock",
     "depositary_bank": null,
-    "description": "Public company VRT.",
+    "description": "Global leader in critical digital infrastructure, designing power management, precision liquid cooling, and thermal management for AI data centers.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
     "entry_price": 269.28,
@@ -272579,7 +272579,7 @@
       "coverage_count": 10,
       "average_upside_pct": 50.8
     },
-    "last_updated": "2026-08-28T03:22:10.266598+00:00"
+    "last_updated": "2026-08-28T03:30:40.744577+00:00"
   },
   {
     "symbol": "VRTX",
@@ -274240,7 +274240,7 @@
       "coverage_count": 10,
       "average_upside_pct": 18.3
     },
-    "last_updated": "2026-08-28T03:22:10.274021+00:00"
+    "last_updated": "2026-08-28T03:30:40.751017+00:00"
   },
   {
     "symbol": "VZ",
@@ -275906,7 +275906,7 @@
       "coverage_count": 10,
       "average_upside_pct": 7.0
     },
-    "last_updated": "2026-08-28T03:22:10.281596+00:00"
+    "last_updated": "2026-08-28T03:30:40.757924+00:00"
   },
   {
     "symbol": "WBD",
@@ -277567,7 +277567,7 @@
       "coverage_count": 10,
       "average_upside_pct": 2.2
     },
-    "last_updated": "2026-08-28T03:22:10.287922+00:00"
+    "last_updated": "2026-08-28T03:30:40.763968+00:00"
   },
   {
     "symbol": "WDAY",
@@ -279228,7 +279228,7 @@
       "coverage_count": 10,
       "average_upside_pct": 11.7
     },
-    "last_updated": "2026-08-28T03:22:10.293874+00:00"
+    "last_updated": "2026-08-28T03:30:40.772079+00:00"
   },
   {
     "symbol": "WDC",
@@ -280894,7 +280894,7 @@
       "coverage_count": 10,
       "average_upside_pct": 34.2
     },
-    "last_updated": "2026-08-28T03:22:10.301287+00:00"
+    "last_updated": "2026-08-28T03:30:40.778275+00:00"
   },
   {
     "symbol": "WMT",
@@ -282561,7 +282561,7 @@
       "coverage_count": 10,
       "average_upside_pct": 21.4
     },
-    "last_updated": "2026-08-28T03:22:10.307586+00:00"
+    "last_updated": "2026-08-28T03:30:40.784686+00:00"
   },
   {
     "symbol": "XEL",
@@ -284227,7 +284227,7 @@
       "coverage_count": 10,
       "average_upside_pct": 17.8
     },
-    "last_updated": "2026-08-28T03:22:10.314066+00:00"
+    "last_updated": "2026-08-28T03:30:40.791126+00:00"
   },
   {
     "symbol": "XYZ",
@@ -285863,7 +285863,7 @@
       "coverage_count": 10,
       "average_upside_pct": 31.8
     },
-    "last_updated": "2026-08-28T03:22:10.319862+00:00"
+    "last_updated": "2026-08-28T03:30:40.797778+00:00"
   },
   {
     "symbol": "ZM",
@@ -287521,7 +287521,7 @@
       "coverage_count": 10,
       "average_upside_pct": 20.9
     },
-    "last_updated": "2026-08-28T03:22:10.326022+00:00"
+    "last_updated": "2026-08-28T03:30:40.804107+00:00"
   },
   {
     "symbol": "ZS",
@@ -289181,6 +289181,6 @@
       "coverage_count": 10,
       "average_upside_pct": 47.7
     },
-    "last_updated": "2026-08-28T03:22:10.334143+00:00"
+    "last_updated": "2026-08-28T03:30:40.810158+00:00"
   }
 ]

@@ -809,6 +809,17 @@ class QualityController:
                 "description": f"[{sym}] Conviction score {score} is out of valid bounds [0.0, 10.0]."
             })
 
+        desc = u_entry.get("description", "")
+        if not desc or desc.startswith("Public company ") or len(desc) < 20:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "COMPANY_DESCRIPTION_SUBSTANCE",
+                "symbol": sym,
+                "field": "description",
+                "actual": desc,
+                "description": f"[{sym}] Missing or placeholder company description: '{desc}'."
+            })
+
         for req_field in ["moat", "invalidation_criteria", "latest_catalyst", "holding_period"]:
             if not u_entry.get(req_field):
                 issues.append({

@@ -65,11 +65,16 @@ function getFilteredAndSortedData() {
       const matchName = item.name && item.name.toLowerCase().includes(query);
       const matchSec = item.sector && item.sector.toLowerCase().includes(query);
       const matchInd = item.industry && item.industry.toLowerCase().includes(query);
+      const matchDesc = (item.description && item.description.toLowerCase().includes(query)) ||
+                        (item.business_profile && item.business_profile.toLowerCase().includes(query));
+      const matchMoat = (item.moat && item.moat.toLowerCase().includes(query)) ||
+                        (item.competitive_moat_analysis && item.competitive_moat_analysis.toLowerCase().includes(query));
+      const matchCat = item.latest_catalyst && item.latest_catalyst.toLowerCase().includes(query);
       const matchListing = item.listing_type && item.listing_type.toLowerCase().includes(query);
       const matchCountry = item.country_of_origin && item.country_of_origin.toLowerCase().includes(query);
       const matchAdr = (item.is_adr && query === 'adr') || (item.listing_type && item.listing_type.toLowerCase() === query);
       const matchAdrDesc = item.adr_underlying_description && item.adr_underlying_description.toLowerCase().includes(query);
-      if (!matchSym && !matchName && !matchSec && !matchInd && !matchMoat && !matchCat && !matchListing && !matchCountry && !matchAdr && !matchAdrDesc) return false;
+      if (!matchSym && !matchName && !matchSec && !matchInd && !matchDesc && !matchMoat && !matchCat && !matchListing && !matchCountry && !matchAdr && !matchAdrDesc) return false;
     }
     return true;
   });

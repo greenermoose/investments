@@ -276,3 +276,7 @@ Then open `http://localhost:8080` in your web browser:
 
 4. **Prompt the Agent Team for Weekly Deliberation:**
    - Copy the master prompt template from [weekly_deliberation.md](context/prompts/weekly_deliberation.md) into your AI session to generate your Monday Trading Plan in `private/plans/YYYY-MM-DD-plan.txt`.
+
+## License
+
+This project is licensed under the terms of the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full text.

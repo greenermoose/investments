@@ -1,0 +1,96 @@
+{
+  "symbol": "GEV",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1996810",
+  "last_updated": "2026-08-28T13:19:07.582022+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1996810",
+      "data": {
+        "shares_outstanding": 266333581,
+        "revenue": 20442000000.0,
+        "balance_sheet": {
+          "total_assets": 80800000000.0,
+          "total_liabilities": 67685000000.0,
+          "total_shareholders_equity": 11957000000.0,
+          "total_debt": 2794000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 13120000000.0,
+          "cash_primary": 13120000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1996810",
+      "data": {
+        "shares_outstanding": 268719995,
+        "revenue": 9339000000.0,
+        "balance_sheet": {
+          "total_assets": 75612000000.0,
+          "total_liabilities": 60547000000.0,
+          "total_shareholders_equity": 13922000000.0,
+          "total_debt": 2806000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 10172000000.0,
+          "cash_primary": 10172000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1996810",
+      "data": {
+        "shares_outstanding": 269529464,
+        "revenue": 38068000000.0,
+        "balance_sheet": {
+          "total_assets": 63016000000.0,
+          "total_liabilities": 50720000000.0,
+          "total_shareholders_equity": 11178000000.0,
+          "total_debt": 265000000.0,
+          "short_term_debt": 63000000.0,
+          "long_term_debt": 254000000.0,
+          "cash_and_cash_equivalents": 8848000000.0,
+          "cash_primary": 8848000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-22",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1996810",
+      "data": {
+        "shares_outstanding": 271320459,
+        "revenue": 27112000000.0,
+        "balance_sheet": {
+          "total_assets": 54398000000.0,
+          "total_liabilities": 44669000000.0,
+          "total_shareholders_equity": 8646000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 7945000000.0,
+          "cash_primary": 7945000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://www.gevernova.com/investors"
+}

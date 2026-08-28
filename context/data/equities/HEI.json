@@ -1,0 +1,96 @@
+{
+  "symbol": "HEI",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
+  "last_updated": "2026-08-28T13:19:08.735233+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-27",
+      "period_start": "2025-11-01",
+      "period_end": "2026-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
+      "data": {
+        "shares_outstanding": 139544000,
+        "revenue": 3967345000.0,
+        "balance_sheet": {
+          "total_assets": 9936611000.0,
+          "total_liabilities": 4293786000.0,
+          "total_shareholders_equity": 4947689000.0,
+          "total_debt": 2541173000.0,
+          "short_term_debt": 3513000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 240959000.0,
+          "cash_primary": 240959000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-29",
+      "period_start": "2025-11-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
+      "data": {
+        "shares_outstanding": 139464000,
+        "revenue": 2554295000.0,
+        "balance_sheet": {
+          "total_assets": 9592213000.0,
+          "total_liabilities": 4200642000.0,
+          "total_shareholders_equity": 4772058000.0,
+          "total_debt": 2587290000.0,
+          "short_term_debt": 3402000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 210335000.0,
+          "cash_primary": 210335000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-11-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
+      "data": {
+        "shares_outstanding": 139368000,
+        "revenue": 1178582000.0,
+        "balance_sheet": {
+          "total_assets": 9043696000.0,
+          "total_liabilities": 3997967000.0,
+          "total_shareholders_equity": 4502687000.0,
+          "total_debt": 2507681000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 260971000.0,
+          "cash_primary": 260971000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-12-22",
+      "period_start": "2024-11-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=46619",
+      "data": {
+        "shares_outstanding": 139048000,
+        "revenue": 4485044000.0,
+        "balance_sheet": {
+          "total_assets": 8500434000.0,
+          "total_liabilities": 3653901000.0,
+          "total_shareholders_equity": 4305319000.0,
+          "total_debt": 2167945000.0,
+          "short_term_debt": 3358000.0,
+          "long_term_debt": 14486000.0,
+          "cash_and_cash_equivalents": 217781000.0,
+          "cash_primary": 217781000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://www.heico.com/investor-relations/"
+}

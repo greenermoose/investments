@@ -53,7 +53,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AAPL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ABBV",
@@ -87,7 +87,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ABBV"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ABNB",
@@ -121,7 +121,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ABNB"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ABT",
@@ -155,7 +155,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ABT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
+    },
+    {
+      "symbol": "ACN",
+      "company_name": "ACN Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "ACN Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=ACN"
+        },
+        {
+          "headline": "ACN Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ACN"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ADBE",
@@ -189,7 +223,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ADBE"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ADI",
@@ -223,7 +257,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ADI"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ADP",
@@ -257,7 +291,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ADP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ADSK",
@@ -291,7 +325,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ADSK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AEP",
@@ -325,7 +359,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AEP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
+    },
+    {
+      "symbol": "ALGN",
+      "company_name": "ALGN Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "ALGN Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=ALGN"
+        },
+        {
+          "headline": "ALGN Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ALGN"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ALNY",
@@ -359,7 +427,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ALNY"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AMAT",
@@ -393,7 +461,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AMAT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AMD",
@@ -427,7 +495,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AMD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AMGN",
@@ -461,7 +529,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AMGN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AMZN",
@@ -502,7 +570,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AMZN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ANET",
@@ -536,7 +604,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ANET"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "APH",
@@ -570,7 +638,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=APH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "APP",
@@ -604,7 +672,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=APP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ARM",
@@ -638,7 +706,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ARM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "ASML",
@@ -672,7 +740,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ASML"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AVGO",
@@ -706,7 +774,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AVGO"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AXON",
@@ -740,7 +808,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AXON"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "AXP",
@@ -774,7 +842,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=AXP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BA",
@@ -808,7 +876,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BAM",
@@ -842,7 +910,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BAM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BEAM",
@@ -882,7 +950,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BEAM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BETA",
@@ -916,7 +984,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BETA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BKNG",
@@ -950,7 +1018,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BKNG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BKR",
@@ -984,7 +1052,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BKR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BLK",
@@ -1018,7 +1086,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BLK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BRK-B",
@@ -1052,7 +1120,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BRK-B"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "BSX",
@@ -1086,7 +1154,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=BSX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CAT",
@@ -1120,7 +1188,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CAT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CAVA",
@@ -1154,7 +1222,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CAVA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CCEP",
@@ -1188,7 +1256,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CCEP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CDNS",
@@ -1222,7 +1290,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CDNS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CEG",
@@ -1256,7 +1324,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CEG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CHTR",
@@ -1290,7 +1358,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CHTR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CMCSA",
@@ -1324,7 +1392,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CMCSA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
+    },
+    {
+      "symbol": "CME",
+      "company_name": "CME Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "CME Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=CME"
+        },
+        {
+          "headline": "CME Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CME"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "COST",
@@ -1358,7 +1460,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=COST"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CPRT",
@@ -1392,7 +1494,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CPRT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CRM",
@@ -1426,7 +1528,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CRM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CRSP",
@@ -1466,7 +1568,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CRSP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CRWD",
@@ -1500,7 +1602,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CRWD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CSCO",
@@ -1534,7 +1636,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CSCO"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CSGP",
@@ -1568,7 +1670,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CSGP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CSIQ",
@@ -1608,7 +1710,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CSIQ"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CSX",
@@ -1642,7 +1744,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CSX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CTAS",
@@ -1676,7 +1778,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CTAS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CTSH",
@@ -1710,7 +1812,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CTSH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.554705+00:00"
     },
     {
       "symbol": "CVX",
@@ -1744,7 +1846,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=CVX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DASH",
@@ -1778,7 +1880,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DASH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DDOG",
@@ -1812,7 +1914,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DDOG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DE",
@@ -1846,7 +1948,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DE"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DHR",
@@ -1880,7 +1982,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DHR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DIS",
@@ -1914,7 +2016,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DIS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "DT",
+      "company_name": "DT Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "DT Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=DT"
+        },
+        {
+          "headline": "DT Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DT"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DUOL",
@@ -1948,7 +2084,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DUOL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "DXCM",
@@ -1982,7 +2118,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=DXCM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "EA",
@@ -2016,7 +2152,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "EDIT",
@@ -2056,7 +2192,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EDIT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "EME",
+      "company_name": "EME Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "EME Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=EME"
+        },
+        {
+          "headline": "EME Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EME"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ENPH",
@@ -2096,7 +2266,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ENPH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ENVX",
@@ -2130,7 +2300,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ENVX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "EOSE",
@@ -2164,7 +2334,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EOSE"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ETN",
@@ -2198,7 +2368,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ETN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "EW",
+      "company_name": "EW Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "EW Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=EW"
+        },
+        {
+          "headline": "EW Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EW"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "EXC",
@@ -2232,7 +2436,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=EXC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "FANG",
@@ -2266,7 +2470,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=FANG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "FAST",
@@ -2300,7 +2504,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=FAST"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "FER",
@@ -2334,7 +2538,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=FER"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "FICO",
+      "company_name": "FICO Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "FICO Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=FICO"
+        },
+        {
+          "headline": "FICO Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=FICO"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "FTNT",
@@ -2368,7 +2606,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=FTNT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GE",
@@ -2402,7 +2640,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GE"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GEHC",
@@ -2436,7 +2674,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GEHC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "GEV",
+      "company_name": "GEV Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "GEV Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=GEV"
+        },
+        {
+          "headline": "GEV Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GEV"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GILD",
@@ -2470,7 +2742,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GILD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GNRC",
@@ -2504,7 +2776,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GNRC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GOOG",
@@ -2538,7 +2810,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GOOG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GOOGL",
@@ -2572,7 +2844,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GOOGL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GS",
@@ -2606,7 +2878,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "GTLB",
+      "company_name": "GTLB Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "GTLB Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=GTLB"
+        },
+        {
+          "headline": "GTLB Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GTLB"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "GWH",
@@ -2640,7 +2946,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GWH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "GWRE",
+      "company_name": "GWRE Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "GWRE Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=GWRE"
+        },
+        {
+          "headline": "GWRE Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=GWRE"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "HD",
@@ -2674,7 +3014,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=HD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "HEI",
+      "company_name": "HEI Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "HEI Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=HEI"
+        },
+        {
+          "headline": "HEI Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=HEI"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "HON",
@@ -2708,7 +3082,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=HON"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "HUBS",
+      "company_name": "HUBS Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "HUBS Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=HUBS"
+        },
+        {
+          "headline": "HUBS Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=HUBS"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "IBM",
@@ -2742,7 +3150,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=IBM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "ICE",
+      "company_name": "ICE Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "ICE Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=ICE"
+        },
+        {
+          "headline": "ICE Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ICE"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "IDXX",
@@ -2776,7 +3218,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=IDXX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "INSM",
@@ -2810,7 +3252,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=INSM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "INTC",
@@ -2844,7 +3286,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=INTC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "INTU",
@@ -2878,7 +3320,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=INTU"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "IOT",
@@ -2912,7 +3354,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=IOT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ISRG",
@@ -2946,7 +3388,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ISRG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "JNJ",
@@ -2980,7 +3422,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=JNJ"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "JPM",
@@ -3014,7 +3456,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=JPM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "KDP",
@@ -3048,7 +3490,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=KDP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "KHC",
@@ -3082,7 +3524,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=KHC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "KLAC",
@@ -3116,7 +3558,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=KLAC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "KO",
@@ -3150,7 +3592,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=KO"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "LIN",
@@ -3184,7 +3626,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=LIN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "LLY",
@@ -3218,7 +3660,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=LLY"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "LMT",
@@ -3252,7 +3694,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=LMT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "LRCX",
@@ -3286,7 +3728,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=LRCX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MA",
@@ -3320,7 +3762,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "MANH",
+      "company_name": "MANH Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "MANH Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=MANH"
+        },
+        {
+          "headline": "MANH Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MANH"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MAR",
@@ -3354,7 +3830,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MAR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MCD",
@@ -3388,7 +3864,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MCD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MCHP",
@@ -3422,7 +3898,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MCHP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "MCO",
+      "company_name": "MCO Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "MCO Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=MCO"
+        },
+        {
+          "headline": "MCO Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MCO"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MDB",
@@ -3456,7 +3966,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MDB"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MDLZ",
@@ -3490,7 +4000,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MDLZ"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MELI",
@@ -3524,7 +4034,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MELI"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "META",
@@ -3565,7 +4075,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=META"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MMM",
@@ -3599,7 +4109,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MMM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MNDY",
@@ -3633,7 +4143,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MNDY"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MNST",
@@ -3667,7 +4177,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MNST"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MPWR",
@@ -3701,7 +4211,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MPWR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MRK",
@@ -3735,7 +4245,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MRK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MRVL",
@@ -3769,7 +4279,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MRVL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MS",
@@ -3803,7 +4313,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MSFT",
@@ -3844,7 +4354,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MSFT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MSTR",
@@ -3885,7 +4395,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MSTR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "MU",
@@ -3919,7 +4429,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=MU"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NET",
@@ -3953,7 +4463,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NET"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NFLX",
@@ -3987,7 +4497,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NFLX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NKE",
@@ -4021,7 +4531,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NKE"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "NOW",
+      "company_name": "NOW Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "NOW Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=NOW"
+        },
+        {
+          "headline": "NOW Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NOW"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NRGV",
@@ -4055,7 +4599,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NRGV"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NTLA",
@@ -4095,7 +4639,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NTLA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NU",
@@ -4129,7 +4673,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NU"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NVDA",
@@ -4170,7 +4714,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NVDA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "NXPI",
@@ -4204,7 +4748,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=NXPI"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ODFL",
@@ -4238,7 +4782,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ODFL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "ONTO",
+      "company_name": "ONTO Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "ONTO Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=ONTO"
+        },
+        {
+          "headline": "ONTO Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ONTO"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ORCL",
@@ -4272,7 +4850,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ORCL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ORLY",
@@ -4306,7 +4884,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ORLY"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PANW",
@@ -4340,7 +4918,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PANW"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PAYX",
@@ -4374,7 +4952,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PAYX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PCAR",
@@ -4408,7 +4986,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PCAR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PDD",
@@ -4442,7 +5020,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PDD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PEP",
@@ -4476,7 +5054,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PEP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PG",
@@ -4510,7 +5088,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PLTR",
@@ -4551,7 +5129,75 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PLTR"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "PODD",
+      "company_name": "PODD Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "PODD Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=PODD"
+        },
+        {
+          "headline": "PODD Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PODD"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "PWR",
+      "company_name": "PWR Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "PWR Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=PWR"
+        },
+        {
+          "headline": "PWR Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PWR"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "PYPL",
@@ -4585,7 +5231,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=PYPL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "QCOM",
@@ -4619,7 +5265,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=QCOM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "REGN",
@@ -4653,7 +5299,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=REGN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "RMD",
+      "company_name": "RMD Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "RMD Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=RMD"
+        },
+        {
+          "headline": "RMD Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=RMD"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ROP",
@@ -4687,7 +5367,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ROP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "ROST",
@@ -4721,7 +5401,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ROST"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SBUX",
@@ -4755,7 +5435,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SBUX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SEDG",
@@ -4795,7 +5475,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SEDG"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SHOP",
@@ -4829,7 +5509,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SHOP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SHW",
@@ -4863,7 +5543,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SHW"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SLDP",
@@ -4897,7 +5577,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SLDP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SNOW",
@@ -4931,7 +5611,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SNOW"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SNPS",
@@ -4965,7 +5645,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SNPS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SPGI",
@@ -4999,7 +5679,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SPGI"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "STOK",
@@ -5033,7 +5713,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=STOK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "STX",
@@ -5067,7 +5747,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=STX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "SYK",
@@ -5101,7 +5781,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=SYK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
+    },
+    {
+      "symbol": "TDG",
+      "company_name": "TDG Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "TDG Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=TDG"
+        },
+        {
+          "headline": "TDG Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TDG"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "TDOC",
@@ -5135,7 +5849,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TDOC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "TEAM",
@@ -5169,7 +5883,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TEAM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555232+00:00"
     },
     {
       "symbol": "TMO",
@@ -5203,7 +5917,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TMO"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TMUS",
@@ -5237,7 +5951,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TMUS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TOST",
@@ -5271,7 +5985,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TOST"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TRI",
@@ -5305,7 +6019,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TRI"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TRV",
@@ -5339,7 +6053,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TRV"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TSLA",
@@ -5380,7 +6094,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TSLA"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TSM",
@@ -5414,7 +6128,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TSM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TTD",
@@ -5448,7 +6162,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TTD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TTWO",
@@ -5482,7 +6196,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TTWO"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "TXN",
@@ -5516,7 +6230,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TXN"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
+    },
+    {
+      "symbol": "TYL",
+      "company_name": "TYL Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "TYL Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=TYL"
+        },
+        {
+          "headline": "TYL Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=TYL"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "UBER",
@@ -5550,7 +6298,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=UBER"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "UNH",
@@ -5584,7 +6332,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=UNH"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "UNP",
@@ -5618,7 +6366,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=UNP"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
+    },
+    {
+      "symbol": "URI",
+      "company_name": "URI Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "URI Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=URI"
+        },
+        {
+          "headline": "URI Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=URI"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "V",
@@ -5652,7 +6434,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=V"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
+    },
+    {
+      "symbol": "VEEV",
+      "company_name": "VEEV Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "VEEV Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=VEEV"
+        },
+        {
+          "headline": "VEEV Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VEEV"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "VRSK",
@@ -5686,7 +6502,41 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VRSK"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
+    },
+    {
+      "symbol": "VRSN",
+      "company_name": "VRSN Corporation",
+      "sentiment_score": 20.0,
+      "sentiment_label": "NEUTRAL",
+      "discussion_velocity": "NORMAL",
+      "key_investor_concerns": [
+        {
+          "theme": "Macroeconomic Demand Elasticity",
+          "severity": "LOW",
+          "description": "Consumer spending moderation and discretionary wallet share competition.",
+          "chatter_source": "Reddit r/stocks"
+        }
+      ],
+      "key_bullish_catalysts": [
+        "Supply chain cost deflation",
+        "Targeted pricing power"
+      ],
+      "recent_press_headlines": [
+        {
+          "headline": "VRSN Corporation Announces Strategic Platform Milestone and Customer Expansion",
+          "date": "2026-08-18",
+          "source_name": "PR Newswire",
+          "url": "https://www.prnewswire.com/search/news/?keyword=VRSN"
+        },
+        {
+          "headline": "VRSN Corporation to Present at Upcoming Global Institutional Investor Conference",
+          "date": "2026-08-10",
+          "source_name": "Business Wire",
+          "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VRSN"
+        }
+      ],
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "VRT",
@@ -5720,7 +6570,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VRT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "VRTX",
@@ -5754,7 +6604,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VRTX"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "VZ",
@@ -5788,7 +6638,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=VZ"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "WBD",
@@ -5822,7 +6672,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=WBD"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "WDAY",
@@ -5856,7 +6706,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=WDAY"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "WDC",
@@ -5890,7 +6740,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=WDC"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "WMT",
@@ -5924,7 +6774,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=WMT"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "XEL",
@@ -5958,7 +6808,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=XEL"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "XYZ",
@@ -5992,7 +6842,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=XYZ"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "ZM",
@@ -6026,7 +6876,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ZM"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     },
     {
       "symbol": "ZS",
@@ -6060,7 +6910,7 @@
           "url": "https://www.businesswire.com/portal/site/home/search/?searchTerm=ZS"
         }
       ],
-      "last_surveilled_timestamp": "2026-08-28T03:00:43.509300+00:00"
+      "last_surveilled_timestamp": "2026-08-28T13:21:46.555774+00:00"
     }
   ]
 }

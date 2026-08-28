@@ -1,0 +1,96 @@
+{
+  "symbol": "TDG",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1260221",
+  "last_updated": "2026-08-28T13:19:08.149533+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-04",
+      "period_start": "2025-10-01",
+      "period_end": "2026-06-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1260221",
+      "data": {
+        "shares_outstanding": 55933583,
+        "revenue": 7569000000.0,
+        "balance_sheet": {
+          "total_assets": 26754000000.0,
+          "total_liabilities": 36473000000.0,
+          "total_shareholders_equity": -9809000000.0,
+          "total_debt": 32621000000.0,
+          "short_term_debt": 139000000.0,
+          "long_term_debt": 32760000000.0,
+          "cash_and_cash_equivalents": 2773000000.0,
+          "cash_primary": 2773000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2025-10-01",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1260221",
+      "data": {
+        "shares_outstanding": 56473563,
+        "revenue": 4828000000.0,
+        "balance_sheet": {
+          "total_assets": 25442000000.0,
+          "total_liabilities": 34836000000.0,
+          "total_shareholders_equity": -9402000000.0,
+          "total_debt": 31150000000.0,
+          "short_term_debt": 129000000.0,
+          "long_term_debt": 31279000000.0,
+          "cash_and_cash_equivalents": 3884000000.0,
+          "cash_primary": 3884000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-02-03",
+      "period_start": "2025-10-01",
+      "period_end": "2025-12-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1260221",
+      "data": {
+        "shares_outstanding": 56318584,
+        "revenue": 2285000000.0,
+        "balance_sheet": {
+          "total_assets": 23757000000.0,
+          "total_liabilities": 33020000000.0,
+          "total_shareholders_equity": -9270000000.0,
+          "total_debt": 29197000000.0,
+          "short_term_debt": 125000000.0,
+          "long_term_debt": 29322000000.0,
+          "cash_and_cash_equivalents": 2528000000.0,
+          "cash_primary": 2528000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2025-11-12",
+      "period_start": "2024-10-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1260221",
+      "data": {
+        "shares_outstanding": 56350285,
+        "revenue": 8831000000.0,
+        "balance_sheet": {
+          "total_assets": 22909000000.0,
+          "total_liabilities": 32588000000.0,
+          "total_shareholders_equity": -9686000000.0,
+          "total_debt": 29167000000.0,
+          "short_term_debt": 124000000.0,
+          "long_term_debt": 29291000000.0,
+          "cash_and_cash_equivalents": 2808000000.0,
+          "cash_primary": 2808000000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://www.transdigm.com/investor-relations"
+}

@@ -1,0 +1,96 @@
+{
+  "symbol": "ALGN",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
+  "last_updated": "2026-08-28T13:19:04.722923+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
+      "data": {
+        "shares_outstanding": 71618127,
+        "revenue": 2096279000.0,
+        "balance_sheet": {
+          "total_assets": 6417581000.0,
+          "total_liabilities": 2185128000.0,
+          "total_shareholders_equity": 4232453000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1102591000.0,
+          "cash_primary": 1102591000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
+      "data": {
+        "shares_outstanding": 71282132,
+        "revenue": 1040087000.0,
+        "balance_sheet": {
+          "total_assets": 6314173000.0,
+          "total_liabilities": 2164754000.0,
+          "total_shareholders_equity": 4149419000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1059834000.0,
+          "cash_primary": 1059834000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
+      "data": {
+        "shares_outstanding": 71749995,
+        "revenue": 4034964000.0,
+        "balance_sheet": {
+          "total_assets": 6233693000.0,
+          "total_liabilities": 2184546000.0,
+          "total_shareholders_equity": 4049147000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1094908000.0,
+          "cash_primary": 1094908000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-05",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1097149",
+      "data": {
+        "shares_outstanding": 72486368,
+        "revenue": 2987403000.0,
+        "balance_sheet": {
+          "total_assets": 6233552000.0,
+          "total_liabilities": 2276094000.0,
+          "total_shareholders_equity": 3957458000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1004589000.0,
+          "cash_primary": 1004589000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://investor.aligntech.com/"
+}

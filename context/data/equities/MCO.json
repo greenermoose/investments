@@ -1,0 +1,96 @@
+{
+  "symbol": "MCO",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1059556",
+  "last_updated": "2026-08-28T13:19:06.015032+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1059556",
+      "data": {
+        "shares_outstanding": 173200000,
+        "revenue": 4264000000.0,
+        "balance_sheet": {
+          "total_assets": 14675000000.0,
+          "total_liabilities": 11509000000.0,
+          "total_shareholders_equity": 3025000000.0,
+          "total_debt": 6946000000.0,
+          "short_term_debt": 571000000.0,
+          "long_term_debt": 6375000000.0,
+          "cash_and_cash_equivalents": 1496000000.0,
+          "cash_primary": 1467000000.0,
+          "marketable_securities_current": 29000000.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1059556",
+      "data": {
+        "shares_outstanding": 174700000,
+        "revenue": 2079000000.0,
+        "balance_sheet": {
+          "total_assets": 14732000000.0,
+          "total_liabilities": 11589000000.0,
+          "total_shareholders_equity": 2994000000.0,
+          "total_debt": 6963000000.0,
+          "short_term_debt": 576000000.0,
+          "long_term_debt": 6387000000.0,
+          "cash_and_cash_equivalents": 1510000000.0,
+          "cash_primary": 1469000000.0,
+          "marketable_securities_current": 41000000.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1059556",
+      "data": {
+        "shares_outstanding": 178400000,
+        "revenue": 7718000000.0,
+        "balance_sheet": {
+          "total_assets": 15830000000.0,
+          "total_liabilities": 11625000000.0,
+          "total_shareholders_equity": 4054000000.0,
+          "total_debt": 6994000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6994000000.0,
+          "cash_and_cash_equivalents": 2448000000.0,
+          "cash_primary": 2384000000.0,
+          "marketable_securities_current": 64000000.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-23",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1059556",
+      "data": {
+        "shares_outstanding": 178400000,
+        "revenue": 5829000000.0,
+        "balance_sheet": {
+          "total_assets": 15415000000.0,
+          "total_liabilities": 11303000000.0,
+          "total_shareholders_equity": 3957000000.0,
+          "total_debt": 6983000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6983000000.0,
+          "cash_and_cash_equivalents": 2259000000.0,
+          "cash_primary": 2181000000.0,
+          "marketable_securities_current": 78000000.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://ir.moodys.com/"
+}

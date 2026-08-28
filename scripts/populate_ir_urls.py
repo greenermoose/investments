@@ -175,7 +175,32 @@ IR_URLS = {
     "MS": "https://www.morganstanley.com/about-us-ir",
     "DE": "https://investor.deere.com/",
     "UNP": "https://www.up.com/investor",
-    "LMT": "https://investors.lockheedmartin.com/"
+    "LMT": "https://investors.lockheedmartin.com/",
+    "NOW": "https://investor.servicenow.com/",
+    "VEEV": "https://ir.veeva.com/",
+    "HUBS": "https://ir.hubspot.com/",
+    "DT": "https://ir.dynatrace.com/",
+    "GWRE": "https://ir.guidewire.com/",
+    "MANH": "https://ir.manh.com/",
+    "GTLB": "https://ir.gitlab.com/",
+    "TYL": "https://investors.tylertech.com/",
+    "ONTO": "https://investors.ontoinnovation.com/",
+    "PODD": "https://investor.insulet.com/",
+    "RMD": "https://investor.resmed.com/",
+    "EW": "https://ir.edwards.com/",
+    "ALGN": "https://investor.aligntech.com/",
+    "CME": "https://investor.cmegroup.com/",
+    "ICE": "https://ir.theice.com/",
+    "MCO": "https://ir.moodys.com/",
+    "FICO": "https://investors.fico.com/",
+    "ACN": "https://investor.accenture.com/",
+    "GEV": "https://www.gevernova.com/investors",
+    "TDG": "https://www.transdigm.com/investor-relations",
+    "HEI": "https://www.heico.com/investor-relations/",
+    "PWR": "https://investors.quantaservices.com/",
+    "EME": "https://www.emcorgroup.com/investors",
+    "URI": "https://investor.unitedrentals.com/",
+    "VRSN": "https://investor.verisign.com/"
 }
 
 # 1. Update scripts/data/company_meta.json

@@ -1,0 +1,96 @@
+{
+  "symbol": "PODD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1145197",
+  "last_updated": "2026-08-28T13:19:03.370439+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1145197",
+      "data": {
+        "shares_outstanding": 69264674,
+        "revenue": 1563400000.0,
+        "balance_sheet": {
+          "total_assets": 3165100000.0,
+          "total_liabilities": 1742900000.0,
+          "total_shareholders_equity": 1422200000.0,
+          "total_debt": 929500000.0,
+          "short_term_debt": 18900000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 534900000.0,
+          "cash_primary": 534900000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1145197",
+      "data": {
+        "shares_outstanding": 70395848,
+        "revenue": 761700000.0,
+        "balance_sheet": {
+          "total_assets": 2987200000.0,
+          "total_liabilities": 1684600000.0,
+          "total_shareholders_equity": 1302600000.0,
+          "total_debt": 929500000.0,
+          "short_term_debt": 18600000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 480400000.0,
+          "cash_primary": 480400000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-18",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1145197",
+      "data": {
+        "shares_outstanding": 70346898,
+        "revenue": 2708100000.0,
+        "balance_sheet": {
+          "total_assets": 3190400000.0,
+          "total_liabilities": 1675200000.0,
+          "total_shareholders_equity": 1515200000.0,
+          "total_debt": 930800000.0,
+          "short_term_debt": 18400000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 716100000.0,
+          "cash_primary": 716100000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1145197",
+      "data": {
+        "shares_outstanding": 70392535,
+        "revenue": 1924300000.0,
+        "balance_sheet": {
+          "total_assets": 3029300000.0,
+          "total_liabilities": 1645100000.0,
+          "total_shareholders_equity": 1384100000.0,
+          "total_debt": 934900000.0,
+          "short_term_debt": 79900000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 757400000.0,
+          "cash_primary": 757400000.0,
+          "marketable_securities_current": 0.0
+        }
+      }
+    }
+  ],
+  "investor_relations_url": "https://investor.insulet.com/"
+}

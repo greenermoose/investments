@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentRunLog",
+  "description": "Schema for a single agent run log file at context/research/runs/{run_id}.json. Records one generative session or script-only micro-session with embedded events.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "schema_version",
+    "started_at",
+    "status",
+    "cadence",
+    "trigger",
+    "agent_roles",
+    "events"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^(RUN|SYS)-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "started_at": {
+      "type": "string",
+      "description": "ISO 8601 UTC timestamp when the run started."
+    },
+    "completed_at": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 UTC timestamp when the run completed or aborted."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["IN_PROGRESS", "COMPLETED", "ABORTED"]
+    },
+    "cadence": {
+      "type": "string",
+      "enum": ["DAILY", "WEEKLY", "EVENT_DRIVEN", "SCHEDULED", "ON_DEMAND", "RARE_AUDIT"]
+    },
+    "trigger": {
+      "type": "string",
+      "enum": [
+        "weekly_deliberation",
+        "thesis_authoring",
+        "research_refresh",
+        "equity_onboarding",
+        "sentiment_surveillance",
+        "invalidation_review",
+        "qc_audit",
+        "script_hook",
+        "manual"
+      ]
+    },
+    "agent_roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "prompt_ref": {
+      "type": ["string", "null"],
+      "description": "Repo-relative path to prompt or skill used."
+    },
+    "runtime_context_signature": {
+      "type": ["string", "null"],
+      "description": "Required for RUN-* sessions per AGENTS.md section 6."
+    },
+    "summary": {
+      "type": ["string", "null"],
+      "description": "Plain-language outcome; required when status is COMPLETED or ABORTED."
+    },
+    "deliverables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Repo-relative paths to generative prose artifacts produced during this run."
+    },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/RunEvent" }
+    }
+  },
+  "definitions": {
+    "RunEvent": {
+      "type": "object",
+      "required": ["event_id", "recorded_at", "event_type", "agent_role", "subject"],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "pattern": "^EVT-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$"
+        },
+        "recorded_at": { "type": "string" },
+        "event_type": {
+          "type": "string",
+          "enum": [
+            "RESEARCH_FIELD_AUTHORED",
+            "RESEARCH_FIELD_UPDATED",
+            "RATING_CHANGED",
+            "CATALYST_STATUS_CHANGED",
+            "THESIS_RENDERED",
+            "INVALIDATION_ALERT_ISSUED",
+            "ERRATA_LINKED",
+            "SENTIMENT_OBSERVATION_RECORDED",
+            "SHORT_SELLER_CAMPAIGN_RECORDED",
+            "EQUITY_ONBOARDED",
+            "QC_AUDIT_COMPLETED",
+            "DELIBERATION_COMPLETED"
+          ]
+        },
+        "agent_role": { "type": "string" },
+        "symbol": { "type": ["string", "null"] },
+        "subject": { "type": "string", "minLength": 1 },
+        "target_path": { "type": ["string", "null"] },
+        "rationale": { "type": ["string", "null"] },
+        "change": { "type": ["object", "null"] },
+        "authority_tier": { "type": ["string", "null"] },
+        "source_locator": { "type": ["string", "null"] },
+        "related_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

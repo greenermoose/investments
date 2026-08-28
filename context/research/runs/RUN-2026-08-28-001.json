@@ -1,0 +1,26 @@
+{
+  "run_id": "RUN-2026-08-28-001",
+  "schema_version": "1.0",
+  "started_at": "2026-08-28T10:00:00+00:00",
+  "completed_at": "2026-08-28T11:30:00+00:00",
+  "status": "COMPLETED",
+  "cadence": "EVENT_DRIVEN",
+  "trigger": "manual",
+  "agent_roles": ["Memory Agent", "Investment Thesis Agent"],
+  "prompt_ref": "context/strategy/deterministic_vs_generative_execution.md",
+  "runtime_context_signature": "System clock 2026-08-28; v3.0 research store separation refactor; roles Memory+Investment Thesis",
+  "summary": "Completed v3.0 refactor separating agent-authored research into context/data/equities/<TICKER>.json research store from deterministic script outputs.",
+  "deliverables": [
+    "context/schemas/equity_research_schema.json",
+    "scripts/research_store.py"
+  ],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-28-001",
+      "recorded_at": "2026-08-28T10:45:00+00:00",
+      "event_type": "DELIBERATION_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Confirmed research store as system of record boundary for qualitative parameters"
+    }
+  ]
+}

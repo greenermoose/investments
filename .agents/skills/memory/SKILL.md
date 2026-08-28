@@ -8,7 +8,9 @@ description: Cross-run institutional memory management, persistent context synch
 ## Overview
 This skill defines the complete operational protocol, persistent memory management, catalyst tracking, and thesis invalidation workflows for the **Memory Agent**.
 
-The Memory Agent ensures the multi-agent collective never suffers from session amnesia or context drift. It acts as the guardian and auditor of institutional memory stored across `context/`, indexing past agent decisions, comparing quarterly earnings against anticipated catalyst milestones, detecting invalidation triggers, and maintaining the errata log.
+The Memory Agent ensures the multi-agent collective never suffers from session amnesia or context drift. It acts as the guardian and auditor of institutional memory stored across `context/`, indexing past agent decisions, comparing quarterly earnings against anticipated catalyst milestones, detecting invalidation triggers, and maintaining the errata registry.
+
+**This skill defines the generative Memory Agent role, not the deterministic scripts.** The Memory Agent invokes `manage_memory.py`, `activity_ledger.py`, and `errata_log.py` as tools. Those scripts report structured state and write log records; they do not decide, alert, or author prose.
 
 ## Core Responsibilities
 
@@ -33,7 +35,7 @@ The Memory Agent ensures the multi-agent collective never suffers from session a
 - When an assumption, data point, or historical metric is found to be erroneous or hallucinated, follow the standard reconciliation workflow:
   - Verify true value against Tier 1 SEC EDGAR data.
   - Update the affected dossier in place.
-  - Log the correction in `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
+  - Log the correction via `python scripts/errata_log.py record` into `context/research/errata/{erratum_id}.json` conforming to `context/schemas/errata_schema.json`, then link it from the active run with `activity_ledger.py log-event --type ERRATA_LINKED`.
 
 ### 5. SEC Filing Schedule & Catalyst Calendar Synchronization
 - Regularly audit upcoming regulatory filing windows from `context/data/sec_filing_calendar.json` via `python scripts/anticipate_sec_filings.py --upcoming-days 30`.
@@ -47,9 +49,12 @@ The Memory Agent ensures the multi-agent collective never suffers from session a
 
 ## Deterministic Memory Tooling
 
-Audit thesis statuses, catalyst timelines, and invalidation triggers deterministically using `scripts/manage_memory.py`:
+Audit thesis statuses, catalyst timelines, run logs, and errata records deterministically using these scripts (invoked by the Memory Agent role):
 
 ```bash
+# Combined JSON summary of runs, errata, and thesis state (for agent consumption)
+python scripts/manage_memory.py --ledger
+
 # Run complete institutional memory audit
 python scripts/manage_memory.py
 
@@ -58,6 +63,14 @@ python scripts/manage_memory.py --symbol NVDA
 
 # Output structured memory audit in JSON
 python scripts/manage_memory.py --json
+
+# Agent run log commands (also via manage_universe.py ledger ...)
+python scripts/activity_ledger.py summary
+python scripts/activity_ledger.py list-runs --limit 10
+
+# Errata registry commands (also via manage_universe.py errata ...)
+python scripts/errata_log.py summary
+python scripts/errata_log.py list --status OPEN
 ```
 
 ## Thesis Invalidation Flag Protocol

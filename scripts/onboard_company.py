@@ -113,6 +113,21 @@ def sync_sec_summary():
         json.dump(sec_summary, f, indent=2)
 
 
+def _log_equity_onboarded(symbol):
+    try:
+        import activity_ledger
+        activity_ledger.append_event_to_active_or_sys(
+            event_type="EQUITY_ONBOARDED",
+            agent_role="Deterministic Script",
+            subject=f"Onboarded {symbol} into coverage universe",
+            symbol=symbol,
+            target_path=f"context/data/equities/{symbol}.json",
+            trigger="script_hook",
+        )
+    except Exception:
+        pass
+
+
 def onboard_single_equity(symbol, company_name=None, sector=None, industry=None, description=None, live=False):
     sym = symbol.upper().strip()
     print(f"\n--- Processing Public Equity: {sym} ---")
@@ -301,6 +316,7 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
         with open(meta_file, "w", encoding="utf-8") as f:
             json.dump(meta_dict, f, indent=2)
 
+        _log_equity_onboarded(sym)
         return {
             "symbol": sym,
             "name": name,
@@ -332,6 +348,7 @@ def onboard_single_equity(symbol, company_name=None, sector=None, industry=None,
     with open(meta_file, "w", encoding="utf-8") as f:
         json.dump(meta_dict, f, indent=2)
 
+    _log_equity_onboarded(sym)
     return {
         "symbol": sym,
         "name": name,

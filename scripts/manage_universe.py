@@ -735,6 +735,77 @@ def execute_rebuild_all_command(args):
     return qc_res.returncode
 
 
+def _delegate_script(script_name, command, args, flag_map=None):
+    """Forward a subcommand to a scripts/*.py CLI."""
+    cmd = [sys.executable, str(SCRIPTS_DIR / script_name), command]
+    flag_map = flag_map or {}
+    for attr, flag in flag_map.items():
+        value = getattr(args, attr, None)
+        if value is None or value is False or value == []:
+            continue
+        if isinstance(value, bool):
+            cmd.append(flag)
+        elif isinstance(value, list):
+            cmd.extend([flag] + list(value))
+        else:
+            cmd.extend([flag, str(value)])
+    return subprocess.run(cmd, cwd=str(ROOT_DIR)).returncode
+
+
+def execute_ledger_command(args):
+    """Handler for 'ledger' subcommand — delegates to activity_ledger.py."""
+    if not args.ledger_command:
+        print("Usage: manage_universe.py ledger <summary|validate|render-index|list-runs|query|start-run|end-run|abort-run|log-event>")
+        return 1
+    flag_map = {
+        "limit": "--limit",
+        "run_id": "--run-id",
+        "symbol": "--symbol",
+        "event_type": "--event-type",
+        "format": "--format",
+        "cadence": "--cadence",
+        "trigger": "--trigger",
+        "agents": "--agents",
+        "prompt": "--prompt",
+        "signature": "--signature",
+        "summary": "--summary",
+        "deliverable": "--deliverable",
+        "type": "--type",
+        "agent": "--agent",
+        "subject": "--subject",
+        "target_path": "--target-path",
+        "rationale": "--rationale",
+        "change": "--change",
+        "authority_tier": "--authority-tier",
+        "source_locator": "--source-locator",
+        "related_ids": "--related-ids",
+    }
+    return _delegate_script("activity_ledger.py", args.ledger_command, args, flag_map)
+
+
+def execute_errata_command(args):
+    """Handler for 'errata' subcommand — delegates to errata_log.py."""
+    if not args.errata_command:
+        print("Usage: manage_universe.py errata <summary|validate|render-index|list|query|record|update-status>")
+        return 1
+    flag_map = {
+        "status": "--status",
+        "limit": "--limit",
+        "symbol": "--symbol",
+        "format": "--format",
+        "target_file": "--target-file",
+        "field": "--field",
+        "issue": "--issue",
+        "correction": "--correction",
+        "authority_tier": "--authority-tier",
+        "source_locator": "--source-locator",
+        "related_run": "--related-run",
+        "erratum_id": "--erratum-id",
+        "resolution_note": "--resolution-note",
+    }
+    return _delegate_script("errata_log.py", args.errata_command, args, flag_map)
+
+
 # ==============================================================================
 # CLI ARGUMENT PARSER & ENTRY POINT
 # ==============================================================================
@@ -908,6 +979,72 @@ EXAMPLES:
     # 12. 'rebuild-all' subcommand
     subparsers.add_parser("rebuild-all", help="Execute Cadence 6 full ground-truth source regeneration across all tiers.")
 
+    # 13. 'ledger' subcommand
+    ledger_parser = subparsers.add_parser("ledger", help="Agent run log CLI (context/research/runs/).")
+    ledger_sub = ledger_parser.add_subparsers(dest="ledger_command")
+    ledger_sub.add_parser("summary", help="Print run log summary")
+    ledger_sub.add_parser("validate", help="Validate all run files")
+    ledger_sub.add_parser("render-index", help="Regenerate agent_run_index.md")
+    p = ledger_sub.add_parser("list-runs", help="List recent runs")
+    p.add_argument("--limit", type=int, default=None)
+    p = ledger_sub.add_parser("query", help="Query events across runs")
+    p.add_argument("--run-id", default=None)
+    p.add_argument("--symbol", default=None)
+    p.add_argument("--event-type", default=None)
+    p.add_argument("--limit", type=int, default=20)
+    p.add_argument("--format", choices=["text", "json"], default="text")
+    p = ledger_sub.add_parser("start-run", help="Begin a generative agent session")
+    p.add_argument("--cadence", required=True)
+    p.add_argument("--trigger", required=True)
+    p.add_argument("--agents", required=True)
+    p.add_argument("--prompt", default=None)
+    p.add_argument("--signature", required=True)
+    p = ledger_sub.add_parser("end-run", help="Complete the active or specified run")
+    p.add_argument("--run-id", default=None)
+    p.add_argument("--summary", required=True)
+    p.add_argument("--deliverable", action="append", default=[])
+    p = ledger_sub.add_parser("abort-run", help="Abort the active or specified run")
+    p.add_argument("--run-id", default=None)
+    p.add_argument("--summary", required=True)
+    p = ledger_sub.add_parser("log-event", help="Append an event to a run")
+    p.add_argument("--run-id", default=None)
+    p.add_argument("--type", required=True)
+    p.add_argument("--agent", required=True)
+    p.add_argument("--subject", required=True)
+    p.add_argument("--symbol", default=None)
+    p.add_argument("--target-path", default=None)
+    p.add_argument("--rationale", default=None)
+    p.add_argument("--change", default=None)
+    p.add_argument("--authority-tier", default=None)
+    p.add_argument("--source-locator", default=None)
+    p.add_argument("--related-ids", default=None)
+
+    # 14. 'errata' subcommand
+    errata_parser = subparsers.add_parser("errata", help="Errata registry CLI (context/research/errata/).")
+    errata_sub = errata_parser.add_subparsers(dest="errata_command")
+    errata_sub.add_parser("summary", help="Print errata summary")
+    errata_sub.add_parser("validate", help="Validate all errata files")
+    errata_sub.add_parser("render-index", help="Regenerate errata_index.md")
+    p = errata_sub.add_parser("list", help="List errata records")
+    p.add_argument("--status", default=None)
+    p.add_argument("--limit", type=int, default=None)
+    p = errata_sub.add_parser("query", help="Query errata records")
+    p.add_argument("--symbol", default=None)
+    p.add_argument("--status", default=None)
+    p.add_argument("--format", choices=["text", "json"], default="text")
+    p = errata_sub.add_parser("record", help="Record a new erratum")
+    p.add_argument("--target-file", required=True)
+    p.add_argument("--field", required=True)
+    p.add_argument("--issue", required=True)
+    p.add_argument("--correction", required=True)
+    p.add_argument("--authority-tier", default=None)
+    p.add_argument("--source-locator", default=None)
+    p.add_argument("--related-run", default=None)
+    p = errata_sub.add_parser("update-status", help="Update erratum status")
+    p.add_argument("--erratum-id", required=True)
+    p.add_argument("--status", required=True)
+    p.add_argument("--resolution-note", default=None)
+
     return parser
 
 
@@ -961,6 +1098,8 @@ def main():
         "snapshot": execute_snapshot_command,
         "gaps": execute_gaps_command,
         "rebuild-all": execute_rebuild_all_command,
+        "ledger": execute_ledger_command,
+        "errata": execute_errata_command,
     }
 
     handler = subcommand_handlers.get(args.subcommand)

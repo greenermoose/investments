@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-004",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-17T12:00:00+00:00",
+  "date_identified": "2026-08-17",
+  "target_file": "scripts/data/company_meta.json",
+  "target_field_or_claim": "XYZ Company Name & Description",
+  "erroneous_value": "Block, Inc. (Square / Cash App)",
+  "corrected_value": "Block, Inc.",
+  "error_category": "TRANSCRIPTION_ERROR",
+  "authoritative_source_citation": "SEC EDGAR Form 10-K / Form 8-K for XYZ",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Block, Inc.",
+  "status": "RESOLVED"
+}

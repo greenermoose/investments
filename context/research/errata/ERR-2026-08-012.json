@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-012",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "context/data/universe.json`, `context/theses/TSM.md`, `context/theses/PDD.md`, `scripts/*.py",
+  "target_field_or_claim": "Foreign Private Issuer ADR Ratios & Currency Conversion (TSM, PDD, ASML, FER, CCEP)",
+  "erroneous_value": "TSM Market Cap $11.08T, EV $8.96T, TTM Revenue $8.91T due to unconverted 25.93B ordinary shares and NTD currency figures",
+  "corrected_value": "Implemented centralized `scripts/adr_registry.py`; normalized TSM to 5.187B ADRs ($2.22T Market Cap, $2.15T EV, $89.1B USD Revenue); converted PDD to 1.423B ADSs and USD metrics; automated QC safeguards",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "SEC Form 20-F Filings (CIK 0001046179, 0001737806), NYSE/NASDAQ Depositary Specifications, and Central Bank FX Feeds",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Implemented centralized `scripts/adr_registry.py`; normalized TSM to 5.187B ADRs ($2.22T Market Cap, $2.15T EV, $89.1B USD Revenue); converted PDD to 1.423B ADSs and USD metrics; automated QC safeguards",
+  "status": "RESOLVED"
+}

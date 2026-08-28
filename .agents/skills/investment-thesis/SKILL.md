@@ -54,6 +54,11 @@ The division is absolute in both directions:
 A ticker whose `valuation_parameters` you have not authored carries no rating, no price target, and no ROI, and renders no dossier. That is the intended behaviour, not a bug to work around.
 
 ```bash
+# Open an agent run session before authoring (see context/prompts/thesis_authoring.md)
+python scripts/activity_ledger.py start-run --cadence event_driven --trigger thesis_authoring \
+  --agents "Investment Thesis Agent" --prompt context/prompts/thesis_authoring.md \
+  --signature "System clock YYYY-MM-DD; role Investment Thesis Agent; thesis authoring"
+
 # What is outstanding
 python scripts/research_gaps.py --thesis-only --summary
 python scripts/research_gaps.py --symbol NVDA
@@ -61,6 +66,9 @@ python scripts/research_gaps.py --symbol NVDA
 # After authoring
 python scripts/render_thesis.py --symbols NVDA
 python scripts/validate_thesis.py --file context/theses/NVDA.md
+
+# Close the run session
+python scripts/activity_ledger.py end-run --summary "Authored research and rendered thesis."
 ```
 
 The full authoring protocol, including the required sections and the provenance rules, is in `context/prompts/thesis_authoring.md`.

@@ -249,6 +249,34 @@ python scripts/quality_control.py --audit</code></pre>
       <div class="callout-title">Equal-Footing &amp; Privacy Rules for Newly Onboarded Equities</div>
       <p>All equities added to the coverage universe exist on completely equal footing in public intelligence (<code>context/theses/*.md</code>, <code>http/data/universe.json</code>, and the web interface). Private portfolio holdings in <code>private/snapshots/</code> NEVER alter public ratings or dossiers, preserving the strict one-way privacy firewall.</p>
     </div>
+
+    <h2>Audit Trail and Cross-Run Memory</h2>
+    <p>The system maintains directory-based audit logs for institutional continuity across agent sessions:</p>
+    <ul>
+      <li><strong>Agent run logs:</strong> <code>context/research/runs/{run_id}.json</code> — one file per generative session, managed via <code>activity_ledger.py</code>.</li>
+      <li><strong>Errata registry:</strong> <code>context/research/errata/{erratum_id}.json</code> — one file per verified correction, managed via <code>errata_log.py</code>.</li>
+      <li><strong>Generative audits:</strong> <code>context/research/audits/*.md</code> — prose deliverables linked from run files.</li>
+    </ul>
+
+    <pre><code>// Sample run file (abbreviated)
+{
+  "run_id": "RUN-2026-08-28-002",
+  "status": "COMPLETED",
+  "trigger": "equity_onboarding",
+  "agent_roles": ["Equity Research Agent", "Investment Thesis Agent"],
+  "events": [
+    { "event_type": "EQUITY_ONBOARDED", "symbol": "ENIC" },
+    { "event_type": "ERRATA_LINKED", "related_ids": ["ERR-2026-08-019"] }
+  ]
+}
+
+// Sample erratum file (abbreviated)
+{
+  "erratum_id": "ERR-2026-08-019",
+  "status": "RESOLVED",
+  "target_file": "context/data/equities/CSIQ.json",
+  "error_category": "HALLUCINATION"
+}</code></pre>
   </main>
 </body>
 </html>

@@ -64,7 +64,7 @@ gantt
 - [x] **2.3 Portfolio Memory & Invalidation CLI:**
   - Implement deterministic memory manager in [scripts/manage_memory.py](file:///c:/Users/Fred/github/investments/scripts/manage_memory.py) to audit active dossiers, parse upcoming catalyst milestones, and evaluate broken theses.
   - Record operational agent guidelines in [.agents/skills/memory/SKILL.md](file:///c:/Users/Fred/github/investments/.agents/skills/memory/SKILL.md).
-  - Maintain structured errata log in [context/research/errata_log.md](file:///c:/Users/Fred/github/investments/context/research/errata_log.md) conforming to [context/schemas/errata_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/errata_schema.json).
+  - Maintain structured errata registry in `context/research/errata/` (one JSON file per erratum) conforming to [context/schemas/errata_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/errata_schema.json). Generated index: `context/research/errata_index.md`; protocol: `context/research/errata_protocol.md`.
 - [x] **2.4 Deterministic Return Engine & Multi-Horizon Modeling:**
   - Build pure Python mathematical calculation engine in [scripts/return_engine.py](file:///c:/Users/Fred/github/investments/scripts/return_engine.py) computing unannualized Total ROI (%) and Compound Annual Growth Rate (CAGR / Annualized ROI %) across multi-year holding horizons and options strategy combinations (`SELL_CSP`, `LIMIT_BUY`, `SELL_COVERED_CALLS`, `LIMIT_SELL`).
   - Define formal JSON specification in [context/schemas/return_engine_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/return_engine_schema.json).
@@ -78,7 +78,7 @@ gantt
 - [x] **3.1 Authoritative Data Sources & Provenance Architecture:**
   - Codify 5-tier source hierarchy in [context/sources/catalog.md](file:///c:/Users/Fred/github/investments/context/sources/catalog.md) (Tier 1 SEC EDGAR / Exchanges down to Tier 4 Agent Parametric Memory).
   - Define granular data provenance schema ([context/schemas/data_provenance.json](file:///c:/Users/Fred/github/investments/context/schemas/data_provenance.json)) and agent runtime context signature.
-  - Implement data verification and errata tracking protocol ([context/schemas/errata_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/errata_schema.json), [context/research/errata_log.md](file:///c:/Users/Fred/github/investments/context/research/errata_log.md)).
+  - Implement data verification and errata tracking protocol ([context/schemas/errata_schema.json](file:///c:/Users/Fred/github/investments/context/schemas/errata_schema.json), `context/research/errata/`, `scripts/errata_log.py`).
   - Publish interactive web guide at [http/docs/sources.html](file:///c:/Users/Fred/github/investments/http/docs/sources.html).
 - [x] **3.2 ETF Holdings Discovery & Universe Expansion (QQQ & DJIA Benchmarks):**
   - Record agent skill in [.agents/skills/etf-holdings/SKILL.md](file:///c:/Users/Fred/github/investments/.agents/skills/etf-holdings/SKILL.md) and CLI extractor in [scripts/fetch_etf_holdings.py](file:///c:/Users/Fred/github/investments/scripts/fetch_etf_holdings.py) to parse Tier 1 Form NPORT-P filings (Invesco QQQ CIK `0001067839`, SPDR DIA CIK `0001041130`, SPDR SPY CIK `0000884394`).

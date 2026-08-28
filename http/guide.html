@@ -42,6 +42,35 @@
       <p>Running unconstrained whole-universe LLM queries on every market tick is cost-prohibitive and introduces hallucination drift. This system enforces a strict division of labor: <strong>deterministic scripts execute math, price syncs, onboarding, and schedule projections at 0 LLM tokens</strong>, while <strong>generative AI agents are invoked selectively</strong> for qualitative synthesis, thesis authoring, and single-session weekly deliberation using verified cached data.</p>
     </div>
 
+    <div class="callout important">
+      <div class="callout-title">Agents vs Scripts</div>
+      <p>Generative <strong>agent roles</strong> (Memory Agent, Investment Thesis Agent, etc.) invoke deterministic <strong>CLI tools</strong> in <code>scripts/</code>. Scripts are never agents. For example, <code>manage_memory.py</code> is named after the Memory Agent role but is a read-only audit tool the role invokes; it does not decide, alert, or author prose.</p>
+    </div>
+
+    <h2>Agent Run Log</h2>
+    <p>Each generative agent session is recorded as one JSON file at <code>context/research/runs/{run_id}.json</code>. Agents invoke <code>python scripts/activity_ledger.py start-run</code> before deliberation or authoring and <code>end-run --summary "..."</code> when complete. Generated index: <code>context/research/agent_run_index.md</code>.</p>
+    <pre><code># Start a weekly deliberation session
+python scripts/activity_ledger.py start-run --cadence weekly --trigger weekly_deliberation \
+  --agents "Lead Portfolio Manager Agent,Memory Agent" \
+  --prompt context/prompts/weekly_deliberation.md \
+  --signature "System clock YYYY-MM-DD; roles LPM+Memory; weekend deliberation"
+
+# End session and link deliverables
+python scripts/activity_ledger.py end-run --summary "Completed weekly review."
+
+# Validate and regenerate index (Cadence 6)
+python scripts/activity_ledger.py validate
+python scripts/activity_ledger.py render-index</code></pre>
+
+    <h2>Errata Registry</h2>
+    <p>Corrections are recorded as individual JSON files at <code>context/research/errata/{erratum_id}.json</code>. Agents invoke <code>python scripts/errata_log.py record</code> when a claim is found erroneous. Protocol: <code>context/research/errata_protocol.md</code>. Generated index: <code>context/research/errata_index.md</code>.</p>
+    <pre><code>python scripts/errata_log.py record --target-file context/data/equities/NVDA.json \
+  --field research.tam_and_market_share --issue "Stale TAM figure" \
+  --correction "Updated from 2025 10-K"
+
+python scripts/errata_log.py validate
+python scripts/errata_log.py render-index</code></pre>
+
     <h2>The 6 Tiered Operational Cadences</h2>
     <p>Operational workflows are partitioned into six distinct cadences ranging from intraday zero-token price updates to on-demand universe expansion and rare ground-truth reconciliations from primary SEC filings:</p>
 
@@ -222,7 +251,9 @@ python scripts/manage_universe.py screen --min-roi 20.0 --exclude-avoid</code></
           <p>Execute the weekly single-session deliberation workflow over the weekend:</p>
           <ol style="padding-left: 20px; font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 12px;">
             <li>Export account holdings as CSV or screenshots into <code>private/snapshots/</code>.</li>
+            <li>Agent starts a run log session: <code>activity_ledger.py start-run --cadence weekly --trigger weekly_deliberation ...</code></li>
             <li>Prompt your AI agent with the protocol in <code>context/prompts/weekly_deliberation.md</code>.</li>
+            <li>Agent ends the run: <code>activity_ledger.py end-run --summary "..."</code>. Record any corrections via <code>errata_log.py record</code>.</li>
             <li>Open the generated plain ASCII plan in <code>private/plans/YYYY-MM-DD-plan.txt</code>.</li>
             <li>Execute all specified limit orders at Monday 9:30 AM ET market open in one sitting.</li>
           </ol>
@@ -332,7 +363,13 @@ python scripts/surveil_sentiment.py --seed
 python scripts/track_short_sellers.py --seed
 
 # 7. Execute complete deterministic Quality Control audit to assert 0 errors / 0 warnings
-python scripts/quality_control.py --audit</code></pre>
+python scripts/quality_control.py --audit
+
+# 8. Validate agent run logs and errata registry; regenerate indexes
+python scripts/activity_ledger.py validate
+python scripts/activity_ledger.py render-index
+python scripts/errata_log.py validate
+python scripts/errata_log.py render-index</code></pre>
         </div>
       </div>
     </div>
@@ -413,7 +450,28 @@ python scripts/quality_control.py --audit</code></pre>
             <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
             <td style="padding: 10px 16px;">Post-Update Audit</td>
             <td style="padding: 10px 16px;">Tier 1 Ground-Truth Cross-Check</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Automated Audit / Errata Log</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Automated Audit / Errata Registry</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">activity_ledger.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Weekly / Event-Driven</td>
+            <td style="padding: 10px 16px;">Agent session audit trail</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/research/runs/</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">errata_log.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">On correction</td>
+            <td style="padding: 10px 16px;">Tier 1 verification trail</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/research/errata/</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">manage_memory.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Weekly / Memory audit</td>
+            <td style="padding: 10px 16px;">Reads runs/ + errata/ (tool for Memory Agent role)</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI stdout / --ledger JSON</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-subtle);">
             <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">weekly_deliberation.md</td>

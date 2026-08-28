@@ -11,7 +11,28 @@ This prompt protocol defines the authoring standards, quantitative forecasting m
 
 ## The Authoring Workflow
 
-Thesis dossiers are not generated. They are authored into the research store and then rendered from it. Three steps, in order.
+Thesis dossiers are not generated. They are authored into the research store and then rendered from it. Four steps, in order.
+
+### Step 0: Open an agent run session
+
+Before authoring, start a run log session so field changes and renders are recorded:
+
+```bash
+python scripts/activity_ledger.py start-run \
+  --cadence event_driven \
+  --trigger thesis_authoring \
+  --agents "Investment Thesis Agent" \
+  --prompt context/prompts/thesis_authoring.md \
+  --signature "System clock YYYY-MM-DD; role Investment Thesis Agent; thesis authoring for <TICKER>"
+```
+
+Close the session when complete:
+
+```bash
+python scripts/activity_ledger.py end-run --summary "Authored research and rendered thesis for <TICKER>."
+```
+
+Auto-hooks from `write_research()` and `render_thesis.py` append events to the active run.
 
 ### Step 1: See what is outstanding
 

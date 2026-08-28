@@ -60,7 +60,7 @@ class QualityController:
         self.context_equities_dir = os.path.join(self.context_data_dir, "equities")
         self.sec_summary_path = os.path.join(self.root_dir, "http", "sec-data.json")
         self.context_sec_summary_path = os.path.join(self.context_data_dir, "sec_reports.json")
-        self.errata_log_path = os.path.join(self.root_dir, "context", "research", "errata_log.md")
+        self.errata_dir = os.path.join(self.root_dir, "context", "research", "errata")
 
         self.company_meta_path = os.path.join(self.scripts_data_dir, "company_meta.json")
         self.market_prices_scripts_path = os.path.join(self.scripts_data_dir, "market_prices.json")

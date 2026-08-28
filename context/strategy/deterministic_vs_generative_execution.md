@@ -85,6 +85,12 @@ The consequence is intentional: the repository under-reports rather than over-re
 5. Rule 5: Author Into the Store, Not Into a Script
    Research belongs in `context/data/equities/<TICKER>.json`, never in a Python literal, a template string, or a lookup table keyed by sector. If you find yourself adding a company name to a dictionary inside a script, the content belongs in the store.
 
+6. Rule 6: Log Agent Sessions in Run Files
+   Generative agent roles open and close bounded sessions via `python scripts/activity_ledger.py start-run` and `end-run`. Each session is one file at `context/research/runs/{run_id}.json`. Auto-hooks from deterministic scripts append events when no agent session is active (SYS-* runs). Public intelligence only; never log private portfolio data.
+
+7. Rule 7: Record Errata as Individual JSON Files
+   When a claim is found erroneous, record it via `python scripts/errata_log.py record` into `context/research/errata/{erratum_id}.json` and link it from the active run with `ERRATA_LINKED`. See `context/research/errata_protocol.md`. Do not append to monolithic markdown logs.
+
 ## 6. Summary Anti-Patterns to Avoid
 
 - Anti-Pattern 1 (Agent Hallucinating Batch Audits): An agent claiming "I verified all stocks and found no errors" without running an audit script.

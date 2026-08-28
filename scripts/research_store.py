@@ -358,6 +358,7 @@ def write_research(symbol, research):
     record = load_equity_record(symbol)
     if not record:
         record = {"symbol": symbol}
+    old_research = record.get("research") or {}
     record["research"] = research
     record["research_last_updated"] = datetime.now(timezone.utc).isoformat()
 
@@ -365,6 +366,13 @@ def write_research(symbol, research):
     path = equity_file_path(symbol)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(record, f, indent=2)
+
+    try:
+        import activity_ledger
+        activity_ledger.log_research_diff(symbol, old_research, research)
+    except Exception:
+        pass
+
     return path
 
 

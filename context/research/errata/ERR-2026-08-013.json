@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-013",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "scripts/parse_snapshot.py",
+  "target_field_or_claim": "Portfolio Snapshot CSV Ingestion (quantity, cash, SGOV, option classification, account name, fractional shares)",
+  "erroneous_value": "Against `examples/sample_portfolio.csv`: every position parsed as 0 shares, cash $0.00, SGOV 0 shares, total account value $0.00, AAPL misclassified as an option contract, and the `Positions Total` summary row ingested as a holding",
+  "corrected_value": "Canonical column-alias resolver matching header base and parenthetical labels; option detection via Asset Type plus OCC contract regex; cash detected via money-market asset type; totals rows skipped; fractional share counts preserved; UNKNOWN sentinels parse to null. Fixture now yields AAPL 100 / MSFT 45 / NVDA 150 / GOOGL 75, SGOV 365 @ $100.50, cash $11,500.00, total $121,602.50, 2 option contracts",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "Repository fixture `examples/sample_portfolio.csv` and its declared `Positions Total` of $121,602.50",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Canonical column-alias resolver matching header base and parenthetical labels; option detection via Asset Type plus OCC contract regex; cash detected via money-market asset type; totals rows skipped; fractional share counts preserved; UNKNOWN sentinels parse to null. Fixture now yields AAPL 100 / MSFT 45 / NVDA 150 / GOOGL 75, SGOV 365 @ $100.50, cash $11,500.00, total $121,602.50, 2 option contracts",
+  "status": "RESOLVED"
+}

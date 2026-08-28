@@ -197,7 +197,7 @@ When frontier reasoning models review this issue, they should evaluate and formu
 - **Item ID**: OQI-2026-08-006
 - **Date Logged**: 2026-08-28
 - **Domain / Agents**: Equity Research Agent, Investment Thesis Agent, Pricing Agent, Data Provenance, Quality Control
-- **Related Files**: [triage_universe.py](../../scripts/triage_universe.py), [build_universe_json.py](../../scripts/build_universe_json.py), [quality_control.py](../../scripts/quality_control.py), [fetch_sec.py](../../scripts/fetch_sec.py), [calculate_pricing.py](../../scripts/calculate_pricing.py), [valuation_framework.md](../strategy/valuation_framework.md), [errata_log.md](errata_log.md)
+- **Related Files**: [triage_universe.py](../../scripts/triage_universe.py), [build_universe_json.py](../../scripts/build_universe_json.py), [quality_control.py](../../scripts/quality_control.py), [fetch_sec.py](../../scripts/fetch_sec.py), [calculate_pricing.py](../../scripts/calculate_pricing.py), [valuation_framework.md](../strategy/valuation_framework.md), [errata_protocol.md](errata_protocol.md)
 - **Status**: OPEN
 
 #### Question

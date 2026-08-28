@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-009",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-17T12:00:00+00:00",
+  "date_identified": "2026-08-17",
+  "target_file": "scripts/return_engine.py` / `context/theses/*.md",
+  "target_field_or_claim": "Universe ROI Predictions & Target Price Valuation Models",
+  "erroneous_value": "Synthetic Clustering (20%, 22%, 0%)",
+  "corrected_value": "Grounded Continuous ROI Distribution (-12.7% to +28.0%) with Bottom-Up Multi-Horizon Valuation Models",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "Tier 1 SEC EDGAR 10-K/10-Q Financials & Deterministic Valuation Model",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Grounded Continuous ROI Distribution (-12.7% to +28.0%) with Bottom-Up Multi-Horizon Valuation Models",
+  "status": "RESOLVED"
+}

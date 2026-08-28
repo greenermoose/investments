@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-010",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-17T12:00:00+00:00",
+  "date_identified": "2026-08-17",
+  "target_file": "scripts/valuation_model.py` / `context/theses/CSIQ.md",
+  "target_field_or_claim": "Target P/S Multiple Lower Bound & Target Exit Price Synchronization",
+  "erroneous_value": "Hardcoded 0.5x P/S Floor inflating low-margin firms (e.g. CSIQ +42.9% ROI with AVOID rating)",
+  "corrected_value": "Proportionate multiple scaling without arbitrary floor; synchronized 156-week base target with target exit price",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "Empirical ROI Distribution Benchmark & SEC Form 20-F Filings",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Proportionate multiple scaling without arbitrary floor; synchronized 156-week base target with target exit price",
+  "status": "RESOLVED"
+}

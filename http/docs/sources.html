@@ -1174,7 +1174,7 @@
       <li><strong>Detection:</strong> Flag conflicting data point against Tier 1 SEC EDGAR or direct exchange data.</li>
       <li><strong>Triangulation:</strong> Retrieve official primary source evidence and verify ground truth value.</li>
       <li><strong>In-Place Correction:</strong> Update the target dossier in <code>context/theses/</code> or dataset with new citation.</li>
-      <li><strong>Errata Log Entry:</strong> Append a permanent audit record to <code>context/research/errata_log.md</code> matching <code>context/schemas/errata_schema.json</code>.</li>
+      <li><strong>Errata Record:</strong> Record a permanent audit entry via <code>python scripts/errata_log.py record</code> into <code>context/research/errata/{erratum_id}.json</code> matching <code>context/schemas/errata_schema.json</code>.</li>
     </ol>
   </main>
 </body>

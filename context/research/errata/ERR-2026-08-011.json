@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-011",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-26T12:00:00+00:00",
+  "date_identified": "2026-08-26",
+  "target_file": "http/docs/sources.html` / `context/sources/catalog.md",
+  "target_field_or_claim": "Consolidated Feed Provider Designation for NYSE / NASDAQ",
+  "erroneous_value": "Listed `https://www.nasdaq.com/` as Tier 1 Real-time SIP / Tape for NYSE & NASDAQ",
+  "corrected_value": "Bifurcated into CTA/CQS Plan (`https://www.ctaplan.com/`, SIAC) for Tape A/B and UTP Plan (`https://www.utpplan.com/`, Nasdaq) for Tape C; clarified that `nasdaq.com` provides proprietary Nasdaq Last Sale (NLS) / Nasdaq Basic covering only Nasdaq venues and FINRA/Nasdaq TRF",
+  "error_category": "HALLUCINATION",
+  "authoritative_source_citation": "Consolidated Tape Association (CTA Plan), UTP Plan, SEC Regulation NMS Rule 603(c), and Nasdaq Data Link Disclaimers",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Bifurcated into CTA/CQS Plan (`https://www.ctaplan.com/`, SIAC) for Tape A/B and UTP Plan (`https://www.utpplan.com/`, Nasdaq) for Tape C; clarified that `nasdaq.com` provides proprietary Nasdaq Last Sale (NLS) / Nasdaq Basic covering only Nasdaq venues and FINRA/Nasdaq TRF",
+  "status": "RESOLVED"
+}

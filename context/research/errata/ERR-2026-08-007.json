@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-007",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-17T12:00:00+00:00",
+  "date_identified": "2026-08-17",
+  "target_file": "scripts/data/market_prices.json",
+  "target_field_or_claim": "XYZ Market Price Record",
+  "erroneous_value": "$100.00 Synthetic Benchmark",
+  "corrected_value": "$80.31 Live Exchange Feed",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "Direct Exchange / Yahoo Finance Chart API",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "$80.31 Live Exchange Feed",
+  "status": "RESOLVED"
+}

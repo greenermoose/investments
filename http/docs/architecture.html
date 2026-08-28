@@ -63,7 +63,9 @@
 
       <div class="docs-card">
         <h4>4. Memory Agent</h4>
-        <p><strong>Input:</strong> Persistent markdown dossiers in <code>context/theses/*.md</code>, errata logs, and historical run contexts.</p>
+        <p><strong>Role:</strong> Generative cross-run reasoning and invalidation alerts.</p>
+        <p><strong>Tools invoked:</strong> <code>manage_memory.py</code>, <code>activity_ledger.py</code>, <code>errata_log.py</code>.</p>
+        <p><strong>Reads:</strong> <code>context/theses/*.md</code>, <code>context/research/runs/</code>, <code>context/research/errata/</code>, <code>context/research/errata_protocol.md</code>.</p>
         <p><strong>Responsibility:</strong> Tracks cross-run continuity, evaluates multi-quarter catalyst outcomes, audits invalidation criteria, and flags broken theses for decisive liquidation (including BUY TO CLOSE mandates on open derivatives).</p>
       </div>
 
@@ -87,6 +89,11 @@
       <li><strong>Public Intelligence Tier (<code>context/theses/</code> &amp; <code>http/</code>):</strong> Fundamental company research, catalyst timelines, and valuation models contain zero private user data and are committed to version control.</li>
       <li><strong>Deterministic Engine (<code>scripts/</code>):</strong> Python scripts execute mathematical models and API connectors locally.</li>
     </ul>
+
+    <div class="callout note">
+      <div class="callout-title">Audit Artifacts: Three-Layer Model</div>
+      <p><strong>Field provenance</strong> lives in each equity research record. <strong>Agent run logs</strong> (<code>context/research/runs/{run_id}.json</code>) record bounded generative sessions. <strong>Errata registry</strong> (<code>context/research/errata/{erratum_id}.json</code>) records verified corrections. Generative agent roles invoke deterministic scripts to read and write these layers; scripts are never agents.</p>
+    </div>
 
     <div class="callout note">
       <div class="callout-title">Deterministic Context Construction</div>

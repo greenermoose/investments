@@ -53,6 +53,8 @@ python scripts/manage_universe.py memory
 python scripts/manage_universe.py snapshot --demo
 python scripts/manage_universe.py onboard --symbol CRWD --live
 python scripts/manage_universe.py rebuild-all
+python scripts/manage_universe.py ledger summary
+python scripts/manage_universe.py errata list --status OPEN
 ```
 
 ## Script Catalog
@@ -92,7 +94,9 @@ python scripts/manage_universe.py rebuild-all
 - `quality_control.py`: Audits (`--audit`) and repairs (`--fix`) data integrity across symbols, names, prices, technical bounds, index memberships, financial math, and thesis schema. Reports unauthored fields as tracked gaps rather than back-filling them.
 - `validate_thesis.py` (Investment Thesis Agent): Validates rendered dossiers against `context/schemas/investment_thesis_schema.json`.
 - `compare_roi_distribution.py`: Compares the modeled ROI distribution against empirical benchmarks (CRSP, J.P. Morgan Asset Management, S&P Dow Jones).
-- `manage_memory.py` (Memory Agent): Audits dossiers in `context/theses/*.md`, tracks catalyst deadlines, checks invalidation triggers, and inspects errata logs.
+- `manage_memory.py` (Memory Agent tool): Audits dossiers in `context/theses/*.md`, scans `context/research/runs/` and `context/research/errata/`, tracks catalyst deadlines, checks invalidation triggers. Use `--ledger` for combined JSON summary. This script is not the Memory Agent role.
+- `activity_ledger.py` (Memory Agent / all roles tool): Agent run log CLI at `context/research/runs/{run_id}.json`. Commands: start-run, end-run, log-event, query, validate, render-index.
+- `errata_log.py` (Memory Agent tool): Errata registry CLI at `context/research/errata/{erratum_id}.json`. Commands: record, update-status, list, query, validate, render-index.
 
 ### Surveillance readers
 - `surveil_sentiment.py`: Reads, validates (`--audit`), and reports recorded investor sentiment and press observations. Sentiment is observed and recorded by agents from named sources; this script infers none from fundamentals, and an empty result means nothing was observed.
@@ -142,8 +146,12 @@ python scripts/render_plan.py --orders examples/sample_orders.json --snapshot ex
 python scripts/render_plan.py --orders private/plans/2026-08-31-orders.json --save
 
 # 9. Audit Institutional Memory & Invalidation
-python scripts/manage_memory.py
+python scripts/manage_memory.py --ledger
 
-# 10. Run Deterministic Quality Control Audit
+# 10. Agent run log and errata registry
+python scripts/activity_ledger.py summary
+python scripts/errata_log.py summary
+
+# 11. Run Deterministic Quality Control Audit
 python scripts/quality_control.py --audit
 ```

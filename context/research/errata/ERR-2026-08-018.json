@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-018",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "scripts/generate_plan.py` (`build_plan_orders_for_account`)",
+  "target_field_or_claim": "Equity liquidation order generation for held positions rated SELL or AVOID",
+  "erroneous_value": "The order builder inspects held equity positions only to write covered calls, and only where the rating is BUY or HOLD and the lot is at least 100 shares. `SELL` and `AVOID` ratings trigger a BUY TO CLOSE order for short option positions but there was no code path that emitted a sell order for held common stock. A portfolio whose every holding was rated SELL or AVOID generated zero orders.",
+  "corrected_value": "RESOLVED 2026-08-28. Added a SELL TO CLOSE liquidation step to `build_plan_orders_for_account`, sequenced after the BUY TO CLOSE option step (so share locks are released first) and before the covered call and cash-secured put steps. Emits a marketable limit 3% through the mark for single-session fill, sub-penny tick precision below $1.00, whole-share limit plus fractional market-order remainder, a cross-reference when the underlying carries an open short option, and treats sale proceeds as T+1 unsettled so they are not double-counted as same-session put collateral.",
+  "error_category": "METHODOLOGY_CALCULATION_ERROR",
+  "authoritative_source_citation": "Direct execution of `scripts/generate_plan.py` against `private/snapshots/2026-08-28-ira-positions.csv`; source inspection of `build_plan_orders_for_account` confirming SELL/AVOID handling is gated on `contracts < 0`",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "RESOLVED 2026-08-28. Added a SELL TO CLOSE liquidation step to `build_plan_orders_for_account`, sequenced after the BUY TO CLOSE option step (so share locks are released first) and before the covered call and cash-secured put steps. Emits a marketable limit 3% through the mark for single-session fill, sub-penny tick precision below $1.00, whole-share limit plus fractional market-order remainder, a cross-reference when the underlying carries an open short option, and treats sale proceeds as T+1 unsettled so they are not double-counted as same-session put collateral.",
+  "status": "RESOLVED"
+}

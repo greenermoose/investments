@@ -12,7 +12,7 @@ This prompt protocol defines the multi-agent coordination workflow and tool sequ
 3. Dual-Mode Execution:
    - Offline Mode (`--offline`): Reprocesses and validates existing local data structures without external network queries.
    - Live Mode (`--live`): Queries SEC EDGAR (10 req/sec rate limit), exchange price feeds, and analyst releases.
-4. Errata Tracking: Any erroneous, stale, or hallucinated claims discovered must be corrected in place and logged to `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
+4. Errata Tracking: Any erroneous, stale, or hallucinated claims discovered must be corrected in place and recorded via `python scripts/errata_log.py record` into `context/research/errata/{erratum_id}.json` conforming to `context/schemas/errata_schema.json`. See `context/research/errata_protocol.md`.
 
 ## Multi-Agent Execution Sequence
 
@@ -75,7 +75,7 @@ This prompt protocol defines the multi-agent coordination workflow and tool sequ
 2. Verify if any catalyst target date has passed:
    - If the company exceeded milestone expectations, confirm whether revenue growth or multiple warrants an upward revision.
    - If the company failed milestone execution or breached invalidation criteria, initiate thesis revision or liquidation alerts.
-3. Record any errata identified during the audit in `context/research/errata_log.md`.
+3. Record any errata identified during the audit via `python scripts/errata_log.py record` and link from the active run with `activity_ledger.py log-event --type ERRATA_LINKED`.
 
 ### Step 4: Quality Control Verification
 

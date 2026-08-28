@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-016",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "scripts/onboard_company.py`, `scripts/triage_universe.py`, `scripts/screen_market.py`, `scripts/calculate_pricing.py",
+  "target_field_or_claim": "Argparse help string percent escaping",
+  "erroneous_value": "`--help` raised `ValueError: unsupported format character` on all four scripts because literal `%` in help text was interpreted as a format specifier, making the CLIs undocumentable at runtime",
+  "corrected_value": "Escaped as `%%` following the existing correct convention in `scripts/manage_universe.py:789`. All four `--help` invocations now render without traceback",
+  "error_category": "TRANSCRIPTION_ERROR",
+  "authoritative_source_citation": "Python `argparse` format-string semantics; existing correct usage in `scripts/manage_universe.py`",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Escaped as `%%` following the existing correct convention in `scripts/manage_universe.py:789`. All four `--help` invocations now render without traceback",
+  "status": "RESOLVED"
+}

@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-002",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-16T12:00:00+00:00",
+  "date_identified": "2026-08-16",
+  "target_file": "context/theses/NVDA.md",
+  "target_field_or_claim": "Data Center Revenue Q1 2026",
+  "erroneous_value": "$22.6B",
+  "corrected_value": "$26.3B",
+  "error_category": "TRANSCRIPTION_ERROR",
+  "authoritative_source_citation": "NVIDIA Form 10-Q filed 2026-05-28",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "$26.3B",
+  "status": "RESOLVED"
+}

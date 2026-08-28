@@ -1,0 +1,79 @@
+{
+  "run_id": "RUN-2026-08-28-002",
+  "schema_version": "1.0",
+  "started_at": "2026-08-28T12:00:00+00:00",
+  "completed_at": "2026-08-28T16:00:00+00:00",
+  "status": "COMPLETED",
+  "cadence": "EVENT_DRIVEN",
+  "trigger": "equity_onboarding",
+  "agent_roles": ["Equity Research Agent", "Investment Thesis Agent", "Memory Agent"],
+  "prompt_ref": "context/prompts/research_refresh.md",
+  "runtime_context_signature": "System clock 2026-08-28; Codex governance session; roles Equity Research+Investment Thesis+Memory",
+  "summary": "Onboarded ENIC, HST, OMAB; completed CSIQ and NVDA research; fixed ADR registry gaps; recorded ERR-2026-08-019 for CSIQ placeholder removal.",
+  "deliverables": [
+    "context/research/audits/2026-08-28-decision-data-readiness-audit.md"
+  ],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-28-001",
+      "recorded_at": "2026-08-28T12:30:00+00:00",
+      "event_type": "EQUITY_ONBOARDED",
+      "agent_role": "Equity Research Agent",
+      "subject": "Onboarded ENIC into coverage universe",
+      "symbol": "ENIC",
+      "target_path": "context/data/equities/ENIC.json"
+    },
+    {
+      "event_id": "EVT-2026-08-28-002",
+      "recorded_at": "2026-08-28T12:35:00+00:00",
+      "event_type": "EQUITY_ONBOARDED",
+      "agent_role": "Equity Research Agent",
+      "subject": "Onboarded HST into coverage universe",
+      "symbol": "HST",
+      "target_path": "context/data/equities/HST.json"
+    },
+    {
+      "event_id": "EVT-2026-08-28-003",
+      "recorded_at": "2026-08-28T12:40:00+00:00",
+      "event_type": "EQUITY_ONBOARDED",
+      "agent_role": "Equity Research Agent",
+      "subject": "Onboarded OMAB into coverage universe",
+      "symbol": "OMAB",
+      "target_path": "context/data/equities/OMAB.json"
+    },
+    {
+      "event_id": "EVT-2026-08-28-004",
+      "recorded_at": "2026-08-28T13:15:00+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Investment Thesis Agent",
+      "subject": "Updated research.off_balance_sheet for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.off_balance_sheet"
+    },
+    {
+      "event_id": "EVT-2026-08-28-005",
+      "recorded_at": "2026-08-28T13:45:00+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Investment Thesis Agent",
+      "subject": "Updated research for NVDA",
+      "symbol": "NVDA",
+      "target_path": "context/data/equities/NVDA.json#research"
+    },
+    {
+      "event_id": "EVT-2026-08-28-006",
+      "recorded_at": "2026-08-28T14:00:00+00:00",
+      "event_type": "ERRATA_LINKED",
+      "agent_role": "Memory Agent",
+      "subject": "Linked erratum ERR-2026-08-019 after CSIQ placeholder correction",
+      "related_ids": ["ERR-2026-08-019"]
+    },
+    {
+      "event_id": "EVT-2026-08-28-007",
+      "recorded_at": "2026-08-28T15:30:00+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Memory Agent",
+      "subject": "Authored decision-data readiness audit deliverable",
+      "target_path": "context/research/audits/2026-08-28-decision-data-readiness-audit.md"
+    }
+  ]
+}

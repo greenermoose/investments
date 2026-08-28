@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-001",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-16T12:00:00+00:00",
+  "date_identified": "2026-08-16",
+  "target_file": "context/theses/BA.md",
+  "target_field_or_claim": "Boeing 737 MAX Backlog Share",
+  "erroneous_value": "42.0%",
+  "corrected_value": "39.4%",
+  "error_category": "STALE_PARAMETRIC_MEMORY",
+  "authoritative_source_citation": "SEC Form 10-Q for Period Ended 2026-06-30 (Note 14)",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "39.4%",
+  "status": "RESOLVED"
+}

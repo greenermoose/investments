@@ -118,7 +118,7 @@ To operate cheaply and quickly day-to-day without repeatedly querying remote end
 ### Verification Rules for Cached Data:
 1. **Never Assume Decimal Precision from Memory:** Financial digits, share counts, and revenue numbers are never recalled from LLM weights; they are read directly from `context/data/` or `http/data/`.
 2. **Deterministic Parity Assertion:** Before any trading plan is finalized, `scripts/quality_control.py --audit` executes 8 programmatic integrity checks verifying that all universe constituents have valid prices, correct CIKs, and matching math.
-3. **Errata Logging:** If any cached value is found to be stale or erroneous, it is corrected immediately and logged in `context/research/errata_log.md` conforming to `context/schemas/errata_schema.json`.
+3. **Errata Logging:** If any cached value is found to be stale or erroneous, it is corrected immediately and recorded via `python scripts/errata_log.py record` into `context/research/errata/{erratum_id}.json` conforming to `context/schemas/errata_schema.json`.
 
 ## 4. Anti-Hallucination Protocol & Primary Source Regeneration
 

@@ -508,8 +508,21 @@ def main():
             continue
 
         content = render_dossier(symbol, equity, model, research, targets, prices, as_of)
-        with open(os.path.join(THESES_DIR, f"{symbol}.md"), "w", encoding="utf-8") as f:
+        thesis_path = os.path.join(THESES_DIR, f"{symbol}.md")
+        with open(thesis_path, "w", encoding="utf-8") as f:
             f.write(content)
+        try:
+            import activity_ledger
+            activity_ledger.append_event_to_active_or_sys(
+                event_type="THESIS_RENDERED",
+                agent_role="Deterministic Script",
+                subject=f"Rendered thesis dossier for {symbol}",
+                symbol=symbol,
+                target_path=f"context/theses/{symbol}.md",
+                trigger="script_hook",
+            )
+        except Exception:
+            pass
         rendered += 1
 
     print(f"Rendered {rendered} dossiers into {THESES_DIR}.")

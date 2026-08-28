@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-017",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "scripts/data/company_meta.json`, `context/theses/HOFT.md",
+  "target_field_or_claim": "HOFT company name, sector, and industry classification",
+  "erroneous_value": "Onboarding defaulted HOFT to name `HOFT Corporation`, sector `Information Technology`, industry `US Public Equity`, generating a dossier describing a residential furniture manufacturer as an enterprise technology firm with `software subscription tier` and `platform monetization` narrative",
+  "corrected_value": "Corrected to `Hooker Furnishings Corporation`, sector `Consumer Discretionary`, industry `Home Furnishings`, with investor relations URL `https://investor.hoft.com/`; dossier regenerated and revalidated",
+  "error_category": "HALLUCINATION",
+  "authoritative_source_citation": "SEC EDGAR CIK 0001077688 filing title `HOOKER FURNISHINGS Corp`; exchange price feed name `Hooker Furnishings Corporation`",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Corrected to `Hooker Furnishings Corporation`, sector `Consumer Discretionary`, industry `Home Furnishings`, with investor relations URL `https://investor.hoft.com/`; dossier regenerated and revalidated",
+  "status": "RESOLVED"
+}

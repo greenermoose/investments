@@ -1,0 +1,16 @@
+{
+  "erratum_id": "ERR-2026-08-019",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "context/data/equities/CSIQ.json",
+  "target_field_or_claim": "Canadian Solar off-balance-sheet and contingent-liability narrative",
+  "erroneous_value": "A copied utility-company placeholder asserted regulated rate-base recovery, ash-pond remediation, natural-gas take-or-pay contracts, and $5.46B of encumbrances that Canadian Solar did not report",
+  "corrected_value": "Removed the placeholder and replaced it through `research_store.write_research` with a 2025 Form 20-F audit identifying $2.9723B of inventory, equipment, project-construction, letter-of-credit, and lease encumbrances, excluding recognized borrowings",
+  "error_category": "HALLUCINATION",
+  "authoritative_source_citation": "Canadian Solar Form 20-F filed 2026-04-10, accession 0001104659-26-041976",
+  "identifying_agent_or_human": "Investment Thesis Agent",
+  "correction_action_taken": "Removed the placeholder and replaced it through `research_store.write_research` with a 2025 Form 20-F audit identifying $2.9723B of inventory, equipment, project-construction, letter-of-credit, and lease encumbrances, excluding recognized borrowings",
+  "status": "RESOLVED",
+  "related_run_id": "RUN-2026-08-28-002"
+}

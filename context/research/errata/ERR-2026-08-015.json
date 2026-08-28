@@ -1,0 +1,16 @@
+{
+  "erratum_id": "ERR-2026-08-015",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-28T12:00:00+00:00",
+  "date_identified": "2026-08-28",
+  "target_file": "context/data/universe.json`, `context/data/market_prices.json",
+  "target_field_or_claim": "`previous_close`, `day_change`, `day_change_percent` split-adjustment concordance",
+  "erroneous_value": "170 of 175 records carry `previous_close` disagreeing with `nominal_previous_close` while `cumulative_split_factor` is 1.0, producing implausible single-session moves for mega-caps (ABNB +39.59%, ADP +30.80%, ABT +30.24%, ADBE +21.37%). ENVX recorded at -52.13% on the day",
+  "corrected_value": "NOT YET CORRECTED. Broker-observed ENVX day change on 2026-08-28 was $0.00 against a recorded -52.13%, contradicting the stored series. All technical signals derived from these fields (momentum, day-change screens) are unusable until the split-adjustment path is repaired",
+  "error_category": "UPSTREAM_API_ANOMALY",
+  "authoritative_source_citation": "Direct brokerage terminal observation 2026-08-28 (ENVX $0.00 day change) versus stored `day_change_percent` of -52.13",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "NOT YET CORRECTED. Broker-observed ENVX day change on 2026-08-28 was $0.00 against a recorded -52.13%, contradicting the stored series. All technical signals derived from these fields (momentum, day-change screens) are unusable until the split-adjustment path is repaired",
+  "status": "OPEN",
+  "related_run_id": "RUN-2026-08-28-002"
+}

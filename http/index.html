@@ -105,10 +105,10 @@
 
       <div class="docs-card">
         <h4>4. Memory Agent</h4>
-        <p><strong>Input:</strong> Persistent dossiers in <code>context/theses/*.md</code>, errata logs, and past
-          deliberation history.</p>
+        <p><strong>Tools:</strong> <code>manage_memory.py</code>, <code>activity_ledger.py</code>, <code>errata_log.py</code>.</p>
+        <p><strong>Reads:</strong> Persistent dossiers in <code>context/theses/*.md</code>, agent run logs in <code>context/research/runs/</code>, errata registry in <code>context/research/errata/</code>, and <code>context/research/errata_protocol.md</code>.</p>
         <p><strong>Responsibility:</strong> Manages institutional context across runs, audits catalyst execution against
-          deadlines, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent
+          deadlines, monitors explicit invalidation exit triggers, maintains the errata registry, and issues urgent
           liquidation alerts for broken theses.</p>
       </div>
 
@@ -137,6 +137,8 @@
       <li><code>private/snapshots/</code> and <code>private/plans/</code> are <strong>strictly local and
           git-ignored</strong>. Private account numbers, trade quantities, and balances never leak into shared files or
         repositories.</li>
+      <li><code>context/research/runs/</code> and <code>context/research/errata/</code> record public agent activity and
+        verified corrections only. Run logs and errata never contain private portfolio data.</li>
     </ul>
 
     <h2>Core Investment Strategy Principles</h2>

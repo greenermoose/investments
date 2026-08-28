@@ -1,0 +1,15 @@
+{
+  "erratum_id": "ERR-2026-08-008",
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-17T12:00:00+00:00",
+  "date_identified": "2026-08-17",
+  "target_file": "scripts/data/company_meta.json",
+  "target_field_or_claim": "ZM Official Company Name",
+  "erroneous_value": "Zoom Video Communications, Inc.",
+  "corrected_value": "Zoom Communications, Inc.",
+  "error_category": "TRANSCRIPTION_ERROR",
+  "authoritative_source_citation": "SEC EDGAR Form 10-Q filed 2026-06-04 (CIK 0001585521)",
+  "identifying_agent_or_human": "Memory Agent",
+  "correction_action_taken": "Zoom Communications, Inc.",
+  "status": "RESOLVED"
+}

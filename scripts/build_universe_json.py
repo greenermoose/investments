@@ -19,6 +19,7 @@ if scripts_dir not in sys.path:
 from return_engine import calculate_annualized_roi
 from valuation_model import model_equity_valuation
 from compare_roi_distribution import run_comparison, print_comparison_report
+from adr_registry import normalize_shares_outstanding, convert_to_usd
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -129,23 +130,26 @@ for filename in sorted(all_files):
     is_index_member = len(indices) > 0
 
     sec_metrics = sec_summary.get(sym, {})
-    shares = sec_metrics.get("shares_outstanding")
-    ttm_rev = sec_metrics.get("ttm_revenue")
+    raw_shares = sec_metrics.get("shares_outstanding")
+    raw_ttm_rev = sec_metrics.get("ttm_revenue")
 
-    if (not shares or shares == 0) and filings:
-        shares = filings[0].get("data", {}).get("shares_outstanding")
+    if (not raw_shares or raw_shares == 0) and filings:
+        raw_shares = filings[0].get("data", {}).get("shares_outstanding")
 
-    # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
-    if sym in ["BRK-B", "BRK.B"] and shares and shares < 100e6:
-        shares = 2160000000
+    norm_shares = normalize_shares_outstanding(sym, raw_shares)
+    shares = norm_shares if norm_shares is not None else raw_shares
 
-    total_debt = sec_metrics.get("total_debt")
-    if total_debt is None:
-        total_debt = latest_bs.get("total_debt", 0)
+    ttm_rev = convert_to_usd(raw_ttm_rev, symbol=sym) if raw_ttm_rev is not None else None
 
-    cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
-    if cash_equiv is None:
-        cash_equiv = latest_bs.get("cash_and_cash_equivalents", 0)
+    raw_total_debt = sec_metrics.get("total_debt")
+    if raw_total_debt is None:
+        raw_total_debt = latest_bs.get("total_debt", 0)
+    total_debt = convert_to_usd(raw_total_debt, symbol=sym) if raw_total_debt is not None else 0
+
+    raw_cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
+    if raw_cash_equiv is None:
+        raw_cash_equiv = latest_bs.get("cash_and_cash_equivalents", 0)
+    cash_equiv = convert_to_usd(raw_cash_equiv, symbol=sym) if raw_cash_equiv is not None else 0
 
     # Market price & Technical analysis data
     price_info = market_prices.get(sym, {})

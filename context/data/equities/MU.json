@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
       "data": {
         "shares_outstanding": 1127734051,
-        "revenue": 78959000000,
+        "revenue": 78959000000.0,
         "balance_sheet": {
-          "total_assets": 134112000000,
-          "total_liabilities": 33388000000,
-          "total_shareholders_equity": 100724000000,
-          "total_debt": 5722000000,
-          "short_term_debt": 582000000,
-          "long_term_debt": 2088000000,
-          "cash_and_cash_equivalents": 26022000000,
-          "cash_primary": 24995000000,
-          "marketable_securities_current": 1027000000
+          "total_assets": 134112000000.0,
+          "total_liabilities": 33388000000.0,
+          "total_shareholders_equity": 100724000000.0,
+          "total_debt": 5722000000.0,
+          "short_term_debt": 582000000.0,
+          "long_term_debt": 2088000000.0,
+          "cash_and_cash_equivalents": 26022000000.0,
+          "cash_primary": 24995000000.0,
+          "marketable_securities_current": 1027000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
       "data": {
         "shares_outstanding": 1125509261,
-        "revenue": 37503000000,
+        "revenue": 37503000000.0,
         "balance_sheet": {
-          "total_assets": 101509000000,
-          "total_liabilities": 29050000000,
-          "total_shareholders_equity": 72459000000,
-          "total_debt": 10142000000,
-          "short_term_debt": 585000000,
-          "long_term_debt": 2215000000,
-          "cash_and_cash_equivalents": 14589000000,
-          "cash_primary": 13908000000,
-          "marketable_securities_current": 681000000
+          "total_assets": 101509000000.0,
+          "total_liabilities": 29050000000.0,
+          "total_shareholders_equity": 72459000000.0,
+          "total_debt": 10142000000.0,
+          "short_term_debt": 585000000.0,
+          "long_term_debt": 2215000000.0,
+          "cash_and_cash_equivalents": 14589000000.0,
+          "cash_primary": 13908000000.0,
+          "marketable_securities_current": 681000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
       "data": {
         "shares_outstanding": 1122466035,
-        "revenue": 13643000000,
+        "revenue": 13643000000.0,
         "balance_sheet": {
-          "total_assets": 85971000000,
-          "total_liabilities": 27165000000,
-          "total_shareholders_equity": 58806000000,
-          "total_debt": 11756000000,
-          "short_term_debt": 569000000,
-          "long_term_debt": 2343000000,
-          "cash_and_cash_equivalents": 10318000000,
-          "cash_primary": 9731000000,
-          "marketable_securities_current": 587000000
+          "total_assets": 85971000000.0,
+          "total_liabilities": 27165000000.0,
+          "total_shareholders_equity": 58806000000.0,
+          "total_debt": 11756000000.0,
+          "short_term_debt": 569000000.0,
+          "long_term_debt": 2343000000.0,
+          "cash_and_cash_equivalents": 10318000000.0,
+          "cash_primary": 9731000000.0,
+          "marketable_securities_current": 587000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723125",
       "data": {
         "shares_outstanding": 1119125101,
-        "revenue": 37378000000,
+        "revenue": 37378000000.0,
         "balance_sheet": {
-          "total_assets": 82798000000,
-          "total_liabilities": 28633000000,
-          "total_shareholders_equity": 54165000000,
-          "total_debt": 14577000000,
-          "short_term_debt": 560000000,
-          "long_term_debt": 2484000000,
-          "cash_and_cash_equivalents": 10307000000,
-          "cash_primary": 9642000000,
-          "marketable_securities_current": 665000000
+          "total_assets": 82798000000.0,
+          "total_liabilities": 28633000000.0,
+          "total_shareholders_equity": 54165000000.0,
+          "total_debt": 14577000000.0,
+          "short_term_debt": 560000000.0,
+          "long_term_debt": 2484000000.0,
+          "cash_and_cash_equivalents": 10307000000.0,
+          "cash_primary": 9642000000.0,
+          "marketable_securities_current": 665000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.micron.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 46.04,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Micron Technology, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Micron Technology, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 45.54,
-      "take_or_pay_commitments_usd_b": 13.66,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $45.54B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Micron Technology, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.744105+00:00"
 }

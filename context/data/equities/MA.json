@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1141391",
       "data": {
         "shares_outstanding": 887000000,
-        "revenue": 17675000000,
+        "revenue": 17675000000.0,
         "balance_sheet": {
-          "total_assets": 57691000000,
-          "total_liabilities": 52085000000,
-          "total_shareholders_equity": 5611000000,
-          "total_debt": 24798000000,
-          "short_term_debt": 2459000000,
-          "long_term_debt": 22184000000,
-          "cash_and_cash_equivalents": 11291000000,
-          "cash_primary": 11291000000,
-          "marketable_securities_current": 0
+          "total_assets": 57691000000.0,
+          "total_liabilities": 52085000000.0,
+          "total_shareholders_equity": 5611000000.0,
+          "total_debt": 24798000000.0,
+          "short_term_debt": 2459000000.0,
+          "long_term_debt": 22184000000.0,
+          "cash_and_cash_equivalents": 11291000000.0,
+          "cash_primary": 11291000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1141391",
       "data": {
         "shares_outstanding": 891000000,
-        "revenue": 8398000000,
+        "revenue": 8398000000.0,
         "balance_sheet": {
-          "total_assets": 52449000000,
-          "total_liabilities": 45727000000,
-          "total_shareholders_equity": 6719000000,
-          "total_debt": 19102000000,
-          "short_term_debt": 1748000000,
-          "long_term_debt": 17212000000,
-          "cash_and_cash_equivalents": 7906000000,
-          "cash_primary": 7906000000,
-          "marketable_securities_current": 0
+          "total_assets": 52449000000.0,
+          "total_liabilities": 45727000000.0,
+          "total_shareholders_equity": 6719000000.0,
+          "total_debt": 19102000000.0,
+          "short_term_debt": 1748000000.0,
+          "long_term_debt": 17212000000.0,
+          "cash_and_cash_equivalents": 7906000000.0,
+          "cash_primary": 7906000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1141391",
       "data": {
         "shares_outstanding": 905000000,
-        "revenue": 32791000000,
+        "revenue": 32791000000.0,
         "balance_sheet": {
-          "total_assets": 54157000000,
-          "total_liabilities": 46411000000,
-          "total_shareholders_equity": 7737000000,
-          "total_debt": 19149000000,
-          "short_term_debt": 749000000,
-          "long_term_debt": 18251000000,
-          "cash_and_cash_equivalents": 10566000000,
-          "cash_primary": 10566000000,
-          "marketable_securities_current": 0
+          "total_assets": 54157000000.0,
+          "total_liabilities": 46411000000.0,
+          "total_shareholders_equity": 7737000000.0,
+          "total_debt": 19149000000.0,
+          "short_term_debt": 749000000.0,
+          "long_term_debt": 18251000000.0,
+          "cash_and_cash_equivalents": 10566000000.0,
+          "cash_primary": 10566000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1141391",
       "data": {
         "shares_outstanding": 908000000,
-        "revenue": 23985000000,
+        "revenue": 23985000000.0,
         "balance_sheet": {
-          "total_assets": 53289000000,
-          "total_liabilities": 45370000000,
-          "total_shareholders_equity": 7904000000,
-          "total_debt": 19144000000,
-          "short_term_debt": 0,
-          "long_term_debt": 18983000000,
-          "cash_and_cash_equivalents": 10313000000,
-          "cash_primary": 10313000000,
-          "marketable_securities_current": 0
+          "total_assets": 53289000000.0,
+          "total_liabilities": 45370000000.0,
+          "total_shareholders_equity": 7904000000.0,
+          "total_debt": 19144000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 18983000000.0,
+          "cash_and_cash_equivalents": 10313000000.0,
+          "cash_primary": 10313000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.mastercard.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.5,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.07,
-      "pbo_gross_usd_b": 3.28,
-      "plan_assets_usd_b": 3.21,
-      "annual_cash_contribution_usd_b": 0.07,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.2,
-      "narrative": "Mastercard Incorporated maintains well-funded legacy defined benefit pension plans ($3.28B PBO vs $3.21B assets) with strong institutional risk-matching asset allocation."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Mastercard Incorporated has zero industrial contamination or Superfund remediation liabilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
-      "recent_settlements_scheduled_usd_b": 0.8,
-      "annual_legal_settlement_cash_drain_usd_b": 0.12,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 3.93,
-      "take_or_pay_commitments_usd_b": 0.2,
-      "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $3.93B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
-    "narrative": "Mastercard Incorporated's off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  "last_updated": "2026-08-28T03:13:30.718365+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
       "data": {
         "shares_outstanding": 62281655,
-        "revenue": 15554000,
+        "revenue": 15554000.0,
         "balance_sheet": {
-          "total_assets": 393966000,
-          "total_liabilities": 48419000,
-          "total_shareholders_equity": 345547000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 292818000,
-          "cash_primary": 110004000,
-          "marketable_securities_current": 182814000
+          "total_assets": 393966000.0,
+          "total_liabilities": 48419000.0,
+          "total_shareholders_equity": 345547000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 292818000.0,
+          "cash_primary": 110004000.0,
+          "marketable_securities_current": 182814000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
       "data": {
         "shares_outstanding": 59150790,
-        "revenue": 6229000,
+        "revenue": 6229000.0,
         "balance_sheet": {
-          "total_assets": 443277000,
-          "total_liabilities": 48400000,
-          "total_shareholders_equity": 394877000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 343545000,
-          "cash_primary": 155659000,
-          "marketable_securities_current": 187886000
+          "total_assets": 443277000.0,
+          "total_liabilities": 48400000.0,
+          "total_shareholders_equity": 394877000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 343545000.0,
+          "cash_primary": 155659000.0,
+          "marketable_securities_current": 187886000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
       "data": {
         "shares_outstanding": 57117150,
-        "revenue": 184420000,
+        "revenue": 184420000.0,
         "balance_sheet": {
-          "total_assets": 418434000,
-          "total_liabilities": 65977000,
-          "total_shareholders_equity": 352457000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 284670000,
-          "cash_primary": 84220000,
-          "marketable_securities_current": 200450000
+          "total_assets": 418434000.0,
+          "total_liabilities": 65977000.0,
+          "total_shareholders_equity": 352457000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 284670000.0,
+          "cash_primary": 84220000.0,
+          "marketable_securities_current": 200450000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1623526",
       "data": {
         "shares_outstanding": 54797418,
-        "revenue": 183018000,
+        "revenue": 183018000.0,
         "balance_sheet": {
-          "total_assets": 360264000,
-          "total_liabilities": 52159000,
-          "total_shareholders_equity": 308105000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 248310000,
-          "cash_primary": 83394000,
-          "marketable_securities_current": 164916000
+          "total_assets": 360264000.0,
+          "total_liabilities": 52159000.0,
+          "total_shareholders_equity": 308105000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 248310000.0,
+          "cash_primary": 83394000.0,
+          "marketable_securities_current": 164916000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.stoketherapeutics.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.55,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.03,
-      "plan_assets_usd_b": 0.03,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.01,
-      "narrative": "Stoke Therapeutics, Inc. sponsors modest domestic and international defined benefit plans with $0.03B in gross PBO against $0.03B in plan assets ($0.00B net funded gap) and $0.01B in unfunded postretirement healthcare OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.1,
-      "estimated_unreserved_exposure_usd_b": 0.05,
-      "superfund_and_pfas_sites_count": 2,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "LOW",
-      "narrative": "Routine environmental compliance across pharmaceutical formulation and medical device fabrication facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Product liability dockets, patent challenge (Hatch-Waxman) litigation, and government pricing compliance reviews.",
-      "recent_settlements_scheduled_usd_b": 0.5,
-      "annual_legal_settlement_cash_drain_usd_b": 0.0,
-      "catastrophic_loss_risk_level": "MODERATE",
-      "narrative": "Ongoing patent defense and product liability claims incur ~$0.00B in annual defense and settlement outlays, covered by high gross profit margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.04,
-      "take_or_pay_commitments_usd_b": 0.01,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Active pharmaceutical ingredient supply agreements and clinical contract research organization (CRO) commitments total $0.04B."
-    },
-    "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
-    "narrative": "Stoke Therapeutics, Inc.'s off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  "last_updated": "2026-08-28T03:13:30.814782+00:00"
 }

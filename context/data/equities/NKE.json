@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1479800000,
-        "revenue": 46398000000,
+        "revenue": 46398000000.0,
         "balance_sheet": {
-          "total_assets": 38410000000,
-          "total_liabilities": 38410000000,
-          "total_shareholders_equity": 14865000000,
-          "total_debt": 7942000000,
-          "short_term_debt": 2000000000,
-          "long_term_debt": 5942000000,
-          "cash_and_cash_equivalents": 7563000000,
-          "cash_primary": 7563000000,
-          "marketable_securities_current": 0
+          "total_assets": 38410000000.0,
+          "total_liabilities": 38410000000.0,
+          "total_shareholders_equity": 14865000000.0,
+          "total_debt": 7942000000.0,
+          "short_term_debt": 2000000000.0,
+          "long_term_debt": 5942000000.0,
+          "cash_and_cash_equivalents": 7563000000.0,
+          "cash_primary": 7563000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1478900000,
-        "revenue": 35426000000,
+        "revenue": 35426000000.0,
         "balance_sheet": {
-          "total_assets": 37064000000,
-          "total_liabilities": 37064000000,
-          "total_shareholders_equity": 14090000000,
-          "total_debt": 8029000000,
-          "short_term_debt": 999000000,
-          "long_term_debt": 7030000000,
-          "cash_and_cash_equivalents": 6660000000,
-          "cash_primary": 6660000000,
-          "marketable_securities_current": 0
+          "total_assets": 37064000000.0,
+          "total_liabilities": 37064000000.0,
+          "total_shareholders_equity": 14090000000.0,
+          "total_debt": 8029000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 7030000000.0,
+          "cash_and_cash_equivalents": 6660000000.0,
+          "cash_primary": 6660000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1478100000,
-        "revenue": 24147000000,
+        "revenue": 24147000000.0,
         "balance_sheet": {
-          "total_assets": 37787000000,
-          "total_liabilities": 37787000000,
-          "total_shareholders_equity": 14085000000,
-          "total_debt": 8015000000,
-          "short_term_debt": 999000000,
-          "long_term_debt": 7016000000,
-          "cash_and_cash_equivalents": 6974000000,
-          "cash_primary": 6974000000,
-          "marketable_securities_current": 0
+          "total_assets": 37787000000.0,
+          "total_liabilities": 37787000000.0,
+          "total_shareholders_equity": 14085000000.0,
+          "total_debt": 8015000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 7016000000.0,
+          "cash_and_cash_equivalents": 6974000000.0,
+          "cash_primary": 6974000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1476600000,
-        "revenue": 11720000000,
+        "revenue": 11720000000.0,
         "balance_sheet": {
-          "total_assets": 37334000000,
-          "total_liabilities": 37334000000,
-          "total_shareholders_equity": 13468000000,
-          "total_debt": 7996000000,
-          "short_term_debt": 0,
-          "long_term_debt": 7996000000,
-          "cash_and_cash_equivalents": 7024000000,
-          "cash_primary": 7024000000,
-          "marketable_securities_current": 0
+          "total_assets": 37334000000.0,
+          "total_liabilities": 37334000000.0,
+          "total_shareholders_equity": 13468000000.0,
+          "total_debt": 7996000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7996000000.0,
+          "cash_and_cash_equivalents": 7024000000.0,
+          "cash_primary": 7024000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.nike.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 9.86,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.28,
-      "pbo_gross_usd_b": 5.57,
-      "plan_assets_usd_b": 5.29,
-      "annual_cash_contribution_usd_b": 0.14,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.93,
-      "narrative": "NIKE, Inc. maintains legacy defined benefit plans ($5.57B PBO vs $5.29B assets; $-0.28B gap) and $0.93B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 8.35,
-      "take_or_pay_commitments_usd_b": 2.09,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $8.35B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "NIKE, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.757707+00:00"
 }

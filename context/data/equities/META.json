@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1326801",
       "data": {
         "shares_outstanding": 2538000000,
-        "revenue": 117111000000,
+        "revenue": 117111000000.0,
         "balance_sheet": {
-          "total_assets": 449956000000,
-          "total_liabilities": 188735000000,
-          "total_shareholders_equity": 261221000000,
-          "total_debt": 84000000000,
-          "short_term_debt": 0,
-          "long_term_debt": 83664000000,
-          "cash_and_cash_equivalents": 90260000000,
-          "cash_primary": 15462000000,
-          "marketable_securities_current": 74798000000
+          "total_assets": 449956000000.0,
+          "total_liabilities": 188735000000.0,
+          "total_shareholders_equity": 261221000000.0,
+          "total_debt": 84000000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 83664000000.0,
+          "cash_and_cash_equivalents": 90260000000.0,
+          "cash_primary": 15462000000.0,
+          "marketable_securities_current": 74798000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1326801",
       "data": {
         "shares_outstanding": 2534000000,
-        "revenue": 56311000000,
+        "revenue": 56311000000.0,
         "balance_sheet": {
-          "total_assets": 395250000000,
-          "total_liabilities": 151569000000,
-          "total_shareholders_equity": 243681000000,
-          "total_debt": 58748000000,
-          "short_term_debt": 0,
-          "long_term_debt": 58748000000,
-          "cash_and_cash_equivalents": 81180000000,
-          "cash_primary": 23426000000,
-          "marketable_securities_current": 57754000000
+          "total_assets": 395250000000.0,
+          "total_liabilities": 151569000000.0,
+          "total_shareholders_equity": 243681000000.0,
+          "total_debt": 58748000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 58748000000.0,
+          "cash_and_cash_equivalents": 81180000000.0,
+          "cash_primary": 23426000000.0,
+          "marketable_securities_current": 57754000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1326801",
       "data": {
         "shares_outstanding": 2521000000,
-        "revenue": 200966000000,
+        "revenue": 200966000000.0,
         "balance_sheet": {
-          "total_assets": 366021000000,
-          "total_liabilities": 148778000000,
-          "total_shareholders_equity": 217243000000,
-          "total_debt": 59000000000,
-          "short_term_debt": 308000000,
-          "long_term_debt": 58744000000,
-          "cash_and_cash_equivalents": 81592000000,
-          "cash_primary": 35873000000,
-          "marketable_securities_current": 45719000000
+          "total_assets": 366021000000.0,
+          "total_liabilities": 148778000000.0,
+          "total_shareholders_equity": 217243000000.0,
+          "total_debt": 59000000000.0,
+          "short_term_debt": 308000000.0,
+          "long_term_debt": 58744000000.0,
+          "cash_and_cash_equivalents": 81592000000.0,
+          "cash_primary": 35873000000.0,
+          "marketable_securities_current": 45719000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1326801",
       "data": {
         "shares_outstanding": 2520000000,
-        "revenue": 141073000000,
+        "revenue": 141073000000.0,
         "balance_sheet": {
-          "total_assets": 303844000000,
-          "total_liabilities": 109778000000,
-          "total_shareholders_equity": 194066000000,
-          "total_debt": 28834000000,
-          "short_term_debt": 0,
-          "long_term_debt": 28834000000,
-          "cash_and_cash_equivalents": 44448000000,
-          "cash_primary": 10187000000,
-          "marketable_securities_current": 34261000000
+          "total_assets": 303844000000.0,
+          "total_liabilities": 109778000000.0,
+          "total_shareholders_equity": 194066000000.0,
+          "total_debt": 28834000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 28834000000.0,
+          "cash_and_cash_equivalents": 44448000000.0,
+          "cash_primary": 10187000000.0,
+          "marketable_securities_current": 34261000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.atmeta.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 70.84,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Meta Platforms, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Meta Platforms, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 70.34,
-      "take_or_pay_commitments_usd_b": 21.1,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $70.34B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Meta Platforms, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.732525+00:00"
 }

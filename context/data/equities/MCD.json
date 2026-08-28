@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
       "data": {
         "shares_outstanding": 707641531,
-        "revenue": 13616000000,
+        "revenue": 13616000000.0,
         "balance_sheet": {
-          "total_assets": 59920000000,
-          "total_liabilities": 59920000000,
-          "total_shareholders_equity": -1023000000,
-          "total_debt": 39900000000,
-          "short_term_debt": 0,
-          "long_term_debt": 39863000000,
-          "cash_and_cash_equivalents": 822000000,
-          "cash_primary": 822000000,
-          "marketable_securities_current": 0
+          "total_assets": 59920000000.0,
+          "total_liabilities": 59920000000.0,
+          "total_shareholders_equity": -1023000000.0,
+          "total_debt": 39900000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 39863000000.0,
+          "cash_and_cash_equivalents": 822000000.0,
+          "cash_primary": 822000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
       "data": {
         "shares_outstanding": 710505859,
-        "revenue": 6517000000,
+        "revenue": 6517000000.0,
         "balance_sheet": {
-          "total_assets": 60037000000,
-          "total_liabilities": 60037000000,
-          "total_shareholders_equity": -1286000000,
-          "total_debt": 40100000000,
-          "short_term_debt": 0,
-          "long_term_debt": 40105000000,
-          "cash_and_cash_equivalents": 1170000000,
-          "cash_primary": 1170000000,
-          "marketable_securities_current": 0
+          "total_assets": 60037000000.0,
+          "total_liabilities": 60037000000.0,
+          "total_shareholders_equity": -1286000000.0,
+          "total_debt": 40100000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 40105000000.0,
+          "cash_and_cash_equivalents": 1170000000.0,
+          "cash_primary": 1170000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
       "data": {
         "shares_outstanding": 712154350,
-        "revenue": 26885000000,
+        "revenue": 26885000000.0,
         "balance_sheet": {
-          "total_assets": 59515000000,
-          "total_liabilities": 59515000000,
-          "total_shareholders_equity": -1791000000,
-          "total_debt": 40145000000,
-          "short_term_debt": 725000000,
-          "long_term_debt": 39973000000,
-          "cash_and_cash_equivalents": 774000000,
-          "cash_primary": 774000000,
-          "marketable_securities_current": 0
+          "total_assets": 59515000000.0,
+          "total_liabilities": 59515000000.0,
+          "total_shareholders_equity": -1791000000.0,
+          "total_debt": 40145000000.0,
+          "short_term_debt": 725000000.0,
+          "long_term_debt": 39973000000.0,
+          "cash_and_cash_equivalents": 774000000.0,
+          "cash_primary": 774000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=63908",
       "data": {
         "shares_outstanding": 712154350,
-        "revenue": 19876000000,
+        "revenue": 19876000000.0,
         "balance_sheet": {
-          "total_assets": 60608000000,
-          "total_liabilities": 60608000000,
-          "total_shareholders_equity": -2163000000,
-          "total_debt": 41300000000,
-          "short_term_debt": 0,
-          "long_term_debt": 39483000000,
-          "cash_and_cash_equivalents": 2413000000,
-          "cash_primary": 2413000000,
-          "marketable_securities_current": 0
+          "total_assets": 60608000000.0,
+          "total_liabilities": 60608000000.0,
+          "total_shareholders_equity": -2163000000.0,
+          "total_debt": 41300000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 39483000000.0,
+          "cash_and_cash_equivalents": 2413000000.0,
+          "cash_primary": 2413000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://corporate.mcdonalds.com/corpmcd/investors.html",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.84,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.16,
-      "pbo_gross_usd_b": 3.23,
-      "plan_assets_usd_b": 3.07,
-      "annual_cash_contribution_usd_b": 0.08,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.54,
-      "narrative": "McDonald's Corporation maintains legacy defined benefit plans ($3.23B PBO vs $3.07B assets; $-0.16B gap) and $0.54B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.84,
-      "take_or_pay_commitments_usd_b": 1.21,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $4.84B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "McDonald's Corporation possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.721493+00:00"
 }

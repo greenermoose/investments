@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1375877",
       "data": {
         "shares_outstanding": 67810136,
-        "revenue": 5595107000,
+        "revenue": 5595107000.0,
         "balance_sheet": {
-          "total_assets": 15171729000,
-          "total_liabilities": 10902101000,
-          "total_shareholders_equity": 2807971000,
-          "total_debt": 8399306000,
-          "short_term_debt": 2389037000,
-          "long_term_debt": 6010269000,
-          "cash_and_cash_equivalents": 1370418000,
-          "cash_primary": 1370418000,
-          "marketable_securities_current": 0
+          "total_assets": 15171729000.0,
+          "total_liabilities": 10902101000.0,
+          "total_shareholders_equity": 2807971000.0,
+          "total_debt": 8399306000.0,
+          "short_term_debt": 2389037000.0,
+          "long_term_debt": 6010269000.0,
+          "cash_and_cash_equivalents": 1370418000.0,
+          "cash_primary": 1370418000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1375877",
       "data": {
         "shares_outstanding": 66954634,
-        "revenue": 5993409000,
+        "revenue": 5993409000.0,
         "balance_sheet": {
-          "total_assets": 13511550000,
-          "total_liabilities": 9361747000,
-          "total_shareholders_equity": 2815500000,
-          "total_debt": 6478155000,
-          "short_term_debt": 1873306000,
-          "long_term_debt": 4604849000,
-          "cash_and_cash_equivalents": 1712210000,
-          "cash_primary": 1701487000,
-          "marketable_securities_current": 10723000
+          "total_assets": 13511550000.0,
+          "total_liabilities": 9361747000.0,
+          "total_shareholders_equity": 2815500000.0,
+          "total_debt": 6478155000.0,
+          "short_term_debt": 1873306000.0,
+          "long_term_debt": 4604849000.0,
+          "cash_and_cash_equivalents": 1712210000.0,
+          "cash_primary": 1701487000.0,
+          "marketable_securities_current": 10723000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1375877",
       "data": {
         "shares_outstanding": 66158741,
-        "revenue": 7613626000,
+        "revenue": 7613626000.0,
         "balance_sheet": {
-          "total_assets": 11895760000,
-          "total_liabilities": 8190516000,
-          "total_shareholders_equity": 2559243000,
-          "total_debt": 4876361000,
-          "short_term_debt": 1805198000,
-          "long_term_debt": 3071163000,
-          "cash_and_cash_equivalents": 1942823000,
-          "cash_primary": 1938689000,
-          "marketable_securities_current": 4134000
+          "total_assets": 11895760000.0,
+          "total_liabilities": 8190516000.0,
+          "total_shareholders_equity": 2559243000.0,
+          "total_debt": 4876361000.0,
+          "short_term_debt": 1805198000.0,
+          "long_term_debt": 3071163000.0,
+          "cash_and_cash_equivalents": 1942823000.0,
+          "cash_primary": 1938689000.0,
+          "marketable_securities_current": 4134000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1375877",
       "data": {
         "shares_outstanding": 64506055,
-        "revenue": 7468610000,
+        "revenue": 7468610000.0,
         "balance_sheet": {
-          "total_assets": 9037128000,
-          "total_liabilities": 6730434000,
-          "total_shareholders_equity": 1941639000,
-          "total_debt": 3701038000,
-          "short_term_debt": 1443816000,
-          "long_term_debt": 2257222000,
-          "cash_and_cash_equivalents": 985173000,
-          "cash_primary": 981434000,
-          "marketable_securities_current": 3739000
+          "total_assets": 9037128000.0,
+          "total_liabilities": 6730434000.0,
+          "total_shareholders_equity": 1941639000.0,
+          "total_debt": 3701038000.0,
+          "short_term_debt": 1443816000.0,
+          "long_term_debt": 2257222000.0,
+          "cash_and_cash_equivalents": 985173000.0,
+          "cash_primary": 981434000.0,
+          "marketable_securities_current": 3739000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.canadiansolar.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 26.01,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.67,
-      "pbo_gross_usd_b": 6.67,
-      "plan_assets_usd_b": 6.0,
-      "annual_cash_contribution_usd_b": 0.2,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.33,
-      "narrative": "Canadian Solar Inc. sponsors utility and industrial defined benefit plans ($6.67B PBO vs $6.00B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 12.0,
-      "estimated_unreserved_exposure_usd_b": 3.0,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.72,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $12.00B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 13.34,
-      "take_or_pay_commitments_usd_b": 8.0,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $13.34B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "Canadian Solar Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.618648+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1633917",
       "data": {
         "shares_outstanding": 920664542,
-        "revenue": 8353000000,
+        "revenue": 8353000000.0,
         "balance_sheet": {
-          "total_assets": 80546000000,
-          "total_liabilities": 60522000000,
-          "total_shareholders_equity": 20024000000,
-          "total_debt": 9414000000,
-          "short_term_debt": 5000000,
-          "long_term_debt": 9409000000,
-          "cash_and_cash_equivalents": 9342000000,
-          "cash_primary": 6977000000,
-          "marketable_securities_current": 2365000000
+          "total_assets": 80546000000.0,
+          "total_liabilities": 60522000000.0,
+          "total_shareholders_equity": 20024000000.0,
+          "total_debt": 9414000000.0,
+          "short_term_debt": 5000000.0,
+          "long_term_debt": 9409000000.0,
+          "cash_and_cash_equivalents": 9342000000.0,
+          "cash_primary": 6977000000.0,
+          "marketable_securities_current": 2365000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1633917",
       "data": {
         "shares_outstanding": 935651953,
-        "revenue": 33172000000,
+        "revenue": 33172000000.0,
         "balance_sheet": {
-          "total_assets": 80173000000,
-          "total_liabilities": 59917000000,
-          "total_shareholders_equity": 20256000000,
-          "total_debt": 11459000000,
-          "short_term_debt": 7000000,
-          "long_term_debt": 9987000000,
-          "cash_and_cash_equivalents": 10422000000,
-          "cash_primary": 8049000000,
-          "marketable_securities_current": 2373000000
+          "total_assets": 80173000000.0,
+          "total_liabilities": 59917000000.0,
+          "total_shareholders_equity": 20256000000.0,
+          "total_debt": 11459000000.0,
+          "short_term_debt": 7000000.0,
+          "long_term_debt": 9987000000.0,
+          "cash_and_cash_equivalents": 10422000000.0,
+          "cash_primary": 8049000000.0,
+          "marketable_securities_current": 2373000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1633917",
       "data": {
         "shares_outstanding": 955378405,
-        "revenue": 24496000000,
+        "revenue": 24496000000.0,
         "balance_sheet": {
-          "total_assets": 79801000000,
-          "total_liabilities": 59603000000,
-          "total_shareholders_equity": 20198000000,
-          "total_debt": 10904000000,
-          "short_term_debt": 5000000,
-          "long_term_debt": 11276000000,
-          "cash_and_cash_equivalents": 10755000000,
-          "cash_primary": 8995000000,
-          "marketable_securities_current": 1760000000
+          "total_assets": 79801000000.0,
+          "total_liabilities": 59603000000.0,
+          "total_shareholders_equity": 20198000000.0,
+          "total_debt": 10904000000.0,
+          "short_term_debt": 5000000.0,
+          "long_term_debt": 11276000000.0,
+          "cash_and_cash_equivalents": 10755000000.0,
+          "cash_primary": 8995000000.0,
+          "marketable_securities_current": 1760000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1633917",
       "data": {
         "shares_outstanding": 972532829,
-        "revenue": 16079000000,
+        "revenue": 16079000000.0,
         "balance_sheet": {
-          "total_assets": 79777000000,
-          "total_liabilities": 59576000000,
-          "total_shareholders_equity": 20201000000,
-          "total_debt": 10915000000,
-          "short_term_debt": 5000000,
-          "long_term_debt": 11296000000,
-          "cash_and_cash_equivalents": 10008000000,
-          "cash_primary": 6688000000,
-          "marketable_securities_current": 3320000000
+          "total_assets": 79777000000.0,
+          "total_liabilities": 59576000000.0,
+          "total_shareholders_equity": 20201000000.0,
+          "total_debt": 10915000000.0,
+          "short_term_debt": 5000000.0,
+          "long_term_debt": 11296000000.0,
+          "cash_and_cash_equivalents": 10008000000.0,
+          "cash_primary": 6688000000.0,
+          "marketable_securities_current": 3320000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.pypl.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.55,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.07,
-      "pbo_gross_usd_b": 3.32,
-      "plan_assets_usd_b": 3.25,
-      "annual_cash_contribution_usd_b": 0.07,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.2,
-      "narrative": "PayPal Holdings, Inc. maintains well-funded legacy defined benefit pension plans ($3.32B PBO vs $3.25B assets) with strong institutional risk-matching asset allocation."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "PayPal Holdings, Inc. has zero industrial contamination or Superfund remediation liabilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
-      "recent_settlements_scheduled_usd_b": 0.8,
-      "annual_legal_settlement_cash_drain_usd_b": 0.12,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 3.98,
-      "take_or_pay_commitments_usd_b": 0.2,
-      "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $3.98B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
-    "narrative": "PayPal Holdings, Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  "last_updated": "2026-08-28T03:13:30.789759+00:00"
 }

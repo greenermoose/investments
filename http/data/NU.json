@@ -2,7 +2,7 @@
   "symbol": "NU",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
   "investor_relations_url": "https://investors.nubank.com.br/",
-  "last_updated": "2026-08-18T18:45:00.000000+00:00",
+  "last_updated": "2026-08-28T03:13:30.762664+00:00",
   "filings": [
     {
       "type": "6-K",
@@ -12,15 +12,15 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
       "data": {
         "shares_outstanding": 4831000000,
-        "revenue": 2940000000,
+        "revenue": 2940000000.0,
         "balance_sheet": {
-          "total_assets": 52140000000,
-          "total_liabilities": 44210000000,
-          "total_shareholders_equity": 7930000000,
-          "total_debt": 1250000000,
-          "short_term_debt": 250000000,
-          "long_term_debt": 1000000000,
-          "cash_and_cash_equivalents": 7450000000
+          "total_assets": 52140000000.0,
+          "total_liabilities": 44210000000.0,
+          "total_shareholders_equity": 7930000000.0,
+          "total_debt": 1250000000.0,
+          "short_term_debt": 250000000.0,
+          "long_term_debt": 1000000000.0,
+          "cash_and_cash_equivalents": 7450000000.0
         }
       }
     },
@@ -32,13 +32,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
       "data": {
         "shares_outstanding": 4825000000,
-        "revenue": 2680000000,
+        "revenue": 2680000000.0,
         "balance_sheet": {
-          "total_assets": 48650000000,
-          "total_liabilities": 41400000000,
-          "total_shareholders_equity": 7250000000,
-          "total_debt": 1280000000,
-          "cash_and_cash_equivalents": 6820000000
+          "total_assets": 48650000000.0,
+          "total_liabilities": 41400000000.0,
+          "total_shareholders_equity": 7250000000.0,
+          "total_debt": 1280000000.0,
+          "cash_and_cash_equivalents": 6820000000.0
         }
       }
     },
@@ -50,13 +50,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
       "data": {
         "shares_outstanding": 4818000000,
-        "revenue": 2480000000,
+        "revenue": 2480000000.0,
         "balance_sheet": {
-          "total_assets": 44920000000,
-          "total_liabilities": 38240000000,
-          "total_shareholders_equity": 6680000000,
-          "total_debt": 1310000000,
-          "cash_and_cash_equivalents": 6150000000
+          "total_assets": 44920000000.0,
+          "total_liabilities": 38240000000.0,
+          "total_shareholders_equity": 6680000000.0,
+          "total_debt": 1310000000.0,
+          "cash_and_cash_equivalents": 6150000000.0
         }
       }
     },
@@ -68,13 +68,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493",
       "data": {
         "shares_outstanding": 4810000000,
-        "revenue": 2380000000,
+        "revenue": 2380000000.0,
         "balance_sheet": {
-          "total_assets": 41800000000,
-          "total_liabilities": 35600000000,
-          "total_shareholders_equity": 6200000000,
-          "total_debt": 1350000000,
-          "cash_and_cash_equivalents": 5720000000
+          "total_assets": 41800000000.0,
+          "total_liabilities": 35600000000.0,
+          "total_shareholders_equity": 6200000000.0,
+          "total_debt": 1350000000.0,
+          "cash_and_cash_equivalents": 5720000000.0
         }
       }
     }

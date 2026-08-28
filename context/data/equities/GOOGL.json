@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1652044",
       "data": {
         "shares_outstanding": 12230000000,
-        "revenue": 229692000000,
+        "revenue": 229692000000.0,
         "balance_sheet": {
-          "total_assets": 921983000000,
-          "total_liabilities": 281503000000,
-          "total_shareholders_equity": 640480000000,
-          "total_debt": 101085000000,
-          "short_term_debt": 1999000000,
-          "long_term_debt": 98165000000,
-          "cash_and_cash_equivalents": 242474000000,
-          "cash_primary": 55911000000,
-          "marketable_securities_current": 186563000000
+          "total_assets": 921983000000.0,
+          "total_liabilities": 281503000000.0,
+          "total_shareholders_equity": 640480000000.0,
+          "total_debt": 101085000000.0,
+          "short_term_debt": 1999000000.0,
+          "long_term_debt": 98165000000.0,
+          "cash_and_cash_equivalents": 242474000000.0,
+          "cash_primary": 55911000000.0,
+          "marketable_securities_current": 186563000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1652044",
       "data": {
         "shares_outstanding": 12116000000,
-        "revenue": 109896000000,
+        "revenue": 109896000000.0,
         "balance_sheet": {
-          "total_assets": 703919000000,
-          "total_liabilities": 225173000000,
-          "total_shareholders_equity": 478746000000,
-          "total_debt": 80305000000,
-          "short_term_debt": 1998000000,
-          "long_term_debt": 77501000000,
-          "cash_and_cash_equivalents": 126840000000,
-          "cash_primary": 38063000000,
-          "marketable_securities_current": 88777000000
+          "total_assets": 703919000000.0,
+          "total_liabilities": 225173000000.0,
+          "total_shareholders_equity": 478746000000.0,
+          "total_debt": 80305000000.0,
+          "short_term_debt": 1998000000.0,
+          "long_term_debt": 77501000000.0,
+          "cash_and_cash_equivalents": 126840000000.0,
+          "cash_primary": 38063000000.0,
+          "marketable_securities_current": 88777000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1652044",
       "data": {
         "shares_outstanding": 12088000000,
-        "revenue": 402836000000,
+        "revenue": 402836000000.0,
         "balance_sheet": {
-          "total_assets": 595281000000,
-          "total_liabilities": 180016000000,
-          "total_shareholders_equity": 415265000000,
-          "total_debt": 49085000000,
-          "short_term_debt": 1996000000,
-          "long_term_debt": 46547000000,
-          "cash_and_cash_equivalents": 126843000000,
-          "cash_primary": 30708000000,
-          "marketable_securities_current": 96135000000
+          "total_assets": 595281000000.0,
+          "total_liabilities": 180016000000.0,
+          "total_shareholders_equity": 415265000000.0,
+          "total_debt": 49085000000.0,
+          "short_term_debt": 1996000000.0,
+          "long_term_debt": 46547000000.0,
+          "cash_and_cash_equivalents": 126843000000.0,
+          "cash_primary": 30708000000.0,
+          "marketable_securities_current": 96135000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1652044",
       "data": {
         "shares_outstanding": 12077000000,
-        "revenue": 289007000000,
+        "revenue": 289007000000.0,
         "balance_sheet": {
-          "total_assets": 536469000000,
-          "total_liabilities": 149602000000,
-          "total_shareholders_equity": 386867000000,
-          "total_debt": 23892000000,
-          "short_term_debt": 1995000000,
-          "long_term_debt": 21607000000,
-          "cash_and_cash_equivalents": 98496000000,
-          "cash_primary": 23090000000,
-          "marketable_securities_current": 75406000000
+          "total_assets": 536469000000.0,
+          "total_liabilities": 149602000000.0,
+          "total_shareholders_equity": 386867000000.0,
+          "total_debt": 23892000000.0,
+          "short_term_debt": 1995000000.0,
+          "long_term_debt": 21607000000.0,
+          "cash_and_cash_equivalents": 98496000000.0,
+          "cash_primary": 23090000000.0,
+          "marketable_securities_current": 75406000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://abc.xyz/investor/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 46.0,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Alphabet has zero defined benefit pension plans or post-retirement medical liabilities. Retirement benefits are 100% defined contribution 401(k) plans."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Zero legacy manufacturing or Superfund cleanup obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "US DOJ Search distribution antitrust litigation remedy phase, US DOJ Ad Tech antitrust trial, European Commission antitrust fines appeals, and state attorney general digital advertising settlements.",
-      "recent_settlements_scheduled_usd_b": 8.0,
-      "annual_legal_settlement_cash_drain_usd_b": 0.5,
-      "catastrophic_loss_risk_level": "MODERATE",
-      "narrative": "Antitrust remedies could impact exclusive search default contracts (e.g. Apple Safari revenue share) or ad-tech bundling, but monetary fines are readily absorbed by $80B+ net cash reserves."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 38.0,
-      "take_or_pay_commitments_usd_b": 14.5,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional purchase obligations for cloud server infrastructure, TPU custom silicon fabrication, undersea fiber cables, and renewable power purchase agreements total $38.0B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Antitrust legal reserves and datacenter commitments represent a modest fraction of $100B+ annual operating cash flow.",
-    "narrative": "Alphabet maintains pristine balance sheet strength with zero pension or toxic contamination drag; legal overhang is focused on antitrust structural remedies."
-  }
+  "last_updated": "2026-08-28T03:13:30.672659+00:00"
 }

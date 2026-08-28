@@ -42,6 +42,11 @@ if str(SCRIPTS_DIR) not in sys.path:
 from valuation_model import model_equity_valuation
 from validate_thesis import validate_markdown_thesis
 from screen_market import screen_candidates
+from adr_registry import (
+    normalize_shares_outstanding,
+    convert_to_usd,
+    normalize_financial_filing_data
+)
 
 
 def sync_sec_summary():
@@ -68,13 +73,15 @@ def sync_sec_summary():
                     if filings:
                         latest = filings[0].get("data", {})
                         bs = latest.get("balance_sheet", {})
-                        shares = latest.get("shares_outstanding", 1_000_000_000)
+                        raw_shares = latest.get("shares_outstanding", 1_000_000_000)
+                        shares = normalize_shares_outstanding(sym, raw_shares) or raw_shares
                         
                         # Calculate TTM revenue from filings
                         ttm_rev = 0.0
                         for f_item in filings[:4]:
                             f_rev = f_item.get("data", {}).get("revenue", 0.0)
-                            if f_item.get("type") == "10-K":
+                            f_type = f_item.get("type")
+                            if f_type in ["10-K", "20-F", "40-F"]:
                                 ttm_rev = max(ttm_rev, float(f_rev))
                                 break
                             else:

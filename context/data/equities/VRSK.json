@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1442145",
       "data": {
         "shares_outstanding": 137941888,
-        "revenue": 782600000,
+        "revenue": 782600000.0,
         "balance_sheet": {
-          "total_assets": 4598400000,
-          "total_liabilities": 5765300000,
-          "total_shareholders_equity": -1167700000,
-          "total_debt": 4217200000,
-          "short_term_debt": 258400000,
-          "long_term_debt": 12300000,
-          "cash_and_cash_equivalents": 524500000,
-          "cash_primary": 524500000,
-          "marketable_securities_current": 0
+          "total_assets": 4598400000.0,
+          "total_liabilities": 5765300000.0,
+          "total_shareholders_equity": -1167700000.0,
+          "total_debt": 4217200000.0,
+          "short_term_debt": 258400000.0,
+          "long_term_debt": 12300000.0,
+          "cash_and_cash_equivalents": 524500000.0,
+          "cash_primary": 524500000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1442145",
       "data": {
         "shares_outstanding": 139372570,
-        "revenue": 3072700000,
+        "revenue": 3072700000.0,
         "balance_sheet": {
-          "total_assets": 6195500000,
-          "total_liabilities": 5885700000,
-          "total_shareholders_equity": 309000000,
-          "total_debt": 3228300000,
-          "short_term_debt": 1508900000,
-          "long_term_debt": 14700000,
-          "cash_and_cash_equivalents": 2178200000,
-          "cash_primary": 2178200000,
-          "marketable_securities_current": 0
+          "total_assets": 6195500000.0,
+          "total_liabilities": 5885700000.0,
+          "total_shareholders_equity": 309000000.0,
+          "total_debt": 3228300000.0,
+          "short_term_debt": 1508900000.0,
+          "long_term_debt": 14700000.0,
+          "cash_and_cash_equivalents": 2178200000.0,
+          "cash_primary": 2178200000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1442145",
       "data": {
         "shares_outstanding": 139714971,
-        "revenue": 2293900000,
+        "revenue": 2293900000.0,
         "balance_sheet": {
-          "total_assets": 6241900000,
-          "total_liabilities": 5864400000,
-          "total_shareholders_equity": 376700000,
-          "total_debt": 3229200000,
-          "short_term_debt": 1488900000,
-          "long_term_debt": 16100000,
-          "cash_and_cash_equivalents": 2107900000,
-          "cash_primary": 2107900000,
-          "marketable_securities_current": 0
+          "total_assets": 6241900000.0,
+          "total_liabilities": 5864400000.0,
+          "total_shareholders_equity": 376700000.0,
+          "total_debt": 3229200000.0,
+          "short_term_debt": 1488900000.0,
+          "long_term_debt": 16100000.0,
+          "cash_and_cash_equivalents": 2107900000.0,
+          "cash_primary": 2107900000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1442145",
       "data": {
         "shares_outstanding": 139884077,
-        "revenue": 1525600000,
+        "revenue": 1525600000.0,
         "balance_sheet": {
-          "total_assets": 4794900000,
-          "total_liabilities": 4482300000,
-          "total_shareholders_equity": 311700000,
-          "total_debt": 3233200000,
-          "short_term_debt": 17000000,
-          "long_term_debt": 20000000,
-          "cash_and_cash_equivalents": 628700000,
-          "cash_primary": 628700000,
-          "marketable_securities_current": 0
+          "total_assets": 4794900000.0,
+          "total_liabilities": 4482300000.0,
+          "total_shareholders_equity": 311700000.0,
+          "total_debt": 3233200000.0,
+          "short_term_debt": 17000000.0,
+          "long_term_debt": 20000000.0,
+          "cash_and_cash_equivalents": 628700000.0,
+          "cash_primary": 628700000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.verisk.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 1.74,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.05,
-      "pbo_gross_usd_b": 0.68,
-      "plan_assets_usd_b": 0.63,
-      "annual_cash_contribution_usd_b": 0.02,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.12,
-      "narrative": "Verisk Analytics, Inc. sponsors defined benefit pension plans with $0.68B in gross PBO against $0.63B in assets ($-0.05B net gap) and $0.12B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.77,
-      "take_or_pay_commitments_usd_b": 0.23,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $0.77B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Verisk Analytics, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.850471+00:00"
 }

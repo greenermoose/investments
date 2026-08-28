@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1819438",
       "data": {
         "shares_outstanding": 29389170,
-        "revenue": 201000,
+        "revenue": 201000.0,
         "balance_sheet": {
-          "total_assets": 32476000,
-          "total_liabilities": 35163000,
-          "total_shareholders_equity": -2687000,
-          "total_debt": 14480000,
-          "short_term_debt": 5765000,
-          "long_term_debt": 8715000,
-          "cash_and_cash_equivalents": 10800000,
-          "cash_primary": 10848000,
-          "marketable_securities_current": 0
+          "total_assets": 32476000.0,
+          "total_liabilities": 35163000.0,
+          "total_shareholders_equity": -2687000.0,
+          "total_debt": 14480000.0,
+          "short_term_debt": 5765000.0,
+          "long_term_debt": 8715000.0,
+          "cash_and_cash_equivalents": 10800000.0,
+          "cash_primary": 10848000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1819438",
       "data": {
         "shares_outstanding": 27173757,
-        "revenue": 128000,
+        "revenue": 128000.0,
         "balance_sheet": {
-          "total_assets": 48572000,
-          "total_liabilities": 39126000,
-          "total_shareholders_equity": 9446000,
-          "total_debt": 18037000,
-          "short_term_debt": 9045000,
-          "long_term_debt": 8992000,
-          "cash_and_cash_equivalents": 21500000,
-          "cash_primary": 15489000,
-          "marketable_securities_current": 0
+          "total_assets": 48572000.0,
+          "total_liabilities": 39126000.0,
+          "total_shareholders_equity": 9446000.0,
+          "total_debt": 18037000.0,
+          "short_term_debt": 9045000.0,
+          "long_term_debt": 8992000.0,
+          "cash_and_cash_equivalents": 21500000.0,
+          "cash_primary": 15489000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1819438",
       "data": {
         "shares_outstanding": 19617070,
-        "revenue": 1583000,
+        "revenue": 1583000.0,
         "balance_sheet": {
-          "total_assets": 51172000,
-          "total_liabilities": 42554000,
-          "total_shareholders_equity": 8618000,
-          "total_debt": 17335000,
-          "short_term_debt": 8044000,
-          "long_term_debt": 9291000,
-          "cash_and_cash_equivalents": 22000000,
-          "cash_primary": 14477000,
-          "marketable_securities_current": 0
+          "total_assets": 51172000.0,
+          "total_liabilities": 42554000.0,
+          "total_shareholders_equity": 8618000.0,
+          "total_debt": 17335000.0,
+          "short_term_debt": 8044000.0,
+          "long_term_debt": 9291000.0,
+          "cash_and_cash_equivalents": 22000000.0,
+          "cash_primary": 14477000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1819438",
       "data": {
         "shares_outstanding": 14189663,
-        "revenue": 3171000,
+        "revenue": 3171000.0,
         "balance_sheet": {
-          "total_assets": 36145000,
-          "total_liabilities": 37912000,
-          "total_shareholders_equity": -1767000,
-          "total_debt": 10518000,
-          "short_term_debt": 2226000,
-          "long_term_debt": 8292000,
-          "cash_and_cash_equivalents": 3539000,
-          "cash_primary": 3539000,
-          "marketable_securities_current": 0
+          "total_assets": 36145000.0,
+          "total_liabilities": 37912000.0,
+          "total_shareholders_equity": -1767000.0,
+          "total_debt": 10518000.0,
+          "short_term_debt": 2226000.0,
+          "long_term_debt": 8292000.0,
+          "cash_and_cash_equivalents": 3539000.0,
+          "cash_primary": 3539000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.essinc.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.0,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "ESS Tech, Inc. sponsors utility and industrial defined benefit plans ($0.00B PBO vs $0.00B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $0.00B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.0,
-      "take_or_pay_commitments_usd_b": 0.0,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $0.00B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "ESS Tech, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.682267+00:00"
 }

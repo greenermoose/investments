@@ -6,7 +6,7 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $104.78 per share
 - **Current Price:** $104.78 per share
-- **Target Exit Price:** $118.14 per share
+- **Target Exit Price:** $117.96 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -19,31 +19,31 @@ Thomson Reuters Corporation is a leading global provider of business information
 Thomson Reuters commands massive professional switching costs, deep integration into law firm and corporate tax workflows, and proprietary legal and regulatory databases that cannot be easily replicated. Management is aggressively integrating generative AI capabilities (CoCounsel legal AI assistant) across its legal and tax platforms, driving high recurring subscription growth and expanding operating margins.
 
 ## Total Addressable Market & Market Share
-Thomson Reuters Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 2.9% market share. Over our 3-year investment horizon, we model market share evolving to 2.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Thomson Reuters Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 Thomson Reuters holds a wide economic moat in legal, tax, and accounting professional workflow software. Its flagship platforms (Westlaw, Checkpoint, Practical Law) provide proprietary legal research precedents, tax compliance codes, and verified regulatory intelligence. Lawyers and accountants rely on Westlaw's authoritative primary source annotations for legal briefs, creating recurring subscription retention rates above 90% and high pricing power.
 
 ## Anticipated Catalysts & Timeline
-Thomson Reuters Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.07B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.09B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.11B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Thomson Reuters Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.02B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.03B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Thomson Reuters Corporation operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($1.68/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$3.3B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $2.65B in cash & equivalents against $9.92B in total debt (net balance: $-7.27B). Anticipated annual CapEx and operational capital requirements of ~$1.76B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Thomson Reuters Corporation operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($1.68/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$1.1B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $0.90B in cash & equivalents against $3.36B in total debt (net balance: $-2.46B). Anticipated annual CapEx and operational capital requirements of ~$0.60B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
 | Dividends Declared & Paid | PAYING | $1.68 / share | 1.60% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.68/share (1.60% yield, ~38% payout ratio) with +7.0% annual modeled dividend growth. |
-| Share Buybacks & Dilution | ACTIVE | $3.3 B | -1.0% / yr | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $9.92 B Debt vs $2.65 B Cash | Net: $-7.27 B | Manageable balance sheet leverage with $9.92B total debt against $2.65B liquid reserves (Net balance: $-7.27B). |
-| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$1.76 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Share Buybacks & Dilution | ACTIVE | $1.1 B | -1.0% / yr | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $3.36 B Debt vs $0.90 B Cash | Net: $-2.46 B | Conservative debt profile of $3.36B debt vs $0.90B cash & equivalents (Net balance: $-2.46B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$0.60 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-Thomson Reuters Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.26B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+Thomson Reuters Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.09B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.26 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.09 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
 | Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
@@ -53,13 +53,12 @@ Thomson Reuters Corporation manages an established industrial liability footprin
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $4.85 B (Gap: $-0.34 B) | ~$0.15 B / yr | Thomson Reuters Corporation sponsors defined benefit pension plans with $4.85B in gross PB... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $5.51 B | Take-or-Pay: $1.65 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $4.85 B (Gap: $-0.34 B) | ~$0.15 B / yr | Thomson Reuters Corporation sponsors defined benefit pension plans with $4.85B i... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $5.51 B | Take-or-Pay: $1.65 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -72,42 +71,42 @@ If any of the following occur, the thesis is broken and the position will be exi
 Thomson Reuters Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-TRI currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
+TRI currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.0%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.57 B | -2.3% | 0.486 B | 2.31x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $5.93 B | +18.0% | 0.485 B | 2.30x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.41 B | +1.7% | 0.484 B | 2.28x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $5.69 B | +1.3% | 0.482 B | 2.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $5.97 B | +7.2% | 0.481 B | 2.25x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.39 B | +7.7% | 0.480 B | 2.24x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $5.85 B | +8.1% | 0.479 B | 2.22x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.14 B | +7.8% | 0.478 B | 2.21x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.40 B | +7.2% | 0.476 B | 2.19x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.79 B | +6.3% | 0.475 B | 2.18x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.19 B | +5.8% | 0.474 B | 2.16x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.46 B | +5.3% | 0.473 B | 2.15x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.74 B | +5.3% | 0.472 B | 2.13x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.89 B | -2.2% | 0.486 B | 6.81x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.01 B | +17.7% | 0.485 B | 6.77x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.83 B | +1.3% | 0.484 B | 6.72x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.93 B | +0.9% | 0.482 B | 6.68x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.02 B | +7.0% | 0.481 B | 6.63x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.16 B | +7.7% | 0.480 B | 6.59x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.98 B | +8.3% | 0.479 B | 6.54x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.08 B | +7.8% | 0.478 B | 6.50x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.17 B | +7.4% | 0.476 B | 6.45x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.30 B | +6.6% | 0.475 B | 6.41x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.10 B | +6.0% | 0.474 B | 6.36x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.19 B | +5.3% | 0.473 B | 6.32x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.29 B | +5.3% | 0.472 B | 6.27x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 485 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 26 Weeks (2Q) | 484 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 39 Weeks (3Q) | 482 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 52 Weeks (1Y) | 481 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 104 Weeks (2Y) | 476 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 156 Weeks (3Y) | 472 M | -1.0% | Management utilizes moderate share buybacks (~$3.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 13 Weeks (1Q) | 485 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 26 Weeks (2Q) | 484 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 39 Weeks (3Q) | 482 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 52 Weeks (1Y) | 481 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 104 Weeks (2Y) | 476 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 156 Weeks (3Y) | 472 M | -1.0% | Management utilizes moderate share buybacks (~$1.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $88.42 | $110.53 | $132.64 | 2.3x | +23.8% |
-| 52 Weeks (1Y) | $86.07 | $107.59 | $129.11 | 2.2x | +2.7% |
-| 104 Weeks (2Y) | $91.21 | $114.01 | $136.81 | 2.2x | +4.3% |
-| 156 Weeks (3Y) | $94.51 | $118.14 | $141.77 | 2.1x | +4.1% |
+| 13 Weeks | $88.59 | $110.74 | $132.89 | 6.7x | +24.8% |
+| 52 Weeks (1Y) | $85.90 | $107.38 | $128.86 | 6.6x | +2.5% |
+| 104 Weeks (2Y) | $90.95 | $113.69 | $136.43 | 6.5x | +4.2% |
+| 156 Weeks (3Y) | $94.37 | $117.96 | $141.55 | 6.3x | +4.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
@@ -121,9 +120,9 @@ TRI currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twe
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.07 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.09 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.11 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.02 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.03 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.04 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

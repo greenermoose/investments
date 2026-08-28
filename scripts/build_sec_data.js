@@ -23,14 +23,26 @@ function parseDate(dateStr) {
     return new Date(dateStr);
 }
 
+const ADR_RATIOS = {
+    'TSM': 5.0,
+    'PDD': 4.0,
+    'BABA': 8.0,
+    'BIDU': 8.0,
+    'JD': 2.0,
+    'NTES': 5.0,
+    'AZN': 2.0,
+    'TM': 10.0,
+    'HDB': 3.0
+};
+
 function getDays(f) {
     const start = parseDate(f.period_start);
     const end = parseDate(f.period_end);
     let days = Math.round((end - start) / (1000 * 60 * 60 * 24));
     
     if (days === 0) {
-        if (f.type === '10-K') return 365;
-        if (f.type === '10-Q' || f.type === '8-K') return 90;
+        if (f.type === '10-K' || f.type === '20-F' || f.type === '40-F') return 365;
+        if (f.type === '10-Q' || f.type === '8-K' || f.type === '6-K') return 90;
     }
     return days;
 }
@@ -150,6 +162,11 @@ function processCompany(symbol, filings) {
 
     if ((symbol === 'BRK-B' || symbol === 'BRK.B') && latestShares && latestShares < 100e6) {
         latestShares = 2160000000;
+    } else {
+        const adrRatio = ADR_RATIOS[symbol] || 1.0;
+        if (latestShares && adrRatio > 1.0) {
+            latestShares = Math.round(latestShares / adrRatio);
+        }
     }
 
     return {

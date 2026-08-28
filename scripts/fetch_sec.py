@@ -12,6 +12,18 @@ import sys
 import time
 import urllib.request
 
+scripts_dir = os.path.dirname(os.path.abspath(__file__))
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+from adr_registry import (
+    normalize_shares_outstanding,
+    convert_to_usd,
+    get_adr_ratio,
+    TICKER_PRIMARY_CURRENCIES,
+    normalize_financial_filing_data
+)
+
 HEADERS = {
     "User-Agent": "InvestmentApp System (AdminContact@example.com)"
 }
@@ -68,7 +80,7 @@ def load_universe_symbols():
                 
     return sorted(list(symbols))
 
-def extract_metric(facts, taxonomies, possible_tags):
+def extract_metric(facts, taxonomies, possible_tags, preferred_unit="USD"):
     best_entries = []
     for tax in taxonomies:
         if tax in facts:
@@ -77,11 +89,20 @@ def extract_metric(facts, taxonomies, possible_tags):
                     units = facts[tax][tag].get("units", {})
                     if not units:
                         continue
-                    unit_key = list(units.keys())[0]
+                    if preferred_unit and preferred_unit in units:
+                        unit_key = preferred_unit
+                    else:
+                        unit_key = list(units.keys())[0]
                     entries = units[unit_key]
                     
+                    annotated_entries = []
+                    for item in entries:
+                        item_copy = dict(item)
+                        item_copy["_unit"] = unit_key
+                        annotated_entries.append(item_copy)
+                    
                     # Sort by end date descending
-                    entries_sorted = sorted(entries, key=lambda x: x.get("end", ""), reverse=True)
+                    entries_sorted = sorted(annotated_entries, key=lambda x: x.get("end", ""), reverse=True)
                     if not best_entries or (entries_sorted and entries_sorted[0].get("end", "") > best_entries[0].get("end", "")):
                         best_entries = entries_sorted
     return best_entries
@@ -223,42 +244,54 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
             end_date = d["end"]
             filed_date = d.get("filed", end_date)
             
-            s_val = next((x["val"] for x in shares if x.get("end", "") <= end_date), 0) if shares else 0
-            
-            # Fallback for shares if 0
-            if s_val == 0 and shares:
-                s_val = shares[0].get("val", 0)
+            def val_to_usd(node, default=0.0):
+                if not node:
+                    return default
+                v = node.get("val", default)
+                u = node.get("_unit")
+                conv = convert_to_usd(v, currency=u, symbol=sym)
+                return conv if conv is not None else default
 
-            # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
-            if sym in ["BRK-B", "BRK.B"] and s_val < 100e6:
-                s_val = 2160000000
+            s_node = next((x for x in shares if x.get("end", "") <= end_date), None) if shares else None
+            s_raw = s_node.get("val", 0) if s_node else (shares[0].get("val", 0) if shares else 0)
+            s_val = normalize_shares_outstanding(sym, s_raw) or s_raw
                 
             r_entry = next((x for x in revenue if x.get("end") == end_date), None) if revenue else None
-            r_val = r_entry["val"] if r_entry else 0
+            r_val = val_to_usd(r_entry)
             period_start = r_entry.get("start", end_date) if r_entry else end_date
             
             a_node = next((x for x in assets if x.get("end") == end_date), None) if assets else None
-            a_val = a_node["val"] if a_node else 0
+            a_val = val_to_usd(a_node)
             
             l_node = next((x for x in liabilities if x.get("end") == end_date), None) if liabilities else None
-            l_val = l_node["val"] if l_node else 0
+            l_val = val_to_usd(l_node)
             
             e_node = next((x for x in equity if x.get("end") == end_date), None) if equity else None
-            e_val = e_node["val"] if e_node else 0
+            e_val = val_to_usd(e_node)
             
             # Debt calculation
-            st_d = next((x["val"] for x in short_debt if x.get("end") == end_date), 0) if short_debt else 0
-            lt_d = next((x["val"] for x in long_debt if x.get("end") == end_date), 0) if long_debt else 0
-            tot_d_exp = next((x["val"] for x in total_debt_explicit if x.get("end") == end_date), 0) if total_debt_explicit else 0
+            st_d_node = next((x for x in short_debt if x.get("end") == end_date), None) if short_debt else None
+            st_d = val_to_usd(st_d_node)
+            
+            lt_d_node = next((x for x in long_debt if x.get("end") == end_date), None) if long_debt else None
+            lt_d = val_to_usd(lt_d_node)
+            
+            tot_d_exp_node = next((x for x in total_debt_explicit if x.get("end") == end_date), None) if total_debt_explicit else None
+            tot_d_exp = val_to_usd(tot_d_exp_node)
             
             calculated_debt = tot_d_exp if tot_d_exp > 0 else (st_d + lt_d)
             if calculated_debt == 0 and lt_d > 0:
                 calculated_debt = lt_d
                 
             # Cash & Equivalents calculation
-            c_val = next((x["val"] for x in cash_primary if x.get("end") == end_date), 0) if cash_primary else 0
-            m_val = next((x["val"] for x in marketable_sec if x.get("end") == end_date), 0) if marketable_sec else 0
-            ci_val = next((x["val"] for x in cash_and_inv if x.get("end") == end_date), 0) if cash_and_inv else 0
+            c_node = next((x for x in cash_primary if x.get("end") == end_date), None) if cash_primary else None
+            c_val = val_to_usd(c_node)
+            
+            m_node = next((x for x in marketable_sec if x.get("end") == end_date), None) if marketable_sec else None
+            m_val = val_to_usd(m_node)
+            
+            ci_node = next((x for x in cash_and_inv if x.get("end") == end_date), None) if cash_and_inv else None
+            ci_val = val_to_usd(ci_node)
             
             calculated_cash = ci_val if ci_val > 0 else (c_val + m_val)
             if calculated_cash == 0 and c_val > 0:
@@ -320,9 +353,12 @@ def main():
     offline_mode = args.offline and not args.live
 
     if offline_mode:
-        print(f"Offline Mode: Verifying local SEC filings cache for {len(symbols)} public equities...")
+        print(f"Offline Mode: Verifying and normalizing local SEC filings cache for {len(symbols)} public equities...")
         success_count = 0
         missing_count = 0
+        context_equities_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data", "equities")
+        os.makedirs(context_equities_dir, exist_ok=True)
+
         for i, sym in enumerate(symbols, 1):
             sym_clean = sym.upper()
             filepath = os.path.join(out_dir, f"{sym_clean}.json")
@@ -331,15 +367,34 @@ def main():
                     with open(filepath, "r", encoding="utf-8") as f:
                         cdata = json.load(f)
                     filings = cdata.get("filings", [])
-                    print(f"[{i}/{len(symbols)}] Verified cache: {sym_clean}.json ({len(filings)} filings cached)")
+                    
+                    # Normalize filings data
+                    normalized_filings = []
+                    for filing in filings:
+                        f_copy = dict(filing)
+                        if "data" in f_copy:
+                            f_copy["data"] = normalize_financial_filing_data(sym_clean, f_copy["data"])
+                        normalized_filings.append(f_copy)
+                    
+                    cdata["filings"] = normalized_filings
+                    cdata["last_updated"] = datetime.now(timezone.utc).isoformat()
+                    
+                    with open(filepath, "w", encoding="utf-8") as f:
+                        json.dump(cdata, f, indent=2)
+
+                    context_out_file = os.path.join(context_equities_dir, f"{sym_clean}.json")
+                    with open(context_out_file, "w", encoding="utf-8") as f:
+                        json.dump(cdata, f, indent=2)
+
+                    print(f"[{i}/{len(symbols)}] Verified & normalized cache: {sym_clean}.json ({len(filings)} filings cached)")
                     success_count += 1
                 except Exception as e:
-                    print(f"[{i}/{len(symbols)}] Error reading cached {sym_clean}.json: {e}")
+                    print(f"[{i}/{len(symbols)}] Error reading/normalizing cached {sym_clean}.json: {e}")
                     missing_count += 1
             else:
                 print(f"[{i}/{len(symbols)}] Warning: Cached file not found for {sym_clean}")
                 missing_count += 1
-        print(f"\nSEC Cache Verification Complete: {success_count} verified, {missing_count} missing, total {len(symbols)}.")
+        print(f"\nSEC Cache Verification & Normalization Complete: {success_count} verified, {missing_count} missing, total {len(symbols)}.")
         return
 
     # 1. Fetch SEC ticker-CIK directory

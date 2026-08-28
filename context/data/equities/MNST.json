@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 978008110,
-        "revenue": 4890764000,
+        "revenue": 4890764000.0,
         "balance_sheet": {
-          "total_assets": 11382291000,
-          "total_liabilities": 11382291000,
-          "total_shareholders_equity": 9364148000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3419256000,
-          "cash_primary": 2192424000,
-          "marketable_securities_current": 1226832000
+          "total_assets": 11382291000.0,
+          "total_liabilities": 11382291000.0,
+          "total_shareholders_equity": 9364148000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3419256000.0,
+          "cash_primary": 2192424000.0,
+          "marketable_securities_current": 1226832000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 978270734,
-        "revenue": 2353291000,
+        "revenue": 2353291000.0,
         "balance_sheet": {
-          "total_assets": 10843533000,
-          "total_liabilities": 10843533000,
-          "total_shareholders_equity": 8727035000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2984993000,
-          "cash_primary": 2039700000,
-          "marketable_securities_current": 945293000
+          "total_assets": 10843533000.0,
+          "total_liabilities": 10843533000.0,
+          "total_shareholders_equity": 8727035000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2984993000.0,
+          "cash_primary": 2039700000.0,
+          "marketable_securities_current": 945293000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 977021216,
-        "revenue": 8294343000,
+        "revenue": 8294343000.0,
         "balance_sheet": {
-          "total_assets": 9988945000,
-          "total_liabilities": 9988945000,
-          "total_shareholders_equity": 8254108000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2765201000,
-          "cash_primary": 2088117000,
-          "marketable_securities_current": 677084000
+          "total_assets": 9988945000.0,
+          "total_liabilities": 9988945000.0,
+          "total_shareholders_equity": 8254108000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2765201000.0,
+          "cash_primary": 2088117000.0,
+          "marketable_securities_current": 677084000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 976428189,
-        "revenue": 6163290000,
+        "revenue": 6163290000.0,
         "balance_sheet": {
-          "total_assets": 9611273000,
-          "total_liabilities": 9611273000,
-          "total_shareholders_equity": 7745160000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2579330000,
-          "cash_primary": 2292939000,
-          "marketable_securities_current": 286391000
+          "total_assets": 9611273000.0,
+          "total_liabilities": 9611273000.0,
+          "total_shareholders_equity": 7745160000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2579330000.0,
+          "cash_primary": 2292939000.0,
+          "marketable_securities_current": 286391000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.monsterbevcorp.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.01,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.05,
-      "pbo_gross_usd_b": 1.0,
-      "plan_assets_usd_b": 0.95,
-      "annual_cash_contribution_usd_b": 0.03,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.17,
-      "narrative": "Monster Beverage Corporation maintains legacy defined benefit plans ($1.00B PBO vs $0.95B assets; $-0.05B gap) and $0.17B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 1.49,
-      "take_or_pay_commitments_usd_b": 0.37,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $1.49B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Monster Beverage Corporation possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.738095+00:00"
 }

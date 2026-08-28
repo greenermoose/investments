@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1104506",
       "data": {
         "shares_outstanding": 216752451,
-        "revenue": 731450000,
+        "revenue": 731450000.0,
         "balance_sheet": {
-          "total_assets": 2102565000,
-          "total_liabilities": 1345071000,
-          "total_shareholders_equity": 757494000,
-          "total_debt": 547062000,
-          "short_term_debt": 3549000,
-          "long_term_debt": 543513000,
-          "cash_and_cash_equivalents": 1160312000,
-          "cash_primary": 544765000,
-          "marketable_securities_current": 615547000
+          "total_assets": 2102565000.0,
+          "total_liabilities": 1345071000.0,
+          "total_shareholders_equity": 757494000.0,
+          "total_debt": 547062000.0,
+          "short_term_debt": 3549000.0,
+          "long_term_debt": 543513000.0,
+          "cash_and_cash_equivalents": 1160312000.0,
+          "cash_primary": 544765000.0,
+          "marketable_securities_current": 615547000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1104506",
       "data": {
         "shares_outstanding": 215551896,
-        "revenue": 305964000,
+        "revenue": 305964000.0,
         "balance_sheet": {
-          "total_assets": 2075863000,
-          "total_liabilities": 1371011000,
-          "total_shareholders_equity": 704852000,
-          "total_debt": 545661000,
-          "short_term_debt": 3446000,
-          "long_term_debt": 542215000,
-          "cash_and_cash_equivalents": 1223514000,
-          "cash_primary": 582188000,
-          "marketable_securities_current": 641326000
+          "total_assets": 2075863000.0,
+          "total_liabilities": 1371011000.0,
+          "total_shareholders_equity": 704852000.0,
+          "total_debt": 545661000.0,
+          "short_term_debt": 3446000.0,
+          "long_term_debt": 542215000.0,
+          "cash_and_cash_equivalents": 1223514000.0,
+          "cash_primary": 582188000.0,
+          "marketable_securities_current": 641326000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1104506",
       "data": {
         "shares_outstanding": 213273469,
-        "revenue": 606423000,
+        "revenue": 606423000.0,
         "balance_sheet": {
-          "total_assets": 2264558000,
-          "total_liabilities": 1525582000,
-          "total_shareholders_equity": 738976000,
-          "total_debt": 544309000,
-          "short_term_debt": 3345000,
-          "long_term_debt": 540964000,
-          "cash_and_cash_equivalents": 1430047000,
-          "cash_primary": 510445000,
-          "marketable_securities_current": 919602000
+          "total_assets": 2264558000.0,
+          "total_liabilities": 1525582000.0,
+          "total_shareholders_equity": 738976000.0,
+          "total_debt": 544309000.0,
+          "short_term_debt": 3345000.0,
+          "long_term_debt": 540964000.0,
+          "cash_and_cash_equivalents": 1430047000.0,
+          "cash_primary": 510445000.0,
+          "marketable_securities_current": 919602000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1104506",
       "data": {
         "shares_outstanding": 211374786,
-        "revenue": 342580000,
+        "revenue": 342580000.0,
         "balance_sheet": {
-          "total_assets": 2360736000,
-          "total_liabilities": 1415165000,
-          "total_shareholders_equity": 945571000,
-          "total_debt": 542965000,
-          "short_term_debt": 3246000,
-          "long_term_debt": 539719000,
-          "cash_and_cash_equivalents": 1679986000,
-          "cash_primary": 334764000,
-          "marketable_securities_current": 1345222000
+          "total_assets": 2360736000.0,
+          "total_liabilities": 1415165000.0,
+          "total_shareholders_equity": 945571000.0,
+          "total_debt": 542965000.0,
+          "short_term_debt": 3246000.0,
+          "long_term_debt": 539719000.0,
+          "cash_and_cash_equivalents": 1679986000.0,
+          "cash_primary": 334764000.0,
+          "marketable_securities_current": 1345222000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.insmed.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.75,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.01,
-      "pbo_gross_usd_b": 0.16,
-      "plan_assets_usd_b": 0.15,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.03,
-      "narrative": "Insmed Incorporated sponsors modest domestic and international defined benefit plans with $0.16B in gross PBO against $0.15B in plan assets ($-0.01B net funded gap) and $0.03B in unfunded postretirement healthcare OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.1,
-      "estimated_unreserved_exposure_usd_b": 0.05,
-      "superfund_and_pfas_sites_count": 2,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "LOW",
-      "narrative": "Routine environmental compliance across pharmaceutical formulation and medical device fabrication facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Product liability dockets, patent challenge (Hatch-Waxman) litigation, and government pricing compliance reviews.",
-      "recent_settlements_scheduled_usd_b": 0.5,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MODERATE",
-      "narrative": "Ongoing patent defense and product liability claims incur ~$0.02B in annual defense and settlement outlays, covered by high gross profit margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.21,
-      "take_or_pay_commitments_usd_b": 0.07,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Active pharmaceutical ingredient supply agreements and clinical contract research organization (CRO) commitments total $0.21B."
-    },
-    "equity_cash_flow_diversion_risk": "Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.",
-    "narrative": "Insmed Incorporated's off-balance sheet liabilities are standard for healthcare innovators, consisting of manageable legacy pension plans, CRO clinical commitments, and active patent defense."
-  }
+  "last_updated": "2026-08-28T03:13:30.686302+00:00"
 }

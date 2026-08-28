@@ -31,6 +31,12 @@ if scripts_dir not in sys.path:
     sys.path.insert(0, scripts_dir)
 
 from valuation_model import model_equity_valuation
+from adr_registry import (
+    normalize_shares_outstanding,
+    convert_to_usd,
+    get_adr_ratio,
+    ADR_RATIOS
+)
 
 SEC_HEADERS = {
     "User-Agent": "InvestmentsApp System (contact@investments.app)"
@@ -683,6 +689,7 @@ class QualityController:
         ev = u_entry.get("enterprise_value")
         debt = u_entry.get("total_debt") or 0
         cash = u_entry.get("cash_and_cash_equivalents") or 0
+        ttm_rev = u_entry.get("ttm_revenue")
 
         if not shares or shares <= 0:
             issues.append({
@@ -703,7 +710,46 @@ class QualityController:
                 "expected": 2160000000,
                 "description": f"[{sym}] Berkshire Hathaway Class B shares count must be normalized to Class B equivalent count (~2.16B shares), found {shares}."
             })
-        elif cp and mc:
+        elif sym in ADR_RATIOS and ADR_RATIOS[sym] > 1.0:
+            ratio = ADR_RATIOS[sym]
+            expected_shares = normalize_shares_outstanding(sym, shares)
+            # If shares is significantly larger than ADR normalized count, it is likely unconverted ordinary shares
+            if expected_shares and abs(shares - expected_shares) > (shares * 0.3):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "FUNDAMENTAL_ACCOUNTING",
+                    "symbol": sym,
+                    "field": "shares_outstanding",
+                    "actual": shares,
+                    "expected": expected_shares,
+                    "description": f"[{sym}] Shares outstanding ({shares:,}) appears to be unconverted local ordinary shares; must be normalized to US ADR equivalent count (~{expected_shares:,}, ADR ratio: 1:{ratio:g})."
+                })
+
+        # Sanity check: Excessive market cap from unadjusted ADR or currency multiplier
+        allowed_megacaps = {"NVDA", "MSFT", "AAPL", "GOOGL", "GOOG", "AMZN"}
+        if mc and mc > 4500e9 and sym not in allowed_megacaps:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "FUNDAMENTAL_ACCOUNTING",
+                "symbol": sym,
+                "field": "market_cap",
+                "actual": mc,
+                "description": f"[{sym}] Unusually high Market Cap (${mc/1e9:.2f}B). Verify that shares outstanding are ADR-normalized and balance sheet is in USD."
+            })
+
+        # Sanity check: Excessive TTM revenue from foreign currency or multi-year summation
+        allowed_megarevs = {"WMT", "AMZN"}
+        if ttm_rev and ttm_rev > 800e9 and sym not in allowed_megarevs:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "FUNDAMENTAL_ACCOUNTING",
+                "symbol": sym,
+                "field": "ttm_revenue",
+                "actual": ttm_rev,
+                "description": f"[{sym}] Unusually high TTM Revenue (${ttm_rev/1e9:.2f}B). Verify that financial statements are converted to USD from foreign currency."
+            })
+
+        if cp and mc:
             expected_mc = round(shares * cp, 2)
             if abs(mc - expected_mc) > max(100.0, expected_mc * 0.01):
                 issues.append({
@@ -1150,23 +1196,26 @@ class QualityController:
             is_index_member = len(indices) > 0
 
             sec_metrics = self.sec_summary.get(sym, {})
-            shares = sec_metrics.get("shares_outstanding")
-            ttm_rev = sec_metrics.get("ttm_revenue")
+            raw_shares = sec_metrics.get("shares_outstanding")
+            raw_ttm_rev = sec_metrics.get("ttm_revenue")
 
-            if (not shares or shares == 0) and filings:
-                shares = filings[0].get("data", {}).get("shares_outstanding")
+            if (not raw_shares or raw_shares == 0) and filings:
+                raw_shares = filings[0].get("data", {}).get("shares_outstanding")
 
-            # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
-            if sym in ["BRK-B", "BRK.B"] and shares and shares < 100e6:
-                shares = 2160000000
+            norm_shares = normalize_shares_outstanding(sym, raw_shares)
+            shares = norm_shares if norm_shares is not None else raw_shares
 
-            total_debt = sec_metrics.get("total_debt")
-            if total_debt is None:
-                total_debt = latest_bs.get("total_debt", 0)
+            ttm_rev = convert_to_usd(raw_ttm_rev, symbol=sym) if raw_ttm_rev is not None else None
 
-            cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
-            if cash_equiv is None:
-                cash_equiv = latest_bs.get("cash_and_cash_equivalents", 0)
+            raw_total_debt = sec_metrics.get("total_debt")
+            if raw_total_debt is None:
+                raw_total_debt = latest_bs.get("total_debt", 0)
+            total_debt = convert_to_usd(raw_total_debt, symbol=sym) if raw_total_debt is not None else 0
+
+            raw_cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
+            if raw_cash_equiv is None:
+                raw_cash_equiv = latest_bs.get("cash_and_cash_equivalents", 0)
+            cash_equiv = convert_to_usd(raw_cash_equiv, symbol=sym) if raw_cash_equiv is not None else 0
 
             # Price & Technical Data
             price_info = self.market_prices.get(sym, {})

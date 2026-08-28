@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1707925",
       "data": {
         "shares_outstanding": 460980163,
-        "revenue": 18070000000,
+        "revenue": 18070000000.0,
         "balance_sheet": {
-          "total_assets": 88349000000,
-          "total_liabilities": 47719000000,
-          "total_shareholders_equity": 39081000000,
-          "total_debt": 20678000000,
-          "short_term_debt": 2474000000,
-          "long_term_debt": 20678000000,
-          "cash_and_cash_equivalents": 4898000000,
-          "cash_primary": 4898000000,
-          "marketable_securities_current": 0
+          "total_assets": 88349000000.0,
+          "total_liabilities": 47719000000.0,
+          "total_shareholders_equity": 39081000000.0,
+          "total_debt": 20678000000.0,
+          "short_term_debt": 2474000000.0,
+          "long_term_debt": 20678000000.0,
+          "cash_and_cash_equivalents": 4898000000.0,
+          "cash_primary": 4898000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1707925",
       "data": {
         "shares_outstanding": 462599539,
-        "revenue": 8781000000,
+        "revenue": 8781000000.0,
         "balance_sheet": {
-          "total_assets": 86315000000,
-          "total_liabilities": 46223000000,
-          "total_shareholders_equity": 38566000000,
-          "total_debt": 19859000000,
-          "short_term_debt": 1636000000,
-          "long_term_debt": 19859000000,
-          "cash_and_cash_equivalents": 3959000000,
-          "cash_primary": 3959000000,
-          "marketable_securities_current": 0
+          "total_assets": 86315000000.0,
+          "total_liabilities": 46223000000.0,
+          "total_shareholders_equity": 38566000000.0,
+          "total_debt": 19859000000.0,
+          "short_term_debt": 1636000000.0,
+          "long_term_debt": 19859000000.0,
+          "cash_and_cash_equivalents": 3959000000.0,
+          "cash_primary": 3959000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1707925",
       "data": {
         "shares_outstanding": 466948930,
-        "revenue": 33986000000,
+        "revenue": 33986000000.0,
         "balance_sheet": {
-          "total_assets": 86817000000,
-          "total_liabilities": 47076000000,
-          "total_shareholders_equity": 38245000000,
-          "total_debt": 20683000000,
-          "short_term_debt": 1796000000,
-          "long_term_debt": 20683000000,
-          "cash_and_cash_equivalents": 5056000000,
-          "cash_primary": 5056000000,
-          "marketable_securities_current": 0
+          "total_assets": 86817000000.0,
+          "total_liabilities": 47076000000.0,
+          "total_shareholders_equity": 38245000000.0,
+          "total_debt": 20683000000.0,
+          "short_term_debt": 1796000000.0,
+          "long_term_debt": 20683000000.0,
+          "cash_and_cash_equivalents": 5056000000.0,
+          "cash_primary": 5056000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1707925",
       "data": {
         "shares_outstanding": 466948930,
-        "revenue": 25222000000,
+        "revenue": 25222000000.0,
         "balance_sheet": {
-          "total_assets": 85993000000,
-          "total_liabilities": 45907000000,
-          "total_shareholders_equity": 38616000000,
-          "total_debt": 18592000000,
-          "short_term_debt": 2371000000,
-          "long_term_debt": 18592000000,
-          "cash_and_cash_equivalents": 4509000000,
-          "cash_primary": 4509000000,
-          "marketable_securities_current": 0
+          "total_assets": 85993000000.0,
+          "total_liabilities": 45907000000.0,
+          "total_shareholders_equity": 38616000000.0,
+          "total_debt": 18592000000.0,
+          "short_term_debt": 2371000000.0,
+          "long_term_debt": 18592000000.0,
+          "cash_and_cash_equivalents": 4509000000.0,
+          "cash_primary": 4509000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.linde.com/investors",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 11.18,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.52,
-      "pbo_gross_usd_b": 7.48,
-      "plan_assets_usd_b": 6.96,
-      "annual_cash_contribution_usd_b": 0.22,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.36,
-      "narrative": "Linde plc sponsors defined benefit pension plans with $7.48B in gross PBO against $6.96B in assets ($-0.52B net gap) and $1.36B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 8.5,
-      "take_or_pay_commitments_usd_b": 2.55,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $8.50B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Linde plc manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.709169+00:00"
 }

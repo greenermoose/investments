@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1137789",
       "data": {
         "shares_outstanding": 224228992,
-        "revenue": 12195000000,
+        "revenue": 12195000000.0,
         "balance_sheet": {
-          "total_assets": 9972000000,
-          "total_liabilities": 7805000000,
-          "total_shareholders_equity": 2167000000,
-          "total_debt": 3565000000,
-          "short_term_debt": 185000000,
-          "long_term_debt": 3380000000,
-          "cash_and_cash_equivalents": 1704000000,
-          "cash_primary": 1704000000,
-          "marketable_securities_current": 0
+          "total_assets": 9972000000.0,
+          "total_liabilities": 7805000000.0,
+          "total_shareholders_equity": 2167000000.0,
+          "total_debt": 3565000000.0,
+          "short_term_debt": 185000000.0,
+          "long_term_debt": 3380000000.0,
+          "cash_and_cash_equivalents": 1704000000.0,
+          "cash_primary": 1704000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1137789",
       "data": {
         "shares_outstanding": 218073067,
-        "revenue": 8566000000,
+        "revenue": 8566000000.0,
         "balance_sheet": {
-          "total_assets": 8892000000,
-          "total_liabilities": 7797000000,
-          "total_shareholders_equity": 1095000000,
-          "total_debt": 3863000000,
-          "short_term_debt": 398000000,
-          "long_term_debt": 3465000000,
-          "cash_and_cash_equivalents": 1146000000,
-          "cash_primary": 1146000000,
-          "marketable_securities_current": 0
+          "total_assets": 8892000000.0,
+          "total_liabilities": 7797000000.0,
+          "total_shareholders_equity": 1095000000.0,
+          "total_debt": 3863000000.0,
+          "short_term_debt": 398000000.0,
+          "long_term_debt": 3465000000.0,
+          "cash_and_cash_equivalents": 1146000000.0,
+          "cash_primary": 1146000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1137789",
       "data": {
         "shares_outstanding": 213558113,
-        "revenue": 5454000000,
+        "revenue": 5454000000.0,
         "balance_sheet": {
-          "total_assets": 8708000000,
-          "total_liabilities": 8249000000,
-          "total_shareholders_equity": 459000000,
-          "total_debt": 4499000000,
-          "short_term_debt": 998000000,
-          "long_term_debt": 3501000000,
-          "cash_and_cash_equivalents": 1046000000,
-          "cash_primary": 1046000000,
-          "marketable_securities_current": 0
+          "total_assets": 8708000000.0,
+          "total_liabilities": 8249000000.0,
+          "total_shareholders_equity": 459000000.0,
+          "total_debt": 4499000000.0,
+          "short_term_debt": 998000000.0,
+          "long_term_debt": 3501000000.0,
+          "cash_and_cash_equivalents": 1046000000.0,
+          "cash_primary": 1046000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1137789",
       "data": {
         "shares_outstanding": 212677178,
-        "revenue": 2629000000,
+        "revenue": 2629000000.0,
         "balance_sheet": {
-          "total_assets": 8442000000,
-          "total_liabilities": 8505000000,
-          "total_shareholders_equity": -63000000,
-          "total_debt": 4994000000,
-          "short_term_debt": 1496000000,
-          "long_term_debt": 3498000000,
-          "cash_and_cash_equivalents": 1112000000,
-          "cash_primary": 1112000000,
-          "marketable_securities_current": 0
+          "total_assets": 8442000000.0,
+          "total_liabilities": 8505000000.0,
+          "total_shareholders_equity": -63000000.0,
+          "total_debt": 4994000000.0,
+          "short_term_debt": 1496000000.0,
+          "long_term_debt": 3498000000.0,
+          "cash_and_cash_equivalents": 1112000000.0,
+          "cash_primary": 1112000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.seagate.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.77,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Seagate Technology Holdings plc operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Seagate Technology Holdings plc has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.27,
-      "take_or_pay_commitments_usd_b": 1.28,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $4.27B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Seagate Technology Holdings plc maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.814782+00:00"
 }

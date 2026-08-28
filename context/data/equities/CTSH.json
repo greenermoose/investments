@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1058290",
       "data": {
         "shares_outstanding": 478246920,
-        "revenue": 5413000000,
+        "revenue": 5413000000.0,
         "balance_sheet": {
-          "total_assets": 20500000000,
-          "total_liabilities": 5432000000,
-          "total_shareholders_equity": 15068000000,
-          "total_debt": 568000000,
-          "short_term_debt": 33000000,
-          "long_term_debt": 535000000,
-          "cash_and_cash_equivalents": 1517000000,
-          "cash_primary": 1504000000,
-          "marketable_securities_current": 13000000
+          "total_assets": 20500000000.0,
+          "total_liabilities": 5432000000.0,
+          "total_shareholders_equity": 15068000000.0,
+          "total_debt": 568000000.0,
+          "short_term_debt": 33000000.0,
+          "long_term_debt": 535000000.0,
+          "cash_and_cash_equivalents": 1517000000.0,
+          "cash_primary": 1504000000.0,
+          "marketable_securities_current": 13000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1058290",
       "data": {
         "shares_outstanding": 482646473,
-        "revenue": 21108000000,
+        "revenue": 21108000000.0,
         "balance_sheet": {
-          "total_assets": 20692000000,
-          "total_liabilities": 5677000000,
-          "total_shareholders_equity": 15015000000,
-          "total_debt": 576000000,
-          "short_term_debt": 33000000,
-          "long_term_debt": 543000000,
-          "cash_and_cash_equivalents": 1914000000,
-          "cash_primary": 1901000000,
-          "marketable_securities_current": 13000000
+          "total_assets": 20692000000.0,
+          "total_liabilities": 5677000000.0,
+          "total_shareholders_equity": 15015000000.0,
+          "total_debt": 576000000.0,
+          "short_term_debt": 33000000.0,
+          "long_term_debt": 543000000.0,
+          "cash_and_cash_equivalents": 1914000000.0,
+          "cash_primary": 1901000000.0,
+          "marketable_securities_current": 13000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1058290",
       "data": {
         "shares_outstanding": 488395937,
-        "revenue": 15775000000,
+        "revenue": 15775000000.0,
         "balance_sheet": {
-          "total_assets": 20134000000,
-          "total_liabilities": 5237000000,
-          "total_shareholders_equity": 14897000000,
-          "total_debt": 584000000,
-          "short_term_debt": 33000000,
-          "long_term_debt": 551000000,
-          "cash_and_cash_equivalents": 2354000000,
-          "cash_primary": 2341000000,
-          "marketable_securities_current": 13000000
+          "total_assets": 20134000000.0,
+          "total_liabilities": 5237000000.0,
+          "total_shareholders_equity": 14897000000.0,
+          "total_debt": 584000000.0,
+          "short_term_debt": 33000000.0,
+          "long_term_debt": 551000000.0,
+          "cash_and_cash_equivalents": 2354000000.0,
+          "cash_primary": 2341000000.0,
+          "marketable_securities_current": 13000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1058290",
       "data": {
         "shares_outstanding": 492941963,
-        "revenue": 10360000000,
+        "revenue": 10360000000.0,
         "balance_sheet": {
-          "total_assets": 20164000000,
-          "total_liabilities": 4876000000,
-          "total_shareholders_equity": 15288000000,
-          "total_debt": 592000000,
-          "short_term_debt": 33000000,
-          "long_term_debt": 559000000,
-          "cash_and_cash_equivalents": 1808000000,
-          "cash_primary": 1796000000,
-          "marketable_securities_current": 12000000
+          "total_assets": 20164000000.0,
+          "total_liabilities": 4876000000.0,
+          "total_shareholders_equity": 15288000000.0,
+          "total_debt": 592000000.0,
+          "short_term_debt": 33000000.0,
+          "long_term_debt": 559000000.0,
+          "cash_and_cash_equivalents": 1808000000.0,
+          "cash_primary": 1796000000.0,
+          "marketable_securities_current": 12000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.cognizant.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 7.89,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Cognizant Technology Solutions Corporation operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Cognizant Technology Solutions Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 7.39,
-      "take_or_pay_commitments_usd_b": 2.22,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $7.39B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Cognizant Technology Solutions Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.622566+00:00"
 }

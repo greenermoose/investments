@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1701605",
       "data": {
         "shares_outstanding": 992068697,
-        "revenue": 13329000000,
+        "revenue": 13329000000.0,
         "balance_sheet": {
-          "total_assets": 52620000000,
-          "total_liabilities": 52620000000,
-          "total_shareholders_equity": 19908000000,
-          "total_debt": 15479000000,
-          "short_term_debt": 774000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 15727000000,
-          "cash_primary": 15727000000,
-          "marketable_securities_current": 0
+          "total_assets": 52620000000.0,
+          "total_liabilities": 52620000000.0,
+          "total_shareholders_equity": 19908000000.0,
+          "total_debt": 15479000000.0,
+          "short_term_debt": 774000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 15727000000.0,
+          "cash_primary": 15727000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1701605",
       "data": {
         "shares_outstanding": 988236510,
-        "revenue": 6587000000,
+        "revenue": 6587000000.0,
         "balance_sheet": {
-          "total_assets": 50896000000,
-          "total_liabilities": 50896000000,
-          "total_shareholders_equity": 19314000000,
-          "total_debt": 15411000000,
-          "short_term_debt": 753000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 14764000000,
-          "cash_primary": 14764000000,
-          "marketable_securities_current": 0
+          "total_assets": 50896000000.0,
+          "total_liabilities": 50896000000.0,
+          "total_shareholders_equity": 19314000000.0,
+          "total_debt": 15411000000.0,
+          "short_term_debt": 753000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 14764000000.0,
+          "cash_primary": 14764000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1701605",
       "data": {
         "shares_outstanding": 986773882,
-        "revenue": 27733000000,
+        "revenue": 27733000000.0,
         "balance_sheet": {
-          "total_assets": 40881000000,
-          "total_liabilities": 40881000000,
-          "total_shareholders_equity": 18834000000,
-          "total_debt": 5398000000,
-          "short_term_debt": 689000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3715000000,
-          "cash_primary": 3715000000,
-          "marketable_securities_current": 0
+          "total_assets": 40881000000.0,
+          "total_liabilities": 40881000000.0,
+          "total_shareholders_equity": 18834000000.0,
+          "total_debt": 5398000000.0,
+          "short_term_debt": 689000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3715000000.0,
+          "cash_primary": 3715000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1701605",
       "data": {
         "shares_outstanding": 985879124,
-        "revenue": 20347000000,
+        "revenue": 20347000000.0,
         "balance_sheet": {
-          "total_assets": 39233000000,
-          "total_liabilities": 39233000000,
-          "total_shareholders_equity": 18157000000,
-          "total_debt": 5988000000,
-          "short_term_debt": 68000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2693000000,
-          "cash_primary": 2693000000,
-          "marketable_securities_current": 0
+          "total_assets": 39233000000.0,
+          "total_liabilities": 39233000000.0,
+          "total_shareholders_equity": 18157000000.0,
+          "total_debt": 5988000000.0,
+          "short_term_debt": 68000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2693000000.0,
+          "cash_primary": 2693000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.bakerhughes.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 27.04,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.69,
-      "pbo_gross_usd_b": 6.93,
-      "plan_assets_usd_b": 6.24,
-      "annual_cash_contribution_usd_b": 0.21,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.39,
-      "narrative": "Baker Hughes Company sponsors utility and industrial defined benefit plans ($6.93B PBO vs $6.24B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 12.48,
-      "estimated_unreserved_exposure_usd_b": 3.12,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.75,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $12.48B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 13.87,
-      "take_or_pay_commitments_usd_b": 8.32,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $13.87B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "Baker Hughes Company's off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.582810+00:00"
 }

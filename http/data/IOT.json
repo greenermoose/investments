@@ -2,7 +2,7 @@
   "symbol": "IOT",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896",
   "investor_relations_url": "https://investors.samsara.com/",
-  "last_updated": "2026-08-18T18:45:00.000000+00:00",
+  "last_updated": "2026-08-28T03:13:30.695814+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -12,15 +12,15 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896",
       "data": {
         "shares_outstanding": 583000000,
-        "revenue": 465000000,
+        "revenue": 465000000.0,
         "balance_sheet": {
-          "total_assets": 2450000000,
-          "total_liabilities": 980000000,
-          "total_shareholders_equity": 1470000000,
-          "total_debt": 95000000,
-          "short_term_debt": 0,
-          "long_term_debt": 95000000,
-          "cash_and_cash_equivalents": 1080000000
+          "total_assets": 2450000000.0,
+          "total_liabilities": 980000000.0,
+          "total_shareholders_equity": 1470000000.0,
+          "total_debt": 95000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 95000000.0,
+          "cash_and_cash_equivalents": 1080000000.0
         }
       }
     },
@@ -32,13 +32,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896",
       "data": {
         "shares_outstanding": 580000000,
-        "revenue": 445000000,
+        "revenue": 445000000.0,
         "balance_sheet": {
-          "total_assets": 2320000000,
-          "total_liabilities": 940000000,
-          "total_shareholders_equity": 1380000000,
-          "total_debt": 95000000,
-          "cash_and_cash_equivalents": 1020000000
+          "total_assets": 2320000000.0,
+          "total_liabilities": 940000000.0,
+          "total_shareholders_equity": 1380000000.0,
+          "total_debt": 95000000.0,
+          "cash_and_cash_equivalents": 1020000000.0
         }
       }
     },
@@ -50,13 +50,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896",
       "data": {
         "shares_outstanding": 576000000,
-        "revenue": 425000000,
+        "revenue": 425000000.0,
         "balance_sheet": {
-          "total_assets": 2190000000,
-          "total_liabilities": 910000000,
-          "total_shareholders_equity": 1280000000,
-          "total_debt": 95000000,
-          "cash_and_cash_equivalents": 960000000
+          "total_assets": 2190000000.0,
+          "total_liabilities": 910000000.0,
+          "total_shareholders_equity": 1280000000.0,
+          "total_debt": 95000000.0,
+          "cash_and_cash_equivalents": 960000000.0
         }
       }
     },
@@ -68,13 +68,13 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896",
       "data": {
         "shares_outstanding": 572000000,
-        "revenue": 395000000,
+        "revenue": 395000000.0,
         "balance_sheet": {
-          "total_assets": 2080000000,
-          "total_liabilities": 890000000,
-          "total_shareholders_equity": 1190000000,
-          "total_debt": 95000000,
-          "cash_and_cash_equivalents": 910000000
+          "total_assets": 2080000000.0,
+          "total_liabilities": 890000000.0,
+          "total_shareholders_equity": 1190000000.0,
+          "total_debt": 95000000.0,
+          "cash_and_cash_equivalents": 910000000.0
         }
       }
     }

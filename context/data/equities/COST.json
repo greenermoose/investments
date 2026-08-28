@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
       "data": {
         "shares_outstanding": 443652540,
-        "revenue": 207431000000,
+        "revenue": 207431000000.0,
         "balance_sheet": {
-          "total_assets": 86430000000,
-          "total_liabilities": 52921000000,
-          "total_shareholders_equity": 33509000000,
-          "total_debt": 5684000000,
-          "short_term_debt": 0,
-          "long_term_debt": 5670000000,
-          "cash_and_cash_equivalents": 19996000000,
-          "cash_primary": 18946000000,
-          "marketable_securities_current": 1050000000
+          "total_assets": 86430000000.0,
+          "total_liabilities": 52921000000.0,
+          "total_shareholders_equity": 33509000000.0,
+          "total_debt": 5684000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 5670000000.0,
+          "cash_and_cash_equivalents": 19996000000.0,
+          "cash_primary": 18946000000.0,
+          "marketable_securities_current": 1050000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
       "data": {
         "shares_outstanding": 443869411,
-        "revenue": 136904000000,
+        "revenue": 136904000000.0,
         "balance_sheet": {
-          "total_assets": 83639000000,
-          "total_liabilities": 51552000000,
-          "total_shareholders_equity": 32087000000,
-          "total_debt": 5775000000,
-          "short_term_debt": 72000000,
-          "long_term_debt": 5688000000,
-          "cash_and_cash_equivalents": 18240000000,
-          "cash_primary": 17383000000,
-          "marketable_securities_current": 857000000
+          "total_assets": 83639000000.0,
+          "total_liabilities": 51552000000.0,
+          "total_shareholders_equity": 32087000000.0,
+          "total_debt": 5775000000.0,
+          "short_term_debt": 72000000.0,
+          "long_term_debt": 5688000000.0,
+          "cash_and_cash_equivalents": 18240000000.0,
+          "cash_primary": 17383000000.0,
+          "marketable_securities_current": 857000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
       "data": {
         "shares_outstanding": 443179176,
-        "revenue": 67307000000,
+        "revenue": 67307000000.0,
         "balance_sheet": {
-          "total_assets": 82790000000,
-          "total_liabilities": 52487000000,
-          "total_shareholders_equity": 30303000000,
-          "total_debt": 5751000000,
-          "short_term_debt": 70000000,
-          "long_term_debt": 5666000000,
-          "cash_and_cash_equivalents": 17183000000,
-          "cash_primary": 16217000000,
-          "marketable_securities_current": 966000000
+          "total_assets": 82790000000.0,
+          "total_liabilities": 52487000000.0,
+          "total_shareholders_equity": 30303000000.0,
+          "total_debt": 5751000000.0,
+          "short_term_debt": 70000000.0,
+          "long_term_debt": 5666000000.0,
+          "cash_and_cash_equivalents": 17183000000.0,
+          "cash_primary": 16217000000.0,
+          "marketable_securities_current": 966000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=909832",
       "data": {
         "shares_outstanding": 443477086,
-        "revenue": 275235000000,
+        "revenue": 275235000000.0,
         "balance_sheet": {
-          "total_assets": 77099000000,
-          "total_liabilities": 47935000000,
-          "total_shareholders_equity": 29164000000,
-          "total_debt": 5805000000,
-          "short_term_debt": 75000000,
-          "long_term_debt": 5713000000,
-          "cash_and_cash_equivalents": 15284000000,
-          "cash_primary": 14161000000,
-          "marketable_securities_current": 1123000000
+          "total_assets": 77099000000.0,
+          "total_liabilities": 47935000000.0,
+          "total_shareholders_equity": 29164000000.0,
+          "total_debt": 5805000000.0,
+          "short_term_debt": 75000000.0,
+          "long_term_debt": 5713000000.0,
+          "cash_and_cash_equivalents": 15284000000.0,
+          "cash_primary": 14161000000.0,
+          "marketable_securities_current": 1123000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.costco.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 85.1,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -2.47,
-      "pbo_gross_usd_b": 49.4,
-      "plan_assets_usd_b": 46.93,
-      "annual_cash_contribution_usd_b": 1.24,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 8.23,
-      "narrative": "Costco Wholesale Corporation maintains legacy defined benefit plans ($49.40B PBO vs $46.93B assets; $-2.47B gap) and $8.23B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 74.1,
-      "take_or_pay_commitments_usd_b": 18.52,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $74.10B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Costco Wholesale Corporation possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.602598+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1103982",
       "data": {
         "shares_outstanding": 1281845669,
-        "revenue": 10080000000,
+        "revenue": 10080000000.0,
         "balance_sheet": {
-          "total_assets": 71122000000,
-          "total_liabilities": 45318000000,
-          "total_shareholders_equity": 25750000000,
-          "total_debt": 15468000000,
-          "short_term_debt": 2881000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1631000000,
-          "cash_primary": 1631000000,
-          "marketable_securities_current": 0
+          "total_assets": 71122000000.0,
+          "total_liabilities": 45318000000.0,
+          "total_shareholders_equity": 25750000000.0,
+          "total_debt": 15468000000.0,
+          "short_term_debt": 2881000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1631000000.0,
+          "cash_primary": 1631000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1103982",
       "data": {
         "shares_outstanding": 1290358492,
-        "revenue": 38537000000,
+        "revenue": 38537000000.0,
         "balance_sheet": {
-          "total_assets": 71487000000,
-          "total_liabilities": 45596000000,
-          "total_shareholders_equity": 25838000000,
-          "total_debt": 17222000000,
-          "short_term_debt": 2688000000,
-          "long_term_debt": 286000000,
-          "cash_and_cash_equivalents": 2195000000,
-          "cash_primary": 2195000000,
-          "marketable_securities_current": 0
+          "total_assets": 71487000000.0,
+          "total_liabilities": 45596000000.0,
+          "total_shareholders_equity": 25838000000.0,
+          "total_debt": 17222000000.0,
+          "short_term_debt": 2688000000.0,
+          "long_term_debt": 286000000.0,
+          "cash_and_cash_equivalents": 2195000000.0,
+          "cash_primary": 2195000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1103982",
       "data": {
         "shares_outstanding": 1293945412,
-        "revenue": 28041000000,
+        "revenue": 28041000000.0,
         "balance_sheet": {
-          "total_assets": 71358000000,
-          "total_liabilities": 45129000000,
-          "total_shareholders_equity": 26177000000,
-          "total_debt": 17134000000,
-          "short_term_debt": 2645000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1466000000,
-          "cash_primary": 1466000000,
-          "marketable_securities_current": 0
+          "total_assets": 71358000000.0,
+          "total_liabilities": 45129000000.0,
+          "total_shareholders_equity": 26177000000.0,
+          "total_debt": 17134000000.0,
+          "short_term_debt": 2645000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1466000000.0,
+          "cash_primary": 1466000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1103982",
       "data": {
         "shares_outstanding": 1294815373,
-        "revenue": 18297000000,
+        "revenue": 18297000000.0,
         "balance_sheet": {
-          "total_assets": 71020000000,
-          "total_liabilities": 44773000000,
-          "total_shareholders_equity": 26193000000,
-          "total_debt": 18116000000,
-          "short_term_debt": 1664000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1587000000,
-          "cash_primary": 1587000000,
-          "marketable_securities_current": 0
+          "total_assets": 71020000000.0,
+          "total_liabilities": 44773000000.0,
+          "total_shareholders_equity": 26193000000.0,
+          "total_debt": 18116000000.0,
+          "short_term_debt": 1664000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1587000000.0,
+          "cash_primary": 1587000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.mondelezinternational.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 8.24,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.23,
-      "pbo_gross_usd_b": 4.62,
-      "plan_assets_usd_b": 4.39,
-      "annual_cash_contribution_usd_b": 0.12,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.77,
-      "narrative": "Mondelez International, Inc. maintains legacy defined benefit plans ($4.62B PBO vs $4.39B assets; $-0.23B gap) and $0.77B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 6.94,
-      "take_or_pay_commitments_usd_b": 1.74,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $6.94B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Mondelez International, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.725349+00:00"
 }

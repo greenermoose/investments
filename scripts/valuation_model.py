@@ -22,6 +22,7 @@ if scripts_dir not in sys.path:
     sys.path.insert(0, scripts_dir)
 
 from return_engine import calculate_annualized_roi, parse_iso_date
+from adr_registry import normalize_shares_outstanding, convert_to_usd
 
 # 13-Quarter Forecasting Framework
 QUARTER_DEFS = [
@@ -690,15 +691,15 @@ def model_equity_valuation(
     6-horizon shares, 4-horizon price ranges, and returns Return Engine parameters.
     """
     curr_px = round(float(current_price), 2)
-    shares = float(shares_outstanding or 1e9)
-
-    # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
-    if symbol in ["BRK-B", "BRK.B"] and shares < 100e6:
-        shares = 2.16e9
+    raw_shares = float(shares_outstanding or 1e9)
+    norm_shares = normalize_shares_outstanding(symbol, raw_shares)
+    shares = float(norm_shares) if norm_shares else raw_shares
 
     shares_m = round(shares / 1e6, 0)
     shares_b = shares / 1e9
-    ttm_rev = float(ttm_revenue or (shares * curr_px * 0.2))
+    raw_rev = float(ttm_revenue or (shares * curr_px * 0.2))
+    conv_rev = convert_to_usd(raw_rev, symbol=symbol)
+    ttm_rev = float(conv_rev) if conv_rev else raw_rev
     ttm_rev_b = ttm_rev / 1e9
     quarterly_rev_base = ttm_rev_b / 4.0
 

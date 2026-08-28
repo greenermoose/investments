@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1321655",
       "data": {
         "shares_outstanding": 2402897000,
-        "revenue": 3568047000,
+        "revenue": 3568047000.0,
         "balance_sheet": {
-          "total_assets": 11678564000,
-          "total_liabilities": 1793680000,
-          "total_shareholders_equity": 9774194000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 9409099000,
-          "cash_primary": 2030047000,
-          "marketable_securities_current": 7379052000
+          "total_assets": 11678564000.0,
+          "total_liabilities": 1793680000.0,
+          "total_shareholders_equity": 9774194000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 9409099000.0,
+          "cash_primary": 2030047000.0,
+          "marketable_securities_current": 7379052000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1321655",
       "data": {
         "shares_outstanding": 2397133000,
-        "revenue": 1632583000,
+        "revenue": 1632583000.0,
         "balance_sheet": {
-          "total_assets": 10199183000,
-          "total_liabilities": 1642902000,
-          "total_shareholders_equity": 8449663000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 8026413000,
-          "cash_primary": 2291631000,
-          "marketable_securities_current": 5734782000
+          "total_assets": 10199183000.0,
+          "total_liabilities": 1642902000.0,
+          "total_shareholders_equity": 8449663000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 8026413000.0,
+          "cash_primary": 2291631000.0,
+          "marketable_securities_current": 5734782000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1321655",
       "data": {
         "shares_outstanding": 2391192000,
-        "revenue": 4475446000,
+        "revenue": 4475446000.0,
         "balance_sheet": {
-          "total_assets": 8900392000,
-          "total_liabilities": 1412381000,
-          "total_shareholders_equity": 7387268000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 7177043000,
-          "cash_primary": 1423796000,
-          "marketable_securities_current": 5753247000
+          "total_assets": 8900392000.0,
+          "total_liabilities": 1412381000.0,
+          "total_shareholders_equity": 7387268000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 7177043000.0,
+          "cash_primary": 1423796000.0,
+          "marketable_securities_current": 5753247000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1321655",
       "data": {
         "shares_outstanding": 2383314000,
-        "revenue": 3068644000,
+        "revenue": 3068644000.0,
         "balance_sheet": {
-          "total_assets": 8113960000,
-          "total_liabilities": 1425691000,
-          "total_shareholders_equity": 6590457000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 6437817000,
-          "cash_primary": 1615967000,
-          "marketable_securities_current": 4821850000
+          "total_assets": 8113960000.0,
+          "total_liabilities": 1425691000.0,
+          "total_shareholders_equity": 6590457000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 6437817000.0,
+          "cash_primary": 1615967000.0,
+          "marketable_securities_current": 4821850000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.palantir.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.32,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Palantir Technologies Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Palantir Technologies Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 1.82,
-      "take_or_pay_commitments_usd_b": 0.55,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $1.82B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Palantir Technologies Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.788315+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "symbol": "BSX",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
-  "last_updated": "2026-08-28T02:55:54.173089+00:00",
+  "last_updated": "2026-08-28T03:13:30.587177+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
       "data": {
         "shares_outstanding": 1486355179,
-        "revenue": 10646000000,
+        "revenue": 10646000000.0,
         "balance_sheet": {
-          "total_assets": 45216000000,
-          "total_liabilities": 45216000000,
-          "total_shareholders_equity": 24930000000,
-          "total_debt": 10915000000,
-          "short_term_debt": 1709000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 539000000,
-          "cash_primary": 539000000,
-          "marketable_securities_current": 0
+          "total_assets": 45216000000.0,
+          "total_liabilities": 45216000000.0,
+          "total_shareholders_equity": 24930000000.0,
+          "total_debt": 10915000000.0,
+          "short_term_debt": 1709000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 539000000.0,
+          "cash_primary": 539000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
       "data": {
         "shares_outstanding": 1483885456,
-        "revenue": 5203000000,
+        "revenue": 5203000000.0,
         "balance_sheet": {
-          "total_assets": 44351000000,
-          "total_liabilities": 44351000000,
-          "total_shareholders_equity": 25864000000,
-          "total_debt": 10988000000,
-          "short_term_debt": 41000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1453000000,
-          "cash_primary": 1453000000,
-          "marketable_securities_current": 0
+          "total_assets": 44351000000.0,
+          "total_liabilities": 44351000000.0,
+          "total_shareholders_equity": 25864000000.0,
+          "total_debt": 10988000000.0,
+          "short_term_debt": 41000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1453000000.0,
+          "cash_primary": 1453000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
       "data": {
         "shares_outstanding": 1482442039,
-        "revenue": 20074000000,
+        "revenue": 20074000000.0,
         "balance_sheet": {
-          "total_assets": 43673000000,
-          "total_liabilities": 43673000000,
-          "total_shareholders_equity": 24233000000,
-          "total_debt": 11137000000,
-          "short_term_debt": 299000000,
-          "long_term_debt": 122000000,
-          "cash_and_cash_equivalents": 1965000000,
-          "cash_primary": 1965000000,
-          "marketable_securities_current": 0
+          "total_assets": 43673000000.0,
+          "total_liabilities": 43673000000.0,
+          "total_shareholders_equity": 24233000000.0,
+          "total_debt": 11137000000.0,
+          "short_term_debt": 299000000.0,
+          "long_term_debt": 122000000.0,
+          "cash_and_cash_equivalents": 1965000000.0,
+          "cash_primary": 1965000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
       "data": {
         "shares_outstanding": 1481751634,
-        "revenue": 14788000000,
+        "revenue": 14788000000.0,
         "balance_sheet": {
-          "total_assets": 42707000000,
-          "total_liabilities": 42707000000,
-          "total_shareholders_equity": 23394000000,
-          "total_debt": 11117000000,
-          "short_term_debt": 483000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1275000000,
-          "cash_primary": 1275000000,
-          "marketable_securities_current": 0
+          "total_assets": 42707000000.0,
+          "total_liabilities": 42707000000.0,
+          "total_shareholders_equity": 23394000000.0,
+          "total_debt": 11117000000.0,
+          "short_term_debt": 483000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1275000000.0,
+          "cash_primary": 1275000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "name": "Boston Scientific Corporation",
-  "investor_relations_url": "https://investors.bostonscientific.com/",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 6.93,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.31,
-      "pbo_gross_usd_b": 4.42,
-      "plan_assets_usd_b": 4.11,
-      "annual_cash_contribution_usd_b": 0.13,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.8,
-      "narrative": "Boston Scientific Corporation sponsors defined benefit pension plans with $4.42B in gross PBO against $4.11B in assets ($-0.31B net gap) and $0.80B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 5.02,
-      "take_or_pay_commitments_usd_b": 1.51,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $5.02B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Boston Scientific Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "investor_relations_url": "https://investors.bostonscientific.com/"
 }

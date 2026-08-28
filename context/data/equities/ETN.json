@@ -1,7 +1,7 @@
 {
   "symbol": "ETN",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
-  "last_updated": "2026-08-28T02:55:51.098171+00:00",
+  "last_updated": "2026-08-28T03:13:30.650177+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
       "data": {
         "shares_outstanding": 388400000,
-        "revenue": 15982000000,
+        "revenue": 15982000000.0,
         "balance_sheet": {
-          "total_assets": 56181000000,
-          "total_liabilities": 56181000000,
-          "total_shareholders_equity": 20254000000,
-          "total_debt": 18509000000,
-          "short_term_debt": 2091000000,
-          "long_term_debt": 18520000000,
-          "cash_and_cash_equivalents": 695000000,
-          "cash_primary": 483000000,
-          "marketable_securities_current": 212000000
+          "total_assets": 56181000000.0,
+          "total_liabilities": 56181000000.0,
+          "total_shareholders_equity": 20254000000.0,
+          "total_debt": 18509000000.0,
+          "short_term_debt": 2091000000.0,
+          "long_term_debt": 18520000000.0,
+          "cash_and_cash_equivalents": 695000000.0,
+          "cash_primary": 483000000.0,
+          "marketable_securities_current": 212000000.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
       "data": {
         "shares_outstanding": 388300000,
-        "revenue": 7451000000,
+        "revenue": 7451000000.0,
         "balance_sheet": {
-          "total_assets": 55085000000,
-          "total_liabilities": 55085000000,
-          "total_shareholders_equity": 19721000000,
-          "total_debt": 18535000000,
-          "short_term_debt": 2510000000,
-          "long_term_debt": 18619000000,
-          "cash_and_cash_equivalents": 751000000,
-          "cash_primary": 565000000,
-          "marketable_securities_current": 186000000
+          "total_assets": 55085000000.0,
+          "total_liabilities": 55085000000.0,
+          "total_shareholders_equity": 19721000000.0,
+          "total_debt": 18535000000.0,
+          "short_term_debt": 2510000000.0,
+          "long_term_debt": 18619000000.0,
+          "cash_and_cash_equivalents": 751000000.0,
+          "cash_primary": 565000000.0,
+          "marketable_securities_current": 186000000.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
       "data": {
         "shares_outstanding": 388400000,
-        "revenue": 27448000000,
+        "revenue": 27448000000.0,
         "balance_sheet": {
-          "total_assets": 41251000000,
-          "total_liabilities": 41251000000,
-          "total_shareholders_equity": 19425000000,
-          "total_debt": 8758000000,
-          "short_term_debt": 1000000,
-          "long_term_debt": 9894000000,
-          "cash_and_cash_equivalents": 803000000,
-          "cash_primary": 622000000,
-          "marketable_securities_current": 181000000
+          "total_assets": 41251000000.0,
+          "total_liabilities": 41251000000.0,
+          "total_shareholders_equity": 19425000000.0,
+          "total_debt": 8758000000.0,
+          "short_term_debt": 1000000.0,
+          "long_term_debt": 9894000000.0,
+          "cash_and_cash_equivalents": 803000000.0,
+          "cash_primary": 622000000.0,
+          "marketable_securities_current": 181000000.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
       "data": {
         "shares_outstanding": 388400000,
-        "revenue": 20393000000,
+        "revenue": 20393000000.0,
         "balance_sheet": {
-          "total_assets": 40650000000,
-          "total_liabilities": 40650000000,
-          "total_shareholders_equity": 18843000000,
-          "total_debt": 8756000000,
-          "short_term_debt": 761000000,
-          "long_term_debt": 9892000000,
-          "cash_and_cash_equivalents": 565000000,
-          "cash_primary": 328000000,
-          "marketable_securities_current": 237000000
+          "total_assets": 40650000000.0,
+          "total_liabilities": 40650000000.0,
+          "total_shareholders_equity": 18843000000.0,
+          "total_debt": 8756000000.0,
+          "short_term_debt": 761000000.0,
+          "long_term_debt": 9892000000.0,
+          "cash_and_cash_equivalents": 565000000.0,
+          "cash_primary": 328000000.0,
+          "marketable_securities_current": 237000000.0
         }
       }
     }
   ],
   "name": "Eaton Corporation plc",
-  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 9.18,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.42,
-      "pbo_gross_usd_b": 6.04,
-      "plan_assets_usd_b": 5.62,
-      "annual_cash_contribution_usd_b": 0.18,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.1,
-      "narrative": "Eaton Corporation plc sponsors defined benefit pension plans with $6.04B in gross PBO against $5.62B in assets ($-0.42B net gap) and $1.10B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 6.86,
-      "take_or_pay_commitments_usd_b": 2.06,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $6.86B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Eaton Corporation plc manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html"
 }

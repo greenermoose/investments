@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 218153440,
-        "revenue": 16624000,
+        "revenue": 16624000.0,
         "balance_sheet": {
-          "total_assets": 799619000,
-          "total_liabilities": 587630000,
-          "total_shareholders_equity": 209945000,
-          "total_debt": 532824000,
-          "short_term_debt": 10593000,
-          "long_term_debt": 520994000,
-          "cash_and_cash_equivalents": 475781000,
-          "cash_primary": 33741000,
-          "marketable_securities_current": 442040000
+          "total_assets": 799619000.0,
+          "total_liabilities": 587630000.0,
+          "total_shareholders_equity": 209945000.0,
+          "total_debt": 532824000.0,
+          "short_term_debt": 10593000.0,
+          "long_term_debt": 520994000.0,
+          "cash_and_cash_equivalents": 475781000.0,
+          "cash_primary": 33741000.0,
+          "marketable_securities_current": 442040000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 217224442,
-        "revenue": 7600000,
+        "revenue": 7600000.0,
         "balance_sheet": {
-          "total_assets": 833893000,
-          "total_liabilities": 591163000,
-          "total_shareholders_equity": 240672000,
-          "total_debt": 532884000,
-          "short_term_debt": 9436000,
-          "long_term_debt": 520160000,
-          "cash_and_cash_equivalents": 528736000,
-          "cash_primary": 88751000,
-          "marketable_securities_current": 439985000
+          "total_assets": 833893000.0,
+          "total_liabilities": 591163000.0,
+          "total_shareholders_equity": 240672000.0,
+          "total_debt": 532884000.0,
+          "short_term_debt": 9436000.0,
+          "long_term_debt": 520160000.0,
+          "cash_and_cash_equivalents": 528736000.0,
+          "cash_primary": 88751000.0,
+          "marketable_securities_current": 439985000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 215816004,
-        "revenue": 31821000,
+        "revenue": 31821000.0,
         "balance_sheet": {
-          "total_assets": 878975000,
-          "total_liabilities": 604964000,
-          "total_shareholders_equity": 271214000,
-          "total_debt": 532960000,
-          "short_term_debt": 9865000,
-          "long_term_debt": 519271000,
-          "cash_and_cash_equivalents": 512040000,
-          "cash_primary": 106014000,
-          "marketable_securities_current": 406026000
+          "total_assets": 878975000.0,
+          "total_liabilities": 604964000.0,
+          "total_shareholders_equity": 271214000.0,
+          "total_debt": 532960000.0,
+          "short_term_debt": 9865000.0,
+          "long_term_debt": 519271000.0,
+          "cash_and_cash_equivalents": 512040000.0,
+          "cash_primary": 106014000.0,
+          "marketable_securities_current": 406026000.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 196600013,
-        "revenue": 20556000,
+        "revenue": 20556000.0,
         "balance_sheet": {
-          "total_assets": 913709000,
-          "total_liabilities": 616606000,
-          "total_shareholders_equity": 294256000,
-          "total_debt": 533091000,
-          "short_term_debt": 10151000,
-          "long_term_debt": 518348000,
-          "cash_and_cash_equivalents": 558818000,
-          "cash_primary": 335502000,
-          "marketable_securities_current": 223316000
+          "total_assets": 913709000.0,
+          "total_liabilities": 616606000.0,
+          "total_shareholders_equity": 294256000.0,
+          "total_debt": 533091000.0,
+          "short_term_debt": 10151000.0,
+          "long_term_debt": 518348000.0,
+          "cash_and_cash_equivalents": 558818000.0,
+          "cash_primary": 335502000.0,
+          "marketable_securities_current": 223316000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.enovix.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.650177+00:00"
 }

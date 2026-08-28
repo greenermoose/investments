@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1048286",
       "data": {
         "shares_outstanding": 263688623,
-        "revenue": 13725000000,
+        "revenue": 13725000000.0,
         "balance_sheet": {
-          "total_assets": 28085000000,
-          "total_liabilities": 28085000000,
-          "total_shareholders_equity": -4525000000,
-          "total_debt": 16915000000,
-          "short_term_debt": 0,
-          "long_term_debt": 23000000,
-          "cash_and_cash_equivalents": 462000000,
-          "cash_primary": 462000000,
-          "marketable_securities_current": 0
+          "total_assets": 28085000000.0,
+          "total_liabilities": 28085000000.0,
+          "total_shareholders_equity": -4525000000.0,
+          "total_debt": 16915000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 23000000.0,
+          "cash_and_cash_equivalents": 462000000.0,
+          "cash_primary": 462000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1048286",
       "data": {
         "shares_outstanding": 264984554,
-        "revenue": 6654000000,
+        "revenue": 6654000000.0,
         "balance_sheet": {
-          "total_assets": 27857000000,
-          "total_liabilities": 27857000000,
-          "total_shareholders_equity": -4092000000,
-          "total_debt": 16530000000,
-          "short_term_debt": 0,
-          "long_term_debt": 23000000,
-          "cash_and_cash_equivalents": 454000000,
-          "cash_primary": 454000000,
-          "marketable_securities_current": 0
+          "total_assets": 27857000000.0,
+          "total_liabilities": 27857000000.0,
+          "total_shareholders_equity": -4092000000.0,
+          "total_debt": 16530000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 23000000.0,
+          "cash_and_cash_equivalents": 454000000.0,
+          "cash_primary": 454000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1048286",
       "data": {
         "shares_outstanding": 268351795,
-        "revenue": 26186000000,
+        "revenue": 26186000000.0,
         "balance_sheet": {
-          "total_assets": 27540000000,
-          "total_liabilities": 27540000000,
-          "total_shareholders_equity": -3771000000,
-          "total_debt": 16204000000,
-          "short_term_debt": 11000000,
-          "long_term_debt": 23000000,
-          "cash_and_cash_equivalents": 358000000,
-          "cash_primary": 358000000,
-          "marketable_securities_current": 0
+          "total_assets": 27540000000.0,
+          "total_liabilities": 27540000000.0,
+          "total_shareholders_equity": -3771000000.0,
+          "total_debt": 16204000000.0,
+          "short_term_debt": 11000000.0,
+          "long_term_debt": 23000000.0,
+          "cash_and_cash_equivalents": 358000000.0,
+          "cash_primary": 358000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1048286",
       "data": {
         "shares_outstanding": 271457839,
-        "revenue": 19496000000,
+        "revenue": 19496000000.0,
         "balance_sheet": {
-          "total_assets": 27833000000,
-          "total_liabilities": 27833000000,
-          "total_shareholders_equity": -3119000000,
-          "total_debt": 15999000000,
-          "short_term_debt": 0,
-          "long_term_debt": 23000000,
-          "cash_and_cash_equivalents": 678000000,
-          "cash_primary": 678000000,
-          "marketable_securities_current": 0
+          "total_assets": 27833000000.0,
+          "total_liabilities": 27833000000.0,
+          "total_shareholders_equity": -3119000000.0,
+          "total_debt": 15999000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 23000000.0,
+          "cash_and_cash_equivalents": 678000000.0,
+          "cash_primary": 678000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://marriott.gcs-web.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.69,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.16,
-      "pbo_gross_usd_b": 3.14,
-      "plan_assets_usd_b": 2.98,
-      "annual_cash_contribution_usd_b": 0.08,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.52,
-      "narrative": "Marriott International, Inc. maintains legacy defined benefit plans ($3.14B PBO vs $2.98B assets; $-0.16B gap) and $0.52B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.71,
-      "take_or_pay_commitments_usd_b": 1.18,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $4.71B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Marriott International, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.719839+00:00"
 }

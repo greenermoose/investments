@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1419612",
       "data": {
         "shares_outstanding": 60818202,
-        "revenue": 656746000,
+        "revenue": 656746000.0,
         "balance_sheet": {
-          "total_assets": 2303530000,
-          "total_liabilities": 2303530000,
-          "total_shareholders_equity": 412085000,
-          "total_debt": 19171000,
-          "short_term_debt": 0,
-          "long_term_debt": 19171000,
-          "cash_and_cash_equivalents": 546942000,
-          "cash_primary": 527257000,
-          "marketable_securities_current": 19685000
+          "total_assets": 2303530000.0,
+          "total_liabilities": 2303530000.0,
+          "total_shareholders_equity": 412085000.0,
+          "total_debt": 19171000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 19171000.0,
+          "cash_and_cash_equivalents": 546942000.0,
+          "cash_primary": 527257000.0,
+          "marketable_securities_current": 19685000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1419612",
       "data": {
         "shares_outstanding": 60366291,
-        "revenue": 310501000,
+        "revenue": 310501000.0,
         "balance_sheet": {
-          "total_assets": 2260508000,
-          "total_liabilities": 2260508000,
-          "total_shareholders_equity": 410720000,
-          "total_debt": 18323000,
-          "short_term_debt": 0,
-          "long_term_debt": 18323000,
-          "cash_and_cash_equivalents": 541650000,
-          "cash_primary": 512381000,
-          "marketable_securities_current": 29269000
+          "total_assets": 2260508000.0,
+          "total_liabilities": 2260508000.0,
+          "total_shareholders_equity": 410720000.0,
+          "total_debt": 18323000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 18323000.0,
+          "cash_and_cash_equivalents": 541650000.0,
+          "cash_primary": 512381000.0,
+          "marketable_securities_current": 29269000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1419612",
       "data": {
         "shares_outstanding": 59800051,
-        "revenue": 1184444000,
+        "revenue": 1184444000.0,
         "balance_sheet": {
-          "total_assets": 2182194000,
-          "total_liabilities": 2182194000,
-          "total_shareholders_equity": 427464000,
-          "total_debt": 331561000,
-          "short_term_debt": 0,
-          "long_term_debt": 18558000,
-          "cash_and_cash_equivalents": 493172000,
-          "cash_primary": 455075000,
-          "marketable_securities_current": 38097000
+          "total_assets": 2182194000.0,
+          "total_liabilities": 2182194000.0,
+          "total_shareholders_equity": 427464000.0,
+          "total_debt": 331561000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 18558000.0,
+          "cash_and_cash_equivalents": 493172000.0,
+          "cash_primary": 455075000.0,
+          "marketable_securities_current": 38097000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1419612",
       "data": {
         "shares_outstanding": 59374793,
-        "revenue": 849086000,
+        "revenue": 849086000.0,
         "balance_sheet": {
-          "total_assets": 2232310000,
-          "total_liabilities": 2232310000,
-          "total_shareholders_equity": 479760000,
-          "total_debt": 40959000,
-          "short_term_debt": 0,
-          "long_term_debt": 40959000,
-          "cash_and_cash_equivalents": 498579000,
-          "cash_primary": 439515000,
-          "marketable_securities_current": 59064000
+          "total_assets": 2232310000.0,
+          "total_liabilities": 2232310000.0,
+          "total_shareholders_equity": 479760000.0,
+          "total_debt": 40959000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 40959000.0,
+          "cash_and_cash_equivalents": 498579000.0,
+          "cash_primary": 439515000.0,
+          "marketable_securities_current": 59064000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.solaredge.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 1.15,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.03,
-      "pbo_gross_usd_b": 0.3,
-      "plan_assets_usd_b": 0.27,
-      "annual_cash_contribution_usd_b": 0.01,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.06,
-      "narrative": "SolarEdge Technologies, Inc. sponsors utility and industrial defined benefit plans ($0.30B PBO vs $0.27B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.53,
-      "estimated_unreserved_exposure_usd_b": 0.13,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $0.53B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.59,
-      "take_or_pay_commitments_usd_b": 0.35,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $0.59B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "SolarEdge Technologies, Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.800556+00:00"
 }

@@ -10,11 +10,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
       "data": {
         "shares_outstanding": 597586000,
-        "revenue": 6056847000,
+        "revenue": 6056847000.0,
         "balance_sheet": {
-          "total_assets": 39986081000,
-          "total_liabilities": 18305053000,
-          "total_shareholders_equity": 21715338000
+          "total_assets": 39986081000.0,
+          "total_liabilities": 18305053000.0,
+          "total_shareholders_equity": 21715338000.0
         }
       }
     },
@@ -26,11 +26,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
       "data": {
         "shares_outstanding": 612243000,
-        "revenue": 24193683000,
+        "revenue": 24193683000.0,
         "balance_sheet": {
-          "total_assets": 39549887000,
-          "total_liabilities": 17380005000,
-          "total_shareholders_equity": 22204278000
+          "total_assets": 39549887000.0,
+          "total_liabilities": 17380005000.0,
+          "total_shareholders_equity": 22204278000.0
         }
       }
     },
@@ -42,11 +42,11 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
       "data": {
         "shares_outstanding": 614117000,
-        "revenue": 17941205000,
+        "revenue": 17941205000.0,
         "balance_sheet": {
-          "total_assets": 39182823000,
-          "total_liabilities": 16709615000,
-          "total_shareholders_equity": 22507398000
+          "total_assets": 39182823000.0,
+          "total_liabilities": 16709615000.0,
+          "total_shareholders_equity": 22507398000.0
         }
       }
     },
@@ -58,15 +58,15 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=0001512673",
       "data": {
         "shares_outstanding": 616108000,
-        "revenue": 11826253000,
+        "revenue": 11826253000.0,
         "balance_sheet": {
-          "total_assets": 36858391000,
-          "total_liabilities": 14735499000,
-          "total_shareholders_equity": 22157136000
+          "total_assets": 36858391000.0,
+          "total_liabilities": 14735499000.0,
+          "total_shareholders_equity": 22157136000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.block.xyz/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.871241+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "symbol": "APH",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=820313",
-  "last_updated": "2026-08-28T02:55:51.450657+00:00",
+  "last_updated": "2026-08-28T03:13:30.560492+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=820313",
       "data": {
         "shares_outstanding": 1230234445,
-        "revenue": 16378200000,
+        "revenue": 16378200000.0,
         "balance_sheet": {
-          "total_assets": 44806600000,
-          "total_liabilities": 29184500000,
-          "total_shareholders_equity": 15491600000,
-          "total_debt": 17177000000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 5419100000,
-          "cash_primary": 4729400000,
-          "marketable_securities_current": 689700000
+          "total_assets": 44806600000.0,
+          "total_liabilities": 29184500000.0,
+          "total_shareholders_equity": 15491600000.0,
+          "total_debt": 17177000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 5419100000.0,
+          "cash_primary": 4729400000.0,
+          "marketable_securities_current": 689700000.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=820313",
       "data": {
         "shares_outstanding": 1229214930,
-        "revenue": 7620100000,
+        "revenue": 7620100000.0,
         "balance_sheet": {
-          "total_assets": 42133800000,
-          "total_liabilities": 28042300000,
-          "total_shareholders_equity": 13976800000,
-          "total_debt": 16639300000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 4583100000,
-          "cash_primary": 4128000000,
-          "marketable_securities_current": 455100000
+          "total_assets": 42133800000.0,
+          "total_liabilities": 28042300000.0,
+          "total_shareholders_equity": 13976800000.0,
+          "total_debt": 16639300000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 4583100000.0,
+          "cash_primary": 4128000000.0,
+          "marketable_securities_current": 455100000.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=820313",
       "data": {
         "shares_outstanding": 1224055508,
-        "revenue": 23094700000,
+        "revenue": 23094700000.0,
         "balance_sheet": {
-          "total_assets": 36236900000,
-          "total_liabilities": 22727200000,
-          "total_shareholders_equity": 13413100000,
-          "total_debt": 14564800000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 11434200000,
-          "cash_primary": 11130600000,
-          "marketable_securities_current": 303600000
+          "total_assets": 36236900000.0,
+          "total_liabilities": 22727200000.0,
+          "total_shareholders_equity": 13413100000.0,
+          "total_debt": 14564800000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 11434200000.0,
+          "cash_primary": 11130600000.0,
+          "marketable_securities_current": 303600000.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=820313",
       "data": {
         "shares_outstanding": 1220921111,
-        "revenue": 16655700000,
+        "revenue": 16655700000.0,
         "balance_sheet": {
-          "total_assets": 27143000000,
-          "total_liabilities": 14536100000,
-          "total_shareholders_equity": 12520300000,
-          "total_debt": 7129500000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3888100000,
-          "cash_primary": 3799300000,
-          "marketable_securities_current": 88800000
+          "total_assets": 27143000000.0,
+          "total_liabilities": 14536100000.0,
+          "total_shareholders_equity": 12520300000.0,
+          "total_debt": 7129500000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3888100000.0,
+          "cash_primary": 3799300000.0,
+          "marketable_securities_current": 88800000.0
         }
       }
     }
   ],
   "name": "Amphenol Corporation",
-  "investor_relations_url": "https://investors.amphenol.com/",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 8.9,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Amphenol Corporation operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Amphenol Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 8.4,
-      "take_or_pay_commitments_usd_b": 2.52,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $8.40B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Amphenol Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "investor_relations_url": "https://investors.amphenol.com/"
 }

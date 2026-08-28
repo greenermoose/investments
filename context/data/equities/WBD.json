@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
       "data": {
         "shares_outstanding": 2507136702,
-        "revenue": 17610000000,
+        "revenue": 17610000000.0,
         "balance_sheet": {
-          "total_assets": 97248000000,
-          "total_liabilities": 63253000000,
-          "total_shareholders_equity": 32838000000,
-          "total_debt": 30530000000,
-          "short_term_debt": 1493000000,
-          "long_term_debt": 32023000000,
-          "cash_and_cash_equivalents": 3369000000,
-          "cash_primary": 3369000000,
-          "marketable_securities_current": 0
+          "total_assets": 97248000000.0,
+          "total_liabilities": 63253000000.0,
+          "total_shareholders_equity": 32838000000.0,
+          "total_debt": 30530000000.0,
+          "short_term_debt": 1493000000.0,
+          "long_term_debt": 32023000000.0,
+          "cash_and_cash_equivalents": 3369000000.0,
+          "cash_primary": 3369000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
       "data": {
         "shares_outstanding": 2479929515,
-        "revenue": 8893000000,
+        "revenue": 8893000000.0,
         "balance_sheet": {
-          "total_assets": 97837000000,
-          "total_liabilities": 64130000000,
-          "total_shareholders_equity": 32578000000,
-          "total_debt": 30973000000,
-          "short_term_debt": 1493000000,
-          "long_term_debt": 32466000000,
-          "cash_and_cash_equivalents": 3264000000,
-          "cash_primary": 3264000000,
-          "marketable_securities_current": 0
+          "total_assets": 97837000000.0,
+          "total_liabilities": 64130000000.0,
+          "total_shareholders_equity": 32578000000.0,
+          "total_debt": 30973000000.0,
+          "short_term_debt": 1493000000.0,
+          "long_term_debt": 32466000000.0,
+          "cash_and_cash_equivalents": 3264000000.0,
+          "cash_primary": 3264000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
       "data": {
         "shares_outstanding": 2477974509,
-        "revenue": 37296000000,
+        "revenue": 37296000000.0,
         "balance_sheet": {
-          "total_assets": 100085000000,
-          "total_liabilities": 62919000000,
-          "total_shareholders_equity": 35919000000,
-          "total_debt": 32428000000,
-          "short_term_debt": 139000000,
-          "long_term_debt": 32567000000,
-          "cash_and_cash_equivalents": 4566000000,
-          "cash_primary": 4566000000,
-          "marketable_securities_current": 0
+          "total_assets": 100085000000.0,
+          "total_liabilities": 62919000000.0,
+          "total_shareholders_equity": 35919000000.0,
+          "total_debt": 32428000000.0,
+          "short_term_debt": 139000000.0,
+          "long_term_debt": 32567000000.0,
+          "cash_and_cash_equivalents": 4566000000.0,
+          "cash_primary": 4566000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1437107",
       "data": {
         "shares_outstanding": 2475772282,
-        "revenue": 27836000000,
+        "revenue": 27836000000.0,
         "balance_sheet": {
-          "total_assets": 100519000000,
-          "total_liabilities": 63214000000,
-          "total_shareholders_equity": 36018000000,
-          "total_debt": 33382000000,
-          "short_term_debt": 139000000,
-          "long_term_debt": 33521000000,
-          "cash_and_cash_equivalents": 4294000000,
-          "cash_primary": 4294000000,
-          "marketable_securities_current": 0
+          "total_assets": 100519000000.0,
+          "total_liabilities": 63214000000.0,
+          "total_shareholders_equity": 36018000000.0,
+          "total_debt": 33382000000.0,
+          "short_term_debt": 139000000.0,
+          "long_term_debt": 33521000000.0,
+          "cash_and_cash_equivalents": 4294000000.0,
+          "cash_primary": 4294000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.wbd.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 13.55,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Warner Bros. Discovery, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Warner Bros. Discovery, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 13.05,
-      "take_or_pay_commitments_usd_b": 3.92,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $13.05B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Warner Bros. Discovery, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.860435+00:00"
 }

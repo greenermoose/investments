@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
       "data": {
         "shares_outstanding": 774878436,
-        "revenue": 12884000000,
+        "revenue": 12884000000.0,
         "balance_sheet": {
-          "total_assets": 29682000000,
-          "total_liabilities": 40465000000,
-          "total_shareholders_equity": -10783000000,
-          "total_debt": 20300000000,
-          "short_term_debt": 2000000000,
-          "long_term_debt": 18180000000,
-          "cash_and_cash_equivalents": 17214000000,
-          "cash_primary": 17214000000,
-          "marketable_securities_current": 0
+          "total_assets": 29682000000.0,
+          "total_liabilities": 40465000000.0,
+          "total_shareholders_equity": -10783000000.0,
+          "total_debt": 20300000000.0,
+          "short_term_debt": 2000000000.0,
+          "long_term_debt": 18180000000.0,
+          "cash_and_cash_equivalents": 17214000000.0,
+          "cash_primary": 17214000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
       "data": {
         "shares_outstanding": 31673346,
-        "revenue": 5532000000,
+        "revenue": 5532000000.0,
         "balance_sheet": {
-          "total_assets": 27720000000,
-          "total_liabilities": 36444000000,
-          "total_shareholders_equity": -8724000000,
-          "total_debt": 18600000000,
-          "short_term_debt": 3015000000,
-          "long_term_debt": 15398000000,
-          "cash_and_cash_equivalents": 16024000000,
-          "cash_primary": 16024000000,
-          "marketable_securities_current": 0
+          "total_assets": 27720000000.0,
+          "total_liabilities": 36444000000.0,
+          "total_shareholders_equity": -8724000000.0,
+          "total_debt": 18600000000.0,
+          "short_term_debt": 3015000000.0,
+          "long_term_debt": 15398000000.0,
+          "cash_and_cash_equivalents": 16024000000.0,
+          "cash_primary": 16024000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
       "data": {
         "shares_outstanding": 32233815,
-        "revenue": 26917000000,
+        "revenue": 26917000000.0,
         "balance_sheet": {
-          "total_assets": 29264000000,
-          "total_liabilities": 34842000000,
-          "total_shareholders_equity": -5578000000,
-          "total_debt": 18882000000,
-          "short_term_debt": 1880000000,
-          "long_term_debt": 16856000000,
-          "cash_and_cash_equivalents": 17203000000,
-          "cash_primary": 17203000000,
-          "marketable_securities_current": 0
+          "total_assets": 29264000000.0,
+          "total_liabilities": 34842000000.0,
+          "total_shareholders_equity": -5578000000.0,
+          "total_debt": 18882000000.0,
+          "short_term_debt": 1880000000.0,
+          "long_term_debt": 16856000000.0,
+          "cash_and_cash_equivalents": 17203000000.0,
+          "cash_primary": 17203000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1075531",
       "data": {
         "shares_outstanding": 32409885,
-        "revenue": 20568000000,
+        "revenue": 20568000000.0,
         "balance_sheet": {
-          "total_assets": 28752000000,
-          "total_liabilities": 33488000000,
-          "total_shareholders_equity": -4736000000,
-          "total_debt": 17128000000,
-          "short_term_debt": 999000000,
-          "long_term_debt": 15997000000,
-          "cash_and_cash_equivalents": 16509000000,
-          "cash_primary": 16509000000,
-          "marketable_securities_current": 0
+          "total_assets": 28752000000.0,
+          "total_liabilities": 33488000000.0,
+          "total_shareholders_equity": -4736000000.0,
+          "total_debt": 17128000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 15997000000.0,
+          "cash_and_cash_equivalents": 16509000000.0,
+          "cash_primary": 16509000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.bookingholdings.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.85,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.16,
-      "pbo_gross_usd_b": 3.23,
-      "plan_assets_usd_b": 3.07,
-      "annual_cash_contribution_usd_b": 0.08,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.54,
-      "narrative": "Booking Holdings Inc. maintains legacy defined benefit plans ($3.23B PBO vs $3.07B assets; $-0.16B gap) and $0.54B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.85,
-      "take_or_pay_commitments_usd_b": 1.21,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $4.85B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Booking Holdings Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.580335+00:00"
 }

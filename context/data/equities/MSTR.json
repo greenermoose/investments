@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1050446",
       "data": {
         "shares_outstanding": 343275000,
-        "revenue": 246668000,
+        "revenue": 246668000.0,
         "balance_sheet": {
-          "total_assets": 52562592000,
-          "total_liabilities": 7235609000,
-          "total_shareholders_equity": 30886088000,
-          "total_debt": 6709928000,
-          "short_term_debt": 39814000,
-          "long_term_debt": 6670114000,
-          "cash_and_cash_equivalents": 2447982000,
-          "cash_primary": 1711837000,
-          "marketable_securities_current": 736145000
+          "total_assets": 52562592000.0,
+          "total_liabilities": 7235609000.0,
+          "total_shareholders_equity": 30886088000.0,
+          "total_debt": 6709928000.0,
+          "short_term_debt": 39814000.0,
+          "long_term_debt": 6670114000.0,
+          "cash_and_cash_equivalents": 2447982000.0,
+          "cash_primary": 1711837000.0,
+          "marketable_securities_current": 736145000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1050446",
       "data": {
         "shares_outstanding": 333913000,
-        "revenue": 124300000,
+        "revenue": 124300000.0,
         "balance_sheet": {
-          "total_assets": 54268750000,
-          "total_liabilities": 8632465000,
-          "total_shareholders_equity": 36651357000,
-          "total_debt": 8196524000,
-          "short_term_debt": 31402000,
-          "long_term_debt": 8165122000,
-          "cash_and_cash_equivalents": 2207219000,
-          "cash_primary": 2207219000,
-          "marketable_securities_current": 0
+          "total_assets": 54268750000.0,
+          "total_liabilities": 8632465000.0,
+          "total_shareholders_equity": 36651357000.0,
+          "total_debt": 8196524000.0,
+          "short_term_debt": 31402000.0,
+          "long_term_debt": 8165122000.0,
+          "cash_and_cash_equivalents": 2207219000.0,
+          "cash_primary": 2207219000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1050446",
       "data": {
         "shares_outstanding": 277660000,
-        "revenue": 477233000,
+        "revenue": 477233000.0,
         "balance_sheet": {
-          "total_assets": 61641082000,
-          "total_liabilities": 10598110000,
-          "total_shareholders_equity": 44123458000,
-          "total_debt": 8190155000,
-          "short_term_debt": 31313000,
-          "long_term_debt": 8158842000,
-          "cash_and_cash_equivalents": 2301470000,
-          "cash_primary": 2301470000,
-          "marketable_securities_current": 0
+          "total_assets": 61641082000.0,
+          "total_liabilities": 10598110000.0,
+          "total_shareholders_equity": 44123458000.0,
+          "total_debt": 8190155000.0,
+          "short_term_debt": 31313000.0,
+          "long_term_debt": 8158842000.0,
+          "cash_and_cash_equivalents": 2301470000.0,
+          "cash_primary": 2301470000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1050446",
       "data": {
         "shares_outstanding": 272143000,
-        "revenue": 354245000,
+        "revenue": 354245000.0,
         "balance_sheet": {
-          "total_assets": 73619038000,
-          "total_liabilities": 15501990000,
-          "total_shareholders_equity": 52330718000,
-          "total_debt": 8173903000,
-          "short_term_debt": 316000,
-          "long_term_debt": 8173587000,
-          "cash_and_cash_equivalents": 54285000,
-          "cash_primary": 54285000,
-          "marketable_securities_current": 0
+          "total_assets": 73619038000.0,
+          "total_liabilities": 15501990000.0,
+          "total_shareholders_equity": 52330718000.0,
+          "total_debt": 8173903000.0,
+          "short_term_debt": 316000.0,
+          "long_term_debt": 8173587000.0,
+          "cash_and_cash_equivalents": 54285000.0,
+          "cash_primary": 54285000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.microstrategy.com/investor-relations",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.67,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "MicroStrategy Incorporated operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "MicroStrategy Incorporated has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.17,
-      "take_or_pay_commitments_usd_b": 0.05,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $0.17B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "MicroStrategy Incorporated maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.744105+00:00"
 }

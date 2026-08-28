@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 978008110,
-        "revenue": 4890764000,
+        "revenue": 4890764000.0,
         "balance_sheet": {
-          "total_assets": 11382291000,
-          "total_liabilities": 11382291000,
-          "total_shareholders_equity": 9364148000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3419256000,
-          "cash_primary": 2192424000,
-          "marketable_securities_current": 1226832000
+          "total_assets": 11382291000.0,
+          "total_liabilities": 11382291000.0,
+          "total_shareholders_equity": 9364148000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3419256000.0,
+          "cash_primary": 2192424000.0,
+          "marketable_securities_current": 1226832000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 978270734,
-        "revenue": 2353291000,
+        "revenue": 2353291000.0,
         "balance_sheet": {
-          "total_assets": 10843533000,
-          "total_liabilities": 10843533000,
-          "total_shareholders_equity": 8727035000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2984993000,
-          "cash_primary": 2039700000,
-          "marketable_securities_current": 945293000
+          "total_assets": 10843533000.0,
+          "total_liabilities": 10843533000.0,
+          "total_shareholders_equity": 8727035000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2984993000.0,
+          "cash_primary": 2039700000.0,
+          "marketable_securities_current": 945293000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 977021216,
-        "revenue": 8294343000,
+        "revenue": 8294343000.0,
         "balance_sheet": {
-          "total_assets": 9988945000,
-          "total_liabilities": 9988945000,
-          "total_shareholders_equity": 8254108000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2765201000,
-          "cash_primary": 2088117000,
-          "marketable_securities_current": 677084000
+          "total_assets": 9988945000.0,
+          "total_liabilities": 9988945000.0,
+          "total_shareholders_equity": 8254108000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2765201000.0,
+          "cash_primary": 2088117000.0,
+          "marketable_securities_current": 677084000.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=865752",
       "data": {
         "shares_outstanding": 976428189,
-        "revenue": 6163290000,
+        "revenue": 6163290000.0,
         "balance_sheet": {
-          "total_assets": 9611273000,
-          "total_liabilities": 9611273000,
-          "total_shareholders_equity": 7745160000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2579330000,
-          "cash_primary": 2292939000,
-          "marketable_securities_current": 286391000
+          "total_assets": 9611273000.0,
+          "total_liabilities": 9611273000.0,
+          "total_shareholders_equity": 7745160000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2579330000.0,
+          "cash_primary": 2292939000.0,
+          "marketable_securities_current": 286391000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.monsterbevcorp.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.738095+00:00"
 }

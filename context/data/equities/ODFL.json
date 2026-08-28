@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=878927",
       "data": {
         "shares_outstanding": 207968283,
-        "revenue": 2888700000,
+        "revenue": 2888700000.0,
         "balance_sheet": {
-          "total_assets": 5735521000,
-          "total_liabilities": 1188169000,
-          "total_shareholders_equity": 4547352000,
-          "total_debt": 19997000,
-          "short_term_debt": 19997000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 283939000,
-          "cash_primary": 283939000,
-          "marketable_securities_current": 0
+          "total_assets": 5735521000.0,
+          "total_liabilities": 1188169000.0,
+          "total_shareholders_equity": 4547352000.0,
+          "total_debt": 19997000.0,
+          "short_term_debt": 19997000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 283939000.0,
+          "cash_primary": 283939000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=878927",
       "data": {
         "shares_outstanding": 208425619,
-        "revenue": 1334696000,
+        "revenue": 1334696000.0,
         "balance_sheet": {
-          "total_assets": 5656948000,
-          "total_liabilities": 1257226000,
-          "total_shareholders_equity": 4399722000,
-          "total_debt": 39996000,
-          "short_term_debt": 20000000,
-          "long_term_debt": 19996000,
-          "cash_and_cash_equivalents": 288082000,
-          "cash_primary": 288082000,
-          "marketable_securities_current": 0
+          "total_assets": 5656948000.0,
+          "total_liabilities": 1257226000.0,
+          "total_shareholders_equity": 4399722000.0,
+          "total_debt": 39996000.0,
+          "short_term_debt": 20000000.0,
+          "long_term_debt": 19996000.0,
+          "cash_and_cash_equivalents": 288082000.0,
+          "cash_primary": 288082000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=878927",
       "data": {
         "shares_outstanding": 209098439,
-        "revenue": 5496389000,
+        "revenue": 5496389000.0,
         "balance_sheet": {
-          "total_assets": 5470160000,
-          "total_liabilities": 1159103000,
-          "total_shareholders_equity": 4311057000,
-          "total_debt": 39995000,
-          "short_term_debt": 20000000,
-          "long_term_debt": 19995000,
-          "cash_and_cash_equivalents": 120091000,
-          "cash_primary": 120091000,
-          "marketable_securities_current": 0
+          "total_assets": 5470160000.0,
+          "total_liabilities": 1159103000.0,
+          "total_shareholders_equity": 4311057000.0,
+          "total_debt": 39995000.0,
+          "short_term_debt": 20000000.0,
+          "long_term_debt": 19995000.0,
+          "cash_and_cash_equivalents": 120091000.0,
+          "cash_primary": 120091000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=878927",
       "data": {
         "shares_outstanding": 210168137,
-        "revenue": 4189093000,
+        "revenue": 4189093000.0,
         "balance_sheet": {
-          "total_assets": 5516631000,
-          "total_liabilities": 1253435000,
-          "total_shareholders_equity": 4263196000,
-          "total_debt": 84993000,
-          "short_term_debt": 20000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 46592000,
-          "cash_primary": 46592000,
-          "marketable_securities_current": 0
+          "total_assets": 5516631000.0,
+          "total_liabilities": 1253435000.0,
+          "total_shareholders_equity": 4263196000.0,
+          "total_debt": 84993000.0,
+          "short_term_debt": 20000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 46592000.0,
+          "cash_primary": 46592000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.odfl.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.47,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.08,
-      "pbo_gross_usd_b": 1.21,
-      "plan_assets_usd_b": 1.13,
-      "annual_cash_contribution_usd_b": 0.04,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.22,
-      "narrative": "Old Dominion Freight Line, Inc. sponsors defined benefit pension plans with $1.21B in gross PBO against $1.13B in assets ($-0.08B net gap) and $0.22B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 1.37,
-      "take_or_pay_commitments_usd_b": 0.41,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $1.37B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Old Dominion Freight Line, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.771418+00:00"
 }

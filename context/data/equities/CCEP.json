@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 449086551,
-        "revenue": 20901000000,
+        "revenue": 22573080000.0,
         "balance_sheet": {
-          "total_assets": 29872000000,
-          "total_liabilities": 21569000000,
-          "total_shareholders_equity": 8303000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 529000000,
-          "cash_primary": 529000000,
-          "marketable_securities_current": 0
+          "total_assets": 32261760000.0,
+          "total_liabilities": 23294520000.0,
+          "total_shareholders_equity": 8967240000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 571320000.0,
+          "cash_primary": 571320000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 460947057,
-        "revenue": 10274000000,
+        "revenue": 11095920000.0,
         "balance_sheet": {
-          "total_assets": 31786000000,
-          "total_liabilities": 23281000000,
-          "total_shareholders_equity": 8505000000,
-          "total_debt": 12000000000,
-          "short_term_debt": 0,
-          "long_term_debt": 12000000000,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 34328880000.0,
+          "total_liabilities": 25143480000.0,
+          "total_shareholders_equity": 9185400000.0,
+          "total_debt": 12960000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12960000000.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 460947057,
-        "revenue": 20438000000,
+        "revenue": 22073040000.0,
         "balance_sheet": {
-          "total_assets": 31100000000,
-          "total_liabilities": 22115000000,
-          "total_shareholders_equity": 8985000000,
-          "total_debt": 11300000000,
-          "short_term_debt": 0,
-          "long_term_debt": 11300000000,
-          "cash_and_cash_equivalents": 611000000,
-          "cash_primary": 611000000,
-          "marketable_securities_current": 0
+          "total_assets": 33588000000.0,
+          "total_liabilities": 23884200000.0,
+          "total_shareholders_equity": 9703800000.0,
+          "total_debt": 12204000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12204000000.0,
+          "cash_and_cash_equivalents": 659880000.0,
+          "cash_primary": 659880000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 459200818,
-        "revenue": 9828000000,
+        "revenue": 10614240000.0,
         "balance_sheet": {
-          "total_assets": 32101000000,
-          "total_liabilities": 23092000000,
-          "total_shareholders_equity": 9009000000,
-          "total_debt": 12200000000,
-          "short_term_debt": 0,
-          "long_term_debt": 12200000000,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 34669080000.0,
+          "total_liabilities": 24939360000.0,
+          "total_shareholders_equity": 9729720000.0,
+          "total_debt": 13176000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 13176000000.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.cocacolaep.com/investors/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 12.96,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.37,
-      "pbo_gross_usd_b": 7.37,
-      "plan_assets_usd_b": 7.0,
-      "annual_cash_contribution_usd_b": 0.18,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 1.23,
-      "narrative": "Coca-Cola Europacific Partners PLC maintains legacy defined benefit plans ($7.37B PBO vs $7.00B assets; $-0.37B gap) and $1.23B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 11.06,
-      "take_or_pay_commitments_usd_b": 2.77,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $11.06B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Coca-Cola Europacific Partners PLC possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.591619+00:00"
 }

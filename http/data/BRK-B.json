@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1067983",
       "data": {
         "shares_outstanding": 2160000000,
-        "revenue": 195483000000,
+        "revenue": 195483000000.0,
         "balance_sheet": {
-          "total_assets": 1263071000000,
-          "total_liabilities": 512894000000,
-          "total_shareholders_equity": 747910000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 41360000000,
-          "cash_primary": 41360000000,
-          "marketable_securities_current": 0
+          "total_assets": 1263071000000.0,
+          "total_liabilities": 512894000000.0,
+          "total_shareholders_equity": 747910000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 41360000000.0,
+          "cash_primary": 41360000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1067983",
       "data": {
         "shares_outstanding": 2160000000,
-        "revenue": 93675000000,
+        "revenue": 93675000000.0,
         "balance_sheet": {
-          "total_assets": 1252271000000,
-          "total_liabilities": 522821000000,
-          "total_shareholders_equity": 727181000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 58810000000,
-          "cash_primary": 58810000000,
-          "marketable_securities_current": 0
+          "total_assets": 1252271000000.0,
+          "total_liabilities": 522821000000.0,
+          "total_shareholders_equity": 727181000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 58810000000.0,
+          "cash_primary": 58810000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1067983",
       "data": {
         "shares_outstanding": 2160000000,
-        "revenue": 371444000000,
+        "revenue": 371444000000.0,
         "balance_sheet": {
-          "total_assets": 1222176000000,
-          "total_liabilities": 502473000000,
-          "total_shareholders_equity": 717419000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 52569000000,
-          "cash_primary": 52569000000,
-          "marketable_securities_current": 0
+          "total_assets": 1222176000000.0,
+          "total_liabilities": 502473000000.0,
+          "total_shareholders_equity": 717419000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 52569000000.0,
+          "cash_primary": 52569000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1067983",
       "data": {
         "shares_outstanding": 2160000000,
-        "revenue": 277212000000,
+        "revenue": 277212000000.0,
         "balance_sheet": {
-          "total_assets": 1225963000000,
-          "total_liabilities": 525522000000,
-          "total_shareholders_equity": 698155000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 77111000000,
-          "cash_primary": 77111000000,
-          "marketable_securities_current": 0
+          "total_assets": 1225963000000.0,
+          "total_liabilities": 525522000000.0,
+          "total_shareholders_equity": 698155000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 77111000000.0,
+          "cash_primary": 77111000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.berkshirehathaway.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.586844+00:00"
 }

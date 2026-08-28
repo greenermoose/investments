@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=796343",
       "data": {
         "shares_outstanding": 404200000,
-        "revenue": 13016000000,
+        "revenue": 13016000000.0,
         "balance_sheet": {
-          "total_assets": 29933000000,
-          "total_liabilities": 18415000000,
-          "total_shareholders_equity": 11518000000,
-          "total_debt": 6645000000,
-          "short_term_debt": 1843000000,
-          "long_term_debt": 4802000000,
-          "cash_and_cash_equivalents": 5626000000,
-          "cash_primary": 4919000000,
-          "marketable_securities_current": 707000000
+          "total_assets": 29933000000.0,
+          "total_liabilities": 18415000000.0,
+          "total_shareholders_equity": 11518000000.0,
+          "total_debt": 6645000000.0,
+          "short_term_debt": 1843000000.0,
+          "long_term_debt": 4802000000.0,
+          "cash_and_cash_equivalents": 5626000000.0,
+          "cash_primary": 4919000000.0,
+          "marketable_securities_current": 707000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=796343",
       "data": {
         "shares_outstanding": 410500000,
-        "revenue": 6398000000,
+        "revenue": 6398000000.0,
         "balance_sheet": {
-          "total_assets": 29704000000,
-          "total_liabilities": 18271000000,
-          "total_shareholders_equity": 11433000000,
-          "total_debt": 6150000000,
-          "short_term_debt": 849000000,
-          "long_term_debt": 5379000000,
-          "cash_and_cash_equivalents": 6890000000,
-          "cash_primary": 6332000000,
-          "marketable_securities_current": 558000000
+          "total_assets": 29704000000.0,
+          "total_liabilities": 18271000000.0,
+          "total_shareholders_equity": 11433000000.0,
+          "total_debt": 6150000000.0,
+          "short_term_debt": 849000000.0,
+          "long_term_debt": 5379000000.0,
+          "cash_and_cash_equivalents": 6890000000.0,
+          "cash_primary": 6332000000.0,
+          "marketable_securities_current": 558000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=796343",
       "data": {
         "shares_outstanding": 418600000,
-        "revenue": 23769000000,
+        "revenue": 23769000000.0,
         "balance_sheet": {
-          "total_assets": 29496000000,
-          "total_liabilities": 17873000000,
-          "total_shareholders_equity": 11623000000,
-          "total_debt": 6150000000,
-          "short_term_debt": 0,
-          "long_term_debt": 6210000000,
-          "cash_and_cash_equivalents": 6595000000,
-          "cash_primary": 5431000000,
-          "marketable_securities_current": 1164000000
+          "total_assets": 29496000000.0,
+          "total_liabilities": 17873000000.0,
+          "total_shareholders_equity": 11623000000.0,
+          "total_debt": 6150000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6210000000.0,
+          "cash_and_cash_equivalents": 6595000000.0,
+          "cash_primary": 5431000000.0,
+          "marketable_securities_current": 1164000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=796343",
       "data": {
         "shares_outstanding": 424200000,
-        "revenue": 17575000000,
+        "revenue": 17575000000.0,
         "balance_sheet": {
-          "total_assets": 28754000000,
-          "total_liabilities": 16984000000,
-          "total_shareholders_equity": 11770000000,
-          "total_debt": 6150000000,
-          "short_term_debt": 0,
-          "long_term_debt": 6200000000,
-          "cash_and_cash_equivalents": 5940000000,
-          "cash_primary": 4982000000,
-          "marketable_securities_current": 958000000
+          "total_assets": 28754000000.0,
+          "total_liabilities": 16984000000.0,
+          "total_shareholders_equity": 11770000000.0,
+          "total_debt": 6150000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6200000000.0,
+          "cash_and_cash_equivalents": 5940000000.0,
+          "cash_primary": 4982000000.0,
+          "marketable_securities_current": 958000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.adobe.com/investor-relations.html",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 8.82,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Adobe Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Adobe Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 8.32,
-      "take_or_pay_commitments_usd_b": 2.5,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $8.32B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Adobe Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.538977+00:00"
 }

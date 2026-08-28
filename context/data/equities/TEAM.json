@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
       "data": {
         "shares_outstanding": 260163000,
-        "revenue": 6572308000,
+        "revenue": 6572308000.0,
         "balance_sheet": {
-          "total_assets": 6103529000,
-          "total_liabilities": 5045087000,
-          "total_shareholders_equity": 1058442000,
-          "total_debt": 989560000,
-          "short_term_debt": 0,
-          "long_term_debt": 989560000,
-          "cash_and_cash_equivalents": 1239512000,
-          "cash_primary": 1239512000,
-          "marketable_securities_current": 0
+          "total_assets": 6103529000.0,
+          "total_liabilities": 5045087000.0,
+          "total_shareholders_equity": 1058442000.0,
+          "total_debt": 989560000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 989560000.0,
+          "cash_and_cash_equivalents": 1239512000.0,
+          "cash_primary": 1239512000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
       "data": {
         "shares_outstanding": 262606000,
-        "revenue": 4805839000,
+        "revenue": 4805839000.0,
         "balance_sheet": {
-          "total_assets": 5650923000,
-          "total_liabilities": 4771895000,
-          "total_shareholders_equity": 879028000,
-          "total_debt": 989081000,
-          "short_term_debt": 0,
-          "long_term_debt": 989081000,
-          "cash_and_cash_equivalents": 1136342000,
-          "cash_primary": 1136342000,
-          "marketable_securities_current": 0
+          "total_assets": 5650923000.0,
+          "total_liabilities": 4771895000.0,
+          "total_shareholders_equity": 879028000.0,
+          "total_debt": 989081000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 989081000.0,
+          "cash_and_cash_equivalents": 1136342000.0,
+          "cash_primary": 1136342000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
       "data": {
         "shares_outstanding": 263409000,
-        "revenue": 3018868000,
+        "revenue": 3018868000.0,
         "balance_sheet": {
-          "total_assets": 6160381000,
-          "total_liabilities": 4569532000,
-          "total_shareholders_equity": 1590849000,
-          "total_debt": 988609000,
-          "short_term_debt": 0,
-          "long_term_debt": 988609000,
-          "cash_and_cash_equivalents": 1566054000,
-          "cash_primary": 1158122000,
-          "marketable_securities_current": 407932000
+          "total_assets": 6160381000.0,
+          "total_liabilities": 4569532000.0,
+          "total_shareholders_equity": 1590849000.0,
+          "total_debt": 988609000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 988609000.0,
+          "cash_and_cash_equivalents": 1566054000.0,
+          "cash_primary": 1158122000.0,
+          "marketable_securities_current": 407932000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650372",
       "data": {
         "shares_outstanding": 262991000,
-        "revenue": 1432553000,
+        "revenue": 1432553000.0,
         "balance_sheet": {
-          "total_assets": 5720500000,
-          "total_liabilities": 4341564000,
-          "total_shareholders_equity": 1378936000,
-          "total_debt": 988143000,
-          "short_term_debt": 0,
-          "long_term_debt": 988143000,
-          "cash_and_cash_equivalents": 2778400000,
-          "cash_primary": 2322360000,
-          "marketable_securities_current": 456040000
+          "total_assets": 5720500000.0,
+          "total_liabilities": 4341564000.0,
+          "total_shareholders_equity": 1378936000.0,
+          "total_debt": 988143000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 988143000.0,
+          "cash_and_cash_equivalents": 2778400000.0,
+          "cash_primary": 2322360000.0,
+          "marketable_securities_current": 456040000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.atlassian.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.8,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Atlassian Corporation operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Atlassian Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.3,
-      "take_or_pay_commitments_usd_b": 0.69,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $2.30B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Atlassian Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.821670+00:00"
 }

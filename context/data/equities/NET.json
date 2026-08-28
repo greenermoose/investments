@@ -1,7 +1,7 @@
 {
   "symbol": "NET",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
-  "last_updated": "2026-08-28T02:55:52.456713+00:00",
+  "last_updated": "2026-08-28T03:13:30.754913+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
       "data": {
         "shares_outstanding": 353485000,
-        "revenue": 1335816000,
+        "revenue": 1335816000.0,
         "balance_sheet": {
-          "total_assets": 6474127000,
-          "total_liabilities": 4854107000,
-          "total_shareholders_equity": 1620020000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 4162798000,
-          "cash_primary": 1663773000,
-          "marketable_securities_current": 2499025000
+          "total_assets": 6474127000.0,
+          "total_liabilities": 4854107000.0,
+          "total_shareholders_equity": 1620020000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 4162798000.0,
+          "cash_primary": 1663773000.0,
+          "marketable_securities_current": 2499025000.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
       "data": {
         "shares_outstanding": 352625000,
-        "revenue": 639755000,
+        "revenue": 639755000.0,
         "balance_sheet": {
-          "total_assets": 6163977000,
-          "total_liabilities": 4637269000,
-          "total_shareholders_equity": 1526708000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 4163878000,
-          "cash_primary": 932226000,
-          "marketable_securities_current": 3231652000
+          "total_assets": 6163977000.0,
+          "total_liabilities": 4637269000.0,
+          "total_shareholders_equity": 1526708000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 4163878000.0,
+          "cash_primary": 932226000.0,
+          "marketable_securities_current": 3231652000.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
       "data": {
         "shares_outstanding": 348421000,
-        "revenue": 2167937000,
+        "revenue": 2167937000.0,
         "balance_sheet": {
-          "total_assets": 6036256000,
-          "total_liabilities": 4577133000,
-          "total_shareholders_equity": 1459123000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 4101251000,
-          "cash_primary": 943536000,
-          "marketable_securities_current": 3157715000
+          "total_assets": 6036256000.0,
+          "total_liabilities": 4577133000.0,
+          "total_shareholders_equity": 1459123000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 4101251000.0,
+          "cash_primary": 943536000.0,
+          "marketable_securities_current": 3157715000.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
       "data": {
         "shares_outstanding": 347519000,
-        "revenue": 1553430000,
+        "revenue": 1553430000.0,
         "balance_sheet": {
-          "total_assets": 5786395000,
-          "total_liabilities": 4439379000,
-          "total_shareholders_equity": 1347016000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 4043508000,
-          "cash_primary": 1052644000,
-          "marketable_securities_current": 2990864000
+          "total_assets": 5786395000.0,
+          "total_liabilities": 4439379000.0,
+          "total_shareholders_equity": 1347016000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 4043508000.0,
+          "cash_primary": 1052644000.0,
+          "marketable_securities_current": 2990864000.0
         }
       }
     }
   ],
   "name": "Cloudflare, Inc.",
-  "investor_relations_url": "https://cloudflare.net/",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 1.26,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Cloudflare, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Cloudflare, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.76,
-      "take_or_pay_commitments_usd_b": 0.23,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $0.76B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Cloudflare, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "investor_relations_url": "https://cloudflare.net/"
 }

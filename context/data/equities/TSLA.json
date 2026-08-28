@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1318605",
       "data": {
         "shares_outstanding": 3755723871,
-        "revenue": 50623000000,
+        "revenue": 50623000000.0,
         "balance_sheet": {
-          "total_assets": 148524000000,
-          "total_liabilities": 61005000000,
-          "total_shareholders_equity": 86858000000,
-          "total_debt": 9080000000,
-          "short_term_debt": 1340000000,
-          "long_term_debt": 7721000000,
-          "cash_and_cash_equivalents": 43524000000,
-          "cash_primary": 15219000000,
-          "marketable_securities_current": 28305000000
+          "total_assets": 148524000000.0,
+          "total_liabilities": 61005000000.0,
+          "total_shareholders_equity": 86858000000.0,
+          "total_debt": 9080000000.0,
+          "short_term_debt": 1340000000.0,
+          "long_term_debt": 7721000000.0,
+          "cash_and_cash_equivalents": 43524000000.0,
+          "cash_primary": 15219000000.0,
+          "marketable_securities_current": 28305000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1318605",
       "data": {
         "shares_outstanding": 3752431984,
-        "revenue": 22387000000,
+        "revenue": 22387000000.0,
         "balance_sheet": {
-          "total_assets": 143724000000,
-          "total_liabilities": 58922000000,
-          "total_shareholders_equity": 84116000000,
-          "total_debt": 9039000000,
-          "short_term_debt": 1374000000,
-          "long_term_debt": 7645000000,
-          "cash_and_cash_equivalents": 44743000000,
-          "cash_primary": 16603000000,
-          "marketable_securities_current": 28140000000
+          "total_assets": 143724000000.0,
+          "total_liabilities": 58922000000.0,
+          "total_shareholders_equity": 84116000000.0,
+          "total_debt": 9039000000.0,
+          "short_term_debt": 1374000000.0,
+          "long_term_debt": 7645000000.0,
+          "cash_and_cash_equivalents": 44743000000.0,
+          "cash_primary": 16603000000.0,
+          "marketable_securities_current": 28140000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1318605",
       "data": {
         "shares_outstanding": 3325819167,
-        "revenue": 94827000000,
+        "revenue": 94827000000.0,
         "balance_sheet": {
-          "total_assets": 137806000000,
-          "total_liabilities": 54941000000,
-          "total_shareholders_equity": 82137000000,
-          "total_debt": 8177000000,
-          "short_term_debt": 1569000000,
-          "long_term_debt": 6584000000,
-          "cash_and_cash_equivalents": 44059000000,
-          "cash_primary": 16513000000,
-          "marketable_securities_current": 27546000000
+          "total_assets": 137806000000.0,
+          "total_liabilities": 54941000000.0,
+          "total_shareholders_equity": 82137000000.0,
+          "total_debt": 8177000000.0,
+          "short_term_debt": 1569000000.0,
+          "long_term_debt": 6584000000.0,
+          "cash_and_cash_equivalents": 44059000000.0,
+          "cash_primary": 16513000000.0,
+          "marketable_securities_current": 27546000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1318605",
       "data": {
         "shares_outstanding": 3225448889,
-        "revenue": 69926000000,
+        "revenue": 69926000000.0,
         "balance_sheet": {
-          "total_assets": 133735000000,
-          "total_liabilities": 53019000000,
-          "total_shareholders_equity": 79970000000,
-          "total_debt": 7485000000,
-          "short_term_debt": 1852000000,
-          "long_term_debt": 5609000000,
-          "cash_and_cash_equivalents": 41647000000,
-          "cash_primary": 18289000000,
-          "marketable_securities_current": 23358000000
+          "total_assets": 133735000000.0,
+          "total_liabilities": 53019000000.0,
+          "total_shareholders_equity": 79970000000.0,
+          "total_debt": 7485000000.0,
+          "short_term_debt": 1852000000.0,
+          "long_term_debt": 5609000000.0,
+          "cash_and_cash_equivalents": 41647000000.0,
+          "cash_primary": 18289000000.0,
+          "marketable_securities_current": 23358000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.tesla.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 19.84,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.57,
-      "pbo_gross_usd_b": 11.38,
-      "plan_assets_usd_b": 10.81,
-      "annual_cash_contribution_usd_b": 0.28,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 1.9,
-      "narrative": "Tesla, Inc. maintains legacy defined benefit plans ($11.38B PBO vs $10.81B assets; $-0.57B gap) and $1.90B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 17.07,
-      "take_or_pay_commitments_usd_b": 4.27,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $17.07B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Tesla, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.834446+00:00"
 }

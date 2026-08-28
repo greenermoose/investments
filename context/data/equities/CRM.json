@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1108524",
       "data": {
         "shares_outstanding": 923000000,
-        "revenue": 11133000000,
+        "revenue": 11133000000.0,
         "balance_sheet": {
-          "total_assets": 106680000000,
-          "total_liabilities": 72445000000,
-          "total_shareholders_equity": 34235000000,
-          "total_debt": 39500000000,
-          "short_term_debt": 0,
-          "long_term_debt": 39280000000,
-          "cash_and_cash_equivalents": 11837000000,
-          "cash_primary": 8935000000,
-          "marketable_securities_current": 2902000000
+          "total_assets": 106680000000.0,
+          "total_liabilities": 72445000000.0,
+          "total_shareholders_equity": 34235000000.0,
+          "total_debt": 39500000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 39280000000.0,
+          "cash_and_cash_equivalents": 11837000000.0,
+          "cash_primary": 8935000000.0,
+          "marketable_securities_current": 2902000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1108524",
       "data": {
         "shares_outstanding": 937000000,
-        "revenue": 41525000000,
+        "revenue": 41525000000.0,
         "balance_sheet": {
-          "total_assets": 112305000000,
-          "total_liabilities": 53163000000,
-          "total_shareholders_equity": 59142000000,
-          "total_debt": 14500000000,
-          "short_term_debt": 4000000000,
-          "long_term_debt": 10439000000,
-          "cash_and_cash_equivalents": 9565000000,
-          "cash_primary": 7327000000,
-          "marketable_securities_current": 2238000000
+          "total_assets": 112305000000.0,
+          "total_liabilities": 53163000000.0,
+          "total_shareholders_equity": 59142000000.0,
+          "total_debt": 14500000000.0,
+          "short_term_debt": 4000000000.0,
+          "long_term_debt": 10439000000.0,
+          "cash_and_cash_equivalents": 9565000000.0,
+          "cash_primary": 7327000000.0,
+          "marketable_securities_current": 2238000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1108524",
       "data": {
         "shares_outstanding": 952000000,
-        "revenue": 30324000000,
+        "revenue": 30324000000.0,
         "balance_sheet": {
-          "total_assets": 95144000000,
-          "total_liabilities": 35123000000,
-          "total_shareholders_equity": 60021000000,
-          "total_debt": 8500000000,
-          "short_term_debt": 0,
-          "long_term_debt": 8438000000,
-          "cash_and_cash_equivalents": 11323000000,
-          "cash_primary": 8978000000,
-          "marketable_securities_current": 2345000000
+          "total_assets": 95144000000.0,
+          "total_liabilities": 35123000000.0,
+          "total_shareholders_equity": 60021000000.0,
+          "total_debt": 8500000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 8438000000.0,
+          "cash_and_cash_equivalents": 11323000000.0,
+          "cash_primary": 8978000000.0,
+          "marketable_securities_current": 2345000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1108524",
       "data": {
         "shares_outstanding": 956000000,
-        "revenue": 20065000000,
+        "revenue": 20065000000.0,
         "balance_sheet": {
-          "total_assets": 97573000000,
-          "total_liabilities": 36245000000,
-          "total_shareholders_equity": 61328000000,
-          "total_debt": 8500000000,
-          "short_term_debt": 0,
-          "long_term_debt": 8436000000,
-          "cash_and_cash_equivalents": 15372000000,
-          "cash_primary": 10365000000,
-          "marketable_securities_current": 5007000000
+          "total_assets": 97573000000.0,
+          "total_liabilities": 36245000000.0,
+          "total_shareholders_equity": 61328000000.0,
+          "total_debt": 8500000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 8436000000.0,
+          "cash_and_cash_equivalents": 15372000000.0,
+          "cash_primary": 10365000000.0,
+          "marketable_securities_current": 5007000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.salesforce.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 15.03,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Salesforce, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Salesforce, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 14.53,
-      "take_or_pay_commitments_usd_b": 4.36,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $14.53B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Salesforce, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.609300+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1280452",
       "data": {
         "shares_outstanding": 49130000,
-        "revenue": 1784827000,
+        "revenue": 1784827000.0,
         "balance_sheet": {
-          "total_assets": 4686207000,
-          "total_liabilities": 790783000,
-          "total_shareholders_equity": 3895424000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1413761000,
-          "cash_primary": 1005587000,
-          "marketable_securities_current": 408174000
+          "total_assets": 4686207000.0,
+          "total_liabilities": 790783000.0,
+          "total_shareholders_equity": 3895424000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1413761000.0,
+          "cash_primary": 1005587000.0,
+          "marketable_securities_current": 408174000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1280452",
       "data": {
         "shares_outstanding": 49118000,
-        "revenue": 804185000,
+        "revenue": 804185000.0,
         "balance_sheet": {
-          "total_assets": 4448866000,
-          "total_liabilities": 771456000,
-          "total_shareholders_equity": 3677410000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1367109000,
-          "cash_primary": 1062930000,
-          "marketable_securities_current": 304179000
+          "total_assets": 4448866000.0,
+          "total_liabilities": 771456000.0,
+          "total_shareholders_equity": 3677410000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1367109000.0,
+          "cash_primary": 1062930000.0,
+          "marketable_securities_current": 304179000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1280452",
       "data": {
         "shares_outstanding": 47907000,
-        "revenue": 2790459000,
+        "revenue": 2790459000.0,
         "balance_sheet": {
-          "total_assets": 4194199000,
-          "total_liabilities": 662702000,
-          "total_shareholders_equity": 3531497000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1256545000,
-          "cash_primary": 1099302000,
-          "marketable_securities_current": 157243000
+          "total_assets": 4194199000.0,
+          "total_liabilities": 662702000.0,
+          "total_shareholders_equity": 3531497000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1256545000.0,
+          "cash_primary": 1099302000.0,
+          "marketable_securities_current": 157243000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1280452",
       "data": {
         "shares_outstanding": 47892000,
-        "revenue": 2039304000,
+        "revenue": 2039304000.0,
         "balance_sheet": {
-          "total_assets": 4206392000,
-          "total_liabilities": 638445000,
-          "total_shareholders_equity": 3567947000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1269484000,
-          "cash_primary": 1081251000,
-          "marketable_securities_current": 188233000
+          "total_assets": 4206392000.0,
+          "total_liabilities": 638445000.0,
+          "total_shareholders_equity": 3567947000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1269484000.0,
+          "cash_primary": 1081251000.0,
+          "marketable_securities_current": 188233000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.monolithicpower.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 1.48,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Monolithic Power Systems, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Monolithic Power Systems, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.98,
-      "take_or_pay_commitments_usd_b": 0.29,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $0.98B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Monolithic Power Systems, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.738095+00:00"
 }

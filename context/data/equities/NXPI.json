@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1413447",
       "data": {
         "shares_outstanding": 252692845,
-        "revenue": 3181000000,
+        "revenue": 3181000000.0,
         "balance_sheet": {
-          "total_assets": 27113000000,
-          "total_liabilities": 15839000000,
-          "total_shareholders_equity": 10927000000,
-          "total_debt": 11724000000,
-          "short_term_debt": 750000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3708000000,
-          "cash_primary": 3708000000,
-          "marketable_securities_current": 0
+          "total_assets": 27113000000.0,
+          "total_liabilities": 15839000000.0,
+          "total_shareholders_equity": 10927000000.0,
+          "total_debt": 11724000000.0,
+          "short_term_debt": 750000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3708000000.0,
+          "cash_primary": 3708000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1413447",
       "data": {
         "shares_outstanding": 251674471,
-        "revenue": 12269000000,
+        "revenue": 12269000000.0,
         "balance_sheet": {
-          "total_assets": 26560000000,
-          "total_liabilities": 16109000000,
-          "total_shareholders_equity": 10056000000,
-          "total_debt": 12222000000,
-          "short_term_debt": 1250000000,
-          "long_term_debt": 10972000000,
-          "cash_and_cash_equivalents": 3267000000,
-          "cash_primary": 3267000000,
-          "marketable_securities_current": 0
+          "total_assets": 26560000000.0,
+          "total_liabilities": 16109000000.0,
+          "total_shareholders_equity": 10056000000.0,
+          "total_debt": 12222000000.0,
+          "short_term_debt": 1250000000.0,
+          "long_term_debt": 10972000000.0,
+          "cash_and_cash_equivalents": 3267000000.0,
+          "cash_primary": 3267000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1413447",
       "data": {
         "shares_outstanding": 252114595,
-        "revenue": 8934000000,
+        "revenue": 8934000000.0,
         "balance_sheet": {
-          "total_assets": 26354000000,
-          "total_liabilities": 15927000000,
-          "total_shareholders_equity": 10045000000,
-          "total_debt": 12220000000,
-          "short_term_debt": 1264000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3454000000,
-          "cash_primary": 3454000000,
-          "marketable_securities_current": 0
+          "total_assets": 26354000000.0,
+          "total_liabilities": 15927000000.0,
+          "total_shareholders_equity": 10045000000.0,
+          "total_debt": 12220000000.0,
+          "short_term_debt": 1264000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3454000000.0,
+          "cash_primary": 3454000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1413447",
       "data": {
         "shares_outstanding": 252628698,
-        "revenue": 5761000000,
+        "revenue": 5761000000.0,
         "balance_sheet": {
-          "total_assets": 25250000000,
-          "total_liabilities": 15314000000,
-          "total_shareholders_equity": 9569000000,
-          "total_debt": 10728000000,
-          "short_term_debt": 1999000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3170000000,
-          "cash_primary": 3170000000,
-          "marketable_securities_current": 0
+          "total_assets": 25250000000.0,
+          "total_liabilities": 15314000000.0,
+          "total_shareholders_equity": 9569000000.0,
+          "total_debt": 10728000000.0,
+          "short_term_debt": 1999000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3170000000.0,
+          "cash_primary": 3170000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.nxp.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.79,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "NXP Semiconductors N.V. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "NXP Semiconductors N.V. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.29,
-      "take_or_pay_commitments_usd_b": 1.29,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $4.29B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "NXP Semiconductors N.V. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.768996+00:00"
 }

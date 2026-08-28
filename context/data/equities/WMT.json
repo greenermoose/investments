@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=104169",
       "data": {
         "shares_outstanding": 7972402501,
-        "revenue": 177751000000,
+        "revenue": 177751000000.0,
         "balance_sheet": {
-          "total_assets": 289607000000,
-          "total_liabilities": 289607000000,
-          "total_shareholders_equity": 94330000000,
-          "total_debt": 40783000000,
-          "short_term_debt": 3896000000,
-          "long_term_debt": 36887000000,
-          "cash_and_cash_equivalents": 10729000000,
-          "cash_primary": 10729000000,
-          "marketable_securities_current": 0
+          "total_assets": 289607000000.0,
+          "total_liabilities": 289607000000.0,
+          "total_shareholders_equity": 94330000000.0,
+          "total_debt": 40783000000.0,
+          "short_term_debt": 3896000000.0,
+          "long_term_debt": 36887000000.0,
+          "cash_and_cash_equivalents": 10729000000.0,
+          "cash_primary": 10729000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=104169",
       "data": {
         "shares_outstanding": 7970166964,
-        "revenue": 713163000000,
+        "revenue": 713163000000.0,
         "balance_sheet": {
-          "total_assets": 284668000000,
-          "total_liabilities": 284668000000,
-          "total_shareholders_equity": 99617000000,
-          "total_debt": 38166000000,
-          "short_term_debt": 3542000000,
-          "long_term_debt": 34624000000,
-          "cash_and_cash_equivalents": 10727000000,
-          "cash_primary": 10727000000,
-          "marketable_securities_current": 0
+          "total_assets": 284668000000.0,
+          "total_liabilities": 284668000000.0,
+          "total_shareholders_equity": 99617000000.0,
+          "total_debt": 38166000000.0,
+          "short_term_debt": 3542000000.0,
+          "long_term_debt": 34624000000.0,
+          "cash_and_cash_equivalents": 10727000000.0,
+          "cash_primary": 10727000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=104169",
       "data": {
         "shares_outstanding": 7972851122,
-        "revenue": 522507000000,
+        "revenue": 522507000000.0,
         "balance_sheet": {
-          "total_assets": 288655000000,
-          "total_liabilities": 288655000000,
-          "total_shareholders_equity": 96094000000,
-          "total_debt": 37968000000,
-          "short_term_debt": 3523000000,
-          "long_term_debt": 34445000000,
-          "cash_and_cash_equivalents": 10582000000,
-          "cash_primary": 10582000000,
-          "marketable_securities_current": 0
+          "total_assets": 288655000000.0,
+          "total_liabilities": 288655000000.0,
+          "total_shareholders_equity": 96094000000.0,
+          "total_debt": 37968000000.0,
+          "short_term_debt": 3523000000.0,
+          "long_term_debt": 34445000000.0,
+          "cash_and_cash_equivalents": 10582000000.0,
+          "cash_primary": 10582000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=104169",
       "data": {
         "shares_outstanding": 7980418164,
-        "revenue": 343011000000,
+        "revenue": 343011000000.0,
         "balance_sheet": {
-          "total_assets": 270837000000,
-          "total_liabilities": 270837000000,
-          "total_shareholders_equity": 90110000000,
-          "total_debt": 39651000000,
-          "short_term_debt": 4011000000,
-          "long_term_debt": 35640000000,
-          "cash_and_cash_equivalents": 9431000000,
-          "cash_primary": 9431000000,
-          "marketable_securities_current": 0
+          "total_assets": 270837000000.0,
+          "total_liabilities": 270837000000.0,
+          "total_shareholders_equity": 90110000000.0,
+          "total_debt": 39651000000.0,
+          "short_term_debt": 4011000000.0,
+          "long_term_debt": 35640000000.0,
+          "cash_and_cash_equivalents": 9431000000.0,
+          "cash_primary": 9431000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://stock.walmart.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 147.21,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -4.28,
-      "pbo_gross_usd_b": 85.58,
-      "plan_assets_usd_b": 81.3,
-      "annual_cash_contribution_usd_b": 2.14,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 14.26,
-      "narrative": "Walmart Inc. maintains legacy defined benefit plans ($85.58B PBO vs $81.30B assets; $-4.28B gap) and $14.26B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 128.37,
-      "take_or_pay_commitments_usd_b": 32.09,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $128.37B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Walmart Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.864359+00:00"
 }

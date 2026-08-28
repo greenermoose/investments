@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1468522",
       "data": {
         "shares_outstanding": 720626181,
-        "revenue": 9627000000,
+        "revenue": 10397160000.0,
         "balance_sheet": {
-          "total_assets": 27420000000,
-          "total_liabilities": 19755000000,
-          "total_shareholders_equity": 7665000000,
-          "total_debt": 10427000000,
-          "short_term_debt": 0,
-          "long_term_debt": 10427000000,
-          "cash_and_cash_equivalents": 4271000000,
-          "cash_primary": 4271000000,
-          "marketable_securities_current": 0
+          "total_assets": 29613600000.0,
+          "total_liabilities": 21335400000.0,
+          "total_shareholders_equity": 8278200000.0,
+          "total_debt": 11261160000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 11261160000.0,
+          "cash_and_cash_equivalents": 4612680000.0,
+          "cash_primary": 4612680000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1468522",
       "data": {
         "shares_outstanding": 721806552,
-        "revenue": 9147000000,
+        "revenue": 9878760000.0,
         "balance_sheet": {
-          "total_assets": 28999000000,
-          "total_liabilities": 20879000000,
-          "total_shareholders_equity": 8120000000,
-          "total_debt": 11288000000,
-          "short_term_debt": 0,
-          "long_term_debt": 11288000000,
-          "cash_and_cash_equivalents": 4828000000,
-          "cash_primary": 4828000000,
-          "marketable_securities_current": 0
+          "total_assets": 31318920000.0,
+          "total_liabilities": 22549320000.0,
+          "total_shareholders_equity": 8769600000.0,
+          "total_debt": 12191040000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12191040000.0,
+          "cash_and_cash_equivalents": 5214240000.0,
+          "cash_primary": 5214240000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,57 +54,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1468522",
       "data": {
         "shares_outstanding": 720626181,
-        "revenue": 8514000000,
+        "revenue": 9195120000.0,
         "balance_sheet": {
-          "total_assets": 26318000000,
-          "total_liabilities": 20439000000,
-          "total_shareholders_equity": 5879000000,
-          "total_debt": 11378000000,
-          "short_term_debt": 0,
-          "long_term_debt": 11378000000,
-          "cash_and_cash_equivalents": 4789000000,
-          "cash_primary": 4789000000,
-          "marketable_securities_current": 0
+          "total_assets": 28423440000.0,
+          "total_liabilities": 22074120000.0,
+          "total_shareholders_equity": 6349320000.0,
+          "total_debt": 12288240000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12288240000.0,
+          "cash_and_cash_equivalents": 5172120000.0,
+          "cash_primary": 5172120000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.ferrovial.com/en/ir/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 9.13,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.42,
-      "pbo_gross_usd_b": 6.0,
-      "plan_assets_usd_b": 5.58,
-      "annual_cash_contribution_usd_b": 0.18,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.09,
-      "narrative": "Ferrovial SE sponsors defined benefit pension plans with $6.00B in gross PBO against $5.58B in assets ($-0.42B net gap) and $1.09B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 6.82,
-      "take_or_pay_commitments_usd_b": 2.05,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $6.82B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Ferrovial SE manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.659958+00:00"
 }

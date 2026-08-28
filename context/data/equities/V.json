@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
       "data": {
         "shares_outstanding": 469280842,
-        "revenue": 22131000000,
+        "revenue": 22131000000.0,
         "balance_sheet": {
-          "total_assets": 95049000000,
-          "total_liabilities": 59388000000,
-          "total_shareholders_equity": 35661000000,
-          "total_debt": 23976000000,
-          "short_term_debt": 1559000000,
-          "long_term_debt": 22417000000,
-          "cash_and_cash_equivalents": 12404000000,
-          "cash_primary": 12404000000,
-          "marketable_securities_current": 0
+          "total_assets": 95049000000.0,
+          "total_liabilities": 59388000000.0,
+          "total_shareholders_equity": 35661000000.0,
+          "total_debt": 23976000000.0,
+          "short_term_debt": 1559000000.0,
+          "long_term_debt": 22417000000.0,
+          "cash_and_cash_equivalents": 12404000000.0,
+          "cash_primary": 12404000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
       "data": {
         "shares_outstanding": 469280842,
-        "revenue": 10901000000,
+        "revenue": 10901000000.0,
         "balance_sheet": {
-          "total_assets": 96814000000,
-          "total_liabilities": 58037000000,
-          "total_shareholders_equity": 38777000000,
-          "total_debt": 21177000000,
-          "short_term_debt": 1589000000,
-          "long_term_debt": 19588000000,
-          "cash_and_cash_equivalents": 14756000000,
-          "cash_primary": 14756000000,
-          "marketable_securities_current": 0
+          "total_assets": 96814000000.0,
+          "total_liabilities": 58037000000.0,
+          "total_shareholders_equity": 38777000000.0,
+          "total_debt": 21177000000.0,
+          "short_term_debt": 1589000000.0,
+          "long_term_debt": 19588000000.0,
+          "cash_and_cash_equivalents": 14756000000.0,
+          "cash_primary": 14756000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
       "data": {
         "shares_outstanding": 469280842,
-        "revenue": 40000000000,
+        "revenue": 40000000000.0,
         "balance_sheet": {
-          "total_assets": 99627000000,
-          "total_liabilities": 61718000000,
-          "total_shareholders_equity": 37909000000,
-          "total_debt": 25392000000,
-          "short_term_debt": 5569000000,
-          "long_term_debt": 19602000000,
-          "cash_and_cash_equivalents": 17164000000,
-          "cash_primary": 17164000000,
-          "marketable_securities_current": 0
+          "total_assets": 99627000000.0,
+          "total_liabilities": 61718000000.0,
+          "total_shareholders_equity": 37909000000.0,
+          "total_debt": 25392000000.0,
+          "short_term_debt": 5569000000.0,
+          "long_term_debt": 19602000000.0,
+          "cash_and_cash_equivalents": 17164000000.0,
+          "cash_primary": 17164000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1403161",
       "data": {
         "shares_outstanding": 469280842,
-        "revenue": 29276000000,
+        "revenue": 29276000000.0,
         "balance_sheet": {
-          "total_assets": 100024000000,
-          "total_liabilities": 61360000000,
-          "total_shareholders_equity": 38664000000,
-          "total_debt": 25138000000,
-          "short_term_debt": 5548000000,
-          "long_term_debt": 19590000000,
-          "cash_and_cash_equivalents": 17092000000,
-          "cash_primary": 17092000000,
-          "marketable_securities_current": 0
+          "total_assets": 100024000000.0,
+          "total_liabilities": 61360000000.0,
+          "total_shareholders_equity": 38664000000.0,
+          "total_debt": 25138000000.0,
+          "short_term_debt": 5548000000.0,
+          "long_term_debt": 19590000000.0,
+          "cash_and_cash_equivalents": 17092000000.0,
+          "cash_primary": 17092000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.visa.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.38,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.08,
-      "pbo_gross_usd_b": 4.0,
-      "plan_assets_usd_b": 3.92,
-      "annual_cash_contribution_usd_b": 0.08,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.2,
-      "narrative": "Visa Inc. maintains well-funded legacy defined benefit pension plans ($4.00B PBO vs $3.92B assets) with strong institutional risk-matching asset allocation."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Visa Inc. has zero industrial contamination or Superfund remediation liabilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
-      "recent_settlements_scheduled_usd_b": 0.8,
-      "annual_legal_settlement_cash_drain_usd_b": 0.12,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.8,
-      "take_or_pay_commitments_usd_b": 0.2,
-      "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $4.80B."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
-    "narrative": "Visa Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
-  }
+  "last_updated": "2026-08-28T03:13:30.850471+00:00"
 }

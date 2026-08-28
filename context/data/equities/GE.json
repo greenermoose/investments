@@ -1,7 +1,7 @@
 {
   "symbol": "GE",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
-  "last_updated": "2026-08-28T02:55:50.606742+00:00",
+  "last_updated": "2026-08-28T03:13:30.666185+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
       "data": {
         "shares_outstanding": 1037562513,
-        "revenue": 25741000000,
+        "revenue": 25741000000.0,
         "balance_sheet": {
-          "total_assets": 127672000000,
-          "total_liabilities": 109805000000,
-          "total_shareholders_equity": 17640000000,
-          "total_debt": 17157000000,
-          "short_term_debt": 2000000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 9345000000,
-          "cash_primary": 9345000000,
-          "marketable_securities_current": 0
+          "total_assets": 127672000000.0,
+          "total_liabilities": 109805000000.0,
+          "total_shareholders_equity": 17640000000.0,
+          "total_debt": 17157000000.0,
+          "short_term_debt": 2000000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 9345000000.0,
+          "cash_primary": 9345000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
       "data": {
         "shares_outstanding": 1043337235,
-        "revenue": 12392000000,
+        "revenue": 12392000000.0,
         "balance_sheet": {
-          "total_assets": 128445000000,
-          "total_liabilities": 110148000000,
-          "total_shareholders_equity": 18057000000,
-          "total_debt": 18174000000,
-          "short_term_debt": 2103000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 10981000000,
-          "cash_primary": 10981000000,
-          "marketable_securities_current": 0
+          "total_assets": 128445000000.0,
+          "total_liabilities": 110148000000.0,
+          "total_shareholders_equity": 18057000000.0,
+          "total_debt": 18174000000.0,
+          "short_term_debt": 2103000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 10981000000.0,
+          "cash_primary": 10981000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
       "data": {
         "shares_outstanding": 1054813911,
-        "revenue": 45855000000,
+        "revenue": 45855000000.0,
         "balance_sheet": {
-          "total_assets": 130169000000,
-          "total_liabilities": 111271000000,
-          "total_shareholders_equity": 18677000000,
-          "total_debt": 18808000000,
-          "short_term_debt": 1686000000,
-          "long_term_debt": 20469000000,
-          "cash_and_cash_equivalents": 12392000000,
-          "cash_primary": 12392000000,
-          "marketable_securities_current": 0
+          "total_assets": 130169000000.0,
+          "total_liabilities": 111271000000.0,
+          "total_shareholders_equity": 18677000000.0,
+          "total_debt": 18808000000.0,
+          "short_term_debt": 1686000000.0,
+          "long_term_debt": 20469000000.0,
+          "cash_and_cash_equivalents": 12392000000.0,
+          "cash_primary": 12392000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
       "data": {
         "shares_outstanding": 1054813911,
-        "revenue": 33138000000,
+        "revenue": 33138000000.0,
         "balance_sheet": {
-          "total_assets": 128243000000,
-          "total_liabilities": 109222000000,
-          "total_shareholders_equity": 18812000000,
-          "total_debt": 18771000000,
-          "short_term_debt": 2067000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 12501000000,
-          "cash_primary": 12501000000,
-          "marketable_securities_current": 0
+          "total_assets": 128243000000.0,
+          "total_liabilities": 109222000000.0,
+          "total_shareholders_equity": 18812000000.0,
+          "total_debt": 18771000000.0,
+          "short_term_debt": 2067000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 12501000000.0,
+          "cash_primary": 12501000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "name": "General Electric Company",
-  "investor_relations_url": "https://www.geaerospace.com/investor-relations",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 14.8,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.71,
-      "pbo_gross_usd_b": 10.09,
-      "plan_assets_usd_b": 9.38,
-      "annual_cash_contribution_usd_b": 0.3,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.83,
-      "narrative": "General Electric Company sponsors defined benefit pension plans with $10.09B in gross PBO against $9.38B in assets ($-0.71B net gap) and $1.83B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 11.46,
-      "take_or_pay_commitments_usd_b": 3.44,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $11.46B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "General Electric Company manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "investor_relations_url": "https://www.geaerospace.com/investor-relations"
 }

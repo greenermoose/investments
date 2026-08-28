@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=937966",
       "data": {
         "shares_outstanding": 385417665,
-        "revenue": 32667300000,
+        "revenue": 35280684000.0,
         "balance_sheet": {
-          "total_assets": 50566600000,
-          "total_liabilities": 30954400000,
-          "total_shareholders_equity": 19612200000,
-          "total_debt": 2709000000,
-          "short_term_debt": 1681900000,
-          "long_term_debt": 2709000000,
-          "cash_and_cash_equivalents": 13321900000,
-          "cash_primary": 12916000000,
-          "marketable_securities_current": 405900000
+          "total_assets": 54611928000.0,
+          "total_liabilities": 33430752000.0,
+          "total_shareholders_equity": 21181176000.0,
+          "total_debt": 2925720000.0,
+          "short_term_debt": 1816452000.0,
+          "long_term_debt": 2925720000.0,
+          "cash_and_cash_equivalents": 14387652000.0,
+          "cash_primary": 13949280000.0,
+          "marketable_securities_current": 438372000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=937966",
       "data": {
         "shares_outstanding": 393283720,
-        "revenue": 28262900000,
+        "revenue": 30523932000.0,
         "balance_sheet": {
-          "total_assets": 48589600000,
-          "total_liabilities": 30112800000,
-          "total_shareholders_equity": 18476800000,
-          "total_debt": 3677300000,
-          "short_term_debt": 1010300000,
-          "long_term_debt": 3677300000,
-          "cash_and_cash_equivalents": 12741300000,
-          "cash_primary": 12735900000,
-          "marketable_securities_current": 5400000
+          "total_assets": 52476768000.0,
+          "total_liabilities": 32521824000.0,
+          "total_shareholders_equity": 19954944000.0,
+          "total_debt": 3971484000.0,
+          "short_term_debt": 1091124000.0,
+          "long_term_debt": 3971484000.0,
+          "cash_and_cash_equivalents": 13760604000.0,
+          "cash_primary": 13754772000.0,
+          "marketable_securities_current": 5832000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=937966",
       "data": {
         "shares_outstanding": 393421721,
-        "revenue": 27558500000,
+        "revenue": 29763180000.0,
         "balance_sheet": {
-          "total_assets": 39957500000,
-          "total_liabilities": 26505100000,
-          "total_shareholders_equity": 13452400000,
-          "total_debt": 4631500000,
-          "short_term_debt": 100000,
-          "long_term_debt": 4631500000,
-          "cash_and_cash_equivalents": 7010100000,
-          "cash_primary": 7004700000,
-          "marketable_securities_current": 5400000
+          "total_assets": 43154100000.0,
+          "total_liabilities": 28625508000.0,
+          "total_shareholders_equity": 14528592000.0,
+          "total_debt": 5002020000.0,
+          "short_term_debt": 108000.0,
+          "long_term_debt": 5002020000.0,
+          "cash_and_cash_equivalents": 7570908000.0,
+          "cash_primary": 7565076000.0,
+          "marketable_securities_current": 5832000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=937966",
       "data": {
         "shares_outstanding": 394589411,
-        "revenue": 21173400000,
+        "revenue": 22867272000.0,
         "balance_sheet": {
-          "total_assets": 36300400000,
-          "total_liabilities": 27489600000,
-          "total_shareholders_equity": 8810800000,
-          "total_debt": 3514200000,
-          "short_term_debt": 746200000,
-          "long_term_debt": 3514200000,
-          "cash_and_cash_equivalents": 7376000000,
-          "cash_primary": 7268300000,
-          "marketable_securities_current": 107700000
+          "total_assets": 39204432000.0,
+          "total_liabilities": 29688768000.0,
+          "total_shareholders_equity": 9515664000.0,
+          "total_debt": 3795336000.0,
+          "short_term_debt": 805896000.0,
+          "long_term_debt": 3795336000.0,
+          "cash_and_cash_equivalents": 7966080000.0,
+          "cash_primary": 7849764000.0,
+          "marketable_securities_current": 116316000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.asml.com/en/investors",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 38.88,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "ASML Holding N.V. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "ASML Holding N.V. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 38.38,
-      "take_or_pay_commitments_usd_b": 11.51,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $38.38B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "ASML Holding N.V. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.565298+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
         "shares_outstanding": 595000000,
-        "revenue": 6286000000,
+        "revenue": 6286000000.0,
         "balance_sheet": {
-          "total_assets": 28754000000,
-          "total_liabilities": 20955000000,
-          "total_shareholders_equity": 7799000000,
-          "total_debt": 2500000000,
-          "short_term_debt": 0,
-          "long_term_debt": 2476000000,
-          "cash_and_cash_equivalents": 12069000000,
-          "cash_primary": 6821000000,
-          "marketable_securities_current": 5248000000
+          "total_assets": 28754000000.0,
+          "total_liabilities": 20955000000.0,
+          "total_shareholders_equity": 7799000000.0,
+          "total_debt": 2500000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2476000000.0,
+          "cash_and_cash_equivalents": 12069000000.0,
+          "cash_primary": 6821000000.0,
+          "marketable_securities_current": 5248000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
         "shares_outstanding": 598000000,
-        "revenue": 2678000000,
+        "revenue": 2678000000.0,
         "balance_sheet": {
-          "total_assets": 26828000000,
-          "total_liabilities": 19192000000,
-          "total_shareholders_equity": 7636000000,
-          "total_debt": 2500000000,
-          "short_term_debt": 0,
-          "long_term_debt": 2475000000,
-          "cash_and_cash_equivalents": 12005000000,
-          "cash_primary": 7037000000,
-          "marketable_securities_current": 4968000000
+          "total_assets": 26828000000.0,
+          "total_liabilities": 19192000000.0,
+          "total_shareholders_equity": 7636000000.0,
+          "total_debt": 2500000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2475000000.0,
+          "cash_and_cash_equivalents": 12005000000.0,
+          "cash_primary": 7037000000.0,
+          "marketable_securities_current": 4968000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
         "shares_outstanding": 613000000,
-        "revenue": 12241000000,
+        "revenue": 12241000000.0,
         "balance_sheet": {
-          "total_assets": 22208000000,
-          "total_liabilities": 14009000000,
-          "total_shareholders_equity": 8199000000,
-          "total_debt": 1999000000,
-          "short_term_debt": 1999000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 11014000000,
-          "cash_primary": 6560000000,
-          "marketable_securities_current": 4454000000
+          "total_assets": 22208000000.0,
+          "total_liabilities": 14009000000.0,
+          "total_shareholders_equity": 8199000000.0,
+          "total_debt": 1999000000.0,
+          "short_term_debt": 1999000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 11014000000.0,
+          "cash_primary": 6560000000.0,
+          "marketable_securities_current": 4454000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1559720",
       "data": {
         "shares_outstanding": 616000000,
-        "revenue": 9463000000,
+        "revenue": 9463000000.0,
         "balance_sheet": {
-          "total_assets": 23064000000,
-          "total_liabilities": 14454000000,
-          "total_shareholders_equity": 8610000000,
-          "total_debt": 1998000000,
-          "short_term_debt": 1998000000,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 11684000000,
-          "cash_primary": 7528000000,
-          "marketable_securities_current": 4156000000
+          "total_assets": 23064000000.0,
+          "total_liabilities": 14454000000.0,
+          "total_shareholders_equity": 8610000000.0,
+          "total_debt": 1998000000.0,
+          "short_term_debt": 1998000000.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 11684000000.0,
+          "cash_primary": 7528000000.0,
+          "marketable_securities_current": 4156000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.airbnb.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.81,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.07,
-      "pbo_gross_usd_b": 1.47,
-      "plan_assets_usd_b": 1.4,
-      "annual_cash_contribution_usd_b": 0.04,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.24,
-      "narrative": "Airbnb, Inc. maintains legacy defined benefit plans ($1.47B PBO vs $1.40B assets; $-0.07B gap) and $0.24B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.2,
-      "take_or_pay_commitments_usd_b": 0.55,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $2.20B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "Airbnb, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.534555+00:00"
 }

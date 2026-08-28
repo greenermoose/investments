@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=789019",
       "data": {
         "shares_outstanding": 7428434704,
-        "revenue": 331839000000,
+        "revenue": 331839000000.0,
         "balance_sheet": {
-          "total_assets": 758376000000,
-          "total_liabilities": 315989000000,
-          "total_shareholders_equity": 442387000000,
-          "total_debt": 46136000000,
-          "short_term_debt": 9227000000,
-          "long_term_debt": 31067000000,
-          "cash_and_cash_equivalents": 76843000000,
-          "cash_primary": 20935000000,
-          "marketable_securities_current": 55908000000
+          "total_assets": 758376000000.0,
+          "total_liabilities": 315989000000.0,
+          "total_shareholders_equity": 442387000000.0,
+          "total_debt": 46136000000.0,
+          "short_term_debt": 9227000000.0,
+          "long_term_debt": 31067000000.0,
+          "cash_and_cash_equivalents": 76843000000.0,
+          "cash_primary": 20935000000.0,
+          "marketable_securities_current": 55908000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=789019",
       "data": {
         "shares_outstanding": 7425629076,
-        "revenue": 241832000000,
+        "revenue": 241832000000.0,
         "balance_sheet": {
-          "total_assets": 694228000000,
-          "total_liabilities": 279861000000,
-          "total_shareholders_equity": 414367000000,
-          "total_debt": 46156000000,
-          "short_term_debt": 8839000000,
-          "long_term_debt": 31423000000,
-          "cash_and_cash_equivalents": 78272000000,
-          "cash_primary": 32105000000,
-          "marketable_securities_current": 46167000000
+          "total_assets": 694228000000.0,
+          "total_liabilities": 279861000000.0,
+          "total_shareholders_equity": 414367000000.0,
+          "total_debt": 46156000000.0,
+          "short_term_debt": 8839000000.0,
+          "long_term_debt": 31423000000.0,
+          "cash_and_cash_equivalents": 78272000000.0,
+          "cash_primary": 32105000000.0,
+          "marketable_securities_current": 46167000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=789019",
       "data": {
         "shares_outstanding": 7432377655,
-        "revenue": 158946000000,
+        "revenue": 158946000000.0,
         "balance_sheet": {
-          "total_assets": 665302000000,
-          "total_liabilities": 274427000000,
-          "total_shareholders_equity": 390875000000,
-          "total_debt": 46207000000,
-          "short_term_debt": 4837000000,
-          "long_term_debt": 35425000000,
-          "cash_and_cash_equivalents": 89462000000,
-          "cash_primary": 24296000000,
-          "marketable_securities_current": 65166000000
+          "total_assets": 665302000000.0,
+          "total_liabilities": 274427000000.0,
+          "total_shareholders_equity": 390875000000.0,
+          "total_debt": 46207000000.0,
+          "short_term_debt": 4837000000.0,
+          "long_term_debt": 35425000000.0,
+          "cash_and_cash_equivalents": 89462000000.0,
+          "cash_primary": 24296000000.0,
+          "marketable_securities_current": 65166000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=789019",
       "data": {
         "shares_outstanding": 7433166379,
-        "revenue": 77673000000,
+        "revenue": 77673000000.0,
         "balance_sheet": {
-          "total_assets": 636351000000,
-          "total_liabilities": 273275000000,
-          "total_shareholders_equity": 363076000000,
-          "total_debt": 49208000000,
-          "short_term_debt": 7832000000,
-          "long_term_debt": 35376000000,
-          "cash_and_cash_equivalents": 102012000000,
-          "cash_primary": 28849000000,
-          "marketable_securities_current": 73163000000
+          "total_assets": 636351000000.0,
+          "total_liabilities": 273275000000.0,
+          "total_shareholders_equity": 363076000000.0,
+          "total_debt": 49208000000.0,
+          "short_term_debt": 7832000000.0,
+          "long_term_debt": 35376000000.0,
+          "cash_and_cash_equivalents": 102012000000.0,
+          "cash_primary": 28849000000.0,
+          "marketable_securities_current": 73163000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.microsoft.com/en-us/investor",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 65.5,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Microsoft maintains zero defined benefit pension plans or retiree healthcare OPEB obligations; all employee retirement plans operate under defined contribution matching."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Zero industrial contamination liabilities. Environmental commitments consist of voluntary long-term carbon removal purchases and nuclear energy power purchase agreements (Constellation Energy Three Mile Island PPA)."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "FTC cloud software licensing review, European Commission Teams unbundling monitoring, and routine intellectual property/patent litigation.",
-      "recent_settlements_scheduled_usd_b": 0.5,
-      "annual_legal_settlement_cash_drain_usd_b": 0.1,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal and regulatory risks are minor relative to scale, with no mass tort or systemic liability exposure."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 65.0,
-      "take_or_pay_commitments_usd_b": 28.0,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access agreements, Nvidia GPU cluster procurement, and green power purchase agreements total $65.0B over 5-15 years."
-    },
-    "equity_cash_flow_diversion_risk": "Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.",
-    "narrative": "Microsoft's off-balance sheet footprint is entirely forward-looking growth capital (cloud datacenters, GPU clusters, clean power) with zero dead-weight legacy worker or environmental encumbrances."
-  }
+  "last_updated": "2026-08-28T03:13:30.744105+00:00"
 }

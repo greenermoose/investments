@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1868275",
       "data": {
         "shares_outstanding": 361190063,
-        "revenue": 18626000000,
+        "revenue": 18626000000.0,
         "balance_sheet": {
-          "total_assets": 98253000000,
-          "total_liabilities": 65931000000,
-          "total_shareholders_equity": 31977000000,
-          "total_debt": 19111000000,
-          "short_term_debt": 363000000,
-          "long_term_debt": 19111000000,
-          "cash_and_cash_equivalents": 697000000,
-          "cash_primary": 697000000,
-          "marketable_securities_current": 0
+          "total_assets": 98253000000.0,
+          "total_liabilities": 65931000000.0,
+          "total_shareholders_equity": 31977000000.0,
+          "total_debt": 19111000000.0,
+          "short_term_debt": 363000000.0,
+          "long_term_debt": 19111000000.0,
+          "cash_and_cash_equivalents": 697000000.0,
+          "cash_primary": 697000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1868275",
       "data": {
         "shares_outstanding": 361990335,
-        "revenue": 11122000000,
+        "revenue": 11122000000.0,
         "balance_sheet": {
-          "total_assets": 96911000000,
-          "total_liabilities": 63091000000,
-          "total_shareholders_equity": 33483000000,
-          "total_debt": 16994000000,
-          "short_term_debt": 370000000,
-          "long_term_debt": 16994000000,
-          "cash_and_cash_equivalents": 800000000,
-          "cash_primary": 800000000,
-          "marketable_securities_current": 0
+          "total_assets": 96911000000.0,
+          "total_liabilities": 63091000000.0,
+          "total_shareholders_equity": 33483000000.0,
+          "total_debt": 16994000000.0,
+          "short_term_debt": 370000000.0,
+          "long_term_debt": 16994000000.0,
+          "cash_and_cash_equivalents": 800000000.0,
+          "cash_primary": 800000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1868275",
       "data": {
         "shares_outstanding": 312290080,
-        "revenue": 25533000000,
+        "revenue": 25533000000.0,
         "balance_sheet": {
-          "total_assets": 57249000000,
-          "total_liabilities": 42396000000,
-          "total_shareholders_equity": 14517000000,
-          "total_debt": 7250000000,
-          "short_term_debt": 92000000,
-          "long_term_debt": 7250000000,
-          "cash_and_cash_equivalents": 3641000000,
-          "cash_primary": 3641000000,
-          "marketable_securities_current": 0
+          "total_assets": 57249000000.0,
+          "total_liabilities": 42396000000.0,
+          "total_shareholders_equity": 14517000000.0,
+          "total_debt": 7250000000.0,
+          "short_term_debt": 92000000.0,
+          "long_term_debt": 7250000000.0,
+          "cash_and_cash_equivalents": 3641000000.0,
+          "cash_primary": 3641000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1868275",
       "data": {
         "shares_outstanding": 312405579,
-        "revenue": 19459000000,
+        "revenue": 19459000000.0,
         "balance_sheet": {
-          "total_assets": 56161000000,
-          "total_liabilities": 41469000000,
-          "total_shareholders_equity": 14350000000,
-          "total_debt": 7269000000,
-          "short_term_debt": 0,
-          "long_term_debt": 7269000000,
-          "cash_and_cash_equivalents": 3959000000,
-          "cash_primary": 3959000000,
-          "marketable_securities_current": 0
+          "total_assets": 56161000000.0,
+          "total_liabilities": 41469000000.0,
+          "total_shareholders_equity": 14350000000.0,
+          "total_debt": 7269000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7269000000.0,
+          "cash_and_cash_equivalents": 3959000000.0,
+          "cash_primary": 3959000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.constellationenergy.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 29.0,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.74,
-      "pbo_gross_usd_b": 7.44,
-      "plan_assets_usd_b": 6.7,
-      "annual_cash_contribution_usd_b": 0.22,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.49,
-      "narrative": "Constellation Energy Corporation sponsors utility and industrial defined benefit plans ($7.44B PBO vs $6.70B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 13.39,
-      "estimated_unreserved_exposure_usd_b": 3.35,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.8,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $13.39B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 14.87,
-      "take_or_pay_commitments_usd_b": 8.92,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $14.87B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "Constellation Energy Corporation's off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.598482+00:00"
 }

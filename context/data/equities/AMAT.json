@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
       "data": {
         "shares_outstanding": 793959430,
-        "revenue": 14922000000,
+        "revenue": 14922000000.0,
         "balance_sheet": {
-          "total_assets": 40286000000,
-          "total_liabilities": 16377000000,
-          "total_shareholders_equity": 23909000000,
-          "total_debt": 6455000000,
-          "short_term_debt": 1199000000,
-          "long_term_debt": 5256000000,
-          "cash_and_cash_equivalents": 8241000000,
-          "cash_primary": 6301000000,
-          "marketable_securities_current": 1940000000
+          "total_assets": 40286000000.0,
+          "total_liabilities": 16377000000.0,
+          "total_shareholders_equity": 23909000000.0,
+          "total_debt": 6455000000.0,
+          "short_term_debt": 1199000000.0,
+          "long_term_debt": 5256000000.0,
+          "cash_and_cash_equivalents": 8241000000.0,
+          "cash_primary": 6301000000.0,
+          "marketable_securities_current": 1940000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
       "data": {
         "shares_outstanding": 793609867,
-        "revenue": 7012000000,
+        "revenue": 7012000000.0,
         "balance_sheet": {
-          "total_assets": 37644000000,
-          "total_liabilities": 15927000000,
-          "total_shareholders_equity": 21717000000,
-          "total_debt": 6453000000,
-          "short_term_debt": 0,
-          "long_term_debt": 6453000000,
-          "cash_and_cash_equivalents": 8511000000,
-          "cash_primary": 7218000000,
-          "marketable_securities_current": 1293000000
+          "total_assets": 37644000000.0,
+          "total_liabilities": 15927000000.0,
+          "total_shareholders_equity": 21717000000.0,
+          "total_debt": 6453000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6453000000.0,
+          "cash_and_cash_equivalents": 8511000000.0,
+          "cash_primary": 7218000000.0,
+          "marketable_securities_current": 1293000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
       "data": {
         "shares_outstanding": 796642427,
-        "revenue": 28368000000,
+        "revenue": 28368000000.0,
         "balance_sheet": {
-          "total_assets": 36299000000,
-          "total_liabilities": 15884000000,
-          "total_shareholders_equity": 20415000000,
-          "total_debt": 6455000000,
-          "short_term_debt": 0,
-          "long_term_debt": 6455000000,
-          "cash_and_cash_equivalents": 8573000000,
-          "cash_primary": 7241000000,
-          "marketable_securities_current": 1332000000
+          "total_assets": 36299000000.0,
+          "total_liabilities": 15884000000.0,
+          "total_shareholders_equity": 20415000000.0,
+          "total_debt": 6455000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 6455000000.0,
+          "cash_and_cash_equivalents": 8573000000.0,
+          "cash_primary": 7241000000.0,
+          "marketable_securities_current": 1332000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=6951",
       "data": {
         "shares_outstanding": 796642427,
-        "revenue": 21568000000,
+        "revenue": 21568000000.0,
         "balance_sheet": {
-          "total_assets": 34211000000,
-          "total_liabilities": 14707000000,
-          "total_shareholders_equity": 19504000000,
-          "total_debt": 6163000000,
-          "short_term_debt": 700000000,
-          "long_term_debt": 5463000000,
-          "cash_and_cash_equivalents": 7014000000,
-          "cash_primary": 5384000000,
-          "marketable_securities_current": 1630000000
+          "total_assets": 34211000000.0,
+          "total_liabilities": 14707000000.0,
+          "total_shareholders_equity": 19504000000.0,
+          "total_debt": 6163000000.0,
+          "short_term_debt": 700000000.0,
+          "long_term_debt": 5463000000.0,
+          "cash_and_cash_equivalents": 7014000000.0,
+          "cash_primary": 5384000000.0,
+          "marketable_securities_current": 1630000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.appliedmaterials.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 10.43,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Applied Materials, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Applied Materials, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 9.93,
-      "take_or_pay_commitments_usd_b": 2.98,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $9.93B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Applied Materials, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.549809+00:00"
 }

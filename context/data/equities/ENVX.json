@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 218153440,
-        "revenue": 16624000,
+        "revenue": 16624000.0,
         "balance_sheet": {
-          "total_assets": 799619000,
-          "total_liabilities": 587630000,
-          "total_shareholders_equity": 209945000,
-          "total_debt": 532824000,
-          "short_term_debt": 10593000,
-          "long_term_debt": 520994000,
-          "cash_and_cash_equivalents": 475781000,
-          "cash_primary": 33741000,
-          "marketable_securities_current": 442040000
+          "total_assets": 799619000.0,
+          "total_liabilities": 587630000.0,
+          "total_shareholders_equity": 209945000.0,
+          "total_debt": 532824000.0,
+          "short_term_debt": 10593000.0,
+          "long_term_debt": 520994000.0,
+          "cash_and_cash_equivalents": 475781000.0,
+          "cash_primary": 33741000.0,
+          "marketable_securities_current": 442040000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 217224442,
-        "revenue": 7600000,
+        "revenue": 7600000.0,
         "balance_sheet": {
-          "total_assets": 833893000,
-          "total_liabilities": 591163000,
-          "total_shareholders_equity": 240672000,
-          "total_debt": 532884000,
-          "short_term_debt": 9436000,
-          "long_term_debt": 520160000,
-          "cash_and_cash_equivalents": 528736000,
-          "cash_primary": 88751000,
-          "marketable_securities_current": 439985000
+          "total_assets": 833893000.0,
+          "total_liabilities": 591163000.0,
+          "total_shareholders_equity": 240672000.0,
+          "total_debt": 532884000.0,
+          "short_term_debt": 9436000.0,
+          "long_term_debt": 520160000.0,
+          "cash_and_cash_equivalents": 528736000.0,
+          "cash_primary": 88751000.0,
+          "marketable_securities_current": 439985000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 215816004,
-        "revenue": 31821000,
+        "revenue": 31821000.0,
         "balance_sheet": {
-          "total_assets": 878975000,
-          "total_liabilities": 604964000,
-          "total_shareholders_equity": 271214000,
-          "total_debt": 532960000,
-          "short_term_debt": 9865000,
-          "long_term_debt": 519271000,
-          "cash_and_cash_equivalents": 512040000,
-          "cash_primary": 106014000,
-          "marketable_securities_current": 406026000
+          "total_assets": 878975000.0,
+          "total_liabilities": 604964000.0,
+          "total_shareholders_equity": 271214000.0,
+          "total_debt": 532960000.0,
+          "short_term_debt": 9865000.0,
+          "long_term_debt": 519271000.0,
+          "cash_and_cash_equivalents": 512040000.0,
+          "cash_primary": 106014000.0,
+          "marketable_securities_current": 406026000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1828318",
       "data": {
         "shares_outstanding": 196600013,
-        "revenue": 20556000,
+        "revenue": 20556000.0,
         "balance_sheet": {
-          "total_assets": 913709000,
-          "total_liabilities": 616606000,
-          "total_shareholders_equity": 294256000,
-          "total_debt": 533091000,
-          "short_term_debt": 10151000,
-          "long_term_debt": 518348000,
-          "cash_and_cash_equivalents": 558818000,
-          "cash_primary": 335502000,
-          "marketable_securities_current": 223316000
+          "total_assets": 913709000.0,
+          "total_liabilities": 616606000.0,
+          "total_shareholders_equity": 294256000.0,
+          "total_debt": 533091000.0,
+          "short_term_debt": 10151000.0,
+          "long_term_debt": 518348000.0,
+          "cash_and_cash_equivalents": 558818000.0,
+          "cash_primary": 335502000.0,
+          "marketable_securities_current": 223316000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://ir.enovix.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.03,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.01,
-      "plan_assets_usd_b": 0.01,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Enovix Corporation sponsors utility and industrial defined benefit plans ($0.01B PBO vs $0.01B assets) with predictable regulatory rate-base recovery mechanisms."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.01,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $0.01B."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
-      "recent_settlements_scheduled_usd_b": 0.4,
-      "annual_legal_settlement_cash_drain_usd_b": 0.05,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.02,
-      "take_or_pay_commitments_usd_b": 0.01,
-      "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $0.02B."
-    },
-    "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
-    "narrative": "Enovix Corporation's off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."
-  }
+  "last_updated": "2026-08-28T03:13:30.650177+00:00"
 }

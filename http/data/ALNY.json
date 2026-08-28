@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1178670",
       "data": {
         "shares_outstanding": 132623144,
-        "revenue": 2458123000,
+        "revenue": 2458123000.0,
         "balance_sheet": {
-          "total_assets": 5558769000,
-          "total_liabilities": 4204651000,
-          "total_shareholders_equity": 1354118000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 3308147000,
-          "cash_primary": 1708318000,
-          "marketable_securities_current": 1599829000
+          "total_assets": 5558769000.0,
+          "total_liabilities": 4204651000.0,
+          "total_shareholders_equity": 1354118000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 3308147000.0,
+          "cash_primary": 1708318000.0,
+          "marketable_securities_current": 1599829000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1178670",
       "data": {
         "shares_outstanding": 132113818,
-        "revenue": 3713937000,
+        "revenue": 3713937000.0,
         "balance_sheet": {
-          "total_assets": 4966331000,
-          "total_liabilities": 4177155000,
-          "total_shareholders_equity": 789176000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2908484000,
-          "cash_primary": 1657250000,
-          "marketable_securities_current": 1251234000
+          "total_assets": 4966331000.0,
+          "total_liabilities": 4177155000.0,
+          "total_shareholders_equity": 789176000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2908484000.0,
+          "cash_primary": 1657250000.0,
+          "marketable_securities_current": 1251234000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1178670",
       "data": {
         "shares_outstanding": 131079015,
-        "revenue": 2616904000,
+        "revenue": 2616904000.0,
         "balance_sheet": {
-          "total_assets": 4851662000,
-          "total_liabilities": 4617768000,
-          "total_shareholders_equity": 233894000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2724624000,
-          "cash_primary": 1490249000,
-          "marketable_securities_current": 1234375000
+          "total_assets": 4851662000.0,
+          "total_liabilities": 4617768000.0,
+          "total_shareholders_equity": 233894000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2724624000.0,
+          "cash_primary": 1490249000.0,
+          "marketable_securities_current": 1234375000.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1178670",
       "data": {
         "shares_outstanding": 130388393,
-        "revenue": 1367878000,
+        "revenue": 1367878000.0,
         "balance_sheet": {
-          "total_assets": 4566019000,
-          "total_liabilities": 4315428000,
-          "total_shareholders_equity": 250591000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 2857585000,
-          "cash_primary": 1113685000,
-          "marketable_securities_current": 1743900000
+          "total_assets": 4566019000.0,
+          "total_liabilities": 4315428000.0,
+          "total_shareholders_equity": 250591000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 2857585000.0,
+          "cash_primary": 1113685000.0,
+          "marketable_securities_current": 1743900000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.alnylam.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.548346+00:00"
 }

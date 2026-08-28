@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 449086551,
-        "revenue": 20901000000,
+        "revenue": 22573080000.0,
         "balance_sheet": {
-          "total_assets": 29872000000,
-          "total_liabilities": 21569000000,
-          "total_shareholders_equity": 8303000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 529000000,
-          "cash_primary": 529000000,
-          "marketable_securities_current": 0
+          "total_assets": 32261760000.0,
+          "total_liabilities": 23294520000.0,
+          "total_shareholders_equity": 8967240000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 571320000.0,
+          "cash_primary": 571320000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 460947057,
-        "revenue": 10274000000,
+        "revenue": 11095920000.0,
         "balance_sheet": {
-          "total_assets": 31786000000,
-          "total_liabilities": 23281000000,
-          "total_shareholders_equity": 8505000000,
-          "total_debt": 12000000000,
-          "short_term_debt": 0,
-          "long_term_debt": 12000000000,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 34328880000.0,
+          "total_liabilities": 25143480000.0,
+          "total_shareholders_equity": 9185400000.0,
+          "total_debt": 12960000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12960000000.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 460947057,
-        "revenue": 20438000000,
+        "revenue": 22073040000.0,
         "balance_sheet": {
-          "total_assets": 31100000000,
-          "total_liabilities": 22115000000,
-          "total_shareholders_equity": 8985000000,
-          "total_debt": 11300000000,
-          "short_term_debt": 0,
-          "long_term_debt": 11300000000,
-          "cash_and_cash_equivalents": 611000000,
-          "cash_primary": 611000000,
-          "marketable_securities_current": 0
+          "total_assets": 33588000000.0,
+          "total_liabilities": 23884200000.0,
+          "total_shareholders_equity": 9703800000.0,
+          "total_debt": 12204000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 12204000000.0,
+          "cash_and_cash_equivalents": 659880000.0,
+          "cash_primary": 659880000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1650107",
       "data": {
         "shares_outstanding": 459200818,
-        "revenue": 9828000000,
+        "revenue": 10614240000.0,
         "balance_sheet": {
-          "total_assets": 32101000000,
-          "total_liabilities": 23092000000,
-          "total_shareholders_equity": 9009000000,
-          "total_debt": 12200000000,
-          "short_term_debt": 0,
-          "long_term_debt": 12200000000,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 34669080000.0,
+          "total_liabilities": 24939360000.0,
+          "total_shareholders_equity": 9729720000.0,
+          "total_debt": 13176000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 13176000000.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.cocacolaep.com/investors/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.591619+00:00"
 }

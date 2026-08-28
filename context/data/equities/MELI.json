@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1099590",
       "data": {
         "shares_outstanding": 50697182,
-        "revenue": 19014000000,
+        "revenue": 19014000000.0,
         "balance_sheet": {
-          "total_assets": 51356000000,
-          "total_liabilities": 43522000000,
-          "total_shareholders_equity": 7834000000,
-          "total_debt": 10675000000,
-          "short_term_debt": 49000000,
-          "long_term_debt": 10626000000,
-          "cash_and_cash_equivalents": 5730000000,
-          "cash_primary": 3649000000,
-          "marketable_securities_current": 2081000000
+          "total_assets": 51356000000.0,
+          "total_liabilities": 43522000000.0,
+          "total_shareholders_equity": 7834000000.0,
+          "total_debt": 10675000000.0,
+          "short_term_debt": 49000000.0,
+          "long_term_debt": 10626000000.0,
+          "cash_and_cash_equivalents": 5730000000.0,
+          "cash_primary": 3649000000.0,
+          "marketable_securities_current": 2081000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1099590",
       "data": {
         "shares_outstanding": 50697182,
-        "revenue": 8845000000,
+        "revenue": 8845000000.0,
         "balance_sheet": {
-          "total_assets": 46934000000,
-          "total_liabilities": 39653000000,
-          "total_shareholders_equity": 7281000000,
-          "total_debt": 4611000000,
-          "short_term_debt": 48000000,
-          "long_term_debt": 9927000000,
-          "cash_and_cash_equivalents": 5650000000,
-          "cash_primary": 3677000000,
-          "marketable_securities_current": 1973000000
+          "total_assets": 46934000000.0,
+          "total_liabilities": 39653000000.0,
+          "total_shareholders_equity": 7281000000.0,
+          "total_debt": 4611000000.0,
+          "short_term_debt": 48000000.0,
+          "long_term_debt": 9927000000.0,
+          "cash_and_cash_equivalents": 5650000000.0,
+          "cash_primary": 3677000000.0,
+          "marketable_securities_current": 1973000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1099590",
       "data": {
         "shares_outstanding": 50697182,
-        "revenue": 28893000000,
+        "revenue": 28893000000.0,
         "balance_sheet": {
-          "total_assets": 42667000000,
-          "total_liabilities": 35919000000,
-          "total_shareholders_equity": 6748000000,
-          "total_debt": 4570000000,
-          "short_term_debt": 48000000,
-          "long_term_debt": 9193000000,
-          "cash_and_cash_equivalents": 6299000000,
-          "cash_primary": 3670000000,
-          "marketable_securities_current": 2629000000
+          "total_assets": 42667000000.0,
+          "total_liabilities": 35919000000.0,
+          "total_shareholders_equity": 6748000000.0,
+          "total_debt": 4570000000.0,
+          "short_term_debt": 48000000.0,
+          "long_term_debt": 9193000000.0,
+          "cash_and_cash_equivalents": 6299000000.0,
+          "cash_primary": 3670000000.0,
+          "marketable_securities_current": 2629000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1099590",
       "data": {
         "shares_outstanding": 50697375,
-        "revenue": 20134000000,
+        "revenue": 20134000000.0,
         "balance_sheet": {
-          "total_assets": 36691000000,
-          "total_liabilities": 30473000000,
-          "total_shareholders_equity": 6218000000,
-          "total_debt": 3409000000,
-          "short_term_debt": 42000000,
-          "long_term_debt": 7840000000,
-          "cash_and_cash_equivalents": 6297000000,
-          "cash_primary": 2582000000,
-          "marketable_securities_current": 3715000000
+          "total_assets": 36691000000.0,
+          "total_liabilities": 30473000000.0,
+          "total_shareholders_equity": 6218000000.0,
+          "total_debt": 3409000000.0,
+          "short_term_debt": 42000000.0,
+          "long_term_debt": 7840000000.0,
+          "cash_and_cash_equivalents": 6297000000.0,
+          "cash_primary": 2582000000.0,
+          "marketable_securities_current": 3715000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.mercadolibre.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 6.25,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.17,
-      "pbo_gross_usd_b": 3.47,
-      "plan_assets_usd_b": 3.3,
-      "annual_cash_contribution_usd_b": 0.09,
-      "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.58,
-      "narrative": "MercadoLibre, Inc. maintains legacy defined benefit plans ($3.47B PBO vs $3.30B assets; $-0.17B gap) and $0.58B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.05,
-      "estimated_unreserved_exposure_usd_b": 0.02,
-      "superfund_and_pfas_sites_count": 1,
-      "annual_remediation_cash_drain_usd_b": 0.01,
-      "risk_level": "MINIMAL",
-      "narrative": "Routine packaging recycling, water conservation, and agricultural supply chain environmental compliance."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine consumer product advertising class actions, supply chain commercial disputes, and slip-and-fall tort claims.",
-      "recent_settlements_scheduled_usd_b": 0.2,
-      "annual_legal_settlement_cash_drain_usd_b": 0.03,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 5.2,
-      "take_or_pay_commitments_usd_b": 1.3,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $5.20B across 3-5 years."
-    },
-    "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
-    "narrative": "MercadoLibre, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."
-  }
+  "last_updated": "2026-08-28T03:13:30.725349+00:00"
 }

@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=946581",
       "data": {
         "shares_outstanding": 185666663,
-        "revenue": 1533900000,
+        "revenue": 1533900000.0,
         "balance_sheet": {
-          "total_assets": 9064200000,
-          "total_liabilities": 5455800000,
-          "total_shareholders_equity": 3608400000,
-          "total_debt": 1900000000,
-          "short_term_debt": 629900000,
-          "long_term_debt": 1889800000,
-          "cash_and_cash_equivalents": 1826600000,
-          "cash_primary": 1364900000,
-          "marketable_securities_current": 461700000
+          "total_assets": 9064200000.0,
+          "total_liabilities": 5455800000.0,
+          "total_shareholders_equity": 3608400000.0,
+          "total_debt": 1900000000.0,
+          "short_term_debt": 629900000.0,
+          "long_term_debt": 1889800000.0,
+          "cash_and_cash_equivalents": 1826600000.0,
+          "cash_primary": 1364900000.0,
+          "marketable_securities_current": 461700000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=946581",
       "data": {
         "shares_outstanding": 185175456,
-        "revenue": 6656400000,
+        "revenue": 6656400000.0,
         "balance_sheet": {
-          "total_assets": 9383200000,
-          "total_liabilities": 5872300000,
-          "total_shareholders_equity": 3510900000,
-          "total_debt": 2500000000,
-          "short_term_debt": 30000000,
-          "long_term_debt": 2488000000,
-          "cash_and_cash_equivalents": 1989300000,
-          "cash_primary": 1545500000,
-          "marketable_securities_current": 443800000
+          "total_assets": 9383200000.0,
+          "total_liabilities": 5872300000.0,
+          "total_shareholders_equity": 3510900000.0,
+          "total_debt": 2500000000.0,
+          "short_term_debt": 30000000.0,
+          "long_term_debt": 2488000000.0,
+          "cash_and_cash_equivalents": 1989300000.0,
+          "cash_primary": 1545500000.0,
+          "marketable_securities_current": 443800000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=946581",
       "data": {
         "shares_outstanding": 184778832,
-        "revenue": 4976600000,
+        "revenue": 4976600000.0,
         "balance_sheet": {
-          "total_assets": 10010500000,
-          "total_liabilities": 6514900000,
-          "total_shareholders_equity": 3495600000,
-          "total_debt": 2500000000,
-          "short_term_debt": 582200000,
-          "long_term_debt": 2487000000,
-          "cash_and_cash_equivalents": 2359000000,
-          "cash_primary": 2160000000,
-          "marketable_securities_current": 199000000
+          "total_assets": 10010500000.0,
+          "total_liabilities": 6514900000.0,
+          "total_shareholders_equity": 3495600000.0,
+          "total_debt": 2500000000.0,
+          "short_term_debt": 582200000.0,
+          "long_term_debt": 2487000000.0,
+          "cash_and_cash_equivalents": 2359000000.0,
+          "cash_primary": 2160000000.0,
+          "marketable_securities_current": 199000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=946581",
       "data": {
         "shares_outstanding": 184470212,
-        "revenue": 3277600000,
+        "revenue": 3277600000.0,
         "balance_sheet": {
-          "total_assets": 10080300000,
-          "total_liabilities": 6648400000,
-          "total_shareholders_equity": 3431900000,
-          "total_debt": 2531300000,
-          "short_term_debt": 549300000,
-          "long_term_debt": 2517300000,
-          "cash_and_cash_equivalents": 2115500000,
-          "cash_primary": 1869100000,
-          "marketable_securities_current": 246400000
+          "total_assets": 10080300000.0,
+          "total_liabilities": 6648400000.0,
+          "total_shareholders_equity": 3431900000.0,
+          "total_debt": 2531300000.0,
+          "short_term_debt": 549300000.0,
+          "long_term_debt": 2517300000.0,
+          "cash_and_cash_equivalents": 2115500000.0,
+          "cash_primary": 1869100000.0,
+          "marketable_securities_current": 246400000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.take2games.com/ir",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MINIMAL",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.83,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "Take-Two Interactive Software, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "Take-Two Interactive Software, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.33,
-      "take_or_pay_commitments_usd_b": 0.7,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $2.33B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "Take-Two Interactive Software, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.840420+00:00"
 }

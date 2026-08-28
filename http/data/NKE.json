@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1479800000,
-        "revenue": 46398000000,
+        "revenue": 46398000000.0,
         "balance_sheet": {
-          "total_assets": 38410000000,
-          "total_liabilities": 38410000000,
-          "total_shareholders_equity": 14865000000,
-          "total_debt": 7942000000,
-          "short_term_debt": 2000000000,
-          "long_term_debt": 5942000000,
-          "cash_and_cash_equivalents": 7563000000,
-          "cash_primary": 7563000000,
-          "marketable_securities_current": 0
+          "total_assets": 38410000000.0,
+          "total_liabilities": 38410000000.0,
+          "total_shareholders_equity": 14865000000.0,
+          "total_debt": 7942000000.0,
+          "short_term_debt": 2000000000.0,
+          "long_term_debt": 5942000000.0,
+          "cash_and_cash_equivalents": 7563000000.0,
+          "cash_primary": 7563000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1478900000,
-        "revenue": 35426000000,
+        "revenue": 35426000000.0,
         "balance_sheet": {
-          "total_assets": 37064000000,
-          "total_liabilities": 37064000000,
-          "total_shareholders_equity": 14090000000,
-          "total_debt": 8029000000,
-          "short_term_debt": 999000000,
-          "long_term_debt": 7030000000,
-          "cash_and_cash_equivalents": 6660000000,
-          "cash_primary": 6660000000,
-          "marketable_securities_current": 0
+          "total_assets": 37064000000.0,
+          "total_liabilities": 37064000000.0,
+          "total_shareholders_equity": 14090000000.0,
+          "total_debt": 8029000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 7030000000.0,
+          "cash_and_cash_equivalents": 6660000000.0,
+          "cash_primary": 6660000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1478100000,
-        "revenue": 24147000000,
+        "revenue": 24147000000.0,
         "balance_sheet": {
-          "total_assets": 37787000000,
-          "total_liabilities": 37787000000,
-          "total_shareholders_equity": 14085000000,
-          "total_debt": 8015000000,
-          "short_term_debt": 999000000,
-          "long_term_debt": 7016000000,
-          "cash_and_cash_equivalents": 6974000000,
-          "cash_primary": 6974000000,
-          "marketable_securities_current": 0
+          "total_assets": 37787000000.0,
+          "total_liabilities": 37787000000.0,
+          "total_shareholders_equity": 14085000000.0,
+          "total_debt": 8015000000.0,
+          "short_term_debt": 999000000.0,
+          "long_term_debt": 7016000000.0,
+          "cash_and_cash_equivalents": 6974000000.0,
+          "cash_primary": 6974000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,21 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=320187",
       "data": {
         "shares_outstanding": 1476600000,
-        "revenue": 11720000000,
+        "revenue": 11720000000.0,
         "balance_sheet": {
-          "total_assets": 37334000000,
-          "total_liabilities": 37334000000,
-          "total_shareholders_equity": 13468000000,
-          "total_debt": 7996000000,
-          "short_term_debt": 0,
-          "long_term_debt": 7996000000,
-          "cash_and_cash_equivalents": 7024000000,
-          "cash_primary": 7024000000,
-          "marketable_securities_current": 0
+          "total_assets": 37334000000.0,
+          "total_liabilities": 37334000000.0,
+          "total_shareholders_equity": 13468000000.0,
+          "total_debt": 7996000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 7996000000.0,
+          "cash_and_cash_equivalents": 7024000000.0,
+          "cash_primary": 7024000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.nike.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00"
+  "last_updated": "2026-08-28T03:13:30.757707+00:00"
 }

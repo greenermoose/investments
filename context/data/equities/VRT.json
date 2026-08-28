@@ -1,7 +1,7 @@
 {
   "symbol": "VRT",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
-  "last_updated": "2026-08-28T02:55:53.771212+00:00",
+  "last_updated": "2026-08-28T03:13:30.855666+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
       "data": {
         "shares_outstanding": 384108816,
-        "revenue": 5923800000,
+        "revenue": 5923800000.0,
         "balance_sheet": {
-          "total_assets": 15900900000,
-          "total_liabilities": 11143300000,
-          "total_shareholders_equity": 4757600000,
-          "total_debt": 2939800000,
-          "short_term_debt": 0,
-          "long_term_debt": 2939800000,
-          "cash_and_cash_equivalents": 2810600000,
-          "cash_primary": 2810600000,
-          "marketable_securities_current": 0
+          "total_assets": 15900900000.0,
+          "total_liabilities": 11143300000.0,
+          "total_shareholders_equity": 4757600000.0,
+          "total_debt": 2939800000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2939800000.0,
+          "cash_and_cash_equivalents": 2810600000.0,
+          "cash_primary": 2810600000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
       "data": {
         "shares_outstanding": 382598464,
-        "revenue": 2649500000,
+        "revenue": 2649500000.0,
         "balance_sheet": {
-          "total_assets": 13400100000,
-          "total_liabilities": 9155200000,
-          "total_shareholders_equity": 4244900000,
-          "total_debt": 2922200000,
-          "short_term_debt": 0,
-          "long_term_debt": 2922200000,
-          "cash_and_cash_equivalents": 2150600000,
-          "cash_primary": 2150600000,
-          "marketable_securities_current": 0
+          "total_assets": 13400100000.0,
+          "total_liabilities": 9155200000.0,
+          "total_shareholders_equity": 4244900000.0,
+          "total_debt": 2922200000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2922200000.0,
+          "cash_and_cash_equivalents": 2150600000.0,
+          "cash_primary": 2150600000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
       "data": {
         "shares_outstanding": 382338313,
-        "revenue": 10229900000,
+        "revenue": 10229900000.0,
         "balance_sheet": {
-          "total_assets": 12212400000,
-          "total_liabilities": 8271100000,
-          "total_shareholders_equity": 3941300000,
-          "total_debt": 954500000,
-          "short_term_debt": 20900000,
-          "long_term_debt": 2892100000,
-          "cash_and_cash_equivalents": 1728400000,
-          "cash_primary": 1728400000,
-          "marketable_securities_current": 0
+          "total_assets": 12212400000.0,
+          "total_liabilities": 8271100000.0,
+          "total_shareholders_equity": 3941300000.0,
+          "total_debt": 954500000.0,
+          "short_term_debt": 20900000.0,
+          "long_term_debt": 2892100000.0,
+          "cash_and_cash_equivalents": 1728400000.0,
+          "cash_primary": 1728400000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
       "data": {
         "shares_outstanding": 381866664,
-        "revenue": 7349900000,
+        "revenue": 7349900000.0,
         "balance_sheet": {
-          "total_assets": 10816300000,
-          "total_liabilities": 7307600000,
-          "total_shareholders_equity": 3508700000,
-          "total_debt": 2918500000,
-          "short_term_debt": 20900000,
-          "long_term_debt": 2897600000,
-          "cash_and_cash_equivalents": 1396000000,
-          "cash_primary": 1396000000,
-          "marketable_securities_current": 0
+          "total_assets": 10816300000.0,
+          "total_liabilities": 7307600000.0,
+          "total_shareholders_equity": 3508700000.0,
+          "total_debt": 2918500000.0,
+          "short_term_debt": 20900000.0,
+          "long_term_debt": 2897600000.0,
+          "cash_and_cash_equivalents": 1396000000.0,
+          "cash_primary": 1396000000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "name": "Vertiv Holdings Co",
-  "investor_relations_url": "https://investors.vertiv.com/",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 3.93,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.16,
-      "pbo_gross_usd_b": 2.25,
-      "plan_assets_usd_b": 2.09,
-      "annual_cash_contribution_usd_b": 0.07,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.41,
-      "narrative": "Vertiv Holdings Co sponsors defined benefit pension plans with $2.25B in gross PBO against $2.09B in assets ($-0.16B net gap) and $0.41B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.56,
-      "take_or_pay_commitments_usd_b": 0.77,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $2.56B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Vertiv Holdings Co manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "investor_relations_url": "https://investors.vertiv.com/"
 }

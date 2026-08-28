@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
       "data": {
         "shares_outstanding": 1852474917,
-        "revenue": 7417000000,
+        "revenue": 7417000000.0,
         "balance_sheet": {
-          "total_assets": 44726000000,
-          "total_liabilities": 30638000000,
-          "total_shareholders_equity": 14088000000,
-          "total_debt": 18864000000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1390000000,
-          "cash_primary": 1007000000,
-          "marketable_securities_current": 383000000
+          "total_assets": 44726000000.0,
+          "total_liabilities": 30638000000.0,
+          "total_shareholders_equity": 14088000000.0,
+          "total_debt": 18864000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1390000000.0,
+          "cash_primary": 1007000000.0,
+          "marketable_securities_current": 383000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
       "data": {
         "shares_outstanding": 1858138856,
-        "revenue": 3482000000,
+        "revenue": 3482000000.0,
         "balance_sheet": {
-          "total_assets": 44232000000,
-          "total_liabilities": 30651000000,
-          "total_shareholders_equity": 13581000000,
-          "total_debt": 18868000000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 1109000000,
-          "cash_primary": 964000000,
-          "marketable_securities_current": 145000000
+          "total_assets": 44232000000.0,
+          "total_liabilities": 30651000000.0,
+          "total_shareholders_equity": 13581000000.0,
+          "total_debt": 18868000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 1109000000.0,
+          "cash_primary": 964000000.0,
+          "marketable_securities_current": 145000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
       "data": {
         "shares_outstanding": 1862136956,
-        "revenue": 14092000000,
+        "revenue": 14092000000.0,
         "balance_sheet": {
-          "total_assets": 43682000000,
-          "total_liabilities": 30522000000,
-          "total_shareholders_equity": 13160000000,
-          "total_debt": 18873000000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 675000000,
-          "cash_primary": 670000000,
-          "marketable_securities_current": 5000000
+          "total_assets": 43682000000.0,
+          "total_liabilities": 30522000000.0,
+          "total_shareholders_equity": 13160000000.0,
+          "total_debt": 18873000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 675000000.0,
+          "cash_primary": 670000000.0,
+          "marketable_securities_current": 5000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=277948",
       "data": {
         "shares_outstanding": 1862136956,
-        "revenue": 10584000000,
+        "revenue": 10584000000.0,
         "balance_sheet": {
-          "total_assets": 43279000000,
-          "total_liabilities": 30521000000,
-          "total_shareholders_equity": 12758000000,
-          "total_debt": 19162000000,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 618000000,
-          "cash_primary": 612000000,
-          "marketable_securities_current": 6000000
+          "total_assets": 43279000000.0,
+          "total_liabilities": 30521000000.0,
+          "total_shareholders_equity": 12758000000.0,
+          "total_debt": 19162000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 618000000.0,
+          "cash_primary": 612000000.0,
+          "marketable_securities_current": 6000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investors.csx.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.1,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.22,
-      "pbo_gross_usd_b": 3.1,
-      "plan_assets_usd_b": 2.88,
-      "annual_cash_contribution_usd_b": 0.09,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.56,
-      "narrative": "CSX Corporation sponsors defined benefit pension plans with $3.10B in gross PBO against $2.88B in assets ($-0.22B net gap) and $0.56B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 3.52,
-      "take_or_pay_commitments_usd_b": 1.06,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $3.52B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "CSX Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.618648+00:00"
 }

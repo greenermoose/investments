@@ -1,7 +1,7 @@
 {
   "symbol": "ABT",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
-  "last_updated": "2026-08-28T02:55:55.774712+00:00",
+  "last_updated": "2026-08-28T03:13:30.537836+00:00",
   "filings": [
     {
       "type": "10-Q",
@@ -11,17 +11,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
       "data": {
         "shares_outstanding": 1741812429,
-        "revenue": 11164000000,
+        "revenue": 11164000000.0,
         "balance_sheet": {
-          "total_assets": 110429000000,
-          "total_liabilities": 110429000000,
-          "total_shareholders_equity": 52061000000,
-          "total_debt": 34047000000,
-          "short_term_debt": 4409000000,
-          "long_term_debt": 29638000000,
-          "cash_and_cash_equivalents": 7295000000,
-          "cash_primary": 6803000000,
-          "marketable_securities_current": 492000000
+          "total_assets": 110429000000.0,
+          "total_liabilities": 110429000000.0,
+          "total_shareholders_equity": 52061000000.0,
+          "total_debt": 34047000000.0,
+          "short_term_debt": 4409000000.0,
+          "long_term_debt": 29638000000.0,
+          "cash_and_cash_equivalents": 7295000000.0,
+          "cash_primary": 6803000000.0,
+          "marketable_securities_current": 492000000.0
         }
       }
     },
@@ -33,17 +33,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
       "data": {
         "shares_outstanding": 1738871947,
-        "revenue": 44328000000,
+        "revenue": 44328000000.0,
         "balance_sheet": {
-          "total_assets": 86713000000,
-          "total_liabilities": 86713000000,
-          "total_shareholders_equity": 52130000000,
-          "total_debt": 12929000000,
-          "short_term_debt": 3033000000,
-          "long_term_debt": 9896000000,
-          "cash_and_cash_equivalents": 8939000000,
-          "cash_primary": 8522000000,
-          "marketable_securities_current": 417000000
+          "total_assets": 86713000000.0,
+          "total_liabilities": 86713000000.0,
+          "total_shareholders_equity": 52130000000.0,
+          "total_debt": 12929000000.0,
+          "short_term_debt": 3033000000.0,
+          "long_term_debt": 9896000000.0,
+          "cash_and_cash_equivalents": 8939000000.0,
+          "cash_primary": 8522000000.0,
+          "marketable_securities_current": 417000000.0
         }
       }
     },
@@ -55,17 +55,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
       "data": {
         "shares_outstanding": 1738871947,
-        "revenue": 32869000000,
+        "revenue": 32869000000.0,
         "balance_sheet": {
-          "total_assets": 84181000000,
-          "total_liabilities": 84181000000,
-          "total_shareholders_equity": 50954000000,
-          "total_debt": 12941000000,
-          "short_term_debt": 1345000000,
-          "long_term_debt": 11596000000,
-          "cash_and_cash_equivalents": 7733000000,
-          "cash_primary": 7511000000,
-          "marketable_securities_current": 222000000
+          "total_assets": 84181000000.0,
+          "total_liabilities": 84181000000.0,
+          "total_shareholders_equity": 50954000000.0,
+          "total_debt": 12941000000.0,
+          "short_term_debt": 1345000000.0,
+          "long_term_debt": 11596000000.0,
+          "cash_and_cash_equivalents": 7733000000.0,
+          "cash_primary": 7511000000.0,
+          "marketable_securities_current": 222000000.0
         }
       }
     },
@@ -77,57 +77,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
       "data": {
         "shares_outstanding": 1740459014,
-        "revenue": 21500000000,
+        "revenue": 21500000000.0,
         "balance_sheet": {
-          "total_assets": 83999000000,
-          "total_liabilities": 83999000000,
-          "total_shareholders_equity": 50565000000,
-          "total_debt": 13437000000,
-          "short_term_debt": 507000000,
-          "long_term_debt": 12930000000,
-          "cash_and_cash_equivalents": 7282000000,
-          "cash_primary": 6951000000,
-          "marketable_securities_current": 331000000
+          "total_assets": 83999000000.0,
+          "total_liabilities": 83999000000.0,
+          "total_shareholders_equity": 50565000000.0,
+          "total_debt": 13437000000.0,
+          "short_term_debt": 507000000.0,
+          "long_term_debt": 12930000000.0,
+          "cash_and_cash_equivalents": 7282000000.0,
+          "cash_primary": 6951000000.0,
+          "marketable_securities_current": 331000000.0
         }
       }
     }
   ],
   "name": "Abbott Laboratories",
-  "investor_relations_url": "https://www.abbottinvestor.com/",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 14.33,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.68,
-      "pbo_gross_usd_b": 9.75,
-      "plan_assets_usd_b": 9.07,
-      "annual_cash_contribution_usd_b": 0.29,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.77,
-      "narrative": "Abbott Laboratories sponsors defined benefit pension plans with $9.75B in gross PBO against $9.07B in assets ($-0.68B net gap) and $1.77B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 11.08,
-      "take_or_pay_commitments_usd_b": 3.32,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $11.08B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Abbott Laboratories manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "investor_relations_url": "https://www.abbottinvestor.com/"
 }

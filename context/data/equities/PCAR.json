@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
       "data": {
         "shares_outstanding": 526286229,
-        "revenue": 14323200000,
+        "revenue": 14323200000.0,
         "balance_sheet": {
-          "total_assets": 43980100000,
-          "total_liabilities": 43980100000,
-          "total_shareholders_equity": 20321300000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 43980100000.0,
+          "total_liabilities": 43980100000.0,
+          "total_shareholders_equity": 20321300000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
       "data": {
         "shares_outstanding": 525894443,
-        "revenue": 6776500000,
+        "revenue": 6776500000.0,
         "balance_sheet": {
-          "total_assets": 43553500000,
-          "total_liabilities": 43553500000,
-          "total_shareholders_equity": 19756600000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 43553500000.0,
+          "total_liabilities": 43553500000.0,
+          "total_shareholders_equity": 19756600000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
       "data": {
         "shares_outstanding": 525204359,
-        "revenue": 28444800000,
+        "revenue": 28444800000.0,
         "balance_sheet": {
-          "total_assets": 44336200000,
-          "total_liabilities": 44336200000,
-          "total_shareholders_equity": 19264000000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 44336200000.0,
+          "total_liabilities": 44336200000.0,
+          "total_shareholders_equity": 19264000000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
       "data": {
         "shares_outstanding": 525103392,
-        "revenue": 21624000000,
+        "revenue": 21624000000.0,
         "balance_sheet": {
-          "total_assets": 44201200000,
-          "total_liabilities": 44201200000,
-          "total_shareholders_equity": 19368600000,
-          "total_debt": 0,
-          "short_term_debt": 0,
-          "long_term_debt": 0,
-          "cash_and_cash_equivalents": 0,
-          "cash_primary": 0,
-          "marketable_securities_current": 0
+          "total_assets": 44201200000.0,
+          "total_liabilities": 44201200000.0,
+          "total_shareholders_equity": 19368600000.0,
+          "total_debt": 0.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 0.0,
+          "cash_and_cash_equivalents": 0.0,
+          "cash_primary": 0.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.paccar.com/investors/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 9.49,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.44,
-      "pbo_gross_usd_b": 6.26,
-      "plan_assets_usd_b": 5.82,
-      "annual_cash_contribution_usd_b": 0.19,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 1.14,
-      "narrative": "PACCAR Inc sponsors defined benefit pension plans with $6.26B in gross PBO against $5.82B in assets ($-0.44B net gap) and $1.14B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 7.11,
-      "take_or_pay_commitments_usd_b": 2.13,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $7.11B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "PACCAR Inc manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.780665+00:00"
 }

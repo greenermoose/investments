@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723254",
       "data": {
         "shares_outstanding": 399889646,
-        "revenue": 8359558000,
+        "revenue": 8359558000.0,
         "balance_sheet": {
-          "total_assets": 10233721000,
-          "total_liabilities": 10233721000,
-          "total_shareholders_equity": 4788383000,
-          "total_debt": 2656791000,
-          "short_term_debt": 229490000,
-          "long_term_debt": 2427301000,
-          "cash_and_cash_equivalents": 183204000,
-          "cash_primary": 183204000,
-          "marketable_securities_current": 0
+          "total_assets": 10233721000.0,
+          "total_liabilities": 10233721000.0,
+          "total_shareholders_equity": 4788383000.0,
+          "total_debt": 2656791000.0,
+          "short_term_debt": 229490000.0,
+          "long_term_debt": 2427301000.0,
+          "cash_and_cash_equivalents": 183204000.0,
+          "cash_primary": 183204000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723254",
       "data": {
         "shares_outstanding": 401866678,
-        "revenue": 5518114000,
+        "revenue": 5518114000.0,
         "balance_sheet": {
-          "total_assets": 10132881000,
-          "total_liabilities": 10132881000,
-          "total_shareholders_equity": 4455347000,
-          "total_debt": 2977279000,
-          "short_term_debt": 550750000,
-          "long_term_debt": 2426529000,
-          "cash_and_cash_equivalents": 200842000,
-          "cash_primary": 200842000,
-          "marketable_securities_current": 0
+          "total_assets": 10132881000.0,
+          "total_liabilities": 10132881000.0,
+          "total_shareholders_equity": 4455347000.0,
+          "total_debt": 2977279000.0,
+          "short_term_debt": 550750000.0,
+          "long_term_debt": 2426529000.0,
+          "cash_and_cash_equivalents": 200842000.0,
+          "cash_primary": 200842000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723254",
       "data": {
         "shares_outstanding": 402977926,
-        "revenue": 2718122000,
+        "revenue": 2718122000.0,
         "balance_sheet": {
-          "total_assets": 9837690000,
-          "total_liabilities": 9837690000,
-          "total_shareholders_equity": 4755700000,
-          "total_debt": 2425757000,
-          "short_term_debt": 0,
-          "long_term_debt": 2425757000,
-          "cash_and_cash_equivalents": 138143000,
-          "cash_primary": 138143000,
-          "marketable_securities_current": 0
+          "total_assets": 9837690000.0,
+          "total_liabilities": 9837690000.0,
+          "total_shareholders_equity": 4755700000.0,
+          "total_debt": 2425757000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2425757000.0,
+          "cash_and_cash_equivalents": 138143000.0,
+          "cash_primary": 138143000.0,
+          "marketable_securities_current": 0.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=723254",
       "data": {
         "shares_outstanding": 403786963,
-        "revenue": 10340181000,
+        "revenue": 10340181000.0,
         "balance_sheet": {
-          "total_assets": 9825241000,
-          "total_liabilities": 9825241000,
-          "total_shareholders_equity": 4684481000,
-          "total_debt": 2424999000,
-          "short_term_debt": 0,
-          "long_term_debt": 2424999000,
-          "cash_and_cash_equivalents": 263973000,
-          "cash_primary": 263973000,
-          "marketable_securities_current": 0
+          "total_assets": 9825241000.0,
+          "total_liabilities": 9825241000.0,
+          "total_shareholders_equity": 4684481000.0,
+          "total_debt": 2424999000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 2424999000.0,
+          "cash_and_cash_equivalents": 263973000.0,
+          "cash_primary": 263973000.0,
+          "marketable_securities_current": 0.0
         }
       }
     }
   ],
   "investor_relations_url": "https://www.cintas.com/investors/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.87,
-    "pension_and_opeb": {
-      "funded_status_usd_b": -0.26,
-      "pbo_gross_usd_b": 3.65,
-      "plan_assets_usd_b": 3.39,
-      "annual_cash_contribution_usd_b": 0.11,
-      "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.66,
-      "narrative": "Cintas Corporation sponsors defined benefit pension plans with $3.65B in gross PBO against $3.39B in assets ($-0.26B net gap) and $0.66B in unfunded OPEB."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.3,
-      "estimated_unreserved_exposure_usd_b": 0.15,
-      "superfund_and_pfas_sites_count": 6,
-      "annual_remediation_cash_drain_usd_b": 0.03,
-      "risk_level": "LOW",
-      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
-      "recent_settlements_scheduled_usd_b": 0.3,
-      "annual_legal_settlement_cash_drain_usd_b": 0.04,
-      "catastrophic_loss_risk_level": "LOW",
-      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 4.15,
-      "take_or_pay_commitments_usd_b": 1.25,
-      "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $4.15B."
-    },
-    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
-    "narrative": "Cintas Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
-  }
+  "last_updated": "2026-08-28T03:13:30.622566+00:00"
 }

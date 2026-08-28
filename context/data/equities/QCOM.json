@@ -10,17 +10,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=804328",
       "data": {
         "shares_outstanding": 1054000000,
-        "revenue": 32798000000,
+        "revenue": 32798000000.0,
         "balance_sheet": {
-          "total_assets": 57367000000,
-          "total_liabilities": 29709000000,
-          "total_shareholders_equity": 27658000000,
-          "total_debt": 15270000000,
-          "short_term_debt": 2489000000,
-          "long_term_debt": 12781000000,
-          "cash_and_cash_equivalents": 8304000000,
-          "cash_primary": 4533000000,
-          "marketable_securities_current": 3771000000
+          "total_assets": 57367000000.0,
+          "total_liabilities": 29709000000.0,
+          "total_shareholders_equity": 27658000000.0,
+          "total_debt": 15270000000.0,
+          "short_term_debt": 2489000000.0,
+          "long_term_debt": 12781000000.0,
+          "cash_and_cash_equivalents": 8304000000.0,
+          "cash_primary": 4533000000.0,
+          "marketable_securities_current": 3771000000.0
         }
       }
     },
@@ -32,17 +32,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=804328",
       "data": {
         "shares_outstanding": 1067000000,
-        "revenue": 22851000000,
+        "revenue": 22851000000.0,
         "balance_sheet": {
-          "total_assets": 57136000000,
-          "total_liabilities": 29858000000,
-          "total_shareholders_equity": 27278000000,
-          "total_debt": 15270000000,
-          "short_term_debt": 498000000,
-          "long_term_debt": 14772000000,
-          "cash_and_cash_equivalents": 9799000000,
-          "cash_primary": 5435000000,
-          "marketable_securities_current": 4364000000
+          "total_assets": 57136000000.0,
+          "total_liabilities": 29858000000.0,
+          "total_shareholders_equity": 27278000000.0,
+          "total_debt": 15270000000.0,
+          "short_term_debt": 498000000.0,
+          "long_term_debt": 14772000000.0,
+          "cash_and_cash_equivalents": 9799000000.0,
+          "cash_primary": 5435000000.0,
+          "marketable_securities_current": 4364000000.0
         }
       }
     },
@@ -54,17 +54,17 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=804328",
       "data": {
         "shares_outstanding": 1071000000,
-        "revenue": 12252000000,
+        "revenue": 12252000000.0,
         "balance_sheet": {
-          "total_assets": 53034000000,
-          "total_liabilities": 29961000000,
-          "total_shareholders_equity": 23073000000,
-          "total_debt": 14817000000,
-          "short_term_debt": 0,
-          "long_term_debt": 14817000000,
-          "cash_and_cash_equivalents": 11822000000,
-          "cash_primary": 7205000000,
-          "marketable_securities_current": 4617000000
+          "total_assets": 53034000000.0,
+          "total_liabilities": 29961000000.0,
+          "total_shareholders_equity": 23073000000.0,
+          "total_debt": 14817000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 14817000000.0,
+          "cash_and_cash_equivalents": 11822000000.0,
+          "cash_primary": 7205000000.0,
+          "marketable_securities_current": 4617000000.0
         }
       }
     },
@@ -76,57 +76,21 @@
       "filing_url": "https://www.sec.gov/edgar/browse/?CIK=804328",
       "data": {
         "shares_outstanding": 1079000000,
-        "revenue": 44284000000,
+        "revenue": 44284000000.0,
         "balance_sheet": {
-          "total_assets": 50143000000,
-          "total_liabilities": 28937000000,
-          "total_shareholders_equity": 21206000000,
-          "total_debt": 14811000000,
-          "short_term_debt": 0,
-          "long_term_debt": 14811000000,
-          "cash_and_cash_equivalents": 10155000000,
-          "cash_primary": 5520000000,
-          "marketable_securities_current": 4635000000
+          "total_assets": 50143000000.0,
+          "total_liabilities": 28937000000.0,
+          "total_shareholders_equity": 21206000000.0,
+          "total_debt": 14811000000.0,
+          "short_term_debt": 0.0,
+          "long_term_debt": 14811000000.0,
+          "cash_and_cash_equivalents": 10155000000.0,
+          "cash_primary": 5520000000.0,
+          "marketable_securities_current": 4635000000.0
         }
       }
     }
   ],
   "investor_relations_url": "https://investor.qualcomm.com/",
-  "last_updated": "2026-08-18T18:03:44.937667+00:00",
-  "off_balance_sheet_and_contingent_liabilities": {
-    "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 24.27,
-    "pension_and_opeb": {
-      "funded_status_usd_b": 0.0,
-      "pbo_gross_usd_b": 0.0,
-      "plan_assets_usd_b": 0.0,
-      "annual_cash_contribution_usd_b": 0.0,
-      "underfunding_risk_level": "NONE",
-      "opeb_unfunded_usd_b": 0.0,
-      "narrative": "QUALCOMM Incorporated operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
-    },
-    "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 0.0,
-      "estimated_unreserved_exposure_usd_b": 0.0,
-      "superfund_and_pfas_sites_count": 0,
-      "annual_remediation_cash_drain_usd_b": 0.0,
-      "risk_level": "MINIMAL",
-      "narrative": "QUALCOMM Incorporated has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
-    },
-    "litigation_and_toxic_torts": {
-      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
-      "recent_settlements_scheduled_usd_b": 0.1,
-      "annual_legal_settlement_cash_drain_usd_b": 0.02,
-      "catastrophic_loss_risk_level": "MINIMAL",
-      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
-    },
-    "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 23.77,
-      "take_or_pay_commitments_usd_b": 7.13,
-      "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $23.77B over multi-year periods."
-    },
-    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
-    "narrative": "QUALCOMM Incorporated maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
-  }
+  "last_updated": "2026-08-28T03:13:30.789759+00:00"
 }

@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=64040
 
 ## Business Profile
@@ -53,13 +54,12 @@ S&P Global Inc.'s off-balance sheet liabilities are low risk, with well-funded p
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.53 B (Gap: $-0.03 B) | ~$0.03 B / yr | S&P Global Inc. maintains well-funded legacy defined benefit pension plans ($1.53B PBO vs ... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | S&P Global Inc. has zero industrial contamination or Superfund remediation liabilities.... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, interchange ... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $1.84 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby letters of cre... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.53 B (Gap: $-0.03 B) | ~$0.03 B / yr | S&P Global Inc. maintains well-funded legacy defined benefit pension plans ($1.5... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | S&P Global Inc. has zero industrial contamination or Superfund remediation liabi... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, in... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.84 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=63908
 
 ## Business Profile
@@ -53,13 +54,12 @@ McDonald's Corporation possesses a clean, predictable liability structure with f
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $3.23 B (Gap: $-0.16 B) | ~$0.08 B / yr | McDonald's Corporation maintains legacy defined benefit plans ($3.23B PBO vs $3.07B assets... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $4.84 B | Take-or-Pay: $1.21 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $3.23 B (Gap: $-0.16 B) | ~$0.08 B / yr | McDonald's Corporation maintains legacy defined benefit plans ($3.23B PBO vs $3.... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $4.84 B | Take-or-Pay: $1.21 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

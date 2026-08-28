@@ -11,6 +11,10 @@
 - **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** American Depositary Receipt (ADR/ADS) (1 ADS = 4 Class A Ordinary Shares)
+- **Country of Origin:** China
+- **Primary Home Market:** NASDAQ Global Select
+- **Depositary Bank:** Deutsche Bank Trust Company Americas
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1737806
 
 ## Business Profile

@@ -11,6 +11,7 @@
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=310158
 
 ## Business Profile
@@ -53,13 +54,12 @@ Merck & Co., Inc.'s off-balance sheet liabilities are standard for healthcare in
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $9.75 B (Gap: $-0.78 B) | ~$0.29 B / yr | Merck & Co., Inc. sponsors modest domestic and international defined benefit plans with $9... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical device fabr... |
-| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.98 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and government pric... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $13.00 B | Take-or-Pay: $4.55 B | Active pharmaceutical ingredient supply agreements and clinical contract research organiza... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $9.75 B (Gap: $-0.78 B) | ~$0.29 B / yr | Merck & Co., Inc. sponsors modest domestic and international defined benefit pla... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical d... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.98 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and gover... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $13.00 B | Take-or-Pay: $4.55 B | Active pharmaceutical ingredient supply agreements and clinical contract researc... |
 
 **Equity Cash Flow Seniority Impact:** Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

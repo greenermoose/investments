@@ -11,6 +11,7 @@
 - **Conviction Score:** 9.4 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=789019
 
 ## Business Profile
@@ -53,13 +54,12 @@ Microsoft's off-balance sheet footprint is entirely forward-looking growth capit
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Microsoft maintains zero defined benefit pension plans or retiree healthcare OPEB obligati... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero industrial contamination liabilities. Environmental commitments consist of voluntary ... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.50 B | ~$0.10 B / yr | FTC cloud software licensing review, European Commission Teams unbundling monitoring, and ... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $65.00 B | Take-or-Pay: $28.00 B | Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access agreement... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Microsoft maintains zero defined benefit pension plans or retiree healthcare OPE... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero industrial contamination liabilities. Environmental commitments consist of ... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.50 B | ~$0.10 B / yr | FTC cloud software licensing review, European Commission Teams unbundling monito... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $65.00 B | Take-or-Pay: $28.00 B | Long-term cloud datacenter capacity leases, OpenAI compute infrastructure access... |
 
 **Equity Cash Flow Seniority Impact:** Minimal risk: Commitments represent high-ROIC growth investments in Azure AI infrastructure directly driving revenue acceleration.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

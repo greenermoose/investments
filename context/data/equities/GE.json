@@ -93,5 +93,12 @@
     }
   ],
   "name": "General Electric Company",
-  "investor_relations_url": "https://www.geaerospace.com/investor-relations"
+  "investor_relations_url": "https://www.geaerospace.com/investor-relations",
+  "is_adr": false,
+  "listing_type": "US_COMMON_STOCK",
+  "country_of_origin": "United States",
+  "primary_exchange": "US Exchange",
+  "adr_ratio": null,
+  "adr_underlying_description": "Common Stock",
+  "depositary_bank": null
 }

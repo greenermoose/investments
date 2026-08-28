@@ -92,5 +92,12 @@
     }
   ],
   "investor_relations_url": "https://www.linde.com/investors",
-  "last_updated": "2026-08-28T03:13:30.709169+00:00"
+  "last_updated": "2026-08-28T03:13:30.709169+00:00",
+  "is_adr": false,
+  "listing_type": "FOREIGN_DOMICILE_10K",
+  "country_of_origin": "Ireland / United Kingdom",
+  "primary_exchange": "NYSE (LIN)",
+  "adr_ratio": null,
+  "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+  "depositary_bank": null
 }

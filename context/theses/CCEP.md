@@ -11,6 +11,9 @@
 - **Conviction Score:** 8.1 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** FOREIGN ORDINARY
+- **Country of Origin:** United Kingdom
+- **Primary Home Market:** London Stock Exchange / Euronext (CCEP)
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1650107
 
 ## Business Profile

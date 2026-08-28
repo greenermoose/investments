@@ -11,6 +11,7 @@
 - **Conviction Score:** 9.1 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1069183
 
 ## Business Profile
@@ -53,13 +54,12 @@ Axon Enterprise, Inc. manages an established industrial liability footprint with
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.61 B (Gap: $-0.04 B) | ~$0.02 B / yr | Axon Enterprise, Inc. sponsors defined benefit pension plans with $0.61B in gross PBO agai... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.69 B | Take-or-Pay: $0.21 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.61 B (Gap: $-0.04 B) | ~$0.02 B / yr | Axon Enterprise, Inc. sponsors defined benefit pension plans with $0.61B in gros... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.69 B | Take-or-Pay: $0.21 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

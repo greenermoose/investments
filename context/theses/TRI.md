@@ -11,6 +11,9 @@
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** CANADIAN MJDS
+- **Country of Origin:** Canada
+- **Primary Home Market:** Toronto Stock Exchange (TSX: TRI)
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1075124
 
 ## Business Profile

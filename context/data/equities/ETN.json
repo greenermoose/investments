@@ -93,5 +93,12 @@
     }
   ],
   "name": "Eaton Corporation plc",
-  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html"
+  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html",
+  "is_adr": false,
+  "listing_type": "FOREIGN_DOMICILE_10K",
+  "country_of_origin": "Ireland",
+  "primary_exchange": "NYSE (ETN)",
+  "adr_ratio": null,
+  "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+  "depositary_bank": null
 }

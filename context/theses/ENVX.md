@@ -11,6 +11,7 @@
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1828318
 
 ## Business Profile
@@ -53,13 +54,12 @@ Enovix Corporation's off-balance sheet liabilities consist of standard regulated
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.01 B (Gap: $0.00 B) | ~$0.00 B / yr | Enovix Corporation sponsors utility and industrial defined benefit plans ($0.01B PBO vs $0... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.01 B (12 Sites) | ~$0.00 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash po... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and regional grid re... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.02 B | Take-or-Pay: $0.01 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay cont... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.01 B (Gap: $0.0 B) | ~$0.00 B / yr | Enovix Corporation sponsors utility and industrial defined benefit plans ($0.01B... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.01 B (12 Sites) | ~$0.00 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.02 B | Take-or-Pay: $0.01 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
 
 **Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

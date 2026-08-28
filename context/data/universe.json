@@ -4,6 +4,13 @@
     "name": "Apple Inc.",
     "sector": "Information Technology",
     "industry": "Consumer Electronics & Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company AAPL.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
@@ -1657,13 +1664,20 @@
       "coverage_count": 10,
       "average_upside_pct": 4.3
     },
-    "last_updated": "2026-08-28T03:14:42.541124+00:00"
+    "last_updated": "2026-08-28T03:22:09.186101+00:00"
   },
   {
     "symbol": "ABBV",
     "name": "AbbVie Inc.",
     "sector": "Healthcare",
     "industry": "Biotechnology & Pharmaceuticals",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company ABBV.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -3315,13 +3329,20 @@
       "coverage_count": 10,
       "average_upside_pct": 14.1
     },
-    "last_updated": "2026-08-28T03:14:42.548607+00:00"
+    "last_updated": "2026-08-28T03:22:09.192520+00:00"
   },
   {
     "symbol": "ABNB",
     "name": "Airbnb, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Travel & Lodging Platforms",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates a global two-sided online marketplace platform connecting hosts offering unique stays and experiences with guests worldwide.",
     "thesis_status": "HOLD",
     "conviction_score": 8.9,
@@ -4969,13 +4990,20 @@
       "coverage_count": 10,
       "average_upside_pct": 1.1
     },
-    "last_updated": "2026-08-28T03:14:42.554790+00:00"
+    "last_updated": "2026-08-28T03:22:09.198562+00:00"
   },
   {
     "symbol": "ABT",
     "name": "Abbott Laboratories",
     "sector": "Healthcare",
     "industry": "Medical Devices & Diagnostics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company ABT.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -6627,13 +6655,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.0
     },
-    "last_updated": "2026-08-28T03:14:42.561735+00:00"
+    "last_updated": "2026-08-28T03:22:09.206539+00:00"
   },
   {
     "symbol": "ADBE",
     "name": "Adobe Inc.",
     "sector": "Information Technology",
     "industry": "Application Software & Digital Media",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides digital media content creation tools (Creative Cloud), document solutions (Document Cloud), and enterprise digital experience marketing software.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -8281,13 +8316,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.9
     },
-    "last_updated": "2026-08-28T03:14:42.566986+00:00"
+    "last_updated": "2026-08-28T03:22:09.212934+00:00"
   },
   {
     "symbol": "ADI",
     "name": "Analog Devices, Inc.",
     "sector": "Information Technology",
     "industry": "Analog & Mixed-Signal Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures high-performance analog, mixed-signal, and digital signal processing integrated circuits.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -9940,13 +9982,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:14:42.569793+00:00"
+    "last_updated": "2026-08-28T03:22:09.219022+00:00"
   },
   {
     "symbol": "ADP",
     "name": "Automatic Data Processing, Inc.",
     "sector": "Industrials",
     "industry": "Human Capital Management Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides cloud-based human capital management (HCM) solutions including payroll, talent management, HR, benefits administration, and compliance.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -11599,13 +11648,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.1
     },
-    "last_updated": "2026-08-28T03:14:42.569793+00:00"
+    "last_updated": "2026-08-28T03:22:09.225341+00:00"
   },
   {
     "symbol": "ADSK",
     "name": "Autodesk, Inc.",
     "sector": "Information Technology",
     "industry": "Design & Engineering Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides 3D design, engineering, and entertainment software and services (AutoCAD, Revit, Inventor, Fusion, Maya) across AEC, manufacturing, and media.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -13253,13 +13309,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.0
     },
-    "last_updated": "2026-08-28T03:14:42.581964+00:00"
+    "last_updated": "2026-08-28T03:22:09.231820+00:00"
   },
   {
     "symbol": "AEP",
     "name": "American Electric Power Company, Inc.",
     "sector": "Utilities",
     "industry": "Regulated Electric Utilities",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "One of the largest electric utilities in the United States, delivering electricity to over 5.6 million customers across 11 states.",
     "thesis_status": "AVOID",
     "conviction_score": 7.0,
@@ -14912,13 +14975,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:14:42.581964+00:00"
+    "last_updated": "2026-08-28T03:22:09.238128+00:00"
   },
   {
     "symbol": "ALNY",
     "name": "Alnylam Pharmaceuticals, Inc.",
     "sector": "Health Care",
     "industry": "RNAi Therapeutics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Biopharmaceutical company pioneering RNA interference (RNAi) therapeutics for rare genetic, cardio-metabolic, and infectious diseases.",
     "thesis_status": "HOLD",
     "conviction_score": 8.9,
@@ -16565,13 +16635,20 @@
       "coverage_count": 10,
       "average_upside_pct": 69.5
     },
-    "last_updated": "2026-08-28T03:14:42.597995+00:00"
+    "last_updated": "2026-08-28T03:22:09.246283+00:00"
   },
   {
     "symbol": "AMAT",
     "name": "Applied Materials, Inc.",
     "sector": "Information Technology",
     "industry": "Semiconductor Equipment",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides manufacturing equipment, services, and software to the semiconductor, display, and related industries.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
@@ -18224,13 +18301,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.5
     },
-    "last_updated": "2026-08-28T03:14:42.600047+00:00"
+    "last_updated": "2026-08-28T03:22:09.254352+00:00"
   },
   {
     "symbol": "AMD",
     "name": "Advanced Micro Devices, Inc.",
     "sector": "Information Technology",
     "industry": "Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops high-performance computing, graphics, and visualization technologies including EPYC CPUs, Ryzen, and Instinct AI accelerators.",
     "thesis_status": "HOLD",
     "conviction_score": 8.9,
@@ -19878,13 +19962,20 @@
       "coverage_count": 10,
       "average_upside_pct": 26.8
     },
-    "last_updated": "2026-08-28T03:14:42.600047+00:00"
+    "last_updated": "2026-08-28T03:22:09.260740+00:00"
   },
   {
     "symbol": "AMGN",
     "name": "Amgen Inc.",
     "sector": "Health Care",
     "industry": "Biotechnology",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Discovers, develops, manufactures, and delivers human therapeutics across oncology, inflammation, and general medicine.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -21538,13 +21629,20 @@
       "coverage_count": 10,
       "average_upside_pct": -3.7
     },
-    "last_updated": "2026-08-28T03:14:42.616072+00:00"
+    "last_updated": "2026-08-28T03:22:09.267264+00:00"
   },
   {
     "symbol": "AMZN",
     "name": "Amazon.com, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "E-Commerce & Cloud Infrastructure",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global e-commerce marketplace, cloud computing leader (AWS), digital advertising network, and logistics infrastructure.",
     "thesis_status": "HOLD",
     "conviction_score": 9.2,
@@ -23193,13 +23291,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.0
     },
-    "last_updated": "2026-08-28T03:14:42.616072+00:00"
+    "last_updated": "2026-08-28T03:22:09.273624+00:00"
   },
   {
     "symbol": "ANET",
     "name": "Arista Networks, Inc.",
     "sector": "Information Technology",
     "industry": "Networking Equipment",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company ANET.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -24846,13 +24951,20 @@
       "coverage_count": 10,
       "average_upside_pct": 29.0
     },
-    "last_updated": "2026-08-28T03:14:42.616072+00:00"
+    "last_updated": "2026-08-28T03:22:09.279952+00:00"
   },
   {
     "symbol": "APH",
     "name": "Amphenol Corporation",
     "sector": "Information Technology",
     "industry": "Electronic Components",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company APH.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -26504,13 +26616,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.6
     },
-    "last_updated": "2026-08-28T03:14:42.631747+00:00"
+    "last_updated": "2026-08-28T03:22:09.286109+00:00"
   },
   {
     "symbol": "APP",
     "name": "AppLovin Corporation",
     "sector": "Information Technology",
     "industry": "Software & Mobile AdTech",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Builds software-based platforms for mobile app developers to enhance marketing and monetization using its AI recommendation engine (AXON 2.0).",
     "thesis_status": "BUY",
     "conviction_score": 9.2,
@@ -28158,13 +28277,20 @@
       "coverage_count": 10,
       "average_upside_pct": 55.3
     },
-    "last_updated": "2026-08-28T03:14:42.631747+00:00"
+    "last_updated": "2026-08-28T03:22:09.292612+00:00"
   },
   {
     "symbol": "ARM",
     "name": "Arm Holdings plc",
     "sector": "Information Technology",
     "industry": "Semiconductor IP & Architecture",
+    "is_adr": true,
+    "listing_type": "ADS",
+    "country_of_origin": "United Kingdom",
+    "primary_exchange": "NASDAQ Global Select",
+    "adr_ratio": 1.0,
+    "adr_underlying_description": "1 ADS = 1 Ordinary Share",
+    "depositary_bank": "Citibank, N.A.",
     "description": "Architects, develops, and licenses high-performance, low-power CPU architectures used in >99% of global smartphones, AI data centers, and IoT.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
@@ -29811,13 +29937,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.5
     },
-    "last_updated": "2026-08-28T03:14:42.631747+00:00"
+    "last_updated": "2026-08-28T03:22:09.300498+00:00"
   },
   {
     "symbol": "ASML",
     "name": "ASML Holding N.V.",
     "sector": "Information Technology",
     "industry": "Semiconductor Equipment",
+    "is_adr": true,
+    "listing_type": "ADR",
+    "country_of_origin": "Netherlands",
+    "primary_exchange": "Euronext Amsterdam (ASML)",
+    "adr_ratio": 1.0,
+    "adr_underlying_description": "1 NY Registry Share = 1 Euronext Ordinary Share",
+    "depositary_bank": "JPMorgan Chase Bank, N.A.",
     "description": "Manufacturer of photolithography systems used in semiconductor manufacturing, with an exclusive monopoly in extreme ultraviolet (EUV) lithography.",
     "thesis_status": "BUY",
     "conviction_score": 9.2,
@@ -31455,13 +31588,20 @@
       "coverage_count": 9,
       "average_upside_pct": 23.9
     },
-    "last_updated": "2026-08-28T03:14:42.648979+00:00"
+    "last_updated": "2026-08-28T03:22:09.307160+00:00"
   },
   {
     "symbol": "AVGO",
     "name": "Broadcom Inc.",
     "sector": "Information Technology",
     "industry": "Semiconductors & Infrastructure Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and supplies semiconductor devices and enterprise software including VMware, Symantec, and CA Technologies.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
@@ -33114,13 +33254,20 @@
       "coverage_count": 10,
       "average_upside_pct": 24.2
     },
-    "last_updated": "2026-08-28T03:14:42.648979+00:00"
+    "last_updated": "2026-08-28T03:22:09.313430+00:00"
   },
   {
     "symbol": "AXON",
     "name": "Axon Enterprise, Inc.",
     "sector": "Industrials",
     "industry": "Public Safety Technology & Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, manufactures, and sells conducted energy devices (TASER), body-worn cameras, in-car video, and cloud-based digital evidence management (Axon Cloud).",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -34768,13 +34915,20 @@
       "coverage_count": 10,
       "average_upside_pct": 41.0
     },
-    "last_updated": "2026-08-28T03:14:42.663487+00:00"
+    "last_updated": "2026-08-28T03:22:09.319520+00:00"
   },
   {
     "symbol": "AXP",
     "name": "American Express Company",
     "sector": "Financials",
     "industry": "Consumer & Commercial Payments",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Integrated payments company providing credit and charge card products, merchant acquiring services, and travel services to premium consumers and businesses.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
@@ -36427,13 +36581,20 @@
       "coverage_count": 10,
       "average_upside_pct": 6.7
     },
-    "last_updated": "2026-08-28T03:14:42.663487+00:00"
+    "last_updated": "2026-08-28T03:22:09.327518+00:00"
   },
   {
     "symbol": "BA",
     "name": "The Boeing Company",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, manufactures, and services commercial jetliners, defense aircraft, satellites, and space communication systems.",
     "thesis_status": "AVOID",
     "conviction_score": 5.8,
@@ -38081,13 +38242,20 @@
       "coverage_count": 10,
       "average_upside_pct": 23.5
     },
-    "last_updated": "2026-08-28T03:14:42.674030+00:00"
+    "last_updated": "2026-08-28T03:22:09.333990+00:00"
   },
   {
     "symbol": "BAM",
     "name": "Brookfield Asset Management Ltd.",
     "sector": "Financials",
     "industry": "Alternative Asset Management",
+    "is_adr": false,
+    "listing_type": "CANADIAN_MJDS",
+    "country_of_origin": "Canada",
+    "primary_exchange": "Toronto Stock Exchange (TSX: BAM)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Class A Limited Voting Shares (TSX/NYSE Dual Listing)",
+    "depositary_bank": null,
     "description": "Pure-play alternative asset manager investing in real estate, renewable power, infrastructure, private equity, and credit strategies.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -39737,13 +39905,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:14:42.681174+00:00"
+    "last_updated": "2026-08-28T03:22:09.340799+00:00"
   },
   {
     "symbol": "BEAM",
     "name": "Beam Therapeutics Inc.",
     "sector": "Health Care",
     "industry": "Base Editing Genetic Medicines",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Biotechnology company pioneering precision base editing to develop lifelong cures for serious genetic diseases.",
     "thesis_status": "AVOID",
     "conviction_score": 6.0,
@@ -41388,13 +41563,20 @@
       "coverage_count": 10,
       "average_upside_pct": 64.6
     },
-    "last_updated": "2026-08-28T03:14:42.681174+00:00"
+    "last_updated": "2026-08-28T03:22:09.347616+00:00"
   },
   {
     "symbol": "BETA",
     "name": "Beta Technologies, Inc.",
     "sector": "Industrials",
     "industry": "Electric Aircraft & Charging Infrastructure",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures electric aircraft (ALIA-250) and nationwide multimodal electric aircraft charging infrastructure for cargo, medical, and passenger transport.",
     "thesis_status": "AVOID",
     "conviction_score": 5.5,
@@ -42987,13 +43169,20 @@
       "coverage_count": 8,
       "average_upside_pct": 46.7
     },
-    "last_updated": "2026-08-28T03:14:42.695698+00:00"
+    "last_updated": "2026-08-28T03:22:09.354476+00:00"
   },
   {
     "symbol": "BKNG",
     "name": "Booking Holdings Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Online Travel Agencies",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provider of online travel and related services across Booking.com, Priceline, Agoda, KAYAK, and OpenTable.",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -44646,13 +44835,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.4
     },
-    "last_updated": "2026-08-28T03:14:42.695698+00:00"
+    "last_updated": "2026-08-28T03:22:09.360292+00:00"
   },
   {
     "symbol": "BKR",
     "name": "Baker Hughes Company",
     "sector": "Energy",
     "industry": "Energy Technology & Oilfield Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Energy technology company providing solutions for energy and industrial customers across Oilfield Services & Equipment and Industrial & Energy Technology.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -46305,13 +46501,20 @@
       "coverage_count": 10,
       "average_upside_pct": 19.8
     },
-    "last_updated": "2026-08-28T03:14:42.695698+00:00"
+    "last_updated": "2026-08-28T03:22:09.368214+00:00"
   },
   {
     "symbol": "BLK",
     "name": "BlackRock, Inc.",
     "sector": "Financials",
     "industry": "Asset Management & Aladdin Platform",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company BLK.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -47963,13 +48166,20 @@
       "coverage_count": 10,
       "average_upside_pct": 23.5
     },
-    "last_updated": "2026-08-28T03:14:42.711721+00:00"
+    "last_updated": "2026-08-28T03:22:09.374773+00:00"
   },
   {
     "symbol": "BRK-B",
     "name": "Berkshire Hathaway Inc. (Class B)",
     "sector": "Financials",
     "industry": "Multi-Sector Conglomerate & Insurance",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Holding company owning subsidiaries in insurance (GEICO, Berkshire Reinsurance), freight rail (BNSF), energy (BHE), manufacturing, and large public equity holdings.",
     "thesis_status": "HOLD",
     "conviction_score": 9.4,
@@ -49518,13 +49728,20 @@
       "coverage_count": 3,
       "average_upside_pct": 6.2
     },
-    "last_updated": "2026-08-28T03:14:42.711721+00:00"
+    "last_updated": "2026-08-28T03:22:09.381288+00:00"
   },
   {
     "symbol": "BSX",
     "name": "Boston Scientific Corporation",
     "sector": "Healthcare",
     "industry": "Medical Devices",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company BSX.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
@@ -51171,13 +51388,20 @@
       "coverage_count": 10,
       "average_upside_pct": 31.4
     },
-    "last_updated": "2026-08-28T03:14:42.711721+00:00"
+    "last_updated": "2026-08-28T03:22:09.388868+00:00"
   },
   {
     "symbol": "CAT",
     "name": "Caterpillar Inc.",
     "sector": "Industrials",
     "industry": "Construction, Mining & Heavy Machinery",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives.",
     "thesis_status": "SELL",
     "conviction_score": 8.5,
@@ -52830,13 +53054,20 @@
       "coverage_count": 10,
       "average_upside_pct": 11.9
     },
-    "last_updated": "2026-08-28T03:14:42.729123+00:00"
+    "last_updated": "2026-08-28T03:22:09.395156+00:00"
   },
   {
     "symbol": "CAVA",
     "name": "CAVA Group, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Fast-Casual Restaurants & Hospitality",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company CAVA.",
     "thesis_status": "BUY",
     "conviction_score": 9.3,
@@ -54355,13 +54586,20 @@
       "coverage_count": 2,
       "average_upside_pct": 31.0
     },
-    "last_updated": "2026-08-28T03:14:42.729123+00:00"
+    "last_updated": "2026-08-28T03:22:09.401388+00:00"
   },
   {
     "symbol": "CCEP",
     "name": "Coca-Cola Europacific Partners PLC",
     "sector": "Consumer Staples",
     "industry": "Beverage Bottling & Distribution",
+    "is_adr": false,
+    "listing_type": "FOREIGN_ORDINARY",
+    "country_of_origin": "United Kingdom",
+    "primary_exchange": "London Stock Exchange / Euronext (CCEP)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares Direct Listing",
+    "depositary_bank": null,
     "description": "The world's largest independent Coca-Cola bottler, serving consumers across 31 countries in Western Europe, Australia, the Pacific, and Southeast Asia.",
     "thesis_status": "SELL",
     "conviction_score": 8.1,
@@ -55994,13 +56232,20 @@
       "coverage_count": 9,
       "average_upside_pct": 2.9
     },
-    "last_updated": "2026-08-28T03:14:42.745096+00:00"
+    "last_updated": "2026-08-28T03:22:09.409409+00:00"
   },
   {
     "symbol": "CDNS",
     "name": "Cadence Design Systems, Inc.",
     "sector": "Information Technology",
     "industry": "Electronic Design Automation Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides electronic design automation (EDA) software, hardware, and IP products used to design advanced microchips and electronic systems.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -57648,13 +57893,20 @@
       "coverage_count": 10,
       "average_upside_pct": 14.0
     },
-    "last_updated": "2026-08-28T03:14:42.746111+00:00"
+    "last_updated": "2026-08-28T03:22:09.415603+00:00"
   },
   {
     "symbol": "CEG",
     "name": "Constellation Energy Corporation",
     "sector": "Utilities",
     "industry": "Clean Electric Power Generation",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "The largest producer of clean, carbon-free energy in the United States, operating the nation's premier fleet of nuclear, solar, and wind assets.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -59307,13 +59559,20 @@
       "coverage_count": 10,
       "average_upside_pct": 27.9
     },
-    "last_updated": "2026-08-28T03:14:42.746111+00:00"
+    "last_updated": "2026-08-28T03:22:09.421949+00:00"
   },
   {
     "symbol": "CHTR",
     "name": "Charter Communications, Inc.",
     "sector": "Communication Services",
     "industry": "Broadband Cable & Mobile",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Broadband connectivity and cable operator serving over 32 million customers in 41 states through the Spectrum brand.",
     "thesis_status": "AVOID",
     "conviction_score": 5.2,
@@ -60961,13 +61220,20 @@
       "coverage_count": 10,
       "average_upside_pct": 20.4
     },
-    "last_updated": "2026-08-28T03:14:42.759643+00:00"
+    "last_updated": "2026-08-28T03:22:09.429765+00:00"
   },
   {
     "symbol": "CMCSA",
     "name": "Comcast Corporation",
     "sector": "Communication Services",
     "industry": "Broadband, Cable & Media",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Media and technology company providing broadband, video, mobile, and theme parks through Xfinity, NBCUniversal, Peacock, and Sky.",
     "thesis_status": "AVOID",
     "conviction_score": 7.0,
@@ -62620,13 +62886,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:14:42.759643+00:00"
+    "last_updated": "2026-08-28T03:22:09.436233+00:00"
   },
   {
     "symbol": "COST",
     "name": "Costco Wholesale Corporation",
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates membership warehouses based on the concept of offering low prices on a limited selection of brand-name and private-label products.",
     "thesis_status": "HOLD",
     "conviction_score": 8.9,
@@ -64279,13 +64552,20 @@
       "coverage_count": 10,
       "average_upside_pct": 16.6
     },
-    "last_updated": "2026-08-28T03:14:42.759643+00:00"
+    "last_updated": "2026-08-28T03:22:09.442499+00:00"
   },
   {
     "symbol": "CPRT",
     "name": "Copart, Inc.",
     "sector": "Industrials",
     "industry": "Online Vehicle Salvage Auctions",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides online salvage vehicle auctions and remarketing services connecting insurance companies and salvage buyers globally across VB3 platform.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -65877,13 +66157,20 @@
       "coverage_count": 6,
       "average_upside_pct": 12.6
     },
-    "last_updated": "2026-08-28T03:14:42.775977+00:00"
+    "last_updated": "2026-08-28T03:22:09.448230+00:00"
   },
   {
     "symbol": "CRM",
     "name": "Salesforce, Inc.",
     "sector": "Information Technology",
     "industry": "Enterprise Cloud CRM & Applications",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides customer relationship management technology including Sales Cloud, Service Cloud, Marketing Cloud, Data Cloud, and Agentforce AI platform.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
@@ -67536,13 +67823,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:14:42.775977+00:00"
+    "last_updated": "2026-08-28T03:22:09.454512+00:00"
   },
   {
     "symbol": "CRSP",
     "name": "CRISPR Therapeutics AG",
     "sector": "Health Care",
     "industry": "Gene Editing Therapeutics",
+    "is_adr": false,
+    "listing_type": "FOREIGN_DOMICILE_10K",
+    "country_of_origin": "Switzerland",
+    "primary_exchange": "NASDAQ (CRSP)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Shares (Nasdaq Direct Listing)",
+    "depositary_bank": null,
     "description": "Gene editing company focused on developing transformative gene-based medicines using its proprietary CRISPR/Cas9 platform, including approved therapy Casgevy.",
     "thesis_status": "AVOID",
     "conviction_score": 6.0,
@@ -69187,13 +69481,20 @@
       "coverage_count": 10,
       "average_upside_pct": 42.6
     },
-    "last_updated": "2026-08-28T03:14:42.791751+00:00"
+    "last_updated": "2026-08-28T03:22:09.461143+00:00"
   },
   {
     "symbol": "CRWD",
     "name": "CrowdStrike Holdings, Inc.",
     "sector": "Information Technology",
     "industry": "Cybersecurity Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides cloud-delivered endpoint and cloud workload protection through the AI-native Falcon platform.",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -70848,13 +71149,20 @@
       "coverage_count": 10,
       "average_upside_pct": 14.5
     },
-    "last_updated": "2026-08-28T03:14:42.791751+00:00"
+    "last_updated": "2026-08-28T03:22:09.467628+00:00"
   },
   {
     "symbol": "CSCO",
     "name": "Cisco Systems, Inc.",
     "sector": "Information Technology",
     "industry": "Communications Equipment & Security",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global technology leader designing and selling IP networking, security, collaboration, and enterprise observability software (Splunk).",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -72508,13 +72816,20 @@
       "coverage_count": 10,
       "average_upside_pct": 19.6
     },
-    "last_updated": "2026-08-28T03:14:42.791751+00:00"
+    "last_updated": "2026-08-28T03:22:09.474150+00:00"
   },
   {
     "symbol": "CSGP",
     "name": "CoStar Group, Inc.",
     "sector": "Real Estate",
     "industry": "Real Estate Information & Marketplaces",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides information, analytics, and online marketplaces for commercial and residential real estate (CoStar, LoopNet, Apartments.com, Homes.com).",
     "thesis_status": "AVOID",
     "conviction_score": 7.0,
@@ -74162,13 +74477,20 @@
       "coverage_count": 10,
       "average_upside_pct": 25.7
     },
-    "last_updated": "2026-08-28T03:14:42.810641+00:00"
+    "last_updated": "2026-08-28T03:22:09.481328+00:00"
   },
   {
     "symbol": "CSIQ",
     "name": "Canadian Solar Inc.",
     "sector": "Energy",
     "industry": "Solar Modules & Battery Storage",
+    "is_adr": false,
+    "listing_type": "FOREIGN_ORDINARY",
+    "country_of_origin": "Canada",
+    "primary_exchange": "NASDAQ",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Shares Direct Listing",
+    "depositary_bank": null,
     "description": "Designs, manufactures, and sells solar photovoltaic modules and operates utility-scale solar and battery storage project development.",
     "thesis_status": "AVOID",
     "conviction_score": 5.5,
@@ -75813,13 +76135,20 @@
       "coverage_count": 10,
       "average_upside_pct": 4.9
     },
-    "last_updated": "2026-08-28T03:14:42.817227+00:00"
+    "last_updated": "2026-08-28T03:22:09.487810+00:00"
   },
   {
     "symbol": "CSX",
     "name": "CSX Corporation",
     "sector": "Industrials",
     "industry": "Rail Transportation",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "One of the nation's premier transportation suppliers, providing rail-based freight transportation services across the eastern United States.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -77472,13 +77801,20 @@
       "coverage_count": 10,
       "average_upside_pct": 5.2
     },
-    "last_updated": "2026-08-28T03:14:42.817227+00:00"
+    "last_updated": "2026-08-28T03:22:09.494358+00:00"
   },
   {
     "symbol": "CTAS",
     "name": "Cintas Corporation",
     "sector": "Industrials",
     "industry": "Corporate Uniforms & Facility Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides corporate identity uniform programs, entrance mats, restroom supplies, first aid and safety products, and fire protection services.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -79131,13 +79467,20 @@
       "coverage_count": 10,
       "average_upside_pct": 11.6
     },
-    "last_updated": "2026-08-28T03:14:42.830457+00:00"
+    "last_updated": "2026-08-28T03:22:09.500401+00:00"
   },
   {
     "symbol": "CTSH",
     "name": "Cognizant Technology Solutions Corporation",
     "sector": "Information Technology",
     "industry": "IT Consulting & Digital Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides IT consulting, system integration, digital engineering, and business process services for global enterprise clients.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -80790,13 +81133,20 @@
       "coverage_count": 10,
       "average_upside_pct": 20.1
     },
-    "last_updated": "2026-08-28T03:14:42.830457+00:00"
+    "last_updated": "2026-08-28T03:22:09.506702+00:00"
   },
   {
     "symbol": "CVX",
     "name": "Chevron Corporation",
     "sector": "Energy",
     "industry": "Integrated Oil & Gas",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Integrated energy company engaged in petroleum exploration, production, refining, transportation, chemicals, and power generation worldwide.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -82449,13 +82799,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.2
     },
-    "last_updated": "2026-08-28T03:14:42.842768+00:00"
+    "last_updated": "2026-08-28T03:22:09.512644+00:00"
   },
   {
     "symbol": "DASH",
     "name": "DoorDash, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Local Commerce & Food Delivery",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates a local commerce platform connecting consumers, merchants, and independent delivery Dashers across food, grocery, and retail.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -84103,13 +84460,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.3
     },
-    "last_updated": "2026-08-28T03:14:42.845737+00:00"
+    "last_updated": "2026-08-28T03:22:09.519153+00:00"
   },
   {
     "symbol": "DDOG",
     "name": "Datadog, Inc.",
     "sector": "Information Technology",
     "industry": "Cloud Observability & Security Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates an observability and security platform for cloud applications, integrating infrastructure monitoring, APM, log management, and cloud security.",
     "thesis_status": "HOLD",
     "conviction_score": 8.9,
@@ -85757,13 +86121,20 @@
       "coverage_count": 10,
       "average_upside_pct": 19.4
     },
-    "last_updated": "2026-08-28T03:14:42.845737+00:00"
+    "last_updated": "2026-08-28T03:22:09.525686+00:00"
   },
   {
     "symbol": "DE",
     "name": "Deere & Company",
     "sector": "Industrials",
     "industry": "Agricultural & Construction Machinery",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company DE.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -87415,13 +87786,20 @@
       "coverage_count": 10,
       "average_upside_pct": 10.7
     },
-    "last_updated": "2026-08-28T03:14:42.858773+00:00"
+    "last_updated": "2026-08-28T03:22:09.532235+00:00"
   },
   {
     "symbol": "DHR",
     "name": "Danaher Corporation",
     "sector": "Healthcare",
     "industry": "Life Sciences Tools & Diagnostics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company DHR.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -89073,13 +89451,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.7
     },
-    "last_updated": "2026-08-28T03:14:42.858773+00:00"
+    "last_updated": "2026-08-28T03:22:09.538257+00:00"
   },
   {
     "symbol": "DIS",
     "name": "The Walt Disney Company",
     "sector": "Communication Services",
     "industry": "Entertainment & Media Conglomerate",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global entertainment company operating theme parks, cruise lines, movie studios, television networks, and direct-to-consumer streaming (Disney+, Hulu, ESPN+).",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -90732,13 +91117,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.3
     },
-    "last_updated": "2026-08-28T03:14:42.869556+00:00"
+    "last_updated": "2026-08-28T03:22:09.544822+00:00"
   },
   {
     "symbol": "DUOL",
     "name": "Duolingo, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Digital Learning & EdTech Platforms",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company DUOL.",
     "thesis_status": "BUY",
     "conviction_score": 9.2,
@@ -92257,13 +92649,20 @@
       "coverage_count": 2,
       "average_upside_pct": 44.9
     },
-    "last_updated": "2026-08-28T03:14:42.878382+00:00"
+    "last_updated": "2026-08-28T03:22:09.551191+00:00"
   },
   {
     "symbol": "DXCM",
     "name": "DexCom, Inc.",
     "sector": "Health Care",
     "industry": "Continuous Glucose Monitoring (CGM)",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, develops, and commercializes continuous glucose monitoring (CGM) systems for people with diabetes (Dexcom G7 and Stelo).",
     "thesis_status": "HOLD",
     "conviction_score": 8.5,
@@ -93911,13 +94310,20 @@
       "coverage_count": 10,
       "average_upside_pct": 11.2
     },
-    "last_updated": "2026-08-28T03:14:42.878382+00:00"
+    "last_updated": "2026-08-28T03:22:09.556999+00:00"
   },
   {
     "symbol": "EA",
     "name": "Electronic Arts Inc.",
     "sector": "Communication Services",
     "industry": "Interactive Gaming Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, markets, and delivers games, content, and online services across consoles, mobile devices, and personal computers (EA SPORTS FC, Madden, Apex Legends).",
     "thesis_status": "SELL",
     "conviction_score": 7.9,
@@ -95061,13 +95467,20 @@
       "coverage_count": 10,
       "average_upside_pct": 4.0
     },
-    "last_updated": "2026-08-28T03:14:42.890915+00:00"
+    "last_updated": "2026-08-28T03:22:09.562972+00:00"
   },
   {
     "symbol": "EDIT",
     "name": "Editas Medicine, Inc.",
     "sector": "Health Care",
     "industry": "Gene Editing Medicines",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Clinical-stage genome editing company developing treatments for hemoglobinopathies and oncology using CRISPR/Cas12a and Cas9 technologies.",
     "thesis_status": "AVOID",
     "conviction_score": 5.5,
@@ -96712,13 +97125,20 @@
       "coverage_count": 10,
       "average_upside_pct": 120.9
     },
-    "last_updated": "2026-08-28T03:14:42.890915+00:00"
+    "last_updated": "2026-08-28T03:22:09.569263+00:00"
   },
   {
     "symbol": "ENPH",
     "name": "Enphase Energy, Inc.",
     "sector": "Energy",
     "industry": "Solar Microinverters & Energy Management",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures microinverter-based solar-plus-storage systems and software for residential and commercial clean energy management.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -98363,13 +98783,20 @@
       "coverage_count": 10,
       "average_upside_pct": 19.7
     },
-    "last_updated": "2026-08-28T03:14:42.890915+00:00"
+    "last_updated": "2026-08-28T03:22:09.575582+00:00"
   },
   {
     "symbol": "ENVX",
     "name": "Enovix Corporation",
     "sector": "Energy",
     "industry": "Advanced Silicon-Anode Batteries",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures next-generation 3D silicon-anode lithium-ion batteries for consumer electronics, smartphones, IoT, and AI edge devices.",
     "thesis_status": "AVOID",
     "conviction_score": 5.2,
@@ -100014,13 +100441,20 @@
       "coverage_count": 10,
       "average_upside_pct": 134.0
     },
-    "last_updated": "2026-08-28T03:14:42.906693+00:00"
+    "last_updated": "2026-08-28T03:22:09.581725+00:00"
   },
   {
     "symbol": "EOSE",
     "name": "Eos Energy Enterprises, Inc.",
     "sector": "Energy",
     "industry": "Zinc-Based Energy Storage",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops and manufactures zinc-powered battery energy storage solutions for utility-scale, commercial, and industrial long-duration applications.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -101651,13 +102085,20 @@
       "coverage_count": 9,
       "average_upside_pct": 53.2
     },
-    "last_updated": "2026-08-28T03:14:42.906693+00:00"
+    "last_updated": "2026-08-28T03:22:09.589642+00:00"
   },
   {
     "symbol": "ETN",
     "name": "Eaton Corporation plc",
     "sector": "Industrials",
     "industry": "Electrical Equipment",
+    "is_adr": false,
+    "listing_type": "FOREIGN_DOMICILE_10K",
+    "country_of_origin": "Ireland",
+    "primary_exchange": "NYSE (ETN)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+    "depositary_bank": null,
     "description": "Public company ETN.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -103309,13 +103750,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:14:42.922715+00:00"
+    "last_updated": "2026-08-28T03:22:09.595814+00:00"
   },
   {
     "symbol": "EXC",
     "name": "Exelon Corporation",
     "sector": "Utilities",
     "industry": "Regulated Electric & Gas Transmission",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "The nation's largest pure-play transmission and distribution utility company, serving more than 10.5 million customers across six fully regulated utilities.",
     "thesis_status": "AVOID",
     "conviction_score": 6.9,
@@ -104968,13 +105416,20 @@
       "coverage_count": 10,
       "average_upside_pct": 5.9
     },
-    "last_updated": "2026-08-28T03:14:42.922715+00:00"
+    "last_updated": "2026-08-28T03:22:09.603429+00:00"
   },
   {
     "symbol": "FANG",
     "name": "Diamondback Energy, Inc.",
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Independent oil and natural gas company focused on the acquisition, development, exploration, and exploitation of unconventional onshore oil and gas reserves in the Permian Basin.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -106627,13 +107082,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:14:42.922715+00:00"
+    "last_updated": "2026-08-28T03:22:09.609606+00:00"
   },
   {
     "symbol": "FAST",
     "name": "Fastenal Company",
     "sector": "Industrials",
     "industry": "Industrial Distribution & Vending",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Engages in the wholesale distribution of industrial and construction supplies through branch locations and Onsite customer vending machines.",
     "thesis_status": "SELL",
     "conviction_score": 8.3,
@@ -108286,13 +108748,20 @@
       "coverage_count": 10,
       "average_upside_pct": 5.4
     },
-    "last_updated": "2026-08-28T03:14:42.938729+00:00"
+    "last_updated": "2026-08-28T03:22:09.615878+00:00"
   },
   {
     "symbol": "FER",
     "name": "Ferrovial SE",
     "sector": "Industrials",
     "industry": "Infrastructure Concessions & Toll Roads",
+    "is_adr": false,
+    "listing_type": "FOREIGN_ORDINARY",
+    "country_of_origin": "Netherlands / Spain",
+    "primary_exchange": "Euronext Amsterdam / BME (FER)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares Direct Listing",
+    "depositary_bank": null,
     "description": "Global infrastructure operator managing high-margin managed express toll lanes (407 ETR in Toronto, NTE/LBJ Express in Texas) and international airports (Heathrow, JFK T1).",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -109805,13 +110274,20 @@
       "coverage_count": 2,
       "average_upside_pct": 4.1
     },
-    "last_updated": "2026-08-28T03:14:42.938729+00:00"
+    "last_updated": "2026-08-28T03:22:09.622257+00:00"
   },
   {
     "symbol": "FTNT",
     "name": "Fortinet, Inc.",
     "sector": "Information Technology",
     "industry": "Cybersecurity & Unified SASE",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Secures enterprise networks through integrated cybersecurity solutions, proprietary ASIC acceleration (FortiSP5), and Unified SASE.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -111459,13 +111935,20 @@
       "coverage_count": 10,
       "average_upside_pct": 8.4
     },
-    "last_updated": "2026-08-28T03:14:42.954766+00:00"
+    "last_updated": "2026-08-28T03:22:09.630229+00:00"
   },
   {
     "symbol": "GE",
     "name": "General Electric Company",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company GE.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -113117,13 +113600,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.9
     },
-    "last_updated": "2026-08-28T03:14:42.954766+00:00"
+    "last_updated": "2026-08-28T03:22:09.636550+00:00"
   },
   {
     "symbol": "GEHC",
     "name": "GE HealthCare Technologies Inc.",
     "sector": "Health Care",
     "industry": "Medical Imaging & Diagnostic Systems",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global medical technology and digital solutions innovator in imaging (MRI, CT, ultrasound), patient care solutions, and pharmaceutical diagnostics.",
     "thesis_status": "HOLD",
     "conviction_score": 7.8,
@@ -114776,13 +115266,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.6
     },
-    "last_updated": "2026-08-28T03:14:42.954766+00:00"
+    "last_updated": "2026-08-28T03:22:09.642856+00:00"
   },
   {
     "symbol": "GILD",
     "name": "Gilead Sciences, Inc.",
     "sector": "Health Care",
     "industry": "Biopharmaceuticals",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Discovers, develops, and commercializes innovative therapeutics in areas of unmet medical need including HIV, viral hepatitis, and oncology.",
     "thesis_status": "SELL",
     "conviction_score": 7.2,
@@ -116435,13 +116932,20 @@
       "coverage_count": 10,
       "average_upside_pct": 14.8
     },
-    "last_updated": "2026-08-28T03:14:42.972674+00:00"
+    "last_updated": "2026-08-28T03:22:09.649254+00:00"
   },
   {
     "symbol": "GNRC",
     "name": "Generac Holdings Inc.",
     "sector": "Industrials",
     "industry": "Power Generation & Energy Storage",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures backup power generators for residential, commercial, and industrial markets, along with solar battery storage and energy management devices.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -118088,13 +118592,20 @@
       "coverage_count": 10,
       "average_upside_pct": 47.3
     },
-    "last_updated": "2026-08-28T03:14:42.978691+00:00"
+    "last_updated": "2026-08-28T03:22:09.655684+00:00"
   },
   {
     "symbol": "GOOG",
     "name": "Alphabet Inc. (Class C)",
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Non-voting Class C shares of Alphabet Inc., operating Google Search, YouTube, Android, Google Cloud, and DeepMind.",
     "thesis_status": "HOLD",
     "conviction_score": 9.3,
@@ -119747,13 +120258,20 @@
       "coverage_count": 10,
       "average_upside_pct": 32.5
     },
-    "last_updated": "2026-08-28T03:14:42.986718+00:00"
+    "last_updated": "2026-08-28T03:22:09.663580+00:00"
   },
   {
     "symbol": "GOOGL",
     "name": "Alphabet Inc. (Class A)",
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates Google Search, YouTube, Android, Google Cloud, Waymo, and deep AI research through Google DeepMind.",
     "thesis_status": "HOLD",
     "conviction_score": 9.3,
@@ -121406,13 +121924,20 @@
       "coverage_count": 10,
       "average_upside_pct": 31.3
     },
-    "last_updated": "2026-08-28T03:14:42.992743+00:00"
+    "last_updated": "2026-08-28T03:22:09.670015+00:00"
   },
   {
     "symbol": "GS",
     "name": "The Goldman Sachs Group, Inc.",
     "sector": "Financials",
     "industry": "Investment Banking & Capital Markets",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global financial institution providing investment banking, securities trading, asset management, and wealth management services to corporations, institutions, and governments.",
     "thesis_status": "SELL",
     "conviction_score": 8.6,
@@ -123065,13 +123590,20 @@
       "coverage_count": 10,
       "average_upside_pct": 6.0
     },
-    "last_updated": "2026-08-28T03:14:42.998768+00:00"
+    "last_updated": "2026-08-28T03:22:09.676392+00:00"
   },
   {
     "symbol": "GWH",
     "name": "ESS Tech, Inc.",
     "sector": "Energy",
     "industry": "Iron Flow Long-Duration Energy Storage",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and produces environmentally sustainable iron flow batteries for commercial and utility-scale long-duration energy storage systems.",
     "thesis_status": "AVOID",
     "conviction_score": 7.5,
@@ -124618,13 +125150,20 @@
       "coverage_count": 3,
       "average_upside_pct": 53.5
     },
-    "last_updated": "2026-08-28T03:14:43.004532+00:00"
+    "last_updated": "2026-08-28T03:22:09.682785+00:00"
   },
   {
     "symbol": "HD",
     "name": "The Home Depot, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Home Improvement Retail",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's largest home improvement specialty retailer, operating over 2,300 warehouse-format stores offering building materials, home improvement products, and services.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -126277,13 +126816,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:14:43.010555+00:00"
+    "last_updated": "2026-08-28T03:22:09.689067+00:00"
   },
   {
     "symbol": "HON",
     "name": "Honeywell International Inc.",
     "sector": "Industrials",
     "industry": "Industrial Conglomerate & Aerospace",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Diversified technology and manufacturing company operating in Aerospace Technologies, Industrial Automation, Building Solutions, and Energy.",
     "thesis_status": "SELL",
     "conviction_score": 8.3,
@@ -127944,13 +128490,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:14:43.018325+00:00"
+    "last_updated": "2026-08-28T03:22:09.696941+00:00"
   },
   {
     "symbol": "IBM",
     "name": "International Business Machines Corporation",
     "sector": "Information Technology",
     "industry": "Hybrid Cloud Infrastructure & IT Consulting",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides hybrid cloud solutions (Red Hat OpenShift), enterprise enterprise AI (watsonx), mission-critical mainframe systems, and IT consulting services.",
     "thesis_status": "SELL",
     "conviction_score": 7.7,
@@ -129603,13 +130156,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.1
     },
-    "last_updated": "2026-08-28T03:14:43.024361+00:00"
+    "last_updated": "2026-08-28T03:22:09.703321+00:00"
   },
   {
     "symbol": "IDXX",
     "name": "IDEXX Laboratories, Inc.",
     "sector": "Health Care",
     "industry": "Veterinary Diagnostics & Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global leader in pet healthcare innovation, providing diagnostic test instruments, rapid assays, and veterinary practice management software.",
     "thesis_status": "HOLD",
     "conviction_score": 8.5,
@@ -131257,13 +131817,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.6
     },
-    "last_updated": "2026-08-28T03:14:43.030387+00:00"
+    "last_updated": "2026-08-28T03:22:09.709747+00:00"
   },
   {
     "symbol": "INSM",
     "name": "Insmed Incorporated",
     "sector": "Health Care",
     "industry": "Biopharmaceuticals",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global biopharmaceutical company focused on transforming the lives of patients with serious and rare pulmonary and inflammatory diseases.",
     "thesis_status": "SELL",
     "conviction_score": 7.2,
@@ -132910,13 +133477,20 @@
       "coverage_count": 10,
       "average_upside_pct": 52.4
     },
-    "last_updated": "2026-08-28T03:14:43.037280+00:00"
+    "last_updated": "2026-08-28T03:22:09.715643+00:00"
   },
   {
     "symbol": "INTC",
     "name": "Intel Corporation",
     "sector": "Information Technology",
     "industry": "Semiconductors & Foundry Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, manufactures, and sells computer products and technologies including client CPUs, data center processors, and Intel Foundry.",
     "thesis_status": "AVOID",
     "conviction_score": 5.0,
@@ -134564,13 +135138,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.2
     },
-    "last_updated": "2026-08-28T03:14:43.043309+00:00"
+    "last_updated": "2026-08-28T03:22:09.723635+00:00"
   },
   {
     "symbol": "INTU",
     "name": "Intuit Inc.",
     "sector": "Information Technology",
     "industry": "Application Software & FinTech",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides financial management, compliance, and marketing products including TurboTax, QuickBooks, Credit Karma, and Mailchimp.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -136223,13 +136804,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.7
     },
-    "last_updated": "2026-08-28T03:14:43.049332+00:00"
+    "last_updated": "2026-08-28T03:22:09.729997+00:00"
   },
   {
     "symbol": "IOT",
     "name": "Samsara Inc.",
     "sector": "Information Technology",
     "industry": "Enterprise Software & IoT Operations Cloud",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides the Connected Operations Cloud platform that aggregates IoT sensor telematics, computer vision AI, and workflow automation for commercial transportation fleets, logistics, and industrial physical infrastructure.",
     "thesis_status": "BUY",
     "conviction_score": 9.2,
@@ -137748,13 +138336,20 @@
       "coverage_count": 2,
       "average_upside_pct": 31.5
     },
-    "last_updated": "2026-08-28T03:14:43.055360+00:00"
+    "last_updated": "2026-08-28T03:22:09.736530+00:00"
   },
   {
     "symbol": "ISRG",
     "name": "Intuitive Surgical, Inc.",
     "sector": "Health Care",
     "industry": "Robotic Surgical Technologies",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, manufactures, and markets robotic-assisted surgical systems (da Vinci and Ion) for minimally invasive medical procedures.",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -139402,13 +139997,20 @@
       "coverage_count": 10,
       "average_upside_pct": 32.5
     },
-    "last_updated": "2026-08-28T03:14:43.061385+00:00"
+    "last_updated": "2026-08-28T03:22:09.742427+00:00"
   },
   {
     "symbol": "JNJ",
     "name": "Johnson & Johnson",
     "sector": "Health Care",
     "industry": "Pharmaceuticals & MedTech",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global healthcare leader focused on innovative pharmaceuticals (oncology, immunology, neuroscience) and medical technology devices (orthopedics, surgery, electrophysiology).",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -141061,13 +141663,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.1
     },
-    "last_updated": "2026-08-28T03:14:43.069154+00:00"
+    "last_updated": "2026-08-28T03:22:09.749002+00:00"
   },
   {
     "symbol": "JPM",
     "name": "JPMorgan Chase & Co.",
     "sector": "Financials",
     "industry": "Diversified Banking & Financial Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Largest financial services institution in the United States, operating leaders in consumer banking, investment banking, commercial banking, payments, and asset management.",
     "thesis_status": "SELL",
     "conviction_score": 8.9,
@@ -142720,13 +143329,20 @@
       "coverage_count": 10,
       "average_upside_pct": 8.1
     },
-    "last_updated": "2026-08-28T03:14:43.075177+00:00"
+    "last_updated": "2026-08-28T03:22:09.755453+00:00"
   },
   {
     "symbol": "KDP",
     "name": "Keurig Dr Pepper Inc.",
     "sector": "Consumer Staples",
     "industry": "Non-Alcoholic Beverages & Coffee",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Beverage company in North America with a diverse portfolio of flavored beverages, concentrates, and single-serve Keurig brewing systems.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -144379,13 +144995,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:14:43.080933+00:00"
+    "last_updated": "2026-08-28T03:22:09.762011+00:00"
   },
   {
     "symbol": "KHC",
     "name": "The Kraft Heinz Company",
     "sector": "Consumer Staples",
     "industry": "Packaged Foods",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Manufactures and markets food and beverage products worldwide including condiments, sauces, cheese, dairy, meals, meats, and coffee.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -146038,13 +146661,20 @@
       "coverage_count": 10,
       "average_upside_pct": -5.2
     },
-    "last_updated": "2026-08-28T03:14:43.086957+00:00"
+    "last_updated": "2026-08-28T03:22:09.768615+00:00"
   },
   {
     "symbol": "KLAC",
     "name": "KLA Corporation",
     "sector": "Information Technology",
     "industry": "Semiconductor Process Control",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, manufactures, and markets process control and yield management solutions for the semiconductor manufacturing industry.",
     "thesis_status": "BUY",
     "conviction_score": 8.9,
@@ -147704,13 +148334,20 @@
       "coverage_count": 10,
       "average_upside_pct": 39.1
     },
-    "last_updated": "2026-08-28T03:14:43.092975+00:00"
+    "last_updated": "2026-08-28T03:22:09.775100+00:00"
   },
   {
     "symbol": "KO",
     "name": "The Coca-Cola Company",
     "sector": "Consumer Staples",
     "industry": "Non-Alcoholic Beverages & Global Franchising",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's largest non-alcoholic beverage company, marketing over 200 brands including Coca-Cola, Sprite, Fanta, Dasani, Minute Maid, and Costa Coffee across 200+ countries.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -149363,13 +150000,20 @@
       "coverage_count": 10,
       "average_upside_pct": 8.9
     },
-    "last_updated": "2026-08-28T03:14:43.100733+00:00"
+    "last_updated": "2026-08-28T03:22:09.781635+00:00"
   },
   {
     "symbol": "LIN",
     "name": "Linde plc",
     "sector": "Materials",
     "industry": "Industrial Gases",
+    "is_adr": false,
+    "listing_type": "FOREIGN_DOMICILE_10K",
+    "country_of_origin": "Ireland / United Kingdom",
+    "primary_exchange": "NYSE (LIN)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+    "depositary_bank": null,
     "description": "Leading global industrial gases and engineering company serving chemicals, refining, healthcare, electronics, and manufacturing.",
     "thesis_status": "SELL",
     "conviction_score": 7.4,
@@ -151022,13 +151666,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:14:43.100733+00:00"
+    "last_updated": "2026-08-28T03:22:09.788187+00:00"
   },
   {
     "symbol": "LLY",
     "name": "Eli Lilly and Company",
     "sector": "Healthcare",
     "industry": "Pharmaceuticals",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company LLY.",
     "thesis_status": "HOLD",
     "conviction_score": 9.0,
@@ -152680,13 +153331,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.8
     },
-    "last_updated": "2026-08-28T03:14:43.112691+00:00"
+    "last_updated": "2026-08-28T03:22:09.794689+00:00"
   },
   {
     "symbol": "LMT",
     "name": "Lockheed Martin Corporation",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company LMT.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -154338,13 +154996,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:14:43.113974+00:00"
+    "last_updated": "2026-08-28T03:22:09.799550+00:00"
   },
   {
     "symbol": "LRCX",
     "name": "Lam Research Corporation",
     "sector": "Information Technology",
     "industry": "Semiconductor Equipment",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, manufactures, markets, and services semiconductor processing equipment used in the fabrication of integrated circuits.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -155997,13 +156662,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.4
     },
-    "last_updated": "2026-08-28T03:14:43.113974+00:00"
+    "last_updated": "2026-08-28T03:22:09.806037+00:00"
   },
   {
     "symbol": "MA",
     "name": "Mastercard Incorporated",
     "sector": "Financials",
     "industry": "Transaction & Payment Processing",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global payments technology company connecting consumers, financial institutions, merchants, and governments across more than 210 countries and territories.",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -157655,13 +158327,20 @@
       "coverage_count": 10,
       "average_upside_pct": 16.0
     },
-    "last_updated": "2026-08-28T03:14:43.130992+00:00"
+    "last_updated": "2026-08-28T03:22:09.812481+00:00"
   },
   {
     "symbol": "MAR",
     "name": "Marriott International, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Hotels & Lodging",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates, franchises, and licenses hotel, residential, and timeshare properties across 30 leading brands worldwide.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -159314,13 +159993,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.0
     },
-    "last_updated": "2026-08-28T03:14:43.130992+00:00"
+    "last_updated": "2026-08-28T03:22:09.819092+00:00"
   },
   {
     "symbol": "MCD",
     "name": "McDonald's Corporation",
     "sector": "Consumer Discretionary",
     "industry": "Restaurants & Global Franchising",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's leading global foodservice retailer with over 41,000 locations in more than 100 countries, operating on a heavily franchised real estate ownership model.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -160973,13 +161659,20 @@
       "coverage_count": 10,
       "average_upside_pct": 14.4
     },
-    "last_updated": "2026-08-28T03:14:43.144104+00:00"
+    "last_updated": "2026-08-28T03:22:09.825591+00:00"
   },
   {
     "symbol": "MCHP",
     "name": "Microchip Technology Incorporated",
     "sector": "Information Technology",
     "industry": "Microcontrollers & Analog Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Leading provider of smart, connected, and secure embedded control solutions, microcontrollers, and mixed-signal semiconductors.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -162632,13 +163325,20 @@
       "coverage_count": 10,
       "average_upside_pct": 22.2
     },
-    "last_updated": "2026-08-28T03:14:43.144104+00:00"
+    "last_updated": "2026-08-28T03:22:09.830446+00:00"
   },
   {
     "symbol": "MDB",
     "name": "MongoDB, Inc.",
     "sector": "Information Technology",
     "industry": "Database Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company MDB.",
     "thesis_status": "SELL",
     "conviction_score": 7.6,
@@ -164283,13 +164983,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.2
     },
-    "last_updated": "2026-08-28T03:14:43.144104+00:00"
+    "last_updated": "2026-08-28T03:22:09.838072+00:00"
   },
   {
     "symbol": "MDLZ",
     "name": "Mondelez International, Inc.",
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Confectionery",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Manufactures and markets snack food and beverage products including biscuits (Oreo, belVita), chocolate (Cadbury, Milka), and baked snacks.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -165942,13 +166649,20 @@
       "coverage_count": 10,
       "average_upside_pct": 7.4
     },
-    "last_updated": "2026-08-28T03:14:43.164072+00:00"
+    "last_updated": "2026-08-28T03:22:09.842962+00:00"
   },
   {
     "symbol": "MELI",
     "name": "MercadoLibre, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "E-Commerce & FinTech",
+    "is_adr": false,
+    "listing_type": "US_INC_FOREIGN_OPS",
+    "country_of_origin": "United States (Operations: Latin America / Brazil)",
+    "primary_exchange": "NASDAQ (MELI)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates the largest e-commerce and digital payments ecosystem in Latin America across Mercado Libre and Mercado Pago.",
     "thesis_status": "BUY",
     "conviction_score": 9.4,
@@ -167595,13 +168309,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.2
     },
-    "last_updated": "2026-08-28T03:14:43.170751+00:00"
+    "last_updated": "2026-08-28T03:22:09.848999+00:00"
   },
   {
     "symbol": "META",
     "name": "Meta Platforms, Inc.",
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Builds technologies that help people connect, find communities, and grow businesses across Facebook, Instagram, WhatsApp, and Threads.",
     "thesis_status": "HOLD",
     "conviction_score": 9.2,
@@ -169254,13 +169975,20 @@
       "coverage_count": 10,
       "average_upside_pct": 30.3
     },
-    "last_updated": "2026-08-28T03:14:43.177689+00:00"
+    "last_updated": "2026-08-28T03:22:09.856247+00:00"
   },
   {
     "symbol": "MMM",
     "name": "3M Company",
     "sector": "Industrials",
     "industry": "Diversified Industrial Conglomerate",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Diversified manufacturer serving industrial, safety, consumer, and electronics markets with products ranging from adhesives to abrasives and filtration.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -170913,13 +171641,20 @@
       "coverage_count": 10,
       "average_upside_pct": 7.6
     },
-    "last_updated": "2026-08-28T03:14:43.180910+00:00"
+    "last_updated": "2026-08-28T03:22:09.863284+00:00"
   },
   {
     "symbol": "MNDY",
     "name": "monday.com Ltd.",
     "sector": "Information Technology",
     "industry": "Enterprise Workflow Software & Cloud",
+    "is_adr": false,
+    "listing_type": "FOREIGN_ORDINARY",
+    "country_of_origin": "Israel",
+    "primary_exchange": "NASDAQ",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares Direct Listing",
+    "depositary_bank": null,
     "description": "Develops the Work OS cloud software platform enabling organizations to build custom work management applications, CRM pipelines, software dev trackers, and automated cross-functional workflows.",
     "thesis_status": "BUY",
     "conviction_score": 9.1,
@@ -172438,13 +173173,20 @@
       "coverage_count": 2,
       "average_upside_pct": 33.2
     },
-    "last_updated": "2026-08-28T03:14:43.180910+00:00"
+    "last_updated": "2026-08-28T03:22:09.869572+00:00"
   },
   {
     "symbol": "MNST",
     "name": "Monster Beverage Corporation",
     "sector": "Consumer Staples",
     "industry": "Non-Alcoholic Beverages",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, markets, and distributes energy drink beverages including Monster Energy, Reign, Bang Energy, and Ultra.",
     "thesis_status": "HOLD",
     "conviction_score": 8.5,
@@ -174099,13 +174841,20 @@
       "coverage_count": 10,
       "average_upside_pct": -35.8
     },
-    "last_updated": "2026-08-28T03:14:43.195703+00:00"
+    "last_updated": "2026-08-28T03:22:09.876020+00:00"
   },
   {
     "symbol": "MPWR",
     "name": "Monolithic Power Systems, Inc.",
     "sector": "Information Technology",
     "industry": "Power Management Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and develops high-performance semiconductor-based power electronics solutions for cloud data centers, automotive, and industrial applications.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -175758,13 +176507,20 @@
       "coverage_count": 10,
       "average_upside_pct": 22.3
     },
-    "last_updated": "2026-08-28T03:14:43.195703+00:00"
+    "last_updated": "2026-08-28T03:22:09.880791+00:00"
   },
   {
     "symbol": "MRK",
     "name": "Merck & Co., Inc.",
     "sector": "Health Care",
     "industry": "Pharmaceuticals & Oncology",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global healthcare company delivering innovative health solutions through prescription medicines (Keytruda, Gardasil), vaccines, and animal health products.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -177417,13 +178173,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.2
     },
-    "last_updated": "2026-08-28T03:14:43.208781+00:00"
+    "last_updated": "2026-08-28T03:22:09.887060+00:00"
   },
   {
     "symbol": "MRVL",
     "name": "Marvell Technology, Inc.",
     "sector": "Information Technology",
     "industry": "Data Infrastructure Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and develops analog, mixed-signal, and digital processing integrated circuits for cloud data centers, carrier infrastructure, and automotive.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -179075,13 +179838,20 @@
       "coverage_count": 10,
       "average_upside_pct": 25.0
     },
-    "last_updated": "2026-08-28T03:14:43.212935+00:00"
+    "last_updated": "2026-08-28T03:22:09.893354+00:00"
   },
   {
     "symbol": "MS",
     "name": "Morgan Stanley",
     "sector": "Financials",
     "industry": "Wealth Management & Investment Banking",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company MS.",
     "thesis_status": "SELL",
     "conviction_score": 8.5,
@@ -180733,13 +181503,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:14:43.212935+00:00"
+    "last_updated": "2026-08-28T03:22:09.904309+00:00"
   },
   {
     "symbol": "MSFT",
     "name": "Microsoft Corporation",
     "sector": "Information Technology",
     "industry": "Systems Software & Cloud Computing",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company MSFT.",
     "thesis_status": "HOLD",
     "conviction_score": 9.4,
@@ -182393,13 +183170,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.0
     },
-    "last_updated": "2026-08-28T03:14:43.227473+00:00"
+    "last_updated": "2026-08-28T03:22:09.910697+00:00"
   },
   {
     "symbol": "MSTR",
     "name": "MicroStrategy Incorporated",
     "sector": "Information Technology",
     "industry": "Enterprise Analytics & Treasury Reserve Management",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides enterprise analytics software and operates an active corporate treasury management strategy focused on holding Bitcoin reserves.",
     "thesis_status": "AVOID",
     "conviction_score": 6.5,
@@ -184046,13 +184830,20 @@
       "coverage_count": 10,
       "average_upside_pct": 145.5
     },
-    "last_updated": "2026-08-28T03:14:43.227473+00:00"
+    "last_updated": "2026-08-28T03:22:09.916929+00:00"
   },
   {
     "symbol": "MU",
     "name": "Micron Technology, Inc.",
     "sector": "Information Technology",
     "industry": "Memory Semiconductors & HBM",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, manufactures, and sells memory and storage products including high-bandwidth memory (HBM3E), DRAM, and NAND flash.",
     "thesis_status": "HOLD",
     "conviction_score": 7.8,
@@ -185705,13 +186496,20 @@
       "coverage_count": 10,
       "average_upside_pct": 28.6
     },
-    "last_updated": "2026-08-28T03:14:43.243266+00:00"
+    "last_updated": "2026-08-28T03:22:09.923374+00:00"
   },
   {
     "symbol": "NET",
     "name": "Cloudflare, Inc.",
     "sector": "Information Technology",
     "industry": "Cloud & Cybersecurity Infrastructure",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company NET.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -187356,13 +188154,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.4
     },
-    "last_updated": "2026-08-28T03:14:43.243266+00:00"
+    "last_updated": "2026-08-28T03:22:09.929877+00:00"
   },
   {
     "symbol": "NFLX",
     "name": "Netflix, Inc.",
     "sector": "Communication Services",
     "industry": "Entertainment & Streaming",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "The world's leading streaming entertainment service with over 275 million paid memberships in over 190 countries.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -189010,13 +189815,20 @@
       "coverage_count": 10,
       "average_upside_pct": 24.4
     },
-    "last_updated": "2026-08-28T03:14:43.258925+00:00"
+    "last_updated": "2026-08-28T03:22:09.936266+00:00"
   },
   {
     "symbol": "NKE",
     "name": "NIKE, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Athletic Footwear & Apparel",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, markets, and distributes authentic athletic footwear, apparel, equipment, and accessories for sports and fitness activities worldwide.",
     "thesis_status": "SELL",
     "conviction_score": 7.9,
@@ -190669,13 +191481,20 @@
       "coverage_count": 10,
       "average_upside_pct": 8.6
     },
-    "last_updated": "2026-08-28T03:14:43.258925+00:00"
+    "last_updated": "2026-08-28T03:22:09.942686+00:00"
   },
   {
     "symbol": "NRGV",
     "name": "Energy Vault Holdings, Inc.",
     "sector": "Energy",
     "industry": "Gravity & Hybrid Energy Storage",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops sustainable, grid-scale energy storage solutions including gravity-based storage, battery energy storage systems, and green hydrogen hybrid systems.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -192264,13 +193083,20 @@
       "coverage_count": 6,
       "average_upside_pct": 57.7
     },
-    "last_updated": "2026-08-28T03:14:43.258925+00:00"
+    "last_updated": "2026-08-28T03:22:09.949067+00:00"
   },
   {
     "symbol": "NTLA",
     "name": "Intellia Therapeutics, Inc.",
     "sector": "Health Care",
     "industry": "CRISPR In Vivo Gene Editing",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Clinical-stage genome editing company focused on developing curative therapeutics utilizing CRISPR/Cas9 technology for in vivo and ex vivo treatments.",
     "thesis_status": "AVOID",
     "conviction_score": 5.5,
@@ -193915,13 +194741,20 @@
       "coverage_count": 10,
       "average_upside_pct": 71.8
     },
-    "last_updated": "2026-08-28T03:14:43.274706+00:00"
+    "last_updated": "2026-08-28T03:22:09.955451+00:00"
   },
   {
     "symbol": "NU",
     "name": "Nu Holdings Ltd.",
     "sector": "Financials",
     "industry": "Digital Banking & Consumer Fintech",
+    "is_adr": false,
+    "listing_type": "FOREIGN_ORDINARY",
+    "country_of_origin": "Cayman Islands / Brazil",
+    "primary_exchange": "NYSE",
+    "adr_ratio": null,
+    "adr_underlying_description": "Class A Ordinary Shares Direct Listing",
+    "depositary_bank": null,
     "description": "Operates Nubank, the leading digital banking platform in Latin America providing zero-fee credit cards, mobile payments, high-yield savings, and investment accounts to over 139 million customers across Brazil, Mexico, and Colombia.",
     "thesis_status": "BUY",
     "conviction_score": 9.4,
@@ -195454,13 +196287,20 @@
       "coverage_count": 3,
       "average_upside_pct": 25.8
     },
-    "last_updated": "2026-08-28T03:14:43.274706+00:00"
+    "last_updated": "2026-08-28T03:22:09.961954+00:00"
   },
   {
     "symbol": "NVDA",
     "name": "NVIDIA Corporation",
     "sector": "Information Technology",
     "industry": "Semiconductors & AI Hardware",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Pioneered accelerated computing to tackle challenges no one else can solve, dominating the data center GPU and AI hardware stack.",
     "thesis_status": "BUY",
     "conviction_score": 9.5,
@@ -197122,13 +197962,20 @@
       "coverage_count": 10,
       "average_upside_pct": 42.5
     },
-    "last_updated": "2026-08-28T03:14:43.291663+00:00"
+    "last_updated": "2026-08-28T03:22:09.969885+00:00"
   },
   {
     "symbol": "NXPI",
     "name": "NXP Semiconductors N.V.",
     "sector": "Information Technology",
     "industry": "Automotive & Industrial Semiconductors",
+    "is_adr": false,
+    "listing_type": "FOREIGN_DOMICILE_10K",
+    "country_of_origin": "Netherlands",
+    "primary_exchange": "NASDAQ (NXPI)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Shares (Nasdaq Direct Listing)",
+    "depositary_bank": null,
     "description": "Offers automotive processing, radar, and secure connectivity solutions for automotive, industrial, IoT, and communication infrastructure markets.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -198781,13 +199628,20 @@
       "coverage_count": 10,
       "average_upside_pct": 23.1
     },
-    "last_updated": "2026-08-28T03:14:43.291663+00:00"
+    "last_updated": "2026-08-28T03:22:09.976330+00:00"
   },
   {
     "symbol": "ODFL",
     "name": "Old Dominion Freight Line, Inc.",
     "sector": "Industrials",
     "industry": "Less-Than-Truckload (LTL) Freight",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Leading North American less-than-truckload (LTL) motor carrier providing regional, inter-regional, and national shipping services.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -200440,13 +201294,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.9
     },
-    "last_updated": "2026-08-28T03:14:43.306590+00:00"
+    "last_updated": "2026-08-28T03:22:09.982717+00:00"
   },
   {
     "symbol": "ORCL",
     "name": "Oracle Corporation",
     "sector": "Information Technology",
     "industry": "Enterprise Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company ORCL.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -202098,13 +202959,20 @@
       "coverage_count": 10,
       "average_upside_pct": 29.6
     },
-    "last_updated": "2026-08-28T03:14:43.306590+00:00"
+    "last_updated": "2026-08-28T03:22:09.989155+00:00"
   },
   {
     "symbol": "ORLY",
     "name": "O'Reilly Automotive, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Automotive Aftermarket Retail",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Retailer and supplier of automotive aftermarket parts, tools, supplies, equipment, and accessories serving both DIY and professional service providers.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -203752,13 +204620,20 @@
       "coverage_count": 10,
       "average_upside_pct": 19.4
     },
-    "last_updated": "2026-08-28T03:14:43.306590+00:00"
+    "last_updated": "2026-08-28T03:22:09.995650+00:00"
   },
   {
     "symbol": "PANW",
     "name": "Palo Alto Networks, Inc.",
     "sector": "Information Technology",
     "industry": "Systems Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company PANW.",
     "thesis_status": "HOLD",
     "conviction_score": 8.4,
@@ -205406,13 +206281,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.5
     },
-    "last_updated": "2026-08-28T03:14:43.322242+00:00"
+    "last_updated": "2026-08-28T03:22:10.001949+00:00"
   },
   {
     "symbol": "PAYX",
     "name": "Paychex, Inc.",
     "sector": "Industrials",
     "industry": "Payroll & HR Outsourcing Services",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides integrated human capital management solutions for payroll, human resources, insurance, and retirement for small-to-medium businesses.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -207065,13 +207947,20 @@
       "coverage_count": 10,
       "average_upside_pct": 2.4
     },
-    "last_updated": "2026-08-28T03:14:43.322242+00:00"
+    "last_updated": "2026-08-28T03:22:10.008382+00:00"
   },
   {
     "symbol": "PCAR",
     "name": "PACCAR Inc",
     "sector": "Industrials",
     "industry": "Commercial Heavy-Duty Vehicles",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global technology leader in the design, manufacture, and customer support of premium light, medium, and heavy-duty commercial trucks (Kenworth, Peterbilt, DAF).",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -208724,13 +209613,20 @@
       "coverage_count": 10,
       "average_upside_pct": 7.9
     },
-    "last_updated": "2026-08-28T03:14:43.337913+00:00"
+    "last_updated": "2026-08-28T03:22:10.014772+00:00"
   },
   {
     "symbol": "PDD",
     "name": "PDD Holdings Inc.",
     "sector": "Consumer Discretionary",
     "industry": "E-Commerce & Digital Marketplace",
+    "is_adr": true,
+    "listing_type": "ADS",
+    "country_of_origin": "China",
+    "primary_exchange": "NASDAQ Global Select",
+    "adr_ratio": 4.0,
+    "adr_underlying_description": "1 ADS = 4 Class A Ordinary Shares",
+    "depositary_bank": "Deutsche Bank Trust Company Americas",
     "description": "Multinational commerce group operating digital marketplaces including Pinduoduo in China and cross-border marketplace Temu globally.",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -210377,13 +211273,20 @@
       "coverage_count": 10,
       "average_upside_pct": 26.2
     },
-    "last_updated": "2026-08-28T03:14:43.337913+00:00"
+    "last_updated": "2026-08-28T03:22:10.021074+00:00"
   },
   {
     "symbol": "PEP",
     "name": "PepsiCo, Inc.",
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Beverages",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global food and beverage leader with complementary brands across Frito-Lay, Quaker, Gatorade, Pepsi-Cola, and Tropicana.",
     "thesis_status": "SELL",
     "conviction_score": 8.1,
@@ -212036,13 +212939,20 @@
       "coverage_count": 10,
       "average_upside_pct": 8.2
     },
-    "last_updated": "2026-08-28T03:14:43.337913+00:00"
+    "last_updated": "2026-08-28T03:22:10.027515+00:00"
   },
   {
     "symbol": "PG",
     "name": "The Procter & Gamble Company",
     "sector": "Consumer Staples",
     "industry": "Household & Personal Care Products",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides branded consumer packaged goods across beauty, grooming, health care, fabric & home care, and baby, feminine & family care.",
     "thesis_status": "SELL",
     "conviction_score": 8.4,
@@ -213695,13 +214605,20 @@
       "coverage_count": 10,
       "average_upside_pct": 11.0
     },
-    "last_updated": "2026-08-28T03:14:43.353727+00:00"
+    "last_updated": "2026-08-28T03:22:10.035358+00:00"
   },
   {
     "symbol": "PLTR",
     "name": "Palantir Technologies Inc.",
     "sector": "Information Technology",
     "industry": "Enterprise Software & AI Platforms",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Builds software platforms for data-driven operations and decision making, including Artificial Intelligence Platform (AIP), Foundry, and Gotham.",
     "thesis_status": "HOLD",
     "conviction_score": 9.2,
@@ -215341,13 +216258,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.6
     },
-    "last_updated": "2026-08-28T03:14:43.353727+00:00"
+    "last_updated": "2026-08-28T03:22:10.041882+00:00"
   },
   {
     "symbol": "PYPL",
     "name": "PayPal Holdings, Inc.",
     "sector": "Financials",
     "industry": "Digital Payments & FinTech",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates a global digital payments platform enabling consumers and merchants to conduct transactions across PayPal, Venmo, Braintree, and PayPal Zettle.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -217000,13 +217924,20 @@
       "coverage_count": 10,
       "average_upside_pct": -2.2
     },
-    "last_updated": "2026-08-28T03:14:43.369425+00:00"
+    "last_updated": "2026-08-28T03:22:10.048218+00:00"
   },
   {
     "symbol": "QCOM",
     "name": "QUALCOMM Incorporated",
     "sector": "Information Technology",
     "industry": "Semiconductors & Wireless Licensing",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops foundational technologies for wireless communications (5G, 6G), mobile Snapdragon processors, automotive digital cockpits, and AI PCs.",
     "thesis_status": "SELL",
     "conviction_score": 8.3,
@@ -218659,13 +219590,20 @@
       "coverage_count": 10,
       "average_upside_pct": 25.3
     },
-    "last_updated": "2026-08-28T03:14:43.369425+00:00"
+    "last_updated": "2026-08-28T03:22:10.054584+00:00"
   },
   {
     "symbol": "REGN",
     "name": "Regeneron Pharmaceuticals, Inc.",
     "sector": "Health Care",
     "industry": "Biopharmaceuticals",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Discovers, invents, develops, and commercializes medicines for serious diseases including eye diseases (EYLEA HD), inflammatory diseases (Dupixent), and oncology (Libtayo).",
     "thesis_status": "SELL",
     "conviction_score": 8.4,
@@ -220318,13 +221256,20 @@
       "coverage_count": 10,
       "average_upside_pct": -1.0
     },
-    "last_updated": "2026-08-28T03:14:43.385094+00:00"
+    "last_updated": "2026-08-28T03:22:10.060958+00:00"
   },
   {
     "symbol": "ROP",
     "name": "Roper Technologies, Inc.",
     "sector": "Information Technology",
     "industry": "Niche Vertical Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and develops vertical software and technology-enabled products for niche healthcare, education, government, and commercial end markets.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -221977,13 +222922,20 @@
       "coverage_count": 10,
       "average_upside_pct": 16.5
     },
-    "last_updated": "2026-08-28T03:14:43.393395+00:00"
+    "last_updated": "2026-08-28T03:22:10.067281+00:00"
   },
   {
     "symbol": "ROST",
     "name": "Ross Stores, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Apparel & Home Merchandise Retail",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates off-price retail apparel and home fashion stores under the Ross Dress for Less and dd's DISCOUNTS brands.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -223636,13 +224588,20 @@
       "coverage_count": 10,
       "average_upside_pct": 10.1
     },
-    "last_updated": "2026-08-28T03:14:43.393395+00:00"
+    "last_updated": "2026-08-28T03:22:10.073772+00:00"
   },
   {
     "symbol": "SBUX",
     "name": "Starbucks Corporation",
     "sector": "Consumer Discretionary",
     "industry": "Specialty Coffee Retail & Roasteries",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's premier roaster, marketer, and retailer of specialty coffee, operating over 38,000 company-operated and licensed stores globally.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -225295,13 +226254,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.3
     },
-    "last_updated": "2026-08-28T03:14:43.401673+00:00"
+    "last_updated": "2026-08-28T03:22:10.080192+00:00"
   },
   {
     "symbol": "SEDG",
     "name": "SolarEdge Technologies, Inc.",
     "sector": "Energy",
     "industry": "Solar Inverters & Power Optimizers",
+    "is_adr": false,
+    "listing_type": "US_INC_FOREIGN_HQ",
+    "country_of_origin": "United States (HQ: Israel)",
+    "primary_exchange": "NASDAQ (SEDG)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and develops DC optimized inverter solutions for residential, commercial, and small utility-scale solar PV installations.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -226946,13 +227912,20 @@
       "coverage_count": 10,
       "average_upside_pct": -1.9
     },
-    "last_updated": "2026-08-28T03:14:43.401673+00:00"
+    "last_updated": "2026-08-28T03:22:10.088199+00:00"
   },
   {
     "symbol": "SHOP",
     "name": "Shopify Inc.",
     "sector": "Information Technology",
     "industry": "E-Commerce Software & Merchant Solutions",
+    "is_adr": false,
+    "listing_type": "CANADIAN_MJDS",
+    "country_of_origin": "Canada",
+    "primary_exchange": "Toronto Stock Exchange (TSX: SHOP)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Class A Subordinate Voting Shares (TSX/NYSE Dual Listing)",
+    "depositary_bank": null,
     "description": "Provides internet infrastructure for commerce, offering trusted tools to start, scale, market, and run a retail business of any size.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -228599,13 +229572,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.1
     },
-    "last_updated": "2026-08-28T03:14:43.419237+00:00"
+    "last_updated": "2026-08-28T03:22:10.094593+00:00"
   },
   {
     "symbol": "SHW",
     "name": "The Sherwin-Williams Company",
     "sector": "Materials",
     "industry": "Specialty Chemicals & Architectural Coatings",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, manufactures, and distributes paints, coatings, and related products to professional, industrial, commercial, and retail customers.",
     "thesis_status": "SELL",
     "conviction_score": 7.4,
@@ -230258,13 +231238,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.2
     },
-    "last_updated": "2026-08-28T03:14:43.425806+00:00"
+    "last_updated": "2026-08-28T03:22:10.101012+00:00"
   },
   {
     "symbol": "SLDP",
     "name": "Solid Power, Inc.",
     "sector": "Energy",
     "industry": "All-Solid-State Battery Technology",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops all-solid-state rechargeable battery cells and sulfide-based solid electrolyte materials for electric vehicles and other markets.",
     "thesis_status": "AVOID",
     "conviction_score": 5.2,
@@ -231825,13 +232812,20 @@
       "coverage_count": 4,
       "average_upside_pct": 86.8
     },
-    "last_updated": "2026-08-28T03:14:43.432331+00:00"
+    "last_updated": "2026-08-28T03:22:10.107518+00:00"
   },
   {
     "symbol": "SNOW",
     "name": "Snowflake Inc.",
     "sector": "Information Technology",
     "industry": "Cloud Data Platform",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company SNOW.",
     "thesis_status": "HOLD",
     "conviction_score": 7.8,
@@ -233476,13 +234470,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.7
     },
-    "last_updated": "2026-08-28T03:14:43.438883+00:00"
+    "last_updated": "2026-08-28T03:22:10.113828+00:00"
   },
   {
     "symbol": "SNPS",
     "name": "Synopsys, Inc.",
     "sector": "Information Technology",
     "industry": "Electronic Design Automation Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Global leader in electronic design automation (EDA) and semiconductor intellectual property (IP), accelerating silicon-to-systems design.",
     "thesis_status": "HOLD",
     "conviction_score": 8.7,
@@ -235130,13 +236131,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.9
     },
-    "last_updated": "2026-08-28T03:14:43.441704+00:00"
+    "last_updated": "2026-08-28T03:22:10.121752+00:00"
   },
   {
     "symbol": "SPGI",
     "name": "S&P Global Inc.",
     "sector": "Financials",
     "industry": "Financial Information & Credit Ratings",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company SPGI.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -236799,13 +237807,20 @@
       "coverage_count": 10,
       "average_upside_pct": 20.3
     },
-    "last_updated": "2026-08-28T03:14:43.448922+00:00"
+    "last_updated": "2026-08-28T03:22:10.128093+00:00"
   },
   {
     "symbol": "STOK",
     "name": "Stoke Therapeutics, Inc.",
     "sector": "Health Care",
     "industry": "RNA Splicing Therapeutics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Biotechnology company pioneering antisense oligonucleotides (TANGO platform) to restore protein levels in severe genetic diseases like Dravet syndrome.",
     "thesis_status": "SELL",
     "conviction_score": 7.8,
@@ -238450,13 +239465,20 @@
       "coverage_count": 10,
       "average_upside_pct": 36.9
     },
-    "last_updated": "2026-08-28T03:14:43.448922+00:00"
+    "last_updated": "2026-08-28T03:22:10.134621+00:00"
   },
   {
     "symbol": "STX",
     "name": "Seagate Technology Holdings plc",
     "sector": "Information Technology",
     "industry": "Data Storage Technologies",
+    "is_adr": false,
+    "listing_type": "FOREIGN_DOMICILE_10K",
+    "country_of_origin": "Ireland",
+    "primary_exchange": "NASDAQ (STX)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Ordinary Shares (Nasdaq Direct Listing)",
+    "depositary_bank": null,
     "description": "Provides data storage technology and infrastructure solutions, leading the transition to Heat-Assisted Magnetic Recording (HAMR) enterprise hard drives.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -240109,13 +241131,20 @@
       "coverage_count": 10,
       "average_upside_pct": 44.7
     },
-    "last_updated": "2026-08-28T03:14:43.464792+00:00"
+    "last_updated": "2026-08-28T03:22:10.141095+00:00"
   },
   {
     "symbol": "SYK",
     "name": "Stryker Corporation",
     "sector": "Healthcare",
     "industry": "Medical Technology",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company SYK.",
     "thesis_status": "HOLD",
     "conviction_score": 8.6,
@@ -241767,13 +242796,20 @@
       "coverage_count": 10,
       "average_upside_pct": 13.7
     },
-    "last_updated": "2026-08-28T03:14:43.464792+00:00"
+    "last_updated": "2026-08-28T03:22:10.147655+00:00"
   },
   {
     "symbol": "TDOC",
     "name": "Teladoc Health, Inc.",
     "sector": "Health Care",
     "industry": "Virtual Healthcare & Telemedicine",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides virtual healthcare services, telehealth consultations, and chronic condition management (BetterHelp, Integrated Care).",
     "thesis_status": "HOLD",
     "conviction_score": 7.8,
@@ -243418,13 +244454,20 @@
       "coverage_count": 10,
       "average_upside_pct": 27.5
     },
-    "last_updated": "2026-08-28T03:14:43.464792+00:00"
+    "last_updated": "2026-08-28T03:22:10.154128+00:00"
   },
   {
     "symbol": "TEAM",
     "name": "Atlassian Corporation",
     "sector": "Information Technology",
     "industry": "Team Collaboration Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, develops, and licenses team collaboration and productivity software including Jira, Confluence, Trello, and Jira Service Management.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -245071,13 +246114,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.6
     },
-    "last_updated": "2026-08-28T03:14:43.484495+00:00"
+    "last_updated": "2026-08-28T03:22:10.160706+00:00"
   },
   {
     "symbol": "TMO",
     "name": "Thermo Fisher Scientific Inc.",
     "sector": "Healthcare",
     "industry": "Life Sciences & Diagnostics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company TMO.",
     "thesis_status": "SELL",
     "conviction_score": 7.5,
@@ -246729,13 +247779,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.5
     },
-    "last_updated": "2026-08-28T03:14:43.490512+00:00"
+    "last_updated": "2026-08-28T03:22:10.167216+00:00"
   },
   {
     "symbol": "TMUS",
     "name": "T-Mobile US, Inc.",
     "sector": "Communication Services",
     "industry": "Wireless Telecommunication",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides wireless voice, messaging, and data services under the T-Mobile and Metro by T-Mobile brands, and fixed wireless 5G home internet.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -248388,13 +249445,20 @@
       "coverage_count": 10,
       "average_upside_pct": 27.5
     },
-    "last_updated": "2026-08-28T03:14:43.496268+00:00"
+    "last_updated": "2026-08-28T03:22:10.173650+00:00"
   },
   {
     "symbol": "TOST",
     "name": "Toast, Inc.",
     "sector": "Information Technology",
     "industry": "Vertical SaaS & Fintech Solutions",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides a comprehensive vertical SaaS platform and point-of-sale ecosystem purpose-built for the restaurant industry, integrating order management, payment processing, kitchen operations, payroll, and capital access.",
     "thesis_status": "BUY",
     "conviction_score": 9.1,
@@ -249913,13 +250977,20 @@
       "coverage_count": 2,
       "average_upside_pct": 28.3
     },
-    "last_updated": "2026-08-28T03:14:43.502285+00:00"
+    "last_updated": "2026-08-28T03:22:10.180238+00:00"
   },
   {
     "symbol": "TRI",
     "name": "Thomson Reuters Corporation",
     "sector": "Industrials",
     "industry": "Legal, Tax & Accounting Software",
+    "is_adr": false,
+    "listing_type": "CANADIAN_MJDS",
+    "country_of_origin": "Canada",
+    "primary_exchange": "Toronto Stock Exchange (TSX: TRI)",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Shares Dual Listing (SEC MJDS)",
+    "depositary_bank": null,
     "description": "Provides authoritative information, software, and AI solutions for legal, tax, accounting, and compliance professionals (Westlaw, Checkpoint, CoCounsel).",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -251571,13 +252642,20 @@
       "coverage_count": 10,
       "average_upside_pct": 34.9
     },
-    "last_updated": "2026-08-28T03:14:43.508306+00:00"
+    "last_updated": "2026-08-28T03:22:10.186544+00:00"
   },
   {
     "symbol": "TRV",
     "name": "The Travelers Companies, Inc.",
     "sector": "Financials",
     "industry": "Property & Casualty Insurance",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides commercial and personal property and casualty insurance products and services to businesses, government units, associations, and individuals.",
     "thesis_status": "SELL",
     "conviction_score": 8.2,
@@ -253230,13 +254308,20 @@
       "coverage_count": 10,
       "average_upside_pct": -2.1
     },
-    "last_updated": "2026-08-28T03:14:43.514067+00:00"
+    "last_updated": "2026-08-28T03:22:10.193108+00:00"
   },
   {
     "symbol": "TSLA",
     "name": "Tesla, Inc.",
     "sector": "Consumer Discretionary",
     "industry": "Automobile & Clean Energy",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs, develops, manufactures, sells, and leases electric vehicles, energy storage systems, and solar installations.",
     "thesis_status": "HOLD",
     "conviction_score": 8.5,
@@ -254884,13 +255969,20 @@
       "coverage_count": 10,
       "average_upside_pct": 42.9
     },
-    "last_updated": "2026-08-28T03:14:43.520087+00:00"
+    "last_updated": "2026-08-28T03:22:10.199620+00:00"
   },
   {
     "symbol": "TSM",
     "name": "Taiwan Semiconductor Manufacturing Company Limited",
     "sector": "Information Technology",
     "industry": "Semiconductors",
+    "is_adr": true,
+    "listing_type": "ADR",
+    "country_of_origin": "Taiwan",
+    "primary_exchange": "Taiwan Stock Exchange (TWSE: 2330)",
+    "adr_ratio": 5.0,
+    "adr_underlying_description": "1 ADR = 5 TWSE Ordinary Shares",
+    "depositary_bank": "Citibank, N.A.",
     "description": "Public company TSM.",
     "thesis_status": "BUY",
     "conviction_score": 9.3,
@@ -256512,13 +257604,20 @@
       "coverage_count": 8,
       "average_upside_pct": 31.1
     },
-    "last_updated": "2026-08-28T03:14:43.527850+00:00"
+    "last_updated": "2026-08-28T03:22:10.206188+00:00"
   },
   {
     "symbol": "TTD",
     "name": "The Trade Desk, Inc.",
     "sector": "Communication Services",
     "industry": "Digital Advertising Platform",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company TTD.",
     "thesis_status": "SELL",
     "conviction_score": 7.9,
@@ -258165,13 +259264,20 @@
       "coverage_count": 10,
       "average_upside_pct": -14.4
     },
-    "last_updated": "2026-08-28T03:14:43.531545+00:00"
+    "last_updated": "2026-08-28T03:22:10.212822+00:00"
   },
   {
     "symbol": "TTWO",
     "name": "Take-Two Interactive Software, Inc.",
     "sector": "Communication Services",
     "industry": "Interactive Entertainment Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, publishes, and markets interactive entertainment software across Rockstar Games, 2K, and Zynga (Grand Theft Auto, NBA 2K, Red Dead).",
     "thesis_status": "SELL",
     "conviction_score": 7.9,
@@ -259819,13 +260925,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.8
     },
-    "last_updated": "2026-08-28T03:14:43.531545+00:00"
+    "last_updated": "2026-08-28T03:22:10.218800+00:00"
   },
   {
     "symbol": "TXN",
     "name": "Texas Instruments Incorporated",
     "sector": "Information Technology",
     "industry": "Analog & Embedded Semiconductors",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Designs and manufactures analog and embedded processing chips for industrial, automotive, personal electronics, and communications equipment.",
     "thesis_status": "SELL",
     "conviction_score": 8.1,
@@ -261478,13 +262591,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.9
     },
-    "last_updated": "2026-08-28T03:14:43.546049+00:00"
+    "last_updated": "2026-08-28T03:22:10.226536+00:00"
   },
   {
     "symbol": "UBER",
     "name": "Uber Technologies, Inc.",
     "sector": "Industrials",
     "industry": "Ridesharing & Delivery Platform",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company UBER.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -263131,13 +264251,20 @@
       "coverage_count": 10,
       "average_upside_pct": 44.5
     },
-    "last_updated": "2026-08-28T03:14:43.546049+00:00"
+    "last_updated": "2026-08-28T03:22:10.232789+00:00"
   },
   {
     "symbol": "UNH",
     "name": "UnitedHealth Group Incorporated",
     "sector": "Health Care",
     "industry": "Managed Care & Healthcare Services (Optum)",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Diversified healthcare company operating UnitedHealthcare (health benefits) and Optum (OptumHealth clinical care, OptumRx pharmacy benefit manager, Optum Insight data analytics).",
     "thesis_status": "HOLD",
     "conviction_score": 8.8,
@@ -264790,13 +265917,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.6
     },
-    "last_updated": "2026-08-28T03:14:43.559419+00:00"
+    "last_updated": "2026-08-28T03:22:10.238951+00:00"
   },
   {
     "symbol": "UNP",
     "name": "Union Pacific Corporation",
     "sector": "Industrials",
     "industry": "Rail Transportation",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company UNP.",
     "thesis_status": "SELL",
     "conviction_score": 8.5,
@@ -266448,13 +267582,20 @@
       "coverage_count": 10,
       "average_upside_pct": 9.4
     },
-    "last_updated": "2026-08-28T03:14:43.559419+00:00"
+    "last_updated": "2026-08-28T03:22:10.245477+00:00"
   },
   {
     "symbol": "V",
     "name": "Visa Inc.",
     "sector": "Financials",
     "industry": "Transaction & Payment Processing",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "World's largest retail electronic payments network, facilitating transactions between consumers, merchants, financial institutions, and government entities.",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -268107,13 +269248,20 @@
       "coverage_count": 10,
       "average_upside_pct": 15.8
     },
-    "last_updated": "2026-08-28T03:14:43.559419+00:00"
+    "last_updated": "2026-08-28T03:22:10.252456+00:00"
   },
   {
     "symbol": "VRSK",
     "name": "Verisk Analytics, Inc.",
     "sector": "Industrials",
     "industry": "Insurance Data & Risk Analytics",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides data analytics, risk assessment, and predictive underwriting tools to the property and casualty (P&C) insurance industry.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -269766,13 +270914,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.0
     },
-    "last_updated": "2026-08-28T03:14:43.575479+00:00"
+    "last_updated": "2026-08-28T03:22:10.258835+00:00"
   },
   {
     "symbol": "VRT",
     "name": "Vertiv Holdings Co",
     "sector": "Industrials",
     "industry": "Data Center Infrastructure",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Public company VRT.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -271424,13 +272579,20 @@
       "coverage_count": 10,
       "average_upside_pct": 50.8
     },
-    "last_updated": "2026-08-28T03:14:43.575479+00:00"
+    "last_updated": "2026-08-28T03:22:10.266598+00:00"
   },
   {
     "symbol": "VRTX",
     "name": "Vertex Pharmaceuticals Incorporated",
     "sector": "Health Care",
     "industry": "Biotechnology",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Discovers and develops transformative medicines for serious diseases including cystic fibrosis (Trikafta), sickle cell (CASGEVY), and acute pain (Suzetrigine).",
     "thesis_status": "HOLD",
     "conviction_score": 9.1,
@@ -273078,13 +274240,20 @@
       "coverage_count": 10,
       "average_upside_pct": 18.3
     },
-    "last_updated": "2026-08-28T03:14:43.591209+00:00"
+    "last_updated": "2026-08-28T03:22:10.274021+00:00"
   },
   {
     "symbol": "VZ",
     "name": "Verizon Communications Inc.",
     "sector": "Communication Services",
     "industry": "Integrated Telecommunications",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides communications, technology, information and entertainment products and services to consumers, businesses and government entities.",
     "thesis_status": "AVOID",
     "conviction_score": 6.8,
@@ -274737,13 +275906,20 @@
       "coverage_count": 10,
       "average_upside_pct": 7.0
     },
-    "last_updated": "2026-08-28T03:14:43.591209+00:00"
+    "last_updated": "2026-08-28T03:22:10.281596+00:00"
   },
   {
     "symbol": "WBD",
     "name": "Warner Bros. Discovery, Inc.",
     "sector": "Communication Services",
     "industry": "Entertainment & Media",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Premier global media and entertainment company offering content across television, film, streaming (Max), and gaming (HBO, Warner Bros, DC).",
     "thesis_status": "AVOID",
     "conviction_score": 4.5,
@@ -276391,13 +277567,20 @@
       "coverage_count": 10,
       "average_upside_pct": 2.2
     },
-    "last_updated": "2026-08-28T03:14:43.591209+00:00"
+    "last_updated": "2026-08-28T03:22:10.287922+00:00"
   },
   {
     "symbol": "WDAY",
     "name": "Workday, Inc.",
     "sector": "Information Technology",
     "industry": "Cloud Enterprise Software",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides cloud enterprise software for human capital management (HCM), financial management, and analytics to the world's largest corporations.",
     "thesis_status": "SELL",
     "conviction_score": 8.3,
@@ -278045,13 +279228,20 @@
       "coverage_count": 10,
       "average_upside_pct": 11.7
     },
-    "last_updated": "2026-08-28T03:14:43.608709+00:00"
+    "last_updated": "2026-08-28T03:22:10.293874+00:00"
   },
   {
     "symbol": "WDC",
     "name": "Western Digital Corporation",
     "sector": "Information Technology",
     "industry": "Data Storage Technologies",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Develops, manufactures, and sells data storage devices including hard disk drives (ePMR/UltraSMR HDDs) and solid-state drives (Flash/NAND).",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -279704,13 +280894,20 @@
       "coverage_count": 10,
       "average_upside_pct": 34.2
     },
-    "last_updated": "2026-08-28T03:14:43.608709+00:00"
+    "last_updated": "2026-08-28T03:22:10.301287+00:00"
   },
   {
     "symbol": "WMT",
     "name": "Walmart Inc.",
     "sector": "Consumer Staples",
     "industry": "Omnichannel Hypermarket Retail",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Engages in retail and wholesale operations, operating grocery and merchandise stores, hypermarkets, and e-commerce platforms across the US and international markets.",
     "thesis_status": "SELL",
     "conviction_score": 8.3,
@@ -281364,13 +282561,20 @@
       "coverage_count": 10,
       "average_upside_pct": 21.4
     },
-    "last_updated": "2026-08-28T03:14:43.623022+00:00"
+    "last_updated": "2026-08-28T03:22:10.307586+00:00"
   },
   {
     "symbol": "XEL",
     "name": "Xcel Energy Inc.",
     "sector": "Utilities",
     "industry": "Regulated Clean Energy Utility",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Regulated electric and natural gas delivery company serving 3.7 million electricity and 2.1 million natural gas customers across eight Western and Midwestern states.",
     "thesis_status": "AVOID",
     "conviction_score": 7.2,
@@ -283023,13 +284227,20 @@
       "coverage_count": 10,
       "average_upside_pct": 17.8
     },
-    "last_updated": "2026-08-28T03:14:43.623022+00:00"
+    "last_updated": "2026-08-28T03:22:10.314066+00:00"
   },
   {
     "symbol": "XYZ",
     "name": "Block, Inc.",
     "sector": "Financials",
     "industry": "Financial Technology & Digital Payments",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Operates the Square small-business merchant ecosystem, Cash App consumer digital wallet platform, and decentralized financial infrastructure.",
     "thesis_status": "SELL",
     "conviction_score": 8.0,
@@ -284652,13 +285863,20 @@
       "coverage_count": 10,
       "average_upside_pct": 31.8
     },
-    "last_updated": "2026-08-28T03:14:43.639077+00:00"
+    "last_updated": "2026-08-28T03:22:10.319862+00:00"
   },
   {
     "symbol": "ZM",
     "name": "Zoom Communications, Inc.",
     "sector": "Information Technology",
     "industry": "Video Communications & Collaboration",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Provides a unified communications and collaboration platform including Zoom Meetings, Zoom Phone, Zoom Team Chat, and Contact Center.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -286303,13 +287521,20 @@
       "coverage_count": 10,
       "average_upside_pct": 20.9
     },
-    "last_updated": "2026-08-28T03:14:43.639077+00:00"
+    "last_updated": "2026-08-28T03:22:10.326022+00:00"
   },
   {
     "symbol": "ZS",
     "name": "Zscaler, Inc.",
     "sector": "Information Technology",
     "industry": "Cloud Cybersecurity & Zero Trust",
+    "is_adr": false,
+    "listing_type": "US_COMMON_STOCK",
+    "country_of_origin": "United States",
+    "primary_exchange": "US Exchange",
+    "adr_ratio": null,
+    "adr_underlying_description": "Common Stock",
+    "depositary_bank": null,
     "description": "Cloud security company providing the Zero Trust Exchange platform that securely connects users, applications, and devices over any network.",
     "thesis_status": "HOLD",
     "conviction_score": 8.2,
@@ -287956,6 +289181,6 @@
       "coverage_count": 10,
       "average_upside_pct": 47.7
     },
-    "last_updated": "2026-08-28T03:14:43.639077+00:00"
+    "last_updated": "2026-08-28T03:22:10.334143+00:00"
   }
 ]

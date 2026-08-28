@@ -93,5 +93,12 @@
     }
   ],
   "name": "Taiwan Semiconductor Manufacturing Company Limited",
-  "investor_relations_url": "https://investor.tsmc.com/"
+  "investor_relations_url": "https://investor.tsmc.com/",
+  "is_adr": true,
+  "listing_type": "ADR",
+  "country_of_origin": "Taiwan",
+  "primary_exchange": "Taiwan Stock Exchange (TWSE: 2330)",
+  "adr_ratio": 5.0,
+  "adr_underlying_description": "1 ADR = 5 TWSE Ordinary Shares",
+  "depositary_bank": "Citibank, N.A."
 }

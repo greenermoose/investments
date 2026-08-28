@@ -11,6 +11,10 @@
 - **Conviction Score:** 9.2 / 10.0
 - **Rating:** BUY
 - **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Listing Structure:** American Depositary Receipt (ADR/ADS) (1 NY Registry Share = 1 Euronext Ordinary Share)
+- **Country of Origin:** Netherlands
+- **Primary Home Market:** Euronext Amsterdam (ASML)
+- **Depositary Bank:** JPMorgan Chase Bank, N.A.
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=937966
 
 ## Business Profile

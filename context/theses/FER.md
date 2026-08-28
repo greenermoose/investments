@@ -11,6 +11,9 @@
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** FOREIGN ORDINARY
+- **Country of Origin:** Netherlands / Spain
+- **Primary Home Market:** Euronext Amsterdam / BME (FER)
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1468522
 
 ## Business Profile

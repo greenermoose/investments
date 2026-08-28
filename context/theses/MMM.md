@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=66740
 
 ## Business Profile
@@ -53,13 +54,12 @@
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $11.80 B (Gap: $-0.60 B) | ~$0.15 B / yr | 3M maintains legacy defined benefit pension plans with $11.8B in gross PBO against $11.2B ... |
-| Environmental Remediation & PFAS | Risk: HIGH | Accrued: $10.30 B (48 Sites) | ~$0.85 B / yr | Subject to historic public water supplier PFAS settlement ($10.3B payable across 13 years ... |
-| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $6.00 B | ~$1.10 B / yr | Combat Arms Earplugs CAEv2 MDL settlement ($6.0B payable through 2029) and international/s... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $2.40 B | Take-or-Pay: $0.80 B | Unconditional raw materials and specialty chemical supply agreements total $2.4B across 5 ... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $11.8 B (Gap: $-0.6 B) | ~$0.15 B / yr | 3M maintains legacy defined benefit pension plans with $11.8B in gross PBO again... |
+| Environmental Remediation & PFAS | Risk: HIGH | Accrued: $10.30 B (48 Sites) | ~$0.85 B / yr | Subject to historic public water supplier PFAS settlement ($10.3B payable across... |
+| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $6.00 B | ~$1.10 B / yr | Combat Arms Earplugs CAEv2 MDL settlement ($6.0B payable through 2029) and inter... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.40 B | Take-or-Pay: $0.80 B | Unconditional raw materials and specialty chemical supply agreements total $2.4B... |
 
 **Equity Cash Flow Seniority Impact:** High cash flow encumbrance: ~$1.95B in annual cash outlays dedicated to PFAS and Combat Arms settlements through 2029-2036 restricts common share repurchases and moderates dividend growth.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

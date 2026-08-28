@@ -11,6 +11,7 @@
 - **Conviction Score:** 9.0 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=59478
 
 ## Business Profile
@@ -53,13 +54,12 @@ Eli Lilly and Company manages an established industrial liability footprint with
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $14.34 B (Gap: $-1.00 B) | ~$0.43 B / yr | Eli Lilly and Company sponsors defined benefit pension plans with $14.34B in gross PBO aga... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $16.29 B | Take-or-Pay: $4.89 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $14.34 B (Gap: $-1.0 B) | ~$0.43 B / yr | Eli Lilly and Company sponsors defined benefit pension plans with $14.34B in gro... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $16.29 B | Take-or-Pay: $4.89 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

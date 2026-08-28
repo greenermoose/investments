@@ -60,6 +60,7 @@ export function createGridCard(company, onSelect) {
           <span class="company-price-range" style="font-size: 0.95rem; font-weight: 600; color: #ffffff;">$${entryPrice.toFixed(2)} to $${targetExit.toFixed(2)}</span>
         </div>
         <div class="company-status-badges" style="display: flex; gap: 6px; align-items: center;">
+          ${company.is_adr ? `<span class="badge-status adr" title="American Depositary Receipt (${company.adr_underlying_description || '1 ADR = Ordinary Shares'})">${company.listing_type || 'ADR'}</span>` : ''}
           ${company.entry_strategy === 'SELL_CSP' ? '<span class="badge-status csp">CSP</span>' : ''}
           <span class="badge-status ${statusClass}">${formattedStatus}</span>
           ${company.exit_strategy === 'SELL_COVERED_CALLS' ? '<span class="badge-status cc">CC</span>' : ''}
@@ -67,7 +68,7 @@ export function createGridCard(company, onSelect) {
       </div>
 
       <div class="company-name">${company.name || company.symbol}</div>
-      <div class="company-sector">${company.sector || 'US Equity'} &bull; ${company.industry || ''}</div>
+      <div class="company-sector">${company.sector || 'US Equity'} &bull; ${company.industry || ''}${company.is_adr ? ` &bull; <span style="color: #c084fc; font-weight: 500;">ADR (${company.country_of_origin || 'Foreign'})</span>` : (company.country_of_origin && company.country_of_origin !== 'United States' && !company.country_of_origin.startsWith('United States') ? ` &bull; <span style="color: #38bdf8; font-weight: 500;">${company.country_of_origin}</span>` : '')}</div>
       
       <p class="company-desc">${company.description || 'Publicly traded company tracked by the investment advisor.'}</p>
       

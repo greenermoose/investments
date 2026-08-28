@@ -11,6 +11,9 @@
 - **Conviction Score:** 8.8 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** CANADIAN MJDS
+- **Country of Origin:** Canada
+- **Primary Home Market:** Toronto Stock Exchange (TSX: BAM)
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1937926
 
 ## Business Profile
@@ -53,13 +56,12 @@ Brookfield Asset Management Ltd.'s off-balance sheet liabilities are low risk, w
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.48 B (Gap: $-0.01 B) | ~$0.01 B / yr | Brookfield Asset Management Ltd. maintains well-funded legacy defined benefit pension plan... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Brookfield Asset Management Ltd. has zero industrial contamination or Superfund remediatio... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, interchange ... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.58 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby letters of cre... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.48 B (Gap: $-0.01 B) | ~$0.01 B / yr | Brookfield Asset Management Ltd. maintains well-funded legacy defined benefit pe... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Brookfield Asset Management Ltd. has zero industrial contamination or Superfund ... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, in... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.58 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

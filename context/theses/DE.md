@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=315189
 
 ## Business Profile
@@ -53,13 +54,12 @@ Deere & Company manages an established industrial liability footprint with stabl
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $15.00 B (Gap: $-1.05 B) | ~$0.45 B / yr | Deere & Company sponsors defined benefit pension plans with $15.00B in gross PBO against $... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $17.05 B | Take-or-Pay: $5.12 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $15.0 B (Gap: $-1.05 B) | ~$0.45 B / yr | Deere & Company sponsors defined benefit pension plans with $15.00B in gross PBO... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $17.05 B | Take-or-Pay: $5.12 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

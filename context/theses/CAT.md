@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.5 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=18230
 
 ## Business Profile
@@ -53,13 +54,12 @@ Caterpillar's heavy industrial pension and legacy OPEB footprint is mature, de-r
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $14.20 B (Gap: $-0.60 B) | ~$0.20 B / yr | Caterpillar sponsors global defined benefit plans with $14.2B PBO against $13.6B plan asse... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.50 B (18 Sites) | ~$0.04 B / yr | Ongoing remediation at 18 manufacturing foundry and heavy equipment engine assembly facili... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.08 B / yr | Routine commercial distributor disputes, patent infringement claims, and historical indust... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $8.50 B | Take-or-Pay: $3.20 B | Long-term steel procurement, specialized casting component agreements, and Cat Financial d... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $14.2 B (Gap: $-0.6 B) | ~$0.20 B / yr | Caterpillar sponsors global defined benefit plans with $14.2B PBO against $13.6B... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.50 B (18 Sites) | ~$0.04 B / yr | Ongoing remediation at 18 manufacturing foundry and heavy equipment engine assem... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.08 B / yr | Routine commercial distributor disputes, patent infringement claims, and histori... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $8.50 B | Take-or-Pay: $3.20 B | Long-term steel procurement, specialized casting component agreements, and Cat F... |
 
 **Equity Cash Flow Seniority Impact:** Low risk to equity returns: Annual pension and OPEB service (~$0.25B) represents less than 3% of normalized annual operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

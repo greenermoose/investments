@@ -11,6 +11,9 @@
 - **Conviction Score:** 5.5 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Listing Structure:** FOREIGN ORDINARY
+- **Country of Origin:** Canada
+- **Primary Home Market:** NASDAQ
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1375877
 
 ## Business Profile

@@ -25,6 +25,7 @@ if scripts_dir not in sys.path:
     sys.path.insert(0, scripts_dir)
 
 from valuation_model import model_equity_valuation
+from adr_registry import get_listing_metadata
 
 # CLI arguments
 parser = argparse.ArgumentParser(description="Generate institutional investment thesis dossiers.")
@@ -186,11 +187,16 @@ for equity in universe:
         elif "SP500" in equity["indices"]:
             exchange = "NASDAQ"
 
-    # Assemble complete markdown thesis dossier with all 6 narrative sections
-    dossier_lines = [
-        f"# Investment Thesis Dossier: {sym} - {name}",
-        "",
-        "## Summary & Key Metrics",
+    # Resolve authoritative listing and ADR metadata
+    listing_meta = get_listing_metadata(sym)
+    is_adr_flag = listing_meta.get("is_adr", False)
+    listing_type_str = listing_meta.get("listing_type", "US_COMMON_STOCK")
+    country_str = listing_meta.get("country_of_origin", "United States")
+    adr_desc_str = listing_meta.get("adr_underlying_description")
+    dep_bank_str = listing_meta.get("depositary_bank")
+    prim_exch_str = listing_meta.get("primary_exchange")
+
+    summary_items = [
         f"- **Ticker:** {sym}",
         f"- **Exchange:** {exchange}",
         f"- **Entry Date:** 2026-08-17",
@@ -201,7 +207,22 @@ for equity in universe:
         f"- **Conviction Score:** {conviction_score:.1f} / 10.0",
         f"- **Rating:** {thesis_status}",
         f"- **Target Strategy:** {target_strategy}",
-        f"- **SEC EDGAR URL:** {sec_edgar_url}",
+        f"- **Listing Structure:** {'American Depositary Receipt (ADR/ADS)' if is_adr_flag else listing_type_str.replace('_', ' ')}" + (f" ({adr_desc_str})" if adr_desc_str and is_adr_flag else "")
+    ]
+    if is_adr_flag or listing_type_str != "US_COMMON_STOCK":
+        summary_items.append(f"- **Country of Origin:** {country_str}")
+        if prim_exch_str:
+            summary_items.append(f"- **Primary Home Market:** {prim_exch_str}")
+        if dep_bank_str:
+            summary_items.append(f"- **Depositary Bank:** {dep_bank_str}")
+    summary_items.append(f"- **SEC EDGAR URL:** {sec_edgar_url}")
+
+    # Assemble complete markdown thesis dossier with all 6 narrative sections
+    dossier_lines = [
+        f"# Investment Thesis Dossier: {sym} - {name}",
+        "",
+        "## Summary & Key Metrics",
+        *summary_items,
         "",
         "## Business Profile",
         business_profile,

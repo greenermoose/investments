@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=827054
 
 ## Business Profile
@@ -53,13 +54,12 @@ Microchip Technology Incorporated maintains a capital-light liability profile wi
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Microchip Technology Incorporated operates zero defined benefit pension plans or retiree h... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Microchip Technology Incorporated has zero legacy manufacturing, toxic chemical, or federa... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $1.65 B | Take-or-Pay: $0.49 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Microchip Technology Incorporated operates zero defined benefit pension plans or... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Microchip Technology Incorporated has zero legacy manufacturing, toxic chemical,... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.65 B | Take-or-Pay: $0.49 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

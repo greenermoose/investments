@@ -78,5 +78,12 @@
         }
       }
     }
-  ]
+  ],
+  "is_adr": false,
+  "listing_type": "FOREIGN_ORDINARY",
+  "country_of_origin": "Cayman Islands / Brazil",
+  "primary_exchange": "NYSE",
+  "adr_ratio": null,
+  "adr_underlying_description": "Class A Ordinary Shares Direct Listing",
+  "depositary_bank": null
 }

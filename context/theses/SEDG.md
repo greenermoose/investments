@@ -11,6 +11,9 @@
 - **Conviction Score:** 7.5 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US INC FOREIGN HQ
+- **Country of Origin:** United States (HQ: Israel)
+- **Primary Home Market:** NASDAQ (SEDG)
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1419612
 
 ## Business Profile
@@ -53,13 +56,12 @@ SolarEdge Technologies, Inc.'s off-balance sheet liabilities consist of standard
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.30 B (Gap: $-0.03 B) | ~$0.01 B / yr | SolarEdge Technologies, Inc. sponsors utility and industrial defined benefit plans ($0.30B... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.53 B (12 Sites) | ~$0.03 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash po... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and regional grid re... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.59 B | Take-or-Pay: $0.35 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay cont... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.3 B (Gap: $-0.03 B) | ~$0.01 B / yr | SolarEdge Technologies, Inc. sponsors utility and industrial defined benefit pla... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.53 B (12 Sites) | ~$0.03 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.59 B | Take-or-Pay: $0.35 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
 
 **Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

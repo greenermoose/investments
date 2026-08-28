@@ -11,6 +11,7 @@
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=200406
 
 ## Business Profile
@@ -53,13 +54,12 @@ While JNJ faces substantial mass tort exposure from cosmetic talc claims, its en
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $32.40 B (Gap: $-1.30 B) | ~$0.30 B / yr | Worldwide defined benefit pension PBO totals $32.4B against $31.1B in assets (-$1.3B net d... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.60 B (14 Sites) | ~$0.05 B / yr | Remediation reserves across 14 historical pharmaceutical and medical packaging synthesis f... |
-| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $9.50 B | ~$0.75 B / yr | Cosmetic talcum powder ovarian cancer and mesothelioma mass torts (proposed $8.9B+ 25-year... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $6.20 B | Take-or-Pay: $2.10 B | Unconditional active pharmaceutical ingredient (API) manufacturing, clinical research orga... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $32.4 B (Gap: $-1.3 B) | ~$0.30 B / yr | Worldwide defined benefit pension PBO totals $32.4B against $31.1B in assets (-$... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.60 B (14 Sites) | ~$0.05 B / yr | Remediation reserves across 14 historical pharmaceutical and medical packaging s... |
+| Product Liability & Mass Torts | Risk: ELEVATED | Scheduled: $9.50 B | ~$0.75 B / yr | Cosmetic talcum powder ovarian cancer and mesothelioma mass torts (proposed $8.9... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $6.20 B | Take-or-Pay: $2.10 B | Unconditional active pharmaceutical ingredient (API) manufacturing, clinical res... |
 
 **Equity Cash Flow Seniority Impact:** Moderate cash diversion: AAA-rated balance sheet and $18B+ annual free cash flow readily service talc settlement installments and pension contributions while maintaining consecutive annual dividend increases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

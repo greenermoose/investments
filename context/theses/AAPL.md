@@ -11,6 +11,7 @@
 - **Conviction Score:** 9.0 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=320193
 
 ## Business Profile
@@ -53,13 +54,12 @@ Apple has an exceptionally clean liability structure with zero pension deficits,
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Apple maintains zero defined benefit pension or post-retirement medical OPEB plans. Employ... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Apple has zero material historical Superfund or chemical remediation liabilities; manufact... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $3.00 B | ~$0.25 B / yr | European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil antitrust laws... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $48.50 B | Take-or-Pay: $15.00 B | Unconditional manufacturing and component purchase commitments (TSMC advanced silicon wafe... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Apple maintains zero defined benefit pension or post-retirement medical OPEB pla... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Apple has zero material historical Superfund or chemical remediation liabilities... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $3.00 B | ~$0.25 B / yr | European Union Digital Markets Act (DMA) compliance inquiries, US DOJ civil anti... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $48.50 B | Take-or-Pay: $15.00 B | Unconditional manufacturing and component purchase commitments (TSMC advanced si... |
 
 **Equity Cash Flow Seniority Impact:** Minimal risk: Component purchase commitments are standard operational inventory procurements that generate high-margin consumer hardware sales, leaving $100B+ annual FCF for buybacks.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

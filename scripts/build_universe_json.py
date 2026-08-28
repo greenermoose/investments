@@ -19,7 +19,7 @@ if scripts_dir not in sys.path:
 from return_engine import calculate_annualized_roi
 from valuation_model import model_equity_valuation
 from compare_roi_distribution import run_comparison, print_comparison_report
-from adr_registry import normalize_shares_outstanding, convert_to_usd
+from adr_registry import normalize_shares_outstanding, convert_to_usd, get_listing_metadata
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -202,6 +202,16 @@ for filename in sorted(all_files):
     shares_projections_6h = val_model["shares_projections_6h"]
     price_target_ranges_4h = val_model["price_target_ranges_4h"]
 
+    # Resolve authoritative listing and ADR metadata
+    listing_meta = get_listing_metadata(sym)
+    is_adr_flag = listing_meta.get("is_adr", False)
+    listing_type_val = listing_meta.get("listing_type", "US_COMMON_STOCK")
+    country_of_origin = listing_meta.get("country_of_origin", "United States")
+    primary_exchange = listing_meta.get("primary_exchange", "US Exchange")
+    adr_ratio = listing_meta.get("adr_ratio")
+    adr_underlying_desc = listing_meta.get("adr_underlying_description")
+    depositary_bank = listing_meta.get("depositary_bank")
+
     # Update meta entry for persistent grounding
     meta_copy = dict(meta)
     meta_copy["thesis_status"] = thesis_status
@@ -228,6 +238,13 @@ for filename in sorted(all_files):
     meta_copy["options_yield_pct"] = ret_params["options_yield_pct"]
     meta_copy["total_roi_pct"] = ret_params["total_roi_pct"]
     meta_copy["annualized_roi_pct"] = ret_params["annualized_roi_pct"]
+    meta_copy["is_adr"] = is_adr_flag
+    meta_copy["listing_type"] = listing_type_val
+    meta_copy["country_of_origin"] = country_of_origin
+    meta_copy["primary_exchange"] = primary_exchange
+    meta_copy["adr_ratio"] = adr_ratio
+    meta_copy["adr_underlying_description"] = adr_underlying_desc
+    meta_copy["depositary_bank"] = depositary_bank
     meta_copy["last_updated"] = datetime.now(timezone.utc).isoformat()
     if "investor_relations_url" in meta:
         meta_copy["investor_relations_url"] = meta["investor_relations_url"]
@@ -283,6 +300,13 @@ for filename in sorted(all_files):
         "name": comp_name,
         "sector": meta.get("sector", "Information Technology"),
         "industry": meta.get("industry", "US Equity"),
+        "is_adr": is_adr_flag,
+        "listing_type": listing_type_val,
+        "country_of_origin": country_of_origin,
+        "primary_exchange": primary_exchange,
+        "adr_ratio": adr_ratio,
+        "adr_underlying_description": adr_underlying_desc,
+        "depositary_bank": depositary_bank,
         "description": meta.get("description", f"Public company {sym}."),
         "thesis_status": thesis_status,
         "conviction_score": conviction_score,

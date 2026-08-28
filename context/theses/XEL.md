@@ -11,6 +11,7 @@
 - **Conviction Score:** 7.2 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=72903
 
 ## Business Profile
@@ -53,13 +54,12 @@ Xcel Energy Inc.'s off-balance sheet liabilities consist of standard regulated u
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $3.67 B (Gap: $-0.37 B) | ~$0.11 B / yr | Xcel Energy Inc. sponsors utility and industrial defined benefit plans ($3.67B PBO vs $3.3... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $6.60 B (12 Sites) | ~$0.40 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash po... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and regional grid re... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $7.33 B | Take-or-Pay: $4.40 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay cont... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $3.67 B (Gap: $-0.37 B) | ~$0.11 B / yr | Xcel Energy Inc. sponsors utility and industrial defined benefit plans ($3.67B P... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $6.60 B (12 Sites) | ~$0.40 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $7.33 B | Take-or-Pay: $4.40 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
 
 **Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

@@ -24,7 +24,12 @@ export function createTableRow(company, onSelect) {
   const roiStr = `${roiVal.toFixed(1)}%`;
 
   row.innerHTML = `
-    <td><strong style="color: #00d4ff; font-size: 0.95rem;">${company.symbol}</strong></td>
+    <td>
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <strong style="color: #00d4ff; font-size: 0.95rem;">${company.symbol}</strong>
+        ${company.is_adr ? `<span class="badge-status adr" style="font-size: 0.68rem; padding: 2px 6px;" title="American Depositary Receipt (${company.adr_underlying_description || '1 ADR = Ordinary Shares'})">${company.listing_type || 'ADR'}</span>` : ''}
+      </div>
+    </td>
     <td style="color: #ffffff; font-weight: 500;">${company.name || company.symbol}</td>
     <td><span style="font-size: 0.8rem;">${company.sector || '-'}</span></td>
     <td><span class="badge-status ${statusClass}">${statusKey}</span></td>

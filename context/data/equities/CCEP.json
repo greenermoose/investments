@@ -92,5 +92,12 @@
     }
   ],
   "investor_relations_url": "https://www.cocacolaep.com/investors/",
-  "last_updated": "2026-08-28T03:13:30.591619+00:00"
+  "last_updated": "2026-08-28T03:13:30.591619+00:00",
+  "is_adr": false,
+  "listing_type": "FOREIGN_ORDINARY",
+  "country_of_origin": "United Kingdom",
+  "primary_exchange": "London Stock Exchange / Euronext (CCEP)",
+  "adr_ratio": null,
+  "adr_underlying_description": "Ordinary Shares Direct Listing",
+  "depositary_bank": null
 }

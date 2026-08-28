@@ -11,6 +11,7 @@
 - **Conviction Score:** 5.8 / 10.0
 - **Rating:** AVOID
 - **Target Strategy:** Capital Preservation & Risk Avoidance
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=12927
 
 ## Business Profile
@@ -53,13 +54,12 @@ Boeing carries one of the largest gross pension obligations in the US industrial
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | SIGNIFICANT | PBO: $48.20 B (Gap: $-4.40 B) | ~$0.45 B / yr | Boeing sponsors extensive defined benefit plans with $48.2B in gross PBO against $43.8B in... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.10 B (22 Sites) | ~$0.08 B / yr | Legacy aviation manufacturing and testing remediation programs across 22 sites including t... |
-| Product Liability & Mass Torts | Risk: HIGH | Scheduled: $2.80 B | ~$0.60 B / yr | 737 MAX fatal accident wrongful death litigation, Alaska Airlines Flight 1282 fuselage blo... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $52.00 B | Take-or-Pay: $18.50 B | Extensive aerospace multi-year tier-1 supply agreements (CFM International engines, Spirit... |
+| Defined Benefit Pension & OPEB | SIGNIFICANT | PBO: $48.2 B (Gap: $-4.4 B) | ~$0.45 B / yr | Boeing sponsors extensive defined benefit plans with $48.2B in gross PBO against... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.10 B (22 Sites) | ~$0.08 B / yr | Legacy aviation manufacturing and testing remediation programs across 22 sites i... |
+| Product Liability & Mass Torts | Risk: HIGH | Scheduled: $2.80 B | ~$0.60 B / yr | 737 MAX fatal accident wrongful death litigation, Alaska Airlines Flight 1282 fu... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $52.00 B | Take-or-Pay: $18.50 B | Extensive aerospace multi-year tier-1 supply agreements (CFM International engin... |
 
 **Equity Cash Flow Seniority Impact:** Severe cash flow diversion: Pension underfunding, aircraft quality rework, and supply chain commitments prevent dividend reinstatement and share repurchases until free cash flow stabilizes above $8B/year.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

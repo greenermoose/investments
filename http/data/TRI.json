@@ -92,5 +92,12 @@
     }
   ],
   "investor_relations_url": "https://ir.thomsonreuters.com/",
-  "last_updated": "2026-08-28T03:13:30.828236+00:00"
+  "last_updated": "2026-08-28T03:13:30.828236+00:00",
+  "is_adr": false,
+  "listing_type": "CANADIAN_MJDS",
+  "country_of_origin": "Canada",
+  "primary_exchange": "Toronto Stock Exchange (TSX: TRI)",
+  "adr_ratio": null,
+  "adr_underlying_description": "Common Shares Dual Listing (SEC MJDS)",
+  "depositary_bank": null
 }

@@ -11,6 +11,7 @@
 - **Conviction Score:** 9.3 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1652044
 
 ## Business Profile
@@ -53,13 +54,12 @@ Alphabet maintains pristine balance sheet strength with zero pension or toxic co
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Alphabet has zero defined benefit pension plans or post-retirement medical liabilities. Re... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Alphabet has zero defined benefit pension plans or post-retirement medical liabi... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Zero legacy manufacturing or Superfund cleanup obligations.... |
-| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $8.00 B | ~$0.50 B / yr | US DOJ Search distribution antitrust litigation remedy phase, US DOJ Ad Tech antitrust tri... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $38.00 B | Take-or-Pay: $14.50 B | Unconditional purchase obligations for cloud server infrastructure, TPU custom silicon fab... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $8.00 B | ~$0.50 B / yr | US DOJ Search distribution antitrust litigation remedy phase, US DOJ Ad Tech ant... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $38.00 B | Take-or-Pay: $14.50 B | Unconditional purchase obligations for cloud server infrastructure, TPU custom s... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Antitrust legal reserves and datacenter commitments represent a modest fraction of $100B+ annual operating cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

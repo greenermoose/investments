@@ -50,10 +50,28 @@ export function openCompanyModal(company) {
   if (irChipEl) {
     irChipEl.href = company.investor_relations_url || `https://investor.${company.symbol.toLowerCase()}.com/`;
   }
+
+  // ADR / Foreign Badge in modal title
+  const adrBadgeEl = document.getElementById('modal-adr-badge');
+  if (adrBadgeEl) {
+    if (company.is_adr) {
+      adrBadgeEl.style.display = 'inline-block';
+      adrBadgeEl.textContent = company.listing_type || 'ADR';
+      adrBadgeEl.className = 'badge-status adr';
+      adrBadgeEl.title = `American Depositary Receipt (${company.adr_underlying_description || '1 ADR = Ordinary Shares'})`;
+    } else if (company.listing_type && company.listing_type !== 'US_COMMON_STOCK' && !company.listing_type.startsWith('US_INC')) {
+      adrBadgeEl.style.display = 'inline-block';
+      adrBadgeEl.textContent = company.listing_type === 'CANADIAN_MJDS' ? 'MJDS' : 'FOREIGN';
+      adrBadgeEl.className = 'badge-status ' + (company.listing_type === 'CANADIAN_MJDS' ? 'canadian' : 'foreign');
+      adrBadgeEl.title = company.country_of_origin || 'Foreign Listing';
+    } else {
+      adrBadgeEl.style.display = 'none';
+    }
+  }
   
   const indexBadgesHtml = renderIndexBadges(company.indices);
   if (sectorTextEl) {
-    sectorTextEl.innerHTML = `${company.sector || 'US Equity'} &bull; ${company.industry || ''} ${indexBadgesHtml ? '&nbsp;&nbsp;' + indexBadgesHtml : ''}`;
+    sectorTextEl.innerHTML = `${company.sector || 'US Equity'} &bull; ${company.industry || ''}${company.is_adr ? ` &bull; <span style="color: #c084fc; font-weight: 500;">ADR (${company.country_of_origin || 'Foreign'})</span>` : (company.country_of_origin && company.country_of_origin !== 'United States' && !company.country_of_origin.startsWith('United States') ? ` &bull; <span style="color: #38bdf8; font-weight: 500;">${company.country_of_origin}</span>` : '')} ${indexBadgesHtml ? '&nbsp;&nbsp;' + indexBadgesHtml : ''}`;
   }
 
   // Status badge
@@ -73,6 +91,60 @@ export function openCompanyModal(company) {
   const moatEl = document.getElementById('modal-moat');
   const catalystEl = document.getElementById('modal-catalyst');
   const invalidationEl = document.getElementById('modal-invalidation');
+
+  // Listing Structure & ADR Disclosure Card
+  const listCardEl = document.getElementById('modal-listing-structure-card');
+  const listTitleEl = document.getElementById('modal-listing-structure-title');
+  const listBadgeEl = document.getElementById('modal-listing-structure-badge');
+  const listRatioEl = document.getElementById('modal-listing-ratio');
+  const listCountryEl = document.getElementById('modal-listing-country');
+  const listMarketEl = document.getElementById('modal-listing-market');
+  const listDepEl = document.getElementById('modal-listing-depositary');
+
+  if (listCardEl) {
+    if (company.is_adr) {
+      listCardEl.style.display = 'block';
+      listCardEl.style.background = 'rgba(168, 85, 247, 0.08)';
+      listCardEl.style.borderColor = 'rgba(168, 85, 247, 0.25)';
+      if (listTitleEl) {
+        listTitleEl.textContent = 'American Depositary Receipt (ADR) Structure';
+        listTitleEl.style.color = '#c084fc';
+      }
+      if (listBadgeEl) {
+        listBadgeEl.textContent = company.listing_type || 'ADR';
+        listBadgeEl.className = 'badge-status adr';
+      }
+      if (listRatioEl) listRatioEl.textContent = company.adr_underlying_description || (company.adr_ratio ? `1 ADR = ${company.adr_ratio} Ordinary Shares` : '1:1 Ratio');
+      if (listCountryEl) listCountryEl.textContent = company.country_of_origin || 'Foreign';
+      if (listMarketEl) listMarketEl.textContent = company.primary_exchange || 'Primary Foreign Exchange';
+      if (listDepEl) {
+        listDepEl.textContent = company.depositary_bank || 'US Depositary Bank';
+        listDepEl.style.color = '#c084fc';
+      }
+    } else if (company.listing_type && company.listing_type !== 'US_COMMON_STOCK' && !company.listing_type.startsWith('US_INC')) {
+      const isMJDS = company.listing_type === 'CANADIAN_MJDS';
+      listCardEl.style.display = 'block';
+      listCardEl.style.background = isMJDS ? 'rgba(251, 146, 60, 0.08)' : 'rgba(56, 189, 248, 0.08)';
+      listCardEl.style.borderColor = isMJDS ? 'rgba(251, 146, 60, 0.25)' : 'rgba(56, 189, 248, 0.25)';
+      if (listTitleEl) {
+        listTitleEl.textContent = isMJDS ? 'Canadian MJDS Dual Listing Structure' : 'Foreign Direct Listing Structure';
+        listTitleEl.style.color = isMJDS ? '#fb923c' : '#38bdf8';
+      }
+      if (listBadgeEl) {
+        listBadgeEl.textContent = isMJDS ? 'MJDS' : 'FOREIGN';
+        listBadgeEl.className = 'badge-status ' + (isMJDS ? 'canadian' : 'foreign');
+      }
+      if (listRatioEl) listRatioEl.textContent = company.adr_underlying_description || 'Direct Listing / Ordinary Shares';
+      if (listCountryEl) listCountryEl.textContent = company.country_of_origin || 'Foreign';
+      if (listMarketEl) listMarketEl.textContent = company.primary_exchange || 'Primary Foreign Exchange';
+      if (listDepEl) {
+        listDepEl.textContent = 'None (Direct Listing / FPI)';
+        listDepEl.style.color = '#94a3b8';
+      }
+    } else {
+      listCardEl.style.display = 'none';
+    }
+  }
 
   if (convictionEl) convictionEl.textContent = company.conviction_score ? `${company.conviction_score.toFixed(1)} / 10.0` : '-';
   if (currentPriceEl) currentPriceEl.textContent = `$${currentPrice.toFixed(2)}`;
@@ -590,6 +662,41 @@ export function openCompanyModal(company) {
   if (secBrowseBtn) secBrowseBtn.href = company.sec_edgar_url || `https://www.sec.gov/edgar/browse/?CIK=${company.symbol}`;
   const irBrowseBtn = document.getElementById('modal-ir-browse-btn');
   if (irBrowseBtn) irBrowseBtn.href = company.investor_relations_url || `https://investor.${company.symbol.toLowerCase()}.com/`;
+
+  const foreignNoticeEl = document.getElementById('modal-sec-foreign-notice');
+  const foreignNoticeTitleEl = document.getElementById('modal-sec-foreign-notice-title');
+  const foreignNoticeTextEl = document.getElementById('modal-sec-foreign-notice-text');
+  if (foreignNoticeEl) {
+    if (company.is_adr || (company.listing_type && company.listing_type !== 'US_COMMON_STOCK' && !company.listing_type.startsWith('US_INC'))) {
+      foreignNoticeEl.style.display = 'block';
+      if (company.is_adr) {
+        foreignNoticeEl.style.background = 'rgba(168, 85, 247, 0.08)';
+        foreignNoticeEl.style.borderColor = 'rgba(168, 85, 247, 0.25)';
+        if (foreignNoticeTitleEl) {
+          foreignNoticeTitleEl.textContent = 'Foreign Private Issuer ADR Regulatory Notice:';
+          foreignNoticeTitleEl.style.color = '#c084fc';
+        }
+        if (foreignNoticeTextEl) {
+          foreignNoticeTextEl.textContent = ` This security (${company.symbol}) is an American Depositary Receipt representing ${company.adr_underlying_description || 'ordinary shares'} of a foreign issuer domiciled in ${company.country_of_origin || 'abroad'} reporting under SEC Form 20-F. Financial statement figures, shares outstanding, and quarterly revenue metrics are deterministically normalized to US ADR equivalents and USD.`;
+        }
+      } else {
+        const isMJDS = company.listing_type === 'CANADIAN_MJDS';
+        foreignNoticeEl.style.background = isMJDS ? 'rgba(251, 146, 60, 0.08)' : 'rgba(56, 189, 248, 0.08)';
+        foreignNoticeEl.style.borderColor = isMJDS ? 'rgba(251, 146, 60, 0.25)' : 'rgba(56, 189, 248, 0.25)';
+        if (foreignNoticeTitleEl) {
+          foreignNoticeTitleEl.textContent = isMJDS ? 'Canadian MJDS Regulatory Notice:' : 'Foreign Private Issuer Regulatory Notice:';
+          foreignNoticeTitleEl.style.color = isMJDS ? '#fb923c' : '#38bdf8';
+        }
+        if (foreignNoticeTextEl) {
+          const formStr = isMJDS ? 'SEC Form 40-F (Multijurisdictional Disclosure System)' : 'SEC Form 20-F / Form 10-K';
+          foreignNoticeTextEl.textContent = ` This security (${company.symbol}) is a foreign issuer domiciled in ${company.country_of_origin || 'abroad'} reporting under ${formStr}. Diluted share counts and financial statements are deterministically normalized to USD.`;
+        }
+      }
+    } else {
+      foreignNoticeEl.style.display = 'none';
+    }
+  }
+
   const filingsTbody = document.getElementById('modal-filings-tbody');
   if (filingsTbody) {
     filingsTbody.innerHTML = '';

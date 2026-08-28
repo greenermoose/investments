@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1835632
 
 ## Business Profile
@@ -53,13 +54,12 @@ Marvell Technology, Inc. maintains a capital-light liability profile with zero d
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Marvell Technology, Inc. operates zero defined benefit pension plans or retiree healthcare... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Marvell Technology, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfu... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $2.87 B | Take-or-Pay: $0.86 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Marvell Technology, Inc. operates zero defined benefit pension plans or retiree ... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Marvell Technology, Inc. has zero legacy manufacturing, toxic chemical, or feder... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.87 B | Take-or-Pay: $0.86 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

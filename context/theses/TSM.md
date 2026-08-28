@@ -11,6 +11,10 @@
 - **Conviction Score:** 9.3 / 10.0
 - **Rating:** BUY
 - **Target Strategy:** High-Growth Secular Compounder with Cash-Secured Put Entry
+- **Listing Structure:** American Depositary Receipt (ADR/ADS) (1 ADR = 5 TWSE Ordinary Shares)
+- **Country of Origin:** Taiwan
+- **Primary Home Market:** Taiwan Stock Exchange (TWSE: 2330)
+- **Depositary Bank:** Citibank, N.A.
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1046179
 
 ## Business Profile

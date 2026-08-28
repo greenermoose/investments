@@ -93,5 +93,12 @@
     }
   ],
   "name": "Snowflake Inc.",
-  "investor_relations_url": "https://investors.snowflake.com/"
+  "investor_relations_url": "https://investors.snowflake.com/",
+  "is_adr": false,
+  "listing_type": "US_COMMON_STOCK",
+  "country_of_origin": "United States",
+  "primary_exchange": "US Exchange",
+  "adr_ratio": null,
+  "adr_underlying_description": "Common Stock",
+  "depositary_bank": null
 }

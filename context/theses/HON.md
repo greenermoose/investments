@@ -11,6 +11,7 @@
 - **Conviction Score:** 8.3 / 10.0
 - **Rating:** SELL
 - **Target Strategy:** Capital Reallocation & Controlled Limit Exit
+- **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=773840
 
 ## Business Profile
@@ -53,13 +54,12 @@ Honeywell has successfully ring-fenced and de-risked historical asbestos and env
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $13.50 B (Gap: $-0.80 B) | ~$0.18 B / yr | Honeywell sponsors global defined benefit plans ($13.5B PBO vs $12.7B assets) and $0.9B in... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.80 B (55 Sites) | ~$0.15 B / yr | Accrued remediation reserves at 55 Superfund and historical industrial sites, primarily in... |
-| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $1.20 B | ~$0.12 B / yr | Legacy Bendix friction materials asbestos claims (managed through ongoing indemnity arrang... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $7.50 B | Take-or-Pay: $2.50 B | Aerospace component, specialized titanium, and specialty refrigerant chemical supply agree... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $13.5 B (Gap: $-0.8 B) | ~$0.18 B / yr | Honeywell sponsors global defined benefit plans ($13.5B PBO vs $12.7B assets) an... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $1.80 B (55 Sites) | ~$0.15 B / yr | Accrued remediation reserves at 55 Superfund and historical industrial sites, pr... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $1.20 B | ~$0.12 B / yr | Legacy Bendix friction materials asbestos claims (managed through ongoing indemn... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $7.50 B | Take-or-Pay: $2.50 B | Aerospace component, specialized titanium, and specialty refrigerant chemical su... |
 
 **Equity Cash Flow Seniority Impact:** Manageable cash drag: Combined legacy liabilities represent ~$0.45B in annual cash outlays, well within $5B+ annual free cash flow.
-
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:

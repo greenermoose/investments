@@ -86,10 +86,13 @@ export function createDossierCard(company, onSelect) {
           ${indexChipsHtml}
         </div>
         <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 4px;">
-          ${company.sector || 'US Equity'} &bull; ${company.industry || ''} &bull; Day Volume: <strong style="color: #ffffff;">${volStr}</strong> (${volRatio} vs 20d avg ${avgVolStr})
+          ${company.sector || 'US Equity'} &bull; ${company.industry || ''}${company.is_adr ? ` &bull; <span style="color: #c084fc; font-weight: 500;">ADR (${company.country_of_origin || 'Foreign'})</span>` : (company.country_of_origin && company.country_of_origin !== 'United States' && !company.country_of_origin.startsWith('United States') ? ` &bull; <span style="color: #38bdf8; font-weight: 500;">${company.country_of_origin}</span>` : '')} &bull; Day Volume: <strong style="color: #ffffff;">${volStr}</strong> (${volRatio} vs 20d avg ${avgVolStr})
         </div>
       </div>
-      <span class="badge-status ${statusClass}">${formattedStatus}</span>
+      <div style="display: flex; gap: 6px; align-items: center;">
+        ${company.is_adr ? `<span class="badge-status adr" title="American Depositary Receipt (${company.adr_underlying_description || '1 ADR = Ordinary Shares'})">${company.listing_type || 'ADR'}</span>` : ''}
+        <span class="badge-status ${statusClass}">${formattedStatus}</span>
+      </div>
     </div>
 
     ${range52wHtml}
@@ -131,6 +134,31 @@ export function createDossierCard(company, onSelect) {
         &bull; Total ROI: <strong style="color: #10b981;">+${(company.total_roi_pct || 0).toFixed(1)}%</strong>
       </div>
     </div>
+
+    ${company.is_adr ? `
+    <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 6px; padding: 8px 12px; margin: 10px 0 14px 0; font-size: 0.82rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        <strong style="color: #c084fc;">American Depositary Receipt (ADR) Structure:</strong>
+        <span style="color: #e2e8f0; margin-left: 4px;">${company.adr_underlying_description || '1 ADR = Local Ordinary Shares'}</span>
+      </div>
+      <div style="color: var(--text-secondary);">
+        <span>Country: <strong style="color: #ffffff;">${company.country_of_origin || 'Foreign'}</strong></span>
+        ${company.primary_exchange ? ` &bull; <span>Home Exchange: <strong style="color: #ffffff;">${company.primary_exchange}</strong></span>` : ''}
+        ${company.depositary_bank ? ` &bull; <span>Depositary: <strong style="color: #c084fc;">${company.depositary_bank}</strong></span>` : ''}
+      </div>
+    </div>
+    ` : (company.listing_type && company.listing_type !== 'US_COMMON_STOCK' && !company.listing_type.startsWith('US_INC') ? `
+    <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 6px; padding: 8px 12px; margin: 10px 0 14px 0; font-size: 0.82rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        <strong style="color: #38bdf8;">Listing Structure:</strong>
+        <span style="color: #e2e8f0; margin-left: 4px;">${company.listing_type.replace(/_/g, ' ')}${company.adr_underlying_description ? ` (${company.adr_underlying_description})` : ''}</span>
+      </div>
+      <div style="color: var(--text-secondary);">
+        <span>Country: <strong style="color: #ffffff;">${company.country_of_origin || 'Foreign'}</strong></span>
+        ${company.primary_exchange ? ` &bull; <span>Primary Market: <strong style="color: #ffffff;">${company.primary_exchange}</strong></span>` : ''}
+      </div>
+    </div>
+    ` : '')}
 
     <h4 style="margin: 14px 0 6px 0; color: #ffffff;">Business Profile</h4>
     <div style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">

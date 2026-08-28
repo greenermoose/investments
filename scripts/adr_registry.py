@@ -208,3 +208,366 @@ def normalize_financial_filing_data(symbol: str, filing_data: Dict[str, Any], cu
         normalized["balance_sheet"] = norm_bs
 
     return normalized
+
+
+# Authoritative Listing Classification Registry for Foreign and Domestic Issuers
+LISTING_METADATA: Dict[str, Dict[str, Any]] = {
+    # American Depositary Receipts (ADRs) & Shares (ADSs)
+    "TSM": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "Taiwan",
+        "primary_exchange": "Taiwan Stock Exchange (TWSE: 2330)",
+        "adr_ratio": 5.0,
+        "adr_underlying_description": "1 ADR = 5 TWSE Ordinary Shares",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "PDD": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "NASDAQ Global Select",
+        "adr_ratio": 4.0,
+        "adr_underlying_description": "1 ADS = 4 Class A Ordinary Shares",
+        "depositary_bank": "Deutsche Bank Trust Company Americas",
+        "sec_form": "Form 20-F"
+    },
+    "ARM": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "United Kingdom",
+        "primary_exchange": "NASDAQ Global Select",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADS = 1 Ordinary Share",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "ASML": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "Netherlands",
+        "primary_exchange": "Euronext Amsterdam (ASML)",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 NY Registry Share = 1 Euronext Ordinary Share",
+        "depositary_bank": "JPMorgan Chase Bank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "BABA": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "Hong Kong Stock Exchange (HKEX: 9988)",
+        "adr_ratio": 8.0,
+        "adr_underlying_description": "1 ADS = 8 Ordinary Shares",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "BIDU": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "Hong Kong Stock Exchange (HKEX: 9888)",
+        "adr_ratio": 8.0,
+        "adr_underlying_description": "1 ADS = 8 Class A Ordinary Shares",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "JD": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "Hong Kong Stock Exchange (HKEX: 9618)",
+        "adr_ratio": 2.0,
+        "adr_underlying_description": "1 ADS = 2 Class A Ordinary Shares",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "NTES": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "Hong Kong Stock Exchange (HKEX: 9999)",
+        "adr_ratio": 5.0,
+        "adr_underlying_description": "1 ADS = 5 Ordinary Shares",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "AZN": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "United Kingdom",
+        "primary_exchange": "London Stock Exchange (LSE: AZN)",
+        "adr_ratio": 2.0,
+        "adr_underlying_description": "1 ADS = 2 Ordinary Shares",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "TM": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "Japan",
+        "primary_exchange": "Tokyo Stock Exchange (TSE: 7203)",
+        "adr_ratio": 10.0,
+        "adr_underlying_description": "1 ADR = 10 Common Shares",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "HDB": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "India",
+        "primary_exchange": "National Stock Exchange of India (NSE: HDFCBANK)",
+        "adr_ratio": 3.0,
+        "adr_underlying_description": "1 ADR = 3 Equity Shares",
+        "depositary_bank": "JPMorgan Chase Bank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "NVO": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "Denmark",
+        "primary_exchange": "Nasdaq Copenhagen (NOVO-B)",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADR = 1 B Share",
+        "depositary_bank": "JPMorgan Chase Bank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+    "SAP": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "Germany",
+        "primary_exchange": "Frankfurt Stock Exchange (Xetra: SAP)",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADR = 1 Ordinary Share",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "SE": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "Singapore",
+        "primary_exchange": "NYSE",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADS = 1 Class A Ordinary Share",
+        "depositary_bank": "The Bank of New York Mellon",
+        "sec_form": "Form 20-F"
+    },
+    "NIO": {
+        "is_adr": True,
+        "listing_type": "ADS",
+        "country_of_origin": "China",
+        "primary_exchange": "NYSE / HKEX (9866)",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADS = 1 Class A Ordinary Share",
+        "depositary_bank": "Deutsche Bank Trust Company Americas",
+        "sec_form": "Form 20-F"
+    },
+    "INFY": {
+        "is_adr": True,
+        "listing_type": "ADR",
+        "country_of_origin": "India",
+        "primary_exchange": "BSE / NSE (INFY)",
+        "adr_ratio": 1.0,
+        "adr_underlying_description": "1 ADR = 1 Equity Share",
+        "depositary_bank": "Citibank, N.A.",
+        "sec_form": "Form 20-F"
+    },
+
+    # Foreign Ordinary Shares / Direct Listings (Non-ADR Form 20-F Issuers)
+    "FER": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "Netherlands / Spain",
+        "primary_exchange": "Euronext Amsterdam / BME (FER)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+    "CCEP": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "United Kingdom",
+        "primary_exchange": "London Stock Exchange / Euronext (CCEP)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+    "CSIQ": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "Canada",
+        "primary_exchange": "NASDAQ",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+    "MNDY": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "Israel",
+        "primary_exchange": "NASDAQ",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+    "NU": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "Cayman Islands / Brazil",
+        "primary_exchange": "NYSE",
+        "adr_ratio": None,
+        "adr_underlying_description": "Class A Ordinary Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+    "SPOT": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_ORDINARY",
+        "country_of_origin": "Luxembourg / Sweden",
+        "primary_exchange": "NYSE",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares Direct Listing",
+        "depositary_bank": None,
+        "sec_form": "Form 20-F"
+    },
+
+    # Canadian Multijurisdictional Disclosure System (MJDS) Filers (Form 40-F)
+    "TRI": {
+        "is_adr": False,
+        "listing_type": "CANADIAN_MJDS",
+        "country_of_origin": "Canada",
+        "primary_exchange": "Toronto Stock Exchange (TSX: TRI)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Shares Dual Listing (SEC MJDS)",
+        "depositary_bank": None,
+        "sec_form": "Form 40-F"
+    },
+    "SHOP": {
+        "is_adr": False,
+        "listing_type": "CANADIAN_MJDS",
+        "country_of_origin": "Canada",
+        "primary_exchange": "Toronto Stock Exchange (TSX: SHOP)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Class A Subordinate Voting Shares (TSX/NYSE Dual Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 40-F / Form 10-K"
+    },
+    "BAM": {
+        "is_adr": False,
+        "listing_type": "CANADIAN_MJDS",
+        "country_of_origin": "Canada",
+        "primary_exchange": "Toronto Stock Exchange (TSX: BAM)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Class A Limited Voting Shares (TSX/NYSE Dual Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 40-F"
+    },
+
+    # Foreign-Domiciled Domestic Filers (Form 10-K)
+    "LIN": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_DOMICILE_10K",
+        "country_of_origin": "Ireland / United Kingdom",
+        "primary_exchange": "NYSE (LIN)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+    "ETN": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_DOMICILE_10K",
+        "country_of_origin": "Ireland",
+        "primary_exchange": "NYSE (ETN)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares (NYSE Direct Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+    "STX": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_DOMICILE_10K",
+        "country_of_origin": "Ireland",
+        "primary_exchange": "NASDAQ (STX)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Ordinary Shares (Nasdaq Direct Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+    "NXPI": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_DOMICILE_10K",
+        "country_of_origin": "Netherlands",
+        "primary_exchange": "NASDAQ (NXPI)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Shares (Nasdaq Direct Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+    "CRSP": {
+        "is_adr": False,
+        "listing_type": "FOREIGN_DOMICILE_10K",
+        "country_of_origin": "Switzerland",
+        "primary_exchange": "NASDAQ (CRSP)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Shares (Nasdaq Direct Listing)",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+
+    # US-Incorporated with Foreign Headquarters or Primary Operations
+    "MELI": {
+        "is_adr": False,
+        "listing_type": "US_INC_FOREIGN_OPS",
+        "country_of_origin": "United States (Operations: Latin America / Brazil)",
+        "primary_exchange": "NASDAQ (MELI)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Stock",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    },
+    "SEDG": {
+        "is_adr": False,
+        "listing_type": "US_INC_FOREIGN_HQ",
+        "country_of_origin": "United States (HQ: Israel)",
+        "primary_exchange": "NASDAQ (SEDG)",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Stock",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    }
+}
+
+
+def get_listing_metadata(symbol: str) -> Dict[str, Any]:
+    """
+    Returns exhaustive listing and depository metadata for any US equity symbol.
+    Defaults to standard US Domestic Common Stock if not listed as foreign/ADR.
+    """
+    sym = symbol.upper().strip()
+    if sym in LISTING_METADATA:
+        return dict(LISTING_METADATA[sym])
+
+    # Default US Domestic Common Stock
+    return {
+        "is_adr": False,
+        "listing_type": "US_COMMON_STOCK",
+        "country_of_origin": "United States",
+        "primary_exchange": "US Exchange",
+        "adr_ratio": None,
+        "adr_underlying_description": "Common Stock",
+        "depositary_bank": None,
+        "sec_form": "Form 10-K"
+    }
+
+
+def is_adr(symbol: str) -> bool:
+    """Returns True if the symbol is an American Depositary Receipt or Share."""
+    meta = get_listing_metadata(symbol)
+    return meta.get("is_adr", False)
+

@@ -11,6 +11,10 @@
 - **Conviction Score:** 9.0 / 10.0
 - **Rating:** HOLD
 - **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Listing Structure:** American Depositary Receipt (ADR/ADS) (1 ADS = 1 Ordinary Share)
+- **Country of Origin:** United Kingdom
+- **Primary Home Market:** NASDAQ Global Select
+- **Depositary Bank:** Citibank, N.A.
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1973239
 
 ## Business Profile

@@ -42,6 +42,40 @@
       "enum": ["NASDAQ", "NYSE", "AMEX"],
       "description": "Primary US listing exchange."
     },
+    "is_adr": {
+      "type": "boolean",
+      "description": "Whether the security is an American Depositary Receipt (ADR) or American Depositary Share (ADS)."
+    },
+    "listing_type": {
+      "type": "string",
+      "enum": [
+        "US_COMMON_STOCK",
+        "ADR",
+        "ADS",
+        "FOREIGN_ORDINARY",
+        "CANADIAN_MJDS",
+        "FOREIGN_DOMICILE_10K",
+        "US_INC_FOREIGN_OPS",
+        "US_INC_FOREIGN_HQ"
+      ],
+      "description": "Regulatory and structural listing classification."
+    },
+    "country_of_origin": {
+      "type": "string",
+      "description": "Primary country of legal domicile or operational headquarters."
+    },
+    "adr_ratio": {
+      "type": ["number", "null"],
+      "description": "Number of home ordinary shares represented by 1 US ADR/ADS (e.g. 5.0 for TSM)."
+    },
+    "adr_underlying_description": {
+      "type": ["string", "null"],
+      "description": "Description of underlying ordinary share representation (e.g. '1 ADR = 5 TWSE Ordinary Shares')."
+    },
+    "depositary_bank": {
+      "type": ["string", "null"],
+      "description": "Name of US depositary institution issuing and administering the ADR facility (e.g. Citibank, BNY Mellon, Deutsche Bank)."
+    },
     "benchmark_entry_price": {
       "type": "number",
       "minimum": 0.01,

@@ -92,5 +92,12 @@
     }
   ],
   "investor_relations_url": "https://investor.pddholdings.com/",
-  "last_updated": "2026-08-28T03:13:30.782809+00:00"
+  "last_updated": "2026-08-28T03:13:30.782809+00:00",
+  "is_adr": true,
+  "listing_type": "ADS",
+  "country_of_origin": "China",
+  "primary_exchange": "NASDAQ Global Select",
+  "adr_ratio": 4.0,
+  "adr_underlying_description": "1 ADS = 4 Class A Ordinary Shares",
+  "depositary_bank": "Deutsche Bank Trust Company Americas"
 }

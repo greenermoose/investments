@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
 </head>
+
 <body>
   <nav class="docs-sidebar">
     <a href="../index.html" class="docs-brand">
@@ -35,42 +37,70 @@
   <main class="docs-main">
     <div class="docs-header">
       <h1>Investment Strategy &amp; Principles</h1>
-      <p class="docs-lead">Comprehensive framework for risk-managed alpha generation, multi-decade compounding, universe expansion, and disciplined options execution.</p>
+      <p class="docs-lead">Comprehensive framework for risk-managed alpha generation, multi-decade compounding, universe
+        expansion, and disciplined options execution.</p>
     </div>
 
     <h2>1. Strategic Mandate &amp; 20-Year Compounding Objective</h2>
-    <p>The overarching mandate of our investment strategy is to aggressively manage downside risk while maximizing our annualized return on investment (ROI). All portfolio models, stock selection criteria, and options structures are designed around a clear, non-negotiable quantitative performance target:</p>
+    <p>The overarching mandate of our investment strategy is to aggressively manage downside risk while maximizing our
+      annualized return on investment (ROI). All portfolio models, stock selection criteria, and options structures are
+      designed around a clear, non-negotiable quantitative performance target:</p>
 
     <div class="callout">
       <div class="callout-title">Core Performance Target &amp; Failure Standard</div>
-      <p><strong>Target:</strong> An annualized return on investment of <strong>20% or higher</strong> over a <strong>20-year horizon</strong>.</p>
-      <p><strong>Failure Criterion:</strong> We will consider it a <strong>failure of our investment strategy</strong> if our total annualized return is less than 20% after 20 years of placing trades.</p>
+      <p><strong>Target:</strong> An annualized return on investment of <strong>20% or higher</strong> over a
+        <strong>20-year horizon</strong>.</p>
+      <p><strong>Failure Criterion:</strong> We will consider it a <strong>failure of our investment strategy</strong>
+        if our total annualized return is less than 20% after 20 years of placing trades.</p>
     </div>
 
-    <p>A 20% annualized return over 20 years represents extraordinary compounding power. At a 20% Compound Annual Growth Rate (CAGR), initial invested capital doubles approximately every 3.8 years, growing by a factor of <strong>38.3x</strong> over two decades (turning $100,000 into ~$3.83 million), compared to ~6.7x for a standard 10% broad market baseline.</p>
+    <p>A 20% annualized return over 20 years represents extraordinary compounding power. At a 20% Compound Annual Growth
+      Rate (CAGR), initial invested capital doubles approximately every 3.8 years, growing by a factor of
+      <strong>38.3x</strong> over two decades (turning $100,000 into ~$3.83 million), compared to ~6.7x for a standard
+      10% broad market baseline.</p>
 
     <h2>2. Active US Equities vs. Passive Index &amp; Mutual Funds</h2>
-    <p>We are fully aware of the academic and financial literature regarding passive index funds and mutual funds (e.g. Modern Portfolio Theory, Efficient Market Hypothesis, and low-cost index investing). We understand the merits of passive investing for general market participants. However, <strong>we are not buying and holding index funds or mutual funds</strong>.</p>
+    <p>We are fully aware of the academic and financial literature regarding passive index funds and mutual funds (e.g.
+      Modern Portfolio Theory, Efficient Market Hypothesis, and low-cost index investing). We understand the merits of
+      passive investing for general market participants. However, <strong>we are not buying and holding index funds or
+        mutual funds</strong>.</p>
 
     <p>Instead, our strategy is deliberately active and focused on individual security selection:</p>
     <ul>
-      <li><strong>Individual Public Equities:</strong> We actively buy and sell shares of individual public companies listed exclusively on US exchanges (NYSE, NASDAQ, AMEX).</li>
-      <li><strong>Selective Concentration over Dilution:</strong> Broad market index funds hold hundreds or thousands of companies, including unprofitable, highly levered, or structurally declining businesses that dilute long-term portfolio returns. By rigorously filtering for elite business models, we seek concentrated exposure only to high-return assets.</li>
-      <li><strong>Forensic Quality Standards:</strong> We focus exclusively on businesses with durable economic moats, high Returns on Invested Capital (ROIC &gt; 15%), strong Free Cash Flow (FCF) conversion, healthy balance sheets, and secular tailwinds.</li>
-      <li><strong>Tactical Asymmetry:</strong> Individual equity ownership enables us to selectively purchase shares at deep discounts (Margin of Safety) and harvest idiosyncratic volatility premiums and valuation-anchored options yields that are unattainable on broad index products.</li>
+      <li><strong>Individual Public Equities:</strong> We actively buy and sell shares of individual public companies
+        listed exclusively on US exchanges (NYSE, NASDAQ, AMEX).</li>
+      <li><strong>Selective Concentration over Dilution:</strong> Broad market index funds hold hundreds or thousands of
+        companies, including unprofitable, highly levered, or structurally declining businesses that dilute long-term
+        portfolio returns. By rigorously filtering for elite business models, we seek concentrated exposure only to
+        high-return assets.</li>
+      <li><strong>Forensic Quality Standards:</strong> We focus exclusively on businesses with durable economic moats,
+        high Returns on Invested Capital (ROIC &gt; 15%), strong Free Cash Flow (FCF) conversion, healthy balance
+        sheets, and secular tailwinds.</li>
+      <li><strong>Tactical Asymmetry:</strong> Individual equity ownership enables us to selectively purchase shares at
+        deep discounts (Margin of Safety) and harvest idiosyncratic volatility premiums and valuation-anchored options
+        yields that are unattainable on broad index products.</li>
     </ul>
 
     <h2>3. Coverage Universe Expansion &amp; Quantitative Market Screening</h2>
-    <p>Rather than remaining restricted to a fixed list of companies, our Equity Research Agent continuously monitors and screens the broader US public markets to expand our coverage universe on demand:</p>
+    <p>Rather than remaining restricted to a fixed list of companies, our Equity Research Agent can be prompted to
+      screen the US public market to expand our coverage universe on demand:</p>
     <ul>
-      <li><strong>Market-Wide Screening:</strong> We screen US exchange-listed companies against our quantitative hurdle: conservative 3-year revenue growth and valuation modeling capable of generating <strong>&ge; 20% annualized ROI</strong>.</li>
-      <li><strong>Stage 1 Lightweight Triage:</strong> Candidate equities must demonstrate viable gross margins (&ge; 15%), sufficient cash runway (&ge; 12 months or positive FCF), prudent leverage (Debt/Equity &le; 4.0x), and restrained dilution (&le; 4.0%/year).</li>
-      <li><strong>On-Demand Addition:</strong> The human trader can request to onboard single or batch equities into coverage at any time (anticipated a few times per year) via <code>scripts/onboard_company.py</code>.</li>
-      <li><strong>Equal Footing:</strong> All onboarded equities receive complete institutional thesis dossiers, SEC XBRL modeling, and live tracking on completely equal footing in public intelligence.</li>
+      <li><strong>Market-Wide Screening:</strong> We screen US exchange-listed companies against our quantitative
+        hurdle: conservative 3-year revenue growth and valuation modeling capable of generating <strong>&ge; 20%
+          annualized ROI</strong>.</li>
+      <li><strong>Stage 1 Lightweight Triage:</strong> Candidate equities must demonstrate viable gross margins (&ge;
+        15%), sufficient cash runway (&ge; 12 months or positive FCF), prudent leverage (Debt/Equity &le; 4.0x), and
+        restrained dilution (&le; 4.0%/year).</li>
+      <li><strong>On-Demand Addition:</strong> The human trader can request to onboard single or batch equities into
+        coverage at any time (anticipated a few times per year) via <code>scripts/onboard_company.py</code>.</li>
+      <li><strong>Equal Footing:</strong> All onboarded equities receive complete institutional thesis dossiers, SEC
+        XBRL modeling, and live tracking on completely equal footing in public intelligence.</li>
     </ul>
 
     <h2>4. Empirical Grounding in Proven 20%+ Return Strategies</h2>
-    <p>Our mandate is grounded in extensive empirical research into institutional track records, market anomalies, and quantitative models that have proven capable of compounding capital at <strong>20% or greater annualized returns across multi-year cycles and varied market regimes</strong>:</p>
+    <p>Our mandate is grounded in extensive empirical research into institutional track records, market anomalies, and
+      quantitative models that have proven capable of compounding capital at <strong>20% or greater annualized returns
+        across multi-year cycles and varied market regimes</strong>:</p>
 
     <table>
       <thead>
@@ -89,39 +119,49 @@
           <td>Berkshire Hathaway</td>
           <td><strong>~19.8% &ndash; 20.1%</strong></td>
           <td>1965 &ndash; 2023 (58 Years)</td>
-          <td>Concentrated ownership of high-ROIC compounders with widening economic moats, pricing power, float-backed cash reserves, and disciplined Margin of Safety entry pricing.</td>
-          <td><em>Berkshire Hathaway Letters to Shareholders</em> (1965&ndash;2023); Frazzini, Kabiller, &amp; Pedersen (2018), <em>"Buffett's Alpha"</em> (Journal of Financial Economics).</td>
+          <td>Concentrated ownership of high-ROIC compounders with widening economic moats, pricing power, float-backed
+            cash reserves, and disciplined Margin of Safety entry pricing.</td>
+          <td><em>Berkshire Hathaway Letters to Shareholders</em> (1965&ndash;2023); Frazzini, Kabiller, &amp; Pedersen
+            (2018), <em>"Buffett's Alpha"</em> (Journal of Financial Economics).</td>
         </tr>
         <tr>
           <td><strong>Jim Simons</strong></td>
           <td>Renaissance Technologies (Medallion Fund)</td>
           <td><strong>~66.1% Gross / ~39.1% Net</strong></td>
           <td>1988 &ndash; 2021 (33 Years)</td>
-          <td>Systematic mathematical anomaly exploitation, statistical arbitrage, multi-frequency momentum/mean-reversion, and algorithmic risk management with zero emotional bias.</td>
-          <td>Zuckerman (2019), <em>The Man Who Solved the Market</em>; Simons (2020), <em>MIT Mathematics &amp; Quantitative Finance Lectures</em>.</td>
+          <td>Systematic mathematical anomaly exploitation, statistical arbitrage, multi-frequency
+            momentum/mean-reversion, and algorithmic risk management with zero emotional bias.</td>
+          <td>Zuckerman (2019), <em>The Man Who Solved the Market</em>; Simons (2020), <em>MIT Mathematics &amp;
+              Quantitative Finance Lectures</em>.</td>
         </tr>
         <tr>
           <td><strong>Joel Greenblatt</strong></td>
           <td>Gotham Capital</td>
           <td><strong>~40.0% Gross / ~34.0% Net</strong></td>
           <td>1985 &ndash; 2006 (20 Years)</td>
-          <td>Concentrated special situations (spin-offs, corporate restructurings) and the systematic "Magic Formula" combining high Return on Capital (EBIT / Tangible Capital Employed) with high Earnings Yield (EBIT / EV).</td>
-          <td>Greenblatt (1997), <em>You Can Be a Stock Market Genius</em>; Greenblatt (2005), <em>The Little Book That Still Beats the Market</em>.</td>
+          <td>Concentrated special situations (spin-offs, corporate restructurings) and the systematic "Magic Formula"
+            combining high Return on Capital (EBIT / Tangible Capital Employed) with high Earnings Yield (EBIT / EV).
+          </td>
+          <td>Greenblatt (1997), <em>You Can Be a Stock Market Genius</em>; Greenblatt (2005), <em>The Little Book That
+              Still Beats the Market</em>.</td>
         </tr>
         <tr>
           <td><strong>Stanley Druckenmiller</strong></td>
           <td>Duquesne Capital Management</td>
           <td><strong>~30.0%</strong></td>
           <td>1981 &ndash; 2010 (30 Years, 0 Down Years)</td>
-          <td>High-conviction concentrated asymmetric bets, aggressive trend exploitation, top-down macroeconomic alignment, and ruthless risk discipline (rapidly cutting losing positions).</td>
-          <td>Schwager (1992), <em>The New Market Wizards</em>; Druckenmiller (2015), <em>Lost Tree Club Address on Capital Preservation &amp; Alpha</em>.</td>
+          <td>High-conviction concentrated asymmetric bets, aggressive trend exploitation, top-down macroeconomic
+            alignment, and ruthless risk discipline (rapidly cutting losing positions).</td>
+          <td>Schwager (1992), <em>The New Market Wizards</em>; Druckenmiller (2015), <em>Lost Tree Club Address on
+              Capital Preservation &amp; Alpha</em>.</td>
         </tr>
         <tr>
           <td><strong>Peter Lynch</strong></td>
           <td>Fidelity Magellan Fund</td>
           <td><strong>~29.2%</strong></td>
           <td>1977 &ndash; 1990 (13 Years)</td>
-          <td>Growth at a Reasonable Price (GARP), bottom-up fundamental analysis, category classification (fast growers, stalwarts, asset plays), and PEG ratio valuation discipline.</td>
+          <td>Growth at a Reasonable Price (GARP), bottom-up fundamental analysis, category classification (fast
+            growers, stalwarts, asset plays), and PEG ratio valuation discipline.</td>
           <td>Lynch (1989), <em>One Up On Wall Street</em>; Lynch (1993), <em>Beating the Street</em>.</td>
         </tr>
         <tr>
@@ -129,7 +169,8 @@
           <td>Nomad Investment Partnership</td>
           <td><strong>~20.8% Net</strong> (921% Total vs MSCI 117%)</td>
           <td>2001 &ndash; 2014 (13 Years)</td>
-          <td>Concentrated ultra-long holding of "Scale Economics Shared" businesses (e.g. Costco, Amazon, Berkshire Hathaway) that reinvest structural cost advantages back into customer value.</td>
+          <td>Concentrated ultra-long holding of "Scale Economics Shared" businesses (e.g. Costco, Amazon, Berkshire
+            Hathaway) that reinvest structural cost advantages back into customer value.</td>
           <td>Sleep &amp; Zakaria (2001&ndash;2014), <em>Nomad Investment Partnership Letters to Partners</em>.</td>
         </tr>
         <tr>
@@ -137,7 +178,8 @@
           <td>Pabrai Investment Funds</td>
           <td><strong>~25.7% Gross</strong></td>
           <td>1999 &ndash; 2007 (8 Years)</td>
-          <td>"Dhandho" low-risk, high-uncertainty value investing focusing on extreme asymmetric upside ("Heads I win; tails, I don't lose much!"), low debt, and high cash generation.</td>
+          <td>"Dhandho" low-risk, high-uncertainty value investing focusing on extreme asymmetric upside ("Heads I win;
+            tails, I don't lose much!"), low debt, and high cash generation.</td>
           <td>Pabrai (2007), <em>The Dhandho Investor: The Low-Risk Value Method to High Returns</em>.</td>
         </tr>
         <tr>
@@ -145,24 +187,31 @@
           <td>CBOE S&amp;P 500 PutWrite (PUT) &amp; Institutional Derivatives Overlays</td>
           <td><strong>300 &ndash; 600 bps Alpha Boost</strong> (Over Cash/Collateral)</td>
           <td>1986 &ndash; Present (38+ Years Empirical Backtests)</td>
-          <td>Systematic selling of Out-of-the-Money Cash-Secured Puts and Covered Calls to capture the structural Volatility Risk Premium (implied volatility &gt; realized volatility) with lower drawdown volatility.</td>
-          <td>Ilmanen (2011), <em>Expected Returns</em>; Israelov &amp; Tummala (2020), <em>"Selection Bias and the Option Writing Premium"</em> (Journal of Alternative Investments); CBOE Research (2016).</td>
+          <td>Systematic selling of Out-of-the-Money Cash-Secured Puts and Covered Calls to capture the structural
+            Volatility Risk Premium (implied volatility &gt; realized volatility) with lower drawdown volatility.</td>
+          <td>Ilmanen (2011), <em>Expected Returns</em>; Israelov &amp; Tummala (2020), <em>"Selection Bias and the
+              Option Writing Premium"</em> (Journal of Alternative Investments); CBOE Research (2016).</td>
         </tr>
       </tbody>
     </table>
 
     <h2>5. Entry &amp; Exit Pricing: Fundamental + Technical Synthesis</h2>
-    <p>Determining when to enter a position, what price to pay, and when to exit requires synthesizing both fundamental valuation models and technical price action indicators:</p>
+    <p>Determining when to enter a position, what price to pay, and when to exit requires synthesizing both fundamental
+      valuation models and technical price action indicators:</p>
 
     <div class="card-grid">
       <div class="docs-card">
         <h4>Fundamental Indicators (Valuation Baseline)</h4>
         <p>Establishes <em>what</em> to buy and <em>fair intrinsic value</em>:</p>
         <ul>
-          <li><strong>13-Quarter Revenue Forecast:</strong> Bottom-up segment-level revenue modeling across 3 full years (<span class="math-inline"><var>Q</var><sub>0</sub> to <var>Q</var><sub>12</sub></span>).</li>
-          <li><strong>6-Horizon Share Counts:</strong> Projections of diluted shares accounting for FCF buybacks vs SBC dilution.</li>
-          <li><strong>Margin of Safety:</strong> Requiring a 15% to 25% discount to calculated base target valuation before initiating BUY status.</li>
-          <li><strong>Quality Hurdles:</strong> ROIC &gt; 15%, FCF/Net Income &gt; 80%, Net Debt/EBITDA &lt; 2.5&times;.</li>
+          <li><strong>13-Quarter Revenue Forecast:</strong> Bottom-up segment-level revenue modeling across 3 full years
+            (<span class="math-inline"><var>Q</var><sub>0</sub> to <var>Q</var><sub>12</sub></span>).</li>
+          <li><strong>6-Horizon Share Counts:</strong> Projections of diluted shares accounting for FCF buybacks vs SBC
+            dilution.</li>
+          <li><strong>Margin of Safety:</strong> Requiring a 15% to 25% discount to calculated base target valuation
+            before initiating BUY status.</li>
+          <li><strong>Quality Hurdles:</strong> ROIC &gt; 15%, FCF/Net Income &gt; 80%, Net Debt/EBITDA &lt; 2.5&times;.
+          </li>
         </ul>
       </div>
 
@@ -170,57 +219,82 @@
         <h4>Technical Indicators (Execution &amp; Timing)</h4>
         <p>Refines <em>when</em> to execute and <em>at what limit price</em>:</p>
         <ul>
-          <li><strong>Moving Average Trend Alignment:</strong> 50-day and 200-day Simple Moving Averages (SMAs) to confirm structural trend regime and avoid catching falling knives.</li>
-          <li><strong>Support &amp; Resistance Zones:</strong> Key multi-month horizontal consolidation floors to set put strikes and limit buys; prior breakout peaks for call strikes and limit exits.</li>
-          <li><strong>Momentum &amp; Exhaustion (RSI):</strong> 14-period RSI to identify oversold accumulation zones (RSI &lt; 35) and overbought distribution zones (RSI &gt; 70).</li>
-          <li><strong>Volatility Bands (Bollinger / ATR):</strong> Measures expected price variance to optimize limit order pricing.</li>
+          <li><strong>Moving Average Trend Alignment:</strong> 50-day and 200-day Simple Moving Averages (SMAs) to
+            confirm structural trend regime and avoid catching falling knives.</li>
+          <li><strong>Support &amp; Resistance Zones:</strong> Key multi-month horizontal consolidation floors to set
+            put strikes and limit buys; prior breakout peaks for call strikes and limit exits.</li>
+          <li><strong>Momentum &amp; Exhaustion (RSI):</strong> 14-period RSI to identify oversold accumulation zones
+            (RSI &lt; 35) and overbought distribution zones (RSI &gt; 70).</li>
+          <li><strong>Volatility Bands (Bollinger / ATR):</strong> Measures expected price variance to optimize limit
+            order pricing.</li>
         </ul>
       </div>
     </div>
 
     <h2>6. Derivatives Strategy: Yield Enhancement &amp; Downside Mitigation</h2>
-    <p>To accelerate our return on investment toward our 20%+ target while simultaneously mitigating downside risk, we systematically sell options across two primary structures:</p>
+    <p>To accelerate our return on investment toward our 20%+ target while simultaneously mitigating downside risk, we
+      systematically sell options across two primary structures:</p>
 
     <h3>A. Cash-Secured Puts (CSPs) - Accumulation &amp; Yield Generation</h3>
     <ul>
-      <li><strong>Mechanism:</strong> We sell Out-of-the-Money (OTM) put options on high-conviction BUY candidates with strike prices set at or below our fundamental Margin of Safety and technical support levels.</li>
-      <li><strong>Target Parameters:</strong> 0.15 to 0.30 Delta (80% to 85% probability of expiring OTM) and 30 to 45 Days to Expiration (DTE).</li>
+      <li><strong>Mechanism:</strong> We sell Out-of-the-Money (OTM) put options on high-conviction BUY candidates with
+        strike prices set at or below our fundamental Margin of Safety and technical support levels.</li>
+      <li><strong>Target Parameters:</strong> 0.15 to 0.30 Delta (80% to 85% probability of expiring OTM) and 30 to 45
+        Days to Expiration (DTE).</li>
       <li><strong>Double Advantage:</strong>
         <ul>
-          <li>If the option expires OTM, we retain 100% of the upfront premium, generating an Annualized Return on Collateral (AROC) of 12% to 20%+.</li>
-          <li>If the stock is assigned, our net purchase basis equals the strike price minus the collected premium, securing shares at an even deeper discount to fair value.</li>
+          <li>If the option expires OTM, we retain 100% of the upfront premium, generating an Annualized Return on
+            Collateral (AROC) of 12% to 20%+.</li>
+          <li>If the stock is assigned, our net purchase basis equals the strike price minus the collected premium,
+            securing shares at an even deeper discount to fair value.</li>
         </ul>
       </li>
     </ul>
 
     <h3>B. Covered Calls (CCs) - Yield Harvesting &amp; Disciplined Exits</h3>
     <ul>
-      <li><strong>Mechanism:</strong> We sell OTM call options against existing 100-share equity lots as the stock appreciates toward our calculated base or bull target valuation.</li>
+      <li><strong>Mechanism:</strong> We sell OTM call options against existing 100-share equity lots as the stock
+        appreciates toward our calculated base or bull target valuation.</li>
       <li><strong>Target Parameters:</strong> 0.20 to 0.35 Delta and 21 to 45 DTE.</li>
       <li><strong>Double Advantage:</strong>
         <ul>
           <li>Harvests continuous cash flow (extrinsic time value) while holding high-conviction compounders.</li>
-          <li>Provides an automated, disciplined mechanism to scale out of positions at favorable target prices without emotional hesitation.</li>
+          <li>Provides an automated, disciplined mechanism to scale out of positions at favorable target prices without
+            emotional hesitation.</li>
         </ul>
       </li>
     </ul>
 
     <h3>C. Buy to Close (BTC) - Downside Risk Elimination on Losing Propositions</h3>
     <ul>
-      <li><strong>Mechanism:</strong> If we have sold cash-secured puts or covered calls on equities that we determine are losing propositions or undergoing structural thesis invalidation, we buy to close (BTC) the short puts or calls on Monday market open.</li>
-      <li><strong>Short Put Defense:</strong> Buying to close short puts on deteriorating companies strictly prevents assignment, eliminating the severe risk of being forced to buy 100 shares of a company trending further down.</li>
-      <li><strong>Short Call Defense:</strong> Buying to close short calls on deteriorating positions unlocks the underlying 100-share blocks so the entire equity position can be immediately sold and liquidated at market open.</li>
+      <li><strong>Mechanism:</strong> If we have sold cash-secured puts or covered calls on equities that we determine
+        are losing propositions or undergoing structural thesis invalidation, we buy to close (BTC) the short puts or
+        calls on Monday market open.</li>
+      <li><strong>Short Put Defense:</strong> Buying to close short puts on deteriorating companies strictly prevents
+        assignment, eliminating the severe risk of being forced to buy 100 shares of a company trending further down.
+      </li>
+      <li><strong>Short Call Defense:</strong> Buying to close short calls on deteriorating positions unlocks the
+        underlying 100-share blocks so the entire equity position can be immediately sold and liquidated at market open.
+      </li>
     </ul>
 
     <h2>7. Non-Negotiable Risk Prohibitions &amp; Boundary Rules</h2>
-    <p>Risk management is paramount. To eliminate catastrophic ruin risk and preserve capital for 20-year compounding, the following rules are strictly enforced across all portfolios:</p>
+    <p>Risk management is paramount. To eliminate catastrophic ruin risk and preserve capital for 20-year compounding,
+      the following rules are strictly enforced across all portfolios:</p>
 
     <div class="callout warning">
       <div class="callout-title">Strict Derivatives Prohibitions</div>
       <ul>
-        <li><strong>NO Speculative Option Buying:</strong> We never buy long calls, long puts, or speculative debit spreads for directional bets. Long options suffer from perpetual time decay (Theta drag) and carry a high statistical probability of total loss. <em>(Note: Buying to close existing short positions on losing propositions to avert assignment or liquidate shares is fully permitted and enforced).</em></li>
-        <li><strong>NO Naked Options:</strong> We never sell naked puts or naked calls under any circumstances. Naked options create unbounded liability and margin call risk.</li>
-        <li><strong>100% Collateralization:</strong> Every Cash-Secured Put MUST have 100% cash or <code>SGOV</code> backing the full assignment liability (<span class="math-inline"><span class="math-txt">Strike</span> &times; 100 &times; <span class="math-txt">Contracts</span></span>). Every Covered Call MUST be backed by 100 actual shares owned.</li>
+        <li><strong>NO Speculative Option Buying:</strong> We never buy long calls, long puts, or speculative debit
+          spreads for directional bets. Long options suffer from perpetual time decay (Theta drag) and carry a high
+          statistical probability of total loss. <em>(Note: Buying to close existing short positions on losing
+            propositions to avert assignment or liquidate shares is fully permitted and enforced).</em></li>
+        <li><strong>NO Naked Options:</strong> We never sell naked puts or naked calls under any circumstances. Naked
+          options create unbounded liability and margin call risk.</li>
+        <li><strong>100% Collateralization:</strong> Every Cash-Secured Put MUST have 100% cash or <code>SGOV</code>
+          backing the full assignment liability (<span class="math-inline"><span class="math-txt">Strike</span> &times;
+            100 &times; <span class="math-txt">Contracts</span></span>). Every Covered Call MUST be backed by 100 actual
+          shares owned.</li>
         <li><strong>NO Margin Debt:</strong> Borrowing on margin is strictly prohibited.</li>
       </ul>
     </div>
@@ -259,7 +333,8 @@
         <tr>
           <td><strong>Permitted Derivatives</strong></td>
           <td>Cash-Secured Puts (CSPs), Covered Calls (CCs), and Buy to Close (BTC) exits.</td>
-          <td>Generates steady income, lowers cost basis, structures exits, and cuts downside risk on broken theses.</td>
+          <td>Generates steady income, lowers cost basis, structures exits, and cuts downside risk on broken theses.
+          </td>
         </tr>
         <tr>
           <td><strong>Forbidden Derivatives</strong></td>
@@ -269,7 +344,8 @@
         <tr>
           <td><strong>Position Concentration</strong></td>
           <td>Soft target guideline of ~25 or fewer active equity positions.</td>
-          <td>Conviction-driven sizing: allows 1 single position (up to 100% allocation) to 26+ holdings if warranted.</td>
+          <td>Conviction-driven sizing: allows 1 single position (up to 100% allocation) to 26+ holdings if warranted.
+          </td>
         </tr>
         <tr>
           <td><strong>Execution Mode</strong></td>
@@ -282,11 +358,18 @@
     <h2>9. Execution Cadence: Single-Session "Set-and-Forget"</h2>
     <p>Our operational model is built specifically for individuals with demanding full-time responsibilities:</p>
     <ul>
-      <li><strong>Single-Session Execution:</strong> All order recommendations for the week are formulated over the weekend and entered in one sitting at Monday 9:30 AM ET market open (or as soon as the trader logs in).</li>
-      <li><strong>Zero Mid-Week Babysitting:</strong> There is zero intraday monitoring, mid-week order chasing, or manual intervention required.</li>
-      <li><strong>Execution-Time Contingencies:</strong> Where market open price movement might alter optimal order parameters, plans provide deterministic execution-time branching (e.g., "If ticker &ge; $X at order entry, submit Limit Order A; if &lt; $X, submit Limit Order B instead").</li>
-      <li><strong>Automated Expiration &amp; Settlement:</strong> Expiring Friday options settle automatically with the broker at 4:00 PM ET. Over the weekend, a new brokerage snapshot updates the portfolio state for the next deliberative cycle.</li>
+      <li><strong>Single-Session Execution:</strong> All order recommendations for the week are formulated over the
+        weekend and entered in one sitting at Monday 9:30 AM ET market open (or as soon as the trader logs in).</li>
+      <li><strong>Zero Mid-Week Babysitting:</strong> There is zero intraday monitoring, mid-week order chasing, or
+        manual intervention required.</li>
+      <li><strong>Execution-Time Contingencies:</strong> Where market open price movement might alter optimal order
+        parameters, plans provide deterministic execution-time branching (e.g., "If ticker &ge; $X at order entry,
+        submit Limit Order A; if &lt; $X, submit Limit Order B instead").</li>
+      <li><strong>Automated Expiration &amp; Settlement:</strong> Expiring Friday options settle automatically with the
+        broker at 4:00 PM ET. Over the weekend, a new brokerage snapshot updates the portfolio state for the next
+        deliberative cycle.</li>
     </ul>
   </main>
 </body>
+
 </html>

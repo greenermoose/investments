@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Sources, Provenance &amp; Verification - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
-    <style>
+  <style>
     .source-table-wrapper {
       margin: 24px 0;
       border-radius: 10px;
@@ -15,6 +16,7 @@
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     }
+
     .source-directory-table {
       width: 100%;
       border-collapse: collapse;
@@ -22,12 +24,15 @@
       font-size: 0.9rem;
       table-layout: fixed;
     }
+
     .th-source {
       width: 48%;
     }
+
     .th-access {
       width: 52%;
     }
+
     .source-directory-table thead th {
       background: var(--bg-color-card);
       color: var(--text-primary);
@@ -39,6 +44,7 @@
       border-bottom: 2px solid rgba(0, 212, 255, 0.2);
       text-align: left;
     }
+
     .tier-badge {
       display: inline-block;
       padding: 3px 8px;
@@ -48,35 +54,66 @@
       letter-spacing: 0.5px;
       white-space: nowrap;
     }
-    .tier-1 { background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-    .tier-2 { background: rgba(0, 212, 255, 0.15); color: #38bdf8; border: 1px solid rgba(0, 212, 255, 0.3); }
-    .tier-3 { background: rgba(99, 102, 241, 0.18); color: #a5b4fc; border: 1px solid rgba(99, 102, 241, 0.3); }
-    .tier-4 { background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
-    .tier-5 { background: rgba(244, 63, 94, 0.18); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
-    
+
+    .tier-1 {
+      background: rgba(16, 185, 129, 0.18);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .tier-2 {
+      background: rgba(0, 212, 255, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(0, 212, 255, 0.3);
+    }
+
+    .tier-3 {
+      background: rgba(99, 102, 241, 0.18);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .tier-4 {
+      background: rgba(245, 158, 11, 0.18);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .tier-5 {
+      background: rgba(244, 63, 94, 0.18);
+      color: #fb7185;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
     .source-entry {
       border-bottom: 1px solid var(--border-subtle);
       transition: background 0.15s ease;
     }
+
     .source-entry:last-child {
       border-bottom: none;
     }
+
     .source-entry:nth-child(even) tr td {
       background: rgba(255, 255, 255, 0.015);
     }
+
     .source-entry:hover tr td {
       background: rgba(0, 212, 255, 0.035);
     }
+
     .source-row-main td {
       padding: 16px 20px 6px 20px;
       border-bottom: none;
       vertical-align: top;
     }
+
     .source-row-details td {
       padding: 6px 20px 16px 20px;
       border-bottom: none;
       vertical-align: top;
     }
+
     .source-title-bar {
       display: flex;
       align-items: center;
@@ -84,18 +121,21 @@
       flex-wrap: wrap;
       margin-bottom: 6px;
     }
+
     .source-name {
       font-size: 0.98rem;
       font-weight: 700;
       color: #ffffff;
       line-height: 1.35;
     }
+
     .source-url-bar {
       display: flex;
       align-items: baseline;
       gap: 8px;
       flex-wrap: wrap;
     }
+
     .url-badge {
       font-size: 0.68rem;
       font-weight: 700;
@@ -109,6 +149,7 @@
       flex-shrink: 0;
       line-height: 1.2;
     }
+
     .source-link {
       color: var(--accent-color);
       text-decoration: none;
@@ -118,16 +159,19 @@
       overflow-wrap: anywhere;
       transition: color 0.15s ease, text-shadow 0.15s ease;
     }
+
     .source-link:hover {
       text-decoration: underline;
       color: #38bdf8;
       text-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
     }
+
     .source-link-text {
       color: var(--text-secondary);
       font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
       font-size: 0.84rem;
     }
+
     .access-tag {
       display: inline-block;
       font-size: 0.82rem;
@@ -138,6 +182,7 @@
       border: 1px solid var(--border-subtle);
       font-weight: 500;
     }
+
     .field-label {
       font-size: 0.72rem;
       text-transform: uppercase;
@@ -146,35 +191,45 @@
       font-weight: 700;
       margin-bottom: 4px;
     }
+
     .field-value {
       font-size: 0.88rem;
       color: var(--text-secondary);
       line-height: 1.5;
     }
+
     @media (max-width: 768px) {
       .source-directory-table {
         table-layout: auto;
       }
+
       .source-directory-table thead {
         display: none;
       }
-      .source-row-main, .source-row-details {
+
+      .source-row-main,
+      .source-row-details {
         display: block;
       }
-      .source-row-main td, .source-row-details td {
+
+      .source-row-main td,
+      .source-row-details td {
         display: block;
         width: 100% !important;
         padding: 8px 16px;
       }
+
       .source-row-main td {
         padding-top: 14px;
       }
+
       .source-row-details td:last-child {
         padding-bottom: 14px;
       }
     }
   </style>
 </head>
+
 <body>
   <nav class="docs-sidebar">
     <a href="../index.html" class="docs-brand">
@@ -203,16 +258,21 @@
   <main class="docs-main full-width">
     <div class="docs-header">
       <h1>Data Sources, Provenance &amp; Verification Architecture</h1>
-      <p class="docs-lead">Complete directory of authoritative data sources, institutional aggregators, analyst discovery mechanisms, AI search tools, and neural parametric knowledge governance.</p>
+      <p class="docs-lead">Complete directory of authoritative data sources, institutional aggregators, analyst
+        discovery mechanisms, AI search tools, and neural parametric knowledge governance.</p>
     </div>
 
     <div class="callout tip">
       <div class="callout-title">Authoritative Ingestion &amp; Ground-Truth Verification</div>
-      <p>All financial statements, share counts, and macro rates are ground-truthed against Tier 1 SEC EDGAR and Federal Reserve feeds. Market prices and Wall Street analyst coverage are tracked through verified secondary aggregators linking directly to audited URLs. Explore our active universe on the <a href="../stocks.html" style="color: var(--accent-color); font-weight: 600;">Public Equities</a> portal.</p>
+      <p>All financial statements, share counts, and macro rates are ground-truthed against Tier 1 SEC EDGAR and Federal
+        Reserve feeds. Market prices and Wall Street analyst coverage are tracked through verified secondary aggregators
+        linking directly to audited URLs. Explore our active universe on the <a href="../stocks.html"
+          style="color: var(--accent-color); font-weight: 600;">Public Equities</a> portal.</p>
     </div>
 
     <h2>Authoritative Data Hierarchy</h2>
-    <p>To eliminate hallucination and guarantee mathematical rigor, all quantitative metrics, catalyst dates, and financial figures adhere to a strict five-tier authority hierarchy:</p>
+    <p>To reduce hallucination and increase mathematical rigor, all quantitative metrics, catalyst dates, and financial
+      figures adhere to a strict five-tier authority hierarchy:</p>
 
     <table>
       <thead>
@@ -258,9 +318,10 @@
     </table>
 
     <h2>Complete Due Diligence Master Data Sources Directory</h2>
-    <p>The table below provides the full, unabridged master catalog of every specific data source, public URL, tier classification, access protocol, and reliability assessment consulted by the investment system:</p>
+    <p>The table below provides the full, unabridged master catalog of every specific data source, public URL, tier
+      classification, access protocol, and reliability assessment consulted by the investment system:</p>
 
-        <div class="source-table-wrapper">
+    <div class="source-table-wrapper">
       <table class="source-directory-table">
         <thead>
           <tr>
@@ -277,7 +338,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://data.sec.gov/api/xbrl/companyfacts/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/api/xbrl/companyfacts/</a>
+                <a href="https://data.sec.gov/api/xbrl/companyfacts/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">data.sec.gov/api/xbrl/companyfacts/</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -288,11 +350,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Official regulatory filings under US Securities Law.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official regulatory filings under US Securities
+                Law.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted shares, debt.</div>
+              <div class="field-value">Audited 10-K/10-Q XBRL statements, revenue, net income, cash flow, diluted
+                shares, debt.</div>
             </td>
           </tr>
         </tbody>
@@ -305,7 +369,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a>
+                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">data.sec.gov/submissions/</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -316,11 +381,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Official filing registry &amp; accession directory.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official filing registry &amp; accession
+                directory.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy statements.</div>
+              <div class="field-value">Form 8-K material events, Form 4 insider transactions, Form DEF 14A proxy
+                statements.</div>
             </td>
           </tr>
         </tbody>
@@ -333,7 +400,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer" class="source-link">data.sec.gov/submissions/</a>
+                <a href="https://data.sec.gov/submissions/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">data.sec.gov/submissions/</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -344,11 +412,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US funds.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Mandatory monthly portfolio holdings of US funds.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Authoritative constituent holdings, share counts, fair values, and weightings for QQQ, SPY, DIA, SMH.</div>
+              <div class="field-value">Authoritative constituent holdings, share counts, fair values, and weightings for
+                QQQ, SPY, DIA, SMH.</div>
             </td>
           </tr>
         </tbody>
@@ -361,7 +431,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.sec.gov/files/company_tickers_exchange.json" target="_blank" rel="noopener noreferrer" class="source-link">sec.gov/files/company_tickers_exchange.json</a>
+                <a href="https://www.sec.gov/files/company_tickers_exchange.json" target="_blank"
+                  rel="noopener noreferrer" class="source-link">sec.gov/files/company_tickers_exchange.json</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -372,11 +443,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Real-time directory of all SEC registered filers.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Real-time directory of all SEC registered filers.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">CIK-to-ticker mapping, legal company names, and primary exchange listing designations.</div>
+              <div class="field-value">CIK-to-ticker mapping, legal company names, and primary exchange listing
+                designations.</div>
             </td>
           </tr>
         </tbody>
@@ -389,7 +462,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="ftp://ftp.nasdaqtrader.com/SymbolDirectory/" target="_blank" rel="noopener noreferrer" class="source-link">ftp.nasdaqtrader.com/SymbolDirectory/</a>
+                <a href="ftp://ftp.nasdaqtrader.com/SymbolDirectory/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">ftp.nasdaqtrader.com/SymbolDirectory/</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -404,7 +478,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue flags.</div>
+              <div class="field-value">Daily master listing of NASDAQ/NYSE/AMEX symbols, ETF indicators, test issue
+                flags.</div>
             </td>
           </tr>
         </tbody>
@@ -417,7 +492,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.cboe.com/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com</a>
+                <a href="https://www.cboe.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">cboe.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -432,7 +508,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Options chains, strike listings, expiration cycles, open interest, and historical VIX/VXN.</div>
+              <div class="field-value">Options chains, strike listings, expiration cycles, open interest, and historical
+                VIX/VXN.</div>
             </td>
           </tr>
         </tbody>
@@ -445,7 +522,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a>
+                <a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">ctaplan.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -456,11 +534,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NYSE &amp; regional listings.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NYSE &amp;
+                regional listings.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Consolidated quotes (CQS/NBBO), trades (CTS), official closing prices, auction prints, and total tape volume for Tape A (NYSE) and Tape B (NYSE American, Arca, Cboe).</div>
+              <div class="field-value">Consolidated quotes (CQS/NBBO), trades (CTS), official closing prices, auction
+                prints, and total tape volume for Tape A (NYSE) and Tape B (NYSE American, Arca, Cboe).</div>
             </td>
           </tr>
         </tbody>
@@ -473,7 +553,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a>
+                <a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">utpplan.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -484,11 +565,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NASDAQ-listed equities.</div>
+              <div class="field-value">Absolute Ground Truth (10/10). Official NMS Consolidated Tape for NASDAQ-listed
+                equities.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Consolidated quotes (UQDF/NBBO), trades (UTDF), official closing crosses, IPO opening prints, and consolidated volume for Tape C (NASDAQ).</div>
+              <div class="field-value">Consolidated quotes (UQDF/NBBO), trades (UTDF), official closing crosses, IPO
+                opening prints, and consolidated volume for Tape C (NASDAQ).</div>
             </td>
           </tr>
         </tbody>
@@ -501,7 +584,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://data.nasdaq.com/" target="_blank" rel="noopener noreferrer" class="source-link">data.nasdaq.com</a>
+                <a href="https://data.nasdaq.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">data.nasdaq.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -516,7 +600,9 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Nasdaq Last Sale (NLS) trade prints and Nasdaq Basic top-of-book quotes for Nasdaq venues &amp; FINRA/Nasdaq TRF. Note: Excludes non-Nasdaq exchange executions and is distinct from consolidated SIP feeds.</div>
+              <div class="field-value">Nasdaq Last Sale (NLS) trade prints and Nasdaq Basic top-of-book quotes for
+                Nasdaq venues &amp; FINRA/Nasdaq TRF. Note: Excludes non-Nasdaq exchange executions and is distinct from
+                consolidated SIP feeds.</div>
             </td>
           </tr>
         </tbody>
@@ -529,7 +615,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="source-link">fred.stlouisfed.org</a>
+                <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">fred.stlouisfed.org</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -544,7 +631,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Rate, CPI inflation, GDP growth.</div>
+              <div class="field-value">3-Month Treasury Constant Maturity (DGS3MO), Fed Funds Rate, CPI inflation, GDP
+                growth.</div>
             </td>
           </tr>
         </tbody>
@@ -557,7 +645,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://home.treasury.gov/" target="_blank" rel="noopener noreferrer" class="source-link">home.treasury.gov</a>
+                <a href="https://home.treasury.gov/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">home.treasury.gov</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -568,11 +657,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Highly Authoritative (9.5/10). Sovereign fiscal authority of the United States.</div>
+              <div class="field-value">Highly Authoritative (9.5/10). Sovereign fiscal authority of the United States.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Daily Treasury Par Yield Curve Rates, benchmark discount rates, sovereign debt yields.</div>
+              <div class="field-value">Daily Treasury Par Yield Curve Rates, benchmark discount rates, sovereign debt
+                yields.</div>
             </td>
           </tr>
         </tbody>
@@ -585,7 +676,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer" class="source-link">financialmodelingprep.com</a>
+                <a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">financialmodelingprep.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -596,11 +688,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (9.0/10). Developer API with verified XBRL statement ingestion.</div>
+              <div class="field-value">High Reliability (9.0/10). Developer API with verified XBRL statement ingestion.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Automated stock screening, price target history, financial ratios, DCF models, earnings dates.</div>
+              <div class="field-value">Automated stock screening, price target history, financial ratios, DCF models,
+                earnings dates.</div>
             </td>
           </tr>
         </tbody>
@@ -613,7 +707,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://polygon.io/" target="_blank" rel="noopener noreferrer" class="source-link">polygon.io</a>
+                <a href="https://polygon.io/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">polygon.io</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -624,11 +719,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (9.0/10). Direct SIP-connected institutional market data feed.</div>
+              <div class="field-value">High Reliability (9.0/10). Direct SIP-connected institutional market data feed.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference tickers.</div>
+              <div class="field-value">Real-time quotes, OHLCV candlestick series, historical tick/bar data, reference
+                tickers.</div>
             </td>
           </tr>
         </tbody>
@@ -641,7 +738,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.tiingo.com/" target="_blank" rel="noopener noreferrer" class="source-link">tiingo.com</a>
+                <a href="https://www.tiingo.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">tiingo.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -652,11 +750,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (9.0/10). Institutional data clean-room with split adjustments.</div>
+              <div class="field-value">High Reliability (9.0/10). Institutional data clean-room with split adjustments.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">End-of-day prices, corporate actions, adjusted price series, curated financial news.</div>
+              <div class="field-value">End-of-day prices, corporate actions, adjusted price series, curated financial
+                news.</div>
             </td>
           </tr>
         </tbody>
@@ -664,12 +764,14 @@
           <tr class="source-row-main">
             <td class="col-source-header">
               <div class="source-title-bar">
-                <span class="source-name">Financial Newswires &amp; Press Releases (The Fly, Benzinga, StreetInsider, Seeking Alpha, Yahoo Finance)</span>
+                <span class="source-name">Financial Newswires &amp; Press Releases (The Fly, Benzinga, StreetInsider,
+                  Seeking Alpha, Yahoo Finance)</span>
                 <span class="tier-badge tier-2">Tier 2</span>
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://thefly.com/" target="_blank" rel="noopener noreferrer" class="source-link">thefly.com</a>
+                <a href="https://thefly.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">thefly.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -680,11 +782,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (9.0/10). Real-time press releases broadcasting sell-side research notes.</div>
+              <div class="field-value">High Reliability (9.0/10). Real-time press releases broadcasting sell-side
+                research notes.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Analyst names, research firms, announcement dates, accurate historical market prices, target prices, rating actions, press release URLs.</div>
+              <div class="field-value">Analyst names, research firms, announcement dates, accurate historical market
+                prices, target prices, rating actions, press release URLs.</div>
             </td>
           </tr>
         </tbody>
@@ -697,7 +801,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a>
+                <a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">tipranks.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -708,11 +813,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (8.5/10). Specializes in tracking and ranking sell-side analysts.</div>
+              <div class="field-value">High Reliability (8.5/10). Specializes in tracking and ranking sell-side
+                analysts.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Analyst accuracy rankings, historical win rates, average returns per analyst, price targets.</div>
+              <div class="field-value">Analyst accuracy rankings, historical win rates, average returns per analyst,
+                price targets.</div>
             </td>
           </tr>
         </tbody>
@@ -725,7 +832,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a>
+                <a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">morningstar.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -736,11 +844,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (8.8/10). Premier institutional fundamental equity research.</div>
+              <div class="field-value">High Reliability (8.8/10). Premier institutional fundamental equity research.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Economic Moat ratings (Wide/Narrow/None), DCF Fair Value estimates, Stewardship grades.</div>
+              <div class="field-value">Economic Moat ratings (Wide/Narrow/None), DCF Fair Value estimates, Stewardship
+                grades.</div>
             </td>
           </tr>
         </tbody>
@@ -753,7 +863,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://investor.apple.com/" target="_blank" rel="noopener noreferrer" class="source-link">Configured Per-Equity (e.g. investor.apple.com)</a>
+                <a href="https://investor.apple.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">Configured Per-Equity (e.g. investor.apple.com)</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -764,11 +875,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">High Reliability (9.2/10). Official primary issuer presentations &amp; management disclosures.</div>
+              <div class="field-value">High Reliability (9.2/10). Official primary issuer presentations &amp; management
+                disclosures.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Earnings slide decks, webcasts, Q&amp;A transcripts, investor day roadmaps, non-GAAP KPIs, event calendars.</div>
+              <div class="field-value">Earnings slide decks, webcasts, Q&amp;A transcripts, investor day roadmaps,
+                non-GAAP KPIs, event calendars.</div>
             </td>
           </tr>
         </tbody>
@@ -781,7 +894,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a>
+                <a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">finance.yahoo.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -796,7 +910,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Daily OHLCV candlestick series, 20-day/50-day moving averages, 52-week ranges, trading volume.</div>
+              <div class="field-value">Daily OHLCV candlestick series, 20-day/50-day moving averages, 52-week ranges,
+                trading volume.</div>
             </td>
           </tr>
         </tbody>
@@ -809,7 +924,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a>
+                <a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">stockanalysis.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -820,11 +936,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Moderate to High (8.0/10). Clean secondary presentation of financial metrics.</div>
+              <div class="field-value">Moderate to High (8.0/10). Clean secondary presentation of financial metrics.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Rapid visual overview of financial trends, balance sheet summaries, dividend histories.</div>
+              <div class="field-value">Rapid visual overview of financial trends, balance sheet summaries, dividend
+                histories.</div>
             </td>
           </tr>
         </tbody>
@@ -837,7 +955,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.factset.com/" target="_blank" rel="noopener noreferrer" class="source-link">factset.com</a>
+                <a href="https://www.factset.com/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">factset.com</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -852,7 +971,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Institutional earnings estimates, revenue consensus forecasts, target price dispersion.</div>
+              <div class="field-value">Institutional earnings estimates, revenue consensus forecasts, target price
+                dispersion.</div>
             </td>
           </tr>
         </tbody>
@@ -865,7 +985,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.cboe.com/indices/" target="_blank" rel="noopener noreferrer" class="source-link">cboe.com/indices/</a>
+                <a href="https://www.cboe.com/indices/" target="_blank" rel="noopener noreferrer"
+                  class="source-link">cboe.com/indices/</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -880,7 +1001,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Risk/return data on option volatility risk premium (VRP) and systematic option harvesting.</div>
+              <div class="field-value">Risk/return data on option volatility risk premium (VRP) and systematic option
+                harvesting.</div>
             </td>
           </tr>
         </tbody>
@@ -893,7 +1015,8 @@
               </div>
               <div class="source-url-bar">
                 <span class="url-badge">URL</span>
-                <a href="https://www.aqr.com/Insights/Research" target="_blank" rel="noopener noreferrer" class="source-link">aqr.com/Insights/Research</a>
+                <a href="https://www.aqr.com/Insights/Research" target="_blank" rel="noopener noreferrer"
+                  class="source-link">aqr.com/Insights/Research</a>
               </div>
             </td>
             <td class="col-access-header">
@@ -904,11 +1027,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Highly Authoritative (9.0/10). Foundational quantitative asset pricing literature.</div>
+              <div class="field-value">Highly Authoritative (9.0/10). Foundational quantitative asset pricing
+                literature.</div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums across cycles.</div>
+              <div class="field-value">Empirical evidence on Quality, Value, Momentum, and Low-Beta factor premiums
+                across cycles.</div>
             </td>
           </tr>
         </tbody>
@@ -932,11 +1057,13 @@
           <tr class="source-row-details">
             <td class="col-trust-details">
               <div class="field-label">Trustworthiness Assessment</div>
-              <div class="field-value">Conceptual Grounding (7.0/10). Superb qualitative synthesis; unverified digits.</div>
+              <div class="field-value">Conceptual Grounding (7.0/10). Superb qualitative synthesis; unverified digits.
+              </div>
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Qualitative thesis formulation, moat assessment, competitive dynamic mapping, financial logic.</div>
+              <div class="field-value">Qualitative thesis formulation, moat assessment, competitive dynamic mapping,
+                financial logic.</div>
             </td>
           </tr>
         </tbody>
@@ -964,7 +1091,8 @@
             </td>
             <td class="col-purpose-details">
               <div class="field-label">Primary Purpose &amp; Extracted Data</div>
-              <div class="field-value">Settled cash, SGOV proxy balance, exact share quantities, cost bases, active options.</div>
+              <div class="field-value">Settled cash, SGOV proxy balance, exact share quantities, cost bases, active
+                options.</div>
             </td>
           </tr>
         </tbody>
@@ -975,72 +1103,122 @@
 
     <div class="card-grid">
       <div class="docs-card">
-        <h4>1. Yahoo Finance (<a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer" class="source-link">finance.yahoo.com</a>)</h4>
+        <h4>1. Yahoo Finance (<a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">finance.yahoo.com</a>)</h4>
         <p><strong>Classification:</strong> Tier 2 Secondary Market Data &amp; News Aggregator.<br />
-        <strong>Assessment:</strong> High for historical prices, trading volume, and split/dividend adjustments. Moderate for consensus estimates.<br />
-        <strong>Role in Due Diligence:</strong> Serves as a rapid, zero-friction engine for pulling daily and multi-month OHLCV candlestick series, calculating 20-day and 50-day simple moving averages, and establishing 52-week support/resistance bands.<br />
-        <strong>Technical Caveat:</strong> Lacks an official developer REST API; internal endpoints change cookie/crumb headers. Ideal for ad-hoc inspection rather than the sole production backbone.</p>
+          <strong>Assessment:</strong> High for historical prices, trading volume, and split/dividend adjustments.
+          Moderate for consensus estimates.<br />
+          <strong>Role in Due Diligence:</strong> Serves as a rapid, zero-friction engine for pulling daily and
+          multi-month OHLCV candlestick series, calculating 20-day and 50-day simple moving averages, and establishing
+          52-week support/resistance bands.<br />
+          <strong>Technical Caveat:</strong> Lacks an official developer REST API; internal endpoints change
+          cookie/crumb headers. Ideal for ad-hoc inspection rather than the sole production backbone.
+        </p>
       </div>
 
       <div class="docs-card">
-        <h4>2. TipRanks (<a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer" class="source-link">tipranks.com</a>)</h4>
+        <h4>2. TipRanks (<a href="https://www.tipranks.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">tipranks.com</a>)</h4>
         <p><strong>Classification:</strong> Tier 2 Analyst Accountability &amp; Sentiment Aggregator.<br />
-        <strong>Assessment:</strong> High for individual sell-side analyst track records, historical win rates, and price target revisions.<br />
-        <strong>Role in Due Diligence:</strong> Provides analyst scoring by measuring the historical success rate and average return of specific Wall Street analysts (e.g. Dan Ives at Wedbush, Toni Sacconaghi at Bernstein, Toshiya Hari at Goldman Sachs).<br />
-        <strong>Strategic Utility:</strong> Enables AI agents to weigh analyst price targets based on proven forecasting accuracy on that specific equity.</p>
+          <strong>Assessment:</strong> High for individual sell-side analyst track records, historical win rates, and
+          price target revisions.<br />
+          <strong>Role in Due Diligence:</strong> Provides analyst scoring by measuring the historical success rate and
+          average return of specific Wall Street analysts (e.g. Dan Ives at Wedbush, Toni Sacconaghi at Bernstein,
+          Toshiya Hari at Goldman Sachs).<br />
+          <strong>Strategic Utility:</strong> Enables AI agents to weigh analyst price targets based on proven
+          forecasting accuracy on that specific equity.
+        </p>
       </div>
 
       <div class="docs-card">
-        <h4>3. StockAnalysis.com (<a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer" class="source-link">stockanalysis.com</a>)</h4>
+        <h4>3. StockAnalysis.com (<a href="https://stockanalysis.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">stockanalysis.com</a>)</h4>
         <p><strong>Classification:</strong> Tier 2 Secondary Fundamental Screener &amp; Financial Portal.<br />
-        <strong>Assessment:</strong> Moderate to High. Offers clean, modern tabular summaries of multi-year financial statements, valuation multiples, and dividend histories.<br />
-        <strong>Role in Due Diligence:</strong> Fast visual and tabular cross-check for multi-year revenue trajectories, gross margin expansion, free cash flow generation, and consensus estimates.<br />
-        <strong>Verification Rule:</strong> As derived secondary data, critical figures must be cross-checked against Tier 1 SEC EDGAR XBRL filings.</p>
+          <strong>Assessment:</strong> Moderate to High. Offers clean, modern tabular summaries of multi-year financial
+          statements, valuation multiples, and dividend histories.<br />
+          <strong>Role in Due Diligence:</strong> Fast visual and tabular cross-check for multi-year revenue
+          trajectories, gross margin expansion, free cash flow generation, and consensus estimates.<br />
+          <strong>Verification Rule:</strong> As derived secondary data, critical figures must be cross-checked against
+          Tier 1 SEC EDGAR XBRL filings.
+        </p>
       </div>
 
       <div class="docs-card">
-        <h4>4. MarketBeat (<a href="https://www.marketbeat.com/" target="_blank" rel="noopener noreferrer" class="source-link">marketbeat.com</a>)</h4>
+        <h4>4. MarketBeat (<a href="https://www.marketbeat.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">marketbeat.com</a>)</h4>
         <p><strong>Classification:</strong> Tier 2 Wall Street Analyst Price Target &amp; Rating Aggregator.<br />
-        <strong>Assessment:</strong> High for verified rating changes, price target revisions, and link-level auditability.<br />
-        <strong>Role in Due Diligence:</strong> Primary ground-truthed public aggregator for tracking individual analyst price targets. Publishes dedicated time-stamped tables linking directly to verifiable URLs where analyst name, firm, date, and target price are confirmed.</p>
+          <strong>Assessment:</strong> High for verified rating changes, price target revisions, and link-level
+          auditability.<br />
+          <strong>Role in Due Diligence:</strong> Primary ground-truthed public aggregator for tracking individual
+          analyst price targets. Publishes dedicated time-stamped tables linking directly to verifiable URLs where
+          analyst name, firm, date, and target price are confirmed.
+        </p>
       </div>
 
       <div class="docs-card">
-        <h4>5. Morningstar (<a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="source-link">morningstar.com</a>)</h4>
-        <p><strong>Classification:</strong> Tier 2 Institutional Fundamental Research &amp; Economic Moat Authority.<br />
-        <strong>Assessment:</strong> Very High for qualitative competitive moat analysis, capital allocation stewardship, and discounted cash flow (DCF) fair value modeling.<br />
-        <strong>Role in Due Diligence:</strong> Gold-standard framework for evaluating structural competitive advantages (network effects, switching costs, cost advantages, intangible assets, efficient scale) and independent DCF fair value benchmarks.</p>
+        <h4>5. Morningstar (<a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">morningstar.com</a>)</h4>
+        <p><strong>Classification:</strong> Tier 2 Institutional Fundamental Research &amp; Economic Moat
+          Authority.<br />
+          <strong>Assessment:</strong> Very High for qualitative competitive moat analysis, capital allocation
+          stewardship, and discounted cash flow (DCF) fair value modeling.<br />
+          <strong>Role in Due Diligence:</strong> Gold-standard framework for evaluating structural competitive
+          advantages (network effects, switching costs, cost advantages, intangible assets, efficient scale) and
+          independent DCF fair value benchmarks.
+        </p>
       </div>
 
       <div class="docs-card">
         <h4>6. Corporate Investor Relations (IR) Portals</h4>
-        <p><strong>Classification:</strong> Tier 1 / Tier 2 Primary Corporate Disclosures &amp; Issuer Communications.<br />
-        <strong>Assessment:</strong> High (9.2/10) for official earnings decks, webcast transcripts, and multi-year roadmaps. Unaudited non-GAAP claims require SEC GAAP reconciliation.<br />
-        <strong>Role in Due Diligence:</strong> Delivers high-conviction context complementing SEC filings: segment KPIs (ARR, net retention, ARPU), TAM expansion targets, management guidance, and catalyst timelines.<br />
-        <strong>Integration:</strong> Directly linked per equity in <code>universe.json</code> and accessible with one click in the Public Equities inspection modal.</p>
+        <p><strong>Classification:</strong> Tier 1 / Tier 2 Primary Corporate Disclosures &amp; Issuer
+          Communications.<br />
+          <strong>Assessment:</strong> High (9.2/10) for official earnings decks, webcast transcripts, and multi-year
+          roadmaps. Unaudited non-GAAP claims require SEC GAAP reconciliation.<br />
+          <strong>Role in Due Diligence:</strong> Delivers high-conviction context complementing SEC filings: segment
+          KPIs (ARR, net retention, ARPU), TAM expansion targets, management guidance, and catalyst timelines.<br />
+          <strong>Integration:</strong> Directly linked per equity in <code>universe.json</code> and accessible with one
+          click in the Public Equities inspection modal.
+        </p>
       </div>
 
       <div class="docs-card">
         <h4>7. US Equity Market Data &amp; SIP Architecture</h4>
         <p><strong>Classification:</strong> Tier 1 Consolidated SIP vs. Tier 2 Proprietary Top-of-Book.<br />
-        <strong>National Market System (NMS) SIPs:</strong> The Consolidated Tape is split under two distinct regulatory plans: the <strong>CTA/CQS Plan</strong> (Tape A/B via SIAC for NYSE &amp; regional listings at <a href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">ctaplan.com</a>) and the <strong>UTP Plan</strong> (Tape C via Nasdaq SIP at <a href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer" class="source-link">utpplan.com</a>).<br />
-        <strong>Why nasdaq.com is NOT a Consolidated Feed:</strong> Real-time quotes on <code>nasdaq.com</code> are powered by <em>Nasdaq Last Sale (NLS)</em> and <em>Nasdaq Basic</em> (via Nasdaq Data Link). These proprietary feeds only capture executions occurring on Nasdaq's own venues and the FINRA/Nasdaq TRF, omitting executions from the NYSE floor, NYSE Arca, Cboe, and IEX. Consolidated Level 1 web data is delayed by 15 minutes.</p>
+          <strong>National Market System (NMS) SIPs:</strong> The Consolidated Tape is split under two distinct
+          regulatory plans: the <strong>CTA/CQS Plan</strong> (Tape A/B via SIAC for NYSE &amp; regional listings at <a
+            href="https://www.ctaplan.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">ctaplan.com</a>) and the <strong>UTP Plan</strong> (Tape C via Nasdaq SIP at <a
+            href="https://www.utpplan.com/" target="_blank" rel="noopener noreferrer"
+            class="source-link">utpplan.com</a>).<br />
+          <strong>Why nasdaq.com is NOT a Consolidated Feed:</strong> Real-time quotes on <code>nasdaq.com</code> are
+          powered by <em>Nasdaq Last Sale (NLS)</em> and <em>Nasdaq Basic</em> (via Nasdaq Data Link). These proprietary
+          feeds only capture executions occurring on Nasdaq's own venues and the FINRA/Nasdaq TRF, omitting executions
+          from the NYSE floor, NYSE Arca, Cboe, and IEX. Consolidated Level 1 web data is delayed by 15 minutes.
+        </p>
       </div>
     </div>
 
     <h2>How Sell-Side Analyst Reports &amp; Price Targets Are Tracked and Discovered</h2>
-    
+
     <h3>The Institutional Research Ecosystem</h3>
-    <p>Primary sell-side equity research reports are proprietary 10-to-50 page dossiers authored by chartered analysts at major global investment banks (Goldman Sachs, Morgan Stanley, JPMorgan, Bernstein, Wedbush, Bank of America, UBS, Barclays, Citigroup, Jefferies, Evercore ISI, Baird). These reports are commercial intellectual property distributed to paying institutional clients behind enterprise terminal paywalls (Bloomberg Professional Terminal, FactSet, LSEG Workspace / Refinitiv, S&P Capital IQ).</p>
+    <p>Primary sell-side equity research reports are proprietary 10-to-50 page dossiers authored by chartered analysts
+      at major global investment banks (Goldman Sachs, Morgan Stanley, JPMorgan, Bernstein, Wedbush, Bank of America,
+      UBS, Barclays, Citigroup, Jefferies, Evercore ISI, Baird). These reports are commercial intellectual property
+      distributed to paying institutional clients behind enterprise terminal paywalls (Bloomberg Professional Terminal,
+      FactSet, LSEG Workspace / Refinitiv, S&P Capital IQ).</p>
 
     <h3>How Price Targets Become Public</h3>
-    <p>Although full PDF reports remain behind client paywalls, the headline metrics and revisions are disseminated immediately through three public and secondary channels:</p>
+    <p>Although full PDF reports remain behind client paywalls, the headline metrics and revisions are disseminated
+      immediately through three public and secondary channels:</p>
     <div class="step-container">
       <div class="step-card">
         <span class="step-badge">1. Morning Wires</span>
         <div class="step-content">
           <h4>Pre-Market Institutional Releases (6:00 AM - 9:00 AM ET)</h4>
-          <p>Investment banks issue executive wire releases announcing rating changes, target revisions, and thesis summaries. Financial newswires (Bloomberg News, Reuters, Dow Jones, The Fly on the Wall, StreetInsider, Benzinga, Seeking Alpha) publish immediate dispatches containing analyst names, firms, old/new price targets, and key drivers.</p>
+          <p>Investment banks issue executive wire releases announcing rating changes, target revisions, and thesis
+            summaries. Financial newswires (Bloomberg News, Reuters, Dow Jones, The Fly on the Wall, StreetInsider,
+            Benzinga, Seeking Alpha) publish immediate dispatches containing analyst names, firms, old/new price
+            targets, and key drivers.</p>
         </div>
       </div>
 
@@ -1048,7 +1226,10 @@
         <span class="step-badge">2. Structured Aggregators</span>
         <div class="step-content">
           <h4>Aggregator Ingestion &amp; API Feeds</h4>
-          <p>Structured aggregators (MarketBeat, TipRanks, Financial Modeling Prep API, Yahoo Finance) ingest newswire dispatches into normalized databases. For example, the FMP API provides dedicated endpoints (<code>GET /v4/price-target?symbol=AAPL</code>) returning analyst names, firms, price targets, announcement dates, and news links.</p>
+          <p>Structured aggregators (MarketBeat, TipRanks, Financial Modeling Prep API, Yahoo Finance) ingest newswire
+            dispatches into normalized databases. For example, the FMP API provides dedicated endpoints
+            (<code>GET /v4/price-target?symbol=AAPL</code>) returning analyst names, firms, price targets, announcement
+            dates, and news links.</p>
         </div>
       </div>
 
@@ -1056,49 +1237,66 @@
         <span class="step-badge">3. Corporate Disclosures</span>
         <div class="step-content">
           <h4>SEC 8-K Filings &amp; Investor Relations Fact Sheets</h4>
-          <p>Public corporations regularly disclose sell-side coverage rosters, consensus targets, and analyst day presentations via SEC EDGAR and Investor Relations (IR) websites.</p>
+          <p>Public corporations regularly disclose sell-side coverage rosters, consensus targets, and analyst day
+            presentations via SEC EDGAR and Investor Relations (IR) websites.</p>
         </div>
       </div>
     </div>
 
     <h2>Influential Activist Short Sellers Directory</h2>
-    <p>The system catalogs and tracks 20 prominent activist short selling firms whose investigative reports have demonstrated substantial market-moving impact. When reports are published, the agent team evaluates whether allegations reveal fundamental fraud (mandating Avoid/Sell action) or temporary overreaction:</p>
+    <p>The system catalogs and tracks 20 prominent activist short selling firms whose investigative reports have
+      demonstrated substantial market-moving impact. When reports are published, the agent team evaluates whether
+      allegations reveal fundamental fraud (mandating Avoid/Sell action) or temporary overreaction:</p>
 
     <div class="card-grid">
       <div class="docs-card" style="border-left: 3px solid #ef4444;">
         <h4 style="color: #f87171;">Hindenburg Research (Nathan Anderson)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-14.5% Day 1 Move). <strong>Focus:</strong> Forensic accounting fraud, undisclosed related-party transactions, fabricated backlogs, and whistleblower intelligence.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-14.5% Day 1 Move).
+          <strong>Focus:</strong> Forensic accounting fraud, undisclosed related-party transactions, fabricated
+          backlogs, and whistleblower intelligence.</p>
       </div>
 
       <div class="docs-card" style="border-left: 3px solid #ef4444;">
         <h4 style="color: #f87171;">Muddy Waters Research (Carson Block)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-12.8% Day 1 Move). <strong>Focus:</strong> Offshore revenue round-tripping, fake customer invoices, asset striping, and cross-border rollups.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-12.8% Day 1 Move).
+          <strong>Focus:</strong> Offshore revenue round-tripping, fake customer invoices, asset striping, and
+          cross-border rollups.</p>
       </div>
 
       <div class="docs-card" style="border-left: 3px solid #f59e0b;">
         <h4 style="color: #fbbf24;">Citron Research (Andrew Left)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-10.2% Day 1 Move). <strong>Focus:</strong> Extreme valuation multiples, aggressive promotional marketing, and regulatory investigation risks.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-10.2% Day 1 Move).
+          <strong>Focus:</strong> Extreme valuation multiples, aggressive promotional marketing, and regulatory
+          investigation risks.</p>
       </div>
 
       <div class="docs-card" style="border-left: 3px solid #f59e0b;">
         <h4 style="color: #fbbf24;">Kerrisdale Capital (Sahm Adrangi)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-9.5% Day 1 Move). <strong>Focus:</strong> Commercial engineering due diligence, unviable technology, and structural multiple compression.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-9.5% Day 1 Move).
+          <strong>Focus:</strong> Commercial engineering due diligence, unviable technology, and structural multiple
+          compression.</p>
       </div>
     </div>
-    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">The full directory of 20 firms is maintained in <code>context/sources/short_sellers_directory.json</code> and queried via <code>scripts/track_short_sellers.py</code>.</p>
+    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">The full directory of 20 firms is
+      maintained in <code>context/sources/short_sellers_directory.json</code> and queried via
+      <code>scripts/track_short_sellers.py</code>.</p>
 
     <h2>Investor Sentiment &amp; Press Release Surveillance Sources</h2>
-    <p>To detect emerging investor concerns before they appear in quarterly SEC filings, the system surveils corporate press release newswires and investor chatter forums:</p>
+    <p>To detect emerging investor concerns before they appear in quarterly SEC filings, the system surveils corporate
+      press release newswires and investor chatter forums:</p>
 
     <div class="card-grid">
       <div class="docs-card">
         <h4>Corporate Press Distribution</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;">PR Newswire, Business Wire, GlobeNewswire, and SEC Form 8-K feeds for official management announcements, clinical readouts, and executive changes.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;">PR Newswire, Business Wire, GlobeNewswire, and SEC Form 8-K feeds
+          for official management announcements, clinical readouts, and executive changes.</p>
       </div>
 
       <div class="docs-card">
         <h4>Investor Chatter &amp; Communities</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;">Reddit (r/stocks, r/wallstreetbets, r/investing, r/ValueInvesting), StockTwits, and Seeking Alpha commentary for sentiment polarity, velocity, and investor skepticism.</p>
+        <p style="font-size: 0.85rem; color: #94a3b8;">Reddit (r/stocks, r/wallstreetbets, r/investing,
+          r/ValueInvesting), StockTwits, and Seeking Alpha commentary for sentiment polarity, velocity, and investor
+          skepticism.</p>
       </div>
     </div>
 
@@ -1108,29 +1306,42 @@
     <div class="card-grid">
       <div class="docs-card">
         <h4>1. <code>search_web</code> Engine</h4>
-        <p>Programmatic interface to global search indexes (Google / Bing). Enables agents to execute targeted, disambiguated queries across corporate investor relations portals, regulatory agency announcements (FDA, FAA, FTC), and breaking macroeconomic briefings.</p>
+        <p>Programmatic interface to global search indexes (Google / Bing). Enables agents to execute targeted,
+          disambiguated queries across corporate investor relations portals, regulatory agency announcements (FDA, FAA,
+          FTC), and breaking macroeconomic briefings.</p>
       </div>
 
       <div class="docs-card">
         <h4>2. <code>read_url_content</code> &amp; Browser Subagent</h4>
-        <p>HTTP content fetchers and headless browser subagents capable of rendering static markdown, parsing HTML DOMs, and interacting with dynamic JavaScript applications to extract earnings call transcripts, CEO interviews, and SEC exhibits.</p>
+        <p>HTTP content fetchers and headless browser subagents capable of rendering static markdown, parsing HTML DOMs,
+          and interacting with dynamic JavaScript applications to extract earnings call transcripts, CEO interviews, and
+          SEC exhibits.</p>
       </div>
 
       <div class="docs-card">
         <h4>3. SEC EDGAR Full-Text Search (EFTS) API</h4>
-        <p>The SEC's native full-text search engine (<code>https://efts.sec.gov/LATEST/search-index</code>) indexing every word across millions of regulatory filings since 2001. Allows agents to search litigation disclosures, customer concentration figures, and supply chain dependencies directly inside 10-K/10-Q footnotes.</p>
+        <p>The SEC's native full-text search engine (<code>https://efts.sec.gov/LATEST/search-index</code>) indexing
+          every word across millions of regulatory filings since 2001. Allows agents to search litigation disclosures,
+          customer concentration figures, and supply chain dependencies directly inside 10-K/10-Q footnotes.</p>
       </div>
     </div>
 
     <h2>How AI Agents Generate Knowledge from Internal Weights (Parametric Knowledge)</h2>
-    <p>A central capability of foundation Large Language Models (LLMs) is synthesizing sophisticated qualitative analyses, competitive dynamics, financial theories, and business moat assessments directly from internal neural network weights without invoking external tools. Here is how this mathematical process operates:</p>
+    <p>A central capability of foundation Large Language Models (LLMs) is synthesizing sophisticated qualitative
+      analyses, competitive dynamics, financial theories, and business moat assessments directly from internal neural
+      network weights without invoking external tools. Here is how this mathematical process operates:</p>
 
     <div class="step-container">
       <div class="step-card">
         <span class="step-badge">Step 1</span>
         <div class="step-content">
           <h4>Pre-Training: Compressing Market Intelligence into High-Dimensional Weights</h4>
-          <p>During pre-training on supercomputing clusters, the model processes trillions of tokens spanning decades of SEC 10-K/10-Q filings, shareholder letters, financial newswires, earnings transcripts, academic finance literature (Fama-French, Black-Scholes), and corporate case studies. Through self-supervised autoregressive learning, the model adjusts billions of neural weight parameters across hundreds of transformer layers, creating a high-dimensional latent representation of accounting relationships, operating leverage, and competitive strategy.</p>
+          <p>During pre-training on supercomputing clusters, the model processes trillions of tokens spanning decades of
+            SEC 10-K/10-Q filings, shareholder letters, financial newswires, earnings transcripts, academic finance
+            literature (Fama-French, Black-Scholes), and corporate case studies. Through self-supervised autoregressive
+            learning, the model adjusts billions of neural weight parameters across hundreds of transformer layers,
+            creating a high-dimensional latent representation of accounting relationships, operating leverage, and
+            competitive strategy.</p>
         </div>
       </div>
 
@@ -1140,11 +1351,18 @@
           <h4>Autoregressive Next-Token Generation: From Weights to Actionable Analysis</h4>
           <p>When prompted to analyze an equity, the generation process executes mathematically:</p>
           <ul style="margin: 6px 0 10px 18px; color: var(--text-secondary); font-size: 0.9rem;">
-            <li><strong>Context Encoding:</strong> The prompt, instructions, guidelines, and conversation history are converted into input token embeddings.</li>
-            <li><strong>Multi-Head Self-Attention:</strong> Transformer layers compute dynamic attention weights across concepts, activating neural pathways associated with pricing power, switching costs, or option Greek calculations.</li>
-            <li><strong>Feed-Forward Knowledge Projection:</strong> Dense layers project hidden states through weight matrices encoding deep statistical regularities about business models.</li>
-            <li><strong>Logit Computation &amp; Vocabulary Sampling:</strong> Output projection layers generate logits across the vocabulary (~32,000 to 256,000 tokens), converted by softmax into probability distributions from which the next token is generated.</li>
-            <li><strong>Autoregressive Loop:</strong> Each token is appended to the context sequence, producing structured, coherent, institutional financial analysis.</li>
+            <li><strong>Context Encoding:</strong> The prompt, instructions, guidelines, and conversation history are
+              converted into input token embeddings.</li>
+            <li><strong>Multi-Head Self-Attention:</strong> Transformer layers compute dynamic attention weights across
+              concepts, activating neural pathways associated with pricing power, switching costs, or option Greek
+              calculations.</li>
+            <li><strong>Feed-Forward Knowledge Projection:</strong> Dense layers project hidden states through weight
+              matrices encoding deep statistical regularities about business models.</li>
+            <li><strong>Logit Computation &amp; Vocabulary Sampling:</strong> Output projection layers generate logits
+              across the vocabulary (~32,000 to 256,000 tokens), converted by softmax into probability distributions
+              from which the next token is generated.</li>
+            <li><strong>Autoregressive Loop:</strong> Each token is appended to the context sequence, producing
+              structured, coherent, institutional financial analysis.</li>
           </ul>
         </div>
       </div>
@@ -1153,30 +1371,41 @@
         <span class="step-badge">Step 3</span>
         <div class="step-content">
           <h4>Post-Training Alignment (SFT &amp; RLHF/DPO)</h4>
-          <p>Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) align the token distribution toward rigorous step-by-step reasoning, institutional financial terminology, schema compliance, and objective risk analysis.</p>
+          <p>Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) align the token
+            distribution toward rigorous step-by-step reasoning, institutional financial terminology, schema compliance,
+            and objective risk analysis.</p>
         </div>
       </div>
     </div>
 
     <div class="callout warning">
       <div class="callout-title">Tier 4 Parametric Governance Rules</div>
-      <p>Because internal weights have a static training cutoff and may probabilistically drift on precise decimal numbers, the system enforces three governance rules:</p>
+      <p>Because internal weights have a static training cutoff and may probabilistically drift on precise decimal
+        numbers, the system enforces three governance rules:</p>
       <ol style="margin-left: 1.5rem; margin-top: 8px; line-height: 1.6; color: var(--text-secondary);">
-        <li><strong>Explicit Provenance:</strong> Tag internal knowledge as <code>TIER_4_AGENT_PARAMETRIC_KNOWLEDGE</code>.</li>
-        <li><strong>Runtime Context Signature:</strong> Record system clock timestamp, active role persona, and prompt context.</li>
-        <li><strong>Mandatory SEC Cross-Check:</strong> All critical historical financial figures and share counts generated from parametric memory must be verified against Tier 1 SEC EDGAR XBRL data.</li>
+        <li><strong>Explicit Provenance:</strong> Tag internal knowledge as
+          <code>TIER_4_AGENT_PARAMETRIC_KNOWLEDGE</code>.</li>
+        <li><strong>Runtime Context Signature:</strong> Record system clock timestamp, active role persona, and prompt
+          context.</li>
+        <li><strong>Mandatory SEC Cross-Check:</strong> All critical historical financial figures and share counts
+          generated from parametric memory must be verified against Tier 1 SEC EDGAR XBRL data.</li>
       </ol>
     </div>
 
     <h2>Verification &amp; Errata Correction Protocol</h2>
-    <p>When any stored claim, financial figure, or assumption is identified as erroneous, stale, or hallucinated, the system executes an audited correction lifecycle:</p>
+    <p>When any stored claim, financial figure, or assumption is identified as erroneous, stale, or hallucinated, the
+      system executes an audited correction lifecycle:</p>
 
     <ol style="margin-left: 1.5rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
       <li><strong>Detection:</strong> Flag conflicting data point against Tier 1 SEC EDGAR or direct exchange data.</li>
       <li><strong>Triangulation:</strong> Retrieve official primary source evidence and verify ground truth value.</li>
-      <li><strong>In-Place Correction:</strong> Update the target dossier in <code>context/theses/</code> or dataset with new citation.</li>
-      <li><strong>Errata Record:</strong> Record a permanent audit entry via <code>python scripts/errata_log.py record</code> into <code>context/research/errata/{erratum_id}.json</code> matching <code>context/schemas/errata_schema.json</code>.</li>
+      <li><strong>In-Place Correction:</strong> Update the target dossier in <code>context/theses/</code> or dataset
+        with new citation.</li>
+      <li><strong>Errata Record:</strong> Record a permanent audit entry via
+        <code>python scripts/errata_log.py record</code> into <code>context/research/errata/{erratum_id}.json</code>
+        matching <code>context/schemas/errata_schema.json</code>.</li>
     </ol>
   </main>
 </body>
+
 </html>

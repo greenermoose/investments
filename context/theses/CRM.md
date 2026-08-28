@@ -112,11 +112,11 @@ CRM currently trades at a Price-to-Sales (P/S) multiple of ~5.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| JPMorgan Chase & Co. Research Team | JPMorgan Chase & Co. | 2026-08-13 | $201.37 | $250.00 | +24.1% | OVERWEIGHT |
-| Monness Crespi & Hardt Research Team | Monness Crespi & Hardt | 2026-08-13 | $201.37 | $222.00 | +10.2% | BUY |
-| Karl Keirstead | UBS Group | 2026-08-12 | $193.32 | $210.00 | +8.6% | HOLD |
-| Michael Turrin | Wells Fargo & Company | 2026-08-12 | $193.32 | $205.00 | +6.0% | BUY |
-| Keith Weiss | Morgan Stanley | 2026-07-21 | $170.06 | $185.00 | +8.8% | OVERWEIGHT |
+| Rishi Jaluria | Royal Bank Of Canada | 2026-08-27 | $252.05 | $250.00 | -0.8% | BUY |
+| Derrick Wood | TD Cowen | 2026-08-27 | $252.05 | $280.00 | +11.1% | BUY |
+| John DiFucci | Guggenheim | 2026-08-27 | $252.05 | $228.00 | -9.5% | BUY |
+| Brian Schwartz | Oppenheimer | 2026-08-27 | $252.05 | $275.00 | +9.1% | OUTPERFORM |
+| Raimo Lenschow | Barclays | 2026-08-27 | $252.05 | $276.00 | +9.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

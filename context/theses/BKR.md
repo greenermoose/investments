@@ -112,11 +112,11 @@ BKR currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Keith Mackey | Royal Bank Of Canada | 2026-08-25 | $61.82 | $76.00 | +22.9% | OUTPERFORM |
 | Joe Laetsch | Morgan Stanley | 2026-08-07 | $61.55 | $70.00 | +13.7% | OVERWEIGHT |
 | Josh Silverstein | UBS Group | 2026-07-28 | $58.46 | $51.00 | -12.8% | BUY |
 | Marc Bianchi | TD Cowen | 2026-07-28 | $58.46 | $78.00 | +33.4% | BUY |
 | Stephen Gengaro | Stifel Nicolaus | 2026-07-28 | $58.46 | $75.00 | +28.3% | BUY |
-| Derek Podhaizer | Piper Sandler | 2026-07-28 | $58.46 | $73.00 | +24.9% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -59,7 +59,7 @@ monday.com Ltd. maintains a capital-light liability profile with zero defined be
 | Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | monday.com Ltd. operates zero defined benefit pension plans or retiree healthcar... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | monday.com Ltd. has zero legacy manufacturing, toxic chemical, or federal Superf... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.50 B | Take-or-Pay: $0.15 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.25 B | Take-or-Pay: $0.07 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
@@ -114,8 +114,11 @@ MNDY currently trades at a Price-to-Sales (P/S) multiple of ~7.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Kash Rangan | Goldman Sachs | 2026-08-12 | $85.95 | $120.00 | +39.6% | BUY |
-| Elizabeth Porter | Morgan Stanley | 2026-08-08 | $93.13 | $118.00 | +26.7% | OVERWEIGHT |
+| Taylor McGinnis | UBS Group | 2026-08-11 | $87.47 | $95.00 | +8.6% | HOLD |
+| Steven Enders | Citigroup | 2026-08-11 | $87.47 | $132.00 | +50.9% | BUY |
+| Derrick Wood | TD Cowen | 2026-08-11 | $87.47 | $110.00 | +25.8% | BUY |
+| Ryan MacWilliams | Wells Fargo & Company | 2026-08-11 | $87.47 | $120.00 | +37.2% | OVERWEIGHT |
+| Thomas Blakey | Cantor Fitzgerald | 2026-08-10 | $88.62 | $90.00 | +1.6% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

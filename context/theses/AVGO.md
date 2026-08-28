@@ -112,11 +112,11 @@ AVGO currently trades at a Price-to-Sales (P/S) multiple of ~27.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Srini Pajjuri | Royal Bank Of Canada | 2026-08-26 | $355.59 | $400.00 | +12.5% | BUY |
+| Harsh Kumar | BMO Capital Markets | 2026-08-20 | $364.03 | $455.00 | +25.0% | OUTPERFORM |
 | Rick Schafer | Oppenheimer | 2026-06-04 | $418.91 | $535.00 | +27.7% | OUTPERFORM |
 | Joseph Moore | Morgan Stanley | 2026-06-04 | $418.91 | $502.00 | +19.8% | OVERWEIGHT |
 | John Vinh | KeyCorp | 2026-06-04 | $418.91 | $575.00 | +37.3% | OVERWEIGHT |
-| Timothy Arcuri | UBS Group | 2026-06-04 | $418.91 | $485.00 | +15.8% | BUY |
-| Ross Seymore | Deutsche Bank Aktiengesellschaft | 2026-06-04 | $418.91 | $515.00 | +22.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

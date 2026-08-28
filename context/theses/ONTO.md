@@ -1,4 +1,4 @@
-# Investment Thesis Dossier: ONTO - ONTO Corporation
+# Investment Thesis Dossier: ONTO - Onto Innovation Inc.
 
 ## Summary & Key Metrics
 - **Ticker:** ONTO
@@ -15,21 +15,21 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=704532
 
 ## Business Profile
-ONTO Corporation operates within the Information Technology sector, specializing in US Public Equity. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+Onto Innovation Inc. is a leading designer and manufacturer of advanced process control and metrology systems used by global semiconductor foundries, memory makers, and advanced packaging manufacturers. The company's systems provide automated wafer defect inspection, 3D optical metrology, lithography patterning, and yield management software critical for leading-edge chip fabrication.
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Onto Innovation occupies a critical chokepoint in heterogeneous semiconductor packaging, where multiple chiplets, high-bandwidth memory (HBM) stacks, and glass substrates require nanometer-scale alignment and defect inspection. With accelerating secular demand from generative AI accelerators and high-performance computing, Onto's Dragonfly and Echo inspection platforms command strong pricing power and high gross margins.
 
 ## Total Addressable Market & Market Share
-ONTO Corporation addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.9% market share. Over our 3-year investment horizon, we model market share evolving to 1.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Onto Innovation Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.9% market share. Over our 3-year investment horizon, we model market share evolving to 1.9%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Onto Innovation commands a high-barrier technological moat in semiconductor process control, wafer defect inspection, and advanced packaging metrology. The company's Dragonfly and Echo platforms occupy an indispensable chokepoint in heterogeneous integration, high-bandwidth memory (HBM) stacking, and multi-die chiplet packaging, where nanometer-scale sub-surface defects must be detected to ensure multi-thousand-dollar AI processor yields. Deep co-development partnerships with leading logic and memory foundries and extensive optical metrology patents confer strong pricing power and high gross margins.
 
 ## Anticipated Catalysts & Timeline
-ONTO Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Onto Innovation Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-ONTO Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.23B in cash & equivalents against $0.19B in total debt (net balance: $+0.04B). Anticipated annual CapEx and operational capital requirements of ~$0.05B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Onto Innovation Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.23B in cash & equivalents against $0.19B in total debt (net balance: $+0.04B). Anticipated annual CapEx and operational capital requirements of ~$0.05B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ ONTO Corporation operates under a reinvestment for growth capital strategy. The 
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-ONTO Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.12B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+Onto Innovation Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.12B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,16 +50,16 @@ ONTO Corporation utilizes equity-based compensation as a core talent recruitment
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-ONTO Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
+Onto Innovation Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Onto Innovation Inc. operates zero defined benefit pension plans or retiree heal... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Onto Innovation Inc. has zero legacy manufacturing, toxic chemical, or federal S... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.32 B | Take-or-Pay: $0.10 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -69,7 +69,7 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-ONTO Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+Onto Innovation Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
 ONTO currently trades at a Price-to-Sales (P/S) multiple of ~15.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~14.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.7%, fully justifying our HOLD rating.
@@ -112,7 +112,11 @@ ONTO currently trades at a Price-to-Sales (P/S) multiple of ~15.7x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Consensus Model | Wall Street Consensus | 2026-08-10 | $292.62 | $370.21 | +26.5% | HOLD |
+| James Schneider | The Goldman Sachs Group | 2026-08-17 | $351.16 | $400.00 | +13.9% | BUY |
+| Shane Brett | Morgan Stanley | 2026-08-07 | $308.30 | $383.00 | +24.2% | OVERWEIGHT |
+| Evercore Research Team | Evercore | 2026-08-07 | $308.30 | $390.00 | +26.5% | OUTPERFORM |
+| Blayne Curtis | Jefferies Financial Group | 2026-08-07 | $308.30 | $400.00 | +29.7% | BUY |
+| Charles Shi | Needham & Company LLC | 2026-08-07 | $308.30 | $360.00 | +16.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

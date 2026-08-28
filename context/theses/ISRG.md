@@ -115,8 +115,8 @@ ISRG currently trades at a Price-to-Sales (P/S) multiple of ~12.9x on trailing t
 | Suraj Kalia | Oppenheimer | 2026-08-12 | $401.27 | $500.00 | +24.6% | OUTPERFORM |
 | Helen Fang | HSBC | 2026-07-30 | $352.97 | $391.00 | +10.8% | HOLD |
 | Priya Sachdeva | UBS Group | 2026-07-28 | $361.80 | $500.00 | +38.2% | HOLD |
-| Adam Maeder | Piper Sandler | 2026-07-27 | $356.83 | $357.44 | +0.2% | BUY |
 | Jayson Bedford | Raymond James Financial | 2026-07-17 | $345.42 | $483.00 | +39.8% | OUTPERFORM |
+| Larry Biegelsen | Wells Fargo & Company | 2026-07-17 | $345.42 | $487.00 | +41.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

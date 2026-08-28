@@ -112,11 +112,11 @@ ZM currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Catharine Trebnick | Rosenblatt Securities | 2026-07-23 | $84.11 | $130.00 | +54.6% | BUY |
-| Joshua Reilly | Needham & Company LLC | 2026-07-02 | $87.14 | $130.00 | +49.2% | BUY |
-| Rishi Jaluria | Royal Bank Of Canada | 2026-06-30 | $86.31 | $130.00 | +50.6% | OUTPERFORM |
-| Stephen Bersey | HSBC | 2026-06-02 | $111.88 | $133.00 | +18.9% | BUY |
-| Tyler Radke | Citigroup | 2026-05-26 | $100.09 | $126.00 | +25.9% | BUY |
+| Rishi Jaluria | Royal Bank Of Canada | 2026-08-26 | $93.83 | $130.00 | +38.5% | OUTPERFORM |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-26 | $93.83 | $108.00 | +15.1% | BUY |
+| Meta Marshall | Morgan Stanley | 2026-08-26 | $93.83 | $107.00 | +14.0% | BUY |
+| Samad Samana | Jefferies Financial Group | 2026-08-26 | $93.83 | $116.00 | +23.6% | BUY |
+| Joshua Reilly | Needham & Company LLC | 2026-08-26 | $93.83 | $130.00 | +38.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

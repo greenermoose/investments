@@ -112,11 +112,11 @@ MDB currently trades at a Price-to-Sales (P/S) multiple of ~14.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Raimo Lenschow | Barclays | 2026-08-26 | $404.93 | $460.00 | +13.6% | OVERWEIGHT |
-| Rudy Kessinger | DA Davidson | 2026-08-26 | $404.00 | $465.00 | +15.1% | BUY |
-| Ryan MacWilliams | Wells Fargo & Company | 2026-08-25 | $402.68 | $475.00 | +18.0% | OVERWEIGHT |
-| William Power | Robert W. Baird | 2026-08-25 | $402.70 | $400.00 | -0.7% | HOLD |
-| Karl Keirstead | UBS Group | 2026-08-24 | $430.83 | $460.00 | +6.8% | HOLD |
+| Raimo Lenschow | Barclays | 2026-08-26 | $406.11 | $460.00 | +13.3% | OVERWEIGHT |
+| Rudy Kessinger | DA Davidson | 2026-08-26 | $406.11 | $465.00 | +14.5% | BUY |
+| Ryan MacWilliams | Wells Fargo & Company | 2026-08-25 | $404.92 | $475.00 | +17.3% | OVERWEIGHT |
+| William Power | Robert W. Baird | 2026-08-25 | $404.92 | $400.00 | -1.2% | HOLD |
+| Karl Keirstead | UBS Group | 2026-08-24 | $402.69 | $460.00 | +14.2% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ CRWD currently trades at a Price-to-Sales (P/S) multiple of ~11.9x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Turrin | Wells Fargo & Company | 2026-08-17 | $213.90 | $230.00 | +7.5% | BUY |
-| Shaul Eyal | TD Cowen | 2026-08-17 | $213.90 | $235.00 | +9.9% | BUY |
-| Matthew Hedberg | Royal Bank Of Canada | 2026-08-14 | $216.95 | $256.00 | +18.0% | OUTPERFORM |
-| Rustam Kanga | Citizens Jmp | 2026-08-12 | $221.78 | $230.00 | +3.7% | OUTPERFORM |
-| Yun Kim | Loop Capital | 2026-07-27 | $180.11 | $230.00 | +27.7% | BUY |
+| Matthew Hedberg | Royal Bank Of Canada | 2026-08-27 | $227.96 | $250.00 | +9.7% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-08-27 | $227.96 | $240.00 | +5.3% | OUTPERFORM |
+| Evercore Research Team | Evercore | 2026-08-27 | $227.96 | $210.00 | -7.9% | BUY |
+| Roth Capital Research Team | Roth Capital | 2026-08-27 | $227.96 | $200.00 | -12.3% | BUY |
+| Peter Weed | Sanford C. Bernstein | 2026-08-27 | $227.96 | $119.00 | -47.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

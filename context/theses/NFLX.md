@@ -112,11 +112,11 @@ NFLX currently trades at a Price-to-Sales (P/S) multiple of ~7.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Peter Supino | Wolfe Research | 2026-08-25 | $82.23 | $95.00 | +15.5% | OUTPERFORM |
 | Vikram Kesavabhotla | Robert W. Baird | 2026-07-22 | $68.53 | $90.00 | +31.3% | OUTPERFORM |
 | Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-20 | $67.60 | $110.00 | +62.7% | BUY |
 | Barton Crockett | Rosenblatt Securities | 2026-07-17 | $68.95 | $75.00 | +8.8% | HOLD |
 | Thomas Champion | Piper Sandler | 2026-07-17 | $68.95 | $85.00 | +23.3% | OVERWEIGHT |
-| Tommy Lai | KGI Securities | 2026-07-17 | $68.95 | $75.00 | +8.8% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

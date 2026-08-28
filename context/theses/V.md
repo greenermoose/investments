@@ -112,11 +112,11 @@ V currently trades at a Price-to-Sales (P/S) multiple of ~4.5x on trailing twelv
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Darrin Peller | Wolfe Research | 2026-08-25 | $384.14 | $460.00 | +19.8% | OUTPERFORM |
 | Matthew Coad | Truist Financial | 2026-08-05 | $368.54 | $406.00 | +10.2% | BUY |
 | Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $365.67 | $445.00 | +21.7% | OVERWEIGHT |
 | Jason Kupferberg | Wells Fargo & Company | 2026-07-30 | $366.27 | $432.00 | +17.9% | OVERWEIGHT |
 | Daniel Perlin | Royal Bank Of Canada | 2026-07-29 | $368.73 | $412.00 | +11.7% | OUTPERFORM |
-| Bill Carcache | Piper Sandler | 2026-07-29 | $368.73 | $430.00 | +16.6% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

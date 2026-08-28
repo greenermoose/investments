@@ -112,11 +112,11 @@ ORCL currently trades at a Price-to-Sales (P/S) multiple of ~6.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Bhavtosh Vajpayee | CLSA | 2026-07-20 | $126.48 | $145.00 | +14.6% | HOLD |
-| Daniel Ives | Wedbush | 2026-06-11 | $180.21 | $240.00 | +33.2% | OUTPERFORM |
-| Mark Moerdler | Sanford C. Bernstein | 2026-06-11 | $180.21 | $325.00 | +80.3% | OUTPERFORM |
-| Wolfe Research Research Team | Wolfe Research | 2026-06-11 | $201.04 | $225.00 | +11.9% | OUTPERFORM |
-| Raimo Lenschow | Barclays | 2026-06-11 | $201.05 | $250.00 | +24.4% | OVERWEIGHT |
+| Bhavtosh Vajpayee | CLSA | 2026-07-20 | $121.38 | $145.00 | +19.5% | HOLD |
+| Daniel Ives | Wedbush | 2026-06-11 | $184.10 | $240.00 | +30.4% | OUTPERFORM |
+| Mark Moerdler | Sanford C. Bernstein | 2026-06-11 | $184.10 | $325.00 | +76.5% | OUTPERFORM |
+| Wolfe Research Research Team | Wolfe Research | 2026-06-11 | $184.10 | $225.00 | +22.2% | OUTPERFORM |
+| Raimo Lenschow | Barclays | 2026-06-11 | $184.10 | $250.00 | +35.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

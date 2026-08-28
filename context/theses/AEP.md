@@ -112,11 +112,11 @@ AEP currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Stephen Byrd | Morgan Stanley | 2026-08-21 | $120.94 | $135.00 | +11.6% | OVERWEIGHT |
 | Richard Sunderland | Truist Financial | 2026-08-17 | $126.53 | $139.00 | +9.9% | BUY |
 | Ryan Levine | Citigroup | 2026-08-05 | $126.47 | $142.00 | +12.3% | HOLD |
 | Nicholas Campanella | Barclays | 2026-08-03 | $128.32 | $129.00 | +0.5% | BUY |
 | Anthony Crowdell | Mizuho | 2026-07-31 | $127.85 | $135.00 | +5.6% | HOLD |
-| David Arcaro | Morgan Stanley | 2026-07-22 | $133.07 | $139.00 | +4.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

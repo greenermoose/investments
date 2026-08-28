@@ -112,11 +112,11 @@ MS currently trades at a Price-to-Sales (P/S) multiple of ~4.8x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Erika Najarian | UBS Group | 2026-08-03 | $209.31 | $260.00 | +24.2% | BUY |
-| Dominic Ball | HSBC | 2026-07-21 | $210.97 | $215.00 | +1.9% | HOLD |
-| Gerard Cassidy | Royal Bank Of Canada | 2026-07-20 | $215.27 | $243.00 | +12.9% | BUY |
-| Brennan Hawken | BMO Capital Markets | 2026-07-17 | $218.38 | $250.00 | +14.5% | OUTPERFORM |
-| Keith Horowitz | Citigroup | 2026-07-17 | $218.36 | $235.00 | +7.6% | HOLD |
+| Erika Najarian | UBS Group | 2026-08-03 | $211.23 | $260.00 | +23.1% | BUY |
+| Dominic Ball | HSBC | 2026-07-21 | $216.40 | $215.00 | -0.7% | HOLD |
+| Gerard Cassidy | Royal Bank Of Canada | 2026-07-20 | $210.94 | $243.00 | +15.2% | BUY |
+| Brennan Hawken | BMO Capital Markets | 2026-07-17 | $215.50 | $250.00 | +16.0% | OUTPERFORM |
+| Keith Horowitz | Citigroup | 2026-07-17 | $215.50 | $235.00 | +9.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

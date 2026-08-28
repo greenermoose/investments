@@ -112,11 +112,11 @@ BSX currently trades at a Price-to-Sales (P/S) multiple of ~3.5x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joshua Jennings | TD Cowen | 2026-08-25 | $48.99 | $56.00 | +14.3% | BUY |
-| Shagun Singh | Royal Bank Of Canada | 2026-07-30 | $45.40 | $70.00 | +54.2% | OUTPERFORM |
-| Patrick Wood | UBS Group | 2026-07-30 | $45.40 | $67.00 | +47.6% | BUY |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $44.75 | $60.00 | +34.1% | BUY |
-| David Rescott | Robert W. Baird | 2026-07-30 | $46.06 | $56.00 | +21.6% | BUY |
+| Joshua Jennings | TD Cowen | 2026-08-25 | $49.86 | $56.00 | +12.3% | BUY |
+| Shagun Singh | Royal Bank Of Canada | 2026-07-30 | $46.00 | $70.00 | +52.2% | OUTPERFORM |
+| Patrick Wood | UBS Group | 2026-07-30 | $46.00 | $67.00 | +45.6% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $46.00 | $60.00 | +30.4% | BUY |
+| David Rescott | Robert W. Baird | 2026-07-30 | $46.00 | $56.00 | +21.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

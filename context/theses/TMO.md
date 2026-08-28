@@ -112,11 +112,11 @@ TMO currently trades at a Price-to-Sales (P/S) multiple of ~5.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Daniel Arias | Stifel Nicolaus | 2026-08-05 | $567.69 | $650.00 | +14.5% | BUY |
-| David Westenberg | Piper Sandler | 2026-07-27 | $567.32 | $600.00 | +5.8% | HOLD |
-| Kallum Titchmarsh | Morgan Stanley | 2026-07-24 | $567.34 | $650.00 | +14.6% | OVERWEIGHT |
-| Dan Leonard | Royal Bank Of Canada | 2026-07-24 | $564.64 | $580.00 | +2.7% | BUY |
-| Luke Sergott | Barclays | 2026-07-24 | $573.45 | $650.00 | +13.3% | OVERWEIGHT |
+| Daniel Arias | Stifel Nicolaus | 2026-08-05 | $577.83 | $650.00 | +12.5% | BUY |
+| David Westenberg | Piper Sandler | 2026-07-27 | $559.53 | $600.00 | +7.2% | HOLD |
+| Kallum Titchmarsh | Morgan Stanley | 2026-07-24 | $568.26 | $650.00 | +14.4% | OVERWEIGHT |
+| Dan Leonard | Royal Bank Of Canada | 2026-07-24 | $568.26 | $580.00 | +2.1% | BUY |
+| Luke Sergott | Barclays | 2026-07-24 | $568.26 | $650.00 | +14.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

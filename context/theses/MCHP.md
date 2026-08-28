@@ -112,11 +112,11 @@ MCHP currently trades at a Price-to-Sales (P/S) multiple of ~8.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ambrish Srivastava | BMO Capital Markets | 2026-08-21 | $76.08 | $95.00 | +24.9% | OUTPERFORM |
 | Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $80.26 | $125.00 | +55.7% | OVERWEIGHT |
 | Pradeep Ramani | UBS Group | 2026-08-07 | $84.69 | $120.00 | +41.7% | BUY |
 | Atif Malik | Citigroup | 2026-08-07 | $84.69 | $95.00 | +12.2% | BUY |
 | William Stein | Truist Financial | 2026-08-07 | $84.69 | $90.00 | +6.3% | HOLD |
-| Kevin Cassidy | Rosenblatt Securities | 2026-08-07 | $84.69 | $120.00 | +41.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

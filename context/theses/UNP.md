@@ -112,11 +112,11 @@ UNP currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Daniel Moore | Robert W. Baird | 2026-07-27 | $307.55 | $344.00 | +11.8% | OUTPERFORM |
-| Walter Spracklin | Royal Bank Of Canada | 2026-07-24 | $303.85 | $339.00 | +11.6% | OUTPERFORM |
-| Thomas Wadewitz | UBS Group | 2026-07-24 | $303.83 | $310.00 | +2.0% | HOLD |
-| Jason Seidl | TD Cowen | 2026-07-24 | $303.85 | $325.00 | +7.0% | BUY |
-| Fadi Chamoun | BMO Capital Markets | 2026-07-24 | $304.27 | $320.00 | +5.2% | BUY |
+| Daniel Moore | Robert W. Baird | 2026-07-27 | $299.30 | $344.00 | +14.9% | OUTPERFORM |
+| Walter Spracklin | Royal Bank Of Canada | 2026-07-24 | $307.32 | $339.00 | +10.3% | OUTPERFORM |
+| Thomas Wadewitz | UBS Group | 2026-07-24 | $307.32 | $310.00 | +0.9% | HOLD |
+| Jason Seidl | TD Cowen | 2026-07-24 | $307.32 | $325.00 | +5.8% | BUY |
+| Fadi Chamoun | BMO Capital Markets | 2026-07-24 | $307.32 | $320.00 | +4.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

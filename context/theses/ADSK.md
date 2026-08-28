@@ -112,11 +112,11 @@ ADSK currently trades at a Price-to-Sales (P/S) multiple of ~7.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Matthew Martino | The Goldman Sachs Group | 2026-08-11 | $251.59 | $260.00 | +3.3% | HOLD |
-| John DiFucci | Guggenheim | 2026-07-22 | $203.50 | $245.00 | +20.4% | BUY |
-| Andrew DeGasperi | BNP Paribas Exane | 2026-06-18 | $193.82 | $295.00 | +52.2% | OUTPERFORM |
-| Blair Abernethy | Rosenblatt Securities | 2026-06-01 | $248.16 | $330.00 | +33.0% | BUY |
-| Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-06-01 | $248.16 | $360.00 | +45.1% | BUY |
+| Daniel Jester | BMO Capital Markets | 2026-08-28 | $270.58 | $283.00 | +4.6% | BUY |
+| Clarke Jeffries | Piper Sandler | 2026-08-28 | $270.58 | $338.00 | +24.9% | OVERWEIGHT |
+| Nick Altmann | BTIG Research | 2026-08-28 | $270.58 | $300.00 | +10.9% | BUY |
+| Joe Vruwink | Robert W. Baird | 2026-08-21 | $253.83 | $325.00 | +28.0% | OUTPERFORM |
+| New Street Research Research Team | New Street Research | 2026-08-20 | $251.02 | $277.00 | +10.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

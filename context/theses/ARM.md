@@ -60,7 +60,7 @@ Arm Holdings plc maintains a capital-light liability profile with zero defined b
 | Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Arm Holdings plc operates zero defined benefit pension plans or retiree healthca... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Arm Holdings plc has zero legacy manufacturing, toxic chemical, or federal Super... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $4.14 B | Take-or-Pay: $1.24 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.72 B | Take-or-Pay: $0.52 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 

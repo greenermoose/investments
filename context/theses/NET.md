@@ -112,11 +112,11 @@ NET currently trades at a Price-to-Sales (P/S) multiple of ~50.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Fatima Boolani | Citigroup | 2026-08-10 | $301.00 | $400.00 | +32.9% | BUY |
-| Aaron Samuels | Susquehanna | 2026-08-10 | $301.05 | $300.00 | -0.3% | HOLD |
-| Patrick Colville | Scotiabank | 2026-08-07 | $304.14 | $390.00 | +28.2% | OUTPERFORM |
-| Keith Weiss | Morgan Stanley | 2026-08-07 | $304.15 | $370.00 | +21.6% | OVERWEIGHT |
-| Shrenik Kothari | Robert W. Baird | 2026-08-07 | $304.96 | $330.00 | +8.2% | BUY |
+| Fatima Boolani | Citigroup | 2026-08-10 | $310.59 | $400.00 | +28.8% | BUY |
+| Aaron Samuels | Susquehanna | 2026-08-10 | $310.59 | $300.00 | -3.4% | HOLD |
+| Patrick Colville | Scotiabank | 2026-08-07 | $300.27 | $390.00 | +29.9% | OUTPERFORM |
+| Keith Weiss | Morgan Stanley | 2026-08-07 | $300.27 | $370.00 | +23.2% | OVERWEIGHT |
+| Shrenik Kothari | Robert W. Baird | 2026-08-07 | $300.27 | $330.00 | +9.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

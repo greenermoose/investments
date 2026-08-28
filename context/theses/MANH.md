@@ -1,4 +1,4 @@
-# Investment Thesis Dossier: MANH - MANH Corporation
+# Investment Thesis Dossier: MANH - Manhattan Associates, Inc.
 
 ## Summary & Key Metrics
 - **Ticker:** MANH
@@ -15,21 +15,21 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1056696
 
 ## Business Profile
-MANH Corporation operates within the Information Technology sector, specializing in US Public Equity. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+Manhattan Associates, Inc. is the premier developer of cloud-native supply chain commerce, warehouse management, and omnichannel retail inventory software solutions. The company's flagship Manhattan Active platform spans Warehouse Management (WMS), Transportation Management (TMS), Omnichannel Point-of-Sale (POS), and Order Management (OMS), enabling global enterprises to optimize inventory positioning and streamline logistics fulfillment.
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Manhattan Associates commands an entrenched competitive advantage in mission-critical distribution centers and retail logistics networks, where downtime carries severe financial consequences. Its cloud-native microservices architecture (Manhattan Active) eliminates disruptive software upgrade cycles, driving rapid customer migration, subscription ARR compounding above 20%, and gross margins exceeding 55% with zero debt.
 
 ## Total Addressable Market & Market Share
-MANH Corporation addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.2% market share. Over our 3-year investment horizon, we model market share evolving to 2.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Manhattan Associates, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 2.2% market share. Over our 3-year investment horizon, we model market share evolving to 2.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Manhattan Associates holds an entrenched competitive advantage in mission-critical supply chain execution, warehouse management, and omnichannel retail inventory software. Its Manhattan Active platform serves as the central operational nervous system for major global retailers, third-party logistics providers, and manufacturers where warehouse downtime causes severe supply chain disruption. Its cloud-native microservices architecture eliminates version upgrades, creating frictionless feature deployment, high enterprise customer retention, and double-digit subscription ARR compounding with zero debt.
 
 ## Anticipated Catalysts & Timeline
-MANH Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Manhattan Associates, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-MANH Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.27B in cash & equivalents against $0.22B in total debt (net balance: $+0.05B). Anticipated annual CapEx and operational capital requirements of ~$0.05B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Manhattan Associates, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.27B in cash & equivalents against $0.22B in total debt (net balance: $+0.05B). Anticipated annual CapEx and operational capital requirements of ~$0.05B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ MANH Corporation operates under a reinvestment for growth capital strategy. The 
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-MANH Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.14B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+Manhattan Associates, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.14B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,16 +50,16 @@ MANH Corporation utilizes equity-based compensation as a core talent recruitment
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-MANH Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
+Manhattan Associates, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Manhattan Associates, Inc. operates zero defined benefit pension plans or retire... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Manhattan Associates, Inc. has zero legacy manufacturing, toxic chemical, or fed... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.38 B | Take-or-Pay: $0.11 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -69,7 +69,7 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-MANH Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+Manhattan Associates, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
 MANH currently trades at a Price-to-Sales (P/S) multiple of ~12.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~11.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.4%, fully justifying our HOLD rating.
@@ -112,7 +112,11 @@ MANH currently trades at a Price-to-Sales (P/S) multiple of ~12.2x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Consensus Model | Wall Street Consensus | 2026-08-10 | $223.76 | $281.01 | +25.6% | HOLD |
+| Joe Vruwink | Robert W. Baird | 2026-08-26 | $215.89 | $260.00 | +20.4% | OUTPERFORM |
+| Clark Wright | DA Davidson | 2026-07-29 | $204.02 | $210.00 | +2.9% | BUY |
+| Chris Quintero | Morgan Stanley | 2026-07-29 | $204.02 | $180.00 | -11.8% | BUY |
+| Parker Lane | Stifel Nicolaus | 2026-07-29 | $204.02 | $225.00 | +10.3% | BUY |
+| George Kurosawa | Citigroup | 2026-07-21 | $159.12 | $193.00 | +21.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

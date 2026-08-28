@@ -112,11 +112,11 @@ AMAT currently trades at a Price-to-Sales (P/S) multiple of ~13.5x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Vijay Rakesh | Mizuho | 2026-08-25 | $480.04 | $590.00 | +22.9% | OUTPERFORM |
+| James Kelleher | Argus | 2026-08-18 | $514.33 | $600.00 | +16.7% | BUY |
 | Timothy Arcuri | UBS Group | 2026-08-14 | $507.18 | $675.00 | +33.1% | BUY |
 | Christian Schwab | Craig Hallum | 2026-08-14 | $507.18 | $585.00 | +15.3% | BUY |
 | Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-08-14 | $507.18 | $605.00 | +19.3% | BUY |
-| Shane Brett | Morgan Stanley | 2026-08-14 | $507.18 | $642.00 | +26.6% | BUY |
-| Stacy Rasgon | Sanford C. Bernstein | 2026-08-14 | $507.18 | $700.00 | +38.0% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

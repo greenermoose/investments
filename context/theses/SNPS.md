@@ -112,11 +112,11 @@ SNPS currently trades at a Price-to-Sales (P/S) multiple of ~12.6x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joe Quatrochi | Wells Fargo & Company | 2026-08-11 | $410.91 | $450.00 | +9.5% | BUY |
-| Gary Mobley | Benchmark | 2026-07-15 | $425.28 | $570.00 | +34.0% | BUY |
-| Clarke Jeffries | Piper Sandler | 2026-06-23 | $461.50 | $550.00 | +19.2% | OVERWEIGHT |
-| Ruben Roy | Stifel Nicolaus | 2026-05-28 | $480.64 | $600.00 | +24.8% | BUY |
-| Robert W. Baird Research Team | Robert W. Baird | 2026-05-28 | $480.64 | $558.00 | +16.1% | BUY |
+| UBS Group Research Team | UBS Group | 2026-08-27 | $464.89 | $570.00 | +22.6% | BUY |
+| Siti Panigrahi | Mizuho | 2026-08-27 | $464.89 | $550.00 | +18.3% | OUTPERFORM |
+| Jon Vruwink | Robert W. Baird | 2026-08-27 | $464.89 | $560.00 | +20.5% | OUTPERFORM |
+| Gary Mobley | Benchmark | 2026-08-27 | $464.89 | $570.00 | +22.6% | BUY |
+| Charles Shi | Needham & Company LLC | 2026-08-27 | $464.89 | $580.00 | +24.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

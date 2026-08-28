@@ -112,11 +112,11 @@ ANET currently trades at a Price-to-Sales (P/S) multiple of ~28.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-08-05 | $196.88 | $225.00 | +14.3% | BUY |
-| David Vogt | UBS Group | 2026-08-05 | $196.88 | $259.00 | +31.6% | BUY |
-| Meta Marshall | Morgan Stanley | 2026-08-05 | $198.50 | $220.00 | +10.8% | OVERWEIGHT |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $191.21 | $255.00 | +33.4% | OVERWEIGHT |
-| Brandon Nispel | KeyCorp | 2026-08-05 | $191.22 | $250.00 | +30.7% | OVERWEIGHT |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-08-05 | $197.31 | $225.00 | +14.0% | BUY |
+| David Vogt | UBS Group | 2026-08-05 | $197.31 | $259.00 | +31.3% | BUY |
+| Meta Marshall | Morgan Stanley | 2026-08-05 | $197.31 | $220.00 | +11.5% | OVERWEIGHT |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $197.31 | $255.00 | +29.2% | OVERWEIGHT |
+| Brandon Nispel | KeyCorp | 2026-08-05 | $197.31 | $250.00 | +26.7% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

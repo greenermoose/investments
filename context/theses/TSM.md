@@ -60,7 +60,7 @@ Taiwan Semiconductor Manufacturing Company Limited maintains a capital-light lia
 | Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Taiwan Semiconductor Manufacturing Company Limited operates zero defined benefit... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Taiwan Semiconductor Manufacturing Company Limited has zero legacy manufacturing... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $3117.57 B | Take-or-Pay: $935.27 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $31.17 B | Take-or-Pay: $9.35 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
@@ -115,11 +115,11 @@ TSM currently trades at a Price-to-Sales (P/S) multiple of ~24.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Mark Li | Sanford C. Bernstein | 2026-08-11 | $421.74 | $554.00 | +31.4% | OUTPERFORM |
-| Charles Shi | Needham & Company LLC | 2026-07-27 | $403.20 | $530.00 | +31.4% | BUY |
-| Gil Luria | DA Davidson | 2026-07-17 | $394.76 | $500.00 | +26.7% | BUY |
-| Simon Coles | Barclays | 2026-07-17 | $408.37 | $650.00 | +59.2% | OVERWEIGHT |
-| Krish Sankar | TD Cowen | 2026-07-17 | $401.13 | $440.00 | +9.7% | HOLD |
+| Mark Li | Sanford C. Bernstein | 2026-08-11 | $422.06 | $554.00 | +31.3% | OUTPERFORM |
+| Charles Shi | Needham & Company LLC | 2026-07-27 | $399.09 | $530.00 | +32.8% | BUY |
+| Gil Luria | DA Davidson | 2026-07-17 | $398.37 | $500.00 | +25.5% | BUY |
+| Simon Coles | Barclays | 2026-07-17 | $398.37 | $650.00 | +63.2% | OVERWEIGHT |
+| Krish Sankar | TD Cowen | 2026-07-17 | $398.37 | $440.00 | +10.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

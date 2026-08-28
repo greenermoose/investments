@@ -57,10 +57,10 @@ PDD Holdings Inc. possesses a clean, predictable liability structure with fully 
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $144.47 B (Gap: $-7.22 B) | ~$3.61 B / yr | PDD Holdings Inc. maintains legacy defined benefit plans ($144.47B PBO vs $137.2... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $7.15 B (Gap: $-0.36 B) | ~$0.18 B / yr | PDD Holdings Inc. maintains legacy defined benefit plans ($7.15B PBO vs $6.79B a... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $216.70 B | Take-or-Pay: $54.17 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $10.72 B | Take-or-Pay: $2.68 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
 
@@ -115,11 +115,11 @@ PDD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Fawne Jiang | Benchmark | 2026-08-25 | $87.75 | $114.00 | +29.9% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-08-24 | $87.07 | $105.00 | +20.6% | HOLD |
 | Daiwa Securities Group Research Team | Daiwa Securities Group | 2026-06-23 | $76.56 | $80.00 | +4.5% | HOLD |
 | Colin Liu | BNP Paribas Exane | 2026-06-15 | $83.55 | $89.00 | +6.5% | UNDERPERFORM |
 | Jiong Shao | Barclays | 2026-05-28 | $83.03 | $89.00 | +7.2% | OVERWEIGHT |
-| Fawne Jiang | Benchmark | 2026-05-28 | $83.03 | $127.00 | +53.0% | BUY |
-| Robin Zhu | Sanford C. Bernstein | 2026-05-27 | $86.61 | $110.00 | +27.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

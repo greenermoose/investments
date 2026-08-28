@@ -112,11 +112,11 @@ MA currently trades at a Price-to-Sales (P/S) multiple of ~16.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Darrin Peller | Wolfe Research | 2026-08-25 | $599.37 | $740.00 | +23.5% | OUTPERFORM |
 | Matthew Coad | Truist Financial | 2026-08-05 | $570.48 | $633.00 | +11.0% | BUY |
 | Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $570.97 | $695.00 | +21.7% | OVERWEIGHT |
 | Daniel R. Perlin | Royal Bank Of Canada | 2026-07-31 | $573.10 | $642.00 | +12.0% | OUTPERFORM |
 | Bryan C. Bergin | TD Cowen | 2026-07-31 | $573.10 | $667.00 | +16.4% | BUY |
-| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $573.10 | $632.00 | +10.3% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

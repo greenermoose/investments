@@ -112,10 +112,10 @@ EXC currently trades at a Price-to-Sales (P/S) multiple of ~1.9x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| David Arcaro | Morgan Stanley | 2026-08-21 | $43.78 | $53.00 | +21.1% | BUY |
 | Richard Sunderland | Truist Financial | 2026-08-13 | $45.60 | $48.00 | +5.3% | HOLD |
 | Shelby Tucker | TD Cowen | 2026-05-15 | $43.38 | $49.00 | +13.0% | HOLD |
 | Sophie Karp | KeyCorp | 2026-05-13 | $44.27 | $41.00 | -7.4% | UNDERPERFORM |
-| David Arcaro | Morgan Stanley | 2026-04-21 | $46.27 | $55.00 | +18.9% | BUY |
 | Wells Fargo & Company Research Team | Wells Fargo & Company | 2026-04-21 | $46.27 | $50.00 | +8.1% | BUY |
 
 ## Anticipated Catalyst Timeline

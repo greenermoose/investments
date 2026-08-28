@@ -112,11 +112,11 @@ MRVL currently trades at a Price-to-Sales (P/S) multiple of ~25.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Timothy Arcuri | UBS Group | 2026-08-17 | $234.33 | $300.00 | +28.0% | BUY |
-| James Schneider | The Goldman Sachs Group | 2026-08-12 | $217.08 | $195.00 | -10.2% | HOLD |
-| John Vinh | KeyCorp | 2026-07-14 | $222.44 | $400.00 | +79.8% | OVERWEIGHT |
-| Srini Pajjuri | Royal Bank Of Canada | 2026-07-07 | $230.70 | $360.00 | +56.0% | OUTPERFORM |
-| C.J. Muse | Cantor Fitzgerald | 2026-06-29 | $277.75 | $300.00 | +8.0% | HOLD |
+| Rick Schafer | Oppenheimer | 2026-08-28 | $241.45 | $325.00 | +34.6% | OUTPERFORM |
+| C.J. Muse | Cantor Fitzgerald | 2026-08-28 | $241.45 | $300.00 | +24.2% | HOLD |
+| N. Quinn Bolton | Needham & Company LLC | 2026-08-28 | $241.45 | $300.00 | +24.2% | BUY |
+| Christopher Rolland | Susquehanna | 2026-08-25 | $240.38 | $265.00 | +10.2% | BUY |
+| Sajal Dogra | Rosenblatt Securities | 2026-08-25 | $240.38 | $300.00 | +24.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

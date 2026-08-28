@@ -112,11 +112,11 @@ DASH currently trades at a Price-to-Sales (P/S) multiple of ~7.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ygal Arounian | Wedbush | 2026-08-20 | $222.36 | $220.00 | -1.1% | HOLD |
 | Rohit Kulkarni | Roth Capital | 2026-08-10 | $209.86 | $220.00 | +4.8% | HOLD |
 | Ken Gawrelski | Wells Fargo & Company | 2026-08-07 | $216.26 | $225.00 | +4.0% | BUY |
 | Shyam Patil | Susquehanna | 2026-08-07 | $216.26 | $250.00 | +15.6% | BUY |
 | Ross Sandler | Piper Sandler | 2026-08-06 | $213.26 | $220.00 | +3.2% | HOLD |
-| Youssef Squali | Truist Financial | 2026-08-06 | $213.26 | $336.00 | +57.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ CEG currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| David Arcaro | Morgan Stanley | 2026-08-21 | $272.88 | $364.00 | +33.4% | OVERWEIGHT |
+| BNP Paribas Exane Research Team | BNP Paribas Exane | 2026-08-19 | $274.17 | $374.00 | +36.4% | OUTPERFORM |
 | John Eade | Argus | 2026-08-11 | $278.36 | $325.00 | +16.8% | BUY |
 | James Thalacker | BMO Capital Markets | 2026-08-07 | $269.89 | $379.00 | +40.4% | BUY |
 | Ross Fowler | UBS Group | 2026-07-28 | $259.82 | $380.00 | +46.3% | BUY |
-| Michael Lonegan | Barclays | 2026-07-28 | $259.82 | $324.00 | +24.7% | OVERWEIGHT |
-| Shahriar Pourreza | Wells Fargo & Company | 2026-07-27 | $270.00 | $362.00 | +34.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

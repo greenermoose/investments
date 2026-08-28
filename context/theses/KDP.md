@@ -112,11 +112,11 @@ KDP currently trades at a Price-to-Sales (P/S) multiple of ~2.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Dara Mohsenian | Morgan Stanley | 2026-08-20 | $31.66 | $38.00 | +20.0% | OVERWEIGHT |
 | Sorabh Daga | HSBC | 2026-08-13 | $31.12 | $40.00 | +28.5% | HOLD |
 | Lauren Lieberman | Barclays | 2026-08-10 | $29.30 | $38.00 | +29.7% | OVERWEIGHT |
 | Peter Grom | UBS Group | 2026-08-07 | $30.01 | $39.00 | +30.0% | BUY |
 | Royal Bank Of Canada Research Team | Royal Bank Of Canada | 2026-08-04 | $31.10 | $42.00 | +35.0% | OUTPERFORM |
-| Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-23 | $29.67 | $38.00 | +28.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

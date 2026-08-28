@@ -112,11 +112,11 @@ PG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Cristian Rios | Sanford C. Bernstein | 2026-08-24 | $146.60 | $149.00 | +1.6% | BUY |
 | Diego Serrano | HSBC | 2026-07-30 | $143.96 | $149.00 | +3.5% | HOLD |
 | Filippo Falorni | Citigroup | 2026-07-30 | $143.96 | $170.00 | +18.1% | BUY |
 | Lauren Lieberman | Barclays | 2026-07-21 | $148.10 | $152.00 | +2.6% | BUY |
 | Andrea Teixeira | JPMorgan Chase & Co. | 2026-07-16 | $151.50 | $162.00 | +6.9% | OVERWEIGHT |
-| Peter Galbo | Bank of America | 2026-07-10 | $147.04 | $166.00 | +12.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

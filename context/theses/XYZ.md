@@ -112,11 +112,11 @@ XYZ currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Darrin Peller | Wolfe Research | 2026-08-25 | $82.72 | $115.00 | +39.0% | OUTPERFORM |
 | Joseph Vafi | Canaccord Genuity Group | 2026-08-13 | $83.09 | $100.00 | +20.4% | BUY |
 | Stephen Biggar | Argus | 2026-08-07 | $79.00 | $103.00 | +30.4% | BUY |
 | Monness Crespi & Hardt Research Team | Monness Crespi & Hardt | 2026-08-07 | $79.00 | $125.00 | +58.2% | BUY |
 | David Koning | Robert W. Baird | 2026-08-06 | $79.02 | $105.00 | +32.9% | BUY |
-| Bill Carcache | Piper Sandler | 2026-08-06 | $79.02 | $105.00 | +32.9% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ NTLA currently trades at a Price-to-Sales (P/S) multiple of ~27.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Silvan Turkcan | Citizens Jmp | 2026-08-25 | $13.51 | $30.00 | +122.1% | OUTPERFORM |
 | Evercore Research Team | Evercore | 2026-08-07 | $11.94 | $24.00 | +101.0% | OUTPERFORM |
 | Andy Chen | Wolfe Research | 2026-07-15 | $13.04 | $9.00 | -31.0% | UNDERPERFORM |
 | David Nierengarten | Wedbush | 2026-07-10 | $14.22 | $17.00 | +19.6% | HOLD |
 | Whitney Ijem | Canaccord Genuity Group | 2026-06-16 | $14.55 | $49.00 | +236.8% | BUY |
-| New Street Research Research Team | New Street Research | 2026-06-15 | $14.92 | $25.00 | +67.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

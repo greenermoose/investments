@@ -112,10 +112,10 @@ NRGV currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Vikram Bagri | Citigroup | 2026-08-20 | $3.74 | $6.00 | +60.4% | BUY |
+| Fundamental Research Research Team | Fundamental Research | 2026-08-18 | $3.65 | $8.03 | +120.0% | BUY |
 | Justin Clare | Roth Capital | 2026-08-12 | $3.92 | $7.00 | +78.6% | BUY |
 | Derek Soderberg | Cantor Fitzgerald | 2026-08-12 | $3.92 | $7.00 | +78.6% | OVERWEIGHT |
-| Vikram Bagri | Citigroup | 2026-07-22 | $3.35 | $5.00 | +49.2% | HOLD |
-| Fundamental Research Research Team | Fundamental Research | 2026-03-24 | $3.69 | $6.05 | +64.0% | BUY |
 | Brian Lee | The Goldman Sachs Group | 2026-03-19 | $3.72 | $2.00 | -46.2% | SELL |
 
 ## Anticipated Catalyst Timeline

@@ -112,11 +112,11 @@ UBER currently trades at a Price-to-Sales (P/S) multiple of ~3.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Andrew Boone | Citizens Jmp | 2026-08-25 | $79.28 | $100.00 | +26.1% | OUTPERFORM |
-| Rohit Kulkarni | Roth Capital | 2026-08-10 | $77.42 | $100.00 | +29.2% | BUY |
-| John Colantuoni | Jefferies Financial Group | 2026-08-10 | $74.95 | $110.00 | +46.8% | BUY |
-| James Lee | Mizuho | 2026-08-06 | $69.16 | $112.00 | +61.9% | BUY |
-| Ken Gawrelski | Wells Fargo & Company | 2026-08-06 | $68.21 | $89.00 | +30.5% | OVERWEIGHT |
+| Andrew Boone | Citizens Jmp | 2026-08-25 | $80.35 | $100.00 | +24.5% | OUTPERFORM |
+| Rohit Kulkarni | Roth Capital | 2026-08-10 | $78.03 | $100.00 | +28.2% | BUY |
+| John Colantuoni | Jefferies Financial Group | 2026-08-10 | $78.03 | $110.00 | +41.0% | BUY |
+| James Lee | Mizuho | 2026-08-06 | $70.47 | $112.00 | +58.9% | BUY |
+| Ken Gawrelski | Wells Fargo & Company | 2026-08-06 | $70.47 | $89.00 | +26.3% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

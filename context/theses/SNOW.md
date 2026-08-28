@@ -112,11 +112,11 @@ SNOW currently trades at a Price-to-Sales (P/S) multiple of ~24.3x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Tyler Radke | Citigroup | 2026-08-26 | $317.42 | $395.00 | +24.4% | BUY |
-| Yi Fu | Benchmark | 2026-08-25 | $316.99 | $360.00 | +13.6% | BUY |
-| Miller Jump | Truist Financial | 2026-08-25 | $316.54 | $360.00 | +13.7% | BUY |
-| William Power | Robert W. Baird | 2026-08-25 | $323.03 | $350.00 | +8.3% | OUTPERFORM |
-| Derrick Wood | TD Cowen | 2026-08-20 | $324.59 | $370.00 | +14.0% | BUY |
+| Raimo Lenschow | Barclays | 2026-08-27 | $329.11 | $332.00 | +0.9% | BUY |
+| Tyler Radke | Citigroup | 2026-08-26 | $315.37 | $395.00 | +25.2% | BUY |
+| Yi Fu | Benchmark | 2026-08-25 | $317.02 | $360.00 | +13.6% | BUY |
+| Miller Jump | Truist Financial | 2026-08-25 | $317.02 | $360.00 | +13.6% | BUY |
+| William Power | Robert W. Baird | 2026-08-25 | $317.02 | $350.00 | +10.4% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

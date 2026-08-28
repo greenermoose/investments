@@ -112,8 +112,11 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~11.3x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Eric Sheridan | Goldman Sachs | 2026-08-10 | $137.19 | $185.00 | +34.9% | BUY |
-| Arvind Ramnani | Piper Sandler | 2026-08-06 | $122.58 | $190.00 | +55.0% | OVERWEIGHT |
+| Bryan Smilek | JPMorgan Chase & Co. | 2026-08-27 | $142.86 | $135.00 | -5.5% | HOLD |
+| John Staszak | Argus | 2026-08-25 | $146.04 | $146.00 | -0.0% | HOLD |
+| Ygal Arounian | Wedbush | 2026-08-20 | $147.03 | $150.00 | +2.0% | HOLD |
+| Wyatt Swanson | DA Davidson | 2026-08-18 | $139.64 | $160.00 | +14.6% | HOLD |
+| Mark Mahaney | Evercore | 2026-08-06 | $122.58 | $105.00 | -14.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

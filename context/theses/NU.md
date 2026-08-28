@@ -56,10 +56,10 @@ Nu Holdings Ltd.'s off-balance sheet liabilities are low risk, with well-funded 
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.05 B (Gap: $-0.02 B) | ~$0.02 B / yr | Nu Holdings Ltd. maintains well-funded legacy defined benefit pension plans ($1.... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.56 B (Gap: $-0.01 B) | ~$0.01 B / yr | Nu Holdings Ltd. maintains well-funded legacy defined benefit pension plans ($0.... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Nu Holdings Ltd. has zero industrial contamination or Superfund remediation liab... |
 | Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, in... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $1.26 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.67 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.
 
@@ -114,9 +114,11 @@ NU currently trades at a Price-to-Sales (P/S) multiple of ~12.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Tito Labarta | Goldman Sachs | 2026-08-14 | $15.23 | $19.00 | +24.8% | BUY |
-| Domingos Falavina | JPMorgan | 2026-08-11 | $13.65 | $18.00 | +31.9% | OVERWEIGHT |
-| Jorge Kuri | Morgan Stanley | 2026-08-05 | $14.48 | $17.50 | +20.9% | OVERWEIGHT |
+| Darrin Peller | Wolfe Research | 2026-08-25 | $15.14 | $17.00 | +12.3% | OUTPERFORM |
+| Thiago Batista | UBS Group | 2026-08-20 | $14.21 | $18.20 | +28.1% | BUY |
+| James Friedman | Susquehanna | 2026-08-14 | $15.23 | $16.00 | +5.1% | HOLD |
+| Kyle Peterson | Needham & Company LLC | 2026-08-14 | $15.23 | $19.00 | +24.8% | BUY |
+| Yuri Fernandes | JPMorgan Chase & Co. | 2026-07-07 | $13.61 | $20.00 | +47.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

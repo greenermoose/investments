@@ -112,11 +112,11 @@ APH currently trades at a Price-to-Sales (P/S) multiple of ~8.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joseph Spak | UBS Group | 2026-07-30 | $156.34 | $197.00 | +26.0% | BUY |
-| Andrew Buscaglia | BNP Paribas Exane | 2026-07-30 | $158.87 | $215.00 | +35.3% | OUTPERFORM |
-| Asiya Merchant | Citigroup | 2026-07-30 | $157.72 | $210.00 | +33.1% | BUY |
-| William Stein | Truist Financial | 2026-07-30 | $155.77 | $215.00 | +38.0% | BUY |
-| Samik Chatterjee | JPMorgan Chase & Co. | 2026-07-16 | $153.09 | $215.00 | +40.4% | OVERWEIGHT |
+| Joseph Spak | UBS Group | 2026-07-30 | $159.82 | $197.00 | +23.3% | BUY |
+| Andrew Buscaglia | BNP Paribas Exane | 2026-07-30 | $159.82 | $215.00 | +34.5% | OUTPERFORM |
+| Asiya Merchant | Citigroup | 2026-07-30 | $159.82 | $210.00 | +31.4% | BUY |
+| William Stein | Truist Financial | 2026-07-30 | $159.82 | $215.00 | +34.5% | BUY |
+| Samik Chatterjee | JPMorgan Chase & Co. | 2026-07-16 | $153.14 | $215.00 | +40.4% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

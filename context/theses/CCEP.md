@@ -56,10 +56,10 @@ Coca-Cola Europacific Partners PLC possesses a clean, predictable liability stru
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $7.37 B (Gap: $-0.37 B) | ~$0.18 B / yr | Coca-Cola Europacific Partners PLC maintains legacy defined benefit plans ($7.37... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $2.93 B (Gap: $-0.15 B) | ~$0.07 B / yr | Coca-Cola Europacific Partners PLC maintains legacy defined benefit plans ($2.93... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $11.06 B | Take-or-Pay: $2.77 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $4.39 B | Take-or-Pay: $1.10 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
 

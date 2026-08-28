@@ -112,11 +112,11 @@ PANW currently trades at a Price-to-Sales (P/S) multiple of ~20.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Turrin | Wells Fargo & Company | 2026-08-17 | $375.76 | $475.00 | +26.4% | OVERWEIGHT |
-| Hamza Fodderwala | Morgan Stanley | 2026-08-17 | $375.76 | $400.00 | +6.5% | BUY |
-| Shaul Eyal | TD Cowen | 2026-08-17 | $375.76 | $400.00 | +6.5% | BUY |
-| Matthew Hedberg | Royal Bank Of Canada | 2026-08-14 | $384.27 | $434.00 | +12.9% | OUTPERFORM |
-| Rustam Kanga | Citizens Jmp | 2026-08-12 | $387.01 | $415.00 | +7.2% | OUTPERFORM |
+| Gray Powell | BTIG Research | 2026-08-26 | $339.31 | $380.00 | +12.0% | BUY |
+| Brian Essex | JPMorgan Chase & Co. | 2026-08-25 | $339.90 | $384.00 | +13.0% | OVERWEIGHT |
+| Yi Fu Lee | Benchmark | 2026-08-24 | $350.90 | $400.00 | +14.0% | BUY |
+| Keith Bachman | BMO Capital Markets | 2026-08-20 | $349.56 | $415.00 | +18.7% | OUTPERFORM |
+| Roger Boyd | UBS Group | 2026-08-19 | $359.76 | $390.00 | +8.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

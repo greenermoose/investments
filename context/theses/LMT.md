@@ -112,11 +112,11 @@ LMT currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| John Godyn | Citigroup | 2026-08-13 | $606.99 | $691.00 | +13.8% | BUY |
-| David Strauss | Wells Fargo & Company | 2026-07-27 | $582.75 | $600.00 | +3.0% | BUY |
-| UBS Group Research Team | UBS Group | 2026-07-24 | $579.49 | $581.00 | +0.3% | HOLD |
-| Ken Herbert | Royal Bank Of Canada | 2026-07-24 | $582.86 | $600.00 | +2.9% | BUY |
-| Robert W. Baird Research Team | Robert W. Baird | 2026-07-24 | $582.17 | $700.00 | +20.2% | BUY |
+| John Godyn | Citigroup | 2026-08-13 | $598.01 | $691.00 | +15.6% | BUY |
+| David Strauss | Wells Fargo & Company | 2026-07-27 | $580.00 | $600.00 | +3.5% | BUY |
+| UBS Group Research Team | UBS Group | 2026-07-24 | $582.60 | $581.00 | -0.3% | HOLD |
+| Ken Herbert | Royal Bank Of Canada | 2026-07-24 | $582.60 | $600.00 | +3.0% | BUY |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-07-24 | $582.60 | $700.00 | +20.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

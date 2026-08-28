@@ -112,9 +112,9 @@ ADBE currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Tal Liani | Bank of America | 2026-08-19 | $272.47 | $220.00 | -19.3% | UNDERPERFORM |
 | Keith Weiss | Morgan Stanley | 2026-07-21 | $227.16 | $240.00 | +5.7% | UNDERPERFORM |
 | Bhavtosh Vajpayee | CLSA | 2026-07-20 | $234.74 | $300.00 | +27.8% | OUTPERFORM |
-| Tal Liani | Bank of America | 2026-07-07 | $221.54 | $190.00 | -14.2% | UNDERPERFORM |
 | Stephen Bersey | HSBC | 2026-07-02 | $219.72 | $308.00 | +40.2% | HOLD |
 | Gabriela Borges | The Goldman Sachs Group | 2026-06-12 | $204.02 | $190.00 | -6.9% | SELL |
 

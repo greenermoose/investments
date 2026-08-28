@@ -56,10 +56,10 @@ Ferrovial SE manages an established industrial liability footprint with stable p
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $6.0 B (Gap: $-0.42 B) | ~$0.18 B / yr | Ferrovial SE sponsors defined benefit pension plans with $6.00B in gross PBO aga... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $2.47 B (Gap: $-0.17 B) | ~$0.07 B / yr | Ferrovial SE sponsors defined benefit pension plans with $2.47B in gross PBO aga... |
 | Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
 | Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $6.82 B | Take-or-Pay: $2.05 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.81 B | Take-or-Pay: $0.84 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
 

@@ -112,11 +112,11 @@ TEAM currently trades at a Price-to-Sales (P/S) multiple of ~7.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Matthew Hedberg | Royal Bank Of Canada | 2026-08-25 | $166.49 | $215.00 | +29.1% | OUTPERFORM |
+| Joel Fishbein | Truist Financial | 2026-08-20 | $174.91 | $185.00 | +5.8% | BUY |
 | FBN Securities Research Team | FBN Securities | 2026-08-10 | $151.87 | $170.00 | +11.9% | OUTPERFORM |
 | Fatima Boolani | Citigroup | 2026-08-10 | $151.87 | $170.00 | +11.9% | BUY |
 | Raimo Lenschow | Barclays | 2026-08-10 | $151.87 | $172.00 | +13.2% | OVERWEIGHT |
-| Raymond James Financial Research Team | Raymond James Financial | 2026-08-07 | $149.07 | $180.00 | +20.8% | BUY |
-| Keith Weiss | Morgan Stanley | 2026-08-07 | $149.07 | $180.00 | +20.8% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~22.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Simon Leopold | Raymond James Financial | 2026-08-25 | $479.18 | $641.00 | +33.8% | BUY |
+| Harsh Kumar | BMO Capital Markets | 2026-08-20 | $469.46 | $550.00 | +17.2% | OUTPERFORM |
 | Jim Kelleher | Argus | 2026-08-06 | $489.28 | $625.00 | +27.7% | BUY |
 | Kevin Cassidy | Rosenblatt Securities | 2026-08-06 | $489.28 | $700.00 | +43.1% | BUY |
 | Gil Luria | DA Davidson | 2026-08-05 | $482.05 | $550.00 | +14.1% | BUY |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $482.05 | $700.00 | +45.2% | OVERWEIGHT |
-| Joseph Moore | Morgan Stanley | 2026-08-05 | $482.05 | $465.00 | -3.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

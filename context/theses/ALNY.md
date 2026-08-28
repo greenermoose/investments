@@ -112,11 +112,11 @@ ALNY currently trades at a Price-to-Sales (P/S) multiple of ~8.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-25 | $240.08 | $376.00 | +56.6% | OUTPERFORM |
+| David Lebowitz | BMO Capital Markets | 2026-08-19 | $242.61 | $318.00 | +31.1% | OUTPERFORM |
 | Derek Archila | Wells Fargo & Company | 2026-08-14 | $228.65 | $256.00 | +12.0% | BUY |
 | Danielle Brill | Truist Financial | 2026-08-04 | $219.00 | $315.00 | +43.8% | BUY |
 | Eric Joseph | Citigroup | 2026-08-03 | $220.33 | $340.00 | +54.3% | BUY |
-| Martin Auster | Raymond James Financial | 2026-08-03 | $220.33 | $420.00 | +90.6% | BUY |
-| Eliana Merle | Barclays | 2026-08-03 | $220.33 | $450.00 | +104.2% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -114,11 +114,11 @@ ETN currently trades at a Price-to-Sales (P/S) multiple of ~5.9x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Robert W. Baird Research Team | Robert W. Baird | 2026-08-20 | $416.04 | $500.00 | +20.2% | OUTPERFORM |
-| Deane Dray | Royal Bank Of Canada | 2026-08-03 | $435.45 | $512.00 | +17.6% | OUTPERFORM |
-| Andrew Kaplowitz | Citigroup | 2026-08-03 | $415.24 | $485.00 | +16.8% | BUY |
-| Evercore Research Team | Evercore | 2026-08-03 | $415.25 | $502.00 | +20.9% | OUTPERFORM |
-| Daniel DiCicco | BMO Capital Markets | 2026-08-03 | $415.25 | $487.00 | +17.3% | OUTPERFORM |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-08-20 | $415.29 | $500.00 | +20.4% | OUTPERFORM |
+| Deane Dray | Royal Bank Of Canada | 2026-08-03 | $438.23 | $512.00 | +16.8% | OUTPERFORM |
+| Andrew Kaplowitz | Citigroup | 2026-08-03 | $438.23 | $485.00 | +10.7% | BUY |
+| Evercore Research Team | Evercore | 2026-08-03 | $438.23 | $502.00 | +14.6% | OUTPERFORM |
+| Daniel DiCicco | BMO Capital Markets | 2026-08-03 | $438.23 | $487.00 | +11.1% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

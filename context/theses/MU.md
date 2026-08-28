@@ -112,11 +112,11 @@ MU currently trades at a Price-to-Sales (P/S) multiple of ~8.1x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| New Street Research Research Team | New Street Research | 2026-08-14 | $971.66 | $1250.00 | +28.6% | HOLD |
+| Vijay Rakesh | Mizuho | 2026-08-25 | $932.97 | $1300.00 | +39.3% | OUTPERFORM |
+| BMO Capital Markets Research Team | BMO Capital Markets | 2026-08-21 | $966.78 | $1300.00 | +34.5% | OUTPERFORM |
+| Pierre Ferragu | New Street Research | 2026-08-14 | $971.66 | $1250.00 | +28.6% | HOLD |
 | Atif Malik | Citigroup | 2026-08-07 | $877.57 | $1150.00 | +31.0% | BUY |
 | Gil Luria | DA Davidson | 2026-06-25 | $1213.56 | $2000.00 | +64.8% | BUY |
-| N. Quinn | Needham & Company LLC | 2026-06-25 | $1213.56 | $1650.00 | +36.0% | BUY |
-| Chris Caso | Wolfe Research | 2026-06-25 | $1213.56 | $1500.00 | +23.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

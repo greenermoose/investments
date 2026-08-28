@@ -112,11 +112,11 @@ HD currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| W. Andrew Carter | Stifel Nicolaus | 2026-08-17 | $337.88 | $340.00 | +0.6% | HOLD |
-| Steven Shemesh | Royal Bank Of Canada | 2026-08-12 | $343.43 | $343.00 | -0.1% | BUY |
-| Zhihan Ma | Sanford C. Bernstein | 2026-08-12 | $343.43 | $344.00 | +0.2% | BUY |
-| Zachary Fadem | Wells Fargo & Company | 2026-08-11 | $354.48 | $400.00 | +12.8% | OVERWEIGHT |
-| Michael Baker | DA Davidson | 2026-07-27 | $336.09 | $377.00 | +12.2% | BUY |
+| Michael Lasser | UBS Group | 2026-08-19 | $344.30 | $420.00 | +22.0% | BUY |
+| Zhihan Ma | Sanford C. Bernstein | 2026-08-19 | $344.30 | $354.00 | +2.8% | BUY |
+| Scot Ciccarelli | Truist Financial | 2026-08-19 | $344.30 | $373.00 | +8.3% | BUY |
+| David Bellinger | Mizuho | 2026-08-19 | $344.30 | $390.00 | +13.3% | OUTPERFORM |
+| Michael Baker | DA Davidson | 2026-08-19 | $344.30 | $377.00 | +9.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

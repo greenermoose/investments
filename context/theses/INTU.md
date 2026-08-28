@@ -112,11 +112,11 @@ INTU currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Siti Panigrahi | Mizuho | 2026-08-17 | $335.60 | $430.00 | +28.1% | OUTPERFORM |
-| Steven Enders | Citigroup | 2026-08-13 | $358.29 | $457.00 | +27.6% | BUY |
-| Jared Levine | TD Cowen | 2026-08-11 | $336.44 | $328.00 | -2.5% | HOLD |
-| Arvind Ramnani | Truist Financial | 2026-08-03 | $318.39 | $350.00 | +9.9% | HOLD |
-| Keith Weiss | Morgan Stanley | 2026-07-21 | $289.92 | $335.00 | +15.6% | OVERWEIGHT |
+| Taylor McGinnis | UBS Group | 2026-08-27 | $348.00 | $370.00 | +6.3% | BUY |
+| Kash Rangan | The Goldman Sachs Group | 2026-08-26 | $345.88 | $304.00 | -12.1% | SELL |
+| Alex Markgraff | KeyCorp | 2026-08-26 | $345.88 | $400.00 | +15.7% | BUY |
+| James Friedman | Susquehanna | 2026-08-26 | $345.88 | $415.00 | +20.0% | BUY |
+| Brad Reback | Stifel Nicolaus | 2026-08-26 | $345.88 | $300.00 | -13.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

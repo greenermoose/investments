@@ -112,11 +112,11 @@ LLY currently trades at a Price-to-Sales (P/S) multiple of ~17.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Michael Yee | UBS Group | 2026-08-07 | $1177.48 | $1376.00 | +16.9% | BUY |
-| Robyn Karnauskas | Truist Financial | 2026-08-07 | $1180.41 | $1376.00 | +16.6% | BUY |
-| Terence Flynn | Morgan Stanley | 2026-08-06 | $1170.31 | $1419.00 | +21.2% | OVERWEIGHT |
-| Mohit Bansal | Wells Fargo & Company | 2026-08-06 | $1170.26 | $1330.00 | +13.7% | OVERWEIGHT |
-| BMO Capital Markets Research Team | BMO Capital Markets | 2026-08-06 | $1170.28 | $1400.00 | +19.6% | OUTPERFORM |
+| Michael Yee | UBS Group | 2026-08-07 | $1185.71 | $1376.00 | +16.1% | BUY |
+| Robyn Karnauskas | Truist Financial | 2026-08-07 | $1185.71 | $1376.00 | +16.1% | BUY |
+| Terence Flynn | Morgan Stanley | 2026-08-06 | $1191.94 | $1419.00 | +19.1% | OVERWEIGHT |
+| Mohit Bansal | Wells Fargo & Company | 2026-08-06 | $1191.94 | $1330.00 | +11.6% | OVERWEIGHT |
+| BMO Capital Markets Research Team | BMO Capital Markets | 2026-08-06 | $1191.94 | $1400.00 | +17.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

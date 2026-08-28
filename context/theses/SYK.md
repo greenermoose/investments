@@ -112,11 +112,11 @@ SYK currently trades at a Price-to-Sales (P/S) multiple of ~4.9x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| David Turkaly | Citizens Jmp | 2026-08-03 | $335.77 | $400.00 | +19.1% | OUTPERFORM |
-| Kendall Au | Royal Bank Of Canada | 2026-07-31 | $320.78 | $420.00 | +30.9% | OUTPERFORM |
-| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $320.76 | $370.00 | +15.3% | BUY |
-| Matt O'Brien | Piper Sandler | 2026-07-31 | $348.37 | $390.00 | +11.9% | OVERWEIGHT |
-| Robbie Marcus | JPMorgan Chase & Co. | 2026-07-31 | $324.95 | $350.00 | +7.7% | OVERWEIGHT |
+| David Turkaly | Citizens Jmp | 2026-08-03 | $341.20 | $400.00 | +17.2% | OUTPERFORM |
+| Kendall Au | Royal Bank Of Canada | 2026-07-31 | $325.70 | $420.00 | +28.9% | OUTPERFORM |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $325.70 | $370.00 | +13.6% | BUY |
+| Matt O'Brien | Piper Sandler | 2026-07-31 | $325.70 | $390.00 | +19.7% | OVERWEIGHT |
+| Robbie Marcus | JPMorgan Chase & Co. | 2026-07-31 | $325.70 | $350.00 | +7.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

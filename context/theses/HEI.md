@@ -1,4 +1,4 @@
-# Investment Thesis Dossier: HEI - HEI Corporation
+# Investment Thesis Dossier: HEI - HEICO Corporation
 
 ## Summary & Key Metrics
 - **Ticker:** HEI
@@ -6,120 +6,124 @@
 - **Entry Date:** 2026-08-17
 - **Benchmark Entry Price:** $337.01 per share
 - **Current Price:** $337.01 per share
-- **Target Exit Price:** $415.99 per share
+- **Target Exit Price:** $380.08 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.2 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
+- **Conviction Score:** 8.0 / 10.0
+- **Rating:** SELL
+- **Target Strategy:** Capital Reallocation & Controlled Limit Exit
 - **Listing Structure:** US COMMON STOCK
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=46619
 
 ## Business Profile
-HEI Corporation operates within the Information Technology sector, specializing in US Public Equity. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+HEICO Corporation is a premier manufacturer of FAA-approved alternative replacement aircraft parts (Parts Manufacturer Approval / PMA) and mission-critical defense, space, and electronic components. Through its Flight Support Group (FSG) and Electronic Technologies Group (ETG), HEICO supplies virtually every commercial airline and major defense contractor worldwide.
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+HEICO maintains an exceptional competitive moat by reverse-engineering high-cost OEM aerospace replacement parts and securing rigorous FAA-PMA certifications, offering airlines 30% to 50% cost savings without compromising safety. Its disciplined, family-led acquisition model targets niche sole-source manufacturers, generating high returns on invested capital and consistent, double-digit annual compounding for over three decades.
 
 ## Total Addressable Market & Market Share
-HEI Corporation addresses an estimated Total Addressable Market (TAM) of $116.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+HEICO Corporation addresses an estimated Total Addressable Market (TAM) of $750.0B across its primary Industrials domains, expanding at a ~5.0% CAGR. The company currently captures an estimated 1.0% market share. Over our 3-year investment horizon, we model market share evolving to 1.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+HEICO Corporation maintains an exceptional competitive moat by reverse-engineering high-cost OEM aircraft replacement parts and securing rigorous FAA Parts Manufacturer Approval (PMA) certifications. HEICO offers commercial airlines identical reliability and safety at 30% to 50% discounts to OEM pricing, creating compelling customer ROI while earning high gross margins. High FAA certification barriers, thousands of proprietary PMA parts, and a disciplined acquisition track record of niche sole-source defense suppliers protect HEICO's multi-decade double-digit cash flow compounding.
 
 ## Anticipated Catalysts & Timeline
-HEI Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.07B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.08B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+HEICO Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.02B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.03B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-HEI Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $1.93B in cash & equivalents against $1.54B in total debt (net balance: $+0.39B). Anticipated annual CapEx and operational capital requirements of ~$0.39B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+HEICO Corporation operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($5.39/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$1.2B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $0.92B in cash & equivalents against $3.47B in total debt (net balance: $-2.55B). Anticipated annual CapEx and operational capital requirements of ~$0.62B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
-| Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $1.54 B Debt vs $1.93 B Cash | Net: $+0.39 B | Conservative debt profile of $1.54B debt vs $1.93B cash & equivalents (Net balance: $+0.39B). |
-| Capital Needs & Runway | CAPEX_AND_RD | ~$0.39 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Dividends Declared & Paid | PAYING | $5.39 / share | 1.60% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $5.39/share (1.60% yield, ~38% payout ratio) with +7.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $1.2 B | -1.0% / yr | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $3.47 B Debt vs $0.92 B Cash | Net: $-2.55 B | Conservative debt profile of $3.47B debt vs $0.92B cash & equivalents (Net balance: $-2.55B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$0.62 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-HEI Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.96B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+HEICO Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $0.09B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~12.5% of TTM Revenue | $0.96 B / yr | PARTIAL_OFFSET | Risk: MODERATE |
-| Gross vs Net Dilution Rate | Gross: +1.7% / yr | Net: +0.5% / yr | SBC_DILUTIVE | Dilution Drag |
-| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
-| Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $0.09 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
+| Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
+| Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-HEI Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
+HEICO Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $1.69 B (Gap: $-0.12 B) | ~$0.05 B / yr | HEICO Corporation sponsors defined benefit pension plans with $1.69B in gross PB... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.93 B | Take-or-Pay: $0.58 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
-1. **Trigger 1:** Structural failure to capture projected market share within the $116.0B addressable market.
+1. **Trigger 1:** Structural failure to capture projected market share within the $750.0B addressable market.
 2. **Trigger 2:** Operating margins compress by more than 400 basis points across two consecutive quarters.
 3. **Trigger 3:** Unanticipated cancellation or material commercial delay of key catalyst product rollouts.
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-HEI Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+HEICO Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-HEI currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
+HEI currently trades at a Price-to-Sales (P/S) multiple of ~6.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.1%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.94 B | +1.8% | 0.140 B | 6.11x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.10 B | +23.1% | 0.140 B | 6.06x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.95 B | +6.7% | 0.140 B | 6.01x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.09 B | +6.7% | 0.140 B | 5.96x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.23 B | +15.0% | 0.140 B | 5.90x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.43 B | +15.8% | 0.140 B | 5.85x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.27 B | +16.4% | 0.141 B | 5.80x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.42 B | +15.6% | 0.141 B | 5.75x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.55 B | +14.2% | 0.141 B | 5.70x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.73 B | +12.5% | 0.141 B | 5.65x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.53 B | +11.3% | 0.141 B | 5.60x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.67 B | +10.2% | 0.141 B | 5.55x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.81 B | +10.3% | 0.142 B | 5.50x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.94 B | -2.3% | 0.140 B | 6.11x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.07 B | +17.7% | 0.139 B | 6.07x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.89 B | +1.5% | 0.139 B | 6.03x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.99 B | +1.3% | 0.138 B | 5.99x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.08 B | +7.3% | 0.138 B | 5.94x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.23 B | +7.6% | 0.138 B | 5.90x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.04 B | +7.9% | 0.137 B | 5.86x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.14 B | +7.5% | 0.137 B | 5.82x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.23 B | +7.3% | 0.137 B | 5.78x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.37 B | +6.3% | 0.136 B | 5.74x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.16 B | +5.8% | 0.136 B | 5.70x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.25 B | +5.3% | 0.136 B | 5.66x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.35 B | +5.5% | 0.135 B | 5.62x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 140 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| 26 Weeks (2Q) | 140 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| 39 Weeks (3Q) | 141 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| 52 Weeks (1Y) | 141 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| 104 Weeks (2Y) | 141 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| 156 Weeks (3Y) | 142 M | +0.5% | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
+| 13 Weeks (1Q) | 140 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 26 Weeks (2Q) | 139 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 39 Weeks (3Q) | 139 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 52 Weeks (1Y) | 139 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 104 Weeks (2Y) | 137 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 156 Weeks (3Y) | 136 M | -1.0% | Management utilizes moderate share buybacks (~$1.2B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $287.52 | $359.40 | $431.28 | 6.0x | +29.3% |
-| 52 Weeks (1Y) | $282.66 | $353.33 | $424.00 | 5.9x | +4.8% |
-| 104 Weeks (2Y) | $312.73 | $390.91 | $469.09 | 5.7x | +7.7% |
-| 156 Weeks (3Y) | $332.79 | $415.99 | $499.19 | 5.5x | +7.3% |
+| 13 Weeks | $285.45 | $356.81 | $428.17 | 6.0x | +25.7% |
+| 52 Weeks (1Y) | $276.98 | $346.22 | $415.46 | 6.0x | +2.7% |
+| 104 Weeks (2Y) | $291.62 | $364.52 | $437.42 | 5.8x | +4.0% |
+| 156 Weeks (3Y) | $304.06 | $380.08 | $456.10 | 5.6x | +4.1% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Consensus Model | Wall Street Consensus | 2026-08-10 | $337.01 | $415.99 | +23.4% | HOLD |
+| Stifel Nicolaus Research Team | Stifel Nicolaus | 2026-08-27 | $337.01 | $410.00 | +21.7% | BUY |
+| Gavin Parsons | UBS Group | 2026-08-27 | $337.01 | $396.00 | +17.5% | HOLD |
+| Sheila Kahyaoglu | Jefferies Financial Group | 2026-08-26 | $346.15 | $430.00 | +24.2% | BUY |
+| Scott Deuschle | Deutsche Bank Aktiengesellschaft | 2026-08-19 | $363.42 | $421.00 | +15.8% | BUY |
+| John Godyn | Citigroup | 2026-08-13 | $371.56 | $429.00 | +15.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Information Technology Next-Generation Commercial Product Rollout | $0.05 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.07 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.08 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Industrials Next-Generation Commercial Product Rollout | $0.02 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.03 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.04 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 

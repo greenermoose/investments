@@ -112,11 +112,11 @@ NVDA currently trades at a Price-to-Sales (P/S) multiple of ~25.7x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-11 | $217.50 | $315.00 | +44.8% | OVERWEIGHT |
-| John Vinh | KeyCorp | 2026-07-14 | $211.80 | $330.00 | +55.8% | OVERWEIGHT |
-| Itau BBA Securities Research Team | Itau BBA Securities | 2026-06-24 | $199.00 | $218.00 | +9.6% | BUY |
-| Jack Zhou | China Renaissance | 2026-06-05 | $205.10 | $319.00 | +55.5% | BUY |
-| N. Quinn | Needham & Company LLC | 2026-06-02 | $222.82 | $270.00 | +21.2% | BUY |
+| Mark Lipacis | Evercore | 2026-08-27 | $227.98 | $465.00 | +104.0% | OUTPERFORM |
+| Simon Leopold | Raymond James Financial | 2026-08-27 | $227.98 | $515.00 | +125.9% | BUY |
+| Timothy Arcuri | UBS Group | 2026-08-27 | $227.98 | $300.00 | +31.6% | BUY |
+| Joseph Moore | Morgan Stanley | 2026-08-27 | $227.98 | $300.00 | +31.6% | OVERWEIGHT |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-08-27 | $227.98 | $400.00 | +75.5% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

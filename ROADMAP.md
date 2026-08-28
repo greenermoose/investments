@@ -10,7 +10,7 @@ gantt
     dateFormat  YYYY-MM-DD
     section Completed Foundations
     Portfolio Ingestion & State Normalizer   :done, f1, 2026-08-15, 2026-08-17
-    150-Dossier Investment Thesis Engine    :done, f2, 2026-08-15, 2026-08-18
+    200-Dossier Investment Thesis Engine    :done, f2, 2026-08-15, 2026-08-18
     SEC EDGAR & Tier 1 Data Pipelines       :done, f3, 2026-08-15, 2026-08-18
     Return Engine & Multi-Horizon Modeling  :done, f4, 2026-08-16, 2026-08-18
     Black-Scholes & Derivatives Pricer      :done, f5, 2026-08-16, 2026-08-18
@@ -27,7 +27,7 @@ gantt
     section Phase 7: Macro & Thematic Store
     Persistent Factual Store (context/trends/)   :p7_1, 2026-09-01, 7d
     Valuation & Multiple Bridge Integration      :p7_2, after p7_1, 6d
-    section Phase 8: 150 Universe Deepening
+    section Phase 8: 200 Universe Deepening
     Inflection Point & Holding Period Sync       :p8_1, 2026-09-10, 8d
     Multi-Cycle Empirical Validation             :p8_2, after p8_1, 6d
     section Phase 9: Market-Wide Scaling

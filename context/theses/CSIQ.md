@@ -56,10 +56,10 @@ Canadian Solar Inc.'s off-balance sheet liabilities consist of standard regulate
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $6.67 B (Gap: $-0.67 B) | ~$0.20 B / yr | Canadian Solar Inc. sponsors utility and industrial defined benefit plans ($6.67... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $12.00 B (12 Sites) | ~$0.72 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $1.4 B (Gap: $-0.14 B) | ~$0.04 B / yr | Canadian Solar Inc. sponsors utility and industrial defined benefit plans ($1.40... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $2.52 B (12 Sites) | ~$0.15 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
 | Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $13.34 B | Take-or-Pay: $8.00 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.80 B | Take-or-Pay: $1.68 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
 
 **Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
 
@@ -114,8 +114,8 @@ CSIQ currently trades at a Price-to-Sales (P/S) multiple of ~0.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Vikram Bagri | Citigroup | 2026-07-22 | $15.40 | $18.00 | +16.9% | HOLD |
-| Maheep Mandloi | Mizuho | 2026-06-15 | $16.88 | $18.00 | +6.6% | HOLD |
+| Maheep Mandloi | Mizuho | 2026-08-28 | $13.98 | $17.00 | +21.6% | HOLD |
+| Gordon L. Johnson | Glj Research | 2026-08-27 | $13.98 | $5.58 | -60.1% | SELL |
 | Praneeth Satish | Wells Fargo & Company | 2026-04-08 | $12.53 | $17.00 | +35.7% | BUY |
 | Philip Shen | Roth Capital | 2026-03-23 | $13.11 | $15.00 | +14.4% | HOLD |
 | Colin Rusch | Oppenheimer | 2026-03-20 | $14.26 | $19.00 | +33.2% | OUTPERFORM |

@@ -112,11 +112,11 @@ MPWR currently trades at a Price-to-Sales (P/S) multiple of ~23.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Arete Research Research Team | Arete Research | 2026-08-20 | $1310.60 | $2013.00 | +53.6% | BUY |
 | N. Quinn | Needham & Company LLC | 2026-07-31 | $1426.03 | $2000.00 | +40.2% | BUY |
 | Joe Quatrochi | Wells Fargo & Company | 2026-07-31 | $1426.03 | $1800.00 | +26.2% | OVERWEIGHT |
 | William Stein | Truist Financial | 2026-07-31 | $1426.03 | $1889.00 | +32.5% | BUY |
 | Kevin Cassidy | Rosenblatt Securities | 2026-07-31 | $1426.03 | $1575.00 | +10.4% | HOLD |
-| John Vinh | KeyCorp | 2026-07-31 | $1426.03 | $2100.00 | +47.3% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ ADI currently trades at a Price-to-Sales (P/S) multiple of ~16.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Matthew Prisco | Cantor Fitzgerald | 2026-08-17 | $390.28 | $550.00 | +40.9% | OVERWEIGHT |
-| John Vinh | KeyCorp | 2026-07-14 | $392.75 | $525.00 | +33.7% | OVERWEIGHT |
-| Joshua Buchalter | TD Cowen | 2026-07-13 | $386.01 | $460.00 | +19.2% | BUY |
-| Fundamental Research Research Team | Fundamental Research | 2026-06-29 | $391.78 | $550.00 | +40.4% | BUY |
-| Tore Svanberg | Stifel Nicolaus | 2026-06-24 | $413.16 | $498.00 | +20.5% | BUY |
+| Tristan Gerra | Robert W. Baird | 2026-08-24 | $371.17 | $675.00 | +81.9% | OUTPERFORM |
+| Harsh Kumar | BMO Capital Markets | 2026-08-20 | $370.24 | $430.00 | +16.1% | OUTPERFORM |
+| Joseph Moore | Morgan Stanley | 2026-08-20 | $370.24 | $458.00 | +23.7% | OVERWEIGHT |
+| Joe Quatrochi | Wells Fargo & Company | 2026-08-20 | $370.24 | $500.00 | +35.0% | OVERWEIGHT |
+| Harlan Sur | JPMorgan Chase & Co. | 2026-08-20 | $370.24 | $500.00 | +35.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

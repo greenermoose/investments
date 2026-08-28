@@ -112,11 +112,11 @@ SPGI currently trades at a Price-to-Sales (P/S) multiple of ~8.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ashish Sabadra | Royal Bank Of Canada | 2026-08-26 | $433.19 | $510.00 | +17.7% | OUTPERFORM |
-| Andrew Steinerman | JPMorgan Chase & Co. | 2026-07-29 | $421.61 | $530.00 | +25.7% | OVERWEIGHT |
-| Peter Christiansen | Citigroup | 2026-07-29 | $419.01 | $500.00 | +19.3% | BUY |
-| Manav Patnaik | Barclays | 2026-07-29 | $423.56 | $553.00 | +30.6% | OVERWEIGHT |
-| Jeffrey Meuler | Robert W. Baird | 2026-07-29 | $423.55 | $513.00 | +21.1% | OUTPERFORM |
+| Ashish Sabadra | Royal Bank Of Canada | 2026-08-26 | $436.49 | $510.00 | +16.8% | OUTPERFORM |
+| Andrew Steinerman | JPMorgan Chase & Co. | 2026-07-29 | $419.64 | $530.00 | +26.3% | OVERWEIGHT |
+| Peter Christiansen | Citigroup | 2026-07-29 | $419.64 | $500.00 | +19.1% | BUY |
+| Manav Patnaik | Barclays | 2026-07-29 | $419.64 | $553.00 | +31.8% | OVERWEIGHT |
+| Jeffrey Meuler | Robert W. Baird | 2026-07-29 | $419.64 | $513.00 | +22.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

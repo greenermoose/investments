@@ -114,11 +114,11 @@ SHOP currently trades at a Price-to-Sales (P/S) multiple of ~17.4x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Paul Treiber | Royal Bank Of Canada | 2026-08-26 | $150.29 | $180.00 | +19.8% | OUTPERFORM |
+| Scott Devitt | Rosenblatt Securities | 2026-08-20 | $147.18 | $175.00 | +18.9% | BUY |
 | Ken Gawrelski | Wells Fargo & Company | 2026-08-07 | $151.57 | $180.00 | +18.8% | OVERWEIGHT |
 | Gil Luria | DA Davidson | 2026-08-06 | $147.44 | $200.00 | +35.6% | BUY |
-| Paul Treiber | Royal Bank Of Canada | 2026-08-06 | $147.44 | $180.00 | +22.1% | OUTPERFORM |
 | Timothy Chiodo | UBS Group | 2026-08-06 | $147.44 | $145.00 | -1.6% | HOLD |
-| Trevor Young | Barclays | 2026-08-06 | $147.44 | $145.00 | -1.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

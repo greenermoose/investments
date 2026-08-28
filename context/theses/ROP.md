@@ -112,9 +112,9 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Deane Dray | Royal Bank Of Canada | 2026-08-18 | $394.17 | $417.00 | +5.8% | BUY |
 | John Eade | Argus | 2026-08-06 | $397.08 | $450.00 | +13.3% | HOLD |
 | Chigusa Katoku | JPMorgan Chase & Co. | 2026-07-29 | $408.07 | $415.00 | +1.7% | UNDERPERFORM |
-| Deane Dray | Royal Bank Of Canada | 2026-07-24 | $367.34 | $417.00 | +13.5% | BUY |
 | Jon Vruwink | Robert W. Baird | 2026-07-24 | $367.34 | $480.00 | +30.7% | BUY |
 | Clarke Jeffries | Piper Sandler | 2026-07-24 | $367.34 | $526.00 | +43.2% | OVERWEIGHT |
 

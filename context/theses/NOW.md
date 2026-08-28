@@ -1,4 +1,4 @@
-# Investment Thesis Dossier: NOW - NOW Corporation
+# Investment Thesis Dossier: NOW - ServiceNow, Inc.
 
 ## Summary & Key Metrics
 - **Ticker:** NOW
@@ -15,21 +15,21 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1373715
 
 ## Business Profile
-NOW Corporation operates within the Information Technology sector, specializing in US Public Equity. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+ServiceNow, Inc. operates the premier cloud-based digital workflow platform that orchestrates end-to-end enterprise operations across IT service management (ITSM), IT operations management (ITOM), customer service management (CSM), and human resources service delivery (HRSD). The company's unified Now Platform connects disparate enterprise legacy systems, enabling organizations to automate complex cross-functional workflows, modernize service operations, and monetize via high-margin SaaS subscriptions and consumption tiers.
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+ServiceNow maintains a formidable competitive moat driven by high switching costs and pervasive workflow entrenchment across more than 85% of the Fortune 500. The platform's proprietary single-data-model architecture (Common Service Data Model) creates unmatched operating efficiencies and customer renewal rates exceeding 98%. Management is accelerating growth by embedding generative AI capabilities (Now Assist) across all workflow workflows, expanding Pro Plus premium tier adoption, and deepening strategic partnerships with enterprise cloud and hardware leaders.
 
 ## Total Addressable Market & Market Share
-NOW Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+ServiceNow, Inc. addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 1.1% market share. Over our 3-year investment horizon, we model market share evolving to 1.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+ServiceNow maintains an exceptionally wide economic moat characterized by high customer switching costs and mission-critical enterprise workflow entrenchment across more than 85% of the Fortune 500. Organizations standardize core IT, employee, and customer workflows on the unified Now Platform, making displacement extremely complex, costly, and operationally disruptive. The platform's proprietary Common Service Data Model (CSDM) enables seamless cross-functional data orchestration, sustaining customer renewal rates exceeding 98% and driving steady annual contract expansion as enterprises consolidate point solutions onto ServiceNow.
 
 ## Anticipated Catalysts & Timeline
-NOW Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.20B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.23B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+ServiceNow, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.20B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.23B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-NOW Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~1.0% per year due to employee stock compensation. Balance sheet liquidity is supported by $3.32B in cash & equivalents against $2.66B in total debt (net balance: $+0.66B). Anticipated annual CapEx and operational capital requirements of ~$0.66B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+ServiceNow, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~1.0% per year due to employee stock compensation. Balance sheet liquidity is supported by $3.32B in cash & equivalents against $2.66B in total debt (net balance: $+0.66B). Anticipated annual CapEx and operational capital requirements of ~$0.66B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ NOW Corporation operates under a reinvestment for growth capital strategy. The c
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-NOW Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.66B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +2.2% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.0%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+ServiceNow, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.66B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +2.2% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.0%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,16 +50,16 @@ NOW Corporation utilizes equity-based compensation as a core talent recruitment 
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-NOW Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
+ServiceNow, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | ServiceNow, Inc. operates zero defined benefit pension plans or retiree healthca... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | ServiceNow, Inc. has zero legacy manufacturing, toxic chemical, or federal Super... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $4.65 B | Take-or-Pay: $1.40 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -69,7 +69,7 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-NOW Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +19.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+ServiceNow, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +19.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
 NOW currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~9.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 14.6%, fully justifying our HOLD rating.
@@ -112,7 +112,11 @@ NOW currently trades at a Price-to-Sales (P/S) multiple of ~10.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Consensus Model | Wall Street Consensus | 2026-08-10 | $138.43 | $195.77 | +41.4% | HOLD |
+| Tal Liani | Bank of America | 2026-08-19 | $127.20 | $150.00 | +17.9% | BUY |
+| Derrick Wood | TD Cowen | 2026-08-17 | $117.70 | $140.00 | +18.9% | BUY |
+| Michael Turrin | Wells Fargo & Company | 2026-08-12 | $124.94 | $175.00 | +40.1% | OVERWEIGHT |
+| Kirk Materne | Evercore | 2026-07-23 | $91.94 | $160.00 | +74.0% | OUTPERFORM |
+| Karl Keirstead | UBS Group | 2026-07-23 | $91.94 | $248.00 | +169.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

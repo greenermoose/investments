@@ -99,5 +99,41 @@
   "primary_exchange": "US Exchange",
   "adr_ratio": null,
   "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  "depositary_bank": null,
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "MODERATE",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 2.93,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.11,
+      "pbo_gross_usd_b": 1.53,
+      "plan_assets_usd_b": 1.42,
+      "annual_cash_contribution_usd_b": 0.05,
+      "underfunding_risk_level": "MODERATE",
+      "opeb_unfunded_usd_b": 0.28,
+      "narrative": "Copart, Inc. sponsors defined benefit pension plans with $1.53B in gross PBO against $1.42B in assets ($-0.11B net gap) and $0.28B in unfunded OPEB."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.3,
+      "estimated_unreserved_exposure_usd_b": 0.15,
+      "superfund_and_pfas_sites_count": 6,
+      "annual_remediation_cash_drain_usd_b": 0.03,
+      "risk_level": "LOW",
+      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
+      "recent_settlements_scheduled_usd_b": 0.3,
+      "annual_legal_settlement_cash_drain_usd_b": 0.04,
+      "catastrophic_loss_risk_level": "LOW",
+      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 1.74,
+      "take_or_pay_commitments_usd_b": 0.52,
+      "jv_and_vie_debt_guarantees_usd_b": 0.2,
+      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $1.74B."
+    },
+    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
+    "narrative": "Copart, Inc. manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
+  }
 }

@@ -112,11 +112,11 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Joseph Civello | Truist Financial | 2026-08-26 | $38.59 | $42.00 | +8.8% | HOLD |
+| Piral Dadhania | Royal Bank Of Canada | 2026-08-25 | $39.48 | $45.00 | +14.0% | BUY |
 | Matthew Boss | JPMorgan Chase & Co. | 2026-08-04 | $41.53 | $40.00 | -3.7% | HOLD |
 | Nick Anderson | Sanford C. Bernstein | 2026-07-29 | $43.22 | $68.00 | +57.3% | OUTPERFORM |
 | Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-07-17 | $43.76 | $37.00 | -15.4% | SELL |
-| Krisztina Katai | Deutsche Bank Aktiengesellschaft | 2026-07-17 | $43.76 | $45.00 | +2.8% | HOLD |
-| Nick Anderson | Berenberg Bank | 2026-07-03 | $44.09 | $49.00 | +11.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ MCD currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| John Staszak | Argus | 2026-08-26 | $266.93 | $310.00 | +16.1% | BUY |
 | Gregory Francfort | Guggenheim | 2026-08-05 | $274.00 | $290.00 | +5.8% | HOLD |
 | Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-05 | $274.00 | $295.00 | +7.7% | BUY |
 | Dennis Geiger | UBS Group | 2026-08-05 | $274.00 | $305.00 | +11.3% | BUY |
 | Jon Tower | Citigroup | 2026-08-05 | $274.00 | $345.00 | +25.9% | BUY |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-08-05 | $274.00 | $345.00 | +25.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

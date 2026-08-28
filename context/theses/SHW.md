@@ -112,11 +112,11 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Garik Shmois | DA Davidson | 2026-08-24 | $346.73 | $400.00 | +15.4% | BUY |
 | Steven Forbes | Guggenheim | 2026-08-03 | $354.22 | $400.00 | +12.9% | BUY |
 | Duffy Fischer | The Goldman Sachs Group | 2026-07-29 | $343.88 | $420.00 | +22.1% | BUY |
 | John McNulty | BMO Capital Markets | 2026-07-29 | $343.88 | $405.00 | +17.8% | OUTPERFORM |
 | Joshua Spector | UBS Group | 2026-07-29 | $343.88 | $390.00 | +13.4% | HOLD |
-| Michael Sison | Wells Fargo & Company | 2026-07-29 | $343.88 | $360.00 | +4.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

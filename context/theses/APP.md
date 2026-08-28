@@ -112,11 +112,11 @@ APP currently trades at a Price-to-Sales (P/S) multiple of ~18.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Bernie McTernan | Needham & Company LLC | 2026-08-26 | $308.11 | $475.00 | +54.2% | BUY |
+| James Callahan | Piper Sandler | 2026-08-21 | $305.77 | $325.00 | +6.3% | HOLD |
+| Alec Brondolo | Wells Fargo & Company | 2026-08-19 | $310.79 | $325.00 | +4.6% | BUY |
 | William Blair Research Team | William Blair | 2026-08-17 | $311.98 | $440.00 | +41.0% | BUY |
 | Mike Hickey | Benchmark | 2026-08-17 | $311.98 | $440.00 | +41.0% | BUY |
-| Clark Lampen | BTIG Research | 2026-08-12 | $303.76 | $408.00 | +34.3% | BUY |
-| Omar Dessouky | Bank of America | 2026-08-11 | $318.68 | $400.00 | +25.5% | HOLD |
-| Jason Bazinet | Citigroup | 2026-08-07 | $346.80 | $650.00 | +87.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

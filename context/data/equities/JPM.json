@@ -99,5 +99,41 @@
   "primary_exchange": "US Exchange",
   "adr_ratio": null,
   "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  "depositary_bank": null,
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 22.75,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.36,
+      "pbo_gross_usd_b": 18.24,
+      "plan_assets_usd_b": 17.88,
+      "annual_cash_contribution_usd_b": 0.36,
+      "underfunding_risk_level": "MINIMAL",
+      "opeb_unfunded_usd_b": 0.2,
+      "narrative": "JPMorgan Chase & Co. maintains well-funded legacy defined benefit pension plans ($18.24B PBO vs $17.88B assets) with strong institutional risk-matching asset allocation."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "JPMorgan Chase & Co. has zero industrial contamination or Superfund remediation liabilities."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine regulatory compliance exams, consumer financial protection inquiries, interchange fee litigation, and mortgage servicing dockets.",
+      "recent_settlements_scheduled_usd_b": 0.8,
+      "annual_legal_settlement_cash_drain_usd_b": 0.12,
+      "catastrophic_loss_risk_level": "LOW",
+      "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 21.89,
+      "take_or_pay_commitments_usd_b": 0.2,
+      "jv_and_vie_debt_guarantees_usd_b": 1.5,
+      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $21.89B."
+    },
+    "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
+    "narrative": "JPMorgan Chase & Co.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."
+  }
 }

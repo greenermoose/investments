@@ -112,8 +112,11 @@ CAVA currently trades at a Price-to-Sales (P/S) multiple of ~11.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Brian Harbour | Morgan Stanley | 2026-08-14 | $74.42 | $90.00 | +20.9% | OVERWEIGHT |
-| John Ivankoe | JPMorgan | 2026-08-08 | $62.42 | $88.00 | +41.0% | OVERWEIGHT |
+| Matt Curtis | DA Davidson | 2026-08-13 | $72.18 | $75.00 | +3.9% | HOLD |
+| Gregory Francfort | Guggenheim | 2026-08-13 | $72.18 | $95.00 | +31.6% | BUY |
+| Nick Setyan | Mizuho | 2026-08-12 | $69.47 | $70.00 | +0.8% | HOLD |
+| Margaret-May Binshtok | Wolfe Research | 2026-08-12 | $69.47 | $82.00 | +18.0% | OUTPERFORM |
+| Andrew M. | TD Cowen | 2026-08-12 | $69.47 | $85.00 | +22.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

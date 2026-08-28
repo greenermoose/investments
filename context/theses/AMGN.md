@@ -112,11 +112,11 @@ AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| David Amsellem | Piper Sandler | 2026-08-20 | $433.73 | $457.00 | +5.4% | OVERWEIGHT |
+| Terence Flynn | Morgan Stanley | 2026-08-19 | $442.36 | $362.00 | -18.2% | OVERWEIGHT |
+| Jasper Hellweg | Argus | 2026-08-19 | $442.36 | $460.00 | +4.0% | BUY |
 | Carter Gould | Cantor Fitzgerald | 2026-08-18 | $425.28 | $400.00 | -5.9% | HOLD |
 | Salim Syed | Mizuho | 2026-08-18 | $425.28 | $352.00 | -17.2% | HOLD |
-| Emily Field | Barclays | 2026-08-14 | $415.21 | $380.00 | -8.5% | BUY |
-| Vamil Divan | Guggenheim | 2026-08-10 | $417.20 | $388.00 | -7.0% | HOLD |
-| Geoff Meacham | Citigroup | 2026-08-07 | $410.95 | $405.00 | -1.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ DE currently trades at a Price-to-Sales (P/S) multiple of ~2.5x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Jamie Cook | Truist Financial | 2026-08-24 | $656.22 | $804.00 | +22.5% | BUY |
-| Adam Seiden | Barclays | 2026-08-24 | $648.60 | $675.00 | +4.1% | OVERWEIGHT |
-| Michael Shlisky | DA Davidson | 2026-08-24 | $655.06 | $760.00 | +16.0% | BUY |
-| Sabahat Khan | Royal Bank Of Canada | 2026-08-24 | $648.00 | $752.00 | +16.1% | OUTPERFORM |
-| Steven Fisher | UBS Group | 2026-08-21 | $624.36 | $728.00 | +16.6% | BUY |
+| Jamie Cook | Truist Financial | 2026-08-24 | $648.64 | $804.00 | +23.9% | BUY |
+| Adam Seiden | Barclays | 2026-08-24 | $648.64 | $675.00 | +4.1% | OVERWEIGHT |
+| Michael Shlisky | DA Davidson | 2026-08-24 | $648.64 | $760.00 | +17.2% | BUY |
+| Sabahat Khan | Royal Bank Of Canada | 2026-08-24 | $648.64 | $752.00 | +15.9% | OUTPERFORM |
+| Steven Fisher | UBS Group | 2026-08-21 | $647.47 | $728.00 | +12.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

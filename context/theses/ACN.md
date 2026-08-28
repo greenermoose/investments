@@ -1,4 +1,4 @@
-# Investment Thesis Dossier: ACN - ACN Corporation
+# Investment Thesis Dossier: ACN - Accenture plc
 
 ## Summary & Key Metrics
 - **Ticker:** ACN
@@ -15,21 +15,21 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1467373
 
 ## Business Profile
-ACN Corporation operates within the Information Technology sector, specializing in US Public Equity. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+Accenture plc is the world's leading professional services and technology consulting organization, providing strategy, consulting, digital transformation, cloud migration, cybersecurity, and enterprise operations services to more than 9,000 corporate and government clients across 120 countries, including over three-quarters of the Fortune Global 500.
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Accenture's competitive moat is built on unmatched global scale, deep industry domain expertise, and executive client relationships spanning decades. As the primary implementation and systems integration partner for hyperscalers and enterprise software platforms (Microsoft, AWS, Google Cloud, Salesforce, SAP, ServiceNow), Accenture is uniquely positioned as the primary architect of global enterprise AI adoption, driving steady mid-single to double-digit revenue growth and strong cash returns.
 
 ## Total Addressable Market & Market Share
-ACN Corporation addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 9.3% market share. Over our 3-year investment horizon, we model market share evolving to 9.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Accenture plc addresses an estimated Total Addressable Market (TAM) of $1200.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 9.3% market share. Over our 3-year investment horizon, we model market share evolving to 9.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Accenture commands a formidable competitive advantage built on global scale, comprehensive domain expertise, and executive client relationships with over three-quarters of the Fortune Global 500. As the premier global implementation partner for hyperscalers (Microsoft, AWS, Google Cloud) and enterprise platforms (SAP, Salesforce, ServiceNow), Accenture acts as the indispensable systems integrator for large-scale enterprise cloud transformations and generative AI deployments. Deep industry specialization, global delivery networks, and elite brand prestige create high client switching costs and durable compounding.
 
 ## Anticipated Catalysts & Timeline
-ACN Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.70B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.98B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.12B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Accenture plc's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.70B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.98B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$1.12B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-ACN Corporation operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $27.76B in cash & equivalents against $22.21B in total debt (net balance: $+5.55B). Anticipated annual CapEx and operational capital requirements of ~$5.55B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Accenture plc operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $27.76B in cash & equivalents against $22.21B in total debt (net balance: $+5.55B). Anticipated annual CapEx and operational capital requirements of ~$5.55B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ ACN Corporation operates under a reinvestment for growth capital strategy. The c
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-ACN Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $13.88B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+Accenture plc utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $13.88B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +0.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,16 +50,16 @@ ACN Corporation utilizes equity-based compensation as a core talent recruitment 
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-ACN Corporation manages an established liability profile with minimal off-balance sheet encumbrances.
+Accenture plc maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Accenture plc operates zero defined benefit pension plans or retiree healthcare ... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Accenture plc has zero legacy manufacturing, toxic chemical, or federal Superfun... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $38.86 B | Take-or-Pay: $11.66 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -69,7 +69,7 @@ If any of the following occur, the thesis is broken and the position will be exi
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
 
 ## Revenue Drivers Narrative
-ACN Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
+Accenture plc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
 ACN currently trades at a Price-to-Sales (P/S) multiple of ~1.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 16.2%, fully justifying our HOLD rating.
@@ -112,7 +112,11 @@ ACN currently trades at a Price-to-Sales (P/S) multiple of ~1.0x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Consensus Model | Wall Street Consensus | 2026-08-10 | $187.38 | $276.97 | +47.8% | HOLD |
+| Bryan Bergin | TD Cowen | 2026-08-26 | $181.38 | $173.00 | -4.6% | HOLD |
+| Darrin Peller | Wolfe Research | 2026-08-25 | $186.93 | $215.00 | +15.0% | OUTPERFORM |
+| Bryan Keane | Citigroup | 2026-08-24 | $186.53 | $190.00 | +1.9% | HOLD |
+| Jason Kupferberg | Wells Fargo & Company | 2026-07-20 | $144.73 | $194.00 | +34.0% | OVERWEIGHT |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $135.23 | $136.00 | +0.6% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

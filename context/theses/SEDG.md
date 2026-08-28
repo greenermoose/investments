@@ -114,11 +114,11 @@ SEDG currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Jon Windham | UBS Group | 2026-08-26 | $33.08 | $42.00 | +27.0% | HOLD |
 | Christopher Dendrinos | Royal Bank Of Canada | 2026-08-06 | $32.67 | $24.00 | -26.5% | BUY |
 | Christine Cho | Barclays | 2026-08-06 | $32.67 | $37.00 | +13.2% | BUY |
 | Biju Perincheril | Susquehanna | 2026-08-06 | $32.67 | $38.00 | +16.3% | HOLD |
 | Brian Lee | The Goldman Sachs Group | 2026-08-06 | $32.67 | $30.00 | -8.2% | SELL |
-| Jeff Osborne | TD Cowen | 2026-07-20 | $48.61 | $75.00 | +54.3% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

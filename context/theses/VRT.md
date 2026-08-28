@@ -112,11 +112,11 @@ VRT currently trades at a Price-to-Sales (P/S) multiple of ~10.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Gordon L. Johnson | Glj Research | 2026-08-07 | $275.29 | $381.00 | +38.4% | HOLD |
-| Varun Govindaraj | Sanford C. Bernstein | 2026-07-31 | $243.10 | $368.00 | +51.4% | OUTPERFORM |
-| UBS Group Research Team | UBS Group | 2026-07-30 | $227.12 | $370.00 | +62.9% | BUY |
-| Luke Junk | Robert W. Baird | 2026-07-30 | $230.55 | $320.00 | +38.8% | BUY |
-| Deane Dray | Royal Bank Of Canada | 2026-07-30 | $230.55 | $337.00 | +46.2% | OUTPERFORM |
+| Gordon L. Johnson | Glj Research | 2026-08-07 | $272.40 | $381.00 | +39.9% | HOLD |
+| Varun Govindaraj | Sanford C. Bernstein | 2026-07-31 | $241.57 | $368.00 | +52.3% | OUTPERFORM |
+| UBS Group Research Team | UBS Group | 2026-07-30 | $227.50 | $370.00 | +62.6% | BUY |
+| Luke Junk | Robert W. Baird | 2026-07-30 | $227.50 | $320.00 | +40.7% | BUY |
+| Deane Dray | Royal Bank Of Canada | 2026-07-30 | $227.50 | $337.00 | +48.1% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

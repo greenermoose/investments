@@ -112,11 +112,11 @@ MRK currently trades at a Price-to-Sales (P/S) multiple of ~5.7x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Daiwa Securities Group Research Team | Daiwa Securities Group | 2026-08-12 | $132.92 | $143.00 | +7.6% | OUTPERFORM |
-| Jasper Hellweg | Argus | 2026-08-11 | $130.42 | $145.00 | +11.2% | BUY |
-| Vamil Divan | Guggenheim | 2026-08-05 | $128.33 | $146.00 | +13.8% | BUY |
-| Emily Field | Barclays | 2026-07-29 | $130.36 | $150.00 | +15.1% | OVERWEIGHT |
-| Chris Schott | JPMorgan Chase & Co. | 2026-07-13 | $124.03 | $140.00 | +12.9% | OVERWEIGHT |
+| Alexandria Hammond | Wolfe Research | 2026-08-25 | $156.45 | $180.00 | +15.1% | OUTPERFORM |
+| Jasper Hellweg | Argus | 2026-08-25 | $156.45 | $170.00 | +8.7% | BUY |
+| Terence Flynn | The Goldman Sachs Group | 2026-08-21 | $152.55 | $160.00 | +4.9% | BUY |
+| Evan David Seigerman | BMO Capital Markets | 2026-08-20 | $148.99 | $170.00 | +14.1% | OUTPERFORM |
+| Michael Yee | UBS Group | 2026-08-20 | $148.99 | $175.00 | +17.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

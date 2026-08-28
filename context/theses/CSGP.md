@@ -112,11 +112,11 @@ CSGP currently trades at a Price-to-Sales (P/S) multiple of ~3.9x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| KeyCorp Research Team | KeyCorp | 2026-08-24 | $32.84 | $33.00 | +0.5% | BUY |
+| Jeffrey Silber | BMO Capital Markets | 2026-08-24 | $32.84 | $33.00 | +0.5% | BUY |
 | Peter Christiansen | Citigroup | 2026-07-29 | $29.83 | $33.00 | +10.6% | OUTPERFORM |
 | George Tong | The Goldman Sachs Group | 2026-07-29 | $29.83 | $40.00 | +34.1% | BUY |
 | Scott Wurtzel | Wolfe Research | 2026-07-29 | $29.83 | $32.00 | +7.3% | OUTPERFORM |
-| Alexei Gogolev | JPMorgan Chase & Co. | 2026-07-29 | $29.83 | $52.00 | +74.3% | OVERWEIGHT |
-| Andrew Boone | Citizens Jmp | 2026-07-29 | $29.83 | $35.00 | +17.3% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

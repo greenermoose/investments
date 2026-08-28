@@ -112,8 +112,11 @@ TOST currently trades at a Price-to-Sales (P/S) multiple of ~5.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Will Nance | Goldman Sachs | 2026-08-11 | $34.88 | $45.00 | +29.0% | BUY |
-| Josh Baer | Morgan Stanley | 2026-08-07 | $34.48 | $44.00 | +27.6% | OVERWEIGHT |
+| Matthew Coad | Truist Financial | 2026-08-12 | $34.06 | $39.00 | +14.5% | BUY |
+| Peter Heckmann | DA Davidson | 2026-08-10 | $35.69 | $34.00 | -4.7% | HOLD |
+| Harshita Rawat | Sanford C. Bernstein | 2026-08-06 | $34.72 | $45.00 | +29.6% | OUTPERFORM |
+| Daniel R. Perlin | Royal Bank Of Canada | 2026-08-05 | $34.80 | $36.00 | +3.5% | BUY |
+| Rayna Kumar | Oppenheimer | 2026-08-05 | $34.80 | $38.00 | +9.2% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

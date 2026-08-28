@@ -99,5 +99,41 @@
   "primary_exchange": "US Exchange",
   "adr_ratio": null,
   "adr_underlying_description": "Common Stock",
-  "depositary_bank": null
+  "depositary_bank": null,
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 43.8,
+    "pension_and_opeb": {
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.0,
+      "plan_assets_usd_b": 0.0,
+      "annual_cash_contribution_usd_b": 0.0,
+      "underfunding_risk_level": "NONE",
+      "opeb_unfunded_usd_b": 0.0,
+      "narrative": "Comcast Corporation operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "Comcast Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
+      "recent_settlements_scheduled_usd_b": 0.1,
+      "annual_legal_settlement_cash_drain_usd_b": 0.02,
+      "catastrophic_loss_risk_level": "MINIMAL",
+      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 43.3,
+      "take_or_pay_commitments_usd_b": 12.99,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $43.30B over multi-year periods."
+    },
+    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
+    "narrative": "Comcast Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
+  }
 }

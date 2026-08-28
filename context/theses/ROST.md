@@ -112,11 +112,11 @@ ROST currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Evercore Research Team | Evercore | 2026-08-17 | $235.28 | $276.00 | +17.3% | OUTPERFORM |
-| Dana Telsey | Telsey Advisory Group | 2026-08-14 | $245.36 | $280.00 | +14.1% | OUTPERFORM |
-| Morgan Stanley Research Team | Morgan Stanley | 2026-08-05 | $253.22 | $231.00 | -8.8% | BUY |
-| Ike Boruchow | Wells Fargo & Company | 2026-06-23 | $229.05 | $245.00 | +7.0% | OVERWEIGHT |
-| Adrienne Yih | Barclays | 2026-05-26 | $234.68 | $260.00 | +10.8% | OVERWEIGHT |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-08-21 | $239.04 | $294.00 | +23.0% | BUY |
+| Corey Tarlowe | Jefferies Financial Group | 2026-08-21 | $239.04 | $285.00 | +19.2% | BUY |
+| Evercore Research Team | Evercore | 2026-08-21 | $239.04 | $290.00 | +21.3% | BUY |
+| Alex Straton | Morgan Stanley | 2026-08-21 | $239.04 | $234.00 | -2.1% | BUY |
+| Aneesha Sherman | Sanford C. Bernstein | 2026-08-21 | $239.04 | $240.00 | +0.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

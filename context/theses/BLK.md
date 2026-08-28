@@ -112,11 +112,11 @@ BLK currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Evercore Research Team | Evercore | 2026-08-10 | $1135.14 | $1260.00 | +11.0% | OUTPERFORM |
-| James Fotheringham | BMO Capital Markets | 2026-07-17 | $1072.61 | $1300.00 | +21.2% | OUTPERFORM |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-16 | $1105.16 | $1258.00 | +13.8% | BUY |
-| Michael Brown | UBS Group | 2026-07-16 | $1105.06 | $1320.00 | +19.4% | BUY |
-| Alexander Blostein | The Goldman Sachs Group | 2026-07-16 | $1105.10 | $1389.00 | +25.7% | BUY |
+| Evercore Research Team | Evercore | 2026-08-10 | $1131.40 | $1260.00 | +11.4% | OUTPERFORM |
+| James Fotheringham | BMO Capital Markets | 2026-07-17 | $1072.20 | $1300.00 | +21.2% | OUTPERFORM |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-16 | $1087.05 | $1258.00 | +15.7% | BUY |
+| Michael Brown | UBS Group | 2026-07-16 | $1087.05 | $1320.00 | +21.4% | BUY |
+| Alexander Blostein | The Goldman Sachs Group | 2026-07-16 | $1087.05 | $1389.00 | +27.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

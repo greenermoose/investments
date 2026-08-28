@@ -112,11 +112,11 @@ ABT currently trades at a Price-to-Sales (P/S) multiple of ~4.4x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Joshua Jennings | TD Cowen | 2026-08-25 | $116.12 | $135.00 | +16.3% | BUY |
-| Mike Polark | Wolfe Research | 2026-08-13 | $110.92 | $130.00 | +17.2% | OUTPERFORM |
-| Patrick Wood | UBS Group | 2026-07-28 | $107.40 | $125.00 | +16.4% | BUY |
-| Joanne Wuensch | Citigroup | 2026-07-17 | $99.88 | $112.00 | +12.1% | BUY |
-| Adam Maeder | Piper Sandler | 2026-07-17 | $99.70 | $118.00 | +18.4% | OVERWEIGHT |
+| Joshua Jennings | TD Cowen | 2026-08-25 | $116.13 | $135.00 | +16.2% | BUY |
+| Mike Polark | Wolfe Research | 2026-08-13 | $111.27 | $130.00 | +16.8% | OUTPERFORM |
+| Patrick Wood | UBS Group | 2026-07-28 | $107.27 | $125.00 | +16.5% | BUY |
+| Joanne Wuensch | Citigroup | 2026-07-17 | $100.68 | $112.00 | +11.2% | BUY |
+| Adam Maeder | Piper Sandler | 2026-07-17 | $100.68 | $118.00 | +17.2% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

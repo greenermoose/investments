@@ -112,11 +112,11 @@ TTD currently trades at a Price-to-Sales (P/S) multiple of ~2.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Morgan Stanley Research Team | Morgan Stanley | 2026-08-10 | $12.95 | $13.00 | +0.4% | BUY |
-| Mohammed Khallouf | HSBC | 2026-08-10 | $13.80 | $10.00 | -27.5% | HOLD |
-| BNP Paribas Exane Research Team | BNP Paribas Exane | 2026-08-10 | $12.94 | $10.00 | -22.7% | HOLD |
-| Tom White | DA Davidson | 2026-08-10 | $13.20 | $16.00 | +21.2% | HOLD |
-| Cannonball Research Research Team | Cannonball Research | 2026-08-07 | $13.86 | $15.00 | +8.2% | BUY |
+| Morgan Stanley Research Team | Morgan Stanley | 2026-08-10 | $13.39 | $13.00 | -2.9% | BUY |
+| Mohammed Khallouf | HSBC | 2026-08-10 | $13.39 | $10.00 | -25.3% | HOLD |
+| BNP Paribas Exane Research Team | BNP Paribas Exane | 2026-08-10 | $13.39 | $10.00 | -25.3% | HOLD |
+| Tom White | DA Davidson | 2026-08-10 | $13.39 | $16.00 | +19.5% | HOLD |
+| Cannonball Research Research Team | Cannonball Research | 2026-08-07 | $13.80 | $15.00 | +8.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

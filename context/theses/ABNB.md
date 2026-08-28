@@ -112,10 +112,10 @@ ABNB currently trades at a Price-to-Sales (P/S) multiple of ~9.0x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-08-10 | $184.70 | $168.00 | -9.0% | OUTPERFORM |
+| Evercore Research Team | Evercore | 2026-08-24 | $190.21 | $200.00 | +5.2% | BUY |
+| Richard Clarke | Sanford C. Bernstein | 2026-08-24 | $190.21 | $217.00 | +14.1% | OUTPERFORM |
 | Brad Erickson | Royal Bank Of Canada | 2026-08-10 | $184.70 | $165.00 | -10.7% | BUY |
 | Brian Pitz | BMO Capital Markets | 2026-08-10 | $184.70 | $165.00 | -10.7% | BUY |
-| Evercore Research Team | Evercore | 2026-08-07 | $178.07 | $190.00 | +6.7% | OUTPERFORM |
 | Daniel L. Kurnos | Benchmark | 2026-08-07 | $178.07 | $180.00 | +1.1% | BUY |
 
 ## Anticipated Catalyst Timeline

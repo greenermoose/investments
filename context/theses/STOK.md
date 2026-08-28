@@ -112,11 +112,11 @@ STOK currently trades at a Price-to-Sales (P/S) multiple of ~11.0x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Jessica Fye | JPMorgan Chase & Co. | 2026-08-21 | $32.29 | $40.00 | +23.9% | OVERWEIGHT |
 | Yatin Suneja | Guggenheim | 2026-08-04 | $31.67 | $60.00 | +89.5% | BUY |
 | Laura Chico | Wedbush | 2026-08-04 | $31.67 | $40.00 | +26.3% | OUTPERFORM |
 | Sumant Kulkarni | Canaccord Genuity Group | 2026-08-04 | $31.67 | $58.00 | +83.1% | BUY |
 | Keay Nakae | Chardan Capital | 2026-08-04 | $31.67 | $35.00 | +10.5% | BUY |
-| Kevin Strang | The Goldman Sachs Group | 2026-07-13 | $29.46 | $44.00 | +49.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ GE currently trades at a Price-to-Sales (P/S) multiple of ~7.8x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-27 | $364.76 | $450.00 | +23.4% | BUY |
-| Douglas Harned | Sanford C. Bernstein | 2026-07-23 | $341.25 | $421.00 | +23.4% | OUTPERFORM |
-| David Strauss | Wells Fargo & Company | 2026-07-20 | $348.59 | $390.00 | +11.9% | OVERWEIGHT |
-| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-07-20 | $348.58 | $410.00 | +17.6% | BUY |
-| Seth Seifman | JPMorgan Chase & Co. | 2026-07-20 | $344.98 | $400.00 | +15.9% | OVERWEIGHT |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-27 | $361.61 | $450.00 | +24.4% | BUY |
+| Douglas Harned | Sanford C. Bernstein | 2026-07-23 | $349.00 | $421.00 | +20.6% | OUTPERFORM |
+| David Strauss | Wells Fargo & Company | 2026-07-20 | $341.30 | $390.00 | +14.3% | OVERWEIGHT |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-07-20 | $341.30 | $410.00 | +20.1% | BUY |
+| Seth Seifman | JPMorgan Chase & Co. | 2026-07-20 | $341.30 | $400.00 | +17.2% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

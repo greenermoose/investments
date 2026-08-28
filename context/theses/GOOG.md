@@ -115,8 +115,8 @@ GOOG currently trades at a Price-to-Sales (P/S) multiple of ~10.3x on trailing t
 | HSBC Research Team | HSBC | 2026-08-14 | $343.54 | $515.00 | +49.9% | BUY |
 | Maria Ripps | Canaccord Genuity Group | 2026-07-23 | $318.34 | $450.00 | +41.4% | BUY |
 | Cantor Fitzgerald Research Team | Cantor Fitzgerald | 2026-07-23 | $318.34 | $420.00 | +31.9% | OVERWEIGHT |
-| Barton Crockett | Rosenblatt Securities | 2026-07-23 | $318.34 | $393.00 | +23.4% | BUY |
 | Jason Helfstein | Oppenheimer | 2026-07-23 | $318.34 | $400.00 | +25.6% | OUTPERFORM |
+| Piper Sandler Research Team | Piper Sandler | 2026-07-23 | $318.34 | $395.00 | +24.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

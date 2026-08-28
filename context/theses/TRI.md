@@ -56,10 +56,10 @@ Thomson Reuters Corporation manages an established industrial liability footprin
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $4.85 B (Gap: $-0.34 B) | ~$0.15 B / yr | Thomson Reuters Corporation sponsors defined benefit pension plans with $4.85B i... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $1.64 B (Gap: $-0.11 B) | ~$0.05 B / yr | Thomson Reuters Corporation sponsors defined benefit pension plans with $1.64B i... |
 | Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
 | Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $5.51 B | Take-or-Pay: $1.65 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.87 B | Take-or-Pay: $0.56 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
 

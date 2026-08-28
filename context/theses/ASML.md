@@ -60,7 +60,7 @@ ASML Holding N.V. maintains a capital-light liability profile with zero defined 
 | Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | ASML Holding N.V. operates zero defined benefit pension plans or retiree healthc... |
 | Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | ASML Holding N.V. has zero legacy manufacturing, toxic chemical, or federal Supe... |
 | Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $38.38 B | Take-or-Pay: $11.51 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $13.34 B | Take-or-Pay: $4.00 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
 

@@ -112,11 +112,11 @@ WMT currently trades at a Price-to-Sales (P/S) multiple of ~1.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| John Heinbockel | Guggenheim | 2026-08-17 | $114.33 | $135.00 | +18.1% | BUY |
-| Michael Baker | DA Davidson | 2026-08-17 | $114.33 | $150.00 | +31.2% | BUY |
-| Steven Shemesh | Royal Bank Of Canada | 2026-08-12 | $116.01 | $137.00 | +18.1% | OUTPERFORM |
-| Zhihan Ma | Sanford C. Bernstein | 2026-07-31 | $111.20 | $142.00 | +27.7% | OUTPERFORM |
-| David Bellinger | Mizuho | 2026-07-27 | $111.74 | $130.00 | +16.3% | BUY |
+| Jefferies Financial Group Research Team | Jefferies Financial Group | 2026-08-21 | $103.70 | $120.00 | +15.7% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-08-21 | $103.70 | $113.00 | +9.0% | BUY |
+| Joseph Feldman | Telsey Advisory Group | 2026-08-21 | $103.70 | $130.00 | +25.4% | OUTPERFORM |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-08-21 | $103.70 | $130.00 | +25.4% | OUTPERFORM |
+| Evercore Research Team | Evercore | 2026-08-21 | $103.70 | $125.00 | +20.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -112,11 +112,11 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~98.8x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Gautam Chhugani | Sanford C. Bernstein | 2026-08-26 | $123.19 | $350.00 | +184.1% | OUTPERFORM |
+| Joseph Vafi | Canaccord Genuity Group | 2026-08-25 | $126.83 | $175.00 | +38.0% | BUY |
 | Dan Dolev | Mizuho | 2026-08-10 | $97.33 | $165.00 | +69.5% | BUY |
 | Mike Colonnese | HC Wainwright | 2026-08-03 | $94.86 | $325.00 | +242.6% | BUY |
 | Nik Cremo | Barclays | 2026-08-03 | $94.86 | $125.00 | +31.8% | OVERWEIGHT |
-| Fedor Shabalin | B. Riley Financial | 2026-08-03 | $94.86 | $155.00 | +63.4% | BUY |
-| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $94.86 | $186.00 | +96.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

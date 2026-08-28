@@ -112,11 +112,11 @@ META currently trades at a Price-to-Sales (P/S) multiple of ~7.2x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Youssef Squali | Truist Financial | 2026-08-27 | $571.10 | $763.00 | +33.6% | BUY |
+| Barton Crockett | Rosenblatt Securities | 2026-08-27 | $571.10 | $886.00 | +55.1% | BUY |
 | Scotiabank Research Team | Scotiabank | 2026-07-30 | $539.03 | $600.00 | +11.3% | BUY |
 | Thomas Champion | Piper Sandler | 2026-07-30 | $539.03 | $785.00 | +45.6% | OVERWEIGHT |
 | Scott Devitt | Wedbush | 2026-07-30 | $539.03 | $595.00 | +10.4% | HOLD |
-| Lloyd Walmsley | Mizuho | 2026-07-30 | $539.03 | $750.00 | +39.1% | BUY |
-| Shyam Patil | Susquehanna | 2026-07-30 | $539.03 | $650.00 | +20.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

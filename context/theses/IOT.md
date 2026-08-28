@@ -112,8 +112,11 @@ IOT currently trades at a Price-to-Sales (P/S) multiple of ~26.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Keith Weiss | Morgan Stanley | 2026-08-12 | $39.34 | $52.00 | +32.2% | OVERWEIGHT |
-| Kash Rangan | Goldman Sachs | 2026-08-06 | $38.22 | $50.00 | +30.8% | BUY |
+| Jason Celino | KeyCorp | 2026-08-24 | $40.33 | $46.00 | +14.1% | OVERWEIGHT |
+| Derrick Wood | TD Cowen | 2026-08-20 | $38.98 | $48.00 | +23.1% | BUY |
+| Junaid Siddiqui | Truist Financial | 2026-08-19 | $39.20 | $38.00 | -3.1% | HOLD |
+| Matthew Hedberg | Royal Bank Of Canada | 2026-08-14 | $39.79 | $50.00 | +25.7% | OUTPERFORM |
+| James Fish | Piper Sandler | 2026-08-09 | $40.88 | $40.00 | -2.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

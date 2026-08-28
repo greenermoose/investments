@@ -112,11 +112,11 @@ GEHC currently trades at a Price-to-Sales (P/S) multiple of ~1.6x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ryan Zimmerman | BTIG Research | 2026-08-19 | $74.62 | $79.00 | +5.9% | BUY |
 | Graham Doyle | UBS Group | 2026-07-31 | $68.02 | $73.00 | +7.3% | HOLD |
 | Evercore Research Team | Evercore | 2026-07-30 | $69.94 | $84.00 | +20.1% | OUTPERFORM |
 | Joanne Wuensch | Citigroup | 2026-07-30 | $69.94 | $75.00 | +7.2% | HOLD |
 | Larry Biegelsen | Wells Fargo & Company | 2026-07-30 | $69.94 | $85.00 | +21.5% | OVERWEIGHT |
-| Ryan Zimmerman | BTIG Research | 2026-07-29 | $71.90 | $79.00 | +9.9% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

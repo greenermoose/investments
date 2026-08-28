@@ -112,11 +112,11 @@ GOOGL currently trades at a Price-to-Sales (P/S) multiple of ~10.3x on trailing 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Scott Devitt | Rosenblatt Securities | 2026-08-20 | $340.67 | $410.00 | +20.4% | BUY |
 | Gil Luria | DA Davidson | 2026-07-23 | $317.69 | $350.00 | +10.2% | HOLD |
 | Brian Pitz | BMO Capital Markets | 2026-07-23 | $317.69 | $465.00 | +46.4% | OUTPERFORM |
 | Rohit Kulkarni | Roth Capital | 2026-07-23 | $317.69 | $440.00 | +38.5% | BUY |
 | Youssef Squali | Truist Financial | 2026-07-23 | $317.69 | $420.00 | +32.2% | BUY |
-| Deepak Mathivanan | Cantor Fitzgerald | 2026-07-23 | $317.69 | $420.00 | +32.2% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

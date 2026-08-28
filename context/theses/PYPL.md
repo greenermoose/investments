@@ -112,8 +112,8 @@ PYPL currently trades at a Price-to-Sales (P/S) multiple of ~1.7x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Matthew Coad | Truist Financial | 2026-08-19 | $61.25 | $62.00 | +1.2% | HOLD |
 | Bill Carcache | Piper Sandler | 2026-08-17 | $60.47 | $59.00 | -2.4% | HOLD |
-| Matthew Coad | Truist Financial | 2026-08-05 | $57.93 | $59.00 | +1.9% | BUY |
 | Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $57.87 | $60.00 | +3.7% | HOLD |
 | Daniel R. Perlin | Royal Bank Of Canada | 2026-07-29 | $58.35 | $65.00 | +11.4% | OUTPERFORM |
 | Stephen Biggar | Argus | 2026-07-29 | $58.35 | $70.00 | +20.0% | BUY |

@@ -112,11 +112,11 @@ XEL currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| David Arcaro | Morgan Stanley | 2026-08-21 | $76.30 | $89.00 | +16.6% | BUY |
 | Richard Sunderland | Truist Financial | 2026-08-13 | $78.98 | $88.00 | +11.4% | BUY |
 | BTIG Research Research Team | BTIG Research | 2026-07-31 | $78.20 | $99.00 | +26.6% | BUY |
 | Anthony Crowdell | Mizuho | 2026-07-31 | $78.20 | $92.00 | +17.6% | BUY |
 | James Thalacker | BMO Capital Markets | 2026-07-22 | $80.19 | $92.00 | +14.7% | OUTPERFORM |
-| Jeremy Tonet | JPMorgan Chase & Co. | 2026-07-16 | $79.98 | $102.00 | +27.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

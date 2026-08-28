@@ -112,11 +112,11 @@ ABBV currently trades at a Price-to-Sales (P/S) multiple of ~7.5x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| David Amsellem | Piper Sandler | 2026-08-20 | $265.63 | $303.00 | +14.1% | OVERWEIGHT |
-| Mohit Bansal | Wells Fargo & Company | 2026-08-17 | $249.21 | $300.00 | +20.4% | OVERWEIGHT |
-| Alexandria Hammond | Wolfe Research | 2026-08-13 | $249.13 | $300.00 | +20.4% | OUTPERFORM |
-| Navann Ty | BNP Paribas Exane | 2026-08-11 | $249.87 | $247.00 | -1.1% | HOLD |
-| Vamil Divan | Guggenheim | 2026-08-04 | $244.63 | $288.00 | +17.7% | BUY |
+| David Amsellem | Piper Sandler | 2026-08-20 | $261.83 | $303.00 | +15.7% | OVERWEIGHT |
+| Mohit Bansal | Wells Fargo & Company | 2026-08-17 | $250.33 | $300.00 | +19.8% | OVERWEIGHT |
+| Alexandria Hammond | Wolfe Research | 2026-08-13 | $250.82 | $300.00 | +19.6% | OUTPERFORM |
+| Navann Ty | BNP Paribas Exane | 2026-08-11 | $250.09 | $247.00 | -1.2% | HOLD |
+| Vamil Divan | Guggenheim | 2026-08-04 | $243.80 | $288.00 | +18.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

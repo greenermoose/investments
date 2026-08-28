@@ -112,11 +112,11 @@ DHR currently trades at a Price-to-Sales (P/S) multiple of ~6.2x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-22 | $175.12 | $240.00 | +37.0% | BUY |
-| Dan Brennan | TD Cowen | 2026-07-22 | $175.11 | $236.00 | +34.8% | BUY |
-| Dan Leonard | Royal Bank Of Canada | 2026-07-22 | $179.00 | $215.00 | +20.1% | OUTPERFORM |
-| Daniel Arias | Stifel Nicolaus | 2026-07-22 | $175.02 | $220.00 | +25.7% | BUY |
-| Subbu Nambi | Guggenheim | 2026-07-22 | $179.00 | $200.00 | +11.7% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-22 | $179.14 | $240.00 | +34.0% | BUY |
+| Dan Brennan | TD Cowen | 2026-07-22 | $179.14 | $236.00 | +31.7% | BUY |
+| Dan Leonard | Royal Bank Of Canada | 2026-07-22 | $179.14 | $215.00 | +20.0% | OUTPERFORM |
+| Daniel Arias | Stifel Nicolaus | 2026-07-22 | $179.14 | $220.00 | +22.8% | BUY |
+| Subbu Nambi | Guggenheim | 2026-07-22 | $179.14 | $200.00 | +11.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

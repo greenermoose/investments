@@ -112,11 +112,11 @@ LRCX currently trades at a Price-to-Sales (P/S) multiple of ~17.1x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Vijay Rakesh | Mizuho | 2026-08-25 | $314.66 | $365.00 | +16.0% | OUTPERFORM |
 | Melissa Weathers | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $297.72 | $320.00 | +7.5% | BUY |
 | Joe Quatrochi | Wells Fargo & Company | 2026-07-30 | $297.72 | $350.00 | +17.6% | OVERWEIGHT |
 | Blayne Curtis | Jefferies Financial Group | 2026-07-30 | $297.72 | $335.00 | +12.5% | BUY |
 | Shane Brett | Morgan Stanley | 2026-07-30 | $297.72 | $367.00 | +23.3% | OVERWEIGHT |
-| Craig Ellis | B. Riley Financial | 2026-07-30 | $297.72 | $350.00 | +17.6% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

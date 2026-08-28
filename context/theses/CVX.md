@@ -112,11 +112,11 @@ CVX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Devin McDermott | Morgan Stanley | 2026-08-19 | $205.76 | $218.00 | +6.0% | OVERWEIGHT |
 | Betty Jiang | Barclays | 2026-08-17 | $202.70 | $208.00 | +2.6% | BUY |
 | Jason Gabelman | TD Cowen | 2026-08-05 | $186.41 | $205.00 | +10.0% | HOLD |
 | Nitin Kumar | Mizuho | 2026-08-03 | $193.18 | $224.00 | +15.9% | BUY |
 | Bob Brackett | Sanford C. Bernstein | 2026-08-03 | $193.18 | $209.00 | +8.2% | BUY |
-| Jean Ann Salisbury | Bank of America | 2026-07-28 | $187.58 | $227.00 | +21.0% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

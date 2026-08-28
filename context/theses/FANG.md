@@ -112,11 +112,11 @@ FANG currently trades at a Price-to-Sales (P/S) multiple of ~3.8x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Devin McDermott | Morgan Stanley | 2026-08-19 | $208.55 | $216.00 | +3.6% | OVERWEIGHT |
 | Betty Jiang | Barclays | 2026-08-17 | $206.29 | $221.00 | +7.1% | OVERWEIGHT |
 | Scott Gruber | Citigroup | 2026-08-10 | $198.97 | $220.00 | +10.6% | BUY |
 | Jefferies Financial Group Research Team | Jefferies Financial Group | 2026-08-09 | $188.04 | $205.00 | +9.0% | HOLD |
 | Gabe Daoud | Truist Financial | 2026-08-05 | $186.17 | $224.00 | +20.3% | BUY |
-| Sam Margolin | Wells Fargo & Company | 2026-08-05 | $186.17 | $263.00 | +41.3% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

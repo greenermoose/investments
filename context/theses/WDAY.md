@@ -112,11 +112,11 @@ WDAY currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing tw
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Karl Keirstead | UBS Group | 2026-08-14 | $198.68 | $220.00 | +10.7% | HOLD |
-| Lake Street Capital Research Team | Lake Street Capital | 2026-08-14 | $198.68 | $205.00 | +3.2% | BUY |
-| Brent Thill | Jefferies Financial Group | 2026-08-14 | $198.68 | $205.00 | +3.2% | HOLD |
-| Billy Fitzsimmons | Piper Sandler | 2026-08-14 | $198.68 | $145.00 | -27.0% | HOLD |
-| Mark Marcon | Robert W. Baird | 2026-08-14 | $198.68 | $215.00 | +8.2% | OUTPERFORM |
+| Monness Crespi & Hardt Research Team | Monness Crespi & Hardt | 2026-08-28 | $193.57 | $218.00 | +12.6% | BUY |
+| Jason Celino | KeyCorp | 2026-08-28 | $193.57 | $215.00 | +11.1% | OVERWEIGHT |
+| Daniel Jester | BMO Capital Markets | 2026-08-28 | $193.57 | $230.00 | +18.8% | OUTPERFORM |
+| Matthew VanVliet | Cantor Fitzgerald | 2026-08-28 | $193.57 | $205.00 | +5.9% | OVERWEIGHT |
+| Billy Fitzsimmons | Piper Sandler | 2026-08-28 | $193.57 | $190.00 | -1.8% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

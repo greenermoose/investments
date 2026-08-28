@@ -112,11 +112,11 @@ BEAM currently trades at a Price-to-Sales (P/S) multiple of ~22.4x on trailing t
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Patrick R. Trucchio | HC Wainwright | 2026-08-25 | $31.03 | $80.00 | +157.8% | BUY |
 | Alec Stranahan | Bank of America | 2026-07-08 | $36.88 | $47.00 | +27.4% | BUY |
 | William Pickering | Tudor Pickering | 2026-05-13 | $31.85 | $39.00 | +22.4% | BUY |
 | William Pickering | Sanford C. Bernstein | 2026-05-13 | $31.85 | $39.00 | +22.4% | OUTPERFORM |
 | Samantha Semenkow | Citigroup | 2026-03-26 | $23.62 | $68.00 | +187.9% | BUY |
-| Luca Issi | Royal Bank Of Canada | 2026-02-25 | $29.61 | $26.00 | -12.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

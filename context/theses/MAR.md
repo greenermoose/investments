@@ -112,11 +112,11 @@ MAR currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Robin Farley | UBS Group | 2026-08-20 | $356.60 | $395.00 | +10.8% | HOLD |
 | Ben Chaiken | Mizuho | 2026-08-04 | $345.20 | $374.00 | +8.3% | HOLD |
 | Trey Bowers | Wells Fargo & Company | 2026-08-04 | $345.20 | $425.00 | +23.1% | OVERWEIGHT |
 | Michael Bellisario | Robert W. Baird | 2026-08-04 | $345.20 | $393.00 | +13.8% | HOLD |
 | Brandt Montour | Barclays | 2026-08-04 | $345.20 | $348.00 | +0.8% | BUY |
-| Ari Klein | BMO Capital Markets | 2026-08-04 | $345.20 | $395.00 | +14.4% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

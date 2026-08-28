@@ -112,11 +112,11 @@ ZS currently trades at a Price-to-Sales (P/S) multiple of ~6.2x on trailing twel
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Richard Poland | Wells Fargo & Company | 2026-08-17 | $184.44 | $210.00 | +13.9% | OVERWEIGHT |
-| Shaul Eyal | TD Cowen | 2026-08-17 | $184.44 | $200.00 | +8.4% | BUY |
-| Eric Heath | KeyCorp | 2026-07-16 | $146.43 | $185.00 | +26.3% | OVERWEIGHT |
-| Todd Weller | Stephens | 2026-06-12 | $129.52 | $200.00 | +54.4% | OVERWEIGHT |
-| Wolfe Research Research Team | Wolfe Research | 2026-06-11 | $126.11 | $150.00 | +18.9% | OUTPERFORM |
+| Brian Essex | JPMorgan Chase & Co. | 2026-08-26 | $170.31 | $215.00 | +26.2% | OVERWEIGHT |
+| Saket Kalia | Barclays | 2026-08-25 | $168.42 | $192.00 | +14.0% | OVERWEIGHT |
+| John DiFucci | Guggenheim | 2026-08-24 | $176.06 | $214.00 | +21.6% | BUY |
+| Eric Heath | KeyCorp | 2026-08-21 | $181.74 | $210.00 | +15.6% | OVERWEIGHT |
+| Gregg Moskowitz | Mizuho | 2026-08-19 | $184.60 | $210.00 | +13.8% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "description": "Anticipated SEC filing schedule (10-Q / 10-K / 20-F) for universe equities calculated from statutory deadlines and fiscal year-ends.",
-  "last_updated": "2026-08-26",
+  "last_updated": "2026-08-28",
   "provenance": "TIER_1_PRIMARY_REGULATORY",
   "total_equities_tracked": 150,
   "calendar_entries": [
@@ -94,6 +94,24 @@
       "days_until_window_start": 0,
       "status": "OVERDUE",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=937966"
+    },
+    {
+      "symbol": "AVGO",
+      "company_name": "Broadcom Inc.",
+      "cik": "0000000000",
+      "fiscal_year_end": "11-02",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "10-Q",
+      "last_filing_date": "2026-06-09",
+      "last_period_end": "2026-05-03",
+      "next_expected_form": "10-Q",
+      "next_expected_fiscal_period": "Q2",
+      "estimated_filing_window_start": "2026-08-27",
+      "estimated_filing_window_end": "2026-09-09",
+      "statutory_deadline": "2026-09-11",
+      "days_until_window_start": 0,
+      "status": "IMMINENT_NEXT_14_DAYS",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1730168"
     },
     {
       "symbol": "BETA",
@@ -310,6 +328,24 @@
       "days_until_window_start": 0,
       "status": "OVERDUE",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1932393"
+    },
+    {
+      "symbol": "HD",
+      "company_name": "The Home Depot, Inc.",
+      "cik": "0000000000",
+      "fiscal_year_end": "02-01",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "10-Q",
+      "last_filing_date": "2026-05-27",
+      "last_period_end": "2026-05-03",
+      "next_expected_form": "10-Q",
+      "next_expected_fiscal_period": "Q2",
+      "estimated_filing_window_start": "2026-08-27",
+      "estimated_filing_window_end": "2026-09-09",
+      "statutory_deadline": "2026-09-11",
+      "days_until_window_start": 0,
+      "status": "IMMINENT_NEXT_14_DAYS",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=354950"
     },
     {
       "symbol": "KO",
@@ -600,42 +636,6 @@
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1585521"
     },
     {
-      "symbol": "AVGO",
-      "company_name": "Broadcom Inc.",
-      "cik": "0000000000",
-      "fiscal_year_end": "11-02",
-      "filer_category": "LARGE_ACCELERATED_FILER",
-      "last_filed_form": "10-Q",
-      "last_filing_date": "2026-06-09",
-      "last_period_end": "2026-05-03",
-      "next_expected_form": "10-Q",
-      "next_expected_fiscal_period": "Q2",
-      "estimated_filing_window_start": "2026-08-27",
-      "estimated_filing_window_end": "2026-09-09",
-      "statutory_deadline": "2026-09-11",
-      "days_until_window_start": 1,
-      "status": "IMMINENT_NEXT_14_DAYS",
-      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1730168"
-    },
-    {
-      "symbol": "HD",
-      "company_name": "The Home Depot, Inc.",
-      "cik": "0000000000",
-      "fiscal_year_end": "02-01",
-      "filer_category": "LARGE_ACCELERATED_FILER",
-      "last_filed_form": "10-Q",
-      "last_filing_date": "2026-05-27",
-      "last_period_end": "2026-05-03",
-      "next_expected_form": "10-Q",
-      "next_expected_fiscal_period": "Q2",
-      "estimated_filing_window_start": "2026-08-27",
-      "estimated_filing_window_end": "2026-09-09",
-      "statutory_deadline": "2026-09-11",
-      "days_until_window_start": 1,
-      "status": "IMMINENT_NEXT_14_DAYS",
-      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=354950"
-    },
-    {
       "symbol": "CSCO",
       "company_name": "Cisco Systems, Inc.",
       "cik": "0000000000",
@@ -649,7 +649,7 @@
       "estimated_filing_window_start": "2026-09-03",
       "estimated_filing_window_end": "2026-09-21",
       "statutory_deadline": "2026-09-23",
-      "days_until_window_start": 8,
+      "days_until_window_start": 6,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=858877"
     },
@@ -667,7 +667,7 @@
       "estimated_filing_window_start": "2026-09-08",
       "estimated_filing_window_end": "2026-09-26",
       "statutory_deadline": "2026-09-28",
-      "days_until_window_start": 13,
+      "days_until_window_start": 11,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=900075"
     },
@@ -685,7 +685,7 @@
       "estimated_filing_window_start": "2026-09-08",
       "estimated_filing_window_end": "2026-09-26",
       "statutory_deadline": "2026-09-28",
-      "days_until_window_start": 13,
+      "days_until_window_start": 11,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=896878"
     },
@@ -703,7 +703,7 @@
       "estimated_filing_window_start": "2026-09-08",
       "estimated_filing_window_end": "2026-09-26",
       "statutory_deadline": "2026-09-28",
-      "days_until_window_start": 13,
+      "days_until_window_start": 11,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1327567"
     },
@@ -721,7 +721,7 @@
       "estimated_filing_window_start": "2026-09-08",
       "estimated_filing_window_end": "2026-09-26",
       "statutory_deadline": "2026-09-28",
-      "days_until_window_start": 13,
+      "days_until_window_start": 11,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1713683"
     },
@@ -739,7 +739,7 @@
       "estimated_filing_window_start": "2026-09-18",
       "estimated_filing_window_end": "2026-10-06",
       "statutory_deadline": "2026-10-08",
-      "days_until_window_start": 23,
+      "days_until_window_start": 21,
       "status": "UPCOMING_NEXT_30_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=909832"
     },
@@ -757,7 +757,7 @@
       "estimated_filing_window_start": "2026-09-22",
       "estimated_filing_window_end": "2026-10-05",
       "statutory_deadline": "2026-10-07",
-      "days_until_window_start": 27,
+      "days_until_window_start": 25,
       "status": "UPCOMING_NEXT_30_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=796343"
     },
@@ -775,7 +775,7 @@
       "estimated_filing_window_start": "2026-09-24",
       "estimated_filing_window_end": "2026-10-07",
       "statutory_deadline": "2026-10-09",
-      "days_until_window_start": 29,
+      "days_until_window_start": 27,
       "status": "UPCOMING_NEXT_30_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=320187"
     },
@@ -793,7 +793,7 @@
       "estimated_filing_window_start": "2026-09-24",
       "estimated_filing_window_end": "2026-10-07",
       "statutory_deadline": "2026-10-09",
-      "days_until_window_start": 29,
+      "days_until_window_start": 27,
       "status": "UPCOMING_NEXT_30_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=723531"
     },
@@ -811,7 +811,7 @@
       "estimated_filing_window_start": "2026-10-06",
       "estimated_filing_window_end": "2026-10-24",
       "statutory_deadline": "2026-10-26",
-      "days_until_window_start": 41,
+      "days_until_window_start": 39,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=723125"
     },
@@ -829,7 +829,7 @@
       "estimated_filing_window_start": "2026-10-07",
       "estimated_filing_window_end": "2026-10-20",
       "statutory_deadline": "2026-10-22",
-      "days_until_window_start": 42,
+      "days_until_window_start": 40,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=77476"
     },
@@ -847,7 +847,7 @@
       "estimated_filing_window_start": "2026-10-21",
       "estimated_filing_window_end": "2026-11-03",
       "statutory_deadline": "2026-11-05",
-      "days_until_window_start": 56,
+      "days_until_window_start": 54,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=2488"
     },
@@ -865,7 +865,7 @@
       "estimated_filing_window_start": "2026-10-21",
       "estimated_filing_window_end": "2026-11-03",
       "statutory_deadline": "2026-11-05",
-      "days_until_window_start": 56,
+      "days_until_window_start": 54,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=50863"
     },
@@ -883,7 +883,7 @@
       "estimated_filing_window_start": "2026-10-21",
       "estimated_filing_window_end": "2026-11-03",
       "statutory_deadline": "2026-11-05",
-      "days_until_window_start": 56,
+      "days_until_window_start": 54,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1637459"
     },
@@ -901,7 +901,7 @@
       "estimated_filing_window_start": "2026-10-22",
       "estimated_filing_window_end": "2026-11-04",
       "statutory_deadline": "2026-11-06",
-      "days_until_window_start": 57,
+      "days_until_window_start": 55,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=200406"
     },
@@ -919,7 +919,7 @@
       "estimated_filing_window_start": "2026-10-22",
       "estimated_filing_window_end": "2026-11-04",
       "statutory_deadline": "2026-11-06",
-      "days_until_window_start": 57,
+      "days_until_window_start": 55,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=707549"
     },
@@ -937,7 +937,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1559720"
     },
@@ -955,7 +955,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=8670"
     },
@@ -973,7 +973,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1178670"
     },
@@ -991,7 +991,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=318154"
     },
@@ -1009,7 +1009,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1018724"
     },
@@ -1027,7 +1027,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1751008"
     },
@@ -1045,7 +1045,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1973239"
     },
@@ -1063,7 +1063,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1069183"
     },
@@ -1081,7 +1081,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=4962"
     },
@@ -1099,7 +1099,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=12927"
     },
@@ -1117,7 +1117,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1937926"
     },
@@ -1135,7 +1135,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1745999"
     },
@@ -1153,7 +1153,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1075531"
     },
@@ -1171,7 +1171,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1701605"
     },
@@ -1189,7 +1189,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1067983"
     },
@@ -1207,7 +1207,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=18230"
     },
@@ -1225,7 +1225,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001948892"
     },
@@ -1243,7 +1243,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1868275"
     },
@@ -1261,7 +1261,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1091667"
     },
@@ -1279,7 +1279,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1166691"
     },
@@ -1297,7 +1297,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1674416"
     },
@@ -1315,7 +1315,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1057352"
     },
@@ -1333,7 +1333,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=277948"
     },
@@ -1351,7 +1351,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=93410"
     },
@@ -1369,7 +1369,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1792789"
     },
@@ -1387,7 +1387,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1561550"
     },
@@ -1405,7 +1405,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001562088"
     },
@@ -1423,7 +1423,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1093557"
     },
@@ -1441,7 +1441,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=712515"
     },
@@ -1459,7 +1459,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1650664"
     },
@@ -1477,7 +1477,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1805077"
     },
@@ -1495,7 +1495,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1539838"
     },
@@ -1513,7 +1513,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=815556"
     },
@@ -1531,7 +1531,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1262039"
     },
@@ -1549,7 +1549,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=882095"
     },
@@ -1567,7 +1567,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1474735"
     },
@@ -1585,7 +1585,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1652044"
     },
@@ -1603,7 +1603,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1652044"
     },
@@ -1621,7 +1621,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=886982"
     },
@@ -1639,7 +1639,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1819438"
     },
@@ -1657,7 +1657,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=773840"
     },
@@ -1675,7 +1675,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=51143"
     },
@@ -1693,7 +1693,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=874716"
     },
@@ -1711,7 +1711,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1104506"
     },
@@ -1729,7 +1729,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001642896"
     },
@@ -1747,7 +1747,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1035267"
     },
@@ -1765,7 +1765,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=19617"
     },
@@ -1783,7 +1783,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1418135"
     },
@@ -1801,7 +1801,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=319201"
     },
@@ -1819,7 +1819,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1707925"
     },
@@ -1837,7 +1837,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1141391"
     },
@@ -1855,7 +1855,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1048286"
     },
@@ -1873,7 +1873,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=63908"
     },
@@ -1891,7 +1891,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=827054"
     },
@@ -1909,7 +1909,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1099590"
     },
@@ -1927,7 +1927,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1326801"
     },
@@ -1945,7 +1945,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=66740"
     },
@@ -1963,7 +1963,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001845338"
     },
@@ -1981,7 +1981,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=865752"
     },
@@ -1999,7 +1999,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1280452"
     },
@@ -2017,7 +2017,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=310158"
     },
@@ -2035,7 +2035,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=789019"
     },
@@ -2053,7 +2053,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1050446"
     },
@@ -2071,7 +2071,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1065280"
     },
@@ -2089,7 +2089,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1828536"
     },
@@ -2107,7 +2107,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1652130"
     },
@@ -2125,7 +2125,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001691493"
     },
@@ -2143,7 +2143,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=878927"
     },
@@ -2161,7 +2161,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=898173"
     },
@@ -2179,7 +2179,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=75362"
     },
@@ -2197,7 +2197,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=80424"
     },
@@ -2215,7 +2215,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1321655"
     },
@@ -2233,7 +2233,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=872589"
     },
@@ -2251,7 +2251,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=882835"
     },
@@ -2269,7 +2269,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1419612"
     },
@@ -2287,7 +2287,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1594805"
     },
@@ -2305,7 +2305,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=89800"
     },
@@ -2323,7 +2323,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1844862"
     },
@@ -2341,7 +2341,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1623526"
     },
@@ -2359,7 +2359,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1477449"
     },
@@ -2377,7 +2377,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1650372"
     },
@@ -2395,7 +2395,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1283699"
     },
@@ -2413,7 +2413,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=0001653772"
     },
@@ -2431,7 +2431,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=86312"
     },
@@ -2449,7 +2449,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1318605"
     },
@@ -2467,7 +2467,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=946581"
     },
@@ -2485,7 +2485,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=97476"
     },
@@ -2503,7 +2503,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=731766"
     },
@@ -2521,7 +2521,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=875320"
     },
@@ -2539,7 +2539,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=732712"
     },
@@ -2557,7 +2557,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1437107"
     },
@@ -2575,7 +2575,7 @@
       "estimated_filing_window_start": "2026-10-24",
       "estimated_filing_window_end": "2026-11-06",
       "statutory_deadline": "2026-11-08",
-      "days_until_window_start": 59,
+      "days_until_window_start": 57,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=72903"
     },
@@ -2593,7 +2593,7 @@
       "estimated_filing_window_start": "2026-10-27",
       "estimated_filing_window_end": "2026-11-09",
       "statutory_deadline": "2026-11-11",
-      "days_until_window_start": 62,
+      "days_until_window_start": 60,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1137789"
     },
@@ -2611,7 +2611,7 @@
       "estimated_filing_window_start": "2026-10-27",
       "estimated_filing_window_end": "2026-11-09",
       "statutory_deadline": "2026-11-11",
-      "days_until_window_start": 62,
+      "days_until_window_start": 60,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=106040"
     },
@@ -2629,7 +2629,7 @@
       "estimated_filing_window_start": "2026-10-29",
       "estimated_filing_window_end": "2026-11-11",
       "statutory_deadline": "2026-11-13",
-      "days_until_window_start": 64,
+      "days_until_window_start": 62,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1828318"
     },
@@ -2647,7 +2647,7 @@
       "estimated_filing_window_start": "2026-11-05",
       "estimated_filing_window_end": "2026-11-23",
       "statutory_deadline": "2026-11-25",
-      "days_until_window_start": 71,
+      "days_until_window_start": 69,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=320193"
     },
@@ -2665,7 +2665,7 @@
       "estimated_filing_window_start": "2026-11-05",
       "estimated_filing_window_end": "2026-11-23",
       "statutory_deadline": "2026-11-25",
-      "days_until_window_start": 71,
+      "days_until_window_start": 69,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1744489"
     },
@@ -2683,7 +2683,7 @@
       "estimated_filing_window_start": "2026-11-06",
       "estimated_filing_window_end": "2026-11-24",
       "statutory_deadline": "2026-11-26",
-      "days_until_window_start": 72,
+      "days_until_window_start": 70,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=804328"
     },
@@ -2701,7 +2701,7 @@
       "estimated_filing_window_start": "2026-11-06",
       "estimated_filing_window_end": "2026-11-24",
       "statutory_deadline": "2026-11-26",
-      "days_until_window_start": 72,
+      "days_until_window_start": 70,
       "status": "SCHEDULED",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=829224"
     }

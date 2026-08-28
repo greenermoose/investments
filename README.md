@@ -122,18 +122,125 @@ The system supports two core operating workflows:
   5. Newly added equities become immediately available for future weekly deliberation and dashboard tracking
 ```
 
+## Master Deterministic CLI Tool (`scripts/manage_universe.py`)
+
+The repository provides a single, unified deterministic command-line interface, `scripts/manage_universe.py`, enabling human traders and AI agents to query the equity universe, synchronize market data, refresh regulatory filings, and execute deterministic workflows with 0 LLM token spend.
+
+Run the tool with `--help` to inspect all options:
+
+```bash
+python scripts/manage_universe.py --help
+```
+
+### 1. Count, Search, Filter & Sort Equities
+
+Query the master universe of US public equities with multi-dimensional filters:
+
+```bash
+# Print total count of tracked equities
+python scripts/manage_universe.py --count
+
+# Filter for BUY-rated equities targeting >= 20% annualized ROI
+python scripts/manage_universe.py list --status BUY --min-roi 20.0
+
+# Filter by sector, sort by target ROI descending, limit to top 10
+python scripts/manage_universe.py list --sector Technology --sort-by roi --order desc --limit 10
+
+# Filter for Nasdaq-100 (QQQ) constituents and output symbol list
+python scripts/manage_universe.py list --index QQQ --format symbols
+
+# Find equities trading within 15% of their 52-week low
+python scripts/manage_universe.py list --near-52w-low 15 --format compact
+
+# Export filtered query results to CSV or JSON
+python scripts/manage_universe.py list --min-roi 20.0 --format csv
+python scripts/manage_universe.py list --status BUY --format json
+```
+
+### 2. Update Market Share Prices (OHLC) & Trading Volume
+
+Synchronize live prices, dual nominal/adjusted historical daily candles, 52-week price channels, SMA 20/50, and daily trading volumes:
+
+```bash
+# Ingest live market prices across the entire universe (0 LLM tokens)
+python scripts/manage_universe.py update-prices --live
+
+# Refresh specific target tickers during intraday trading
+python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT TSLA
+
+# Verify cached market prices offline without network requests
+python scripts/manage_universe.py update-prices --verify
+
+# Rebuild historical 18-month price archive
+python scripts/manage_universe.py update-prices --archive
+```
+
+### 3. Refresh SEC Filings & Non-Price Intelligence
+
+Synchronize audited financial statements from SEC EDGAR XBRL APIs and auxiliary non-price datasets:
+
+```bash
+# Fetch fresh SEC EDGAR XBRL statements for universe equities
+python scripts/manage_universe.py refresh-sec --live
+
+# Refresh SEC data for specific symbols
+python scripts/manage_universe.py refresh-sec --symbols NVDA CRM WDAY
+
+# Refresh all non-price datasets (SEC, ETF holdings, analysts, filing calendar, off-balance sheet)
+python scripts/manage_universe.py refresh-sec --all
+
+# Rebuild statutory 10-Q/10-K filing deadline calendar
+python scripts/manage_universe.py refresh-sec --filings-calendar
+
+# Synchronize QQQ, DIA, and SPY constituent holdings from Form NPORT-P
+python scripts/manage_universe.py refresh-sec --etf-holdings
+
+# Refresh sell-side analyst price targets and coverage registry
+python scripts/manage_universe.py refresh-sec --analysts
+```
+
+### 4. Execute Deterministic System Workflows
+
+Orchestrate quantitative modeling, risk auditing, screening, and snapshot parsing:
+
+```bash
+# Run deterministic Quality Control audit to assert 0 errors across datasets
+python scripts/manage_universe.py audit
+
+# Screen market for >= 20% annualized ROI compounders passing solvency checks
+python scripts/manage_universe.py screen --min-roi 20.0 --limit 10
+
+# Run Stage 1 Lightweight Triage (gross margin >= 15%, debt/equity <= 4.0x, runway >= 12m)
+python scripts/manage_universe.py triage --summary
+
+# Model Black-Scholes Cash-Secured Put pricing, Greeks, and AROC
+python scripts/manage_universe.py pricing option --stock-price 125.0 --strike 120.0 --dte 35 --type put
+
+# Audit institutional memory, catalyst milestones, and invalidation triggers
+python scripts/manage_universe.py memory
+
+# Parse weekly brokerage snapshot export in private/snapshots/
+python scripts/manage_universe.py snapshot --demo
+
+# Onboard a new public company into coverage with live SEC facts & pricing
+python scripts/manage_universe.py onboard --symbol CRWD --live
+
+# Execute Cadence 6 full ground-truth rebuild across all tiers
+python scripts/manage_universe.py rebuild-all
+```
+
 ## Operational Cadences & Token Economy
 
 The system is engineered for maximum token parsimony, separating deterministic tasks (0 LLM tokens) from focused generative agent reasoning:
 
 | Cadence | Frequency | Primary Tooling | Token Cost | Objective |
 | :--- | :--- | :--- | :--- | :--- |
-| **Cadence 1: Daily Price Sync** | Daily (Open/Close) | `fetch_market_prices.py --live` | 0 Tokens | Refresh live market quotes, trading volume, 52W bounds, and moving averages. |
+| **Cadence 1: Daily Price Sync** | Daily (Open/Close) | `manage_universe.py update-prices` | 0 Tokens | Refresh live market quotes, trading volume, 52W bounds, and moving averages. |
 | **Cadence 2: Weekly Deliberation** | Weekend Single-Session | `weekly_deliberation.md`, `generate_plan.py` | ~2K - 5K Tokens | Ingest snapshots, calculate Black-Scholes limit orders, write plain ASCII plan. |
 | **Cadence 3: Event Surveillance** | Event-Driven / Daily | `surveil_sentiment.py`, `track_short_sellers.py` | ~500 - 1.5K Tokens | Surveil press releases, Reddit chatter, and 20 top activist short sellers. |
-| **Cadence 4: Scheduled SEC Sync** | Scheduled / Monthly | `anticipate_sec_filings.py`, `fetch_sec.py` | ~500 Tokens / Stock | Track 10-Q/10-K statutory deadlines and ingest newly filed XBRL statements. |
-| **Cadence 5: Universe Expansion** | On-Demand / Periodic | `onboard_company.py`, `screen_market.py` | ~10K - 15K Tokens / Stock | Screen 20%+ ROI compounders, ingest SEC XBRL data, author dossiers, update universe. |
-| **Cadence 6: Ground-Truth Rebuild** | Rare / On-Demand | `rare_full_source_regeneration.md` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
+| **Cadence 4: Scheduled SEC Sync** | Scheduled / Monthly | `manage_universe.py refresh-sec` | ~500 Tokens / Stock | Track 10-Q/10-K statutory deadlines and ingest newly filed XBRL statements. |
+| **Cadence 5: Universe Expansion** | On-Demand / Periodic | `manage_universe.py onboard`, `screen` | ~10K - 15K Tokens / Stock | Screen 20%+ ROI compounders, ingest SEC XBRL data, author dossiers, update universe. |
+| **Cadence 6: Ground-Truth Rebuild** | Rare / On-Demand | `manage_universe.py rebuild-all` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
 
 Detailed operational playbooks and copy-paste CLI commands are documented in the [User Guide & Operational Cadences](http/guide.html).
 

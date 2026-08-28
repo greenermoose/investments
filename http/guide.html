@@ -101,6 +101,98 @@
       </div>
     </div>
 
+    <h2>Master Deterministic CLI Engine (<code>scripts/manage_universe.py</code>)</h2>
+    <p>The system provides a unified command-line tool, <code>scripts/manage_universe.py</code>, enabling human traders and autonomous AI agents to query the equity universe, synchronize market prices, refresh regulatory filings, and execute deterministic workflows with 0 LLM token cost.</p>
+
+    <div class="callout tip">
+      <div class="callout-title">Interactive CLI Help &amp; Workflow Discovery</div>
+      <p>Run <code>python scripts/manage_universe.py --help</code> or <code>python scripts/manage_universe.py &lt;command&gt; --help</code> to view available parameters, filter criteria, and copy-paste workflow examples.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
+        <h4 style="color: #00d4ff; margin-top: 0;">1. Query, Filter &amp; Count Universe Equities</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Filter tracked equities by status, sector, target ROI, market cap, P/E, P/S, gross margin, debt/equity, 52W price channels, and index membership:</p>
+        <pre><code># Print total count of tracked equities
+python scripts/manage_universe.py --count
+
+# Filter for BUY-rated stocks targeting >= 20% ROI
+python scripts/manage_universe.py list --status BUY --min-roi 20.0
+
+# Filter by sector, sort by ROI desc, top 10
+python scripts/manage_universe.py list --sector Technology --sort-by roi --limit 10
+
+# Filter for Nasdaq-100 (QQQ) constituent symbols
+python scripts/manage_universe.py list --index QQQ --format symbols
+
+# Find equities trading within 15% of 52W low
+python scripts/manage_universe.py list --near-52w-low 15 --format compact
+
+# Export filtered query results to CSV or JSON
+python scripts/manage_universe.py list --min-roi 20.0 --format csv</code></pre>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
+        <h4 style="color: #818cf8; margin-top: 0;">2. Ingest Live Market Prices &amp; Technical Volumes</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Ingest live prices, 30-day candlesticks, trading volumes, 52-week channels, and moving averages (SMA 20/50):</p>
+        <pre><code># Ingest live market prices across entire universe
+python scripts/manage_universe.py update-prices --live
+
+# Refresh specific target tickers during intraday action
+python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT
+
+# Verify cached market prices offline (0 network requests)
+python scripts/manage_universe.py update-prices --verify
+
+# Rebuild historical 18-month price archive
+python scripts/manage_universe.py update-prices --archive</code></pre>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
+        <h4 style="color: #34d399; margin-top: 0;">3. Refresh SEC Filings &amp; Auxiliary Datasets</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Synchronize Tier 1 SEC EDGAR XBRL facts, ETF holdings, analyst consensus targets, and filing calendars:</p>
+        <pre><code># Fetch fresh SEC EDGAR XBRL statements
+python scripts/manage_universe.py refresh-sec --live
+
+# Refresh SEC data for specific symbols
+python scripts/manage_universe.py refresh-sec --symbols NVDA CRM WDAY
+
+# Refresh all non-price datasets in one step
+python scripts/manage_universe.py refresh-sec --all
+
+# Rebuild statutory 10-Q/10-K filing deadline calendar
+python scripts/manage_universe.py refresh-sec --filings-calendar
+
+# Synchronize ETF constituent holdings (QQQ, DIA, SPY)
+python scripts/manage_universe.py refresh-sec --etf-holdings</code></pre>
+      </div>
+
+      <div class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
+        <h4 style="color: #fbbf24; margin-top: 0;">4. Execute Deterministic System Workflows</h4>
+        <p style="font-size: 0.88rem; color: #94a3b8;">Run mathematical modeling, quality control audits, screenings, memory checks, and snapshots:</p>
+        <pre><code># Run Quality Control audit to assert 0 data errors
+python scripts/manage_universe.py audit
+
+# Screen market for >= 20% ROI compounders
+python scripts/manage_universe.py screen --min-roi 20.0 --limit 10
+
+# Run Stage 1 Lightweight Triage
+python scripts/manage_universe.py triage --summary
+
+# Model Black-Scholes options pricing & Greeks
+python scripts/manage_universe.py pricing option --stock-price 125 --strike 120 --dte 35 --type put
+
+# Parse weekly portfolio snapshot
+python scripts/manage_universe.py snapshot --demo
+
+# Onboard a new public equity with live SEC feeds
+python scripts/manage_universe.py onboard --symbol CRWD --live
+
+# Execute Cadence 6 full ground-truth rebuild
+python scripts/manage_universe.py rebuild-all</code></pre>
+      </div>
+    </div>
+
     <h2>Operational Playbooks &amp; CLI Tool Instructions</h2>
 
     <!-- Playbook 1 -->
@@ -111,13 +203,13 @@
           <h4>Frequent Daily Price &amp; Volume Updates (0 LLM Tokens)</h4>
           <p>Because stock prices and trading volumes fluctuate every market session, run the live price fetcher daily before market open (9:00 AM ET) and after close (4:30 PM ET):</p>
           <pre><code># Ingest live market prices and 30-day candles across the entire universe
-python scripts/fetch_market_prices.py --live
+python scripts/manage_universe.py update-prices --live
 
 # Refresh a specific target watchlist during intraday market action
-python scripts/fetch_market_prices.py --symbols NVDA AAPL MSFT TSLA AMZN --live
+python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT TSLA AMZN
 
 # Screen for high-conviction opportunities (>= 20% annualized ROI) at current prices
-python scripts/screen_market.py --min-roi 20.0 --exclude-avoid</code></pre>
+python scripts/manage_universe.py screen --min-roi 20.0 --exclude-avoid</code></pre>
           <p>This updates <code>context/data/market_prices.json</code> and <code>http/data/market_prices.json</code> deterministically without consuming any LLM tokens.</p>
         </div>
       </div>
@@ -260,6 +352,13 @@ python scripts/quality_control.py --audit</code></pre>
           </tr>
         </thead>
         <tbody>
+          <tr style="border-bottom: 1px solid var(--border-subtle); background: rgba(0, 212, 255, 0.05);">
+            <td style="padding: 10px 16px; font-family: monospace; font-weight: 700; color: #00d4ff;">manage_universe.py</td>
+            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
+            <td style="padding: 10px 16px;">Unified Master CLI</td>
+            <td style="padding: 10px 16px;">Tier 1 SEC + Tier 2 Feeds</td>
+            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Master Orchestration Hub</td>
+          </tr>
           <tr style="border-bottom: 1px solid var(--border-subtle);">
             <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">fetch_market_prices.py</td>
             <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>

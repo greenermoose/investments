@@ -4,8 +4,45 @@ This directory contains deterministic Python and Node.js command-line utilities 
 
 For complete rules and decision criteria on when to use deterministic scripts versus generative AI agent reasoning, see [deterministic_vs_generative_execution.md](file:///c:/Users/Fred/github/investments/context/strategy/deterministic_vs_generative_execution.md).
 
+## Unified Master CLI Engine (`manage_universe.py`)
+
+The primary entry point for human traders and autonomous AI agents is `scripts/manage_universe.py`, which unifies universe exploration, price caching, SEC data refreshing, and deterministic sub-workflow execution:
+
+```bash
+# Display comprehensive help and all workflow options
+python scripts/manage_universe.py --help
+
+# 1. Count, Search, Filter & Sort Equities
+python scripts/manage_universe.py list --status BUY --min-roi 20.0
+python scripts/manage_universe.py list --sector Technology --sort-by roi --limit 10
+python scripts/manage_universe.py list --index QQQ --format symbols
+python scripts/manage_universe.py list --near-52w-low 15 --format compact
+
+# 2. Update Live Market Share Prices (OHLC) & Trading Volume
+python scripts/manage_universe.py update-prices --live
+python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT
+python scripts/manage_universe.py update-prices --verify
+
+# 3. Refresh SEC EDGAR Filings & Non-Price Datasets
+python scripts/manage_universe.py refresh-sec --live
+python scripts/manage_universe.py refresh-sec --all
+python scripts/manage_universe.py refresh-sec --filings-calendar
+python scripts/manage_universe.py refresh-sec --etf-holdings
+
+# 4. Deterministic System Workflows
+python scripts/manage_universe.py audit
+python scripts/manage_universe.py screen --min-roi 20.0 --limit 10
+python scripts/manage_universe.py triage --summary
+python scripts/manage_universe.py pricing option --stock-price 125.0 --strike 120.0 --dte 35 --type put
+python scripts/manage_universe.py memory
+python scripts/manage_universe.py snapshot --demo
+python scripts/manage_universe.py onboard --symbol CRWD --live
+python scripts/manage_universe.py rebuild-all
+```
+
 ## Script Catalog
 
+- `manage_universe.py`: Unified Master CLI engine for universe listing/filtering, live price caching, SEC dataset synchronization, and workflow execution.
 - `onboard_company.py` (Equity Research & Investment Thesis Agents): Deterministic company onboarding engine supporting single, batch, or screened additions to the coverage universe with SEC EDGAR XBRL ingestion, market pricing, valuation modeling, thesis authoring, and quality control auditing.
 - `screen_market.py` (Equity Research Agent): Screens US exchange-listed public equities against quantitative criteria targeting >= 20% annualized ROI with debt solvency and runway checks.
 - `parse_snapshot.py` (Portfolio Ingestion Agent): Parses uploaded CSV and text brokerage exports in `private/snapshots/`, isolates distinct accounts, tags covered call eligibility (>= 100 shares), and outputs normalized portfolio state.
@@ -36,36 +73,39 @@ Local binary databases, SQLite files, and Parquet caches populated by scripts ar
 
 Run scripts from the repository root:
 ```bash
-# 1. Onboard a Single Equity (Live SEC & Market Feeds or Offline)
+# 1. Unified Master CLI (Recommended)
+python scripts/manage_universe.py --help
+
+# 2. Onboard a Single Equity (Live SEC & Market Feeds or Offline)
 python scripts/onboard_company.py --symbol CRWD --live
 python scripts/onboard_company.py --symbol CRWD --offline
 
-# 2. Onboard Multiple Equities in Batch
+# 3. Onboard Multiple Equities in Batch
 python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
 python scripts/onboard_company.py --symbols MSFT AAPL NVDA --offline
 
-# 3. Screen Market for >= 20% ROI Candidates & Auto-Onboard
+# 4. Screen Market for >= 20% ROI Candidates & Auto-Onboard
 python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
 
-# 4. Screen Market for Opportunities (Analysis Only)
+# 5. Screen Market for Opportunities (Analysis Only)
 python scripts/screen_market.py --min-roi 20.0 --limit 10
 python scripts/screen_market.py --summary
 
-# 5. Parse Portfolio Snapshot
+# 6. Parse Portfolio Snapshot
 python scripts/parse_snapshot.py --demo
 
-# 6. Model Pricing (Options, Rolls, BTC & Limit Orders)
+# 7. Model Pricing (Options, Rolls, BTC & Limit Orders)
 python scripts/calculate_pricing.py option --stock-price 124.50 --strike 120.00 --dte 35 --type put
 python scripts/calculate_pricing.py roll --close-cost 3.50 --open-credit 4.80 --contracts 1
 python scripts/calculate_pricing.py btc --symbol INTC --type put --strike 30.00 --current-mark 4.20 --contracts 1
 python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
 
-# 7. Audit Institutional Memory & Invalidation
+# 8. Audit Institutional Memory & Invalidation
 python scripts/manage_memory.py
 
-# 8. Generate Plain-Text Weekly Trading Plan
+# 9. Generate Plain-Text Weekly Trading Plan
 python scripts/generate_plan.py
 
-# 9. Run Deterministic Quality Control Audit
+# 10. Run Deterministic Quality Control Audit
 python scripts/quality_control.py --audit
 ```

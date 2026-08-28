@@ -192,4 +192,69 @@ When frontier reasoning models review this issue, they should evaluate and formu
 2. **Probabilistic Triage Scoring Models**: Can we train a lightweight logistic or gradient-boosted classifier on historical 10-K data to assign a continuous "Avoid Probability Score" ($P_{\text{avoid}}$) that routes compute budget with optimal precision-recall trade-offs?
 3. **Automated De-Listing Trigger Parsing**: How can LLM-based SEC 8-K / 10-Q parsers autonomously evaluate and score de-listing triggers (e.g. debt restructuring covenants, executive turnaround plans) to promote avoided companies in real time without human intervention?
 
+### OQI-2026-08-006: Fundamental Data Absence, Non-Functional Triage Gating, and Price Series Integrity
 
+- **Item ID**: OQI-2026-08-006
+- **Date Logged**: 2026-08-28
+- **Domain / Agents**: Equity Research Agent, Investment Thesis Agent, Pricing Agent, Data Provenance, Quality Control
+- **Related Files**: [triage_universe.py](../../scripts/triage_universe.py), [build_universe_json.py](../../scripts/build_universe_json.py), [quality_control.py](../../scripts/quality_control.py), [fetch_sec.py](../../scripts/fetch_sec.py), [calculate_pricing.py](../../scripts/calculate_pricing.py), [valuation_framework.md](../strategy/valuation_framework.md), [errata_log.md](errata_log.md)
+- **Status**: OPEN
+
+#### Question
+The strategy mandate requires ROIC discipline, FCF conversion analysis, gross margin gating, and solvency verification. None of these metrics exist as fields in any dataset in this repository. What is the minimum viable fundamental data layer required before the Stage 1 triage gate and the valuation framework can do the work their specifications describe?
+
+#### Context & Strategic Nuance
+
+**1. The Stage 1 triage gate is currently inert.**
+
+[triage_universe.py](../../scripts/triage_universe.py) reads five fields to enforce its documented thresholds (gross margin >= 15%, runway >= 12 months, dilution <= 4%/yr, Debt/Equity <= 4.0x):
+
+    gross_margin       -> company.get("gross_margin_pct")
+    fcf                -> company.get("free_cash_flow_usd_m")
+    debt_equity        -> company.get("debt_to_equity")
+    dilution_rate      -> company.get("annual_dilution_pct")
+    runway_months      -> company.get("cash_runway_months")
+
+An audit on 2026-08-28 confirmed all five are present in **0 of 175** universe records. Every gate is guarded as `if value is not None`, so all five silently pass for every equity. The function therefore returns `QUALIFIED_CANDIDATE` for anything not already carrying a manually assigned `thesis_status` of `AVOID`. The token-economics argument in [OQI-2026-08-005](open_questions_and_issues.md) presumes this gate filters value traps before Stage 2 deep compute. It does not filter anything.
+
+**2. The valuation stack runs on revenue and a P/S multiple alone.**
+
+Universe records carry `ttm_revenue`, `total_debt`, `cash_and_cash_equivalents`, `shares_outstanding`, `current_ps_multiple`, and `target_ps_multiple`. They carry no income statement below the top line and no cash flow statement at all. Specifically absent across all records: gross margin, operating margin, net income, operating cash flow, capital expenditure, free cash flow, shareholders' equity, ROIC, and cash runway.
+
+Two direct consequences:
+- Debt/Equity is uncomputable despite `total_debt` being stored, because shareholders' equity is absent.
+- Every price target in `price_target_ranges_4h` is a revenue multiple applied to a forecast revenue line. A business earning negative gross margin and one earning 70% gross margin are valued by identical machinery.
+
+This is an **extraction gap, not a sourcing gap**. The SEC XBRL `companyfacts` endpoint that [fetch_sec.py](../../scripts/fetch_sec.py) already authenticates against exposes every one of these fields as Tier 1 primary regulatory data.
+
+**3. The day-change price series is corrupt.**
+
+170 of 175 records carry `previous_close` disagreeing with `nominal_previous_close` while `cumulative_split_factor` is 1.0, yielding implausible single-session moves for large caps (ABNB +39.59%, ADP +30.80%, ABT +30.24%). Recorded against direct brokerage observation on 2026-08-28: universe.json reports ENVX at -52.13% on the day; the broker terminal reports $0.00. Logged as ERR-2026-08-015.
+
+Corrupt data is a more severe failure than absent data, because absent data fails loudly at the point of use while corrupt data propagates silently into technical support and resistance levels, momentum readings, and limit order pricing.
+
+**4. Quality control can destroy the modeling layer it is meant to protect.**
+
+[quality_control.py](../../scripts/quality_control.py) `fix_all` contains a second, independent universe record builder that emits approximately 49 fields, materially fewer than the roughly 95 fields produced by the canonical builder in [build_universe_json.py](../../scripts/build_universe_json.py). Running `--fix` overwrites both `http/data/universe.json` and `context/data/universe.json`, destroying 46 fields per record across the entire universe, including all 13-quarter revenue forecasts, 4-horizon price targets, 6-horizon share projections, and every return-engine output. [onboard_company.py](../../scripts/onboard_company.py) recommends running `--fix` in its own console output on any audit finding. Logged as ERR-2026-08-014.
+
+#### Current Baseline Implementation
+Triage thresholds are documented and enforced in code, but the code reads fields that no data pipeline populates. Valuation proceeds on P/S multiples anchored to historical medians. Price data is ingested without a concordance assertion between split-adjusted and nominal series. Quality control maintains two divergent definitions of a universe record with no schema arbitrating between them.
+
+#### Advanced AI Review Mandate
+
+**Tier 1: Fundamental extraction (unblocks triage and valuation).**
+1. Which XBRL `us-gaap` concepts should map to each required field, and how should the mapping degrade gracefully across filers using different taxonomy tags for the same economic quantity (for example `Revenues` versus `RevenueFromContractWithCustomerExcludingAssessedTax`)?
+2. How should trailing twelve month aggregation handle non-calendar fiscal years, 52/53-week retail calendars, and restated comparatives without double counting?
+3. What ROIC definition should be canonical given the strategy's ROIC > 15% hurdle: NOPAT over invested capital, and with what treatment of operating leases, goodwill, and excess cash?
+
+**Tier 2: Data classes that would materially change plan quality.**
+1. **Options chains.** The strategy specifies cash-secured puts at 0.15 to 0.30 delta, 30 to 45 DTE, targeting 12% to 18% AROC. No bid, ask, open interest, or implied volatility surface is stored. [calculate_pricing.py](../../scripts/calculate_pricing.py) accepts implied volatility as a hand-passed `--iv` argument defaulting to 0.30 for every underlying. Delta-targeted strike selection is not currently possible, which means the entire derivatives overlay is unpriced.
+2. **Realized volatility and cross-position correlation.** No ATR, beta, or correlation matrix. Concentration risk across a roughly 25-name portfolio cannot be quantified, and position sizing has no volatility input.
+3. **Consensus earnings estimates and surprise history.** `sec_filing_calendar.json` carries filing dates but no consensus EPS or revenue estimates, so the variant-perception scoring contemplated in [OQI-2026-08-001](open_questions_and_issues.md) has no consensus baseline to diverge from.
+4. **Insider transactions (Forms 3, 4, 5) and institutional 13F flow.** Both are free Tier 1 EDGAR sources and bear directly on the forensic scrutiny the thesis protocol demands.
+5. **Short interest and borrow cost.** [track_short_sellers.py](../../scripts/track_short_sellers.py) covers activist campaigns but not exchange-reported short interest, which is the quantitative complement to campaign narrative.
+
+**Tier 3: Integrity enforcement (highest urgency).**
+1. Add a validation pass asserting `previous_close == nominal_previous_close` whenever `cumulative_split_factor == 1.0`, and requiring any `|day_change_percent|` above a threshold (25% is a reasonable starting point) to be corroborated by a volume anomaly or an explicit recorded override.
+2. Establish a single authoritative universe record schema, and make both `build_universe_json.py` and `quality_control.py` validate their output against it before writing, so that no repair path can silently narrow the record.
+3. Determine whether schema conformance validation should be strengthened to assert substantive content. `validate_thesis.py` passed a HOFT dossier that described a residential furniture manufacturer as an Information Technology company pursuing software subscription monetization. Structural validation confirmed every required section was present while the content was categorically wrong.

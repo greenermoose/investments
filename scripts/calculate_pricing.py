@@ -110,7 +110,7 @@ def main():
     opt_parser.add_argument("--stock-price", type=float, required=True, help="Current underlying stock price")
     opt_parser.add_argument("--strike", type=float, required=True, help="Option strike price")
     opt_parser.add_argument("--dte", type=int, default=35, help="Days to expiration (default: 35)")
-    opt_parser.add_argument("--iv", type=float, default=0.30, help="Implied Volatility decimal (e.g. 0.30 for 30%)")
+    opt_parser.add_argument("--iv", type=float, default=0.30, help="Implied Volatility decimal (e.g. 0.30 for 30%%)")
     opt_parser.add_argument("--rate", type=float, default=0.045, help="Risk-free rate decimal (default: 0.045)")
     opt_parser.add_argument("--type", choices=["put", "call"], default="put", help="Option type (put or call)")
     opt_parser.add_argument("--json", action="store_true", help="Output raw JSON")

@@ -3,7 +3,7 @@
   "description": "Anticipated SEC filing schedule (10-Q / 10-K / 20-F) for universe equities calculated from statutory deadlines and fiscal year-ends.",
   "last_updated": "2026-08-28",
   "provenance": "TIER_1_PRIMARY_REGULATORY",
-  "total_equities_tracked": 200,
+  "total_equities_tracked": 201,
   "calendar_entries": [
     {
       "symbol": "ABT",
@@ -382,6 +382,24 @@
       "days_until_window_start": 0,
       "status": "IMMINENT_NEXT_14_DAYS",
       "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=354950"
+    },
+    {
+      "symbol": "HOFT",
+      "company_name": "HOFT Corporation",
+      "cik": "0000000000",
+      "fiscal_year_end": "02-01",
+      "filer_category": "LARGE_ACCELERATED_FILER",
+      "last_filed_form": "10-Q",
+      "last_filing_date": "2026-06-12",
+      "last_period_end": "2026-05-03",
+      "next_expected_form": "10-Q",
+      "next_expected_fiscal_period": "Q2",
+      "estimated_filing_window_start": "2026-08-27",
+      "estimated_filing_window_end": "2026-09-09",
+      "statutory_deadline": "2026-09-11",
+      "days_until_window_start": 0,
+      "status": "IMMINENT_NEXT_14_DAYS",
+      "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1077688"
     },
     {
       "symbol": "KO",

@@ -54,6 +54,34 @@ def load_universe_data():
     return buy_candidates, universe_map
 
 
+def round_to_tick(price):
+    """Round to a submittable price increment. Sub-$1.00 names quote in sub-penny ticks."""
+    if price < 1.00:
+        return max(round(price, 4), 0.0001)
+    return max(round(price, 2), 0.01)
+
+
+def compute_exit_limit(mark_price):
+    """Marketable limit price for a single-session position exit.
+
+    Priced 3% through the mark so the order fills on Monday morning without
+    mid-week monitoring. A limit set at or above technical support would risk
+    no fill on a broken thesis, which is the outcome the exit is meant to avoid,
+    so support is reported alongside the order as context rather than used as
+    the price.
+    """
+    if mark_price <= 0:
+        return 0.01
+    return round_to_tick(mark_price * 0.97)
+
+
+def format_share_count(shares):
+    """Render a share count without inventing or destroying fractional precision."""
+    if shares == int(shares):
+        return str(int(shares))
+    return f"{shares:.5f}".rstrip("0").rstrip(".")
+
+
 def build_plan_orders_for_account(acc_data, buy_candidates, universe_map=None):
     if universe_map is None:
         universe_map = {}
@@ -123,7 +151,83 @@ def build_plan_orders_for_account(acc_data, buy_candidates, universe_map=None):
                 "expectation": "Expected to settle automatically at 4:00 PM ET Friday with zero mid-week intervention."
             })
 
-    # Step 2: Covered Call Opportunities (Holdings >= 100 shares on BUY/HOLD positions)
+    # Step 2: Liquidate held equities whose thesis has been downgraded to SELL or AVOID.
+    # Ordered ahead of the covered call and cash-secured put steps so that exits are
+    # entered before any new commitment is made, and so that any BUY TO CLOSE order
+    # written above has already released the share lock on the same underlying.
+    optioned_syms = set()
+    for opt in open_options:
+        opt_sym = opt.get("symbol", "")
+        if opt_sym:
+            optioned_syms.add(opt_sym.split()[0].upper())
+
+    for pos in positions:
+        sym = pos.get("symbol", "").upper()
+        company_info = universe_map.get(sym, {})
+        rating = company_info.get("thesis_status", "HOLD").upper()
+
+        if rating not in ["SELL", "AVOID"]:
+            continue
+
+        shares = pos.get("shares", 0) or 0
+        if shares <= 0:
+            continue
+
+        mark_price = pos.get("mark_price", 0.0) or 0.0
+        limit_price = compute_exit_limit(mark_price)
+        proceeds = round(shares * limit_price, 2)
+
+        # Brokers generally accept limit orders only on whole shares; a fractional
+        # remainder settles as a separate market-order liquidation.
+        whole_shares = int(shares)
+        has_fraction = shares > whole_shares
+
+        if has_fraction:
+            share_commitment = (
+                f"{whole_shares} whole shares via limit order; "
+                f"remaining {format_share_count(shares - whole_shares)} fractional share "
+                f"liquidates as a market order"
+            )
+        else:
+            share_commitment = f"entire {format_share_count(shares)}-share position closed"
+
+        detail_parts = []
+        if sym in optioned_syms:
+            detail_parts.append(
+                f"Enter only after the {sym} BUY TO CLOSE order above fills and releases the share lock"
+            )
+        support = company_info.get("technical_support_20d")
+        if isinstance(support, (int, float)) and support > 0:
+            detail_parts.append(f"20-day technical support ${support:,.2f}")
+        if mark_price > 0 and mark_price < 1.00:
+            detail_parts.append(
+                "Sub-$1.00 quote breaches the no-penny-stock constraint in the asset universe mandate"
+            )
+        detail_text = "; ".join(detail_parts) if detail_parts else "No share lock or collateral encumbrance on this position"
+
+        roi = company_info.get("annualized_roi_pct")
+        roi_text = f"{float(roi):+.1f}% modeled 3Y CAGR" if isinstance(roi, (int, float)) else "sub-hurdle modeled return"
+
+        orders.append({
+            "num": order_num,
+            "action": "SELL TO CLOSE",
+            "symbol": f"{sym} Common Stock (Full Position Exit)",
+            "contracts": format_share_count(shares),
+            "unit_label": "Shares",
+            "share_commitment": share_commitment,
+            "type": "Limit",
+            "limit_price": f"${limit_price:,.4f} (or better)" if limit_price < 1.0 else f"${limit_price:,.2f} (or better)",
+            "cash_impact": f"+${proceeds:,.2f} estimated gross proceeds (settles T+1; not available as same-session collateral)",
+            "detail_label": "Execution",
+            "collateral": detail_text,
+            "rationale": (
+                f"Thesis rated {rating} at {roi_text}, below the 20% annualized hurdle. "
+                f"Capital is redeployed to qualifying candidates rather than held in a position the model does not expect to compound."
+            )
+        })
+        order_num += 1
+
+    # Step 3: Covered Call Opportunities (Holdings >= 100 shares on BUY/HOLD positions)
     for pos in positions:
         sym = pos.get("symbol", "").upper()
         company_info = universe_map.get(sym, {})
@@ -247,11 +351,13 @@ def generate_ascii_plan(date_str=None, accounts=None):
 
         for o in orders:
             lines.append(f"{o['num']}. {o['action']}: {o['symbol']}")
-            lines.append(f"   - Contracts:   {o['contracts']} ({o['share_commitment']})")
+            unit_label = o.get("unit_label", "Contracts")
+            detail_label = o.get("detail_label", "Collateral")
+            lines.append(f"   - {unit_label + ':':<13}{o['contracts']} ({o['share_commitment']})")
             lines.append(f"   - Order Type:  {o['type']}")
             lines.append(f"   - Limit Price: {o['limit_price']}")
             lines.append(f"   - Cash Impact: {o['cash_impact']}")
-            lines.append(f"   - Collateral:  {o['collateral']}")
+            lines.append(f"   - {detail_label + ':':<13}{o['collateral']}")
             lines.append(f"   - Rationale:   {o['rationale']}")
             lines.append("")
 

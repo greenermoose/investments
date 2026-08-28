@@ -111,8 +111,8 @@ def main():
     parser.add_argument("--status", choices=["AVOID", "QUALIFIED_CANDIDATE", "ALL"], default="ALL", help="Filter output by triage status")
     parser.add_argument("--json", action="store_true", help="Output results in JSON format")
     parser.add_argument("--summary", action="store_true", help="Display aggregate token and compute ROI summary")
-    parser.add_argument("--min-gross-margin", type=float, default=15.0, help="Minimum acceptable gross margin %")
-    parser.add_argument("--max-dilution", type=float, default=4.0, help="Maximum acceptable annual dilution %")
+    parser.add_argument("--min-gross-margin", type=float, default=15.0, help="Minimum acceptable gross margin %%")
+    parser.add_argument("--max-dilution", type=float, default=4.0, help="Maximum acceptable annual dilution %%")
     parser.add_argument("--max-debt-to-equity", type=float, default=4.0, help="Maximum acceptable Debt/Equity ratio")
 
     args = parser.parse_args()

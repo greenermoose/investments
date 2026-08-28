@@ -182,7 +182,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Deterministic Equity Screener CLI for Equity Research Agent"
     )
-    parser.add_argument("--min-roi", type=float, default=20.0, help="Minimum annualized ROI target (default: 20.0%)")
+    parser.add_argument("--min-roi", type=float, default=20.0, help="Minimum annualized ROI target (default: 20.0%%)")
     parser.add_argument("--min-cap", type=float, default=1.0, help="Minimum Market Cap in $B (default: 1.0)")
     parser.add_argument("--sector", type=str, default=None, help="Filter by sector")
     parser.add_argument("--status", type=str, default=None, help="Filter by rating status (BUY, HOLD, SELL, AVOID)")

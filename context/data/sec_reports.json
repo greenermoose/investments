@@ -4,1399 +4,1406 @@
     "ttm_revenue": 763053000000.0,
     "total_debt": 82347000000.0,
     "cash_and_cash_equivalents": 62399000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.474598+00:00"
   },
   "ABBV": {
     "shares_outstanding": 1766792821,
     "ttm_revenue": 61160000000.0,
     "total_debt": 62481000000.0,
     "cash_and_cash_equivalents": 6569000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.474598+00:00"
   },
   "ABNB": {
     "shares_outstanding": 595000000,
     "ttm_revenue": 12241000000.0,
     "total_debt": 2500000000.0,
     "cash_and_cash_equivalents": 12069000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.475829+00:00"
   },
   "ABT": {
     "shares_outstanding": 1741812429,
     "ttm_revenue": 44328000000.0,
     "total_debt": 34047000000.0,
     "cash_and_cash_equivalents": 7295000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.475829+00:00"
   },
   "ACN": {
     "shares_outstanding": 616153379,
     "ttm_revenue": 111032650000.0,
     "total_debt": 5029449000.0,
     "cash_and_cash_equivalents": 10171567000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.475829+00:00"
   },
   "ADBE": {
     "shares_outstanding": 404200000,
     "ttm_revenue": 23769000000.0,
     "total_debt": 6645000000.0,
     "cash_and_cash_equivalents": 5626000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.477000+00:00"
   },
   "ADI": {
     "shares_outstanding": 487087040,
     "ttm_revenue": 11019707000.0,
     "total_debt": 8134651000.0,
     "cash_and_cash_equivalents": 3439308000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.477000+00:00"
   },
   "ADP": {
     "shares_outstanding": 399734282,
     "ttm_revenue": 21947400000.0,
     "total_debt": 4965100000.0,
     "cash_and_cash_equivalents": 4230100000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.477000+00:00"
   },
   "ADSK": {
     "shares_outstanding": 211000000,
     "ttm_revenue": 7206000000.0,
     "total_debt": 2500000000.0,
     "cash_and_cash_equivalents": 2924000000.0,
-    "last_updated": "2026-08-28T13:24:07.984775+00:00"
+    "last_updated": "2026-08-28T13:35:10.478006+00:00"
   },
   "AEP": {
     "shares_outstanding": 540861473,
     "ttm_revenue": 21876000000.0,
     "total_debt": 49554000000.0,
     "cash_and_cash_equivalents": 516000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.478006+00:00"
   },
   "ALGN": {
     "shares_outstanding": 71618127,
     "ttm_revenue": 4034964000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1102591000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.478006+00:00"
   },
   "ALNY": {
     "shares_outstanding": 132623144,
     "ttm_revenue": 3713937000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 3308147000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.478006+00:00"
   },
   "AMAT": {
     "shares_outstanding": 793959430,
     "ttm_revenue": 28368000000.0,
     "total_debt": 6455000000.0,
     "cash_and_cash_equivalents": 8241000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.478006+00:00"
   },
   "AMD": {
     "shares_outstanding": 1630600639,
     "ttm_revenue": 34639000000.0,
     "total_debt": 3226000000.0,
     "cash_and_cash_equivalents": 13111000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.479013+00:00"
   },
   "AMGN": {
     "shares_outstanding": 539708274,
     "ttm_revenue": 36751000000.0,
     "total_debt": 57304000000.0,
     "cash_and_cash_equivalents": 13989000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.479013+00:00"
   },
   "AMZN": {
     "shares_outstanding": 10757109436,
     "ttm_revenue": 716924000000.0,
     "total_debt": 128894000000.0,
     "cash_and_cash_equivalents": 122988000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.479013+00:00"
   },
   "ANET": {
     "shares_outstanding": 1259202593,
     "ttm_revenue": 9005700000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 13343300000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.479013+00:00"
   },
   "APH": {
     "shares_outstanding": 1230234445,
     "ttm_revenue": 23998300000.0,
     "total_debt": 17177000000.0,
     "cash_and_cash_equivalents": 5419100000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.479013+00:00"
   },
   "APP": {
     "shares_outstanding": 335291000,
     "ttm_revenue": 5608584000.0,
     "total_debt": 3515072000.0,
     "cash_and_cash_equivalents": 3053306000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.480053+00:00"
   },
   "ARM": {
     "shares_outstanding": 1068000000,
     "ttm_revenue": 4920000000.0,
     "total_debt": 21000000.0,
     "cash_and_cash_equivalents": 3888000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.480053+00:00"
   },
   "ASML": {
     "shares_outstanding": 385417665,
     "ttm_revenue": 35280684000.0,
     "total_debt": 2925720000.0,
     "cash_and_cash_equivalents": 14387652000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.480053+00:00"
   },
   "AVGO": {
     "shares_outstanding": 4734668184,
     "ttm_revenue": 63887000000.0,
     "total_debt": 62655000000.0,
     "cash_and_cash_equivalents": 19628000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.480053+00:00"
   },
   "AXON": {
     "shares_outstanding": 80602077,
     "ttm_revenue": 2779536000.0,
     "total_debt": 1750000000.0,
     "cash_and_cash_equivalents": 692533000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "AXP": {
     "shares_outstanding": 682326443,
     "ttm_revenue": 72229000000.0,
     "total_debt": 59049000000.0,
     "cash_and_cash_equivalents": 45564000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "BA": {
     "shares_outstanding": 788302331,
     "ttm_revenue": 89463000000.0,
     "total_debt": 41335000000.0,
     "cash_and_cash_equivalents": 20022000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "BAM": {
     "shares_outstanding": 391700000,
     "ttm_revenue": 4817000000.0,
     "total_debt": 4084000000.0,
     "cash_and_cash_equivalents": 1503000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "BEAM": {
     "shares_outstanding": 102879214,
     "ttm_revenue": 139743000.0,
     "total_debt": 100000000.0,
     "cash_and_cash_equivalents": 1200000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "BETA": {
     "shares_outstanding": 229644583,
     "ttm_revenue": 35616000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 0.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.481061+00:00"
   },
   "BKNG": {
     "shares_outstanding": 774878436,
     "ttm_revenue": 26917000000.0,
     "total_debt": 20300000000.0,
     "cash_and_cash_equivalents": 17214000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.482068+00:00"
   },
   "BKR": {
     "shares_outstanding": 992068697,
     "ttm_revenue": 27733000000.0,
     "total_debt": 15479000000.0,
     "cash_and_cash_equivalents": 15727000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.482068+00:00"
   },
   "BLK": {
     "shares_outstanding": 154996807,
     "ttm_revenue": 24216000000.0,
     "total_debt": 12744000000.0,
     "cash_and_cash_equivalents": 10492000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.482068+00:00"
   },
   "BRK-B": {
     "shares_outstanding": 2160000000,
     "ttm_revenue": 371444000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 41360000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.482068+00:00"
   },
   "BSX": {
     "shares_outstanding": 1486355179,
     "ttm_revenue": 20074000000.0,
     "total_debt": 10915000000.0,
     "cash_and_cash_equivalents": 539000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.482068+00:00"
   },
   "CAT": {
     "shares_outstanding": 459674889,
     "ttm_revenue": 67589000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 6713000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.483075+00:00"
   },
   "CAVA": {
     "shares_outstanding": 116800000,
     "ttm_revenue": 704000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 385000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.483075+00:00"
   },
   "CCEP": {
     "shares_outstanding": 449086551,
     "ttm_revenue": 22573080000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 571320000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.483075+00:00"
   },
   "CDNS": {
     "shares_outstanding": 275816000,
     "ttm_revenue": 5296759000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1406668000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.483075+00:00"
   },
   "CEG": {
     "shares_outstanding": 361190063,
     "ttm_revenue": 29748000000.0,
     "total_debt": 19111000000.0,
     "cash_and_cash_equivalents": 697000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.483075+00:00"
   },
   "CHTR": {
     "shares_outstanding": 122789924,
     "ttm_revenue": 54774000000.0,
     "total_debt": 93959000000.0,
     "cash_and_cash_equivalents": 509000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.484082+00:00"
   },
   "CMCSA": {
     "shares_outstanding": 3580000000,
     "ttm_revenue": 123707000000.0,
     "total_debt": 90400000000.0,
     "cash_and_cash_equivalents": 7678000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.484082+00:00"
   },
   "CME": {
     "shares_outstanding": 360005000,
     "ttm_revenue": 6520600000.0,
     "total_debt": 46300000.0,
     "cash_and_cash_equivalents": 2275600000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.484082+00:00"
   },
   "COST": {
     "shares_outstanding": 443652540,
     "ttm_revenue": 411642000000.0,
     "total_debt": 5684000000.0,
     "cash_and_cash_equivalents": 19996000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.484082+00:00"
   },
   "CPRT": {
     "shares_outstanding": 963308388,
     "ttm_revenue": 6945504000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 3354142000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.484082+00:00"
   },
   "CRM": {
     "shares_outstanding": 923000000,
     "ttm_revenue": 41525000000.0,
     "total_debt": 39500000000.0,
     "cash_and_cash_equivalents": 11837000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CRSP": {
     "shares_outstanding": 96448792,
     "ttm_revenue": 13097000.0,
     "total_debt": 600000000.0,
     "cash_and_cash_equivalents": 2364352000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CRWD": {
     "shares_outstanding": 252098440,
     "ttm_revenue": 4812005000.0,
     "total_debt": 745843000.0,
     "cash_and_cash_equivalents": 4552801000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CSCO": {
     "shares_outstanding": 3949893042,
     "ttm_revenue": 91188000000.0,
     "total_debt": 23002000000.0,
     "cash_and_cash_equivalents": 16640000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CSGP": {
     "shares_outstanding": 408355715,
     "ttm_revenue": 3247000000.0,
     "total_debt": 1000000000.0,
     "cash_and_cash_equivalents": 1266000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CSIQ": {
     "shares_outstanding": 67810136,
     "ttm_revenue": 5595107000.0,
     "total_debt": 8399306000.0,
     "cash_and_cash_equivalents": 1370418000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.485090+00:00"
   },
   "CSX": {
     "shares_outstanding": 1852474917,
     "ttm_revenue": 14092000000.0,
     "total_debt": 18864000000.0,
     "cash_and_cash_equivalents": 1390000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.486097+00:00"
   },
   "CTAS": {
     "shares_outstanding": 399889646,
     "ttm_revenue": 16595794000.0,
     "total_debt": 2656791000.0,
     "cash_and_cash_equivalents": 183204000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.486097+00:00"
   },
   "CTSH": {
     "shares_outstanding": 478246920,
     "ttm_revenue": 21108000000.0,
     "total_debt": 568000000.0,
     "cash_and_cash_equivalents": 1517000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.486097+00:00"
   },
   "CVX": {
     "shares_outstanding": 1975771274,
     "ttm_revenue": 189031000000.0,
     "total_debt": 401000000.0,
     "cash_and_cash_equivalents": 9582000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.486097+00:00"
   },
   "DASH": {
     "shares_outstanding": 434924000,
     "ttm_revenue": 13717000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 5347000000.0,
-    "last_updated": "2026-08-28T13:24:07.986646+00:00"
+    "last_updated": "2026-08-28T13:35:10.486097+00:00"
   },
   "DDOG": {
     "shares_outstanding": 354771000,
     "ttm_revenue": 3427158000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 4985438000.0,
-    "last_updated": "2026-08-28T13:24:07.994517+00:00"
+    "last_updated": "2026-08-28T13:35:10.487134+00:00"
   },
   "DE": {
     "shares_outstanding": 269625412,
     "ttm_revenue": 68181000000.0,
     "total_debt": 17115000000.0,
     "cash_and_cash_equivalents": 8928000000.0,
-    "last_updated": "2026-08-28T13:24:07.994517+00:00"
+    "last_updated": "2026-08-28T13:35:10.487134+00:00"
   },
   "DHR": {
     "shares_outstanding": 707770627,
     "ttm_revenue": 24568000000.0,
     "total_debt": 26558000000.0,
     "cash_and_cash_equivalents": 4348000000.0,
-    "last_updated": "2026-08-28T13:24:07.994517+00:00"
+    "last_updated": "2026-08-28T13:35:10.487134+00:00"
   },
   "DIS": {
     "shares_outstanding": 1736511424,
     "ttm_revenue": 153527000000.0,
     "total_debt": 46041000000.0,
     "cash_and_cash_equivalents": 5185000000.0,
-    "last_updated": "2026-08-28T13:24:07.994517+00:00"
+    "last_updated": "2026-08-28T13:35:10.487134+00:00"
   },
   "DT": {
     "shares_outstanding": 291475733,
     "ttm_revenue": 2018387000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1108864000.0,
-    "last_updated": "2026-08-28T13:24:07.995321+00:00"
+    "last_updated": "2026-08-28T13:35:10.487134+00:00"
   },
   "DUOL": {
     "shares_outstanding": 46730000,
     "ttm_revenue": 591000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 910000000.0,
-    "last_updated": "2026-08-28T13:24:07.995321+00:00"
+    "last_updated": "2026-08-28T13:35:10.488141+00:00"
   },
   "DXCM": {
     "shares_outstanding": 385872977,
     "ttm_revenue": 4662000000.0,
     "total_debt": 52300000.0,
     "cash_and_cash_equivalents": 1105000000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.488141+00:00"
   },
   "EA": {
     "shares_outstanding": 250751484,
     "ttm_revenue": 1986000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 2288000000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.488141+00:00"
   },
   "EDIT": {
     "shares_outstanding": 97906282,
     "ttm_revenue": 40520000.0,
     "total_debt": 55738000.0,
     "cash_and_cash_equivalents": 211645000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.488141+00:00"
   },
   "EME": {
     "shares_outstanding": 44440278,
     "ttm_revenue": 16986422000.0,
     "total_debt": 6100000.0,
     "cash_and_cash_equivalents": 924411000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.488141+00:00"
   },
   "ENPH": {
     "shares_outstanding": 131098819,
     "ttm_revenue": 1472985000.0,
     "total_debt": 572510000.0,
     "cash_and_cash_equivalents": 930641000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "ENVX": {
     "shares_outstanding": 218153440,
     "ttm_revenue": 31821000.0,
     "total_debt": 532824000.0,
     "cash_and_cash_equivalents": 475781000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "EOSE": {
     "shares_outstanding": 339514027,
     "ttm_revenue": 182701000.0,
     "total_debt": 948284000.0,
     "cash_and_cash_equivalents": 305491000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "ETN": {
     "shares_outstanding": 388400000,
     "ttm_revenue": 27448000000.0,
     "total_debt": 18509000000.0,
     "cash_and_cash_equivalents": 695000000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "EW": {
     "shares_outstanding": 575800000,
     "ttm_revenue": 6067600000.0,
     "total_debt": 598700000.0,
     "cash_and_cash_equivalents": 4252700000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "EXC": {
     "shares_outstanding": 1023208142,
     "ttm_revenue": 24258000000.0,
     "total_debt": 48524000000.0,
     "cash_and_cash_equivalents": 713000000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.489147+00:00"
   },
   "FANG": {
     "shares_outstanding": 281313297,
     "ttm_revenue": 15026000000.0,
     "total_debt": 12614000000.0,
     "cash_and_cash_equivalents": 462000000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.490153+00:00"
   },
   "FAST": {
     "shares_outstanding": 1148035061,
     "ttm_revenue": 8200500000.0,
     "total_debt": 120000000.0,
     "cash_and_cash_equivalents": 204700000.0,
-    "last_updated": "2026-08-28T13:24:07.995698+00:00"
+    "last_updated": "2026-08-28T13:35:10.490153+00:00"
   },
   "FER": {
     "shares_outstanding": 720626181,
     "ttm_revenue": 10397160000.0,
     "total_debt": 11261160000.0,
     "cash_and_cash_equivalents": 4612680000.0,
-    "last_updated": "2026-08-28T13:24:07.998260+00:00"
+    "last_updated": "2026-08-28T13:35:10.490153+00:00"
   },
   "FICO": {
     "shares_outstanding": 23190906,
     "ttm_revenue": 3593419000.0,
     "total_debt": 5582389000.0,
     "cash_and_cash_equivalents": 248444000.0,
-    "last_updated": "2026-08-28T13:24:07.998260+00:00"
+    "last_updated": "2026-08-28T13:35:10.490153+00:00"
   },
   "FTNT": {
     "shares_outstanding": 732648391,
     "ttm_revenue": 6799600000.0,
     "total_debt": 500000000.0,
     "cash_and_cash_equivalents": 2934900000.0,
-    "last_updated": "2026-08-28T13:24:07.998260+00:00"
+    "last_updated": "2026-08-28T13:35:10.491159+00:00"
   },
   "GE": {
     "shares_outstanding": 1037562513,
     "ttm_revenue": 45855000000.0,
     "total_debt": 17157000000.0,
     "cash_and_cash_equivalents": 9345000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.491159+00:00"
   },
   "GEHC": {
     "shares_outstanding": 455749767,
     "ttm_revenue": 20625000000.0,
     "total_debt": 10172000000.0,
     "cash_and_cash_equivalents": 2261000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.491159+00:00"
   },
   "GEV": {
     "shares_outstanding": 266333581,
     "ttm_revenue": 38068000000.0,
     "total_debt": 2794000000.0,
     "cash_and_cash_equivalents": 13120000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.491159+00:00"
   },
   "GILD": {
     "shares_outstanding": 1241569874,
     "ttm_revenue": 29443000000.0,
     "total_debt": 26246000000.0,
     "cash_and_cash_equivalents": 3179000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.492165+00:00"
   },
   "GNRC": {
     "shares_outstanding": 58868681,
     "ttm_revenue": 4209147000.0,
     "total_debt": 1281010000.0,
     "cash_and_cash_equivalents": 264921000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.492165+00:00"
   },
   "GOOG": {
     "shares_outstanding": 12230000000,
     "ttm_revenue": 402836000000.0,
     "total_debt": 101085000000.0,
     "cash_and_cash_equivalents": 242474000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.492165+00:00"
   },
   "GOOGL": {
     "shares_outstanding": 12230000000,
     "ttm_revenue": 402836000000.0,
     "total_debt": 101085000000.0,
     "cash_and_cash_equivalents": 242474000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.492165+00:00"
   },
   "GS": {
     "shares_outstanding": 295007421,
     "ttm_revenue": 58283000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 187266000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "GTLB": {
     "shares_outstanding": 169948000,
     "ttm_revenue": 955224000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 335395000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "GWH": {
     "shares_outstanding": 29389170,
     "ttm_revenue": 1583000.0,
     "total_debt": 14480000.0,
     "cash_and_cash_equivalents": 10800000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "GWRE": {
     "shares_outstanding": 84657470,
     "ttm_revenue": 2088649000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 749534000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "HD": {
     "shares_outstanding": 996011466,
     "ttm_revenue": 164683000000.0,
     "total_debt": 44828000000.0,
     "cash_and_cash_equivalents": 1601000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "HEI": {
     "shares_outstanding": 139544000,
     "ttm_revenue": 7700222000.0,
     "total_debt": 2541173000.0,
     "cash_and_cash_equivalents": 240959000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
+  },
+  "HOFT": {
+    "shares_outstanding": 10779729,
+    "ttm_revenue": 278139000.0,
+    "total_debt": 0.0,
+    "cash_and_cash_equivalents": 10618000.0,
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "HON": {
     "shares_outstanding": 316940010,
     "ttm_revenue": 37442000000.0,
     "total_debt": 26228000000.0,
     "cash_and_cash_equivalents": 9196000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.493172+00:00"
   },
   "HUBS": {
     "shares_outstanding": 51217740,
     "ttm_revenue": 3131266000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1337943000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.494851+00:00"
   },
   "IBM": {
     "shares_outstanding": 942134390,
     "ttm_revenue": 67535000000.0,
     "total_debt": 56212000000.0,
     "cash_and_cash_equivalents": 7172000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.494851+00:00"
   },
   "ICE": {
     "shares_outstanding": 565512495,
     "ttm_revenue": 12640000000.0,
     "total_debt": 19846000000.0,
     "cash_and_cash_equivalents": 1067000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.494851+00:00"
   },
   "IDXX": {
     "shares_outstanding": 78882997,
     "ttm_revenue": 4303702000.0,
     "total_debt": 449864000.0,
     "cash_and_cash_equivalents": 196933000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.494851+00:00"
   },
   "INSM": {
     "shares_outstanding": 216752451,
     "ttm_revenue": 1037414000.0,
     "total_debt": 547062000.0,
     "cash_and_cash_equivalents": 1160312000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.494851+00:00"
   },
   "INTC": {
     "shares_outstanding": 5026000000,
     "ttm_revenue": 52853000000.0,
     "total_debt": 50537000000.0,
     "cash_and_cash_equivalents": 29727000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.495855+00:00"
   },
   "INTU": {
     "shares_outstanding": 276550000,
     "ttm_revenue": 29515000000.0,
     "total_debt": 6200000000.0,
     "cash_and_cash_equivalents": 4681000000.0,
-    "last_updated": "2026-08-28T13:24:07.998824+00:00"
+    "last_updated": "2026-08-28T13:35:10.495855+00:00"
   },
   "IOT": {
     "shares_outstanding": 583000000,
     "ttm_revenue": 910000000.0,
     "total_debt": 95000000.0,
     "cash_and_cash_equivalents": 1080000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.495855+00:00"
   },
   "ISRG": {
     "shares_outstanding": 354162842,
     "ttm_revenue": 10064700000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 5216200000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496362+00:00"
   },
   "JNJ": {
     "shares_outstanding": 2407216971,
     "ttm_revenue": 94193000000.0,
     "total_debt": 49036000000.0,
     "cash_and_cash_equivalents": 20758000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496362+00:00"
   },
   "JPM": {
     "shares_outstanding": 2658186195,
     "ttm_revenue": 182447000000.0,
     "total_debt": 72430000000.0,
     "cash_and_cash_equivalents": 309811000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496362+00:00"
   },
   "KDP": {
     "shares_outstanding": 1360559471,
     "ttm_revenue": 16603000000.0,
     "total_debt": 29980000000.0,
     "cash_and_cash_equivalents": 1517000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496867+00:00"
   },
   "KHC": {
     "shares_outstanding": 1185777638,
     "ttm_revenue": 24942000000.0,
     "total_debt": 17619000000.0,
     "cash_and_cash_equivalents": 2681000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496867+00:00"
   },
   "KLAC": {
     "shares_outstanding": 130627521,
     "ttm_revenue": 13579476000.0,
     "total_debt": 5887415000.0,
     "cash_and_cash_equivalents": 1649842000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496867+00:00"
   },
   "KO": {
     "shares_outstanding": 4300723069,
     "ttm_revenue": 47941000000.0,
     "total_debt": 39065000000.0,
     "cash_and_cash_equivalents": 11083000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496867+00:00"
   },
   "LIN": {
     "shares_outstanding": 460980163,
     "ttm_revenue": 33986000000.0,
     "total_debt": 20678000000.0,
     "cash_and_cash_equivalents": 4898000000.0,
-    "last_updated": "2026-08-28T13:24:08.002311+00:00"
+    "last_updated": "2026-08-28T13:35:10.496867+00:00"
   },
   "LLY": {
     "shares_outstanding": 941741406,
     "ttm_revenue": 65179000000.0,
     "total_debt": 54908000000.0,
     "cash_and_cash_equivalents": 8950000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.497874+00:00"
   },
   "LMT": {
     "shares_outstanding": 230563608,
     "ttm_revenue": 75048000000.0,
     "total_debt": 21700000000.0,
     "cash_and_cash_equivalents": 3791000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.497874+00:00"
   },
   "LRCX": {
     "shares_outstanding": 1250571000,
     "ttm_revenue": 23232690000.0,
     "total_debt": 3730490000.0,
     "cash_and_cash_equivalents": 5579171000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.497874+00:00"
   },
   "MA": {
     "shares_outstanding": 887000000,
     "ttm_revenue": 32791000000.0,
     "total_debt": 24798000000.0,
     "cash_and_cash_equivalents": 11291000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498380+00:00"
   },
   "MANH": {
     "shares_outstanding": 59164602,
     "ttm_revenue": 1081392000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 186110000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498380+00:00"
   },
   "MAR": {
     "shares_outstanding": 263688623,
     "ttm_revenue": 26186000000.0,
     "total_debt": 16915000000.0,
     "cash_and_cash_equivalents": 462000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MCD": {
     "shares_outstanding": 707641531,
     "ttm_revenue": 26885000000.0,
     "total_debt": 39900000000.0,
     "cash_and_cash_equivalents": 822000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MCHP": {
     "shares_outstanding": 542079281,
     "ttm_revenue": 4713100000.0,
     "total_debt": 5398900000.0,
     "cash_and_cash_equivalents": 272300000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MCO": {
     "shares_outstanding": 173200000,
     "ttm_revenue": 7718000000.0,
     "total_debt": 6946000000.0,
     "cash_and_cash_equivalents": 1496000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MDB": {
     "shares_outstanding": 80369527,
     "ttm_revenue": 2463797000.0,
     "total_debt": 28208000.0,
     "cash_and_cash_equivalents": 2427153000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MDLZ": {
     "shares_outstanding": 1281845669,
     "ttm_revenue": 38537000000.0,
     "total_debt": 15468000000.0,
     "cash_and_cash_equivalents": 1631000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.498885+00:00"
   },
   "MELI": {
     "shares_outstanding": 50697182,
     "ttm_revenue": 28893000000.0,
     "total_debt": 10675000000.0,
     "cash_and_cash_equivalents": 5730000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "META": {
     "shares_outstanding": 2538000000,
     "ttm_revenue": 200966000000.0,
     "total_debt": 84000000000.0,
     "cash_and_cash_equivalents": 90260000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "MMM": {
     "shares_outstanding": 515722417,
     "ttm_revenue": 24948000000.0,
     "total_debt": 12551000000.0,
     "cash_and_cash_equivalents": 2955000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "MNDY": {
     "shares_outstanding": 51500000,
     "ttm_revenue": 722000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1360000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "MNST": {
     "shares_outstanding": 978008110,
     "ttm_revenue": 8294343000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 3419256000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "MPWR": {
     "shares_outstanding": 49130000,
     "ttm_revenue": 2790459000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1413761000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.499892+00:00"
   },
   "MRK": {
     "shares_outstanding": 2469824415,
     "ttm_revenue": 65011000000.0,
     "total_debt": 53906000000.0,
     "cash_and_cash_equivalents": 7141000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "MRVL": {
     "shares_outstanding": 874300000,
     "ttm_revenue": 8194600000.0,
     "total_debt": 4999900000.0,
     "cash_and_cash_equivalents": 3843600000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "MS": {
     "shares_outstanding": 1577284817,
     "ttm_revenue": 70645000000.0,
     "total_debt": 383156000000.0,
     "cash_and_cash_equivalents": 160135000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "MSFT": {
     "shares_outstanding": 7428434704,
     "ttm_revenue": 331839000000.0,
     "total_debt": 46136000000.0,
     "cash_and_cash_equivalents": 76843000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "MSTR": {
     "shares_outstanding": 343275000,
     "ttm_revenue": 477233000.0,
     "total_debt": 6709928000.0,
     "cash_and_cash_equivalents": 2447982000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "MU": {
     "shares_outstanding": 1127734051,
     "ttm_revenue": 130105000000.0,
     "total_debt": 5722000000.0,
     "cash_and_cash_equivalents": 26022000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.501175+00:00"
   },
   "NET": {
     "shares_outstanding": 353485000,
     "ttm_revenue": 2167937000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 4162798000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.502184+00:00"
   },
   "NFLX": {
     "shares_outstanding": 4163939676,
     "ttm_revenue": 45183036000.0,
     "total_debt": 14309306000.0,
     "cash_and_cash_equivalents": 9127910000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.502184+00:00"
   },
   "NKE": {
     "shares_outstanding": 1479800000,
     "ttm_revenue": 46398000000.0,
     "total_debt": 7942000000.0,
     "cash_and_cash_equivalents": 7563000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.502184+00:00"
   },
   "NOW": {
     "shares_outstanding": 1034000000,
     "ttm_revenue": 13278000000.0,
     "total_debt": 7535000000.0,
     "cash_and_cash_equivalents": 4664000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.502184+00:00"
   },
   "NRGV": {
     "shares_outstanding": 178246198,
     "ttm_revenue": 203671000.0,
     "total_debt": 264201000.0,
     "cash_and_cash_equivalents": 93375000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.503243+00:00"
   },
   "NTLA": {
     "shares_outstanding": 139722277,
     "ttm_revenue": 67671000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 437759000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.503243+00:00"
   },
   "NU": {
     "shares_outstanding": 4831000000,
     "ttm_revenue": 5620000000.0,
     "total_debt": 1250000000.0,
     "cash_and_cash_equivalents": 7450000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.503243+00:00"
   },
   "NVDA": {
     "shares_outstanding": 24300000000,
     "ttm_revenue": 215938000000.0,
     "total_debt": 8470000000.0,
     "cash_and_cash_equivalents": 13237000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.503243+00:00"
   },
   "NXPI": {
     "shares_outstanding": 252692845,
     "ttm_revenue": 12269000000.0,
     "total_debt": 11724000000.0,
     "cash_and_cash_equivalents": 3708000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.503243+00:00"
   },
   "ODFL": {
     "shares_outstanding": 207968283,
     "ttm_revenue": 5496389000.0,
     "total_debt": 19997000.0,
     "cash_and_cash_equivalents": 283939000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504253+00:00"
   },
   "ONTO": {
     "shares_outstanding": 49743567,
     "ttm_revenue": 927027000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1882150000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504253+00:00"
   },
   "ORCL": {
     "shares_outstanding": 2876046000,
     "ttm_revenue": 67357000000.0,
     "total_debt": 130105000000.0,
     "cash_and_cash_equivalents": 31894000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504253+00:00"
   },
   "ORLY": {
     "shares_outstanding": 828715079,
     "ttm_revenue": 17781992000.0,
     "total_debt": 7014543000.0,
     "cash_and_cash_equivalents": 262181000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504758+00:00"
   },
   "PANW": {
     "shares_outstanding": 816000000,
     "ttm_revenue": 15612000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 3111000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504758+00:00"
   },
   "PAYX": {
     "shares_outstanding": 358290881,
     "ttm_revenue": 6512000000.0,
     "total_debt": 4600000000.0,
     "cash_and_cash_equivalents": 1124500000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.504758+00:00"
   },
   "PCAR": {
     "shares_outstanding": 526286229,
     "ttm_revenue": 28444800000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 0.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.505263+00:00"
   },
   "PDD": {
     "shares_outstanding": 1423396462,
     "ttm_revenue": 59564925931.03,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 24128852827.59,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.505263+00:00"
   },
   "PEP": {
     "shares_outstanding": 1366768315,
     "ttm_revenue": 93925000000.0,
     "total_debt": 42612000000.0,
     "cash_and_cash_equivalents": 10716000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.505263+00:00"
   },
   "PG": {
     "shares_outstanding": 2328598978,
     "ttm_revenue": 87032000000.0,
     "total_debt": 34138000000.0,
     "cash_and_cash_equivalents": 9942000000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.505263+00:00"
   },
   "PLTR": {
     "shares_outstanding": 2402897000,
     "ttm_revenue": 5200630000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 9409099000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.505263+00:00"
   },
   "PODD": {
     "shares_outstanding": 69264674,
     "ttm_revenue": 2708100000.0,
     "total_debt": 929500000.0,
     "cash_and_cash_equivalents": 534900000.0,
-    "last_updated": "2026-08-28T13:24:08.003856+00:00"
+    "last_updated": "2026-08-28T13:35:10.506271+00:00"
   },
   "PWR": {
     "shares_outstanding": 150060149,
     "ttm_revenue": 28479697000.0,
     "total_debt": 5421862000.0,
     "cash_and_cash_equivalents": 506431000.0,
-    "last_updated": "2026-08-28T13:24:08.011376+00:00"
+    "last_updated": "2026-08-28T13:35:10.506271+00:00"
   },
   "PYPL": {
     "shares_outstanding": 920664542,
     "ttm_revenue": 33172000000.0,
     "total_debt": 9414000000.0,
     "cash_and_cash_equivalents": 9342000000.0,
-    "last_updated": "2026-08-28T13:24:08.011376+00:00"
+    "last_updated": "2026-08-28T13:35:10.506271+00:00"
   },
   "QCOM": {
     "shares_outstanding": 1054000000,
     "ttm_revenue": 67901000000.0,
     "total_debt": 15270000000.0,
     "cash_and_cash_equivalents": 8304000000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.506776+00:00"
   },
   "REGN": {
     "shares_outstanding": 103400000,
     "ttm_revenue": 14342900000.0,
     "total_debt": 2706600000.0,
     "cash_and_cash_equivalents": 7994600000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.506776+00:00"
   },
   "RMD": {
     "shares_outstanding": 145056384,
     "ttm_revenue": 5653443000.0,
     "total_debt": 400000000.0,
     "cash_and_cash_equivalents": 1469234000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.507281+00:00"
   },
   "ROP": {
     "shares_outstanding": 100917359,
     "ttm_revenue": 7902500000.0,
     "total_debt": 11319400000.0,
     "cash_and_cash_equivalents": 364900000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.507281+00:00"
   },
   "ROST": {
     "shares_outstanding": 322356795,
     "ttm_revenue": 22750559000.0,
     "total_debt": 1018187000.0,
     "cash_and_cash_equivalents": 4130980000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.507281+00:00"
   },
   "SBUX": {
     "shares_outstanding": 1139700000,
     "ttm_revenue": 58131000000.0,
     "total_debt": 13384100000.0,
     "cash_and_cash_equivalents": 3610300000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.508303+00:00"
   },
   "SEDG": {
     "shares_outstanding": 60818202,
     "ttm_revenue": 1184444000.0,
     "total_debt": 19171000.0,
     "cash_and_cash_equivalents": 546942000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.508303+00:00"
   },
   "SHOP": {
     "shares_outstanding": 1299266611,
     "ttm_revenue": 11556000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 4947000000.0,
-    "last_updated": "2026-08-28T13:24:08.011948+00:00"
+    "last_updated": "2026-08-28T13:35:10.509322+00:00"
   },
   "SHW": {
     "shares_outstanding": 242758151,
     "ttm_revenue": 23574300000.0,
     "total_debt": 9825700000.0,
     "cash_and_cash_equivalents": 293500000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.509322+00:00"
   },
   "SLDP": {
     "shares_outstanding": 224983692,
     "ttm_revenue": 21747000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 242435000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.509322+00:00"
   },
   "SNOW": {
     "shares_outstanding": 345700000,
     "ttm_revenue": 4683946000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 2954998000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.509322+00:00"
   },
   "SNPS": {
     "shares_outstanding": 191562027,
     "ttm_revenue": 7093581000.0,
     "total_debt": 10111691000.0,
     "cash_and_cash_equivalents": 2484438000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.510337+00:00"
   },
   "SPGI": {
     "shares_outstanding": 298800000,
     "ttm_revenue": 15336000000.0,
     "total_debt": 13318000000.0,
     "cash_and_cash_equivalents": 1810000000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.510337+00:00"
   },
   "STOK": {
     "shares_outstanding": 62281655,
     "ttm_revenue": 184420000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 292818000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.510842+00:00"
   },
   "STX": {
     "shares_outstanding": 224228992,
     "ttm_revenue": 12195000000.0,
     "total_debt": 3565000000.0,
     "cash_and_cash_equivalents": 1704000000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.510842+00:00"
   },
   "SYK": {
     "shares_outstanding": 383573046,
     "ttm_revenue": 25116000000.0,
     "total_debt": 14942000000.0,
     "cash_and_cash_equivalents": 3476000000.0,
-    "last_updated": "2026-08-28T13:24:08.013343+00:00"
+    "last_updated": "2026-08-28T13:35:10.510842+00:00"
   },
   "TDG": {
     "shares_outstanding": 55933583,
     "ttm_revenue": 14682000000.0,
     "total_debt": 32621000000.0,
     "cash_and_cash_equivalents": 2773000000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.511349+00:00"
   },
   "TDOC": {
     "shares_outstanding": 180513087,
     "ttm_revenue": 2529977000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 774348000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.511349+00:00"
   },
   "TEAM": {
     "shares_outstanding": 260163000,
     "ttm_revenue": 6572308000.0,
     "total_debt": 989560000.0,
     "cash_and_cash_equivalents": 1239512000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.511349+00:00"
   },
   "TMO": {
     "shares_outstanding": 369747286,
     "ttm_revenue": 44556000000.0,
     "total_debt": 39181000000.0,
     "cash_and_cash_equivalents": 4064000000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.511349+00:00"
   },
   "TMUS": {
     "shares_outstanding": 1082204717,
     "ttm_revenue": 88309000000.0,
     "total_debt": 7238000000.0,
     "cash_and_cash_equivalents": 2825000000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TOST": {
     "shares_outstanding": 575500000,
     "ttm_revenue": 3560000000.0,
     "total_debt": 45000000.0,
     "cash_and_cash_equivalents": 1420000000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TRI": {
     "shares_outstanding": 486092864,
     "ttm_revenue": 7476000000.0,
     "total_debt": 2123000000.0,
     "cash_and_cash_equivalents": 276000000.0,
-    "last_updated": "2026-08-28T13:24:08.014724+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TRV": {
     "shares_outstanding": 212644693,
     "ttm_revenue": 48828000000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 621000000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TSLA": {
     "shares_outstanding": 3755723871,
     "ttm_revenue": 94827000000.0,
     "total_debt": 9080000000.0,
     "cash_and_cash_equivalents": 43524000000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TSM": {
     "shares_outstanding": 5186546648,
     "ttm_revenue": 89055621538.46,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 65251532307.69,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TTD": {
     "shares_outstanding": 471494000,
     "ttm_revenue": 2896284000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1485333000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TTWO": {
     "shares_outstanding": 185666663,
     "ttm_revenue": 6656400000.0,
     "total_debt": 1900000000.0,
     "cash_and_cash_equivalents": 1826600000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.512359+00:00"
   },
   "TXN": {
     "shares_outstanding": 910092791,
     "ttm_revenue": 17682000000.0,
     "total_debt": 14150000000.0,
     "cash_and_cash_equivalents": 7001000000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.513808+00:00"
   },
   "TYL": {
     "shares_outstanding": 42167455,
     "ttm_revenue": 2332340000.0,
     "total_debt": 1437500000.0,
     "cash_and_cash_equivalents": 970035000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.513808+00:00"
   },
   "UBER": {
     "shares_outstanding": 2035599013,
     "ttm_revenue": 52017000000.0,
     "total_debt": 10726000000.0,
     "cash_and_cash_equivalents": 5391000000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.513808+00:00"
   },
   "UNH": {
     "shares_outstanding": 908144404,
     "ttm_revenue": 447567000000.0,
     "total_debt": 73328000000.0,
     "cash_and_cash_equivalents": 31468000000.0,
-    "last_updated": "2026-08-28T13:24:08.015918+00:00"
+    "last_updated": "2026-08-28T13:35:10.513808+00:00"
   },
   "UNP": {
     "shares_outstanding": 593713213,
     "ttm_revenue": 24510000000.0,
     "total_debt": 29039000000.0,
     "cash_and_cash_equivalents": 1614000000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.513808+00:00"
   },
   "URI": {
     "shares_outstanding": 62998147,
     "ttm_revenue": 16099000000.0,
     "total_debt": 13886000000.0,
     "cash_and_cash_equivalents": 156000000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.514817+00:00"
   },
   "V": {
     "shares_outstanding": 469280842,
     "ttm_revenue": 40000000000.0,
     "total_debt": 23976000000.0,
     "cash_and_cash_equivalents": 12404000000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.514817+00:00"
   },
   "VEEV": {
     "shares_outstanding": 162443291,
     "ttm_revenue": 3195311000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 7242947000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.514817+00:00"
   },
   "VRSK": {
     "shares_outstanding": 137941888,
     "ttm_revenue": 3072700000.0,
     "total_debt": 4217200000.0,
     "cash_and_cash_equivalents": 524500000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.514817+00:00"
   },
   "VRSN": {
     "shares_outstanding": 91000000,
     "ttm_revenue": 1656600000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 1035700000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.514817+00:00"
   },
   "VRT": {
     "shares_outstanding": 384108816,
     "ttm_revenue": 10229900000.0,
     "total_debt": 2939800000.0,
     "cash_and_cash_equivalents": 2810600000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.515837+00:00"
   },
   "VRTX": {
     "shares_outstanding": 253805417,
     "ttm_revenue": 12001300000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 7852400000.0,
-    "last_updated": "2026-08-28T13:24:08.017337+00:00"
+    "last_updated": "2026-08-28T13:35:10.515837+00:00"
   },
   "VZ": {
     "shares_outstanding": 4154775202,
     "ttm_revenue": 138191000000.0,
     "total_debt": 143448000000.0,
     "cash_and_cash_equivalents": 1752000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.515837+00:00"
   },
   "WBD": {
     "shares_outstanding": 2507136702,
     "ttm_revenue": 37296000000.0,
     "total_debt": 30530000000.0,
     "cash_and_cash_equivalents": 3369000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.515837+00:00"
   },
   "WDAY": {
     "shares_outstanding": 253891000,
     "ttm_revenue": 9552000000.0,
     "total_debt": 3000000000.0,
     "cash_and_cash_equivalents": 4353000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.515837+00:00"
   },
   "WDC": {
     "shares_outstanding": 344682131,
     "ttm_revenue": 12919000000.0,
     "total_debt": 1060000000.0,
     "cash_and_cash_equivalents": 1579000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.516846+00:00"
   },
   "WMT": {
     "shares_outstanding": 7972402501,
     "ttm_revenue": 713163000000.0,
     "total_debt": 40783000000.0,
     "cash_and_cash_equivalents": 10729000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.516846+00:00"
   },
   "XEL": {
     "shares_outstanding": 624269560,
     "ttm_revenue": 14669000000.0,
     "total_debt": 35948000000.0,
     "cash_and_cash_equivalents": 2010000000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.516846+00:00"
   },
   "XYZ": {
     "shares_outstanding": 597586000,
     "ttm_revenue": 24193683000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 0.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.517351+00:00"
   },
   "ZM": {
     "shares_outstanding": 294434952,
     "ttm_revenue": 4868769000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 7720975000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.517351+00:00"
   },
   "ZS": {
     "shares_outstanding": 160790703,
     "ttm_revenue": 4846313000.0,
     "total_debt": 0.0,
     "cash_and_cash_equivalents": 982112000.0,
-    "last_updated": "2026-08-28T13:24:08.018812+00:00"
+    "last_updated": "2026-08-28T13:35:10.517859+00:00"
   }
 }

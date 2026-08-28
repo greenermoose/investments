@@ -37,26 +37,26 @@
   <main class="docs-main">
     <div class="docs-header">
       <h1>Agentic Investment Advisor &amp; Context Provider</h1>
-      <p class="docs-lead">An institutional multi-agent investment architecture engineered to compound US public equities at &gt;= 20% annualized return over a 20-year horizon.</p>
+      <p class="docs-lead">A multi-agent investment architecture engineered to compound US public equities at &gt;= 20%
+        annualized return over a 20-year horizon.</p>
     </div>
 
     <div class="callout warning">
       <div class="callout-title">Disclaimer: Use at Your Own Risk</div>
-      <p>This repository and companion dashboard are strictly for educational, informational, and research purposes.
-        Nothing contained herein constitutes financial, investment, legal, or tax advice. Investing in equities and
-        derivatives involves substantial risk of loss. Always consult a qualified professional before making investment
-        decisions.</p>
+      <p>This repository is strictly for educational purposes. Nothing contained herein constitutes financial,
+        investment, legal, or tax advice. Investing in equities and their derivatives involves substantial risk of loss.
+      </p>
     </div>
 
     <div class="callout note">
       <div class="callout-title">Orchestration &amp; User Experience</div>
-      <p>This repository is <strong>not</strong> a point-and-click web application. Prompt your AI models in your IDE
-        or harness pointed at this repository to orchestrate specialized AI sub-agents with
+      <p>This repository is <strong>not</strong> a point-and-click web application. Prompt your AI models with access to
+        this repository to orchestrate specialized AI sub-agents with
         context that includes your private portfolio snapshots, public equity theses, and deterministic
         scripts.</p>
     </div>
 
-    <h2>System Rationale: Why Agent Teams Outperform Monolithic Chatbots</h2>
+    <h2>Research Question: Can Agent Teams Outperform Monolithic Chatbots?</h2>
     <p>Standard LLM chat sessions fail at reliable, personalized portfolio management due to four fundamental
       architectural flaws:</p>
     <ul>
@@ -69,9 +69,9 @@
       <li><strong>Absence of Deterministic Derivatives Modeling:</strong> Standard language models cannot reliably
         calculate Black-Scholes Greeks, volatility skews, or exact limit pricing formulas.</li>
     </ul>
-    <p>This system resolves these limitations by breaking the advisory process into six discrete, specialized sub-agent
-      roles backed by persistent file-based memory, strict data provenance, forward-looking quantitative forecasting,
-      and deterministic Python calculation scripts.</p>
+    <p>This system attempts to overcome these limitations by breaking the advisory process into six discrete,
+      specialized sub-agent roles backed by persistent file-based memory, strict data provenance, forward-looking
+      quantitative forecasting, and deterministic Python calculation scripts.</p>
 
     <h2>Multi-Agent Sub-Agent Pipeline</h2>
     <p>This repo encourages AI to coordinate six specialized roles backed by structured data contracts:</p>
@@ -106,8 +106,13 @@
 
       <div class="docs-card">
         <h4>4. Memory Agent</h4>
-        <p><strong>Tools:</strong> <code>manage_memory.py</code>, <code>activity_ledger.py</code>, <code>errata_log.py</code>.</p>
-        <p><strong>Reads:</strong> Persistent dossiers in <code>context/theses/*.md</code>, agent run logs in <code>context/research/runs/</code>, errata registry in <code>context/research/errata/</code>, and <code>context/research/errata_protocol.md</code>.</p>
+        <p><strong>Tools:</strong> <code>manage_memory.py</code>, <code>activity_ledger.py</code>,
+          <code>errata_log.py</code>.
+        </p>
+        <p><strong>Reads:</strong> Persistent dossiers in <code>context/theses/*.md</code>, agent run logs in
+          <code>context/research/runs/</code>, errata registry in <code>context/research/errata/</code>, and
+          <code>context/research/errata_protocol.md</code>.
+        </p>
         <p><strong>Responsibility:</strong> Manages institutional context across runs, audits catalyst execution against
           deadlines, monitors explicit invalidation exit triggers, maintains the errata registry, and issues urgent
           liquidation alerts for broken theses.</p>
@@ -155,13 +160,15 @@
         <tr>
           <td><strong>Return Hurdle</strong></td>
           <td>&ge; 20% Annualized ROI</td>
-          <td>All equity selections, cash-secured puts, and covered calls must maximize the probability of achieving &ge;
+          <td>All equity selections, cash-secured puts, and covered calls must maximize the probability of achieving
+            &ge;
             20% annual return over a 20-year horizon.</td>
         </tr>
         <tr>
           <td><strong>Asset Focus</strong></td>
           <td>US Public Equities</td>
-          <td>Individual common stocks and liquid ADRs listed on NYSE, NASDAQ, and AMEX. Strictly no mutual funds or broad
+          <td>Individual common stocks and liquid ADRs listed on NYSE, NASDAQ, and AMEX. Strictly no mutual funds or
+            broad
             ETFs (except SGOV for cash).</td>
         </tr>
         <tr>
@@ -173,7 +180,8 @@
         <tr>
           <td><strong>Derivatives Discipline</strong></td>
           <td>100% Collateralized &amp; BTC</td>
-          <td>Strictly NO naked options and NO long speculative options. Puts are 100% cash-secured; calls are 100% covered. Buy to Close (BTC) is used to eliminate downside on losing propositions.</td>
+          <td>Strictly NO naked options and NO long speculative options. Puts are 100% cash-secured; calls are 100%
+            covered. Buy to Close (BTC) is used to eliminate downside on losing propositions.</td>
         </tr>
         <tr>
           <td><strong>Execution Cadence</strong></td>
@@ -197,7 +205,8 @@
         <tr>
           <td><code>context/</code></td>
           <td>AI Agents</td>
-          <td>High-density prompts (<code>prompts/</code>), public equity dossiers (<code>theses/</code>), and schemas.</td>
+          <td>High-density prompts (<code>prompts/</code>), public equity dossiers (<code>theses/</code>), and schemas.
+          </td>
         </tr>
         <tr>
           <td><code>http/</code></td>
@@ -212,7 +221,8 @@
         <tr>
           <td><code>private/</code></td>
           <td>Human Operator (Git-Ignored)</td>
-          <td>Brokerage snapshots (<code>snapshots/</code>) and generated weekly execution plans (<code>plans/</code>).</td>
+          <td>Brokerage snapshots (<code>snapshots/</code>) and generated weekly execution plans (<code>plans/</code>).
+          </td>
         </tr>
         <tr>
           <td><code>scratch/</code></td>
@@ -228,7 +238,8 @@
     <div class="card-grid">
       <a href="guide.html" class="docs-card">
         <h4>How to Use This Repo</h4>
-        <p>First-time setup, the weekly snapshot-to-plan routine, human preflight, privacy rules, and troubleshooting.</p>
+        <p>First-time setup, the weekly snapshot-to-plan routine, human preflight, privacy rules, and troubleshooting.
+        </p>
       </a>
       <a href="stocks.html" class="docs-card">
         <h4>Equity Explorer</h4>

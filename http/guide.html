@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
+
 <body>
   <nav class="docs-sidebar">
     <a href="index.html" class="docs-brand">
@@ -36,12 +38,15 @@
     <div class="docs-header guide-hero">
       <div class="docs-kicker">Human operating guide</div>
       <h1>How to Use This Repository</h1>
-      <p class="docs-lead">Use the agent team to turn a current brokerage snapshot and verified public research into one account-by-account trading plan for the coming week.</p>
+      <p class="docs-lead">Use the agent team to turn a current brokerage snapshot and verified public research into one
+        account-by-account trading plan for the coming week.</p>
     </div>
 
     <div class="callout warning">
       <div class="callout-title">You remain the decision-maker and order executor</div>
-      <p>The repository does not connect to a broker, place trades, or guarantee returns. It produces research and a validated plan for educational and informational use. Equities and options can lose substantial value. Review every order before entering it.</p>
+      <p>The repository does not connect to a broker, place trades, or guarantee returns. It produces research and a
+        validated plan for educational use. Equities and options can lose all value. Review every order before entering
+        it.</p>
     </div>
 
     <nav class="page-toc" aria-label="On this page">
@@ -58,7 +63,10 @@
 
     <section id="mental-model">
       <h2>The Mental Model: You Ask, Agents Decide, Scripts Verify</h2>
-      <p>This is an AI-assisted investment workspace, not a traditional point-and-click portfolio application. The human supplies current private account facts and the desired outcome. Specialized agents research, reason, and author recommendations. Deterministic scripts perform parsing, calculations, collateral checks, schema validation, and rendering.</p>
+      <p>This is an AI-assisted investment workspace, not a traditional point-and-click portfolio application. The human
+        supplies current private account facts and the desired outcome. Specialized agents research, reason, and author
+        recommendations. Deterministic scripts perform parsing, calculations, collateral checks, schema validation, and
+        rendering.</p>
 
       <div class="responsibility-grid">
         <div class="responsibility-card human">
@@ -95,7 +103,10 @@
 
       <div class="callout important">
         <div class="callout-title">The trading plan is the action document</div>
-        <p>The Equity Explorer shows public research and ratings. It does not know your account balances or tell you what to trade. Personalized actions appear only in the dated plain-text plan under <code>private/plans/</code>.</p>
+        <p>The Equity Explorer shows public research and ratings. It does not know your account balances or tell you
+          what to trade. Personalized actions appear only in the dated plain-text plan under
+          <code>private/plans/</code>.
+        </p>
       </div>
     </section>
 
@@ -106,14 +117,16 @@
           <div class="step-badge">1</div>
           <div class="step-content">
             <h4>Open the repository in an AI coding workspace</h4>
-            <p>The agent needs access to this repository so it can read the mandate, skills, research store, prompts, schemas, and scripts. Start the conversation from the repository root.</p>
+            <p>The agent needs access to this repository so it can read the mandate, skills, research store, prompts,
+              schemas, and scripts. Start the conversation from the repository root.</p>
           </div>
         </div>
         <div class="step-card">
           <div class="step-badge">2</div>
           <div class="step-content">
             <h4>Browse the portal</h4>
-            <p>Ask the agent to start and open the local Investments Portal, or serve the <code>http/</code> directory yourself and open <code>http://localhost:8080/</code>.</p>
+            <p>Ask the agent to start and open the local Investments Portal, or serve the <code>http/</code> directory
+              yourself and open <code>http://localhost:8080/</code>.</p>
             <pre><code>python -m http.server -d http 8080</code></pre>
           </div>
         </div>
@@ -121,14 +134,19 @@
           <div class="step-badge">3</div>
           <div class="step-content">
             <h4>Understand the mandate before using a plan</h4>
-            <p>Read the <a href="docs/strategies.html">Investment Mandate</a>. In particular: US-listed common stocks, a long-term &gt;= 20% annualized hurdle, limit orders, no naked options, no speculative long options, and one weekly execution session.</p>
+            <p>Read the <a href="docs/strategies.html">Investment Mandate</a>. In particular: US-listed common stocks, a
+              long-term &gt;= 20% annualized hurdle, limit orders, no naked options, no speculative long options, and
+              one weekly execution session.</p>
           </div>
         </div>
         <div class="step-card">
           <div class="step-badge">4</div>
           <div class="step-content">
             <h4>Review a synthetic example</h4>
-            <p>Compare <code>examples/sample_portfolio.csv</code>, <code>examples/sample_orders.json</code>, and <code>examples/sample_trading_plan.txt</code>. These show the expected input, the agent-authored decisions, and the final human-facing output without exposing real account data.</p>
+            <p>Compare <code>examples/sample_portfolio.csv</code>, <code>examples/sample_orders.json</code>, and
+              <code>examples/sample_trading_plan.txt</code>. These show the expected input, the agent-authored
+              decisions, and the final human-facing output without exposing real account data.
+            </p>
           </div>
         </div>
       </div>
@@ -136,7 +154,8 @@
 
     <section id="weekly-routine">
       <h2>The Core Weekly Routine</h2>
-      <p>Most human use of the repository should follow this loop. The system is designed for a weekend review, one order-entry session on Monday, and automatic option settlement on Friday.</p>
+      <p>Most human use of the repository should follow this loop. The system is designed for a weekend review, one
+        order-entry session on Monday, and automatic option settlement on Friday.</p>
 
       <div class="weekly-timeline" aria-label="Weekly operating timeline">
         <div class="timeline-item">
@@ -162,7 +181,9 @@
       </div>
 
       <h3>Step 1: Export complete brokerage snapshots</h3>
-      <p>CSV is preferred because the deterministic parser can reconcile it directly. A clear screenshot can be interpreted by an AI agent, but the agent must transcribe and verify it before the order set can be validated. Save inputs under <code>private/snapshots/</code> with the date and account name in the filename.</p>
+      <p>CSV exports can be parsed by a deterministic script. A clear screenshot can be
+        interpreted by a generative AI agent. Save inputs under <code>private/snapshots/</code> with the date and
+        account name in the filename.</p>
 
       <div class="checklist-panel">
         <div>
@@ -177,22 +198,34 @@
         </div>
         <div>
           <h4>For multiple accounts</h4>
-          <p>Use a distinct file or clearly separated account section for each account. Never pre-combine balances or holdings. The system validates collateral inside each account and cannot borrow cash or shares from another one.</p>
+          <p>Use a distinct file or clearly separated account section for each account. Never pre-combine balances or
+            holdings. The system validates collateral inside each account and cannot borrow cash or shares from another
+            one.</p>
         </div>
       </div>
 
       <h3>Step 2: Ask for the dated weekly plan</h3>
-      <p>A short outcome-based request is enough. The repository instructions and skills contain the operating protocol.</p>
+      <p>A short outcome-based request suffices. The repository instructions and skills contain the operating protocol.
+      </p>
       <div class="prompt-card">
         <div class="prompt-label">Suggested request</div>
-        <p>Generate the weekly trading plan for Monday [DATE] using every current snapshot in <code>private/snapshots/</code>. Keep all accounts separate, refresh or verify the public intelligence needed for the decision, resolve material research gaps, author and validate the complete order set, and save the final plain-text plan to <code>private/plans/[DATE]-plan.txt</code>. Return the definitive plan and clearly report any validation failure.</p>
+        <p>Generate the weekly trading plan for Monday [DATE] using every current snapshot in
+          <code>private/snapshots/</code>. Keep all accounts separate, refresh or verify the public intelligence needed
+          for the decision, resolve material research gaps, author and validate the complete order set, and save the
+          final plain-text plan to <code>private/plans/[DATE]-plan.txt</code>. Return the definitive plan and clearly
+          report any validation failure.
+        </p>
       </div>
 
       <h3>Step 3: Let validation finish</h3>
-      <p>The Lead Portfolio Manager must decide every order and write an order set first. The renderer then checks account isolation, available cash, existing option encumbrances, covered-share blocks, limit prices, tracked symbols, cash impact, and AROC. If a check fails, no plan should be produced until the underlying order set or snapshot is corrected.</p>
+      <p>The Lead Portfolio Manager must decide every order and write an order set first. The renderer then checks
+        account isolation, available cash, existing option encumbrances, covered-share blocks, limit prices, tracked
+        symbols, cash impact, and AROC. If a check fails, no plan should be produced until the underlying order set or
+        snapshot is corrected.</p>
 
       <h3>Step 4: Perform the human preflight</h3>
-      <p>Open the dated file in <code>private/plans/</code> and compare it with the brokerage screen. Do not treat a successfully rendered file as a substitute for this review.</p>
+      <p>Open the dated file in <code>private/plans/</code> and compare it with the brokerage screen. Do not treat a
+        successfully rendered file as a substitute for this review.</p>
       <ul class="check-list preflight-list">
         <li>The plan date and snapshot date are current.</li>
         <li>Every account appears once, with the correct total value, cash, SGOV, holdings, and open options.</li>
@@ -205,11 +238,16 @@
 
       <div class="callout warning">
         <div class="callout-title">Correct the source, then regenerate</div>
-        <p>If a balance, holding, option, or cost basis is wrong, replace or correct the snapshot and ask the agent to regenerate the order set and plan. Do not hand-edit a quantity or price in the final plan because that bypasses collateral and arithmetic validation.</p>
+        <p>If a balance, holding, option, or cost basis is wrong, replace or correct the snapshot and ask the agent to
+          regenerate the order set and plan. Do not hand-edit a quantity or price in the final plan because that
+          bypasses collateral and arithmetic validation.</p>
       </div>
 
       <h3>Step 5: Enter orders once, account by account</h3>
-      <p>On Monday at 9:30 AM ET, or as soon as you can access the accounts, enter all orders for Portfolio 1 before moving to Portfolio 2. Use the stated limit prices. When the plan contains an execution-time branch, observe the current price once and enter only the matching branch. Let stated Friday expirations and assignments settle automatically, then provide a fresh snapshot the following weekend.</p>
+      <p>On Monday at 9:30 AM ET, or as soon as you can access the accounts, enter all orders for Portfolio 1 before
+        moving to Portfolio 2. Use the stated limit prices. When the plan contains an execution-time branch, observe the
+        current price once and enter only the matching branch. Let stated Friday expirations and assignments settle
+        automatically, then provide a fresh snapshot the following weekend.</p>
     </section>
 
     <section id="read-plan">
@@ -217,15 +255,18 @@
       <div class="definition-grid">
         <div class="definition-card">
           <h4>Account Snapshot</h4>
-          <p>The facts used to size orders: total value, settled cash, SGOV, dry powder, and position count. Stop if these do not match the broker.</p>
+          <p>The facts used to size orders: total value, settled cash, SGOV, dry powder, and position count. Stop if
+            these do not match the broker.</p>
         </div>
         <div class="definition-card">
           <h4>Action</h4>
-          <p>The exact broker-side instruction, such as BUY, SELL, SELL TO OPEN, or BUY TO CLOSE. Do not substitute a different action.</p>
+          <p>The exact broker-side instruction, such as BUY, SELL, SELL TO OPEN, or BUY TO CLOSE. Do not substitute a
+            different action.</p>
         </div>
         <div class="definition-card">
           <h4>Limit Price</h4>
-          <p>The worst acceptable execution price. An unfilled order is preferable to silently replacing it with a market order.</p>
+          <p>The worst acceptable execution price. An unfilled order is preferable to silently replacing it with a
+            market order.</p>
         </div>
         <div class="definition-card">
           <h4>Cash Impact and Collateral</h4>
@@ -233,7 +274,8 @@
         </div>
         <div class="definition-card">
           <h4>Execution Contingency</h4>
-          <p>A deterministic branch selected from the price visible during the single order-entry session. It is not a mid-week watch instruction.</p>
+          <p>A deterministic branch selected from the price visible during the single order-entry session. It is not a
+            mid-week watch instruction.</p>
         </div>
         <div class="definition-card">
           <h4>Friday Expectation</h4>
@@ -243,22 +285,27 @@
 
       <div class="callout note">
         <div class="callout-title">A plan with no trades can be correct</div>
-        <p>The system should not manufacture activity. When no order clears the research, valuation, pricing, and risk checks, the definitive recommendation can be to place no orders for that account.</p>
+        <p>The system should not manufacture activity. When no order clears the research, valuation, pricing, and risk
+          checks, the definitive recommendation can be to place no orders for that account.</p>
       </div>
     </section>
 
     <section id="equity-explorer">
       <h2>Using the Equity Explorer</h2>
-      <p>The <a href="stocks.html">Equity Explorer</a> is the human view of public company intelligence. Use it to understand and challenge the research behind a plan, compare tracked companies, and locate source records. It contains no private portfolio quantities.</p>
+      <p>The <a href="stocks.html">Equity Explorer</a> is the human view of public company intelligence. Use it to
+        understand and challenge the research behind a plan, compare tracked companies, and locate source records. It
+        contains no private portfolio quantities.</p>
 
       <div class="card-grid guide-card-grid">
         <div class="docs-card static-card">
           <h4>Grid Cards</h4>
-          <p>Scan ratings and the locked 2 by 2 metrics: annualized Target ROI, diluted shares outstanding, TTM revenue, and enterprise value.</p>
+          <p>Scan ratings and the locked 2 by 2 metrics: annualized Target ROI, diluted shares outstanding, TTM revenue,
+            and enterprise value.</p>
         </div>
         <div class="docs-card static-card">
           <h4>Dossiers</h4>
-          <p>Compare the longer thesis summaries, valuation ranges, catalysts, moat, and invalidation logic across companies.</p>
+          <p>Compare the longer thesis summaries, valuation ranges, catalysts, moat, and invalidation logic across
+            companies.</p>
         </div>
         <div class="docs-card static-card">
           <h4>Data Table</h4>
@@ -267,11 +314,15 @@
       </div>
 
       <h3>Open a company for the full record</h3>
-      <p>Select a company from any view. The drawer separates the investment thesis, quarterly revenue path, analyst coverage, technical analysis, SEC filings, and company-specific strategy. Source links and filing dates help distinguish observed facts from model-authored forecasts.</p>
+      <p>Select a company from any view. The drawer separates the investment thesis, quarterly revenue path, analyst
+        coverage, technical analysis, SEC filings, and company-specific strategy. Source links and filing dates help
+        distinguish observed facts from model-authored forecasts.</p>
 
       <div class="callout important">
         <div class="callout-title">Ratings are public research classifications</div>
-        <p>A BUY rating means the public thesis currently clears the system's return hurdle. It is not automatically a buy order for your account. Position size, existing exposure, available collateral, taxes, open options, and execution price are resolved only in the weekly plan.</p>
+        <p>A BUY rating means the public thesis currently clears the system's return hurdle. It is not automatically a
+          buy order for your account. Position size, existing exposure, available collateral, taxes, open options, and
+          execution price are resolved only in the weekly plan.</p>
       </div>
 
       <table class="guide-table">
@@ -288,7 +339,8 @@
           </tr>
           <tr>
             <td><strong>Benchmark Entry Price</strong></td>
-            <td>A public valuation reference. Your actual order limit is set from current fundamentals and technical conditions in the weekly plan.</td>
+            <td>A public valuation reference. Your actual order limit is set from current fundamentals and technical
+              conditions in the weekly plan.</td>
           </tr>
           <tr>
             <td><strong>Price Target Range</strong></td>
@@ -308,39 +360,49 @@
 
     <section id="other-jobs">
       <h2>Other Useful Jobs to Give the Agent</h2>
-      <p>Use outcome-based requests. The agent should select the relevant repository skill and deterministic tools, keep an activity record for public research work, and report what changed.</p>
+      <p>Use outcome-based requests. The agent should select the relevant repository skill and deterministic tools, keep
+        an activity record for public research work, and report what changed.</p>
 
       <div class="request-list">
         <div class="request-item">
           <h3>Explain or challenge a recommendation</h3>
-          <p>Explain the [TICKER] order in the latest plan. Trace the recommendation to the public thesis, current valuation, technical limit, catalysts, invalidation criteria, and portfolio constraint that determined its size.</p>
+          <p>Explain the [TICKER] order in the latest plan. Trace the recommendation to the public thesis, current
+            valuation, technical limit, catalysts, invalidation criteria, and portfolio constraint that determined its
+            size.</p>
         </div>
         <div class="request-item">
           <h3>Add one or more companies to coverage</h3>
-          <p>Research and onboard [TICKERS] into the tracked universe. Apply Stage 1 triage and solvency checks, use authoritative filings, complete the research store, render the public theses, and run quality control.</p>
+          <p>Research and onboard [TICKERS] into the tracked universe. Apply Stage 1 triage and solvency checks, use
+            authoritative filings, complete the research store, render the public theses, and run quality control.</p>
         </div>
         <div class="request-item">
           <h3>Find new candidates</h3>
-          <p>Screen US exchanges for companies with a credible path to at least 20% annualized ROI. Apply the repository's triage gates and return one decisive ranked onboarding set.</p>
+          <p>Screen US exchanges for companies with a credible path to at least 20% annualized ROI. Apply the
+            repository's triage gates and return one decisive ranked onboarding set.</p>
         </div>
         <div class="request-item">
           <h3>Refresh stale public intelligence</h3>
-          <p>Refresh [TICKER or UNIVERSE] from the authoritative sources required by the repository, identify research gaps, reconcile discrepancies, rerender affected public artifacts, and run quality control.</p>
+          <p>Refresh [TICKER or UNIVERSE] from the authoritative sources required by the repository, identify research
+            gaps, reconcile discrepancies, rerender affected public artifacts, and run quality control.</p>
         </div>
         <div class="request-item">
           <h3>Correct a suspected error</h3>
-          <p>Verify this claim against Tier 1 evidence: [CLAIM]. If it is wrong or stale, update the research store, rerender derived files, and record the correction in the errata registry.</p>
+          <p>Verify this claim against Tier 1 evidence: [CLAIM]. If it is wrong or stale, update the research store,
+            rerender derived files, and record the correction in the errata registry.</p>
         </div>
         <div class="request-item">
           <h3>Replace a stale plan</h3>
-          <p>I did not execute the dated plan. Treat it as stale, use the newest account snapshots and market data, and generate a newly dated, fully validated plan. Do not carry old limits forward without recomputing them.</p>
+          <p>I did not execute the dated plan. Treat it as stale, use the newest account snapshots and market data, and
+            generate a newly dated, fully validated plan. Do not carry old limits forward without recomputing them.</p>
         </div>
       </div>
     </section>
 
     <section id="privacy">
       <h2>Keep Private and Public Data Separate</h2>
-      <p>The repository has a strict one-way privacy boundary. Public intelligence may inform a private plan. Private account facts must never flow back into public research, the web portal, source code, run logs, or errata records.</p>
+      <p>The repository has a strict one-way privacy boundary. Public intelligence may inform a private plan. Private
+        account facts must never flow back into public research, the web portal, source code, run logs, or errata
+        records.</p>
 
       <div class="privacy-flow" aria-label="Privacy boundary">
         <div class="privacy-zone public-zone">
@@ -365,7 +427,8 @@
       <ul class="check-list">
         <li>Keep real exports and screenshots only under <code>private/</code>.</li>
         <li>Mask account numbers when the exact identifier is unnecessary.</li>
-        <li>Before sharing or committing changes, check that no private file or copied account value appears in a public directory.</li>
+        <li>Before sharing or committing changes, check that no private file or copied account value appears in a public
+          directory.</li>
         <li>Public thesis updates must describe companies objectively, without mentioning that you own them.</li>
       </ul>
     </section>
@@ -375,27 +438,35 @@
       <div class="troubleshooting-list">
         <details>
           <summary>The snapshot cannot be parsed</summary>
-          <p>Export CSV when possible. Confirm the file contains a symbol column and recognizable quantity, price, market value, and asset-type fields. For screenshots, ask the agent to transcribe each account and reconcile its totals before authoring orders.</p>
+          <p>Export CSV when possible. Confirm the file contains a symbol column and recognizable quantity, price,
+            market value, and asset-type fields. For screenshots, ask the agent to transcribe each account and reconcile
+            its totals before authoring orders.</p>
         </details>
         <details>
           <summary>The account total does not reconcile</summary>
-          <p>Stop plan generation. Check for omitted cash, money-market rows, unsettled transactions, open options, duplicated totals, or a stale export. Replace the snapshot and rerun ingestion.</p>
+          <p>Stop plan generation. Check for omitted cash, money-market rows, unsettled transactions, open options,
+            duplicated totals, or a stale export. Replace the snapshot and rerun ingestion.</p>
         </details>
         <details>
           <summary>A company is missing research</summary>
-          <p>An unrated or <code>AWAITING_RESEARCH</code> company cannot carry a fabricated valuation or recommendation. Ask the agent to complete its research fields and validation before using it in a plan.</p>
+          <p>An unrated or <code>AWAITING_RESEARCH</code> company cannot carry a fabricated valuation or recommendation.
+            Ask the agent to complete its research fields and validation before using it in a plan.</p>
         </details>
         <details>
           <summary>The order renderer rejects the plan</summary>
-          <p>This is a safety result, not a formatting inconvenience. Correct the order set or snapshot that caused the collateral, share coverage, arithmetic, universe, or schema failure. Never bypass the failed check by manually writing a plan.</p>
+          <p>This is a safety result, not a formatting inconvenience. Correct the order set or snapshot that caused the
+            collateral, share coverage, arithmetic, universe, or schema failure. Never bypass the failed check by
+            manually writing a plan.</p>
         </details>
         <details>
           <summary>Market conditions changed before execution</summary>
-          <p>If the plan contains a matching entry-time branch, use it. Otherwise treat the plan as stale and request a newly priced and validated plan. Never convert the old limit to a market order.</p>
+          <p>If the plan contains a matching entry-time branch, use it. Otherwise treat the plan as stale and request a
+            newly priced and validated plan. Never convert the old limit to a market order.</p>
         </details>
         <details>
           <summary>You discovered a bad public claim</summary>
-          <p>Ask the agent to verify it against Tier 1 evidence and follow the errata workflow. The correction belongs in the research store and errata registry; private account information does not.</p>
+          <p>Ask the agent to verify it against Tier 1 evidence and follow the errata workflow. The correction belongs
+            in the research store and errata registry; private account information does not.</p>
         </details>
       </div>
     </section>
@@ -421,7 +492,8 @@
         </a>
         <a href="docs/strategies.html" class="docs-card">
           <h4>Investment Mandate</h4>
-          <p>The return objective, allowed assets, concentration rules, derivatives constraints, and execution policy.</p>
+          <p>The return objective, allowed assets, concentration rules, derivatives constraints, and execution policy.
+          </p>
         </a>
         <a href="docs/workflow.html" class="docs-card">
           <h4>Weekly Workflow</h4>
@@ -435,4 +507,5 @@
     </section>
   </main>
 </body>
+
 </html>

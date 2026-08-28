@@ -4,9 +4,9 @@
 - **Ticker:** CSX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $51.41 per share
-- **Current Price:** $51.41 per share
-- **Target Exit Price:** $58.25 per share
+- **Benchmark Entry Price:** $51.54 per share
+- **Current Price:** $51.54 per share
+- **Target Exit Price:** $58.45 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** SELL
@@ -28,13 +28,13 @@ CSX Corporation operates as a regional freight rail duopoly across 26 states in 
 CSX Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.03B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.04B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.04B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-CSX Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($0.72/share annually, ~35% payout ratio). Management executes an active share repurchase program (~$4.9B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $1.69B in cash & equivalents against $6.33B in total debt (net balance: $-4.64B). Anticipated annual CapEx and operational capital requirements of ~$1.13B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+CSX Corporation operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.40% dividend yield ($0.72/share annually, ~35% payout ratio). Management executes an active share repurchase program (~$4.9B authorized capacity), reducing share count at ~2.0% annually. Balance sheet liquidity is supported by $1.69B in cash & equivalents against $6.34B in total debt (net balance: $-4.65B). Anticipated annual CapEx and operational capital requirements of ~$1.13B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
 | Dividends Declared & Paid | PAYING | $0.72 / share | 1.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.72/share (1.40% yield, ~35% payout ratio) with +7.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | ACTIVE | $4.9 B | -2.0% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$4.9B capacity). Net diluted shares decrease at an modeled pace of 2.0% annually, providing a durable EPS compounder tailwind. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $6.33 B Debt vs $1.69 B Cash | Net: $-4.64 B | Manageable balance sheet leverage with $6.33B total debt against $1.69B liquid reserves (Net balance: $-4.64B). |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $6.34 B Debt vs $1.69 B Cash | Net: $-4.65 B | Manageable balance sheet leverage with $6.34B total debt against $1.69B liquid reserves (Net balance: $-4.65B). |
 | Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$1.13 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
@@ -53,12 +53,13 @@ CSX Corporation manages an established industrial liability footprint with stabl
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $3.09 B (Gap: $-0.22 B) | ~$0.09 B / yr | CSX Corporation sponsors defined benefit pension plans with $3.09B in gross PBO ... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $3.52 B | Take-or-Pay: $1.06 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $3.10 B (Gap: $-0.22 B) | ~$0.09 B / yr | CSX Corporation sponsors defined benefit pension plans with $3.10B in gross PBO against $2... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $3.52 B | Take-or-Pay: $1.06 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 CSX Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.2%, fully justifying our SELL rating.
+CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 4.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.55 B | -3.7% | 1.852 B | 6.77x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.77 B | +16.3% | 1.843 B | 6.74x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.42 B | +0.2% | 1.834 B | 6.71x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.57 B | -0.5% | 1.825 B | 6.69x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.72 B | +4.9% | 1.815 B | 6.66x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $3.96 B | +5.0% | 1.806 B | 6.63x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $3.60 B | +5.2% | 1.797 B | 6.60x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $3.75 B | +5.1% | 1.788 B | 6.57x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $3.90 B | +4.8% | 1.779 B | 6.54x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $4.13 B | +4.2% | 1.770 B | 6.52x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $3.74 B | +3.9% | 1.761 B | 6.49x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $3.89 B | +3.7% | 1.752 B | 6.46x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $4.04 B | +3.6% | 1.744 B | 6.43x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.56 B | -3.6% | 1.852 B | 6.78x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.77 B | +16.1% | 1.843 B | 6.75x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.42 B | +0.1% | 1.834 B | 6.72x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.58 B | -0.3% | 1.825 B | 6.69x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.73 B | +4.8% | 1.815 B | 6.66x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $3.97 B | +5.2% | 1.806 B | 6.64x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.61 B | +5.4% | 1.797 B | 6.61x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $3.76 B | +5.0% | 1.788 B | 6.58x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $3.91 B | +4.8% | 1.779 B | 6.55x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.13 B | +4.1% | 1.770 B | 6.52x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $3.75 B | +3.8% | 1.761 B | 6.50x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $3.90 B | +3.6% | 1.752 B | 6.47x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.05 B | +3.5% | 1.744 B | 6.44x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $43.46 | $54.33 | $65.20 | 6.6x | +24.7% |
-| 52 Weeks (1Y) | $42.50 | $53.13 | $63.76 | 6.7x | +3.3% |
-| 104 Weeks (2Y) | $44.74 | $55.92 | $67.10 | 6.5x | +4.3% |
-| 156 Weeks (3Y) | $46.60 | $58.25 | $69.90 | 6.4x | +4.3% |
+| 13 Weeks | $43.46 | $54.33 | $65.20 | 6.6x | +23.5% |
+| 52 Weeks (1Y) | $42.57 | $53.21 | $63.85 | 6.7x | +3.2% |
+| 104 Weeks (2Y) | $44.92 | $56.15 | $67.38 | 6.5x | +4.4% |
+| 156 Weeks (3Y) | $46.76 | $58.45 | $70.14 | 6.4x | +4.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Argus Research Team | Argus | 2026-07-31 | $50.24 | $56.00 | +11.5% | BUY |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-24 | $53.07 | $59.00 | +11.2% | BUY |
-| Ariel Rosa | Citigroup | 2026-07-24 | $53.27 | $54.00 | +1.4% | HOLD |
-| Walter Spracklin | Royal Bank Of Canada | 2026-07-23 | $52.65 | $54.00 | +2.6% | OUTPERFORM |
-| Stifel Nicolaus Research Team | Stifel Nicolaus | 2026-07-23 | $52.56 | $54.00 | +2.7% | BUY |
+| Argus Research Team | Argus | 2026-07-31 | $50.40 | $56.00 | +11.1% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-24 | $53.23 | $59.00 | +10.8% | BUY |
+| Ariel Rosa | Citigroup | 2026-07-24 | $53.23 | $54.00 | +1.4% | HOLD |
+| Walter Spracklin | Royal Bank Of Canada | 2026-07-23 | $52.81 | $54.00 | +2.2% | OUTPERFORM |
+| Stifel Nicolaus Research Team | Stifel Nicolaus | 2026-07-23 | $52.81 | $54.00 | +2.2% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ CSX currently trades at a Price-to-Sales (P/S) multiple of ~6.8x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($51.41) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($51.54) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

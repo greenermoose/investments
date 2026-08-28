@@ -4,9 +4,9 @@
 - **Ticker:** NKE
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $40.88 per share
-- **Current Price:** $40.88 per share
-- **Target Exit Price:** $45.58 per share
+- **Benchmark Entry Price:** $38.44 per share
+- **Current Price:** $38.44 per share
+- **Target Exit Price:** $42.85 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.9 / 10.0
 - **Rating:** SELL
@@ -28,11 +28,11 @@ NIKE, Inc. holds the undisputed global brand equity moat in athletic footwear an
 NIKE, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.19B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.22B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-NIKE, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.80% dividend yield ($0.74/share annually, ~45% payout ratio). Management executes an active share repurchase program (~$16.2B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $11.60B in cash & equivalents against $9.28B in total debt (net balance: $+2.32B). Anticipated annual CapEx and operational capital requirements of ~$1.86B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+NIKE, Inc. operates under a aggressive shareholder return capital strategy. The company returns capital to shareholders through a 1.80% dividend yield ($0.69/share annually, ~45% payout ratio). Management executes an active share repurchase program (~$16.2B authorized capacity), reducing share count at ~1.5% annually. Balance sheet liquidity is supported by $11.60B in cash & equivalents against $9.28B in total debt (net balance: $+2.32B). Anticipated annual CapEx and operational capital requirements of ~$1.86B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $0.74 / share | 1.80% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.74/share (1.80% yield, ~45% payout ratio) with +8.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $0.69 / share | 1.80% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $0.69/share (1.80% yield, ~45% payout ratio) with +8.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | ACTIVE | $16.2 B | -1.5% / yr | Management executes a disciplined capital return strategy, deploying high operational free cash flow into Board-authorized open-market share repurchases (~$16.2B capacity). Net diluted shares decrease at an modeled pace of 1.5% annually, providing a durable EPS compounder tailwind. |
 | Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $9.28 B Debt vs $11.60 B Cash | Net: $+2.32 B | Manageable balance sheet leverage with $9.28B total debt against $11.60B liquid reserves (Net balance: $+2.32B). |
 | Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.86 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
@@ -53,12 +53,13 @@ NIKE, Inc. possesses a clean, predictable liability structure with fully managea
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $5.57 B (Gap: $-0.28 B) | ~$0.14 B / yr | NIKE, Inc. maintains legacy defined benefit plans ($5.57B PBO vs $5.29B assets; ... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $8.35 B | Take-or-Pay: $2.09 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $5.57 B (Gap: $-0.28 B) | ~$0.14 B / yr | NIKE, Inc. maintains legacy defined benefit plans ($5.57B PBO vs $5.29B assets; $-0.28B ga... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $8.35 B | Take-or-Pay: $2.09 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 NIKE, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +6.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.7%, fully justifying our SELL rating.
+NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.7%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $11.72 B | -2.3% | 1.480 B | 1.30x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $12.49 B | +17.9% | 1.474 B | 1.29x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $11.39 B | +1.7% | 1.469 B | 1.28x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $11.98 B | +1.3% | 1.463 B | 1.27x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $12.56 B | +7.2% | 1.458 B | 1.26x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.44 B | +7.6% | 1.452 B | 1.25x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.30 B | +8.0% | 1.447 B | 1.24x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.90 B | +7.7% | 1.441 B | 1.23x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.46 B | +7.1% | 1.436 B | 1.21x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $14.29 B | +6.3% | 1.430 B | 1.20x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $13.02 B | +5.8% | 1.425 B | 1.19x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $13.59 B | +5.3% | 1.420 B | 1.18x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $14.18 B | +5.3% | 1.414 B | 1.17x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $11.72 B | -2.3% | 1.480 B | 1.23x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $12.49 B | +17.9% | 1.474 B | 1.22x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $11.39 B | +1.7% | 1.469 B | 1.20x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $11.98 B | +1.3% | 1.463 B | 1.19x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $12.56 B | +7.2% | 1.458 B | 1.18x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $13.44 B | +7.6% | 1.452 B | 1.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.30 B | +8.0% | 1.447 B | 1.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.90 B | +7.7% | 1.441 B | 1.15x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.46 B | +7.1% | 1.436 B | 1.14x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $14.29 B | +6.3% | 1.430 B | 1.13x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.02 B | +5.8% | 1.425 B | 1.12x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $13.59 B | +5.3% | 1.420 B | 1.11x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $14.18 B | +5.3% | 1.414 B | 1.10x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $34.70 | $43.38 | $52.06 | 1.3x | +26.8% |
-| 52 Weeks (1Y) | $33.47 | $41.84 | $50.21 | 1.3x | +2.3% |
-| 104 Weeks (2Y) | $35.12 | $43.90 | $52.68 | 1.2x | +3.6% |
-| 156 Weeks (3Y) | $36.46 | $45.58 | $54.70 | 1.2x | +3.7% |
+| 13 Weeks | $32.54 | $40.67 | $48.80 | 1.2x | +25.3% |
+| 52 Weeks (1Y) | $31.35 | $39.19 | $47.03 | 1.2x | +2.0% |
+| 104 Weeks (2Y) | $33.09 | $41.36 | $49.63 | 1.1x | +3.7% |
+| 156 Weeks (3Y) | $34.28 | $42.85 | $51.42 | 1.1x | +3.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Matthew Boss | JPMorgan Chase & Co. | 2026-08-04 | $42.63 | $40.00 | -6.2% | HOLD |
-| Nick Anderson | Sanford C. Bernstein | 2026-07-29 | $43.01 | $68.00 | +58.1% | OUTPERFORM |
-| Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-07-17 | $42.99 | $37.00 | -13.9% | SELL |
-| Krisztina Katai | Deutsche Bank Aktiengesellschaft | 2026-07-17 | $42.98 | $45.00 | +4.7% | HOLD |
-| Nick Anderson | Berenberg Bank | 2026-07-03 | $44.12 | $49.00 | +11.1% | HOLD |
+| Matthew Boss | JPMorgan Chase & Co. | 2026-08-04 | $41.53 | $40.00 | -3.7% | HOLD |
+| Nick Anderson | Sanford C. Bernstein | 2026-07-29 | $43.22 | $68.00 | +57.3% | OUTPERFORM |
+| Rothschild & Co Redburn Research Team | Rothschild & Co Redburn | 2026-07-17 | $43.76 | $37.00 | -15.4% | SELL |
+| Krisztina Katai | Deutsche Bank Aktiengesellschaft | 2026-07-17 | $43.76 | $45.00 | +2.8% | HOLD |
+| Nick Anderson | Berenberg Bank | 2026-07-03 | $44.09 | $49.00 | +11.1% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ NKE currently trades at a Price-to-Sales (P/S) multiple of ~1.3x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($40.88) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($38.44) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

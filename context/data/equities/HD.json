@@ -95,15 +95,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 34.97,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 34.22,
     "pension_and_opeb": {
-      "funded_status_usd_b": -1.01,
-      "pbo_gross_usd_b": 20.19,
-      "plan_assets_usd_b": 19.18,
-      "annual_cash_contribution_usd_b": 0.5,
+      "funded_status_usd_b": -0.99,
+      "pbo_gross_usd_b": 19.76,
+      "plan_assets_usd_b": 18.77,
+      "annual_cash_contribution_usd_b": 0.49,
       "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 3.37,
-      "narrative": "The Home Depot, Inc. maintains legacy defined benefit plans ($20.19B PBO vs $19.18B assets; $-1.01B gap) and $3.37B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
+      "opeb_unfunded_usd_b": 3.29,
+      "narrative": "The Home Depot, Inc. maintains legacy defined benefit plans ($19.76B PBO vs $18.77B assets; $-0.99B gap) and $3.29B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.05,
@@ -121,10 +121,10 @@
       "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 30.29,
-      "take_or_pay_commitments_usd_b": 7.57,
+      "unconditional_purchase_obligations_usd_b": 29.64,
+      "take_or_pay_commitments_usd_b": 7.41,
       "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $30.29B across 3-5 years."
+      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $29.64B across 3-5 years."
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "The Home Depot, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."

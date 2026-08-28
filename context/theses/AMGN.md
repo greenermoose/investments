@@ -4,9 +4,9 @@
 - **Ticker:** AMGN
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $439.94 per share
-- **Current Price:** $439.94 per share
-- **Target Exit Price:** $471.03 per share
+- **Benchmark Entry Price:** $436.99 per share
+- **Current Price:** $436.99 per share
+- **Target Exit Price:** $468.14 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
@@ -19,31 +19,31 @@ Amgen Inc. is one of the world's largest independent biotechnology companies, di
 Amgen's competitive edge relies on advanced biologic manufacturing capabilities, extensive clinical development infrastructure, and commercial execution across global hospital and specialty pharmacy networks. Management is driving growth through its next-generation cardiometabolic and obesity pipeline (MariTide), expanded rare disease offerings, and a robust biosimilars business that balances patent expiration exposure.
 
 ## Total Addressable Market & Market Share
-Amgen Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 3.2% market share. Over our 3-year investment horizon, we model market share evolving to 3.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Amgen Inc. addresses an estimated Total Addressable Market (TAM) of $1100.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 3.3% market share. Over our 3-year investment horizon, we model market share evolving to 3.2%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 Amgen's economic moat is built on proprietary biologics manufacturing capabilities, deep clinical development infrastructure, and an extensive patent portfolio spanning oncology, cardiovascular, inflammation, and rare diseases. Biologics manufacturing requires complex cellular expression systems and stringent FDA sterility validations that cannot be easily replicated. With blockbuster franchises including Prolia/XGEVA, Repatha, and TEPEZZA, plus promising Phase 3 obesity candidate MariTide, Amgen sustains high gross margins and robust cash generation.
 
 ## Anticipated Catalysts & Timeline
-Amgen Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.09B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.12B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.14B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Amgen Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.09B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.13B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.14B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Amgen Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 3.10% dividend yield ($13.64/share annually, ~55% payout ratio). Management executes an active share repurchase program (~$5.3B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $8.88B in cash & equivalents against $7.10B in total debt (net balance: $+1.78B). Anticipated annual CapEx and operational capital requirements of ~$2.49B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Amgen Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 3.10% dividend yield ($13.55/share annually, ~55% payout ratio). Management executes an active share repurchase program (~$5.5B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $9.19B in cash & equivalents against $7.35B in total debt (net balance: $+1.84B). Anticipated annual CapEx and operational capital requirements of ~$2.57B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $13.64 / share | 3.10% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $13.64/share (3.10% yield, ~55% payout ratio) with +6.0% annual modeled dividend growth. |
-| Share Buybacks & Dilution | ACTIVE | $5.3 B | -1.0% / yr | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $7.10 B Debt vs $8.88 B Cash | Net: $+1.78 B | Manageable balance sheet leverage with $7.10B total debt against $8.88B liquid reserves (Net balance: $+1.78B). |
-| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$2.49 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Dividends Declared & Paid | PAYING | $13.55 / share | 3.10% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $13.55/share (3.10% yield, ~55% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $5.5 B | -1.0% / yr | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $7.35 B Debt vs $9.19 B Cash | Net: $+1.84 B | Manageable balance sheet leverage with $7.35B total debt against $9.19B liquid reserves (Net balance: $+1.84B). |
+| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$2.57 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-Amgen Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.24B (~3.5% of TTM revenue). Gross annual equity grant issuance is estimated at +0.8% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+Amgen Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.29B (~3.5% of TTM revenue). Gross annual equity grant issuance is estimated at +0.8% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~3.5% of TTM Revenue | $1.24 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Annual Stock Compensation | ~3.5% of TTM Revenue | $1.29 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
 | Gross vs Net Dilution Rate | Gross: +0.8% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting with clinical development milestone-based stock option allocations | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
@@ -53,12 +53,13 @@ Amgen Inc.'s off-balance sheet liabilities are standard for healthcare innovator
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $5.33 B (Gap: $-0.43 B) | ~$0.16 B / yr | Amgen Inc. sponsors modest domestic and international defined benefit plans with... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical d... |
-| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.53 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and gover... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $7.10 B | Take-or-Pay: $2.48 B | Active pharmaceutical ingredient supply agreements and clinical contract researc... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $5.51 B (Gap: $-0.44 B) | ~$0.17 B / yr | Amgen Inc. sponsors modest domestic and international defined benefit plans with $5.51B in... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical device fabr... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.55 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and government pric... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $7.35 B | Take-or-Pay: $2.57 B | Active pharmaceutical ingredient supply agreements and clinical contract research organiza... |
 
 **Equity Cash Flow Seniority Impact:** Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,57 +72,57 @@ If any of the following occur, the thesis is broken and the position will be exi
 Amgen Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.3%, fully justifying our SELL rating.
+AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~5.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.96 B | -3.0% | 0.540 B | 6.69x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.53 B | +17.1% | 0.538 B | 6.63x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $8.67 B | +0.9% | 0.537 B | 6.58x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $9.09 B | +0.4% | 0.536 B | 6.52x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.50 B | +6.1% | 0.534 B | 6.47x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.14 B | +6.4% | 0.533 B | 6.41x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $9.25 B | +6.7% | 0.532 B | 6.35x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $9.67 B | +6.4% | 0.530 B | 6.30x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $10.07 B | +6.0% | 0.529 B | 6.24x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $10.67 B | +5.3% | 0.528 B | 6.19x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $9.70 B | +4.8% | 0.526 B | 6.13x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $10.11 B | +4.5% | 0.525 B | 6.08x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $10.52 B | +4.5% | 0.524 B | 6.02x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $9.28 B | -3.0% | 0.540 B | 6.42x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.87 B | +17.0% | 0.538 B | 6.36x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $8.97 B | +0.9% | 0.537 B | 6.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $9.41 B | +0.4% | 0.536 B | 6.26x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.84 B | +6.0% | 0.534 B | 6.20x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.50 B | +6.3% | 0.533 B | 6.15x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $9.57 B | +6.7% | 0.532 B | 6.10x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $10.01 B | +6.4% | 0.530 B | 6.05x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $10.42 B | +5.9% | 0.529 B | 5.99x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $11.05 B | +5.2% | 0.528 B | 5.94x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $10.04 B | +4.9% | 0.526 B | 5.89x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $10.46 B | +4.5% | 0.525 B | 5.83x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $10.89 B | +4.5% | 0.524 B | 5.78x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 539 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 26 Weeks (2Q) | 537 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 39 Weeks (3Q) | 536 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 52 Weeks (1Y) | 535 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 104 Weeks (2Y) | 529 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 156 Weeks (3Y) | 524 M | -1.0% | Management utilizes moderate share buybacks (~$5.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 13 Weeks (1Q) | 539 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 26 Weeks (2Q) | 537 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 39 Weeks (3Q) | 536 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 52 Weeks (1Y) | 535 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 104 Weeks (2Y) | 529 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 156 Weeks (3Y) | 524 M | -1.0% | Management utilizes moderate share buybacks (~$5.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $371.28 | $464.10 | $556.92 | 6.5x | +23.8% |
-| 52 Weeks (1Y) | $356.60 | $445.75 | $534.90 | 6.5x | +1.3% |
-| 104 Weeks (2Y) | $369.26 | $461.57 | $553.88 | 6.2x | +2.4% |
-| 156 Weeks (3Y) | $376.82 | $471.03 | $565.24 | 6.0x | +2.3% |
+| 13 Weeks | $369.26 | $461.58 | $553.90 | 6.3x | +24.5% |
+| 52 Weeks (1Y) | $354.37 | $442.96 | $531.55 | 6.2x | +1.4% |
+| 104 Weeks (2Y) | $366.87 | $458.59 | $550.31 | 6.0x | +2.4% |
+| 156 Weeks (3Y) | $374.51 | $468.14 | $561.77 | 5.8x | +2.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Carter Gould | Cantor Fitzgerald | 2026-08-18 | $419.38 | $400.00 | -4.6% | HOLD |
-| Salim Syed | Mizuho | 2026-08-18 | $419.40 | $352.00 | -16.1% | HOLD |
-| Emily Field | Barclays | 2026-08-14 | $417.86 | $380.00 | -9.1% | BUY |
-| Vamil Divan | Guggenheim | 2026-08-10 | $410.93 | $388.00 | -5.6% | HOLD |
-| Geoff Meacham | Citigroup | 2026-08-07 | $404.84 | $405.00 | +0.0% | HOLD |
+| Carter Gould | Cantor Fitzgerald | 2026-08-18 | $425.28 | $400.00 | -5.9% | HOLD |
+| Salim Syed | Mizuho | 2026-08-18 | $425.28 | $352.00 | -17.2% | HOLD |
+| Emily Field | Barclays | 2026-08-14 | $415.21 | $380.00 | -8.5% | BUY |
+| Vamil Divan | Guggenheim | 2026-08-10 | $417.20 | $388.00 | -7.0% | HOLD |
+| Geoff Meacham | Citigroup | 2026-08-07 | $410.95 | $405.00 | -1.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q4 | Health Care Next-Generation Commercial Product Rollout | $0.09 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.12 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.13 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
 | 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.14 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
@@ -129,6 +130,6 @@ AMGN currently trades at a Price-to-Sales (P/S) multiple of ~6.7x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($439.94) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($436.99) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

@@ -1,0 +1,97 @@
+{
+  "symbol": "ETN",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
+  "last_updated": "2026-08-28T02:55:51.098171+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
+      "data": {
+        "shares_outstanding": 388400000,
+        "revenue": 15982000000,
+        "balance_sheet": {
+          "total_assets": 56181000000,
+          "total_liabilities": 56181000000,
+          "total_shareholders_equity": 20254000000,
+          "total_debt": 18509000000,
+          "short_term_debt": 2091000000,
+          "long_term_debt": 18520000000,
+          "cash_and_cash_equivalents": 695000000,
+          "cash_primary": 483000000,
+          "marketable_securities_current": 212000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
+      "data": {
+        "shares_outstanding": 388300000,
+        "revenue": 7451000000,
+        "balance_sheet": {
+          "total_assets": 55085000000,
+          "total_liabilities": 55085000000,
+          "total_shareholders_equity": 19721000000,
+          "total_debt": 18535000000,
+          "short_term_debt": 2510000000,
+          "long_term_debt": 18619000000,
+          "cash_and_cash_equivalents": 751000000,
+          "cash_primary": 565000000,
+          "marketable_securities_current": 186000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-26",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
+      "data": {
+        "shares_outstanding": 388400000,
+        "revenue": 27448000000,
+        "balance_sheet": {
+          "total_assets": 41251000000,
+          "total_liabilities": 41251000000,
+          "total_shareholders_equity": 19425000000,
+          "total_debt": 8758000000,
+          "short_term_debt": 1000000,
+          "long_term_debt": 9894000000,
+          "cash_and_cash_equivalents": 803000000,
+          "cash_primary": 622000000,
+          "marketable_securities_current": 181000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551182",
+      "data": {
+        "shares_outstanding": 388400000,
+        "revenue": 20393000000,
+        "balance_sheet": {
+          "total_assets": 40650000000,
+          "total_liabilities": 40650000000,
+          "total_shareholders_equity": 18843000000,
+          "total_debt": 8756000000,
+          "short_term_debt": 761000000,
+          "long_term_debt": 9892000000,
+          "cash_and_cash_equivalents": 565000000,
+          "cash_primary": 328000000,
+          "marketable_securities_current": 237000000
+        }
+      }
+    }
+  ],
+  "name": "Eaton Corporation plc",
+  "investor_relations_url": "https://www.eaton.com/us/en-us/company/investor-relations.html"
+}

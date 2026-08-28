@@ -1,0 +1,97 @@
+{
+  "symbol": "TMO",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=97745",
+  "last_updated": "2026-08-28T02:55:55.400132+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=97745",
+      "data": {
+        "shares_outstanding": 369747286,
+        "revenue": 22999000000,
+        "balance_sheet": {
+          "total_assets": 113174000000,
+          "total_liabilities": 113174000000,
+          "total_shareholders_equity": 52679000000,
+          "total_debt": 39181000000,
+          "short_term_debt": 3368000000,
+          "long_term_debt": 42284000000,
+          "cash_and_cash_equivalents": 4064000000,
+          "cash_primary": 4064000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=97745",
+      "data": {
+        "shares_outstanding": 371621465,
+        "revenue": 11005000000,
+        "balance_sheet": {
+          "total_assets": 113281000000,
+          "total_liabilities": 113281000000,
+          "total_shareholders_equity": 51934000000,
+          "total_debt": 40071000000,
+          "short_term_debt": 3090000000,
+          "long_term_debt": 42947000000,
+          "cash_and_cash_equivalents": 3256000000,
+          "cash_primary": 3254000000,
+          "marketable_securities_current": 2000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-26",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=97745",
+      "data": {
+        "shares_outstanding": 375708059,
+        "revenue": 44556000000,
+        "balance_sheet": {
+          "total_assets": 110343000000,
+          "total_liabilities": 110343000000,
+          "total_shareholders_equity": 53407000000,
+          "total_debt": 35852000000,
+          "short_term_debt": 3533000000,
+          "long_term_debt": 39172000000,
+          "cash_and_cash_equivalents": 10105000000,
+          "cash_primary": 9852000000,
+          "marketable_securities_current": 253000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-27",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=97745",
+      "data": {
+        "shares_outstanding": 375708059,
+        "revenue": 32341000000,
+        "balance_sheet": {
+          "total_assets": 103020000000,
+          "total_liabilities": 103020000000,
+          "total_shareholders_equity": 51018000000,
+          "total_debt": 31857000000,
+          "short_term_debt": 3823000000,
+          "long_term_debt": 35484000000,
+          "cash_and_cash_equivalents": 3546000000,
+          "cash_primary": 1982000000,
+          "marketable_securities_current": 1564000000
+        }
+      }
+    }
+  ],
+  "name": "Thermo Fisher Scientific Inc.",
+  "investor_relations_url": "https://ir.thermofisher.com/"
+}

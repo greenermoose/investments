@@ -4,9 +4,9 @@
 - **Ticker:** PCAR
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $128.47 per share
-- **Current Price:** $128.47 per share
-- **Target Exit Price:** $133.68 per share
+- **Benchmark Entry Price:** $126.54 per share
+- **Current Price:** $126.54 per share
+- **Target Exit Price:** $132.01 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.0 / 10.0
 - **Rating:** SELL
@@ -28,14 +28,14 @@ PACCAR Inc commands a premium commercial vehicle manufacturing moat through its 
 PACCAR Inc's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Industrials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.06B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.08B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.09B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-PACCAR Inc operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($2.06/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$4.3B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $3.41B in cash & equivalents against $12.78B in total debt (net balance: $-9.37B). Anticipated annual CapEx and operational capital requirements of ~$2.27B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+PACCAR Inc operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 1.60% dividend yield ($2.02/share annually, ~38% payout ratio). Management executes an active share repurchase program (~$4.3B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $3.41B in cash & equivalents against $12.80B in total debt (net balance: $-9.39B). Anticipated annual CapEx and operational capital requirements of ~$2.28B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $2.06 / share | 1.60% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.06/share (1.60% yield, ~38% payout ratio) with +7.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $2.02 / share | 1.60% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.02/share (1.60% yield, ~38% payout ratio) with +7.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | ACTIVE | $4.3 B | -1.0% / yr | Management utilizes moderate share buybacks (~$4.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $12.78 B Debt vs $3.41 B Cash | Net: $-9.37 B | Manageable balance sheet leverage with $12.78B total debt against $3.41B liquid reserves (Net balance: $-9.37B). |
-| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$2.27 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $12.80 B Debt vs $3.41 B Cash | Net: $-9.39 B | Manageable balance sheet leverage with $12.80B total debt against $3.41B liquid reserves (Net balance: $-9.39B). |
+| Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$2.28 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
@@ -53,12 +53,13 @@ PACCAR Inc manages an established industrial liability footprint with stable pen
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $6.25 B (Gap: $-0.44 B) | ~$0.19 B / yr | PACCAR Inc sponsors defined benefit pension plans with $6.25B in gross PBO again... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $7.10 B | Take-or-Pay: $2.13 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $6.26 B (Gap: $-0.44 B) | ~$0.19 B / yr | PACCAR Inc sponsors defined benefit pension plans with $6.26B in gross PBO against $5.82B ... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $7.11 B | Take-or-Pay: $2.13 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 PACCAR Inc's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Industrials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
+PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.4%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.17 B | -3.7% | 0.526 B | 2.38x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $7.61 B | +16.3% | 0.525 B | 2.36x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $6.90 B | +0.1% | 0.524 B | 2.34x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $7.21 B | -0.4% | 0.522 B | 2.32x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $7.52 B | +4.9% | 0.521 B | 2.30x | Industrials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $8.00 B | +5.1% | 0.520 B | 2.28x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $7.27 B | +5.4% | 0.518 B | 2.26x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $7.58 B | +5.2% | 0.517 B | 2.24x | Industrials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $7.88 B | +4.8% | 0.516 B | 2.22x | Industrials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $8.34 B | +4.2% | 0.515 B | 2.20x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $7.56 B | +3.9% | 0.513 B | 2.18x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $7.86 B | +3.7% | 0.512 B | 2.16x | Industrials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $8.16 B | +3.6% | 0.511 B | 2.14x | Industrials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.18 B | -3.7% | 0.526 B | 2.34x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $7.62 B | +16.3% | 0.525 B | 2.32x | Product launch ramp: Industrials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $6.91 B | +0.1% | 0.524 B | 2.30x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $7.22 B | -0.4% | 0.522 B | 2.28x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $7.53 B | +4.9% | 0.521 B | 2.26x | Industrials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $8.01 B | +5.1% | 0.520 B | 2.24x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $7.28 B | +5.4% | 0.518 B | 2.23x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $7.60 B | +5.2% | 0.517 B | 2.21x | Industrials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $7.89 B | +4.8% | 0.516 B | 2.19x | Industrials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $8.35 B | +4.2% | 0.515 B | 2.17x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $7.57 B | +3.9% | 0.513 B | 2.15x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $7.87 B | +3.5% | 0.512 B | 2.13x | Industrials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $8.18 B | +3.6% | 0.511 B | 2.11x | Industrials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $108.08 | $135.10 | $162.12 | 2.3x | +22.3% |
-| 52 Weeks (1Y) | $103.26 | $129.08 | $154.90 | 2.3x | +0.5% |
-| 104 Weeks (2Y) | $105.77 | $132.21 | $158.65 | 2.2x | +1.4% |
-| 156 Weeks (3Y) | $106.94 | $133.68 | $160.42 | 2.1x | +1.3% |
+| 13 Weeks | $106.36 | $132.95 | $159.54 | 2.3x | +21.9% |
+| 52 Weeks (1Y) | $101.61 | $127.01 | $152.41 | 2.3x | +0.4% |
+| 104 Weeks (2Y) | $104.51 | $130.64 | $156.77 | 2.2x | +1.6% |
+| 156 Weeks (3Y) | $105.61 | $132.01 | $158.41 | 2.1x | +1.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Kyle Menges | Citigroup | 2026-07-30 | $134.22 | $140.00 | +4.3% | HOLD |
-| Jerry Revich | Wells Fargo & Company | 2026-07-30 | $132.59 | $157.00 | +18.4% | BUY |
-| Angel Castillo | Morgan Stanley | 2026-07-29 | $136.72 | $119.00 | -13.0% | BUY |
-| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-07-29 | $134.68 | $148.00 | +9.9% | OUTPERFORM |
-| Tami Zakaria | JPMorgan Chase & Co. | 2026-07-29 | $138.21 | $164.00 | +18.7% | OVERWEIGHT |
+| Kyle Menges | Citigroup | 2026-07-30 | $133.76 | $140.00 | +4.7% | HOLD |
+| Jerry Revich | Wells Fargo & Company | 2026-07-30 | $133.76 | $157.00 | +17.4% | BUY |
+| Angel Castillo | Morgan Stanley | 2026-07-29 | $133.87 | $119.00 | -11.1% | BUY |
+| Sanford C. Bernstein Research Team | Sanford C. Bernstein | 2026-07-29 | $133.87 | $148.00 | +10.6% | OUTPERFORM |
+| Tami Zakaria | JPMorgan Chase & Co. | 2026-07-29 | $133.87 | $164.00 | +22.5% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ PCAR currently trades at a Price-to-Sales (P/S) multiple of ~2.4x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($128.47) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($126.54) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

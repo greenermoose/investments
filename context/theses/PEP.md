@@ -4,9 +4,9 @@
 - **Ticker:** PEP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $141.72 per share
-- **Current Price:** $141.72 per share
-- **Target Exit Price:** $155.78 per share
+- **Benchmark Entry Price:** $139.72 per share
+- **Current Price:** $139.72 per share
+- **Target Exit Price:** $153.48 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.1 / 10.0
 - **Rating:** SELL
@@ -19,31 +19,31 @@ PepsiCo, Inc. is a global food and beverage giant operating a world-class portfo
 PepsiCo commands a powerful economic moat supported by its direct-store delivery (DSD) distribution network, dominant market share in global savory snacks, ubiquitous retail shelf space, and immense brand pricing power. Management is focused on international market penetration, zero-sugar beverage innovation, packaging optimization, and continuous productivity automation to drive steady earnings and dividend compounding.
 
 ## Total Addressable Market & Market Share
-PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 15.3% market share. Over our 3-year investment horizon, we model market share evolving to 15.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+PepsiCo, Inc. addresses an estimated Total Addressable Market (TAM) of $550.0B across its primary Consumer Staples domains, expanding at a ~4.0% CAGR. The company currently captures an estimated 17.1% market share. Over our 3-year investment horizon, we model market share evolving to 17.1%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 PepsiCo holds a diversified global consumer packaged food and beverage moat, marketing 23 distinct billion-dollar brands including Pepsi, Lay's, Doritos, Cheetos, Gatorade, and Quaker. PepsiCo dominates North American salty snacks through Frito-Lay, backed by an unmatched direct-store-delivery (DSD) logistics fleet that restocks supermarket and convenience store shelves daily, creating insurmountable distribution barriers for competitors.
 
 ## Anticipated Catalysts & Timeline
-PepsiCo, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.16B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.23B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.26B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+PepsiCo, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Staples Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.18B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.26B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.29B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-PepsiCo, Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 3.10% dividend yield ($4.39/share annually, ~68% payout ratio). Management executes an active share repurchase program (~$12.6B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $10.08B in cash & equivalents against $37.81B in total debt (net balance: $-27.73B). Anticipated annual CapEx and operational capital requirements of ~$3.36B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+PepsiCo, Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 3.10% dividend yield ($4.33/share annually, ~68% payout ratio). Management executes an active share repurchase program (~$14.1B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $11.27B in cash & equivalents against $42.27B in total debt (net balance: $-31.00B). Anticipated annual CapEx and operational capital requirements of ~$3.76B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $4.39 / share | 3.10% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $4.39/share (3.10% yield, ~68% payout ratio) with +7.0% annual modeled dividend growth. |
-| Share Buybacks & Dilution | ACTIVE | $12.6 B | -1.0% / yr | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $37.81 B Debt vs $10.08 B Cash | Net: $-27.73 B | Institutional investment-grade corporate bond issuer with $37.81B total debt vs $10.08B in cash & equivalents (Net balance: $-27.73B). |
-| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$3.36 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
+| Dividends Declared & Paid | PAYING | $4.33 / share | 3.10% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $4.33/share (3.10% yield, ~68% payout ratio) with +7.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $14.1 B | -1.0% / yr | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | INVESTMENT_GRADE_BONDS | $42.27 B Debt vs $11.27 B Cash | Net: $-31.00 B | Institutional investment-grade corporate bond issuer with $42.27B total debt vs $11.27B in cash & equivalents (Net balance: $-31.00B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$3.76 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-PepsiCo, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.01B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+PepsiCo, Inc. utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.13B (~1.2% of TTM revenue). Gross annual equity grant issuance is estimated at +0.6% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~1.2% of TTM Revenue | $1.01 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Annual Stock Compensation | ~1.2% of TTM Revenue | $1.13 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
 | Gross vs Net Dilution Rate | Gross: +0.6% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 3-Year Graded Vesting & Long-Term Incentive Plan (LTIP) performance shares tied to ROIC and EPS hurdles | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
@@ -53,12 +53,13 @@ PepsiCo, Inc. possesses a clean, predictable liability structure with fully mana
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $10.08 B (Gap: $-0.5 B) | ~$0.25 B / yr | PepsiCo, Inc. maintains legacy defined benefit plans ($10.08B PBO vs $9.58B asse... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $15.12 B | Take-or-Pay: $3.78 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $11.27 B (Gap: $-0.56 B) | ~$0.28 B / yr | PepsiCo, Inc. maintains legacy defined benefit plans ($11.27B PBO vs $10.71B assets; $-0.5... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $16.91 B | Take-or-Pay: $4.23 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,64 +72,64 @@ If any of the following occur, the thesis is broken and the position will be exi
 PepsiCo, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Consumer Staples, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
+PEP currently trades at a Price-to-Sales (P/S) multiple of ~2.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.2%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $21.22 B | -3.7% | 1.367 B | 2.31x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $22.50 B | +16.2% | 1.363 B | 2.30x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $20.40 B | +0.0% | 1.360 B | 2.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $21.32 B | -0.5% | 1.357 B | 2.28x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $22.23 B | +4.8% | 1.353 B | 2.27x | Consumer Staples core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $23.64 B | +5.1% | 1.350 B | 2.26x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $21.49 B | +5.3% | 1.346 B | 2.25x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $22.42 B | +5.1% | 1.343 B | 2.24x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $23.29 B | +4.8% | 1.340 B | 2.23x | Consumer Staples core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $24.64 B | +4.2% | 1.336 B | 2.22x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $22.33 B | +3.9% | 1.333 B | 2.21x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $23.22 B | +3.6% | 1.330 B | 2.20x | Consumer Staples core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $24.13 B | +3.6% | 1.326 B | 2.19x | Consumer Staples core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $23.72 B | -3.7% | 1.367 B | 2.03x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $25.15 B | +16.2% | 1.363 B | 2.02x | Product launch ramp: Consumer Staples Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $22.80 B | +0.1% | 1.360 B | 2.02x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $23.83 B | -0.5% | 1.357 B | 2.01x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $24.85 B | +4.8% | 1.353 B | 2.00x | Consumer Staples core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $26.43 B | +5.1% | 1.350 B | 1.99x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $24.02 B | +5.4% | 1.346 B | 1.98x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $25.06 B | +5.2% | 1.343 B | 1.97x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $26.04 B | +4.8% | 1.340 B | 1.96x | Consumer Staples core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $27.55 B | +4.2% | 1.336 B | 1.96x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $24.96 B | +3.9% | 1.333 B | 1.95x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $25.96 B | +3.6% | 1.330 B | 1.94x | Consumer Staples core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $26.98 B | +3.6% | 1.326 B | 1.93x | Consumer Staples core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,364 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 26 Weeks (2Q) | 1,360 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 39 Weeks (3Q) | 1,357 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 52 Weeks (1Y) | 1,353 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 104 Weeks (2Y) | 1,340 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 156 Weeks (3Y) | 1,326 M | -1.0% | Management utilizes moderate share buybacks (~$12.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 13 Weeks (1Q) | 1,364 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 26 Weeks (2Q) | 1,360 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 39 Weeks (3Q) | 1,357 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 52 Weeks (1Y) | 1,353 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 104 Weeks (2Y) | 1,340 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 156 Weeks (3Y) | 1,326 M | -1.0% | Management utilizes moderate share buybacks (~$14.1B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $119.38 | $149.23 | $179.08 | 2.3x | +22.9% |
-| 52 Weeks (1Y) | $116.03 | $145.04 | $174.05 | 2.3x | +2.3% |
-| 104 Weeks (2Y) | $120.94 | $151.17 | $181.40 | 2.2x | +3.3% |
-| 156 Weeks (3Y) | $124.62 | $155.78 | $186.94 | 2.2x | +3.2% |
+| 13 Weeks | $117.50 | $146.88 | $176.26 | 2.0x | +22.1% |
+| 52 Weeks (1Y) | $114.27 | $142.84 | $171.41 | 2.0x | +2.2% |
+| 104 Weeks (2Y) | $118.83 | $148.54 | $178.25 | 2.0x | +3.1% |
+| 156 Weeks (3Y) | $122.78 | $153.48 | $184.18 | 1.9x | +3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Lauren Lieberman | Barclays | 2026-07-21 | $135.46 | $142.00 | +4.8% | BUY |
-| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $137.35 | $155.00 | +12.8% | BUY |
-| Kaumil Gajrawala | Jefferies Financial Group | 2026-07-10 | $137.02 | $152.00 | +10.9% | HOLD |
-| Dara Mohsenian | Morgan Stanley | 2026-07-10 | $137.86 | $160.00 | +16.1% | BUY |
-| Filippo Falorni | Citigroup | 2026-07-10 | $137.86 | $145.00 | +5.2% | HOLD |
+| Lauren Lieberman | Barclays | 2026-07-21 | $135.00 | $142.00 | +5.2% | BUY |
+| Steve Powers | Deutsche Bank Aktiengesellschaft | 2026-07-10 | $137.38 | $155.00 | +12.8% | BUY |
+| Kaumil Gajrawala | Jefferies Financial Group | 2026-07-10 | $137.38 | $152.00 | +10.6% | HOLD |
+| Dara Mohsenian | Morgan Stanley | 2026-07-10 | $137.38 | $160.00 | +16.5% | BUY |
+| Filippo Falorni | Citigroup | 2026-07-10 | $137.38 | $145.00 | +5.5% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.16 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.23 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.26 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Staples Next-Generation Commercial Product Rollout | $0.18 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.26 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.29 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($141.72) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($139.72) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

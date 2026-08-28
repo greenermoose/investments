@@ -1,0 +1,97 @@
+{
+  "symbol": "UNP",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=100885",
+  "last_updated": "2026-08-28T02:55:58.375677+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=100885",
+      "data": {
+        "shares_outstanding": 593713213,
+        "revenue": 13081000000,
+        "balance_sheet": {
+          "total_assets": 71211000000,
+          "total_liabilities": 50538000000,
+          "total_shareholders_equity": 20673000000,
+          "total_debt": 29039000000,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1614000000,
+          "cash_primary": 1614000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=100885",
+      "data": {
+        "shares_outstanding": 593391460,
+        "revenue": 6217000000,
+        "balance_sheet": {
+          "total_assets": 69644000000,
+          "total_liabilities": 50226000000,
+          "total_shareholders_equity": 19418000000,
+          "total_debt": 29784000000,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 735000000,
+          "cash_primary": 735000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=100885",
+      "data": {
+        "shares_outstanding": 593160889,
+        "revenue": 24510000000,
+        "balance_sheet": {
+          "total_assets": 69698000000,
+          "total_liabilities": 51231000000,
+          "total_shareholders_equity": 18467000000,
+          "total_debt": 30294000000,
+          "short_term_debt": 0,
+          "long_term_debt": 31814000000,
+          "cash_and_cash_equivalents": 1266000000,
+          "cash_primary": 1266000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-23",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=100885",
+      "data": {
+        "shares_outstanding": 593043666,
+        "revenue": 18425000000,
+        "balance_sheet": {
+          "total_assets": 68647000000,
+          "total_liabilities": 51343000000,
+          "total_shareholders_equity": 17304000000,
+          "total_debt": 30286000000,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 808000000,
+          "cash_primary": 808000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Union Pacific Corporation",
+  "investor_relations_url": "https://www.up.com/investor"
+}

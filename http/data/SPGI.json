@@ -1,0 +1,97 @@
+{
+  "symbol": "SPGI",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
+  "last_updated": "2026-08-28T02:55:56.756968+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-28",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
+      "data": {
+        "shares_outstanding": 298800000,
+        "revenue": 4171000000,
+        "balance_sheet": {
+          "total_assets": 60792000000,
+          "total_liabilities": 24587000000,
+          "total_shareholders_equity": 31173000000,
+          "total_debt": 13318000000,
+          "short_term_debt": 2697000000,
+          "long_term_debt": 10621000000,
+          "cash_and_cash_equivalents": 1810000000,
+          "cash_primary": 1810000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-11",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
+      "data": {
+        "shares_outstanding": 302800000,
+        "revenue": 15336000000,
+        "balance_sheet": {
+          "total_assets": 61200000000,
+          "total_liabilities": 25048000000,
+          "total_shareholders_equity": 31127000000,
+          "total_debt": 13088000000,
+          "short_term_debt": 718000000,
+          "long_term_debt": 12370000000,
+          "cash_and_cash_equivalents": 1801000000,
+          "cash_primary": 1745000000,
+          "marketable_securities_current": 56000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
+      "data": {
+        "shares_outstanding": 305300000,
+        "revenue": 11420000000,
+        "balance_sheet": {
+          "total_assets": 59749000000,
+          "total_liabilities": 22051000000,
+          "total_shareholders_equity": 33133000000,
+          "total_debt": 11385000000,
+          "short_term_debt": 3000000,
+          "long_term_debt": 11382000000,
+          "cash_and_cash_equivalents": 1672000000,
+          "cash_primary": 1672000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-01",
+      "period_start": "2025-01-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=64040",
+      "data": {
+        "shares_outstanding": 306700000,
+        "revenue": 7532000000,
+        "balance_sheet": {
+          "total_assets": 60395000000,
+          "total_liabilities": 22434000000,
+          "total_shareholders_equity": 33390000000,
+          "total_debt": 11388000000,
+          "short_term_debt": 3000000,
+          "long_term_debt": 11385000000,
+          "cash_and_cash_equivalents": 1847000000,
+          "cash_primary": 1847000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "S&P Global Inc.",
+  "investor_relations_url": "https://investor.spglobal.com/"
+}

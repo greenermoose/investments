@@ -95,15 +95,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 6.4,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 6.46,
     "pension_and_opeb": {
       "funded_status_usd_b": -0.1,
-      "pbo_gross_usd_b": 4.83,
-      "plan_assets_usd_b": 4.73,
+      "pbo_gross_usd_b": 4.88,
+      "plan_assets_usd_b": 4.78,
       "annual_cash_contribution_usd_b": 0.1,
       "underfunding_risk_level": "MINIMAL",
       "opeb_unfunded_usd_b": 0.2,
-      "narrative": "The Travelers Companies, Inc. maintains well-funded legacy defined benefit pension plans ($4.83B PBO vs $4.73B assets) with strong institutional risk-matching asset allocation."
+      "narrative": "The Travelers Companies, Inc. maintains well-funded legacy defined benefit pension plans ($4.88B PBO vs $4.78B assets) with strong institutional risk-matching asset allocation."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.0,
@@ -121,10 +121,10 @@
       "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 5.8,
+      "unconditional_purchase_obligations_usd_b": 5.86,
       "take_or_pay_commitments_usd_b": 0.2,
       "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $5.80B."
+      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $5.86B."
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "The Travelers Companies, Inc.'s off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."

@@ -1,0 +1,97 @@
+{
+  "symbol": "LMT",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=936468",
+  "last_updated": "2026-08-28T02:55:58.757816+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=936468",
+      "data": {
+        "shares_outstanding": 230563608,
+        "revenue": 38084000000,
+        "balance_sheet": {
+          "total_assets": 62450000000,
+          "total_liabilities": 53682000000,
+          "total_shareholders_equity": 8768000000,
+          "total_debt": 21700000000,
+          "short_term_debt": 0,
+          "long_term_debt": 20538000000,
+          "cash_and_cash_equivalents": 3791000000,
+          "cash_primary": 3791000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-23",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-29",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=936468",
+      "data": {
+        "shares_outstanding": 230080240,
+        "revenue": 18021000000,
+        "balance_sheet": {
+          "total_assets": 59238000000,
+          "total_liabilities": 51749000000,
+          "total_shareholders_equity": 7489000000,
+          "total_debt": 21900000000,
+          "short_term_debt": 168000000,
+          "long_term_debt": 20529000000,
+          "cash_and_cash_equivalents": 1894000000,
+          "cash_primary": 1894000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=936468",
+      "data": {
+        "shares_outstanding": 231397796,
+        "revenue": 75048000000,
+        "balance_sheet": {
+          "total_assets": 59840000000,
+          "total_liabilities": 53119000000,
+          "total_shareholders_equity": 6721000000,
+          "total_debt": 22914000000,
+          "short_term_debt": 1168000000,
+          "long_term_debt": 20532000000,
+          "cash_and_cash_equivalents": 4121000000,
+          "cash_primary": 4121000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-21",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=936468",
+      "data": {
+        "shares_outstanding": 233465056,
+        "revenue": 54727000000,
+        "balance_sheet": {
+          "total_assets": 60276000000,
+          "total_liabilities": 54095000000,
+          "total_shareholders_equity": 6181000000,
+          "total_debt": 23400000000,
+          "short_term_debt": 1669000000,
+          "long_term_debt": 20520000000,
+          "cash_and_cash_equivalents": 3470000000,
+          "cash_primary": 3470000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Lockheed Martin Corporation",
+  "investor_relations_url": "https://investors.lockheedmartin.com/"
+}

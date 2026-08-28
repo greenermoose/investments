@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.22.0] - 2026-08-27
+
+### Universe Expansion: 25 High-Conviction Public Equities Onboarded (150 to 175 Equities)
+- **Market-Wide Screening & Stage 1 Triage:** Screened public US equity markets and SEC filings for 25 high-conviction companies with durable economic moats, positive cash flows / strong balance sheet solvency, and high compounding potential:
+  - Technology & Semiconductors: `TSM`, `ORCL`, `ANET`, `APH`, `TTD`, `NET`, `MDB`, `SNOW`
+  - Healthcare & Life Sciences: `LLY`, `ABBV`, `TMO`, `ABT`, `DHR`, `BSX`, `SYK`
+  - Industrials & Electrification: `GE`, `ETN`, `VRT`, `DE`, `UNP`, `LMT`
+  - Financials & Market Infrastructure: `SPGI`, `BLK`, `MS`
+  - Mobility & Platform Logistics: `UBER`
+- **Deterministic Data Ingestion & Pricing (`scripts/fetch_sec.py`, `scripts/fetch_market_prices.py`, `scripts/fetch_analyst_targets.py`):** Ingested live SEC EDGAR XBRL filings, verified market prices and 52-week technical bounds, and Wall Street analyst price targets and research links for all 25 new equities into `http/data/` and `context/data/`.
+- **Institutional Research & Moat Curation (`scripts/curate_business_profiles.py`, `scripts/curate_competitive_moats.py`, `scripts/build_off_balance_sheet_data.py`):** Authored bespoke 2-paragraph business profiles, comprehensive competitive moat analyses, and forensic off-balance sheet liability audits for all 25 new companies.
+- **Institutional Investment Thesis Dossiers (`context/theses/*.md`, `scripts/generate_all_theses.py`):** Generated complete institutional thesis dossiers for all 25 new equities (expanding total thesis store to 175 active universe dossiers), strictly conforming to `context/schemas/investment_thesis_schema.json` with 13-quarter revenue matrices, 6-horizon shares outstanding, and 4-horizon price target trading ranges.
+- **Master Universe & Secondary Registries Re-Synthesis (`scripts/build_universe_json.py`, `scripts/anticipate_sec_filings.py`, `scripts/surveil_sentiment.py`, `scripts/track_short_sellers.py`):** Rebuilt master catalogs (`http/data/universe.json`, `context/data/universe.json`), SEC filing calendar, investor sentiment surveillance, and short seller registries across all 175 universe constituents.
+- **Quality Control & Schema Conformance (`scripts/quality_control.py`, `scripts/validate_thesis.py`):** Verified 100% schema conformance across all 175 thesis dossiers and achieved a clean Quality Control Audit report with 0 errors and 0 warnings.
+
 ## [2.21.0] - 2026-08-27
 
 ### Buy-to-Close (BTC) Risk Control on Losing Propositions & Invalidation

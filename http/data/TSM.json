@@ -1,0 +1,97 @@
+{
+  "symbol": "TSM",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+  "last_updated": "2026-08-28T02:55:48.916487+00:00",
+  "filings": [
+    {
+      "type": "20-F",
+      "filing_date": "2025-04-17",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25932733242,
+        "revenue": 2894307700000,
+        "balance_sheet": {
+          "total_assets": 6691764700000,
+          "total_liabilities": 2412493100000,
+          "total_shareholders_equity": 4279271600000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 2120674800000,
+          "cash_primary": 2120674800000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2024-04-18",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25932070992,
+        "revenue": 2161735800000,
+        "balance_sheet": {
+          "total_assets": 5532196600000,
+          "total_liabilities": 2078330100000,
+          "total_shareholders_equity": 3453866500000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1453101600000,
+          "cash_primary": 1453101600000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2023-04-20",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25930380458,
+        "revenue": 2263891300000,
+        "balance_sheet": {
+          "total_assets": 4964459100000,
+          "total_liabilities": 2046626700000,
+          "total_shareholders_equity": 2917832400000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1329291400000,
+          "cash_primary": 1329291400000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2022-04-14",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25930380458,
+        "revenue": 1587415000000,
+        "balance_sheet": {
+          "total_assets": 3725302200000,
+          "total_liabilities": 1573619700000,
+          "total_shareholders_equity": 2151682500000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1058808100000,
+          "cash_primary": 1058808100000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "investor_relations_url": "https://investor.tsmc.com/"
+}

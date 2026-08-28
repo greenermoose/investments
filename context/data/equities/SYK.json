@@ -1,0 +1,133 @@
+{
+  "symbol": "SYK",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
+  "last_updated": "2026-08-28T02:55:54.535304+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
+      "data": {
+        "shares_outstanding": 383573046,
+        "revenue": 12609000000,
+        "balance_sheet": {
+          "total_assets": 47930000000,
+          "total_liabilities": 23942000000,
+          "total_shareholders_equity": 23988000000,
+          "total_debt": 14942000000,
+          "short_term_debt": 750000000,
+          "long_term_debt": 14192000000,
+          "cash_and_cash_equivalents": 3476000000,
+          "cash_primary": 3391000000,
+          "marketable_securities_current": 85000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-11",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
+      "data": {
+        "shares_outstanding": 383360762,
+        "revenue": 6020000000,
+        "balance_sheet": {
+          "total_assets": 46291000000,
+          "total_liabilities": 23312000000,
+          "total_shareholders_equity": 22979000000,
+          "total_debt": 14723000000,
+          "short_term_debt": 499000000,
+          "long_term_debt": 14224000000,
+          "cash_and_cash_equivalents": 2965000000,
+          "cash_primary": 2878000000,
+          "marketable_securities_current": 87000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-11",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
+      "data": {
+        "shares_outstanding": 382423648,
+        "revenue": 25116000000,
+        "balance_sheet": {
+          "total_assets": 47844000000,
+          "total_liabilities": 25424000000,
+          "total_shareholders_equity": 22420000000,
+          "total_debt": 15859000000,
+          "short_term_debt": 1000000000,
+          "long_term_debt": 14859000000,
+          "cash_and_cash_equivalents": 4100000000,
+          "cash_primary": 4011000000,
+          "marketable_securities_current": 89000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-31",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=310764",
+      "data": {
+        "shares_outstanding": 382423648,
+        "revenue": 17945000000,
+        "balance_sheet": {
+          "total_assets": 47057000000,
+          "total_liabilities": 25272000000,
+          "total_shareholders_equity": 21785000000,
+          "total_debt": 16595000000,
+          "short_term_debt": 1750000000,
+          "long_term_debt": 14845000000,
+          "cash_and_cash_equivalents": 3343000000,
+          "cash_primary": 3256000000,
+          "marketable_securities_current": 87000000
+        }
+      }
+    }
+  ],
+  "name": "Stryker Corporation",
+  "investor_relations_url": "https://investors.stryker.com/",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "MODERATE",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 8.47,
+    "pension_and_opeb": {
+      "funded_status_usd_b": -0.39,
+      "pbo_gross_usd_b": 5.53,
+      "plan_assets_usd_b": 5.14,
+      "annual_cash_contribution_usd_b": 0.17,
+      "underfunding_risk_level": "MODERATE",
+      "opeb_unfunded_usd_b": 1.0,
+      "narrative": "Stryker Corporation sponsors defined benefit pension plans with $5.53B in gross PBO against $5.14B in assets ($-0.39B net gap) and $1.00B in unfunded OPEB."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.3,
+      "estimated_unreserved_exposure_usd_b": 0.15,
+      "superfund_and_pfas_sites_count": 6,
+      "annual_remediation_cash_drain_usd_b": 0.03,
+      "risk_level": "LOW",
+      "narrative": "Ongoing environmental remediation across legacy industrial manufacturing and foundry facilities."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Commercial contract disputes, workplace safety claims, and product warranty dockets.",
+      "recent_settlements_scheduled_usd_b": 0.3,
+      "annual_legal_settlement_cash_drain_usd_b": 0.04,
+      "catastrophic_loss_risk_level": "LOW",
+      "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 6.28,
+      "take_or_pay_commitments_usd_b": 1.88,
+      "jv_and_vie_debt_guarantees_usd_b": 0.2,
+      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $6.28B."
+    },
+    "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
+    "narrative": "Stryker Corporation manages an established industrial liability footprint with stable pension funding and predictable supply agreements."
+  }
+}

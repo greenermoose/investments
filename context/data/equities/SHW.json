@@ -95,15 +95,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 8.02,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 7.99,
     "pension_and_opeb": {
       "funded_status_usd_b": -0.36,
-      "pbo_gross_usd_b": 5.2,
-      "plan_assets_usd_b": 4.84,
+      "pbo_gross_usd_b": 5.19,
+      "plan_assets_usd_b": 4.83,
       "annual_cash_contribution_usd_b": 0.16,
       "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.95,
-      "narrative": "The Sherwin-Williams Company sponsors defined benefit pension plans with $5.20B in gross PBO against $4.84B in assets ($-0.36B net gap) and $0.95B in unfunded OPEB."
+      "opeb_unfunded_usd_b": 0.94,
+      "narrative": "The Sherwin-Williams Company sponsors defined benefit pension plans with $5.19B in gross PBO against $4.83B in assets ($-0.36B net gap) and $0.94B in unfunded OPEB."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.3,
@@ -121,10 +121,10 @@
       "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 5.91,
+      "unconditional_purchase_obligations_usd_b": 5.89,
       "take_or_pay_commitments_usd_b": 1.77,
       "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $5.91B."
+      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $5.89B."
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "The Sherwin-Williams Company manages an established industrial liability footprint with stable pension funding and predictable supply agreements."

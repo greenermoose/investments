@@ -1,0 +1,97 @@
+{
+  "symbol": "TTD",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1671933",
+  "last_updated": "2026-08-28T02:55:51.981274+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1671933",
+      "data": {
+        "shares_outstanding": 471494000,
+        "revenue": 1403914000,
+        "balance_sheet": {
+          "total_assets": 5764446000,
+          "total_liabilities": 3190094000,
+          "total_shareholders_equity": 2574352000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1485333000,
+          "cash_primary": 1122979000,
+          "marketable_securities_current": 362354000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-07",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1671933",
+      "data": {
+        "shares_outstanding": 474663000,
+        "revenue": 688857000,
+        "balance_sheet": {
+          "total_assets": 5734384000,
+          "total_liabilities": 3280898000,
+          "total_shareholders_equity": 2453486000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1405915000,
+          "cash_primary": 878377000,
+          "marketable_securities_current": 527538000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-27",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1671933",
+      "data": {
+        "shares_outstanding": 488278000,
+        "revenue": 2896284000,
+        "balance_sheet": {
+          "total_assets": 6153220000,
+          "total_liabilities": 3668829000,
+          "total_shareholders_equity": 2484391000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1303057000,
+          "cash_primary": 658175000,
+          "marketable_securities_current": 644882000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-06",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1671933",
+      "data": {
+        "shares_outstanding": 491069000,
+        "revenue": 2049493000,
+        "balance_sheet": {
+          "total_assets": 5940401000,
+          "total_liabilities": 3339615000,
+          "total_shareholders_equity": 2600786000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1445447000,
+          "cash_primary": 653134000,
+          "marketable_securities_current": 792313000
+        }
+      }
+    }
+  ],
+  "name": "The Trade Desk, Inc.",
+  "investor_relations_url": "https://investors.thetradedesk.com/"
+}

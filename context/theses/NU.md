@@ -4,9 +4,9 @@
 - **Ticker:** NU
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $14.95 per share
-- **Current Price:** $14.95 per share
-- **Target Exit Price:** $33.39 per share
+- **Benchmark Entry Price:** $14.88 per share
+- **Current Price:** $14.88 per share
+- **Target Exit Price:** $33.24 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.4 / 10.0
 - **Rating:** BUY
@@ -53,12 +53,13 @@ Nu Holdings Ltd.'s off-balance sheet liabilities are low risk, with well-funded 
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.05 B (Gap: $-0.02 B) | ~$0.02 B / yr | Nu Holdings Ltd. maintains well-funded legacy defined benefit pension plans ($1.... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Nu Holdings Ltd. has zero industrial contamination or Superfund remediation liab... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, in... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $1.26 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby lett... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $1.05 B (Gap: $-0.02 B) | ~$0.02 B / yr | Nu Holdings Ltd. maintains well-funded legacy defined benefit pension plans ($1.05B PBO vs... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Nu Holdings Ltd. has zero industrial contamination or Superfund remediation liabilities.... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.80 B | ~$0.12 B / yr | Routine regulatory compliance exams, consumer financial protection inquiries, interchange ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $1.26 B | Take-or-Pay: $0.20 B | Datacenter technology contracts, telecommunications agreements, and standby letters of cre... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -76,19 +77,19 @@ NU currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twel
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.65 B | +12.6% | 4.831 B | 6.89x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.03 B | +39.0% | 4.837 B | 6.86x | Product launch ramp: Mexico Full Banking License & High-Yield Deposit Ingestion |
-| 2027-Q1 | 2027-03-31 | $3.02 B | +25.2% | 4.843 B | 6.83x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.52 B | +31.7% | 4.849 B | 6.81x | Product launch ramp: Colombia Credit Card & Secured Lending Acceleration |
-| 2027-Q3 | 2027-09-30 | $3.99 B | +50.6% | 4.855 B | 6.78x | Financials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $4.69 B | +54.9% | 4.861 B | 6.75x | Product launch ramp: SME Merchant Payment Services & Regional Wealth Management Tier |
-| 2028-Q1 | 2028-03-31 | $4.76 B | +57.6% | 4.867 B | 6.72x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $5.30 B | +50.5% | 4.873 B | 6.69x | Financials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $5.65 B | +41.5% | 4.879 B | 6.66x | Financials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.11 B | +30.4% | 4.886 B | 6.64x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $5.88 B | +23.5% | 4.892 B | 6.61x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.28 B | +18.6% | 4.898 B | 6.58x | Financials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.73 B | +19.0% | 4.904 B | 6.55x | Financials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.65 B | +12.6% | 4.831 B | 6.86x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.03 B | +39.0% | 4.837 B | 6.83x | Product launch ramp: Mexico Full Banking License & High-Yield Deposit Ingestion |
+| 2027-Q1 | 2027-03-31 | $3.02 B | +25.2% | 4.843 B | 6.80x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.52 B | +31.7% | 4.849 B | 6.77x | Product launch ramp: Colombia Credit Card & Secured Lending Acceleration |
+| 2027-Q3 | 2027-09-30 | $3.99 B | +50.6% | 4.855 B | 6.75x | Financials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $4.69 B | +54.9% | 4.861 B | 6.72x | Product launch ramp: SME Merchant Payment Services & Regional Wealth Management Tier |
+| 2028-Q1 | 2028-03-31 | $4.76 B | +57.6% | 4.867 B | 6.69x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $5.30 B | +50.5% | 4.873 B | 6.66x | Financials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $5.65 B | +41.5% | 4.879 B | 6.63x | Financials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $6.11 B | +30.4% | 4.886 B | 6.60x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $5.88 B | +23.5% | 4.892 B | 6.58x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $6.28 B | +18.6% | 4.898 B | 6.55x | Financials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $6.73 B | +19.0% | 4.904 B | 6.52x | Financials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,17 +104,17 @@ NU currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twel
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $13.53 | $16.91 | $20.29 | 6.8x | +63.7% |
-| 52 Weeks (1Y) | $15.15 | $18.94 | $22.73 | 6.8x | +26.7% |
-| 104 Weeks (2Y) | $22.28 | $27.85 | $33.42 | 6.7x | +36.5% |
-| 156 Weeks (3Y) | $26.71 | $33.39 | $40.07 | 6.5x | +30.7% |
+| 13 Weeks | $13.47 | $16.84 | $20.21 | 6.7x | +64.0% |
+| 52 Weeks (1Y) | $15.08 | $18.85 | $22.62 | 6.8x | +26.7% |
+| 104 Weeks (2Y) | $22.18 | $27.72 | $33.26 | 6.6x | +36.5% |
+| 156 Weeks (3Y) | $26.59 | $33.24 | $39.89 | 6.5x | +30.7% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Tito Labarta | Goldman Sachs | 2026-08-14 | $14.35 | $19.00 | +32.4% | BUY |
-| Domingos Falavina | JPMorgan | 2026-08-11 | $14.20 | $18.00 | +26.8% | OVERWEIGHT |
-| Jorge Kuri | Morgan Stanley | 2026-08-05 | $14.10 | $17.50 | +24.1% | OVERWEIGHT |
+| Tito Labarta | Goldman Sachs | 2026-08-14 | $15.23 | $19.00 | +24.8% | BUY |
+| Domingos Falavina | JPMorgan | 2026-08-11 | $13.65 | $18.00 | +31.9% | OVERWEIGHT |
+| Jorge Kuri | Morgan Stanley | 2026-08-05 | $14.48 | $17.50 | +20.9% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -127,6 +128,6 @@ NU currently trades at a Price-to-Sales (P/S) multiple of ~6.9x on trailing twel
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($14.95) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($14.88) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

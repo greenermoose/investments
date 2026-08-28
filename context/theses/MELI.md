@@ -4,9 +4,9 @@
 - **Ticker:** MELI
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $1819.43 per share
-- **Current Price:** $1819.43 per share
-- **Target Exit Price:** $3301.52 per share
+- **Benchmark Entry Price:** $1930.75 per share
+- **Current Price:** $1930.75 per share
+- **Target Exit Price:** $3506.26 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.4 / 10.0
 - **Rating:** BUY
@@ -28,13 +28,13 @@ MercadoLibre commands an unrivaled commerce and fintech ecosystem moat across La
 MercadoLibre, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.45B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.63B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.72B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-MercadoLibre, Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 0.40% dividend yield ($7.28/share annually, ~15% payout ratio). Management executes an active share repurchase program (~$4.3B authorized capacity), reducing share count at ~0.5% annually. Balance sheet liquidity is supported by $7.24B in cash & equivalents against $5.80B in total debt (net balance: $+1.44B). Anticipated annual CapEx and operational capital requirements of ~$1.16B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+MercadoLibre, Inc. operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 0.40% dividend yield ($7.72/share annually, ~15% payout ratio). Management executes an active share repurchase program (~$4.3B authorized capacity), reducing share count at ~0.5% annually. Balance sheet liquidity is supported by $7.22B in cash & equivalents against $5.78B in total debt (net balance: $+1.44B). Anticipated annual CapEx and operational capital requirements of ~$1.16B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $7.28 / share | 0.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $7.28/share (0.40% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $7.72 / share | 0.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $7.72/share (0.40% yield, ~15% payout ratio) with +6.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | ACTIVE | $4.3 B | -0.5% / yr | Management utilizes moderate share buybacks (~$4.3B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~0.5% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $5.80 B Debt vs $7.24 B Cash | Net: $+1.44 B | Manageable balance sheet leverage with $5.80B total debt against $7.24B liquid reserves (Net balance: $+1.44B). |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $5.78 B Debt vs $7.22 B Cash | Net: $+1.44 B | Manageable balance sheet leverage with $5.78B total debt against $7.22B liquid reserves (Net balance: $+1.44B). |
 | Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.16 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
@@ -53,12 +53,13 @@ MercadoLibre, Inc. possesses a clean, predictable liability structure with fully
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $3.48 B (Gap: $-0.17 B) | ~$0.09 B / yr | MercadoLibre, Inc. maintains legacy defined benefit plans ($3.48B PBO vs $3.31B ... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $5.22 B | Take-or-Pay: $1.30 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $3.47 B (Gap: $-0.17 B) | ~$0.09 B / yr | MercadoLibre, Inc. maintains legacy defined benefit plans ($3.47B PBO vs $3.30B assets; $-... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $5.20 B | Take-or-Pay: $1.30 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 MercadoLibre, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +26.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~2.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22.0%, fully justifying our BUY rating.
+MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 22%, fully justifying our BUY rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $7.32 B | +11.2% | 0.051 B | 3.18x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $8.19 B | +35.0% | 0.051 B | 3.16x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $7.89 B | +17.7% | 0.051 B | 3.14x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $8.80 B | +19.1% | 0.051 B | 3.12x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.72 B | +32.8% | 0.050 B | 3.10x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.99 B | +34.2% | 0.050 B | 3.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $10.66 B | +35.2% | 0.050 B | 3.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $11.68 B | +32.8% | 0.050 B | 3.04x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $12.59 B | +29.5% | 0.050 B | 3.01x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $13.79 B | +25.5% | 0.050 B | 2.99x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $13.12 B | +23.0% | 0.050 B | 2.97x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $14.16 B | +21.2% | 0.050 B | 2.95x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $15.27 B | +21.3% | 0.050 B | 2.93x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $7.30 B | +11.2% | 0.051 B | 3.39x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $8.17 B | +35.0% | 0.051 B | 3.37x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $7.86 B | +17.7% | 0.051 B | 3.34x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $8.78 B | +19.1% | 0.051 B | 3.32x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $9.69 B | +32.8% | 0.050 B | 3.30x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $10.96 B | +34.2% | 0.050 B | 3.28x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $10.64 B | +35.3% | 0.050 B | 3.25x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $11.65 B | +32.7% | 0.050 B | 3.23x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.55 B | +29.5% | 0.050 B | 3.21x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.76 B | +25.5% | 0.050 B | 3.19x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $13.08 B | +22.9% | 0.050 B | 3.16x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $14.12 B | +21.2% | 0.050 B | 3.14x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $15.23 B | +21.4% | 0.050 B | 3.12x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $1603.31 | $2004.14 | $2404.97 | 3.1x | +47.2% |
-| 52 Weeks (1Y) | $1716.16 | $2145.20 | $2574.24 | 3.1x | +17.9% |
-| 104 Weeks (2Y) | $2211.50 | $2764.38 | $3317.26 | 3.0x | +23.3% |
-| 156 Weeks (3Y) | $2641.22 | $3301.52 | $3961.82 | 2.9x | +22.0% |
+| 13 Weeks | $1701.92 | $2127.40 | $2552.88 | 3.3x | +47.4% |
+| 52 Weeks (1Y) | $1821.60 | $2277.00 | $2732.40 | 3.3x | +17.9% |
+| 104 Weeks (2Y) | $2352.29 | $2940.36 | $3528.43 | 3.2x | +23.4% |
+| 156 Weeks (3Y) | $2805.01 | $3506.26 | $4207.51 | 3.1x | +22.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Marcelo Santos | JPMorgan Chase & Co. | 2026-08-11 | $1896.28 | $2150.00 | +13.4% | HOLD |
-| Deepak Mathivanan | Cantor Fitzgerald | 2026-08-06 | $1922.59 | $2300.00 | +19.6% | OVERWEIGHT |
-| Marvin Fong | BTIG Research | 2026-08-06 | $1922.56 | $2150.00 | +11.8% | BUY |
-| Joao Pedro Soares | Citigroup | 2026-07-15 | $1873.89 | $2000.00 | +6.7% | HOLD |
-| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-05-13 | $1512.75 | $2100.00 | +38.8% | BUY |
+| Marcelo Santos | JPMorgan Chase & Co. | 2026-08-11 | $1940.00 | $2150.00 | +10.8% | HOLD |
+| Deepak Mathivanan | Cantor Fitzgerald | 2026-08-06 | $1830.00 | $2300.00 | +25.7% | OVERWEIGHT |
+| Marvin Fong | BTIG Research | 2026-08-06 | $1830.00 | $2150.00 | +17.5% | BUY |
+| Joao Pedro Soares | Citigroup | 2026-07-15 | $1843.19 | $2000.00 | +8.5% | HOLD |
+| The Goldman Sachs Group Research Team | The Goldman Sachs Group | 2026-05-13 | $1562.00 | $2100.00 | +34.4% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ MELI currently trades at a Price-to-Sales (P/S) multiple of ~3.2x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($1819.43) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($1930.75) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

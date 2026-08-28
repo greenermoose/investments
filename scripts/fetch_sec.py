@@ -230,7 +230,7 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
                 s_val = shares[0].get("val", 0)
 
             # Normalize Berkshire Hathaway Class B share count (Class B equivalent ~2.16B shares)
-            if ticker in ["BRK-B", "BRK.B"] and s_val < 100e6:
+            if sym in ["BRK-B", "BRK.B"] and s_val < 100e6:
                 s_val = 2160000000
                 
             r_entry = next((x for x in revenue if x.get("end") == end_date), None) if revenue else None

@@ -95,15 +95,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 56.99,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 85.1,
     "pension_and_opeb": {
-      "funded_status_usd_b": -1.65,
-      "pbo_gross_usd_b": 33.03,
-      "plan_assets_usd_b": 31.38,
-      "annual_cash_contribution_usd_b": 0.83,
+      "funded_status_usd_b": -2.47,
+      "pbo_gross_usd_b": 49.4,
+      "plan_assets_usd_b": 46.93,
+      "annual_cash_contribution_usd_b": 1.24,
       "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 5.5,
-      "narrative": "Costco Wholesale Corporation maintains legacy defined benefit plans ($33.03B PBO vs $31.38B assets; $-1.65B gap) and $5.50B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
+      "opeb_unfunded_usd_b": 8.23,
+      "narrative": "Costco Wholesale Corporation maintains legacy defined benefit plans ($49.40B PBO vs $46.93B assets; $-2.47B gap) and $8.23B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.05,
@@ -121,10 +121,10 @@
       "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 49.54,
-      "take_or_pay_commitments_usd_b": 12.38,
+      "unconditional_purchase_obligations_usd_b": 74.1,
+      "take_or_pay_commitments_usd_b": 18.52,
       "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $49.54B across 3-5 years."
+      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $74.10B across 3-5 years."
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "Costco Wholesale Corporation possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."

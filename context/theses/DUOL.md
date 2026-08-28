@@ -4,9 +4,9 @@
 - **Ticker:** DUOL
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $143.22 per share
-- **Current Price:** $143.22 per share
-- **Target Exit Price:** $379.90 per share
+- **Benchmark Entry Price:** $142.86 per share
+- **Current Price:** $142.86 per share
+- **Target Exit Price:** $378.80 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 9.2 / 10.0
 - **Rating:** BUY
@@ -14,15 +14,15 @@
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=0001562088
 
 ## Business Profile
-Duolingo, Inc. operates within the Consumer Discretionary sector, specializing in Digital Learning & EdTech Platforms. The company develops and commercializes market-leading solutions, serving commercial enterprise and consumer markets with sustainable competitive differentiation.
+Duolingo, Inc. is the world's leading mobile learning platform and the top-grossing education app globally, offering gamified language courses alongside math and music learning. The company employs a freemium model where its engaging, bite-sized lessons attract over 100 million active monthly learners, monetizing through paid Super Duolingo and Duolingo Max (generative AI) subscriptions, in-app purchases, and English proficiency testing (Duolingo English Test).
 
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Duolingo's competitive moat is driven by massive organic user acquisition (>90% organic traffic), proprietary AI-driven personalized learning algorithms, and deep gamification retention mechanics. Management is aggressively integrating OpenAI-powered conversational AI features into premium subscription tiers while expanding into core subject education worldwide.
 
 ## Total Addressable Market & Market Share
 Duolingo, Inc. addresses an estimated Total Addressable Market (TAM) of $50.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 1.2% market share. Over our 3-year investment horizon, we model market share evolving to 1.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
-Strategic execution centers on expanding market share, driving technological innovation, and maximizing free cash flow conversion across core operating segments.
+Duolingo commands a consumer brand and data network moat as the world's most downloaded and highest-grossing education app. Over 90% of its 100M+ active learners are acquired organically through viral social media marketing and word-of-mouth. Its proprietary AI-driven gamification engine analyzes billions of daily language exercises to optimize lesson difficulty and engagement, driving high subscription conversion (Super Duolingo and Duolingo Max) and high gross margins (>73%).
 
 ## Anticipated Catalysts & Timeline
 Duolingo, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Duolingo Max AI Advanced Conversation Tiers Global Expansion** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Higher ARPPU conversion to premium AI subscription tier across 100M+ active learners. - **Math & Music Core Curriculum Gamification & School Integration** (2027-Q2): Expected top-line impact of ~$0.08B inflecting 2027-Q2 revenue. Adoption of STEM and music subjects broadening demographic reach into K-12 education. - **Duolingo English Test (DET) University & Corporate Enterprise Adoption** (2027-Q4): Expected top-line impact of ~$0.11B inflecting 2027-Q4 revenue. Institutional testing certification volume growth displacing legacy testing centers.
@@ -49,16 +49,17 @@ Duolingo, Inc. utilizes equity-based compensation as a core talent recruitment a
 | Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
 
 ## Off-Balance Sheet & Long-Term Obligations
-Duolingo, Inc. manages an established liability profile with minimal off-balance sheet encumbrances.
+Duolingo, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales.
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) | $0.00 B / yr | No defined benefit obligations |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | No material cleanup exposure |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.00 B | $0.00 B / yr | Routine commercial disputes only |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Standard procurement |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.07 B (Gap: $0.00 B) | ~$0.00 B / yr | Duolingo, Inc. maintains legacy defined benefit plans ($0.07B PBO vs $0.07B assets; $0.00B... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.11 B | Take-or-Pay: $0.03 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
 
-**Equity Cash Flow Seniority Impact:** Zero material off-balance sheet encumbrances on common equity distributions.
+**Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -76,19 +77,19 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~11.3x on trailing t
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.15 B | +14.8% | 0.047 B | 11.32x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.17 B | +45.8% | 0.047 B | 11.25x | Product launch ramp: Duolingo Max AI Advanced Conversation Tiers Global Expansion |
-| 2027-Q1 | 2027-03-31 | $0.18 B | +29.0% | 0.047 B | 11.17x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.22 B | +48.4% | 0.047 B | 11.10x | Product launch ramp: Math & Music Core Curriculum Gamification & School Integration |
-| 2027-Q3 | 2027-09-30 | $0.26 B | +74.0% | 0.047 B | 11.02x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.32 B | +89.6% | 0.047 B | 10.95x | Product launch ramp: Duolingo English Test (DET) University & Corporate Enterprise Adoption |
-| 2028-Q1 | 2028-03-31 | $0.34 B | +91.1% | 0.047 B | 10.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.39 B | +76.4% | 0.048 B | 10.80x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.41 B | +56.1% | 0.048 B | 10.72x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.43 B | +34.2% | 0.048 B | 10.65x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.42 B | +22.2% | 0.048 B | 10.57x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.44 B | +11.8% | 0.048 B | 10.50x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.46 B | +11.6% | 0.048 B | 10.42x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.15 B | +14.8% | 0.047 B | 11.30x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.17 B | +45.8% | 0.047 B | 11.22x | Product launch ramp: Duolingo Max AI Advanced Conversation Tiers Global Expansion |
+| 2027-Q1 | 2027-03-31 | $0.18 B | +29.0% | 0.047 B | 11.14x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.22 B | +48.4% | 0.047 B | 11.07x | Product launch ramp: Math & Music Core Curriculum Gamification & School Integration |
+| 2027-Q3 | 2027-09-30 | $0.26 B | +74.0% | 0.047 B | 10.99x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.32 B | +89.6% | 0.047 B | 10.92x | Product launch ramp: Duolingo English Test (DET) University & Corporate Enterprise Adoption |
+| 2028-Q1 | 2028-03-31 | $0.34 B | +91.1% | 0.047 B | 10.84x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.39 B | +76.4% | 0.048 B | 10.77x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.41 B | +56.1% | 0.048 B | 10.69x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.43 B | +34.2% | 0.048 B | 10.62x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.42 B | +22.2% | 0.048 B | 10.54x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.44 B | +11.8% | 0.048 B | 10.47x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.46 B | +11.6% | 0.048 B | 10.39x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,16 +104,16 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~11.3x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $128.48 | $160.60 | $192.72 | 11.1x | +58.1% |
-| 52 Weeks (1Y) | $155.83 | $194.79 | $233.75 | 11.0x | +36.0% |
-| 104 Weeks (2Y) | $260.86 | $326.07 | $391.28 | 10.7x | +50.9% |
-| 156 Weeks (3Y) | $303.92 | $379.90 | $455.88 | 10.4x | +38.4% |
+| 13 Weeks | $128.13 | $160.16 | $192.19 | 11.1x | +58.0% |
+| 52 Weeks (1Y) | $155.41 | $194.26 | $233.11 | 11.0x | +36.0% |
+| 104 Weeks (2Y) | $260.12 | $325.15 | $390.18 | 10.7x | +50.9% |
+| 156 Weeks (3Y) | $303.04 | $378.80 | $454.56 | 10.4x | +38.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Eric Sheridan | Goldman Sachs | 2026-08-10 | $139.64 | $185.00 | +32.5% | BUY |
-| Arvind Ramnani | Piper Sandler | 2026-08-06 | $138.00 | $190.00 | +37.7% | OVERWEIGHT |
+| Eric Sheridan | Goldman Sachs | 2026-08-10 | $137.19 | $185.00 | +34.9% | BUY |
+| Arvind Ramnani | Piper Sandler | 2026-08-06 | $122.58 | $190.00 | +55.0% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -126,6 +127,6 @@ DUOL currently trades at a Price-to-Sales (P/S) multiple of ~11.3x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($143.22) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($142.86) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

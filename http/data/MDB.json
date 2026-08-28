@@ -1,0 +1,97 @@
+{
+  "symbol": "MDB",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+  "last_updated": "2026-08-28T02:55:52.956143+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-29",
+      "period_start": "2026-02-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 80369527,
+        "revenue": 687616000,
+        "balance_sheet": {
+          "total_assets": 3692691000,
+          "total_liabilities": 757731000,
+          "total_shareholders_equity": 2934960000,
+          "total_debt": 28208000,
+          "short_term_debt": 6584000,
+          "long_term_debt": 21624000,
+          "cash_and_cash_equivalents": 2427153000,
+          "cash_primary": 1036354000,
+          "marketable_securities_current": 1390799000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-11",
+      "period_start": "2025-02-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81391760,
+        "revenue": 2463797000,
+        "balance_sheet": {
+          "total_assets": 3758848000,
+          "total_liabilities": 806490000,
+          "total_shareholders_equity": 2952358000,
+          "total_debt": 29972000,
+          "short_term_debt": 6482000,
+          "long_term_debt": 23490000,
+          "cash_and_cash_equivalents": 2387241000,
+          "cash_primary": 1083540000,
+          "marketable_securities_current": 1303701000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-02",
+      "period_start": "2025-02-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81356893,
+        "revenue": 1768725000,
+        "balance_sheet": {
+          "total_assets": 3566649000,
+          "total_liabilities": 678210000,
+          "total_shareholders_equity": 2888439000,
+          "total_debt": 31711000,
+          "short_term_debt": 6381000,
+          "long_term_debt": 25330000,
+          "cash_and_cash_equivalents": 2305761000,
+          "cash_primary": 834092000,
+          "marketable_securities_current": 1471669000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-27",
+      "period_start": "2025-02-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81714313,
+        "revenue": 1140416000,
+        "balance_sheet": {
+          "total_assets": 3542061000,
+          "total_liabilities": 599087000,
+          "total_shareholders_equity": 2942974000,
+          "total_debt": 33426000,
+          "short_term_debt": 6282000,
+          "long_term_debt": 27144000,
+          "cash_and_cash_equivalents": 2345386000,
+          "cash_primary": 647139000,
+          "marketable_securities_current": 1698247000
+        }
+      }
+    }
+  ],
+  "name": "MongoDB, Inc.",
+  "investor_relations_url": "https://investors.mongodb.com/"
+}

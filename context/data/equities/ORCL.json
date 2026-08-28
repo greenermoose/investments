@@ -1,0 +1,133 @@
+{
+  "symbol": "ORCL",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
+  "last_updated": "2026-08-28T02:55:49.320755+00:00",
+  "filings": [
+    {
+      "type": "10-K",
+      "filing_date": "2026-06-22",
+      "period_start": "2025-06-01",
+      "period_end": "2026-05-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
+      "data": {
+        "shares_outstanding": 2876046000,
+        "revenue": 67357000000,
+        "balance_sheet": {
+          "total_assets": 261759000000,
+          "total_liabilities": 261759000000,
+          "total_shareholders_equity": 42508000000,
+          "total_debt": 130105000000,
+          "short_term_debt": 7199000000,
+          "long_term_debt": 7081000000,
+          "cash_and_cash_equivalents": 31894000000,
+          "cash_primary": 31289000000,
+          "marketable_securities_current": 605000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-03-11",
+      "period_start": "2026-02-28",
+      "period_end": "2026-02-28",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
+      "data": {
+        "shares_outstanding": 2873130000,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 245240000000,
+          "total_liabilities": 245240000000,
+          "total_shareholders_equity": 38495000000,
+          "total_debt": 43000000000,
+          "short_term_debt": 0,
+          "long_term_debt": 5711000000,
+          "cash_and_cash_equivalents": 39132000000,
+          "cash_primary": 38455000000,
+          "marketable_securities_current": 677000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-11",
+      "period_start": "2025-11-30",
+      "period_end": "2025-11-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
+      "data": {
+        "shares_outstanding": 2841714000,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 204984000000,
+          "total_liabilities": 204984000000,
+          "total_shareholders_equity": 29951000000,
+          "total_debt": 18000000000,
+          "short_term_debt": 0,
+          "long_term_debt": 4576000000,
+          "cash_and_cash_equivalents": 19766000000,
+          "cash_primary": 19241000000,
+          "marketable_securities_current": 525000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-09-10",
+      "period_start": "2025-08-31",
+      "period_end": "2025-08-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1341439",
+      "data": {
+        "shares_outstanding": 2808833000,
+        "revenue": 0,
+        "balance_sheet": {
+          "total_assets": 180449000000,
+          "total_liabilities": 180449000000,
+          "total_shareholders_equity": 24154000000,
+          "total_debt": 3680000000,
+          "short_term_debt": 0,
+          "long_term_debt": 3680000000,
+          "cash_and_cash_equivalents": 11005000000,
+          "cash_primary": 10445000000,
+          "marketable_securities_current": 560000000
+        }
+      }
+    }
+  ],
+  "name": "Oracle Corporation",
+  "investor_relations_url": "https://investor.oracle.com/",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 24.07,
+    "pension_and_opeb": {
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.0,
+      "plan_assets_usd_b": 0.0,
+      "annual_cash_contribution_usd_b": 0.0,
+      "underfunding_risk_level": "NONE",
+      "opeb_unfunded_usd_b": 0.0,
+      "narrative": "Oracle Corporation operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "Oracle Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
+      "recent_settlements_scheduled_usd_b": 0.1,
+      "annual_legal_settlement_cash_drain_usd_b": 0.02,
+      "catastrophic_loss_risk_level": "MINIMAL",
+      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 23.57,
+      "take_or_pay_commitments_usd_b": 7.07,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $23.57B over multi-year periods."
+    },
+    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
+    "narrative": "Oracle Corporation maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
+  }
+}

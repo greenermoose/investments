@@ -73,15 +73,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 3.75,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 9.13,
     "pension_and_opeb": {
-      "funded_status_usd_b": -0.15,
-      "pbo_gross_usd_b": 2.12,
-      "plan_assets_usd_b": 1.97,
-      "annual_cash_contribution_usd_b": 0.06,
+      "funded_status_usd_b": -0.42,
+      "pbo_gross_usd_b": 6.0,
+      "plan_assets_usd_b": 5.58,
+      "annual_cash_contribution_usd_b": 0.18,
       "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.39,
-      "narrative": "Ferrovial SE sponsors defined benefit pension plans with $2.12B in gross PBO against $1.97B in assets ($-0.15B net gap) and $0.39B in unfunded OPEB."
+      "opeb_unfunded_usd_b": 1.09,
+      "narrative": "Ferrovial SE sponsors defined benefit pension plans with $6.00B in gross PBO against $5.58B in assets ($-0.42B net gap) and $1.09B in unfunded OPEB."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.3,
@@ -99,10 +99,10 @@
       "narrative": "Legal expenses and warranty reserves are normal course and fully manageable within operating gross margins."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.41,
-      "take_or_pay_commitments_usd_b": 0.72,
+      "unconditional_purchase_obligations_usd_b": 6.82,
+      "take_or_pay_commitments_usd_b": 2.05,
       "jv_and_vie_debt_guarantees_usd_b": 0.2,
-      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $2.41B."
+      "narrative": "Raw material procurement contracts (metals, polymers, electronics) and logistics agreements total $6.82B."
     },
     "equity_cash_flow_diversion_risk": "Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.",
     "narrative": "Ferrovial SE manages an established industrial liability footprint with stable pension funding and predictable supply agreements."

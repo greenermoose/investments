@@ -1,0 +1,97 @@
+{
+  "symbol": "MS",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=895421",
+  "last_updated": "2026-08-28T02:55:57.556694+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-04",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=895421",
+      "data": {
+        "shares_outstanding": 1577284817,
+        "revenue": 41928000000,
+        "balance_sheet": {
+          "total_assets": 1675057000000,
+          "total_liabilities": 1557617000000,
+          "total_shareholders_equity": 116329000000,
+          "total_debt": 383156000000,
+          "short_term_debt": 0,
+          "long_term_debt": 383156000000,
+          "cash_and_cash_equivalents": 160135000000,
+          "cash_primary": 160135000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=895421",
+      "data": {
+        "shares_outstanding": 1587860206,
+        "revenue": 20580000000,
+        "balance_sheet": {
+          "total_assets": 1581418000000,
+          "total_liabilities": 1466034000000,
+          "total_shareholders_equity": 114286000000,
+          "total_debt": 363010000000,
+          "short_term_debt": 0,
+          "long_term_debt": 363010000000,
+          "cash_and_cash_equivalents": 133529000000,
+          "cash_primary": 133529000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-19",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=895421",
+      "data": {
+        "shares_outstanding": 1589309311,
+        "revenue": 70645000000,
+        "balance_sheet": {
+          "total_assets": 1420270000000,
+          "total_liabilities": 1307618000000,
+          "total_shareholders_equity": 111632000000,
+          "total_debt": 341681000000,
+          "short_term_debt": 0,
+          "long_term_debt": 341681000000,
+          "cash_and_cash_equivalents": 111695000000,
+          "cash_primary": 111695000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-03",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=895421",
+      "data": {
+        "shares_outstanding": 1596335756,
+        "revenue": 52755000000,
+        "balance_sheet": {
+          "total_assets": 1364806000000,
+          "total_liabilities": 1253755000000,
+          "total_shareholders_equity": 109962000000,
+          "total_debt": 324128000000,
+          "short_term_debt": 0,
+          "long_term_debt": 324128000000,
+          "cash_and_cash_equivalents": 103734000000,
+          "cash_primary": 103734000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Morgan Stanley",
+  "investor_relations_url": "https://www.morganstanley.com/about-us-ir"
+}

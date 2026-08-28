@@ -4,9 +4,9 @@
 - **Ticker:** MSTR
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $97.28 per share
-- **Current Price:** $97.28 per share
-- **Target Exit Price:** $89.33 per share
+- **Benchmark Entry Price:** $137.40 per share
+- **Current Price:** $137.40 per share
+- **Target Exit Price:** $124.52 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 6.5 / 10.0
 - **Rating:** AVOID
@@ -53,12 +53,13 @@ MicroStrategy Incorporated maintains a capital-light liability profile with zero
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | MicroStrategy Incorporated operates zero defined benefit pension plans or retire... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | MicroStrategy Incorporated has zero legacy manufacturing, toxic chemical, or fed... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.17 B | Take-or-Pay: $0.05 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | MicroStrategy Incorporated operates zero defined benefit pension plans or retiree healthca... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | MicroStrategy Incorporated has zero legacy manufacturing, toxic chemical, or federal Super... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.17 B | Take-or-Pay: $0.05 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 MicroStrategy Incorporated's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-MSTR currently trades at a Price-to-Sales (P/S) multiple of ~69.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~52.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -2.8%, fully justifying our AVOID rating.
+MSTR currently trades at a Price-to-Sales (P/S) multiple of ~98.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~74.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -3.2%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.12 B | +0.7% | 0.343 B | 69.78x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.13 B | +18.3% | 0.346 B | 68.33x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.12 B | +8.9% | 0.348 B | 66.87x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.13 B | +5.7% | 0.351 B | 65.42x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.13 B | +11.8% | 0.354 B | 63.97x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.14 B | +11.2% | 0.356 B | 62.51x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.13 B | +10.8% | 0.359 B | 61.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.14 B | +8.3% | 0.361 B | 59.61x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.15 B | +14.6% | 0.364 B | 58.15x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.16 B | +14.6% | 0.367 B | 56.70x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.15 B | +13.6% | 0.370 B | 55.25x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.16 B | +11.7% | 0.372 B | 53.79x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.17 B | +10.3% | 0.375 B | 52.34x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.12 B | +0.4% | 0.343 B | 98.83x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.13 B | +18.0% | 0.346 B | 96.77x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.12 B | +8.6% | 0.348 B | 94.71x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.13 B | +5.4% | 0.351 B | 92.65x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.13 B | +11.5% | 0.354 B | 90.59x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.14 B | +10.9% | 0.356 B | 88.54x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.13 B | +10.5% | 0.359 B | 86.48x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.14 B | +8.0% | 0.361 B | 84.42x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.15 B | +14.3% | 0.364 B | 82.36x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.16 B | +14.3% | 0.367 B | 80.30x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.15 B | +13.3% | 0.370 B | 78.24x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.16 B | +11.4% | 0.372 B | 76.18x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.16 B | +10.0% | 0.375 B | 74.12x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~69.8x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $82.22 | $102.78 | $123.34 | 68.4x | +24.6% |
-| 52 Weeks (1Y) | $73.80 | $92.25 | $110.70 | 64.0x | -5.2% |
-| 104 Weeks (2Y) | $71.50 | $89.38 | $107.26 | 58.1x | -4.1% |
-| 156 Weeks (3Y) | $71.46 | $89.33 | $107.20 | 52.3x | -2.8% |
+| 13 Weeks | $116.46 | $145.57 | $174.68 | 96.9x | +26.0% |
+| 52 Weeks (1Y) | $104.51 | $130.64 | $156.77 | 90.7x | -4.9% |
+| 104 Weeks (2Y) | $101.26 | $126.58 | $151.90 | 82.3x | -4.0% |
+| 156 Weeks (3Y) | $99.62 | $124.52 | $149.42 | 74.1x | -3.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dan Dolev | Mizuho | 2026-08-10 | $97.24 | $165.00 | +69.7% | BUY |
-| Mike Colonnese | HC Wainwright | 2026-08-03 | $95.15 | $325.00 | +241.6% | BUY |
-| Nik Cremo | Barclays | 2026-08-03 | $93.28 | $125.00 | +34.0% | OVERWEIGHT |
-| Fedor Shabalin | B. Riley Financial | 2026-08-03 | $94.99 | $155.00 | +63.2% | BUY |
-| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $93.28 | $186.00 | +99.4% | OVERWEIGHT |
+| Dan Dolev | Mizuho | 2026-08-10 | $97.33 | $165.00 | +69.5% | BUY |
+| Mike Colonnese | HC Wainwright | 2026-08-03 | $94.86 | $325.00 | +242.6% | BUY |
+| Nik Cremo | Barclays | 2026-08-03 | $94.86 | $125.00 | +31.8% | OVERWEIGHT |
+| Fedor Shabalin | B. Riley Financial | 2026-08-03 | $94.86 | $155.00 | +63.4% | BUY |
+| Ramsey El-Assal | Cantor Fitzgerald | 2026-08-03 | $94.86 | $186.00 | +96.1% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ MSTR currently trades at a Price-to-Sales (P/S) multiple of ~69.8x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($97.28) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($137.40) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

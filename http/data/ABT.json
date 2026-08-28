@@ -1,0 +1,97 @@
+{
+  "symbol": "ABT",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
+  "last_updated": "2026-08-28T02:55:55.774712+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-29",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
+      "data": {
+        "shares_outstanding": 1741812429,
+        "revenue": 11164000000,
+        "balance_sheet": {
+          "total_assets": 110429000000,
+          "total_liabilities": 110429000000,
+          "total_shareholders_equity": 52061000000,
+          "total_debt": 34047000000,
+          "short_term_debt": 4409000000,
+          "long_term_debt": 29638000000,
+          "cash_and_cash_equivalents": 7295000000,
+          "cash_primary": 6803000000,
+          "marketable_securities_current": 492000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-20",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
+      "data": {
+        "shares_outstanding": 1738871947,
+        "revenue": 44328000000,
+        "balance_sheet": {
+          "total_assets": 86713000000,
+          "total_liabilities": 86713000000,
+          "total_shareholders_equity": 52130000000,
+          "total_debt": 12929000000,
+          "short_term_debt": 3033000000,
+          "long_term_debt": 9896000000,
+          "cash_and_cash_equivalents": 8939000000,
+          "cash_primary": 8522000000,
+          "marketable_securities_current": 417000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
+      "data": {
+        "shares_outstanding": 1738871947,
+        "revenue": 32869000000,
+        "balance_sheet": {
+          "total_assets": 84181000000,
+          "total_liabilities": 84181000000,
+          "total_shareholders_equity": 50954000000,
+          "total_debt": 12941000000,
+          "short_term_debt": 1345000000,
+          "long_term_debt": 11596000000,
+          "cash_and_cash_equivalents": 7733000000,
+          "cash_primary": 7511000000,
+          "marketable_securities_current": 222000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-07-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1800",
+      "data": {
+        "shares_outstanding": 1740459014,
+        "revenue": 21500000000,
+        "balance_sheet": {
+          "total_assets": 83999000000,
+          "total_liabilities": 83999000000,
+          "total_shareholders_equity": 50565000000,
+          "total_debt": 13437000000,
+          "short_term_debt": 507000000,
+          "long_term_debt": 12930000000,
+          "cash_and_cash_equivalents": 7282000000,
+          "cash_primary": 6951000000,
+          "marketable_securities_current": 331000000
+        }
+      }
+    }
+  ],
+  "name": "Abbott Laboratories",
+  "investor_relations_url": "https://www.abbottinvestor.com/"
+}

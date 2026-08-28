@@ -1,0 +1,97 @@
+{
+  "symbol": "UBER",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1543151",
+  "last_updated": "2026-08-28T02:55:49.656053+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-05",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1543151",
+      "data": {
+        "shares_outstanding": 2035599013,
+        "revenue": 27394000000,
+        "balance_sheet": {
+          "total_assets": 65801000000,
+          "total_liabilities": 37402000000,
+          "total_shareholders_equity": 27316000000,
+          "total_debt": 10726000000,
+          "short_term_debt": 0,
+          "long_term_debt": 10726000000,
+          "cash_and_cash_equivalents": 5391000000,
+          "cash_primary": 4870000000,
+          "marketable_securities_current": 521000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1543151",
+      "data": {
+        "shares_outstanding": 2058115983,
+        "revenue": 13203000000,
+        "balance_sheet": {
+          "total_assets": 59885000000,
+          "total_liabilities": 34073000000,
+          "total_shareholders_equity": 24751000000,
+          "total_debt": 10590000000,
+          "short_term_debt": 0,
+          "long_term_debt": 10514000000,
+          "cash_and_cash_equivalents": 6091000000,
+          "cash_primary": 5558000000,
+          "marketable_securities_current": 533000000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-13",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1543151",
+      "data": {
+        "shares_outstanding": 2077830381,
+        "revenue": 52017000000,
+        "balance_sheet": {
+          "total_assets": 61802000000,
+          "total_liabilities": 33719000000,
+          "total_shareholders_equity": 27041000000,
+          "total_debt": 10600000000,
+          "short_term_debt": 0,
+          "long_term_debt": 10521000000,
+          "cash_and_cash_equivalents": 7633000000,
+          "cash_primary": 7105000000,
+          "marketable_securities_current": 528000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1543151",
+      "data": {
+        "shares_outstanding": 2085418676,
+        "revenue": 37651000000,
+        "balance_sheet": {
+          "total_assets": 63344000000,
+          "total_liabilities": 34189000000,
+          "total_shareholders_equity": 28134000000,
+          "total_debt": 11846000000,
+          "short_term_debt": 0,
+          "long_term_debt": 10615000000,
+          "cash_and_cash_equivalents": 9086000000,
+          "cash_primary": 8432000000,
+          "marketable_securities_current": 654000000
+        }
+      }
+    }
+  ],
+  "name": "Uber Technologies, Inc.",
+  "investor_relations_url": "https://investor.uber.com/"
+}

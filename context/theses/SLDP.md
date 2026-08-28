@@ -4,9 +4,9 @@
 - **Ticker:** SLDP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $2.27 per share
-- **Current Price:** $2.27 per share
-- **Target Exit Price:** $2.52 per share
+- **Benchmark Entry Price:** $2.38 per share
+- **Current Price:** $2.38 per share
+- **Target Exit Price:** $2.57 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.2 / 10.0
 - **Rating:** AVOID
@@ -53,12 +53,13 @@ Solid Power, Inc.'s off-balance sheet liabilities consist of standard regulated 
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.01 B (Gap: $0.0 B) | ~$0.00 B / yr | Solid Power, Inc. sponsors utility and industrial defined benefit plans ($0.01B ... |
-| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.01 B (12 Sites) | ~$0.00 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioni... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and region... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.01 B | Take-or-Pay: $0.01 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-o... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.01 B (Gap: $0.00 B) | ~$0.00 B / yr | Solid Power, Inc. sponsors utility and industrial defined benefit plans ($0.01B PBO vs $0.... |
+| Environmental Remediation & PFAS | Risk: MODERATE | Accrued: $0.01 B (12 Sites) | ~$0.00 B / yr | Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash po... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.40 B | ~$0.05 B / yr | Rate case proceedings, environmental regulatory compliance inquiries, and regional grid re... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.01 B | Take-or-Pay: $0.01 B | Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay cont... |
 
 **Equity Cash Flow Seniority Impact:** Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Solid Power, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +15.0%. Growth is supported by structural demand dynamics in Energy, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SLDP currently trades at a Price-to-Sales (P/S) multiple of ~24.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~15.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 3.5%, fully justifying our AVOID rating.
+SLDP currently trades at a Price-to-Sales (P/S) multiple of ~24.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~16.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.6%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -46.5% | 0.225 B | 24.10x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.227 B | 23.40x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.01 B | -46.3% | 0.229 B | 22.70x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.01 B | -42.8% | 0.231 B | 21.99x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.01 B | -39.1% | 0.233 B | 21.29x | Energy core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.01 B | -34.0% | 0.235 B | 20.59x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.01 B | -38.9% | 0.237 B | 19.89x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.01 B | -34.9% | 0.239 B | 19.18x | Energy core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.01 B | -30.7% | 0.241 B | 18.48x | Energy core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.01 B | -24.9% | 0.243 B | 17.78x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.01 B | -30.5% | 0.245 B | 17.08x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.01 B | -25.9% | 0.247 B | 16.37x | Energy core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -21.2% | 0.249 B | 15.67x | Energy core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | -45.1% | 0.225 B | 24.62x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.01 B | +15.0% | 0.227 B | 23.90x | Product launch ramp: Energy Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.01 B | -44.9% | 0.229 B | 23.19x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.01 B | -41.3% | 0.231 B | 22.47x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.01 B | -37.5% | 0.233 B | 21.75x | Energy core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.01 B | -32.3% | 0.235 B | 21.03x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.01 B | -37.3% | 0.237 B | 20.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.01 B | -33.2% | 0.239 B | 19.59x | Energy core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.01 B | -28.9% | 0.241 B | 18.87x | Energy core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.01 B | -22.9% | 0.243 B | 18.16x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.01 B | -28.6% | 0.245 B | 17.44x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.01 B | -24.0% | 0.247 B | 16.72x | Energy core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.01 B | -19.1% | 0.249 B | 16.00x | Energy core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,17 +104,17 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~24.1x on trailing t
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $3.33 | $4.16 | $4.99 | 23.6x | +1027.9% |
-| 52 Weeks (1Y) | $2.93 | $3.66 | $4.39 | 21.3x | +61.2% |
-| 104 Weeks (2Y) | $2.45 | $3.06 | $3.67 | 18.4x | +16.1% |
-| 156 Weeks (3Y) | $2.02 | $2.52 | $3.02 | 15.7x | +3.5% |
+| 13 Weeks | $3.40 | $4.25 | $5.10 | 24.1x | +916.8% |
+| 52 Weeks (1Y) | $2.99 | $3.74 | $4.49 | 21.8x | +57.1% |
+| 104 Weeks (2Y) | $2.50 | $3.13 | $3.76 | 18.9x | +14.7% |
+| 156 Weeks (3Y) | $2.06 | $2.57 | $3.08 | 16.0x | +2.6% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.80 | $6.75 | +141.1% | BUY |
-| Chris Pierce | Needham & Company LLC | 2026-05-06 | $3.51 | $7.00 | +99.4% | BUY |
-| Amit Dayal | HC Wainwright | 2026-03-16 | $3.15 | $7.00 | +122.2% | BUY |
+| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.77 | $6.75 | +143.7% | BUY |
+| Chris Pierce | Needham & Company LLC | 2026-05-06 | $3.35 | $7.00 | +109.0% | BUY |
+| Amit Dayal | HC Wainwright | 2026-03-16 | $3.20 | $7.00 | +118.8% | BUY |
 | Wolfe Research Research Team | Wolfe Research | 2024-09-05 | $1.32 | $1.00 | -24.2% | UNDERPERFORM |
 
 ## Anticipated Catalyst Timeline
@@ -128,6 +129,6 @@ SLDP currently trades at a Price-to-Sales (P/S) multiple of ~24.1x on trailing t
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($2.27) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($2.38) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

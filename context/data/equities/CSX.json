@@ -98,12 +98,12 @@
     "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.1,
     "pension_and_opeb": {
       "funded_status_usd_b": -0.22,
-      "pbo_gross_usd_b": 3.09,
-      "plan_assets_usd_b": 2.87,
+      "pbo_gross_usd_b": 3.1,
+      "plan_assets_usd_b": 2.88,
       "annual_cash_contribution_usd_b": 0.09,
       "underfunding_risk_level": "MODERATE",
       "opeb_unfunded_usd_b": 0.56,
-      "narrative": "CSX Corporation sponsors defined benefit pension plans with $3.09B in gross PBO against $2.87B in assets ($-0.22B net gap) and $0.56B in unfunded OPEB."
+      "narrative": "CSX Corporation sponsors defined benefit pension plans with $3.10B in gross PBO against $2.88B in assets ($-0.22B net gap) and $0.56B in unfunded OPEB."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.3,

@@ -1,0 +1,133 @@
+{
+  "symbol": "TSM",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+  "last_updated": "2026-08-28T02:55:48.916487+00:00",
+  "filings": [
+    {
+      "type": "20-F",
+      "filing_date": "2025-04-17",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25932733242,
+        "revenue": 2894307700000,
+        "balance_sheet": {
+          "total_assets": 6691764700000,
+          "total_liabilities": 2412493100000,
+          "total_shareholders_equity": 4279271600000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 2120674800000,
+          "cash_primary": 2120674800000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2024-04-18",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25932070992,
+        "revenue": 2161735800000,
+        "balance_sheet": {
+          "total_assets": 5532196600000,
+          "total_liabilities": 2078330100000,
+          "total_shareholders_equity": 3453866500000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1453101600000,
+          "cash_primary": 1453101600000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2023-04-20",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25930380458,
+        "revenue": 2263891300000,
+        "balance_sheet": {
+          "total_assets": 4964459100000,
+          "total_liabilities": 2046626700000,
+          "total_shareholders_equity": 2917832400000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1329291400000,
+          "cash_primary": 1329291400000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "20-F",
+      "filing_date": "2022-04-14",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "data": {
+        "shares_outstanding": 25930380458,
+        "revenue": 1587415000000,
+        "balance_sheet": {
+          "total_assets": 3725302200000,
+          "total_liabilities": 1573619700000,
+          "total_shareholders_equity": 2151682500000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1058808100000,
+          "cash_primary": 1058808100000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "investor_relations_url": "https://investor.tsmc.com/",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "LOW",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 3118.07,
+    "pension_and_opeb": {
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.0,
+      "plan_assets_usd_b": 0.0,
+      "annual_cash_contribution_usd_b": 0.0,
+      "underfunding_risk_level": "NONE",
+      "opeb_unfunded_usd_b": 0.0,
+      "narrative": "Taiwan Semiconductor Manufacturing Company Limited operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "Taiwan Semiconductor Manufacturing Company Limited has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
+      "recent_settlements_scheduled_usd_b": 0.1,
+      "annual_legal_settlement_cash_drain_usd_b": 0.02,
+      "catastrophic_loss_risk_level": "MINIMAL",
+      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 3117.57,
+      "take_or_pay_commitments_usd_b": 935.27,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $3117.57B over multi-year periods."
+    },
+    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
+    "narrative": "Taiwan Semiconductor Manufacturing Company Limited maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
+  }
+}

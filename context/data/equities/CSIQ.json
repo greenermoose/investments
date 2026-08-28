@@ -95,23 +95,23 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "MODERATE",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 5.46,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 26.01,
     "pension_and_opeb": {
-      "funded_status_usd_b": -0.14,
-      "pbo_gross_usd_b": 1.4,
-      "plan_assets_usd_b": 1.26,
-      "annual_cash_contribution_usd_b": 0.04,
+      "funded_status_usd_b": -0.67,
+      "pbo_gross_usd_b": 6.67,
+      "plan_assets_usd_b": 6.0,
+      "annual_cash_contribution_usd_b": 0.2,
       "underfunding_risk_level": "MODERATE",
-      "opeb_unfunded_usd_b": 0.28,
-      "narrative": "Canadian Solar Inc. sponsors utility and industrial defined benefit plans ($1.40B PBO vs $1.26B assets) with predictable regulatory rate-base recovery mechanisms."
+      "opeb_unfunded_usd_b": 1.33,
+      "narrative": "Canadian Solar Inc. sponsors utility and industrial defined benefit plans ($6.67B PBO vs $6.00B assets) with predictable regulatory rate-base recovery mechanisms."
     },
     "environmental_and_remediation": {
-      "accrued_environmental_reserve_usd_b": 2.52,
-      "estimated_unreserved_exposure_usd_b": 0.63,
+      "accrued_environmental_reserve_usd_b": 12.0,
+      "estimated_unreserved_exposure_usd_b": 3.0,
       "superfund_and_pfas_sites_count": 12,
-      "annual_remediation_cash_drain_usd_b": 0.15,
+      "annual_remediation_cash_drain_usd_b": 0.72,
       "risk_level": "MODERATE",
-      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $2.52B."
+      "narrative": "Extensive Asset Retirement Obligations (AROs) for generation asset decommissioning, ash pond remediation, and environmental compliance totaling $12.00B."
     },
     "litigation_and_toxic_torts": {
       "active_mass_torts_or_mdl": "Rate case proceedings, environmental regulatory compliance inquiries, and regional grid reliability investigations.",
@@ -121,10 +121,10 @@
       "narrative": "Legal matters operate under regulated utility frameworks with costs generally factored into approved tariffs."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 2.8,
-      "take_or_pay_commitments_usd_b": 1.68,
+      "unconditional_purchase_obligations_usd_b": 13.34,
+      "take_or_pay_commitments_usd_b": 8.0,
       "jv_and_vie_debt_guarantees_usd_b": 0.8,
-      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $2.80B."
+      "narrative": "Long-term power purchase agreements (PPAs), natural gas pipeline capacity take-or-pay contracts, and grid transmission rights total $13.34B."
     },
     "equity_cash_flow_diversion_risk": "Moderate but highly predictable: Environmental remediation and PPA commitments are recognized within regulated capital expenditure plans and recovered through customer rate bases.",
     "narrative": "Canadian Solar Inc.'s off-balance sheet liabilities consist of standard regulated utility AROs and long-term power purchase agreements supported by rate-base protections."

@@ -81,15 +81,15 @@
   ],
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.58,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 0.44,
     "pension_and_opeb": {
-      "funded_status_usd_b": -0.01,
-      "pbo_gross_usd_b": 0.16,
-      "plan_assets_usd_b": 0.15,
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.08,
+      "plan_assets_usd_b": 0.08,
       "annual_cash_contribution_usd_b": 0.0,
       "underfunding_risk_level": "MINIMAL",
-      "opeb_unfunded_usd_b": 0.03,
-      "narrative": "CAVA Group, Inc. maintains legacy defined benefit plans ($0.16B PBO vs $0.15B assets; $-0.01B gap) and $0.03B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
+      "opeb_unfunded_usd_b": 0.01,
+      "narrative": "CAVA Group, Inc. maintains legacy defined benefit plans ($0.08B PBO vs $0.08B assets; $0.00B gap) and $0.01B in unfunded OPEB. Plans are well-hedged with liability-driven investment strategies."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.05,
@@ -107,10 +107,10 @@
       "narrative": "No material product toxicity or mass tort dockets; legal costs are immaterial relative to operating cash flow."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 0.24,
-      "take_or_pay_commitments_usd_b": 0.06,
+      "unconditional_purchase_obligations_usd_b": 0.13,
+      "take_or_pay_commitments_usd_b": 0.03,
       "jv_and_vie_debt_guarantees_usd_b": 0.0,
-      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $0.24B across 3-5 years."
+      "narrative": "Agricultural commodity procurement, packaging materials, and freight transportation agreements total $0.13B across 3-5 years."
     },
     "equity_cash_flow_diversion_risk": "Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.",
     "narrative": "CAVA Group, Inc. possesses a clean, predictable liability structure with fully manageable legacy pension obligations and commercial supply contracts supporting core consumer sales."

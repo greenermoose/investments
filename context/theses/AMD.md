@@ -4,9 +4,9 @@
 - **Ticker:** AMD
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $467.06 per share
-- **Current Price:** $467.06 per share
-- **Target Exit Price:** $735.89 per share
+- **Benchmark Entry Price:** $476.67 per share
+- **Current Price:** $476.67 per share
+- **Target Exit Price:** $750.75 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.9 / 10.0
 - **Rating:** HOLD
@@ -28,13 +28,13 @@ AMD's competitive moat is driven by its modular chiplet manufacturing architectu
 Advanced Micro Devices, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.44B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.62B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.71B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Advanced Micro Devices, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $8.66B in cash & equivalents against $6.92B in total debt (net balance: $+1.74B). Anticipated annual CapEx and operational capital requirements of ~$1.73B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Advanced Micro Devices, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $8.66B in cash & equivalents against $6.93B in total debt (net balance: $+1.73B). Anticipated annual CapEx and operational capital requirements of ~$1.73B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
 | Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
 | Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $6.92 B Debt vs $8.66 B Cash | Net: $+1.74 B | Manageable balance sheet leverage with $6.92B total debt against $8.66B liquid reserves (Net balance: $+1.74B). |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $6.93 B Debt vs $8.66 B Cash | Net: $+1.73 B | Manageable balance sheet leverage with $6.93B total debt against $8.66B liquid reserves (Net balance: $+1.73B). |
 | Capital Needs & Runway | CAPEX_AND_RD | ~$1.73 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
@@ -53,12 +53,13 @@ Advanced Micro Devices, Inc. maintains a capital-light liability profile with ze
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Advanced Micro Devices, Inc. operates zero defined benefit pension plans or reti... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Advanced Micro Devices, Inc. has zero legacy manufacturing, toxic chemical, or f... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $12.12 B | Take-or-Pay: $3.64 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Advanced Micro Devices, Inc. operates zero defined benefit pension plans or retiree health... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Advanced Micro Devices, Inc. has zero legacy manufacturing, toxic chemical, or federal Sup... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $12.12 B | Take-or-Pay: $3.64 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Advanced Micro Devices, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +22.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-AMD currently trades at a Price-to-Sales (P/S) multiple of ~22.0x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~19.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 18.5%, fully justifying our HOLD rating.
+AMD currently trades at a Price-to-Sales (P/S) multiple of ~22.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~20.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 18.5%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $8.74 B | +8.6% | 1.631 B | 22.00x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.70 B | +31.6% | 1.633 B | 21.81x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.24 B | +14.5% | 1.635 B | 21.63x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $10.19 B | +15.4% | 1.637 B | 21.45x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $11.15 B | +27.6% | 1.639 B | 21.26x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $12.49 B | +28.8% | 1.641 B | 21.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $11.99 B | +29.8% | 1.643 B | 20.90x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $13.04 B | +28.0% | 1.645 B | 20.72x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $13.97 B | +25.3% | 1.647 B | 20.53x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $15.22 B | +21.8% | 1.649 B | 20.35x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $14.36 B | +19.8% | 1.651 B | 20.17x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $15.41 B | +18.2% | 1.653 B | 19.98x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $16.52 B | +18.3% | 1.655 B | 19.80x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $8.75 B | +8.5% | 1.631 B | 22.44x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $9.70 B | +31.6% | 1.633 B | 22.25x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $9.24 B | +14.5% | 1.635 B | 22.06x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $10.20 B | +15.5% | 1.637 B | 21.88x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $11.16 B | +27.5% | 1.639 B | 21.69x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $12.49 B | +28.8% | 1.641 B | 21.50x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.00 B | +29.8% | 1.643 B | 21.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $13.04 B | +27.9% | 1.645 B | 21.13x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $13.97 B | +25.2% | 1.647 B | 20.94x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $15.22 B | +21.9% | 1.649 B | 20.75x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $14.37 B | +19.7% | 1.651 B | 20.56x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $15.42 B | +18.2% | 1.653 B | 20.38x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $16.53 B | +18.3% | 1.655 B | 20.19x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~22.0x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $409.81 | $512.26 | $614.71 | 21.6x | +44.7% |
-| 52 Weeks (1Y) | $418.18 | $522.73 | $627.28 | 21.3x | +11.9% |
-| 104 Weeks (2Y) | $513.46 | $641.83 | $770.20 | 20.5x | +17.2% |
-| 156 Weeks (3Y) | $588.71 | $735.89 | $883.07 | 19.8x | +16.4% |
+| 13 Weeks | $417.98 | $522.48 | $626.98 | 22.0x | +44.3% |
+| 52 Weeks (1Y) | $426.85 | $533.56 | $640.27 | 21.7x | +11.9% |
+| 104 Weeks (2Y) | $523.57 | $654.46 | $785.35 | 20.9x | +17.2% |
+| 156 Weeks (3Y) | $600.60 | $750.75 | $900.90 | 20.2x | +16.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Jim Kelleher | Argus | 2026-08-06 | $491.89 | $625.00 | +27.1% | BUY |
-| Kevin Cassidy | Rosenblatt Securities | 2026-08-06 | $482.06 | $700.00 | +45.2% | BUY |
-| Gil Luria | DA Davidson | 2026-08-05 | $489.19 | $550.00 | +12.4% | BUY |
-| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $518.60 | $700.00 | +35.0% | OVERWEIGHT |
-| Joseph Moore | Morgan Stanley | 2026-08-05 | $518.57 | $465.00 | -10.3% | BUY |
+| Jim Kelleher | Argus | 2026-08-06 | $489.28 | $625.00 | +27.7% | BUY |
+| Kevin Cassidy | Rosenblatt Securities | 2026-08-06 | $489.28 | $700.00 | +43.1% | BUY |
+| Gil Luria | DA Davidson | 2026-08-05 | $482.05 | $550.00 | +14.1% | BUY |
+| Aaron Rakers | Wells Fargo & Company | 2026-08-05 | $482.05 | $700.00 | +45.2% | OVERWEIGHT |
+| Joseph Moore | Morgan Stanley | 2026-08-05 | $482.05 | $465.00 | -3.5% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ AMD currently trades at a Price-to-Sales (P/S) multiple of ~22.0x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($467.06) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($476.67) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

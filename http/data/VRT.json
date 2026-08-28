@@ -1,0 +1,97 @@
+{
+  "symbol": "VRT",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
+  "last_updated": "2026-08-28T02:55:53.771212+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-29",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
+      "data": {
+        "shares_outstanding": 384108816,
+        "revenue": 5923800000,
+        "balance_sheet": {
+          "total_assets": 15900900000,
+          "total_liabilities": 11143300000,
+          "total_shareholders_equity": 4757600000,
+          "total_debt": 2939800000,
+          "short_term_debt": 0,
+          "long_term_debt": 2939800000,
+          "cash_and_cash_equivalents": 2810600000,
+          "cash_primary": 2810600000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-22",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
+      "data": {
+        "shares_outstanding": 382598464,
+        "revenue": 2649500000,
+        "balance_sheet": {
+          "total_assets": 13400100000,
+          "total_liabilities": 9155200000,
+          "total_shareholders_equity": 4244900000,
+          "total_debt": 2922200000,
+          "short_term_debt": 0,
+          "long_term_debt": 2922200000,
+          "cash_and_cash_equivalents": 2150600000,
+          "cash_primary": 2150600000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-13",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
+      "data": {
+        "shares_outstanding": 382338313,
+        "revenue": 10229900000,
+        "balance_sheet": {
+          "total_assets": 12212400000,
+          "total_liabilities": 8271100000,
+          "total_shareholders_equity": 3941300000,
+          "total_debt": 954500000,
+          "short_term_debt": 20900000,
+          "long_term_debt": 2892100000,
+          "cash_and_cash_equivalents": 1728400000,
+          "cash_primary": 1728400000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-22",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1674101",
+      "data": {
+        "shares_outstanding": 381866664,
+        "revenue": 7349900000,
+        "balance_sheet": {
+          "total_assets": 10816300000,
+          "total_liabilities": 7307600000,
+          "total_shareholders_equity": 3508700000,
+          "total_debt": 2918500000,
+          "short_term_debt": 20900000,
+          "long_term_debt": 2897600000,
+          "cash_and_cash_equivalents": 1396000000,
+          "cash_primary": 1396000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Vertiv Holdings Co",
+  "investor_relations_url": "https://investors.vertiv.com/"
+}

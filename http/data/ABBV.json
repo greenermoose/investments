@@ -1,0 +1,97 @@
+{
+  "symbol": "ABBV",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1551152",
+  "last_updated": "2026-08-28T02:55:56.270222+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-03",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551152",
+      "data": {
+        "shares_outstanding": 1766792821,
+        "revenue": 31992000000,
+        "balance_sheet": {
+          "total_assets": 135115000000,
+          "total_liabilities": 135115000000,
+          "total_shareholders_equity": -5935000000,
+          "total_debt": 62481000000,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 6569000000,
+          "cash_primary": 6569000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-08",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551152",
+      "data": {
+        "shares_outstanding": 1768169012,
+        "revenue": 15002000000,
+        "balance_sheet": {
+          "total_assets": 136463000000,
+          "total_liabilities": 136463000000,
+          "total_shareholders_equity": -6656000000,
+          "total_debt": 64532000000,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 9391000000,
+          "cash_primary": 9391000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-20",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551152",
+      "data": {
+        "shares_outstanding": 1767384632,
+        "revenue": 61160000000,
+        "balance_sheet": {
+          "total_assets": 133960000000,
+          "total_liabilities": 133960000000,
+          "total_shareholders_equity": -3270000000,
+          "total_debt": 58941000000,
+          "short_term_debt": 2499000000,
+          "long_term_debt": 64503000000,
+          "cash_and_cash_equivalents": 5257000000,
+          "cash_primary": 5229000000,
+          "marketable_securities_current": 28000000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-04",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1551152",
+      "data": {
+        "shares_outstanding": 1766558253,
+        "revenue": 44542000000,
+        "balance_sheet": {
+          "total_assets": 133898000000,
+          "total_liabilities": 133898000000,
+          "total_shareholders_equity": -2642000000,
+          "total_debt": 62971000000,
+          "short_term_debt": 3790000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 5671000000,
+          "cash_primary": 5629000000,
+          "marketable_securities_current": 42000000
+        }
+      }
+    }
+  ],
+  "name": "AbbVie Inc.",
+  "investor_relations_url": "https://investors.abbvie.com/"
+}

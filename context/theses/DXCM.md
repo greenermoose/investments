@@ -4,9 +4,9 @@
 - **Ticker:** DXCM
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $91.33 per share
-- **Current Price:** $91.33 per share
-- **Target Exit Price:** $124.45 per share
+- **Benchmark Entry Price:** $89.29 per share
+- **Current Price:** $89.29 per share
+- **Target Exit Price:** $121.97 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.5 / 10.0
 - **Rating:** HOLD
@@ -19,23 +19,23 @@ DexCom, Inc. is a pioneering medical device manufacturer that designs and commer
 DexCom holds an established competitive moat in diabetes management supported by proprietary biosensor technology, clinical evidence of improved patient glycemic control, and deep integration with automated insulin delivery (AID) systems. Management is expanding beyond intensive type 1 diabetes into the vast type 2 diabetes and non-insulin-using metabolic health markets through its over-the-counter sensor platform (Stelo).
 
 ## Total Addressable Market & Market Share
-DexCom, Inc. addresses an estimated Total Addressable Market (TAM) of $69.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+DexCom, Inc. addresses an estimated Total Addressable Market (TAM) of $70.0B across its primary Health Care domains, expanding at a ~8.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 7.5%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 DexCom holds an entrenched medical device moat in diabetes management, anchored by its proprietary continuous glucose monitoring (CGM) sensor technology (G6, G7, and Stelo). DexCom's sensors feature industry-leading MARD accuracy, direct Bluetooth integration with smartphones and automated insulin delivery (AID) pumps, and deep reimbursement coverage across Medicare and commercial payers. Clinical evidence showing improved glycemic control creates immense patient and endocrinologist loyalty.
 
 ## Anticipated Catalysts & Timeline
-DexCom, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.04B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.06B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.06B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+DexCom, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Health Care Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.04B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.06B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.07B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-DexCom, Inc. operates under a reinvestment for growth capital strategy. The company returns capital to shareholders through a 1.20% dividend yield ($1.10/share annually, ~35% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $1.15B in cash & equivalents against $0.92B in total debt (net balance: $+0.23B). Anticipated annual CapEx and operational capital requirements of ~$0.32B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+DexCom, Inc. operates under a reinvestment for growth capital strategy. The company returns capital to shareholders through a 1.20% dividend yield ($1.07/share annually, ~35% payout ratio). Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $1.17B in cash & equivalents against $0.93B in total debt (net balance: $+0.24B). Anticipated annual CapEx and operational capital requirements of ~$0.33B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $1.10 / share | 1.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.10/share (1.20% yield, ~35% payout ratio) with +6.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $1.07 / share | 1.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.07/share (1.20% yield, ~35% payout ratio) with +6.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $0.92 B Debt vs $1.15 B Cash | Net: $+0.23 B | Conservative debt profile of $0.92B debt vs $1.15B cash & equivalents (Net balance: $+0.23B). |
-| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$0.32 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $0.93 B Debt vs $1.17 B Cash | Net: $+0.24 B | Conservative debt profile of $0.93B debt vs $1.17B cash & equivalents (Net balance: $+0.24B). |
+| Capital Needs & Runway | CLINICAL_RD_AND_PIPELINE | ~$0.33 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
@@ -53,16 +53,17 @@ DexCom, Inc.'s off-balance sheet liabilities are standard for healthcare innovat
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.69 B (Gap: $-0.06 B) | ~$0.02 B / yr | DexCom, Inc. sponsors modest domestic and international defined benefit plans wi... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical d... |
-| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.07 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and gover... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.92 B | Take-or-Pay: $0.32 B | Active pharmaceutical ingredient supply agreements and clinical contract researc... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $0.70 B (Gap: $-0.06 B) | ~$0.02 B / yr | DexCom, Inc. sponsors modest domestic and international defined benefit plans with $0.70B ... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.10 B (2 Sites) | ~$0.01 B / yr | Routine environmental compliance across pharmaceutical formulation and medical device fabr... |
+| Product Liability & Mass Torts | Risk: MODERATE | Scheduled: $0.50 B | ~$0.07 B / yr | Product liability dockets, patent challenge (Hatch-Waxman) litigation, and government pric... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.93 B | Take-or-Pay: $0.33 B | Active pharmaceutical ingredient supply agreements and clinical contract research organiza... |
 
 **Equity Cash Flow Seniority Impact:** Low to moderate cash diversion: High gross margins (>75%) and robust operational cash flow comfortably fund R&D pipeline commitments and pension funding.
 
+
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
-1. **Trigger 1:** Structural failure to capture projected market share within the $69.0B addressable market.
+1. **Trigger 1:** Structural failure to capture projected market share within the $70.0B addressable market.
 2. **Trigger 2:** Operating margins compress by more than 400 basis points across two consecutive quarters.
 3. **Trigger 3:** Unanticipated cancellation or material commercial delay of key catalyst product rollouts.
 4. **Trigger 4:** Excessive dilution exceeding 3.5% annually or material balance sheet solvency failure.
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 DexCom, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +16.0%. Growth is supported by structural demand dynamics in Health Care, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.2%, fully justifying our HOLD rating.
+DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~6.7x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 13.3%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $1.16 B | +4.5% | 0.386 B | 7.67x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $1.27 B | +26.8% | 0.386 B | 7.61x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $1.19 B | +10.1% | 0.387 B | 7.54x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $1.29 B | +10.2% | 0.387 B | 7.48x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $1.39 B | +19.9% | 0.388 B | 7.41x | Health Care core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $1.53 B | +20.7% | 0.388 B | 7.35x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $1.45 B | +21.5% | 0.389 B | 7.29x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $1.55 B | +20.3% | 0.389 B | 7.22x | Health Care core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $1.65 B | +18.5% | 0.390 B | 7.16x | Health Care core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $1.78 B | +16.2% | 0.390 B | 7.09x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $1.66 B | +14.4% | 0.391 B | 7.03x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $1.76 B | +13.7% | 0.391 B | 6.96x | Health Care core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $1.87 B | +13.4% | 0.392 B | 6.90x | Health Care core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $1.18 B | +4.2% | 0.386 B | 7.39x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $1.29 B | +26.1% | 0.386 B | 7.33x | Product launch ramp: Health Care Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $1.21 B | +9.6% | 0.387 B | 7.27x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $1.31 B | +9.9% | 0.387 B | 7.21x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $1.41 B | +19.5% | 0.388 B | 7.14x | Health Care core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $1.56 B | +20.6% | 0.388 B | 7.08x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $1.47 B | +21.5% | 0.389 B | 7.02x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $1.58 B | +20.6% | 0.389 B | 6.96x | Health Care core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $1.68 B | +18.9% | 0.390 B | 6.90x | Health Care core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $1.81 B | +16.0% | 0.390 B | 6.84x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $1.69 B | +14.8% | 0.391 B | 6.77x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $1.79 B | +13.5% | 0.391 B | 6.71x | Health Care core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $1.90 B | +13.4% | 0.392 B | 6.65x | Health Care core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,32 +104,32 @@ DXCM currently trades at a Price-to-Sales (P/S) multiple of ~7.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $79.18 | $98.97 | $118.76 | 7.5x | +37.9% |
-| 52 Weeks (1Y) | $78.64 | $98.30 | $117.96 | 7.4x | +7.6% |
-| 104 Weeks (2Y) | $90.64 | $113.30 | $135.96 | 7.2x | +11.4% |
-| 156 Weeks (3Y) | $99.56 | $124.45 | $149.34 | 6.9x | +10.9% |
+| 13 Weeks | $77.42 | $96.78 | $116.14 | 7.2x | +38.0% |
+| 52 Weeks (1Y) | $76.95 | $96.19 | $115.43 | 7.2x | +7.7% |
+| 104 Weeks (2Y) | $88.90 | $111.12 | $133.34 | 6.9x | +11.6% |
+| 156 Weeks (3Y) | $97.58 | $121.97 | $146.36 | 6.7x | +11.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Steve Silver | Argus | 2026-08-04 | $86.42 | $96.00 | +11.1% | BUY |
-| William Plovanic | Canaccord Genuity Group | 2026-08-03 | $86.87 | $90.00 | +3.6% | BUY |
-| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $84.27 | $94.00 | +11.6% | BUY |
-| Matt O'Brien | Piper Sandler | 2026-07-31 | $74.54 | $95.00 | +27.4% | OVERWEIGHT |
-| Robert W. Baird Research Team | Robert W. Baird | 2026-07-31 | $84.28 | $105.00 | +24.6% | BUY |
+| Steve Silver | Argus | 2026-08-04 | $86.94 | $96.00 | +10.4% | BUY |
+| William Plovanic | Canaccord Genuity Group | 2026-08-03 | $87.31 | $90.00 | +3.1% | BUY |
+| Raymond James Financial Research Team | Raymond James Financial | 2026-07-31 | $83.45 | $94.00 | +12.6% | BUY |
+| Matt O'Brien | Piper Sandler | 2026-07-31 | $83.45 | $95.00 | +13.8% | OVERWEIGHT |
+| Robert W. Baird Research Team | Robert W. Baird | 2026-07-31 | $83.45 | $105.00 | +25.8% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-Q4 | Health Care Next-Generation Commercial Product Rollout | $0.04 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
 | 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.06 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.06 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.07 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($91.33) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($89.29) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

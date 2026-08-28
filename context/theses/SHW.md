@@ -4,9 +4,9 @@
 - **Ticker:** SHW
 - **Exchange:** NYSE
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $354.57 per share
-- **Current Price:** $354.57 per share
-- **Target Exit Price:** $368.72 per share
+- **Benchmark Entry Price:** $345.21 per share
+- **Current Price:** $345.21 per share
+- **Target Exit Price:** $358.64 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.4 / 10.0
 - **Rating:** SELL
@@ -28,13 +28,13 @@ The Sherwin-Williams Company maintains a distribution and brand moat as the prem
 The Sherwin-Williams Company's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Materials Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.06B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.07B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-The Sherwin-Williams Company operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 0.80% dividend yield ($2.84/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$3.5B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $2.84B in cash & equivalents against $10.64B in total debt (net balance: $-7.80B). Anticipated annual CapEx and operational capital requirements of ~$1.89B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+The Sherwin-Williams Company operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 0.80% dividend yield ($2.76/share annually, ~25% payout ratio). Management executes an active share repurchase program (~$3.5B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $2.83B in cash & equivalents against $10.61B in total debt (net balance: $-7.78B). Anticipated annual CapEx and operational capital requirements of ~$1.89B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $2.84 / share | 0.80% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.84/share (0.80% yield, ~25% payout ratio) with +15.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $2.76 / share | 0.80% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.76/share (0.80% yield, ~25% payout ratio) with +15.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | ACTIVE | $3.5 B | -1.0% / yr | Management utilizes moderate share buybacks (~$3.5B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $10.64 B Debt vs $2.84 B Cash | Net: $-7.80 B | Manageable balance sheet leverage with $10.64B total debt against $2.84B liquid reserves (Net balance: $-7.80B). |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $10.61 B Debt vs $2.83 B Cash | Net: $-7.78 B | Manageable balance sheet leverage with $10.61B total debt against $2.83B liquid reserves (Net balance: $-7.78B). |
 | Capital Needs & Runway | PLANT_MODERNIZATION_AND_CAPEX | ~$1.89 B / yr CapEx | 36 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
@@ -53,12 +53,13 @@ The Sherwin-Williams Company manages an established industrial liability footpri
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $5.2 B (Gap: $-0.36 B) | ~$0.16 B / yr | The Sherwin-Williams Company sponsors defined benefit pension plans with $5.20B ... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $5.91 B | Take-or-Pay: $1.77 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $5.19 B (Gap: $-0.36 B) | ~$0.16 B / yr | The Sherwin-Williams Company sponsors defined benefit pension plans with $5.19B in gross P... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $5.89 B | Take-or-Pay: $1.77 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 The Sherwin-Williams Company's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Materials, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.3x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
+SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.2x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 1.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $5.97 B | -3.7% | 0.243 B | 3.64x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $6.33 B | +16.2% | 0.242 B | 3.61x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $5.74 B | +0.1% | 0.242 B | 3.58x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $6.00 B | -0.5% | 0.241 B | 3.55x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $6.26 B | +4.8% | 0.240 B | 3.52x | Materials core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $6.65 B | +5.1% | 0.240 B | 3.49x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $6.05 B | +5.3% | 0.239 B | 3.46x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $6.31 B | +5.1% | 0.239 B | 3.43x | Materials core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $6.55 B | +4.7% | 0.238 B | 3.40x | Materials core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $6.93 B | +4.2% | 0.237 B | 3.37x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $6.28 B | +3.8% | 0.237 B | 3.34x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $6.53 B | +3.5% | 0.236 B | 3.31x | Materials core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $6.79 B | +3.7% | 0.236 B | 3.28x | Materials core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $5.95 B | -3.7% | 0.243 B | 3.55x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $6.31 B | +16.3% | 0.242 B | 3.53x | Product launch ramp: Materials Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $5.73 B | +0.1% | 0.242 B | 3.50x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $5.98 B | -0.4% | 0.241 B | 3.47x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $6.24 B | +4.9% | 0.240 B | 3.44x | Materials core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $6.63 B | +5.1% | 0.240 B | 3.41x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $6.03 B | +5.2% | 0.239 B | 3.38x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $6.29 B | +5.1% | 0.239 B | 3.35x | Materials core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $6.53 B | +4.7% | 0.238 B | 3.32x | Materials core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $6.91 B | +4.2% | 0.237 B | 3.29x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $6.26 B | +3.9% | 0.237 B | 3.26x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $6.51 B | +3.6% | 0.236 B | 3.23x | Materials core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $6.77 B | +3.7% | 0.236 B | 3.20x | Materials core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $298.82 | $373.52 | $448.22 | 3.6x | +23.2% |
-| 52 Weeks (1Y) | $285.47 | $356.84 | $428.21 | 3.5x | +0.6% |
-| 104 Weeks (2Y) | $292.11 | $365.14 | $438.17 | 3.4x | +1.5% |
-| 156 Weeks (3Y) | $294.98 | $368.72 | $442.46 | 3.3x | +1.3% |
+| 13 Weeks | $290.37 | $362.96 | $435.55 | 3.5x | +22.2% |
+| 52 Weeks (1Y) | $278.18 | $347.73 | $417.28 | 3.4x | +0.7% |
+| 104 Weeks (2Y) | $284.35 | $355.44 | $426.53 | 3.3x | +1.5% |
+| 156 Weeks (3Y) | $286.91 | $358.64 | $430.37 | 3.2x | +1.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Steven Forbes | Guggenheim | 2026-08-03 | $341.18 | $400.00 | +17.2% | BUY |
-| Duffy Fischer | The Goldman Sachs Group | 2026-07-29 | $344.29 | $420.00 | +22.0% | BUY |
-| John McNulty | BMO Capital Markets | 2026-07-29 | $344.53 | $405.00 | +17.6% | OUTPERFORM |
-| Joshua Spector | UBS Group | 2026-07-29 | $344.52 | $390.00 | +13.2% | HOLD |
-| Michael Sison | Wells Fargo & Company | 2026-07-29 | $354.89 | $360.00 | +1.4% | BUY |
+| Steven Forbes | Guggenheim | 2026-08-03 | $354.22 | $400.00 | +12.9% | BUY |
+| Duffy Fischer | The Goldman Sachs Group | 2026-07-29 | $343.88 | $420.00 | +22.1% | BUY |
+| John McNulty | BMO Capital Markets | 2026-07-29 | $343.88 | $405.00 | +17.8% | OUTPERFORM |
+| Joshua Spector | UBS Group | 2026-07-29 | $343.88 | $390.00 | +13.4% | HOLD |
+| Michael Sison | Wells Fargo & Company | 2026-07-29 | $343.88 | $360.00 | +4.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ SHW currently trades at a Price-to-Sales (P/S) multiple of ~3.6x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($354.57) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($345.21) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

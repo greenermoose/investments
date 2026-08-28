@@ -1,0 +1,97 @@
+{
+  "symbol": "NET",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
+  "last_updated": "2026-08-28T02:55:52.456713+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-06",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
+      "data": {
+        "shares_outstanding": 353485000,
+        "revenue": 1335816000,
+        "balance_sheet": {
+          "total_assets": 6474127000,
+          "total_liabilities": 4854107000,
+          "total_shareholders_equity": 1620020000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 4162798000,
+          "cash_primary": 1663773000,
+          "marketable_securities_current": 2499025000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-08",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
+      "data": {
+        "shares_outstanding": 352625000,
+        "revenue": 639755000,
+        "balance_sheet": {
+          "total_assets": 6163977000,
+          "total_liabilities": 4637269000,
+          "total_shareholders_equity": 1526708000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 4163878000,
+          "cash_primary": 932226000,
+          "marketable_securities_current": 3231652000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-26",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
+      "data": {
+        "shares_outstanding": 348421000,
+        "revenue": 2167937000,
+        "balance_sheet": {
+          "total_assets": 6036256000,
+          "total_liabilities": 4577133000,
+          "total_shareholders_equity": 1459123000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 4101251000,
+          "cash_primary": 943536000,
+          "marketable_securities_current": 3157715000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-30",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1477333",
+      "data": {
+        "shares_outstanding": 347519000,
+        "revenue": 1553430000,
+        "balance_sheet": {
+          "total_assets": 5786395000,
+          "total_liabilities": 4439379000,
+          "total_shareholders_equity": 1347016000,
+          "total_debt": 0,
+          "short_term_debt": 0,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 4043508000,
+          "cash_primary": 1052644000,
+          "marketable_securities_current": 2990864000
+        }
+      }
+    }
+  ],
+  "name": "Cloudflare, Inc.",
+  "investor_relations_url": "https://cloudflare.net/"
+}

@@ -4,9 +4,9 @@
 - **Ticker:** INTC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $92.43 per share
-- **Current Price:** $92.43 per share
-- **Target Exit Price:** $67.31 per share
+- **Benchmark Entry Price:** $92.09 per share
+- **Current Price:** $92.09 per share
+- **Target Exit Price:** $67.13 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 5.0 / 10.0
 - **Rating:** AVOID
@@ -28,22 +28,22 @@ Intel Corporation possesses a legacy semiconductor manufacturing scale moat, mai
 Intel Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.00B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.00B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.00B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Intel Corporation operates under a sbc dilutive capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~1.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $13.19B in cash & equivalents against $10.55B in total debt (net balance: $+2.64B). Anticipated annual CapEx and operational capital requirements of ~$2.64B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Intel Corporation operates under a sbc dilutive capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~1.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $13.21B in cash & equivalents against $10.57B in total debt (net balance: $+2.64B). Anticipated annual CapEx and operational capital requirements of ~$2.64B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
 | Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
 | Share Buybacks & Dilution | INACTIVE | $0.0 B | +1.5% / yr | Share count expands modestly at ~1.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $10.55 B Debt vs $13.19 B Cash | Net: $+2.64 B | Manageable balance sheet leverage with $10.55B total debt against $13.19B liquid reserves (Net balance: $+2.64B). |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $10.57 B Debt vs $13.21 B Cash | Net: $+2.64 B | Manageable balance sheet leverage with $10.57B total debt against $13.21B liquid reserves (Net balance: $+2.64B). |
 | Capital Needs & Runway | CAPEX_AND_RD | ~$2.64 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-Intel Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $6.59B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +2.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
+Intel Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $6.61B (~12.5% of TTM revenue). Gross annual equity grant issuance is estimated at +2.7% per year. Modest buyback activity partially offsets equity grants; net share count expands at +1.5%/yr. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Periodic quarterly vesting events and tax-withholding 'sell-to-cover' executions can create temporary supply overhang following earnings releases; however, long-term per-share value compounding remains intact.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~12.5% of TTM Revenue | $6.59 B / yr | PARTIAL_OFFSET | Risk: MODERATE |
+| Annual Stock Compensation | ~12.5% of TTM Revenue | $6.61 B / yr | PARTIAL_OFFSET | Risk: MODERATE |
 | Gross vs Net Dilution Rate | Gross: +2.7% / yr | Net: +1.5% / yr | SBC_DILUTIVE | Dilution Drag |
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | MODERATE Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% 1-year cliff, quarterly ratable thereafter) + 3-Year Performance PSUs tied to Relative TSR & FCF | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
@@ -53,12 +53,13 @@ Intel Corporation maintains a capital-light liability profile with zero defined 
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Intel Corporation operates zero defined benefit pension plans or retiree healthc... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Intel Corporation has zero legacy manufacturing, toxic chemical, or federal Supe... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $18.46 B | Take-or-Pay: $5.54 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Intel Corporation operates zero defined benefit pension plans or retiree healthcare OPEB o... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Intel Corporation has zero legacy manufacturing, toxic chemical, or federal Superfund reme... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $18.50 B | Take-or-Pay: $5.55 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Intel Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of -2.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-INTC currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -10.0%, fully justifying our AVOID rating.
+INTC currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~7.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -10%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $13.32 B | -7.9% | 5.026 B | 8.81x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $13.92 B | +11.1% | 5.045 B | 8.66x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $12.41 B | -4.4% | 5.064 B | 8.51x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $12.75 B | -5.2% | 5.082 B | 8.36x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $13.08 B | -1.8% | 5.101 B | 8.22x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $13.66 B | -1.9% | 5.120 B | 8.07x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $12.19 B | -1.8% | 5.140 B | 7.92x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $12.51 B | -1.9% | 5.159 B | 7.78x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $12.84 B | -1.9% | 5.178 B | 7.63x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $13.41 B | -1.8% | 5.197 B | 7.48x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $11.96 B | -1.9% | 5.217 B | 7.33x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $12.28 B | -1.8% | 5.236 B | 7.19x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $12.60 B | -1.9% | 5.256 B | 7.04x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $13.35 B | -7.9% | 5.026 B | 8.76x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $13.94 B | +11.1% | 5.045 B | 8.61x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $12.44 B | -4.4% | 5.064 B | 8.47x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $12.77 B | -5.3% | 5.082 B | 8.32x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $13.10 B | -1.9% | 5.101 B | 8.17x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $13.68 B | -1.8% | 5.120 B | 8.03x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $12.21 B | -1.9% | 5.140 B | 7.88x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $12.53 B | -1.8% | 5.159 B | 7.74x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $12.86 B | -1.8% | 5.178 B | 7.59x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $13.43 B | -1.8% | 5.197 B | 7.45x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $11.98 B | -1.9% | 5.217 B | 7.30x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $12.30 B | -1.8% | 5.236 B | 7.16x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $12.62 B | -1.8% | 5.256 B | 7.01x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $76.20 | $95.25 | $114.30 | 8.6x | +12.8% |
-| 52 Weeks (1Y) | $67.24 | $84.05 | $100.86 | 8.2x | -9.1% |
-| 104 Weeks (2Y) | $60.28 | $75.35 | $90.42 | 7.6x | -9.7% |
-| 156 Weeks (3Y) | $53.85 | $67.31 | $80.77 | 7.0x | -10.0% |
+| 13 Weeks | $75.86 | $94.83 | $113.80 | 8.6x | +12.4% |
+| 52 Weeks (1Y) | $67.03 | $83.79 | $100.55 | 8.2x | -9.0% |
+| 104 Weeks (2Y) | $60.14 | $75.17 | $90.20 | 7.6x | -9.7% |
+| 156 Weeks (3Y) | $53.70 | $67.13 | $80.56 | 7.0x | -10.0% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Timothy Arcuri | UBS Group | 2026-08-12 | $97.71 | $112.00 | +14.6% | HOLD |
-| Vivek Arya | Bank of America | 2026-08-12 | $103.65 | $145.00 | +39.9% | BUY |
-| Stacy Rasgon | Sanford C. Bernstein | 2026-07-27 | $89.86 | $110.00 | +22.4% | BUY |
-| Gil Luria | DA Davidson | 2026-07-24 | $96.96 | $100.00 | +3.1% | HOLD |
-| Tristan Gerra | Robert W. Baird | 2026-07-24 | $96.29 | $125.00 | +29.8% | HOLD |
+| Timothy Arcuri | UBS Group | 2026-08-12 | $100.95 | $112.00 | +10.9% | HOLD |
+| Vivek Arya | Bank of America | 2026-08-12 | $100.95 | $145.00 | +43.6% | BUY |
+| Stacy Rasgon | Sanford C. Bernstein | 2026-07-27 | $91.67 | $110.00 | +20.0% | BUY |
+| Gil Luria | DA Davidson | 2026-07-24 | $92.32 | $100.00 | +8.3% | HOLD |
+| Tristan Gerra | Robert W. Baird | 2026-07-24 | $92.32 | $125.00 | +35.4% | HOLD |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ INTC currently trades at a Price-to-Sales (P/S) multiple of ~8.8x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($92.43) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($92.09) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

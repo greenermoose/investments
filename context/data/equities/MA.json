@@ -95,15 +95,15 @@
   "last_updated": "2026-08-18T18:03:44.937667+00:00",
   "off_balance_sheet_and_contingent_liabilities": {
     "overall_liability_overhang_rating": "LOW",
-    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.45,
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 4.5,
     "pension_and_opeb": {
-      "funded_status_usd_b": -0.06,
-      "pbo_gross_usd_b": 3.24,
-      "plan_assets_usd_b": 3.18,
-      "annual_cash_contribution_usd_b": 0.06,
+      "funded_status_usd_b": -0.07,
+      "pbo_gross_usd_b": 3.28,
+      "plan_assets_usd_b": 3.21,
+      "annual_cash_contribution_usd_b": 0.07,
       "underfunding_risk_level": "MINIMAL",
       "opeb_unfunded_usd_b": 0.2,
-      "narrative": "Mastercard Incorporated maintains well-funded legacy defined benefit pension plans ($3.24B PBO vs $3.18B assets) with strong institutional risk-matching asset allocation."
+      "narrative": "Mastercard Incorporated maintains well-funded legacy defined benefit pension plans ($3.28B PBO vs $3.21B assets) with strong institutional risk-matching asset allocation."
     },
     "environmental_and_remediation": {
       "accrued_environmental_reserve_usd_b": 0.0,
@@ -121,10 +121,10 @@
       "narrative": "Legal and regulatory reserves are continuously accrued in ordinary course of banking/financial operations."
     },
     "purchase_commitments_and_guarantees": {
-      "unconditional_purchase_obligations_usd_b": 3.89,
+      "unconditional_purchase_obligations_usd_b": 3.93,
       "take_or_pay_commitments_usd_b": 0.2,
       "jv_and_vie_debt_guarantees_usd_b": 1.5,
-      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $3.89B."
+      "narrative": "Datacenter technology contracts, telecommunications agreements, and standby letters of credit / liquidity facilities total $3.93B."
     },
     "equity_cash_flow_diversion_risk": "Low risk: Fortress Tier 1 capital ratios and massive liquidity reserves easily support all commitments while enabling robust dividend payouts and share buybacks.",
     "narrative": "Mastercard Incorporated's off-balance sheet liabilities are low risk, with well-funded pension trusts and routine financial regulatory litigation covered by regular operational earnings."

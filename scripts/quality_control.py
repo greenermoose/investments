@@ -452,9 +452,21 @@ class QualityController:
                 s = re.sub(r"[,\. \-]", "", s)
                 return s.lower()
 
+            KNOWN_NAME_EXEMPTIONS = {
+                "GE": ["GE AEROSPACE", "GENERAL ELECTRIC", "GENERAL ELECTRIC CO", "GENERAL ELECTRIC COMPANY"]
+            }
+
             clean_meta = clean_corp_name(meta_name)
             clean_price = clean_corp_name(price_name)
-            if clean_meta != clean_price and not (clean_meta in clean_price or clean_price in clean_meta):
+
+            is_exempt_cross = False
+            if sym in KNOWN_NAME_EXEMPTIONS:
+                for alias in KNOWN_NAME_EXEMPTIONS[sym]:
+                    if clean_corp_name(alias) in [clean_meta, clean_price]:
+                        is_exempt_cross = True
+                        break
+
+            if not is_exempt_cross and clean_meta != clean_price and not (clean_meta in clean_price or clean_price in clean_meta):
                 # Also allow single-character typo tolerance (e.g. Marriot vs Marriott)
                 match_ok = False
                 if len(clean_meta) > 5 and len(clean_price) > 5:
@@ -481,10 +493,21 @@ class QualityController:
                 s = re.sub(r"\b(THE|COMPANY|CORPORATION|INCORPORATED|CORP|INC|CO|LTD|LIMITED|PLC|SE|NV|HOLDINGS|HOLDING)\b", "", s)
                 return re.sub(r"[^A-Z0-9]", "", s)
 
+            KNOWN_NAME_EXEMPTIONS = {
+                "GE": ["GE AEROSPACE", "GENERAL ELECTRIC", "GENERAL ELECTRIC CO", "GENERAL ELECTRIC COMPANY"]
+            }
+
             norm_meta = normalize_title(meta_name)
             norm_sec = normalize_title(sec_title)
 
-            if norm_meta and norm_sec and norm_meta != norm_sec:
+            is_exempt = False
+            if sym in KNOWN_NAME_EXEMPTIONS:
+                for alias in KNOWN_NAME_EXEMPTIONS[sym]:
+                    if normalize_title(alias) in [norm_meta, norm_sec]:
+                        is_exempt = True
+                        break
+
+            if not is_exempt and norm_meta and norm_sec and norm_meta != norm_sec:
                 if norm_meta not in norm_sec and norm_sec not in norm_meta:
                     issues.append({
                         "severity": "WARNING",

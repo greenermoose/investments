@@ -1,0 +1,97 @@
+{
+  "symbol": "GE",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
+  "last_updated": "2026-08-28T02:55:50.606742+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-07-16",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
+      "data": {
+        "shares_outstanding": 1037562513,
+        "revenue": 25741000000,
+        "balance_sheet": {
+          "total_assets": 127672000000,
+          "total_liabilities": 109805000000,
+          "total_shareholders_equity": 17640000000,
+          "total_debt": 17157000000,
+          "short_term_debt": 2000000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 9345000000,
+          "cash_primary": 9345000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-04-21",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
+      "data": {
+        "shares_outstanding": 1043337235,
+        "revenue": 12392000000,
+        "balance_sheet": {
+          "total_assets": 128445000000,
+          "total_liabilities": 110148000000,
+          "total_shareholders_equity": 18057000000,
+          "total_debt": 18174000000,
+          "short_term_debt": 2103000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 10981000000,
+          "cash_primary": 10981000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-01-29",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
+      "data": {
+        "shares_outstanding": 1054813911,
+        "revenue": 45855000000,
+        "balance_sheet": {
+          "total_assets": 130169000000,
+          "total_liabilities": 111271000000,
+          "total_shareholders_equity": 18677000000,
+          "total_debt": 18808000000,
+          "short_term_debt": 1686000000,
+          "long_term_debt": 20469000000,
+          "cash_and_cash_equivalents": 12392000000,
+          "cash_primary": 12392000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-10-21",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=40545",
+      "data": {
+        "shares_outstanding": 1054813911,
+        "revenue": 33138000000,
+        "balance_sheet": {
+          "total_assets": 128243000000,
+          "total_liabilities": 109222000000,
+          "total_shareholders_equity": 18812000000,
+          "total_debt": 18771000000,
+          "short_term_debt": 2067000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 12501000000,
+          "cash_primary": 12501000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "General Electric Company",
+  "investor_relations_url": "https://www.geaerospace.com/investor-relations"
+}

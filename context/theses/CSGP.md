@@ -4,9 +4,9 @@
 - **Ticker:** CSGP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $33.21 per share
-- **Current Price:** $33.21 per share
-- **Target Exit Price:** $32.78 per share
+- **Benchmark Entry Price:** $31.34 per share
+- **Current Price:** $31.34 per share
+- **Target Exit Price:** $30.95 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.0 / 10.0
 - **Rating:** AVOID
@@ -28,11 +28,11 @@ CoStar Group commands an entrenched data monopoly moat in commercial and multifa
 CoStar Group, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Real Estate Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.01B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.01B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.01B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-CoStar Group, Inc. operates under a sbc dilutive capital strategy. The company returns capital to shareholders through a 3.20% dividend yield ($1.06/share annually, ~72% payout ratio). Diluted share count expands at ~1.0% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.49B in cash & equivalents against $4.87B in total debt (net balance: $-4.38B). Anticipated annual CapEx and operational capital requirements of ~$0.71B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 18 months.
+CoStar Group, Inc. operates under a sbc dilutive capital strategy. The company returns capital to shareholders through a 3.20% dividend yield ($1.00/share annually, ~72% payout ratio). Diluted share count expands at ~1.0% per year due to employee stock compensation. Balance sheet liquidity is supported by $0.49B in cash & equivalents against $4.87B in total debt (net balance: $-4.38B). Anticipated annual CapEx and operational capital requirements of ~$0.71B are funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 18 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $1.06 / share | 3.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.06/share (3.20% yield, ~72% payout ratio) with +5.0% annual modeled dividend growth. |
+| Dividends Declared & Paid | PAYING | $1.00 / share | 3.20% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $1.00/share (3.20% yield, ~72% payout ratio) with +5.0% annual modeled dividend growth. |
 | Share Buybacks & Dilution | INACTIVE | $0.0 B | +1.0% / yr | Share count expands modestly at ~1.0% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
 | Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $4.87 B Debt vs $0.49 B Cash | Net: $-4.38 B | Conservative debt profile of $4.87B debt vs $0.49B cash & equivalents (Net balance: $-4.38B). |
 | Capital Needs & Runway | INFRASTRUCTURE_CAPEX | ~$0.71 B / yr CapEx | 18 Months Runway | Funded via high operational cash flow conversion and investment-grade corporate debt facilities, maintaining disciplined interest coverage. |
@@ -53,12 +53,13 @@ CoStar Group, Inc. manages an established industrial liability footprint with st
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.71 B (Gap: $-0.05 B) | ~$0.02 B / yr | CoStar Group, Inc. sponsors defined benefit pension plans with $0.71B in gross P... |
-| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and fou... |
-| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dock... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.81 B | Take-or-Pay: $0.24 B | Raw material procurement contracts (metals, polymers, electronics) and logistics... |
+| Defined Benefit Pension & OPEB | MODERATE | PBO: $0.71 B (Gap: $-0.05 B) | ~$0.02 B / yr | CoStar Group, Inc. sponsors defined benefit pension plans with $0.71B in gross PBO against... |
+| Environmental Remediation & PFAS | Risk: LOW | Accrued: $0.30 B (6 Sites) | ~$0.03 B / yr | Ongoing environmental remediation across legacy industrial manufacturing and foundry facil... |
+| Product Liability & Mass Torts | Risk: LOW | Scheduled: $0.30 B | ~$0.04 B / yr | Commercial contract disputes, workplace safety claims, and product warranty dockets.... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $0.81 B | Take-or-Pay: $0.24 B | Raw material procurement contracts (metals, polymers, electronics) and logistics agreement... |
 
 **Equity Cash Flow Seniority Impact:** Manageable risk: Annual pension funding and environmental cash outlays are fully funded through operating cash flow.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 CoStar Group, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +4.0%. Growth is supported by structural demand dynamics in Real Estate, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-CSGP currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.8x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.4%, fully justifying our AVOID rating.
+CSGP currently trades at a Price-to-Sales (P/S) multiple of ~3.9x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.5x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is -0.4%, fully justifying our AVOID rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.82 B | -3.6% | 0.408 B | 4.18x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $0.87 B | +15.9% | 0.409 B | 4.15x | Product launch ramp: Real Estate Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $0.79 B | -0.1% | 0.410 B | 4.11x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $0.83 B | -0.5% | 0.411 B | 4.08x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $0.86 B | +5.1% | 0.412 B | 4.04x | Real Estate core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $0.92 B | +5.3% | 0.413 B | 4.01x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $0.83 B | +5.5% | 0.414 B | 3.97x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $0.87 B | +4.7% | 0.416 B | 3.94x | Real Estate core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $0.90 B | +5.0% | 0.417 B | 3.90x | Real Estate core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $0.96 B | +3.8% | 0.418 B | 3.87x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $0.87 B | +4.3% | 0.419 B | 3.83x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $0.90 B | +3.5% | 0.420 B | 3.80x | Real Estate core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.94 B | +3.9% | 0.421 B | 3.76x | Real Estate core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $0.82 B | -3.5% | 0.408 B | 3.94x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $0.87 B | +16.0% | 0.409 B | 3.91x | Product launch ramp: Real Estate Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $0.79 B | +0.0% | 0.410 B | 3.88x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $0.83 B | -0.4% | 0.411 B | 3.84x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $0.86 B | +5.2% | 0.412 B | 3.81x | Real Estate core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $0.92 B | +5.4% | 0.413 B | 3.78x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $0.83 B | +5.6% | 0.414 B | 3.75x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $0.87 B | +4.8% | 0.416 B | 3.71x | Real Estate core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $0.90 B | +5.1% | 0.417 B | 3.68x | Real Estate core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $0.96 B | +3.9% | 0.418 B | 3.65x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $0.87 B | +4.4% | 0.419 B | 3.62x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $0.90 B | +3.6% | 0.420 B | 3.58x | Real Estate core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $0.94 B | +4.0% | 0.421 B | 3.55x | Real Estate core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ CSGP currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $27.91 | $34.89 | $41.87 | 4.1x | +21.8% |
-| 52 Weeks (1Y) | $26.28 | $32.85 | $39.42 | 4.0x | -1.1% |
-| 104 Weeks (2Y) | $26.34 | $32.92 | $39.50 | 3.9x | -0.4% |
-| 156 Weeks (3Y) | $26.22 | $32.78 | $39.34 | 3.8x | -0.4% |
+| 13 Weeks | $26.27 | $32.84 | $39.41 | 3.9x | +20.6% |
+| 52 Weeks (1Y) | $24.78 | $30.98 | $37.18 | 3.8x | -1.1% |
+| 104 Weeks (2Y) | $24.85 | $31.06 | $37.27 | 3.7x | -0.4% |
+| 156 Weeks (3Y) | $24.76 | $30.95 | $37.14 | 3.5x | -0.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Peter Christiansen | Citigroup | 2026-07-29 | $30.33 | $33.00 | +8.8% | OUTPERFORM |
-| George Tong | The Goldman Sachs Group | 2026-07-29 | $30.33 | $40.00 | +31.9% | BUY |
-| Scott Wurtzel | Wolfe Research | 2026-07-29 | $30.33 | $32.00 | +5.5% | OUTPERFORM |
-| Alexei Gogolev | JPMorgan Chase & Co. | 2026-07-29 | $29.77 | $52.00 | +74.7% | OVERWEIGHT |
-| Andrew Boone | Citizens Jmp | 2026-07-29 | $29.00 | $35.00 | +20.7% | OUTPERFORM |
+| Peter Christiansen | Citigroup | 2026-07-29 | $29.83 | $33.00 | +10.6% | OUTPERFORM |
+| George Tong | The Goldman Sachs Group | 2026-07-29 | $29.83 | $40.00 | +34.1% | BUY |
+| Scott Wurtzel | Wolfe Research | 2026-07-29 | $29.83 | $32.00 | +7.3% | OUTPERFORM |
+| Alexei Gogolev | JPMorgan Chase & Co. | 2026-07-29 | $29.83 | $52.00 | +74.3% | OVERWEIGHT |
+| Andrew Boone | Citizens Jmp | 2026-07-29 | $29.83 | $35.00 | +17.3% | OUTPERFORM |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ CSGP currently trades at a Price-to-Sales (P/S) multiple of ~4.2x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($33.21) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($31.34) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

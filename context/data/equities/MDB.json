@@ -1,0 +1,133 @@
+{
+  "symbol": "MDB",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+  "last_updated": "2026-08-28T02:55:52.956143+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-29",
+      "period_start": "2026-02-01",
+      "period_end": "2026-04-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 80369527,
+        "revenue": 687616000,
+        "balance_sheet": {
+          "total_assets": 3692691000,
+          "total_liabilities": 757731000,
+          "total_shareholders_equity": 2934960000,
+          "total_debt": 28208000,
+          "short_term_debt": 6584000,
+          "long_term_debt": 21624000,
+          "cash_and_cash_equivalents": 2427153000,
+          "cash_primary": 1036354000,
+          "marketable_securities_current": 1390799000
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-03-11",
+      "period_start": "2025-02-01",
+      "period_end": "2026-01-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81391760,
+        "revenue": 2463797000,
+        "balance_sheet": {
+          "total_assets": 3758848000,
+          "total_liabilities": 806490000,
+          "total_shareholders_equity": 2952358000,
+          "total_debt": 29972000,
+          "short_term_debt": 6482000,
+          "long_term_debt": 23490000,
+          "cash_and_cash_equivalents": 2387241000,
+          "cash_primary": 1083540000,
+          "marketable_securities_current": 1303701000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-12-02",
+      "period_start": "2025-02-01",
+      "period_end": "2025-10-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81356893,
+        "revenue": 1768725000,
+        "balance_sheet": {
+          "total_assets": 3566649000,
+          "total_liabilities": 678210000,
+          "total_shareholders_equity": 2888439000,
+          "total_debt": 31711000,
+          "short_term_debt": 6381000,
+          "long_term_debt": 25330000,
+          "cash_and_cash_equivalents": 2305761000,
+          "cash_primary": 834092000,
+          "marketable_securities_current": 1471669000
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-08-27",
+      "period_start": "2025-02-01",
+      "period_end": "2025-07-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=1441816",
+      "data": {
+        "shares_outstanding": 81714313,
+        "revenue": 1140416000,
+        "balance_sheet": {
+          "total_assets": 3542061000,
+          "total_liabilities": 599087000,
+          "total_shareholders_equity": 2942974000,
+          "total_debt": 33426000,
+          "short_term_debt": 6282000,
+          "long_term_debt": 27144000,
+          "cash_and_cash_equivalents": 2345386000,
+          "cash_primary": 647139000,
+          "marketable_securities_current": 1698247000
+        }
+      }
+    }
+  ],
+  "name": "MongoDB, Inc.",
+  "investor_relations_url": "https://investors.mongodb.com/",
+  "off_balance_sheet_and_contingent_liabilities": {
+    "overall_liability_overhang_rating": "MINIMAL",
+    "total_estimated_off_balance_sheet_encumbrance_usd_b": 1.36,
+    "pension_and_opeb": {
+      "funded_status_usd_b": 0.0,
+      "pbo_gross_usd_b": 0.0,
+      "plan_assets_usd_b": 0.0,
+      "annual_cash_contribution_usd_b": 0.0,
+      "underfunding_risk_level": "NONE",
+      "opeb_unfunded_usd_b": 0.0,
+      "narrative": "MongoDB, Inc. operates zero defined benefit pension plans or retiree healthcare OPEB obligations. Retirement benefits are 100% defined contribution 401(k) matching with immediate operational expense recognition."
+    },
+    "environmental_and_remediation": {
+      "accrued_environmental_reserve_usd_b": 0.0,
+      "estimated_unreserved_exposure_usd_b": 0.0,
+      "superfund_and_pfas_sites_count": 0,
+      "annual_remediation_cash_drain_usd_b": 0.0,
+      "risk_level": "MINIMAL",
+      "narrative": "MongoDB, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfund remediation obligations."
+    },
+    "litigation_and_toxic_torts": {
+      "active_mass_torts_or_mdl": "Routine commercial litigation, intellectual property patent disputes, and standard employment claims.",
+      "recent_settlements_scheduled_usd_b": 0.1,
+      "annual_legal_settlement_cash_drain_usd_b": 0.02,
+      "catastrophic_loss_risk_level": "MINIMAL",
+      "narrative": "No material product safety mass torts, class actions, or existential regulatory dockets exist; routine commercial legal expenses are absorbed within operating margins."
+    },
+    "purchase_commitments_and_guarantees": {
+      "unconditional_purchase_obligations_usd_b": 0.86,
+      "take_or_pay_commitments_usd_b": 0.26,
+      "jv_and_vie_debt_guarantees_usd_b": 0.0,
+      "narrative": "Unconditional cloud computing infrastructure, colocation datacenter leases, and software license commitments total $0.86B over multi-year periods."
+    },
+    "equity_cash_flow_diversion_risk": "Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.",
+    "narrative": "MongoDB, Inc. maintains a capital-light liability profile with zero defined benefit pensions or environmental contamination liabilities, ensuring 100% of free cash flow is available for high-ROIC growth and shareholder value creation."
+  }
+}

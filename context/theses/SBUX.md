@@ -4,9 +4,9 @@
 - **Ticker:** SBUX
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $107.86 per share
-- **Current Price:** $107.86 per share
-- **Target Exit Price:** $115.72 per share
+- **Benchmark Entry Price:** $107.26 per share
+- **Current Price:** $107.26 per share
+- **Target Exit Price:** $114.70 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 7.8 / 10.0
 - **Rating:** SELL
@@ -19,31 +19,31 @@ Starbucks Corporation is the world's premier specialty coffee roaster and retail
 Starbucks holds an iconic global lifestyle brand moat, prime real estate locations worldwide, and an industry-leading digital customer loyalty program (Starbucks Rewards with over 34 million active US members) driving high mobile order and pay volume. Under leadership focused on operational turnaround, management is streamlining store operations, accelerating beverage prep times, and elevating the customer cafe experience.
 
 ## Total Addressable Market & Market Share
-Starbucks Corporation addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 4.1% market share. Over our 3-year investment horizon, we model market share evolving to 4.0%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Starbucks Corporation addresses an estimated Total Addressable Market (TAM) of $900.0B across its primary Consumer Discretionary domains, expanding at a ~7.0% CAGR. The company currently captures an estimated 6.5% market share. Over our 3-year investment horizon, we model market share evolving to 6.3%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 Starbucks Corporation commands a global consumer specialty coffee brand and real estate moat, operating over 39,000 stores globally. Starbucks delivers an experiential 'Third Place' between home and work, reinforced by its industry-leading Starbucks Rewards digital loyalty program (over 34 million active US members) and mobile order-and-pay platform. High brand prestige supports premium pricing power across handcrafted beverages.
 
 ## Anticipated Catalysts & Timeline
-Starbucks Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.09B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.13B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.15B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
+Starbucks Corporation's commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Consumer Discretionary Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.14B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.20B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.23B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Starbucks Corporation operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 2.40% dividend yield ($2.59/share annually, ~60% payout ratio). Management executes an active share repurchase program (~$5.6B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $9.30B in cash & equivalents against $7.44B in total debt (net balance: $+1.86B). Anticipated annual CapEx and operational capital requirements of ~$1.49B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Starbucks Corporation operates under a balanced capital return capital strategy. The company returns capital to shareholders through a 2.40% dividend yield ($2.57/share annually, ~60% payout ratio). Management executes an active share repurchase program (~$8.7B authorized capacity), reducing share count at ~1.0% annually. Balance sheet liquidity is supported by $14.53B in cash & equivalents against $11.63B in total debt (net balance: $+2.90B). Anticipated annual CapEx and operational capital requirements of ~$2.33B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
-| Dividends Declared & Paid | PAYING | $2.59 / share | 2.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.59/share (2.40% yield, ~60% payout ratio) with +6.0% annual modeled dividend growth. |
-| Share Buybacks & Dilution | ACTIVE | $5.6 B | -1.0% / yr | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $7.44 B Debt vs $9.30 B Cash | Net: $+1.86 B | Manageable balance sheet leverage with $7.44B total debt against $9.30B liquid reserves (Net balance: $+1.86B). |
-| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$1.49 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
+| Dividends Declared & Paid | PAYING | $2.57 / share | 2.40% Yield | Regular quarterly cash dividend declared and paid: indicated annual distribution of $2.57/share (2.40% yield, ~60% payout ratio) with +6.0% annual modeled dividend growth. |
+| Share Buybacks & Dilution | ACTIVE | $8.7 B | -1.0% / yr | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| Debt & Equity Issuance | SENIOR_NOTES_AND_CREDIT_FACILITY | $11.63 B Debt vs $14.53 B Cash | Net: $+2.90 B | Manageable balance sheet leverage with $11.63B total debt against $14.53B liquid reserves (Net balance: $+2.90B). |
+| Capital Needs & Runway | WORKING_CAPITAL_AND_ORGANIC_EXPANSION | ~$2.33 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
 ## Stock-Based Compensation & Lock-Up Dynamics
-Starbucks Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $1.67B (~4.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.2% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
+Starbucks Corporation utilizes equity-based compensation as a core talent recruitment and alignment mechanism, incurring an estimated annual SBC run-rate of $2.62B (~4.5% of TTM revenue). Gross annual equity grant issuance is estimated at +1.2% per year. Share repurchases significantly exceed annual equity grants, reducing share count at 1.0%/yr and expanding per-share intrinsic value. Regarding lock-up dynamics, All initial public offering and acquisition lock-up periods are fully expired. Executive and insider transactions operate under Rule 10b5-1 pre-scheduled trading programs, with open windows commencing 2 business days following quarterly earnings releases. Because share buybacks substantially exceed equity compensation, downward price pressure from vesting releases is minimal, and net share count contraction supports our 20-year compounding hurdle.
 
 | SBC & Dilution Metric | Value / Policy | Annual Run-Rate ($B / %) | Offset & Lock-Up Status | Downward Supply Pressure |
 | :--- | :--- | :--- | :--- | :--- |
-| Annual Stock Compensation | ~4.5% of TTM Revenue | $1.67 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
+| Annual Stock Compensation | ~4.5% of TTM Revenue | $2.62 B / yr | FULL_OFFSET_ACCRETIVE | Risk: LOW |
 | Gross vs Net Dilution Rate | Gross: +1.2% / yr | Net: -1.0% / yr | MODERATE_BUYBACKS | Accretive Repurchases |
 | Lock-Up & Window Status | EXPIRED_STANDARD_TRADING_WINDOWS | 10b5-1 Trading Window | All initial public offering and acquisition lock-up periods ... | LOW Overhang Risk |
 | Vesting Architecture | 4-Year Graded Vesting (25% annual tranches) with executive performance shares | Graded / Performance PSUs | Post-Earnings Settlement Windows | Tax Sell-to-Cover Monitored |
@@ -53,12 +53,13 @@ Starbucks Corporation possesses a clean, predictable liability structure with fu
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | MINIMAL | PBO: $4.46 B (Gap: $-0.22 B) | ~$0.11 B / yr | Starbucks Corporation maintains legacy defined benefit plans ($4.46B PBO vs $4.2... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain e... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disp... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $6.69 B | Take-or-Pay: $1.67 B | Agricultural commodity procurement, packaging materials, and freight transportat... |
+| Defined Benefit Pension & OPEB | MINIMAL | PBO: $6.98 B (Gap: $-0.35 B) | ~$0.17 B / yr | Starbucks Corporation maintains legacy defined benefit plans ($6.98B PBO vs $6.63B assets;... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.05 B (1 Sites) | ~$0.01 B / yr | Routine packaging recycling, water conservation, and agricultural supply chain environment... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.20 B | ~$0.03 B / yr | Routine consumer product advertising class actions, supply chain commercial disputes, and ... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $10.46 B | Take-or-Pay: $2.62 B | Agricultural commodity procurement, packaging materials, and freight transportation agreem... |
 
 **Equity Cash Flow Seniority Impact:** Low risk: Stable, non-cyclical cash flows easily service all supply chain commitments and pension obligations while supporting steady dividend payouts and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,64 +72,64 @@ If any of the following occur, the thesis is broken and the position will be exi
 Starbucks Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +5.0%. Growth is supported by structural demand dynamics in Consumer Discretionary, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-SBUX currently trades at a Price-to-Sales (P/S) multiple of ~3.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~3.0x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.4%, fully justifying our SELL rating.
+SBUX currently trades at a Price-to-Sales (P/S) multiple of ~2.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~1.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 2.3%, fully justifying our SELL rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $9.39 B | -3.0% | 1.140 B | 3.31x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $9.98 B | +17.0% | 1.137 B | 3.28x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $9.08 B | +0.9% | 1.134 B | 3.25x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $9.52 B | +0.4% | 1.131 B | 3.22x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $9.95 B | +6.0% | 1.128 B | 3.20x | Consumer Discretionary core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $10.62 B | +6.4% | 1.125 B | 3.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $9.69 B | +6.7% | 1.123 B | 3.14x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $10.13 B | +6.4% | 1.120 B | 3.12x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $10.55 B | +6.0% | 1.117 B | 3.09x | Consumer Discretionary core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $11.18 B | +5.3% | 1.114 B | 3.06x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $10.16 B | +4.8% | 1.111 B | 3.03x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $10.59 B | +4.5% | 1.109 B | 3.01x | Consumer Discretionary core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $11.02 B | +4.5% | 1.106 B | 2.98x | Consumer Discretionary core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $14.68 B | -3.0% | 1.140 B | 2.10x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $15.61 B | +17.1% | 1.137 B | 2.09x | Product launch ramp: Consumer Discretionary Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $14.19 B | +0.9% | 1.134 B | 2.07x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $14.88 B | +0.4% | 1.131 B | 2.05x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $15.56 B | +6.0% | 1.128 B | 2.03x | Consumer Discretionary core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $16.60 B | +6.3% | 1.125 B | 2.01x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $15.14 B | +6.7% | 1.123 B | 2.00x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $15.84 B | +6.4% | 1.120 B | 1.98x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $16.49 B | +6.0% | 1.117 B | 1.96x | Consumer Discretionary core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $17.47 B | +5.3% | 1.114 B | 1.94x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $15.88 B | +4.9% | 1.111 B | 1.93x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $16.54 B | +4.4% | 1.109 B | 1.91x | Consumer Discretionary core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $17.23 B | +4.5% | 1.106 B | 1.89x | Consumer Discretionary core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
 | :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 1,137 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 26 Weeks (2Q) | 1,134 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 39 Weeks (3Q) | 1,131 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 52 Weeks (1Y) | 1,129 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 104 Weeks (2Y) | 1,117 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
-| 156 Weeks (3Y) | 1,106 M | -1.0% | Management utilizes moderate share buybacks (~$5.6B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 13 Weeks (1Q) | 1,137 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 26 Weeks (2Q) | 1,134 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 39 Weeks (3Q) | 1,131 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 52 Weeks (1Y) | 1,129 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 104 Weeks (2Y) | 1,117 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
+| 156 Weeks (3Y) | 1,106 M | -1.0% | Management utilizes moderate share buybacks (~$8.7B capacity) to neutralize stock-based compensation (SBC) and incrementally reduce share count at ~1.0% per year while maintaining balance sheet flexibility. |
 
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $91.01 | $113.76 | $136.51 | 3.2x | +23.7% |
-| 52 Weeks (1Y) | $87.44 | $109.30 | $131.16 | 3.2x | +1.3% |
-| 104 Weeks (2Y) | $90.71 | $113.39 | $136.07 | 3.1x | +2.5% |
-| 156 Weeks (3Y) | $92.58 | $115.72 | $138.86 | 3.0x | +2.4% |
+| 13 Weeks | $90.50 | $113.13 | $135.76 | 2.1x | +23.8% |
+| 52 Weeks (1Y) | $86.73 | $108.41 | $130.09 | 2.0x | +1.1% |
+| 104 Weeks (2Y) | $89.94 | $112.42 | $134.90 | 2.0x | +2.4% |
+| 156 Weeks (3Y) | $91.76 | $114.70 | $137.64 | 1.9x | +2.3% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Melius Research Research Team | Melius Research | 2026-08-03 | $105.11 | $110.00 | +4.7% | BUY |
-| Peter Saleh | BTIG Research | 2026-07-31 | $105.85 | $115.00 | +8.6% | BUY |
-| Logan Reich | Royal Bank Of Canada | 2026-07-30 | $107.53 | $115.00 | +7.0% | BUY |
-| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $107.53 | $126.00 | +17.2% | BUY |
-| David Tarantino | Robert W. Baird | 2026-07-30 | $107.53 | $124.00 | +15.3% | BUY |
+| Melius Research Research Team | Melius Research | 2026-08-03 | $103.37 | $110.00 | +6.4% | BUY |
+| Peter Saleh | BTIG Research | 2026-07-31 | $105.25 | $115.00 | +9.3% | BUY |
+| Logan Reich | Royal Bank Of Canada | 2026-07-30 | $105.85 | $115.00 | +8.6% | BUY |
+| Deutsche Bank Aktiengesellschaft Research Team | Deutsche Bank Aktiengesellschaft | 2026-07-30 | $105.85 | $126.00 | +19.0% | BUY |
+| David Tarantino | Robert W. Baird | 2026-07-30 | $105.85 | $124.00 | +17.1% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $0.09 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
-| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.13 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
-| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.15 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
+| 2026-Q4 | Consumer Discretionary Next-Generation Commercial Product Rollout | $0.14 B | 2026-Q4 | Commercial availability of upgraded product architecture driving enterprise renewal velocity. | PENDING |
+| 2027-Q2 | Adjacent Market Geographic & Enterprise Channel Expansion | $0.20 B | 2027-Q2 | Penetration into international and tier-one corporate accounts broadening recurring revenue base. | PENDING |
+| 2027-Q4 | Platform Automation & Premium Tier Monetization | $0.23 B | 2027-Q4 | High-margin software subscription tier introduction expanding gross margin profile. | PENDING |
 
 ## Data Provenance & Verification Metadata
 
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($107.86) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($107.26) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

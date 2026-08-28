@@ -4,9 +4,9 @@
 - **Ticker:** WDC
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $476.14 per share
-- **Current Price:** $476.14 per share
-- **Target Exit Price:** $586.85 per share
+- **Benchmark Entry Price:** $462.00 per share
+- **Current Price:** $462.00 per share
+- **Target Exit Price:** $569.39 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -53,12 +53,13 @@ Western Digital Corporation maintains a capital-light liability profile with zer
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Western Digital Corporation operates zero defined benefit pension plans or retir... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Western Digital Corporation has zero legacy manufacturing, toxic chemical, or fe... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $4.52 B | Take-or-Pay: $1.36 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Western Digital Corporation operates zero defined benefit pension plans or retiree healthc... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Western Digital Corporation has zero legacy manufacturing, toxic chemical, or federal Supe... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $4.52 B | Take-or-Pay: $1.36 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Western Digital Corporation's top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-WDC currently trades at a Price-to-Sales (P/S) multiple of ~12.7x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~11.4x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
+WDC currently trades at a Price-to-Sales (P/S) multiple of ~12.3x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~11.1x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.8%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $3.26 B | +1.9% | 0.345 B | 12.70x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $3.53 B | +23.0% | 0.345 B | 12.60x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $3.27 B | +6.3% | 0.346 B | 12.49x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $3.51 B | +6.6% | 0.346 B | 12.39x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $3.74 B | +14.6% | 0.346 B | 12.28x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $4.07 B | +15.3% | 0.347 B | 12.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $3.80 B | +16.1% | 0.347 B | 12.07x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $4.04 B | +15.1% | 0.348 B | 11.96x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $4.26 B | +14.0% | 0.348 B | 11.85x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $4.57 B | +12.4% | 0.349 B | 11.75x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $4.23 B | +11.2% | 0.349 B | 11.64x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $4.46 B | +10.4% | 0.349 B | 11.54x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $4.71 B | +10.5% | 0.350 B | 11.43x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $3.26 B | +1.9% | 0.345 B | 12.33x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $3.53 B | +23.0% | 0.345 B | 12.22x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $3.27 B | +6.3% | 0.346 B | 12.12x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $3.51 B | +6.6% | 0.346 B | 12.02x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $3.74 B | +14.6% | 0.346 B | 11.91x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $4.07 B | +15.3% | 0.347 B | 11.81x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $3.80 B | +16.1% | 0.347 B | 11.71x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $4.04 B | +15.1% | 0.348 B | 11.61x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $4.26 B | +14.0% | 0.348 B | 11.50x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $4.57 B | +12.4% | 0.349 B | 11.40x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $4.23 B | +11.2% | 0.349 B | 11.30x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $4.46 B | +10.4% | 0.349 B | 11.19x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $4.71 B | +10.5% | 0.350 B | 11.09x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~12.7x on trailing tw
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $407.64 | $509.55 | $611.46 | 12.4x | +31.2% |
-| 52 Weeks (1Y) | $398.92 | $498.65 | $598.38 | 12.3x | +4.7% |
-| 104 Weeks (2Y) | $440.50 | $550.62 | $660.74 | 11.8x | +7.5% |
-| 156 Weeks (3Y) | $469.48 | $586.85 | $704.22 | 11.4x | +7.2% |
+| 13 Weeks | $395.52 | $494.40 | $593.28 | 12.1x | +31.1% |
+| 52 Weeks (1Y) | $387.22 | $484.03 | $580.84 | 11.9x | +4.8% |
+| 104 Weeks (2Y) | $427.48 | $534.35 | $641.22 | 11.5x | +7.5% |
+| 156 Weeks (3Y) | $455.51 | $569.39 | $683.27 | 11.1x | +7.2% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Asiya Merchant | Citigroup | 2026-08-07 | $451.52 | $740.00 | +63.9% | BUY |
-| Erik Woodring | Morgan Stanley | 2026-08-06 | $460.93 | $676.00 | +46.7% | OVERWEIGHT |
-| Tristan Gerra | Robert W. Baird | 2026-08-06 | $468.85 | $630.00 | +34.4% | BUY |
-| Krish Sankar | TD Cowen | 2026-08-06 | $456.43 | $540.00 | +18.3% | BUY |
-| Vijay Rakesh | Mizuho | 2026-08-06 | $456.44 | $590.00 | +29.3% | BUY |
+| Asiya Merchant | Citigroup | 2026-08-07 | $434.30 | $740.00 | +70.4% | BUY |
+| Erik Woodring | Morgan Stanley | 2026-08-06 | $451.52 | $676.00 | +49.7% | OVERWEIGHT |
+| Tristan Gerra | Robert W. Baird | 2026-08-06 | $451.52 | $630.00 | +39.5% | BUY |
+| Krish Sankar | TD Cowen | 2026-08-06 | $451.52 | $540.00 | +19.6% | BUY |
+| Vijay Rakesh | Mizuho | 2026-08-06 | $451.52 | $590.00 | +30.7% | BUY |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ WDC currently trades at a Price-to-Sales (P/S) multiple of ~12.7x on trailing tw
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($476.14) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($462.00) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

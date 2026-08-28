@@ -917,6 +917,160 @@ COMPETITIVE_MOATS = {
         "400 billion daily transactions across more than 150 globally distributed data centers, Zscaler securely connects users directly to applications "
         "without placing them on the corporate network. Because enterprise customers face severe security disruption when migrating away from core "
         "Zero Trust gateways, Zscaler achieves net revenue retention rates exceeding 115% and gross margins above 80%."
+    ),
+    "LLY": (
+        "Eli Lilly possesses a wide biopharmaceutical economic moat protected by formidable intellectual property, massive manufacturing capital "
+        "requirements for complex peptide synthesis, and unmatched commercial execution in cardiometabolic medicine. Clinical efficacy data for "
+        "tirzepatide (Mounjaro/Zepbound) demonstrates superior weight loss and glycemic control compared to earlier-generation GLP-1 therapies, creating "
+        "immense physician preference and payer formulary integration. The company's deep clinical pipeline and extensive biologic production scale "
+        "provide durable competitive insulation against generic erosion."
+    ),
+    "TSM": (
+        "TSMC commands an extraordinary wide economic moat anchored by immense technological leadership, insurmountable manufacturing scale, and billions "
+        "in annual capital expenditures ($30B+ per year) that create insurmountable barriers to entry. TSMC manufactures more than 90% of the world's "
+        "advanced computing and AI logic chips, benefiting from unmatched process yield optimization, steep learning curve advantages, and deep "
+        "co-engineering partnerships with every major hyperscaler and chip designer. Customers face prohibitive switching costs and yield degradation "
+        "risks when attempting to migrate leading-edge wafer fabrication to competing foundries."
+    ),
+    "ORCL": (
+        "Oracle's economic moat is fortified by profound enterprise switching costs and mission-critical database lock-in. Global Fortune 500 "
+        "corporations, financial institutions, and government agencies run core transaction processing and enterprise resource planning on Oracle "
+        "Database engines where migration risks system disruption and catastrophic downtime. OCI reinforces this moat through proprietary RDMA cluster "
+        "networking architectures and multi-cloud database partnerships, maintaining recurring enterprise cash flows and gross margins above 70%."
+    ),
+    "UBER": (
+        "Uber commands a powerful two-sided local network effect across global metropolitan markets, pairing driver supply density with massive consumer "
+        "demand to minimize rider wait times and maximize driver utilization. High platform liquidity creates high customer conversion and allows Uber to "
+        "cross-sell food delivery to rideshare users at near-zero customer acquisition cost. Furthermore, Uber's membership program (Uber One) drives higher "
+        "frequency, lower churn, and high-margin advertising monetization that subscale regional competitors cannot match."
+    ),
+    "ANET": (
+        "Arista possesses an enduring economic moat rooted in its proprietary EOS software architecture, merchant silicon independence, and deep "
+        "customer switching costs within hyperscale cloud and enterprise data centers. Network engineers and cloud architects standardize on EOS for "
+        "its single-binary programmability, self-healing modularity, and real-time state telemetry, which eliminates network downtime. Arista's "
+        "leading-edge Ethernet switching performance for AI clusters provides a superior, open alternative to proprietary InfiniBand fabrics, protecting "
+        "gross margins above 60% and generating industry-leading ROIC."
+    ),
+    "GE": (
+        "GE Aerospace commands an exceptional economic moat built on an installed base of more than 44,000 commercial engines and 26,000 military "
+        "aircraft engines, immense FAA certification barriers, and multi-decade aftermarket service agreements. Developing and certifying a commercial "
+        "jet engine requires billions in R&D and over a decade of regulatory testing, creating near-total duopoly market dynamics. Airlines face "
+        "prohibitive aircraft modification costs to switch engine suppliers, guaranteeing GE Aerospace highly recurring, high-margin aftermarket "
+        "cash flow spanning 30-year engine lifecycles."
+    ),
+    "ETN": (
+        "Eaton holds a durable economic moat powered by high engineering switching costs, extensive regulatory safety certifications (UL, IEEE, NEC), "
+        "and deep electrical distribution contractor networks. In mission-critical hyperscale data centers and utility substations, electrical "
+        "switchgear and power management systems must operate flawlessly to prevent catastrophic power outages and equipment damage. Eaton's proprietary "
+        "power architectures and integrated software controls create deep customer entrenchment, supporting pricing power and operating margins above 23%."
+    ),
+    "APH": (
+        "Amphenol's economic moat stems from deep engineering customer co-design, high customization, and substantial switching costs across complex "
+        "electronics. High-speed interconnects in AI servers and aerospace systems represent a low percentage of total system cost but are utterly "
+        "critical to signal integrity, thermal performance, and system reliability. Amphenol's decentralized engineering culture enables rapid "
+        "time-to-market and high customer intimacy, generating consistent free cash flow and sustaining return on invested capital above 20%."
+    ),
+    "TTD": (
+        "The Trade Desk possesses a robust economic moat driven by strong data network effects, independent buy-side alignment, and massive platform "
+        "scale processing over one trillion ad queries daily. Because The Trade Desk does not own digital media inventory (unlike closed gardens "
+        "Google and Meta), major media publishers and streaming networks (Disney, Netflix, Paramount) willingly share first-party data and CTV "
+        "inventory. This independence attracts top global brands, creating high client retention consistently exceeding 95% and operating margins above 35%."
+    ),
+    "NET": (
+        "Cloudflare commands a wide network effect and scale moat built on its unified global software-defined network architecture, which runs every "
+        "service on every server in every data center worldwide. This architecture allows Cloudflare to deploy software updates globally in seconds and "
+        "absorb massive cyberattacks at near-zero marginal cost. Because Cloudflare proxies a significant fraction of global web traffic, it continuously "
+        "refines threat intelligence, creating high switching costs for enterprise customers and sustaining gross margins above 75%."
+    ),
+    "MDB": (
+        "MongoDB's economic moat is reinforced by deep developer mindshare, high application switching costs, and the viral adoption of its flexible "
+        "document data model. Developers globally learn and build applications natively on MongoDB due to its intuitive schema flexibility and developer "
+        "ergonomics. Once an enterprise deploys an application backend on MongoDB Atlas, migrating database architectures involves severe software "
+        "recoding, query translation risks, and potential application downtime, securing high net revenue retention."
+    ),
+    "SNOW": (
+        "Snowflake commands a strong economic moat powered by high enterprise switching costs, cross-cloud interoperability, and proprietary "
+        "multi-party data sharing network effects. Enterprises consolidate mission-critical financial, customer, and operational data into Snowflake "
+        "to eliminate data silos. Snowflake's unique data sharing capabilities allow companies to query third-party vendor datasets directly without "
+        "ETL pipelines, creating a data network effect that locks in enterprise clients and drives net revenue retention above 120%."
+    ),
+    "VRT": (
+        "Vertiv holds an entrenched economic moat founded on deep thermal and power engineering expertise, proprietary liquid cooling IP, and "
+        "global field service support networks. As AI GPUs generate unprecedented thermal density that air cooling cannot dissipate, data center "
+        "operators rely exclusively on trusted, field-tested thermal infrastructure to protect multi-million dollar computing clusters. Vertiv's "
+        "co-engineering partnerships with leading AI chipmakers and global service technicians create high switching costs and pricing power."
+    ),
+    "BSX": (
+        "Boston Scientific's economic moat is anchored by extensive clinical IP, stringent regulatory clinical trial barriers (FDA PMA approvals), "
+        "and high physician training switching costs. Electrophysiologists and interventional cardiologists undergo specialized clinical training on "
+        "Boston Scientific's proprietary catheter systems and delivery consoles, creating high procedural comfort and hospital protocol entrenchment. "
+        "The revolutionary clinical efficacy of FARAPULSE PFA provides multi-year competitive insulation against legacy thermal ablation technologies."
+    ),
+    "SYK": (
+        "Stryker maintains a formidable economic moat built on robotic platform lock-in (Mako), hospital procurement entrenchment, and surgeon "
+        "switching costs. When a hospital system invests hundreds of thousands of dollars in a Mako robotic console, orthopedic surgeons exclusively "
+        "utilize Stryker's proprietary implants and cutting blades for every procedure. This razor-and-blade model generates high-margin, recurring "
+        "implant sales and reinforces Stryker's gross margins above 65%."
+    ),
+    "DHR": (
+        "Danaher commands an exceptional wide economic moat derived from high regulatory switching costs and mission-critical bioprocessing consumable "
+        "specification. In biopharmaceutical manufacturing, Cytiva's chromatography resins, single-use bioreactors, and filtration membranes are "
+        "explicitly specified in FDA biologic drug approval master files. Drug manufacturers cannot switch consumable suppliers without undergoing "
+        "expensive, multi-year regulatory revalidation, locking in Danaher's recurring cash flow."
+    ),
+    "TMO": (
+        "Thermo Fisher's economic moat is built on unmatched product breadth, global laboratory distribution scale, and mission-critical enterprise "
+        "supply agreements. Pharmaceutical research facilities and clinical labs rely on Thermo Fisher's integrated platform to source thousands of daily "
+        "supplies and manage end-to-end clinical trial development through PPD. This comprehensive ecosystem creates massive procurement switching costs "
+        "and pricing power, driving consistent free cash flow conversion."
+    ),
+    "ABT": (
+        "Abbott holds a wide economic moat founded on medical device intellectual property, massive manufacturing economies of scale, and entrenched "
+        "global clinical distribution channels. FreeStyle Libre commands category leadership in CGM due to its low out-of-pocket patient cost, superior "
+        "sensor accuracy, and broad pharmacy insurance reimbursement. High regulatory approval thresholds and patent protections insulate Abbott's "
+        "medical device and diagnostic platforms from competitive displacement."
+    ),
+    "ABBV": (
+        "AbbVie's economic moat is secured by robust patent portfolios, proven clinical superiority in immunology, and unmatched commercial salesforce "
+        "execution. Skyrizi and Rinvoq have demonstrated superior clinical clearance rates in head-to-head trials against competing biologics, securing "
+        "preferred formulary placement with major pharmacy benefit managers (PBMs). Furthermore, the Botox aesthetic and therapeutic franchises possess "
+        "strong consumer brand equity and provider loyalty that generic biosimilars cannot erode."
+    ),
+    "SPGI": (
+        "S&P Global commands one of the widest and most impenetrable economic moats in global finance, functioning as a federally registered Nationally "
+        "Recognized Statistical Rating Organization (NRSRO) within an entrenched credit ratings duopoly alongside Moody's. Institutional bond mandates "
+        "legally require independent ratings from S&P or Moody's for corporate debt to be eligible for pension fund purchase, granting S&P unmatched "
+        "pricing power. Simultaneously, the S&P 500 index represents the global standard for equity benchmarking, generating perpetual asset-linked royalty streams."
+    ),
+    "BLK": (
+        "BlackRock possesses an extraordinary scale and technology moat anchored by its iShares ETF liquidity and Aladdin software integration. In "
+        "exchange-traded funds, iShares benefits from tight bid-ask spreads, immense trading volume, and low expense ratios that create self-reinforcing "
+        "liquidity flywheels. Meanwhile, Aladdin manages portfolio risk for hundreds of global financial institutions managing tens of trillions in assets, "
+        "embedding massive software switching costs and providing BlackRock with durable recurring tech revenue."
+    ),
+    "MS": (
+        "Morgan Stanley's economic moat is built on high client wealth management switching costs, elite brand prestige in institutional dealmaking, "
+        "and extensive financial advisor networks. Wealth management clients exhibit high advisor loyalty and face significant friction when transferring "
+        "customized estate, tax, and lending relationships. This creates predictable, recurring fee streams with high returns on tangible equity that "
+        "insulate Morgan Stanley from cyclical investment banking volatility."
+    ),
+    "DE": (
+        "Deere & Company commands a formidable economic moat protected by an unmatched global independent dealer network, iconic brand equity, and "
+        "proprietary precision agricultural software. Farmers rely on local Deere dealers for rapid same-day field repairs during critical, time-sensitive "
+        "planting and harvest windows. Furthermore, the John Deere Operations Center manages proprietary farm agronomic data across millions of acres, "
+        "creating immense software and hardware switching costs that competitors cannot match."
+    ),
+    "UNP": (
+        "Union Pacific operates a classic natural monopoly / duopoly moat with virtually insurmountable barriers to entry. Replicating a 32,000-mile "
+        "contiguous rail network with exclusive rights-of-way, heavy tracks, rail yards, and ocean port access is economically and geographically "
+        "impossible. Railroads offer an irreplaceable four-to-one fuel efficiency advantage over long-haul trucking for bulk freight, providing Union "
+        "Pacific with durable pricing power, high operating margins, and defensive cash flows."
+    ),
+    "LMT": (
+        "Lockheed Martin possesses a wide economic moat rooted in deep government defense relationships, classified security clearances, immense R&D "
+        "scale, and multi-decade defense program lifecycles. The F-35 platform is the undisputed standard fighter jet for the US military and NATO "
+        "allies; developing a competing 5th-generation stealth aircraft is financially and technologically out of reach for new entrants. These long-term "
+        "defense contracts ensure high revenue visibility, protected cost-plus and fixed-price margins, and multi-decade sustainment cash flows."
     )
 }
 

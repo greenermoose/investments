@@ -4,9 +4,9 @@
 - **Ticker:** ROP
 - **Exchange:** NASDAQ
 - **Entry Date:** 2026-08-17
-- **Benchmark Entry Price:** $404.89 per share
-- **Current Price:** $404.89 per share
-- **Target Exit Price:** $501.13 per share
+- **Benchmark Entry Price:** $422.69 per share
+- **Current Price:** $422.69 per share
+- **Target Exit Price:** $524.12 per share
 - **Expected Holding Period:** 3 to 5 Years
 - **Conviction Score:** 8.2 / 10.0
 - **Rating:** HOLD
@@ -19,7 +19,7 @@ Roper Technologies, Inc. is a diversified technology company operating a collect
 Roper commands exceptional economic moats within defensible, mission-critical niche vertical markets, resulting in high recurring software revenues (>75%), high gross margins, and minimal customer churn. Management executes a disciplined compounding model, reinvesting strong operational free cash flow into acquisitions of high-margin, asset-light vertical software businesses with market-leading positions.
 
 ## Total Addressable Market & Market Share
-Roper Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $119.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.7% market share. Over our 3-year investment horizon, we model market share evolving to 6.7%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
+Roper Technologies, Inc. addresses an estimated Total Addressable Market (TAM) of $119.0B across its primary Information Technology domains, expanding at a ~12.0% CAGR. The company currently captures an estimated 6.6% market share. Over our 3-year investment horizon, we model market share evolving to 6.6%, supported by product roadmap execution and defensible moat barriers against competitor encroachment.
 
 ## Competitive Moat Analysis
 Roper Technologies commands a defensible portfolio moat comprising niche, asset-light vertical software and technology businesses. Roper acquires market-leading vertical software providers (e.g., Deltek, Vertafore, CliniSys) that operate as mission-critical systems in niche domains like government contracting, insurance underwriting, and healthcare laboratories. Over 75% recurring software revenues and minimal customer churn deliver gross margins above 65% and high ROIC.
@@ -28,13 +28,13 @@ Roper Technologies commands a defensible portfolio moat comprising niche, asset-
 Roper Technologies, Inc.'s commercial expansion is driven by distinct product and service initiatives across key milestone windows. - **Information Technology Next-Generation Commercial Product Rollout** (2026-Q4): Expected top-line impact of ~$0.05B inflecting 2026-Q4 revenue. Commercial availability of upgraded product architecture driving enterprise renewal velocity. - **Adjacent Market Geographic & Enterprise Channel Expansion** (2027-Q2): Expected top-line impact of ~$0.07B inflecting 2027-Q2 revenue. Penetration into international and tier-one corporate accounts broadening recurring revenue base. - **Platform Automation & Premium Tier Monetization** (2027-Q4): Expected top-line impact of ~$0.08B inflecting 2027-Q4 revenue. High-margin software subscription tier introduction expanding gross margin profile.
 
 ## Capital Needs & Strategy
-Roper Technologies, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $1.98B in cash & equivalents against $1.59B in total debt (net balance: $+0.39B). Anticipated annual CapEx and operational capital requirements of ~$0.40B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
+Roper Technologies, Inc. operates under a reinvestment for growth capital strategy. The company does not pay a cash dividend, directing 100% of operational cash flow into organic growth initiatives and technology R&D. Diluted share count expands at ~0.5% per year due to employee stock compensation. Balance sheet liquidity is supported by $1.98B in cash & equivalents against $1.58B in total debt (net balance: $+0.40B). Anticipated annual CapEx and operational capital requirements of ~$0.40B are 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. Independent audit opinions confirm zero going concern warnings, with operational liquidity runway exceeding 36 months.
 
 | Capital Dimension | Policy / Status | Authorized / Projected ($B) | Pace / Annual Yield | Description & Strategy |
 | :--- | :--- | :--- | :--- | :--- |
 | Dividends Declared & Paid | NONE | $0.00 / share | 0.00% Yield | No cash dividend declared or paid. 100% of operational cash flow is retained for growth reinvestment and balance sheet liquidity. |
 | Share Buybacks & Dilution | INACTIVE | $0.0 B | +0.5% / yr | Share count expands modestly at ~0.5% annually due to employee equity compensation and growth reinvestment. Cash generation is currently prioritized toward R&D and platform expansion rather than large-scale share retirement. |
-| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $1.59 B Debt vs $1.98 B Cash | Net: $+0.39 B | Conservative debt profile of $1.59B debt vs $1.98B cash & equivalents (Net balance: $+0.39B). |
+| Debt & Equity Issuance | TERM_LOANS_AND_REVOLVER | $1.58 B Debt vs $1.98 B Cash | Net: $+0.40 B | Conservative debt profile of $1.58B debt vs $1.98B cash & equivalents (Net balance: $+0.40B). |
 | Capital Needs & Runway | CAPEX_AND_RD | ~$0.40 B / yr CapEx | 36 Months Runway | 100% self-funded through operational cash flow generation and extensive cash & marketable securities reserves. |
 | Going Concern & Solvency | CLEAN | Zero Going Concern Doubt | Solvency Confirmed | Clean audit opinion. Independent auditors and management confirm zero going concern doubt, backed by robust operational cash flows and ample liquidity reserves. |
 
@@ -53,12 +53,13 @@ Roper Technologies, Inc. maintains a capital-light liability profile with zero d
 
 | Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B) | ~$0.00 B / yr | Roper Technologies, Inc. operates zero defined benefit pension plans or retiree ... |
-| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Roper Technologies, Inc. has zero legacy manufacturing, toxic chemical, or feder... |
-| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standa... |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $2.78 B | Take-or-Pay: $0.83 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and ... |
+| Defined Benefit Pension & OPEB | NONE | PBO: None (401k Only) (Gap: $0.00 B (Fully Funded)) | ~$0.00 B / yr | Roper Technologies, Inc. operates zero defined benefit pension plans or retiree healthcare... |
+| Environmental Remediation & PFAS | Risk: MINIMAL | Accrued: $0.00 B (0 Sites) | ~$0.00 B / yr | Roper Technologies, Inc. has zero legacy manufacturing, toxic chemical, or federal Superfu... |
+| Product Liability & Mass Torts | Risk: MINIMAL | Scheduled: $0.10 B | ~$0.02 B / yr | Routine commercial litigation, intellectual property patent disputes, and standard employm... |
+| Purchase Commitments & Guarantees | Active Contracts | Total: $2.77 B | Take-or-Pay: $0.83 B | Unconditional cloud computing infrastructure, colocation datacenter leases, and software l... |
 
 **Equity Cash Flow Seniority Impact:** Negligible risk: Zero legacy worker or environmental obligations. Operating cash flow directly benefits common equity shareholders via growth reinvestment and share repurchases.
+
 
 ## Explicit Invalidation Criteria (Exit Triggers)
 If any of the following occur, the thesis is broken and the position will be exited:
@@ -71,24 +72,24 @@ If any of the following occur, the thesis is broken and the position will be exi
 Roper Technologies, Inc.'s top-line revenue trajectory over the 13-quarter forecast horizon is modeled at an annualized growth rate of +12.0%. Growth is supported by structural demand dynamics in Information Technology, enterprise contract expansion, and consistent operational execution. We project quarterly revenue scaling from the current baseline through Q12 (2029-Q3), reflecting core product adoption, capacity expansion, and platform monetization across primary end-markets.
 
 ## Valuation & P/S Multiple Narrative
-ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.6x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 9.9%, fully justifying our HOLD rating.
+ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.4x on trailing twelve-month revenue. Over the 3-year investment horizon, we model multiple evolution toward ~4.9x. This multiple trajectory reflects sustainable gross and operating margin profiles, free cash flow conversion, and market share positioning. When synthesized through our deterministic Return Engine, the resulting risk-adjusted annualized return profile is 10.0%, fully justifying our HOLD rating.
 
 ## 13-Quarter Revenue Forecast Matrix (3-Year Path)
 | Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Primary Growth Driver |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $2.00 B | +1.8% | 0.101 B | 5.15x | Current operational baseline and contract fulfillment |
-| 2026-Q4 | 2026-12-31 | $2.17 B | +23.3% | 0.101 B | 5.10x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
-| 2027-Q1 | 2027-03-31 | $2.01 B | +6.5% | 0.101 B | 5.06x | Post-holiday seasonal normalization and channel inventory reset |
-| 2027-Q2 | 2027-06-30 | $2.16 B | +6.7% | 0.101 B | 5.02x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
-| 2027-Q3 | 2027-09-30 | $2.30 B | +14.9% | 0.101 B | 4.97x | Information Technology core demand expansion and operational execution |
-| 2027-Q4 | 2027-12-31 | $2.50 B | +15.4% | 0.102 B | 4.93x | Product launch ramp: Platform Automation & Premium Tier Monetization |
-| 2028-Q1 | 2028-03-31 | $2.34 B | +16.2% | 0.102 B | 4.89x | Post-holiday seasonal normalization and channel inventory reset |
-| 2028-Q2 | 2028-06-30 | $2.49 B | +15.1% | 0.102 B | 4.85x | Information Technology core demand expansion and operational execution |
-| 2028-Q3 | 2028-09-30 | $2.62 B | +14.0% | 0.102 B | 4.80x | Information Technology core demand expansion and operational execution |
-| 2028-Q4 | 2028-12-31 | $2.81 B | +12.5% | 0.102 B | 4.76x | Year-end commercial procurement and budget deployment |
-| 2029-Q1 | 2029-03-31 | $2.60 B | +11.1% | 0.102 B | 4.72x | Post-holiday seasonal normalization and channel inventory reset |
-| 2029-Q2 | 2029-06-30 | $2.74 B | +10.2% | 0.102 B | 4.67x | Information Technology core demand expansion and operational execution |
-| 2029-Q3 (Q12) | 2029-09-30 | $2.89 B | +10.5% | 0.102 B | 4.63x | Information Technology core demand expansion and operational execution |
+| 2026-Q3 (Current) | 2026-09-30 | $2.00 B | +1.8% | 0.101 B | 5.40x | Current operational baseline and contract fulfillment |
+| 2026-Q4 | 2026-12-31 | $2.16 B | +23.4% | 0.101 B | 5.35x | Product launch ramp: Information Technology Next-Generation Commercial Product Rollout |
+| 2027-Q1 | 2027-03-31 | $2.00 B | +6.5% | 0.101 B | 5.31x | Post-holiday seasonal normalization and channel inventory reset |
+| 2027-Q2 | 2027-06-30 | $2.15 B | +6.2% | 0.101 B | 5.26x | Product launch ramp: Adjacent Market Geographic & Enterprise Channel Expansion |
+| 2027-Q3 | 2027-09-30 | $2.29 B | +14.4% | 0.101 B | 5.22x | Information Technology core demand expansion and operational execution |
+| 2027-Q4 | 2027-12-31 | $2.49 B | +15.4% | 0.102 B | 5.17x | Product launch ramp: Platform Automation & Premium Tier Monetization |
+| 2028-Q1 | 2028-03-31 | $2.33 B | +16.3% | 0.102 B | 5.13x | Post-holiday seasonal normalization and channel inventory reset |
+| 2028-Q2 | 2028-06-30 | $2.48 B | +15.1% | 0.102 B | 5.08x | Information Technology core demand expansion and operational execution |
+| 2028-Q3 | 2028-09-30 | $2.61 B | +14.0% | 0.102 B | 5.04x | Information Technology core demand expansion and operational execution |
+| 2028-Q4 | 2028-12-31 | $2.80 B | +12.5% | 0.102 B | 4.99x | Year-end commercial procurement and budget deployment |
+| 2029-Q1 | 2029-03-31 | $2.59 B | +11.1% | 0.102 B | 4.95x | Post-holiday seasonal normalization and channel inventory reset |
+| 2029-Q2 | 2029-06-30 | $2.73 B | +10.2% | 0.102 B | 4.90x | Information Technology core demand expansion and operational execution |
+| 2029-Q3 (Q12) | 2029-09-30 | $2.88 B | +10.4% | 0.102 B | 4.86x | Information Technology core demand expansion and operational execution |
 
 ## Shares Outstanding Projections (6 Horizons)
 | Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Rationale & Assumptions |
@@ -103,19 +104,19 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twe
 ## Price Target Ranges & Valuation Scenarios (4 Horizons)
 | Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $346.51 | $433.14 | $519.77 | 5.0x | +31.0% |
-| 52 Weeks (1Y) | $340.81 | $426.01 | $511.21 | 5.0x | +5.2% |
-| 104 Weeks (2Y) | $374.59 | $468.24 | $561.89 | 4.8x | +7.5% |
-| 156 Weeks (3Y) | $400.90 | $501.13 | $601.36 | 4.6x | +7.4% |
+| 13 Weeks | $362.02 | $452.53 | $543.04 | 5.3x | +31.4% |
+| 52 Weeks (1Y) | $355.58 | $444.48 | $533.38 | 5.2x | +5.2% |
+| 104 Weeks (2Y) | $391.74 | $489.67 | $587.60 | 5.0x | +7.6% |
+| 156 Weeks (3Y) | $419.30 | $524.12 | $628.94 | 4.9x | +7.4% |
 
 ## Analyst Price Targets & Wall Street Coverage
 | Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| John Eade | Argus | 2026-08-06 | $394.53 | $450.00 | +14.1% | HOLD |
-| Chigusa Katoku | JPMorgan Chase & Co. | 2026-07-29 | $405.00 | $415.00 | +2.5% | UNDERPERFORM |
-| Deane Dray | Royal Bank Of Canada | 2026-07-24 | $368.50 | $417.00 | +13.2% | BUY |
-| Jon Vruwink | Robert W. Baird | 2026-07-24 | $360.63 | $480.00 | +33.1% | BUY |
-| Clarke Jeffries | Piper Sandler | 2026-07-24 | $355.12 | $526.00 | +48.1% | OVERWEIGHT |
+| John Eade | Argus | 2026-08-06 | $397.08 | $450.00 | +13.3% | HOLD |
+| Chigusa Katoku | JPMorgan Chase & Co. | 2026-07-29 | $408.07 | $415.00 | +1.7% | UNDERPERFORM |
+| Deane Dray | Royal Bank Of Canada | 2026-07-24 | $367.34 | $417.00 | +13.5% | BUY |
+| Jon Vruwink | Robert W. Baird | 2026-07-24 | $367.34 | $480.00 | +30.7% | BUY |
+| Clarke Jeffries | Piper Sandler | 2026-07-24 | $367.34 | $526.00 | +43.2% | OVERWEIGHT |
 
 ## Anticipated Catalyst Timeline
 | Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
@@ -129,6 +130,6 @@ ROP currently trades at a Price-to-Sales (P/S) multiple of ~5.1x on trailing twe
 | Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-17 | VERIFIED_PRIMARY |
-| Market Quote & 52W Range ($404.89) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
+| Market Quote & 52W Range ($422.69) | TIER_2_FINANCIAL_AGGREGATOR | Direct Exchange / Yahoo Finance API | deterministic_script (`fetch_market_prices.py`) | 2026-08-17 | VERIFIED_SECONDARY |
 | Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-17 | VERIFIED_PRIMARY |
 | Qualitative Moat & Thesis Narrative | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent Analytical Reasoning (Context: System Clock 2026-08-17) | agent_parametric_inference | 2026-08-17 | VERIFIED_QUALITATIVE |

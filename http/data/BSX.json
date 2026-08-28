@@ -1,0 +1,97 @@
+{
+  "symbol": "BSX",
+  "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
+  "last_updated": "2026-08-28T02:55:54.173089+00:00",
+  "filings": [
+    {
+      "type": "10-Q",
+      "filing_date": "2026-08-03",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
+      "data": {
+        "shares_outstanding": 1486355179,
+        "revenue": 10646000000,
+        "balance_sheet": {
+          "total_assets": 45216000000,
+          "total_liabilities": 45216000000,
+          "total_shareholders_equity": 24930000000,
+          "total_debt": 10915000000,
+          "short_term_debt": 1709000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 539000000,
+          "cash_primary": 539000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2026-05-01",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
+      "data": {
+        "shares_outstanding": 1483885456,
+        "revenue": 5203000000,
+        "balance_sheet": {
+          "total_assets": 44351000000,
+          "total_liabilities": 44351000000,
+          "total_shareholders_equity": 25864000000,
+          "total_debt": 10988000000,
+          "short_term_debt": 41000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1453000000,
+          "cash_primary": 1453000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-K",
+      "filing_date": "2026-02-17",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
+      "data": {
+        "shares_outstanding": 1482442039,
+        "revenue": 20074000000,
+        "balance_sheet": {
+          "total_assets": 43673000000,
+          "total_liabilities": 43673000000,
+          "total_shareholders_equity": 24233000000,
+          "total_debt": 11137000000,
+          "short_term_debt": 299000000,
+          "long_term_debt": 122000000,
+          "cash_and_cash_equivalents": 1965000000,
+          "cash_primary": 1965000000,
+          "marketable_securities_current": 0
+        }
+      }
+    },
+    {
+      "type": "10-Q",
+      "filing_date": "2025-11-03",
+      "period_start": "2025-01-01",
+      "period_end": "2025-09-30",
+      "filing_url": "https://www.sec.gov/edgar/browse/?CIK=885725",
+      "data": {
+        "shares_outstanding": 1481751634,
+        "revenue": 14788000000,
+        "balance_sheet": {
+          "total_assets": 42707000000,
+          "total_liabilities": 42707000000,
+          "total_shareholders_equity": 23394000000,
+          "total_debt": 11117000000,
+          "short_term_debt": 483000000,
+          "long_term_debt": 0,
+          "cash_and_cash_equivalents": 1275000000,
+          "cash_primary": 1275000000,
+          "marketable_securities_current": 0
+        }
+      }
+    }
+  ],
+  "name": "Boston Scientific Corporation",
+  "investor_relations_url": "https://investors.bostonscientific.com/"
+}

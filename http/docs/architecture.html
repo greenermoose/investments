@@ -15,19 +15,20 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
+      <a href="../guide.html" class="docs-nav-link">How to Use This Repo</a>
+      <a href="architecture.html" class="docs-nav-link active">System Architecture</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
-      <a href="../stocks.html" class="docs-nav-link">Public Equities</a>
-      <a href="sources.html" class="docs-nav-link">Data Sources &amp; Provenance</a>
+      <a href="../stocks.html" class="docs-nav-link">Equity Explorer</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation &amp; Ratings</a>
+      <a href="sources.html" class="docs-nav-link">Sources &amp; Verification</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Strategy &amp; Mechanics</div>
-      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
-      <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
-      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
-      <a href="workflow.html" class="docs-nav-link">System Workflows</a>
+      <a href="strategies.html" class="docs-nav-link">Investment Mandate</a>
+      <a href="workflow.html" class="docs-nav-link">Weekly Workflow</a>
+      <a href="options.html" class="docs-nav-link">Options &amp; Order Pricing</a>
     </div>
   </nav>
 
@@ -58,7 +59,7 @@
       <div class="docs-card">
         <h4>3. Investment Thesis Agent</h4>
         <p><strong>Input:</strong> Tracked universe of equities backed by Tier 1 SEC EDGAR filings (10-K/10-Q) and earnings releases.</p>
-        <p><strong>Responsibility:</strong> Authorizes 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target ranges), constructs Revenue &amp; P/S narratives, and assigns <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
+        <p><strong>Responsibility:</strong> Authors the researched assumptions behind 3-year forecasts, constructs Revenue &amp; P/S narratives, and supplies the qualitative judgment required for <code>BUY</code>, <code>HOLD</code>, <code>SELL</code>, or <code>AVOID</code> ratings.</p>
       </div>
 
       <div class="docs-card">
@@ -82,6 +83,51 @@
       </div>
     </div>
 
+    <h2>The Research Store Is the System Boundary</h2>
+    <p>The canonical public record for a company is <code>context/data/equities/&lt;TICKER&gt;.json</code>. Observed facts, source provenance, agent-authored qualitative judgments, and forward-looking parameters live there under the schema. Thesis Markdown, web JSON, valuation outputs, and return outputs are derived artifacts.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Work type</th>
+          <th>Who performs it</th>
+          <th>Rule</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Source research and narrative judgment</td>
+          <td>Specialized agent</td>
+          <td>Write sourced facts and bespoke reasoning into the research store.</td>
+        </tr>
+        <tr>
+          <td>Forecast and valuation parameters</td>
+          <td>Specialized agent</td>
+          <td>Author explicit assumptions; do not hide them in rendered prose.</td>
+        </tr>
+        <tr>
+          <td>Math, bulk checks, and schema validation</td>
+          <td>Deterministic script</td>
+          <td>Compute from stored inputs and fail when a required input is missing.</td>
+        </tr>
+        <tr>
+          <td>Thesis and web rendering</td>
+          <td>Deterministic script</td>
+          <td>Render only stored prose and computed values; never invent a fallback.</td>
+        </tr>
+        <tr>
+          <td>Portfolio orders and rationale</td>
+          <td>Lead Portfolio Manager Agent</td>
+          <td>Author each decision in a private order set before validation and rendering.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout important">
+      <div class="callout-title">Onboarding is not research</div>
+      <p><code>scripts/onboard_company.py</code> can register a symbol and ingest available public facts, but a newly onboarded equity remains <code>AWAITING_RESEARCH</code>. It receives no valuation, target ROI, or rating until agents author the required research and deterministic engines validate the result.</p>
+    </div>
+
     <h2>Data Isolation &amp; Privacy Model</h2>
     <p>The system enforces strict data privacy through isolated directory tiers:</p>
     <ul>
@@ -97,7 +143,7 @@
 
     <div class="callout note">
       <div class="callout-title">Deterministic Context Construction</div>
-      <p>Agents are fed targeted, structured Markdown context files rather than hundreds of pages of raw data, maximizing token efficiency while maintaining perfect reasoning accuracy.</p>
+      <p>Agents read targeted structured records, schemas, prompts, and derived dossiers instead of relying on conversational memory alone. This makes assumptions inspectable and calculations reproducible, while source verification and human review remain necessary.</p>
     </div>
   </main>
 </body>

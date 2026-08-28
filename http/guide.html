@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Guide &amp; Operational Cadences - Agentic Investment Advisor</title>
+  <title>How to Use This Repository - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
@@ -15,560 +15,424 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="index.html" class="docs-nav-link">System Overview</a>
-      <a href="guide.html" class="docs-nav-link active">User Guide &amp; Cadences</a>
+      <a href="guide.html" class="docs-nav-link active">How to Use This Repo</a>
+      <a href="docs/architecture.html" class="docs-nav-link">System Architecture</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
-      <a href="stocks.html" class="docs-nav-link">Public Equities</a>
-      <a href="docs/sources.html" class="docs-nav-link">Data Sources &amp; Provenance</a>
+      <a href="stocks.html" class="docs-nav-link">Equity Explorer</a>
+      <a href="docs/valuation.html" class="docs-nav-link">Valuation &amp; Ratings</a>
+      <a href="docs/sources.html" class="docs-nav-link">Sources &amp; Verification</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Strategy &amp; Mechanics</div>
-      <a href="docs/strategies.html" class="docs-nav-link">Investment Strategy</a>
-      <a href="docs/options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
-      <a href="docs/valuation.html" class="docs-nav-link">Valuation Framework</a>
-      <a href="docs/workflow.html" class="docs-nav-link">System Workflows</a>
+      <a href="docs/strategies.html" class="docs-nav-link">Investment Mandate</a>
+      <a href="docs/workflow.html" class="docs-nav-link">Weekly Workflow</a>
+      <a href="docs/options.html" class="docs-nav-link">Options &amp; Order Pricing</a>
     </div>
   </nav>
 
   <main class="docs-main">
-    <div class="docs-header">
-      <h1>User Guide &amp; Operational Cadences</h1>
-      <p class="docs-lead">Complete operational procedures, token economy rules, CLI commands, and playbooks for human traders and autonomous AI agents.</p>
+    <div class="docs-header guide-hero">
+      <div class="docs-kicker">Human operating guide</div>
+      <h1>How to Use This Repository</h1>
+      <p class="docs-lead">Use the agent team to turn a current brokerage snapshot and verified public research into one account-by-account trading plan for the coming week.</p>
     </div>
 
-    <div class="callout important">
-      <div class="callout-title">Core Operating Philosophy: Parsimonious Token Spend &amp; "Trust But Verify"</div>
-      <p>Running unconstrained whole-universe LLM queries on every market tick is cost-prohibitive and introduces hallucination drift. This system enforces a strict division of labor: <strong>deterministic scripts execute math, price syncs, onboarding, and schedule projections at 0 LLM tokens</strong>, while <strong>generative AI agents are invoked selectively</strong> for qualitative synthesis, thesis authoring, and single-session weekly deliberation using verified cached data.</p>
+    <div class="callout warning">
+      <div class="callout-title">You remain the decision-maker and order executor</div>
+      <p>The repository does not connect to a broker, place trades, or guarantee returns. It produces research and a validated plan for educational and informational use. Equities and options can lose substantial value. Review every order before entering it.</p>
     </div>
 
-    <div class="callout important">
-      <div class="callout-title">Agents vs Scripts</div>
-      <p>Generative <strong>agent roles</strong> (Memory Agent, Investment Thesis Agent, etc.) invoke deterministic <strong>CLI tools</strong> in <code>scripts/</code>. Scripts are never agents. For example, <code>manage_memory.py</code> is named after the Memory Agent role but is a read-only audit tool the role invokes; it does not decide, alert, or author prose.</p>
-    </div>
+    <nav class="page-toc" aria-label="On this page">
+      <div class="page-toc-title">On this page</div>
+      <a href="#mental-model">What the system does</a>
+      <a href="#first-use">First-time setup</a>
+      <a href="#weekly-routine">Weekly routine</a>
+      <a href="#read-plan">Read the plan</a>
+      <a href="#equity-explorer">Use the equity explorer</a>
+      <a href="#other-jobs">Other jobs</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+    </nav>
 
-    <h2>Agent Run Log</h2>
-    <p>Each generative agent session is recorded as one JSON file at <code>context/research/runs/{run_id}.json</code>. Agents invoke <code>python scripts/activity_ledger.py start-run</code> before deliberation or authoring and <code>end-run --summary "..."</code> when complete. Generated index: <code>context/research/agent_run_index.md</code>.</p>
-    <pre><code># Start a weekly deliberation session
-python scripts/activity_ledger.py start-run --cadence weekly --trigger weekly_deliberation \
-  --agents "Lead Portfolio Manager Agent,Memory Agent" \
-  --prompt context/prompts/weekly_deliberation.md \
-  --signature "System clock YYYY-MM-DD; roles LPM+Memory; weekend deliberation"
+    <section id="mental-model">
+      <h2>The Mental Model: You Ask, Agents Decide, Scripts Verify</h2>
+      <p>This is an AI-assisted investment workspace, not a traditional point-and-click portfolio application. The human supplies current private account facts and the desired outcome. Specialized agents research, reason, and author recommendations. Deterministic scripts perform parsing, calculations, collateral checks, schema validation, and rendering.</p>
 
-# End session and link deliverables
-python scripts/activity_ledger.py end-run --summary "Completed weekly review."
-
-# Validate and regenerate index (Cadence 6)
-python scripts/activity_ledger.py validate
-python scripts/activity_ledger.py render-index</code></pre>
-
-    <h2>Errata Registry</h2>
-    <p>Corrections are recorded as individual JSON files at <code>context/research/errata/{erratum_id}.json</code>. Agents invoke <code>python scripts/errata_log.py record</code> when a claim is found erroneous. Protocol: <code>context/research/errata_protocol.md</code>. Generated index: <code>context/research/errata_index.md</code>.</p>
-    <pre><code>python scripts/errata_log.py record --target-file context/data/equities/NVDA.json \
-  --field research.tam_and_market_share --issue "Stale TAM figure" \
-  --correction "Updated from 2025 10-K"
-
-python scripts/errata_log.py validate
-python scripts/errata_log.py render-index</code></pre>
-
-    <h2>The 6 Tiered Operational Cadences</h2>
-    <p>Operational workflows are partitioned into six distinct cadences ranging from intraday zero-token price updates to on-demand universe expansion and rare ground-truth reconciliations from primary SEC filings:</p>
-
-    <div class="card-grid">
-      <div class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #00d4ff; font-weight: 700;">Cadence 1: Daily</span>
-          <span style="font-size: 0.75rem; background: rgba(0, 212, 255, 0.15); color: #00d4ff; padding: 2px 8px; border-radius: 12px; font-weight: 600;">0 Tokens</span>
+      <div class="responsibility-grid">
+        <div class="responsibility-card human">
+          <div class="responsibility-label">Human</div>
+          <h3>Supply and execute</h3>
+          <ul>
+            <li>Export fresh account snapshots.</li>
+            <li>Request a weekly plan or research job.</li>
+            <li>Check the final plan against the brokerage account.</li>
+            <li>Enter the specified limit orders.</li>
+          </ul>
         </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Market Prices &amp; Technical Volume Refresh</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Daily synchronization of live share prices, trading volumes, 20/50-day moving averages, and 52-week support/resistance bounds to screen for buyable dips and limit triggers.</p>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #818cf8; font-weight: 700;">Cadence 2: Weekly</span>
-          <span style="font-size: 0.75rem; background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~2K - 5K Tokens</span>
+        <div class="responsibility-card agent">
+          <div class="responsibility-label">Agent team</div>
+          <h3>Research and decide</h3>
+          <ul>
+            <li>Keep every account separate.</li>
+            <li>Assess theses, catalysts, invalidations, and prices.</li>
+            <li>Choose each trade and write its rationale.</li>
+            <li>Produce one definitive execution plan.</li>
+          </ul>
         </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Weekly Deliberation &amp; Trading Plan</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Single-session weekend portfolio snapshot ingestion, Black-Scholes options limit calculation, and decisive plain-text Monday execution plan synthesis in <code>private/plans/</code>.</p>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #fbbf24; font-weight: 700;">Cadence 3: Event-Driven</span>
-          <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #fbbf24; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~500 - 1.5K Tokens</span>
-        </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Press, Sentiment &amp; Short Seller Surveillance</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Surveilling corporate press wires, Reddit investor chatter (r/stocks, r/wallstreetbets), and reports from 20 top activist short sellers to catch thesis friction early.</p>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #34d399; font-weight: 700;">Cadence 4: Scheduled</span>
-          <span style="font-size: 0.75rem; background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~500 Tokens / Stock</span>
-        </div>
-        <h4 style="color: #ffffff; margin-top: 0;">SEC Filing Anticipation &amp; XBRL Ingestion</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Tracking statutory 10-Q and 10-K filing deadlines, projecting company filing windows, and ingesting authoritative audited financial facts within 24 hours of release.</p>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(168, 85, 247, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #c084fc; font-weight: 700;">Cadence 5: On-Demand</span>
-          <span style="font-size: 0.75rem; background: rgba(168, 85, 247, 0.15); color: #c084fc; padding: 2px 8px; border-radius: 12px; font-weight: 600;">~10K - 15K / Stock</span>
-        </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Coverage Universe Expansion &amp; Onboarding</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Screening US markets for compounders targeting &gt;= 20% annualized ROI, ingesting SEC XBRL filings, modeling multi-horizon valuations, and onboarding single or batch equities on demand.</p>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f87171; font-weight: 700;">Cadence 6: Rare / Audit</span>
-          <span style="font-size: 0.75rem; background: rgba(239, 68, 68, 0.15); color: #f87171; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Full Audit Mode</span>
-        </div>
-        <h4 style="color: #ffffff; margin-top: 0;">Full Ground-Truth Source Regeneration</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">End-to-end rebuild and reconciliation directly from original Tier 1 primary sources (SEC EDGAR XBRL APIs, exchange feeds, Form NPORT-P fund filings) to purge stale state and guarantee 100% accuracy.</p>
-      </div>
-    </div>
-
-    <h2>Master Deterministic CLI Engine (<code>scripts/manage_universe.py</code>)</h2>
-    <p>The system provides a unified command-line tool, <code>scripts/manage_universe.py</code>, enabling human traders and autonomous AI agents to query the equity universe, synchronize market prices, refresh regulatory filings, and execute deterministic workflows with 0 LLM token cost.</p>
-
-    <div class="callout tip">
-      <div class="callout-title">Interactive CLI Help &amp; Workflow Discovery</div>
-      <p>Run <code>python scripts/manage_universe.py --help</code> or <code>python scripts/manage_universe.py &lt;command&gt; --help</code> to view available parameters, filter criteria, and copy-paste workflow examples.</p>
-    </div>
-
-    <div class="card-grid">
-      <div class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
-        <h4 style="color: #00d4ff; margin-top: 0;">1. Query, Filter &amp; Count Universe Equities</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Filter tracked equities by status, sector, target ROI, market cap, P/E, P/S, gross margin, debt/equity, 52W price channels, and index membership:</p>
-        <pre><code># Print total count of tracked equities
-python scripts/manage_universe.py --count
-
-# Filter for BUY-rated stocks targeting >= 20% ROI
-python scripts/manage_universe.py list --status BUY --min-roi 20.0
-
-# Filter by sector, sort by ROI desc, top 10
-python scripts/manage_universe.py list --sector Technology --sort-by roi --limit 10
-
-# Filter for Nasdaq-100 (QQQ) constituent symbols
-python scripts/manage_universe.py list --index QQQ --format symbols
-
-# Find equities trading within 15% of 52W low
-python scripts/manage_universe.py list --near-52w-low 15 --format compact
-
-# Export filtered query results to CSV or JSON
-python scripts/manage_universe.py list --min-roi 20.0 --format csv</code></pre>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
-        <h4 style="color: #818cf8; margin-top: 0;">2. Ingest Live Market Prices &amp; Technical Volumes</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Ingest live prices, 30-day candlesticks, trading volumes, 52-week channels, and moving averages (SMA 20/50):</p>
-        <pre><code># Ingest live market prices across entire universe
-python scripts/manage_universe.py update-prices --live
-
-# Refresh specific target tickers during intraday action
-python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT
-
-# Verify cached market prices offline (0 network requests)
-python scripts/manage_universe.py update-prices --verify
-
-# Rebuild historical 18-month price archive
-python scripts/manage_universe.py update-prices --archive</code></pre>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <h4 style="color: #34d399; margin-top: 0;">3. Refresh SEC Filings &amp; Auxiliary Datasets</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Synchronize Tier 1 SEC EDGAR XBRL facts, ETF holdings, analyst consensus targets, and filing calendars:</p>
-        <pre><code># Fetch fresh SEC EDGAR XBRL statements
-python scripts/manage_universe.py refresh-sec --live
-
-# Refresh SEC data for specific symbols
-python scripts/manage_universe.py refresh-sec --symbols NVDA CRM WDAY
-
-# Refresh all non-price datasets in one step
-python scripts/manage_universe.py refresh-sec --all
-
-# Rebuild statutory 10-Q/10-K filing deadline calendar
-python scripts/manage_universe.py refresh-sec --filings-calendar
-
-# Synchronize ETF constituent holdings (QQQ, DIA, SPY)
-python scripts/manage_universe.py refresh-sec --etf-holdings</code></pre>
-      </div>
-
-      <div class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
-        <h4 style="color: #fbbf24; margin-top: 0;">4. Execute Deterministic System Workflows</h4>
-        <p style="font-size: 0.88rem; color: #94a3b8;">Run mathematical modeling, quality control audits, screenings, memory checks, and snapshots:</p>
-        <pre><code># Run Quality Control audit to assert 0 data errors
-python scripts/manage_universe.py audit
-
-# Screen market for >= 20% ROI compounders
-python scripts/manage_universe.py screen --min-roi 20.0 --limit 10
-
-# Run Stage 1 Lightweight Triage
-python scripts/manage_universe.py triage --summary
-
-# Model Black-Scholes options pricing & Greeks
-python scripts/manage_universe.py pricing option --stock-price 125 --strike 120 --dte 35 --type put
-
-# Parse weekly portfolio snapshot
-python scripts/manage_universe.py snapshot --demo
-
-# Onboard a new public equity with live SEC feeds
-python scripts/manage_universe.py onboard --symbol CRWD --live
-
-# Execute Cadence 6 full ground-truth rebuild
-python scripts/manage_universe.py rebuild-all</code></pre>
-      </div>
-    </div>
-
-    <h2>Operational Playbooks &amp; CLI Tool Instructions</h2>
-
-    <!-- Playbook 1 -->
-    <div class="step-container">
-      <div class="step-card">
-        <div class="step-badge">Cadence 1</div>
-        <div class="step-content">
-          <h4>Frequent Daily Price &amp; Volume Updates (0 LLM Tokens)</h4>
-          <p>Because stock prices and trading volumes fluctuate every market session, run the live price fetcher daily before market open (9:00 AM ET) and after close (4:30 PM ET):</p>
-          <pre><code># Ingest live market prices and 30-day candles across the entire universe
-python scripts/manage_universe.py update-prices --live
-
-# Refresh a specific target watchlist during intraday market action
-python scripts/manage_universe.py update-prices --symbols NVDA AAPL MSFT TSLA AMZN
-
-# Screen for high-conviction opportunities (>= 20% annualized ROI) at current prices
-python scripts/manage_universe.py screen --min-roi 20.0 --exclude-avoid</code></pre>
-          <p>This updates <code>context/data/market_prices.json</code> and <code>http/data/market_prices.json</code> deterministically without consuming any LLM tokens.</p>
+        <div class="responsibility-card script">
+          <div class="responsibility-label">Deterministic tools</div>
+          <h3>Calculate and reject errors</h3>
+          <ul>
+            <li>Parse supported brokerage exports.</li>
+            <li>Calculate prices, Greeks, AROC, and cash impact.</li>
+            <li>Enforce cash and share collateral.</li>
+            <li>Refuse to render an invalid order set.</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Playbook 2 -->
-      <div class="step-card">
-        <div class="step-badge">Cadence 2</div>
-        <div class="step-content">
-          <h4>Weekly Deliberation &amp; Monday Execution Plan</h4>
-          <p>Execute the weekly single-session deliberation workflow over the weekend:</p>
-          <ol style="padding-left: 20px; font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 12px;">
-            <li>Export account holdings as CSV or screenshots into <code>private/snapshots/</code>.</li>
-            <li>Agent starts a run log session: <code>activity_ledger.py start-run --cadence weekly --trigger weekly_deliberation ...</code></li>
-            <li>Prompt your AI agent with the protocol in <code>context/prompts/weekly_deliberation.md</code>.</li>
-            <li>Agent ends the run: <code>activity_ledger.py end-run --summary "..."</code>. Record any corrections via <code>errata_log.py record</code>.</li>
-            <li>Open the generated plain ASCII plan in <code>private/plans/YYYY-MM-DD-plan.txt</code>.</li>
-            <li>Execute all specified limit orders at Monday 9:30 AM ET market open in one sitting.</li>
-          </ol>
-          <pre><code># Test snapshot parsing deterministically
-python scripts/parse_snapshot.py --json
+      <div class="callout important">
+        <div class="callout-title">The trading plan is the action document</div>
+        <p>The Equity Explorer shows public research and ratings. It does not know your account balances or tell you what to trade. Personalized actions appear only in the dated plain-text plan under <code>private/plans/</code>.</p>
+      </div>
+    </section>
 
-# Run Black-Scholes options pricing calculator for target strikes
-python scripts/calculate_pricing.py --symbol NVDA --stock-price 218.17 --strike 200.0 --dte 35 --option-type put
+    <section id="first-use">
+      <h2>First-Time Setup</h2>
+      <div class="step-container compact-steps">
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <div class="step-content">
+            <h4>Open the repository in an AI coding workspace</h4>
+            <p>The agent needs access to this repository so it can read the mandate, skills, research store, prompts, schemas, and scripts. Start the conversation from the repository root.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <div class="step-content">
+            <h4>Browse the portal</h4>
+            <p>Ask the agent to start and open the local Investments Portal, or serve the <code>http/</code> directory yourself and open <code>http://localhost:8080/</code>.</p>
+            <pre><code>python -m http.server -d http 8080</code></pre>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <div class="step-content">
+            <h4>Understand the mandate before using a plan</h4>
+            <p>Read the <a href="docs/strategies.html">Investment Mandate</a>. In particular: US-listed common stocks, a long-term &gt;= 20% annualized hurdle, limit orders, no naked options, no speculative long options, and one weekly execution session.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <div class="step-content">
+            <h4>Review a synthetic example</h4>
+            <p>Compare <code>examples/sample_portfolio.csv</code>, <code>examples/sample_orders.json</code>, and <code>examples/sample_trading_plan.txt</code>. These show the expected input, the agent-authored decisions, and the final human-facing output without exposing real account data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-# Generate plain ASCII trading plan from parsed snapshot state
-python scripts/generate_plan.py --save</code></pre>
+    <section id="weekly-routine">
+      <h2>The Core Weekly Routine</h2>
+      <p>Most human use of the repository should follow this loop. The system is designed for a weekend review, one order-entry session on Monday, and automatic option settlement on Friday.</p>
+
+      <div class="weekly-timeline" aria-label="Weekly operating timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">Friday close or weekend</div>
+          <div class="timeline-title">Export current snapshots</div>
+          <p>Capture balances, every position, and all open options after the prior week has settled.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Weekend</div>
+          <div class="timeline-title">Request and review the plan</div>
+          <p>The agents deliberate, author orders, validate collateral and arithmetic, and render the plan.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Monday 9:30 AM ET</div>
+          <div class="timeline-title">Enter all limit orders</div>
+          <p>Execute Portfolio 1 completely, then Portfolio 2, following any entry-time branch exactly.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Friday 4:00 PM ET</div>
+          <div class="timeline-title">Let expirations settle</div>
+          <p>No mid-week babysitting is expected. Start again with a fresh snapshot after settlement.</p>
         </div>
       </div>
 
-      <!-- Playbook 3 -->
-      <div class="step-card">
-        <div class="step-badge">Cadence 3</div>
-        <div class="step-content">
-          <h4>Event-Driven Press, Sentiment &amp; Short Seller Surveillance</h4>
-          <p>Surveil breaking news, emerging investor friction themes on Reddit, and reports from 20 influential short sellers:</p>
-          <pre><code># Inspect high and medium severity investor concern themes across the universe
-python scripts/surveil_sentiment.py --concerns-only
+      <h3>Step 1: Export complete brokerage snapshots</h3>
+      <p>CSV is preferred because the deterministic parser can reconcile it directly. A clear screenshot can be interpreted by an AI agent, but the agent must transcribe and verify it before the order set can be validated. Save inputs under <code>private/snapshots/</code> with the date and account name in the filename.</p>
 
-# Deep dive into sentiment polarity and press headlines for target tickers
-python scripts/surveil_sentiment.py --symbols NVDA TSLA ENPH PLTR --json
-
-# Check whether a candidate company has active short seller campaigns or reports
-python scripts/track_short_sellers.py --symbol SMCI
-
-# Review all 20 influential activist short seller research firms and track records
-python scripts/track_short_sellers.py --list-firms</code></pre>
-          <p>If an activist short report is published, follow <code>context/prompts/sentiment_and_short_seller_surveillance.md</code> to determine if the report mandates thesis invalidation or creates a high-margin-of-safety buyable dip.</p>
+      <div class="checklist-panel">
+        <div>
+          <h4>Each account snapshot must show</h4>
+          <ul class="check-list">
+            <li>Account name or an unambiguous masked label.</li>
+            <li>Total account value and settled cash.</li>
+            <li>Symbol, quantity, market value, and cost basis for every holding.</li>
+            <li>SGOV quantity and value, when present.</li>
+            <li>Every open option, including quantity, expiration, strike, put or call, and current mark.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>For multiple accounts</h4>
+          <p>Use a distinct file or clearly separated account section for each account. Never pre-combine balances or holdings. The system validates collateral inside each account and cannot borrow cash or shares from another one.</p>
         </div>
       </div>
 
-      <!-- Playbook 4 -->
-      <div class="step-card">
-        <div class="step-badge">Cadence 4</div>
-        <div class="step-content">
-          <h4>Scheduled SEC Filing Anticipation &amp; XBRL Ingestion</h4>
-          <p>Track upcoming 10-Q and 10-K filing windows and ingest audited statements as they are submitted:</p>
-          <pre><code># Audit filings due in the next 30 days based on statutory deadlines
-python scripts/anticipate_sec_filings.py --upcoming-days 30
+      <h3>Step 2: Ask for the dated weekly plan</h3>
+      <p>A short outcome-based request is enough. The repository instructions and skills contain the operating protocol.</p>
+      <div class="prompt-card">
+        <div class="prompt-label">Suggested request</div>
+        <p>Generate the weekly trading plan for Monday [DATE] using every current snapshot in <code>private/snapshots/</code>. Keep all accounts separate, refresh or verify the public intelligence needed for the decision, resolve material research gaps, author and validate the complete order set, and save the final plain-text plan to <code>private/plans/[DATE]-plan.txt</code>. Return the definitive plan and clearly report any validation failure.</p>
+      </div>
 
-# Inspect imminent filings due in the next 14 days
-python scripts/anticipate_sec_filings.py --status IMMINENT_NEXT_14_DAYS
+      <h3>Step 3: Let validation finish</h3>
+      <p>The Lead Portfolio Manager must decide every order and write an order set first. The renderer then checks account isolation, available cash, existing option encumbrances, covered-share blocks, limit prices, tracked symbols, cash impact, and AROC. If a check fails, no plan should be produced until the underlying order set or snapshot is corrected.</p>
 
-# Ingest authoritative SEC EDGAR XBRL facts for newly filed companies
-python scripts/fetch_sec.py --symbols NVDA CRM WDAY --live
+      <h3>Step 4: Perform the human preflight</h3>
+      <p>Open the dated file in <code>private/plans/</code> and compare it with the brokerage screen. Do not treat a successfully rendered file as a substitute for this review.</p>
+      <ul class="check-list preflight-list">
+        <li>The plan date and snapshot date are current.</li>
+        <li>Every account appears once, with the correct total value, cash, SGOV, holdings, and open options.</li>
+        <li>Every order has one action, symbol, quantity, order type, limit price, cash impact, and rationale.</li>
+        <li>Short puts are fully secured inside that account; short calls use only uncommitted 100-share blocks.</li>
+        <li>No order is a speculative option purchase, naked option sale, or market order.</li>
+        <li>Any branch depends only on the price visible when orders are entered, not on later monitoring.</li>
+        <li>The Friday expiration section matches every option expiring that week.</li>
+      </ul>
 
-# Re-aggregate TTM revenues, share counts, and master catalogs
-python scripts/build_universe_json.py</code></pre>
+      <div class="callout warning">
+        <div class="callout-title">Correct the source, then regenerate</div>
+        <p>If a balance, holding, option, or cost basis is wrong, replace or correct the snapshot and ask the agent to regenerate the order set and plan. Do not hand-edit a quantity or price in the final plan because that bypasses collateral and arithmetic validation.</p>
+      </div>
+
+      <h3>Step 5: Enter orders once, account by account</h3>
+      <p>On Monday at 9:30 AM ET, or as soon as you can access the accounts, enter all orders for Portfolio 1 before moving to Portfolio 2. Use the stated limit prices. When the plan contains an execution-time branch, observe the current price once and enter only the matching branch. Let stated Friday expirations and assignments settle automatically, then provide a fresh snapshot the following weekend.</p>
+    </section>
+
+    <section id="read-plan">
+      <h2>How to Read the Trading Plan</h2>
+      <div class="definition-grid">
+        <div class="definition-card">
+          <h4>Account Snapshot</h4>
+          <p>The facts used to size orders: total value, settled cash, SGOV, dry powder, and position count. Stop if these do not match the broker.</p>
+        </div>
+        <div class="definition-card">
+          <h4>Action</h4>
+          <p>The exact broker-side instruction, such as BUY, SELL, SELL TO OPEN, or BUY TO CLOSE. Do not substitute a different action.</p>
+        </div>
+        <div class="definition-card">
+          <h4>Limit Price</h4>
+          <p>The worst acceptable execution price. An unfilled order is preferable to silently replacing it with a market order.</p>
+        </div>
+        <div class="definition-card">
+          <h4>Cash Impact and Collateral</h4>
+          <p>The expected debit or credit and the cash or shares reserved for a short option inside that account.</p>
+        </div>
+        <div class="definition-card">
+          <h4>Execution Contingency</h4>
+          <p>A deterministic branch selected from the price visible during the single order-entry session. It is not a mid-week watch instruction.</p>
+        </div>
+        <div class="definition-card">
+          <h4>Friday Expectation</h4>
+          <p>The expected expiration, assignment, call-away, or collateral release for contracts expiring that week.</p>
         </div>
       </div>
 
-      <!-- Playbook 5 -->
-      <div class="step-card">
-        <div class="step-badge">Cadence 5</div>
-        <div class="step-content">
-          <h4>On-Demand Coverage Universe Expansion &amp; Onboarding</h4>
-          <p>When you want to screen the market for new 20%+ ROI compounders or add any number of additional public equities to coverage on demand:</p>
-          <pre><code># 1. Onboard a single named equity (live SEC EDGAR XBRL statements &amp; market feeds)
-python scripts/onboard_company.py --symbol CRWD --live
+      <div class="callout note">
+        <div class="callout-title">A plan with no trades can be correct</div>
+        <p>The system should not manufacture activity. When no order clears the research, valuation, pricing, and risk checks, the definitive recommendation can be to place no orders for that account.</p>
+      </div>
+    </section>
 
-# 2. Onboard a batch of multiple equities simultaneously
-python scripts/onboard_company.py --symbols NOW ABNB NET MDB --live
+    <section id="equity-explorer">
+      <h2>Using the Equity Explorer</h2>
+      <p>The <a href="stocks.html">Equity Explorer</a> is the human view of public company intelligence. Use it to understand and challenge the research behind a plan, compare tracked companies, and locate source records. It contains no private portfolio quantities.</p>
 
-# 3. Screen market for >= 20% ROI candidates in a sector and auto-onboard top N
-python scripts/onboard_company.py --screen --min-roi 20.0 --sector Technology --limit 3
-
-# 4. Screen existing universe for >= 20% ROI candidates (analysis mode)
-python scripts/screen_market.py --min-roi 20.0 --exclude-avoid
-
-# 5. Run full quality control audit to assert 0 errors / 0 warnings across all universe files
-python scripts/quality_control.py --audit</code></pre>
-          <p>See <a href="docs/workflow.html">System Workflows</a> for prompt templates to trigger this workflow through your AI agent.</p>
+      <div class="card-grid guide-card-grid">
+        <div class="docs-card static-card">
+          <h4>Grid Cards</h4>
+          <p>Scan ratings and the locked 2 by 2 metrics: annualized Target ROI, diluted shares outstanding, TTM revenue, and enterprise value.</p>
+        </div>
+        <div class="docs-card static-card">
+          <h4>Dossiers</h4>
+          <p>Compare the longer thesis summaries, valuation ranges, catalysts, moat, and invalidation logic across companies.</p>
+        </div>
+        <div class="docs-card static-card">
+          <h4>Data Table</h4>
+          <p>Sort dense fields such as rating, benchmark entry, exit target, target ROI, sector, and 52-week range.</p>
         </div>
       </div>
 
-      <!-- Playbook 6 -->
-      <div class="step-card">
-        <div class="step-badge">Cadence 6</div>
-        <div class="step-content">
-          <h4>Rare Ground-Truth Regeneration &amp; Full Anti-Hallucination Audit</h4>
-          <p>When you want to regenerate all repository intelligence directly from original primary sources to eliminate any chance of hallucination or parameter drift:</p>
-          <pre><code># 1. Fetch fresh master CIK directory and live SEC EDGAR XBRL statements
-python scripts/fetch_sec.py --live
+      <h3>Open a company for the full record</h3>
+      <p>Select a company from any view. The drawer separates the investment thesis, quarterly revenue path, analyst coverage, technical analysis, SEC filings, and company-specific strategy. Source links and filing dates help distinguish observed facts from model-authored forecasts.</p>
 
-# 2. Re-ingest live market closing prices and rebuild historical price archive (18mo)
-python scripts/fetch_market_prices.py --live
-python scripts/fetch_market_prices.py --archive
-
-# 3. Synchronize QQQ, DIA, and SPY constituents from SEC Form NPORT-P filings
-python scripts/fetch_etf_holdings.py
-
-# 4. Refresh sell-side analyst price targets and coverage registry
-python scripts/fetch_analyst_targets.py --live
-python scripts/build_analyst_registry.py
-
-# 5. Compile off-balance sheet footnote liabilities (leases, pensions, commitments)
-python scripts/build_off_balance_sheet_data.py
-
-# 6. Re-synthesize master catalogs, SEC calendar, sentiment, and short campaigns
-python scripts/build_universe_json.py
-python scripts/anticipate_sec_filings.py
-python scripts/surveil_sentiment.py --seed
-python scripts/track_short_sellers.py --seed
-
-# 7. Execute complete deterministic Quality Control audit to assert 0 errors / 0 warnings
-python scripts/quality_control.py --audit
-
-# 8. Validate agent run logs and errata registry; regenerate indexes
-python scripts/activity_ledger.py validate
-python scripts/activity_ledger.py render-index
-python scripts/errata_log.py validate
-python scripts/errata_log.py render-index</code></pre>
-        </div>
+      <div class="callout important">
+        <div class="callout-title">Ratings are public research classifications</div>
+        <p>A BUY rating means the public thesis currently clears the system's return hurdle. It is not automatically a buy order for your account. Position size, existing exposure, available collateral, taxes, open options, and execution price are resolved only in the weekly plan.</p>
       </div>
-    </div>
 
-    <h2>Token Economy &amp; Resource Consumption Matrix</h2>
-    <p>The table below provides a full reference of system tools, their token costs, update cadences, primary source authorities, and synchronized storage locations:</p>
-
-    <div style="overflow-x: auto; margin: 24px 0;">
-      <table style="width: 100%; border-collapse: collapse; background: var(--bg-color-surface); border: 1px solid var(--border-subtle); border-radius: 8px; font-size: 0.88rem;">
+      <table class="guide-table">
         <thead>
-          <tr style="border-bottom: 2px solid var(--border-subtle); background: var(--bg-color-card); text-align: left;">
-            <th style="padding: 12px 16px; color: var(--accent-color);">Operation / Tool</th>
-            <th style="padding: 12px 16px; color: var(--text-primary);">Token Cost</th>
-            <th style="padding: 12px 16px; color: var(--text-primary);">Cadence</th>
-            <th style="padding: 12px 16px; color: var(--text-primary);">Source Tier &amp; Authority</th>
-            <th style="padding: 12px 16px; color: var(--text-primary);">Target File Path</th>
+          <tr>
+            <th>Label</th>
+            <th>How to use it</th>
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom: 1px solid var(--border-subtle); background: rgba(0, 212, 255, 0.05);">
-            <td style="padding: 10px 16px; font-family: monospace; font-weight: 700; color: #00d4ff;">manage_universe.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Unified Master CLI</td>
-            <td style="padding: 10px 16px;">Tier 1 SEC + Tier 2 Feeds</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Master Orchestration Hub</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">fetch_market_prices.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Daily / Intraday</td>
-            <td style="padding: 10px 16px;">Tier 2 (Exchange Feeds)</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/market_prices.json</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">screen_market.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Weekly / Screening</td>
-            <td style="padding: 10px 16px;">Tier 1 Math &amp; Models</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI Standard Output / JSON</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">onboard_company.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens (Script)</td>
-            <td style="padding: 10px 16px;">On-Demand / Expansion</td>
-            <td style="padding: 10px 16px;">Tier 1 SEC + Tier 2 Feeds</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/ &amp; universe.json</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">anticipate_sec_filings.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Weekly / Scheduled</td>
-            <td style="padding: 10px 16px;">Tier 1 (SEC Statutory Deadlines)</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/sec_filing_calendar.json</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">surveil_sentiment.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 - 500 Tokens</td>
-            <td style="padding: 10px 16px;">Event-Driven / Daily</td>
-            <td style="padding: 10px 16px;">Tier 2 / Tier 4 (Wires &amp; Social)</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/sentiment_surveillance.json</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">track_short_sellers.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Event-Driven / Screening</td>
-            <td style="padding: 10px 16px;">Tier 2 / Tier 4 (Short Research)</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/data/short_seller_campaigns.json</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">calculate_pricing.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Weekly Deliberation</td>
-            <td style="padding: 10px 16px;">Deterministic Black-Scholes</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI Standard Output / Trading Plan</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">quality_control.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Post-Update Audit</td>
-            <td style="padding: 10px 16px;">Tier 1 Ground-Truth Cross-Check</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">Automated Audit / Errata Registry</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">activity_ledger.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Weekly / Event-Driven</td>
-            <td style="padding: 10px 16px;">Agent session audit trail</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/research/runs/</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">errata_log.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">On correction</td>
-            <td style="padding: 10px 16px;">Tier 1 verification trail</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/research/errata/</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #00d4ff;">manage_memory.py</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #34d399;">0 Tokens</td>
-            <td style="padding: 10px 16px;">Weekly / Memory audit</td>
-            <td style="padding: 10px 16px;">Reads runs/ + errata/ (tool for Memory Agent role)</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">CLI stdout / --ledger JSON</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">weekly_deliberation.md</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~2K - 5K Tokens</td>
-            <td style="padding: 10px 16px;">Weekly (Weekend)</td>
-            <td style="padding: 10px 16px;">Multi-Agent Synthesis</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">private/plans/YYYY-MM-DD-plan.txt</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 10px 16px; font-family: monospace; color: #c084fc;">onboard_company.md</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~10K - 15K / Stock</td>
-            <td style="padding: 10px 16px;">On-Demand (Expansion)</td>
-            <td style="padding: 10px 16px;">Tier 1 SEC + Generative Thesis</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/&lt;TICKER&gt;.md</td>
+          <tr>
+            <td><strong>Target ROI</strong></td>
+            <td>Annualized modeled return, not total return and not a guarantee.</td>
           </tr>
           <tr>
-            <td style="padding: 10px 16px; font-family: monospace; color: #818cf8;">thesis_authoring.md</td>
-            <td style="padding: 10px 16px; font-weight: 600; color: #fbbf24;">~10K - 15K / Ticker</td>
-            <td style="padding: 10px 16px;">Targeted (BUY Only)</td>
-            <td style="padding: 10px 16px;">Tier 1 Filings + Tier 4 Agent</td>
-            <td style="padding: 10px 16px; font-family: monospace; font-size: 0.8rem;">context/theses/&lt;TICKER&gt;.md</td>
+            <td><strong>Benchmark Entry Price</strong></td>
+            <td>A public valuation reference. Your actual order limit is set from current fundamentals and technical conditions in the weekly plan.</td>
+          </tr>
+          <tr>
+            <td><strong>Price Target Range</strong></td>
+            <td>Bear, base, and bull valuation scenarios for a stated horizon, not a promised future price.</td>
+          </tr>
+          <tr>
+            <td><strong>Conviction</strong></td>
+            <td>Strength of the current thesis after research; it does not override portfolio-level risk checks.</td>
+          </tr>
+          <tr>
+            <td><strong>Invalidation Criteria</strong></td>
+            <td>Specific evidence that would break the thesis and can require a SELL or defensive BUY TO CLOSE.</td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
 
-    <h2>Influential Short Seller Directory (20 Tracked Firms)</h2>
-    <p>The system maintains active search templates and track records for 20 top activist short sellers whose reports have demonstrated significant market-moving impact:</p>
+    <section id="other-jobs">
+      <h2>Other Useful Jobs to Give the Agent</h2>
+      <p>Use outcome-based requests. The agent should select the relevant repository skill and deterministic tools, keep an activity record for public research work, and report what changed.</p>
 
-    <div class="card-grid">
-      <div class="docs-card">
-        <h4 style="color: #f87171;">Hindenburg Research (Nathan Anderson)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-14.5% Day 1 Avg). <strong>Attack Vectors:</strong> Forensic accounting fraud, undisclosed related party self-dealing, fabricated backlogs.</p>
+      <div class="request-list">
+        <div class="request-item">
+          <h3>Explain or challenge a recommendation</h3>
+          <p>Explain the [TICKER] order in the latest plan. Trace the recommendation to the public thesis, current valuation, technical limit, catalysts, invalidation criteria, and portfolio constraint that determined its size.</p>
+        </div>
+        <div class="request-item">
+          <h3>Add one or more companies to coverage</h3>
+          <p>Research and onboard [TICKERS] into the tracked universe. Apply Stage 1 triage and solvency checks, use authoritative filings, complete the research store, render the public theses, and run quality control.</p>
+        </div>
+        <div class="request-item">
+          <h3>Find new candidates</h3>
+          <p>Screen US exchanges for companies with a credible path to at least 20% annualized ROI. Apply the repository's triage gates and return one decisive ranked onboarding set.</p>
+        </div>
+        <div class="request-item">
+          <h3>Refresh stale public intelligence</h3>
+          <p>Refresh [TICKER or UNIVERSE] from the authoritative sources required by the repository, identify research gaps, reconcile discrepancies, rerender affected public artifacts, and run quality control.</p>
+        </div>
+        <div class="request-item">
+          <h3>Correct a suspected error</h3>
+          <p>Verify this claim against Tier 1 evidence: [CLAIM]. If it is wrong or stale, update the research store, rerender derived files, and record the correction in the errata registry.</p>
+        </div>
+        <div class="request-item">
+          <h3>Replace a stale plan</h3>
+          <p>I did not execute the dated plan. Treat it as stale, use the newest account snapshots and market data, and generate a newly dated, fully validated plan. Do not carry old limits forward without recomputing them.</p>
+        </div>
       </div>
-      <div class="docs-card">
-        <h4 style="color: #f87171;">Muddy Waters Research (Carson Block)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> EXTREME (-12.8% Day 1 Avg). <strong>Attack Vectors:</strong> Offshore revenue round-tripping, fake customer invoices, asset striping.</p>
-      </div>
-      <div class="docs-card">
-        <h4 style="color: #fbbf24;">Citron Research (Andrew Left)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-10.2% Day 1 Avg). <strong>Attack Vectors:</strong> Extreme overvaluation hype, promotional claims, regulatory investigations.</p>
-      </div>
-      <div class="docs-card">
-        <h4 style="color: #fbbf24;">Kerrisdale Capital (Sahm Adrangi)</h4>
-        <p style="font-size: 0.85rem; color: #94a3b8;"><strong>Impact:</strong> VERY HIGH (-9.5% Day 1 Avg). <strong>Attack Vectors:</strong> Engineering due diligence, unviable technology, multiple re-rating theses.</p>
-      </div>
-    </div>
-    <p style="font-size: 0.88rem; color: var(--text-muted);">See <code>context/sources/short_sellers_directory.json</code> for the complete catalog of 20 firms, founders, and report feed endpoints.</p>
+    </section>
 
-    <h2>Key Execution Rules &amp; Portfolio Safety Constraints</h2>
+    <section id="privacy">
+      <h2>Keep Private and Public Data Separate</h2>
+      <p>The repository has a strict one-way privacy boundary. Public intelligence may inform a private plan. Private account facts must never flow back into public research, the web portal, source code, run logs, or errata records.</p>
 
-    <div class="card-grid">
-      <div class="docs-card">
-        <h4>Zero Ambiguity Policy</h4>
-        <p>The system never presents open-ended dilemmas or "choose X or Y depending on your risk tolerance". Every position receives a single, high-conviction recommendation.</p>
-      </div>
-
-      <div class="docs-card">
-        <h4>Deterministic Contingencies</h4>
-        <p>If market conditions fluctuate at market open, the plan provides instant deterministic branching (Branch A vs Branch B) so you never need to improvise.</p>
+      <div class="privacy-flow" aria-label="Privacy boundary">
+        <div class="privacy-zone public-zone">
+          <div class="privacy-label">Public intelligence</div>
+          <code>context/</code>
+          <code>http/</code>
+          <code>scripts/</code>
+          <p>Company research, market data, methods, and deterministic tools.</p>
+        </div>
+        <div class="privacy-boundary">
+          <span>May inform</span>
+          <strong>one way only</strong>
+        </div>
+        <div class="privacy-zone private-zone">
+          <div class="privacy-label">Private execution</div>
+          <code>private/snapshots/</code>
+          <code>private/plans/</code>
+          <p>Account values, quantities, cost bases, open contracts, and personalized orders.</p>
+        </div>
       </div>
 
-      <div class="docs-card">
-        <h4>Multi-Portfolio Isolation</h4>
-        <p>Distinct accounts are analyzed independently. Orders for Portfolio 1 are executed completely before moving to Portfolio 2.</p>
+      <ul class="check-list">
+        <li>Keep real exports and screenshots only under <code>private/</code>.</li>
+        <li>Mask account numbers when the exact identifier is unnecessary.</li>
+        <li>Before sharing or committing changes, check that no private file or copied account value appears in a public directory.</li>
+        <li>Public thesis updates must describe companies objectively, without mentioning that you own them.</li>
+      </ul>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>When Something Goes Wrong</h2>
+      <div class="troubleshooting-list">
+        <details>
+          <summary>The snapshot cannot be parsed</summary>
+          <p>Export CSV when possible. Confirm the file contains a symbol column and recognizable quantity, price, market value, and asset-type fields. For screenshots, ask the agent to transcribe each account and reconcile its totals before authoring orders.</p>
+        </details>
+        <details>
+          <summary>The account total does not reconcile</summary>
+          <p>Stop plan generation. Check for omitted cash, money-market rows, unsettled transactions, open options, duplicated totals, or a stale export. Replace the snapshot and rerun ingestion.</p>
+        </details>
+        <details>
+          <summary>A company is missing research</summary>
+          <p>An unrated or <code>AWAITING_RESEARCH</code> company cannot carry a fabricated valuation or recommendation. Ask the agent to complete its research fields and validation before using it in a plan.</p>
+        </details>
+        <details>
+          <summary>The order renderer rejects the plan</summary>
+          <p>This is a safety result, not a formatting inconvenience. Correct the order set or snapshot that caused the collateral, share coverage, arithmetic, universe, or schema failure. Never bypass the failed check by manually writing a plan.</p>
+        </details>
+        <details>
+          <summary>Market conditions changed before execution</summary>
+          <p>If the plan contains a matching entry-time branch, use it. Otherwise treat the plan as stale and request a newly priced and validated plan. Never convert the old limit to a market order.</p>
+        </details>
+        <details>
+          <summary>You discovered a bad public claim</summary>
+          <p>Ask the agent to verify it against Tier 1 evidence and follow the errata workflow. The correction belongs in the research store and errata registry; private account information does not.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="docs-card">
-        <h4>100% Collateralized Derivatives</h4>
-        <p>Strictly NO speculative option buying and NO naked selling. Puts are 100% cash-secured, calls are 100% share-covered, and Buy to Close (BTC) is used to eliminate downside on losing propositions.</p>
+    <section>
+      <h2>Where to Go Next</h2>
+      <div class="card-grid">
+        <a href="docs/architecture.html" class="docs-card">
+          <h4>System Architecture</h4>
+          <p>Agent roles, deterministic tools, research-store boundaries, activity logs, and privacy design.</p>
+        </a>
+        <a href="stocks.html" class="docs-card">
+          <h4>Equity Explorer</h4>
+          <p>Search and compare tracked companies, then inspect theses, forecasts, technicals, and filings.</p>
+        </a>
+        <a href="docs/valuation.html" class="docs-card">
+          <h4>Valuation &amp; Ratings</h4>
+          <p>How screening, forecasts, valuation ranges, margin of safety, and ratings are constructed.</p>
+        </a>
+        <a href="docs/sources.html" class="docs-card">
+          <h4>Sources &amp; Verification</h4>
+          <p>Source authority, provenance, primary evidence, and correction protocol.</p>
+        </a>
+        <a href="docs/strategies.html" class="docs-card">
+          <h4>Investment Mandate</h4>
+          <p>The return objective, allowed assets, concentration rules, derivatives constraints, and execution policy.</p>
+        </a>
+        <a href="docs/workflow.html" class="docs-card">
+          <h4>Weekly Workflow</h4>
+          <p>The full agent and operator protocol, maintenance cadences, onboarding flow, and audit trail.</p>
+        </a>
+        <a href="docs/options.html" class="docs-card">
+          <h4>Options &amp; Order Pricing</h4>
+          <p>Cash-secured puts, covered calls, Buy to Close, Greeks, AROC, and limit-price mechanics.</p>
+        </a>
       </div>
-    </div>
-
-    <h2>Detailed Deep-Dive Documentation</h2>
-    <p>Consult the following companion guides for deeper mathematical derivations and strategy rules:</p>
-
-    <div class="card-grid">
-      <a href="docs/workflow.html" class="docs-card" style="border-color: rgba(0, 212, 255, 0.4);">
-        <h4 style="color: #00d4ff;">System Workflows &amp; Execution Protocols &rarr;</h4>
-        <p>Full breakdown of Weekly Trading Deliberation and On-Demand Coverage Universe Expansion with prompt templates and CLI commands.</p>
-      </a>
-
-      <a href="docs/options.html" class="docs-card" style="border-color: rgba(99, 102, 241, 0.4);">
-        <h4 style="color: #818cf8;">Options &amp; Limit Pricing Mechanics &rarr;</h4>
-        <p>Understanding Black-Scholes pricing models, 0.15-0.30 Delta bands, 30-45 DTE cycles, Cash-Secured Puts, Covered Calls, net-credit rolls, and Buy to Close loss mitigation.</p>
-      </a>
-
-      <a href="docs/sources.html" class="docs-card" style="border-color: rgba(245, 158, 11, 0.4);">
-        <h4 style="color: #fbbf24;">Data Sources &amp; Provenance Hierarchy &rarr;</h4>
-        <p>The 5-tier authority hierarchy, SEC EDGAR XBRL verification, sell-side analyst registry, and short seller research directory.</p>
-      </a>
-
-      <a href="docs/strategies.html" class="docs-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <h4 style="color: #10b981;">Investment Strategy &amp; Risk Constraints &rarr;</h4>
-        <p>Core portfolio constraints, ~25 position target guideline, SGOV cash proxy rules, and risk management framework.</p>
-      </a>
-    </div>
+    </section>
   </main>
 </body>
 </html>

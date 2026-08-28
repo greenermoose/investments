@@ -1,0 +1,23 @@
+{
+  "run_id": "RUN-2026-08-28-003",
+  "schema_version": "1.0",
+  "started_at": "2026-08-28T18:26:39.106238+00:00",
+  "completed_at": "2026-08-28T18:43:33.954752+00:00",
+  "status": "COMPLETED",
+  "cadence": "ON_DEMAND",
+  "trigger": "manual",
+  "agent_roles": [
+    "documentation-agent"
+  ],
+  "prompt_ref": "Review and redesign the human user guide and documentation information architecture.",
+  "runtime_context_signature": "2026-08-28 America/New_York | Codex primary agent | User requested a complete human-centered redesign of http/guide.html and related documentation organization.",
+  "summary": "Redesigned the human user guide around the weekly snapshot-to-plan workflow, reorganized documentation navigation under the existing three top-level categories, clarified the research-store and onboarding architecture, moved operator cadences into the workflow documentation, and verified desktop/mobile rendering and local links.",
+  "deliverables": [
+    "http/guide.html",
+    "http/css/docs.css",
+    "http/docs/index.html",
+    "http/docs/architecture.html",
+    "http/docs/workflow.html"
+  ],
+  "events": []
+}

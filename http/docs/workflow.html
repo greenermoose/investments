@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>System Workflows &amp; Execution - Agentic Investment Advisor</title>
+  <title>Weekly Workflow &amp; System Operations - Agentic Investment Advisor</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
 </head>
@@ -15,31 +15,32 @@
     <div class="docs-nav-group">
       <div class="docs-nav-title">Overview &amp; Guide</div>
       <a href="../index.html" class="docs-nav-link">System Overview</a>
-      <a href="../guide.html" class="docs-nav-link">User Guide &amp; Cadences</a>
+      <a href="../guide.html" class="docs-nav-link">How to Use This Repo</a>
+      <a href="architecture.html" class="docs-nav-link">System Architecture</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Equity Intelligence</div>
-      <a href="../stocks.html" class="docs-nav-link">Public Equities</a>
-      <a href="sources.html" class="docs-nav-link">Data Sources &amp; Provenance</a>
+      <a href="../stocks.html" class="docs-nav-link">Equity Explorer</a>
+      <a href="valuation.html" class="docs-nav-link">Valuation &amp; Ratings</a>
+      <a href="sources.html" class="docs-nav-link">Sources &amp; Verification</a>
     </div>
     <div class="docs-nav-group">
       <div class="docs-nav-title">Strategy &amp; Mechanics</div>
-      <a href="strategies.html" class="docs-nav-link">Investment Strategy</a>
-      <a href="options.html" class="docs-nav-link">Options &amp; Limit Pricing</a>
-      <a href="valuation.html" class="docs-nav-link">Valuation Framework</a>
-      <a href="workflow.html" class="docs-nav-link active">System Workflows</a>
+      <a href="strategies.html" class="docs-nav-link">Investment Mandate</a>
+      <a href="workflow.html" class="docs-nav-link active">Weekly Workflow</a>
+      <a href="options.html" class="docs-nav-link">Options &amp; Order Pricing</a>
     </div>
   </nav>
 
   <main class="docs-main">
     <div class="docs-header">
-      <h1>System Workflows &amp; Execution Protocols</h1>
-      <p class="docs-lead">Complete operational playbooks for the two primary system workflows: Weekly Trading Deliberation (Single-Session Execution) and Coverage Universe Expansion (On-Demand 20%+ ROI Screening &amp; Onboarding).</p>
+      <h1>Weekly Workflow &amp; System Operations</h1>
+      <p class="docs-lead">Detailed mechanics for weekly plan generation, coverage expansion, scheduled maintenance, and the public research audit trail.</p>
     </div>
 
     <div class="callout note">
-      <div class="callout-title">Two Distinct Operational Workflows</div>
-      <p>The system operates across two core workflows: <strong>Workflow 1 (Weekly Trading Deliberation)</strong> executes once per weekend to produce Monday morning execution plans for user portfolios; <strong>Workflow 2 (Coverage Universe Expansion)</strong> runs on demand (anticipated a few times per year) to screen for and onboard new public compounders into our tracked universe.</p>
+      <div class="callout-title">Human workflow and operator workflows</div>
+      <p>The weekly snapshot-to-plan loop is the routine human workflow. Coverage expansion, market-data refreshes, SEC ingestion, research repair, and full audits are operator workflows that the agent team runs when the repository needs them. See <a href="../guide.html">How to Use This Repo</a> for the shorter human checklist.</p>
     </div>
 
     <h2>Workflow 1: Weekly Deliberation &amp; Single-Session Execution</h2>
@@ -55,7 +56,7 @@
       <div class="docs-card">
         <h4>2. Multi-Agent Deliberation</h4>
         <p><strong>Timing:</strong> Sunday Evening</p>
-        <p>Ingestion parses holdings &rarr; Research discovers opportunities &rarr; Thesis models forecasts &rarr; Memory audits invalidations &rarr; Pricing models limits.</p>
+        <p>Ingestion parses holdings; Research and Thesis agents refresh evidence and assumptions; Memory audits invalidations; Pricing computes limits.</p>
       </div>
 
       <div class="docs-card">
@@ -176,12 +177,12 @@ END OF TRADING PLAN
 
       <div class="docs-card">
         <h4>3. SEC Ingestion &amp; Catalogs</h4>
-        <p>Executes <code>scripts/onboard_company.py</code> to pull Tier 1 XBRL filings, update market quotes, and re-synthesize <code>universe.json</code> and <code>sec-data.json</code>.</p>
+        <p><code>scripts/onboard_company.py</code> registers the ticker, pulls available Tier 1 XBRL facts and market data, and marks a new record <code>AWAITING_RESEARCH</code>. Onboarding does not invent a rating or thesis.</p>
       </div>
 
       <div class="docs-card">
-        <h4>4. Institutional Dossier</h4>
-        <p>Investment Thesis Agent authors 13Q revenue paths, 6H shares, 4H price bounds, and 6 qualitative sections in <code>context/theses/&lt;SYM&gt;.md</code>.</p>
+        <h4>4. Research Store &amp; Derived Dossier</h4>
+        <p>Agents author qualitative judgments and forward-looking parameters under <code>research</code> in <code>context/data/equities/&lt;SYM&gt;.json</code>. Deterministic engines calculate outputs and render the derived thesis and web data.</p>
       </div>
     </div>
 
@@ -189,10 +190,10 @@ END OF TRADING PLAN
     <ol>
       <li><strong>Exchange &amp; Security Validation:</strong> Verifies common stock or liquid ADR listed on NYSE, NASDAQ, or AMEX. Excludes OTC penny stocks, closed-end funds, and leveraged ETFs.</li>
       <li><strong>The 20%+ ROI Hurdle &amp; Stage 1 Triage:</strong> Quantitatively computes estimated 3-year compounding rate. Requires estimated CAGR &gt;= 20.0%. Discards value traps to the Avoid List.</li>
-      <li><strong>Deterministic Data Ingestion:</strong> Ingests official SEC EDGAR 10-K/10-Q XBRL statements, market quotes, volume averages, and Wall Street consensus price targets.</li>
-      <li><strong>Multi-Horizon Valuation Modeling:</strong> Computes 13-quarter revenue path ($Q_0$ to $Q_{12}$), 6-horizon shares outstanding, and 4-horizon price target ranges (13w, 52w, 104w, 156w).</li>
-      <li><strong>Institutional Thesis Dossier Generation:</strong> Authors Business Profile, TAM &amp; Market Share, Competitive Moats, Catalysts &amp; Timeline, Capital Allocation Strategy, and Explicit Invalidation Criteria in <code>context/theses/&lt;TICKER&gt;.md</code>.</li>
-      <li><strong>Deterministic Parity &amp; Quality Control Audit:</strong> Executes <code>scripts/quality_control.py --audit</code> asserting 0 errors and 0 warnings across all universe datasets.</li>
+      <li><strong>Deterministic Data Ingestion:</strong> Registers the symbol and ingests available SEC EDGAR XBRL facts and market data. A new symbol remains <code>AWAITING_RESEARCH</code>.</li>
+      <li><strong>Agent Research Authoring:</strong> Agents verify sources and write the business profile, market opportunity, moat, catalysts, invalidations, revenue assumptions, share-count assumptions, and valuation parameters into the research store.</li>
+      <li><strong>Deterministic Modeling &amp; Rendering:</strong> Valuation and return engines calculate the 13-quarter revenue path, 6-horizon share path, 4-horizon valuation ranges, rating outputs, thesis dossier, and public web artifacts from researched inputs.</li>
+      <li><strong>Parity &amp; Quality Control Audit:</strong> Schema validators and <code>scripts/quality_control.py --audit</code> reject missing research, inconsistent derived files, and other data errors.</li>
     </ol>
 
     <h3>How to Invoke Universe Expansion</h3>
@@ -225,7 +226,7 @@ Execute the batch onboarding pipeline via python scripts/onboard_company.py --sy
     </div>
 
     <h3>Deterministic CLI Commands for Universe Onboarding</h3>
-    <p>All universe expansion operations can also be executed directly via the command line:</p>
+    <p>These commands perform ingestion, screening, and validation. They do not replace the agent-authored research step:</p>
 
     <pre><code># 1. Onboard a single named equity (live SEC &amp; market data)
 python scripts/onboard_company.py --symbol CRWD --live
@@ -250,12 +251,69 @@ python scripts/quality_control.py --audit</code></pre>
       <p>All equities added to the coverage universe exist on completely equal footing in public intelligence (<code>context/theses/*.md</code>, <code>http/data/universe.json</code>, and the web interface). Private portfolio holdings in <code>private/snapshots/</code> NEVER alter public ratings or dossiers, preserving the strict one-way privacy firewall.</p>
     </div>
 
+    <h2>Repository Maintenance Cadences</h2>
+    <p>This material is for the agent or maintainer operating the research system. A human requesting a weekly plan should not need to run each tool manually. The unified command reference is available from <code>python scripts/manage_universe.py --help</code>.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cadence</th>
+          <th>Purpose</th>
+          <th>Primary entry point</th>
+          <th>Expected result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Frequent</strong></td>
+          <td>Refresh prices, volume, moving averages, and 52-week ranges.</td>
+          <td><code>manage_universe.py update-prices</code></td>
+          <td>Updated public market-price datasets.</td>
+        </tr>
+        <tr>
+          <td><strong>Weekly</strong></td>
+          <td>Parse new private snapshots and produce the dated Monday plan.</td>
+          <td><code>weekly_deliberation.md</code> and <code>render_plan.py</code></td>
+          <td>Validated private plan, isolated by account.</td>
+        </tr>
+        <tr>
+          <td><strong>Event-driven</strong></td>
+          <td>Record and assess observed news, sentiment, short reports, or thesis invalidations.</td>
+          <td>Relevant agent prompt and surveillance readers.</td>
+          <td>Source-attributed observations and thesis action when warranted.</td>
+        </tr>
+        <tr>
+          <td><strong>Scheduled</strong></td>
+          <td>Anticipate and ingest new 10-Q and 10-K filings.</td>
+          <td><code>manage_universe.py refresh-sec</code></td>
+          <td>Fresh regulatory facts and identified research gaps.</td>
+        </tr>
+        <tr>
+          <td><strong>On demand</strong></td>
+          <td>Screen, onboard, and fully research additional equities.</td>
+          <td><code>onboard_company.py</code> plus research authoring and rendering.</td>
+          <td>Validated research-store record and derived public artifacts.</td>
+        </tr>
+        <tr>
+          <td><strong>Rare audit</strong></td>
+          <td>Rebuild and reconcile the public intelligence layer from authoritative sources.</td>
+          <td><code>manage_universe.py rebuild-all</code></td>
+          <td>Reconciled datasets, quality-control results, and logged corrections.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout note">
+      <div class="callout-title">Scripts calculate; agents author</div>
+      <p>Mathematical and rule-based work belongs in deterministic scripts. Company narratives, forward-looking assumptions, ratings rationale, and trade rationale must be authored by agents into the designated research or order schema. A missing researched field is a gap, not permission for a script to invent a default.</p>
+    </div>
+
     <h2>Audit Trail and Cross-Run Memory</h2>
     <p>The system maintains directory-based audit logs for institutional continuity across agent sessions:</p>
     <ul>
-      <li><strong>Agent run logs:</strong> <code>context/research/runs/{run_id}.json</code> — one file per generative session, managed via <code>activity_ledger.py</code>.</li>
-      <li><strong>Errata registry:</strong> <code>context/research/errata/{erratum_id}.json</code> — one file per verified correction, managed via <code>errata_log.py</code>.</li>
-      <li><strong>Generative audits:</strong> <code>context/research/audits/*.md</code> — prose deliverables linked from run files.</li>
+      <li><strong>Agent run logs:</strong> <code>context/research/runs/{run_id}.json</code> - one file per generative session, managed via <code>activity_ledger.py</code>.</li>
+      <li><strong>Errata registry:</strong> <code>context/research/errata/{erratum_id}.json</code> - one file per verified correction, managed via <code>errata_log.py</code>.</li>
+      <li><strong>Generative audits:</strong> <code>context/research/audits/*.md</code> - prose deliverables linked from run files.</li>
     </ul>
 
     <pre><code>// Sample run file (abbreviated)

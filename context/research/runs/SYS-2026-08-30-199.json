@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-199",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.916936+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.939019+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ALGN",
+      "symbol": "ALGN",
+      "target_path": "context/data/equities/ALGN.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:9384a833ac3230d9368888818aeb05429184d1e8f5bc897e7290770343895cc3",
+        "after_hash": "sha256:8fd1ba3be076293851cc5bd958a4d2099fd09e00df28b2a3103c3ee7dc197c91"
+      }
+    }
+  ]
+}

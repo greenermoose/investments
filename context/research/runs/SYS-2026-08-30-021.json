@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-021",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.359271+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.378282+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.business_profile for ABBV",
+      "symbol": "ABBV",
+      "target_path": "context/data/equities/ABBV.json#research.business_profile",
+      "change": {
+        "field": "business_profile",
+        "before_chars": 864,
+        "after_chars": 864,
+        "before_hash": "sha256:0b61de24ecc8653ab74b756af595c47e8b48d6954f950113faedc4a643b8be46",
+        "after_hash": "sha256:0b61de24ecc8653ab74b756af595c47e8b48d6954f950113faedc4a643b8be46"
+      }
+    }
+  ]
+}

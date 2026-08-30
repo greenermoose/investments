@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-060",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.278954+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.302673+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ABT",
+      "symbol": "ABT",
+      "target_path": "context/data/equities/ABT.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:1013fda18f67647e65a999a940ac40abfa8f23c185f25d758872abda2560455f",
+        "after_hash": "sha256:13755581201b8c9523bbadb8ae3c628f474eae058c0637f9ec3fe2363b3ac17c"
+      }
+    }
+  ]
+}

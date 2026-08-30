@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-240",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.946689+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.972236+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:746cb6f6ba623b6dfb62ba49c47833df50423d8c7280e2ee9150b04a1094fc58",
+        "after_hash": "sha256:dca18c5c94187d244239617285573dd82c9842672c4a20de6a16a4318a8fc6a7"
+      }
+    }
+  ]
+}

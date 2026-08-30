@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-706",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.998454+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.019349+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CMCSA",
+      "symbol": "CMCSA",
+      "target_path": "context/data/equities/CMCSA.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:6ef48c474863de6f0ecb8c036335612a799d71d03f79a98effa8b2f0dda30dcd",
+        "after_hash": "sha256:0091fb8b074d759bfd0d3244bb7aaf377f9111302b1286830f90962c827b0713"
+      }
+    }
+  ]
+}

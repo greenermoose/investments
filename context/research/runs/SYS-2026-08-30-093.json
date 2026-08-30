@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-093",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.116112+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.139536+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:c382f6c6c3677a104a0b8ebdc5890584baa42113a61961cf547d070404bf32be",
+        "after_hash": "sha256:5846c7e35f2023baa22f6142d016672443ee0e59d2b52d1bb9fed6d9d10b01af"
+      }
+    }
+  ]
+}

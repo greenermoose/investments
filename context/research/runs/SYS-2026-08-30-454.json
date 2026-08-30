@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-454",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.419065+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.438893+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for AXP",
+      "symbol": "AXP",
+      "target_path": "context/data/equities/AXP.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:dfc9d5b0d548fd64a7e7863c244f1c69b6537e3a92b8daac8a7e92415fd8853e",
+        "after_hash": "sha256:8cfd8eaf053820557d4102479a90e78dfc8bf353e0bdecc24b3f6a61e3d552ad"
+      }
+    }
+  ]
+}

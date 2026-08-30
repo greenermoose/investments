@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-389",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.781995+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.802446+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ASML",
+      "symbol": "ASML",
+      "target_path": "context/data/equities/ASML.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:29d291a0ba20acd2f19f17cfbc04f9d8e428dbd9ecaa4721b7ec573763e139e4",
+        "after_hash": "sha256:6ac9b83cf02b3f7963cd88c0d79b6a5f7fa227577e4bf703f96bd8bfe89f1eff"
+      }
+    }
+  ]
+}

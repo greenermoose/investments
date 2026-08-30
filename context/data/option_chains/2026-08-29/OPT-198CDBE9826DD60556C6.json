@@ -1,0 +1,47 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "snapshot_id": "OPT-198CDBE9826DD60556C6",
+  "symbol": "NVDA",
+  "observed_at": "2026-08-29T20:15:00Z",
+  "source_locator": "https://www.cboe.com/delayed_quotes/NVDA/quote_table/",
+  "source_delay_minutes": 15,
+  "underlying_price": 217.55,
+  "risk_free_rate": 0.04,
+  "next_earnings_date": null,
+  "next_dividend_date": null,
+  "raw_content_hash": "16d15842d4cd862250fdcf1592e4a6b622d68f11f1068450cd93e08337fa454b",
+  "contracts": [
+    {
+      "option_type": "PUT",
+      "expiration": "2026-09-18",
+      "strike": 115.0,
+      "bid": 2.7,
+      "ask": 2.9,
+      "last": 2.8,
+      "volume": 2100,
+      "open_interest": 15600,
+      "implied_volatility": 0.42,
+      "market_delta": -0.22,
+      "gamma": null,
+      "spread": 0.2,
+      "spread_pct_of_mid": 7.1429
+    },
+    {
+      "option_type": "CALL",
+      "expiration": "2026-10-16",
+      "strike": 240.0,
+      "bid": 8.1,
+      "ask": 8.4,
+      "last": 8.25,
+      "volume": 1800,
+      "open_interest": 9200,
+      "implied_volatility": 0.38,
+      "market_delta": 0.3,
+      "gamma": null,
+      "spread": 0.3,
+      "spread_pct_of_mid": 3.6364
+    }
+  ],
+  "rejected_rows": [],
+  "experimental_warning": "Delayed Friday-close observation for experimental modeling. It is not a live quote, and modeled reservation prices and deltas may be wrong."
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-307",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.697387+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.717240+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ANET",
+      "symbol": "ANET",
+      "target_path": "context/data/equities/ANET.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:91fccd3c17980617b3d257acfe233f4845238c58e448a67c7147cd8f24d474e1",
+        "after_hash": "sha256:c3c31844f700eb2f0641a3fbcf4698c3fc23cc367f62021d783bb3d11bb59547"
+      }
+    }
+  ]
+}

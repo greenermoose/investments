@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-625",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.838277+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.859572+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CAVA",
+      "symbol": "CAVA",
+      "target_path": "context/data/equities/CAVA.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:79af9901646a0323a73f0cbbd9cf1ad0c0b43af7c48f8937907ffddcd9eb8b00",
+        "after_hash": "sha256:beda9a04ea7f2b956bf0ae621d01d94b9e697b2c2c6cfa0dc4a50af705d04cf1"
+      }
+    }
+  ]
+}

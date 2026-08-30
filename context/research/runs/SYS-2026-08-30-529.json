@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-529",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.382286+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.402307+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:94706d8c8a1eb5e54b348e55e53e201f4abe717c9e685f6a1d884bb042944209",
+        "after_hash": "sha256:480b3739f93e09b4e13d8c973777decc99f4933c9b059afc4203321633a3efd7"
+      }
+    }
+  ]
+}

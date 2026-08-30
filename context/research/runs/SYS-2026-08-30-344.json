@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-344",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.630878+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.652382+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.business_profile for APP",
+      "symbol": "APP",
+      "target_path": "context/data/equities/APP.json#research.business_profile",
+      "change": {
+        "field": "business_profile",
+        "before_chars": 822,
+        "after_chars": 822,
+        "before_hash": "sha256:4dde9a18b5f40bf7f419b9f400b5fb398da1676486c60ebef8ff20186ea4f35c",
+        "after_hash": "sha256:4dde9a18b5f40bf7f419b9f400b5fb398da1676486c60ebef8ff20186ea4f35c"
+      }
+    }
+  ]
+}

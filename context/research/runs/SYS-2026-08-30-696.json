@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-696",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.711687+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.736221+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CHTR",
+      "symbol": "CHTR",
+      "target_path": "context/data/equities/CHTR.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:c688581dce98064674b45e3d793dffc9e1958c5aabdc120e580d450972308e53",
+        "after_hash": "sha256:3ad9397e065db8b51a2bbb9bbdce8ca42cd96a1d6d43974ab7824caa3e4c3157"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-807",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:58.682747+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:58.705135+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CSCO",
+      "symbol": "CSCO",
+      "target_path": "context/data/equities/CSCO.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:c6273e7cb1b7c1ac1d719346cdf1c2d3d3e58bf1845afb4a129aaf406eab815e",
+        "after_hash": "sha256:575c0cb94058c99a48a1bef08fb33d2c676f1667a1256b500305009f00194bd3"
+      }
+    }
+  ]
+}

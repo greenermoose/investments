@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-111",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.613888+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.633740+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:164dcc9d1bd299324f88941c31175906ae9529ed8dbc493cb038f7107b42a0ef",
+        "after_hash": "sha256:537d2da0e525c8b9fb7fe110469f0c5c1b21bea7087c0e74b198dbc79e802662"
+      }
+    }
+  ]
+}

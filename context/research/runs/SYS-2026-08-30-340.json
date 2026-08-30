@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-340",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.507284+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.529639+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:7404049e6b819d3064fe85753a6de3148cdcf8d96e6d5dae3522b750fa17323c",
+        "after_hash": "sha256:8fa4484965257d28a9f756e274d13eb868b938d147fbdcd0d75fea7277a61897"
+      }
+    }
+  ]
+}

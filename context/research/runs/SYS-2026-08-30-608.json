@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-608",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.401075+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.423720+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 214,
+        "after_chars": 214,
+        "before_hash": "sha256:2bdb8fa54b7985f6f4cd4b82a4c13e95eeff83dc7ac5bd9d3e48ab39f6e2a647",
+        "after_hash": "sha256:2bdb8fa54b7985f6f4cd4b82a4c13e95eeff83dc7ac5bd9d3e48ab39f6e2a647"
+      }
+    }
+  ]
+}

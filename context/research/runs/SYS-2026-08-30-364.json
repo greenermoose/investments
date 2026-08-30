@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-364",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.136287+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.161514+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ARM",
+      "symbol": "ARM",
+      "target_path": "context/data/equities/ARM.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:06b946bddd21d244646be6a8b93f1237802285f5b9b36b524922adb5f2c593d6",
+        "after_hash": "sha256:5640f05b1749220d82e5bdbf0e652b6ed9bb05ab6de91deeb013774f36825959"
+      }
+    }
+  ]
+}

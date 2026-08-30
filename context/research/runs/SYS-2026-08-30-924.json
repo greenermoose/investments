@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-924",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.861892+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.882986+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:ee686e61b4c205c8ad6e756b36541ef04f14521efd13aeb4403b1e4aac2e77f9",
+        "after_hash": "sha256:e8cce13bd60656818925ed2bb044c0a4decf69b94887e107f3cdf3aef11e0d34"
+      }
+    }
+  ]
+}

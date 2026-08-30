@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-110",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.590891+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.610889+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 557,
+        "after_chars": 557,
+        "before_hash": "sha256:9cf0ae90b9d41eb23c3404b7b342ce067acfa4edf5b8f0a02869f5255f56aee5",
+        "after_hash": "sha256:9cf0ae90b9d41eb23c3404b7b342ce067acfa4edf5b8f0a02869f5255f56aee5"
+      }
+    }
+  ]
+}

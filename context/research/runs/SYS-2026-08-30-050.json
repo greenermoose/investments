@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-050",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.030328+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.049350+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ABNB",
+      "symbol": "ABNB",
+      "target_path": "context/data/equities/ABNB.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:6bb7dcfce60c92d9d60d4f77ef8147be1080c222d14c8cd92f6934f4a04f8abb",
+        "after_hash": "sha256:551f2077283c2f8679018f052c050cbf1dc280232fc461a0bc8147b22f89d8ab"
+      }
+    }
+  ]
+}

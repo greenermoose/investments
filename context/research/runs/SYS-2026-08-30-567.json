@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-567",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.345992+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.373515+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:b38df4d1e8f784feaf1eb593bbed6fdbc697a594cdc6d3d5ec601d7f0f2247f5",
+        "after_hash": "sha256:ebf23c1ee389b11012ad5875f58fb25a83609e3e4309250f9ad30bb4c8b3c0d2"
+      }
+    }
+  ]
+}

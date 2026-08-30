@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-402",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.116778+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.136747+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for AVGO",
+      "symbol": "AVGO",
+      "target_path": "context/data/equities/AVGO.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:8d6f90d217c8ec2482717f69e4cb3520bb7055295103cdb313cf62cc40c10f32",
+        "after_hash": "sha256:9460aedb944bbc8c765b89501c58ed88c1d35ba9754c5b5a1abbad70f9313799"
+      }
+    }
+  ]
+}

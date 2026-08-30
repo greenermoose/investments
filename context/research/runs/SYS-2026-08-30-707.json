@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-707",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.023404+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.043689+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CMCSA",
+      "symbol": "CMCSA",
+      "target_path": "context/data/equities/CMCSA.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:df0b738fe9505a4643c1c15268798200110289e8244003588fc9e56a471c08c4",
+        "after_hash": "sha256:0f6cab2e2217ea94fc8ae0ac4efdd94babef40c5be558d41dcc96e5191693bda"
+      }
+    }
+  ]
+}

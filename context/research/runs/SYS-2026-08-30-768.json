@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-768",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.637461+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.658727+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for CPRT",
+      "symbol": "CPRT",
+      "target_path": "context/data/equities/CPRT.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:14d4558a099f4774454277a15936b51e9879e7058c8e9fc9f0b56fd245b650fb"
+      }
+    }
+  ]
+}

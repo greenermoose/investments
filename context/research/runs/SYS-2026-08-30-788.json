@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-788",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:58.152288+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:58.173117+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CRM",
+      "symbol": "CRM",
+      "target_path": "context/data/equities/CRM.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:a12f067edf4ce9913e1a8fd5032f1e7a40c7ef7a1c5694fed475c3ad0250d419",
+        "after_hash": "sha256:7c75cf7023ae566a6fc424fffa4be660cabd3c3ba3a3c1f8d85549b67392e2a1"
+      }
+    }
+  ]
+}

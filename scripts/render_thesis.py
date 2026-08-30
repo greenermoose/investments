@@ -295,10 +295,14 @@ def render_price_table(model):
         "| :--- | :--- | :--- | :--- | :--- | :--- |",
     ]
     for row in model["price_target_ranges_4h"]:
+        ps = row.get("implied_ps_multiple")
+        ps_text = f"{ps:.1f}x" if isinstance(ps, (int, float)) else "N/A"
+        cagr = row.get("annualized_cagr_pct")
+        cagr_text = f"{cagr:+.1f}%" if isinstance(cagr, (int, float)) else "N/A"
         lines.append(
             f"| {row['horizon_label']} | ${row['bear_price']:.2f} | ${row['base_price']:.2f} "
-            f"| ${row['bull_price']:.2f} | {row['implied_ps_multiple']:.1f}x "
-            f"| {row['annualized_cagr_pct']:+.1f}% |"
+            f"| ${row['bull_price']:.2f} | {ps_text} "
+            f"| {cagr_text} |"
         )
     return lines
 

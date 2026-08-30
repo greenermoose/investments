@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-346",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.678034+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.697356+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for APP",
+      "symbol": "APP",
+      "target_path": "context/data/equities/APP.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:b6688ebf4920a7253bda916a6ff373dbb954442892bad4e58644088c0e312ec9",
+        "after_hash": "sha256:4db1b0793297398c37448d863df64c2c1234c4de535147638e4c6f14edb5dec8"
+      }
+    }
+  ]
+}

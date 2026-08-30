@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-986",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.518097+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.542263+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for DE",
+      "symbol": "DE",
+      "target_path": "context/data/equities/DE.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:545be1b06af913aba5bbc04e8561baf77e2229d574b0a6615f3be93453136d87",
+        "after_hash": "sha256:83197276078bacebfbbc6a1d97d976397356f1b27700180207af272d67dae849"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-263",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.535445+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.559813+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:ba05c770fc938f02ef2e3cd935716c9b5815eaed3c310dae7d3a58629b2e91a2",
+        "after_hash": "sha256:4e1efc6a4e813c9a9cf36b520d3a0e9b2fc13e643bec8e9342df99129d3bc729"
+      }
+    }
+  ]
+}

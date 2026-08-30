@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-796",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:58.354088+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:58.378404+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CRM",
+      "symbol": "CRM",
+      "target_path": "context/data/equities/CRM.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:6d722e7d60a5f83a37137ac4a0518687ce8c3441c752eb71f1a9d544d30a6475",
+        "after_hash": "sha256:da593c27edf2d1ab341b326f550f93ea1e56141df1b9ef1ff66c3f9751da9cc9"
+      }
+    }
+  ]
+}

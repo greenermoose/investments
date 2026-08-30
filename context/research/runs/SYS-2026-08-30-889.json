@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-889",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.923610+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.945798+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for CTAS",
+      "symbol": "CTAS",
+      "target_path": "context/data/equities/CTAS.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 565,
+        "after_chars": 565,
+        "before_hash": "sha256:6efe881f86ccbe6a1c3cbf4051c0e16842c8cee59f44eb272f01fa5aefde6795",
+        "after_hash": "sha256:6efe881f86ccbe6a1c3cbf4051c0e16842c8cee59f44eb272f01fa5aefde6795"
+      }
+    }
+  ]
+}

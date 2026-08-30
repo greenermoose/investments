@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-934",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.148607+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.169357+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for DASH",
+      "symbol": "DASH",
+      "target_path": "context/data/equities/DASH.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:41f542573dbe89985e34371ffcd3770971fc413c82b7cd443146d049fee4e148",
+        "after_hash": "sha256:8892f60e6b45f270e5133106bf158bef3d76620b7a31d150437405954aac6db0"
+      }
+    }
+  ]
+}

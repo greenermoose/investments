@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-809",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:58.734218+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:58.754041+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.moat_summary for CSCO",
+      "symbol": "CSCO",
+      "target_path": "context/data/equities/CSCO.json#research.moat_summary",
+      "change": {
+        "field": "moat_summary",
+        "before_chars": 129,
+        "after_chars": 129,
+        "before_hash": "sha256:407a4678577712928ba3b1c959bf85c6f5236e2fc95f944dce5e38319ad96b07",
+        "after_hash": "sha256:407a4678577712928ba3b1c959bf85c6f5236e2fc95f944dce5e38319ad96b07"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-023",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.401575+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.421314+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for ABBV",
+      "symbol": "ABBV",
+      "target_path": "context/data/equities/ABBV.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:d6438e0d76e3148d01d4fc20fd2273bc9aa08a04b99786ba382f9cd7bcbd409e",
+        "after_hash": "sha256:61ced91c4ffd79a8e6235b7707998a8c771e43474796b0257ab9dac192acb3fb"
+      }
+    }
+  ]
+}

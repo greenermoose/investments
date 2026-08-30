@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-296",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.407607+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.428310+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.moat_summary for AMZN",
+      "symbol": "AMZN",
+      "target_path": "context/data/equities/AMZN.json#research.moat_summary",
+      "change": {
+        "field": "moat_summary",
+        "before_chars": 123,
+        "after_chars": 123,
+        "before_hash": "sha256:1442b9d3b4aa8aecf1c9896f336b1414076d5edac7bf9cb26f50b674b7a36795",
+        "after_hash": "sha256:1442b9d3b4aa8aecf1c9896f336b1414076d5edac7bf9cb26f50b674b7a36795"
+      }
+    }
+  ]
+}

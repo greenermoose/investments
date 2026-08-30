@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-126",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.995485+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.017770+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:59f9c37986e12e8ddfc6bf9be8cb4e5ebab34707af8e5067c8ab3db2e94fa388",
+        "after_hash": "sha256:4d0f394513119e8d6c66fa3bfa3a735f74939649ed40ca2105d1557a0be14213"
+      }
+    }
+  ]
+}

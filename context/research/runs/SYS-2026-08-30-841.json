@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-841",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.589578+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.612451+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 485,
+        "after_chars": 485,
+        "before_hash": "sha256:7f13e6ba1a597f8f3acf5b6b0512bc00d1e5c1f6c402c8b1709ca18e66a0b7db",
+        "after_hash": "sha256:7f13e6ba1a597f8f3acf5b6b0512bc00d1e5c1f6c402c8b1709ca18e66a0b7db"
+      }
+    }
+  ]
+}

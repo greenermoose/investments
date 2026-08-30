@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-428",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.778815+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.802626+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.latest_catalyst for AXON",
+      "symbol": "AXON",
+      "target_path": "context/data/equities/AXON.json#research.latest_catalyst",
+      "change": {
+        "field": "latest_catalyst",
+        "before_chars": 101,
+        "after_chars": 101,
+        "before_hash": "sha256:b53b530264c10a37c4f33c144a94055e03fcf96947a7533928783c9f6e2ff0fd",
+        "after_hash": "sha256:b53b530264c10a37c4f33c144a94055e03fcf96947a7533928783c9f6e2ff0fd"
+      }
+    }
+  ]
+}

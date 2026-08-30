@@ -1,0 +1,47 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "snapshot_id": "OPT-D78F251FFAB220717A1F",
+  "symbol": "AAPL",
+  "observed_at": "2026-08-29T20:15:00Z",
+  "source_locator": "https://www.cboe.com/delayed_quotes/AAPL/quote_table/",
+  "source_delay_minutes": 15,
+  "underlying_price": 225.5,
+  "risk_free_rate": 0.04,
+  "next_earnings_date": null,
+  "next_dividend_date": null,
+  "raw_content_hash": "162cecef3a18117b8ebc10d78060143eb92b5e1a987c52edd91725c740dbeb17",
+  "contracts": [
+    {
+      "option_type": "CALL",
+      "expiration": "2026-09-18",
+      "strike": 240.0,
+      "bid": 4.4,
+      "ask": 4.6,
+      "last": 4.5,
+      "volume": 1250,
+      "open_interest": 8420,
+      "implied_volatility": 0.28,
+      "market_delta": 0.32,
+      "gamma": null,
+      "spread": 0.2,
+      "spread_pct_of_mid": 4.4444
+    },
+    {
+      "option_type": "PUT",
+      "expiration": "2026-09-18",
+      "strike": 220.0,
+      "bid": 3.1,
+      "ask": 3.3,
+      "last": 3.2,
+      "volume": 980,
+      "open_interest": 5100,
+      "implied_volatility": 0.26,
+      "market_delta": -0.24,
+      "gamma": null,
+      "spread": 0.2,
+      "spread_pct_of_mid": 6.25
+    }
+  ],
+  "rejected_rows": [],
+  "experimental_warning": "Delayed Friday-close observation for experimental modeling. It is not a live quote, and modeled reservation prices and deltas may be wrong."
+}

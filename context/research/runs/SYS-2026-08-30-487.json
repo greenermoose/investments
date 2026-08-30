@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-487",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.300082+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.320401+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:74e33666291c381954e068bca289d028d0518be11b31a8101c6707005cfe6e71",
+        "after_hash": "sha256:66dc26f058eaa620e0683f9dc27c25e0d68946e4c47cc8ec3d486a4286eeb50e"
+      }
+    }
+  ]
+}

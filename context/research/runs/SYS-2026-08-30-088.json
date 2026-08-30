@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-088",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.994908+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.019830+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:af3bae2c3ce9e3ed9e518e750ed237c15fe473fe51e3039891135311fc225850",
+        "after_hash": "sha256:72226fbb344833e1a023f9e92fa3aa80f4133b76cd22f87712da4dac7c37299d"
+      }
+    }
+  ]
+}

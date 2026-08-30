@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-370",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.282843+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.301124+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ARM",
+      "symbol": "ARM",
+      "target_path": "context/data/equities/ARM.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:040112efd0c6c101a624e7ad9dd0687f4252119828e3ea00a3e1334ac5dadda6",
+        "after_hash": "sha256:8f7bdbca4b5b75b729cd4db4c04d70a96f70be805516c30f4313cb54a1e3e0aa"
+      }
+    }
+  ]
+}

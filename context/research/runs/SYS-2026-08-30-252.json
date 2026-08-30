@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-252",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.276474+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.295102+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 588,
+        "after_chars": 588,
+        "before_hash": "sha256:2d52c902cfac37abce72a8fbcea24ec8369aed91806c2d3501abab67d13e08d3",
+        "after_hash": "sha256:2d52c902cfac37abce72a8fbcea24ec8369aed91806c2d3501abab67d13e08d3"
+      }
+    }
+  ]
+}

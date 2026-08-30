@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-205",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.061330+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.081511+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for ALGN",
+      "symbol": "ALGN",
+      "target_path": "context/data/equities/ALGN.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 569,
+        "after_chars": 569,
+        "before_hash": "sha256:07b07bdfe330a5f72eb4c2f3208b989f16d1c0eef2e3a3181fe615cabe6fbb05",
+        "after_hash": "sha256:07b07bdfe330a5f72eb4c2f3208b989f16d1c0eef2e3a3181fe615cabe6fbb05"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-972",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.163616+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.186696+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for DE",
+      "symbol": "DE",
+      "target_path": "context/data/equities/DE.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:f2dcfce6860d164e26bfbb39547f193ece663c189fa316a14fd306869669ad7e",
+        "after_hash": "sha256:90b4f176169d82862e5558ad55a197a5291cb0e186e4aca9a3af40ccbe18548a"
+      }
+    }
+  ]
+}

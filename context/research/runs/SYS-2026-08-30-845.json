@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-845",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.691366+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.714442+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:79fb2529dd2168c50506bafb056fe14f4aae9e7fc415e2f5b51e80243180473e",
+        "after_hash": "sha256:db4e69d6c1c8adf374b6d656bab20f117bd9b295a0a2118f2f9e692e198a6bbc"
+      }
+    }
+  ]
+}

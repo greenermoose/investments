@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-155",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.796216+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.818298+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ADSK",
+      "symbol": "ADSK",
+      "target_path": "context/data/equities/ADSK.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:13062be1cc9890a9ed994e155a1f8167c865e6bbb5a1f49c81c2f5a10b8b3413",
+        "after_hash": "sha256:6e84d3ec6f74f71a36ddc60614c7dcf0a8a832416a9f930bf1465b540ed00eaf"
+      }
+    }
+  ]
+}

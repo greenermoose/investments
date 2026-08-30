@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-244",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.058977+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.082883+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:2d4f4515560cbc12e3482ff1d85f2ce9ae838247e6138fffeb603f0d10426a9c",
+        "after_hash": "sha256:4ddb5f25dba3af1ecb8d00ce1cac2c113554fa693308ffb62cd5fb3e0aca9705"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-592",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.012140+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.033519+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:ccbfc7e354ae8647aa5a3ce9273c11e9589bdf47ccfa179630d59c014617ef34",
+        "after_hash": "sha256:60cc79e39a7d1fda475f0f9b7087ca92eac3dc90b637f7b1e1f47e0e3d76d804"
+      }
+    }
+  ]
+}

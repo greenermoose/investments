@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-825",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.148331+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.168984+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:814e9f2ef2bb0ec3d76acb3c7f88cc4f8f7627a8041703ea529e0490c141340a"
+      }
+    }
+  ]
+}

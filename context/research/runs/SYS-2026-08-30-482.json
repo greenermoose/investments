@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-482",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.182271+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.201817+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.dividend_profile for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.dividend_profile",
+      "change": {
+        "field": "dividend_profile",
+        "before_hash": "sha256:bfe4cf3ff489a42f57219db478a2921353bba75aee706ef19724ed1092d7fb28",
+        "after_hash": "sha256:d109e39d03b382dc0db1c99abecb26090a5642232496a2361fc0a3d0e874e721"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-821",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.049551+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.071000+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:fe23de60afc67e59b1de4097c362d7484b5726afb824deef3f2e9e539d14cd9b",
+        "after_hash": "sha256:448d0d043b86aec49d616567536cf587dfd837ddc41022a241e3ecb75a0aa2f6"
+      }
+    }
+  ]
+}

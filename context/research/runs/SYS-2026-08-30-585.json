@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-585",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.819993+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.840295+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for BSX",
+      "symbol": "BSX",
+      "target_path": "context/data/equities/BSX.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 575,
+        "after_chars": 575,
+        "before_hash": "sha256:ccc43a5562b0d7eed6162b6c5bb4d2fca806debd08e8f15bfe70a51370e63c01",
+        "after_hash": "sha256:ccc43a5562b0d7eed6162b6c5bb4d2fca806debd08e8f15bfe70a51370e63c01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-326",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.164807+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.186525+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:132b3d4376842bf908a7db3fea67170e3e8459ca486ec931edd790e6c87e3d44",
+        "after_hash": "sha256:099c8e237dcb6fb352c9baee8454fe63727e21f59566d5ef192a29539870259d"
+      }
+    }
+  ]
+}

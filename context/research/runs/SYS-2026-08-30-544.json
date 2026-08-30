@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-544",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.751976+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.771359+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for BLK",
+      "symbol": "BLK",
+      "target_path": "context/data/equities/BLK.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:199510f29d757c2e575870ca46d554e2569ad80ba41f70bd34235da7355564b4",
+        "after_hash": "sha256:b8cdd6d17195ea1b6cc44b07926c1d1acc5ca10a65d06b0074100b2a98522513"
+      }
+    }
+  ]
+}

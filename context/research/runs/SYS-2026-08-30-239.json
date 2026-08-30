@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-239",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.922693+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.944893+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.moat_summary for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.moat_summary",
+      "change": {
+        "field": "moat_summary",
+        "before_chars": 140,
+        "after_chars": 140,
+        "before_hash": "sha256:8ae610056050db82101e58422c9e927a50730f0366d951b6598d9f92655fb30b",
+        "after_hash": "sha256:8ae610056050db82101e58422c9e927a50730f0366d951b6598d9f92655fb30b"
+      }
+    }
+  ]
+}

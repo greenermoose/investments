@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-465",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.723254+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.745075+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for BA",
+      "symbol": "BA",
+      "target_path": "context/data/equities/BA.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:dcc227930781d1b0da6bb1c4404f02ac0efac8036712a0240d5e31ec484617f8",
+        "after_hash": "sha256:1de2bcd71d340794b7e26c29ddd440c4673e2646819437be6fb75a8722d6b7b3"
+      }
+    }
+  ]
+}

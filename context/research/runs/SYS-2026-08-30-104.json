@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-104",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.432751+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.456891+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:2bcbd398eafa096e2c5b12bdac3c5c7898e037dab4590150360a5170c34c12ac",
+        "after_hash": "sha256:7d71f11f5e7846af972660ec8c28a0217ca1c6bf15141c848889dfc28b944c34"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-692",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.608401+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.630571+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for CHTR",
+      "symbol": "CHTR",
+      "target_path": "context/data/equities/CHTR.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:12ccb01b58fb7b83e1e2e8fcd06d5e623b23edf930bbe0b45f7c9c46cfef4dc8"
+      }
+    }
+  ]
+}

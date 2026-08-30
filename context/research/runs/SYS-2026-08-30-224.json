@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-224",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.525532+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.549955+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for ALNY",
+      "symbol": "ALNY",
+      "target_path": "context/data/equities/ALNY.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 576,
+        "after_chars": 576,
+        "before_hash": "sha256:e56cadea5d52679361ecd0242d09253b9fc289e2d2a2106780b3cc661c4ee641",
+        "after_hash": "sha256:e56cadea5d52679361ecd0242d09253b9fc289e2d2a2106780b3cc661c4ee641"
+      }
+    }
+  ]
+}

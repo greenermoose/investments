@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-351",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.788172+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.809413+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for APP",
+      "symbol": "APP",
+      "target_path": "context/data/equities/APP.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:a2d1d0aa0e96c9c8f3a3c15bb93f8fb00b3e7addf359466a1da00754aa161c76",
+        "after_hash": "sha256:e4f6cf1050d50d84b20d7cd2cce4ab5f555b45e0be2f64c62c09ae6102a1185b"
+      }
+    }
+  ]
+}

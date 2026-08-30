@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-516",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.061036+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.084113+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:3f1b1bbafe887b05748b14b223645eff104a20cf922f7c0b85a5ff08e1203eb6",
+        "after_hash": "sha256:a0560ca020ba921e68568cc870e019872e492c077ccf0e02ddacd9e04b5b4c84"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-658",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.693591+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.715261+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CDNS",
+      "symbol": "CDNS",
+      "target_path": "context/data/equities/CDNS.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:308deca6dc051396f19544a10c3c5672fa9702727ff44a3717a38a364d589440",
+        "after_hash": "sha256:a3c8027818157735eeb59b1da35e2fb9a9d18c0785f49a7546971eb109f0b6b9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-555",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.043016+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.066754+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:632a60336aaa830f91f1f3bf6260bb312cd881901922993fe6fe64774cad6044",
+        "after_hash": "sha256:2e8f69a690674091eeee94b921f5102d08c82a140417aea7d5eba80e75a5ce96"
+      }
+    }
+  ]
+}

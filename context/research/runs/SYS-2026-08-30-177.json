@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-177",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.350691+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.374557+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for AEP",
+      "symbol": "AEP",
+      "target_path": "context/data/equities/AEP.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 130,
+        "after_chars": 130,
+        "before_hash": "sha256:1c009e9ae7ae14682c148d973d7156e017b800f6f3128cda3726213c0131e4c9",
+        "after_hash": "sha256:1c009e9ae7ae14682c148d973d7156e017b800f6f3128cda3726213c0131e4c9"
+      }
+    }
+  ]
+}

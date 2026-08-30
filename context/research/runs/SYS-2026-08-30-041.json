@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-041",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.818323+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.837109+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ABNB",
+      "symbol": "ABNB",
+      "target_path": "context/data/equities/ABNB.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:51f6d6b54c07253c02b7dd69297964ea8214f0cfe38f85eb37b4f98295fb5d96",
+        "after_hash": "sha256:99de04fcf025091124e8ffd166de828a327f27f257490557d33f82bb439722bb"
+      }
+    }
+  ]
+}

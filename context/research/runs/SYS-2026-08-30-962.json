@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-962",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.867855+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.888196+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:bbbe961e67e134a2e396cf475d0c3dfaea2c2b72d0e9eb3b1a1a28501689ccd0",
+        "after_hash": "sha256:912efac68a6184205719da4c33d89b8cb88bc04cdd6a5d40517bc31ea9fd4d35"
+      }
+    }
+  ]
+}

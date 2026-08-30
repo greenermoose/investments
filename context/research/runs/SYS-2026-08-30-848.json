@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-848",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.766112+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.785919+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:edfbee70eb807bc30f3f4cbfc49f71507e6cd08a8250437cf49019aabaee9a7d",
+        "after_hash": "sha256:b5b48b7789cccc63617e71483d3b239ca96cb3868bea622d98f5aed9aa129b73"
+      }
+    }
+  ]
+}

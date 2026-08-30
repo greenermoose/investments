@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-720",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.334119+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.353157+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CMCSA",
+      "symbol": "CMCSA",
+      "target_path": "context/data/equities/CMCSA.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:d7326394f9b425fe516441278aec158e09233e55b04e4e2c176b35da2578a16f",
+        "after_hash": "sha256:6074e03c6f3260cfa3ca36e07cfe84221df9e6aa2a087f93a37400866bd55d22"
+      }
+    }
+  ]
+}

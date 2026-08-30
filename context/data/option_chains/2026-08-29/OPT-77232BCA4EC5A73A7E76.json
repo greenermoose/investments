@@ -1,0 +1,47 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "snapshot_id": "OPT-77232BCA4EC5A73A7E76",
+  "symbol": "GOOGL",
+  "observed_at": "2026-08-29T20:15:00Z",
+  "source_locator": "https://www.cboe.com/delayed_quotes/GOOGL/quote_table/",
+  "source_delay_minutes": 15,
+  "underlying_price": 165.0,
+  "risk_free_rate": 0.04,
+  "next_earnings_date": null,
+  "next_dividend_date": null,
+  "raw_content_hash": "d5b6477e831abbdc01e67f99fb727c0009bd76e6ca5522c7d29100df4f5ba6d6",
+  "contracts": [
+    {
+      "option_type": "PUT",
+      "expiration": "2026-10-02",
+      "strike": 150.0,
+      "bid": 3.3,
+      "ask": 3.5,
+      "last": 3.4,
+      "volume": 1450,
+      "open_interest": 6800,
+      "implied_volatility": 0.36,
+      "market_delta": -0.31,
+      "gamma": null,
+      "spread": 0.2,
+      "spread_pct_of_mid": 5.8824
+    },
+    {
+      "option_type": "CALL",
+      "expiration": "2026-10-02",
+      "strike": 200.0,
+      "bid": 5.2,
+      "ask": 5.45,
+      "last": 5.32,
+      "volume": 1100,
+      "open_interest": 4200,
+      "implied_volatility": 0.34,
+      "market_delta": 0.27,
+      "gamma": null,
+      "spread": 0.25,
+      "spread_pct_of_mid": 4.6948
+    }
+  ],
+  "rejected_rows": [],
+  "experimental_warning": "Delayed Friday-close observation for experimental modeling. It is not a live quote, and modeled reservation prices and deltas may be wrong."
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-509",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.860743+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.882729+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for BKNG",
+      "symbol": "BKNG",
+      "target_path": "context/data/equities/BKNG.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 568,
+        "after_chars": 568,
+        "before_hash": "sha256:269e046dc8d419920731148e1b08f8356b142f8c50535892a18c614675737b93",
+        "after_hash": "sha256:269e046dc8d419920731148e1b08f8356b142f8c50535892a18c614675737b93"
+      }
+    }
+  ]
+}

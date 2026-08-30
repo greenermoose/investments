@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-605",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.322129+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.343534+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:21bfdd22897e582354eaeb41badf7ee25f32dd4d23edc599ef3f676c3797c704",
+        "after_hash": "sha256:f54466a7e7cfe44d4df4814490d1528957f8f2145c99b11c56ed2cfb4fe0b13b"
+      }
+    }
+  ]
+}

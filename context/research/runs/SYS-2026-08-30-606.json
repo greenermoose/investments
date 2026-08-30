@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-606",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.346001+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.369613+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:83ae316d1b6692e60dfce360c036e3949debebd764502943bd36de3244086b78",
+        "after_hash": "sha256:5ddb3793d3f9a416163c94ec4ba7086886d26158cfbfbb9a0f215c41f3daad22"
+      }
+    }
+  ]
+}

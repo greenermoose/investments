@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-270",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.718456+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.740463+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for AMGN",
+      "symbol": "AMGN",
+      "target_path": "context/data/equities/AMGN.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:fadd5fe3212ac568e295fa8c557dd8e77eec1cd0499b89a16ce375f3c7053775",
+        "after_hash": "sha256:e105b578c1aeb85bee0e62957d1fa9beab38025cf8238649393ddfc47123e17e"
+      }
+    }
+  ]
+}

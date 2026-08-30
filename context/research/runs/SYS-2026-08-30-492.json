@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-492",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.419536+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.438779+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:69dede142098f3d4519a0a005c8d68d4e3c0abc1add10dca047de9ebde0ddc76",
+        "after_hash": "sha256:913d1b34e436e8aac62d7a9d7797cd61e437b78953124707a660382dd26d9faf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-478",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.078901+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.103421+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:0c9ba043112120a73b95b011ffd2f958621cbb8dea7459f6a33ee655f62d377e",
+        "after_hash": "sha256:9aee56e5f60bbe682739348e7d98159fd2065d19b8a0382dda1139f18d91fadb"
+      }
+    }
+  ]
+}

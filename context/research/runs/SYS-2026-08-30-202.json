@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-202",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.990238+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.009144+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ALGN",
+      "symbol": "ALGN",
+      "target_path": "context/data/equities/ALGN.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:43f163ec6f1a43a0e3d1a8574fd23c6ceaebf734bf1a34f83a6f6b7a2fdf66a8",
+        "after_hash": "sha256:8e4f427338dd24937c44da0bce711b3a9a13ab8e347d999e20ccd8e2aa92b136"
+      }
+    }
+  ]
+}

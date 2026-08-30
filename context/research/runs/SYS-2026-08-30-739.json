@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-739",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.838677+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.861597+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CME",
+      "symbol": "CME",
+      "target_path": "context/data/equities/CME.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:9975d0b5ef786528b3bf8bc9be59dad1b1815b4df1f0e550b89298e16bb0e9c9",
+        "after_hash": "sha256:ce48ebba32683af1f6eff6c1b97cea6b29c3af8879597752e2427e35b0f60125"
+      }
+    }
+  ]
+}

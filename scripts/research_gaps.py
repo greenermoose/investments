@@ -89,8 +89,11 @@ def print_by_role(gaps, symbols, fields, blocked_symbols):
         print("-" * 80)
         for field in sorted(by_role[role], key=lambda f: -len(by_role[role][f])):
             missing = sorted(by_role[role][field])
-            spec = research_store.FIELD_REGISTRY[field]
-            blocks = ", ".join(spec.renders) if spec.renders else "nothing yet"
+            spec = research_store.FIELD_REGISTRY.get(field)
+            if spec is None:
+                blocks = "valuation model, ROI, rating, order proposal"
+            else:
+                blocks = ", ".join(spec.renders) if spec.renders else "nothing yet"
             print(f"  {field}")
             print(f"    missing on {len(missing)} of {len(symbols)} equities; blocks: {blocks}")
             preview = ", ".join(missing[:10])

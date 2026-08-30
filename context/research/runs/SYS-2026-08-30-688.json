@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-688",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.507943+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.529046+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CHTR",
+      "symbol": "CHTR",
+      "target_path": "context/data/equities/CHTR.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:f5eada1e91ee576b3f261fd294615114089fa72a97aa81e5a0d4bacc0e66d9b1",
+        "after_hash": "sha256:31116f24a10c6b0720836ff56d95c4f854f265dceca33d0da84f8122d0d337bc"
+      }
+    }
+  ]
+}

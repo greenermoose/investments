@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-594",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.060737+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.078307+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 530,
+        "after_chars": 530,
+        "before_hash": "sha256:41c9d148e2895804408ed8d882f1eb0da49c53946bd7513fb7a6eae0918d68a7",
+        "after_hash": "sha256:41c9d148e2895804408ed8d882f1eb0da49c53946bd7513fb7a6eae0918d68a7"
+      }
+    }
+  ]
+}

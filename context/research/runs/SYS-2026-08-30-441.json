@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-441",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.115965+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.135780+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for AXP",
+      "symbol": "AXP",
+      "target_path": "context/data/equities/AXP.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:ca1e6d8f45e6bc5a194844d003bb177633fe7f065f1f0af8d357801024776e53",
+        "after_hash": "sha256:466dbf3e491dd7dc887992090a7a0d3c63437ac2ee2b1a28d8a98c3ee85decab"
+      }
+    }
+  ]
+}

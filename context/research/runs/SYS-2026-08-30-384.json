@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-384",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.666256+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.684309+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for ASML",
+      "symbol": "ASML",
+      "target_path": "context/data/equities/ASML.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:50c55deb476e7298c311479561326c62d8becbfbe0e3819e7b35a46a91535719",
+        "after_hash": "sha256:95c627c289315f0dbee41272bbd729954a33cb265257864ada970f0cb3ad9835"
+      }
+    }
+  ]
+}

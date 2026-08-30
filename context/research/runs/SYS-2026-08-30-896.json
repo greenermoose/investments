@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-896",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.129007+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.149475+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:5945483436906f940c277cfe82209fd7c2777e8daf6d5ccd740cbfe5f7b50be3",
+        "after_hash": "sha256:69a3a0647fb3b6d025118dc021461bcd0ff2f4308cead1668ea2d66d40e4fc61"
+      }
+    }
+  ]
+}

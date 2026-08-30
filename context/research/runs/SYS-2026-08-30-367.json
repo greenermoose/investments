@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-367",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.206317+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.229909+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for ARM",
+      "symbol": "ARM",
+      "target_path": "context/data/equities/ARM.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 142,
+        "after_chars": 142,
+        "before_hash": "sha256:c0b7afa897c5172f9454e8968ad5034907e38420f82956dcd24fe1f66ac8592e",
+        "after_hash": "sha256:c0b7afa897c5172f9454e8968ad5034907e38420f82956dcd24fe1f66ac8592e"
+      }
+    }
+  ]
+}

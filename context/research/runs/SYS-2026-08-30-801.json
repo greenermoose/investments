@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-801",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:58.523680+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:58.548495+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CSCO",
+      "symbol": "CSCO",
+      "target_path": "context/data/equities/CSCO.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:13cfdb528c16d092e5049ab8437217bdb51b20ab77b608cf258b7e35aaa082d8",
+        "after_hash": "sha256:6d88b87818bd8934ddc7797ec9c78f5168d11c43ed05797deee4c3371d266164"
+      }
+    }
+  ]
+}

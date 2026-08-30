@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-302",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.550887+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.578020+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for AMZN",
+      "symbol": "AMZN",
+      "target_path": "context/data/equities/AMZN.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:d4201731f04f85c2f7c3a0ea53070175ea44a3f26c092f0dcf6f1e8b9935738f",
+        "after_hash": "sha256:b0e830b00d40bcbf687038c2f818a844ebf1194938f1ea13b792b50eb34cf62b"
+      }
+    }
+  ]
+}

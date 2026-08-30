@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-164",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.030197+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.050391+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ADSK",
+      "symbol": "ADSK",
+      "target_path": "context/data/equities/ADSK.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:89a9384dc3569c31b2f568e973a468d17f2a551a76df0e039bc1f93dad761374",
+        "after_hash": "sha256:af1202cc695b9890db37c1c67f7fe2c0234e9156ffd319425be4b9980738b058"
+      }
+    }
+  ]
+}

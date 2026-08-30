@@ -2,18 +2,18 @@
   "symbol": "FER",
   "cik": "0001468522",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1468522",
-  "last_updated": "2026-08-29T15:31:35.837107+00:00",
+  "last_updated": "2026-08-30T01:51:18.601105+00:00",
   "source": {
     "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-29/CIK0001468522-0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739.json",
-    "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-30/CIK0001468522-0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739.json",
+    "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
     "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
     "verification_status": "SOURCE_OBSERVED"
   },
   "data_layers": {
     "immutable_raw_source_observations": [
-      "context/data/raw/sec/companyfacts/2026-08-29/CIK0001468522-0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739.json"
+      "context/data/raw/sec/companyfacts/2026-08-30/CIK0001468522-0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739.json"
     ],
     "normalized_reported_facts": "fundamental_observations",
     "deterministically_derived_metrics": "filings[].data.derived_metrics",
@@ -29,7 +29,7 @@
       "accession_number": "0001628280-26-011789",
       "fiscal_year": 2025,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "data": {
         "shares_outstanding": 720626181,
@@ -88,7 +88,7 @@
       "accession_number": "0001468522-25-000034",
       "fiscal_year": 2024,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "data": {
         "shares_outstanding": 721806552,
@@ -147,7 +147,7 @@
       "accession_number": "0001468522-25-000034",
       "fiscal_year": 2024,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "data": {
         "shares_outstanding": null,
@@ -216,7 +216,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -238,7 +238,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -260,7 +260,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -282,7 +282,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -304,7 +304,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -326,7 +326,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -348,7 +348,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -370,7 +370,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -392,7 +392,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -414,7 +414,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -436,7 +436,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -458,7 +458,7 @@
       "filed_at": "2026-02-25",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -480,7 +480,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -502,7 +502,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -524,7 +524,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -546,7 +546,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -568,7 +568,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -590,7 +590,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -612,7 +612,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -634,7 +634,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -656,7 +656,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -678,7 +678,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -700,7 +700,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -722,7 +722,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -744,7 +744,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -766,7 +766,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -788,7 +788,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -810,7 +810,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -832,7 +832,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -854,7 +854,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -876,7 +876,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -898,7 +898,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -920,7 +920,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -942,7 +942,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -964,7 +964,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -986,7 +986,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1008,7 +1008,7 @@
       "filed_at": "2025-02-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
-      "retrieved_at": "2026-08-29T15:31:35.837107+00:00",
+      "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
       "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1023,45 +1023,65 @@
       "text": "Global infrastructure operator managing high-margin managed express toll lanes (407 ETR in Toronto, NTE/LBJ Express in Texas) and international airports (Heathrow, JFK T1).",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "business_profile": {
       "text": "Ferrovial SE is a global infrastructure giant that develops, constructs, and operates high-return infrastructure assets, specializing in toll roads (express toll lanes including 407 ETR in Toronto and Managed Lanes in Texas/Virginia), airports (Heathrow, JFK Terminal 1), and urban construction projects worldwide.\n\nFerrovial's competitive advantage centers on long-term concession agreements (often 50 to 99 years) on essential urban transit arteries featuring dynamic congestion pricing that hedges against inflation. Management continues to deploy capital into high-growth North American managed lanes and airport terminal redevelopments, generating predictable, inflation-linked long-term cash distributions.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "competitive_moat_analysis": {
       "text": "Ferrovial SE holds a global infrastructure monopoly moat, developing and operating high-concession toll roads (Managed Express Lanes) and airports across North America and Europe. Its flagship assets\u2014including the 407 ETR in Toronto and dynamic Express Lanes in Texas and Virginia\u2014operate under long-duration 50-to-99-year concession agreements with dynamic toll pricing that adjusts in real time with traffic congestion, generating inflation-protected recurring cash flow.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "moat_summary": {
       "text": "Perpetual/multi-decade exclusive concessions on essential urban highway corridors with dynamic congestion toll pricing power.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "latest_catalyst": {
       "text": "US Nasdaq primary listing liquidity and JFK New Terminal One opening.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "off_balance_sheet_and_contingent_liabilities": {
@@ -1069,9 +1089,13 @@
       "narrative": "Forensic review of latest Tier 1 filings for Ferrovial SE indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1468522"
+        "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
+        "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
+        "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
+        "verification_status": "SOURCE_OBSERVED",
+        "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739"
       }
     },
     "invalidation_criteria": {
@@ -1080,9 +1104,13 @@
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "catalyst_timeline": {
@@ -1098,21 +1126,36 @@
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "valuation_parameters": {
-      "annual_revenue_growth": 0.1,
-      "target_ps_multiple_multiplier": 0.92,
+      "valuation_method": "EARNINGS",
+      "valuation_inputs": {
+        "current_metric_per_share": 1.7235,
+        "annual_metric_growth": 0.0525,
+        "target_multiple": 34.076
+      },
       "annual_share_dilution_rate": 0.015,
-      "conviction_score": 6.5,
+      "conviction_score": 5.5,
+      "opportunity_cost_annualized": 0.2,
+      "uncertainty_score": 0.45,
+      "horizon_years": 3.0,
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "tam_and_market_share": {
@@ -1121,9 +1164,13 @@
       "narrative": "Ferrovial SE operates in a total addressable market we size at approximately $44.9B, implying room to grow share from current revenue of roughly $11.23B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Industrials. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "capital_strategy": {
@@ -1135,9 +1182,13 @@
       "narrative": "Ferrovial SE allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $4.61B cash and $11.26B total debt, grounding liquidity assessment in Tier 1 data.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1468522"
+        "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
+        "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
+        "retrieved_at": "2026-08-30T01:51:18.601105+00:00",
+        "verification_status": "SOURCE_OBSERVED",
+        "raw_content_hash": "0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739"
       }
     },
     "stock_based_compensation": {
@@ -1149,9 +1200,13 @@
       "narrative": "Stock-based compensation is modeled at approximately 6.0% of revenue for Infrastructure Concessions & Toll Roads peers, with net dilution partially offset by repurchases where authorized.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "dividend_profile": {
@@ -1161,34 +1216,83 @@
       "annual_dividend_growth_pct": 0.0,
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "revenue_drivers_narrative": {
       "text": "The 13-quarter revenue path for Ferrovial SE is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Ferrovial SE is a global infrastructure giant that develops, constructs, and operates high-return infrastructure assets, specializing in toll roads (express toll lanes including 407 ETR in Toronto and Managed Lanes in Texas/Virginia), airports (Heathrow, JFK Terminal 1), and urban construction projects worldwide.\n\nFerrovial's competitive advantage centers on long-term concession agreements (often",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "valuation_ps_multiple_narrative": {
       "text": "Ferrovial SE is valued on a price-to-sales basis consistent with Industrials leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "experiment_status": "EXPERIMENTAL",
-    "research_status": "UNVERIFIED_PLACEHOLDER",
+    "research_status": "AGENT_AUTHORED_EXPERIMENTAL",
     "as_of_date": "2026-08-29",
-    "authoring_model": "legacy-unknown",
-    "prompt_version": "legacy-unknown"
+    "authoring_model": "cursor-agent-experimental-research-batch",
+    "prompt_version": "context/prompts/thesis_authoring.md",
+    "forecast_scenarios": {
+      "bear": {
+        "probability": 0.25,
+        "price_target": 47.15,
+        "annual_revenue_growth": -0.0275,
+        "rationale": "Bear case for FER assumes demand normalization, multiple compression, and execution risk that leaves the shares near $47.15 over the modeled horizon."
+      },
+      "base": {
+        "probability": 0.5,
+        "price_target": 65.48,
+        "annual_revenue_growth": 0.0525,
+        "rationale": "Base case for FER extrapolates observed SEC filing trends and the authored valuation method, implying a $65.48 price target if margins and growth track filings."
+      },
+      "bull": {
+        "probability": 0.25,
+        "price_target": 88.4,
+        "annual_revenue_growth": 0.1525,
+        "rationale": "Bull case for FER assumes sustained operating leverage, favorable mix, and multiple expansion toward $88.40 if catalysts in the dossier materialize."
+      },
+      "uncertainty": "Scenario spread for FER reflects filing-limited visibility, macro sensitivity, and the experimental nature of forward multiples; outcomes may diverge materially from these bands.",
+      "evidence_refs": [
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001468522.json",
+        "context/data/raw/sec/companyfacts/2026-08-30/CIK0001468522-0ec080f9fe526f9cb6431de20e3c9af5428a2d87f11fb0b4d4a6f0efcdaa3739.json"
+      ],
+      "opportunity_cost_annualized": 0.2,
+      "uncertainty_score": 0.45,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-29",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
+      }
+    }
   },
-  "research_last_updated": "2026-08-29T12:08:34.704831+00:00"
+  "research_last_updated": "2026-08-30T02:56:28.244073+00:00"
 }

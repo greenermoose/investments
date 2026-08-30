@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-871",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.378903+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.398412+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CSX",
+      "symbol": "CSX",
+      "target_path": "context/data/equities/CSX.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:11f90239981f5adf810de9ebc1b85f1c1566732f62c0a579604ec35c8e578587",
+        "after_hash": "sha256:7b8befb6d501d842f2ea0055e46b227e20f1e019334657fc4da2551463f9801b"
+      }
+    }
+  ]
+}

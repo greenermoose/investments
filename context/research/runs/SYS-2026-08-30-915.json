@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-915",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.628647+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.652597+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:d25cf8363811ee30551a21ee5f2bebbc175bdaa2b3b9a5970a85eba40d92196e",
+        "after_hash": "sha256:dcdc6ab05330d9e1326d2be0f944b18d6fea2fd8945b6508f443032805f0f576"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-430",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.830076+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.851448+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AXON",
+      "symbol": "AXON",
+      "target_path": "context/data/equities/AXON.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:40769634276a7c0dd179e90b859e77e8ba94dc1a6a514bff478885a394d24e0d",
+        "after_hash": "sha256:b23588ad576776af4986786c569c372cf397a01869d7dcdec8fd1ea82798ecc2"
+      }
+    }
+  ]
+}

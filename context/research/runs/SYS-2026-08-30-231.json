@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-231",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.716969+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.738321+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:8d442281e25a7a5ce4016f5283e1b3d9fe1ce59cc3631660398f4fdf183f1077",
+        "after_hash": "sha256:e829c09df17d915ace86fecf0d6796fb59fa2c983b0d8a2a264f5bb38c48df98"
+      }
+    }
+  ]
+}

@@ -2,18 +2,18 @@
   "symbol": "TSM",
   "cik": "0001046179",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
-  "last_updated": "2026-08-29T15:32:37.250419+00:00",
+  "last_updated": "2026-08-30T01:52:18.565625+00:00",
   "source": {
     "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-29/CIK0001046179-d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a.json",
-    "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-30/CIK0001046179-d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a.json",
+    "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
     "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
     "verification_status": "SOURCE_OBSERVED"
   },
   "data_layers": {
     "immutable_raw_source_observations": [
-      "context/data/raw/sec/companyfacts/2026-08-29/CIK0001046179-d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a.json"
+      "context/data/raw/sec/companyfacts/2026-08-30/CIK0001046179-d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a.json"
     ],
     "normalized_reported_facts": "fundamental_observations",
     "deterministically_derived_metrics": "filings[].data.derived_metrics",
@@ -29,7 +29,7 @@
       "accession_number": "0001193125-25-083423",
       "fiscal_year": 2024,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186546648,
@@ -88,7 +88,7 @@
       "accession_number": "0001193125-24-099840",
       "fiscal_year": 2023,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186414198,
@@ -147,7 +147,7 @@
       "accession_number": "0001193125-23-107214",
       "fiscal_year": 2022,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -206,7 +206,7 @@
       "accession_number": "0001193125-22-104891",
       "fiscal_year": 2021,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -265,7 +265,7 @@
       "accession_number": "0001193125-21-301021",
       "fiscal_year": null,
       "fiscal_period": null,
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -324,7 +324,7 @@
       "accession_number": "0001193125-21-118512",
       "fiscal_year": 2020,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -383,7 +383,7 @@
       "accession_number": "0001193125-20-107579",
       "fiscal_year": 2019,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -442,7 +442,7 @@
       "accession_number": "0001193125-19-108390",
       "fiscal_year": 2018,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -501,7 +501,7 @@
       "accession_number": "0001193125-18-121866",
       "fiscal_year": 2017,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "data": {
         "shares_outstanding": 5186076092,
@@ -570,7 +570,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -592,7 +592,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -614,7 +614,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -636,7 +636,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -658,7 +658,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -680,7 +680,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -702,7 +702,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -724,7 +724,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -746,7 +746,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -768,7 +768,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -790,7 +790,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -812,7 +812,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -834,7 +834,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -856,7 +856,7 @@
       "filed_at": "2025-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -878,7 +878,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -900,7 +900,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -922,7 +922,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -944,7 +944,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -966,7 +966,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -988,7 +988,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1010,7 +1010,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1032,7 +1032,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1054,7 +1054,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1076,7 +1076,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1098,7 +1098,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1120,7 +1120,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1142,7 +1142,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1164,7 +1164,7 @@
       "filed_at": "2024-04-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1186,7 +1186,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1208,7 +1208,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1230,7 +1230,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1252,7 +1252,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1274,7 +1274,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1296,7 +1296,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1318,7 +1318,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1340,7 +1340,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1362,7 +1362,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1384,7 +1384,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1406,7 +1406,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1428,7 +1428,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1450,7 +1450,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1472,7 +1472,7 @@
       "filed_at": "2023-04-20",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1494,7 +1494,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1516,7 +1516,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1538,7 +1538,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1560,7 +1560,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1582,7 +1582,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1604,7 +1604,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1626,7 +1626,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1648,7 +1648,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1670,7 +1670,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1692,7 +1692,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1714,7 +1714,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1736,7 +1736,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1758,7 +1758,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1780,7 +1780,7 @@
       "filed_at": "2022-04-14",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1802,7 +1802,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1824,7 +1824,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1846,7 +1846,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1868,7 +1868,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1890,7 +1890,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1912,7 +1912,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1934,7 +1934,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1956,7 +1956,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1978,7 +1978,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2000,7 +2000,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2022,7 +2022,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2044,7 +2044,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2066,7 +2066,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2088,7 +2088,7 @@
       "filed_at": "2021-10-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2110,7 +2110,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2132,7 +2132,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2154,7 +2154,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2176,7 +2176,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2198,7 +2198,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2220,7 +2220,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2242,7 +2242,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2264,7 +2264,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2286,7 +2286,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2308,7 +2308,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2330,7 +2330,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2352,7 +2352,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2374,7 +2374,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2396,7 +2396,7 @@
       "filed_at": "2021-04-16",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2418,7 +2418,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2440,7 +2440,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2462,7 +2462,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2484,7 +2484,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2506,7 +2506,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2528,7 +2528,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2550,7 +2550,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2572,7 +2572,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2594,7 +2594,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2616,7 +2616,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2638,7 +2638,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2660,7 +2660,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2682,7 +2682,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2704,7 +2704,7 @@
       "filed_at": "2020-04-15",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2726,7 +2726,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2748,7 +2748,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2770,7 +2770,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2792,7 +2792,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2814,7 +2814,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2836,7 +2836,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2858,7 +2858,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2880,7 +2880,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2902,7 +2902,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2924,7 +2924,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2946,7 +2946,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2968,7 +2968,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2990,7 +2990,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3012,7 +3012,7 @@
       "filed_at": "2019-04-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3034,7 +3034,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3056,7 +3056,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3078,7 +3078,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3100,7 +3100,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3122,7 +3122,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3144,7 +3144,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3166,7 +3166,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3188,7 +3188,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3210,7 +3210,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3232,7 +3232,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3254,7 +3254,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3276,7 +3276,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3298,7 +3298,7 @@
       "filed_at": "2018-04-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "retrieved_at": "2026-08-29T15:32:37.250419+00:00",
+      "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
       "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3313,45 +3313,65 @@
       "text": "World's largest dedicated semiconductor foundry, manufacturing advanced silicon (3nm, 2nm, CoWoS packaging) for leading global chip designers.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "business_profile": {
       "text": "Taiwan Semiconductor Manufacturing Company Limited (TSMC) is the world's largest and most technologically advanced dedicated pure-play semiconductor foundry. The company manufactures advanced logic integrated circuits, high-performance computing (HPC) processors, AI accelerators, mobile system-on-chips (SoCs), and automotive silicon for leading global fabless semiconductor designers including NVIDIA, Apple, AMD, Qualcomm, and Broadcom.\n\nTSMC operates the global semiconductor industry's most sophisticated manufacturing fabs, pioneering leading-edge process nodes (N3, N2, and A16 GAA transistor architectures) alongside advanced packaging solutions (CoWoS, InFO, and SoIC). Management is executing a strategic global manufacturing footprint expansion across Taiwan, the United States (Arizona), Japan (Kumamoto), and Europe (Dresden), capturing substantial secular growth from artificial intelligence computing infrastructure and high-performance silicon demand.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "competitive_moat_analysis": {
       "text": "TSMC commands an extraordinary wide economic moat anchored by immense technological leadership, insurmountable manufacturing scale, and billions in annual capital expenditures ($30B+ per year) that create insurmountable barriers to entry. TSMC manufactures more than 90% of the world's advanced computing and AI logic chips, benefiting from unmatched process yield optimization, steep learning curve advantages, and deep co-engineering partnerships with every major hyperscaler and chip designer. Customers face prohibitive switching costs and yield degradation risks when attempting to migrate leading-edge wafer fabrication to competing foundries.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "moat_summary": {
       "text": "TSMC commands an extraordinary wide economic moat anchored by immense technological leadership, insurmountable manufacturing scale, and billions in annual capital expenditures ($30B+ per year) that create insurmountable barriers to entry. TSMC manufactures more than 90% of the world's advanced compu",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "latest_catalyst": {
       "text": "Next earnings release and operational guidance update for Taiwan Semiconductor Manufacturing Company Limited, with revenue and margin trajectory versus prior SEC filings.",
       "provenance": {
         "authored_by": "Equity Research Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "off_balance_sheet_and_contingent_liabilities": {
@@ -3359,9 +3379,13 @@
       "narrative": "Forensic review of latest Tier 1 filings for Taiwan Semiconductor Manufacturing Company Limited indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1046179"
+        "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
+        "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
+        "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
+        "verification_status": "SOURCE_OBSERVED",
+        "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a"
       }
     },
     "invalidation_criteria": {
@@ -3370,9 +3394,13 @@
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "catalyst_timeline": {
@@ -3388,21 +3416,36 @@
       ],
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "valuation_parameters": {
-      "annual_revenue_growth": 0.1,
-      "target_ps_multiple_multiplier": 0.92,
+      "valuation_method": "EARNINGS",
+      "valuation_inputs": {
+        "current_metric_per_share": 6.8063,
+        "annual_metric_growth": 0.2503,
+        "target_multiple": 40.0
+      },
       "annual_share_dilution_rate": 0.015,
-      "conviction_score": 6.5,
+      "conviction_score": 6.0,
+      "opportunity_cost_annualized": 0.2,
+      "uncertainty_score": 0.45,
+      "horizon_years": 3.0,
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "tam_and_market_share": {
@@ -3411,9 +3454,13 @@
       "narrative": "Taiwan Semiconductor Manufacturing Company Limited operates in a total addressable market we size at approximately $441.3B, implying room to grow share from current revenue of roughly $88.27B TTM. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Information Technology. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "capital_strategy": {
@@ -3425,9 +3472,13 @@
       "narrative": "Taiwan Semiconductor Manufacturing Company Limited allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $65.25B cash and $0.00B total debt, grounding liquidity assessment in Tier 1 data.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_1_PRIMARY_REGULATORY",
-        "source_locator": "https://www.sec.gov/edgar/browse/?CIK=1046179"
+        "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
+        "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
+        "retrieved_at": "2026-08-30T01:52:18.565625+00:00",
+        "verification_status": "SOURCE_OBSERVED",
+        "raw_content_hash": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a"
       }
     },
     "stock_based_compensation": {
@@ -3439,9 +3490,13 @@
       "narrative": "Stock-based compensation is modeled at approximately 8.0% of revenue for Semiconductors peers, with net dilution partially offset by repurchases where authorized.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "dividend_profile": {
@@ -3451,34 +3506,83 @@
       "annual_dividend_growth_pct": 0.0,
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "revenue_drivers_narrative": {
       "text": "The 13-quarter revenue path for Taiwan Semiconductor Manufacturing Company Limited is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Taiwan Semiconductor Manufacturing Company Limited (TSMC) is the world's largest and most technologically advanced dedicated pure-play semiconductor foundry. The company manufactures advanced logic integrated circuits, high-performance computing (HPC) processors, AI accelerators, mobile system-on-chips (SoCs), and automotive silicon for leading global fabless semiconductor designers including NVID",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "valuation_ps_multiple_narrative": {
       "text": "Taiwan Semiconductor Manufacturing Company Limited is valued on a price-to-sales basis consistent with Information Technology leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.",
       "provenance": {
         "authored_by": "Investment Thesis Agent",
-        "authored_date": "2026-08-28",
+        "authored_date": "2026-08-29",
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
-        "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
       }
     },
     "experiment_status": "EXPERIMENTAL",
-    "research_status": "UNVERIFIED_PLACEHOLDER",
+    "research_status": "AGENT_AUTHORED_EXPERIMENTAL",
     "as_of_date": "2026-08-29",
-    "authoring_model": "legacy-unknown",
-    "prompt_version": "legacy-unknown"
+    "authoring_model": "cursor-agent-experimental-research-batch",
+    "prompt_version": "context/prompts/thesis_authoring.md",
+    "forecast_scenarios": {
+      "bear": {
+        "probability": 0.25,
+        "price_target": 366.37,
+        "annual_revenue_growth": 0.1703,
+        "rationale": "Bear case for TSM assumes demand normalization, multiple compression, and execution risk that leaves the shares near $366.37 over the modeled horizon."
+      },
+      "base": {
+        "probability": 0.5,
+        "price_target": 508.85,
+        "annual_revenue_growth": 0.2503,
+        "rationale": "Base case for TSM extrapolates observed SEC filing trends and the authored valuation method, implying a $508.85 price target if margins and growth track filings."
+      },
+      "bull": {
+        "probability": 0.25,
+        "price_target": 686.95,
+        "annual_revenue_growth": 0.3503,
+        "rationale": "Bull case for TSM assumes sustained operating leverage, favorable mix, and multiple expansion toward $686.95 if catalysts in the dossier materialize."
+      },
+      "uncertainty": "Scenario spread for TSM reflects filing-limited visibility, macro sensitivity, and the experimental nature of forward multiples; outcomes may diverge materially from these bands.",
+      "evidence_refs": [
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
+        "context/data/raw/sec/companyfacts/2026-08-30/CIK0001046179-d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a.json"
+      ],
+      "opportunity_cost_annualized": 0.2,
+      "uncertainty_score": 0.45,
+      "provenance": {
+        "authored_by": "Investment Thesis Agent",
+        "authored_date": "2026-08-29",
+        "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "source_class": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
+        "retrieved_at": "2026-08-29T00:00:00+00:00",
+        "verification_status": "MODEL_SUPPLIED",
+        "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "runtime_context_signature": "System clock 2026-08-29; role Investment Thesis Agent; author_experimental_research.py sector batch promotion"
+      }
+    }
   },
-  "research_last_updated": "2026-08-29T12:08:34.843586+00:00"
+  "research_last_updated": "2026-08-30T02:56:31.318361+00:00"
 }

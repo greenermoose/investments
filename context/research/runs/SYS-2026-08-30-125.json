@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-125",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.971464+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.991319+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.moat_summary for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.moat_summary",
+      "change": {
+        "field": "moat_summary",
+        "before_chars": 137,
+        "after_chars": 137,
+        "before_hash": "sha256:e3df01d0760dd95f33bc21757b952f2ffcfe7ea62f5969e7235fb6f06ee49c0f",
+        "after_hash": "sha256:e3df01d0760dd95f33bc21757b952f2ffcfe7ea62f5969e7235fb6f06ee49c0f"
+      }
+    }
+  ]
+}

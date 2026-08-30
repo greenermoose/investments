@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-973",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.190603+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.211385+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for DE",
+      "symbol": "DE",
+      "target_path": "context/data/equities/DE.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:4edcc48beb72682af5bfcc142dc117d8928ef2efea5747a0023398d4818cddad",
+        "after_hash": "sha256:af709ad831dc2f34736c7bbb6108b740a789e937f07120a7f40a96a2e7de7c45"
+      }
+    }
+  ]
+}

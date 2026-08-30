@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-753",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.241480+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.261572+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:19b0743678fd29484041d6814d44d362625be8dc8ab346da3f3aee01aea807b9",
+        "after_hash": "sha256:34c4e4439e3025ea78ca434241a7581e623ac8ee42b8e0eaa1c3fa723afb0999"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-411",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.327062+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.348508+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AVGO",
+      "symbol": "AVGO",
+      "target_path": "context/data/equities/AVGO.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:9122438d7c23d97d9f8a029bfce7eb53a9f7b86b149e32baa012b48524aa03a4",
+        "after_hash": "sha256:00397171e9a049f35892d676571dc90807cef35206e3557364020a0f7264db84"
+      }
+    }
+  ]
+}

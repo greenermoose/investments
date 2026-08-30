@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-325",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.143056+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.162473+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.business_profile for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.business_profile",
+      "change": {
+        "field": "business_profile",
+        "before_chars": 869,
+        "after_chars": 869,
+        "before_hash": "sha256:d9b64cb1c2f596df1d1485eda6b98729beb9be4856661d61a929ef569758dbc8",
+        "after_hash": "sha256:d9b64cb1c2f596df1d1485eda6b98729beb9be4856661d61a929ef569758dbc8"
+      }
+    }
+  ]
+}

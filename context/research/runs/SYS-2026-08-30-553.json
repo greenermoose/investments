@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-553",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.993496+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.015556+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.business_profile for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.business_profile",
+      "change": {
+        "field": "business_profile",
+        "before_chars": 976,
+        "after_chars": 976,
+        "before_hash": "sha256:c2ba7e616717973dab70bcddc32c8250ed889ab9da5a5464aa6a5373417c3374",
+        "after_hash": "sha256:c2ba7e616717973dab70bcddc32c8250ed889ab9da5a5464aa6a5373417c3374"
+      }
+    }
+  ]
+}

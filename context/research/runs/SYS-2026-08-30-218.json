@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-218",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.380575+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.402213+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ALNY",
+      "symbol": "ALNY",
+      "target_path": "context/data/equities/ALNY.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:8fac027e51a57f6616b02660f98d07316dd5df2c76198410e6c136ab21754277",
+        "after_hash": "sha256:d3f0b6ac43260d40659ba56cf8b948e95337ac429417d1e6c126901019888fbb"
+      }
+    }
+  ]
+}

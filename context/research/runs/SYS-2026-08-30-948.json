@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-948",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.497016+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.519832+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for DASH",
+      "symbol": "DASH",
+      "target_path": "context/data/equities/DASH.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:996baa35b08b431280398936469cf45fef4103f51dda5bf13d45ad8035b52468",
+        "after_hash": "sha256:465d36526af9238db6d0b192b4633f460e4958724d678bea8e29188bc795417d"
+      }
+    }
+  ]
+}

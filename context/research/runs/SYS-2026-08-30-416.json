@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-416",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.449110+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.470534+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for AVGO",
+      "symbol": "AVGO",
+      "target_path": "context/data/equities/AVGO.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:2b92431400c8f71be4caa27e57389c21543e887b3eeb7145374251893f12730b",
+        "after_hash": "sha256:6aacfa470dc3124534039ea9f08142f6667a6f6c49fda0f3a63d4311e14a6e27"
+      }
+    }
+  ]
+}

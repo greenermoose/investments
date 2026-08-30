@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-074",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.615901+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.641088+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ABT",
+      "symbol": "ABT",
+      "target_path": "context/data/equities/ABT.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:935b89ce51aad97a0c12c4d47b9cf2ada4e71b9d5e084b140b04181e99b2eac2",
+        "after_hash": "sha256:7fcd622c7c8b75dffc076bf1aa837034225259c7d5c0cbc4492a7c5433959dc5"
+      }
+    }
+  ]
+}

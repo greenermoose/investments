@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-744",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.003280+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.023106+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:860f34a78ade22e923577c9da2a59469a31854cf2878b227dfa32e44c309a67d",
+        "after_hash": "sha256:e989be55a1625e405d27a68d387cd9d4163f1d35b3196aff0ae1497129deb1d0"
+      }
+    }
+  ]
+}

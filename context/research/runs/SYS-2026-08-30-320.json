@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-320",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.003173+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.024747+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ANET",
+      "symbol": "ANET",
+      "target_path": "context/data/equities/ANET.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:1f55b320587c73df8b876d3d6bf895768a2217b753207bbafce0acaafdf1a723",
+        "after_hash": "sha256:700d090754d3bfda9f1eed107ef1e52d270447661b5e9df2e6c1dae2db2baf97"
+      }
+    }
+  ]
+}

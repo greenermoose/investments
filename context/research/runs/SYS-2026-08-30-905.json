@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-905",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.344391+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.363881+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:6a62747bad444be4c61934359a995a4a064b98a5a5e37e186f6e3dd46d88b4ea",
+        "after_hash": "sha256:e766be64b613d0bb28e6c90d7f747c3ec4eb1de39054855ad6b779d22e64fae7"
+      }
+    }
+  ]
+}

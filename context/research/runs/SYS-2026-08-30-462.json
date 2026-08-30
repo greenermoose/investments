@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-462",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.651896+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.674165+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for BA",
+      "symbol": "BA",
+      "target_path": "context/data/equities/BA.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 120,
+        "after_chars": 120,
+        "before_hash": "sha256:0a38b4f68720f74b2281420632558be86710d27e904238c7100290c8fd75a308",
+        "after_hash": "sha256:0a38b4f68720f74b2281420632558be86710d27e904238c7100290c8fd75a308"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-366",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.186506+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.203856+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for ARM",
+      "symbol": "ARM",
+      "target_path": "context/data/equities/ARM.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 634,
+        "after_chars": 634,
+        "before_hash": "sha256:78b2eb0981883764186cefe9c5046d5c95ac584ed09c8d287d509d8d02e6d832",
+        "after_hash": "sha256:78b2eb0981883764186cefe9c5046d5c95ac584ed09c8d287d509d8d02e6d832"
+      }
+    }
+  ]
+}

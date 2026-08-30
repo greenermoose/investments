@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-212",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.238502+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.260302+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ALNY",
+      "symbol": "ALNY",
+      "target_path": "context/data/equities/ALNY.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:af040bb116ac182ef65cbaaebc621b7a202d7e5557eaf0edde92c859c325e2cd",
+        "after_hash": "sha256:e36d5371ed00ebb1c75c58f386e7245af2fe75176334ed030e8f29b4f3721204"
+      }
+    }
+  ]
+}

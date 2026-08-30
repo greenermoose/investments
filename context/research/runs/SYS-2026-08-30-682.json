@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-682",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.330001+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.356005+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CEG",
+      "symbol": "CEG",
+      "target_path": "context/data/equities/CEG.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:369315c1e8cfc7377536fbe9faf5de9464099283f738378fbc6f9ca9468a0dcd",
+        "after_hash": "sha256:3295ca98d6f94c194ce099e6c286fa8d1f9469fe7d084c94c5ae576930b1bdb0"
+      }
+    }
+  ]
+}

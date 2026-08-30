@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-715",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.216634+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.237295+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CMCSA",
+      "symbol": "CMCSA",
+      "target_path": "context/data/equities/CMCSA.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:51f6f679a1975fd804a376458b55ab7aee87fb417bf95dd4672d3a0964a336c2",
+        "after_hash": "sha256:4f0c65acf22d89f6a0e3ca538dae06b2a2594ed08d458a6634abf56cdd22e311"
+      }
+    }
+  ]
+}

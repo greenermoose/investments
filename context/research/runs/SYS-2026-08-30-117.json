@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-117",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.775024+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.793564+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:c64aa23d729e6036b137d2bd2a43ab844cf5a3c1bb99c527c7a124a04c337948",
+        "after_hash": "sha256:c173d4293e847a06d195d406bfb947162bfee004de5b2abd39b8f2240a63868d"
+      }
+    }
+  ]
+}

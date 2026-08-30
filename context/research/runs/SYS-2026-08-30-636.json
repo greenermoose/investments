@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-636",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.122981+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.144103+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CCEP",
+      "symbol": "CCEP",
+      "target_path": "context/data/equities/CCEP.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:90f5b247fcc1028eb3235306579079cb6a91ba8527aa5ea5fc566de83ebb2e02",
+        "after_hash": "sha256:365334b55fb9b4d9e3b1e434ae0af0736ef2b95b8bb0629360d49d3b54854f7f"
+      }
+    }
+  ]
+}

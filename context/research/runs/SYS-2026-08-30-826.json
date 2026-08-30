@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-826",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.173384+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.194670+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:0cda1d90fe2a601ba5e75a8bf30f178c8f5c4de71ca1407d9bb199bb3750b148",
+        "after_hash": "sha256:cfa8f80cc472fdefd922f98c0ca949e6afc235c1134afc63631ea9aaa1f96f5a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-481",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.157466+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.180248+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 133,
+        "after_chars": 133,
+        "before_hash": "sha256:36216efba2f48f693111395e04763c7b74c5b8f1ab2ff886ad465b70c92d3bc3",
+        "after_hash": "sha256:36216efba2f48f693111395e04763c7b74c5b8f1ab2ff886ad465b70c92d3bc3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-631",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.001217+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.021869+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CCEP",
+      "symbol": "CCEP",
+      "target_path": "context/data/equities/CCEP.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:a3a3a2b54e267c90f2427328b1672b707efb3f2892fad9c0f11c70c3142a64de",
+        "after_hash": "sha256:7ac4ecc8fe14b5849d9284a1e5d1d061d5093b86389624014474c2816c957fa5"
+      }
+    }
+  ]
+}

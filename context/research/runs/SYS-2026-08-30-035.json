@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-035",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.666642+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.685643+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ABBV",
+      "symbol": "ABBV",
+      "target_path": "context/data/equities/ABBV.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:e7399b62fa62ca0a3c0fab22ec48d1421411a010fe2888401d30bee3feaf4467",
+        "after_hash": "sha256:ec65f8e12b8df9ef322ddcc8f1b8169508b25af1dcbf4781c8e0b2833ea36197"
+      }
+    }
+  ]
+}

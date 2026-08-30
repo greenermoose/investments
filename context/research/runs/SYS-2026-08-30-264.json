@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-264",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.562414+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.581473+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:02f682ea460c8224de02678a8991b85c06f35f917e42b452fd0c56e210021cc0",
+        "after_hash": "sha256:f4ed7a6ff2277123ca798ad13455804c8586e9bb94157e5ed5773eaf5b6612e8"
+      }
+    }
+  ]
+}

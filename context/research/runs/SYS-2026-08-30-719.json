@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-719",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.311187+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.330641+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CMCSA",
+      "symbol": "CMCSA",
+      "target_path": "context/data/equities/CMCSA.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:17614991c932169c7394b8b2ef55c597f9922bb63b22386a22685a74fed23b34",
+        "after_hash": "sha256:b9bd84d2c496742a485b729f326beb9eda643aae217b7b44c3626f32d29ad172"
+      }
+    }
+  ]
+}

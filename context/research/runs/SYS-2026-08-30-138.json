@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-138",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.321558+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.343430+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for ADP",
+      "symbol": "ADP",
+      "target_path": "context/data/equities/ADP.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 559,
+        "after_chars": 559,
+        "before_hash": "sha256:5da24f92eadfdfed0ab4f9ae3238f3379ba82e1914f7e51e0434f003b061b0c7",
+        "after_hash": "sha256:5da24f92eadfdfed0ab4f9ae3238f3379ba82e1914f7e51e0434f003b061b0c7"
+      }
+    }
+  ]
+}

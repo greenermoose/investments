@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-985",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.494510+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.513692+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for DE",
+      "symbol": "DE",
+      "target_path": "context/data/equities/DE.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:8545689c399147c39417ae9d0e1357a2fd4714953abe88204f701847b55f3b0e",
+        "after_hash": "sha256:a1da24490d5b0762c1c25df90ec37c63a1d33a7b053931e6ff5dfb3c819377bf"
+      }
+    }
+  ]
+}

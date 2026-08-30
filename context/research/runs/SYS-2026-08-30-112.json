@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-112",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.637412+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.655553+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:8210e00ba6a25dcdac0f986d8169f68445b56d6f0cba194f0b6f392c4353c80b",
+        "after_hash": "sha256:a6b55fa871064a7f3a1d2dc2e5cabeb31a87d1c53bb4f4beaae3d014d59ea8aa"
+      }
+    }
+  ]
+}

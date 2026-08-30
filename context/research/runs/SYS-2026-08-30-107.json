@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-107",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.518937+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.539145+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:f42db1a81f326492aa50441a879493e0564294cbe787a934a6c620e30e4c7a72",
+        "after_hash": "sha256:650523edbb9dc75f7cee5f688a7d8f28cad0c6b3eddc388afa072fa0c3ccbcad"
+      }
+    }
+  ]
+}

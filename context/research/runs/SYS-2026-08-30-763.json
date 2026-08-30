@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-763",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.512663+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.533223+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CPRT",
+      "symbol": "CPRT",
+      "target_path": "context/data/equities/CPRT.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:6fb7c578128563b08a4fa0c2bc49d3b58e3b77295787e83d78e6569bda4ff86d",
+        "after_hash": "sha256:ca4889a5738a4d675b6e19b5879440ac3be0569d85f8b154d82a91fd9cbc0cfe"
+      }
+    }
+  ]
+}

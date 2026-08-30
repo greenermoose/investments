@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-703",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.895152+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.917853+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for CHTR",
+      "symbol": "CHTR",
+      "target_path": "context/data/equities/CHTR.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 237,
+        "after_chars": 237,
+        "before_hash": "sha256:319e7abf06db79552db4be351bf567b867feebbe24e34c326346dbfb4560be79",
+        "after_hash": "sha256:319e7abf06db79552db4be351bf567b867feebbe24e34c326346dbfb4560be79"
+      }
+    }
+  ]
+}

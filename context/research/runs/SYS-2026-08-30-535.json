@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-535",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.543807+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.561864+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for BLK",
+      "symbol": "BLK",
+      "target_path": "context/data/equities/BLK.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:a098af48a6c5a84aff1aa5137561eaf94f7561706f17f4201cf6b1d3ace8f92b",
+        "after_hash": "sha256:cbdd5fd3a95c153d4fa938692bb4947dea2abc5801b2f0c222fb0da40d6070fd"
+      }
+    }
+  ]
+}

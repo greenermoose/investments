@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-208",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.127879+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.148115+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for ALGN",
+      "symbol": "ALGN",
+      "target_path": "context/data/equities/ALGN.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:852ac26f1038d51d224f07a46957c6d54445d87a7d59bfa02381abfa0369c3cd"
+      }
+    }
+  ]
+}

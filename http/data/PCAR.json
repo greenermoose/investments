@@ -2,18 +2,18 @@
   "symbol": "PCAR",
   "cik": "0000075362",
   "sec_edgar_url": "https://www.sec.gov/edgar/browse/?CIK=75362",
-  "last_updated": "2026-08-29T15:32:17.309193+00:00",
+  "last_updated": "2026-08-30T01:51:55.945382+00:00",
   "source": {
     "source_class": "TIER_1_SEC_EDGAR_COMPANY_FACTS",
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-29/CIK0000075362-bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891.json",
-    "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+    "raw_archive_path": "context/data/raw/sec/companyfacts/2026-08-30/CIK0000075362-bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891.json",
+    "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
     "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
     "verification_status": "SOURCE_OBSERVED"
   },
   "data_layers": {
     "immutable_raw_source_observations": [
-      "context/data/raw/sec/companyfacts/2026-08-29/CIK0000075362-bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891.json"
+      "context/data/raw/sec/companyfacts/2026-08-30/CIK0000075362-bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891.json"
     ],
     "normalized_reported_facts": "fundamental_observations",
     "deterministically_derived_metrics": "filings[].data.derived_metrics",
@@ -29,7 +29,7 @@
       "accession_number": "0001193125-26-323642",
       "fiscal_year": 2026,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 526286229,
@@ -88,7 +88,7 @@
       "accession_number": "0001193125-26-191499",
       "fiscal_year": 2026,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 525894443,
@@ -147,7 +147,7 @@
       "accession_number": "0001193125-26-057025",
       "fiscal_year": 2025,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 525204359,
@@ -206,7 +206,7 @@
       "accession_number": "0001193125-25-258509",
       "fiscal_year": 2025,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 525103392,
@@ -265,7 +265,7 @@
       "accession_number": "0000950170-25-100887",
       "fiscal_year": 2025,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 524959425,
@@ -324,7 +324,7 @@
       "accession_number": "0000950170-25-061813",
       "fiscal_year": 2025,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 524802603,
@@ -383,7 +383,7 @@
       "accession_number": "0000950170-25-023145",
       "fiscal_year": 2024,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 524300554,
@@ -442,7 +442,7 @@
       "accession_number": "0000950170-24-118960",
       "fiscal_year": 2024,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 524221826,
@@ -501,7 +501,7 @@
       "accession_number": "0000950170-24-088553",
       "fiscal_year": 2024,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 524145446,
@@ -560,7 +560,7 @@
       "accession_number": "0000950170-24-052081",
       "fiscal_year": 2024,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 523883677,
@@ -619,7 +619,7 @@
       "accession_number": "0000950170-24-017900",
       "fiscal_year": 2023,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 523075842,
@@ -678,7 +678,7 @@
       "accession_number": "0000950170-23-058179",
       "fiscal_year": 2023,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 522805095,
@@ -737,7 +737,7 @@
       "accession_number": "0000950170-23-037133",
       "fiscal_year": 2023,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 522579036,
@@ -796,7 +796,7 @@
       "accession_number": "0001564590-23-006847",
       "fiscal_year": 2023,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 522513846,
@@ -855,7 +855,7 @@
       "accession_number": "0001564590-23-002203",
       "fiscal_year": 2022,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347767575,
@@ -914,7 +914,7 @@
       "accession_number": "0001564590-22-035704",
       "fiscal_year": 2022,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347718742,
@@ -973,7 +973,7 @@
       "accession_number": "0001564590-22-027473",
       "fiscal_year": 2022,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347683222,
@@ -1032,7 +1032,7 @@
       "accession_number": "0001564590-22-017431",
       "fiscal_year": 2022,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347571995,
@@ -1091,7 +1091,7 @@
       "accession_number": "0001564590-22-006237",
       "fiscal_year": 2021,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347177323,
@@ -1150,7 +1150,7 @@
       "accession_number": "0001564590-21-053170",
       "fiscal_year": 2021,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347173392,
@@ -1209,7 +1209,7 @@
       "accession_number": "0001564590-21-039777",
       "fiscal_year": 2021,
       "fiscal_period": "Q2",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 347156397,
@@ -1268,7 +1268,7 @@
       "accession_number": "0001564590-21-022825",
       "fiscal_year": 2021,
       "fiscal_period": "Q1",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 346936820,
@@ -1327,7 +1327,7 @@
       "accession_number": "0001564590-21-006370",
       "fiscal_year": 2020,
       "fiscal_period": "FY",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 346439802,
@@ -1386,7 +1386,7 @@
       "accession_number": "0001564590-20-049631",
       "fiscal_year": 2020,
       "fiscal_period": "Q3",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "data": {
         "shares_outstanding": 346148924,
@@ -1455,7 +1455,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1477,7 +1477,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1499,7 +1499,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1521,7 +1521,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1543,7 +1543,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1565,7 +1565,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1587,7 +1587,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1609,7 +1609,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1631,7 +1631,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1653,7 +1653,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1675,7 +1675,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1697,7 +1697,7 @@
       "filed_at": "2026-07-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1719,7 +1719,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1741,7 +1741,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1763,7 +1763,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1785,7 +1785,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1807,7 +1807,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1829,7 +1829,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1851,7 +1851,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1873,7 +1873,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1895,7 +1895,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1917,7 +1917,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1939,7 +1939,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1961,7 +1961,7 @@
       "filed_at": "2026-04-29",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -1983,7 +1983,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2005,7 +2005,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2027,7 +2027,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2049,7 +2049,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2071,7 +2071,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2093,7 +2093,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2115,7 +2115,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2137,7 +2137,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2159,7 +2159,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2181,7 +2181,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2203,7 +2203,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2225,7 +2225,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2247,7 +2247,7 @@
       "filed_at": "2026-02-18",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2269,7 +2269,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2291,7 +2291,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2313,7 +2313,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2335,7 +2335,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2357,7 +2357,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2379,7 +2379,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2401,7 +2401,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2423,7 +2423,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2445,7 +2445,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2467,7 +2467,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2489,7 +2489,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2511,7 +2511,7 @@
       "filed_at": "2025-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2533,7 +2533,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2555,7 +2555,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2577,7 +2577,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2599,7 +2599,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2621,7 +2621,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2643,7 +2643,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2665,7 +2665,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2687,7 +2687,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2709,7 +2709,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2731,7 +2731,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2753,7 +2753,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2775,7 +2775,7 @@
       "filed_at": "2025-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2797,7 +2797,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2819,7 +2819,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2841,7 +2841,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2863,7 +2863,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2885,7 +2885,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2907,7 +2907,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2929,7 +2929,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2951,7 +2951,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2973,7 +2973,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -2995,7 +2995,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3017,7 +3017,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3039,7 +3039,7 @@
       "filed_at": "2025-05-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3061,7 +3061,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3083,7 +3083,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3105,7 +3105,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3127,7 +3127,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3149,7 +3149,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3171,7 +3171,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3193,7 +3193,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3215,7 +3215,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3237,7 +3237,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3259,7 +3259,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3281,7 +3281,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3303,7 +3303,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3325,7 +3325,7 @@
       "filed_at": "2025-02-19",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3347,7 +3347,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3369,7 +3369,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3391,7 +3391,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3413,7 +3413,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3435,7 +3435,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3457,7 +3457,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3479,7 +3479,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3501,7 +3501,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3523,7 +3523,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3545,7 +3545,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3567,7 +3567,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3589,7 +3589,7 @@
       "filed_at": "2024-10-30",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3611,7 +3611,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3633,7 +3633,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3655,7 +3655,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3677,7 +3677,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3699,7 +3699,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3721,7 +3721,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3743,7 +3743,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3765,7 +3765,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3787,7 +3787,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3809,7 +3809,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3831,7 +3831,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3853,7 +3853,7 @@
       "filed_at": "2024-07-31",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3875,7 +3875,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3897,7 +3897,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3919,7 +3919,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3941,7 +3941,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3963,7 +3963,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -3985,7 +3985,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4007,7 +4007,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4029,7 +4029,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4051,7 +4051,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4073,7 +4073,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4095,7 +4095,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4117,7 +4117,7 @@
       "filed_at": "2024-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4139,7 +4139,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4161,7 +4161,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4183,7 +4183,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4205,7 +4205,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4227,7 +4227,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4249,7 +4249,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4271,7 +4271,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4293,7 +4293,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4315,7 +4315,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4337,7 +4337,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4359,7 +4359,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4381,7 +4381,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4403,7 +4403,7 @@
       "filed_at": "2024-02-21",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4425,7 +4425,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4447,7 +4447,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4469,7 +4469,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4491,7 +4491,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4513,7 +4513,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4535,7 +4535,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4557,7 +4557,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4579,7 +4579,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4601,7 +4601,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4623,7 +4623,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4645,7 +4645,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4667,7 +4667,7 @@
       "filed_at": "2023-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4689,7 +4689,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4711,7 +4711,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4733,7 +4733,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4755,7 +4755,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4777,7 +4777,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4799,7 +4799,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4821,7 +4821,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4843,7 +4843,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4865,7 +4865,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4887,7 +4887,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4909,7 +4909,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4931,7 +4931,7 @@
       "filed_at": "2023-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4953,7 +4953,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4975,7 +4975,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -4997,7 +4997,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5019,7 +5019,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5041,7 +5041,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5063,7 +5063,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5085,7 +5085,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5107,7 +5107,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5129,7 +5129,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5151,7 +5151,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5173,7 +5173,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5195,7 +5195,7 @@
       "filed_at": "2023-05-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5217,7 +5217,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5239,7 +5239,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5261,7 +5261,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5283,7 +5283,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5305,7 +5305,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5327,7 +5327,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5349,7 +5349,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5371,7 +5371,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5393,7 +5393,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5415,7 +5415,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5437,7 +5437,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5459,7 +5459,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5481,7 +5481,7 @@
       "filed_at": "2023-02-22",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5503,7 +5503,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5525,7 +5525,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5547,7 +5547,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5569,7 +5569,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5591,7 +5591,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5613,7 +5613,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5635,7 +5635,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5657,7 +5657,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5679,7 +5679,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5701,7 +5701,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5723,7 +5723,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5745,7 +5745,7 @@
       "filed_at": "2022-10-28",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5767,7 +5767,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5789,7 +5789,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5811,7 +5811,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5833,7 +5833,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5855,7 +5855,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5877,7 +5877,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5899,7 +5899,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5921,7 +5921,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5943,7 +5943,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5965,7 +5965,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -5987,7 +5987,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6009,7 +6009,7 @@
       "filed_at": "2022-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6031,7 +6031,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6053,7 +6053,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6075,7 +6075,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6097,7 +6097,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6119,7 +6119,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6141,7 +6141,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6163,7 +6163,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6185,7 +6185,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6207,7 +6207,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6229,7 +6229,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6251,7 +6251,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6273,7 +6273,7 @@
       "filed_at": "2022-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6295,7 +6295,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6317,7 +6317,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6339,7 +6339,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6361,7 +6361,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6383,7 +6383,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6405,7 +6405,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6427,7 +6427,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6449,7 +6449,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6471,7 +6471,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6493,7 +6493,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6515,7 +6515,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6537,7 +6537,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6559,7 +6559,7 @@
       "filed_at": "2022-02-23",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6581,7 +6581,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6603,7 +6603,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6625,7 +6625,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6647,7 +6647,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6669,7 +6669,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6691,7 +6691,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6713,7 +6713,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6735,7 +6735,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6757,7 +6757,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6779,7 +6779,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6801,7 +6801,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6823,7 +6823,7 @@
       "filed_at": "2021-11-01",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6845,7 +6845,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6867,7 +6867,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6889,7 +6889,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6911,7 +6911,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6933,7 +6933,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6955,7 +6955,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6977,7 +6977,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -6999,7 +6999,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7021,7 +7021,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7043,7 +7043,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7065,7 +7065,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7087,7 +7087,7 @@
       "filed_at": "2021-08-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7109,7 +7109,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7131,7 +7131,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7153,7 +7153,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7175,7 +7175,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7197,7 +7197,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7219,7 +7219,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7241,7 +7241,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7263,7 +7263,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7285,7 +7285,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7307,7 +7307,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7329,7 +7329,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7351,7 +7351,7 @@
       "filed_at": "2021-05-03",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7373,7 +7373,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7395,7 +7395,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7417,7 +7417,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7439,7 +7439,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7461,7 +7461,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7483,7 +7483,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7505,7 +7505,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7527,7 +7527,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7549,7 +7549,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7571,7 +7571,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7593,7 +7593,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7615,7 +7615,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7637,7 +7637,7 @@
       "filed_at": "2021-02-17",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7659,7 +7659,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7681,7 +7681,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7703,7 +7703,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7725,7 +7725,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7747,7 +7747,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7769,7 +7769,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7791,7 +7791,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7813,7 +7813,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7835,7 +7835,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7857,7 +7857,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7879,7 +7879,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null
@@ -7901,7 +7901,7 @@
       "filed_at": "2020-11-02",
       "source_class": "REGULATORY",
       "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-      "retrieved_at": "2026-08-29T15:32:17.309193+00:00",
+      "retrieved_at": "2026-08-30T01:51:55.945382+00:00",
       "raw_content_hash": "bdfaab49160ead388203df5f35ae036b2c1dd61fc73bde65b46ee07706a4c891",
       "verification_status": "VERIFIED_PRIMARY",
       "supersedes_observation_id": null

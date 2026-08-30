@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-958",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.769637+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.789489+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:bc426d8526436a5ac16e767a119533ca77e537c3d2bdbaf97b7be6996c0e5c44"
+      }
+    }
+  ]
+}

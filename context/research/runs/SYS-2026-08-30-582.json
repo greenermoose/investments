@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-582",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.749394+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.770498+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for BSX",
+      "symbol": "BSX",
+      "target_path": "context/data/equities/BSX.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:ec04855810e3ff77c09a378686e2224bd18c5ee0579dc190cab728412560fd10",
+        "after_hash": "sha256:1a0b3423e81b258b9a670c1b00879ce95110390ebbb203f28db9643b7b6a3ce3"
+      }
+    }
+  ]
+}

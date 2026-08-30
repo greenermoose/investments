@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-835",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.400961+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.425347+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:8f61b5e79b3674dad1a2f6bd1a32b35e142803d7f5d46c21d91f57e58e64cd6f"
+      }
+    }
+  ]
+}

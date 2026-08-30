@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-525",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.283222+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.304645+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:e62f4060d6ef3438f0d486de3c5d2048dfd58b88fade91ae29f65e596deb495e",
+        "after_hash": "sha256:80ad2277533ca4b8f7b33b782800637cb8e3d9d6361ab3bf2ae848dda4c73cb8"
+      }
+    }
+  ]
+}

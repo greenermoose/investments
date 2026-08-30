@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-910",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.470467+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.497875+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:effeddf89fbd01c1253dba5245159d978f2b57d148d93f9986326b9b9dd1a996",
+        "after_hash": "sha256:d01d54ee2f1cded9c338795ff50dee390c87d2ea203d43b19cf82217fc840ee8"
+      }
+    }
+  ]
+}

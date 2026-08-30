@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-867",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.268736+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.290966+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CSX",
+      "symbol": "CSX",
+      "target_path": "context/data/equities/CSX.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:a150a373bc77bfa918c08e57a5b6d39f1cbd3d3ea3a3c18b33fd60a34aebc0e1",
+        "after_hash": "sha256:90f720b5333ded41419414a887bc5cfb015c670e24e3fe052526639e027f8b6a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-587",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.868063+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.888391+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for BSX",
+      "symbol": "BSX",
+      "target_path": "context/data/equities/BSX.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:3230459f7b7989fffcfc21b6c5313f7e0a4f295c037fb974f79a3896d1b1b113",
+        "after_hash": "sha256:305b9d1ecf7b539af19360d3b6f6d1bfdcff2ba585e62852eb98f359af19beaa"
+      }
+    }
+  ]
+}

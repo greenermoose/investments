@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-358",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.959242+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.979750+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for APP",
+      "symbol": "APP",
+      "target_path": "context/data/equities/APP.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:b0b8954d73f4dbb8de9d1f9060c96a39f201626ccd2f337f8e0e62dc759b1c84",
+        "after_hash": "sha256:327dfeca079656ad73fc2848b3481641c3315dd63c5ee1973f2ef7932c85c785"
+      }
+    }
+  ]
+}

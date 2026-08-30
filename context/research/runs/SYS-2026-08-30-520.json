@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-520",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.161164+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.186892+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.dividend_profile for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.dividend_profile",
+      "change": {
+        "field": "dividend_profile",
+        "before_hash": "sha256:50c4f54fb561fd294ef6e1e0366ab48debc72057086b50d8313131b3b01464d3",
+        "after_hash": "sha256:c0316d994045ae58f55aac4f3e9a4b55984c97f4c13f52bfad7669b84cf6bd6a"
+      }
+    }
+  ]
+}

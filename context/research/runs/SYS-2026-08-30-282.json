@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-282",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.034829+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.060762+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for AMGN",
+      "symbol": "AMGN",
+      "target_path": "context/data/equities/AMGN.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:793cefd54b0515e99fe255340298877de7145f49f2a854d307952a4bfde0ca26",
+        "after_hash": "sha256:48bced327ccd360e32b249b019cc142398b79e2450b8bb4819101f301f024ac3"
+      }
+    }
+  ]
+}

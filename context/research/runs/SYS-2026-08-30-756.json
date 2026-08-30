@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-756",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.312140+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.333776+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 574,
+        "after_chars": 574,
+        "before_hash": "sha256:def29991c1dfbd86de66e0615ad599850021c9b9a8787e56178556032a8a0392",
+        "after_hash": "sha256:def29991c1dfbd86de66e0615ad599850021c9b9a8787e56178556032a8a0392"
+      }
+    }
+  ]
+}

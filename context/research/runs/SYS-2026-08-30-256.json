@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-256",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.373295+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.392887+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:f3647d3fd56e6dceb42b6cf21ee01a132d1995ccb7d9a0e9c47569649296011e",
+        "after_hash": "sha256:e1e0200b7b1543c6d23c44a83726d2415209610b6002ae23186fa6623e923abf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-491",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.396482+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.417393+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:c6688de623bb9317a6e13b1ea25592a1afe7f23c263119051ef1deb6b91c29f2",
+        "after_hash": "sha256:437df0a44ae3852828d2ee4205c865752c7b28368e790d07470729d715095818"
+      }
+    }
+  ]
+}

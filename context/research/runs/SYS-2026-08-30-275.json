@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-275",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.845236+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.872070+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for AMGN",
+      "symbol": "AMGN",
+      "target_path": "context/data/equities/AMGN.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b40d45aa84a07025eb1f412a0aba21a9152e125e8f44cc225021b95bdf3c6783",
+        "after_hash": "sha256:0e2b5e6ffc308e852d24c2d4d6f898a03687b67239469a28fdd1b36ff0b5cecb"
+      }
+    }
+  ]
+}

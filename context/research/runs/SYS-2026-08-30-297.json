@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-297",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.430315+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.451265+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AMZN",
+      "symbol": "AMZN",
+      "target_path": "context/data/equities/AMZN.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:78c1930b1148217ac0455d30e2c1a22dc37a4fea1d7ffeb77759895f86407b76",
+        "after_hash": "sha256:baeed586b5e8f86e054d2d5bfdc57c9d609859e8d6c27cd4073c5476ce159716"
+      }
+    }
+  ]
+}

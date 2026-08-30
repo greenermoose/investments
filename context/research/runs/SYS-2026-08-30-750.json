@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-750",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.161763+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.186744+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b0c99b4fcf0a36a5250b248d8bcb3a1efa45bbb96d910b592265dff0711fffe3",
+        "after_hash": "sha256:836eb8b5f71d4a2424e33f2ac34f05bed360871a468fa75bd14f44aa7ab3ef30"
+      }
+    }
+  ]
+}

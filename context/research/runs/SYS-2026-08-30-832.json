@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-832",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.323193+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.345097+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 565,
+        "after_chars": 565,
+        "before_hash": "sha256:d8eb3cf1793e2dd60916e0d7f495b89b219eeb7509f1ddfc3ac2e8b667cf1016",
+        "after_hash": "sha256:d8eb3cf1793e2dd60916e0d7f495b89b219eeb7509f1ddfc3ac2e8b667cf1016"
+      }
+    }
+  ]
+}

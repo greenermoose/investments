@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-321",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.026712+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.046440+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ANET",
+      "symbol": "ANET",
+      "target_path": "context/data/equities/ANET.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:a14877739eefb45c9fc38a6bffc4f18da7b046f333a01f48e6218f01bce9f8ef",
+        "after_hash": "sha256:d6001312b8ce4a5628d5e40c06e93d2bcce9759e84ae92151d8c465b8389f5b5"
+      }
+    }
+  ]
+}

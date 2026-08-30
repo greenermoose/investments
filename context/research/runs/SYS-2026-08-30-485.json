@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-485",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.249803+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.271120+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.latest_catalyst for BAM",
+      "symbol": "BAM",
+      "target_path": "context/data/equities/BAM.json#research.latest_catalyst",
+      "change": {
+        "field": "latest_catalyst",
+        "before_chars": 82,
+        "after_chars": 82,
+        "before_hash": "sha256:46bd955d9cf494dbe364e0fa47b2815adae9fd51bf1d78ab02f52f4b25b6bdec",
+        "after_hash": "sha256:46bd955d9cf494dbe364e0fa47b2815adae9fd51bf1d78ab02f52f4b25b6bdec"
+      }
+    }
+  ]
+}

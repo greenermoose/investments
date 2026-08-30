@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-003",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:37.946656+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:37.967924+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for AAPL",
+      "symbol": "AAPL",
+      "target_path": "context/data/equities/AAPL.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:aea77ea1f864d4efc0413ebeb5f9f2cf0d27108daad920f6e74625419ed5ef87",
+        "after_hash": "sha256:497b64260076c15de7f4bb13a5a1e019bcc24988670375dc0fb2953cb0d8e886"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-908",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.418090+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.438250+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 589,
+        "after_chars": 589,
+        "before_hash": "sha256:61ab75e70e2a28773984e7c5879cb40e1ec007ac17355bea90a67e940de0aafa",
+        "after_hash": "sha256:61ab75e70e2a28773984e7c5879cb40e1ec007ac17355bea90a67e940de0aafa"
+      }
+    }
+  ]
+}

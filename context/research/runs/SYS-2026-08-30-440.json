@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-440",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.091535+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.112799+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for AXP",
+      "symbol": "AXP",
+      "target_path": "context/data/equities/AXP.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:ada2cbf91a866fbee8d73f4242b4b39b4a55df25bfc8d84a600d2ef659f0d045",
+        "after_hash": "sha256:a7899cbf73d8c30e86f8ea560c87cbe51044e222230ffebb98c940a342bf2b92"
+      }
+    }
+  ]
+}

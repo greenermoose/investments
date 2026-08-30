@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-004",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:37.970303+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:37.990254+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for AAPL",
+      "symbol": "AAPL",
+      "target_path": "context/data/equities/AAPL.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:fbf1e2a578ffa9a1e0eb8400a33a3f9451985518a5855c7a02efe092ac3a0d3f",
+        "after_hash": "sha256:0b3aacaa7d49989ce2a653bab06f2b84c9e81be0c5cc3c0b7e9c8c1f41477340"
+      }
+    }
+  ]
+}

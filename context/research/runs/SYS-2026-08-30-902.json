@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-902",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.271267+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.291615+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:62c44823ce119b0b002999522915c1799fb83a87beb1adf4b0dc863b39e108f4",
+        "after_hash": "sha256:3ac1e1ac70c00abfeba9901fdad4f207ac101ca375ee88fe7225f301cc6cc774"
+      }
+    }
+  ]
+}

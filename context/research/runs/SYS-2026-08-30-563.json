@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-563",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.243387+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.266478+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:5356ba2c9e81f8ee758de44b2194876d7e77ae11053d1ef73e745f5b21fb7514",
+        "after_hash": "sha256:31aad3c2fb1d53ea4d79dc53a97677f419a42efb647b7fe3a004443b7474c4fb"
+      }
+    }
+  ]
+}

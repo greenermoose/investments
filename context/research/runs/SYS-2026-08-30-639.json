@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-639",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.194398+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.216045+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CCEP",
+      "symbol": "CCEP",
+      "target_path": "context/data/equities/CCEP.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:44740e830e6e8027c918680ea6c0c646d91dd59f89dc6cac80f0e83305a9b479",
+        "after_hash": "sha256:36d9d638472451db9e997bc113ad191369122d0962081c2b86317cbe1451b069"
+      }
+    }
+  ]
+}

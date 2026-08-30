@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-738",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.812025+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.835434+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CME",
+      "symbol": "CME",
+      "target_path": "context/data/equities/CME.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:057079e32908c537bc1c0f2bac34c6f58b0600ba1a5ad0b938c115d230586d22",
+        "after_hash": "sha256:29f96bff7c28e37370c31b2007fa5498a9f02350aaed592733647c842ea1b10e"
+      }
+    }
+  ]
+}

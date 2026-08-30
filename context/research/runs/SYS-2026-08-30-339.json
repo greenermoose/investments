@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-339",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.482903+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.504634+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:25fad8fb2d4e08b38d799dc99704c26b90cb08c6d4cd9376518f29aea564fae5",
+        "after_hash": "sha256:375da88d4f608322664edb756edb9f52572e30108ace483863cc249a11447074"
+      }
+    }
+  ]
+}

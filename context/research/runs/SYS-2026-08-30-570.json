@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-570",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.428289+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.451926+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 230,
+        "after_chars": 230,
+        "before_hash": "sha256:3407d5631421688fed285bd5511b8786f1c21b7ae30d7f2ad4142c1eeb06e557",
+        "after_hash": "sha256:3407d5631421688fed285bd5511b8786f1c21b7ae30d7f2ad4142c1eeb06e557"
+      }
+    }
+  ]
+}

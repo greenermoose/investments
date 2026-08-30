@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-345",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.654515+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.675998+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for APP",
+      "symbol": "APP",
+      "target_path": "context/data/equities/APP.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:30ee921f64babde796465ba4c2fad78824efdc4e2bc9091aa680c66d0c9482b2",
+        "after_hash": "sha256:c290eb2e12019da1137539d9862654dcfef2f40619393080498ad573bd8002a7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-265",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.582481+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.603737+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:af987630353a440dcf19349ca696620acb54ce85ee6f81550b5e3841ca31df12"
+      }
+    }
+  ]
+}

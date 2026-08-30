@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-858",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.032554+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.054236+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CSX",
+      "symbol": "CSX",
+      "target_path": "context/data/equities/CSX.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:f9c004c6489e0411f41a6a5f3f85f9c11110d3479234b34259ed7b25481c2c38",
+        "after_hash": "sha256:2c8a6d57f53dfd6f1712d0b7235f421c91ead0864ca2bbf2caa9b0990d3aaedc"
+      }
+    }
+  ]
+}

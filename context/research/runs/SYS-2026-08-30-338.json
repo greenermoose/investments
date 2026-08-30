@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-338",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.461919+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.480774+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 567,
+        "after_chars": 567,
+        "before_hash": "sha256:025d0af718b2c85fcbbdea6bb77e1db7e047bcb42bacadd19cd5b10c69b5a49c",
+        "after_hash": "sha256:025d0af718b2c85fcbbdea6bb77e1db7e047bcb42bacadd19cd5b10c69b5a49c"
+      }
+    }
+  ]
+}

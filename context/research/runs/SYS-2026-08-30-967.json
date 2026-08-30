@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-967",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.995815+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.018555+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:58379453e48b07241dd8c9f0ae58ba6e19dc50b3638caa8e8f5cde8fcc5b8af7",
+        "after_hash": "sha256:1eb857e09c918cc8fb46758e18c916b0710342dcc9bf4bb79add5217156f9cf4"
+      }
+    }
+  ]
+}

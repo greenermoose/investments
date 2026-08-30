@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-859",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.058060+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.079551+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CSX",
+      "symbol": "CSX",
+      "target_path": "context/data/equities/CSX.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:13f4dd976e6b8bc1648d076a30d0da509fc8dc8d06d7ea02746458d06b916865",
+        "after_hash": "sha256:3a478275d875d0bab8f8bfa40650f62ffca3946683bcd1815cb3c95b7e627c8b"
+      }
+    }
+  ]
+}

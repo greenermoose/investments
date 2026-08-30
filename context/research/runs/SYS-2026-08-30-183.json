@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-183",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.504034+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.531704+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AEP",
+      "symbol": "AEP",
+      "target_path": "context/data/equities/AEP.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:dd9630a3e69889992c19831c63ad756bdac2d35b916e88a1dc89e08c877e8898",
+        "after_hash": "sha256:ecb9b67886e2ddb1834a5103dd35964a6ea12e83fefcab2f904c204948dfe498"
+      }
+    }
+  ]
+}

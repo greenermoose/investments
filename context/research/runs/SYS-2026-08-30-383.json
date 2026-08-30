@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-383",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.642665+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.664097+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ASML",
+      "symbol": "ASML",
+      "target_path": "context/data/equities/ASML.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:e3547fec03f24595c7245f94b783784a10a2db5e44796b337d9fbf350c863a32",
+        "after_hash": "sha256:9bdb62709ea1adaaee31e9f65b1b1241e3fa1ea0476ab9a088ff9496ca2222ea"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-890",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.949021+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.969989+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CTAS",
+      "symbol": "CTAS",
+      "target_path": "context/data/equities/CTAS.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:2746e3195f4e9fb284663b08f227b0d8fe79efc2fc5d31d3c956f392aa7cb413",
+        "after_hash": "sha256:6b1b329117648479cb604a532c9b8e6eb32035c46cba823d1aa6eaa5d21d41ae"
+      }
+    }
+  ]
+}

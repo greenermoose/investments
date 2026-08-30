@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-427",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.752728+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.773723+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for AXON",
+      "symbol": "AXON",
+      "target_path": "context/data/equities/AXON.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b5b682c372655c8f8dcad7e370e62d2134ac1e914f1a2649e9ec3aa967f09904",
+        "after_hash": "sha256:402900ebf609ca8639056383f8f2db5596e9ecb3259335ecdc24649b62caffbc"
+      }
+    }
+  ]
+}

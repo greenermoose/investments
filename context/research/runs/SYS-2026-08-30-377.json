@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-377",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.456817+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.486489+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ARM",
+      "symbol": "ARM",
+      "target_path": "context/data/equities/ARM.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:c6d3231f0771d52f8277889bf13cb5e320f9d84c2b6f7fd0ddf9a6b0ffe4780c",
+        "after_hash": "sha256:9f28d5410805e3e1b3396604c5cbbc9bccc1d352a805bb3acb22f11e334d86b6"
+      }
+    }
+  ]
+}

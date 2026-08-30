@@ -11,7 +11,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-from experiment_contract import EXPERIMENT_STATUS, RESEARCH_STATUS_PLACEHOLDER, utc_now
+from experiment_contract import EXPERIMENT_STATUS, RESEARCH_STATUS_AUTHORED, RESEARCH_STATUS_PLACEHOLDER, utc_now
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +34,8 @@ def migrate(path: Path, dry_run: bool = False) -> bool:
         "authoring_model": str(research.get("authoring_model") or "legacy-unknown"),
         "prompt_version": str(research.get("prompt_version") or "legacy-unknown"),
     }
+    if research.get("research_status") == RESEARCH_STATUS_AUTHORED:
+        return False
     for key, value in metadata.items():
         if research.get(key) != value:
             research[key] = value

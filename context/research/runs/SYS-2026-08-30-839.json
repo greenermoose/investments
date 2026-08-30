@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-839",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.529035+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.554466+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:b07653dbdaf61e21a57880f84149eb96a3b3dfd4b2bcc871b3148b0917fe768c",
+        "after_hash": "sha256:e550ba26b60a27b5467361807d9f6f15f1a5e86a3d44f8411f9f66a1b168f4ce"
+      }
+    }
+  ]
+}

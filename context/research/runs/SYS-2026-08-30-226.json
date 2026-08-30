@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-226",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.576383+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.596930+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ALNY",
+      "symbol": "ALNY",
+      "target_path": "context/data/equities/ALNY.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:3fdca53fd831b11f4f6c4a4331731d02ecdf3251785bd7bb42bd43805179ead9",
+        "after_hash": "sha256:d9991b5eccfba423057f63337d76bcc3a1fa4d29b563f115b1f49354de7979ed"
+      }
+    }
+  ]
+}

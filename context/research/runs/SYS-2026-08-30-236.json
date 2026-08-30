@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-236",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.839212+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.863704+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:f745f02b0dbede1a85e6a24f81287c85aafcb6b39fc61b849d7f6608aaf2c415"
+      }
+    }
+  ]
+}

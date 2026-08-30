@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-864",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.184136+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.206921+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CSX",
+      "symbol": "CSX",
+      "target_path": "context/data/equities/CSX.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b98b53f6f5b94cd4d64e9bc63d44992d48b6aa6f4e5376849f04a61c69618451",
+        "after_hash": "sha256:518a58d583809c2c681e3e1365011ec495ab0c20819c8575300555bfd0adc4ff"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-536",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.565219+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.586211+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for BLK",
+      "symbol": "BLK",
+      "target_path": "context/data/equities/BLK.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:0368eb0cba3c8b01dabced9b43b42942db41badfd103398e81ba142c6cecabce",
+        "after_hash": "sha256:904b9014aba03024085fbacc55ac16c9479f35e5771669d8814f36f7cbdc8ca5"
+      }
+    }
+  ]
+}

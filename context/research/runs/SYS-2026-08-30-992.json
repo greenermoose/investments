@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-992",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.698248+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.717601+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for DHR",
+      "symbol": "DHR",
+      "target_path": "context/data/equities/DHR.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:2e41448c1cc8bb17097244d8287f378ddae6f2fb5b698c9470c3ad4589d22712",
+        "after_hash": "sha256:61f8b8d61c8580439af2c57d434fa67dce53a3fe566b36f3f9b659e1f79b55d7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-994",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.751241+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.770728+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for DHR",
+      "symbol": "DHR",
+      "target_path": "context/data/equities/DHR.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 134,
+        "after_chars": 134,
+        "before_hash": "sha256:2579fd95b811d6a5f74c4fb364ccfc8dd5338b7e617e621395eaa83f03eb88ff",
+        "after_hash": "sha256:2579fd95b811d6a5f74c4fb364ccfc8dd5338b7e617e621395eaa83f03eb88ff"
+      }
+    }
+  ]
+}

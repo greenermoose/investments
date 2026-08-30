@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-701",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:55.843293+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:55.864811+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CHTR",
+      "symbol": "CHTR",
+      "target_path": "context/data/equities/CHTR.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:16362126f626a41c97c5935743db15ad8a31fc9d346dbbae624862c5fcf44a08",
+        "after_hash": "sha256:d4132adf73e62db8f311f162decf8324dd1e5d94deb7f78d9619425a77097bcb"
+      }
+    }
+  ]
+}

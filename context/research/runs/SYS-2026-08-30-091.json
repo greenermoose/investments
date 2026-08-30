@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-091",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.069742+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.088731+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 560,
+        "after_chars": 560,
+        "before_hash": "sha256:4ac8b03a1cfc1508fc041f1656f70dac6a7a9daa830b4aa7d83cf7f9b108892a",
+        "after_hash": "sha256:4ac8b03a1cfc1508fc041f1656f70dac6a7a9daa830b4aa7d83cf7f9b108892a"
+      }
+    }
+  ]
+}

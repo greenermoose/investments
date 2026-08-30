@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-123",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.915811+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.941662+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:6570ad440190cd7e7a2f49895ed293212752dd275dab25cd2be495e332e2e44c",
+        "after_hash": "sha256:897487c1fd85c365a7b8feafb5d74ae5f2bcbb07eb2f84516fa847d6f28c7a8c"
+      }
+    }
+  ]
+}

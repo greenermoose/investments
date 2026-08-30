@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-929",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.002495+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.023834+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:f2959315d31a570d569433147296b574163144dc26e2cc9e6e749e38d623a5ae",
+        "after_hash": "sha256:479fa37fa93dc1a4b26ab6f79cee2e84b543e281ba06c335663b520bec5f9df4"
+      }
+    }
+  ]
+}

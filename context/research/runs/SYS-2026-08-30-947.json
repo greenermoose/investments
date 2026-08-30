@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-947",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.470727+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.492666+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for DASH",
+      "symbol": "DASH",
+      "target_path": "context/data/equities/DASH.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:6c143dd5cc80edea91041eea95a70cc26fdb383e82a5a6fbc24502d39215f436",
+        "after_hash": "sha256:ba9c3556e1155a57ad69c6e96d2cccb3e14b491fe2e4f0db44f8047a063e8c5a"
+      }
+    }
+  ]
+}

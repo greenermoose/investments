@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-408",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:48.254335+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:48.274300+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for AVGO",
+      "symbol": "AVGO",
+      "target_path": "context/data/equities/AVGO.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:ab5396b2d1012094ed1ddbf509b3457e815fa5efe295e4bd2fb0c83e81b4107b",
+        "after_hash": "sha256:2d89db09944d182a16428b76836daa5a217950c08f22f055db4873ea8c1beb46"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-652",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.539402+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.563362+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.description for CDNS",
+      "symbol": "CDNS",
+      "target_path": "context/data/equities/CDNS.json#research.description",
+      "change": {
+        "field": "description",
+        "before_chars": 138,
+        "after_chars": 138,
+        "before_hash": "sha256:faa91fd95c474cfd80e488ce846feed247545dbc85222016adaefa888693e34b",
+        "after_hash": "sha256:faa91fd95c474cfd80e488ce846feed247545dbc85222016adaefa888693e34b"
+      }
+    }
+  ]
+}

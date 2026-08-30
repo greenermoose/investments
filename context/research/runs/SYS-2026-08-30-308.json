@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-308",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.719107+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.738973+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for ANET",
+      "symbol": "ANET",
+      "target_path": "context/data/equities/ANET.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:086b44293c096e8793af279f538a0273f76bf4f77fa0cf0b4dc88e44ba72957b",
+        "after_hash": "sha256:ef4d9b22e2e7d7e963c36cfe24c659d7e2753f3ea805ba452a0de00aa4b045b9"
+      }
+    }
+  ]
+}

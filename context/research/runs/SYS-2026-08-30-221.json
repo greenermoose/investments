@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-221",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.452011+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.474156+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ALNY",
+      "symbol": "ALNY",
+      "target_path": "context/data/equities/ALNY.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:1f82e937fc6eb930da1240ada1316aff8a270362873713478ea305549f1a8c21",
+        "after_hash": "sha256:6f06683360ece9bfb4aae42aae0378d5547e31d354cccc44e4a66d451e9b677a"
+      }
+    }
+  ]
+}

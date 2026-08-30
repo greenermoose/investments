@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-145",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.502416+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.526867+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ADP",
+      "symbol": "ADP",
+      "target_path": "context/data/equities/ADP.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:f311bd3b1c327fb86017245a762ad2d09c0c44c65a322d4e78c12d477cf78679",
+        "after_hash": "sha256:231fe0e2ff97ffca0091ab72b481332180b0c13fa94a3c1460eded9858146293"
+      }
+    }
+  ]
+}

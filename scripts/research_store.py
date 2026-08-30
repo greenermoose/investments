@@ -20,6 +20,7 @@ the same style as scripts/validate_thesis.py and scripts/quality_control.py.
 import json
 import os
 import re
+import time
 from collections import namedtuple
 from datetime import datetime, timezone
 
@@ -483,8 +484,24 @@ def write_research(symbol, research):
 
     os.makedirs(EQUITIES_DIR, exist_ok=True)
     path = equity_file_path(symbol)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(record, f, indent=2)
+    last_error = None
+    for attempt in range(5):
+        tmp_path = f"{path}.{os.getpid()}.{attempt}.tmp"
+        try:
+            with open(tmp_path, "w", encoding="utf-8") as f:
+                json.dump(record, f, indent=2)
+            os.replace(tmp_path, path)
+            break
+        except OSError as error:
+            last_error = error
+            try:
+                if os.path.exists(tmp_path):
+                    os.remove(tmp_path)
+            except OSError:
+                pass
+            time.sleep(0.2 * (attempt + 1))
+    else:
+        raise last_error
 
     try:
         import activity_ledger

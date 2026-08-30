@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-928",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.972900+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.997326+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:fe308b5cdb90f2e1a6fbc3db4beb8b620a07885f23a376bf345e0c4c7b5cdceb",
+        "after_hash": "sha256:50c735b77e241cc8a4bce9134cff2acedc1815ee2dcfddf25ccfffc2ce033154"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-819",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.002402+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.021596+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.business_profile for CSGP",
+      "symbol": "CSGP",
+      "target_path": "context/data/equities/CSGP.json#research.business_profile",
+      "change": {
+        "field": "business_profile",
+        "before_chars": 857,
+        "after_chars": 857,
+        "before_hash": "sha256:852db51faf814eb54aafe7d67e7b003c7b0ca98c5230d1d40e56a60f8ec0e0c3",
+        "after_hash": "sha256:852db51faf814eb54aafe7d67e7b003c7b0ca98c5230d1d40e56a60f8ec0e0c3"
+      }
+    }
+  ]
+}

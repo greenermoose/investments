@@ -1,6 +1,6 @@
-# Agentic Investment Advisor System
+# Experimental Investment Research System
 
-The goal of this repo is to create a multi-agent investment advisory system engineered to overcome the limitations of standard chatbots to achieve at least a 20% annualized return over 20 years for a portfolio of public companies whose shares trade on an exchange in the United States. By maintaining full context over the entire US public equity universe, parsing weekly portfolio snapshots, managing persistent investment thesis memory, and mathematically modeling options strategies, this system investigates whether AI agent teams can deliver profitable trading plans.
+The goal of this repo is to create a multi-agent experimental investment research system engineered to overcome the limitations of standard chatbots to test whether net-of-fee, pre-tax results can reach a 20% annualized scoring threshold over 20 years for a portfolio of public companies whose shares trade on an exchange in the United States. By maintaining full context over the entire US public equity universe, parsing weekly portfolio snapshots, managing persistent investment thesis memory, and mathematically modeling options strategies, this system prospectively measures whether AI agent teams can produce calibrated experimental order proposals.
 
 Each proposed trading plan is a research hypothesis, not an assurance, capability claim, or statement of likely performance. Every rating, forecast, classification, and trading plan may be wrong.
 

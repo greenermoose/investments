@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-397",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.972853+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.993489+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ASML",
+      "symbol": "ASML",
+      "target_path": "context/data/equities/ASML.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:c0b7c4c6a554a3ddaf7d8c0adfa479d98e7f39a6ea1bc44b8cfd08f318cc1296",
+        "after_hash": "sha256:abdd4daa2777b3cde91cca1f5a63615bbb162882e08c690377c72721a3669d9d"
+      }
+    }
+  ]
+}

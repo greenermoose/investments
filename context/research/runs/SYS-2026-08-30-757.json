@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-757",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.338039+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.360018+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:4c5c1cd0dd29f1db787fb737f31536d93df80112b7c82fc11a22cf0edabb417f",
+        "after_hash": "sha256:b29d3e53104135a8e89411fec03129ab04fec6b722659de2ac7750683ccfe8e7"
+      }
+    }
+  ]
+}

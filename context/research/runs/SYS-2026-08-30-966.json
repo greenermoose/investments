@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-966",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.967243+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.991148+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:0df70807e9d9ddba2442c173f55a72d4efe9e45cfc93d2bcac4625ed22e98db5",
+        "after_hash": "sha256:b5ff2180372aa8f870842b267909c6966d39906c948cdcc1fdd42c2fd2434168"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-852",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:59.863577+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:59.882456+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for CSIQ",
+      "symbol": "CSIQ",
+      "target_path": "context/data/equities/CSIQ.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:d73050a7abc5ab00dfa7eb8a79af5105a05b2d1660eced389dfcad6ee6bde44f",
+        "after_hash": "sha256:ab40e00651c048a50cf3c3e816df0f779a0abdca8f9bcec21405e941a5ed98c1"
+      }
+    }
+  ]
+}

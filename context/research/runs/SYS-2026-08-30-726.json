@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-726",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.514846+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.538439+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CME",
+      "symbol": "CME",
+      "target_path": "context/data/equities/CME.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:3b07ae7a5f1b2a61e003a24f8154116b18dc499e167f7c4a16a9ae27ef7a71a6",
+        "after_hash": "sha256:d18ffb0790e3e23a57794bbe8ad65801fe5f68a6abcec4a8d45451ac1624a170"
+      }
+    }
+  ]
+}

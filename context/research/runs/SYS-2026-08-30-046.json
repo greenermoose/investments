@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-046",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.939652+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.957538+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for ABNB",
+      "symbol": "ABNB",
+      "target_path": "context/data/equities/ABNB.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:d536d5c32695ce6f00841e2547bc1cd47506e66c67bdd499fff42796ea649932"
+      }
+    }
+  ]
+}

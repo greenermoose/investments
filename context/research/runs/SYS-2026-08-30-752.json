@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-752",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.217502+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.238010+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.moat_summary for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.moat_summary",
+      "change": {
+        "field": "moat_summary",
+        "before_chars": 120,
+        "after_chars": 120,
+        "before_hash": "sha256:dd37ae81cea9646d5592ce6c65a321eac0196eaac296422e3271f8779cad28a6",
+        "after_hash": "sha256:dd37ae81cea9646d5592ce6c65a321eac0196eaac296422e3271f8779cad28a6"
+      }
+    }
+  ]
+}

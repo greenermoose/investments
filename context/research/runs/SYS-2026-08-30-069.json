@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-069",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.495845+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.515368+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for ABT",
+      "symbol": "ABT",
+      "target_path": "context/data/equities/ABT.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:e7767d5b728a7953a11b0409af099922779df02996bb61ea98ffb01632e8d602",
+        "after_hash": "sha256:674af922203c21552f8aa2a01ffe6d8e7677947ee8299b30cd8e6bf6fbc64b18"
+      }
+    }
+  ]
+}

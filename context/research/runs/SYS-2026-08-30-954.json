@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-954",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.670907+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.692968+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:1fd53198ead8b9aa22a4c4e9e7ea793319c0baf965e9f62d4a751a556860be81",
+        "after_hash": "sha256:d35640b2276ad843c888a212b8a883599e9bfd2fac959c673dce43acdfbbf539"
+      }
+    }
+  ]
+}

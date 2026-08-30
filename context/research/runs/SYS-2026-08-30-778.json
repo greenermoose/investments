@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-778",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.876334+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.894680+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for CPRT",
+      "symbol": "CPRT",
+      "target_path": "context/data/equities/CPRT.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:5cab4a011df8edf3db510128968b7e640630f3bbf80f4b0423dcdca56dc6bf75"
+      }
+    }
+  ]
+}

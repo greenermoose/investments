@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-092",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.091732+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.113812+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:87f85d7c337d9f9ccb1e07ecd7038bf373da4de4e16cb67b5bd441011ff361ef",
+        "after_hash": "sha256:9e5d8bceea70f240e8ccd82a5c7c45469eab48267475604437c0f134ef3752a3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-554",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:52.018731+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:52.040341+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for BRK-B",
+      "symbol": "BRK-B",
+      "target_path": "context/data/equities/BRK-B.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:c71b17c9de79c26713e5d276f42245a0f8939a662b38c1c2f089638f31d661f4",
+        "after_hash": "sha256:cb0b91a09ca3727acbc2e998892cd08b348d963cef6d4467815ae31e1335aed0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-878",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:00.599328+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:00.624855+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CTAS",
+      "symbol": "CTAS",
+      "target_path": "context/data/equities/CTAS.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:ec0211c7c9910961be571d058b3043505832c84d0459de7b79a79820436c7cf5",
+        "after_hash": "sha256:0ec6804de312700a911fa509c562576ef2c1b0e05b7cdcb26a6c5bf4c7f0eeac"
+      }
+    }
+  ]
+}

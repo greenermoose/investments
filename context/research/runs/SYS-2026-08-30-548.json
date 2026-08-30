@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-548",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.847294+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.869387+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for BLK",
+      "symbol": "BLK",
+      "target_path": "context/data/equities/BLK.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:66ee2d6f76f1548a72a1a85b59aebc4fbc5b7b21a437e8029898476d4434cffe",
+        "after_hash": "sha256:a8031bc7b6070faf77bb33e6de54640ef5e33364a89028c859fbae874d30076c"
+      }
+    }
+  ]
+}

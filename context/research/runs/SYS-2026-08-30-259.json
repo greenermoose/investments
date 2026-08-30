@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-259",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:44.442265+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:44.463553+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AMD",
+      "symbol": "AMD",
+      "target_path": "context/data/equities/AMD.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:ae64efd7e172d40039893efc590ce92dca6ecb7ff6c52b3c4ccfaea0998eb9b7",
+        "after_hash": "sha256:8fd87293ef747337f8e525590ca31ab3ce2100dc6d5cce57707a8352a976f25e"
+      }
+    }
+  ]
+}

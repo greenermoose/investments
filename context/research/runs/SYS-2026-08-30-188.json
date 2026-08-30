@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-188",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.623975+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.644554+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for AEP",
+      "symbol": "AEP",
+      "target_path": "context/data/equities/AEP.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:24af05c023e829757f5f79975e97460ee43b40dbe3c604ae22e523d39bb06456",
+        "after_hash": "sha256:a42e47554a60f0bac6ce86afb016ee299122ef1062e11b3b618048ed37dedc4b"
+      }
+    }
+  ]
+}

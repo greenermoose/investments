@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-650",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.486621+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.508576+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CDNS",
+      "symbol": "CDNS",
+      "target_path": "context/data/equities/CDNS.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:35a54343cbe26d982b351b23372655e1f756cc20abf0dfb45d6a65d5aed65098",
+        "after_hash": "sha256:f2864dfb2766ce433ae9d386a0ecf9fff28f51bc3869f07842283c428db0f1fc"
+      }
+    }
+  ]
+}

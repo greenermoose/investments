@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-916",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.657104+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.679567+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:c2e428c7c2bc6de6c61a9ecaf6c46f9f1abcd2a9aaed938361f85c3bfc192c46",
+        "after_hash": "sha256:0794ac02bc0ca8e57443a4ca5cfbff5d52bf5e066db70f8df8b60a3291b8f6ca"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-741",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:56.888586+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:56.914079+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for CME",
+      "symbol": "CME",
+      "target_path": "context/data/equities/CME.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 211,
+        "after_chars": 211,
+        "before_hash": "sha256:e7686244fd68173a00e96bbafc53e34731bf5a1105ffe2d896a3ff97b81c1d7b",
+        "after_hash": "sha256:e7686244fd68173a00e96bbafc53e34731bf5a1105ffe2d896a3ff97b81c1d7b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-981",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.391132+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.415149+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for DE",
+      "symbol": "DE",
+      "target_path": "context/data/equities/DE.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:a679bcee0fac276c9cde778002819acb630ee4f4165d4e7c6ec2970651e10fc3",
+        "after_hash": "sha256:e888238d042989b568ad34606cb81c1e441e7beb51a6235eeeb85901fa939e36"
+      }
+    }
+  ]
+}

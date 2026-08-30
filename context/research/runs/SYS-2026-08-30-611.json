@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-611",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.491920+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.512145+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CAVA",
+      "symbol": "CAVA",
+      "target_path": "context/data/equities/CAVA.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:28e999cbb498b00d02560a28e2585aa435baec8a291cf6bbfdea7c79b5ed2095",
+        "after_hash": "sha256:27b362ed7406bcd9d031f0fb4423150c3e8a2ec53efbb9d4749232e969fd1307"
+      }
+    }
+  ]
+}

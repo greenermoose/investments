@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-118",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.797461+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.818188+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:887cc0a3d0775a25453a7f7f79adc5904d41910755e12839b6b693b7c1bf7da2",
+        "after_hash": "sha256:808a6695687ae7afaffc7df531bc4224d13824f067af44a9eae20ead981dc863"
+      }
+    }
+  ]
+}

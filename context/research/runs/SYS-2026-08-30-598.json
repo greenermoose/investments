@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-598",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.156516+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.175907+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for CAT",
+      "symbol": "CAT",
+      "target_path": "context/data/equities/CAT.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:8c6f9575cb57584da69ba4c398f4507e060e20bb14cb36f53a2ee8c7c8cf604a",
+        "after_hash": "sha256:406d843ca13477954d855dd7b4636c540a7ab41838d281ae2a205b5aacbc25d8"
+      }
+    }
+  ]
+}

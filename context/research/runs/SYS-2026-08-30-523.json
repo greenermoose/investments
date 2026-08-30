@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-523",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.237765+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.257279+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.latest_catalyst for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.latest_catalyst",
+      "change": {
+        "field": "latest_catalyst",
+        "before_chars": 78,
+        "after_chars": 78,
+        "before_hash": "sha256:bee0d0f7288ae235df68cd90ae374cc85cb9e2d3abe2bd4aff33e8141f351946",
+        "after_hash": "sha256:bee0d0f7288ae235df68cd90ae374cc85cb9e2d3abe2bd4aff33e8141f351946"
+      }
+    }
+  ]
+}

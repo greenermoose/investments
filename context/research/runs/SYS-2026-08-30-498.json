@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-498",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.592105+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.616229+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for BKNG",
+      "symbol": "BKNG",
+      "target_path": "context/data/equities/BKNG.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:557e07384268fe0423672ffe183ccc0cea6f51789d1380caef9ca8b59f645d7a",
+        "after_hash": "sha256:eea10edbde482b0d690f3167814d1a321dae56177829217eac7fe0ead1ab3212"
+      }
+    }
+  ]
+}

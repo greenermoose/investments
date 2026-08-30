@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-459",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.575358+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.595468+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for BA",
+      "symbol": "BA",
+      "target_path": "context/data/equities/BA.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:4573e95e632cec1d78ea5dfeed75a00b46cba40c48c8d545def532f479d38a49",
+        "after_hash": "sha256:198aafc6916ea4ba62b03d9a10c679a3f6b363af199565e9c2baf592c799a26e"
+      }
+    }
+  ]
+}

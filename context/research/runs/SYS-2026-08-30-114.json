@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-114",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:40.681223+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:40.702768+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for ADBE",
+      "symbol": "ADBE",
+      "target_path": "context/data/equities/ADBE.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 219,
+        "after_chars": 219,
+        "before_hash": "sha256:f73469532f2a6106a807e4f2f9a14358bed87ad11dd1088e28d524b94e8f4cbd",
+        "after_hash": "sha256:f73469532f2a6106a807e4f2f9a14358bed87ad11dd1088e28d524b94e8f4cbd"
+      }
+    }
+  ]
+}

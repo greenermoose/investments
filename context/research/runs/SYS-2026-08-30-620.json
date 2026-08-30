@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-620",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.716833+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.738713+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for CAVA",
+      "symbol": "CAVA",
+      "target_path": "context/data/equities/CAVA.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:43863ab6e52b8f0ea25ab693b4123b72eb5431abbda817e909fea03c6309a892",
+        "after_hash": "sha256:a2110acbb78e9c6f8751a396181c52fdaa9480e4c4f7cdf04511c810c838df37"
+      }
+    }
+  ]
+}

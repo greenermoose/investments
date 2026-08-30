@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-953",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.647963+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.667764+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for DDOG",
+      "symbol": "DDOG",
+      "target_path": "context/data/equities/DDOG.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:5b3398ce6a8feca4ec7f54fbca940f1c7bdd0a61bee47f5e8def22a9dd6d7483",
+        "after_hash": "sha256:1c6538dbcd2fdede0e24c7ece52c9b857c9b668ba6b857a50dacc3c8398e6a45"
+      }
+    }
+  ]
+}

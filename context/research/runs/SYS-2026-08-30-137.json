@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-137",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.293770+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.317265+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for ADP",
+      "symbol": "ADP",
+      "target_path": "context/data/equities/ADP.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:075c17d8b6b0a8b76825cdafa0129a1b8d9f920beaf4ccd20a2d91e1cd08e93f",
+        "after_hash": "sha256:76fd7b82cb6b91a736df9b09ffc1af9fd1e7d14722f9d9b03f4cb017f13af07e"
+      }
+    }
+  ]
+}

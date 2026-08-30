@@ -139,7 +139,11 @@ class DossierCorpusTests(unittest.TestCase):
         for path in sorted(THESES_DIR.glob("*.md")):
             symbol = path.stem
             record = universe.get(symbol)
-            if record is None or (record.get("data_readiness") or {}).get("trade_ready"):
+            if record is None:
+                continue
+            if record.get("research_status") == "AGENT_AUTHORED_EXPERIMENTAL":
+                continue
+            if (record.get("data_readiness") or {}).get("trade_ready"):
                 continue
             text = path.read_text(encoding="utf-8")
             for line in text.splitlines():

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-499",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:50.619352+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:50.641971+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for BKNG",
+      "symbol": "BKNG",
+      "target_path": "context/data/equities/BKNG.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 523,
+        "after_chars": 523,
+        "before_hash": "sha256:32f5dbab41cc0cd2f5edc27bc90490cc9ba20ef854a72ae72447ab9e89105ec9",
+        "after_hash": "sha256:32f5dbab41cc0cd2f5edc27bc90490cc9ba20ef854a72ae72447ab9e89105ec9"
+      }
+    }
+  ]
+}

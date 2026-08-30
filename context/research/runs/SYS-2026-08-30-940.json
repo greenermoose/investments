@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-940",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.300182+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.318505+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for DASH",
+      "symbol": "DASH",
+      "target_path": "context/data/equities/DASH.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b1046e4c3ae1889b0f1fc03b2e58beb2655470d0132c9c31c82c11321933cadf",
+        "after_hash": "sha256:7d27cf38d7bfaa20b7076499e03b46720097cf1c92ab105a114bb6e355003670"
+      }
+    }
+  ]
+}

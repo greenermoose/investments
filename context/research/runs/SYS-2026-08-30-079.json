@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-079",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.774712+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.799547+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:40ab36bc81d3a3ee19c41ec3df1caac66f363466e9aab144a3b481772520ed6a",
+        "after_hash": "sha256:394fa375cbe4395c6458b7e68bf9cbe75563afab19d91416ea5528d331affe9a"
+      }
+    }
+  ]
+}

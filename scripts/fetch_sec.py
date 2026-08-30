@@ -351,7 +351,8 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         ])
 
         gross_profit = extract_metric(facts, ["us-gaap", "ifrs-full"], [
-            "GrossProfit", "GrossProfitLoss"
+            "GrossProfit", "GrossProfitLoss", "GrossProfitLossAttributableToParent",
+            "GrossProfitLossFromOperations",
         ])
         operating_income = extract_metric(facts, ["us-gaap", "ifrs-full"], [
             "OperatingIncomeLoss", "ProfitLossFromOperatingActivities"
@@ -374,8 +375,10 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         ])
         capital_expenditure = extract_metric(facts, ["us-gaap", "ifrs-full"], [
             "PaymentsToAcquirePropertyPlantAndEquipment",
+            "PaymentsToAcquireProductiveAssets",
             "PaymentsForProceedsFromPropertyPlantAndEquipment",
-            "PurchaseOfPropertyPlantAndEquipment"
+            "PurchaseOfPropertyPlantAndEquipment",
+            "PaymentsToAcquireOtherPropertyPlantAndEquipment",
         ])
         interest_expense = extract_metric(facts, ["us-gaap", "ifrs-full"], [
             "InterestExpenseNonOperating", "InterestExpense", "FinanceCosts"
@@ -723,8 +726,17 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
                     "off_balance_sheet_and_contingent_liabilities",
                     "investor_relations_url",
                 ):
-                    if key in existing and key not in payload:
+                    if key not in existing:
+                        continue
+                    if key not in payload:
                         payload[key] = existing[key]
+                        continue
+                    if key == "research":
+                        existing_status = (existing.get("research") or {}).get("research_status")
+                        payload_status = (payload.get("research") or {}).get("research_status")
+                        if existing_status == "AGENT_AUTHORED_EXPERIMENTAL" and payload_status != "AGENT_AUTHORED_EXPERIMENTAL":
+                            payload[key] = existing[key]
+                            payload["research_last_updated"] = existing.get("research_last_updated")
             except (OSError, json.JSONDecodeError):
                 pass
             return payload
@@ -733,10 +745,10 @@ def fetch_company_sec_data(sym, cik, out_dir, ticker_to_cik):
         context_equities_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "context", "data", "equities")
         context_out_file = os.path.join(context_equities_dir, f"{sym}.json")
 
-        # Merge both destinations before writing either, so a failure part way
-        # through cannot leave the two copies describing different companies.
-        out_obj = merge_preserved_fields(out_file, out_obj)
+        # Prefer context/equities when merging agent-authored research so an
+        # older http/data mirror cannot clobber a newer research block.
         out_obj = merge_preserved_fields(context_out_file, out_obj)
+        out_obj = merge_preserved_fields(out_file, out_obj)
         write_json_file(out_file, out_obj)
         write_json_file(context_out_file, out_obj)
             

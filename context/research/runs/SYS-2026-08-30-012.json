@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-012",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.140167+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.157822+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for AAPL",
+      "symbol": "AAPL",
+      "target_path": "context/data/equities/AAPL.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:ac217806c10318091bd2998b3a5eb43018081da6119edc371aba4f84b3afb2ff",
+        "after_hash": "sha256:46ae78534a20c0e5bd51d7d7ca1aa7206e5be83f6daf3c6b70e1209bfed63750"
+      }
+    }
+  ]
+}

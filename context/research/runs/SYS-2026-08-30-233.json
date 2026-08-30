@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-233",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:43.764084+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:43.788544+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for AMAT",
+      "symbol": "AMAT",
+      "target_path": "context/data/equities/AMAT.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 626,
+        "after_chars": 626,
+        "before_hash": "sha256:062a6f4df7d3110184830da4a0c88c7185fb47438eba2c56ba386eebf71bea12",
+        "after_hash": "sha256:062a6f4df7d3110184830da4a0c88c7185fb47438eba2c56ba386eebf71bea12"
+      }
+    }
+  ]
+}

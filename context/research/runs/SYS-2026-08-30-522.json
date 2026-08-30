@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-522",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:51.216343+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:51.235761+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.invalidation_criteria for BKR",
+      "symbol": "BKR",
+      "target_path": "context/data/equities/BKR.json#research.invalidation_criteria",
+      "change": {
+        "field": "invalidation_criteria",
+        "before_hash": "sha256:b170684e6bcd8c6da3bec4df26adbce71342bd7674b36a3eb25b554f1ca264b9",
+        "after_hash": "sha256:9580ffae03655bceb64d0683ee582db9e4af5e6c119d34a2b4062ab96431378c"
+      }
+    }
+  ]
+}

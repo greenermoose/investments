@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-897",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:01.153593+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:01.171918+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for CTSH",
+      "symbol": "CTSH",
+      "target_path": "context/data/equities/CTSH.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:4e44b5bd6ce4377843545708b59c9678f6cf5920fa2e6e3f81670cd4cdb478fe",
+        "after_hash": "sha256:f4bcdd7f8b44a47195c52d28ca18b671551f35028079fff7f1fbd7db4c95fe12"
+      }
+    }
+  ]
+}

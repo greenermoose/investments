@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-760",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.417272+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.438310+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 231,
+        "after_chars": 231,
+        "before_hash": "sha256:776d2d10ed2cf55ba9dadbe13c86c05af2733c00a0959086a04c07a1f02e75d7",
+        "after_hash": "sha256:776d2d10ed2cf55ba9dadbe13c86c05af2733c00a0959086a04c07a1f02e75d7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-649",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.461136+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.483257+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CDNS",
+      "symbol": "CDNS",
+      "target_path": "context/data/equities/CDNS.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:e85487e1741c3295d380b541c12b361f1d94f1551d5e7be7ff4802f9a263dc5d",
+        "after_hash": "sha256:fc9a3e0450f5229c524cca3a61e67f2265bdf56016312c2287a8852427e93f4c"
+      }
+    }
+  ]
+}

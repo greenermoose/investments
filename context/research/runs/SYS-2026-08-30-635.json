@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-635",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:54.097166+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:54.119032+00:00",
+      "event_type": "RESEARCH_FIELD_AUTHORED",
+      "agent_role": "Deterministic Script",
+      "subject": "Authored research.forecast_scenarios for CCEP",
+      "symbol": "CCEP",
+      "target_path": "context/data/equities/CCEP.json#research.forecast_scenarios",
+      "change": {
+        "field": "forecast_scenarios",
+        "before_hash": null,
+        "after_hash": "sha256:0818002f05d302d47a0a73cdee7f8e0e3494c4fa888db920fdfc317ed7d2d1c0"
+      }
+    }
+  ]
+}

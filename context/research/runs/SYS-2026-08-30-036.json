@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-036",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:38.687859+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:38.706221+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ABBV",
+      "symbol": "ABBV",
+      "target_path": "context/data/equities/ABBV.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:52c285cd327d7efe70c1dc0adb805e4d1c745c74aad243b668416618a54dec29",
+        "after_hash": "sha256:41326202748739e6016abe871c2e65d3bdc225f0d6a56d4591a25cb150b15a2e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-086",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:39.946149+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:39.969710+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.latest_catalyst for ACN",
+      "symbol": "ACN",
+      "target_path": "context/data/equities/ACN.json#research.latest_catalyst",
+      "change": {
+        "field": "latest_catalyst",
+        "before_chars": 133,
+        "after_chars": 133,
+        "before_hash": "sha256:2ebe7baa79958b93589bc270618fbff0fb25d81afb3a15d7581c23d1685d3518",
+        "after_hash": "sha256:2ebe7baa79958b93589bc270618fbff0fb25d81afb3a15d7581c23d1685d3518"
+      }
+    }
+  ]
+}

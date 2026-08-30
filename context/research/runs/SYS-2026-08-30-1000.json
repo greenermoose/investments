@@ -1,0 +1,27 @@
+{
+  "run_id": "SYS-2026-08-30-1000",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T02:56:59.625140+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T02:56:59.645653+00:00",
+      "event_type": "THESIS_RENDERED",
+      "agent_role": "Deterministic Script",
+      "subject": "Rendered thesis dossier for ZS",
+      "symbol": "ZS",
+      "target_path": "context/theses/ZS.md"
+    }
+  ]
+}

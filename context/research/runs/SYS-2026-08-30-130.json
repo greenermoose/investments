@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-130",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.098196+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.118181+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.stock_based_compensation for ADI",
+      "symbol": "ADI",
+      "target_path": "context/data/equities/ADI.json#research.stock_based_compensation",
+      "change": {
+        "field": "stock_based_compensation",
+        "before_hash": "sha256:237bba9c7c3633b5cf56c43aa0cf1d2b34180f49231b52324a455c19342f89ae",
+        "after_hash": "sha256:d970598dad4bf7093400cb860f01025276588d51ebac8a0b911777a73455d926"
+      }
+    }
+  ]
+}

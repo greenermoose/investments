@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-613",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.543972+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.568665+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.competitive_moat_analysis for CAVA",
+      "symbol": "CAVA",
+      "target_path": "context/data/equities/CAVA.json#research.competitive_moat_analysis",
+      "change": {
+        "field": "competitive_moat_analysis",
+        "before_chars": 496,
+        "after_chars": 496,
+        "before_hash": "sha256:18e0930c7d9d223c38df0e8de4470b94024e5157b785a178821159229a048a89",
+        "after_hash": "sha256:18e0930c7d9d223c38df0e8de4470b94024e5157b785a178821159229a048a89"
+      }
+    }
+  ]
+}

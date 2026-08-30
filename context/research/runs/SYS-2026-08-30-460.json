@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-460",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:49.597923+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:49.618370+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for BA",
+      "symbol": "BA",
+      "target_path": "context/data/equities/BA.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:a4d5041afa151591f3a851bcda953d1ae1bddf27bb3ae991a34460b3c37002e7",
+        "after_hash": "sha256:c0974baffcae0ba52bd9bfb4882687d671767ac0021a9a7e4da80d9c47ddeb26"
+      }
+    }
+  ]
+}

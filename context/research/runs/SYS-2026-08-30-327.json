@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-327",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:46.189560+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:46.211358+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for APH",
+      "symbol": "APH",
+      "target_path": "context/data/equities/APH.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:a56c75d2ab383bbdffd3a4f3e4ce073165997e4ef5a242dc5a834dcaa313552e",
+        "after_hash": "sha256:d7dccc628df1951b5b4b85bde0fe51fcde8e6a42cd8548a5a67c7388c28cd9fd"
+      }
+    }
+  ]
+}

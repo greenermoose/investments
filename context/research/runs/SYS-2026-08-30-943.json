@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-943",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.371789+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.391862+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.off_balance_sheet_and_contingent_liabilities for DASH",
+      "symbol": "DASH",
+      "target_path": "context/data/equities/DASH.json#research.off_balance_sheet_and_contingent_liabilities",
+      "change": {
+        "field": "off_balance_sheet_and_contingent_liabilities",
+        "before_hash": "sha256:8416931b4618107963a1c667e28ad0a439e55c5ac262af30e5bfc0fa2b03adb2",
+        "after_hash": "sha256:9547730995277775ee9c3acab17e79cc34d8c9f230c1162776819a0af5f193a6"
+      }
+    }
+  ]
+}

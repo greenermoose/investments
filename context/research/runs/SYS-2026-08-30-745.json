@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-745",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:57.026665+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:57.047861+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.catalyst_timeline for COST",
+      "symbol": "COST",
+      "target_path": "context/data/equities/COST.json#research.catalyst_timeline",
+      "change": {
+        "field": "catalyst_timeline",
+        "before_hash": "sha256:05cfc093d2bc44291352cd29329730b6765ebf8974746073fd0b5da7858cace8",
+        "after_hash": "sha256:1049c688af12b053cfaeadfc0912d49695476077d375c95f15f0a4e704f9fbca"
+      }
+    }
+  ]
+}

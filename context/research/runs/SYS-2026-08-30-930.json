@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-930",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:02.028098+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:02.048079+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for CVX",
+      "symbol": "CVX",
+      "target_path": "context/data/equities/CVX.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:acef5614f0b068d494b6b40805489d7d494b8008ad9718b885756200f88048f9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-285",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.114941+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.137267+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_ps_multiple_narrative for AMGN",
+      "symbol": "AMGN",
+      "target_path": "context/data/equities/AMGN.json#research.valuation_ps_multiple_narrative",
+      "change": {
+        "field": "valuation_ps_multiple_narrative",
+        "before_chars": 208,
+        "after_chars": 208,
+        "before_hash": "sha256:09bc39922ef2f07a9ecf75ccc2c6102a8461b1ff93ac5ee9c1156407b1c56e2b",
+        "after_hash": "sha256:09bc39922ef2f07a9ecf75ccc2c6102a8461b1ff93ac5ee9c1156407b1c56e2b"
+      }
+    }
+  ]
+}

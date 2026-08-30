@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-303",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:45.580092+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:45.601901+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.valuation_parameters for AMZN",
+      "symbol": "AMZN",
+      "target_path": "context/data/equities/AMZN.json#research.valuation_parameters",
+      "change": {
+        "field": "valuation_parameters",
+        "before_hash": "sha256:bf4fba7c4f4680d13f937131973902487eef4b0b1fc4d4835ba323731f15d34a",
+        "after_hash": "sha256:19faefc47e91d39a67ca0bf6fd6d350bf3299a40609d1f96ef7064dec7723375"
+      }
+    }
+  ]
+}

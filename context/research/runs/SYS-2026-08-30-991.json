@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-991",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:48:03.673339+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:48:03.693771+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for DHR",
+      "symbol": "DHR",
+      "target_path": "context/data/equities/DHR.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:6f1e7aee44702c2e6edc7027818b862edeb3e28055409e45da7ffe87cf64cdbe",
+        "after_hash": "sha256:92c2dcdb9949919c1ecde42a41a8ef67056d352e812419001fcc9691acbf1348"
+      }
+    }
+  ]
+}

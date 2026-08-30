@@ -1,0 +1,34 @@
+{
+  "run_id": "SYS-2026-08-30-395",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:47.924199+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:47.947141+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.revenue_drivers_narrative for ASML",
+      "symbol": "ASML",
+      "target_path": "context/data/equities/ASML.json#research.revenue_drivers_narrative",
+      "change": {
+        "field": "revenue_drivers_narrative",
+        "before_chars": 564,
+        "after_chars": 564,
+        "before_hash": "sha256:3555cc51a19636e9d836633acdc2f33b69e2e0e877d4624d8e01d7ebe0037d39",
+        "after_hash": "sha256:3555cc51a19636e9d836633acdc2f33b69e2e0e877d4624d8e01d7ebe0037d39"
+      }
+    }
+  ]
+}

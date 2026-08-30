@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-150",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:41.640355+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:41.662462+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.tam_and_market_share for ADP",
+      "symbol": "ADP",
+      "target_path": "context/data/equities/ADP.json#research.tam_and_market_share",
+      "change": {
+        "field": "tam_and_market_share",
+        "before_hash": "sha256:b80d18f87805b71a3133e2478b8679a404ca96ca4f68016acabd40e9277d9304",
+        "after_hash": "sha256:a192d031159bdd2c3707a1b188dafd42bd3df51d7a14630c4cae85782379f010"
+      }
+    }
+  ]
+}

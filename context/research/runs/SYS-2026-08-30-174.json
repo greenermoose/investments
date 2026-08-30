@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-174",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:42.279892+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:42.301730+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for AEP",
+      "symbol": "AEP",
+      "target_path": "context/data/equities/AEP.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:4ad95f471c2ec227db6394dc8364a7f077129a4949692357435420610715ddd6",
+        "after_hash": "sha256:9cbdee8db1b9366fa09f196f49649482f0355c60c320df4d5d6a635151e8b61b"
+      }
+    }
+  ]
+}

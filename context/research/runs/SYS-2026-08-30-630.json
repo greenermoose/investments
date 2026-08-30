@@ -1,0 +1,32 @@
+{
+  "run_id": "SYS-2026-08-30-630",
+  "schema_version": "1.0",
+  "started_at": "2026-08-30T01:47:53.976533+00:00",
+  "completed_at": null,
+  "status": "IN_PROGRESS",
+  "cadence": "ON_DEMAND",
+  "trigger": "script_hook",
+  "agent_roles": [
+    "Deterministic Script"
+  ],
+  "prompt_ref": null,
+  "runtime_context_signature": null,
+  "summary": "Script auto-hook session",
+  "deliverables": [],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-30-001",
+      "recorded_at": "2026-08-30T01:47:53.996809+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Updated research.capital_strategy for CCEP",
+      "symbol": "CCEP",
+      "target_path": "context/data/equities/CCEP.json#research.capital_strategy",
+      "change": {
+        "field": "capital_strategy",
+        "before_hash": "sha256:fcae5c8bcedc1caf0eece1e29a2dc0fb7e600d7367df832114ccf65e51aad2fd",
+        "after_hash": "sha256:18aaf81bea19e684f99ca34ef40502db81039860d4a774a67a49b5b4ae69edff"
+      }
+    }
+  ]
+}

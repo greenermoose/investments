@@ -1,3 +1,19 @@
+# FORMAT TEMPLATE - SYNTHETIC FIGURES - EXPERIMENTAL
+
+## What this file is
+
+This is the layout reference for a dossier that `scripts/render_thesis.py`
+produces for a company whose research **has** been authored. It is not
+coverage of Boeing and is not read by any script or agent as research.
+
+Every number below is invented to illustrate the format. They are not
+observations, estimates, or claims about any real company. A live dossier is
+named `<TICKER>.md`, is rendered from the research store, and carries its own
+data snapshot ID, provenance breakdown, and readiness verdict.
+
+- **experiment_status:** EXPERIMENTAL
+- **Warning:** Ratings, forecasts, classifications, and order proposals produced by this system may be wrong and do not constitute investment advice.
+
 # Investment Thesis Dossier: BA - The Boeing Company
 
 > **Format reference only.** This file documents the dossier layout that `scripts/render_thesis.py` produces. It is not live coverage: the figures below are illustrative and are not read by any script or agent as research. Live dossiers are rendered from the research store and named `<TICKER>.md`.
@@ -10,8 +26,8 @@
 - **Current Price:** $194.20 per share
 - **Target Exit Price:** $265.00 per share
 - **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 8.4 / 10.0
-- **Rating:** BUY
+- **Conviction Score:** 8.4 / 10.0 _(illustrative)_
+- **Rating:** BUY _(illustrative)_
 - **Target Strategy:** Quality Turnaround & Duopoly Cash Flow Recovery
 - **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=12927
 

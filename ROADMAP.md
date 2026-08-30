@@ -1,16 +1,33 @@
 # Development Roadmap
 
-This roadmap outlines the phased development plan for the **Agentic Investment Advisor & Context Provider** system. The objective is to build a high-performance quantitative context engine, persistent multi-horizon investment thesis store, adversarial deliberation pipeline, and single-session execution framework for our AI agent team to achieve >= 20% annualized returns over a 20-year horizon.
+This roadmap covers the permanent **Experimental Investment Research System**. The experiment prospectively measures whether net-of-fee, pre-tax results can reach a 20% annualized scoring threshold over 20 years. The threshold is not a forecast, assurance, or capability claim, and the system remains experimental regardless of accumulated observations or performance.
+
+## Immediate Experimental Priorities
+
+1. Enforce experimental labeling and fail-closed readiness gates on every screen, dossier, report, and order proposal.
+2. Repair market-price integrity and collect SEC-derived fundamentals before issuing any modeled classification.
+3. Freeze immutable weekly forecasts and input hashes before observing outcomes.
+4. Record one private execution event per file and reconcile each account independently.
+5. Measure forecast calibration, option-model error, implementation costs, attribution, risk, and benchmark-relative performance.
+6. Expand the equity universe only after the preceding data-integrity and outcome-measurement work is operating prospectively.
+
+> **On the "Completed Foundations" below.** Two of them are completed
+> *machinery*, not completed *coverage*. The dossier engine renders dossiers
+> correctly, and the onboarding CLI onboards correctly, but as of 2026-08-29
+> all 212 records are `UNVERIFIED_PLACEHOLDER` and none carries a rating. The
+> research those engines exist to render has not been authored. Expanding the
+> universe further before that work is done would multiply placeholder records,
+> which is why Phase 9 is now sequenced after forecast calibration.
 
 ## High-Level Phases
 
 ```mermaid
 gantt
-    title Agentic Investment Advisor Roadmap
+    title Experimental Investment Research System Roadmap
     dateFormat  YYYY-MM-DD
     section Completed Foundations
     Portfolio Ingestion & State Normalizer   :done, f1, 2026-08-15, 2026-08-17
-    200-Dossier Investment Thesis Engine    :done, f2, 2026-08-15, 2026-08-18
+    200-Dossier Dossier Rendering Engine    :done, f2, 2026-08-15, 2026-08-18
     SEC EDGAR & Tier 1 Data Pipelines       :done, f3, 2026-08-15, 2026-08-18
     Return Engine & Multi-Horizon Modeling  :done, f4, 2026-08-16, 2026-08-18
     Black-Scholes & Derivatives Pricer      :done, f5, 2026-08-16, 2026-08-18
@@ -18,6 +35,14 @@ gantt
     Analyst Coverage & Consensus Engine     :done, f7, 2026-08-17, 2026-08-19
     Stage 1 Triage & Token ROI Screener     :done, f8, 2026-08-17, 2026-08-19
     Universe Expansion & Onboarding CLI     :done, f9, 2026-08-18, 2026-08-20
+    section Phase 3.9-3.10: Data Integrity
+    Fundamental Metrics & Risk Extraction   :done, d1, 2026-08-29, 1d
+    Price Integrity & Schema Arbitration    :done, d2, 2026-08-29, 1d
+    section Experimental Program
+    Experimental Contract & Fail-Closed Gates :done, x1, 2026-08-29, 1d
+    Prospective Collection Loop               :active, x2, 2026-08-30, 30d
+    Replace Placeholder Research (212)        :x3, after x2, 60d
+    Forecast Calibration & Scoring Record     :x4, after x3, 90d
     section Phase 5: Weekly Execution
     Single-Session Deliberation & Plans     :active, p5_1, 2026-08-20, 7d
     Post-Trade Fill & Calibration Tracker   :p5_2, after p5_1, 5d
@@ -31,7 +56,7 @@ gantt
     Inflection Point & Holding Period Sync       :p8_1, 2026-09-10, 8d
     Multi-Cycle Empirical Validation             :p8_2, after p8_1, 6d
     section Phase 9: Market-Wide Scaling
-    Full US Market Listing Cache (SQLite/Parquet):p9_1, 2026-10-01, 14d
+    Full US Market Listing Cache (SQLite/Parquet):p9_1, after x4, 14d
     Autonomous SEC 10-K/10-Q Ingestion Triggers  :p9_2, after p9_1, 10d
 ```
 
@@ -103,15 +128,16 @@ gantt
   - Connect Equity Research Agent to automated 20%+ ROI screening, Stage 1 Triage gating, SEC EDGAR XBRL ingestion, valuation modeling, thesis generation, and quality control auditing.
   - Deploy comprehensive protocol in [context/prompts/onboard_company.md](file:///c:/Users/Fred/github/investments/context/prompts/onboard_company.md), [http/docs/workflow.html](file:///c:/Users/Fred/github/investments/http/docs/workflow.html), and [http/guide.html](file:///c:/Users/Fred/github/investments/http/guide.html) (Cadence 5).
 
-- [ ] **3.9 Fundamental Financial Metrics Extraction (Unblocks Stage 1 Triage):**
+- [x] **3.9 Fundamental Financial Metrics Extraction (Unblocks Stage 1 Triage):** *(completed 2026-08-29)*
   - Extend [scripts/fetch_sec.py](file:///c:/Users/Fred/github/investments/scripts/fetch_sec.py) to extract income statement and cash flow concepts from the SEC XBRL `companyfacts` endpoint that the Stage 1 triage gate already reads but which no pipeline currently populates: `gross_margin_pct`, `operating_margin_pct`, `net_income`, `operating_cash_flow`, `capital_expenditure`, `free_cash_flow_usd_m`, `shareholders_equity`, `debt_to_equity`, `annual_dilution_pct`, `cash_runway_months`, and `roic`.
-  - Audited 2026-08-28: all of these are present in 0 of 175 universe records, so every threshold in [scripts/triage_universe.py](file:///c:/Users/Fred/github/investments/scripts/triage_universe.py) is guarded by a `is not None` check that silently passes. The gate documented in Section 5 of [AGENTS.md](file:///c:/Users/Fred/github/investments/AGENTS.md) currently filters nothing.
-  - Note that `debt_to_equity` is uncomputable today despite `total_debt` being stored, because shareholders' equity is absent from every record.
+  - Audited 2026-08-28: all of these were present in 0 of 175 universe records, so every threshold in [scripts/triage_universe.py](file:///c:/Users/Fred/github/investments/scripts/triage_universe.py) was guarded by an `is not None` check that silently passed. The gate documented in Section 5 of [AGENTS.md](file:///c:/Users/Fred/github/investments/AGENTS.md) filtered nothing.
+  - Resolved 2026-08-29. `fetch_sec.py` now derives and stores margins, FCF and conversion, net leverage, interest coverage, effective tax rate, NOPAT, invested capital, ROIC, and liquidity runway. Coverage across 212 records: operating margin 188, FCF 164, debt/equity 162, ROIC 133, gross margin 108. Coverage is partial by design -- a company that does not report gross profit gets no gross margin rather than an imputed one -- and the readiness gate treats each absence as a blocking missing input.
   - Propagate the new fields through [scripts/build_universe_json.py](file:///c:/Users/Fred/github/investments/scripts/build_universe_json.py) and re-enable genuine triage gating. Tracked as [OQI-2026-08-006](file:///c:/Users/Fred/github/investments/context/research/open_questions_and_issues.md).
-- [ ] **3.10 Universe Record Schema Arbitration & Price Series Integrity Assertions:**
+- [x] **3.10 Universe Record Schema Arbitration & Price Series Integrity Assertions:** *(completed 2026-08-29)*
   - Establish a single authoritative universe record schema in `context/schemas/`, and require both [scripts/build_universe_json.py](file:///c:/Users/Fred/github/investments/scripts/build_universe_json.py) and [scripts/quality_control.py](file:///c:/Users/Fred/github/investments/scripts/quality_control.py) to validate against it before writing. The two currently maintain divergent record definitions (approximately 95 fields versus approximately 49), and the `--fix` repair path silently destroys 46 fields per record across the entire universe, including all 13-quarter revenue forecasts, 4-horizon price targets, 6-horizon share projections, and every return-engine output. Recorded as ERR-2026-08-014.
-  - Add a concordance assertion to [scripts/quality_control.py](file:///c:/Users/Fred/github/investments/scripts/quality_control.py) requiring `previous_close == nominal_previous_close` whenever `cumulative_split_factor == 1.0`. Audited 2026-08-28: 170 of 175 records violate this, producing implausible single-session moves (ABNB +39.59%, ADP +30.80%). Broker-observed ENVX day change was $0.00 against a stored -52.13%. Recorded as ERR-2026-08-015.
-  - Require any `|day_change_percent|` above a configured threshold to be corroborated by a volume anomaly or an explicit recorded override before it is written.
+  - Resolved 2026-08-29, though not as originally specified. Asserting `previous_close == nominal_previous_close` turned out to be untestable: once the collector was corrected, both fields were assigned the same value, so the assertion could never fail. The real defect was that the live quote was being compared against a candle two sessions old whenever the current session's bar had not yet settled, which is what produced ABNB +39.59% and ADP +30.80%. Prior-close selection is now aligned to the quote's own session, and concordance is asserted against the prior close implied by the source's independently reported change percent, allowing for the dividend adjustment a source is entitled to apply.
+  - Integrity is now decided once, at collection time, in `fetch_market_prices.assess_price_integrity`; `quality_control.py` and `experiment_contract.py` report that verdict rather than recomputing it, so the rule cannot drift from the collector that enforces it.
+  - An extreme session move is corroborated only by an official exchange or issuer source supplied through `--corroboration-file`. It previously defaulted to corroborated, which meant the rule never fired. After the session-alignment fix, 0 of 214 records show a move above 25% and 0 are quarantined, against 53 phantom extreme moves before.
 
 ## Phase 4: Options Theoretical Pricing & Weekend Limit Calculator
 

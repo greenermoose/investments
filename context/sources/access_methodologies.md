@@ -87,7 +87,7 @@ When an AI agent synthesizes qualitative moat analyses, Porter's Five Forces dyn
 ### Technical Mechanics of Parametric Generation
 1. **Pre-Training Compression:** Foundation transformer models pre-train on trillions of tokens (including decades of SEC 10-K/10-Q filings, financial newswires, earnings transcripts, and academic finance literature), encoding structural relationships into billions of neural weight parameters.
 2. **Self-Attention & Latent Knowledge Activation:** Ingested prompt tokens activate multi-head self-attention mechanisms, routing queries through feed-forward layers that capture statistical regularities of corporate operations and financial economics.
-3. **Next-Token Logit Computation:** The output projection layer computes logits across the token vocabulary, and softmax turns them into sampling probabilities, generating institutional-grade text token by token.
+3. **Next-Token Logit Computation:** The output projection layer computes logits across the token vocabulary, and softmax turns them into sampling probabilities, generating experimental text token by token.
 4. **Post-Training Alignment:** Supervised Fine-Tuning (SFT) and Reinforcement Learning (RLHF/DPO) steer token probabilities toward rigorous analytical structure, quantitative discipline, and schema adherence.
 
 ### Governance Rules for Parametric Knowledge
@@ -157,4 +157,5 @@ When scripts or agents encounter HTTP response codes from external endpoints, th
    - Log the temporary outage to system stdout and fall back gracefully to previous cached values in `http/data/` or `context/data/`.
 4. **Local Disk Cache Primacy:**
    - AI agents must always check if fresh data exists in `http/data/`, `context/data/`, or `scripts/data/` before initiating remote network calls.
+
 

@@ -1,6 +1,8 @@
-# Agentic Investment Advisor & Context Provider
+# Experimental Investment Research System
 
-The goal of this repo is to create an intelligent, multi-agent investment advisory system engineered to overcome the limitations of standard chatbots to achieve at least a 20% annualized return over 20 years for a portfolio of public companies whose shares trade on an exchange in the United States. By maintaining full context over the entire US public equity universe, parsing weekly portfolio snapshots, managing persistent investment thesis memory, and mathematically modeling options strategies, this system empowers AI agent teams to deliver institutional-grade, actionable investment plans.
+This repository is a permanent experiment in multi-agent public-equity research. It tests whether prospective, net-of-fee results can reach a 20% annualized scoring threshold over 20 years for US exchange-listed public companies. That threshold would require approximately 38.34 times the starting capital. It is a research hypothesis, not a forecast, assurance, capability claim, or statement of likely performance.
+
+The experiment maintains public-company context, parses weekly portfolio snapshots, stores research hypotheses, and models option reservation prices. Every rating, forecast, classification, and order proposal may be wrong. Research records that have not been replaced with company-specific, source-linked evidence are labeled `UNVERIFIED_PLACEHOLDER` and cannot drive ratings or experimental order proposals.
 
 ## Disclaimer: Use at Your Own Risk
 
@@ -37,7 +39,10 @@ investments/
     data/               # Local script databases and caches (e.g., universe.db)
   private/              # Primary audience: Humans (Private Data - Git Ignored)
     snapshots/          # Raw weekly inputs (brokerage CSVs, screenshots)
-    plans/              # Generated weekly trading plans (Plain ASCII text .txt)
+    plans/              # Experimental weekly order proposals (Plain ASCII text .txt)
+    logs/execution/     # One immutable JSON log event per submitted/fill/lifecycle event
+    performance/        # One immutable prospective performance snapshot per file
+    experiments/        # Immutable weekly input, forecast, and proposal snapshot manifests
   scratch/              # Local Sandbox for Humans & Agents (Git Ignored)
   examples/             # Public onboarding templates (sample portfolio CSV, sample plan .txt)
 ```
@@ -88,27 +93,27 @@ flowchart TD
 ```
 
 1. **Portfolio Ingestion Agent:** Parses uploaded screenshots or CSV files in `private/snapshots/` into clean textual holdings (symbols, share counts, cash, `SGOV`, and open options) while maintaining strict multi-portfolio isolation. Identifies covered call eligibility (100 or more shares).
-2. **Equity Research Agent:** Proactively searches the Internet and US public exchanges (NYSE, NASDAQ, AMEX) using tools to discover compelling companies, evaluates solvency/runway, and screens for high probability of achieving >= 20% annualized ROI to onboard single or batch equities into our universe on demand.
-3. **Investment Thesis Agent:** Synthesizes SEC EDGAR 10-K/10-Q filings, earnings releases, and industry trends to author institutional 3-year quantitative forecasts (13-quarter revenue path, 6-horizon shares outstanding, 4-horizon price target ranges), dual Revenue and P/S narratives, and assigns decisive `BUY`, `HOLD`, `SELL`, or `AVOID` ratings.
+2. **Equity Research Agent:** Searches public sources and US exchanges (NYSE, NASDAQ, AMEX), evaluates solvency and runway, and classifies candidates against the experimental 20% scoring hypothesis. Screening classifications may be wrong.
+3. **Investment Thesis Agent:** Synthesizes source-linked evidence to author experimental 3-year scenario forecasts and `BUY`, `HOLD`, `SELL`, or `AVOID` classifications. These are research outputs, not advice.
 4. **Memory Agent:** Manages institutional memory across runs in `context/`, audits catalyst milestones against quarterly results, monitors explicit invalidation exit triggers, maintains the errata log, and issues urgent liquidation alerts for broken theses (including BUY TO CLOSE mandates on open derivatives).
 5. **Pricing Agent:** Predicts price trends to calculate technical limit order prices for common stocks, models Black-Scholes options pricing for Cash-Secured Puts (0.15-0.30 Delta) and Covered Calls (0.20-0.35 Delta), verifies net-credit rolls, and computes Buy to Close (BTC) order pricing on losing propositions.
-6. **Lead Portfolio Manager:** Synthesizes the sub-agents' findings into a personalized **Weekly Trading Plan** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`) and coordinates single-session Monday execution.
+6. **Lead Portfolio Manager:** Synthesizes the agents' findings into an **Experimental Weekly Order Proposal** (plain ASCII text saved to `private/plans/YYYY-MM-DD-plan.txt`). The renderer verifies arithmetic and constraints; it does not validate or optimize the proposed actions.
 
 ## System Operating Workflows
 
 The system supports two core operating workflows:
 
-### Workflow 1: Weekly Deliberation & Single-Session Order Execution
+### Workflow 1: Weekly Deliberation & Experimental Order Proposals
 
 ```
 [Friday Close / Weekend]
   1. Upload portfolio screenshot or CSV into private/snapshots/
   2. Run the weekly agent deliberation prompt (context/prompts/weekly_deliberation.md)
-  3. Review the plain-text Trading Plan saved in private/plans/YYYY-MM-DD-plan.txt
+  3. Review the plain-text experimental order proposal saved in private/plans/YYYY-MM-DD-plan.txt
   4. Interrogate the agents via Interactive Q&A (challenge targets, theses, and limit prices)
   
 [Monday 9:30 AM ET]
-  5. Place generated Limit Orders at market open in a single session
+  5. Independently decide whether to submit the experimental limit-order proposals
 ```
 
 ### Workflow 2: Coverage Universe Expansion & Equity Onboarding
@@ -242,6 +247,10 @@ The system is engineered for maximum token parsimony, separating deterministic t
 | **Cadence 5: Universe Expansion** | On-Demand / Periodic | `manage_universe.py onboard`, `screen` | ~10K - 15K Tokens / Stock | Screen 20%+ ROI compounders, ingest SEC XBRL data, author dossiers, update universe. |
 | **Cadence 6: Ground-Truth Rebuild** | Rare / On-Demand | `manage_universe.py rebuild-all` | Full Audit Mode | Rebuild entire dataset from primary SEC/exchange sources to eliminate hallucinations. |
 
+The prospective experimental loop -- daily collection, event-driven filing ingest, Friday chain archiving, weekend freezing, Monday execution recording, and Friday settlement scoring -- is sequenced separately in [Prospective Experimental Collection Loop](context/strategy/experimental_collection_loop.md), with the exact command for each step. Its ordering is load-bearing: a forecast recorded after its outcome is knowable measures nothing.
+
+Every script in that loop is fronted by `python scripts/manage_universe.py experiment <subcommand>`.
+
 Detailed operational playbooks and copy-paste CLI commands are documented in the [User Guide & Operational Cadences](http/guide.html).
 
 ## Running the Documentation & Universe Explorer
@@ -277,6 +286,37 @@ Then open `http://localhost:8080` in your web browser:
 4. **Prompt the Agent Team for Weekly Deliberation:**
    - Copy the master prompt template from [weekly_deliberation.md](context/prompts/weekly_deliberation.md) into your AI session to generate your Monday Trading Plan in `private/plans/YYYY-MM-DD-plan.txt`.
 
+5. **Run the Checks Before Trusting Any Output:**
+   ```bash
+   python scripts/run_tests.py
+   ```
+   ```bash
+   python scripts/check_experimental_claims.py
+   ```
+   ```bash
+   python scripts/quality_control.py --audit
+   ```
+
+## Current State of the Experiment
+
+As of 2026-08-29, every record in the universe is marked `UNVERIFIED_PLACEHOLDER`
+and **no company carries a rating, price target, or ROI**. This is the honest
+state, not a broken one: the research those fields would derive from was
+previously generated from sector heuristics rather than company sources, and has
+been withdrawn rather than left in place looking authoritative.
+
+What is collected and current: prices, volumes, corporate actions, realized
+volatility, ATR, RSI, moving averages, beta, and per-record integrity verdicts
+across 212 equities; SEC filings and derived fundamentals (margins, free cash
+flow and conversion, net leverage, interest coverage, ROIC, liquidity runway)
+across 211. Coverage of individual metrics is partial by design -- a company
+that does not report gross profit gets no gross margin rather than an imputed
+one.
+
+What is outstanding: authoring company-specific, source-linked research to
+replace the 212 placeholders, and archiving real option chains before any option
+order can be proposed. `python scripts/research_gaps.py` is the standing queue.
+
 ## License
 
-This project is licensed under the terms of the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full text.
+This project is licensed under the terms of the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full text.

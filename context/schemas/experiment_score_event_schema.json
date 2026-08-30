@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExperimentScoreEvent",
+  "description": "One immutable private scoring event linking a frozen forecast to subsequently observed outcomes.",
+  "type": "object",
+  "required": ["experiment_status", "score_event_id", "forecast_snapshot_id", "symbol", "scored_at", "metrics", "actual_source_refs"],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "score_event_id": { "type": "string" },
+    "forecast_snapshot_id": { "type": "string" },
+    "symbol": { "type": "string" },
+    "scored_at": { "type": "string" },
+    "metrics": { "type": "object" },
+    "actual_source_refs": { "type": "array", "minItems": 1 }
+  }
+}

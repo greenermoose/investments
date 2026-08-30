@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecurityMasterSnapshot",
+  "description": "Immutable prospective security-master observation for US exchange listings.",
+  "type": "object",
+  "required": ["experiment_status", "snapshot_id", "as_of_date", "retrieved_at", "sources", "securities", "content_hash"],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "snapshot_id": { "type": "string" },
+    "as_of_date": { "type": "string", "format": "date" },
+    "retrieved_at": { "type": "string" },
+    "sources": { "type": "array" },
+    "content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "securities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ticker", "cik", "company_name", "exchange", "listing_status", "listing_type", "is_adr"],
+        "properties": {
+          "ticker": { "type": "string" },
+          "former_tickers": { "type": "array", "items": { "type": "string" } },
+          "cik": { "type": ["string", "null"] },
+          "company_name": { "type": "string" },
+          "exchange": { "type": ["string", "null"] },
+          "listing_status": { "type": "string", "enum": ["ACTIVE", "DELISTED", "UNKNOWN"] },
+          "listing_type": { "type": ["string", "null"] },
+          "is_adr": { "type": ["boolean", "null"] },
+          "ipo_date": { "type": ["string", "null"] },
+          "delisting_date": { "type": ["string", "null"] },
+          "adr_ratio": { "type": ["number", "null"] },
+          "source_references": { "type": "array" }
+        }
+      }
+    }
+  }
+}

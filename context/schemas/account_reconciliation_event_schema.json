@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccountReconciliationEvent",
+  "description": "One immutable private account-isolated reconciliation log event between consecutive snapshots.",
+  "type": "object",
+  "required": ["experiment_status", "reconciliation_id", "account_name", "previous_snapshot_id", "current_snapshot_id", "value_bridge", "option_lifecycle", "anomalies"],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "reconciliation_id": { "type": "string" },
+    "account_name": { "type": "string" },
+    "previous_snapshot_id": { "type": "string" },
+    "current_snapshot_id": { "type": "string" },
+    "value_bridge": { "type": "object" },
+    "option_lifecycle": { "type": "object" },
+    "anomalies": { "type": "array" }
+  }
+}

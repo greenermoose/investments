@@ -1,6 +1,6 @@
 # Token Parsimony, Tiered Operational Cadences & Ground-Truth Regeneration
 
-This strategy document defines the operational cadences, token economy architecture, trust-but-verify caching protocol, and primary source anti-hallucination regeneration procedures for the Agentic Investment Advisor system.
+This strategy document defines the operational cadences, token economy architecture, trust-but-verify caching protocol, and primary source anti-hallucination regeneration procedures for the Experimental Investment Research System.
 
 ## 1. The Token Economy & Parsimony Mandate
 
@@ -133,4 +133,5 @@ When model hallucination, parameter drift, or schema corruption is suspected, ag
 4. **Step 4: Deterministic Return Model Execution**
    Re-compute valuation multiples and CAGR returns through `scripts/valuation_model.py` and `scripts/return_engine.py`.
 5. **Step 5: Automated Quality Control Gate**
-   Execute `python scripts/quality_control.py --audit` to guarantee 0 errors and 0 warnings before resuming normal trading operations.
+   Execute `python scripts/quality_control.py --audit` to require 0 errors and 0 warnings before resuming normal trading operations.
+

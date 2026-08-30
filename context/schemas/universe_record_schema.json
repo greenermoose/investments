@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CanonicalUniverseRecord",
+  "description": "Canonical required-field contract for every public universe record. Builders and repair paths must preserve every required field.",
+  "type": "object",
+  "required": [
+    "experiment_status", "experimental_warning", "data_readiness", "symbol", "name",
+    "sector", "industry", "primary_exchange", "description", "thesis_status",
+    "conviction_score", "entry_price", "target_exit_price", "current_price",
+    "nominal_current_price", "previous_close", "nominal_previous_close",
+    "split_adj_previous_close", "adj_close", "day_change", "day_change_percent",
+    "day_volume", "average_volume_20d", "volume_ratio", "fifty_two_week_high",
+    "fifty_two_week_low", "sma_20", "sma_50", "sma_200", "rsi_14", "atr_14",
+    "realized_volatility_20d", "realized_volatility_60d", "realized_volatility_252d",
+    "beta_252d", "technical_support_20d", "technical_resistance_20d",
+    "cumulative_split_factor", "recent_splits", "recent_dividends", "target_roi",
+    "annualized_roi_pct", "triage_status", "research_status", "indices",
+    "shares_outstanding", "ttm_revenue", "fundamentals", "total_debt",
+    "cash_and_cash_equivalents", "market_cap", "enterprise_value", "filings",
+    "historical_candles_30d", "revenue_forecast_13q", "shares_projections_6h",
+    "price_target_ranges_4h", "last_updated"
+  ],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "experimental_warning": { "type": "string", "minLength": 40 },
+    "data_readiness": { "type": "object" },
+    "symbol": { "type": "string", "pattern": "^[A-Z0-9.-]{1,10}$" },
+    "name": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}

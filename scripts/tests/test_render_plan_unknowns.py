@@ -27,6 +27,16 @@ class RenderPlanUnknownTests(unittest.TestCase):
 
     def document(self, price):
         return {
+            "experiment_status": "EXPERIMENTAL",
+            "experimental_warning": "Experimental research output. Ratings, forecasts, and order proposals may be wrong.",
+            "data_snapshot_id": "EXP-TEST-001",
+            "data_as_of": "2026-08-28T20:00:00Z",
+            "model_version": "test-model",
+            "prompt_version": "test-prompt",
+            "missing_inputs": [],
+            "stale_inputs": [],
+            "anomalous_inputs": [],
+            "evidence_percentages": {"TEST": 100.0},
             "plan_date": "2026-08-31",
             "authored_by": "Lead Portfolio Manager Agent",
             "portfolios": [{

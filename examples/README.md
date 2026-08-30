@@ -1,6 +1,6 @@
 # Workflow Examples & Templates
 
-This directory provides public, synthetic mock templates illustrating how the **Agentic Investment Advisor** system operates.
+This directory provides public, synthetic mock templates illustrating how the **Experimental Investment Research System** operates.
 
 ## Overview
 

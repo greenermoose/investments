@@ -138,7 +138,7 @@
   },
   "research": {
     "symbol": "EA",
-    "schema_version": "1.0",
+    "schema_version": "2.0",
     "description": {
       "text": "Develops, markets, and delivers games, content, and online services across consoles, mobile devices, and personal computers (EA SPORTS FC, Madden, Apex Legends).",
       "provenance": {
@@ -335,7 +335,12 @@
         "authority_tier": "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE",
         "runtime_context_signature": "System clock 2026-08-28; role Investment Thesis Agent; RUN-2026-08-28-004 full-universe research refresh; sync_research_from_meta.py"
       }
-    }
+    },
+    "experiment_status": "EXPERIMENTAL",
+    "research_status": "UNVERIFIED_PLACEHOLDER",
+    "as_of_date": "2026-08-29",
+    "authoring_model": "legacy-unknown",
+    "prompt_version": "legacy-unknown"
   },
-  "research_last_updated": "2026-08-28T19:28:48.077115+00:00"
+  "research_last_updated": "2026-08-29T12:08:34.690483+00:00"
 }

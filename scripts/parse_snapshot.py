@@ -11,6 +11,7 @@ tags covered call eligibility (>= 100 shares), and outputs normalized portfolio 
 import argparse
 import csv
 import datetime
+import hashlib
 import json
 import re
 import sys
@@ -46,7 +47,7 @@ OPTION_SYMBOL_RE = re.compile(r"^[A-Z.]{1,6}\s+\d{2}/\d{2}/\d{4}\s+[\d.]+\s+[CP]
 TOTALS_ROW_RE = re.compile(r"^(positions?|account|grand)\s+total", re.IGNORECASE)
 
 ACCOUNT_NAME_RE = re.compile(
-    r"positions\s+for\s+account\s+(.+?)\s+as\s+of\s+(\d{4}[/-]\d{2}[/-]\d{2})",
+    r"positions\s+for\s+account\s+(.+?)\s+as\s+of\s+.*?(\d{4}[/-]\d{2}[/-]\d{2})",
     re.IGNORECASE,
 )
 
@@ -106,6 +107,24 @@ def parse_number(raw):
     except ValueError:
         return None
     return -value if negative else value
+
+
+def parse_option_contract(label):
+    """Normalize a supported brokerage option label into explicit contract fields."""
+    match = re.match(
+        r"^(?P<underlying>[A-Z.]{1,6})\s+(?P<expiration>\d{2}/\d{2}/\d{4})\s+"
+        r"(?P<strike>[\d.]+)\s+(?P<type>[CP])$",
+        str(label).strip().upper(),
+    )
+    if not match:
+        return None
+    expiration = datetime.datetime.strptime(match.group("expiration"), "%m/%d/%Y").date().isoformat()
+    return {
+        "underlying": match.group("underlying"),
+        "option_type": "CALL" if match.group("type") == "C" else "PUT",
+        "strike": float(match.group("strike")),
+        "expiration": expiration,
+    }
 
 
 def new_account_record(name):
@@ -240,12 +259,27 @@ def parse_csv_snapshot(file_path):
             # descriptor second. Never by scanning the ticker for "P" or "C", which
             # misclassifies AAPL, AMD, CRM and roughly a third of the universe.
             if "option" in asset_type or OPTION_SYMBOL_RE.match(symbol_upper):
+                contract = parse_option_contract(symbol_upper)
+                contracts = int(quantity) if quantity is not None else 0
                 account["options"].append({
                     "symbol": symbol_upper,
-                    "contracts": int(quantity) if quantity is not None else 0,
+                    "underlying": contract.get("underlying") if contract else None,
+                    "option_type": contract.get("option_type") if contract else None,
+                    "strike": contract.get("strike") if contract else None,
+                    "expiration": contract.get("expiration") if contract else None,
+                    "contracts": contracts,
+                    "side": "SHORT" if contracts < 0 else "LONG",
+                    "multiplier": 100,
                     "mark_price": price,
                     "market_value": market_value,
                     "cost_per_contract": cost_per_share,
+                    "premium_per_share": cost_per_share,
+                    "collateral_required": (
+                        round(contract["strike"] * 100 * abs(contracts), 2)
+                        if contract and contract["option_type"] == "PUT" and contracts < 0
+                        else 0.0 if contract else None
+                    ),
+                    "contract_validated": contract is not None,
                 })
                 continue
 
@@ -344,8 +378,11 @@ def process_portfolio_state(accounts):
             else None
         )
 
-        processed.append({
+        portfolio_record = {
+            "experiment_status": "EXPERIMENTAL",
+            "experimental_warning": "Experimental parsed portfolio observation. Parsed positions, balances, and contract fields may be wrong and must reconcile before use.",
             "account_name": acc.get("account_name", "Primary Account"),
+            "account_type": None,
             "as_of_date": acc.get("as_of_date"),
             "total_account_value": total_account_value,
             "settled_cash": cash,
@@ -361,6 +398,8 @@ def process_portfolio_state(accounts):
             "total_option_market_value": total_option_value,
             "positions": positions,
             "open_options": options,
+            "pending_orders": [],
+            "external_flows": [],
             "reconciliation": {
                 "status": reconciliation_status,
                 "authoritative_source": acc.get("authoritative_total_source"),
@@ -369,7 +408,23 @@ def process_portfolio_state(accounts):
                 "difference_usd": difference,
                 "balance_changes": acc.get("balance_changes", {}),
             },
-        })
+        }
+        identity_payload = json.dumps(portfolio_record, sort_keys=True, separators=(",", ":"))
+        portfolio_record["data_snapshot_id"] = "PORT-" + hashlib.sha256(identity_payload.encode("utf-8")).hexdigest()[:20].upper()
+        portfolio_record["data_as_of"] = portfolio_record.get("as_of_date")
+        portfolio_record["model_version"] = "NOT_APPLICABLE_DETERMINISTIC_PARSER"
+        portfolio_record["prompt_version"] = "NOT_APPLICABLE_DETERMINISTIC_PARSER"
+        portfolio_record["evidence_percentages"] = {"USER_BROKER_SNAPSHOT": 100.0}
+        portfolio_record["missing_inputs"] = (
+            [] if reconciliation_status in {"RECONCILED", "COMPUTED_FROM_COMPLETE_COMPONENTS"}
+            else ["one or more account components are missing or unreconciled"]
+        )
+        portfolio_record["stale_inputs"] = []
+        portfolio_record["anomalous_inputs"] = (
+            [] if reconciliation_status != "AUTHORITATIVE_TOTAL_MISMATCH"
+            else [f"authoritative account value differs from components by {difference} USD"]
+        )
+        processed.append(portfolio_record)
     return processed
 
 
@@ -398,13 +453,13 @@ def main():
             "sgov_price": 100.50,
             "sgov_seen": True,
             "positions": [
-                {"symbol": "NVDA", "shares": 150, "mark_price": 124.50, "market_value": 18675.0, "cc_eligible_blocks": 1, "cc_eligible": True},
-                {"symbol": "AMZN", "shares": 80, "mark_price": 182.20, "market_value": 14576.0, "cc_eligible_blocks": 0, "cc_eligible": False},
-                {"symbol": "MSFT", "shares": 100, "mark_price": 415.00, "market_value": 41500.0, "cc_eligible_blocks": 1, "cc_eligible": True},
-                {"symbol": "GOOGL", "shares": 60, "mark_price": 170.00, "market_value": 10200.0, "cc_eligible_blocks": 0, "cc_eligible": False}
+                {"symbol": "NVDA", "shares": 150, "mark_price": 124.50, "market_value": 18675.0, "cost_basis_per_share": None, "cc_eligible_blocks": 1, "cc_eligible": True},
+                {"symbol": "AMZN", "shares": 80, "mark_price": 182.20, "market_value": 14576.0, "cost_basis_per_share": None, "cc_eligible_blocks": 0, "cc_eligible": False},
+                {"symbol": "MSFT", "shares": 100, "mark_price": 415.00, "market_value": 41500.0, "cost_basis_per_share": None, "cc_eligible_blocks": 1, "cc_eligible": True},
+                {"symbol": "GOOGL", "shares": 60, "mark_price": 170.00, "market_value": 10200.0, "cost_basis_per_share": None, "cc_eligible_blocks": 0, "cc_eligible": False}
             ],
             "options": [
-                {"symbol": "NVDA 08/21/2026 120.00 P", "contracts": -1, "mark_price": 2.10, "market_value": -210.0}
+                {"symbol": "NVDA 08/21/2026 120.00 P", "underlying": "NVDA", "option_type": "PUT", "strike": 120.0, "expiration": "2026-08-21", "contracts": -1, "side": "SHORT", "multiplier": 100, "mark_price": 2.10, "market_value": -210.0, "cost_per_contract": None, "premium_per_share": None, "collateral_required": 12000.0, "contract_validated": True}
             ]
         }]
         result = process_portfolio_state(sample_accounts)
@@ -432,7 +487,8 @@ def main():
         return
 
     print("=" * 80)
-    print("PORTFOLIO INGESTION AGENT: NORMALIZED PORTFOLIO STATE")
+    print("EXPERIMENTAL PORTFOLIO OBSERVATION: NORMALIZED ACCOUNT-ISOLATED STATE")
+    print("This parsed observation may be wrong and must reconcile before any proposal is rendered.")
     print("=" * 80)
 
     for acc in result:

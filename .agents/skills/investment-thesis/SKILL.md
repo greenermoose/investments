@@ -1,6 +1,6 @@
 ---
 name: investment-thesis
-description: Institutional-grade workflow, quantitative forecasting methodologies, multi-horizon valuation modeling (13-quarter revenue, 6-horizon shares outstanding, 4-horizon price target ranges), dual revenue/PS narrative construction, and decisive Buy/Hold/Sell/Avoid rating logic for the Investment Thesis Agent.
+description: Experimental workflow, quantitative forecasting methodologies, multi-horizon valuation modeling (13-quarter revenue, 6-horizon shares outstanding, 4-horizon price target ranges), dual revenue/PS narrative construction, and decisive Buy/Hold/Sell/Avoid rating logic for the Investment Thesis Agent.
 ---
 
 # Investment Thesis Authoring & Valuation Modeling Skill
@@ -8,7 +8,7 @@ description: Institutional-grade workflow, quantitative forecasting methodologie
 ## Overview
 This skill defines the complete operational protocol, quantitative models, narrative standards, and validation workflows for the **Investment Thesis Agent**.
 
-The Investment Thesis Agent synthesizes all gathered public information (Tier 1 SEC EDGAR 10-K/10-Q filings, earnings releases, consensus estimates, industry TAM trends, economic moat dynamics, and technical price structure) to construct forward-looking, institutional-grade investment thesis dossiers in `context/theses/<TICKER>.md` conforming to `context/schemas/investment_thesis_schema.json`.
+The Investment Thesis Agent synthesizes all gathered public information (Tier 1 SEC EDGAR 10-K/10-Q filings, earnings releases, consensus estimates, industry TAM trends, economic moat dynamics, and technical price structure) to construct forward-looking, experimental investment thesis dossiers in `context/theses/<TICKER>.md` conforming to `context/schemas/investment_thesis_schema.json`.
 
 ## Core Investment Strategy Mandate
 
@@ -49,9 +49,65 @@ You do not edit `context/theses/<TICKER>.md` directly. `scripts/render_thesis.py
 The division is absolute in both directions:
 
 - **You author every judgment.** The growth rate, the target multiple, the dilution rate, the conviction score, the TAM, the catalysts, the invalidation criteria, and every sentence of narrative are yours. No script estimates any of them from a sector lookup.
-- **Scripts compute everything that follows.** The 13-quarter path, the 6-horizon share count, the 4-horizon price bands, the ROI, and the rating are computed from your parameters by `scripts/valuation_model.py` and `scripts/return_engine.py`. Never approximate them in text.
+- **Scripts compute everything that follows.** The scenario distribution, the ROI, and the experimental classification are computed from your parameters by `scripts/valuation_model.py` and `scripts/return_engine.py`. Never approximate them in text.
 
-A ticker whose `valuation_parameters` you have not authored carries no rating, no price target, and no ROI, and renders no dossier. That is the intended behaviour, not a bug to work around.
+A ticker whose `valuation_parameters` you have not authored carries no rating, no price target, and no ROI, and renders a `NOT MODELLED` dossier listing its blocking gaps. That is the intended behaviour, not a bug to work around.
+
+## The Research Contract (schema version 2.0)
+
+Every research block must carry, at the top level:
+
+| Field | What it records |
+| :--- | :--- |
+| `experiment_status` | Always `EXPERIMENTAL`. |
+| `research_status` | `AGENT_AUTHORED_EXPERIMENTAL` once you have authored it. A block left as `UNVERIFIED_PLACEHOLDER` is blocked from every rating and order proposal. |
+| `as_of_date` | The date the judgments were formed, `YYYY-MM-DD`. |
+| `authoring_model` | Your model identity, or a transparent runtime context signature when telemetry is unavailable. |
+| `prompt_version` | The prompt or protocol you worked from. |
+
+### `forecast_scenarios` is mandatory
+
+A point estimate hides how wrong it might be, so the model will not accept
+one. Author `bear`, `base`, and `bull`, each with a `probability`, a
+`price_target`, and a `rationale` of at least 40 characters. The three
+probabilities must sum to 1.0. Alongside them, author an `uncertainty`
+statement and at least one entry in `evidence_refs`.
+
+The `base` target must land within 35% of what your `valuation_method` and
+`valuation_inputs` imply. If it does not, one of the two is wrong; the model
+returns `UNMODELED` rather than picking a winner.
+
+### `valuation_parameters` requires a stated method
+
+`valuation_method` must be one of `EARNINGS`, `FCF`,
+`REVENUE_WITH_MARGIN_BRIDGE`, `BANK_PTB_ROE`, `INSURER_PTB_ROE`, `REIT_AFFO`,
+or `PRE_REVENUE_BIOTECH_RNPV`. Declaring the right method is how a company
+records what kind of business it is, but only the first three are **priced**.
+A bank, insurer, REIT, or pre-revenue biotech returns `UNMODELED` with a
+stated reason, because valuing them properly needs tangible book, float,
+AFFO, or per-programme probability of success, none of which this pipeline
+collects. Do not reach for a method the company is not, to obtain a number.
+
+Industry classification forces the method: a depository bank authored as
+`EARNINGS` is rejected.
+
+`valuation_inputs` by method:
+
+- `EARNINGS` / `FCF`: `current_metric_per_share`, `annual_metric_growth`, `target_multiple`.
+- `REVENUE_WITH_MARGIN_BRIDGE`: the same three, plus `target_margin_pct`. Here `current_metric_per_share` is revenue per share and `target_multiple` is an **earnings** multiple: revenue is bridged through the target margin to earnings, and the multiple is applied to those earnings. A revenue multiple is only defensible where profitability is not yet representative, and only if the path to profit is stated.
+- `PRE_REVENUE_BIOTECH_RNPV`: `risk_adjusted_enterprise_value_usd`, `net_cash_usd`.
+
+Also required: `annual_share_dilution_rate`, `conviction_score`,
+`opportunity_cost_annualized`, `uncertainty_score`, `horizon_years`, and
+`provenance`.
+
+### Provenance is claim-level
+
+Every `provenance` block needs `source_class`, `source_locator`,
+`retrieved_at`, a 64-character `raw_content_hash` of the content you actually
+read, and a `verification_status`. A hash of something you did not retrieve is
+a fabrication, and it is the one field that makes the evidence percentages in
+every dossier meaningful.
 
 ```bash
 # Open an agent run session before authoring (see context/prompts/thesis_authoring.md)
@@ -312,5 +368,6 @@ Before writing or committing any thesis:
 4. Confirm that all 6 share count horizons are present (13, 26, 39, 52, 104, 156 weeks).
 5. Confirm that all 4 price target horizons are present (13, 52, 104, 156 weeks) with Bear $\le$ Base $\le$ Bull.
 6. Verify that the rating is strictly one of `BUY`, `HOLD`, `SELL`, or `AVOID`.
+
 
 

@@ -4,7 +4,7 @@ scripts/screen_market.py
 Deterministic Equity Screener CLI for the Equity Research Agent.
 
 Filters US exchange-listed public equities against quantitative criteria
-targeting a high probability of generating >= 20% annualized ROI.
+targeting an experimental hypothesis of generating >= 20% annualized ROI.
 Performs solvency and runway sanity checks to ensure survival and compounding.
 """
 
@@ -303,3 +303,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

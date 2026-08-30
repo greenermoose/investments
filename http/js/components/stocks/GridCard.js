@@ -4,7 +4,7 @@
  * STRICT DESIGN CONSTRAINT - LOCKED METRICS MATRIX:
  * The 2x2 financial metrics grid on every GridCard is permanently locked down:
  * +----------------------------------+----------------------------------+
- * | ROI Prediction                   | Shares Out. (B)                  |
+ * | Target ROI                       | Shares Out. (B)                  |
  * | (Single % Annualized ROI, e.g. 20%) | (Shares in Billions, e.g. 0.595) |
  * +----------------------------------+----------------------------------+
  * | TTM Revenue (B)                  | Enterprise Value (B)             |
@@ -76,14 +76,14 @@ export function createGridCard(company, onSelect) {
       <div class="company-name">${company.name || company.symbol}</div>
       <div class="company-sector">${company.sector || 'US Equity'} &bull; ${company.industry || ''}${company.is_adr ? ` &bull; <span style="color: #c084fc; font-weight: 500;">ADR (${company.country_of_origin || 'Foreign'})</span>` : (company.country_of_origin && company.country_of_origin !== 'United States' && !company.country_of_origin.startsWith('United States') ? ` &bull; <span style="color: #38bdf8; font-weight: 500;">${company.country_of_origin}</span>` : '')}</div>
       
-      <p class="company-desc">${company.description || 'Publicly traded company tracked by the investment advisor.'}</p>
+      <p class="company-desc">${company.description || 'Experimental public-company record; company-specific description is missing.'}</p>
       
       ${range52wHtml}
 
       <!-- Locked 2x2 Financial Metrics Matrix (Design Constraint) -->
       <div class="company-metrics-grid" style="margin-top: 10px;">
         <div class="metric-item">
-          <span class="metric-label">ROI Prediction</span>
+          <span class="metric-label" title="Experimental annualized scoring output; may be wrong">Target ROI</span>
           <span class="metric-val" style="color: ${roiColor};">${targetRoiStr}</span>
         </div>
         <div class="metric-item">
@@ -105,6 +105,7 @@ export function createGridCard(company, onSelect) {
       <div class="footer-index-chips">
         ${renderIndexBadges(company.indices)}
       </div>
+      <span title="${company.experimental_warning || 'Experimental output; may be wrong'}">${company.research_status || 'MISSING'} &bull; ${company.data_snapshot_id || 'NO SNAPSHOT'}</span>
       <span class="inspect-dossier-btn">
         Inspect Dossier &rarr;
       </span>

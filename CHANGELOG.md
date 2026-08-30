@@ -5,6 +5,51 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0] - 2026-08-29
+
+### Permanent Experimental Contract, Real Data Collection, and a Prospective Measurement Loop
+
+An audit found the repository was not collecting information reliable enough to test its own hypothesis. All 204 research records shared identical growth, multiple, dilution, and conviction assumptions; margins, free cash flow, ROIC, leverage, volatility, and beta were absent entirely; and a deterministic script was manufacturing the qualitative research it was supposed to read. This release renames the system to what it is, marks the manufactured research as unverified, collects the data that was missing, and adds the loop that measures whether any of it was right.
+
+#### Added
+
+- Permanent experimental contract in `scripts/experiment_contract.py`: a fail-closed readiness gate, an evidence-by-provenance breakdown, and the warning text every output carries.
+- Prospective collection and measurement scripts: `build_security_master.py`, `archive_option_chain.py`, `freeze_forecast.py`, `freeze_experiment.py`, `record_execution.py`, `reconcile_accounts.py`, `record_performance.py`, `score_experiment.py`.
+- `python scripts/manage_universe.py experiment <subcommand>` fronting all of the above, and `context/strategy/experimental_collection_loop.md` sequencing them across the daily / event-driven / Friday / weekend / Monday cycle.
+- `scripts/check_experimental_claims.py`, which fails the repository when its public text makes a non-experimental claim. Scope includes `context/theses/`; append-only history is excluded.
+- `scripts/run_tests.py`, a single command that runs the suite with nothing installed beyond the standard library.
+- Nine data-contract schemas covering fundamental observations, option chains, forecasts, executions, reconciliations, performance, scoring, security master, and universe records.
+- Fundamental extraction (`fetch_sec.py`) and market risk metrics (`fetch_market_prices.py`): margins, FCF and conversion, net leverage, interest coverage, ROIC, liquidity runway, realized volatility at 20/60/252 days, ATR, RSI, 200-day SMA, beta, and cross-security correlations.
+
+#### Changed
+
+- Renamed the system concept to "Experimental Investment Research System" across documentation, prompts, skills, schemas, and the web UI. The repository name is unchanged.
+- `AGENTS.md` now states the 20% figure as a scoring threshold rather than something to maximise the probability of, and requires an explicit refusal to propose when readiness fails.
+- `render_thesis.py` writes a `NOT MODELLED` dossier for unmodelled companies instead of skipping them. Skipping left dossiers on disk asserting a rating, a conviction score, and a target exit price long after the inputs behind them were withdrawn.
+- `quality_control.py` reports the collector's integrity verdict rather than recomputing it, and no longer treats an absent rating as a schema error.
+- `valuation_model.py` implements the revenue-to-earnings margin bridge, which previously validated `target_margin_pct` and then discarded it.
+
+#### Fixed
+
+- Prior-close concordance and extreme-move corroboration were both non-functional. The concordance check compared two fields that had become aliases for the same value, and `extreme_move_corroborated` was defined as `not extreme_move`, so neither could ever fire. Both are now decided once, at collection time, from independent evidence.
+- The live quote was compared against a candle two sessions old whenever the current session's bar had not yet settled, reporting a two-session move as a one-session move. This produced 53 phantom "extreme moves" above 25%; after the fix there are none.
+- `chartPreviousClose` was being used as the previous close. It is the close before the start of the requested chart range -- eighteen months earlier.
+- SEC records were written in place to two locations, so a failure on the second write left the two copies disagreeing about whether a company had filings at all. Writes are now atomic and retried.
+- Trailing-twelve-month revenue summed cumulative year-to-date interim figures as though they were discrete quarters, counting the first quarter three times and the second twice. Apple was reported at $763.1B against a true $466.8B; 21 companies were overstated by more than 40% and one ADR by 950x. The figure feeds every price-to-sales ratio and is displayed on each company card. TTM is now derived from the filings, reading each filer's reporting convention from the period it declares.
+- `build_universe_json.py` read shares outstanding, total debt, and cash from `http/sec-data.json`, a derived summary only as fresh as the last run of its Node builder. It disagreed with the filings for 24 of 204 companies. The filings now take precedence.
+
+#### Removed
+
+- `sync_research_from_meta.py` no longer authors research. Its 488 lines of sector-heuristic TAMs, catalysts, dividend yields, SBC rates, growth assumptions, valuation multiples, and conviction scores are deleted; the script is a tombstone that exits non-zero.
+- 357 lines of unreachable code in `valuation_model.py`, orphaned behind an early return, plus two helpers only that code called.
+- Bank, insurer, REIT, and pre-revenue biotech valuation now return `UNMODELED` with a stated reason. They previously shared one generic growth-and-multiple formula whose result carried no defensible meaning for those business models.
+
+#### Known limitations
+
+- All 212 records remain `UNVERIFIED_PLACEHOLDER` and no company carries a rating. Replacing the placeholder research is agent work that has not been done.
+- No option order can be proposed until a real Cboe chain is archived; the example chains are rejected for live proposals by design.
+- EA is absent from SEC's ticker-to-CIK map and has no filings ingested.
+
 ## [3.0.0] - 2026-08-28
 
 ### Separation of Generative Authoring from Deterministic Scripting

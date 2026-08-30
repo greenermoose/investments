@@ -322,6 +322,24 @@ pre code {
   margin: 8px 0 0 0;
 }
 
+/* Rendered as a real element in every page, not as generated content.
+   A disclaimer delivered through ::before content is not in the DOM: it cannot
+   be selected or copied, and screen readers that skip generated content never
+   announce it. A legal notice nobody can read is not a notice. */
+.experimental-banner {
+  display: block;
+  margin: 0 0 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.10);
+  color: #fbbf24;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
 /* Human operating guide */
 .docs-kicker {
   margin-bottom: 8px;

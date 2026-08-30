@@ -1,140 +1,39 @@
-# Investment Thesis Dossier: SLDP - Solid Power, Inc.
+# Experimental Investment Research Dossier: SLDP - Solid Power, Inc.
+
+## NOT MODELLED - UNVERIFIED_PLACEHOLDER
+
+This company has no experimental valuation, rating, conviction score, or
+price target, because the inputs required to produce one are missing.
+Nothing in this file may drive a rating or an experimental order proposal.
+
+## Permanent Experimental Status
+- **experiment_status:** EXPERIMENTAL
+- **Warning:** Experimental research output. Ratings, forecasts, classifications, and order proposals may be wrong and do not constitute investment advice.
+- **Data Snapshot ID:** UNIVERSE-20260829T155047.311079+0000
+- **Data As Of:** 2026-08-29T15:21:31.944787+00:00
+- **Authoring Model:** legacy-unknown
+- **Prompt Version:** legacy-unknown
+- **Research Status:** UNVERIFIED_PLACEHOLDER
+- **Missing Inputs:** agent-authored experimental research, fundamentals.debt_to_equity_ratio, fundamentals.gross_margin_pct, fundamentals.roic_pct, research.forecast_scenarios
+- **Stale Inputs:** None recorded
+- **Anomalous Inputs:** None recorded
+- **Evidence by Provenance Class:** {"TIER_1_PRIMARY_REGULATORY": 13.3, "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE": 86.7}
+- **Rendered As Of:** 2026-08-29
 
 ## Summary & Key Metrics
 - **Ticker:** SLDP
-- **Exchange:** NASDAQ
-- **Benchmark Entry Price:** $2.38 per share
-- **Current Price:** $2.38 per share
-- **Target Exit Price:** $7.72 per share
-- **Expected Holding Period:** 3 to 5 Years
-- **Conviction Score:** 6.5 / 10.0
-- **Rating:** HOLD
-- **Target Strategy:** Quality Compounder with Disciplined Covered Call Yield Harvesting
-- **Listing Structure:** US COMMON STOCK
-- **SEC EDGAR URL:** https://www.sec.gov/edgar/browse/?CIK=1844862
+- **Current Price:** $2.33 per share
+- **Benchmark Entry Price:** NOT MODELED
+- **Target Exit Price:** NOT MODELED
+- **Expected Holding Period:** NOT MODELED
+- **Conviction Score:** NOT MODELED
+- **Rating:** NOT MODELED
 
-## Business Profile
-Solid Power, Inc. is a developer of all-solid-state rechargeable battery technology for electric vehicles and energy storage markets. Solid Power replaces conventional liquid or gel electrolytes with proprietary sulfide-based solid electrolytes, pairing them with high-capacity silicon or lithium metal anodes to deliver higher energy density, longer range, and enhanced thermal safety.
+## Blocking Gaps
 
-Solid Power's competitive advantage lies in its patented sulfide solid electrolyte material and its strategy of designing cells that can be manufactured using existing lithium-ion roll-to-roll manufacturing equipment. Management maintains strong strategic development partnerships with BMW and Ford, licensing cell designs and supplying electrolyte powder to automotive battery manufacturers.
+| Field | Reason | Owner |
+| :--- | :--- | :--- |
+| `research_status` | research is unverified placeholder content and cannot drive modeled outputs | Investment Thesis Agent |
 
-## Total Addressable Market & Market Share
-Solid Power, Inc. operates in a total addressable market we size at approximately $10.0B, implying room to grow share from pre-revenue or early-commercialization revenue base. The market expands at a mid-single to low-double-digit rate depending on cyclical conditions in Energy. Competitive share shifts depend on product execution, pricing, and capital intensity relative to peers.
-
-Computed against the $10.0B addressable market recorded above: current share 0.22%, modeled 3-year share 1.27%.
-
-## Competitive Moat Analysis
-Solid Power possesses a specialized solid-state battery technology moat, developing all-solid-state battery cells and sulfide-based solid electrolyte materials for electric vehicles. By replacing flammable liquid electrolytes with solid sulfide materials, Solid Power targets higher energy density, longer driving range, and improved EV battery safety. Strategic joint development partnerships with BMW and Ford validate its automotive commercialization pipeline.
-
-## Anticipated Catalysts & Timeline
-- **A-sample battery cell validation and electrolyte sampling expansion.** (2027-Q2): expected top-line impact of ~$0.05B inflecting 2027-Q2 revenue. A-sample battery cell validation and electrolyte sampling expansion.
-
-## Capital Needs & Strategy
-Solid Power, Inc. allocates capital toward organic growth and shareholder returns. Latest filing balance sheet shows approximately $0.24B cash and $0.00B total debt, grounding liquidity assessment in Tier 1 data.
-
-- **Capital Allocation Philosophy:** External Capital Dependent
-- **Dividends:** No cash dividend recorded
-- **Modeled Net Annual Share Change:** +1.5% per year
-- **Balance Sheet (latest filing):** $0.24B cash and equivalents against $0.00B total debt (net +0.24B)
-- **Primary Capital Needs:** Organic growth investment, maintenance capex, and talent retention
-- **Funding Strategy:** Primarily self-funded from operating cash flow per latest SEC filings.
-- **Going Concern Assessment:** No going-concern indicators in the latest Tier 1 filing summary.
-
-## Stock-Based Compensation & Lock-Up Dynamics
-Stock-based compensation is modeled at approximately 6.0% of revenue for All-Solid-State Battery Technology peers, with net dilution partially offset by repurchases where authorized.
-
-- **Annual SBC:** 6.0% of TTM revenue
-- **Vesting Architecture:** 4-year graded RSU vesting with annual refresh grants
-- **Gross Annual Grant Issuance:** +3.6% per year
-- **Lock-Up Status:** NOT_APPLICABLE_SEASONED_ISSUER
-- **Lock-Up Detail:** Seasoned issuer; insider sales typically via 10b5-1 plans.
-
-## Off-Balance Sheet & Long-Term Obligations
-Forensic review of latest Tier 1 filings for Solid Power, Inc. indicates no material pension underfunding, environmental remediation mandates, or purchase commitments beyond standard operating disclosures in the primary filing.
-
-| Liability Category | Exposure / Status | Estimated Gross Value ($B) | Annual Cash Drain ($B/yr) | Risk & Priority Assessment |
-| :--- | :--- | :--- | :--- | :--- |
-| Defined Benefit Pension & OPEB | Not audited | PBO: None (defined contribution only) (Gap: $0.00 B) | $0.00 B / yr | Not audited |
-| Environmental Remediation & PFAS | Risk: Not audited | Accrued: $0.00 B (0 Sites) | $0.00 B / yr | Not audited |
-| Product Liability & Mass Torts | Risk: Not audited | Scheduled: $0.00 B | $0.00 B / yr | Not audited |
-| Purchase Commitments & Guarantees | Active Contracts | Total: $0.00 B | Take-or-Pay: $0.00 B | Not audited |
-
-**Total Audited Encumbrance:** $0.00 B gross, $0.00 B per year in recurring cash outflows.
-
-**Equity Cash Flow Seniority Impact:** Not assessed.
-
-## Explicit Invalidation Criteria (Exit Triggers)
-If any of the following occur, the thesis is broken and the position will be exited:
-1. **Trigger 1:** Partner OEM program cancellations or cash runway dropping under 12 months
-
-## Revenue Drivers Narrative
-The 13-quarter revenue path for Solid Power, Inc. is driven by core segment demand, operating leverage, and execution against the catalysts listed in this dossier. Solid Power, Inc. is a developer of all-solid-state rechargeable battery technology for electric vehicles and energy storage markets. Solid Power replaces conventional liquid or gel electrolytes with proprietary sulfide-based solid electrolytes, pairing them with high-capacity silicon or lithium metal anodes to deliver higher energy density, longer range, and enhanced thermal safety.
-
-Solid Power'
-
-## Valuation & P/S Multiple Narrative
-Solid Power, Inc. is valued on a price-to-sales basis consistent with Energy leaders. Modeled returns assume modest multiple compression as scale increases, with upside tied to margin expansion and share gains.
-
-## 13-Quarter Revenue Forecast Matrix (3-Year Path)
-| Quarter | Date | Projected Revenue (USD) | YoY Growth (%) | Projected Shares (B) | Projected P/S | Modeling Basis |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-Q3 (Current) | 2026-09-30 | $0.01 B | +10.0% | 0.225 B | 24.62x | Baseline growth extrapolation |
-| 2026-Q4 | 2026-12-31 | $0.01 B | -41.1% | 0.226 B | 24.46x | Baseline growth extrapolation |
-| 2027-Q1 | 2027-03-31 | $0.01 B | +10.0% | 0.227 B | 24.29x | Baseline growth extrapolation |
-| 2027-Q2 | 2027-06-30 | $0.02 B | +10.0% | 0.228 B | 24.13x | Catalyst ramp: A-sample battery cell validation and electrolyte sampling expansion. |
-| 2027-Q3 | 2027-09-30 | $0.03 B | +210.0% | 0.228 B | 23.96x | Catalyst ramp (continuing) |
-| 2027-Q4 | 2027-12-31 | $0.04 B | +339.3% | 0.229 B | 23.80x | Catalyst ramp (continuing) |
-| 2028-Q1 | 2028-03-31 | $0.04 B | +333.9% | 0.230 B | 23.64x | Catalyst ramp (continuing) |
-| 2028-Q2 | 2028-06-30 | $0.04 B | +118.6% | 0.231 B | 23.47x | Catalyst ramp (continuing) |
-| 2028-Q3 | 2028-09-30 | $0.04 B | +46.8% | 0.232 B | 23.31x | Catalyst ramp (continuing) |
-| 2028-Q4 | 2028-12-31 | $0.04 B | +11.3% | 0.233 B | 23.14x | Catalyst ramp (continuing) |
-| 2029-Q1 | 2029-03-31 | $0.04 B | +9.8% | 0.234 B | 22.98x | Catalyst ramp (continuing) |
-| 2029-Q2 | 2029-06-30 | $0.04 B | +10.7% | 0.234 B | 22.81x | Catalyst ramp (continuing) |
-| 2029-Q3 (Q12) | 2029-09-30 | $0.04 B | +11.6% | 0.235 B | 22.65x | Catalyst ramp (continuing) |
-
-## Shares Outstanding Projections (6 Horizons)
-| Horizon | Projected Diluted Shares | Net Annual Dilution / Burn Rate | Basis |
-| :--- | :--- | :--- | :--- |
-| 13 Weeks (1Q) | 226 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-| 26 Weeks (2Q) | 227 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-| 39 Weeks (3Q) | 228 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-| 52 Weeks (1Y) | 228 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-| 104 Weeks (2Y) | 232 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-| 156 Weeks (3Y) | 235 M | +1.5% | Compounded from the authored dilution rate under a External Capital Dependent policy |
-
-## Price Target Ranges & Valuation Scenarios (4 Horizons)
-| Horizon | Bear Price (Downside) | Base Target Price | Bull Price (Upside) | Implied P/S Multiple | Expected Annualized CAGR |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 13 Weeks | $3.42 | $4.27 | $5.12 | 24.1x | +936.1% |
-| 52 Weeks (1Y) | $5.89 | $7.36 | $8.83 | 24.0x | +209.2% |
-| 104 Weeks (2Y) | $12.86 | $16.07 | $19.28 | 23.3x | +159.8% |
-| 156 Weeks (3Y) | $12.34 | $15.42 | $18.50 | 22.6x | +86.4% |
-
-## Analyst Price Targets & Wall Street Coverage
-| Analyst Name | Firm / Institution | Date Announced | Market Price at Announcement | Target Price | Implied Upside (%) | Rating / Action |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Alliance Global Partners Research Team | Alliance Global Partners | 2026-06-10 | $2.77 | $6.75 | +143.7% | BUY |
-| Chris Pierce | Needham & Company LLC | 2026-05-06 | $3.35 | $7.00 | +109.0% | BUY |
-| Amit Dayal | HC Wainwright | 2026-03-16 | $3.20 | $7.00 | +118.8% | BUY |
-| Wolfe Research Research Team | Wolfe Research | 2024-09-05 | $1.32 | $1.00 | -24.2% | UNDERPERFORM |
-
-## Anticipated Catalyst Timeline
-| Target Date / Window | Product / Service Catalyst | Expected Revenue Impact ($B) | Revenue Quarter Inflection | Expected Outcome & Milestone | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 2027-Q2 | A-sample battery cell validation and electrolyte sampling expansion. | $0.05 B | 2027-Q2 | A-sample battery cell validation and electrolyte sampling expansion. | PENDING |
-
-## Data Provenance & Verification Metadata
-
-| Data Element | Authority Tier | Source & Locator | Access Method | Retrieval / As-Of Date | Verification Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Financial Filings & Balance Sheet | TIER_1_PRIMARY_REGULATORY | SEC EDGAR Form 10-K / 10-Q | deterministic_script (`fetch_sec.py`) | 2026-08-28 | VERIFIED_PRIMARY |
-| Market Quote ($2.38) | TIER_2_FINANCIAL_AGGREGATOR | Direct exchange feed | deterministic_script (`fetch_market_prices.py`) | 2026-08-28 | VERIFIED_SECONDARY |
-| Quantitative Valuation & ROI Model | TIER_1_PRIMARY_REGULATORY | Return Engine (`scripts/return_engine.py`) | deterministic_script | 2026-08-28 | VERIFIED_PRIMARY |
-| Business Profile | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Equity Research Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Competitive Moat Analysis | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Equity Research Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Tam And Market Share | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Valuation Parameters | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Capital Strategy | TIER_1_PRIMARY_REGULATORY | https://www.sec.gov/edgar/browse/?CIK=1844862 | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Stock Based Compensation | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Catalyst Timeline | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
-| Invalidation Criteria | TIER_4_AGENT_PARAMETRIC_KNOWLEDGE | Agent analytical reasoning | authored by Investment Thesis Agent on 2026-08-28 | 2026-08-28 | VERIFIED_QUALITATIVE |
+Resolve these by authoring company-specific, source-linked research.
+Run `python scripts/research_gaps.py` for the full authoring queue.

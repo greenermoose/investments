@@ -1,10 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "InvestmentThesisSchema",
-  "description": "Institutional schema for public equity investment thesis dossiers, multi-horizon financial forecasts, valuation multiple narratives, market share dynamics, and decisive recommendations.",
+  "title": "ExperimentalInvestmentResearchDossierSchema",
+  "description": "Permanent experimental schema for public-equity hypotheses, scenario forecasts, and modeled classifications. Outputs may be wrong and are not advice.",
   "type": "object",
   "required": [
-    "ticker",
+    "experiment_status", "experimental_warning", "data_snapshot_id", "data_as_of",
+    "model_version", "prompt_version", "missing_inputs", "stale_inputs",
+    "anomalous_inputs", "evidence_percentages", "ticker",
     "company_name",
     "exchange",
     "benchmark_entry_price",
@@ -28,6 +30,16 @@
     "data_provenance"
   ],
   "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "experimental_warning": { "type": "string", "minLength": 40 },
+    "data_snapshot_id": { "type": "string" },
+    "data_as_of": { "type": "string" },
+    "model_version": { "type": "string" },
+    "prompt_version": { "type": "string" },
+    "missing_inputs": { "type": "array" },
+    "stale_inputs": { "type": "array" },
+    "anomalous_inputs": { "type": "array" },
+    "evidence_percentages": { "type": "object" },
     "ticker": {
       "type": "string",
       "pattern": "^[A-Z0-9.-]{1,10}$",

@@ -1,0 +1,16 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "snapshot_id": "DEMO-CHAIN-GOOGL-20260828",
+  "symbol": "GOOGL",
+  "observed_at": "2026-08-28T20:15:00Z",
+  "source_locator": "example:synthetic-option-chain-for-renderer-testing-only",
+  "source_delay_minutes": 15,
+  "underlying_price": 170.0,
+  "risk_free_rate": 0.04,
+  "next_earnings_date": null,
+  "next_dividend_date": null,
+  "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "contracts": [
+    {"option_type": "PUT", "expiration": "2026-10-02", "strike": 150.0, "bid": 3.3, "ask": 3.5, "last": 3.4, "volume": 10, "open_interest": 100, "implied_volatility": 0.38, "market_delta": -0.31, "gamma": 0.02, "spread": 0.2, "spread_pct_of_mid": 5.8824}
+  ]
+}

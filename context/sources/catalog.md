@@ -1,6 +1,6 @@
 # Authoritative Data Sources Catalog & Trust Architecture
 
-This catalog defines the official data sources used by the Agentic Investment Advisor system, their authority tiers, update cadences, primary URLs, trust hierarchy, analyst report discovery mechanisms, search engine capabilities, and LLM internal weight parametric token generation mechanics.
+This catalog defines the official data sources used by the Experimental Investment Research System, their authority tiers, update cadences, primary URLs, trust hierarchy, analyst report discovery mechanisms, search engine capabilities, and LLM internal weight parametric token generation mechanics.
 
 ## Source Hierarchy & Trust Architecture
 
@@ -211,7 +211,7 @@ When an agent is prompted to analyze a company (e.g. evaluating Microsoft's ente
 2. **Multi-Head Self-Attention:** Transformer attention layers compute dynamic relationship weights between all concepts in context, activating latent neural pathways associated with software switching costs, ROIC calculations, operating leverage, or option pricing mathematics.
 3. **Feed-Forward Knowledge Projection:** Dense feed-forward layers project internal hidden states through learned weight matrices, encoding deep statistical regularities about how businesses operate, grow, and defend market share.
 4. **Logit Computation & Vocabulary Sampling:** The final output projection layer produces a vector of unnormalized scores (logits) across the model's vocabulary (~32,000 to 256,000 tokens). A softmax function converts logits into probability distributions, from which the next token is generated.
-5. **Autoregressive Loop:** Each newly generated token is appended to the context sequence, and the process repeats hundreds of times per second, yielding structured, coherent, institutional-grade financial analysis.
+5. **Autoregressive Loop:** Each newly generated token is appended to the context sequence, and the process repeats hundreds of times per second, yielding structured, coherent, experimental financial analysis.
 
 ### 3. Post-Training: SFT and Reinforcement Learning (RL)
 Following pre-training, models undergo Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) / Direct Preference Optimization (DPO). This aligns the model's token distribution toward:
@@ -253,5 +253,6 @@ While market prices fluctuate continuously, official regulatory disclosures foll
 - **Foreign Private Issuers:** Form 20-F due within 4 months of fiscal year-end.
 
 The `scripts/anticipate_sec_filings.py` tool computes historical filing patterns for all universe equities, projecting estimated 10-Q and 10-K filing windows into `context/data/sec_filing_calendar.json` (schema: `context/schemas/sec_filing_calendar_schema.json`). This enables the system to schedule targeted XBRL ingestions (`scripts/fetch_sec.py --live`) immediately as new quarterly data is released.
+
 
 

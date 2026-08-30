@@ -36,6 +36,7 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
 import research_store
+from experiment_contract import EXPERIMENT_STATUS, EXPERIMENTAL_WARNING, evidence_summary
 from valuation_model import model_equity_valuation
 from adr_registry import get_listing_metadata
 from build_off_balance_sheet_data import render_markdown_section as render_off_balance_sheet
@@ -404,11 +405,105 @@ def render_provenance(model, research, has_analyst_coverage, as_of):
     return lines
 
 
+NEWLINE = chr(10)
+
+
+def write_dossier(symbol, content):
+    with open(os.path.join(THESES_DIR, f"{symbol}.md"), "w", encoding="utf-8") as handle:
+        handle.write(content)
+
+
+def render_placeholder_dossier(symbol, equity, research, gaps, as_of):
+    """Render the dossier for a company that cannot be modelled.
+
+    Skipping these leaves the previous rendering on disk, so a dossier that
+    once asserted a rating, a conviction score, and a target exit price keeps
+    asserting them long after the inputs behind them were withdrawn. A stale
+    claim is worse than no claim, so the file is overwritten with an explicit
+    account of what is missing.
+    """
+    name = equity.get("name") or symbol
+    research = research or {}
+    evidence = evidence_summary(research)
+    lines = [
+        f"# Experimental Investment Research Dossier: {symbol} - {name}",
+        "",
+        f"## NOT MODELLED - {research.get('research_status', 'MISSING')}",
+        "",
+        "This company has no experimental valuation, rating, conviction score, or",
+        "price target, because the inputs required to produce one are missing.",
+        "Nothing in this file may drive a rating or an experimental order proposal.",
+        "",
+        "## Permanent Experimental Status",
+        f"- **experiment_status:** {EXPERIMENT_STATUS}",
+        f"- **Warning:** {EXPERIMENTAL_WARNING}",
+        f"- **Data Snapshot ID:** {equity.get('data_snapshot_id', 'MISSING')}",
+        f"- **Data As Of:** {equity.get('data_as_of', 'MISSING')}",
+        f"- **Authoring Model:** {research.get('authoring_model', 'MISSING')}",
+        f"- **Prompt Version:** {research.get('prompt_version', 'MISSING')}",
+        f"- **Research Status:** {research.get('research_status', 'MISSING')}",
+        f"- **Missing Inputs:** {', '.join(equity.get('missing_inputs', [])) or 'None recorded'}",
+        f"- **Stale Inputs:** {', '.join(equity.get('stale_inputs', [])) or 'None recorded'}",
+        f"- **Anomalous Inputs:** {', '.join(equity.get('anomalous_inputs', [])) or 'None recorded'}",
+        f"- **Evidence by Provenance Class:** {json.dumps(evidence.get('percentages_by_class', {}), sort_keys=True)}",
+        f"- **Rendered As Of:** {as_of}",
+        "",
+        "## Summary & Key Metrics",
+        f"- **Ticker:** {symbol}",
+        f"- **Current Price:** {_format_price(equity.get('current_price'))}",
+        "- **Benchmark Entry Price:** NOT MODELED",
+        "- **Target Exit Price:** NOT MODELED",
+        "- **Expected Holding Period:** NOT MODELED",
+        "- **Conviction Score:** NOT MODELED",
+        "- **Rating:** NOT MODELED",
+        "",
+        "## Blocking Gaps",
+        "",
+        "| Field | Reason | Owner |",
+        "| :--- | :--- | :--- |",
+    ]
+    for gap in gaps:
+        lines.append(
+            f"| `{gap.get('field', 'unknown')}` | {gap.get('reason', 'not recorded')} "
+            f"| {gap.get('owner', 'unassigned')} |"
+        )
+    if not gaps:
+        lines.append("| _none recorded_ | | |")
+    lines += [
+        "",
+        "Resolve these by authoring company-specific, source-linked research.",
+        "Run `python scripts/research_gaps.py` for the full authoring queue.",
+        "",
+    ]
+    return NEWLINE.join(lines)
+
+
+def _format_price(value):
+    return f"${float(value):.2f} per share" if isinstance(value, (int, float)) and value else "MISSING"
+
+
 def render_dossier(symbol, equity, model, research, targets, prices, as_of):
     name = equity.get("name") or model["company_name"]
     has_coverage = bool(targets.get(symbol))
 
-    lines = [f"# Investment Thesis Dossier: {symbol} - {name}", ""]
+    evidence = evidence_summary(research)
+    lines = [
+        f"# Experimental Investment Research Dossier: {symbol} - {name}",
+        "",
+        "## Permanent Experimental Status",
+        f"- **experiment_status:** EXPERIMENTAL",
+        f"- **Warning:** {EXPERIMENTAL_WARNING}",
+        f"- **Data Snapshot ID:** {equity.get('data_snapshot_id', 'MISSING')}",
+        f"- **Data As Of:** {equity.get('data_as_of', 'MISSING')}",
+        f"- **Authoring Model:** {research.get('authoring_model', 'MISSING')}",
+        f"- **Prompt Version:** {research.get('prompt_version', 'MISSING')}",
+        f"- **Research Status:** {research.get('research_status', 'MISSING')}",
+        f"- **Missing Inputs:** {', '.join(equity.get('missing_inputs', [])) or 'None recorded'}",
+        f"- **Stale Inputs:** {', '.join(equity.get('stale_inputs', [])) or 'None recorded'}",
+        f"- **Anomalous Inputs:** {', '.join(equity.get('anomalous_inputs', [])) or 'None recorded'}",
+        f"- **Evidence by Provenance Class:** {json.dumps(evidence.get('percentages_by_class', {}), sort_keys=True)}",
+        "",
+    ]
     lines += render_summary(symbol, equity, model, research, prices)
     lines += ["", "## Business Profile", research_store.get_text(research, "business_profile"), ""]
     lines += render_tam(model, research)
@@ -477,6 +572,7 @@ def main():
     print(f"Rendering thesis dossiers for {len(selected)} equities...")
 
     rendered = 0
+    placeholders = 0
     skipped = []
 
     for equity in selected:
@@ -489,6 +585,12 @@ def main():
             symbol, research_store.THESIS_REQUIRED_FIELDS, research=research)
         if gaps:
             skipped.append((symbol, [g.field for g in gaps]))
+            write_dossier(symbol, render_placeholder_dossier(
+                symbol, equity, research,
+                [{"field": g.field, "reason": g.reason, "owner": g.owner} for g in gaps],
+                as_of,
+            ))
+            placeholders += 1
             continue
 
         record = research_store.load_equity_record(symbol)
@@ -505,12 +607,14 @@ def main():
         )
         if model["status"] != "MODELED":
             skipped.append((symbol, [g["field"] for g in model["gaps"]]))
+            write_dossier(symbol, render_placeholder_dossier(
+                symbol, equity, research, model["gaps"], as_of,
+            ))
+            placeholders += 1
             continue
 
-        content = render_dossier(symbol, equity, model, research, targets, prices, as_of)
-        thesis_path = os.path.join(THESES_DIR, f"{symbol}.md")
-        with open(thesis_path, "w", encoding="utf-8") as f:
-            f.write(content)
+        write_dossier(symbol, render_dossier(
+            symbol, equity, model, research, targets, prices, as_of))
         try:
             import activity_ledger
             activity_ledger.append_event_to_active_or_sys(
@@ -525,11 +629,12 @@ def main():
             pass
         rendered += 1
 
-    print(f"Rendered {rendered} dossiers into {THESES_DIR}.")
+    print(f"Rendered {rendered} modelled dossiers into {THESES_DIR}.")
 
     if skipped:
-        print(f"\nSkipped {len(skipped)} equities with unauthored research. No file was written")
-        print("for these: a dossier assembled around a missing section would read as complete.")
+        print(f"\nWrote {placeholders} NOT MODELLED dossiers for equities with unauthored")
+        print("research. Each states its blocking gaps in place of a rating, so a stale")
+        print("claim from an earlier rendering cannot survive on disk.")
         for symbol, fields in skipped[:15]:
             print(f"  {symbol}: {', '.join(fields[:5])}"
                   + (f" (+{len(fields) - 5} more)" if len(fields) > 5 else ""))

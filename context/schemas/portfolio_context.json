@@ -10,15 +10,29 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "account_name", "as_of_date", "total_account_value", "settled_cash",
+        "experiment_status", "experimental_warning", "data_snapshot_id", "data_as_of",
+        "model_version", "prompt_version", "evidence_percentages", "missing_inputs",
+        "stale_inputs", "anomalous_inputs", "account_name", "account_type", "as_of_date",
+        "total_account_value", "settled_cash",
         "long_stock_value", "long_option_value", "short_option_value",
         "sgov_shares", "sgov_market_value", "total_dry_powder",
         "dry_powder_percentage", "active_positions_count",
         "total_securities_count", "total_option_market_value", "positions",
-        "open_options", "reconciliation"
+        "open_options", "pending_orders", "external_flows", "reconciliation"
       ],
       "properties": {
+        "experiment_status": { "const": "EXPERIMENTAL" },
+        "experimental_warning": { "type": "string", "minLength": 40 },
+        "data_snapshot_id": { "type": "string", "minLength": 8 },
+        "data_as_of": { "type": ["string", "null"] },
+        "model_version": { "type": "string" },
+        "prompt_version": { "type": "string" },
+        "evidence_percentages": { "type": "object" },
+        "missing_inputs": { "type": "array", "items": { "type": "string" } },
+        "stale_inputs": { "type": "array", "items": { "type": "string" } },
+        "anomalous_inputs": { "type": "array", "items": { "type": "string" } },
         "account_name": { "type": "string", "minLength": 1 },
+        "account_type": { "type": ["string", "null"] },
         "as_of_date": { "type": ["string", "null"], "format": "date" },
         "total_account_value": { "$ref": "#/definitions/NullableNumber" },
         "settled_cash": { "$ref": "#/definitions/NullableNumber" },
@@ -40,6 +54,8 @@
           "type": "array",
           "items": { "$ref": "#/definitions/OptionPosition" }
         },
+        "pending_orders": { "type": "array" },
+        "external_flows": { "type": "array" },
         "reconciliation": { "$ref": "#/definitions/Reconciliation" }
       }
     },
@@ -64,14 +80,25 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "symbol", "contracts", "mark_price", "market_value", "cost_per_contract"
+        "symbol", "underlying", "option_type", "strike", "expiration", "contracts",
+        "side", "multiplier", "mark_price", "market_value", "cost_per_contract",
+        "premium_per_share", "collateral_required", "contract_validated"
       ],
       "properties": {
         "symbol": { "type": "string" },
+        "underlying": { "type": ["string", "null"] },
+        "option_type": { "type": ["string", "null"], "enum": ["PUT", "CALL", null] },
+        "strike": { "$ref": "#/definitions/NullableNumber" },
+        "expiration": { "type": ["string", "null"], "format": "date" },
         "contracts": { "type": "integer" },
+        "side": { "type": "string", "enum": ["SHORT", "LONG"] },
+        "multiplier": { "type": "integer", "const": 100 },
         "mark_price": { "$ref": "#/definitions/NullableNumber" },
         "market_value": { "$ref": "#/definitions/NullableNumber" },
-        "cost_per_contract": { "$ref": "#/definitions/NullableNumber" }
+        "cost_per_contract": { "$ref": "#/definitions/NullableNumber" },
+        "premium_per_share": { "$ref": "#/definitions/NullableNumber" },
+        "collateral_required": { "$ref": "#/definitions/NullableNumber" },
+        "contract_validated": { "type": "boolean" }
       }
     },
     "Reconciliation": {

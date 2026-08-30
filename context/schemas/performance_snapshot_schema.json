@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PerformanceSnapshot",
+  "description": "Private prospective net-of-fees, pre-tax experimental performance observation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_status", "snapshot_id", "account_name", "as_of_date",
+    "account_value_usd", "net_external_flow_usd", "period_return_pct",
+    "twr_since_inception_pct", "fees_usd", "benchmark_returns_pct",
+    "experimental_warning", "source_refs", "missing_inputs", "stale_inputs",
+    "anomalous_inputs", "evidence_percentages"
+  ],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "experimental_warning": { "type": "string" },
+    "source_refs": { "type": "array", "minItems": 1 },
+    "missing_inputs": { "type": "array" },
+    "stale_inputs": { "type": "array" },
+    "anomalous_inputs": { "type": "array" },
+    "evidence_percentages": { "type": "object" },
+    "snapshot_id": { "type": "string", "minLength": 8 },
+    "account_name": { "type": "string", "minLength": 1 },
+    "as_of_date": { "type": "string", "format": "date" },
+    "account_value_usd": { "type": "number", "minimum": 0 },
+    "net_external_flow_usd": { "type": "number" },
+    "fees_usd": { "type": "number", "minimum": 0 },
+    "period_return_pct": { "type": "number" },
+    "twr_since_inception_pct": { "type": "number" },
+    "benchmark_returns_pct": {
+      "type": "object",
+      "required": ["SPY", "QQQ", "SGOV"],
+      "properties": {
+        "SPY": { "type": "number" },
+        "QQQ": { "type": "number" },
+        "SGOV": { "type": "number" },
+        "CBOE_PUT": { "type": ["number", "null"] },
+        "CBOE_BXM": { "type": ["number", "null"] }
+      }
+    },
+    "maximum_drawdown_pct": { "type": ["number", "null"] },
+    "volatility_pct": { "type": ["number", "null"] },
+    "downside_deviation_pct": { "type": ["number", "null"] },
+    "attribution": { "type": "object" },
+    "data_snapshot_id": { "type": ["string", "null"] }
+  }
+}

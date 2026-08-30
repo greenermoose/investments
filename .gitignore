@@ -47,4 +47,11 @@ __pycache__/
 
 # Local binary script data caches
 scripts/data/*.db
-scripts/data/*.parquet
+scripts/data/*.parquet
+
+# Immutable raw source payloads (SEC Company Facts, ~627MB and growing).
+# Each filing stores the SHA-256 of the payload it was derived from, so a
+# record stays verifiable by re-fetching and re-hashing. Committing the
+# payloads themselves would add hundreds of megabytes per refresh for no
+# verification the hash does not already provide.
+context/data/raw/

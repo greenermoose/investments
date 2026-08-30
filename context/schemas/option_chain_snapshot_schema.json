@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OptionChainSnapshot",
+  "description": "Prospectively archived delayed option chain used as an experimental weekend-model anchor, never as a live quote.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_status", "snapshot_id", "symbol", "observed_at", "source_locator",
+    "source_delay_minutes", "underlying_price", "contracts", "raw_content_hash"
+  ],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "snapshot_id": { "type": "string", "minLength": 8 },
+    "symbol": { "type": "string", "pattern": "^[A-Z0-9.-]{1,10}$" },
+    "observed_at": { "type": "string" },
+    "source_locator": { "type": "string", "minLength": 8 },
+    "source_delay_minutes": { "type": "integer", "minimum": 0 },
+    "underlying_price": { "type": "number", "exclusiveMinimum": 0 },
+    "risk_free_rate": { "type": ["number", "null"] },
+    "next_earnings_date": { "type": ["string", "null"], "format": "date" },
+    "next_dividend_date": { "type": ["string", "null"], "format": "date" },
+    "raw_content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "experimental_warning": { "type": "string" },
+    "rejected_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["row", "reason"],
+        "properties": {
+          "row": { "type": "integer", "minimum": 2 },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["option_type", "expiration", "strike", "bid", "ask"],
+        "properties": {
+          "option_type": { "type": "string", "enum": ["PUT", "CALL"] },
+          "expiration": { "type": "string", "format": "date" },
+          "strike": { "type": "number", "exclusiveMinimum": 0 },
+          "bid": { "type": "number", "minimum": 0 },
+          "ask": { "type": "number", "minimum": 0 },
+          "last": { "type": ["number", "null"], "minimum": 0 },
+          "volume": { "type": ["integer", "null"], "minimum": 0 },
+          "open_interest": { "type": ["integer", "null"], "minimum": 0 },
+          "implied_volatility": { "type": ["number", "null"], "minimum": 0 },
+          "market_delta": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+          "gamma": { "type": ["number", "null"], "minimum": 0 },
+          "spread": { "type": "number", "minimum": 0 },
+          "spread_pct_of_mid": { "type": ["number", "null"], "minimum": 0 }
+        }
+      }
+    }
+  }
+}

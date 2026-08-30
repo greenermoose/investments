@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FundamentalObservation",
+  "description": "Immutable point-in-time observation sourced from a filing. Reported values are never overwritten; amendments and restatements create new observations.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observation_id", "symbol", "metric", "value", "unit", "period_end",
+    "form", "filed_at", "source_locator", "retrieved_at", "raw_content_hash",
+    "verification_status"
+  ],
+  "properties": {
+    "observation_id": { "type": "string", "minLength": 8 },
+    "symbol": { "type": "string", "pattern": "^[A-Z0-9.-]{1,10}$" },
+    "metric": { "type": "string", "minLength": 2 },
+    "value": { "type": "number" },
+    "unit": { "type": "string", "minLength": 1 },
+    "period_start": { "type": ["string", "null"], "format": "date" },
+    "period_end": { "type": "string", "format": "date" },
+    "fiscal_year": { "type": ["integer", "null"] },
+    "fiscal_period": { "type": ["string", "null"] },
+    "taxonomy": { "type": ["string", "null"] },
+    "concept": { "type": ["string", "null"] },
+    "form": { "type": "string", "minLength": 2 },
+    "accession_number": { "type": ["string", "null"] },
+    "filed_at": { "type": "string", "format": "date" },
+    "source_class": {
+      "type": "string",
+      "enum": ["REGULATORY", "EXCHANGE", "ISSUER", "AGGREGATOR", "MODEL", "USER"]
+    },
+    "source_locator": { "type": "string", "minLength": 8 },
+    "retrieved_at": { "type": "string" },
+    "raw_content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED_PRIMARY", "CORROBORATED", "UNVERIFIED", "SUPERSEDED"]
+    },
+    "supersedes_observation_id": { "type": ["string", "null"] }
+  }
+}

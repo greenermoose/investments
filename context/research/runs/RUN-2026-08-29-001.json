@@ -1,0 +1,91 @@
+{
+  "run_id": "RUN-2026-08-29-001",
+  "schema_version": "1.0",
+  "started_at": "2026-08-29T12:03:15.516583+00:00",
+  "completed_at": "2026-08-29T15:45:53.202012+00:00",
+  "status": "COMPLETED",
+  "cadence": "ON_DEMAND",
+  "trigger": "manual",
+  "agent_roles": [
+    "Equity Research Agent",
+    "Investment Thesis Agent",
+    "Memory Agent",
+    "Pricing Agent",
+    "Portfolio Ingestion Agent",
+    "Lead Portfolio Manager Agent"
+  ],
+  "prompt_ref": "user-requested Experimental Investment Research Data Program",
+  "runtime_context_signature": "System clock 2026-08-29; repository-wide experimental data program implementation",
+  "summary": "Completed the Experimental Investment Research Data Program. Repaired both data-integrity gates, which were non-functional: prior-close concordance compared two fields that had become aliases, and extreme-move corroboration was self-satisfying. Found and fixed the underlying defect they should have caught, where the live quote was compared against a candle two sessions old, producing 53 phantom extreme moves; after the fix, 0 of 214 records show a move above 25 percent and 0 are quarantined. Collected live prices and risk metrics for 212 equities and SEC fundamentals for 211, taking universe fundamental coverage from 3 fields to 29. Removed 357 lines of unreachable valuation code, implemented the revenue-to-earnings margin bridge, and narrowed the priced valuation methods to those actually implemented. Regenerated 212 dossiers as NOT MODELLED, withdrawing ratings that had survived on disk after the universe retracted them. Wired nine orphaned scripts into manage_universe.py, added a cadence runbook and a single test command, and expanded the suite from 7 to 55 tests. All 212 records remain UNVERIFIED_PLACEHOLDER and no company carries a rating; authoring company-specific research is the outstanding work.",
+  "deliverables": [
+    "context/strategy/experimental_collection_loop.md"
+  ],
+  "events": [
+    {
+      "event_id": "EVT-2026-08-29-001",
+      "recorded_at": "2026-08-29T15:45:37.081985+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Deterministic Script",
+      "subject": "Repaired both data-integrity gates, which were non-functional",
+      "target_path": "scripts/fetch_market_prices.py",
+      "rationale": "Prior-close concordance compared two fields that had become aliases for the same value; extreme-move corroboration was defined as 'not extreme_move'. Integrity is now decided once at collection time from independent evidence, and consumed by quality_control.py and experiment_contract.py rather than recomputed."
+    },
+    {
+      "event_id": "EVT-2026-08-29-002",
+      "recorded_at": "2026-08-29T15:45:37.481751+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Deterministic Script",
+      "subject": "Aligned prior close to the quote session, eliminating 53 phantom extreme moves",
+      "target_path": "scripts/fetch_market_prices.py",
+      "rationale": "The live quote was compared against a candle two sessions old whenever the current session bar had not settled. AXON reported +56.19 percent against a true +0.61 percent. chartPreviousClose, the close before the 18-month range start, was also being used as a previous close. After the fix, 0 of 214 records show a move above 25 percent and 0 are quarantined."
+    },
+    {
+      "event_id": "EVT-2026-08-29-003",
+      "recorded_at": "2026-08-29T15:45:37.804826+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Collected live market prices and risk metrics for 212 equities",
+      "target_path": "scripts/data/market_prices.json",
+      "authority_tier": "TIER_2_SECONDARY_AGGREGATOR",
+      "source_locator": "https://query1.finance.yahoo.com/v8/finance/chart/"
+    },
+    {
+      "event_id": "EVT-2026-08-29-004",
+      "recorded_at": "2026-08-29T15:45:38.119359+00:00",
+      "event_type": "RESEARCH_FIELD_UPDATED",
+      "agent_role": "Deterministic Script",
+      "subject": "Ingested SEC Company Facts and derived fundamentals for 211 of 212 equities",
+      "target_path": "context/data/equities/",
+      "rationale": "EA is absent from the SEC ticker-to-CIK map and has no filings ingested. Metric coverage is partial by design: a company that does not report gross profit gets no gross margin rather than an imputed one.",
+      "authority_tier": "TIER_1_PRIMARY_REGULATORY",
+      "source_locator": "https://data.sec.gov/api/xbrl/companyfacts/"
+    },
+    {
+      "event_id": "EVT-2026-08-29-005",
+      "recorded_at": "2026-08-29T15:45:38.455316+00:00",
+      "event_type": "RATING_CHANGED",
+      "agent_role": "Deterministic Script",
+      "subject": "Withdrew all ratings: 212 records carry no thesis_status, conviction score, or price target",
+      "target_path": "context/data/universe.json",
+      "rationale": "The research these derived from was generated from sector heuristics, not company sources. 203 of 204 records shared an identical growth rate, multiple, dilution rate, and conviction score."
+    },
+    {
+      "event_id": "EVT-2026-08-29-006",
+      "recorded_at": "2026-08-29T15:45:38.786666+00:00",
+      "event_type": "THESIS_RENDERED",
+      "agent_role": "Deterministic Script",
+      "subject": "Regenerated 212 dossiers as NOT MODELLED, withdrawing ratings the universe had already retracted",
+      "target_path": "context/theses/",
+      "rationale": "render_thesis.py skipped unmodelled companies, leaving prior renderings on disk asserting Rating, Conviction Score, and Target Exit Price indefinitely. It now overwrites with the blocking gaps."
+    },
+    {
+      "event_id": "EVT-2026-08-29-007",
+      "recorded_at": "2026-08-29T15:52:38.246629+00:00",
+      "event_type": "QC_AUDIT_COMPLETED",
+      "agent_role": "Deterministic Script",
+      "subject": "Corrected trailing-twelve-month revenue, which summed cumulative year-to-date figures as discrete quarters",
+      "target_path": "scripts/fetch_sec.py",
+      "rationale": "Apple was reported at 763.1B against a true 466.8B; 21 companies were overstated by more than 40 percent and one ADR by 950x. The figure feeds every price-to-sales ratio and is displayed on each company card."
+    }
+  ]
+}

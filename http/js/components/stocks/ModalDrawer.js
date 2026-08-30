@@ -46,15 +46,31 @@ export function openCompanyModal(company) {
   if (!company) return;
   window.location.hash = company.symbol;
 
-  const currentPrice = company.current_price || company.closing_price || 0;
-  const entryPrice = company.entry_price || currentPrice;
-  const targetExit = company.target_exit_price || currentPrice;
+  const currentPrice = firstNum(company.current_price, company.closing_price);
+  const entryPrice = firstNum(company.entry_price);
+  const targetExit = firstNum(company.target_exit_price);
+  const modelReady = Boolean(company.data_readiness && company.data_readiness.trade_ready);
   const dayChangeHtml = renderPriceChange(company.day_change, company.day_change_percent);
 
   const symbolTitleEl = document.getElementById('modal-symbol-title');
   const companyNameEl = document.getElementById('modal-company-name');
   const irChipEl = document.getElementById('modal-ir-chip');
   const sectorTextEl = document.getElementById('modal-sector-text');
+  const warningEl = document.getElementById('modal-experiment-warning');
+  const metadataEl = document.getElementById('modal-experiment-metadata');
+  const readinessEl = document.getElementById('modal-experiment-readiness');
+
+  if (warningEl) warningEl.textContent = company.experimental_warning || 'Experimental research output. Ratings, forecasts, classifications, and order proposals may be wrong.';
+  if (metadataEl) metadataEl.textContent = `Snapshot: ${company.data_snapshot_id || 'MISSING'} | As of: ${company.data_as_of || 'MISSING'} | Model: ${company.model_version || 'MISSING'} | Prompt: ${company.prompt_version || 'MISSING'} | Research: ${company.research_status || 'MISSING'}`;
+  if (readinessEl) {
+    const missing = company.missing_inputs || [];
+    const stale = company.stale_inputs || [];
+    const anomalous = company.anomalous_inputs || [];
+    const evidence = company.evidence_summary && company.evidence_summary.percentages_by_class
+      ? JSON.stringify(company.evidence_summary.percentages_by_class)
+      : 'MISSING';
+    readinessEl.textContent = `Missing: ${missing.length ? missing.join('; ') : 'none'} | Stale: ${stale.length ? stale.join('; ') : 'none'} | Anomalous: ${anomalous.length ? anomalous.join('; ') : 'none'} | Evidence: ${evidence}`;
+  }
 
   if (symbolTitleEl) symbolTitleEl.textContent = company.symbol;
   if (companyNameEl) companyNameEl.textContent = company.name || company.symbol;
@@ -158,8 +174,9 @@ export function openCompanyModal(company) {
   }
 
   if (convictionEl) convictionEl.textContent = company.conviction_score ? `${company.conviction_score.toFixed(1)} / 10.0` : '-';
-  if (currentPriceEl) currentPriceEl.textContent = `$${currentPrice.toFixed(2)}`;
-  if (targetPriceEl) targetPriceEl.textContent = `$${targetExit.toFixed(2)}`;
+  if (currentPriceEl) currentPriceEl.textContent = isNum(currentPrice) ? `$${currentPrice.toFixed(2)}` : 'MISSING';
+  if (targetPriceEl) targetPriceEl.textContent = isNum(company.target_exit_price) ? `$${company.target_exit_price.toFixed(2)}` : 'NOT MODELED';
+  if (targetRoiEl) targetRoiEl.textContent = isNum(company.annualized_roi_pct) ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : 'NOT MODELED';
   if (descEl) {
     const rawProfile = company.business_profile || company.description || 'No description available.';
     const paragraphs = rawProfile.split(/\n\n+/).filter(Boolean);
@@ -516,29 +533,29 @@ export function openCompanyModal(company) {
   const engTotalRoiEl = document.getElementById('modal-engine-total-roi');
   const engCagrEl = document.getElementById('modal-engine-cagr');
 
-  const entryStrat = company.entry_strategy || 'LIMIT_BUY';
-  const exitStrat = company.exit_strategy || 'LIMIT_SELL';
+  const entryStrat = company.entry_strategy || 'NOT_MODELED';
+  const exitStrat = company.exit_strategy || 'NOT_MODELED';
   if (engBadgeEl) {
     engBadgeEl.textContent = `${entryStrat} -> ${exitStrat}`;
     engBadgeEl.className = 'badge-status ' + (isBuy ? 'buy' : (isHold ? 'hold' : 'avoid'));
   }
   if (engEntryStratEl) engEntryStratEl.textContent = entryStrat === 'SELL_CSP' ? 'Sell Cash-Secured Put (CSP)' : 'Direct Limit Buy Order';
   if (engExitStratEl) engExitStratEl.textContent = exitStrat === 'SELL_COVERED_CALLS' ? 'Covered Call Harvesting (CC)' : 'Direct Limit Sell Target';
-  if (engEntryDateEl) engEntryDateEl.textContent = company.entry_date || '2026-08-17';
-  if (engExitDateEl) engExitDateEl.textContent = `${company.target_exit_date || '-'} (${company.holding_period_years || 3.0} Yrs)`;
-  if (engCspEl) engCspEl.textContent = `$${(company.csp_proceeds || 0).toFixed(2)}`;
-  if (engCcEl) engCcEl.textContent = `$${(company.cc_proceeds || 0).toFixed(2)}`;
-  if (engOutlayEl) engOutlayEl.textContent = `$${(company.initial_capital_outlay || entryPrice).toFixed(2)}`;
-  if (engProceedsEl) engProceedsEl.textContent = `$${(company.total_proceeds || targetExit).toFixed(2)}`;
-  if (engCapGainEl) engCapGainEl.textContent = `+${(company.capital_gain_pct || 0).toFixed(1)}%`;
-  if (engOptYieldEl) engOptYieldEl.textContent = `+${(company.options_yield_pct || 0).toFixed(1)}%`;
-  if (engTotalRoiEl) engTotalRoiEl.textContent = `+${(company.total_roi_pct || 0).toFixed(1)}%`;
+  if (engEntryDateEl) engEntryDateEl.textContent = company.entry_date || 'NOT MODELED';
+  if (engExitDateEl) engExitDateEl.textContent = company.target_exit_date || 'NOT MODELED';
+  if (engCspEl) engCspEl.textContent = isNum(company.csp_proceeds) ? `$${company.csp_proceeds.toFixed(2)}` : 'NOT MODELED';
+  if (engCcEl) engCcEl.textContent = isNum(company.cc_proceeds) ? `$${company.cc_proceeds.toFixed(2)}` : 'NOT MODELED';
+  if (engOutlayEl) engOutlayEl.textContent = isNum(company.initial_capital_outlay) ? `$${company.initial_capital_outlay.toFixed(2)}` : 'NOT MODELED';
+  if (engProceedsEl) engProceedsEl.textContent = isNum(company.total_proceeds) ? `$${company.total_proceeds.toFixed(2)}` : 'NOT MODELED';
+  if (engCapGainEl) engCapGainEl.textContent = isNum(company.capital_gain_pct) ? `${company.capital_gain_pct.toFixed(1)}%` : 'NOT MODELED';
+  if (engOptYieldEl) engOptYieldEl.textContent = isNum(company.options_yield_pct) ? `${company.options_yield_pct.toFixed(1)}%` : 'NOT MODELED';
+  if (engTotalRoiEl) engTotalRoiEl.textContent = isNum(company.total_roi_pct) ? `${company.total_roi_pct.toFixed(1)}%` : 'NOT MODELED';
   if (engCagrEl) engCagrEl.textContent = typeof company.annualized_roi_pct === 'number' ? `${company.annualized_roi_pct.toFixed(1)}% Ann.` : (company.target_roi || 'Not modeled');
 
   // Tab 1: Quarterly Revenue Trajectory & Valuation Multiples Table
-  const currPs = company.current_ps_multiple || ((company.shares_outstanding && company.ttm_revenue) ? ((company.shares_outstanding * currentPrice) / company.ttm_revenue) : 5.0);
-  const targetPs = company.target_ps_multiple || (currPs * 0.95);
-  const psDelta = currPs > 0 ? (((targetPs - currPs) / currPs) * 100) : 0;
+  const currPs = firstNum(company.current_ps_multiple);
+  const targetPs = firstNum(company.target_ps_multiple);
+  const psDelta = isNum(currPs) && isNum(targetPs) && currPs > 0 ? (((targetPs - currPs) / currPs) * 100) : null;
   
   const psCurrValEl = document.getElementById('modal-ps-curr-val');
   const psTargetValEl = document.getElementById('modal-ps-target-val');
@@ -548,29 +565,31 @@ export function openCompanyModal(company) {
   const gridRevGrowthEl = document.getElementById('modal-grid-rev-growth');
   const gridDilutionEl = document.getElementById('modal-grid-dilution');
 
-  if (psCurrValEl) psCurrValEl.textContent = `${currPs.toFixed(1)}x`;
-  if (psTargetValEl) psTargetValEl.textContent = `${targetPs.toFixed(1)}x`;
-  if (gridPsCurrEl) gridPsCurrEl.textContent = `${currPs.toFixed(1)}x`;
-  if (gridPsTargetEl) gridPsTargetEl.textContent = `${targetPs.toFixed(1)}x`;
+  if (psCurrValEl) psCurrValEl.textContent = isNum(currPs) ? `${currPs.toFixed(1)}x` : 'NOT MODELED';
+  if (psTargetValEl) psTargetValEl.textContent = isNum(targetPs) ? `${targetPs.toFixed(1)}x` : 'NOT MODELED';
+  if (gridPsCurrEl) gridPsCurrEl.textContent = isNum(currPs) ? `${currPs.toFixed(1)}x` : 'NOT MODELED';
+  if (gridPsTargetEl) gridPsTargetEl.textContent = isNum(targetPs) ? `${targetPs.toFixed(1)}x` : 'NOT MODELED';
   if (gridPsDeltaEl) {
-    const sign = psDelta >= 0 ? '+' : '';
-    const color = psDelta >= 0 ? '#10b981' : '#f59e0b';
-    gridPsDeltaEl.innerHTML = `<span style="color: ${color};">${sign}${psDelta.toFixed(1)}% (${psDelta >= 0 ? 'Expansion' : 'Compression'})</span>`;
+    if (isNum(psDelta)) {
+      const sign = psDelta >= 0 ? '+' : '';
+      const color = psDelta >= 0 ? '#10b981' : '#f59e0b';
+      gridPsDeltaEl.innerHTML = `<span style="color: ${color};">${sign}${psDelta.toFixed(1)}% (${psDelta >= 0 ? 'Expansion' : 'Compression'})</span>`;
+    } else gridPsDeltaEl.textContent = 'NOT MODELED';
   }
 
   // Find annual revenue growth and dilution rate from trajectory or fallbacks
-  let revGrowthRate = 8.0;
-  let dilutionRate = -1.5;
+  let revGrowthRate = null;
+  let dilutionRate = null;
   if (company.revenue_forecast_13q && company.revenue_forecast_13q.length > 0) {
-    revGrowthRate = company.revenue_forecast_13q[0].yoy_growth_pct || 8.0;
+    revGrowthRate = firstNum(company.revenue_forecast_13q[0].yoy_growth_pct);
   }
   if (company.shares_projections_6h && company.shares_projections_6h.length > 0) {
-    dilutionRate = company.shares_projections_6h[0].net_annual_dilution_or_burn_rate_pct || -1.5;
+    dilutionRate = firstNum(company.shares_projections_6h[0].net_annual_dilution_or_burn_rate_pct);
   }
 
-  if (gridRevGrowthEl) gridRevGrowthEl.textContent = `${revGrowthRate >= 0 ? '+' : ''}${revGrowthRate.toFixed(1)}% YoY`;
+  if (gridRevGrowthEl) gridRevGrowthEl.textContent = isNum(revGrowthRate) ? `${revGrowthRate >= 0 ? '+' : ''}${revGrowthRate.toFixed(1)}% YoY` : 'NOT MODELED';
   if (gridDilutionEl) {
-    const dilText = dilutionRate < 0 ? `${dilutionRate.toFixed(1)}% (Buybacks)` : (dilutionRate > 0 ? `+${dilutionRate.toFixed(1)}% (Dilution)` : '0.0% (Neutral)');
+    const dilText = !isNum(dilutionRate) ? 'NOT MODELED' : (dilutionRate < 0 ? `${dilutionRate.toFixed(1)}% (Buybacks)` : (dilutionRate > 0 ? `+${dilutionRate.toFixed(1)}% (Dilution)` : '0.0% (Neutral)'));
     gridDilutionEl.textContent = dilText;
   }
 
@@ -624,19 +643,19 @@ export function openCompanyModal(company) {
   const tab4ExitActionEl = document.getElementById('modal-tab4-exit-action');
   const tab4HarvestEl = document.getElementById('modal-tab4-options-harvest');
 
-  if (tab4StratNameEl) tab4StratNameEl.textContent = `${entryStrat} / ${exitStrat}`;
+  if (tab4StratNameEl) tab4StratNameEl.textContent = modelReady ? `${entryStrat} / ${exitStrat}` : 'SUPPRESSED - DATA NOT READY';
   if (tab4EntryActionEl) {
-    tab4EntryActionEl.textContent = entryStrat === 'SELL_CSP' 
+    tab4EntryActionEl.textContent = !modelReady ? 'No experimental order proposal: required inputs failed validation.' : entryStrat === 'SELL_CSP' 
       ? `Sell 0.20Δ CSP on pullbacks (Collect $${(company.csp_proceeds || 0).toFixed(2)}/sh discount)` 
-      : `Submit Limit Buy at $${entryPrice.toFixed(2)}`;
+      : (isNum(entryPrice) ? `Experimental Limit Buy proposal at $${entryPrice.toFixed(2)}` : 'SUPPRESSED - ENTRY PRICE MISSING');
   }
   if (tab4ExitActionEl) {
-    tab4ExitActionEl.textContent = exitStrat === 'SELL_COVERED_CALLS' 
-      ? `Sell 30-45 DTE Calls above $${targetExit.toFixed(2)} target strike` 
-      : `Submit GTC Limit Sell at $${targetExit.toFixed(2)}`;
+    tab4ExitActionEl.textContent = !modelReady ? 'No experimental order proposal: required inputs failed validation.' : exitStrat === 'SELL_COVERED_CALLS' 
+      ? (isNum(targetExit) ? `Experimental 30-45 DTE call proposal above $${targetExit.toFixed(2)}` : 'SUPPRESSED - TARGET PRICE MISSING')
+      : (isNum(targetExit) ? `Experimental GTC Limit Sell proposal at $${targetExit.toFixed(2)}` : 'SUPPRESSED - TARGET PRICE MISSING');
   }
   if (tab4HarvestEl) {
-    tab4HarvestEl.textContent = exitStrat === 'SELL_COVERED_CALLS' 
+    tab4HarvestEl.textContent = !modelReady ? 'NOT MODELED' : exitStrat === 'SELL_COVERED_CALLS' 
       ? `$${(company.cc_proceeds || 0).toFixed(2)} CC proceeds (+${(company.options_yield_pct || 0).toFixed(1)}% yield)` 
       : (entryStrat === 'SELL_CSP' ? `$${(company.csp_proceeds || 0).toFixed(2)} CSP premium` : 'None (Pure Equities)');
   }
@@ -890,7 +909,7 @@ export function openCompanyModal(company) {
       analystsTbody.innerHTML = `
         <tr>
           <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 20px;">
-            No granular analyst price targets recorded. Target exit price modeled at $${targetExit.toFixed(2)}.
+            No granular analyst price targets recorded. No independent target is available.
           </td>
         </tr>
       `;

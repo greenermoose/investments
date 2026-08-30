@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExecutionEvent",
+  "description": "One immutable private lifecycle log event file for an experimental order proposal. Events are stored separately in private/logs/execution/; aggregate or JSONL logs are prohibited.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_status", "event_id", "proposal_id", "account_name", "recorded_at",
+    "event_type", "symbol", "security_type", "quantity", "fees_usd"
+  ],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "event_id": { "type": "string", "minLength": 8 },
+    "proposal_id": { "type": "string", "minLength": 4 },
+    "account_name": { "type": "string", "minLength": 1 },
+    "recorded_at": { "type": "string" },
+    "event_type": { "type": "string", "enum": ["SUBMITTED", "FILLED", "PARTIALLY_FILLED", "REJECTED", "CANCELLED", "UNFILLED", "ASSIGNED", "EXERCISED", "EXPIRED", "DIVIDEND", "CASH_FLOW"] },
+    "symbol": { "type": "string", "minLength": 1 },
+    "security_type": { "type": "string", "enum": ["EQUITY", "OPTION", "CASH"] },
+    "quantity": { "type": "number" },
+    "price": { "type": ["number", "null"] },
+    "fees_usd": { "type": "number", "minimum": 0 },
+    "option_type": { "type": ["string", "null"], "enum": ["PUT", "CALL", null] },
+    "strike": { "type": ["number", "null"] },
+    "expiration": { "type": ["string", "null"], "format": "date" },
+    "multiplier": { "type": ["integer", "null"], "minimum": 1 },
+    "notes": { "type": ["string", "null"] }
+  }
+}

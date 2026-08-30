@@ -47,7 +47,25 @@ You decide every trade. `scripts/render_plan.py` validates and renders what you 
 
 ### Step 1: Author the order set
 
-Write an orders file conforming to `context/schemas/trading_plan_orders_schema.json`. One entry per portfolio, one record per order:
+Write an orders file conforming to `context/schemas/trading_plan_orders_schema.json`. One entry per portfolio, one record per order.
+
+**Every orders file carries an experimental header at the root**, and the
+renderer rejects it without one: `experiment_status` (always `EXPERIMENTAL`),
+`experimental_warning`, `data_snapshot_id`, `data_as_of`, `model_version`,
+`prompt_version`, `missing_inputs`, `stale_inputs`, `anomalous_inputs`, and
+`evidence_percentages`.
+
+**Every OPTION order additionally requires** `option_chain_snapshot_id` (the
+archived chain the contract was observed in), `model_delta` (the delta the
+model computed, not a live market delta), and `reservation_credit` for a
+`SELL TO OPEN`. A contract that does not appear in an archived chain cannot
+be proposed, and the example chains under `examples/` are rejected for real
+proposals by design. Archive a real chain first -- see the `pricing` skill.
+
+**A symbol with any missing, stale, or anomalous input is suppressed
+entirely**, even if you authored an order for it. This is not negotiable and
+not something to route around: propose for the symbols that are ready, and let
+the rest fail closed. Suppressing an order is a result, not an error.
 
 ```json
 {
@@ -89,7 +107,9 @@ Write an orders file conforming to `context/schemas/trading_plan_orders_schema.j
 
 The `asserted_*` fields are optional but recommended. The renderer recomputes each one and fails on disagreement, which catches an arithmetic slip before the plan reaches the trader.
 
-Price the options with `scripts/calculate_pricing.py` rather than estimating premiums. Contingent orders go in the `contingency` object as deterministic execution-time branching, never as a mid-week instruction.
+Price the options with `scripts/calculate_pricing.py` rather than estimating premiums. It requires `--chain-snapshot`, `--expiration`, `--dividend-yield`, and `--minimum-aroc`; there is no way to price a hypothetical contract. Set a sell limit at the greater of the modeled reservation credit and the minimum strategy return, and never lower it during the week to force a fill.
+
+Contingent orders go in the `contingency` object as deterministic execution-time branching, never as a mid-week instruction.
 
 ### Step 2: Validate and render
 
@@ -117,6 +137,21 @@ python scripts/render_plan.py --orders private/plans/2026-08-31-orders.json --sa
 - The rendered plan is pure ASCII with no markdown pipe tables.
 
 A failing order set renders no plan and exits non-zero. Correct the orders rather than the check.
+
+### Step 3: Freeze before Monday, record what actually happened
+
+The plan is only worth measuring if it was recorded before the outcome was
+knowable. On the weekend, freeze the inputs and proposals; on Monday, record
+every order event, including the ones that did not fill.
+
+```bash
+python scripts/manage_universe.py experiment freeze --as-of 2026-08-30   --model-version <model> --prompt-version <prompt>   --input context/data/universe.json --proposal private/plans/2026-08-31-orders.json
+
+python scripts/manage_universe.py experiment record-execution   --proposal-id <id> --account "<account>" --event-type FILLED   --symbol NVDA --security-type OPTION --quantity 1 --fees 0.65
+```
+
+An unfilled order is recorded as an unfilled order. The full sequence is in
+`context/strategy/experimental_collection_loop.md`.
 
 A worked example lives at `examples/sample_orders.json`, paired with `examples/sample_portfolio.csv`.
 

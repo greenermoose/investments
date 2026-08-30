@@ -3,6 +3,24 @@
 Date: 2026-08-28
 Master run: RUN-2026-08-28-004
 
+> **SUPERSEDED 2026-08-29 by RUN-2026-08-29-001.** The conclusions below are no
+> longer true, and are retained unedited as the record of what was believed on
+> 2026-08-28.
+>
+> This audit reported "zero open gaps" because every research field had been
+> populated by `sync_research_from_meta.py` from sector heuristics rather than
+> from company-specific sources. 203 of 204 records shared an identical revenue
+> growth rate, valuation multiple, dilution rate, and conviction score;
+> `tam_cagr_pct` was identical across all 204. Structural completeness was
+> being measured and reported as research completeness.
+>
+> As of 2026-08-29 all records are marked `UNVERIFIED_PLACEHOLDER`, the open
+> gap count is 212 rather than 0, no company carries a rating, and
+> `sync_research_from_meta.py` has been retired from authoring. Step 2 of the
+> deterministic pipeline described below no longer exists. The QC error count
+> quoted here was also measured against rules that have since been corrected;
+> see `CHANGELOG.md` [4.0.0].
+
 ## Executive Summary
 
 Full-universe research refresh completed for 204 US-listed equities. Published catalog reconciled from stale 100-ticker ribbon to 204 entries. Research store fields are fully authored (zero open gaps). Quality control audit passes with documented warnings only. Two open errata (ERR-014, ERR-015) resolved.
@@ -72,4 +90,5 @@ Full-universe research refresh completed for 204 US-listed equities. Published c
 
 ## Recommendation
 
-Repository is ready for expert auditor review of `http/stocks.html` with institutional-grade structure, SEC-grounded financial extracts, honestly labeled synthesis, and deterministic validation gates.
+Repository is ready for expert auditor review of `http/stocks.html` with experimental structure, SEC-grounded financial extracts, honestly labeled synthesis, and deterministic validation gates.
+

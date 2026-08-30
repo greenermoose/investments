@@ -9,6 +9,7 @@ for all public equities in the universe.
 import argparse
 from datetime import datetime, timezone
 import json
+import math
 import os
 import sys
 import time
@@ -86,9 +87,254 @@ def calculate_cumulative_split_multiplier(candle_date_str, split_events):
     return multiplier
 
 
-def fetch_ticker_quote_and_technicals(symbol):
+def calculate_market_risk_metrics(candles):
+    """Calculate risk metrics from observed split-adjusted candles only."""
+    closes = [float(c["split_adj_close"]) for c in candles if c.get("split_adj_close") not in (None, 0)]
+    returns = [math.log(closes[i] / closes[i - 1]) for i in range(1, len(closes)) if closes[i - 1] > 0]
+
+    def annualized_vol(window):
+        sample = returns[-window:]
+        if len(sample) < window:
+            return None
+        mean = sum(sample) / len(sample)
+        variance = sum((value - mean) ** 2 for value in sample) / max(len(sample) - 1, 1)
+        return math.sqrt(variance) * math.sqrt(252.0) * 100.0
+
+    true_ranges = []
+    for index, candle in enumerate(candles):
+        high = candle.get("split_adj_high")
+        low = candle.get("split_adj_low")
+        if high is None or low is None:
+            continue
+        previous = candles[index - 1].get("split_adj_close") if index else None
+        ranges = [float(high) - float(low)]
+        if previous is not None:
+            ranges.extend((abs(float(high) - float(previous)), abs(float(low) - float(previous))))
+        true_ranges.append(max(ranges))
+
+    gains = []
+    losses = []
+    for index in range(max(1, len(closes) - 14), len(closes)):
+        change = closes[index] - closes[index - 1]
+        gains.append(max(change, 0.0))
+        losses.append(max(-change, 0.0))
+    rsi_14 = None
+    if len(gains) == 14:
+        avg_gain = sum(gains) / 14.0
+        avg_loss = sum(losses) / 14.0
+        rsi_14 = 100.0 if avg_loss == 0 else 100.0 - (100.0 / (1.0 + avg_gain / avg_loss))
+
+    dated_returns = {}
+    valid_candles = [c for c in candles if c.get("split_adj_close") not in (None, 0)]
+    for index in range(1, len(valid_candles)):
+        previous = float(valid_candles[index - 1]["split_adj_close"])
+        current = float(valid_candles[index]["split_adj_close"])
+        if previous > 0:
+            dated_returns[valid_candles[index]["date"]] = math.log(current / previous)
+
+    return {
+        "realized_volatility_20d_pct": annualized_vol(20),
+        "realized_volatility_60d_pct": annualized_vol(60),
+        "realized_volatility_252d_pct": annualized_vol(252),
+        "atr_14": sum(true_ranges[-14:]) / 14.0 if len(true_ranges) >= 14 else None,
+        "rsi_14": rsi_14,
+        "sma_200": sum(closes[-200:]) / 200.0 if len(closes) >= 200 else None,
+        "observation_count": len(closes),
+        "daily_log_returns_252d": dict(list(dated_returns.items())[-252:]),
+    }
+
+
+def add_cross_security_risk_metrics(prices_map):
+    """Add beta and correlations using aligned observed daily returns."""
+    return_maps = {
+        symbol: (record.get("risk_metrics") or {}).get("daily_log_returns_252d", {})
+        for symbol, record in prices_map.items()
+    }
+
+    def aligned_stats(left, right):
+        common = sorted(set(left) & set(right))
+        if len(common) < 60:
+            return None, None
+        xs = [left[key] for key in common]
+        ys = [right[key] for key in common]
+        x_mean = sum(xs) / len(xs)
+        y_mean = sum(ys) / len(ys)
+        covariance = sum((x - x_mean) * (y - y_mean) for x, y in zip(xs, ys)) / (len(xs) - 1)
+        x_variance = sum((x - x_mean) ** 2 for x in xs) / (len(xs) - 1)
+        y_variance = sum((y - y_mean) ** 2 for y in ys) / (len(ys) - 1)
+        correlation = covariance / math.sqrt(x_variance * y_variance) if x_variance > 0 and y_variance > 0 else None
+        beta = covariance / y_variance if y_variance > 0 else None
+        return beta, correlation
+
+    spy_returns = return_maps.get("SPY", {})
+    qqq_returns = return_maps.get("QQQ", {})
+    for symbol, record in prices_map.items():
+        metrics = record.setdefault("risk_metrics", {})
+        beta, spy_corr = aligned_stats(return_maps.get(symbol, {}), spy_returns)
+        _, qqq_corr = aligned_stats(return_maps.get(symbol, {}), qqq_returns)
+        metrics["beta_252d"] = round(beta, 4) if beta is not None else None
+        metrics["correlation_spy_252d"] = round(spy_corr, 4) if spy_corr is not None else None
+        metrics["correlation_qqq_252d"] = round(qqq_corr, 4) if qqq_corr is not None else None
+
+        peers = []
+        for peer_symbol, peer_returns in return_maps.items():
+            if peer_symbol == symbol or peer_symbol in {"SPY", "QQQ"}:
+                continue
+            _, correlation = aligned_stats(return_maps.get(symbol, {}), peer_returns)
+            if correlation is not None:
+                peers.append({"symbol": peer_symbol, "correlation": round(correlation, 4)})
+        metrics["top_correlations_252d"] = sorted(
+            peers, key=lambda item: abs(item["correlation"]), reverse=True
+        )[:5]
+
+
+PRICE_CONCORDANCE_TOLERANCE = 0.02
+EXTREME_MOVE_THRESHOLD_PCT = 25.0
+ADJUSTMENT_RATIO_TOLERANCE = 0.002
+
+
+def select_previous_close(candles, quote_session_date):
+    """Return the candle that is the prior session relative to the live quote.
+
+    The chart API often returns the current session as an all-null bar, which
+    is dropped while building candles. When that happens the last surviving
+    candle IS the prior session; when the current session has settled into the
+    series, the prior session is the one before it. Assuming a fixed offset
+    silently reports a two-session change as a one-session change.
+    """
+    if not candles:
+        return None
+    if quote_session_date and candles[-1]["date"] < quote_session_date:
+        return candles[-1]
+    return candles[-2] if len(candles) >= 2 else None
+
+
+def assess_price_integrity(candles, source_previous_close, day_change_percent,
+                           has_session_split, corroboration_sources=None,
+                           candle_previous_close_override=None):
+    """Judge whether a fetched price record can be trusted, and say why.
+
+    This is the single place the pipeline decides a price record's integrity;
+    experiment_contract and quality_control consume this verdict rather than
+    re-deriving it.
+
+    Two independent assertions are available from a single chart response:
+
+    1. Prior-close concordance. The source reports ``regularMarketPrice`` and
+       ``regularMarketChangePercent`` independently of the candle series, so
+       the prior close they imply is a genuine cross-check on the prior close
+       the series supplies. Disagreement means the quote and the series are
+       describing different sessions -- the defect that made this pipeline
+       report a two-session move as a one-session move. A residual that
+       trailing dividends would explain is recorded as a dividend-adjusted
+       source, not a defect; the source is entitled to quote an adjusted prior
+       close, and doing so is not corruption.
+
+    2. Dividend-adjustment monotonicity. ``adj_close`` may only ever sit at or
+       below ``split_adj_close``, and the ratio between them may only rise as
+       time moves forward. A source that silently swaps series mid-history
+       breaks this, and nothing else in the pipeline would notice.
+
+    Extreme moves are never self-corroborating: a session move beyond the
+    threshold is corroborated only when an official exchange or issuer source
+    is supplied for that symbol.
+    """
+    sources = list(corroboration_sources or [])
+    notes = []
+
+    candle_previous_close = candle_previous_close_override
+
+    prior_close_delta = None
+    dividend_adjusted_source = False
+    if source_previous_close is None or candle_previous_close is None:
+        previous_close_concordant = False
+        notes.append("no independent prior close available to cross-check the candle series")
+    else:
+        prior_close_delta = round(abs(float(source_previous_close) - float(candle_previous_close)), 4)
+        trailing_dividends = sum(
+            float(c["dividend_amount"]) for c in candles if c.get("dividend_amount")
+        )
+        dividend_allowance = trailing_dividends + PRICE_CONCORDANCE_TOLERANCE
+        if prior_close_delta <= PRICE_CONCORDANCE_TOLERANCE:
+            previous_close_concordant = True
+        elif prior_close_delta <= dividend_allowance:
+            previous_close_concordant = True
+            dividend_adjusted_source = True
+            notes.append(
+                f"source prior close differs by {prior_close_delta:.2f}, within the "
+                f"{trailing_dividends:.2f} of dividends that went ex-date in this window"
+            )
+        else:
+            previous_close_concordant = False
+            notes.append(
+                f"source prior close differs by {prior_close_delta:.2f}, more than the "
+                f"{trailing_dividends:.2f} of trailing dividends can explain"
+            )
+
+    # Both closes are stored to two decimals, so the ratio carries rounding
+    # noise inversely proportional to price. The break this check exists to
+    # catch -- a source silently swapping series mid-history -- is orders of
+    # magnitude larger than that noise, so the tolerance is set well above it
+    # rather than at the floating-point floor.
+    adjustment_series_consistent = True
+    previous_ratio = None
+    for candle in candles:
+        split_adj = candle.get("split_adj_close")
+        adjusted = candle.get("adj_close")
+        if not split_adj or adjusted is None:
+            continue
+        split_adj = float(split_adj)
+        ratio = float(adjusted) / split_adj
+        tolerance = max(ADJUSTMENT_RATIO_TOLERANCE, 0.02 / max(split_adj, 1.0))
+        if ratio > 1.0 + tolerance:
+            adjustment_series_consistent = False
+            notes.append(
+                f"{candle.get('date')}: adjusted close exceeds the as-traded close"
+            )
+            break
+        if previous_ratio is not None and ratio < previous_ratio - tolerance:
+            adjustment_series_consistent = False
+            notes.append(
+                f"{candle.get('date')}: dividend adjustment factor moved backwards "
+                f"by {previous_ratio - ratio:.4f}"
+            )
+            break
+        previous_ratio = max(previous_ratio, ratio) if previous_ratio is not None else ratio
+
+    extreme_move = (
+        isinstance(day_change_percent, (int, float))
+        and abs(day_change_percent) > EXTREME_MOVE_THRESHOLD_PCT
+    )
+    extreme_move_corroborated = bool(sources) if extreme_move else False
+    if extreme_move and not extreme_move_corroborated:
+        notes.append(
+            f"session move of {day_change_percent:.2f}% exceeds "
+            f"{EXTREME_MOVE_THRESHOLD_PCT:.0f}% with no official or issuer corroboration"
+        )
+
+    quarantined = (
+        not previous_close_concordant
+        or not adjustment_series_consistent
+        or (extreme_move and not extreme_move_corroborated)
+    )
+
+    return {
+        "prior_close_concordant": previous_close_concordant,
+        "prior_close_delta": prior_close_delta,
+        "dividend_adjusted_source": dividend_adjusted_source,
+        "adjustment_series_consistent": adjustment_series_consistent,
+        "split_in_latest_session": has_session_split,
+        "extreme_move": extreme_move,
+        "extreme_move_corroborated": extreme_move_corroborated,
+        "quarantined": quarantined,
+        "corroboration_sources": sources,
+        "notes": notes,
+    }
+
+
+def fetch_ticker_quote_and_technicals(symbol, corroboration_sources=None):
     query_sym = symbol.replace(".", "-")
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{query_sym}?interval=1d&range=3mo&events=div%7Csplit"
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{query_sym}?interval=1d&range=18mo&events=div%7Csplit"
     req = urllib.request.Request(url, headers=HEADERS)
 
     with urllib.request.urlopen(req, timeout=12) as resp:
@@ -99,8 +345,6 @@ def fetch_ticker_quote_and_technicals(symbol):
 
         meta = result[0].get("meta", {})
         regular_price = meta.get("regularMarketPrice")
-        chart_prev_close = meta.get("chartPreviousClose")
-        prev_close = meta.get("previousClose", chart_prev_close)
 
         events_dict = result[0].get("events", {})
         split_events, dividend_events, dividend_map = parse_corporate_actions(events_dict)
@@ -182,27 +426,45 @@ def fetch_ticker_quote_and_technicals(symbol):
         if current_price is not None:
             current_price = round(float(current_price), 2)
 
-        if prev_close is None and len(valid_split_closes) >= 2:
-            prev_close = valid_split_closes[-2]
-        if prev_close is not None:
-            prev_close = round(float(prev_close), 2)
-        else:
-            prev_close = current_price
+        # Which session does the live quote describe? The chart API frequently
+        # returns the current session as an all-null bar, so the candle series
+        # can trail the quote by one session.
+        quote_session_date = None
+        if meta.get("regularMarketTime"):
+            quote_session_date = datetime.fromtimestamp(
+                meta["regularMarketTime"], tz=timezone.utc
+            ).strftime("%Y-%m-%d")
 
-        # Nominal previous close for session-over-session change (broker-observable)
-        if len(candles) >= 2:
-            nom_prev_close = round(float(candles[-2].get("nominal_close", prev_close)), 2)
-        else:
-            nom_prev_close = round(float(meta.get("previousClose", chart_prev_close or prev_close)), 2)
+        previous_candle = select_previous_close(candles, quote_session_date)
+        if previous_candle is None:
+            raise ValueError(
+                f"No prior session candle available for {symbol}; refusing to guess a previous close"
+            )
+        nom_prev_close = round(float(previous_candle["nominal_close"]), 2)
+        prev_close = round(float(previous_candle["split_adj_close"]), 2)
 
         # Day change uses nominal prices so previous_close aligns with nominal_current_price
         nominal_current = current_price
         day_change = round(nominal_current - nom_prev_close, 2) if (nominal_current and nom_prev_close) else 0.0
         day_change_percent = round((day_change / nom_prev_close) * 100.0, 2) if nom_prev_close else 0.0
 
-        # Latest session metrics
+        # The source's own change percent is computed independently of the
+        # candle series, so the prior close it implies is a real cross-check.
+        source_change_pct = meta.get("regularMarketChangePercent")
+        if regular_price is not None and isinstance(source_change_pct, (int, float)):
+            denominator = 1.0 + (float(source_change_pct) / 100.0)
+            source_prev_close = (
+                round(float(regular_price) / denominator, 4) if denominator else None
+            )
+        else:
+            source_prev_close = None
+
+        # Latest session metrics. When the quote is ahead of the series, the
+        # current session's own bar is unavailable and its open is unknowable;
+        # reporting the prior session's open in its place would be a fabrication.
         latest_candle = candles[-1] if candles else {}
-        day_open = latest_candle.get("split_adj_open", current_price)
+        session_candle = latest_candle if latest_candle.get("date") == quote_session_date else {}
+        day_open = session_candle.get("split_adj_open")
         day_high = meta.get("regularMarketDayHigh", latest_candle.get("split_adj_high", current_price))
         day_low = meta.get("regularMarketDayLow", latest_candle.get("split_adj_low", current_price))
         day_volume = meta.get("regularMarketVolume", latest_candle.get("volume", 0))
@@ -242,6 +504,18 @@ def fetch_ticker_quote_and_technicals(symbol):
 
         earliest_split_factor = candles[-1].get("split_factor", 1.0) if candles else 1.0
         latest_adj_close = candles[-1].get("adj_close", current_price) if candles else current_price
+        risk_metrics = calculate_market_risk_metrics(candles)
+        has_session_split = any(
+            s.get("date") in {quote_session_date, latest_candle.get("date")} for s in split_events
+        )
+        data_integrity = assess_price_integrity(
+            candles,
+            source_prev_close,
+            day_change_percent,
+            has_session_split,
+            corroboration_sources=corroboration_sources,
+            candle_previous_close_override=prev_close,
+        )
 
         return {
             "symbol": symbol,
@@ -257,7 +531,7 @@ def fetch_ticker_quote_and_technicals(symbol):
             "adj_close": latest_adj_close,
             "day_change": day_change,
             "day_change_percent": day_change_percent,
-            "day_open": round(float(day_open), 2) if day_open is not None else current_price,
+            "day_open": round(float(day_open), 2) if day_open is not None else None,
             "day_high": round(float(day_high), 2) if day_high is not None else current_price,
             "day_low": round(float(day_low), 2) if day_low is not None else current_price,
             "day_volume": int(day_volume) if day_volume is not None else 0,
@@ -269,6 +543,11 @@ def fetch_ticker_quote_and_technicals(symbol):
             "sma_50": sma_50,
             "technical_support_20d": tech_support_20d,
             "technical_resistance_20d": tech_resistance_20d,
+            "risk_metrics": {
+                key: round(value, 4) if isinstance(value, float) else value
+                for key, value in risk_metrics.items()
+            },
+            "data_integrity": data_integrity,
             "cumulative_split_factor": earliest_split_factor,
             "recent_splits": [
                 {
@@ -290,7 +569,7 @@ def fetch_ticker_quote_and_technicals(symbol):
             "as_of_timestamp": datetime.now(timezone.utc).isoformat(),
             "last_updated": datetime.now(timezone.utc).isoformat(),
             "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
-            "provenance_source": "Direct Exchange / Yahoo Finance Chart API"
+            "provenance_source": "Yahoo Finance Chart API (secondary aggregator; corroboration required for extreme moves)"
         }
 
 
@@ -470,7 +749,13 @@ def main():
     parser.add_argument("--live", action="store_true", help="Live mode: fetch fresh quotes from exchange APIs (default)")
     parser.add_argument("--archive", action="store_true",
                         help="Build/update historical price archive (18 months of dual nominal/adjusted daily closes).")
+    parser.add_argument("--corroboration-file", help="JSON map of symbol to official exchange or issuer source URLs for extreme moves")
     args = parser.parse_args()
+
+    corroborations = {}
+    if args.corroboration_file:
+        with open(args.corroboration_file, "r", encoding="utf-8") as f:
+            corroborations = json.load(f)
 
     symbols = args.symbols if args.symbols else load_universe_symbols()
     offline_mode = args.offline and not args.live
@@ -530,7 +815,9 @@ def main():
 
     for i, sym in enumerate(symbols, 1):
         try:
-            record = fetch_ticker_quote_and_technicals(sym)
+            record = fetch_ticker_quote_and_technicals(
+                sym, corroboration_sources=corroborations.get(sym, [])
+            )
             prices_map[sym] = record
             success_count += 1
             splits_count = len(record.get("recent_splits", []))
@@ -542,6 +829,17 @@ def main():
         except Exception as e:
             print(f"[{i}/{len(symbols)}] Warning: Could not fetch price for {sym}: {e}")
             fail_count += 1
+
+    for benchmark in ("SPY", "QQQ"):
+        if benchmark in symbols:
+            continue
+        try:
+            prices_map[benchmark] = fetch_ticker_quote_and_technicals(benchmark)
+            print(f"Archived {benchmark} benchmark series for beta and correlation measurement.")
+        except Exception as e:
+            print(f"Warning: Could not refresh {benchmark} benchmark series: {e}")
+
+    add_cross_security_risk_metrics(prices_map)
 
     # Save to scripts/data/, http/data/, and context/data/
     with open(out_file_scripts, "w", encoding="utf-8") as f:

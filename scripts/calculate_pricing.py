@@ -9,9 +9,12 @@ order entry/exit bounds for Monday 9:30 AM ET execution.
 """
 
 import argparse
+from datetime import date, datetime
 import json
 import math
 import sys
+
+from experiment_contract import EXPERIMENT_STATUS, EXPERIMENTAL_WARNING
 
 
 def norm_cdf(x):
@@ -24,7 +27,7 @@ def norm_pdf(x):
     return math.exp(-0.5 * x * x) / math.sqrt(2.0 * math.pi)
 
 
-def black_scholes(s, k, t, r, sigma, option_type="put"):
+def black_scholes(s, k, t, r, sigma, option_type="put", dividend_yield=0.0):
     """
     Computes Black-Scholes option price and Greeks.
     s: Current stock price
@@ -44,20 +47,21 @@ def black_scholes(s, k, t, r, sigma, option_type="put"):
             "vega": 0.0
         }
 
-    d1 = (math.log(s / k) + (r + 0.5 * sigma * sigma) * t) / (sigma * math.sqrt(t))
+    q = dividend_yield
+    d1 = (math.log(s / k) + (r - q + 0.5 * sigma * sigma) * t) / (sigma * math.sqrt(t))
     d2 = d1 - sigma * math.sqrt(t)
 
     if option_type.lower() == "call":
-        price = s * norm_cdf(d1) - k * math.exp(-r * t) * norm_cdf(d2)
-        delta = norm_cdf(d1)
-        theta_per_year = -(s * norm_pdf(d1) * sigma) / (2.0 * math.sqrt(t)) - r * k * math.exp(-r * t) * norm_cdf(d2)
+        price = s * math.exp(-q * t) * norm_cdf(d1) - k * math.exp(-r * t) * norm_cdf(d2)
+        delta = math.exp(-q * t) * norm_cdf(d1)
+        theta_per_year = -(s * math.exp(-q * t) * norm_pdf(d1) * sigma) / (2.0 * math.sqrt(t)) - r * k * math.exp(-r * t) * norm_cdf(d2) + q * s * math.exp(-q * t) * norm_cdf(d1)
     else:  # put
-        price = k * math.exp(-r * t) * norm_cdf(-d2) - s * norm_cdf(-d1)
-        delta = norm_cdf(d1) - 1.0
-        theta_per_year = -(s * norm_pdf(d1) * sigma) / (2.0 * math.sqrt(t)) + r * k * math.exp(-r * t) * norm_cdf(-d2)
+        price = k * math.exp(-r * t) * norm_cdf(-d2) - s * math.exp(-q * t) * norm_cdf(-d1)
+        delta = math.exp(-q * t) * (norm_cdf(d1) - 1.0)
+        theta_per_year = -(s * math.exp(-q * t) * norm_pdf(d1) * sigma) / (2.0 * math.sqrt(t)) + r * k * math.exp(-r * t) * norm_cdf(-d2) - q * s * math.exp(-q * t) * norm_cdf(-d1)
 
-    gamma = norm_pdf(d1) / (s * sigma * math.sqrt(t))
-    vega_per_pct = (s * math.sqrt(t) * norm_pdf(d1)) / 100.0
+    gamma = math.exp(-q * t) * norm_pdf(d1) / (s * sigma * math.sqrt(t))
+    vega_per_pct = (s * math.exp(-q * t) * math.sqrt(t) * norm_pdf(d1)) / 100.0
     theta_per_day = theta_per_year / 365.0
 
     return {
@@ -83,8 +87,10 @@ def calculate_limit_bounds(stock_price, support_level=None, resistance_level=Non
     """
     Computes conservative limit order prices based on technical bounds.
     """
-    support = support_level if support_level else round(stock_price * 0.96, 2)
-    resistance = resistance_level if resistance_level else round(stock_price * 1.05, 2)
+    if support_level is None or resistance_level is None:
+        raise ValueError("observed support and resistance are required; percentage defaults are prohibited")
+    support = support_level
+    resistance = resistance_level
     
     conservative_buy_limit = round(min(support * 1.01, stock_price * 0.98), 2)
     disciplined_sell_limit = round(max(resistance * 0.99, stock_price * 1.04), 2)
@@ -107,11 +113,12 @@ def main():
     # Mode 1: Option Pricing (CSP / CC)
     opt_parser = subparsers.add_parser("option", help="Price an option contract")
     opt_parser.add_argument("--symbol", type=str, default="TICKER", help="Stock ticker symbol")
-    opt_parser.add_argument("--stock-price", type=float, required=True, help="Current underlying stock price")
+    opt_parser.add_argument("--chain-snapshot", required=True, help="Archived option-chain snapshot JSON")
     opt_parser.add_argument("--strike", type=float, required=True, help="Option strike price")
-    opt_parser.add_argument("--dte", type=int, default=35, help="Days to expiration (default: 35)")
-    opt_parser.add_argument("--iv", type=float, default=0.30, help="Implied Volatility decimal (e.g. 0.30 for 30%%)")
-    opt_parser.add_argument("--rate", type=float, default=0.045, help="Risk-free rate decimal (default: 0.045)")
+    opt_parser.add_argument("--expiration", required=True, help="Observed expiration in YYYY-MM-DD format")
+    opt_parser.add_argument("--rate", type=float, help="Observed Treasury rate; otherwise use snapshot rate")
+    opt_parser.add_argument("--dividend-yield", type=float, required=True, help="Observed annual dividend yield decimal; explicitly pass 0 when applicable")
+    opt_parser.add_argument("--minimum-aroc", type=float, required=True, help="Minimum experimental annualized return on collateral percentage")
     opt_parser.add_argument("--type", choices=["put", "call"], default="put", help="Option type (put or call)")
     opt_parser.add_argument("--json", action="store_true", help="Output raw JSON")
 
@@ -125,8 +132,8 @@ def main():
     # Mode 3: Limit Order Pricing
     limit_parser = subparsers.add_parser("limit", help="Calculate technical limit order entry/exit prices")
     limit_parser.add_argument("--stock-price", type=float, required=True, help="Current stock price")
-    limit_parser.add_argument("--support", type=float, default=None, help="Technical support level")
-    limit_parser.add_argument("--resistance", type=float, default=None, help="Technical resistance level")
+    limit_parser.add_argument("--support", type=float, required=True, help="Observed technical support level")
+    limit_parser.add_argument("--resistance", type=float, required=True, help="Observed technical resistance level")
     limit_parser.add_argument("--json", action="store_true", help="Output raw JSON")
 
     # Mode 4: Buy-to-Close (BTC) on Losing Propositions
@@ -136,7 +143,7 @@ def main():
     btc_parser.add_argument("--strike", type=float, required=True, help="Option strike price")
     btc_parser.add_argument("--current-mark", type=float, required=True, help="Current option mark/ask price per share")
     btc_parser.add_argument("--contracts", type=int, default=1, help="Number of contracts to close")
-    btc_parser.add_argument("--reason", type=str, default="Thesis invalidation / downside avoidance", help="Strategic rationale")
+    btc_parser.add_argument("--reason", type=str, required=True, help="Agent-authored experimental rationale")
     btc_parser.add_argument("--json", action="store_true", help="Output raw JSON")
 
     args = parser.parse_args()
@@ -146,29 +153,78 @@ def main():
         sys.exit(1)
 
     if args.command == "option":
-        t_years = args.dte / 365.0
-        greeks = black_scholes(args.stock_price, args.strike, t_years, args.rate, args.iv, args.type)
+        with open(args.chain_snapshot, "r", encoding="utf-8") as handle:
+            chain = json.load(handle)
+        if chain.get("experiment_status") != EXPERIMENT_STATUS:
+            raise ValueError("chain snapshot is not labeled EXPERIMENTAL")
+        if chain.get("symbol") != args.symbol.upper():
+            raise ValueError("symbol does not match archived chain")
+        contract = next((
+            item for item in chain.get("contracts", [])
+            if item.get("option_type") == args.type.upper()
+            and item.get("expiration") == args.expiration
+            and abs(float(item.get("strike", -1)) - args.strike) < 1e-9
+        ), None)
+        if not contract:
+            raise ValueError("requested strike and expiration were not observed in the archived chain")
+        iv = contract.get("implied_volatility")
+        if iv is None or iv <= 0:
+            raise ValueError("observed contract has no valid implied volatility")
+        rate = args.rate if args.rate is not None else chain.get("risk_free_rate")
+        if rate is None:
+            raise ValueError("risk-free rate is missing; provide --rate or archive it in the snapshot")
+        observed_date = datetime.fromisoformat(chain["observed_at"].replace("Z", "+00:00")).date()
+        expiration_date = date.fromisoformat(args.expiration)
+        dte = (expiration_date - observed_date).days
+        if dte <= 0:
+            raise ValueError("expiration must be after the snapshot observation date")
+        stock_price = float(chain["underlying_price"])
+        t_years = dte / 365.0
+        greeks = black_scholes(
+            stock_price, args.strike, t_years, rate, iv, args.type,
+            dividend_yield=args.dividend_yield,
+        )
         premium = greeks["price"]
-        aroc = calculate_aroc(premium, args.strike, args.dte)
+        collateral_per_share = args.strike if args.type == "put" else stock_price
+        minimum_credit = collateral_per_share * (args.minimum_aroc / 100.0) * (dte / 365.0)
+        reservation_credit = round(max(premium, minimum_credit), 2)
+        aroc = calculate_aroc(reservation_credit, collateral_per_share, dte)
         is_csp_valid = args.type == "put" and (-0.35 <= greeks["delta"] <= -0.12) and aroc >= 12.0
         is_cc_valid = args.type == "call" and (0.15 <= greeks["delta"] <= 0.38)
 
         output = {
+            "experiment_status": EXPERIMENT_STATUS,
+            "experimental_warning": EXPERIMENTAL_WARNING,
+            "chain_snapshot_id": chain["snapshot_id"],
             "symbol": args.symbol.upper(),
             "type": args.type.upper(),
-            "stock_price": args.stock_price,
+            "stock_price": stock_price,
             "strike": args.strike,
-            "dte": args.dte,
-            "iv": args.iv,
-            "theoretical_price": premium,
-            "delta": greeks["delta"],
+            "expiration": args.expiration,
+            "dte": dte,
+            "iv": iv,
+            "risk_free_rate": rate,
+            "dividend_yield": args.dividend_yield,
+            "modeled_reservation_value": premium,
+            "minimum_strategy_credit": round(minimum_credit, 2),
+            "reservation_credit": reservation_credit,
+            "model_delta": greeks["delta"],
             "theta_daily": greeks["theta_daily"],
             "gamma": greeks["gamma"],
             "vega": greeks["vega"],
             "aroc_pct": aroc,
-            "recommended_limit_price": premium,
-            "meets_csp_criteria": is_csp_valid if args.type == "put" else False,
-            "meets_cc_criteria": is_cc_valid if args.type == "call" else False
+            "experimental_csp_classification": is_csp_valid if args.type == "put" else False,
+            "experimental_cc_classification": is_cc_valid if args.type == "call" else False,
+            "observed_market": {"bid": contract["bid"], "ask": contract["ask"]},
+            "monday_stress_scenarios": [
+                {"underlying_change_pct": move, "iv_change_pct": iv_move,
+                 "reservation_value": black_scholes(
+                     stock_price * (1 + move / 100.0), args.strike, t_years, rate,
+                     max(0.0001, iv * (1 + iv_move / 100.0)), args.type,
+                     dividend_yield=args.dividend_yield,
+                 )["price"]}
+                for move, iv_move in ((-5, 20), (0, 0), (5, -20))
+            ],
         }
 
         if args.json:
@@ -178,12 +234,14 @@ def main():
         print("=" * 70)
         print(f"PRICING AGENT: {output['symbol']} {output['type']} PRICING MODEL")
         print("=" * 70)
-        print(f"Underlying Price:     ${args.stock_price:.2f}")
-        print(f"Strike Price:         ${args.strike:.2f} ({args.dte} DTE, IV: {args.iv*100:.1f}%)")
+        print("EXPERIMENTAL OPTION RESERVATION-PRICE MODEL")
+        print(EXPERIMENTAL_WARNING)
+        print(f"Underlying Price:     ${stock_price:.2f}")
+        print(f"Strike Price:         ${args.strike:.2f} ({dte} DTE, IV: {iv*100:.1f}%)")
         print(f"Theoretical Premium:  ${premium:.2f} per share (${premium*100:.2f} per contract)")
         print(f"Greeks:               Delta: {greeks['delta']} | Daily Theta: ${greeks['theta_daily']:.3f} | Gamma: {greeks['gamma']}")
         print(f"Annualized ROC (AROC):{aroc:.2f}% (Target: >= 12% - 18%)")
-        print(f"Suggested Limit Order:SELL TO OPEN limit @ ${premium:.2f}")
+        print(f"Experimental Limit:  SELL TO OPEN limit @ ${reservation_credit:.2f}")
         print("=" * 70)
 
     elif args.command == "roll":
@@ -192,6 +250,8 @@ def main():
         is_valid = net_credit > 0.0
 
         output = {
+            "experiment_status": EXPERIMENT_STATUS,
+            "experimental_warning": EXPERIMENTAL_WARNING,
             "close_cost_per_share": args.close_cost,
             "open_credit_per_share": args.open_credit,
             "net_credit_per_share": round(net_credit, 2),
@@ -215,6 +275,8 @@ def main():
 
     elif args.command == "limit":
         bounds = calculate_limit_bounds(args.stock_price, args.support, args.resistance)
+        bounds["experiment_status"] = EXPERIMENT_STATUS
+        bounds["experimental_warning"] = EXPERIMENTAL_WARNING
         if args.json:
             print(json.dumps(bounds, indent=2))
             return
@@ -243,6 +305,8 @@ def main():
             mitigation_text = f"Unlocks {shares_unlocked} common shares for immediate Monday market open liquidation (SELL TO CLOSE)."
 
         output = {
+            "experiment_status": EXPERIMENT_STATUS,
+            "experimental_warning": EXPERIMENTAL_WARNING,
             "symbol": args.symbol.upper(),
             "type": args.type.upper(),
             "strike": args.strike,

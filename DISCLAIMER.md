@@ -10,6 +10,13 @@ This software repository and all associated documentation, code, prompt workflow
 2. **No Fiduciary Duty:** The creators, contributors, and maintainers of this repository are not registered investment advisors, broker-dealers, financial analysts, or tax professionals. No fiduciary or advisory relationship is formed by cloning, reviewing, or using this repository.
 3. **Independent Due Diligence:** You are solely responsible for evaluating the risks and merits of any investment decision. Always conduct your own independent fundamental and quantitative research or consult a licensed financial advisor before placing trades.
 
+## Experimental Status
+
+1. **This Is an Experiment, Not a Product:** The System is a permanently experimental research apparatus. It tests a hypothesis about whether a 20% annualized return is achievable over a 20-year horizon. That figure is a scoring threshold, never a forecast, an assurance, or a claim about what the System can do.
+2. **No Promotion on Evidence:** The System does not become "validated", "proven", or "decision-grade" at any number of observations or at any level of measured performance. Reports may state how much evidence has accumulated; they may never state that the approach works.
+3. **Unverified Placeholder Research:** Records marked `UNVERIFIED_PLACEHOLDER` carry legacy content that was not derived from company-specific sources. They are retained for audit history only and cannot drive a classification or an order proposal.
+4. **Outputs May Be Wrong:** Every classification, forecast, ranking, and order proposal the System produces may be wrong, including those that carry complete inputs and pass every gate.
+
 ## Substantial Risk of Loss
 
 1. **Equities and Derivatives Risk:** Investing in exchange-traded equities and derivative instruments (including cash-secured puts and covered calls) carries substantial risk of financial loss, up to and including the entire loss of invested principal.
@@ -18,4 +25,4 @@ This software repository and all associated documentation, code, prompt workflow
 
 ## Privacy & Personal Data Responsibility
 
-This repository utilizes a dual-layer architecture where public company theses are recorded in `data/theses/` and private user portfolios are kept in `private/`. You are solely responsible for ensuring you do not commit private financial records, brokerage account numbers, or confidential documents to public version control.
+This repository uses a dual-layer architecture. Public company research is recorded in `context/theses/` and `context/data/`; private portfolios, execution events, reconciliations, and performance records are kept in `private/`, which is excluded from version control by `.gitignore`. You are solely responsible for ensuring you do not commit private financial records, brokerage account numbers, or confidential documents to public version control.

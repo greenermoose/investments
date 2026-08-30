@@ -1,10 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "TradingPlanOrdersSchema",
-  "description": "Schema for the order set the Lead Portfolio Manager Agent authors ahead of rendering a weekly trading plan. Every trade decision, every limit price, and every rationale in this file is the agent's. scripts/render_plan.py validates this file against the strategy mandate in AGENTS.md section 5, recomputes the collateral and cash arithmetic, and renders the plain-ASCII plan conforming to trading_plan_schema.json. The renderer selects no trades and writes no rationale.",
+  "description": "Schema for an experimental order-proposal set. Every proposed trade, limit price, and rationale is agent-authored and may be wrong. The renderer validates arithmetic and constraints but does not validate or optimize the proposed action.",
   "type": "object",
-  "required": ["plan_date", "authored_by", "portfolios"],
+  "required": [
+    "experiment_status", "experimental_warning", "data_snapshot_id", "data_as_of",
+    "model_version", "prompt_version", "missing_inputs", "stale_inputs",
+    "anomalous_inputs", "evidence_percentages", "plan_date", "authored_by", "portfolios"
+  ],
   "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "experimental_warning": { "type": "string", "minLength": 40 },
+    "data_snapshot_id": { "type": "string", "minLength": 8 },
+    "data_as_of": { "type": "string", "minLength": 10 },
+    "model_version": { "type": "string", "minLength": 1 },
+    "prompt_version": { "type": "string", "minLength": 1 },
+    "missing_inputs": { "type": "array", "items": { "type": "string" } },
+    "stale_inputs": { "type": "array", "items": { "type": "string" } },
+    "anomalous_inputs": { "type": "array", "items": { "type": "string" } },
+    "evidence_percentages": { "type": "object" },
     "plan_date": {
       "type": "string",
       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
@@ -76,6 +90,22 @@
           "type": "string",
           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
           "description": "Option expiration date. Required when security_type is OPTION."
+        },
+        "option_chain_snapshot_id": {
+          "type": "string",
+          "minLength": 8,
+          "description": "Required for OPTION proposals. Identifies the archived delayed chain in which this exact contract was observed."
+        },
+        "model_delta": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1,
+          "description": "Required for OPTION proposals. This is model delta, not a live market delta."
+        },
+        "reservation_credit": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Required for sell-to-open proposals. The submitted limit may not be below this experimental reservation credit."
         },
         "quantity": {
           "type": "number",

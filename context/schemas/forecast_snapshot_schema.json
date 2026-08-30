@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ForecastSnapshot",
+  "description": "Immutable, prospective experimental forecast frozen before outcomes are observed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_status", "snapshot_id", "created_at", "data_snapshot_id",
+    "model_version", "prompt_version", "symbol", "scenarios", "evidence_refs",
+    "known_limitations", "content_hash"
+  ],
+  "properties": {
+    "experiment_status": { "const": "EXPERIMENTAL" },
+    "experimental_warning": { "type": "string" },
+    "snapshot_id": { "type": "string", "minLength": 8 },
+    "created_at": { "type": "string" },
+    "data_snapshot_id": { "type": "string", "minLength": 8 },
+    "model_version": { "type": "string", "minLength": 1 },
+    "prompt_version": { "type": "string", "minLength": 1 },
+    "symbol": { "type": "string", "pattern": "^[A-Z0-9.-]{1,10}$" },
+    "horizon": { "type": "string", "minLength": 2 },
+    "scenarios": {
+      "type": "object",
+      "required": ["bear", "base", "bull"],
+      "properties": {
+        "bear": { "$ref": "#/$defs/scenario" },
+        "base": { "$ref": "#/$defs/scenario" },
+        "bull": { "$ref": "#/$defs/scenario" }
+      }
+    },
+    "evidence_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "known_limitations": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "$defs": {
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["probability", "price_target", "rationale"],
+      "properties": {
+        "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "annual_revenue_growth": { "type": "number", "minimum": -0.9, "maximum": 3 },
+        "target_ps_multiple_multiplier": { "type": "number", "minimum": 0.1, "maximum": 3 },
+        "annual_share_dilution_rate": { "type": "number", "minimum": -0.2, "maximum": 0.5 },
+        "price_target": { "type": "number", "exclusiveMinimum": 0 },
+        "rationale": { "type": "string", "minLength": 40 }
+      }
+    }
+  }
+}

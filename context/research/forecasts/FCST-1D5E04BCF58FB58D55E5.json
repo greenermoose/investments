@@ -1,0 +1,30 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "experimental_warning": "Experimental research output. Ratings, forecasts, classifications, and order proposals may be wrong and do not constitute investment advice.",
+  "created_at": "2026-08-29T15:42:57.251805+00:00",
+  "data_snapshot_id": "UNIVERSE-TEST",
+  "model_version": "test-model",
+  "prompt_version": "test-prompt",
+  "symbol": "TEST",
+  "horizon": "3Y",
+  "scenarios": {
+    "bear": {
+      "probability": 0.25,
+      "price_target": 80.0
+    },
+    "base": {
+      "probability": 0.5,
+      "price_target": 120.0
+    },
+    "bull": {
+      "probability": 0.25,
+      "price_target": 160.0
+    }
+  },
+  "evidence_refs": [
+    "SEC-0000320193-26-000001"
+  ],
+  "known_limitations": "Revenue mix and margin path are both uncertain over this horizon.",
+  "snapshot_id": "FCST-1D5E04BCF58FB58D55E5",
+  "content_hash": "1d5e04bcf58fb58d55e56430659cf85ae902259d0c04134f4dbbdab99389d83f"
+}

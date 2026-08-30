@@ -1555,7 +1555,7 @@
     "first_date": "2025-02-26",
     "last_date": "2026-08-28",
     "total_trading_days": 379,
-    "as_of_timestamp": "2026-08-28T19:25:09.935572+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:33.576916+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -3119,7 +3119,7 @@
     "first_date": "2025-02-26",
     "last_date": "2026-08-28",
     "total_trading_days": 379,
-    "as_of_timestamp": "2026-08-28T19:25:27.010159+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:51.359822+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -4123,7 +4123,7 @@
       "2026-02-03": 268.75,
       "2026-02-04": 275.74,
       "2026-02-05": 275.16,
-      "2026-02-06": 277.36,
+      "2026-02-06": 277.37,
       "2026-02-09": 274.13,
       "2026-02-10": 273.19,
       "2026-02-11": 275.01,
@@ -4675,7 +4675,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:29.315661+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:54.803923+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -6206,7 +6206,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:29.889798+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:55.354333+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -7737,7 +7737,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:30.735554+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:56.138139+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -9293,7 +9293,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:31.057390+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:56.405149+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -10120,7 +10120,7 @@
       "2025-05-20": 312.51,
       "2025-05-21": 312.35,
       "2025-05-22": 311.4,
-      "2025-05-23": 310.85,
+      "2025-05-23": 310.86,
       "2025-05-27": 315.33,
       "2025-05-28": 313.81,
       "2025-05-29": 313.79,
@@ -10849,7 +10849,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:31.342718+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:56.721905+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -12380,7 +12380,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:31.594613+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:56.972458+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -13936,7 +13936,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:32.000608+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:57.274147+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -15467,7 +15467,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:32.861808+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:57.773138+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -17023,7 +17023,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:33.137933+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:58.062451+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -18554,7 +18554,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:33.440381+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:58.291849+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -20110,7 +20110,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:33.893088+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:58.561624+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -21641,7 +21641,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:34.157935+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:58.806891+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -23172,7 +23172,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:34.949175+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:59.628892+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -24703,7 +24703,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:35.212035+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:59.926121+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -26259,7 +26259,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:35.543786+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:00.176257+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -27815,7 +27815,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:35.814943+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:01.464864+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -29346,7 +29346,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:36.070450+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:01.710644+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -30902,7 +30902,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:36.372159+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:02.021688+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -32433,7 +32433,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:36.700473+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:02.311873+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -33989,7 +33989,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:36.985753+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:02.559193+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -35520,7 +35520,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:37.249947+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:02.816750+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -36359,7 +36359,7 @@
     "first_date": "2025-11-04",
     "last_date": "2026-08-28",
     "total_trading_days": 205,
-    "as_of_timestamp": "2026-08-28T19:24:37.486793+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:03.081543+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -37922,7 +37922,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:37.780359+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:03.337810+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -39478,7 +39478,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:38.075054+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:03.647787+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -41009,7 +41009,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:38.607472+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:04.181386+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -41942,7 +41942,7 @@
       "2025-10-21": 521.46,
       "2025-10-22": 510.79,
       "2025-10-23": 517.34,
-      "2025-10-24": 519.56,
+      "2025-10-24": 519.55,
       "2025-10-27": 523.87,
       "2025-10-28": 521.28,
       "2025-10-29": 581.93,
@@ -42565,7 +42565,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:39.409199+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:04.866312+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -44096,7 +44096,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:39.729687+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:05.165639+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -45640,7 +45640,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:40.041804+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:05.452074+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -47171,7 +47171,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:40.310987+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:05.715918+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -48731,7 +48731,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:40.561343+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:05.959936+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -50262,7 +50262,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:40.829562+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:06.208818+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -51825,7 +51825,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:41.145532+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:06.533460+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -52658,7 +52658,7 @@
       "2025-05-29": 1001.5,
       "2025-05-30": 1032.72,
       "2025-06-02": 1049.27,
-      "2025-06-03": 1048.02,
+      "2025-06-03": 1048.01,
       "2025-06-04": 1044.14,
       "2025-06-05": 1003.56,
       "2025-06-06": 1007.66,
@@ -52798,7 +52798,7 @@
       "2025-12-17": 858.86,
       "2025-12-18": 853.82,
       "2025-12-19": 851.86,
-      "2025-12-22": 846.27,
+      "2025-12-22": 846.26,
       "2025-12-23": 851.03,
       "2025-12-24": 868.03,
       "2025-12-26": 869.51,
@@ -53381,7 +53381,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:41.742940+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:07.069541+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -54912,7 +54912,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:42.012506+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:07.332770+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -56468,7 +56468,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:42.275361+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:07.581720+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -57999,7 +57999,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:42.560166+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:07.883582+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -59537,7 +59537,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:42.809357+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:08.133479+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -61093,7 +61093,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:43.113009+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:08.451080+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -62624,7 +62624,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:43.375182+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:08.683945+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -64155,7 +64155,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:43.672247+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:08.933100+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -65711,7 +65711,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:43.999427+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:09.203998+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -67267,7 +67267,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:44.301895+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:09.502610+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -68823,7 +68823,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:44.566205+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:09.752451+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -70379,7 +70379,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:44.874293+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:10.050570+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -71910,7 +71910,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:45.131674+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:10.352460+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -73441,7 +73441,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:45.419546+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:10.602545+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -74387,7 +74387,7 @@
       "2025-11-07": 109.16,
       "2025-11-10": 110.64,
       "2025-11-11": 113.21,
-      "2025-11-12": 114.99,
+      "2025-11-12": 114.98,
       "2025-11-13": 106.07,
       "2025-11-14": 104.29,
       "2025-11-17": 104.18,
@@ -74985,7 +74985,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:46.370822+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:11.502877+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -76516,7 +76516,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:46.906430+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:12.003847+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -78047,7 +78047,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:47.151533+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:12.253037+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -78090,7 +78090,7 @@
     "first_date": "2026-07-17",
     "last_date": "2026-08-10",
     "total_trading_days": 6,
-    "as_of_timestamp": "2026-08-28T19:24:47.376408+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:12.472180+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -79621,7 +79621,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:47.637285+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:12.705512+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -81152,7 +81152,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:48.580316+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:13.522746+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -82683,7 +82683,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:48.913430+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:13.773114+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -84214,7 +84214,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:49.201445+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:14.040043+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -85766,7 +85766,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:50.091506+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:14.942768+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -87326,7 +87326,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:50.410524+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:15.190383+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -88889,7 +88889,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:50.743771+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:15.483275+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -90437,7 +90437,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:51.080327+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:15.741005+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -91968,7 +91968,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:51.680012+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:16.277329+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -93524,7 +93524,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:52.218176+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:16.828880+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -95080,7 +95080,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:52.779388+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:17.363777+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -96611,7 +96611,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:53.075811+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:17.592708+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -98167,7 +98167,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:53.392414+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:17.843260+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -99723,7 +99723,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:53.658229+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:18.094446+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -101279,7 +101279,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:53.938410+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:18.360157+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -102810,7 +102810,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:54.465966+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:18.844056+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -104366,7 +104366,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:55.055480+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:19.377346+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -105282,7 +105282,7 @@
       "2025-09-26": 201.84,
       "2025-09-29": 202.89,
       "2025-09-30": 204.08,
-      "2025-10-01": 203.77,
+      "2025-10-01": 203.76,
       "2025-10-02": 204.57,
       "2025-10-03": 202.67,
       "2025-10-06": 202.62,
@@ -105939,7 +105939,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:55.922285+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:20.266274+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -106737,7 +106737,7 @@
       "2025-04-08": 212.57,
       "2025-04-09": 226.3,
       "2025-04-10": 220.76,
-      "2025-04-11": 226.47,
+      "2025-04-11": 226.46,
       "2025-04-14": 229.91,
       "2025-04-15": 231.49,
       "2025-04-16": 229.44,
@@ -106750,7 +106750,7 @@
       "2025-04-28": 227.12,
       "2025-04-29": 230.23,
       "2025-04-30": 232.56,
-      "2025-05-01": 230.49,
+      "2025-05-01": 230.48,
       "2025-05-02": 236.15,
       "2025-05-05": 239.64,
       "2025-05-06": 239.58,
@@ -107495,7 +107495,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:56.779680+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:21.147412+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -109026,7 +109026,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:57.382213+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:21.680212+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -110557,7 +110557,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:57.704248+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:21.934849+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -112088,7 +112088,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:58.035958+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:22.228320+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -113644,7 +113644,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:58.324299+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:22.514407+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -115175,7 +115175,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:58.589516+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:22.781992+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -116706,7 +116706,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:58.857591+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:23.032666+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -117645,7 +117645,7 @@
       "2025-10-29": 182.49,
       "2025-10-30": 184.88,
       "2025-10-31": 184.71,
-      "2025-11-03": 182.15,
+      "2025-11-03": 182.16,
       "2025-11-04": 182.74,
       "2025-11-05": 181.9,
       "2025-11-06": 182.85,
@@ -118262,7 +118262,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:59.186847+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:23.381357+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -119171,7 +119171,7 @@
       "2025-09-17": 305.9,
       "2025-09-18": 307.35,
       "2025-09-19": 308.87,
-      "2025-09-22": 306.58,
+      "2025-09-22": 306.57,
       "2025-09-23": 306.87,
       "2025-09-24": 307.54,
       "2025-09-25": 307.57,
@@ -119818,7 +119818,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:59.463275+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:23.657324+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -121374,7 +121374,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:24:59.800339+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:23.944254+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -122930,7 +122930,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:00.116156+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:24.221775+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -124493,7 +124493,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:00.445537+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:24.467111+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -126049,7 +126049,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:00.749612+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:24.761304+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -127605,7 +127605,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:01.036358+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:25.023230+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -129161,7 +129161,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:01.917506+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:25.886725+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -130717,7 +130717,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:02.309712+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:26.155252+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -132277,7 +132277,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:02.856375+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:26.685377+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -133063,7 +133063,7 @@
       "2025-03-21": 296.52,
       "2025-03-24": 296.75,
       "2025-03-25": 297.96,
-      "2025-03-26": 304.43,
+      "2025-03-26": 304.42,
       "2025-03-27": 303.56,
       "2025-03-28": 298.12,
       "2025-03-31": 303.25,
@@ -133219,7 +133219,7 @@
       "2025-11-03": 290.99,
       "2025-11-04": 293.78,
       "2025-11-05": 300.12,
-      "2025-11-06": 292.99,
+      "2025-11-06": 293.0,
       "2025-11-07": 294.22,
       "2025-11-10": 293.67,
       "2025-11-11": 301.26,
@@ -133833,7 +133833,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:03.171873+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:26.989181+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -135389,7 +135389,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:03.451171+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:27.277397+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -136945,7 +136945,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:04.275447+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:28.105042+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -138476,7 +138476,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:04.535704+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:28.375409+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -139253,7 +139253,7 @@
       "2025-03-10": 595.05,
       "2025-03-11": 602.73,
       "2025-03-12": 616.51,
-      "2025-03-13": 587.73,
+      "2025-03-13": 587.74,
       "2025-03-14": 605.15,
       "2025-03-17": 602.46,
       "2025-03-18": 580.01,
@@ -140032,7 +140032,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:04.777234+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:28.641488+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -141588,7 +141588,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:05.086396+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:29.023263+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -143119,7 +143119,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:05.336938+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:29.320647+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -144653,7 +144653,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:05.614468+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:29.575061+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -146209,7 +146209,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:05.895382+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:29.841068+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -147765,7 +147765,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:06.240832+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:30.124305+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -149321,7 +149321,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:06.517356+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:30.371668+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -150877,7 +150877,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:07.146108+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:30.905551+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -152408,7 +152408,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:07.440252+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:31.140876+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -153964,7 +153964,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:07.707070+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:31.419136+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -155502,7 +155502,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:08.228336+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:31.943369+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -157058,7 +157058,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:08.520596+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:32.241464+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -158589,7 +158589,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:09.061634+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:32.774562+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -160120,7 +160120,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:09.306878+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:33.041491+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -161651,7 +161651,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:09.657667+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:33.308606+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -163207,7 +163207,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:10.235024+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:33.859450+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -164763,7 +164763,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:10.508372+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:34.112795+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -166301,7 +166301,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:11.639063+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:35.243622+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -167832,7 +167832,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:11.933898+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:35.495092+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -169388,7 +169388,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:12.248444+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:35.764429+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -170948,7 +170948,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:12.547202+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:36.061330+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -172479,7 +172479,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:12.841767+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:36.344890+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -174035,7 +174035,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:13.184827+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:36.662092+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -175591,7 +175591,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:13.536010+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:37.013435+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -177122,7 +177122,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:13.785325+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:37.316010+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -178666,7 +178666,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:14.564102+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:38.097540+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -180222,7 +180222,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:14.904269+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:38.403421+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -181778,7 +181778,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:15.193498+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:38.649869+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -183334,7 +183334,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:15.756949+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:39.207117+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -184890,7 +184890,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:16.040330+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:39.482094+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -186446,7 +186446,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:16.305319+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:40.751222+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -187977,7 +187977,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:16.547825+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:41.011925+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -189508,7 +189508,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:16.819560+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:41.316383+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -191068,7 +191068,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:17.146185+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:41.585726+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -192599,7 +192599,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:17.386993+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:41.862321+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -194130,7 +194130,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:17.900593+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:42.403681+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -195661,7 +195661,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:18.448020+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:42.922684+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -197217,7 +197217,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:18.739009+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:43.212691+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -198748,7 +198748,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:19.539405+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:44.035893+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -200279,7 +200279,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:19.796051+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:44.295029+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -201150,7 +201150,7 @@
       "2025-07-24": 242.92,
       "2025-07-25": 239.05,
       "2025-07-28": 233.78,
-      "2025-07-29": 234.83,
+      "2025-07-29": 234.82,
       "2025-07-30": 237.11,
       "2025-07-31": 234.0,
       "2025-08-01": 232.81,
@@ -201835,7 +201835,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:20.333781+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:44.843300+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -203366,7 +203366,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:20.606940+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:45.080368+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -204188,7 +204188,7 @@
       "2025-05-13": 175.63,
       "2025-05-14": 176.43,
       "2025-05-15": 181.35,
-      "2025-05-16": 182.86,
+      "2025-05-16": 182.87,
       "2025-05-19": 185.49,
       "2025-05-20": 187.49,
       "2025-05-21": 186.63,
@@ -204287,7 +204287,7 @@
       "2025-10-03": 146.79,
       "2025-10-06": 145.88,
       "2025-10-07": 145.41,
-      "2025-10-08": 145.56,
+      "2025-10-08": 145.57,
       "2025-10-09": 144.03,
       "2025-10-10": 145.3,
       "2025-10-13": 146.38,
@@ -204926,7 +204926,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:20.899768+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:45.403830+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -206482,7 +206482,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:21.227846+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:45.672424+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -208013,7 +208013,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:21.502631+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:45.925582+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -209544,7 +209544,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:22.300564+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:46.713223+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -211100,7 +211100,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:22.632966+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:46.988782+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -212656,7 +212656,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:23.477094+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:47.756349+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -213519,7 +213519,7 @@
       "2025-07-14": 347.11,
       "2025-07-15": 343.66,
       "2025-07-16": 346.51,
-      "2025-07-17": 346.43,
+      "2025-07-17": 346.42,
       "2025-07-18": 345.67,
       "2025-07-21": 347.54,
       "2025-07-22": 348.46,
@@ -214212,7 +214212,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:24.338832+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:48.668245+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -215145,7 +215145,7 @@
       "2025-10-21": 235.3,
       "2025-10-22": 235.74,
       "2025-10-23": 233.08,
-      "2025-10-24": 233.23,
+      "2025-10-24": 233.22,
       "2025-10-27": 231.97,
       "2025-10-28": 230.44,
       "2025-10-29": 206.48,
@@ -215768,7 +215768,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:24.828122+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:49.140901+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -217299,7 +217299,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:25.610507+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:49.991831+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -218855,7 +218855,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:25.896403+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:50.292129+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -220386,7 +220386,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:26.177388+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:50.527930+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -221917,7 +221917,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:26.441740+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:50.801854+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -223469,7 +223469,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:26.710261+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:51.080385+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -225025,7 +225025,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:27.300820+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:51.660091+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -226556,7 +226556,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:27.602675+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:51.895094+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -228087,7 +228087,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:27.861852+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:52.160573+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -229618,7 +229618,7 @@
     "first_date": "2025-02-27",
     "last_date": "2026-08-28",
     "total_trading_days": 378,
-    "as_of_timestamp": "2026-08-28T19:25:28.135741+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:52.410872+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -230406,7 +230406,7 @@
       "2025-03-28": 195.6,
       "2025-03-31": 199.63,
       "2025-04-01": 196.53,
-      "2025-04-02": 195.51,
+      "2025-04-02": 195.5,
       "2025-04-03": 192.12,
       "2025-04-04": 178.14,
       "2025-04-07": 177.74,
@@ -231170,7 +231170,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:29.619520+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:55.071062+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -232722,7 +232722,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:30.220434+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:55.637459+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -234266,7 +234266,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:30.484028+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:55.891151+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -235793,7 +235793,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:32.590656+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:57.507723+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -237320,7 +237320,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:34.418103+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:59.074533+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -238872,7 +238872,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:34.671998+00:00",
+    "as_of_timestamp": "2026-08-29T15:18:59.364858+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -239699,7 +239699,7 @@
       "2025-05-23": 938.44,
       "2025-05-27": 956.12,
       "2025-05-28": 946.33,
-      "2025-05-29": 951.24,
+      "2025-05-29": 951.25,
       "2025-05-30": 954.72,
       "2025-06-02": 952.95,
       "2025-06-03": 956.91,
@@ -239718,7 +239718,7 @@
       "2025-06-23": 966.06,
       "2025-06-24": 984.34,
       "2025-06-25": 997.19,
-      "2025-06-26": 1009.64,
+      "2025-06-26": 1009.63,
       "2025-06-27": 1026.32,
       "2025-06-30": 1027.72,
       "2025-07-01": 1032.63,
@@ -239765,7 +239765,7 @@
       "2025-08-28": 1107.28,
       "2025-08-29": 1104.01,
       "2025-09-02": 1091.89,
-      "2025-09-03": 1076.93,
+      "2025-09-03": 1076.92,
       "2025-09-04": 1086.0,
       "2025-09-05": 1081.67,
       "2025-09-08": 1087.35,
@@ -240424,7 +240424,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:38.361442+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:03.918272+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -241951,7 +241951,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:39.119379+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:04.529876+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -243503,7 +243503,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:41.460052+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:06.803797+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -245055,7 +245055,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:45.734887+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:10.902775+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -246607,7 +246607,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:46.000738+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:11.172361+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -248134,7 +248134,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:46.622691+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:11.770252+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -249686,7 +249686,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:47.928479+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:12.988719+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -251242,7 +251242,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:49.510948+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:14.339523+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -252769,7 +252769,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:49.781146+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:14.647905+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -254296,7 +254296,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:51.386843+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:16.025484+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -255848,7 +255848,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:51.967732+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:16.559415+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -256623,7 +256623,7 @@
       "2025-03-11": 283.23,
       "2025-03-12": 297.65,
       "2025-03-13": 299.2,
-      "2025-03-14": 312.55,
+      "2025-03-14": 312.54,
       "2025-03-17": 330.81,
       "2025-03-18": 317.83,
       "2025-03-19": 334.64,
@@ -256644,7 +256644,7 @@
       "2025-04-09": 325.68,
       "2025-04-10": 308.88,
       "2025-04-11": 320.32,
-      "2025-04-14": 321.18,
+      "2025-04-14": 321.19,
       "2025-04-15": 327.42,
       "2025-04-16": 327.02,
       "2025-04-17": 322.68,
@@ -256756,7 +256756,7 @@
       "2025-09-19": 622.76,
       "2025-09-22": 642.91,
       "2025-09-23": 631.97,
-      "2025-09-24": 627.54,
+      "2025-09-24": 627.55,
       "2025-09-25": 606.14,
       "2025-09-26": 603.8,
       "2025-09-29": 601.07,
@@ -257400,7 +257400,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:52.492379+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:17.100210+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -258927,7 +258927,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:54.174245+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:18.600895+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -260454,7 +260454,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:54.701026+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:19.094262+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -261994,7 +261994,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:55.317763+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:19.668347+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -263521,7 +263521,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:56.483391+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:20.830902+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -265073,7 +265073,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:57.120766+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:21.413279+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -265885,7 +265885,7 @@
       "2025-05-02": 814.99,
       "2025-05-05": 812.86,
       "2025-05-06": 767.0,
-      "2025-05-07": 768.59,
+      "2025-05-07": 768.58,
       "2025-05-08": 743.58,
       "2025-05-09": 726.88,
       "2025-05-12": 747.66,
@@ -266625,7 +266625,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:01.356585+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:25.339560+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -268177,7 +268177,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:01.651457+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:25.619576+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -269704,7 +269704,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:02.570182+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:26.424218+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -271256,7 +271256,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:03.716193+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:27.545138+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -272783,7 +272783,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:04.012904+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:27.825114+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -274335,7 +274335,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:06.815056+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:30.642891+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -275862,7 +275862,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:07.970677+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:31.676495+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -277396,7 +277396,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:08.801874+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:32.507106+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -278923,7 +278923,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:11.103832+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:34.693344+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -280475,7 +280475,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:11.381727+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:34.996980+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -282002,7 +282002,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:14.050136+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:37.599413+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -283554,7 +283554,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:14.324740+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:37.850667+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -285106,7 +285106,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:15.463479+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:38.915140+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -286633,7 +286633,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:17.650168+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:42.170867+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -288192,7 +288192,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:18.190323+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:42.691723+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -288973,7 +288973,7 @@
       "2025-03-19": 372.58,
       "2025-03-20": 368.81,
       "2025-03-21": 365.74,
-      "2025-03-24": 368.85,
+      "2025-03-24": 368.86,
       "2025-03-25": 367.48,
       "2025-03-26": 362.45,
       "2025-03-27": 362.22,
@@ -289744,7 +289744,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:18.998049+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:43.492847+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -291276,7 +291276,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:19.291972+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:43.735486+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -292239,7 +292239,7 @@
       "2025-12-08": 566.65,
       "2025-12-09": 561.53,
       "2025-12-10": 572.24,
-      "2025-12-11": 577.31,
+      "2025-12-11": 577.32,
       "2025-12-12": 570.71,
       "2025-12-15": 574.77,
       "2025-12-16": 569.03,
@@ -292828,7 +292828,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:20.075137+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:44.559165+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -294380,7 +294380,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:21.778715+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:46.221331+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -295907,7 +295907,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:22.045015+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:46.462330+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -297434,7 +297434,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:22.922768+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:47.243258+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -298961,7 +298961,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:23.185882+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:47.490816+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -300513,7 +300513,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:23.805806+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:48.094089+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -301512,7 +301512,7 @@
       "2026-01-30": 777.35,
       "2026-02-02": 774.29,
       "2026-02-03": 787.98,
-      "2026-02-04": 843.02,
+      "2026-02-04": 843.03,
       "2026-02-05": 842.67,
       "2026-02-06": 894.14,
       "2026-02-09": 871.24,
@@ -302065,7 +302065,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:24.078678+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:48.373626+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -303592,7 +303592,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:24.579660+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:48.907419+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -305144,7 +305144,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:25.080609+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:49.426634+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -306696,7 +306696,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:25.335647+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:49.761979+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -308232,7 +308232,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:48.199957+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:13.225103+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -309784,7 +309784,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:55.575471+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:19.949142+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -311336,7 +311336,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:24:56.240638+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:20.595794+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   },
@@ -312876,7 +312876,7 @@
     "first_date": "2025-02-28",
     "last_date": "2026-08-28",
     "total_trading_days": 377,
-    "as_of_timestamp": "2026-08-28T19:25:10.801191+00:00",
+    "as_of_timestamp": "2026-08-29T15:19:34.395271+00:00",
     "provenance_tier": "TIER_2_FINANCIAL_AGGREGATOR",
     "provenance_source": "Yahoo Finance Chart API (18mo historical dual nominal/adjusted)"
   }

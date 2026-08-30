@@ -23,11 +23,18 @@ import re
 from collections import namedtuple
 from datetime import datetime, timezone
 
+from experiment_contract import (
+    EXPERIMENT_STATUS,
+    RESEARCH_STATUS_AUTHORED,
+    RESEARCH_STATUS_PLACEHOLDER,
+    RESEARCH_STATUSES,
+)
+
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EQUITIES_DIR = os.path.join(ROOT_DIR, "context", "data", "equities")
 SCHEMA_PATH = os.path.join(ROOT_DIR, "context", "schemas", "equity_research_schema.json")
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "2.0"
 
 AUTHORITY_TIERS = {
     "TIER_1_PRIMARY_REGULATORY",
@@ -51,6 +58,11 @@ OVERHANG_RATINGS = {"MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH", "SEVERE"}
 
 CATALYST_STATUSES = {"PENDING", "ACHIEVED", "FAILED", "DELAYED"}
 
+VALUATION_METHODS = {
+    "EARNINGS", "FCF", "REVENUE_WITH_MARGIN_BRIDGE", "BANK_PTB_ROE",
+    "INSURER_PTB_ROE", "REIT_AFFO", "PRE_REVENUE_BIOTECH_RNPV",
+}
+
 # Field registry. "kind" selects the structural validator; "owner" names the
 # agent role responsible for authoring it, which drives grouping in the gap
 # report; "renders" lists the artifacts that cannot be produced without it.
@@ -70,6 +82,9 @@ FIELD_REGISTRY = {
     "valuation_parameters": FieldSpec(
         "valuation_parameters", "Investment Thesis Agent",
         ["valuation model", "ROI", "rating"]),
+    "forecast_scenarios": FieldSpec(
+        "forecast_scenarios", "Investment Thesis Agent",
+        ["valuation model", "ROI", "rating", "forecast snapshot"]),
     "dividend_profile": FieldSpec(
         "dividend_profile", "Investment Thesis Agent", ["return engine"]),
     "capital_strategy": FieldSpec(
@@ -97,6 +112,7 @@ THESIS_REQUIRED_FIELDS = [
     "competitive_moat_analysis",
     "tam_and_market_share",
     "valuation_parameters",
+    "forecast_scenarios",
     "capital_strategy",
     "stock_based_compensation",
     "catalyst_timeline",
@@ -106,7 +122,7 @@ THESIS_REQUIRED_FIELDS = [
 ]
 
 # Fields required before a ticker can carry a published rating or ROI.
-VALUATION_REQUIRED_FIELDS = ["valuation_parameters"]
+VALUATION_REQUIRED_FIELDS = ["valuation_parameters", "forecast_scenarios"]
 
 
 Gap = namedtuple("Gap", ["symbol", "field", "reason", "owner", "renders"])
@@ -164,6 +180,14 @@ def _provenance_errors(prefix, prov):
             f"{prefix}.provenance requires runtime_context_signature for "
             "TIER_4_AGENT_PARAMETRIC_KNOWLEDGE content (AGENTS.md section 6)"
         )
+    for key in ("source_class", "retrieved_at", "verification_status"):
+        if not prov.get(key):
+            errors.append(f"{prefix}.provenance.{key} is required")
+    raw_hash = prov.get("raw_content_hash")
+    if raw_hash and not re.match(r"^[a-f0-9]{64}$", str(raw_hash)):
+        errors.append(f"{prefix}.provenance.raw_content_hash must be a SHA-256 hex digest")
+    if not raw_hash:
+        errors.append(f"{prefix}.provenance.raw_content_hash is required")
     return errors
 
 
@@ -205,16 +229,82 @@ def _validate_field(field, value):
         errors += _provenance_errors(field, value.get("provenance"))
 
     elif kind == "valuation_parameters":
-        errors += _number_errors(
-            f"{field}.annual_revenue_growth", value.get("annual_revenue_growth"), -0.9, 3.0)
-        errors += _number_errors(
-            f"{field}.target_ps_multiple_multiplier",
-            value.get("target_ps_multiple_multiplier"), 0.1, 3.0)
+        method = value.get("valuation_method")
+        if method not in VALUATION_METHODS:
+            errors.append(f"{field}.valuation_method '{method}' must be one of {sorted(VALUATION_METHODS)}")
+        inputs = value.get("valuation_inputs")
+        if not isinstance(inputs, dict):
+            errors.append(f"{field}.valuation_inputs must be an object")
+            inputs = {}
+        if method == "PRE_REVENUE_BIOTECH_RNPV":
+            errors += _number_errors(
+                f"{field}.valuation_inputs.risk_adjusted_enterprise_value_usd",
+                inputs.get("risk_adjusted_enterprise_value_usd"), 0.0, 1e15)
+            errors += _number_errors(
+                f"{field}.valuation_inputs.net_cash_usd",
+                inputs.get("net_cash_usd"), -1e15, 1e15)
+        elif method in VALUATION_METHODS:
+            errors += _number_errors(
+                f"{field}.valuation_inputs.current_metric_per_share",
+                inputs.get("current_metric_per_share"), -1e9, 1e9)
+            errors += _number_errors(
+                f"{field}.valuation_inputs.annual_metric_growth",
+                inputs.get("annual_metric_growth"), -0.9, 3.0)
+            errors += _number_errors(
+                f"{field}.valuation_inputs.target_multiple",
+                inputs.get("target_multiple"), 0.01, 1e6)
+            if method == "REVENUE_WITH_MARGIN_BRIDGE":
+                errors += _number_errors(
+                    f"{field}.valuation_inputs.target_margin_pct",
+                    inputs.get("target_margin_pct"), -100.0, 100.0)
         errors += _number_errors(
             f"{field}.annual_share_dilution_rate",
             value.get("annual_share_dilution_rate"), -0.2, 0.5)
         errors += _number_errors(
             f"{field}.conviction_score", value.get("conviction_score"), 0.0, 10.0)
+        errors += _number_errors(
+            f"{field}.opportunity_cost_annualized",
+            value.get("opportunity_cost_annualized"), -1.0, 3.0)
+        errors += _number_errors(
+            f"{field}.uncertainty_score", value.get("uncertainty_score"), 0.0, 1.0)
+        errors += _number_errors(
+            f"{field}.horizon_years", value.get("horizon_years"), 0.01, 20.0)
+        errors += _provenance_errors(field, value.get("provenance"))
+
+    elif kind == "forecast_scenarios":
+        scenarios = []
+        for name in ("bear", "base", "bull"):
+            scenario = value.get(name)
+            if not isinstance(scenario, dict):
+                errors.append(f"{field}.{name} must be an object")
+                continue
+            scenarios.append(scenario)
+            errors += _number_errors(
+                f"{field}.{name}.probability", scenario.get("probability"), 0.0, 1.0)
+            for optional_field, low, high in (
+                ("annual_revenue_growth", -0.9, 3.0),
+                ("target_ps_multiple_multiplier", 0.1, 3.0),
+                ("annual_share_dilution_rate", -0.2, 0.5),
+            ):
+                if scenario.get(optional_field) is not None:
+                    errors += _number_errors(
+                        f"{field}.{name}.{optional_field}",
+                        scenario.get(optional_field), low, high)
+            errors += _number_errors(
+                f"{field}.{name}.price_target", scenario.get("price_target"), 0.01, 1e9)
+            errors += _narrative_errors(
+                f"{field}.{name}.rationale", scenario.get("rationale"), 40)
+        if len(scenarios) == 3:
+            probability_sum = sum(float(s["probability"]) for s in scenarios)
+            if abs(probability_sum - 1.0) > 1e-6:
+                errors.append(
+                    f"{field} scenario probabilities sum to {probability_sum:.6f}; must sum to 1.0"
+                )
+        errors += _narrative_errors(
+            f"{field}.uncertainty", value.get("uncertainty"), 40)
+        refs = value.get("evidence_refs")
+        if not isinstance(refs, list) or not refs or any(not str(x).strip() for x in refs):
+            errors.append(f"{field}.evidence_refs must be a non-empty array")
         errors += _provenance_errors(field, value.get("provenance"))
 
     elif kind == "dividend_profile":
@@ -301,8 +391,29 @@ def validate_research(symbol, research):
             f"'{SCHEMA_VERSION}'"
         )
 
+    if research.get("experiment_status") != EXPERIMENT_STATUS:
+        errors.append(f"[{symbol}] research.experiment_status must be '{EXPERIMENT_STATUS}'")
+    status = research.get("research_status")
+    if status not in RESEARCH_STATUSES:
+        errors.append(
+            f"[{symbol}] research.research_status '{status}' must be one of "
+            f"{sorted(RESEARCH_STATUSES)}"
+        )
+    for key in ("as_of_date", "authoring_model", "prompt_version"):
+        if not research.get(key):
+            errors.append(f"[{symbol}] research.{key} is required")
+
+    # Placeholder content is retained only as audit history.  Its legacy fields
+    # are deliberately not treated as valid authored research and therefore do
+    # not need to satisfy the v2 claim-level evidence contract.
+    if status == RESEARCH_STATUS_PLACEHOLDER:
+        return errors
+
     for field, value in research.items():
-        if field in ("symbol", "schema_version"):
+        if field in (
+            "symbol", "schema_version", "experiment_status", "research_status",
+            "as_of_date", "authoring_model", "prompt_version",
+        ):
             continue
         for err in _validate_field(field, value):
             errors.append(f"[{symbol}] {err}")
@@ -320,6 +431,14 @@ def require_fields(symbol, fields, research=None):
         research = load_research(symbol)
 
     gaps = []
+    if research.get("research_status") != RESEARCH_STATUS_AUTHORED:
+        return [Gap(
+            symbol,
+            "research_status",
+            "research is unverified placeholder content and cannot drive modeled outputs",
+            "Investment Thesis Agent",
+            ["valuation model", "ROI", "rating", "order proposal"],
+        )]
     for field in fields:
         spec = FIELD_REGISTRY.get(field)
         owner = spec.owner if spec else "Unassigned"

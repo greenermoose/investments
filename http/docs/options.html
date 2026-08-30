@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options Pricing & Limit Order Modeling - Agentic Investment Advisor</title>
+  <title>Options Pricing & Limit Order Modeling - Experimental Investment Research System</title>
   <link rel="stylesheet" href="../css/roboto-fonts.css" />
   <link rel="stylesheet" href="../css/docs.css" />
 </head>
@@ -33,6 +33,10 @@
   </nav>
 
   <main class="docs-main">
+    <div class="experimental-banner" role="note" aria-label="Experimental status">
+      <strong>EXPERIMENTAL:</strong> Ratings, forecasts, classifications, and order proposals may be wrong.
+      Research output is not investment advice.
+    </div>
     <div class="docs-header">
       <h1>Options Pricing & Limit Order Modeling</h1>
       <p class="docs-lead">Mathematical frameworks, Greeks optimization, Black-Scholes weekend modeling, and rolling mechanics.</p>
@@ -149,7 +153,7 @@
       <li><strong>Implied Volatility (<var>&sigma;</var>):</strong> 30-day historical and implied volatility percentile.</li>
       <li><strong>Time to Expiration (<var>T</var> &minus; <var>t</var>):</strong> Days to Expiration (DTE) scaled in years (<span class="math-inline"><var>DTE</var> / 365</span>).</li>
       <li><strong>Cumulative Standard Normal Distribution (<var>N</var>):</strong> Probability distribution function for delta and exercise bounds.</li>
-      <li><strong>Limit Order Setting:</strong> Modeled fair values are used to specify Monday 9:30 AM ET limit prices that guarantee favorable entry pricing.</li>
+      <li><strong>Limit Order Setting:</strong> Modeled fair values are used to specify Monday 9:30 AM ET limit prices that enforce the stated experimental reservation-price floor.</li>
     </ul>
 
     <h2>Rolling &amp; Buy-to-Close Mechanics</h2>
@@ -177,3 +181,4 @@
   </main>
 </body>
 </html>
+

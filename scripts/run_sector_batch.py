@@ -126,8 +126,10 @@ def main():
         f.write(f"QC audit exit code: {qc_code}\n\n")
         f.write(f"Research gaps exit code: {gaps_code}\n\n")
         f.write(
-            "Research blocks were synchronized via sync_research_from_meta.py prior to "
-            "render. Tier 1 filing URLs preserved in provenance.source_locator where present.\n"
+            "Research blocks are agent-authored into the research store; no script "
+            "synthesizes them. A ticker whose research is unauthored renders a NOT "
+            "MODELLED dossier naming its blocking gaps, and carries no rating. Tier 1 "
+            "filing URLs are preserved in provenance.source_locator where present.\n"
         )
 
     run(

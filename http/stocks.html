@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Public Equities - Agentic Investment Advisor</title>
+  <title>Public Equities - Experimental Investment Research System</title>
   <link rel="stylesheet" href="css/roboto-fonts.css" />
   <link rel="stylesheet" href="css/docs.css?v=5" />
 </head>
@@ -35,6 +35,10 @@
   </nav>
 
   <main class="docs-main full-width">
+    <div class="experimental-banner" role="note" aria-label="Experimental status">
+      <strong>EXPERIMENTAL:</strong> Ratings, forecasts, classifications, and order proposals may be wrong.
+      Research output is not investment advice.
+    </div>
     <div class="docs-header">
       <div
         style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 10px;">
@@ -45,7 +49,14 @@
           <button class="view-btn" data-view="table" title="Dense Table View">Data Table</button>
         </div>
       </div>
-      <p class="docs-lead">Explore US public equities tracked by the agentic investment system, continuously screened and expandable on demand via our coverage onboarding pipeline.</p>
+      <p class="docs-lead">Explore source-linked records in the Experimental Investment Research System.</p>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-title">Experimental Output</div>
+      <p>Ratings, forecasts, classifications, and price targets may be wrong and are not investment advice. Records
+        labeled UNVERIFIED_PLACEHOLDER cannot drive an experimental rating or order proposal. Each record displays its
+        data snapshot, readiness warnings, model version, and evidence provenance when available.</p>
     </div>
 
     <div class="stats-ribbon">
@@ -55,14 +66,14 @@
         <div class="stat-sub">US Exchange-Listed Stocks</div>
       </div>
       <div class="stat-box" id="stat-card-buy" role="button" tabindex="0" title="Filter by Buy Companies">
-        <div class="stat-label">Buy Companies</div>
+        <div class="stat-label">Experimental Buy</div>
         <div class="stat-value" id="stat-buy-count" style="color: #10b981;">--</div>
-        <div class="stat-sub">Add to Portfolios</div>
+        <div class="stat-sub">Modeled Classification</div>
       </div>
       <div class="stat-box" id="stat-card-hold" role="button" tabindex="0" title="Filter by Hold Companies">
-        <div class="stat-label">Hold Companies</div>
+        <div class="stat-label">Experimental Hold</div>
         <div class="stat-value" id="stat-hold-count" style="color: #00d4ff;">--</div>
-        <div class="stat-sub">Keep in Portfolios</div>
+        <div class="stat-sub">Modeled Classification</div>
       </div>
       <div class="stat-box" id="stat-card-index" role="button" tabindex="0" title="Filter by Index Members">
         <div class="stat-label">Index Members</div>
@@ -186,8 +197,15 @@
           <button id="modal-close" class="modal-close-btn" title="Close modal">&times;</button>
         </div>
 
+        <div id="modal-experiment-status" class="callout warning" style="margin: 12px 20px 0;">
+          <div class="callout-title">EXPERIMENTAL</div>
+          <p id="modal-experiment-warning">Ratings, forecasts, and classifications may be wrong.</p>
+          <p id="modal-experiment-metadata" style="font-size: 0.82rem;"></p>
+          <p id="modal-experiment-readiness" style="font-size: 0.82rem;"></p>
+        </div>
+
         <div class="modal-nav-tabs">
-          <button class="modal-tab active" data-tab="tab-overview">Investment Thesis</button>
+          <button class="modal-tab active" data-tab="tab-overview">Experimental Thesis</button>
           <button class="modal-tab" data-tab="tab-quarterly">Quarterly Revenue</button>
           <button class="modal-tab" data-tab="tab-analysts">Analyst Coverage</button>
           <button class="modal-tab" data-tab="tab-technicals">Technical Analysis</button>
@@ -851,3 +869,4 @@
 </body>
 
 </html>
+

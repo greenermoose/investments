@@ -173,7 +173,7 @@ When frontier reasoning models review this issue, they should evaluate and formu
 How can we mathematically optimize the triage gating thresholds and lightweight LLM scanning heuristics to maximize token cost efficiency while minimizing Type II errors (false negatives where an eventual multi-bagger compounder is mistakenly relegated to the Avoid List)?
 
 #### Context & Strategic Nuance
-Generating institutional-grade investment thesis dossiers (13-quarter revenue forecasts, 6-horizon shares outstanding, 4-horizon price targets, forensic footnote audits) requires ~15,000+ tokens per ticker. In an expanding universe of 150 to 500+ equities, analyzing companies doomed to secular obsolescence, unmanageable debt default, or chronic share dilution creates massive compute drag.
+Generating experimental investment thesis dossiers (13-quarter revenue forecasts, 6-horizon shares outstanding, 4-horizon price targets, forensic footnote audits) requires ~15,000+ tokens per ticker. In an expanding universe of 150 to 500+ equities, analyzing companies doomed to secular obsolescence, unmanageable debt default, or chronic share dilution creates massive compute drag.
 
 We have established a two-stage analysis funnel:
 1. **Stage 1 (Lightweight Triage & Gating)**: Deterministic quantitative filters + lightweight qualitative LLM probes (~1,000 tokens) tag value traps as `AVOID` and freeze deep compute.
@@ -198,7 +198,35 @@ When frontier reasoning models review this issue, they should evaluate and formu
 - **Date Logged**: 2026-08-28
 - **Domain / Agents**: Equity Research Agent, Investment Thesis Agent, Pricing Agent, Data Provenance, Quality Control
 - **Related Files**: [triage_universe.py](../../scripts/triage_universe.py), [build_universe_json.py](../../scripts/build_universe_json.py), [quality_control.py](../../scripts/quality_control.py), [fetch_sec.py](../../scripts/fetch_sec.py), [calculate_pricing.py](../../scripts/calculate_pricing.py), [valuation_framework.md](../strategy/valuation_framework.md), [errata_protocol.md](errata_protocol.md)
-- **Status**: OPEN
+- **Status**: RESOLVED 2026-08-29 (RUN-2026-08-29-001)
+
+#### Resolution (2026-08-29)
+
+The fundamental data layer now exists. `fetch_sec.py` derives and stores gross,
+operating, and net margin; free cash flow and FCF conversion; net leverage;
+interest coverage; effective tax rate; NOPAT; invested capital; ROIC; and
+liquidity runway for cash-burning issuers. Coverage across 212 records:
+operating margin 188, free cash flow 164, debt-to-equity 162, ROIC 133, gross
+margin 108.
+
+Coverage is partial **by design**. A company that does not report gross profit
+receives no gross margin rather than an imputed one, and the readiness gate in
+`experiment_contract.py` treats each absence as a blocking missing input. The
+triage gate is therefore no longer inert: it now filters, and it fails closed
+on absence instead of passing silently.
+
+The price-series integrity half of this item is also resolved, though the
+diagnosis in the original write-up was incomplete. The prior-close disagreement
+was a symptom; the cause was that the live quote was compared against a candle
+two sessions old whenever the current session's bar had not yet settled. The
+ABNB +39.59% and ADP +30.80% figures cited below were artifacts of that, not of
+a corrupted series. After correcting the session alignment, 0 of 214 records
+show a session move above 25% and 0 are quarantined. See ROADMAP 3.9 and 3.10,
+and `CHANGELOG.md` [4.0.0].
+
+**What this does not resolve:** every record remains `UNVERIFIED_PLACEHOLDER`
+and no company carries a rating. The fundamentals are collected; the
+company-specific research they gate has still to be authored.
 
 #### Question
 The strategy mandate requires ROIC discipline, FCF conversion analysis, gross margin gating, and solvency verification. None of these metrics exist as fields in any dataset in this repository. What is the minimum viable fundamental data layer required before the Stage 1 triage gate and the valuation framework can do the work their specifications describe?
@@ -273,3 +301,4 @@ How should the renderer permit a close-only sale of a verified held ETF that is 
 #### Current Conflict
 
 `render_plan.py` rejects every order whose symbol is absent from the public equity universe before considering whether the order reduces an existing position. That is appropriate for opening purchases and option sales, but it also blocks `SELL TO CLOSE` orders for verified held ETFs. A narrow resolution should allow only a quantity-bounded close of a symbol present in the parsed account, while continuing to reject purchases, short sales, and option openings for non-universe symbols. This issue is recorded only; it is not resolved in the 2026-08-28 snapshot task.
+

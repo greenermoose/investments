@@ -8,7 +8,7 @@ description: Market-wide discovery workflows, quantitative screening rules, 20%+
 ## Overview
 This skill defines the complete operational protocol, search methodologies, quantitative screening rules, and universe onboarding workflows for the **Equity Research Agent**.
 
-The Equity Research Agent acts as the proactive discovery engine for the investment system. Rather than being confined to a static universe, this agent searches the broader Internet and public US equity markets (NYSE, NASDAQ, AMEX) using web search, SEC EDGAR NPORT-P / Form 10-K filings, and deterministic screening tools to discover high-conviction companies that offer a high probability of generating 20% or greater annualized return on investment (ROI).
+The Equity Research Agent acts as the proactive discovery engine for the investment system. Rather than being confined to a static universe, this agent searches the broader Internet and public US equity markets (NYSE, NASDAQ, AMEX) using web search, SEC EDGAR NPORT-P / Form 10-K filings, and deterministic screening tools to discover high-conviction companies that offer an experimental hypothesis of generating 20% or greater annualized return on investment (ROI).
 
 The user can invoke this workflow at any time to add single equities or any number of additional equities in batch (typically anticipated a few times per year), expanding the universe of covered public equities.
 
@@ -58,7 +58,7 @@ When the user asks to add an equity or any number of additional equities, execut
    - Authors institutional thesis dossiers in `context/theses/<SYM>.md`.
    - Synchronizes filing calendars, sentiment surveillance, and short seller registries.
 4. **Qualitative Thesis Enrichment (Stage 2 Handoff)**: Collaborate with the **Investment Thesis Agent** to refine the six qualitative sections in `context/theses/<SYM>.md` (Business Profile, TAM & Market Share, Competitive Moat, Anticipated Catalysts, Share Dilution/Buybacks, and Explicit Invalidation Criteria).
-5. **Deterministic Schema & Quality Control Audit**: Run `python scripts/validate_thesis.py --file context/theses/<SYM>.md` and `python scripts/quality_control.py --audit` to guarantee 0 errors and 0 warnings.
+5. **Deterministic Schema & Quality Control Audit**: Run `python scripts/validate_thesis.py --file context/theses/<SYM>.md` and `python scripts/quality_control.py --audit` to require 0 errors and 0 warnings.
 6. **Executive Summary**: Present the newly onboarded equities to the user with company name, sector, current price, rating (`BUY`, `HOLD`, `SELL`, `AVOID`), benchmark entry price, target exit price, expected 3Y CAGR, conviction score, and clickable dossier link.
 
 ## Deterministic Screening & Onboarding Tooling
@@ -141,3 +141,4 @@ The user may invoke the Equity Research Agent for universe expansion in three pr
 - **SEC EDGAR Access**: Strictly adhere to the SEC 10 requests/second rate limit and always provide the configured User-Agent header when executing `scripts/fetch_sec.py` or `scripts/fetch_etf_holdings.py`.
 - **Local Cache First**: Check `http/data/` and `scripts/data/` before issuing new network queries.
 - **Polite Retrieval**: Comply with `context/sources/access_methodologies.md` (Methodology 7) including exponential backoff on HTTP 429 and polite crawling of company investor relations disclosures.
+

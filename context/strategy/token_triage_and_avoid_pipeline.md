@@ -65,7 +65,7 @@ For companies meeting baseline quantitative thresholds or edge cases, a concise 
 - **FAIL**: Tagged as `AVOID`. Minimal metadata record created. Bypassed in weekly deep thesis updates.
 - **PASS**: Tagged as `QUALIFIED_CANDIDATE`. Handed off to the Investment Thesis Agent for Stage 2 deep analysis.
 
-## Stage 2: Deep Scrutiny Protocol (Institutional-Grade Thesis)
+## Stage 2: Deep Scrutiny Protocol (Experimental Thesis)
 
 Only equities tagged as `QUALIFIED_CANDIDATE` receive full institutional modeling (~15,000+ tokens per ticker):
 - **13-Quarter Revenue Forecast ($Q_0$ to $Q_{12}$)**: Segment-level catalysts, product launch dates, seasonal adjustments, and non-monotonic S-curve progression.
@@ -124,3 +124,4 @@ Assuming a broad tracking universe of 150 candidate equities:
   - 90 qualified equities x 15,000 deep tokens = 1,350,000 tokens
   - **Total**: 1,470,000 tokens (**34.7% compute and cost reduction**).
 - **Time Savings**: Frees agent deliberation cycles and human review bandwidth from analyzing hopeless value traps, concentrating 100% of analytical focus on equities capable of achieving our 20%+ annualized compounding mandate.
+

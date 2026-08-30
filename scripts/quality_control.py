@@ -552,6 +552,54 @@ class QualityController:
         lo = p.get("fifty_two_week_low")
         supp = p.get("technical_support_20d")
         res = p.get("technical_resistance_20d")
+        # The integrity verdict is produced once, at collection time, by
+        # fetch_market_prices.assess_price_integrity. This audit reports that
+        # verdict rather than recomputing it from the stored fields, so the
+        # rule cannot drift away from the collector that enforces it.
+        integrity = p.get("data_integrity") or {}
+        if not integrity:
+            issues.append({
+                "severity": "ERROR",
+                "rule": "PRICE_INTEGRITY",
+                "symbol": sym,
+                "field": "data_integrity",
+                "expected": "A data-integrity verdict recorded at collection time",
+                "description": f"[{sym}] Price record carries no data-integrity verdict. Re-run fetch_market_prices.py."
+            })
+        else:
+            notes = "; ".join(integrity.get("notes") or []) or "no detail recorded"
+
+            if not integrity.get("prior_close_concordant"):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "PRIOR_CLOSE_CONCORDANCE",
+                    "symbol": sym,
+                    "field": "previous_close",
+                    "actual": integrity.get("prior_close_delta"),
+                    "expected": "Source and candle prior closes agreeing once dividends are allowed for",
+                    "description": f"[{sym}] Prior-close series disagree beyond what dividends explain ({notes}). Record is quarantined."
+                })
+
+            if not integrity.get("adjustment_series_consistent", True):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "ADJUSTMENT_SERIES_CONSISTENCY",
+                    "symbol": sym,
+                    "field": "historical_candles_30d",
+                    "expected": "A monotonically non-decreasing dividend adjustment factor at or below 1.0",
+                    "description": f"[{sym}] Dividend-adjusted close series is internally inconsistent ({notes}). Record is quarantined."
+                })
+
+            if integrity.get("extreme_move") and not integrity.get("extreme_move_corroborated"):
+                issues.append({
+                    "severity": "ERROR",
+                    "rule": "EXTREME_MOVE_CORROBORATION",
+                    "symbol": sym,
+                    "field": "day_change_percent",
+                    "actual": dcp,
+                    "expected": "An official exchange or issuer source supplied via --corroboration-file",
+                    "description": f"[{sym}] Daily move above 25 percent lacks official or issuer corroboration. Record is quarantined."
+                })
 
         # Synthetic/placeholder price detection
         if p.get("provenance_source") == "Direct Exchange / Synthetic Benchmark":
@@ -561,8 +609,8 @@ class QualityController:
                 "symbol": sym,
                 "field": "provenance_source",
                 "actual": p.get("provenance_source"),
-                "expected": "Direct Exchange / Yahoo Finance Chart API",
-                "description": f"[{sym}] Synthetic benchmark placeholder detected. Must ingest live exchange quote."
+                "expected": "A prospectively archived observed price source",
+                "description": f"[{sym}] Synthetic benchmark placeholder detected. Must ingest an observed market quote."
             })
 
         if cp is None or cp <= 0:
@@ -791,7 +839,16 @@ class QualityController:
         status = u_entry.get("thesis_status")
         score = u_entry.get("conviction_score")
         valid_statuses = {"BUY", "HOLD", "SELL", "AVOID"}
-        awaiting_research = u_entry.get("triage_status") == "AWAITING_RESEARCH"
+        # A record is legitimately unrated when the readiness gate says its
+        # inputs are not sufficient to produce a rating. Keying this off a
+        # single triage-status string let a rename turn "correctly recorded
+        # absence" back into "schema error", which is pressure to manufacture
+        # a rating rather than record that there isn't one.
+        readiness = u_entry.get("data_readiness") or {}
+        awaiting_research = (
+            u_entry.get("triage_status") in {"AWAITING_RESEARCH", "DATA_NOT_READY"}
+            or not readiness.get("trade_ready", False)
+        )
 
         if status is None and awaiting_research:
             # Correctly recorded absence: the valuation parameters this rating
@@ -816,10 +873,10 @@ class QualityController:
                 "description": f"[{sym}] Invalid thesis_status: '{status}' (must be BUY, HOLD, SELL, or AVOID)."
             })
 
-        if awaiting_research:
-            return issues
-
-        if score is None or not (0.0 <= score <= 10.0):
+        # Only the rating-derived fields are excused while research is
+        # unauthored. Description quality and thesis completeness do not depend
+        # on a rating, and returning early here hid them for every record.
+        if not awaiting_research and (score is None or not (0.0 <= score <= 10.0)):
             issues.append({
                 "severity": "ERROR",
                 "rule": "THESIS_SCHEMA",
@@ -1122,6 +1179,26 @@ class QualityController:
             })
             return issues
 
+        # The distribution is only meaningful across records that actually
+        # carry a modelled return. With none, every statistic collapses to zero
+        # and the rule reports three failures that describe the absence of
+        # modelling rather than any defect in it.
+        modeled = [
+            u for u in self.universe
+            if isinstance(u.get("annualized_roi_pct"), (int, float))
+        ]
+        if not modeled:
+            issues.append({
+                "severity": "WARNING",
+                "rule": "ROI_DISTRIBUTION_NOT_APPLICABLE",
+                "symbol": "ALL",
+                "field": "annualized_roi_pct",
+                "description": "No record carries a modelled return, so the cross-sectional "
+                               "ROI distribution cannot be assessed. This is expected while "
+                               "research is unauthored."
+            })
+            return issues
+
         try:
             from compare_roi_distribution import run_comparison
             res = run_comparison(self.root_dir)
@@ -1245,7 +1322,7 @@ def main():
                 print(f"[{issue['severity']}] [{issue['rule']}] {issue['description']}")
             sys.exit(1)
         else:
-            print("SUCCESS: 0 errors detected across all datasets. Perfect system integrity verified.")
+            print("SUCCESS: 0 errors detected across all datasets. No configured errors detected; this does not validate the experiment.")
             sys.exit(0)
     else:
         issues = qc.audit(target_symbol=args.symbol, verify_urls=args.verify_urls)
@@ -1269,3 +1346,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

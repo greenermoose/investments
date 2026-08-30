@@ -9,7 +9,7 @@ This document defines the quantitative valuation metrics, fundamental quality sc
 
 ## 2. Core Quantitative Screening & Solvency Check (Equity Research Agent)
 To qualify for universe onboarding and thesis authoring, a US exchange-listed equity is evaluated against:
-1. Annualized Compounding Potential: High probability of generating >= 20% annualized ROI over a 3- to 5-year investment horizon.
+1. Annualized Compounding Hypothesis: Experimental scenario analysis against a >= 20% annualized scoring threshold over a 3- to 5-year horizon. This is not a probability claim or forecast.
 2. Secular Revenue Trajectory: 3-year projected revenue growth >= 12% driven by durable structural tailwinds.
 3. Balance Sheet Solvency & Runway Verification: Manageable leverage (Debt/Equity < 3.5x for capital-light models) and at least 12-24 months of liquid cash runway for growth companies to eliminate catastrophic bankruptcy risk without dogmatic zero-debt filters.
 4. Competitive Moat & Quality: High ROIC (>15% normalized) or high gross margins (>50%) indicating durable pricing power.
@@ -39,3 +39,4 @@ Fundamental valuation establishes *what* to buy and *fair value*; technical indi
 - Covered Call Exit: Strike set at or above fundamental fair value target and major technical resistance (0.20 - 0.35 Delta, 21-45 DTE).
 - Buy to Close (BTC) on Losing Propositions: When a fundamental thesis breaks or an equity is evaluated as a losing proposition, buy to close open short puts to eliminate assignment risk on a falling stock, and buy to close open short calls to unlock shares for complete Monday open liquidation.
 - Strict Prohibition: No speculative option buying (no long calls/puts or debit spreads) and no naked options under any circumstances. All puts 100% cash-backed, all calls 100% share-backed.
+

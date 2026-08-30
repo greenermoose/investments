@@ -25,6 +25,7 @@ Conforms to:
 """
 
 import os
+import re
 import sys
 from typing import Any, Dict, List, Optional
 
@@ -73,6 +74,303 @@ MODEL_ENTRY_DATE = "2026-08-17"
 MODEL_HOLDING_PERIOD_YEARS = 3.0
 
 
+# Every method in research_store.VALUATION_METHODS may be *declared* by
+# research, because declaring the right method is how a company records what
+# kind of business it is. Only these are actually *priced*. Bank, insurer, and
+# REIT valuation reduce to book value, float, and AFFO respectively -- none of
+# which this pipeline collects -- and a defensible pre-revenue biotech rNPV
+# needs per-programme probability of success and a discount rate. Pricing them
+# with the generic growth-and-multiple formula would produce a number with no
+# defensible meaning, so they fail closed instead.
+IMPLEMENTED_VALUATION_METHODS = {
+    "EARNINGS",
+    "FCF",
+    "REVENUE_WITH_MARGIN_BRIDGE",
+}
+
+UNIMPLEMENTED_METHOD_REASONS = {
+    "BANK_PTB_ROE": "bank valuation requires tangible book value and ROE, which are not collected",
+    "INSURER_PTB_ROE": "insurer valuation requires float, combined ratio, and reserve development, which are not collected",
+    "REIT_AFFO": "REIT valuation requires an AFFO reconciliation and cap rate, which are not collected",
+    "PRE_REVENUE_BIOTECH_RNPV": "pre-revenue biotech valuation requires per-programme probability of success and a discount rate, which are not collected",
+}
+
+
+def _unmodeled(symbol, company_name, field, reason):
+    return {
+        "symbol": symbol,
+        "company_name": company_name or symbol,
+        "status": "UNMODELED",
+        "gaps": [{
+            "field": field,
+            "reason": reason,
+            "owner": "Investment Thesis Agent",
+            "renders": ["valuation model", "experimental classification", "order proposal"],
+        }],
+    }
+
+
+def _required_method_for(sector, industry, ttm_revenue):
+    """Map an industry classification to the valuation method it demands.
+
+    Matching is on whole words. Substring matching previously routed
+    "Investment Banking & Brokerage" to the bank model, which is a securities
+    business valued on earnings, not on tangible book.
+    """
+    text = f"{sector or ''} {industry or ''}".lower()
+    words = set(re.findall(r"[a-z]+", text))
+
+    if "reit" in words or "real estate investment trust" in text:
+        return "REIT_AFFO"
+    if {"insurance", "insurer", "insurers"} & words:
+        return "INSURER_PTB_ROE"
+    # A depository bank is valued on book value; a broker or investment bank
+    # is not, and both carry the word "banking".
+    if {"bank", "banks"} & words and not ({"brokerage", "capital", "markets"} & words):
+        return "BANK_PTB_ROE"
+    if {"biotechnology", "biotech"} & words and (
+        not isinstance(ttm_revenue, (int, float)) or ttm_revenue <= 0
+    ):
+        return "PRE_REVENUE_BIOTECH_RNPV"
+    return None
+
+
+def _model_experimental_distribution(
+    symbol, current_price, shares_outstanding, ttm_revenue, sector, industry,
+    company_name, filings, research,
+):
+    """Model method-specific valuation and scenario distribution without defaults."""
+    params = research["valuation_parameters"]
+    inputs = params["valuation_inputs"]
+    method = params["valuation_method"]
+    scenarios = research["forecast_scenarios"]
+    horizon = float(params["horizon_years"])
+    dilution = float(params["annual_share_dilution_rate"])
+    uncertainty = float(params["uncertainty_score"])
+    opportunity_cost = float(params["opportunity_cost_annualized"])
+    conviction = float(params["conviction_score"])
+
+    required_method = _required_method_for(sector, industry, ttm_revenue)
+    if required_method and method != required_method:
+        return _unmodeled(
+            symbol, company_name, "valuation_parameters.valuation_method",
+            f"industry classification requires {required_method}, received {method}",
+        )
+    if method not in IMPLEMENTED_VALUATION_METHODS:
+        return _unmodeled(
+            symbol, company_name, "valuation_parameters.valuation_method",
+            f"{method} is declared but not implemented: "
+            f"{UNIMPLEMENTED_METHOD_REASONS.get(method, 'no model exists for this method')}",
+        )
+
+    if not isinstance(current_price, (int, float)) or current_price <= 0:
+        return _unmodeled(symbol, company_name, "current_price", "positive observed current price is required")
+    if not isinstance(shares_outstanding, (int, float)) or shares_outstanding <= 0:
+        return _unmodeled(symbol, company_name, "shares_outstanding", "positive SEC-observed diluted shares are required")
+    current_price = float(current_price)
+    shares = float(normalize_shares_outstanding(symbol, shares_outstanding) or shares_outstanding)
+    future_shares = shares * ((1.0 + dilution) ** horizon)
+
+    metric = float(inputs["current_metric_per_share"])
+    primary_growth = float(inputs["annual_metric_growth"])
+    target_multiple = float(inputs["target_multiple"])
+    future_metric = metric * ((1.0 + primary_growth) ** horizon)
+    current_multiple = current_price / metric if metric > 0 else None
+    margin_bridge = None
+
+    if method == "REVENUE_WITH_MARGIN_BRIDGE":
+        # A revenue multiple is only defensible where profitability is not yet
+        # representative, and then only if the path to profit is stated. Bridge
+        # revenue through the target margin to earnings, and apply the multiple
+        # to those earnings -- so target_multiple is an earnings multiple and
+        # the margin assumption is load-bearing rather than decorative.
+        target_margin_pct = float(inputs["target_margin_pct"])
+        if target_margin_pct <= 0:
+            return _unmodeled(
+                symbol, company_name, "valuation_inputs.target_margin_pct",
+                "a revenue-based valuation must bridge to a positive target margin",
+            )
+        future_earnings_per_share = (
+            future_metric * (target_margin_pct / 100.0) / ((1.0 + dilution) ** horizon)
+        )
+        method_target = future_earnings_per_share * target_multiple
+        margin_bridge = {
+            "current_revenue_per_share": round(metric, 4),
+            "horizon_revenue_per_share": round(future_metric, 4),
+            "target_margin_pct": round(target_margin_pct, 4),
+            "horizon_earnings_per_share": round(future_earnings_per_share, 4),
+            "target_earnings_multiple": round(target_multiple, 4),
+            "current_price_to_sales": round(current_multiple, 4) if current_multiple else None,
+        }
+    else:
+        method_target = future_metric * target_multiple / ((1.0 + dilution) ** horizon)
+
+    if method_target <= 0:
+        return _unmodeled(symbol, company_name, "valuation_inputs", "method-specific valuation produced a non-positive target")
+    base_target = float(scenarios["base"]["price_target"])
+    divergence = abs(base_target - method_target) / method_target
+    if divergence > 0.35:
+        return _unmodeled(
+            symbol, company_name, "forecast_scenarios.base.price_target",
+            f"base scenario differs from the method-specific valuation by {divergence * 100.0:.1f} percent; reconcile inputs",
+        )
+
+    probabilities = {name: float(scenarios[name]["probability"]) for name in ("bear", "base", "bull")}
+    targets = {name: float(scenarios[name]["price_target"]) for name in ("bear", "base", "bull")}
+    expected_target = sum(probabilities[name] * targets[name] for name in targets)
+    expected_cagr = (expected_target / current_price) ** (1.0 / horizon) - 1.0
+    downside_probability = sum(probabilities[name] for name in targets if targets[name] < current_price)
+    bear_total_return = targets["bear"] / current_price - 1.0
+    classification_hurdle = max(0.20, opportunity_cost) + uncertainty * 0.05
+    if conviction < 5.0 or bear_total_return <= -0.80:
+        rating = "AVOID"
+    elif expected_cagr >= classification_hurdle and downside_probability <= 0.35:
+        rating = "BUY"
+    elif expected_cagr >= opportunity_cost:
+        rating = "HOLD"
+    else:
+        rating = "AVOID"
+
+    total_roi_pct = (expected_target / current_price - 1.0) * 100.0
+    annualized_roi_pct = expected_cagr * 100.0
+    shares_m = shares / 1e6
+    shares_projections = []
+    for label, weeks, years in SHARE_HORIZONS:
+        projected = shares * ((1.0 + dilution) ** years)
+        shares_projections.append({
+            "horizon_weeks": weeks,
+            "horizon_label": label,
+            "shares_outstanding_m": round(projected / 1e6, 3),
+            "shares_outstanding_b": round(projected / 1e9, 6),
+            "shares_outstanding": round(projected, 0),
+            "net_annual_dilution_or_burn_rate_pct": round(dilution * 100.0, 4),
+        })
+
+    price_target_ranges = []
+    for label, weeks, years in (("13 Weeks", 13, 0.25), ("52 Weeks (1Y)", 52, 1.0), ("104 Weeks (2Y)", 104, 2.0), ("156 Weeks (3Y)", 156, horizon)):
+        fraction = min(years / horizon, 1.0)
+        interpolated = {
+            name: current_price * ((targets[name] / current_price) ** fraction)
+            for name in targets
+        }
+        expected = sum(probabilities[name] * interpolated[name] for name in targets)
+        price_target_ranges.append({
+            "horizon_weeks": weeks,
+            "horizon_label": label,
+            "bear_price": round(interpolated["bear"], 2),
+            "base_price": round(interpolated["base"], 2),
+            "bull_price": round(interpolated["bull"], 2),
+            "expected_price": round(expected, 2),
+            "implied_ps_multiple": target_multiple if method == "REVENUE_WITH_MARGIN_BRIDGE" else None,
+            "annualized_cagr_pct": round(((expected / current_price) ** (1.0 / years) - 1.0) * 100.0, 4),
+        })
+
+    forecast_rows = []
+    if method == "REVENUE_WITH_MARGIN_BRIDGE":
+        raw_revenue = float(ttm_revenue or 0.0)
+        if raw_revenue <= 0:
+            return _unmodeled(symbol, company_name, "ttm_revenue", "revenue method requires positive SEC-observed TTM revenue")
+        quarterly_base = raw_revenue / 4.0
+        for label, index, period_date in QUARTER_DEFS:
+            projected = quarterly_base * ((1.0 + primary_growth) ** (index / 4.0))
+            projected_shares = shares * ((1.0 + dilution) ** (index / 4.0))
+            forecast_rows.append({
+                "quarter_index": index,
+                "quarter_label": label,
+                "date": period_date,
+                "period_type": "CURRENT" if index == 0 else "PROJECTED",
+                "projected_revenue_usd": round(projected, 2),
+                "projected_revenue_b": round(projected / 1e9, 6),
+                "yoy_growth_pct": round(primary_growth * 100.0, 4),
+                "projected_shares_b": round(projected_shares / 1e9, 6),
+                "projected_shares_m": round(projected_shares / 1e6, 3),
+                "projected_ps_multiple": target_multiple,
+                "implied_stock_price": None,
+                "basis": "AGENT_INPUT_STRAIGHT_LINE_NO_SEASONALITY_DEFAULT",
+                "catalyst_name": None,
+                "catalyst_incremental_revenue_b": 0.0,
+            })
+
+    balance_sheet = _extract_balance_sheet(filings)
+    total_debt = balance_sheet["total_debt_usd"]
+    cash = balance_sheet["cash_and_equivalents_usd"]
+    target_roi_str = f"{annualized_roi_pct:.1f}%"
+    return_engine = {
+        "symbol": symbol,
+        "company_name": company_name or symbol,
+        "entry_strategy": None,
+        "exit_strategy": None,
+        "benchmark_entry_price": round(current_price, 2),
+        "target_exit_price": round(expected_target, 2),
+        "entry_date": None,
+        "target_exit_date": None,
+        "csp_proceeds": 0.0,
+        "cc_proceeds": 0.0,
+        "dividend_proceeds": 0.0,
+        "initial_capital_outlay": round(current_price, 2),
+        "total_proceeds": round(expected_target, 2),
+        "net_profit": round(expected_target - current_price, 2),
+        "holding_period_days": round(horizon * 365.25),
+        "holding_period_years": horizon,
+        "capital_gain_pct": round(total_roi_pct, 4),
+        "options_yield_pct": 0.0,
+        "total_roi_pct": round(total_roi_pct, 4),
+        "annualized_roi_pct": round(annualized_roi_pct, 4),
+        "target_roi_str": target_roi_str,
+    }
+    return {
+        "symbol": symbol,
+        "company_name": company_name or symbol,
+        "status": "MODELED",
+        "gaps": [],
+        "sector": sector,
+        "industry": industry,
+        "valuation_method": method,
+        "valuation_method_target": round(method_target, 2),
+        "margin_bridge": margin_bridge,
+        "scenario_distribution": {
+            "probabilities": probabilities,
+            "targets": targets,
+            "expected_target": round(expected_target, 2),
+            "expected_annualized_return_pct": round(annualized_roi_pct, 4),
+            "downside_probability": round(downside_probability, 6),
+            "bear_total_return_pct": round(bear_total_return * 100.0, 4),
+            "uncertainty_score": uncertainty,
+            "opportunity_cost_annualized": opportunity_cost,
+        },
+        "current_price": round(current_price, 2),
+        "entry_price": round(current_price, 2),
+        "target_exit_price": round(expected_target, 2),
+        "rating": rating,
+        "conviction_score": conviction,
+        "holding_period": f"{horizon:g} Years",
+        "holding_period_years": horizon,
+        "target_strategy": "EXPERIMENTAL_CLASSIFICATION_ONLY",
+        "entry_strategy": None,
+        "exit_strategy": None,
+        "annual_rev_growth": primary_growth if method == "REVENUE_WITH_MARGIN_BRIDGE" else None,
+        "current_ps_multiple": current_multiple if method == "REVENUE_WITH_MARGIN_BRIDGE" else None,
+        "target_ps_multiple": target_multiple if method == "REVENUE_WITH_MARGIN_BRIDGE" else None,
+        "net_dilution_rate": dilution,
+        "ttm_revenue_usd": ttm_revenue,
+        "shares_outstanding": shares,
+        "total_debt_usd": total_debt,
+        "cash_and_equivalents_usd": cash,
+        "net_cash_usd": cash - total_debt if isinstance(cash, float) and isinstance(total_debt, float) else None,
+        "annual_dividend_usd": None,
+        "dividend_yield_pct": None,
+        "market_share": None,
+        "return_engine": return_engine,
+        "target_roi_str": target_roi_str,
+        "annualized_roi_pct": round(annualized_roi_pct, 4),
+        "historical_quarterly_revenue": [],
+        "revenue_forecast_13q": forecast_rows,
+        "quarterly_revenue_trajectory": forecast_rows,
+        "shares_projections_6h": shares_projections,
+        "price_target_ranges_4h": price_target_ranges,
+    }
+
+
 def _extract_balance_sheet(filings: Optional[List[Dict[str, Any]]]) -> Dict[str, Optional[float]]:
     """Reads debt and cash from the most recent Tier 1 filing.
 
@@ -91,111 +389,6 @@ def _extract_balance_sheet(filings: Optional[List[Dict[str, Any]]]) -> Dict[str,
     if isinstance(cash, (int, float)):
         result["cash_and_equivalents_usd"] = float(cash)
     return result
-
-
-def _build_historical_quarters(
-    filings: Optional[List[Dict[str, Any]]],
-    quarterly_rev_base: float,
-    shares_b: float,
-    current_price: float,
-    current_ps: float,
-    growth_rate: float,
-    dilution_rate: float,
-) -> List[Dict[str, Any]]:
-    """Reported quarters where filings supply them, back-cast where they do not.
-
-    Back-cast rows are labelled period_type BACKCAST so a reader can tell a
-    reported figure from an extrapolation of the agent's growth assumption.
-    """
-    filings_by_period = {}
-    for filing in filings or []:
-        period_end = filing.get("period_end") or filing.get("filing_date")
-        if period_end:
-            filings_by_period[period_end] = filing
-
-    quarters = []
-    for label, date, offset in HISTORICAL_QUARTER_DEFS:
-        growth_factor = (1.0 + growth_rate) ** (offset / 4.0)
-        seasonality = 1.08 if (offset % 4 == 1) else (
-            0.94 if (offset % 4 == 2) else (0.98 if (offset % 4 == 3) else 1.02))
-        revenue_b = quarterly_rev_base * growth_factor * seasonality
-        quarter_shares_b = shares_b * ((1.0 + dilution_rate) ** (offset / 4.0))
-        period_type = "BACKCAST"
-
-        matched = None
-        for period_end, filing in filings_by_period.items():
-            if period_end.startswith(date[:7]):
-                matched = filing
-                break
-
-        if matched:
-            data = matched.get("data", {})
-            reported_revenue = data.get("revenue")
-            reported_shares = data.get("shares_outstanding")
-            if reported_revenue and reported_revenue > 0:
-                # Filings carry either a quarterly or a year-to-date figure.
-                ttm_scale = quarterly_rev_base * 4.0 * 1e9
-                if reported_revenue > ttm_scale * 0.6:
-                    revenue_b = (reported_revenue / 4.0) / 1e9
-                else:
-                    revenue_b = reported_revenue / 1e9
-                period_type = "REPORTED"
-            if reported_shares and reported_shares > 0:
-                quarter_shares_b = reported_shares / 1e9
-
-        ps_multiple = round(
-            (quarter_shares_b * 1e9 * current_price) / (revenue_b * 4.0 * 1e9), 2
-        ) if revenue_b > 0 else round(current_ps, 2)
-        implied_price = round(
-            ((revenue_b * 4.0) * ps_multiple) / quarter_shares_b, 2
-        ) if quarter_shares_b > 0 else current_price
-
-        quarters.append({
-            "quarter_label": f"{label} (Hist)",
-            "date": date,
-            "period_type": period_type,
-            "revenue_b": round(revenue_b, 2),
-            "revenue_usd": round(revenue_b * 1e9, 2),
-            "yoy_growth_pct": round(growth_rate * 100.0, 1),
-            "shares_b": round(quarter_shares_b, 3),
-            "shares_m": round(quarter_shares_b * 1000.0, 1),
-            "ps_multiple": ps_multiple,
-            "implied_stock_price": implied_price,
-        })
-
-    return quarters
-
-
-def _catalyst_ramp(catalysts: List[Dict[str, Any]]) -> Dict[int, Dict[str, Any]]:
-    """Maps each catalyst's revenue impact onto the quarters it ramps through.
-
-    The S-curve shape (20 percent in the launch quarter, 50 percent in the next,
-    75 percent thereafter) is a modeling convention applied uniformly. The
-    revenue impact and the launch window are the agent's numbers.
-    """
-    ramp = {q: {"incremental_revenue_b": 0.0, "catalyst_name": None} for q in range(13)}
-
-    for catalyst in catalysts:
-        window = catalyst.get("target_window", "")
-        impact = float(catalyst.get("expected_revenue_impact_b", 0.0) or 0.0)
-        name = catalyst.get("product_or_service_name")
-
-        launch_idx = None
-        for label, idx, _ in QUARTER_DEFS:
-            if window and window in label:
-                launch_idx = idx
-                break
-        if launch_idx is None:
-            # A catalyst dated outside the 13-quarter window contributes no
-            # modeled revenue rather than being snapped to an arbitrary quarter.
-            continue
-
-        ramp[launch_idx]["catalyst_name"] = name
-        for q in range(launch_idx, 13):
-            factor = 0.20 if q == launch_idx else (0.50 if q == launch_idx + 1 else 0.75)
-            ramp[q]["incremental_revenue_b"] += impact * factor
-
-    return ramp
 
 
 def model_equity_valuation(
@@ -231,361 +424,7 @@ def model_equity_valuation(
             ],
         }
 
-    params = research["valuation_parameters"]
-    growth_rate = float(params["annual_revenue_growth"])
-    multiple_factor = float(params["target_ps_multiple_multiplier"])
-    dilution_rate = float(params["annual_share_dilution_rate"])
-    conviction_score = float(params["conviction_score"])
-
-    # Normalize the traded security to US ADR-equivalent shares and USD revenue.
-    current_price = round(float(current_price), 2)
-    raw_shares = float(shares_outstanding or 0.0)
-    if raw_shares <= 0:
-        return {
-            "symbol": symbol,
-            "company_name": company_name or symbol,
-            "status": "UNMODELED",
-            "gaps": [{
-                "field": "shares_outstanding",
-                "reason": "no positive share count available from SEC filings or market data",
-                "owner": "deterministic ingestion (fetch_sec.py)",
-                "renders": ["valuation model"],
-            }],
-        }
-
-    normalized_shares = normalize_shares_outstanding(symbol, raw_shares)
-    shares = float(normalized_shares) if normalized_shares else raw_shares
-    shares_m = round(shares / 1e6, 0)
-    shares_b = shares / 1e9
-
-    raw_revenue = float(ttm_revenue or 0.0)
-    if raw_revenue <= 0:
-        return {
-            "symbol": symbol,
-            "company_name": company_name or symbol,
-            "status": "UNMODELED",
-            "gaps": [{
-                "field": "ttm_revenue",
-                "reason": "no positive trailing twelve month revenue available from SEC filings",
-                "owner": "deterministic ingestion (fetch_sec.py)",
-                "renders": ["valuation model"],
-            }],
-        }
-
-    converted_revenue = convert_to_usd(raw_revenue, symbol=symbol)
-    ttm_rev = float(converted_revenue) if converted_revenue else raw_revenue
-    ttm_rev_b = ttm_rev / 1e9
-    quarterly_rev_base = ttm_rev_b / 4.0
-
-    current_ps = (shares * current_price) / ttm_rev
-
-    # Multiple compression guard rails. These bound the agent's multiplier at
-    # extreme starting multiples; they do not originate a multiple.
-    if current_ps > 40.0:
-        multiple_factor = min(multiple_factor, 0.78)
-    elif current_ps > 25.0:
-        multiple_factor = min(multiple_factor, 0.85)
-
-    target_ps_3y = round(current_ps * multiple_factor, 2)
-    if target_ps_3y < 0.05:
-        target_ps_3y = round(max(current_ps * 0.5, 0.01), 2)
-
-    historical_quarters = _build_historical_quarters(
-        filings, quarterly_rev_base, shares_b, current_price,
-        current_ps, growth_rate, dilution_rate)
-
-    catalysts = (research.get("catalyst_timeline") or {}).get("items") or []
-    ramp = _catalyst_ramp(catalysts)
-
-    # 13-Quarter Revenue Forecast Matrix
-    forecast_rows: List[Dict[str, Any]] = []
-    for label, idx, date in QUARTER_DEFS:
-        seasonality = 1.06 if (idx % 4 == 1) else (
-            0.95 if (idx % 4 == 2) else (0.98 if (idx % 4 == 3) else 1.01))
-        core_growth_factor = (1.0 + (growth_rate * 0.92)) ** (idx / 4.0)
-        base_revenue = quarterly_rev_base * core_growth_factor * seasonality
-        incremental = ramp[idx]["incremental_revenue_b"]
-        projected_revenue = base_revenue + incremental
-
-        if idx >= 4:
-            prior_revenue = forecast_rows[idx - 4]["projected_revenue_b"]
-        elif idx < len(historical_quarters):
-            prior_revenue = historical_quarters[idx]["revenue_b"]
-        else:
-            prior_revenue = 0.0
-        yoy_growth = (
-            ((projected_revenue - prior_revenue) / prior_revenue) * 100.0
-            if prior_revenue > 0 else growth_rate * 100.0
-        )
-
-        projected_shares_b = shares_b * ((1.0 + dilution_rate) ** (idx / 4.0))
-        projected_ps = round(current_ps + (target_ps_3y - current_ps) * (idx / 12.0), 2)
-        if projected_ps < 0.05:
-            projected_ps = 0.05
-        projected_ttm_rev_b = projected_revenue * 4.0
-        implied_price = round(
-            (projected_ttm_rev_b * projected_ps) / projected_shares_b, 2
-        ) if projected_shares_b > 0 else current_price
-
-        catalyst_name = ramp[idx]["catalyst_name"]
-        forecast_rows.append({
-            "quarter_index": idx,
-            "quarter_label": label,
-            "date": date,
-            "period_type": "CURRENT" if idx == 0 else "PROJECTED",
-            "projected_revenue_usd": round(projected_revenue * 1e9, 2),
-            "projected_revenue_b": round(projected_revenue, 2),
-            "yoy_growth_pct": round(yoy_growth, 1),
-            "projected_shares_b": round(projected_shares_b, 3),
-            "projected_shares_m": round(projected_shares_b * 1000.0, 1),
-            "projected_ps_multiple": projected_ps,
-            "implied_stock_price": implied_price,
-            # Mechanical description of how this row was produced. The renderer
-            # names the agent's catalyst; it does not narrate a growth story.
-            "basis": "CATALYST_RAMP" if incremental > 0 else "BASELINE_EXTRAPOLATION",
-            "catalyst_name": catalyst_name,
-            "catalyst_incremental_revenue_b": round(incremental, 3),
-        })
-
-    # Combined historical and projected trajectory
-    quarterly_trajectory = [
-        {
-            "quarter_label": q["quarter_label"],
-            "date": q["date"],
-            "period_type": q["period_type"],
-            "revenue_b": q["revenue_b"],
-            "revenue_usd": q["revenue_usd"],
-            "yoy_growth_pct": q["yoy_growth_pct"],
-            "shares_b": q["shares_b"],
-            "shares_m": q["shares_m"],
-            "ps_multiple": q["ps_multiple"],
-            "implied_stock_price": q["implied_stock_price"],
-        }
-        for q in historical_quarters
-    ] + [
-        {
-            "quarter_label": f["quarter_label"],
-            "date": f["date"],
-            "period_type": f["period_type"],
-            "revenue_b": f["projected_revenue_b"],
-            "revenue_usd": f["projected_revenue_usd"],
-            "yoy_growth_pct": f["yoy_growth_pct"],
-            "shares_b": f["projected_shares_b"],
-            "shares_m": f["projected_shares_m"],
-            "ps_multiple": f["projected_ps_multiple"],
-            "implied_stock_price": f["implied_stock_price"],
-        }
-        for f in forecast_rows
-    ]
-
-    # 6-Horizon Shares Outstanding
-    shares_projections = []
-    for label, weeks, years in SHARE_HORIZONS:
-        projected_m = shares_m * ((1.0 + dilution_rate) ** years)
-        shares_projections.append({
-            "horizon_weeks": weeks,
-            "horizon_label": label,
-            "shares_outstanding_m": round(projected_m, 0),
-            "shares_outstanding_b": round(projected_m / 1000.0, 3),
-            "shares_outstanding": round(projected_m * 1e6, 0),
-            "net_annual_dilution_or_burn_rate_pct": round(dilution_rate * 100.0, 1),
-        })
-
-    # 4-Horizon Price Target Ranges against true trailing four-quarter sums
-    price_horizons = [
-        ("13 Weeks", 13, 0.25, current_ps * 0.98, (1, 2), 1),
-        ("52 Weeks (1Y)", 52, 1.0, current_ps + (target_ps_3y - current_ps) * 0.33, (1, 5), 4),
-        ("104 Weeks (2Y)", 104, 2.0, current_ps + (target_ps_3y - current_ps) * 0.67, (5, 9), 8),
-        ("156 Weeks (3Y)", 156, 3.0, target_ps_3y, (9, 13), 12),
-    ]
-    price_target_ranges = []
-    for label, weeks, years, target_ps, rev_slice, shares_idx in price_horizons:
-        target_ps = round(target_ps, 2)
-        start, stop = rev_slice
-        if weeks == 13:
-            ttm_revenue_usd = forecast_rows[1]["projected_revenue_b"] * 4.0 * 1e9
-        else:
-            ttm_revenue_usd = sum(
-                forecast_rows[k]["projected_revenue_b"] for k in range(start, stop)) * 1e9
-        horizon_shares = forecast_rows[shares_idx]["projected_shares_b"] * 1e9
-
-        base_price = round(
-            (ttm_revenue_usd * target_ps) / horizon_shares, 2) if horizon_shares > 0 else current_price
-        if base_price < 0.01:
-            base_price = round(max(current_price * 0.5, 0.01), 2)
-        annualized_cagr = round(
-            (((base_price / current_price) ** (1.0 / years)) - 1.0) * 100.0, 1
-        ) if (years > 0 and current_price > 0) else 0.0
-
-        price_target_ranges.append({
-            "horizon_weeks": weeks,
-            "horizon_label": label,
-            "bear_price": round(max(base_price * 0.80, 0.01), 2),
-            "base_price": base_price,
-            "bull_price": round(max(base_price * 1.20, 0.01), 2),
-            "implied_ps_multiple": target_ps,
-            "annualized_cagr_pct": annualized_cagr,
-        })
-
-    target_exit_price = max(price_target_ranges[-1]["base_price"], 0.01)
-    base_3y_cagr = price_target_ranges[-1]["annualized_cagr_pct"]
-
-    # Rating and options overlay follow deterministically from the modeled CAGR
-    # and the agent's conviction score. The thresholds are the strategy rules in
-    # AGENTS.md section 5, not a judgment formed here.
-    dividend = research.get("dividend_profile") or {}
-    dividend_yield_pct = float(dividend.get("dividend_yield_pct") or 0.0)
-    annual_dividend_usd = round((dividend_yield_pct / 100.0) * current_price, 2)
-
-    if conviction_score < 6.0 or base_3y_cagr < 0.0:
-        rating = "AVOID"
-        target_strategy = "Capital Preservation & Risk Avoidance"
-        entry_strategy, exit_strategy = "LIMIT_BUY", "LIMIT_SELL"
-        csp_proceeds = cc_proceeds = 0.0
-    elif (base_3y_cagr >= 17.5 and conviction_score >= 8.7) or (
-            base_3y_cagr >= 20.0 and conviction_score >= 8.5):
-        rating = "BUY"
-        if conviction_score >= 9.4 and base_3y_cagr >= 20.0:
-            target_strategy = "High-Conviction Secular Growth Leader with Limit Buy Accumulation"
-            entry_strategy, exit_strategy = "LIMIT_BUY", "LIMIT_SELL"
-            csp_proceeds = cc_proceeds = 0.0
-        else:
-            target_strategy = "High-Growth Secular Compounder with Cash-Secured Put Entry"
-            entry_strategy, exit_strategy = "SELL_CSP", "LIMIT_SELL"
-            csp_proceeds, cc_proceeds = round(current_price * 0.035, 2), 0.0
-    elif base_3y_cagr >= 7.0:
-        rating = "HOLD"
-        target_strategy = "Quality Compounder with Disciplined Covered Call Yield Harvesting"
-        entry_strategy, exit_strategy = "LIMIT_BUY", "SELL_COVERED_CALLS"
-        csp_proceeds, cc_proceeds = 0.0, round(current_price * 0.09, 2)
-    else:
-        rating = "SELL"
-        target_strategy = "Capital Reallocation & Controlled Limit Exit"
-        entry_strategy, exit_strategy = "LIMIT_BUY", "LIMIT_SELL"
-        csp_proceeds = cc_proceeds = 0.0
-
-    return_result = calculate_annualized_roi(
-        benchmark_entry_price=current_price,
-        target_exit_price=target_exit_price,
-        entry_strategy=entry_strategy,
-        exit_strategy=exit_strategy,
-        entry_date=MODEL_ENTRY_DATE,
-        holding_period_years=MODEL_HOLDING_PERIOD_YEARS,
-        csp_proceeds=csp_proceeds,
-        cc_proceeds=cc_proceeds,
-        symbol=symbol,
-        company_name=company_name or symbol,
+    return _model_experimental_distribution(
+        symbol, current_price, shares_outstanding, ttm_revenue, sector, industry,
+        company_name, filings, research,
     )
-
-    # Reconcile the rating with the Return Engine: a BUY must clear the hurdle
-    # after the options overlay, not merely on price appreciation.
-    if rating == "BUY" and return_result.annualized_roi_pct < 20.0:
-        rating = "HOLD"
-        target_strategy = "Quality Compounder with Disciplined Covered Call Yield Harvesting"
-        entry_strategy, exit_strategy = "LIMIT_BUY", "SELL_COVERED_CALLS"
-        csp_proceeds, cc_proceeds = 0.0, round(current_price * 0.09, 2)
-        return_result = calculate_annualized_roi(
-            benchmark_entry_price=current_price,
-            target_exit_price=target_exit_price,
-            entry_strategy=entry_strategy,
-            exit_strategy=exit_strategy,
-            entry_date=MODEL_ENTRY_DATE,
-            holding_period_years=MODEL_HOLDING_PERIOD_YEARS,
-            csp_proceeds=csp_proceeds,
-            cc_proceeds=cc_proceeds,
-            symbol=symbol,
-            company_name=company_name or symbol,
-        )
-
-    def _recalc_return(exit_px):
-        return calculate_annualized_roi(
-            benchmark_entry_price=current_price,
-            target_exit_price=exit_px,
-            entry_strategy=entry_strategy,
-            exit_strategy=exit_strategy,
-            entry_date=MODEL_ENTRY_DATE,
-            holding_period_years=MODEL_HOLDING_PERIOD_YEARS,
-            csp_proceeds=csp_proceeds,
-            cc_proceeds=cc_proceeds,
-            symbol=symbol,
-            company_name=company_name or symbol,
-        )
-
-    max_modeled_annualized_roi_pct = 48.0
-    if current_price > 0 and return_result.annualized_roi_pct > max_modeled_annualized_roi_pct:
-        cap_mult = (1.0 + (max_modeled_annualized_roi_pct / 100.0)) ** MODEL_HOLDING_PERIOD_YEARS
-        capped_exit = round(current_price * cap_mult, 2)
-        if capped_exit < target_exit_price:
-            target_exit_price = capped_exit
-            return_result = _recalc_return(target_exit_price)
-
-    if rating == "AVOID" and current_price > 0 and return_result.annualized_roi_pct > 15.0:
-        avoid_cap_mult = (1.0 + 0.15) ** MODEL_HOLDING_PERIOD_YEARS
-        capped_exit = round(current_price * avoid_cap_mult, 2)
-        if capped_exit < target_exit_price:
-            target_exit_price = capped_exit
-            return_result = _recalc_return(target_exit_price)
-
-    balance_sheet = _extract_balance_sheet(filings)
-    total_debt_usd = balance_sheet["total_debt_usd"]
-    cash_usd = balance_sheet["cash_and_equivalents_usd"]
-
-    # Market share arithmetic, only where the agent supplied a TAM estimate.
-    tam = research.get("tam_and_market_share") or {}
-    tam_estimate_b = tam.get("tam_estimate_usd_b")
-    market_share = None
-    if isinstance(tam_estimate_b, (int, float)) and tam_estimate_b > 0:
-        tam_cagr = float(tam.get("tam_cagr_pct") or 0.0) / 100.0
-        tam_3y_b = tam_estimate_b * ((1.0 + tam_cagr) ** 3.0)
-        projected_ttm_rev_3y_b = sum(
-            forecast_rows[k]["projected_revenue_b"] for k in range(9, 13))
-        market_share = {
-            "tam_estimate_usd_b": tam_estimate_b,
-            "tam_cagr_pct": tam.get("tam_cagr_pct"),
-            "current_market_share_pct": round((ttm_rev_b / tam_estimate_b) * 100.0, 2),
-            "projected_market_share_3y_pct": round(
-                (projected_ttm_rev_3y_b / tam_3y_b) * 100.0, 2) if tam_3y_b > 0 else None,
-            "projected_tam_3y_usd_b": round(tam_3y_b, 1),
-        }
-
-    return {
-        "symbol": symbol,
-        "company_name": company_name or symbol,
-        "status": "MODELED",
-        "gaps": [],
-        "sector": sector,
-        "industry": industry,
-        "current_price": current_price,
-        "entry_price": current_price,
-        "target_exit_price": target_exit_price,
-        "rating": rating,
-        "conviction_score": conviction_score,
-        "holding_period": "3 to 5 Years",
-        "holding_period_years": MODEL_HOLDING_PERIOD_YEARS,
-        "target_strategy": target_strategy,
-        "entry_strategy": entry_strategy,
-        "exit_strategy": exit_strategy,
-        "annual_rev_growth": growth_rate,
-        "current_ps_multiple": round(current_ps, 1),
-        "target_ps_multiple": target_ps_3y,
-        "net_dilution_rate": dilution_rate,
-        "ttm_revenue_usd": ttm_rev,
-        "shares_outstanding": shares,
-        "total_debt_usd": total_debt_usd,
-        "cash_and_equivalents_usd": cash_usd,
-        "net_cash_usd": (
-            cash_usd - total_debt_usd
-            if isinstance(cash_usd, float) and isinstance(total_debt_usd, float) else None
-        ),
-        "annual_dividend_usd": annual_dividend_usd,
-        "dividend_yield_pct": dividend_yield_pct,
-        "market_share": market_share,
-        "return_engine": return_result.to_dict(),
-        "target_roi_str": return_result.target_roi_str,
-        "annualized_roi_pct": return_result.annualized_roi_pct,
-        "historical_quarterly_revenue": historical_quarters,
-        "revenue_forecast_13q": forecast_rows,
-        "quarterly_revenue_trajectory": quarterly_trajectory,
-        "shares_projections_6h": shares_projections,
-        "price_target_ranges_4h": price_target_ranges,
-    }

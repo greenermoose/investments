@@ -617,6 +617,40 @@ def execute_triage_command(args):
     return subprocess.run(cmd, cwd=str(ROOT_DIR)).returncode
 
 
+# The experimental program's scripts each own their own argument contract.
+# This maps a memorable subcommand onto the script and passes the remaining
+# arguments straight through, so the CLI cannot drift out of step with the
+# script it fronts.
+EXPERIMENT_SUBCOMMANDS = {
+    "freeze": ("freeze_experiment.py", "Freeze an immutable weekly snapshot of inputs, proposals, and hashes."),
+    "freeze-forecast": ("freeze_forecast.py", "Freeze a scenario forecast before its outcome can be observed."),
+    "score": ("score_experiment.py", "Score a frozen forecast against the outcome that followed it."),
+    "record-execution": ("record_execution.py", "Record one immutable private execution event per file."),
+    "record-performance": ("record_performance.py", "Record a private account performance snapshot."),
+    "reconcile": ("reconcile_accounts.py", "Reconcile one account between two portfolio snapshots."),
+    "security-master": ("build_security_master.py", "Build a dated security-master snapshot from SEC and Nasdaq listings."),
+    "archive-chain": ("archive_option_chain.py", "Archive a delayed Cboe option chain as an immutable snapshot."),
+    "check-claims": ("check_experimental_claims.py", "Fail when repository text makes prohibited non-experimental claims."),
+}
+
+
+def execute_experiment_command(args):
+    """Handler for the 'experiment' subcommand family."""
+    command = getattr(args, "experiment_command", None)
+    if not command:
+        print("Specify an experiment subcommand. Available:")
+        print("")
+        for name, (script, help_text) in sorted(EXPERIMENT_SUBCOMMANDS.items()):
+            print(f"  {name:18s} {help_text}")
+            print(f"  {'':18s} (scripts/{script})")
+        return 1
+
+    script_name, _ = EXPERIMENT_SUBCOMMANDS[command]
+    cmd = [sys.executable, str(SCRIPTS_DIR / script_name)]
+    cmd.extend(getattr(args, "experiment_args", None) or [])
+    return subprocess.run(cmd, cwd=str(ROOT_DIR)).returncode
+
+
 def execute_pricing_command(args):
     """Handler for 'pricing' subcommand."""
     pricing_script = SCRIPTS_DIR / "calculate_pricing.py"
@@ -1020,6 +1054,16 @@ EXAMPLES:
     p.add_argument("--related-ids", default=None)
 
     # 14. 'errata' subcommand
+    experiment_parser = subparsers.add_parser(
+        "experiment",
+        help="Experimental program CLI (freeze, score, record, reconcile, archive).")
+    experiment_sub = experiment_parser.add_subparsers(dest="experiment_command")
+    for name, (script_name, help_text) in sorted(EXPERIMENT_SUBCOMMANDS.items()):
+        sub = experiment_sub.add_parser(name, help=help_text, add_help=False)
+        sub.add_argument(
+            "experiment_args", nargs=argparse.REMAINDER,
+            help=f"Arguments passed through to scripts/{script_name} (use --help for its options).")
+
     errata_parser = subparsers.add_parser("errata", help="Errata registry CLI (context/research/errata/).")
     errata_sub = errata_parser.add_subparsers(dest="errata_command")
     errata_sub.add_parser("summary", help="Print errata summary")
@@ -1100,6 +1144,7 @@ def main():
         "rebuild-all": execute_rebuild_all_command,
         "ledger": execute_ledger_command,
         "errata": execute_errata_command,
+        "experiment": execute_experiment_command,
     }
 
     handler = subcommand_handlers.get(args.subcommand)

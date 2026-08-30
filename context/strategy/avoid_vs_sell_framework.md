@@ -1,12 +1,12 @@
 # Avoid vs. Sell Framework: Taxonomy of Value Traps vs. Capital Reallocation
 
-This document establishes the institutional doctrine, theoretical foundation, and operational criteria governing the distinction between `AVOID` and `SELL` within the Agentic Investment Advisor system.
+This document establishes the institutional doctrine, theoretical foundation, and operational criteria governing the distinction between `AVOID` and `SELL` within the Experimental Investment Research System.
 
 ## Executive Purpose & Token Economics
 
 Our core mandate requires maximizing the probability of achieving a 20% or higher annualized return over a 20-year horizon across US public equities, while managing downside risk.
 
-Authoring an institutional-grade investment thesis dossier requires substantial token expenditure and compute:
+Authoring an experimental investment thesis dossier requires substantial token expenditure and compute:
 - 13-Quarter bottom-up revenue projections ($Q_0$ to $Q_{12}$) linked to catalyst milestones
 - 6-Horizon diluted share count forecasts (13, 26, 39, 52, 104, 156 weeks) modeling buyback pace and SBC dilution
 - 4-Horizon Bear/Base/Bull valuation price bands
@@ -85,3 +85,4 @@ An equity is classified as `SELL` not because the underlying business is inheren
 2. **Investment Thesis Agent**: Focuses deep 13-quarter, 6-horizon, and 4-horizon modeling exclusively on `QUALIFIED_CANDIDATE` equities. When authoring dossiers, `AVOID` ratings are populated via lightweight triage templates, while full quantitative forecasting is applied to `BUY`, `HOLD`, and `SELL`.
 3. **Memory Agent**: Tracks de-listing triggers for `AVOID` equities and invalidation exit triggers for active `HOLD`/`BUY` positions transitioning to `SELL`. When an invalidation is detected, alerts the team to cancel buy orders, BUY TO CLOSE short puts, and BUY TO CLOSE short calls.
 4. **Lead Portfolio Manager Agent**: Enforces strict execution isolation: `AVOID` tickers are never included in trade orders or cash-secured put candidates; `SELL` tickers receive concrete single-session limit sell orders, `BUY TO CLOSE` orders on short puts (to eliminate assignment risk on a stock going down), or `BUY TO CLOSE` orders on short calls (to liberate 100-share blocks for immediate market-open sale).
+

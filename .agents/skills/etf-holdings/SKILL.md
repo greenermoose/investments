@@ -45,7 +45,19 @@ For real-time intraday or daily rebalance constituent extracts, fund sponsors pu
 
 ## CLI Tooling: `scripts/fetch_etf_holdings.py`
 
-The repository provides a deterministic CLI tool to query SEC EDGAR submissions and extract holdings:
+The repository provides a deterministic CLI tool to query SEC EDGAR submissions and extract holdings.
+
+**SEC access requires a contact User-Agent.** SEC EDGAR's access policy asks
+every automated client to identify itself with an application name and a real
+contact email. Set `SEC_USER_AGENT` (or pass `--user-agent` where the script
+accepts it) before any live SEC call; requests without it are refused rather
+than sent anonymously:
+
+```bash
+export SEC_USER_AGENT="<application name> <contact email>"
+```
+
+The CLI:
 
 ```bash
 # Extract QQQ constituents and save to scripts/data/qqq_holdings.json

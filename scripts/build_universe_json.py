@@ -20,7 +20,14 @@ from return_engine import calculate_annualized_roi
 from valuation_model import model_equity_valuation
 from compare_roi_distribution import run_comparison, print_comparison_report
 from adr_registry import normalize_shares_outstanding, convert_to_usd, get_listing_metadata
+from fetch_sec import compute_ttm_revenue
 import research_store
+from experiment_contract import (
+    EXPERIMENT_STATUS,
+    EXPERIMENTAL_WARNING,
+    evidence_summary,
+    readiness_report,
+)
 
 # Paths
 root_dir = os.path.dirname(os.path.dirname(__file__))
@@ -152,6 +159,8 @@ def build_capital_needs_view(research, val_model):
 universe = []
 updated_meta = {}
 unmodeled_symbols = []
+build_timestamp = datetime.now(timezone.utc).isoformat()
+data_snapshot_id = "UNIVERSE-" + build_timestamp.replace(":", "").replace("-", "").replace("+00:00", "Z")
 
 for filename in sorted(all_files):
     sym = filename.replace(".json", "")
@@ -163,13 +172,16 @@ for filename in sorted(all_files):
     filings = comp_data.get("filings", [])
     latest_filing = filings[0] if filings else None
     latest_bs = latest_filing.get("data", {}).get("balance_sheet", {}) if latest_filing else {}
+    latest_income = latest_filing.get("data", {}).get("income_statement", {}) if latest_filing else {}
+    latest_cash_flow = latest_filing.get("data", {}).get("cash_flow", {}) if latest_filing else {}
+    latest_derived = latest_filing.get("data", {}).get("derived_metrics", {}) if latest_filing else {}
 
     # Resolve metadata. The rating, conviction, and holding period are set below
     # from the valuation model, or left unset when it has no authored parameters
     # to work from. They are deliberately not seeded from the cache here: a stale
     # rating carried forward is indistinguishable from a current one.
     meta = company_meta.get(sym, {})
-    holding_period = meta.get("holding_period", "3 to 5 Years")
+    holding_period = meta.get("holding_period")
 
     # Determine index memberships
     indices = []
@@ -183,8 +195,16 @@ for filename in sorted(all_files):
     is_index_member = len(indices) > 0
 
     sec_metrics = sec_summary.get(sym, {})
-    raw_shares = sec_metrics.get("shares_outstanding")
-    raw_ttm_rev = sec_metrics.get("ttm_revenue")
+    raw_shares = (filings[0].get("data", {}).get("shares_outstanding") if filings else None)
+    if not raw_shares:
+        raw_shares = sec_metrics.get("shares_outstanding")
+    # Derive TTM from the filings rather than trusting http/sec-data.json, whose
+    # builder summed cumulative year-to-date interim figures as though they were
+    # discrete quarters. That overstated 21 companies by more than 40% -- Apple
+    # by 1.6x -- in a number that feeds every price-to-sales ratio.
+    raw_ttm_rev = compute_ttm_revenue(filings)
+    if raw_ttm_rev is None:
+        raw_ttm_rev = sec_metrics.get("ttm_revenue")
 
     if (not raw_shares or raw_shares == 0) and filings:
         raw_shares = filings[0].get("data", {}).get("shares_outstanding")
@@ -194,55 +214,73 @@ for filename in sorted(all_files):
 
     ttm_rev = convert_to_usd(raw_ttm_rev, symbol=sym) if raw_ttm_rev is not None else None
 
-    raw_total_debt = sec_metrics.get("total_debt")
+    # The filings are the system of record; http/sec-data.json is a derived
+    # summary that is only as fresh as the last time its Node builder was run.
+    # It disagreed with the filings on debt or cash for 24 of 204 companies.
+    raw_total_debt = latest_bs.get("total_debt")
     if raw_total_debt is None:
-        raw_total_debt = latest_bs.get("total_debt", 0)
-    total_debt = convert_to_usd(raw_total_debt, symbol=sym) if raw_total_debt is not None else 0
+        raw_total_debt = sec_metrics.get("total_debt")
+    total_debt = convert_to_usd(raw_total_debt, symbol=sym) if raw_total_debt is not None else None
 
-    raw_cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
+    raw_cash_equiv = latest_bs.get("cash_and_cash_equivalents")
     if raw_cash_equiv is None:
-        raw_cash_equiv = latest_bs.get("cash_and_cash_equivalents", 0)
-    cash_equiv = convert_to_usd(raw_cash_equiv, symbol=sym) if raw_cash_equiv is not None else 0
+        raw_cash_equiv = sec_metrics.get("cash_and_cash_equivalents")
+    cash_equiv = convert_to_usd(raw_cash_equiv, symbol=sym) if raw_cash_equiv is not None else None
 
     # Market price & Technical analysis data
     price_info = market_prices.get(sym, {})
-    current_price = price_info.get("current_price") or price_info.get("closing_price") or meta.get("current_price", 100.0)
-    current_price = round(float(current_price), 2)
-    previous_close = price_info.get("previous_close", current_price)
-    day_change = price_info.get("day_change", round(current_price - previous_close, 2))
-    day_change_percent = price_info.get("day_change_percent", round((day_change / previous_close) * 100.0, 2) if previous_close else 0.0)
+    current_price = price_info.get("current_price") or price_info.get("closing_price")
+    current_price = round(float(current_price), 2) if current_price is not None else None
+    previous_close = price_info.get("previous_close")
+    day_change = price_info.get("day_change")
+    day_change_percent = price_info.get("day_change_percent")
 
-    day_volume = price_info.get("day_volume", 0)
-    avg_vol_20d = price_info.get("average_volume_20d", day_volume)
-    volume_ratio = price_info.get("volume_ratio", 1.0)
+    day_volume = price_info.get("day_volume")
+    avg_vol_20d = price_info.get("average_volume_20d")
+    volume_ratio = price_info.get("volume_ratio")
 
-    fifty_two_week_high = price_info.get("fifty_two_week_high", round(current_price * 1.2, 2))
-    fifty_two_week_low = price_info.get("fifty_two_week_low", round(current_price * 0.8, 2))
+    fifty_two_week_high = price_info.get("fifty_two_week_high")
+    fifty_two_week_low = price_info.get("fifty_two_week_low")
 
-    sma_20 = price_info.get("sma_20", current_price)
-    sma_50 = price_info.get("sma_50", current_price)
-    tech_support_20d = price_info.get("technical_support_20d", round(current_price * 0.95, 2))
-    tech_resistance_20d = price_info.get("technical_resistance_20d", round(current_price * 1.05, 2))
+    sma_20 = price_info.get("sma_20")
+    sma_50 = price_info.get("sma_50")
+    tech_support_20d = price_info.get("technical_support_20d")
+    tech_resistance_20d = price_info.get("technical_resistance_20d")
     historical_candles = price_info.get("historical_candles_30d", [])
 
     # Run thesis parameters through fundamental Valuation Model & Return Engine
-    comp_name = meta.get("name") or price_info.get("name") or f"{sym} Corporation"
-    sector_val = meta.get("sector", "Information Technology")
-    industry_val = meta.get("industry", "US Equity")
+    comp_name = meta.get("name") or price_info.get("name") or sym
+    sector_val = meta.get("sector")
+    industry_val = meta.get("industry")
     
     research = research_store.load_research(sym)
+    fundamentals = {
+        **latest_income,
+        **latest_cash_flow,
+        **latest_derived,
+        "shares_outstanding": shares,
+        "total_debt": total_debt,
+        "cash_and_cash_equivalents": cash_equiv,
+    }
+    data_readiness = readiness_report(research, price_info, fundamentals)
 
-    val_model = model_equity_valuation(
-        symbol=sym,
-        current_price=current_price,
-        shares_outstanding=shares or 0.0,
-        ttm_revenue=ttm_rev or 0.0,
-        sector=sector_val,
-        industry=industry_val,
-        company_name=comp_name,
-        filings=filings,
-        research=research
-    )
+    if data_readiness["trade_ready"]:
+        val_model = model_equity_valuation(
+            symbol=sym,
+            current_price=current_price,
+            shares_outstanding=shares,
+            ttm_revenue=ttm_rev,
+            sector=sector_val,
+            industry=industry_val,
+            company_name=comp_name,
+            filings=filings,
+            research=research
+        )
+    else:
+        val_model = {
+            "status": "NOT_READY",
+            "missing": data_readiness["missing_inputs"] + data_readiness["anomalies"],
+        }
 
     # A ticker with no authored valuation parameters stays in the public catalog
     # with its market data and whatever research exists, but carries no rating,
@@ -251,7 +289,7 @@ for filename in sorted(all_files):
     if val_model["status"] != "MODELED":
         unmodeled_symbols.append(sym)
         thesis_status = None
-        triage_status = "AWAITING_RESEARCH"
+        triage_status = "DATA_NOT_READY"
         conviction_score = None
         entry_price = None
         target_exit_price = None
@@ -340,12 +378,12 @@ for filename in sorted(all_files):
     if sym_targets:
         pt_values = [t["target_price"] for t in sym_targets if t.get("target_price")]
         upside_values = [t["implied_upside_pct"] for t in sym_targets if t.get("implied_upside_pct") is not None]
-        mean_pt = round(sum(pt_values) / len(pt_values), 2) if pt_values else current_price
-        sorted_pts = sorted(pt_values) if pt_values else [current_price]
-        median_pt = sorted_pts[len(sorted_pts) // 2]
-        high_pt = max(pt_values) if pt_values else current_price
-        low_pt = min(pt_values) if pt_values else current_price
-        avg_upside = round(sum(upside_values) / len(upside_values), 1) if upside_values else round(((mean_pt - current_price) / current_price) * 100.0, 1)
+        mean_pt = round(sum(pt_values) / len(pt_values), 2) if pt_values else None
+        sorted_pts = sorted(pt_values)
+        median_pt = sorted_pts[len(sorted_pts) // 2] if sorted_pts else None
+        high_pt = max(pt_values) if pt_values else None
+        low_pt = min(pt_values) if pt_values else None
+        avg_upside = round(sum(upside_values) / len(upside_values), 1) if upside_values else None
         
         analyst_consensus = {
             "mean_target": mean_pt,
@@ -367,9 +405,23 @@ for filename in sorted(all_files):
             "average_upside_pct": None
         }
 
-    ir_url = comp_data.get("investor_relations_url") or meta.get("investor_relations_url") or f"https://investor.{sym.lower()}.com/"
+    ir_url = comp_data.get("investor_relations_url") or meta.get("investor_relations_url")
+
+    risk_metrics = price_info.get("risk_metrics", {})
 
     universe.append({
+        "experiment_status": EXPERIMENT_STATUS,
+        "experimental_warning": EXPERIMENTAL_WARNING,
+        "data_snapshot_id": data_snapshot_id,
+        "data_as_of": price_info.get("as_of_timestamp") or comp_data.get("last_updated"),
+        "model_version": research.get("authoring_model"),
+        "prompt_version": research.get("prompt_version"),
+        "evidence_summary": evidence_summary(research),
+        "missing_inputs": data_readiness.get("missing_inputs", []),
+        "stale_inputs": data_readiness.get("stale_inputs", []),
+        "anomalous_inputs": data_readiness.get("anomalies", []),
+        "model_supplied_inputs_pct": evidence_summary(research).get("model_supplied_pct"),
+        "data_readiness": data_readiness,
         "symbol": sym,
         "name": comp_name,
         "sector": meta.get("sector"),
@@ -383,6 +435,7 @@ for filename in sorted(all_files):
         "depositary_bank": depositary_bank,
         "description": research_store.get_text(research, "description"),
         "thesis_status": thesis_status,
+        "research_status": research.get("research_status", "MISSING"),
         "conviction_score": conviction_score,
         "entry_price": entry_price,
         "target_exit_price": target_exit_price,
@@ -402,6 +455,14 @@ for filename in sorted(all_files):
         "fifty_two_week_low": fifty_two_week_low,
         "sma_20": sma_20,
         "sma_50": sma_50,
+        "sma_200": risk_metrics.get("sma_200"),
+        "rsi_14": risk_metrics.get("rsi_14"),
+        "atr_14": risk_metrics.get("atr_14"),
+        "realized_volatility_20d": risk_metrics.get("realized_volatility_20d_pct"),
+        "realized_volatility_60d": risk_metrics.get("realized_volatility_60d_pct"),
+        "realized_volatility_252d": risk_metrics.get("realized_volatility_252d_pct"),
+        "beta_252d": risk_metrics.get("beta_252d"),
+        "data_integrity": price_info.get("data_integrity", {}),
         "technical_support_20d": tech_support_20d,
         "technical_resistance_20d": tech_resistance_20d,
         "cumulative_split_factor": price_info.get("cumulative_split_factor", 1.0),
@@ -415,7 +476,7 @@ for filename in sorted(all_files):
         "target_exit_date": ret_params.get("target_exit_date"),
         "csp_proceeds": ret_params.get("csp_proceeds"),
         "cc_proceeds": ret_params.get("cc_proceeds"),
-        "dividend_proceeds": ret_params.get("dividend_proceeds", 0.0),
+        "dividend_proceeds": ret_params.get("dividend_proceeds"),
         "initial_capital_outlay": ret_params.get("initial_capital_outlay"),
         "total_proceeds": ret_params.get("total_proceeds"),
         "net_profit": ret_params.get("net_profit"),
@@ -446,6 +507,7 @@ for filename in sorted(all_files):
         "current_ps_multiple": current_ps_multiple,
         "target_ps_multiple": target_ps_multiple,
         "ttm_revenue": ttm_rev,
+        "fundamentals": fundamentals,
         "total_debt": total_debt,
         "cash_and_cash_equivalents": cash_equiv,
         "market_cap": market_cap,
@@ -467,8 +529,26 @@ for filename in sorted(all_files):
         "price_target_ranges_4h": price_target_ranges_4h,
         "analyst_price_targets": sym_targets,
         "analyst_consensus": analyst_consensus,
-        "last_updated": datetime.now(timezone.utc).isoformat()
+        "last_updated": build_timestamp
     })
+
+# Validate every record against the canonical required-field contract before any write.
+universe_schema_path = os.path.join(root_dir, "context", "schemas", "universe_record_schema.json")
+with open(universe_schema_path, "r", encoding="utf-8") as f:
+    universe_schema = json.load(f)
+required_universe_fields = universe_schema.get("required", [])
+schema_errors = []
+for record in universe:
+    missing_keys = [key for key in required_universe_fields if key not in record]
+    if missing_keys:
+        schema_errors.append(f"{record.get('symbol', 'UNKNOWN')}: {', '.join(missing_keys)}")
+    if record.get("experiment_status") != EXPERIMENT_STATUS:
+        schema_errors.append(f"{record.get('symbol', 'UNKNOWN')}: experiment_status must be EXPERIMENTAL")
+if schema_errors:
+    print("Canonical universe schema validation failed:")
+    for error in schema_errors:
+        print(f"  {error}")
+    sys.exit(1)
 
 # Save updated universe.json
 out_universe_path_http = os.path.join(http_data_dir, "universe.json")
@@ -499,13 +579,13 @@ print(f"  DJIA: {len([u for u in universe if 'DJIA' in u['indices']])}")
 print(f"  SP500: {len([u for u in universe if 'SP500' in u['indices']])}")
 print(f"  Total in at least one index: {len([u for u in universe if u['is_index_member']])}")
 
-# Run Deterministic Empirical Quality Control Gate
-print("\nRunning Empirical Return Distribution Quality Control Gate...")
-qc_res = run_comparison(root_dir)
-print_comparison_report(qc_res)
-
-if not qc_res["all_passed"]:
-    print("CRITICAL ERROR: Generated universe failed empirical distribution quality control bounds.")
-    sys.exit(1)
+# Return-distribution diagnostics are descriptive experimental checks, not validation.
+modeled_count = len(universe) - len(unmodeled_symbols)
+if modeled_count:
+    print("\nRunning experimental return-distribution diagnostics...")
+    qc_res = run_comparison(root_dir)
+    print_comparison_report(qc_res)
+    if not qc_res["all_passed"]:
+        print("Experimental warning: modeled distribution is outside configured diagnostic bounds.")
 else:
-    print("SUCCESS: Master universe confirmed in full alignment with empirical distribution benchmarks.")
+    print("\nExperimental return-distribution diagnostics skipped: no records are modeling-ready.")

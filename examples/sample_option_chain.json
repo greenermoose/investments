@@ -1,0 +1,17 @@
+{
+  "experiment_status": "EXPERIMENTAL",
+  "snapshot_id": "DEMO-CHAIN-20260828",
+  "symbol": "NVDA",
+  "observed_at": "2026-08-28T20:15:00Z",
+  "source_locator": "example:synthetic-option-chain-for-renderer-testing-only",
+  "source_delay_minutes": 15,
+  "underlying_price": 124.5,
+  "risk_free_rate": 0.04,
+  "next_earnings_date": null,
+  "next_dividend_date": null,
+  "raw_content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "contracts": [
+    {"option_type": "PUT", "expiration": "2026-09-18", "strike": 115.0, "bid": 2.8, "ask": 3.0, "last": 2.9, "volume": 10, "open_interest": 100, "implied_volatility": 0.35, "market_delta": -0.22, "gamma": 0.02, "spread": 0.2, "spread_pct_of_mid": 6.8966},
+    {"option_type": "CALL", "expiration": "2026-10-16", "strike": 140.0, "bid": 3.1, "ask": 3.3, "last": 3.2, "volume": 10, "open_interest": 100, "implied_volatility": 0.32, "market_delta": 0.28, "gamma": 0.02, "spread": 0.2, "spread_pct_of_mid": 6.25}
+  ]
+}

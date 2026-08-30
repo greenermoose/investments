@@ -13,7 +13,7 @@ The Pricing Agent unifies all pricing calculations across both common equities a
 ## Core Responsibilities
 
 ### 1. Technical Price Trend & Limit Order Modeling
-- Synthesize technical indicators to identify high-probability entry and exit zones for common stock limit orders:
+- Synthesize technical indicators to identify experimental entry and exit zones for common stock limit orders:
   - Key horizontal support and resistance levels.
   - Multi-timeframe moving averages (20-day, 50-day, 200-day SMAs).
   - Volatility channels and Relative Strength Index (RSI) momentum divergence.
@@ -46,12 +46,24 @@ The Pricing Agent unifies all pricing calculations across both common equities a
 
 Calculate Black-Scholes pricing, Greeks, AROC, net-credit rolls, and technical limit bounds deterministically using `scripts/calculate_pricing.py`:
 
+Option pricing requires an **archived option-chain snapshot**. The strike, the
+expiration, and the volatility surface must all have been observed in a real
+chain; they may not be supplied by hand. The `--stock-price`, `--dte`, and
+`--iv` flags no longer exist, because each of them let a price be modeled
+against a contract that may not trade. Archive a chain first:
+
+```bash
+python scripts/manage_universe.py experiment archive-chain <cboe-chain.csv>   --symbol NVDA --observed-at 2026-08-28T20:00:00Z   --underlying-price 124.50 --source-url https://www.cboe.com/delayed_quotes/nvda/quote_table
+```
+
+Then price only strikes and expirations present in that snapshot:
+
 ```bash
 # Calculate CSP pricing and Greeks (Delta, Theta, AROC)
-python scripts/calculate_pricing.py option --symbol NVDA --stock-price 124.50 --strike 120.00 --dte 35 --type put
+python scripts/calculate_pricing.py option --symbol NVDA   --chain-snapshot context/data/option_chains/2026-08-28/OPT-NVDA-20260828.json   --strike 120.00 --expiration 2026-10-02 --type put   --dividend-yield 0.0 --minimum-aroc 12.0
 
 # Calculate Covered Call pricing
-python scripts/calculate_pricing.py option --symbol MSFT --stock-price 415.00 --strike 450.00 --dte 39 --type call
+python scripts/calculate_pricing.py option --symbol MSFT   --chain-snapshot context/data/option_chains/2026-08-28/OPT-MSFT-20260828.json   --strike 450.00 --expiration 2026-10-02 --type call   --dividend-yield 0.0072 --minimum-aroc 12.0
 
 # Verify net-credit roll economics
 python scripts/calculate_pricing.py roll --close-cost 3.50 --open-credit 4.80 --contracts 1
@@ -62,6 +74,18 @@ python scripts/calculate_pricing.py btc --symbol INTC --type put --strike 30.00 
 # Calculate technical limit order price bounds
 python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 --resistance 135.00
 ```
+
+## What the Model Does and Does Not Claim
+
+- `--dividend-yield` is required and has no default. Passing `0` for a
+  non-payer is a statement; omitting it would have been a guess.
+- The delta reported is a **model delta** computed from the archived surface,
+  not a live market delta. Order proposals must record it as `model_delta`.
+- A sell limit is set at the greater of the modeled reservation credit and the
+  minimum strategy return. An order that does not fill is an acceptable
+  outcome; the limit is never lowered during the week to force a fill.
+- Weekend pricing is a reservation-price estimate against a delayed Friday
+  chain. It is not a live fair value and will diverge from Monday's open.
 
 ## Pricing Parameter Reference Table
 
@@ -84,4 +108,5 @@ python scripts/calculate_pricing.py limit --stock-price 124.50 --support 118.00 
 - **Price Feed Pacing**: When fetching real-time/historical candles via `scripts/fetch_market_prices.py`, maintain standard throttle intervals (0.08s - 0.2s pause between symbols) to prevent IP rate-limiting.
 - **FRED & Treasury Risk-Free Rate Caching**: Cache benchmark Treasury yields (3M Treasury DGS3MO) with a 24-hour TTL in `scripts/data/` rather than querying external endpoints on every options pricing calculation.
 - **Offline & Cache Primacy**: Adhere strictly to `context/sources/access_methodologies.md` (Methodology 7) by utilizing local market price caches in `http/data/market_prices.json` during agent deliberation loops.
+
 

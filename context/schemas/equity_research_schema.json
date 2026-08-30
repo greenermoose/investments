@@ -5,7 +5,14 @@
   "type": "object",
   "required": [
     "symbol",
-    "schema_version"
+    "schema_version",
+    "experiment_status",
+    "research_status",
+    "as_of_date",
+    "authoring_model",
+    "prompt_version",
+    "valuation_parameters",
+    "forecast_scenarios"
   ],
   "properties": {
     "symbol": {
@@ -15,8 +22,33 @@
     },
     "schema_version": {
       "type": "string",
-      "const": "1.0",
+      "const": "2.0",
       "description": "Version of this research block schema."
+    },
+    "experiment_status": {
+      "type": "string",
+      "const": "EXPERIMENTAL",
+      "description": "Permanent status. Research never graduates from experimental use."
+    },
+    "research_status": {
+      "type": "string",
+      "enum": [
+        "UNVERIFIED_PLACEHOLDER",
+        "AGENT_AUTHORED_EXPERIMENTAL"
+      ],
+      "description": "Placeholder research is retained for audit history but cannot drive ratings or order proposals."
+    },
+    "as_of_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "authoring_model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_version": {
+      "type": "string",
+      "minLength": 1
     },
     "description": {
       "$ref": "#/$defs/authored_string",
@@ -37,7 +69,11 @@
     "tam_and_market_share": {
       "type": "object",
       "description": "Agent-estimated total addressable market. Scripts compute market-share arithmetic from tam_estimate_usd_b but must never estimate the TAM itself.",
-      "required": ["tam_estimate_usd_b", "narrative", "provenance"],
+      "required": [
+        "tam_estimate_usd_b",
+        "narrative",
+        "provenance"
+      ],
       "properties": {
         "tam_estimate_usd_b": {
           "type": "number",
@@ -53,31 +89,70 @@
           "minLength": 120,
           "description": "Market size, competitor landscape, share defense, and adjacent-segment expansion."
         },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "valuation_parameters": {
       "type": "object",
       "description": "Forward-looking parameters the agent supplies to valuation_model.py. Without this object a ticker receives no valuation, no ROI, and no rating.",
       "required": [
-        "annual_revenue_growth",
-        "target_ps_multiple_multiplier",
+        "valuation_method",
+        "valuation_inputs",
         "annual_share_dilution_rate",
         "conviction_score",
+        "opportunity_cost_annualized",
+        "uncertainty_score",
+        "horizon_years",
         "provenance"
       ],
       "properties": {
-        "annual_revenue_growth": {
-          "type": "number",
-          "minimum": -0.9,
-          "maximum": 3.0,
-          "description": "Modeled annual revenue growth rate as a decimal (0.28 = 28% per year)."
+        "valuation_method": {
+          "type": "string",
+          "enum": [
+            "EARNINGS",
+            "FCF",
+            "REVENUE_WITH_MARGIN_BRIDGE",
+            "BANK_PTB_ROE",
+            "INSURER_PTB_ROE",
+            "REIT_AFFO",
+            "PRE_REVENUE_BIOTECH_RNPV"
+          ]
         },
-        "target_ps_multiple_multiplier": {
-          "type": "number",
-          "minimum": 0.1,
-          "maximum": 3.0,
-          "description": "Multiplier applied to the current P/S multiple to reach the 3-year target multiple. Below 1.0 models multiple compression."
+        "valuation_inputs": {
+          "type": "object",
+          "description": "Company- and method-specific observations or hypotheses. Required fields are validated deterministically by method; missing values never receive defaults.",
+          "properties": {
+            "current_metric_per_share": {
+              "type": "number"
+            },
+            "annual_metric_growth": {
+              "type": "number",
+              "minimum": -0.9,
+              "maximum": 3.0
+            },
+            "target_multiple": {
+              "type": "number",
+              "exclusiveMinimum": 0.0
+            },
+            "current_revenue_usd": {
+              "type": "number",
+              "exclusiveMinimum": 0.0
+            },
+            "target_margin_pct": {
+              "type": "number",
+              "minimum": -100.0,
+              "maximum": 100.0
+            },
+            "risk_adjusted_enterprise_value_usd": {
+              "type": "number",
+              "minimum": 0.0
+            },
+            "net_cash_usd": {
+              "type": "number"
+            }
+          }
         },
         "annual_share_dilution_rate": {
           "type": "number",
@@ -91,29 +166,107 @@
           "maximum": 10.0,
           "description": "Agent conviction on a 0-10 scale."
         },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    },
+    "forecast_scenarios": {
+      "type": "object",
+      "description": "Agent-authored bear/base/bull distribution. Probabilities must sum to 1.0; deterministic validation enforces the sum.",
+      "required": [
+        "bear",
+        "base",
+        "bull",
+        "uncertainty",
+        "evidence_refs",
+        "provenance"
+      ],
+      "properties": {
+        "bear": {
+          "$ref": "#/$defs/forecast_scenario"
+        },
+        "base": {
+          "$ref": "#/$defs/forecast_scenario"
+        },
+        "bull": {
+          "$ref": "#/$defs/forecast_scenario"
+        },
+        "uncertainty": {
+          "type": "string",
+          "minLength": 40
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 8
+          }
+        },
+        "opportunity_cost_annualized": {
+          "type": "number",
+          "minimum": -1.0,
+          "maximum": 3.0
+        },
+        "uncertainty_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "horizon_years": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "maximum": 20.0
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "dividend_profile": {
       "type": "object",
       "description": "Agent-researched dividend policy. A recorded status of NONE means the agent determined the company pays no dividend, which is distinct from the field being unauthored.",
-      "required": ["status", "provenance"],
+      "required": [
+        "status",
+        "provenance"
+      ],
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["PAYING", "NONE", "SUSPENDED"]
+          "enum": [
+            "PAYING",
+            "NONE",
+            "SUSPENDED"
+          ]
         },
-        "dividend_yield_pct": { "type": "number", "minimum": 0.0 },
-        "payout_ratio_pct": { "type": "number", "minimum": 0.0 },
-        "annual_dividend_growth_pct": { "type": "number" },
-        "description": { "type": "string" },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "dividend_yield_pct": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "payout_ratio_pct": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "annual_dividend_growth_pct": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "capital_strategy": {
       "type": "object",
       "description": "Capital allocation posture and narrative. Numeric balance sheet inputs (debt, cash, CapEx) are read from Tier 1 filings by scripts and are not authored here.",
-      "required": ["capital_allocation_philosophy", "narrative", "provenance"],
+      "required": [
+        "capital_allocation_philosophy",
+        "narrative",
+        "provenance"
+      ],
       "properties": {
         "capital_allocation_philosophy": {
           "type": "string",
@@ -125,71 +278,151 @@
             "EXTERNAL_CAPITAL_DEPENDENT"
           ]
         },
-        "buyback_authorized_capacity_usd_b": { "type": "number", "minimum": 0.0 },
-        "primary_capital_needs": { "type": "string" },
-        "funding_strategy": { "type": "string" },
-        "going_concern_assessment": { "type": "string" },
-        "narrative": { "type": "string", "minLength": 120 },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "buyback_authorized_capacity_usd_b": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "primary_capital_needs": {
+          "type": "string"
+        },
+        "funding_strategy": {
+          "type": "string"
+        },
+        "going_concern_assessment": {
+          "type": "string"
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 120
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "stock_based_compensation": {
       "type": "object",
       "description": "SBC run-rate, vesting architecture, and lock-up dynamics. Every value here is a research finding from filings or proxy statements, never a sector heuristic.",
-      "required": ["sbc_pct_of_revenue", "vesting_schedule_structure", "narrative", "provenance"],
+      "required": [
+        "sbc_pct_of_revenue",
+        "vesting_schedule_structure",
+        "narrative",
+        "provenance"
+      ],
       "properties": {
-        "sbc_pct_of_revenue": { "type": "number", "minimum": 0.0, "maximum": 100.0 },
-        "gross_annual_dilution_pct": { "type": "number" },
-        "vesting_schedule_structure": { "type": "string" },
-        "lock_up_status": { "type": "string" },
-        "lock_up_details": { "type": "string" },
-        "narrative": { "type": "string", "minLength": 120 },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "sbc_pct_of_revenue": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 100.0
+        },
+        "gross_annual_dilution_pct": {
+          "type": "number"
+        },
+        "vesting_schedule_structure": {
+          "type": "string"
+        },
+        "lock_up_status": {
+          "type": "string"
+        },
+        "lock_up_details": {
+          "type": "string"
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 120
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "off_balance_sheet_and_contingent_liabilities": {
       "type": "object",
       "description": "Forensic audit of pension/OPEB, environmental remediation, mass torts, and purchase commitments. Conforms to context/strategy/off_balance_sheet_liabilities_framework.md. An absent block means unaudited, not zero.",
-      "required": ["overall_liability_overhang_rating", "narrative", "provenance"],
+      "required": [
+        "overall_liability_overhang_rating",
+        "narrative",
+        "provenance"
+      ],
       "properties": {
         "overall_liability_overhang_rating": {
           "type": "string",
-          "enum": ["MINIMAL", "LOW", "MODERATE", "ELEVATED", "HIGH", "SEVERE"]
+          "enum": [
+            "MINIMAL",
+            "LOW",
+            "MODERATE",
+            "ELEVATED",
+            "HIGH",
+            "SEVERE"
+          ]
         },
-        "total_estimated_off_balance_sheet_encumbrance_usd_b": { "type": "number", "minimum": 0.0 },
-        "pension_and_opeb": { "type": "object" },
-        "environmental_and_remediation": { "type": "object" },
-        "litigation_and_toxic_torts": { "type": "object" },
-        "purchase_commitments_and_guarantees": { "type": "object" },
-        "equity_cash_flow_diversion_risk": { "type": "string" },
-        "narrative": { "type": "string", "minLength": 120 },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "total_estimated_off_balance_sheet_encumbrance_usd_b": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "pension_and_opeb": {
+          "type": "object"
+        },
+        "environmental_and_remediation": {
+          "type": "object"
+        },
+        "litigation_and_toxic_torts": {
+          "type": "object"
+        },
+        "purchase_commitments_and_guarantees": {
+          "type": "object"
+        },
+        "equity_cash_flow_diversion_risk": {
+          "type": "string"
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 120
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "catalyst_timeline": {
       "type": "object",
       "description": "Company-specific catalysts. Items match investment_thesis_schema.json#/properties/catalyst_timeline/items.",
-      "required": ["items", "provenance"],
+      "required": [
+        "items",
+        "provenance"
+      ],
       "properties": {
         "items": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "investment_thesis_schema.json#/properties/catalyst_timeline/items" }
+          "items": {
+            "$ref": "investment_thesis_schema.json#/properties/catalyst_timeline/items"
+          }
         },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "invalidation_criteria": {
       "type": "object",
       "description": "Per-company exit triggers. Criteria shared verbatim across many tickers indicate boilerplate rather than research and are reported by the duplicate-boilerplate audit.",
-      "required": ["items", "provenance"],
+      "required": [
+        "items",
+        "provenance"
+      ],
       "properties": {
         "items": {
           "type": "array",
           "minItems": 1,
-          "items": { "type": "string", "minLength": 30 }
+          "items": {
+            "type": "string",
+            "minLength": 30
+          }
         },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     },
     "latest_catalyst": {
@@ -209,7 +442,16 @@
     "provenance": {
       "type": "object",
       "description": "Authorship and source attribution, required on every authored field per AGENTS.md section 6.",
-      "required": ["authored_by", "authored_date", "authority_tier"],
+      "required": [
+        "authored_by",
+        "authored_date",
+        "authority_tier",
+        "source_class",
+        "source_locator",
+        "retrieved_at",
+        "raw_content_hash",
+        "verification_status"
+      ],
       "properties": {
         "authored_by": {
           "type": "string",
@@ -237,15 +479,97 @@
         "runtime_context_signature": {
           "type": "string",
           "description": "For TIER_4 content: system clock timestamp, active role persona, and prompt context at authoring time."
+        },
+        "source_class": {
+          "type": "string",
+          "enum": [
+            "REGULATORY",
+            "EXCHANGE",
+            "ISSUER",
+            "AGGREGATOR",
+            "MODEL",
+            "USER"
+          ]
+        },
+        "effective_period": {
+          "type": "string"
+        },
+        "filed_at": {
+          "type": "string"
+        },
+        "retrieved_at": {
+          "type": "string"
+        },
+        "raw_content_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "VERIFIED_PRIMARY",
+            "CORROBORATED",
+            "UNVERIFIED",
+            "SUPERSEDED"
+          ]
+        },
+        "supersedes": {
+          "type": "string"
+        }
+      }
+    },
+    "forecast_scenario": {
+      "type": "object",
+      "required": [
+        "probability",
+        "price_target",
+        "rationale"
+      ],
+      "properties": {
+        "probability": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "annual_revenue_growth": {
+          "type": "number",
+          "minimum": -0.9,
+          "maximum": 3.0
+        },
+        "target_ps_multiple_multiplier": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 3.0
+        },
+        "annual_share_dilution_rate": {
+          "type": "number",
+          "minimum": -0.2,
+          "maximum": 0.5
+        },
+        "price_target": {
+          "type": "number",
+          "exclusiveMinimum": 0.0
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 40
         }
       }
     },
     "authored_string": {
       "type": "object",
-      "required": ["text", "provenance"],
+      "required": [
+        "text",
+        "provenance"
+      ],
       "properties": {
-        "text": { "type": "string", "minLength": 40 },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "text": {
+          "type": "string",
+          "minLength": 40
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       }
     }
   }

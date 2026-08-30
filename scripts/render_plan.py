@@ -60,6 +60,28 @@ AROC_TOLERANCE_PCT = 0.5
 OPENING_ACTIONS = {"BUY", "BUY TO OPEN", "SELL TO OPEN"}
 
 
+def load_option_chain_index():
+    index = {}
+    root = CONTEXT_DATA_DIR / "option_chains"
+    if root.exists():
+        for path in root.rglob("*.json"):
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            snapshot_id = payload.get("snapshot_id")
+            if snapshot_id:
+                index[snapshot_id] = payload
+    for example_path in (ROOT_DIR / "examples").glob("sample_option_chain*.json"):
+        try:
+            payload = json.loads(example_path.read_text(encoding="utf-8"))
+            if payload.get("snapshot_id"):
+                index[payload["snapshot_id"]] = payload
+        except (OSError, ValueError):
+            pass
+    return index
+
+
 def round_to_tick(price):
     """Rounds to a submittable price increment. Sub-$1.00 names quote in sub-penny ticks."""
     if price < 1.00:
@@ -148,6 +170,13 @@ def parse_open_option(option):
     for a label this parser cannot read, so the caller can flag it rather than
     silently treating an encumbered position as free collateral.
     """
+    if option.get("contract_validated"):
+        underlying = option.get("underlying")
+        option_type = option.get("option_type")
+        strike = option.get("strike")
+        if underlying and option_type in {"PUT", "CALL"} and isinstance(strike, (int, float)):
+            return underlying.upper(), option_type, float(strike)
+
     label = str(option.get("symbol", "")).strip()
     parts = label.split()
     if len(parts) < 4:
@@ -204,6 +233,7 @@ def validate_orders(document, accounts, universe_symbols):
     """
     errors = []
     accounts_by_name = {a.get("account_name", ""): a for a in accounts}
+    option_chains = load_option_chain_index()
 
     plan_date = None
     if not document.get("plan_date"):
@@ -217,6 +247,20 @@ def validate_orders(document, accounts, universe_symbols):
     if not document.get("authored_by"):
         errors.append(
             "orders file is missing authored_by; the plan must record which agent decided it")
+    if document.get("experiment_status") != "EXPERIMENTAL":
+        errors.append("orders file must set experiment_status to EXPERIMENTAL")
+    for field in ("data_snapshot_id", "data_as_of", "model_version", "prompt_version", "experimental_warning"):
+        if not document.get(field):
+            errors.append(f"orders file is missing experimental metadata field {field}")
+    unresolved = []
+    for field in ("missing_inputs", "stale_inputs", "anomalous_inputs"):
+        unresolved.extend(document.get(field, []))
+    proposed_order_count = sum(len(item.get("orders", [])) for item in document.get("portfolios", []))
+    if unresolved and proposed_order_count:
+        errors.append(
+            "orders are suppressed because required inputs are missing, stale, or anomalous: "
+            + "; ".join(str(item) for item in unresolved)
+        )
 
     for portfolio in document.get("portfolios", []):
         name = portfolio.get("account_name", "<unnamed portfolio>")
@@ -286,9 +330,33 @@ def validate_orders(document, accounts, universe_symbols):
                 )
 
             if security_type == "OPTION":
-                for field in ("option_type", "strike", "expiration"):
-                    if not order.get(field):
+                for field in ("option_type", "strike", "expiration", "option_chain_snapshot_id", "model_delta"):
+                    if order.get(field) in (None, ""):
                         errors.append(f"{label}: OPTION order is missing '{field}'")
+
+                chain_id = order.get("option_chain_snapshot_id")
+                chain = option_chains.get(chain_id)
+                if chain is None:
+                    errors.append(f"{label}: option-chain snapshot '{chain_id}' was not found in context/data/option_chains")
+                else:
+                    if str(chain.get("source_locator", "")).startswith("example:") and not str(document.get("snapshot_source", "")).startswith("examples/"):
+                        errors.append(f"{label}: an example-only option chain cannot support a private order proposal")
+                    observed = any(
+                        item.get("option_type") == order.get("option_type")
+                        and item.get("expiration") == order.get("expiration")
+                        and isinstance(item.get("strike"), (int, float))
+                        and abs(float(item["strike"]) - float(order.get("strike") or -1)) < 1e-9
+                        for item in chain.get("contracts", [])
+                    )
+                    if chain.get("symbol") != symbol or not observed:
+                        errors.append(f"{label}: exact symbol, strike, type, and expiration were not observed in snapshot {chain_id}")
+
+                if action == "SELL TO OPEN":
+                    reservation = order.get("reservation_credit")
+                    if reservation is None:
+                        errors.append(f"{label}: SELL TO OPEN option proposal is missing reservation_credit")
+                    elif float(order.get("limit_price") or 0) + 1e-9 < float(reservation):
+                        errors.append(f"{label}: limit price is below the experimental reservation credit")
 
                 # Prohibition: no speculative long option purchases.
                 if action == "BUY TO OPEN":
@@ -517,14 +585,23 @@ def render_plan(document, accounts):
 
     lines = [
         "=" * 80,
-        f"WEEKLY TRADING PLAN: WEEK OF {monday_full}",
+        f"EXPERIMENTAL ORDER PROPOSAL: WEEK OF {monday_full}",
         "=" * 80,
         "",
-        "OBJECTIVE: Maximize probability of achieving >= 20% annualized return over 20 years.",
+        "STATUS:    EXPERIMENTAL. Ratings, forecasts, and order proposals may be wrong.",
+        "NOTICE:    This is research output, not investment advice; proposed actions may be wrong.",
+        "HYPOTHESIS: Test whether prospective net-of-fee return can reach a 20% annualized",
+        "            scoring threshold over 20 years. This is not a forecast or assurance.",
+        f"SNAPSHOT:  {document.get('data_snapshot_id')} as of {document.get('data_as_of')}",
+        f"VERSIONS:  Model {document.get('model_version')} | Prompt {document.get('prompt_version')}",
+        f"MISSING:   {'; '.join(document.get('missing_inputs', [])) or 'none'}",
+        f"STALE:     {'; '.join(document.get('stale_inputs', [])) or 'none'}",
+        f"ANOMALOUS: {'; '.join(document.get('anomalous_inputs', [])) or 'none'}",
+        f"EVIDENCE:  {json.dumps(document.get('evidence_percentages', {}), sort_keys=True)}",
         'CADENCE:   Single-session "set-and-forget" execution (Monday 9:30 AM ET or as soon',
         "           as you can access the account). No mid-week babysitting or monitoring.",
         "           Friday option settlements occur automatically. Upload a new snapshot",
-        "           next weekend to evaluate results and generate the next plan.",
+        "           next weekend to record outcomes and generate the next experiment proposal.",
         "",
     ]
 
@@ -591,7 +668,7 @@ def render_plan(document, accounts):
             lines.append("  Outcome:        No Friday expiration actions required.")
             lines.append("")
 
-    lines += ["=" * 80, "END OF WEEKLY TRADING PLAN", "=" * 80]
+    lines += ["=" * 80, "END OF EXPERIMENTAL ORDER PROPOSAL", "=" * 80]
     return "\n".join(lines)
 
 
@@ -629,7 +706,7 @@ def resolve_accounts(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Validate an agent-authored order set and render the weekly trading plan")
+        description="Check constraints on an agent-authored experimental order proposal and render it")
     parser.add_argument("--orders", type=str, required=True,
                         help="Path to the orders file conforming to trading_plan_orders_schema.json")
     parser.add_argument("--snapshot", type=str, default=None,
@@ -659,8 +736,8 @@ def main():
         return 1
 
     order_count = sum(len(p.get("orders", [])) for p in document.get("portfolios", []))
-    print(f"Validated {order_count} order(s) across {len(document.get('portfolios', []))} "
-          "portfolio(s) against the strategy mandate.")
+    print(f"Constraint checks passed for {order_count} experimental proposal(s) across "
+          f"{len(document.get('portfolios', []))} portfolio(s). This does not assess correctness.")
 
     if args.check_only:
         return 0
@@ -669,7 +746,7 @@ def main():
 
     format_errors = assert_plain_ascii(content)
     if format_errors:
-        print("Rendered plan failed the plain-text format check:")
+        print("Rendered experimental proposal failed the plain-text format check:")
         for error in format_errors:
             print(f"  FAIL: {error}")
         return 1
@@ -678,14 +755,14 @@ def main():
         PLANS_DIR.mkdir(parents=True, exist_ok=True)
         target = PLANS_DIR / f"{document['plan_date']}-plan.txt"
         target.write_text(content, encoding="utf-8")
-        print(f"Weekly trading plan written to {target}")
+        print(f"Experimental order proposal written to {target}")
         return 0
 
     if args.out:
         out_path = Path(args.out)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(content, encoding="utf-8")
-        print(f"Weekly trading plan written to {out_path}")
+        print(f"Experimental order proposal written to {out_path}")
         return 0
 
     print(content)

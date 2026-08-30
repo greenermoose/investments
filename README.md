@@ -1,12 +1,12 @@
-# Experimental Investment Research System
+# Agentic Investment Advisor System
 
-This repository is a permanent experiment in multi-agent public-equity research. It tests whether prospective, net-of-fee results can reach a 20% annualized scoring threshold over 20 years for US exchange-listed public companies. That threshold would require approximately 38.34 times the starting capital. It is a research hypothesis, not a forecast, assurance, capability claim, or statement of likely performance.
+The goal of this repo is to create a multi-agent investment advisory system engineered to overcome the limitations of standard chatbots to achieve at least a 20% annualized return over 20 years for a portfolio of public companies whose shares trade on an exchange in the United States. By maintaining full context over the entire US public equity universe, parsing weekly portfolio snapshots, managing persistent investment thesis memory, and mathematically modeling options strategies, this system investigates whether AI agent teams can deliver profitable trading plans.
 
-The experiment maintains public-company context, parses weekly portfolio snapshots, stores research hypotheses, and models option reservation prices. Every rating, forecast, classification, and order proposal may be wrong. Research records that have not been replaced with company-specific, source-linked evidence are labeled `UNVERIFIED_PLACEHOLDER` and cannot drive ratings or experimental order proposals.
+Each proposed trading plan is a research hypothesis, not an assurance, capability claim, or statement of likely performance. Every rating, forecast, classification, and trading plan may be wrong.
 
 ## Disclaimer: Use at Your Own Risk
 
-This repository is strictly for educational, informational, and research purposes. It does not constitute financial, investment, legal, or tax advice. Investing in equities and options involves substantial risk of capital loss. Read the full [DISCLAIMER.md](DISCLAIMER.md) before using this system.
+This repository is strictly for experimental purposes. It does not constitute financial, investment, legal, or tax advice. Investing in equities and options involves substantial risk. Read the full [DISCLAIMER.md](DISCLAIMER.md) before using this system.
 
 ## Audience-First Repository Structure
 
@@ -105,15 +105,17 @@ The system supports two core operating workflows:
 
 ### Workflow 1: Weekly Deliberation & Experimental Order Proposals
 
+This is how a human uses this system to generate trading plans and then uses those trading plans.
+
 ```
 [Friday Close / Weekend]
   1. Upload portfolio screenshot or CSV into private/snapshots/
   2. Run the weekly agent deliberation prompt (context/prompts/weekly_deliberation.md)
-  3. Review the plain-text experimental order proposal saved in private/plans/YYYY-MM-DD-plan.txt
+  3. Review the plain-text trading plan saved in private/plans/YYYY-MM-DD-plan.txt
   4. Interrogate the agents via Interactive Q&A (challenge targets, theses, and limit prices)
   
 [Monday 9:30 AM ET]
-  5. Independently decide whether to submit the experimental limit-order proposals
+  5. Submit orders
 ```
 
 ### Workflow 2: Coverage Universe Expansion & Equity Onboarding
@@ -129,7 +131,7 @@ The system supports two core operating workflows:
 
 ## Master Deterministic CLI Tool (`scripts/manage_universe.py`)
 
-The repository provides a single, unified deterministic command-line interface, `scripts/manage_universe.py`, enabling human traders and AI agents to query the equity universe, synchronize market data, refresh regulatory filings, and execute deterministic workflows with 0 LLM token spend.
+The repository provides a single, unified deterministic command-line interface, `scripts/manage_universe.py`, enabling human traders and AI agents to query the equity universe, synchronize market data, refresh regulatory filings, and execute deterministic workflows with zero token spend.
 
 Run the tool with `--help` to inspect all options:
 
